@@ -1,5 +1,5 @@
 {
-  "personas": [
+  "demons": [
     {
       "name": "Abaddon",
       "devName": "abaddon",
@@ -27593,7 +27593,6 @@
     {
       "name": "Regent",
       "devName": "regent",
-      "aliases": [],
       "inherit": "Support",
       "arcana": "Emperor",
       "race": "Treasure",
