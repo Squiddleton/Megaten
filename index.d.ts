@@ -31,7 +31,7 @@ export class Demon {
     ultimate: boolean;
     special:  boolean;
     game:     Game;
-    evolution: string;
+    evolution: Demon | null;
 }
 
 export type Game = 'p3' | 'p4' | 'p5'

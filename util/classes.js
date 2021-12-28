@@ -1,10 +1,10 @@
-/** @type {import('../types/lists').Lists} */
+/** @type {import('../index').Lists} */
 const lists = require('../lists');
 
 module.exports.Demon = class Demon {
 	/**
 	 *
-	 * @param {import('../types/lists').Demon}
+	 * @param {import('../index').Demon}
 	 */
 	constructor(demon) {
 		for (const key in demon) {
@@ -12,8 +12,8 @@ module.exports.Demon = class Demon {
 		}
 	}
 	/**
-     * @type {string|null} The Persona's evolution, or null if none
-	 * @this import('../types/lists').Demon
+     * @type {import('../index').Demon|null} The Persona's evolution, or null if none
+	 * @this import('../index').Demon
      */
 	get evolution() {
 		const evoPersona = lists.demons.find(demon => demon.party === this.party && demon.evo === (this.evo + 1));
