@@ -48,13 +48,13 @@
       "resist": [
         "Bless"
       ],
-      "block": [],
-      "absorb": [
+      "null": [],
+      "drain": [
         "Phys",
         "Gun",
         "Curse"
       ],
-      "reflect": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -108,9 +108,9 @@
         "Gun",
         "Elec"
       ],
-      "block": [],
-      "absorb": [],
-      "reflect": [],
+      "null": [],
+      "drain": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -223,11 +223,11 @@
       "resist": [
         "Curse"
       ],
-      "block": [
+      "null": [
         "Nuke"
       ],
-      "absorb": [],
-      "reflect": [],
+      "drain": [],
+      "repel": [],
       "party": "Makoto Niijima",
       "evo": 3,
       "ultimate": false,
@@ -272,9 +272,9 @@
       "evoMove": "Ultimate Support",
       "weak": [],
       "resist": [],
-      "block": [],
-      "absorb": [],
-      "reflect": [],
+      "null": [],
+      "drain": [],
+      "repel": [],
       "party": "Futaba Sakura",
       "evo": 3,
       "ultimate": false,
@@ -332,9 +332,9 @@
         "Psy",
         "Nuke"
       ],
-      "block": [],
-      "absorb": [],
-      "reflect": [
+      "null": [],
+      "drain": [],
+      "repel": [
         "Curse"
       ],
       "party": null,
@@ -396,13 +396,13 @@
         "Curse"
       ],
       "resist": [],
-      "block": [
+      "null": [
         "Psy"
       ],
-      "absorb": [
+      "drain": [
         "Ice"
       ],
-      "reflect": [
+      "repel": [
         "Phys",
         "Gun"
       ],
@@ -510,11 +510,11 @@
       "resist": [
         "Elec"
       ],
-      "block": [
+      "null": [
         "Fire"
       ],
-      "absorb": [],
-      "reflect": [],
+      "drain": [],
+      "repel": [],
       "party": "Yukiko Amagi",
       "evo": 2,
       "ultimate": false,
@@ -565,11 +565,11 @@
         "Psy"
       ],
       "resist": [],
-      "block": [],
-      "absorb": [
+      "null": [],
+      "drain": [
         "Fire"
       ],
-      "reflect": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -628,11 +628,11 @@
         "Elec"
       ],
       "resist": [],
-      "block": [],
-      "absorb": [
+      "null": [],
+      "drain": [
         "Ice"
       ],
-      "reflect": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -745,11 +745,11 @@
       "resist": [
         "Curse"
       ],
-      "block": [
+      "null": [
         "Nuke"
       ],
-      "absorb": [],
-      "reflect": [],
+      "drain": [],
+      "repel": [],
       "party": "Makoto Niijima",
       "evo": 2,
       "ultimate": false,
@@ -804,11 +804,11 @@
         "Ice",
         "Psy"
       ],
-      "block": [
+      "null": [
         "Curse"
       ],
-      "absorb": [],
-      "reflect": [],
+      "drain": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -862,11 +862,11 @@
       "resist": [
         "Elec"
       ],
-      "block": [
+      "null": [
         "Bless"
       ],
-      "absorb": [],
-      "reflect": [],
+      "drain": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -918,12 +918,12 @@
         "Gun",
         "Psy"
       ],
-      "block": [
+      "null": [
         "Bless",
         "Curse"
       ],
-      "absorb": [],
-      "reflect": [],
+      "drain": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -977,9 +977,9 @@
       "resist": [
         "Elec"
       ],
-      "block": [],
-      "absorb": [],
-      "reflect": [
+      "null": [],
+      "drain": [],
+      "repel": [
         "Wind"
       ],
       "party": null,
@@ -1035,9 +1035,9 @@
       "resist": [
         "Ice"
       ],
-      "block": [],
-      "absorb": [],
-      "reflect": [],
+      "null": [],
+      "drain": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -1092,9 +1092,9 @@
         "Bless",
         "Curse"
       ],
-      "block": [],
-      "absorb": [],
-      "reflect": [
+      "null": [],
+      "drain": [],
+      "repel": [
         "Phys",
         "Gun"
       ],
@@ -1154,9 +1154,9 @@
       "resist": [
         "Phys"
       ],
-      "block": [],
-      "absorb": [],
-      "reflect": [],
+      "null": [],
+      "drain": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -1208,11 +1208,11 @@
         "Curse"
       ],
       "resist": [],
-      "block": [
+      "null": [
         "Bless"
       ],
-      "absorb": [],
-      "reflect": [],
+      "drain": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -1267,12 +1267,12 @@
       "resist": [
         "Phys"
       ],
-      "block": [
+      "null": [
         "Ice",
         "Elec"
       ],
-      "absorb": [],
-      "reflect": [],
+      "drain": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": true,
@@ -1325,11 +1325,11 @@
       "resist": [
         "Phys"
       ],
-      "block": [
+      "null": [
         "Bless"
       ],
-      "absorb": [],
-      "reflect": [],
+      "drain": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -1387,11 +1387,11 @@
         "Gun",
         "Bless"
       ],
-      "block": [
+      "null": [
         "Nuke"
       ],
-      "absorb": [],
-      "reflect": [],
+      "drain": [],
+      "repel": [],
       "party": "Labrys",
       "evo": 1,
       "ultimate": false,
@@ -1449,11 +1449,11 @@
         "Gun",
         "Bless"
       ],
-      "block": [
+      "null": [
         "Nuke"
       ],
-      "absorb": [],
-      "reflect": [],
+      "drain": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -1503,9 +1503,9 @@
       "resist": [
         "Curse"
       ],
-      "block": [],
-      "absorb": [],
-      "reflect": [],
+      "null": [],
+      "drain": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -1600,11 +1600,11 @@
         "Fire"
       ],
       "resist": [],
-      "block": [
+      "null": [
         "Ice"
       ],
-      "absorb": [],
-      "reflect": [],
+      "drain": [],
+      "repel": [],
       "party": "Mitsuru Kirijo",
       "evo": 2,
       "ultimate": false,
@@ -1709,11 +1709,11 @@
       "resist": [
         "Ice"
       ],
-      "block": [
+      "null": [
         "Psy"
       ],
-      "absorb": [],
-      "reflect": [],
+      "drain": [],
+      "repel": [],
       "party": "Haru Okumura",
       "evo": 2,
       "ultimate": false,
@@ -1771,11 +1771,11 @@
         "Fire",
         "Psy"
       ],
-      "block": [
+      "null": [
         "Curse"
       ],
-      "absorb": [],
-      "reflect": [],
+      "drain": [],
+      "repel": [],
       "party": "Shadow Labrys",
       "evo": 1,
       "ultimate": false,
@@ -1833,11 +1833,11 @@
         "Fire",
         "Psy"
       ],
-      "block": [
+      "null": [
         "Curse"
       ],
-      "absorb": [],
-      "reflect": [],
+      "drain": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -1892,11 +1892,11 @@
         "Psy"
       ],
       "resist": [],
-      "block": [
+      "null": [
         "Fire"
       ],
-      "absorb": [],
-      "reflect": [
+      "drain": [],
+      "repel": [
         "Nuke"
       ],
       "party": null,
@@ -1954,11 +1954,11 @@
         "Phys",
         "Curse"
       ],
-      "block": [
+      "null": [
         "Gun"
       ],
-      "absorb": [],
-      "reflect": [
+      "drain": [],
+      "repel": [
         "Fire"
       ],
       "party": null,
@@ -2047,12 +2047,12 @@
         "Elec"
       ],
       "resist": [],
-      "block": [
+      "null": [
         "Phys",
         "Curse"
       ],
-      "absorb": [],
-      "reflect": [],
+      "drain": [],
+      "repel": [],
       "party": "Aigis",
       "evo": 2,
       "ultimate": false,
@@ -2113,11 +2113,11 @@
       "resist": [
         "Phys"
       ],
-      "block": [
+      "null": [
         "Gun"
       ],
-      "absorb": [],
-      "reflect": [],
+      "drain": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -2172,11 +2172,11 @@
         "Fire"
       ],
       "resist": [],
-      "block": [
+      "null": [
         "Wind"
       ],
-      "absorb": [],
-      "reflect": [],
+      "drain": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -2231,11 +2231,11 @@
         "Curse"
       ],
       "resist": [],
-      "block": [
+      "null": [
         "Fire"
       ],
-      "absorb": [],
-      "reflect": [
+      "drain": [],
+      "repel": [
         "Wind"
       ],
       "party": null,
@@ -2293,11 +2293,11 @@
         "Fire",
         "Bless"
       ],
-      "block": [],
-      "absorb": [
+      "null": [],
+      "drain": [
         "Wind"
       ],
-      "reflect": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -2354,11 +2354,11 @@
       "resist": [
         "Fire"
       ],
-      "block": [
+      "null": [
         "Curse"
       ],
-      "absorb": [],
-      "reflect": [],
+      "drain": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -2413,11 +2413,11 @@
         "Gun",
         "Elec"
       ],
-      "block": [
+      "null": [
         "Bless"
       ],
-      "absorb": [],
-      "reflect": [],
+      "drain": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -2476,11 +2476,11 @@
         "Bless"
       ],
       "resist": [],
-      "block": [],
-      "absorb": [
+      "null": [],
+      "drain": [
         "Fire"
       ],
-      "reflect": [
+      "repel": [
         "Curse"
       ],
       "party": null,
@@ -2535,12 +2535,12 @@
       "evoMove": null,
       "weak": [],
       "resist": [],
-      "block": [
+      "null": [
         "Phys",
         "Curse"
       ],
-      "absorb": [],
-      "reflect": [],
+      "drain": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -2595,9 +2595,9 @@
         "Elec",
         "Nuke"
       ],
-      "block": [],
-      "absorb": [],
-      "reflect": [
+      "null": [],
+      "drain": [],
+      "repel": [
         "Curse"
       ],
       "party": null,
@@ -2648,11 +2648,11 @@
       "resist": [
         "Fire"
       ],
-      "block": [
+      "null": [
         "Gun"
       ],
-      "absorb": [],
-      "reflect": [],
+      "drain": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -2701,9 +2701,9 @@
       "resist": [
         "Curse"
       ],
-      "block": [],
-      "absorb": [],
-      "reflect": [],
+      "null": [],
+      "drain": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -2761,11 +2761,11 @@
         "Bless",
         "Curse"
       ],
-      "block": [],
-      "absorb": [
+      "null": [],
+      "drain": [
         "Fire"
       ],
-      "reflect": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -2818,13 +2818,13 @@
       "evoMove": null,
       "weak": [],
       "resist": [],
-      "block": [
+      "null": [
         "Nuke"
       ],
-      "absorb": [
+      "drain": [
         "Ice"
       ],
-      "reflect": [
+      "repel": [
         "Fire",
         "Curse"
       ],
@@ -2888,11 +2888,11 @@
         "Gun",
         "Ice"
       ],
-      "block": [
+      "null": [
         "Curse"
       ],
-      "absorb": [],
-      "reflect": [],
+      "drain": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -2950,11 +2950,11 @@
         "Bless",
         "Curse"
       ],
-      "block": [],
-      "absorb": [
+      "null": [],
+      "drain": [
         "Ice"
       ],
-      "reflect": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -3011,11 +3011,11 @@
       "resist": [
         "Psy"
       ],
-      "block": [
+      "null": [
         "Curse"
       ],
-      "absorb": [],
-      "reflect": [],
+      "drain": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -3071,13 +3071,13 @@
         "Nuke"
       ],
       "resist": [],
-      "block": [
+      "null": [
         "Fire",
         "Wind",
         "Curse"
       ],
-      "absorb": [],
-      "reflect": [],
+      "drain": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -3141,11 +3141,11 @@
       "resist": [
         "Curse"
       ],
-      "block": [],
-      "absorb": [
+      "null": [],
+      "drain": [
         "Ice"
       ],
-      "reflect": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -3248,11 +3248,11 @@
         "Ice"
       ],
       "resist": [],
-      "block": [
+      "null": [
         "Elec"
       ],
-      "absorb": [],
-      "reflect": [],
+      "drain": [],
+      "repel": [],
       "party": "Akihiko Sanada",
       "evo": 2,
       "ultimate": false,
@@ -3305,9 +3305,9 @@
       "resist": [
         "Elec"
       ],
-      "block": [],
-      "absorb": [],
-      "reflect": [],
+      "null": [],
+      "drain": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -3428,9 +3428,9 @@
       "resist": [
         "Elec"
       ],
-      "block": [],
-      "absorb": [],
-      "reflect": [],
+      "null": [],
+      "drain": [],
+      "repel": [],
       "party": "Ryuji Sakamoto",
       "evo": 1,
       "ultimate": false,
@@ -3543,9 +3543,9 @@
       "resist": [
         "Fire"
       ],
-      "block": [],
-      "absorb": [],
-      "reflect": [],
+      "null": [],
+      "drain": [],
+      "repel": [],
       "party": "Ann Takamaki",
       "evo": 1,
       "ultimate": false,
@@ -3622,9 +3622,9 @@
       "evoMove": null,
       "weak": [],
       "resist": [],
-      "block": [],
-      "absorb": [],
-      "reflect": [],
+      "null": [],
+      "drain": [],
+      "repel": [],
       "party": "Shinjiro Aragaki",
       "evo": 1,
       "ultimate": false,
@@ -3737,11 +3737,11 @@
       "resist": [
         "Elec"
       ],
-      "block": [
+      "null": [
         "Fire"
       ],
-      "absorb": [],
-      "reflect": [],
+      "drain": [],
+      "repel": [],
       "party": "Ann Takamaki",
       "evo": 3,
       "ultimate": false,
@@ -3804,11 +3804,11 @@
         "Curse"
       ],
       "resist": [],
-      "block": [
+      "null": [
         "Bless"
       ],
-      "absorb": [],
-      "reflect": [],
+      "drain": [],
+      "repel": [],
       "party": "Sumire Yoshizawa",
       "evo": 1,
       "ultimate": false,
@@ -3861,11 +3861,11 @@
       "resist": [
         "Nuke"
       ],
-      "block": [],
-      "absorb": [
+      "null": [],
+      "drain": [
         "Fire"
       ],
-      "reflect": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -3954,12 +3954,12 @@
         "Bless"
       ],
       "resist": [],
-      "block": [
+      "null": [
         "Fire",
         "Curse"
       ],
-      "absorb": [],
-      "reflect": [],
+      "drain": [],
+      "repel": [],
       "party": "Koromaru",
       "evo": 1,
       "ultimate": false,
@@ -4017,14 +4017,14 @@
       "resist": [
         "Gun"
       ],
-      "block": [
+      "null": [
         "Elec"
       ],
-      "absorb": [
+      "drain": [
         "Ice",
         "Curse"
       ],
-      "reflect": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -4080,13 +4080,13 @@
         "Curse"
       ],
       "resist": [],
-      "block": [
+      "null": [
         "Ice"
       ],
-      "absorb": [
+      "drain": [
         "Fire"
       ],
-      "reflect": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -4144,11 +4144,11 @@
         "Phys",
         "Gun"
       ],
-      "block": [
+      "null": [
         "Psy"
       ],
-      "absorb": [],
-      "reflect": [],
+      "drain": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": true,
@@ -4209,11 +4209,11 @@
       "resist": [
         "Phys"
       ],
-      "block": [],
-      "absorb": [
+      "null": [],
+      "drain": [
         "Fire"
       ],
-      "reflect": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -4269,11 +4269,11 @@
         "Nuke"
       ],
       "resist": [],
-      "block": [
+      "null": [
         "Wind"
       ],
-      "absorb": [],
-      "reflect": [],
+      "drain": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -4331,11 +4331,11 @@
         "Phys",
         "Gun"
       ],
-      "block": [
+      "null": [
         "Bless"
       ],
-      "absorb": [],
-      "reflect": [
+      "drain": [],
+      "repel": [
         "Wind"
       ],
       "party": null,
@@ -4394,11 +4394,11 @@
       "resist": [
         "Fire"
       ],
-      "block": [
+      "null": [
         "Bless"
       ],
-      "absorb": [],
-      "reflect": [],
+      "drain": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": true,
@@ -4455,11 +4455,11 @@
       "resist": [
         "Phys"
       ],
-      "block": [
+      "null": [
         "Bless"
       ],
-      "absorb": [],
-      "reflect": [],
+      "drain": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -4514,11 +4514,11 @@
       "resist": [
         "Fire"
       ],
-      "block": [
+      "null": [
         "Gun"
       ],
-      "absorb": [],
-      "reflect": [],
+      "drain": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -4576,9 +4576,9 @@
         "Nuke",
         "Curse"
       ],
-      "block": [],
-      "absorb": [],
-      "reflect": [
+      "null": [],
+      "drain": [],
+      "repel": [
         "Fire"
       ],
       "party": null,
@@ -4705,11 +4705,11 @@
       "resist": [
         "Bless"
       ],
-      "block": [
+      "null": [
         "Wind"
       ],
-      "absorb": [],
-      "reflect": [],
+      "drain": [],
+      "repel": [],
       "party": "Morgana",
       "evo": 3,
       "ultimate": false,
@@ -4762,12 +4762,12 @@
       "evoMove": null,
       "weak": [],
       "resist": [],
-      "block": [
+      "null": [
         "Curse",
         "Bless"
       ],
-      "absorb": [],
-      "reflect": [
+      "drain": [],
+      "repel": [
         "Elec"
       ],
       "party": null,
@@ -4822,9 +4822,9 @@
       "evoMove": null,
       "weak": [],
       "resist": [],
-      "block": [],
-      "absorb": [],
-      "reflect": [
+      "null": [],
+      "drain": [],
+      "repel": [
         "Fire"
       ],
       "party": null,
@@ -4883,11 +4883,11 @@
       "resist": [
         "Curse"
       ],
-      "block": [
+      "null": [
         "Bless"
       ],
-      "absorb": [],
-      "reflect": [
+      "drain": [],
+      "repel": [
         "Nuke"
       ],
       "party": null,
@@ -4944,9 +4944,9 @@
         "Fire",
         "Curse"
       ],
-      "block": [],
-      "absorb": [],
-      "reflect": [],
+      "null": [],
+      "drain": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -5011,11 +5011,11 @@
       "resist": [
         "Nuke"
       ],
-      "block": [
+      "null": [
         "Bless"
       ],
-      "absorb": [],
-      "reflect": [],
+      "drain": [],
+      "repel": [],
       "party": "Sumire Yoshizawa",
       "evo": 3,
       "ultimate": false,
@@ -5070,12 +5070,12 @@
       "resist": [
         "Elec"
       ],
-      "block": [],
-      "absorb": [
+      "null": [],
+      "drain": [
         "Fire",
         "Nuke"
       ],
-      "reflect": [
+      "repel": [
         "Phys",
         "Gun"
       ],
@@ -5136,11 +5136,11 @@
         "Wind",
         "Nuke"
       ],
-      "block": [
+      "null": [
         "Bless"
       ],
-      "absorb": [],
-      "reflect": [],
+      "drain": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -5195,13 +5195,13 @@
         "Elec"
       ],
       "resist": [],
-      "block": [
+      "null": [
         "Psy"
       ],
-      "absorb": [
+      "drain": [
         "Ice"
       ],
-      "reflect": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -5256,12 +5256,12 @@
         "Elec"
       ],
       "resist": [],
-      "block": [
+      "null": [
         "Fire",
         "Wind"
       ],
-      "absorb": [],
-      "reflect": [],
+      "drain": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -5322,9 +5322,9 @@
       "resist": [
         "Phys"
       ],
-      "block": [],
-      "absorb": [],
-      "reflect": [],
+      "null": [],
+      "drain": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": true,
@@ -5377,11 +5377,11 @@
       "resist": [
         "Gun"
       ],
-      "block": [],
-      "absorb": [
+      "null": [],
+      "drain": [
         "Wind"
       ],
-      "reflect": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -5438,13 +5438,13 @@
       "evoMove": null,
       "weak": [],
       "resist": [],
-      "block": [
+      "null": [
         "Psy"
       ],
-      "absorb": [
+      "drain": [
         "Bless"
       ],
-      "reflect": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -5502,11 +5502,11 @@
         "Phys",
         "Gun"
       ],
-      "block": [],
-      "absorb": [
+      "null": [],
+      "drain": [
         "Wind"
       ],
-      "reflect": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -5562,11 +5562,11 @@
         "Curse"
       ],
       "resist": [],
-      "block": [],
-      "absorb": [
+      "null": [],
+      "drain": [
         "Ice"
       ],
-      "reflect": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -5621,9 +5621,9 @@
       "resist": [
         "Wind"
       ],
-      "block": [],
-      "absorb": [],
-      "reflect": [
+      "null": [],
+      "drain": [],
+      "repel": [
         "Bless"
       ],
       "party": null,
@@ -5680,11 +5680,11 @@
       "resist": [
         "Psy"
       ],
-      "block": [
+      "null": [
         "Ice"
       ],
-      "absorb": [],
-      "reflect": [],
+      "drain": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -5737,11 +5737,11 @@
       "resist": [
         "Fire"
       ],
-      "block": [
+      "null": [
         "Curse"
       ],
-      "absorb": [],
-      "reflect": [
+      "drain": [],
+      "repel": [
         "Phys",
         "Gun"
       ],
@@ -5861,9 +5861,9 @@
       "resist": [
         "Ice"
       ],
-      "block": [],
-      "absorb": [],
-      "reflect": [],
+      "null": [],
+      "drain": [],
+      "repel": [],
       "party": "Yusuke Kitagawa",
       "evo": 1,
       "ultimate": false,
@@ -5914,11 +5914,11 @@
         "Bless"
       ],
       "resist": [],
-      "block": [
+      "null": [
         "Ice"
       ],
-      "absorb": [],
-      "reflect": [],
+      "drain": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -6035,11 +6035,11 @@
       "resist": [
         "Wind"
       ],
-      "block": [
+      "null": [
         "Ice"
       ],
-      "absorb": [],
-      "reflect": [],
+      "drain": [],
+      "repel": [],
       "party": "Yusuke Kitagawa",
       "evo": 3,
       "ultimate": false,
@@ -6090,12 +6090,12 @@
         "Curse"
       ],
       "resist": [],
-      "block": [
+      "null": [
         "Ice",
         "Elec"
       ],
-      "absorb": [],
-      "reflect": [],
+      "drain": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -6150,9 +6150,9 @@
         "Psy",
         "Bless"
       ],
-      "block": [],
-      "absorb": [],
-      "reflect": [],
+      "null": [],
+      "drain": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -6255,13 +6255,13 @@
         "Fire"
       ],
       "resist": [],
-      "block": [
+      "null": [
         "Bless"
       ],
-      "absorb": [
+      "drain": [
         "Ice"
       ],
-      "reflect": [],
+      "repel": [],
       "party": "Chie Satonaka",
       "evo": 3,
       "ultimate": false,
@@ -6323,9 +6323,9 @@
         "Psy",
         "Bless"
       ],
-      "block": [],
-      "absorb": [],
-      "reflect": [],
+      "null": [],
+      "drain": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -6380,14 +6380,14 @@
       "resist": [
         "Fire"
       ],
-      "block": [
+      "null": [
         "Psy",
         "Curse"
       ],
-      "absorb": [
+      "drain": [
         "Wind"
       ],
-      "reflect": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -6500,11 +6500,11 @@
       "resist": [
         "Elec"
       ],
-      "block": [
+      "null": [
         "Fire"
       ],
-      "absorb": [],
-      "reflect": [],
+      "drain": [],
+      "repel": [],
       "party": "Ann Takamaki",
       "evo": 2,
       "ultimate": false,
@@ -6561,11 +6561,11 @@
       "resist": [
         "Gun"
       ],
-      "block": [
+      "null": [
         "Curse"
       ],
-      "absorb": [],
-      "reflect": [],
+      "drain": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -6622,9 +6622,9 @@
       "resist": [
         "Wind"
       ],
-      "block": [],
-      "absorb": [],
-      "reflect": [
+      "null": [],
+      "drain": [],
+      "repel": [
         "Fire"
       ],
       "party": null,
@@ -6687,11 +6687,11 @@
       "resist": [
         "Psy"
       ],
-      "block": [
+      "null": [
         "Curse"
       ],
-      "absorb": [],
-      "reflect": [],
+      "drain": [],
+      "repel": [],
       "party": "Goro Akechi",
       "evo": 3,
       "ultimate": false,
@@ -6776,9 +6776,9 @@
       "resist": [
         "Fire"
       ],
-      "block": [],
-      "absorb": [],
-      "reflect": [],
+      "null": [],
+      "drain": [],
+      "repel": [],
       "party": "Junpei Iori",
       "evo": 1,
       "ultimate": false,
@@ -6833,9 +6833,9 @@
         "Elec",
         "Wind"
       ],
-      "block": [],
-      "absorb": [],
-      "reflect": [],
+      "null": [],
+      "drain": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -6904,9 +6904,9 @@
       "evoMove": null,
       "weak": [],
       "resist": [],
-      "block": [],
-      "absorb": [],
-      "reflect": [],
+      "null": [],
+      "drain": [],
+      "repel": [],
       "party": "Rise Kujikawa",
       "evo": 1,
       "ultimate": false,
@@ -6964,9 +6964,9 @@
         "Fire"
       ],
       "resist": [],
-      "block": [],
-      "absorb": [],
-      "reflect": [
+      "null": [],
+      "drain": [],
+      "repel": [
         "Elec"
       ],
       "party": null,
@@ -7023,11 +7023,11 @@
         "Fire"
       ],
       "resist": [],
-      "block": [
+      "null": [
         "Elec"
       ],
-      "absorb": [],
-      "reflect": [
+      "drain": [],
+      "repel": [
         "Bless"
       ],
       "party": null,
@@ -7081,9 +7081,9 @@
         "Ice"
       ],
       "resist": [],
-      "block": [],
-      "absorb": [],
-      "reflect": [
+      "null": [],
+      "drain": [],
+      "repel": [
         "Fire"
       ],
       "party": null,
@@ -7135,9 +7135,9 @@
       "resist": [
         "Elec"
       ],
-      "block": [],
-      "absorb": [],
-      "reflect": [],
+      "null": [],
+      "drain": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -7192,13 +7192,13 @@
         "Wind"
       ],
       "resist": [],
-      "block": [
+      "null": [
         "Gun",
         "Fire",
         "Curse"
       ],
-      "absorb": [],
-      "reflect": [],
+      "drain": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -7275,9 +7275,9 @@
       "resist": [
         "Wind"
       ],
-      "block": [],
-      "absorb": [],
-      "reflect": [],
+      "null": [],
+      "drain": [],
+      "repel": [],
       "party": "Yukari Takeba",
       "evo": 1,
       "ultimate": false,
@@ -7332,9 +7332,9 @@
         "Bless",
         "Curse"
       ],
-      "block": [],
-      "absorb": [],
-      "reflect": [
+      "null": [],
+      "drain": [],
+      "repel": [
         "Wind"
       ],
       "party": null,
@@ -7391,11 +7391,11 @@
         "Wind"
       ],
       "resist": [],
-      "block": [
+      "null": [
         "Elec"
       ],
-      "absorb": [],
-      "reflect": [],
+      "drain": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": true,
@@ -7450,11 +7450,11 @@
         "Psy"
       ],
       "resist": [],
-      "block": [
+      "null": [
         "Bless"
       ],
-      "absorb": [],
-      "reflect": [],
+      "drain": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -7555,11 +7555,11 @@
         "Elec"
       ],
       "resist": [],
-      "block": [
+      "null": [
         "Wind"
       ],
-      "absorb": [],
-      "reflect": [],
+      "drain": [],
+      "repel": [],
       "party": "Yukari Takeba",
       "evo": 2,
       "ultimate": false,
@@ -7632,11 +7632,11 @@
       "resist": [
         "Elec"
       ],
-      "block": [
+      "null": [
         "Curse"
       ],
-      "absorb": [],
-      "reflect": [],
+      "drain": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -7702,9 +7702,9 @@
         "Psy",
         "Nuke"
       ],
-      "block": [],
-      "absorb": [],
-      "reflect": [],
+      "null": [],
+      "drain": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -7770,9 +7770,9 @@
         "Psy",
         "Nuke"
       ],
-      "block": [],
-      "absorb": [],
-      "reflect": [],
+      "null": [],
+      "drain": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -7827,12 +7827,12 @@
         "Wind"
       ],
       "resist": [],
-      "block": [
+      "null": [
         "Elec",
         "Curse"
       ],
-      "absorb": [],
-      "reflect": [],
+      "drain": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -7883,11 +7883,11 @@
         "Fire"
       ],
       "resist": [],
-      "block": [
+      "null": [
         "Ice"
       ],
-      "absorb": [],
-      "reflect": [],
+      "drain": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -7937,11 +7937,11 @@
         "Wind"
       ],
       "resist": [],
-      "block": [],
-      "absorb": [
+      "null": [],
+      "drain": [
         "Fire"
       ],
-      "reflect": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -7999,9 +7999,9 @@
         "Ice",
         "Bless"
       ],
-      "block": [],
-      "absorb": [],
-      "reflect": [
+      "null": [],
+      "drain": [],
+      "repel": [
         "Wind"
       ],
       "party": null,
@@ -8061,9 +8061,9 @@
         "Phys",
         "Bless"
       ],
-      "block": [],
-      "absorb": [],
-      "reflect": [],
+      "null": [],
+      "drain": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -8114,11 +8114,11 @@
         "Elec"
       ],
       "resist": [],
-      "block": [],
-      "absorb": [
+      "null": [],
+      "drain": [
         "Fire"
       ],
-      "reflect": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -8219,9 +8219,9 @@
       "resist": [
         "Wind"
       ],
-      "block": [],
-      "absorb": [],
-      "reflect": [],
+      "null": [],
+      "drain": [],
+      "repel": [],
       "party": "Yosuke Hanamura",
       "evo": 1,
       "ultimate": false,
@@ -8334,9 +8334,9 @@
       "resist": [
         "Nuke"
       ],
-      "block": [],
-      "absorb": [],
-      "reflect": [],
+      "null": [],
+      "drain": [],
+      "repel": [],
       "party": "Makoto Niijima",
       "evo": 1,
       "ultimate": false,
@@ -8385,9 +8385,9 @@
       "evoMove": null,
       "weak": [],
       "resist": [],
-      "block": [],
-      "absorb": [],
-      "reflect": [],
+      "null": [],
+      "drain": [],
+      "repel": [],
       "party": "Fuuka Yamagishi",
       "evo": 2,
       "ultimate": false,
@@ -8444,12 +8444,12 @@
       "resist": [
         "Wind"
       ],
-      "block": [
+      "null": [
         "Bless",
         "Curse"
       ],
-      "absorb": [],
-      "reflect": [],
+      "drain": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -8504,12 +8504,12 @@
         "Fire"
       ],
       "resist": [],
-      "block": [
+      "null": [
         "Bless",
         "Curse"
       ],
-      "absorb": [],
-      "reflect": [],
+      "drain": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -8564,12 +8564,12 @@
         "Nuke"
       ],
       "resist": [],
-      "block": [
+      "null": [
         "Gun",
         "Psy"
       ],
-      "absorb": [],
-      "reflect": [],
+      "drain": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -8652,11 +8652,11 @@
         "Curse"
       ],
       "resist": [],
-      "block": [
+      "null": [
         "Bless"
       ],
-      "absorb": [],
-      "reflect": [],
+      "drain": [],
+      "repel": [],
       "party": "Ken Amada",
       "evo": 2,
       "ultimate": false,
@@ -8711,11 +8711,11 @@
       "resist": [
         "Curse"
       ],
-      "block": [
+      "null": [
         "Fire"
       ],
-      "absorb": [],
-      "reflect": [
+      "drain": [],
+      "repel": [
         "Psy",
         "Gun"
       ],
@@ -8820,11 +8820,11 @@
         "Wind",
         "Curse"
       ],
-      "block": [
+      "null": [
         "Ice"
       ],
-      "absorb": [],
-      "reflect": [],
+      "drain": [],
+      "repel": [],
       "party": "Teddie",
       "evo": 2,
       "ultimate": false,
@@ -8921,14 +8921,14 @@
       "evoMove": "Kamui Miracle",
       "weak": [],
       "resist": [],
-      "block": [
+      "null": [
         "Wind",
         "Curse"
       ],
-      "absorb": [
+      "drain": [
         "Ice"
       ],
-      "reflect": [],
+      "repel": [],
       "party": "Teddie",
       "evo": 3,
       "ultimate": false,
@@ -9045,11 +9045,11 @@
       "resist": [
         "Wind"
       ],
-      "block": [
+      "null": [
         "Ice"
       ],
-      "absorb": [],
-      "reflect": [],
+      "drain": [],
+      "repel": [],
       "party": "Yusuke Kitagawa",
       "evo": 2,
       "ultimate": false,
@@ -9118,9 +9118,9 @@
       "evoMove": null,
       "weak": [],
       "resist": [],
-      "block": [],
-      "absorb": [],
-      "reflect": [],
+      "null": [],
+      "drain": [],
+      "repel": [],
       "party": "Rise Kujikawa",
       "evo": 2,
       "ultimate": false,
@@ -9169,9 +9169,9 @@
       "resist": [
         "Ice"
       ],
-      "block": [],
-      "absorb": [],
-      "reflect": [],
+      "null": [],
+      "drain": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -9224,11 +9224,11 @@
       "resist": [
         "Bless"
       ],
-      "block": [
+      "null": [
         "Wind"
       ],
-      "absorb": [],
-      "reflect": [],
+      "drain": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -9281,13 +9281,13 @@
       "evoMove": null,
       "weak": [],
       "resist": [],
-      "block": [
+      "null": [
         "Bless"
       ],
-      "absorb": [
+      "drain": [
         "Ice"
       ],
-      "reflect": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -9342,9 +9342,9 @@
       "resist": [
         "Phys"
       ],
-      "block": [],
-      "absorb": [],
-      "reflect": [
+      "null": [],
+      "drain": [],
+      "repel": [
         "Gun"
       ],
       "party": null,
@@ -9447,9 +9447,9 @@
       "resist": [
         "Ice"
       ],
-      "block": [],
-      "absorb": [],
-      "reflect": [],
+      "null": [],
+      "drain": [],
+      "repel": [],
       "party": "Teddie",
       "evo": 1,
       "ultimate": false,
@@ -9506,9 +9506,9 @@
       "resist": [
         "Ice"
       ],
-      "block": [],
-      "absorb": [],
-      "reflect": [],
+      "null": [],
+      "drain": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -9565,12 +9565,12 @@
         "Nuke"
       ],
       "resist": [],
-      "block": [
+      "null": [
         "Psy",
         "Bless"
       ],
-      "absorb": [],
-      "reflect": [
+      "drain": [],
+      "repel": [
         "Elec"
       ],
       "party": null,
@@ -9677,9 +9677,9 @@
       "resist": [
         "Fire"
       ],
-      "block": [],
-      "absorb": [],
-      "reflect": [],
+      "null": [],
+      "drain": [],
+      "repel": [],
       "party": "Yukiko Amagi",
       "evo": 1,
       "ultimate": false,
@@ -9733,9 +9733,9 @@
       "resist": [
         "Wind"
       ],
-      "block": [],
-      "absorb": [],
-      "reflect": [],
+      "null": [],
+      "drain": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -9795,9 +9795,9 @@
         "Ice",
         "Wind"
       ],
-      "block": [],
-      "absorb": [],
-      "reflect": [],
+      "null": [],
+      "drain": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -9855,9 +9855,9 @@
         "Phys",
         "Bless"
       ],
-      "block": [],
-      "absorb": [],
-      "reflect": [],
+      "null": [],
+      "drain": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -9926,9 +9926,9 @@
       "evoMove": "Complete Analysis",
       "weak": [],
       "resist": [],
-      "block": [],
-      "absorb": [],
-      "reflect": [],
+      "null": [],
+      "drain": [],
+      "repel": [],
       "party": "Rise Kujikawa",
       "evo": 3,
       "ultimate": false,
@@ -9985,11 +9985,11 @@
       "resist": [
         "Curse"
       ],
-      "block": [
+      "null": [
         "Fire"
       ],
-      "absorb": [],
-      "reflect": [],
+      "drain": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -10041,11 +10041,11 @@
         "Bless",
         "Curse"
       ],
-      "block": [
+      "null": [
         "Ice"
       ],
-      "absorb": [],
-      "reflect": [
+      "drain": [],
+      "repel": [
         "Wind"
       ],
       "party": null,
@@ -10100,9 +10100,9 @@
       "resist": [
         "Wind"
       ],
-      "block": [],
-      "absorb": [],
-      "reflect": [],
+      "null": [],
+      "drain": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -10159,9 +10159,9 @@
       "evoMove": null,
       "weak": [],
       "resist": [],
-      "block": [],
-      "absorb": [],
-      "reflect": [],
+      "null": [],
+      "drain": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -10218,11 +10218,11 @@
       "resist": [
         "Wind"
       ],
-      "block": [
+      "null": [
         "Ice"
       ],
-      "absorb": [],
-      "reflect": [],
+      "drain": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -10280,9 +10280,9 @@
         "Ice",
         "Bless"
       ],
-      "block": [],
-      "absorb": [],
-      "reflect": [],
+      "null": [],
+      "drain": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": true,
@@ -10340,11 +10340,11 @@
       "resist": [
         "Elec"
       ],
-      "block": [
+      "null": [
         "Curse"
       ],
-      "absorb": [],
-      "reflect": [],
+      "drain": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -10398,9 +10398,9 @@
         "Wind",
         "Psy"
       ],
-      "block": [],
-      "absorb": [],
-      "reflect": [],
+      "null": [],
+      "drain": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -10460,11 +10460,11 @@
         "Psy",
         "Fire"
       ],
-      "block": [
+      "null": [
         "Curse"
       ],
-      "absorb": [],
-      "reflect": [],
+      "drain": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -10522,11 +10522,11 @@
       "resist": [
         "Ice"
       ],
-      "block": [
+      "null": [
         "Curse"
       ],
-      "absorb": [],
-      "reflect": [],
+      "drain": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -10581,11 +10581,11 @@
         "Fire"
       ],
       "resist": [],
-      "block": [
+      "null": [
         "Curse"
       ],
-      "absorb": [],
-      "reflect": [
+      "drain": [],
+      "repel": [
         "Ice",
         "Nuke"
       ],
@@ -10647,11 +10647,11 @@
         "Fire",
         "Nuke"
       ],
-      "block": [
+      "null": [
         "Elec"
       ],
-      "absorb": [],
-      "reflect": [],
+      "drain": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -10712,11 +10712,11 @@
         "Bless"
       ],
       "resist": [],
-      "block": [
+      "null": [
         "Curse"
       ],
-      "absorb": [],
-      "reflect": [],
+      "drain": [],
+      "repel": [],
       "party": "Goro Akechi",
       "evo": 2,
       "ultimate": false,
@@ -10775,13 +10775,13 @@
         "Fire"
       ],
       "resist": [],
-      "block": [
+      "null": [
         "Curse"
       ],
-      "absorb": [
+      "drain": [
         "Ice"
       ],
-      "reflect": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": true,
@@ -10845,14 +10845,14 @@
         "Elec",
         "Wind"
       ],
-      "block": [
+      "null": [
         "Phys",
         "Gun"
       ],
-      "absorb": [
+      "drain": [
         "Curse"
       ],
-      "reflect": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": true,
@@ -10893,9 +10893,9 @@
       "evoMove": null,
       "weak": [],
       "resist": [],
-      "block": [],
-      "absorb": [],
-      "reflect": [],
+      "null": [],
+      "drain": [],
+      "repel": [],
       "party": "Fuuka Yamagishi",
       "evo": 1,
       "ultimate": false,
@@ -11000,11 +11000,11 @@
       "resist": [
         "Ice"
       ],
-      "block": [
+      "null": [
         "Psy"
       ],
-      "absorb": [],
-      "reflect": [],
+      "drain": [],
+      "repel": [],
       "party": "Haru Okumura",
       "evo": 3,
       "ultimate": false,
@@ -11061,11 +11061,11 @@
       "resist": [
         "Elec"
       ],
-      "block": [
+      "null": [
         "Curse"
       ],
-      "absorb": [],
-      "reflect": [],
+      "drain": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -11126,13 +11126,13 @@
       "resist": [
         "Psy"
       ],
-      "block": [
+      "null": [
         "Nuke"
       ],
-      "absorb": [
+      "drain": [
         "Fire"
       ],
-      "reflect": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": true,
@@ -11189,12 +11189,12 @@
       "resist": [
         "Gun"
       ],
-      "block": [
+      "null": [
         "Bless",
         "Curse"
       ],
-      "absorb": [],
-      "reflect": [],
+      "drain": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -11251,12 +11251,12 @@
       "resist": [
         "Gun"
       ],
-      "block": [
+      "null": [
         "Bless",
         "Curse"
       ],
-      "absorb": [],
-      "reflect": [],
+      "drain": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -11314,12 +11314,12 @@
         "Wind",
         "Nuke"
       ],
-      "block": [
+      "null": [
         "Gun",
         "Bless"
       ],
-      "absorb": [],
-      "reflect": [],
+      "drain": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -11364,9 +11364,9 @@
       "resist": [
         "Elec"
       ],
-      "block": [],
-      "absorb": [],
-      "reflect": [],
+      "null": [],
+      "drain": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -11425,14 +11425,14 @@
       "resist": [
         "Bless"
       ],
-      "block": [
+      "null": [
         "Gun",
         "Curse"
       ],
-      "absorb": [
+      "drain": [
         "Fire"
       ],
-      "reflect": [
+      "repel": [
         "Psy"
       ],
       "party": null,
@@ -11491,13 +11491,13 @@
       "resist": [
         "Elec"
       ],
-      "block": [
+      "null": [
         "Wind"
       ],
-      "absorb": [
+      "drain": [
         "Bless"
       ],
-      "reflect": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": true,
@@ -11548,11 +11548,11 @@
         "Elec"
       ],
       "resist": [],
-      "block": [
+      "null": [
         "Wind"
       ],
-      "absorb": [],
-      "reflect": [],
+      "drain": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -11609,13 +11609,13 @@
       "resist": [
         "Psy"
       ],
-      "block": [
+      "null": [
         "Curse"
       ],
-      "absorb": [
+      "drain": [
         "Bless"
       ],
-      "reflect": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -11740,11 +11740,11 @@
       "resist": [
         "Bless"
       ],
-      "block": [
+      "null": [
         "Wind"
       ],
-      "absorb": [],
-      "reflect": [],
+      "drain": [],
+      "repel": [],
       "party": "Morgana",
       "evo": 2,
       "ultimate": false,
@@ -11810,9 +11810,9 @@
         "Psy",
         "Nuke"
       ],
-      "block": [],
-      "absorb": [],
-      "reflect": [
+      "null": [],
+      "drain": [],
+      "repel": [
         "Bless"
       ],
       "party": null,
@@ -11880,9 +11880,9 @@
         "Psy",
         "Nuke"
       ],
-      "block": [],
-      "absorb": [],
-      "reflect": [
+      "null": [],
+      "drain": [],
+      "repel": [
         "Bless"
       ],
       "party": null,
@@ -11944,12 +11944,12 @@
         "Curse"
       ],
       "resist": [],
-      "block": [],
-      "absorb": [
+      "null": [],
+      "drain": [
         "Psy",
         "Nuke"
       ],
-      "reflect": [
+      "repel": [
         "Wind"
       ],
       "party": null,
@@ -12006,11 +12006,11 @@
       "resist": [
         "Gun"
       ],
-      "block": [
+      "null": [
         "Curse"
       ],
-      "absorb": [],
-      "reflect": [
+      "drain": [],
+      "repel": [
         "Bless"
       ],
       "party": null,
@@ -12117,9 +12117,9 @@
       "resist": [
         "Psy"
       ],
-      "block": [],
-      "absorb": [],
-      "reflect": [],
+      "null": [],
+      "drain": [],
+      "repel": [],
       "party": "Haru Okumura",
       "evo": 1,
       "ultimate": false,
@@ -12176,13 +12176,13 @@
       "resist": [
         "Phys"
       ],
-      "block": [
+      "null": [
         "Elec"
       ],
-      "absorb": [
+      "drain": [
         "Curse"
       ],
-      "reflect": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -12240,13 +12240,13 @@
         "Phys",
         "Gun"
       ],
-      "block": [
+      "null": [
         "Nuke"
       ],
-      "absorb": [
+      "drain": [
         "Fire"
       ],
-      "reflect": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -12303,12 +12303,12 @@
         "Elec"
       ],
       "resist": [],
-      "block": [
+      "null": [
         "Ice",
         "Bless"
       ],
-      "absorb": [],
-      "reflect": [],
+      "drain": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -12361,9 +12361,9 @@
       "resist": [
         "Elec"
       ],
-      "block": [],
-      "absorb": [],
-      "reflect": [],
+      "null": [],
+      "drain": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -12421,14 +12421,14 @@
         "Elec",
         "Wind"
       ],
-      "block": [
+      "null": [
         "Curse"
       ],
-      "absorb": [
+      "drain": [
         "Fire",
         "Psy"
       ],
-      "reflect": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -12481,11 +12481,11 @@
       "resist": [
         "Gun"
       ],
-      "block": [],
-      "absorb": [
+      "null": [],
+      "drain": [
         "Elec"
       ],
-      "reflect": [
+      "repel": [
         "Curse"
       ],
       "party": null,
@@ -12542,11 +12542,11 @@
         "Bless"
       ],
       "resist": [],
-      "block": [
+      "null": [
         "Curse"
       ],
-      "absorb": [],
-      "reflect": [
+      "drain": [],
+      "repel": [
         "Elec"
       ],
       "party": null,
@@ -12605,11 +12605,11 @@
       "resist": [
         "Psy"
       ],
-      "block": [
+      "null": [
         "Elec"
       ],
-      "absorb": [],
-      "reflect": [],
+      "drain": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -12666,11 +12666,11 @@
       "resist": [
         "Gun"
       ],
-      "block": [
+      "null": [
         "Elec"
       ],
-      "absorb": [],
-      "reflect": [],
+      "drain": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -12728,11 +12728,11 @@
         "Wind",
         "Bless"
       ],
-      "block": [
+      "null": [
         "Elec"
       ],
-      "absorb": [],
-      "reflect": [],
+      "drain": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -12789,11 +12789,11 @@
       "resist": [
         "Curse"
       ],
-      "block": [
+      "null": [
         "Psy"
       ],
-      "absorb": [],
-      "reflect": [],
+      "drain": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -12838,9 +12838,9 @@
       "evoMove": null,
       "weak": [],
       "resist": [],
-      "block": [],
-      "absorb": [],
-      "reflect": [],
+      "null": [],
+      "drain": [],
+      "repel": [],
       "party": "Futaba Sakura",
       "evo": 1,
       "ultimate": false,
@@ -12897,9 +12897,9 @@
       "resist": [
         "Psy"
       ],
-      "block": [],
-      "absorb": [],
-      "reflect": [],
+      "null": [],
+      "drain": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -12958,11 +12958,11 @@
         "Elec",
         "Curse"
       ],
-      "block": [
+      "null": [
         "Bless"
       ],
-      "absorb": [],
-      "reflect": [],
+      "drain": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -13019,9 +13019,9 @@
       "resist": [
         "Bless"
       ],
-      "block": [],
-      "absorb": [],
-      "reflect": [],
+      "null": [],
+      "drain": [],
+      "repel": [],
       "party": "Ken Amada",
       "evo": 1,
       "ultimate": false,
@@ -13078,9 +13078,9 @@
       "resist": [
         "Fire"
       ],
-      "block": [],
-      "absorb": [],
-      "reflect": [],
+      "null": [],
+      "drain": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -13134,9 +13134,9 @@
         "Bless",
         "Curse"
       ],
-      "block": [],
-      "absorb": [],
-      "reflect": [],
+      "null": [],
+      "drain": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -13191,11 +13191,11 @@
       "resist": [
         "Bless"
       ],
-      "block": [],
-      "absorb": [
+      "null": [],
+      "drain": [
         "Wind"
       ],
-      "reflect": [
+      "repel": [
         "Elec"
       ],
       "party": null,
@@ -13254,11 +13254,11 @@
       "resist": [
         "Ice"
       ],
-      "block": [
+      "null": [
         "Curse"
       ],
-      "absorb": [],
-      "reflect": [],
+      "drain": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -13307,9 +13307,9 @@
       "resist": [
         "Phys"
       ],
-      "block": [],
-      "absorb": [],
-      "reflect": [],
+      "null": [],
+      "drain": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -13370,11 +13370,11 @@
       "resist": [
         "Elec"
       ],
-      "block": [
+      "null": [
         "Psy"
       ],
-      "absorb": [],
-      "reflect": [],
+      "drain": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -13427,13 +13427,13 @@
       "evoMove": null,
       "weak": [],
       "resist": [],
-      "block": [
+      "null": [
         "Elec"
       ],
-      "absorb": [
+      "drain": [
         "Wind"
       ],
-      "reflect": [
+      "repel": [
         "Bless",
         "Curse"
       ],
@@ -13492,11 +13492,11 @@
         "Nuke"
       ],
       "resist": [],
-      "block": [
+      "null": [
         "Psy"
       ],
-      "absorb": [],
-      "reflect": [
+      "drain": [],
+      "repel": [
         "Elec"
       ],
       "party": null,
@@ -13559,9 +13559,9 @@
       "resist": [
         "Elec"
       ],
-      "block": [],
-      "absorb": [],
-      "reflect": [],
+      "null": [],
+      "drain": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -13616,9 +13616,9 @@
       "resist": [
         "Phys"
       ],
-      "block": [],
-      "absorb": [],
-      "reflect": [
+      "null": [],
+      "drain": [],
+      "repel": [
         "Bless",
         "Curse"
       ],
@@ -13673,9 +13673,9 @@
         "Phys",
         "Gun"
       ],
-      "block": [],
-      "absorb": [],
-      "reflect": [],
+      "null": [],
+      "drain": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -13729,11 +13729,11 @@
       "resist": [
         "Fire"
       ],
-      "block": [
+      "null": [
         "Curse"
       ],
-      "absorb": [],
-      "reflect": [],
+      "drain": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -13787,9 +13787,9 @@
         "Wind",
         "Curse"
       ],
-      "block": [],
-      "absorb": [],
-      "reflect": [],
+      "null": [],
+      "drain": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -13855,9 +13855,9 @@
       "resist": [
         "Bless"
       ],
-      "block": [],
-      "absorb": [],
-      "reflect": [],
+      "null": [],
+      "drain": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -13921,9 +13921,9 @@
       "resist": [
         "Bless"
       ],
-      "block": [],
-      "absorb": [],
-      "reflect": [],
+      "null": [],
+      "drain": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -13981,9 +13981,9 @@
       "resist": [
         "Bless"
       ],
-      "block": [],
-      "absorb": [],
-      "reflect": [],
+      "null": [],
+      "drain": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -14044,9 +14044,9 @@
       "resist": [
         "Bless"
       ],
-      "block": [],
-      "absorb": [],
-      "reflect": [],
+      "null": [],
+      "drain": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -14086,9 +14086,9 @@
         "Bless",
         "Curse"
       ],
-      "block": [],
-      "absorb": [],
-      "reflect": [],
+      "null": [],
+      "drain": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -14141,11 +14141,11 @@
       "resist": [
         "Nuke"
       ],
-      "block": [],
-      "absorb": [
+      "null": [],
+      "drain": [
         "Fire"
       ],
-      "reflect": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -14198,12 +14198,12 @@
       "resist": [
         "Fire"
       ],
-      "block": [
+      "null": [
         "Curse",
         "Gun"
       ],
-      "absorb": [],
-      "reflect": [],
+      "drain": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -14255,11 +14255,11 @@
         "Bless"
       ],
       "resist": [],
-      "block": [
+      "null": [
         "Fire"
       ],
-      "absorb": [],
-      "reflect": [
+      "drain": [],
+      "repel": [
         "Curse"
       ],
       "party": null,
@@ -14318,9 +14318,9 @@
       "resist": [
         "Wind"
       ],
-      "block": [],
-      "absorb": [],
-      "reflect": [
+      "null": [],
+      "drain": [],
+      "repel": [
         "Curse"
       ],
       "party": null,
@@ -14399,11 +14399,11 @@
       "resist": [
         "Phys"
       ],
-      "block": [
+      "null": [
         "Curse"
       ],
-      "absorb": [],
-      "reflect": [],
+      "drain": [],
+      "repel": [],
       "party": "Aigis",
       "evo": 1,
       "ultimate": false,
@@ -14466,11 +14466,11 @@
       "resist": [
         "Phys"
       ],
-      "block": [
+      "null": [
         "Gun"
       ],
-      "absorb": [],
-      "reflect": [],
+      "drain": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -14581,11 +14581,11 @@
         "Curse"
       ],
       "resist": [],
-      "block": [
+      "null": [
         "Bless"
       ],
-      "absorb": [],
-      "reflect": [],
+      "drain": [],
+      "repel": [],
       "party": "Sophia",
       "evo": 2,
       "ultimate": false,
@@ -14643,9 +14643,9 @@
         "Psy",
         "Bless"
       ],
-      "block": [],
-      "absorb": [],
-      "reflect": [
+      "null": [],
+      "drain": [],
+      "repel": [
         "Ice"
       ],
       "party": null,
@@ -14704,11 +14704,11 @@
       "resist": [
         "Wind"
       ],
-      "block": [
+      "null": [
         "Curse"
       ],
-      "absorb": [],
-      "reflect": [],
+      "drain": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -14789,9 +14789,9 @@
       "resist": [
         "Ice"
       ],
-      "block": [],
-      "absorb": [],
-      "reflect": [],
+      "null": [],
+      "drain": [],
+      "repel": [],
       "party": "Mitsuru Kirijo",
       "evo": 1,
       "ultimate": false,
@@ -14844,11 +14844,11 @@
       "resist": [
         "Ice"
       ],
-      "block": [
+      "null": [
         "Wind"
       ],
-      "absorb": [],
-      "reflect": [],
+      "drain": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -14906,11 +14906,11 @@
       "resist": [
         "Elec"
       ],
-      "block": [
+      "null": [
         "Curse"
       ],
-      "absorb": [],
-      "reflect": [],
+      "drain": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -15003,9 +15003,9 @@
       "resist": [
         "Bless"
       ],
-      "block": [],
-      "absorb": [],
-      "reflect": [],
+      "null": [],
+      "drain": [],
+      "repel": [],
       "party": "Sophia",
       "evo": 1,
       "ultimate": false,
@@ -15057,9 +15057,9 @@
         "Elec",
         "Curse"
       ],
-      "block": [],
-      "absorb": [],
-      "reflect": [],
+      "null": [],
+      "drain": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -15132,9 +15132,9 @@
       "resist": [
         "Elec"
       ],
-      "block": [],
-      "absorb": [],
-      "reflect": [],
+      "null": [],
+      "drain": [],
+      "repel": [],
       "party": "Akihiko Sanada",
       "evo": 1,
       "ultimate": false,
@@ -15192,11 +15192,11 @@
       "resist": [
         "Wind"
       ],
-      "block": [
+      "null": [
         "Bless"
       ],
-      "absorb": [],
-      "reflect": [],
+      "drain": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -15253,11 +15253,11 @@
       "resist": [
         "Fire"
       ],
-      "block": [
+      "null": [
         "Bless"
       ],
-      "absorb": [],
-      "reflect": [],
+      "drain": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -15302,9 +15302,9 @@
       "evoMove": "Treasure Skimmer",
       "weak": [],
       "resist": [],
-      "block": [],
-      "absorb": [],
-      "reflect": [],
+      "null": [],
+      "drain": [],
+      "repel": [],
       "party": "Futaba Sakura",
       "evo": 2,
       "ultimate": false,
@@ -15389,9 +15389,9 @@
       "evoMove": null,
       "weak": [],
       "resist": [],
-      "block": [],
-      "absorb": [],
-      "reflect": [],
+      "null": [],
+      "drain": [],
+      "repel": [],
       "party": "Metis",
       "evo": 1,
       "ultimate": false,
@@ -15448,11 +15448,11 @@
       "resist": [
         "Elec"
       ],
-      "block": [
+      "null": [
         "Fire"
       ],
-      "absorb": [],
-      "reflect": [],
+      "drain": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -15509,11 +15509,11 @@
       "resist": [
         "Wind"
       ],
-      "block": [
+      "null": [
         "Fire"
       ],
-      "absorb": [],
-      "reflect": [],
+      "drain": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -15566,11 +15566,11 @@
       "evoMove": null,
       "weak": [],
       "resist": [],
-      "block": [
+      "null": [
         "Elec"
       ],
-      "absorb": [],
-      "reflect": [],
+      "drain": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -15630,11 +15630,11 @@
         "Fire",
         "Curse"
       ],
-      "block": [
+      "null": [
         "Gun"
       ],
-      "absorb": [],
-      "reflect": [],
+      "drain": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -15686,12 +15686,12 @@
         "Bless"
       ],
       "resist": [],
-      "block": [
+      "null": [
         "Fire",
         "Curse"
       ],
-      "absorb": [],
-      "reflect": [
+      "drain": [],
+      "repel": [
         "Phys",
         "Gun"
       ],
@@ -15753,11 +15753,11 @@
         "Bless"
       ],
       "resist": [],
-      "block": [
+      "null": [
         "Curse"
       ],
-      "absorb": [],
-      "reflect": [],
+      "drain": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -15810,14 +15810,14 @@
       "evoMove": null,
       "weak": [],
       "resist": [],
-      "block": [
+      "null": [
         "Psy",
         "Bless"
       ],
-      "absorb": [
+      "drain": [
         "Ice"
       ],
-      "reflect": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -15872,11 +15872,11 @@
         "Bless"
       ],
       "resist": [],
-      "block": [
+      "null": [
         "Curse"
       ],
-      "absorb": [],
-      "reflect": [],
+      "drain": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -15965,9 +15965,9 @@
       "resist": [
         "Bless"
       ],
-      "block": [],
-      "absorb": [],
-      "reflect": [],
+      "null": [],
+      "drain": [],
+      "repel": [],
       "party": "Goro Akechi",
       "evo": 1,
       "ultimate": false,
@@ -16064,11 +16064,11 @@
         "Wind"
       ],
       "resist": [],
-      "block": [
+      "null": [
         "Elec"
       ],
-      "absorb": [],
-      "reflect": [],
+      "drain": [],
+      "repel": [],
       "party": "Kanji Tatsumi",
       "evo": 2,
       "ultimate": false,
@@ -16121,9 +16121,9 @@
       "resist": [
         "Ice"
       ],
-      "block": [],
-      "absorb": [],
-      "reflect": [],
+      "null": [],
+      "drain": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -16179,11 +16179,11 @@
         "Phys",
         "Gun"
       ],
-      "block": [
+      "null": [
         "Curse"
       ],
-      "absorb": [],
-      "reflect": [
+      "drain": [],
+      "repel": [
         "Bless"
       ],
       "party": null,
@@ -16243,9 +16243,9 @@
       "resist": [
         "Wind"
       ],
-      "block": [],
-      "absorb": [],
-      "reflect": [],
+      "null": [],
+      "drain": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -16302,11 +16302,11 @@
       "resist": [
         "Elec"
       ],
-      "block": [
+      "null": [
         "Ice"
       ],
-      "absorb": [],
-      "reflect": [],
+      "drain": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -16365,9 +16365,9 @@
       "resist": [
         "Gun"
       ],
-      "block": [],
-      "absorb": [],
-      "reflect": [
+      "null": [],
+      "drain": [],
+      "repel": [
         "Ice",
         "Curse"
       ],
@@ -16436,13 +16436,13 @@
         "Psy",
         "Nuke"
       ],
-      "block": [
+      "null": [
         "Bless"
       ],
-      "absorb": [
+      "drain": [
         "Curse"
       ],
-      "reflect": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -16495,12 +16495,12 @@
       "evoMove": null,
       "weak": [],
       "resist": [],
-      "block": [
+      "null": [
         "Ice",
         "Curse"
       ],
-      "absorb": [],
-      "reflect": [
+      "drain": [],
+      "repel": [
         "Elec"
       ],
       "party": null,
@@ -16561,9 +16561,9 @@
       "resist": [
         "Ice"
       ],
-      "block": [],
-      "absorb": [],
-      "reflect": [],
+      "null": [],
+      "drain": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -16686,11 +16686,11 @@
       "resist": [
         "Fire"
       ],
-      "block": [
+      "null": [
         "Elec"
       ],
-      "absorb": [],
-      "reflect": [],
+      "drain": [],
+      "repel": [],
       "party": "Ryuji Sakamoto",
       "evo": 2,
       "ultimate": false,
@@ -16741,11 +16741,11 @@
         "Elec"
       ],
       "resist": [],
-      "block": [
+      "null": [
         "Fire"
       ],
-      "absorb": [],
-      "reflect": [],
+      "drain": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -16799,9 +16799,9 @@
         "Gun",
         "Nuke"
       ],
-      "block": [],
-      "absorb": [],
-      "reflect": [],
+      "null": [],
+      "drain": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -16854,11 +16854,11 @@
       "resist": [
         "Curse"
       ],
-      "block": [
+      "null": [
         "Wind"
       ],
-      "absorb": [],
-      "reflect": [
+      "drain": [],
+      "repel": [
         "Fire"
       ],
       "party": null,
@@ -16914,11 +16914,11 @@
       "resist": [
         "Phys"
       ],
-      "block": [
+      "null": [
         "Bless"
       ],
-      "absorb": [],
-      "reflect": [],
+      "drain": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -16973,14 +16973,14 @@
         "Nuke"
       ],
       "resist": [],
-      "block": [
+      "null": [
         "Phys",
         "Gun",
         "Bless",
         "Curse"
       ],
-      "absorb": [],
-      "reflect": [],
+      "drain": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -17035,15 +17035,15 @@
         "Nuke"
       ],
       "resist": [],
-      "block": [
+      "null": [
         "Ice",
         "Bless",
         "Curse"
       ],
-      "absorb": [
+      "drain": [
         "Psy"
       ],
-      "reflect": [
+      "repel": [
         "Elec"
       ],
       "party": null,
@@ -17103,12 +17103,12 @@
         "Ice",
         "Gun"
       ],
-      "block": [
+      "null": [
         "Phys",
         "Elec"
       ],
-      "absorb": [],
-      "reflect": [],
+      "drain": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -17158,9 +17158,9 @@
       "resist": [
         "Ice"
       ],
-      "block": [],
-      "absorb": [],
-      "reflect": [],
+      "null": [],
+      "drain": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -17209,11 +17209,11 @@
       "evoMove": null,
       "weak": [],
       "resist": [],
-      "block": [
+      "null": [
         "Curse"
       ],
-      "absorb": [],
-      "reflect": [
+      "drain": [],
+      "repel": [
         "Ice"
       ],
       "party": null,
@@ -17266,9 +17266,9 @@
         "Phys",
         "Gun"
       ],
-      "block": [],
-      "absorb": [],
-      "reflect": [],
+      "null": [],
+      "drain": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -17323,11 +17323,11 @@
         "Curse"
       ],
       "resist": [],
-      "block": [],
-      "absorb": [
+      "null": [],
+      "drain": [
         "Elec"
       ],
-      "reflect": [
+      "repel": [
         "Bless"
       ],
       "party": null,
@@ -17383,11 +17383,11 @@
       "resist": [
         "Fire"
       ],
-      "block": [
+      "null": [
         "Curse"
       ],
-      "absorb": [],
-      "reflect": [],
+      "drain": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -17443,9 +17443,9 @@
         "Nuke"
       ],
       "resist": [],
-      "block": [],
-      "absorb": [],
-      "reflect": [
+      "null": [],
+      "drain": [],
+      "repel": [
         "Wind"
       ],
       "party": null,
@@ -17505,11 +17505,11 @@
         "Gun",
         "Elec"
       ],
-      "block": [],
-      "absorb": [
+      "null": [],
+      "drain": [
         "Ice"
       ],
-      "reflect": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -17603,9 +17603,9 @@
         "Bless",
         "Curse"
       ],
-      "block": [],
-      "absorb": [],
-      "reflect": [],
+      "null": [],
+      "drain": [],
+      "repel": [],
       "party": "Naoto Shirogane",
       "evo": 1,
       "ultimate": false,
@@ -17708,13 +17708,13 @@
         "Ice"
       ],
       "resist": [],
-      "block": [
+      "null": [
         "Elec"
       ],
-      "absorb": [
+      "drain": [
         "Fire"
       ],
-      "reflect": [],
+      "repel": [],
       "party": "Yukiko Amagi",
       "evo": 3,
       "ultimate": false,
@@ -17772,13 +17772,13 @@
         "Gun",
         "Nuke"
       ],
-      "block": [
+      "null": [
         "Elec"
       ],
-      "absorb": [
+      "drain": [
         "Fire"
       ],
-      "reflect": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -17879,11 +17879,11 @@
       "resist": [
         "Fire"
       ],
-      "block": [
+      "null": [
         "Wind"
       ],
-      "absorb": [],
-      "reflect": [],
+      "drain": [],
+      "repel": [],
       "party": "Yosuke Hanamura",
       "evo": 2,
       "ultimate": false,
@@ -17940,11 +17940,11 @@
       "resist": [
         "Nuke"
       ],
-      "block": [],
-      "absorb": [
+      "null": [],
+      "drain": [
         "Fire"
       ],
-      "reflect": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -18049,11 +18049,11 @@
       "resist": [
         "Bless"
       ],
-      "block": [
+      "null": [
         "Ice"
       ],
-      "absorb": [],
-      "reflect": [],
+      "drain": [],
+      "repel": [],
       "party": "Chie Satonaka",
       "evo": 2,
       "ultimate": false,
@@ -18152,13 +18152,13 @@
         "Elec"
       ],
       "resist": [],
-      "block": [
+      "null": [
         "Fire"
       ],
-      "absorb": [
+      "drain": [
         "Wind"
       ],
-      "reflect": [],
+      "repel": [],
       "party": "Yosuke Hanamura",
       "evo": 3,
       "ultimate": false,
@@ -18255,11 +18255,11 @@
       "resist": [
         "Phys"
       ],
-      "block": [],
-      "absorb": [
+      "null": [],
+      "drain": [
         "Elec"
       ],
-      "reflect": [],
+      "repel": [],
       "party": "Kanji Tatsumi",
       "evo": 3,
       "ultimate": false,
@@ -18356,9 +18356,9 @@
       "resist": [
         "Elec"
       ],
-      "block": [],
-      "absorb": [],
-      "reflect": [],
+      "null": [],
+      "drain": [],
+      "repel": [],
       "party": "Kanji Tatsumi",
       "evo": 1,
       "ultimate": false,
@@ -18416,9 +18416,9 @@
         "Elec",
         "Curse"
       ],
-      "block": [],
-      "absorb": [],
-      "reflect": [],
+      "null": [],
+      "drain": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -18476,13 +18476,13 @@
         "Phys",
         "Wind"
       ],
-      "block": [
+      "null": [
         "Fire"
       ],
-      "absorb": [
+      "drain": [
         "Bless"
       ],
-      "reflect": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -18539,9 +18539,9 @@
       "resist": [
         "Phys"
       ],
-      "block": [],
-      "absorb": [],
-      "reflect": [
+      "null": [],
+      "drain": [],
+      "repel": [
         "Curse"
       ],
       "party": null,
@@ -18600,9 +18600,9 @@
       "resist": [
         "Phys"
       ],
-      "block": [],
-      "absorb": [],
-      "reflect": [
+      "null": [],
+      "drain": [],
+      "repel": [
         "Curse"
       ],
       "party": null,
@@ -18661,11 +18661,11 @@
         "Bless",
         "Curse"
       ],
-      "block": [
+      "null": [
         "Elec"
       ],
-      "absorb": [],
-      "reflect": [],
+      "drain": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -18722,12 +18722,12 @@
       "resist": [
         "Curse"
       ],
-      "block": [
+      "null": [
         "Nuke",
         "Bless"
       ],
-      "absorb": [],
-      "reflect": [],
+      "drain": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -18782,12 +18782,12 @@
         "Nuke"
       ],
       "resist": [],
-      "block": [
+      "null": [
         "Fire",
         "Wind"
       ],
-      "absorb": [],
-      "reflect": [
+      "drain": [],
+      "repel": [
         "Bless"
       ],
       "party": null,
@@ -18845,11 +18845,11 @@
         "Curse"
       ],
       "resist": [],
-      "block": [],
-      "absorb": [
+      "null": [],
+      "drain": [
         "Elec"
       ],
-      "reflect": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -18904,9 +18904,9 @@
         "Bless",
         "Curse"
       ],
-      "block": [],
-      "absorb": [],
-      "reflect": [],
+      "null": [],
+      "drain": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -19011,9 +19011,9 @@
       "resist": [
         "Ice"
       ],
-      "block": [],
-      "absorb": [],
-      "reflect": [],
+      "null": [],
+      "drain": [],
+      "repel": [],
       "party": "Chie Satonaka",
       "evo": 1,
       "ultimate": false,
@@ -19070,9 +19070,9 @@
       "resist": [
         "Phys"
       ],
-      "block": [],
-      "absorb": [],
-      "reflect": [],
+      "null": [],
+      "drain": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -19175,11 +19175,11 @@
         "Wind"
       ],
       "resist": [],
-      "block": [
+      "null": [
         "Fire"
       ],
-      "absorb": [],
-      "reflect": [],
+      "drain": [],
+      "repel": [],
       "party": "Junpei Iori",
       "evo": 2,
       "ultimate": false,
@@ -19232,13 +19232,13 @@
       "evoMove": null,
       "weak": [],
       "resist": [],
-      "block": [
+      "null": [
         "Curse"
       ],
-      "absorb": [
+      "drain": [
         "Ice"
       ],
-      "reflect": [
+      "repel": [
         "Elec",
         "Bless"
       ],
@@ -19301,9 +19301,9 @@
         "Phys",
         "Bless"
       ],
-      "block": [],
-      "absorb": [],
-      "reflect": [
+      "null": [],
+      "drain": [],
+      "repel": [
         "Curse"
       ],
       "party": null,
@@ -19365,9 +19365,9 @@
         "Phys",
         "Bless"
       ],
-      "block": [],
-      "absorb": [],
-      "reflect": [
+      "null": [],
+      "drain": [],
+      "repel": [
         "Curse"
       ],
       "party": null,
@@ -19428,11 +19428,11 @@
         "Wind"
       ],
       "resist": [],
-      "block": [
+      "null": [
         "Curse"
       ],
-      "absorb": [],
-      "reflect": [
+      "drain": [],
+      "repel": [
         "Elec"
       ],
       "party": null,
@@ -19485,11 +19485,11 @@
         "Fire"
       ],
       "resist": [],
-      "block": [],
-      "absorb": [
+      "null": [],
+      "drain": [
         "Ice"
       ],
-      "reflect": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -19546,12 +19546,12 @@
       "resist": [
         "Psy"
       ],
-      "block": [
+      "null": [
         "Ice",
         "Bless"
       ],
-      "absorb": [],
-      "reflect": [],
+      "drain": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -19604,13 +19604,13 @@
       "evoMove": null,
       "weak": [],
       "resist": [],
-      "block": [
+      "null": [
         "Fire"
       ],
-      "absorb": [
+      "drain": [
         "Nuke"
       ],
-      "reflect": [
+      "repel": [
         "Bless"
       ],
       "party": null,
@@ -19709,9 +19709,9 @@
       "evoMove": null,
       "weak": [],
       "resist": [],
-      "block": [],
-      "absorb": [],
-      "reflect": [],
+      "null": [],
+      "drain": [],
+      "repel": [],
       "party": "Zenkichi Hasegawa",
       "evo": 1,
       "ultimate": false,
@@ -19764,11 +19764,11 @@
       "resist": [
         "Gun"
       ],
-      "block": [
+      "null": [
         "Bless"
       ],
-      "absorb": [],
-      "reflect": [
+      "drain": [],
+      "repel": [
         "Ice"
       ],
       "party": null,
@@ -19833,11 +19833,11 @@
         "Curse"
       ],
       "resist": [],
-      "block": [
+      "null": [
         "Bless"
       ],
-      "absorb": [],
-      "reflect": [],
+      "drain": [],
+      "repel": [],
       "party": "Sumire Yoshizawa",
       "evo": 2,
       "ultimate": false,
@@ -19892,12 +19892,12 @@
         "Curse"
       ],
       "resist": [],
-      "block": [
+      "null": [
         "Ice",
         "Elec"
       ],
-      "absorb": [],
-      "reflect": [],
+      "drain": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -19956,14 +19956,14 @@
         "Fire"
       ],
       "resist": [],
-      "block": [
+      "null": [
         "Bless",
         "Curse"
       ],
-      "absorb": [
+      "drain": [
         "Ice"
       ],
-      "reflect": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": true,
@@ -20020,13 +20020,13 @@
       "resist": [
         "Elec"
       ],
-      "block": [
+      "null": [
         "Curse"
       ],
-      "absorb": [
+      "drain": [
         "Bless"
       ],
-      "reflect": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": true,
@@ -20085,12 +20085,12 @@
         "Ice"
       ],
       "resist": [],
-      "block": [
+      "null": [
         "Fire",
         "Bless"
       ],
-      "absorb": [],
-      "reflect": [
+      "drain": [],
+      "repel": [
         "Curse"
       ],
       "party": null,
@@ -20213,11 +20213,11 @@
       "resist": [
         "Fire"
       ],
-      "block": [
+      "null": [
         "Elec"
       ],
-      "absorb": [],
-      "reflect": [],
+      "drain": [],
+      "repel": [],
       "party": "Ryuji Sakamoto",
       "evo": 3,
       "ultimate": false,
@@ -20272,11 +20272,11 @@
       "resist": [
         "Ice"
       ],
-      "block": [
+      "null": [
         "Gun"
       ],
-      "absorb": [],
-      "reflect": [],
+      "drain": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -20329,11 +20329,11 @@
         "Wind",
         "Curse"
       ],
-      "block": [],
-      "absorb": [
+      "null": [],
+      "drain": [
         "Ice"
       ],
-      "reflect": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -20422,11 +20422,11 @@
       "evoMove": "Shield of Justice",
       "weak": [],
       "resist": [],
-      "block": [
+      "null": [
         "Fire"
       ],
-      "absorb": [],
-      "reflect": [
+      "drain": [],
+      "repel": [
         "Bless",
         "Curse"
       ],
@@ -20520,12 +20520,12 @@
       "resist": [
         "Fire"
       ],
-      "block": [
+      "null": [
         "Bless",
         "Curse"
       ],
-      "absorb": [],
-      "reflect": [],
+      "drain": [],
+      "repel": [],
       "party": "Naoto Shirogane",
       "evo": 2,
       "ultimate": false,
@@ -20582,11 +20582,11 @@
       "resist": [
         "Wind"
       ],
-      "block": [
+      "null": [
         "Bless"
       ],
-      "absorb": [],
-      "reflect": [],
+      "drain": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -20639,9 +20639,9 @@
       "resist": [
         "Ice"
       ],
-      "block": [],
-      "absorb": [],
-      "reflect": [],
+      "null": [],
+      "drain": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -20696,11 +20696,11 @@
       "resist": [
         "Fire"
       ],
-      "block": [
+      "null": [
         "Phys"
       ],
-      "absorb": [],
-      "reflect": [
+      "drain": [],
+      "repel": [
         "Elec",
         "Bless"
       ],
@@ -20760,11 +20760,11 @@
       "resist": [
         "Bless"
       ],
-      "block": [
+      "null": [
         "Elec"
       ],
-      "absorb": [],
-      "reflect": [],
+      "drain": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -20819,12 +20819,12 @@
         "Elec"
       ],
       "resist": [],
-      "block": [
+      "null": [
         "Bless",
         "Curse"
       ],
-      "absorb": [],
-      "reflect": [
+      "drain": [],
+      "repel": [
         "Fire"
       ],
       "party": null,
@@ -20951,9 +20951,9 @@
       "resist": [
         "Wind"
       ],
-      "block": [],
-      "absorb": [],
-      "reflect": [],
+      "null": [],
+      "drain": [],
+      "repel": [],
       "party": "Morgana",
       "evo": 1,
       "ultimate": false,
@@ -21010,9 +21010,9 @@
       "resist": [
         "Phys"
       ],
-      "block": [],
-      "absorb": [],
-      "reflect": [],
+      "null": [],
+      "drain": [],
+      "repel": [],
       "party": null,
       "evo": null,
       "ultimate": false,
@@ -22720,7 +22720,7 @@
       "affinity": "Passive",
       "type": "DEFENSIVE",
       "element": "Bless",
-      "newAffinity": "Absorb",
+      "newAffinity": "Drain",
       "unique": false
     },
     {
@@ -22729,7 +22729,7 @@
       "affinity": "Passive",
       "type": "DEFENSIVE",
       "element": "Curse",
-      "newAffinity": "Absorb",
+      "newAffinity": "Drain",
       "unique": false
     },
     {
@@ -22738,7 +22738,7 @@
       "affinity": "Passive",
       "type": "DEFENSIVE",
       "element": "Elec",
-      "newAffinity": "Absorb",
+      "newAffinity": "Drain",
       "unique": false
     },
     {
@@ -22747,7 +22747,7 @@
       "affinity": "Passive",
       "type": "DEFENSIVE",
       "element": "Fire",
-      "newAffinity": "Absorb",
+      "newAffinity": "Drain",
       "unique": false
     },
     {
@@ -22756,7 +22756,7 @@
       "affinity": "Passive",
       "type": "DEFENSIVE",
       "element": "Ice",
-      "newAffinity": "Absorb",
+      "newAffinity": "Drain",
       "unique": false
     },
     {
@@ -22765,7 +22765,7 @@
       "affinity": "Passive",
       "type": "DEFENSIVE",
       "element": "Nuke",
-      "newAffinity": "Absorb",
+      "newAffinity": "Drain",
       "unique": false
     },
     {
@@ -22774,7 +22774,7 @@
       "affinity": "Passive",
       "type": "DEFENSIVE",
       "element": "Phys",
-      "newAffinity": "Absorb",
+      "newAffinity": "Drain",
       "unique": false
     },
     {
@@ -22783,7 +22783,7 @@
       "affinity": "Passive",
       "type": "DEFENSIVE",
       "element": "Psy",
-      "newAffinity": "Absorb",
+      "newAffinity": "Drain",
       "unique": false
     },
     {
@@ -22792,7 +22792,7 @@
       "affinity": "Passive",
       "type": "DEFENSIVE",
       "element": "Wind",
-      "newAffinity": "Absorb",
+      "newAffinity": "Drain",
       "unique": false
     },
     {
@@ -25521,8 +25521,8 @@
       "devName": "nullbless",
       "affinity": "Passive",
       "type": "DEFENSIVE",
-      "element": "Null",
-      "newAffinity": "Block",
+      "element": "Bless",
+      "newAffinity": "Null",
       "unique": false
     },
     {
@@ -25549,7 +25549,7 @@
       "affinity": "Passive",
       "type": "DEFENSIVE",
       "element": "Curse",
-      "newAffinity": "Block",
+      "newAffinity": "Null",
       "unique": false
     },
     {
@@ -25567,7 +25567,7 @@
       "affinity": "Passive",
       "type": "DEFENSIVE",
       "element": "Elec",
-      "newAffinity": "Block",
+      "newAffinity": "Null",
       "unique": false
     },
     {
@@ -25576,7 +25576,7 @@
       "affinity": "Passive",
       "type": "DEFENSIVE",
       "element": "Fire",
-      "newAffinity": "Block",
+      "newAffinity": "Null",
       "unique": false
     },
     {
@@ -25594,7 +25594,7 @@
       "affinity": "Passive",
       "type": "DEFENSIVE",
       "element": "Ice",
-      "newAffinity": "Block",
+      "newAffinity": "Null",
       "unique": false
     },
     {
@@ -25603,7 +25603,7 @@
       "affinity": "Passive",
       "type": "DEFENSIVE",
       "element": "Nuke",
-      "newAffinity": "Block",
+      "newAffinity": "Null",
       "unique": false
     },
     {
@@ -25612,7 +25612,7 @@
       "affinity": "Passive",
       "type": "DEFENSIVE",
       "element": "Phys",
-      "newAffinity": "Block",
+      "newAffinity": "Null",
       "unique": false
     },
     {
@@ -25621,7 +25621,7 @@
       "affinity": "Passive",
       "type": "DEFENSIVE",
       "element": "Psy",
-      "newAffinity": "Block",
+      "newAffinity": "Null",
       "unique": false
     },
     {
@@ -25648,7 +25648,7 @@
       "affinity": "Passive",
       "type": "DEFENSIVE",
       "element": "Wind",
-      "newAffinity": "Block",
+      "newAffinity": "Null",
       "unique": false
     },
     {
@@ -26226,7 +26226,7 @@
       "affinity": "Passive",
       "type": "DEFENSIVE",
       "element": "Bless",
-      "newAffinity": "Reflect",
+      "newAffinity": "Repel",
       "unique": false
     },
     {
@@ -26235,7 +26235,7 @@
       "affinity": "Passive",
       "type": "DEFENSIVE",
       "element": "Curse",
-      "newAffinity": "Reflect",
+      "newAffinity": "Repel",
       "unique": false
     },
     {
@@ -26244,7 +26244,7 @@
       "affinity": "Passive",
       "type": "DEFENSIVE",
       "element": "Elec",
-      "newAffinity": "Reflect",
+      "newAffinity": "Repel",
       "unique": false
     },
     {
@@ -26253,7 +26253,7 @@
       "affinity": "Passive",
       "type": "DEFENSIVE",
       "element": "Fire",
-      "newAffinity": "Reflect",
+      "newAffinity": "Repel",
       "unique": false
     },
     {
@@ -26262,7 +26262,7 @@
       "affinity": "Passive",
       "type": "DEFENSIVE",
       "element": "Ice",
-      "newAffinity": "Reflect",
+      "newAffinity": "Repel",
       "unique": false
     },
     {
@@ -26271,7 +26271,7 @@
       "affinity": "Passive",
       "type": "DEFENSIVE",
       "element": "Nuke",
-      "newAffinity": "Reflect",
+      "newAffinity": "Repel",
       "unique": false
     },
     {
@@ -26280,7 +26280,7 @@
       "affinity": "Passive",
       "type": "DEFENSIVE",
       "element": "Phys",
-      "newAffinity": "Reflect",
+      "newAffinity": "Repel",
       "unique": false
     },
     {
@@ -26289,7 +26289,7 @@
       "affinity": "Passive",
       "type": "DEFENSIVE",
       "element": "Psy",
-      "newAffinity": "Reflect",
+      "newAffinity": "Repel",
       "unique": false
     },
     {
@@ -26298,7 +26298,7 @@
       "affinity": "Passive",
       "type": "DEFENSIVE",
       "element": "Wind",
-      "newAffinity": "Reflect",
+      "newAffinity": "Repel",
       "unique": false
     },
     {
@@ -27621,9 +27621,9 @@
         "Phys",
         "Gun"
       ],
-      "block": [],
-      "absorb": [],
-      "reflect": []
+      "null": [],
+      "drain": [],
+      "repel": []
     }
   ]
 }

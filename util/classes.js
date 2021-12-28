@@ -24,7 +24,7 @@ module.exports.Demon = class Demon {
 module.exports.Skill = class Skill {
 	/**
 	 *
-	 * @param {import('../types/skills').Skill} skill
+	 * @param {import('../skills').Skill} skill
 	 */
 	constructor(skill) {
 		for (const key in skill) {
@@ -33,7 +33,7 @@ module.exports.Skill = class Skill {
 	}
 	/**
      * @type {string} A description of the skill's effects (or the skill's name if none exists yet)
-	 * @this import('../types/skills').Skill
+	 * @this import('../skills').Skill
      */
 	get description() {
 		switch (this.type) {

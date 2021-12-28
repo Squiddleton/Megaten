@@ -1,4 +1,15 @@
-import { AilmentClass, Affinity, NewAffinity } from "./lists";
+export type Affinity = 'Phys' | 'Gun' | 'Fire' | 'Ice' | 'Elec' | 'Wind' | 'Nuke' | 'Psy' | 'Bless' | 'Curse' | 'Almighty' | 'Ailment' | 'Recovery' | 'Support' | 'Passive'
+
+export interface Ailment {
+    ailment: string;
+    chance:  Display;
+}
+
+export type Buff = 'Attack' | 'Defense' | 'Agility'
+
+export type Display = 'Miniscule' | 'Light' | 'Medium' | 'Heavy' | 'Severe' | 'Colossal' | 'Low' | 'High'
+
+export type NewAffinity = 'Resist' | 'Null' | 'Drain' | 'Repel'
 
 export enum SkillTypes {
     AILBOOST = 'AILBOOST',
@@ -34,7 +45,7 @@ export enum SkillTypes {
 
 export type SkillType = keyof typeof SkillTypes;
 
-export interface BaseSkill {
+export class BaseSkill {
     name: string;
     devName: string;
     affinity: Affinity;
@@ -43,7 +54,7 @@ export interface BaseSkill {
     description: string;
 }
 
-export interface AilBoostSkill extends BaseSkill {
+export class AilBoostSkill extends BaseSkill {
     type: 'AILBOOST';
     ailment: string;
     amount: number;
@@ -51,14 +62,14 @@ export interface AilBoostSkill extends BaseSkill {
     unique: false;
 }
 
-export interface AilDefensiveSkill extends BaseSkill {
+export class AilDefensiveSkill extends BaseSkill {
     type: 'AILDEFENSIVE';
     ailment: string;
     resistance: string;
     unique: false;
 }
 
-export interface AilmentSkill extends BaseSkill {
+export class AilmentSkill extends BaseSkill {
     type: 'AILMENT';
     range: number;
     cost: number;
@@ -66,7 +77,7 @@ export interface AilmentSkill extends BaseSkill {
     chance: string;
 }
 
-export interface AttackSkill extends BaseSkill {
+export class AttackSkill extends BaseSkill {
     type: 'ATTACK';
     range: number;
     cost: number;
@@ -74,7 +85,7 @@ export interface AttackSkill extends BaseSkill {
     display: string;
     min: number;
     max: number;
-    ailment: AilmentClass[];
+    ailment: Ailment[];
     crit: string | null;
     downBoost: boolean;
     baton: boolean;
@@ -83,33 +94,41 @@ export interface AttackSkill extends BaseSkill {
     weather: boolean;
 }
 
-export interface AutoBuffSkill extends BaseSkill {
+export class AutoBuffSkill extends BaseSkill {
     type: 'AUTOBUFF';
     buff: string;
     unique: false;
 }
 
-export interface BarrierBreakSkill extends BaseSkill {
+export class BarrierSkill extends BaseSkill {
+    type: 'BARRIER';
+    range: number;
+    cost: number;
+    barriers: string[];
+    unique: false;
+}
+
+export class BarrierBreakSkill extends BaseSkill {
     type: 'BARRIERBREAK';
     cost: number;
     barrier: string;
     unique: false;
 }
 
-export interface BoostSkill extends BaseSkill {
+export class BoostSkill extends BaseSkill {
     type: 'BOOST';
-    element: Affinity;
+    element: Affinity | 'ALL';
     amount: number;
 }
 
-export interface BreakSkill extends BaseSkill {
+export class BreakSkill extends BaseSkill {
     type: 'BREAK';
     cost: number;
     element: Affinity;
     unique: false;
 }
 
-export interface ChargeSkill extends BaseSkill {
+export class ChargeSkill extends BaseSkill {
     type: 'CHARGE';
     cost: number;
     range: number;
@@ -117,32 +136,32 @@ export interface ChargeSkill extends BaseSkill {
     unique: false;
 }
 
-export interface CounterSkill extends BaseSkill {
+export class CounterSkill extends BaseSkill {
     type: 'COUNTER';
     chance: number;
 }
 
-export interface CritSkill extends BaseSkill {
+export class CritSkill extends BaseSkill {
     type: 'CRIT';
     range: string;
     cost: number;
 }
 
-export interface CritBoostSkill extends BaseSkill {
+export class CritBoostSkill extends BaseSkill {
     type: 'CRITBOOST';
     amount: number;
     surround: boolean;
     unique: false;
 }
 
-export interface DefensiveSkill extends BaseSkill {
+export class DefensiveSkill extends BaseSkill {
     type: 'DEFENSIVE';
     element: Affinity;
     newAffinity: NewAffinity;
     unique: false;
 }
 
-export interface DrainSkill extends BaseSkill {
+export class DrainSkill extends BaseSkill {
     type: 'DRAIN';
     hpsp: string;
     cost: number;
@@ -150,14 +169,14 @@ export interface DrainSkill extends BaseSkill {
     unique: false;
 }
 
-export interface EndureSkill extends BaseSkill {
+export class EndureSkill extends BaseSkill {
     type: 'ENDURE';
     priority: number;
     instakill: boolean;
     unique: false;
 }
 
-export interface EvasionSkill extends BaseSkill {
+export class EvasionSkill extends BaseSkill {
     type: 'EVASION';
     elements: string[];
     amount: number;
@@ -166,13 +185,13 @@ export interface EvasionSkill extends BaseSkill {
     unique: false;
 }
 
-export interface HalveSkill extends BaseSkill {
+export class HalveSkill extends BaseSkill {
     type: 'HALVE';
     cost: number;
     unique: false;
 }
 
-export interface InstaKillSkill extends BaseSkill {
+export class InstaKillSkill extends BaseSkill {
     type: 'INSTAKILL';
     range: number;
     cost: number;
@@ -180,24 +199,24 @@ export interface InstaKillSkill extends BaseSkill {
     display: string;
 }
 
-export interface InstaKillBoostSkill extends BaseSkill {
+export class InstaKillBoostSkill extends BaseSkill {
     type: 'INSTAKILLBOOST';
     element: Affinity;
     unique: false;
 }
 
-export interface MasterSkill extends BaseSkill {
+export class MasterSkill extends BaseSkill {
     type: 'MASTER';
     skill: string;
     unique: false;
 }
 
-export interface MiscSkill extends BaseSkill {
+export class MiscSkill extends BaseSkill {
     type: 'MISC';
     cost: number;
 }
 
-export interface PostBattleSkill extends BaseSkill {
+export class PostBattleSkill extends BaseSkill {
     type: 'POSTBATTLE';
     range: number;
     xp: number;
@@ -206,7 +225,18 @@ export interface PostBattleSkill extends BaseSkill {
     sp: number;
 }
 
-export interface RegenSkill extends BaseSkill {
+export class RecoverySkill extends BaseSkill {
+    type: 'RECOVERY';
+    range: number;
+    cost: number;
+    amount: number;
+    ailment: string[];
+    buffs: Buff[];
+    revive: boolean;
+    negate: boolean;
+}
+
+export class RegenSkill extends BaseSkill {
     type: 'REGEN';
     hpspail: string;
     amount: number;
@@ -215,29 +245,29 @@ export interface RegenSkill extends BaseSkill {
     baton: boolean;
 }
 
-export interface SupportSkill extends BaseSkill {
+export class SupportSkill extends BaseSkill {
     type: 'SUPPORT';
     range: number;
     cost: number;
-    buffs: string[];
-    debuffs: string[];
+    buffs: Buff[];
+    debuffs: Buff[];
     negate: boolean;
     auto: string[];
     surround: boolean;
 }
 
-export interface SusceptibilitySkill extends BaseSkill {
+export class SusceptibilitySkill extends BaseSkill {
     type: 'SUSCEPTIBILITY';
     range: number;
     cost: number;
     unique: false;
 }
 
-export interface WallSkill extends BaseSkill {
+export class WallSkill extends BaseSkill {
     type: 'WALL';
     cost: number;
     element: Affinity;
     unique: false;
 }
 
-export type Skill = AilBoostSkill | AilDefensiveSkill | AilmentSkill | AttackSkill | AutoBuffSkill | BarrierBreakSkill | BoostSkill | BreakSkill | ChargeSkill | CounterSkill | CritSkill | CritBoostSkill | DrainSkill | EndureSkill | EvasionSkill | HalveSkill | InstaKillSkill | InstaKillBoostSkill | MasterSkill | MiscSkill | PostBattleSkill | RegenSkill | SupportSkill | SusceptibilitySkill | WallSkill
+export type Skill = AilBoostSkill | AilDefensiveSkill | AilmentSkill | AttackSkill | AutoBuffSkill | BarrierSkill | BarrierBreakSkill | BoostSkill | BreakSkill | ChargeSkill | CounterSkill | CritSkill | CritBoostSkill | DrainSkill | EndureSkill | EvasionSkill | HalveSkill | InstaKillSkill | InstaKillBoostSkill | MasterSkill | MiscSkill | PostBattleSkill | RecoverySkill | RegenSkill | SupportSkill | SusceptibilitySkill | WallSkill

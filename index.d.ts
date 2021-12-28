@@ -1,4 +1,4 @@
-import { Skill } from './skills'
+import { Affinity, Skill } from './skills'
 
 export interface Lists {
     demons:         Demon[];
@@ -6,7 +6,7 @@ export interface Lists {
     treasureDemons: TreasureDemon[];
 }
 
-export interface Demon {
+export class Demon {
     name:     string;
     devName:  string;
     aliases:  string[];
@@ -34,77 +34,21 @@ export interface Demon {
     evolution: string;
 }
 
-export enum Affinity {
-    Ailment = "Ailment",
-    All = "ALL",
-    Almighty = "Almighty",
-    Bless = "Bless",
-    Curse = "Curse",
-    Elec = "Elec",
-    Fire = "Fire",
-    Gun = "Gun",
-    Ice = "Ice",
-    Nuke = "Nuke",
-    Null = "Null",
-    Passive = "Passive",
-    Phys = "Phys",
-    Psy = "Psy",
-    Recovery = "Recovery",
-    Support = "Support",
-    Wind = "Wind",
-}
-
-export enum Game {
-    P3 = "p3",
-    P4 = "p4",
-    P5 = "p5",
-}
+export type Game = 'p3' | 'p4' | 'p5'
 
 export interface Learnset {
     name:  string;
     level: number;
 }
 
-export interface AilmentClass {
-    ailment: string;
-    chance:  Display;
-}
-
-export enum Display {
-    Colossal = "Colossal",
-    Heavy = "Heavy",
-    High = "High",
-    Light = "Light",
-    Low = "Low",
-    Medium = "Medium",
-    Minuscule = "Minuscule",
-    Severe = "Severe",
-}
-
-export enum Buff {
-    Agility = "Agility",
-    Attack = "Attack",
-    Defense = "Defense",
-}
-
-export enum NewAffinity {
-    Absorb = "Absorb",
-    Block = "Block",
-    Reflect = "Reflect",
-    Resist = "Resist",
-}
-
-export enum Resistance {
-    Null = "Null",
-    Resist = "Resist",
-}
+export { Skill } from './skills'
 
 export interface TreasureDemon {
     name:    string;
     devName: string;
     inherit: Affinity;
     arcana:  string;
-    race:    string;
+    race:    'Treasure';
     level:   number;
     hp:      number;
     sp:      number;
@@ -120,3 +64,7 @@ export interface TreasureDemon {
     absorb:  Affinity[];
     reflect: Affinity[];
 }
+
+export function getDemon(input: string): Demon | null
+export function getSkill(input: string): Skill | null
+export function getTreasuredemon(input: string): TreasureDemon | null
