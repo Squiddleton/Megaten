@@ -1,13 +1,17 @@
 {
   "name": "megaten",
-  "version": "1.2.1",
-  "description": "A simple yet comprehensive collection of information from the Shin Megami Tensei and Persona games.",
+  "version": "1.2.2",
+  "description": "A simple yet comprehensive collection of data from the Shin Megami Tensei and Persona games.",
   "main": "index.js",
   "typings": "index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "keywords": [
+    "smt",
+    "persona",
+    "atlus"
+  ],
   "author": "squiddleton",
   "license": "ISC",
   "devDependencies": {

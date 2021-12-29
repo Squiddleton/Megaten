@@ -1,11 +1,5 @@
 import { Affinity, Skill } from './skills'
 
-export interface Lists {
-    demons:         Demon[];
-    skills:         Skill[];
-    treasureDemons: TreasureDemon[];
-}
-
 export class Demon {
     name:     string;
     devName:  string;
@@ -64,6 +58,10 @@ export interface TreasureDemon {
     absorb:  Affinity[];
     reflect: Affinity[];
 }
+
+export declare const demons: Demon[];
+export declare const skills: Skill[];
+export declare const treasureDemons: TreasureDemon[];
 
 export function getDemon(input: string): Demon | null
 export function getSkill(input: string): Skill | null
