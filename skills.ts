@@ -11,6 +11,9 @@ export type Display = 'Miniscule' | 'Light' | 'Medium' | 'Heavy' | 'Severe' | 'C
 
 export type NewAffinity = 'Resist' | 'Null' | 'Drain' | 'Repel'
 
+export type SkillType = 'AILBOOST' | 'AILDEFENSIVE' | 'AILMENT' | 'ATTACK' | 'AUTOBUFF' | 'BARRIER' | 'BARRIERBREAK' | 'BOOST' | 'BREAK' | 'BREAK' | 'CHARGE' | 'COUNTER' | 'CRIT' |'CRITBOOST'
+    | 'DEFENSIVE' | 'DRAIN' | 'ENDURE' | 'EVASION' | 'HALVE' | 'INSTAKILL' | 'INSTAKILLBOOST' | 'MASTER' | 'MISC' | 'NAVI' | 'POSTBATTLE' | 'RECOVERY' | 'REGEN' | 'SUPPORT' | 'SUSCEPTIBILITY' | 'WALL'
+
 export enum SkillTypes {
     AILBOOST = 'AILBOOST',
     AILDEFENSIVE = 'AILDEFENSIVE',
@@ -42,8 +45,6 @@ export enum SkillTypes {
     SUSCEPTIBILITY = 'SUSCEPTIBILITY',
     WALL = 'WALL',
 }
-
-export type SkillType = keyof typeof SkillTypes;
 
 export class BaseSkill {
     name: string;
@@ -216,6 +217,10 @@ export class MiscSkill extends BaseSkill {
     cost: number;
 }
 
+export class NaviSkill extends BaseSkill {
+    type: 'NAVI';
+}
+
 export class PostBattleSkill extends BaseSkill {
     type: 'POSTBATTLE';
     range: number;
@@ -270,4 +275,5 @@ export class WallSkill extends BaseSkill {
     unique: false;
 }
 
-export type Skill = AilBoostSkill | AilDefensiveSkill | AilmentSkill | AttackSkill | AutoBuffSkill | BarrierSkill | BarrierBreakSkill | BoostSkill | BreakSkill | ChargeSkill | CounterSkill | CritSkill | CritBoostSkill | DrainSkill | EndureSkill | EvasionSkill | HalveSkill | InstaKillSkill | InstaKillBoostSkill | MasterSkill | MiscSkill | PostBattleSkill | RecoverySkill | RegenSkill | SupportSkill | SusceptibilitySkill | WallSkill
+export type Skill = AilBoostSkill | AilDefensiveSkill | AilmentSkill | AttackSkill | AutoBuffSkill | BarrierSkill | BarrierBreakSkill | BoostSkill | BreakSkill | ChargeSkill | CounterSkill | CritSkill | CritBoostSkill
+    | DefensiveSkill | DrainSkill | EndureSkill | EvasionSkill | HalveSkill | InstaKillSkill | InstaKillBoostSkill | MasterSkill | MiscSkill | NaviSkill | PostBattleSkill | RecoverySkill | RegenSkill | SupportSkill | SusceptibilitySkill | WallSkill
