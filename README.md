@@ -9,7 +9,7 @@ These lists contain all the demons/Personas and skills from the following games,
 
 # Usage
 ```javascript
-const megaten = require('megaten') // Or, "import megaten from megaten" in es6
+const megaten = require('megaten') // Or, "import megaten from 'megaten'" in es6
 
 // All functions find by the input's name without attention to capitalization, spaces, punctuation, etc.
 const jack = megaten.getDemon('Jack Frost!!!') // Gets a Demon instance
