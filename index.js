@@ -2,6 +2,10 @@ const { Demon, Skill, TreasureDemon } = require('./util/classes');
 const { demons, skills, treasureDemons } = require('./lists.json');
 const { noPunc } = require('./util/functions');
 
+module.exports.Demon = Demon;
+module.exports.Skill = Skill;
+module.exports.TreasureDemon = TreasureDemon;
+
 module.exports.demons = demons.map(demon => new Demon(demon));
 module.exports.skills = skills.map(skill => new Skill(skill));
 module.exports.treasureDemons = treasureDemons.map(treasureDemon => new TreasureDemon(treasureDemon));
