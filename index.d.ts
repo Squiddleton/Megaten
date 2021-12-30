@@ -65,4 +65,4 @@ export declare const treasureDemons: TreasureDemon[];
 
 export function getDemon(input: string): Demon | null
 export function getSkill(input: string): Skill | null
-export function getTreasuredemon(input: string): TreasureDemon | null
+export function getTreasureDemon(input: string): TreasureDemon | null
