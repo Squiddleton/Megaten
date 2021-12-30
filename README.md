@@ -84,11 +84,11 @@ All Personas/demons follow an identical template.
         "Bless"
       ],
       "resist": [], // Affinities the Persona/demon resists
-      "block": [ // Affinities the Persona/demon nullifies
+      "null": [ // Affinities the Persona/demon nullifies
         "Curse"
       ],
-      "absorb": [], // Affinities the Persona/demon drains
-      "reflect": [], // Affinities the Persona/demon repels
+      "drain": [], // Affinities the Persona/demon drains
+      "repel": [], // Affinities the Persona/demon repels
       "party": "Redacted for spoiler reasons, but not in the package.", // The name of the party member who the Persona belongs to, or null if non-party
       "evo": 2, // The point of evolution for a party member's persona, with 1 being base, 2 being second awakening, and 3 being third awakening (or null if non-party)
       "ultimate": false, // Whether the Persona is the Ultimate Persona of its arcana in the game this data is based on

@@ -17,9 +17,9 @@ export class Demon {
     evoMove:  string | null;
     weak:     Affinity[];
     resist:   Affinity[];
-    block:    Affinity[];
-    absorb:   Affinity[];
-    reflect:  Affinity[];
+    null:     Affinity[];
+    drain:    Affinity[];
+    repel:    Affinity[];
     party:    string | null;
     evo:      number | null;
     ultimate: boolean;
@@ -54,9 +54,9 @@ export interface TreasureDemon {
     moves:   string[];
     weak:    Affinity[];
     resist:  Affinity[];
-    block:   Affinity[];
-    absorb:  Affinity[];
-    reflect: Affinity[];
+    null:    Affinity[];
+    drain:   Affinity[];
+    repel:   Affinity[];
 }
 
 export declare const demons: Demon[];
