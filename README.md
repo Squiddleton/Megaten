@@ -22,7 +22,7 @@ const jack = megaten.getDemon('Jack Frost!!!') // Gets a Demon instance
 const bufu = megaten.getSkill('bufu') // Gets a Skill instance
 const regent = megaten.getTreasureDemon('Regent') // Gets a Treasure Demon instance
 
-const { demons, skills, treasureDemons } = megaten // Get raw JSON arrays of the respective data
+const { demons, skills, treasureDemons } = megaten // Gets raw JSON arrays of the respective data
 ```
 
 ## Demons
@@ -141,8 +141,8 @@ Treasure Demons, specifically from Persona 5 Royal, are slight variations on the
       "arcana": "Emperor",
       "race": "Treasure",
       "level": 10,
-      "hp": 165,
-      "sp": 93,
+      "hp": 165, // The max HP of the Treasure Demon
+      "sp": 93, // The max SP of the Treasure Demon
       "st": 12,
       "ma": 11,
       "en": 10,
