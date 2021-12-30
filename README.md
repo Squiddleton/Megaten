@@ -8,6 +8,12 @@ These lists contain all the demons/Personas and skills from the following games,
 * **(Incomplete)** Persona 4 Golden
 
 # Usage
+First, install the package by running the following command in your terminal:
+```
+npm install megaten@latest
+```
+
+After the package is installed, you may use it through methods such as the following:
 ```javascript
 const megaten = require('megaten') // Or, "import megaten from 'megaten'" in es6
 
