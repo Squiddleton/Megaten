@@ -1,13 +1,31 @@
-const { Demon, Skill, TreasureDemon } = require('./util/classes');
+const { Demon, Skill, TreasureDemon } = require('./constructors');
 const { demons, skills, treasureDemons } = require('./lists.json');
-const { noPunc } = require('./util/functions');
+
+/**
+ *
+ * @param {string} str - The string to remove the punctuation from
+ * @returns {string} The input string without its punctuation
+ */
+const noPunc = str => {
+	if (typeof str !== 'string') throw new TypeError('The noPunc function only accepts string inputs.');
+
+	return str
+		.toLowerCase()
+		.replace(/&/g, 'and')
+		.replace(/è/g, 'e')
+		.replace(/é/g, 'e')
+		.replace(/[^0-9a-z]/gi, '');
+};
 
 module.exports.Demon = Demon;
 module.exports.Skill = Skill;
 module.exports.TreasureDemon = TreasureDemon;
 
+/** @type {import('./index').Demon[]} */
 module.exports.demons = demons.map(demon => new Demon(demon));
+/** @type {import('./index').Skill[]} */
 module.exports.skills = skills.map(skill => new Skill(skill));
+/** @type {import('./index').TreasureDemon[]} */
 module.exports.treasureDemons = treasureDemons.map(treasureDemon => new TreasureDemon(treasureDemon));
 
 /**

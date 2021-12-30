@@ -1,10 +1,9 @@
-/** @type {import('../index').Lists} */
-const lists = require('../lists');
+const lists = require('./lists.json');
 
 module.exports.Demon = class Demon {
 	/**
 	 *
-	 * @param {import('../index').Demon}
+	 * @param {import('./index').Demon}
 	 */
 	constructor(demon) {
 		for (const key in demon) {
@@ -12,8 +11,8 @@ module.exports.Demon = class Demon {
 		}
 	}
 	/**
-     * @type {import('../index').Demon|null} The Persona's evolution, or null if none
-	 * @this import('../index').Demon
+     * @type {import('./index').Demon|null} The Persona's evolution, or null if none
+	 * @this import('./index').Demon
      */
 	get evolution() {
 		const evoPersona = lists.demons.find(demon => demon.party === this.party && demon.evo === (this.evo + 1));
@@ -24,7 +23,7 @@ module.exports.Demon = class Demon {
 module.exports.Skill = class Skill {
 	/**
 	 *
-	 * @param {import('../skills').Skill} skill
+	 * @param {import('./index').Skill} skill
 	 */
 	constructor(skill) {
 		for (const key in skill) {
@@ -33,7 +32,7 @@ module.exports.Skill = class Skill {
 	}
 	/**
      * @type {string} A description of the skill's effects (or the skill's name if none exists yet)
-	 * @this import('../skills').Skill
+	 * @this import('./index').Skill
      */
 	get description() {
 		switch (this.type) {
@@ -86,7 +85,7 @@ module.exports.Skill = class Skill {
 module.exports.TreasureDemon = class TreasureDemon {
 	/**
 	 *
-	 * @param {import('../types/lists').TreasureDemon}
+	 * @param {import('./index').TreasureDemon}
 	 */
 	constructor(treasureDemon) {
 		for (const key in treasureDemon) {

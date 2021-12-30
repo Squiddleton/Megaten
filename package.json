@@ -1,6 +1,6 @@
 {
   "name": "megaten",
-  "version": "1.3.3",
+  "version": "1.3.4",
   "description": "A simple yet comprehensive collection of data from the Shin Megami Tensei and Persona games.",
   "main": "index.js",
   "typings": "index.d.ts",
