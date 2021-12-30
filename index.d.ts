@@ -51,7 +51,7 @@ export interface TreasureDemon {
     en:      number;
     ag:      number;
     lu:      number;
-    moves:   string[];
+    skills:   string[];
     weak:    Affinity[];
     resist:  Affinity[];
     null:    Affinity[];
