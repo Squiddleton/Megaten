@@ -23,7 +23,8 @@ export class Demon {
     ultimate: boolean;
     special:  boolean;
     game:     Game;
-    evolution: Demon | null;
+    evolution:Demon | null;
+    image:    Buffer;
 }
 
 export class BaseSkill {
@@ -273,12 +274,13 @@ export class TreasureDemon {
     en:      number;
     ag:      number;
     lu:      number;
-    skills:   string[];
+    skills:  string[];
     weak:    Affinity[];
     resist:  Affinity[];
     null:    Affinity[];
     drain:   Affinity[];
     repel:   Affinity[];
+    image:   Buffer;
 }
 
 export declare const demons: Demon[];

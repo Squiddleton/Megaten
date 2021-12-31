@@ -93,7 +93,9 @@ All Personas/demons follow an identical template.
       "evo": 2, // The point of evolution for a party member's persona, with 1 being base, 2 being second awakening, and 3 being third awakening (or null if non-party)
       "ultimate": false, // Whether the Persona is the Ultimate Persona of its arcana in the game this data is based on
       "special": false, // Whether the Persona is a result of special fusions (incomplete)
-      "game": "p5" // The game that this data originates from
+      "game": "p5", // The game that this data originates from
+      "evolution": Demon {...}, // The Persona that this evolves into, or null if none
+      "image": Buffer // A buffer of an image of the Persona/demon
     }
 ```
 
@@ -167,7 +169,8 @@ Treasure Demons, specifically from Persona 5 Royal, are slight variations on the
       ],
       "null": [],
       "drain": [],
-      "repel": []
+      "repel": [],
+      "image": Buffer // A buffer of an image of the Treasure Demon
     }
 ```
 

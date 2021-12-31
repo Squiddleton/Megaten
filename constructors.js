@@ -1,3 +1,4 @@
+const { readFileSync } = require('fs');
 const lists = require('./lists.json');
 
 module.exports.Demon = class Demon {
@@ -17,6 +18,13 @@ module.exports.Demon = class Demon {
 	get evolution() {
 		const evoPersona = lists.demons.find(demon => demon.party === this.party && demon.evo === (this.evo + 1));
 		return evoPersona === undefined ? null : new Demon(evoPersona);
+	}
+	/**
+	 * @type {Buffer} A buffer of the Treasure Demon's image
+	 * @this {import('./index').Demon}
+	 */
+	get image() {
+		return readFileSync(`./images/demons/${this.devName}.png`);
 	}
 };
 
@@ -91,5 +99,12 @@ module.exports.TreasureDemon = class TreasureDemon {
 		for (const key in treasureDemon) {
 			this[key] = treasureDemon[key];
 		}
+	}
+	/**
+	 * @type {Buffer} A buffer of the Treasure Demon's image
+	 * @this {import('./index').TreasureDemon}
+	 */
+	get image() {
+		return readFileSync(`./images/treasuredemons/${this.devName}.png`);
 	}
 };
