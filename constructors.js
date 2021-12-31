@@ -24,7 +24,7 @@ module.exports.Demon = class Demon {
 	 * @this {import('./index').Demon}
 	 */
 	get image() {
-		return readFileSync(`./images/demons/${this.devName}.png`);
+		return readFileSync(`${__dirname}/images/demons/${this.devName}.png`);
 	}
 };
 
@@ -105,6 +105,6 @@ module.exports.TreasureDemon = class TreasureDemon {
 	 * @this {import('./index').TreasureDemon}
 	 */
 	get image() {
-		return readFileSync(`./images/treasuredemons/${this.devName}.png`);
+		return readFileSync(`${__dirname}/images/treasuredemons/${this.devName}.png`);
 	}
 };
