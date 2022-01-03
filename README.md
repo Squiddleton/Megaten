@@ -1,5 +1,5 @@
 # About
-Resources from the Megaten series, primarily consisting of the Shin Megami Tensei and Persona franchises.
+A fan-made, unofficial collection of resources from the Megaten series, primarily consisting of the Shin Megami Tensei and Persona franchises.
 
 These lists contain all the demons/Personas and skills from the following games, with more being added over time:
 * Persona 5 Strikers
@@ -17,7 +17,7 @@ After the package is installed, you may use it through methods such as the follo
 ```javascript
 const megaten = require('megaten') // Or, "import megaten from 'megaten'" in es6
 
-// All functions find by the input's name without attention to capitalization, spaces, punctuation, etc.
+// All get... functions find by the input's name without attention to capitalization, spaces, punctuation, etc.
 const jack = megaten.getDemon('Jack Frost!!!') // Gets a Demon instance
 const bufu = megaten.getSkill('bufu') // Gets a Skill instance
 const regent = megaten.getTreasureDemon('Regent') // Gets a Treasure Demon instance
@@ -89,13 +89,13 @@ All Personas/demons follow an identical template.
       ],
       "drain": [], // Affinities the Persona/demon drains
       "repel": [], // Affinities the Persona/demon repels
-      "party": "Redacted for spoiler reasons, but not in the package.", // The name of the party member who the Persona belongs to, or null if non-party
-      "evo": 2, // The point of evolution for a party member's persona, with 1 being base, 2 being second awakening, and 3 being third awakening (or null if non-party)
+      "party": "Redacted for spoiler reasons here, but not in the package", // The name of the party member who the Persona belongs to, or null if non-party
+      "evo": 2, // The point of evolution for a party member's persona, with 1 being base, 2 being second awakening, and 3 being third awakening, or null if non-party
       "ultimate": false, // Whether the Persona is the Ultimate Persona of its arcana in the game this data is based on
       "special": false, // Whether the Persona is a result of special fusions (incomplete)
       "game": "p5", // The game that this data originates from
       "evolution": Demon {...}, // The Persona that this evolves into, or null if none
-      "image": Buffer // A buffer of an image of the Persona/demon
+      "image": Buffer {...} // A buffer of an image of the Persona/demon
     }
 ```
 
@@ -131,7 +131,7 @@ Each skill is marked by a type property which groups similar skills together.  P
     }
 ```
 
-## Treasure Demons
+### Treasure Demons
 Treasure Demons, specifically from Persona 5 Royal, are slight variations on the normal Demon class since they lack variation that others have.
 
 #### Example:
@@ -141,7 +141,7 @@ Treasure Demons, specifically from Persona 5 Royal, are slight variations on the
       "devName": "regent",
       "inherit": "Support",
       "arcana": "Emperor",
-      "race": "Treasure",
+      "race": "Treasure", // All Treasure Demons are of the "Treasure" race
       "level": 10,
       "hp": 165, // The max HP of the Treasure Demon
       "sp": 93, // The max SP of the Treasure Demon
@@ -170,7 +170,7 @@ Treasure Demons, specifically from Persona 5 Royal, are slight variations on the
       "null": [],
       "drain": [],
       "repel": [],
-      "image": Buffer // A buffer of an image of the Treasure Demon
+      "image": Buffer {...}
     }
 ```
 
