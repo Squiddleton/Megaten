@@ -7,9 +7,7 @@ module.exports.Demon = class Demon {
 	 * @param {import('./index').Demon}
 	 */
 	constructor(demon) {
-		for (const key in demon) {
-			this[key] = demon[key];
-		}
+		Object.assign(this, demon);
 	}
 	/**
      * @type {import('./index').Demon|null} The Persona's evolution, or null if none
@@ -34,9 +32,7 @@ module.exports.Skill = class Skill {
 	 * @param {import('./index').Skill} skill
 	 */
 	constructor(skill) {
-		for (const key in skill) {
-			this[key] = skill[key];
-		}
+		Object.assign(this, skill);
 	}
 	/**
      * @type {string} A description of the skill's effects (or the skill's name if none exists yet)
@@ -96,9 +92,7 @@ module.exports.TreasureDemon = class TreasureDemon {
 	 * @param {import('./index').TreasureDemon}
 	 */
 	constructor(treasureDemon) {
-		for (const key in treasureDemon) {
-			this[key] = treasureDemon[key];
-		}
+		Object.assign(this, treasureDemon);
 	}
 	/**
 	 * @type {Buffer} A buffer of the Treasure Demon's image
