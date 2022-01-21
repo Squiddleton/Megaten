@@ -26,7 +26,7 @@ module.exports.Demon = class Demon {
 	}
 };
 
-module.exports.Skill = class Skill {
+class BaseSkill {
 	/**
 	 *
 	 * @param {import('./index').Skill} skill
@@ -84,7 +84,37 @@ module.exports.Skill = class Skill {
 		default: return this.name;
 		}
 	}
-};
+}
+
+class AilBoostSkill extends BaseSkill {}
+class AilDefensiveSkill extends BaseSkill {}
+class AilmentSkill extends BaseSkill {}
+class AttackSkill extends BaseSkill {}
+class AutoBuffSkill extends BaseSkill {}
+class BarrierSkill extends BaseSkill {}
+class BarrierBreakSkill extends BaseSkill {}
+class BoostSkill extends BaseSkill {}
+class BreakSkill extends BaseSkill {}
+class ChargeSkill extends BaseSkill {}
+class CounterSkill extends BaseSkill {}
+class CritSkill extends BaseSkill {}
+class CritBoostSkill extends BaseSkill {}
+class DefensiveSkill extends BaseSkill {}
+class DrainSkill extends BaseSkill {}
+class EndureSkill extends BaseSkill {}
+class EvasionSkill extends BaseSkill {}
+class HalveSkill extends BaseSkill {}
+class InstaKillSkill extends BaseSkill {}
+class InstaKillBoostSkill extends BaseSkill {}
+class MasterSkill extends BaseSkill {}
+class MiscSkill extends BaseSkill {}
+class NaviSkill extends BaseSkill {}
+class PostBattleSkill extends BaseSkill {}
+class RecoverySkill extends BaseSkill {}
+class RegenSkill extends BaseSkill {}
+class SupportSkill extends BaseSkill {}
+class SusceptibilitySkill extends BaseSkill {}
+class WallSkill extends BaseSkill {}
 
 module.exports.TreasureDemon = class TreasureDemon {
 	/**
@@ -101,4 +131,44 @@ module.exports.TreasureDemon = class TreasureDemon {
 	get image() {
 		return readFileSync(`${__dirname}/images/treasuredemons/${this.devName}.png`);
 	}
+};
+
+/**
+ *
+ * @param {BaseSkill} baseSkill
+ * @returns {import('./index').Skill}
+ */
+module.exports.skillToClass = baseSkill => {
+	const skillClass = {
+		AILBOOST: AilBoostSkill,
+		AILDEFENSIVE: AilDefensiveSkill,
+		AILMENT: AilmentSkill,
+		ATTACK: AttackSkill,
+		AUTOBUFF: AutoBuffSkill,
+		BARRIER: BarrierSkill,
+		BARRIERBREAK: BarrierBreakSkill,
+		BOOST: BoostSkill,
+		BREAK: BreakSkill,
+		CHARGE: ChargeSkill,
+		COUNTER: CounterSkill,
+		CRIT: CritSkill,
+		CRITBOOST: CritBoostSkill,
+		DEFENSIVE: DefensiveSkill,
+		DRAIN: DrainSkill,
+		ENDURE: EndureSkill,
+		EVASION: EvasionSkill,
+		HALVE: HalveSkill,
+		INSTAKILL: InstaKillSkill,
+		INSTAKILLBOOST: InstaKillBoostSkill,
+		MASTER: MasterSkill,
+		MISC: MiscSkill,
+		NAVI: NaviSkill,
+		POSTBATTLE: PostBattleSkill,
+		RECOVERY: RecoverySkill,
+		REGEN: RegenSkill,
+		SUPPORT: SupportSkill,
+		SUSCEPTIBILITY: SusceptibilitySkill,
+		WALL: WallSkill,
+	}[baseSkill.type];
+	return new skillClass(baseSkill);
 };
