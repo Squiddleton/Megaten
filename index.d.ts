@@ -258,7 +258,7 @@ export class WallSkill extends BaseSkill {
 
 export type Skill = AilBoostSkill | AilDefensiveSkill | AilmentSkill | AttackSkill | AutoBuffSkill | BarrierSkill | BarrierBreakSkill | BoostSkill | BreakSkill
     | ChargeSkill | CounterSkill | CritSkill | CritBoostSkill | DefensiveSkill | DrainSkill | EndureSkill | EvasionSkill | HalveSkill | InstaKillSkill
-    | InstaKillBoostSkill | MasterSkill | MiscSkill | NaviSkill | PostBattleSkill | RecoverySkill | RegenSkill | SupportSkill | SusceptibilitySkill | WallSkill
+    | InstaKillBoostSkill | MasterSkill | MiscSkill | NaviSkill | PostBattleSkill | RecoverySkill | RegenSkill | SupportSkill | SusceptibilitySkill | WallSkill;
 
 export class TreasureDemon {
     name:    string;
@@ -287,13 +287,15 @@ export declare const demons: Demon[];
 export declare const skills: Skill[];
 export declare const treasureDemons: TreasureDemon[];
 
-export function getDemon(input: string): Demon | null
-export function getSkill(input: string): Skill | null
-export function getTreasureDemon(input: string): TreasureDemon | null
+export function getDemon(input: string): Demon | null;
+export function getSkill(input: string): Skill | null;
+export function getTreasureDemon(input: string): TreasureDemon | null;
 
-export type Affinity = 'Phys' | 'Gun' | 'Fire' | 'Ice' | 'Elec' | 'Wind' | 'Nuke' | 'Psy' | 'Bless' | 'Curse' | 'Almighty' | 'Ailment' | 'Recovery' | 'Support' | 'Passive'
+export declare const version: string;
 
-export type Game = 'p3' | 'p4' | 'p5'
+export type Affinity = 'Phys' | 'Gun' | 'Fire' | 'Ice' | 'Elec' | 'Wind' | 'Nuke' | 'Psy' | 'Bless' | 'Curse' | 'Almighty' | 'Ailment' | 'Recovery' | 'Support' | 'Passive';
+
+export type Game = 'p3' | 'p4' | 'p5';
 
 export interface Learnset {
     name:  string;
@@ -305,12 +307,12 @@ export interface Ailment {
     chance:  Display;
 }
 
-export type Buff = 'Attack' | 'Defense' | 'Agility'
+export type Buff = 'Attack' | 'Defense' | 'Agility';
 
-export type Display = 'Miniscule' | 'Light' | 'Medium' | 'Heavy' | 'Severe' | 'Colossal' | 'Low' | 'High'
+export type Display = 'Miniscule' | 'Light' | 'Medium' | 'Heavy' | 'Severe' | 'Colossal' | 'Low' | 'High';
 
-export type NewAffinity = 'Resist' | 'Null' | 'Drain' | 'Repel'
+export type NewAffinity = 'Resist' | 'Null' | 'Drain' | 'Repel';
 
 export type SkillType = 'AILBOOST' | 'AILDEFENSIVE' | 'AILMENT' | 'ATTACK' | 'AUTOBUFF' | 'BARRIER' | 'BARRIERBREAK' | 'BOOST' | 'BREAK'
     | 'BREAK' | 'CHARGE' | 'COUNTER' | 'CRIT' |'CRITBOOST' | 'DEFENSIVE' | 'DRAIN' | 'ENDURE' | 'EVASION' | 'HALVE' | 'INSTAKILL' 
-    | 'INSTAKILLBOOST' | 'MASTER' | 'MISC' | 'NAVI' | 'POSTBATTLE' | 'RECOVERY' | 'REGEN' | 'SUPPORT' | 'SUSCEPTIBILITY' | 'WALL'
+    | 'INSTAKILLBOOST' | 'MASTER' | 'MISC' | 'NAVI' | 'POSTBATTLE' | 'RECOVERY' | 'REGEN' | 'SUPPORT' | 'SUSCEPTIBILITY' | 'WALL';

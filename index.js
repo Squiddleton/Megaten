@@ -83,3 +83,5 @@ module.exports.getSkill = input => this.skills.find(skill => skill.devName === n
  * @returns {import('./index').TreasureDemon | null} A matching treasure demon, or null if none exists
  */
 module.exports.getTreasureDemon = input => this.treasureDemons.find(treasureDemon => treasureDemon.devName === noPunc(input)) ?? null;
+
+module.exports.version = require('./package.json').version;
