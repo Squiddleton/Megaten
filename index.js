@@ -63,7 +63,7 @@ module.exports.treasureDemons = treasureDemons.map(treasureDemon => new Treasure
 /**
  * Finds a demon using its name.
  * @param {string} input - The name of a demon to find
- * @returns {import('./index').Demon | null} A matching demon, or null if none exists
+ * @returns {?import('./index').Demon} A matching demon, or null if none exists
  */
 module.exports.getDemon = input => {
 	input = noPunc(input);
@@ -73,14 +73,14 @@ module.exports.getDemon = input => {
 /**
  * Finds a skill using its name.
  * @param {string} input - The name of a skill to find
- * @returns {import('./index').Skill | null} A matching skill, or null if none exists
+ * @returns {?import('./index').Skill} A matching skill, or null if none exists
  */
 module.exports.getSkill = input => this.skills.find(skill => skill.devName === noPunc(input)) ?? null;
 
 /**
  * Finds a treasure demon using its name.
  * @param {string} input - The name of a treasure demon to find
- * @returns {import('./index').TreasureDemon | null} A matching treasure demon, or null if none exists
+ * @returns {?import('./index').TreasureDemon} A matching treasure demon, or null if none exists
  */
 module.exports.getTreasureDemon = input => this.treasureDemons.find(treasureDemon => treasureDemon.devName === noPunc(input)) ?? null;
 
