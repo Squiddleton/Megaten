@@ -2,8 +2,8 @@ export class Demon {
     name:     string;
     devName:  string;
     aliases:  string[];
-    inherit:  Affinity;
-    arcana:   string;
+    inherit:  Inherit
+    arcana:   Arcana;
     race:     string;
     level:    number;
     st:       number;
@@ -37,38 +37,40 @@ export class BaseSkill {
 }
 
 export class AilBoostSkill extends BaseSkill {
+    affinity: 'Passive';
     type: 'AILBOOST';
     ailment: string;
     amount: number;
     weather: boolean;
-    unique: false;
 }
 
 export class AilDefensiveSkill extends BaseSkill {
+    affinity: 'Passive';
     type: 'AILDEFENSIVE';
     ailment: string;
-    resistance: string;
-    unique: false;
+    resistance: 'Resist' | 'Null';
 }
 
 export class AilmentSkill extends BaseSkill {
+    affinity: 'Ailment';
     type: 'AILMENT';
-    range: number;
+    range: Range;
     cost: number;
     ailment: string;
-    chance: string;
+    chance: 'Medium' | 'High';
 }
 
 export class AttackSkill extends BaseSkill {
+    affinity: Element;
     type: 'ATTACK';
-    range: number;
+    range: Range;
     cost: number;
     power: number;
-    display: string;
+    display: Display;
     min: number;
     max: number;
     ailment: Ailment[];
-    crit: string | null;
+    crit: 'High' | null;
     downBoost: boolean;
     baton: boolean;
     accurate: boolean;
@@ -77,120 +79,124 @@ export class AttackSkill extends BaseSkill {
 }
 
 export class AutoBuffSkill extends BaseSkill {
+    affinity: 'Passive';
     type: 'AUTOBUFF';
     buff: string;
-    unique: false;
 }
 
 export class BarrierSkill extends BaseSkill {
+    affinity: 'Support';
     type: 'BARRIER';
-    range: number;
+    range: Range;
     cost: number;
     barriers: string[];
-    unique: false;
 }
 
 export class BarrierBreakSkill extends BaseSkill {
+    affinity: 'Support';
     type: 'BARRIERBREAK';
     cost: number;
     barrier: string;
-    unique: false;
 }
 
 export class BoostSkill extends BaseSkill {
+    affinity: 'Passive';
     type: 'BOOST';
     element: Affinity | 'ALL';
     amount: number;
 }
 
 export class BreakSkill extends BaseSkill {
+    affinity: 'Support';
     type: 'BREAK';
     cost: number;
     element: Affinity;
-    unique: false;
 }
 
 export class ChargeSkill extends BaseSkill {
+    affinity: 'Support';
     type: 'CHARGE';
     cost: number;
-    range: number;
+    range: Range;
     charge: string;
-    unique: false;
 }
 
 export class CounterSkill extends BaseSkill {
+    affinity: 'Passive';
     type: 'COUNTER';
     chance: number;
 }
 
 export class CritSkill extends BaseSkill {
+    affinity: 'Support';
     type: 'CRIT';
-    range: string;
+    range: 'ALL' | 'ALLY' | 'PARTY';
     cost: number;
 }
 
 export class CritBoostSkill extends BaseSkill {
+    affinity: 'Passive';
     type: 'CRITBOOST';
     amount: number;
     surround: boolean;
-    unique: false;
 }
 
 export class DefensiveSkill extends BaseSkill {
+    affinity: 'Passive';
     type: 'DEFENSIVE';
     element: Affinity;
     newAffinity: NewAffinity;
-    unique: false;
 }
 
 export class DrainSkill extends BaseSkill {
+    affinity: 'Almighty';
     type: 'DRAIN';
-    hpsp: string;
+    hpsp: HPSP;
     cost: number;
     amount: number;
-    unique: false;
 }
 
 export class EndureSkill extends BaseSkill {
+    affinity: 'Passive';
     type: 'ENDURE';
     priority: number;
     instakill: boolean;
-    unique: false;
 }
 
 export class EvasionSkill extends BaseSkill {
+    affinity: 'Passive';
     type: 'EVASION';
     elements: string[];
     amount: number;
     surround: boolean;
     weather: boolean;
-    unique: false;
 }
 
 export class HalveSkill extends BaseSkill {
+    affinity: BlessCurse;
     type: 'HALVE';
     cost: number;
-    unique: false;
 }
 
 export class InstaKillSkill extends BaseSkill {
+    affinity: BlessCurse;
     type: 'INSTAKILL';
-    range: number;
+    range: Range;
     cost: number;
     amount: number;
     display: string;
 }
 
 export class InstaKillBoostSkill extends BaseSkill {
+    affinity: 'Passive';
     type: 'INSTAKILLBOOST';
     element: Affinity;
-    unique: false;
 }
 
 export class MasterSkill extends BaseSkill {
+    affinity: 'Passive';
     type: 'MASTER';
-    skill: string;
-    unique: false;
+    skill: HPSP;
 }
 
 export class MiscSkill extends BaseSkill {
@@ -199,12 +205,14 @@ export class MiscSkill extends BaseSkill {
 }
 
 export class NaviSkill extends BaseSkill {
+    affinity: 'Passive';
     type: 'NAVI';
 }
 
 export class PostBattleSkill extends BaseSkill {
+    affinity: 'Passive';
     type: 'POSTBATTLE';
-    range: number;
+    range: Range;
     xp: number;
     yen: number;
     hp: number;
@@ -212,8 +220,9 @@ export class PostBattleSkill extends BaseSkill {
 }
 
 export class RecoverySkill extends BaseSkill {
+    affinity: 'Recovery';
     type: 'RECOVERY';
-    range: number;
+    range: Range;
     cost: number;
     amount: number;
     ailment: string[];
@@ -223,8 +232,9 @@ export class RecoverySkill extends BaseSkill {
 }
 
 export class RegenSkill extends BaseSkill {
+    affinity: 'Passive';
     type: 'REGEN';
-    hpspail: string;
+    hpspail: HPSP | 'HPSP' | 'AIL';
     amount: number;
     percent: boolean;
     ambush: boolean;
@@ -232,8 +242,9 @@ export class RegenSkill extends BaseSkill {
 }
 
 export class SupportSkill extends BaseSkill {
+    affinity: 'Support';
     type: 'SUPPORT';
-    range: number;
+    range: Range;
     cost: number;
     buffs: Buff[];
     debuffs: Buff[];
@@ -243,28 +254,24 @@ export class SupportSkill extends BaseSkill {
 }
 
 export class SusceptibilitySkill extends BaseSkill {
+    affinity: 'Almighty';
     type: 'SUSCEPTIBILITY';
-    range: number;
+    range: Range;
     cost: number;
-    unique: false;
 }
 
 export class WallSkill extends BaseSkill {
+    affinity: 'Support';
     type: 'WALL';
     cost: number;
     element: Affinity;
-    unique: false;
 }
-
-export type Skill = AilBoostSkill | AilDefensiveSkill | AilmentSkill | AttackSkill | AutoBuffSkill | BarrierSkill | BarrierBreakSkill | BoostSkill | BreakSkill
-    | ChargeSkill | CounterSkill | CritSkill | CritBoostSkill | DefensiveSkill | DrainSkill | EndureSkill | EvasionSkill | HalveSkill | InstaKillSkill
-    | InstaKillBoostSkill | MasterSkill | MiscSkill | NaviSkill | PostBattleSkill | RecoverySkill | RegenSkill | SupportSkill | SusceptibilitySkill | WallSkill;
 
 export class TreasureDemon {
     name:    string;
     devName: string;
-    inherit: Affinity;
-    arcana:  string;
+    inherit: Inherit;
+    arcana:  Arcana;
     race:    'Treasure';
     level:   number;
     hp:      number;
@@ -293,25 +300,43 @@ export function getTreasureDemon(input: string): TreasureDemon | null;
 
 export declare const version: string;
 
-export type Affinity = 'Phys' | 'Gun' | 'Fire' | 'Ice' | 'Elec' | 'Wind' | 'Nuke' | 'Psy' | 'Bless' | 'Curse' | 'Almighty' | 'Ailment' | 'Recovery' | 'Support' | 'Passive';
-
-export type Game = 'p3' | 'p4' | 'p5';
+export interface Ailment {
+    ailment: string;
+    chance:  Display;
+}
 
 export interface Learnset {
     name:  string;
     level: number;
 }
 
-export interface Ailment {
-    ailment: string;
-    chance:  Display;
-}
+export type Affinity = Inherit | 'Gun' | 'Passive';
+
+export type Arcana = 'Fool' | 'Magician' | 'Priestess' | 'Empress' | 'Emperor' | 'Hierophant' | 'Lovers' | 'Chariot'
+    | 'Justice' | 'Hermit'| 'Fortune' | 'Strength' | 'Hanged' | 'Death' | 'Temperance' | 'Devil' | 'Tower'
+    | 'Star' | 'Moon' | 'Sun' | 'Judgement' | 'Faith' | 'Councillor' | 'World' | 'Apostle' | 'Hope';
+
+export type BlessCurse = 'Bless' | 'Curse';
 
 export type Buff = 'Attack' | 'Defense' | 'Agility';
 
 export type Display = 'Miniscule' | 'Light' | 'Medium' | 'Heavy' | 'Severe' | 'Colossal' | 'Low' | 'High';
 
+export type Element = 'Phys' | 'Fire' | 'Ice' | 'Elec' | 'Wind' | 'Nuke' | 'Psy' | 'Bless' | 'Curse' | 'Almighty';
+
+export type Game = 'p3' | 'p4' | 'p5';
+
+export type HPSP = 'HP' | 'SP';
+
+export type Inherit = Element | 'Ailment' | 'Recovery' | 'Support';
+
 export type NewAffinity = 'Resist' | 'Null' | 'Drain' | 'Repel';
+
+export type Range = 0 | 1;
+
+export type Skill = AilBoostSkill | AilDefensiveSkill | AilmentSkill | AttackSkill | AutoBuffSkill | BarrierSkill | BarrierBreakSkill | BoostSkill | BreakSkill
+    | ChargeSkill | CounterSkill | CritSkill | CritBoostSkill | DefensiveSkill | DrainSkill | EndureSkill | EvasionSkill | HalveSkill | InstaKillSkill
+    | InstaKillBoostSkill | MasterSkill | MiscSkill | NaviSkill | PostBattleSkill | RecoverySkill | RegenSkill | SupportSkill | SusceptibilitySkill | WallSkill;
 
 export type SkillType = 'AILBOOST' | 'AILDEFENSIVE' | 'AILMENT' | 'ATTACK' | 'AUTOBUFF' | 'BARRIER' | 'BARRIERBREAK' | 'BOOST' | 'BREAK'
     | 'BREAK' | 'CHARGE' | 'COUNTER' | 'CRIT' |'CRITBOOST' | 'DEFENSIVE' | 'DRAIN' | 'ENDURE' | 'EVASION' | 'HALVE' | 'INSTAKILL' 
