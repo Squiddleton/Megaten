@@ -13,11 +13,11 @@ export class Demon {
     lu:       number;
     learnset: Learnset[];
     evoMove:  string | null;
-    weak:     Affinity[];
-    resist:   Affinity[];
-    null:     Affinity[];
-    drain:    Affinity[];
-    repel:    Affinity[];
+    weak:     Element[];
+    resist:   Element[];
+    null:     Element[];
+    drain:    Element[];
+    repel:    Element[];
     party:    string | null;
     evo:      number | null;
     ultimate: boolean;
@@ -102,7 +102,7 @@ export class BarrierBreakSkill extends BaseSkill {
 export class BoostSkill extends BaseSkill {
     affinity: 'Passive';
     type: 'BOOST';
-    element: Affinity | 'ALL';
+    element: Element | 'ALL';
     amount: number;
 }
 
@@ -110,7 +110,7 @@ export class BreakSkill extends BaseSkill {
     affinity: 'Support';
     type: 'BREAK';
     cost: number;
-    element: Affinity;
+    element: Element;
 }
 
 export class ChargeSkill extends BaseSkill {
@@ -144,7 +144,7 @@ export class CritBoostSkill extends BaseSkill {
 export class DefensiveSkill extends BaseSkill {
     affinity: 'Passive';
     type: 'DEFENSIVE';
-    element: Affinity;
+    element: Element;
     newAffinity: NewAffinity;
 }
 
@@ -190,7 +190,7 @@ export class InstaKillSkill extends BaseSkill {
 export class InstaKillBoostSkill extends BaseSkill {
     affinity: 'Passive';
     type: 'INSTAKILLBOOST';
-    element: Affinity;
+    element: BlessCurse;
 }
 
 export class MasterSkill extends BaseSkill {
@@ -264,7 +264,7 @@ export class WallSkill extends BaseSkill {
     affinity: 'Support';
     type: 'WALL';
     cost: number;
-    element: Affinity;
+    element: Element;
 }
 
 export class TreasureDemon {
@@ -282,11 +282,11 @@ export class TreasureDemon {
     ag:      number;
     lu:      number;
     skills:  string[];
-    weak:    Affinity[];
-    resist:  Affinity[];
-    null:    Affinity[];
-    drain:   Affinity[];
-    repel:   Affinity[];
+    weak:    Element[];
+    resist:  Element[];
+    null:    Element[];
+    drain:   Element[];
+    repel:   Element[];
     image:   Buffer;
 }
 
@@ -300,16 +300,8 @@ export function getTreasureDemon(input: string): TreasureDemon | null;
 
 export declare const version: string;
 
-export interface Ailment {
-    ailment: string;
-    chance:  Display;
-}
-
-export interface Learnset {
-    name:  string;
-    level: number;
-}
-
+export type Element = 'Phys' | 'Gun' | 'Fire' | 'Ice' | 'Elec' | 'Wind' | 'Nuke' | 'Psy' | 'Bless' | 'Curse' | 'Almighty';
+export type Inherit = Exclude<Element, 'Gun'> | 'Ailment' | 'Recovery' | 'Support';
 export type Affinity = Inherit | 'Gun' | 'Passive';
 
 export type Arcana = 'Fool' | 'Magician' | 'Priestess' | 'Empress' | 'Emperor' | 'Hierophant' | 'Lovers' | 'Chariot'
@@ -322,13 +314,9 @@ export type Buff = 'Attack' | 'Defense' | 'Agility';
 
 export type Display = 'Miniscule' | 'Light' | 'Medium' | 'Heavy' | 'Severe' | 'Colossal' | 'Low' | 'High';
 
-export type Element = 'Phys' | 'Fire' | 'Ice' | 'Elec' | 'Wind' | 'Nuke' | 'Psy' | 'Bless' | 'Curse' | 'Almighty';
-
 export type Game = 'p3' | 'p4' | 'p5';
 
 export type HPSP = 'HP' | 'SP';
-
-export type Inherit = Element | 'Ailment' | 'Recovery' | 'Support';
 
 export type NewAffinity = 'Resist' | 'Null' | 'Drain' | 'Repel';
 
@@ -341,3 +329,13 @@ export type Skill = AilBoostSkill | AilDefensiveSkill | AilmentSkill | AttackSki
 export type SkillType = 'AILBOOST' | 'AILDEFENSIVE' | 'AILMENT' | 'ATTACK' | 'AUTOBUFF' | 'BARRIER' | 'BARRIERBREAK' | 'BOOST' | 'BREAK'
     | 'BREAK' | 'CHARGE' | 'COUNTER' | 'CRIT' |'CRITBOOST' | 'DEFENSIVE' | 'DRAIN' | 'ENDURE' | 'EVASION' | 'HALVE' | 'INSTAKILL' 
     | 'INSTAKILLBOOST' | 'MASTER' | 'MISC' | 'NAVI' | 'POSTBATTLE' | 'RECOVERY' | 'REGEN' | 'SUPPORT' | 'SUSCEPTIBILITY' | 'WALL';
+    
+export interface Ailment {
+    ailment: string;
+    chance:  Display;
+}
+
+export interface Learnset {
+    name:  string;
+    level: number;
+}
