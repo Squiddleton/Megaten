@@ -100,7 +100,7 @@ All Personas/demons follow an identical template.
 ```
 
 ## Skills
-Each skill is marked by a type property which groups similar skills together.  Please read skills.ts for examples of the format of each type.
+Each skill is marked by a type property which groups similar skill instances together.  Please see index.d.ts for each type's format.
 
 #### Example:
 ```javascript
