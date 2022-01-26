@@ -3,7 +3,7 @@ const { demons, skills, treasureDemons } = require('./lists.json');
 
 const noPunc = str => {
 	return str
-		.toLowerCase()
+		?.toLowerCase()
 		.replace(/&/g, 'and')
 		.replace(/è/g, 'e')
 		.replace(/é/g, 'e')
