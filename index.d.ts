@@ -2,7 +2,7 @@ export class Demon {
     name:     string;
     devName:  string;
     aliases:  string[];
-    inherit:  Inherit
+    inherit:  Inherit;
     arcana:   Arcana;
     race:     string;
     level:    number;
