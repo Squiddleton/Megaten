@@ -66,7 +66,7 @@ export class AttackSkill extends BaseSkill {
     range: Range;
     cost: number;
     power: number;
-    display: Display;
+    display: 'Miniscule' | 'Light' | 'Medium' | 'Heavy' | 'Severe' | 'Colossal';
     min: number;
     max: number;
     ailment: Ailment[];
@@ -184,7 +184,7 @@ export class InstaKillSkill extends BaseSkill {
     range: Range;
     cost: number;
     amount: number;
-    display: string;
+    display: Display;
 }
 
 export class InstaKillBoostSkill extends BaseSkill {
@@ -312,7 +312,7 @@ export type BlessCurse = 'Bless' | 'Curse';
 
 export type Buff = 'Attack' | 'Defense' | 'Agility';
 
-export type Display = 'Miniscule' | 'Light' | 'Medium' | 'Heavy' | 'Severe' | 'Colossal' | 'Low' | 'High';
+export type Display = 'Low' | 'Medium' | 'High';
 
 export type Game = 'p3' | 'p4' | 'p5';
 
