@@ -94,8 +94,8 @@ All Personas/demons follow an identical template.
       "ultimate": false, // Whether the Persona is the Ultimate Persona of its arcana in the game this data is based on
       "special": false, // Whether the Persona is a result of special fusions (incomplete)
       "game": "p5", // The game that this data originates from
-      "evolution": Demon {...}, // The Persona that this evolves into, or null if none
-      "image": Buffer {...} // A buffer of an image of the Persona/demon
+      "evolution": Demon {...}, // The Persona that this evolves into, or null if none (getter)
+      "image": Buffer {...} // A buffer of an image of the Persona/demon (getter)
     }
 ```
 
@@ -127,7 +127,8 @@ Each skill is marked by a type property which groups similar skill instances tog
       "baton": false, // Whether the skill gains power if used during a baton pass
       "accurate": false, // Whether the skill has high accuracy
       "surround": false, // Whether the skill gains power when the user is surrounded
-      "weather": false // Whether the skill gains power under certain weather conditions
+      "weather": false, // Whether the skill gains power under certain weather conditions
+      "description": "Heavy Elec damage to one foe with low chance of Shock." // The skill's description similar to the games (getter)
     }
 ```
 
