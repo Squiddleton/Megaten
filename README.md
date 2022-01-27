@@ -108,7 +108,7 @@ Each skill is marked by a type property which groups similar skill instances tog
       "name": "Ziodyne", // The name of the skill
       "devName": "ziodyne", // The name without capitalization, spaces, punctuation, accents, etc.
       "affinity": "Elec", // The affinity/element of the skill
-      "type": "ATTACK", // The type of the skill (full list in skills.ts)
+      "type": "ATTACK", // The type of the skill
       "range": 1, // The range of the skill, with 1 being single-target and 0 being party-wide
       "cost": 12, // The SP cost of magic skills or the HP percentage cost of physical skills
       "power": 320, // The base power of the skill; most are from Persona 4 Golden, with other skills' damage being assumed based off comparisons with known skills
