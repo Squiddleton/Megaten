@@ -150,7 +150,7 @@ Treasure Demons, specifically from Persona 5 Royal, are slight variations on the
       "en": 10,
       "ag": 10,
       "lu": 10,
-      "skills": [ // Skills array are only strings since no Treasure Demon learns skills naturally
+      "skills": [ // The skills array consists of only strings since no Treasure Demon learns skills naturally
         "Maragi",
         "Mabufu",
         "Magaru",
