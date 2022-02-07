@@ -30,7 +30,7 @@ All Personas/demons follow an identical template.
 
 #### Example:
 ```javascript
-{
+Demon {
       name: "Loki -P5-", // The name of the Persona/demon, with some being named after unique variants in specific games
       devName: "lokip5", // The name without capitalization, spaces, punctuation, accents, etc.
       aliases: [
@@ -96,7 +96,7 @@ All Personas/demons follow an identical template.
       game: "p5", // The game that this data originates from
       evolution: Demon {...}, // The Persona that this evolves into, or null if none (getter)
       image: Buffer {...} // A buffer of an image of the Persona/demon (getter)
-    }
+}
 ```
 
 ## Skills
@@ -104,7 +104,7 @@ Each skill is marked by a type property which groups similar skill instances tog
 
 #### Example:
 ```javascript
-{
+AttackSkill {
       name: "Ziodyne", // The name of the skill
       devName: "ziodyne", // The name without capitalization, spaces, punctuation, accents, etc.
       affinity: "Elec", // The affinity/element of the skill
@@ -129,7 +129,7 @@ Each skill is marked by a type property which groups similar skill instances tog
       surround: false, // Whether the skill gains power when the user is surrounded
       weather: false, // Whether the skill gains power under certain weather conditions
       description: "Heavy Elec damage to one foe with low chance of Shock." // The skill's description similar to the games (getter)
-    }
+}
 ```
 
 ### Treasure Demons
@@ -137,7 +137,7 @@ Treasure Demons, specifically from Persona 5 Royal, are slight variations on the
 
 #### Example:
 ```javascript
-{
+TreasureDemon {
       name: "Regent",
       devName: "regent",
       inherit: "Support",
@@ -172,7 +172,7 @@ Treasure Demons, specifically from Persona 5 Royal, are slight variations on the
       drain: [],
       repel: [],
       image: Buffer {...}
-    }
+}
 ```
 
 ### Credits
