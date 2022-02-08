@@ -145,7 +145,7 @@ export class DefensiveSkill extends BaseSkill {
     affinity: 'Passive';
     type: 'DEFENSIVE';
     element: Element;
-    newAffinity: NewAffinity;
+    newAffinity: 'Resist' | 'Null' | 'Drain' | 'Repel';
 }
 
 export class DrainSkill extends BaseSkill {
@@ -317,8 +317,6 @@ export type Display = 'Low' | 'Medium' | 'High';
 export type Game = 'p3' | 'p4' | 'p5';
 
 export type HPSP = 'HP' | 'SP';
-
-export type NewAffinity = 'Resist' | 'Null' | 'Drain' | 'Repel';
 
 export type Range = 0 | 1;
 
