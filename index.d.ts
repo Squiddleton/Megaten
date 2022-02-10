@@ -8,7 +8,7 @@ export class Demon {
     level:    number;
     st:       number;
     ma:       number;
-    en:       number;
+    vi:       number;
     ag:       number;
     lu:       number;
     learnset: Learnset[];
@@ -278,7 +278,7 @@ export class TreasureDemon {
     sp:      number;
     st:      number;
     ma:      number;
-    en:      number;
+    vi:      number;
     ag:      number;
     lu:      number;
     skills:  string[];
