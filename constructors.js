@@ -86,35 +86,36 @@ class BaseSkill {
 	}
 }
 
-class AilBoostSkill extends BaseSkill {}
-class AilDefensiveSkill extends BaseSkill {}
-class AilmentSkill extends BaseSkill {}
-class AttackSkill extends BaseSkill {}
-class AutoBuffSkill extends BaseSkill {}
-class BarrierSkill extends BaseSkill {}
-class BarrierBreakSkill extends BaseSkill {}
-class BoostSkill extends BaseSkill {}
-class BreakSkill extends BaseSkill {}
-class ChargeSkill extends BaseSkill {}
-class CounterSkill extends BaseSkill {}
-class CritSkill extends BaseSkill {}
-class CritBoostSkill extends BaseSkill {}
-class DefensiveSkill extends BaseSkill {}
-class DrainSkill extends BaseSkill {}
-class EndureSkill extends BaseSkill {}
-class EvasionSkill extends BaseSkill {}
-class HalveSkill extends BaseSkill {}
-class InstaKillSkill extends BaseSkill {}
-class InstaKillBoostSkill extends BaseSkill {}
-class MasterSkill extends BaseSkill {}
-class MiscSkill extends BaseSkill {}
-class NaviSkill extends BaseSkill {}
-class PostBattleSkill extends BaseSkill {}
-class RecoverySkill extends BaseSkill {}
-class RegenSkill extends BaseSkill {}
-class SupportSkill extends BaseSkill {}
-class SusceptibilitySkill extends BaseSkill {}
-class WallSkill extends BaseSkill {}
+module.exports.BaseSkill = BaseSkill;
+module.exports.AilBoostSkill = class extends BaseSkill {};
+module.exports.AilDefensiveSkill = class extends BaseSkill {};
+module.exports.AilmentSkill = class extends BaseSkill {};
+module.exports.AttackSkill = class extends BaseSkill {};
+module.exports.AutoBuffSkill = class extends BaseSkill {};
+module.exports.BarrierSkill = class extends BaseSkill {};
+module.exports.BarrierBreakSkill = class extends BaseSkill {};
+module.exports.BoostSkill = class extends BaseSkill {};
+module.exports.BreakSkill = class extends BaseSkill {};
+module.exports.ChargeSkill = class extends BaseSkill {};
+module.exports.CounterSkill = class extends BaseSkill {};
+module.exports.CritSkill = class extends BaseSkill {};
+module.exports.CritBoostSkill = class extends BaseSkill {};
+module.exports.DefensiveSkill = class extends BaseSkill {};
+module.exports.DrainSkill = class extends BaseSkill {};
+module.exports.EndureSkill = class extends BaseSkill {};
+module.exports.EvasionSkill = class extends BaseSkill {};
+module.exports.HalveSkill = class extends BaseSkill {};
+module.exports.InstaKillSkill = class extends BaseSkill {};
+module.exports.InstaKillBoostSkill = class extends BaseSkill {};
+module.exports.MasterSkill = class extends BaseSkill {};
+module.exports.MiscSkill = class extends BaseSkill {};
+module.exports.NaviSkill = class extends BaseSkill {};
+module.exports.PostBattleSkill = class extends BaseSkill {};
+module.exports.RecoverySkill = class extends BaseSkill {};
+module.exports.RegenSkill = class extends BaseSkill {};
+module.exports.SupportSkill = class extends BaseSkill {};
+module.exports.SusceptibilitySkill = class extends BaseSkill {};
+module.exports.WallSkill = class extends BaseSkill {};
 
 module.exports.TreasureDemon = class TreasureDemon {
 	/**
@@ -140,35 +141,35 @@ module.exports.TreasureDemon = class TreasureDemon {
  */
 module.exports.skillToClass = baseSkill => {
 	const skillClass = {
-		AILBOOST: AilBoostSkill,
-		AILDEFENSIVE: AilDefensiveSkill,
-		AILMENT: AilmentSkill,
-		ATTACK: AttackSkill,
-		AUTOBUFF: AutoBuffSkill,
-		BARRIER: BarrierSkill,
-		BARRIERBREAK: BarrierBreakSkill,
-		BOOST: BoostSkill,
-		BREAK: BreakSkill,
-		CHARGE: ChargeSkill,
-		COUNTER: CounterSkill,
-		CRIT: CritSkill,
-		CRITBOOST: CritBoostSkill,
-		DEFENSIVE: DefensiveSkill,
-		DRAIN: DrainSkill,
-		ENDURE: EndureSkill,
-		EVASION: EvasionSkill,
-		HALVE: HalveSkill,
-		INSTAKILL: InstaKillSkill,
-		INSTAKILLBOOST: InstaKillBoostSkill,
-		MASTER: MasterSkill,
-		MISC: MiscSkill,
-		NAVI: NaviSkill,
-		POSTBATTLE: PostBattleSkill,
-		RECOVERY: RecoverySkill,
-		REGEN: RegenSkill,
-		SUPPORT: SupportSkill,
-		SUSCEPTIBILITY: SusceptibilitySkill,
-		WALL: WallSkill,
+		AILBOOST: this.AilBoostSkill,
+		AILDEFENSIVE: this.AilDefensiveSkill,
+		AILMENT: this.AilmentSkill,
+		ATTACK: this.AttackSkill,
+		AUTOBUFF: this.AutoBuffSkill,
+		BARRIER: this.BarrierSkill,
+		BARRIERBREAK: this.BarrierBreakSkill,
+		BOOST: this.BoostSkill,
+		BREAK: this.BreakSkill,
+		CHARGE: this.ChargeSkill,
+		COUNTER: this.CounterSkill,
+		CRIT: this.CritSkill,
+		CRITBOOST: this.CritBoostSkill,
+		DEFENSIVE: this.DefensiveSkill,
+		DRAIN: this.DrainSkill,
+		ENDURE: this.EndureSkill,
+		EVASION: this.EvasionSkill,
+		HALVE: this.HalveSkill,
+		INSTAKILL: this.InstaKillSkill,
+		INSTAKILLBOOST: this.InstaKillBoostSkill,
+		MASTER: this.MasterSkill,
+		MISC: this.MiscSkill,
+		NAVI: this.NaviSkill,
+		POSTBATTLE: this.PostBattleSkill,
+		RECOVERY: this.RecoverySkill,
+		REGEN: this.RegenSkill,
+		SUPPORT: this.SupportSkill,
+		SUSCEPTIBILITY: this.SusceptibilitySkill,
+		WALL: this.WallSkill,
 	}[baseSkill.type];
 	return new skillClass(baseSkill);
 };
