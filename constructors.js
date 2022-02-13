@@ -10,7 +10,7 @@ module.exports.Demon = class Demon {
 		Object.assign(this, demon);
 	}
 	/**
-     * @type {?import('./index').Demon} The Persona's evolution, or null if none
+     * @type {import('./index').Demon | null} The Persona's evolution, or null if none
 	 * @this import('./index').Demon
      */
 	get evolution() {
