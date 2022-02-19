@@ -66,7 +66,7 @@ export class AttackSkill extends BaseSkill {
     range: Range;
     cost: number;
     power: number;
-    display: 'Miniscule' | 'Light' | 'Medium' | 'Heavy' | 'Severe' | 'Colossal';
+    display: 'Minuscule' | 'Light' | 'Medium' | 'Heavy' | 'Severe' | 'Colossal';
     min: number;
     max: number;
     ailment: Ailment[];
