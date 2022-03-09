@@ -3,7 +3,11 @@
   "version": "1.6.7",
   "description": "An unofficial collection of data from the Shin Megami Tensei and Persona games.",
   "main": "index.js",
-  "typings": "index.d.ts",
+  "types": "index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Squiddleton/Megaten"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -14,8 +18,8 @@
     "persona",
     "atlus"
   ],
+  "license": "MIT",
   "author": "squiddleton",
-  "license": "ISC",
   "devDependencies": {
     "eslint": "^8.5.0"
   }
