@@ -42,7 +42,7 @@ Demon {
   level: 75, // The base level
   st: 53, // Strength stat
   ma: 47, // Magic stat
-  vi: 46, // Endurance/Vitality stat
+  en: 46, // Endurance/Vitality stat
   ag: 47, // Agility stat
   lu: 39, // Luck stat
   learnset: [
@@ -148,7 +148,7 @@ TreasureDemon {
   sp: 93, // The max SP of the Treasure Demon
   st: 12,
   ma: 11,
-  vi: 10,
+  en: 10,
   ag: 10,
   lu: 10,
   skills: [ // Only strings because all Treasure Demon skills are innate

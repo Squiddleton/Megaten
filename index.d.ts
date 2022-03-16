@@ -14,7 +14,7 @@ export interface DemonData {
     level:    number;
     st:       number;
     ma:       number;
-    vi:       number;
+    en:       number;
     ag:       number;
     lu:       number;
     learnset: Learnset[];
@@ -42,7 +42,7 @@ export class Demon {
     level:    number;
     st:       number;
     ma:       number;
-    vi:       number;
+    en:       number;
     ag:       number;
     lu:       number;
     learnset: Learnset[];
@@ -581,7 +581,7 @@ export interface TreasureDemonData {
     sp:      number;
     st:      number;
     ma:      number;
-    vi:      number;
+    en:      number;
     ag:      number;
     lu:      number;
     skills:  string[];
@@ -604,7 +604,7 @@ export class TreasureDemon {
     sp:      number;
     st:      number;
     ma:      number;
-    vi:      number;
+    en:      number;
     ag:      number;
     lu:      number;
     skills:  string[];
