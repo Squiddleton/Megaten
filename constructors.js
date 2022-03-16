@@ -531,73 +531,40 @@ module.exports.TreasureDemon = class TreasureDemon {
 
 /**
  *
- * @param {import('./index').SkillData} skillData
+ * @param {import('./index').SkillData} data
  * @returns {import('./index').Skill}
  */
-module.exports.dataToClass = skillData => {
-	/*
-	const skillClass = {
-		AILBOOST: this.AilBoostSkill,
-		AILDEFENSIVE: this.AilDefensiveSkill,
-		AILMENT: this.AilmentSkill,
-		ATTACK: this.AttackSkill,
-		AUTOBUFF: this.AutoBuffSkill,
-		BARRIER: this.BarrierSkill,
-		BARRIERBREAK: this.BarrierBreakSkill,
-		BOOST: this.BoostSkill,
-		BREAK: this.BreakSkill,
-		CHARGE: this.ChargeSkill,
-		COUNTER: this.CounterSkill,
-		CRIT: this.CritSkill,
-		CRITBOOST: this.CritBoostSkill,
-		DEFENSIVE: this.DefensiveSkill,
-		DRAIN: this.DrainSkill,
-		ENDURE: this.EndureSkill,
-		EVASION: this.EvasionSkill,
-		HALVE: this.HalveSkill,
-		INSTAKILL: this.InstaKillSkill,
-		INSTAKILLBOOST: this.InstaKillBoostSkill,
-		MASTER: this.MasterSkill,
-		MISC: this.MiscSkill,
-		NAVI: this.NaviSkill,
-		POSTBATTLE: this.PostBattleSkill,
-		RECOVERY: this.RecoverySkill,
-		REGEN: this.RegenSkill,
-		SUPPORT: this.SupportSkill,
-		SUSCEPTIBILITY: this.SusceptibilitySkill,
-		WALL: this.WallSkill,
-	}[skillData.type];
-	*/
-	switch (skillData.type) {
-	case 'AILBOOST': return new this.AilBoostSkill(skillData);
-	case 'AILDEFENSIVE': return new this.AilDefensiveSkill(skillData);
-	case 'AILMENT': return new this.AilmentSkill(skillData);
-	case 'ATTACK': return new this.AttackSkill(skillData);
-	case 'AUTOBUFF': return new this.AutoBuffSkill(skillData);
-	case 'BARRIER': return new this.BarrierSkill(skillData);
-	case 'BARRIERBREAK': return new this.BarrierBreakSkill(skillData);
-	case 'BOOST': return new this.BoostSkill(skillData);
-	case 'BREAK': return new this.BreakSkill(skillData);
-	case 'CHARGE': return new this.ChargeSkill(skillData);
-	case 'COUNTER': return new this.CounterSkill(skillData);
-	case 'CRIT': return new this.CritSkill(skillData);
-	case 'CRITBOOST': return new this.CritBoostSkill(skillData);
-	case 'DEFENSIVE': return new this.DefensiveSkill(skillData);
-	case 'DRAIN': return new this.DrainSkill(skillData);
-	case 'ENDURE': return new this.EndureSkill(skillData);
-	case 'EVASION': return new this.EvasionSkill(skillData);
-	case 'HALVE': return new this.HalveSkill(skillData);
-	case 'INSTAKILL': return new this.InstaKillSkill(skillData);
-	case 'INSTAKILLBOOST': return new this.InstaKillBoostSkill(skillData);
-	case 'MASTER': return new this.MasterSkill(skillData);
-	case 'MISC': return new this.MiscSkill(skillData);
-	case 'NAVI': return new this.NaviSkill(skillData);
-	case 'POSTBATTLE': return new this.PostBattleSkill(skillData);
-	case 'RECOVERY': return new this.RecoverySkill(skillData);
-	case 'REGEN': return new this.RegenSkill(skillData);
-	case 'SUPPORT': return new this.SupportSkill(skillData);
-	case 'SUSCEPTIBILITY': return new this.SusceptibilitySkill(skillData);
-	case 'WALL': return new this.WallSkill(skillData);
-	default: throw new TypeError(`Expected SkillData, received ${skillData}`);
+module.exports.dataToClass = data => {
+	switch (data.type) {
+	case 'AILBOOST': return new this.AilBoostSkill(data);
+	case 'AILDEFENSIVE': return new this.AilDefensiveSkill(data);
+	case 'AILMENT': return new this.AilmentSkill(data);
+	case 'ATTACK': return new this.AttackSkill(data);
+	case 'AUTOBUFF': return new this.AutoBuffSkill(data);
+	case 'BARRIER': return new this.BarrierSkill(data);
+	case 'BARRIERBREAK': return new this.BarrierBreakSkill(data);
+	case 'BOOST': return new this.BoostSkill(data);
+	case 'BREAK': return new this.BreakSkill(data);
+	case 'CHARGE': return new this.ChargeSkill(data);
+	case 'COUNTER': return new this.CounterSkill(data);
+	case 'CRIT': return new this.CritSkill(data);
+	case 'CRITBOOST': return new this.CritBoostSkill(data);
+	case 'DEFENSIVE': return new this.DefensiveSkill(data);
+	case 'DRAIN': return new this.DrainSkill(data);
+	case 'ENDURE': return new this.EndureSkill(data);
+	case 'EVASION': return new this.EvasionSkill(data);
+	case 'HALVE': return new this.HalveSkill(data);
+	case 'INSTAKILL': return new this.InstaKillSkill(data);
+	case 'INSTAKILLBOOST': return new this.InstaKillBoostSkill(data);
+	case 'MASTER': return new this.MasterSkill(data);
+	case 'MISC': return new this.MiscSkill(data);
+	case 'NAVI': return new this.NaviSkill(data);
+	case 'POSTBATTLE': return new this.PostBattleSkill(data);
+	case 'RECOVERY': return new this.RecoverySkill(data);
+	case 'REGEN': return new this.RegenSkill(data);
+	case 'SUPPORT': return new this.SupportSkill(data);
+	case 'SUSCEPTIBILITY': return new this.SusceptibilitySkill(data);
+	case 'WALL': return new this.WallSkill(data);
+	default: throw new TypeError(`Expected SkillData, received ${typeof data}`);
 	}
 };
