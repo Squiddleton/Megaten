@@ -565,6 +565,5 @@ module.exports.dataToClass = data => {
 	case 'SUPPORT': return new this.SupportSkill(data);
 	case 'SUSCEPTIBILITY': return new this.SusceptibilitySkill(data);
 	case 'WALL': return new this.WallSkill(data);
-	default: throw new TypeError(`Expected SkillData, received ${typeof data}`);
 	}
 };
