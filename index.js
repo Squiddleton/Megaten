@@ -1,6 +1,14 @@
-const { Demon, BaseSkill, AilBoostSkill, AilDefensiveSkill, AilmentSkill, AttackSkill, AutoBuffSkill, BarrierSkill, BarrierBreakSkill, BoostSkill, BreakSkill, ChargeSkill, CounterSkill, CritSkill, CritBoostSkill, DefensiveSkill, DrainSkill, EndureSkill, EvasionSkill, HalveSkill, InstaKillSkill, InstaKillBoostSkill, MasterSkill, MiscSkill, NaviSkill, PostBattleSkill, RecoverySkill, RegenSkill, SupportSkill, SusceptibilitySkill, WallSkill, skillToClass, TreasureDemon } = require('./constructors');
-const { demons, skills, treasureDemons } = require('./lists.json');
+const { Demon, BaseSkill, AilBoostSkill, AilDefensiveSkill, AilmentSkill, AttackSkill, AutoBuffSkill, BarrierSkill, BarrierBreakSkill, BoostSkill, BreakSkill, ChargeSkill, CounterSkill, CritSkill, CritBoostSkill, DefensiveSkill, DrainSkill, EndureSkill, EvasionSkill, HalveSkill, InstaKillSkill, InstaKillBoostSkill, MasterSkill, MiscSkill, NaviSkill, PostBattleSkill, RecoverySkill, RegenSkill, SupportSkill, SusceptibilitySkill, WallSkill, dataToClass, TreasureDemon } = require('./constructors');
 
+/** @type {import('.').Lists} */
+// @ts-ignore
+const lists = require('./lists.json');
+
+/**
+ *
+ * @param {string} str
+ * @returns {string}
+ */
 const noPunc = str => {
 	return str
 		?.toLowerCase()
@@ -46,15 +54,27 @@ module.exports.WallSkill = WallSkill;
 
 module.exports.TreasureDemon = TreasureDemon;
 
-module.exports.demons = demons.map(demon => new Demon(demon));
-module.exports.skills = skills.map(skill => skillToClass(skill));
-module.exports.treasureDemons = treasureDemons.map(treasureDemon => new TreasureDemon(treasureDemon));
+module.exports.demons = lists.demons.map(demon => new Demon(demon));
+module.exports.skills = lists.skills.map(skill => dataToClass(skill));
+module.exports.treasureDemons = lists.treasureDemons.map(treasureDemon => new TreasureDemon(treasureDemon));
 
+/**
+ *
+ * @param {string} input
+ */
 module.exports.getDemon = input => {
 	input = noPunc(input);
-	return this.demons.find(demon => demon.devName === input || demon.aliases.includes(input)) ?? null;
+	return this.demons.find(demon => demon.devName === input) ?? this.demons.find(demon => demon.aliases.includes(input)) ?? null;
 };
+/**
+ *
+ * @param {string} input
+ */
 module.exports.getSkill = input => this.skills.find(skill => skill.devName === noPunc(input)) ?? null;
+/**
+ *
+ * @param {string} input
+ */
 module.exports.getTreasureDemon = input => this.treasureDemons.find(treasureDemon => treasureDemon.devName === noPunc(input)) ?? null;
 
 module.exports.version = require('./package.json').version;
