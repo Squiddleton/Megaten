@@ -7,7 +7,7 @@ These lists contain all the demons/Personas and skills from the following games,
 * Persona 5
 * **(Incomplete)** Persona 4 Golden
 
-NOTE: This is **not** a 1:1 database of all past data.  Skill damage and demon information is updated to the latest mainstream release, and damage values are manually adjusted relative to similar skills in said release.
+NOTE: This is **not** a 1:1 database of all past data.  Skill and demon information is updated to the latest mainstream release, and damage values are manually adjusted relative to similar skills in said release.
 
 # Usage
 First, install the package by running the following command in your terminal:
