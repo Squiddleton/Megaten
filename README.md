@@ -1,5 +1,5 @@
 # About
-A fan-made, unofficial collection of resources from the Megaten series, primarily consisting of the Shin Megami Tensei and Persona franchises.
+A fan-made, unofficial collection of demons and skills from the Megaten series, primarily consisting of the Shin Megami Tensei and Persona franchises.
 
 These lists contain all the demons/Personas and skills from the following games, with more being added over time:
 * Persona 5 Strikers
@@ -7,10 +7,12 @@ These lists contain all the demons/Personas and skills from the following games,
 * Persona 5
 * **(Incomplete)** Persona 4 Golden
 
+NOTE: This is **not** a 1:1 database of all past data.  Skill damage and demon information is updated to the latest mainstream release, and damage values are manually adjusted relative to similar skills in said release.
+
 # Usage
 First, install the package by running the following command in your terminal:
 ```
-npm install megaten@latest
+npm install megaten
 ```
 
 After the package is installed, you may use it through methods such as the following:
@@ -31,10 +33,10 @@ All Personas/demons follow an identical template.
 #### Example:
 ```javascript
 Demon {
-  name: 'Loki -P5-', // The name of the Persona/demon, with some being named after unique variants in specific games
+  name: 'Loki -P5-', // The name of the demon/Persona, with some being named after unique variants in specific games
   devName: 'lokip5', // The name without capitalization, spaces, punctuation, accents, etc.
   aliases: [
-    'loki' // Possible devNames that the Persona/demon is commonly referred to
+    'loki' // Possible devNames that the demon/Persona is commonly referred to
   ],
   inherit: 'Curse', // The affinity which determines inheritable skills
   arcana: 'Justice', // The means by which all is revealed
@@ -80,22 +82,22 @@ Demon {
     }
   ],
   evoMove: null, // The name of a skill the Persona will learn upon evolving, or null if none
-  weak: [ // Affinities the Persona/demon is weak to
+  weak: [ // Affinities the demon/Persona is weak to
     'Bless'
   ],
-  resist: [], // Affinities the Persona/demon resists
-  null: [ // Affinities the Persona/demon nullifies
+  resist: [], // Affinities the demon/Persona resists
+  null: [ // Affinities the demon/Persona nullifies
     'Curse'
   ],
-  drain: [], // Affinities the Persona/demon drains
-  repel: [], // Affinities the Persona/demon repels
+  drain: [], // Affinities the demon/Persona drains
+  repel: [], // Affinities the demon/Persona repels
   party: 'Redacted for spoiler reasons here, but not in the package', // The name of the party member who the Persona belongs to, or null if non-party
   evo: 2, // The point of evolution for a party member's persona, with 1 being base, 2 being second awakening, and 3 being third awakening, or null if non-party
   ultimate: false, // Whether the Persona is the Ultimate Persona of its arcana in the game this data is based on
   special: false, // Whether the Persona is a result of special fusions (incomplete)
   game: 'p5', // The game that this data originates from
   evolution: Demon {...}, // The Persona that this evolves into, or null if none (getter)
-  image: Buffer {...} // A buffer of an image of the Persona/demon (getter)
+  image: Buffer {...} // A buffer of an image of the demon/Persona (getter)
 }
 ```
 
