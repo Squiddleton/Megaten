@@ -1,13 +1,12 @@
 const { Demon, BaseSkill, AilBoostSkill, AilDefensiveSkill, AilmentSkill, AttackSkill, AutoBuffSkill, BarrierSkill, BarrierBreakSkill, BoostSkill, BreakSkill, ChargeSkill, CounterSkill, CritSkill, CritBoostSkill, DefensiveSkill, DrainSkill, EndureSkill, EvasionSkill, HalveSkill, InstaKillSkill, InstaKillBoostSkill, MasterSkill, MiscSkill, NaviSkill, PostBattleSkill, RecoverySkill, RegenSkill, SupportSkill, SusceptibilitySkill, WallSkill, dataToClass, TreasureDemon } = require('./constructors');
-
 /** @type {import('.').Lists} */
 // @ts-ignore
 const lists = require('./lists.json');
+const { Collection } = require('@discordjs/collection');
 
 /**
  *
  * @param {string} str
- * @returns {string}
  */
 const noPunc = str => {
 	return str
@@ -58,23 +57,27 @@ module.exports.demons = lists.demons.map(demon => new Demon(demon));
 module.exports.skills = lists.skills.map(skill => dataToClass(skill));
 module.exports.treasureDemons = lists.treasureDemons.map(treasureDemon => new TreasureDemon(treasureDemon));
 
+const demons = new Collection(this.demons.map(demon => [demon.devName, demon]));
+const skills = new Collection(this.skills.map(skill => [skill.devName, skill]));
+const treasureDemons = new Collection(this.treasureDemons.map(treasureDemon => [treasureDemon.devName, treasureDemon]));
+
 /**
  *
  * @param {string} input
  */
 module.exports.getDemon = input => {
 	input = noPunc(input);
-	return this.demons.find(demon => demon.devName === input) ?? this.demons.find(demon => demon.aliases.includes(input)) ?? null;
+	return demons.get(input) ?? demons.find(demon => demon.aliases.includes(input)) ?? null;
 };
 /**
  *
  * @param {string} input
  */
-module.exports.getSkill = input => this.skills.find(skill => skill.devName === noPunc(input)) ?? null;
+module.exports.getSkill = input => skills.get(noPunc(input)) ?? null;
 /**
  *
  * @param {string} input
  */
-module.exports.getTreasureDemon = input => this.treasureDemons.find(treasureDemon => treasureDemon.devName === noPunc(input)) ?? null;
+module.exports.getTreasureDemon = input => treasureDemons.get(noPunc(input)) ?? null;
 
 module.exports.version = require('./package.json').version;

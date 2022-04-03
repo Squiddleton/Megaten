@@ -23,5 +23,8 @@
   "devDependencies": {
     "@types/node": "^17.0.23",
     "eslint": "^8.5.0"
+  },
+  "dependencies": {
+    "@discordjs/collection": "^0.5.0"
   }
 }
