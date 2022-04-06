@@ -4,13 +4,8 @@
   "description": "An unofficial collection of data from the Shin Megami Tensei and Persona games.",
   "main": "index.js",
   "types": "index.d.ts",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Squiddleton/Megaten"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "author": "Squiddleton",
+  "license": "MIT",
   "keywords": [
     "megaten",
     "shin megami tensei",
@@ -18,8 +13,12 @@
     "persona",
     "atlus"
   ],
-  "license": "MIT",
-  "author": "Squiddleton",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Squiddleton/Megaten"
+  },
+  "homepage": "https://github.com/Squiddleton/Megaten#readme",
+  "bugs": "https://github.com/Squiddleton/Megaten/issues",
   "devDependencies": {
     "@types/node": "^17.0.23",
     "eslint": "^8.5.0"
