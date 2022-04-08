@@ -137,7 +137,7 @@ export class AttackSkill extends BaseSkill {
     range: Range;
     cost: number;
     power: number;
-    display: 'Minuscule' | 'Light' | 'Medium' | 'Heavy' | 'Severe' | 'Colossal';
+    display: AttackDisplay;
     min: number;
     max: number;
     ailment: Ailment[];
@@ -155,7 +155,7 @@ export interface AttackSkillData extends BaseSkillData {
     range: Range;
     cost: number;
     power: number;
-    display: 'Minuscule' | 'Light' | 'Medium' | 'Heavy' | 'Severe' | 'Colossal';
+    display: AttackDisplay;
     min: number;
     max: number;
     ailment: Ailment[];
@@ -388,7 +388,7 @@ export class InstaKillSkill extends BaseSkill {
     range: Range;
     cost: number;
     amount: number;
-    display: Display;
+    display: ChanceDisplay;
 }
 
 export interface InstaKillSkillData extends BaseSkillData {
@@ -397,7 +397,7 @@ export interface InstaKillSkillData extends BaseSkillData {
     range: Range;
     cost: number;
     amount: number;
-    display: Display;
+    display: ChanceDisplay;
 }
 
 export class InstaKillBoostSkill extends BaseSkill {
@@ -634,11 +634,13 @@ export type Arcana = 'Fool' | 'Magician' | 'Priestess' | 'Empress' | 'Emperor' |
     | 'Justice' | 'Hermit'| 'Fortune' | 'Strength' | 'Hanged' | 'Death' | 'Temperance' | 'Devil' | 'Tower'
     | 'Star' | 'Moon' | 'Sun' | 'Judgement' | 'Faith' | 'Councillor' | 'World' | 'Apostle' | 'Hope';
 
+export type AttackDisplay = 'Minuscule' | 'Light' | 'Medium' | 'Heavy' | 'Severe' | 'Colossal';
+
 export type BlessCurse = 'Bless' | 'Curse';
 
 export type Buff = 'Attack' | 'Defense' | 'Agility';
 
-export type Display = 'Low' | 'Medium' | 'High';
+export type ChanceDisplay = 'Low' | 'Medium' | 'High';
 
 export type Game = 'p3' | 'p4' | 'p5';
 
@@ -660,7 +662,7 @@ export type SkillType = 'AILBOOST' | 'AILDEFENSIVE' | 'AILMENT' | 'ATTACK' | 'AU
     
 export interface Ailment {
     ailment: string;
-    chance:  Display;
+    chance:  ChanceDisplay;
 }
 
 export interface Learnset {
