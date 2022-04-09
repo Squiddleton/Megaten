@@ -61,22 +61,22 @@ const treasureDemons = new Collection(this.treasureDemons.map(treasureDemon => [
 
 /**
  *
- * @param {string} input
+ * @param {string} name
  */
-module.exports.getDemon = input => {
-	input = noPunc(input);
-	return demons.get(input) ?? demons.find(demon => demon.aliases.includes(input)) ?? null;
+module.exports.getDemon = name => {
+	name = noPunc(name);
+	return demons.get(name) ?? demons.find(demon => demon.aliases.includes(name)) ?? null;
 };
 /**
  *
- * @param {string} input
+ * @param {string} name
  */
-module.exports.getSkill = input => skills.get(noPunc(input)) ?? null;
+module.exports.getSkill = name => skills.get(noPunc(name)) ?? null;
 /**
  *
- * @param {string} input
+ * @param {string} name
  */
-module.exports.getTreasureDemon = input => treasureDemons.get(noPunc(input)) ?? null;
+module.exports.getTreasureDemon = name => treasureDemons.get(noPunc(name)) ?? null;
 
 module.exports.version = require('./package.json').version;
 

@@ -95,14 +95,14 @@ export class AilDefensiveSkill extends BaseSkill {
     affinity: 'Passive';
     type: 'AILDEFENSIVE';
     ailment: string;
-    resistance: 'Resist' | 'Null';
+    resistance: AilResistance;
 }
 
 export interface AilDefensiveSkillData extends BaseSkillData {
     affinity: 'Passive';
     type: 'AILDEFENSIVE';
     ailment: string;
-    resistance: 'Resist' | 'Null';
+    resistance: AilResistance;
 }
 
 export class AilmentSkill extends BaseSkill {
@@ -307,14 +307,14 @@ export class DefensiveSkill extends BaseSkill {
     affinity: 'Passive';
     type: 'DEFENSIVE';
     element: Element;
-    newAffinity: 'Resist' | 'Null' | 'Drain' | 'Repel';
+    newAffinity: Resistance;
 }
 
 export interface DefensiveSkillData extends BaseSkillData {
     affinity: 'Passive';
     type: 'DEFENSIVE';
     element: Element;
-    newAffinity: 'Resist' | 'Null' | 'Drain' | 'Repel';
+    newAffinity: Resistance;
 }
 
 export class DrainSkill extends BaseSkill {
@@ -498,7 +498,7 @@ export class RegenSkill extends BaseSkill {
     constructor(data: RegenSkillData)
     affinity: 'Passive';
     type: 'REGEN';
-    hpspail: HPSP | 'HPSP' | 'AIL';
+    hpspail: HPSPAIL;
     amount: number;
     percent: boolean;
     ambush: boolean;
@@ -508,7 +508,7 @@ export class RegenSkill extends BaseSkill {
 export interface RegenSkillData extends BaseSkillData {
     affinity: 'Passive';
     type: 'REGEN';
-    hpspail: HPSP | 'HPSP' | 'AIL';
+    hpspail: HPSPAIL;
     amount: number;
     percent: boolean;
     ambush: boolean;
@@ -616,14 +616,21 @@ export class TreasureDemon {
     image: Buffer;
 }
 
+/** An array of all Demon instances  */
 export declare const demons: Demon[];
+/** An array of all Skill instances  */
 export declare const skills: Skill[];
+/** An array of all TreasureDemon instances  */
 export declare const treasureDemons: TreasureDemon[];
 
-export function getDemon(input: string): Demon | null;
-export function getSkill(input: string): Skill | null;
-export function getTreasureDemon(input: string): TreasureDemon | null;
+/** Gets a Demon by its name, removing punctuation and accents */
+export function getDemon(name: string): Demon | null;
+/** Gets a Skill by its name, removing punctuation and accents */
+export function getSkill(name: string): Skill | null;
+/** Gets a TreasureDemon by its name, removing punctuation and accents */
+export function getTreasureDemon(name: string): TreasureDemon | null;
 
+/** The current version of the megaten package being ran */
 export declare const version: string;
 
 export type Element = 'Phys' | 'Gun' | 'Fire' | 'Ice' | 'Elec' | 'Wind' | 'Nuke' | 'Psy' | 'Bless' | 'Curse' | 'Almighty';
@@ -645,8 +652,12 @@ export type ChanceDisplay = 'Low' | 'Medium' | 'High';
 export type Game = 'p3' | 'p4' | 'p5';
 
 export type HPSP = 'HP' | 'SP';
+export type HPSPAIL = HPSP | 'HPSP' | 'AIL'
 
 export type Range = 0 | 1;
+
+export type AilResistance = 'Resist' | 'Null'
+export type Resistance = AilResistance | 'Drain' | 'Repel';
 
 export type Skill = AilBoostSkill | AilDefensiveSkill | AilmentSkill | AttackSkill | AutoBuffSkill | BarrierSkill | BarrierBreakSkill | BoostSkill | BreakSkill
     | ChargeSkill | CounterSkill | CritSkill | CritBoostSkill | DefensiveSkill | DrainSkill | EndureSkill | EvasionSkill | HalveSkill | InstaKillSkill
