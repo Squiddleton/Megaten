@@ -68,10 +68,11 @@ class BaseSkill {
 	get description() {
 		switch (this.type) {
 		case 'AILMENT': {
-			return `${this.chance} chance to inflict ${this.ailment} on ${this.range ? 'one foe' : 'all foes'}.`;
+			return `${this.chance.display} chance to inflict ${this.ailment} on ${this.range ? 'one foe' : 'all foes'}.`;
 		}
 		case 'ATTACK': {
-			return `${this.display} ${this.affinity} damage to ${this.range ? 'one foe' : 'all foes'}${(this.max > 1) ? (this.max !== this.min ? ` ${this.min} to ${this.max}x` : ` ${this.max}x`) : ''}${this.ailment.length ? ` with ${this.ailment[0].chance.toLowerCase()} chance of ${this.ailment.map(a => a.ailment).join(' and ')}` : ''}.${this.crit ? `  ${this.crit} critical rate.` : ''}${this.downBoost ? '  Damage increases if foe is downed.' : ''}${this.baton ? '  Stronger under Baton Pass.' : ''}${this.accurate ? '  High accuracy.' : ''}${this.surround ? '  More powerful when being ambushed.' : ''}${this.weather ? '  Increased Critical rate in rainy or snowy weather.' : ''}`;
+			const { ailments } = this;
+			return `${this.power.display} ${this.affinity} damage to ${this.range ? 'one foe' : 'all foes'}${(this.max > 1) ? (this.max !== this.min ? ` ${this.min} to ${this.max}x` : ` ${this.max}x`) : ''}${ailments.length ? ` with ${ailments[0].chance.toLowerCase()} chance of ${ailments.map(a => a.ailment).join(' and ')}` : ''}.${this.flags.includes('Crit Boost') ? '  High critical rate.' : ''}${this.flags.includes('Down Boost') ? '  Damage increases if foe is downed.' : ''}${this.flags.includes('Baton Boost') ? '  Stronger under Baton Pass.' : ''}${this.flags.includes('Accuracy Boost') ? '  High accuracy.' : ''}${this.flags.includes('Surround Boost') ? '  More powerful when being ambushed.' : ''}${this.flags.includes('Weather Boost') ? '  Increased Critical rate in rainy or snowy weather.' : ''}`;
 		}
 		case 'AILBOOST': {
 			return `Increases chance of inflicting ${this.ailment === 'ALL' ? 'all ailments' : this.ailment}.`;
@@ -167,16 +168,10 @@ module.exports.AttackSkill = class extends BaseSkill {
 		this.range = data.range;
 		this.cost = data.cost;
 		this.power = data.power;
-		this.display = data.display;
 		this.min = data.min;
 		this.max = data.max;
-		this.ailment = data.ailment;
-		this.crit = data.crit;
-		this.downBoost = data.downBoost;
-		this.baton = data.baton;
-		this.accurate = data.accurate;
-		this.surround = data.surround;
-		this.weather = data.weather;
+		this.flags = data.flags;
+		this.ailments = data.ailments;
 	}
 };
 module.exports.AutoBuffSkill = class extends BaseSkill {

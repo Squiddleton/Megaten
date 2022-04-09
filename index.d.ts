@@ -118,7 +118,10 @@ export class AilmentSkill extends BaseSkill {
     range: Range;
     cost: number;
     ailment: string;
-    chance: 'Medium' | 'High';
+    chance: {
+        amount: number;
+        display: Exclude<ChanceDisplay, 'Low'>
+    };
 }
 
 export interface AilmentSkillData extends BaseSkillData {
@@ -127,7 +130,10 @@ export interface AilmentSkillData extends BaseSkillData {
     range: Range;
     cost: number;
     ailment: string;
-    chance: 'Medium' | 'High';
+    chance: {
+        amount: number;
+        display: Exclude<ChanceDisplay, 'Low'>
+    };
 }
 
 export class AttackSkill extends BaseSkill {
@@ -135,36 +141,36 @@ export class AttackSkill extends BaseSkill {
     affinity: Element;
     type: 'ATTACK';
     range: Range;
-    cost: number;
-    power: number;
-    display: AttackDisplay;
+    cost: {
+        type: HPSP;
+        amount: number;
+    };
+    power: {
+        amount: number;
+        display: AttackDisplay;
+    };
     min: number;
     max: number;
-    ailment: Ailment[];
-    crit: 'High' | null;
-    downBoost: boolean;
-    baton: boolean;
-    accurate: boolean;
-    surround: boolean;
-    weather: boolean;
+    flags: string[];
+    ailments: Ailment[];
 }
 
 export interface AttackSkillData extends BaseSkillData {
     affinity: Element;
     type: 'ATTACK';
     range: Range;
-    cost: number;
-    power: number;
-    display: AttackDisplay;
+    cost: {
+        type: HPSP;
+        amount: number;
+    };
+    power: {
+        amount: number;
+        display: AttackDisplay;
+    };
     min: number;
     max: number;
-    ailment: Ailment[];
-    crit: 'High' | null;
-    downBoost: boolean;
-    baton: boolean;
-    accurate: boolean;
-    surround: boolean;
-    weather: boolean;
+    flags: string[];
+    ailments: Ailment[];
 }
 
 export class AutoBuffSkill extends BaseSkill {

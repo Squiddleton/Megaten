@@ -11,9 +11,9 @@ const { Collection } = require('@discordjs/collection');
 const noPunc = str => {
 	return str
 		?.toLowerCase()
-		.replace(/&/g, 'and')
-		.replace(/è/g, 'e')
-		.replace(/é/g, 'e')
+		.normalize('NFD')
+		.replace(/\p{Diacritic}/gu, '')
+		.replaceAll('&', 'and')
 		.replace(/[^0-9a-z]/gi, '');
 };
 
