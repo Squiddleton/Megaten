@@ -8,14 +8,12 @@ const { Collection } = require('@discordjs/collection');
  *
  * @param {string} str
  */
-const noPunc = str => {
-	return str
-		?.toLowerCase()
-		.normalize('NFD')
-		.replace(/\p{Diacritic}/gu, '')
-		.replaceAll('&', 'and')
-		.replace(/[^0-9a-z]/gi, '');
-};
+const noPunc = str => str
+	?.toLowerCase()
+	.normalize('NFD')
+	.replace(/\p{Diacritic}/gu, '')
+	.replaceAll('&', 'and')
+	.replace(/[^0-9a-z]/gi, '');
 
 module.exports.Demon = Demon;
 
