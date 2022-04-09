@@ -1,64 +1,58 @@
-export interface Lists {
-    demons: DemonData[];
-    skills: SkillData[];
-    treasureDemons: TreasureDemonData[];
-}
-
 export interface DemonData {
-    name:     string;
-    devName:  string;
-    aliases:  string[];
-    inherit:  Inherit;
-    arcana:   Arcana;
-    race:     string;
-    level:    number;
-    st:       number;
-    ma:       number;
-    en:       number;
-    ag:       number;
-    lu:       number;
+    name: string;
+    devName: string;
+    aliases: string[];
+    inherit: Inherit;
+    arcana: Arcana;
+    race: string;
+    level: number;
+    st: number;
+    ma: number;
+    en: number;
+    ag: number;
+    lu: number;
     learnset: Learnset[];
-    evoMove:  string | null;
-    weak:     Element[];
-    resist:   Element[];
-    null:     Element[];
-    drain:    Element[];
-    repel:    Element[];
-    party:    string | null;
-    evo:      number | null;
+    evoMove: string | null;
+    weak: Element[];
+    resist: Element[];
+    null: Element[];
+    drain: Element[];
+    repel: Element[];
+    party: string | null;
+    evo: number | null;
     ultimate: boolean;
-    special:  boolean;
-    game:     Game;
+    special: boolean;
+    game: Game;
 }
 
 export class Demon {
     constructor(data: DemonData);
-    name:     string;
-    devName:  string;
-    aliases:  string[];
-    inherit:  Inherit;
-    arcana:   Arcana;
-    race:     string;
-    level:    number;
-    st:       number;
-    ma:       number;
-    en:       number;
-    ag:       number;
-    lu:       number;
+    name: string;
+    devName: string;
+    aliases: string[];
+    inherit: Inherit;
+    arcana: Arcana;
+    race: string;
+    level: number;
+    st: number;
+    ma: number;
+    en: number;
+    ag: number;
+    lu: number;
     learnset: Learnset[];
-    evoMove:  string | null;
-    weak:     Element[];
-    resist:   Element[];
-    null:     Element[];
-    drain:    Element[];
-    repel:    Element[];
-    party:    string | null;
-    evo:      number | null;
+    evoMove: string | null;
+    weak: Element[];
+    resist: Element[];
+    null: Element[];
+    drain: Element[];
+    repel: Element[];
+    party: string | null;
+    evo: number | null;
     ultimate: boolean;
-    special:  boolean;
-    game:     Game;
+    special: boolean;
+    game: Game;
     evolution:Demon | null;
-    image:    Buffer;
+    image: Buffer;
 }
 
 export class BaseSkill {
@@ -577,49 +571,49 @@ export interface WallSkillData extends BaseSkillData {
 }
 
 export interface TreasureDemonData {
-    name:    string;
+    name: string;
     devName: string;
     inherit: Inherit;
-    arcana:  Arcana;
-    race:    'Treasure';
-    level:   number;
-    hp:      number;
-    sp:      number;
-    st:      number;
-    ma:      number;
-    en:      number;
-    ag:      number;
-    lu:      number;
-    skills:  string[];
-    weak:    Element[];
-    resist:  Element[];
-    null:    Element[];
-    drain:   Element[];
-    repel:   Element[];
+    arcana: Arcana;
+    race: 'Treasure';
+    level: number;
+    hp: number;
+    sp: number;
+    st: number;
+    ma: number;
+    en: number;
+    ag: number;
+    lu: number;
+    skills: string[];
+    weak: Element[];
+    resist: Element[];
+    null: Element[];
+    drain: Element[];
+    repel: Element[];
 }
 
 export class TreasureDemon {
     constructor(data: TreasureDemonData)
-    name:    string;
+    name: string;
     devName: string;
     inherit: Inherit;
-    arcana:  Arcana;
-    race:    'Treasure';
-    level:   number;
-    hp:      number;
-    sp:      number;
-    st:      number;
-    ma:      number;
-    en:      number;
-    ag:      number;
-    lu:      number;
-    skills:  string[];
-    weak:    Element[];
-    resist:  Element[];
-    null:    Element[];
-    drain:   Element[];
-    repel:   Element[];
-    image:   Buffer;
+    arcana: Arcana;
+    race: 'Treasure';
+    level: number;
+    hp: number;
+    sp: number;
+    st: number;
+    ma: number;
+    en: number;
+    ag: number;
+    lu: number;
+    skills: string[];
+    weak: Element[];
+    resist: Element[];
+    null: Element[];
+    drain: Element[];
+    repel: Element[];
+    image: Buffer;
 }
 
 export declare const demons: Demon[];
@@ -668,10 +662,10 @@ export type SkillType = 'AILBOOST' | 'AILDEFENSIVE' | 'AILMENT' | 'ATTACK' | 'AU
     
 export interface Ailment {
     ailment: string;
-    chance:  ChanceDisplay;
+    chance: ChanceDisplay;
 }
 
 export interface Learnset {
-    name:  string;
+    name: string;
     level: number;
 }

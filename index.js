@@ -1,5 +1,5 @@
 const { Demon, BaseSkill, AilBoostSkill, AilDefensiveSkill, AilmentSkill, AttackSkill, AutoBuffSkill, BarrierSkill, BarrierBreakSkill, BoostSkill, BreakSkill, ChargeSkill, CounterSkill, CritSkill, CritBoostSkill, DefensiveSkill, DrainSkill, EndureSkill, EvasionSkill, HalveSkill, InstaKillSkill, InstaKillBoostSkill, MasterSkill, MiscSkill, NaviSkill, PostBattleSkill, RecoverySkill, RegenSkill, SupportSkill, SusceptibilitySkill, WallSkill, dataToClass, TreasureDemon } = require('./constructors');
-/** @type {import('.').Lists} */
+/** @type {Lists} */
 // @ts-ignore
 const lists = require('./lists.json');
 const { Collection } = require('@discordjs/collection');
@@ -79,3 +79,10 @@ module.exports.getSkill = input => skills.get(noPunc(input)) ?? null;
 module.exports.getTreasureDemon = input => treasureDemons.get(noPunc(input)) ?? null;
 
 module.exports.version = require('./package.json').version;
+
+/**
+ * @typedef Lists
+ * @property {import('.').DemonData[]} demons
+ * @property {import('.').SkillData[]} skills
+ * @property {import('.').TreasureDemonData[]} treasureDemons
+ */
