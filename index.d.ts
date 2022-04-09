@@ -633,9 +633,8 @@ export function getTreasureDemon(name: string): TreasureDemon | null;
 /** The current version of the megaten package being ran */
 export declare const version: string;
 
-export type Element = 'Phys' | 'Gun' | 'Fire' | 'Ice' | 'Elec' | 'Wind' | 'Nuke' | 'Psy' | 'Bless' | 'Curse' | 'Almighty';
-export type Inherit = Exclude<Element, 'Gun'> | 'Ailment' | 'Recovery' | 'Support';
-export type Affinity = Inherit | 'Gun' | 'Passive';
+export type AilResistance = 'Resist' | 'Null'
+export type Resistance = AilResistance | 'Drain' | 'Repel';
 
 export type Arcana = 'Fool' | 'Magician' | 'Priestess' | 'Empress' | 'Emperor' | 'Hierophant' | 'Lovers' | 'Chariot'
     | 'Justice' | 'Hermit'| 'Fortune' | 'Strength' | 'Hanged' | 'Death' | 'Temperance' | 'Devil' | 'Tower'
@@ -649,6 +648,10 @@ export type Buff = 'Attack' | 'Defense' | 'Agility';
 
 export type ChanceDisplay = 'Low' | 'Medium' | 'High';
 
+export type Element = 'Phys' | 'Gun' | 'Fire' | 'Ice' | 'Elec' | 'Wind' | 'Nuke' | 'Psy' | 'Bless' | 'Curse' | 'Almighty';
+export type Inherit = Exclude<Element, 'Gun'> | 'Ailment' | 'Recovery' | 'Support';
+export type Affinity = Inherit | 'Gun' | 'Passive';
+
 export type Game = 'p3' | 'p4' | 'p5';
 
 export type HPSP = 'HP' | 'SP';
@@ -656,16 +659,13 @@ export type HPSPAIL = HPSP | 'HPSP' | 'AIL'
 
 export type Range = 0 | 1;
 
-export type AilResistance = 'Resist' | 'Null'
-export type Resistance = AilResistance | 'Drain' | 'Repel';
-
 export type Skill = AilBoostSkill | AilDefensiveSkill | AilmentSkill | AttackSkill | AutoBuffSkill | BarrierSkill | BarrierBreakSkill | BoostSkill | BreakSkill
     | ChargeSkill | CounterSkill | CritSkill | CritBoostSkill | DefensiveSkill | DrainSkill | EndureSkill | EvasionSkill | HalveSkill | InstaKillSkill
     | InstaKillBoostSkill | MasterSkill | MiscSkill | NaviSkill | PostBattleSkill | RecoverySkill | RegenSkill | SupportSkill | SusceptibilitySkill | WallSkill;
 
 export type SkillData = AilBoostSkillData | AilDefensiveSkillData | AilmentSkillData | AttackSkillData | AutoBuffSkillData | BarrierSkillData | BarrierBreakSkillData | BoostSkillData | BreakSkillData
-| ChargeSkillData | CounterSkillData | CritSkillData | CritBoostSkillData | DefensiveSkillData | DrainSkillData | EndureSkillData | EvasionSkillData | HalveSkillData | InstaKillSkillData
-| InstaKillBoostSkillData | MasterSkillData | MiscSkillData | NaviSkillData | PostBattleSkillData | RecoverySkillData | RegenSkillData | SupportSkillData | SusceptibilitySkillData | WallSkillData;
+    | ChargeSkillData | CounterSkillData | CritSkillData | CritBoostSkillData | DefensiveSkillData | DrainSkillData | EndureSkillData | EvasionSkillData | HalveSkillData | InstaKillSkillData
+    | InstaKillBoostSkillData | MasterSkillData | MiscSkillData | NaviSkillData | PostBattleSkillData | RecoverySkillData | RegenSkillData | SupportSkillData | SusceptibilitySkillData | WallSkillData;
 
 export type SkillType = 'AILBOOST' | 'AILDEFENSIVE' | 'AILMENT' | 'ATTACK' | 'AUTOBUFF' | 'BARRIER' | 'BARRIERBREAK' | 'BOOST' | 'BREAK'
     | 'CHARGE' | 'COUNTER' | 'CRIT' |'CRITBOOST' | 'DEFENSIVE' | 'DRAIN' | 'ENDURE' | 'EVASION' | 'HALVE' | 'INSTAKILL' 
