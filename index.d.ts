@@ -633,6 +633,9 @@ export function getTreasureDemon(name: string): TreasureDemon | null;
 /** The current version of the megaten package being ran */
 export declare const version: string;
 
+/** A utility function that removes accents, replaces "&" with "and", and removes non-alphanumeric characters */
+export function noPunc(str: string): string;
+
 export type AilResistance = 'Resist' | 'Null'
 export type Resistance = AilResistance | 'Drain' | 'Repel';
 

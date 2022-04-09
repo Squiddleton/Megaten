@@ -80,6 +80,8 @@ module.exports.getTreasureDemon = name => treasureDemons.get(noPunc(name)) ?? nu
 
 module.exports.version = require('./package.json').version;
 
+module.exports.noPunc = noPunc;
+
 /**
  * @typedef Lists
  * @property {import('.').DemonData[]} demons
