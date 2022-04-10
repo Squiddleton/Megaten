@@ -47,6 +47,7 @@ export class Demon {
     game: Game;
     evolution:Demon | null;
     image: Buffer;
+    isPersona(): this is Persona;
 }
 
 export class Persona extends Demon {

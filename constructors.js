@@ -36,6 +36,9 @@ class Demon {
 	get image() {
 		return readFileSync(`${__dirname}/images/demons/${this.devName}.png`);
 	}
+	isPersona() {
+		return this.race === 'Persona';
+	}
 }
 
 class Persona extends Demon {
