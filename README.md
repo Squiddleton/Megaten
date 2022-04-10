@@ -30,15 +30,15 @@ const { demons, skills, treasureDemons } = megaten // Gets full arrays of the re
 ```
 
 ## Demons
-All Personas/demons follow an identical template.
+All demons follow an identical template.
 
 #### Example:
 ```javascript
 Demon {
-  name: 'Loki -P5-', // The name of the demon/Persona, with some being named after unique variants in specific games
+  name: 'Loki -P5-', // The name of the demon, with some being named after unique variants in specific games
   devName: 'lokip5', // The name without capitalization, spaces, punctuation, accents, etc.
   aliases: [
-    'loki' // Possible devNames that the demon/Persona is commonly referred to
+    'loki' // Possible devNames that the demon is commonly referred to
   ],
   inherit: 'Curse', // The affinity which determines inheritable skills
   arcana: 'Justice', // The means by which all is revealed
@@ -84,22 +84,22 @@ Demon {
     }
   ],
   evoMove: null, // The name of a skill the Persona will learn upon evolving, or null if none
-  weak: [ // Affinities the demon/Persona is weak to
+  weak: [ // Affinities the demon is weak to
     'Bless'
   ],
-  resist: [], // Affinities the demon/Persona resists
-  null: [ // Affinities the demon/Persona nullifies
+  resist: [], // Affinities the demon resists
+  null: [ // Affinities the demon nullifies
     'Curse'
   ],
-  drain: [], // Affinities the demon/Persona drains
-  repel: [], // Affinities the demon/Persona repels
+  drain: [], // Affinities the demon drains
+  repel: [], // Affinities the demon repels
   party: 'Redacted for spoiler reasons here, but not in the package', // The name of the party member who the Persona belongs to, or null if non-party
   evo: 2, // The point of evolution for a party member's persona, with 1 being base, 2 being second awakening, and 3 being third awakening, or null if non-party
   ultimate: false, // Whether the Persona is the Ultimate Persona of its arcana in the game this data is based on
   special: false, // Whether the Persona is a result of special fusions (incomplete)
   game: 'p5', // The game that this data originates from
   evolution: Demon {...}, // The Persona that this evolves into, or null if none (getter)
-  image: Buffer {...} // A buffer of an image of the demon/Persona (getter)
+  image: Buffer {...} // A buffer of an image of the demon (getter)
 }
 ```
 
@@ -126,7 +126,7 @@ AttackSkill {
     }
   ],
   crit: null, // Whether the skill has a boosted crit rate (incomplete)
-  unique: false, // Whether the skill is exclusive to specific Personas/demons who learn it
+  unique: false, // Whether the skill is exclusive to specific demons who learn it
   downBoost: false, // Whether the skill gains damage when the target is down
   baton: false, // Whether the skill gains power if used during a baton pass
   accurate: false, // Whether the skill has high accuracy
