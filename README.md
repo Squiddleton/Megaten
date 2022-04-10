@@ -10,19 +10,21 @@ These lists contain all the demons/Personas and skills from the following games,
 NOTE: This is **not** a 1:1 database of all past data.  Skill and demon information is updated to the latest mainstream release, and damage values are manually adjusted relative to similar skills in said release.
 
 # Usage
-First, install the package by running the following command in your terminal:
+This package requires Node.js v14.0.0 or higher.
+
+First, install it by running the following command in your terminal:
 ```
 npm install megaten
 ```
 
-After the package is installed, you may use it through methods such as the following:
+After installation, you may use it through methods such as the following:
 ```javascript
-const megaten = require('megaten') // Or, "import megaten from 'megaten'" in es6.  Destructuring syntax also works
+const megaten = require('megaten') // Or, "import megaten from 'megaten'" in ES6.  Destructuring syntax is also supported
 
-// All get... functions find by the input's name without attention to capitalization, spaces, punctuation, etc.
+// All get... functions find by the input's name without attention to capitalization, spaces, punctuation, etc. via the exported "noPunc" utility function
 const jack = megaten.getDemon('Jack Frost!!!') // Gets a Demon instance
 const bufu = megaten.getSkill('bufu') // Gets a Skill instance
-const regent = megaten.getTreasureDemon('Regent') // Gets a Treasure Demon instance
+const regent = megaten.getTreasureDemon('Regent') // Gets a TreasureDemon instance
 
 const { demons, skills, treasureDemons } = megaten // Gets full arrays of the respective data instances
 ```
@@ -102,7 +104,7 @@ Demon {
 ```
 
 ## Skills
-Each skill is marked by a type property which groups similar skill instances together.  Please see index.d.ts for each type's format.
+Each skill is marked by a type property which groups similar skill instances together.  Please see index.d.ts or use IntelliSense for each type's format.
 
 #### Example:
 ```javascript
@@ -135,7 +137,7 @@ AttackSkill {
 ```
 
 ### Treasure Demons
-Treasure Demons, specifically from Persona 5 Royal, are slight variations on the normal Demon class since they lack variation that others have.
+Treasure Demons are slight variations on the normal Demon class.
 
 #### Example:
 ```javascript
