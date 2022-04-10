@@ -1,9 +1,9 @@
 const { readFileSync } = require('fs');
-/** @type {import('./index').Lists} */
+/** @type {Lists} */
 // @ts-ignore
 const lists = require('./lists.json');
 
-module.exports.Demon = class Demon {
+class Demon {
 	/**
 	 *
 	 * @param {import('./index').DemonData} data
@@ -28,18 +28,7 @@ module.exports.Demon = class Demon {
 		this.null = data.null;
 		this.drain = data.drain;
 		this.repel = data.repel;
-		this.party = data.party;
-		this.evo = data.evo;
-		this.ultimate = data.ultimate;
-		this.special = data.special;
 		this.game = data.game;
-	}
-	/**
-     * @type {import('./index').Demon | null} The Persona's evolution, or null if none
-     */
-	get evolution() {
-		const evoPersona = lists.demons.find(demon => demon.party === this.party && demon.evo === (this.evo + 1));
-		return evoPersona === undefined ? null : new Demon(evoPersona);
 	}
 	/**
 	 * @type {Buffer} A buffer of the Treasure Demon's image
@@ -47,7 +36,29 @@ module.exports.Demon = class Demon {
 	get image() {
 		return readFileSync(`${__dirname}/images/demons/${this.devName}.png`);
 	}
-};
+}
+
+class Persona extends Demon {
+	/**
+	 *
+	 * @param {import('./index').DemonData} data
+	 */
+	constructor(data) {
+		super(data);
+		this.user = data.user;
+		this.stage = data.stage;
+	}
+	/**
+     * @type {import('./index').Persona | null} The Persona's evolution, or null if none
+     */
+	get evolution() {
+		const evoPersona = lists.demons.find(demon => demon.user === this.user && demon.stage === (this.stage + 1));
+		return evoPersona === undefined ? null : new Persona(evoPersona);
+	}
+}
+
+module.exports.Demon = Demon;
+module.exports.Persona = Persona;
 
 class BaseSkill {
 	/**
@@ -562,3 +573,10 @@ module.exports.dataToClass = data => {
 	case 'WALL': return new this.WallSkill(data);
 	}
 };
+
+/**
+ * @typedef Lists
+ * @property {import('.').DemonData[]} demons
+ * @property {import('.').SkillData[]} skills
+ * @property {import('.').TreasureDemonData[]} treasureDemons
+ */

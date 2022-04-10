@@ -1,4 +1,4 @@
-const { Demon, BaseSkill, AilBoostSkill, AilDefensiveSkill, AilmentSkill, AttackSkill, AutoBuffSkill, BarrierSkill, BarrierBreakSkill, BoostSkill, BreakSkill, ChargeSkill, CounterSkill, CritSkill, CritBoostSkill, DefensiveSkill, DrainSkill, EndureSkill, EvasionSkill, HalveSkill, InstaKillSkill, InstaKillBoostSkill, MasterSkill, MiscSkill, NaviSkill, PostBattleSkill, RecoverySkill, RegenSkill, SupportSkill, SusceptibilitySkill, WallSkill, dataToClass, TreasureDemon } = require('./constructors');
+const { Demon, Persona, BaseSkill, AilBoostSkill, AilDefensiveSkill, AilmentSkill, AttackSkill, AutoBuffSkill, BarrierSkill, BarrierBreakSkill, BoostSkill, BreakSkill, ChargeSkill, CounterSkill, CritSkill, CritBoostSkill, DefensiveSkill, DrainSkill, EndureSkill, EvasionSkill, HalveSkill, InstaKillSkill, InstaKillBoostSkill, MasterSkill, MiscSkill, NaviSkill, PostBattleSkill, RecoverySkill, RegenSkill, SupportSkill, SusceptibilitySkill, WallSkill, dataToClass, TreasureDemon } = require('./constructors');
 /** @type {Lists} */
 // @ts-ignore
 const lists = require('./lists.json');
@@ -51,7 +51,7 @@ module.exports.WallSkill = WallSkill;
 
 module.exports.TreasureDemon = TreasureDemon;
 
-module.exports.demons = lists.demons.map(demon => new Demon(demon));
+module.exports.demons = lists.demons.map(demon => new (demon.race === 'Persona' ? Persona : Demon)(demon));
 module.exports.skills = lists.skills.map(skill => dataToClass(skill));
 module.exports.treasureDemons = lists.treasureDemons.map(treasureDemon => new TreasureDemon(treasureDemon));
 

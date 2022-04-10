@@ -18,11 +18,9 @@ export interface DemonData {
     null: Element[];
     drain: Element[];
     repel: Element[];
-    party: string | null;
-    evo: number | null;
-    ultimate: boolean;
-    special: boolean;
     game: Game;
+    user: string | undefined;
+    stage: 1 | 2 | 3 | undefined;
 }
 
 export class Demon {
@@ -46,13 +44,15 @@ export class Demon {
     null: Element[];
     drain: Element[];
     repel: Element[];
-    party: string | null;
-    evo: number | null;
-    ultimate: boolean;
-    special: boolean;
     game: Game;
     evolution:Demon | null;
     image: Buffer;
+}
+
+export class Persona extends Demon {
+    constructor(data: PersonaData)
+    user: string;
+    stage: 1 | 2 | 3;
 }
 
 export class BaseSkill {

@@ -55,10 +55,6 @@
       ],
       "drain": [],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "smtv"
     },
     {
@@ -111,10 +107,6 @@
       "null": [],
       "drain": [],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -228,11 +220,9 @@
       ],
       "drain": [],
       "repel": [],
-      "party": "Makoto Niijima",
-      "evo": 3,
-      "ultimate": false,
-      "special": false,
-      "game": "p5"
+      "game": "p5",
+      "user": "Makoto Niijima",
+      "stage": 3
     },
     {
       "name": "Al Azif",
@@ -275,11 +265,9 @@
       "null": [],
       "drain": [],
       "repel": [],
-      "party": "Futaba Sakura",
-      "evo": 3,
-      "ultimate": false,
-      "special": false,
-      "game": "p5"
+      "game": "p5",
+      "user": "Futaba Sakura",
+      "stage": 3
     },
     {
       "name": "Alice",
@@ -337,10 +325,6 @@
       "repel": [
         "Curse"
       ],
-      "party": null,
-      "evo": null,
-      "ultimate": true,
-      "special": true,
       "game": "p5"
     },
     {
@@ -406,10 +390,6 @@
         "Phys",
         "Gun"
       ],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -515,11 +495,9 @@
       ],
       "drain": [],
       "repel": [],
-      "party": "Yukiko Amagi",
-      "evo": 2,
-      "ultimate": false,
-      "special": false,
-      "game": "p4"
+      "game": "p4",
+      "user": "Yukiko Amagi",
+      "stage": 2
     },
     {
       "name": "Ame-no-Uzume",
@@ -570,10 +548,6 @@
         "Fire"
       ],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -633,10 +607,6 @@
         "Ice"
       ],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -750,11 +720,9 @@
       ],
       "drain": [],
       "repel": [],
-      "party": "Makoto Niijima",
-      "evo": 2,
-      "ultimate": false,
-      "special": false,
-      "game": "p5"
+      "game": "p5",
+      "user": "Makoto Niijima",
+      "stage": 2
     },
     {
       "name": "Andras",
@@ -809,10 +777,6 @@
       ],
       "drain": [],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -867,10 +831,6 @@
       ],
       "drain": [],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -924,10 +884,6 @@
       ],
       "drain": [],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -982,10 +938,6 @@
       "repel": [
         "Wind"
       ],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -1038,10 +990,6 @@
       "null": [],
       "drain": [],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -1098,10 +1046,6 @@
         "Phys",
         "Gun"
       ],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -1157,10 +1101,6 @@
       "null": [],
       "drain": [],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -1213,10 +1153,6 @@
       ],
       "drain": [],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -1273,10 +1209,6 @@
       ],
       "drain": [],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": true,
-      "special": true,
       "game": "p5"
     },
     {
@@ -1330,10 +1262,6 @@
       ],
       "drain": [],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p4"
     },
     {
@@ -1392,11 +1320,9 @@
       ],
       "drain": [],
       "repel": [],
-      "party": "Labrys",
-      "evo": 1,
-      "ultimate": false,
-      "special": false,
-      "game": "p5"
+      "game": "p5",
+      "user": "Labrys",
+      "stage": 1
     },
     {
       "name": "Ariadne Picaro",
@@ -1454,10 +1380,6 @@
       ],
       "drain": [],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -1506,10 +1428,6 @@
       "null": [],
       "drain": [],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -1605,11 +1523,9 @@
       ],
       "drain": [],
       "repel": [],
-      "party": "Mitsuru Kirijo",
-      "evo": 2,
-      "ultimate": false,
-      "special": false,
-      "game": "p3"
+      "game": "p3",
+      "user": "Mitsuru Kirijo",
+      "stage": 2
     },
     {
       "name": "Astarte",
@@ -1714,11 +1630,9 @@
       ],
       "drain": [],
       "repel": [],
-      "party": "Haru Okumura",
-      "evo": 2,
-      "ultimate": false,
-      "special": false,
-      "game": "p5"
+      "game": "p5",
+      "user": "Haru Okumura",
+      "stage": 2
     },
     {
       "name": "Asterius",
@@ -1776,11 +1690,9 @@
       ],
       "drain": [],
       "repel": [],
-      "party": "Shadow Labrys",
-      "evo": 1,
-      "ultimate": false,
-      "special": false,
-      "game": "p5"
+      "game": "p5",
+      "user": "Shadow Labrys",
+      "stage": 1
     },
     {
       "name": "Asterius Picaro",
@@ -1838,10 +1750,6 @@
       ],
       "drain": [],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -1899,10 +1807,6 @@
       "repel": [
         "Nuke"
       ],
-      "party": null,
-      "evo": null,
-      "ultimate": true,
-      "special": true,
       "game": "p5"
     },
     {
@@ -1961,10 +1865,6 @@
       "repel": [
         "Fire"
       ],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -2053,11 +1953,9 @@
       ],
       "drain": [],
       "repel": [],
-      "party": "Aigis",
-      "evo": 2,
-      "ultimate": false,
-      "special": false,
-      "game": "p3"
+      "game": "p3",
+      "user": "Aigis",
+      "stage": 2
     },
     {
       "name": "Athena Picaro",
@@ -2118,10 +2016,6 @@
       ],
       "drain": [],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -2177,10 +2071,6 @@
       ],
       "drain": [],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -2238,10 +2128,6 @@
       "repel": [
         "Wind"
       ],
-      "party": null,
-      "evo": null,
-      "ultimate": true,
-      "special": false,
       "game": "p5"
     },
     {
@@ -2298,10 +2184,6 @@
         "Wind"
       ],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -2359,10 +2241,6 @@
       ],
       "drain": [],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -2418,10 +2296,6 @@
       ],
       "drain": [],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -2483,10 +2357,6 @@
       "repel": [
         "Curse"
       ],
-      "party": null,
-      "evo": null,
-      "ultimate": true,
-      "special": false,
       "game": "p5"
     },
     {
@@ -2541,10 +2411,6 @@
       ],
       "drain": [],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -2600,10 +2466,6 @@
       "repel": [
         "Curse"
       ],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -2653,10 +2515,6 @@
       ],
       "drain": [],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -2704,10 +2562,6 @@
       "null": [],
       "drain": [],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -2766,10 +2620,6 @@
         "Fire"
       ],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -2828,10 +2678,6 @@
         "Fire",
         "Curse"
       ],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": true,
       "game": "p5"
     },
     {
@@ -2893,10 +2739,6 @@
       ],
       "drain": [],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -2955,10 +2797,6 @@
         "Ice"
       ],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -3016,10 +2854,6 @@
       ],
       "drain": [],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": true,
       "game": "p5"
     },
     {
@@ -3078,10 +2912,6 @@
       ],
       "drain": [],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -3146,10 +2976,6 @@
         "Ice"
       ],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -3253,11 +3079,9 @@
       ],
       "drain": [],
       "repel": [],
-      "party": "Akihiko Sanada",
-      "evo": 2,
-      "ultimate": false,
-      "special": false,
-      "game": "p3"
+      "game": "p3",
+      "user": "Akihiko Sanada",
+      "stage": 2
     },
     {
       "name": "Cait Sith",
@@ -3308,10 +3132,6 @@
       "null": [],
       "drain": [],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -3431,11 +3251,9 @@
       "null": [],
       "drain": [],
       "repel": [],
-      "party": "Ryuji Sakamoto",
-      "evo": 1,
-      "ultimate": false,
-      "special": false,
-      "game": "p5"
+      "game": "p5",
+      "user": "Ryuji Sakamoto",
+      "stage": 1
     },
     {
       "name": "Carmen",
@@ -3546,11 +3364,9 @@
       "null": [],
       "drain": [],
       "repel": [],
-      "party": "Ann Takamaki",
-      "evo": 1,
-      "ultimate": false,
-      "special": false,
-      "game": "p5"
+      "game": "p5",
+      "user": "Ann Takamaki",
+      "stage": 1
     },
     {
       "name": "Castor",
@@ -3625,11 +3441,9 @@
       "null": [],
       "drain": [],
       "repel": [],
-      "party": "Shinjiro Aragaki",
-      "evo": 1,
-      "ultimate": false,
-      "special": false,
-      "game": "p3"
+      "game": "p3",
+      "user": "Shinjiro Aragaki",
+      "stage": 1
     },
     {
       "name": "Célestine",
@@ -3742,11 +3556,9 @@
       ],
       "drain": [],
       "repel": [],
-      "party": "Ann Takamaki",
-      "evo": 3,
-      "ultimate": false,
-      "special": false,
-      "game": "p5"
+      "game": "p5",
+      "user": "Ann Takamaki",
+      "stage": 3
     },
     {
       "name": "Cendrillon",
@@ -3809,11 +3621,9 @@
       ],
       "drain": [],
       "repel": [],
-      "party": "Sumire Yoshizawa",
-      "evo": 1,
-      "ultimate": false,
-      "special": false,
-      "game": "p5"
+      "game": "p5",
+      "user": "Sumire Yoshizawa",
+      "stage": 1
     },
     {
       "name": "Cerberus",
@@ -3866,10 +3676,6 @@
         "Fire"
       ],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -3960,11 +3766,9 @@
       ],
       "drain": [],
       "repel": [],
-      "party": "Koromaru",
-      "evo": 1,
-      "ultimate": false,
-      "special": false,
-      "game": "p3"
+      "game": "p3",
+      "user": "Koromaru",
+      "stage": 1
     },
     {
       "name": "Chernobog",
@@ -4025,10 +3829,6 @@
         "Curse"
       ],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -4087,10 +3887,6 @@
         "Fire"
       ],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -4149,10 +3945,6 @@
       ],
       "drain": [],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": true,
-      "special": true,
       "game": "p5"
     },
     {
@@ -4214,10 +4006,6 @@
         "Fire"
       ],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -4274,10 +4062,6 @@
       ],
       "drain": [],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -4338,10 +4122,6 @@
       "repel": [
         "Wind"
       ],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -4399,10 +4179,6 @@
       ],
       "drain": [],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": true,
-      "special": false,
       "game": "p5"
     },
     {
@@ -4460,10 +4236,6 @@
       ],
       "drain": [],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -4519,10 +4291,6 @@
       ],
       "drain": [],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -4581,10 +4349,6 @@
       "repel": [
         "Fire"
       ],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -4710,11 +4474,9 @@
       ],
       "drain": [],
       "repel": [],
-      "party": "Morgana",
-      "evo": 3,
-      "ultimate": false,
-      "special": false,
-      "game": "p5"
+      "game": "p5",
+      "user": "Morgana",
+      "stage": 3
     },
     {
       "name": "Dionysus",
@@ -4770,10 +4532,6 @@
       "repel": [
         "Elec"
       ],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -4827,10 +4585,6 @@
       "repel": [
         "Fire"
       ],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p4"
     },
     {
@@ -4890,10 +4644,6 @@
       "repel": [
         "Nuke"
       ],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -4947,10 +4697,6 @@
       "null": [],
       "drain": [],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -5016,11 +4762,9 @@
       ],
       "drain": [],
       "repel": [],
-      "party": "Sumire Yoshizawa",
-      "evo": 3,
-      "ultimate": false,
-      "special": false,
-      "game": "p5"
+      "game": "p5",
+      "user": "Sumire Yoshizawa",
+      "stage": 3
     },
     {
       "name": "Fafnir",
@@ -5079,10 +4823,6 @@
         "Phys",
         "Gun"
       ],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -5141,10 +4881,6 @@
       ],
       "drain": [],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": true,
       "game": "p5"
     },
     {
@@ -5202,10 +4938,6 @@
         "Ice"
       ],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -5262,10 +4994,6 @@
       ],
       "drain": [],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -5325,10 +5053,6 @@
       "null": [],
       "drain": [],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": true,
-      "special": false,
       "game": "p5"
     },
     {
@@ -5382,10 +5106,6 @@
         "Wind"
       ],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -5445,10 +5165,6 @@
         "Bless"
       ],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -5507,10 +5223,6 @@
         "Wind"
       ],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -5567,10 +5279,6 @@
         "Ice"
       ],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p4"
     },
     {
@@ -5626,10 +5334,6 @@
       "repel": [
         "Bless"
       ],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -5685,10 +5389,6 @@
       ],
       "drain": [],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -5745,10 +5445,6 @@
         "Phys",
         "Gun"
       ],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -5864,11 +5560,9 @@
       "null": [],
       "drain": [],
       "repel": [],
-      "party": "Yusuke Kitagawa",
-      "evo": 1,
-      "ultimate": false,
-      "special": false,
-      "game": "p5"
+      "game": "p5",
+      "user": "Yusuke Kitagawa",
+      "stage": 1
     },
     {
       "name": "Gorgon",
@@ -5919,10 +5613,6 @@
       ],
       "drain": [],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p4"
     },
     {
@@ -6040,11 +5730,9 @@
       ],
       "drain": [],
       "repel": [],
-      "party": "Yusuke Kitagawa",
-      "evo": 3,
-      "ultimate": false,
-      "special": false,
-      "game": "p5"
+      "game": "p5",
+      "user": "Yusuke Kitagawa",
+      "stage": 3
     },
     {
       "name": "Hachiman",
@@ -6096,10 +5784,6 @@
       ],
       "drain": [],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p4"
     },
     {
@@ -6153,10 +5837,6 @@
       "null": [],
       "drain": [],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -6262,11 +5942,9 @@
         "Ice"
       ],
       "repel": [],
-      "party": "Chie Satonaka",
-      "evo": 3,
-      "ultimate": false,
-      "special": false,
-      "game": "p4"
+      "game": "p4",
+      "user": "Chie Satonaka",
+      "stage": 3
     },
     {
       "name": "Hariti",
@@ -6326,10 +6004,6 @@
       "null": [],
       "drain": [],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -6388,10 +6062,6 @@
         "Wind"
       ],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -6505,11 +6175,9 @@
       ],
       "drain": [],
       "repel": [],
-      "party": "Ann Takamaki",
-      "evo": 2,
-      "ultimate": false,
-      "special": false,
-      "game": "p5"
+      "game": "p5",
+      "user": "Ann Takamaki",
+      "stage": 2
     },
     {
       "name": "Hecatoncheires",
@@ -6566,10 +6234,6 @@
       ],
       "drain": [],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -6627,10 +6291,6 @@
       "repel": [
         "Fire"
       ],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": true,
       "game": "p5"
     },
     {
@@ -6692,11 +6352,9 @@
       ],
       "drain": [],
       "repel": [],
-      "party": "Goro Akechi",
-      "evo": 3,
-      "ultimate": false,
-      "special": false,
-      "game": "p5"
+      "game": "p5",
+      "user": "Goro Akechi",
+      "stage": 3
     },
     {
       "name": "Hermes",
@@ -6779,11 +6437,9 @@
       "null": [],
       "drain": [],
       "repel": [],
-      "party": "Junpei Iori",
-      "evo": 1,
-      "ultimate": false,
-      "special": false,
-      "game": "p3"
+      "game": "p3",
+      "user": "Junpei Iori",
+      "stage": 1
     },
     {
       "name": "High Pixie",
@@ -6836,10 +6492,6 @@
       "null": [],
       "drain": [],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -6907,11 +6559,9 @@
       "null": [],
       "drain": [],
       "repel": [],
-      "party": "Rise Kujikawa",
-      "evo": 1,
-      "ultimate": false,
-      "special": false,
-      "game": "p4"
+      "game": "p4",
+      "user": "Rise Kujikawa",
+      "stage": 1
     },
     {
       "name": "Hokuto Seikun",
@@ -6969,10 +6619,6 @@
       "repel": [
         "Elec"
       ],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p4"
     },
     {
@@ -7030,10 +6676,6 @@
       "repel": [
         "Bless"
       ],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -7086,10 +6728,6 @@
       "repel": [
         "Fire"
       ],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -7138,10 +6776,6 @@
       "null": [],
       "drain": [],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -7199,10 +6833,6 @@
       ],
       "drain": [],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -7278,11 +6908,9 @@
       "null": [],
       "drain": [],
       "repel": [],
-      "party": "Yukari Takeba",
-      "evo": 1,
-      "ultimate": false,
-      "special": false,
-      "game": "p3"
+      "game": "p3",
+      "user": "Yukari Takeba",
+      "stage": 1
     },
     {
       "name": "Ippon-Datara",
@@ -7337,10 +6965,6 @@
       "repel": [
         "Wind"
       ],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -7396,10 +7020,6 @@
       ],
       "drain": [],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": true,
-      "special": false,
       "game": "p5"
     },
     {
@@ -7455,10 +7075,6 @@
       ],
       "drain": [],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -7560,11 +7176,9 @@
       ],
       "drain": [],
       "repel": [],
-      "party": "Yukari Takeba",
-      "evo": 2,
-      "ultimate": false,
-      "special": false,
-      "game": "p3"
+      "game": "p3",
+      "user": "Yukari Takeba",
+      "stage": 2
     },
     {
       "name": "Izanagi",
@@ -7637,10 +7251,6 @@
       ],
       "drain": [],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -7705,10 +7315,6 @@
       "null": [],
       "drain": [],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": true,
       "game": "p5"
     },
     {
@@ -7773,10 +7379,6 @@
       "null": [],
       "drain": [],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": true,
       "game": "p5"
     },
     {
@@ -7833,10 +7435,6 @@
       ],
       "drain": [],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -7888,10 +7486,6 @@
       ],
       "drain": [],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -7942,10 +7536,6 @@
         "Fire"
       ],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -8004,10 +7594,6 @@
       "repel": [
         "Wind"
       ],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -8064,10 +7650,6 @@
       "null": [],
       "drain": [],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -8119,10 +7701,6 @@
         "Fire"
       ],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p4"
     },
     {
@@ -8222,11 +7800,9 @@
       "null": [],
       "drain": [],
       "repel": [],
-      "party": "Yosuke Hanamura",
-      "evo": 1,
-      "ultimate": false,
-      "special": false,
-      "game": "p4"
+      "game": "p4",
+      "user": "Yosuke Hanamura",
+      "stage": 1
     },
     {
       "name": "Johanna",
@@ -8337,11 +7913,9 @@
       "null": [],
       "drain": [],
       "repel": [],
-      "party": "Makoto Niijima",
-      "evo": 1,
-      "ultimate": false,
-      "special": false,
-      "game": "p5"
+      "game": "p5",
+      "user": "Makoto Niijima",
+      "stage": 1
     },
     {
       "name": "Juno",
@@ -8388,11 +7962,9 @@
       "null": [],
       "drain": [],
       "repel": [],
-      "party": "Fuuka Yamagishi",
-      "evo": 2,
-      "ultimate": false,
-      "special": false,
-      "game": "p3"
+      "game": "p3",
+      "user": "Fuuka Yamagishi",
+      "stage": 2
     },
     {
       "name": "Kaguya",
@@ -8450,10 +8022,6 @@
       ],
       "drain": [],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -8510,10 +8078,6 @@
       ],
       "drain": [],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -8570,10 +8134,6 @@
       ],
       "drain": [],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -8657,11 +8217,9 @@
       ],
       "drain": [],
       "repel": [],
-      "party": "Ken Amada",
-      "evo": 2,
-      "ultimate": false,
-      "special": false,
-      "game": "p3"
+      "game": "p3",
+      "user": "Ken Amada",
+      "stage": 2
     },
     {
       "name": "Kali",
@@ -8719,10 +8277,6 @@
         "Psy",
         "Gun"
       ],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -8825,11 +8379,9 @@
       ],
       "drain": [],
       "repel": [],
-      "party": "Teddie",
-      "evo": 2,
-      "ultimate": false,
-      "special": false,
-      "game": "p4"
+      "game": "p4",
+      "user": "Teddie",
+      "stage": 2
     },
     {
       "name": "Kamui-Moshiri",
@@ -8929,11 +8481,9 @@
         "Ice"
       ],
       "repel": [],
-      "party": "Teddie",
-      "evo": 3,
-      "ultimate": false,
-      "special": false,
-      "game": "p4"
+      "game": "p4",
+      "user": "Teddie",
+      "stage": 3
     },
     {
       "name": "Kamu Susano-o",
@@ -9050,11 +8600,9 @@
       ],
       "drain": [],
       "repel": [],
-      "party": "Yusuke Kitagawa",
-      "evo": 2,
-      "ultimate": false,
-      "special": false,
-      "game": "p5"
+      "game": "p5",
+      "user": "Yusuke Kitagawa",
+      "stage": 2
     },
     {
       "name": "Kanzeon",
@@ -9121,11 +8669,9 @@
       "null": [],
       "drain": [],
       "repel": [],
-      "party": "Rise Kujikawa",
-      "evo": 2,
-      "ultimate": false,
-      "special": false,
-      "game": "p4"
+      "game": "p4",
+      "user": "Rise Kujikawa",
+      "stage": 2
     },
     {
       "name": "Kelpie",
@@ -9172,10 +8718,6 @@
       "null": [],
       "drain": [],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -9229,10 +8771,6 @@
       ],
       "drain": [],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -9288,10 +8826,6 @@
         "Ice"
       ],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -9347,10 +8881,6 @@
       "repel": [
         "Gun"
       ],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -9450,11 +8980,9 @@
       "null": [],
       "drain": [],
       "repel": [],
-      "party": "Teddie",
-      "evo": 1,
-      "ultimate": false,
-      "special": false,
-      "game": "p4"
+      "game": "p4",
+      "user": "Teddie",
+      "stage": 1
     },
     {
       "name": "Kodama",
@@ -9509,10 +9037,6 @@
       "null": [],
       "drain": [],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -9573,10 +9097,6 @@
       "repel": [
         "Elec"
       ],
-      "party": null,
-      "evo": null,
-      "ultimate": true,
-      "special": true,
       "game": "p5"
     },
     {
@@ -9680,11 +9200,9 @@
       "null": [],
       "drain": [],
       "repel": [],
-      "party": "Yukiko Amagi",
-      "evo": 1,
-      "ultimate": false,
-      "special": false,
-      "game": "p4"
+      "game": "p4",
+      "user": "Yukiko Amagi",
+      "stage": 1
     },
     {
       "name": "Koppa Tengu",
@@ -9736,10 +9254,6 @@
       "null": [],
       "drain": [],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -9798,10 +9312,6 @@
       "null": [],
       "drain": [],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -9858,10 +9368,6 @@
       "null": [],
       "drain": [],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -9929,11 +9435,9 @@
       "null": [],
       "drain": [],
       "repel": [],
-      "party": "Rise Kujikawa",
-      "evo": 3,
-      "ultimate": false,
-      "special": false,
-      "game": "p4"
+      "game": "p4",
+      "user": "Rise Kujikawa",
+      "stage": 3
     },
     {
       "name": "Kumbhanda",
@@ -9990,10 +9494,6 @@
       ],
       "drain": [],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -10048,10 +9548,6 @@
       "repel": [
         "Wind"
       ],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -10103,10 +9599,6 @@
       "null": [],
       "drain": [],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -10162,10 +9654,6 @@
       "null": [],
       "drain": [],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -10223,10 +9711,6 @@
       ],
       "drain": [],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -10283,10 +9767,6 @@
       "null": [],
       "drain": [],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": true,
-      "special": false,
       "game": "p5"
     },
     {
@@ -10345,10 +9825,6 @@
       ],
       "drain": [],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -10401,10 +9877,6 @@
       "null": [],
       "drain": [],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -10465,10 +9937,6 @@
       ],
       "drain": [],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -10527,10 +9995,6 @@
       ],
       "drain": [],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -10589,10 +10053,6 @@
         "Ice",
         "Nuke"
       ],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -10652,10 +10112,6 @@
       ],
       "drain": [],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -10717,11 +10173,9 @@
       ],
       "drain": [],
       "repel": [],
-      "party": "Goro Akechi",
-      "evo": 2,
-      "ultimate": false,
-      "special": false,
-      "game": "p5"
+      "game": "p5",
+      "user": "Goro Akechi",
+      "stage": 2
     },
     {
       "name": "Loki",
@@ -10782,10 +10236,6 @@
         "Ice"
       ],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": true,
-      "special": false,
       "game": "p4"
     },
     {
@@ -10853,10 +10303,6 @@
         "Curse"
       ],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": true,
-      "special": false,
       "game": "p5"
     },
     {
@@ -10896,11 +10342,9 @@
       "null": [],
       "drain": [],
       "repel": [],
-      "party": "Fuuka Yamagishi",
-      "evo": 1,
-      "ultimate": false,
-      "special": false,
-      "game": "p3"
+      "game": "p3",
+      "user": "Fuuka Yamagishi",
+      "stage": 1
     },
     {
       "name": "Lucy",
@@ -11005,11 +10449,9 @@
       ],
       "drain": [],
       "repel": [],
-      "party": "Haru Okumura",
-      "evo": 3,
-      "ultimate": false,
-      "special": false,
-      "game": "p5"
+      "game": "p5",
+      "user": "Haru Okumura",
+      "stage": 3
     },
     {
       "name": "Macabre",
@@ -11066,10 +10508,6 @@
       ],
       "drain": [],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -11133,10 +10571,6 @@
         "Fire"
       ],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": true,
-      "special": false,
       "game": "p5"
     },
     {
@@ -11195,10 +10629,6 @@
       ],
       "drain": [],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -11257,10 +10687,6 @@
       ],
       "drain": [],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -11320,10 +10746,6 @@
       ],
       "drain": [],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -11367,10 +10789,6 @@
       "null": [],
       "drain": [],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -11435,10 +10853,6 @@
       "repel": [
         "Psy"
       ],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -11498,10 +10912,6 @@
         "Bless"
       ],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": true,
-      "special": false,
       "game": "p5"
     },
     {
@@ -11553,10 +10963,6 @@
       ],
       "drain": [],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -11616,10 +11022,6 @@
         "Bless"
       ],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -11745,11 +11147,9 @@
       ],
       "drain": [],
       "repel": [],
-      "party": "Morgana",
-      "evo": 2,
-      "ultimate": false,
-      "special": false,
-      "game": "p5"
+      "game": "p5",
+      "user": "Morgana",
+      "stage": 2
     },
     {
       "name": "Messiah",
@@ -11815,10 +11215,6 @@
       "repel": [
         "Bless"
       ],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -11885,10 +11281,6 @@
       "repel": [
         "Bless"
       ],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -11952,10 +11344,6 @@
       "repel": [
         "Wind"
       ],
-      "party": null,
-      "evo": null,
-      "ultimate": true,
-      "special": true,
       "game": "p5"
     },
     {
@@ -12013,10 +11401,6 @@
       "repel": [
         "Bless"
       ],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": true,
       "game": "p5"
     },
     {
@@ -12120,11 +11504,9 @@
       "null": [],
       "drain": [],
       "repel": [],
-      "party": "Haru Okumura",
-      "evo": 1,
-      "ultimate": false,
-      "special": false,
-      "game": "p5"
+      "game": "p5",
+      "user": "Haru Okumura",
+      "stage": 1
     },
     {
       "name": "Mishaguji",
@@ -12183,10 +11565,6 @@
         "Curse"
       ],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -12247,10 +11625,6 @@
         "Fire"
       ],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -12309,10 +11683,6 @@
       ],
       "drain": [],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -12364,10 +11734,6 @@
       "null": [],
       "drain": [],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -12429,10 +11795,6 @@
         "Psy"
       ],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -12488,10 +11850,6 @@
       "repel": [
         "Curse"
       ],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -12549,10 +11907,6 @@
       "repel": [
         "Elec"
       ],
-      "party": null,
-      "evo": null,
-      "ultimate": true,
-      "special": false,
       "game": "p5"
     },
     {
@@ -12610,10 +11964,6 @@
       ],
       "drain": [],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -12671,10 +12021,6 @@
       ],
       "drain": [],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -12733,10 +12079,6 @@
       ],
       "drain": [],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -12794,10 +12136,6 @@
       ],
       "drain": [],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -12841,11 +12179,9 @@
       "null": [],
       "drain": [],
       "repel": [],
-      "party": "Futaba Sakura",
-      "evo": 1,
-      "ultimate": false,
-      "special": false,
-      "game": "p5"
+      "game": "p5",
+      "user": "Futaba Sakura",
+      "stage": 1
     },
     {
       "name": "Nekomata",
@@ -12900,10 +12236,6 @@
       "null": [],
       "drain": [],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -12963,10 +12295,6 @@
       ],
       "drain": [],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": true,
       "game": "p5"
     },
     {
@@ -13022,11 +12350,9 @@
       "null": [],
       "drain": [],
       "repel": [],
-      "party": "Ken Amada",
-      "evo": 1,
-      "ultimate": false,
-      "special": false,
-      "game": "p3"
+      "game": "p3",
+      "user": "Ken Amada",
+      "stage": 1
     },
     {
       "name": "Nata Taishi",
@@ -13081,10 +12407,6 @@
       "null": [],
       "drain": [],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p4"
     },
     {
@@ -13137,10 +12459,6 @@
       "null": [],
       "drain": [],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -13198,10 +12516,6 @@
       "repel": [
         "Elec"
       ],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -13259,10 +12573,6 @@
       ],
       "drain": [],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -13310,10 +12620,6 @@
       "null": [],
       "drain": [],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -13375,10 +12681,6 @@
       ],
       "drain": [],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -13437,10 +12739,6 @@
         "Bless",
         "Curse"
       ],
-      "party": null,
-      "evo": null,
-      "ultimate": true,
-      "special": false,
       "game": "p5"
     },
     {
@@ -13499,10 +12797,6 @@
       "repel": [
         "Elec"
       ],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -13562,10 +12856,6 @@
       "null": [],
       "drain": [],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p4"
     },
     {
@@ -13622,10 +12912,6 @@
         "Bless",
         "Curse"
       ],
-      "party": null,
-      "evo": null,
-      "ultimate": true,
-      "special": true,
       "game": "p5"
     },
     {
@@ -13676,10 +12962,6 @@
       "null": [],
       "drain": [],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -13734,10 +13016,6 @@
       ],
       "drain": [],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -13790,10 +13068,6 @@
       "null": [],
       "drain": [],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -13858,10 +13132,6 @@
       "null": [],
       "drain": [],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -13924,10 +13194,6 @@
       "null": [],
       "drain": [],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -13984,10 +13250,6 @@
       "null": [],
       "drain": [],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -14047,10 +13309,6 @@
       "null": [],
       "drain": [],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -14089,10 +13347,6 @@
       "null": [],
       "drain": [],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": true,
       "game": "p5"
     },
     {
@@ -14146,10 +13400,6 @@
         "Fire"
       ],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -14204,10 +13454,6 @@
       ],
       "drain": [],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -14262,10 +13508,6 @@
       "repel": [
         "Curse"
       ],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p4"
     },
     {
@@ -14323,10 +13565,6 @@
       "repel": [
         "Curse"
       ],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -14404,11 +13642,9 @@
       ],
       "drain": [],
       "repel": [],
-      "party": "Aigis",
-      "evo": 1,
-      "ultimate": false,
-      "special": false,
-      "game": "p3"
+      "game": "p3",
+      "user": "Aigis",
+      "stage": 1
     },
     {
       "name": "Pallas Athena",
@@ -14471,10 +13707,6 @@
       ],
       "drain": [],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -14586,11 +13818,9 @@
       ],
       "drain": [],
       "repel": [],
-      "party": "Sophia",
-      "evo": 2,
-      "ultimate": false,
-      "special": false,
-      "game": "p5"
+      "game": "p5",
+      "user": "Sophia",
+      "stage": 2
     },
     {
       "name": "Parvati",
@@ -14648,10 +13878,6 @@
       "repel": [
         "Ice"
       ],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -14709,10 +13935,6 @@
       ],
       "drain": [],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -14792,11 +14014,9 @@
       "null": [],
       "drain": [],
       "repel": [],
-      "party": "Mitsuru Kirijo",
-      "evo": 1,
-      "ultimate": false,
-      "special": false,
-      "game": "p3"
+      "game": "p3",
+      "user": "Mitsuru Kirijo",
+      "stage": 1
     },
     {
       "name": "Phoenix",
@@ -14849,10 +14069,6 @@
       ],
       "drain": [],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -14911,10 +14127,6 @@
       ],
       "drain": [],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -15006,11 +14218,9 @@
       "null": [],
       "drain": [],
       "repel": [],
-      "party": "Sophia",
-      "evo": 1,
-      "ultimate": false,
-      "special": false,
-      "game": "p5"
+      "game": "p5",
+      "user": "Sophia",
+      "stage": 1
     },
     {
       "name": "Pixie",
@@ -15060,10 +14270,6 @@
       "null": [],
       "drain": [],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -15135,11 +14341,9 @@
       "null": [],
       "drain": [],
       "repel": [],
-      "party": "Akihiko Sanada",
-      "evo": 1,
-      "ultimate": false,
-      "special": false,
-      "game": "p3"
+      "game": "p3",
+      "user": "Akihiko Sanada",
+      "stage": 1
     },
     {
       "name": "Power",
@@ -15197,10 +14401,6 @@
       ],
       "drain": [],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -15258,10 +14458,6 @@
       ],
       "drain": [],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -15305,11 +14501,9 @@
       "null": [],
       "drain": [],
       "repel": [],
-      "party": "Futaba Sakura",
-      "evo": 2,
-      "ultimate": false,
-      "special": false,
-      "game": "p5"
+      "game": "p5",
+      "user": "Futaba Sakura",
+      "stage": 2
     },
     {
       "name": "Psyche",
@@ -15392,11 +14586,9 @@
       "null": [],
       "drain": [],
       "repel": [],
-      "party": "Metis",
-      "evo": 1,
-      "ultimate": false,
-      "special": false,
-      "game": "p3"
+      "game": "p3",
+      "user": "Metis",
+      "stage": 1
     },
     {
       "name": "Queen Mab",
@@ -15453,10 +14645,6 @@
       ],
       "drain": [],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -15514,10 +14702,6 @@
       ],
       "drain": [],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -15571,10 +14755,6 @@
       ],
       "drain": [],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -15635,10 +14815,6 @@
       ],
       "drain": [],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -15695,10 +14871,6 @@
         "Phys",
         "Gun"
       ],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -15758,10 +14930,6 @@
       ],
       "drain": [],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -15818,10 +14986,6 @@
         "Ice"
       ],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -15877,10 +15041,6 @@
       ],
       "drain": [],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -15968,11 +15128,9 @@
       "null": [],
       "drain": [],
       "repel": [],
-      "party": "Goro Akechi",
-      "evo": 1,
-      "ultimate": false,
-      "special": false,
-      "game": "p5"
+      "game": "p5",
+      "user": "Goro Akechi",
+      "stage": 1
     },
     {
       "name": "Rokuten Maoh",
@@ -16069,11 +15227,9 @@
       ],
       "drain": [],
       "repel": [],
-      "party": "Kanji Tatsumi",
-      "evo": 2,
-      "ultimate": false,
-      "special": false,
-      "game": "p4"
+      "game": "p4",
+      "user": "Kanji Tatsumi",
+      "stage": 2
     },
     {
       "name": "Saki Mitama",
@@ -16124,10 +15280,6 @@
       "null": [],
       "drain": [],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -16186,10 +15338,6 @@
       "repel": [
         "Bless"
       ],
-      "party": null,
-      "evo": null,
-      "ultimate": true,
-      "special": false,
       "game": "p5"
     },
     {
@@ -16246,10 +15394,6 @@
       "null": [],
       "drain": [],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -16307,10 +15451,6 @@
       ],
       "drain": [],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -16371,10 +15511,6 @@
         "Ice",
         "Curse"
       ],
-      "party": null,
-      "evo": null,
-      "ultimate": true,
-      "special": false,
       "game": "p5"
     },
     {
@@ -16443,10 +15579,6 @@
         "Curse"
       ],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": true,
       "game": "p5"
     },
     {
@@ -16503,10 +15635,6 @@
       "repel": [
         "Elec"
       ],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -16564,10 +15692,6 @@
       "null": [],
       "drain": [],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -16691,11 +15815,9 @@
       ],
       "drain": [],
       "repel": [],
-      "party": "Ryuji Sakamoto",
-      "evo": 2,
-      "ultimate": false,
-      "special": false,
-      "game": "p5"
+      "game": "p5",
+      "user": "Ryuji Sakamoto",
+      "stage": 2
     },
     {
       "name": "Senri",
@@ -16746,10 +15868,6 @@
       ],
       "drain": [],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p4"
     },
     {
@@ -16802,10 +15920,6 @@
       "null": [],
       "drain": [],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -16861,10 +15975,6 @@
       "repel": [
         "Fire"
       ],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": true,
       "game": "p5"
     },
     {
@@ -16919,10 +16029,6 @@
       ],
       "drain": [],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -16981,10 +16087,6 @@
       ],
       "drain": [],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -17046,10 +16148,6 @@
       "repel": [
         "Elec"
       ],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": true,
       "game": "p5"
     },
     {
@@ -17109,10 +16207,6 @@
       ],
       "drain": [],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -17161,10 +16255,6 @@
       "null": [],
       "drain": [],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -17216,10 +16306,6 @@
       "repel": [
         "Ice"
       ],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -17269,10 +16355,6 @@
       "null": [],
       "drain": [],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -17330,10 +16412,6 @@
       "repel": [
         "Bless"
       ],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": true,
       "game": "p5"
     },
     {
@@ -17388,10 +16466,6 @@
       ],
       "drain": [],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -17448,10 +16522,6 @@
       "repel": [
         "Wind"
       ],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -17510,10 +16580,6 @@
         "Ice"
       ],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -17606,11 +16672,9 @@
       "null": [],
       "drain": [],
       "repel": [],
-      "party": "Naoto Shirogane",
-      "evo": 1,
-      "ultimate": false,
-      "special": false,
-      "game": "p4"
+      "game": "p4",
+      "user": "Naoto Shirogane",
+      "stage": 1
     },
     {
       "name": "Sumeo-Okami",
@@ -17715,11 +16779,9 @@
         "Fire"
       ],
       "repel": [],
-      "party": "Yukiko Amagi",
-      "evo": 3,
-      "ultimate": false,
-      "special": false,
-      "game": "p4"
+      "game": "p4",
+      "user": "Yukiko Amagi",
+      "stage": 3
     },
     {
       "name": "Surt",
@@ -17779,10 +16841,6 @@
         "Fire"
       ],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -17884,11 +16942,9 @@
       ],
       "drain": [],
       "repel": [],
-      "party": "Yosuke Hanamura",
-      "evo": 2,
-      "ultimate": false,
-      "special": false,
-      "game": "p4"
+      "game": "p4",
+      "user": "Yosuke Hanamura",
+      "stage": 2
     },
     {
       "name": "Suzaku",
@@ -17945,10 +17001,6 @@
         "Fire"
       ],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -18054,11 +17106,9 @@
       ],
       "drain": [],
       "repel": [],
-      "party": "Chie Satonaka",
-      "evo": 2,
-      "ultimate": false,
-      "special": false,
-      "game": "p4"
+      "game": "p4",
+      "user": "Chie Satonaka",
+      "stage": 2
     },
     {
       "name": "Takehaya Susano-o",
@@ -18159,11 +17209,9 @@
         "Wind"
       ],
       "repel": [],
-      "party": "Yosuke Hanamura",
-      "evo": 3,
-      "ultimate": false,
-      "special": false,
-      "game": "p4"
+      "game": "p4",
+      "user": "Yosuke Hanamura",
+      "stage": 3
     },
     {
       "name": "Takeji Zaiten",
@@ -18260,11 +17308,9 @@
         "Elec"
       ],
       "repel": [],
-      "party": "Kanji Tatsumi",
-      "evo": 3,
-      "ultimate": false,
-      "special": false,
-      "game": "p4"
+      "game": "p4",
+      "user": "Kanji Tatsumi",
+      "stage": 3
     },
     {
       "name": "Take-Mikazuchi",
@@ -18359,11 +17405,9 @@
       "null": [],
       "drain": [],
       "repel": [],
-      "party": "Kanji Tatsumi",
-      "evo": 1,
-      "ultimate": false,
-      "special": false,
-      "game": "p4"
+      "game": "p4",
+      "user": "Kanji Tatsumi",
+      "stage": 1
     },
     {
       "name": "Take-Minakata",
@@ -18419,10 +17463,6 @@
       "null": [],
       "drain": [],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -18483,10 +17523,6 @@
         "Bless"
       ],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": true,
       "game": "p5"
     },
     {
@@ -18544,10 +17580,6 @@
       "repel": [
         "Curse"
       ],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -18605,10 +17637,6 @@
       "repel": [
         "Curse"
       ],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -18666,10 +17694,6 @@
       ],
       "drain": [],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -18728,10 +17752,6 @@
       ],
       "drain": [],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -18790,10 +17810,6 @@
       "repel": [
         "Bless"
       ],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -18850,10 +17866,6 @@
         "Elec"
       ],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -18907,10 +17919,6 @@
       "null": [],
       "drain": [],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -19014,11 +18022,9 @@
       "null": [],
       "drain": [],
       "repel": [],
-      "party": "Chie Satonaka",
-      "evo": 1,
-      "ultimate": false,
-      "special": false,
-      "game": "p4"
+      "game": "p4",
+      "user": "Chie Satonaka",
+      "stage": 1
     },
     {
       "name": "Triglav",
@@ -19073,10 +18079,6 @@
       "null": [],
       "drain": [],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p4"
     },
     {
@@ -19180,11 +18182,9 @@
       ],
       "drain": [],
       "repel": [],
-      "party": "Junpei Iori",
-      "evo": 2,
-      "ultimate": false,
-      "special": false,
-      "game": "p3"
+      "game": "p3",
+      "user": "Junpei Iori",
+      "stage": 2
     },
     {
       "name": "Trumpeter",
@@ -19242,10 +18242,6 @@
         "Elec",
         "Bless"
       ],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": true,
       "game": "p5"
     },
     {
@@ -19306,10 +18302,6 @@
       "repel": [
         "Curse"
       ],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -19370,10 +18362,6 @@
       "repel": [
         "Curse"
       ],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -19435,10 +18423,6 @@
       "repel": [
         "Elec"
       ],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p4"
     },
     {
@@ -19490,10 +18474,6 @@
         "Ice"
       ],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p4"
     },
     {
@@ -19552,10 +18532,6 @@
       ],
       "drain": [],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -19613,10 +18589,6 @@
       "repel": [
         "Bless"
       ],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -19712,11 +18684,9 @@
       "null": [],
       "drain": [],
       "repel": [],
-      "party": "Zenkichi Hasegawa",
-      "evo": 1,
-      "ultimate": false,
-      "special": false,
-      "game": "p5"
+      "game": "p5",
+      "user": "Zenkichi Hasegawa",
+      "stage": 1
     },
     {
       "name": "Valkyrie",
@@ -19771,10 +18741,6 @@
       "repel": [
         "Ice"
       ],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -19838,11 +18804,9 @@
       ],
       "drain": [],
       "repel": [],
-      "party": "Sumire Yoshizawa",
-      "evo": 2,
-      "ultimate": false,
-      "special": false,
-      "game": "p5"
+      "game": "p5",
+      "user": "Sumire Yoshizawa",
+      "stage": 2
     },
     {
       "name": "Vasuki",
@@ -19898,10 +18862,6 @@
       ],
       "drain": [],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": true,
       "game": "p5"
     },
     {
@@ -19964,10 +18924,6 @@
         "Ice"
       ],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": true,
-      "special": false,
       "game": "p5"
     },
     {
@@ -20027,10 +18983,6 @@
         "Bless"
       ],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": true,
-      "special": false,
       "game": "p5"
     },
     {
@@ -20093,10 +19045,6 @@
       "repel": [
         "Curse"
       ],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -20218,11 +19166,9 @@
       ],
       "drain": [],
       "repel": [],
-      "party": "Ryuji Sakamoto",
-      "evo": 3,
-      "ultimate": false,
-      "special": false,
-      "game": "p5"
+      "game": "p5",
+      "user": "Ryuji Sakamoto",
+      "stage": 3
     },
     {
       "name": "Yaksini",
@@ -20277,10 +19223,6 @@
       ],
       "drain": [],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -20334,10 +19276,6 @@
         "Ice"
       ],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -20430,11 +19368,9 @@
         "Bless",
         "Curse"
       ],
-      "party": "Naoto Shirogane",
-      "evo": 3,
-      "ultimate": false,
-      "special": false,
-      "game": "p4"
+      "game": "p4",
+      "user": "Naoto Shirogane",
+      "stage": 3
     },
     {
       "name": "Yamato-Takeru",
@@ -20526,11 +19462,9 @@
       ],
       "drain": [],
       "repel": [],
-      "party": "Naoto Shirogane",
-      "evo": 2,
-      "ultimate": false,
-      "special": false,
-      "game": "p4"
+      "game": "p4",
+      "user": "Naoto Shirogane",
+      "stage": 2
     },
     {
       "name": "Yatagarasu",
@@ -20587,10 +19521,6 @@
       ],
       "drain": [],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -20642,10 +19572,6 @@
       "null": [],
       "drain": [],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p4"
     },
     {
@@ -20704,10 +19630,6 @@
         "Elec",
         "Bless"
       ],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": true,
       "game": "p5"
     },
     {
@@ -20765,10 +19687,6 @@
       ],
       "drain": [],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     },
     {
@@ -20827,10 +19745,6 @@
       "repel": [
         "Fire"
       ],
-      "party": null,
-      "evo": null,
-      "ultimate": true,
-      "special": false,
       "game": "p5"
     },
     {
@@ -20954,11 +19868,9 @@
       "null": [],
       "drain": [],
       "repel": [],
-      "party": "Morgana",
-      "evo": 1,
-      "ultimate": false,
-      "special": false,
-      "game": "p5"
+      "game": "p5",
+      "user": "Morgana",
+      "stage": 1
     },
     {
       "name": "Zouchouten",
@@ -21013,10 +19925,6 @@
       "null": [],
       "drain": [],
       "repel": [],
-      "party": null,
-      "evo": null,
-      "ultimate": false,
-      "special": false,
       "game": "p5"
     }
   ],
