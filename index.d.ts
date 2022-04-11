@@ -50,14 +50,14 @@ export class Demon {
 }
 
 export class Persona extends Demon {
-    constructor(data: PersonaData)
+    constructor(data: DemonData);
     user: string;
     stage: 1 | 2 | 3;
     evolution: Persona | null;
 }
 
 export class BaseSkill {
-    constructor(data: BaseSkillData)
+    constructor(data: BaseSkillData);
     name: string;
     devName: string;
     affinity: Affinity;
@@ -75,7 +75,7 @@ export interface BaseSkillData {
 }
 
 export class AilBoostSkill extends BaseSkill {
-    constructor(data: AilBoostSkillData)
+    constructor(data: AilBoostSkillData);
     affinity: 'Passive';
     type: 'AILBOOST';
     ailment: string;
@@ -92,7 +92,7 @@ export interface AilBoostSkillData extends BaseSkillData {
 }
 
 export class AilDefensiveSkill extends BaseSkill {
-    constructor(data: AilDefensiveSkillData)
+    constructor(data: AilDefensiveSkillData);
     affinity: 'Passive';
     type: 'AILDEFENSIVE';
     ailment: string;
@@ -107,7 +107,7 @@ export interface AilDefensiveSkillData extends BaseSkillData {
 }
 
 export class AilmentSkill extends BaseSkill {
-    constructor(data: AilmentSkillData)
+    constructor(data: AilmentSkillData);
     affinity: 'Ailment';
     type: 'AILMENT';
     range: Range;
@@ -132,7 +132,7 @@ export interface AilmentSkillData extends BaseSkillData {
 }
 
 export class AttackSkill extends BaseSkill {
-    constructor(data: AttackSkillData)
+    constructor(data: AttackSkillData);
     affinity: Element;
     type: 'ATTACK';
     range: Range;
@@ -169,7 +169,7 @@ export interface AttackSkillData extends BaseSkillData {
 }
 
 export class AutoBuffSkill extends BaseSkill {
-    constructor(data: AutoBuffSkillData)
+    constructor(data: AutoBuffSkillData);
     affinity: 'Passive';
     type: 'AUTOBUFF';
     buff: string;
@@ -182,7 +182,7 @@ export interface AutoBuffSkillData extends BaseSkillData {
 }
 
 export class BarrierSkill extends BaseSkill {
-    constructor(data: BarrierSkillData)
+    constructor(data: BarrierSkillData);
     affinity: 'Support';
     type: 'BARRIER';
     range: Range;
@@ -199,7 +199,7 @@ export interface BarrierSkillData extends BaseSkillData {
 }
 
 export class BarrierBreakSkill extends BaseSkill {
-    constructor(data: BarrierBreakSkillData)
+    constructor(data: BarrierBreakSkillData);
     affinity: 'Support';
     type: 'BARRIERBREAK';
     cost: number;
@@ -214,7 +214,7 @@ export interface BarrierBreakSkillData extends BaseSkillData {
 }
 
 export class BoostSkill extends BaseSkill {
-    constructor(data: BoostSkillData)
+    constructor(data: BoostSkillData);
     affinity: 'Passive';
     type: 'BOOST';
     element: Element | 'ALL';
@@ -229,7 +229,7 @@ export interface BoostSkillData extends BaseSkillData {
 }
 
 export class BreakSkill extends BaseSkill {
-    constructor(data: BreakSkillData)
+    constructor(data: BreakSkillData);
     affinity: 'Support';
     type: 'BREAK';
     cost: number;
@@ -244,7 +244,7 @@ export interface BreakSkillData extends BaseSkillData {
 }
 
 export class ChargeSkill extends BaseSkill {
-    constructor(data: ChargeSkillData)
+    constructor(data: ChargeSkillData);
     affinity: 'Support';
     type: 'CHARGE';
     cost: number;
@@ -261,7 +261,7 @@ export interface ChargeSkillData extends BaseSkillData {
 }
 
 export class CounterSkill extends BaseSkill {
-    constructor(data: CounterSkillData)
+    constructor(data: CounterSkillData);
     affinity: 'Passive';
     type: 'COUNTER';
     chance: number;
@@ -274,7 +274,7 @@ export interface CounterSkillData extends BaseSkillData {
 }
 
 export class CritSkill extends BaseSkill {
-    constructor(data: CritSkillData)
+    constructor(data: CritSkillData);
     affinity: 'Support';
     type: 'CRIT';
     range: 'ALL' | 'ALLY' | 'PARTY';
@@ -289,7 +289,7 @@ export interface CritSkillData extends BaseSkillData {
 }
 
 export class CritBoostSkill extends BaseSkill {
-    constructor(data: CritBoostSkillData)
+    constructor(data: CritBoostSkillData);
     affinity: 'Passive';
     type: 'CRITBOOST';
     amount: number;
@@ -304,7 +304,7 @@ export interface CritBoostSkillData extends BaseSkillData {
 }
 
 export class DefensiveSkill extends BaseSkill {
-    constructor(data: DefensiveSkillData)
+    constructor(data: DefensiveSkillData);
     affinity: 'Passive';
     type: 'DEFENSIVE';
     element: Element;
@@ -319,7 +319,7 @@ export interface DefensiveSkillData extends BaseSkillData {
 }
 
 export class DrainSkill extends BaseSkill {
-    constructor(data: DrainSkillData)
+    constructor(data: DrainSkillData);
     affinity: 'Almighty';
     type: 'DRAIN';
     hpsp: HPSP;
@@ -336,7 +336,7 @@ export interface DrainSkillData extends BaseSkillData {
 }
 
 export class EndureSkill extends BaseSkill {
-    constructor(data: EndureSkillData)
+    constructor(data: EndureSkillData);
     affinity: 'Passive';
     type: 'ENDURE';
     priority: number;
@@ -351,7 +351,7 @@ export interface EndureSkillData extends BaseSkillData {
 }
 
 export class EvasionSkill extends BaseSkill {
-    constructor(data: EvasionSkillData)
+    constructor(data: EvasionSkillData);
     affinity: 'Passive';
     type: 'EVASION';
     elements: string[];
@@ -370,7 +370,7 @@ export interface EvasionSkillData extends BaseSkillData {
 }
 
 export class HalveSkill extends BaseSkill {
-    constructor(data: HalveSkillData)
+    constructor(data: HalveSkillData);
     affinity: BlessCurse;
     type: 'HALVE';
     cost: number;
@@ -383,7 +383,7 @@ export interface HalveSkillData extends BaseSkillData {
 }
 
 export class InstaKillSkill extends BaseSkill {
-    constructor(data: InstaKillSkillData)
+    constructor(data: InstaKillSkillData);
     affinity: BlessCurse;
     type: 'INSTAKILL';
     range: Range;
@@ -402,7 +402,7 @@ export interface InstaKillSkillData extends BaseSkillData {
 }
 
 export class InstaKillBoostSkill extends BaseSkill {
-    constructor(data: InstaKillBoostSkillData)
+    constructor(data: InstaKillBoostSkillData);
     affinity: 'Passive';
     type: 'INSTAKILLBOOST';
     element: BlessCurse;
@@ -415,7 +415,7 @@ export interface InstaKillBoostSkillData extends BaseSkillData {
 }
 
 export class MasterSkill extends BaseSkill {
-    constructor(data: MasterSkillData)
+    constructor(data: MasterSkillData);
     affinity: 'Passive';
     type: 'MASTER';
     skill: HPSP;
@@ -439,7 +439,7 @@ export interface MiscSkillData extends BaseSkillData {
 }
 
 export class NaviSkill extends BaseSkill {
-    constructor(data: NaviSkillData)
+    constructor(data: NaviSkillData);
     affinity: 'Passive';
     type: 'NAVI';
 }
@@ -450,7 +450,7 @@ export interface NaviSkillData extends BaseSkillData {
 }
 
 export class PostBattleSkill extends BaseSkill {
-    constructor(data: PostBattleSkillData)
+    constructor(data: PostBattleSkillData);
     affinity: 'Passive';
     type: 'POSTBATTLE';
     range: Range;
@@ -471,7 +471,7 @@ export interface PostBattleSkillData extends BaseSkillData {
 }
 
 export class RecoverySkill extends BaseSkill {
-    constructor(data: RecoverySkillData)
+    constructor(data: RecoverySkillData);
     affinity: 'Recovery';
     type: 'RECOVERY';
     range: Range;
@@ -496,7 +496,7 @@ export interface RecoverySkillData extends BaseSkillData {
 }
 
 export class RegenSkill extends BaseSkill {
-    constructor(data: RegenSkillData)
+    constructor(data: RegenSkillData);
     affinity: 'Passive';
     type: 'REGEN';
     hpspail: HPSPAIL;
@@ -517,7 +517,7 @@ export interface RegenSkillData extends BaseSkillData {
 }
 
 export class SupportSkill extends BaseSkill {
-    constructor(data: SupportSkillData)
+    constructor(data: SupportSkillData);
     affinity: 'Support';
     type: 'SUPPORT';
     range: Range;
@@ -542,7 +542,7 @@ export interface SupportSkillData extends BaseSkillData {
 }
 
 export class SusceptibilitySkill extends BaseSkill {
-    constructor(data: SusceptibilitySkillData)
+    constructor(data: SusceptibilitySkillData);
     affinity: 'Almighty';
     type: 'SUSCEPTIBILITY';
     range: Range;
@@ -557,7 +557,7 @@ export interface SusceptibilitySkillData extends BaseSkillData {
 }
 
 export class WallSkill extends BaseSkill {
-    constructor(data: WallSkillData)
+    constructor(data: WallSkillData);
     affinity: 'Support';
     type: 'WALL';
     cost: number;
