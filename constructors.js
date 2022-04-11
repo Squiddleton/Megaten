@@ -31,7 +31,7 @@ class Demon {
 		this.game = data.game;
 	}
 	/**
-	 * @type {Buffer} A buffer of the Treasure Demon's image
+	 * @type {Buffer} A buffer png of the demon
 	 */
 	get image() {
 		return readFileSync(`${__dirname}/images/demons/${this.devName}.png`);
@@ -504,40 +504,6 @@ module.exports.WallSkill = class extends BaseSkill {
 	}
 };
 
-module.exports.TreasureDemon = class TreasureDemon {
-	/**
-	 *
-	 * @param {import('./index').TreasureDemonData} data
-	 */
-	constructor(data) {
-		this.name = data.name;
-		this.devName = data.devName;
-		this.inherit = data.inherit;
-		this.arcana = data.arcana;
-		this.race = data.race;
-		this.level = data.level;
-		this.hp = data.hp;
-		this.sp = data.sp;
-		this.st = data.st;
-		this.ma = data.ma;
-		this.en = data.en;
-		this.ag = data.ag;
-		this.lu = data.lu;
-		this.skills = data.skills;
-		this.weak = data.weak;
-		this.resist = data.resist;
-		this.null = data.null;
-		this.drain = data.drain;
-		this.repel = data.repel;
-	}
-	/**
-	 * @type {Buffer} A buffer of the Treasure Demon's image
-	 */
-	get image() {
-		return readFileSync(`${__dirname}/images/treasuredemons/${this.devName}.png`);
-	}
-};
-
 /**
  *
  * @param {import('./index').SkillData} data
@@ -581,5 +547,4 @@ module.exports.dataToClass = data => {
  * @typedef Lists
  * @property {import('.').DemonData[]} demons
  * @property {import('.').SkillData[]} skills
- * @property {import('.').TreasureDemonData[]} treasureDemons
  */

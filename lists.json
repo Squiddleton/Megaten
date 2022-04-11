@@ -15446,6 +15446,67 @@
       "game": "p5"
     },
     {
+      "name": "Regent",
+      "devName": "regent",
+      "aliases": [],
+      "inherit": "Support",
+      "arcana": "Emperor",
+      "race": "Treasure",
+      "level": 10,
+      "hp": 165,
+      "mp": 93,
+      "st": 12,
+      "ma": 11,
+      "en": 10,
+      "ag": 10,
+      "lu": 10,
+      "learnset": [
+        {
+          "name": "Maragi",
+          "level": 0
+        },
+        {
+          "name": "Mabufu",
+          "level": 0
+        },
+        {
+          "name": "Magaru",
+          "level": 0
+        },
+        {
+          "name": "Mazio",
+          "level": 0
+        },
+        {
+          "name": "Mapsi",
+          "level": 0
+        },
+        {
+          "name": "Mafrei",
+          "level": 0
+        },
+        {
+          "name": "Makouha",
+          "level": 0
+        },
+        {
+          "name": "Maeiha",
+          "level": 0
+        }
+      ],
+      "weak": [
+        "Nuke"
+      ],
+      "resist": [
+        "Phys",
+        "Gun"
+      ],
+      "null": [],
+      "drain": [],
+      "repel": [],
+      "game": "p5"
+    },
+    {
       "name": "Robin Hood",
       "devName": "robinhood",
       "aliases": [],
@@ -27192,43 +27253,6 @@
           "chance": 5,
           "display": "Low"
         }
-      ]
-    }
-  ],
-  "treasureDemons": [
-    {
-      "name": "Regent",
-      "devName": "regent",
-      "inherit": "Support",
-      "arcana": "Emperor",
-      "race": "Treasure",
-      "level": 10,
-      "hp": 165,
-      "mp": 93,
-      "st": 12,
-      "ma": 11,
-      "en": 10,
-      "ag": 10,
-      "lu": 10,
-      "weak": [
-        "Nuke"
-      ],
-      "resist": [
-        "Phys",
-        "Gun"
-      ],
-      "null": [],
-      "drain": [],
-      "repel": [],
-      "skills": [
-        "Maragi",
-        "Mabufu",
-        "Magaru",
-        "Mazio",
-        "Mapsi",
-        "Mafrei",
-        "Makouha",
-        "Maeiha"
       ]
     }
   ]

@@ -571,65 +571,15 @@ export interface WallSkillData extends BaseSkillData {
     element: Element;
 }
 
-export interface TreasureDemonData {
-    name: string;
-    devName: string;
-    inherit: Inherit;
-    arcana: Arcana;
-    race: 'Treasure';
-    level: number;
-    hp: number;
-    sp: number;
-    st: number;
-    ma: number;
-    en: number;
-    ag: number;
-    lu: number;
-    skills: string[];
-    weak: Element[];
-    resist: Element[];
-    null: Element[];
-    drain: Element[];
-    repel: Element[];
-}
-
-export class TreasureDemon {
-    constructor(data: TreasureDemonData)
-    name: string;
-    devName: string;
-    inherit: Inherit;
-    arcana: Arcana;
-    race: 'Treasure';
-    level: number;
-    hp: number;
-    sp: number;
-    st: number;
-    ma: number;
-    en: number;
-    ag: number;
-    lu: number;
-    skills: string[];
-    weak: Element[];
-    resist: Element[];
-    null: Element[];
-    drain: Element[];
-    repel: Element[];
-    image: Buffer;
-}
-
 /** An array of all Demon instances  */
 export declare const demons: Demon[];
 /** An array of all Skill instances  */
 export declare const skills: Skill[];
-/** An array of all TreasureDemon instances  */
-export declare const treasureDemons: TreasureDemon[];
 
 /** Gets a Demon by its name, removing punctuation and accents */
 export function getDemon(name: string): Demon | null;
 /** Gets a Skill by its name, removing punctuation and accents */
 export function getSkill(name: string): Skill | null;
-/** Gets a TreasureDemon by its name, removing punctuation and accents */
-export function getTreasureDemon(name: string): TreasureDemon | null;
 
 /** The current version of the megaten package being ran */
 export declare const version: string;
