@@ -68,11 +68,11 @@
       "level": 3,
       "hp": 55,
       "mp": 93,
-      "st": 3,
-      "ma": 4,
-      "en": 5,
-      "ag": 7,
-      "lu": 3,
+      "st": 7,
+      "ma": 14,
+      "en": 9,
+      "ag": 11,
+      "lu": 11,
       "learnset": [
         {
           "name": "Dia",
@@ -225,8 +225,7 @@
       "repel": [],
       "game": "p5",
       "user": "Makoto Niijima",
-      "stage": 3,
-      "evoSkill": "Checkmate"
+      "stage": 3
     },
     {
       "name": "Al Azif",
@@ -272,8 +271,7 @@
       "repel": [],
       "game": "p5",
       "user": "Futaba Sakura",
-      "stage": 3,
-      "evoSkill": "Ultimate Support"
+      "stage": 3
     },
     {
       "name": "Alice",
@@ -285,11 +283,11 @@
       "level": 83,
       "hp": 189,
       "mp": 255,
-      "st": 45,
-      "ma": 61,
-      "en": 49,
-      "ag": 54,
-      "lu": 47,
+      "st": 7,
+      "ma": 46,
+      "en": 25,
+      "ag": 30,
+      "lu": 34,
       "learnset": [
         {
           "name": "Mamudoon",
@@ -344,11 +342,11 @@
       "level": 81,
       "hp": 410,
       "mp": 418,
-      "st": 45,
-      "ma": 54,
-      "en": 57,
-      "ag": 49,
-      "lu": 45,
+      "st": 24,
+      "ma": 68,
+      "en": 75,
+      "ag": 50,
+      "lu": 61,
       "learnset": [
         {
           "name": "Diamond Dust",
@@ -506,8 +504,7 @@
       "repel": [],
       "game": "p4",
       "user": "Yukiko Amagi",
-      "stage": 2,
-      "evoSkill": null
+      "stage": 2
     },
     {
       "name": "Ame-no-Uzume",
@@ -519,11 +516,11 @@
       "level": 13,
       "hp": 99,
       "mp": 139,
-      "st": 7,
-      "ma": 10,
-      "en": 9,
-      "ag": 11,
-      "lu": 9,
+      "st": 11,
+      "ma": 26,
+      "en": 14,
+      "ag": 19,
+      "lu": 20,
       "learnset": [
         {
           "name": "Mazio",
@@ -571,11 +568,11 @@
       "level": 44,
       "hp": 384,
       "mp": 206,
-      "st": 26,
-      "ma": 30,
-      "en": 31,
-      "ag": 27,
-      "lu": 25,
+      "st": 55,
+      "ma": 24,
+      "en": 56,
+      "ag": 29,
+      "lu": 34,
       "learnset": [
         {
           "name": "Mafreila",
@@ -735,8 +732,7 @@
       "repel": [],
       "game": "p5",
       "user": "Makoto Niijima",
-      "stage": 2,
-      "evoSkill": "Evade Psy"
+      "stage": 2
     },
     {
       "name": "Andras",
@@ -748,11 +744,11 @@
       "level": 27,
       "hp": 92,
       "mp": 108,
-      "st": 15,
-      "ma": 19,
-      "en": 19,
-      "ag": 21,
-      "lu": 14,
+      "st": 13,
+      "ma": 12,
+      "en": 13,
+      "ag": 20,
+      "lu": 19,
       "learnset": [
         {
           "name": "Foul Breath",
@@ -805,10 +801,10 @@
       "hp": 59,
       "mp": 103,
       "st": 6,
-      "ma": 9,
-      "en": 5,
-      "ag": 9,
-      "lu": 5,
+      "ma": 16,
+      "en": 8,
+      "ag": 12,
+      "lu": 12,
       "learnset": [
         {
           "name": "Kouha",
@@ -859,11 +855,11 @@
       "level": 34,
       "hp": 184,
       "mp": 240,
-      "st": 19,
-      "ma": 24,
+      "st": 15,
+      "ma": 45,
       "en": 22,
-      "ag": 21,
-      "lu": 23,
+      "ag": 31,
+      "lu": 34,
       "learnset": [
         {
           "name": "Hamaon",
@@ -913,11 +909,11 @@
       "level": 25,
       "hp": 272,
       "mp": 176,
-      "st": 14,
-      "ma": 18,
-      "en": 15,
-      "ag": 21,
-      "lu": 14,
+      "st": 39,
+      "ma": 24,
+      "en": 32,
+      "ag": 45,
+      "lu": 26,
       "learnset": [
         {
           "name": "Garula",
@@ -968,11 +964,11 @@
       "level": 11,
       "hp": 76,
       "mp": 118,
-      "st": 7,
-      "ma": 11,
-      "en": 6,
-      "ag": 10,
-      "lu": 6,
+      "st": 9,
+      "ma": 19,
+      "en": 11,
+      "ag": 17,
+      "lu": 15,
       "learnset": [
         {
           "name": "Rebellion",
@@ -1021,11 +1017,11 @@
       "level": 35,
       "hp": 290,
       "mp": 317,
-      "st": 21,
-      "ma": 23,
-      "en": 22,
-      "ag": 24,
-      "lu": 22,
+      "st": 27,
+      "ma": 58,
+      "en": 37,
+      "ag": 34,
+      "lu": 52,
       "learnset": [
         {
           "name": "Makarakarn",
@@ -1134,11 +1130,11 @@
       "level": 14,
       "hp": 102,
       "mp": 114,
-      "st": 11,
-      "ma": 9,
-      "en": 10,
-      "ag": 12,
-      "lu": 7,
+      "st": 15,
+      "ma": 16,
+      "en": 14,
+      "ag": 18,
+      "lu": 16,
       "learnset": [
         {
           "name": "Giant Slice",
@@ -1347,8 +1343,7 @@
       "repel": [],
       "game": "p5",
       "user": "Labrys",
-      "stage": 1,
-      "evoSkill": null
+      "stage": 1
     },
     {
       "name": "Ariadne Picaro",
@@ -1458,8 +1453,7 @@
       "repel": [],
       "game": "p5",
       "user": "P5 Protagonist",
-      "stage": 1,
-      "evoSkill": null
+      "stage": 1
     },
     {
       "name": "Artemisia",
@@ -1557,8 +1551,7 @@
       "repel": [],
       "game": "p3",
       "user": "Mitsuru Kirijo",
-      "stage": 2,
-      "evoSkill": null
+      "stage": 2
     },
     {
       "name": "Astarte",
@@ -1666,8 +1659,7 @@
       "repel": [],
       "game": "p5",
       "user": "Haru Okumura",
-      "stage": 2,
-      "evoSkill": "Evade Nuke"
+      "stage": 2
     },
     {
       "name": "Asterius",
@@ -1728,8 +1720,7 @@
       "repel": [],
       "game": "p5",
       "user": "Shadow Labrys",
-      "stage": 1,
-      "evoSkill": null
+      "stage": 1
     },
     {
       "name": "Asterius Picaro",
@@ -1800,11 +1791,11 @@
       "level": 76,
       "hp": 543,
       "mp": 382,
-      "st": 52,
-      "ma": 48,
-      "en": 51,
-      "ag": 49,
-      "lu": 35,
+      "st": 80,
+      "ma": 53,
+      "en": 73,
+      "ag": 52,
+      "lu": 53,
       "learnset": [
         {
           "name": "Atomic Flare",
@@ -1858,11 +1849,11 @@
       "level": 65,
       "hp": 328,
       "mp": 201,
-      "st": 51,
-      "ma": 36,
-      "en": 43,
-      "ag": 38,
-      "lu": 34,
+      "st": 48,
+      "ma": 41,
+      "en": 42,
+      "ag": 26,
+      "lu": 25,
       "learnset": [
         {
           "name": "Maragidyne",
@@ -1971,8 +1962,7 @@
       "repel": [],
       "game": "p5",
       "user": "Aigis",
-      "stage": 2,
-      "evoSkill": null
+      "stage": 2
     },
     {
       "name": "Athena Picaro",
@@ -2046,11 +2036,11 @@
       "level": 39,
       "hp": 312,
       "mp": 328,
-      "st": 23,
-      "ma": 30,
-      "en": 22,
-      "ag": 27,
-      "lu": 22,
+      "st": 28,
+      "ma": 59,
+      "en": 44,
+      "ag": 41,
+      "lu": 42,
       "learnset": [
         {
           "name": "Mazionga",
@@ -2102,11 +2092,11 @@
       "level": 82,
       "hp": 149,
       "mp": 129,
-      "st": 56,
-      "ma": 50,
-      "en": 48,
-      "ag": 51,
-      "lu": 48,
+      "st": 28,
+      "ma": 24,
+      "en": 18,
+      "ag": 21,
+      "lu": 15,
       "learnset": [
         {
           "name": "Maragidyne",
@@ -2160,11 +2150,11 @@
       "level": 82,
       "hp": 578,
       "mp": 476,
-      "st": 54,
-      "ma": 58,
-      "en": 53,
-      "ag": 47,
-      "lu": 41,
+      "st": 74,
+      "ma": 98,
+      "en": 76,
+      "ag": 65,
+      "lu": 67,
       "learnset": [
         {
           "name": "Panta Rhei",
@@ -2217,11 +2207,11 @@
       "level": 58,
       "hp": 142,
       "mp": 180,
-      "st": 34,
-      "ma": 42,
-      "en": 36,
-      "ag": 38,
-      "lu": 31,
+      "st": 16,
+      "ma": 34,
+      "en": 19,
+      "ag": 26,
+      "lu": 26,
       "learnset": [
         {
           "name": "Agidyne",
@@ -2275,11 +2265,11 @@
       "level": 52,
       "hp": 346,
       "mp": 233,
-      "st": 33,
-      "ma": 35,
-      "en": 33,
-      "ag": 37,
-      "lu": 25,
+      "st": 46,
+      "ma": 33,
+      "en": 46,
+      "ag": 39,
+      "lu": 40,
       "learnset": [
         {
           "name": "Ziodyne",
@@ -2331,11 +2321,11 @@
       "level": 87,
       "hp": 570,
       "mp": 517,
-      "st": 55,
-      "ma": 61,
-      "en": 54,
-      "ag": 56,
-      "lu": 42,
+      "st": 65,
+      "ma": 76,
+      "en": 75,
+      "ag": 92,
+      "lu": 92,
       "learnset": [
         {
           "name": "Maeigaon",
@@ -2393,11 +2383,11 @@
       "level": 82,
       "hp": 650,
       "mp": 391,
-      "st": 52,
-      "ma": 53,
-      "en": 51,
-      "ag": 48,
-      "lu": 49,
+      "st": 96,
+      "ma": 75,
+      "en": 90,
+      "ag": 61,
+      "lu": 50,
       "learnset": [
         {
           "name": "Eigaon",
@@ -2448,11 +2438,11 @@
       "level": 37,
       "hp": 225,
       "mp": 190,
-      "st": 25,
-      "ma": 27,
-      "en": 24,
-      "ag": 23,
-      "lu": 19,
+      "st": 31,
+      "ma": 34,
+      "en": 39,
+      "ag": 20,
+      "lu": 28,
       "learnset": [
         {
           "name": "Mabufula",
@@ -2504,11 +2494,11 @@
       "level": 9,
       "hp": 144,
       "mp": 101,
-      "st": 9,
-      "ma": 6,
-      "en": 8,
-      "ag": 8,
-      "lu": 3,
+      "st": 26,
+      "ma": 13,
+      "en": 24,
+      "ag": 18,
+      "lu": 14,
       "learnset": [
         {
           "name": "Cleave",
@@ -2554,11 +2544,11 @@
       "level": 4,
       "hp": 88,
       "mp": 76,
-      "st": 5,
-      "ma": 3,
-      "en": 3,
-      "ag": 5,
-      "lu": 3,
+      "st": 18,
+      "ma": 8,
+      "en": 14,
+      "ag": 13,
+      "lu": 11,
       "learnset": [
         {
           "name": "Lunge",
@@ -2603,10 +2593,10 @@
       "hp": 344,
       "mp": 262,
       "st": 49,
-      "ma": 37,
-      "en": 42,
-      "ag": 45,
-      "lu": 35,
+      "ma": 45,
+      "en": 41,
+      "ag": 28,
+      "lu": 33,
       "learnset": [
         {
           "name": "Freidyne",
@@ -2661,11 +2651,11 @@
       "level": 67,
       "hp": 255,
       "mp": 204,
-      "st": 44,
-      "ma": 46,
-      "en": 41,
-      "ag": 42,
-      "lu": 35,
+      "st": 38,
+      "ma": 33,
+      "en": 37,
+      "ag": 26,
+      "lu": 28,
       "learnset": [
         {
           "name": "Mabufudyne",
@@ -2720,11 +2710,11 @@
       "level": 18,
       "hp": 217,
       "mp": 119,
-      "st": 15,
-      "ma": 7,
-      "en": 16,
-      "ag": 8,
-      "lu": 15,
+      "st": 23,
+      "ma": 21,
+      "en": 35,
+      "ag": 15,
+      "lu": 23,
       "learnset": [
         {
           "name": "Sledgehammer",
@@ -2782,11 +2772,11 @@
       "level": 59,
       "hp": 273,
       "mp": 256,
-      "st": 36,
-      "ma": 42,
-      "en": 34,
-      "ag": 42,
-      "lu": 30,
+      "st": 30,
+      "ma": 48,
+      "en": 37,
+      "ag": 49,
+      "lu": 35,
       "learnset": [
         {
           "name": "Mamudoon",
@@ -2841,11 +2831,11 @@
       "level": 49,
       "hp": 126,
       "mp": 121,
-      "st": 35,
-      "ma": 33,
-      "en": 30,
-      "ag": 32,
-      "lu": 24,
+      "st": 23,
+      "ma": 19,
+      "en": 19,
+      "ag": 14,
+      "lu": 20,
       "learnset": [
         {
           "name": "Miracle Punch",
@@ -2960,11 +2950,11 @@
       "level": 45,
       "hp": 199,
       "mp": 222,
-      "st": 35,
-      "ma": 28,
-      "en": 30,
-      "ag": 32,
-      "lu": 17,
+      "st": 30,
+      "ma": 23,
+      "en": 25,
+      "ag": 42,
+      "lu": 35,
       "learnset": [
         {
           "name": "Swift Strike",
@@ -3117,8 +3107,7 @@
       "repel": [],
       "game": "p3",
       "user": "Akihiko Sanada",
-      "stage": 2,
-      "evoSkill": null
+      "stage": 2
     },
     {
       "name": "Cait Sith",
@@ -3130,11 +3119,11 @@
       "level": 5,
       "hp": 54,
       "mp": 70,
-      "st": 6,
-      "ma": 4,
-      "en": 4,
-      "ag": 5,
-      "lu": 3,
+      "st": 10,
+      "ma": 10,
+      "en": 7,
+      "ag": 7,
+      "lu": 5,
       "learnset": [
         {
           "name": "Agi",
@@ -3292,8 +3281,7 @@
       "repel": [],
       "game": "p5",
       "user": "Ryuji Sakamoto",
-      "stage": 1,
-      "evoSkill": null
+      "stage": 1
     },
     {
       "name": "Carmen",
@@ -3407,8 +3395,7 @@
       "repel": [],
       "game": "p5",
       "user": "Ann Takamaki",
-      "stage": 1,
-      "evoSkill": null
+      "stage": 1
     },
     {
       "name": "Castor",
@@ -3486,8 +3473,7 @@
       "repel": [],
       "game": "p3",
       "user": "Shinjiro Aragaki",
-      "stage": 1,
-      "evoSkill": null
+      "stage": 1
     },
     {
       "name": "Célestine",
@@ -3603,8 +3589,7 @@
       "repel": [],
       "game": "p5",
       "user": "Ann Takamaki",
-      "stage": 3,
-      "evoSkill": "High Energy"
+      "stage": 3
     },
     {
       "name": "Cendrillon",
@@ -3670,8 +3655,7 @@
       "repel": [],
       "game": "p5",
       "user": "Sumire Yoshizawa",
-      "stage": 1,
-      "evoSkill": null
+      "stage": 1
     },
     {
       "name": "Cerberus",
@@ -3683,11 +3667,11 @@
       "level": 55,
       "hp": 450,
       "mp": 223,
-      "st": 39,
-      "ma": 35,
-      "en": 32,
-      "ag": 39,
-      "lu": 27,
+      "st": 53,
+      "ma": 28,
+      "en": 59,
+      "ag": 43,
+      "lu": 30,
       "learnset": [
         {
           "name": "Agidyne",
@@ -3739,11 +3723,11 @@
       "level": 34,
       "hp": 450,
       "mp": 223,
-      "st": 20,
-      "ma": 21,
-      "en": 20,
-      "ag": 29,
-      "lu": 19,
+      "st": 53,
+      "ma": 28,
+      "en": 59,
+      "ag": 43,
+      "lu": 30,
       "learnset": [
         {
           "name": "Agilao",
@@ -3818,8 +3802,7 @@
       "repel": [],
       "game": "smt5",
       "user": "Koromaru",
-      "stage": 1,
-      "evoSkill": null
+      "stage": 1
     },
     {
       "name": "Chernobog",
@@ -3831,11 +3814,11 @@
       "level": 62,
       "hp": 248,
       "mp": 251,
-      "st": 40,
-      "ma": 37,
-      "en": 39,
-      "ag": 38,
-      "lu": 39,
+      "st": 43,
+      "ma": 45,
+      "en": 27,
+      "ag": 29,
+      "lu": 35,
       "learnset": [
         {
           "name": "Mudoon",
@@ -3893,11 +3876,11 @@
       "level": 74,
       "hp": 320,
       "mp": 216,
-      "st": 51,
-      "ma": 40,
-      "en": 42,
-      "ag": 48,
-      "lu": 48,
+      "st": 47,
+      "ma": 41,
+      "en": 37,
+      "ag": 34,
+      "lu": 27,
       "learnset": [
         {
           "name": "Maragidyne",
@@ -3952,11 +3935,11 @@
       "level": 88,
       "hp": 577,
       "mp": 378,
-      "st": 56,
-      "ma": 57,
-      "en": 54,
-      "ag": 53,
-      "lu": 51,
+      "st": 81,
+      "ma": 71,
+      "en": 73,
+      "ag": 45,
+      "lu": 53,
       "learnset": [
         {
           "name": "Psycho Force",
@@ -4073,11 +4056,11 @@
       "level": 27,
       "hp": 278,
       "mp": 265,
-      "st": 14,
-      "ma": 19,
-      "en": 18,
-      "ag": 20,
-      "lu": 17,
+      "st": 20,
+      "ma": 33,
+      "en": 42,
+      "ag": 51,
+      "lu": 30,
       "learnset": [
         {
           "name": "Mahama",
@@ -4130,11 +4113,11 @@
       "level": 76,
       "hp": 293,
       "mp": 201,
-      "st": 55,
-      "ma": 44,
-      "en": 46,
-      "ag": 48,
-      "lu": 42,
+      "st": 41,
+      "ma": 33,
+      "en": 37,
+      "ag": 40,
+      "lu": 25,
       "learnset": [
         {
           "name": "One-shot Kill",
@@ -4191,11 +4174,11 @@
       "level": 83,
       "hp": 298,
       "mp": 240,
-      "st": 44,
-      "ma": 57,
-      "en": 49,
-      "ag": 51,
-      "lu": 55,
+      "st": 49,
+      "ma": 44,
+      "en": 29,
+      "ag": 22,
+      "lu": 48,
       "learnset": [
         {
           "name": "Samarecarm",
@@ -4249,11 +4232,11 @@
       "level": 40,
       "hp": 144,
       "mp": 183,
-      "st": 21,
-      "ma": 33,
-      "en": 24,
-      "ag": 24,
-      "lu": 25,
+      "st": 15,
+      "ma": 36,
+      "en": 21,
+      "ag": 19,
+      "lu": 30,
       "learnset": [
         {
           "name": "Spirit Drain",
@@ -4307,11 +4290,11 @@
       "level": 50,
       "hp": 226,
       "mp": 169,
-      "st": 34,
-      "ma": 32,
-      "en": 34,
-      "ag": 28,
-      "lu": 29,
+      "st": 44,
+      "ma": 20,
+      "en": 31,
+      "ag": 32,
+      "lu": 33,
       "learnset": [
         {
           "name": "Bad Beat",
@@ -4363,11 +4346,11 @@
       "level": 32,
       "hp": 276,
       "mp": 269,
-      "st": 21,
-      "ma": 23,
-      "en": 19,
-      "ag": 22,
-      "lu": 18,
+      "st": 31,
+      "ma": 48,
+      "en": 33,
+      "ag": 33,
+      "lu": 41,
       "learnset": [
         {
           "name": "Agilao",
@@ -4538,8 +4521,7 @@
       "repel": [],
       "game": "p5",
       "user": "Morgana",
-      "stage": 3,
-      "evoSkill": "Miracle Rush"
+      "stage": 3
     },
     {
       "name": "Dionysus",
@@ -4551,11 +4533,11 @@
       "level": 71,
       "hp": 225,
       "mp": 182,
-      "st": 42,
-      "ma": 48,
-      "en": 44,
-      "ag": 42,
-      "lu": 44,
+      "st": 33,
+      "ma": 31,
+      "en": 30,
+      "ag": 32,
+      "lu": 30,
       "learnset": [
         {
           "name": "Maziodyne",
@@ -4662,11 +4644,11 @@
       "level": 68,
       "hp": 223,
       "mp": 253,
-      "st": 42,
-      "ma": 45,
-      "en": 43,
-      "ag": 44,
-      "lu": 37,
+      "st": 23,
+      "ma": 48,
+      "en": 28,
+      "ag": 35,
+      "lu": 40,
       "learnset": [
         {
           "name": "Makajamaon",
@@ -4722,11 +4704,11 @@
       "level": 16,
       "hp": 214,
       "mp": 157,
-      "st": 12,
-      "ma": 10,
-      "en": 13,
-      "ag": 10,
-      "lu": 10,
+      "st": 38,
+      "ma": 19,
+      "en": 32,
+      "ag": 24,
+      "lu": 20,
       "learnset": [
         {
           "name": "Maragi",
@@ -4832,8 +4814,7 @@
       "repel": [],
       "game": "p5",
       "user": "Sumire Yoshizawa",
-      "stage": 3,
-      "evoSkill": "Masquerade"
+      "stage": 3
     },
     {
       "name": "Fafnir",
@@ -4845,11 +4826,11 @@
       "level": 86,
       "hp": 370,
       "mp": 220,
-      "st": 61,
-      "ma": 55,
-      "en": 58,
-      "ag": 48,
-      "lu": 43,
+      "st": 56,
+      "ma": 23,
+      "en": 50,
+      "ag": 29,
+      "lu": 41,
       "learnset": [
         {
           "name": "Gigantomachia",
@@ -4905,11 +4886,11 @@
       "level": 19,
       "hp": 285,
       "mp": 182,
-      "st": 15,
-      "ma": 11,
-      "en": 13,
-      "ag": 14,
-      "lu": 11,
+      "st": 50,
+      "ma": 30,
+      "en": 36,
+      "ag": 36,
+      "lu": 20,
       "learnset": [
         {
           "name": "Giant Slice",
@@ -4964,11 +4945,11 @@
       "level": 63,
       "hp": 141,
       "mp": 170,
-      "st": 41,
-      "ma": 39,
-      "en": 40,
-      "ag": 42,
-      "lu": 34,
+      "st": 19,
+      "ma": 26,
+      "en": 20,
+      "ag": 24,
+      "lu": 25,
       "learnset": [
         {
           "name": "Psiodyne",
@@ -5022,11 +5003,11 @@
       "level": 46,
       "hp": 86,
       "mp": 114,
-      "st": 23,
-      "ma": 32,
-      "en": 29,
-      "ag": 34,
-      "lu": 27,
+      "st": 8,
+      "ma": 21,
+      "en": 10,
+      "ag": 14,
+      "lu": 18,
       "learnset": [
         {
           "name": "Magarula",
@@ -5079,11 +5060,11 @@
       "level": 86,
       "hp": 424,
       "mp": 291,
-      "st": 60,
-      "ma": 58,
-      "en": 55,
-      "ag": 52,
-      "lu": 40,
+      "st": 63,
+      "ma": 32,
+      "en": 46,
+      "ag": 48,
+      "lu": 39,
       "learnset": [
         {
           "name": "Myriad Slashes",
@@ -5139,11 +5120,11 @@
       "level": 23,
       "hp": 346,
       "mp": 282,
-      "st": 14,
-      "ma": 17,
-      "en": 16,
-      "ag": 15,
-      "lu": 14,
+      "st": 43,
+      "ma": 39,
+      "en": 37,
+      "ag": 51,
+      "lu": 40,
       "learnset": [
         {
           "name": "Tetra Break",
@@ -5193,11 +5174,11 @@
       "level": 77,
       "hp": 534,
       "mp": 437,
-      "st": 43,
-      "ma": 51,
-      "en": 48,
-      "ag": 54,
-      "lu": 42,
+      "st": 56,
+      "ma": 73,
+      "en": 65,
+      "ag": 64,
+      "lu": 67,
       "learnset": [
         {
           "name": "Maziodyne",
@@ -5253,11 +5234,11 @@
       "level": 53,
       "hp": 364,
       "mp": 217,
-      "st": 39,
+      "st": 50,
       "ma": 31,
-      "en": 37,
-      "ag": 33,
-      "lu": 26,
+      "en": 54,
+      "ag": 23,
+      "lu": 35,
       "learnset": [
         {
           "name": "Miracle Punch",
@@ -5369,11 +5350,11 @@
       "level": 52,
       "hp": 319,
       "mp": 302,
-      "st": 30,
-      "ma": 36,
-      "en": 29,
-      "ag": 39,
-      "lu": 29,
+      "st": 46,
+      "ma": 32,
+      "en": 33,
+      "ag": 56,
+      "lu": 51,
       "learnset": [
         {
           "name": "Garudyne",
@@ -5427,11 +5408,11 @@
       "level": 7,
       "hp": 153,
       "mp": 88,
-      "st": 5,
-      "ma": 6,
-      "en": 7,
-      "ag": 6,
-      "lu": 4,
+      "st": 23,
+      "ma": 15,
+      "en": 28,
+      "ag": 8,
+      "lu": 16,
       "learnset": [
         {
           "name": "Bufu",
@@ -5483,11 +5464,11 @@
       "level": 43,
       "hp": 381,
       "mp": 245,
-      "st": 32,
-      "ma": 24,
-      "en": 32,
-      "ag": 29,
-      "lu": 19,
+      "st": 61,
+      "ma": 46,
+      "en": 40,
+      "ag": 35,
+      "lu": 38,
       "learnset": [
         {
           "name": "Mudoon",
@@ -5646,8 +5627,7 @@
       "repel": [],
       "game": "p5",
       "user": "Yusuke Kitagawa",
-      "stage": 1,
-      "evoSkill": null
+      "stage": 1
     },
     {
       "name": "Gorgon",
@@ -5819,8 +5799,7 @@
       "repel": [],
       "game": "p5",
       "user": "Yusuke Kitagawa",
-      "stage": 3,
-      "evoSkill": "Hyakka Ryouran"
+      "stage": 3
     },
     {
       "name": "Hachiman",
@@ -5885,11 +5864,11 @@
       "level": 64,
       "hp": 267,
       "mp": 169,
-      "st": 43,
-      "ma": 38,
-      "en": 40,
-      "ag": 40,
-      "lu": 38,
+      "st": 44,
+      "ma": 22,
+      "en": 36,
+      "ag": 32,
+      "lu": 28,
       "learnset": [
         {
           "name": "Tempest Slash",
@@ -6035,8 +6014,7 @@
       "repel": [],
       "game": "p4",
       "user": "Chie Satonaka",
-      "stage": 3,
-      "evoSkill": "Dragon Hustle"
+      "stage": 3
     },
     {
       "name": "Hariti",
@@ -6048,11 +6026,11 @@
       "level": 40,
       "hp": 166,
       "mp": 196,
-      "st": 24,
-      "ma": 29,
-      "en": 25,
-      "ag": 26,
-      "lu": 23,
+      "st": 25,
+      "ma": 32,
+      "en": 20,
+      "ag": 25,
+      "lu": 26,
       "learnset": [
         {
           "name": "Zionga",
@@ -6272,8 +6250,7 @@
       "repel": [],
       "game": "p5",
       "user": "Ann Takamaki",
-      "stage": 2,
-      "evoSkill": "Evade Ice"
+      "stage": 2
     },
     {
       "name": "Hecatoncheires",
@@ -6285,11 +6262,11 @@
       "level": 42,
       "hp": 365,
       "mp": 190,
-      "st": 35,
-      "ma": 22,
-      "en": 27,
-      "ag": 23,
-      "lu": 24,
+      "st": 52,
+      "ma": 21,
+      "en": 52,
+      "ag": 29,
+      "lu": 32,
       "learnset": [
         {
           "name": "Swift Strike",
@@ -6343,11 +6320,11 @@
       "level": 37,
       "hp": 194,
       "mp": 173,
-      "st": 23,
-      "ma": 24,
-      "en": 24,
-      "ag": 30,
-      "lu": 17,
+      "st": 26,
+      "ma": 27,
+      "en": 23,
+      "ag": 34,
+      "lu": 28,
       "learnset": [
         {
           "name": "Mudoon",
@@ -6453,8 +6430,7 @@
       "repel": [],
       "game": "p5",
       "user": "Goro Akechi",
-      "stage": 3,
-      "evoSkill": "Rebellion Blade"
+      "stage": 3
     },
     {
       "name": "Hermes",
@@ -6540,8 +6516,7 @@
       "repel": [],
       "game": "p3",
       "user": "Junpei Iori",
-      "stage": 1,
-      "evoSkill": null
+      "stage": 1
     },
     {
       "name": "High Pixie",
@@ -6553,11 +6528,11 @@
       "level": 16,
       "hp": 93,
       "mp": 129,
-      "st": 8,
-      "ma": 14,
-      "en": 10,
-      "ag": 13,
-      "lu": 10,
+      "st": 9,
+      "ma": 23,
+      "en": 12,
+      "ag": 20,
+      "lu": 16,
       "learnset": [
         {
           "name": "Garu",
@@ -6665,8 +6640,7 @@
       "repel": [],
       "game": "p4",
       "user": "Rise Kujikawa",
-      "stage": 1,
-      "evoSkill": null
+      "stage": 1
     },
     {
       "name": "Hokuto Seikun",
@@ -6737,11 +6711,11 @@
       "level": 47,
       "hp": 194,
       "mp": 203,
-      "st": 30,
-      "ma": 32,
-      "en": 29,
-      "ag": 35,
-      "lu": 22,
+      "st": 25,
+      "ma": 28,
+      "en": 27,
+      "ag": 38,
+      "lu": 35,
       "learnset": [
         {
           "name": "Megidola",
@@ -6795,11 +6769,11 @@
       "level": 9,
       "hp": 133,
       "mp": 168,
-      "st": 4,
-      "ma": 10,
-      "en": 4,
-      "ag": 8,
-      "lu": 8,
+      "st": 12,
+      "ma": 31,
+      "en": 21,
+      "ag": 29,
+      "lu": 29,
       "learnset": [
         {
           "name": "Agi",
@@ -6848,11 +6822,11 @@
       "level": 5,
       "hp": 118,
       "mp": 110,
-      "st": 4,
-      "ma": 6,
-      "en": 4,
-      "ag": 5,
-      "lu": 3,
+      "st": 17,
+      "ma": 17,
+      "en": 15,
+      "ag": 20,
+      "lu": 18,
       "learnset": [
         {
           "name": "Life Drain",
@@ -6897,11 +6871,11 @@
       "level": 14,
       "hp": 114,
       "mp": 134,
-      "st": 11,
-      "ma": 9,
-      "en": 9,
-      "ag": 12,
-      "lu": 8,
+      "st": 16,
+      "ma": 15,
+      "en": 17,
+      "ag": 25,
+      "lu": 21,
       "learnset": [
         {
           "name": "Pulinpa",
@@ -7021,8 +6995,7 @@
       "repel": [],
       "game": "p3",
       "user": "Yukari Takeba",
-      "stage": 1,
-      "evoSkill": null
+      "stage": 1
     },
     {
       "name": "Ippon-Datara",
@@ -7034,11 +7007,11 @@
       "level": 13,
       "hp": 120,
       "mp": 79,
-      "st": 11,
-      "ma": 7,
-      "en": 14,
-      "ag": 6,
-      "lu": 8,
+      "st": 17,
+      "ma": 12,
+      "en": 20,
+      "ag": 9,
+      "lu": 15,
       "learnset": [
         {
           "name": "Sledgehammer",
@@ -7090,11 +7063,11 @@
       "level": 85,
       "hp": 310,
       "mp": 317,
-      "st": 48,
-      "ma": 59,
-      "en": 49,
-      "ag": 58,
-      "lu": 48,
+      "st": 20,
+      "ma": 61,
+      "en": 33,
+      "ag": 41,
+      "lu": 53,
       "learnset": [
         {
           "name": "Mediarahan",
@@ -7146,11 +7119,11 @@
       "level": 26,
       "hp": 204,
       "mp": 251,
-      "st": 14,
-      "ma": 20,
-      "en": 17,
-      "ag": 18,
-      "lu": 16,
+      "st": 21,
+      "ma": 47,
+      "en": 25,
+      "ag": 36,
+      "lu": 36,
       "learnset": [
         {
           "name": "Makouga",
@@ -7204,11 +7177,11 @@
       "level": 1,
       "hp": 204,
       "mp": 251,
-      "st": 1,
-      "ma": 3,
-      "en": 2,
-      "ag": 1,
-      "lu": 3,
+      "st": 21,
+      "ma": 47,
+      "en": 25,
+      "ag": 36,
+      "lu": 36,
       "learnset": [
         {
           "name": "Dia",
@@ -7294,8 +7267,7 @@
       "repel": [],
       "game": "smt5",
       "user": "Yukari Takeba",
-      "stage": 2,
-      "evoSkill": null
+      "stage": 2
     },
     {
       "name": "Izanagi",
@@ -7371,8 +7343,7 @@
       "repel": [],
       "game": "p5",
       "user": "P4 Protgaonist",
-      "stage": 1,
-      "evoSkill": null
+      "stage": 1
     },
     {
       "name": "Izanagi-no-Okami",
@@ -7439,8 +7410,7 @@
       "repel": [],
       "game": "p5",
       "user": "P4 Protagonist",
-      "stage": 2,
-      "evoSkill": null
+      "stage": 2
     },
     {
       "name": "Izanagi-no-Okami Picaro",
@@ -7574,11 +7544,11 @@
       "level": 11,
       "hp": 119,
       "mp": 153,
-      "st": 8,
-      "ma": 9,
-      "en": 7,
-      "ag": 9,
-      "lu": 7,
+      "st": 14,
+      "ma": 29,
+      "en": 15,
+      "ag": 21,
+      "lu": 21,
       "learnset": [
         {
           "name": "Bufu",
@@ -7628,11 +7598,11 @@
       "level": 2,
       "hp": 90,
       "mp": 135,
-      "st": 2,
-      "ma": 3,
-      "en": 3,
-      "ag": 3,
-      "lu": 2,
+      "st": 11,
+      "ma": 23,
+      "en": 12,
+      "ag": 19,
+      "lu": 18,
       "learnset": [
         {
           "name": "Agi",
@@ -7677,11 +7647,11 @@
       "level": 51,
       "hp": 165,
       "mp": 158,
-      "st": 31,
-      "ma": 34,
-      "en": 29,
-      "ag": 36,
-      "lu": 30,
+      "st": 22,
+      "ma": 18,
+      "en": 24,
+      "ag": 27,
+      "lu": 26,
       "learnset": [
         {
           "name": "Garudyne",
@@ -7736,11 +7706,11 @@
       "level": 22,
       "hp": 312,
       "mp": 212,
-      "st": 18,
-      "ma": 11,
-      "en": 16,
-      "ag": 15,
-      "lu": 13,
+      "st": 40,
+      "ma": 38,
+      "en": 42,
+      "ag": 24,
+      "lu": 29,
       "learnset": [
         {
           "name": "Assault Dive",
@@ -7935,8 +7905,7 @@
       "repel": [],
       "game": "p4",
       "user": "Yosuke Hanamura",
-      "stage": 1,
-      "evoSkill": null
+      "stage": 1
     },
     {
       "name": "Johanna",
@@ -8050,8 +8019,7 @@
       "repel": [],
       "game": "p5",
       "user": "Makoto Niijima",
-      "stage": 1,
-      "evoSkill": null
+      "stage": 1
     },
     {
       "name": "Juno",
@@ -8101,8 +8069,7 @@
       "repel": [],
       "game": "p3",
       "user": "Fuuka Yamagishi",
-      "stage": 2,
-      "evoSkill": null
+      "stage": 2
     },
     {
       "name": "Kaguya",
@@ -8163,8 +8130,7 @@
       "repel": [],
       "game": "p5",
       "user": "Marie",
-      "stage": 1,
-      "evoSkill": null
+      "stage": 1
     },
     {
       "name": "Kaguya Picaro",
@@ -8233,11 +8199,11 @@
       "level": 36,
       "hp": 209,
       "mp": 216,
-      "st": 23,
-      "ma": 26,
-      "en": 24,
-      "ag": 22,
-      "lu": 20,
+      "st": 24,
+      "ma": 30,
+      "en": 27,
+      "ag": 41,
+      "lu": 38,
       "learnset": [
         {
           "name": "Makajama",
@@ -8364,8 +8330,7 @@
       "repel": [],
       "game": "p3",
       "user": "Ken Amada",
-      "stage": 2,
-      "evoSkill": null
+      "stage": 2
     },
     {
       "name": "Kali",
@@ -8377,11 +8342,11 @@
       "level": 63,
       "hp": 481,
       "mp": 288,
-      "st": 43,
-      "ma": 41,
-      "en": 39,
-      "ag": 39,
-      "lu": 34,
+      "st": 74,
+      "ma": 35,
+      "en": 62,
+      "ag": 48,
+      "lu": 35,
       "learnset": [
         {
           "name": "Heat Wave",
@@ -8529,8 +8494,7 @@
       "repel": [],
       "game": "p4",
       "user": "Teddie",
-      "stage": 2,
-      "evoSkill": null
+      "stage": 2
     },
     {
       "name": "Kamui-Moshiri",
@@ -8633,8 +8597,7 @@
       "repel": [],
       "game": "p4",
       "user": "Teddie",
-      "stage": 3,
-      "evoSkill": "Kamui Miracle"
+      "stage": 3
     },
     {
       "name": "Kamu Susano-o",
@@ -8754,8 +8717,7 @@
       "repel": [],
       "game": "p5",
       "user": "Yusuke Kitagawa",
-      "stage": 2,
-      "evoSkill": "Evade Fire"
+      "stage": 2
     },
     {
       "name": "Kanzeon",
@@ -8825,8 +8787,7 @@
       "repel": [],
       "game": "p4",
       "user": "Rise Kujikawa",
-      "stage": 2,
-      "evoSkill": null
+      "stage": 2
     },
     {
       "name": "Kelpie",
@@ -8838,11 +8799,11 @@
       "level": 6,
       "hp": 136,
       "mp": 153,
-      "st": 5,
-      "ma": 5,
-      "en": 5,
-      "ag": 6,
-      "lu": 4,
+      "st": 20,
+      "ma": 19,
+      "en": 21,
+      "ag": 29,
+      "lu": 24,
       "learnset": [
         {
           "name": "Garu",
@@ -8886,11 +8847,11 @@
       "level": 40,
       "hp": 105,
       "mp": 165,
-      "st": 22,
-      "ma": 31,
-      "en": 24,
-      "ag": 28,
-      "lu": 22,
+      "st": 10,
+      "ma": 30,
+      "en": 15,
+      "ag": 20,
+      "lu": 20,
       "learnset": [
         {
           "name": "Lullaby",
@@ -8940,11 +8901,11 @@
       "level": 61,
       "hp": 172,
       "mp": 175,
-      "st": 40,
-      "ma": 44,
-      "en": 43,
-      "ag": 29,
-      "lu": 34,
+      "st": 27,
+      "ma": 34,
+      "en": 21,
+      "ag": 21,
+      "lu": 26,
       "learnset": [
         {
           "name": "Bufudyne",
@@ -8996,11 +8957,11 @@
       "level": 25,
       "hp": 323,
       "mp": 170,
-      "st": 21,
-      "ma": 13,
-      "en": 21,
-      "ag": 15,
-      "lu": 12,
+      "st": 43,
+      "ma": 27,
+      "en": 52,
+      "ag": 21,
+      "lu": 25,
       "learnset": [
         {
           "name": "Vajra Blast",
@@ -9142,8 +9103,7 @@
       "repel": [],
       "game": "p4",
       "user": "Teddie",
-      "stage": 1,
-      "evoSkill": null
+      "stage": 1
     },
     {
       "name": "Kodama",
@@ -9155,11 +9115,11 @@
       "level": 11,
       "hp": 46,
       "mp": 65,
-      "st": 7,
-      "ma": 11,
+      "st": 5,
+      "ma": 9,
       "en": 8,
-      "ag": 10,
-      "lu": 4,
+      "ag": 8,
+      "lu": 9,
       "learnset": [
         {
           "name": "Garu",
@@ -9213,11 +9173,11 @@
       "level": 76,
       "hp": 455,
       "mp": 365,
-      "st": 43,
-      "ma": 51,
-      "en": 50,
-      "ag": 53,
-      "lu": 38,
+      "st": 56,
+      "ma": 58,
+      "en": 57,
+      "ag": 58,
+      "lu": 56,
       "learnset": [
         {
           "name": "Psycho Force",
@@ -9366,8 +9326,7 @@
       "repel": [],
       "game": "p4",
       "user": "Yukiko Amagi",
-      "stage": 1,
-      "evoSkill": null
+      "stage": 1
     },
     {
       "name": "Koppa Tengu",
@@ -9379,11 +9338,11 @@
       "level": 11,
       "hp": 116,
       "mp": 129,
-      "st": 7,
-      "ma": 8,
-      "en": 8,
-      "ag": 11,
-      "lu": 6,
+      "st": 13,
+      "ma": 18,
+      "en": 16,
+      "ag": 27,
+      "lu": 20,
       "learnset": [
         {
           "name": "Garu",
@@ -9435,11 +9394,11 @@
       "level": 9,
       "hp": 118,
       "mp": 148,
-      "st": 5,
-      "ma": 8,
-      "en": 6,
-      "ag": 9,
-      "lu": 6,
+      "st": 13,
+      "ma": 27,
+      "en": 15,
+      "ag": 21,
+      "lu": 25,
       "learnset": [
         {
           "name": "Makajama",
@@ -9492,11 +9451,11 @@
       "level": 49,
       "hp": 249,
       "mp": 194,
-      "st": 37,
-      "ma": 29,
-      "en": 34,
+      "st": 33,
+      "ma": 31,
+      "en": 33,
       "ag": 29,
-      "lu": 25,
+      "lu": 30,
       "learnset": [
         {
           "name": "Assault Dive",
@@ -9607,8 +9566,7 @@
       "repel": [],
       "game": "p4",
       "user": "Rise Kujikawa",
-      "stage": 3,
-      "evoSkill": "Complete Analysis"
+      "stage": 3
     },
     {
       "name": "Kumbhanda",
@@ -9620,11 +9578,11 @@
       "level": 42,
       "hp": 208,
       "mp": 168,
-      "st": 29,
-      "ma": 25,
-      "en": 27,
-      "ag": 26,
-      "lu": 26,
+      "st": 32,
+      "ma": 30,
+      "en": 26,
+      "ag": 29,
+      "lu": 27,
       "learnset": [
         {
           "name": "Magarula",
@@ -9678,11 +9636,11 @@
       "level": 31,
       "hp": 179,
       "mp": 186,
-      "st": 20,
-      "ma": 19,
-      "en": 21,
-      "ag": 24,
-      "lu": 16,
+      "st": 28,
+      "ma": 21,
+      "en": 25,
+      "ag": 36,
+      "lu": 31,
       "learnset": [
         {
           "name": "Double Shot",
@@ -9787,11 +9745,11 @@
       "level": 42,
       "hp": 218,
       "mp": 259,
-      "st": 24,
-      "ma": 30,
-      "en": 26,
-      "ag": 28,
-      "lu": 25,
+      "st": 22,
+      "ma": 50,
+      "en": 27,
+      "ag": 36,
+      "lu": 37,
       "learnset": [
         {
           "name": "Hysterical Slap",
@@ -9843,11 +9801,11 @@
       "level": 35,
       "hp": 334,
       "mp": 256,
-      "st": 18,
-      "ma": 26,
-      "en": 22,
-      "ag": 25,
-      "lu": 21,
+      "st": 24,
+      "ma": 39,
+      "en": 44,
+      "ag": 31,
+      "lu": 56,
       "learnset": [
         {
           "name": "Mabaisudi",
@@ -9901,11 +9859,11 @@
       "level": 69,
       "hp": 363,
       "mp": 373,
-      "st": 40,
-      "ma": 47,
-      "en": 43,
-      "ag": 46,
-      "lu": 38,
+      "st": 30,
+      "ma": 65,
+      "en": 41,
+      "ag": 44,
+      "lu": 51,
       "learnset": [
         {
           "name": "Lullaby",
@@ -9959,10 +9917,10 @@
       "hp": 156,
       "mp": 188,
       "st": 21,
-      "ma": 15,
-      "en": 18,
-      "ag": 19,
-      "lu": 12,
+      "ma": 27,
+      "en": 24,
+      "ag": 28,
+      "lu": 29,
       "learnset": [
         {
           "name": "Mudo",
@@ -10018,10 +9976,10 @@
       "hp": 82,
       "mp": 115,
       "st": 9,
-      "ma": 17,
-      "en": 12,
-      "ag": 16,
-      "lu": 10,
+      "ma": 20,
+      "en": 14,
+      "ag": 13,
+      "lu": 15,
       "learnset": [
         {
           "name": "Rakunda",
@@ -10070,11 +10028,11 @@
       "level": 38,
       "hp": 100,
       "mp": 93,
-      "st": 24,
-      "ma": 24,
-      "en": 30,
-      "ag": 23,
-      "lu": 20,
+      "st": 15,
+      "ma": 16,
+      "en": 18,
+      "ag": 14,
+      "lu": 15,
       "learnset": [
         {
           "name": "Bloodbath",
@@ -10131,11 +10089,11 @@
       "level": 32,
       "hp": 138,
       "mp": 172,
-      "st": 17,
-      "ma": 23,
+      "st": 13,
+      "ma": 34,
       "en": 18,
-      "ag": 25,
-      "lu": 20,
+      "ag": 27,
+      "lu": 26,
       "learnset": [
         {
           "name": "Bufula",
@@ -10190,11 +10148,11 @@
       "level": 60,
       "hp": 326,
       "mp": 363,
-      "st": 33,
-      "ma": 43,
-      "en": 37,
-      "ag": 39,
-      "lu": 35,
+      "st": 22,
+      "ma": 63,
+      "en": 36,
+      "ag": 48,
+      "lu": 57,
       "learnset": [
         {
           "name": "Mabufudyne",
@@ -10249,11 +10207,11 @@
       "level": 70,
       "hp": 129,
       "mp": 163,
-      "st": 45,
-      "ma": 47,
-      "en": 43,
-      "ag": 46,
-      "lu": 39,
+      "st": 15,
+      "ma": 31,
+      "en": 16,
+      "ag": 24,
+      "lu": 26,
       "learnset": [
         {
           "name": "Mamudoon",
@@ -10311,11 +10269,11 @@
       "level": 75,
       "hp": 276,
       "mp": 284,
-      "st": 53,
+      "st": 31,
       "ma": 47,
-      "en": 46,
-      "ag": 47,
-      "lu": 39,
+      "en": 33,
+      "ag": 40,
+      "lu": 42,
       "learnset": [
         {
           "name": "Fortify Spirit",
@@ -10361,8 +10319,7 @@
       "repel": [],
       "game": "smt5",
       "user": "Goro Akechi",
-      "stage": 2,
-      "evoSkill": null
+      "stage": 2
     },
     {
       "name": "Loki",
@@ -10374,11 +10331,11 @@
       "level": 64,
       "hp": 276,
       "mp": 284,
-      "st": 48,
-      "ma": 50,
-      "en": 31,
-      "ag": 47,
-      "lu": 23,
+      "st": 31,
+      "ma": 47,
+      "en": 33,
+      "ag": 40,
+      "lu": 42,
       "learnset": [
         {
           "name": "Bufudyne",
@@ -10534,8 +10491,7 @@
       "repel": [],
       "game": "p3",
       "user": "Fuuka Yamagishi",
-      "stage": 1,
-      "evoSkill": null
+      "stage": 1
     },
     {
       "name": "Lucy",
@@ -10643,8 +10599,7 @@
       "repel": [],
       "game": "p5",
       "user": "Haru Okumura",
-      "stage": 3,
-      "evoSkill": "Life Wall"
+      "stage": 3
     },
     {
       "name": "Macabre",
@@ -10656,11 +10611,11 @@
       "level": 73,
       "hp": 240,
       "mp": 158,
-      "st": 48,
-      "ma": 49,
-      "en": 42,
-      "ag": 48,
-      "lu": 39,
+      "st": 42,
+      "ma": 18,
+      "en": 30,
+      "ag": 27,
+      "lu": 32,
       "learnset": [
         {
           "name": "Death Scythe",
@@ -10714,11 +10669,11 @@
       "level": 90,
       "hp": 524,
       "mp": 389,
-      "st": 55,
-      "ma": 54,
-      "en": 61,
-      "ag": 59,
-      "lu": 48,
+      "st": 69,
+      "ma": 74,
+      "en": 65,
+      "ag": 45,
+      "lu": 41,
       "learnset": [
         {
           "name": "Inferno",
@@ -10827,8 +10782,7 @@
       "repel": [],
       "game": "p5",
       "user": "Tohru Adachi",
-      "stage": 2,
-      "evoSkill": null
+      "stage": 2
     },
     {
       "name": "Magatsu-Izanagi Picaro",
@@ -10900,10 +10854,10 @@
       "hp": 109,
       "mp": 119,
       "st": 13,
-      "ma": 12,
-      "en": 8,
-      "ag": 11,
-      "lu": 8,
+      "ma": 17,
+      "en": 16,
+      "ag": 21,
+      "lu": 24,
       "learnset": [
         {
           "name": "Double Fangs",
@@ -10959,11 +10913,11 @@
       "level": 3,
       "hp": 49,
       "mp": 75,
-      "st": 2,
-      "ma": 3,
-      "en": 3,
-      "ag": 4,
-      "lu": 4,
+      "st": 6,
+      "ma": 9,
+      "en": 7,
+      "ag": 11,
+      "lu": 9,
       "learnset": [
         {
           "name": "Pulinpa",
@@ -11003,11 +10957,11 @@
       "level": 73,
       "hp": 449,
       "mp": 249,
-      "st": 51,
-      "ma": 43,
-      "en": 43,
-      "ag": 45,
-      "lu": 44,
+      "st": 57,
+      "ma": 31,
+      "en": 61,
+      "ag": 25,
+      "lu": 53,
       "learnset": [
         {
           "name": "Mapsiodyne",
@@ -11068,11 +11022,11 @@
       "level": 93,
       "hp": 424,
       "mp": 485,
-      "st": 52,
-      "ma": 66,
-      "en": 53,
-      "ag": 54,
-      "lu": 61,
+      "st": 34,
+      "ma": 80,
+      "en": 46,
+      "ag": 61,
+      "lu": 74,
       "learnset": [
         {
           "name": "Invigorate 3",
@@ -11128,11 +11082,11 @@
       "level": 17,
       "hp": 136,
       "mp": 154,
-      "st": 11,
-      "ma": 13,
-      "en": 10,
-      "ag": 16,
-      "lu": 8,
+      "st": 23,
+      "ma": 17,
+      "en": 14,
+      "ag": 28,
+      "lu": 22,
       "learnset": [
         {
           "name": "Psi",
@@ -11180,11 +11134,11 @@
       "level": 58,
       "hp": 341,
       "mp": 281,
-      "st": 37,
-      "ma": 32,
-      "en": 40,
-      "ag": 39,
-      "lu": 33,
+      "st": 44,
+      "ma": 30,
+      "en": 41,
+      "ag": 52,
+      "lu": 38,
       "learnset": [
         {
           "name": "Megaton Raid",
@@ -11356,8 +11310,7 @@
       "repel": [],
       "game": "p5",
       "user": "Morgana",
-      "stage": 2,
-      "evoSkill": "Evade Elec"
+      "stage": 2
     },
     {
       "name": "Messiah",
@@ -11426,8 +11379,7 @@
       ],
       "game": "p5",
       "user": "P3 Protagonist",
-      "stage": 2,
-      "evoSkill": null
+      "stage": 2
     },
     {
       "name": "Messiah Picaro",
@@ -11506,11 +11458,11 @@
       "level": 89,
       "hp": 626,
       "mp": 443,
-      "st": 54,
-      "ma": 61,
-      "en": 60,
-      "ag": 57,
-      "lu": 42,
+      "st": 82,
+      "ma": 95,
+      "en": 79,
+      "ag": 72,
+      "lu": 76,
       "learnset": [
         {
           "name": "Mahamaon",
@@ -11570,11 +11522,11 @@
       "level": 87,
       "hp": 552,
       "mp": 474,
-      "st": 57,
-      "ma": 54,
-      "en": 55,
-      "ag": 56,
-      "lu": 46,
+      "st": 76,
+      "ma": 78,
+      "en": 65,
+      "ag": 76,
+      "lu": 59,
       "learnset": [
         {
           "name": "Divine Judgement",
@@ -11722,8 +11674,7 @@
       "repel": [],
       "game": "p5",
       "user": "Haru Okumura",
-      "stage": 1,
-      "evoSkill": null
+      "stage": 1
     },
     {
       "name": "Mishaguji",
@@ -11735,11 +11686,11 @@
       "level": 52,
       "hp": 235,
       "mp": 159,
-      "st": 32,
-      "ma": 32,
-      "en": 32,
+      "st": 39,
+      "ma": 21,
+      "en": 31,
       "ag": 32,
-      "lu": 35,
+      "lu": 25,
       "learnset": [
         {
           "name": "Regenerate 3",
@@ -11795,11 +11746,11 @@
       "level": 39,
       "hp": 462,
       "mp": 325,
-      "st": 27,
-      "ma": 25,
-      "en": 27,
-      "ag": 25,
-      "lu": 20,
+      "st": 58,
+      "ma": 60,
+      "en": 49,
+      "ag": 42,
+      "lu": 50,
       "learnset": [
         {
           "name": "Tentarafoo",
@@ -11858,11 +11809,11 @@
       "level": 33,
       "hp": 339,
       "mp": 302,
-      "st": 19,
-      "ma": 26,
-      "en": 19,
-      "ag": 24,
-      "lu": 18,
+      "st": 43,
+      "ma": 53,
+      "en": 39,
+      "ag": 37,
+      "lu": 43,
       "learnset": [
         {
           "name": "Kouga",
@@ -11915,11 +11866,11 @@
       "level": 9,
       "hp": 88,
       "mp": 90,
-      "st": 9,
-      "ma": 5,
-      "en": 6,
-      "ag": 10,
-      "lu": 4,
+      "st": 15,
+      "ma": 12,
+      "en": 15,
+      "ag": 11,
+      "lu": 16,
       "learnset": [
         {
           "name": "Tarukaja",
@@ -11967,11 +11918,11 @@
       "level": 60,
       "hp": 297,
       "mp": 212,
-      "st": 32,
-      "ma": 45,
-      "en": 42,
-      "ag": 31,
-      "lu": 37,
+      "st": 42,
+      "ma": 42,
+      "en": 36,
+      "ag": 28,
+      "lu": 25,
       "learnset": [
         {
           "name": "Agidyne",
@@ -12029,11 +11980,11 @@
       "level": 72,
       "hp": 306,
       "mp": 338,
-      "st": 43,
-      "ma": 51,
-      "en": 48,
-      "ag": 42,
-      "lu": 39,
+      "st": 28,
+      "ma": 59,
+      "en": 58,
+      "ag": 24,
+      "lu": 46,
       "learnset": [
         {
           "name": "Megidola",
@@ -12085,11 +12036,11 @@
       "level": 85,
       "hp": 352,
       "mp": 362,
-      "st": 55,
-      "ma": 54,
-      "en": 48,
-      "ag": 50,
-      "lu": 55,
+      "st": 42,
+      "ma": 60,
+      "en": 45,
+      "ag": 36,
+      "lu": 40,
       "learnset": [
         {
           "name": "Mabufudyne",
@@ -12143,11 +12094,11 @@
       "level": 33,
       "hp": 139,
       "mp": 153,
-      "st": 21,
-      "ma": 24,
-      "en": 16,
-      "ag": 24,
-      "lu": 21,
+      "st": 17,
+      "ma": 15,
+      "en": 19,
+      "ag": 30,
+      "lu": 27,
       "learnset": [
         {
           "name": "Skull Cracker",
@@ -12201,10 +12152,10 @@
       "level": 24,
       "hp": 115,
       "mp": 109,
-      "st": 15,
-      "ma": 17,
-      "en": 15,
-      "ag": 17,
+      "st": 28,
+      "ma": 14,
+      "en": 25,
+      "ag": 20,
       "lu": 15,
       "learnset": [
         {
@@ -12259,10 +12210,10 @@
       "level": 48,
       "hp": 175,
       "mp": 187,
-      "st": 27,
-      "ma": 31,
-      "en": 29,
-      "ag": 33,
+      "st": 22,
+      "ma": 34,
+      "en": 16,
+      "ag": 35,
       "lu": 31,
       "learnset": [
         {
@@ -12318,11 +12269,11 @@
       "level": 74,
       "hp": 300,
       "mp": 365,
-      "st": 45,
-      "ma": 52,
-      "en": 44,
-      "ag": 46,
-      "lu": 42,
+      "st": 27,
+      "ma": 67,
+      "en": 30,
+      "ag": 42,
+      "lu": 56,
       "learnset": [
         {
           "name": "Marin Karin",
@@ -12410,8 +12361,7 @@
       "repel": [],
       "game": "p5",
       "user": "Futaba Sakura",
-      "stage": 1,
-      "evoSkill": null
+      "stage": 1
     },
     {
       "name": "Nekomata",
@@ -12423,11 +12373,11 @@
       "level": 17,
       "hp": 158,
       "mp": 166,
-      "st": 13,
-      "ma": 10,
-      "en": 12,
-      "ag": 15,
-      "lu": 8,
+      "st": 23,
+      "ma": 18,
+      "en": 20,
+      "ag": 33,
+      "lu": 29,
       "learnset": [
         {
           "name": "Magaru",
@@ -12479,11 +12429,11 @@
       "level": 30,
       "hp": 57,
       "mp": 73,
-      "st": 19,
-      "ma": 20,
-      "en": 19,
-      "ag": 21,
-      "lu": 18,
+      "st": 6,
+      "ma": 7,
+      "en": 11,
+      "ag": 4,
+      "lu": 8,
       "learnset": [
         {
           "name": "Psio",
@@ -12585,8 +12535,7 @@
       "repel": [],
       "game": "p3",
       "user": "Ken Amada",
-      "stage": 1,
-      "evoSkill": null
+      "stage": 1
     },
     {
       "name": "Nata Taishi",
@@ -12707,11 +12656,11 @@
       "level": 52,
       "hp": 358,
       "mp": 321,
-      "st": 30,
-      "ma": 38,
-      "en": 33,
+      "st": 39,
+      "ma": 59,
+      "en": 40,
       "ag": 34,
-      "lu": 28,
+      "lu": 49,
       "learnset": [
         {
           "name": "Ziodyne",
@@ -12765,11 +12714,11 @@
       "level": 20,
       "hp": 289,
       "mp": 180,
-      "st": 16,
-      "ma": 10,
-      "en": 17,
-      "ag": 14,
-      "lu": 10,
+      "st": 47,
+      "ma": 30,
+      "en": 38,
+      "ag": 25,
+      "lu": 29,
       "learnset": [
         {
           "name": "Maeiha",
@@ -12823,11 +12772,11 @@
       "level": 8,
       "hp": 71,
       "mp": 91,
-      "st": 7,
-      "ma": 3,
-      "en": 9,
-      "ag": 8,
-      "lu": 4,
+      "st": 14,
+      "ma": 9,
+      "en": 10,
+      "ag": 13,
+      "lu": 12,
       "learnset": [
         {
           "name": "Snap",
@@ -12871,11 +12820,11 @@
       "level": 66,
       "hp": 242,
       "mp": 211,
-      "st": 40,
-      "ma": 44,
-      "en": 43,
-      "ag": 43,
-      "lu": 35,
+      "st": 32,
+      "ma": 33,
+      "en": 29,
+      "ag": 35,
+      "lu": 32,
       "learnset": [
         {
           "name": "Ziodyne",
@@ -12933,11 +12882,11 @@
       "level": 84,
       "hp": 477,
       "mp": 345,
-      "st": 53,
-      "ma": 58,
-      "en": 54,
-      "ag": 52,
-      "lu": 42,
+      "st": 65,
+      "ma": 57,
+      "en": 58,
+      "ag": 48,
+      "lu": 32,
       "learnset": [
         {
           "name": "Thunder Reign",
@@ -12992,11 +12941,11 @@
       "level": 54,
       "hp": 320,
       "mp": 236,
-      "st": 39,
-      "ma": 35,
-      "en": 33,
-      "ag": 32,
-      "lu": 30,
+      "st": 47,
+      "ma": 26,
+      "en": 47,
+      "ag": 40,
+      "lu": 28,
       "learnset": [
         {
           "name": "Mapsio",
@@ -13111,11 +13060,11 @@
       "level": 89,
       "hp": 549,
       "mp": 297,
-      "st": 56,
-      "ma": 53,
-      "en": 57,
-      "ag": 59,
-      "lu": 49,
+      "st": 67,
+      "ma": 46,
+      "en": 65,
+      "ag": 31,
+      "lu": 48,
       "learnset": [
         {
           "name": "Myriad Slashes",
@@ -13168,11 +13117,11 @@
       "level": 20,
       "hp": 151,
       "mp": 93,
-      "st": 19,
-      "ma": 9,
-      "en": 17,
+      "st": 21,
+      "ma": 12,
+      "en": 24,
       "ag": 12,
-      "lu": 10,
+      "lu": 16,
       "learnset": [
         {
           "name": "Rampage",
@@ -13219,11 +13168,11 @@
       "level": 12,
       "hp": 42,
       "mp": 59,
-      "st": 9,
-      "ma": 12,
-      "en": 7,
-      "ag": 10,
-      "lu": 5,
+      "st": 5,
+      "ma": 8,
+      "en": 8,
+      "ag": 7,
+      "lu": 6,
       "learnset": [
         {
           "name": "Mudo",
@@ -13274,11 +13223,11 @@
       "level": 17,
       "hp": 213,
       "mp": 264,
-      "st": 11,
-      "ma": 14,
-      "en": 15,
-      "ag": 12,
-      "lu": 6,
+      "st": 35,
+      "ma": 41,
+      "en": 32,
+      "ag": 26,
+      "lu": 35,
       "learnset": [
         {
           "name": "Maragi",
@@ -13382,8 +13331,7 @@
       "repel": [],
       "game": "p5",
       "user": "P3 Protagonist",
-      "stage": 1,
-      "evoSkill": null
+      "stage": 1
     },
     {
       "name": "Orpheus F",
@@ -13448,8 +13396,7 @@
       "repel": [],
       "game": "p5",
       "user": "P3 Protagonist",
-      "stage": 1,
-      "evoSkill": null
+      "stage": 1
     },
     {
       "name": "Orpheus Picaro",
@@ -13607,8 +13554,7 @@
       "repel": [],
       "game": "p5",
       "user": "P3 Protagonist",
-      "stage": 3,
-      "evoSkill": null
+      "stage": 3
     },
     {
       "name": "Orthrus",
@@ -13620,11 +13566,11 @@
       "level": 21,
       "hp": 255,
       "mp": 155,
-      "st": 16,
-      "ma": 14,
-      "en": 14,
-      "ag": 19,
-      "lu": 7,
+      "st": 41,
+      "ma": 21,
+      "en": 32,
+      "ag": 34,
+      "lu": 22,
       "learnset": [
         {
           "name": "Agilao",
@@ -13674,11 +13620,11 @@
       "level": 42,
       "hp": 264,
       "mp": 169,
-      "st": 32,
-      "ma": 24,
-      "en": 25,
-      "ag": 31,
-      "lu": 21,
+      "st": 45,
+      "ma": 21,
+      "en": 35,
+      "ag": 33,
+      "lu": 26,
       "learnset": [
         {
           "name": "Oni-Kagura",
@@ -13784,11 +13730,11 @@
       "level": 54,
       "hp": 305,
       "mp": 261,
-      "st": 32,
-      "ma": 37,
-      "en": 33,
-      "ag": 40,
-      "lu": 27,
+      "st": 51,
+      "ma": 40,
+      "en": 35,
+      "ag": 37,
+      "lu": 53,
       "learnset": [
         {
           "name": "Abysmal Surge",
@@ -13910,8 +13856,7 @@
       "repel": [],
       "game": "p3",
       "user": "Aigis",
-      "stage": 1,
-      "evoSkill": null
+      "stage": 1
     },
     {
       "name": "Pandora",
@@ -14025,8 +13970,7 @@
       "repel": [],
       "game": "p5",
       "user": "Sophia",
-      "stage": 2,
-      "evoSkill": "Makougaon"
+      "stage": 2
     },
     {
       "name": "Parvati",
@@ -14038,11 +13982,11 @@
       "level": 56,
       "hp": 151,
       "mp": 204,
-      "st": 33,
+      "st": 17,
       "ma": 39,
-      "en": 33,
-      "ag": 39,
-      "lu": 31,
+      "en": 20,
+      "ag": 28,
+      "lu": 29,
       "learnset": [
         {
           "name": "Diarama",
@@ -14097,11 +14041,11 @@
       "level": 45,
       "hp": 273,
       "mp": 241,
-      "st": 29,
-      "ma": 33,
-      "en": 27,
-      "ag": 26,
-      "lu": 27,
+      "st": 31,
+      "ma": 41,
+      "en": 34,
+      "ag": 35,
+      "lu": 40,
       "learnset": [
         {
           "name": "Maeiga",
@@ -14225,8 +14169,7 @@
       "repel": [],
       "game": "p3",
       "user": "Mitsuru Kirijo",
-      "stage": 1,
-      "evoSkill": null
+      "stage": 1
     },
     {
       "name": "Phoenix",
@@ -14292,11 +14235,11 @@
       "level": 28,
       "hp": 144,
       "mp": 155,
-      "st": 19,
-      "ma": 21,
-      "en": 21,
-      "ag": 16,
-      "lu": 14,
+      "st": 26,
+      "ma": 12,
+      "en": 20,
+      "ag": 30,
+      "lu": 26,
       "learnset": [
         {
           "name": "Dream Needle",
@@ -14433,8 +14376,7 @@
       "repel": [],
       "game": "p5",
       "user": "Sophia",
-      "stage": 1,
-      "evoSkill": null
+      "stage": 1
     },
     {
       "name": "Pixie",
@@ -14446,11 +14388,11 @@
       "level": 2,
       "hp": 32,
       "mp": 82,
-      "st": 1,
-      "ma": 3,
-      "en": 3,
-      "ag": 4,
-      "lu": 2,
+      "st": 2,
+      "ma": 7,
+      "en": 4,
+      "ag": 8,
+      "lu": 6,
       "learnset": [
         {
           "name": "Zio",
@@ -14559,8 +14501,7 @@
       "repel": [],
       "game": "p3",
       "user": "Akihiko Sanada",
-      "stage": 1,
-      "evoSkill": null
+      "stage": 1
     },
     {
       "name": "Power",
@@ -14572,11 +14513,11 @@
       "level": 41,
       "hp": 239,
       "mp": 153,
-      "st": 30,
-      "ma": 26,
-      "en": 28,
-      "ag": 25,
-      "lu": 21,
+      "st": 31,
+      "ma": 27,
+      "en": 36,
+      "ag": 21,
+      "lu": 25,
       "learnset": [
         {
           "name": "Hamaon",
@@ -14631,11 +14572,11 @@
       "level": 29,
       "hp": 130,
       "mp": 175,
-      "st": 17,
-      "ma": 19,
-      "en": 18,
-      "ag": 21,
-      "lu": 19,
+      "st": 13,
+      "ma": 34,
+      "en": 16,
+      "ag": 22,
+      "lu": 22,
       "learnset": [
         {
           "name": "Makouga",
@@ -14723,8 +14664,7 @@
       "repel": [],
       "game": "p5",
       "user": "Futaba Sakura",
-      "stage": 2,
-      "evoSkill": "Treasure Skimmer"
+      "stage": 2
     },
     {
       "name": "Psyche",
@@ -14810,8 +14750,7 @@
       "repel": [],
       "game": "p3",
       "user": "Metis",
-      "stage": 1,
-      "evoSkill": null
+      "stage": 1
     },
     {
       "name": "Queen Mab",
@@ -14825,11 +14764,11 @@
       "level": 43,
       "hp": 266,
       "mp": 289,
-      "st": 23,
-      "ma": 35,
-      "en": 26,
-      "ag": 30,
-      "lu": 22,
+      "st": 25,
+      "ma": 52,
+      "en": 30,
+      "ag": 33,
+      "lu": 49,
       "learnset": [
         {
           "name": "Mazionga",
@@ -14883,11 +14822,11 @@
       "level": 66,
       "hp": 171,
       "mp": 144,
-      "st": 41,
-      "ma": 46,
-      "en": 41,
-      "ag": 43,
-      "lu": 34,
+      "st": 24,
+      "ma": 30,
+      "en": 23,
+      "ag": 24,
+      "lu": 24,
       "learnset": [
         {
           "name": "Magarula",
@@ -14944,10 +14883,10 @@
       "hp": 241,
       "mp": 140,
       "st": 33,
-      "ma": 37,
+      "ma": 31,
       "en": 36,
-      "ag": 35,
-      "lu": 31,
+      "ag": 19,
+      "lu": 22,
       "learnset": [
         {
           "name": "Ziodyne",
@@ -14997,11 +14936,11 @@
       "level": 24,
       "hp": 114,
       "mp": 90,
-      "st": 20,
-      "ma": 15,
-      "en": 18,
-      "ag": 17,
-      "lu": 9,
+      "st": 25,
+      "ma": 10,
+      "en": 19,
+      "ag": 16,
+      "lu": 14,
       "learnset": [
         {
           "name": "Giant Slice",
@@ -15058,11 +14997,11 @@
       "level": 48,
       "hp": 334,
       "mp": 348,
-      "st": 28,
-      "ma": 34,
-      "en": 30,
-      "ag": 33,
-      "lu": 26,
+      "st": 46,
+      "ma": 59,
+      "en": 36,
+      "ag": 39,
+      "lu": 51,
       "learnset": [
         {
           "name": "Swift Strike",
@@ -15165,8 +15104,7 @@
       "repel": [],
       "game": "p5",
       "user": "P5 Protagonist",
-      "stage": 3,
-      "evoSkill": null
+      "stage": 3
     },
     {
       "name": "Raphael",
@@ -15178,11 +15116,11 @@
       "level": 78,
       "hp": 528,
       "mp": 387,
-      "st": 57,
-      "ma": 45,
-      "en": 49,
-      "ag": 55,
-      "lu": 35,
+      "st": 70,
+      "ma": 80,
+      "en": 62,
+      "ag": 50,
+      "lu": 48,
       "learnset": [
         {
           "name": "Sword Dance",
@@ -15235,11 +15173,11 @@
       "level": 41,
       "hp": 272,
       "mp": 201,
-      "st": 26,
-      "ma": 27,
-      "en": 25,
-      "ag": 29,
-      "lu": 23,
+      "st": 39,
+      "ma": 37,
+      "en": 29,
+      "ag": 31,
+      "lu": 32,
       "learnset": [
         {
           "name": "Rising Slash",
@@ -15430,8 +15368,7 @@
       "repel": [],
       "game": "p5",
       "user": "Goro Akechi",
-      "stage": 1,
-      "evoSkill": null
+      "stage": 1
     },
     {
       "name": "Rokuten Maoh",
@@ -15531,8 +15468,7 @@
       "repel": [],
       "game": "p4",
       "user": "Kanji Tatsumi",
-      "stage": 2,
-      "evoSkill": null
+      "stage": 2
     },
     {
       "name": "Saki Mitama",
@@ -15596,11 +15532,11 @@
       "level": 75,
       "hp": 536,
       "mp": 458,
-      "st": 46,
-      "ma": 51,
-      "en": 49,
-      "ag": 48,
-      "lu": 38,
+      "st": 71,
+      "ma": 83,
+      "en": 74,
+      "ag": 63,
+      "lu": 53,
       "learnset": [
         {
           "name": "Mahamaon",
@@ -15655,11 +15591,11 @@
       "level": 23,
       "hp": 55,
       "mp": 81,
-      "st": 11,
-      "ma": 13,
-      "en": 14,
-      "ag": 17,
-      "lu": 21,
+      "st": 9,
+      "ma": 9,
+      "en": 8,
+      "ag": 11,
+      "lu": 12,
       "learnset": [
         {
           "name": "Dormina",
@@ -15712,11 +15648,11 @@
       "level": 50,
       "hp": 208,
       "mp": 254,
-      "st": 30,
-      "ma": 35,
-      "en": 32,
-      "ag": 33,
-      "lu": 27,
+      "st": 21,
+      "ma": 48,
+      "en": 25,
+      "ag": 37,
+      "lu": 36,
       "learnset": [
         {
           "name": "Mediarama",
@@ -15890,8 +15826,7 @@
       "repel": [],
       "game": "p5",
       "user": "P5 Protagonist",
-      "stage": 2,
-      "evoSkill": null
+      "stage": 2
     },
     {
       "name": "Scathach",
@@ -15903,11 +15838,11 @@
       "level": 77,
       "hp": 307,
       "mp": 238,
-      "st": 48,
-      "ma": 52,
-      "en": 46,
-      "ag": 48,
-      "lu": 44,
+      "st": 44,
+      "ma": 37,
+      "en": 32,
+      "ag": 40,
+      "lu": 32,
       "learnset": [
         {
           "name": "Mabufudyne",
@@ -15962,11 +15897,11 @@
       "level": 62,
       "hp": 231,
       "mp": 183,
-      "st": 38,
-      "ma": 41,
-      "en": 43,
-      "ag": 37,
-      "lu": 34,
+      "st": 31,
+      "ma": 33,
+      "en": 29,
+      "ag": 36,
+      "lu": 31,
       "learnset": [
         {
           "name": "Bufudyne",
@@ -16132,8 +16067,7 @@
       "repel": [],
       "game": "p5",
       "user": "Ryuji Sakamoto",
-      "stage": 2,
-      "evoSkill": "Evade Wind"
+      "stage": 2
     },
     {
       "name": "Senri",
@@ -16197,11 +16131,11 @@
       "level": 25,
       "hp": 193,
       "mp": 163,
-      "st": 19,
-      "ma": 16,
-      "en": 18,
-      "ag": 13,
-      "lu": 16,
+      "st": 35,
+      "ma": 26,
+      "en": 25,
+      "ag": 27,
+      "lu": 20,
       "learnset": [
         {
           "name": "Giant Slice",
@@ -16250,11 +16184,11 @@
       "level": 51,
       "hp": 409,
       "mp": 284,
-      "st": 32,
-      "ma": 35,
-      "en": 30,
-      "ag": 25,
-      "lu": 28,
+      "st": 62,
+      "ma": 51,
+      "en": 43,
+      "ag": 40,
+      "lu": 34,
       "learnset": [
         {
           "name": "One-shot Kill",
@@ -16306,11 +16240,11 @@
       "level": 15,
       "hp": 91,
       "mp": 117,
-      "st": 10,
-      "ma": 11,
-      "en": 11,
-      "ag": 11,
-      "lu": 9,
+      "st": 15,
+      "ma": 15,
+      "en": 14,
+      "ag": 19,
+      "lu": 16,
       "learnset": [
         {
           "name": "Double Fangs",
@@ -16362,10 +16296,10 @@
       "hp": 135,
       "mp": 159,
       "st": 16,
-      "ma": 14,
-      "en": 12,
-      "ag": 9,
-      "lu": 10,
+      "ma": 29,
+      "en": 18,
+      "ag": 23,
+      "lu": 23,
       "learnset": [
         {
           "name": "Tarukaja",
@@ -16420,11 +16354,11 @@
       "level": 82,
       "hp": 670,
       "mp": 440,
-      "st": 55,
-      "ma": 54,
-      "en": 53,
-      "ag": 53,
-      "lu": 38,
+      "st": 101,
+      "ma": 88,
+      "en": 79,
+      "ag": 74,
+      "lu": 73,
       "learnset": [
         {
           "name": "Psycho Force",
@@ -16482,11 +16416,11 @@
       "level": 84,
       "hp": 398,
       "mp": 233,
-      "st": 61,
-      "ma": 43,
-      "en": 55,
-      "ag": 55,
-      "lu": 45,
+      "st": 59,
+      "ma": 27,
+      "en": 54,
+      "ag": 41,
+      "lu": 29,
       "learnset": [
         {
           "name": "Brave Blade",
@@ -16542,11 +16476,11 @@
       "level": 6,
       "hp": 189,
       "mp": 210,
-      "st": 4,
-      "ma": 7,
-      "en": 4,
-      "ag": 5,
-      "lu": 5,
+      "st": 19,
+      "ma": 40,
+      "en": 23,
+      "ag": 29,
+      "lu": 34,
       "learnset": [
         {
           "name": "Bufu",
@@ -16591,11 +16525,11 @@
       "level": 53,
       "hp": 320,
       "mp": 345,
-      "st": 33,
-      "ma": 39,
-      "en": 32,
-      "ag": 34,
-      "lu": 28,
+      "st": 22,
+      "ma": 62,
+      "en": 36,
+      "ag": 54,
+      "lu": 49,
       "learnset": [
         {
           "name": "Deadly Fury",
@@ -16643,11 +16577,11 @@
       "level": 10,
       "hp": 41,
       "mp": 40,
-      "st": 9,
-      "ma": 6,
-      "en": 11,
-      "ag": 6,
-      "lu": 5,
+      "st": 5,
+      "ma": 4,
+      "en": 6,
+      "ag": 3,
+      "lu": 4,
       "learnset": [
         {
           "name": "Lunge",
@@ -16693,11 +16627,11 @@
       "level": 80,
       "hp": 399,
       "mp": 407,
-      "st": 47,
-      "ma": 56,
-      "en": 45,
-      "ag": 56,
-      "lu": 43,
+      "st": 33,
+      "ma": 67,
+      "en": 43,
+      "ag": 68,
+      "lu": 55,
       "learnset": [
         {
           "name": "Kougaon",
@@ -16751,11 +16685,11 @@
       "level": 7,
       "hp": 165,
       "mp": 197,
-      "st": 4,
-      "ma": 7,
-      "en": 5,
-      "ag": 8,
-      "lu": 4,
+      "st": 17,
+      "ma": 38,
+      "en": 20,
+      "ag": 31,
+      "lu": 29,
       "learnset": [
         {
           "name": "Marin Karin",
@@ -16806,11 +16740,11 @@
       "level": 17,
       "hp": 83,
       "mp": 98,
-      "st": 9,
-      "ma": 14,
-      "en": 12,
-      "ag": 13,
-      "lu": 10,
+      "st": 12,
+      "ma": 16,
+      "en": 14,
+      "ag": 16,
+      "lu": 14,
       "learnset": [
         {
           "name": "Mapsi",
@@ -16863,11 +16797,11 @@
       "level": 24,
       "hp": 328,
       "mp": 227,
-      "st": 16,
-      "ma": 15,
-      "en": 15,
-      "ag": 18,
-      "lu": 15,
+      "st": 47,
+      "ma": 41,
+      "en": 39,
+      "ag": 33,
+      "lu": 28,
       "learnset": [
         {
           "name": "Mabufu",
@@ -16924,11 +16858,11 @@
       "level": 55,
       "hp": 206,
       "mp": 169,
-      "st": 32,
-      "ma": 38,
-      "en": 32,
-      "ag": 40,
-      "lu": 31,
+      "st": 28,
+      "ma": 30,
+      "en": 26,
+      "ag": 26,
+      "lu": 26,
       "learnset": [
         {
           "name": "Tempest Slash",
@@ -17005,8 +16939,7 @@
       "repel": [],
       "game": "smt5",
       "user": "Naoto Shirogane",
-      "stage": 1,
-      "evoSkill": null
+      "stage": 1
     },
     {
       "name": "Sumeo-Okami",
@@ -17114,8 +17047,7 @@
       "repel": [],
       "game": "p4",
       "user": "Yukiko Amagi",
-      "stage": 3,
-      "evoSkill": "Burning Petals"
+      "stage": 3
     },
     {
       "name": "Surt",
@@ -17127,11 +17059,11 @@
       "level": 83,
       "hp": 388,
       "mp": 233,
-      "st": 55,
-      "ma": 54,
-      "en": 51,
-      "ag": 50,
-      "lu": 46,
+      "st": 56,
+      "ma": 46,
+      "en": 49,
+      "ag": 29,
+      "lu": 36,
       "learnset": [
         {
           "name": "Blazing Hell",
@@ -17280,8 +17212,7 @@
       "repel": [],
       "game": "p4",
       "user": "Yosuke Hanamura",
-      "stage": 2,
-      "evoSkill": null
+      "stage": 2
     },
     {
       "name": "Suzaku",
@@ -17295,11 +17226,11 @@
       "level": 16,
       "hp": 188,
       "mp": 219,
-      "st": 9,
-      "ma": 12,
-      "en": 10,
-      "ag": 15,
-      "lu": 9,
+      "st": 23,
+      "ma": 41,
+      "en": 24,
+      "ag": 36,
+      "lu": 28,
       "learnset": [
         {
           "name": "Frei",
@@ -17449,8 +17380,7 @@
       "repel": [],
       "game": "p4",
       "user": "Chie Satonaka",
-      "stage": 2,
-      "evoSkill": null
+      "stage": 2
     },
     {
       "name": "Takehaya Susano-o",
@@ -17554,8 +17484,7 @@
       "repel": [],
       "game": "p4",
       "user": "Yosuke Hanamura",
-      "stage": 3,
-      "evoSkill": "Youthful Wind"
+      "stage": 3
     },
     {
       "name": "Takeji Zaiten",
@@ -17655,8 +17584,7 @@
       "repel": [],
       "game": "p4",
       "user": "Kanji Tatsumi",
-      "stage": 3,
-      "evoSkill": "The Man\"s Way"
+      "stage": 3
     },
     {
       "name": "Take-Mikazuchi",
@@ -17754,8 +17682,7 @@
       "repel": [],
       "game": "p4",
       "user": "Kanji Tatsumi",
-      "stage": 1,
-      "evoSkill": null
+      "stage": 1
     },
     {
       "name": "Take-Minakata",
@@ -17767,9 +17694,9 @@
       "level": 26,
       "hp": 107,
       "mp": 98,
-      "st": 17,
-      "ma": 19,
-      "en": 19,
+      "st": 18,
+      "ma": 12,
+      "en": 18,
       "ag": 16,
       "lu": 15,
       "learnset": [
@@ -17933,8 +17860,7 @@
       ],
       "game": "p5",
       "user": "Margaret",
-      "stage": 1,
-      "evoSkill": null
+      "stage": 1
     },
     {
       "name": "Thanatos Picaro",
@@ -18004,11 +17930,11 @@
       "level": 64,
       "hp": 399,
       "mp": 272,
-      "st": 44,
-      "ma": 39,
-      "en": 43,
-      "ag": 38,
-      "lu": 35,
+      "st": 58,
+      "ma": 43,
+      "en": 56,
+      "ag": 29,
+      "lu": 36,
       "learnset": [
         {
           "name": "Ziodyne",
@@ -18062,11 +17988,11 @@
       "level": 36,
       "hp": 144,
       "mp": 241,
-      "st": 21,
-      "ma": 28,
-      "en": 21,
-      "ag": 24,
-      "lu": 21,
+      "st": 18,
+      "ma": 36,
+      "en": 22,
+      "ag": 21,
+      "lu": 27,
       "learnset": [
         {
           "name": "Taunt",
@@ -18121,11 +18047,11 @@
       "level": 72,
       "hp": 327,
       "mp": 313,
-      "st": 43,
-      "ma": 49,
-      "en": 43,
-      "ag": 46,
-      "lu": 43,
+      "st": 28,
+      "ma": 54,
+      "en": 44,
+      "ag": 41,
+      "lu": 47,
       "learnset": [
         {
           "name": "Agidyne",
@@ -18180,11 +18106,11 @@
       "level": 34,
       "hp": 192,
       "mp": 172,
-      "st": 17,
-      "ma": 24,
-      "en": 24,
-      "ag": 26,
-      "lu": 18,
+      "st": 27,
+      "ma": 32,
+      "en": 18,
+      "ag": 36,
+      "lu": 21,
       "learnset": [
         {
           "name": "Mazionga",
@@ -18237,11 +18163,11 @@
       "level": 56,
       "hp": 262,
       "mp": 395,
-      "st": 32,
-      "ma": 40,
-      "en": 35,
-      "ag": 38,
-      "lu": 30,
+      "st": 25,
+      "ma": 54,
+      "en": 36,
+      "ag": 35,
+      "lu": 42,
       "learnset": [
         {
           "name": "Freidyne",
@@ -18385,8 +18311,7 @@
       "repel": [],
       "game": "p4",
       "user": "Chie Satonaka",
-      "stage": 1,
-      "evoSkill": null
+      "stage": 1
     },
     {
       "name": "Triglav",
@@ -18548,8 +18473,7 @@
       "repel": [],
       "game": "p3",
       "user": "Junpei Iori",
-      "stage": 2,
-      "evoSkill": "Spring of Life"
+      "stage": 2
     },
     {
       "name": "Trumpeter",
@@ -18561,11 +18485,11 @@
       "level": 59,
       "hp": 398,
       "mp": 402,
-      "st": 33,
-      "ma": 42,
-      "en": 40,
-      "ag": 38,
-      "lu": 31,
+      "st": 32,
+      "ma": 77,
+      "en": 30,
+      "ag": 55,
+      "lu": 57,
       "learnset": [
         {
           "name": "Mafreidyne",
@@ -18671,8 +18595,7 @@
       ],
       "game": "p5",
       "user": "Sho Minazuki",
-      "stage": 1,
-      "evoSkill": null
+      "stage": 1
     },
     {
       "name": "Tsukiyomi Picaro",
@@ -18918,11 +18841,11 @@
       "level": 81,
       "hp": 516,
       "mp": 371,
-      "st": 50,
-      "ma": 54,
-      "en": 49,
-      "ag": 55,
-      "lu": 42,
+      "st": 66,
+      "ma": 64,
+      "en": 59,
+      "ag": 57,
+      "lu": 45,
       "learnset": [
         {
           "name": "Deathbound",
@@ -19062,8 +18985,7 @@
       "repel": [],
       "game": "p5",
       "user": "Zenkichi Hasegawa",
-      "stage": 1,
-      "evoSkill": null
+      "stage": 1
     },
     {
       "name": "Valkyrie",
@@ -19075,11 +18997,11 @@
       "level": 44,
       "hp": 222,
       "mp": 148,
-      "st": 33,
-      "ma": 24,
-      "en": 28,
-      "ag": 29,
-      "lu": 25,
+      "st": 42,
+      "ma": 18,
+      "en": 32,
+      "ag": 26,
+      "lu": 24,
       "learnset": [
         {
           "name": "Rising Slash",
@@ -19185,8 +19107,7 @@
       "repel": [],
       "game": "p5",
       "user": "Sumire Yoshizawa",
-      "stage": 2,
-      "evoSkill": "Evade Curse"
+      "stage": 2
     },
     {
       "name": "Vasuki",
@@ -19198,11 +19119,11 @@
       "level": 68,
       "hp": 424,
       "mp": 335,
-      "st": 42,
-      "ma": 45,
-      "en": 44,
-      "ag": 42,
-      "lu": 38,
+      "st": 43,
+      "ma": 53,
+      "en": 43,
+      "ag": 47,
+      "lu": 63,
       "learnset": [
         {
           "name": "Mahamaon",
@@ -19255,11 +19176,11 @@
       "level": 83,
       "hp": 452,
       "mp": 523,
-      "st": 56,
-      "ma": 51,
-      "en": 49,
-      "ag": 57,
-      "lu": 43,
+      "st": 46,
+      "ma": 90,
+      "en": 57,
+      "ag": 67,
+      "lu": 71,
       "learnset": [
         {
           "name": "Megidolaon",
@@ -19378,11 +19299,11 @@
       "level": 38,
       "hp": 239,
       "mp": 195,
-      "st": 22,
-      "ma": 21,
-      "en": 26,
-      "ag": 27,
-      "lu": 25,
+      "st": 25,
+      "ma": 40,
+      "en": 31,
+      "ag": 29,
+      "lu": 34,
       "learnset": [
         {
           "name": "Triple Down",
@@ -19553,8 +19474,7 @@
       "repel": [],
       "game": "p5",
       "user": "Ryuji Sakamoto",
-      "stage": 3,
-      "evoSkill": "Fighting Spirit"
+      "stage": 3
     },
     {
       "name": "Yaksini",
@@ -19568,11 +19488,11 @@
       "level": 20,
       "hp": 172,
       "mp": 117,
-      "st": 14,
-      "ma": 11,
-      "en": 13,
-      "ag": 16,
-      "lu": 13,
+      "st": 31,
+      "ma": 14,
+      "en": 25,
+      "ag": 24,
+      "lu": 17,
       "learnset": [
         {
           "name": "Hysterical Slap",
@@ -19622,11 +19542,11 @@
       "level": 64,
       "hp": 468,
       "mp": 255,
-      "st": 44,
-      "ma": 38,
-      "en": 48,
-      "ag": 36,
-      "lu": 33,
+      "st": 66,
+      "ma": 26,
+      "en": 72,
+      "ag": 33,
+      "lu": 40,
       "learnset": [
         {
           "name": "One-shot Kill",
@@ -19759,8 +19679,7 @@
       ],
       "game": "p4",
       "user": "Naoto Shirogane",
-      "stage": 3,
-      "evoSkill": "Shield of Justice"
+      "stage": 3
     },
     {
       "name": "Yamato-Takeru",
@@ -19855,8 +19774,7 @@
       "repel": [],
       "game": "p4",
       "user": "Naoto Shirogane",
-      "stage": 2,
-      "evoSkill": null
+      "stage": 2
     },
     {
       "name": "Yatagarasu",
@@ -19868,11 +19786,11 @@
       "level": 57,
       "hp": 258,
       "mp": 296,
-      "st": 35,
-      "ma": 41,
-      "en": 30,
-      "ag": 40,
-      "lu": 32,
+      "st": 31,
+      "ma": 42,
+      "en": 33,
+      "ag": 44,
+      "lu": 39,
       "learnset": [
         {
           "name": "Agidyne",
@@ -19978,11 +19896,11 @@
       "level": 87,
       "hp": 253,
       "mp": 200,
-      "st": 63,
-      "ma": 52,
-      "en": 50,
-      "ag": 54,
-      "lu": 49,
+      "st": 47,
+      "ma": 22,
+      "en": 25,
+      "ag": 46,
+      "lu": 31,
       "learnset": [
         {
           "name": "Brave Blade",
@@ -20037,11 +19955,11 @@
       "level": 43,
       "hp": 255,
       "mp": 212,
-      "st": 26,
-      "ma": 29,
-      "en": 20,
-      "ag": 27,
-      "lu": 24,
+      "st": 34,
+      "ma": 51,
+      "en": 35,
+      "ag": 23,
+      "lu": 27,
       "learnset": [
         {
           "name": "Brain Jack",
@@ -20095,11 +20013,11 @@
       "level": 80,
       "hp": 444,
       "mp": 325,
-      "st": 57,
-      "ma": 45,
+      "st": 61,
+      "ma": 57,
       "en": 50,
-      "ag": 56,
-      "lu": 39,
+      "ag": 35,
+      "lu": 37,
       "learnset": [
         {
           "name": "Maragidyne",
@@ -20268,8 +20186,7 @@
       "repel": [],
       "game": "p5",
       "user": "Morgana",
-      "stage": 1,
-      "evoSkill": null
+      "stage": 1
     },
     {
       "name": "Zouchouten",
@@ -20281,11 +20198,11 @@
       "level": 31,
       "hp": 213,
       "mp": 150,
-      "st": 22,
-      "ma": 19,
-      "en": 24,
-      "ag": 18,
-      "lu": 17,
+      "st": 29,
+      "ma": 24,
+      "en": 27,
+      "ag": 22,
+      "lu": 26,
       "learnset": [
         {
           "name": "Kill Rush",
