@@ -5539,7 +5539,9 @@
     {
       "name": "Girimehkala",
       "devName": "girimehkala",
-      "aliases": [],
+      "aliases": [
+        "girimekhala"
+      ],
       "inherit": "Ailment",
       "arcana": "Moon",
       "race": "Vile",
