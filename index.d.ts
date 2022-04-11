@@ -6,6 +6,8 @@ export interface DemonData {
     arcana: Arcana;
     race: string;
     level: number;
+    hp: number;
+    mp: number;
     st: number;
     ma: number;
     en: number;
@@ -32,6 +34,8 @@ export class Demon {
     arcana: Arcana;
     race: string;
     level: number;
+    hp: number;
+    mp: number;
     st: number;
     ma: number;
     en: number;

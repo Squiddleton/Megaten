@@ -16,6 +16,8 @@ class Demon {
 		this.arcana = data.arcana;
 		this.race = data.race;
 		this.level = data.level;
+		this.hp = data.hp;
+		this.mp = data.mp;
 		this.st = data.st;
 		this.ma = data.ma;
 		this.en = data.en;
