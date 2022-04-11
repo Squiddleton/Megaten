@@ -9525,7 +9525,8 @@
       "name": "Koropokguru",
       "devName": "koropokguru",
       "aliases": [
-        "koropokkuru"
+        "koropokkuru",
+        "koropokkur"
       ],
       "inherit": "Ice",
       "arcana": "Hermit",
