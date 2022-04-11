@@ -610,7 +610,7 @@ export type Element = 'Phys' | 'Gun' | 'Fire' | 'Ice' | 'Elec' | 'Wind' | 'Nuke'
 export type Inherit = Exclude<Element, 'Gun'> | 'Ailment' | 'Recovery' | 'Support';
 export type Affinity = Inherit | 'Gun' | 'Passive';
 
-export type Game = 'p3' | 'p4' | 'p5';
+export type Game = 'p3' | 'p4' | 'p5' | 'smt5';
 
 export type HPSP = 'HP' | 'SP';
 export type HPSPAIL = HPSP | 'HPSP' | 'AIL'
