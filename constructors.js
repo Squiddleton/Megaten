@@ -24,7 +24,6 @@ class Demon {
 		this.ag = data.ag;
 		this.lu = data.lu;
 		this.learnset = data.learnset;
-		this.evoMove = data.evoMove;
 		this.weak = data.weak;
 		this.resist = data.resist;
 		this.null = data.null;
@@ -52,6 +51,7 @@ class Persona extends Demon {
 		super(data);
 		this.user = data.user;
 		this.stage = data.stage;
+		this.evoSkill = data.evoSkill;
 	}
 	/**
      * @type {import('./index').Persona | null} The Persona's evolution, or null if none

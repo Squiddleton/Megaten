@@ -14,7 +14,6 @@ export interface DemonData {
     ag: number;
     lu: number;
     learnset: Learnset[];
-    evoMove: string | null;
     weak: Element[];
     resist: Element[];
     null: Element[];
@@ -23,6 +22,7 @@ export interface DemonData {
     game: Game;
     user: string | undefined;
     stage: 1 | 2 | 3 | undefined;
+    evoSkill: string | null | undefined;
 }
 
 export class Demon {
@@ -42,7 +42,6 @@ export class Demon {
     ag: number;
     lu: number;
     learnset: Learnset[];
-    evoMove: string | null;
     weak: Element[];
     resist: Element[];
     null: Element[];
@@ -57,6 +56,7 @@ export class Persona extends Demon {
     constructor(data: DemonData);
     user: string;
     stage: 1 | 2 | 3;
+    evoSkill: string | null;
     evolution: Persona | null;
 }
 

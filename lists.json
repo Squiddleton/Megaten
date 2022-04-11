@@ -45,7 +45,6 @@
           "level": 75
         }
       ],
-      "evoMove": null,
       "weak": [
         "Elec"
       ],
@@ -57,7 +56,7 @@
       ],
       "drain": [],
       "repel": [],
-      "game": "smtv"
+      "game": "smt5"
     },
     {
       "name": "Agathion",
@@ -100,7 +99,6 @@
           "level": 8
         }
       ],
-      "evoMove": null,
       "weak": [
         "Wind"
       ],
@@ -111,7 +109,7 @@
       "null": [],
       "drain": [],
       "repel": [],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Agnes",
@@ -214,7 +212,6 @@
           "level": 75
         }
       ],
-      "evoMove": "Checkmate",
       "weak": [
         "Psy"
       ],
@@ -228,7 +225,8 @@
       "repel": [],
       "game": "p5",
       "user": "Makoto Niijima",
-      "stage": 3
+      "stage": 3,
+      "evoSkill": "Checkmate"
     },
     {
       "name": "Al Azif",
@@ -267,7 +265,6 @@
           "level": 67
         }
       ],
-      "evoMove": "Ultimate Support",
       "weak": [],
       "resist": [],
       "null": [],
@@ -275,7 +272,8 @@
       "repel": [],
       "game": "p5",
       "user": "Futaba Sakura",
-      "stage": 3
+      "stage": 3,
+      "evoSkill": "Ultimate Support"
     },
     {
       "name": "Alice",
@@ -322,7 +320,6 @@
           "level": 88
         }
       ],
-      "evoMove": null,
       "weak": [
         "Bless"
       ],
@@ -335,7 +332,7 @@
       "repel": [
         "Curse"
       ],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Alilat",
@@ -386,7 +383,6 @@
           "level": 87
         }
       ],
-      "evoMove": null,
       "weak": [
         "Fire",
         "Curse"
@@ -402,7 +398,7 @@
         "Phys",
         "Gun"
       ],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Amaterasu",
@@ -497,7 +493,6 @@
           "level": 76
         }
       ],
-      "evoMove": null,
       "weak": [
         "Ice"
       ],
@@ -511,7 +506,8 @@
       "repel": [],
       "game": "p4",
       "user": "Yukiko Amagi",
-      "stage": 2
+      "stage": 2,
+      "evoSkill": null
     },
     {
       "name": "Ame-no-Uzume",
@@ -554,7 +550,6 @@
           "level": 18
         }
       ],
-      "evoMove": null,
       "weak": [
         "Psy"
       ],
@@ -564,7 +559,7 @@
         "Fire"
       ],
       "repel": [],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Ananta",
@@ -615,7 +610,6 @@
           "level": 50
         }
       ],
-      "evoMove": null,
       "weak": [
         "Elec"
       ],
@@ -625,7 +619,7 @@
         "Ice"
       ],
       "repel": [],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Anat",
@@ -728,7 +722,6 @@
           "level": 75
         }
       ],
-      "evoMove": "Evade Psy",
       "weak": [
         "Psy"
       ],
@@ -742,7 +735,8 @@
       "repel": [],
       "game": "p5",
       "user": "Makoto Niijima",
-      "stage": 2
+      "stage": 2,
+      "evoSkill": "Evade Psy"
     },
     {
       "name": "Andras",
@@ -785,7 +779,6 @@
           "level": 32
         }
       ],
-      "evoMove": null,
       "weak": [
         "Fire",
         "Bless"
@@ -799,7 +792,7 @@
       ],
       "drain": [],
       "repel": [],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Angel",
@@ -842,7 +835,6 @@
           "level": 12
         }
       ],
-      "evoMove": null,
       "weak": [
         "Gun",
         "Curse"
@@ -855,7 +847,7 @@
       ],
       "drain": [],
       "repel": [],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Anubis",
@@ -898,7 +890,6 @@
           "level": 38
         }
       ],
-      "evoMove": null,
       "weak": [],
       "resist": [
         "Gun",
@@ -910,7 +901,7 @@
       ],
       "drain": [],
       "repel": [],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Anzu",
@@ -953,7 +944,6 @@
           "level": 29
         }
       ],
-      "evoMove": null,
       "weak": [
         "Gun",
         "Nuke"
@@ -966,7 +956,7 @@
       "repel": [
         "Wind"
       ],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Apsaras",
@@ -1009,7 +999,6 @@
           "level": 16
         }
       ],
-      "evoMove": null,
       "weak": [
         "Fire",
         "Elec"
@@ -1020,7 +1009,7 @@
       "null": [],
       "drain": [],
       "repel": [],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Arahabaki",
@@ -1063,7 +1052,6 @@
           "level": 39
         }
       ],
-      "evoMove": null,
       "weak": [
         "Psy",
         "Nuke"
@@ -1078,7 +1066,7 @@
         "Phys",
         "Gun"
       ],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Ara Mitama",
@@ -1125,7 +1113,6 @@
           "level": 35
         }
       ],
-      "evoMove": null,
       "weak": [
         "Ice"
       ],
@@ -1178,7 +1165,6 @@
           "level": 21
         }
       ],
-      "evoMove": null,
       "weak": [
         "Elec",
         "Curse"
@@ -1189,7 +1175,7 @@
       ],
       "drain": [],
       "repel": [],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Ardha",
@@ -1236,7 +1222,6 @@
           "level": 90
         }
       ],
-      "evoMove": null,
       "weak": [],
       "resist": [
         "Phys"
@@ -1290,7 +1275,6 @@
           "level": 30
         }
       ],
-      "evoMove": null,
       "weak": [
         "Wind"
       ],
@@ -1349,7 +1333,6 @@
           "level": 36
         }
       ],
-      "evoMove": null,
       "weak": [
         "Psy"
       ],
@@ -1364,7 +1347,8 @@
       "repel": [],
       "game": "p5",
       "user": "Labrys",
-      "stage": 1
+      "stage": 1,
+      "evoSkill": null
     },
     {
       "name": "Ariadne Picaro",
@@ -1411,7 +1395,6 @@
           "level": 48
         }
       ],
-      "evoMove": null,
       "weak": [
         "Psy"
       ],
@@ -1463,7 +1446,6 @@
           "level": 7
         }
       ],
-      "evoMove": null,
       "weak": [
         "Ice",
         "Bless"
@@ -1476,7 +1458,8 @@
       "repel": [],
       "game": "p5",
       "user": "P5 Protagonist",
-      "stage": 1
+      "stage": 1,
+      "evoSkill": null
     },
     {
       "name": "Artemisia",
@@ -1563,7 +1546,6 @@
           "level": 76
         }
       ],
-      "evoMove": null,
       "weak": [
         "Fire"
       ],
@@ -1575,7 +1557,8 @@
       "repel": [],
       "game": "p3",
       "user": "Mitsuru Kirijo",
-      "stage": 2
+      "stage": 2,
+      "evoSkill": null
     },
     {
       "name": "Astarte",
@@ -1670,7 +1653,6 @@
           "level": 75
         }
       ],
-      "evoMove": "Evade Nuke",
       "weak": [
         "Nuke"
       ],
@@ -1684,7 +1666,8 @@
       "repel": [],
       "game": "p5",
       "user": "Haru Okumura",
-      "stage": 2
+      "stage": 2,
+      "evoSkill": "Evade Nuke"
     },
     {
       "name": "Asterius",
@@ -1731,7 +1714,6 @@
           "level": 62
         }
       ],
-      "evoMove": null,
       "weak": [
         "Ice"
       ],
@@ -1746,7 +1728,8 @@
       "repel": [],
       "game": "p5",
       "user": "Shadow Labrys",
-      "stage": 1
+      "stage": 1,
+      "evoSkill": null
     },
     {
       "name": "Asterius Picaro",
@@ -1793,7 +1776,6 @@
           "level": 68
         }
       ],
-      "evoMove": null,
       "weak": [
         "Ice"
       ],
@@ -1853,7 +1835,6 @@
           "level": 81
         }
       ],
-      "evoMove": null,
       "weak": [
         "Psy"
       ],
@@ -1865,7 +1846,7 @@
       "repel": [
         "Nuke"
       ],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Atavaka",
@@ -1912,7 +1893,6 @@
           "level": 71
         }
       ],
-      "evoMove": null,
       "weak": [],
       "resist": [
         "Phys",
@@ -1925,7 +1905,7 @@
       "repel": [
         "Fire"
       ],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Athena",
@@ -1978,7 +1958,6 @@
           "level": 52
         }
       ],
-      "evoMove": null,
       "weak": [
         "Elec"
       ],
@@ -1992,7 +1971,8 @@
       "repel": [],
       "game": "p5",
       "user": "Aigis",
-      "stage": 2
+      "stage": 2,
+      "evoSkill": null
     },
     {
       "name": "Athena Picaro",
@@ -2043,7 +2023,6 @@
           "level": 56
         }
       ],
-      "evoMove": null,
       "weak": [
         "Elec"
       ],
@@ -2102,7 +2081,6 @@
           "level": 45
         }
       ],
-      "evoMove": null,
       "weak": [
         "Fire"
       ],
@@ -2112,7 +2090,7 @@
       ],
       "drain": [],
       "repel": [],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Attis",
@@ -2159,7 +2137,6 @@
           "level": 88
         }
       ],
-      "evoMove": null,
       "weak": [
         "Curse"
       ],
@@ -2171,7 +2148,7 @@
       "repel": [
         "Wind"
       ],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Baal",
@@ -2218,7 +2195,6 @@
           "level": 87
         }
       ],
-      "evoMove": null,
       "weak": [],
       "resist": [
         "Fire",
@@ -2229,7 +2205,7 @@
         "Wind"
       ],
       "repel": [],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Baphomet",
@@ -2276,7 +2252,6 @@
           "level": 63
         }
       ],
-      "evoMove": null,
       "weak": [
         "Bless"
       ],
@@ -2288,7 +2263,7 @@
       ],
       "drain": [],
       "repel": [],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Barong",
@@ -2331,7 +2306,6 @@
           "level": 57
         }
       ],
-      "evoMove": null,
       "weak": [
         "Wind",
         "Curse"
@@ -2345,7 +2319,7 @@
       ],
       "drain": [],
       "repel": [],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Beelzebub",
@@ -2396,7 +2370,6 @@
           "level": 92
         }
       ],
-      "evoMove": null,
       "weak": [
         "Bless"
       ],
@@ -2408,7 +2381,7 @@
       "repel": [
         "Curse"
       ],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Belial",
@@ -2455,7 +2428,6 @@
           "level": 88
         }
       ],
-      "evoMove": null,
       "weak": [],
       "resist": [],
       "null": [
@@ -2464,7 +2436,7 @@
       ],
       "drain": [],
       "repel": [],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Belphegor",
@@ -2507,7 +2479,6 @@
           "level": 42
         }
       ],
-      "evoMove": null,
       "weak": [
         "Fire"
       ],
@@ -2521,7 +2492,7 @@
       "repel": [
         "Curse"
       ],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Berith",
@@ -2560,7 +2531,6 @@
           "level": 13
         }
       ],
-      "evoMove": null,
       "weak": [
         "Ice"
       ],
@@ -2572,7 +2542,7 @@
       ],
       "drain": [],
       "repel": [],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Bicorn",
@@ -2611,7 +2581,6 @@
           "level": 8
         }
       ],
-      "evoMove": null,
       "weak": [
         "Elec"
       ],
@@ -2621,7 +2590,7 @@
       "null": [],
       "drain": [],
       "repel": [],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Bishamonten",
@@ -2668,7 +2637,6 @@
           "level": 73
         }
       ],
-      "evoMove": null,
       "weak": [
         "Ice"
       ],
@@ -2681,7 +2649,7 @@
         "Fire"
       ],
       "repel": [],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Black Frost",
@@ -2728,7 +2696,6 @@
           "level": 72
         }
       ],
-      "evoMove": null,
       "weak": [],
       "resist": [],
       "null": [
@@ -2741,7 +2708,7 @@
         "Fire",
         "Curse"
       ],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Black Ooze",
@@ -2788,7 +2755,6 @@
           "level": 24
         }
       ],
-      "evoMove": null,
       "weak": [
         "Elec",
         "Psy",
@@ -2804,7 +2770,7 @@
       ],
       "drain": [],
       "repel": [],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Black Rider",
@@ -2851,7 +2817,6 @@
           "level": 64
         }
       ],
-      "evoMove": null,
       "weak": [
         "Fire"
       ],
@@ -2864,7 +2829,7 @@
         "Ice"
       ],
       "repel": [],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Bugs",
@@ -2911,7 +2876,6 @@
           "level": 55
         }
       ],
-      "evoMove": null,
       "weak": [
         "Nuke"
       ],
@@ -2923,7 +2887,7 @@
       ],
       "drain": [],
       "repel": [],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Byakhee",
@@ -2970,7 +2934,6 @@
           "level": 75
         }
       ],
-      "evoMove": null,
       "weak": [
         "Ice",
         "Nuke"
@@ -3036,7 +2999,6 @@
           "level": 51
         }
       ],
-      "evoMove": null,
       "weak": [
         "Fire",
         "Nuke"
@@ -3049,7 +3011,7 @@
         "Ice"
       ],
       "repel": [],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Caesar",
@@ -3144,7 +3106,6 @@
           "level": 76
         }
       ],
-      "evoMove": null,
       "weak": [
         "Ice"
       ],
@@ -3156,7 +3117,8 @@
       "repel": [],
       "game": "p3",
       "user": "Akihiko Sanada",
-      "stage": 2
+      "stage": 2,
+      "evoSkill": null
     },
     {
       "name": "Cait Sith",
@@ -3199,7 +3161,6 @@
           "level": 9
         }
       ],
-      "evoMove": null,
       "weak": [
         "Wind"
       ],
@@ -3209,7 +3170,7 @@
       "null": [],
       "drain": [],
       "repel": [],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Captain Kidd",
@@ -3320,7 +3281,6 @@
           "level": 75
         }
       ],
-      "evoMove": null,
       "weak": [
         "Wind"
       ],
@@ -3332,7 +3292,8 @@
       "repel": [],
       "game": "p5",
       "user": "Ryuji Sakamoto",
-      "stage": 1
+      "stage": 1,
+      "evoSkill": null
     },
     {
       "name": "Carmen",
@@ -3435,7 +3396,6 @@
           "level": 74
         }
       ],
-      "evoMove": null,
       "weak": [
         "Ice"
       ],
@@ -3447,7 +3407,8 @@
       "repel": [],
       "game": "p5",
       "user": "Ann Takamaki",
-      "stage": 1
+      "stage": 1,
+      "evoSkill": null
     },
     {
       "name": "Castor",
@@ -3518,7 +3479,6 @@
           "level": 77
         }
       ],
-      "evoMove": null,
       "weak": [],
       "resist": [],
       "null": [],
@@ -3526,7 +3486,8 @@
       "repel": [],
       "game": "p3",
       "user": "Shinjiro Aragaki",
-      "stage": 1
+      "stage": 1,
+      "evoSkill": null
     },
     {
       "name": "Célestine",
@@ -3629,7 +3590,6 @@
           "level": 74
         }
       ],
-      "evoMove": "High Energy",
       "weak": [
         "Ice"
       ],
@@ -3643,7 +3603,8 @@
       "repel": [],
       "game": "p5",
       "user": "Ann Takamaki",
-      "stage": 3
+      "stage": 3,
+      "evoSkill": "High Energy"
     },
     {
       "name": "Cendrillon",
@@ -3698,7 +3659,6 @@
           "level": 80
         }
       ],
-      "evoMove": null,
       "weak": [
         "Curse"
       ],
@@ -3710,7 +3670,8 @@
       "repel": [],
       "game": "p5",
       "user": "Sumire Yoshizawa",
-      "stage": 1
+      "stage": 1,
+      "evoSkill": null
     },
     {
       "name": "Cerberus",
@@ -3753,7 +3714,6 @@
           "level": 60
         }
       ],
-      "evoMove": null,
       "weak": [
         "Ice"
       ],
@@ -3765,7 +3725,7 @@
         "Fire"
       ],
       "repel": [],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Cerberus -P3-",
@@ -3846,7 +3806,6 @@
           "level": 77
         }
       ],
-      "evoMove": null,
       "weak": [
         "Bless"
       ],
@@ -3857,9 +3816,10 @@
       ],
       "drain": [],
       "repel": [],
-      "game": "p3",
+      "game": "smt5",
       "user": "Koromaru",
-      "stage": 1
+      "stage": 1,
+      "evoSkill": null
     },
     {
       "name": "Chernobog",
@@ -3906,7 +3866,6 @@
           "level": 67
         }
       ],
-      "evoMove": null,
       "weak": [
         "Fire",
         "Bless"
@@ -3922,7 +3881,7 @@
         "Curse"
       ],
       "repel": [],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Chimera",
@@ -3969,7 +3928,6 @@
           "level": 79
         }
       ],
-      "evoMove": null,
       "weak": [
         "Wind",
         "Curse"
@@ -3982,7 +3940,7 @@
         "Fire"
       ],
       "repel": [],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Chi You",
@@ -4029,7 +3987,6 @@
           "level": 94
         }
       ],
-      "evoMove": null,
       "weak": [
         "Nuke"
       ],
@@ -4042,7 +3999,7 @@
       ],
       "drain": [],
       "repel": [],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Choronzon",
@@ -4093,7 +4050,6 @@
           "level": 33
         }
       ],
-      "evoMove": null,
       "weak": [
         "Bless"
       ],
@@ -4152,7 +4108,6 @@
           "level": 33
         }
       ],
-      "evoMove": null,
       "weak": [
         "Ice",
         "Nuke"
@@ -4163,7 +4118,7 @@
       ],
       "drain": [],
       "repel": [],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Cu Chulainn",
@@ -4210,7 +4165,6 @@
           "level": 81
         }
       ],
-      "evoMove": null,
       "weak": [
         "Elec"
       ],
@@ -4225,7 +4179,7 @@
       "repel": [
         "Wind"
       ],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Cybele",
@@ -4272,7 +4226,6 @@
           "level": 89
         }
       ],
-      "evoMove": null,
       "weak": [
         "Elec"
       ],
@@ -4284,7 +4237,7 @@
       ],
       "drain": [],
       "repel": [],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Daisoujou",
@@ -4331,7 +4284,6 @@
           "level": 45
         }
       ],
-      "evoMove": null,
       "weak": [
         "Curse"
       ],
@@ -4343,7 +4295,7 @@
       ],
       "drain": [],
       "repel": [],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Dakini",
@@ -4390,7 +4342,6 @@
           "level": 55
         }
       ],
-      "evoMove": null,
       "weak": [],
       "resist": [
         "Fire"
@@ -4400,7 +4351,7 @@
       ],
       "drain": [],
       "repel": [],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Decarabia",
@@ -4447,7 +4398,6 @@
           "level": 38
         }
       ],
-      "evoMove": null,
       "weak": [
         "Phys"
       ],
@@ -4460,7 +4410,7 @@
       "repel": [
         "Fire"
       ],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Diego",
@@ -4575,7 +4525,6 @@
           "level": 75
         }
       ],
-      "evoMove": "Miracle Rush",
       "weak": [
         "Elec"
       ],
@@ -4589,7 +4538,8 @@
       "repel": [],
       "game": "p5",
       "user": "Morgana",
-      "stage": 3
+      "stage": 3,
+      "evoSkill": "Miracle Rush"
     },
     {
       "name": "Dionysus",
@@ -4636,7 +4586,6 @@
           "level": 76
         }
       ],
-      "evoMove": null,
       "weak": [],
       "resist": [],
       "null": [
@@ -4647,7 +4596,7 @@
       "repel": [
         "Elec"
       ],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Dis",
@@ -4694,7 +4643,6 @@
           "level": 44
         }
       ],
-      "evoMove": null,
       "weak": [],
       "resist": [],
       "null": [],
@@ -4749,7 +4697,6 @@
           "level": 74
         }
       ],
-      "evoMove": null,
       "weak": [
         "Elec"
       ],
@@ -4763,7 +4710,7 @@
       "repel": [
         "Nuke"
       ],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Eligor",
@@ -4806,7 +4753,6 @@
           "level": 20
         }
       ],
-      "evoMove": null,
       "weak": [
         "Elec"
       ],
@@ -4818,7 +4764,7 @@
       "null": [],
       "drain": [],
       "repel": [],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Ella",
@@ -4873,7 +4819,6 @@
           "level": 80
         }
       ],
-      "evoMove": "Masquerade",
       "weak": [
         "Curse"
       ],
@@ -4887,7 +4832,8 @@
       "repel": [],
       "game": "p5",
       "user": "Sumire Yoshizawa",
-      "stage": 3
+      "stage": 3,
+      "evoSkill": "Masquerade"
     },
     {
       "name": "Fafnir",
@@ -4934,7 +4880,6 @@
           "level": 92
         }
       ],
-      "evoMove": null,
       "weak": [],
       "resist": [
         "Elec"
@@ -4948,7 +4893,7 @@
         "Phys",
         "Gun"
       ],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Flauros",
@@ -4995,7 +4940,6 @@
           "level": 24
         }
       ],
-      "evoMove": null,
       "weak": [
         "Ice"
       ],
@@ -5008,7 +4952,7 @@
       ],
       "drain": [],
       "repel": [],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Forneus",
@@ -5055,7 +4999,6 @@
           "level": 68
         }
       ],
-      "evoMove": null,
       "weak": [
         "Elec"
       ],
@@ -5067,7 +5010,7 @@
         "Ice"
       ],
       "repel": [],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Fortuna",
@@ -5114,7 +5057,6 @@
           "level": 51
         }
       ],
-      "evoMove": null,
       "weak": [
         "Elec"
       ],
@@ -5125,7 +5067,7 @@
       ],
       "drain": [],
       "repel": [],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Futsunushi",
@@ -5176,7 +5118,6 @@
           "level": 92
         }
       ],
-      "evoMove": null,
       "weak": [
         "Nuke"
       ],
@@ -5186,7 +5127,7 @@
       "null": [],
       "drain": [],
       "repel": [],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Fuu-Ki",
@@ -5229,7 +5170,6 @@
           "level": 27
         }
       ],
-      "evoMove": null,
       "weak": [
         "Elec"
       ],
@@ -5241,7 +5181,7 @@
         "Wind"
       ],
       "repel": [],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Gabriel",
@@ -5292,7 +5232,6 @@
           "level": 83
         }
       ],
-      "evoMove": null,
       "weak": [],
       "resist": [],
       "null": [
@@ -5302,7 +5241,7 @@
         "Bless"
       ],
       "repel": [],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Ganesha",
@@ -5349,7 +5288,6 @@
           "level": 60
         }
       ],
-      "evoMove": null,
       "weak": [
         "Psy"
       ],
@@ -5362,7 +5300,7 @@
         "Wind"
       ],
       "repel": [],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Ganga",
@@ -5409,7 +5347,6 @@
           "level": 35
         }
       ],
-      "evoMove": null,
       "weak": [
         "Fire",
         "Curse"
@@ -5467,7 +5404,6 @@
           "level": 59
         }
       ],
-      "evoMove": null,
       "weak": [],
       "resist": [
         "Wind"
@@ -5477,7 +5413,7 @@
       "repel": [
         "Bless"
       ],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Genbu",
@@ -5522,7 +5458,6 @@
           "level": 12
         }
       ],
-      "evoMove": null,
       "weak": [
         "Elec"
       ],
@@ -5534,7 +5469,7 @@
       ],
       "drain": [],
       "repel": [],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Girimehkala",
@@ -5579,7 +5514,6 @@
           "level": 50
         }
       ],
-      "evoMove": null,
       "weak": [
         "Bless"
       ],
@@ -5594,7 +5528,7 @@
         "Phys",
         "Gun"
       ],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Goemon",
@@ -5701,7 +5635,6 @@
           "level": 73
         }
       ],
-      "evoMove": null,
       "weak": [
         "Fire"
       ],
@@ -5713,7 +5646,8 @@
       "repel": [],
       "game": "p5",
       "user": "Yusuke Kitagawa",
-      "stage": 1
+      "stage": 1,
+      "evoSkill": null
     },
     {
       "name": "Gorgon",
@@ -5756,7 +5690,6 @@
           "level": 39
         }
       ],
-      "evoMove": null,
       "weak": [
         "Bless"
       ],
@@ -5873,7 +5806,6 @@
           "level": 73
         }
       ],
-      "evoMove": "Hyakka Ryouran",
       "weak": [
         "Fire"
       ],
@@ -5887,7 +5819,8 @@
       "repel": [],
       "game": "p5",
       "user": "Yusuke Kitagawa",
-      "stage": 3
+      "stage": 3,
+      "evoSkill": "Hyakka Ryouran"
     },
     {
       "name": "Hachiman",
@@ -5930,7 +5863,6 @@
           "level": 75
         }
       ],
-      "evoMove": null,
       "weak": [
         "Curse"
       ],
@@ -5984,7 +5916,6 @@
           "level": 69
         }
       ],
-      "evoMove": null,
       "weak": [
         "Ice"
       ],
@@ -5996,7 +5927,7 @@
       "null": [],
       "drain": [],
       "repel": [],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Haraedo-no-Okami",
@@ -6091,7 +6022,6 @@
           "level": 74
         }
       ],
-      "evoMove": "Dragon Hustle",
       "weak": [
         "Fire"
       ],
@@ -6105,7 +6035,8 @@
       "repel": [],
       "game": "p4",
       "user": "Chie Satonaka",
-      "stage": 3
+      "stage": 3,
+      "evoSkill": "Dragon Hustle"
     },
     {
       "name": "Hariti",
@@ -6156,7 +6087,6 @@
           "level": 46
         }
       ],
-      "evoMove": null,
       "weak": [
         "Wind"
       ],
@@ -6167,7 +6097,7 @@
       "null": [],
       "drain": [],
       "repel": [],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Hastur",
@@ -6214,7 +6144,6 @@
           "level": 89
         }
       ],
-      "evoMove": null,
       "weak": [],
       "resist": [
         "Fire"
@@ -6330,7 +6259,6 @@
           "level": 74
         }
       ],
-      "evoMove": "Evade Ice",
       "weak": [
         "Ice"
       ],
@@ -6344,7 +6272,8 @@
       "repel": [],
       "game": "p5",
       "user": "Ann Takamaki",
-      "stage": 2
+      "stage": 2,
+      "evoSkill": "Evade Ice"
     },
     {
       "name": "Hecatoncheires",
@@ -6391,7 +6320,6 @@
           "level": 49
         }
       ],
-      "evoMove": null,
       "weak": [
         "Bless"
       ],
@@ -6403,7 +6331,7 @@
       ],
       "drain": [],
       "repel": [],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Hell Biker",
@@ -6450,7 +6378,6 @@
           "level": 41
         }
       ],
-      "evoMove": null,
       "weak": [
         "Bless"
       ],
@@ -6462,7 +6389,7 @@
       "repel": [
         "Fire"
       ],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Hereward",
@@ -6513,7 +6440,6 @@
           "level": 0
         }
       ],
-      "evoMove": "Rebellion Blade",
       "weak": [
         "Bless"
       ],
@@ -6527,7 +6453,8 @@
       "repel": [],
       "game": "p5",
       "user": "Goro Akechi",
-      "stage": 3
+      "stage": 3,
+      "evoSkill": "Rebellion Blade"
     },
     {
       "name": "Hermes",
@@ -6602,7 +6529,6 @@
           "level": 55
         }
       ],
-      "evoMove": null,
       "weak": [
         "Wind"
       ],
@@ -6614,7 +6540,8 @@
       "repel": [],
       "game": "p3",
       "user": "Junpei Iori",
-      "stage": 1
+      "stage": 1,
+      "evoSkill": null
     },
     {
       "name": "High Pixie",
@@ -6657,7 +6584,6 @@
           "level": 22
         }
       ],
-      "evoMove": null,
       "weak": [
         "Gun",
         "Nuke"
@@ -6669,7 +6595,7 @@
       "null": [],
       "drain": [],
       "repel": [],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Himiko",
@@ -6732,7 +6658,6 @@
           "level": 79
         }
       ],
-      "evoMove": null,
       "weak": [],
       "resist": [],
       "null": [],
@@ -6740,7 +6665,8 @@
       "repel": [],
       "game": "p4",
       "user": "Rise Kujikawa",
-      "stage": 1
+      "stage": 1,
+      "evoSkill": null
     },
     {
       "name": "Hokuto Seikun",
@@ -6790,7 +6716,6 @@
           "level": 51
         }
       ],
-      "evoMove": null,
       "weak": [
         "Fire"
       ],
@@ -6847,7 +6772,6 @@
           "level": 52
         }
       ],
-      "evoMove": null,
       "weak": [
         "Fire"
       ],
@@ -6859,7 +6783,7 @@
       "repel": [
         "Bless"
       ],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Hua Po",
@@ -6902,7 +6826,6 @@
           "level": 15
         }
       ],
-      "evoMove": null,
       "weak": [
         "Gun",
         "Ice"
@@ -6913,7 +6836,7 @@
       "repel": [
         "Fire"
       ],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Incubus",
@@ -6952,7 +6875,6 @@
           "level": 9
         }
       ],
-      "evoMove": null,
       "weak": [
         "Fire",
         "Bless"
@@ -6963,7 +6885,7 @@
       "null": [],
       "drain": [],
       "repel": [],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Inugami",
@@ -7010,7 +6932,6 @@
           "level": 19
         }
       ],
-      "evoMove": null,
       "weak": [
         "Wind"
       ],
@@ -7022,7 +6943,7 @@
       ],
       "drain": [],
       "repel": [],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Io",
@@ -7089,7 +7010,6 @@
           "level": 46
         }
       ],
-      "evoMove": null,
       "weak": [
         "Elec"
       ],
@@ -7101,7 +7021,8 @@
       "repel": [],
       "game": "p3",
       "user": "Yukari Takeba",
-      "stage": 1
+      "stage": 1,
+      "evoSkill": null
     },
     {
       "name": "Ippon-Datara",
@@ -7144,7 +7065,6 @@
           "level": 18
         }
       ],
-      "evoMove": null,
       "weak": [
         "Ice"
       ],
@@ -7158,7 +7078,7 @@
       "repel": [
         "Wind"
       ],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Ishtar",
@@ -7205,7 +7125,6 @@
           "level": 90
         }
       ],
-      "evoMove": null,
       "weak": [
         "Wind"
       ],
@@ -7215,7 +7134,7 @@
       ],
       "drain": [],
       "repel": [],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Isis",
@@ -7262,7 +7181,6 @@
           "level": 32
         }
       ],
-      "evoMove": null,
       "weak": [
         "Psy"
       ],
@@ -7272,7 +7190,7 @@
       ],
       "drain": [],
       "repel": [],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Isis -P3-",
@@ -7365,7 +7283,6 @@
           "level": 74
         }
       ],
-      "evoMove": null,
       "weak": [
         "Elec"
       ],
@@ -7375,9 +7292,10 @@
       ],
       "drain": [],
       "repel": [],
-      "game": "p3",
+      "game": "smt5",
       "user": "Yukari Takeba",
-      "stage": 2
+      "stage": 2,
+      "evoSkill": null
     },
     {
       "name": "Izanagi",
@@ -7440,7 +7358,6 @@
           "level": 25
         }
       ],
-      "evoMove": null,
       "weak": [
         "Wind"
       ],
@@ -7454,7 +7371,8 @@
       "repel": [],
       "game": "p5",
       "user": "P4 Protgaonist",
-      "stage": 1
+      "stage": 1,
+      "evoSkill": null
     },
     {
       "name": "Izanagi-no-Okami",
@@ -7505,7 +7423,6 @@
           "level": 85
         }
       ],
-      "evoMove": null,
       "weak": [],
       "resist": [
         "Phys",
@@ -7522,7 +7439,8 @@
       "repel": [],
       "game": "p5",
       "user": "P4 Protagonist",
-      "stage": 2
+      "stage": 2,
+      "evoSkill": null
     },
     {
       "name": "Izanagi-no-Okami Picaro",
@@ -7573,7 +7491,6 @@
           "level": 94
         }
       ],
-      "evoMove": null,
       "weak": [],
       "resist": [
         "Phys",
@@ -7635,7 +7552,6 @@
           "level": 28
         }
       ],
-      "evoMove": null,
       "weak": [
         "Wind"
       ],
@@ -7689,7 +7605,6 @@
           "level": 15
         }
       ],
-      "evoMove": null,
       "weak": [
         "Fire"
       ],
@@ -7699,7 +7614,7 @@
       ],
       "drain": [],
       "repel": [],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Jack-o\"-Lantern",
@@ -7740,7 +7655,6 @@
           "level": 7
         }
       ],
-      "evoMove": null,
       "weak": [
         "Ice",
         "Wind"
@@ -7751,7 +7665,7 @@
         "Fire"
       ],
       "repel": [],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Jatayu",
@@ -7798,7 +7712,6 @@
           "level": 57
         }
       ],
-      "evoMove": null,
       "weak": [
         "Nuke"
       ],
@@ -7811,7 +7724,7 @@
       "repel": [
         "Wind"
       ],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Jikokuten",
@@ -7858,7 +7771,6 @@
           "level": 28
         }
       ],
-      "evoMove": null,
       "weak": [
         "Curse"
       ],
@@ -7869,7 +7781,7 @@
       "null": [],
       "drain": [],
       "repel": [],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Jinn",
@@ -7912,7 +7824,6 @@
           "level": 68
         }
       ],
-      "evoMove": null,
       "weak": [
         "Elec"
       ],
@@ -8013,7 +7924,6 @@
           "level": 73
         }
       ],
-      "evoMove": null,
       "weak": [
         "Elec"
       ],
@@ -8025,7 +7935,8 @@
       "repel": [],
       "game": "p4",
       "user": "Yosuke Hanamura",
-      "stage": 1
+      "stage": 1,
+      "evoSkill": null
     },
     {
       "name": "Johanna",
@@ -8128,7 +8039,6 @@
           "level": 75
         }
       ],
-      "evoMove": null,
       "weak": [
         "Psy"
       ],
@@ -8140,7 +8050,8 @@
       "repel": [],
       "game": "p5",
       "user": "Makoto Niijima",
-      "stage": 1
+      "stage": 1,
+      "evoSkill": null
     },
     {
       "name": "Juno",
@@ -8183,7 +8094,6 @@
           "level": 72
         }
       ],
-      "evoMove": null,
       "weak": [],
       "resist": [],
       "null": [],
@@ -8191,7 +8101,8 @@
       "repel": [],
       "game": "p3",
       "user": "Fuuka Yamagishi",
-      "stage": 2
+      "stage": 2,
+      "evoSkill": null
     },
     {
       "name": "Kaguya",
@@ -8238,7 +8149,6 @@
           "level": 22
         }
       ],
-      "evoMove": null,
       "weak": [
         "Fire"
       ],
@@ -8253,7 +8163,8 @@
       "repel": [],
       "game": "p5",
       "user": "Marie",
-      "stage": 1
+      "stage": 1,
+      "evoSkill": null
     },
     {
       "name": "Kaguya Picaro",
@@ -8300,7 +8211,6 @@
           "level": 31
         }
       ],
-      "evoMove": null,
       "weak": [
         "Fire"
       ],
@@ -8358,7 +8268,6 @@
           "level": 41
         }
       ],
-      "evoMove": null,
       "weak": [
         "Nuke"
       ],
@@ -8369,7 +8278,7 @@
       ],
       "drain": [],
       "repel": [],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Kala-Nemi",
@@ -8444,7 +8353,6 @@
           "level": 78
         }
       ],
-      "evoMove": null,
       "weak": [
         "Curse"
       ],
@@ -8456,7 +8364,8 @@
       "repel": [],
       "game": "p3",
       "user": "Ken Amada",
-      "stage": 2
+      "stage": 2,
+      "evoSkill": null
     },
     {
       "name": "Kali",
@@ -8503,7 +8412,6 @@
           "level": 82
         }
       ],
-      "evoMove": null,
       "weak": [],
       "resist": [
         "Curse"
@@ -8516,7 +8424,7 @@
         "Psy",
         "Gun"
       ],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Kamui",
@@ -8607,7 +8515,6 @@
           "level": 72
         }
       ],
-      "evoMove": null,
       "weak": [
         "Elec"
       ],
@@ -8622,7 +8529,8 @@
       "repel": [],
       "game": "p4",
       "user": "Teddie",
-      "stage": 2
+      "stage": 2,
+      "evoSkill": null
     },
     {
       "name": "Kamui-Moshiri",
@@ -8713,7 +8621,6 @@
           "level": 72
         }
       ],
-      "evoMove": "Kamui Miracle",
       "weak": [],
       "resist": [],
       "null": [
@@ -8726,7 +8633,8 @@
       "repel": [],
       "game": "p4",
       "user": "Teddie",
-      "stage": 3
+      "stage": 3,
+      "evoSkill": "Kamui Miracle"
     },
     {
       "name": "Kamu Susano-o",
@@ -8833,7 +8741,6 @@
           "level": 73
         }
       ],
-      "evoMove": "Evade Fire",
       "weak": [
         "Fire"
       ],
@@ -8847,7 +8754,8 @@
       "repel": [],
       "game": "p5",
       "user": "Yusuke Kitagawa",
-      "stage": 2
+      "stage": 2,
+      "evoSkill": "Evade Fire"
     },
     {
       "name": "Kanzeon",
@@ -8910,7 +8818,6 @@
           "level": 79
         }
       ],
-      "evoMove": null,
       "weak": [],
       "resist": [],
       "null": [],
@@ -8918,7 +8825,8 @@
       "repel": [],
       "game": "p4",
       "user": "Rise Kujikawa",
-      "stage": 2
+      "stage": 2,
+      "evoSkill": null
     },
     {
       "name": "Kelpie",
@@ -8957,7 +8865,6 @@
           "level": 10
         }
       ],
-      "evoMove": null,
       "weak": [
         "Elec"
       ],
@@ -8967,7 +8874,7 @@
       "null": [],
       "drain": [],
       "repel": [],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Kikuri-Hime",
@@ -9010,7 +8917,6 @@
           "level": 45
         }
       ],
-      "evoMove": null,
       "weak": [
         "Fire"
       ],
@@ -9022,7 +8928,7 @@
       ],
       "drain": [],
       "repel": [],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "King Frost",
@@ -9069,7 +8975,6 @@
           "level": 67
         }
       ],
-      "evoMove": null,
       "weak": [],
       "resist": [],
       "null": [
@@ -9079,7 +8984,7 @@
         "Ice"
       ],
       "repel": [],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Kin-Ki",
@@ -9126,7 +9031,6 @@
           "level": 31
         }
       ],
-      "evoMove": null,
       "weak": [],
       "resist": [
         "Phys"
@@ -9136,7 +9040,7 @@
       "repel": [
         "Gun"
       ],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Kintoki-Douji",
@@ -9227,7 +9131,6 @@
           "level": 72
         }
       ],
-      "evoMove": null,
       "weak": [
         "Elec"
       ],
@@ -9239,7 +9142,8 @@
       "repel": [],
       "game": "p4",
       "user": "Teddie",
-      "stage": 1
+      "stage": 1,
+      "evoSkill": null
     },
     {
       "name": "Kodama",
@@ -9286,7 +9190,6 @@
           "level": 17
         }
       ],
-      "evoMove": null,
       "weak": [
         "Fire"
       ],
@@ -9296,7 +9199,7 @@
       "null": [],
       "drain": [],
       "repel": [],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Kohryu",
@@ -9345,7 +9248,6 @@
           "level": 82
         }
       ],
-      "evoMove": null,
       "weak": [
         "Nuke"
       ],
@@ -9358,7 +9260,7 @@
       "repel": [
         "Elec"
       ],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Konohana Sakuya",
@@ -9453,7 +9355,6 @@
           "level": 76
         }
       ],
-      "evoMove": null,
       "weak": [
         "Ice"
       ],
@@ -9465,7 +9366,8 @@
       "repel": [],
       "game": "p4",
       "user": "Yukiko Amagi",
-      "stage": 1
+      "stage": 1,
+      "evoSkill": null
     },
     {
       "name": "Koppa Tengu",
@@ -9508,7 +9410,6 @@
           "level": 15
         }
       ],
-      "evoMove": null,
       "weak": [
         "Ice",
         "Bless"
@@ -9519,7 +9420,7 @@
       "null": [],
       "drain": [],
       "repel": [],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Koropokguru",
@@ -9569,7 +9470,6 @@
           "level": 15
         }
       ],
-      "evoMove": null,
       "weak": [
         "Fire"
       ],
@@ -9580,7 +9480,7 @@
       "null": [],
       "drain": [],
       "repel": [],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Koumokuten",
@@ -9627,7 +9527,6 @@
           "level": 55
         }
       ],
-      "evoMove": null,
       "weak": [
         "Ice"
       ],
@@ -9638,7 +9537,7 @@
       "null": [],
       "drain": [],
       "repel": [],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Kouzeon",
@@ -9701,7 +9600,6 @@
           "level": 79
         }
       ],
-      "evoMove": "Complete Analysis",
       "weak": [],
       "resist": [],
       "null": [],
@@ -9709,7 +9607,8 @@
       "repel": [],
       "game": "p4",
       "user": "Rise Kujikawa",
-      "stage": 3
+      "stage": 3,
+      "evoSkill": "Complete Analysis"
     },
     {
       "name": "Kumbhanda",
@@ -9756,7 +9655,6 @@
           "level": 47
         }
       ],
-      "evoMove": null,
       "weak": [
         "Psy"
       ],
@@ -9768,7 +9666,7 @@
       ],
       "drain": [],
       "repel": [],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Kurama Tengu",
@@ -9811,7 +9709,6 @@
           "level": 36
         }
       ],
-      "evoMove": null,
       "weak": [],
       "resist": [
         "Bless",
@@ -9824,7 +9721,7 @@
       "repel": [
         "Wind"
       ],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Kushi Mitama",
@@ -9867,7 +9764,6 @@
           "level": 16
         }
       ],
-      "evoMove": null,
       "weak": [
         "Fire"
       ],
@@ -9930,13 +9826,12 @@
           "level": 48
         }
       ],
-      "evoMove": null,
       "weak": [],
       "resist": [],
       "null": [],
       "drain": [],
       "repel": [],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Lachesis",
@@ -9983,7 +9878,6 @@
           "level": 41
         }
       ],
-      "evoMove": null,
       "weak": [
         "Elec"
       ],
@@ -9995,7 +9889,7 @@
       ],
       "drain": [],
       "repel": [],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Lakshmi",
@@ -10042,7 +9936,6 @@
           "level": 74
         }
       ],
-      "evoMove": null,
       "weak": [
         "Fire"
       ],
@@ -10053,7 +9946,7 @@
       "null": [],
       "drain": [],
       "repel": [],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Lamia",
@@ -10100,7 +9993,6 @@
           "level": 31
         }
       ],
-      "evoMove": null,
       "weak": [
         "Ice",
         "Nuke"
@@ -10113,7 +10005,7 @@
       ],
       "drain": [],
       "repel": [],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Leanan Sidhe",
@@ -10156,7 +10048,6 @@
           "level": 23
         }
       ],
-      "evoMove": null,
       "weak": [
         "Fire"
       ],
@@ -10167,7 +10058,7 @@
       "null": [],
       "drain": [],
       "repel": [],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Legion",
@@ -10214,7 +10105,6 @@
           "level": 45
         }
       ],
-      "evoMove": null,
       "weak": [
         "Bless"
       ],
@@ -10229,7 +10119,7 @@
       ],
       "drain": [],
       "repel": [],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Lilim",
@@ -10276,7 +10166,6 @@
           "level": 37
         }
       ],
-      "evoMove": null,
       "weak": [
         "Wind",
         "Bless"
@@ -10289,7 +10178,7 @@
       ],
       "drain": [],
       "repel": [],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Lilith",
@@ -10336,7 +10225,6 @@
           "level": 65
         }
       ],
-      "evoMove": null,
       "weak": [
         "Fire"
       ],
@@ -10349,7 +10237,7 @@
         "Ice",
         "Nuke"
       ],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Loa",
@@ -10396,7 +10284,6 @@
           "level": 75
         }
       ],
-      "evoMove": null,
       "weak": [
         "Psy",
         "Bless"
@@ -10410,7 +10297,7 @@
       ],
       "drain": [],
       "repel": [],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Loki -P5-",
@@ -10463,7 +10350,6 @@
           "level": 0
         }
       ],
-      "evoMove": null,
       "weak": [
         "Bless"
       ],
@@ -10473,9 +10359,10 @@
       ],
       "drain": [],
       "repel": [],
-      "game": "p5",
+      "game": "smt5",
       "user": "Goro Akechi",
-      "stage": 2
+      "stage": 2,
+      "evoSkill": null
     },
     {
       "name": "Loki",
@@ -10526,7 +10413,6 @@
           "level": 70
         }
       ],
-      "evoMove": null,
       "weak": [
         "Fire"
       ],
@@ -10538,7 +10424,7 @@
         "Ice"
       ],
       "repel": [],
-      "game": "p4"
+      "game": "smt5"
     },
     {
       "name": "Lucifer",
@@ -10589,7 +10475,6 @@
           "level": 99
         }
       ],
-      "evoMove": null,
       "weak": [
         "Bless"
       ],
@@ -10642,7 +10527,6 @@
           "level": 41
         }
       ],
-      "evoMove": null,
       "weak": [],
       "resist": [],
       "null": [],
@@ -10650,7 +10534,8 @@
       "repel": [],
       "game": "p3",
       "user": "Fuuka Yamagishi",
-      "stage": 1
+      "stage": 1,
+      "evoSkill": null
     },
     {
       "name": "Lucy",
@@ -10745,7 +10630,6 @@
           "level": 75
         }
       ],
-      "evoMove": "Life Wall",
       "weak": [
         "Nuke"
       ],
@@ -10759,7 +10643,8 @@
       "repel": [],
       "game": "p5",
       "user": "Haru Okumura",
-      "stage": 3
+      "stage": 3,
+      "evoSkill": "Life Wall"
     },
     {
       "name": "Macabre",
@@ -10806,7 +10691,6 @@
           "level": 78
         }
       ],
-      "evoMove": null,
       "weak": [
         "Bless"
       ],
@@ -10818,7 +10702,7 @@
       ],
       "drain": [],
       "repel": [],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Mada",
@@ -10869,7 +10753,6 @@
           "level": 96
         }
       ],
-      "evoMove": null,
       "weak": [
         "Ice"
       ],
@@ -10883,7 +10766,7 @@
         "Fire"
       ],
       "repel": [],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Magatsu-Izanagi",
@@ -10930,7 +10813,6 @@
           "level": 50
         }
       ],
-      "evoMove": null,
       "weak": [
         "Nuke"
       ],
@@ -10945,7 +10827,8 @@
       "repel": [],
       "game": "p5",
       "user": "Tohru Adachi",
-      "stage": 2
+      "stage": 2,
+      "evoSkill": null
     },
     {
       "name": "Magatsu-Izanagi Picaro",
@@ -10992,7 +10875,6 @@
           "level": 54
         }
       ],
-      "evoMove": null,
       "weak": [
         "Nuke"
       ],
@@ -11052,7 +10934,6 @@
           "level": 20
         }
       ],
-      "evoMove": null,
       "weak": [
         "Elec"
       ],
@@ -11066,7 +10947,7 @@
       ],
       "drain": [],
       "repel": [],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Mandrake",
@@ -11101,7 +10982,6 @@
           "level": 5
         }
       ],
-      "evoMove": null,
       "weak": [
         "Fire"
       ],
@@ -11111,7 +10991,7 @@
       "null": [],
       "drain": [],
       "repel": [],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Mara",
@@ -11162,7 +11042,6 @@
           "level": 79
         }
       ],
-      "evoMove": null,
       "weak": [],
       "resist": [
         "Bless"
@@ -11177,7 +11056,7 @@
       "repel": [
         "Psy"
       ],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Maria",
@@ -11224,7 +11103,6 @@
           "level": 98
         }
       ],
-      "evoMove": null,
       "weak": [
         "Fire"
       ],
@@ -11238,7 +11116,7 @@
         "Bless"
       ],
       "repel": [],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Matador",
@@ -11281,7 +11159,6 @@
           "level": 22
         }
       ],
-      "evoMove": null,
       "weak": [
         "Elec"
       ],
@@ -11291,7 +11168,7 @@
       ],
       "drain": [],
       "repel": [],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Melchizedek",
@@ -11338,7 +11215,6 @@
           "level": 65
         }
       ],
-      "evoMove": null,
       "weak": [
         "Wind"
       ],
@@ -11352,7 +11228,7 @@
         "Bless"
       ],
       "repel": [],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Mercurius",
@@ -11467,7 +11343,6 @@
           "level": 75
         }
       ],
-      "evoMove": "Evade Elec",
       "weak": [
         "Elec"
       ],
@@ -11481,7 +11356,8 @@
       "repel": [],
       "game": "p5",
       "user": "Morgana",
-      "stage": 2
+      "stage": 2,
+      "evoSkill": "Evade Elec"
     },
     {
       "name": "Messiah",
@@ -11532,7 +11408,6 @@
           "level": 87
         }
       ],
-      "evoMove": null,
       "weak": [
         "Curse"
       ],
@@ -11551,7 +11426,8 @@
       ],
       "game": "p5",
       "user": "P3 Protagonist",
-      "stage": 2
+      "stage": 2,
+      "evoSkill": null
     },
     {
       "name": "Messiah Picaro",
@@ -11602,7 +11478,6 @@
           "level": 96
         }
       ],
-      "evoMove": null,
       "weak": [
         "Curse"
       ],
@@ -11670,7 +11545,6 @@
           "level": 95
         }
       ],
-      "evoMove": null,
       "weak": [
         "Elec",
         "Curse"
@@ -11684,7 +11558,7 @@
       "repel": [
         "Wind"
       ],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Michael",
@@ -11731,7 +11605,6 @@
           "level": 92
         }
       ],
-      "evoMove": null,
       "weak": [],
       "resist": [
         "Gun"
@@ -11743,7 +11616,7 @@
       "repel": [
         "Bless"
       ],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Milady",
@@ -11838,7 +11711,6 @@
           "level": 75
         }
       ],
-      "evoMove": null,
       "weak": [
         "Nuke"
       ],
@@ -11850,7 +11722,8 @@
       "repel": [],
       "game": "p5",
       "user": "Haru Okumura",
-      "stage": 1
+      "stage": 1,
+      "evoSkill": null
     },
     {
       "name": "Mishaguji",
@@ -11897,7 +11770,6 @@
           "level": 57
         }
       ],
-      "evoMove": null,
       "weak": [
         "Ice"
       ],
@@ -11911,7 +11783,7 @@
         "Curse"
       ],
       "repel": [],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Mithras",
@@ -11958,7 +11830,6 @@
           "level": 45
         }
       ],
-      "evoMove": null,
       "weak": [
         "Psy"
       ],
@@ -11973,7 +11844,7 @@
         "Fire"
       ],
       "repel": [],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Mitra",
@@ -12022,7 +11893,6 @@
           "level": 38
         }
       ],
-      "evoMove": null,
       "weak": [
         "Elec"
       ],
@@ -12033,7 +11903,7 @@
       ],
       "drain": [],
       "repel": [],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Mokoi",
@@ -12076,7 +11946,6 @@
           "level": 14
         }
       ],
-      "evoMove": null,
       "weak": [
         "Wind"
       ],
@@ -12086,7 +11955,7 @@
       "null": [],
       "drain": [],
       "repel": [],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Moloch",
@@ -12133,7 +12002,6 @@
           "level": 65
         }
       ],
-      "evoMove": null,
       "weak": [
         "Ice"
       ],
@@ -12149,7 +12017,7 @@
         "Psy"
       ],
       "repel": [],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Mot",
@@ -12192,7 +12060,6 @@
           "level": 77
         }
       ],
-      "evoMove": null,
       "weak": [
         "Wind"
       ],
@@ -12206,7 +12073,7 @@
       "repel": [
         "Curse"
       ],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Mother Harlot",
@@ -12253,7 +12120,6 @@
           "level": 90
         }
       ],
-      "evoMove": null,
       "weak": [
         "Bless"
       ],
@@ -12265,7 +12131,7 @@
       "repel": [
         "Elec"
       ],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Mothman",
@@ -12312,7 +12178,6 @@
           "level": 38
         }
       ],
-      "evoMove": null,
       "weak": [
         "Gun"
       ],
@@ -12324,7 +12189,7 @@
       ],
       "drain": [],
       "repel": [],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Naga",
@@ -12371,7 +12236,6 @@
           "level": 29
         }
       ],
-      "evoMove": null,
       "weak": [
         "Wind"
       ],
@@ -12383,7 +12247,7 @@
       ],
       "drain": [],
       "repel": [],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Narcissus",
@@ -12430,7 +12294,6 @@
           "level": 53
         }
       ],
-      "evoMove": null,
       "weak": [
         "Fire"
       ],
@@ -12443,7 +12306,7 @@
       ],
       "drain": [],
       "repel": [],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Nebiros",
@@ -12490,7 +12353,6 @@
           "level": 80
         }
       ],
-      "evoMove": null,
       "weak": [
         "Bless"
       ],
@@ -12502,7 +12364,7 @@
       ],
       "drain": [],
       "repel": [],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Necronomicon",
@@ -12541,7 +12403,6 @@
           "level": 67
         }
       ],
-      "evoMove": null,
       "weak": [],
       "resist": [],
       "null": [],
@@ -12549,7 +12410,8 @@
       "repel": [],
       "game": "p5",
       "user": "Futaba Sakura",
-      "stage": 1
+      "stage": 1,
+      "evoSkill": null
     },
     {
       "name": "Nekomata",
@@ -12596,7 +12458,6 @@
           "level": 22
         }
       ],
-      "evoMove": null,
       "weak": [
         "Elec"
       ],
@@ -12606,7 +12467,7 @@
       "null": [],
       "drain": [],
       "repel": [],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Neko Shogun",
@@ -12653,7 +12514,6 @@
           "level": 36
         }
       ],
-      "evoMove": null,
       "weak": [
         "Wind"
       ],
@@ -12667,7 +12527,7 @@
       ],
       "drain": [],
       "repel": [],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Nemesis",
@@ -12714,7 +12574,6 @@
           "level": 42
         }
       ],
-      "evoMove": null,
       "weak": [
         "Curse"
       ],
@@ -12726,7 +12585,8 @@
       "repel": [],
       "game": "p3",
       "user": "Ken Amada",
-      "stage": 1
+      "stage": 1,
+      "evoSkill": null
     },
     {
       "name": "Nata Taishi",
@@ -12773,7 +12633,6 @@
           "level": 10
         }
       ],
-      "evoMove": null,
       "weak": [
         "Elec"
       ],
@@ -12826,7 +12685,6 @@
           "level": 26
         }
       ],
-      "evoMove": null,
       "weak": [
         "Elec"
       ],
@@ -12884,7 +12742,6 @@
           "level": 57
         }
       ],
-      "evoMove": null,
       "weak": [],
       "resist": [
         "Bless"
@@ -12896,7 +12753,7 @@
       "repel": [
         "Elec"
       ],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Nue",
@@ -12943,7 +12800,6 @@
           "level": 26
         }
       ],
-      "evoMove": null,
       "weak": [
         "Fire"
       ],
@@ -12955,7 +12811,7 @@
       ],
       "drain": [],
       "repel": [],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Obariyon",
@@ -12994,7 +12850,6 @@
           "level": 12
         }
       ],
-      "evoMove": null,
       "weak": [
         "Elec"
       ],
@@ -13004,7 +12859,7 @@
       "null": [],
       "drain": [],
       "repel": [],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Oberon",
@@ -13055,7 +12910,6 @@
           "level": 72
         }
       ],
-      "evoMove": null,
       "weak": [
         "Nuke"
       ],
@@ -13067,7 +12921,7 @@
       ],
       "drain": [],
       "repel": [],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Odin",
@@ -13114,7 +12968,6 @@
           "level": 89
         }
       ],
-      "evoMove": null,
       "weak": [],
       "resist": [],
       "null": [
@@ -13127,7 +12980,7 @@
         "Bless",
         "Curse"
       ],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Okuninushi",
@@ -13174,7 +13027,6 @@
           "level": 59
         }
       ],
-      "evoMove": null,
       "weak": [
         "Wind",
         "Nuke"
@@ -13187,7 +13039,7 @@
       "repel": [
         "Elec"
       ],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Omoikane",
@@ -13238,7 +13090,6 @@
           "level": 12
         }
       ],
-      "evoMove": null,
       "weak": [
         "Ice"
       ],
@@ -13295,7 +13146,6 @@
           "level": 95
         }
       ],
-      "evoMove": null,
       "weak": [],
       "resist": [
         "Phys"
@@ -13306,7 +13156,7 @@
         "Bless",
         "Curse"
       ],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Oni",
@@ -13349,7 +13199,6 @@
           "level": 24
         }
       ],
-      "evoMove": null,
       "weak": [],
       "resist": [
         "Phys",
@@ -13358,7 +13207,7 @@
       "null": [],
       "drain": [],
       "repel": [],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Onmoraki",
@@ -13401,7 +13250,6 @@
           "level": 17
         }
       ],
-      "evoMove": null,
       "weak": [
         "Gun",
         "Bless"
@@ -13414,7 +13262,7 @@
       ],
       "drain": [],
       "repel": [],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Orobas",
@@ -13457,7 +13305,6 @@
           "level": 21
         }
       ],
-      "evoMove": null,
       "weak": [
         "Ice"
       ],
@@ -13468,7 +13315,7 @@
       "null": [],
       "drain": [],
       "repel": [],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Orpheus",
@@ -13523,7 +13370,6 @@
           "level": 32
         }
       ],
-      "evoMove": null,
       "weak": [
         "Elec",
         "Curse"
@@ -13536,7 +13382,8 @@
       "repel": [],
       "game": "p5",
       "user": "P3 Protagonist",
-      "stage": 1
+      "stage": 1,
+      "evoSkill": null
     },
     {
       "name": "Orpheus F",
@@ -13589,7 +13436,6 @@
           "level": 15
         }
       ],
-      "evoMove": null,
       "weak": [
         "Elec",
         "Curse"
@@ -13602,7 +13448,8 @@
       "repel": [],
       "game": "p5",
       "user": "P3 Protagonist",
-      "stage": 1
+      "stage": 1,
+      "evoSkill": null
     },
     {
       "name": "Orpheus Picaro",
@@ -13649,7 +13496,6 @@
           "level": 35
         }
       ],
-      "evoMove": null,
       "weak": [
         "Elec",
         "Curse"
@@ -13710,7 +13556,6 @@
           "level": 0
         }
       ],
-      "evoMove": null,
       "weak": [
         "Elec",
         "Curse"
@@ -13744,7 +13589,6 @@
           "level": 0
         }
       ],
-      "evoMove": null,
       "weak": [],
       "resist": [
         "Phys",
@@ -13763,7 +13607,8 @@
       "repel": [],
       "game": "p5",
       "user": "P3 Protagonist",
-      "stage": 3
+      "stage": 3,
+      "evoSkill": null
     },
     {
       "name": "Orthrus",
@@ -13806,7 +13651,6 @@
           "level": 26
         }
       ],
-      "evoMove": null,
       "weak": [
         "Ice"
       ],
@@ -13818,7 +13662,7 @@
         "Fire"
       ],
       "repel": [],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Ose",
@@ -13861,7 +13705,6 @@
           "level": 47
         }
       ],
-      "evoMove": null,
       "weak": [
         "Bless"
       ],
@@ -13874,7 +13717,7 @@
       ],
       "drain": [],
       "repel": [],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Pabilsag",
@@ -13917,7 +13760,6 @@
           "level": 56
         }
       ],
-      "evoMove": null,
       "weak": [
         "Ice",
         "Bless"
@@ -13977,7 +13819,6 @@
           "level": 59
         }
       ],
-      "evoMove": null,
       "weak": [
         "Bless"
       ],
@@ -13989,7 +13830,7 @@
       "repel": [
         "Curse"
       ],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Palladion",
@@ -14056,7 +13897,6 @@
           "level": 60
         }
       ],
-      "evoMove": null,
       "weak": [
         "Elec"
       ],
@@ -14070,7 +13910,8 @@
       "repel": [],
       "game": "p3",
       "user": "Aigis",
-      "stage": 1
+      "stage": 1,
+      "evoSkill": null
     },
     {
       "name": "Pandora",
@@ -14173,7 +14014,6 @@
           "level": 70
         }
       ],
-      "evoMove": "Makougaon",
       "weak": [
         "Curse"
       ],
@@ -14185,7 +14025,8 @@
       "repel": [],
       "game": "p5",
       "user": "Sophia",
-      "stage": 2
+      "stage": 2,
+      "evoSkill": "Makougaon"
     },
     {
       "name": "Parvati",
@@ -14232,7 +14073,6 @@
           "level": 61
         }
       ],
-      "evoMove": null,
       "weak": [
         "Curse"
       ],
@@ -14245,7 +14085,7 @@
       "repel": [
         "Ice"
       ],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Pazuzu",
@@ -14292,7 +14132,6 @@
           "level": 50
         }
       ],
-      "evoMove": null,
       "weak": [
         "Bless"
       ],
@@ -14304,7 +14143,7 @@
       ],
       "drain": [],
       "repel": [],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Penthesilea",
@@ -14375,7 +14214,6 @@
           "level": 55
         }
       ],
-      "evoMove": null,
       "weak": [
         "Fire"
       ],
@@ -14387,7 +14225,8 @@
       "repel": [],
       "game": "p3",
       "user": "Mitsuru Kirijo",
-      "stage": 1
+      "stage": 1,
+      "evoSkill": null
     },
     {
       "name": "Phoenix",
@@ -14430,7 +14269,6 @@
           "level": 26
         }
       ],
-      "evoMove": null,
       "weak": [
         "Elec"
       ],
@@ -14489,7 +14327,6 @@
           "level": 33
         }
       ],
-      "evoMove": null,
       "weak": [
         "Fire",
         "Bless"
@@ -14502,7 +14339,7 @@
       ],
       "drain": [],
       "repel": [],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Pithos",
@@ -14585,7 +14422,6 @@
           "level": 48
         }
       ],
-      "evoMove": null,
       "weak": [
         "Curse"
       ],
@@ -14597,7 +14433,8 @@
       "repel": [],
       "game": "p5",
       "user": "Sophia",
-      "stage": 1
+      "stage": 1,
+      "evoSkill": null
     },
     {
       "name": "Pixie",
@@ -14636,7 +14473,6 @@
           "level": 6
         }
       ],
-      "evoMove": null,
       "weak": [
         "Gun",
         "Ice",
@@ -14649,7 +14485,7 @@
       "null": [],
       "drain": [],
       "repel": [],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Polydeuces",
@@ -14712,7 +14548,6 @@
           "level": 41
         }
       ],
-      "evoMove": null,
       "weak": [
         "Ice"
       ],
@@ -14724,7 +14559,8 @@
       "repel": [],
       "game": "p3",
       "user": "Akihiko Sanada",
-      "stage": 1
+      "stage": 1,
+      "evoSkill": null
     },
     {
       "name": "Power",
@@ -14771,7 +14607,6 @@
           "level": 46
         }
       ],
-      "evoMove": null,
       "weak": [
         "Gun",
         "Curse"
@@ -14784,7 +14619,7 @@
       ],
       "drain": [],
       "repel": [],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Principality",
@@ -14831,7 +14666,6 @@
           "level": 35
         }
       ],
-      "evoMove": null,
       "weak": [
         "Curse"
       ],
@@ -14843,7 +14677,7 @@
       ],
       "drain": [],
       "repel": [],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Prometheus",
@@ -14882,7 +14716,6 @@
           "level": 67
         }
       ],
-      "evoMove": "Treasure Skimmer",
       "weak": [],
       "resist": [],
       "null": [],
@@ -14890,7 +14723,8 @@
       "repel": [],
       "game": "p5",
       "user": "Futaba Sakura",
-      "stage": 2
+      "stage": 2,
+      "evoSkill": "Treasure Skimmer"
     },
     {
       "name": "Psyche",
@@ -14969,7 +14803,6 @@
           "level": 75
         }
       ],
-      "evoMove": null,
       "weak": [],
       "resist": [],
       "null": [],
@@ -14977,7 +14810,8 @@
       "repel": [],
       "game": "p3",
       "user": "Metis",
-      "stage": 1
+      "stage": 1,
+      "evoSkill": null
     },
     {
       "name": "Queen Mab",
@@ -15026,7 +14860,6 @@
           "level": 48
         }
       ],
-      "evoMove": null,
       "weak": [
         "Wind"
       ],
@@ -15038,7 +14871,7 @@
       ],
       "drain": [],
       "repel": [],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Quetzalcoatl",
@@ -15085,7 +14918,6 @@
           "level": 71
         }
       ],
-      "evoMove": null,
       "weak": [
         "Psy"
       ],
@@ -15097,7 +14929,7 @@
       ],
       "drain": [],
       "repel": [],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Raja Naga",
@@ -15146,7 +14978,6 @@
           "level": 60
         }
       ],
-      "evoMove": null,
       "weak": [],
       "resist": [],
       "null": [
@@ -15154,7 +14985,7 @@
       ],
       "drain": [],
       "repel": [],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Rakshasa",
@@ -15201,7 +15032,6 @@
           "level": 30
         }
       ],
-      "evoMove": null,
       "weak": [
         "Wind",
         "Bless"
@@ -15216,7 +15046,7 @@
       ],
       "drain": [],
       "repel": [],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Rangda",
@@ -15259,7 +15089,6 @@
           "level": 53
         }
       ],
-      "evoMove": null,
       "weak": [
         "Elec",
         "Bless"
@@ -15274,7 +15103,7 @@
         "Phys",
         "Gun"
       ],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Raoul",
@@ -15325,7 +15154,6 @@
           "level": 82
         }
       ],
-      "evoMove": null,
       "weak": [
         "Bless"
       ],
@@ -15337,7 +15165,8 @@
       "repel": [],
       "game": "p5",
       "user": "P5 Protagonist",
-      "stage": 3
+      "stage": 3,
+      "evoSkill": null
     },
     {
       "name": "Raphael",
@@ -15384,7 +15213,6 @@
           "level": 83
         }
       ],
-      "evoMove": null,
       "weak": [],
       "resist": [],
       "null": [
@@ -15395,7 +15223,7 @@
         "Ice"
       ],
       "repel": [],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Red Rider",
@@ -15442,7 +15270,6 @@
           "level": 46
         }
       ],
-      "evoMove": null,
       "weak": [
         "Bless"
       ],
@@ -15452,7 +15279,7 @@
       ],
       "drain": [],
       "repel": [],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Regent",
@@ -15592,7 +15419,6 @@
           "level": 70
         }
       ],
-      "evoMove": null,
       "weak": [
         "Curse"
       ],
@@ -15604,7 +15430,8 @@
       "repel": [],
       "game": "p5",
       "user": "Goro Akechi",
-      "stage": 1
+      "stage": 1,
+      "evoSkill": null
     },
     {
       "name": "Rokuten Maoh",
@@ -15693,7 +15520,6 @@
           "level": 75
         }
       ],
-      "evoMove": null,
       "weak": [
         "Wind"
       ],
@@ -15705,7 +15531,8 @@
       "repel": [],
       "game": "p4",
       "user": "Kanji Tatsumi",
-      "stage": 2
+      "stage": 2,
+      "evoSkill": null
     },
     {
       "name": "Saki Mitama",
@@ -15748,7 +15575,6 @@
           "level": 10
         }
       ],
-      "evoMove": null,
       "weak": [
         "Wind"
       ],
@@ -15805,7 +15631,6 @@
           "level": 81
         }
       ],
-      "evoMove": null,
       "weak": [],
       "resist": [
         "Phys",
@@ -15818,7 +15643,7 @@
       "repel": [
         "Bless"
       ],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Sandman",
@@ -15865,7 +15690,6 @@
           "level": 28
         }
       ],
-      "evoMove": null,
       "weak": [
         "Elec",
         "Fire"
@@ -15876,7 +15700,7 @@
       "null": [],
       "drain": [],
       "repel": [],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Sarasvati",
@@ -15923,7 +15747,6 @@
           "level": 54
         }
       ],
-      "evoMove": null,
       "weak": [
         "Nuke"
       ],
@@ -15935,7 +15758,7 @@
       ],
       "drain": [],
       "repel": [],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Satan",
@@ -15986,7 +15809,6 @@
           "level": 98
         }
       ],
-      "evoMove": null,
       "weak": [],
       "resist": [
         "Gun"
@@ -16048,7 +15870,6 @@
           "level": 99
         }
       ],
-      "evoMove": null,
       "weak": [],
       "resist": [
         "Phys",
@@ -16069,7 +15890,8 @@
       "repel": [],
       "game": "p5",
       "user": "P5 Protagonist",
-      "stage": 2
+      "stage": 2,
+      "evoSkill": null
     },
     {
       "name": "Scathach",
@@ -16116,7 +15938,6 @@
           "level": 82
         }
       ],
-      "evoMove": null,
       "weak": [],
       "resist": [],
       "null": [
@@ -16127,7 +15948,7 @@
       "repel": [
         "Elec"
       ],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Seiryu",
@@ -16176,7 +15997,6 @@
           "level": 67
         }
       ],
-      "evoMove": null,
       "weak": [
         "Nuke"
       ],
@@ -16186,7 +16006,7 @@
       "null": [],
       "drain": [],
       "repel": [],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Seiten Taisei -P5-",
@@ -16299,7 +16119,6 @@
           "level": 75
         }
       ],
-      "evoMove": "Evade Wind",
       "weak": [
         "Wind"
       ],
@@ -16313,7 +16132,8 @@
       "repel": [],
       "game": "p5",
       "user": "Ryuji Sakamoto",
-      "stage": 2
+      "stage": 2,
+      "evoSkill": "Evade Wind"
     },
     {
       "name": "Senri",
@@ -16356,7 +16176,6 @@
           "level": 14
         }
       ],
-      "evoMove": null,
       "weak": [
         "Elec"
       ],
@@ -16409,7 +16228,6 @@
           "level": 30
         }
       ],
-      "evoMove": null,
       "weak": [
         "Psy"
       ],
@@ -16420,7 +16238,7 @@
       "null": [],
       "drain": [],
       "repel": [],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Seth",
@@ -16463,7 +16281,6 @@
           "level": 56
         }
       ],
-      "evoMove": null,
       "weak": [
         "Bless"
       ],
@@ -16477,7 +16294,7 @@
       "repel": [
         "Fire"
       ],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Shiisaa",
@@ -16520,7 +16337,6 @@
           "level": 19
         }
       ],
-      "evoMove": null,
       "weak": [
         "Psy",
         "Curse"
@@ -16533,7 +16349,7 @@
       ],
       "drain": [],
       "repel": [],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Shiki-Ouji",
@@ -16580,7 +16396,6 @@
           "level": 24
         }
       ],
-      "evoMove": null,
       "weak": [
         "Nuke"
       ],
@@ -16593,7 +16408,7 @@
       ],
       "drain": [],
       "repel": [],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Shiva",
@@ -16640,7 +16455,6 @@
           "level": 88
         }
       ],
-      "evoMove": null,
       "weak": [
         "Nuke"
       ],
@@ -16656,7 +16470,7 @@
       "repel": [
         "Elec"
       ],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Siegfried",
@@ -16703,7 +16517,6 @@
           "level": 90
         }
       ],
-      "evoMove": null,
       "weak": [
         "Nuke"
       ],
@@ -16717,7 +16530,7 @@
       ],
       "drain": [],
       "repel": [],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Silky",
@@ -16756,7 +16569,6 @@
           "level": 10
         }
       ],
-      "evoMove": null,
       "weak": [
         "Fire",
         "Elec"
@@ -16767,7 +16579,7 @@
       "null": [],
       "drain": [],
       "repel": [],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Skadi",
@@ -16810,7 +16622,6 @@
           "level": 58
         }
       ],
-      "evoMove": null,
       "weak": [],
       "resist": [],
       "null": [
@@ -16820,7 +16631,7 @@
       "repel": [
         "Ice"
       ],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Slime",
@@ -16859,7 +16670,6 @@
           "level": 14
         }
       ],
-      "evoMove": null,
       "weak": [
         "Fire",
         "Wind"
@@ -16871,7 +16681,7 @@
       "null": [],
       "drain": [],
       "repel": [],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Sraosha",
@@ -16918,7 +16728,6 @@
           "level": 85
         }
       ],
-      "evoMove": null,
       "weak": [
         "Curse"
       ],
@@ -16930,7 +16739,7 @@
       "repel": [
         "Bless"
       ],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Succubus",
@@ -16973,7 +16782,6 @@
           "level": 12
         }
       ],
-      "evoMove": null,
       "weak": [
         "Gun",
         "Bless"
@@ -16986,7 +16794,7 @@
       ],
       "drain": [],
       "repel": [],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Sudama",
@@ -17033,7 +16841,6 @@
           "level": 23
         }
       ],
-      "evoMove": null,
       "weak": [
         "Ice",
         "Nuke"
@@ -17044,7 +16851,7 @@
       "repel": [
         "Wind"
       ],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Sui-Ki",
@@ -17091,7 +16898,6 @@
           "level": 29
         }
       ],
-      "evoMove": null,
       "weak": [
         "Nuke"
       ],
@@ -17104,7 +16910,7 @@
         "Ice"
       ],
       "repel": [],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Sukuna-Hikona -P4-",
@@ -17189,7 +16995,6 @@
           "level": 75
         }
       ],
-      "evoMove": null,
       "weak": [],
       "resist": [
         "Bless",
@@ -17198,9 +17003,10 @@
       "null": [],
       "drain": [],
       "repel": [],
-      "game": "p4",
+      "game": "smt5",
       "user": "Naoto Shirogane",
-      "stage": 1
+      "stage": 1,
+      "evoSkill": null
     },
     {
       "name": "Sumeo-Okami",
@@ -17295,7 +17101,6 @@
           "level": 76
         }
       ],
-      "evoMove": "Burning Petals",
       "weak": [
         "Ice"
       ],
@@ -17309,7 +17114,8 @@
       "repel": [],
       "game": "p4",
       "user": "Yukiko Amagi",
-      "stage": 3
+      "stage": 3,
+      "evoSkill": "Burning Petals"
     },
     {
       "name": "Surt",
@@ -17356,7 +17162,6 @@
           "level": 88
         }
       ],
-      "evoMove": null,
       "weak": [
         "Ice"
       ],
@@ -17371,7 +17176,7 @@
         "Fire"
       ],
       "repel": [],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Susano-o",
@@ -17462,7 +17267,6 @@
           "level": 73
         }
       ],
-      "evoMove": null,
       "weak": [
         "Elec"
       ],
@@ -17476,7 +17280,8 @@
       "repel": [],
       "game": "p4",
       "user": "Yosuke Hanamura",
-      "stage": 2
+      "stage": 2,
+      "evoSkill": null
     },
     {
       "name": "Suzaku",
@@ -17525,7 +17330,6 @@
           "level": 21
         }
       ],
-      "evoMove": null,
       "weak": [
         "Ice"
       ],
@@ -17537,7 +17341,7 @@
         "Fire"
       ],
       "repel": [],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Suzuka Gongen",
@@ -17632,7 +17436,6 @@
           "level": 74
         }
       ],
-      "evoMove": null,
       "weak": [
         "Fire"
       ],
@@ -17646,7 +17449,8 @@
       "repel": [],
       "game": "p4",
       "user": "Chie Satonaka",
-      "stage": 2
+      "stage": 2,
+      "evoSkill": null
     },
     {
       "name": "Takehaya Susano-o",
@@ -17737,7 +17541,6 @@
           "level": 73
         }
       ],
-      "evoMove": "Youthful Wind",
       "weak": [
         "Elec"
       ],
@@ -17751,7 +17554,8 @@
       "repel": [],
       "game": "p4",
       "user": "Yosuke Hanamura",
-      "stage": 3
+      "stage": 3,
+      "evoSkill": "Youthful Wind"
     },
     {
       "name": "Takeji Zaiten",
@@ -17838,7 +17642,6 @@
           "level": 75
         }
       ],
-      "evoMove": "The Man\"s Way",
       "weak": [
         "Wind"
       ],
@@ -17852,7 +17655,8 @@
       "repel": [],
       "game": "p4",
       "user": "Kanji Tatsumi",
-      "stage": 3
+      "stage": 3,
+      "evoSkill": "The Man\"s Way"
     },
     {
       "name": "Take-Mikazuchi",
@@ -17939,7 +17743,6 @@
           "level": 75
         }
       ],
-      "evoMove": null,
       "weak": [
         "Wind"
       ],
@@ -17951,7 +17754,8 @@
       "repel": [],
       "game": "p4",
       "user": "Kanji Tatsumi",
-      "stage": 1
+      "stage": 1,
+      "evoSkill": null
     },
     {
       "name": "Take-Minakata",
@@ -17998,7 +17802,6 @@
           "level": 32
         }
       ],
-      "evoMove": null,
       "weak": [
         "Psy"
       ],
@@ -18009,7 +17812,7 @@
       "null": [],
       "drain": [],
       "repel": [],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Tam Lin",
@@ -18056,7 +17859,6 @@
           "level": 32
         }
       ],
-      "evoMove": null,
       "weak": [
         "Curse"
       ],
@@ -18118,7 +17920,6 @@
           "level": 70
         }
       ],
-      "evoMove": null,
       "weak": [
         "Bless"
       ],
@@ -18132,7 +17933,8 @@
       ],
       "game": "p5",
       "user": "Margaret",
-      "stage": 1
+      "stage": 1,
+      "evoSkill": null
     },
     {
       "name": "Thanatos Picaro",
@@ -18179,7 +17981,6 @@
           "level": 74
         }
       ],
-      "evoMove": null,
       "weak": [
         "Bless"
       ],
@@ -18238,7 +18039,6 @@
           "level": 71
         }
       ],
-      "evoMove": null,
       "weak": [],
       "resist": [
         "Phys",
@@ -18250,7 +18050,7 @@
       ],
       "drain": [],
       "repel": [],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Thoth",
@@ -18297,7 +18097,6 @@
           "level": 42
         }
       ],
-      "evoMove": null,
       "weak": [
         "Psy"
       ],
@@ -18310,7 +18109,7 @@
       ],
       "drain": [],
       "repel": [],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Throne",
@@ -18357,7 +18156,6 @@
           "level": 78
         }
       ],
-      "evoMove": null,
       "weak": [
         "Nuke"
       ],
@@ -18370,7 +18168,7 @@
       "repel": [
         "Bless"
       ],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Thunderbird",
@@ -18417,7 +18215,6 @@
           "level": 39
         }
       ],
-      "evoMove": null,
       "weak": [
         "Psy",
         "Curse"
@@ -18428,7 +18225,7 @@
         "Elec"
       ],
       "repel": [],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Titania",
@@ -18471,7 +18268,6 @@
           "level": 0
         }
       ],
-      "evoMove": null,
       "weak": [
         "Psy"
       ],
@@ -18483,7 +18279,7 @@
       "null": [],
       "drain": [],
       "repel": [],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Tomoe",
@@ -18578,7 +18374,6 @@
           "level": 74
         }
       ],
-      "evoMove": null,
       "weak": [
         "Fire"
       ],
@@ -18590,7 +18385,8 @@
       "repel": [],
       "game": "p4",
       "user": "Chie Satonaka",
-      "stage": 1
+      "stage": 1,
+      "evoSkill": null
     },
     {
       "name": "Triglav",
@@ -18637,7 +18433,6 @@
           "level": 49
         }
       ],
-      "evoMove": null,
       "weak": [
         "Elec"
       ],
@@ -18742,7 +18537,6 @@
           "level": 75
         }
       ],
-      "evoMove": "Spring of Life",
       "weak": [
         "Wind"
       ],
@@ -18754,7 +18548,8 @@
       "repel": [],
       "game": "p3",
       "user": "Junpei Iori",
-      "stage": 2
+      "stage": 2,
+      "evoSkill": "Spring of Life"
     },
     {
       "name": "Trumpeter",
@@ -18801,7 +18596,6 @@
           "level": 65
         }
       ],
-      "evoMove": null,
       "weak": [],
       "resist": [],
       "null": [
@@ -18814,7 +18608,7 @@
         "Elec",
         "Bless"
       ],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Tsukiyomi",
@@ -18863,7 +18657,6 @@
           "level": 56
         }
       ],
-      "evoMove": null,
       "weak": [
         "Nuke"
       ],
@@ -18878,7 +18671,8 @@
       ],
       "game": "p5",
       "user": "Sho Minazuki",
-      "stage": 1
+      "stage": 1,
+      "evoSkill": null
     },
     {
       "name": "Tsukiyomi Picaro",
@@ -18927,7 +18721,6 @@
           "level": 61
         }
       ],
-      "evoMove": null,
       "weak": [
         "Nuke"
       ],
@@ -18991,7 +18784,6 @@
           "level": 77
         }
       ],
-      "evoMove": null,
       "weak": [
         "Wind"
       ],
@@ -19046,7 +18838,6 @@
           "level": 37
         }
       ],
-      "evoMove": null,
       "weak": [
         "Fire"
       ],
@@ -19103,7 +18894,6 @@
           "level": 44
         }
       ],
-      "evoMove": null,
       "weak": [
         "Curse"
       ],
@@ -19163,7 +18953,6 @@
           "level": 86
         }
       ],
-      "evoMove": null,
       "weak": [],
       "resist": [],
       "null": [
@@ -19175,7 +18964,7 @@
       "repel": [
         "Bless"
       ],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Valjean",
@@ -19266,7 +19055,6 @@
           "level": 80
         }
       ],
-      "evoMove": null,
       "weak": [],
       "resist": [],
       "null": [],
@@ -19274,7 +19062,8 @@
       "repel": [],
       "game": "p5",
       "user": "Zenkichi Hasegawa",
-      "stage": 1
+      "stage": 1,
+      "evoSkill": null
     },
     {
       "name": "Valkyrie",
@@ -19317,7 +19106,6 @@
           "level": 49
         }
       ],
-      "evoMove": null,
       "weak": [
         "Fire"
       ],
@@ -19331,7 +19119,7 @@
       "repel": [
         "Ice"
       ],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Vanadis",
@@ -19386,7 +19174,6 @@
           "level": 80
         }
       ],
-      "evoMove": "Evade Curse",
       "weak": [
         "Curse"
       ],
@@ -19398,7 +19185,8 @@
       "repel": [],
       "game": "p5",
       "user": "Sumire Yoshizawa",
-      "stage": 2
+      "stage": 2,
+      "evoSkill": "Evade Curse"
     },
     {
       "name": "Vasuki",
@@ -19445,7 +19233,6 @@
           "level": 73
         }
       ],
-      "evoMove": null,
       "weak": [
         "Curse"
       ],
@@ -19456,7 +19243,7 @@
       ],
       "drain": [],
       "repel": [],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Vishnu",
@@ -19507,7 +19294,6 @@
           "level": 90
         }
       ],
-      "evoMove": null,
       "weak": [
         "Fire"
       ],
@@ -19520,7 +19306,7 @@
         "Ice"
       ],
       "repel": [],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Vohu Manah",
@@ -19567,7 +19353,6 @@
           "level": 85
         }
       ],
-      "evoMove": null,
       "weak": [
         "Wind"
       ],
@@ -19632,7 +19417,6 @@
           "level": 44
         }
       ],
-      "evoMove": null,
       "weak": [
         "Ice"
       ],
@@ -19645,7 +19429,7 @@
       "repel": [
         "Curse"
       ],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "William",
@@ -19756,7 +19540,6 @@
           "level": 75
         }
       ],
-      "evoMove": "Fighting Spirit",
       "weak": [
         "Wind"
       ],
@@ -19770,7 +19553,8 @@
       "repel": [],
       "game": "p5",
       "user": "Ryuji Sakamoto",
-      "stage": 3
+      "stage": 3,
+      "evoSkill": "Fighting Spirit"
     },
     {
       "name": "Yaksini",
@@ -19815,7 +19599,6 @@
           "level": 24
         }
       ],
-      "evoMove": null,
       "weak": [
         "Nuke"
       ],
@@ -19827,7 +19610,7 @@
       ],
       "drain": [],
       "repel": [],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Yamata-no-Orochi",
@@ -19870,7 +19653,6 @@
           "level": 69
         }
       ],
-      "evoMove": null,
       "weak": [],
       "resist": [
         "Phys",
@@ -19882,7 +19664,7 @@
         "Ice"
       ],
       "repel": [],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Yamato Sumeragi",
@@ -19965,7 +19747,6 @@
           "level": 75
         }
       ],
-      "evoMove": "Shield of Justice",
       "weak": [],
       "resist": [],
       "null": [
@@ -19978,7 +19759,8 @@
       ],
       "game": "p4",
       "user": "Naoto Shirogane",
-      "stage": 3
+      "stage": 3,
+      "evoSkill": "Shield of Justice"
     },
     {
       "name": "Yamato-Takeru",
@@ -20061,7 +19843,6 @@
           "level": 75
         }
       ],
-      "evoMove": null,
       "weak": [],
       "resist": [
         "Fire"
@@ -20074,7 +19855,8 @@
       "repel": [],
       "game": "p4",
       "user": "Naoto Shirogane",
-      "stage": 2
+      "stage": 2,
+      "evoSkill": null
     },
     {
       "name": "Yatagarasu",
@@ -20121,7 +19903,6 @@
           "level": 64
         }
       ],
-      "evoMove": null,
       "weak": [
         "Curse"
       ],
@@ -20133,7 +19914,7 @@
       ],
       "drain": [],
       "repel": [],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Yomotsu-Shikome",
@@ -20176,7 +19957,6 @@
           "level": 11
         }
       ],
-      "evoMove": null,
       "weak": [
         "Fire"
       ],
@@ -20233,7 +20013,6 @@
           "level": 94
         }
       ],
-      "evoMove": null,
       "weak": [],
       "resist": [
         "Fire"
@@ -20246,7 +20025,7 @@
         "Elec",
         "Bless"
       ],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Yurlungur",
@@ -20293,7 +20072,6 @@
           "level": 49
         }
       ],
-      "evoMove": null,
       "weak": [
         "Psy"
       ],
@@ -20305,7 +20083,7 @@
       ],
       "drain": [],
       "repel": [],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Zaou-Gongen",
@@ -20352,7 +20130,6 @@
           "level": 86
         }
       ],
-      "evoMove": null,
       "weak": [
         "Elec"
       ],
@@ -20365,7 +20142,7 @@
       "repel": [
         "Fire"
       ],
-      "game": "p5"
+      "game": "smt5"
     },
     {
       "name": "Zorro",
@@ -20480,7 +20257,6 @@
           "level": 75
         }
       ],
-      "evoMove": null,
       "weak": [
         "Elec"
       ],
@@ -20492,7 +20268,8 @@
       "repel": [],
       "game": "p5",
       "user": "Morgana",
-      "stage": 1
+      "stage": 1,
+      "evoSkill": null
     },
     {
       "name": "Zouchouten",
@@ -20539,7 +20316,6 @@
           "level": 36
         }
       ],
-      "evoMove": null,
       "weak": [
         "Wind"
       ],
@@ -20549,7 +20325,7 @@
       "null": [],
       "drain": [],
       "repel": [],
-      "game": "p5"
+      "game": "smt5"
     }
   ],
   "skills": [
