@@ -17,6 +17,10 @@
       "lu": 47,
       "learnset": [
         {
+          "name": "Fogna",
+          "level": 0
+        },
+        {
           "name": "Megaton Press",
           "level": 0
         },
@@ -26,10 +30,6 @@
         },
         {
           "name": "Severing Bite",
-          "level": 0
-        },
-        {
-          "name": "Fogna",
           "level": 0
         },
         {
@@ -75,28 +75,16 @@
       "lu": 11,
       "learnset": [
         {
-          "name": "Dia",
-          "level": 0
-        },
-        {
-          "name": "Baisudi",
-          "level": 0
-        },
-        {
-          "name": "Lunge",
-          "level": 4
-        },
-        {
-          "name": "Rakukaja",
-          "level": 6
-        },
-        {
           "name": "Zio",
-          "level": 7
+          "level": 0
         },
         {
-          "name": "Dodge Elec",
-          "level": 8
+          "name": "Dia",
+          "level": 11
+        },
+        {
+          "name": "Sukukaja",
+          "level": 12
         }
       ],
       "weak": [
@@ -290,32 +278,32 @@
       "lu": 34,
       "learnset": [
         {
-          "name": "Mamudoon",
-          "level": 0
-        },
-        {
-          "name": "Mudo Boost",
-          "level": 0
-        },
-        {
-          "name": "Maeigaon",
-          "level": 0
-        },
-        {
           "name": "Die For Me!",
-          "level": 85
+          "level": 0
         },
         {
-          "name": "Megidolaon",
-          "level": 86
+          "name": "Lullaby",
+          "level": 0
         },
         {
-          "name": "Concentrate",
-          "level": 87
+          "name": "Mudoon",
+          "level": 0
         },
         {
-          "name": "Survival Trick",
-          "level": 88
+          "name": "Spirit Drain",
+          "level": 0
+        },
+        {
+          "name": "Dark Pleroma",
+          "level": 41
+        },
+        {
+          "name": "Mamudoon",
+          "level": 42
+        },
+        {
+          "name": "Resist Light",
+          "level": 43
         }
       ],
       "weak": [
@@ -349,36 +337,32 @@
       "lu": 61,
       "learnset": [
         {
-          "name": "Diamond Dust",
+          "name": "Donum Gladi",
           "level": 0
         },
         {
-          "name": "Marakukaja",
+          "name": "Donum Magici",
           "level": 0
         },
         {
-          "name": "Freeze Boost",
+          "name": "Mediarahan",
           "level": 0
         },
         {
-          "name": "Mabufudyne",
+          "name": "Megidolaon",
+          "level": 0
+        },
+        {
+          "name": "Makarakarn",
           "level": 82
         },
         {
-          "name": "Concentrate",
+          "name": "Tetrakarn",
           "level": 83
         },
         {
-          "name": "Auto-Maraku",
-          "level": 85
-        },
-        {
-          "name": "Ice Amp",
-          "level": 86
-        },
-        {
-          "name": "Ice Age",
-          "level": 87
+          "name": "Energy Drain",
+          "level": 84
         }
       ],
       "weak": [
@@ -523,11 +507,7 @@
       "lu": 20,
       "learnset": [
         {
-          "name": "Mazio",
-          "level": 0
-        },
-        {
-          "name": "Magaru",
+          "name": "Hama",
           "level": 0
         },
         {
@@ -535,16 +515,20 @@
           "level": 0
         },
         {
-          "name": "Nocturnal Flash",
-          "level": 15
+          "name": "Zionga",
+          "level": 0
         },
         {
-          "name": "Baisudi",
-          "level": 16
+          "name": "Tarukaja",
+          "level": 23
         },
         {
-          "name": "Divine Grace",
-          "level": 18
+          "name": "Mazio",
+          "level": 24
+        },
+        {
+          "name": "Resist Light",
+          "level": 25
         }
       ],
       "weak": [
@@ -575,36 +559,28 @@
       "lu": 34,
       "learnset": [
         {
-          "name": "Mafreila",
+          "name": "Ice Dracostrike",
           "level": 0
         },
         {
-          "name": "Defense Master",
+          "name": "Purple Smoke",
           "level": 0
         },
         {
-          "name": "Elec Wall",
+          "name": "Storm Dracostrike",
           "level": 0
         },
         {
-          "name": "Abysmal Surge",
-          "level": 46
+          "name": "Ice Pleroma",
+          "level": 60
         },
         {
-          "name": "Growth 2",
-          "level": 47
+          "name": "Titanomachia",
+          "level": 61
         },
         {
-          "name": "Marakukaja",
-          "level": 48
-        },
-        {
-          "name": "Freidyne",
-          "level": 49
-        },
-        {
-          "name": "Nuke Boost",
-          "level": 50
+          "name": "Murderous Glee",
+          "level": 62
         }
       ],
       "weak": [
@@ -751,28 +727,24 @@
       "lu": 19,
       "learnset": [
         {
-          "name": "Foul Breath",
+          "name": "Poisma",
           "level": 0
         },
         {
-          "name": "Terror Claw",
+          "name": "Sukukaja",
           "level": 0
         },
         {
-          "name": "Evil Touch",
-          "level": 28
+          "name": "Critical Wave",
+          "level": 19
         },
         {
-          "name": "Fear Boost",
-          "level": 29
+          "name": "Bouncing Claw",
+          "level": 20
         },
         {
-          "name": "Rakunda",
-          "level": 31
-        },
-        {
-          "name": "Ghastly Wail",
-          "level": 32
+          "name": "Zanma",
+          "level": 21
         }
       ],
       "weak": [
@@ -807,28 +779,20 @@
       "lu": 12,
       "learnset": [
         {
-          "name": "Kouha",
+          "name": "Hama",
           "level": 0
         },
         {
-          "name": "Makajama",
+          "name": "Humble Blessing",
           "level": 0
         },
         {
-          "name": "Dia",
-          "level": 0
-        },
-        {
-          "name": "Baisudi",
-          "level": 10
-        },
-        {
-          "name": "Dodge Curse",
+          "name": "Patra",
           "level": 11
         },
         {
-          "name": "Dekunda",
-          "level": 12
+          "name": "Recarm",
+          "level": 13
         }
       ],
       "weak": [
@@ -862,7 +826,11 @@
       "lu": 34,
       "learnset": [
         {
-          "name": "Hamaon",
+          "name": "Mahama",
+          "level": 0
+        },
+        {
+          "name": "Makarakarn",
           "level": 0
         },
         {
@@ -870,20 +838,16 @@
           "level": 0
         },
         {
-          "name": "Makouga",
-          "level": 0
+          "name": "Hamaon",
+          "level": 42
         },
         {
-          "name": "Maeiga",
-          "level": 36
+          "name": "Donum Gladi",
+          "level": 43
         },
         {
-          "name": "Dekunda",
-          "level": 37
-        },
-        {
-          "name": "Resist Bless",
-          "level": 38
+          "name": "Light Block",
+          "level": 44
         }
       ],
       "weak": [],
@@ -916,28 +880,24 @@
       "lu": 26,
       "learnset": [
         {
-          "name": "Garula",
+          "name": "Damascus Claw",
           "level": 0
+        },
+        {
+          "name": "Steel Needle",
+          "level": 0
+        },
+        {
+          "name": "Zionga",
+          "level": 49
         },
         {
           "name": "Masukukaja",
-          "level": 0
+          "level": 50
         },
         {
-          "name": "Wind Break",
-          "level": 0
-        },
-        {
-          "name": "Assault Dive",
-          "level": 27
-        },
-        {
-          "name": "Dekaja",
-          "level": 28
-        },
-        {
-          "name": "Null Forget",
-          "level": 29
+          "name": "Me Patra",
+          "level": 51
         }
       ],
       "weak": [
@@ -971,28 +931,20 @@
       "lu": 15,
       "learnset": [
         {
-          "name": "Rebellion",
-          "level": 0
-        },
-        {
-          "name": "Ice Wall",
-          "level": 0
-        },
-        {
           "name": "Bufu",
           "level": 0
         },
         {
-          "name": "Media",
-          "level": 13
+          "name": "Mabufu",
+          "level": 0
         },
         {
-          "name": "Elec Wall",
-          "level": 14
+          "name": "Patra",
+          "level": 17
         },
         {
-          "name": "Wind Wall",
-          "level": 16
+          "name": "Tarunda",
+          "level": 18
         }
       ],
       "weak": [
@@ -1024,28 +976,28 @@
       "lu": 52,
       "learnset": [
         {
-          "name": "Makarakarn",
+          "name": "Megidola",
           "level": 0
         },
         {
-          "name": "Abysmal Surge",
+          "name": "Mudoon",
           "level": 0
         },
         {
-          "name": "Null Brainwash",
+          "name": "Tetrakarn",
           "level": 0
         },
         {
-          "name": "Spirit Drain",
-          "level": 37
+          "name": "Great Life Spring",
+          "level": 63
         },
         {
-          "name": "Flash Bomb",
-          "level": 38
+          "name": "Debilitate",
+          "level": 64
         },
         {
-          "name": "Defense Master",
-          "level": 39
+          "name": "Boon Boost",
+          "level": 65
         }
       ],
       "weak": [
@@ -1137,27 +1089,23 @@
       "lu": 16,
       "learnset": [
         {
-          "name": "Giant Slice",
-          "level": 0
-        },
-        {
-          "name": "Dazzler",
-          "level": 0
-        },
-        {
           "name": "Hama",
           "level": 0
         },
         {
-          "name": "Rebellion",
-          "level": 18
+          "name": "Heat Wave",
+          "level": 0
         },
         {
-          "name": "Power Slash",
+          "name": "Tarunda",
           "level": 19
         },
         {
-          "name": "Vajra Blast",
+          "name": "Critical Slash",
+          "level": 20
+        },
+        {
+          "name": "Agilao",
           "level": 21
         }
       ],
@@ -1798,32 +1746,32 @@
       "lu": 53,
       "learnset": [
         {
-          "name": "Atomic Flare",
+          "name": "Agibarion",
           "level": 0
         },
         {
-          "name": "Mahamaon",
+          "name": "Critical Aura",
           "level": 0
         },
         {
-          "name": "Marakukaja",
+          "name": "Hades Blast",
           "level": 0
         },
         {
-          "name": "Auto-Mataru",
-          "level": 78
+          "name": "Power Punch",
+          "level": 0
         },
         {
-          "name": "Mafreidyne",
-          "level": 79
+          "name": "Megaton Press",
+          "level": 85
         },
         {
-          "name": "High Counter",
-          "level": 80
+          "name": "Freikugel",
+          "level": 87
         },
         {
-          "name": "Unshaken Will",
-          "level": 81
+          "name": "High Phys Pleroma",
+          "level": 88
         }
       ],
       "weak": [
@@ -1856,32 +1804,28 @@
       "lu": 25,
       "learnset": [
         {
-          "name": "Maragidyne",
+          "name": "Fatal Sword",
           "level": 0
         },
         {
-          "name": "Oni-Kagura",
+          "name": "Mamudoon",
           "level": 0
         },
         {
-          "name": "Mediarahan",
+          "name": "White Dracostrike",
           "level": 0
         },
         {
-          "name": "High Counter",
-          "level": 67
+          "name": "Light Pleroma",
+          "level": 55
         },
         {
-          "name": "Samarecarm",
-          "level": 68
+          "name": "Mahamaon",
+          "level": 56
         },
         {
-          "name": "Brave Blade",
-          "level": 70
-        },
-        {
-          "name": "Attack Master",
-          "level": 71
+          "name": "Retaliate",
+          "level": 57
         }
       ],
       "weak": [],
@@ -2043,32 +1987,28 @@
       "lu": 42,
       "learnset": [
         {
-          "name": "Mazionga",
+          "name": "Hamaon",
           "level": 0
         },
         {
-          "name": "Fire Wall",
+          "name": "Mabufudyne",
           "level": 0
         },
         {
-          "name": "Elec Break",
+          "name": "Slumber Vortex",
           "level": 0
         },
         {
-          "name": "Mediarama",
-          "level": 41
+          "name": "Mana Aid",
+          "level": 65
         },
         {
-          "name": "Elec Boost",
-          "level": 43
+          "name": "Null Ice",
+          "level": 66
         },
         {
-          "name": "Ziodyne",
-          "level": 44
-        },
-        {
-          "name": "Concentrate",
-          "level": 45
+          "name": "Bufubarion",
+          "level": 67
         }
       ],
       "weak": [
@@ -2099,32 +2039,28 @@
       "lu": 15,
       "learnset": [
         {
-          "name": "Maragidyne",
+          "name": "Agilao",
           "level": 0
         },
         {
-          "name": "Salvation",
+          "name": "Recarm",
           "level": 0
         },
         {
-          "name": "Thermopylae",
+          "name": "Venom Chaser",
           "level": 0
         },
         {
-          "name": "Enduring Soul",
-          "level": 84
+          "name": "Fire Block",
+          "level": 28
         },
         {
-          "name": "Samarecarm",
-          "level": 85
+          "name": "Berserker God",
+          "level": 29
         },
         {
-          "name": "Drain Curse",
-          "level": 86
-        },
-        {
-          "name": "Blazing Hell",
-          "level": 88
+          "name": "Endure",
+          "level": 30
         }
       ],
       "weak": [
@@ -2157,32 +2093,32 @@
       "lu": 67,
       "learnset": [
         {
-          "name": "Panta Rhei",
+          "name": "Makarakarn",
           "level": 0
         },
         {
-          "name": "Revolution",
+          "name": "Maragibarion",
           "level": 0
         },
         {
-          "name": "Matarukaja",
+          "name": "Tentarafoo",
           "level": 0
         },
         {
-          "name": "Ayamur",
-          "level": 84
+          "name": "Ziobarion",
+          "level": 0
         },
         {
-          "name": "Tetraja",
-          "level": 85
+          "name": "Floral Gust",
+          "level": 94
         },
         {
-          "name": "Charge",
-          "level": 86
+          "name": "Maziobarion",
+          "level": 95
         },
         {
-          "name": "Vacuum Wave",
-          "level": 87
+          "name": "Drain Force",
+          "level": 96
         }
       ],
       "weak": [],
@@ -2214,32 +2150,24 @@
       "lu": 26,
       "learnset": [
         {
-          "name": "Agidyne",
+          "name": "Maragion",
           "level": 0
         },
         {
-          "name": "Evade Fire",
+          "name": "Mudoon",
           "level": 0
         },
         {
-          "name": "Burn Boost",
-          "level": 0
+          "name": "Mamudo",
+          "level": 34
         },
         {
-          "name": "Bufudyne",
-          "level": 59
+          "name": "Dark Pleroma",
+          "level": 35
         },
         {
-          "name": "Ziodyne",
-          "level": 61
-        },
-        {
-          "name": "Shock Boost",
-          "level": 62
-        },
-        {
-          "name": "Freeze Boost",
-          "level": 63
+          "name": "Dark Block",
+          "level": 36
         }
       ],
       "weak": [
@@ -2272,28 +2200,28 @@
       "lu": 40,
       "learnset": [
         {
-          "name": "Ziodyne",
+          "name": "Damascus Claw",
           "level": 0
-        },
-        {
-          "name": "Wage War",
-          "level": 0
-        },
-        {
-          "name": "Elec Break",
-          "level": 0
-        },
-        {
-          "name": "Invigorate 2",
-          "level": 54
-        },
-        {
-          "name": "Null Elec",
-          "level": 55
         },
         {
           "name": "Maziodyne",
-          "level": 57
+          "level": 0
+        },
+        {
+          "name": "Tetrakarn",
+          "level": 0
+        },
+        {
+          "name": "High Restore",
+          "level": 61
+        },
+        {
+          "name": "Elec Block",
+          "level": 62
+        },
+        {
+          "name": "Null Force",
+          "level": 63
         }
       ],
       "weak": [
@@ -2328,36 +2256,32 @@
       "lu": 92,
       "learnset": [
         {
-          "name": "Maeigaon",
+          "name": "Death Flies",
           "level": 0
         },
         {
-          "name": "Mamudoon",
+          "name": "Debilitate",
           "level": 0
         },
         {
-          "name": "Evil Smile",
+          "name": "Mudobarion",
           "level": 0
         },
         {
-          "name": "Curse Amp",
-          "level": 88
+          "name": "Thunder Reign",
+          "level": 0
         },
         {
-          "name": "Concentrate",
-          "level": 89
+          "name": "Ice Age",
+          "level": 96
         },
         {
-          "name": "Demonic Decree",
-          "level": 90
+          "name": "Drain Dark",
+          "level": 97
         },
         {
-          "name": "Repel Ice",
-          "level": 91
-        },
-        {
-          "name": "Megidolaon",
-          "level": 92
+          "name": "Boon Boost EX",
+          "level": 98
         }
       ],
       "weak": [
@@ -2390,32 +2314,32 @@
       "lu": 50,
       "learnset": [
         {
-          "name": "Eigaon",
+          "name": "Hell Thrust",
           "level": 0
         },
         {
-          "name": "Bloodbath",
+          "name": "Mamudobarion",
           "level": 0
         },
         {
-          "name": "Curse Amp",
+          "name": "Maragibarion",
           "level": 0
         },
         {
-          "name": "Maeigaon",
-          "level": 84
+          "name": "Mudobarion",
+          "level": 0
         },
         {
-          "name": "Fear Boost",
-          "level": 85
+          "name": "Myriad Slashes",
+          "level": 93
         },
         {
-          "name": "Mamudoon",
-          "level": 86
+          "name": "Ragnarok",
+          "level": 94
         },
         {
-          "name": "Demonic Decree",
-          "level": 88
+          "name": "Drain Fire",
+          "level": 96
         }
       ],
       "weak": [],
@@ -2449,24 +2373,24 @@
           "level": 0
         },
         {
-          "name": "Ice Break",
+          "name": "Marakukaja",
           "level": 0
         },
         {
-          "name": "Null Rage",
-          "level": 38
-        },
-        {
-          "name": "Dodge Fire",
-          "level": 39
-        },
-        {
-          "name": "Bufudyne",
-          "level": 41
+          "name": "Mudoon",
+          "level": 0
         },
         {
           "name": "Concentrate",
-          "level": 42
+          "level": 45
+        },
+        {
+          "name": "Mamudoon",
+          "level": 46
+        },
+        {
+          "name": "Makarakarn",
+          "level": 47
         }
       ],
       "weak": [
@@ -2501,24 +2425,24 @@
       "lu": 14,
       "learnset": [
         {
-          "name": "Cleave",
+          "name": "Bloody Glee",
           "level": 0
         },
         {
-          "name": "Rakukaja",
+          "name": "Pierce Armor",
           "level": 0
         },
         {
-          "name": "Tarukaja",
-          "level": 10
+          "name": "Critical Slash",
+          "level": 25
         },
         {
-          "name": "Dodge Fire",
-          "level": 11
+          "name": "Agilao",
+          "level": 26
         },
         {
-          "name": "Power Slash",
-          "level": 13
+          "name": "Critical Wave",
+          "level": 27
         }
       ],
       "weak": [
@@ -2551,24 +2475,16 @@
       "lu": 11,
       "learnset": [
         {
-          "name": "Lunge",
+          "name": "Beatdown",
           "level": 0
         },
         {
-          "name": "Tarunda",
-          "level": 0
+          "name": "Charge",
+          "level": 15
         },
         {
-          "name": "Garu",
-          "level": 6
-        },
-        {
-          "name": "Ice Wall",
-          "level": 7
-        },
-        {
-          "name": "Apt Pupil",
-          "level": 8
+          "name": "Beast Eye",
+          "level": 16
         }
       ],
       "weak": [
@@ -2599,32 +2515,32 @@
       "lu": 33,
       "learnset": [
         {
-          "name": "Freidyne",
+          "name": "Agidyne",
           "level": 0
         },
         {
-          "name": "Diarahan",
+          "name": "Deathbound",
           "level": 0
         },
         {
-          "name": "Deadly Fury",
-          "level": 68
+          "name": "Matarukaja",
+          "level": 0
         },
         {
-          "name": "Mafreidyne",
-          "level": 69
+          "name": "Puncture Punch",
+          "level": 0
         },
         {
-          "name": "Nuke Amp",
-          "level": 71
+          "name": "Fire Block",
+          "level": 59
         },
         {
-          "name": "Tetrakarn",
-          "level": 72
+          "name": "Maragidyne",
+          "level": 60
         },
         {
-          "name": "God\"s Hand",
-          "level": 73
+          "name": "Abyssal Mask",
+          "level": 61
         }
       ],
       "weak": [
@@ -2658,32 +2574,32 @@
       "lu": 28,
       "learnset": [
         {
-          "name": "Mabufudyne",
+          "name": "Black Dracostrike",
           "level": 0
         },
         {
-          "name": "One-shot Kill",
+          "name": "Ice Dracostrike",
           "level": 0
         },
         {
-          "name": "Miracle Punch",
+          "name": "Mabufula",
           "level": 0
         },
         {
-          "name": "Ice Amp",
-          "level": 68
+          "name": "Matarunda",
+          "level": 0
         },
         {
-          "name": "Freeze Boost",
-          "level": 70
+          "name": "Endure",
+          "level": 45
         },
         {
-          "name": "Repel Fire",
-          "level": 71
+          "name": "Blinding Strike",
+          "level": 46
         },
         {
-          "name": "Diamond Dust",
-          "level": 72
+          "name": "Dark Block",
+          "level": 47
         }
       ],
       "weak": [],
@@ -2717,32 +2633,24 @@
       "lu": 23,
       "learnset": [
         {
-          "name": "Sledgehammer",
+          "name": "Life Drain",
           "level": 0
         },
         {
-          "name": "Evil Touch",
+          "name": "Toxic Spray",
           "level": 0
         },
         {
-          "name": "Foul Breath",
-          "level": 0
+          "name": "Toxic Cloud",
+          "level": 34
         },
         {
-          "name": "Ambient Aid",
-          "level": 20
+          "name": "Bestial Bite",
+          "level": 35
         },
         {
-          "name": "Headbutt",
-          "level": 21
-        },
-        {
-          "name": "Brain Jack",
-          "level": 23
-        },
-        {
-          "name": "Flash Bomb",
-          "level": 24
+          "name": "Resist Elec",
+          "level": 36
         }
       ],
       "weak": [
@@ -2779,32 +2687,32 @@
       "lu": 35,
       "learnset": [
         {
-          "name": "Mamudoon",
+          "name": "Bufudyne",
           "level": 0
         },
         {
-          "name": "Flash Bomb",
+          "name": "Ice Breath",
           "level": 0
-        },
-        {
-          "name": "Maeigaon",
-          "level": 0
-        },
-        {
-          "name": "Ambient Aid",
-          "level": 60
-        },
-        {
-          "name": "Bloodbath",
-          "level": 61
-        },
-        {
-          "name": "Ghastly Wail",
-          "level": 63
         },
         {
           "name": "Megidola",
-          "level": 64
+          "level": 0
+        },
+        {
+          "name": "Soul Divide",
+          "level": 0
+        },
+        {
+          "name": "Masukukaja",
+          "level": 53
+        },
+        {
+          "name": "Great Mana Spring",
+          "level": 54
+        },
+        {
+          "name": "Mamudoon",
+          "level": 55
         }
       ],
       "weak": [
@@ -2838,32 +2746,24 @@
       "lu": 20,
       "learnset": [
         {
-          "name": "Miracle Punch",
+          "name": "Dormina",
           "level": 0
         },
         {
-          "name": "Masukunda",
+          "name": "Mamudo",
           "level": 0
         },
         {
-          "name": "Psiodyne",
-          "level": 0
+          "name": "Bestial Bite",
+          "level": 25
         },
         {
-          "name": "Auto-Mataru",
-          "level": 51
+          "name": "Sukunda",
+          "level": 26
         },
         {
-          "name": "Triple Down",
-          "level": 52
-        },
-        {
-          "name": "Evade Phys",
-          "level": 54
-        },
-        {
-          "name": "Fast Heal",
-          "level": 55
+          "name": "Resist Ice",
+          "level": 27
         }
       ],
       "weak": [
@@ -2957,36 +2857,28 @@
       "lu": 35,
       "learnset": [
         {
-          "name": "Swift Strike",
+          "name": "Damascus Claw",
           "level": 0
         },
         {
-          "name": "Mabufula",
+          "name": "Mazionga",
           "level": 0
         },
         {
-          "name": "Counterstrike",
+          "name": "Storm Dracostrike",
           "level": 0
         },
         {
-          "name": "Ice Boost",
-          "level": 47
+          "name": "Fierce Roar",
+          "level": 44
         },
         {
-          "name": "Ice Break",
-          "level": 48
+          "name": "Great Life Spring",
+          "level": 45
         },
         {
-          "name": "Evade Fire",
-          "level": 49
-        },
-        {
-          "name": "Null Rage",
-          "level": 50
-        },
-        {
-          "name": "Bufudyne",
-          "level": 51
+          "name": "Frenzied Chomp",
+          "level": 46
         }
       ],
       "weak": [
@@ -3126,28 +3018,16 @@
       "lu": 5,
       "learnset": [
         {
-          "name": "Agi",
+          "name": "Dia",
           "level": 0
         },
         {
-          "name": "Cleave",
-          "level": 0
+          "name": "Zio",
+          "level": 8
         },
         {
-          "name": "Tarukaja",
-          "level": 0
-        },
-        {
-          "name": "Resist Sleep",
-          "level": 6
-        },
-        {
-          "name": "Sukukaja",
-          "level": 7
-        },
-        {
-          "name": "Media",
-          "level": 9
+          "name": "Gram Slice",
+          "level": 10
         }
       ],
       "weak": [
@@ -3674,28 +3554,28 @@
       "lu": 30,
       "learnset": [
         {
-          "name": "Agidyne",
+          "name": "Fire Breath",
           "level": 0
         },
         {
-          "name": "Megaton Raid",
+          "name": "Power Punch",
           "level": 0
         },
         {
-          "name": "Rebellion",
-          "level": 56
+          "name": "Severing Bite",
+          "level": 0
         },
         {
-          "name": "High Counter",
-          "level": 57
+          "name": "Resist Phys",
+          "level": 65
         },
         {
-          "name": "Maragidyne",
-          "level": 58
+          "name": "Madness Nails",
+          "level": 66
         },
         {
           "name": "Enduring Soul",
-          "level": 60
+          "level": 67
         }
       ],
       "weak": [
@@ -3730,64 +3610,28 @@
       "lu": 30,
       "learnset": [
         {
-          "name": "Agilao",
+          "name": "Fire Breath",
           "level": 0
         },
         {
-          "name": "Mudo",
+          "name": "Power Punch",
           "level": 0
         },
         {
-          "name": "Sukukaja",
+          "name": "Severing Bite",
           "level": 0
         },
         {
-          "name": "Maragion",
-          "level": 38
+          "name": "Resist Phys",
+          "level": 65
         },
         {
-          "name": "Counterstrike",
-          "level": 40
+          "name": "Madness Nails",
+          "level": 66
         },
         {
-          "name": "Mamudo",
-          "level": 42
-        },
-        {
-          "name": "Agidyne",
-          "level": 45
-        },
-        {
-          "name": "Fire Boost",
-          "level": 48
-        },
-        {
-          "name": "Masukukaja",
-          "level": 50
-        },
-        {
-          "name": "High Counter",
-          "level": 52
-        },
-        {
-          "name": "Mudoon",
-          "level": 56
-        },
-        {
-          "name": "Mudo Boost",
-          "level": 60
-        },
-        {
-          "name": "Maragidyne",
+          "name": "Enduring Soul",
           "level": 67
-        },
-        {
-          "name": "Mamudoon",
-          "level": 71
-        },
-        {
-          "name": "Fire Amp",
-          "level": 77
         }
       ],
       "weak": [
@@ -3821,32 +3665,28 @@
       "lu": 35,
       "learnset": [
         {
+          "name": "Blight",
+          "level": 0
+        },
+        {
+          "name": "Dark Sword",
+          "level": 0
+        },
+        {
           "name": "Mudoon",
           "level": 0
         },
         {
-          "name": "Bloodbath",
-          "level": 0
+          "name": "Dark Pleroma",
+          "level": 53
         },
         {
-          "name": "Myriad Slashes",
-          "level": 0
+          "name": "Great Curse Siphon",
+          "level": 54
         },
         {
-          "name": "Foul Breath",
-          "level": 63
-        },
-        {
-          "name": "Deathbound",
-          "level": 64
-        },
-        {
-          "name": "Fear Boost",
-          "level": 66
-        },
-        {
-          "name": "Brave Blade",
-          "level": 67
+          "name": "Retaliate",
+          "level": 55
         }
       ],
       "weak": [
@@ -3883,32 +3723,32 @@
       "lu": 27,
       "learnset": [
         {
-          "name": "Maragidyne",
+          "name": "Fierce Roar",
           "level": 0
         },
         {
-          "name": "Heat Wave",
+          "name": "Fire Dracostrike",
           "level": 0
         },
         {
-          "name": "Bufudyne",
+          "name": "Frenzied Chomp",
           "level": 0
         },
         {
-          "name": "Marakunda",
-          "level": 76
+          "name": "Severing Bite",
+          "level": 0
         },
         {
-          "name": "Fire Amp",
-          "level": 77
+          "name": "Ziodyne",
+          "level": 56
         },
         {
-          "name": "Mabufudyne",
-          "level": 78
+          "name": "Eat Whole",
+          "level": 57
         },
         {
-          "name": "Ice Amp",
-          "level": 79
+          "name": "Null Fire",
+          "level": 58
         }
       ],
       "weak": [
@@ -3942,32 +3782,32 @@
       "lu": 53,
       "learnset": [
         {
-          "name": "Psycho Force",
+          "name": "Glacial Blast",
           "level": 0
         },
         {
-          "name": "Repel Phys",
+          "name": "High Phys Pleroma",
           "level": 0
         },
         {
-          "name": "Gigantomachia",
+          "name": "Mazanbarion",
           "level": 0
         },
         {
-          "name": "Fortify Spirit",
+          "name": "Yabusame Shot",
+          "level": 0
+        },
+        {
+          "name": "Catastrophe",
+          "level": 88
+        },
+        {
+          "name": "Myriad Slashes",
           "level": 89
         },
         {
-          "name": "Psycho Blast",
-          "level": 91
-        },
-        {
-          "name": "Drain Psy",
-          "level": 92
-        },
-        {
-          "name": "Concentrate",
-          "level": 94
+          "name": "Drain Ice",
+          "level": 90
         }
       ],
       "weak": [
@@ -4063,32 +3903,28 @@
       "lu": 30,
       "learnset": [
         {
-          "name": "Mahama",
+          "name": "Lullaby",
           "level": 0
         },
         {
-          "name": "Me Patra",
+          "name": "Makarakarn",
           "level": 0
         },
         {
-          "name": "Makajama",
+          "name": "Mediarama",
           "level": 0
         },
         {
-          "name": "Tetraja",
-          "level": 28
+          "name": "Diamrita",
+          "level": 53
         },
         {
-          "name": "Makajamaon",
-          "level": 30
+          "name": "Bowl of Hygieia",
+          "level": 54
         },
         {
-          "name": "Energy Shower",
-          "level": 31
-        },
-        {
-          "name": "Invigorate 1",
-          "level": 33
+          "name": "Heal Pleroma",
+          "level": 55
         }
       ],
       "weak": [
@@ -4120,32 +3956,28 @@
       "lu": 25,
       "learnset": [
         {
-          "name": "One-shot Kill",
+          "name": "Fatal Sword",
           "level": 0
         },
         {
-          "name": "Rebellion",
+          "name": "Mazanma",
           "level": 0
         },
         {
-          "name": "High Counter",
+          "name": "Zandyne",
           "level": 0
-        },
-        {
-          "name": "Matarukaja",
-          "level": 78
-        },
-        {
-          "name": "Brave Blade",
-          "level": 79
         },
         {
           "name": "Charge",
-          "level": 80
+          "level": 53
         },
         {
-          "name": "Apt Pupil",
-          "level": 81
+          "name": "Force Pleroma",
+          "level": 54
+        },
+        {
+          "name": "Mist Rush",
+          "level": 55
         }
       ],
       "weak": [
@@ -4181,32 +4013,28 @@
       "lu": 48,
       "learnset": [
         {
+          "name": "Dark Sword",
+          "level": 0
+        },
+        {
+          "name": "Maragidyne",
+          "level": 0
+        },
+        {
           "name": "Samarecarm",
           "level": 0
         },
         {
-          "name": "Mediarahan",
-          "level": 0
+          "name": "Safeguard",
+          "level": 57
         },
         {
-          "name": "Makougaon",
-          "level": 0
+          "name": "Sexy Dance",
+          "level": 58
         },
         {
-          "name": "Amrita Shower",
-          "level": 84
-        },
-        {
-          "name": "Auto-Maraku",
-          "level": 86
-        },
-        {
-          "name": "Drain Bless",
-          "level": 87
-        },
-        {
-          "name": "Salvation",
-          "level": 89
+          "name": "Mighty Cleave",
+          "level": 59
         }
       ],
       "weak": [
@@ -4239,32 +4067,28 @@
       "lu": 30,
       "learnset": [
         {
-          "name": "Spirit Drain",
+          "name": "Mahama",
           "level": 0
         },
         {
-          "name": "Makouga",
+          "name": "Meditation",
           "level": 0
         },
         {
-          "name": "Samsara",
+          "name": "Preach",
           "level": 0
         },
         {
-          "name": "Bless Boost",
-          "level": 42
+          "name": "Mamudo",
+          "level": 31
         },
         {
-          "name": "Diarahan",
-          "level": 43
+          "name": "Light Pleroma",
+          "level": 32
         },
         {
-          "name": "Me Patra",
-          "level": 44
-        },
-        {
-          "name": "Null Rage",
-          "level": 45
+          "name": "Great Curse Siphon",
+          "level": 33
         }
       ],
       "weak": [
@@ -4297,32 +4121,24 @@
       "lu": 33,
       "learnset": [
         {
-          "name": "Bad Beat",
+          "name": "Dark Sword",
           "level": 0
         },
         {
-          "name": "Myriad Slashes",
+          "name": "Fatal Sword",
           "level": 0
         },
         {
-          "name": "Rising Slash",
-          "level": 0
+          "name": "Maragion",
+          "level": 47
         },
         {
-          "name": "High Counter",
-          "level": 52
+          "name": "Fire Dracostrike",
+          "level": 48
         },
         {
-          "name": "Deathbound",
-          "level": 53
-        },
-        {
-          "name": "Rebellion",
-          "level": 54
-        },
-        {
-          "name": "Charge",
-          "level": 55
+          "name": "Bloody Glee",
+          "level": 49
         }
       ],
       "weak": [],
@@ -4353,32 +4169,24 @@
       "lu": 41,
       "learnset": [
         {
-          "name": "Agilao",
-          "level": 0
-        },
-        {
-          "name": "Ominous Words",
+          "name": "Agidyne",
           "level": 0
         },
         {
           "name": "Tetrakarn",
-          "level": 33
-        },
-        {
-          "name": "Fire Boost",
-          "level": 35
-        },
-        {
-          "name": "Agidyne",
-          "level": 36
-        },
-        {
-          "name": "Null Fire",
-          "level": 37
+          "level": 0
         },
         {
           "name": "Megidola",
-          "level": 38
+          "level": 56
+        },
+        {
+          "name": "Trafuri",
+          "level": 57
+        },
+        {
+          "name": "Mamudoon",
+          "level": 58
         }
       ],
       "weak": [
@@ -4540,32 +4348,28 @@
       "lu": 30,
       "learnset": [
         {
-          "name": "Maziodyne",
+          "name": "Acrobat Kick",
           "level": 0
         },
         {
-          "name": "Ziodyne",
+          "name": "Agilao",
           "level": 0
         },
         {
-          "name": "Brain Jack",
+          "name": "Sexy Dance",
           "level": 0
         },
         {
-          "name": "Thermopylae",
-          "level": 72
+          "name": "Donum Magici",
+          "level": 45
         },
         {
-          "name": "Ailment Boost",
-          "level": 73
+          "name": "Heavy Blow",
+          "level": 46
         },
         {
-          "name": "Amrita Shower",
-          "level": 75
-        },
-        {
-          "name": "Debilitate",
-          "level": 76
+          "name": "Hysterical Slap",
+          "level": 47
         }
       ],
       "weak": [],
@@ -4651,7 +4455,7 @@
       "lu": 40,
       "learnset": [
         {
-          "name": "Makajamaon",
+          "name": "Diarahan",
           "level": 0
         },
         {
@@ -4659,24 +4463,16 @@
           "level": 0
         },
         {
-          "name": "Kougaon",
-          "level": 0
+          "name": "Shockbound",
+          "level": 51
         },
         {
-          "name": "Makougaon",
-          "level": 70
+          "name": "Dekunda",
+          "level": 52
         },
         {
-          "name": "Hama Boost",
-          "level": 71
-        },
-        {
-          "name": "Mahamaon",
-          "level": 72
-        },
-        {
-          "name": "Evade Curse",
-          "level": 74
+          "name": "Makarakarn",
+          "level": 53
         }
       ],
       "weak": [
@@ -4711,28 +4507,24 @@
       "lu": 20,
       "learnset": [
         {
-          "name": "Maragi",
+          "name": "Blight",
           "level": 0
         },
         {
-          "name": "Sharp Student",
+          "name": "Dark Sword",
           "level": 0
         },
         {
-          "name": "Tarukaja",
-          "level": 0
+          "name": "Agilao",
+          "level": 38
         },
         {
-          "name": "Double Fangs",
-          "level": 18
+          "name": "Restore",
+          "level": 39
         },
         {
-          "name": "Sukunda",
-          "level": 19
-        },
-        {
-          "name": "Memory Blow",
-          "level": 20
+          "name": "Masukukaja",
+          "level": 40
         }
       ],
       "weak": [
@@ -4833,32 +4625,32 @@
       "lu": 41,
       "learnset": [
         {
-          "name": "Gigantomachia",
+          "name": "Mortal Jihad",
           "level": 0
         },
         {
-          "name": "Evil Smile",
+          "name": "Poison Adept",
           "level": 0
         },
         {
-          "name": "Cosmic Flare",
+          "name": "Steel Needle",
           "level": 0
         },
         {
-          "name": "Atomic Flare",
-          "level": 88
+          "name": "Toxic Cloud",
+          "level": 0
         },
         {
-          "name": "Nuke Amp",
-          "level": 90
+          "name": "Abyssal Mask",
+          "level": 61
         },
         {
-          "name": "Debilitate",
-          "level": 91
+          "name": "Null Elec",
+          "level": 62
         },
         {
-          "name": "Drain Nuke",
-          "level": 92
+          "name": "Poison Master",
+          "level": 63
         }
       ],
       "weak": [],
@@ -4893,32 +4685,28 @@
       "lu": 20,
       "learnset": [
         {
-          "name": "Giant Slice",
+          "name": "Black Dracostrike",
           "level": 0
         },
         {
-          "name": "Dormin Rush",
+          "name": "Damascus Claw",
           "level": 0
         },
         {
-          "name": "Dekaja",
+          "name": "Restore",
           "level": 0
         },
         {
-          "name": "Dodge Phys",
-          "level": 20
+          "name": "Agidyne",
+          "level": 51
         },
         {
-          "name": "Rebellion",
-          "level": 22
+          "name": "Critical Aura",
+          "level": 52
         },
         {
-          "name": "Cornered Fang",
-          "level": 23
-        },
-        {
-          "name": "Heat Up",
-          "level": 24
+          "name": "Severing Bite",
+          "level": 53
         }
       ],
       "weak": [
@@ -4952,32 +4740,28 @@
       "lu": 25,
       "learnset": [
         {
-          "name": "Psiodyne",
+          "name": "Ice Breath",
           "level": 0
         },
         {
-          "name": "Brain Jack",
+          "name": "Mabufula",
           "level": 0
         },
         {
-          "name": "Masukunda",
+          "name": "Marakunda",
           "level": 0
         },
         {
-          "name": "Survival Trick",
-          "level": 65
+          "name": "Fogna",
+          "level": 32
         },
         {
-          "name": "Stagnant Air",
-          "level": 66
+          "name": "Ice Block",
+          "level": 33
         },
         {
-          "name": "Mapsiodyne",
-          "level": 67
-        },
-        {
-          "name": "Evade Psy",
-          "level": 68
+          "name": "Mana Spring",
+          "level": 34
         }
       ],
       "weak": [
@@ -5010,32 +4794,24 @@
       "lu": 18,
       "learnset": [
         {
-          "name": "Magarula",
+          "name": "Dia",
           "level": 0
         },
         {
-          "name": "Masukukaja",
+          "name": "Life Spring",
           "level": 0
         },
         {
-          "name": "Tetraja",
+          "name": "Zan",
           "level": 0
         },
         {
-          "name": "Garudyne",
-          "level": 47
+          "name": "Hama",
+          "level": 16
         },
         {
-          "name": "Touch n\" Go",
-          "level": 49
-        },
-        {
-          "name": "Amrita Drop",
-          "level": 50
-        },
-        {
-          "name": "Evade Elec",
-          "level": 51
+          "name": "Rakunda",
+          "level": 17
         }
       ],
       "weak": [
@@ -5067,7 +4843,11 @@
       "lu": 39,
       "learnset": [
         {
-          "name": "Myriad Slashes",
+          "name": "Catastrophe",
+          "level": 0
+        },
+        {
+          "name": "Impaler's Animus",
           "level": 0
         },
         {
@@ -5075,28 +4855,16 @@
           "level": 0
         },
         {
-          "name": "Apt Pupil",
-          "level": 0
+          "name": "Resist Phys",
+          "level": 70
         },
         {
-          "name": "Charge",
-          "level": 88
+          "name": "Phys Pleroma",
+          "level": 71
         },
         {
-          "name": "Brave Blade",
-          "level": 89
-        },
-        {
-          "name": "Regenerate 3",
-          "level": 90
-        },
-        {
-          "name": "Firm Stance",
-          "level": 91
-        },
-        {
-          "name": "Auto-Maraku",
-          "level": 92
+          "name": "Hades Blast",
+          "level": 72
         }
       ],
       "weak": [
@@ -5127,28 +4895,28 @@
       "lu": 40,
       "learnset": [
         {
-          "name": "Tetra Break",
+          "name": "Force Pleroma",
           "level": 0
         },
         {
-          "name": "Tarukaja",
+          "name": "Titanomachia",
           "level": 0
         },
         {
-          "name": "Garula",
+          "name": "Zandyne",
           "level": 0
         },
         {
-          "name": "Wind Boost",
-          "level": 25
+          "name": "Masukunda",
+          "level": 64
         },
         {
-          "name": "Magarula",
-          "level": 26
+          "name": "Impaler's Animus",
+          "level": 65
         },
         {
-          "name": "Resist Wind",
-          "level": 27
+          "name": "Murderous Glee",
+          "level": 66
         }
       ],
       "weak": [
@@ -5181,36 +4949,32 @@
       "lu": 67,
       "learnset": [
         {
-          "name": "Maziodyne",
+          "name": "Diamrita",
           "level": 0
         },
         {
-          "name": "Mabufudyne",
+          "name": "Ice Age",
           "level": 0
         },
         {
-          "name": "Divine Judgement",
-          "level": 78
+          "name": "Mahamabarion",
+          "level": 0
         },
         {
-          "name": "Ali Dance",
-          "level": 79
+          "name": "Samarecarm",
+          "level": 0
         },
         {
-          "name": "Evade Curse",
-          "level": 80
+          "name": "High Ice Pleroma",
+          "level": 87
         },
         {
-          "name": "Touch n\" Go",
-          "level": 81
+          "name": "Glacial Blast",
+          "level": 88
         },
         {
-          "name": "Ice Amp",
-          "level": 82
-        },
-        {
-          "name": "Salvation",
-          "level": 83
+          "name": "Repel Ice",
+          "level": 90
         }
       ],
       "weak": [],
@@ -5241,31 +5005,27 @@
       "lu": 35,
       "learnset": [
         {
-          "name": "Miracle Punch",
+          "name": "Mighty Cleave",
           "level": 0
         },
         {
-          "name": "Tempest Slash",
+          "name": "Mist Rush",
           "level": 0
         },
         {
-          "name": "Rebellion",
+          "name": "Wind Dracostrike",
           "level": 0
         },
         {
-          "name": "Tetraja",
-          "level": 55
+          "name": "Fierce Roar",
+          "level": 58
         },
         {
-          "name": "Resist Psy",
-          "level": 56
+          "name": "Phys Pleroma",
+          "level": 59
         },
         {
-          "name": "Masukunda",
-          "level": 57
-        },
-        {
-          "name": "Charge",
+          "name": "Critical Zealot",
           "level": 60
         }
       ],
@@ -5357,32 +5117,32 @@
       "lu": 51,
       "learnset": [
         {
-          "name": "Garudyne",
-          "level": 0
-        },
-        {
-          "name": "Mind Slice",
-          "level": 0
-        },
-        {
-          "name": "Amrita Shower",
-          "level": 53
-        },
-        {
           "name": "Masukukaja",
-          "level": 54
+          "level": 0
         },
         {
-          "name": "Evade Elec",
-          "level": 55
+          "name": "Mazandyne",
+          "level": 0
         },
         {
-          "name": "Magarudyne",
-          "level": 57
+          "name": "Retaliate",
+          "level": 0
         },
         {
-          "name": "Wind Amp",
-          "level": 59
+          "name": "Yabusame Shot",
+          "level": 0
+        },
+        {
+          "name": "Force Block",
+          "level": 65
+        },
+        {
+          "name": "Null Light",
+          "level": 66
+        },
+        {
+          "name": "Hell Thrust",
+          "level": 67
         }
       ],
       "weak": [],
@@ -5415,28 +5175,24 @@
       "lu": 16,
       "learnset": [
         {
-          "name": "Bufu",
+          "name": "Ice Breath",
           "level": 0
         },
         {
-          "name": "Rakunda",
+          "name": "Rakukaja",
           "level": 0
         },
         {
-          "name": "Patra",
-          "level": 8
+          "name": "Heavy Blow",
+          "level": 24
         },
         {
-          "name": "Mabufu",
-          "level": 10
+          "name": "Bufula",
+          "level": 25
         },
         {
-          "name": "Resist Forget",
-          "level": 11
-        },
-        {
-          "name": "Defense Master",
-          "level": 12
+          "name": "Critical Aura",
+          "level": 26
         }
       ],
       "weak": [
@@ -5471,7 +5227,11 @@
       "lu": 38,
       "learnset": [
         {
-          "name": "Mudoon",
+          "name": "Hades Blast",
+          "level": 0
+        },
+        {
+          "name": "Hell Thrust",
           "level": 0
         },
         {
@@ -5479,20 +5239,16 @@
           "level": 0
         },
         {
-          "name": "Deathbound",
-          "level": 0
+          "name": "Toxic Spray",
+          "level": 67
         },
         {
-          "name": "Agidyne",
-          "level": 45
+          "name": "Critical Zealot",
+          "level": 68
         },
         {
-          "name": "Wage War",
-          "level": 47
-        },
-        {
-          "name": "Repel Phys",
-          "level": 50
+          "name": "Poison Master",
+          "level": 69
         }
       ],
       "weak": [
@@ -5871,28 +5627,24 @@
       "lu": 28,
       "learnset": [
         {
-          "name": "Tempest Slash",
+          "name": "Purple Smoke",
           "level": 0
         },
         {
-          "name": "Matarunda",
+          "name": "Wind Dracostrike",
           "level": 0
         },
         {
-          "name": "Revolution",
-          "level": 0
+          "name": "Masukunda",
+          "level": 47
         },
         {
-          "name": "Deathbound",
-          "level": 65
+          "name": "Light Mana Aid",
+          "level": 48
         },
         {
-          "name": "Tetra Break",
-          "level": 67
-        },
-        {
-          "name": "Regenerate 3",
-          "level": 69
+          "name": "Tetrakarn",
+          "level": 49
         }
       ],
       "weak": [
@@ -6033,36 +5785,28 @@
       "lu": 26,
       "learnset": [
         {
-          "name": "Zionga",
+          "name": "Diarama",
           "level": 0
         },
         {
-          "name": "Energy Shower",
+          "name": "Hysterical Slap",
           "level": 0
         },
         {
-          "name": "Mabaisudi",
+          "name": "Lullaby",
           "level": 0
         },
         {
-          "name": "Samarecarm",
-          "level": 41
+          "name": "Dream Fist",
+          "level": 36
         },
         {
-          "name": "Nocturnal Flash",
-          "level": 42
+          "name": "Recarm",
+          "level": 37
         },
         {
-          "name": "Mediarama",
-          "level": 44
-        },
-        {
-          "name": "Dizzy Boost",
-          "level": 45
-        },
-        {
-          "name": "Spirit Drain",
-          "level": 46
+          "name": "Mudoon",
+          "level": 38
         }
       ],
       "weak": [
@@ -6269,32 +6013,28 @@
       "lu": 32,
       "learnset": [
         {
-          "name": "Swift Strike",
+          "name": "Critical Aura",
           "level": 0
         },
         {
-          "name": "Regenerate 2",
+          "name": "Mortal Jihad",
           "level": 0
         },
         {
-          "name": "Tarukaja",
+          "name": "Rampage",
           "level": 0
         },
         {
-          "name": "Endure",
-          "level": 43
+          "name": "Fierce Roar",
+          "level": 56
         },
         {
-          "name": "Rebellion",
-          "level": 45
+          "name": "Critical Zealot",
+          "level": 57
         },
         {
-          "name": "Fortified Moxy",
-          "level": 46
-        },
-        {
-          "name": "Gatling Blows",
-          "level": 49
+          "name": "Phys Pleroma",
+          "level": 58
         }
       ],
       "weak": [
@@ -6327,32 +6067,28 @@
       "lu": 28,
       "learnset": [
         {
-          "name": "Mudoon",
+          "name": "Hell Burner",
           "level": 0
         },
         {
-          "name": "Agilao",
+          "name": "Hell Exhaust",
           "level": 0
         },
         {
-          "name": "Speed Master",
+          "name": "Hell Spin",
           "level": 0
         },
         {
-          "name": "Tentarafoo",
+          "name": "Fire Pleroma",
+          "level": 37
+        },
+        {
+          "name": "Life Aid",
           "level": 38
         },
         {
-          "name": "Fire Boost",
+          "name": "Great Life Spring",
           "level": 39
-        },
-        {
-          "name": "Maragion",
-          "level": 40
-        },
-        {
-          "name": "Mamudoon",
-          "level": 41
         }
       ],
       "weak": [
@@ -6535,28 +6271,24 @@
       "lu": 16,
       "learnset": [
         {
-          "name": "Garu",
+          "name": "Dia",
           "level": 0
         },
         {
-          "name": "Media",
+          "name": "Sukunda",
           "level": 0
         },
         {
-          "name": "Dormina",
+          "name": "Zio",
           "level": 0
         },
         {
-          "name": "Diarama",
-          "level": 19
-        },
-        {
-          "name": "Pulinpa",
+          "name": "Zanma",
           "level": 20
         },
         {
-          "name": "Magaru",
-          "level": 22
+          "name": "Concentrate",
+          "level": 21
         }
       ],
       "weak": [
@@ -6718,32 +6450,28 @@
       "lu": 35,
       "learnset": [
         {
-          "name": "Megidola",
-          "level": 0
-        },
-        {
           "name": "Diarama",
           "level": 0
         },
         {
-          "name": "Kougaon",
+          "name": "Mahamaon",
           "level": 0
         },
         {
-          "name": "Flash Bomb",
-          "level": 49
+          "name": "White Dracostrike",
+          "level": 0
         },
         {
           "name": "Masukukaja",
-          "level": 50
+          "level": 43
         },
         {
-          "name": "Hamaon",
-          "level": 51
+          "name": "Megido",
+          "level": 44
         },
         {
-          "name": "Hama Boost",
-          "level": 52
+          "name": "Great Mana Spring",
+          "level": 45
         }
       ],
       "weak": [
@@ -6776,28 +6504,24 @@
       "lu": 29,
       "learnset": [
         {
-          "name": "Agi",
+          "name": "Agilao",
           "level": 0
-        },
-        {
-          "name": "Dormina",
-          "level": 0
-        },
-        {
-          "name": "Tarunda",
-          "level": 11
-        },
-        {
-          "name": "Resist Forget",
-          "level": 12
         },
         {
           "name": "Maragi",
-          "level": 13
+          "level": 0
         },
         {
-          "name": "Burn Boost",
-          "level": 15
+          "name": "Matarunda",
+          "level": 32
+        },
+        {
+          "name": "Light Mana Aid",
+          "level": 33
+        },
+        {
+          "name": "Media",
+          "level": 34
         }
       ],
       "weak": [
@@ -6829,24 +6553,24 @@
       "lu": 18,
       "learnset": [
         {
-          "name": "Life Drain",
-          "level": 0
-        },
-        {
           "name": "Dream Needle",
           "level": 0
         },
         {
-          "name": "Dormina",
-          "level": 7
+          "name": "Marin Karin",
+          "level": 0
         },
         {
-          "name": "Tarunda",
-          "level": 8
+          "name": "Life Drain",
+          "level": 23
         },
         {
-          "name": "Dodge Curse",
-          "level": 9
+          "name": "Zanma",
+          "level": 24
+        },
+        {
+          "name": "Madness Needle",
+          "level": 25
         }
       ],
       "weak": [
@@ -6878,32 +6602,20 @@
       "lu": 21,
       "learnset": [
         {
-          "name": "Pulinpa",
+          "name": "Fire Breath",
           "level": 0
         },
         {
-          "name": "Tarukaja",
-          "level": 0
+          "name": "Inspiring Leader",
+          "level": 25
         },
         {
-          "name": "Giant Slice",
-          "level": 0
+          "name": "Scratch Dance",
+          "level": 26
         },
         {
-          "name": "Dream Needle",
-          "level": 15
-        },
-        {
-          "name": "Lucky Punch",
-          "level": 17
-        },
-        {
-          "name": "Brain Shake",
-          "level": 18
-        },
-        {
-          "name": "Confuse Boost",
-          "level": 19
+          "name": "Rakunda",
+          "level": 27
         }
       ],
       "weak": [
@@ -7014,28 +6726,20 @@
       "lu": 15,
       "learnset": [
         {
-          "name": "Sledgehammer",
+          "name": "Beatdown",
           "level": 0
+        },
+        {
+          "name": "Heat Wave",
+          "level": 0
+        },
+        {
+          "name": "Taunt",
+          "level": 18
         },
         {
           "name": "Tarukaja",
-          "level": 0
-        },
-        {
-          "name": "Resist Dizzy",
-          "level": 0
-        },
-        {
-          "name": "Rampage",
-          "level": 15
-        },
-        {
-          "name": "Sharp Student",
-          "level": 16
-        },
-        {
-          "name": "Counter",
-          "level": 18
+          "level": 19
         }
       ],
       "weak": [
@@ -7070,32 +6774,28 @@
       "lu": 53,
       "learnset": [
         {
-          "name": "Mediarahan",
+          "name": "Mahamaon",
           "level": 0
         },
         {
-          "name": "Samarecarm",
+          "name": "Mediarama",
           "level": 0
         },
         {
-          "name": "Drain Wind",
+          "name": "Ziodyne",
           "level": 0
         },
         {
-          "name": "Insta-Heal",
-          "level": 87
+          "name": "Bowl of Hygieia",
+          "level": 63
         },
         {
-          "name": "Maziodyne",
-          "level": 88
+          "name": "Dekunda",
+          "level": 64
         },
         {
-          "name": "Spell Master",
-          "level": 89
-        },
-        {
-          "name": "Salvation",
-          "level": 90
+          "name": "Null Dark",
+          "level": 65
         }
       ],
       "weak": [
@@ -7126,32 +6826,28 @@
       "lu": 36,
       "learnset": [
         {
-          "name": "Makouga",
+          "name": "Elec Block",
           "level": 0
         },
         {
-          "name": "Mahama",
+          "name": "Samarecarm",
           "level": 0
         },
         {
-          "name": "Diarama",
+          "name": "Zionga",
           "level": 0
         },
         {
-          "name": "Resist Despair",
-          "level": 27
+          "name": "Me Patra",
+          "level": 47
         },
         {
-          "name": "Hamaon",
-          "level": 29
+          "name": "Mazionga",
+          "level": 48
         },
         {
-          "name": "Hama Boost",
-          "level": 30
-        },
-        {
-          "name": "Makarakarn",
-          "level": 32
+          "name": "Marakukaja",
+          "level": 49
         }
       ],
       "weak": [
@@ -7184,76 +6880,28 @@
       "lu": 36,
       "learnset": [
         {
-          "name": "Dia",
+          "name": "Elec Block",
           "level": 0
         },
         {
-          "name": "Patra",
-          "level": 4
+          "name": "Samarecarm",
+          "level": 0
         },
         {
-          "name": "Garu",
-          "level": 5
-        },
-        {
-          "name": "Charmdi",
-          "level": 16
-        },
-        {
-          "name": "Magaru",
-          "level": 21
-        },
-        {
-          "name": "Media",
-          "level": 22
-        },
-        {
-          "name": "Diarama",
-          "level": 25
-        },
-        {
-          "name": "Recarm",
-          "level": 28
-        },
-        {
-          "name": "Garula",
-          "level": 32
+          "name": "Zionga",
+          "level": 0
         },
         {
           "name": "Me Patra",
-          "level": 36
+          "level": 47
         },
         {
-          "name": "Mediarama",
-          "level": 43
+          "name": "Mazionga",
+          "level": 48
         },
         {
-          "name": "Magarula",
-          "level": 46
-        },
-        {
-          "name": "Diarahan",
-          "level": 52
-        },
-        {
-          "name": "Garudyne",
-          "level": 57
-        },
-        {
-          "name": "Wind Break",
-          "level": 60
-        },
-        {
-          "name": "Magarudyne",
-          "level": 65
-        },
-        {
-          "name": "Samarecarm",
-          "level": 68
-        },
-        {
-          "name": "Mediarahan",
-          "level": 74
+          "name": "Marakukaja",
+          "level": 49
         }
       ],
       "weak": [
@@ -7551,28 +7199,24 @@
       "lu": 21,
       "learnset": [
         {
-          "name": "Bufu",
+          "name": "Ice Breath",
           "level": 0
         },
         {
-          "name": "Ice Break",
+          "name": "Jack Bufula",
           "level": 0
         },
         {
-          "name": "Baisudi",
-          "level": 0
+          "name": "Ice Block",
+          "level": 26
         },
         {
-          "name": "Mabufu",
-          "level": 12
+          "name": "Mahama",
+          "level": 27
         },
         {
-          "name": "Rakunda",
-          "level": 13
-        },
-        {
-          "name": "Freeze Boost",
-          "level": 15
+          "name": "Resist Light",
+          "level": 28
         }
       ],
       "weak": [
@@ -7605,24 +7249,20 @@
       "lu": 18,
       "learnset": [
         {
-          "name": "Agi",
+          "name": "Agilao",
           "level": 0
         },
         {
-          "name": "Rakunda",
+          "name": "Maragi",
           "level": 0
         },
         {
-          "name": "Sharp Student",
-          "level": 4
+          "name": "Tarunda",
+          "level": 21
         },
         {
-          "name": "Dazzler",
-          "level": 5
-        },
-        {
-          "name": "Resist Sleep",
-          "level": 7
+          "name": "Life Spring",
+          "level": 23
         }
       ],
       "weak": [
@@ -7654,7 +7294,7 @@
       "lu": 26,
       "learnset": [
         {
-          "name": "Garudyne",
+          "name": "Axel Claw",
           "level": 0
         },
         {
@@ -7662,24 +7302,20 @@
           "level": 0
         },
         {
-          "name": "Nocturnal Flash",
+          "name": "Mazanma",
           "level": 0
         },
         {
-          "name": "Dizzy Boost",
-          "level": 52
+          "name": "Force Block",
+          "level": 33
         },
         {
-          "name": "Wind Amp",
-          "level": 54
+          "name": "Critical Aura",
+          "level": 34
         },
         {
-          "name": "Magarudyne",
-          "level": 55
-        },
-        {
-          "name": "Speed Master",
-          "level": 57
+          "name": "Force Pleroma",
+          "level": 35
         }
       ],
       "weak": [
@@ -7713,32 +7349,32 @@
       "lu": 29,
       "learnset": [
         {
-          "name": "Assault Dive",
+          "name": "Dark Sword",
           "level": 0
         },
         {
-          "name": "Defense Master",
+          "name": "Deathbound",
           "level": 0
         },
         {
-          "name": "Rakunda",
+          "name": "Ice Block",
           "level": 0
         },
         {
-          "name": "Kill Rush",
-          "level": 24
+          "name": "Mabufula",
+          "level": 0
         },
         {
-          "name": "Counter",
-          "level": 25
+          "name": "Fogna",
+          "level": 52
         },
         {
-          "name": "Matarukaja",
-          "level": 27
+          "name": "Dragon Eye",
+          "level": 53
         },
         {
-          "name": "Adverse Resolve",
-          "level": 28
+          "name": "Marakunda",
+          "level": 54
         }
       ],
       "weak": [
@@ -8206,32 +7842,24 @@
       "lu": 38,
       "learnset": [
         {
-          "name": "Makajama",
-          "level": 0
-        },
-        {
-          "name": "Psio",
-          "level": 0
-        },
-        {
-          "name": "Forget Boost",
-          "level": 37
-        },
-        {
-          "name": "Speed Master",
-          "level": 38
-        },
-        {
           "name": "Makajamaon",
-          "level": 39
+          "level": 0
         },
         {
-          "name": "Psiodyne",
-          "level": 40
+          "name": "Mamudoon",
+          "level": 0
         },
         {
-          "name": "Marakunda",
-          "level": 41
+          "name": "Makarakarn",
+          "level": 46
+        },
+        {
+          "name": "Masukukaja",
+          "level": 47
+        },
+        {
+          "name": "Hellish Mask",
+          "level": 48
         }
       ],
       "weak": [
@@ -8349,32 +7977,28 @@
       "lu": 35,
       "learnset": [
         {
-          "name": "Heat Wave",
+          "name": "Black Dracostrike",
           "level": 0
         },
         {
-          "name": "Bloodbath",
+          "name": "Figment Slash",
           "level": 0
         },
         {
-          "name": "Brave Blade",
+          "name": "Hell Thrust",
           "level": 0
         },
         {
-          "name": "Charge",
-          "level": 65
+          "name": "Maragibarion",
+          "level": 77
         },
         {
-          "name": "High Counter",
-          "level": 66
+          "name": "Murderous Glee",
+          "level": 78
         },
         {
-          "name": "Repel Psy",
-          "level": 67
-        },
-        {
-          "name": "Vorpal Blade",
-          "level": 82
+          "name": "Catastrophe",
+          "level": 79
         }
       ],
       "weak": [],
@@ -8806,24 +8430,28 @@
       "lu": 24,
       "learnset": [
         {
-          "name": "Garu",
+          "name": "Berserker God",
           "level": 0
         },
         {
-          "name": "Lunge",
+          "name": "Diarama",
           "level": 0
         },
         {
-          "name": "Resist Brainwash",
-          "level": 8
+          "name": "Inspiring Leader",
+          "level": 0
         },
         {
-          "name": "Sukukaja",
-          "level": 9
+          "name": "Dustoma",
+          "level": 31
         },
         {
-          "name": "Terror Claw",
-          "level": 10
+          "name": "Masukunda",
+          "level": 32
+        },
+        {
+          "name": "Resist Elec",
+          "level": 33
         }
       ],
       "weak": [
@@ -8854,28 +8482,24 @@
       "lu": 20,
       "learnset": [
         {
-          "name": "Lullaby",
+          "name": "Tarunda",
           "level": 0
         },
         {
-          "name": "Marakukaja",
+          "name": "Zanma",
           "level": 0
         },
         {
-          "name": "Energy Drop",
-          "level": 0
+          "name": "Recarm",
+          "level": 25
         },
         {
-          "name": "Mediarama",
-          "level": 41
+          "name": "Media",
+          "level": 26
         },
         {
-          "name": "Tetraja",
-          "level": 43
-        },
-        {
-          "name": "Divine Grace",
-          "level": 45
+          "name": "Life Spring",
+          "level": 27
         }
       ],
       "weak": [
@@ -8908,32 +8532,28 @@
       "lu": 26,
       "learnset": [
         {
-          "name": "Bufudyne",
+          "name": "Bufula",
           "level": 0
         },
         {
-          "name": "Ice Break",
+          "name": "Ice Pleroma",
           "level": 0
         },
         {
-          "name": "Megaton Raid",
+          "name": "King Bufula",
           "level": 0
         },
         {
-          "name": "Freeze Boost",
-          "level": 62
+          "name": "Beatdown",
+          "level": 34
         },
         {
-          "name": "Mabufudyne",
-          "level": 64
+          "name": "Matarukaja",
+          "level": 35
         },
         {
           "name": "Concentrate",
-          "level": 65
-        },
-        {
-          "name": "Ice Amp",
-          "level": 67
+          "level": 36
         }
       ],
       "weak": [],
@@ -8964,32 +8584,28 @@
       "lu": 25,
       "learnset": [
         {
-          "name": "Vajra Blast",
+          "name": "Berserker God",
           "level": 0
         },
         {
-          "name": "Rakukaja",
+          "name": "Deathbound",
           "level": 0
         },
         {
-          "name": "Regenerate 1",
+          "name": "Retaliate",
           "level": 0
         },
         {
-          "name": "Dodge Psy",
-          "level": 27
+          "name": "Shockbound",
+          "level": 50
         },
         {
-          "name": "Sledgehammer",
-          "level": 28
+          "name": "Endure",
+          "level": 51
         },
         {
-          "name": "Bad Beat",
-          "level": 30
-        },
-        {
-          "name": "Counterstrike",
-          "level": 31
+          "name": "Rampage",
+          "level": 52
         }
       ],
       "weak": [],
@@ -9122,32 +8738,16 @@
       "lu": 9,
       "learnset": [
         {
-          "name": "Garu",
+          "name": "Zan",
           "level": 0
         },
         {
-          "name": "Rakunda",
-          "level": 0
+          "name": "Dormina",
+          "level": 7
         },
         {
-          "name": "Psi",
-          "level": 12
-        },
-        {
-          "name": "Evil Touch",
-          "level": 13
-        },
-        {
-          "name": "Tarukaja",
-          "level": 14
-        },
-        {
-          "name": "Fear Boost",
-          "level": 15
-        },
-        {
-          "name": "Resist Fear",
-          "level": 17
+          "name": "Dia",
+          "level": 8
         }
       ],
       "weak": [
@@ -9180,32 +8780,28 @@
       "lu": 56,
       "learnset": [
         {
-          "name": "Psycho Force",
+          "name": "Luster Candy",
           "level": 0
         },
         {
-          "name": "Mediarahan",
+          "name": "Megidolaon",
           "level": 0
         },
         {
-          "name": "Mapsiodyne",
+          "name": "Samarecarm",
           "level": 0
         },
         {
-          "name": "Life Aid",
-          "level": 78
-        },
-        {
-          "name": "Concentrate",
+          "name": "Fierce Roar",
           "level": 79
         },
         {
-          "name": "Psy Amp",
+          "name": "Almighty Pleroma",
           "level": 80
         },
         {
-          "name": "Spell Master",
-          "level": 82
+          "name": "Phys Block",
+          "level": 81
         }
       ],
       "weak": [
@@ -9345,28 +8941,24 @@
       "lu": 20,
       "learnset": [
         {
-          "name": "Garu",
+          "name": "Mazan",
+          "level": 0
+        },
+        {
+          "name": "Zanma",
           "level": 0
         },
         {
           "name": "Sukukaja",
-          "level": 0
+          "level": 25
         },
         {
-          "name": "Growth 1",
-          "level": 12
+          "name": "Blinding Strike",
+          "level": 26
         },
         {
-          "name": "Taunt",
-          "level": 13
-        },
-        {
-          "name": "Rage Boost",
-          "level": 14
-        },
-        {
-          "name": "Wage War",
-          "level": 15
+          "name": "Force Block",
+          "level": 27
         }
       ],
       "weak": [
@@ -9401,32 +8993,28 @@
       "lu": 25,
       "learnset": [
         {
-          "name": "Makajama",
+          "name": "Bufula",
           "level": 0
-        },
-        {
-          "name": "Bufu",
-          "level": 0
-        },
-        {
-          "name": "Dodge Ice",
-          "level": 11
-        },
-        {
-          "name": "Sukunda",
-          "level": 12
-        },
-        {
-          "name": "Fire Wall",
-          "level": 13
         },
         {
           "name": "Mabufu",
-          "level": 14
+          "level": 0
         },
         {
-          "name": "Climate Decorum",
-          "level": 15
+          "name": "Tarukaja",
+          "level": 0
+        },
+        {
+          "name": "Trafuri",
+          "level": 27
+        },
+        {
+          "name": "Tarunda",
+          "level": 28
+        },
+        {
+          "name": "Ice Block",
+          "level": 29
         }
       ],
       "weak": [
@@ -9458,32 +9046,32 @@
       "lu": 30,
       "learnset": [
         {
-          "name": "Assault Dive",
+          "name": "Crusher Onslaught",
           "level": 0
         },
         {
-          "name": "Regenerate 2",
+          "name": "Fang Breaker",
           "level": 0
         },
         {
-          "name": "Revolution",
+          "name": "Marakunda",
           "level": 0
         },
         {
-          "name": "Attack Master",
-          "level": 51
+          "name": "Mazanma",
+          "level": 0
         },
         {
-          "name": "Ice Wall",
-          "level": 52
+          "name": "Force Block",
+          "level": 45
         },
         {
-          "name": "Enduring Soul",
-          "level": 54
+          "name": "Purple Smoke",
+          "level": 46
         },
         {
-          "name": "Deadly Fury",
-          "level": 55
+          "name": "Life Aid",
+          "level": 47
         }
       ],
       "weak": [
@@ -9585,32 +9173,28 @@
       "lu": 27,
       "learnset": [
         {
-          "name": "Magarula",
+          "name": "Critical Wave",
           "level": 0
         },
         {
-          "name": "Stagnant Air",
+          "name": "Fatal Sword",
           "level": 0
         },
         {
-          "name": "Bloodbath",
+          "name": "Spirit Drain",
           "level": 0
         },
         {
-          "name": "Tempest Slash",
+          "name": "Zanma",
+          "level": 42
+        },
+        {
+          "name": "Dark Block",
           "level": 43
         },
         {
-          "name": "Dekaja",
-          "level": 45
-        },
-        {
-          "name": "Fear Boost",
-          "level": 46
-        },
-        {
-          "name": "Revolution",
-          "level": 47
+          "name": "Bloody Glee",
+          "level": 44
         }
       ],
       "weak": [
@@ -9643,28 +9227,24 @@
       "lu": 31,
       "learnset": [
         {
-          "name": "Double Shot",
+          "name": "Acrobat Kick",
           "level": 0
         },
         {
-          "name": "Masukunda",
+          "name": "Wind Dracostrike",
           "level": 0
         },
         {
-          "name": "Magarula",
-          "level": 0
+          "name": "Mahama",
+          "level": 40
         },
         {
-          "name": "Wind Boost",
-          "level": 32
+          "name": "Light Life Aid",
+          "level": 41
         },
         {
-          "name": "Brain Jack",
-          "level": 34
-        },
-        {
-          "name": "Growth 2",
-          "level": 36
+          "name": "Mazanma",
+          "level": 42
         }
       ],
       "weak": [],
@@ -9752,11 +9332,7 @@
       "lu": 37,
       "learnset": [
         {
-          "name": "Hysterical Slap",
-          "level": 0
-        },
-        {
-          "name": "Psy Wall",
+          "name": "Dekaja",
           "level": 0
         },
         {
@@ -9764,24 +9340,16 @@
           "level": 0
         },
         {
-          "name": "Matarukaja",
-          "level": 44
+          "name": "Mahamaon",
+          "level": 50
         },
         {
-          "name": "Null Confuse",
-          "level": 45
+          "name": "Heal Pleroma",
+          "level": 51
         },
         {
-          "name": "Wind Wall",
-          "level": 46
-        },
-        {
-          "name": "Amrita Shower",
-          "level": 47
-        },
-        {
-          "name": "Null Ice",
-          "level": 48
+          "name": "Phys Block",
+          "level": 52
         }
       ],
       "weak": [],
@@ -9808,32 +9376,32 @@
       "lu": 56,
       "learnset": [
         {
-          "name": "Mabaisudi",
+          "name": "Donum Magici",
           "level": 0
         },
         {
-          "name": "Bufula",
+          "name": "Makajamaon",
           "level": 0
         },
         {
-          "name": "Growth 2",
+          "name": "Masukukaja",
           "level": 0
         },
         {
-          "name": "Marakukaja",
-          "level": 36
+          "name": "Matarukaja",
+          "level": 0
         },
         {
-          "name": "Elec Wall",
-          "level": 37
+          "name": "Boon Boost",
+          "level": 59
         },
         {
-          "name": "Mabufula",
-          "level": 39
+          "name": "Great Curse Siphon",
+          "level": 60
         },
         {
-          "name": "Ice Boost",
-          "level": 41
+          "name": "Null Elec",
+          "level": 62
         }
       ],
       "weak": [
@@ -9866,32 +9434,32 @@
       "lu": 51,
       "learnset": [
         {
-          "name": "Lullaby",
+          "name": "Hamabarion",
           "level": 0
         },
         {
-          "name": "Diarahan",
-          "level": 0
-        },
-        {
-          "name": "Bufudyne",
+          "name": "Mana Aid",
           "level": 0
         },
         {
           "name": "Mediarahan",
-          "level": 70
+          "level": 0
         },
         {
-          "name": "Climate Decorum",
+          "name": "Sexy Dance",
+          "level": 0
+        },
+        {
+          "name": "Luster Candy",
           "level": 71
         },
         {
-          "name": "Amrita Shower",
+          "name": "Zanbarion",
           "level": 72
         },
         {
-          "name": "Life Aid",
-          "level": 74
+          "name": "Boon Boost",
+          "level": 73
         }
       ],
       "weak": [
@@ -9923,32 +9491,28 @@
       "lu": 29,
       "learnset": [
         {
-          "name": "Mudo",
+          "name": "Life Drain",
           "level": 0
         },
         {
-          "name": "Rakukaja",
+          "name": "Makajama",
           "level": 0
         },
         {
-          "name": "Rising Slash",
+          "name": "Zionga",
           "level": 0
         },
         {
-          "name": "Ominous Words",
-          "level": 27
+          "name": "Resist Dark",
+          "level": 37
         },
         {
-          "name": "Foul Breath",
-          "level": 28
+          "name": "Steel Needle",
+          "level": 38
         },
         {
-          "name": "Mamudo",
-          "level": 30
-        },
-        {
-          "name": "Despair Boost",
-          "level": 31
+          "name": "Mudoon",
+          "level": 39
         }
       ],
       "weak": [
@@ -9982,28 +9546,24 @@
       "lu": 15,
       "learnset": [
         {
-          "name": "Rakunda",
-          "level": 0
-        },
-        {
-          "name": "Psio",
+          "name": "Curse Siphon",
           "level": 0
         },
         {
           "name": "Marin Karin",
-          "level": 20
+          "level": 0
+        },
+        {
+          "name": "Mudo",
+          "level": 0
+        },
+        {
+          "name": "Media",
+          "level": 18
         },
         {
           "name": "Mamudo",
-          "level": 21
-        },
-        {
-          "name": "Mapsi",
-          "level": 22
-        },
-        {
-          "name": "Eiga",
-          "level": 23
+          "level": 19
         }
       ],
       "weak": [
@@ -10035,32 +9595,20 @@
       "lu": 15,
       "learnset": [
         {
-          "name": "Bloodbath",
+          "name": "Mudo",
           "level": 0
         },
         {
-          "name": "Life Drain",
-          "level": 0
+          "name": "Berserker God",
+          "level": 20
         },
         {
-          "name": "Evil Smile",
-          "level": 0
+          "name": "Makajama",
+          "level": 21
         },
         {
-          "name": "Foul Breath",
-          "level": 39
-        },
-        {
-          "name": "Tetra Break",
-          "level": 40
-        },
-        {
-          "name": "Null Dizzy",
-          "level": 42
-        },
-        {
-          "name": "Eigaon",
-          "level": 45
+          "name": "Curse Siphon",
+          "level": 22
         }
       ],
       "weak": [
@@ -10096,32 +9644,24 @@
       "lu": 26,
       "learnset": [
         {
-          "name": "Bufula",
+          "name": "Marin Karin",
           "level": 0
         },
         {
-          "name": "Lullaby",
+          "name": "Mazionga",
           "level": 0
         },
         {
-          "name": "Freeze Boost",
-          "level": 0
+          "name": "Zionga",
+          "level": 33
         },
         {
-          "name": "Masukunda",
+          "name": "Resist Dark",
           "level": 34
-        },
-        {
-          "name": "Dodge Bless",
-          "level": 35
         },
         {
           "name": "Spirit Drain",
           "level": 36
-        },
-        {
-          "name": "Mabufula",
-          "level": 37
         }
       ],
       "weak": [
@@ -10155,32 +9695,28 @@
       "lu": 57,
       "learnset": [
         {
-          "name": "Mabufudyne",
+          "name": "Megidola",
           "level": 0
         },
         {
-          "name": "Makarakarn",
+          "name": "Slumber Vortex",
           "level": 0
         },
         {
-          "name": "Freidyne",
+          "name": "Ziobarion",
           "level": 0
         },
         {
-          "name": "Mafreidyne",
-          "level": 62
+          "name": "Null Elec",
+          "level": 69
         },
         {
-          "name": "Spirit Drain",
-          "level": 63
+          "name": "Almighty Pleroma",
+          "level": 70
         },
         {
-          "name": "Freeze Boost",
-          "level": 64
-        },
-        {
-          "name": "Nuke Amp",
-          "level": 65
+          "name": "Energy Drain",
+          "level": 71
         }
       ],
       "weak": [
@@ -10214,32 +9750,24 @@
       "lu": 26,
       "learnset": [
         {
-          "name": "Mamudoon",
+          "name": "Poison Adept",
           "level": 0
         },
         {
-          "name": "Abysmal Surge",
+          "name": "Toxic Sting",
           "level": 0
         },
         {
-          "name": "Life Drain",
-          "level": 0
+          "name": "Mamudo",
+          "level": 31
         },
         {
-          "name": "Maeigaon",
-          "level": 72
+          "name": "Mudoon",
+          "level": 32
         },
         {
-          "name": "Drain Curse",
-          "level": 73
-        },
-        {
-          "name": "Spirit Drain",
-          "level": 74
-        },
-        {
-          "name": "Fortify Spirit",
-          "level": 75
+          "name": "Dark Block",
+          "level": 33
         }
       ],
       "weak": [
@@ -10276,36 +9804,28 @@
       "lu": 42,
       "learnset": [
         {
-          "name": "Fortify Spirit",
+          "name": "Bufudyne",
           "level": 0
         },
         {
-          "name": "Laevateinn",
+          "name": "Mabufudyne",
           "level": 0
         },
         {
-          "name": "Megidolaon",
+          "name": "Ziodyne",
           "level": 0
         },
         {
-          "name": "Debilitate",
-          "level": 0
+          "name": "High Restore",
+          "level": 57
         },
         {
-          "name": "Riot Gun",
-          "level": 0
+          "name": "Agidyne",
+          "level": 58
         },
         {
-          "name": "Eigaon",
-          "level": 0
-        },
-        {
-          "name": "Attack Master",
-          "level": 0
-        },
-        {
-          "name": "Evade Bless",
-          "level": 0
+          "name": "Mazandyne",
+          "level": 59
         }
       ],
       "weak": [
@@ -10342,32 +9862,24 @@
           "level": 0
         },
         {
-          "name": "Rakukaja",
-          "level": 0
-        },
-        {
-          "name": "Sharp Student",
-          "level": 0
-        },
-        {
-          "name": "Ice Amp",
-          "level": 66
-        },
-        {
-          "name": "High Counter",
-          "level": 67
-        },
-        {
           "name": "Mabufudyne",
-          "level": 68
+          "level": 0
         },
         {
-          "name": "Null Fire",
-          "level": 69
+          "name": "Ziodyne",
+          "level": 0
         },
         {
-          "name": "Niflheim",
-          "level": 70
+          "name": "High Restore",
+          "level": 57
+        },
+        {
+          "name": "Agidyne",
+          "level": 58
+        },
+        {
+          "name": "Mazandyne",
+          "level": 59
         }
       ],
       "weak": [
@@ -10618,32 +10130,28 @@
       "lu": 32,
       "learnset": [
         {
-          "name": "Death Scythe",
+          "name": "Black Dracostrike",
           "level": 0
         },
         {
-          "name": "Evil Smile",
+          "name": "Blight",
           "level": 0
         },
         {
-          "name": "Mamudoon",
+          "name": "Venom Chaser",
           "level": 0
         },
         {
-          "name": "Auto-Masuku",
-          "level": 74
+          "name": "Hellish Mask",
+          "level": 44
         },
         {
-          "name": "Ghastly Wail",
-          "level": 75
+          "name": "Trafuri",
+          "level": 45
         },
         {
-          "name": "Myriad Slashes",
-          "level": 76
-        },
-        {
-          "name": "Ali Dance",
-          "level": 78
+          "name": "Poison Adept",
+          "level": 46
         }
       ],
       "weak": [
@@ -10676,36 +10184,32 @@
       "lu": 41,
       "learnset": [
         {
-          "name": "Inferno",
+          "name": "Debilitate",
           "level": 0
         },
         {
-          "name": "Fire Amp",
+          "name": "Hades Blast",
           "level": 0
         },
         {
-          "name": "Burn Boost",
+          "name": "Mediarahan",
           "level": 0
         },
         {
-          "name": "Fortify Spirit",
-          "level": 91
+          "name": "Trisagion",
+          "level": 0
         },
         {
-          "name": "Blazing Hell",
-          "level": 92
+          "name": "Dekunda",
+          "level": 84
         },
         {
-          "name": "Amrita Shower",
-          "level": 93
+          "name": "Ragnarok",
+          "level": 85
         },
         {
-          "name": "Enduring Soul",
-          "level": 95
-        },
-        {
-          "name": "Spell Master",
-          "level": 96
+          "name": "Akashic Arts",
+          "level": 86
         }
       ],
       "weak": [
@@ -10860,32 +10364,24 @@
       "lu": 24,
       "learnset": [
         {
-          "name": "Double Fangs",
+          "name": "Dia",
           "level": 0
         },
         {
-          "name": "Frei",
+          "name": "Mahama",
           "level": 0
         },
         {
-          "name": "Energy Drop",
+          "name": "Recarm",
           "level": 0
         },
         {
-          "name": "Mafrei",
-          "level": 17
+          "name": "Sukunda",
+          "level": 22
         },
         {
-          "name": "Makajama",
-          "level": 18
-        },
-        {
-          "name": "Resist Despair",
-          "level": 19
-        },
-        {
-          "name": "Dodge Elec",
-          "level": 20
+          "name": "Mana Spring",
+          "level": 23
         }
       ],
       "weak": [
@@ -10920,20 +10416,16 @@
       "lu": 9,
       "learnset": [
         {
-          "name": "Pulinpa",
-          "level": 0
-        },
-        {
-          "name": "Energy Drop",
+          "name": "Zio",
           "level": 0
         },
         {
           "name": "Lunge",
-          "level": 4
+          "level": 8
         },
         {
-          "name": "Sukunda",
-          "level": 5
+          "name": "Toxic Sting",
+          "level": 9
         }
       ],
       "weak": [
@@ -10964,36 +10456,32 @@
       "lu": 53,
       "learnset": [
         {
-          "name": "Mapsiodyne",
-          "level": 0
-        },
-        {
-          "name": "One-shot Kill",
-          "level": 0
-        },
-        {
-          "name": "Tetra Break",
-          "level": 0
-        },
-        {
           "name": "Charge",
-          "level": 74
+          "level": 0
         },
         {
-          "name": "Brain Buster",
-          "level": 76
+          "name": "Hell Thrust",
+          "level": 0
         },
         {
-          "name": "Psy Amp",
-          "level": 77
+          "name": "Slumber Vortex",
+          "level": 0
         },
         {
-          "name": "Psycho Force",
-          "level": 78
+          "name": "Toxic Spray",
+          "level": 0
         },
         {
-          "name": "Mararagidyne",
-          "level": 79
+          "name": "Enduring Soul",
+          "level": 68
+        },
+        {
+          "name": "Megaton Press",
+          "level": 69
+        },
+        {
+          "name": "Poison Master",
+          "level": 70
         }
       ],
       "weak": [],
@@ -11029,32 +10517,32 @@
       "lu": 74,
       "learnset": [
         {
-          "name": "Invigorate 3",
+          "name": "Diamrita",
           "level": 0
         },
         {
-          "name": "Salvation",
+          "name": "Floral Gust",
           "level": 0
         },
         {
-          "name": "Holy Benevolence",
+          "name": "Mahamabarion",
           "level": 0
         },
         {
-          "name": "Heat Riser",
-          "level": 94
+          "name": "Samarecarm",
+          "level": 0
         },
         {
-          "name": "Holy Embrace",
-          "level": 96
+          "name": "High Heal Pleroma",
+          "level": 84
         },
         {
-          "name": "Angelic Grace",
-          "level": 97
+          "name": "Mediarahan",
+          "level": 85
         },
         {
-          "name": "Holy Whisper",
-          "level": 98
+          "name": "Luster Candy",
+          "level": 86
         }
       ],
       "weak": [
@@ -11089,28 +10577,28 @@
       "lu": 22,
       "learnset": [
         {
-          "name": "Psi",
+          "name": "Andalucia",
           "level": 0
         },
         {
-          "name": "Null Dizzy",
+          "name": "Mazan",
           "level": 0
         },
         {
-          "name": "Sukukaja",
+          "name": "Red Capote",
           "level": 0
         },
         {
-          "name": "Mapsi",
-          "level": 18
+          "name": "Light Life Aid",
+          "level": 25
         },
         {
-          "name": "Double Shot",
-          "level": 20
+          "name": "Critical Aura",
+          "level": 26
         },
         {
-          "name": "Swift Strike",
-          "level": 22
+          "name": "Counter",
+          "level": 27
         }
       ],
       "weak": [
@@ -11141,32 +10629,28 @@
       "lu": 38,
       "learnset": [
         {
-          "name": "Megaton Raid",
-          "level": 0
-        },
-        {
           "name": "Hamaon",
           "level": 0
         },
         {
-          "name": "Hama Boost",
-          "level": 59
-        },
-        {
-          "name": "Revolution",
-          "level": 60
-        },
-        {
           "name": "Mahamaon",
+          "level": 0
+        },
+        {
+          "name": "Mortal Jihad",
+          "level": 0
+        },
+        {
+          "name": "Light Block",
+          "level": 61
+        },
+        {
+          "name": "Power Punch",
           "level": 62
         },
         {
-          "name": "Amrita Drop",
+          "name": "Impaler's Animus",
           "level": 63
-        },
-        {
-          "name": "God\"s Hand",
-          "level": 65
         }
       ],
       "weak": [
@@ -11465,36 +10949,32 @@
       "lu": 76,
       "learnset": [
         {
-          "name": "Mahamaon",
+          "name": "Dekaja",
           "level": 0
         },
         {
-          "name": "Sword Dance",
+          "name": "Dekunda",
           "level": 0
         },
         {
-          "name": "Makougaon",
+          "name": "Fire of Sinai",
           "level": 0
         },
         {
           "name": "Megidolaon",
-          "level": 91
+          "level": 0
         },
         {
-          "name": "Hama Boost",
-          "level": 92
+          "name": "Hamabarion",
+          "level": 96
         },
         {
-          "name": "Concentrate",
-          "level": 93
+          "name": "Repel Light",
+          "level": 97
         },
         {
-          "name": "Bless Amp",
-          "level": 94
-        },
-        {
-          "name": "Divine Judgement",
-          "level": 95
+          "name": "High Almighty Pleroma",
+          "level": 98
         }
       ],
       "weak": [
@@ -11529,32 +11009,32 @@
       "lu": 59,
       "learnset": [
         {
-          "name": "Divine Judgement",
+          "name": "Akashic Arts",
           "level": 0
         },
         {
-          "name": "Mabufudyne",
+          "name": "Mahamabarion",
           "level": 0
-        },
-        {
-          "name": "Debilitate",
-          "level": 0
-        },
-        {
-          "name": "Sword Dance",
-          "level": 89
-        },
-        {
-          "name": "Mahamaon",
-          "level": 90
         },
         {
           "name": "Megidolaon",
+          "level": 0
+        },
+        {
+          "name": "Trisagion",
+          "level": 0
+        },
+        {
+          "name": "Ragnarok",
           "level": 91
         },
         {
-          "name": "Cosmic Flare",
+          "name": "Titanomachia",
           "level": 92
+        },
+        {
+          "name": "Repel Fire",
+          "level": 93
         }
       ],
       "weak": [],
@@ -11693,32 +11173,28 @@
       "lu": 25,
       "learnset": [
         {
-          "name": "Regenerate 3",
+          "name": "Beatdown",
           "level": 0
         },
         {
-          "name": "Brain Jack",
+          "name": "Matarunda",
           "level": 0
         },
         {
-          "name": "Psiodyne",
+          "name": "Resist Light",
           "level": 0
         },
         {
-          "name": "One-shot Kill",
-          "level": 54
+          "name": "Mazionga",
+          "level": 43
         },
         {
-          "name": "Endure",
-          "level": 55
+          "name": "Donum Gladi",
+          "level": 44
         },
         {
-          "name": "Deathbound",
-          "level": 56
-        },
-        {
-          "name": "Ailment Boost",
-          "level": 57
+          "name": "Mamudoon",
+          "level": 45
         }
       ],
       "weak": [
@@ -11753,32 +11229,32 @@
       "lu": 50,
       "learnset": [
         {
-          "name": "Tentarafoo",
+          "name": "Dekaja",
           "level": 0
         },
         {
-          "name": "Mafreila",
+          "name": "Hamabarion",
           "level": 0
         },
         {
-          "name": "Heat Wave",
+          "name": "Maragibarion",
           "level": 0
         },
         {
-          "name": "Tetra Break",
-          "level": 41
+          "name": "Rampage",
+          "level": 0
         },
         {
-          "name": "Nuke Break",
-          "level": 42
+          "name": "Dekunda",
+          "level": 78
         },
         {
-          "name": "Mabaisudi",
-          "level": 43
+          "name": "Ragnarok",
+          "level": 79
         },
         {
-          "name": "Freidyne",
-          "level": 45
+          "name": "High Fire Pleroma",
+          "level": 80
         }
       ],
       "weak": [
@@ -11816,32 +11292,28 @@
       "lu": 43,
       "learnset": [
         {
-          "name": "Kouga",
+          "name": "Hamaon",
           "level": 0
         },
         {
-          "name": "Mahama",
+          "name": "Mamudoon",
           "level": 0
         },
         {
-          "name": "Diarama",
+          "name": "Megidola",
           "level": 0
         },
         {
-          "name": "Makouga",
-          "level": 34
+          "name": "Null Dark",
+          "level": 66
         },
         {
-          "name": "Dekunda",
-          "level": 35
+          "name": "Diamrita",
+          "level": 67
         },
         {
-          "name": "Bless Boost",
-          "level": 36
-        },
-        {
-          "name": "Thermopylae",
-          "level": 38
+          "name": "Debilitate",
+          "level": 68
         }
       ],
       "weak": [
@@ -11873,28 +11345,20 @@
       "lu": 16,
       "learnset": [
         {
-          "name": "Tarukaja",
+          "name": "Dustoma",
           "level": 0
         },
         {
-          "name": "Dazzler",
+          "name": "Pulinpa",
           "level": 0
         },
         {
-          "name": "Skull Cracker",
-          "level": 10
+          "name": "Zio",
+          "level": 17
         },
         {
-          "name": "Marin Karin",
-          "level": 12
-        },
-        {
-          "name": "Dodge Elec",
-          "level": 13
-        },
-        {
-          "name": "Dekunda",
-          "level": 14
+          "name": "Trafuri",
+          "level": 18
         }
       ],
       "weak": [
@@ -11929,28 +11393,24 @@
           "level": 0
         },
         {
-          "name": "Stagnant Air",
+          "name": "Crusher Onslaught",
           "level": 0
         },
         {
-          "name": "Evil Smile",
+          "name": "Masukunda",
           "level": 0
         },
         {
-          "name": "Maragidyne",
-          "level": 62
+          "name": "Black Dracostrike",
+          "level": 52
         },
         {
-          "name": "Ghastly Wail",
-          "level": 63
+          "name": "Rampage",
+          "level": 53
         },
         {
-          "name": "Drain Fire",
-          "level": 64
-        },
-        {
-          "name": "Fire Amp",
-          "level": 65
+          "name": "Maragion",
+          "level": 54
         }
       ],
       "weak": [
@@ -11987,28 +11447,28 @@
       "lu": 46,
       "learnset": [
         {
-          "name": "Megidola",
+          "name": "Agidyne",
           "level": 0
         },
         {
-          "name": "Matarukaja",
+          "name": "Mamudoon",
           "level": 0
         },
         {
-          "name": "Maeigaon",
+          "name": "Wind Breath",
           "level": 0
         },
         {
-          "name": "Concentrate",
-          "level": 74
+          "name": "Null Force",
+          "level": 64
         },
         {
-          "name": "Megidolaon",
-          "level": 76
+          "name": "High Restore",
+          "level": 65
         },
         {
-          "name": "Repel Elec",
-          "level": 77
+          "name": "Zanbarion",
+          "level": 66
         }
       ],
       "weak": [
@@ -12043,32 +11503,32 @@
       "lu": 40,
       "learnset": [
         {
-          "name": "Mabufudyne",
+          "name": "Babylon Goblet",
           "level": 0
         },
         {
-          "name": "Mamudoon",
+          "name": "Concentrate",
           "level": 0
         },
         {
-          "name": "Mudo Boost",
+          "name": "Death Lust",
           "level": 0
         },
         {
-          "name": "Ice Age",
-          "level": 86
+          "name": "Dekunda",
+          "level": 0
         },
         {
-          "name": "Ice Amp",
-          "level": 87
+          "name": "Maziodyne",
+          "level": 65
         },
         {
-          "name": "Repel Bless",
-          "level": 88
+          "name": "Makajamaon",
+          "level": 66
         },
         {
-          "name": "Debilitate",
-          "level": 90
+          "name": "Trisagion",
+          "level": 67
         }
       ],
       "weak": [
@@ -12101,32 +11561,24 @@
       "lu": 27,
       "learnset": [
         {
-          "name": "Skull Cracker",
+          "name": "Pulinpa",
           "level": 0
         },
         {
-          "name": "Mazionga",
+          "name": "Zionga",
           "level": 0
         },
         {
-          "name": "Shock Boost",
-          "level": 0
+          "name": "Me Patra",
+          "level": 30
         },
         {
-          "name": "Tentarafoo",
-          "level": 35
+          "name": "Needle Spray",
+          "level": 31
         },
         {
-          "name": "Ambient Aid",
-          "level": 36
-        },
-        {
-          "name": "Makajamaon",
-          "level": 37
-        },
-        {
-          "name": "Ziodyne",
-          "level": 38
+          "name": "Elec Block",
+          "level": 32
         }
       ],
       "weak": [
@@ -12159,32 +11611,24 @@
       "lu": 15,
       "learnset": [
         {
-          "name": "Power Slash",
+          "name": "Heat Wave",
           "level": 0
         },
         {
-          "name": "Memory Blow",
+          "name": "Puncture Punch",
           "level": 0
         },
         {
-          "name": "Zionga",
-          "level": 0
-        },
-        {
-          "name": "Shock Boost",
-          "level": 26
-        },
-        {
-          "name": "Counter",
-          "level": 27
-        },
-        {
-          "name": "Mazionga",
+          "name": "Resist Fire",
           "level": 28
         },
         {
-          "name": "Marakukaja",
+          "name": "Zionga",
           "level": 29
+        },
+        {
+          "name": "Charge",
+          "level": 30
         }
       ],
       "weak": [
@@ -12217,32 +11661,28 @@
       "lu": 31,
       "learnset": [
         {
-          "name": "Dazzler",
+          "name": "Hellish Mask",
           "level": 0
         },
         {
-          "name": "Magarula",
+          "name": "Sexy Dance",
           "level": 0
         },
         {
-          "name": "Energy Drop",
+          "name": "Tentarafoo",
           "level": 0
         },
         {
-          "name": "Growth 3",
-          "level": 50
+          "name": "Zanma",
+          "level": 39
         },
         {
-          "name": "Dizzy Boost",
-          "level": 51
+          "name": "Wind Breath",
+          "level": 40
         },
         {
-          "name": "Mediarama",
-          "level": 52
-        },
-        {
-          "name": "Ambient Aid",
-          "level": 53
+          "name": "Estoma",
+          "level": 41
         }
       ],
       "weak": [
@@ -12276,32 +11716,24 @@
       "lu": 56,
       "learnset": [
         {
-          "name": "Marin Karin",
+          "name": "Mamudoon",
           "level": 0
         },
         {
-          "name": "Mapsiodyne",
+          "name": "Megidola",
           "level": 0
         },
         {
-          "name": "Marakukaja",
-          "level": 0
+          "name": "Null Light",
+          "level": 68
         },
         {
-          "name": "Brain Jack",
-          "level": 76
+          "name": "Energy Drain",
+          "level": 69
         },
         {
-          "name": "Brainwash Boost",
-          "level": 77
-        },
-        {
-          "name": "Megidolaon",
-          "level": 78
-        },
-        {
-          "name": "Null Bless",
-          "level": 80
+          "name": "Almighty Pleroma",
+          "level": 70
         }
       ],
       "weak": [
@@ -12380,32 +11812,24 @@
       "lu": 29,
       "learnset": [
         {
-          "name": "Magaru",
+          "name": "Axel Claw",
           "level": 0
         },
         {
-          "name": "Terror Claw",
+          "name": "Beast Eye",
           "level": 0
         },
         {
-          "name": "Evil Touch",
-          "level": 0
+          "name": "Pulinpa",
+          "level": 35
         },
         {
-          "name": "Hysterical Slap",
-          "level": 18
+          "name": "Damascus Claw",
+          "level": 36
         },
         {
-          "name": "Wind Break",
-          "level": 20
-        },
-        {
-          "name": "Elec Wall",
-          "level": 21
-        },
-        {
-          "name": "Dodge Elec",
-          "level": 22
+          "name": "Wind Breath",
+          "level": 37
         }
       ],
       "weak": [
@@ -12436,32 +11860,20 @@
       "lu": 8,
       "learnset": [
         {
-          "name": "Psio",
+          "name": "Dia",
           "level": 0
         },
         {
-          "name": "Diarama",
+          "name": "Rakunda",
           "level": 0
         },
         {
-          "name": "Masukukaja",
-          "level": 0
+          "name": "Sukunda",
+          "level": 6
         },
         {
-          "name": "Invigorate 1",
-          "level": 31
-        },
-        {
-          "name": "Cornered Fang",
-          "level": 33
-        },
-        {
-          "name": "Defense Master",
-          "level": 34
-        },
-        {
-          "name": "Fortified Moxy",
-          "level": 36
+          "name": "Fang Breaker",
+          "level": 8
         }
       ],
       "weak": [
@@ -12663,32 +12075,24 @@
       "lu": 49,
       "learnset": [
         {
-          "name": "Ziodyne",
+          "name": "Luster Candy",
           "level": 0
         },
         {
-          "name": "Garudyne",
+          "name": "Mediarama",
           "level": 0
-        },
-        {
-          "name": "Nocturnal Flash",
-          "level": 0
-        },
-        {
-          "name": "Diarahan",
-          "level": 54
-        },
-        {
-          "name": "Amrita Drop",
-          "level": 55
-        },
-        {
-          "name": "Tetraja",
-          "level": 56
         },
         {
           "name": "Samarecarm",
-          "level": 57
+          "level": 68
+        },
+        {
+          "name": "Null Light",
+          "level": 69
+        },
+        {
+          "name": "Phys Block",
+          "level": 70
         }
       ],
       "weak": [],
@@ -12721,32 +12125,28 @@
       "lu": 29,
       "learnset": [
         {
-          "name": "Maeiha",
+          "name": "Axel Claw",
           "level": 0
         },
         {
-          "name": "Skull Cracker",
+          "name": "Beast Eye",
           "level": 0
         },
         {
-          "name": "Mudo",
-          "level": 21
+          "name": "Storm Dracostrike",
+          "level": 0
         },
         {
-          "name": "Pulinpa",
-          "level": 22
+          "name": "Mazionga",
+          "level": 50
         },
         {
-          "name": "Mamudo",
-          "level": 24
+          "name": "Elec Pleroma",
+          "level": 51
         },
         {
-          "name": "Assault Dive",
-          "level": 25
-        },
-        {
-          "name": "Curse Boost",
-          "level": 26
+          "name": "Eat Whole",
+          "level": 52
         }
       ],
       "weak": [
@@ -12779,7 +12179,7 @@
       "lu": 12,
       "learnset": [
         {
-          "name": "Snap",
+          "name": "Sukukaja",
           "level": 0
         },
         {
@@ -12787,16 +12187,12 @@
           "level": 0
         },
         {
-          "name": "Lucky Punch",
-          "level": 9
+          "name": "Bouncing Claw",
+          "level": 13
         },
         {
-          "name": "Resist Fear",
-          "level": 10
-        },
-        {
-          "name": "Dekaja",
-          "level": 12
+          "name": "Patra",
+          "level": 14
         }
       ],
       "weak": [
@@ -12827,36 +12223,28 @@
       "lu": 32,
       "learnset": [
         {
-          "name": "Ziodyne",
+          "name": "Diamrita",
           "level": 0
         },
         {
-          "name": "Nocturnal Flash",
+          "name": "Samarecarm",
           "level": 0
         },
         {
-          "name": "Heat Wave",
+          "name": "Zandyne",
           "level": 0
         },
         {
           "name": "Matarukaja",
-          "level": 68
+          "level": 48
         },
         {
-          "name": "Myriad Slashes",
-          "level": 69
+          "name": "Force Block",
+          "level": 49
         },
         {
-          "name": "Evade Nuke",
-          "level": 70
-        },
-        {
-          "name": "Samarecarm",
-          "level": 71
-        },
-        {
-          "name": "Elec Amp",
-          "level": 72
+          "name": "Mahamaon",
+          "level": 50
         }
       ],
       "weak": [
@@ -12889,32 +12277,32 @@
       "lu": 32,
       "learnset": [
         {
+          "name": "Figment Slash",
+          "level": 0
+        },
+        {
+          "name": "Gungnir",
+          "level": 0
+        },
+        {
+          "name": "Hades Blast",
+          "level": 0
+        },
+        {
+          "name": "Maziobarion",
+          "level": 0
+        },
+        {
+          "name": "Critical Aura",
+          "level": 78
+        },
+        {
           "name": "Thunder Reign",
-          "level": 0
+          "level": 79
         },
         {
-          "name": "Myriad Slashes",
-          "level": 0
-        },
-        {
-          "name": "Marakukaja",
-          "level": 0
-        },
-        {
-          "name": "Wild Thunder",
-          "level": 86
-        },
-        {
-          "name": "Concentrate",
-          "level": 87
-        },
-        {
-          "name": "Fast Heal",
-          "level": 88
-        },
-        {
-          "name": "Elec Amp",
-          "level": 89
+          "name": "High Elec Pleroma",
+          "level": 80
         }
       ],
       "weak": [],
@@ -12948,32 +12336,28 @@
       "lu": 28,
       "learnset": [
         {
-          "name": "Mapsio",
+          "name": "Fatal Sword",
           "level": 0
         },
         {
-          "name": "Myriad Slashes",
+          "name": "Me Patra",
           "level": 0
         },
         {
-          "name": "Matarukaja",
+          "name": "Mediarama",
           "level": 0
         },
         {
-          "name": "Psy Boost",
-          "level": 55
-        },
-        {
-          "name": "Psy Break",
+          "name": "Estoma",
           "level": 56
         },
         {
-          "name": "Evade Nuke",
+          "name": "White Dracostrike",
           "level": 57
         },
         {
-          "name": "Heat Wave",
-          "level": 59
+          "name": "Phys Block",
+          "level": 58
         }
       ],
       "weak": [
@@ -13067,32 +12451,32 @@
       "lu": 48,
       "learnset": [
         {
-          "name": "Myriad Slashes",
+          "name": "Dragon Eye",
           "level": 0
         },
         {
-          "name": "Makajamaon",
+          "name": "Megidolaon",
           "level": 0
         },
         {
-          "name": "Last Stand",
+          "name": "Mist Rush",
           "level": 0
         },
         {
-          "name": "Arms Master",
-          "level": 91
+          "name": "Slumber Vortex",
+          "level": 0
         },
         {
-          "name": "Regenerate 3",
-          "level": 92
+          "name": "Impaler's Animus",
+          "level": 79
         },
         {
-          "name": "Firm Stance",
-          "level": 93
+          "name": "Nihil Claw",
+          "level": 80
         },
         {
-          "name": "Agneyastra",
-          "level": 95
+          "name": "Null Phys",
+          "level": 81
         }
       ],
       "weak": [],
@@ -13124,28 +12508,20 @@
       "lu": 16,
       "learnset": [
         {
-          "name": "Rampage",
+          "name": "Crusher Onslaught",
           "level": 0
         },
         {
-          "name": "Counter",
+          "name": "Heavy Blow",
           "level": 0
         },
         {
-          "name": "Snap",
-          "level": 0
-        },
-        {
-          "name": "Giant Slice",
-          "level": 22
-        },
-        {
-          "name": "Sharp Student",
-          "level": 23
-        },
-        {
-          "name": "Memory Blow",
+          "name": "Taunt",
           "level": 24
+        },
+        {
+          "name": "Fang Breaker",
+          "level": 25
         }
       ],
       "weak": [],
@@ -13175,28 +12551,16 @@
       "lu": 6,
       "learnset": [
         {
-          "name": "Mudo",
-          "level": 0
-        },
-        {
-          "name": "Ice Wall",
-          "level": 0
-        },
-        {
           "name": "Agi",
-          "level": 13
+          "level": 0
         },
         {
           "name": "Pulinpa",
-          "level": 14
+          "level": 5
         },
         {
-          "name": "Confuse Boost",
-          "level": 15
-        },
-        {
-          "name": "Resist Fear",
-          "level": 17
+          "name": "Mudo",
+          "level": 6
         }
       ],
       "weak": [
@@ -13230,28 +12594,28 @@
       "lu": 35,
       "learnset": [
         {
-          "name": "Maragi",
+          "name": "Agidyne",
           "level": 0
         },
         {
-          "name": "Sukukaja",
+          "name": "Megido",
           "level": 0
         },
         {
-          "name": "Dekaja",
+          "name": "Mudoon",
           "level": 0
+        },
+        {
+          "name": "Heavy Blow",
+          "level": 50
+        },
+        {
+          "name": "Dream Fist",
+          "level": 51
         },
         {
           "name": "Marakunda",
-          "level": 19
-        },
-        {
-          "name": "Fire Break",
-          "level": 20
-        },
-        {
-          "name": "Makajamaon",
-          "level": 21
+          "level": 52
         }
       ],
       "weak": [
@@ -13573,28 +12937,28 @@
       "lu": 22,
       "learnset": [
         {
-          "name": "Agilao",
+          "name": "Axel Claw",
           "level": 0
         },
         {
-          "name": "Double Fangs",
+          "name": "Fang Breaker",
           "level": 0
         },
         {
-          "name": "Maragi",
+          "name": "Fire Dracostrike",
           "level": 0
         },
         {
-          "name": "Burn Boost",
-          "level": 22
+          "name": "Inspiring Leader",
+          "level": 43
         },
         {
-          "name": "Cornered Fang",
-          "level": 24
+          "name": "Fire Breath",
+          "level": 44
         },
         {
-          "name": "Matarukaja",
-          "level": 26
+          "name": "Fierce Roar",
+          "level": 45
         }
       ],
       "weak": [
@@ -13627,27 +12991,27 @@
       "lu": 26,
       "learnset": [
         {
-          "name": "Oni-Kagura",
+          "name": "Beast Eye",
           "level": 0
         },
         {
-          "name": "Counterstrike",
+          "name": "Critical Slash",
           "level": 0
         },
         {
-          "name": "Taunt",
+          "name": "Critical Wave",
           "level": 0
         },
         {
-          "name": "Tempest Slash",
-          "level": 43
-        },
-        {
-          "name": "Matarukaja",
+          "name": "Charge",
           "level": 45
         },
         {
-          "name": "Heat Wave",
+          "name": "Blinding Strike",
+          "level": 46
+        },
+        {
+          "name": "Ice Dracostrike",
           "level": 47
         }
       ],
@@ -13737,32 +13101,32 @@
       "lu": 53,
       "learnset": [
         {
-          "name": "Abysmal Surge",
+          "name": "Mabufudyne",
           "level": 0
         },
         {
-          "name": "Eigaon",
+          "name": "Pestilence",
           "level": 0
         },
         {
-          "name": "Brain Shake",
+          "name": "Tentarafoo",
           "level": 0
         },
         {
-          "name": "Curse Boost",
-          "level": 55
+          "name": "Toxic Cloud",
+          "level": 0
         },
         {
-          "name": "Megidola",
-          "level": 56
-        },
-        {
-          "name": "Evade Bless",
+          "name": "Poison Master",
           "level": 58
         },
         {
-          "name": "Deathbound",
+          "name": "Marakukaja",
           "level": 59
+        },
+        {
+          "name": "Mist Rush",
+          "level": 60
         }
       ],
       "weak": [
@@ -13989,32 +13353,28 @@
       "lu": 29,
       "learnset": [
         {
-          "name": "Diarama",
+          "name": "Bowl of Hygieia",
           "level": 0
         },
         {
-          "name": "Psiodyne",
+          "name": "Matarunda",
           "level": 0
         },
         {
-          "name": "Psy Break",
+          "name": "Media",
           "level": 0
         },
         {
-          "name": "Energy Shower",
-          "level": 57
+          "name": "Heal Pleroma",
+          "level": 36
         },
         {
-          "name": "Diarahan",
-          "level": 58
+          "name": "Bufula",
+          "level": 37
         },
         {
-          "name": "Mapsiodyne",
-          "level": 59
-        },
-        {
-          "name": "Null Ice",
-          "level": 61
+          "name": "Mahama",
+          "level": 38
         }
       ],
       "weak": [
@@ -14048,7 +13408,11 @@
       "lu": 40,
       "learnset": [
         {
-          "name": "Maeiga",
+          "name": "Mamudoon",
+          "level": 0
+        },
+        {
+          "name": "Safeguard",
           "level": 0
         },
         {
@@ -14056,24 +13420,20 @@
           "level": 0
         },
         {
-          "name": "Mudoon",
+          "name": "Zandyne",
           "level": 0
         },
         {
-          "name": "Ambient Aid",
-          "level": 47
+          "name": "Dark Block",
+          "level": 53
         },
         {
-          "name": "Evil Smile",
-          "level": 48
+          "name": "Dekaja",
+          "level": 54
         },
         {
-          "name": "Stagnant Air",
-          "level": 49
-        },
-        {
-          "name": "Eigaon",
-          "level": 50
+          "name": "Great Mana Spring",
+          "level": 55
         }
       ],
       "weak": [
@@ -14242,32 +13602,28 @@
       "lu": 26,
       "learnset": [
         {
-          "name": "Dream Needle",
+          "name": "Damascus Claw",
           "level": 0
         },
         {
-          "name": "Rampage",
+          "name": "Fang Breaker",
           "level": 0
         },
         {
-          "name": "Stagnant Air",
+          "name": "Life Drain",
           "level": 0
         },
         {
-          "name": "Mamudo",
-          "level": 29
-        },
-        {
-          "name": "Abysmal Surge",
-          "level": 31
-        },
-        {
-          "name": "Despair Boost",
+          "name": "Madness Needle",
           "level": 32
         },
         {
-          "name": "Mudoon",
+          "name": "Resist Fire",
           "level": 33
+        },
+        {
+          "name": "Bloody Glee",
+          "level": 34
         }
       ],
       "weak": [
@@ -14395,24 +13751,20 @@
       "lu": 6,
       "learnset": [
         {
-          "name": "Zio",
-          "level": 0
-        },
-        {
           "name": "Dia",
           "level": 0
         },
         {
           "name": "Patra",
+          "level": 0
+        },
+        {
+          "name": "Zan",
           "level": 3
         },
         {
-          "name": "Tarukaja",
-          "level": 5
-        },
-        {
-          "name": "Resist Confuse",
-          "level": 6
+          "name": "Rakukaja",
+          "level": 4
         }
       ],
       "weak": [
@@ -14520,32 +13872,28 @@
       "lu": 25,
       "learnset": [
         {
-          "name": "Hamaon",
+          "name": "Fang Breaker",
           "level": 0
         },
         {
-          "name": "Brain Shake",
+          "name": "Light Block",
           "level": 0
         },
         {
-          "name": "Swift Strike",
+          "name": "White Dracostrike",
+          "level": 0
+        },
+        {
+          "name": "Taunt",
+          "level": 40
+        },
+        {
+          "name": "Berserker God",
+          "level": 41
+        },
+        {
+          "name": "Marakukaja",
           "level": 42
-        },
-        {
-          "name": "Makouga",
-          "level": 43
-        },
-        {
-          "name": "Bless Boost",
-          "level": 44
-        },
-        {
-          "name": "Masukukaja",
-          "level": 45
-        },
-        {
-          "name": "Null Curse",
-          "level": 46
         }
       ],
       "weak": [
@@ -14579,32 +13927,24 @@
       "lu": 22,
       "learnset": [
         {
-          "name": "Makouga",
+          "name": "Diarama",
           "level": 0
         },
         {
-          "name": "Makajamaon",
+          "name": "Mahama",
           "level": 0
         },
         {
-          "name": "Tetraja",
-          "level": 0
+          "name": "Hamaon",
+          "level": 29
         },
         {
-          "name": "Mediarama",
+          "name": "Light Block",
+          "level": 30
+        },
+        {
+          "name": "Light Mana Aid",
           "level": 31
-        },
-        {
-          "name": "Forget Boost",
-          "level": 32
-        },
-        {
-          "name": "Bless Boost",
-          "level": 34
-        },
-        {
-          "name": "Mabaisudi",
-          "level": 35
         }
       ],
       "weak": [
@@ -14771,32 +14111,28 @@
       "lu": 49,
       "learnset": [
         {
-          "name": "Mazionga",
-          "level": 0
-        },
-        {
-          "name": "Makajamaon",
-          "level": 0
-        },
-        {
-          "name": "Burn Boost",
-          "level": 0
-        },
-        {
-          "name": "Matarunda",
-          "level": 44
-        },
-        {
-          "name": "Makara Break",
-          "level": 46
-        },
-        {
           "name": "Agidyne",
-          "level": 47
+          "level": 0
         },
         {
-          "name": "Concentrate",
-          "level": 48
+          "name": "Fogna",
+          "level": 0
+        },
+        {
+          "name": "Mazandyne",
+          "level": 0
+        },
+        {
+          "name": "Resist Fire",
+          "level": 57
+        },
+        {
+          "name": "Spirit Drain",
+          "level": 58
+        },
+        {
+          "name": "High Restore",
+          "level": 59
         }
       ],
       "weak": [
@@ -14829,32 +14165,28 @@
       "lu": 24,
       "learnset": [
         {
-          "name": "Magarula",
+          "name": "Agilao",
           "level": 0
         },
         {
-          "name": "Garudyne",
+          "name": "Fire Pleroma",
           "level": 0
         },
         {
-          "name": "Memory Blow",
+          "name": "Zanma",
           "level": 0
         },
         {
-          "name": "Growth 3",
-          "level": 68
+          "name": "Fire Block",
+          "level": 35
         },
         {
-          "name": "Regenerate 3",
-          "level": 69
+          "name": "Maragion",
+          "level": 36
         },
         {
-          "name": "Magarudyne",
-          "level": 70
-        },
-        {
-          "name": "Wind Amp",
-          "level": 71
+          "name": "Resist Force",
+          "level": 37
         }
       ],
       "weak": [
@@ -14889,32 +14221,28 @@
       "lu": 22,
       "learnset": [
         {
-          "name": "Ziodyne",
+          "name": "Elec Pleroma",
           "level": 0
         },
         {
-          "name": "Elec Break",
+          "name": "Ice Breath",
           "level": 0
         },
         {
-          "name": "Tentarafoo",
+          "name": "Shockbound",
           "level": 0
         },
         {
-          "name": "Shock Boost",
-          "level": 57
+          "name": "Critical Slash",
+          "level": 41
         },
         {
-          "name": "Makarakarn",
-          "level": 58
+          "name": "Pierce Armor",
+          "level": 42
         },
         {
-          "name": "Maziodyne",
-          "level": 59
-        },
-        {
-          "name": "Evade Wind",
-          "level": 60
+          "name": "Storm Dracostrike",
+          "level": 43
         }
       ],
       "weak": [],
@@ -14943,32 +14271,20 @@
       "lu": 14,
       "learnset": [
         {
-          "name": "Giant Slice",
+          "name": "Counter",
           "level": 0
         },
         {
-          "name": "Wind Wall",
+          "name": "Venom Chaser",
           "level": 0
         },
         {
-          "name": "Tarukaja",
-          "level": 0
+          "name": "Gram Slice",
+          "level": 21
         },
         {
-          "name": "Regenerate 1",
-          "level": 26
-        },
-        {
-          "name": "Mind Slice",
-          "level": 27
-        },
-        {
-          "name": "Counterstrike",
-          "level": 28
-        },
-        {
-          "name": "Adverse Resolve",
-          "level": 30
+          "name": "Charge",
+          "level": 22
         }
       ],
       "weak": [
@@ -15004,28 +14320,28 @@
       "lu": 51,
       "learnset": [
         {
-          "name": "Swift Strike",
+          "name": "Nihil Claw",
           "level": 0
         },
         {
-          "name": "Bloodbath",
+          "name": "Steel Needle",
           "level": 0
         },
         {
-          "name": "Counterstrike",
+          "name": "Wind Breath",
           "level": 0
         },
         {
-          "name": "Eigaon",
-          "level": 49
+          "name": "Frenzied Chomp",
+          "level": 71
         },
         {
-          "name": "Matarunda",
-          "level": 51
+          "name": "Samarecarm",
+          "level": 72
         },
         {
-          "name": "Mudoon",
-          "level": 53
+          "name": "Zanbarion",
+          "level": 73
         }
       ],
       "weak": [
@@ -15123,32 +14439,32 @@
       "lu": 48,
       "learnset": [
         {
-          "name": "Sword Dance",
+          "name": "Hamabarion",
           "level": 0
         },
         {
-          "name": "Charge",
+          "name": "Makajamaon",
           "level": 0
         },
         {
-          "name": "Dekaja",
+          "name": "Mazanbarion",
           "level": 0
         },
         {
-          "name": "Heat Riser",
-          "level": 80
+          "name": "Me Patra",
+          "level": 0
         },
         {
-          "name": "Growth 3",
-          "level": 81
+          "name": "High Force Pleroma",
+          "level": 85
         },
         {
-          "name": "Adverse Resolve",
-          "level": 82
+          "name": "Killing Wind",
+          "level": 86
         },
         {
-          "name": "Arms Master",
-          "level": 83
+          "name": "Repel Force",
+          "level": 87
         }
       ],
       "weak": [],
@@ -15180,32 +14496,32 @@
       "lu": 32,
       "learnset": [
         {
-          "name": "Rising Slash",
+          "name": "Pierce Armor",
           "level": 0
         },
         {
-          "name": "Psy Break",
+          "name": "Shockbound",
           "level": 0
         },
         {
-          "name": "Mapsio",
+          "name": "Terrorblade",
           "level": 0
         },
         {
-          "name": "Negative Pile",
-          "level": 42
+          "name": "Zandyne",
+          "level": 0
         },
         {
-          "name": "Despair Boost",
-          "level": 44
+          "name": "Matarukaja",
+          "level": 48
         },
         {
-          "name": "Ominous Words",
-          "level": 45
+          "name": "Retaliate",
+          "level": 49
         },
         {
-          "name": "Rage Boost",
-          "level": 46
+          "name": "Dekunda",
+          "level": 50
         }
       ],
       "weak": [
@@ -15539,32 +14855,32 @@
       "lu": 53,
       "learnset": [
         {
-          "name": "Mahamaon",
+          "name": "Freikugel",
           "level": 0
         },
         {
-          "name": "Samarecarm",
+          "name": "Hamabarion",
           "level": 0
-        },
-        {
-          "name": "Amrita Shower",
-          "level": 0
-        },
-        {
-          "name": "Angelic Grace",
-          "level": 0
-        },
-        {
-          "name": "Repel Curse",
-          "level": 77
-        },
-        {
-          "name": "Sword Dance",
-          "level": 79
         },
         {
           "name": "Megidolaon",
-          "level": 81
+          "level": 0
+        },
+        {
+          "name": "Thunder Reign",
+          "level": 0
+        },
+        {
+          "name": "Narukami",
+          "level": 89
+        },
+        {
+          "name": "Phys Block",
+          "level": 90
+        },
+        {
+          "name": "Repel Elec",
+          "level": 91
         }
       ],
       "weak": [],
@@ -15598,32 +14914,20 @@
       "lu": 12,
       "learnset": [
         {
-          "name": "Dormina",
+          "name": "Dream Needle",
           "level": 0
         },
         {
-          "name": "Garula",
-          "level": 0
+          "name": "Bufu",
+          "level": 9
         },
         {
-          "name": "Dormin Rush",
-          "level": 0
+          "name": "Zan",
+          "level": 10
         },
         {
-          "name": "Sukunda",
-          "level": 24
-        },
-        {
-          "name": "Null Sleep",
-          "level": 26
-        },
-        {
-          "name": "Magarula",
-          "level": 27
-        },
-        {
-          "name": "Sleep Boost",
-          "level": 28
+          "name": "Mazan",
+          "level": 11
         }
       ],
       "weak": [
@@ -15655,32 +14959,28 @@
       "lu": 36,
       "learnset": [
         {
-          "name": "Mediarama",
+          "name": "Bufudyne",
           "level": 0
         },
         {
-          "name": "Ice Wall",
+          "name": "Donum Gladi",
           "level": 0
+        },
+        {
+          "name": "Lullaby",
+          "level": 0
+        },
+        {
+          "name": "Marakunda",
+          "level": 48
+        },
+        {
+          "name": "Mabufula",
+          "level": 49
         },
         {
           "name": "Tentarafoo",
-          "level": 0
-        },
-        {
-          "name": "Psy Wall",
-          "level": 51
-        },
-        {
-          "name": "Dekaja",
-          "level": 52
-        },
-        {
-          "name": "Matarunda",
-          "level": 53
-        },
-        {
-          "name": "Diarahan",
-          "level": 54
+          "level": 50
         }
       ],
       "weak": [
@@ -15845,32 +15145,28 @@
       "lu": 32,
       "learnset": [
         {
-          "name": "Mabufudyne",
+          "name": "Mahamaon",
           "level": 0
         },
         {
-          "name": "Myriad Slashes",
+          "name": "Makajamaon",
           "level": 0
         },
         {
-          "name": "Makarakarn",
+          "name": "Wind Dracostrike",
           "level": 0
         },
         {
-          "name": "Freeze Boost",
-          "level": 78
+          "name": "Diamrita",
+          "level": 56
         },
         {
-          "name": "Matarukaja",
-          "level": 79
+          "name": "Mist Rush",
+          "level": 57
         },
         {
-          "name": "Vorpal Blade",
-          "level": 81
-        },
-        {
-          "name": "Attack Master",
-          "level": 82
+          "name": "Abyssal Mask",
+          "level": 58
         }
       ],
       "weak": [],
@@ -15904,32 +15200,28 @@
       "lu": 31,
       "learnset": [
         {
-          "name": "Bufudyne",
+          "name": "Bufula",
           "level": 0
         },
         {
-          "name": "Diarahan",
+          "name": "Matarunda",
           "level": 0
         },
         {
-          "name": "Marakukaja",
+          "name": "Wind Breath",
           "level": 0
         },
         {
-          "name": "Repel Nuke",
-          "level": 63
+          "name": "Ice Pleroma",
+          "level": 46
         },
         {
-          "name": "Mabufudyne",
-          "level": 65
+          "name": "Eat Whole",
+          "level": 47
         },
         {
-          "name": "Amrita Drop",
-          "level": 66
-        },
-        {
-          "name": "Makarakarn",
-          "level": 67
+          "name": "Dragon Eye",
+          "level": 48
         }
       ],
       "weak": [
@@ -16138,28 +15430,24 @@
       "lu": 20,
       "learnset": [
         {
-          "name": "Giant Slice",
+          "name": "Deathbound",
           "level": 0
         },
         {
-          "name": "Dormin Rush",
+          "name": "Fatal Sword",
           "level": 0
         },
         {
-          "name": "Counter",
-          "level": 0
+          "name": "Fang Breaker",
+          "level": 36
         },
         {
-          "name": "Charge",
-          "level": 27
+          "name": "Mazanma",
+          "level": 37
         },
         {
-          "name": "Rebellion",
-          "level": 29
-        },
-        {
-          "name": "Rising Slash",
-          "level": 30
+          "name": "Acrobat Kick",
+          "level": 38
         }
       ],
       "weak": [
@@ -16191,28 +15479,28 @@
       "lu": 34,
       "learnset": [
         {
-          "name": "One-shot Kill",
+          "name": "Madness Nails",
           "level": 0
         },
         {
-          "name": "Agidyne",
+          "name": "Mazandyne",
           "level": 0
         },
         {
-          "name": "Masukukaja",
+          "name": "Tentarafoo",
           "level": 0
         },
         {
-          "name": "Cripple",
-          "level": 53
+          "name": "Null Force",
+          "level": 68
         },
         {
-          "name": "Fire Break",
-          "level": 54
+          "name": "Yabusame Shot",
+          "level": 69
         },
         {
-          "name": "Fortify Spirit",
-          "level": 56
+          "name": "Ziobarion",
+          "level": 70
         }
       ],
       "weak": [
@@ -16247,28 +15535,24 @@
       "lu": 16,
       "learnset": [
         {
-          "name": "Double Fangs",
+          "name": "Bestial Bite",
           "level": 0
         },
         {
-          "name": "Skull Cracker",
+          "name": "Mazio",
           "level": 0
         },
         {
-          "name": "Frei",
-          "level": 0
+          "name": "Scratch Dance",
+          "level": 20
         },
         {
-          "name": "Dodge Curse",
-          "level": 16
+          "name": "Sukunda",
+          "level": 21
         },
         {
-          "name": "Rampage",
-          "level": 17
-        },
-        {
-          "name": "Dodge Elec",
-          "level": 19
+          "name": "Zionga",
+          "level": 22
         }
       ],
       "weak": [
@@ -16302,32 +15586,24 @@
       "lu": 23,
       "learnset": [
         {
-          "name": "Tarukaja",
+          "name": "Hama",
           "level": 0
         },
         {
-          "name": "Taunt",
+          "name": "Mudo",
           "level": 0
         },
         {
-          "name": "Double Shot",
-          "level": 0
+          "name": "Mahama",
+          "level": 30
         },
         {
-          "name": "Mapsi",
-          "level": 19
+          "name": "Makajama",
+          "level": 31
         },
         {
-          "name": "Dekaja",
-          "level": 21
-        },
-        {
-          "name": "Psio",
-          "level": 23
-        },
-        {
-          "name": "Oni-Kagura",
-          "level": 24
+          "name": "Estoma",
+          "level": 32
         }
       ],
       "weak": [
@@ -16361,32 +15637,32 @@
       "lu": 73,
       "learnset": [
         {
-          "name": "Psycho Force",
+          "name": "Hades Blast",
           "level": 0
         },
         {
-          "name": "Maziodyne",
+          "name": "Maragibarion",
           "level": 0
         },
         {
-          "name": "Enduring Soul",
+          "name": "Maziobarion",
           "level": 0
         },
         {
-          "name": "Riot Gun",
-          "level": 85
+          "name": "Tandava",
+          "level": 0
         },
         {
-          "name": "Megidolaon",
-          "level": 86
+          "name": "Yabusame Shot",
+          "level": 97
         },
         {
-          "name": "Auto-Mataru",
-          "level": 87
+          "name": "High Almighty Pleroma",
+          "level": 98
         },
         {
-          "name": "Psycho Blast",
-          "level": 88
+          "name": "Boon Boost EX",
+          "level": 99
         }
       ],
       "weak": [
@@ -16427,28 +15703,28 @@
           "level": 0
         },
         {
-          "name": "Masukukaja",
+          "name": "Mighty Cleave",
           "level": 0
         },
         {
-          "name": "High Counter",
+          "name": "Mist Rush",
           "level": 0
         },
         {
-          "name": "Charge",
-          "level": 85
+          "name": "Titanomachia",
+          "level": 0
         },
         {
-          "name": "Apt Pupil",
-          "level": 87
+          "name": "Safeguard",
+          "level": 64
         },
         {
-          "name": "Vorpal Blade",
-          "level": 89
+          "name": "Enduring Soul",
+          "level": 65
         },
         {
-          "name": "Auto-Mataru",
-          "level": 90
+          "name": "Impaler's Animus",
+          "level": 66
         }
       ],
       "weak": [
@@ -16483,24 +15759,28 @@
       "lu": 34,
       "learnset": [
         {
-          "name": "Bufu",
+          "name": "Bufula",
           "level": 0
         },
         {
-          "name": "Dormina",
+          "name": "Diarama",
           "level": 0
         },
         {
-          "name": "Dia",
-          "level": 7
+          "name": "Donum Magici",
+          "level": 0
         },
         {
-          "name": "Patra",
-          "level": 9
+          "name": "Marakukaja",
+          "level": 42
         },
         {
-          "name": "Sharp Student",
-          "level": 10
+          "name": "Me Patra",
+          "level": 43
+        },
+        {
+          "name": "Boon Boost",
+          "level": 44
         }
       ],
       "weak": [
@@ -16532,28 +15812,28 @@
       "lu": 49,
       "learnset": [
         {
-          "name": "Deadly Fury",
-          "level": 0
-        },
-        {
-          "name": "Evil Smile",
-          "level": 0
-        },
-        {
-          "name": "Fear Boost",
-          "level": 0
-        },
-        {
-          "name": "Ghastly Wail",
-          "level": 54
-        },
-        {
           "name": "Mabufudyne",
-          "level": 56
+          "level": 0
         },
         {
-          "name": "Spirit Drain",
-          "level": 58
+          "name": "Makajamaon",
+          "level": 0
+        },
+        {
+          "name": "Mamudoon",
+          "level": 0
+        },
+        {
+          "name": "Null Ice",
+          "level": 68
+        },
+        {
+          "name": "Bufubarion",
+          "level": 69
+        },
+        {
+          "name": "Mudobarion",
+          "level": 70
         }
       ],
       "weak": [],
@@ -16588,20 +15868,12 @@
           "level": 0
         },
         {
-          "name": "Evil Touch",
-          "level": 0
+          "name": "Dustoma",
+          "level": 2
         },
         {
-          "name": "Tarunda",
-          "level": 11
-        },
-        {
-          "name": "Fire Wall",
-          "level": 13
-        },
-        {
-          "name": "Headbutt",
-          "level": 14
+          "name": "Poisma",
+          "level": 3
         }
       ],
       "weak": [
@@ -16634,32 +15906,28 @@
       "lu": 55,
       "learnset": [
         {
-          "name": "Kougaon",
+          "name": "Mahamabarion",
           "level": 0
         },
         {
-          "name": "Mahamaon",
+          "name": "Makarakarn",
           "level": 0
         },
         {
-          "name": "Hama Boost",
+          "name": "Mediarahan",
           "level": 0
         },
         {
-          "name": "Makougaon",
-          "level": 81
+          "name": "Energy Drain",
+          "level": 78
         },
         {
-          "name": "Angelic Grace",
-          "level": 83
+          "name": "Hamabarion",
+          "level": 79
         },
         {
-          "name": "Amrita Shower",
-          "level": 84
-        },
-        {
-          "name": "Debilitate",
-          "level": 85
+          "name": "High Light Pleroma",
+          "level": 80
         }
       ],
       "weak": [
@@ -16692,28 +15960,28 @@
       "lu": 29,
       "learnset": [
         {
-          "name": "Marin Karin",
+          "name": "Bufula",
           "level": 0
         },
         {
-          "name": "Rebellion",
+          "name": "Masukunda",
           "level": 0
         },
         {
-          "name": "Agi",
-          "level": 8
+          "name": "Spirit Drain",
+          "level": 0
         },
         {
-          "name": "Dekaja",
-          "level": 10
+          "name": "Sexy Dance",
+          "level": 39
         },
         {
-          "name": "Brainwash Boost",
-          "level": 11
+          "name": "Donum Magici",
+          "level": 40
         },
         {
-          "name": "Mudo",
-          "level": 12
+          "name": "Great Curse Siphon",
+          "level": 41
         }
       ],
       "weak": [
@@ -16747,32 +16015,16 @@
       "lu": 14,
       "learnset": [
         {
-          "name": "Mapsi",
+          "name": "Mazan",
           "level": 0
         },
         {
-          "name": "Lucky Punch",
-          "level": 0
+          "name": "Zan",
+          "level": 18
         },
         {
-          "name": "Tarukaja",
-          "level": 0
-        },
-        {
-          "name": "Ambient Aid",
-          "level": 20
-        },
-        {
-          "name": "Wind Wall",
-          "level": 21
-        },
-        {
-          "name": "Apt Pupil",
-          "level": 22
-        },
-        {
-          "name": "Psio",
-          "level": 23
+          "name": "Makajama",
+          "level": 19
         }
       ],
       "weak": [
@@ -16804,32 +16056,28 @@
       "lu": 28,
       "learnset": [
         {
-          "name": "Mabufu",
+          "name": "Fang Breaker",
           "level": 0
         },
         {
-          "name": "Sledgehammer",
+          "name": "Ice Dracostrike",
           "level": 0
         },
         {
-          "name": "Bufula",
+          "name": "Marakukaja",
           "level": 0
         },
         {
-          "name": "Null Ice",
-          "level": 26
+          "name": "Donum Gladi",
+          "level": 57
         },
         {
-          "name": "Wage War",
-          "level": 27
+          "name": "Deathbound",
+          "level": 58
         },
         {
-          "name": "Mabufula",
-          "level": 28
-        },
-        {
-          "name": "Dodge Fire",
-          "level": 29
+          "name": "Mabufudyne",
+          "level": 59
         }
       ],
       "weak": [
@@ -16865,68 +16113,28 @@
       "lu": 26,
       "learnset": [
         {
-          "name": "Tempest Slash",
+          "name": "Eternal Blizzard",
           "level": 0
         },
         {
-          "name": "Agidyne",
+          "name": "Fatal Sword",
           "level": 0
         },
         {
-          "name": "Garudyne",
+          "name": "Matarukaja",
           "level": 0
         },
         {
-          "name": "Mudoon",
-          "level": 0
-        },
-        {
-          "name": "Hamaon",
-          "level": 0
-        },
-        {
-          "name": "Megidola",
-          "level": 0
-        },
-        {
-          "name": "Deathbound",
-          "level": 0
-        },
-        {
-          "name": "Tetrakarn",
-          "level": 56
+          "name": "Hellish Mask",
+          "level": 38
         },
         {
           "name": "Blight",
-          "level": 58
+          "level": 39
         },
         {
-          "name": "Mudo Boost",
-          "level": 60
-        },
-        {
-          "name": "Hama Boost",
-          "level": 62
-        },
-        {
-          "name": "Makarakarn",
-          "level": 64
-        },
-        {
-          "name": "Mamudoon",
-          "level": 68
-        },
-        {
-          "name": "Mahamaon",
-          "level": 70
-        },
-        {
-          "name": "Vorpal Blade",
-          "level": 73
-        },
-        {
-          "name": "Megidolaon",
-          "level": 75
+          "name": "Charge",
+          "level": 40
         }
       ],
       "weak": [],
@@ -17066,32 +16274,28 @@
       "lu": 36,
       "learnset": [
         {
-          "name": "Blazing Hell",
-          "level": 0
-        },
-        {
-          "name": "Attack Master",
-          "level": 0
-        },
-        {
           "name": "Brave Blade",
           "level": 0
         },
         {
-          "name": "Fire Amp",
-          "level": 84
+          "name": "Fire Dracostrike",
+          "level": 0
         },
         {
-          "name": "Marakunda",
-          "level": 85
+          "name": "Maragidyne",
+          "level": 0
         },
         {
-          "name": "Evade Ice",
-          "level": 86
+          "name": "Mighty Cleave",
+          "level": 63
         },
         {
-          "name": "Gigantomachia",
-          "level": 88
+          "name": "Hades Blast",
+          "level": 64
+        },
+        {
+          "name": "Murderous Glee",
+          "level": 65
         }
       ],
       "weak": [
@@ -17233,32 +16437,28 @@
       "lu": 28,
       "learnset": [
         {
-          "name": "Frei",
+          "name": "Agilao",
           "level": 0
         },
         {
-          "name": "Tarunda",
+          "name": "Fire Pleroma",
           "level": 0
-        },
-        {
-          "name": "Marin Karin",
-          "level": 0
-        },
-        {
-          "name": "Dekunda",
-          "level": 18
-        },
-        {
-          "name": "Mafrei",
-          "level": 19
-        },
-        {
-          "name": "Speed Master",
-          "level": 20
         },
         {
           "name": "Matarunda",
-          "level": 21
+          "level": 0
+        },
+        {
+          "name": "Maragion",
+          "level": 44
+        },
+        {
+          "name": "Fire Block",
+          "level": 45
+        },
+        {
+          "name": "Dekunda",
+          "level": 46
         }
       ],
       "weak": [
@@ -17701,32 +16901,24 @@
       "lu": 15,
       "learnset": [
         {
+          "name": "Lunge",
+          "level": 0
+        },
+        {
+          "name": "Shockbound",
+          "level": 0
+        },
+        {
+          "name": "Charge",
+          "level": 20
+        },
+        {
           "name": "Zionga",
-          "level": 0
+          "level": 21
         },
         {
-          "name": "Assault Dive",
-          "level": 0
-        },
-        {
-          "name": "Defense Master",
-          "level": 0
-        },
-        {
-          "name": "Mazionga",
-          "level": 27
-        },
-        {
-          "name": "Elec Boost",
-          "level": 29
-        },
-        {
-          "name": "Swift Strike",
-          "level": 31
-        },
-        {
-          "name": "Shock Boost",
-          "level": 32
+          "name": "Counter",
+          "level": 22
         }
       ],
       "weak": [
@@ -17937,32 +17129,28 @@
       "lu": 36,
       "learnset": [
         {
-          "name": "Ziodyne",
+          "name": "Hell Thrust",
           "level": 0
-        },
-        {
-          "name": "Megaton Raid",
-          "level": 0
-        },
-        {
-          "name": "High Counter",
-          "level": 0
-        },
-        {
-          "name": "Elec Amp",
-          "level": 66
         },
         {
           "name": "Maziodyne",
+          "level": 0
+        },
+        {
+          "name": "Power Punch",
+          "level": 0
+        },
+        {
+          "name": "Titanomachia",
           "level": 67
         },
         {
-          "name": "Heat Up",
+          "name": "Abyssal Mask",
           "level": 68
         },
         {
-          "name": "Wild Thunder",
-          "level": 71
+          "name": "Ziobarion",
+          "level": 69
         }
       ],
       "weak": [],
@@ -17995,32 +17183,28 @@
       "lu": 27,
       "learnset": [
         {
-          "name": "Taunt",
+          "name": "Hamaon",
           "level": 0
         },
         {
-          "name": "Freila",
-          "level": 0
-        },
-        {
-          "name": "Masukunda",
+          "name": "Mana Spring",
           "level": 0
         },
         {
           "name": "Megido",
-          "level": 37
+          "level": 0
         },
         {
-          "name": "Psy Wall",
-          "level": 39
+          "name": "Resist Ice",
+          "level": 34
         },
         {
-          "name": "Concentrate",
-          "level": 40
+          "name": "Matarunda",
+          "level": 35
         },
         {
-          "name": "Growth 2",
-          "level": 42
+          "name": "Light Pleroma",
+          "level": 36
         }
       ],
       "weak": [
@@ -18054,32 +17238,28 @@
       "lu": 47,
       "learnset": [
         {
-          "name": "Agidyne",
+          "name": "Mahamaon",
           "level": 0
         },
         {
-          "name": "Hamaon",
+          "name": "Maragidyne",
           "level": 0
         },
         {
-          "name": "Burn Boost",
+          "name": "Mediarama",
           "level": 0
         },
         {
-          "name": "Fire Amp",
-          "level": 74
+          "name": "Fire Block",
+          "level": 65
         },
         {
-          "name": "Makougaon",
-          "level": 75
+          "name": "Null Dark",
+          "level": 66
         },
         {
-          "name": "Invigorate 3",
-          "level": 76
-        },
-        {
-          "name": "Inferno",
-          "level": 78
+          "name": "Light Pleroma",
+          "level": 67
         }
       ],
       "weak": [
@@ -18113,32 +17293,28 @@
       "lu": 21,
       "learnset": [
         {
+          "name": "Elec Pleroma",
+          "level": 0
+        },
+        {
           "name": "Mazionga",
           "level": 0
         },
         {
-          "name": "Tarukaja",
+          "name": "Zionga",
           "level": 0
         },
         {
-          "name": "Shock Boost",
-          "level": 0
-        },
-        {
-          "name": "Rebellion",
-          "level": 35
-        },
-        {
-          "name": "Ziodyne",
-          "level": 37
-        },
-        {
-          "name": "Elec Boost",
-          "level": 38
-        },
-        {
-          "name": "Maziodyne",
+          "name": "Masukunda",
           "level": 39
+        },
+        {
+          "name": "Concentrate",
+          "level": 40
+        },
+        {
+          "name": "Great Life Spring",
+          "level": 41
         }
       ],
       "weak": [
@@ -18170,7 +17346,11 @@
       "lu": 42,
       "learnset": [
         {
-          "name": "Freidyne",
+          "name": "Diarahan",
+          "level": 0
+        },
+        {
+          "name": "Great Mana Spring",
           "level": 0
         },
         {
@@ -18178,20 +17358,16 @@
           "level": 0
         },
         {
-          "name": "Lullaby",
-          "level": 0
-        },
-        {
-          "name": "Concentrate",
+          "name": "Marakunda",
           "level": 58
         },
         {
-          "name": "Nuke Amp",
-          "level": 60
+          "name": "Lullaby",
+          "level": 59
         },
         {
-          "name": "Mediarahan",
-          "level": 0
+          "name": "Maziodyne",
+          "level": 60
         }
       ],
       "weak": [
@@ -18492,32 +17668,32 @@
       "lu": 57,
       "learnset": [
         {
-          "name": "Mafreidyne",
+          "name": "Dekaja",
           "level": 0
         },
         {
-          "name": "Abysmal Surge",
+          "name": "Evil Melody",
           "level": 0
         },
         {
-          "name": "Brain Buster",
+          "name": "Mazanbarion",
           "level": 0
         },
         {
-          "name": "Fortify Spirit",
-          "level": 61
+          "name": "Megidolaon",
+          "level": 0
         },
         {
-          "name": "Cripple",
-          "level": 62
+          "name": "Maragibarion",
+          "level": 74
         },
         {
-          "name": "Life Aid",
-          "level": 63
+          "name": "Mabufubarion",
+          "level": 75
         },
         {
-          "name": "Debilitate",
-          "level": 65
+          "name": "Maziobarion",
+          "level": 76
         }
       ],
       "weak": [],
@@ -18848,32 +18024,28 @@
       "lu": 45,
       "learnset": [
         {
-          "name": "Deathbound",
+          "name": "Akashic Arts",
           "level": 0
         },
         {
-          "name": "Myriad Slashes",
+          "name": "Maziobarion",
           "level": 0
         },
         {
-          "name": "Bloodbath",
+          "name": "Ragnarok",
           "level": 0
         },
         {
-          "name": "Repel Nuke",
+          "name": "Hamabarion",
           "level": 83
         },
         {
-          "name": "Megidolaon",
+          "name": "Figment Slash",
           "level": 84
         },
         {
-          "name": "Angelic Grace",
+          "name": "Narukami",
           "level": 85
-        },
-        {
-          "name": "Spell Master",
-          "level": 86
         }
       ],
       "weak": [],
@@ -19004,28 +18176,24 @@
       "lu": 24,
       "learnset": [
         {
-          "name": "Rising Slash",
+          "name": "Critical Wave",
           "level": 0
         },
         {
-          "name": "Counterstrike",
+          "name": "Storm Dracostrike",
           "level": 0
         },
         {
-          "name": "Attack Master",
-          "level": 45
+          "name": "Safeguard",
+          "level": 41
         },
         {
-          "name": "Deathbound",
-          "level": 46
+          "name": "Mazionga",
+          "level": 42
         },
         {
-          "name": "Matarukaja",
-          "level": 47
-        },
-        {
-          "name": "Dodge Phys",
-          "level": 49
+          "name": "Resist Elec",
+          "level": 43
         }
       ],
       "weak": [
@@ -19126,32 +18294,32 @@
       "lu": 63,
       "learnset": [
         {
-          "name": "Mahamaon",
+          "name": "Mabufubarion",
           "level": 0
         },
         {
-          "name": "Brain Jack",
+          "name": "Mamudobarion",
           "level": 0
         },
         {
-          "name": "Triple Down",
+          "name": "Slumber Vortex",
           "level": 0
         },
         {
-          "name": "Trigger Happy",
-          "level": 70
+          "name": "Toxic Spray",
+          "level": 0
         },
         {
-          "name": "Makarakarn",
-          "level": 71
+          "name": "Poison Master",
+          "level": 75
         },
         {
-          "name": "Brainwash Boost",
-          "level": 72
+          "name": "Bufubarion",
+          "level": 76
         },
         {
-          "name": "Null Curse",
-          "level": 73
+          "name": "Great Curse Siphon",
+          "level": 77
         }
       ],
       "weak": [
@@ -19183,35 +18351,31 @@
       "lu": 71,
       "learnset": [
         {
-          "name": "Megidolaon",
+          "name": "Mahamabarion",
           "level": 0
         },
         {
-          "name": "Magarudyne",
+          "name": "Mamudobarion",
           "level": 0
         },
         {
-          "name": "Ali Dance",
+          "name": "Mediarahan",
           "level": 0
         },
         {
-          "name": "Vacuum Wave",
-          "level": 85
+          "name": "Mudobarion",
+          "level": 0
         },
         {
-          "name": "Concentrate",
-          "level": 86
-        },
-        {
-          "name": "Repel Fire",
-          "level": 87
-        },
-        {
-          "name": "Wind Amp",
+          "name": "High Dark Pleroma",
           "level": 88
         },
         {
-          "name": "Riot Gun",
+          "name": "Enduring Soul",
+          "level": 89
+        },
+        {
+          "name": "Repel Dark",
           "level": 90
         }
       ],
@@ -19306,36 +18470,32 @@
       "lu": 34,
       "learnset": [
         {
-          "name": "Triple Down",
+          "name": "Agidyne",
           "level": 0
         },
         {
-          "name": "Evil Touch",
+          "name": "God's Bow",
           "level": 0
         },
         {
-          "name": "Oni-Kagura",
+          "name": "Mahamaon",
           "level": 0
         },
         {
-          "name": "Snipe",
-          "level": 40
+          "name": "Maragion",
+          "level": 0
         },
         {
-          "name": "Maeiga",
-          "level": 41
-        },
-        {
-          "name": "Masukukaja",
-          "level": 42
-        },
-        {
-          "name": "Foul Breath",
-          "level": 43
-        },
-        {
-          "name": "Ailment Boost",
+          "name": "Mana Aid",
           "level": 44
+        },
+        {
+          "name": "Phys Block",
+          "level": 45
+        },
+        {
+          "name": "Dekaja",
+          "level": 46
         }
       ],
       "weak": [
@@ -19495,28 +18655,24 @@
       "lu": 17,
       "learnset": [
         {
-          "name": "Hysterical Slap",
-          "level": 0
-        },
-        {
-          "name": "Wage War",
-          "level": 0
-        },
-        {
           "name": "Counter",
           "level": 0
         },
         {
-          "name": "Oni-Kagura",
-          "level": 22
+          "name": "Venom Chaser",
+          "level": 0
         },
         {
-          "name": "Attack Master",
-          "level": 23
+          "name": "Pierce Armor",
+          "level": 31
         },
         {
-          "name": "Vicious Strike",
-          "level": 24
+          "name": "Resist Dark",
+          "level": 32
+        },
+        {
+          "name": "Zanma",
+          "level": 33
         }
       ],
       "weak": [
@@ -19549,28 +18705,28 @@
       "lu": 40,
       "learnset": [
         {
-          "name": "One-shot Kill",
+          "name": "Dragon Eye",
           "level": 0
         },
         {
-          "name": "Mabufudyne",
+          "name": "Fire Dracostrike",
           "level": 0
         },
         {
-          "name": "Freeze Boost",
+          "name": "Titanomachia",
           "level": 0
         },
         {
-          "name": "Drain Ice",
-          "level": 66
+          "name": "Catastrophe",
+          "level": 73
         },
         {
-          "name": "Ice Amp",
-          "level": 67
+          "name": "Great Life Spring",
+          "level": 74
         },
         {
-          "name": "Diamond Dust",
-          "level": 69
+          "name": "Phys Pleroma",
+          "level": 75
         }
       ],
       "weak": [],
@@ -19793,32 +18949,28 @@
       "lu": 39,
       "learnset": [
         {
-          "name": "Agidyne",
+          "name": "Diarahan",
           "level": 0
         },
         {
-          "name": "Makara Break",
+          "name": "Hamaon",
           "level": 0
         },
         {
-          "name": "Dekunda",
+          "name": "Wind Breath",
           "level": 0
         },
         {
-          "name": "Mediarahan",
-          "level": 59
+          "name": "Life Aid",
+          "level": 55
         },
         {
-          "name": "Last Stand",
-          "level": 60
+          "name": "Phys Block",
+          "level": 56
         },
         {
-          "name": "Wind Break",
-          "level": 61
-        },
-        {
-          "name": "Null Wind",
-          "level": 64
+          "name": "Yabusame Shot",
+          "level": 57
         }
       ],
       "weak": [
@@ -19903,32 +19055,24 @@
       "lu": 31,
       "learnset": [
         {
-          "name": "Brave Blade",
-          "level": 0
-        },
-        {
-          "name": "Charge",
-          "level": 0
-        },
-        {
-          "name": "Ziodyne",
-          "level": 0
-        },
-        {
-          "name": "Last Stand",
-          "level": 89
-        },
-        {
-          "name": "Fast Heal",
-          "level": 90
-        },
-        {
-          "name": "Elec Amp",
-          "level": 92
-        },
-        {
           "name": "Hassou Tobi",
-          "level": 94
+          "level": 0
+        },
+        {
+          "name": "Pierce Armor",
+          "level": 0
+        },
+        {
+          "name": "Puncture Punch",
+          "level": 46
+        },
+        {
+          "name": "Retaliate",
+          "level": 47
+        },
+        {
+          "name": "Restore",
+          "level": 48
         }
       ],
       "weak": [],
@@ -19962,32 +19106,32 @@
       "lu": 27,
       "learnset": [
         {
-          "name": "Brain Jack",
+          "name": "Bufudyne",
           "level": 0
         },
         {
-          "name": "Mazionga",
+          "name": "Dekaja",
           "level": 0
         },
         {
-          "name": "Megido",
+          "name": "Diarahan",
           "level": 0
         },
         {
-          "name": "Revolution",
-          "level": 45
+          "name": "Ziodyne",
+          "level": 0
         },
         {
-          "name": "Elec Break",
-          "level": 46
+          "name": "Resist Ice",
+          "level": 51
         },
         {
-          "name": "Tetra Break",
-          "level": 48
+          "name": "Ice Block",
+          "level": 52
         },
         {
-          "name": "Elec Boost",
-          "level": 49
+          "name": "Great Mana Spring",
+          "level": 53
         }
       ],
       "weak": [
@@ -20020,32 +19164,28 @@
       "lu": 37,
       "learnset": [
         {
+          "name": "Murderous Glee",
+          "level": 0
+        },
+        {
+          "name": "Pandemonic Crush",
+          "level": 0
+        },
+        {
+          "name": "Violent Rage",
+          "level": 0
+        },
+        {
           "name": "Maragidyne",
-          "level": 0
+          "level": 73
         },
         {
-          "name": "Abysmal Surge",
-          "level": 0
+          "name": "Null Fire",
+          "level": 74
         },
         {
-          "name": "God\"s Hand",
-          "level": 0
-        },
-        {
-          "name": "Evade Phys",
-          "level": 82
-        },
-        {
-          "name": "Enduring Soul",
-          "level": 83
-        },
-        {
-          "name": "Cripple",
-          "level": 84
-        },
-        {
-          "name": "Blazing Hell",
-          "level": 86
+          "name": "Brave Blade",
+          "level": 75
         }
       ],
       "weak": [
@@ -20205,32 +19345,32 @@
       "lu": 26,
       "learnset": [
         {
-          "name": "Kill Rush",
+          "name": "Charge",
           "level": 0
         },
         {
-          "name": "Zionga",
+          "name": "Elec Block",
           "level": 0
         },
         {
-          "name": "Terror Claw",
-          "level": 32
+          "name": "Fatal Sword",
+          "level": 0
         },
         {
-          "name": "Sharp Student",
-          "level": 33
+          "name": "Mazionga",
+          "level": 0
         },
         {
-          "name": "Resist Fear",
-          "level": 34
+          "name": "Dream Fist",
+          "level": 37
         },
         {
-          "name": "Swift Strike",
-          "level": 35
+          "name": "Marakukaja",
+          "level": 38
         },
         {
-          "name": "Attack Master",
-          "level": 36
+          "name": "Puncture Punch",
+          "level": 39
         }
       ],
       "weak": [
