@@ -9882,7 +9882,9 @@
     {
       "name": "Kushinada",
       "devName": "kushinada",
-      "aliases": [],
+      "aliases": [
+        "kushinadahime"
+      ],
       "inherit": "Recovery",
       "arcana": "Lovers",
       "race": "Kunitsu",
@@ -14980,7 +14982,9 @@
     {
       "name": "Queen Mab",
       "devName": "queenmab",
-      "aliases": [],
+      "aliases": [
+        "queenmedb"
+      ],
       "inherit": "Almighty",
       "arcana": "Magician",
       "race": "Night",
@@ -15098,7 +15102,9 @@
     {
       "name": "Raja Naga",
       "devName": "rajanaga",
-      "aliases": [],
+      "aliases": [
+        "nagaraja"
+      ],
       "inherit": "Elec",
       "arcana": "Temperance",
       "race": "Snake",
@@ -17475,7 +17481,9 @@
     {
       "name": "Suzaku",
       "devName": "suzaku",
-      "aliases": [],
+      "aliases": [
+        "zhuque"
+      ],
       "inherit": "Nuke",
       "arcana": "Sun",
       "race": "Avian",
