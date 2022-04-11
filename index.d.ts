@@ -45,7 +45,6 @@ export class Demon {
     drain: Element[];
     repel: Element[];
     game: Game;
-    evolution:Demon | null;
     image: Buffer;
     isPersona(): this is Persona;
 }
@@ -54,6 +53,7 @@ export class Persona extends Demon {
     constructor(data: PersonaData)
     user: string;
     stage: 1 | 2 | 3;
+    evolution: Persona | null;
 }
 
 export class BaseSkill {

@@ -1330,7 +1330,7 @@
       "aliases": [],
       "inherit": "Almighty",
       "arcana": "Fortune",
-      "race": "Persona",
+      "race": "Picaro",
       "level": 42,
       "st": 36,
       "ma": 23,
@@ -1428,7 +1428,9 @@
       "null": [],
       "drain": [],
       "repel": [],
-      "game": "p5"
+      "game": "p5",
+      "user": "P5 Protagonist",
+      "stage": 1
     },
     {
       "name": "Artemisia",
@@ -1700,7 +1702,7 @@
       "aliases": [],
       "inherit": "Almighty",
       "arcana": "Fortune",
-      "race": "Persona",
+      "race": "Picaro",
       "level": 62,
       "st": 46,
       "ma": 46,
@@ -1870,90 +1872,65 @@
     {
       "name": "Athena",
       "devName": "athena",
-      "aliases": [],
-      "inherit": "Recovery",
+      "aliases": [
+        "pallasathena"
+      ],
+      "inherit": "Almighty",
       "arcana": "Chariot",
       "race": "Persona",
-      "level": 29,
-      "st": 19,
-      "ma": 13,
-      "en": 25,
-      "ag": 18,
-      "lu": 14,
+      "level": 46,
+      "st": 33,
+      "ma": 27,
+      "en": 29,
+      "ag": 29,
+      "lu": 27,
       "learnset": [
         {
-          "name": "Kill Rush",
+          "name": "Akashic Arts",
           "level": 0
         },
         {
-          "name": "Swift Strike",
+          "name": "Rising Slash",
           "level": 0
-        },
-        {
-          "name": "Sukukaja",
-          "level": 0
-        },
-        {
-          "name": "Rakukaja",
-          "level": 32
-        },
-        {
-          "name": "Fatal End",
-          "level": 35
-        },
-        {
-          "name": "Tarukaja",
-          "level": 36
-        },
-        {
-          "name": "Dekunda",
-          "level": 42
-        },
-        {
-          "name": "Masukukaja",
-          "level": 47
-        },
-        {
-          "name": "Heat Wave",
-          "level": 51
         },
         {
           "name": "Marakukaja",
-          "level": 56
+          "level": 0
         },
         {
           "name": "Diarahan",
-          "level": 59
+          "level": 47
         },
         {
           "name": "Matarukaja",
-          "level": 60
+          "level": 48
+        },
+        {
+          "name": "Auto-Maraku",
+          "level": 50
         },
         {
           "name": "Samarecarm",
-          "level": 65
+          "level": 51
         },
         {
-          "name": "Akashic Arts",
-          "level": 73
-        },
-        {
-          "name": "God\"s Hand",
-          "level": 77
+          "name": "Megaton Raid",
+          "level": 52
         }
       ],
       "evoMove": null,
       "weak": [
         "Elec"
       ],
-      "resist": [],
+      "resist": [
+        "Phys"
+      ],
       "null": [
-        "Phys",
-        "Curse"
+        "Gun"
       ],
       "drain": [],
       "repel": [],
-      "game": "p3",
+      "game": "p5",
       "user": "Aigis",
       "stage": 2
     },
@@ -1963,7 +1940,7 @@
       "aliases": [],
       "inherit": "Almighty",
       "arcana": "Chariot",
-      "race": "Persona",
+      "race": "Picaro",
       "level": 50,
       "st": 35,
       "ma": 30,
@@ -7251,7 +7228,9 @@
       ],
       "drain": [],
       "repel": [],
-      "game": "p5"
+      "game": "p5",
+      "user": "P4 Protgaonist",
+      "stage": 1
     },
     {
       "name": "Izanagi-no-Okami",
@@ -7315,7 +7294,9 @@
       "null": [],
       "drain": [],
       "repel": [],
-      "game": "p5"
+      "game": "p5",
+      "user": "P4 Protagonist",
+      "stage": 2
     },
     {
       "name": "Izanagi-no-Okami Picaro",
@@ -7323,7 +7304,7 @@
       "aliases": [],
       "inherit": "Almighty",
       "arcana": "World",
-      "race": "Persona",
+      "race": "Picaro",
       "level": 89,
       "st": 54,
       "ma": 61,
@@ -7387,7 +7368,7 @@
       "aliases": [],
       "inherit": "Almighty",
       "arcana": "Fool",
-      "race": "Persona",
+      "race": "Picaro",
       "level": 23,
       "st": 16,
       "ma": 15,
@@ -8022,7 +8003,9 @@
       ],
       "drain": [],
       "repel": [],
-      "game": "p5"
+      "game": "p5",
+      "user": "Marie",
+      "stage": 1
     },
     {
       "name": "Kaguya Picaro",
@@ -8030,7 +8013,7 @@
       "aliases": [],
       "inherit": "Almighty",
       "arcana": "Moon",
-      "race": "Persona",
+      "race": "Picaro",
       "level": 25,
       "st": 17,
       "ma": 20,
@@ -10629,7 +10612,9 @@
       ],
       "drain": [],
       "repel": [],
-      "game": "p5"
+      "game": "p5",
+      "user": "Tohru Adachi",
+      "stage": 2
     },
     {
       "name": "Magatsu-Izanagi Picaro",
@@ -10637,7 +10622,7 @@
       "aliases": [],
       "inherit": "Almighty",
       "arcana": "Tower",
-      "race": "Persona",
+      "race": "Picaro",
       "level": 48,
       "st": 40,
       "ma": 38,
@@ -11215,7 +11200,9 @@
       "repel": [
         "Bless"
       ],
-      "game": "p5"
+      "game": "p5",
+      "user": "P3 Protagonist",
+      "stage": 2
     },
     {
       "name": "Messiah Picaro",
@@ -11223,7 +11210,7 @@
       "aliases": [],
       "inherit": "Almighty",
       "arcana": "Judgement",
-      "race": "Persona",
+      "race": "Picaro",
       "level": 90,
       "st": 56,
       "ma": 56,
@@ -13132,7 +13119,9 @@
       "null": [],
       "drain": [],
       "repel": [],
-      "game": "p5"
+      "game": "p5",
+      "user": "P3 Protagonist",
+      "stage": 1
     },
     {
       "name": "Orpheus F",
@@ -13194,7 +13183,9 @@
       "null": [],
       "drain": [],
       "repel": [],
-      "game": "p5"
+      "game": "p5",
+      "user": "P3 Protagonist",
+      "stage": 1
     },
     {
       "name": "Orpheus Picaro",
@@ -13202,7 +13193,7 @@
       "aliases": [],
       "inherit": "Almighty",
       "arcana": "Fool",
-      "race": "Persona",
+      "race": "Picaro",
       "level": 20,
       "st": 19,
       "ma": 19,
@@ -13261,7 +13252,7 @@
       ],
       "inherit": "Almighty",
       "arcana": "Fool",
-      "race": "Persona",
+      "race": "Picaro",
       "level": 13,
       "st": 9,
       "ma": 11,
@@ -13347,7 +13338,9 @@
       "null": [],
       "drain": [],
       "repel": [],
-      "game": "p5"
+      "game": "p5",
+      "user": "P3 Protagonist",
+      "stage": 3
     },
     {
       "name": "Orthrus",
@@ -13645,69 +13638,6 @@
       "game": "p3",
       "user": "Aigis",
       "stage": 1
-    },
-    {
-      "name": "Pallas Athena",
-      "devName": "pallasathena",
-      "aliases": [
-        "athena"
-      ],
-      "inherit": "Almighty",
-      "arcana": "Chariot",
-      "race": "Persona",
-      "level": 46,
-      "st": 33,
-      "ma": 27,
-      "en": 29,
-      "ag": 29,
-      "lu": 27,
-      "learnset": [
-        {
-          "name": "Akashic Arts",
-          "level": 0
-        },
-        {
-          "name": "Rising Slash",
-          "level": 0
-        },
-        {
-          "name": "Marakukaja",
-          "level": 0
-        },
-        {
-          "name": "Diarahan",
-          "level": 47
-        },
-        {
-          "name": "Matarukaja",
-          "level": 48
-        },
-        {
-          "name": "Auto-Maraku",
-          "level": 50
-        },
-        {
-          "name": "Samarecarm",
-          "level": 51
-        },
-        {
-          "name": "Megaton Raid",
-          "level": 52
-        }
-      ],
-      "evoMove": null,
-      "weak": [
-        "Elec"
-      ],
-      "resist": [
-        "Phys"
-      ],
-      "null": [
-        "Gun"
-      ],
-      "drain": [],
-      "repel": [],
-      "game": "p5"
     },
     {
       "name": "Pandora",
@@ -14930,7 +14860,9 @@
       ],
       "drain": [],
       "repel": [],
-      "game": "p5"
+      "game": "p5",
+      "user": "P5 Protagonist",
+      "stage": 3
     },
     {
       "name": "Raphael",
@@ -15579,7 +15511,9 @@
         "Curse"
       ],
       "repel": [],
-      "game": "p5"
+      "game": "p5",
+      "user": "P5 Protagonist",
+      "stage": 2
     },
     {
       "name": "Scathach",
@@ -17580,7 +17514,9 @@
       "repel": [
         "Curse"
       ],
-      "game": "p5"
+      "game": "p5",
+      "user": "Margaret",
+      "stage": 1
     },
     {
       "name": "Thanatos Picaro",
@@ -17588,7 +17524,7 @@
       "aliases": [],
       "inherit": "Almighty",
       "arcana": "Death",
-      "race": "Persona",
+      "race": "Picaro",
       "level": 69,
       "st": 45,
       "ma": 51,
@@ -18302,7 +18238,9 @@
       "repel": [
         "Curse"
       ],
-      "game": "p5"
+      "game": "p5",
+      "user": "Sho Minazuki",
+      "stage": 1
     },
     {
       "name": "Tsukiyomi Picaro",
@@ -18312,7 +18250,7 @@
       ],
       "inherit": "Almighty",
       "arcana": "Moon",
-      "race": "Persona",
+      "race": "Picaro",
       "level": 55,
       "st": 41,
       "ma": 35,
