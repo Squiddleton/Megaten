@@ -88,13 +88,13 @@
         }
       ],
       "weak": [
-        "Wind"
+        "Ice",
+        "Curse"
       ],
-      "resist": [
-        "Gun",
+      "resist": [],
+      "null": [
         "Elec"
       ],
-      "null": [],
       "drain": [],
       "repel": [],
       "game": "smt5"
@@ -309,15 +309,12 @@
       "weak": [
         "Bless"
       ],
-      "resist": [
-        "Psy",
-        "Nuke"
-      ],
+      "resist": [],
       "null": [],
-      "drain": [],
-      "repel": [
+      "drain": [
         "Curse"
       ],
+      "repel": [],
       "game": "smt5"
     },
     {
@@ -365,21 +362,14 @@
           "level": 84
         }
       ],
-      "weak": [
-        "Fire",
+      "weak": [],
+      "resist": [
+        "Bless",
         "Curse"
       ],
-      "resist": [],
-      "null": [
-        "Psy"
-      ],
-      "drain": [
-        "Ice"
-      ],
-      "repel": [
-        "Phys",
-        "Gun"
-      ],
+      "null": [],
+      "drain": [],
+      "repel": [],
       "game": "smt5"
     },
     {
@@ -532,13 +522,13 @@
         }
       ],
       "weak": [
-        "Psy"
+        "Force"
       ],
       "resist": [],
-      "null": [],
-      "drain": [
-        "Fire"
+      "null": [
+        "Elec"
       ],
+      "drain": [],
       "repel": [],
       "game": "smt5"
     },
@@ -584,13 +574,16 @@
         }
       ],
       "weak": [
-        "Elec"
+        "Force",
+        "Curse"
       ],
       "resist": [],
-      "null": [],
-      "drain": [
-        "Ice"
+      "null": [
+        "Ice",
+        "Elec",
+        "Bless"
       ],
+      "drain": [],
       "repel": [],
       "game": "smt5"
     },
@@ -748,15 +741,12 @@
         }
       ],
       "weak": [
-        "Fire",
+        "Elec",
         "Bless"
       ],
-      "resist": [
-        "Ice",
-        "Psy"
-      ],
+      "resist": [],
       "null": [
-        "Curse"
+        "Ice"
       ],
       "drain": [],
       "repel": [],
@@ -796,12 +786,10 @@
         }
       ],
       "weak": [
-        "Gun",
+        "Force",
         "Curse"
       ],
-      "resist": [
-        "Elec"
-      ],
+      "resist": [],
       "null": [
         "Bless"
       ],
@@ -850,14 +838,14 @@
           "level": 44
         }
       ],
-      "weak": [],
+      "weak": [
+        "Force"
+      ],
       "resist": [
-        "Gun",
-        "Psy"
+        "Curse"
       ],
       "null": [
-        "Bless",
-        "Curse"
+        "Bless"
       ],
       "drain": [],
       "repel": [],
@@ -901,17 +889,14 @@
         }
       ],
       "weak": [
-        "Gun",
-        "Nuke"
+        "Force"
       ],
-      "resist": [
+      "resist": [],
+      "null": [
         "Elec"
       ],
-      "null": [],
       "drain": [],
-      "repel": [
-        "Wind"
-      ],
+      "repel": [],
       "game": "smt5"
     },
     {
@@ -948,8 +933,7 @@
         }
       ],
       "weak": [
-        "Fire",
-        "Elec"
+        "Fire"
       ],
       "resist": [
         "Ice"
@@ -1001,19 +985,20 @@
         }
       ],
       "weak": [
-        "Psy",
-        "Nuke"
+        "Fire",
+        "Ice",
+        "Elec",
+        "Force"
       ],
       "resist": [
         "Bless",
         "Curse"
       ],
-      "null": [],
-      "drain": [],
-      "repel": [
-        "Phys",
-        "Gun"
+      "null": [
+        "Phys"
       ],
+      "drain": [],
+      "repel": [],
       "game": "smt5"
     },
     {
@@ -1775,15 +1760,17 @@
         }
       ],
       "weak": [
-        "Psy"
+        "Ice"
       ],
-      "resist": [],
+      "resist": [
+        "Curse"
+      ],
       "null": [
-        "Fire"
+        "Bless"
       ],
       "drain": [],
       "repel": [
-        "Nuke"
+        "Fire"
       ],
       "game": "smt5"
     },
@@ -1828,18 +1815,16 @@
           "level": 57
         }
       ],
-      "weak": [],
-      "resist": [
-        "Phys",
+      "weak": [
+        "Ice"
+      ],
+      "resist": [],
+      "null": [
+        "Bless",
         "Curse"
       ],
-      "null": [
-        "Gun"
-      ],
       "drain": [],
-      "repel": [
-        "Fire"
-      ],
+      "repel": [],
       "game": "smt5"
     },
     {
@@ -2014,9 +1999,11 @@
       "weak": [
         "Fire"
       ],
-      "resist": [],
+      "resist": [
+        "Ice"
+      ],
       "null": [
-        "Wind"
+        "Bless"
       ],
       "drain": [],
       "repel": [],
@@ -2071,9 +2058,7 @@
         "Fire"
       ],
       "drain": [],
-      "repel": [
-        "Wind"
-      ],
+      "repel": [],
       "game": "smt5"
     },
     {
@@ -2121,16 +2106,20 @@
           "level": 96
         }
       ],
-      "weak": [],
+      "weak": [
+        "Ice"
+      ],
       "resist": [
         "Fire",
+        "Force"
+      ],
+      "null": [
         "Bless"
       ],
-      "null": [],
-      "drain": [
-        "Wind"
+      "drain": [],
+      "repel": [
+        "Elec"
       ],
-      "repel": [],
       "game": "smt5"
     },
     {
@@ -2173,9 +2162,7 @@
       "weak": [
         "Bless"
       ],
-      "resist": [
-        "Fire"
-      ],
+      "resist": [],
       "null": [
         "Curse"
       ],
@@ -2225,14 +2212,12 @@
         }
       ],
       "weak": [
-        "Wind",
+        "Force",
         "Curse"
       ],
-      "resist": [
-        "Gun",
-        "Elec"
-      ],
+      "resist": [],
       "null": [
+        "Elec",
         "Bless"
       ],
       "drain": [],
@@ -2285,16 +2270,19 @@
         }
       ],
       "weak": [
+        "Force"
+      ],
+      "resist": [
+        "Ice",
         "Bless"
       ],
-      "resist": [],
-      "null": [],
-      "drain": [
-        "Fire"
-      ],
-      "repel": [
+      "null": [
         "Curse"
       ],
+      "drain": [
+        "Elec"
+      ],
+      "repel": [],
       "game": "smt5"
     },
     {
@@ -2342,10 +2330,13 @@
           "level": 96
         }
       ],
-      "weak": [],
+      "weak": [
+        "Ice"
+      ],
       "resist": [],
       "null": [
-        "Phys",
+        "Fire",
+        "Force",
         "Curse"
       ],
       "drain": [],
@@ -2394,18 +2385,19 @@
         }
       ],
       "weak": [
-        "Fire"
+        "Fire",
+        "Bless"
       ],
       "resist": [
-        "Ice",
-        "Elec",
-        "Nuke"
+        "Phys",
+        "Elec"
       ],
-      "null": [],
-      "drain": [],
-      "repel": [
+      "null": [
+        "Ice",
         "Curse"
       ],
+      "drain": [],
+      "repel": [],
       "game": "smt5"
     },
     {
@@ -2449,11 +2441,10 @@
         "Ice"
       ],
       "resist": [
-        "Fire"
+        "Fire",
+        "Curse"
       ],
-      "null": [
-        "Gun"
-      ],
+      "null": [],
       "drain": [],
       "repel": [],
       "game": "smt5"
@@ -2488,12 +2479,13 @@
         }
       ],
       "weak": [
-        "Elec"
+        "Elec",
+        "Bless"
       ],
-      "resist": [
+      "resist": [],
+      "null": [
         "Curse"
       ],
-      "null": [],
       "drain": [],
       "repel": [],
       "game": "smt5"
@@ -2546,14 +2538,12 @@
       "weak": [
         "Ice"
       ],
-      "resist": [
-        "Bless",
-        "Curse"
+      "resist": [],
+      "null": [
+        "Fire",
+        "Bless"
       ],
-      "null": [],
-      "drain": [
-        "Fire"
-      ],
+      "drain": [],
       "repel": [],
       "game": "smt5"
     },
@@ -2602,16 +2592,17 @@
           "level": 47
         }
       ],
-      "weak": [],
-      "resist": [],
-      "null": [
-        "Nuke"
+      "weak": [
+        "Bless"
       ],
-      "drain": [
+      "resist": [
+        "Fire"
+      ],
+      "null": [
         "Ice"
       ],
+      "drain": [],
       "repel": [
-        "Fire",
         "Curse"
       ],
       "game": "smt5"
@@ -2654,18 +2645,13 @@
         }
       ],
       "weak": [
-        "Elec",
-        "Psy",
+        "Fire",
         "Bless"
       ],
       "resist": [
-        "Phys",
-        "Gun",
-        "Ice"
+        "Phys"
       ],
-      "null": [
-        "Curse"
-      ],
+      "null": [],
       "drain": [],
       "repel": [],
       "game": "smt5"
@@ -2716,17 +2702,17 @@
         }
       ],
       "weak": [
-        "Fire"
+        "Force"
       ],
       "resist": [
         "Bless",
         "Curse"
       ],
       "null": [],
-      "drain": [
+      "drain": [],
+      "repel": [
         "Ice"
       ],
-      "repel": [],
       "game": "smt5"
     },
     {
@@ -2767,11 +2753,9 @@
         }
       ],
       "weak": [
-        "Nuke"
+        "Fire"
       ],
-      "resist": [
-        "Psy"
-      ],
+      "resist": [],
       "null": [
         "Curse"
       ],
@@ -2882,16 +2866,13 @@
         }
       ],
       "weak": [
-        "Fire",
-        "Nuke"
+        "Force"
       ],
-      "resist": [
-        "Curse"
+      "resist": [],
+      "null": [
+        "Elec"
       ],
-      "null": [],
-      "drain": [
-        "Ice"
-      ],
+      "drain": [],
       "repel": [],
       "game": "smt5"
     },
@@ -3031,7 +3012,7 @@
         }
       ],
       "weak": [
-        "Wind"
+        "Force"
       ],
       "resist": [
         "Elec"
@@ -3581,14 +3562,12 @@
       "weak": [
         "Ice"
       ],
-      "resist": [
-        "Nuke"
-      ],
+      "resist": [],
       "null": [],
-      "drain": [
+      "drain": [],
+      "repel": [
         "Fire"
       ],
-      "repel": [],
       "game": "smt5"
     },
     {
@@ -3635,15 +3614,14 @@
         }
       ],
       "weak": [
-        "Bless"
+        "Ice"
       ],
       "resist": [],
-      "null": [
-        "Fire",
-        "Curse"
-      ],
+      "null": [],
       "drain": [],
-      "repel": [],
+      "repel": [
+        "Fire"
+      ],
       "game": "smt5",
       "user": "Koromaru",
       "stage": 1
@@ -3690,19 +3668,13 @@
         }
       ],
       "weak": [
-        "Fire",
         "Bless"
       ],
-      "resist": [
-        "Gun"
-      ],
+      "resist": [],
       "null": [
-        "Elec"
-      ],
-      "drain": [
-        "Ice",
         "Curse"
       ],
+      "drain": [],
       "repel": [],
       "game": "smt5"
     },
@@ -3752,16 +3724,15 @@
         }
       ],
       "weak": [
-        "Wind",
-        "Curse"
+        "Force"
       ],
-      "resist": [],
-      "null": [
-        "Ice"
-      ],
-      "drain": [
+      "resist": [
         "Fire"
       ],
+      "null": [
+        "Elec"
+      ],
+      "drain": [],
       "repel": [],
       "game": "smt5"
     },
@@ -3811,17 +3782,17 @@
         }
       ],
       "weak": [
-        "Nuke"
+        "Fire",
+        "Elec"
       ],
-      "resist": [
-        "Phys",
-        "Gun"
-      ],
+      "resist": [],
       "null": [
-        "Psy"
+        "Ice"
       ],
       "drain": [],
-      "repel": [],
+      "repel": [
+        "Force"
+      ],
       "game": "smt5"
     },
     {
@@ -3928,12 +3899,11 @@
         }
       ],
       "weak": [
-        "Ice",
-        "Nuke"
+        "Ice"
       ],
       "resist": [],
       "null": [
-        "Wind"
+        "Fire"
       ],
       "drain": [],
       "repel": [],
@@ -3984,16 +3954,13 @@
         "Elec"
       ],
       "resist": [
-        "Phys",
-        "Gun"
+        "Phys"
       ],
       "null": [
-        "Bless"
+        "Force"
       ],
       "drain": [],
-      "repel": [
-        "Wind"
-      ],
+      "repel": [],
       "game": "smt5"
     },
     {
@@ -4092,13 +4059,12 @@
         }
       ],
       "weak": [
-        "Curse"
+        "Fire"
       ],
-      "resist": [
-        "Phys"
-      ],
+      "resist": [],
       "null": [
-        "Bless"
+        "Bless",
+        "Curse"
       ],
       "drain": [],
       "repel": [],
@@ -4141,13 +4107,15 @@
           "level": 49
         }
       ],
-      "weak": [],
+      "weak": [
+        "Ice",
+        "Bless"
+      ],
       "resist": [
+        "Phys",
         "Fire"
       ],
-      "null": [
-        "Gun"
-      ],
+      "null": [],
       "drain": [],
       "repel": [],
       "game": "smt5"
@@ -4190,17 +4158,14 @@
         }
       ],
       "weak": [
-        "Phys"
+        "Bless"
       ],
-      "resist": [
-        "Nuke",
+      "resist": [],
+      "null": [
         "Curse"
       ],
-      "null": [],
       "drain": [],
-      "repel": [
-        "Fire"
-      ],
+      "repel": [],
       "game": "smt5"
     },
     {
@@ -4372,16 +4337,17 @@
           "level": 47
         }
       ],
-      "weak": [],
-      "resist": [],
-      "null": [
-        "Curse",
-        "Bless"
+      "weak": [
+        "Ice"
       ],
-      "drain": [],
-      "repel": [
+      "resist": [
         "Elec"
       ],
+      "null": [
+        "Fire"
+      ],
+      "drain": [],
+      "repel": [],
       "game": "smt5"
     },
     {
@@ -4476,18 +4442,16 @@
         }
       ],
       "weak": [
-        "Elec"
-      ],
-      "resist": [
+        "Force",
         "Curse"
       ],
+      "resist": [],
       "null": [
+        "Elec",
         "Bless"
       ],
       "drain": [],
-      "repel": [
-        "Nuke"
-      ],
+      "repel": [],
       "game": "smt5"
     },
     {
@@ -4531,11 +4495,11 @@
         "Elec"
       ],
       "resist": [
-        "Gun",
-        "Fire",
         "Curse"
       ],
-      "null": [],
+      "null": [
+        "Fire"
+      ],
       "drain": [],
       "repel": [],
       "game": "smt5"
@@ -4653,19 +4617,16 @@
           "level": 63
         }
       ],
-      "weak": [],
-      "resist": [
+      "weak": [
+        "Ice",
         "Elec"
       ],
+      "resist": [
+        "Phys"
+      ],
       "null": [],
-      "drain": [
-        "Fire",
-        "Nuke"
-      ],
-      "repel": [
-        "Phys",
-        "Gun"
-      ],
+      "drain": [],
+      "repel": [],
       "game": "smt5"
     },
     {
@@ -4713,11 +4674,10 @@
         "Ice"
       ],
       "resist": [
-        "Wind",
-        "Nuke"
+        "Curse"
       ],
       "null": [
-        "Bless"
+        "Fire"
       ],
       "drain": [],
       "repel": [],
@@ -4765,11 +4725,12 @@
         }
       ],
       "weak": [
-        "Elec"
+        "Elec",
+        "Bless"
       ],
       "resist": [],
       "null": [
-        "Psy"
+        "Curse"
       ],
       "drain": [
         "Ice"
@@ -4815,12 +4776,12 @@
         }
       ],
       "weak": [
-        "Elec"
+        "Elec",
+        "Curse"
       ],
       "resist": [],
       "null": [
-        "Fire",
-        "Wind"
+        "Force"
       ],
       "drain": [],
       "repel": [],
@@ -4868,12 +4829,12 @@
         }
       ],
       "weak": [
-        "Nuke"
+        "Curse"
       ],
-      "resist": [
-        "Phys"
+      "resist": [],
+      "null": [
+        "Bless"
       ],
-      "null": [],
       "drain": [],
       "repel": [],
       "game": "smt5"
@@ -4922,13 +4883,11 @@
       "weak": [
         "Elec"
       ],
-      "resist": [
-        "Gun"
+      "resist": [],
+      "null": [
+        "Force"
       ],
-      "null": [],
-      "drain": [
-        "Wind"
-      ],
+      "drain": [],
       "repel": [],
       "game": "smt5"
     },
@@ -4977,14 +4936,17 @@
           "level": 90
         }
       ],
-      "weak": [],
-      "resist": [],
-      "null": [
-        "Psy"
+      "weak": [
+        "Elec"
       ],
-      "drain": [
+      "resist": [
+        "Fire"
+      ],
+      "null": [
+        "Ice",
         "Bless"
       ],
+      "drain": [],
       "repel": [],
       "game": "smt5"
     },
@@ -5030,16 +4992,16 @@
         }
       ],
       "weak": [
-        "Psy"
+        "Elec",
+        "Curse"
       ],
       "resist": [
-        "Phys",
-        "Gun"
+        "Phys"
       ],
-      "null": [],
-      "drain": [
-        "Wind"
+      "null": [
+        "Force"
       ],
+      "drain": [],
       "repel": [],
       "game": "smt5"
     },
@@ -5145,15 +5107,17 @@
           "level": 67
         }
       ],
-      "weak": [],
-      "resist": [
-        "Wind"
+      "weak": [
+        "Elec"
       ],
-      "null": [],
-      "drain": [],
-      "repel": [
+      "resist": [
         "Bless"
       ],
+      "null": [],
+      "drain": [
+        "Force"
+      ],
+      "repel": [],
       "game": "smt5"
     },
     {
@@ -5196,11 +5160,9 @@
         }
       ],
       "weak": [
-        "Elec"
+        "Fire"
       ],
-      "resist": [
-        "Psy"
-      ],
+      "resist": [],
       "null": [
         "Ice"
       ],
@@ -5252,18 +5214,17 @@
         }
       ],
       "weak": [
+        "Elec",
+        "Force",
         "Bless"
       ],
       "resist": [
-        "Fire"
-      ],
-      "null": [
         "Curse"
       ],
+      "null": [],
       "drain": [],
       "repel": [
-        "Phys",
-        "Gun"
+        "Phys"
       ],
       "game": "smt5"
     },
@@ -5648,16 +5609,14 @@
         }
       ],
       "weak": [
-        "Ice"
+        "Elec"
       ],
-      "resist": [
-        "Gun",
-        "Psy",
-        "Bless"
-      ],
+      "resist": [],
       "null": [],
       "drain": [],
-      "repel": [],
+      "repel": [
+        "Force"
+      ],
       "game": "smt5"
     },
     {
@@ -5810,13 +5769,12 @@
         }
       ],
       "weak": [
-        "Wind"
+        "Force"
       ],
-      "resist": [
-        "Psy",
-        "Bless"
+      "resist": [],
+      "null": [
+        "Curse"
       ],
-      "null": [],
       "drain": [],
       "repel": [],
       "game": "smt5"
@@ -6038,11 +5996,9 @@
         }
       ],
       "weak": [
-        "Bless"
+        "Force"
       ],
-      "resist": [
-        "Gun"
-      ],
+      "resist": [],
       "null": [
         "Curse"
       ],
@@ -6092,16 +6048,18 @@
         }
       ],
       "weak": [
-        "Bless"
+        "Ice"
       ],
       "resist": [
-        "Wind"
+        "Bless",
+        "Curse"
       ],
-      "null": [],
+      "null": [
+        "Fire",
+        "Force"
+      ],
       "drain": [],
-      "repel": [
-        "Fire"
-      ],
+      "repel": [],
       "game": "smt5"
     },
     {
@@ -6292,12 +6250,10 @@
         }
       ],
       "weak": [
-        "Gun",
-        "Nuke"
+        "Ice"
       ],
       "resist": [
-        "Elec",
-        "Wind"
+        "Force"
       ],
       "null": [],
       "drain": [],
@@ -6475,12 +6431,14 @@
         }
       ],
       "weak": [
-        "Fire"
+        "Force",
+        "Curse"
       ],
-      "resist": [],
-      "null": [
+      "resist": [
+        "Fire",
         "Elec"
       ],
+      "null": [],
       "drain": [],
       "repel": [
         "Bless"
@@ -6525,15 +6483,14 @@
         }
       ],
       "weak": [
-        "Gun",
         "Ice"
       ],
       "resist": [],
-      "null": [],
-      "drain": [],
-      "repel": [
+      "null": [
         "Fire"
       ],
+      "drain": [],
+      "repel": [],
       "game": "smt5"
     },
     {
@@ -6574,11 +6531,10 @@
         }
       ],
       "weak": [
-        "Fire",
-        "Bless"
+        "Elec"
       ],
       "resist": [
-        "Elec"
+        "Force"
       ],
       "null": [],
       "drain": [],
@@ -6619,13 +6575,14 @@
         }
       ],
       "weak": [
-        "Wind"
+        "Ice",
+        "Bless"
       ],
-      "resist": [],
-      "null": [
-        "Gun",
-        "Fire",
+      "resist": [
         "Curse"
+      ],
+      "null": [
+        "Fire"
       ],
       "drain": [],
       "repel": [],
@@ -6743,18 +6700,14 @@
         }
       ],
       "weak": [
-        "Ice"
+        "Bless"
       ],
       "resist": [
-        "Fire",
-        "Bless",
-        "Curse"
+        "Fire"
       ],
       "null": [],
       "drain": [],
-      "repel": [
-        "Wind"
-      ],
+      "repel": [],
       "game": "smt5"
     },
     {
@@ -6799,11 +6752,13 @@
         }
       ],
       "weak": [
-        "Wind"
+        "Force",
+        "Curse"
       ],
       "resist": [],
       "null": [
-        "Elec"
+        "Elec",
+        "Bless"
       ],
       "drain": [],
       "repel": [],
@@ -6851,11 +6806,13 @@
         }
       ],
       "weak": [
-        "Psy"
+        "Curse"
       ],
-      "resist": [],
+      "resist": [
+        "Fire"
+      ],
       "null": [
-        "Bless"
+        "Elec"
       ],
       "drain": [],
       "repel": [],
@@ -6905,11 +6862,13 @@
         }
       ],
       "weak": [
-        "Elec"
+        "Curse"
       ],
-      "resist": [],
+      "resist": [
+        "Fire"
+      ],
       "null": [
-        "Wind"
+        "Elec"
       ],
       "drain": [],
       "repel": [],
@@ -7223,10 +7182,10 @@
         "Fire"
       ],
       "resist": [],
-      "null": [
+      "null": [],
+      "drain": [
         "Ice"
       ],
-      "drain": [],
       "repel": [],
       "game": "smt5"
     },
@@ -7266,14 +7225,13 @@
         }
       ],
       "weak": [
-        "Ice",
-        "Wind"
+        "Ice"
       ],
       "resist": [],
-      "null": [],
-      "drain": [
+      "null": [
         "Fire"
       ],
+      "drain": [],
       "repel": [],
       "game": "smt5"
     },
@@ -7319,17 +7277,15 @@
         }
       ],
       "weak": [
-        "Nuke"
+        "Elec",
+        "Curse"
       ],
-      "resist": [
-        "Ice",
-        "Bless"
-      ],
+      "resist": [],
       "null": [],
-      "drain": [],
-      "repel": [
-        "Wind"
+      "drain": [
+        "Force"
       ],
+      "repel": [],
       "game": "smt5"
     },
     {
@@ -7378,13 +7334,14 @@
         }
       ],
       "weak": [
-        "Curse"
+        "Fire"
       ],
       "resist": [
-        "Phys",
         "Bless"
       ],
-      "null": [],
+      "null": [
+        "Ice"
+      ],
       "drain": [],
       "repel": [],
       "game": "smt5"
@@ -7863,12 +7820,11 @@
         }
       ],
       "weak": [
-        "Nuke"
+        "Bless"
       ],
       "resist": [],
       "null": [
-        "Gun",
-        "Psy"
+        "Curse"
       ],
       "drain": [],
       "repel": [],
@@ -8001,17 +7957,19 @@
           "level": 79
         }
       ],
-      "weak": [],
+      "weak": [
+        "Ice",
+        "Force"
+      ],
       "resist": [
-        "Curse"
+        "Bless"
       ],
       "null": [
         "Fire"
       ],
       "drain": [],
       "repel": [
-        "Psy",
-        "Gun"
+        "Curse"
       ],
       "game": "smt5"
     },
@@ -8455,7 +8413,7 @@
         }
       ],
       "weak": [
-        "Elec"
+        "Force"
       ],
       "resist": [
         "Ice"
@@ -8503,13 +8461,13 @@
         }
       ],
       "weak": [
-        "Fire"
+        "Elec"
       ],
       "resist": [
         "Bless"
       ],
       "null": [
-        "Wind"
+        "Force"
       ],
       "drain": [],
       "repel": [],
@@ -8556,7 +8514,10 @@
           "level": 36
         }
       ],
-      "weak": [],
+      "weak": [
+        "Fire",
+        "Curse"
+      ],
       "resist": [],
       "null": [
         "Bless"
@@ -8608,15 +8569,15 @@
           "level": 52
         }
       ],
-      "weak": [],
-      "resist": [
-        "Phys"
+      "weak": [
+        "Force"
       ],
-      "null": [],
+      "resist": [],
+      "null": [
+        "Elec"
+      ],
       "drain": [],
-      "repel": [
-        "Gun"
-      ],
+      "repel": [],
       "game": "smt5"
     },
     {
@@ -8751,10 +8712,11 @@
         }
       ],
       "weak": [
-        "Fire"
+        "Fire",
+        "Ice"
       ],
       "resist": [
-        "Ice"
+        "Force"
       ],
       "null": [],
       "drain": [],
@@ -8805,17 +8767,19 @@
         }
       ],
       "weak": [
-        "Nuke"
+        "Curse"
       ],
-      "resist": [],
+      "resist": [
+        "Fire",
+        "Ice",
+        "Elec",
+        "Force"
+      ],
       "null": [
-        "Psy",
         "Bless"
       ],
       "drain": [],
-      "repel": [
-        "Elec"
-      ],
+      "repel": [],
       "game": "smt5"
     },
     {
@@ -8962,11 +8926,10 @@
         }
       ],
       "weak": [
-        "Ice",
-        "Bless"
+        "Elec"
       ],
       "resist": [
-        "Wind"
+        "Force"
       ],
       "null": [],
       "drain": [],
@@ -9018,13 +8981,15 @@
         }
       ],
       "weak": [
-        "Fire"
+        "Force",
+        "Curse"
       ],
       "resist": [
-        "Ice",
-        "Wind"
+        "Bless"
       ],
-      "null": [],
+      "null": [
+        "Ice"
+      ],
       "drain": [],
       "repel": [],
       "game": "smt5"
@@ -9075,13 +9040,14 @@
         }
       ],
       "weak": [
-        "Ice"
+        "Elec"
       ],
       "resist": [
-        "Phys",
         "Bless"
       ],
-      "null": [],
+      "null": [
+        "Force"
+      ],
       "drain": [],
       "repel": [],
       "game": "smt5"
@@ -9198,13 +9164,13 @@
         }
       ],
       "weak": [
-        "Psy"
+        "Elec"
       ],
       "resist": [
         "Curse"
       ],
       "null": [
-        "Fire"
+        "Force"
       ],
       "drain": [],
       "repel": [],
@@ -9247,18 +9213,15 @@
           "level": 42
         }
       ],
-      "weak": [],
-      "resist": [
-        "Bless",
-        "Curse"
+      "weak": [
+        "Elec"
       ],
+      "resist": [],
       "null": [
-        "Ice"
+        "Force"
       ],
       "drain": [],
-      "repel": [
-        "Wind"
-      ],
+      "repel": [],
       "game": "smt5"
     },
     {
@@ -9352,9 +9315,13 @@
           "level": 52
         }
       ],
-      "weak": [],
+      "weak": [
+        "Curse"
+      ],
       "resist": [],
-      "null": [],
+      "null": [
+        "Bless"
+      ],
       "drain": [],
       "repel": [],
       "game": "smt5"
@@ -9405,14 +9372,10 @@
         }
       ],
       "weak": [
-        "Elec"
+        "Force"
       ],
-      "resist": [
-        "Wind"
-      ],
-      "null": [
-        "Ice"
-      ],
+      "resist": [],
+      "null": [],
       "drain": [],
       "repel": [],
       "game": "smt5"
@@ -9463,13 +9426,14 @@
         }
       ],
       "weak": [
-        "Fire"
+        "Elec"
       ],
       "resist": [
-        "Ice",
+        "Force"
+      ],
+      "null": [
         "Bless"
       ],
-      "null": [],
       "drain": [],
       "repel": [],
       "game": "smt5"
@@ -9516,14 +9480,11 @@
         }
       ],
       "weak": [
-        "Ice",
-        "Nuke"
+        "Ice"
       ],
-      "resist": [
-        "Elec"
-      ],
+      "resist": [],
       "null": [
-        "Curse"
+        "Elec"
       ],
       "drain": [],
       "repel": [],
@@ -9567,13 +9528,13 @@
         }
       ],
       "weak": [
-        "Fire"
+        "Force",
+        "Bless"
       ],
-      "resist": [
-        "Wind",
-        "Psy"
+      "resist": [],
+      "null": [
+        "Curse"
       ],
-      "null": [],
       "drain": [],
       "repel": [],
       "game": "smt5"
@@ -9612,14 +9573,10 @@
         }
       ],
       "weak": [
+        "Elec",
         "Bless"
       ],
-      "resist": [
-        "Phys",
-        "Gun",
-        "Psy",
-        "Fire"
-      ],
+      "resist": [],
       "null": [
         "Curse"
       ],
@@ -9665,14 +9622,11 @@
         }
       ],
       "weak": [
-        "Wind",
-        "Bless"
-      ],
-      "resist": [
         "Ice"
       ],
+      "resist": [],
       "null": [
-        "Curse"
+        "Elec"
       ],
       "drain": [],
       "repel": [],
@@ -9720,17 +9674,17 @@
         }
       ],
       "weak": [
-        "Fire"
+        "Force"
       ],
-      "resist": [],
-      "null": [
+      "resist": [
+        "Fire",
+        "Ice",
+        "Elec",
         "Curse"
       ],
+      "null": [],
       "drain": [],
-      "repel": [
-        "Ice",
-        "Nuke"
-      ],
+      "repel": [],
       "game": "smt5"
     },
     {
@@ -9771,15 +9725,11 @@
         }
       ],
       "weak": [
-        "Psy",
         "Bless"
       ],
-      "resist": [
-        "Fire",
-        "Nuke"
-      ],
+      "resist": [],
       "null": [
-        "Elec"
+        "Curse"
       ],
       "drain": [],
       "repel": [],
@@ -9831,9 +9781,12 @@
       "weak": [
         "Bless"
       ],
-      "resist": [],
-      "null": [
+      "resist": [
+        "Force",
         "Curse"
+      ],
+      "null": [
+        "Ice"
       ],
       "drain": [],
       "repel": [],
@@ -9883,15 +9836,16 @@
         }
       ],
       "weak": [
-        "Fire"
+        "Bless"
       ],
-      "resist": [],
-      "null": [
+      "resist": [
+        "Force",
         "Curse"
       ],
-      "drain": [
+      "null": [
         "Ice"
       ],
+      "drain": [],
       "repel": [],
       "game": "smt5"
     },
@@ -10157,9 +10111,7 @@
       "weak": [
         "Bless"
       ],
-      "resist": [
-        "Elec"
-      ],
+      "resist": [],
       "null": [
         "Curse"
       ],
@@ -10215,11 +10167,9 @@
       "weak": [
         "Ice"
       ],
-      "resist": [
-        "Psy"
-      ],
+      "resist": [],
       "null": [
-        "Nuke"
+        "Curse"
       ],
       "drain": [
         "Fire"
@@ -10385,16 +10335,12 @@
         }
       ],
       "weak": [
-        "Elec"
+        "Curse"
       ],
       "resist": [
-        "Wind",
-        "Nuke"
-      ],
-      "null": [
-        "Gun",
         "Bless"
       ],
+      "null": [],
       "drain": [],
       "repel": [],
       "game": "smt5"
@@ -10484,20 +10430,18 @@
           "level": 70
         }
       ],
-      "weak": [],
-      "resist": [
-        "Bless"
+      "weak": [
+        "Ice"
       ],
-      "null": [
-        "Gun",
+      "resist": [
+        "Bless",
         "Curse"
       ],
+      "null": [],
       "drain": [
-        "Fire"
+        "Elec"
       ],
-      "repel": [
-        "Psy"
-      ],
+      "repel": [],
       "game": "smt5"
     },
     {
@@ -10546,16 +10490,16 @@
         }
       ],
       "weak": [
-        "Fire"
-      ],
-      "resist": [
         "Elec"
       ],
+      "resist": [
+        "Curse"
+      ],
       "null": [
-        "Wind"
+        "Bless"
       ],
       "drain": [
-        "Bless"
+        "Force"
       ],
       "repel": [],
       "game": "smt5"
@@ -10604,9 +10548,12 @@
       "weak": [
         "Elec"
       ],
-      "resist": [],
+      "resist": [
+        "Bless",
+        "Curse"
+      ],
       "null": [
-        "Wind"
+        "Force"
       ],
       "drain": [],
       "repel": [],
@@ -10654,11 +10601,9 @@
         }
       ],
       "weak": [
-        "Wind"
+        "Force"
       ],
-      "resist": [
-        "Psy"
-      ],
+      "resist": [],
       "null": [
         "Curse"
       ],
@@ -10977,19 +10922,18 @@
           "level": 98
         }
       ],
-      "weak": [
+      "weak": [],
+      "resist": [
+        "Fire",
+        "Ice",
         "Elec",
-        "Curse"
+        "Force"
       ],
-      "resist": [],
-      "null": [],
-      "drain": [
-        "Psy",
-        "Nuke"
+      "null": [
+        "Bless"
       ],
-      "repel": [
-        "Wind"
-      ],
+      "drain": [],
+      "repel": [],
       "game": "smt5"
     },
     {
@@ -11037,17 +10981,17 @@
           "level": 93
         }
       ],
-      "weak": [],
-      "resist": [
-        "Gun"
+      "weak": [
+        "Force"
       ],
+      "resist": [],
       "null": [
-        "Curse"
-      ],
-      "drain": [],
-      "repel": [
+        "Fire",
+        "Ice",
         "Bless"
       ],
+      "drain": [],
+      "repel": [],
       "game": "smt5"
     },
     {
@@ -11198,17 +11142,15 @@
         }
       ],
       "weak": [
-        "Ice"
+        "Force",
+        "Bless"
       ],
-      "resist": [
-        "Phys"
-      ],
+      "resist": [],
       "null": [
-        "Elec"
-      ],
-      "drain": [
+        "Elec",
         "Curse"
       ],
+      "drain": [],
       "repel": [],
       "game": "smt5"
     },
@@ -11258,14 +11200,11 @@
         }
       ],
       "weak": [
-        "Psy"
+        "Ice"
       ],
-      "resist": [
-        "Phys",
-        "Gun"
-      ],
+      "resist": [],
       "null": [
-        "Nuke"
+        "Bless"
       ],
       "drain": [
         "Fire"
@@ -11317,11 +11256,12 @@
         }
       ],
       "weak": [
-        "Elec"
+        "Ice"
       ],
-      "resist": [],
+      "resist": [
+        "Curse"
+      ],
       "null": [
-        "Ice",
         "Bless"
       ],
       "drain": [],
@@ -11362,7 +11302,7 @@
         }
       ],
       "weak": [
-        "Wind"
+        "Force"
       ],
       "resist": [
         "Elec"
@@ -11418,15 +11358,12 @@
       ],
       "resist": [
         "Elec",
-        "Wind"
-      ],
-      "null": [
         "Curse"
       ],
-      "drain": [
-        "Fire",
-        "Psy"
+      "null": [
+        "Fire"
       ],
+      "drain": [],
       "repel": [],
       "game": "smt5"
     },
@@ -11472,18 +11409,16 @@
         }
       ],
       "weak": [
-        "Wind"
+        "Elec"
       ],
       "resist": [
-        "Gun"
+        "Fire"
       ],
       "null": [],
       "drain": [
-        "Elec"
-      ],
-      "repel": [
         "Curse"
       ],
+      "repel": [],
       "game": "smt5"
     },
     {
@@ -11532,15 +11467,19 @@
         }
       ],
       "weak": [
-        "Bless"
+        "Force"
       ],
-      "resist": [],
-      "null": [
+      "resist": [
+        "Fire",
+        "Bless",
         "Curse"
       ],
-      "drain": [],
-      "repel": [
+      "null": [],
+      "drain": [
         "Elec"
+      ],
+      "repel": [
+        "Phys"
       ],
       "game": "smt5"
     },
@@ -11582,11 +11521,9 @@
         }
       ],
       "weak": [
-        "Gun"
+        "Force"
       ],
-      "resist": [
-        "Psy"
-      ],
+      "resist": [],
       "null": [
         "Elec"
       ],
@@ -11632,11 +11569,10 @@
         }
       ],
       "weak": [
-        "Wind"
+        "Fire",
+        "Force"
       ],
-      "resist": [
-        "Gun"
-      ],
+      "resist": [],
       "null": [
         "Elec"
       ],
@@ -11688,12 +11624,9 @@
       "weak": [
         "Fire"
       ],
-      "resist": [
-        "Wind",
-        "Bless"
-      ],
+      "resist": [],
       "null": [
-        "Elec"
+        "Force"
       ],
       "drain": [],
       "repel": [],
@@ -11737,16 +11670,15 @@
         }
       ],
       "weak": [
+        "Force",
         "Bless"
       ],
-      "resist": [
+      "resist": [],
+      "null": [],
+      "drain": [],
+      "repel": [
         "Curse"
       ],
-      "null": [
-        "Psy"
-      ],
-      "drain": [],
-      "repel": [],
       "game": "smt5"
     },
     {
@@ -11833,12 +11765,15 @@
         }
       ],
       "weak": [
+        "Ice",
         "Elec"
       ],
       "resist": [
-        "Psy"
+        "Fire"
       ],
-      "null": [],
+      "null": [
+        "Force"
+      ],
       "drain": [],
       "repel": [],
       "game": "smt5"
@@ -11877,15 +11812,14 @@
         }
       ],
       "weak": [
-        "Wind"
+        "Fire",
+        "Force"
       ],
       "resist": [
-        "Phys",
-        "Elec",
-        "Curse"
+        "Bless"
       ],
       "null": [
-        "Bless"
+        "Elec"
       ],
       "drain": [],
       "repel": [],
@@ -12095,17 +12029,17 @@
           "level": 70
         }
       ],
-      "weak": [],
+      "weak": [
+        "Elec"
+      ],
       "resist": [
         "Bless"
       ],
-      "null": [],
-      "drain": [
-        "Wind"
+      "null": [
+        "Curse"
       ],
-      "repel": [
-        "Elec"
-      ],
+      "drain": [],
+      "repel": [],
       "game": "smt5"
     },
     {
@@ -12150,13 +12084,11 @@
         }
       ],
       "weak": [
-        "Fire"
+        "Force"
       ],
-      "resist": [
-        "Ice"
-      ],
+      "resist": [],
       "null": [
-        "Curse"
+        "Elec"
       ],
       "drain": [],
       "repel": [],
@@ -12196,10 +12128,12 @@
         }
       ],
       "weak": [
-        "Elec"
+        "Ice",
+        "Bless"
       ],
       "resist": [
-        "Phys"
+        "Elec",
+        "Curse"
       ],
       "null": [],
       "drain": [],
@@ -12248,13 +12182,11 @@
         }
       ],
       "weak": [
-        "Nuke"
-      ],
-      "resist": [
         "Elec"
       ],
+      "resist": [],
       "null": [
-        "Psy"
+        "Force"
       ],
       "drain": [],
       "repel": [],
@@ -12305,17 +12237,17 @@
           "level": 80
         }
       ],
-      "weak": [],
+      "weak": [
+        "Force"
+      ],
       "resist": [],
       "null": [
-        "Elec"
-      ],
-      "drain": [
-        "Wind"
-      ],
-      "repel": [
         "Bless",
         "Curse"
+      ],
+      "drain": [],
+      "repel": [
+        "Elec"
       ],
       "game": "smt5"
     },
@@ -12361,17 +12293,15 @@
         }
       ],
       "weak": [
-        "Wind",
-        "Nuke"
+        "Ice"
       ],
-      "resist": [],
-      "null": [
-        "Psy"
+      "resist": [
+        "Bless",
+        "Curse"
       ],
+      "null": [],
       "drain": [],
-      "repel": [
-        "Elec"
-      ],
+      "repel": [],
       "game": "smt5"
     },
     {
@@ -12479,16 +12409,17 @@
           "level": 81
         }
       ],
-      "weak": [],
+      "weak": [
+        "Bless"
+      ],
       "resist": [
-        "Phys"
+        "Phys",
+        "Ice",
+        "Force"
       ],
       "null": [],
       "drain": [],
-      "repel": [
-        "Bless",
-        "Curse"
-      ],
+      "repel": [],
       "game": "smt5"
     },
     {
@@ -12524,10 +12455,12 @@
           "level": 25
         }
       ],
-      "weak": [],
+      "weak": [
+        "Elec",
+        "Bless"
+      ],
       "resist": [
-        "Phys",
-        "Gun"
+        "Phys"
       ],
       "null": [],
       "drain": [],
@@ -12564,15 +12497,13 @@
         }
       ],
       "weak": [
-        "Gun",
-        "Bless"
+        "Ice",
+        "Force"
       ],
       "resist": [
         "Fire"
       ],
-      "null": [
-        "Curse"
-      ],
+      "null": [],
       "drain": [],
       "repel": [],
       "game": "smt5"
@@ -12622,10 +12553,11 @@
         "Ice"
       ],
       "resist": [
-        "Wind",
         "Curse"
       ],
-      "null": [],
+      "null": [
+        "Fire"
+      ],
       "drain": [],
       "repel": [],
       "game": "smt5"
@@ -12965,12 +12897,12 @@
         "Ice"
       ],
       "resist": [
-        "Nuke"
+        "Curse"
       ],
-      "null": [],
-      "drain": [
+      "null": [
         "Fire"
       ],
+      "drain": [],
       "repel": [],
       "game": "smt5"
     },
@@ -13016,14 +12948,12 @@
         }
       ],
       "weak": [
-        "Bless"
-      ],
-      "resist": [
         "Fire"
       ],
+      "resist": [],
       "null": [
-        "Curse",
-        "Gun"
+        "Ice",
+        "Curse"
       ],
       "drain": [],
       "repel": [],
@@ -13130,16 +13060,17 @@
         }
       ],
       "weak": [
-        "Bless"
+        "Fire"
       ],
       "resist": [
-        "Wind"
-      ],
-      "null": [],
-      "drain": [],
-      "repel": [
+        "Bless",
         "Curse"
       ],
+      "null": [
+        "Ice"
+      ],
+      "drain": [],
+      "repel": [],
       "game": "smt5"
     },
     {
@@ -13378,17 +13309,15 @@
         }
       ],
       "weak": [
-        "Curse"
+        "Fire"
       ],
       "resist": [
-        "Psy",
+        "Ice",
         "Bless"
       ],
       "null": [],
       "drain": [],
-      "repel": [
-        "Ice"
-      ],
+      "repel": [],
       "game": "smt5"
     },
     {
@@ -13437,10 +13366,10 @@
         }
       ],
       "weak": [
-        "Bless"
+        "Ice"
       ],
       "resist": [
-        "Wind"
+        "Force"
       ],
       "null": [
         "Curse"
@@ -13630,9 +13559,7 @@
         "Fire",
         "Bless"
       ],
-      "resist": [
-        "Elec"
-      ],
+      "resist": [],
       "null": [
         "Curse"
       ],
@@ -13768,13 +13695,10 @@
         }
       ],
       "weak": [
-        "Gun",
-        "Ice",
         "Curse"
       ],
       "resist": [
-        "Elec",
-        "Curse"
+        "Force"
       ],
       "null": [],
       "drain": [],
@@ -13897,11 +13821,11 @@
         }
       ],
       "weak": [
-        "Gun",
+        "Force",
         "Curse"
       ],
       "resist": [
-        "Wind"
+        "Elec"
       ],
       "null": [
         "Bless"
@@ -13950,9 +13874,7 @@
       "weak": [
         "Curse"
       ],
-      "resist": [
-        "Fire"
-      ],
+      "resist": [],
       "null": [
         "Bless"
       ],
@@ -14136,13 +14058,11 @@
         }
       ],
       "weak": [
-        "Wind"
-      ],
-      "resist": [
         "Elec"
       ],
+      "resist": [],
       "null": [
-        "Fire"
+        "Force"
       ],
       "drain": [],
       "repel": [],
@@ -14190,11 +14110,9 @@
         }
       ],
       "weak": [
-        "Psy"
+        "Elec"
       ],
-      "resist": [
-        "Wind"
-      ],
+      "resist": [],
       "null": [
         "Fire"
       ],
@@ -14245,12 +14163,17 @@
           "level": 43
         }
       ],
-      "weak": [],
-      "resist": [],
-      "null": [
+      "weak": [
+        "Fire",
+        "Force"
+      ],
+      "resist": [
+        "Ice"
+      ],
+      "null": [],
+      "drain": [
         "Elec"
       ],
-      "drain": [],
       "repel": [],
       "game": "smt5"
     },
@@ -14288,17 +14211,13 @@
         }
       ],
       "weak": [
-        "Wind",
-        "Bless"
+        "Ice"
       ],
       "resist": [
-        "Phys",
-        "Fire",
+        "Bless",
         "Curse"
       ],
-      "null": [
-        "Gun"
-      ],
+      "null": [],
       "drain": [],
       "repel": [],
       "game": "smt5"
@@ -14345,18 +14264,15 @@
         }
       ],
       "weak": [
+        "Fire",
         "Elec",
         "Bless"
       ],
       "resist": [],
-      "null": [
-        "Fire",
-        "Curse"
-      ],
+      "null": [],
       "drain": [],
       "repel": [
-        "Phys",
-        "Gun"
+        "Phys"
       ],
       "game": "smt5"
     },
@@ -14467,15 +14383,17 @@
           "level": 87
         }
       ],
-      "weak": [],
-      "resist": [],
+      "weak": [
+        "Fire"
+      ],
+      "resist": [
+        "Elec"
+      ],
       "null": [
-        "Psy",
+        "Force",
         "Bless"
       ],
-      "drain": [
-        "Ice"
-      ],
+      "drain": [],
       "repel": [],
       "game": "smt5"
     },
@@ -14525,14 +14443,19 @@
         }
       ],
       "weak": [
-        "Bless"
+        "Ice"
       ],
-      "resist": [],
-      "null": [
+      "resist": [
+        "Bless",
         "Curse"
       ],
-      "drain": [],
-      "repel": [],
+      "null": [],
+      "drain": [
+        "Force"
+      ],
+      "repel": [
+        "Elec"
+      ],
       "game": "smt5"
     },
     {
@@ -14883,18 +14806,19 @@
           "level": 91
         }
       ],
-      "weak": [],
-      "resist": [
-        "Phys",
-        "Gun"
+      "weak": [
+        "Force"
       ],
-      "null": [
+      "resist": [
         "Curse"
       ],
-      "drain": [],
-      "repel": [
+      "null": [
+        "Phys",
+        "Elec",
         "Bless"
       ],
+      "drain": [],
+      "repel": [],
       "game": "smt5"
     },
     {
@@ -14931,11 +14855,10 @@
         }
       ],
       "weak": [
-        "Elec",
-        "Fire"
+        "Elec"
       ],
       "resist": [
-        "Wind"
+        "Force"
       ],
       "null": [],
       "drain": [],
@@ -14984,11 +14907,10 @@
         }
       ],
       "weak": [
-        "Nuke"
+        "Fire",
+        "Curse"
       ],
-      "resist": [
-        "Elec"
-      ],
+      "resist": [],
       "null": [
         "Ice"
       ],
@@ -15169,16 +15091,17 @@
           "level": 58
         }
       ],
-      "weak": [],
-      "resist": [],
-      "null": [
-        "Ice",
-        "Curse"
-      ],
-      "drain": [],
-      "repel": [
+      "weak": [
         "Elec"
       ],
+      "resist": [
+        "Bless"
+      ],
+      "null": [
+        "Force"
+      ],
+      "drain": [],
+      "repel": [],
       "game": "smt5"
     },
     {
@@ -15225,12 +15148,14 @@
         }
       ],
       "weak": [
-        "Nuke"
+        "Elec"
       ],
       "resist": [
         "Ice"
       ],
-      "null": [],
+      "null": [
+        "Force"
+      ],
       "drain": [],
       "repel": [],
       "game": "smt5"
@@ -15451,13 +15376,13 @@
         }
       ],
       "weak": [
-        "Psy"
+        "Elec",
+        "Curse"
       ],
-      "resist": [
-        "Gun",
-        "Nuke"
+      "resist": [],
+      "null": [
+        "Force"
       ],
-      "null": [],
       "drain": [],
       "repel": [],
       "game": "smt5"
@@ -15504,18 +15429,17 @@
         }
       ],
       "weak": [
-        "Bless"
+        "Ice"
       ],
       "resist": [
+        "Bless",
         "Curse"
       ],
       "null": [
-        "Wind"
+        "Elec"
       ],
       "drain": [],
-      "repel": [
-        "Fire"
-      ],
+      "repel": [],
       "game": "smt5"
     },
     {
@@ -15556,15 +15480,13 @@
         }
       ],
       "weak": [
-        "Psy",
-        "Curse"
+        "Fire"
       ],
       "resist": [
-        "Phys"
+        "Elec",
+        "Force"
       ],
-      "null": [
-        "Bless"
-      ],
+      "null": [],
       "drain": [],
       "repel": [],
       "game": "smt5"
@@ -15607,15 +15529,15 @@
         }
       ],
       "weak": [
-        "Nuke"
+        "Fire",
+        "Force"
       ],
-      "resist": [],
-      "null": [
+      "resist": [
         "Phys",
-        "Gun",
         "Bless",
         "Curse"
       ],
+      "null": [],
       "drain": [],
       "repel": [],
       "game": "smt5"
@@ -15666,20 +15588,19 @@
         }
       ],
       "weak": [
-        "Nuke"
+        "Ice"
       ],
-      "resist": [],
-      "null": [
-        "Ice",
+      "resist": [
+        "Phys",
         "Bless",
         "Curse"
       ],
+      "null": [],
       "drain": [
-        "Psy"
-      ],
-      "repel": [
+        "Fire",
         "Elec"
       ],
+      "repel": [],
       "game": "smt5"
     },
     {
@@ -15728,17 +15649,15 @@
         }
       ],
       "weak": [
-        "Nuke"
+        "Force",
+        "Bless",
+        "Curse"
       ],
-      "resist": [
-        "Ice",
-        "Gun"
+      "resist": [],
+      "null": [],
+      "drain": [
+        "Phys"
       ],
-      "null": [
-        "Phys",
-        "Elec"
-      ],
-      "drain": [],
       "repel": [],
       "game": "smt5"
     },
@@ -15784,13 +15703,12 @@
         }
       ],
       "weak": [
-        "Fire",
-        "Elec"
+        "Fire"
       ],
-      "resist": [
+      "resist": [],
+      "null": [
         "Ice"
       ],
-      "null": [],
       "drain": [],
       "repel": [],
       "game": "smt5"
@@ -15836,15 +15754,17 @@
           "level": 70
         }
       ],
-      "weak": [],
-      "resist": [],
+      "weak": [
+        "Fire"
+      ],
+      "resist": [
+        "Ice"
+      ],
       "null": [
         "Curse"
       ],
       "drain": [],
-      "repel": [
-        "Ice"
-      ],
+      "repel": [],
       "game": "smt5"
     },
     {
@@ -15878,12 +15798,12 @@
       ],
       "weak": [
         "Fire",
-        "Wind"
+        "Ice",
+        "Elec",
+        "Force",
+        "Bless"
       ],
-      "resist": [
-        "Phys",
-        "Gun"
-      ],
+      "resist": [],
       "null": [],
       "drain": [],
       "repel": [],
@@ -15931,16 +15851,17 @@
         }
       ],
       "weak": [
-        "Curse"
+        "Force"
       ],
-      "resist": [],
-      "null": [],
-      "drain": [
+      "resist": [
+        "Ice",
         "Elec"
       ],
-      "repel": [
+      "null": [],
+      "drain": [
         "Bless"
       ],
+      "repel": [],
       "game": "smt5"
     },
     {
@@ -15985,14 +15906,13 @@
         }
       ],
       "weak": [
-        "Gun",
         "Bless"
       ],
       "resist": [
         "Fire"
       ],
       "null": [
-        "Curse"
+        "Ice"
       ],
       "drain": [],
       "repel": [],
@@ -16028,15 +15948,15 @@
         }
       ],
       "weak": [
-        "Ice",
-        "Nuke"
+        "Fire",
+        "Ice"
       ],
       "resist": [],
-      "null": [],
-      "drain": [],
-      "repel": [
-        "Wind"
+      "null": [
+        "Force"
       ],
+      "drain": [],
+      "repel": [],
       "game": "smt5"
     },
     {
@@ -16081,16 +16001,13 @@
         }
       ],
       "weak": [
-        "Nuke"
+        "Fire"
       ],
-      "resist": [
-        "Gun",
-        "Elec"
-      ],
-      "null": [],
-      "drain": [
+      "resist": [],
+      "null": [
         "Ice"
       ],
+      "drain": [],
       "repel": [],
       "game": "smt5"
     },
@@ -16137,12 +16054,16 @@
           "level": 40
         }
       ],
-      "weak": [],
+      "weak": [
+        "Elec"
+      ],
       "resist": [
         "Bless",
         "Curse"
       ],
-      "null": [],
+      "null": [
+        "Ice"
+      ],
       "drain": [],
       "repel": [],
       "game": "smt5",
@@ -16301,13 +16222,8 @@
       "weak": [
         "Ice"
       ],
-      "resist": [
-        "Gun",
-        "Nuke"
-      ],
-      "null": [
-        "Elec"
-      ],
+      "resist": [],
+      "null": [],
       "drain": [
         "Fire"
       ],
@@ -16464,13 +16380,11 @@
       "weak": [
         "Ice"
       ],
-      "resist": [
-        "Nuke"
-      ],
-      "null": [],
-      "drain": [
+      "resist": [],
+      "null": [
         "Fire"
       ],
+      "drain": [],
       "repel": [],
       "game": "smt5"
     },
@@ -16922,11 +16836,10 @@
         }
       ],
       "weak": [
-        "Psy"
+        "Fire"
       ],
       "resist": [
-        "Elec",
-        "Curse"
+        "Elec"
       ],
       "null": [],
       "drain": [],
@@ -17153,16 +17066,17 @@
           "level": 69
         }
       ],
-      "weak": [],
-      "resist": [
-        "Phys",
-        "Bless",
-        "Curse"
+      "weak": [
+        "Force"
       ],
-      "null": [
+      "resist": [
+        "Fire",
+        "Bless"
+      ],
+      "null": [],
+      "drain": [
         "Elec"
       ],
-      "drain": [],
       "repel": [],
       "game": "smt5"
     },
@@ -17208,14 +17122,11 @@
         }
       ],
       "weak": [
-        "Psy"
-      ],
-      "resist": [
         "Curse"
       ],
+      "resist": [],
       "null": [
-        "Nuke",
-        "Bless"
+        "Fire"
       ],
       "drain": [],
       "repel": [],
@@ -17263,17 +17174,16 @@
         }
       ],
       "weak": [
-        "Nuke"
+        "Ice",
+        "Curse"
       ],
       "resist": [],
       "null": [
         "Fire",
-        "Wind"
-      ],
-      "drain": [],
-      "repel": [
         "Bless"
       ],
+      "drain": [],
+      "repel": [],
       "game": "smt5"
     },
     {
@@ -17318,14 +17228,13 @@
         }
       ],
       "weak": [
-        "Psy",
-        "Curse"
+        "Force"
       ],
       "resist": [],
-      "null": [],
-      "drain": [
+      "null": [
         "Elec"
       ],
+      "drain": [],
       "repel": [],
       "game": "smt5"
     },
@@ -17371,14 +17280,14 @@
         }
       ],
       "weak": [
-        "Psy"
+        "Fire"
       ],
       "resist": [
-        "Nuke",
-        "Bless",
         "Curse"
       ],
-      "null": [],
+      "null": [
+        "Bless"
+      ],
       "drain": [],
       "repel": [],
       "game": "smt5"
@@ -17697,17 +17606,18 @@
         }
       ],
       "weak": [],
-      "resist": [],
+      "resist": [
+        "Fire",
+        "Ice",
+        "Elec",
+        "Force"
+      ],
       "null": [
+        "Bless",
         "Curse"
       ],
-      "drain": [
-        "Ice"
-      ],
-      "repel": [
-        "Elec",
-        "Bless"
-      ],
+      "drain": [],
+      "repel": [],
       "game": "smt5"
     },
     {
@@ -18048,17 +17958,18 @@
           "level": 85
         }
       ],
-      "weak": [],
-      "resist": [],
+      "weak": [
+        "Ice"
+      ],
+      "resist": [
+        "Elec"
+      ],
       "null": [
-        "Fire"
-      ],
-      "drain": [
-        "Nuke"
-      ],
-      "repel": [
+        "Fire",
         "Bless"
       ],
+      "drain": [],
+      "repel": [],
       "game": "smt5"
     },
     {
@@ -18197,18 +18108,14 @@
         }
       ],
       "weak": [
-        "Fire"
+        "Force"
       ],
-      "resist": [
-        "Gun"
-      ],
+      "resist": [],
       "null": [
         "Bless"
       ],
       "drain": [],
-      "repel": [
-        "Ice"
-      ],
+      "repel": [],
       "game": "smt5"
     },
     {
@@ -18323,15 +18230,16 @@
         }
       ],
       "weak": [
+        "Fire"
+      ],
+      "resist": [
         "Curse"
       ],
-      "resist": [],
-      "null": [
-        "Ice",
-        "Elec"
-      ],
+      "null": [],
       "drain": [],
-      "repel": [],
+      "repel": [
+        "Ice"
+      ],
       "game": "smt5"
     },
     {
@@ -18384,13 +18292,13 @@
       ],
       "resist": [],
       "null": [
-        "Bless",
+        "Phys",
         "Curse"
       ],
-      "drain": [
-        "Ice"
+      "drain": [],
+      "repel": [
+        "Bless"
       ],
-      "repel": [],
       "game": "smt5"
     },
     {
@@ -18499,16 +18407,16 @@
         }
       ],
       "weak": [
-        "Ice"
+        "Elec"
       ],
-      "resist": [],
-      "null": [
-        "Fire",
-        "Bless"
+      "resist": [
+        "Bless",
+        "Curse"
       ],
+      "null": [],
       "drain": [],
       "repel": [
-        "Curse"
+        "Fire"
       ],
       "game": "smt5"
     },
@@ -18676,13 +18584,11 @@
         }
       ],
       "weak": [
-        "Nuke"
+        "Elec"
       ],
-      "resist": [
-        "Ice"
-      ],
+      "resist": [],
       "null": [
-        "Gun"
+        "Force"
       ],
       "drain": [],
       "repel": [],
@@ -18729,16 +18635,15 @@
           "level": 75
         }
       ],
-      "weak": [],
-      "resist": [
-        "Phys",
-        "Wind",
-        "Curse"
+      "weak": [
+        "Elec"
       ],
-      "null": [],
-      "drain": [
+      "resist": [],
+      "null": [
+        "Fire",
         "Ice"
       ],
+      "drain": [],
       "repel": [],
       "game": "smt5"
     },
@@ -18977,7 +18882,7 @@
         "Curse"
       ],
       "resist": [
-        "Wind"
+        "Force"
       ],
       "null": [
         "Bless"
@@ -19075,18 +18980,15 @@
           "level": 48
         }
       ],
-      "weak": [],
-      "resist": [
-        "Fire"
+      "weak": [
+        "Curse"
       ],
-      "null": [
+      "resist": [
         "Phys"
       ],
+      "null": [],
       "drain": [],
-      "repel": [
-        "Elec",
-        "Bless"
-      ],
+      "repel": [],
       "game": "smt5"
     },
     {
@@ -19135,11 +19037,9 @@
         }
       ],
       "weak": [
-        "Psy"
+        "Fire"
       ],
-      "resist": [
-        "Bless"
-      ],
+      "resist": [],
       "null": [
         "Elec"
       ],
@@ -19191,15 +19091,14 @@
       "weak": [
         "Elec"
       ],
-      "resist": [],
-      "null": [
+      "resist": [
+        "Fire",
         "Bless",
         "Curse"
       ],
+      "null": [],
       "drain": [],
-      "repel": [
-        "Fire"
-      ],
+      "repel": [],
       "game": "smt5"
     },
     {
@@ -19374,12 +19273,12 @@
         }
       ],
       "weak": [
-        "Wind"
+        "Force"
       ],
-      "resist": [
-        "Phys"
+      "resist": [],
+      "null": [
+        "Bless"
       ],
-      "null": [],
       "drain": [],
       "repel": [],
       "game": "smt5"
