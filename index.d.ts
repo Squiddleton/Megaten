@@ -600,7 +600,7 @@ export type Arcana = 'Fool' | 'Magician' | 'Priestess' | 'Empress' | 'Emperor' |
     | 'Justice' | 'Hermit'| 'Fortune' | 'Strength' | 'Hanged' | 'Death' | 'Temperance' | 'Devil' | 'Tower'
     | 'Star' | 'Moon' | 'Sun' | 'Judgement' | 'Faith' | 'Councillor' | 'World' | 'Apostle' | 'Hope';
 
-export type AttackDisplay = 'Minuscule' | 'Light' | 'Medium' | 'Heavy' | 'Severe' | 'Colossal';
+export type AttackDisplay = 'Minuscule' | 'Weak' | 'Light' | 'Medium' | 'Heavy' | 'Severe' | 'Colossal';
 
 export type BlessCurse = 'Bless' | 'Curse';
 
