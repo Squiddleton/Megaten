@@ -49,7 +49,7 @@
         "Elec"
       ],
       "resist": [
-        "Curse"
+        "Dark"
       ],
       "null": [
         "Fire"
@@ -62,7 +62,7 @@
       "name": "Abdiel",
       "devName": "abdiel",
       "aliases": [],
-      "inherit": "Bless",
+      "inherit": "Light",
       "arcana": null,
       "race": "Herald",
       "level": 80,
@@ -100,7 +100,7 @@
         }
       ],
       "weak": [
-        "Curse"
+        "Dark"
       ],
       "resist": [
         "Elec",
@@ -109,7 +109,7 @@
       "null": [],
       "drain": [],
       "repel": [
-        "Bless"
+        "Light"
       ],
       "game": "smt5"
     },
@@ -117,7 +117,7 @@
       "name": "Abdiel -Fallen-",
       "devName": "abdielfallen",
       "aliases": [],
-      "inherit": "Curse",
+      "inherit": "Dark",
       "arcana": null,
       "race": "Fallen",
       "level": 89,
@@ -159,7 +159,7 @@
         }
       ],
       "weak": [
-        "Bless"
+        "Light"
       ],
       "resist": [
         "Ice",
@@ -169,7 +169,7 @@
       "null": [],
       "drain": [],
       "repel": [
-        "Curse"
+        "Dark"
       ],
       "game": "smt5"
     },
@@ -225,7 +225,7 @@
         "Fire"
       ],
       "null": [
-        "Curse"
+        "Dark"
       ],
       "drain": [],
       "repel": [],
@@ -302,7 +302,7 @@
       ],
       "weak": [
         "Ice",
-        "Curse"
+        "Dark"
       ],
       "resist": [],
       "null": [
@@ -417,7 +417,7 @@
         "Psy"
       ],
       "resist": [
-        "Curse"
+        "Dark"
       ],
       "null": [
         "Nuke"
@@ -520,7 +520,7 @@
       "name": "Alice",
       "devName": "alice",
       "aliases": [],
-      "inherit": "Curse",
+      "inherit": "Dark",
       "arcana": "Death",
       "race": "Fiend",
       "level": 40,
@@ -562,12 +562,12 @@
         }
       ],
       "weak": [
-        "Bless"
+        "Light"
       ],
       "resist": [],
       "null": [],
       "drain": [
-        "Curse"
+        "Dark"
       ],
       "repel": [],
       "game": "smt5"
@@ -619,8 +619,8 @@
       ],
       "weak": [],
       "resist": [
-        "Bless",
-        "Curse"
+        "Light",
+        "Dark"
       ],
       "null": [],
       "drain": [],
@@ -677,11 +677,11 @@
         "Ice"
       ],
       "resist": [
-        "Bless"
+        "Light"
       ],
       "null": [
         "Force",
-        "Curse"
+        "Dark"
       ],
       "drain": [],
       "repel": [
@@ -900,8 +900,8 @@
       ],
       "resist": [
         "Phys",
-        "Bless",
-        "Curse"
+        "Light",
+        "Dark"
       ],
       "null": [],
       "drain": [
@@ -957,7 +957,7 @@
       ],
       "resist": [],
       "null": [
-        "Bless"
+        "Light"
       ],
       "drain": [
         "Ice"
@@ -1008,13 +1008,13 @@
       ],
       "weak": [
         "Force",
-        "Curse"
+        "Dark"
       ],
       "resist": [],
       "null": [
         "Ice",
         "Elec",
-        "Bless"
+        "Light"
       ],
       "drain": [],
       "repel": [],
@@ -1125,7 +1125,7 @@
         "Psy"
       ],
       "resist": [
-        "Curse"
+        "Dark"
       ],
       "null": [
         "Nuke"
@@ -1176,7 +1176,7 @@
       ],
       "weak": [
         "Elec",
-        "Bless"
+        "Light"
       ],
       "resist": [],
       "null": [
@@ -1190,7 +1190,7 @@
       "name": "Angel",
       "devName": "angel",
       "aliases": [],
-      "inherit": "Bless",
+      "inherit": "Light",
       "arcana": "Justice",
       "race": "Divine",
       "level": 10,
@@ -1221,11 +1221,11 @@
       ],
       "weak": [
         "Force",
-        "Curse"
+        "Dark"
       ],
       "resist": [],
       "null": [
-        "Bless"
+        "Light"
       ],
       "drain": [],
       "repel": [],
@@ -1276,10 +1276,10 @@
         "Force"
       ],
       "resist": [
-        "Curse"
+        "Dark"
       ],
       "null": [
-        "Bless"
+        "Light"
       ],
       "drain": [],
       "repel": [],
@@ -1465,8 +1465,8 @@
         "Force"
       ],
       "resist": [
-        "Bless",
-        "Curse"
+        "Light",
+        "Dark"
       ],
       "null": [
         "Phys"
@@ -1535,7 +1535,7 @@
       "name": "Archangel",
       "devName": "archangel",
       "aliases": [],
-      "inherit": "Bless",
+      "inherit": "Light",
       "arcana": "Justice",
       "race": "Divine",
       "level": 18,
@@ -1570,11 +1570,11 @@
       ],
       "weak": [
         "Elec",
-        "Curse"
+        "Dark"
       ],
       "resist": [],
       "null": [
-        "Bless"
+        "Light"
       ],
       "drain": [],
       "repel": [],
@@ -1685,7 +1685,7 @@
         "Phys"
       ],
       "null": [
-        "Bless"
+        "Light"
       ],
       "drain": [],
       "repel": [],
@@ -1741,7 +1741,7 @@
       ],
       "resist": [
         "Gun",
-        "Bless"
+        "Light"
       ],
       "null": [
         "Nuke"
@@ -1803,7 +1803,7 @@
       ],
       "resist": [
         "Gun",
-        "Bless"
+        "Light"
       ],
       "null": [
         "Nuke"
@@ -1862,7 +1862,7 @@
       ],
       "resist": [
         "Force",
-        "Curse"
+        "Dark"
       ],
       "null": [],
       "drain": [],
@@ -1875,7 +1875,7 @@
       "name": "Arsène",
       "devName": "arsene",
       "aliases": [],
-      "inherit": "Curse",
+      "inherit": "Dark",
       "arcana": "Fool",
       "race": "Persona",
       "level": 1,
@@ -1910,10 +1910,10 @@
       ],
       "weak": [
         "Ice",
-        "Bless"
+        "Light"
       ],
       "resist": [
-        "Curse"
+        "Dark"
       ],
       "null": [],
       "drain": [],
@@ -1972,8 +1972,8 @@
         "Fire"
       ],
       "resist": [
-        "Bless",
-        "Curse"
+        "Light",
+        "Dark"
       ],
       "null": [
         "Ice",
@@ -2244,7 +2244,7 @@
         "Psy"
       ],
       "null": [
-        "Curse"
+        "Dark"
       ],
       "drain": [],
       "repel": [],
@@ -2306,7 +2306,7 @@
         "Psy"
       ],
       "null": [
-        "Curse"
+        "Dark"
       ],
       "drain": [],
       "repel": [],
@@ -2361,10 +2361,10 @@
         "Ice"
       ],
       "resist": [
-        "Curse"
+        "Dark"
       ],
       "null": [
-        "Bless"
+        "Light"
       ],
       "drain": [],
       "repel": [
@@ -2418,8 +2418,8 @@
       ],
       "resist": [],
       "null": [
-        "Bless",
-        "Curse"
+        "Light",
+        "Dark"
       ],
       "drain": [],
       "repel": [],
@@ -2602,7 +2602,7 @@
         "Ice"
       ],
       "null": [
-        "Bless"
+        "Light"
       ],
       "drain": [],
       "repel": [],
@@ -2650,7 +2650,7 @@
         }
       ],
       "weak": [
-        "Curse"
+        "Dark"
       ],
       "resist": [],
       "null": [
@@ -2753,7 +2753,7 @@
         "Force"
       ],
       "null": [
-        "Bless"
+        "Light"
       ],
       "drain": [],
       "repel": [
@@ -2765,7 +2765,7 @@
       "name": "Baphomet",
       "devName": "baphomet",
       "aliases": [],
-      "inherit": "Curse",
+      "inherit": "Dark",
       "arcana": "Devil",
       "race": "Vile",
       "level": 33,
@@ -2799,11 +2799,11 @@
         }
       ],
       "weak": [
-        "Bless"
+        "Light"
       ],
       "resist": [],
       "null": [
-        "Curse"
+        "Dark"
       ],
       "drain": [],
       "repel": [],
@@ -2852,12 +2852,12 @@
       ],
       "weak": [
         "Force",
-        "Curse"
+        "Dark"
       ],
       "resist": [],
       "null": [
         "Elec",
-        "Bless"
+        "Light"
       ],
       "drain": [],
       "repel": [],
@@ -2916,7 +2916,7 @@
       "name": "Beelzebub",
       "devName": "beelzebub",
       "aliases": [],
-      "inherit": "Curse",
+      "inherit": "Dark",
       "arcana": "Devil",
       "race": "Tyrant",
       "level": 95,
@@ -2962,10 +2962,10 @@
       ],
       "resist": [
         "Ice",
-        "Bless"
+        "Light"
       ],
       "null": [
-        "Curse"
+        "Dark"
       ],
       "drain": [
         "Elec"
@@ -3025,7 +3025,7 @@
       "null": [
         "Fire",
         "Force",
-        "Curse"
+        "Dark"
       ],
       "drain": [],
       "repel": [],
@@ -3035,7 +3035,7 @@
       "name": "Belphegor",
       "devName": "belphegor",
       "aliases": [],
-      "inherit": "Curse",
+      "inherit": "Dark",
       "arcana": "Tower",
       "race": "Tyrant",
       "level": 44,
@@ -3074,7 +3074,7 @@
       ],
       "weak": [
         "Fire",
-        "Bless"
+        "Light"
       ],
       "resist": [
         "Phys",
@@ -3082,7 +3082,7 @@
       ],
       "null": [
         "Ice",
-        "Curse"
+        "Dark"
       ],
       "drain": [],
       "repel": [],
@@ -3130,7 +3130,7 @@
       ],
       "resist": [
         "Fire",
-        "Curse"
+        "Dark"
       ],
       "null": [],
       "drain": [],
@@ -3141,7 +3141,7 @@
       "name": "Bicorn",
       "devName": "bicorn",
       "aliases": [],
-      "inherit": "Curse",
+      "inherit": "Dark",
       "arcana": "Hermit",
       "race": "Wilder",
       "level": 14,
@@ -3168,11 +3168,11 @@
       ],
       "weak": [
         "Elec",
-        "Bless"
+        "Light"
       ],
       "resist": [],
       "null": [
-        "Curse"
+        "Dark"
       ],
       "drain": [],
       "repel": [],
@@ -3229,7 +3229,7 @@
       "resist": [],
       "null": [
         "Fire",
-        "Bless"
+        "Light"
       ],
       "drain": [],
       "repel": [],
@@ -3239,7 +3239,7 @@
       "name": "Black Frost",
       "devName": "blackfrost",
       "aliases": [],
-      "inherit": "Curse",
+      "inherit": "Dark",
       "arcana": "Fool",
       "race": "Night",
       "level": 44,
@@ -3281,7 +3281,7 @@
         }
       ],
       "weak": [
-        "Bless"
+        "Light"
       ],
       "resist": [
         "Fire"
@@ -3291,7 +3291,7 @@
       ],
       "drain": [],
       "repel": [
-        "Curse"
+        "Dark"
       ],
       "game": "smt5"
     },
@@ -3334,7 +3334,7 @@
       ],
       "weak": [
         "Fire",
-        "Bless"
+        "Light"
       ],
       "resist": [
         "Phys"
@@ -3393,8 +3393,8 @@
         "Force"
       ],
       "resist": [
-        "Bless",
-        "Curse"
+        "Light",
+        "Dark"
       ],
       "null": [],
       "drain": [],
@@ -3407,7 +3407,7 @@
       "name": "Bugs",
       "devName": "bugs",
       "aliases": [],
-      "inherit": "Curse",
+      "inherit": "Dark",
       "arcana": "Fool",
       "race": "Wilder",
       "level": 24,
@@ -3445,7 +3445,7 @@
       ],
       "resist": [],
       "null": [
-        "Curse"
+        "Dark"
       ],
       "drain": [],
       "repel": [],
@@ -3504,7 +3504,7 @@
       "null": [
         "Fire",
         "Wind",
-        "Curse"
+        "Dark"
       ],
       "drain": [],
       "repel": [],
@@ -3759,7 +3759,7 @@
         "Fire"
       ],
       "null": [
-        "Bless"
+        "Light"
       ],
       "drain": [],
       "repel": [],
@@ -4203,7 +4203,7 @@
       "name": "Cendrillon",
       "devName": "cendrillon",
       "aliases": [],
-      "inherit": "Bless",
+      "inherit": "Light",
       "arcana": "Faith",
       "race": "Persona",
       "level": 75,
@@ -4253,11 +4253,11 @@
         }
       ],
       "weak": [
-        "Curse"
+        "Dark"
       ],
       "resist": [],
       "null": [
-        "Bless"
+        "Light"
       ],
       "drain": [],
       "repel": [],
@@ -4324,7 +4324,7 @@
       "aliases": [
         "cerberus"
       ],
-      "inherit": "Curse",
+      "inherit": "Dark",
       "arcana": "Strength",
       "race": "Persona",
       "level": 34,
@@ -4417,11 +4417,11 @@
         }
       ],
       "weak": [
-        "Bless"
+        "Light"
       ],
       "resist": [],
       "null": [
-        "Curse"
+        "Dark"
       ],
       "drain": [],
       "repel": [],
@@ -4548,7 +4548,7 @@
       "name": "Choronzon",
       "devName": "choronzon",
       "aliases": [],
-      "inherit": "Curse",
+      "inherit": "Dark",
       "arcana": "Magician",
       "race": "",
       "level": 28,
@@ -4594,7 +4594,7 @@
         }
       ],
       "weak": [
-        "Bless"
+        "Light"
       ],
       "resist": [
         "Phys"
@@ -4648,12 +4648,12 @@
         }
       ],
       "weak": [
-        "Curse"
+        "Dark"
       ],
       "resist": [
         "Fire",
         "Ice",
-        "Bless"
+        "Light"
       ],
       "null": [],
       "drain": [],
@@ -4664,7 +4664,7 @@
       "name": "Cleopatra",
       "devName": "cleopatra",
       "aliases": [],
-      "inherit": "Bless",
+      "inherit": "Light",
       "arcana": null,
       "race": "Femme",
       "level": 61,
@@ -4706,7 +4706,7 @@
         }
       ],
       "weak": [
-        "Curse"
+        "Dark"
       ],
       "resist": [
         "Fire",
@@ -4716,7 +4716,7 @@
       ],
       "null": [],
       "drain": [
-        "Bless"
+        "Light"
       ],
       "repel": [],
       "game": "smt5"
@@ -4875,7 +4875,7 @@
         "Fire"
       ],
       "null": [
-        "Bless"
+        "Light"
       ],
       "drain": [],
       "repel": [],
@@ -4916,13 +4916,13 @@
       ],
       "weak": [
         "Elec",
-        "Bless"
+        "Light"
       ],
       "resist": [
         "Fire"
       ],
       "null": [
-        "Curse"
+        "Dark"
       ],
       "drain": [],
       "repel": [],
@@ -4974,8 +4974,8 @@
       ],
       "resist": [],
       "null": [
-        "Bless",
-        "Curse"
+        "Light",
+        "Dark"
       ],
       "drain": [],
       "repel": [],
@@ -5020,7 +5020,7 @@
       ],
       "weak": [
         "Ice",
-        "Bless"
+        "Light"
       ],
       "resist": [
         "Phys",
@@ -5077,7 +5077,7 @@
         }
       ],
       "weak": [
-        "Curse"
+        "Dark"
       ],
       "resist": [
         "Fire",
@@ -5086,7 +5086,7 @@
         "Force"
       ],
       "null": [
-        "Bless"
+        "Light"
       ],
       "drain": [],
       "repel": [],
@@ -5096,7 +5096,7 @@
       "name": "Decarabia",
       "devName": "decarabia",
       "aliases": [],
-      "inherit": "Curse",
+      "inherit": "Dark",
       "arcana": "Councillor",
       "race": "Fallen",
       "level": 55,
@@ -5130,11 +5130,11 @@
         }
       ],
       "weak": [
-        "Bless"
+        "Light"
       ],
       "resist": [],
       "null": [
-        "Curse"
+        "Dark"
       ],
       "drain": [],
       "repel": [],
@@ -5190,8 +5190,8 @@
       ],
       "resist": [],
       "null": [
-        "Bless",
-        "Curse"
+        "Light",
+        "Dark"
       ],
       "drain": [],
       "repel": [],
@@ -5314,7 +5314,7 @@
         "Elec"
       ],
       "resist": [
-        "Bless"
+        "Light"
       ],
       "null": [
         "Wind"
@@ -5438,7 +5438,7 @@
       "name": "Dominion",
       "devName": "dominion",
       "aliases": [],
-      "inherit": "Bless",
+      "inherit": "Light",
       "arcana": "Justice",
       "race": "Divine",
       "level": 50,
@@ -5473,12 +5473,12 @@
       ],
       "weak": [
         "Force",
-        "Curse"
+        "Dark"
       ],
       "resist": [],
       "null": [
         "Elec",
-        "Bless"
+        "Light"
       ],
       "drain": [],
       "repel": [],
@@ -5525,7 +5525,7 @@
         "Elec"
       ],
       "resist": [
-        "Curse"
+        "Dark"
       ],
       "null": [
         "Fire"
@@ -5538,7 +5538,7 @@
       "name": "Ella",
       "devName": "ella",
       "aliases": [],
-      "inherit": "Bless",
+      "inherit": "Light",
       "arcana": "Faith",
       "race": "Persona",
       "level": 75,
@@ -5588,13 +5588,13 @@
         }
       ],
       "weak": [
-        "Curse"
+        "Dark"
       ],
       "resist": [
         "Nuke"
       ],
       "null": [
-        "Bless"
+        "Light"
       ],
       "drain": [],
       "repel": [],
@@ -5744,7 +5744,7 @@
         }
       ],
       "weak": [
-        "Curse"
+        "Dark"
       ],
       "resist": [
         "Force"
@@ -5807,7 +5807,7 @@
       "resist": [],
       "null": [
         "Fire",
-        "Bless"
+        "Light"
       ],
       "drain": [],
       "repel": [],
@@ -5898,7 +5898,7 @@
         "Ice"
       ],
       "resist": [
-        "Curse"
+        "Dark"
       ],
       "null": [
         "Fire"
@@ -5950,11 +5950,11 @@
       ],
       "weak": [
         "Elec",
-        "Bless"
+        "Light"
       ],
       "resist": [],
       "null": [
-        "Curse"
+        "Dark"
       ],
       "drain": [
         "Ice"
@@ -6001,7 +6001,7 @@
       ],
       "weak": [
         "Elec",
-        "Curse"
+        "Dark"
       ],
       "resist": [],
       "null": [
@@ -6053,11 +6053,11 @@
         }
       ],
       "weak": [
-        "Curse"
+        "Dark"
       ],
       "resist": [],
       "null": [
-        "Bless"
+        "Light"
       ],
       "drain": [],
       "repel": [],
@@ -6168,7 +6168,7 @@
       ],
       "null": [
         "Ice",
-        "Bless"
+        "Light"
       ],
       "drain": [],
       "repel": [],
@@ -6217,7 +6217,7 @@
       ],
       "weak": [
         "Elec",
-        "Curse"
+        "Dark"
       ],
       "resist": [
         "Phys"
@@ -6276,7 +6276,7 @@
       ],
       "weak": [
         "Fire",
-        "Curse"
+        "Dark"
       ],
       "resist": [],
       "null": [],
@@ -6335,7 +6335,7 @@
         "Elec"
       ],
       "resist": [
-        "Bless"
+        "Light"
       ],
       "null": [],
       "drain": [
@@ -6440,10 +6440,10 @@
       "weak": [
         "Elec",
         "Force",
-        "Bless"
+        "Light"
       ],
       "resist": [
-        "Curse"
+        "Dark"
       ],
       "null": [],
       "drain": [],
@@ -6613,7 +6613,7 @@
         }
       ],
       "weak": [
-        "Bless"
+        "Light"
       ],
       "resist": [],
       "null": [
@@ -6786,7 +6786,7 @@
         }
       ],
       "weak": [
-        "Curse"
+        "Dark"
       ],
       "resist": [],
       "null": [
@@ -6943,7 +6943,7 @@
       ],
       "resist": [],
       "null": [
-        "Bless"
+        "Light"
       ],
       "drain": [
         "Ice"
@@ -7000,7 +7000,7 @@
       ],
       "resist": [],
       "null": [
-        "Curse"
+        "Dark"
       ],
       "drain": [],
       "repel": [],
@@ -7057,7 +7057,7 @@
       ],
       "null": [
         "Psy",
-        "Curse"
+        "Dark"
       ],
       "drain": [
         "Wind"
@@ -7112,11 +7112,11 @@
       ],
       "weak": [
         "Force",
-        "Curse"
+        "Dark"
       ],
       "resist": [
         "Phys",
-        "Bless"
+        "Light"
       ],
       "null": [
         "Elec"
@@ -7288,7 +7288,7 @@
       ],
       "resist": [],
       "null": [
-        "Curse"
+        "Dark"
       ],
       "drain": [],
       "repel": [],
@@ -7339,8 +7339,8 @@
         "Ice"
       ],
       "resist": [
-        "Bless",
-        "Curse"
+        "Light",
+        "Dark"
       ],
       "null": [
         "Fire",
@@ -7400,13 +7400,13 @@
         }
       ],
       "weak": [
-        "Bless"
+        "Light"
       ],
       "resist": [
         "Psy"
       ],
       "null": [
-        "Curse"
+        "Dark"
       ],
       "drain": [],
       "repel": [],
@@ -7684,7 +7684,7 @@
       "name": "Horus",
       "devName": "horus",
       "aliases": [],
-      "inherit": "Bless",
+      "inherit": "Light",
       "arcana": "Sun",
       "race": "Deity",
       "level": 42,
@@ -7723,7 +7723,7 @@
       ],
       "weak": [
         "Force",
-        "Curse"
+        "Dark"
       ],
       "resist": [
         "Fire",
@@ -7732,7 +7732,7 @@
       "null": [],
       "drain": [],
       "repel": [
-        "Bless"
+        "Light"
       ],
       "game": "smt5"
     },
@@ -7884,7 +7884,7 @@
         "Force"
       ],
       "null": [
-        "Bless"
+        "Light"
       ],
       "drain": [],
       "repel": [],
@@ -7937,7 +7937,7 @@
       ],
       "weak": [
         "Phys",
-        "Curse"
+        "Dark"
       ],
       "resist": [],
       "null": [
@@ -8033,10 +8033,10 @@
       ],
       "weak": [
         "Ice",
-        "Bless"
+        "Light"
       ],
       "resist": [
-        "Curse"
+        "Dark"
       ],
       "null": [
         "Fire"
@@ -8158,7 +8158,7 @@
         }
       ],
       "weak": [
-        "Bless"
+        "Light"
       ],
       "resist": [
         "Fire"
@@ -8172,7 +8172,7 @@
       "name": "Ishtar",
       "devName": "ishtar",
       "aliases": [],
-      "inherit": "Bless",
+      "inherit": "Light",
       "arcana": "Lovers",
       "race": "Lady",
       "level": 62,
@@ -8211,12 +8211,12 @@
       ],
       "weak": [
         "Force",
-        "Curse"
+        "Dark"
       ],
       "resist": [],
       "null": [
         "Elec",
-        "Bless"
+        "Light"
       ],
       "drain": [],
       "repel": [],
@@ -8264,7 +8264,7 @@
         }
       ],
       "weak": [
-        "Curse"
+        "Dark"
       ],
       "resist": [
         "Fire"
@@ -8320,7 +8320,7 @@
         }
       ],
       "weak": [
-        "Curse"
+        "Dark"
       ],
       "resist": [
         "Fire"
@@ -8403,7 +8403,7 @@
         "Elec"
       ],
       "null": [
-        "Curse"
+        "Dark"
       ],
       "drain": [],
       "repel": [],
@@ -8596,7 +8596,7 @@
       "resist": [],
       "null": [
         "Elec",
-        "Curse"
+        "Dark"
       ],
       "drain": [],
       "repel": [],
@@ -8739,7 +8739,7 @@
       ],
       "weak": [
         "Elec",
-        "Curse"
+        "Dark"
       ],
       "resist": [],
       "null": [],
@@ -8798,7 +8798,7 @@
         "Fire"
       ],
       "resist": [
-        "Bless"
+        "Light"
       ],
       "null": [
         "Ice"
@@ -9180,8 +9180,8 @@
         "Wind"
       ],
       "null": [
-        "Bless",
-        "Curse"
+        "Light",
+        "Dark"
       ],
       "drain": [],
       "repel": [],
@@ -9240,8 +9240,8 @@
       ],
       "resist": [],
       "null": [
-        "Bless",
-        "Curse"
+        "Light",
+        "Dark"
       ],
       "drain": [],
       "repel": [],
@@ -9251,7 +9251,7 @@
       "name": "Kaiwan",
       "devName": "kaiwan",
       "aliases": [],
-      "inherit": "Curse",
+      "inherit": "Dark",
       "arcana": "Star",
       "race": "Night",
       "level": 45,
@@ -9285,11 +9285,11 @@
         }
       ],
       "weak": [
-        "Bless"
+        "Light"
       ],
       "resist": [],
       "null": [
-        "Curse"
+        "Dark"
       ],
       "drain": [],
       "repel": [],
@@ -9299,7 +9299,7 @@
       "name": "Kala-Nemi",
       "devName": "kalanemi",
       "aliases": [],
-      "inherit": "Bless",
+      "inherit": "Light",
       "arcana": "Justice",
       "race": "Persona",
       "level": 36,
@@ -9369,11 +9369,11 @@
         }
       ],
       "weak": [
-        "Curse"
+        "Dark"
       ],
       "resist": [],
       "null": [
-        "Bless"
+        "Light"
       ],
       "drain": [],
       "repel": [],
@@ -9428,14 +9428,14 @@
         "Force"
       ],
       "resist": [
-        "Bless"
+        "Light"
       ],
       "null": [
         "Fire"
       ],
       "drain": [],
       "repel": [
-        "Curse"
+        "Dark"
       ],
       "game": "smt5"
     },
@@ -9533,7 +9533,7 @@
       ],
       "resist": [
         "Wind",
-        "Curse"
+        "Dark"
       ],
       "null": [
         "Ice"
@@ -9638,7 +9638,7 @@
       "resist": [],
       "null": [
         "Wind",
-        "Curse"
+        "Dark"
       ],
       "drain": [
         "Ice"
@@ -9945,7 +9945,7 @@
       "name": "Khonsu",
       "devName": "khonsu",
       "aliases": [],
-      "inherit": "Bless",
+      "inherit": "Light",
       "arcana": null,
       "race": "Deity",
       "level": 62,
@@ -9993,7 +9993,7 @@
         "Fire"
       ],
       "null": [
-        "Bless"
+        "Light"
       ],
       "drain": [],
       "repel": [],
@@ -10051,7 +10051,7 @@
         "Fire"
       ],
       "drain": [
-        "Bless"
+        "Light"
       ],
       "repel": [],
       "game": "smt5"
@@ -10097,7 +10097,7 @@
         "Elec"
       ],
       "resist": [
-        "Bless"
+        "Light"
       ],
       "null": [
         "Force"
@@ -10149,11 +10149,11 @@
       ],
       "weak": [
         "Fire",
-        "Curse"
+        "Dark"
       ],
       "resist": [],
       "null": [
-        "Bless"
+        "Light"
       ],
       "drain": [
         "Ice"
@@ -10401,7 +10401,7 @@
         }
       ],
       "weak": [
-        "Curse"
+        "Dark"
       ],
       "resist": [
         "Fire",
@@ -10410,7 +10410,7 @@
         "Force"
       ],
       "null": [
-        "Bless"
+        "Light"
       ],
       "drain": [],
       "repel": [],
@@ -10617,10 +10617,10 @@
       ],
       "weak": [
         "Force",
-        "Curse"
+        "Dark"
       ],
       "resist": [
-        "Bless"
+        "Light"
       ],
       "null": [
         "Ice"
@@ -10678,7 +10678,7 @@
         "Elec"
       ],
       "resist": [
-        "Bless"
+        "Light"
       ],
       "null": [
         "Force"
@@ -10803,7 +10803,7 @@
         "Elec"
       ],
       "resist": [
-        "Curse"
+        "Dark"
       ],
       "null": [
         "Force"
@@ -10952,11 +10952,11 @@
         }
       ],
       "weak": [
-        "Curse"
+        "Dark"
       ],
       "resist": [],
       "null": [
-        "Bless"
+        "Light"
       ],
       "drain": [],
       "repel": [],
@@ -11069,7 +11069,7 @@
         "Force"
       ],
       "null": [
-        "Curse"
+        "Dark"
       ],
       "drain": [],
       "repel": [],
@@ -11127,7 +11127,7 @@
         "Force"
       ],
       "null": [
-        "Bless"
+        "Light"
       ],
       "drain": [],
       "repel": [],
@@ -11137,7 +11137,7 @@
       "name": "Lamia",
       "devName": "lamia",
       "aliases": [],
-      "inherit": "Curse",
+      "inherit": "Dark",
       "arcana": "Empress",
       "race": "Femme",
       "level": 36,
@@ -11224,11 +11224,11 @@
       ],
       "weak": [
         "Force",
-        "Bless"
+        "Light"
       ],
       "resist": [],
       "null": [
-        "Curse"
+        "Dark"
       ],
       "drain": [],
       "repel": [],
@@ -11238,7 +11238,7 @@
       "name": "Legion",
       "devName": "legion",
       "aliases": [],
-      "inherit": "Curse",
+      "inherit": "Dark",
       "arcana": "Fool",
       "race": "Foul",
       "level": 19,
@@ -11269,11 +11269,11 @@
       ],
       "weak": [
         "Elec",
-        "Bless"
+        "Light"
       ],
       "resist": [],
       "null": [
-        "Curse"
+        "Dark"
       ],
       "drain": [],
       "repel": [],
@@ -11375,7 +11375,7 @@
         "Fire",
         "Ice",
         "Elec",
-        "Curse"
+        "Dark"
       ],
       "null": [],
       "drain": [],
@@ -11420,11 +11420,11 @@
         }
       ],
       "weak": [
-        "Bless"
+        "Light"
       ],
       "resist": [],
       "null": [
-        "Curse"
+        "Dark"
       ],
       "drain": [],
       "repel": [],
@@ -11472,11 +11472,11 @@
         }
       ],
       "weak": [
-        "Bless"
+        "Light"
       ],
       "resist": [
         "Force",
-        "Curse"
+        "Dark"
       ],
       "null": [
         "Ice"
@@ -11491,7 +11491,7 @@
       "aliases": [
         "loki"
       ],
-      "inherit": "Curse",
+      "inherit": "Dark",
       "arcana": "Justice",
       "race": "Persona",
       "level": 75,
@@ -11529,11 +11529,11 @@
         }
       ],
       "weak": [
-        "Bless"
+        "Light"
       ],
       "resist": [
         "Force",
-        "Curse"
+        "Dark"
       ],
       "null": [
         "Ice"
@@ -11588,7 +11588,7 @@
       ],
       "weak": [
         "Ice",
-        "Bless"
+        "Light"
       ],
       "resist": [
         "Fire"
@@ -11693,7 +11693,7 @@
         }
       ],
       "weak": [
-        "Bless"
+        "Light"
       ],
       "resist": [
         "Fire",
@@ -11706,7 +11706,7 @@
         "Gun"
       ],
       "drain": [
-        "Curse"
+        "Dark"
       ],
       "repel": [],
       "game": "p5"
@@ -11862,11 +11862,11 @@
         }
       ],
       "weak": [
-        "Bless"
+        "Light"
       ],
       "resist": [],
       "null": [
-        "Curse"
+        "Dark"
       ],
       "drain": [],
       "repel": [],
@@ -11922,7 +11922,7 @@
       ],
       "resist": [],
       "null": [
-        "Curse"
+        "Dark"
       ],
       "drain": [
         "Fire"
@@ -11982,8 +11982,8 @@
         "Gun"
       ],
       "null": [
-        "Bless",
-        "Curse"
+        "Light",
+        "Dark"
       ],
       "drain": [],
       "repel": [],
@@ -12044,8 +12044,8 @@
         "Gun"
       ],
       "null": [
-        "Bless",
-        "Curse"
+        "Light",
+        "Dark"
       ],
       "drain": [],
       "repel": [],
@@ -12089,10 +12089,10 @@
         }
       ],
       "weak": [
-        "Curse"
+        "Dark"
       ],
       "resist": [
-        "Bless"
+        "Light"
       ],
       "null": [],
       "drain": [],
@@ -12103,7 +12103,7 @@
       "name": "Manananggal",
       "devName": "manananggal",
       "aliases": [],
-      "inherit": "Curse",
+      "inherit": "Dark",
       "arcana": null,
       "race": "Femme",
       "level": 25,
@@ -12137,11 +12137,11 @@
         }
       ],
       "weak": [
-        "Bless"
+        "Light"
       ],
       "resist": [],
       "null": [
-        "Curse"
+        "Dark"
       ],
       "drain": [],
       "repel": [],
@@ -12236,8 +12236,8 @@
         "Ice"
       ],
       "resist": [
-        "Bless",
-        "Curse"
+        "Light",
+        "Dark"
       ],
       "null": [],
       "drain": [
@@ -12295,10 +12295,10 @@
         "Elec"
       ],
       "resist": [
-        "Curse"
+        "Dark"
       ],
       "null": [
-        "Bless"
+        "Light"
       ],
       "drain": [
         "Force"
@@ -12351,8 +12351,8 @@
         "Elec"
       ],
       "resist": [
-        "Bless",
-        "Curse"
+        "Light",
+        "Dark"
       ],
       "null": [
         "Force"
@@ -12365,7 +12365,7 @@
       "name": "Melchizedek",
       "devName": "melchizedek",
       "aliases": [],
-      "inherit": "Bless",
+      "inherit": "Light",
       "arcana": "Justice",
       "race": "Herald",
       "level": 60,
@@ -12407,10 +12407,10 @@
       ],
       "resist": [],
       "null": [
-        "Curse"
+        "Dark"
       ],
       "drain": [
-        "Bless"
+        "Light"
       ],
       "repel": [],
       "game": "smt5"
@@ -12461,14 +12461,14 @@
         }
       ],
       "weak": [
-        "Bless"
+        "Light"
       ],
       "resist": [],
       "null": [
         "Phys"
       ],
       "drain": [
-        "Curse"
+        "Dark"
       ],
       "repel": [],
       "game": "smt5"
@@ -12590,7 +12590,7 @@
         "Elec"
       ],
       "resist": [
-        "Bless"
+        "Light"
       ],
       "null": [
         "Wind"
@@ -12697,7 +12697,7 @@
         }
       ],
       "weak": [
-        "Curse"
+        "Dark"
       ],
       "resist": [
         "Fire",
@@ -12710,7 +12710,7 @@
       "null": [],
       "drain": [],
       "repel": [
-        "Bless"
+        "Light"
       ],
       "game": "p5",
       "user": "P3 Protagonist",
@@ -12767,7 +12767,7 @@
         }
       ],
       "weak": [
-        "Curse"
+        "Dark"
       ],
       "resist": [
         "Fire",
@@ -12780,7 +12780,7 @@
       "null": [],
       "drain": [],
       "repel": [
-        "Bless"
+        "Light"
       ],
       "game": "p5"
     },
@@ -12837,7 +12837,7 @@
         "Force"
       ],
       "null": [
-        "Bless"
+        "Light"
       ],
       "drain": [],
       "repel": [],
@@ -12895,7 +12895,7 @@
       "null": [
         "Fire",
         "Ice",
-        "Bless"
+        "Light"
       ],
       "drain": [],
       "repel": [],
@@ -13051,12 +13051,12 @@
       ],
       "weak": [
         "Force",
-        "Bless"
+        "Light"
       ],
       "resist": [],
       "null": [
         "Elec",
-        "Curse"
+        "Dark"
       ],
       "drain": [],
       "repel": [],
@@ -13112,7 +13112,7 @@
       ],
       "resist": [],
       "null": [
-        "Bless"
+        "Light"
       ],
       "drain": [
         "Fire"
@@ -13167,10 +13167,10 @@
         "Ice"
       ],
       "resist": [
-        "Curse"
+        "Dark"
       ],
       "null": [
-        "Bless"
+        "Light"
       ],
       "drain": [],
       "repel": [],
@@ -13266,7 +13266,7 @@
       ],
       "resist": [
         "Elec",
-        "Curse"
+        "Dark"
       ],
       "null": [
         "Fire"
@@ -13324,7 +13324,7 @@
       ],
       "null": [],
       "drain": [
-        "Curse"
+        "Dark"
       ],
       "repel": [],
       "game": "smt5"
@@ -13379,8 +13379,8 @@
       ],
       "resist": [
         "Fire",
-        "Bless",
-        "Curse"
+        "Light",
+        "Dark"
       ],
       "null": [],
       "drain": [
@@ -13652,7 +13652,7 @@
       "name": "Nebiros",
       "devName": "nebiros",
       "aliases": [],
-      "inherit": "Curse",
+      "inherit": "Dark",
       "arcana": "Devil",
       "race": "Fallen",
       "level": 67,
@@ -13687,13 +13687,13 @@
       ],
       "weak": [
         "Force",
-        "Bless"
+        "Light"
       ],
       "resist": [],
       "null": [],
       "drain": [],
       "repel": [
-        "Curse"
+        "Dark"
       ],
       "game": "smt5"
     },
@@ -13833,7 +13833,7 @@
         "Force"
       ],
       "resist": [
-        "Bless"
+        "Light"
       ],
       "null": [
         "Elec"
@@ -13846,7 +13846,7 @@
       "name": "Nemesis",
       "devName": "nemesis",
       "aliases": [],
-      "inherit": "Bless",
+      "inherit": "Light",
       "arcana": "Justice",
       "race": "Persona",
       "level": 36,
@@ -13888,10 +13888,10 @@
         }
       ],
       "weak": [
-        "Curse"
+        "Dark"
       ],
       "resist": [
-        "Bless"
+        "Light"
       ],
       "null": [],
       "drain": [],
@@ -13946,8 +13946,8 @@
         "Elec"
       ],
       "resist": [
-        "Bless",
-        "Curse"
+        "Light",
+        "Dark"
       ],
       "null": [],
       "drain": [],
@@ -13995,10 +13995,10 @@
         "Elec"
       ],
       "resist": [
-        "Bless"
+        "Light"
       ],
       "null": [
-        "Curse"
+        "Dark"
       ],
       "drain": [],
       "repel": [],
@@ -14102,7 +14102,7 @@
       ],
       "resist": [
         "Elec",
-        "Curse"
+        "Dark"
       ],
       "null": [],
       "drain": [],
@@ -14162,7 +14162,7 @@
       "resist": [],
       "null": [
         "Elec",
-        "Curse"
+        "Dark"
       ],
       "drain": [],
       "repel": [
@@ -14205,11 +14205,11 @@
       ],
       "weak": [
         "Ice",
-        "Bless"
+        "Light"
       ],
       "resist": [
         "Elec",
-        "Curse"
+        "Dark"
       ],
       "null": [],
       "drain": [],
@@ -14318,8 +14318,8 @@
       ],
       "resist": [],
       "null": [
-        "Bless",
-        "Curse"
+        "Light",
+        "Dark"
       ],
       "drain": [],
       "repel": [
@@ -14372,8 +14372,8 @@
         "Ice"
       ],
       "resist": [
-        "Bless",
-        "Curse"
+        "Light",
+        "Dark"
       ],
       "null": [],
       "drain": [],
@@ -14486,7 +14486,7 @@
         }
       ],
       "weak": [
-        "Bless"
+        "Light"
       ],
       "resist": [
         "Phys",
@@ -14533,7 +14533,7 @@
       ],
       "weak": [
         "Elec",
-        "Bless"
+        "Light"
       ],
       "resist": [
         "Phys"
@@ -14629,7 +14629,7 @@
         "Ice"
       ],
       "resist": [
-        "Curse"
+        "Dark"
       ],
       "null": [
         "Fire"
@@ -14693,10 +14693,10 @@
       ],
       "weak": [
         "Elec",
-        "Curse"
+        "Dark"
       ],
       "resist": [
-        "Bless"
+        "Light"
       ],
       "null": [],
       "drain": [],
@@ -14759,10 +14759,10 @@
       ],
       "weak": [
         "Elec",
-        "Curse"
+        "Dark"
       ],
       "resist": [
-        "Bless"
+        "Light"
       ],
       "null": [],
       "drain": [],
@@ -14822,10 +14822,10 @@
       ],
       "weak": [
         "Elec",
-        "Curse"
+        "Dark"
       ],
       "resist": [
-        "Bless"
+        "Light"
       ],
       "null": [],
       "drain": [],
@@ -14879,10 +14879,10 @@
       ],
       "weak": [
         "Elec",
-        "Curse"
+        "Dark"
       ],
       "resist": [
-        "Bless"
+        "Light"
       ],
       "null": [],
       "drain": [],
@@ -14920,8 +14920,8 @@
         "Wind",
         "Nuke",
         "Psy",
-        "Bless",
-        "Curse"
+        "Light",
+        "Dark"
       ],
       "null": [],
       "drain": [],
@@ -14976,7 +14976,7 @@
         "Ice"
       ],
       "resist": [
-        "Curse"
+        "Dark"
       ],
       "null": [
         "Fire"
@@ -15032,7 +15032,7 @@
       "resist": [],
       "null": [
         "Ice",
-        "Curse"
+        "Dark"
       ],
       "drain": [],
       "repel": [],
@@ -15083,7 +15083,7 @@
         "Elec"
       ],
       "null": [
-        "Curse"
+        "Dark"
       ],
       "drain": [],
       "repel": [],
@@ -15132,7 +15132,7 @@
       ],
       "weak": [
         "Ice",
-        "Bless"
+        "Light"
       ],
       "resist": [],
       "null": [
@@ -15140,7 +15140,7 @@
       ],
       "drain": [],
       "repel": [
-        "Curse"
+        "Dark"
       ],
       "game": "p4"
     },
@@ -15193,8 +15193,8 @@
         "Fire"
       ],
       "resist": [
-        "Bless",
-        "Curse"
+        "Light",
+        "Dark"
       ],
       "null": [
         "Ice"
@@ -15275,7 +15275,7 @@
         "Phys"
       ],
       "null": [
-        "Curse"
+        "Dark"
       ],
       "drain": [],
       "repel": [],
@@ -15288,7 +15288,7 @@
       "name": "Pandora",
       "devName": "pandora",
       "aliases": [],
-      "inherit": "Bless",
+      "inherit": "Light",
       "arcana": "Hope",
       "race": "Persona",
       "level": 1,
@@ -15386,11 +15386,11 @@
         }
       ],
       "weak": [
-        "Curse"
+        "Dark"
       ],
       "resist": [],
       "null": [
-        "Bless"
+        "Light"
       ],
       "drain": [],
       "repel": [],
@@ -15445,7 +15445,7 @@
       ],
       "resist": [
         "Ice",
-        "Bless"
+        "Light"
       ],
       "null": [],
       "drain": [],
@@ -15504,7 +15504,7 @@
         "Force"
       ],
       "null": [
-        "Curse"
+        "Dark"
       ],
       "drain": [],
       "repel": [],
@@ -15597,7 +15597,7 @@
       "name": "Pisaca",
       "devName": "pisaca",
       "aliases": [],
-      "inherit": "Curse",
+      "inherit": "Dark",
       "arcana": "Death",
       "race": "Haunt",
       "level": 31,
@@ -15636,11 +15636,11 @@
       ],
       "weak": [
         "Fire",
-        "Bless"
+        "Light"
       ],
       "resist": [],
       "null": [
-        "Curse"
+        "Dark"
       ],
       "drain": [],
       "repel": [],
@@ -15650,7 +15650,7 @@
       "name": "Pithos",
       "devName": "pithos",
       "aliases": [],
-      "inherit": "Bless",
+      "inherit": "Light",
       "arcana": "Hope",
       "race": "Persona",
       "level": 1,
@@ -15728,10 +15728,10 @@
         }
       ],
       "weak": [
-        "Curse"
+        "Dark"
       ],
       "resist": [
-        "Bless"
+        "Light"
       ],
       "null": [],
       "drain": [],
@@ -15775,7 +15775,7 @@
         }
       ],
       "weak": [
-        "Curse"
+        "Dark"
       ],
       "resist": [
         "Force"
@@ -15824,7 +15824,7 @@
       ],
       "weak": [
         "Force",
-        "Bless"
+        "Light"
       ],
       "resist": [],
       "null": [
@@ -15913,7 +15913,7 @@
       "name": "Power",
       "devName": "power",
       "aliases": [],
-      "inherit": "Bless",
+      "inherit": "Light",
       "arcana": "Justice",
       "race": "Divine",
       "level": 39,
@@ -15952,13 +15952,13 @@
       ],
       "weak": [
         "Force",
-        "Curse"
+        "Dark"
       ],
       "resist": [
         "Elec"
       ],
       "null": [
-        "Bless"
+        "Light"
       ],
       "drain": [],
       "repel": [],
@@ -15968,7 +15968,7 @@
       "name": "Preta",
       "devName": "preta",
       "aliases": [],
-      "inherit": "Curse",
+      "inherit": "Dark",
       "arcana": null,
       "race": "Haunt",
       "level": 3,
@@ -15996,10 +15996,10 @@
       "weak": [
         "Fire",
         "Force",
-        "Bless"
+        "Light"
       ],
       "resist": [
-        "Curse"
+        "Dark"
       ],
       "null": [],
       "drain": [],
@@ -16010,7 +16010,7 @@
       "name": "Principality",
       "devName": "principality",
       "aliases": [],
-      "inherit": "Bless",
+      "inherit": "Light",
       "arcana": "Justice",
       "race": "Divine",
       "level": 28,
@@ -16044,11 +16044,11 @@
         }
       ],
       "weak": [
-        "Curse"
+        "Dark"
       ],
       "resist": [],
       "null": [
-        "Bless"
+        "Light"
       ],
       "drain": [],
       "repel": [],
@@ -16388,8 +16388,8 @@
         "Ice"
       ],
       "resist": [
-        "Bless",
-        "Curse"
+        "Light",
+        "Dark"
       ],
       "null": [],
       "drain": [],
@@ -16440,7 +16440,7 @@
       "weak": [
         "Fire",
         "Elec",
-        "Bless"
+        "Light"
       ],
       "resist": [],
       "null": [],
@@ -16500,11 +16500,11 @@
         }
       ],
       "weak": [
-        "Bless"
+        "Light"
       ],
       "resist": [],
       "null": [
-        "Curse"
+        "Dark"
       ],
       "drain": [],
       "repel": [],
@@ -16566,7 +16566,7 @@
       ],
       "null": [
         "Force",
-        "Bless"
+        "Light"
       ],
       "drain": [],
       "repel": [],
@@ -16621,8 +16621,8 @@
         "Ice"
       ],
       "resist": [
-        "Bless",
-        "Curse"
+        "Light",
+        "Dark"
       ],
       "null": [],
       "drain": [
@@ -16698,7 +16698,7 @@
       "name": "Robin Hood",
       "devName": "robinhood",
       "aliases": [],
-      "inherit": "Bless",
+      "inherit": "Light",
       "arcana": "Justice",
       "race": "Persona",
       "level": 45,
@@ -16772,10 +16772,10 @@
         }
       ],
       "weak": [
-        "Curse"
+        "Dark"
       ],
       "resist": [
-        "Bless"
+        "Light"
       ],
       "null": [],
       "drain": [],
@@ -16942,7 +16942,7 @@
       "name": "Sandalphon",
       "devName": "sandalphon",
       "aliases": [],
-      "inherit": "Bless",
+      "inherit": "Light",
       "arcana": "Moon",
       "race": "Herald",
       "level": 88,
@@ -16987,12 +16987,12 @@
         "Force"
       ],
       "resist": [
-        "Curse"
+        "Dark"
       ],
       "null": [
         "Phys",
         "Elec",
-        "Bless"
+        "Light"
       ],
       "drain": [],
       "repel": [],
@@ -17085,7 +17085,7 @@
       ],
       "weak": [
         "Fire",
-        "Curse"
+        "Dark"
       ],
       "resist": [],
       "null": [
@@ -17152,7 +17152,7 @@
       "drain": [],
       "repel": [
         "Ice",
-        "Curse"
+        "Dark"
       ],
       "game": "p5"
     },
@@ -17217,10 +17217,10 @@
         "Nuke"
       ],
       "null": [
-        "Bless"
+        "Light"
       ],
       "drain": [
-        "Curse"
+        "Dark"
       ],
       "repel": [],
       "game": "p5",
@@ -17273,7 +17273,7 @@
         "Elec"
       ],
       "resist": [
-        "Bless"
+        "Light"
       ],
       "null": [
         "Force"
@@ -17556,7 +17556,7 @@
       ],
       "weak": [
         "Elec",
-        "Curse"
+        "Dark"
       ],
       "resist": [],
       "null": [
@@ -17611,8 +17611,8 @@
         "Ice"
       ],
       "resist": [
-        "Bless",
-        "Curse"
+        "Light",
+        "Dark"
       ],
       "null": [
         "Elec"
@@ -17713,8 +17713,8 @@
       ],
       "resist": [
         "Phys",
-        "Bless",
-        "Curse"
+        "Light",
+        "Dark"
       ],
       "null": [],
       "drain": [],
@@ -17771,8 +17771,8 @@
       ],
       "resist": [
         "Phys",
-        "Bless",
-        "Curse"
+        "Light",
+        "Dark"
       ],
       "null": [],
       "drain": [
@@ -17829,8 +17829,8 @@
       ],
       "weak": [
         "Force",
-        "Bless",
-        "Curse"
+        "Light",
+        "Dark"
       ],
       "resist": [],
       "null": [],
@@ -17940,7 +17940,7 @@
         "Ice"
       ],
       "null": [
-        "Curse"
+        "Dark"
       ],
       "drain": [],
       "repel": [],
@@ -17980,7 +17980,7 @@
         "Ice",
         "Elec",
         "Force",
-        "Bless"
+        "Light"
       ],
       "resist": [],
       "null": [],
@@ -17992,7 +17992,7 @@
       "name": "Sraosha",
       "devName": "sraosha",
       "aliases": [],
-      "inherit": "Bless",
+      "inherit": "Light",
       "arcana": "Star",
       "race": "Herald",
       "level": 77,
@@ -18038,7 +18038,7 @@
       ],
       "null": [],
       "drain": [
-        "Bless"
+        "Light"
       ],
       "repel": [],
       "game": "smt5"
@@ -18085,7 +18085,7 @@
         }
       ],
       "weak": [
-        "Bless"
+        "Light"
       ],
       "resist": [
         "Fire"
@@ -18237,8 +18237,8 @@
         "Elec"
       ],
       "resist": [
-        "Bless",
-        "Curse"
+        "Light",
+        "Dark"
       ],
       "null": [
         "Ice"
@@ -18667,7 +18667,7 @@
         "Fire"
       ],
       "resist": [
-        "Bless"
+        "Light"
       ],
       "null": [
         "Ice"
@@ -19078,7 +19078,7 @@
         }
       ],
       "weak": [
-        "Curse"
+        "Dark"
       ],
       "resist": [
         "Phys",
@@ -19088,7 +19088,7 @@
         "Fire"
       ],
       "drain": [
-        "Bless"
+        "Light"
       ],
       "repel": [],
       "game": "p5"
@@ -19139,7 +19139,7 @@
         }
       ],
       "weak": [
-        "Bless"
+        "Light"
       ],
       "resist": [
         "Phys"
@@ -19147,7 +19147,7 @@
       "null": [],
       "drain": [],
       "repel": [
-        "Curse"
+        "Dark"
       ],
       "game": "p5",
       "user": "Margaret",
@@ -19200,7 +19200,7 @@
         }
       ],
       "weak": [
-        "Bless"
+        "Light"
       ],
       "resist": [
         "Phys"
@@ -19208,7 +19208,7 @@
       "null": [],
       "drain": [],
       "repel": [
-        "Curse"
+        "Dark"
       ],
       "game": "p5"
     },
@@ -19258,7 +19258,7 @@
       ],
       "resist": [
         "Fire",
-        "Bless"
+        "Light"
       ],
       "null": [],
       "drain": [
@@ -19271,7 +19271,7 @@
       "name": "Thoth",
       "devName": "thoth",
       "aliases": [],
-      "inherit": "Bless",
+      "inherit": "Light",
       "arcana": "Emperor",
       "race": "Deity",
       "level": 33,
@@ -19309,7 +19309,7 @@
         }
       ],
       "weak": [
-        "Curse"
+        "Dark"
       ],
       "resist": [],
       "null": [
@@ -19323,7 +19323,7 @@
       "name": "Throne",
       "devName": "throne",
       "aliases": [],
-      "inherit": "Bless",
+      "inherit": "Light",
       "arcana": "Justice",
       "race": "Divine",
       "level": 64,
@@ -19362,12 +19362,12 @@
       ],
       "weak": [
         "Ice",
-        "Curse"
+        "Dark"
       ],
       "resist": [],
       "null": [
         "Fire",
-        "Bless"
+        "Light"
       ],
       "drain": [],
       "repel": [],
@@ -19470,10 +19470,10 @@
         "Fire"
       ],
       "resist": [
-        "Curse"
+        "Dark"
       ],
       "null": [
-        "Bless"
+        "Light"
       ],
       "drain": [],
       "repel": [],
@@ -19802,8 +19802,8 @@
         "Force"
       ],
       "null": [
-        "Bless",
-        "Curse"
+        "Light",
+        "Dark"
       ],
       "drain": [],
       "repel": [],
@@ -19901,12 +19901,12 @@
       ],
       "resist": [
         "Phys",
-        "Bless"
+        "Light"
       ],
       "null": [],
       "drain": [],
       "repel": [
-        "Curse"
+        "Dark"
       ],
       "game": "p5",
       "user": "Sho Minazuki",
@@ -19965,12 +19965,12 @@
       ],
       "resist": [
         "Phys",
-        "Bless"
+        "Light"
       ],
       "null": [],
       "drain": [],
       "repel": [
-        "Curse"
+        "Dark"
       ],
       "game": "p5"
     },
@@ -20007,7 +20007,7 @@
         "Force"
       ],
       "resist": [
-        "Curse"
+        "Dark"
       ],
       "null": [],
       "drain": [],
@@ -20068,7 +20068,7 @@
       ],
       "resist": [],
       "null": [
-        "Curse"
+        "Dark"
       ],
       "drain": [],
       "repel": [
@@ -20132,7 +20132,7 @@
       "name": "Unicorn",
       "devName": "unicorn",
       "aliases": [],
-      "inherit": "Bless",
+      "inherit": "Light",
       "arcana": "Faith",
       "race": "",
       "level": 39,
@@ -20174,14 +20174,14 @@
         }
       ],
       "weak": [
-        "Curse"
+        "Dark"
       ],
       "resist": [
         "Psy"
       ],
       "null": [
         "Ice",
-        "Bless"
+        "Light"
       ],
       "drain": [],
       "repel": [],
@@ -20236,7 +20236,7 @@
       ],
       "null": [
         "Fire",
-        "Bless"
+        "Light"
       ],
       "drain": [],
       "repel": [],
@@ -20383,7 +20383,7 @@
       ],
       "resist": [],
       "null": [
-        "Bless"
+        "Light"
       ],
       "drain": [],
       "repel": [],
@@ -20393,7 +20393,7 @@
       "name": "Vanadis",
       "devName": "vanadis",
       "aliases": [],
-      "inherit": "Bless",
+      "inherit": "Light",
       "arcana": "Faith",
       "race": "Persona",
       "level": 75,
@@ -20443,11 +20443,11 @@
         }
       ],
       "weak": [
-        "Curse"
+        "Dark"
       ],
       "resist": [],
       "null": [
-        "Bless"
+        "Light"
       ],
       "drain": [],
       "repel": [],
@@ -20505,7 +20505,7 @@
         "Fire"
       ],
       "resist": [
-        "Curse"
+        "Dark"
       ],
       "null": [],
       "drain": [],
@@ -20518,7 +20518,7 @@
       "name": "Vishnu",
       "devName": "vishnu",
       "aliases": [],
-      "inherit": "Curse",
+      "inherit": "Dark",
       "arcana": "Fool",
       "race": "Deity",
       "level": 87,
@@ -20565,11 +20565,11 @@
       "resist": [],
       "null": [
         "Phys",
-        "Curse"
+        "Dark"
       ],
       "drain": [],
       "repel": [
-        "Bless"
+        "Light"
       ],
       "game": "smt5"
     },
@@ -20625,10 +20625,10 @@
         "Elec"
       ],
       "null": [
-        "Curse"
+        "Dark"
       ],
       "drain": [
-        "Bless"
+        "Light"
       ],
       "repel": [],
       "game": "p5"
@@ -20637,7 +20637,7 @@
       "name": "White Rider",
       "devName": "whiterider",
       "aliases": [],
-      "inherit": "Bless",
+      "inherit": "Light",
       "arcana": "Chariot",
       "race": "Fiend",
       "level": 43,
@@ -20682,8 +20682,8 @@
         "Elec"
       ],
       "resist": [
-        "Bless",
-        "Curse"
+        "Light",
+        "Dark"
       ],
       "null": [],
       "drain": [],
@@ -21008,8 +21008,8 @@
       ],
       "drain": [],
       "repel": [
-        "Bless",
-        "Curse"
+        "Light",
+        "Dark"
       ],
       "game": "p4",
       "user": "Naoto Shirogane",
@@ -21102,8 +21102,8 @@
         "Fire"
       ],
       "null": [
-        "Bless",
-        "Curse"
+        "Light",
+        "Dark"
       ],
       "drain": [],
       "repel": [],
@@ -21116,7 +21116,7 @@
       "name": "Yatagarasu",
       "devName": "yatagarasu",
       "aliases": [],
-      "inherit": "Bless",
+      "inherit": "Light",
       "arcana": "Councillor",
       "race": "Avian",
       "level": 54,
@@ -21154,13 +21154,13 @@
         }
       ],
       "weak": [
-        "Curse"
+        "Dark"
       ],
       "resist": [
         "Force"
       ],
       "null": [
-        "Bless"
+        "Light"
       ],
       "drain": [],
       "repel": [],
@@ -21256,7 +21256,7 @@
         }
       ],
       "weak": [
-        "Curse"
+        "Dark"
       ],
       "resist": [
         "Phys"
@@ -21368,8 +21368,8 @@
       ],
       "resist": [
         "Fire",
-        "Bless",
-        "Curse"
+        "Light",
+        "Dark"
       ],
       "null": [],
       "drain": [],
@@ -21427,8 +21427,8 @@
       "resist": [],
       "null": [
         "Elec",
-        "Bless",
-        "Curse"
+        "Light",
+        "Dark"
       ],
       "drain": [],
       "repel": [],
@@ -21471,7 +21471,7 @@
         "Fire"
       ],
       "resist": [
-        "Curse"
+        "Dark"
       ],
       "null": [],
       "drain": [],
@@ -21655,7 +21655,7 @@
       ],
       "resist": [],
       "null": [
-        "Bless"
+        "Light"
       ],
       "drain": [],
       "repel": [],
@@ -21724,7 +21724,7 @@
     {
       "name": "Abyssal Wings",
       "devName": "abyssalwings",
-      "affinity": "Curse",
+      "affinity": "Dark",
       "type": "ATTACK",
       "unique": true,
       "range": 0,
@@ -21898,8 +21898,8 @@
         "Wind",
         "Psy",
         "Nuke",
-        "Bless",
-        "Curse",
+        "Light",
+        "Dark",
         "Almighty"
       ]
     },
@@ -21977,8 +21977,8 @@
         "Elec",
         "Psy",
         "Nuke",
-        "Bless",
-        "Curse"
+        "Light",
+        "Dark"
       ]
     },
     {
@@ -22309,7 +22309,7 @@
       "type": "BOOST",
       "unique": false,
       "amount": 50,
-      "element": "Bless"
+      "element": "Light"
     },
     {
       "name": "Bless Boost",
@@ -22318,7 +22318,7 @@
       "type": "BOOST",
       "unique": false,
       "amount": 25,
-      "element": "Bless"
+      "element": "Light"
     },
     {
       "name": "Blight",
@@ -22878,7 +22878,7 @@
       "type": "BOOST",
       "unique": false,
       "amount": 50,
-      "element": "Curse"
+      "element": "Dark"
     },
     {
       "name": "Curse Boost",
@@ -22887,7 +22887,7 @@
       "type": "BOOST",
       "unique": false,
       "amount": 25,
-      "element": "Curse"
+      "element": "Dark"
     },
     {
       "name": "Dazzler",
@@ -23036,7 +23036,7 @@
     {
       "name": "Demonic Decree",
       "devName": "demonicdecree",
-      "affinity": "Curse",
+      "affinity": "Dark",
       "type": "HALVE",
       "unique": false,
       "cost": 48
@@ -23122,7 +23122,7 @@
     {
       "name": "Die For Me!",
       "devName": "dieforme",
-      "affinity": "Curse",
+      "affinity": "Dark",
       "type": "INSTAKILL",
       "unique": true,
       "range": 0,
@@ -23141,7 +23141,7 @@
     {
       "name": "Divine Judgement",
       "devName": "divinejudgement",
-      "affinity": "Bless",
+      "affinity": "Light",
       "type": "HALVE",
       "unique": false,
       "cost": 48
@@ -23166,7 +23166,7 @@
       "surround": false,
       "weather": false,
       "elements": [
-        "Bless"
+        "Light"
       ]
     },
     {
@@ -23179,7 +23179,7 @@
       "surround": false,
       "weather": false,
       "elements": [
-        "Curse"
+        "Dark"
       ]
     },
     {
@@ -23231,7 +23231,7 @@
       "surround": false,
       "weather": false,
       "elements": [
-        "Curse"
+        "Dark"
       ]
     },
     {
@@ -23403,7 +23403,7 @@
       "affinity": "Passive",
       "type": "DEFENSIVE",
       "unique": false,
-      "element": "Bless",
+      "element": "Light",
       "newAffinity": "Drain"
     },
     {
@@ -23412,7 +23412,7 @@
       "affinity": "Passive",
       "type": "DEFENSIVE",
       "unique": false,
-      "element": "Curse",
+      "element": "Dark",
       "newAffinity": "Drain"
     },
     {
@@ -23507,7 +23507,7 @@
     {
       "name": "Eiga",
       "devName": "eiga",
-      "affinity": "Curse",
+      "affinity": "Dark",
       "type": "ATTACK",
       "unique": false,
       "range": 1,
@@ -23527,7 +23527,7 @@
     {
       "name": "Eigaon",
       "devName": "eigaon",
-      "affinity": "Curse",
+      "affinity": "Dark",
       "type": "ATTACK",
       "unique": false,
       "range": 1,
@@ -23547,7 +23547,7 @@
     {
       "name": "Eiha",
       "devName": "eiha",
-      "affinity": "Curse",
+      "affinity": "Dark",
       "type": "ATTACK",
       "unique": false,
       "range": 1,
@@ -23682,7 +23682,7 @@
       "surround": false,
       "weather": false,
       "elements": [
-        "Bless"
+        "Light"
       ]
     },
     {
@@ -23695,7 +23695,7 @@
       "surround": false,
       "weather": false,
       "elements": [
-        "Curse"
+        "Dark"
       ]
     },
     {
@@ -24318,7 +24318,7 @@
     {
       "name": "Hama",
       "devName": "hama",
-      "affinity": "Bless",
+      "affinity": "Light",
       "type": "INSTAKILL",
       "unique": false,
       "range": 1,
@@ -24332,12 +24332,12 @@
       "affinity": "Passive",
       "type": "INSTAKILLBOOST",
       "unique": false,
-      "element": "Bless"
+      "element": "Light"
     },
     {
       "name": "Hamaon",
       "devName": "hamaon",
-      "affinity": "Bless",
+      "affinity": "Light",
       "type": "INSTAKILL",
       "unique": false,
       "range": 1,
@@ -24715,7 +24715,7 @@
     {
       "name": "Kouga",
       "devName": "kouga",
-      "affinity": "Bless",
+      "affinity": "Light",
       "type": "ATTACK",
       "unique": false,
       "range": 1,
@@ -24735,7 +24735,7 @@
     {
       "name": "Kougaon",
       "devName": "kougaon",
-      "affinity": "Bless",
+      "affinity": "Light",
       "type": "ATTACK",
       "unique": false,
       "range": 1,
@@ -24755,7 +24755,7 @@
     {
       "name": "Kouha",
       "devName": "kouha",
-      "affinity": "Bless",
+      "affinity": "Light",
       "type": "ATTACK",
       "unique": false,
       "range": 1,
@@ -24810,8 +24810,8 @@
         "Wind",
         "Psy",
         "Nuke",
-        "Bless",
-        "Curse"
+        "Light",
+        "Dark"
       ]
     },
     {
@@ -25004,7 +25004,7 @@
     {
       "name": "Maeiga",
       "devName": "maeiga",
-      "affinity": "Curse",
+      "affinity": "Dark",
       "type": "ATTACK",
       "unique": false,
       "range": 0,
@@ -25024,7 +25024,7 @@
     {
       "name": "Maeigaon",
       "devName": "maeigaon",
-      "affinity": "Curse",
+      "affinity": "Dark",
       "type": "ATTACK",
       "unique": false,
       "range": 0,
@@ -25044,7 +25044,7 @@
     {
       "name": "Maeiha",
       "devName": "maeiha",
-      "affinity": "Curse",
+      "affinity": "Dark",
       "type": "ATTACK",
       "unique": false,
       "range": 0,
@@ -25184,7 +25184,7 @@
     {
       "name": "Magatsu Mandala",
       "devName": "magatsumandala",
-      "affinity": "Curse",
+      "affinity": "Dark",
       "type": "ATTACK",
       "unique": true,
       "range": 0,
@@ -25220,7 +25220,7 @@
     {
       "name": "Mahama",
       "devName": "mahama",
-      "affinity": "Bless",
+      "affinity": "Light",
       "type": "INSTAKILL",
       "unique": false,
       "range": 0,
@@ -25231,7 +25231,7 @@
     {
       "name": "Mahamaon",
       "devName": "mahamaon",
-      "affinity": "Bless",
+      "affinity": "Light",
       "type": "INSTAKILL",
       "unique": false,
       "range": 0,
@@ -25291,7 +25291,7 @@
     {
       "name": "Makouga",
       "devName": "makouga",
-      "affinity": "Bless",
+      "affinity": "Light",
       "type": "ATTACK",
       "unique": false,
       "range": 0,
@@ -25311,7 +25311,7 @@
     {
       "name": "Makougaon",
       "devName": "makougaon",
-      "affinity": "Bless",
+      "affinity": "Light",
       "type": "ATTACK",
       "unique": false,
       "range": 0,
@@ -25331,7 +25331,7 @@
     {
       "name": "Makouha",
       "devName": "makouha",
-      "affinity": "Bless",
+      "affinity": "Light",
       "type": "ATTACK",
       "unique": false,
       "range": 0,
@@ -25351,7 +25351,7 @@
     {
       "name": "Mamudo",
       "devName": "mamudo",
-      "affinity": "Curse",
+      "affinity": "Dark",
       "type": "INSTAKILL",
       "unique": false,
       "range": 0,
@@ -25362,7 +25362,7 @@
     {
       "name": "Mamudoon",
       "devName": "mamudoon",
-      "affinity": "Curse",
+      "affinity": "Dark",
       "type": "INSTAKILL",
       "unique": false,
       "range": 0,
@@ -26014,7 +26014,7 @@
     {
       "name": "Mudo",
       "devName": "mudo",
-      "affinity": "Curse",
+      "affinity": "Dark",
       "type": "INSTAKILL",
       "unique": false,
       "range": 1,
@@ -26028,12 +26028,12 @@
       "affinity": "Passive",
       "type": "INSTAKILLBOOST",
       "unique": false,
-      "element": "Curse"
+      "element": "Dark"
     },
     {
       "name": "Mudoon",
       "devName": "mudoon",
-      "affinity": "Curse",
+      "affinity": "Dark",
       "type": "INSTAKILL",
       "unique": false,
       "range": 1,
@@ -26259,7 +26259,7 @@
       "affinity": "Passive",
       "type": "DEFENSIVE",
       "unique": false,
-      "element": "Bless",
+      "element": "Light",
       "newAffinity": "Null"
     },
     {
@@ -26286,7 +26286,7 @@
       "affinity": "Passive",
       "type": "DEFENSIVE",
       "unique": false,
-      "element": "Curse",
+      "element": "Dark",
       "newAffinity": "Null"
     },
     {
@@ -26986,7 +26986,7 @@
       "affinity": "Passive",
       "type": "DEFENSIVE",
       "unique": false,
-      "element": "Bless",
+      "element": "Light",
       "newAffinity": "Repel"
     },
     {
@@ -26995,7 +26995,7 @@
       "affinity": "Passive",
       "type": "DEFENSIVE",
       "unique": false,
-      "element": "Curse",
+      "element": "Dark",
       "newAffinity": "Repel"
     },
     {
@@ -27067,7 +27067,7 @@
       "affinity": "Passive",
       "type": "DEFENSIVE",
       "unique": false,
-      "element": "Bless",
+      "element": "Light",
       "newAffinity": "Resist"
     },
     {
@@ -27094,7 +27094,7 @@
       "affinity": "Passive",
       "type": "DEFENSIVE",
       "unique": false,
-      "element": "Curse",
+      "element": "Dark",
       "newAffinity": "Resist"
     },
     {
@@ -27307,7 +27307,7 @@
     {
       "name": "Samsara",
       "devName": "samsara",
-      "affinity": "Bless",
+      "affinity": "Light",
       "type": "INSTAKILL",
       "unique": true,
       "range": 0,
@@ -27334,7 +27334,7 @@
     {
       "name": "Shining Arrows",
       "devName": "shiningarrows",
-      "affinity": "Bless",
+      "affinity": "Light",
       "type": "ATTACK",
       "unique": true,
       "range": 0,
