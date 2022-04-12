@@ -5684,7 +5684,9 @@
     {
       "name": "Feng Huang",
       "devName": "fenghuang",
-      "aliases": [],
+      "aliases": [
+        "phoenix"
+      ],
       "inherit": "Fire",
       "arcana": null,
       "race": "Avian",
@@ -15533,60 +15535,6 @@
       "game": "p3",
       "user": "Mitsuru Kirijo",
       "stage": 1
-    },
-    {
-      "name": "Phoenix",
-      "devName": "phoenix",
-      "aliases": [],
-      "inherit": "Nuke",
-      "arcana": "Faith",
-      "race": "Avian",
-      "level": 21,
-      "hp": null,
-      "mp": null,
-      "st": 12,
-      "ma": 15,
-      "en": 15,
-      "ag": 17,
-      "lu": 11,
-      "learnset": [
-        {
-          "name": "Freila",
-          "level": 0
-        },
-        {
-          "name": "Dream Needle",
-          "level": 0
-        },
-        {
-          "name": "Diarama",
-          "level": 22
-        },
-        {
-          "name": "Recarm",
-          "level": 23
-        },
-        {
-          "name": "Nuke Boost",
-          "level": 25
-        },
-        {
-          "name": "Mafreila",
-          "level": 26
-        }
-      ],
-      "weak": [
-        "Elec"
-      ],
-      "resist": [
-        "Ice"
-      ],
-      "null": [
-        "Wind"
-      ],
-      "drain": [],
-      "repel": [],
-      "game": "p5"
     },
     {
       "name": "Pisaca",
