@@ -426,7 +426,8 @@
       "repel": [],
       "game": "p5",
       "user": "Makoto Niijima",
-      "stage": 3
+      "stage": 3,
+      "evoSkill": "Checkmate"
     },
     {
       "name": "Aitvaras",
@@ -512,7 +513,8 @@
       "repel": [],
       "game": "p5",
       "user": "Futaba Sakura",
-      "stage": 3
+      "stage": 3,
+      "evoSkill": "Ultimate Support"
     },
     {
       "name": "Alice",
@@ -793,7 +795,8 @@
       "repel": [],
       "game": "p4",
       "user": "Yukiko Amagi",
-      "stage": 2
+      "stage": 2,
+      "evoSkill": null
     },
     {
       "name": "Ame-no-Uzume",
@@ -1131,7 +1134,8 @@
       "repel": [],
       "game": "p5",
       "user": "Makoto Niijima",
-      "stage": 2
+      "stage": 2,
+      "evoSkill": "Evade Psy"
     },
     {
       "name": "Andras",
@@ -1746,7 +1750,8 @@
       "repel": [],
       "game": "p5",
       "user": "Labrys",
-      "stage": 1
+      "stage": 1,
+      "evoSkill": null
     },
     {
       "name": "Ariadne Picaro",
@@ -1915,7 +1920,8 @@
       "repel": [],
       "game": "p5",
       "user": "P5 Protagonist",
-      "stage": 1
+      "stage": 1,
+      "evoSkill": null
     },
     {
       "name": "Artemis",
@@ -2073,7 +2079,8 @@
       "repel": [],
       "game": "p3",
       "user": "Mitsuru Kirijo",
-      "stage": 2
+      "stage": 2,
+      "evoSkill": null
     },
     {
       "name": "Astarte",
@@ -2181,7 +2188,8 @@
       "repel": [],
       "game": "p5",
       "user": "Haru Okumura",
-      "stage": 2
+      "stage": 2,
+      "evoSkill": "Evade Nuke"
     },
     {
       "name": "Asterius",
@@ -2242,7 +2250,8 @@
       "repel": [],
       "game": "p5",
       "user": "Shadow Labrys",
-      "stage": 1
+      "stage": 1,
+      "evoSkill": null
     },
     {
       "name": "Asterius Picaro",
@@ -2480,7 +2489,8 @@
       "repel": [],
       "game": "p5",
       "user": "Aigis",
-      "stage": 2
+      "stage": 2,
+      "evoSkill": null
     },
     {
       "name": "Athena Picaro",
@@ -3658,7 +3668,8 @@
       "repel": [],
       "game": "p3",
       "user": "Akihiko Sanada",
-      "stage": 2
+      "stage": 2,
+      "evoSkill": null
     },
     {
       "name": "Cait Sith",
@@ -3874,7 +3885,8 @@
       "repel": [],
       "game": "p5",
       "user": "Ryuji Sakamoto",
-      "stage": 1
+      "stage": 1,
+      "evoSkill": null
     },
     {
       "name": "Carmen",
@@ -3988,7 +4000,8 @@
       "repel": [],
       "game": "p5",
       "user": "Ann Takamaki",
-      "stage": 1
+      "stage": 1,
+      "evoSkill": null
     },
     {
       "name": "Castor",
@@ -4066,7 +4079,8 @@
       "repel": [],
       "game": "p3",
       "user": "Shinjiro Aragaki",
-      "stage": 1
+      "stage": 1,
+      "evoSkill": null
     },
     {
       "name": "Célestine",
@@ -4182,7 +4196,8 @@
       "repel": [],
       "game": "p5",
       "user": "Ann Takamaki",
-      "stage": 3
+      "stage": 3,
+      "evoSkill": "High Energy"
     },
     {
       "name": "Cendrillon",
@@ -4248,7 +4263,8 @@
       "repel": [],
       "game": "p5",
       "user": "Sumire Yoshizawa",
-      "stage": 1
+      "stage": 1,
+      "evoSkill": null
     },
     {
       "name": "Cerberus",
@@ -4356,7 +4372,8 @@
       ],
       "game": "p3",
       "user": "Koromaru",
-      "stage": 1
+      "stage": 1,
+      "evoSkill": null
     },
     {
       "name": "Chernobog",
@@ -5306,7 +5323,8 @@
       "repel": [],
       "game": "p5",
       "user": "Morgana",
-      "stage": 3
+      "stage": 3,
+      "evoSkill": "Miracle Rush"
     },
     {
       "name": "Dionysus",
@@ -5582,7 +5600,8 @@
       "repel": [],
       "game": "p5",
       "user": "Sumire Yoshizawa",
-      "stage": 3
+      "stage": 3,
+      "evoSkill": "Masquerade"
     },
     {
       "name": "Erthys",
@@ -6549,7 +6568,8 @@
       "repel": [],
       "game": "p5",
       "user": "Yusuke Kitagawa",
-      "stage": 1
+      "stage": 1,
+      "evoSkill": null
     },
     {
       "name": "Gorgon",
@@ -6721,7 +6741,8 @@
       "repel": [],
       "game": "p5",
       "user": "Yusuke Kitagawa",
-      "stage": 3
+      "stage": 3,
+      "evoSkill": "Hyakka Ryouran"
     },
     {
       "name": "Hachiman",
@@ -6930,7 +6951,8 @@
       "repel": [],
       "game": "p4",
       "user": "Chie Satonaka",
-      "stage": 3
+      "stage": 3,
+      "evoSkill": "Dragon Hustle"
     },
     {
       "name": "Hariti",
@@ -7217,7 +7239,8 @@
       "repel": [],
       "game": "p5",
       "user": "Ann Takamaki",
-      "stage": 2
+      "stage": 2,
+      "evoSkill": "Evade Ice"
     },
     {
       "name": "Hecatoncheires",
@@ -7389,7 +7412,8 @@
       "repel": [],
       "game": "p5",
       "user": "Goro Akechi",
-      "stage": 3
+      "stage": 3,
+      "evoSkill": "Rebellion Blade"
     },
     {
       "name": "Hermes",
@@ -7475,7 +7499,8 @@
       "repel": [],
       "game": "p3",
       "user": "Junpei Iori",
-      "stage": 1
+      "stage": 1,
+      "evoSkill": null
     },
     {
       "name": "High Pixie",
@@ -7593,7 +7618,8 @@
       "repel": [],
       "game": "p4",
       "user": "Rise Kujikawa",
-      "stage": 1
+      "stage": 1,
+      "evoSkill": null
     },
     {
       "name": "Hokuto Seikun",
@@ -8095,7 +8121,8 @@
       "repel": [],
       "game": "p3",
       "user": "Yukari Takeba",
-      "stage": 1
+      "stage": 1,
+      "evoSkill": null
     },
     {
       "name": "Ippon-Datara",
@@ -8305,7 +8332,8 @@
       "repel": [],
       "game": "p3",
       "user": "Yukari Takeba",
-      "stage": 2
+      "stage": 2,
+      "evoSkill": null
     },
     {
       "name": "Izanagi",
@@ -8381,7 +8409,8 @@
       "repel": [],
       "game": "p5",
       "user": "P4 Protgaonist",
-      "stage": 1
+      "stage": 1,
+      "evoSkill": null
     },
     {
       "name": "Izanagi-no-Okami",
@@ -8448,7 +8477,8 @@
       "repel": [],
       "game": "p5",
       "user": "P4 Protagonist",
-      "stage": 2
+      "stage": 2,
+      "evoSkill": null
     },
     {
       "name": "Izanagi-no-Okami Picaro",
@@ -8929,7 +8959,8 @@
       "repel": [],
       "game": "p4",
       "user": "Yosuke Hanamura",
-      "stage": 1
+      "stage": 1,
+      "evoSkill": null
     },
     {
       "name": "Johanna",
@@ -9043,7 +9074,8 @@
       "repel": [],
       "game": "p5",
       "user": "Makoto Niijima",
-      "stage": 1
+      "stage": 1,
+      "evoSkill": null
     },
     {
       "name": "Juno",
@@ -9093,7 +9125,8 @@
       "repel": [],
       "game": "p3",
       "user": "Fuuka Yamagishi",
-      "stage": 2
+      "stage": 2,
+      "evoSkill": null
     },
     {
       "name": "Kaguya",
@@ -9154,7 +9187,8 @@
       "repel": [],
       "game": "p5",
       "user": "Marie",
-      "stage": 1
+      "stage": 1,
+      "evoSkill": null
     },
     {
       "name": "Kaguya Picaro",
@@ -9345,7 +9379,8 @@
       "repel": [],
       "game": "p3",
       "user": "Ken Amada",
-      "stage": 2
+      "stage": 2,
+      "evoSkill": null
     },
     {
       "name": "Kali",
@@ -9507,7 +9542,8 @@
       "repel": [],
       "game": "p4",
       "user": "Teddie",
-      "stage": 2
+      "stage": 2,
+      "evoSkill": null
     },
     {
       "name": "Kamui-Moshiri",
@@ -9610,7 +9646,8 @@
       "repel": [],
       "game": "p4",
       "user": "Teddie",
-      "stage": 3
+      "stage": 3,
+      "evoSkill": "Kamui Miracle"
     },
     {
       "name": "Kamu Susano-o",
@@ -9730,7 +9767,8 @@
       "repel": [],
       "game": "p5",
       "user": "Yusuke Kitagawa",
-      "stage": 2
+      "stage": 2,
+      "evoSkill": "Evade Fire"
     },
     {
       "name": "Kanzeon",
@@ -9800,7 +9838,8 @@
       "repel": [],
       "game": "p4",
       "user": "Rise Kujikawa",
-      "stage": 2
+      "stage": 2,
+      "evoSkill": null
     },
     {
       "name": "Kaya-no-Hime",
@@ -10274,7 +10313,8 @@
       "repel": [],
       "game": "p4",
       "user": "Teddie",
-      "stage": 1
+      "stage": 1,
+      "evoSkill": null
     },
     {
       "name": "Kodama",
@@ -10480,7 +10520,8 @@
       "repel": [],
       "game": "p4",
       "user": "Yukiko Amagi",
-      "stage": 1
+      "stage": 1,
+      "evoSkill": null
     },
     {
       "name": "Koppa Tengu",
@@ -10714,7 +10755,8 @@
       "repel": [],
       "game": "p4",
       "user": "Rise Kujikawa",
-      "stage": 3
+      "stage": 3,
+      "evoSkill": "Complete Analysis"
     },
     {
       "name": "Kumbhanda",
@@ -11500,7 +11542,8 @@
       "repel": [],
       "game": "p5",
       "user": "Goro Akechi",
-      "stage": 2
+      "stage": 2,
+      "evoSkill": null
     },
     {
       "name": "Loup-garou",
@@ -11597,7 +11640,8 @@
       "repel": [],
       "game": "p3",
       "user": "Fuuka Yamagishi",
-      "stage": 1
+      "stage": 1,
+      "evoSkill": null
     },
     {
       "name": "Lucifer",
@@ -11773,7 +11817,8 @@
       "repel": [],
       "game": "p5",
       "user": "Haru Okumura",
-      "stage": 3
+      "stage": 3,
+      "evoSkill": "Life Wall"
     },
     {
       "name": "Macabre",
@@ -11944,7 +11989,8 @@
       "repel": [],
       "game": "p5",
       "user": "Tohru Adachi",
-      "stage": 2
+      "stage": 2,
+      "evoSkill": null
     },
     {
       "name": "Magatsu-Izanagi Picaro",
@@ -12553,7 +12599,8 @@
       "repel": [],
       "game": "p5",
       "user": "Morgana",
-      "stage": 2
+      "stage": 2,
+      "evoSkill": "Evade Elec"
     },
     {
       "name": "Mermaid",
@@ -12667,7 +12714,8 @@
       ],
       "game": "p5",
       "user": "P3 Protagonist",
-      "stage": 2
+      "stage": 2,
+      "evoSkill": null
     },
     {
       "name": "Messiah Picaro",
@@ -12957,7 +13005,8 @@
       "repel": [],
       "game": "p5",
       "user": "Haru Okumura",
-      "stage": 1
+      "stage": 1,
+      "evoSkill": null
     },
     {
       "name": "Mishaguji",
@@ -13692,7 +13741,8 @@
       "repel": [],
       "game": "p5",
       "user": "Futaba Sakura",
-      "stage": 1
+      "stage": 1,
+      "evoSkill": null
     },
     {
       "name": "Nekomata",
@@ -13848,7 +13898,8 @@
       "repel": [],
       "game": "p3",
       "user": "Ken Amada",
-      "stage": 1
+      "stage": 1,
+      "evoSkill": null
     },
     {
       "name": "Nigi Mitama",
@@ -14652,7 +14703,8 @@
       "repel": [],
       "game": "p5",
       "user": "P3 Protagonist",
-      "stage": 1
+      "stage": 1,
+      "evoSkill": null
     },
     {
       "name": "Orpheus F",
@@ -14717,7 +14769,8 @@
       "repel": [],
       "game": "p5",
       "user": "P3 Protagonist",
-      "stage": 1
+      "stage": 1,
+      "evoSkill": null
     },
     {
       "name": "Orpheus F Picaro",
@@ -14875,7 +14928,8 @@
       "repel": [],
       "game": "p5",
       "user": "P3 Protagonist",
-      "stage": 3
+      "stage": 3,
+      "evoSkill": null
     },
     {
       "name": "Orthrus",
@@ -15227,7 +15281,8 @@
       "repel": [],
       "game": "p3",
       "user": "Aigis",
-      "stage": 1
+      "stage": 1,
+      "evoSkill": null
     },
     {
       "name": "Pandora",
@@ -15341,7 +15396,8 @@
       "repel": [],
       "game": "p5",
       "user": "Sophia",
-      "stage": 2
+      "stage": 2,
+      "evoSkill": "Makougaon"
     },
     {
       "name": "Parvati",
@@ -15534,7 +15590,8 @@
       "repel": [],
       "game": "p3",
       "user": "Mitsuru Kirijo",
-      "stage": 1
+      "stage": 1,
+      "evoSkill": null
     },
     {
       "name": "Pisaca",
@@ -15681,7 +15738,8 @@
       "repel": [],
       "game": "p5",
       "user": "Sophia",
-      "stage": 1
+      "stage": 1,
+      "evoSkill": null
     },
     {
       "name": "Pixie",
@@ -15848,7 +15906,8 @@
       "repel": [],
       "game": "p3",
       "user": "Akihiko Sanada",
-      "stage": 1
+      "stage": 1,
+      "evoSkill": null
     },
     {
       "name": "Power",
@@ -16039,7 +16098,8 @@
       "repel": [],
       "game": "p5",
       "user": "Futaba Sakura",
-      "stage": 2
+      "stage": 2,
+      "evoSkill": "Treasure Skimmer"
     },
     {
       "name": "Psyche",
@@ -16125,7 +16185,8 @@
       "repel": [],
       "game": "p3",
       "user": "Metis",
-      "stage": 1
+      "stage": 1,
+      "evoSkill": null
     },
     {
       "name": "Queen Mab",
@@ -16449,7 +16510,8 @@
       "repel": [],
       "game": "p5",
       "user": "P5 Protagonist",
-      "stage": 3
+      "stage": 3,
+      "evoSkill": null
     },
     {
       "name": "Raphael",
@@ -16720,7 +16782,8 @@
       "repel": [],
       "game": "p5",
       "user": "Goro Akechi",
-      "stage": 1
+      "stage": 1,
+      "evoSkill": null
     },
     {
       "name": "Rokuten Maoh",
@@ -16820,7 +16883,8 @@
       "repel": [],
       "game": "p4",
       "user": "Kanji Tatsumi",
-      "stage": 2
+      "stage": 2,
+      "evoSkill": null
     },
     {
       "name": "Saki Mitama",
@@ -17161,7 +17225,8 @@
       "repel": [],
       "game": "p5",
       "user": "P5 Protagonist",
-      "stage": 2
+      "stage": 2,
+      "evoSkill": null
     },
     {
       "name": "Scathach",
@@ -17397,7 +17462,8 @@
       "repel": [],
       "game": "p5",
       "user": "Ryuji Sakamoto",
-      "stage": 2
+      "stage": 2,
+      "evoSkill": "Evade Wind"
     },
     {
       "name": "Senri",
@@ -18181,7 +18247,8 @@
       "repel": [],
       "game": "p4",
       "user": "Naoto Shirogane",
-      "stage": 1
+      "stage": 1,
+      "evoSkill": null
     },
     {
       "name": "Sumeo-Okami",
@@ -18289,7 +18356,8 @@
       "repel": [],
       "game": "p4",
       "user": "Yukiko Amagi",
-      "stage": 3
+      "stage": 3,
+      "evoSkill": "Burning Petals"
     },
     {
       "name": "Surt",
@@ -18445,7 +18513,8 @@
       "repel": [],
       "game": "p4",
       "user": "Yosuke Hanamura",
-      "stage": 2
+      "stage": 2,
+      "evoSkill": null
     },
     {
       "name": "Suzaku",
@@ -18607,7 +18676,8 @@
       "repel": [],
       "game": "p4",
       "user": "Chie Satonaka",
-      "stage": 2
+      "stage": 2,
+      "evoSkill": null
     },
     {
       "name": "Takehaya Susano-o",
@@ -18711,7 +18781,8 @@
       "repel": [],
       "game": "p4",
       "user": "Yosuke Hanamura",
-      "stage": 3
+      "stage": 3,
+      "evoSkill": "Youthful Wind"
     },
     {
       "name": "Takeji Zaiten",
@@ -18811,7 +18882,8 @@
       "repel": [],
       "game": "p4",
       "user": "Kanji Tatsumi",
-      "stage": 3
+      "stage": 3,
+      "evoSkill": "The Man\"s Way"
     },
     {
       "name": "Take-Mikazuchi",
@@ -18909,7 +18981,8 @@
       "repel": [],
       "game": "p4",
       "user": "Kanji Tatsumi",
-      "stage": 1
+      "stage": 1,
+      "evoSkill": null
     },
     {
       "name": "Take-Minakata",
@@ -19078,7 +19151,8 @@
       ],
       "game": "p5",
       "user": "Margaret",
-      "stage": 1
+      "stage": 1,
+      "evoSkill": null
     },
     {
       "name": "Thanatos Picaro",
@@ -19509,7 +19583,8 @@
       "repel": [],
       "game": "p4",
       "user": "Chie Satonaka",
-      "stage": 1
+      "stage": 1,
+      "evoSkill": null
     },
     {
       "name": "Triglav",
@@ -19671,7 +19746,8 @@
       "repel": [],
       "game": "p3",
       "user": "Junpei Iori",
-      "stage": 2
+      "stage": 2,
+      "evoSkill": "Spring of Life"
     },
     {
       "name": "Trumpeter",
@@ -19834,7 +19910,8 @@
       ],
       "game": "p5",
       "user": "Sho Minazuki",
-      "stage": 1
+      "stage": 1,
+      "evoSkill": null
     },
     {
       "name": "Tsukiyomi Picaro",
@@ -20261,7 +20338,8 @@
       "repel": [],
       "game": "p5",
       "user": "Zenkichi Hasegawa",
-      "stage": 1
+      "stage": 1,
+      "evoSkill": null
     },
     {
       "name": "Valkyrie",
@@ -20375,7 +20453,8 @@
       "repel": [],
       "game": "p5",
       "user": "Sumire Yoshizawa",
-      "stage": 2
+      "stage": 2,
+      "evoSkill": "Evade Curse"
     },
     {
       "name": "Vasuki",
@@ -20735,7 +20814,8 @@
       "repel": [],
       "game": "p5",
       "user": "Ryuji Sakamoto",
-      "stage": 3
+      "stage": 3,
+      "evoSkill": "Fighting Spirit"
     },
     {
       "name": "Yaksini",
@@ -20933,7 +21013,8 @@
       ],
       "game": "p4",
       "user": "Naoto Shirogane",
-      "stage": 3
+      "stage": 3,
+      "evoSkill": "Shield of Justice"
     },
     {
       "name": "Yamato-Takeru",
@@ -21028,7 +21109,8 @@
       "repel": [],
       "game": "p4",
       "user": "Naoto Shirogane",
-      "stage": 2
+      "stage": 2,
+      "evoSkill": null
     },
     {
       "name": "Yatagarasu",
@@ -21520,7 +21602,8 @@
       "repel": [],
       "game": "p5",
       "user": "Morgana",
-      "stage": 1
+      "stage": 1,
+      "evoSkill": null
     },
     {
       "name": "Zouchouten",
