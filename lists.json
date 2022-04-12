@@ -116,7 +116,9 @@
     {
       "name": "Abdiel -Fallen-",
       "devName": "abdielfallen",
-      "aliases": [],
+      "aliases": [
+        "abdiel"
+      ],
       "inherit": "Dark",
       "arcana": null,
       "race": "Fallen",
@@ -14114,7 +14116,9 @@
     {
       "name": "Nuwa -Snake-",
       "devName": "nuwasnake",
-      "aliases": [],
+      "aliases": [
+        "nuwa"
+      ],
       "inherit": "Force",
       "arcana": null,
       "race": "Lady",
