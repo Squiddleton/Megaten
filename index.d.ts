@@ -377,20 +377,20 @@ export interface EvasionSkillData extends BaseSkillData {
 
 export class HalveSkill extends BaseSkill {
     constructor(data: HalveSkillData);
-    affinity: BlessCurse;
+    affinity: LightDark;
     type: 'HALVE';
     cost: number;
 }
 
 export interface HalveSkillData extends BaseSkillData {
-    affinity: BlessCurse;
+    affinity: LightDark;
     type: 'HALVE';
     cost: number;
 }
 
 export class InstaKillSkill extends BaseSkill {
     constructor(data: InstaKillSkillData);
-    affinity: BlessCurse;
+    affinity: LightDark;
     type: 'INSTAKILL';
     range: Range;
     cost: number;
@@ -399,7 +399,7 @@ export class InstaKillSkill extends BaseSkill {
 }
 
 export interface InstaKillSkillData extends BaseSkillData {
-    affinity: BlessCurse;
+    affinity: LightDark;
     type: 'INSTAKILL';
     range: Range;
     cost: number;
@@ -411,13 +411,13 @@ export class InstaKillBoostSkill extends BaseSkill {
     constructor(data: InstaKillBoostSkillData);
     affinity: 'Passive';
     type: 'INSTAKILLBOOST';
-    element: BlessCurse;
+    element: LightDark;
 }
 
 export interface InstaKillBoostSkillData extends BaseSkillData {
     affinity: 'Passive';
     type: 'INSTAKILLBOOST';
-    element: BlessCurse;
+    element: LightDark;
 }
 
 export class MasterSkill extends BaseSkill {
@@ -602,13 +602,13 @@ export type Arcana = 'Fool' | 'Magician' | 'Priestess' | 'Empress' | 'Emperor' |
 
 export type AttackDisplay = 'Minuscule' | 'Weak' | 'Light' | 'Medium' | 'Heavy' | 'Severe' | 'Colossal';
 
-export type BlessCurse = 'Bless' | 'Curse';
+export type LightDark = 'Light' | 'Dark';
 
 export type Buff = 'Attack' | 'Defense' | 'Agility';
 
 export type ChanceDisplay = 'Low' | 'Medium' | 'High';
 
-export type Element = 'Phys' | 'Gun' | 'Fire' | 'Ice' | 'Elec' | 'Wind' | 'Nuke' | 'Psy' | 'Bless' | 'Curse' | 'Almighty';
+export type Element = 'Phys' | 'Gun' | 'Fire' | 'Ice' | 'Elec' | 'Wind' | 'Nuke' | 'Psy' | 'Light' | 'Dark' | 'Almighty';
 export type Inherit = Exclude<Element, 'Gun'> | 'Ailment' | 'Recovery' | 'Support';
 export type Affinity = Inherit | 'Gun' | 'Passive';
 

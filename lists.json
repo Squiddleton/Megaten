@@ -21906,6 +21906,15 @@
       "element": "Almighty"
     },
     {
+      "name": "Almighty Pleroma",
+      "devName": "almightypleroma",
+      "affinity": "Passive",
+      "type": "BOOST",
+      "unique": false,
+      "amount": 20,
+      "element": "Almighty"
+    },
+    {
       "name": "Ambient Aid",
       "devName": "ambientaid",
       "affinity": "Passive",
@@ -22890,6 +22899,15 @@
       "element": "Dark"
     },
     {
+      "name": "Dark Pleroma",
+      "devName": "darkpleroma",
+      "affinity": "Passive",
+      "type": "BOOST",
+      "unique": false,
+      "amount": 20,
+      "element": "Dark"
+    },
+    {
       "name": "Dazzler",
       "devName": "dazzler",
       "affinity": "Ailment",
@@ -23603,6 +23621,15 @@
       "element": "Elec"
     },
     {
+      "name": "Elec Pleroma",
+      "devName": "elecpleroma",
+      "affinity": "Passive",
+      "type": "BOOST",
+      "unique": false,
+      "amount": 20,
+      "element": "Elec"
+    },
+    {
       "name": "Elec Wall",
       "devName": "elecwall",
       "affinity": "Support",
@@ -23909,6 +23936,15 @@
       "element": "Fire"
     },
     {
+      "name": "Fire Pleroma",
+      "devName": "firepleroma",
+      "affinity": "Passive",
+      "type": "BOOST",
+      "unique": false,
+      "amount": 20,
+      "element": "Fire"
+    },
+    {
       "name": "Fire Wall",
       "devName": "firewall",
       "affinity": "Support",
@@ -23951,6 +23987,15 @@
         }
       ],
       "series": "persona"
+    },
+    {
+      "name": "Force Pleroma",
+      "devName": "forcepleroma",
+      "affinity": "Passive",
+      "type": "BOOST",
+      "unique": false,
+      "amount": 20,
+      "element": "Force"
     },
     {
       "name": "Forget Boost",
@@ -24426,6 +24471,15 @@
       "unique": false
     },
     {
+      "name": "Heal Pleroma",
+      "devName": "healpleroma",
+      "affinity": "Passive",
+      "type": "BOOST",
+      "unique": false,
+      "amount": 20,
+      "element": "Heal"
+    },
+    {
       "name": "Heat Riser",
       "devName": "heatriser",
       "affinity": "Support",
@@ -24477,12 +24531,39 @@
       "series": "smt"
     },
     {
+      "name": "High Almighty Pleroma",
+      "devName": "highalmightypleroma",
+      "affinity": "Passive",
+      "type": "BOOST",
+      "unique": false,
+      "amount": 35,
+      "element": "Almighty"
+    },
+    {
       "name": "High Counter",
       "devName": "highcounter",
       "affinity": "Passive",
       "type": "COUNTER",
       "unique": false,
       "chance": 20
+    },
+    {
+      "name": "High Dark Pleroma",
+      "devName": "highdarkpleroma",
+      "affinity": "Passive",
+      "type": "BOOST",
+      "unique": false,
+      "amount": 35,
+      "element": "Dark"
+    },
+    {
+      "name": "High Elec Pleroma",
+      "devName": "highelecpleroma",
+      "affinity": "Passive",
+      "type": "BOOST",
+      "unique": false,
+      "amount": 35,
+      "element": "Elec"
     },
     {
       "name": "High Energy",
@@ -24493,6 +24574,60 @@
       "range": 0,
       "cost": 80,
       "charge": "Concentrate"
+    },
+    {
+      "name": "High Fire Pleroma",
+      "devName": "highfirepleroma",
+      "affinity": "Passive",
+      "type": "BOOST",
+      "unique": false,
+      "amount": 35,
+      "element": "Fire"
+    },
+    {
+      "name": "High Force Pleroma",
+      "devName": "highforcepleroma",
+      "affinity": "Passive",
+      "type": "BOOST",
+      "unique": false,
+      "amount": 35,
+      "element": "Force"
+    },
+    {
+      "name": "High Heal Pleroma",
+      "devName": "highhealpleroma",
+      "affinity": "Passive",
+      "type": "BOOST",
+      "unique": false,
+      "amount": 35,
+      "element": "Heal"
+    },
+    {
+      "name": "High Ice Pleroma",
+      "devName": "highicepleroma",
+      "affinity": "Passive",
+      "type": "BOOST",
+      "unique": false,
+      "amount": 35,
+      "element": "Ice"
+    },
+    {
+      "name": "High Light Pleroma",
+      "devName": "highlightpleroma",
+      "affinity": "Passive",
+      "type": "BOOST",
+      "unique": false,
+      "amount": 35,
+      "element": "Light"
+    },
+    {
+      "name": "High Phys Pleroma",
+      "devName": "highphyspleroma",
+      "affinity": "Passive",
+      "type": "BOOST",
+      "unique": false,
+      "amount": 35,
+      "element": "Phys"
     },
     {
       "name": "Holy Benevolence",
@@ -24619,6 +24754,15 @@
       "type": "BREAK",
       "unique": false,
       "cost": 15,
+      "element": "Ice"
+    },
+    {
+      "name": "Ice Pleroma",
+      "devName": "icepleroma",
+      "affinity": "Passive",
+      "type": "BOOST",
+      "unique": false,
+      "amount": 20,
       "element": "Ice"
     },
     {
@@ -24874,6 +25018,15 @@
         "Tetrakarn",
         "Makarakarn"
       ]
+    },
+    {
+      "name": "Light Pleroma",
+      "devName": "lightpleroma",
+      "affinity": "Passive",
+      "type": "BOOST",
+      "unique": false,
+      "amount": 20,
+      "element": "Light"
     },
     {
       "name": "Lucky Punch",
@@ -26544,6 +26697,15 @@
         "amount": 0,
         "display": "High"
       }
+    },
+    {
+      "name": "Phys Pleroma",
+      "devName": "physpleroma",
+      "affinity": "Passive",
+      "type": "BOOST",
+      "unique": false,
+      "amount": 20,
+      "element": "Phys"
     },
     {
       "name": "Poisma",
