@@ -21765,23 +21765,17 @@
       "range": 1,
       "cost": {
         "type": "SP",
-        "amount": 4
+        "amount": 10
       },
       "power": {
-        "amount": 80,
-        "display": "Light"
+        "amount": 130,
+        "display": "Weak"
       },
       "min": 1,
       "max": 1,
       "flags": [],
-      "ailments": [
-        {
-          "name": "Burn",
-          "chance": 5,
-          "display": "Low"
-        }
-      ],
-      "series": "persona"
+      "ailments": [],
+      "series": "smt"
     },
     {
       "name": "Agidyne",
@@ -21792,23 +21786,17 @@
       "range": 1,
       "cost": {
         "type": "SP",
-        "amount": 12
+        "amount": 35
       },
       "power": {
-        "amount": 320,
+        "amount": 215,
         "display": "Heavy"
       },
       "min": 1,
       "max": 1,
       "flags": [],
-      "ailments": [
-        {
-          "name": "Burn",
-          "chance": 5,
-          "display": "Low"
-        }
-      ],
-      "series": "persona"
+      "ailments": [],
+      "series": "smt"
     },
     {
       "name": "Agilao",
@@ -21819,23 +21807,17 @@
       "range": 1,
       "cost": {
         "type": "SP",
-        "amount": 8
+        "amount": 20
       },
       "power": {
-        "amount": 200,
+        "amount": 160,
         "display": "Medium"
       },
       "min": 1,
       "max": 1,
       "flags": [],
-      "ailments": [
-        {
-          "name": "Burn",
-          "chance": 5,
-          "display": "Low"
-        }
-      ],
-      "series": "persona"
+      "ailments": [],
+      "series": "smt"
     },
     {
       "name": "Agneyastra",
@@ -21874,22 +21856,22 @@
       "affinity": "Phys",
       "type": "ATTACK",
       "unique": true,
-      "range": 0,
+      "range": 1,
       "cost": {
-        "type": "HP",
-        "amount": 20
+        "type": "SP",
+        "amount": 50
       },
       "power": {
-        "amount": 260,
+        "amount": 275,
         "display": "Severe"
       },
       "min": 1,
-      "max": 2,
+      "max": 1,
       "flags": [
         "Crit Boost"
       ],
       "ailments": [],
-      "series": "persona"
+      "series": "smt"
     },
     {
       "name": "Ali Dance",
@@ -22348,26 +22330,25 @@
       "affinity": "Phys",
       "type": "ATTACK",
       "unique": false,
-      "range": 0,
+      "range": 2,
       "cost": {
-        "type": "HP",
-        "amount": 16
+        "type": "SP",
+        "amount": 20
       },
       "power": {
-        "amount": 260,
-        "display": "Heavy"
+        "amount": 100,
+        "display": "Weak"
       },
-      "min": 1,
-      "max": 1,
+      "min": 2,
+      "max": 4,
       "flags": [],
       "ailments": [
         {
           "name": "Poison",
-          "chance": 5,
-          "display": "Low"
+          "chance": 35
         }
       ],
-      "series": "persona"
+      "series": "smt"
     },
     {
       "name": "Bloodbath",
@@ -22482,18 +22463,18 @@
       "unique": false,
       "range": 1,
       "cost": {
-        "type": "HP",
-        "amount": 24
+        "type": "SP",
+        "amount": 45
       },
       "power": {
-        "amount": 1400,
-        "display": "Colossal"
+        "amount": 220,
+        "display": "Heavy"
       },
       "min": 1,
       "max": 1,
       "flags": [],
       "ailments": [],
-      "series": "persona"
+      "series": "smt"
     },
     {
       "name": "Brave Step",
@@ -22513,23 +22494,17 @@
       "range": 1,
       "cost": {
         "type": "SP",
-        "amount": 4
+        "amount": 10
       },
       "power": {
-        "amount": 80,
-        "display": "Light"
+        "amount": 130,
+        "display": "Weak"
       },
       "min": 1,
       "max": 1,
       "flags": [],
-      "ailments": [
-        {
-          "name": "Freeze",
-          "chance": 5,
-          "display": "Low"
-        }
-      ],
-      "series": "persona"
+      "ailments": [],
+      "series": "smt"
     },
     {
       "name": "Bufudyne",
@@ -22540,23 +22515,17 @@
       "range": 1,
       "cost": {
         "type": "SP",
-        "amount": 12
+        "amount": 35
       },
       "power": {
-        "amount": 320,
+        "amount": 215,
         "display": "Heavy"
       },
       "min": 1,
       "max": 1,
       "flags": [],
-      "ailments": [
-        {
-          "name": "Freeze",
-          "chance": 5,
-          "display": "Low"
-        }
-      ],
-      "series": "persona"
+      "ailments": [],
+      "series": "smt"
     },
     {
       "name": "Bufula",
@@ -22567,23 +22536,17 @@
       "range": 1,
       "cost": {
         "type": "SP",
-        "amount": 8
+        "amount": 20
       },
       "power": {
-        "amount": 200,
+        "amount": 160,
         "display": "Medium"
       },
       "min": 1,
       "max": 1,
       "flags": [],
-      "ailments": [
-        {
-          "name": "Freeze",
-          "chance": 5,
-          "display": "Low"
-        }
-      ],
-      "series": "persona"
+      "ailments": [],
+      "series": "smt"
     },
     {
       "name": "Burn Boost",
@@ -22948,12 +22911,12 @@
       "unique": false,
       "range": 1,
       "cost": {
-        "type": "HP",
-        "amount": 18
+        "type": "SP",
+        "amount": 50
       },
       "power": {
-        "amount": 440,
-        "display": "Severe"
+        "amount": 200,
+        "display": "Medium"
       },
       "min": 1,
       "max": 1,
@@ -22961,7 +22924,7 @@
         "Baton Boost"
       ],
       "ailments": [],
-      "series": "persona"
+      "series": "smt"
     },
     {
       "name": "Deathbound",
@@ -22971,18 +22934,18 @@
       "unique": false,
       "range": 0,
       "cost": {
-        "type": "HP",
-        "amount": 22
+        "type": "SP",
+        "amount": 35
       },
       "power": {
-        "amount": 190,
+        "amount": 150,
         "display": "Medium"
       },
       "min": 1,
-      "max": 2,
+      "max": 1,
       "flags": [],
       "ailments": [],
-      "series": "persona"
+      "series": "smt"
     },
     {
       "name": "Death Scythe",
@@ -23526,17 +23489,17 @@
     {
       "name": "Dream Needle",
       "devName": "dreamneedle",
-      "affinity": "Gun",
+      "affinity": "Phys",
       "type": "ATTACK",
       "unique": false,
       "range": 1,
       "cost": {
-        "type": "HP",
-        "amount": 8
+        "type": "SP",
+        "amount": 10
       },
       "power": {
-        "amount": 140,
-        "display": "Light"
+        "amount": 110,
+        "display": "Weak"
       },
       "min": 1,
       "max": 1,
@@ -23544,11 +23507,10 @@
       "ailments": [
         {
           "name": "Sleep",
-          "chance": 20,
-          "display": "Medium"
+          "chance": 55
         }
       ],
-      "series": "persona"
+      "series": "smt"
     },
     {
       "name": "Eiga",
@@ -24414,20 +24376,20 @@
       "affinity": "Phys",
       "type": "ATTACK",
       "unique": true,
-      "range": 0,
+      "range": 2,
       "cost": {
-        "type": "HP",
-        "amount": 25
+        "type": "SP",
+        "amount": 60
       },
       "power": {
-        "amount": 80,
-        "display": "Light"
+        "amount": 30,
+        "display": "Weak"
       },
       "min": 8,
       "max": 8,
       "flags": [],
       "ailments": [],
-      "series": "persona"
+      "series": "smt"
     },
     {
       "name": "Headbutt",
@@ -24501,18 +24463,18 @@
       "unique": false,
       "range": 0,
       "cost": {
-        "type": "HP",
-        "amount": 20
+        "type": "SP",
+        "amount": 15
       },
       "power": {
-        "amount": 300,
-        "display": "Heavy"
+        "amount": 100,
+        "display": "Weak"
       },
       "min": 1,
       "max": 1,
       "flags": [],
       "ailments": [],
-      "series": "persona"
+      "series": "smt"
     },
     {
       "name": "High Counter",
@@ -24596,24 +24558,18 @@
       "unique": false,
       "range": 1,
       "cost": {
-        "type": "HP",
-        "amount": 9
+        "type": "SP",
+        "amount": 20
       },
       "power": {
-        "amount": 160,
-        "display": "Medium"
+        "amount": 90,
+        "display": "Weak"
       },
-      "min": 1,
-      "max": 1,
+      "min": 2,
+      "max": 2,
       "flags": [],
-      "ailments": [
-        {
-          "name": "Rage",
-          "chance": 20,
-          "display": "Medium"
-        }
-      ],
-      "series": "persona"
+      "ailments": [],
+      "series": "smt"
     },
     {
       "name": "Ice Age",
@@ -24621,26 +24577,22 @@
       "affinity": "Ice",
       "type": "ATTACK",
       "unique": false,
-      "range": 0,
+      "range": 1,
       "cost": {
         "type": "SP",
-        "amount": 54
+        "amount": 65
       },
       "power": {
-        "amount": 400,
-        "display": "Severe"
+        "amount": 230,
+        "display": "Heavy"
       },
       "min": 1,
       "max": 1,
-      "flags": [],
-      "ailments": [
-        {
-          "name": "Freeze",
-          "chance": 5,
-          "display": "Low"
-        }
+      "flags": [
+        "Pierce"
       ],
-      "series": "persona"
+      "ailments": [],
+      "series": "smt"
     },
     {
       "name": "Ice Amp",
@@ -24968,18 +24920,18 @@
       "unique": false,
       "range": 1,
       "cost": {
-        "type": "HP",
+        "type": "SP",
         "amount": 5
       },
       "power": {
-        "amount": 120,
-        "display": "Light"
+        "amount": 145,
+        "display": "Weak"
       },
       "min": 1,
       "max": 1,
       "flags": [],
       "ailments": [],
-      "series": "persona"
+      "series": "smt"
     },
     {
       "name": "Mabaisudi",
@@ -25008,23 +24960,17 @@
       "range": 0,
       "cost": {
         "type": "SP",
-        "amount": 10
+        "amount": 15
       },
       "power": {
-        "amount": 80,
-        "display": "Light"
+        "amount": 95,
+        "display": "Weak"
       },
       "min": 1,
       "max": 1,
       "flags": [],
-      "ailments": [
-        {
-          "name": "Freeze",
-          "chance": 5,
-          "display": "Low"
-        }
-      ],
-      "series": "persona"
+      "ailments": [],
+      "series": "smt"
     },
     {
       "name": "Mabufudyne",
@@ -25035,23 +24981,17 @@
       "range": 0,
       "cost": {
         "type": "SP",
-        "amount": 22
+        "amount": 50
       },
       "power": {
-        "amount": 320,
+        "amount": 155,
         "display": "Heavy"
       },
       "min": 1,
       "max": 1,
       "flags": [],
-      "ailments": [
-        {
-          "name": "Freeze",
-          "chance": 5,
-          "display": "Low"
-        }
-      ],
-      "series": "persona"
+      "ailments": [],
+      "series": "smt"
     },
     {
       "name": "Mabufula",
@@ -25062,23 +25002,17 @@
       "range": 0,
       "cost": {
         "type": "SP",
-        "amount": 16
+        "amount": 30
       },
       "power": {
-        "amount": 200,
+        "amount": 120,
         "display": "Medium"
       },
       "min": 1,
       "max": 1,
       "flags": [],
-      "ailments": [
-        {
-          "name": "Freeze",
-          "chance": 5,
-          "display": "Low"
-        }
-      ],
-      "series": "persona"
+      "ailments": [],
+      "series": "smt"
     },
     {
       "name": "Maeiga",
@@ -25534,23 +25468,17 @@
       "range": 0,
       "cost": {
         "type": "SP",
-        "amount": 10
+        "amount": 15
       },
       "power": {
-        "amount": 80,
-        "display": "Light"
+        "amount": 95,
+        "display": "Weak"
       },
       "min": 1,
       "max": 1,
       "flags": [],
-      "ailments": [
-        {
-          "name": "Burn",
-          "chance": 5,
-          "display": "Low"
-        }
-      ],
-      "series": "persona"
+      "ailments": [],
+      "series": "smt"
     },
     {
       "name": "Maragidyne",
@@ -25561,23 +25489,17 @@
       "range": 0,
       "cost": {
         "type": "SP",
-        "amount": 22
+        "amount": 50
       },
       "power": {
-        "amount": 320,
+        "amount": 155,
         "display": "Heavy"
       },
       "min": 1,
       "max": 1,
       "flags": [],
-      "ailments": [
-        {
-          "name": "Burn",
-          "chance": 5,
-          "display": "Low"
-        }
-      ],
-      "series": "persona"
+      "ailments": [],
+      "series": "smt"
     },
     {
       "name": "Maragion",
@@ -25588,23 +25510,17 @@
       "range": 0,
       "cost": {
         "type": "SP",
-        "amount": 16
+        "amount": 30
       },
       "power": {
-        "amount": 200,
+        "amount": 120,
         "display": "Medium"
       },
       "min": 1,
       "max": 1,
       "flags": [],
-      "ailments": [
-        {
-          "name": "Burn",
-          "chance": 5,
-          "display": "Low"
-        }
-      ],
-      "series": "persona"
+      "ailments": [],
+      "series": "smt"
     },
     {
       "name": "Marakukaja",
@@ -25773,23 +25689,17 @@
       "range": 0,
       "cost": {
         "type": "SP",
-        "amount": 10
+        "amount": 15
       },
       "power": {
-        "amount": 80,
-        "display": "Light"
+        "amount": 95,
+        "display": "Weak"
       },
       "min": 1,
       "max": 1,
       "flags": [],
-      "ailments": [
-        {
-          "name": "Shock",
-          "chance": 5,
-          "display": "Low"
-        }
-      ],
-      "series": "persona"
+      "ailments": [],
+      "series": "smt"
     },
     {
       "name": "Maziodyne",
@@ -25800,23 +25710,17 @@
       "range": 0,
       "cost": {
         "type": "SP",
-        "amount": 22
+        "amount": 50
       },
       "power": {
-        "amount": 320,
+        "amount": 155,
         "display": "Heavy"
       },
       "min": 1,
       "max": 1,
       "flags": [],
-      "ailments": [
-        {
-          "name": "Shock",
-          "chance": 5,
-          "display": "Low"
-        }
-      ],
-      "series": "persona"
+      "ailments": [],
+      "series": "smt"
     },
     {
       "name": "Mazionga",
@@ -25827,23 +25731,17 @@
       "range": 0,
       "cost": {
         "type": "SP",
-        "amount": 16
+        "amount": 30
       },
       "power": {
-        "amount": 200,
+        "amount": 120,
         "display": "Medium"
       },
       "min": 1,
       "max": 1,
       "flags": [],
-      "ailments": [
-        {
-          "name": "Shock",
-          "chance": 5,
-          "display": "Low"
-        }
-      ],
-      "series": "persona"
+      "ailments": [],
+      "series": "smt"
     },
     {
       "name": "Media",
@@ -25917,17 +25815,17 @@
       "range": 0,
       "cost": {
         "type": "SP",
-        "amount": 15
+        "amount": 40
       },
       "power": {
-        "amount": 240,
+        "amount": 125,
         "display": "Medium"
       },
       "min": 1,
       "max": 1,
       "flags": [],
       "ailments": [],
-      "series": "persona"
+      "series": "smt"
     },
     {
       "name": "Megidola",
@@ -25938,17 +25836,17 @@
       "range": 0,
       "cost": {
         "type": "SP",
-        "amount": 24
+        "amount": 70
       },
       "power": {
-        "amount": 360,
+        "amount": 160,
         "display": "Heavy"
       },
       "min": 1,
       "max": 1,
       "flags": [],
       "ailments": [],
-      "series": "persona"
+      "series": "smt"
     },
     {
       "name": "Megidolaon",
@@ -25959,17 +25857,17 @@
       "range": 0,
       "cost": {
         "type": "SP",
-        "amount": 38
+        "amount": 120
       },
       "power": {
-        "amount": 420,
+        "amount": 190,
         "display": "Severe"
       },
       "min": 1,
       "max": 1,
       "flags": [],
       "ailments": [],
-      "series": "persona"
+      "series": "smt"
     },
     {
       "name": "Memory Blow",
@@ -26188,18 +26086,20 @@
       "unique": false,
       "range": 1,
       "cost": {
-        "type": "HP",
-        "amount": 20
+        "type": "SP",
+        "amount": 55
       },
       "power": {
-        "amount": 180,
-        "display": "Medium"
+        "amount": 80,
+        "display": "Weak"
       },
-      "min": 2,
-      "max": 3,
-      "flags": [],
+      "min": 5,
+      "max": 5,
+      "flags": [
+        "Half Accuracy"
+      ],
       "ailments": [],
-      "series": "persona"
+      "series": "smt"
     },
     {
       "name": "Myriad Truths",
@@ -26984,20 +26884,22 @@
       "affinity": "Phys",
       "type": "ATTACK",
       "unique": false,
-      "range": 0,
+      "range": 2,
       "cost": {
-        "type": "HP",
-        "amount": 13
+        "type": "SP",
+        "amount": 35
       },
       "power": {
-        "amount": 60,
-        "display": "Light"
+        "amount": 180,
+        "display": "Medium"
       },
-      "min": 1,
-      "max": 3,
-      "flags": [],
+      "min": 2,
+      "max": 5,
+      "flags": [
+        "Half Accuracy"
+      ],
       "ailments": [],
-      "series": "persona"
+      "series": "smt"
     },
     {
       "name": "Rebellion",
@@ -28020,53 +27922,41 @@
       "affinity": "Elec",
       "type": "ATTACK",
       "unique": false,
-      "range": 1,
+      "range": 2,
       "cost": {
         "type": "SP",
-        "amount": 48
+        "amount": 60
       },
       "power": {
-        "amount": 400,
-        "display": "Severe"
+        "amount": 150,
+        "display": "Medium"
       },
-      "min": 1,
-      "max": 1,
+      "min": 2,
+      "max": 5,
       "flags": [],
-      "ailments": [
-        {
-          "name": "Shock",
-          "chance": 5,
-          "display": "Low"
-        }
-      ],
-      "series": "persona"
+      "ailments": [],
+      "series": "smt"
     },
     {
       "name": "Titanomachia",
       "devName": "titanomachia",
-      "affinity": "Fire",
+      "affinity": "Phys",
       "type": "ATTACK",
       "unique": true,
       "range": 0,
       "cost": {
         "type": "SP",
-        "amount": 34
+        "amount": 60
       },
       "power": {
-        "amount": 400,
-        "display": "Severe"
+        "amount": 150,
+        "display": "Medium"
       },
       "min": 1,
       "max": 1,
       "flags": [],
-      "ailments": [
-        {
-          "name": "Fear",
-          "chance": 40,
-          "display": "High"
-        }
-      ],
-      "series": "persona"
+      "ailments": [],
+      "series": "smt"
     },
     {
       "name": "Torrent Shot",
@@ -28462,23 +28352,17 @@
       "range": 1,
       "cost": {
         "type": "SP",
-        "amount": 4
+        "amount": 10
       },
       "power": {
-        "amount": 80,
-        "display": "Light"
+        "amount": 130,
+        "display": "Weak"
       },
       "min": 1,
       "max": 1,
       "flags": [],
-      "ailments": [
-        {
-          "name": "Shock",
-          "chance": 5,
-          "display": "Low"
-        }
-      ],
-      "series": "persona"
+      "ailments": [],
+      "series": "smt"
     },
     {
       "name": "Ziodyne",
@@ -28489,23 +28373,17 @@
       "range": 1,
       "cost": {
         "type": "SP",
-        "amount": 12
+        "amount": 35
       },
       "power": {
-        "amount": 320,
+        "amount": 215,
         "display": "Heavy"
       },
       "min": 1,
       "max": 1,
       "flags": [],
-      "ailments": [
-        {
-          "name": "Shock",
-          "chance": 5,
-          "display": "Low"
-        }
-      ],
-      "series": "persona"
+      "ailments": [],
+      "series": "smt"
     },
     {
       "name": "Zionga",
@@ -28516,23 +28394,17 @@
       "range": 1,
       "cost": {
         "type": "SP",
-        "amount": 8
+        "amount": 20
       },
       "power": {
-        "amount": 200,
+        "amount": 160,
         "display": "Medium"
       },
       "min": 1,
       "max": 1,
       "flags": [],
-      "ailments": [
-        {
-          "name": "Shock",
-          "chance": 5,
-          "display": "Low"
-        }
-      ],
-      "series": "persona"
+      "ailments": [],
+      "series": "smt"
     }
   ]
 }
