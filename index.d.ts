@@ -152,6 +152,7 @@ export class AttackSkill extends BaseSkill {
     max: number;
     flags: string[];
     ailments: Ailment[];
+    series: Series;
 }
 
 export interface AttackSkillData extends BaseSkillData {
@@ -170,6 +171,7 @@ export interface AttackSkillData extends BaseSkillData {
     max: number;
     flags: string[];
     ailments: Ailment[];
+    series: Series;
 }
 
 export class AutoBuffSkill extends BaseSkill {
@@ -616,6 +618,8 @@ export type HPSP = 'HP' | 'SP';
 export type HPSPAIL = HPSP | 'HPSP' | 'AIL'
 
 export type Range = 0 | 1;
+
+export type Series = 'persona' | 'smt';
 
 export type Skill = AilBoostSkill | AilDefensiveSkill | AilmentSkill | AttackSkill | AutoBuffSkill | BarrierSkill | BarrierBreakSkill | BoostSkill | BreakSkill
     | ChargeSkill | CounterSkill | CritSkill | CritBoostSkill | DefensiveSkill | DrainSkill | EndureSkill | EvasionSkill | HalveSkill | InstaKillSkill

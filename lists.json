@@ -21723,7 +21723,8 @@
       "min": 1,
       "max": 1,
       "flags": [],
-      "ailments": []
+      "ailments": [],
+      "series": "persona"
     },
     {
       "name": "Abyssal Wings",
@@ -21743,7 +21744,8 @@
       "min": 1,
       "max": 1,
       "flags": [],
-      "ailments": []
+      "ailments": [],
+      "series": "persona"
     },
     {
       "name": "Adverse Resolve",
@@ -21778,7 +21780,8 @@
           "chance": 5,
           "display": "Low"
         }
-      ]
+      ],
+      "series": "persona"
     },
     {
       "name": "Agidyne",
@@ -21804,7 +21807,8 @@
           "chance": 5,
           "display": "Low"
         }
-      ]
+      ],
+      "series": "persona"
     },
     {
       "name": "Agilao",
@@ -21830,7 +21834,8 @@
           "chance": 5,
           "display": "Low"
         }
-      ]
+      ],
+      "series": "persona"
     },
     {
       "name": "Agneyastra",
@@ -21850,7 +21855,8 @@
       "min": 1,
       "max": 3,
       "flags": [],
-      "ailments": []
+      "ailments": [],
+      "series": "persona"
     },
     {
       "name": "Ailment Boost",
@@ -21882,7 +21888,8 @@
       "flags": [
         "Crit Boost"
       ],
-      "ailments": []
+      "ailments": [],
+      "series": "persona"
     },
     {
       "name": "Ali Dance",
@@ -22020,7 +22027,8 @@
       "min": 2,
       "max": 2,
       "flags": [],
-      "ailments": []
+      "ailments": [],
+      "series": "persona"
     },
     {
       "name": "Assault Dive",
@@ -22040,7 +22048,8 @@
       "min": 1,
       "max": 1,
       "flags": [],
-      "ailments": []
+      "ailments": [],
+      "series": "persona"
     },
     {
       "name": "Atomic Flare",
@@ -22060,7 +22069,8 @@
       "min": 1,
       "max": 1,
       "flags": [],
-      "ailments": []
+      "ailments": [],
+      "series": "persona"
     },
     {
       "name": "Attack Master",
@@ -22122,7 +22132,8 @@
       "flags": [
         "Accuracy Boost"
       ],
-      "ailments": []
+      "ailments": [],
+      "series": "persona"
     },
     {
       "name": "Bad Beat",
@@ -22148,7 +22159,8 @@
           "chance": 5,
           "display": "Low"
         }
-      ]
+      ],
+      "series": "persona"
     },
     {
       "name": "Baisudi",
@@ -22186,7 +22198,8 @@
       "min": 1,
       "max": 1,
       "flags": [],
-      "ailments": []
+      "ailments": [],
+      "series": "persona"
     },
     {
       "name": "Beast Weaver",
@@ -22206,7 +22219,8 @@
       "min": 1,
       "max": 1,
       "flags": [],
-      "ailments": []
+      "ailments": [],
+      "series": "persona"
     },
     {
       "name": "Black Spot",
@@ -22226,7 +22240,8 @@
       "min": 1,
       "max": 1,
       "flags": [],
-      "ailments": []
+      "ailments": [],
+      "series": "persona"
     },
     {
       "name": "Black Viper",
@@ -22246,7 +22261,8 @@
       "min": 1,
       "max": 1,
       "flags": [],
-      "ailments": []
+      "ailments": [],
+      "series": "persona"
     },
     {
       "name": "Blade of Fury",
@@ -22266,7 +22282,8 @@
       "min": 2,
       "max": 4,
       "flags": [],
-      "ailments": []
+      "ailments": [],
+      "series": "persona"
     },
     {
       "name": "Blazing Hell",
@@ -22292,7 +22309,8 @@
           "chance": 5,
           "display": "Low"
         }
-      ]
+      ],
+      "series": "persona"
     },
     {
       "name": "Bleeding Dry Brush",
@@ -22348,7 +22366,8 @@
           "chance": 5,
           "display": "Low"
         }
-      ]
+      ],
+      "series": "persona"
     },
     {
       "name": "Bloodbath",
@@ -22374,7 +22393,8 @@
           "chance": 5,
           "display": "Low"
         }
-      ]
+      ],
+      "series": "persona"
     },
     {
       "name": "Brain Buster",
@@ -22400,7 +22420,8 @@
           "chance": 5,
           "display": "Low"
         }
-      ]
+      ],
+      "series": "persona"
     },
     {
       "name": "Brain Jack",
@@ -22440,7 +22461,8 @@
           "chance": 20,
           "display": "Medium"
         }
-      ]
+      ],
+      "series": "persona"
     },
     {
       "name": "Brainwash Boost",
@@ -22470,7 +22492,8 @@
       "min": 1,
       "max": 1,
       "flags": [],
-      "ailments": []
+      "ailments": [],
+      "series": "persona"
     },
     {
       "name": "Brave Step",
@@ -22505,7 +22528,8 @@
           "chance": 5,
           "display": "Low"
         }
-      ]
+      ],
+      "series": "persona"
     },
     {
       "name": "Bufudyne",
@@ -22531,7 +22555,8 @@
           "chance": 5,
           "display": "Low"
         }
-      ]
+      ],
+      "series": "persona"
     },
     {
       "name": "Bufula",
@@ -22557,7 +22582,8 @@
           "chance": 5,
           "display": "Low"
         }
-      ]
+      ],
+      "series": "persona"
     },
     {
       "name": "Burn Boost",
@@ -22593,7 +22619,8 @@
           "chance": 5,
           "display": "Low"
         }
-      ]
+      ],
+      "series": "persona"
     },
     {
       "name": "Cadenza",
@@ -22696,7 +22723,8 @@
       "min": 1,
       "max": 1,
       "flags": [],
-      "ailments": []
+      "ailments": [],
+      "series": "persona"
     },
     {
       "name": "Climate Decorum",
@@ -22758,7 +22786,8 @@
       "flags": [
         "Surround Boost"
       ],
-      "ailments": []
+      "ailments": [],
+      "series": "persona"
     },
     {
       "name": "Cosmic Flare",
@@ -22778,7 +22807,8 @@
       "min": 1,
       "max": 1,
       "flags": [],
-      "ailments": []
+      "ailments": [],
+      "series": "persona"
     },
     {
       "name": "Counter",
@@ -22820,7 +22850,8 @@
           "chance": 20,
           "display": "Medium"
         }
-      ]
+      ],
+      "series": "persona"
     },
     {
       "name": "Cripple",
@@ -22851,7 +22882,8 @@
       "flags": [
         "Accuracy Boost"
       ],
-      "ailments": []
+      "ailments": [],
+      "series": "persona"
     },
     {
       "name": "Cruel Attack",
@@ -22873,7 +22905,8 @@
       "flags": [
         "Down Boost"
       ],
-      "ailments": []
+      "ailments": [],
+      "series": "persona"
     },
     {
       "name": "Curse Amp",
@@ -22927,7 +22960,8 @@
       "flags": [
         "Baton Boost"
       ],
-      "ailments": []
+      "ailments": [],
+      "series": "persona"
     },
     {
       "name": "Deathbound",
@@ -22947,7 +22981,8 @@
       "min": 1,
       "max": 2,
       "flags": [],
-      "ailments": []
+      "ailments": [],
+      "series": "persona"
     },
     {
       "name": "Death Scythe",
@@ -22973,7 +23008,8 @@
           "chance": 20,
           "display": "Medium"
         }
-      ]
+      ],
+      "series": "persona"
     },
     {
       "name": "Debilitate",
@@ -23093,7 +23129,8 @@
           "chance": 5,
           "display": "Low"
         }
-      ]
+      ],
+      "series": "persona"
     },
     {
       "name": "Diarahan",
@@ -23301,7 +23338,8 @@
           "chance": 20,
           "display": "Medium"
         }
-      ]
+      ],
+      "series": "persona"
     },
     {
       "name": "Dormina",
@@ -23341,7 +23379,8 @@
           "chance": 5,
           "display": "Low"
         }
-      ]
+      ],
+      "series": "persona"
     },
     {
       "name": "Double Fangs",
@@ -23361,7 +23400,8 @@
       "min": 2,
       "max": 2,
       "flags": [],
-      "ailments": []
+      "ailments": [],
+      "series": "persona"
     },
     {
       "name": "Double Shot",
@@ -23381,7 +23421,8 @@
       "min": 2,
       "max": 2,
       "flags": [],
-      "ailments": []
+      "ailments": [],
+      "series": "persona"
     },
     {
       "name": "Dragon Hustle",
@@ -23506,7 +23547,8 @@
           "chance": 20,
           "display": "Medium"
         }
-      ]
+      ],
+      "series": "persona"
     },
     {
       "name": "Eiga",
@@ -23526,7 +23568,8 @@
       "min": 1,
       "max": 1,
       "flags": [],
-      "ailments": []
+      "ailments": [],
+      "series": "persona"
     },
     {
       "name": "Eigaon",
@@ -23546,7 +23589,8 @@
       "min": 1,
       "max": 1,
       "flags": [],
-      "ailments": []
+      "ailments": [],
+      "series": "persona"
     },
     {
       "name": "Eiha",
@@ -23566,7 +23610,8 @@
       "min": 1,
       "max": 1,
       "flags": [],
-      "ailments": []
+      "ailments": [],
+      "series": "persona"
     },
     {
       "name": "Elec Amp",
@@ -23851,7 +23896,8 @@
       "min": 1,
       "max": 1,
       "flags": [],
-      "ailments": []
+      "ailments": [],
+      "series": "persona"
     },
     {
       "name": "Fear Boost",
@@ -23941,7 +23987,8 @@
           "chance": 5,
           "display": "Low"
         }
-      ]
+      ],
+      "series": "persona"
     },
     {
       "name": "Forget Boost",
@@ -24008,7 +24055,8 @@
       "min": 1,
       "max": 1,
       "flags": [],
-      "ailments": []
+      "ailments": [],
+      "series": "persona"
     },
     {
       "name": "Freidyne",
@@ -24028,7 +24076,8 @@
       "min": 1,
       "max": 1,
       "flags": [],
-      "ailments": []
+      "ailments": [],
+      "series": "persona"
     },
     {
       "name": "Freila",
@@ -24048,7 +24097,8 @@
       "min": 1,
       "max": 1,
       "flags": [],
-      "ailments": []
+      "ailments": [],
+      "series": "persona"
     },
     {
       "name": "Full Analysis",
@@ -24075,7 +24125,8 @@
       "min": 1,
       "max": 1,
       "flags": [],
-      "ailments": []
+      "ailments": [],
+      "series": "persona"
     },
     {
       "name": "Gambler\"s Foresight",
@@ -24113,7 +24164,8 @@
       "min": 1,
       "max": 1,
       "flags": [],
-      "ailments": []
+      "ailments": [],
+      "series": "persona"
     },
     {
       "name": "Garudyne",
@@ -24133,7 +24185,8 @@
       "min": 1,
       "max": 1,
       "flags": [],
-      "ailments": []
+      "ailments": [],
+      "series": "persona"
     },
     {
       "name": "Garula",
@@ -24153,7 +24206,8 @@
       "min": 1,
       "max": 1,
       "flags": [],
-      "ailments": []
+      "ailments": [],
+      "series": "persona"
     },
     {
       "name": "Gatling Blows",
@@ -24173,7 +24227,8 @@
       "min": 3,
       "max": 4,
       "flags": [],
-      "ailments": []
+      "ailments": [],
+      "series": "persona"
     },
     {
       "name": "Ghastly Wail",
@@ -24203,7 +24258,8 @@
       "flags": [
         "Baton Boost"
       ],
-      "ailments": []
+      "ailments": [],
+      "series": "persona"
     },
     {
       "name": "Gigantic Fist",
@@ -24223,7 +24279,8 @@
       "min": 1,
       "max": 1,
       "flags": [],
-      "ailments": []
+      "ailments": [],
+      "series": "persona"
     },
     {
       "name": "Gigantomachia",
@@ -24243,7 +24300,8 @@
       "min": 1,
       "max": 1,
       "flags": [],
-      "ailments": []
+      "ailments": [],
+      "series": "persona"
     },
     {
       "name": "God\"s Hand",
@@ -24263,7 +24321,8 @@
       "min": 1,
       "max": 1,
       "flags": [],
-      "ailments": []
+      "ailments": [],
+      "series": "persona"
     },
     {
       "name": "Growth 1",
@@ -24367,7 +24426,8 @@
       "min": 8,
       "max": 8,
       "flags": [],
-      "ailments": []
+      "ailments": [],
+      "series": "persona"
     },
     {
       "name": "Headbutt",
@@ -24393,7 +24453,8 @@
           "chance": 20,
           "display": "Medium"
         }
-      ]
+      ],
+      "series": "persona"
     },
     {
       "name": "Healing Wave",
@@ -24450,7 +24511,8 @@
       "min": 1,
       "max": 1,
       "flags": [],
-      "ailments": []
+      "ailments": [],
+      "series": "persona"
     },
     {
       "name": "High Counter",
@@ -24550,7 +24612,8 @@
           "chance": 20,
           "display": "Medium"
         }
-      ]
+      ],
+      "series": "persona"
     },
     {
       "name": "Ice Age",
@@ -24576,7 +24639,8 @@
           "chance": 5,
           "display": "Low"
         }
-      ]
+      ],
+      "series": "persona"
     },
     {
       "name": "Ice Amp",
@@ -24638,7 +24702,8 @@
           "chance": 5,
           "display": "Low"
         }
-      ]
+      ],
+      "series": "persona"
     },
     {
       "name": "Insta-Heal",
@@ -24714,7 +24779,8 @@
       "min": 1,
       "max": 3,
       "flags": [],
-      "ailments": []
+      "ailments": [],
+      "series": "persona"
     },
     {
       "name": "Kouga",
@@ -24734,7 +24800,8 @@
       "min": 1,
       "max": 1,
       "flags": [],
-      "ailments": []
+      "ailments": [],
+      "series": "persona"
     },
     {
       "name": "Kougaon",
@@ -24754,7 +24821,8 @@
       "min": 1,
       "max": 1,
       "flags": [],
-      "ailments": []
+      "ailments": [],
+      "series": "persona"
     },
     {
       "name": "Kouha",
@@ -24774,7 +24842,8 @@
       "min": 1,
       "max": 1,
       "flags": [],
-      "ailments": []
+      "ailments": [],
+      "series": "persona"
     },
     {
       "name": "Laevateinn",
@@ -24794,7 +24863,8 @@
       "min": 1,
       "max": 1,
       "flags": [],
-      "ailments": []
+      "ailments": [],
+      "series": "persona"
     },
     {
       "name": "Last Stand",
@@ -24873,7 +24943,8 @@
       "flags": [
         "Crit Boost"
       ],
-      "ailments": []
+      "ailments": [],
+      "series": "persona"
     },
     {
       "name": "Lullaby",
@@ -24907,7 +24978,8 @@
       "min": 1,
       "max": 1,
       "flags": [],
-      "ailments": []
+      "ailments": [],
+      "series": "persona"
     },
     {
       "name": "Mabaisudi",
@@ -24951,7 +25023,8 @@
           "chance": 5,
           "display": "Low"
         }
-      ]
+      ],
+      "series": "persona"
     },
     {
       "name": "Mabufudyne",
@@ -24977,7 +25050,8 @@
           "chance": 5,
           "display": "Low"
         }
-      ]
+      ],
+      "series": "persona"
     },
     {
       "name": "Mabufula",
@@ -25003,7 +25077,8 @@
           "chance": 5,
           "display": "Low"
         }
-      ]
+      ],
+      "series": "persona"
     },
     {
       "name": "Maeiga",
@@ -25023,7 +25098,8 @@
       "min": 1,
       "max": 1,
       "flags": [],
-      "ailments": []
+      "ailments": [],
+      "series": "persona"
     },
     {
       "name": "Maeigaon",
@@ -25043,7 +25119,8 @@
       "min": 1,
       "max": 1,
       "flags": [],
-      "ailments": []
+      "ailments": [],
+      "series": "persona"
     },
     {
       "name": "Maeiha",
@@ -25063,7 +25140,8 @@
       "min": 1,
       "max": 1,
       "flags": [],
-      "ailments": []
+      "ailments": [],
+      "series": "persona"
     },
     {
       "name": "Mafrei",
@@ -25083,7 +25161,8 @@
       "min": 1,
       "max": 1,
       "flags": [],
-      "ailments": []
+      "ailments": [],
+      "series": "persona"
     },
     {
       "name": "Mafreidyne",
@@ -25103,7 +25182,8 @@
       "min": 1,
       "max": 1,
       "flags": [],
-      "ailments": []
+      "ailments": [],
+      "series": "persona"
     },
     {
       "name": "Mafreila",
@@ -25123,7 +25203,8 @@
       "min": 1,
       "max": 1,
       "flags": [],
-      "ailments": []
+      "ailments": [],
+      "series": "persona"
     },
     {
       "name": "Magaru",
@@ -25143,7 +25224,8 @@
       "min": 1,
       "max": 1,
       "flags": [],
-      "ailments": []
+      "ailments": [],
+      "series": "persona"
     },
     {
       "name": "Magarudyne",
@@ -25163,7 +25245,8 @@
       "min": 1,
       "max": 1,
       "flags": [],
-      "ailments": []
+      "ailments": [],
+      "series": "persona"
     },
     {
       "name": "Magarula",
@@ -25183,7 +25266,8 @@
       "min": 1,
       "max": 1,
       "flags": [],
-      "ailments": []
+      "ailments": [],
+      "series": "persona"
     },
     {
       "name": "Magatsu Mandala",
@@ -25219,7 +25303,8 @@
           "chance": 20,
           "display": "Medium"
         }
-      ]
+      ],
+      "series": "persona"
     },
     {
       "name": "Mahama",
@@ -25310,7 +25395,8 @@
       "min": 1,
       "max": 1,
       "flags": [],
-      "ailments": []
+      "ailments": [],
+      "series": "persona"
     },
     {
       "name": "Makougaon",
@@ -25330,7 +25416,8 @@
       "min": 1,
       "max": 1,
       "flags": [],
-      "ailments": []
+      "ailments": [],
+      "series": "persona"
     },
     {
       "name": "Makouha",
@@ -25350,7 +25437,8 @@
       "min": 1,
       "max": 1,
       "flags": [],
-      "ailments": []
+      "ailments": [],
+      "series": "persona"
     },
     {
       "name": "Mamudo",
@@ -25392,7 +25480,8 @@
       "min": 1,
       "max": 1,
       "flags": [],
-      "ailments": []
+      "ailments": [],
+      "series": "persona"
     },
     {
       "name": "Mapsio",
@@ -25412,7 +25501,8 @@
       "min": 1,
       "max": 1,
       "flags": [],
-      "ailments": []
+      "ailments": [],
+      "series": "persona"
     },
     {
       "name": "Mapsiodyne",
@@ -25432,7 +25522,8 @@
       "min": 1,
       "max": 1,
       "flags": [],
-      "ailments": []
+      "ailments": [],
+      "series": "persona"
     },
     {
       "name": "Maragi",
@@ -25458,7 +25549,8 @@
           "chance": 5,
           "display": "Low"
         }
-      ]
+      ],
+      "series": "persona"
     },
     {
       "name": "Maragidyne",
@@ -25484,7 +25576,8 @@
           "chance": 5,
           "display": "Low"
         }
-      ]
+      ],
+      "series": "persona"
     },
     {
       "name": "Maragion",
@@ -25510,7 +25603,8 @@
           "chance": 5,
           "display": "Low"
         }
-      ]
+      ],
+      "series": "persona"
     },
     {
       "name": "Marakukaja",
@@ -25568,7 +25662,8 @@
           "chance": 5,
           "display": "Low"
         }
-      ]
+      ],
+      "series": "persona"
     },
     {
       "name": "Marin Karin",
@@ -25602,7 +25697,8 @@
       "min": 2,
       "max": 2,
       "flags": [],
-      "ailments": []
+      "ailments": [],
+      "series": "persona"
     },
     {
       "name": "Masukukaja",
@@ -25692,7 +25788,8 @@
           "chance": 5,
           "display": "Low"
         }
-      ]
+      ],
+      "series": "persona"
     },
     {
       "name": "Maziodyne",
@@ -25718,7 +25815,8 @@
           "chance": 5,
           "display": "Low"
         }
-      ]
+      ],
+      "series": "persona"
     },
     {
       "name": "Mazionga",
@@ -25744,7 +25842,8 @@
           "chance": 5,
           "display": "Low"
         }
-      ]
+      ],
+      "series": "persona"
     },
     {
       "name": "Media",
@@ -25806,7 +25905,8 @@
       "min": 1,
       "max": 1,
       "flags": [],
-      "ailments": []
+      "ailments": [],
+      "series": "persona"
     },
     {
       "name": "Megido",
@@ -25826,7 +25926,8 @@
       "min": 1,
       "max": 1,
       "flags": [],
-      "ailments": []
+      "ailments": [],
+      "series": "persona"
     },
     {
       "name": "Megidola",
@@ -25846,7 +25947,8 @@
       "min": 1,
       "max": 1,
       "flags": [],
-      "ailments": []
+      "ailments": [],
+      "series": "persona"
     },
     {
       "name": "Megidolaon",
@@ -25866,7 +25968,8 @@
       "min": 1,
       "max": 1,
       "flags": [],
-      "ailments": []
+      "ailments": [],
+      "series": "persona"
     },
     {
       "name": "Memory Blow",
@@ -25892,7 +25995,8 @@
           "chance": 5,
           "display": "Low"
         }
-      ]
+      ],
+      "series": "persona"
     },
     {
       "name": "Me Patra",
@@ -25937,7 +26041,8 @@
           "chance": 5,
           "display": "Low"
         }
-      ]
+      ],
+      "series": "persona"
     },
     {
       "name": "Miracle Punch",
@@ -25959,7 +26064,8 @@
       "flags": [
         "Crit Boost"
       ],
-      "ailments": []
+      "ailments": [],
+      "series": "persona"
     },
     {
       "name": "Miracle Rush",
@@ -25981,7 +26087,8 @@
       "flags": [
         "Crit Boost"
       ],
-      "ailments": []
+      "ailments": [],
+      "series": "persona"
     },
     {
       "name": "Money Boost",
@@ -26013,7 +26120,8 @@
       "min": 1,
       "max": 1,
       "flags": [],
-      "ailments": []
+      "ailments": [],
+      "series": "persona"
     },
     {
       "name": "Mudo",
@@ -26069,7 +26177,8 @@
           "chance": 5,
           "display": "Low"
         }
-      ]
+      ],
+      "series": "persona"
     },
     {
       "name": "Myriad Slashes",
@@ -26089,7 +26198,8 @@
       "min": 2,
       "max": 3,
       "flags": [],
-      "ailments": []
+      "ailments": [],
+      "series": "persona"
     },
     {
       "name": "Myriad Truths",
@@ -26109,7 +26219,8 @@
       "min": 3,
       "max": 3,
       "flags": [],
-      "ailments": []
+      "ailments": [],
+      "series": "persona"
     },
     {
       "name": "Navas Nebula",
@@ -26135,7 +26246,8 @@
           "chance": 5,
           "display": "Low"
         }
-      ]
+      ],
+      "series": "persona"
     },
     {
       "name": "Negative Pile",
@@ -26161,7 +26273,8 @@
           "chance": 20,
           "display": "Medium"
         }
-      ]
+      ],
+      "series": "persona"
     },
     {
       "name": "Neo Cadenza",
@@ -26205,7 +26318,8 @@
           "chance": 5,
           "display": "Low"
         }
-      ]
+      ],
+      "series": "persona"
     },
     {
       "name": "Nocturnal Flash",
@@ -26426,7 +26540,8 @@
       "flags": [
         "Crit Boost"
       ],
-      "ailments": []
+      "ailments": [],
+      "series": "persona"
     },
     {
       "name": "Oni-Kagura",
@@ -26452,7 +26567,8 @@
           "chance": 5,
           "display": "Low"
         }
-      ]
+      ],
+      "series": "persona"
     },
     {
       "name": "Oracle",
@@ -26493,7 +26609,8 @@
       "min": 1,
       "max": 1,
       "flags": [],
-      "ailments": []
+      "ailments": [],
+      "series": "persona"
     },
     {
       "name": "Patra",
@@ -26580,7 +26697,8 @@
           "chance": 20,
           "display": "Medium"
         }
-      ]
+      ],
+      "series": "persona"
     },
     {
       "name": "Posumudi",
@@ -26616,7 +26734,8 @@
       "min": 1,
       "max": 1,
       "flags": [],
-      "ailments": []
+      "ailments": [],
+      "series": "persona"
     },
     {
       "name": "Primal Force",
@@ -26636,7 +26755,8 @@
       "min": 1,
       "max": 1,
       "flags": [],
-      "ailments": []
+      "ailments": [],
+      "series": "persona"
     },
     {
       "name": "Psi",
@@ -26656,7 +26776,8 @@
       "min": 1,
       "max": 1,
       "flags": [],
-      "ailments": []
+      "ailments": [],
+      "series": "persona"
     },
     {
       "name": "Psio",
@@ -26676,7 +26797,8 @@
       "min": 1,
       "max": 1,
       "flags": [],
-      "ailments": []
+      "ailments": [],
+      "series": "persona"
     },
     {
       "name": "Psiodyne",
@@ -26696,7 +26818,8 @@
       "min": 1,
       "max": 1,
       "flags": [],
-      "ailments": []
+      "ailments": [],
+      "series": "persona"
     },
     {
       "name": "Psy Amp",
@@ -26743,7 +26866,8 @@
       "min": 1,
       "max": 1,
       "flags": [],
-      "ailments": []
+      "ailments": [],
+      "series": "persona"
     },
     {
       "name": "Psycho Force",
@@ -26763,7 +26887,8 @@
       "min": 1,
       "max": 1,
       "flags": [],
-      "ailments": []
+      "ailments": [],
+      "series": "persona"
     },
     {
       "name": "Psy Wall",
@@ -26818,7 +26943,8 @@
       "flags": [
         "Weather Boost"
       ],
-      "ailments": []
+      "ailments": [],
+      "series": "persona"
     },
     {
       "name": "Rakukaja",
@@ -26870,7 +26996,8 @@
       "min": 1,
       "max": 3,
       "flags": [],
-      "ailments": []
+      "ailments": [],
+      "series": "persona"
     },
     {
       "name": "Rebellion",
@@ -26901,7 +27028,8 @@
       "flags": [
         "Down Boost"
       ],
-      "ailments": []
+      "ailments": [],
+      "series": "persona"
     },
     {
       "name": "Rebel Soul",
@@ -27254,7 +27382,8 @@
       "min": 1,
       "max": 1,
       "flags": [],
-      "ailments": []
+      "ailments": [],
+      "series": "persona"
     },
     {
       "name": "Rising Slash",
@@ -27276,7 +27405,8 @@
       "flags": [
         "Baton Boost"
       ],
-      "ailments": []
+      "ailments": [],
+      "series": "persona"
     },
     {
       "name": "Salvation",
@@ -27353,7 +27483,8 @@
       "min": 4,
       "max": 8,
       "flags": [],
-      "ailments": []
+      "ailments": [],
+      "series": "persona"
     },
     {
       "name": "Shock Boost",
@@ -27383,7 +27514,8 @@
       "min": 1,
       "max": 1,
       "flags": [],
-      "ailments": []
+      "ailments": [],
+      "series": "persona"
     },
     {
       "name": "Skull Cracker",
@@ -27409,7 +27541,8 @@
           "chance": 20,
           "display": "Medium"
         }
-      ]
+      ],
+      "series": "persona"
     },
     {
       "name": "Sledgehammer",
@@ -27435,7 +27568,8 @@
           "chance": 20,
           "display": "Medium"
         }
-      ]
+      ],
+      "series": "persona"
     },
     {
       "name": "Sleep Boost",
@@ -27465,7 +27599,8 @@
       "min": 1,
       "max": 1,
       "flags": [],
-      "ailments": []
+      "ailments": [],
+      "series": "persona"
     },
     {
       "name": "Snipe",
@@ -27494,7 +27629,8 @@
       "min": 1,
       "max": 1,
       "flags": [],
-      "ailments": []
+      "ailments": [],
+      "series": "persona"
     },
     {
       "name": "Soul Break",
@@ -27670,7 +27806,8 @@
       "min": 2,
       "max": 4,
       "flags": [],
-      "ailments": []
+      "ailments": [],
+      "series": "persona"
     },
     {
       "name": "Sword Dance",
@@ -27692,7 +27829,8 @@
       "flags": [
         "Crit Boost"
       ],
-      "ailments": []
+      "ailments": [],
+      "series": "persona"
     },
     {
       "name": "Tarukaja",
@@ -27766,7 +27904,8 @@
       "min": 3,
       "max": 5,
       "flags": [],
-      "ailments": []
+      "ailments": [],
+      "series": "persona"
     },
     {
       "name": "Tentarafoo",
@@ -27806,7 +27945,8 @@
           "chance": 20,
           "display": "Medium"
         }
-      ]
+      ],
+      "series": "persona"
     },
     {
       "name": "Tetra Break",
@@ -27898,7 +28038,8 @@
           "chance": 5,
           "display": "Low"
         }
-      ]
+      ],
+      "series": "persona"
     },
     {
       "name": "Titanomachia",
@@ -27924,7 +28065,8 @@
           "chance": 40,
           "display": "High"
         }
-      ]
+      ],
+      "series": "persona"
     },
     {
       "name": "Torrent Shot",
@@ -27944,7 +28086,8 @@
       "min": 2,
       "max": 4,
       "flags": [],
-      "ailments": []
+      "ailments": [],
+      "series": "persona"
     },
     {
       "name": "Touch n\" Go",
@@ -28010,7 +28153,8 @@
       "min": 3,
       "max": 3,
       "flags": [],
-      "ailments": []
+      "ailments": [],
+      "series": "persona"
     },
     {
       "name": "Tyrant\"s Mind",
@@ -28055,7 +28199,8 @@
       "min": 1,
       "max": 1,
       "flags": [],
-      "ailments": []
+      "ailments": [],
+      "series": "persona"
     },
     {
       "name": "Vajra Blast",
@@ -28075,7 +28220,8 @@
       "min": 1,
       "max": 1,
       "flags": [],
-      "ailments": []
+      "ailments": [],
+      "series": "persona"
     },
     {
       "name": "Vault Guardian",
@@ -28114,7 +28260,8 @@
       "min": 1,
       "max": 1,
       "flags": [],
-      "ailments": []
+      "ailments": [],
+      "series": "persona"
     },
     {
       "name": "Victory Cry",
@@ -28155,7 +28302,8 @@
       "flags": [
         "Down Boost"
       ],
-      "ailments": []
+      "ailments": [],
+      "series": "persona"
     },
     {
       "name": "Virus Wave",
@@ -28181,7 +28329,8 @@
           "chance": 5,
           "display": "Low"
         }
-      ]
+      ],
+      "series": "persona"
     },
     {
       "name": "Vorpal Blade",
@@ -28201,7 +28350,8 @@
       "min": 1,
       "max": 1,
       "flags": [],
-      "ailments": []
+      "ailments": [],
+      "series": "persona"
     },
     {
       "name": "Wage War",
@@ -28248,7 +28398,8 @@
           "chance": 5,
           "display": "Low"
         }
-      ]
+      ],
+      "series": "persona"
     },
     {
       "name": "Wind Amp",
@@ -28326,7 +28477,8 @@
           "chance": 5,
           "display": "Low"
         }
-      ]
+      ],
+      "series": "persona"
     },
     {
       "name": "Ziodyne",
@@ -28352,7 +28504,8 @@
           "chance": 5,
           "display": "Low"
         }
-      ]
+      ],
+      "series": "persona"
     },
     {
       "name": "Zionga",
@@ -28378,7 +28531,8 @@
           "chance": 5,
           "display": "Low"
         }
-      ]
+      ],
+      "series": "persona"
     }
   ]
 }

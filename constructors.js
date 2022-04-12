@@ -188,6 +188,7 @@ module.exports.AttackSkill = class extends BaseSkill {
 		this.max = data.max;
 		this.flags = data.flags;
 		this.ailments = data.ailments;
+		this.series = data.series;
 	}
 };
 module.exports.AutoBuffSkill = class extends BaseSkill {
