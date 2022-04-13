@@ -88,7 +88,7 @@ class BaseSkill {
 		}
 		case 'ATTACK': {
 			const { ailments } = this;
-			return `${this.power.display} ${this.affinity} damage to ${this.range ? 'one foe' : 'all foes'}${(this.max > 1) ? (this.max !== this.min ? ` ${this.min} to ${this.max}x` : ` ${this.max}x`) : ''}${ailments.length ? ` with ${ailments[0].chance.toLowerCase()} chance of ${ailments.map(a => a.ailment).join(' and ')}` : ''}.${this.flags.includes('Crit Boost') ? '  High critical rate.' : ''}${this.flags.includes('Down Boost') ? '  Damage increases if foe is downed.' : ''}${this.flags.includes('Baton Boost') ? '  Stronger under Baton Pass.' : ''}${this.flags.includes('Accuracy Boost') ? '  High accuracy.' : ''}${this.flags.includes('Surround Boost') ? '  More powerful when being ambushed.' : ''}${this.flags.includes('Weather Boost') ? '  Increased Critical rate in rainy or snowy weather.' : ''}`;
+			return `${this.power.display} ${this.affinity} damage to ${this.range ? 'one foe' : 'all foes'}${(this.max > 1) ? (this.max !== this.min ? ` ${this.min} to ${this.max}x` : ` ${this.max}x`) : ''}${ailments.length ? ` with chance of ${ailments.map(a => a.name).join('/')}` : ''}.${this.flags.includes('Crit Boost') ? '  High critical rate.' : ''}${this.flags.includes('Down Boost') ? '  Damage increases if foe is downed.' : ''}${this.flags.includes('Baton Boost') ? '  Stronger under Baton Pass.' : ''}${this.flags.includes('Accuracy Boost') ? '  High accuracy.' : ''}${this.flags.includes('Surround Boost') ? '  More powerful when being ambushed.' : ''}${this.flags.includes('Weather Boost') ? '  Increased Critical rate in rainy or snowy weather.' : ''}`;
 		}
 		case 'AILBOOST': {
 			return `Increases chance of inflicting ${this.ailment === 'ALL' ? 'all ailments' : this.ailment}.`;
@@ -274,17 +274,6 @@ module.exports.ChargeSkill = class extends BaseSkill {
 		this.charge = data.charge;
 	}
 };
-module.exports.CounterSkill = class extends BaseSkill {
-	/**
-	 * @param {import('./index').CounterSkillData} data
-	 */
-	constructor(data) {
-		super(data);
-		this.affinity = data.affinity;
-		this.type = data.type;
-		this.chance = data.chance;
-	}
-};
 module.exports.CritSkill = class extends BaseSkill {
 	/**
 	 * @param {import('./index').CritSkillData} data
@@ -415,6 +404,17 @@ module.exports.NaviSkill = class extends BaseSkill {
 		this.type = data.type;
 	}
 };
+module.exports.PersonaCounterSkill = class extends BaseSkill {
+	/**
+	 * @param {import('./index').PersonaCounterSkillData} data
+	 */
+	constructor(data) {
+		super(data);
+		this.affinity = data.affinity;
+		this.type = data.type;
+		this.chance = data.chance;
+	}
+};
 module.exports.PostBattleSkill = class extends BaseSkill {
 	/**
 	 * @param {import('./index').PostBattleSkillData} data
@@ -522,7 +522,6 @@ module.exports.dataToClass = data => {
 	case 'BOOST': return new this.BoostSkill(data);
 	case 'BREAK': return new this.BreakSkill(data);
 	case 'CHARGE': return new this.ChargeSkill(data);
-	case 'COUNTER': return new this.CounterSkill(data);
 	case 'CRIT': return new this.CritSkill(data);
 	case 'CRITBOOST': return new this.CritBoostSkill(data);
 	case 'DEFENSIVE': return new this.DefensiveSkill(data);
@@ -534,6 +533,7 @@ module.exports.dataToClass = data => {
 	case 'MASTER': return new this.MasterSkill(data);
 	case 'MISC': return new this.MiscSkill(data);
 	case 'NAVI': return new this.NaviSkill(data);
+	case 'PERSONACOUNTER': return new this.PersonaCounterSkill(data);
 	case 'POSTBATTLE': return new this.PostBattleSkill(data);
 	case 'RECOVERY': return new this.RecoverySkill(data);
 	case 'REGEN': return new this.RegenSkill(data);

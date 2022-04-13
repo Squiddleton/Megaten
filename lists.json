@@ -23113,7 +23113,7 @@
       "name": "Counter -Persona-",
       "devName": "counterpersona",
       "affinity": "Passive",
-      "type": "COUNTER",
+      "type": "PERSONACOUNTER",
       "unique": false,
       "chance": 10
     },
@@ -23121,7 +23121,7 @@
       "name": "Counterstrike",
       "devName": "counterstrike",
       "affinity": "Passive",
-      "type": "COUNTER",
+      "type": "PERSONACOUNTER",
       "unique": false,
       "chance": 15
     },
@@ -25809,7 +25809,7 @@
       "name": "High Counter",
       "devName": "highcounter",
       "affinity": "Passive",
-      "type": "COUNTER",
+      "type": "PERSONACOUNTER",
       "unique": false,
       "chance": 20
     },
