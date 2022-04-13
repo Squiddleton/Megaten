@@ -477,6 +477,18 @@ module.exports.SMTCounterSkill = class extends BaseSkill {
 		this.power = data.power;
 	}
 };
+module.exports.SpringSkill = class extends BaseSkill {
+	/**
+	 * @param {import('./index').SpringSkillData} data
+	 */
+	constructor(data) {
+		super(data);
+		this.affinity = data.affinity;
+		this.type = data.type;
+		this.amount = data.amount;
+		this.hpmp = data.hpmp;
+	}
+};
 module.exports.SupportSkill = class extends BaseSkill {
 	/**
 	 * @param {import('./index').SupportSkillData} data
@@ -553,6 +565,7 @@ module.exports.dataToClass = data => {
 	case 'RECOVERY': return new this.RecoverySkill(data);
 	case 'REGEN': return new this.RegenSkill(data);
 	case 'SMTCOUNTER': return new this.SMTCounterSkill(data);
+	case 'SPRING': return new this.SpringSkill(data);
 	case 'SUPPORT': return new this.SupportSkill(data);
 	case 'SUSCEPTIBILITY': return new this.SusceptibilitySkill(data);
 	case 'WALL': return new this.WallSkill(data);
