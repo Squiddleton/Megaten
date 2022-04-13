@@ -227,6 +227,19 @@ module.exports.BarrierBreakSkill = class extends BaseSkill {
 		this.barrier = data.barrier;
 	}
 };
+module.exports.BlockSkill = class extends BaseSkill {
+	/**
+	 *
+	 * @param {import('./index').BlockSkillData} data
+	 */
+	constructor(data) {
+		super(data);
+		this.affinity = data.affinity;
+		this.type = data.type;
+		this.cost = data.cost;
+		this.element = data.element;
+	}
+};
 module.exports.BoostSkill = class extends BaseSkill {
 	/**
 	 * @param {import('./index').BoostSkillData} data
@@ -521,6 +534,7 @@ module.exports.dataToClass = data => {
 	case 'AUTOBUFF': return new this.AutoBuffSkill(data);
 	case 'BARRIER': return new this.BarrierSkill(data);
 	case 'BARRIERBREAK': return new this.BarrierBreakSkill(data);
+	case 'BLOCK': return new this.BlockSkill(data);
 	case 'BOOST': return new this.BoostSkill(data);
 	case 'BREAK': return new this.BreakSkill(data);
 	case 'CHARGE': return new this.ChargeSkill(data);

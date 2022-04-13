@@ -22316,24 +22316,6 @@
       ]
     },
     {
-      "name": "Light Amp",
-      "devName": "lightamp",
-      "affinity": "Passive",
-      "type": "BOOST",
-      "unique": false,
-      "amount": 50,
-      "element": "Light"
-    },
-    {
-      "name": "Light Boost",
-      "devName": "lightboost",
-      "affinity": "Passive",
-      "type": "BOOST",
-      "unique": false,
-      "amount": 25,
-      "element": "Light"
-    },
-    {
       "name": "Blight",
       "devName": "blight",
       "affinity": "Phys",
@@ -22890,6 +22872,15 @@
       "element": "Dark"
     },
     {
+      "name": "Dark Block",
+      "devName": "darkblock",
+      "affinity": "Support",
+      "type": "BLOCK",
+      "unique": false,
+      "cost": 40,
+      "element": "Dark"
+    },
+    {
       "name": "Dark Boost",
       "devName": "darkboost",
       "affinity": "Passive",
@@ -23179,19 +23170,6 @@
       "weather": false
     },
     {
-      "name": "Dodge Light",
-      "devName": "dodgelight",
-      "affinity": "Passive",
-      "type": "EVASION",
-      "unique": false,
-      "amount": 2,
-      "surround": false,
-      "weather": false,
-      "elements": [
-        "Light"
-      ]
-    },
-    {
       "name": "Dodge Dark",
       "devName": "dodgedark",
       "affinity": "Passive",
@@ -23241,6 +23219,19 @@
       "weather": false,
       "elements": [
         "Ice"
+      ]
+    },
+    {
+      "name": "Dodge Light",
+      "devName": "dodgelight",
+      "affinity": "Passive",
+      "type": "EVASION",
+      "unique": false,
+      "amount": 2,
+      "surround": false,
+      "weather": false,
+      "elements": [
+        "Light"
       ]
     },
     {
@@ -23424,15 +23415,6 @@
       "auto": []
     },
     {
-      "name": "Drain Light",
-      "devName": "drainlight",
-      "affinity": "Passive",
-      "type": "DEFENSIVE",
-      "unique": false,
-      "element": "Light",
-      "newAffinity": "Drain"
-    },
-    {
       "name": "Drain Dark",
       "devName": "draindark",
       "affinity": "Passive",
@@ -23466,6 +23448,15 @@
       "type": "DEFENSIVE",
       "unique": false,
       "element": "Ice",
+      "newAffinity": "Drain"
+    },
+    {
+      "name": "Drain Light",
+      "devName": "drainlight",
+      "affinity": "Passive",
+      "type": "DEFENSIVE",
+      "unique": false,
+      "element": "Light",
       "newAffinity": "Drain"
     },
     {
@@ -23603,6 +23594,15 @@
       "element": "Elec"
     },
     {
+      "name": "Elec Block",
+      "devName": "elecblock",
+      "affinity": "Support",
+      "type": "BLOCK",
+      "unique": false,
+      "cost": 40,
+      "element": "Elec"
+    },
+    {
       "name": "Elec Boost",
       "devName": "elecboost",
       "affinity": "Passive",
@@ -23711,19 +23711,6 @@
       "unique": false
     },
     {
-      "name": "Evade Light",
-      "devName": "evadelight",
-      "affinity": "Passive",
-      "type": "EVASION",
-      "unique": false,
-      "amount": 3,
-      "surround": false,
-      "weather": false,
-      "elements": [
-        "Light"
-      ]
-    },
-    {
       "name": "Evade Dark",
       "devName": "evadedark",
       "affinity": "Passive",
@@ -23773,6 +23760,19 @@
       "weather": false,
       "elements": [
         "Ice"
+      ]
+    },
+    {
+      "name": "Evade Light",
+      "devName": "evadelight",
+      "affinity": "Passive",
+      "type": "EVASION",
+      "unique": false,
+      "amount": 3,
+      "surround": false,
+      "weather": false,
+      "elements": [
+        "Light"
       ]
     },
     {
@@ -23918,6 +23918,15 @@
       "element": "Fire"
     },
     {
+      "name": "Fire Block",
+      "devName": "fireblock",
+      "affinity": "Support",
+      "type": "BLOCK",
+      "unique": false,
+      "cost": 40,
+      "element": "Fire"
+    },
+    {
       "name": "Fire Boost",
       "devName": "fireboost",
       "affinity": "Passive",
@@ -23987,6 +23996,15 @@
         }
       ],
       "series": "persona"
+    },
+    {
+      "name": "Force Block",
+      "devName": "forceblock",
+      "affinity": "Support",
+      "type": "BLOCK",
+      "unique": false,
+      "cost": 40,
+      "element": "Force"
     },
     {
       "name": "Force Pleroma",
@@ -24739,6 +24757,15 @@
       "element": "Ice"
     },
     {
+      "name": "Ice Block",
+      "devName": "iceblock",
+      "affinity": "Support",
+      "type": "BLOCK",
+      "unique": false,
+      "cost": 40,
+      "element": "Ice"
+    },
+    {
       "name": "Ice Boost",
       "devName": "iceboost",
       "affinity": "Passive",
@@ -25018,6 +25045,33 @@
         "Tetrakarn",
         "Makarakarn"
       ]
+    },
+    {
+      "name": "Light Amp",
+      "devName": "lightamp",
+      "affinity": "Passive",
+      "type": "BOOST",
+      "unique": false,
+      "amount": 50,
+      "element": "Light"
+    },
+    {
+      "name": "Light Block",
+      "devName": "lightblock",
+      "affinity": "Support",
+      "type": "BLOCK",
+      "unique": false,
+      "cost": 40,
+      "element": "Light"
+    },
+    {
+      "name": "Light Boost",
+      "devName": "lightboost",
+      "affinity": "Passive",
+      "type": "BOOST",
+      "unique": false,
+      "amount": 25,
+      "element": "Light"
     },
     {
       "name": "Light Pleroma",
@@ -26425,15 +26479,6 @@
       "element": "Nuke"
     },
     {
-      "name": "Null Light",
-      "devName": "nulllight",
-      "affinity": "Passive",
-      "type": "DEFENSIVE",
-      "unique": false,
-      "element": "Light",
-      "newAffinity": "Null"
-    },
-    {
       "name": "Null Brainwash",
       "devName": "nullbrainwash",
       "affinity": "Passive",
@@ -26503,6 +26548,15 @@
       "type": "DEFENSIVE",
       "unique": false,
       "element": "Ice",
+      "newAffinity": "Null"
+    },
+    {
+      "name": "Null Light",
+      "devName": "nulllight",
+      "affinity": "Passive",
+      "type": "DEFENSIVE",
+      "unique": false,
+      "element": "Light",
       "newAffinity": "Null"
     },
     {
@@ -26697,6 +26751,15 @@
         "amount": 0,
         "display": "High"
       }
+    },
+    {
+      "name": "Phys Block",
+      "devName": "physblock",
+      "affinity": "Support",
+      "type": "BLOCK",
+      "unique": false,
+      "cost": 70,
+      "element": "Phys"
     },
     {
       "name": "Phys Pleroma",
@@ -27177,15 +27240,6 @@
       "negate": false
     },
     {
-      "name": "Repel Light",
-      "devName": "repellight",
-      "affinity": "Passive",
-      "type": "DEFENSIVE",
-      "unique": false,
-      "element": "Light",
-      "newAffinity": "Repel"
-    },
-    {
       "name": "Repel Dark",
       "devName": "repeldark",
       "affinity": "Passive",
@@ -27219,6 +27273,15 @@
       "type": "DEFENSIVE",
       "unique": false,
       "element": "Ice",
+      "newAffinity": "Repel"
+    },
+    {
+      "name": "Repel Light",
+      "devName": "repellight",
+      "affinity": "Passive",
+      "type": "DEFENSIVE",
+      "unique": false,
+      "element": "Light",
       "newAffinity": "Repel"
     },
     {
@@ -27256,15 +27319,6 @@
       "unique": false,
       "element": "Wind",
       "newAffinity": "Repel"
-    },
-    {
-      "name": "Resist Light",
-      "devName": "resistlight",
-      "affinity": "Passive",
-      "type": "DEFENSIVE",
-      "unique": false,
-      "element": "Light",
-      "newAffinity": "Resist"
     },
     {
       "name": "Resist Brainwash",
@@ -27363,6 +27417,15 @@
       "type": "DEFENSIVE",
       "unique": false,
       "element": "Ice",
+      "newAffinity": "Resist"
+    },
+    {
+      "name": "Resist Light",
+      "devName": "resistlight",
+      "affinity": "Passive",
+      "type": "DEFENSIVE",
+      "unique": false,
+      "element": "Light",
       "newAffinity": "Resist"
     },
     {

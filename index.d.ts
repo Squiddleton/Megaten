@@ -219,6 +219,21 @@ export interface BarrierBreakSkillData extends BaseSkillData {
     barrier: string;
 }
 
+export class BlockSkill extends BaseSkill {
+    constructor(data: BlockSkillData);
+    affinity: 'Support';
+    type: 'BLOCK';
+    cost: number;
+    element: Exclude<SMTElement, 'Almighty'>
+}
+
+export interface BlockSkillData extends BaseSkillData {
+    affinity: 'Support';
+    type: 'BLOCK';
+    cost: number;
+    element: Exclude<SMTElement, 'Almighty'>
+}
+
 export class BoostSkill extends BaseSkill {
     constructor(data: BoostSkillData);
     affinity: 'Passive';
@@ -608,9 +623,10 @@ export type Buff = 'Attack' | 'Defense' | 'Agility';
 
 export type ChanceDisplay = 'Low' | 'Medium' | 'High';
 
-export type Element = 'Phys' | 'Gun' | 'Fire' | 'Ice' | 'Elec' | 'Wind' | 'Nuke' | 'Psy' | 'Light' | 'Dark' | 'Almighty';
+export type Element = 'Phys' | 'Gun' | 'Fire' | 'Ice' | 'Elec' | 'Force' | 'Wind' | 'Nuke' | 'Psy' | 'Light' | 'Dark' | 'Almighty';
 export type Inherit = Exclude<Element, 'Gun'> | 'Ailment' | 'Recovery' | 'Support';
 export type Affinity = Inherit | 'Gun' | 'Passive';
+export type SMTElement = Exclude<Element, 'Wind' | 'Nuke' | 'Psy' >
 
 export type Game = 'p3' | 'p4' | 'p5' | 'smt5';
 
@@ -621,15 +637,15 @@ export type Range = 0 | 1;
 
 export type Series = 'persona' | 'smt';
 
-export type Skill = AilBoostSkill | AilDefensiveSkill | AilmentSkill | AttackSkill | AutoBuffSkill | BarrierSkill | BarrierBreakSkill | BoostSkill | BreakSkill
+export type Skill = AilBoostSkill | AilDefensiveSkill | AilmentSkill | AttackSkill | AutoBuffSkill | BarrierSkill | BarrierBreakSkill | BlockSkill | BoostSkill | BreakSkill
     | ChargeSkill | CounterSkill | CritSkill | CritBoostSkill | DefensiveSkill | DrainSkill | EndureSkill | EvasionSkill | HalveSkill | InstaKillSkill
     | InstaKillBoostSkill | MasterSkill | MiscSkill | NaviSkill | PostBattleSkill | RecoverySkill | RegenSkill | SupportSkill | SusceptibilitySkill | WallSkill;
 
-export type SkillData = AilBoostSkillData | AilDefensiveSkillData | AilmentSkillData | AttackSkillData | AutoBuffSkillData | BarrierSkillData | BarrierBreakSkillData | BoostSkillData | BreakSkillData
+export type SkillData = AilBoostSkillData | AilDefensiveSkillData | AilmentSkillData | AttackSkillData | AutoBuffSkillData | BarrierSkillData | BarrierBreakSkillData | BlockSkillData | BoostSkillData | BreakSkillData
     | ChargeSkillData | CounterSkillData | CritSkillData | CritBoostSkillData | DefensiveSkillData | DrainSkillData | EndureSkillData | EvasionSkillData | HalveSkillData | InstaKillSkillData
     | InstaKillBoostSkillData | MasterSkillData | MiscSkillData | NaviSkillData | PostBattleSkillData | RecoverySkillData | RegenSkillData | SupportSkillData | SusceptibilitySkillData | WallSkillData;
 
-export type SkillType = 'AILBOOST' | 'AILDEFENSIVE' | 'AILMENT' | 'ATTACK' | 'AUTOBUFF' | 'BARRIER' | 'BARRIERBREAK' | 'BOOST' | 'BREAK'
+export type SkillType = 'AILBOOST' | 'AILDEFENSIVE' | 'AILMENT' | 'ATTACK' | 'AUTOBUFF' | 'BARRIER' | 'BARRIERBREAK' | 'BLOCK' | 'BOOST' | 'BREAK'
     | 'CHARGE' | 'COUNTER' | 'CRIT' |'CRITBOOST' | 'DEFENSIVE' | 'DRAIN' | 'ENDURE' | 'EVASION' | 'HALVE' | 'INSTAKILL' 
     | 'INSTAKILLBOOST' | 'MASTER' | 'MISC' | 'NAVI' | 'POSTBATTLE' | 'RECOVERY' | 'REGEN' | 'SUPPORT' | 'SUSCEPTIBILITY' | 'WALL';
     
