@@ -23994,6 +23994,15 @@
       "newAffinity": "Drain"
     },
     {
+      "name": "Drain Force",
+      "devName": "drainforce",
+      "affinity": "Passive",
+      "type": "DEFENSIVE",
+      "unique": false,
+      "element": "Force",
+      "newAffinity": "Drain"
+    },
+    {
       "name": "Drain Ice",
       "devName": "drainice",
       "affinity": "Passive",
@@ -28549,6 +28558,15 @@
       "newAffinity": "Null"
     },
     {
+      "name": "Null Force",
+      "devName": "nullforce",
+      "affinity": "Passive",
+      "type": "DEFENSIVE",
+      "unique": false,
+      "element": "Force",
+      "newAffinity": "Null"
+    },
+    {
       "name": "Null Forget",
       "devName": "nullforget",
       "affinity": "Passive",
@@ -29574,6 +29592,15 @@
       "newAffinity": "Repel"
     },
     {
+      "name": "Repel Force",
+      "devName": "repelforce",
+      "affinity": "Passive",
+      "type": "DEFENSIVE",
+      "unique": false,
+      "element": "Force",
+      "newAffinity": "Repel"
+    },
+    {
       "name": "Repel Ice",
       "devName": "repelice",
       "affinity": "Passive",
@@ -29706,6 +29733,15 @@
       "type": "DEFENSIVE",
       "unique": false,
       "element": "Fire",
+      "newAffinity": "Resist"
+    },
+    {
+      "name": "Resist Force",
+      "devName": "resistforce",
+      "affinity": "Passive",
+      "type": "DEFENSIVE",
+      "unique": false,
+      "element": "Force",
       "newAffinity": "Resist"
     },
     {
