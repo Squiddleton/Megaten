@@ -21670,25 +21670,25 @@
     {
       "name": "+15% EXP",
       "devName": "15exp",
-      "hp": 0,
       "affinity": "Passive",
       "type": "POSTBATTLE",
       "unique": false,
       "range": 1,
       "xp": 15,
       "yen": 0,
+      "hp": 0,
       "mp": 0
     },
     {
       "name": "+50% EXP",
       "devName": "50exp",
-      "hp": 0,
       "affinity": "Passive",
       "type": "POSTBATTLE",
       "unique": false,
       "range": 1,
       "xp": 50,
       "yen": 0,
+      "hp": 0,
       "mp": 0
     },
     {
@@ -25341,37 +25341,37 @@
     {
       "name": "Growth 1",
       "devName": "growth1",
-      "hp": 0,
       "affinity": "Passive",
       "type": "POSTBATTLE",
       "unique": false,
       "range": 1,
       "xp": 25,
       "yen": 0,
+      "hp": 0,
       "mp": 0
     },
     {
       "name": "Growth 2",
       "devName": "growth2",
-      "hp": 0,
       "affinity": "Passive",
       "type": "POSTBATTLE",
       "unique": false,
       "range": 1,
       "xp": 50,
       "yen": 0,
+      "hp": 0,
       "mp": 0
     },
     {
       "name": "Growth 3",
       "devName": "growth3",
-      "hp": 0,
       "affinity": "Passive",
       "type": "POSTBATTLE",
       "unique": false,
       "range": 1,
       "xp": 100,
       "yen": 0,
+      "hp": 0,
       "mp": 0
     },
     {
@@ -26457,13 +26457,13 @@
     {
       "name": "Life Aid",
       "devName": "lifeaid",
-      "hp": 8,
       "affinity": "Passive",
       "type": "POSTBATTLE",
       "unique": false,
       "range": 1,
       "xp": 0,
       "yen": 0,
+      "hp": 8,
       "mp": 8
     },
     {
@@ -28104,13 +28104,13 @@
     {
       "name": "Money Boost",
       "devName": "moneyboost",
-      "hp": 0,
       "affinity": "Passive",
       "type": "POSTBATTLE",
       "unique": false,
       "range": 0,
       "xp": 0,
       "yen": 15,
+      "hp": 0,
       "mp": 0
     },
     {
@@ -31231,13 +31231,13 @@
     {
       "name": "Victory Cry",
       "devName": "victorycry",
-      "hp": 100,
       "affinity": "Passive",
       "type": "POSTBATTLE",
       "unique": false,
       "range": 1,
       "xp": 0,
       "yen": 0,
+      "hp": 100,
       "mp": 100
     },
     {
