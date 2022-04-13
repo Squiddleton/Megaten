@@ -484,7 +484,7 @@ export class RecoverySkill extends BaseSkill {
     ailment: string[];
     buffs: Buff[];
     revive: boolean;
-    negate: boolean;
+    flags: string[];
 }
 
 export interface RecoverySkillData extends BaseSkillData {
@@ -496,7 +496,7 @@ export interface RecoverySkillData extends BaseSkillData {
     ailment: string[];
     buffs: Buff[];
     revive: boolean;
-    negate: boolean;
+    flags: string[];
 }
 
 export class RegenSkill extends BaseSkill {

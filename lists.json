@@ -21980,7 +21980,7 @@
       "amount": 0,
       "buffs": [],
       "revive": false,
-      "negate": false
+      "flags": []
     },
     {
       "name": "Amrita Shower",
@@ -21996,7 +21996,7 @@
       "amount": 0,
       "buffs": [],
       "revive": false,
-      "negate": false
+      "flags": []
     },
     {
       "name": "Analysis",
@@ -22320,7 +22320,7 @@
       "amount": 0,
       "buffs": [],
       "revive": false,
-      "negate": false
+      "flags": []
     },
     {
       "name": "Bash",
@@ -22891,7 +22891,7 @@
         "Agility"
       ],
       "revive": false,
-      "negate": false
+      "flags": []
     },
     {
       "name": "Carnage Fang",
@@ -22958,7 +22958,7 @@
         "Attack"
       ],
       "revive": false,
-      "negate": false
+      "flags": []
     },
     {
       "name": "Charge",
@@ -22984,7 +22984,7 @@
       "amount": 0,
       "buffs": [],
       "revive": false,
-      "negate": false
+      "flags": []
     },
     {
       "name": "Checkmate",
@@ -23616,7 +23616,7 @@
       "amount": 50,
       "buffs": [],
       "revive": false,
-      "negate": false
+      "flags": []
     },
     {
       "name": "Diamond Dust",
@@ -23656,7 +23656,7 @@
       "amount": 999,
       "buffs": [],
       "revive": false,
-      "negate": false
+      "flags": []
     },
     {
       "name": "Diarama",
@@ -23670,7 +23670,7 @@
       "amount": 100,
       "buffs": [],
       "revive": false,
-      "negate": false
+      "flags": []
     },
     {
       "name": "Die For Me!",
@@ -24315,7 +24315,7 @@
       "amount": 0,
       "buffs": [],
       "revive": false,
-      "negate": false
+      "flags": []
     },
     {
       "name": "Energy Shower",
@@ -24335,7 +24335,7 @@
       "amount": 0,
       "buffs": [],
       "revive": false,
-      "negate": false
+      "flags": []
     },
     {
       "name": "Escape Route",
@@ -25953,7 +25953,7 @@
       "amount": 100,
       "buffs": [],
       "revive": true,
-      "negate": false
+      "flags": []
     },
     {
       "name": "Holy Embrace",
@@ -26675,7 +26675,7 @@
       "amount": 0,
       "buffs": [],
       "revive": false,
-      "negate": false
+      "flags": []
     },
     {
       "name": "Mabufu",
@@ -27775,7 +27775,7 @@
       "amount": 50,
       "buffs": [],
       "revive": false,
-      "negate": false
+      "flags": []
     },
     {
       "name": "Mediarahan",
@@ -27789,7 +27789,7 @@
       "amount": 999,
       "buffs": [],
       "revive": false,
-      "negate": false
+      "flags": []
     },
     {
       "name": "Mediarama",
@@ -27803,7 +27803,7 @@
       "amount": 100,
       "buffs": [],
       "revive": false,
-      "negate": false
+      "flags": []
     },
     {
       "name": "Meditation",
@@ -28001,7 +28001,7 @@
       "amount": 0,
       "buffs": [],
       "revive": false,
-      "negate": false
+      "flags": []
     },
     {
       "name": "Mighty Cleave",
@@ -28458,7 +28458,7 @@
         "Agility"
       ],
       "revive": false,
-      "negate": false
+      "flags": []
     },
     {
       "name": "Niflheim",
@@ -28781,7 +28781,9 @@
       "amount": 999,
       "buffs": [],
       "revive": false,
-      "negate": true
+      "flags": [
+        "Revert Debuffs"
+      ]
     },
     {
       "name": "Pandemonic Crush",
@@ -28868,7 +28870,7 @@
       "amount": 0,
       "buffs": [],
       "revive": false,
-      "negate": false
+      "flags": []
     },
     {
       "name": "Pestilence",
@@ -29016,7 +29018,7 @@
       "amount": 0,
       "buffs": [],
       "revive": false,
-      "negate": false
+      "flags": []
     },
     {
       "name": "Power Punch",
@@ -29555,7 +29557,7 @@
       "amount": 50,
       "buffs": [],
       "revive": true,
-      "negate": false
+      "flags": []
     },
     {
       "name": "Regenerate 1",
@@ -29614,7 +29616,7 @@
       "amount": 0,
       "buffs": [],
       "revive": false,
-      "negate": false
+      "flags": []
     },
     {
       "name": "Repel Dark",
@@ -30024,7 +30026,7 @@
       "amount": 999,
       "buffs": [],
       "revive": false,
-      "negate": false
+      "flags": []
     },
     {
       "name": "Samarecarm",
@@ -30038,7 +30040,7 @@
       "amount": 100,
       "buffs": [],
       "revive": true,
-      "negate": false
+      "flags": []
     },
     {
       "name": "Samsara",
@@ -31615,7 +31617,7 @@
         "Agility"
       ],
       "revive": false,
-      "negate": false
+      "flags": []
     },
     {
       "name": "Zan",

@@ -444,7 +444,7 @@ module.exports.RecoverySkill = class extends BaseSkill {
 		this.ailment = data.ailment;
 		this.buffs = data.buffs;
 		this.revive = data.revive;
-		this.negate = data.negate;
+		this.flags = data.flags;
 	}
 };
 module.exports.RegenSkill = class extends BaseSkill {
