@@ -443,7 +443,6 @@ module.exports.RecoverySkill = class extends BaseSkill {
 		this.amount = data.amount;
 		this.ailment = data.ailment;
 		this.buffs = data.buffs;
-		this.revive = data.revive;
 		this.flags = data.flags;
 	}
 };

@@ -21979,7 +21979,6 @@
       ],
       "amount": 0,
       "buffs": [],
-      "revive": false,
       "flags": []
     },
     {
@@ -21995,7 +21994,6 @@
       ],
       "amount": 0,
       "buffs": [],
-      "revive": false,
       "flags": []
     },
     {
@@ -22319,7 +22317,6 @@
       ],
       "amount": 0,
       "buffs": [],
-      "revive": false,
       "flags": []
     },
     {
@@ -22890,7 +22887,6 @@
       "buffs": [
         "Agility"
       ],
-      "revive": false,
       "flags": []
     },
     {
@@ -22957,7 +22953,6 @@
       "buffs": [
         "Attack"
       ],
-      "revive": false,
       "flags": []
     },
     {
@@ -22983,7 +22978,6 @@
       ],
       "amount": 0,
       "buffs": [],
-      "revive": false,
       "flags": []
     },
     {
@@ -23615,7 +23609,6 @@
       "ailment": [],
       "amount": 50,
       "buffs": [],
-      "revive": false,
       "flags": []
     },
     {
@@ -23655,7 +23648,6 @@
       "ailment": [],
       "amount": 999,
       "buffs": [],
-      "revive": false,
       "flags": []
     },
     {
@@ -23669,7 +23661,6 @@
       "ailment": [],
       "amount": 100,
       "buffs": [],
-      "revive": false,
       "flags": []
     },
     {
@@ -24314,7 +24305,6 @@
       ],
       "amount": 0,
       "buffs": [],
-      "revive": false,
       "flags": []
     },
     {
@@ -24334,7 +24324,6 @@
       ],
       "amount": 0,
       "buffs": [],
-      "revive": false,
       "flags": []
     },
     {
@@ -25952,8 +25941,9 @@
       "ailment": [],
       "amount": 100,
       "buffs": [],
-      "revive": true,
-      "flags": []
+      "flags": [
+        "Revive"
+      ]
     },
     {
       "name": "Holy Embrace",
@@ -26674,7 +26664,6 @@
       ],
       "amount": 0,
       "buffs": [],
-      "revive": false,
       "flags": []
     },
     {
@@ -27774,7 +27763,6 @@
       "ailment": [],
       "amount": 50,
       "buffs": [],
-      "revive": false,
       "flags": []
     },
     {
@@ -27788,7 +27776,6 @@
       "ailment": [],
       "amount": 999,
       "buffs": [],
-      "revive": false,
       "flags": []
     },
     {
@@ -27802,7 +27789,6 @@
       "ailment": [],
       "amount": 100,
       "buffs": [],
-      "revive": false,
       "flags": []
     },
     {
@@ -28000,7 +27986,6 @@
       ],
       "amount": 0,
       "buffs": [],
-      "revive": false,
       "flags": []
     },
     {
@@ -28457,7 +28442,6 @@
         "Defense",
         "Agility"
       ],
-      "revive": false,
       "flags": []
     },
     {
@@ -28780,7 +28764,6 @@
       "ailment": [],
       "amount": 999,
       "buffs": [],
-      "revive": false,
       "flags": [
         "Revert Debuffs"
       ]
@@ -28869,7 +28852,6 @@
       ],
       "amount": 0,
       "buffs": [],
-      "revive": false,
       "flags": []
     },
     {
@@ -29017,7 +28999,6 @@
       ],
       "amount": 0,
       "buffs": [],
-      "revive": false,
       "flags": []
     },
     {
@@ -29556,8 +29537,9 @@
       "ailment": [],
       "amount": 50,
       "buffs": [],
-      "revive": true,
-      "flags": []
+      "flags": [
+        "Revive"
+      ]
     },
     {
       "name": "Regenerate 1",
@@ -29615,7 +29597,6 @@
       ],
       "amount": 0,
       "buffs": [],
-      "revive": false,
       "flags": []
     },
     {
@@ -30025,7 +30006,6 @@
       ],
       "amount": 999,
       "buffs": [],
-      "revive": false,
       "flags": []
     },
     {
@@ -30039,8 +30019,9 @@
       "ailment": [],
       "amount": 100,
       "buffs": [],
-      "revive": true,
-      "flags": []
+      "flags": [
+        "Revive"
+      ]
     },
     {
       "name": "Samsara",
@@ -31625,7 +31606,6 @@
       "buffs": [
         "Agility"
       ],
-      "revive": false,
       "flags": []
     },
     {
