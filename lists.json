@@ -21677,7 +21677,7 @@
       "range": 1,
       "xp": 15,
       "yen": 0,
-      "sp": 0
+      "mp": 0
     },
     {
       "name": "+50% EXP",
@@ -21689,7 +21689,7 @@
       "range": 1,
       "xp": 50,
       "yen": 0,
-      "sp": 0
+      "mp": 0
     },
     {
       "name": "Abysmal Surge",
@@ -21713,7 +21713,7 @@
       "unique": true,
       "range": 0,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 50
       },
       "power": {
@@ -21734,7 +21734,7 @@
       "unique": true,
       "range": 0,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 30
       },
       "power": {
@@ -21755,7 +21755,7 @@
       "unique": false,
       "range": 1,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 25
       },
       "power": {
@@ -21785,7 +21785,7 @@
       "unique": false,
       "range": 1,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 10
       },
       "power": {
@@ -21806,7 +21806,7 @@
       "unique": false,
       "range": 1,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 50
       },
       "power": {
@@ -21827,7 +21827,7 @@
       "unique": false,
       "range": 1,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 35
       },
       "power": {
@@ -21848,7 +21848,7 @@
       "unique": false,
       "range": 1,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 20
       },
       "power": {
@@ -21900,7 +21900,7 @@
       "unique": true,
       "range": 1,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 50
       },
       "power": {
@@ -22013,7 +22013,7 @@
       "unique": true,
       "range": 2,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 20
       },
       "power": {
@@ -22063,7 +22063,7 @@
       "unique": true,
       "range": 1,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 10
       },
       "power": {
@@ -22134,7 +22134,7 @@
       "unique": true,
       "range": 2,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 40
       },
       "power": {
@@ -22155,7 +22155,7 @@
       "unique": false,
       "range": 1,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 48
       },
       "power": {
@@ -22216,7 +22216,7 @@
       "unique": false,
       "range": 2,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 24
       },
       "power": {
@@ -22260,7 +22260,7 @@
       "unique": true,
       "range": 0,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 80
       },
       "power": {
@@ -22373,7 +22373,7 @@
       "unique": false,
       "range": 1,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 15
       },
       "power": {
@@ -22396,7 +22396,7 @@
       "unique": false,
       "range": 1,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 15
       },
       "power": {
@@ -22417,7 +22417,7 @@
       "unique": false,
       "range": 1,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 5
       },
       "power": {
@@ -22440,7 +22440,7 @@
       "unique": false,
       "range": 1,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 30
       },
       "power": {
@@ -22484,7 +22484,7 @@
       "unique": true,
       "range": 1,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 48
       },
       "power": {
@@ -22526,7 +22526,7 @@
       "unique": false,
       "range": 0,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 54
       },
       "power": {
@@ -22565,7 +22565,7 @@
       "unique": false,
       "range": 2,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 20
       },
       "power": {
@@ -22591,7 +22591,7 @@
       "unique": false,
       "range": 1,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 15
       },
       "power": {
@@ -22641,7 +22641,7 @@
       "unique": false,
       "range": 1,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 12
       },
       "power": {
@@ -22740,7 +22740,7 @@
       "unique": false,
       "range": 1,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 45
       },
       "power": {
@@ -22770,7 +22770,7 @@
       "unique": false,
       "range": 1,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 10
       },
       "power": {
@@ -22791,7 +22791,7 @@
       "unique": false,
       "range": 1,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 50
       },
       "power": {
@@ -22812,7 +22812,7 @@
       "unique": false,
       "range": 1,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 35
       },
       "power": {
@@ -22833,7 +22833,7 @@
       "unique": false,
       "range": 1,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 20
       },
       "power": {
@@ -22864,7 +22864,7 @@
       "unique": true,
       "range": 0,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 34
       },
       "power": {
@@ -22907,7 +22907,7 @@
       "unique": true,
       "range": 1,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 20
       },
       "power": {
@@ -22930,7 +22930,7 @@
       "unique": false,
       "range": 1,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 75
       },
       "power": {
@@ -23102,7 +23102,7 @@
       "unique": false,
       "range": 0,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 54
       },
       "power": {
@@ -23175,7 +23175,7 @@
       "unique": false,
       "range": 1,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 10
       },
       "power": {
@@ -23198,7 +23198,7 @@
       "unique": false,
       "range": 0,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 25
       },
       "power": {
@@ -23265,7 +23265,7 @@
       "unique": false,
       "range": 0,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 20
       },
       "power": {
@@ -23288,7 +23288,7 @@
       "unique": false,
       "range": 1,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 24
       },
       "power": {
@@ -23309,7 +23309,7 @@
       "unique": true,
       "range": 1,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 25
       },
       "power": {
@@ -23366,7 +23366,7 @@
       "unique": false,
       "range": 1,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 25
       },
       "power": {
@@ -23406,7 +23406,7 @@
       "unique": false,
       "range": 1,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 50
       },
       "power": {
@@ -23429,7 +23429,7 @@
       "unique": false,
       "range": 0,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 35
       },
       "power": {
@@ -23450,7 +23450,7 @@
       "unique": true,
       "range": 0,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 120
       },
       "power": {
@@ -23473,7 +23473,7 @@
       "unique": true,
       "range": 0,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 70
       },
       "power": {
@@ -23620,7 +23620,7 @@
       "unique": false,
       "range": 1,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 48
       },
       "power": {
@@ -23686,7 +23686,7 @@
       "unique": true,
       "range": 0,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 35
       },
       "power": {
@@ -23850,7 +23850,7 @@
       "unique": true,
       "range": 0,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 32
       },
       "power": {
@@ -24055,7 +24055,7 @@
       "unique": false,
       "range": 1,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 20
       },
       "power": {
@@ -24078,7 +24078,7 @@
       "unique": false,
       "range": 1,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 10
       },
       "power": {
@@ -24104,7 +24104,7 @@
       "unique": false,
       "range": 1,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 20
       },
       "power": {
@@ -24127,7 +24127,7 @@
       "unique": false,
       "range": 1,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 8
       },
       "power": {
@@ -24148,7 +24148,7 @@
       "unique": false,
       "range": 1,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 12
       },
       "power": {
@@ -24169,7 +24169,7 @@
       "unique": false,
       "range": 1,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 4
       },
       "power": {
@@ -24269,7 +24269,7 @@
       "unique": false,
       "range": 1,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 15
       },
       "power": {
@@ -24339,7 +24339,7 @@
       "unique": true,
       "range": 2,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 50
       },
       "power": {
@@ -24505,7 +24505,7 @@
       "unique": true,
       "range": 0,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 70
       },
       "power": {
@@ -24528,7 +24528,7 @@
       "unique": false,
       "range": 1,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 15
       },
       "power": {
@@ -24584,7 +24584,7 @@
       "unique": false,
       "range": 1,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 25
       },
       "power": {
@@ -24625,7 +24625,7 @@
       "unique": false,
       "range": 1,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 50
       },
       "power": {
@@ -24684,7 +24684,7 @@
       "unique": false,
       "range": 2,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 25
       },
       "power": {
@@ -24705,7 +24705,7 @@
       "unique": false,
       "range": 1,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 25
       },
       "power": {
@@ -24726,7 +24726,7 @@
       "unique": true,
       "range": 2,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 80
       },
       "power": {
@@ -24800,7 +24800,7 @@
       "unique": false,
       "range": 2,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 60
       },
       "power": {
@@ -24886,7 +24886,7 @@
       "unique": false,
       "range": 1,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 4
       },
       "power": {
@@ -24907,7 +24907,7 @@
       "unique": false,
       "range": 1,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 12
       },
       "power": {
@@ -24928,7 +24928,7 @@
       "unique": false,
       "range": 1,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 60
       },
       "power": {
@@ -24949,7 +24949,7 @@
       "unique": false,
       "range": 1,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 8
       },
       "power": {
@@ -24970,7 +24970,7 @@
       "unique": false,
       "range": 1,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 25
       },
       "power": {
@@ -25011,7 +25011,7 @@
       "unique": true,
       "range": 0,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 170
       },
       "power": {
@@ -25073,7 +25073,7 @@
       "unique": false,
       "range": 1,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 3
       },
       "power": {
@@ -25094,7 +25094,7 @@
       "unique": false,
       "range": 1,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 10
       },
       "power": {
@@ -25115,7 +25115,7 @@
       "unique": false,
       "range": 1,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 6
       },
       "power": {
@@ -25157,7 +25157,7 @@
       "unique": true,
       "range": 0,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 30
       },
       "power": {
@@ -25251,7 +25251,7 @@
       "unique": false,
       "range": 2,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 60
       },
       "power": {
@@ -25272,7 +25272,7 @@
       "unique": true,
       "range": 1,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 60
       },
       "power": {
@@ -25316,7 +25316,7 @@
       "unique": false,
       "range": 1,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 10
       },
       "power": {
@@ -25339,7 +25339,7 @@
       "range": 1,
       "xp": 25,
       "yen": 0,
-      "sp": 0
+      "mp": 0
     },
     {
       "name": "Growth 2",
@@ -25351,7 +25351,7 @@
       "range": 1,
       "xp": 50,
       "yen": 0,
-      "sp": 0
+      "mp": 0
     },
     {
       "name": "Growth 3",
@@ -25363,7 +25363,7 @@
       "range": 1,
       "xp": 100,
       "yen": 0,
-      "sp": 0
+      "mp": 0
     },
     {
       "name": "Gun Amp",
@@ -25391,7 +25391,7 @@
       "unique": true,
       "range": 1,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 50
       },
       "power": {
@@ -25414,7 +25414,7 @@
       "unique": false,
       "range": 0,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 60
       },
       "power": {
@@ -25446,7 +25446,7 @@
       "unique": false,
       "range": 1,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 55
       },
       "power": {
@@ -25488,7 +25488,7 @@
       "unique": true,
       "range": 2,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 60
       },
       "power": {
@@ -25536,7 +25536,7 @@
       "unique": true,
       "range": 1,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 20
       },
       "power": {
@@ -25595,7 +25595,7 @@
       "type": "REGEN",
       "unique": false,
       "amount": 10,
-      "hpspail": "HPSP",
+      "hpspail": "HPMP",
       "percent": false,
       "ambush": true,
       "baton": false
@@ -25608,7 +25608,7 @@
       "unique": false,
       "range": 0,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 15
       },
       "power": {
@@ -25629,7 +25629,7 @@
       "unique": false,
       "range": 1,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 15
       },
       "power": {
@@ -25652,7 +25652,7 @@
       "unique": true,
       "range": 0,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 40
       },
       "power": {
@@ -25673,7 +25673,7 @@
       "unique": true,
       "range": 0,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 40
       },
       "power": {
@@ -25696,7 +25696,7 @@
       "unique": true,
       "range": 0,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 70
       },
       "power": {
@@ -25719,7 +25719,7 @@
       "unique": true,
       "range": 1,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 5
       },
       "power": {
@@ -25742,7 +25742,7 @@
       "unique": true,
       "range": 0,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 25
       },
       "power": {
@@ -25763,7 +25763,7 @@
       "unique": true,
       "range": 0,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 30
       },
       "power": {
@@ -25784,7 +25784,7 @@
       "unique": false,
       "range": 1,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 45
       },
       "power": {
@@ -25931,7 +25931,7 @@
       "type": "REGEN",
       "unique": true,
       "amount": 15,
-      "hpspail": "HPSP",
+      "hpspail": "HPMP",
       "percent": true,
       "ambush": false,
       "baton": false
@@ -25962,7 +25962,7 @@
       "unique": false,
       "range": 1,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 20
       },
       "power": {
@@ -25985,7 +25985,7 @@
       "unique": false,
       "range": 1,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 65
       },
       "power": {
@@ -26044,7 +26044,7 @@
       "unique": false,
       "range": 2,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 25
       },
       "power": {
@@ -26065,7 +26065,7 @@
       "unique": false,
       "range": 1,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 25
       },
       "power": {
@@ -26104,7 +26104,7 @@
       "unique": false,
       "range": 1,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 48
       },
       "power": {
@@ -26142,7 +26142,7 @@
       "type": "REGEN",
       "unique": false,
       "amount": 3,
-      "hpspail": "SP",
+      "hpspail": "MP",
       "percent": false,
       "ambush": false,
       "baton": false
@@ -26154,7 +26154,7 @@
       "type": "REGEN",
       "unique": false,
       "amount": 5,
-      "hpspail": "SP",
+      "hpspail": "MP",
       "percent": false,
       "ambush": false,
       "baton": false
@@ -26166,7 +26166,7 @@
       "type": "REGEN",
       "unique": false,
       "amount": 7,
-      "hpspail": "SP",
+      "hpspail": "MP",
       "percent": false,
       "ambush": false,
       "baton": false
@@ -26179,7 +26179,7 @@
       "unique": true,
       "range": 1,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 20
       },
       "power": {
@@ -26202,7 +26202,7 @@
       "unique": true,
       "range": 0,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 90
       },
       "power": {
@@ -26236,7 +26236,7 @@
       "unique": true,
       "range": 0,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 50
       },
       "power": {
@@ -26257,7 +26257,7 @@
       "unique": true,
       "range": 1,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 50
       },
       "power": {
@@ -26280,7 +26280,7 @@
       "unique": false,
       "range": 1,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 65
       },
       "power": {
@@ -26324,7 +26324,7 @@
       "unique": true,
       "range": 0,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 35
       },
       "power": {
@@ -26347,7 +26347,7 @@
       "unique": false,
       "range": 1,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 8
       },
       "power": {
@@ -26368,7 +26368,7 @@
       "unique": false,
       "range": 1,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 12
       },
       "power": {
@@ -26389,7 +26389,7 @@
       "unique": false,
       "range": 1,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 4
       },
       "power": {
@@ -26455,7 +26455,7 @@
       "range": 1,
       "xp": 0,
       "yen": 0,
-      "sp": 8
+      "mp": 8
     },
     {
       "name": "Life Drain",
@@ -26524,7 +26524,7 @@
       "unique": true,
       "range": 0,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 60
       },
       "power": {
@@ -26582,7 +26582,7 @@
       "unique": false,
       "range": 1,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 5
       },
       "power": {
@@ -26621,7 +26621,7 @@
       "unique": false,
       "range": 0,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 15
       },
       "power": {
@@ -26642,7 +26642,7 @@
       "unique": false,
       "range": 0,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 75
       },
       "power": {
@@ -26663,7 +26663,7 @@
       "unique": false,
       "range": 0,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 50
       },
       "power": {
@@ -26684,7 +26684,7 @@
       "unique": false,
       "range": 0,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 30
       },
       "power": {
@@ -26705,7 +26705,7 @@
       "unique": true,
       "range": 1,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 50
       },
       "power": {
@@ -26728,7 +26728,7 @@
       "unique": true,
       "range": 2,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 50
       },
       "power": {
@@ -26754,7 +26754,7 @@
       "unique": false,
       "range": 2,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 36
       },
       "power": {
@@ -26775,7 +26775,7 @@
       "unique": false,
       "range": 1,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 10
       },
       "power": {
@@ -26801,7 +26801,7 @@
       "unique": false,
       "range": 0,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 16
       },
       "power": {
@@ -26822,7 +26822,7 @@
       "unique": false,
       "range": 0,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 22
       },
       "power": {
@@ -26843,7 +26843,7 @@
       "unique": false,
       "range": 0,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 10
       },
       "power": {
@@ -26864,7 +26864,7 @@
       "unique": false,
       "range": 0,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 10
       },
       "power": {
@@ -26885,7 +26885,7 @@
       "unique": false,
       "range": 0,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 22
       },
       "power": {
@@ -26906,7 +26906,7 @@
       "unique": false,
       "range": 0,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 16
       },
       "power": {
@@ -26927,7 +26927,7 @@
       "unique": false,
       "range": 0,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 8
       },
       "power": {
@@ -26948,7 +26948,7 @@
       "unique": false,
       "range": 0,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 20
       },
       "power": {
@@ -26969,7 +26969,7 @@
       "unique": false,
       "range": 0,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 14
       },
       "power": {
@@ -26990,7 +26990,7 @@
       "unique": true,
       "range": 0,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 30
       },
       "power": {
@@ -27038,7 +27038,7 @@
       "unique": false,
       "range": 0,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 80
       },
       "power": {
@@ -27121,7 +27121,7 @@
       "unique": false,
       "range": 0,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 16
       },
       "power": {
@@ -27142,7 +27142,7 @@
       "unique": false,
       "range": 0,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 22
       },
       "power": {
@@ -27163,7 +27163,7 @@
       "unique": false,
       "range": 0,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 10
       },
       "power": {
@@ -27195,7 +27195,7 @@
       "unique": false,
       "range": 0,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 80
       },
       "power": {
@@ -27229,7 +27229,7 @@
       "unique": false,
       "range": 0,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 10
       },
       "power": {
@@ -27250,7 +27250,7 @@
       "unique": false,
       "range": 0,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 16
       },
       "power": {
@@ -27271,7 +27271,7 @@
       "unique": false,
       "range": 0,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 22
       },
       "power": {
@@ -27292,7 +27292,7 @@
       "unique": false,
       "range": 0,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 15
       },
       "power": {
@@ -27313,7 +27313,7 @@
       "unique": false,
       "range": 0,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 75
       },
       "power": {
@@ -27334,7 +27334,7 @@
       "unique": false,
       "range": 0,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 50
       },
       "power": {
@@ -27355,7 +27355,7 @@
       "unique": false,
       "range": 0,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 30
       },
       "power": {
@@ -27408,7 +27408,7 @@
       "unique": true,
       "range": 0,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 32
       },
       "power": {
@@ -27534,7 +27534,7 @@
       "unique": false,
       "range": 0,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 15
       },
       "power": {
@@ -27555,7 +27555,7 @@
       "unique": false,
       "range": 0,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 75
       },
       "power": {
@@ -27576,7 +27576,7 @@
       "unique": false,
       "range": 0,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 50
       },
       "power": {
@@ -27597,7 +27597,7 @@
       "unique": false,
       "range": 0,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 30
       },
       "power": {
@@ -27618,7 +27618,7 @@
       "unique": false,
       "range": 0,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 15
       },
       "power": {
@@ -27639,7 +27639,7 @@
       "unique": false,
       "range": 0,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 75
       },
       "power": {
@@ -27660,7 +27660,7 @@
       "unique": false,
       "range": 0,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 50
       },
       "power": {
@@ -27681,7 +27681,7 @@
       "unique": false,
       "range": 0,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 30
       },
       "power": {
@@ -27744,7 +27744,7 @@
       "unique": true,
       "range": 1,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 5
       },
       "power": {
@@ -27767,7 +27767,7 @@
       "unique": false,
       "range": 0,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 50
       },
       "power": {
@@ -27811,7 +27811,7 @@
       "unique": false,
       "range": 0,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 40
       },
       "power": {
@@ -27832,7 +27832,7 @@
       "unique": true,
       "range": 0,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 130
       },
       "power": {
@@ -27855,7 +27855,7 @@
       "unique": false,
       "range": 0,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 70
       },
       "power": {
@@ -27876,7 +27876,7 @@
       "unique": false,
       "range": 0,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 120
       },
       "power": {
@@ -27943,7 +27943,7 @@
       "unique": false,
       "range": 1,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 25
       },
       "power": {
@@ -28035,7 +28035,7 @@
       "unique": true,
       "range": 1,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 15
       },
       "power": {
@@ -28061,7 +28061,7 @@
       "unique": false,
       "range": 2,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 35
       },
       "power": {
@@ -28089,7 +28089,7 @@
       "range": 0,
       "xp": 0,
       "yen": 15,
-      "sp": 0
+      "mp": 0
     },
     {
       "name": "Morning Star",
@@ -28099,7 +28099,7 @@
       "unique": true,
       "range": 0,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 52
       },
       "power": {
@@ -28120,7 +28120,7 @@
       "unique": false,
       "range": 1,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 30
       },
       "power": {
@@ -28152,7 +28152,7 @@
       "unique": false,
       "range": 1,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 55
       },
       "power": {
@@ -28194,7 +28194,7 @@
       "unique": true,
       "range": 1,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 50
       },
       "power": {
@@ -28244,7 +28244,7 @@
       "unique": false,
       "range": 1,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 55
       },
       "power": {
@@ -28267,7 +28267,7 @@
       "unique": true,
       "range": 0,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 40
       },
       "power": {
@@ -28288,7 +28288,7 @@
       "unique": false,
       "range": 1,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 65
       },
       "power": {
@@ -28338,7 +28338,7 @@
       "unique": false,
       "range": 1,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 15
       },
       "power": {
@@ -28404,7 +28404,7 @@
       "unique": true,
       "range": 1,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 48
       },
       "power": {
@@ -28431,7 +28431,7 @@
       "unique": false,
       "range": 1,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 36
       },
       "power": {
@@ -28720,7 +28720,7 @@
       "unique": true,
       "range": 0,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 70
       },
       "power": {
@@ -28743,7 +28743,7 @@
       "unique": false,
       "range": 1,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 42
       },
       "power": {
@@ -28764,7 +28764,7 @@
       "unique": true,
       "range": 0,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 65
       },
       "power": {
@@ -28807,7 +28807,7 @@
       "unique": true,
       "range": 0,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 50
       },
       "power": {
@@ -28862,7 +28862,7 @@
       "unique": false,
       "range": 1,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 15
       },
       "power": {
@@ -28956,7 +28956,7 @@
       "unique": false,
       "range": 1,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 40
       },
       "power": {
@@ -29021,7 +29021,7 @@
       "unique": true,
       "range": 1,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 35
       },
       "power": {
@@ -29047,7 +29047,7 @@
       "unique": false,
       "range": 1,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 4
       },
       "power": {
@@ -29068,7 +29068,7 @@
       "unique": false,
       "range": 1,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 8
       },
       "power": {
@@ -29089,7 +29089,7 @@
       "unique": false,
       "range": 1,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 12
       },
       "power": {
@@ -29137,7 +29137,7 @@
       "unique": false,
       "range": 0,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 54
       },
       "power": {
@@ -29158,7 +29158,7 @@
       "unique": false,
       "range": 1,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 48
       },
       "power": {
@@ -29202,7 +29202,7 @@
       "unique": false,
       "range": 1,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 15
       },
       "power": {
@@ -29225,7 +29225,7 @@
       "unique": false,
       "range": 1,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 25
       },
       "power": {
@@ -29258,7 +29258,7 @@
       "unique": true,
       "range": 1,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 40
       },
       "power": {
@@ -29279,7 +29279,7 @@
       "unique": true,
       "range": 1,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 40
       },
       "power": {
@@ -29300,7 +29300,7 @@
       "unique": true,
       "range": 1,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 40
       },
       "power": {
@@ -29321,7 +29321,7 @@
       "unique": true,
       "range": 1,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 40
       },
       "power": {
@@ -29342,7 +29342,7 @@
       "unique": false,
       "range": 2,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 60
       },
       "power": {
@@ -29418,7 +29418,7 @@
       "unique": false,
       "range": 2,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 35
       },
       "power": {
@@ -29450,7 +29450,7 @@
       "unique": true,
       "range": 1,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 99
       },
       "power": {
@@ -29850,7 +29850,7 @@
       "unique": true,
       "range": 1,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 20
       },
       "power": {
@@ -29871,7 +29871,7 @@
       "unique": true,
       "range": 0,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 50
       },
       "power": {
@@ -29895,7 +29895,7 @@
       "unique": true,
       "range": 1,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 20
       },
       "power": {
@@ -29957,7 +29957,7 @@
       "unique": true,
       "range": 1,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 15
       },
       "power": {
@@ -29980,7 +29980,7 @@
       "unique": false,
       "range": 2,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 12
       },
       "power": {
@@ -30001,7 +30001,7 @@
       "unique": false,
       "range": 1,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 25
       },
       "power": {
@@ -30040,7 +30040,7 @@
       "unique": true,
       "range": 0,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 22
       },
       "power": {
@@ -30071,7 +30071,7 @@
       "unique": false,
       "range": 2,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 25
       },
       "power": {
@@ -30092,7 +30092,7 @@
       "unique": true,
       "range": 0,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 45
       },
       "power": {
@@ -30230,7 +30230,7 @@
       "unique": true,
       "range": 1,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 35
       },
       "power": {
@@ -30274,7 +30274,7 @@
       "unique": true,
       "range": 1,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 55
       },
       "power": {
@@ -30308,7 +30308,7 @@
       "type": "REGEN",
       "unique": false,
       "amount": 20,
-      "hpspail": "SP",
+      "hpspail": "MP",
       "percent": false,
       "ambush": false,
       "baton": true
@@ -30321,7 +30321,7 @@
       "unique": true,
       "range": 0,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 50
       },
       "power": {
@@ -30348,7 +30348,7 @@
       "type": "REGEN",
       "unique": false,
       "amount": 5,
-      "hpspail": "SP",
+      "hpspail": "MP",
       "percent": false,
       "ambush": false,
       "baton": true
@@ -30367,7 +30367,7 @@
       "affinity": "Passive",
       "type": "MASTER",
       "unique": false,
-      "skill": "SP"
+      "skill": "MP"
     },
     {
       "name": "Spirit Drain",
@@ -30377,7 +30377,7 @@
       "unique": false,
       "cost": 3,
       "amount": 10,
-      "hpsp": "SP"
+      "hpsp": "MP"
     },
     {
       "name": "Stagnant Air",
@@ -30403,7 +30403,7 @@
       "unique": false,
       "range": 1,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 25
       },
       "power": {
@@ -30424,7 +30424,7 @@
       "unique": true,
       "range": 2,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 18
       },
       "power": {
@@ -30445,7 +30445,7 @@
       "unique": false,
       "range": 1,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 25
       },
       "power": {
@@ -30584,7 +30584,7 @@
       "unique": true,
       "range": 0,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 160
       },
       "power": {
@@ -30696,7 +30696,7 @@
       "unique": true,
       "range": 2,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 35
       },
       "power": {
@@ -30784,7 +30784,7 @@
       "unique": true,
       "range": 2,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 45
       },
       "power": {
@@ -30838,7 +30838,7 @@
       "unique": false,
       "range": 2,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 60
       },
       "power": {
@@ -30859,7 +30859,7 @@
       "unique": true,
       "range": 0,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 60
       },
       "power": {
@@ -30909,7 +30909,7 @@
       "unique": true,
       "range": 0,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 30
       },
       "power": {
@@ -30935,7 +30935,7 @@
       "unique": false,
       "range": 1,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 10
       },
       "power": {
@@ -31020,7 +31020,7 @@
       "unique": false,
       "range": 1,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 65
       },
       "power": {
@@ -31068,7 +31068,7 @@
       "unique": false,
       "range": 0,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 48
       },
       "power": {
@@ -31129,7 +31129,7 @@
       "unique": false,
       "range": 1,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 15
       },
       "power": {
@@ -31175,7 +31175,7 @@
       "range": 1,
       "xp": 0,
       "yen": 0,
-      "sp": 100
+      "mp": 100
     },
     {
       "name": "Vigor Song",
@@ -31215,7 +31215,7 @@
       "unique": true,
       "range": 0,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 60
       },
       "power": {
@@ -31303,7 +31303,7 @@
       "unique": true,
       "range": 1,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 40
       },
       "power": {
@@ -31333,7 +31333,7 @@
       "unique": false,
       "range": 1,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 30
       },
       "power": {
@@ -31356,7 +31356,7 @@
       "unique": false,
       "range": 0,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 54
       },
       "power": {
@@ -31410,7 +31410,7 @@
       "unique": false,
       "range": 2,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 25
       },
       "power": {
@@ -31431,7 +31431,7 @@
       "unique": false,
       "range": 1,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 25
       },
       "power": {
@@ -31461,7 +31461,7 @@
       "unique": true,
       "range": 2,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 35
       },
       "power": {
@@ -31484,7 +31484,7 @@
       "unique": false,
       "range": 0,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 50
       },
       "power": {
@@ -31523,7 +31523,7 @@
       "unique": false,
       "range": 1,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 10
       },
       "power": {
@@ -31544,7 +31544,7 @@
       "unique": false,
       "range": 1,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 50
       },
       "power": {
@@ -31565,7 +31565,7 @@
       "unique": false,
       "range": 1,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 35
       },
       "power": {
@@ -31586,7 +31586,7 @@
       "unique": false,
       "range": 1,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 20
       },
       "power": {
@@ -31607,7 +31607,7 @@
       "unique": false,
       "range": 1,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 10
       },
       "power": {
@@ -31628,7 +31628,7 @@
       "unique": false,
       "range": 1,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 50
       },
       "power": {
@@ -31649,7 +31649,7 @@
       "unique": false,
       "range": 1,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 35
       },
       "power": {
@@ -31670,7 +31670,7 @@
       "unique": false,
       "range": 1,
       "cost": {
-        "type": "SP",
+        "type": "MP",
         "amount": 20
       },
       "power": {

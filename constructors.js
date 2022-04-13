@@ -103,7 +103,7 @@ class BaseSkill {
 			return `Next ${this.charge === 'Charge' ? 'physical' : 'magical'} attack deals over double the damage${this.range === 1 ? '' : ' for all allies'}.`;
 		}
 		case 'DRAIN': {
-			return `Drains ${this.amount} ${this.hpsp} from one foe.`;
+			return `Drains ${this.amount} ${this.hpmp} from one foe.`;
 		}
 		case 'HALVE': {
 			return 'Half remaining HP of one foe.';
@@ -118,7 +118,7 @@ class BaseSkill {
 			return `Half ${this.skill} cost for ${this.skill === 'HP' ? 'physical' : 'magic'} skills.`;
 		}
 		case 'REGEN': {
-			switch (this.hpspail) {
+			switch (this.hpmpail) {
 			case 'AIL': {
 				return `Recover from an ailment in ${this.amount} less turn${this.amount > 1 ? 's' : ''}.`;
 			}
@@ -332,7 +332,7 @@ module.exports.DrainSkill = class extends BaseSkill {
 		super(data);
 		this.affinity = data.affinity;
 		this.type = data.type;
-		this.hpsp = data.hpsp;
+		this.hpmp = data.hpmp;
 		this.cost = data.cost;
 		this.amount = data.amount;
 	}
@@ -443,7 +443,7 @@ module.exports.PostBattleSkill = class extends BaseSkill {
 		this.xp = data.xp;
 		this.yen = data.yen;
 		this.hp = data.hp;
-		this.sp = data.sp;
+		this.mp = data.mp;
 	}
 };
 module.exports.RecoverySkill = class extends BaseSkill {
@@ -471,7 +471,7 @@ module.exports.RegenSkill = class extends BaseSkill {
 		super(data);
 		this.affinity = data.affinity;
 		this.type = data.type;
-		this.hpspail = data.hpspail;
+		this.hpmpail = data.hpmpail;
 		this.amount = data.amount;
 		this.percent = data.percent;
 		this.ambush = data.ambush;

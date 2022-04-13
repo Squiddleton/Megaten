@@ -141,7 +141,7 @@ export class AttackSkill extends BaseSkill {
     type: 'ATTACK';
     range: Range;
     cost: {
-        type: HPSP;
+        type: HPMP;
         amount: number;
     };
     power: {
@@ -160,7 +160,7 @@ export interface AttackSkillData extends BaseSkillData {
     type: 'ATTACK';
     range: Range;
     cost: {
-        type: HPSP;
+        type: HPMP;
         amount: number;
     };
     power: {
@@ -343,7 +343,7 @@ export class DrainSkill extends BaseSkill {
     constructor(data: DrainSkillData);
     affinity: 'Almighty';
     type: 'DRAIN';
-    hpsp: HPSP;
+    hpmp: HPMP;
     cost: number;
     amount: number;
 }
@@ -351,7 +351,7 @@ export class DrainSkill extends BaseSkill {
 export interface DrainSkillData extends BaseSkillData {
     affinity: 'Almighty';
     type: 'DRAIN';
-    hpsp: HPSP;
+    hpmp: HPMP;
     cost: number;
     amount: number;
 }
@@ -439,13 +439,13 @@ export class MasterSkill extends BaseSkill {
     constructor(data: MasterSkillData);
     affinity: 'Passive';
     type: 'MASTER';
-    skill: HPSP;
+    skill: HPMP;
 }
 
 export interface MasterSkillData extends BaseSkillData {
     affinity: 'Passive';
     type: 'MASTER';
-    skill: HPSP;
+    skill: HPMP;
 }
 
 export class MiscSkill extends BaseSkill {
@@ -478,7 +478,7 @@ export class PostBattleSkill extends BaseSkill {
     xp: number;
     yen: number;
     hp: number;
-    sp: number;
+    mp: number;
 }
 
 export interface PostBattleSkillData extends BaseSkillData {
@@ -488,7 +488,7 @@ export interface PostBattleSkillData extends BaseSkillData {
     xp: number;
     yen: number;
     hp: number;
-    sp: number;
+    mp: number;
 }
 
 export class RecoverySkill extends BaseSkill {
@@ -520,7 +520,7 @@ export class RegenSkill extends BaseSkill {
     constructor(data: RegenSkillData);
     affinity: 'Passive';
     type: 'REGEN';
-    hpspail: HPSPAIL;
+    hpmpail: HPMPAIL;
     amount: number;
     percent: boolean;
     ambush: boolean;
@@ -530,7 +530,7 @@ export class RegenSkill extends BaseSkill {
 export interface RegenSkillData extends BaseSkillData {
     affinity: 'Passive';
     type: 'REGEN';
-    hpspail: HPSPAIL;
+    hpmpail: HPMPAIL;
     amount: number;
     percent: boolean;
     ambush: boolean;
@@ -630,8 +630,8 @@ export type SMTElement = Exclude<Element, 'Wind' | 'Nuke' | 'Psy' >
 
 export type Game = 'p3' | 'p4' | 'p5' | 'smt5';
 
-export type HPSP = 'HP' | 'SP';
-export type HPSPAIL = HPSP | 'HPSP' | 'AIL'
+export type HPMP = 'HP' | 'MP';
+export type HPMPAIL = HPMP | 'HPMP' | 'AIL'
 
 export type Range = 0 | 1;
 
