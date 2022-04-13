@@ -16,6 +16,7 @@ const noPunc = str => str
 	.replace(/[^0-9a-z]/gi, '');
 
 module.exports.Demon = Demon;
+module.exports.Persona = Persona;
 
 module.exports.BaseSkill = BaseSkill;
 
