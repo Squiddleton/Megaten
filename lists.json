@@ -25342,6 +25342,24 @@
       "series": "smt"
     },
     {
+      "name": "Great Life Spring",
+      "devName": "greatlifespring",
+      "affinity": "Passive",
+      "type": "SPRING",
+      "unique": false,
+      "amount": 30,
+      "hpmp": "HP"
+    },
+    {
+      "name": "Great Mana Spring",
+      "devName": "greatmanaspring",
+      "affinity": "Passive",
+      "type": "SPRING",
+      "unique": false,
+      "amount": 30,
+      "hpmp": "MP"
+    },
+    {
       "name": "Growth 1",
       "devName": "growth1",
       "affinity": "Passive",
@@ -26505,6 +26523,15 @@
       "series": "smt"
     },
     {
+      "name": "Life Spring",
+      "devName": "lifespring",
+      "affinity": "Passive",
+      "type": "SPRING",
+      "unique": false,
+      "amount": 15,
+      "hpmp": "HP"
+    },
+    {
       "name": "Life Wall",
       "devName": "lifewall",
       "affinity": "Support",
@@ -27254,6 +27281,15 @@
       "cost": 34,
       "amount": 40,
       "display": "Medium"
+    },
+    {
+      "name": "Mana Spring",
+      "devName": "manaspring",
+      "affinity": "Passive",
+      "type": "SPRING",
+      "unique": false,
+      "amount": 15,
+      "hpmp": "MP"
     },
     {
       "name": "Mapsi",
