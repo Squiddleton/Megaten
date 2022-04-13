@@ -23403,7 +23403,7 @@
       "devName": "deadlyfury",
       "affinity": "Phys",
       "type": "ATTACK",
-      "unique": false,
+      "unique": true,
       "range": 1,
       "cost": {
         "type": "MP",
@@ -30441,15 +30441,6 @@
       ],
       "ailments": [],
       "series": "smt"
-    },
-    {
-      "name": "Stagnant Air",
-      "devName": "stagnantair",
-      "affinity": "Almighty",
-      "type": "SUSCEPTIBILITY",
-      "unique": false,
-      "range": 0,
-      "cost": 5
     },
     {
       "name": "Stamina Song",
