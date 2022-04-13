@@ -102,9 +102,6 @@ class BaseSkill {
 		case 'CHARGE': {
 			return `Next ${this.charge === 'Charge' ? 'physical' : 'magical'} attack deals over double the damage${this.range === 1 ? '' : ' for all allies'}.`;
 		}
-		case 'DRAIN': {
-			return `Drains ${this.amount} ${this.hpmp} from one foe.`;
-		}
 		case 'HALVE': {
 			return 'Half remaining HP of one foe.';
 		}
@@ -324,19 +321,6 @@ module.exports.DefensiveSkill = class extends BaseSkill {
 		this.newAffinity = data.newAffinity;
 	}
 };
-module.exports.DrainSkill = class extends BaseSkill {
-	/**
-	 * @param {import('./index').DrainSkillData} data
-	 */
-	constructor(data) {
-		super(data);
-		this.affinity = data.affinity;
-		this.type = data.type;
-		this.hpmp = data.hpmp;
-		this.cost = data.cost;
-		this.amount = data.amount;
-	}
-};
 module.exports.EndureSkill = class extends BaseSkill {
 	/**
 	 * @param {import('./index').EndureSkillData} data
@@ -542,7 +526,6 @@ module.exports.dataToClass = data => {
 	case 'CRIT': return new this.CritSkill(data);
 	case 'CRITBOOST': return new this.CritBoostSkill(data);
 	case 'DEFENSIVE': return new this.DefensiveSkill(data);
-	case 'DRAIN': return new this.DrainSkill(data);
 	case 'ENDURE': return new this.EndureSkill(data);
 	case 'EVASION': return new this.EvasionSkill(data);
 	case 'HALVE': return new this.HalveSkill(data);
