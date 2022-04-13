@@ -1660,7 +1660,7 @@
           "level": 0
         },
         {
-          "name": "Counter",
+          "name": "Counter -Persona-",
           "level": 0
         },
         {
@@ -4026,7 +4026,7 @@
           "level": 0
         },
         {
-          "name": "Counter",
+          "name": "Counter -Persona-",
           "level": 0
         },
         {
@@ -6491,7 +6491,7 @@
           "level": 20
         },
         {
-          "name": "Counter",
+          "name": "Counter -Persona-",
           "level": 22
         },
         {
@@ -6662,7 +6662,7 @@
           "level": 20
         },
         {
-          "name": "Counter",
+          "name": "Counter -Persona-",
           "level": 22
         },
         {
@@ -6892,7 +6892,7 @@
           "level": 22
         },
         {
-          "name": "Counter",
+          "name": "Counter -Persona-",
           "level": 24
         },
         {
@@ -7466,7 +7466,7 @@
           "level": 32
         },
         {
-          "name": "Counter",
+          "name": "Counter -Persona-",
           "level": 35
         },
         {
@@ -9688,7 +9688,7 @@
           "level": 20
         },
         {
-          "name": "Counter",
+          "name": "Counter -Persona-",
           "level": 22
         },
         {
@@ -18619,7 +18619,7 @@
           "level": 22
         },
         {
-          "name": "Counter",
+          "name": "Counter -Persona-",
           "level": 24
         },
         {
@@ -19528,7 +19528,7 @@
           "level": 22
         },
         {
-          "name": "Counter",
+          "name": "Counter -Persona-",
           "level": 24
         },
         {
@@ -19695,7 +19695,7 @@
           "level": 32
         },
         {
-          "name": "Counter",
+          "name": "Counter -Persona-",
           "level": 35
         },
         {
@@ -23110,8 +23110,8 @@
       "series": "persona"
     },
     {
-      "name": "Counter",
-      "devName": "counter",
+      "name": "Counter -Persona-",
+      "devName": "counterpersona",
       "affinity": "Passive",
       "type": "COUNTER",
       "unique": false,
