@@ -3474,7 +3474,7 @@
           "level": 0
         },
         {
-          "name": "Stagnant Air",
+          "name": "Stagnant Air -Persona-",
           "level": 0
         },
         {
@@ -15118,7 +15118,7 @@
           "level": 0
         },
         {
-          "name": "Stagnant Air",
+          "name": "Stagnant Air -Persona-",
           "level": 53
         },
         {
@@ -30494,6 +30494,15 @@
       ],
       "ailments": [],
       "series": "smt"
+    },
+    {
+      "name": "Stagnant Air -Persona-",
+      "devName": "stagnantairpersona",
+      "affinity": "Almighty",
+      "type": "SUSCEPTIBILITY",
+      "unique": false,
+      "range": 0,
+      "cost": 5
     },
     {
       "name": "Stamina Song",
