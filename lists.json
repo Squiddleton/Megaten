@@ -4242,7 +4242,7 @@
           "level": 0
         },
         {
-          "name": "Bless Amp",
+          "name": "Light Amp",
           "level": 0
         },
         {
@@ -4587,7 +4587,7 @@
           "level": 31
         },
         {
-          "name": "Curse Boost",
+          "name": "Dark Boost",
           "level": 32
         },
         {
@@ -5577,7 +5577,7 @@
           "level": 0
         },
         {
-          "name": "Bless Amp",
+          "name": "Light Amp",
           "level": 0
         },
         {
@@ -7397,7 +7397,7 @@
           "level": 0
         },
         {
-          "name": "Evade Bless",
+          "name": "Evade Light",
           "level": 0
         }
       ],
@@ -11666,7 +11666,7 @@
           "level": 0
         },
         {
-          "name": "Drain Curse",
+          "name": "Drain Dark",
           "level": 0
         },
         {
@@ -11682,7 +11682,7 @@
           "level": 96
         },
         {
-          "name": "Repel Bless",
+          "name": "Repel Light",
           "level": 97
         },
         {
@@ -14757,7 +14757,7 @@
           "level": 14
         },
         {
-          "name": "Dodge Curse",
+          "name": "Dodge Dark",
           "level": 15
         }
       ],
@@ -14820,7 +14820,7 @@
           "level": 0
         },
         {
-          "name": "Dodge Curse",
+          "name": "Dodge Dark",
           "level": 0
         }
       ],
@@ -15325,7 +15325,7 @@
           "level": 14
         },
         {
-          "name": "Bless Boost",
+          "name": "Light Boost",
           "level": 16
         },
         {
@@ -15361,7 +15361,7 @@
           "level": 43
         },
         {
-          "name": "Bless Amp",
+          "name": "Light Amp",
           "level": 46
         },
         {
@@ -15687,7 +15687,7 @@
           "level": 14
         },
         {
-          "name": "Bless Boost",
+          "name": "Light Boost",
           "level": 16
         },
         {
@@ -15723,7 +15723,7 @@
           "level": 43
         },
         {
-          "name": "Bless Amp",
+          "name": "Light Amp",
           "level": 46
         },
         {
@@ -16491,7 +16491,7 @@
           "level": 79
         },
         {
-          "name": "Curse Amp",
+          "name": "Dark Amp",
           "level": 80
         },
         {
@@ -19126,7 +19126,7 @@
           "level": 0
         },
         {
-          "name": "Curse Amp",
+          "name": "Dark Amp",
           "level": 66
         },
         {
@@ -19876,7 +19876,7 @@
           "level": 0
         },
         {
-          "name": "Drain Curse",
+          "name": "Drain Dark",
           "level": 0
         },
         {
@@ -19888,7 +19888,7 @@
           "level": 0
         },
         {
-          "name": "Curse Amp",
+          "name": "Dark Amp",
           "level": 53
         },
         {
@@ -19940,7 +19940,7 @@
           "level": 0
         },
         {
-          "name": "Drain Curse",
+          "name": "Drain Dark",
           "level": 0
         },
         {
@@ -19952,7 +19952,7 @@
           "level": 0
         },
         {
-          "name": "Curse Amp",
+          "name": "Dark Amp",
           "level": 58
         },
         {
@@ -20434,7 +20434,7 @@
           "level": 0
         },
         {
-          "name": "Bless Amp",
+          "name": "Light Amp",
           "level": 0
         },
         {
@@ -20458,7 +20458,7 @@
       "game": "p5",
       "user": "Sumire Yoshizawa",
       "stage": 2,
-      "evoSkill": "Evade Curse"
+      "evoSkill": "Evade Dark"
     },
     {
       "name": "Vasuki",
@@ -20598,7 +20598,7 @@
           "level": 0
         },
         {
-          "name": "Bless Amp",
+          "name": "Light Amp",
           "level": 0
         },
         {
@@ -20606,7 +20606,7 @@
           "level": 0
         },
         {
-          "name": "Drain Bless",
+          "name": "Drain Light",
           "level": 82
         },
         {
@@ -22316,8 +22316,8 @@
       ]
     },
     {
-      "name": "Bless Amp",
-      "devName": "blessamp",
+      "name": "Light Amp",
+      "devName": "lightamp",
       "affinity": "Passive",
       "type": "BOOST",
       "unique": false,
@@ -22325,8 +22325,8 @@
       "element": "Light"
     },
     {
-      "name": "Bless Boost",
-      "devName": "blessboost",
+      "name": "Light Boost",
+      "devName": "lightboost",
       "affinity": "Passive",
       "type": "BOOST",
       "unique": false,
@@ -22881,8 +22881,8 @@
       "series": "persona"
     },
     {
-      "name": "Curse Amp",
-      "devName": "curseamp",
+      "name": "Dark Amp",
+      "devName": "darkamp",
       "affinity": "Passive",
       "type": "BOOST",
       "unique": false,
@@ -22890,8 +22890,8 @@
       "element": "Dark"
     },
     {
-      "name": "Curse Boost",
-      "devName": "curseboost",
+      "name": "Dark Boost",
+      "devName": "darkboost",
       "affinity": "Passive",
       "type": "BOOST",
       "unique": false,
@@ -23179,8 +23179,8 @@
       "weather": false
     },
     {
-      "name": "Dodge Bless",
-      "devName": "dodgebless",
+      "name": "Dodge Light",
+      "devName": "dodgelight",
       "affinity": "Passive",
       "type": "EVASION",
       "unique": false,
@@ -23192,8 +23192,8 @@
       ]
     },
     {
-      "name": "Dodge Curse",
-      "devName": "dodgecurse",
+      "name": "Dodge Dark",
+      "devName": "dodgedark",
       "affinity": "Passive",
       "type": "EVASION",
       "unique": false,
@@ -23424,8 +23424,8 @@
       "auto": []
     },
     {
-      "name": "Drain Bless",
-      "devName": "drainbless",
+      "name": "Drain Light",
+      "devName": "drainlight",
       "affinity": "Passive",
       "type": "DEFENSIVE",
       "unique": false,
@@ -23433,8 +23433,8 @@
       "newAffinity": "Drain"
     },
     {
-      "name": "Drain Curse",
-      "devName": "draincurse",
+      "name": "Drain Dark",
+      "devName": "draindark",
       "affinity": "Passive",
       "type": "DEFENSIVE",
       "unique": false,
@@ -23711,8 +23711,8 @@
       "unique": false
     },
     {
-      "name": "Evade Bless",
-      "devName": "evadebless",
+      "name": "Evade Light",
+      "devName": "evadelight",
       "affinity": "Passive",
       "type": "EVASION",
       "unique": false,
@@ -23724,8 +23724,8 @@
       ]
     },
     {
-      "name": "Evade Curse",
-      "devName": "evadecurse",
+      "name": "Evade Dark",
+      "devName": "evadedark",
       "affinity": "Passive",
       "type": "EVASION",
       "unique": false,
@@ -26425,8 +26425,8 @@
       "element": "Nuke"
     },
     {
-      "name": "Null Bless",
-      "devName": "nullbless",
+      "name": "Null Light",
+      "devName": "nulllight",
       "affinity": "Passive",
       "type": "DEFENSIVE",
       "unique": false,
@@ -26452,8 +26452,8 @@
       "resistance": "Null"
     },
     {
-      "name": "Null Curse",
-      "devName": "nullcurse",
+      "name": "Null Dark",
+      "devName": "nulldark",
       "affinity": "Passive",
       "type": "DEFENSIVE",
       "unique": false,
@@ -27177,8 +27177,8 @@
       "negate": false
     },
     {
-      "name": "Repel Bless",
-      "devName": "repelbless",
+      "name": "Repel Light",
+      "devName": "repellight",
       "affinity": "Passive",
       "type": "DEFENSIVE",
       "unique": false,
@@ -27186,8 +27186,8 @@
       "newAffinity": "Repel"
     },
     {
-      "name": "Repel Curse",
-      "devName": "repelcurse",
+      "name": "Repel Dark",
+      "devName": "repeldark",
       "affinity": "Passive",
       "type": "DEFENSIVE",
       "unique": false,
@@ -27258,8 +27258,8 @@
       "newAffinity": "Repel"
     },
     {
-      "name": "Resist Bless",
-      "devName": "resistbless",
+      "name": "Resist Light",
+      "devName": "resistlight",
       "affinity": "Passive",
       "type": "DEFENSIVE",
       "unique": false,
@@ -27285,8 +27285,8 @@
       "resistance": "Resist"
     },
     {
-      "name": "Resist Curse",
-      "devName": "resistcurse",
+      "name": "Resist Dark",
+      "devName": "resistdark",
       "affinity": "Passive",
       "type": "DEFENSIVE",
       "unique": false,
