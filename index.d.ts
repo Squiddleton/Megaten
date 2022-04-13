@@ -633,8 +633,8 @@ export type SkillType = 'AILBOOST' | 'AILDEFENSIVE' | 'AILMENT' | 'ATTACK' | 'AU
     | 'INSTAKILLBOOST' | 'MASTER' | 'MISC' | 'NAVI' | 'POSTBATTLE' | 'RECOVERY' | 'REGEN' | 'SUPPORT' | 'SUSCEPTIBILITY' | 'WALL';
     
 export interface Ailment {
-    ailment: string;
-    chance: ChanceDisplay;
+    name: string;
+    chance: number;
 }
 
 export interface Learnset {
