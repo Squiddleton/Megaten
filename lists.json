@@ -23110,6 +23110,20 @@
       "series": "persona"
     },
     {
+      "name": "Counter",
+      "devName": "counter",
+      "affinity": "Passive",
+      "type": "SMTCOUNTER",
+      "unique": false,
+      "attackDown": false,
+      "chance": 50,
+      "element": "Phys",
+      "power": {
+        "amount": 100,
+        "display": "Weak"
+      }
+    },
+    {
       "name": "Counter -Persona-",
       "devName": "counterpersona",
       "affinity": "Passive",
@@ -25617,6 +25631,20 @@
       "flags": [],
       "ailments": [],
       "series": "smt"
+    },
+    {
+      "name": "Heavenly Counter",
+      "devName": "heavenlycounter",
+      "affinity": "Passive",
+      "type": "SMTCOUNTER",
+      "unique": true,
+      "attackDown": true,
+      "chance": 65,
+      "element": "Dark",
+      "power": {
+        "amount": 100,
+        "display": "Weak"
+      }
     },
     {
       "name": "Heavy Blow",
@@ -29812,6 +29840,20 @@
       "unique": false,
       "element": "Wind",
       "newAffinity": "Resist"
+    },
+    {
+      "name": "Retaliate",
+      "devName": "retaliate",
+      "affinity": "Passive",
+      "type": "SMTCOUNTER",
+      "unique": false,
+      "attackDown": false,
+      "chance": 50,
+      "element": "Phys",
+      "power": {
+        "amount": 150,
+        "display": "Medium"
+      }
     },
     {
       "name": "Revolution",

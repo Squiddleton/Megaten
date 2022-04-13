@@ -520,6 +520,31 @@ export interface RegenSkillData extends BaseSkillData {
     baton: boolean;
 }
 
+export class SMTCounterSkill extends BaseSkill {
+    constructor(data: SMTCounterSkillData);
+    affinity: 'Passive';
+    type: 'SMTCOUNTER';
+    attackDown: boolean;
+    chance: number;
+    element: CounterAffinity;
+    power: {
+        amount: number;
+        display: CounterDisplay;
+    };
+}
+
+export interface SMTCounterSkillData extends BaseSkillData {
+    affinity: 'Passive';
+    type: 'SMTCOUNTER';
+    attackDown: boolean;
+    chance: number;
+    element: CounterAffinity;
+    power: {
+        amount: number;
+        display: CounterDisplay;
+    };
+}
+
 export class SupportSkill extends BaseSkill {
     constructor(data: SupportSkillData);
     affinity: 'Support';
@@ -598,7 +623,8 @@ export type Arcana = 'Fool' | 'Magician' | 'Priestess' | 'Empress' | 'Emperor' |
     | 'Justice' | 'Hermit'| 'Fortune' | 'Strength' | 'Hanged' | 'Death' | 'Temperance' | 'Devil' | 'Tower'
     | 'Star' | 'Moon' | 'Sun' | 'Judgement' | 'Faith' | 'Councillor' | 'World' | 'Apostle' | 'Hope';
 
-export type AttackDisplay = 'Minuscule' | 'Weak' | 'Light' | 'Medium' | 'Heavy' | 'Severe' | 'Colossal';
+export type CounterDisplay = 'Weak' | 'Medium'
+export type AttackDisplay = CounterDisplay | 'Minuscule' | 'Light' | 'Heavy' | 'Severe' | 'Colossal';
 
 export type LightDark = 'Light' | 'Dark';
 
@@ -610,6 +636,7 @@ export type Element = 'Phys' | 'Gun' | 'Fire' | 'Ice' | 'Elec' | 'Force' | 'Wind
 export type Inherit = Exclude<Element, 'Gun'> | 'Ailment' | 'Recovery' | 'Support';
 export type Affinity = Inherit | 'Gun' | 'Passive';
 export type SMTElement = Exclude<Element, 'Wind' | 'Nuke' | 'Psy' >
+export type CounterAffinity = 'Phys' | 'Dark';
 
 export type Game = 'p3' | 'p4' | 'p5' | 'smt5';
 
@@ -622,15 +649,15 @@ export type Series = 'persona' | 'smt';
 
 export type Skill = AilBoostSkill | AilDefensiveSkill | AilmentSkill | AttackSkill | AutoBuffSkill | BarrierSkill | BarrierBreakSkill | BlockSkill | BoostSkill
     | BreakSkill | ChargeSkill | CritSkill | CritBoostSkill | DefensiveSkill | EndureSkill | EvasionSkill | HalveSkill | InstaKillSkill
-    | InstaKillBoostSkill | MasterSkill | MiscSkill | NaviSkill | PersonaCounterSkill | PostBattleSkill | RecoverySkill | RegenSkill | SupportSkill | SusceptibilitySkill | WallSkill;
+    | InstaKillBoostSkill | MasterSkill | MiscSkill | NaviSkill | PersonaCounterSkill | PostBattleSkill | RecoverySkill | RegenSkill | SMTCounterSkill | SupportSkill | SusceptibilitySkill | WallSkill;
 
 export type SkillData = AilBoostSkillData | AilDefensiveSkillData | AilmentSkillData | AttackSkillData | AutoBuffSkillData | BarrierSkillData | BarrierBreakSkillData | BlockSkillData | BoostSkillData
     | BreakSkillData | ChargeSkillData | CritSkillData | CritBoostSkillData | DefensiveSkillData | EndureSkillData | EvasionSkillData | HalveSkillData | InstaKillSkillData
-    | InstaKillBoostSkillData | MasterSkillData | MiscSkillData | NaviSkillData | PersonaCounterSkillData | PostBattleSkillData | RecoverySkillData | RegenSkillData | SupportSkillData | SusceptibilitySkillData | WallSkillData;
+    | InstaKillBoostSkillData | MasterSkillData | MiscSkillData | NaviSkillData | PersonaCounterSkillData | PostBattleSkillData | RecoverySkillData | RegenSkillData | SMTCounterSkillData | SupportSkillData | SusceptibilitySkillData | WallSkillData;
 
 export type SkillType = 'AILBOOST' | 'AILDEFENSIVE' | 'AILMENT' | 'ATTACK' | 'AUTOBUFF' | 'BARRIER' | 'BARRIERBREAK' | 'BLOCK' | 'BOOST'
     | 'BREAK' | 'CHARGE' | 'CRIT' |'CRITBOOST' | 'DEFENSIVE' | 'ENDURE' | 'EVASION' | 'HALVE' | 'INSTAKILL' 
-    | 'INSTAKILLBOOST' | 'MASTER' | 'MISC' | 'NAVI' | 'PERSONACOUNTER' | 'POSTBATTLE' | 'RECOVERY' | 'REGEN' | 'SUPPORT' | 'SUSCEPTIBILITY' | 'WALL';
+    | 'INSTAKILLBOOST' | 'MASTER' | 'MISC' | 'NAVI' | 'PERSONACOUNTER' | 'POSTBATTLE' | 'RECOVERY' | 'REGEN' | 'SMTCOUNTER' | 'SUPPORT' | 'SUSCEPTIBILITY' | 'WALL';
     
 export interface Ailment {
     name: string;
