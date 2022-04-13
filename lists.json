@@ -22299,8 +22299,7 @@
       "ailments": [
         {
           "name": "Despair",
-          "chance": 5,
-          "display": "Low"
+          "chance": 5
         }
       ],
       "series": "persona"
@@ -22539,8 +22538,7 @@
       "ailments": [
         {
           "name": "Burn",
-          "chance": 5,
-          "display": "Low"
+          "chance": 5
         }
       ],
       "series": "persona"
@@ -22627,8 +22625,7 @@
       "ailments": [
         {
           "name": "Fear",
-          "chance": 5,
-          "display": "Low"
+          "chance": 5
         }
       ],
       "series": "persona"
@@ -22675,8 +22672,7 @@
       "ailments": [
         {
           "name": "Brainwash",
-          "chance": 5,
-          "display": "Low"
+          "chance": 5
         }
       ],
       "series": "persona"
@@ -22716,8 +22712,7 @@
       "ailments": [
         {
           "name": "Brainwash",
-          "chance": 20,
-          "display": "Medium"
+          "chance": 20
         }
       ],
       "series": "persona"
@@ -22877,8 +22872,7 @@
       "ailments": [
         {
           "name": "Burn",
-          "chance": 5,
-          "display": "Low"
+          "chance": 5
         }
       ],
       "series": "persona"
@@ -23152,8 +23146,7 @@
       "ailments": [
         {
           "name": "Rage",
-          "chance": 20,
-          "display": "Medium"
+          "chance": 20
         }
       ],
       "series": "persona"
@@ -23512,8 +23505,7 @@
       "ailments": [
         {
           "name": "Fear",
-          "chance": 20,
-          "display": "Medium"
+          "chance": 20
         }
       ],
       "series": "persona"
@@ -23633,8 +23625,7 @@
       "ailments": [
         {
           "name": "Freeze",
-          "chance": 5,
-          "display": "Low"
+          "chance": 5
         }
       ],
       "series": "persona"
@@ -23900,8 +23891,7 @@
       "ailments": [
         {
           "name": "Sleep",
-          "chance": 5,
-          "display": "Low"
+          "chance": 5
         }
       ],
       "series": "persona"
@@ -24795,8 +24785,7 @@
       "ailments": [
         {
           "name": "Dizzy",
-          "chance": 5,
-          "display": "Low"
+          "chance": 5
         }
       ],
       "series": "persona"
@@ -25531,8 +25520,7 @@
       "ailments": [
         {
           "name": "Forget",
-          "chance": 20,
-          "display": "Medium"
+          "chance": 20
         }
       ],
       "series": "persona"
@@ -26126,8 +26114,7 @@
       "ailments": [
         {
           "name": "Burn",
-          "chance": 5,
-          "display": "Low"
+          "chance": 5
         }
       ],
       "series": "persona"
@@ -27025,18 +27012,15 @@
       "ailments": [
         {
           "name": "Confuse",
-          "chance": 20,
-          "display": "Medium"
+          "chance": 20
         },
         {
           "name": "Fear",
-          "chance": 20,
-          "display": "Medium"
+          "chance": 20
         },
         {
           "name": "Despair",
-          "chance": 20,
-          "display": "Medium"
+          "chance": 20
         }
       ],
       "series": "persona"
@@ -27443,8 +27427,7 @@
       "ailments": [
         {
           "name": "Burn",
-          "chance": 5,
-          "display": "Low"
+          "chance": 5
         }
       ],
       "series": "persona"
@@ -27932,8 +27915,7 @@
       "ailments": [
         {
           "name": "Forget",
-          "chance": 5,
-          "display": "Low"
+          "chance": 5
         }
       ],
       "series": "persona"
@@ -28001,8 +27983,7 @@
       "ailments": [
         {
           "name": "Confuse",
-          "chance": 5,
-          "display": "Low"
+          "chance": 5
         }
       ],
       "series": "persona"
@@ -28252,8 +28233,7 @@
       "ailments": [
         {
           "name": "Enervation",
-          "chance": 5,
-          "display": "Low"
+          "chance": 5
         }
       ],
       "series": "persona"
@@ -28346,8 +28326,7 @@
       "ailments": [
         {
           "name": "Exhaustion",
-          "chance": 5,
-          "display": "Low"
+          "chance": 5
         }
       ],
       "series": "persona"
@@ -28394,8 +28373,7 @@
       "ailments": [
         {
           "name": "Despair",
-          "chance": 20,
-          "display": "Medium"
+          "chance": 20
         }
       ],
       "series": "persona"
@@ -28439,8 +28417,7 @@
       "ailments": [
         {
           "name": "Freeze",
-          "chance": 5,
-          "display": "Low"
+          "chance": 5
         }
       ],
       "series": "persona"
@@ -28716,8 +28693,7 @@
       "ailments": [
         {
           "name": "Rage",
-          "chance": 5,
-          "display": "Low"
+          "chance": 5
         }
       ],
       "series": "persona"
@@ -28957,8 +28933,7 @@
       "ailments": [
         {
           "name": "Poison",
-          "chance": 20,
-          "display": "Medium"
+          "chance": 20
         }
       ],
       "series": "persona"
@@ -29065,7 +29040,7 @@
       "ailments": [
         {
           "name": "Poison",
-          "chance": 0
+          "chance": 100
         }
       ],
       "series": "smt"
@@ -30199,8 +30174,7 @@
       "ailments": [
         {
           "name": "Confuse",
-          "chance": 20,
-          "display": "Medium"
+          "chance": 20
         }
       ],
       "series": "persona"
@@ -30226,8 +30200,7 @@
       "ailments": [
         {
           "name": "Dizzy",
-          "chance": 20,
-          "display": "Medium"
+          "chance": 20
         }
       ],
       "series": "persona"
@@ -30791,8 +30764,7 @@
       "ailments": [
         {
           "name": "Fear",
-          "chance": 20,
-          "display": "Medium"
+          "chance": 20
         }
       ],
       "series": "persona"
@@ -31308,8 +31280,7 @@
       "ailments": [
         {
           "name": "Poison",
-          "chance": 5,
-          "display": "Low"
+          "chance": 5
         }
       ],
       "series": "persona"
@@ -31423,8 +31394,7 @@
       "ailments": [
         {
           "name": "Shock",
-          "chance": 5,
-          "display": "Low"
+          "chance": 5
         }
       ],
       "series": "persona"
