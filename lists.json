@@ -11572,7 +11572,7 @@
           "level": 0
         },
         {
-          "name": "Souffle D'eclair",
+          "name": "Souffle D'éclair",
           "level": 0
         },
         {
@@ -21748,6 +21748,27 @@
       "series": "persona"
     },
     {
+      "name": "Acrobat Kick",
+      "devName": "acrobatkick",
+      "affinity": "Phys",
+      "type": "ATTACK",
+      "unique": false,
+      "range": 1,
+      "cost": {
+        "type": "SP",
+        "amount": 25
+      },
+      "power": {
+        "amount": 80,
+        "display": "Weak"
+      },
+      "min": 1,
+      "max": 1,
+      "flags": [],
+      "ailments": [],
+      "series": "smt"
+    },
+    {
       "name": "Adverse Resolve",
       "devName": "adverseresolve",
       "affinity": "Passive",
@@ -21770,6 +21791,27 @@
       "power": {
         "amount": 130,
         "display": "Weak"
+      },
+      "min": 1,
+      "max": 1,
+      "flags": [],
+      "ailments": [],
+      "series": "smt"
+    },
+    {
+      "name": "Agibarion",
+      "devName": "agibarion",
+      "affinity": "Fire",
+      "type": "ATTACK",
+      "unique": false,
+      "range": 1,
+      "cost": {
+        "type": "SP",
+        "amount": 50
+      },
+      "power": {
+        "amount": 265,
+        "display": "Severe"
       },
       "min": 1,
       "max": 1,
@@ -21868,7 +21910,7 @@
       "min": 1,
       "max": 1,
       "flags": [
-        "Crit Boost"
+        "Crit Damage Boost"
       ],
       "ailments": [],
       "series": "smt"
@@ -21964,6 +22006,27 @@
       "unique": false
     },
     {
+      "name": "Andalucia",
+      "devName": "andalucia",
+      "affinity": "Phys",
+      "type": "ATTACK",
+      "unique": true,
+      "range": 2,
+      "cost": {
+        "type": "SP",
+        "amount": 20
+      },
+      "power": {
+        "amount": 85,
+        "display": "Weak"
+      },
+      "min": 3,
+      "max": 6,
+      "flags": [],
+      "ailments": [],
+      "series": "smt"
+    },
+    {
       "name": "Angelic Grace",
       "devName": "angelicgrace",
       "affinity": "Passive",
@@ -21991,6 +22054,27 @@
       "unique": false,
       "amount": 100,
       "surround": false
+    },
+    {
+      "name": "Aramasa",
+      "devName": "aramasa",
+      "affinity": "Phys",
+      "type": "ATTACK",
+      "unique": true,
+      "range": 1,
+      "cost": {
+        "type": "SP",
+        "amount": 10
+      },
+      "power": {
+        "amount": 20,
+        "display": "Weak"
+      },
+      "min": 8,
+      "max": 8,
+      "flags": [],
+      "ailments": [],
+      "series": "smt"
     },
     {
       "name": "Arms Master",
@@ -22041,6 +22125,27 @@
       "flags": [],
       "ailments": [],
       "series": "persona"
+    },
+    {
+      "name": "Astral Saintstrike",
+      "devName": "astralsaintstrike",
+      "affinity": "Phys",
+      "type": "ATTACK",
+      "unique": true,
+      "range": 2,
+      "cost": {
+        "type": "SP",
+        "amount": 40
+      },
+      "power": {
+        "amount": 20,
+        "display": "Weak"
+      },
+      "min": 15,
+      "max": 15,
+      "flags": [],
+      "ailments": [],
+      "series": "smt"
     },
     {
       "name": "Atomic Flare",
@@ -22104,6 +22209,27 @@
       "buff": "Tarukaja"
     },
     {
+      "name": "Axel Claw",
+      "devName": "axelclaw",
+      "affinity": "Phys",
+      "type": "ATTACK",
+      "unique": false,
+      "range": 2,
+      "cost": {
+        "type": "SP",
+        "amount": 24
+      },
+      "power": {
+        "amount": 120,
+        "display": "Medium"
+      },
+      "min": 2,
+      "max": 4,
+      "flags": [],
+      "ailments": [],
+      "series": "smt"
+    },
+    {
       "name": "Ayamur",
       "devName": "ayamur",
       "affinity": "Phys",
@@ -22125,6 +22251,32 @@
       ],
       "ailments": [],
       "series": "persona"
+    },
+    {
+      "name": "Babylon Goblet",
+      "devName": "babylongoblet",
+      "affinity": "Almighty",
+      "type": "ATTACK",
+      "unique": true,
+      "range": 0,
+      "cost": {
+        "type": "SP",
+        "amount": 80
+      },
+      "power": {
+        "amount": 180,
+        "display": "Severe"
+      },
+      "min": 1,
+      "max": 1,
+      "flags": [],
+      "ailments": [
+        {
+          "name": "Confuse",
+          "chance": 45
+        }
+      ],
+      "series": "smt"
     },
     {
       "name": "Bad Beat",
@@ -22212,6 +22364,96 @@
       "flags": [],
       "ailments": [],
       "series": "persona"
+    },
+    {
+      "name": "Beatdown",
+      "devName": "beatdown",
+      "affinity": "Phys",
+      "type": "ATTACK",
+      "unique": false,
+      "range": 1,
+      "cost": {
+        "type": "SP",
+        "amount": 15
+      },
+      "power": {
+        "amount": 110,
+        "display": "Weak"
+      },
+      "min": 1,
+      "max": 1,
+      "flags": [
+        "HP Dependent"
+      ],
+      "ailments": [],
+      "series": "smt"
+    },
+    {
+      "name": "Berserker God",
+      "devName": "berserkergod",
+      "affinity": "Phys",
+      "type": "ATTACK",
+      "unique": false,
+      "range": 1,
+      "cost": {
+        "type": "SP",
+        "amount": 15
+      },
+      "power": {
+        "amount": 180,
+        "display": "Medium"
+      },
+      "min": 1,
+      "max": 1,
+      "flags": [],
+      "ailments": [],
+      "series": "smt"
+    },
+    {
+      "name": "Bestial Bite",
+      "devName": "bestialbite",
+      "affinity": "Phys",
+      "type": "ATTACK",
+      "unique": false,
+      "range": 1,
+      "cost": {
+        "type": "SP",
+        "amount": 5
+      },
+      "power": {
+        "amount": 130,
+        "display": "Weak"
+      },
+      "min": 1,
+      "max": 1,
+      "flags": [
+        "Crit Damage Boost"
+      ],
+      "ailments": [],
+      "series": "smt"
+    },
+    {
+      "name": "Black Dracostrike",
+      "devName": "blackdracostrike",
+      "affinity": "Dark",
+      "type": "ATTACK",
+      "unique": false,
+      "range": 1,
+      "cost": {
+        "type": "SP",
+        "amount": 30
+      },
+      "power": {
+        "amount": 200,
+        "display": "Medium"
+      },
+      "min": 1,
+      "max": 1,
+      "flags": [
+        "Weakness Instakill"
+      ],
+      "ailments": [],
+      "series": "smt"
     },
     {
       "name": "Black Spot",
@@ -22342,6 +22584,29 @@
       "series": "smt"
     },
     {
+      "name": "Blinding Strike",
+      "devName": "blindingstrike",
+      "affinity": "Phys",
+      "type": "ATTACK",
+      "unique": false,
+      "range": 1,
+      "cost": {
+        "type": "SP",
+        "amount": 15
+      },
+      "power": {
+        "amount": 130,
+        "display": "Weak"
+      },
+      "min": 1,
+      "max": 1,
+      "flags": [
+        "Accuracy/Evasion Down"
+      ],
+      "ailments": [],
+      "series": "smt"
+    },
+    {
       "name": "Bloodbath",
       "devName": "bloodbath",
       "affinity": "Phys",
@@ -22367,6 +22632,27 @@
         }
       ],
       "series": "persona"
+    },
+    {
+      "name": "Bouncing Claw",
+      "devName": "bouncingclaw",
+      "affinity": "Phys",
+      "type": "ATTACK",
+      "unique": false,
+      "range": 1,
+      "cost": {
+        "type": "SP",
+        "amount": 12
+      },
+      "power": {
+        "amount": 65,
+        "display": "Weak"
+      },
+      "min": 1,
+      "max": 3,
+      "flags": [],
+      "ailments": [],
+      "series": "smt"
     },
     {
       "name": "Brain Buster",
@@ -22498,6 +22784,27 @@
       "series": "smt"
     },
     {
+      "name": "Bufubarion",
+      "devName": "bufubarion",
+      "affinity": "Ice",
+      "type": "ATTACK",
+      "unique": false,
+      "range": 1,
+      "cost": {
+        "type": "SP",
+        "amount": 50
+      },
+      "power": {
+        "amount": 265,
+        "display": "Severe"
+      },
+      "min": 1,
+      "max": 1,
+      "flags": [],
+      "ailments": [],
+      "series": "smt"
+    },
+    {
       "name": "Bufudyne",
       "devName": "bufudyne",
       "affinity": "Ice",
@@ -22591,6 +22898,50 @@
       ],
       "revive": false,
       "negate": false
+    },
+    {
+      "name": "Carnage Fang",
+      "devName": "carnagefang",
+      "affinity": "Phys",
+      "type": "ATTACK",
+      "unique": true,
+      "range": 1,
+      "cost": {
+        "type": "SP",
+        "amount": 20
+      },
+      "power": {
+        "amount": 260,
+        "display": "Heavy"
+      },
+      "min": 1,
+      "max": 1,
+      "flags": [
+        "Crit Damage Boost"
+      ],
+      "ailments": [],
+      "series": "smt"
+    },
+    {
+      "name": "Catastrophe",
+      "devName": "catastrophe",
+      "affinity": "Phys",
+      "type": "ATTACK",
+      "unique": false,
+      "range": 1,
+      "cost": {
+        "type": "SP",
+        "amount": 75
+      },
+      "power": {
+        "amount": 290,
+        "display": "Severe"
+      },
+      "min": 1,
+      "max": 1,
+      "flags": [],
+      "ailments": [],
+      "series": "smt"
     },
     {
       "name": "Certain Escape",
@@ -22817,6 +23168,50 @@
       "element": "Gun"
     },
     {
+      "name": "Critical Slash",
+      "devName": "criticalslash",
+      "affinity": "Phys",
+      "type": "ATTACK",
+      "unique": false,
+      "range": 1,
+      "cost": {
+        "type": "SP",
+        "amount": 10
+      },
+      "power": {
+        "amount": 160,
+        "display": "Light"
+      },
+      "min": 1,
+      "max": 1,
+      "flags": [
+        "Half Accuracy"
+      ],
+      "ailments": [],
+      "series": "smt"
+    },
+    {
+      "name": "Critical Wave",
+      "devName": "criticalwave",
+      "affinity": "Phys",
+      "type": "ATTACK",
+      "unique": false,
+      "range": 0,
+      "cost": {
+        "type": "SP",
+        "amount": 25
+      },
+      "power": {
+        "amount": 90,
+        "display": "Weak"
+      },
+      "min": 1,
+      "max": 1,
+      "flags": [],
+      "ailments": [],
+      "series": "smt"
+    },
+    {
       "name": "Cross Slash",
       "devName": "crossslash",
       "affinity": "Phys",
@@ -22863,6 +23258,71 @@
       "series": "persona"
     },
     {
+      "name": "Crusher Onslaught",
+      "devName": "crusheronslaught",
+      "affinity": "Phys",
+      "type": "ATTACK",
+      "unique": false,
+      "range": 0,
+      "cost": {
+        "type": "SP",
+        "amount": 20
+      },
+      "power": {
+        "amount": 170,
+        "display": "Medium"
+      },
+      "min": 1,
+      "max": 1,
+      "flags": [
+        "Half Accuracy"
+      ],
+      "ailments": [],
+      "series": "smt"
+    },
+    {
+      "name": "Damascus Claw",
+      "devName": "damascusclaw",
+      "affinity": "Phys",
+      "type": "ATTACK",
+      "unique": false,
+      "range": 1,
+      "cost": {
+        "type": "SP",
+        "amount": 24
+      },
+      "power": {
+        "amount": 90,
+        "display": "Medium"
+      },
+      "min": 2,
+      "max": 3,
+      "flags": [],
+      "ailments": [],
+      "series": "smt"
+    },
+    {
+      "name": "Dancing Strike",
+      "devName": "dancingstrike",
+      "affinity": "Phys",
+      "type": "ATTACK",
+      "unique": true,
+      "range": 1,
+      "cost": {
+        "type": "SP",
+        "amount": 25
+      },
+      "power": {
+        "amount": 80,
+        "display": "Medium"
+      },
+      "min": 3,
+      "max": 3,
+      "flags": [],
+      "ailments": [],
+      "series": "smt"
+    },
+    {
       "name": "Dark Amp",
       "devName": "darkamp",
       "affinity": "Passive",
@@ -22897,6 +23357,32 @@
       "unique": false,
       "amount": 20,
       "element": "Dark"
+    },
+    {
+      "name": "Dark Sword",
+      "devName": "darksword",
+      "affinity": "Phys",
+      "type": "ATTACK",
+      "unique": false,
+      "range": 1,
+      "cost": {
+        "type": "SP",
+        "amount": 25
+      },
+      "power": {
+        "amount": 90,
+        "display": "Medium"
+      },
+      "min": 2,
+      "max": 2,
+      "flags": [],
+      "ailments": [
+        {
+          "name": "Seal",
+          "chance": 30
+        }
+      ],
+      "series": "smt"
     },
     {
       "name": "Dazzler",
@@ -22954,6 +23440,55 @@
       "max": 1,
       "flags": [],
       "ailments": [],
+      "series": "smt"
+    },
+    {
+      "name": "Death Flies",
+      "devName": "deathflies",
+      "affinity": "Dark",
+      "type": "ATTACK",
+      "unique": true,
+      "range": 0,
+      "cost": {
+        "type": "SP",
+        "amount": 120
+      },
+      "power": {
+        "amount": 320,
+        "display": "Severe"
+      },
+      "min": 1,
+      "max": 1,
+      "flags": [
+        "Weakness Instakill"
+      ],
+      "ailments": [],
+      "series": "smt"
+    },
+    {
+      "name": "Death Lust",
+      "devName": "deathlust",
+      "affinity": "Almighty",
+      "type": "ATTACK",
+      "unique": true,
+      "range": 0,
+      "cost": {
+        "type": "SP",
+        "amount": 70
+      },
+      "power": {
+        "amount": 160,
+        "display": "Heavy"
+      },
+      "min": 1,
+      "max": 1,
+      "flags": [],
+      "ailments": [
+        {
+          "name": "Charm",
+          "chance": 45
+        }
+      ],
       "series": "smt"
     },
     {
@@ -23144,6 +23679,27 @@
       "display": "High"
     },
     {
+      "name": "Divine Arrowfall",
+      "devName": "divinearrowfall",
+      "affinity": "Almighty",
+      "type": "ATTACK",
+      "unique": true,
+      "range": 0,
+      "cost": {
+        "type": "SP",
+        "amount": 35
+      },
+      "power": {
+        "amount": 170,
+        "display": "Heavy"
+      },
+      "min": 1,
+      "max": 1,
+      "flags": [],
+      "ailments": [],
+      "series": "smt"
+    },
+    {
       "name": "Divine Grace",
       "devName": "divinegrace",
       "affinity": "Passive",
@@ -23303,14 +23859,10 @@
       },
       "min": 1,
       "max": 1,
-      "flags": [],
-      "ailments": [
-        {
-          "name": "Insta-kill",
-          "chance": 20,
-          "display": "Medium"
-        }
+      "flags": [
+        "Instakill"
       ],
+      "ailments": [],
       "series": "persona"
     },
     {
@@ -23496,6 +24048,29 @@
       "newAffinity": "Drain"
     },
     {
+      "name": "Dream Fist",
+      "devName": "dreamfist",
+      "affinity": "Phys",
+      "type": "ATTACK",
+      "unique": false,
+      "range": 1,
+      "cost": {
+        "type": "SP",
+        "amount": 20
+      },
+      "power": {
+        "amount": 140,
+        "display": "Weak"
+      },
+      "min": 1,
+      "max": 1,
+      "flags": [
+        "Asleep Boost"
+      ],
+      "ailments": [],
+      "series": "smt"
+    },
+    {
       "name": "Dream Needle",
       "devName": "dreamneedle",
       "affinity": "Phys",
@@ -23519,6 +24094,29 @@
           "chance": 55
         }
       ],
+      "series": "smt"
+    },
+    {
+      "name": "Eat Whole",
+      "devName": "eatwhole",
+      "affinity": "Phys",
+      "type": "ATTACK",
+      "unique": false,
+      "range": 1,
+      "cost": {
+        "type": "SP",
+        "amount": 20
+      },
+      "power": {
+        "amount": 150,
+        "display": "Medium"
+      },
+      "min": 1,
+      "max": 1,
+      "flags": [
+        "Drain HP"
+      ],
+      "ailments": [],
       "series": "smt"
     },
     {
@@ -23664,6 +24262,29 @@
       "unique": false
     },
     {
+      "name": "Energy Drain",
+      "devName": "energydrain",
+      "affinity": "Almighty",
+      "type": "ATTACK",
+      "unique": false,
+      "range": 1,
+      "cost": {
+        "type": "SP",
+        "amount": 15
+      },
+      "power": {
+        "amount": 80,
+        "display": "Weak"
+      },
+      "min": 1,
+      "max": 1,
+      "flags": [
+        "Drain HP/MP"
+      ],
+      "ailments": [],
+      "series": "smt"
+    },
+    {
       "name": "Energy Drop",
       "devName": "energydrop",
       "affinity": "Recovery",
@@ -23709,6 +24330,27 @@
       "affinity": "Passive",
       "type": "NAVI",
       "unique": false
+    },
+    {
+      "name": "Eternal Blizzard",
+      "devName": "eternalblizzard",
+      "affinity": "Ice",
+      "type": "ATTACK",
+      "unique": true,
+      "range": 2,
+      "cost": {
+        "type": "SP",
+        "amount": 50
+      },
+      "power": {
+        "amount": 90,
+        "display": "Weak"
+      },
+      "min": 3,
+      "max": 6,
+      "flags": [],
+      "ailments": [],
+      "series": "smt"
     },
     {
       "name": "Evade Dark",
@@ -23856,6 +24498,52 @@
       }
     },
     {
+      "name": "Fallen Destroyer",
+      "devName": "fallendestroyer",
+      "affinity": "Dark",
+      "type": "ATTACK",
+      "unique": true,
+      "range": 0,
+      "cost": {
+        "type": "SP",
+        "amount": 70
+      },
+      "power": {
+        "amount": 250,
+        "display": "Severe"
+      },
+      "min": 1,
+      "max": 1,
+      "flags": [
+        "Weakness Instakill"
+      ],
+      "ailments": [],
+      "series": "smt"
+    },
+    {
+      "name": "Fang Breaker",
+      "devName": "fangbreaker",
+      "affinity": "Phys",
+      "type": "ATTACK",
+      "unique": false,
+      "range": 1,
+      "cost": {
+        "type": "SP",
+        "amount": 15
+      },
+      "power": {
+        "amount": 130,
+        "display": "Weak"
+      },
+      "min": 1,
+      "max": 1,
+      "flags": [
+        "Attack Down"
+      ],
+      "ailments": [],
+      "series": "smt"
+    },
+    {
       "name": "Fast Heal",
       "devName": "fastheal",
       "affinity": "Passive",
@@ -23889,6 +24577,27 @@
       "series": "persona"
     },
     {
+      "name": "Fatal Sword",
+      "devName": "fatalsword",
+      "affinity": "Phys",
+      "type": "ATTACK",
+      "unique": false,
+      "range": 1,
+      "cost": {
+        "type": "SP",
+        "amount": 25
+      },
+      "power": {
+        "amount": 180,
+        "display": "Medium"
+      },
+      "min": 1,
+      "max": 1,
+      "flags": [],
+      "ailments": [],
+      "series": "smt"
+    },
+    {
       "name": "Fear Boost",
       "devName": "fearboost",
       "affinity": "Passive",
@@ -23907,6 +24616,29 @@
       "range": 0,
       "cost": 80,
       "charge": "Charge"
+    },
+    {
+      "name": "Figment Slash",
+      "devName": "figmentslash",
+      "affinity": "Phys",
+      "type": "ATTACK",
+      "unique": false,
+      "range": 1,
+      "cost": {
+        "type": "SP",
+        "amount": 50
+      },
+      "power": {
+        "amount": 300,
+        "display": "Severe"
+      },
+      "min": 1,
+      "max": 1,
+      "flags": [
+        "Half Accuracy"
+      ],
+      "ailments": [],
+      "series": "smt"
     },
     {
       "name": "Fire Amp",
@@ -23943,6 +24675,69 @@
       "unique": false,
       "cost": 15,
       "element": "Fire"
+    },
+    {
+      "name": "Fire Breath",
+      "devName": "firebreath",
+      "affinity": "Fire",
+      "type": "ATTACK",
+      "unique": false,
+      "range": 2,
+      "cost": {
+        "type": "SP",
+        "amount": 25
+      },
+      "power": {
+        "amount": 90,
+        "display": "Weak"
+      },
+      "min": 2,
+      "max": 5,
+      "flags": [],
+      "ailments": [],
+      "series": "smt"
+    },
+    {
+      "name": "Fire Dracostrike",
+      "devName": "firedracostrike",
+      "affinity": "Fire",
+      "type": "ATTACK",
+      "unique": false,
+      "range": 1,
+      "cost": {
+        "type": "SP",
+        "amount": 25
+      },
+      "power": {
+        "amount": 200,
+        "display": "Medium"
+      },
+      "min": 1,
+      "max": 1,
+      "flags": [],
+      "ailments": [],
+      "series": "smt"
+    },
+    {
+      "name": "Fire of Sinai",
+      "devName": "fireofsinai",
+      "affinity": "Almighty",
+      "type": "ATTACK",
+      "unique": true,
+      "range": 2,
+      "cost": {
+        "type": "SP",
+        "amount": 80
+      },
+      "power": {
+        "amount": 105,
+        "display": "Medium"
+      },
+      "min": 3,
+      "max": 7,
+      "flags": [],
+      "ailments": [],
+      "series": "smt"
     },
     {
       "name": "Fire Pleroma",
@@ -23996,6 +24791,27 @@
         }
       ],
       "series": "persona"
+    },
+    {
+      "name": "Floral Gust",
+      "devName": "floralgust",
+      "affinity": "Force",
+      "type": "ATTACK",
+      "unique": false,
+      "range": 2,
+      "cost": {
+        "type": "SP",
+        "amount": 60
+      },
+      "power": {
+        "amount": 150,
+        "display": "Medium"
+      },
+      "min": 2,
+      "max": 5,
+      "flags": [],
+      "ailments": [],
+      "series": "smt"
     },
     {
       "name": "Force Block",
@@ -24105,6 +24921,27 @@
       "series": "persona"
     },
     {
+      "name": "Freikugel",
+      "devName": "freikugel",
+      "affinity": "Almighty",
+      "type": "ATTACK",
+      "unique": false,
+      "range": 1,
+      "cost": {
+        "type": "SP",
+        "amount": 60
+      },
+      "power": {
+        "amount": 230,
+        "display": "Severe"
+      },
+      "min": 1,
+      "max": 1,
+      "flags": [],
+      "ailments": [],
+      "series": "smt"
+    },
+    {
       "name": "Freila",
       "devName": "freila",
       "affinity": "Nuke",
@@ -24126,11 +24963,68 @@
       "series": "persona"
     },
     {
+      "name": "Frenzied Chomp",
+      "devName": "frenziedchomp",
+      "affinity": "Phys",
+      "type": "ATTACK",
+      "unique": false,
+      "range": 1,
+      "cost": {
+        "type": "SP",
+        "amount": 25
+      },
+      "power": {
+        "amount": 165,
+        "display": "Medium"
+      },
+      "min": 1,
+      "max": 1,
+      "flags": [],
+      "ailments": [
+        {
+          "name": "Poison",
+          "chance": 25
+        },
+        {
+          "name": "Confuse",
+          "chance": 25
+        },
+        {
+          "name": "Charm",
+          "chance": 25
+        }
+      ],
+      "series": "smt"
+    },
+    {
       "name": "Full Analysis",
       "devName": "fullanalysis",
       "affinity": "Passive",
       "type": "NAVI",
       "unique": false
+    },
+    {
+      "name": "Gaea Rage",
+      "devName": "gaearage",
+      "affinity": "Phys",
+      "type": "ATTACK",
+      "unique": true,
+      "range": 0,
+      "cost": {
+        "type": "SP",
+        "amount": 170
+      },
+      "power": {
+        "amount": 270,
+        "display": "Severe"
+      },
+      "min": 1,
+      "max": 1,
+      "flags": [
+        "Pierce"
+      ],
+      "ailments": [],
+      "series": "smt"
     },
     {
       "name": "Gale Slash",
@@ -24256,6 +25150,27 @@
       "series": "persona"
     },
     {
+      "name": "Ghastfire Rain",
+      "devName": "ghastfirerain",
+      "affinity": "Fire",
+      "type": "ATTACK",
+      "unique": true,
+      "range": 0,
+      "cost": {
+        "type": "SP",
+        "amount": 30
+      },
+      "power": {
+        "amount": 150,
+        "display": "Medium"
+      },
+      "min": 1,
+      "max": 1,
+      "flags": [],
+      "ailments": [],
+      "series": "smt"
+    },
+    {
       "name": "Ghastly Wail",
       "devName": "ghastlywail",
       "affinity": "Almighty",
@@ -24329,6 +25244,50 @@
       "series": "persona"
     },
     {
+      "name": "Glacial Blast",
+      "devName": "glacialblast",
+      "affinity": "Ice",
+      "type": "ATTACK",
+      "unique": false,
+      "range": 2,
+      "cost": {
+        "type": "SP",
+        "amount": 60
+      },
+      "power": {
+        "amount": 150,
+        "display": "Medium"
+      },
+      "min": 2,
+      "max": 5,
+      "flags": [],
+      "ailments": [],
+      "series": "smt"
+    },
+    {
+      "name": "God's Bow",
+      "devName": "godsbow",
+      "affinity": "Light",
+      "type": "ATTACK",
+      "unique": true,
+      "range": 1,
+      "cost": {
+        "type": "SP",
+        "amount": 60
+      },
+      "power": {
+        "amount": 100,
+        "display": "Light"
+      },
+      "min": 1,
+      "max": 1,
+      "flags": [
+        "Instakill"
+      ],
+      "ailments": [],
+      "series": "smt"
+    },
+    {
       "name": "God\"s Hand",
       "devName": "godshand",
       "affinity": "Phys",
@@ -24348,6 +25307,27 @@
       "flags": [],
       "ailments": [],
       "series": "persona"
+    },
+    {
+      "name": "Gram Slice",
+      "devName": "gramslice",
+      "affinity": "Phys",
+      "type": "ATTACK",
+      "unique": false,
+      "range": 1,
+      "cost": {
+        "type": "SP",
+        "amount": 10
+      },
+      "power": {
+        "amount": 140,
+        "display": "Weak"
+      },
+      "min": 1,
+      "max": 1,
+      "flags": [],
+      "ailments": [],
+      "series": "smt"
     },
     {
       "name": "Growth 1",
@@ -24404,6 +25384,50 @@
       "element": "Gun"
     },
     {
+      "name": "Gungnir",
+      "devName": "gungnir",
+      "affinity": "Phys",
+      "type": "ATTACK",
+      "unique": true,
+      "range": 1,
+      "cost": {
+        "type": "SP",
+        "amount": 50
+      },
+      "power": {
+        "amount": 300,
+        "display": "Severe"
+      },
+      "min": 1,
+      "max": 1,
+      "flags": [
+        "Pierce"
+      ],
+      "ailments": [],
+      "series": "smt"
+    },
+    {
+      "name": "Hades Blast",
+      "devName": "hadesblast",
+      "affinity": "Phys",
+      "type": "ATTACK",
+      "unique": false,
+      "range": 0,
+      "cost": {
+        "type": "SP",
+        "amount": 60
+      },
+      "power": {
+        "amount": 190,
+        "display": "Heavy"
+      },
+      "min": 1,
+      "max": 1,
+      "flags": [],
+      "ailments": [],
+      "series": "smt"
+    },
+    {
       "name": "Hama",
       "devName": "hama",
       "affinity": "Light",
@@ -24413,6 +25437,29 @@
       "cost": 8,
       "amount": 30,
       "display": "Low"
+    },
+    {
+      "name": "Hamabarion",
+      "devName": "hamabarion",
+      "affinity": "Light",
+      "type": "ATTACK",
+      "unique": false,
+      "range": 1,
+      "cost": {
+        "type": "SP",
+        "amount": 55
+      },
+      "power": {
+        "amount": 265,
+        "display": "Severe"
+      },
+      "min": 1,
+      "max": 1,
+      "flags": [
+        "Weakness Instakill"
+      ],
+      "ailments": [],
+      "series": "smt"
     },
     {
       "name": "Hama Boost",
@@ -24482,6 +25529,32 @@
       "series": "persona"
     },
     {
+      "name": "Headcrush",
+      "devName": "headcrush",
+      "affinity": "Phys",
+      "type": "ATTACK",
+      "unique": true,
+      "range": 1,
+      "cost": {
+        "type": "SP",
+        "amount": 20
+      },
+      "power": {
+        "amount": 200,
+        "display": "Medium"
+      },
+      "min": 1,
+      "max": 1,
+      "flags": [],
+      "ailments": [
+        {
+          "name": "Confuse",
+          "chance": 70
+        }
+      ],
+      "series": "smt"
+    },
+    {
       "name": "Healing Wave",
       "devName": "healingwave",
       "affinity": "Passive",
@@ -24545,6 +25618,184 @@
       "min": 1,
       "max": 1,
       "flags": [],
+      "ailments": [],
+      "series": "smt"
+    },
+    {
+      "name": "Heavy Blow",
+      "devName": "heavyblow",
+      "affinity": "Phys",
+      "type": "ATTACK",
+      "unique": false,
+      "range": 1,
+      "cost": {
+        "type": "SP",
+        "amount": 15
+      },
+      "power": {
+        "amount": 160,
+        "display": "Medium"
+      },
+      "min": 1,
+      "max": 1,
+      "flags": [
+        "Crit Damage Boost"
+      ],
+      "ailments": [],
+      "series": "smt"
+    },
+    {
+      "name": "Hell Burner",
+      "devName": "hellburner",
+      "affinity": "Fire",
+      "type": "ATTACK",
+      "unique": true,
+      "range": 0,
+      "cost": {
+        "type": "SP",
+        "amount": 40
+      },
+      "power": {
+        "amount": 150,
+        "display": "Heavy"
+      },
+      "min": 1,
+      "max": 1,
+      "flags": [],
+      "ailments": [],
+      "series": "smt"
+    },
+    {
+      "name": "Hell Exhaust",
+      "devName": "hellexhaust",
+      "affinity": "Force",
+      "type": "ATTACK",
+      "unique": true,
+      "range": 0,
+      "cost": {
+        "type": "SP",
+        "amount": 40
+      },
+      "power": {
+        "amount": 120,
+        "display": "Medium"
+      },
+      "min": 1,
+      "max": 1,
+      "flags": [
+        "Revert Buffs"
+      ],
+      "ailments": [],
+      "series": "smt"
+    },
+    {
+      "name": "Hellish Brand",
+      "devName": "hellishbrand",
+      "affinity": "Fire",
+      "type": "ATTACK",
+      "unique": true,
+      "range": 0,
+      "cost": {
+        "type": "SP",
+        "amount": 70
+      },
+      "power": {
+        "amount": 160,
+        "display": "Heavy"
+      },
+      "min": 1,
+      "max": 1,
+      "flags": [
+        "Revert Buffs"
+      ],
+      "ailments": [],
+      "series": "smt"
+    },
+    {
+      "name": "Hellish Slash",
+      "devName": "hellishslash",
+      "affinity": "Phys",
+      "type": "ATTACK",
+      "unique": true,
+      "range": 1,
+      "cost": {
+        "type": "SP",
+        "amount": 5
+      },
+      "power": {
+        "amount": 55,
+        "display": "Weak"
+      },
+      "min": 4,
+      "max": 4,
+      "flags": [
+        "Half Accuracy"
+      ],
+      "ailments": [],
+      "series": "smt"
+    },
+    {
+      "name": "Hellish Spurt",
+      "devName": "hellishspurt",
+      "affinity": "Ice",
+      "type": "ATTACK",
+      "unique": true,
+      "range": 0,
+      "cost": {
+        "type": "SP",
+        "amount": 25
+      },
+      "power": {
+        "amount": 130,
+        "display": "Medium"
+      },
+      "min": 1,
+      "max": 1,
+      "flags": [],
+      "ailments": [],
+      "series": "smt"
+    },
+    {
+      "name": "Hell Spin",
+      "devName": "hellspin",
+      "affinity": "Phys",
+      "type": "ATTACK",
+      "unique": true,
+      "range": 0,
+      "cost": {
+        "type": "SP",
+        "amount": 30
+      },
+      "power": {
+        "amount": 150,
+        "display": "Heavy"
+      },
+      "min": 1,
+      "max": 1,
+      "flags": [],
+      "ailments": [],
+      "series": "smt"
+    },
+    {
+      "name": "Hell Thrust",
+      "devName": "hellthrust",
+      "affinity": "Phys",
+      "type": "ATTACK",
+      "unique": false,
+      "range": 1,
+      "cost": {
+        "type": "SP",
+        "amount": 45
+      },
+      "power": {
+        "amount": 235,
+        "display": "Heavy"
+      },
+      "min": 1,
+      "max": 1,
+      "flags": [
+        "Pierce"
+      ],
       "ailments": [],
       "series": "smt"
     },
@@ -24720,7 +25971,9 @@
       },
       "min": 2,
       "max": 2,
-      "flags": [],
+      "flags": [
+        "Charmed Boost"
+      ],
       "ailments": [],
       "series": "smt"
     },
@@ -24782,6 +26035,48 @@
       "unique": false,
       "cost": 15,
       "element": "Ice"
+    },
+    {
+      "name": "Ice Breath",
+      "devName": "icebreath",
+      "affinity": "Ice",
+      "type": "ATTACK",
+      "unique": false,
+      "range": 2,
+      "cost": {
+        "type": "SP",
+        "amount": 25
+      },
+      "power": {
+        "amount": 90,
+        "display": "Ice"
+      },
+      "min": 2,
+      "max": 5,
+      "flags": [],
+      "ailments": [],
+      "series": "smt"
+    },
+    {
+      "name": "Ice Dracostrike",
+      "devName": "icedracostrike",
+      "affinity": "Ice",
+      "type": "ATTACK",
+      "unique": false,
+      "range": 1,
+      "cost": {
+        "type": "SP",
+        "amount": 25
+      },
+      "power": {
+        "amount": 200,
+        "display": "Medium"
+      },
+      "min": 1,
+      "max": 1,
+      "flags": [],
+      "ailments": [],
+      "series": "smt"
     },
     {
       "name": "Ice Pleroma",
@@ -24877,12 +26172,128 @@
       "baton": false
     },
     {
+      "name": "Jack Bufula",
+      "devName": "jackbufula",
+      "affinity": "Ice",
+      "type": "ATTACK",
+      "unique": true,
+      "range": 1,
+      "cost": {
+        "type": "SP",
+        "amount": 20
+      },
+      "power": {
+        "amount": 160,
+        "display": "Medium"
+      },
+      "min": 1,
+      "max": 1,
+      "flags": [
+        "Defense Down"
+      ],
+      "ailments": [],
+      "series": "smt"
+    },
+    {
+      "name": "Javelin Rain",
+      "devName": "javelinrain",
+      "affinity": "Phys",
+      "type": "ATTACK",
+      "unique": true,
+      "range": 0,
+      "cost": {
+        "type": "SP",
+        "amount": 90
+      },
+      "power": {
+        "amount": 260,
+        "display": "Severe"
+      },
+      "min": 1,
+      "max": 1,
+      "flags": [],
+      "ailments": [
+        {
+          "name": "Seal",
+          "chance": 40
+        }
+      ],
+      "series": "smt"
+    },
+    {
       "name": "Kamui Miracle",
       "devName": "kamuimiracle",
       "affinity": "Recovery",
       "type": "MISC",
       "unique": true,
       "cost": 25
+    },
+    {
+      "name": "Karnak",
+      "devName": "karnak",
+      "affinity": "Phys",
+      "type": "ATTACK",
+      "unique": true,
+      "range": 0,
+      "cost": {
+        "type": "SP",
+        "amount": 50
+      },
+      "power": {
+        "amount": 150,
+        "display": "Heavy"
+      },
+      "min": 1,
+      "max": 1,
+      "flags": [],
+      "ailments": [],
+      "series": "smt"
+    },
+    {
+      "name": "Keraunos",
+      "devName": "keraunos",
+      "affinity": "Elec",
+      "type": "ATTACK",
+      "unique": true,
+      "range": 1,
+      "cost": {
+        "type": "SP",
+        "amount": 50
+      },
+      "power": {
+        "amount": 300,
+        "display": "Severe"
+      },
+      "min": 1,
+      "max": 1,
+      "flags": [
+        "Pierce"
+      ],
+      "ailments": [],
+      "series": "smt"
+    },
+    {
+      "name": "Killing Wind",
+      "devName": "killingwind",
+      "affinity": "Force",
+      "type": "ATTACK",
+      "unique": false,
+      "range": 1,
+      "cost": {
+        "type": "SP",
+        "amount": 65
+      },
+      "power": {
+        "amount": 230,
+        "display": "Heavy"
+      },
+      "min": 1,
+      "max": 1,
+      "flags": [
+        "Pierce"
+      ],
+      "ailments": [],
+      "series": "smt"
     },
     {
       "name": "Kill Rush",
@@ -24904,6 +26315,29 @@
       "flags": [],
       "ailments": [],
       "series": "persona"
+    },
+    {
+      "name": "King Bufula",
+      "devName": "kingbufula",
+      "affinity": "Ice",
+      "type": "ATTACK",
+      "unique": true,
+      "range": 0,
+      "cost": {
+        "type": "SP",
+        "amount": 35
+      },
+      "power": {
+        "amount": 110,
+        "display": "Medium"
+      },
+      "min": 1,
+      "max": 1,
+      "flags": [
+        "Defense Down"
+      ],
+      "ailments": [],
+      "series": "smt"
     },
     {
       "name": "Kouga",
@@ -25083,6 +26517,29 @@
       "element": "Light"
     },
     {
+      "name": "Light's Descent",
+      "devName": "lightsdescent",
+      "affinity": "Light",
+      "type": "ATTACK",
+      "unique": true,
+      "range": 0,
+      "cost": {
+        "type": "SP",
+        "amount": 60
+      },
+      "power": {
+        "amount": 220,
+        "display": "Severe"
+      },
+      "min": 1,
+      "max": 1,
+      "flags": [
+        "Weakness Instakill"
+      ],
+      "ailments": [],
+      "series": "smt"
+    },
+    {
       "name": "Lucky Punch",
       "devName": "luckypunch",
       "affinity": "Phys",
@@ -25099,9 +26556,7 @@
       },
       "min": 1,
       "max": 1,
-      "flags": [
-        "Crit Boost"
-      ],
+      "flags": [],
       "ailments": [],
       "series": "persona"
     },
@@ -25180,6 +26635,27 @@
       "series": "smt"
     },
     {
+      "name": "Mabufubarion",
+      "devName": "mabufubarion",
+      "affinity": "Ice",
+      "type": "ATTACK",
+      "unique": false,
+      "range": 0,
+      "cost": {
+        "type": "SP",
+        "amount": 75
+      },
+      "power": {
+        "amount": 185,
+        "display": "Severe"
+      },
+      "min": 1,
+      "max": 1,
+      "flags": [],
+      "ailments": [],
+      "series": "smt"
+    },
+    {
       "name": "Mabufudyne",
       "devName": "mabufudyne",
       "affinity": "Ice",
@@ -25219,6 +26695,102 @@
       "max": 1,
       "flags": [],
       "ailments": [],
+      "series": "smt"
+    },
+    {
+      "name": "Mac an Luin",
+      "devName": "macanluin",
+      "affinity": "Phys",
+      "type": "ATTACK",
+      "unique": true,
+      "range": 1,
+      "cost": {
+        "type": "SP",
+        "amount": 50
+      },
+      "power": {
+        "amount": 270,
+        "display": "Severe"
+      },
+      "min": 1,
+      "max": 1,
+      "flags": [
+        "Crit Damage Boost"
+      ],
+      "ailments": [],
+      "series": "smt"
+    },
+    {
+      "name": "Madness Glint",
+      "devName": "madnessglint",
+      "affinity": "Almighty",
+      "type": "ATTACK",
+      "unique": true,
+      "range": 2,
+      "cost": {
+        "type": "SP",
+        "amount": 50
+      },
+      "power": {
+        "amount": 150,
+        "display": "Weak"
+      },
+      "min": 2,
+      "max": 5,
+      "flags": [],
+      "ailments": [
+        {
+          "name": "Seal",
+          "chance": 40
+        }
+      ],
+      "series": "smt"
+    },
+    {
+      "name": "Madness Nails",
+      "devName": "madnessnails",
+      "affinity": "Phys",
+      "type": "ATTACK",
+      "unique": false,
+      "range": 2,
+      "cost": {
+        "type": "SP",
+        "amount": 36
+      },
+      "power": {
+        "amount": 165,
+        "display": "Heavy"
+      },
+      "min": 2,
+      "max": 4,
+      "flags": [],
+      "ailments": [],
+      "series": "smt"
+    },
+    {
+      "name": "Madness Needle",
+      "devName": "madnessneedle",
+      "affinity": "Phys",
+      "type": "ATTACK",
+      "unique": false,
+      "range": 1,
+      "cost": {
+        "type": "SP",
+        "amount": 10
+      },
+      "power": {
+        "amount": 110,
+        "display": "Weak"
+      },
+      "min": 1,
+      "max": 1,
+      "flags": [],
+      "ailments": [
+        {
+          "name": "Confuse",
+          "chance": 45
+        }
+      ],
       "series": "smt"
     },
     {
@@ -25459,6 +27031,29 @@
       "display": "Low"
     },
     {
+      "name": "Mahamabarion",
+      "devName": "mahamabarion",
+      "affinity": "Light",
+      "type": "ATTACK",
+      "unique": false,
+      "range": 0,
+      "cost": {
+        "type": "SP",
+        "amount": 80
+      },
+      "power": {
+        "amount": 185,
+        "display": "Severe"
+      },
+      "min": 1,
+      "max": 1,
+      "flags": [
+        "Weakness Instakill"
+      ],
+      "ailments": [],
+      "series": "smt"
+    },
+    {
       "name": "Mahamaon",
       "devName": "mahamaon",
       "affinity": "Light",
@@ -25593,6 +27188,29 @@
       "display": "Low"
     },
     {
+      "name": "Mamudobarion",
+      "devName": "mamudobarion",
+      "affinity": "Dark",
+      "type": "ATTACK",
+      "unique": false,
+      "range": 0,
+      "cost": {
+        "type": "SP",
+        "amount": 80
+      },
+      "power": {
+        "amount": 185,
+        "display": "Severe"
+      },
+      "min": 1,
+      "max": 1,
+      "flags": [
+        "Weakness Instakill"
+      ],
+      "ailments": [],
+      "series": "smt"
+    },
+    {
       "name": "Mamudoon",
       "devName": "mamudoon",
       "affinity": "Dark",
@@ -25680,6 +27298,27 @@
       "power": {
         "amount": 95,
         "display": "Weak"
+      },
+      "min": 1,
+      "max": 1,
+      "flags": [],
+      "ailments": [],
+      "series": "smt"
+    },
+    {
+      "name": "Maragibarion",
+      "devName": "maragibarion",
+      "affinity": "Fire",
+      "type": "ATTACK",
+      "unique": false,
+      "range": 0,
+      "cost": {
+        "type": "SP",
+        "amount": 75
+      },
+      "power": {
+        "amount": 185,
+        "display": "Severe"
       },
       "min": 1,
       "max": 1,
@@ -25888,6 +27527,90 @@
       "auto": []
     },
     {
+      "name": "Mazan",
+      "devName": "mazan",
+      "affinity": "Force",
+      "type": "ATTACK",
+      "unique": false,
+      "range": 0,
+      "cost": {
+        "type": "SP",
+        "amount": 15
+      },
+      "power": {
+        "amount": 95,
+        "display": "Weak"
+      },
+      "min": 1,
+      "max": 1,
+      "flags": [],
+      "ailments": [],
+      "series": "smt"
+    },
+    {
+      "name": "Mazanbarion",
+      "devName": "mazanbarion",
+      "affinity": "Force",
+      "type": "ATTACK",
+      "unique": false,
+      "range": 0,
+      "cost": {
+        "type": "SP",
+        "amount": 75
+      },
+      "power": {
+        "amount": 185,
+        "display": "Severe"
+      },
+      "min": 1,
+      "max": 1,
+      "flags": [],
+      "ailments": [],
+      "series": "smt"
+    },
+    {
+      "name": "Mazandyne",
+      "devName": "mazandyne",
+      "affinity": "Force",
+      "type": "ATTACK",
+      "unique": false,
+      "range": 0,
+      "cost": {
+        "type": "SP",
+        "amount": 50
+      },
+      "power": {
+        "amount": 155,
+        "display": "Heavy"
+      },
+      "min": 1,
+      "max": 1,
+      "flags": [],
+      "ailments": [],
+      "series": "smt"
+    },
+    {
+      "name": "Mazanma",
+      "devName": "mazanma",
+      "affinity": "Force",
+      "type": "ATTACK",
+      "unique": false,
+      "range": 0,
+      "cost": {
+        "type": "SP",
+        "amount": 30
+      },
+      "power": {
+        "amount": 120,
+        "display": "Medium"
+      },
+      "min": 1,
+      "max": 1,
+      "flags": [],
+      "ailments": [],
+      "series": "smt"
+    },
+    {
       "name": "Mazio",
       "devName": "mazio",
       "affinity": "Elec",
@@ -25901,6 +27624,27 @@
       "power": {
         "amount": 95,
         "display": "Weak"
+      },
+      "min": 1,
+      "max": 1,
+      "flags": [],
+      "ailments": [],
+      "series": "smt"
+    },
+    {
+      "name": "Maziobarion",
+      "devName": "maziobarion",
+      "affinity": "Elec",
+      "type": "ATTACK",
+      "unique": false,
+      "range": 0,
+      "cost": {
+        "type": "SP",
+        "amount": 75
+      },
+      "power": {
+        "amount": 185,
+        "display": "Severe"
       },
       "min": 1,
       "max": 1,
@@ -25993,6 +27737,52 @@
       "negate": false
     },
     {
+      "name": "Meditation",
+      "devName": "meditation",
+      "affinity": "Almighty",
+      "type": "ATTACK",
+      "unique": true,
+      "range": 1,
+      "cost": {
+        "type": "SP",
+        "amount": 5
+      },
+      "power": {
+        "amount": 120,
+        "display": "Weak"
+      },
+      "min": 1,
+      "max": 1,
+      "flags": [
+        "Drain HP/MP"
+      ],
+      "ailments": [],
+      "series": "smt"
+    },
+    {
+      "name": "Megaton Press",
+      "devName": "megatonpress",
+      "affinity": "Phys",
+      "type": "ATTACK",
+      "unique": false,
+      "range": 0,
+      "cost": {
+        "type": "SP",
+        "amount": 50
+      },
+      "power": {
+        "amount": 260,
+        "display": "Heavy"
+      },
+      "min": 1,
+      "max": 1,
+      "flags": [
+        "Half Accuracy"
+      ],
+      "ailments": [],
+      "series": "smt"
+    },
+    {
       "name": "Megaton Raid",
       "devName": "megatonraid",
       "affinity": "Phys",
@@ -26031,6 +27821,29 @@
       "min": 1,
       "max": 1,
       "flags": [],
+      "ailments": [],
+      "series": "smt"
+    },
+    {
+      "name": "Megido Flame",
+      "devName": "megidoflame",
+      "affinity": "Fire",
+      "type": "ATTACK",
+      "unique": true,
+      "range": 0,
+      "cost": {
+        "type": "SP",
+        "amount": 130
+      },
+      "power": {
+        "amount": 250,
+        "display": "Severe"
+      },
+      "min": 1,
+      "max": 1,
+      "flags": [
+        "Pierce"
+      ],
       "ailments": [],
       "series": "smt"
     },
@@ -26123,6 +27936,29 @@
       "negate": false
     },
     {
+      "name": "Mighty Cleave",
+      "devName": "mightycleave",
+      "affinity": "Phys",
+      "type": "ATTACK",
+      "unique": false,
+      "range": 1,
+      "cost": {
+        "type": "SP",
+        "amount": 25
+      },
+      "power": {
+        "amount": 240,
+        "display": "Heavy"
+      },
+      "min": 1,
+      "max": 1,
+      "flags": [
+        "Half Accuracy"
+      ],
+      "ailments": [],
+      "series": "smt"
+    },
+    {
       "name": "Mind Slice",
       "devName": "mindslice",
       "affinity": "Phys",
@@ -26166,9 +28002,7 @@
       },
       "min": 1,
       "max": 1,
-      "flags": [
-        "Crit Boost"
-      ],
+      "flags": [],
       "ailments": [],
       "series": "persona"
     },
@@ -26189,11 +28023,61 @@
       },
       "min": 1,
       "max": 1,
-      "flags": [
-        "Crit Boost"
-      ],
+      "flags": [],
       "ailments": [],
       "series": "persona"
+    },
+    {
+      "name": "Mirage Shot",
+      "devName": "mirageshot",
+      "affinity": "Fire",
+      "type": "ATTACK",
+      "unique": true,
+      "range": 1,
+      "cost": {
+        "type": "SP",
+        "amount": 15
+      },
+      "power": {
+        "amount": 160,
+        "display": "Medium"
+      },
+      "min": 1,
+      "max": 1,
+      "flags": [],
+      "ailments": [
+        {
+          "name": "Mirage",
+          "chance": 75
+        }
+      ],
+      "series": "smt"
+    },
+    {
+      "name": "Mist Rush",
+      "devName": "mistrush",
+      "affinity": "Phys",
+      "type": "ATTACK",
+      "unique": false,
+      "range": 2,
+      "cost": {
+        "type": "SP",
+        "amount": 35
+      },
+      "power": {
+        "amount": 120,
+        "display": "Medium"
+      },
+      "min": 2,
+      "max": 4,
+      "flags": [],
+      "ailments": [
+        {
+          "name": "Mirage",
+          "chance": 35
+        }
+      ],
+      "series": "smt"
     },
     {
       "name": "Money Boost",
@@ -26229,6 +28113,27 @@
       "series": "persona"
     },
     {
+      "name": "Mortal Jihad",
+      "devName": "mortaljihad",
+      "affinity": "Phys",
+      "type": "ATTACK",
+      "unique": false,
+      "range": 1,
+      "cost": {
+        "type": "SP",
+        "amount": 30
+      },
+      "power": {
+        "amount": 250,
+        "display": "Heavy"
+      },
+      "min": 1,
+      "max": 1,
+      "flags": [],
+      "ailments": [],
+      "series": "smt"
+    },
+    {
       "name": "Mudo",
       "devName": "mudo",
       "affinity": "Dark",
@@ -26238,6 +28143,29 @@
       "cost": 8,
       "amount": 30,
       "display": "Low"
+    },
+    {
+      "name": "Mudobarion",
+      "devName": "mudobarion",
+      "affinity": "Dark",
+      "type": "ATTACK",
+      "unique": false,
+      "range": 1,
+      "cost": {
+        "type": "SP",
+        "amount": 55
+      },
+      "power": {
+        "amount": 265,
+        "display": "Severe"
+      },
+      "min": 1,
+      "max": 1,
+      "flags": [
+        "Weakness Instakill"
+      ],
+      "ailments": [],
+      "series": "smt"
     },
     {
       "name": "Mudo Boost",
@@ -26257,6 +28185,29 @@
       "cost": 15,
       "amount": 40,
       "display": "Medium"
+    },
+    {
+      "name": "Murakumo",
+      "devName": "murakumo",
+      "affinity": "Almighty",
+      "type": "ATTACK",
+      "unique": true,
+      "range": 1,
+      "cost": {
+        "type": "SP",
+        "amount": 50
+      },
+      "power": {
+        "amount": 275,
+        "display": "Severe"
+      },
+      "min": 1,
+      "max": 1,
+      "flags": [
+        "Crit Damage Boost"
+      ],
+      "ailments": [],
+      "series": "smt"
     },
     {
       "name": "Mustard Bomb",
@@ -26330,6 +28281,29 @@
       "series": "persona"
     },
     {
+      "name": "Narukami",
+      "devName": "narukami",
+      "affinity": "Elec",
+      "type": "ATTACK",
+      "unique": false,
+      "range": 1,
+      "cost": {
+        "type": "SP",
+        "amount": 65
+      },
+      "power": {
+        "amount": 230,
+        "display": "Heavy"
+      },
+      "min": 1,
+      "max": 1,
+      "flags": [
+        "Pierce"
+      ],
+      "ailments": [],
+      "series": "smt"
+    },
+    {
       "name": "Navas Nebula",
       "devName": "navasnebula",
       "affinity": "Phys",
@@ -26355,6 +28329,27 @@
         }
       ],
       "series": "persona"
+    },
+    {
+      "name": "Needle Spray",
+      "devName": "needlespray",
+      "affinity": "Phys",
+      "type": "ATTACK",
+      "unique": false,
+      "range": 1,
+      "cost": {
+        "type": "SP",
+        "amount": 15
+      },
+      "power": {
+        "amount": 70,
+        "display": "Weak"
+      },
+      "min": 1,
+      "max": 4,
+      "flags": [],
+      "ailments": [],
+      "series": "smt"
     },
     {
       "name": "Negative Pile",
@@ -26427,6 +28422,27 @@
         }
       ],
       "series": "persona"
+    },
+    {
+      "name": "Nihil Claw",
+      "devName": "nihilclaw",
+      "affinity": "Phys",
+      "type": "ATTACK",
+      "unique": false,
+      "range": 1,
+      "cost": {
+        "type": "SP",
+        "amount": 36
+      },
+      "power": {
+        "amount": 125,
+        "display": "Heavy"
+      },
+      "min": 2,
+      "max": 3,
+      "flags": [],
+      "ailments": [],
+      "series": "smt"
     },
     {
       "name": "Nocturnal Flash",
@@ -26644,9 +28660,7 @@
       },
       "min": 1,
       "max": 1,
-      "flags": [
-        "Crit Boost"
-      ],
+      "flags": [],
       "ailments": [],
       "series": "persona"
     },
@@ -26699,6 +28713,29 @@
       "negate": true
     },
     {
+      "name": "Pandemonic Crush",
+      "devName": "pandemoniccrush",
+      "affinity": "Phys",
+      "type": "ATTACK",
+      "unique": true,
+      "range": 0,
+      "cost": {
+        "type": "SP",
+        "amount": 70
+      },
+      "power": {
+        "amount": 170,
+        "display": "Medium"
+      },
+      "min": 1,
+      "max": 1,
+      "flags": [
+        "Defense Down"
+      ],
+      "ailments": [],
+      "series": "smt"
+    },
+    {
       "name": "Panta Rhei",
       "devName": "pantarhei",
       "affinity": "Wind",
@@ -26720,6 +28757,30 @@
       "series": "persona"
     },
     {
+      "name": "Panta Spane",
+      "devName": "pantaspane",
+      "affinity": "Phys",
+      "type": "ATTACK",
+      "unique": true,
+      "range": 0,
+      "cost": {
+        "type": "SP",
+        "amount": 65
+      },
+      "power": {
+        "amount": 180,
+        "display": "Medium"
+      },
+      "min": 1,
+      "max": 1,
+      "flags": [
+        "Attack Down",
+        "Defense Down"
+      ],
+      "ailments": [],
+      "series": "smt"
+    },
+    {
       "name": "Patra",
       "devName": "patra",
       "affinity": "Recovery",
@@ -26737,6 +28798,29 @@
       "buffs": [],
       "revive": false,
       "negate": false
+    },
+    {
+      "name": "Pestilence",
+      "devName": "pestilence",
+      "affinity": "Phys",
+      "type": "ATTACK",
+      "unique": true,
+      "range": 0,
+      "cost": {
+        "type": "SP",
+        "amount": 50
+      },
+      "power": {
+        "amount": 170,
+        "display": "Heavy"
+      },
+      "min": 1,
+      "max": 1,
+      "flags": [
+        "Afflicted Boost"
+      ],
+      "ailments": [],
+      "series": "smt"
     },
     {
       "name": "Phantom Snow",
@@ -26769,6 +28853,29 @@
       "unique": false,
       "amount": 20,
       "element": "Phys"
+    },
+    {
+      "name": "Pierce Armor",
+      "devName": "piercearmor",
+      "affinity": "Phys",
+      "type": "ATTACK",
+      "unique": false,
+      "range": 1,
+      "cost": {
+        "type": "SP",
+        "amount": 15
+      },
+      "power": {
+        "amount": 130,
+        "display": "Weak"
+      },
+      "min": 1,
+      "max": 1,
+      "flags": [
+        "Defense Down"
+      ],
+      "ailments": [],
+      "series": "smt"
     },
     {
       "name": "Poisma",
@@ -26842,6 +28949,29 @@
       "negate": false
     },
     {
+      "name": "Power Punch",
+      "devName": "powerpunch",
+      "affinity": "Phys",
+      "type": "ATTACK",
+      "unique": false,
+      "range": 1,
+      "cost": {
+        "type": "SP",
+        "amount": 40
+      },
+      "power": {
+        "amount": 155,
+        "display": "Medium"
+      },
+      "min": 1,
+      "max": 1,
+      "flags": [
+        "HP Dependent"
+      ],
+      "ailments": [],
+      "series": "smt"
+    },
+    {
       "name": "Power Slash",
       "devName": "powerslash",
       "affinity": "Phys",
@@ -26882,6 +29012,32 @@
       "flags": [],
       "ailments": [],
       "series": "persona"
+    },
+    {
+      "name": "Profaned Land",
+      "devName": "profanedland",
+      "affinity": "Dark",
+      "type": "ATTACK",
+      "unique": true,
+      "range": 1,
+      "cost": {
+        "type": "SP",
+        "amount": 35
+      },
+      "power": {
+        "amount": 240,
+        "display": "Heavy"
+      },
+      "min": 1,
+      "max": 1,
+      "flags": [],
+      "ailments": [
+        {
+          "name": "Poison",
+          "chance": 0
+        }
+      ],
+      "series": "smt"
     },
     {
       "name": "Psi",
@@ -27039,6 +29195,52 @@
       }
     },
     {
+      "name": "Puncture Punch",
+      "devName": "puncturepunch",
+      "affinity": "Phys",
+      "type": "ATTACK",
+      "unique": false,
+      "range": 1,
+      "cost": {
+        "type": "SP",
+        "amount": 15
+      },
+      "power": {
+        "amount": 150,
+        "display": "Medium"
+      },
+      "min": 1,
+      "max": 1,
+      "flags": [
+        "Pierce"
+      ],
+      "ailments": [],
+      "series": "smt"
+    },
+    {
+      "name": "Purple Smoke",
+      "devName": "purplesmoke",
+      "affinity": "Phys",
+      "type": "ATTACK",
+      "unique": false,
+      "range": 1,
+      "cost": {
+        "type": "SP",
+        "amount": 25
+      },
+      "power": {
+        "amount": 75,
+        "display": "Weak"
+      },
+      "min": 3,
+      "max": 3,
+      "flags": [
+        "Confused Boost"
+      ],
+      "ailments": [],
+      "series": "smt"
+    },
+    {
       "name": "Rage Boost",
       "devName": "rageboost",
       "affinity": "Passive",
@@ -27047,6 +29249,111 @@
       "ailment": "Rage",
       "amount": 25,
       "weather": false
+    },
+    {
+      "name": "Raging Blizzard",
+      "devName": "ragingblizzard",
+      "affinity": "Ice",
+      "type": "ATTACK",
+      "unique": true,
+      "range": 1,
+      "cost": {
+        "type": "SP",
+        "amount": 40
+      },
+      "power": {
+        "amount": 300,
+        "display": "Severe"
+      },
+      "min": 1,
+      "max": 1,
+      "flags": [],
+      "ailments": [],
+      "series": "smt"
+    },
+    {
+      "name": "Raging Hellfire",
+      "devName": "raginghellfire",
+      "affinity": "Fire",
+      "type": "ATTACK",
+      "unique": true,
+      "range": 1,
+      "cost": {
+        "type": "SP",
+        "amount": 40
+      },
+      "power": {
+        "amount": 300,
+        "display": "Severe"
+      },
+      "min": 1,
+      "max": 1,
+      "flags": [],
+      "ailments": [],
+      "series": "smt"
+    },
+    {
+      "name": "Raging Lightning",
+      "devName": "raginglightning",
+      "affinity": "Elec",
+      "type": "ATTACK",
+      "unique": true,
+      "range": 1,
+      "cost": {
+        "type": "SP",
+        "amount": 40
+      },
+      "power": {
+        "amount": 300,
+        "display": "Severe"
+      },
+      "min": 1,
+      "max": 1,
+      "flags": [],
+      "ailments": [],
+      "series": "smt"
+    },
+    {
+      "name": "Raging Tempest",
+      "devName": "ragingtempest",
+      "affinity": "Force",
+      "type": "ATTACK",
+      "unique": true,
+      "range": 1,
+      "cost": {
+        "type": "SP",
+        "amount": 40
+      },
+      "power": {
+        "amount": 300,
+        "display": "Severe"
+      },
+      "min": 1,
+      "max": 1,
+      "flags": [],
+      "ailments": [],
+      "series": "smt"
+    },
+    {
+      "name": "Ragnarok",
+      "devName": "ragnarok",
+      "affinity": "Fire",
+      "type": "ATTACK",
+      "unique": false,
+      "range": 2,
+      "cost": {
+        "type": "SP",
+        "amount": 60
+      },
+      "power": {
+        "amount": 150,
+        "display": "Medium"
+      },
+      "min": 2,
+      "max": 5,
+      "flags": [],
+      "ailments": [],
+      "series": "smt"
     },
     {
       "name": "Rainy Death",
@@ -27536,6 +29843,72 @@
       "series": "persona"
     },
     {
+      "name": "Ruinous Thunder",
+      "devName": "ruinousthunder",
+      "affinity": "Elec",
+      "type": "ATTACK",
+      "unique": true,
+      "range": 1,
+      "cost": {
+        "type": "SP",
+        "amount": 20
+      },
+      "power": {
+        "amount": 200,
+        "display": "Heavy"
+      },
+      "min": 1,
+      "max": 1,
+      "flags": [],
+      "ailments": [],
+      "series": "smt"
+    },
+    {
+      "name": "Sacrifice of Clay",
+      "devName": "sacrificeofclay",
+      "affinity": "Force",
+      "type": "ATTACK",
+      "unique": true,
+      "range": 0,
+      "cost": {
+        "type": "SP",
+        "amount": 50
+      },
+      "power": {
+        "amount": 140,
+        "display": "Heavy"
+      },
+      "min": 1,
+      "max": 1,
+      "flags": [
+        "Defense Down",
+        "Attack Down"
+      ],
+      "ailments": [],
+      "series": "smt"
+    },
+    {
+      "name": "Sakanagi",
+      "devName": "sakanagi",
+      "affinity": "Almighty",
+      "type": "ATTACK",
+      "unique": true,
+      "range": 1,
+      "cost": {
+        "type": "SP",
+        "amount": 20
+      },
+      "power": {
+        "amount": 230,
+        "display": "Medium"
+      },
+      "min": 1,
+      "max": 1,
+      "flags": [],
+      "ailments": [],
+      "series": "smt"
+    },
+    {
       "name": "Salvation",
       "devName": "salvation",
       "affinity": "Recovery",
@@ -27575,6 +29948,73 @@
       "cost": 44,
       "amount": 60,
       "display": "High"
+    },
+    {
+      "name": "Sanguine Drain",
+      "devName": "sanguinedrain",
+      "affinity": "Almighty",
+      "type": "ATTACK",
+      "unique": true,
+      "range": 1,
+      "cost": {
+        "type": "SP",
+        "amount": 15
+      },
+      "power": {
+        "amount": 120,
+        "display": "Weak"
+      },
+      "min": 1,
+      "max": 1,
+      "flags": [
+        "Attack Down"
+      ],
+      "ailments": [],
+      "series": "smt"
+    },
+    {
+      "name": "Scratch Dance",
+      "devName": "scratchdance",
+      "affinity": "Phys",
+      "type": "ATTACK",
+      "unique": false,
+      "range": 2,
+      "cost": {
+        "type": "SP",
+        "amount": 12
+      },
+      "power": {
+        "amount": 85,
+        "display": "Weak"
+      },
+      "min": 2,
+      "max": 4,
+      "flags": [],
+      "ailments": [],
+      "series": "smt"
+    },
+    {
+      "name": "Severing Bite",
+      "devName": "severingbite",
+      "affinity": "Phys",
+      "type": "ATTACK",
+      "unique": false,
+      "range": 1,
+      "cost": {
+        "type": "SP",
+        "amount": 25
+      },
+      "power": {
+        "amount": 190,
+        "display": "Heavy"
+      },
+      "min": 1,
+      "max": 1,
+      "flags": [
+        "Crit Damage Boost"
+      ],
+      "ailments": [],
+      "series": "smt"
     },
     {
       "name": "Sharp Student",
@@ -27622,6 +30062,50 @@
       "ailment": "Shock",
       "amount": 25,
       "weather": false
+    },
+    {
+      "name": "Shockbound",
+      "devName": "shockbound",
+      "affinity": "Elec",
+      "type": "ATTACK",
+      "unique": false,
+      "range": 2,
+      "cost": {
+        "type": "SP",
+        "amount": 25
+      },
+      "power": {
+        "amount": 90,
+        "display": "Weak"
+      },
+      "min": 2,
+      "max": 5,
+      "flags": [],
+      "ailments": [],
+      "series": "smt"
+    },
+    {
+      "name": "Silt of Ruin",
+      "devName": "siltofruin",
+      "affinity": "Almighty",
+      "type": "ATTACK",
+      "unique": true,
+      "range": 0,
+      "cost": {
+        "type": "SP",
+        "amount": 45
+      },
+      "power": {
+        "amount": 140,
+        "display": "Medium"
+      },
+      "min": 1,
+      "max": 1,
+      "flags": [
+        "Accuracy/Evasion Down"
+      ],
+      "ailments": [],
+      "series": "smt"
     },
     {
       "name": "Skewer",
@@ -27739,6 +30223,29 @@
       "element": "Gun"
     },
     {
+      "name": "Somersault",
+      "devName": "somersault",
+      "affinity": "Phys",
+      "type": "ATTACK",
+      "unique": true,
+      "range": 1,
+      "cost": {
+        "type": "SP",
+        "amount": 35
+      },
+      "power": {
+        "amount": 160,
+        "display": "Weak"
+      },
+      "min": 1,
+      "max": 1,
+      "flags": [
+        "Defense Greatly Down"
+      ],
+      "ailments": [],
+      "series": "smt"
+    },
+    {
       "name": "Sonic Punch",
       "devName": "sonicpunch",
       "affinity": "Phys",
@@ -27758,6 +30265,27 @@
       "flags": [],
       "ailments": [],
       "series": "persona"
+    },
+    {
+      "name": "Souffle D'éclair",
+      "devName": "souffledeclair",
+      "affinity": "Elec",
+      "type": "ATTACK",
+      "unique": true,
+      "range": 1,
+      "cost": {
+        "type": "SP",
+        "amount": 55
+      },
+      "power": {
+        "amount": 330,
+        "display": "Severe"
+      },
+      "min": 1,
+      "max": 1,
+      "flags": [],
+      "ailments": [],
+      "series": "smt"
     },
     {
       "name": "Soul Break",
@@ -27784,6 +30312,34 @@
       "percent": false,
       "ambush": false,
       "baton": true
+    },
+    {
+      "name": "Soul Divide",
+      "devName": "souldivide",
+      "affinity": "Almighty",
+      "type": "ATTACK",
+      "unique": true,
+      "range": 0,
+      "cost": {
+        "type": "SP",
+        "amount": 50
+      },
+      "power": {
+        "amount": 230,
+        "display": "Severe"
+      },
+      "min": 1,
+      "max": 1,
+      "flags": [
+        "Half Accuracy"
+      ],
+      "ailments": [
+        {
+          "name": "Seal",
+          "chance": 40
+        }
+      ],
+      "series": "smt"
     },
     {
       "name": "Soul Touch",
@@ -27838,6 +30394,69 @@
       "affinity": "Passive",
       "type": "NAVI",
       "unique": false
+    },
+    {
+      "name": "Steel Needle",
+      "devName": "steelneedle",
+      "affinity": "Phys",
+      "type": "ATTACK",
+      "unique": false,
+      "range": 1,
+      "cost": {
+        "type": "SP",
+        "amount": 25
+      },
+      "power": {
+        "amount": 75,
+        "display": "Medium"
+      },
+      "min": 1,
+      "max": 4,
+      "flags": [],
+      "ailments": [],
+      "series": "smt"
+    },
+    {
+      "name": "Stormcaller Song",
+      "devName": "stormcallersong",
+      "affinity": "Ice",
+      "type": "ATTACK",
+      "unique": true,
+      "range": 2,
+      "cost": {
+        "type": "SP",
+        "amount": 18
+      },
+      "power": {
+        "amount": 60,
+        "display": "Weak"
+      },
+      "min": 3,
+      "max": 6,
+      "flags": [],
+      "ailments": [],
+      "series": "smt"
+    },
+    {
+      "name": "Storm Dracostrike",
+      "devName": "stormdracostrike",
+      "affinity": "Elec",
+      "type": "ATTACK",
+      "unique": false,
+      "range": 1,
+      "cost": {
+        "type": "SP",
+        "amount": 25
+      },
+      "power": {
+        "amount": 200,
+        "display": "Medium"
+      },
+      "min": 1,
+      "max": 1,
+      "flags": [],
+      "ailments": [],
+      "series": "smt"
     },
     {
       "name": "Subrecover HP",
@@ -27953,11 +30572,32 @@
       },
       "min": 1,
       "max": 1,
-      "flags": [
-        "Crit Boost"
-      ],
+      "flags": [],
       "ailments": [],
       "series": "persona"
+    },
+    {
+      "name": "Tandava",
+      "devName": "tandava",
+      "affinity": "Almighty",
+      "type": "ATTACK",
+      "unique": true,
+      "range": 0,
+      "cost": {
+        "type": "SP",
+        "amount": 160
+      },
+      "power": {
+        "amount": 230,
+        "display": "Severe"
+      },
+      "min": 1,
+      "max": 1,
+      "flags": [
+        "Minimize Defense"
+      ],
+      "ailments": [],
+      "series": "smt"
     },
     {
       "name": "Tarukaja",
@@ -28049,6 +30689,34 @@
       }
     },
     {
+      "name": "Terrorblade",
+      "devName": "terrorblade",
+      "affinity": "Phys",
+      "type": "ATTACK",
+      "unique": true,
+      "range": 2,
+      "cost": {
+        "type": "SP",
+        "amount": 35
+      },
+      "power": {
+        "amount": 250,
+        "display": "Heavy"
+      },
+      "min": 1,
+      "max": 3,
+      "flags": [
+        "Pierce"
+      ],
+      "ailments": [
+        {
+          "name": "Confuse",
+          "chance": 50
+        }
+      ],
+      "series": "smt"
+    },
+    {
       "name": "Terror Claw",
       "devName": "terrorclaw",
       "affinity": "Phys",
@@ -28107,6 +30775,27 @@
       "barriers": [
         "Tetrakarn"
       ]
+    },
+    {
+      "name": "Thalassic Calamity",
+      "devName": "thalassiccalamity",
+      "affinity": "Ice",
+      "type": "ATTACK",
+      "unique": true,
+      "range": 2,
+      "cost": {
+        "type": "SP",
+        "amount": 45
+      },
+      "power": {
+        "amount": 95,
+        "display": "Weak"
+      },
+      "min": 3,
+      "max": 7,
+      "flags": [],
+      "ailments": [],
+      "series": "smt"
     },
     {
       "name": "The Man\"s Way",
@@ -28213,6 +30902,58 @@
       "cost": 0
     },
     {
+      "name": "Toxic Breath",
+      "devName": "toxicbreath",
+      "affinity": "Dark",
+      "type": "ATTACK",
+      "unique": true,
+      "range": 0,
+      "cost": {
+        "type": "SP",
+        "amount": 30
+      },
+      "power": {
+        "amount": 120,
+        "display": "Medium"
+      },
+      "min": 1,
+      "max": 1,
+      "flags": [],
+      "ailments": [
+        {
+          "name": "Poison",
+          "chance": 50
+        }
+      ],
+      "series": "smt"
+    },
+    {
+      "name": "Toxic Sting",
+      "devName": "toxicsting",
+      "affinity": "Phys",
+      "type": "ATTACK",
+      "unique": false,
+      "range": 1,
+      "cost": {
+        "type": "SP",
+        "amount": 10
+      },
+      "power": {
+        "amount": 110,
+        "display": "Weak"
+      },
+      "min": 1,
+      "max": 1,
+      "flags": [],
+      "ailments": [
+        {
+          "name": "Poison",
+          "chance": 60
+        }
+      ],
+      "series": "smt"
+    },
+    {
       "name": "Traesto",
       "devName": "traesto",
       "affinity": "Support",
@@ -28270,6 +31011,29 @@
       "flags": [],
       "ailments": [],
       "series": "persona"
+    },
+    {
+      "name": "Trisagion",
+      "devName": "trisagion",
+      "affinity": "Fire",
+      "type": "ATTACK",
+      "unique": false,
+      "range": 1,
+      "cost": {
+        "type": "SP",
+        "amount": 65
+      },
+      "power": {
+        "amount": 230,
+        "display": "Heavy"
+      },
+      "min": 1,
+      "max": 1,
+      "flags": [
+        "Pierce"
+      ],
+      "ailments": [],
+      "series": "smt"
     },
     {
       "name": "Tyrant\"s Mind",
@@ -28358,6 +31122,29 @@
       ]
     },
     {
+      "name": "Venom Chaser",
+      "devName": "venomchaser",
+      "affinity": "Phys",
+      "type": "ATTACK",
+      "unique": false,
+      "range": 1,
+      "cost": {
+        "type": "SP",
+        "amount": 15
+      },
+      "power": {
+        "amount": 160,
+        "display": "Weak"
+      },
+      "min": 1,
+      "max": 1,
+      "flags": [
+        "Poisoned Boost"
+      ],
+      "ailments": [],
+      "series": "smt"
+    },
+    {
       "name": "Vicious Strike",
       "devName": "viciousstrike",
       "affinity": "Phys",
@@ -28419,6 +31206,32 @@
       ],
       "ailments": [],
       "series": "persona"
+    },
+    {
+      "name": "Violent Rage",
+      "devName": "violentrage",
+      "affinity": "Almighty",
+      "type": "ATTACK",
+      "unique": true,
+      "range": 0,
+      "cost": {
+        "type": "SP",
+        "amount": 60
+      },
+      "power": {
+        "amount": 150,
+        "display": "Medium"
+      },
+      "min": 1,
+      "max": 1,
+      "flags": [],
+      "ailments": [
+        {
+          "name": "Seal",
+          "chance": 40
+        }
+      ],
+      "series": "smt"
     },
     {
       "name": "Virus Wave",
@@ -28483,11 +31296,57 @@
       }
     },
     {
+      "name": "Walpurgisnacht",
+      "devName": "walpurgisnacht",
+      "affinity": "Dark",
+      "type": "ATTACK",
+      "unique": true,
+      "range": 1,
+      "cost": {
+        "type": "SP",
+        "amount": 40
+      },
+      "power": {
+        "amount": 300,
+        "display": "Severe"
+      },
+      "min": 1,
+      "max": 1,
+      "flags": [
+        "Weakness Instakill"
+      ],
+      "ailments": [],
+      "series": "smt"
+    },
+    {
       "name": "Weakness Scan",
       "devName": "weaknessscan",
       "affinity": "Passive",
       "type": "NAVI",
       "unique": false
+    },
+    {
+      "name": "White Dracostrike",
+      "devName": "whitedracostrike",
+      "affinity": "Light",
+      "type": "ATTACK",
+      "unique": false,
+      "range": 1,
+      "cost": {
+        "type": "SP",
+        "amount": 30
+      },
+      "power": {
+        "amount": 200,
+        "display": "Medium"
+      },
+      "min": 1,
+      "max": 1,
+      "flags": [
+        "Weakness Instakill"
+      ],
+      "ailments": [],
+      "series": "smt"
     },
     {
       "name": "Wild Thunder",
@@ -28544,6 +31403,48 @@
       "element": "Wind"
     },
     {
+      "name": "Wind Breath",
+      "devName": "windbreath",
+      "affinity": "Force",
+      "type": "ATTACK",
+      "unique": false,
+      "range": 2,
+      "cost": {
+        "type": "SP",
+        "amount": 25
+      },
+      "power": {
+        "amount": 90,
+        "display": "Weak"
+      },
+      "min": 2,
+      "max": 5,
+      "flags": [],
+      "ailments": [],
+      "series": "smt"
+    },
+    {
+      "name": "Wind Dracostrike",
+      "devName": "winddracostrike",
+      "affinity": "Force",
+      "type": "ATTACK",
+      "unique": false,
+      "range": 1,
+      "cost": {
+        "type": "SP",
+        "amount": 25
+      },
+      "power": {
+        "amount": 200,
+        "display": "Medium"
+      },
+      "min": 1,
+      "max": 1,
+      "flags": [],
+      "ailments": [],
+      "series": "smt"
+    },
+    {
       "name": "Wind Wall",
       "devName": "windwall",
       "affinity": "Support",
@@ -28551,6 +31452,52 @@
       "unique": false,
       "cost": 18,
       "element": "Wind"
+    },
+    {
+      "name": "Wrath Tempest",
+      "devName": "wrathtempest",
+      "affinity": "Phys",
+      "type": "ATTACK",
+      "unique": true,
+      "range": 2,
+      "cost": {
+        "type": "SP",
+        "amount": 35
+      },
+      "power": {
+        "amount": 30,
+        "display": "Weak"
+      },
+      "min": 8,
+      "max": 8,
+      "flags": [
+        "Crit Damage Boost"
+      ],
+      "ailments": [],
+      "series": "smt"
+    },
+    {
+      "name": "Yabusame Shot",
+      "devName": "yabusameshot",
+      "affinity": "Phys",
+      "type": "ATTACK",
+      "unique": false,
+      "range": 0,
+      "cost": {
+        "type": "SP",
+        "amount": 50
+      },
+      "power": {
+        "amount": 60,
+        "display": "Weak"
+      },
+      "min": 1,
+      "max": 1,
+      "flags": [
+        "Pierce"
+      ],
+      "ailments": [],
+      "series": "smt"
     },
     {
       "name": "Youthful Wind",
@@ -28569,6 +31516,90 @@
       "negate": false
     },
     {
+      "name": "Zan",
+      "devName": "zan",
+      "affinity": "Force",
+      "type": "ATTACK",
+      "unique": false,
+      "range": 1,
+      "cost": {
+        "type": "SP",
+        "amount": 10
+      },
+      "power": {
+        "amount": 130,
+        "display": "Weak"
+      },
+      "min": 1,
+      "max": 1,
+      "flags": [],
+      "ailments": [],
+      "series": "smt"
+    },
+    {
+      "name": "Zanbarion",
+      "devName": "zanbarion",
+      "affinity": "Force",
+      "type": "ATTACK",
+      "unique": false,
+      "range": 1,
+      "cost": {
+        "type": "SP",
+        "amount": 50
+      },
+      "power": {
+        "amount": 265,
+        "display": "Severe"
+      },
+      "min": 1,
+      "max": 1,
+      "flags": [],
+      "ailments": [],
+      "series": "smt"
+    },
+    {
+      "name": "Zandyne",
+      "devName": "zandyne",
+      "affinity": "Force",
+      "type": "ATTACK",
+      "unique": false,
+      "range": 1,
+      "cost": {
+        "type": "SP",
+        "amount": 35
+      },
+      "power": {
+        "amount": 215,
+        "display": "Heavy"
+      },
+      "min": 1,
+      "max": 1,
+      "flags": [],
+      "ailments": [],
+      "series": "smt"
+    },
+    {
+      "name": "Zanma",
+      "devName": "zanma",
+      "affinity": "Force",
+      "type": "ATTACK",
+      "unique": false,
+      "range": 1,
+      "cost": {
+        "type": "SP",
+        "amount": 20
+      },
+      "power": {
+        "amount": 160,
+        "display": "Medium"
+      },
+      "min": 1,
+      "max": 1,
+      "flags": [],
+      "ailments": [],
+      "series": "smt"
+    },
+    {
       "name": "Zio",
       "devName": "zio",
       "affinity": "Elec",
@@ -28582,6 +31613,27 @@
       "power": {
         "amount": 130,
         "display": "Weak"
+      },
+      "min": 1,
+      "max": 1,
+      "flags": [],
+      "ailments": [],
+      "series": "smt"
+    },
+    {
+      "name": "Ziobarion",
+      "devName": "ziobarion",
+      "affinity": "Elec",
+      "type": "ATTACK",
+      "unique": false,
+      "range": 1,
+      "cost": {
+        "type": "SP",
+        "amount": 50
+      },
+      "power": {
+        "amount": 265,
+        "display": "Severe"
       },
       "min": 1,
       "max": 1,
