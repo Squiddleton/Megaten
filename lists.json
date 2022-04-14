@@ -19073,7 +19073,7 @@
           "level": 30
         },
         {
-          "name": "Brainwash Boost",
+          "name": "Charm Boost",
           "level": 31
         },
         {
@@ -22693,7 +22693,7 @@
       "flags": [],
       "ailments": [
         {
-          "name": "Brainwash",
+          "name": "Charm",
           "chance": 5
         }
       ],
@@ -22719,19 +22719,19 @@
       "flags": [],
       "ailments": [
         {
-          "name": "Brainwash",
+          "name": "Charm",
           "chance": 20
         }
       ],
       "series": "persona"
     },
     {
-      "name": "Brainwash Boost",
-      "devName": "brainwashboost",
+      "name": "Charm Boost",
+      "devName": "charmboost",
       "affinity": "Passive",
       "type": "AILBOOST",
       "unique": false,
-      "ailment": "Brainwash",
+      "ailment": "Charm",
       "amount": 25,
       "weather": false
     },
@@ -23011,7 +23011,7 @@
       "range": 1,
       "cost": 5,
       "ailments": [
-        "Brainwash"
+        "Charm"
       ],
       "amount": null,
       "buffs": [],
@@ -24450,7 +24450,7 @@
         "Fear",
         "Despair",
         "Rage",
-        "Brainwash"
+        "Charm"
       ],
       "amount": null,
       "buffs": [],
@@ -24469,7 +24469,7 @@
         "Fear",
         "Despair",
         "Rage",
-        "Brainwash"
+        "Charm"
       ],
       "amount": null,
       "buffs": [],
@@ -29041,12 +29041,12 @@
       "element": "Nuke"
     },
     {
-      "name": "Null Brainwash",
-      "devName": "nullbrainwash",
+      "name": "Null Charm",
+      "devName": "nullcharm",
       "affinity": "Passive",
       "type": "AILDEFENSIVE",
       "unique": false,
-      "ailment": "Brainwash",
+      "ailment": "Charm",
       "resistance": "Null"
     },
     {
@@ -30237,12 +30237,12 @@
       "newAffinity": "Repel"
     },
     {
-      "name": "Resist Brainwash",
-      "devName": "resistbrainwash",
+      "name": "Resist Charm",
+      "devName": "resistcharm",
       "affinity": "Passive",
       "type": "AILDEFENSIVE",
       "unique": false,
-      "ailment": "Brainwash",
+      "ailment": "Charm",
       "resistance": "Resist"
     },
     {
