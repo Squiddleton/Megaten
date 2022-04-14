@@ -135,7 +135,7 @@ export class AttackSkill extends BaseSkill {
     constructor(data: AttackSkillData);
     affinity: Element;
     type: 'ATTACK';
-    range: Range;
+    range: Range | 2;
     cost: {
         type: HPMP;
         amount: number;
@@ -154,7 +154,7 @@ export class AttackSkill extends BaseSkill {
 export interface AttackSkillData extends BaseSkillData {
     affinity: Element;
     type: 'ATTACK';
-    range: Range;
+    range: Range | 2;
     cost: {
         type: HPMP;
         amount: number;
