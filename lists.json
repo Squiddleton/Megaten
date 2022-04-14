@@ -31860,7 +31860,7 @@
       "affinity": "Passive",
       "type": "AILDEFENSIVE",
       "unique": false,
-      "ailment": "MENTAL",
+      "ailment": "Confuse/Fear/Rage/Despair",
       "resistance": "Null"
     },
     {
