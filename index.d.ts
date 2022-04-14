@@ -82,7 +82,7 @@ export class AilBoostSkill extends BaseSkill {
     constructor(data: AilBoostSkillData);
     affinity: 'Passive';
     type: 'AILBOOST';
-    ailment: string;
+    ailment: Ailment | 'ALL';
     amount: number;
     weather: boolean;
 }
@@ -90,7 +90,7 @@ export class AilBoostSkill extends BaseSkill {
 export interface AilBoostSkillData extends BaseSkillData {
     affinity: 'Passive';
     type: 'AILBOOST';
-    ailment: string;
+    ailment: Ailment | 'ALL';
     amount: number;
     weather: boolean;
 }
@@ -99,14 +99,14 @@ export class AilDefensiveSkill extends BaseSkill {
     constructor(data: AilDefensiveSkillData);
     affinity: 'Passive';
     type: 'AILDEFENSIVE';
-    ailment: string;
+    ailment: Ailment | 'ALL' | 'Confuse/Fear/Rage/Despair';
     resistance: AilResistance;
 }
 
 export interface AilDefensiveSkillData extends BaseSkillData {
     affinity: 'Passive';
     type: 'AILDEFENSIVE';
-    ailment: string;
+    ailment: Ailment | 'ALL' | 'Confuse/Fear/Rage/Despair';
     resistance: AilResistance;
 }
 
@@ -116,7 +116,7 @@ export class AilmentSkill extends BaseSkill {
     type: 'AILMENT';
     range: Range;
     cost: number;
-    ailments: string[];
+    ailments: Ailment[];
     chance: number;
     flags: string[];
 }
@@ -126,7 +126,7 @@ export interface AilmentSkillData extends BaseSkillData {
     type: 'AILMENT';
     range: Range;
     cost: number;
-    ailments: string[];
+    ailments: Ailment[];
     chance: number;
     flags: string[];
 }
@@ -147,7 +147,11 @@ export class AttackSkill extends BaseSkill {
     min: number;
     max: number;
     flags: string[];
-    ailments: Ailment[];
+    ailments: {
+        name: Ailment;
+        chance: number;
+
+    }[];
     series: Series;
 }
 
@@ -166,7 +170,10 @@ export interface AttackSkillData extends BaseSkillData {
     min: number;
     max: number;
     flags: string[];
-    ailments: Ailment[];
+    ailments: {
+        name: Ailment;
+        chance: number;
+    }[];
     series: Series;
 }
 
@@ -294,14 +301,14 @@ export class CritSkill extends BaseSkill {
     constructor(data: CritSkillData);
     affinity: 'Support';
     type: 'CRIT';
-    range: 'ALL' | 'ALLY' | 'PARTY';
+    range: 'ALLY' | 'PARTY' | 'ALL';
     cost: number;
 }
 
 export interface CritSkillData extends BaseSkillData {
     affinity: 'Support';
     type: 'CRIT';
-    range: 'ALL' | 'ALLY' | 'PARTY';
+    range: 'ALLY' | 'PARTY' | 'ALL';
     cost: number;
 }
 
@@ -460,7 +467,7 @@ export class RecoverySkill extends BaseSkill {
     range: Range;
     cost: number;
     amount: string | null;
-    ailments: string[];
+    ailments: (Ailment | 'ALL')[];
     buffs: Buff[];
     flags: string[];
 }
@@ -471,7 +478,7 @@ export interface RecoverySkillData extends BaseSkillData {
     range: Range;
     cost: number;
     amount: string | null;
-    ailments: string[];
+    ailments: (Ailment | 'ALL')[];
     buffs: Buff[];
     flags: string[];
 }
@@ -638,6 +645,8 @@ export declare const version: string;
 /** A utility function that removes accents, replaces "&" with "and", and removes non-alphanumeric characters */
 export function noPunc(str: string): string;
 
+export type Ailment = 'Burn' | 'Charm' | 'Confuse' | 'Despair' | 'Enervation' | 'Exhaustion' | 'Fear' | 'Freeze' | 'Mirage' | 'Poison' | 'Rage' | 'Seal' | 'Shock' | 'Sleep';
+
 export type AilResistance = 'Resist' | 'Null'
 export type Resistance = AilResistance | 'Drain' | 'Repel';
 
@@ -683,11 +692,6 @@ export type SkillData = AilBoostSkillData | AilDefensiveSkillData | AilmentSkill
 export type SkillType = 'AILBOOST' | 'AILDEFENSIVE' | 'AILMENT' | 'ATTACK' | 'AUTOBUFF' | 'BARRIER' | 'BARRIERBREAK' | 'BLOCK' | 'BOOST'
     | 'BREAK' | 'CHARGE' | 'CRIT' |'CRITBOOST' | 'DEFENSIVE' | 'ENDURE' | 'EVASION' | 'HALVE'
     | 'INSTAKILLBOOST' | 'MASTER' | 'MISC' | 'NAVI' | 'PERSONACOUNTER' | 'POSTBATTLE' | 'RECOVERY' | 'REGEN' | 'SIPHON' | 'SMTCOUNTER' | 'SPRING' | 'SUPPORT' | 'SUSCEPTIBILITY' | 'TAUNT' | 'WALL';
-    
-export interface Ailment {
-    name: string;
-    chance: number;
-}
 
 export interface Learnset {
     name: string;
