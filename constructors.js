@@ -105,9 +105,6 @@ class BaseSkill {
 		case 'HALVE': {
 			return 'Half remaining HP of one foe.';
 		}
-		case 'INSTAKILL': {
-			return `${this.display} chance of instantly killing ${this.range ? 'one foe' : 'all foes'}.`;
-		}
 		case 'INSTAKILLBOOST': {
 			return `Increases success rate of instant death by ${this.element} skills.`;
 		}
@@ -348,20 +345,6 @@ module.exports.HalveSkill = class extends BaseSkill {
 		this.cost = data.cost;
 	}
 };
-module.exports.InstaKillSkill = class extends BaseSkill {
-	/**
-	 * @param {import('./index').InstaKillSkillData} data
-	 */
-	constructor(data) {
-		super(data);
-		this.affinity = data.affinity;
-		this.type = data.type;
-		this.range = data.range;
-		this.cost = data.cost;
-		this.amount = data.amount;
-		this.display = data.display;
-	}
-};
 module.exports.InstaKillBoostSkill = class extends BaseSkill {
 	/**
 	 * @param {import('./index').InstaKillBoostSkillData} data
@@ -566,7 +549,6 @@ module.exports.dataToClass = data => {
 	case 'ENDURE': return new this.EndureSkill(data);
 	case 'EVASION': return new this.EvasionSkill(data);
 	case 'HALVE': return new this.HalveSkill(data);
-	case 'INSTAKILL': return new this.InstaKillSkill(data);
 	case 'INSTAKILLBOOST': return new this.InstaKillBoostSkill(data);
 	case 'MASTER': return new this.MasterSkill(data);
 	case 'MISC': return new this.MiscSkill(data);

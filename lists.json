@@ -23675,12 +23675,24 @@
       "name": "Die For Me!",
       "devName": "dieforme",
       "affinity": "Dark",
-      "type": "INSTAKILL",
+      "type": "ATTACK",
       "unique": true,
-      "range": 0,
-      "cost": 44,
-      "amount": 60,
-      "display": "High"
+      "range": 2,
+      "cost": {
+        "type": "MP",
+        "amount": 35
+      },
+      "power": {
+        "amount": 120,
+        "display": "Medium"
+      },
+      "min": 2,
+      "max": 5,
+      "flags": [
+        "Weakness Instakill"
+      ],
+      "ailments": [],
+      "series": "smt"
     },
     {
       "name": "Divine Arrowfall",
@@ -24387,6 +24399,14 @@
       "affinity": "Passive",
       "type": "NAVI",
       "unique": false
+    },
+    {
+      "name": "Estoma",
+      "devName": "estoma",
+      "affinity": "Support",
+      "type": "MISC",
+      "unique": false,
+      "cost": 35
     },
     {
       "name": "Eternal Blizzard",
@@ -25560,12 +25580,24 @@
       "name": "Hama",
       "devName": "hama",
       "affinity": "Light",
-      "type": "INSTAKILL",
+      "type": "ATTACK",
       "unique": false,
       "range": 1,
-      "cost": 8,
-      "amount": 30,
-      "display": "Low"
+      "cost": {
+        "type": "MP",
+        "amount": 15
+      },
+      "power": {
+        "amount": 140,
+        "display": "Weak"
+      },
+      "min": 1,
+      "max": 1,
+      "flags": [
+        "Weakness Instakill"
+      ],
+      "ailments": [],
+      "series": "smt"
     },
     {
       "name": "Hamabarion",
@@ -25602,12 +25634,24 @@
       "name": "Hamaon",
       "devName": "hamaon",
       "affinity": "Light",
-      "type": "INSTAKILL",
+      "type": "ATTACK",
       "unique": false,
       "range": 1,
-      "cost": 15,
-      "amount": 40,
-      "display": "Medium"
+      "cost": {
+        "type": "MP",
+        "amount": 25
+      },
+      "power": {
+        "amount": 175,
+        "display": "Heavy"
+      },
+      "min": 1,
+      "max": 1,
+      "flags": [
+        "Weakness Instakill"
+      ],
+      "ailments": [],
+      "series": "smt"
     },
     {
       "name": "Harvest Dance",
@@ -27251,12 +27295,24 @@
       "name": "Mahama",
       "devName": "mahama",
       "affinity": "Light",
-      "type": "INSTAKILL",
+      "type": "ATTACK",
       "unique": false,
       "range": 0,
-      "cost": 18,
-      "amount": 30,
-      "display": "Low"
+      "cost": {
+        "type": "MP",
+        "amount": 25
+      },
+      "power": {
+        "amount": 105,
+        "display": "Weak"
+      },
+      "min": 1,
+      "max": 1,
+      "flags": [
+        "Weakness Instakill"
+      ],
+      "ailments": [],
+      "series": "smt"
     },
     {
       "name": "Mahamabarion",
@@ -27285,12 +27341,24 @@
       "name": "Mahamaon",
       "devName": "mahamaon",
       "affinity": "Light",
-      "type": "INSTAKILL",
+      "type": "ATTACK",
       "unique": false,
       "range": 0,
-      "cost": 34,
-      "amount": 40,
-      "display": "Medium"
+      "cost": {
+        "type": "MP",
+        "amount": 40
+      },
+      "power": {
+        "amount": 135,
+        "display": "Heavy"
+      },
+      "min": 1,
+      "max": 1,
+      "flags": [
+        "Weakness Instakill"
+      ],
+      "ailments": [],
+      "series": "smt"
     },
     {
       "name": "Makajama",
@@ -27408,12 +27476,24 @@
       "name": "Mamudo",
       "devName": "mamudo",
       "affinity": "Dark",
-      "type": "INSTAKILL",
+      "type": "ATTACK",
       "unique": false,
       "range": 0,
-      "cost": 15,
-      "amount": 30,
-      "display": "Low"
+      "cost": {
+        "type": "MP",
+        "amount": 25
+      },
+      "power": {
+        "amount": 105,
+        "display": "Weak"
+      },
+      "min": 1,
+      "max": 1,
+      "flags": [
+        "Weakness Instakill"
+      ],
+      "ailments": [],
+      "series": "smt"
     },
     {
       "name": "Mamudobarion",
@@ -27442,12 +27522,24 @@
       "name": "Mamudoon",
       "devName": "mamudoon",
       "affinity": "Dark",
-      "type": "INSTAKILL",
+      "type": "ATTACK",
       "unique": false,
       "range": 0,
-      "cost": 34,
-      "amount": 40,
-      "display": "Medium"
+      "cost": {
+        "type": "MP",
+        "amount": 40
+      },
+      "power": {
+        "amount": 135,
+        "display": "Heavy"
+      },
+      "min": 1,
+      "max": 1,
+      "flags": [
+        "Weakness Instakill"
+      ],
+      "ailments": [],
+      "series": "smt"
     },
     {
       "name": "Mana Spring",
@@ -28394,12 +28486,24 @@
       "name": "Mudo",
       "devName": "mudo",
       "affinity": "Dark",
-      "type": "INSTAKILL",
+      "type": "ATTACK",
       "unique": false,
       "range": 1,
-      "cost": 8,
-      "amount": 30,
-      "display": "Low"
+      "cost": {
+        "type": "MP",
+        "amount": 15
+      },
+      "power": {
+        "amount": 140,
+        "display": "Weak"
+      },
+      "min": 1,
+      "max": 1,
+      "flags": [
+        "Weakness Instakill"
+      ],
+      "ailments": [],
+      "series": "smt"
     },
     {
       "name": "Mudobarion",
@@ -28436,12 +28540,24 @@
       "name": "Mudoon",
       "devName": "mudoon",
       "affinity": "Dark",
-      "type": "INSTAKILL",
+      "type": "ATTACK",
       "unique": false,
       "range": 1,
-      "cost": 15,
-      "amount": 40,
-      "display": "Medium"
+      "cost": {
+        "type": "MP",
+        "amount": 25
+      },
+      "power": {
+        "amount": 175,
+        "display": "Heavy"
+      },
+      "min": 1,
+      "max": 1,
+      "flags": [
+        "Weakness Instakill"
+      ],
+      "ailments": [],
+      "series": "smt"
     },
     {
       "name": "Murakumo",
@@ -30272,17 +30388,6 @@
       "flags": [
         "Revive"
       ]
-    },
-    {
-      "name": "Samsara",
-      "devName": "samsara",
-      "affinity": "Light",
-      "type": "INSTAKILL",
-      "unique": true,
-      "range": 0,
-      "cost": 44,
-      "amount": 60,
-      "display": "High"
     },
     {
       "name": "Sanguine Drain",
