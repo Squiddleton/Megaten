@@ -22900,6 +22900,23 @@
       "series": "smt"
     },
     {
+      "name": "Cautious Cheer",
+      "devName": "cautiouscheer",
+      "affinity": "Support",
+      "type": "SUPPORT",
+      "unique": true,
+      "range": 0,
+      "cost": 50,
+      "surround": false,
+      "buffs": [
+        "Defense",
+        "Agility"
+      ],
+      "negate": false,
+      "debuffs": [],
+      "auto": []
+    },
+    {
       "name": "Certain Escape",
       "devName": "certainescape",
       "affinity": "Passive",
@@ -26793,6 +26810,24 @@
       "series": "smt"
     },
     {
+      "name": "Luster Candy",
+      "devName": "lustercandy",
+      "affinity": "Support",
+      "type": "SUPPORT",
+      "unique": false,
+      "range": 0,
+      "cost": 150,
+      "surround": false,
+      "buffs": [
+        "Attack",
+        "Defense",
+        "Agility"
+      ],
+      "negate": false,
+      "debuffs": [],
+      "auto": []
+    },
+    {
       "name": "Mabaisudi",
       "devName": "mabaisudi",
       "affinity": "Recovery",
@@ -29723,6 +29758,22 @@
       "flags": [
         "Revive"
       ]
+    },
+    {
+      "name": "Red Capote",
+      "devName": "redcapote",
+      "affinity": "Support",
+      "type": "SUPPORT",
+      "unique": true,
+      "range": 1,
+      "cost": 8,
+      "surround": false,
+      "buffs": [
+        "Double Agility"
+      ],
+      "negate": false,
+      "debuffs": [],
+      "auto": []
     },
     {
       "name": "Regenerate 1",

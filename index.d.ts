@@ -478,7 +478,7 @@ export class RecoverySkill extends BaseSkill {
     cost: number;
     amount: string | null;
     ailments: string[];
-    buffs: (Buff | 'Double Defense')[];
+    buffs: Buff[];
     flags: string[];
 }
 
@@ -489,7 +489,7 @@ export interface RecoverySkillData extends BaseSkillData {
     cost: number;
     amount: string | null;
     ailments: string[];
-    buffs: (Buff | 'Double Defense')[];
+    buffs: Buff[];
     flags: string[];
 }
 
@@ -650,7 +650,7 @@ export type AttackDisplay = CounterDisplay | 'Minuscule' | 'Light' | 'Heavy' | '
 
 export type LightDark = 'Light' | 'Dark';
 
-export type Buff = 'Attack' | 'Defense' | 'Agility';
+export type Buff = 'Attack' | 'Defense' | 'Agility' | 'Double Defense' | 'Double Agility';
 
 export type ChanceDisplay = 'Low' | 'Medium' | 'High';
 
