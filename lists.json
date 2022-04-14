@@ -12756,7 +12756,7 @@
           "level": 92
         },
         {
-          "name": "Life Aid",
+          "name": "Light Life Aid",
           "level": 93
         },
         {
@@ -16499,7 +16499,7 @@
           "level": 81
         },
         {
-          "name": "Life Aid",
+          "name": "Light Life Aid",
           "level": 82
         }
       ],
@@ -26691,8 +26691,8 @@
       "range": 1,
       "xp": 0,
       "yen": 0,
-      "hp": 8,
-      "mp": 8
+      "hp": 50,
+      "mp": 0
     },
     {
       "name": "Life Drain",
@@ -26765,6 +26765,30 @@
       "unique": false,
       "amount": 25,
       "element": "Light"
+    },
+    {
+      "name": "Light Life Aid",
+      "devName": "lightlifeaid",
+      "affinity": "Passive",
+      "type": "POSTBATTLE",
+      "unique": false,
+      "range": 1,
+      "xp": 0,
+      "yen": 0,
+      "hp": 25,
+      "mp": 0
+    },
+    {
+      "name": "Light Mana Aid",
+      "devName": "lightmanaaid",
+      "affinity": "Passive",
+      "type": "POSTBATTLE",
+      "unique": false,
+      "range": 1,
+      "xp": 0,
+      "yen": 0,
+      "hp": 0,
+      "mp": 25
     },
     {
       "name": "Light Pleroma",
@@ -27541,6 +27565,18 @@
       ],
       "ailments": [],
       "series": "smt"
+    },
+    {
+      "name": "Mana Aid",
+      "devName": "manaaid",
+      "affinity": "Passive",
+      "type": "POSTBATTLE",
+      "unique": false,
+      "range": 1,
+      "xp": 0,
+      "yen": 0,
+      "hp": 0,
+      "mp": 50
     },
     {
       "name": "Mana Spring",
