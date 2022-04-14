@@ -26385,6 +26385,18 @@
       "cost": 25
     },
     {
+      "name": "Kannabi Veil",
+      "devName": "kannabiveil",
+      "affinity": "Support",
+      "type": "BARRIER",
+      "unique": true,
+      "range": 0,
+      "cost": 15,
+      "barriers": [
+        "Kannabi Veil"
+      ]
+    },
+    {
       "name": "Karnak",
       "devName": "karnak",
       "affinity": "Phys",
@@ -27282,7 +27294,7 @@
       "type": "BARRIER",
       "unique": false,
       "range": 1,
-      "cost": 36,
+      "cost": 50,
       "barriers": [
         "Makarkarn"
       ]
@@ -31108,7 +31120,7 @@
       "type": "BARRIER",
       "unique": false,
       "range": 1,
-      "cost": 36,
+      "cost": 50,
       "barriers": [
         "Tetrakarn"
       ]
