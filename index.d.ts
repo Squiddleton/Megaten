@@ -480,8 +480,8 @@ export class RecoverySkill extends BaseSkill {
     type: 'RECOVERY';
     range: Range;
     cost: number;
-    amount: number;
-    ailment: string[];
+    amount: string | null;
+    ailments: string[];
     buffs: Buff[];
     flags: string[];
 }
@@ -491,8 +491,8 @@ export interface RecoverySkillData extends BaseSkillData {
     type: 'RECOVERY';
     range: Range;
     cost: number;
-    amount: number;
-    ailment: string[];
+    amount: string | null;
+    ailments: string[];
     buffs: Buff[];
     flags: string[];
 }

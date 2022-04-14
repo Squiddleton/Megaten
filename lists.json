@@ -2113,7 +2113,7 @@
           "level": 0
         },
         {
-          "name": "Amrita Drop",
+          "name": "Patra",
           "level": 0
         },
         {
@@ -2157,7 +2157,7 @@
           "level": 58
         },
         {
-          "name": "Amrita Shower",
+          "name": "Me Patra",
           "level": 60
         },
         {
@@ -9163,7 +9163,7 @@
           "level": 17
         },
         {
-          "name": "Amrita Shower",
+          "name": "Me Patra",
           "level": 18
         },
         {
@@ -9225,7 +9225,7 @@
           "level": 26
         },
         {
-          "name": "Amrita Shower",
+          "name": "Me Patra",
           "level": 27
         },
         {
@@ -9510,7 +9510,7 @@
           "level": 58
         },
         {
-          "name": "Amrita Shower",
+          "name": "Me Patra",
           "level": 61
         },
         {
@@ -9616,7 +9616,7 @@
           "level": 58
         },
         {
-          "name": "Amrita Shower",
+          "name": "Me Patra",
           "level": 61
         },
         {
@@ -10284,7 +10284,7 @@
           "level": 58
         },
         {
-          "name": "Amrita Shower",
+          "name": "Me Patra",
           "level": 61
         },
         {
@@ -11742,7 +11742,7 @@
           "level": 0
         },
         {
-          "name": "Amrita Drop",
+          "name": "Patra",
           "level": 0
         },
         {
@@ -11786,7 +11786,7 @@
           "level": 58
         },
         {
-          "name": "Amrita Shower",
+          "name": "Me Patra",
           "level": 60
         },
         {
@@ -12932,7 +12932,7 @@
           "level": 0
         },
         {
-          "name": "Amrita Drop",
+          "name": "Patra",
           "level": 0
         },
         {
@@ -12976,7 +12976,7 @@
           "level": 58
         },
         {
-          "name": "Amrita Shower",
+          "name": "Me Patra",
           "level": 60
         },
         {
@@ -21967,36 +21967,6 @@
       "weather": true
     },
     {
-      "name": "Amrita Drop",
-      "devName": "amritadrop",
-      "affinity": "Recovery",
-      "type": "RECOVERY",
-      "unique": false,
-      "range": 1,
-      "cost": 6,
-      "ailment": [
-        "ALL"
-      ],
-      "amount": 0,
-      "buffs": [],
-      "flags": []
-    },
-    {
-      "name": "Amrita Shower",
-      "devName": "amritashower",
-      "affinity": "Recovery",
-      "type": "RECOVERY",
-      "unique": false,
-      "range": 0,
-      "cost": 12,
-      "ailment": [
-        "ALL"
-      ],
-      "amount": 0,
-      "buffs": [],
-      "flags": []
-    },
-    {
       "name": "Analysis",
       "devName": "analysis",
       "affinity": "Passive",
@@ -22310,12 +22280,12 @@
       "unique": false,
       "range": 1,
       "cost": 4,
-      "ailment": [
+      "ailments": [
         "Burn",
         "Freeze",
         "Shock"
       ],
-      "amount": 0,
+      "amount": null,
       "buffs": [],
       "flags": []
     },
@@ -22882,8 +22852,8 @@
       "unique": true,
       "range": 0,
       "cost": 24,
-      "ailment": [],
-      "amount": 50,
+      "ailments": [],
+      "amount": "Half",
       "buffs": [
         "Agility"
       ],
@@ -22948,8 +22918,8 @@
       "unique": false,
       "range": 1,
       "cost": 10,
-      "ailment": [],
-      "amount": 100,
+      "ailments": [],
+      "amount": "Moderate",
       "buffs": [
         "Attack"
       ],
@@ -22973,10 +22943,10 @@
       "unique": false,
       "range": 1,
       "cost": 5,
-      "ailment": [
+      "ailments": [
         "Brainwash"
       ],
-      "amount": 0,
+      "amount": null,
       "buffs": [],
       "flags": []
     },
@@ -23605,9 +23575,9 @@
       "type": "RECOVERY",
       "unique": false,
       "range": 1,
-      "cost": 3,
-      "ailment": [],
-      "amount": 50,
+      "cost": 8,
+      "ailments": [],
+      "amount": "Slight",
       "buffs": [],
       "flags": []
     },
@@ -23644,9 +23614,9 @@
       "type": "RECOVERY",
       "unique": false,
       "range": 1,
-      "cost": 18,
-      "ailment": [],
-      "amount": 999,
+      "cost": 35,
+      "ailments": [],
+      "amount": "Full",
       "buffs": [],
       "flags": []
     },
@@ -23657,9 +23627,9 @@
       "type": "RECOVERY",
       "unique": false,
       "range": 1,
-      "cost": 6,
-      "ailment": [],
-      "amount": 100,
+      "cost": 15,
+      "ailments": [],
+      "amount": "Moderate",
       "buffs": [],
       "flags": []
     },
@@ -24296,14 +24266,14 @@
       "unique": false,
       "range": 1,
       "cost": 4,
-      "ailment": [
+      "ailments": [
         "Confuse",
         "Fear",
         "Despair",
         "Rage",
         "Brainwash"
       ],
-      "amount": 0,
+      "amount": null,
       "buffs": [],
       "flags": []
     },
@@ -24315,14 +24285,14 @@
       "unique": false,
       "range": 0,
       "cost": 8,
-      "ailment": [
+      "ailments": [
         "Confuse",
         "Fear",
         "Despair",
         "Rage",
         "Brainwash"
       ],
-      "amount": 0,
+      "amount": null,
       "buffs": [],
       "flags": []
     },
@@ -25938,8 +25908,8 @@
       "unique": true,
       "range": 0,
       "cost": 27,
-      "ailment": [],
-      "amount": 100,
+      "ailments": [],
+      "amount": "Full",
       "buffs": [],
       "flags": [
         "Revive"
@@ -26657,12 +26627,12 @@
       "unique": false,
       "range": 0,
       "cost": 8,
-      "ailment": [
+      "ailments": [
         "Burn",
         "Freeze",
         "Shock"
       ],
-      "amount": 0,
+      "amount": null,
       "buffs": [],
       "flags": []
     },
@@ -27759,9 +27729,9 @@
       "type": "RECOVERY",
       "unique": false,
       "range": 0,
-      "cost": 7,
-      "ailment": [],
-      "amount": 50,
+      "cost": 30,
+      "ailments": [],
+      "amount": "Slight",
       "buffs": [],
       "flags": []
     },
@@ -27772,9 +27742,9 @@
       "type": "RECOVERY",
       "unique": false,
       "range": 0,
-      "cost": 30,
-      "ailment": [],
-      "amount": 999,
+      "cost": 150,
+      "ailments": [],
+      "amount": "Full",
       "buffs": [],
       "flags": []
     },
@@ -27785,9 +27755,9 @@
       "type": "RECOVERY",
       "unique": false,
       "range": 0,
-      "cost": 12,
-      "ailment": [],
-      "amount": 100,
+      "cost": 60,
+      "ailments": [],
+      "amount": "Moderate",
       "buffs": [],
       "flags": []
     },
@@ -27977,14 +27947,11 @@
       "type": "RECOVERY",
       "unique": false,
       "range": 0,
-      "cost": 8,
-      "ailment": [
-        "Dizzy",
-        "Forget",
-        "Sleep",
-        "Hunger"
+      "cost": 30,
+      "ailments": [
+        "ALL"
       ],
-      "amount": 0,
+      "amount": null,
       "buffs": [],
       "flags": []
     },
@@ -28435,8 +28402,8 @@
       "unique": true,
       "range": 0,
       "cost": 24,
-      "ailment": [],
-      "amount": 50,
+      "ailments": [],
+      "amount": "Half",
       "buffs": [
         "Attack",
         "Defense",
@@ -28761,8 +28728,8 @@
       "unique": true,
       "range": 0,
       "cost": 38,
-      "ailment": [],
-      "amount": 999,
+      "ailments": [],
+      "amount": "Full",
       "buffs": [],
       "flags": [
         "Revert Debuffs"
@@ -28843,14 +28810,11 @@
       "type": "RECOVERY",
       "unique": false,
       "range": 1,
-      "cost": 4,
-      "ailment": [
-        "Dizzy",
-        "Forget",
-        "Sleep",
-        "Hunger"
+      "cost": 8,
+      "ailments": [
+        "ALL"
       ],
-      "amount": 0,
+      "amount": null,
       "buffs": [],
       "flags": []
     },
@@ -28994,10 +28958,10 @@
       "unique": false,
       "range": 1,
       "cost": 3,
-      "ailment": [
+      "ailments": [
         "Poison"
       ],
-      "amount": 0,
+      "amount": null,
       "buffs": [],
       "flags": []
     },
@@ -29533,9 +29497,9 @@
       "type": "RECOVERY",
       "unique": false,
       "range": 1,
-      "cost": 8,
-      "ailment": [],
-      "amount": 50,
+      "cost": 20,
+      "ailments": [],
+      "amount": "Half",
       "buffs": [],
       "flags": [
         "Revive"
@@ -29592,10 +29556,10 @@
       "unique": false,
       "range": 1,
       "cost": 5,
-      "ailment": [
+      "ailments": [
         "Dizzy"
       ],
-      "amount": 0,
+      "amount": null,
       "buffs": [],
       "flags": []
     },
@@ -30001,10 +29965,10 @@
       "unique": false,
       "range": 0,
       "cost": 48,
-      "ailment": [
+      "ailments": [
         "ALL"
       ],
-      "amount": 999,
+      "amount": "Full",
       "buffs": [],
       "flags": []
     },
@@ -30015,9 +29979,9 @@
       "type": "RECOVERY",
       "unique": false,
       "range": 1,
-      "cost": 18,
-      "ailment": [],
-      "amount": 100,
+      "cost": 60,
+      "ailments": [],
+      "amount": "Full",
       "buffs": [],
       "flags": [
         "Revive"
@@ -31601,8 +31565,8 @@
       "unique": true,
       "range": 0,
       "cost": 25,
-      "ailment": [],
-      "amount": 100,
+      "ailments": [],
+      "amount": "Moderate",
       "buffs": [
         "Agility"
       ],

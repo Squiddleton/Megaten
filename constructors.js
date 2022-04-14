@@ -441,7 +441,7 @@ module.exports.RecoverySkill = class extends BaseSkill {
 		this.range = data.range;
 		this.cost = data.cost;
 		this.amount = data.amount;
-		this.ailment = data.ailment;
+		this.ailments = data.ailments;
 		this.buffs = data.buffs;
 		this.flags = data.flags;
 	}
