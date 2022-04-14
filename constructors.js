@@ -111,6 +111,9 @@ class BaseSkill {
 		case 'MASTER': {
 			return `Half ${this.skill} cost for ${this.skill === 'HP' ? 'physical' : 'magic'} skills.`;
 		}
+		case 'MISC': {
+			return this.effect;
+		}
 		case 'REGEN': {
 			switch (this.hpmpail) {
 			case 'AIL': {
@@ -376,6 +379,7 @@ module.exports.MiscSkill = class extends BaseSkill {
 		this.affinity = data.affinity;
 		this.type = data.type;
 		this.cost = data.cost;
+		this.effect = data.effect;
 	}
 };
 module.exports.NaviSkill = class extends BaseSkill {

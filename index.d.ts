@@ -411,12 +411,14 @@ export interface MasterSkillData extends BaseSkillData {
 export class MiscSkill extends BaseSkill {
     constructor(data: MiscSkillData)
     type: 'MISC';
-    cost: number;
+    cost: number | null;
+    effect: string;
 }
 
 export interface MiscSkillData extends BaseSkillData {
     type: 'MISC';
-    cost: number;
+    cost: number | null;
+    effect: string;
 }
 
 export class NaviSkill extends BaseSkill {

@@ -21727,6 +21727,15 @@
       "series": "persona"
     },
     {
+      "name": "Abyssal Mask",
+      "devName": "abyssalmask",
+      "affinity": "Passive",
+      "type": "MISC",
+      "unique": false,
+      "cost": null,
+      "effect": "Greatly decreases chance of instakill and being afflicted with ailments."
+    },
+    {
       "name": "Abyssal Wings",
       "devName": "abyssalwings",
       "affinity": "Dark",
@@ -22311,6 +22320,15 @@
       "series": "persona"
     },
     {
+      "name": "Beast Eye",
+      "devName": "beasteye",
+      "affinity": "Passive",
+      "type": "MISC",
+      "unique": false,
+      "cost": null,
+      "effect": "Increases Accuracy."
+    },
+    {
       "name": "Beast Weaver",
       "devName": "beastweaver",
       "affinity": "Phys",
@@ -22596,6 +22614,33 @@
         }
       ],
       "series": "persona"
+    },
+    {
+      "name": "Bloody Glee",
+      "devName": "bloodyglee",
+      "affinity": "Passive",
+      "type": "MISC",
+      "unique": false,
+      "cost": null,
+      "effect": "Increases Critical Rate."
+    },
+    {
+      "name": "Boon Boost",
+      "devName": "boonboost",
+      "affinity": "Passive",
+      "type": "MISC",
+      "unique": false,
+      "cost": null,
+      "effect": "Your -kaja/-nda skills last 1 extra turn."
+    },
+    {
+      "name": "Boon Boost EX",
+      "devName": "boonboostex",
+      "affinity": "Passive",
+      "type": "MISC",
+      "unique": false,
+      "cost": null,
+      "effect": "Your -kaja/-nda skills last 2 extra turns."
     },
     {
       "name": "Bouncing Claw",
@@ -22939,6 +22984,15 @@
       "flags": []
     },
     {
+      "name": "Chaotic Will",
+      "devName": "chaoticwill",
+      "affinity": "Ailment",
+      "type": "MISC",
+      "unique": true,
+      "cost": 150,
+      "effect": "Chance of instakill to all foes. Foe's Press Turn Icons will be halved next turn."
+    },
+    {
       "name": "Charge",
       "devName": "charge",
       "affinity": "Support",
@@ -23204,6 +23258,15 @@
       "flags": [],
       "ailments": [],
       "series": "smt"
+    },
+    {
+      "name": "Critical Zealot",
+      "devName": "criticalzealot",
+      "affinity": "Passive",
+      "type": "MISC",
+      "unique": false,
+      "cost": null,
+      "effect": "Increases Critical damage, but normal damage decreases."
     },
     {
       "name": "Cross Slash",
@@ -23730,7 +23793,8 @@
       "affinity": "Passive",
       "type": "MISC",
       "unique": false,
-      "cost": 0
+      "cost": null,
+      "effect": "Increases the effect of healing skills by 50%."
     },
     {
       "name": "Divine Judgement",
@@ -23991,6 +24055,15 @@
       "flags": [],
       "ailments": [],
       "series": "persona"
+    },
+    {
+      "name": "Dragon Eye",
+      "devName": "dragoneye",
+      "affinity": "Passive",
+      "type": "MISC",
+      "unique": false,
+      "cost": null,
+      "effect": "Greatly increases Accuracy."
     },
     {
       "name": "Dragon Hustle",
@@ -24415,7 +24488,8 @@
       "affinity": "Support",
       "type": "MISC",
       "unique": false,
-      "cost": 35
+      "cost": 35,
+      "effect": "Prevents any enemy encounters until next New Moon."
     },
     {
       "name": "Eternal Blizzard",
@@ -24554,6 +24628,15 @@
       "elements": [
         "Wind"
       ]
+    },
+    {
+      "name": "Evil Melody",
+      "devName": "evilmelody",
+      "affinity": "Ailment",
+      "type": "MISC",
+      "unique": true,
+      "cost": 81,
+      "effect": "Chance of instakill to 1 foe."
     },
     {
       "name": "Evil Smile",
@@ -24858,7 +24941,8 @@
       "affinity": "Passive",
       "type": "MISC",
       "unique": false,
-      "cost": 0
+      "cost": null,
+      "effect": "Take the blow, but decreases damage by half."
     },
     {
       "name": "Flash Bomb",
@@ -25301,7 +25385,8 @@
       "affinity": "Almighty",
       "type": "MISC",
       "unique": false,
-      "cost": 28
+      "cost": 28,
+      "effect": "Insta-kills foes inflicted with Fear."
     },
     {
       "name": "Giant Slice",
@@ -25933,6 +26018,15 @@
       "series": "smt"
     },
     {
+      "name": "Hellish Mask",
+      "devName": "hellishmask",
+      "affinity": "Passive",
+      "type": "MISC",
+      "unique": false,
+      "cost": null,
+      "effect": "Decreases chance of instakill and being afflicted with ailments."
+    },
+    {
       "name": "Hellish Slash",
       "devName": "hellishslash",
       "affinity": "Phys",
@@ -26377,6 +26471,15 @@
       "series": "persona"
     },
     {
+      "name": "Inspiring Leader",
+      "devName": "inspiringleader",
+      "affinity": "Passive",
+      "type": "MISC",
+      "unique": false,
+      "cost": null,
+      "effect": "(Demon) EXP earned increases when the demon's Lv is lower than the Nahobino."
+    },
+    {
       "name": "Insta-Heal",
       "devName": "instaheal",
       "affinity": "Passive",
@@ -26479,7 +26582,8 @@
       "affinity": "Recovery",
       "type": "MISC",
       "unique": true,
-      "cost": 25
+      "cost": 25,
+      "effect": "Anything could happen..."
     },
     {
       "name": "Kannabi Veil",
@@ -28648,6 +28752,15 @@
       "series": "smt"
     },
     {
+      "name": "Murderous Glee",
+      "devName": "murderousglee",
+      "affinity": "Passive",
+      "type": "MISC",
+      "unique": false,
+      "cost": null,
+      "effect": "Greatly increases Critical Rate."
+    },
+    {
       "name": "Mustard Bomb",
       "devName": "mustardbomb",
       "affinity": "Phys",
@@ -29344,6 +29457,24 @@
       "flags": []
     },
     {
+      "name": "Poison Adept",
+      "devName": "poisonadept",
+      "affinity": "Passive",
+      "type": "MISC",
+      "unique": false,
+      "cost": null,
+      "effect": "Increases effects of Poison."
+    },
+    {
+      "name": "Poison Master",
+      "devName": "poisonmaster",
+      "affinity": "Passive",
+      "type": "MISC",
+      "unique": false,
+      "cost": null,
+      "effect": "Greatly increases effects of Poison."
+    },
+    {
       "name": "Poison Skewer",
       "devName": "poisonskewer",
       "affinity": "Phys",
@@ -29923,7 +30054,8 @@
       "affinity": "Passive",
       "type": "MISC",
       "unique": false,
-      "cost": 0
+      "cost": null,
+      "effect": "Showtime guage increases more quickly."
     },
     {
       "name": "Recarm",
@@ -30413,6 +30545,15 @@
       "series": "smt"
     },
     {
+      "name": "Safeguard",
+      "devName": "safeguard",
+      "affinity": "Passive",
+      "type": "MISC",
+      "unique": false,
+      "cost": null,
+      "effect": "Being Evaded/Nulled/Drained/Repelled doesn't consume additional Press Turn Icons."
+    },
+    {
       "name": "Sakanagi",
       "devName": "sakanagi",
       "affinity": "Almighty",
@@ -30551,7 +30692,8 @@
       "affinity": "Passive",
       "type": "MISC",
       "unique": false,
-      "cost": 0
+      "cost": null,
+      "effect": "Decreases chance of being hit by a Critical."
     },
     {
       "name": "Shield of Justice",
@@ -31251,7 +31393,8 @@
       "affinity": "Passive",
       "type": "MISC",
       "unique": false,
-      "cost": 0
+      "cost": null,
+      "effect": "Increases duration of Kaja-type buff skills when landing a Critical."
     },
     {
       "name": "Tempest Slash",
@@ -31402,7 +31545,8 @@
       "affinity": "Ailment",
       "type": "MISC",
       "unique": true,
-      "cost": 30
+      "cost": 30,
+      "effect": "May inflict Down/Dizzy on all foes."
     },
     {
       "name": "Thermopylae",
@@ -31524,7 +31668,8 @@
       "affinity": "Passive",
       "type": "MISC",
       "unique": false,
-      "cost": 0
+      "cost": null,
+      "effect": "Automatic Sukukaja after a Baton Pass."
     },
     {
       "name": "Toxic Breath",
@@ -31614,7 +31759,8 @@
       "affinity": "Support",
       "type": "MISC",
       "unique": false,
-      "cost": 18
+      "cost": 18,
+      "effect": "Instantly escape from a dungeon."
     },
     {
       "name": "Trafuri",
@@ -31622,7 +31768,8 @@
       "affinity": "Support",
       "type": "MISC",
       "unique": false,
-      "cost": 6
+      "cost": 6,
+      "effect": "Guarantees escape from escapable battles."
     },
     {
       "name": "Treasure Radar",
@@ -31644,7 +31791,8 @@
       "affinity": "Passive",
       "type": "MISC",
       "unique": false,
-      "cost": 0
+      "cost": null,
+      "effect": "Increases chance of Critical from Gun attacks."
     },
     {
       "name": "Triple Down",
