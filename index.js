@@ -1,4 +1,4 @@
-const { Demon, Persona, BaseSkill, AilBoostSkill, AilDefensiveSkill, AilmentSkill, AttackSkill, AutoBuffSkill, BarrierSkill, BarrierBreakSkill, BlockSkill, BoostSkill, BreakSkill, ChargeSkill, CritSkill, CritBoostSkill, DefensiveSkill, EndureSkill, EvasionSkill, HalveSkill, InstaKillBoostSkill, MasterSkill, MiscSkill, NaviSkill, PersonaCounterSkill, PostBattleSkill, RecoverySkill, RegenSkill, RestoreSkill, SMTCounterSkill, SpringSkill, SupportSkill, SusceptibilitySkill, TauntSkill, WallSkill, dataToClass } = require('./constructors');
+const { Demon, Persona, BaseSkill, AilBoostSkill, AilDefensiveSkill, AilmentSkill, AttackSkill, AutoBuffSkill, BarrierSkill, BarrierBreakSkill, BlockSkill, BoostSkill, BreakSkill, ChargeSkill, CritSkill, CritBoostSkill, DefensiveSkill, EndureSkill, EvasionSkill, HalveSkill, InstaKillBoostSkill, MasterSkill, MiscSkill, NaviSkill, PersonaCounterSkill, PostBattleSkill, RecoverySkill, RegenSkill, SiphonSkill, SMTCounterSkill, SpringSkill, SupportSkill, SusceptibilitySkill, TauntSkill, WallSkill, dataToClass } = require('./constructors');
 /** @type {Lists} */
 // @ts-ignore
 const lists = require('./lists.json');
@@ -45,7 +45,7 @@ module.exports.NaviSkill = NaviSkill;
 module.exports.PostBattleSkill = PostBattleSkill;
 module.exports.RecoverySkill = RecoverySkill;
 module.exports.RegenSkill = RegenSkill;
-module.exports.RestoreSkill = RestoreSkill;
+module.exports.SiphonSkill = SiphonSkill;
 module.exports.SMTCounterSkill = SMTCounterSkill;
 module.exports.SpringSkill = SpringSkill;
 module.exports.SupportSkill = SupportSkill;

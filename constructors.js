@@ -445,10 +445,10 @@ module.exports.RegenSkill = class extends BaseSkill {
 		this.baton = data.baton;
 	}
 };
-module.exports.RestoreSkill = class extends BaseSkill {
+module.exports.SiphonSkill = class extends BaseSkill {
 	/**
 	 *
-	 * @param {import('./index').RestoreSkillData} data
+	 * @param {import('./index').SiphonSkillData} data
 	 */
 	constructor(data) {
 		super(data);
@@ -570,7 +570,7 @@ module.exports.dataToClass = data => {
 	case 'POSTBATTLE': return new this.PostBattleSkill(data);
 	case 'RECOVERY': return new this.RecoverySkill(data);
 	case 'REGEN': return new this.RegenSkill(data);
-	case 'RESTORE': return new this.RestoreSkill(data);
+	case 'SIPHON': return new this.SiphonSkill(data);
 	case 'SMTCOUNTER': return new this.SMTCounterSkill(data);
 	case 'SPRING': return new this.SpringSkill(data);
 	case 'SUPPORT': return new this.SupportSkill(data);
