@@ -653,6 +653,7 @@ export type HPMP = 'HP' | 'MP';
 export type HPMPAIL = HPMP | 'HPMP' | 'AIL'
 
 export type Range = 0 | 1;
+export type ChargeRnage = 'Self' | 'Ally' | 'Party'
 
 export type Series = 'persona' | 'smt';
 

@@ -22619,6 +22619,16 @@
       "series": "smt"
     },
     {
+      "name": "Bowl of Hygieia",
+      "devName": "bowlofhygieia",
+      "affinity": "Support",
+      "type": "CHARGE",
+      "unique": false,
+      "range": "Self",
+      "cost": 20,
+      "charge": "Recovery"
+    },
+    {
       "name": "Brain Buster",
       "devName": "brainbuster",
       "affinity": "Phys",
@@ -22917,8 +22927,8 @@
       "affinity": "Support",
       "type": "CHARGE",
       "unique": false,
-      "range": 1,
-      "cost": 15,
+      "range": "Self",
+      "cost": 10,
       "charge": "Charge"
     },
     {
@@ -23001,8 +23011,8 @@
       "affinity": "Support",
       "type": "CHARGE",
       "unique": false,
-      "range": 1,
-      "cost": 15,
+      "range": "Self",
+      "cost": 10,
       "charge": "Concentrate"
     },
     {
@@ -23123,6 +23133,16 @@
       "unique": false,
       "amount": 50,
       "element": "Gun"
+    },
+    {
+      "name": "Critical Aura",
+      "devName": "criticalaura",
+      "affinity": "Support",
+      "type": "CHARGE",
+      "unique": false,
+      "range": "Self",
+      "cost": 25,
+      "charge": "Critical"
     },
     {
       "name": "Critical Slash",
@@ -23808,6 +23828,26 @@
       "elements": [
         "Wind"
       ]
+    },
+    {
+      "name": "Donum Gladi",
+      "devName": "donumgladi",
+      "affinity": "Support",
+      "type": "CHARGE",
+      "unique": false,
+      "range": "Ally",
+      "cost": 40,
+      "charge": "Charge"
+    },
+    {
+      "name": "Donum Magici",
+      "devName": "donummagici",
+      "affinity": "Support",
+      "type": "CHARGE",
+      "unique": false,
+      "range": "Ally",
+      "cost": 40,
+      "charge": "Concentrate"
     },
     {
       "name": "Door of Hades",
@@ -24613,7 +24653,7 @@
       "affinity": "Support",
       "type": "CHARGE",
       "unique": false,
-      "range": 0,
+      "range": "Party",
       "cost": 80,
       "charge": "Charge"
     },
@@ -25933,7 +25973,7 @@
       "affinity": "Support",
       "type": "CHARGE",
       "unique": false,
-      "range": 0,
+      "range": "Party",
       "cost": 80,
       "charge": "Concentrate"
     },
@@ -26202,6 +26242,16 @@
       "unique": false,
       "cost": 18,
       "element": "Ice"
+    },
+    {
+      "name": "Impaler's Animus",
+      "devName": "impalersanimus",
+      "affinity": "Support",
+      "type": "CHARGE",
+      "unique": false,
+      "range": "Self",
+      "cost": 50,
+      "charge": "Pierce"
     },
     {
       "name": "Inferno",
