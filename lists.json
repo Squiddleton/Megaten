@@ -24648,6 +24648,13 @@
       "weather": false
     },
     {
+      "name": "Fierce Roar",
+      "devName": "fierceroar",
+      "affinity": "Support",
+      "type": "TAUNT",
+      "buff": "Defense Up"
+    },
+    {
       "name": "Fighting Spirit",
       "devName": "fightingspirit",
       "affinity": "Support",
@@ -30982,6 +30989,13 @@
       "auto": []
     },
     {
+      "name": "Taunt",
+      "devName": "taunt",
+      "affinity": "Support",
+      "type": "TAUNT",
+      "buff": null
+    },
+    {
       "name": "Taunt -Persona-",
       "devName": "tauntpersona",
       "affinity": "Ailment",
@@ -31829,6 +31843,13 @@
       "unique": false,
       "cost": 18,
       "element": "Wind"
+    },
+    {
+      "name": "Witness Me",
+      "devName": "witnessme",
+      "affinity": "Support",
+      "type": "TAUNT",
+      "buff": "Accuracy/Evasion Greatly Up"
     },
     {
       "name": "Wrath Tempest",

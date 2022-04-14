@@ -518,6 +518,17 @@ module.exports.SusceptibilitySkill = class extends BaseSkill {
 		this.cost = data.cost;
 	}
 };
+module.exports.TauntSkill = class extends BaseSkill {
+	/**
+	 * @param {import('./index').TauntSkillData} data
+	 */
+	constructor(data) {
+		super(data);
+		this.affinity = data.affinity;
+		this.type = data.type;
+		this.buff = data.buff;
+	}
+};
 module.exports.WallSkill = class extends BaseSkill {
 	/**
 	 * @param {import('./index').WallSkillData} data
@@ -568,6 +579,7 @@ module.exports.dataToClass = data => {
 	case 'SPRING': return new this.SpringSkill(data);
 	case 'SUPPORT': return new this.SupportSkill(data);
 	case 'SUSCEPTIBILITY': return new this.SusceptibilitySkill(data);
+	case 'TAUNT': return new this.TauntSkill(data);
 	case 'WALL': return new this.WallSkill(data);
 	}
 };
