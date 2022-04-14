@@ -23608,6 +23608,21 @@
       "series": "persona"
     },
     {
+      "name": "Diamrita",
+      "devName": "diamrita",
+      "affinity": "Recovery",
+      "type": "RECOVERY",
+      "unique": false,
+      "range": 1,
+      "cost": 30,
+      "ailments": [
+        "ALL"
+      ],
+      "amount": "Moderate",
+      "buffs": [],
+      "flags": []
+    },
+    {
       "name": "Diarahan",
       "devName": "diarahan",
       "affinity": "Recovery",
@@ -24209,6 +24224,19 @@
       "unique": false,
       "cost": 18,
       "element": "Elec"
+    },
+    {
+      "name": "Eleusinian Harvest",
+      "devName": "eleusinianharvest",
+      "affinity": "Recovery",
+      "type": "RECOVERY",
+      "unique": true,
+      "range": 0,
+      "cost": 150,
+      "ailments": [],
+      "amount": "130%",
+      "buffs": [],
+      "flags": []
     },
     {
       "name": "Endure",
@@ -25280,6 +25308,23 @@
       "series": "persona"
     },
     {
+      "name": "Golden Apple",
+      "devName": "goldenapple",
+      "affinity": "Recovery",
+      "type": "RECOVERY",
+      "unique": true,
+      "range": 0,
+      "cost": 180,
+      "ailments": [],
+      "amount": "Moderate",
+      "buffs": [
+        "Attack",
+        "Defense",
+        "Agility"
+      ],
+      "flags": []
+    },
+    {
       "name": "Gram Slice",
       "devName": "gramslice",
       "affinity": "Phys",
@@ -25468,6 +25513,21 @@
       "cost": 15,
       "amount": 40,
       "display": "Medium"
+    },
+    {
+      "name": "Harvest Dance",
+      "devName": "harvestdance",
+      "affinity": "Recovery",
+      "type": "RECOVERY",
+      "unique": true,
+      "range": 1,
+      "cost": 30,
+      "ailments": [],
+      "amount": "Slight",
+      "buffs": [
+        "Double Defense"
+      ],
+      "flags": []
     },
     {
       "name": "Hassou Tobi",
@@ -25938,6 +25998,19 @@
       "percent": true,
       "ambush": false,
       "baton": false
+    },
+    {
+      "name": "Humble Blessing",
+      "devName": "humbleblessing",
+      "affinity": "Recovery",
+      "type": "RECOVERY",
+      "unique": true,
+      "range": 0,
+      "cost": 15,
+      "ailments": [],
+      "amount": "Slight",
+      "buffs": [],
+      "flags": []
     },
     {
       "name": "Hyakka Ryouran",
@@ -27555,6 +27628,23 @@
       "auto": []
     },
     {
+      "name": "Matriarch's Love",
+      "devName": "matriarchslove",
+      "affinity": "Recovery",
+      "type": "RECOVERY",
+      "unique": true,
+      "range": 0,
+      "cost": 140,
+      "ailments": [
+        "ALL"
+      ],
+      "amount": "Moderate",
+      "buffs": [],
+      "flags": [
+        "Revert Debuffs"
+      ]
+    },
+    {
       "name": "Mazan",
       "devName": "mazan",
       "affinity": "Force",
@@ -28045,6 +28135,19 @@
       "flags": [],
       "ailments": [],
       "series": "persona"
+    },
+    {
+      "name": "Miracle Water",
+      "devName": "miraclewater",
+      "affinity": "Recovery",
+      "type": "RECOVERY",
+      "unique": true,
+      "range": 0,
+      "cost": 20,
+      "ailments": [],
+      "amount": "Slight",
+      "buffs": [],
+      "flags": []
     },
     {
       "name": "Mirage Shot",
@@ -29839,6 +29942,22 @@
       }
     },
     {
+      "name": "Revival Chant",
+      "devName": "revivalchant",
+      "affinity": "Recovery",
+      "type": "RECOVERY",
+      "unique": true,
+      "range": 1,
+      "cost": 100,
+      "ailments": [],
+      "amount": "Full",
+      "buffs": [],
+      "flags": [
+        "Revive",
+        "Summon"
+      ]
+    },
+    {
       "name": "Revolution",
       "devName": "revolution",
       "affinity": "Support",
@@ -30578,6 +30697,21 @@
         "Agility"
       ],
       "auto": []
+    },
+    {
+      "name": "Sun's Radiance",
+      "devName": "sunsradiance",
+      "affinity": "Recovery",
+      "type": "RECOVERY",
+      "unique": true,
+      "range": 1,
+      "cost": 12,
+      "ailments": [
+        "ALL"
+      ],
+      "amount": "Moderate",
+      "buffs": [],
+      "flags": []
     },
     {
       "name": "Support Scan",

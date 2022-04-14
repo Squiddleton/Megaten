@@ -482,7 +482,7 @@ export class RecoverySkill extends BaseSkill {
     cost: number;
     amount: string | null;
     ailments: string[];
-    buffs: Buff[];
+    buffs: (Buff | 'Double Defense')[];
     flags: string[];
 }
 
@@ -493,7 +493,7 @@ export interface RecoverySkillData extends BaseSkillData {
     cost: number;
     amount: string | null;
     ailments: string[];
-    buffs: Buff[];
+    buffs: (Buff | 'Double Defense')[];
     flags: string[];
 }
 
