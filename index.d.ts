@@ -4,7 +4,7 @@ export interface DemonData {
     aliases: string[];
     inherit: Inherit;
     arcana: Arcana;
-    race: string;
+    race: Race;
     level: number;
     hp: number;
     mp: number;
@@ -32,7 +32,7 @@ export class Demon {
     aliases: string[];
     inherit: Inherit;
     arcana: Arcana;
-    race: string;
+    race: Race;
     level: number;
     hp: number;
     mp: number;
@@ -181,13 +181,15 @@ export class AutoBuffSkill extends BaseSkill {
     constructor(data: AutoBuffSkillData);
     affinity: 'Passive';
     type: 'AUTOBUFF';
-    buff: string;
+    buff: Buff;
+    range: Range;
 }
 
 export interface AutoBuffSkillData extends BaseSkillData {
     affinity: 'Passive';
     type: 'AUTOBUFF';
-    buff: string;
+    buff: Buff;
+    range: Range;
 }
 
 export class BarrierSkill extends BaseSkill {
@@ -196,7 +198,7 @@ export class BarrierSkill extends BaseSkill {
     type: 'BARRIER';
     range: Range;
     cost: number;
-    barriers: string[];
+    barriers: Barrier[];
 }
 
 export interface BarrierSkillData extends BaseSkillData {
@@ -204,7 +206,7 @@ export interface BarrierSkillData extends BaseSkillData {
     type: 'BARRIER';
     range: Range;
     cost: number;
-    barriers: string[];
+    barriers: Barrier[];
 }
 
 export class BarrierBreakSkill extends BaseSkill {
@@ -212,14 +214,14 @@ export class BarrierBreakSkill extends BaseSkill {
     affinity: 'Support';
     type: 'BARRIERBREAK';
     cost: number;
-    barrier: string;
+    barrier: Barrier;
 }
 
 export interface BarrierBreakSkillData extends BaseSkillData {
     affinity: 'Support';
     type: 'BARRIERBREAK';
     cost: number;
-    barrier: string;
+    barrier: Barrier;
 }
 
 export class BlockSkill extends BaseSkill {
@@ -271,17 +273,17 @@ export class ChargeSkill extends BaseSkill {
     constructor(data: ChargeSkillData);
     affinity: 'Support';
     type: 'CHARGE';
+    range: ChargeRange;
     cost: number;
-    range: Range;
-    charge: string;
+    charge: Charge;
 }
 
 export interface ChargeSkillData extends BaseSkillData {
     affinity: 'Support';
     type: 'CHARGE';
+    range: ChargeRange;
     cost: number;
-    range: Range;
-    charge: string;
+    charge: Charge;
 }
 
 export class PersonaCounterSkill extends BaseSkill {
@@ -361,7 +363,7 @@ export class EvasionSkill extends BaseSkill {
     constructor(data: EvasionSkillData);
     affinity: 'Passive';
     type: 'EVASION';
-    elements: string[];
+    elements: (Element | 'ALL')[];
     amount: number;
     surround: boolean;
     weather: boolean;
@@ -370,7 +372,7 @@ export class EvasionSkill extends BaseSkill {
 export interface EvasionSkillData extends BaseSkillData {
     affinity: 'Passive';
     type: 'EVASION';
-    elements: string[];
+    elements: (Element | 'ALL')[];
     amount: number;
     surround: boolean;
     weather: boolean;
@@ -466,7 +468,7 @@ export class RecoverySkill extends BaseSkill {
     type: 'RECOVERY';
     range: Range;
     cost: number;
-    amount: string | null;
+    amount: RecoveryAmount;
     ailments: (Ailment | 'ALL')[];
     buffs: Buff[];
     flags: string[];
@@ -477,7 +479,7 @@ export interface RecoverySkillData extends BaseSkillData {
     type: 'RECOVERY';
     range: Range;
     cost: number;
-    amount: string | null;
+    amount: RecoveryAmount;
     ailments: (Ailment | 'ALL')[];
     buffs: Buff[];
     flags: string[];
@@ -568,7 +570,7 @@ export class SupportSkill extends BaseSkill {
     buffs: Buff[];
     debuffs: Buff[];
     negate: boolean;
-    auto: string[];
+    auto: Barrier[];
     surround: boolean;
 }
 
@@ -580,7 +582,7 @@ export interface SupportSkillData extends BaseSkillData {
     buffs: Buff[];
     debuffs: Buff[];
     negate: boolean;
-    auto: string[];
+    auto: Barrier[];
     surround: boolean;
 }
 
@@ -603,14 +605,14 @@ export class TauntSkill extends BaseSkill {
     constructor(data: TauntSkillData);
     affinity: 'Support';
     type: 'TAUNT';
-    buff: string | null;
+    buff: Buff | null;
     cost: number;
 }
 
 export interface TauntSkillData extends BaseSkillData {
     affinity: 'Support';
     type: 'TAUNT';
-    buff: string | null;
+    buff: Buff | null;
     cost: number;
 }
 
@@ -654,12 +656,16 @@ export type Arcana = 'Fool' | 'Magician' | 'Priestess' | 'Empress' | 'Emperor' |
     | 'Justice' | 'Hermit'| 'Fortune' | 'Strength' | 'Hanged' | 'Death' | 'Temperance' | 'Devil' | 'Tower'
     | 'Star' | 'Moon' | 'Sun' | 'Judgement' | 'Faith' | 'Councillor' | 'World' | 'Apostle' | 'Hope';
 
+export type Barrier = 'Painting' | 'Kannabi Veil' | 'Tetrakarn' | 'Makarakarn' | 'Shield of Justice' | 'Tetraja';
+
+export type Charge = 'Recovery' | 'Charge' | 'Concentrate' | 'Critical' | 'Pierce';
+
 export type CounterDisplay = 'Weak' | 'Medium'
 export type AttackDisplay = CounterDisplay | 'Minuscule' | 'Light' | 'Heavy' | 'Severe' | 'Colossal';
 
 export type LightDark = 'Light' | 'Dark';
 
-export type Buff = 'Attack' | 'Defense' | 'Agility' | 'Double Defense' | 'Double Agility';
+export type Buff = 'Attack' | 'Defense' | 'Accuracy/Evasion' | 'Double Defense' | 'Double Accuracy/Evasion';
 
 export type ChanceDisplay = 'Low' | 'Medium' | 'High';
 
@@ -674,8 +680,12 @@ export type Game = 'p3' | 'p4' | 'p5' | 'smt5';
 export type HPMP = 'HP' | 'MP';
 export type HPMPAIL = HPMP | 'HPMP' | 'AIL'
 
+export type Race = 'Avatar' | 'Avian' | 'Beast' | 'Brute' | 'Deity' | 'Divine' | 'Dragon' | 'Drake' | 'Element' | 'Fairy' | 'Fallen' | 'Femme' | 'Fiend' | 'Foul' | 'Fury' | 'Genma' | 'Haunt' | 'Herald' | 'Holy' | 'Jaki' | 'Jirae' | 'Kishin' | 'Kunitsu' | 'Lady' | 'Megami' | 'Mitama' | 'Night' | 'Persona' | 'Picaro' | 'Raptor' | 'Snake' | 'Treasure' | 'Tyrant' | 'Vile' | 'Wargod' | 'Wilder' | 'Yoma';
+
 export type Range = 0 | 1;
-export type ChargeRnage = 'Self' | 'Ally' | 'Party'
+export type ChargeRange = 'Self' | 'Ally' | 'Party'
+
+export type RecoveryAmount = 'Slight' | 'Moderate' | 'Half' | 'Full' | '130%' | null;
 
 export type RestoreCriteria = 'Weakness/Critical' | 'Ailment'
 

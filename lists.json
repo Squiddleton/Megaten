@@ -6904,7 +6904,7 @@
           "level": 33
         },
         {
-          "name": "Auto-Tarukaja",
+          "name": "Attack Master",
           "level": 36
         },
         {
@@ -18631,7 +18631,7 @@
           "level": 33
         },
         {
-          "name": "Auto-Tarukaja",
+          "name": "Attack Master",
           "level": 36
         },
         {
@@ -19540,7 +19540,7 @@
           "level": 33
         },
         {
-          "name": "Auto-Tarukaja",
+          "name": "Attack Master",
           "level": 36
         },
         {
@@ -22151,7 +22151,8 @@
       "affinity": "Passive",
       "type": "AUTOBUFF",
       "unique": false,
-      "buff": "Tarukaja"
+      "buff": "Attack",
+      "range": 1
     },
     {
       "name": "Auto-Maraku",
@@ -22159,7 +22160,8 @@
       "affinity": "Passive",
       "type": "AUTOBUFF",
       "unique": false,
-      "buff": "Marakukaja"
+      "buff": "Defense",
+      "range": 0
     },
     {
       "name": "Auto-Masuku",
@@ -22167,7 +22169,8 @@
       "affinity": "Passive",
       "type": "AUTOBUFF",
       "unique": false,
-      "buff": "Masukukaja"
+      "buff": "Accuracy/Evasion",
+      "range": 0
     },
     {
       "name": "Auto-Mataru",
@@ -22175,15 +22178,8 @@
       "affinity": "Passive",
       "type": "AUTOBUFF",
       "unique": false,
-      "buff": "Matarukaja"
-    },
-    {
-      "name": "Auto-Tarukaja",
-      "devName": "autotarukaja",
-      "affinity": "Passive",
-      "type": "AUTOBUFF",
-      "unique": false,
-      "buff": "Tarukaja"
+      "buff": "Attack",
+      "range": 0
     },
     {
       "name": "Axel Claw",
@@ -22896,7 +22892,7 @@
       "ailments": [],
       "amount": "Half",
       "buffs": [
-        "Agility"
+        "Accuracy/Evasion"
       ],
       "flags": []
     },
@@ -22955,7 +22951,7 @@
       "surround": false,
       "buffs": [
         "Defense",
-        "Agility"
+        "Accuracy/Evasion"
       ],
       "negate": false,
       "debuffs": [],
@@ -23031,7 +23027,7 @@
       "debuffs": [
         "Attack",
         "Defense",
-        "Agility"
+        "Accuracy/Evasion"
       ],
       "auto": []
     },
@@ -23597,7 +23593,7 @@
       "debuffs": [
         "Attack",
         "Defense",
-        "Agility"
+        "Accuracy/Evasion"
       ],
       "auto": []
     },
@@ -23607,7 +23603,8 @@
       "affinity": "Passive",
       "type": "AUTOBUFF",
       "unique": false,
-      "buff": "Rakukaja"
+      "buff": "Defense",
+      "range": 1
     },
     {
       "name": "Dekaja",
@@ -23621,7 +23618,7 @@
       "buffs": [
         "Attack",
         "Defense",
-        "Agility"
+        "Accuracy/Evasion"
       ],
       "negate": true,
       "debuffs": [],
@@ -23641,7 +23638,7 @@
       "debuffs": [
         "Attack",
         "Defense",
-        "Agility"
+        "Accuracy/Evasion"
       ],
       "auto": []
     },
@@ -24077,7 +24074,7 @@
       "buffs": [
         "Attack",
         "Defense",
-        "Agility"
+        "Accuracy/Evasion"
       ],
       "negate": false,
       "debuffs": [],
@@ -24782,7 +24779,7 @@
       "affinity": "Support",
       "type": "TAUNT",
       "unique": false,
-      "buff": "Defense Up",
+      "buff": "Defense",
       "cost": 30
     },
     {
@@ -25266,7 +25263,7 @@
       "cost": 20,
       "surround": false,
       "buffs": [
-        "Agility"
+        "Accuracy/Evasion"
       ],
       "negate": false,
       "debuffs": [],
@@ -25531,7 +25528,7 @@
       "buffs": [
         "Attack",
         "Defense",
-        "Agility"
+        "Accuracy/Evasion"
       ],
       "flags": []
     },
@@ -25874,7 +25871,7 @@
       "buffs": [
         "Attack",
         "Defense",
-        "Agility"
+        "Accuracy/Evasion"
       ],
       "negate": false,
       "debuffs": [],
@@ -26286,7 +26283,7 @@
       "buffs": [
         "Attack",
         "Defense",
-        "Agility"
+        "Accuracy/Evasion"
       ],
       "negate": false,
       "debuffs": [],
@@ -27022,7 +27019,7 @@
       "buffs": [
         "Attack",
         "Defense",
-        "Agility"
+        "Accuracy/Evasion"
       ],
       "negate": false,
       "debuffs": [],
@@ -27563,7 +27560,7 @@
       "range": 1,
       "cost": 50,
       "barriers": [
-        "Makarkarn"
+        "Makarakarn"
       ]
     },
     {
@@ -27969,7 +27966,7 @@
       "cost": 30,
       "surround": false,
       "buffs": [
-        "Agility"
+        "Accuracy/Evasion"
       ],
       "negate": false,
       "debuffs": [],
@@ -27987,7 +27984,7 @@
       "buffs": [],
       "negate": false,
       "debuffs": [
-        "Agility"
+        "Accuracy/Evasion"
       ],
       "auto": []
     },
@@ -28939,7 +28936,7 @@
       "buffs": [
         "Attack",
         "Defense",
-        "Agility"
+        "Accuracy/Evasion"
       ],
       "flags": []
     },
@@ -30082,7 +30079,7 @@
       "cost": 8,
       "surround": false,
       "buffs": [
-        "Double Agility"
+        "Double Accuracy/Evasion"
       ],
       "negate": false,
       "debuffs": [],
@@ -31047,7 +31044,8 @@
       "affinity": "Passive",
       "type": "AUTOBUFF",
       "unique": false,
-      "buff": "Sukukaja"
+      "buff": "Accuracy/Evasion",
+      "range": 1
     },
     {
       "name": "Spell Master",
@@ -31214,7 +31212,7 @@
       "cost": 8,
       "surround": false,
       "buffs": [
-        "Agility"
+        "Accuracy/Evasion"
       ],
       "negate": false,
       "debuffs": [],
@@ -31232,7 +31230,7 @@
       "buffs": [],
       "negate": false,
       "debuffs": [
-        "Agility"
+        "Accuracy/Evasion"
       ],
       "auto": []
     },
@@ -31560,7 +31558,7 @@
       "buffs": [
         "Attack",
         "Defense",
-        "Agility"
+        "Accuracy/Evasion"
       ],
       "negate": false,
       "debuffs": [],
@@ -32260,7 +32258,7 @@
       "affinity": "Support",
       "type": "TAUNT",
       "unique": true,
-      "buff": "Accuracy/Evasion Greatly Up",
+      "buff": "Double Accuracy/Evasion",
       "cost": 5
     },
     {
@@ -32320,7 +32318,7 @@
       "ailments": [],
       "amount": "Moderate",
       "buffs": [
-        "Agility"
+        "Accuracy/Evasion"
       ],
       "flags": []
     },
