@@ -2210,7 +2210,7 @@
       "lu": 25,
       "learnset": [
         {
-          "name": "Titanomachia",
+          "name": "Titanomachia -Persona-",
           "level": 0
         },
         {
@@ -2272,7 +2272,7 @@
       "lu": 29,
       "learnset": [
         {
-          "name": "Titanomachia",
+          "name": "Titanomachia -Persona-",
           "level": 0
         },
         {
@@ -21897,7 +21897,7 @@
       "devName": "akashicarts",
       "affinity": "Phys",
       "type": "ATTACK",
-      "unique": true,
+      "unique": false,
       "range": 1,
       "cost": {
         "type": "MP",
@@ -31377,7 +31377,7 @@
       "devName": "titanomachia",
       "affinity": "Phys",
       "type": "ATTACK",
-      "unique": true,
+      "unique": false,
       "range": 0,
       "cost": {
         "type": "MP",
@@ -31392,6 +31392,32 @@
       "flags": [],
       "ailments": [],
       "series": "smt"
+    },
+    {
+      "name": "Titanomachia -Persona-",
+      "devName": "titanomachiapersona",
+      "affinity": "Fire",
+      "type": "ATTACK",
+      "unique": true,
+      "range": 0,
+      "cost": {
+        "type": "MP",
+        "amount": 34
+      },
+      "power": {
+        "amount": 280,
+        "display": "Severe"
+      },
+      "min": 1,
+      "max": 1,
+      "flags": [],
+      "ailments": [
+        {
+          "name": "Fear",
+          "chance": 70
+        }
+      ],
+      "series": "persona"
     },
     {
       "name": "Torrent Shot",
