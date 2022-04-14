@@ -523,6 +523,7 @@ module.exports.TauntSkill = class extends BaseSkill {
 		this.affinity = data.affinity;
 		this.type = data.type;
 		this.buff = data.buff;
+		this.cost = data.cost;
 	}
 };
 module.exports.WallSkill = class extends BaseSkill {

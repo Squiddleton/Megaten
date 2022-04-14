@@ -23527,7 +23527,7 @@
       "type": "SUPPORT",
       "unique": false,
       "range": 1,
-      "cost": 30,
+      "cost": 150,
       "surround": false,
       "buffs": [],
       "negate": false,
@@ -23553,7 +23553,7 @@
       "type": "SUPPORT",
       "unique": false,
       "range": 0,
-      "cost": 10,
+      "cost": 40,
       "surround": false,
       "buffs": [
         "Attack",
@@ -23571,7 +23571,7 @@
       "type": "SUPPORT",
       "unique": false,
       "range": 0,
-      "cost": 10,
+      "cost": 40,
       "surround": false,
       "buffs": [],
       "negate": true,
@@ -24699,7 +24699,8 @@
       "affinity": "Support",
       "type": "TAUNT",
       "unique": false,
-      "buff": "Defense Up"
+      "buff": "Defense Up",
+      "cost": 30
     },
     {
       "name": "Fighting Spirit",
@@ -24913,7 +24914,7 @@
       "type": "AILMENT",
       "unique": false,
       "range": 0,
-      "cost": 10,
+      "cost": 25,
       "ailments": [
         "Mirage"
       ],
@@ -27768,7 +27769,7 @@
       "type": "SUPPORT",
       "unique": false,
       "range": 0,
-      "cost": 24,
+      "cost": 30,
       "surround": false,
       "buffs": [
         "Defense"
@@ -27784,7 +27785,7 @@
       "type": "SUPPORT",
       "unique": false,
       "range": 0,
-      "cost": 24,
+      "cost": 30,
       "surround": false,
       "buffs": [],
       "negate": false,
@@ -27861,7 +27862,7 @@
       "type": "SUPPORT",
       "unique": false,
       "range": 0,
-      "cost": 24,
+      "cost": 30,
       "surround": false,
       "buffs": [
         "Agility"
@@ -27877,7 +27878,7 @@
       "type": "SUPPORT",
       "unique": false,
       "range": 0,
-      "cost": 24,
+      "cost": 30,
       "surround": false,
       "buffs": [],
       "negate": false,
@@ -27893,7 +27894,7 @@
       "type": "SUPPORT",
       "unique": false,
       "range": 0,
-      "cost": 24,
+      "cost": 30,
       "surround": false,
       "buffs": [
         "Attack"
@@ -27909,7 +27910,7 @@
       "type": "SUPPORT",
       "unique": false,
       "range": 0,
-      "cost": 24,
+      "cost": 30,
       "surround": false,
       "buffs": [],
       "negate": false,
@@ -31227,7 +31228,8 @@
       "affinity": "Support",
       "type": "TAUNT",
       "unique": false,
-      "buff": null
+      "buff": null,
+      "cost": 10
     },
     {
       "name": "Taunt -Persona-",
@@ -31620,7 +31622,7 @@
       "affinity": "Support",
       "type": "MISC",
       "unique": false,
-      "cost": 24
+      "cost": 6
     },
     {
       "name": "Treasure Radar",
@@ -32110,7 +32112,8 @@
       "affinity": "Support",
       "type": "TAUNT",
       "unique": true,
-      "buff": "Accuracy/Evasion Greatly Up"
+      "buff": "Accuracy/Evasion Greatly Up",
+      "cost": 5
     },
     {
       "name": "Wrath Tempest",

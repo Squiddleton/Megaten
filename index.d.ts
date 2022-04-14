@@ -595,12 +595,14 @@ export class TauntSkill extends BaseSkill {
     affinity: 'Support';
     type: 'TAUNT';
     buff: string | null;
+    cost: number;
 }
 
 export interface TauntSkillData extends BaseSkillData {
     affinity: 'Support';
     type: 'TAUNT';
     buff: string | null;
+    cost: number;
 }
 
 export class WallSkill extends BaseSkill {
