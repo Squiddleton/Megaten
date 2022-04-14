@@ -24689,6 +24689,7 @@
       "devName": "fierceroar",
       "affinity": "Support",
       "type": "TAUNT",
+      "unique": false,
       "buff": "Defense Up"
     },
     {
@@ -31149,6 +31150,7 @@
       "devName": "taunt",
       "affinity": "Support",
       "type": "TAUNT",
+      "unique": false,
       "buff": null
     },
     {
@@ -32005,6 +32007,7 @@
       "devName": "witnessme",
       "affinity": "Support",
       "type": "TAUNT",
+      "unique": true,
       "buff": "Accuracy/Evasion Greatly Up"
     },
     {
