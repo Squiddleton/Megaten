@@ -1502,7 +1502,7 @@
           "level": 0
         },
         {
-          "name": "Taunt",
+          "name": "Taunt -Persona-",
           "level": 0
         },
         {
@@ -30827,8 +30827,8 @@
       "auto": []
     },
     {
-      "name": "Taunt",
-      "devName": "taunt",
+      "name": "Taunt -Persona-",
+      "devName": "tauntpersona",
       "affinity": "Ailment",
       "type": "AILMENT",
       "unique": false,
