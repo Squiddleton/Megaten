@@ -16170,7 +16170,7 @@
           "level": 62
         },
         {
-          "name": "Brain Jack",
+          "name": "Sexy Dance",
           "level": 65
         },
         {
@@ -21699,11 +21699,11 @@
       "unique": false,
       "range": 0,
       "cost": 12,
-      "ailment": "Fear",
-      "chance": {
-        "amount": 0,
-        "display": "Medium"
-      }
+      "ailments": [
+        "Fear"
+      ],
+      "chance": 55,
+      "flags": []
     },
     {
       "name": "Abyssal Eye",
@@ -22645,20 +22645,6 @@
       "series": "persona"
     },
     {
-      "name": "Brain Jack",
-      "devName": "brainjack",
-      "affinity": "Ailment",
-      "type": "AILMENT",
-      "unique": false,
-      "range": 0,
-      "cost": 12,
-      "ailment": "Brainwash",
-      "chance": {
-        "amount": 0,
-        "display": "Medium"
-      }
-    },
-    {
       "name": "Brain Shake",
       "devName": "brainshake",
       "affinity": "Phys",
@@ -23363,11 +23349,11 @@
       "unique": false,
       "range": 1,
       "cost": 5,
-      "ailment": "Dizzy",
-      "chance": {
-        "amount": 0,
-        "display": "High"
-      }
+      "ailments": [
+        "Dizzy"
+      ],
+      "chance": 70,
+      "flags": []
     },
     {
       "name": "Deadly Fury",
@@ -23853,12 +23839,12 @@
       "type": "AILMENT",
       "unique": false,
       "range": 1,
-      "cost": 5,
-      "ailment": "Sleep",
-      "chance": {
-        "amount": 0,
-        "display": "High"
-      }
+      "cost": 10,
+      "ailments": [
+        "Sleep"
+      ],
+      "chance": 80,
+      "flags": []
     },
     {
       "name": "Dormin Rush",
@@ -24084,6 +24070,20 @@
         }
       ],
       "series": "smt"
+    },
+    {
+      "name": "Dustoma",
+      "devName": "dustoma",
+      "affinity": "Ailment",
+      "type": "AILMENT",
+      "unique": false,
+      "range": 1,
+      "cost": 10,
+      "ailments": [
+        "Mirage"
+      ],
+      "chance": 75,
+      "flags": []
     },
     {
       "name": "Eat Whole",
@@ -24477,11 +24477,11 @@
       "unique": false,
       "range": 0,
       "cost": 12,
-      "ailment": "Fear",
-      "chance": {
-        "amount": 0,
-        "display": "Medium"
-      }
+      "ailments": [
+        "Fear"
+      ],
+      "chance": 55,
+      "flags": []
     },
     {
       "name": "Evil Touch",
@@ -24491,11 +24491,11 @@
       "unique": false,
       "range": 1,
       "cost": 5,
-      "ailment": "Fear",
-      "chance": {
-        "amount": 0,
-        "display": "High"
-      }
+      "ailments": [
+        "Fear"
+      ],
+      "chance": 70,
+      "flags": []
     },
     {
       "name": "Fallen Destroyer",
@@ -24813,6 +24813,20 @@
       "series": "smt"
     },
     {
+      "name": "Fogna",
+      "devName": "fogna",
+      "affinity": "Ailment",
+      "type": "AILMENT",
+      "unique": false,
+      "range": 0,
+      "cost": 10,
+      "ailments": [
+        "Mirage"
+      ],
+      "chance": 50,
+      "flags": []
+    },
+    {
       "name": "Force Block",
       "devName": "forceblock",
       "affinity": "Support",
@@ -24994,6 +25008,23 @@
         }
       ],
       "series": "smt"
+    },
+    {
+      "name": "Frolic",
+      "devName": "frolic",
+      "affinity": "Ailment",
+      "type": "AILMENT",
+      "unique": true,
+      "range": 0,
+      "cost": 80,
+      "ailments": [
+        "Charm"
+      ],
+      "chance": 40,
+      "flags": [
+        "Attack Greatly Down",
+        "Defense Greatly Down"
+      ]
     },
     {
       "name": "Full Analysis",
@@ -26664,12 +26695,12 @@
       "type": "AILMENT",
       "unique": false,
       "range": 0,
-      "cost": 12,
-      "ailment": "Sleep",
-      "chance": {
-        "amount": 0,
-        "display": "Medium"
-      }
+      "cost": 25,
+      "ailments": [
+        "Sleep"
+      ],
+      "chance": 55,
+      "flags": []
     },
     {
       "name": "Lunge",
@@ -27164,12 +27195,12 @@
       "type": "AILMENT",
       "unique": false,
       "range": 1,
-      "cost": 5,
-      "ailment": "Forget",
-      "chance": {
-        "amount": 0,
-        "display": "High"
-      }
+      "cost": 10,
+      "ailments": [
+        "Seal"
+      ],
+      "chance": 65,
+      "flags": []
     },
     {
       "name": "Makajamaon",
@@ -27178,12 +27209,12 @@
       "type": "AILMENT",
       "unique": false,
       "range": 0,
-      "cost": 12,
-      "ailment": "Forget",
-      "chance": {
-        "amount": 0,
-        "display": "High"
-      }
+      "cost": 25,
+      "ailments": [
+        "Seal"
+      ],
+      "chance": 40,
+      "flags": []
     },
     {
       "name": "Makara Break",
@@ -27535,12 +27566,12 @@
       "type": "AILMENT",
       "unique": false,
       "range": 1,
-      "cost": 5,
-      "ailment": "Brainwash",
-      "chance": {
-        "amount": 0,
-        "display": "High"
-      }
+      "cost": 10,
+      "ailments": [
+        "Charm"
+      ],
+      "chance": 70,
+      "flags": []
     },
     {
       "name": "Masquerade",
@@ -28569,11 +28600,11 @@
       "unique": false,
       "range": 0,
       "cost": 12,
-      "ailment": "Dizzy",
-      "chance": {
-        "amount": 0,
-        "display": "Medium"
-      }
+      "ailments": [
+        "Dizzy"
+      ],
+      "chance": 55,
+      "flags": []
     },
     {
       "name": "Nuke Amp",
@@ -28763,11 +28794,11 @@
       "unique": false,
       "range": 1,
       "cost": 5,
-      "ailment": "Despair",
-      "chance": {
-        "amount": 0,
-        "display": "High"
-      }
+      "ailments": [
+        "Despair"
+      ],
+      "chance": 70,
+      "flags": []
     },
     {
       "name": "One-shot Kill",
@@ -28952,11 +28983,11 @@
       "unique": true,
       "range": 0,
       "cost": 4,
-      "ailment": "Sleep",
-      "chance": {
-        "amount": 0,
-        "display": "High"
-      }
+      "ailments": [
+        "Sleep"
+      ],
+      "chance": 70,
+      "flags": []
     },
     {
       "name": "Phys Block",
@@ -29006,12 +29037,12 @@
       "type": "AILMENT",
       "unique": false,
       "range": 1,
-      "cost": 5,
-      "ailment": "Poison",
-      "chance": {
-        "amount": 0,
-        "display": "High"
-      }
+      "cost": 10,
+      "ailments": [
+        "Poison"
+      ],
+      "chance": 85,
+      "flags": []
     },
     {
       "name": "Poison Mist",
@@ -29021,11 +29052,11 @@
       "unique": false,
       "range": 0,
       "cost": 12,
-      "ailment": "Poison",
-      "chance": {
-        "amount": 0,
-        "display": "Medium"
-      }
+      "ailments": [
+        "Poison"
+      ],
+      "chance": 55,
+      "flags": []
     },
     {
       "name": "Poison Skewer",
@@ -29111,6 +29142,22 @@
       "flags": [],
       "ailments": [],
       "series": "persona"
+    },
+    {
+      "name": "Preach",
+      "devName": "preach",
+      "affinity": "Ailment",
+      "type": "AILMENT",
+      "unique": true,
+      "range": 0,
+      "cost": 35,
+      "ailments": [
+        "Confuse",
+        "Charm",
+        "Sleep"
+      ],
+      "chance": 75,
+      "flags": []
     },
     {
       "name": "Primal Force",
@@ -29307,12 +29354,12 @@
       "type": "AILMENT",
       "unique": false,
       "range": 1,
-      "cost": 5,
-      "ailment": "Confuse",
-      "chance": {
-        "amount": 0,
-        "display": "High"
-      }
+      "cost": 10,
+      "ailments": [
+        "Confuse"
+      ],
+      "chance": 70,
+      "flags": []
     },
     {
       "name": "Puncture Punch",
@@ -30186,6 +30233,20 @@
       "series": "smt"
     },
     {
+      "name": "Sexy Dance",
+      "devName": "sexydance",
+      "affinity": "Ailment",
+      "type": "AILMENT",
+      "unique": false,
+      "range": 0,
+      "cost": 25,
+      "ailments": [
+        "Charm"
+      ],
+      "chance": 45,
+      "flags": []
+    },
+    {
       "name": "Sharp Student",
       "devName": "sharpstudent",
       "affinity": "Passive",
@@ -30360,6 +30421,21 @@
       "weather": false
     },
     {
+      "name": "Slumber Vortex",
+      "devName": "slumbervortex",
+      "affinity": "Ailment",
+      "type": "AILMENT",
+      "unique": false,
+      "range": 0,
+      "cost": 35,
+      "ailments": [
+        "Sleep",
+        "Mirage"
+      ],
+      "chance": 40,
+      "flags": []
+    },
+    {
       "name": "Snap",
       "devName": "snap",
       "affinity": "Gun",
@@ -30462,11 +30538,11 @@
       "unique": false,
       "range": 1,
       "cost": 5,
-      "ailment": "Exhaustion",
-      "chance": {
-        "amount": 0,
-        "display": "High"
-      }
+      "ailments": [
+        "Exhaustion"
+      ],
+      "chance": 70,
+      "flags": []
     },
     {
       "name": "Soul Chain",
@@ -30558,6 +30634,23 @@
       ],
       "ailments": [],
       "series": "smt"
+    },
+    {
+      "name": "Stagnant Air",
+      "devName": "stagnantair",
+      "affinity": "Ailment",
+      "type": "AILMENT",
+      "unique": true,
+      "range": 0,
+      "cost": 50,
+      "ailments": [
+        "Mirage"
+      ],
+      "chance": 80,
+      "flags": [
+        "Defense Down",
+        "Accuracy/Evasion Down"
+      ]
     },
     {
       "name": "Stagnant Air -Persona-",
@@ -30834,11 +30927,11 @@
       "unique": false,
       "range": 1,
       "cost": 5,
-      "ailment": "Rage",
-      "chance": {
-        "amount": 0,
-        "display": "High"
-      }
+      "ailments": [
+        "Rage"
+      ],
+      "chance": 70,
+      "flags": []
     },
     {
       "name": "Technical High",
@@ -30876,12 +30969,12 @@
       "type": "AILMENT",
       "unique": false,
       "range": 0,
-      "cost": 12,
-      "ailment": "Confuse",
-      "chance": {
-        "amount": 0,
-        "display": "Medium"
-      }
+      "cost": 25,
+      "ailments": [
+        "Confuse"
+      ],
+      "chance": 45,
+      "flags": []
     },
     {
       "name": "Terrorblade",
@@ -31120,6 +31213,36 @@
         }
       ],
       "series": "smt"
+    },
+    {
+      "name": "Toxic Cloud",
+      "devName": "toxiccloud",
+      "affinity": "Ailment",
+      "type": "AILMENT",
+      "unique": false,
+      "range": 0,
+      "cost": 25,
+      "ailments": [
+        "Poison"
+      ],
+      "chance": 60,
+      "flags": []
+    },
+    {
+      "name": "Toxic Spray",
+      "devName": "toxicspray",
+      "affinity": "Ailment",
+      "type": "AILMENT",
+      "unique": false,
+      "range": 0,
+      "cost": 15,
+      "ailments": [
+        "Poison"
+      ],
+      "chance": 85,
+      "flags": [
+        "Defense Down"
+      ]
     },
     {
       "name": "Toxic Sting",
@@ -31482,11 +31605,11 @@
       "unique": false,
       "range": 0,
       "cost": 12,
-      "ailment": "Rage",
-      "chance": {
-        "amount": 0,
-        "display": "Medium"
-      }
+      "ailments": [
+        "Rage"
+      ],
+      "chance": 55,
+      "flags": []
     },
     {
       "name": "Walpurgisnacht",

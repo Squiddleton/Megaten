@@ -116,11 +116,9 @@ export class AilmentSkill extends BaseSkill {
     type: 'AILMENT';
     range: Range;
     cost: number;
-    ailment: string;
-    chance: {
-        amount: number;
-        display: Exclude<ChanceDisplay, 'Low'>
-    };
+    ailments: string[];
+    chance: number;
+    flags: string[];
 }
 
 export interface AilmentSkillData extends BaseSkillData {
@@ -128,11 +126,9 @@ export interface AilmentSkillData extends BaseSkillData {
     type: 'AILMENT';
     range: Range;
     cost: number;
-    ailment: string;
-    chance: {
-        amount: number;
-        display: Exclude<ChanceDisplay, 'Low'>
-    };
+    ailments: string[];
+    chance: number;
+    flags: string[];
 }
 
 export class AttackSkill extends BaseSkill {

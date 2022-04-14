@@ -84,7 +84,7 @@ class BaseSkill {
 	get description() {
 		switch (this.type) {
 		case 'AILMENT': {
-			return `${this.chance.display} chance to inflict ${this.ailment} on ${this.range ? 'one foe' : 'all foes'}.`;
+			return `Chance to inflict ${this.ailments.join('/')} on ${this.range ? 'one foe' : 'all foes'}.`;
 		}
 		case 'ATTACK': {
 			const { ailments } = this;
@@ -166,8 +166,9 @@ module.exports.AilmentSkill = class extends BaseSkill {
 		this.type = data.type;
 		this.range = data.range;
 		this.cost = data.cost;
-		this.ailment = data.ailment;
+		this.ailments = data.ailments;
 		this.chance = data.chance;
+		this.flags = data.flags;
 	}
 };
 module.exports.AttackSkill = class extends BaseSkill {
