@@ -23275,6 +23275,15 @@
       "series": "smt"
     },
     {
+      "name": "Curse Siphon",
+      "devName": "cursesiphon",
+      "affinity": "Passive",
+      "type": "SIPHON",
+      "unique": false,
+      "amount": 10,
+      "criteria": "Ailment"
+    },
+    {
       "name": "Damascus Claw",
       "devName": "damascusclaw",
       "affinity": "Phys",
@@ -25462,6 +25471,15 @@
       "series": "smt"
     },
     {
+      "name": "Great Curse Siphon",
+      "devName": "greatcursesiphon",
+      "affinity": "Passive",
+      "type": "SIPHON",
+      "unique": false,
+      "amount": 20,
+      "criteria": "Ailment"
+    },
+    {
       "name": "Great Life Spring",
       "devName": "greatlifespring",
       "affinity": "Passive",
@@ -26099,6 +26117,15 @@
       "unique": false,
       "amount": 35,
       "element": "Phys"
+    },
+    {
+      "name": "High Restore",
+      "devName": "highrestore",
+      "affinity": "Passive",
+      "type": "SIPHON",
+      "unique": false,
+      "amount": 20,
+      "criteria": "Weakness/Critical"
     },
     {
       "name": "Holy Benevolence",
@@ -30248,6 +30275,15 @@
       "newAffinity": "Resist"
     },
     {
+      "name": "Restore",
+      "devName": "restore",
+      "affinity": "Passive",
+      "type": "SIPHON",
+      "unique": false,
+      "amount": 10,
+      "criteria": "Weakness/Critical"
+    },
+    {
       "name": "Retaliate",
       "devName": "retaliate",
       "affinity": "Passive",
@@ -30520,9 +30556,13 @@
       "name": "Shield of Justice",
       "devName": "shieldofjustice",
       "affinity": "Support",
-      "type": "MISC",
+      "type": "BARRIER",
       "unique": true,
-      "cost": 160
+      "range": 0,
+      "cost": 160,
+      "barriers": [
+        "Shield of Justice"
+      ]
     },
     {
       "name": "Shining Arrows",
