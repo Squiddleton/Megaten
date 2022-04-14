@@ -10899,7 +10899,7 @@
           "level": 14
         },
         {
-          "name": "Forget Boost",
+          "name": "Seal Boost",
           "level": 16
         }
       ],
@@ -13631,7 +13631,7 @@
           "level": 8
         },
         {
-          "name": "Resist Dizzy",
+          "name": "Resist Mirage",
           "level": 9
         },
         {
@@ -15122,7 +15122,7 @@
           "level": 53
         },
         {
-          "name": "Forget Boost",
+          "name": "Seal Boost",
           "level": 54
         },
         {
@@ -16927,7 +16927,7 @@
           "level": 8
         },
         {
-          "name": "Resist Dizzy",
+          "name": "Resist Mirage",
           "level": 10
         }
       ],
@@ -19623,7 +19623,7 @@
           "level": 46
         },
         {
-          "name": "Null Dizzy",
+          "name": "Null Mirage",
           "level": 48
         },
         {
@@ -20047,7 +20047,7 @@
           "level": 0
         },
         {
-          "name": "Forget Boost",
+          "name": "Seal Boost",
           "level": 71
         },
         {
@@ -23459,7 +23459,7 @@
       "range": 1,
       "cost": 5,
       "ailments": [
-        "Dizzy"
+        "Mirage"
       ],
       "chance": 70,
       "flags": []
@@ -23805,12 +23805,12 @@
       "cost": 48
     },
     {
-      "name": "Dizzy Boost",
-      "devName": "dizzyboost",
+      "name": "Mirage Boost",
+      "devName": "mirageboost",
       "affinity": "Passive",
       "type": "AILBOOST",
       "unique": false,
-      "ailment": "Dizzy",
+      "ailment": "Mirage",
       "amount": 25,
       "weather": false
     },
@@ -24964,7 +24964,7 @@
       "flags": [],
       "ailments": [
         {
-          "name": "Dizzy",
+          "name": "Mirage",
           "chance": 5
         }
       ],
@@ -25024,12 +25024,12 @@
       "element": "Force"
     },
     {
-      "name": "Forget Boost",
-      "devName": "forgetboost",
+      "name": "Seal Boost",
+      "devName": "sealboost",
       "affinity": "Passive",
       "type": "AILBOOST",
       "unique": false,
-      "ailment": "Forget",
+      "ailment": "Seal",
       "amount": 25,
       "weather": false
     },
@@ -25814,7 +25814,7 @@
       "flags": [],
       "ailments": [
         {
-          "name": "Forget",
+          "name": "Seal",
           "chance": 20
         }
       ],
@@ -28420,7 +28420,7 @@
       "flags": [],
       "ailments": [
         {
-          "name": "Forget",
+          "name": "Seal",
           "chance": 5
         }
       ],
@@ -28999,7 +28999,7 @@
       "range": 0,
       "cost": 12,
       "ailments": [
-        "Dizzy"
+        "Mirage"
       ],
       "chance": 55,
       "flags": []
@@ -29068,12 +29068,12 @@
       "newAffinity": "Null"
     },
     {
-      "name": "Null Dizzy",
-      "devName": "nulldizzy",
+      "name": "Null Mirage",
+      "devName": "nullmirage",
       "affinity": "Passive",
       "type": "AILDEFENSIVE",
       "unique": false,
-      "ailment": "Dizzy",
+      "ailment": "Mirage",
       "resistance": "Null"
     },
     {
@@ -29104,12 +29104,12 @@
       "newAffinity": "Null"
     },
     {
-      "name": "Null Forget",
-      "devName": "nullforget",
+      "name": "Null Seal",
+      "devName": "nullseal",
       "affinity": "Passive",
       "type": "AILDEFENSIVE",
       "unique": false,
-      "ailment": "Forget",
+      "ailment": "Seal",
       "resistance": "Null"
     },
     {
@@ -30140,7 +30140,7 @@
       "range": 1,
       "cost": 5,
       "ailments": [
-        "Dizzy"
+        "Mirage"
       ],
       "amount": null,
       "buffs": [],
@@ -30273,12 +30273,12 @@
       "resistance": "Resist"
     },
     {
-      "name": "Resist Dizzy",
-      "devName": "resistdizzy",
+      "name": "Resist Mirage",
+      "devName": "resistmirage",
       "affinity": "Passive",
       "type": "AILDEFENSIVE",
       "unique": false,
-      "ailment": "Dizzy",
+      "ailment": "Mirage",
       "resistance": "Resist"
     },
     {
@@ -30327,12 +30327,12 @@
       "newAffinity": "Resist"
     },
     {
-      "name": "Resist Forget",
-      "devName": "resistforget",
+      "name": "Resist Seal",
+      "devName": "resistseal",
       "affinity": "Passive",
       "type": "AILDEFENSIVE",
       "unique": false,
-      "ailment": "Forget",
+      "ailment": "Seal",
       "resistance": "Resist"
     },
     {
@@ -30849,7 +30849,7 @@
       "flags": [],
       "ailments": [
         {
-          "name": "Dizzy",
+          "name": "Mirage",
           "chance": 20
         }
       ],
