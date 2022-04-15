@@ -21679,11 +21679,9 @@
       "affinity": "Passive",
       "type": "POSTBATTLE",
       "unique": false,
-      "range": 1,
-      "xp": 15,
-      "yen": 0,
-      "hp": 0,
-      "mp": 0
+      "amount": 15,
+      "inactive": false,
+      "stat": "EXP"
     },
     {
       "name": "+50% EXP",
@@ -21691,11 +21689,9 @@
       "affinity": "Passive",
       "type": "POSTBATTLE",
       "unique": false,
-      "range": 1,
-      "xp": 50,
-      "yen": 0,
-      "hp": 0,
-      "mp": 0
+      "amount": 50,
+      "inactive": false,
+      "stat": "EXP"
     },
     {
       "name": "Abysmal Surge",
@@ -25540,11 +25536,9 @@
       "affinity": "Passive",
       "type": "POSTBATTLE",
       "unique": false,
-      "range": 1,
-      "xp": 25,
-      "yen": 0,
-      "hp": 0,
-      "mp": 0
+      "amount": 25,
+      "inactive": true,
+      "stat": "EXP"
     },
     {
       "name": "Growth 2",
@@ -25552,11 +25546,9 @@
       "affinity": "Passive",
       "type": "POSTBATTLE",
       "unique": false,
-      "range": 1,
-      "xp": 50,
-      "yen": 0,
-      "hp": 0,
-      "mp": 0
+      "amount": 50,
+      "inactive": true,
+      "stat": "EXP"
     },
     {
       "name": "Growth 3",
@@ -25564,11 +25556,9 @@
       "affinity": "Passive",
       "type": "POSTBATTLE",
       "unique": false,
-      "range": 1,
-      "xp": 100,
-      "yen": 0,
-      "hp": 0,
-      "mp": 0
+      "amount": 100,
+      "inactive": true,
+      "stat": "EXP"
     },
     {
       "name": "Gun Amp",
@@ -26745,11 +26735,9 @@
       "affinity": "Passive",
       "type": "POSTBATTLE",
       "unique": false,
-      "range": 1,
-      "xp": 0,
-      "yen": 0,
-      "hp": 50,
-      "mp": 0
+      "amount": 50,
+      "inactive": false,
+      "stat": "HP"
     },
     {
       "name": "Life Drain",
@@ -26829,11 +26817,9 @@
       "affinity": "Passive",
       "type": "POSTBATTLE",
       "unique": false,
-      "range": 1,
-      "xp": 0,
-      "yen": 0,
-      "hp": 25,
-      "mp": 0
+      "amount": 25,
+      "inactive": false,
+      "stat": "HP"
     },
     {
       "name": "Light Mana Aid",
@@ -26841,11 +26827,9 @@
       "affinity": "Passive",
       "type": "POSTBATTLE",
       "unique": false,
-      "range": 1,
-      "xp": 0,
-      "yen": 0,
-      "hp": 0,
-      "mp": 25
+      "amount": 25,
+      "inactive": false,
+      "stat": "MP"
     },
     {
       "name": "Light Pleroma",
@@ -27629,11 +27613,9 @@
       "affinity": "Passive",
       "type": "POSTBATTLE",
       "unique": false,
-      "range": 1,
-      "xp": 0,
-      "yen": 0,
-      "hp": 0,
-      "mp": 50
+      "amount": 50,
+      "inactive": false,
+      "stat": "MP"
     },
     {
       "name": "Mana Spring",
@@ -28528,11 +28510,9 @@
       "affinity": "Passive",
       "type": "POSTBATTLE",
       "unique": false,
-      "range": 0,
-      "xp": 0,
-      "yen": 15,
-      "hp": 0,
-      "mp": 0
+      "amount": 15,
+      "inactive": false,
+      "stat": "Money"
     },
     {
       "name": "Morning Star",
@@ -31900,11 +31880,9 @@
       "affinity": "Passive",
       "type": "POSTBATTLE",
       "unique": false,
-      "range": 1,
-      "xp": 0,
-      "yen": 0,
-      "hp": 100,
-      "mp": 100
+      "amount": 100,
+      "inactive": false,
+      "stat": "HPMP"
     },
     {
       "name": "Vigor Song",

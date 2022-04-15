@@ -445,21 +445,17 @@ export class PostBattleSkill extends BaseSkill {
     constructor(data: PostBattleSkillData);
     affinity: 'Passive';
     type: 'POSTBATTLE';
-    range: Range;
-    xp: number;
-    yen: number;
-    hp: number;
-    mp: number;
+    amount: number;
+    inactive: boolean;
+    stat: PostBattleStat;
 }
 
 export interface PostBattleSkillData extends BaseSkillData {
     affinity: 'Passive';
     type: 'POSTBATTLE';
-    range: Range;
-    xp: number;
-    yen: number;
-    hp: number;
-    mp: number;
+    amount: number;
+    inactive: boolean;
+    stat: PostBattleStat;
 }
 
 export class RecoverySkill extends BaseSkill {
@@ -489,7 +485,7 @@ export class RegenSkill extends BaseSkill {
     constructor(data: RegenSkillData);
     affinity: 'Passive';
     type: 'REGEN';
-    hpmpail: HPMPAIL;
+    hpmpail: HPMPAil;
     amount: number;
     percent: boolean;
     ambush: boolean;
@@ -499,7 +495,7 @@ export class RegenSkill extends BaseSkill {
 export interface RegenSkillData extends BaseSkillData {
     affinity: 'Passive';
     type: 'REGEN';
-    hpmpail: HPMPAIL;
+    hpmpail: HPMPAil;
     amount: number;
     percent: boolean;
     ambush: boolean;
@@ -678,7 +674,8 @@ export type CounterAffinity = 'Phys' | 'Dark';
 export type Game = 'p3' | 'p4' | 'p5' | 'smt5';
 
 export type HPMP = 'HP' | 'MP';
-export type HPMPAIL = HPMP | 'HPMP' | 'AIL'
+export type HPMPAil = HPMP | 'HPMP' | 'AIL'
+export type PostBattleStat = HPMP | 'EXP' | 'Money'
 
 export type Race = 'Amatsu' | 'Avatar' | 'Avian' | 'Beast' | 'Brute' | 'Deity' | 'Devil' | 'Divine' | 'Dragon' | 'Drake' | 'Element' | 'Fairy' | 'Fallen' | 'Femme' | 'Fiend' | 'Foul' | 'Fury' | 'Genma' | 'Godly' | 'Haunt' | 'Herald' | 'Holy' | 'Jaki' | 'Jirae' | 'Kishin' | 'Kunitsu' | 'Lady' | 'Megami' | 'Mitama' | 'Night' | 'Nymph' | 'Persona' | 'Picaro' | 'Raptor' | 'Snake' | 'Treasure' | 'Tyrant' | 'Vile' | 'Wargod' | 'Wilder' | 'Yoma';
 

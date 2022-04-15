@@ -412,11 +412,9 @@ module.exports.PostBattleSkill = class extends BaseSkill {
 		super(data);
 		this.affinity = data.affinity;
 		this.type = data.type;
-		this.range = data.range;
-		this.xp = data.xp;
-		this.yen = data.yen;
-		this.hp = data.hp;
-		this.mp = data.mp;
+		this.amount = data.amount;
+		this.inactive = data.inactive;
+		this.stat = data.stat;
 	}
 };
 module.exports.RecoverySkill = class extends BaseSkill {
