@@ -263,6 +263,7 @@ AttackSkill {
 * Skills with specific uses and few similar skills are placed into a "MISC" type.  Their "effect" property lists the skill's description in its last major appearance.
 * Typings are designed to be as specific as possible for efficient use.
 * Images originate from the best obtainable picture of the demon found at the current time.  These will be updated if/when renders are available for many Personas and classic demons.
+* Terms with multiple series-dependent names are given the name from SMTV (e.g. Vitality over Endurance, Light over Bless, Seal over Forget).  However, Force and Wind remain separated.
 
 ## Credits
 
