@@ -3987,7 +3987,7 @@
           "level": 68
         },
         {
-          "name": "Blazing Hell",
+          "name": "Maragibarion",
           "level": 74
         }
       ],
@@ -4181,7 +4181,7 @@
           "level": 68
         },
         {
-          "name": "Blazing Hell",
+          "name": "Maragibarion",
           "level": 74
         }
       ],
@@ -7224,7 +7224,7 @@
           "level": 68
         },
         {
-          "name": "Blazing Hell",
+          "name": "Maragibarion",
           "level": 74
         }
       ],
@@ -17116,11 +17116,11 @@
       "lu": 55,
       "learnset": [
         {
-          "name": "Diamond Dust",
+          "name": "Bufubarion",
           "level": 0
         },
         {
-          "name": "Ice Age",
+          "name": "Mabufubarion",
           "level": 0
         },
         {
@@ -22499,32 +22499,6 @@
       "series": "persona"
     },
     {
-      "name": "Blazing Hell",
-      "devName": "blazinghell",
-      "affinity": "Fire",
-      "type": "ATTACK",
-      "unique": false,
-      "range": 0,
-      "cost": {
-        "type": "MP",
-        "amount": 54
-      },
-      "power": {
-        "amount": 400,
-        "display": "Severe"
-      },
-      "min": 1,
-      "max": 1,
-      "flags": [],
-      "ailments": [
-        {
-          "name": "Burn",
-          "chance": 5
-        }
-      ],
-      "series": "persona"
-    },
-    {
       "name": "Bleeding Dry Brush",
       "devName": "bleedingdrybrush",
       "affinity": "Support",
@@ -23672,32 +23646,6 @@
       "amount": "Slight",
       "buffs": [],
       "flags": []
-    },
-    {
-      "name": "Diamond Dust",
-      "devName": "diamonddust",
-      "affinity": "Ice",
-      "type": "ATTACK",
-      "unique": false,
-      "range": 1,
-      "cost": {
-        "type": "MP",
-        "amount": 48
-      },
-      "power": {
-        "amount": 400,
-        "display": "Severe"
-      },
-      "min": 1,
-      "max": 1,
-      "flags": [],
-      "ailments": [
-        {
-          "name": "Freeze",
-          "chance": 5
-        }
-      ],
-      "series": "persona"
     },
     {
       "name": "Diamrita",
@@ -26440,32 +26388,6 @@
       "range": "Self",
       "cost": 50,
       "charge": "Pierce"
-    },
-    {
-      "name": "Inferno",
-      "devName": "inferno",
-      "affinity": "Fire",
-      "type": "ATTACK",
-      "unique": false,
-      "range": 1,
-      "cost": {
-        "type": "MP",
-        "amount": 48
-      },
-      "power": {
-        "amount": 400,
-        "display": "Severe"
-      },
-      "min": 1,
-      "max": 1,
-      "flags": [],
-      "ailments": [
-        {
-          "name": "Burn",
-          "chance": 5
-        }
-      ],
-      "series": "persona"
     },
     {
       "name": "Inspiring Leader",
@@ -32147,32 +32069,6 @@
       ],
       "ailments": [],
       "series": "smt"
-    },
-    {
-      "name": "Wild Thunder",
-      "devName": "wildthunder",
-      "affinity": "Elec",
-      "type": "ATTACK",
-      "unique": false,
-      "range": 0,
-      "cost": {
-        "type": "MP",
-        "amount": 54
-      },
-      "power": {
-        "amount": 400,
-        "display": "Severe"
-      },
-      "min": 1,
-      "max": 1,
-      "flags": [],
-      "ailments": [
-        {
-          "name": "Shock",
-          "chance": 5
-        }
-      ],
-      "series": "persona"
     },
     {
       "name": "Wind Amp",
