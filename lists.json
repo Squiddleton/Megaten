@@ -24582,7 +24582,7 @@
       "affinity": "Ailment",
       "type": "MISC",
       "unique": true,
-      "cost": 81,
+      "cost": 100,
       "effect": "Chance of instakill to 1 foe."
     },
     {
