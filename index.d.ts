@@ -663,8 +663,6 @@ export type LightDark = 'Light' | 'Dark';
 
 export type Buff = 'Attack' | 'Defense' | 'Accuracy/Evasion' | 'Double Defense' | 'Double Accuracy/Evasion';
 
-export type ChanceDisplay = 'Low' | 'Medium' | 'High';
-
 export type Element = 'Phys' | 'Gun' | 'Fire' | 'Ice' | 'Elec' | 'Force' | 'Wind' | 'Nuke' | 'Psy' | 'Light' | 'Dark' | 'Almighty';
 export type Inherit = Exclude<Element, 'Gun'> | 'Ailment' | 'Recovery' | 'Support';
 export type Affinity = Inherit | 'Gun' | 'Passive';
