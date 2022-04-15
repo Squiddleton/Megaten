@@ -677,8 +677,9 @@ export type HPMP = 'HP' | 'MP';
 export type HPMPAil = HPMP | 'HPMP' | 'AIL'
 export type PostBattleStat = HPMP | 'EXP' | 'Money'
 
-export type Race = 'Amatsu' | 'Avatar' | 'Avian' | 'Beast' | 'Brute' | 'Deity' | 'Devil' | 'Divine' | 'Dragon' | 'Drake' | 'Element' | 'Fairy' | 'Fallen' | 'Femme' | 'Fiend' | 'Foul' | 'Fury' | 'Genma' | 'Godly' | 'Haunt' | 'Herald' | 'Holy' | 'Jaki' | 'Jirae' | 'Kishin' | 'Kunitsu' | 'Lady' | 'Megami' | 'Mitama' | 'Night' | 'Nymph' | 'Persona' | 'Picaro' | 'Raptor' | 'Snake' | 'Treasure' | 'Tyrant' | 'Vile' | 'Wargod' | 'Wilder' | 'Yoma';
-
+export type Race = 'Amatsu' | 'Avatar' | 'Avian' | 'Beast' | 'Brute' | 'Deity' | 'Devil' | 'Divine' | 'Dragon' | 'Drake' | 'Element' | 'Fairy' | 'Fallen'
+    | 'Femme' | 'Fiend' | 'Foul' | 'Fury' | 'Genma' | 'Godly' | 'Haunt' | 'Herald' | 'Holy' | 'Jaki' | 'Jirae' | 'Kishin' | 'Kunitsu' | 'Lady'
+    | 'Megami' | 'Mitama' | 'Night' | 'Nymph' | 'Persona' | 'Picaro' | 'Raptor' | 'Snake' | 'Treasure' | 'Tyrant' | 'Vile' | 'Wargod' | 'Wilder' | 'Yoma';
 
 export type Range = 0 | 1;
 export type ChargeRange = 'Self' | 'Ally' | 'Party'
@@ -689,17 +690,17 @@ export type RestoreCriteria = 'Weakness/Critical' | 'Ailment'
 
 export type Series = 'persona' | 'smt';
 
-export type Skill = AilBoostSkill | AilDefensiveSkill | AilmentSkill | AttackSkill | AutoBuffSkill | BarrierSkill | BarrierBreakSkill | BlockSkill | BoostSkill
-    | BreakSkill | ChargeSkill | CritSkill | CritBoostSkill | DefensiveSkill | EndureSkill | EvasionSkill | HalveSkill
-    | InstaKillBoostSkill | MasterSkill | MiscSkill | NaviSkill | PersonaCounterSkill | PostBattleSkill | RecoverySkill | RegenSkill | SiphonSkill | SMTCounterSkill | SpringSkill | SupportSkill | SusceptibilitySkill | TauntSkill | WallSkill;
+export type Skill = AilBoostSkill | AilDefensiveSkill | AilmentSkill | AttackSkill | AutoBuffSkill | BarrierSkill | BarrierBreakSkill | BlockSkill | BoostSkill | BreakSkill
+    | ChargeSkill | CritSkill | CritBoostSkill | DefensiveSkill | EndureSkill | EvasionSkill | HalveSkill | InstaKillBoostSkill | MasterSkill | MiscSkill | NaviSkill
+    | PersonaCounterSkill | PostBattleSkill | RecoverySkill | RegenSkill | SiphonSkill | SMTCounterSkill | SpringSkill | SupportSkill | SusceptibilitySkill | TauntSkill | WallSkill;
 
-export type SkillData = AilBoostSkillData | AilDefensiveSkillData | AilmentSkillData | AttackSkillData | AutoBuffSkillData | BarrierSkillData | BarrierBreakSkillData | BlockSkillData | BoostSkillData
-    | BreakSkillData | ChargeSkillData | CritSkillData | CritBoostSkillData | DefensiveSkillData | EndureSkillData | EvasionSkillData | HalveSkillData
-    | InstaKillBoostSkillData | MasterSkillData | MiscSkillData | NaviSkillData | PersonaCounterSkillData | PostBattleSkillData | RecoverySkillData | RegenSkillData | SiphonSkillData | SMTCounterSkillData | SpringSkillData | SupportSkillData | SusceptibilitySkillData | TauntSkillData | WallSkillData;
+export type SkillData = AilBoostSkillData | AilDefensiveSkillData | AilmentSkillData | AttackSkillData | AutoBuffSkillData | BarrierSkillData | BarrierBreakSkillData | BlockSkillData | BoostSkillData | BreakSkillData
+    | ChargeSkillData | CritSkillData | CritBoostSkillData | DefensiveSkillData | EndureSkillData | EvasionSkillData | HalveSkillData | InstaKillBoostSkillData | MasterSkillData | MiscSkillData | NaviSkillData
+    | PersonaCounterSkillData | PostBattleSkillData | RecoverySkillData | RegenSkillData | SiphonSkillData | SMTCounterSkillData | SpringSkillData | SupportSkillData | SusceptibilitySkillData | TauntSkillData | WallSkillData;
 
-export type SkillType = 'AILBOOST' | 'AILDEFENSIVE' | 'AILMENT' | 'ATTACK' | 'AUTOBUFF' | 'BARRIER' | 'BARRIERBREAK' | 'BLOCK' | 'BOOST'
-    | 'BREAK' | 'CHARGE' | 'CRIT' |'CRITBOOST' | 'DEFENSIVE' | 'ENDURE' | 'EVASION' | 'HALVE'
-    | 'INSTAKILLBOOST' | 'MASTER' | 'MISC' | 'NAVI' | 'PERSONACOUNTER' | 'POSTBATTLE' | 'RECOVERY' | 'REGEN' | 'SIPHON' | 'SMTCOUNTER' | 'SPRING' | 'SUPPORT' | 'SUSCEPTIBILITY' | 'TAUNT' | 'WALL';
+export type SkillType = 'AILBOOST' | 'AILDEFENSIVE' | 'AILMENT' | 'ATTACK' | 'AUTOBUFF' | 'BARRIER' | 'BARRIERBREAK' | 'BLOCK' | 'BOOST' | 'BREAK'
+    | 'CHARGE' | 'CRIT' |'CRITBOOST' | 'DEFENSIVE' | 'ENDURE' | 'EVASION' | 'HALVE' | 'INSTAKILLBOOST' | 'MASTER' | 'MISC' | 'NAVI'
+    | 'PERSONACOUNTER' | 'POSTBATTLE' | 'RECOVERY' | 'REGEN' | 'SIPHON' | 'SMTCOUNTER' | 'SPRING' | 'SUPPORT' | 'SUSCEPTIBILITY' | 'TAUNT' | 'WALL';
 
 export interface Learnset {
     name: string;
