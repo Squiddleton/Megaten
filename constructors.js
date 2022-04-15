@@ -100,7 +100,7 @@ class BaseSkill {
 			return `Automatic ${this.buff} at the start of battle.`;
 		}
 		case 'CHARGE': {
-			return `Next ${this.charge === 'Charge' ? 'physical' : 'magical'} attack deals over double the damage${this.range === 1 ? '' : ' for all allies'}.`;
+			return `Next ${this.charge === 'Charge' ? 'physical' : 'magical'} attack deals over double the damage${this.range === 'Self' ? '' : ' for all allies'}.`;
 		}
 		case 'HALVE': {
 			return 'Half remaining HP of one foe.';
@@ -198,6 +198,7 @@ module.exports.AutoBuffSkill = class extends BaseSkill {
 		this.affinity = data.affinity;
 		this.type = data.type;
 		this.buff = data.buff;
+		this.range = data.range;
 	}
 };
 module.exports.BarrierSkill = class extends BaseSkill {

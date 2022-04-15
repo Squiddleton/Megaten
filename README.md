@@ -1,183 +1,269 @@
 # About
-A fan-made, unofficial collection of demons and skills from the Megaten series, primarily consisting of the Shin Megami Tensei and Persona franchises.
 
-These lists contain all the demons/Personas and skills from the following games, with more being added over time:
-* Persona 5 Strikers
-* Persona 5 Royal
-* Persona 5
-* **(Incomplete)** Persona 4 Golden
+A fan-made, unofficial collection of demons and skills from the "Megaten" series, primarily consisting of the Shin Megami Tensei and Persona franchises.
 
-NOTE: This is **not** a 1:1 database of all past data.  Skill and demon information is updated to the latest mainstream release, and damage values are manually adjusted relative to similar skills in said release.
+This contains all the demons/Personas and skills from the following games, with more being added over time:
 
-# Usage
+* Shin Megami Tensei V
+* Persona 5/Royal/Strikers
+* **(Incomplete)** Persona 4/Golden
+* **(Incomplete)** Persona 3/Portable/FES
+
+NOTE: This is **not** a 1:1 database of all past data.  Skill and demon information is updated to the latest mainstream release, and more changes are found in the Notes section.
+
+## Usage
+
 This package requires Node.js v14.0.0 or higher.
 
 First, install it by running the following command in your terminal:
-```
+
+```sh-session
 npm install megaten
 ```
 
 After installation, you may use it through methods such as the following:
+
 ```javascript
 const megaten = require('megaten') // Or, "import megaten from 'megaten'" in ES6.  Destructuring syntax is also supported
 
 // All get... functions find by the input's name without attention to capitalization, spaces, punctuation, etc. via the exported "noPunc" utility function
 const jack = megaten.getDemon('Jack Frost!!!') // Gets a Demon instance
 const bufu = megaten.getSkill('bufu') // Gets a Skill instance
-const regent = megaten.getTreasureDemon('Regent') // Gets a TreasureDemon instance
 
-const { demons, skills, treasureDemons } = megaten // Gets full arrays of the respective data instances
+const { demons, skills } = megaten // Gets full arrays of the respective data instances
 ```
 
 ## Demons
-All demons follow an identical template.
 
-#### Example:
+Most demons follow an identical template. However, ones that are specifically attached to the Persona series (marked by a 'Persona' race) have additional properties.
+
+### Examples
+
 ```javascript
 Demon {
-  name: 'Loki -P5-', // The name of the demon, with some being named after unique variants in specific games
-  devName: 'lokip5', // The name without capitalization, spaces, punctuation, accents, etc.
-  aliases: [
-    'loki' // Possible devNames that the demon is commonly referred to
-  ],
-  inherit: 'Curse', // The affinity which determines inheritable skills
-  arcana: 'Justice', // The means by which all is revealed
-  race: 'Persona', // The race of the demon (some are custom if no prior SMT appearances)
-  level: 75, // The base level
-  st: 53, // Strength stat
-  ma: 47, // Magic stat
-  en: 46, // Endurance/Vitality stat
-  ag: 47, // Agility stat
-  lu: 39, // Luck stat
+  name: 'Jack Frost',
+  devName: 'jackfrost',
+  aliases: [],
+  inherit: 'Ice',
+  arcana: 'Magician',
+  race: 'Fairy',
+  level: 25,
+  hp: 119,
+  mp: 153,
+  st: 14,
+  ma: 29,
+  en: 15,
+  ag: 21,
+  lu: 21,
   learnset: [
     {
-      name: 'Fortify Spirit', // The name of the skill
-      level: 0 // The level the skill is learned at, with 0 representing innate
-    },
-    {
-      name: 'Laevateinn',
+      name: 'Ice Breath',
       level: 0
     },
     {
-      name: 'Megidolaon',
+      name: 'Jack Bufula',
       level: 0
     },
     {
-      name: 'Debilitate',
-      level: 0
+      name: 'Ice Block',
+      level: 26
     },
     {
-      name: 'Riot Gun',
-      level: 0
+      name: 'Mahama',
+      level: 27
     },
     {
-      name: 'Eigaon',
-      level: 0
-    },
-    {
-      name: 'Attack Master',
-      level: 0
-    },
-    {
-      name: 'Evade Bless',
-      level: 0
+      name: 'Resist Light',
+      level: 28
     }
-  ],
-  evoMove: null, // The name of a skill the Persona will learn upon evolving, or null if none
-  weak: [ // Affinities the demon is weak to
-    'Bless'
-  ],
-  resist: [], // Affinities the demon resists
-  null: [ // Affinities the demon nullifies
-    'Curse'
-  ],
-  drain: [], // Affinities the demon drains
-  repel: [], // Affinities the demon repels
-  party: 'Redacted for spoiler reasons here, but not in the package', // The name of the party member who the Persona belongs to, or null if non-party
-  evo: 2, // The point of evolution for a party member's persona, with 1 being base, 2 being second awakening, and 3 being third awakening, or null if non-party
-  ultimate: false, // Whether the Persona is the Ultimate Persona of its arcana in the game this data is based on
-  special: false, // Whether the Persona is a result of special fusions (incomplete)
-  game: 'p5', // The game that this data originates from
-  evolution: Demon {...}, // The Persona that this evolves into, or null if none (getter)
-  image: Buffer {...} // A buffer of an image of the demon (getter)
-}
-```
-
-## Skills
-Each skill is marked by a type property which groups similar skill instances together.  Please see index.d.ts or use IntelliSense for each type's format.
-
-#### Example:
-```javascript
-AttackSkill {
-  name: 'Ziodyne', // The name of the skill
-  devName: 'ziodyne', // The name without capitalization, spaces, punctuation, accents, etc.
-  affinity: 'Elec', // The affinity/element of the skill
-  type: 'ATTACK', // The type of the skill
-  range: 1, // The range of the skill, with 1 being single-target and 0 being party-wide
-  cost: 12, // The SP cost of magic skills or the HP percentage cost of physical skills
-  power: 320, // The base power of the skill; most are from Persona 4 Golden, with other skills' damage being assumed based off comparisons with known skills
-  display: 'Heavy', // The in-game display of a skill's strength
-  min: 1, // The minimum number of times the skill may hit
-  max: 1, // The maximum number of times the skill may hit
-  ailment: [
-    {
-      ailment: 'Shock', // The name of the ailment which may be inflicted
-      chance: 'Low' // The displayed chance that the ailment will be inflicted
-    }
-  ],
-  crit: null, // Whether the skill has a boosted crit rate (incomplete)
-  unique: false, // Whether the skill is exclusive to specific demons who learn it
-  downBoost: false, // Whether the skill gains damage when the target is down
-  baton: false, // Whether the skill gains power if used during a baton pass
-  accurate: false, // Whether the skill has high accuracy
-  surround: false, // Whether the skill gains power when the user is surrounded
-  weather: false, // Whether the skill gains power under certain weather conditions
-  description: 'Heavy Elec damage to one foe with low chance of Shock.' // The skill's description similar to the games (getter)
-}
-```
-
-### Treasure Demons
-Treasure Demons are slight variations on the normal Demon class.
-
-#### Example:
-```javascript
-TreasureDemon {
-  name: 'Regent',
-  devName: 'regent',
-  inherit: 'Support',
-  arcana: 'Emperor',
-  race: 'Treasure', // All Treasure Demons are of the 'Treasure' race
-  level: 10,
-  hp: 165, // The max HP of the Treasure Demon
-  sp: 93, // The max SP of the Treasure Demon
-  st: 12,
-  ma: 11,
-  en: 10,
-  ag: 10,
-  lu: 10,
-  skills: [ // Only strings because all Treasure Demon skills are innate
-    'Maragi',
-    'Mabufu',
-    'Magaru',
-    'Mazio',
-    'Mapsi',
-    'Mafrei',
-    'Makouha',
-    'Maeiha'
   ],
   weak: [
-    'Nuke'
+    'Fire'
+  ],
+  resist: [],
+  null: [],
+  drain: [
+    'Ice'
+  ],
+  repel: [],
+  game: 'smt5',
+  image: Buffer {...},
+  isPersona(): false
+}
+
+Persona {
+  name: 'Zorro',
+  devName: 'zorro',
+  aliases: [],
+  inherit: 'Wind',
+  arcana: 'Magician',
+  race: 'Persona',
+  level: 1,
+  hp: null,
+  mp: null,
+  st: 2,
+  ma: 3,
+  en: 1,
+  ag: 3,
+  lu: 1,
+  learnset: [
+    {
+      name: 'Garu',
+      level: 0
+    },
+    {
+      name: 'Dia',
+      level: 0
+    },
+    {
+      name: 'Patra',
+      level: 5
+    },
+    {
+      name: 'Media',
+      level: 11
+    },
+    {
+      name: 'Lucky Punch',
+      level: 13
+    },
+    {
+      name: 'Magaru',
+      level: 16
+    },
+    {
+      name: 'Pulinpa',
+      level: 19
+    },
+    {
+      name: 'Me Patra',
+      level: 21
+    },
+    {
+      name: 'Diarama',
+      level: 24
+    },
+    {
+      name: 'Garula',
+      level: 26
+    },
+    {
+      name: 'Recarm',
+      level: 28
+    },
+    {
+      name: 'Wind Break',
+      level: 32
+    },
+    {
+      name: 'Mediarama',
+      level: 34
+    },
+    {
+      name: 'Magarula',
+      level: 37
+    },
+    {
+      name: 'Miracle Punch',
+      level: 40
+    },
+    {
+      name: 'Wind Boost',
+      level: 43
+    },
+    {
+      name: 'Samarecarm',
+      level: 45
+    },
+    {
+      name: 'Diarahan',
+      level: 49
+    },
+    {
+      name: 'Garudyne',
+      level: 52
+    },
+    {
+      name: 'Masukunda',
+      level: 55
+    },
+    {
+      name: 'Mediarahan',
+      level: 58
+    },
+    {
+      name: 'Magarudyne',
+      level: 62
+    },
+    {
+      name: 'Wind Amp',
+      level: 69
+    },
+    {
+      name: 'Salvation',
+      level: 75
+    }
+  ],
+  weak: [
+    'Elec'
   ],
   resist: [
-    'Phys',
-    'Gun'
+    'Wind'
   ],
   null: [],
   drain: [],
   repel: [],
-  image: Buffer {...}
+  game: 'p5',
+  user: 'Morgana',
+  stage: 1,
+  evoSkill: null,
+  image: Buffer {...},
+  isPersona(): true
 }
 ```
 
-### Credits
-Atlus retains all rights to the Megami Tensei series.  This data originates from the [Megami Tensei Wiki](https://megamitensei.fandom.com/wiki/Megami_Tensei_Wiki).
+The `demons` array contains both Demon and Persona instances.  For type-guarding, check `<Demon>.isPersona()` which returns true for Persona instances and false for the base class.
+
+## Skills
+
+Each skill is marked by a type property which groups similar skill instances together.  Please see index.d.ts or use IntelliSense for each type's format.
+
+### Example
+
+```javascript
+AttackSkill {
+  name: 'Ziodyne',
+  devName: 'ziodyne',
+  affinity: 'Elec',
+  type: 'ATTACK',
+  unique: false,
+  range: 1,
+  cost: {
+    type: 'MP',
+    amount: 35
+  },
+  power: {
+    amount: 215,
+    display: 'Heavy'
+  },
+  min: 1,
+  max: 1,
+  flags: [],
+  ailments: [],
+  series: 'smt'
+}
+```
+
+## Notes
+
+* Attack skills prior to SMTV have their base power adjusted to be proportional to newer damage values.  If you need damage values relative to particular games, please check the links in the Credits section.
+* Ailment chances prior to SMTV were estimated based on known chances of ailments with similar display chances.  This information will be updated if the exact odds are deduced.
+* Skills with major changes to their function (e.g. Taunt in SMTV vs. Taunt in Persona 5) are split into separate skills ("Taunt" vs. "Taunt -Persona-").
+* Dashes are used instead of parentheses due to a similar naming scheme used in official song titles (e.g. "Last Surprise -Scramble-").
+* Skills with specific uses and few similar skills are placed into a "MISC" type.  Their "effect" property lists the skill's description in its last major appearance.
+* Typings are designed to be as specific as possible for efficient use.
+* Images originate from the best obtainable picture of the demon found at the current time.  These will be updated if/when renders are available for many Personas and classic demons.
+
+## Credits
+
+Atlus retains all rights to the Megami Tensei series.  This data originates from the [Megaten Fusion Tool](https://github.com/aqiu384/megaten-fusion-tool), [Megami Tensei Wiki](https://megamitensei.fandom.com/wiki/Megami_Tensei_Wiki), and the videogames themselves.
