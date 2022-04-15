@@ -102,8 +102,8 @@ Persona {
   hp: null,
   mp: null,
   st: 2,
+  vi: 1,
   ma: 3,
-  en: 1,
   ag: 3,
   lu: 1,
   learnset: [

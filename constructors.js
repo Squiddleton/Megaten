@@ -19,8 +19,8 @@ class Demon {
 		this.hp = data.hp;
 		this.mp = data.mp;
 		this.st = data.st;
+		this.vi = data.vi;
 		this.ma = data.ma;
-		this.en = data.en;
 		this.ag = data.ag;
 		this.lu = data.lu;
 		this.learnset = data.learnset;

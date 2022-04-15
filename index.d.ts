@@ -9,8 +9,8 @@ export interface DemonData {
     hp: number;
     mp: number;
     st: number;
+    vi: number;
     ma: number;
-    en: number;
     ag: number;
     lu: number;
     learnset: Learnset[];
@@ -37,8 +37,8 @@ export class Demon {
     hp: number;
     mp: number;
     st: number;
+    vi: number;
     ma: number;
-    en: number;
     ag: number;
     lu: number;
     learnset: Learnset[];
