@@ -83,44 +83,220 @@ class BaseSkill {
      */
 	get description() {
 		switch (this.type) {
-		case 'AILMENT': {
-			return `Chance to inflict ${this.ailments.join('/')} on ${this.range ? 'one foe' : 'all foes'}.`;
-		}
-		case 'ATTACK': {
-			const { ailments } = this;
-			return `${this.power.display} ${this.affinity} damage to ${this.range ? 'one foe' : 'all foes'}${(this.max > 1) ? (this.max !== this.min ? ` ${this.min} to ${this.max}x` : ` ${this.max}x`) : ''}${ailments.length ? ` with chance of ${ailments.map(a => a.name).join('/')}` : ''}.${this.flags.includes('Crit Boost') ? '  High critical rate.' : ''}${this.flags.includes('Down Boost') ? '  Damage increases if foe is downed.' : ''}${this.flags.includes('Baton Boost') ? '  Stronger under Baton Pass.' : ''}${this.flags.includes('Accuracy Boost') ? '  High accuracy.' : ''}${this.flags.includes('Surround Boost') ? '  More powerful when being ambushed.' : ''}${this.flags.includes('Weather Boost') ? '  Increased Critical rate in rainy or snowy weather.' : ''}`;
-		}
 		case 'AILBOOST': {
-			return `Increases chance of inflicting ${this.ailment === 'ALL' ? 'all ailments' : this.ailment}.`;
+			if (this.weather) return 'Increases chance of inflicting ailments during Rain/Snow.';
+			return `Increases chance of inflicting ${this.ailment === 'ALL' ? 'ailments' : this.ailment}.`;
 		}
 		case 'AILDEFENSIVE': {
-			return this.resistance === 'Null' ? `Impart immunity against ${this.ailment.replace('MENTAL', 'mental ailments').replace('ALL', 'all ailments')}.` : `Reduce susceptibility to ${this.ailment.replace('MENTAL', 'mental ailments').replace('ALL', 'all ailments')}.`;
+			switch (this.resistance) {
+			case 'Resist': {
+				return `Decreases chance of being inflicted with ${this.ailment}.`;
+			}
+			case 'Null': {
+				return `Prevents infliction of ${this.ailment}.`;
+			}
+			default: throw new Error(`An AILDEFENSIVE skill has an unexpected resistance: ${this.resistance}`);
+			}
+		}
+		case 'AILMENT': {
+			return `Chance of inflicting ${this.ailments.join(' and ')} to ${this.range ? '1 foe' : 'all foes'}${this.flags.length === 0 ? '' : `and lowers ${this.flags.map(flag => flag.split(' ')[0]).join('')} by ${this.flags.every(flags => flags.includes('Greatly')) ? '2 ranks' : '1 rank'} for 3 turns.`}`;
+		}
+		case 'ATTACK': {
+			const { ailments, flags } = this;
+			const range = ['all foes', '1 foe', 'random foes'][this.range];
+			const displayAffinity = `${this.power.display} ${this.affinity}`;
+
+			let description = `${displayAffinity} damage to ${range}.`;
+
+			if (ailments.length > 0) {
+				description += ` Chance of inflicting ${ailments.map(a => a.name).join('/')}.`;
+			}
+
+			if (flags.length > 0) {
+				description += ' ';
+
+				if (flags.includes('Accuracy Boost')) {
+					description += 'High Accuracy.';
+				}
+				if (flags.includes('Accuracy/Evasion Down')) {
+					description += 'Lowers target\'s Accuracy/Evasion by 1 rank for 3 turns.';
+				}
+				if (flags.includes('Afflicted Boost')) {
+					description += 'Greater effect if target has an ailment.';
+				}
+				if (flags.includes('Asleep Boost')) {
+					description += 'Greater effect when target is asleep.';
+				}
+				if (flags.includes('Attack Down')) {
+					description += 'Lowers target\'s Attack by 1 rank for 3 turns.';
+				}
+				if (flags.includes('Baton Boost')) {
+					description += 'Powers up after a Baton Pass.';
+				}
+				if (flags.includes('Charmed Boost')) {
+					description += 'Greater effect if target is Charmed.';
+				}
+				if (flags.includes('Confused Boost')) {
+					description += 'Greater effect when target is Confused.';
+				}
+				if (flags.includes('Crit Damage Boost')) {
+					description += 'Greater effect if a Critical hit.';
+				}
+				if (flags.includes('Defense Down')) {
+					description += 'Lowers target\'s Defense by 1 rank for 3 turns.';
+				}
+				if (flags.includes('Defense Greatly Down')) {
+					description += 'Lowers Defense by 2 ranks for 3 turns.';
+				}
+				if (flags.includes('Down Boost')) {
+					description += 'Highly effective if foe is Downed.';
+				}
+				if (flags.includes('Drain HP/MP')) {
+					return `${displayAffinity} HP/MP drain attack to ${range}.`;
+				}
+				if (flags.includes('Drain HP')) {
+					return `${displayAffinity} ${this.power.display === 'Weak' ? 'HP drain' : 'HP-draining'} attack to ${range}.`;
+				}
+				if (flags.includes('Drain MP')) {
+					return `${displayAffinity} MP drain attack to ${range}.`;
+				}
+				if (flags.includes('HP Dependent')) {
+					description += 'The more remaining HP you have, the stronger the attack.';
+				}
+				if (flags.includes('Half Accuracy')) {
+					description += 'Low Accuracy.';
+				}
+				if (flags.includes('Instakill')) {
+					description += 'Medium chance of insta-kill.';
+				}
+				if (flags.includes('Minimize Defense')) {
+					description += 'Lowers target\'s Defense to the minimum for 3 turns.';
+				}
+				if (flags.includes('Pierce')) {
+					description += 'Ignores affinity resistance and pierces through.';
+				}
+				if (flags.includes('Poisoned Boost')) {
+					description += 'Greater effect if target is Poisoned.';
+				}
+				if (flags.includes('Revert Buffs')) {
+					description += 'Negates target\'s status buff effects';
+				}
+				if (flags.includes('Surround Boost')) {
+					description += 'Powers up when surrounded.';
+				}
+				if (flags.includes('Weakness Instakill')) {
+					description += 'Chance of instakill when striking weakness.';
+				}
+				if (flags.includes('Weather Boost')) {
+					description += 'Increased Critical rate in rainy or snowy weather.';
+				}
+			}
+			return description;
 		}
 		case 'AUTOBUFF': {
-			return `Automatic ${this.buff} at the start of battle.`;
+			/** @type {string} */
+			let buffSkillName = { Attack: 'Tarukaja', Defense: 'Rakukaja', 'Accuracy/Evasion' : 'Sukukaja' }[this.buff];
+			const isParty = this.range === 0;
+			if (isParty) {
+				buffSkillName = buffSkillName.toLowerCase();
+			}
+			return `Automatic ${isParty ? 'Ma' : ''}${buffSkillName} at the start of battle.`;
 		}
+		// update
+		case 'BOOST': {
+			if (this.element === 'ALL') return 'Strengtens all attacks. Can stack.';
+			return this.name;
+		}
+		// update
 		case 'CHARGE': {
 			return `Next ${this.charge === 'Charge' ? 'physical' : 'magical'} attack deals over double the damage${this.range === 'Self' ? '' : ' for all allies'}.`;
 		}
+		// add other cases
+		case 'CRIT': {
+			if (this.range === 'Party') return 'Increases chance of Critical for one ally for 3 turns.';
+			return this.name;
+		}
+		case 'CRITBOOST': {
+			if (this.surround) {
+				if (this.amount === 15) return 'Increases Critical rate during an Ambush.';
+				return 'Increases Critical Rate when surrounded.';
+			}
+			return 'Increases chance of Critical.';
+		}
+		case 'DEFENSIVE': {
+			const { element } = this;
+			return {
+				Drain: `Absorbs damage from ${element} skills.`,
+				Repel: `Reflects ${element} skills.`,
+				Resist: `Strengthens resistance to ${element} skills.`,
+				Null: `Nullifies ${element} skills.`,
+			}[this.newAffinity];
+		}
+		case 'ENDURE': {
+			if (this.instakill) return 'Survive insta-kill skills with 1 HP.';
+			if (this.priority === 1) return 'Revives with 1 HP when KO\'d. Usable once per battle.';
+			return 'Revives with full HP when KO\'d. Usable once per battle.';
+		}
 		case 'HALVE': {
-			return 'Half remaining HP of one foe.';
+			return `${this.affinity} attack that reduces HP of one foe by 50%.`;
 		}
 		case 'INSTAKILLBOOST': {
-			return `Increases success rate of instant death by ${this.element} skills.`;
+			return `Increases success rate of ${this.element === 'Light' ? 'Hama' : 'Mudo'} skills.`;
 		}
 		case 'MASTER': {
-			return `Half ${this.skill} cost for ${this.skill === 'HP' ? 'physical' : 'magic'} skills.`;
+			return `Decreases ${this.skill} cost of skills by half.`;
 		}
 		case 'MISC': {
 			return this.effect;
 		}
+		case 'PERSONACOUNTER': {
+			return `${this.chance}% chance of reflecting physical attacks.`;
+		}
+		case 'POSTBATTLE': {
+			switch (this.stat) {
+			case 'HP':
+			case 'MP': {
+				return `Recover ${this.amount === 25 ? 'a little ' : ''}${this.stat} after a battle.`;
+			}
+			case 'HPMP': {
+				return 'Fully restores HP/MP after battle.';
+			}
+			case 'EXP': {
+				if (this.inactive) return `Earn ${this.amount}% EXP even when not participating in battle.`;
+				return `EXP gained in battle increased by ${this.amount}%.`;
+			}
+			case 'Money': {
+				return `Increases money gained by ${this.amount}%.`;
+			}
+			default: throw new Error(`A POSTBATTLE skill has an unexpected stat: ${this.stat}`);
+			}
+		}
 		case 'REGEN': {
 			switch (this.hpmpail) {
+			case 'HP': {
+				return `Restores ${this.amount}% of max HP each turn in battle.`;
+			}
+			case 'MP': {
+				// Network fusion exclusive skills
+				if (this.baton) return this.name;
+				return `Restores ${this.amount} MP each turn in battle.`;
+			}
+			case 'HPMP': {
+				if (this.ambush) return `Restores 5% max HP and ${this.amount} SP each turn during an Ambush.`;
+				return `Restores ${this.amount}% HP and ${this.amount} SP each turn in battle.`;
+			}
 			case 'AIL': {
-				return `Recover from an ailment in ${this.amount} less turn${this.amount > 1 ? 's' : ''}.`;
+				if (this.amount === 1) return 'Decreases recovery time from ailments by half.';
+				return 'Decreases recovery time from ailments to 1 turn.';
 			}
 			default: return this.name;
 			}
+		}
+		case 'SIPHON': {
+			return `${this.amount === 10 ? 'Low ' : ''} MP recovery when ${this.criteria === 'Ailment' ? 'inflicting status ailments' : 'you strike a foe\'s weakness or land a Critical'}.`;
+		}
+		case 'SMTCOUNTER': {
+			return `Chance to counter Strength-based attacks with a ${this.power.display} ${this.element} attack.${this.name === 'Retaliate' ? ' Does not stack with Counter.' : ''}${this.attackDown ? ' Lowers target\'s Attack 1 rank for 3 turns.' : ''}`;
 		}
 		default: return this.name;
 		}

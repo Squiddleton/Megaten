@@ -22734,7 +22734,7 @@
       "affinity": "Support",
       "type": "CRIT",
       "unique": true,
-      "range": "PARTY",
+      "range": "Party",
       "cost": 16
     },
     {
@@ -24666,7 +24666,7 @@
       "type": "REGEN",
       "unique": false,
       "amount": 1,
-      "hpspail": "AIL",
+      "hpmpail": "AIL",
       "percent": false,
       "ambush": false,
       "baton": false
@@ -25828,7 +25828,7 @@
       "type": "REGEN",
       "unique": false,
       "amount": 10,
-      "hpspail": "HPMP",
+      "hpmpail": "HPMP",
       "percent": false,
       "ambush": true,
       "baton": false
@@ -26185,7 +26185,7 @@
       "type": "REGEN",
       "unique": true,
       "amount": 25,
-      "hpspail": "HP",
+      "hpmpail": "HP",
       "percent": true,
       "ambush": false,
       "baton": false
@@ -26197,7 +26197,7 @@
       "type": "REGEN",
       "unique": true,
       "amount": 15,
-      "hpspail": "HPMP",
+      "hpmpail": "HPMP",
       "percent": true,
       "ambush": false,
       "baton": false
@@ -26401,7 +26401,7 @@
       "type": "REGEN",
       "unique": false,
       "amount": 2,
-      "hpspail": "AIL",
+      "hpmpail": "AIL",
       "percent": false,
       "ambush": false,
       "baton": false
@@ -26413,7 +26413,7 @@
       "type": "REGEN",
       "unique": false,
       "amount": 3,
-      "hpspail": "MP",
+      "hpmpail": "MP",
       "percent": false,
       "ambush": false,
       "baton": false
@@ -26425,7 +26425,7 @@
       "type": "REGEN",
       "unique": false,
       "amount": 5,
-      "hpspail": "MP",
+      "hpmpail": "MP",
       "percent": false,
       "ambush": false,
       "baton": false
@@ -26437,7 +26437,7 @@
       "type": "REGEN",
       "unique": false,
       "amount": 7,
-      "hpspail": "MP",
+      "hpmpail": "MP",
       "percent": false,
       "ambush": false,
       "baton": false
@@ -29927,7 +29927,7 @@
       "affinity": "Support",
       "type": "CRIT",
       "unique": false,
-      "range": "ALLY",
+      "range": "Ally",
       "cost": 5
     },
     {
@@ -30000,7 +30000,7 @@
       "type": "REGEN",
       "unique": false,
       "amount": 2,
-      "hpspail": "HP",
+      "hpmpail": "HP",
       "percent": true,
       "ambush": false,
       "baton": false
@@ -30012,7 +30012,7 @@
       "type": "REGEN",
       "unique": false,
       "amount": 4,
-      "hpspail": "HP",
+      "hpmpail": "HP",
       "percent": true,
       "ambush": false,
       "baton": false
@@ -30024,7 +30024,7 @@
       "type": "REGEN",
       "unique": false,
       "amount": 6,
-      "hpspail": "HP",
+      "hpmpail": "HP",
       "percent": true,
       "ambush": false,
       "baton": false
@@ -30357,7 +30357,7 @@
       "affinity": "Support",
       "type": "CRIT",
       "unique": false,
-      "range": "ALL",
+      "range": "All",
       "cost": 5
     },
     {
@@ -30901,7 +30901,7 @@
       "type": "REGEN",
       "unique": false,
       "amount": 20,
-      "hpspail": "MP",
+      "hpmpail": "MP",
       "percent": false,
       "ambush": false,
       "baton": true
@@ -30941,7 +30941,7 @@
       "type": "REGEN",
       "unique": false,
       "amount": 5,
-      "hpspail": "MP",
+      "hpmpail": "MP",
       "percent": false,
       "ambush": false,
       "baton": true

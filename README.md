@@ -1,4 +1,6 @@
-# About
+# Megaten
+
+## About
 
 A fan-made, unofficial collection of demons and skills from the "Megaten" series, primarily consisting of the Shin Megami Tensei and Persona franchises.
 
@@ -222,7 +224,7 @@ Persona {
 }
 ```
 
-The `demons` array contains both Demon and Persona instances.  For type-guarding, check `<Demon>.isPersona()` which returns true for Persona instances and false for the base class.
+The `demons` array contains both Demon and Persona instances.  For type-guarding, use `Demon.prototype.isPersona()` which returns `true` for Persona instances and `false` for the base class.
 
 ## Skills
 
