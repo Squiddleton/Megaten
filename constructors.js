@@ -223,11 +223,15 @@ class BaseSkill {
 			return this.name;
 		}
 		case 'CRITBOOST': {
-			if (this.surround) {
-				if (this.amount === 15) return 'Increases Critical rate during an Ambush.';
+			switch (this.criteria) {
+			case 'Ambush': {
+				return 'Increases Critical rate during an Ambush.';
+			}
+			case 'Surround': {
 				return 'Increases Critical Rate when surrounded.';
 			}
-			return 'Increases chance of Critical.';
+			default: return 'Increases chance of Critical.';
+			}
 		}
 		case 'DEFENSIVE': {
 			const { element } = this;
@@ -487,7 +491,7 @@ module.exports.CritBoostSkill = class extends BaseSkill {
 		this.affinity = data.affinity;
 		this.type = data.type;
 		this.amount = data.amount;
-		this.surround = data.surround;
+		this.criteria = data.criteria;
 	}
 };
 module.exports.DefensiveSkill = class extends BaseSkill {

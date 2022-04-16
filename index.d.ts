@@ -321,14 +321,14 @@ export class CritBoostSkill extends BaseSkill {
     affinity: 'Passive';
     type: 'CRITBOOST';
     amount: number;
-    surround: boolean;
+    criteria: 'Ambush' | 'Surround' | null;
 }
 
 export interface CritBoostSkillData extends BaseSkillData {
     affinity: 'Passive';
     type: 'CRITBOOST';
     amount: number;
-    surround: boolean;
+    criteria: 'Ambush' | 'Surround' | null;
 }
 
 export class DefensiveSkill extends BaseSkill {

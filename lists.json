@@ -21786,7 +21786,7 @@
       "type": "CRITBOOST",
       "unique": false,
       "amount": 20,
-      "surround": true
+      "criteria": "Surrounded"
     },
     {
       "name": "Agi",
@@ -22034,7 +22034,7 @@
       "type": "CRITBOOST",
       "unique": false,
       "amount": 100,
-      "surround": false
+      "criteria": null
     },
     {
       "name": "Aramasa",
@@ -25000,7 +25000,7 @@
       "type": "CRITBOOST",
       "unique": false,
       "amount": 15,
-      "surround": true
+      "criteria": "Ambush"
     },
     {
       "name": "Fortify Spirit",
