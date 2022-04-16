@@ -11,7 +11,7 @@ This contains all the demons/Personas and skills from the following games, with 
 * **(Incomplete)** Persona 4/Golden
 * **(Incomplete)** Persona 3/Portable/FES
 
-NOTE: This is **not** a 1:1 database of all past data. Skill and demon information is updated to the latest mainstream release, and more changes are found in the Notes section.
+NOTE: This is **not** a 1:1 database of all past data. Information is adjusted to the latest mainstream release, and more changes are found in the Notes section.
 
 ## Usage
 
