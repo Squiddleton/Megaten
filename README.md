@@ -11,7 +11,7 @@ This contains all the demons/Personas and skills from the following games, with 
 * **(Incomplete)** Persona 4/Golden
 * **(Incomplete)** Persona 3/Portable/FES
 
-NOTE: This is **not** a 1:1 database of all past data.  Skill and demon information is updated to the latest mainstream release, and more changes are found in the Notes section.
+NOTE: This is **not** a 1:1 database of all past data. Skill and demon information is updated to the latest mainstream release, and more changes are found in the Notes section.
 
 ## Usage
 
@@ -26,7 +26,7 @@ npm install megaten
 After installation, you may use it through methods such as the following:
 
 ```javascript
-const megaten = require('megaten') // Or, "import megaten from 'megaten'" in ES6.  Destructuring syntax is also supported
+const megaten = require('megaten') // Or, "import megaten from 'megaten'" in ES6. Destructuring syntax is also supported
 
 // All get... functions find by the input's name without attention to capitalization, spaces, punctuation, etc. via the exported "noPunc" utility function
 const jack = megaten.getDemon('Jack Frost!!!') // Gets a Demon instance
@@ -224,11 +224,11 @@ Persona {
 }
 ```
 
-The `demons` array contains both Demon and Persona instances.  For type-guarding, use `Demon.prototype.isPersona()` which returns `true` for Persona instances and `false` for the base class.
+The `demons` array contains both Demon and Persona instances. For type-guarding, use `Demon.prototype.isPersona()` which returns `true` for Persona instances and `false` for the base class.
 
 ## Skills
 
-Each skill is marked by a type property which groups similar skill instances together.  Please see index.d.ts or use IntelliSense for each type's format.
+Each skill is marked by a type property which groups similar skill instances together. Please see index.d.ts or use IntelliSense for each type's format.
 
 ### Example
 
@@ -258,15 +258,15 @@ AttackSkill {
 
 ## Notes
 
-* Attack skills prior to SMTV have their base power adjusted to be proportional to newer damage values.  If you need damage values relative to particular games, please check the links in the Credits section.
-* Ailment chances prior to SMTV were estimated based on known chances of ailments with similar display chances.  This information will be updated if the exact odds are deduced.
+* Attack skills prior to SMTV have their base power adjusted to be proportional to newer damage values. If you need damage values relative to particular games, please check the links in the Credits section.
+* Ailment chances prior to SMTV were estimated based on known chances of ailments with similar display chances. This information will be updated if the exact odds are deduced.
 * Skills with major changes to their function (e.g. Taunt in SMTV vs. Taunt in Persona 5) are split into separate skills ("Taunt" vs. "Taunt -Persona-").
 * Dashes are used instead of parentheses due to a similar naming scheme used in official song titles (e.g. "Last Surprise -Scramble-").
-* Skills with specific uses and few similar skills are placed into a "MISC" type.  Their "effect" property lists the skill's description in its last major appearance.
+* Skills with specific uses and few similar skills are placed into a "MISC" type. Their "effect" property lists the skill's description in its last major appearance.
 * Typings are designed to be as specific as possible for efficient use.
-* Images originate from the best obtainable picture of the demon found at the current time.  These will be updated if/when renders are available for many Personas and classic demons.
-* Terms with multiple series-dependent names are given the name from SMTV (e.g. Vitality over Endurance, Light over Bless, Seal over Forget).  However, Force and Wind remain separated.
+* Images originate from the best obtainable picture of the demon found at the current time. These will be updated if/when renders are available for many Personas and classic demons.
+* Terms with multiple series-dependent names are given the name from SMTV (e.g. Vitality over Endurance, Light over Bless, Seal over Forget). However, Force and Wind remain separated.
 
 ## Credits
 
-Atlus retains all rights to the Megami Tensei series.  This data originates from the [Megaten Fusion Tool](https://github.com/aqiu384/megaten-fusion-tool), [Megami Tensei Wiki](https://megamitensei.fandom.com/wiki/Megami_Tensei_Wiki), and the videogames themselves.
+Atlus retains all rights to the Megami Tensei series. This data originates from the [Megaten Fusion Tool](https://github.com/aqiu384/megaten-fusion-tool), [Megami Tensei Wiki](https://megamitensei.fandom.com/wiki/Megami_Tensei_Wiki), and the videogames themselves.
