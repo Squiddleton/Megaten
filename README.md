@@ -94,8 +94,8 @@ Demon {
 }
 
 Persona {
-  name: 'Zorro',
-  devName: 'zorro',
+  name: 'Mercurius',
+  devName: 'mercurius',
   aliases: [],
   inherit: 'Wind',
   arcana: 'Magician',
@@ -210,17 +210,20 @@ Persona {
     'Elec'
   ],
   resist: [
+    'Light'
+  ],
+  null: [
     'Wind'
   ],
-  null: [],
   drain: [],
   repel: [],
   game: 'p5',
-  user: 'Morgana',
-  stage: 1,
-  evoSkill: null,
   image: Buffer {...},
   isPersona(): true
+  user: 'Morgana',
+  stage: 2,
+  evoSkill: "Evade Elec",
+  evolution: Persona {...},
 }
 ```
 
