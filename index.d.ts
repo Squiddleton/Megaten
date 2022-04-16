@@ -245,6 +245,7 @@ export class BoostSkill extends BaseSkill {
     type: 'BOOST';
     element: Element | 'ALL';
     amount: number;
+    stacks: "+" | "x"
 }
 
 export interface BoostSkillData extends BaseSkillData {
@@ -252,6 +253,7 @@ export interface BoostSkillData extends BaseSkillData {
     type: 'BOOST';
     element: Element | 'ALL';
     amount: number;
+    stacks: "+" | "x"
 }
 
 export class BreakSkill extends BaseSkill {

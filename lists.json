@@ -2149,7 +2149,7 @@
           "level": 52
         },
         {
-          "name": "Snipe",
+          "name": "Gun Boost",
           "level": 54
         },
         {
@@ -11778,7 +11778,7 @@
           "level": 52
         },
         {
-          "name": "Snipe",
+          "name": "Gun Boost",
           "level": 54
         },
         {
@@ -12968,7 +12968,7 @@
           "level": 52
         },
         {
-          "name": "Snipe",
+          "name": "Gun Boost",
           "level": 54
         },
         {
@@ -21956,7 +21956,8 @@
       "type": "BOOST",
       "unique": false,
       "amount": 25,
-      "element": "Almighty"
+      "element": "Almighty",
+      "stacks": "x"
     },
     {
       "name": "Almighty Pleroma",
@@ -21965,7 +21966,8 @@
       "type": "BOOST",
       "unique": false,
       "amount": 20,
-      "element": "Almighty"
+      "element": "Almighty",
+      "stacks": "+"
     },
     {
       "name": "Ambient Aid",
@@ -23175,7 +23177,8 @@
       "type": "BOOST",
       "unique": false,
       "amount": 50,
-      "element": "Gun"
+      "element": "Gun",
+      "stacks": "x"
     },
     {
       "name": "Critical Aura",
@@ -23367,7 +23370,8 @@
       "type": "BOOST",
       "unique": false,
       "amount": 50,
-      "element": "Dark"
+      "element": "Dark",
+      "stacks": "x"
     },
     {
       "name": "Dark Block",
@@ -23385,7 +23389,8 @@
       "type": "BOOST",
       "unique": false,
       "amount": 25,
-      "element": "Dark"
+      "element": "Dark",
+      "stacks": "x"
     },
     {
       "name": "Dark Pleroma",
@@ -23394,7 +23399,8 @@
       "type": "BOOST",
       "unique": false,
       "amount": 20,
-      "element": "Dark"
+      "element": "Dark",
+      "stacks": "+"
     },
     {
       "name": "Dark Sword",
@@ -24276,7 +24282,8 @@
       "type": "BOOST",
       "unique": false,
       "amount": 50,
-      "element": "Elec"
+      "element": "Elec",
+      "stacks": "x"
     },
     {
       "name": "Elec Block",
@@ -24294,7 +24301,8 @@
       "type": "BOOST",
       "unique": false,
       "amount": 25,
-      "element": "Elec"
+      "element": "Elec",
+      "stacks": "x"
     },
     {
       "name": "Elec Break",
@@ -24312,7 +24320,8 @@
       "type": "BOOST",
       "unique": false,
       "amount": 20,
-      "element": "Elec"
+      "element": "Elec",
+      "stacks": "+"
     },
     {
       "name": "Elec Wall",
@@ -24772,7 +24781,8 @@
       "type": "BOOST",
       "unique": false,
       "amount": 50,
-      "element": "Fire"
+      "element": "Fire",
+      "stacks": "x"
     },
     {
       "name": "Fire Block",
@@ -24790,7 +24800,8 @@
       "type": "BOOST",
       "unique": false,
       "amount": 25,
-      "element": "Fire"
+      "element": "Fire",
+      "stacks": "x"
     },
     {
       "name": "Fire Break",
@@ -24871,7 +24882,8 @@
       "type": "BOOST",
       "unique": false,
       "amount": 20,
-      "element": "Fire"
+      "element": "Fire",
+      "stacks": "+"
     },
     {
       "name": "Fire Wall",
@@ -24968,7 +24980,8 @@
       "type": "BOOST",
       "unique": false,
       "amount": 20,
-      "element": "Force"
+      "element": "Force",
+      "stacks": "+"
     },
     {
       "name": "Seal Boost",
@@ -25567,7 +25580,8 @@
       "type": "BOOST",
       "unique": false,
       "amount": 50,
-      "element": "Gun"
+      "element": "Gun",
+      "stacks": "x"
     },
     {
       "name": "Gun Boost",
@@ -25576,7 +25590,8 @@
       "type": "BOOST",
       "unique": false,
       "amount": 25,
-      "element": "Gun"
+      "element": "Gun",
+      "stacks": "x"
     },
     {
       "name": "Gungnir",
@@ -25801,7 +25816,8 @@
       "type": "BOOST",
       "unique": false,
       "amount": 20,
-      "element": "Heal"
+      "element": "Heal",
+      "stacks": "+"
     },
     {
       "name": "Heat Riser",
@@ -26062,7 +26078,8 @@
       "type": "BOOST",
       "unique": false,
       "amount": 35,
-      "element": "Almighty"
+      "element": "Almighty",
+      "stacks": "+"
     },
     {
       "name": "High Counter",
@@ -26079,7 +26096,8 @@
       "type": "BOOST",
       "unique": false,
       "amount": 35,
-      "element": "Dark"
+      "element": "Dark",
+      "stacks": "+"
     },
     {
       "name": "High Elec Pleroma",
@@ -26088,7 +26106,8 @@
       "type": "BOOST",
       "unique": false,
       "amount": 35,
-      "element": "Elec"
+      "element": "Elec",
+      "stacks": "+"
     },
     {
       "name": "High Energy",
@@ -26107,7 +26126,8 @@
       "type": "BOOST",
       "unique": false,
       "amount": 35,
-      "element": "Fire"
+      "element": "Fire",
+      "stacks": "+"
     },
     {
       "name": "High Force Pleroma",
@@ -26116,7 +26136,8 @@
       "type": "BOOST",
       "unique": false,
       "amount": 35,
-      "element": "Force"
+      "element": "Force",
+      "stacks": "+"
     },
     {
       "name": "High Heal Pleroma",
@@ -26125,7 +26146,8 @@
       "type": "BOOST",
       "unique": false,
       "amount": 35,
-      "element": "Heal"
+      "element": "Heal",
+      "stacks": "+"
     },
     {
       "name": "High Ice Pleroma",
@@ -26134,7 +26156,8 @@
       "type": "BOOST",
       "unique": false,
       "amount": 35,
-      "element": "Ice"
+      "element": "Ice",
+      "stacks": "+"
     },
     {
       "name": "High Light Pleroma",
@@ -26143,7 +26166,8 @@
       "type": "BOOST",
       "unique": false,
       "amount": 35,
-      "element": "Light"
+      "element": "Light",
+      "stacks": "+"
     },
     {
       "name": "High Phys Pleroma",
@@ -26152,7 +26176,8 @@
       "type": "BOOST",
       "unique": false,
       "amount": 35,
-      "element": "Phys"
+      "element": "Phys",
+      "stacks": "+"
     },
     {
       "name": "High Restore",
@@ -26286,7 +26311,8 @@
       "type": "BOOST",
       "unique": false,
       "amount": 50,
-      "element": "Ice"
+      "element": "Ice",
+      "stacks": "x"
     },
     {
       "name": "Ice Block",
@@ -26304,7 +26330,8 @@
       "type": "BOOST",
       "unique": false,
       "amount": 25,
-      "element": "Ice"
+      "element": "Ice",
+      "stacks": "x"
     },
     {
       "name": "Ice Break",
@@ -26364,7 +26391,8 @@
       "type": "BOOST",
       "unique": false,
       "amount": 20,
-      "element": "Ice"
+      "element": "Ice",
+      "stacks": "+"
     },
     {
       "name": "Ice Wall",
@@ -26791,7 +26819,8 @@
       "type": "BOOST",
       "unique": false,
       "amount": 50,
-      "element": "Light"
+      "element": "Light",
+      "stacks": "x"
     },
     {
       "name": "Light Block",
@@ -26809,7 +26838,8 @@
       "type": "BOOST",
       "unique": false,
       "amount": 25,
-      "element": "Light"
+      "element": "Light",
+      "stacks": "x"
     },
     {
       "name": "Light Life Aid",
@@ -26838,7 +26868,8 @@
       "type": "BOOST",
       "unique": false,
       "amount": 20,
-      "element": "Light"
+      "element": "Light",
+      "stacks": "+"
     },
     {
       "name": "Light's Descent",
@@ -28916,7 +28947,8 @@
       "type": "BOOST",
       "unique": false,
       "amount": 50,
-      "element": "Nuke"
+      "element": "Nuke",
+      "stacks": "x"
     },
     {
       "name": "Nuke Boost",
@@ -28925,7 +28957,8 @@
       "type": "BOOST",
       "unique": false,
       "amount": 25,
-      "element": "Nuke"
+      "element": "Nuke",
+      "stacks": "x"
     },
     {
       "name": "Nuke Break",
@@ -29308,7 +29341,8 @@
       "type": "BOOST",
       "unique": false,
       "amount": 20,
-      "element": "Phys"
+      "element": "Phys",
+      "stacks": "+"
     },
     {
       "name": "Pierce Armor",
@@ -29597,7 +29631,8 @@
       "type": "BOOST",
       "unique": false,
       "amount": 50,
-      "element": "Psy"
+      "element": "Psy",
+      "stacks": "x"
     },
     {
       "name": "Psy Boost",
@@ -29606,7 +29641,8 @@
       "type": "BOOST",
       "unique": false,
       "amount": 25,
-      "element": "Psy"
+      "element": "Psy",
+      "stacks": "x"
     },
     {
       "name": "Psy Break",
@@ -30807,15 +30843,6 @@
       "series": "persona"
     },
     {
-      "name": "Snipe",
-      "devName": "snipe",
-      "affinity": "Passive",
-      "type": "BOOST",
-      "unique": false,
-      "amount": 25,
-      "element": "Gun"
-    },
-    {
       "name": "Somersault",
       "devName": "somersault",
       "affinity": "Phys",
@@ -31751,7 +31778,8 @@
       "type": "BOOST",
       "unique": true,
       "amount": 25,
-      "element": "ALL"
+      "element": "ALL",
+      "stacks": "x"
     },
     {
       "name": "Ultimate Support",
@@ -32061,7 +32089,8 @@
       "type": "BOOST",
       "unique": false,
       "amount": 50,
-      "element": "Wind"
+      "element": "Wind",
+      "stacks": "x"
     },
     {
       "name": "Wind Boost",
@@ -32070,7 +32099,8 @@
       "type": "BOOST",
       "unique": false,
       "amount": 25,
-      "element": "Wind"
+      "element": "Wind",
+      "stacks": "x"
     },
     {
       "name": "Wind Break",

@@ -202,14 +202,20 @@ class BaseSkill {
 			}
 			return `Automatic ${isParty ? 'Ma' : ''}${buffSkillName} at the start of battle.`;
 		}
+		case 'BLOCK': {
+			return `Nullifies a${['Ice', 'Elec'].includes(this.element) ? 'n' : ''} ${this.element} attack against all allies once for 1 turn.`;
+		}
 		// update
 		case 'BOOST': {
 			if (this.element === 'ALL') return 'Strengtens all attacks. Can stack.';
 			return this.name;
 		}
-		// update
 		case 'CHARGE': {
-			return `Next ${this.charge === 'Charge' ? 'physical' : 'magical'} attack deals over double the damage${this.range === 'Self' ? '' : ' for all allies'}.`;
+			if (['Ally', 'Self'].includes(this.range)) {
+				return `Greatly increases damage of the next ${this.charge === 'Charge' ? 'Strength' : 'Magic'}-based attack ${this.range === 'Self' ? 'from self' : 'on 1 ally'}.`;
+			}
+			// Checkmate and ryuji one
+			return '';
 		}
 		// add other cases
 		case 'CRIT': {
@@ -235,7 +241,7 @@ class BaseSkill {
 		case 'ENDURE': {
 			if (this.instakill) return 'Survive insta-kill skills with 1 HP.';
 			if (this.priority === 1) return 'Revives with 1 HP when KO\'d. Usable once per battle.';
-			return 'Revives with full HP when KO\'d. Usable once per battle.';
+			return 'Endures lethal attack and fully heals HP once in battle.';
 		}
 		case 'HALVE': {
 			return `${this.affinity} attack that reduces HP of one foe by 50%.`;
@@ -289,14 +295,21 @@ class BaseSkill {
 				if (this.amount === 1) return 'Decreases recovery time from ailments by half.';
 				return 'Decreases recovery time from ailments to 1 turn.';
 			}
-			default: return this.name;
+			default: throw new Error(`A REGEN skkill has an unexpected hpmpail: ${this.hpmpail}`);
 			}
 		}
 		case 'SIPHON': {
 			return `${this.amount === 10 ? 'Low ' : ''} MP recovery when ${this.criteria === 'Ailment' ? 'inflicting status ailments' : 'you strike a foe\'s weakness or land a Critical'}.`;
 		}
 		case 'SMTCOUNTER': {
-			return `Chance to counter Strength-based attacks with a ${this.power.display} ${this.element} attack.${this.name === 'Retaliate' ? ' Does not stack with Counter.' : ''}${this.attackDown ? ' Lowers target\'s Attack 1 rank for 3 turns.' : ''}`;
+			return `Chance to counter Strength-based attacks with a ${this.power.display.toLowerCase()} ${this.element} attack.${this.name === 'Retaliate' ? ' Does not stack with Counter.' : ''}${this.attackDown ? ' Lowers target\'s Attack 1 rank for 3 turns.' : ''}`;
+		}
+		case 'SPRING': {
+			return `${this.amount === 30 ? 'Greatly i' : 'I'}ncreases MAX ${this.hpmp}.`;
+		}
+		case 'TAUNT': {
+			if (this.buff === null) return 'Raises chances of being targed by foes for 3 turns.';
+			return `Draws enemy hostility, but increases your ${this.buff} ${this.buff.includes('Double') ? '2 tiers' : 'by 1 rank'} for 3 turns.`;
 		}
 		default: return this.name;
 		}
@@ -425,6 +438,7 @@ module.exports.BoostSkill = class extends BaseSkill {
 		this.type = data.type;
 		this.element = data.element;
 		this.amount = data.amount;
+		this.stacks = data.stacks;
 	}
 };
 module.exports.BreakSkill = class extends BaseSkill {
