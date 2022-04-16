@@ -98,9 +98,7 @@ class BaseSkill {
 			default: throw new Error(`An AILDEFENSIVE skill has an unexpected resistance: ${this.resistance}`);
 			}
 		}
-		case 'AILMENT': {
-			return `Chance of inflicting ${this.ailments.join(' and ')} to ${this.range ? '1 foe' : 'all foes'}${this.flags.length === 0 ? '' : `and lowers ${this.flags.map(flag => flag.split(' ')[0]).join('')} by ${this.flags.every(flags => flags.includes('Greatly')) ? '2 ranks' : '1 rank'} for 3 turns.`}`;
-		}
+		case 'AILMENT': return `Chance of inflicting ${this.ailments.join(' and ')} to ${this.range ? '1 foe' : 'all foes'}${this.flags.length === 0 ? '' : `and lowers ${this.flags.map(flag => flag.split(' ')[0]).join('')} by ${this.flags.every(flags => flags.includes('Greatly')) ? '2 ranks' : '1 rank'} for 3 turns.`}`;
 		case 'ATTACK': {
 			const { ailments, flags } = this;
 			const range = ['all foes', '1 foe', 'random foes'][this.range];
@@ -202,14 +200,15 @@ class BaseSkill {
 			}
 			return `Automatic ${isParty ? 'Ma' : ''}${buffSkillName} at the start of battle.`;
 		}
-		case 'BLOCK': {
-			return `Nullifies a${['Ice', 'Elec'].includes(this.element) ? 'n' : ''} ${this.element} attack against all allies once for 1 turn.`;
-		}
+		case 'BARRIER': return this.name;
+		case 'BARRIERBREAK': return this.name;
+		case 'BLOCK': return `Nullifies a${['Ice', 'Elec'].includes(this.element) ? 'n' : ''} ${this.element} attack against all allies once for 1 turn.`;
 		// update
 		case 'BOOST': {
 			if (this.element === 'ALL') return 'Strengtens all attacks. Can stack.';
 			return this.name;
 		}
+		case 'BREAK': return this.name;
 		case 'CHARGE': {
 			if (['Ally', 'Self'].includes(this.range)) {
 				return `Greatly increases damage of the next ${this.charge === 'Charge' ? 'Strength' : 'Magic'}-based attack ${this.range === 'Self' ? 'from self' : 'on 1 ally'}.`;
@@ -247,21 +246,13 @@ class BaseSkill {
 			if (this.priority === 1) return 'Revives with 1 HP when KO\'d. Usable once per battle.';
 			return 'Endures lethal attack and fully heals HP once in battle.';
 		}
-		case 'HALVE': {
-			return `${this.affinity} attack that reduces HP of one foe by 50%.`;
-		}
-		case 'INSTAKILLBOOST': {
-			return `Increases success rate of ${this.element === 'Light' ? 'Hama' : 'Mudo'} skills.`;
-		}
-		case 'MASTER': {
-			return `Decreases ${this.skill} cost of skills by half.`;
-		}
-		case 'MISC': {
-			return this.effect;
-		}
-		case 'PERSONACOUNTER': {
-			return `${this.chance}% chance of reflecting physical attacks.`;
-		}
+		case 'EVASION': return this.name;
+		case 'HALVE': return `${this.affinity} attack that reduces HP of one foe by 50%.`;
+		case 'INSTAKILLBOOST': return `Increases success rate of ${this.element === 'Light' ? 'Hama' : 'Mudo'} skills.`;
+		case 'MASTER': return `Decreases ${this.skill} cost of skills by half.`;
+		case 'MISC': return this.effect;
+		case 'NAVI': return this.name;
+		case 'PERSONACOUNTER': return `${this.chance}% chance of reflecting physical attacks.`;
 		case 'POSTBATTLE': {
 			switch (this.stat) {
 			case 'HP':
@@ -281,6 +272,7 @@ class BaseSkill {
 			default: throw new Error(`A POSTBATTLE skill has an unexpected stat: ${this.stat}`);
 			}
 		}
+		case 'RECOVERY': return this.name;
 		case 'REGEN': {
 			switch (this.hpmpail) {
 			case 'HP': {
@@ -302,20 +294,17 @@ class BaseSkill {
 			default: throw new Error(`A REGEN skkill has an unexpected hpmpail: ${this.hpmpail}`);
 			}
 		}
-		case 'SIPHON': {
-			return `${this.amount === 10 ? 'Low ' : ''} MP recovery when ${this.criteria === 'Ailment' ? 'inflicting status ailments' : 'you strike a foe\'s weakness or land a Critical'}.`;
-		}
-		case 'SMTCOUNTER': {
-			return `Chance to counter Strength-based attacks with a ${this.power.display.toLowerCase()} ${this.element} attack.${this.name === 'Retaliate' ? ' Does not stack with Counter.' : ''}${this.attackDown ? ' Lowers target\'s Attack 1 rank for 3 turns.' : ''}`;
-		}
-		case 'SPRING': {
-			return `${this.amount === 30 ? 'Greatly i' : 'I'}ncreases MAX ${this.hpmp}.`;
-		}
+		case 'SIPHON': return `${this.amount === 10 ? 'Low ' : ''} MP recovery when ${this.criteria === 'Ailment' ? 'inflicting status ailments' : 'you strike a foe\'s weakness or land a Critical'}.`;
+		case 'SMTCOUNTER': return `Chance to counter Strength-based attacks with a ${this.power.display.toLowerCase()} ${this.element} attack.${this.name === 'Retaliate' ? ' Does not stack with Counter.' : ''}${this.attackDown ? ' Lowers target\'s Attack 1 rank for 3 turns.' : ''}`;
+		case 'SPRING': return `${this.amount === 30 ? 'Greatly i' : 'I'}ncreases MAX ${this.hpmp}.`;
+		case 'SUPPORT': return this.name;
+		case 'SUSCEPTIBILITY': return this.name;
 		case 'TAUNT': {
 			if (this.buff === null) return 'Raises chances of being targed by foes for 3 turns.';
 			return `Draws enemy hostility, but increases your ${this.buff} ${this.buff.includes('Double') ? '2 tiers' : 'by 1 rank'} for 3 turns.`;
 		}
-		default: return this.name;
+		case 'WALL': return this.name;
+		default: throw new Error(`The following skill has an unexpected type: ${JSON.stringify(this, null, 2)}`);
 		}
 	}
 }
