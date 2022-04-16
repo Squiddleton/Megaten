@@ -4,7 +4,7 @@
 
 A fan-made, unofficial collection of demons and skills from the "Megaten" series, primarily consisting of the Shin Megami Tensei and Persona franchises.
 
-This contains all the demons/Personas and skills from the following games, with more being added over time:
+This contains the demons/Personas and skills from the following games, with more being added over time:
 
 * Shin Megami Tensei V
 * Persona 5/Royal/Strikers
