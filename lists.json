@@ -429,7 +429,7 @@
       "game": "p5",
       "user": "Makoto Niijima",
       "stage": 3,
-      "evoSkill": "Checkmate"
+      "evoSkill": "Debilitate"
     },
     {
       "name": "Aitvaras",
@@ -2165,7 +2165,7 @@
           "level": 64
         },
         {
-          "name": "Cripple",
+          "name": "Gun Amp",
           "level": 68
         },
         {
@@ -6744,7 +6744,7 @@
       "game": "p5",
       "user": "Yusuke Kitagawa",
       "stage": 3,
-      "evoSkill": "Hyakka Ryouran"
+      "evoSkill": "Luster Candy"
     },
     {
       "name": "Hachiman",
@@ -6954,7 +6954,7 @@
       "game": "p4",
       "user": "Chie Satonaka",
       "stage": 3,
-      "evoSkill": "Dragon Hustle"
+      "evoSkill": "Luster Candy"
     },
     {
       "name": "Hariti",
@@ -11794,7 +11794,7 @@
           "level": 64
         },
         {
-          "name": "Cripple",
+          "name": "Gun Amp",
           "level": 68
         },
         {
@@ -12984,7 +12984,7 @@
           "level": 64
         },
         {
-          "name": "Cripple",
+          "name": "Gun Amp",
           "level": 68
         },
         {
@@ -21984,7 +21984,8 @@
       "devName": "analysis",
       "affinity": "Passive",
       "type": "NAVI",
-      "unique": false
+      "unique": false,
+      "effect": "Confirm affinities of enemies you have previously attacked."
     },
     {
       "name": "Andalucia",
@@ -22019,6 +22020,7 @@
       "elements": [
         "Fire",
         "Ice",
+        "Force",
         "Wind",
         "Elec",
         "Psy",
@@ -23171,16 +23173,6 @@
       "series": "persona"
     },
     {
-      "name": "Cripple",
-      "devName": "cripple",
-      "affinity": "Passive",
-      "type": "BOOST",
-      "unique": false,
-      "amount": 50,
-      "element": "Gun",
-      "stacks": "x"
-    },
-    {
       "name": "Critical Aura",
       "devName": "criticalaura",
       "affinity": "Support",
@@ -23567,7 +23559,7 @@
       "affinity": "Support",
       "type": "SUPPORT",
       "unique": false,
-      "range": 1,
+      "range": 0,
       "cost": 150,
       "surround": false,
       "buffs": [],
@@ -24017,24 +24009,6 @@
       "unique": false,
       "cost": null,
       "effect": "Greatly increases Accuracy."
-    },
-    {
-      "name": "Dragon Hustle",
-      "devName": "dragonhustle",
-      "affinity": "Support",
-      "type": "SUPPORT",
-      "unique": true,
-      "range": 0,
-      "cost": 150,
-      "surround": false,
-      "buffs": [
-        "Attack",
-        "Defense",
-        "Accuracy/Evasion"
-      ],
-      "negate": false,
-      "debuffs": [],
-      "auto": []
     },
     {
       "name": "Drain Dark",
@@ -26241,24 +26215,6 @@
       "flags": []
     },
     {
-      "name": "Hyakka Ryouran",
-      "devName": "hyakkaryouran",
-      "affinity": "Support",
-      "type": "SUPPORT",
-      "unique": true,
-      "range": 0,
-      "cost": 90,
-      "surround": false,
-      "buffs": [
-        "Attack",
-        "Defense",
-        "Accuracy/Evasion"
-      ],
-      "negate": false,
-      "debuffs": [],
-      "auto": []
-    },
-    {
       "name": "Hysterical Slap",
       "devName": "hystericalslap",
       "affinity": "Phys",
@@ -26750,6 +26706,7 @@
         "Fire",
         "Ice",
         "Elec",
+        "Force",
         "Wind",
         "Psy",
         "Nuke",
@@ -31114,28 +31071,32 @@
       "devName": "subrecoverhp",
       "affinity": "Passive",
       "type": "NAVI",
-      "unique": false
+      "unique": false,
+      "effect": "Restores 10% HP to backup members after battle."
     },
     {
       "name": "Subrecover HP EX",
       "devName": "subrecoverhpex",
       "affinity": "Passive",
       "type": "NAVI",
-      "unique": false
+      "unique": false,
+      "effect": "Restores 20% HP to backup members after battle."
     },
     {
       "name": "Subrecover SP",
       "devName": "subrecoversp",
       "affinity": "Passive",
       "type": "NAVI",
-      "unique": false
+      "unique": false,
+      "effect": "Restores 1% SP to backup members after battle."
     },
     {
       "name": "Subrecover SP EX",
       "devName": "subrecoverspex",
       "affinity": "Passive",
       "type": "NAVI",
-      "unique": false
+      "unique": false,
+      "effect": "Restores 3% SP to backup members after battle."
     },
     {
       "name": "Sukukaja",
@@ -31716,7 +31677,8 @@
       "devName": "treasureskimmer",
       "affinity": "Passive",
       "type": "NAVI",
-      "unique": false
+      "unique": false,
+      "effect": "Find out if a foe is carrying a rare item ahead of time."
     },
     {
       "name": "Trigger Happy",
@@ -31786,7 +31748,8 @@
       "devName": "ultimatesupport",
       "affinity": "Passive",
       "type": "NAVI",
-      "unique": false
+      "unique": false,
+      "effect": "Ultimate support effect of strengthening/healing all allies may activate in battle."
     },
     {
       "name": "Unshaken Will",

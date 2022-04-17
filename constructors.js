@@ -200,27 +200,35 @@ class BaseSkill {
 			}
 			return `Automatic ${isParty ? 'Ma' : ''}${buffSkillName} at the start of battle.`;
 		}
-		case 'BARRIER': return this.name;
-		case 'BARRIERBREAK': return this.name;
+		case 'BARRIER': {
+			if (this.barriers.length > 1) return 'Forms a barrier that reflects all attacks for all allies.';
+			const [barrier] = this.barriers;
+			if (barrier === 'Tetraja') return 'A barrier that nullifies an insta-kill for all allies one time.';
+			else if (barrier === 'Painting') return 'Forms a barrier taht can absorb one attack (except Almighty).';
+			else if (barrier === 'Shield of Justice') return 'Shields the party from all damage once.';
+			else if (barrier === 'Kannabi Veil') return 'Decreases damage to all allies until the next turn.';
+			return `Reflects a ${barrier === 'Tetrakarn' ? 'Phys' : 'Magic'} attack once for 1 ally for 1 turn.`;
+		}
+		case 'BARRIERBREAK': return `Negates ${this.barrier} on all foes.`;
 		case 'BLOCK': return `Nullifies a${['Ice', 'Elec'].includes(this.element) ? 'n' : ''} ${this.element} attack against all allies once for 1 turn.`;
-		// update
 		case 'BOOST': {
 			if (this.element === 'ALL') return 'Strengtens all attacks. Can stack.';
-			return this.name;
+			if (this.stacks === 'x') return `Strengthens ${this.element} skills by ${this.amount}%.`;
+			return `${this.amount === 35 ? 'Greatly i' : 'I'}ncreases ${this.element} attack damage.`;
 		}
-		case 'BREAK': return this.name;
+		case 'BREAK': return `Negates ${this.element} resistance of all foes. Cannot negate ${this.element} Wall.`;
 		case 'CHARGE': {
-			if (['Ally', 'Self'].includes(this.range)) {
+			switch (this.charge) {
+			case 'Critical': return 'Next Strength-based attack of self will be 100% accurate and guaranteed Critical.';
+			case 'Pierce': return 'Increases the damage of the next attack and adds Pierce effect for self.';
+			case 'Recovery': return 'Greatly increases the effect of the next HP healing skill of self and allows it to heal above MAX HP.';
+			default: {
+				if (this.range === 'Party') return `Next ${this.charge === 'Charge' ? 'physical' : 'magical'} attack deals over double the damage for all allies.`;
 				return `Greatly increases damage of the next ${this.charge === 'Charge' ? 'Strength' : 'Magic'}-based attack ${this.range === 'Self' ? 'from self' : 'on 1 ally'}.`;
 			}
-			// Checkmate and ryuji one
-			return '';
+			}
 		}
-		// add other cases
-		case 'CRIT': {
-			if (this.range === 'Party') return 'Increases chance of Critical for one ally for 3 turns.';
-			return this.name;
-		}
+		case 'CRIT': return `Increases chance of Critical for ${{ All: 'all', Ally: 'one ally', Party: 'all allies' }[this.range]} for 3 turns.`;
 		case 'CRITBOOST': {
 			switch (this.criteria) {
 			case 'Ambush': {
@@ -246,12 +254,19 @@ class BaseSkill {
 			if (this.priority === 1) return 'Revives with 1 HP when KO\'d. Usable once per battle.';
 			return 'Endures lethal attack and fully heals HP once in battle.';
 		}
-		case 'EVASION': return this.name;
+		case 'EVASION': {
+			if (this.amount === 3) return `Greatly increases Evasion from ${this.elements[0]} skills. Does not stack.`;
+			if (this.weather) return 'Greatly increases Evasion from all affinities during Rain/Snow.';
+			if (this.surround) return 'Greatly decreases Accuracy of all foes\' attacks except Almighty when surrounded.';
+			if (this.elements.length !== 1) return 'Increases Evasion from all magical attacks except Almighty.';
+			return `${this.amount === 3 ? 'Greatly i' : 'I'}ncreases Evasion from ${this.elements[0]} skills.${this.amount === 3 ? ' Does not stack.' : ''}`;
+		}
 		case 'HALVE': return `${this.affinity} attack that reduces HP of one foe by 50%.`;
 		case 'INSTAKILLBOOST': return `Increases success rate of ${this.element === 'Light' ? 'Hama' : 'Mudo'} skills.`;
 		case 'MASTER': return `Decreases ${this.skill} cost of skills by half.`;
 		case 'MISC': return this.effect;
-		case 'NAVI': return this.name;
+		// Add P4/P3 navi skill effects
+		case 'NAVI': return this.effect ?? this.name;
 		case 'PERSONACOUNTER': return `${this.chance}% chance of reflecting physical attacks.`;
 		case 'POSTBATTLE': {
 			switch (this.stat) {
@@ -272,15 +287,30 @@ class BaseSkill {
 			default: throw new Error(`A POSTBATTLE skill has an unexpected stat: ${this.stat}`);
 			}
 		}
-		case 'RECOVERY': return this.name;
+		case 'RECOVERY': {
+			if (this.ailments.length > 0) {
+				if (this.ailments.includes('ALL')) {
+					if (this.amount === null) return `Cure status ailments on ${this.range === 0 ? 'all allies' : '1 ally'}.`;
+					return `${this.amount} HP recovery and cures status ailments${this.flags.includes('Revert Debuffs') ? '/debuffs' : ''} for ${this.range === 0 ? 'all allies' : '1 ally'}.`;
+				}
+				return `Cures ${this.ailments.join('/')} for ${this.range === 0 ? 'all allies' : 'one ally'}.`;
+			}
+			else if (this.flags.includes('Revive')) {
+				if (this.flags.includes('Summon')) return 'Summons 1 demon at full HP. Effective on dead members as well.';
+				return `Revive ${this.range === 0 ? 'all allies' : 'one ally'} with ${this.amount.toLowerCase()} HP.`;
+			}
+			else if (this.amount === '130%') {
+				return 'Full HP recovery to all allies and heals above MAX HP.';
+			}
+			return `${this.amount} HP recovery to ${this.range === 0 ? 'all allies' : '1 ally'}${this.buffs.length > 0 ? ` and raises ${this.buffs.length === 3 ? 'all stats' : this.buffs.join('/')} by ${this.buffs[0].includes('Double') ? '2 ranks' : '1 rank'} for 3 turns` : ''}.`;
+		}
 		case 'REGEN': {
 			switch (this.hpmpail) {
 			case 'HP': {
 				return `Restores ${this.amount}% of max HP each turn in battle.`;
 			}
 			case 'MP': {
-				// Network fusion exclusive skills
-				if (this.baton) return this.name;
+				if (this.baton) return `Restores ${this.amount} SP after a Baton Pass.`;
 				return `Restores ${this.amount} MP each turn in battle.`;
 			}
 			case 'HPMP': {
@@ -297,13 +327,21 @@ class BaseSkill {
 		case 'SIPHON': return `${this.amount === 10 ? 'Low ' : ''} MP recovery when ${this.criteria === 'Ailment' ? 'inflicting status ailments' : 'you strike a foe\'s weakness or land a Critical'}.`;
 		case 'SMTCOUNTER': return `Chance to counter Strength-based attacks with a ${this.power.display.toLowerCase()} ${this.element} attack.${this.name === 'Retaliate' ? ' Does not stack with Counter.' : ''}${this.attackDown ? ' Lowers target\'s Attack 1 rank for 3 turns.' : ''}`;
 		case 'SPRING': return `${this.amount === 30 ? 'Greatly i' : 'I'}ncreases MAX ${this.hpmp}.`;
-		case 'SUPPORT': return this.name;
-		case 'SUSCEPTIBILITY': return this.name;
+		case 'SUPPORT': {
+			if (this.negate) {
+				const isDekaja = this.buffs.length > 0;
+				return `Negates status ${isDekaja ? '' : 'de'}buff effects on all ${isDekaja ? 'foes' : 'allies'}.`;
+			}
+			if (this.buffs.length > 0) return `Raises ${this.buffs.length === 3 ? 'all stats' : this.buffs.join('/')} of ${this.range === 0 ? 'all allies' : '1 ally'} by ${this.buffs[0].includes('Double') ? '2 ranks' : '1 rank'} for 3 turns${this.surround ? ' when surrounded' : ''}.`;
+			else if (this.debuffs.length > 0) return `Lowers ${this.debuffs.length === 3 ? 'all stats' : this.debuffs.join('/')} of ${this.range === 0 ? 'all foes' : '1 foe'} by ${this.debuffs[0].includes('Double') ? '2 ranks' : '1 rank'} for 3 turns.`;
+			else throw new Error(`A SUPPORT skill does not fall into a category for description: ${JSON.stringify(this, null, 2)}`);
+		}
+		case 'SUSCEPTIBILITY': return `Increases chance of inflicting ailments to ${this.range === 0 ? 'all' : 'one foe'}.`;
 		case 'TAUNT': {
 			if (this.buff === null) return 'Raises chances of being targed by foes for 3 turns.';
 			return `Draws enemy hostility, but increases your ${this.buff} ${this.buff.includes('Double') ? '2 tiers' : 'by 1 rank'} for 3 turns.`;
 		}
-		case 'WALL': return this.name;
+		case 'WALL': return `Adds ${this.element} resistance to one ally for 3 turns.`;
 		default: throw new Error(`The following skill has an unexpected type: ${JSON.stringify(this, null, 2)}`);
 		}
 	}
@@ -574,6 +612,7 @@ module.exports.NaviSkill = class extends BaseSkill {
 		super(data);
 		this.affinity = data.affinity;
 		this.type = data.type;
+		this.effect = data.effect;
 	}
 };
 module.exports.PersonaCounterSkill = class extends BaseSkill {

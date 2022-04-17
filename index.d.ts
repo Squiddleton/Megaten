@@ -436,11 +436,13 @@ export class NaviSkill extends BaseSkill {
     constructor(data: NaviSkillData);
     affinity: 'Passive';
     type: 'NAVI';
+    effect: string;
 }
 
 export interface NaviSkillData extends BaseSkillData {
     affinity: 'Passive';
     type: 'NAVI';
+    effect: string;
 }
 
 export class PostBattleSkill extends BaseSkill {
