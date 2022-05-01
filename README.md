@@ -269,6 +269,7 @@ AttackSkill {
 * Typings are designed to be as specific as possible for efficient use.
 * Images originate from the best obtainable picture of the demon found at the current time. These will be updated if/when renders are available for many Personas and classic demons.
 * Terms with multiple series-dependent names are given the name from SMTV (e.g. Vitality over Endurance, Light over Bless, Seal over Forget). However, Force and Wind remain separated.
+* Kouha/Eiha skills were changed to Hama/Mudo skills since the latter deal damage in the latest installments.
 
 ## Credits
 
