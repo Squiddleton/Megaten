@@ -62,8 +62,8 @@ class Persona extends Demon {
 	}
 }
 
-module.exports.Demon = Demon;
-module.exports.Persona = Persona;
+exports.Demon = Demon;
+exports.Persona = Persona;
 
 class BaseSkill {
 	/**
@@ -347,8 +347,8 @@ class BaseSkill {
 	}
 }
 
-module.exports.BaseSkill = BaseSkill;
-module.exports.AilBoostSkill = class extends BaseSkill {
+exports.BaseSkill = BaseSkill;
+exports.AilBoostSkill = class extends BaseSkill {
 	/**
 	 *
 	 * @param {import('./index').AilBoostSkillData} data
@@ -362,7 +362,7 @@ module.exports.AilBoostSkill = class extends BaseSkill {
 		this.weather = data.weather;
 	}
 };
-module.exports.AilDefensiveSkill = class extends BaseSkill {
+exports.AilDefensiveSkill = class extends BaseSkill {
 	/**
 	 *
 	 * @param {import('./index').AilDefensiveSkillData} data
@@ -375,7 +375,7 @@ module.exports.AilDefensiveSkill = class extends BaseSkill {
 		this.resistance = data.resistance;
 	}
 };
-module.exports.AilmentSkill = class extends BaseSkill {
+exports.AilmentSkill = class extends BaseSkill {
 	/**
 	 *
 	 * @param {import('./index').AilmentSkillData} data
@@ -391,7 +391,7 @@ module.exports.AilmentSkill = class extends BaseSkill {
 		this.flags = data.flags;
 	}
 };
-module.exports.AttackSkill = class extends BaseSkill {
+exports.AttackSkill = class extends BaseSkill {
 	/**
 	 * @param {import('./index').AttackSkillData} data
 	 */
@@ -409,7 +409,7 @@ module.exports.AttackSkill = class extends BaseSkill {
 		this.series = data.series;
 	}
 };
-module.exports.AutoBuffSkill = class extends BaseSkill {
+exports.AutoBuffSkill = class extends BaseSkill {
 	/**
 	 * @param {import('./index').AutoBuffSkillData} data
 	 */
@@ -421,7 +421,7 @@ module.exports.AutoBuffSkill = class extends BaseSkill {
 		this.range = data.range;
 	}
 };
-module.exports.BarrierSkill = class extends BaseSkill {
+exports.BarrierSkill = class extends BaseSkill {
 	/**
 	 * @param {import('./index').BarrierSkillData} data
 	 */
@@ -434,7 +434,7 @@ module.exports.BarrierSkill = class extends BaseSkill {
 		this.barriers = data.barriers;
 	}
 };
-module.exports.BarrierBreakSkill = class extends BaseSkill {
+exports.BarrierBreakSkill = class extends BaseSkill {
 	/**
 	 * @param {import('./index').BarrierBreakSkillData} data
 	 */
@@ -446,7 +446,7 @@ module.exports.BarrierBreakSkill = class extends BaseSkill {
 		this.barrier = data.barrier;
 	}
 };
-module.exports.BlockSkill = class extends BaseSkill {
+exports.BlockSkill = class extends BaseSkill {
 	/**
 	 *
 	 * @param {import('./index').BlockSkillData} data
@@ -459,7 +459,7 @@ module.exports.BlockSkill = class extends BaseSkill {
 		this.element = data.element;
 	}
 };
-module.exports.BoostSkill = class extends BaseSkill {
+exports.BoostSkill = class extends BaseSkill {
 	/**
 	 * @param {import('./index').BoostSkillData} data
 	 */
@@ -472,7 +472,7 @@ module.exports.BoostSkill = class extends BaseSkill {
 		this.stacks = data.stacks;
 	}
 };
-module.exports.BreakSkill = class extends BaseSkill {
+exports.BreakSkill = class extends BaseSkill {
 	/**
 	 * @param {import('./index').BreakSkillData} data
 	 */
@@ -484,7 +484,7 @@ module.exports.BreakSkill = class extends BaseSkill {
 		this.element = data.element;
 	}
 };
-module.exports.ChargeSkill = class extends BaseSkill {
+exports.ChargeSkill = class extends BaseSkill {
 	/**
 	 * @param {import('./index').ChargeSkillData} data
 	 */
@@ -497,7 +497,7 @@ module.exports.ChargeSkill = class extends BaseSkill {
 		this.charge = data.charge;
 	}
 };
-module.exports.CritSkill = class extends BaseSkill {
+exports.CritSkill = class extends BaseSkill {
 	/**
 	 * @param {import('./index').CritSkillData} data
 	 */
@@ -509,7 +509,7 @@ module.exports.CritSkill = class extends BaseSkill {
 		this.cost = data.cost;
 	}
 };
-module.exports.CritBoostSkill = class extends BaseSkill {
+exports.CritBoostSkill = class extends BaseSkill {
 	/**
 	 * @param {import('./index').CritBoostSkillData} data
 	 */
@@ -521,7 +521,7 @@ module.exports.CritBoostSkill = class extends BaseSkill {
 		this.criteria = data.criteria;
 	}
 };
-module.exports.DefensiveSkill = class extends BaseSkill {
+exports.DefensiveSkill = class extends BaseSkill {
 	/**
 	 * @param {import('./index').DefensiveSkillData} data
 	 */
@@ -533,7 +533,7 @@ module.exports.DefensiveSkill = class extends BaseSkill {
 		this.newAffinity = data.newAffinity;
 	}
 };
-module.exports.EndureSkill = class extends BaseSkill {
+exports.EndureSkill = class extends BaseSkill {
 	/**
 	 * @param {import('./index').EndureSkillData} data
 	 */
@@ -545,7 +545,7 @@ module.exports.EndureSkill = class extends BaseSkill {
 		this.instakill = data.instakill;
 	}
 };
-module.exports.EvasionSkill = class extends BaseSkill {
+exports.EvasionSkill = class extends BaseSkill {
 	/**
 	 * @param {import('./index').EvasionSkillData} data
 	 */
@@ -559,7 +559,7 @@ module.exports.EvasionSkill = class extends BaseSkill {
 		this.weather = data.weather;
 	}
 };
-module.exports.HalveSkill = class extends BaseSkill {
+exports.HalveSkill = class extends BaseSkill {
 	/**
 	 * @param {import('./index').HalveSkillData} data
 	 */
@@ -570,7 +570,7 @@ module.exports.HalveSkill = class extends BaseSkill {
 		this.cost = data.cost;
 	}
 };
-module.exports.InstaKillBoostSkill = class extends BaseSkill {
+exports.InstaKillBoostSkill = class extends BaseSkill {
 	/**
 	 * @param {import('./index').InstaKillBoostSkillData} data
 	 */
@@ -581,7 +581,7 @@ module.exports.InstaKillBoostSkill = class extends BaseSkill {
 		this.element = data.element;
 	}
 };
-module.exports.MasterSkill = class extends BaseSkill {
+exports.MasterSkill = class extends BaseSkill {
 	/**
 	 * @param {import('./index').MasterSkillData} data
 	 */
@@ -592,7 +592,7 @@ module.exports.MasterSkill = class extends BaseSkill {
 		this.skill = data.skill;
 	}
 };
-module.exports.MiscSkill = class extends BaseSkill {
+exports.MiscSkill = class extends BaseSkill {
 	/**
 	 * @param {import('./index').MiscSkillData} data
 	 */
@@ -604,7 +604,7 @@ module.exports.MiscSkill = class extends BaseSkill {
 		this.effect = data.effect;
 	}
 };
-module.exports.NaviSkill = class extends BaseSkill {
+exports.NaviSkill = class extends BaseSkill {
 	/**
 	 * @param {import('./index').NaviSkillData} data
 	 */
@@ -615,7 +615,7 @@ module.exports.NaviSkill = class extends BaseSkill {
 		this.effect = data.effect;
 	}
 };
-module.exports.PersonaCounterSkill = class extends BaseSkill {
+exports.PersonaCounterSkill = class extends BaseSkill {
 	/**
 	 * @param {import('./index').PersonaCounterSkillData} data
 	 */
@@ -626,7 +626,7 @@ module.exports.PersonaCounterSkill = class extends BaseSkill {
 		this.chance = data.chance;
 	}
 };
-module.exports.PostBattleSkill = class extends BaseSkill {
+exports.PostBattleSkill = class extends BaseSkill {
 	/**
 	 * @param {import('./index').PostBattleSkillData} data
 	 */
@@ -639,7 +639,7 @@ module.exports.PostBattleSkill = class extends BaseSkill {
 		this.stat = data.stat;
 	}
 };
-module.exports.RecoverySkill = class extends BaseSkill {
+exports.RecoverySkill = class extends BaseSkill {
 	/**
 	 * @param {import('./index').RecoverySkillData} data
 	 */
@@ -655,7 +655,7 @@ module.exports.RecoverySkill = class extends BaseSkill {
 		this.flags = data.flags;
 	}
 };
-module.exports.RegenSkill = class extends BaseSkill {
+exports.RegenSkill = class extends BaseSkill {
 	/**
 	 * @param {import('./index').RegenSkillData} data
 	 */
@@ -670,7 +670,7 @@ module.exports.RegenSkill = class extends BaseSkill {
 		this.baton = data.baton;
 	}
 };
-module.exports.SiphonSkill = class extends BaseSkill {
+exports.SiphonSkill = class extends BaseSkill {
 	/**
 	 *
 	 * @param {import('./index').SiphonSkillData} data
@@ -683,7 +683,7 @@ module.exports.SiphonSkill = class extends BaseSkill {
 		this.criteria = data.criteria;
 	}
 };
-module.exports.SMTCounterSkill = class extends BaseSkill {
+exports.SMTCounterSkill = class extends BaseSkill {
 	/**
 	 *
 	 * @param {import('./index').SMTCounterSkillData} data
@@ -698,7 +698,7 @@ module.exports.SMTCounterSkill = class extends BaseSkill {
 		this.power = data.power;
 	}
 };
-module.exports.SpringSkill = class extends BaseSkill {
+exports.SpringSkill = class extends BaseSkill {
 	/**
 	 * @param {import('./index').SpringSkillData} data
 	 */
@@ -710,7 +710,7 @@ module.exports.SpringSkill = class extends BaseSkill {
 		this.hpmp = data.hpmp;
 	}
 };
-module.exports.SupportSkill = class extends BaseSkill {
+exports.SupportSkill = class extends BaseSkill {
 	/**
 	 * @param {import('./index').SupportSkillData} data
 	 */
@@ -727,7 +727,7 @@ module.exports.SupportSkill = class extends BaseSkill {
 		this.surround = data.surround;
 	}
 };
-module.exports.SusceptibilitySkill = class extends BaseSkill {
+exports.SusceptibilitySkill = class extends BaseSkill {
 	/**
 	 * @param {import('./index').SusceptibilitySkillData} data
 	 */
@@ -739,7 +739,7 @@ module.exports.SusceptibilitySkill = class extends BaseSkill {
 		this.cost = data.cost;
 	}
 };
-module.exports.TauntSkill = class extends BaseSkill {
+exports.TauntSkill = class extends BaseSkill {
 	/**
 	 * @param {import('./index').TauntSkillData} data
 	 */
@@ -751,7 +751,7 @@ module.exports.TauntSkill = class extends BaseSkill {
 		this.cost = data.cost;
 	}
 };
-module.exports.WallSkill = class extends BaseSkill {
+exports.WallSkill = class extends BaseSkill {
 	/**
 	 * @param {import('./index').WallSkillData} data
 	 */
@@ -769,7 +769,7 @@ module.exports.WallSkill = class extends BaseSkill {
  * @param {import('./index').SkillData} data
  * @returns {import('./index').Skill}
  */
-module.exports.dataToClass = data => {
+exports.dataToClass = data => {
 	switch (data.type) {
 	case 'AILBOOST': return new this.AilBoostSkill(data);
 	case 'AILDEFENSIVE': return new this.AilDefensiveSkill(data);
