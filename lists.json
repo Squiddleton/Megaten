@@ -1890,7 +1890,7 @@
       "lu": 1,
       "learnset": [
         {
-          "name": "Eiha",
+          "name": "Mudo",
           "level": 0
         },
         {
@@ -4226,7 +4226,7 @@
           "level": 0
         },
         {
-          "name": "Kougaon",
+          "name": "Hamabarion",
           "level": 0
         },
         {
@@ -4234,7 +4234,7 @@
           "level": 0
         },
         {
-          "name": "Makougaon",
+          "name": "Mahamabarion",
           "level": 0
         },
         {
@@ -4575,7 +4575,7 @@
           "level": 0
         },
         {
-          "name": "Maeiha",
+          "name": "Mamudo",
           "level": 29
         },
         {
@@ -4583,7 +4583,7 @@
           "level": 30
         },
         {
-          "name": "Eiga",
+          "name": "Mudoon",
           "level": 31
         },
         {
@@ -5561,7 +5561,7 @@
           "level": 0
         },
         {
-          "name": "Kougaon",
+          "name": "Hamabarion",
           "level": 0
         },
         {
@@ -5569,7 +5569,7 @@
           "level": 0
         },
         {
-          "name": "Makougaon",
+          "name": "Mahamabarion",
           "level": 0
         },
         {
@@ -7389,7 +7389,7 @@
           "level": 0
         },
         {
-          "name": "Eigaon",
+          "name": "Mudobarion",
           "level": 0
         },
         {
@@ -13932,7 +13932,7 @@
           "level": 0
         },
         {
-          "name": "Makouha",
+          "name": "Mahama",
           "level": 0
         },
         {
@@ -15311,7 +15311,7 @@
       "lu": 4,
       "learnset": [
         {
-          "name": "Kouha",
+          "name": "Hama",
           "level": 0
         },
         {
@@ -15323,7 +15323,7 @@
           "level": 2
         },
         {
-          "name": "Makouha",
+          "name": "Mahama",
           "level": 12
         },
         {
@@ -15343,7 +15343,7 @@
           "level": 21
         },
         {
-          "name": "Kouga",
+          "name": "Hamaon",
           "level": 23
         },
         {
@@ -15359,7 +15359,7 @@
           "level": 35
         },
         {
-          "name": "Makouga",
+          "name": "Mahamaon",
           "level": 40
         },
         {
@@ -15371,7 +15371,7 @@
           "level": 46
         },
         {
-          "name": "Kougaon",
+          "name": "Hamabarion",
           "level": 48
         },
         {
@@ -15407,7 +15407,7 @@
       "game": "p5",
       "user": "Sophia",
       "stage": 2,
-      "evoSkill": "Makougaon"
+      "evoSkill": "Mahamabarion"
     },
     {
       "name": "Parvati",
@@ -15673,7 +15673,7 @@
       "lu": 4,
       "learnset": [
         {
-          "name": "Kouha",
+          "name": "Hama",
           "level": 0
         },
         {
@@ -15685,7 +15685,7 @@
           "level": 2
         },
         {
-          "name": "Makouha",
+          "name": "Mahama",
           "level": 12
         },
         {
@@ -15705,7 +15705,7 @@
           "level": 21
         },
         {
-          "name": "Kouga",
+          "name": "Hamaon",
           "level": 23
         },
         {
@@ -15721,7 +15721,7 @@
           "level": 35
         },
         {
-          "name": "Makouga",
+          "name": "Mahamaon",
           "level": 40
         },
         {
@@ -15733,7 +15733,7 @@
           "level": 46
         },
         {
-          "name": "Kougaon",
+          "name": "Hamabarion",
           "level": 48
         }
       ],
@@ -16481,7 +16481,7 @@
           "level": 0
         },
         {
-          "name": "Eigaon",
+          "name": "Mudobarion",
           "level": 0
         },
         {
@@ -16489,7 +16489,7 @@
           "level": 0
         },
         {
-          "name": "Maeigaon",
+          "name": "Mamudobarion",
           "level": 78
         },
         {
@@ -16684,11 +16684,11 @@
           "level": 0
         },
         {
-          "name": "Makouha",
+          "name": "Mahama",
           "level": 0
         },
         {
-          "name": "Maeiha",
+          "name": "Mamudo",
           "level": 0
         }
       ],
@@ -16729,14 +16729,6 @@
           "level": 0
         },
         {
-          "name": "Kouga",
-          "level": 0
-        },
-        {
-          "name": "Eiga",
-          "level": 0
-        },
-        {
           "name": "Hamaon",
           "level": 0
         },
@@ -16749,11 +16741,11 @@
           "level": 0
         },
         {
-          "name": "Kougaon",
+          "name": "Hamabarion",
           "level": 47
         },
         {
-          "name": "Eigaon",
+          "name": "Mudobarion",
           "level": 48
         },
         {
@@ -17183,7 +17175,7 @@
       "lu": 56,
       "learnset": [
         {
-          "name": "Maeigaon",
+          "name": "Mamudobarion",
           "level": 0
         },
         {
@@ -19124,7 +19116,7 @@
           "level": 0
         },
         {
-          "name": "Maeigaon",
+          "name": "Mamudobarion",
           "level": 0
         },
         {
@@ -19185,7 +19177,7 @@
           "level": 0
         },
         {
-          "name": "Maeigaon",
+          "name": "Mamudobarion",
           "level": 0
         },
         {
@@ -20175,7 +20167,7 @@
           "level": 42
         },
         {
-          "name": "Kougaon",
+          "name": "Hamabarion",
           "level": 43
         },
         {
@@ -20424,7 +20416,7 @@
           "level": 0
         },
         {
-          "name": "Kougaon",
+          "name": "Hamabarion",
           "level": 0
         },
         {
@@ -20432,7 +20424,7 @@
           "level": 0
         },
         {
-          "name": "Makougaon",
+          "name": "Mahamabarion",
           "level": 0
         },
         {
@@ -20608,7 +20600,7 @@
           "level": 0
         },
         {
-          "name": "Makougaon",
+          "name": "Mahamabarion",
           "level": 0
         },
         {
@@ -24187,69 +24179,6 @@
       "series": "smt"
     },
     {
-      "name": "Eiga",
-      "devName": "eiga",
-      "affinity": "Dark",
-      "type": "ATTACK",
-      "unique": false,
-      "range": 1,
-      "cost": {
-        "type": "MP",
-        "amount": 8
-      },
-      "power": {
-        "amount": 200,
-        "display": "Medium"
-      },
-      "min": 1,
-      "max": 1,
-      "flags": [],
-      "ailments": [],
-      "series": "persona"
-    },
-    {
-      "name": "Eigaon",
-      "devName": "eigaon",
-      "affinity": "Dark",
-      "type": "ATTACK",
-      "unique": false,
-      "range": 1,
-      "cost": {
-        "type": "MP",
-        "amount": 12
-      },
-      "power": {
-        "amount": 320,
-        "display": "Heavy"
-      },
-      "min": 1,
-      "max": 1,
-      "flags": [],
-      "ailments": [],
-      "series": "persona"
-    },
-    {
-      "name": "Eiha",
-      "devName": "eiha",
-      "affinity": "Dark",
-      "type": "ATTACK",
-      "unique": false,
-      "range": 1,
-      "cost": {
-        "type": "MP",
-        "amount": 4
-      },
-      "power": {
-        "amount": 80,
-        "display": "Light"
-      },
-      "min": 1,
-      "max": 1,
-      "flags": [],
-      "ailments": [],
-      "series": "persona"
-    },
-    {
       "name": "Elec Amp",
       "devName": "elecamp",
       "affinity": "Passive",
@@ -26608,69 +26537,6 @@
       "series": "smt"
     },
     {
-      "name": "Kouga",
-      "devName": "kouga",
-      "affinity": "Light",
-      "type": "ATTACK",
-      "unique": false,
-      "range": 1,
-      "cost": {
-        "type": "MP",
-        "amount": 8
-      },
-      "power": {
-        "amount": 200,
-        "display": "Medium"
-      },
-      "min": 1,
-      "max": 1,
-      "flags": [],
-      "ailments": [],
-      "series": "persona"
-    },
-    {
-      "name": "Kougaon",
-      "devName": "kougaon",
-      "affinity": "Light",
-      "type": "ATTACK",
-      "unique": false,
-      "range": 1,
-      "cost": {
-        "type": "MP",
-        "amount": 12
-      },
-      "power": {
-        "amount": 320,
-        "display": "Heavy"
-      },
-      "min": 1,
-      "max": 1,
-      "flags": [],
-      "ailments": [],
-      "series": "persona"
-    },
-    {
-      "name": "Kouha",
-      "devName": "kouha",
-      "affinity": "Light",
-      "type": "ATTACK",
-      "unique": false,
-      "range": 1,
-      "cost": {
-        "type": "MP",
-        "amount": 4
-      },
-      "power": {
-        "amount": 80,
-        "display": "Light"
-      },
-      "min": 1,
-      "max": 1,
-      "flags": [],
-      "ailments": [],
-      "series": "persona"
-    },
-    {
       "name": "Laevateinn",
       "devName": "laevateinn",
       "affinity": "Phys",
@@ -27123,69 +26989,6 @@
       "series": "smt"
     },
     {
-      "name": "Maeiga",
-      "devName": "maeiga",
-      "affinity": "Dark",
-      "type": "ATTACK",
-      "unique": false,
-      "range": 0,
-      "cost": {
-        "type": "MP",
-        "amount": 16
-      },
-      "power": {
-        "amount": 200,
-        "display": "Medium"
-      },
-      "min": 1,
-      "max": 1,
-      "flags": [],
-      "ailments": [],
-      "series": "persona"
-    },
-    {
-      "name": "Maeigaon",
-      "devName": "maeigaon",
-      "affinity": "Dark",
-      "type": "ATTACK",
-      "unique": false,
-      "range": 0,
-      "cost": {
-        "type": "MP",
-        "amount": 22
-      },
-      "power": {
-        "amount": 320,
-        "display": "Heavy"
-      },
-      "min": 1,
-      "max": 1,
-      "flags": [],
-      "ailments": [],
-      "series": "persona"
-    },
-    {
-      "name": "Maeiha",
-      "devName": "maeiha",
-      "affinity": "Dark",
-      "type": "ATTACK",
-      "unique": false,
-      "range": 0,
-      "cost": {
-        "type": "MP",
-        "amount": 10
-      },
-      "power": {
-        "amount": 80,
-        "display": "Light"
-      },
-      "min": 1,
-      "max": 1,
-      "flags": [],
-      "ailments": [],
-      "series": "persona"
-    },
-    {
       "name": "Mafrei",
       "devName": "mafrei",
       "affinity": "Nuke",
@@ -27462,69 +27265,6 @@
       "barriers": [
         "Makarakarn"
       ]
-    },
-    {
-      "name": "Makouga",
-      "devName": "makouga",
-      "affinity": "Light",
-      "type": "ATTACK",
-      "unique": false,
-      "range": 0,
-      "cost": {
-        "type": "MP",
-        "amount": 16
-      },
-      "power": {
-        "amount": 200,
-        "display": "Medium"
-      },
-      "min": 1,
-      "max": 1,
-      "flags": [],
-      "ailments": [],
-      "series": "persona"
-    },
-    {
-      "name": "Makougaon",
-      "devName": "makougaon",
-      "affinity": "Light",
-      "type": "ATTACK",
-      "unique": false,
-      "range": 0,
-      "cost": {
-        "type": "MP",
-        "amount": 22
-      },
-      "power": {
-        "amount": 320,
-        "display": "Heavy"
-      },
-      "min": 1,
-      "max": 1,
-      "flags": [],
-      "ailments": [],
-      "series": "persona"
-    },
-    {
-      "name": "Makouha",
-      "devName": "makouha",
-      "affinity": "Light",
-      "type": "ATTACK",
-      "unique": false,
-      "range": 0,
-      "cost": {
-        "type": "MP",
-        "amount": 10
-      },
-      "power": {
-        "amount": 80,
-        "display": "Light"
-      },
-      "min": 1,
-      "max": 1,
-      "flags": [],
-      "ailments": [],
-      "series": "persona"
     },
     {
       "name": "Mamudo",
