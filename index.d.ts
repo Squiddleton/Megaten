@@ -13,7 +13,10 @@ export interface DemonData {
     ma: number;
     ag: number;
     lu: number;
-    learnset: Learnset[];
+    learnset: {
+        name: string;
+        level: number;
+    }[];
     weak: Element[];
     resist: Element[];
     null: Element[];
@@ -41,7 +44,10 @@ export class Demon {
     ma: number;
     ag: number;
     lu: number;
-    learnset: Learnset[];
+    learnset: {
+        name: string;
+        level: number;
+    }[];
     weak: Element[];
     resist: Element[];
     null: Element[];
@@ -703,8 +709,3 @@ export type SkillData = AilBoostSkillData | AilDefensiveSkillData | AilmentSkill
 export type SkillType = 'AILBOOST' | 'AILDEFENSIVE' | 'AILMENT' | 'ATTACK' | 'AUTOBUFF' | 'BARRIER' | 'BARRIERBREAK' | 'BLOCK' | 'BOOST' | 'BREAK'
     | 'CHARGE' | 'CRIT' |'CRITBOOST' | 'DEFENSIVE' | 'ENDURE' | 'EVASION' | 'HALVE' | 'INSTAKILLBOOST' | 'MASTER' | 'MISC' | 'NAVI'
     | 'PERSONACOUNTER' | 'POSTBATTLE' | 'RECOVERY' | 'REGEN' | 'SIPHON' | 'SMTCOUNTER' | 'SPRING' | 'SUPPORT' | 'SUSCEPTIBILITY' | 'TAUNT' | 'WALL';
-
-export interface Learnset {
-    name: string;
-    level: number;
-}
