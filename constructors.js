@@ -40,6 +40,9 @@ class Demon {
 	isPersona() {
 		return this.race === 'Persona';
 	}
+	toString() {
+		return `${this.race} ${this.name}`;
+	}
 }
 
 class Persona extends Demon {
@@ -59,6 +62,9 @@ class Persona extends Demon {
 	get evolution() {
 		const evoPersona = lists.demons.find(demon => demon.user === this.user && demon.stage === (this.stage + 1));
 		return evoPersona === undefined ? null : new Persona(evoPersona);
+	}
+	toString() {
+		return `${this.user}'${['s', 'z'].some(l => this.user.endsWith(l)) ? '' : 's'} ${this.name}`;
 	}
 }
 
