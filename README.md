@@ -223,7 +223,7 @@ Persona {
   user: 'Morgana',
   stage: 2,
   evoSkill: "Evade Elec",
-  evolution: Persona {...},
+  evolution: Persona {...}
 }
 ```
 
