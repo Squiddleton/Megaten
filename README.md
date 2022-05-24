@@ -219,7 +219,7 @@ Persona {
   repel: [],
   game: 'p5',
   image: Buffer {...},
-  isPersona(): true
+  isPersona(): true,
   user: 'Morgana',
   stage: 2,
   evoSkill: "Evade Elec",
