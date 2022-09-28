@@ -52,6 +52,7 @@ class Persona extends Demon {
 	 */
 	constructor(data) {
 		super(data);
+		if (data.user === undefined || data.stage === undefined || data.evoSkill === undefined) throw new Error('Cannot construct a Persona without a user, stage, and/or evoSkill property.');
 		this.user = data.user;
 		this.stage = data.stage;
 		this.evoSkill = data.evoSkill;
@@ -133,6 +134,9 @@ class BaseSkill {
 				}
 				if (flags.includes('Attack Down')) {
 					description += 'Lowers target\'s Attack by 1 rank for 3 turns.';
+				}
+				if (flags.includes('Attack Reduced')) {
+					description += 'Decreases Attack after use.';
 				}
 				if (flags.includes('Baton Boost')) {
 					description += 'Powers up after a Baton Pass.';
@@ -301,7 +305,7 @@ class BaseSkill {
 				}
 				return `Cures ${this.ailments.join('/')} for ${this.range === 0 ? 'all allies' : 'one ally'}.`;
 			}
-			else if (this.flags.includes('Revive')) {
+			else if (this.flags.includes('Revive') && this.amount !== null) {
 				if (this.flags.includes('Summon')) return 'Summons 1 demon at full HP. Effective on dead members as well.';
 				return `Revive ${this.range === 0 ? 'all allies' : 'one ally'} with ${this.amount.toLowerCase()} HP.`;
 			}
