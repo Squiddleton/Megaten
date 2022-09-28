@@ -1,7 +1,9 @@
 const { readFileSync } = require('fs');
-/** @type {Lists} */
+/**
+ * @type {import('./index').DemonData[]}
+ */
 // @ts-ignore
-const lists = require('./lists.json');
+const demonList = require('./demons');
 
 class Demon {
 	/**
@@ -61,7 +63,7 @@ class Persona extends Demon {
      * @type {import('./index').Persona | null} The Persona's evolution, or null if none
      */
 	get evolution() {
-		const evoPersona = lists.demons.find(demon => demon.user === this.user && demon.stage === (this.stage + 1));
+		const evoPersona = demonList.find(demon => demon.user === this.user && demon.stage === (this.stage + 1));
 		return evoPersona === undefined ? null : new Persona(evoPersona);
 	}
 	toString() {

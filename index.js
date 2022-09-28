@@ -1,7 +1,14 @@
 const { Demon, Persona, BaseSkill, AilBoostSkill, AilDefensiveSkill, AilmentSkill, AttackSkill, AutoBuffSkill, BarrierSkill, BarrierBreakSkill, BlockSkill, BoostSkill, BreakSkill, ChargeSkill, CritSkill, CritBoostSkill, DefensiveSkill, EndureSkill, EvasionSkill, HalveSkill, InstaKillBoostSkill, MasterSkill, MiscSkill, NaviSkill, PersonaCounterSkill, PostBattleSkill, RecoverySkill, RegenSkill, SiphonSkill, SMTCounterSkill, SpringSkill, SupportSkill, SusceptibilitySkill, TauntSkill, WallSkill, dataToClass } = require('./constructors');
-/** @type {Lists} */
+/**
+ * @type {import('.').DemonData[]}
+ */
 // @ts-ignore
-const lists = require('./lists.json');
+const demonList = require('./demons');
+/**
+ * @type {import('.').SkillData[]}
+ */
+// @ts-ignore
+const skillList = require('./skills');
 const { Collection } = require('@discordjs/collection');
 
 /**
@@ -53,8 +60,8 @@ exports.SusceptibilitySkill = SusceptibilitySkill;
 exports.TauntSkill = TauntSkill;
 exports.WallSkill = WallSkill;
 
-exports.demons = lists.demons.map(demon => new (demon.race === 'Persona' ? Persona : Demon)(demon));
-exports.skills = lists.skills.map(skill => dataToClass(skill));
+exports.demons = demonList.map(demon => new (demon.race === 'Persona' ? Persona : Demon)(demon));
+exports.skills = skillList.map(skill => dataToClass(skill));
 
 const demons = new Collection(this.demons.map(demon => [demon.devName, demon]));
 const skills = new Collection(this.skills.map(skill => [skill.devName, skill]));
@@ -76,9 +83,3 @@ exports.getSkill = name => skills.get(noPunc(name)) ?? null;
 exports.version = require('./package.json').version;
 
 exports.noPunc = noPunc;
-
-/**
- * @typedef Lists
- * @property {import('.').DemonData[]} demons
- * @property {import('.').SkillData[]} skills
- */

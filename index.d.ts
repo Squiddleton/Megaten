@@ -6,8 +6,8 @@ export interface DemonData {
     arcana: Arcana;
     race: Race;
     level: number;
-    hp: number;
-    mp: number;
+    hp: number | null;
+    mp: number | null;
     st: number;
     vi: number;
     ma: number;
@@ -23,9 +23,9 @@ export interface DemonData {
     drain: Element[];
     repel: Element[];
     game: Game;
-    user: string | undefined;
-    stage: 1 | 2 | 3 | undefined;
-    evoSkill: string | null | undefined;
+    user?: string;
+    stage?: 1 | 2 | 3;
+    evoSkill?: string | null;
 }
 
 export class Demon {
@@ -37,8 +37,8 @@ export class Demon {
     arcana: Arcana;
     race: Race;
     level: number;
-    hp: number;
-    mp: number;
+    hp: number | null;
+    mp: number | null;
     st: number;
     vi: number;
     ma: number;
@@ -249,7 +249,7 @@ export class BoostSkill extends BaseSkill {
     constructor(data: BoostSkillData);
     affinity: 'Passive';
     type: 'BOOST';
-    element: Element | 'ALL';
+    element: Element | 'Recovery' | 'ALL';
     amount: number;
     stacks: "+" | "x"
 }
@@ -257,7 +257,7 @@ export class BoostSkill extends BaseSkill {
 export interface BoostSkillData extends BaseSkillData {
     affinity: 'Passive';
     type: 'BOOST';
-    element: Element | 'ALL';
+    element: Element | 'Recovery' | 'ALL';
     amount: number;
     stacks: "+" | "x"
 }
@@ -560,7 +560,7 @@ export class SpringSkill extends BaseSkill {
     hpmp: HPMP;
 }
 
-export interface SpringSkillData extends BaseSkill {
+export interface SpringSkillData extends BaseSkillData {
     affinity: 'Passive';
     type: 'SPRING';
     amount: number;
@@ -576,7 +576,7 @@ export class SupportSkill extends BaseSkill {
     buffs: Buff[];
     debuffs: Buff[];
     negate: boolean;
-    auto: Barrier[];
+    auto: (Barrier|Charge)[];
     surround: boolean;
 }
 
@@ -588,7 +588,7 @@ export interface SupportSkillData extends BaseSkillData {
     buffs: Buff[];
     debuffs: Buff[];
     negate: boolean;
-    auto: Barrier[];
+    auto: (Barrier|Charge)[];
     surround: boolean;
 }
 
