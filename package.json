@@ -2,8 +2,8 @@
   "name": "megaten",
   "version": "1.8.2",
   "description": "An unofficial collection of data from the Shin Megami Tensei and Persona games.",
-  "main": "index.js",
-  "types": "index.d.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "author": "Squiddleton",
   "license": "MIT",
   "keywords": [
