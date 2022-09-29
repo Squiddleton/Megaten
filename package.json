@@ -19,11 +19,14 @@
   },
   "homepage": "https://github.com/Squiddleton/Megaten#readme",
   "bugs": "https://github.com/Squiddleton/Megaten/issues",
+  "scripts": {
+    "lint": "eslint . --fix"
+  },
   "devDependencies": {
     "@types/node": "^17.0.23",
     "eslint": "^8.5.0"
   },
   "dependencies": {
-    "@discordjs/collection": "^0.5.0"
+    "@discordjs/collection": "^1.1.0"
   }
 }
