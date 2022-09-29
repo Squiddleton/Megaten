@@ -8654,7 +8654,7 @@ const demons: (DemonData | PersonaData)[] = [
 		game: 'smt5'
 	},
 	{
-		name: 'Jack-o"-Lantern',
+		name: 'Jack-o\'-Lantern',
 		devName: 'jackolantern',
 		aliases: [
 			'pyrojack'
@@ -18360,7 +18360,7 @@ const demons: (DemonData | PersonaData)[] = [
 		game: 'p4',
 		user: 'Yukiko Amagi',
 		stage: 3,
-		evoSkill: 'Burning Petals'
+		evoSkill: 'Maragibarion'
 	},
 	{
 		name: 'Surt',
