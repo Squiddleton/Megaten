@@ -1,11 +1,11 @@
 const { Demon, Persona, BaseSkill, AilBoostSkill, AilDefensiveSkill, AilmentSkill, AttackSkill, AutoBuffSkill, BarrierSkill, BarrierBreakSkill, BlockSkill, BoostSkill, BreakSkill, ChargeSkill, CritSkill, CritBoostSkill, DefensiveSkill, EndureSkill, EvasionSkill, HalveSkill, InstaKillBoostSkill, MasterSkill, MiscSkill, NaviSkill, PersonaCounterSkill, PostBattleSkill, RecoverySkill, RegenSkill, SiphonSkill, SMTCounterSkill, SpringSkill, SupportSkill, SusceptibilitySkill, TauntSkill, WallSkill, dataToClass } = require('./constructors');
 /**
- * @type {import('.').DemonData[]}
+ * @type {import('../dist').DemonData[]}
  */
 // @ts-ignore
 const demonList = require('./demons');
 /**
- * @type {import('.').SkillData[]}
+ * @type {import('../dist').SkillData[]}
  */
 // @ts-ignore
 const skillList = require('./skills');
@@ -60,11 +60,14 @@ exports.SusceptibilitySkill = SusceptibilitySkill;
 exports.TauntSkill = TauntSkill;
 exports.WallSkill = WallSkill;
 
-exports.demons = demonList.map(demon => new (demon.race === 'Persona' ? Persona : Demon)(demon));
-exports.skills = skillList.map(skill => dataToClass(skill));
+const demons = demonList.map(demon => new (demon.race === 'Persona' ? Persona : Demon)(demon));
+const skills = skillList.map(skill => dataToClass(skill));
 
-const demons = new Collection(this.demons.map(demon => [demon.devName, demon]));
-const skills = new Collection(this.skills.map(skill => [skill.devName, skill]));
+exports.demons = demons;
+exports.skills = skills;
+
+const demonColl = new Collection(demons.map(demon => [demon.devName, demon]));
+const skillColl = new Collection(skills.map(skill => [skill.devName, skill]));
 
 /**
  *
@@ -72,14 +75,14 @@ const skills = new Collection(this.skills.map(skill => [skill.devName, skill]));
  */
 exports.getDemon = name => {
 	name = noPunc(name);
-	return demons.get(name) ?? demons.find(demon => demon.aliases.includes(name)) ?? null;
+	return demonColl.get(name) ?? demonColl.find(demon => demon.aliases.includes(name)) ?? null;
 };
 /**
  *
  * @param {string} name
  */
-exports.getSkill = name => skills.get(noPunc(name)) ?? null;
+exports.getSkill = name => skillColl.get(noPunc(name)) ?? null;
 
-exports.version = require('./package.json').version;
+exports.version = require('../package.json').version;
 
 exports.noPunc = noPunc;
