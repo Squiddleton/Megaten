@@ -1,6 +1,6 @@
 const { readFileSync } = require('fs');
 /**
- * @type {import('./index').DemonData[]}
+ * @type {import('../dist/index').DemonData[]}
  */
 // @ts-ignore
 const demonList = require('./demons');
@@ -8,7 +8,7 @@ const demonList = require('./demons');
 class Demon {
 	/**
 	 *
-	 * @param {import('./index').DemonData} data
+	 * @param {import('../dist/index').DemonData} data
 	 */
 	constructor(data) {
 		this.name = data.name;
@@ -50,7 +50,7 @@ class Demon {
 class Persona extends Demon {
 	/**
 	 *
-	 * @param {import('./index').DemonData} data
+	 * @param {import('../dist/index').DemonData} data
 	 */
 	constructor(data) {
 		super(data);
@@ -60,7 +60,7 @@ class Persona extends Demon {
 		this.evoSkill = data.evoSkill;
 	}
 	/**
-     * @type {import('./index').Persona | null} The Persona's evolution, or null if none
+     * @type {import('../dist/index').Persona | null} The Persona's evolution, or null if none
      */
 	get evolution() {
 		const evoPersona = demonList.find(demon => demon.user === this.user && demon.stage === (this.stage + 1));
@@ -77,7 +77,7 @@ exports.Persona = Persona;
 class BaseSkill {
 	/**
 	 *
-	 * @param {import('./index').BaseSkillData} data
+	 * @param {import('../dist/index').BaseSkillData} data
 	 */
 	constructor(data) {
 		this.name = data.name;
@@ -88,7 +88,7 @@ class BaseSkill {
 	}
 	/**
      * @type {string} A description of the skill's effects (or the skill's name if none exists yet)
-	 * @this import('./index').Skill
+	 * @this import('../dist/index').Skill
      */
 	get description() {
 		switch (this.type) {
@@ -363,7 +363,7 @@ exports.BaseSkill = BaseSkill;
 exports.AilBoostSkill = class extends BaseSkill {
 	/**
 	 *
-	 * @param {import('./index').AilBoostSkillData} data
+	 * @param {import('../dist/index').AilBoostSkillData} data
 	 */
 	constructor(data) {
 		super(data);
@@ -377,7 +377,7 @@ exports.AilBoostSkill = class extends BaseSkill {
 exports.AilDefensiveSkill = class extends BaseSkill {
 	/**
 	 *
-	 * @param {import('./index').AilDefensiveSkillData} data
+	 * @param {import('../dist/index').AilDefensiveSkillData} data
 	 */
 	constructor(data) {
 		super(data);
@@ -390,7 +390,7 @@ exports.AilDefensiveSkill = class extends BaseSkill {
 exports.AilmentSkill = class extends BaseSkill {
 	/**
 	 *
-	 * @param {import('./index').AilmentSkillData} data
+	 * @param {import('../dist/index').AilmentSkillData} data
 	 */
 	constructor(data) {
 		super(data);
@@ -405,7 +405,7 @@ exports.AilmentSkill = class extends BaseSkill {
 };
 exports.AttackSkill = class extends BaseSkill {
 	/**
-	 * @param {import('./index').AttackSkillData} data
+	 * @param {import('../dist/index').AttackSkillData} data
 	 */
 	constructor(data) {
 		super(data);
@@ -423,7 +423,7 @@ exports.AttackSkill = class extends BaseSkill {
 };
 exports.AutoBuffSkill = class extends BaseSkill {
 	/**
-	 * @param {import('./index').AutoBuffSkillData} data
+	 * @param {import('../dist/index').AutoBuffSkillData} data
 	 */
 	constructor(data) {
 		super(data);
@@ -435,7 +435,7 @@ exports.AutoBuffSkill = class extends BaseSkill {
 };
 exports.BarrierSkill = class extends BaseSkill {
 	/**
-	 * @param {import('./index').BarrierSkillData} data
+	 * @param {import('../dist/index').BarrierSkillData} data
 	 */
 	constructor(data) {
 		super(data);
@@ -448,7 +448,7 @@ exports.BarrierSkill = class extends BaseSkill {
 };
 exports.BarrierBreakSkill = class extends BaseSkill {
 	/**
-	 * @param {import('./index').BarrierBreakSkillData} data
+	 * @param {import('../dist/index').BarrierBreakSkillData} data
 	 */
 	constructor(data) {
 		super(data);
@@ -461,7 +461,7 @@ exports.BarrierBreakSkill = class extends BaseSkill {
 exports.BlockSkill = class extends BaseSkill {
 	/**
 	 *
-	 * @param {import('./index').BlockSkillData} data
+	 * @param {import('../dist/index').BlockSkillData} data
 	 */
 	constructor(data) {
 		super(data);
@@ -473,7 +473,7 @@ exports.BlockSkill = class extends BaseSkill {
 };
 exports.BoostSkill = class extends BaseSkill {
 	/**
-	 * @param {import('./index').BoostSkillData} data
+	 * @param {import('../dist/index').BoostSkillData} data
 	 */
 	constructor(data) {
 		super(data);
@@ -486,7 +486,7 @@ exports.BoostSkill = class extends BaseSkill {
 };
 exports.BreakSkill = class extends BaseSkill {
 	/**
-	 * @param {import('./index').BreakSkillData} data
+	 * @param {import('../dist/index').BreakSkillData} data
 	 */
 	constructor(data) {
 		super(data);
@@ -498,7 +498,7 @@ exports.BreakSkill = class extends BaseSkill {
 };
 exports.ChargeSkill = class extends BaseSkill {
 	/**
-	 * @param {import('./index').ChargeSkillData} data
+	 * @param {import('../dist/index').ChargeSkillData} data
 	 */
 	constructor(data) {
 		super(data);
@@ -511,7 +511,7 @@ exports.ChargeSkill = class extends BaseSkill {
 };
 exports.CritSkill = class extends BaseSkill {
 	/**
-	 * @param {import('./index').CritSkillData} data
+	 * @param {import('../dist/index').CritSkillData} data
 	 */
 	constructor(data) {
 		super(data);
@@ -523,7 +523,7 @@ exports.CritSkill = class extends BaseSkill {
 };
 exports.CritBoostSkill = class extends BaseSkill {
 	/**
-	 * @param {import('./index').CritBoostSkillData} data
+	 * @param {import('../dist/index').CritBoostSkillData} data
 	 */
 	constructor(data) {
 		super(data);
@@ -535,7 +535,7 @@ exports.CritBoostSkill = class extends BaseSkill {
 };
 exports.DefensiveSkill = class extends BaseSkill {
 	/**
-	 * @param {import('./index').DefensiveSkillData} data
+	 * @param {import('../dist/index').DefensiveSkillData} data
 	 */
 	constructor(data) {
 		super(data);
@@ -547,7 +547,7 @@ exports.DefensiveSkill = class extends BaseSkill {
 };
 exports.EndureSkill = class extends BaseSkill {
 	/**
-	 * @param {import('./index').EndureSkillData} data
+	 * @param {import('../dist/index').EndureSkillData} data
 	 */
 	constructor(data) {
 		super(data);
@@ -559,7 +559,7 @@ exports.EndureSkill = class extends BaseSkill {
 };
 exports.EvasionSkill = class extends BaseSkill {
 	/**
-	 * @param {import('./index').EvasionSkillData} data
+	 * @param {import('../dist/index').EvasionSkillData} data
 	 */
 	constructor(data) {
 		super(data);
@@ -573,7 +573,7 @@ exports.EvasionSkill = class extends BaseSkill {
 };
 exports.HalveSkill = class extends BaseSkill {
 	/**
-	 * @param {import('./index').HalveSkillData} data
+	 * @param {import('../dist/index').HalveSkillData} data
 	 */
 	constructor(data) {
 		super(data);
@@ -584,7 +584,7 @@ exports.HalveSkill = class extends BaseSkill {
 };
 exports.InstaKillBoostSkill = class extends BaseSkill {
 	/**
-	 * @param {import('./index').InstaKillBoostSkillData} data
+	 * @param {import('../dist/index').InstaKillBoostSkillData} data
 	 */
 	constructor(data) {
 		super(data);
@@ -595,7 +595,7 @@ exports.InstaKillBoostSkill = class extends BaseSkill {
 };
 exports.MasterSkill = class extends BaseSkill {
 	/**
-	 * @param {import('./index').MasterSkillData} data
+	 * @param {import('../dist/index').MasterSkillData} data
 	 */
 	constructor(data) {
 		super(data);
@@ -606,7 +606,7 @@ exports.MasterSkill = class extends BaseSkill {
 };
 exports.MiscSkill = class extends BaseSkill {
 	/**
-	 * @param {import('./index').MiscSkillData} data
+	 * @param {import('../dist/index').MiscSkillData} data
 	 */
 	constructor(data) {
 		super(data);
@@ -618,7 +618,7 @@ exports.MiscSkill = class extends BaseSkill {
 };
 exports.NaviSkill = class extends BaseSkill {
 	/**
-	 * @param {import('./index').NaviSkillData} data
+	 * @param {import('../dist/index').NaviSkillData} data
 	 */
 	constructor(data) {
 		super(data);
@@ -629,7 +629,7 @@ exports.NaviSkill = class extends BaseSkill {
 };
 exports.PersonaCounterSkill = class extends BaseSkill {
 	/**
-	 * @param {import('./index').PersonaCounterSkillData} data
+	 * @param {import('../dist/index').PersonaCounterSkillData} data
 	 */
 	constructor(data) {
 		super(data);
@@ -640,7 +640,7 @@ exports.PersonaCounterSkill = class extends BaseSkill {
 };
 exports.PostBattleSkill = class extends BaseSkill {
 	/**
-	 * @param {import('./index').PostBattleSkillData} data
+	 * @param {import('../dist/index').PostBattleSkillData} data
 	 */
 	constructor(data) {
 		super(data);
@@ -653,7 +653,7 @@ exports.PostBattleSkill = class extends BaseSkill {
 };
 exports.RecoverySkill = class extends BaseSkill {
 	/**
-	 * @param {import('./index').RecoverySkillData} data
+	 * @param {import('../dist/index').RecoverySkillData} data
 	 */
 	constructor(data) {
 		super(data);
@@ -669,7 +669,7 @@ exports.RecoverySkill = class extends BaseSkill {
 };
 exports.RegenSkill = class extends BaseSkill {
 	/**
-	 * @param {import('./index').RegenSkillData} data
+	 * @param {import('../dist/index').RegenSkillData} data
 	 */
 	constructor(data) {
 		super(data);
@@ -685,7 +685,7 @@ exports.RegenSkill = class extends BaseSkill {
 exports.SiphonSkill = class extends BaseSkill {
 	/**
 	 *
-	 * @param {import('./index').SiphonSkillData} data
+	 * @param {import('../dist/index').SiphonSkillData} data
 	 */
 	constructor(data) {
 		super(data);
@@ -698,7 +698,7 @@ exports.SiphonSkill = class extends BaseSkill {
 exports.SMTCounterSkill = class extends BaseSkill {
 	/**
 	 *
-	 * @param {import('./index').SMTCounterSkillData} data
+	 * @param {import('../dist/index').SMTCounterSkillData} data
 	 */
 	constructor(data) {
 		super(data);
@@ -712,7 +712,7 @@ exports.SMTCounterSkill = class extends BaseSkill {
 };
 exports.SpringSkill = class extends BaseSkill {
 	/**
-	 * @param {import('./index').SpringSkillData} data
+	 * @param {import('../dist/index').SpringSkillData} data
 	 */
 	constructor(data) {
 		super(data);
@@ -724,7 +724,7 @@ exports.SpringSkill = class extends BaseSkill {
 };
 exports.SupportSkill = class extends BaseSkill {
 	/**
-	 * @param {import('./index').SupportSkillData} data
+	 * @param {import('../dist/index').SupportSkillData} data
 	 */
 	constructor(data) {
 		super(data);
@@ -741,7 +741,7 @@ exports.SupportSkill = class extends BaseSkill {
 };
 exports.SusceptibilitySkill = class extends BaseSkill {
 	/**
-	 * @param {import('./index').SusceptibilitySkillData} data
+	 * @param {import('../dist/index').SusceptibilitySkillData} data
 	 */
 	constructor(data) {
 		super(data);
@@ -753,7 +753,7 @@ exports.SusceptibilitySkill = class extends BaseSkill {
 };
 exports.TauntSkill = class extends BaseSkill {
 	/**
-	 * @param {import('./index').TauntSkillData} data
+	 * @param {import('../dist/index').TauntSkillData} data
 	 */
 	constructor(data) {
 		super(data);
@@ -765,7 +765,7 @@ exports.TauntSkill = class extends BaseSkill {
 };
 exports.WallSkill = class extends BaseSkill {
 	/**
-	 * @param {import('./index').WallSkillData} data
+	 * @param {import('../dist/index').WallSkillData} data
 	 */
 	constructor(data) {
 		super(data);
@@ -778,8 +778,8 @@ exports.WallSkill = class extends BaseSkill {
 
 /**
  *
- * @param {import('./index').SkillData} data
- * @returns {import('./index').Skill}
+ * @param {import('../dist/index').SkillData} data
+ * @returns {import('../dist/index').Skill}
  */
 exports.dataToClass = data => {
 	switch (data.type) {
@@ -817,9 +817,3 @@ exports.dataToClass = data => {
 	case 'WALL': return new this.WallSkill(data);
 	}
 };
-
-/**
- * @typedef Lists
- * @property {import('.').DemonData[]} demons
- * @property {import('.').SkillData[]} skills
- */
