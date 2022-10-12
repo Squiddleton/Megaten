@@ -32,6 +32,6 @@
     "typescript": "^4.8.4"
   },
   "dependencies": {
-    "@discordjs/collection": "^1.1.0"
+    "@discordjs/collection": "^1.2.0"
   }
 }
