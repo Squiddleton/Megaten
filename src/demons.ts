@@ -2,6 +2,7 @@ import { readFileSync } from 'node:fs';
 import { DemonData, PersonaData } from './listTypes';
 import { Arcana, Element, Game, Inherit, Race } from './types';
 import demonList from './demonList';
+import { normalize } from '@squiddleton/util';
 
 export const isPersonaData = (data: DemonData): data is PersonaData => data.race === 'Persona';
 
@@ -32,7 +33,7 @@ export class Demon implements DemonData {
 	game: Game;
 	constructor(data: DemonData) {
 		this.name = data.name;
-		this.devName = data.devName;
+		this.devName = normalize(data.name);
 		this.aliases = data.aliases;
 		this.inherit = data.inherit;
 		this.arcana = data.arcana;

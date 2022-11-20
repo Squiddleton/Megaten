@@ -1,5 +1,6 @@
 import type { AilBoostSkillData, AilDefensiveSkillData, AilmentSkillData, AttackSkillData, AutoBuffSkillData, BarrierBreakSkillData, BarrierSkillData, BaseSkillData, BlockSkillData, BoostSkillData, BreakSkillData, ChargeSkillData, CritBoostSkillData, CritSkillData, DefensiveSkillData, EndureSkillData, EvasionSkillData, HalveSkillData, InstaKillBoostSkillData, MasterSkillData, MiscSkillData, NaviSkillData, PersonaCounterSkillData, PostBattleSkillData, RecoverySkillData, RegenSkillData, SiphonSkillData, SMTCounterSkillData, SpringSkillData, SupportSkillData, SusceptibilitySkillData, TauntSkillData, WallSkillData } from './listTypes';
 import type { Affinity, Ailment, AilResistance, AttackDisplay, Barrier, Buff, Charge, ChargeRange, CounterAffinity, CounterDisplay, Element, HPMP, HPMPAil, LightDark, PostBattleStat, Range, RecoveryAmount, Resistance, RestoreCriteria, Series, SkillType, SMTElement } from './types';
+import { normalize } from '@squiddleton/util';
 
 export class BaseSkill implements BaseSkillData {
 	name: string;
@@ -9,9 +10,9 @@ export class BaseSkill implements BaseSkillData {
 	unique: boolean;
 	constructor(data: BaseSkillData) {
 		this.name = data.name;
+		this.devName = normalize(data.name);
 		this.affinity = data.affinity;
 		this.type = data.type;
-		this.devName = data.devName;
 		this.unique = data.unique;
 	}
 }

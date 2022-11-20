@@ -2,7 +2,6 @@ import type { Affinity, Ailment, AilResistance, Arcana, AttackDisplay, Barrier, 
 
 export interface DemonData {
 	name: string;
-	devName: string;
 	aliases: string[];
 	inherit: Inherit;
 	arcana: Arcana;
@@ -35,7 +34,6 @@ export interface PersonaData extends DemonData {
 
 export interface BaseSkillData {
 	name: string;
-	devName: string;
 	affinity: Affinity;
 	type: SkillType;
 	unique: boolean;

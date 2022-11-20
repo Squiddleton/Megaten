@@ -8,16 +8,10 @@ import skillList from './skillList';
 import { dataToClass } from './skills';
 import { Demon, isPersonaData, Persona } from './demons';
 import { Collection } from '@discordjs/collection';
+import { normalize } from '@squiddleton/util';
 
 export const demons = demonList.map(demon => new (isPersonaData(demon) ? Persona : Demon)(demon));
 export const skills = skillList.map(skill => dataToClass(skill));
-
-export const normalize = (str: string) => str
-	.toLowerCase()
-	.normalize('NFD')
-	.replace(/\p{Diacritic}/gu, '')
-	.replaceAll('&', 'and')
-	.replace(/[^0-9a-z]/gi, '');
 
 const demonColl = new Collection(demons.map(demon => [demon.devName, demon]));
 const skillColl = new Collection(skills.map(skill => [skill.devName, skill]));

@@ -3,7 +3,6 @@ import { SkillData } from './skills';
 const skills: SkillData[] = [
 	{
 		name: '+15% EXP',
-		devName: '15exp',
 		affinity: 'Passive',
 		type: 'POSTBATTLE',
 		unique: false,
@@ -13,7 +12,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: '+50% EXP',
-		devName: '50exp',
 		affinity: 'Passive',
 		type: 'POSTBATTLE',
 		unique: false,
@@ -23,7 +21,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Abysmal Surge',
-		devName: 'abysmalsurge',
 		affinity: 'Ailment',
 		type: 'AILMENT',
 		unique: false,
@@ -37,7 +34,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Abyssal Eye',
-		devName: 'abyssaleye',
 		affinity: 'Almighty',
 		type: 'ATTACK',
 		unique: true,
@@ -58,7 +54,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Abyssal Mask',
-		devName: 'abyssalmask',
 		affinity: 'Passive',
 		type: 'MISC',
 		unique: false,
@@ -67,7 +62,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Abyssal Wings',
-		devName: 'abyssalwings',
 		affinity: 'Dark',
 		type: 'ATTACK',
 		unique: true,
@@ -88,7 +82,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Acrobat Kick',
-		devName: 'acrobatkick',
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
@@ -109,7 +102,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Adverse Resolve',
-		devName: 'adverseresolve',
 		affinity: 'Passive',
 		type: 'CRITBOOST',
 		unique: false,
@@ -118,7 +110,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Agi',
-		devName: 'agi',
 		affinity: 'Fire',
 		type: 'ATTACK',
 		unique: false,
@@ -139,7 +130,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Agibarion',
-		devName: 'agibarion',
 		affinity: 'Fire',
 		type: 'ATTACK',
 		unique: false,
@@ -160,7 +150,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Agidyne',
-		devName: 'agidyne',
 		affinity: 'Fire',
 		type: 'ATTACK',
 		unique: false,
@@ -181,7 +170,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Agilao',
-		devName: 'agilao',
 		affinity: 'Fire',
 		type: 'ATTACK',
 		unique: false,
@@ -202,7 +190,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Agneyastra',
-		devName: 'agneyastra',
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
@@ -223,7 +210,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Ailment Boost',
-		devName: 'ailmentboost',
 		affinity: 'Passive',
 		type: 'AILBOOST',
 		unique: false,
@@ -233,7 +219,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Akashic Arts',
-		devName: 'akashicarts',
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
@@ -256,7 +241,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Ali Dance',
-		devName: 'alidance',
 		affinity: 'Passive',
 		type: 'EVASION',
 		unique: false,
@@ -279,7 +263,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Almighty Boost',
-		devName: 'almightyboost',
 		affinity: 'Passive',
 		type: 'BOOST',
 		unique: false,
@@ -289,7 +272,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Almighty Pleroma',
-		devName: 'almightypleroma',
 		affinity: 'Passive',
 		type: 'BOOST',
 		unique: false,
@@ -299,7 +281,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Ambient Aid',
-		devName: 'ambientaid',
 		affinity: 'Passive',
 		type: 'AILBOOST',
 		unique: false,
@@ -309,7 +290,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Analysis',
-		devName: 'analysis',
 		affinity: 'Passive',
 		type: 'NAVI',
 		unique: false,
@@ -317,7 +297,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Andalucia',
-		devName: 'andalucia',
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: true,
@@ -338,7 +317,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Angelic Grace',
-		devName: 'angelicgrace',
 		affinity: 'Passive',
 		type: 'EVASION',
 		unique: false,
@@ -359,7 +337,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Apt Pupil',
-		devName: 'aptpupil',
 		affinity: 'Passive',
 		type: 'CRITBOOST',
 		unique: false,
@@ -368,7 +345,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Aramasa',
-		devName: 'aramasa',
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: true,
@@ -389,7 +365,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Arms Master',
-		devName: 'armsmaster',
 		affinity: 'Passive',
 		type: 'MASTER',
 		unique: false,
@@ -397,7 +372,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Arrow Rain',
-		devName: 'arrowrain',
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
@@ -418,7 +392,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Assault Dive',
-		devName: 'assaultdive',
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
@@ -439,7 +412,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Astral Saintstrike',
-		devName: 'astralsaintstrike',
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: true,
@@ -460,7 +432,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Atomic Flare',
-		devName: 'atomicflare',
 		affinity: 'Nuke',
 		type: 'ATTACK',
 		unique: false,
@@ -481,7 +452,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Attack Master',
-		devName: 'attackmaster',
 		affinity: 'Passive',
 		type: 'AUTOBUFF',
 		unique: false,
@@ -490,7 +460,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Auto-Maraku',
-		devName: 'automaraku',
 		affinity: 'Passive',
 		type: 'AUTOBUFF',
 		unique: false,
@@ -499,7 +468,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Auto-Masuku',
-		devName: 'automasuku',
 		affinity: 'Passive',
 		type: 'AUTOBUFF',
 		unique: false,
@@ -508,7 +476,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Auto-Mataru',
-		devName: 'automataru',
 		affinity: 'Passive',
 		type: 'AUTOBUFF',
 		unique: false,
@@ -517,7 +484,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Axel Claw',
-		devName: 'axelclaw',
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
@@ -538,7 +504,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Ayamur',
-		devName: 'ayamur',
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: true,
@@ -561,7 +526,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Babylon Goblet',
-		devName: 'babylongoblet',
 		affinity: 'Almighty',
 		type: 'ATTACK',
 		unique: true,
@@ -587,7 +551,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Bad Beat',
-		devName: 'badbeat',
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
@@ -613,7 +576,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Baisudi',
-		devName: 'baisudi',
 		affinity: 'Recovery',
 		type: 'RECOVERY',
 		unique: false,
@@ -630,7 +592,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Bash',
-		devName: 'bash',
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
@@ -651,7 +612,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Beast Eye',
-		devName: 'beasteye',
 		affinity: 'Passive',
 		type: 'MISC',
 		unique: false,
@@ -660,7 +620,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Beast Weaver',
-		devName: 'beastweaver',
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: true,
@@ -683,7 +642,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Beatdown',
-		devName: 'beatdown',
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
@@ -706,7 +664,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Berserker God',
-		devName: 'berserkergod',
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
@@ -727,7 +684,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Bestial Bite',
-		devName: 'bestialbite',
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
@@ -750,7 +706,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Black Dracostrike',
-		devName: 'blackdracostrike',
 		affinity: 'Dark',
 		type: 'ATTACK',
 		unique: false,
@@ -773,7 +728,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Black Spot',
-		devName: 'blackspot',
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
@@ -794,7 +748,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Black Viper',
-		devName: 'blackviper',
 		affinity: 'Almighty',
 		type: 'ATTACK',
 		unique: true,
@@ -815,7 +768,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Blade of Fury',
-		devName: 'bladeoffury',
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
@@ -836,7 +788,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Bleeding Dry Brush',
-		devName: 'bleedingdrybrush',
 		affinity: 'Support',
 		type: 'BARRIER',
 		unique: false,
@@ -848,7 +799,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Blight',
-		devName: 'blight',
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
@@ -874,7 +824,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Blinding Strike',
-		devName: 'blindingstrike',
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
@@ -897,7 +846,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Bloodbath',
-		devName: 'bloodbath',
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
@@ -923,7 +871,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Bloody Glee',
-		devName: 'bloodyglee',
 		affinity: 'Passive',
 		type: 'MISC',
 		unique: false,
@@ -932,7 +879,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Boon Boost',
-		devName: 'boonboost',
 		affinity: 'Passive',
 		type: 'MISC',
 		unique: false,
@@ -941,7 +887,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Boon Boost EX',
-		devName: 'boonboostex',
 		affinity: 'Passive',
 		type: 'MISC',
 		unique: false,
@@ -950,7 +895,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Bouncing Claw',
-		devName: 'bouncingclaw',
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
@@ -971,7 +915,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Bowl of Hygieia',
-		devName: 'bowlofhygieia',
 		affinity: 'Support',
 		type: 'CHARGE',
 		unique: false,
@@ -981,7 +924,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Brain Buster',
-		devName: 'brainbuster',
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
@@ -1007,7 +949,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Brain Shake',
-		devName: 'brainshake',
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
@@ -1033,7 +974,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Charm Boost',
-		devName: 'charmboost',
 		affinity: 'Passive',
 		type: 'AILBOOST',
 		unique: false,
@@ -1043,7 +983,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Brave Blade',
-		devName: 'braveblade',
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
@@ -1064,7 +1003,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Brave Step',
-		devName: 'bravestep',
 		affinity: 'Support',
 		type: 'CRIT',
 		unique: true,
@@ -1073,7 +1011,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Bufu',
-		devName: 'bufu',
 		affinity: 'Ice',
 		type: 'ATTACK',
 		unique: false,
@@ -1094,7 +1031,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Bufubarion',
-		devName: 'bufubarion',
 		affinity: 'Ice',
 		type: 'ATTACK',
 		unique: false,
@@ -1115,7 +1051,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Bufudyne',
-		devName: 'bufudyne',
 		affinity: 'Ice',
 		type: 'ATTACK',
 		unique: false,
@@ -1136,7 +1071,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Bufula',
-		devName: 'bufula',
 		affinity: 'Ice',
 		type: 'ATTACK',
 		unique: false,
@@ -1157,7 +1091,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Burn Boost',
-		devName: 'burnboost',
 		affinity: 'Passive',
 		type: 'AILBOOST',
 		unique: false,
@@ -1167,7 +1100,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Cadenza',
-		devName: 'cadenza',
 		affinity: 'Recovery',
 		type: 'RECOVERY',
 		unique: true,
@@ -1182,7 +1114,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Carnage Fang',
-		devName: 'carnagefang',
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: true,
@@ -1205,7 +1136,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Catastrophe',
-		devName: 'catastrophe',
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
@@ -1226,7 +1156,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Cautious Cheer',
-		devName: 'cautiouscheer',
 		affinity: 'Support',
 		type: 'SUPPORT',
 		unique: true,
@@ -1243,7 +1172,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Certain Escape',
-		devName: 'certainescape',
 		affinity: 'Passive',
 		type: 'NAVI',
 		unique: false,
@@ -1251,7 +1179,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Champion"s Cup',
-		devName: 'championscup',
 		affinity: 'Recovery',
 		type: 'RECOVERY',
 		unique: false,
@@ -1266,7 +1193,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Chaotic Will',
-		devName: 'chaoticwill',
 		affinity: 'Ailment',
 		type: 'MISC',
 		unique: true,
@@ -1275,7 +1201,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Charge',
-		devName: 'charge',
 		affinity: 'Support',
 		type: 'CHARGE',
 		unique: false,
@@ -1285,7 +1210,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Charmdi',
-		devName: 'charmdi',
 		affinity: 'Recovery',
 		type: 'RECOVERY',
 		unique: false,
@@ -1300,7 +1224,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Checkmate',
-		devName: 'checkmate',
 		affinity: 'Support',
 		type: 'SUPPORT',
 		unique: true,
@@ -1318,7 +1241,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Cleave',
-		devName: 'cleave',
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
@@ -1339,7 +1261,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Climate Decorum',
-		devName: 'climatedecorum',
 		affinity: 'Passive',
 		type: 'EVASION',
 		unique: false,
@@ -1352,7 +1273,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Complete Analysis',
-		devName: 'completeanalysis',
 		affinity: 'Passive',
 		type: 'NAVI',
 		unique: false,
@@ -1360,7 +1280,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Concentrate',
-		devName: 'concentrate',
 		affinity: 'Support',
 		type: 'CHARGE',
 		unique: false,
@@ -1370,7 +1289,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Confuse Boost',
-		devName: 'confuseboost',
 		affinity: 'Passive',
 		type: 'AILBOOST',
 		unique: false,
@@ -1380,7 +1298,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Cornered Fang',
-		devName: 'corneredfang',
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
@@ -1403,7 +1320,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Cosmic Flare',
-		devName: 'cosmicflare',
 		affinity: 'Nuke',
 		type: 'ATTACK',
 		unique: false,
@@ -1424,7 +1340,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Counter',
-		devName: 'counter',
 		affinity: 'Passive',
 		type: 'SMTCOUNTER',
 		unique: false,
@@ -1438,7 +1353,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Counter -Persona-',
-		devName: 'counterpersona',
 		affinity: 'Passive',
 		type: 'PERSONACOUNTER',
 		unique: false,
@@ -1446,7 +1360,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Counterstrike',
-		devName: 'counterstrike',
 		affinity: 'Passive',
 		type: 'PERSONACOUNTER',
 		unique: false,
@@ -1454,7 +1367,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Crazy Chain',
-		devName: 'crazychain',
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
@@ -1480,7 +1392,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Critical Aura',
-		devName: 'criticalaura',
 		affinity: 'Support',
 		type: 'CHARGE',
 		unique: false,
@@ -1490,7 +1401,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Critical Slash',
-		devName: 'criticalslash',
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
@@ -1513,7 +1423,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Critical Wave',
-		devName: 'criticalwave',
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
@@ -1534,7 +1443,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Critical Zealot',
-		devName: 'criticalzealot',
 		affinity: 'Passive',
 		type: 'MISC',
 		unique: false,
@@ -1543,7 +1451,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Cross Slash',
-		devName: 'crossslash',
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: true,
@@ -1566,7 +1473,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Cruel Attack',
-		devName: 'cruelattack',
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
@@ -1589,7 +1495,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Crusher Onslaught',
-		devName: 'crusheronslaught',
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
@@ -1612,7 +1517,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Curse Siphon',
-		devName: 'cursesiphon',
 		affinity: 'Passive',
 		type: 'SIPHON',
 		unique: false,
@@ -1621,7 +1525,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Damascus Claw',
-		devName: 'damascusclaw',
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
@@ -1642,7 +1545,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Dancing Strike',
-		devName: 'dancingstrike',
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: true,
@@ -1663,7 +1565,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Dark Amp',
-		devName: 'darkamp',
 		affinity: 'Passive',
 		type: 'BOOST',
 		unique: false,
@@ -1673,7 +1574,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Dark Block',
-		devName: 'darkblock',
 		affinity: 'Support',
 		type: 'BLOCK',
 		unique: false,
@@ -1682,7 +1582,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Dark Boost',
-		devName: 'darkboost',
 		affinity: 'Passive',
 		type: 'BOOST',
 		unique: false,
@@ -1692,7 +1591,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Dark Pleroma',
-		devName: 'darkpleroma',
 		affinity: 'Passive',
 		type: 'BOOST',
 		unique: false,
@@ -1702,7 +1600,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Dark Sword',
-		devName: 'darksword',
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
@@ -1728,7 +1625,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Dazzler',
-		devName: 'dazzler',
 		affinity: 'Ailment',
 		type: 'AILMENT',
 		unique: false,
@@ -1742,7 +1638,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Deadly Fury',
-		devName: 'deadlyfury',
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: true,
@@ -1765,7 +1660,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Deathbound',
-		devName: 'deathbound',
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
@@ -1786,7 +1680,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Death Flies',
-		devName: 'deathflies',
 		affinity: 'Dark',
 		type: 'ATTACK',
 		unique: true,
@@ -1809,7 +1702,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Death Lust',
-		devName: 'deathlust',
 		affinity: 'Almighty',
 		type: 'ATTACK',
 		unique: true,
@@ -1835,7 +1727,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Death Scythe',
-		devName: 'deathscythe',
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
@@ -1861,7 +1752,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Debilitate',
-		devName: 'debilitate',
 		affinity: 'Support',
 		type: 'SUPPORT',
 		unique: false,
@@ -1879,7 +1769,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Defense Master',
-		devName: 'defensemaster',
 		affinity: 'Passive',
 		type: 'AUTOBUFF',
 		unique: false,
@@ -1888,7 +1777,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Dekaja',
-		devName: 'dekaja',
 		affinity: 'Support',
 		type: 'SUPPORT',
 		unique: false,
@@ -1906,7 +1794,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Dekunda',
-		devName: 'dekunda',
 		affinity: 'Support',
 		type: 'SUPPORT',
 		unique: false,
@@ -1924,7 +1811,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Demonic Decree',
-		devName: 'demonicdecree',
 		affinity: 'Dark',
 		type: 'HALVE',
 		unique: false,
@@ -1932,7 +1818,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Despair Boost',
-		devName: 'despairboost',
 		affinity: 'Passive',
 		type: 'AILBOOST',
 		unique: false,
@@ -1942,7 +1827,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Dia',
-		devName: 'dia',
 		affinity: 'Recovery',
 		type: 'RECOVERY',
 		unique: false,
@@ -1955,7 +1839,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Diamrita',
-		devName: 'diamrita',
 		affinity: 'Recovery',
 		type: 'RECOVERY',
 		unique: false,
@@ -1970,7 +1853,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Diarahan',
-		devName: 'diarahan',
 		affinity: 'Recovery',
 		type: 'RECOVERY',
 		unique: false,
@@ -1983,7 +1865,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Diarama',
-		devName: 'diarama',
 		affinity: 'Recovery',
 		type: 'RECOVERY',
 		unique: false,
@@ -1996,7 +1877,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Die For Me!',
-		devName: 'dieforme',
 		affinity: 'Dark',
 		type: 'ATTACK',
 		unique: true,
@@ -2019,7 +1899,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Divine Arrowfall',
-		devName: 'divinearrowfall',
 		affinity: 'Almighty',
 		type: 'ATTACK',
 		unique: true,
@@ -2040,7 +1919,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Divine Grace',
-		devName: 'divinegrace',
 		affinity: 'Passive',
 		type: 'MISC',
 		unique: false,
@@ -2049,7 +1927,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Divine Judgement',
-		devName: 'divinejudgement',
 		affinity: 'Light',
 		type: 'HALVE',
 		unique: false,
@@ -2057,7 +1934,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Mirage Boost',
-		devName: 'mirageboost',
 		affinity: 'Passive',
 		type: 'AILBOOST',
 		unique: false,
@@ -2067,7 +1943,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Dodge Dark',
-		devName: 'dodgedark',
 		affinity: 'Passive',
 		type: 'EVASION',
 		unique: false,
@@ -2080,7 +1955,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Dodge Elec',
-		devName: 'dodgeelec',
 		affinity: 'Passive',
 		type: 'EVASION',
 		unique: false,
@@ -2093,7 +1967,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Dodge Fire',
-		devName: 'dodgefire',
 		affinity: 'Passive',
 		type: 'EVASION',
 		unique: false,
@@ -2106,7 +1979,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Dodge Ice',
-		devName: 'dodgeice',
 		affinity: 'Passive',
 		type: 'EVASION',
 		unique: false,
@@ -2119,7 +1991,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Dodge Light',
-		devName: 'dodgelight',
 		affinity: 'Passive',
 		type: 'EVASION',
 		unique: false,
@@ -2132,7 +2003,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Dodge Nuke',
-		devName: 'dodgenuke',
 		affinity: 'Passive',
 		type: 'EVASION',
 		unique: false,
@@ -2145,7 +2015,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Dodge Phys',
-		devName: 'dodgephys',
 		affinity: 'Passive',
 		type: 'EVASION',
 		unique: false,
@@ -2158,7 +2027,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Dodge Psy',
-		devName: 'dodgepsy',
 		affinity: 'Passive',
 		type: 'EVASION',
 		unique: false,
@@ -2171,7 +2039,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Dodge Wind',
-		devName: 'dodgewind',
 		affinity: 'Passive',
 		type: 'EVASION',
 		unique: false,
@@ -2184,7 +2051,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Donum Gladi',
-		devName: 'donumgladi',
 		affinity: 'Support',
 		type: 'CHARGE',
 		unique: false,
@@ -2194,7 +2060,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Donum Magici',
-		devName: 'donummagici',
 		affinity: 'Support',
 		type: 'CHARGE',
 		unique: false,
@@ -2204,7 +2069,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Door of Hades',
-		devName: 'doorofhades',
 		affinity: 'Almighty',
 		type: 'ATTACK',
 		unique: true,
@@ -2227,7 +2091,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Dormina',
-		devName: 'dormina',
 		affinity: 'Ailment',
 		type: 'AILMENT',
 		unique: false,
@@ -2241,7 +2104,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Dormin Rush',
-		devName: 'dorminrush',
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
@@ -2267,7 +2129,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Double Fangs',
-		devName: 'doublefangs',
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
@@ -2288,7 +2149,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Double Shot',
-		devName: 'doubleshot',
 		affinity: 'Gun',
 		type: 'ATTACK',
 		unique: false,
@@ -2309,7 +2169,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Dragon Eye',
-		devName: 'dragoneye',
 		affinity: 'Passive',
 		type: 'MISC',
 		unique: false,
@@ -2318,7 +2177,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Drain Dark',
-		devName: 'draindark',
 		affinity: 'Passive',
 		type: 'DEFENSIVE',
 		unique: false,
@@ -2327,7 +2185,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Drain Elec',
-		devName: 'drainelec',
 		affinity: 'Passive',
 		type: 'DEFENSIVE',
 		unique: false,
@@ -2336,7 +2193,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Drain Fire',
-		devName: 'drainfire',
 		affinity: 'Passive',
 		type: 'DEFENSIVE',
 		unique: false,
@@ -2345,7 +2201,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Drain Force',
-		devName: 'drainforce',
 		affinity: 'Passive',
 		type: 'DEFENSIVE',
 		unique: false,
@@ -2354,7 +2209,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Drain Ice',
-		devName: 'drainice',
 		affinity: 'Passive',
 		type: 'DEFENSIVE',
 		unique: false,
@@ -2363,7 +2217,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Drain Light',
-		devName: 'drainlight',
 		affinity: 'Passive',
 		type: 'DEFENSIVE',
 		unique: false,
@@ -2372,7 +2225,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Drain Nuke',
-		devName: 'drainnuke',
 		affinity: 'Passive',
 		type: 'DEFENSIVE',
 		unique: false,
@@ -2381,7 +2233,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Drain Phys',
-		devName: 'drainphys',
 		affinity: 'Passive',
 		type: 'DEFENSIVE',
 		unique: false,
@@ -2390,7 +2241,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Drain Psy',
-		devName: 'drainpsy',
 		affinity: 'Passive',
 		type: 'DEFENSIVE',
 		unique: false,
@@ -2399,7 +2249,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Drain Wind',
-		devName: 'drainwind',
 		affinity: 'Passive',
 		type: 'DEFENSIVE',
 		unique: false,
@@ -2408,7 +2257,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Dream Fist',
-		devName: 'dreamfist',
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
@@ -2431,7 +2279,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Dream Needle',
-		devName: 'dreamneedle',
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
@@ -2457,7 +2304,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Dustoma',
-		devName: 'dustoma',
 		affinity: 'Ailment',
 		type: 'AILMENT',
 		unique: false,
@@ -2471,7 +2317,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Eat Whole',
-		devName: 'eatwhole',
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
@@ -2494,7 +2339,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Elec Amp',
-		devName: 'elecamp',
 		affinity: 'Passive',
 		type: 'BOOST',
 		unique: false,
@@ -2504,7 +2348,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Elec Block',
-		devName: 'elecblock',
 		affinity: 'Support',
 		type: 'BLOCK',
 		unique: false,
@@ -2513,7 +2356,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Elec Boost',
-		devName: 'elecboost',
 		affinity: 'Passive',
 		type: 'BOOST',
 		unique: false,
@@ -2523,7 +2365,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Elec Break',
-		devName: 'elecbreak',
 		affinity: 'Support',
 		type: 'BREAK',
 		unique: false,
@@ -2532,7 +2373,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Elec Pleroma',
-		devName: 'elecpleroma',
 		affinity: 'Passive',
 		type: 'BOOST',
 		unique: false,
@@ -2542,7 +2382,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Elec Wall',
-		devName: 'elecwall',
 		affinity: 'Support',
 		type: 'WALL',
 		unique: false,
@@ -2551,7 +2390,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Eleusinian Harvest',
-		devName: 'eleusinianharvest',
 		affinity: 'Recovery',
 		type: 'RECOVERY',
 		unique: true,
@@ -2564,7 +2402,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Endure',
-		devName: 'endure',
 		affinity: 'Passive',
 		type: 'ENDURE',
 		unique: false,
@@ -2573,7 +2410,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Enduring Soul',
-		devName: 'enduringsoul',
 		affinity: 'Passive',
 		type: 'ENDURE',
 		unique: false,
@@ -2582,7 +2418,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Enemy Radar',
-		devName: 'enemyradar',
 		affinity: 'Passive',
 		type: 'NAVI',
 		unique: false,
@@ -2590,7 +2425,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Energy Drain',
-		devName: 'energydrain',
 		affinity: 'Almighty',
 		type: 'ATTACK',
 		unique: false,
@@ -2613,7 +2447,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Energy Drop',
-		devName: 'energydrop',
 		affinity: 'Recovery',
 		type: 'RECOVERY',
 		unique: false,
@@ -2632,7 +2465,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Energy Shower',
-		devName: 'energyshower',
 		affinity: 'Recovery',
 		type: 'RECOVERY',
 		unique: false,
@@ -2651,7 +2483,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Escape Route',
-		devName: 'escaperoute',
 		affinity: 'Passive',
 		type: 'NAVI',
 		unique: false,
@@ -2659,7 +2490,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Estoma',
-		devName: 'estoma',
 		affinity: 'Support',
 		type: 'MISC',
 		unique: false,
@@ -2668,7 +2498,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Eternal Blizzard',
-		devName: 'eternalblizzard',
 		affinity: 'Ice',
 		type: 'ATTACK',
 		unique: true,
@@ -2689,7 +2518,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Evade Dark',
-		devName: 'evadedark',
 		affinity: 'Passive',
 		type: 'EVASION',
 		unique: false,
@@ -2702,7 +2530,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Evade Elec',
-		devName: 'evadeelec',
 		affinity: 'Passive',
 		type: 'EVASION',
 		unique: false,
@@ -2715,7 +2542,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Evade Fire',
-		devName: 'evadefire',
 		affinity: 'Passive',
 		type: 'EVASION',
 		unique: false,
@@ -2728,7 +2554,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Evade Ice',
-		devName: 'evadeice',
 		affinity: 'Passive',
 		type: 'EVASION',
 		unique: false,
@@ -2741,7 +2566,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Evade Light',
-		devName: 'evadelight',
 		affinity: 'Passive',
 		type: 'EVASION',
 		unique: false,
@@ -2754,7 +2578,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Evade Nuke',
-		devName: 'evadenuke',
 		affinity: 'Passive',
 		type: 'EVASION',
 		unique: false,
@@ -2767,7 +2590,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Evade Phys',
-		devName: 'evadephys',
 		affinity: 'Passive',
 		type: 'EVASION',
 		unique: false,
@@ -2780,7 +2602,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Evade Psy',
-		devName: 'evadepsy',
 		affinity: 'Passive',
 		type: 'EVASION',
 		unique: false,
@@ -2793,7 +2614,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Evade Wind',
-		devName: 'evadewind',
 		affinity: 'Passive',
 		type: 'EVASION',
 		unique: false,
@@ -2806,7 +2626,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Evil Melody',
-		devName: 'evilmelody',
 		affinity: 'Ailment',
 		type: 'MISC',
 		unique: true,
@@ -2815,7 +2634,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Evil Smile',
-		devName: 'evilsmile',
 		affinity: 'Ailment',
 		type: 'AILMENT',
 		unique: false,
@@ -2829,7 +2647,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Evil Touch',
-		devName: 'eviltouch',
 		affinity: 'Ailment',
 		type: 'AILMENT',
 		unique: false,
@@ -2843,7 +2660,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Fallen Destroyer',
-		devName: 'fallendestroyer',
 		affinity: 'Dark',
 		type: 'ATTACK',
 		unique: true,
@@ -2866,7 +2682,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Fang Breaker',
-		devName: 'fangbreaker',
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
@@ -2889,7 +2704,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Fast Heal',
-		devName: 'fastheal',
 		affinity: 'Passive',
 		type: 'REGEN',
 		unique: false,
@@ -2901,7 +2715,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Fatal End',
-		devName: 'fatalend',
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
@@ -2922,7 +2735,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Fatal Sword',
-		devName: 'fatalsword',
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
@@ -2943,7 +2755,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Fear Boost',
-		devName: 'fearboost',
 		affinity: 'Passive',
 		type: 'AILBOOST',
 		unique: false,
@@ -2953,7 +2764,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Fierce Roar',
-		devName: 'fierceroar',
 		affinity: 'Support',
 		type: 'TAUNT',
 		unique: false,
@@ -2962,7 +2772,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Fighting Spirit',
-		devName: 'fightingspirit',
 		affinity: 'Support',
 		type: 'CHARGE',
 		unique: false,
@@ -2972,7 +2781,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Figment Slash',
-		devName: 'figmentslash',
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
@@ -2995,7 +2803,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Fire Amp',
-		devName: 'fireamp',
 		affinity: 'Passive',
 		type: 'BOOST',
 		unique: false,
@@ -3005,7 +2812,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Fire Block',
-		devName: 'fireblock',
 		affinity: 'Support',
 		type: 'BLOCK',
 		unique: false,
@@ -3014,7 +2820,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Fire Boost',
-		devName: 'fireboost',
 		affinity: 'Passive',
 		type: 'BOOST',
 		unique: false,
@@ -3024,7 +2829,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Fire Break',
-		devName: 'firebreak',
 		affinity: 'Support',
 		type: 'BREAK',
 		unique: false,
@@ -3033,7 +2837,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Fire Breath',
-		devName: 'firebreath',
 		affinity: 'Fire',
 		type: 'ATTACK',
 		unique: false,
@@ -3054,7 +2857,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Fire Dracostrike',
-		devName: 'firedracostrike',
 		affinity: 'Fire',
 		type: 'ATTACK',
 		unique: false,
@@ -3075,7 +2877,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Fire of Sinai',
-		devName: 'fireofsinai',
 		affinity: 'Almighty',
 		type: 'ATTACK',
 		unique: true,
@@ -3096,7 +2897,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Fire Pleroma',
-		devName: 'firepleroma',
 		affinity: 'Passive',
 		type: 'BOOST',
 		unique: false,
@@ -3106,7 +2906,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Fire Wall',
-		devName: 'firewall',
 		affinity: 'Support',
 		type: 'WALL',
 		unique: false,
@@ -3115,7 +2914,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Firm Stance',
-		devName: 'firmstance',
 		affinity: 'Passive',
 		type: 'MISC',
 		unique: false,
@@ -3124,7 +2922,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Flash Bomb',
-		devName: 'flashbomb',
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
@@ -3150,7 +2947,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Floral Gust',
-		devName: 'floralgust',
 		affinity: 'Force',
 		type: 'ATTACK',
 		unique: false,
@@ -3171,7 +2967,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Fogna',
-		devName: 'fogna',
 		affinity: 'Ailment',
 		type: 'AILMENT',
 		unique: false,
@@ -3185,7 +2980,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Force Block',
-		devName: 'forceblock',
 		affinity: 'Support',
 		type: 'BLOCK',
 		unique: false,
@@ -3194,7 +2988,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Force Pleroma',
-		devName: 'forcepleroma',
 		affinity: 'Passive',
 		type: 'BOOST',
 		unique: false,
@@ -3204,7 +2997,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Seal Boost',
-		devName: 'sealboost',
 		affinity: 'Passive',
 		type: 'AILBOOST',
 		unique: false,
@@ -3214,7 +3006,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Fortified Moxy',
-		devName: 'fortifiedmoxy',
 		affinity: 'Passive',
 		type: 'CRITBOOST',
 		unique: false,
@@ -3223,7 +3014,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Fortify Spirit',
-		devName: 'fortifyspirit',
 		affinity: 'Passive',
 		type: 'AILDEFENSIVE',
 		unique: false,
@@ -3232,7 +3022,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Foul Breath',
-		devName: 'foulbreath',
 		affinity: 'Almighty',
 		type: 'SUSCEPTIBILITY',
 		unique: false,
@@ -3241,7 +3030,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Freeze Boost',
-		devName: 'freezeboost',
 		affinity: 'Passive',
 		type: 'AILBOOST',
 		unique: false,
@@ -3251,7 +3039,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Frei',
-		devName: 'frei',
 		affinity: 'Nuke',
 		type: 'ATTACK',
 		unique: false,
@@ -3272,7 +3059,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Freidyne',
-		devName: 'freidyne',
 		affinity: 'Nuke',
 		type: 'ATTACK',
 		unique: false,
@@ -3293,7 +3079,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Freikugel',
-		devName: 'freikugel',
 		affinity: 'Almighty',
 		type: 'ATTACK',
 		unique: false,
@@ -3314,7 +3099,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Freila',
-		devName: 'freila',
 		affinity: 'Nuke',
 		type: 'ATTACK',
 		unique: false,
@@ -3335,7 +3119,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Frenzied Chomp',
-		devName: 'frenziedchomp',
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
@@ -3369,7 +3152,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Frolic',
-		devName: 'frolic',
 		affinity: 'Ailment',
 		type: 'AILMENT',
 		unique: true,
@@ -3386,7 +3168,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Full Analysis',
-		devName: 'fullanalysis',
 		affinity: 'Passive',
 		type: 'NAVI',
 		unique: false,
@@ -3394,7 +3175,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Gaea Rage',
-		devName: 'gaearage',
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: true,
@@ -3417,7 +3197,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Gale Slash',
-		devName: 'galeslash',
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
@@ -3438,7 +3217,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Gambler"s Foresight',
-		devName: 'gamblersforesight',
 		affinity: 'Support',
 		type: 'SUPPORT',
 		unique: false,
@@ -3456,7 +3234,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Garu',
-		devName: 'garu',
 		affinity: 'Wind',
 		type: 'ATTACK',
 		unique: false,
@@ -3477,7 +3254,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Garudyne',
-		devName: 'garudyne',
 		affinity: 'Wind',
 		type: 'ATTACK',
 		unique: false,
@@ -3498,7 +3274,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Garula',
-		devName: 'garula',
 		affinity: 'Wind',
 		type: 'ATTACK',
 		unique: false,
@@ -3519,7 +3294,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Gatling Blows',
-		devName: 'gatlingblows',
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
@@ -3540,7 +3314,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Ghastfire Rain',
-		devName: 'ghastfirerain',
 		affinity: 'Fire',
 		type: 'ATTACK',
 		unique: true,
@@ -3561,7 +3334,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Ghastly Wail',
-		devName: 'ghastlywail',
 		affinity: 'Almighty',
 		type: 'MISC',
 		unique: false,
@@ -3570,7 +3342,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Giant Slice',
-		devName: 'giantslice',
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
@@ -3593,7 +3364,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Gigantic Fist',
-		devName: 'giganticfist',
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
@@ -3614,7 +3384,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Gigantomachia',
-		devName: 'gigantomachia',
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
@@ -3635,7 +3404,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Glacial Blast',
-		devName: 'glacialblast',
 		affinity: 'Ice',
 		type: 'ATTACK',
 		unique: false,
@@ -3656,7 +3424,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'God\'s Bow',
-		devName: 'godsbow',
 		affinity: 'Light',
 		type: 'ATTACK',
 		unique: true,
@@ -3679,7 +3446,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'God"s Hand',
-		devName: 'godshand',
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
@@ -3700,7 +3466,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Golden Apple',
-		devName: 'goldenapple',
 		affinity: 'Recovery',
 		type: 'RECOVERY',
 		unique: true,
@@ -3717,7 +3482,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Gram Slice',
-		devName: 'gramslice',
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
@@ -3738,7 +3502,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Great Curse Siphon',
-		devName: 'greatcursesiphon',
 		affinity: 'Passive',
 		type: 'SIPHON',
 		unique: false,
@@ -3747,7 +3510,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Great Life Spring',
-		devName: 'greatlifespring',
 		affinity: 'Passive',
 		type: 'SPRING',
 		unique: false,
@@ -3756,7 +3518,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Great Mana Spring',
-		devName: 'greatmanaspring',
 		affinity: 'Passive',
 		type: 'SPRING',
 		unique: false,
@@ -3765,7 +3526,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Growth 1',
-		devName: 'growth1',
 		affinity: 'Passive',
 		type: 'POSTBATTLE',
 		unique: false,
@@ -3775,7 +3535,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Growth 2',
-		devName: 'growth2',
 		affinity: 'Passive',
 		type: 'POSTBATTLE',
 		unique: false,
@@ -3785,7 +3544,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Growth 3',
-		devName: 'growth3',
 		affinity: 'Passive',
 		type: 'POSTBATTLE',
 		unique: false,
@@ -3795,7 +3553,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Gun Amp',
-		devName: 'gunamp',
 		affinity: 'Passive',
 		type: 'BOOST',
 		unique: false,
@@ -3805,7 +3562,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Gun Boost',
-		devName: 'gunboost',
 		affinity: 'Passive',
 		type: 'BOOST',
 		unique: false,
@@ -3815,7 +3571,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Gungnir',
-		devName: 'gungnir',
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: true,
@@ -3838,7 +3593,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Hades Blast',
-		devName: 'hadesblast',
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
@@ -3859,7 +3613,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Hama',
-		devName: 'hama',
 		affinity: 'Light',
 		type: 'ATTACK',
 		unique: false,
@@ -3882,7 +3635,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Hamabarion',
-		devName: 'hamabarion',
 		affinity: 'Light',
 		type: 'ATTACK',
 		unique: false,
@@ -3905,7 +3657,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Hama Boost',
-		devName: 'hamaboost',
 		affinity: 'Passive',
 		type: 'INSTAKILLBOOST',
 		unique: false,
@@ -3913,7 +3664,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Hamaon',
-		devName: 'hamaon',
 		affinity: 'Light',
 		type: 'ATTACK',
 		unique: false,
@@ -3936,7 +3686,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Harvest Dance',
-		devName: 'harvestdance',
 		affinity: 'Recovery',
 		type: 'RECOVERY',
 		unique: true,
@@ -3951,7 +3700,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Hassou Tobi',
-		devName: 'hassoutobi',
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: true,
@@ -3972,7 +3720,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Headbutt',
-		devName: 'headbutt',
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
@@ -3998,7 +3745,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Headcrush',
-		devName: 'headcrush',
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: true,
@@ -4024,7 +3770,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Healing Wave',
-		devName: 'healingwave',
 		affinity: 'Passive',
 		type: 'NAVI',
 		unique: false,
@@ -4032,7 +3777,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Heal Pleroma',
-		devName: 'healpleroma',
 		affinity: 'Passive',
 		type: 'BOOST',
 		unique: false,
@@ -4042,7 +3786,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Heat Riser',
-		devName: 'heatriser',
 		affinity: 'Support',
 		type: 'SUPPORT',
 		unique: false,
@@ -4060,7 +3803,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Heat Up',
-		devName: 'heatup',
 		affinity: 'Passive',
 		type: 'REGEN',
 		unique: false,
@@ -4072,7 +3814,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Heat Wave',
-		devName: 'heatwave',
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
@@ -4093,7 +3834,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Heavenly Counter',
-		devName: 'heavenlycounter',
 		affinity: 'Passive',
 		type: 'SMTCOUNTER',
 		unique: true,
@@ -4107,7 +3847,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Heavy Blow',
-		devName: 'heavyblow',
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
@@ -4130,7 +3869,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Hell Burner',
-		devName: 'hellburner',
 		affinity: 'Fire',
 		type: 'ATTACK',
 		unique: true,
@@ -4151,7 +3889,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Hell Exhaust',
-		devName: 'hellexhaust',
 		affinity: 'Force',
 		type: 'ATTACK',
 		unique: true,
@@ -4174,7 +3911,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Hellish Brand',
-		devName: 'hellishbrand',
 		affinity: 'Fire',
 		type: 'ATTACK',
 		unique: true,
@@ -4197,7 +3933,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Hellish Mask',
-		devName: 'hellishmask',
 		affinity: 'Passive',
 		type: 'MISC',
 		unique: false,
@@ -4206,7 +3941,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Hellish Slash',
-		devName: 'hellishslash',
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: true,
@@ -4229,7 +3963,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Hellish Spurt',
-		devName: 'hellishspurt',
 		affinity: 'Ice',
 		type: 'ATTACK',
 		unique: true,
@@ -4250,7 +3983,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Hell Spin',
-		devName: 'hellspin',
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: true,
@@ -4271,7 +4003,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Hell Thrust',
-		devName: 'hellthrust',
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
@@ -4294,7 +4025,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'High Almighty Pleroma',
-		devName: 'highalmightypleroma',
 		affinity: 'Passive',
 		type: 'BOOST',
 		unique: false,
@@ -4304,7 +4034,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'High Counter',
-		devName: 'highcounter',
 		affinity: 'Passive',
 		type: 'PERSONACOUNTER',
 		unique: false,
@@ -4312,7 +4041,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'High Dark Pleroma',
-		devName: 'highdarkpleroma',
 		affinity: 'Passive',
 		type: 'BOOST',
 		unique: false,
@@ -4322,7 +4050,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'High Elec Pleroma',
-		devName: 'highelecpleroma',
 		affinity: 'Passive',
 		type: 'BOOST',
 		unique: false,
@@ -4332,7 +4059,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'High Energy',
-		devName: 'highenergy',
 		affinity: 'Support',
 		type: 'CHARGE',
 		unique: false,
@@ -4342,7 +4068,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'High Fire Pleroma',
-		devName: 'highfirepleroma',
 		affinity: 'Passive',
 		type: 'BOOST',
 		unique: false,
@@ -4352,7 +4077,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'High Force Pleroma',
-		devName: 'highforcepleroma',
 		affinity: 'Passive',
 		type: 'BOOST',
 		unique: false,
@@ -4362,7 +4086,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'High Heal Pleroma',
-		devName: 'highhealpleroma',
 		affinity: 'Passive',
 		type: 'BOOST',
 		unique: false,
@@ -4372,7 +4095,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'High Ice Pleroma',
-		devName: 'highicepleroma',
 		affinity: 'Passive',
 		type: 'BOOST',
 		unique: false,
@@ -4382,7 +4104,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'High Light Pleroma',
-		devName: 'highlightpleroma',
 		affinity: 'Passive',
 		type: 'BOOST',
 		unique: false,
@@ -4392,7 +4113,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'High Phys Pleroma',
-		devName: 'highphyspleroma',
 		affinity: 'Passive',
 		type: 'BOOST',
 		unique: false,
@@ -4402,7 +4122,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'High Restore',
-		devName: 'highrestore',
 		affinity: 'Passive',
 		type: 'SIPHON',
 		unique: false,
@@ -4411,7 +4130,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Holy Benevolence',
-		devName: 'holybenevolence',
 		affinity: 'Recovery',
 		type: 'RECOVERY',
 		unique: true,
@@ -4426,7 +4144,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Holy Embrace',
-		devName: 'holyembrace',
 		affinity: 'Passive',
 		type: 'REGEN',
 		unique: true,
@@ -4438,7 +4155,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Holy Whisper',
-		devName: 'holywhisper',
 		affinity: 'Passive',
 		type: 'REGEN',
 		unique: true,
@@ -4450,7 +4166,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Humble Blessing',
-		devName: 'humbleblessing',
 		affinity: 'Recovery',
 		type: 'RECOVERY',
 		unique: true,
@@ -4463,7 +4178,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Hysterical Slap',
-		devName: 'hystericalslap',
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
@@ -4486,7 +4200,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Ice Age',
-		devName: 'iceage',
 		affinity: 'Ice',
 		type: 'ATTACK',
 		unique: false,
@@ -4509,7 +4222,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Ice Amp',
-		devName: 'iceamp',
 		affinity: 'Passive',
 		type: 'BOOST',
 		unique: false,
@@ -4519,7 +4231,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Ice Block',
-		devName: 'iceblock',
 		affinity: 'Support',
 		type: 'BLOCK',
 		unique: false,
@@ -4528,7 +4239,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Ice Boost',
-		devName: 'iceboost',
 		affinity: 'Passive',
 		type: 'BOOST',
 		unique: false,
@@ -4538,7 +4248,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Ice Break',
-		devName: 'icebreak',
 		affinity: 'Support',
 		type: 'BREAK',
 		unique: false,
@@ -4547,7 +4256,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Ice Breath',
-		devName: 'icebreath',
 		affinity: 'Ice',
 		type: 'ATTACK',
 		unique: false,
@@ -4568,7 +4276,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Ice Dracostrike',
-		devName: 'icedracostrike',
 		affinity: 'Ice',
 		type: 'ATTACK',
 		unique: false,
@@ -4589,7 +4296,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Ice Pleroma',
-		devName: 'icepleroma',
 		affinity: 'Passive',
 		type: 'BOOST',
 		unique: false,
@@ -4599,7 +4305,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Ice Wall',
-		devName: 'icewall',
 		affinity: 'Support',
 		type: 'WALL',
 		unique: false,
@@ -4608,7 +4313,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Impaler\'s Animus',
-		devName: 'impalersanimus',
 		affinity: 'Support',
 		type: 'CHARGE',
 		unique: false,
@@ -4618,7 +4322,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Inspiring Leader',
-		devName: 'inspiringleader',
 		affinity: 'Passive',
 		type: 'MISC',
 		unique: false,
@@ -4627,7 +4330,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Insta-Heal',
-		devName: 'instaheal',
 		affinity: 'Passive',
 		type: 'REGEN',
 		unique: false,
@@ -4639,7 +4341,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Invigorate 1',
-		devName: 'invigorate1',
 		affinity: 'Passive',
 		type: 'REGEN',
 		unique: false,
@@ -4651,7 +4352,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Invigorate 2',
-		devName: 'invigorate2',
 		affinity: 'Passive',
 		type: 'REGEN',
 		unique: false,
@@ -4663,7 +4363,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Invigorate 3',
-		devName: 'invigorate3',
 		affinity: 'Passive',
 		type: 'REGEN',
 		unique: false,
@@ -4675,7 +4374,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Jack Bufula',
-		devName: 'jackbufula',
 		affinity: 'Ice',
 		type: 'ATTACK',
 		unique: true,
@@ -4698,7 +4396,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Javelin Rain',
-		devName: 'javelinrain',
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: true,
@@ -4724,7 +4421,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Kamui Miracle',
-		devName: 'kamuimiracle',
 		affinity: 'Recovery',
 		type: 'MISC',
 		unique: true,
@@ -4733,7 +4429,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Kannabi Veil',
-		devName: 'kannabiveil',
 		affinity: 'Support',
 		type: 'BARRIER',
 		unique: true,
@@ -4745,7 +4440,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Karnak',
-		devName: 'karnak',
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: true,
@@ -4766,7 +4460,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Keraunos',
-		devName: 'keraunos',
 		affinity: 'Elec',
 		type: 'ATTACK',
 		unique: true,
@@ -4789,7 +4482,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Killing Wind',
-		devName: 'killingwind',
 		affinity: 'Force',
 		type: 'ATTACK',
 		unique: false,
@@ -4812,7 +4504,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Kill Rush',
-		devName: 'killrush',
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
@@ -4833,7 +4524,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'King Bufula',
-		devName: 'kingbufula',
 		affinity: 'Ice',
 		type: 'ATTACK',
 		unique: true,
@@ -4856,7 +4546,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Laevateinn',
-		devName: 'laevateinn',
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: true,
@@ -4877,7 +4566,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Last Stand',
-		devName: 'laststand',
 		affinity: 'Passive',
 		type: 'EVASION',
 		unique: false,
@@ -4900,7 +4588,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Life Aid',
-		devName: 'lifeaid',
 		affinity: 'Passive',
 		type: 'POSTBATTLE',
 		unique: false,
@@ -4910,7 +4597,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Life Drain',
-		devName: 'lifedrain',
 		affinity: 'Almighty',
 		type: 'ATTACK',
 		unique: false,
@@ -4933,7 +4619,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Life Spring',
-		devName: 'lifespring',
 		affinity: 'Passive',
 		type: 'SPRING',
 		unique: false,
@@ -4942,7 +4627,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Life Wall',
-		devName: 'lifewall',
 		affinity: 'Support',
 		type: 'BARRIER',
 		unique: false,
@@ -4955,7 +4639,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Light Amp',
-		devName: 'lightamp',
 		affinity: 'Passive',
 		type: 'BOOST',
 		unique: false,
@@ -4965,7 +4648,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Light Block',
-		devName: 'lightblock',
 		affinity: 'Support',
 		type: 'BLOCK',
 		unique: false,
@@ -4974,7 +4656,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Light Boost',
-		devName: 'lightboost',
 		affinity: 'Passive',
 		type: 'BOOST',
 		unique: false,
@@ -4984,7 +4665,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Light Life Aid',
-		devName: 'lightlifeaid',
 		affinity: 'Passive',
 		type: 'POSTBATTLE',
 		unique: false,
@@ -4994,7 +4674,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Light Mana Aid',
-		devName: 'lightmanaaid',
 		affinity: 'Passive',
 		type: 'POSTBATTLE',
 		unique: false,
@@ -5004,7 +4683,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Light Pleroma',
-		devName: 'lightpleroma',
 		affinity: 'Passive',
 		type: 'BOOST',
 		unique: false,
@@ -5014,7 +4692,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Light\'s Descent',
-		devName: 'lightsdescent',
 		affinity: 'Light',
 		type: 'ATTACK',
 		unique: true,
@@ -5037,7 +4714,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Lucky Punch',
-		devName: 'luckypunch',
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
@@ -5058,7 +4734,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Lullaby',
-		devName: 'lullaby',
 		affinity: 'Ailment',
 		type: 'AILMENT',
 		unique: false,
@@ -5072,7 +4747,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Lunge',
-		devName: 'lunge',
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
@@ -5093,7 +4767,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Luster Candy',
-		devName: 'lustercandy',
 		affinity: 'Support',
 		type: 'SUPPORT',
 		unique: false,
@@ -5111,7 +4784,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Mabaisudi',
-		devName: 'mabaisudi',
 		affinity: 'Recovery',
 		type: 'RECOVERY',
 		unique: false,
@@ -5128,7 +4800,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Mabufu',
-		devName: 'mabufu',
 		affinity: 'Ice',
 		type: 'ATTACK',
 		unique: false,
@@ -5149,7 +4820,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Mabufubarion',
-		devName: 'mabufubarion',
 		affinity: 'Ice',
 		type: 'ATTACK',
 		unique: false,
@@ -5170,7 +4840,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Mabufudyne',
-		devName: 'mabufudyne',
 		affinity: 'Ice',
 		type: 'ATTACK',
 		unique: false,
@@ -5191,7 +4860,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Mabufula',
-		devName: 'mabufula',
 		affinity: 'Ice',
 		type: 'ATTACK',
 		unique: false,
@@ -5212,7 +4880,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Mac an Luin',
-		devName: 'macanluin',
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: true,
@@ -5235,7 +4902,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Madness Glint',
-		devName: 'madnessglint',
 		affinity: 'Almighty',
 		type: 'ATTACK',
 		unique: true,
@@ -5261,7 +4927,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Madness Nails',
-		devName: 'madnessnails',
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
@@ -5282,7 +4947,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Madness Needle',
-		devName: 'madnessneedle',
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
@@ -5308,7 +4972,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Mafrei',
-		devName: 'mafrei',
 		affinity: 'Nuke',
 		type: 'ATTACK',
 		unique: false,
@@ -5329,7 +4992,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Mafreidyne',
-		devName: 'mafreidyne',
 		affinity: 'Nuke',
 		type: 'ATTACK',
 		unique: false,
@@ -5350,7 +5012,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Mafreila',
-		devName: 'mafreila',
 		affinity: 'Nuke',
 		type: 'ATTACK',
 		unique: false,
@@ -5371,7 +5032,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Magaru',
-		devName: 'magaru',
 		affinity: 'Wind',
 		type: 'ATTACK',
 		unique: false,
@@ -5392,7 +5052,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Magarudyne',
-		devName: 'magarudyne',
 		affinity: 'Wind',
 		type: 'ATTACK',
 		unique: false,
@@ -5413,7 +5072,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Magarula',
-		devName: 'magarula',
 		affinity: 'Wind',
 		type: 'ATTACK',
 		unique: false,
@@ -5434,7 +5092,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Magatsu Mandala',
-		devName: 'magatsumandala',
 		affinity: 'Dark',
 		type: 'ATTACK',
 		unique: true,
@@ -5468,7 +5125,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Mahama',
-		devName: 'mahama',
 		affinity: 'Light',
 		type: 'ATTACK',
 		unique: false,
@@ -5491,7 +5147,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Mahamabarion',
-		devName: 'mahamabarion',
 		affinity: 'Light',
 		type: 'ATTACK',
 		unique: false,
@@ -5514,7 +5169,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Mahamaon',
-		devName: 'mahamaon',
 		affinity: 'Light',
 		type: 'ATTACK',
 		unique: false,
@@ -5537,7 +5191,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Makajama',
-		devName: 'makajama',
 		affinity: 'Ailment',
 		type: 'AILMENT',
 		unique: false,
@@ -5551,7 +5204,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Makajamaon',
-		devName: 'makajamaon',
 		affinity: 'Ailment',
 		type: 'AILMENT',
 		unique: false,
@@ -5565,7 +5217,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Makara Break',
-		devName: 'makarabreak',
 		affinity: 'Support',
 		type: 'BARRIERBREAK',
 		unique: false,
@@ -5574,7 +5225,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Makarakarn',
-		devName: 'makarakarn',
 		affinity: 'Support',
 		type: 'BARRIER',
 		unique: false,
@@ -5586,7 +5236,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Mamudo',
-		devName: 'mamudo',
 		affinity: 'Dark',
 		type: 'ATTACK',
 		unique: false,
@@ -5609,7 +5258,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Mamudobarion',
-		devName: 'mamudobarion',
 		affinity: 'Dark',
 		type: 'ATTACK',
 		unique: false,
@@ -5632,7 +5280,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Mamudoon',
-		devName: 'mamudoon',
 		affinity: 'Dark',
 		type: 'ATTACK',
 		unique: false,
@@ -5655,7 +5302,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Mana Aid',
-		devName: 'manaaid',
 		affinity: 'Passive',
 		type: 'POSTBATTLE',
 		unique: false,
@@ -5665,7 +5311,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Mana Spring',
-		devName: 'manaspring',
 		affinity: 'Passive',
 		type: 'SPRING',
 		unique: false,
@@ -5674,7 +5319,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Mapsi',
-		devName: 'mapsi',
 		affinity: 'Psy',
 		type: 'ATTACK',
 		unique: false,
@@ -5695,7 +5339,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Mapsio',
-		devName: 'mapsio',
 		affinity: 'Psy',
 		type: 'ATTACK',
 		unique: false,
@@ -5716,7 +5359,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Mapsiodyne',
-		devName: 'mapsiodyne',
 		affinity: 'Psy',
 		type: 'ATTACK',
 		unique: false,
@@ -5737,7 +5379,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Maragi',
-		devName: 'maragi',
 		affinity: 'Fire',
 		type: 'ATTACK',
 		unique: false,
@@ -5758,7 +5399,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Maragibarion',
-		devName: 'maragibarion',
 		affinity: 'Fire',
 		type: 'ATTACK',
 		unique: false,
@@ -5779,7 +5419,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Maragidyne',
-		devName: 'maragidyne',
 		affinity: 'Fire',
 		type: 'ATTACK',
 		unique: false,
@@ -5800,7 +5439,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Maragion',
-		devName: 'maragion',
 		affinity: 'Fire',
 		type: 'ATTACK',
 		unique: false,
@@ -5821,7 +5459,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Marakukaja',
-		devName: 'marakukaja',
 		affinity: 'Support',
 		type: 'SUPPORT',
 		unique: false,
@@ -5837,7 +5474,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Marakunda',
-		devName: 'marakunda',
 		affinity: 'Support',
 		type: 'SUPPORT',
 		unique: false,
@@ -5853,7 +5489,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Mararagidyne',
-		devName: 'mararagidyne',
 		affinity: 'Fire',
 		type: 'ATTACK',
 		unique: true,
@@ -5879,7 +5514,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Marin Karin',
-		devName: 'marinkarin',
 		affinity: 'Ailment',
 		type: 'AILMENT',
 		unique: false,
@@ -5893,7 +5527,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Masquerade',
-		devName: 'masquerade',
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: true,
@@ -5914,7 +5547,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Masukukaja',
-		devName: 'masukukaja',
 		affinity: 'Support',
 		type: 'SUPPORT',
 		unique: false,
@@ -5930,7 +5562,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Masukunda',
-		devName: 'masukunda',
 		affinity: 'Support',
 		type: 'SUPPORT',
 		unique: false,
@@ -5946,7 +5577,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Matarukaja',
-		devName: 'matarukaja',
 		affinity: 'Support',
 		type: 'SUPPORT',
 		unique: false,
@@ -5962,7 +5592,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Matarunda',
-		devName: 'matarunda',
 		affinity: 'Support',
 		type: 'SUPPORT',
 		unique: false,
@@ -5978,7 +5607,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Matriarch\'s Love',
-		devName: 'matriarchslove',
 		affinity: 'Recovery',
 		type: 'RECOVERY',
 		unique: true,
@@ -5995,7 +5623,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Mazan',
-		devName: 'mazan',
 		affinity: 'Force',
 		type: 'ATTACK',
 		unique: false,
@@ -6016,7 +5643,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Mazanbarion',
-		devName: 'mazanbarion',
 		affinity: 'Force',
 		type: 'ATTACK',
 		unique: false,
@@ -6037,7 +5663,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Mazandyne',
-		devName: 'mazandyne',
 		affinity: 'Force',
 		type: 'ATTACK',
 		unique: false,
@@ -6058,7 +5683,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Mazanma',
-		devName: 'mazanma',
 		affinity: 'Force',
 		type: 'ATTACK',
 		unique: false,
@@ -6079,7 +5703,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Mazio',
-		devName: 'mazio',
 		affinity: 'Elec',
 		type: 'ATTACK',
 		unique: false,
@@ -6100,7 +5723,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Maziobarion',
-		devName: 'maziobarion',
 		affinity: 'Elec',
 		type: 'ATTACK',
 		unique: false,
@@ -6121,7 +5743,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Maziodyne',
-		devName: 'maziodyne',
 		affinity: 'Elec',
 		type: 'ATTACK',
 		unique: false,
@@ -6142,7 +5763,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Mazionga',
-		devName: 'mazionga',
 		affinity: 'Elec',
 		type: 'ATTACK',
 		unique: false,
@@ -6163,7 +5783,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Media',
-		devName: 'media',
 		affinity: 'Recovery',
 		type: 'RECOVERY',
 		unique: false,
@@ -6176,7 +5795,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Mediarahan',
-		devName: 'mediarahan',
 		affinity: 'Recovery',
 		type: 'RECOVERY',
 		unique: false,
@@ -6189,7 +5807,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Mediarama',
-		devName: 'mediarama',
 		affinity: 'Recovery',
 		type: 'RECOVERY',
 		unique: false,
@@ -6202,7 +5819,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Meditation',
-		devName: 'meditation',
 		affinity: 'Almighty',
 		type: 'ATTACK',
 		unique: true,
@@ -6225,7 +5841,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Megaton Press',
-		devName: 'megatonpress',
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
@@ -6248,7 +5863,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Megaton Raid',
-		devName: 'megatonraid',
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
@@ -6269,7 +5883,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Megido',
-		devName: 'megido',
 		affinity: 'Almighty',
 		type: 'ATTACK',
 		unique: false,
@@ -6290,7 +5903,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Megido Flame',
-		devName: 'megidoflame',
 		affinity: 'Fire',
 		type: 'ATTACK',
 		unique: true,
@@ -6313,7 +5925,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Megidola',
-		devName: 'megidola',
 		affinity: 'Almighty',
 		type: 'ATTACK',
 		unique: false,
@@ -6334,7 +5945,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Megidolaon',
-		devName: 'megidolaon',
 		affinity: 'Almighty',
 		type: 'ATTACK',
 		unique: false,
@@ -6355,7 +5965,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Memory Blow',
-		devName: 'memoryblow',
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
@@ -6381,7 +5990,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Me Patra',
-		devName: 'mepatra',
 		affinity: 'Recovery',
 		type: 'RECOVERY',
 		unique: false,
@@ -6396,7 +6004,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Mighty Cleave',
-		devName: 'mightycleave',
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
@@ -6419,7 +6026,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Mind Slice',
-		devName: 'mindslice',
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
@@ -6445,7 +6051,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Miracle Punch',
-		devName: 'miraclepunch',
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
@@ -6466,7 +6071,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Miracle Rush',
-		devName: 'miraclerush',
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: true,
@@ -6487,7 +6091,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Miracle Water',
-		devName: 'miraclewater',
 		affinity: 'Recovery',
 		type: 'RECOVERY',
 		unique: true,
@@ -6500,7 +6103,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Mirage Shot',
-		devName: 'mirageshot',
 		affinity: 'Fire',
 		type: 'ATTACK',
 		unique: true,
@@ -6526,7 +6128,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Mist Rush',
-		devName: 'mistrush',
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
@@ -6552,7 +6153,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Money Boost',
-		devName: 'moneyboost',
 		affinity: 'Passive',
 		type: 'POSTBATTLE',
 		unique: false,
@@ -6562,7 +6162,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Morning Star',
-		devName: 'morningstar',
 		affinity: 'Almighty',
 		type: 'ATTACK',
 		unique: true,
@@ -6583,7 +6182,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Mortal Jihad',
-		devName: 'mortaljihad',
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
@@ -6604,7 +6202,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Mudo',
-		devName: 'mudo',
 		affinity: 'Dark',
 		type: 'ATTACK',
 		unique: false,
@@ -6627,7 +6224,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Mudobarion',
-		devName: 'mudobarion',
 		affinity: 'Dark',
 		type: 'ATTACK',
 		unique: false,
@@ -6650,7 +6246,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Mudo Boost',
-		devName: 'mudoboost',
 		affinity: 'Passive',
 		type: 'INSTAKILLBOOST',
 		unique: false,
@@ -6658,7 +6253,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Mudoon',
-		devName: 'mudoon',
 		affinity: 'Dark',
 		type: 'ATTACK',
 		unique: false,
@@ -6681,7 +6275,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Murakumo',
-		devName: 'murakumo',
 		affinity: 'Almighty',
 		type: 'ATTACK',
 		unique: true,
@@ -6704,7 +6297,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Murderous Glee',
-		devName: 'murderousglee',
 		affinity: 'Passive',
 		type: 'MISC',
 		unique: false,
@@ -6713,7 +6305,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Mustard Bomb',
-		devName: 'mustardbomb',
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
@@ -6739,7 +6330,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Myriad Slashes',
-		devName: 'myriadslashes',
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
@@ -6762,7 +6352,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Myriad Truths',
-		devName: 'myriadtruths',
 		affinity: 'Almighty',
 		type: 'ATTACK',
 		unique: true,
@@ -6783,7 +6372,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Narukami',
-		devName: 'narukami',
 		affinity: 'Elec',
 		type: 'ATTACK',
 		unique: false,
@@ -6806,7 +6394,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Navas Nebula',
-		devName: 'navasnebula',
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
@@ -6832,7 +6419,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Needle Spray',
-		devName: 'needlespray',
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
@@ -6853,7 +6439,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Negative Pile',
-		devName: 'negativepile',
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
@@ -6879,7 +6464,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Neo Cadenza',
-		devName: 'neocadenza',
 		affinity: 'Recovery',
 		type: 'RECOVERY',
 		unique: true,
@@ -6896,7 +6480,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Nihil Claw',
-		devName: 'nihilclaw',
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
@@ -6917,7 +6500,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Nocturnal Flash',
-		devName: 'nocturnalflash',
 		affinity: 'Ailment',
 		type: 'AILMENT',
 		unique: false,
@@ -6931,7 +6513,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Nuke Amp',
-		devName: 'nukeamp',
 		affinity: 'Passive',
 		type: 'BOOST',
 		unique: false,
@@ -6941,7 +6522,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Nuke Boost',
-		devName: 'nukeboost',
 		affinity: 'Passive',
 		type: 'BOOST',
 		unique: false,
@@ -6951,7 +6531,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Nuke Break',
-		devName: 'nukebreak',
 		affinity: 'Support',
 		type: 'BREAK',
 		unique: false,
@@ -6960,7 +6539,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Nuke Wall',
-		devName: 'nukewall',
 		affinity: 'Support',
 		type: 'WALL',
 		unique: false,
@@ -6969,7 +6547,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Null Charm',
-		devName: 'nullcharm',
 		affinity: 'Passive',
 		type: 'AILDEFENSIVE',
 		unique: false,
@@ -6978,7 +6555,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Null Confuse',
-		devName: 'nullconfuse',
 		affinity: 'Passive',
 		type: 'AILDEFENSIVE',
 		unique: false,
@@ -6987,7 +6563,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Null Dark',
-		devName: 'nulldark',
 		affinity: 'Passive',
 		type: 'DEFENSIVE',
 		unique: false,
@@ -6996,7 +6571,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Null Mirage',
-		devName: 'nullmirage',
 		affinity: 'Passive',
 		type: 'AILDEFENSIVE',
 		unique: false,
@@ -7005,7 +6579,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Null Elec',
-		devName: 'nullelec',
 		affinity: 'Passive',
 		type: 'DEFENSIVE',
 		unique: false,
@@ -7014,7 +6587,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Null Fire',
-		devName: 'nullfire',
 		affinity: 'Passive',
 		type: 'DEFENSIVE',
 		unique: false,
@@ -7023,7 +6595,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Null Force',
-		devName: 'nullforce',
 		affinity: 'Passive',
 		type: 'DEFENSIVE',
 		unique: false,
@@ -7032,7 +6603,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Null Seal',
-		devName: 'nullseal',
 		affinity: 'Passive',
 		type: 'AILDEFENSIVE',
 		unique: false,
@@ -7041,7 +6611,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Null Ice',
-		devName: 'nullice',
 		affinity: 'Passive',
 		type: 'DEFENSIVE',
 		unique: false,
@@ -7050,7 +6619,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Null Light',
-		devName: 'nulllight',
 		affinity: 'Passive',
 		type: 'DEFENSIVE',
 		unique: false,
@@ -7059,7 +6627,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Null Nuke',
-		devName: 'nullnuke',
 		affinity: 'Passive',
 		type: 'DEFENSIVE',
 		unique: false,
@@ -7068,7 +6635,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Null Phys',
-		devName: 'nullphys',
 		affinity: 'Passive',
 		type: 'DEFENSIVE',
 		unique: false,
@@ -7077,7 +6643,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Null Psy',
-		devName: 'nullpsy',
 		affinity: 'Passive',
 		type: 'DEFENSIVE',
 		unique: false,
@@ -7086,7 +6651,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Null Rage',
-		devName: 'nullrage',
 		affinity: 'Passive',
 		type: 'AILDEFENSIVE',
 		unique: false,
@@ -7095,7 +6659,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Null Sleep',
-		devName: 'nullsleep',
 		affinity: 'Passive',
 		type: 'AILDEFENSIVE',
 		unique: false,
@@ -7104,7 +6667,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Null Wind',
-		devName: 'nullwind',
 		affinity: 'Passive',
 		type: 'DEFENSIVE',
 		unique: false,
@@ -7113,7 +6675,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Ominous Words',
-		devName: 'ominouswords',
 		affinity: 'Ailment',
 		type: 'AILMENT',
 		unique: false,
@@ -7127,7 +6688,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'One-shot Kill',
-		devName: 'oneshotkill',
 		affinity: 'Gun',
 		type: 'ATTACK',
 		unique: false,
@@ -7148,7 +6708,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Oni-Kagura',
-		devName: 'onikagura',
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
@@ -7174,7 +6733,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Oracle',
-		devName: 'oracle',
 		affinity: 'Passive',
 		type: 'NAVI',
 		unique: false,
@@ -7182,7 +6740,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Oratorio',
-		devName: 'oratorio',
 		affinity: 'Recovery',
 		type: 'RECOVERY',
 		unique: true,
@@ -7197,7 +6754,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Pandemonic Crush',
-		devName: 'pandemoniccrush',
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: true,
@@ -7220,7 +6776,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Panta Rhei',
-		devName: 'pantarhei',
 		affinity: 'Wind',
 		type: 'ATTACK',
 		unique: false,
@@ -7241,7 +6796,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Panta Spane',
-		devName: 'pantaspane',
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: true,
@@ -7265,7 +6819,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Patra',
-		devName: 'patra',
 		affinity: 'Recovery',
 		type: 'RECOVERY',
 		unique: false,
@@ -7280,7 +6833,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Pestilence',
-		devName: 'pestilence',
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: true,
@@ -7303,7 +6855,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Phantom Snow',
-		devName: 'phantomsnow',
 		affinity: 'Ailment',
 		type: 'AILMENT',
 		unique: true,
@@ -7317,7 +6868,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Phys Block',
-		devName: 'physblock',
 		affinity: 'Support',
 		type: 'BLOCK',
 		unique: false,
@@ -7326,7 +6876,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Phys Pleroma',
-		devName: 'physpleroma',
 		affinity: 'Passive',
 		type: 'BOOST',
 		unique: false,
@@ -7336,7 +6885,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Pierce Armor',
-		devName: 'piercearmor',
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
@@ -7359,7 +6907,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Poisma',
-		devName: 'poisma',
 		affinity: 'Ailment',
 		type: 'AILMENT',
 		unique: false,
@@ -7373,7 +6920,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Poison Mist',
-		devName: 'poisonmist',
 		affinity: 'Ailment',
 		type: 'AILMENT',
 		unique: false,
@@ -7387,7 +6933,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Poison Adept',
-		devName: 'poisonadept',
 		affinity: 'Passive',
 		type: 'MISC',
 		unique: false,
@@ -7396,7 +6941,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Poison Master',
-		devName: 'poisonmaster',
 		affinity: 'Passive',
 		type: 'MISC',
 		unique: false,
@@ -7405,7 +6949,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Poison Skewer',
-		devName: 'poisonskewer',
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
@@ -7431,7 +6974,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Posumudi',
-		devName: 'posumudi',
 		affinity: 'Recovery',
 		type: 'RECOVERY',
 		unique: false,
@@ -7446,7 +6988,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Power Punch',
-		devName: 'powerpunch',
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
@@ -7469,7 +7010,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Power Slash',
-		devName: 'powerslash',
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
@@ -7490,7 +7030,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Preach',
-		devName: 'preach',
 		affinity: 'Ailment',
 		type: 'AILMENT',
 		unique: true,
@@ -7506,7 +7045,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Primal Force',
-		devName: 'primalforce',
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
@@ -7527,7 +7065,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Profaned Land',
-		devName: 'profanedland',
 		affinity: 'Dark',
 		type: 'ATTACK',
 		unique: true,
@@ -7553,7 +7090,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Psi',
-		devName: 'psi',
 		affinity: 'Psy',
 		type: 'ATTACK',
 		unique: false,
@@ -7574,7 +7110,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Psio',
-		devName: 'psio',
 		affinity: 'Psy',
 		type: 'ATTACK',
 		unique: false,
@@ -7595,7 +7130,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Psiodyne',
-		devName: 'psiodyne',
 		affinity: 'Psy',
 		type: 'ATTACK',
 		unique: false,
@@ -7616,7 +7150,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Psy Amp',
-		devName: 'psyamp',
 		affinity: 'Passive',
 		type: 'BOOST',
 		unique: false,
@@ -7626,7 +7159,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Psy Boost',
-		devName: 'psyboost',
 		affinity: 'Passive',
 		type: 'BOOST',
 		unique: false,
@@ -7636,7 +7168,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Psy Break',
-		devName: 'psybreak',
 		affinity: 'Support',
 		type: 'BREAK',
 		unique: false,
@@ -7645,7 +7176,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Psycho Blast',
-		devName: 'psychoblast',
 		affinity: 'Psy',
 		type: 'ATTACK',
 		unique: false,
@@ -7666,7 +7196,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Psycho Force',
-		devName: 'psychoforce',
 		affinity: 'Psy',
 		type: 'ATTACK',
 		unique: false,
@@ -7687,7 +7216,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Psy Wall',
-		devName: 'psywall',
 		affinity: 'Support',
 		type: 'WALL',
 		unique: false,
@@ -7696,7 +7224,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Pulinpa',
-		devName: 'pulinpa',
 		affinity: 'Ailment',
 		type: 'AILMENT',
 		unique: false,
@@ -7710,7 +7237,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Puncture Punch',
-		devName: 'puncturepunch',
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
@@ -7733,7 +7259,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Purple Smoke',
-		devName: 'purplesmoke',
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
@@ -7756,7 +7281,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Rage Boost',
-		devName: 'rageboost',
 		affinity: 'Passive',
 		type: 'AILBOOST',
 		unique: false,
@@ -7766,7 +7290,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Raging Blizzard',
-		devName: 'ragingblizzard',
 		affinity: 'Ice',
 		type: 'ATTACK',
 		unique: true,
@@ -7787,7 +7310,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Raging Hellfire',
-		devName: 'raginghellfire',
 		affinity: 'Fire',
 		type: 'ATTACK',
 		unique: true,
@@ -7808,7 +7330,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Raging Lightning',
-		devName: 'raginglightning',
 		affinity: 'Elec',
 		type: 'ATTACK',
 		unique: true,
@@ -7829,7 +7350,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Raging Tempest',
-		devName: 'ragingtempest',
 		affinity: 'Force',
 		type: 'ATTACK',
 		unique: true,
@@ -7850,7 +7370,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Ragnarok',
-		devName: 'ragnarok',
 		affinity: 'Fire',
 		type: 'ATTACK',
 		unique: false,
@@ -7871,7 +7390,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Rainy Death',
-		devName: 'rainydeath',
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
@@ -7894,7 +7412,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Rakukaja',
-		devName: 'rakukaja',
 		affinity: 'Support',
 		type: 'SUPPORT',
 		unique: false,
@@ -7910,7 +7427,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Rakunda',
-		devName: 'rakunda',
 		affinity: 'Support',
 		type: 'SUPPORT',
 		unique: false,
@@ -7926,7 +7442,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Rampage',
-		devName: 'rampage',
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
@@ -7949,7 +7464,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Rebellion',
-		devName: 'rebellion',
 		affinity: 'Support',
 		type: 'CRIT',
 		unique: false,
@@ -7958,7 +7472,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Rebellion Blade',
-		devName: 'rebellionblade',
 		affinity: 'Almighty',
 		type: 'ATTACK',
 		unique: true,
@@ -7981,7 +7494,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Rebel Soul',
-		devName: 'rebelsoul',
 		affinity: 'Passive',
 		type: 'MISC',
 		unique: false,
@@ -7990,7 +7502,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Recarm',
-		devName: 'recarm',
 		affinity: 'Recovery',
 		type: 'RECOVERY',
 		unique: false,
@@ -8005,7 +7516,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Red Capote',
-		devName: 'redcapote',
 		affinity: 'Support',
 		type: 'SUPPORT',
 		unique: true,
@@ -8021,7 +7531,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Regenerate 1',
-		devName: 'regenerate1',
 		affinity: 'Passive',
 		type: 'REGEN',
 		unique: false,
@@ -8033,7 +7542,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Regenerate 2',
-		devName: 'regenerate2',
 		affinity: 'Passive',
 		type: 'REGEN',
 		unique: false,
@@ -8045,7 +7553,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Regenerate 3',
-		devName: 'regenerate3',
 		affinity: 'Passive',
 		type: 'REGEN',
 		unique: false,
@@ -8057,7 +7564,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Relaxing Wave',
-		devName: 'relaxingwave',
 		affinity: 'Passive',
 		type: 'NAVI',
 		unique: false,
@@ -8065,7 +7571,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Re Patra',
-		devName: 'repatra',
 		affinity: 'Recovery',
 		type: 'RECOVERY',
 		unique: false,
@@ -8080,7 +7585,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Repel Dark',
-		devName: 'repeldark',
 		affinity: 'Passive',
 		type: 'DEFENSIVE',
 		unique: false,
@@ -8089,7 +7593,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Repel Elec',
-		devName: 'repelelec',
 		affinity: 'Passive',
 		type: 'DEFENSIVE',
 		unique: false,
@@ -8098,7 +7601,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Repel Fire',
-		devName: 'repelfire',
 		affinity: 'Passive',
 		type: 'DEFENSIVE',
 		unique: false,
@@ -8107,7 +7609,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Repel Force',
-		devName: 'repelforce',
 		affinity: 'Passive',
 		type: 'DEFENSIVE',
 		unique: false,
@@ -8116,7 +7617,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Repel Ice',
-		devName: 'repelice',
 		affinity: 'Passive',
 		type: 'DEFENSIVE',
 		unique: false,
@@ -8125,7 +7625,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Repel Light',
-		devName: 'repellight',
 		affinity: 'Passive',
 		type: 'DEFENSIVE',
 		unique: false,
@@ -8134,7 +7633,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Repel Nuke',
-		devName: 'repelnuke',
 		affinity: 'Passive',
 		type: 'DEFENSIVE',
 		unique: false,
@@ -8143,7 +7641,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Repel Phys',
-		devName: 'repelphys',
 		affinity: 'Passive',
 		type: 'DEFENSIVE',
 		unique: false,
@@ -8152,7 +7649,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Repel Psy',
-		devName: 'repelpsy',
 		affinity: 'Passive',
 		type: 'DEFENSIVE',
 		unique: false,
@@ -8161,7 +7657,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Repel Wind',
-		devName: 'repelwind',
 		affinity: 'Passive',
 		type: 'DEFENSIVE',
 		unique: false,
@@ -8170,7 +7665,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Resist Charm',
-		devName: 'resistcharm',
 		affinity: 'Passive',
 		type: 'AILDEFENSIVE',
 		unique: false,
@@ -8179,7 +7673,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Resist Confuse',
-		devName: 'resistconfuse',
 		affinity: 'Passive',
 		type: 'AILDEFENSIVE',
 		unique: false,
@@ -8188,7 +7681,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Resist Dark',
-		devName: 'resistdark',
 		affinity: 'Passive',
 		type: 'DEFENSIVE',
 		unique: false,
@@ -8197,7 +7689,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Resist Despair',
-		devName: 'resistdespair',
 		affinity: 'Passive',
 		type: 'AILDEFENSIVE',
 		unique: false,
@@ -8206,7 +7697,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Resist Mirage',
-		devName: 'resistmirage',
 		affinity: 'Passive',
 		type: 'AILDEFENSIVE',
 		unique: false,
@@ -8215,7 +7705,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Resist Elec',
-		devName: 'resistelec',
 		affinity: 'Passive',
 		type: 'DEFENSIVE',
 		unique: false,
@@ -8224,7 +7713,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Resist Exhaust',
-		devName: 'resistexhaust',
 		affinity: 'Passive',
 		type: 'AILDEFENSIVE',
 		unique: false,
@@ -8233,7 +7721,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Resist Fear',
-		devName: 'resistfear',
 		affinity: 'Passive',
 		type: 'AILDEFENSIVE',
 		unique: false,
@@ -8242,7 +7729,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Resist Fire',
-		devName: 'resistfire',
 		affinity: 'Passive',
 		type: 'DEFENSIVE',
 		unique: false,
@@ -8251,7 +7737,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Resist Force',
-		devName: 'resistforce',
 		affinity: 'Passive',
 		type: 'DEFENSIVE',
 		unique: false,
@@ -8260,7 +7745,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Resist Seal',
-		devName: 'resistseal',
 		affinity: 'Passive',
 		type: 'AILDEFENSIVE',
 		unique: false,
@@ -8269,7 +7753,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Resist Ice',
-		devName: 'resistice',
 		affinity: 'Passive',
 		type: 'DEFENSIVE',
 		unique: false,
@@ -8278,7 +7761,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Resist Light',
-		devName: 'resistlight',
 		affinity: 'Passive',
 		type: 'DEFENSIVE',
 		unique: false,
@@ -8287,7 +7769,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Resist Nuke',
-		devName: 'resistnuke',
 		affinity: 'Passive',
 		type: 'DEFENSIVE',
 		unique: false,
@@ -8296,7 +7777,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Resist Phys',
-		devName: 'resistphys',
 		affinity: 'Passive',
 		type: 'DEFENSIVE',
 		unique: false,
@@ -8305,7 +7785,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Resist Poison',
-		devName: 'resistpoison',
 		affinity: 'Passive',
 		type: 'AILDEFENSIVE',
 		unique: false,
@@ -8314,7 +7793,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Resist Psy',
-		devName: 'resistpsy',
 		affinity: 'Passive',
 		type: 'DEFENSIVE',
 		unique: false,
@@ -8323,7 +7801,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Resist Sleep',
-		devName: 'resistsleep',
 		affinity: 'Passive',
 		type: 'AILDEFENSIVE',
 		unique: false,
@@ -8332,7 +7809,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Resist Wind',
-		devName: 'resistwind',
 		affinity: 'Passive',
 		type: 'DEFENSIVE',
 		unique: false,
@@ -8341,7 +7817,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Restore',
-		devName: 'restore',
 		affinity: 'Passive',
 		type: 'SIPHON',
 		unique: false,
@@ -8350,7 +7825,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Retaliate',
-		devName: 'retaliate',
 		affinity: 'Passive',
 		type: 'SMTCOUNTER',
 		unique: false,
@@ -8364,7 +7838,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Revival Chant',
-		devName: 'revivalchant',
 		affinity: 'Recovery',
 		type: 'RECOVERY',
 		unique: true,
@@ -8380,7 +7853,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Revolution',
-		devName: 'revolution',
 		affinity: 'Support',
 		type: 'CRIT',
 		unique: false,
@@ -8389,7 +7861,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Riot Gun',
-		devName: 'riotgun',
 		affinity: 'Gun',
 		type: 'ATTACK',
 		unique: false,
@@ -8410,7 +7881,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Rising Slash',
-		devName: 'risingslash',
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
@@ -8433,7 +7903,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Ruinous Thunder',
-		devName: 'ruinousthunder',
 		affinity: 'Elec',
 		type: 'ATTACK',
 		unique: true,
@@ -8454,7 +7923,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Sacrifice of Clay',
-		devName: 'sacrificeofclay',
 		affinity: 'Force',
 		type: 'ATTACK',
 		unique: true,
@@ -8478,7 +7946,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Safeguard',
-		devName: 'safeguard',
 		affinity: 'Passive',
 		type: 'MISC',
 		unique: false,
@@ -8487,7 +7954,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Sakanagi',
-		devName: 'sakanagi',
 		affinity: 'Almighty',
 		type: 'ATTACK',
 		unique: true,
@@ -8508,7 +7974,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Salvation',
-		devName: 'salvation',
 		affinity: 'Recovery',
 		type: 'RECOVERY',
 		unique: false,
@@ -8523,7 +7988,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Samarecarm',
-		devName: 'samarecarm',
 		affinity: 'Recovery',
 		type: 'RECOVERY',
 		unique: false,
@@ -8538,7 +8002,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Sanguine Drain',
-		devName: 'sanguinedrain',
 		affinity: 'Almighty',
 		type: 'ATTACK',
 		unique: true,
@@ -8562,7 +8025,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Scratch Dance',
-		devName: 'scratchdance',
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
@@ -8583,7 +8045,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Severing Bite',
-		devName: 'severingbite',
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
@@ -8606,7 +8067,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Sexy Dance',
-		devName: 'sexydance',
 		affinity: 'Ailment',
 		type: 'AILMENT',
 		unique: false,
@@ -8620,7 +8080,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Sharp Student',
-		devName: 'sharpstudent',
 		affinity: 'Passive',
 		type: 'MISC',
 		unique: false,
@@ -8629,7 +8088,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Shield of Justice',
-		devName: 'shieldofjustice',
 		affinity: 'Support',
 		type: 'BARRIER',
 		unique: true,
@@ -8641,7 +8099,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Shining Arrows',
-		devName: 'shiningarrows',
 		affinity: 'Light',
 		type: 'ATTACK',
 		unique: true,
@@ -8662,7 +8119,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Shock Boost',
-		devName: 'shockboost',
 		affinity: 'Passive',
 		type: 'AILBOOST',
 		unique: false,
@@ -8672,7 +8128,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Shockbound',
-		devName: 'shockbound',
 		affinity: 'Elec',
 		type: 'ATTACK',
 		unique: false,
@@ -8693,7 +8148,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Silt of Ruin',
-		devName: 'siltofruin',
 		affinity: 'Almighty',
 		type: 'ATTACK',
 		unique: true,
@@ -8716,7 +8170,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Skewer',
-		devName: 'skewer',
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
@@ -8737,7 +8190,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Skull Cracker',
-		devName: 'skullcracker',
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
@@ -8763,7 +8215,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Sledgehammer',
-		devName: 'sledgehammer',
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
@@ -8789,7 +8240,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Sleep Boost',
-		devName: 'sleepboost',
 		affinity: 'Passive',
 		type: 'AILBOOST',
 		unique: false,
@@ -8799,7 +8249,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Slumber Vortex',
-		devName: 'slumbervortex',
 		affinity: 'Ailment',
 		type: 'AILMENT',
 		unique: false,
@@ -8814,7 +8263,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Snap',
-		devName: 'snap',
 		affinity: 'Gun',
 		type: 'ATTACK',
 		unique: false,
@@ -8835,7 +8283,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Somersault',
-		devName: 'somersault',
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: true,
@@ -8858,7 +8305,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Sonic Punch',
-		devName: 'sonicpunch',
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
@@ -8879,7 +8325,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Souffle D\'éclair',
-		devName: 'souffledeclair',
 		affinity: 'Elec',
 		type: 'ATTACK',
 		unique: true,
@@ -8900,7 +8345,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Soul Break',
-		devName: 'soulbreak',
 		affinity: 'Ailment',
 		type: 'AILMENT',
 		unique: false,
@@ -8914,7 +8358,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Soul Chain',
-		devName: 'soulchain',
 		affinity: 'Passive',
 		type: 'REGEN',
 		unique: false,
@@ -8926,7 +8369,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Soul Divide',
-		devName: 'souldivide',
 		affinity: 'Almighty',
 		type: 'ATTACK',
 		unique: true,
@@ -8954,7 +8396,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Soul Touch',
-		devName: 'soultouch',
 		affinity: 'Passive',
 		type: 'REGEN',
 		unique: false,
@@ -8966,7 +8407,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Speed Master',
-		devName: 'speedmaster',
 		affinity: 'Passive',
 		type: 'AUTOBUFF',
 		unique: false,
@@ -8975,7 +8415,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Spell Master',
-		devName: 'spellmaster',
 		affinity: 'Passive',
 		type: 'MASTER',
 		unique: false,
@@ -8983,7 +8422,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Spirit Drain',
-		devName: 'spiritdrain',
 		affinity: 'Almighty',
 		type: 'ATTACK',
 		unique: false,
@@ -9006,7 +8444,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Stagnant Air',
-		devName: 'stagnantair',
 		affinity: 'Ailment',
 		type: 'AILMENT',
 		unique: true,
@@ -9023,7 +8460,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Stagnant Air -Persona-',
-		devName: 'stagnantairpersona',
 		affinity: 'Almighty',
 		type: 'SUSCEPTIBILITY',
 		unique: false,
@@ -9032,7 +8468,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Stamina Song',
-		devName: 'staminasong',
 		affinity: 'Passive',
 		type: 'NAVI',
 		unique: false,
@@ -9040,7 +8475,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Steel Needle',
-		devName: 'steelneedle',
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
@@ -9061,7 +8495,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Stormcaller Song',
-		devName: 'stormcallersong',
 		affinity: 'Ice',
 		type: 'ATTACK',
 		unique: true,
@@ -9082,7 +8515,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Storm Dracostrike',
-		devName: 'stormdracostrike',
 		affinity: 'Elec',
 		type: 'ATTACK',
 		unique: false,
@@ -9103,7 +8535,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Subrecover HP',
-		devName: 'subrecoverhp',
 		affinity: 'Passive',
 		type: 'NAVI',
 		unique: false,
@@ -9111,7 +8542,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Subrecover HP EX',
-		devName: 'subrecoverhpex',
 		affinity: 'Passive',
 		type: 'NAVI',
 		unique: false,
@@ -9119,7 +8549,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Subrecover SP',
-		devName: 'subrecoversp',
 		affinity: 'Passive',
 		type: 'NAVI',
 		unique: false,
@@ -9127,7 +8556,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Subrecover SP EX',
-		devName: 'subrecoverspex',
 		affinity: 'Passive',
 		type: 'NAVI',
 		unique: false,
@@ -9135,7 +8563,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Sukukaja',
-		devName: 'sukukaja',
 		affinity: 'Support',
 		type: 'SUPPORT',
 		unique: false,
@@ -9151,7 +8578,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Sukunda',
-		devName: 'sukunda',
 		affinity: 'Support',
 		type: 'SUPPORT',
 		unique: false,
@@ -9167,7 +8593,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Sun\'s Radiance',
-		devName: 'sunsradiance',
 		affinity: 'Recovery',
 		type: 'RECOVERY',
 		unique: true,
@@ -9182,7 +8607,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Support Scan',
-		devName: 'supportscan',
 		affinity: 'Passive',
 		type: 'NAVI',
 		unique: false,
@@ -9190,7 +8614,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Survival Trick',
-		devName: 'survivaltrick',
 		affinity: 'Passive',
 		type: 'ENDURE',
 		unique: false,
@@ -9199,7 +8622,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Swift Strike',
-		devName: 'swiftstrike',
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
@@ -9220,7 +8642,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Sword Dance',
-		devName: 'sworddance',
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
@@ -9241,7 +8662,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Tandava',
-		devName: 'tandava',
 		affinity: 'Almighty',
 		type: 'ATTACK',
 		unique: true,
@@ -9264,7 +8684,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Tarukaja',
-		devName: 'tarukaja',
 		affinity: 'Support',
 		type: 'SUPPORT',
 		unique: false,
@@ -9280,7 +8699,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Tarunda',
-		devName: 'tarunda',
 		affinity: 'Support',
 		type: 'SUPPORT',
 		unique: false,
@@ -9296,7 +8714,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Taunt',
-		devName: 'taunt',
 		affinity: 'Support',
 		type: 'TAUNT',
 		unique: false,
@@ -9305,7 +8722,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Taunt -Persona-',
-		devName: 'tauntpersona',
 		affinity: 'Ailment',
 		type: 'AILMENT',
 		unique: false,
@@ -9319,7 +8735,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Technical High',
-		devName: 'technicalhigh',
 		affinity: 'Passive',
 		type: 'MISC',
 		unique: false,
@@ -9328,7 +8743,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Tempest Slash',
-		devName: 'tempestslash',
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
@@ -9349,7 +8763,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Tentarafoo',
-		devName: 'tentarafoo',
 		affinity: 'Ailment',
 		type: 'AILMENT',
 		unique: false,
@@ -9363,7 +8776,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Terrorblade',
-		devName: 'terrorblade',
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: true,
@@ -9391,7 +8803,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Terror Claw',
-		devName: 'terrorclaw',
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
@@ -9417,7 +8828,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Tetra Break',
-		devName: 'tetrabreak',
 		affinity: 'Support',
 		type: 'BARRIERBREAK',
 		unique: false,
@@ -9426,7 +8836,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Tetraja',
-		devName: 'tetraja',
 		affinity: 'Support',
 		type: 'BARRIER',
 		unique: false,
@@ -9438,7 +8847,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Tetrakarn',
-		devName: 'tetrakarn',
 		affinity: 'Support',
 		type: 'BARRIER',
 		unique: false,
@@ -9450,7 +8858,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Thalassic Calamity',
-		devName: 'thalassiccalamity',
 		affinity: 'Ice',
 		type: 'ATTACK',
 		unique: true,
@@ -9471,7 +8878,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'The Man"s Way',
-		devName: 'themansway',
 		affinity: 'Ailment',
 		type: 'MISC',
 		unique: true,
@@ -9480,7 +8886,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Thermopylae',
-		devName: 'thermopylae',
 		affinity: 'Support',
 		type: 'SUPPORT',
 		unique: false,
@@ -9498,7 +8903,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Third Eye',
-		devName: 'thirdeye',
 		affinity: 'Passive',
 		type: 'NAVI',
 		unique: false,
@@ -9506,7 +8910,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Thunder Reign',
-		devName: 'thunderreign',
 		affinity: 'Elec',
 		type: 'ATTACK',
 		unique: false,
@@ -9527,7 +8930,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Titanomachia',
-		devName: 'titanomachia',
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
@@ -9548,7 +8950,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Titanomachia -Persona-',
-		devName: 'titanomachiapersona',
 		affinity: 'Fire',
 		type: 'ATTACK',
 		unique: true,
@@ -9574,7 +8975,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Torrent Shot',
-		devName: 'torrentshot',
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
@@ -9595,7 +8995,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Touch n" Go',
-		devName: 'touchngo',
 		affinity: 'Passive',
 		type: 'MISC',
 		unique: false,
@@ -9604,7 +9003,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Toxic Breath',
-		devName: 'toxicbreath',
 		affinity: 'Dark',
 		type: 'ATTACK',
 		unique: true,
@@ -9630,7 +9028,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Toxic Cloud',
-		devName: 'toxiccloud',
 		affinity: 'Ailment',
 		type: 'AILMENT',
 		unique: false,
@@ -9644,7 +9041,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Toxic Spray',
-		devName: 'toxicspray',
 		affinity: 'Ailment',
 		type: 'AILMENT',
 		unique: false,
@@ -9660,7 +9056,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Toxic Sting',
-		devName: 'toxicsting',
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
@@ -9686,7 +9081,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Traesto',
-		devName: 'traesto',
 		affinity: 'Support',
 		type: 'MISC',
 		unique: false,
@@ -9695,7 +9089,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Trafuri',
-		devName: 'trafuri',
 		affinity: 'Support',
 		type: 'MISC',
 		unique: false,
@@ -9704,7 +9097,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Treasure Radar',
-		devName: 'treasureradar',
 		affinity: 'Passive',
 		type: 'NAVI',
 		unique: false,
@@ -9712,7 +9104,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Treasure Skimmer',
-		devName: 'treasureskimmer',
 		affinity: 'Passive',
 		type: 'NAVI',
 		unique: false,
@@ -9720,7 +9111,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Trigger Happy',
-		devName: 'triggerhappy',
 		affinity: 'Passive',
 		type: 'MISC',
 		unique: false,
@@ -9729,7 +9119,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Triple Down',
-		devName: 'tripledown',
 		affinity: 'Gun',
 		type: 'ATTACK',
 		unique: false,
@@ -9750,7 +9139,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Trisagion',
-		devName: 'trisagion',
 		affinity: 'Fire',
 		type: 'ATTACK',
 		unique: false,
@@ -9773,7 +9161,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Tyrant"s Mind',
-		devName: 'tyrantsmind',
 		affinity: 'Passive',
 		type: 'BOOST',
 		unique: true,
@@ -9783,7 +9170,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Ultimate Support',
-		devName: 'ultimatesupport',
 		affinity: 'Passive',
 		type: 'NAVI',
 		unique: false,
@@ -9791,7 +9177,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Unshaken Will',
-		devName: 'unshakenwill',
 		affinity: 'Passive',
 		type: 'AILDEFENSIVE',
 		unique: false,
@@ -9800,7 +9185,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Vacuum Wave',
-		devName: 'vacuumwave',
 		affinity: 'Wind',
 		type: 'ATTACK',
 		unique: false,
@@ -9821,7 +9205,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Vajra Blast',
-		devName: 'vajrablast',
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
@@ -9842,7 +9225,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Vault Guardian',
-		devName: 'vaultguardian',
 		affinity: 'Support',
 		type: 'SUPPORT',
 		unique: false,
@@ -9861,7 +9243,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Venom Chaser',
-		devName: 'venomchaser',
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
@@ -9884,7 +9265,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Vicious Strike',
-		devName: 'viciousstrike',
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
@@ -9905,7 +9285,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Victory Cry',
-		devName: 'victorycry',
 		affinity: 'Passive',
 		type: 'POSTBATTLE',
 		unique: false,
@@ -9915,7 +9294,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Vigor Song',
-		devName: 'vigorsong',
 		affinity: 'Passive',
 		type: 'NAVI',
 		unique: false,
@@ -9923,7 +9301,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Vile Assault',
-		devName: 'vileassault',
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
@@ -9946,7 +9323,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Violent Rage',
-		devName: 'violentrage',
 		affinity: 'Almighty',
 		type: 'ATTACK',
 		unique: true,
@@ -9972,7 +9348,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Virus Wave',
-		devName: 'viruswave',
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
@@ -9998,7 +9373,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Vorpal Blade',
-		devName: 'vorpalblade',
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
@@ -10019,7 +9393,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Wage War',
-		devName: 'wagewar',
 		affinity: 'Ailment',
 		type: 'AILMENT',
 		unique: false,
@@ -10033,7 +9406,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Walpurgisnacht',
-		devName: 'walpurgisnacht',
 		affinity: 'Dark',
 		type: 'ATTACK',
 		unique: true,
@@ -10056,7 +9428,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Weakness Scan',
-		devName: 'weaknessscan',
 		affinity: 'Passive',
 		type: 'NAVI',
 		unique: false,
@@ -10064,7 +9435,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'White Dracostrike',
-		devName: 'whitedracostrike',
 		affinity: 'Light',
 		type: 'ATTACK',
 		unique: false,
@@ -10087,7 +9457,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Wind Amp',
-		devName: 'windamp',
 		affinity: 'Passive',
 		type: 'BOOST',
 		unique: false,
@@ -10097,7 +9466,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Wind Boost',
-		devName: 'windboost',
 		affinity: 'Passive',
 		type: 'BOOST',
 		unique: false,
@@ -10107,7 +9475,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Wind Break',
-		devName: 'windbreak',
 		affinity: 'Support',
 		type: 'BREAK',
 		unique: false,
@@ -10116,7 +9483,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Wind Breath',
-		devName: 'windbreath',
 		affinity: 'Force',
 		type: 'ATTACK',
 		unique: false,
@@ -10137,7 +9503,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Wind Dracostrike',
-		devName: 'winddracostrike',
 		affinity: 'Force',
 		type: 'ATTACK',
 		unique: false,
@@ -10158,7 +9523,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Wind Wall',
-		devName: 'windwall',
 		affinity: 'Support',
 		type: 'WALL',
 		unique: false,
@@ -10167,7 +9531,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Witness Me',
-		devName: 'witnessme',
 		affinity: 'Support',
 		type: 'TAUNT',
 		unique: true,
@@ -10176,7 +9539,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Wrath Tempest',
-		devName: 'wrathtempest',
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: true,
@@ -10199,7 +9561,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Yabusame Shot',
-		devName: 'yabusameshot',
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
@@ -10222,7 +9583,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Youthful Wind',
-		devName: 'youthfulwind',
 		affinity: 'Recovery',
 		type: 'RECOVERY',
 		unique: true,
@@ -10237,7 +9597,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Zan',
-		devName: 'zan',
 		affinity: 'Force',
 		type: 'ATTACK',
 		unique: false,
@@ -10258,7 +9617,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Zanbarion',
-		devName: 'zanbarion',
 		affinity: 'Force',
 		type: 'ATTACK',
 		unique: false,
@@ -10279,7 +9637,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Zandyne',
-		devName: 'zandyne',
 		affinity: 'Force',
 		type: 'ATTACK',
 		unique: false,
@@ -10300,7 +9657,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Zanma',
-		devName: 'zanma',
 		affinity: 'Force',
 		type: 'ATTACK',
 		unique: false,
@@ -10321,7 +9677,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Zio',
-		devName: 'zio',
 		affinity: 'Elec',
 		type: 'ATTACK',
 		unique: false,
@@ -10342,7 +9697,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Ziobarion',
-		devName: 'ziobarion',
 		affinity: 'Elec',
 		type: 'ATTACK',
 		unique: false,
@@ -10363,7 +9717,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Ziodyne',
-		devName: 'ziodyne',
 		affinity: 'Elec',
 		type: 'ATTACK',
 		unique: false,
@@ -10384,7 +9737,6 @@ const skills: SkillData[] = [
 	},
 	{
 		name: 'Zionga',
-		devName: 'zionga',
 		affinity: 'Elec',
 		type: 'ATTACK',
 		unique: false,
