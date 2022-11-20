@@ -1,4 +1,4 @@
-import type { Affinity, Ailment, AilResistance, Arcana, AttackDisplay, Barrier, Buff, Charge, ChargeRange, CounterAffinity, CounterDisplay, Element, Game, HPMP, HPMPAil, Inherit, LightDark, PostBattleStat, Race, Range, RecoveryAmount, Resistance, RestoreCriteria, Series, SkillType, SMTElement } from './types';
+import type { Affinity, AilResistance, Ailment, Arcana, AttackDisplay, Barrier, Buff, Charge, ChargeRange, CounterAffinity, CounterDisplay, Element, Game, HPMP, HPMPAil, Inherit, LightDark, PostBattleStat, Race, Range, RecoveryAmount, Resistance, RestoreCriteria, SMTElement, Series, SkillType } from './types';
 
 export interface DemonData {
 	name: string;

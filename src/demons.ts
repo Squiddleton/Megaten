@@ -1,8 +1,8 @@
 import { readFileSync } from 'node:fs';
+import { normalize } from '@squiddleton/util';
+import demonList from './demonList';
 import { DemonData, PersonaData } from './listTypes';
 import { Arcana, Element, Game, Inherit, Race } from './types';
-import demonList from './demonList';
-import { normalize } from '@squiddleton/util';
 
 export const isPersonaData = (data: DemonData): data is PersonaData => data.race === 'Persona';
 

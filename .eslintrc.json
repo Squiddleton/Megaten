@@ -6,11 +6,14 @@
     "project": ["./tsconfig.json"]
   },
   "plugins": [
-    "@typescript-eslint"
+    "@typescript-eslint",
+    "eslint-plugin-tsdoc",
+    "import"
   ],
   "extends": [
     "eslint:recommended",
-    "plugin:@typescript-eslint/eslint-recommended"
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:import/recommended"
   ],
   "ignorePatterns": [
     "dist"
@@ -28,9 +31,6 @@
     "indent": "off",
     "@typescript-eslint/indent": ["error", "tab"],
     "@typescript-eslint/member-delimiter-style": "error",
-    "no-empty-function": "off",
-    "@typescript-eslint/no-empty-function": "error",
-    "@typescript-eslint/no-empty-interface": "error",
     "no-floating-decimal": "error",
     "@typescript-eslint/no-inferrable-types": "error",
     "no-lonely-if": "error",
@@ -39,17 +39,27 @@
     "no-return-await": "error",
     "@typescript-eslint/no-shadow": ["error", { "allow": ["err", "resolve", "reject"] }],
     "no-trailing-spaces": "error",
+    "import/no-unresolved": "error",
     "no-unused-vars": "off",
     "@typescript-eslint/no-unused-vars": "error",
     "no-useless-return": "error",
     "@typescript-eslint/no-use-before-define": "error",
     "@typescript-eslint/object-curly-spacing": ["error", "always"],
+    "import/order": ["error", {
+      "groups": ["builtin", ["external", "internal"], ["parent", "sibling"]],
+      "newlines-between": "never",
+      "alphabetize": {
+        "order": "asc",
+        "caseInsensitive": true
+      }
+    }],
     "@typescript-eslint/prefer-nullish-coalescing": "error",
     "@typescript-eslint/quotes": ["error", "single"],
     "quote-props": ["error", "as-needed"],
     "require-await": "error",
     "semi": "off",
     "@typescript-eslint/semi": ["error", "always"],
+    "sort-imports": ["error", { "ignoreDeclarationSort": true }],
     "space-before-blocks": "off",
     "@typescript-eslint/space-before-blocks": "error",
     "@typescript-eslint/space-before-function-paren": ["error", {
@@ -61,6 +71,16 @@
     "@typescript-eslint/space-infix-ops": "error",
     "space-unary-ops": "error",
     "spaced-comment": "error",
+    "tsdoc/syntax": "error",
     "yoda": "error"
+  },
+  "settings": {
+    "import/parsers": {
+      "@typescript-eslint/parser": [".ts", ".tsx"]
+    },
+    "import/resolver": {
+      "typescript": true,
+      "node": true
+    }
   }
 } 

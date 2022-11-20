@@ -1,14 +1,14 @@
+import { Collection } from '@discordjs/collection';
+import { normalize } from '@squiddleton/util';
+import demonList from './demonList';
+import { Demon, Persona, isPersonaData } from './demons';
+import skillList from './skillList';
+import { dataToClass } from './skills';
+
 export * from './demons';
 export * from './listTypes';
 export * from './skills';
 export * from './types';
-
-import demonList from './demonList';
-import skillList from './skillList';
-import { dataToClass } from './skills';
-import { Demon, isPersonaData, Persona } from './demons';
-import { Collection } from '@discordjs/collection';
-import { normalize } from '@squiddleton/util';
 
 export const demons = demonList.map(demon => new (isPersonaData(demon) ? Persona : Demon)(demon));
 export const skills = skillList.map(skill => dataToClass(skill));
