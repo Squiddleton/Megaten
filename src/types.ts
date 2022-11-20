@@ -12,7 +12,7 @@ export type Barrier = 'Painting' | 'Kannabi Veil' | 'Tetrakarn' | 'Makarakarn' |
 export type Charge = 'Recovery' | 'Charge' | 'Concentrate' | 'Critical' | 'Pierce';
 
 export type CounterDisplay = 'Weak' | 'Medium';
-export type AttackDisplay = CounterDisplay | 'Minuscule' | 'Light' | 'Heavy' | 'Severe' | 'Colossal';
+export type AttackDisplay = CounterDisplay | 'Minuscule' | 'Heavy' | 'Severe' | 'Colossal';
 
 export type LightDark = 'Light' | 'Dark';
 

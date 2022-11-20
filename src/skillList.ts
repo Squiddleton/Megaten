@@ -47,7 +47,7 @@ const skills: SkillData[] = [
 			amount: 50
 		},
 		power: {
-			amount: 400,
+			amount: 270,
 			display: 'Severe'
 		},
 		min: 1,
@@ -77,7 +77,7 @@ const skills: SkillData[] = [
 			amount: 30
 		},
 		power: {
-			amount: 400,
+			amount: 205,
 			display: 'Severe'
 		},
 		min: 1,
@@ -212,7 +212,7 @@ const skills: SkillData[] = [
 			amount: 24
 		},
 		power: {
-			amount: 220,
+			amount: 150,
 			display: 'Medium'
 		},
 		min: 1,
@@ -407,7 +407,7 @@ const skills: SkillData[] = [
 			amount: 18
 		},
 		power: {
-			amount: 160,
+			amount: 125,
 			display: 'Heavy'
 		},
 		min: 2,
@@ -428,7 +428,7 @@ const skills: SkillData[] = [
 			amount: 13
 		},
 		power: {
-			amount: 200,
+			amount: 180,
 			display: 'Heavy'
 		},
 		min: 1,
@@ -470,7 +470,7 @@ const skills: SkillData[] = [
 			amount: 48
 		},
 		power: {
-			amount: 400,
+			amount: 265,
 			display: 'Severe'
 		},
 		min: 1,
@@ -548,7 +548,7 @@ const skills: SkillData[] = [
 			amount: 25
 		},
 		power: {
-			amount: 200,
+			amount: 125,
 			display: 'Medium'
 		},
 		min: 3,
@@ -597,7 +597,7 @@ const skills: SkillData[] = [
 			amount: 21
 		},
 		power: {
-			amount: 220,
+			amount: 150,
 			display: 'Medium'
 		},
 		min: 1,
@@ -640,8 +640,8 @@ const skills: SkillData[] = [
 			amount: 5
 		},
 		power: {
-			amount: 120,
-			display: 'Light'
+			amount: 110,
+			display: 'Weak'
 		},
 		min: 1,
 		max: 1,
@@ -670,12 +670,14 @@ const skills: SkillData[] = [
 			amount: 20
 		},
 		power: {
-			amount: 2400,
+			amount: 600,
 			display: 'Colossal'
 		},
 		min: 1,
 		max: 1,
-		flags: [],
+		flags: [
+			'Attack Reduced'
+		],
 		ailments: [],
 		series: 'persona'
 	},
@@ -781,7 +783,7 @@ const skills: SkillData[] = [
 			amount: 16
 		},
 		power: {
-			amount: 260,
+			amount: 200,
 			display: 'Medium'
 		},
 		min: 1,
@@ -802,7 +804,7 @@ const skills: SkillData[] = [
 			amount: 48
 		},
 		power: {
-			amount: 400,
+			amount: 210,
 			display: 'Severe'
 		},
 		min: 1,
@@ -823,7 +825,7 @@ const skills: SkillData[] = [
 			amount: 18
 		},
 		power: {
-			amount: 100,
+			amount: 80,
 			display: 'Medium'
 		},
 		min: 2,
@@ -905,7 +907,7 @@ const skills: SkillData[] = [
 			amount: 22
 		},
 		power: {
-			amount: 240,
+			amount: 200,
 			display: 'Heavy'
 		},
 		min: 1,
@@ -989,7 +991,7 @@ const skills: SkillData[] = [
 			amount: 22
 		},
 		power: {
-			amount: 240,
+			amount: 200,
 			display: 'Heavy'
 		},
 		min: 1,
@@ -1015,7 +1017,7 @@ const skills: SkillData[] = [
 			amount: 9
 		},
 		power: {
-			amount: 160,
+			amount: 100,
 			display: 'Medium'
 		},
 		min: 1,
@@ -1162,32 +1164,6 @@ const skills: SkillData[] = [
 		ailment: 'Burn',
 		amount: 25,
 		weather: false
-	},
-	{
-		name: 'Burning Petals',
-		devName: 'burningpetals',
-		affinity: 'Fire',
-		type: 'ATTACK',
-		unique: true,
-		range: 0,
-		cost: {
-			type: 'MP',
-			amount: 34
-		},
-		power: {
-			amount: 400,
-			display: 'Severe'
-		},
-		min: 1,
-		max: 1,
-		flags: [],
-		ailments: [
-			{
-				name: 'Burn',
-				chance: 5
-			}
-		],
-		series: 'persona'
 	},
 	{
 		name: 'Cadenza',
@@ -1352,8 +1328,8 @@ const skills: SkillData[] = [
 			amount: 6
 		},
 		power: {
-			amount: 80,
-			display: 'Light'
+			amount: 75,
+			display: 'Weak'
 		},
 		min: 1,
 		max: 1,
@@ -1414,7 +1390,7 @@ const skills: SkillData[] = [
 			amount: 10
 		},
 		power: {
-			amount: 200,
+			amount: 125,
 			display: 'Medium'
 		},
 		min: 1,
@@ -1437,7 +1413,7 @@ const skills: SkillData[] = [
 			amount: 54
 		},
 		power: {
-			amount: 400,
+			amount: 185,
 			display: 'Severe'
 		},
 		min: 1,
@@ -1488,7 +1464,7 @@ const skills: SkillData[] = [
 			amount: 14
 		},
 		power: {
-			amount: 180,
+			amount: 110,
 			display: 'Medium'
 		},
 		min: 1,
@@ -1525,7 +1501,7 @@ const skills: SkillData[] = [
 		},
 		power: {
 			amount: 160,
-			display: 'Light'
+			display: 'Weak'
 		},
 		min: 1,
 		max: 1,
@@ -1577,7 +1553,7 @@ const skills: SkillData[] = [
 			amount: 20
 		},
 		power: {
-			amount: 350,
+			amount: 260,
 			display: 'Heavy'
 		},
 		min: 2,
@@ -1600,7 +1576,7 @@ const skills: SkillData[] = [
 			amount: 12
 		},
 		power: {
-			amount: 240,
+			amount: 180,
 			display: 'Medium'
 		},
 		min: 1,
@@ -1869,7 +1845,7 @@ const skills: SkillData[] = [
 			amount: 20
 		},
 		power: {
-			amount: 400,
+			amount: 270,
 			display: 'Severe'
 		},
 		min: 1,
@@ -2238,7 +2214,7 @@ const skills: SkillData[] = [
 			amount: 32
 		},
 		power: {
-			amount: 320,
+			amount: 110,
 			display: 'Heavy'
 		},
 		min: 1,
@@ -2275,7 +2251,7 @@ const skills: SkillData[] = [
 			amount: 16
 		},
 		power: {
-			amount: 160,
+			amount: 100,
 			display: 'Medium'
 		},
 		min: 1,
@@ -2301,8 +2277,8 @@ const skills: SkillData[] = [
 			amount: 10
 		},
 		power: {
-			amount: 80,
-			display: 'Light'
+			amount: 75,
+			display: 'Weak'
 		},
 		min: 2,
 		max: 2,
@@ -2322,8 +2298,8 @@ const skills: SkillData[] = [
 			amount: 12
 		},
 		power: {
-			amount: 110,
-			display: 'Light'
+			amount: 100,
+			display: 'Weak'
 		},
 		min: 2,
 		max: 2,
@@ -2935,8 +2911,8 @@ const skills: SkillData[] = [
 			amount: 14
 		},
 		power: {
-			amount: 250,
-			display: 'Light'
+			amount: 160,
+			display: 'Weak'
 		},
 		min: 1,
 		max: 1,
@@ -3158,7 +3134,7 @@ const skills: SkillData[] = [
 			amount: 19
 		},
 		power: {
-			amount: 200,
+			amount: 125,
 			display: 'Medium'
 		},
 		min: 1,
@@ -3285,8 +3261,8 @@ const skills: SkillData[] = [
 			amount: 4
 		},
 		power: {
-			amount: 80,
-			display: 'Light'
+			amount: 130,
+			display: 'Weak'
 		},
 		min: 1,
 		max: 1,
@@ -3306,7 +3282,7 @@ const skills: SkillData[] = [
 			amount: 12
 		},
 		power: {
-			amount: 320,
+			amount: 215,
 			display: 'Heavy'
 		},
 		min: 1,
@@ -3348,7 +3324,7 @@ const skills: SkillData[] = [
 			amount: 8
 		},
 		power: {
-			amount: 200,
+			amount: 160,
 			display: 'Medium'
 		},
 		min: 1,
@@ -3451,8 +3427,8 @@ const skills: SkillData[] = [
 			amount: 12
 		},
 		power: {
-			amount: 160,
-			display: 'Light'
+			amount: 150,
+			display: 'Weak'
 		},
 		min: 1,
 		max: 1,
@@ -3490,8 +3466,8 @@ const skills: SkillData[] = [
 			amount: 3
 		},
 		power: {
-			amount: 80,
-			display: 'Light'
+			amount: 130,
+			display: 'Weak'
 		},
 		min: 1,
 		max: 1,
@@ -3511,7 +3487,7 @@ const skills: SkillData[] = [
 			amount: 10
 		},
 		power: {
-			amount: 320,
+			amount: 215,
 			display: 'Heavy'
 		},
 		min: 1,
@@ -3532,7 +3508,7 @@ const skills: SkillData[] = [
 			amount: 6
 		},
 		power: {
-			amount: 200,
+			amount: 160,
 			display: 'Medium'
 		},
 		min: 1,
@@ -3553,8 +3529,8 @@ const skills: SkillData[] = [
 			amount: 16
 		},
 		power: {
-			amount: 100,
-			display: 'Light'
+			amount: 90,
+			display: 'Weak'
 		},
 		min: 3,
 		max: 4,
@@ -3604,7 +3580,7 @@ const skills: SkillData[] = [
 			amount: 9
 		},
 		power: {
-			amount: 130,
+			amount: 85,
 			display: 'Medium'
 		},
 		min: 1,
@@ -3627,7 +3603,7 @@ const skills: SkillData[] = [
 			amount: 16
 		},
 		power: {
-			amount: 315,
+			amount: 240,
 			display: 'Heavy'
 		},
 		min: 1,
@@ -3648,7 +3624,7 @@ const skills: SkillData[] = [
 			amount: 25
 		},
 		power: {
-			amount: 700,
+			amount: 350,
 			display: 'Colossal'
 		},
 		min: 1,
@@ -3691,7 +3667,7 @@ const skills: SkillData[] = [
 		},
 		power: {
 			amount: 100,
-			display: 'Light'
+			display: 'Weak'
 		},
 		min: 1,
 		max: 1,
@@ -3713,7 +3689,7 @@ const skills: SkillData[] = [
 			amount: 22
 		},
 		power: {
-			amount: 1600,
+			amount: 400,
 			display: 'Colossal'
 		},
 		min: 1,
@@ -4006,8 +3982,8 @@ const skills: SkillData[] = [
 			amount: 9
 		},
 		power: {
-			amount: 160,
-			display: 'Light'
+			amount: 150,
+			display: 'Weak'
 		},
 		min: 1,
 		max: 1,
@@ -4846,8 +4822,8 @@ const skills: SkillData[] = [
 			amount: 14
 		},
 		power: {
-			amount: 100,
-			display: 'Light'
+			amount: 90,
+			display: 'Weak'
 		},
 		min: 1,
 		max: 3,
@@ -4890,7 +4866,7 @@ const skills: SkillData[] = [
 			amount: 25
 		},
 		power: {
-			amount: 1500,
+			amount: 450,
 			display: 'Colossal'
 		},
 		min: 1,
@@ -5071,7 +5047,7 @@ const skills: SkillData[] = [
 			amount: 3
 		},
 		power: {
-			amount: 50,
+			amount: 25,
 			display: 'Minuscule'
 		},
 		min: 1,
@@ -5342,8 +5318,8 @@ const skills: SkillData[] = [
 			amount: 10
 		},
 		power: {
-			amount: 80,
-			display: 'Light'
+			amount: 95,
+			display: 'Weak'
 		},
 		min: 1,
 		max: 1,
@@ -5363,7 +5339,7 @@ const skills: SkillData[] = [
 			amount: 22
 		},
 		power: {
-			amount: 320,
+			amount: 155,
 			display: 'Heavy'
 		},
 		min: 1,
@@ -5384,7 +5360,7 @@ const skills: SkillData[] = [
 			amount: 16
 		},
 		power: {
-			amount: 200,
+			amount: 120,
 			display: 'Medium'
 		},
 		min: 1,
@@ -5405,8 +5381,8 @@ const skills: SkillData[] = [
 			amount: 8
 		},
 		power: {
-			amount: 80,
-			display: 'Light'
+			amount: 95,
+			display: 'Weak'
 		},
 		min: 1,
 		max: 1,
@@ -5426,7 +5402,7 @@ const skills: SkillData[] = [
 			amount: 20
 		},
 		power: {
-			amount: 320,
+			amount: 155,
 			display: 'Heavy'
 		},
 		min: 1,
@@ -5447,7 +5423,7 @@ const skills: SkillData[] = [
 			amount: 14
 		},
 		power: {
-			amount: 200,
+			amount: 120,
 			display: 'Medium'
 		},
 		min: 1,
@@ -5468,7 +5444,7 @@ const skills: SkillData[] = [
 			amount: 30
 		},
 		power: {
-			amount: 320,
+			amount: 155,
 			display: 'Heavy'
 		},
 		min: 1,
@@ -5708,8 +5684,8 @@ const skills: SkillData[] = [
 			amount: 10
 		},
 		power: {
-			amount: 80,
-			display: 'Light'
+			amount: 95,
+			display: 'Weak'
 		},
 		min: 1,
 		max: 1,
@@ -5729,7 +5705,7 @@ const skills: SkillData[] = [
 			amount: 16
 		},
 		power: {
-			amount: 200,
+			amount: 120,
 			display: 'Medium'
 		},
 		min: 1,
@@ -5750,7 +5726,7 @@ const skills: SkillData[] = [
 			amount: 22
 		},
 		power: {
-			amount: 320,
+			amount: 155,
 			display: 'Heavy'
 		},
 		min: 1,
@@ -5887,7 +5863,7 @@ const skills: SkillData[] = [
 			amount: 32
 		},
 		power: {
-			amount: 400,
+			amount: 185,
 			display: 'Severe'
 		},
 		min: 1,
@@ -5927,7 +5903,7 @@ const skills: SkillData[] = [
 			amount: 25
 		},
 		power: {
-			amount: 750,
+			amount: 250,
 			display: 'Severe'
 		},
 		min: 2,
@@ -6282,7 +6258,7 @@ const skills: SkillData[] = [
 			amount: 16
 		},
 		power: {
-			amount: 600,
+			amount: 310,
 			display: 'Severe'
 		},
 		min: 1,
@@ -6389,8 +6365,8 @@ const skills: SkillData[] = [
 			amount: 15
 		},
 		power: {
-			amount: 140,
-			display: 'Light'
+			amount: 130,
+			display: 'Weak'
 		},
 		min: 1,
 		max: 1,
@@ -6453,7 +6429,7 @@ const skills: SkillData[] = [
 			amount: 19
 		},
 		power: {
-			amount: 220,
+			amount: 150,
 			display: 'Medium'
 		},
 		min: 1,
@@ -6479,7 +6455,7 @@ const skills: SkillData[] = [
 			amount: 8
 		},
 		power: {
-			amount: 160,
+			amount: 100,
 			display: 'Medium'
 		},
 		min: 1,
@@ -6500,7 +6476,7 @@ const skills: SkillData[] = [
 			amount: 16
 		},
 		power: {
-			amount: 160,
+			amount: 100,
 			display: 'Medium'
 		},
 		min: 1,
@@ -6596,7 +6572,7 @@ const skills: SkillData[] = [
 			amount: 52
 		},
 		power: {
-			amount: 400,
+			amount: 210,
 			display: 'Severe'
 		},
 		min: 1,
@@ -6747,7 +6723,7 @@ const skills: SkillData[] = [
 			amount: 16
 		},
 		power: {
-			amount: 200,
+			amount: 125,
 			display: 'Medium'
 		},
 		min: 1,
@@ -6796,7 +6772,7 @@ const skills: SkillData[] = [
 			amount: 40
 		},
 		power: {
-			amount: 320,
+			amount: 160,
 			display: 'Heavy'
 		},
 		min: 3,
@@ -6840,7 +6816,7 @@ const skills: SkillData[] = [
 			amount: 18
 		},
 		power: {
-			amount: 200,
+			amount: 125,
 			display: 'Medium'
 		},
 		min: 1,
@@ -6887,7 +6863,7 @@ const skills: SkillData[] = [
 			amount: 12
 		},
 		power: {
-			amount: 240,
+			amount: 200,
 			display: 'Heavy'
 		},
 		min: 1,
@@ -6917,32 +6893,6 @@ const skills: SkillData[] = [
 			'Accuracy/Evasion'
 		],
 		flags: []
-	},
-	{
-		name: 'Niflheim',
-		devName: 'niflheim',
-		affinity: 'Ice',
-		type: 'ATTACK',
-		unique: true,
-		range: 1,
-		cost: {
-			type: 'MP',
-			amount: 48
-		},
-		power: {
-			amount: 400,
-			display: 'Severe'
-		},
-		min: 1,
-		max: 1,
-		flags: [],
-		ailments: [
-			{
-				name: 'Freeze',
-				chance: 5
-			}
-		],
-		series: 'persona'
 	},
 	{
 		name: 'Nihil Claw',
@@ -7187,7 +7137,7 @@ const skills: SkillData[] = [
 			amount: 17
 		},
 		power: {
-			amount: 420,
+			amount: 280,
 			display: 'Severe'
 		},
 		min: 1,
@@ -7208,7 +7158,7 @@ const skills: SkillData[] = [
 			amount: 16
 		},
 		power: {
-			amount: 160,
+			amount: 100,
 			display: 'Medium'
 		},
 		min: 1,
@@ -7280,7 +7230,7 @@ const skills: SkillData[] = [
 			amount: 42
 		},
 		power: {
-			amount: 400,
+			amount: 265,
 			display: 'Severe'
 		},
 		min: 1,
@@ -7465,8 +7415,8 @@ const skills: SkillData[] = [
 			amount: 9
 		},
 		power: {
-			amount: 120,
-			display: 'Light'
+			amount: 110,
+			display: 'Weak'
 		},
 		min: 1,
 		max: 1,
@@ -7529,7 +7479,7 @@ const skills: SkillData[] = [
 			amount: 10
 		},
 		power: {
-			amount: 240,
+			amount: 180,
 			display: 'Medium'
 		},
 		min: 1,
@@ -7566,8 +7516,8 @@ const skills: SkillData[] = [
 			amount: 20
 		},
 		power: {
-			amount: 2200,
-			display: 'Severe'
+			amount: 425,
+			display: 'Colossal'
 		},
 		min: 1,
 		max: 1,
@@ -7613,8 +7563,8 @@ const skills: SkillData[] = [
 			amount: 4
 		},
 		power: {
-			amount: 80,
-			display: 'Light'
+			amount: 130,
+			display: 'Weak'
 		},
 		min: 1,
 		max: 1,
@@ -7634,7 +7584,7 @@ const skills: SkillData[] = [
 			amount: 8
 		},
 		power: {
-			amount: 200,
+			amount: 160,
 			display: 'Medium'
 		},
 		min: 1,
@@ -7655,7 +7605,7 @@ const skills: SkillData[] = [
 			amount: 12
 		},
 		power: {
-			amount: 320,
+			amount: 215,
 			display: 'Heavy'
 		},
 		min: 1,
@@ -7705,7 +7655,7 @@ const skills: SkillData[] = [
 			amount: 54
 		},
 		power: {
-			amount: 400,
+			amount: 185,
 			display: 'Severe'
 		},
 		min: 1,
@@ -7726,7 +7676,7 @@ const skills: SkillData[] = [
 			amount: 48
 		},
 		power: {
-			amount: 400,
+			amount: 265,
 			display: 'Severe'
 		},
 		min: 1,
@@ -7931,7 +7881,7 @@ const skills: SkillData[] = [
 			amount: 20
 		},
 		power: {
-			amount: 350,
+			amount: 260,
 			display: 'Heavy'
 		},
 		min: 1,
@@ -8018,7 +7968,7 @@ const skills: SkillData[] = [
 			amount: 99
 		},
 		power: {
-			amount: 1500,
+			amount: 450,
 			display: 'Colossal'
 		},
 		min: 1,
@@ -8449,7 +8399,7 @@ const skills: SkillData[] = [
 			amount: 24
 		},
 		power: {
-			amount: 600,
+			amount: 310,
 			display: 'Severe'
 		},
 		min: 1,
@@ -8470,7 +8420,7 @@ const skills: SkillData[] = [
 			amount: 14
 		},
 		power: {
-			amount: 280,
+			amount: 220,
 			display: 'Heavy'
 		},
 		min: 1,
@@ -8701,8 +8651,8 @@ const skills: SkillData[] = [
 			amount: 22
 		},
 		power: {
-			amount: 80,
-			display: 'Light'
+			amount: 15,
+			display: 'Weak'
 		},
 		min: 4,
 		max: 8,
@@ -8776,8 +8726,8 @@ const skills: SkillData[] = [
 			amount: 5
 		},
 		power: {
-			amount: 140,
-			display: 'Light'
+			amount: 130,
+			display: 'Weak'
 		},
 		min: 1,
 		max: 1,
@@ -8797,7 +8747,7 @@ const skills: SkillData[] = [
 			amount: 10
 		},
 		power: {
-			amount: 200,
+			amount: 125,
 			display: 'Medium'
 		},
 		min: 1,
@@ -8823,7 +8773,7 @@ const skills: SkillData[] = [
 			amount: 10
 		},
 		power: {
-			amount: 200,
+			amount: 125,
 			display: 'Medium'
 		},
 		min: 1,
@@ -8874,7 +8824,7 @@ const skills: SkillData[] = [
 			amount: 9
 		},
 		power: {
-			amount: 160,
+			amount: 100,
 			display: 'Medium'
 		},
 		min: 1,
@@ -8918,8 +8868,8 @@ const skills: SkillData[] = [
 			amount: 8
 		},
 		power: {
-			amount: 150,
-			display: 'Light'
+			amount: 140,
+			display: 'Weak'
 		},
 		min: 1,
 		max: 1,
@@ -9259,7 +9209,7 @@ const skills: SkillData[] = [
 			amount: 17
 		},
 		power: {
-			amount: 60,
+			amount: 25,
 			display: 'Minuscule'
 		},
 		min: 2,
@@ -9280,7 +9230,7 @@ const skills: SkillData[] = [
 			amount: 25
 		},
 		power: {
-			amount: 720,
+			amount: 375,
 			display: 'Colossal'
 		},
 		min: 1,
@@ -9388,7 +9338,7 @@ const skills: SkillData[] = [
 			amount: 17
 		},
 		power: {
-			amount: 40,
+			amount: 20,
 			display: 'Minuscule'
 		},
 		min: 3,
@@ -9451,7 +9401,7 @@ const skills: SkillData[] = [
 			amount: 8
 		},
 		power: {
-			amount: 140,
+			amount: 90,
 			display: 'Medium'
 		},
 		min: 1,
@@ -9608,7 +9558,7 @@ const skills: SkillData[] = [
 			amount: 34
 		},
 		power: {
-			amount: 280,
+			amount: 190,
 			display: 'Severe'
 		},
 		min: 1,
@@ -9634,7 +9584,7 @@ const skills: SkillData[] = [
 			amount: 12
 		},
 		power: {
-			amount: 90,
+			amount: 75,
 			display: 'Medium'
 		},
 		min: 2,
@@ -9789,8 +9739,8 @@ const skills: SkillData[] = [
 			amount: 16
 		},
 		power: {
-			amount: 60,
-			display: 'Light'
+			amount: 40,
+			display: 'Weak'
 		},
 		min: 3,
 		max: 3,
@@ -9860,7 +9810,7 @@ const skills: SkillData[] = [
 			amount: 48
 		},
 		power: {
-			amount: 400,
+			amount: 185,
 			display: 'Severe'
 		},
 		min: 1,
@@ -9881,7 +9831,7 @@ const skills: SkillData[] = [
 			amount: 13
 		},
 		power: {
-			amount: 160,
+			amount: 100,
 			display: 'Medium'
 		},
 		min: 1,
@@ -9944,7 +9894,7 @@ const skills: SkillData[] = [
 			amount: 18
 		},
 		power: {
-			amount: 220,
+			amount: 150,
 			display: 'Medium'
 		},
 		min: 1,
@@ -9983,7 +9933,7 @@ const skills: SkillData[] = [
 			amount: 18
 		},
 		power: {
-			amount: 700,
+			amount: 300,
 			display: 'Heavy'
 		},
 		min: 1,
@@ -10032,7 +9982,7 @@ const skills: SkillData[] = [
 			amount: 16
 		},
 		power: {
-			amount: 180,
+			amount: 175,
 			display: 'Heavy'
 		},
 		min: 1,
@@ -10058,7 +10008,7 @@ const skills: SkillData[] = [
 			amount: 23
 		},
 		power: {
-			amount: 420,
+			amount: 280,
 			display: 'Severe'
 		},
 		min: 1,
