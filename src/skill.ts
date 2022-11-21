@@ -95,7 +95,7 @@ export class AilmentSkill extends Skill implements AilmentSkillData {
 	}
 }
 
-export class AttackSkill extends Skill {
+export class AttackSkill extends Skill implements AttackSkillData {
 	affinity: Element;
 	type: 'ATTACK';
 	range: Range | 2;
@@ -225,7 +225,7 @@ export class AttackSkill extends Skill {
 	}
 }
 
-export class AutoBuffSkill extends Skill {
+export class AutoBuffSkill extends Skill implements AutoBuffSkillData {
 	affinity: 'Passive';
 	type: 'AUTOBUFF';
 	buff: Exclude<Buff, 'Double Accuracy/Evasion' | 'Double Defense'>;
@@ -247,7 +247,7 @@ export class AutoBuffSkill extends Skill {
 	}
 }
 
-export class BarrierSkill extends Skill {
+export class BarrierSkill extends Skill implements BarrierSkillData {
 	affinity: 'Support';
 	type: 'BARRIER';
 	range: Range;
@@ -272,7 +272,7 @@ export class BarrierSkill extends Skill {
 	}
 }
 
-export class BarrierBreakSkill extends Skill {
+export class BarrierBreakSkill extends Skill implements BarrierBreakSkillData {
 	constructor(data: BarrierBreakSkillData) {
 		super(data);
 		this.affinity = data.affinity;
@@ -289,7 +289,7 @@ export class BarrierBreakSkill extends Skill {
 	}
 }
 
-export class BlockSkill extends Skill {
+export class BlockSkill extends Skill implements BlockSkillData {
 	affinity: 'Support';
 	type: 'BLOCK';
 	cost: number;
@@ -306,7 +306,7 @@ export class BlockSkill extends Skill {
 	}
 }
 
-export class BoostSkill extends Skill {
+export class BoostSkill extends Skill implements BoostSkillData {
 	affinity: 'Passive';
 	type: 'BOOST';
 	element: Element | 'Recovery' | 'ALL';
@@ -327,7 +327,7 @@ export class BoostSkill extends Skill {
 	}
 }
 
-export class BreakSkill extends Skill {
+export class BreakSkill extends Skill implements BreakSkillData {
 	affinity: 'Support';
 	type: 'BREAK';
 	cost: number;
@@ -344,7 +344,7 @@ export class BreakSkill extends Skill {
 	}
 }
 
-export class ChargeSkill extends Skill {
+export class ChargeSkill extends Skill implements ChargeSkillData {
 	affinity: 'Support';
 	type: 'CHARGE';
 	range: ChargeRange;
@@ -371,7 +371,7 @@ export class ChargeSkill extends Skill {
 	}
 }
 
-export class CritSkill extends Skill {
+export class CritSkill extends Skill implements CritSkillData {
 	affinity: 'Support';
 	type: 'CRIT';
 	range: 'Ally' | 'Party' | 'All';
@@ -388,7 +388,7 @@ export class CritSkill extends Skill {
 	}
 }
 
-export class CritBoostSkill extends Skill {
+export class CritBoostSkill extends Skill implements CritBoostSkillData {
 	affinity: 'Passive';
 	type: 'CRITBOOST';
 	amount: number;
@@ -413,7 +413,7 @@ export class CritBoostSkill extends Skill {
 	}
 }
 
-export class DefensiveSkill extends Skill {
+export class DefensiveSkill extends Skill implements DefensiveSkillData {
 	affinity: 'Passive';
 	type: 'DEFENSIVE';
 	element: Element;
@@ -436,7 +436,7 @@ export class DefensiveSkill extends Skill {
 	}
 }
 
-export class EndureSkill extends Skill {
+export class EndureSkill extends Skill implements EndureSkillData {
 	affinity: 'Passive';
 	type: 'ENDURE';
 	priority: number;
@@ -455,7 +455,7 @@ export class EndureSkill extends Skill {
 	}
 }
 
-export class EvasionSkill extends Skill {
+export class EvasionSkill extends Skill implements EvasionSkillData {
 	affinity: 'Passive';
 	type: 'EVASION';
 	elements: (Element | 'ALL')[];
@@ -480,7 +480,7 @@ export class EvasionSkill extends Skill {
 	}
 }
 
-export class HalveSkill extends Skill {
+export class HalveSkill extends Skill implements HalveSkillData {
 	affinity: LightDark;
 	type: 'HALVE';
 	cost: number;
@@ -495,7 +495,7 @@ export class HalveSkill extends Skill {
 	}
 }
 
-export class InstaKillBoostSkill extends Skill {
+export class InstaKillBoostSkill extends Skill implements InstaKillBoostSkillData {
 	affinity: 'Passive';
 	type: 'INSTAKILLBOOST';
 	element: LightDark;
@@ -510,7 +510,7 @@ export class InstaKillBoostSkill extends Skill {
 	}
 }
 
-export class MasterSkill extends Skill {
+export class MasterSkill extends Skill implements MasterSkillData {
 	affinity: 'Passive';
 	type: 'MASTER';
 	skill: HPMP;
@@ -525,7 +525,7 @@ export class MasterSkill extends Skill {
 	}
 }
 
-export class MiscSkill extends Skill {
+export class MiscSkill extends Skill implements MiscSkillData {
 	affinity: Affinity;
 	type: 'MISC';
 	cost: number | null;
@@ -542,7 +542,7 @@ export class MiscSkill extends Skill {
 	}
 }
 
-export class NaviSkill extends Skill {
+export class NaviSkill extends Skill implements NaviSkillData {
 	affinity: 'Passive';
 	type: 'NAVI';
 	effect: string;
@@ -557,7 +557,7 @@ export class NaviSkill extends Skill {
 	}
 }
 
-export class PersonaCounterSkill extends Skill {
+export class PersonaCounterSkill extends Skill implements PersonaCounterSkillData {
 	affinity: 'Passive';
 	type: 'PERSONACOUNTER';
 	chance: number;
@@ -572,7 +572,7 @@ export class PersonaCounterSkill extends Skill {
 	}
 }
 
-export class PostBattleSkill extends Skill {
+export class PostBattleSkill extends Skill implements PostBattleSkillData {
 	affinity: 'Passive';
 	type: 'POSTBATTLE';
 	amount: number;
@@ -606,7 +606,7 @@ export class PostBattleSkill extends Skill {
 	}
 }
 
-export class RecoverySkill extends Skill {
+export class RecoverySkill extends Skill implements RecoverySkillData {
 	affinity: 'Recovery';
 	type: 'RECOVERY';
 	range: Range;
@@ -645,7 +645,7 @@ export class RecoverySkill extends Skill {
 	}
 }
 
-export class RegenSkill extends Skill {
+export class RegenSkill extends Skill implements RegenSkillData {
 	affinity: 'Passive';
 	type: 'REGEN';
 	hpmpail: HPMPAil;
@@ -684,7 +684,7 @@ export class RegenSkill extends Skill {
 	}
 }
 
-export class SiphonSkill extends Skill {
+export class SiphonSkill extends Skill implements SiphonSkillData {
 	affinity: 'Passive';
 	type: 'SIPHON';
 	amount: number;
@@ -701,7 +701,7 @@ export class SiphonSkill extends Skill {
 	}
 }
 
-export class SMTCounterSkill extends Skill {
+export class SMTCounterSkill extends Skill implements SMTCounterSkillData {
 	affinity: 'Passive';
 	type: 'SMTCOUNTER';
 	attackDown: boolean;
@@ -725,7 +725,7 @@ export class SMTCounterSkill extends Skill {
 	}
 }
 
-export class SpringSkill extends Skill {
+export class SpringSkill extends Skill implements SpringSkillData {
 	affinity: 'Passive';
 	type: 'SPRING';
 	amount: number;
@@ -742,7 +742,7 @@ export class SpringSkill extends Skill {
 	}
 }
 
-export class SupportSkill extends Skill {
+export class SupportSkill extends Skill implements SupportSkillData {
 	affinity: 'Support';
 	type: 'SUPPORT';
 	range: Range;
@@ -777,7 +777,7 @@ export class SupportSkill extends Skill {
 	}
 }
 
-export class SusceptibilitySkill extends Skill {
+export class SusceptibilitySkill extends Skill implements SusceptibilitySkillData {
 	affinity: 'Almighty';
 	type: 'SUSCEPTIBILITY';
 	range: Range;
@@ -794,7 +794,7 @@ export class SusceptibilitySkill extends Skill {
 	}
 }
 
-export class TauntSkill extends Skill {
+export class TauntSkill extends Skill implements TauntSkillData {
 	affinity: 'Support';
 	type: 'TAUNT';
 	buff: Buff | null;
@@ -812,7 +812,7 @@ export class TauntSkill extends Skill {
 	}
 }
 
-export class WallSkill extends Skill {
+export class WallSkill extends Skill implements WallSkillData {
 	affinity: 'Support';
 	type: 'WALL';
 	cost: number;
