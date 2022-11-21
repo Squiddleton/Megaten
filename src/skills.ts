@@ -5,17 +5,16 @@ import type { AilBoostSkillData, AilDefensiveSkillData, AilmentSkillData, Attack
 import skillData from './skillList';
 import type { Affinity, AilResistance, Ailment, AttackDisplay, Barrier, Buff, Charge, ChargeRange, CounterAffinity, CounterDisplay, Element, HPMP, HPMPAil, LightDark, PostBattleStat, Range, RecoveryAmount, Resistance, RestoreCriteria, SMTElement, Series, SkillType } from './types';
 
-export class Skill implements SkillData {
+export abstract class Skill implements SkillData {
 	name: string;
 	devName: string;
-	affinity: Affinity;
-	type: SkillType;
 	unique: boolean;
+	abstract affinity: Affinity;
+	abstract type: SkillType;
+	abstract description: string;
 	constructor(data: SkillData) {
 		this.name = data.name;
 		this.devName = normalize(data.name);
-		this.affinity = data.affinity;
-		this.type = data.type;
 		this.unique = data.unique;
 	}
 	static array: AnySkill[] = [];
@@ -528,6 +527,7 @@ export class MasterSkill extends Skill {
 }
 
 export class MiscSkill extends Skill {
+	affinity: Affinity;
 	type: 'MISC';
 	cost: number | null;
 	effect: string;
