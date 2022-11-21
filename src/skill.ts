@@ -3,13 +3,13 @@ import { normalize } from '@squiddleton/util';
 import type { AilBoostSkillData, AilDefensiveSkillData, AilmentSkillData, AttackSkillData, AutoBuffSkillData, BarrierBreakSkillData, BarrierSkillData, BlockSkillData, BoostSkillData, BreakSkillData, ChargeSkillData, CritBoostSkillData, CritSkillData, DefensiveSkillData, EndureSkillData, EvasionSkillData, HalveSkillData, InstaKillBoostSkillData, MasterSkillData, MiscSkillData, NaviSkillData, PersonaCounterSkillData, PostBattleSkillData, RecoverySkillData, RegenSkillData, SMTCounterSkillData, SiphonSkillData, SkillData, SpringSkillData, SupportSkillData, SusceptibilitySkillData, TauntSkillData, WallSkillData } from './dataTypes';
 import MegatenError from './error';
 import skillData from './skillData';
-import type { Affinity, AilResistance, Ailment, AttackDisplay, Barrier, Buff, Charge, ChargeRange, CounterAffinity, CounterDisplay, Element, HPMP, HPMPAil, LightDark, PostBattleStat, Range, RecoveryAmount, Resistance, RestoreCriteria, SMTElement, Series, SkillType } from './types';
+import type { AilResistance, Ailment, AnyAffinity, AttackDisplay, Barrier, Buff, Charge, ChargeRange, CounterAffinity, CounterDisplay, DamagingAffinity, HPMP, HPMPAil, LightDark, PersonaAffinity, PostBattleStat, Range, RecoveryAmount, Resistance, RestoreCriteria, Series, SkillType } from './types';
 
 export abstract class Skill implements SkillData {
 	name: string;
 	devName: string;
 	unique: boolean;
-	abstract affinity: Affinity;
+	abstract affinity: AnyAffinity;
 	abstract type: SkillType;
 	abstract description: string;
 	constructor(data: SkillData) {
@@ -96,7 +96,7 @@ export class AilmentSkill extends Skill implements AilmentSkillData {
 }
 
 export class AttackSkill extends Skill implements AttackSkillData {
-	affinity: Element;
+	affinity: DamagingAffinity;
 	type: 'ATTACK';
 	range: Range | 2;
 	cost: {
@@ -293,7 +293,7 @@ export class BlockSkill extends Skill implements BlockSkillData {
 	affinity: 'Support';
 	type: 'BLOCK';
 	cost: number;
-	element: Exclude<SMTElement, 'Almighty'>;
+	element: Exclude<DamagingAffinity, PersonaAffinity | 'Almighty'>;
 	constructor(data: BlockSkillData) {
 		super(data);
 		this.affinity = data.affinity;
@@ -309,7 +309,7 @@ export class BlockSkill extends Skill implements BlockSkillData {
 export class BoostSkill extends Skill implements BoostSkillData {
 	affinity: 'Passive';
 	type: 'BOOST';
-	element: Element | 'Recovery' | 'ALL';
+	element: DamagingAffinity | 'Recovery' | 'ALL';
 	amount: number;
 	stacks: '+' | 'x';
 	constructor(data: BoostSkillData) {
@@ -331,7 +331,7 @@ export class BreakSkill extends Skill implements BreakSkillData {
 	affinity: 'Support';
 	type: 'BREAK';
 	cost: number;
-	element: Element;
+	element: DamagingAffinity;
 	constructor(data: BreakSkillData) {
 		super(data);
 		this.affinity = data.affinity;
@@ -416,7 +416,7 @@ export class CritBoostSkill extends Skill implements CritBoostSkillData {
 export class DefensiveSkill extends Skill implements DefensiveSkillData {
 	affinity: 'Passive';
 	type: 'DEFENSIVE';
-	element: Element;
+	element: DamagingAffinity;
 	newAffinity: Resistance;
 	constructor(data: DefensiveSkillData) {
 		super(data);
@@ -458,7 +458,7 @@ export class EndureSkill extends Skill implements EndureSkillData {
 export class EvasionSkill extends Skill implements EvasionSkillData {
 	affinity: 'Passive';
 	type: 'EVASION';
-	elements: (Element | 'ALL')[];
+	elements: (DamagingAffinity | 'ALL')[];
 	amount: number;
 	surround: boolean;
 	weather: boolean;
@@ -526,7 +526,7 @@ export class MasterSkill extends Skill implements MasterSkillData {
 }
 
 export class MiscSkill extends Skill implements MiscSkillData {
-	affinity: Affinity;
+	affinity: AnyAffinity;
 	type: 'MISC';
 	cost: number | null;
 	effect: string;
@@ -816,7 +816,7 @@ export class WallSkill extends Skill implements WallSkillData {
 	affinity: 'Support';
 	type: 'WALL';
 	cost: number;
-	element: Element;
+	element: DamagingAffinity;
 	constructor(data: WallSkillData) {
 		super(data);
 		this.affinity = data.affinity;

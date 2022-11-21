@@ -1,9 +1,9 @@
-import type { Affinity, AilResistance, Ailment, Arcana, AttackDisplay, Barrier, Buff, Charge, ChargeRange, CounterAffinity, CounterDisplay, Element, Game, HPMP, HPMPAil, Inherit, LightDark, PostBattleStat, Race, Range, RecoveryAmount, Resistance, RestoreCriteria, SMTElement, Series, SkillType, Stage } from './types';
+import type { AilResistance, Ailment, AnyAffinity, Arcana, AttackDisplay, Barrier, Buff, Charge, ChargeRange, CounterAffinity, CounterDisplay, DamagingAffinity, Game, HPMP, HPMPAil, LightDark, PersonaAffinity, PostBattleStat, Race, Range, RecoveryAmount, Resistance, RestoreCriteria, Series, SkillType, Stage } from './types';
 
 export interface DemonData {
 	name: string;
 	aliases: string[];
-	inherit: Inherit;
+	inherit: Exclude<AnyAffinity, 'Gun' | 'Passive'>;
 	arcana: Arcana;
 	race: Race;
 	level: number;
@@ -18,11 +18,11 @@ export interface DemonData {
 		name: string;
 		level: number;
 	}[];
-	weak: Element[];
-	resist: Element[];
-	null: Element[];
-	drain: Element[];
-	repel: Element[];
+	weak: DamagingAffinity[];
+	resist: DamagingAffinity[];
+	null: DamagingAffinity[];
+	drain: DamagingAffinity[];
+	repel: DamagingAffinity[];
 	game: Game;
 }
 
@@ -34,7 +34,7 @@ export interface PersonaData extends DemonData {
 
 export interface SkillData {
 	name: string;
-	affinity: Affinity;
+	affinity: AnyAffinity;
 	type: SkillType;
 	unique: boolean;
 }
@@ -65,7 +65,7 @@ export interface AilmentSkillData extends SkillData {
 }
 
 export interface AttackSkillData extends SkillData {
-	affinity: Element;
+	affinity: DamagingAffinity;
 	type: 'ATTACK';
 	range: Range | 2;
 	cost: {
@@ -112,13 +112,13 @@ export interface BlockSkillData extends SkillData {
 	affinity: 'Support';
 	type: 'BLOCK';
 	cost: number;
-	element: Exclude<SMTElement, 'Almighty'>;
+	element: Exclude<DamagingAffinity, PersonaAffinity | 'Almighty'>;
 }
 
 export interface BoostSkillData extends SkillData {
 	affinity: 'Passive';
 	type: 'BOOST';
-	element: Element | 'Recovery' | 'ALL';
+	element: DamagingAffinity | 'Recovery' | 'ALL';
 	amount: number;
 	stacks: '+' | 'x';
 }
@@ -127,7 +127,7 @@ export interface BreakSkillData extends SkillData {
 	affinity: 'Support';
 	type: 'BREAK';
 	cost: number;
-	element: Element;
+	element: DamagingAffinity;
 }
 
 export interface ChargeSkillData extends SkillData {
@@ -161,7 +161,7 @@ export interface CritBoostSkillData extends SkillData {
 export interface DefensiveSkillData extends SkillData {
 	affinity: 'Passive';
 	type: 'DEFENSIVE';
-	element: Element;
+	element: DamagingAffinity;
 	newAffinity: Resistance;
 }
 
@@ -175,7 +175,7 @@ export interface EndureSkillData extends SkillData {
 export interface EvasionSkillData extends SkillData {
 	affinity: 'Passive';
 	type: 'EVASION';
-	elements: (Element | 'ALL')[];
+	elements: (DamagingAffinity | 'ALL')[];
 	amount: number;
 	surround: boolean;
 	weather: boolean;
@@ -296,5 +296,5 @@ export interface WallSkillData extends SkillData {
 	affinity: 'Support';
 	type: 'WALL';
 	cost: number;
-	element: Element;
+	element: DamagingAffinity;
 }

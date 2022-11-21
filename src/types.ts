@@ -18,10 +18,10 @@ export type LightDark = 'Light' | 'Dark';
 
 export type Buff = 'Attack' | 'Defense' | 'Accuracy/Evasion' | 'Double Defense' | 'Double Accuracy/Evasion';
 
-export type Element = 'Phys' | 'Gun' | 'Fire' | 'Ice' | 'Elec' | 'Force' | 'Wind' | 'Nuke' | 'Psy' | 'Light' | 'Dark' | 'Almighty';
-export type Inherit = Exclude<Element, 'Gun'> | 'Ailment' | 'Recovery' | 'Support';
-export type Affinity = Inherit | 'Gun' | 'Passive';
-export type SMTElement = Exclude<Element, 'Wind' | 'Nuke' | 'Psy'>;
+export type PersonaAffinity = 'Gun' | 'Wind' | 'Psy' | 'Nuke';
+export type SMTAffinity = 'Force';
+export type AnyAffinity = 'Phys' | 'Fire' | 'Ice' | 'Elec' | 'Light' | 'Dark' | 'Almighty' | 'Recovery' | 'Ailment' | 'Support' | 'Passive' | SMTAffinity | PersonaAffinity;
+export type DamagingAffinity = Exclude<AnyAffinity, 'Recovery' | 'Ailment' | 'Support' | 'Passive'>;
 export type CounterAffinity = 'Phys' | 'Dark';
 
 export type Game = 'p3' | 'p4' | 'p5' | 'smt5';

@@ -5,7 +5,7 @@ import { formatPossessive, normalize } from '@squiddleton/util';
 import type { DemonData, PersonaData } from './dataTypes';
 import demonData from './demonData';
 import MegatenError from './error';
-import type { Arcana, Element, Game, Inherit, Race, Stage } from './types';
+import type { AnyAffinity, Arcana, DamagingAffinity, Game, Race, Stage } from './types';
 
 function isPersona(demon: Demon): demon is Persona;
 function isPersona(demon: DemonData): demon is PersonaData;
@@ -17,7 +17,7 @@ export class Demon implements DemonData {
 	name: string;
 	devName: string;
 	aliases: string[];
-	inherit: Inherit;
+	inherit: Exclude<AnyAffinity, 'Gun' | 'Passive'>;
 	arcana: Arcana;
 	race: Race;
 	level: number;
@@ -32,11 +32,11 @@ export class Demon implements DemonData {
 		name: string;
 		level: number;
 	}[];
-	weak: Element[];
-	resist: Element[];
-	null: Element[];
-	drain: Element[];
-	repel: Element[];
+	weak: DamagingAffinity[];
+	resist: DamagingAffinity[];
+	null: DamagingAffinity[];
+	drain: DamagingAffinity[];
+	repel: DamagingAffinity[];
 	game: Game;
 	constructor(data: DemonData) {
 		this.name = data.name;
