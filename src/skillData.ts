@@ -24,7 +24,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Ailment',
 		type: 'AILMENT',
 		unique: false,
-		range: 0,
+		range: 'All',
 		cost: 12,
 		ailments: [
 			'Fear'
@@ -37,7 +37,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Almighty',
 		type: 'ATTACK',
 		unique: true,
-		range: 0,
+		range: 'All',
 		cost: {
 			type: 'MP',
 			amount: 50
@@ -65,7 +65,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Dark',
 		type: 'ATTACK',
 		unique: true,
-		range: 0,
+		range: 'All',
 		cost: {
 			type: 'MP',
 			amount: 30
@@ -85,7 +85,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'MP',
 			amount: 25
@@ -113,7 +113,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Fire',
 		type: 'ATTACK',
 		unique: false,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'MP',
 			amount: 10
@@ -133,7 +133,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Fire',
 		type: 'ATTACK',
 		unique: false,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'MP',
 			amount: 50
@@ -153,7 +153,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Fire',
 		type: 'ATTACK',
 		unique: false,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'MP',
 			amount: 35
@@ -173,7 +173,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Fire',
 		type: 'ATTACK',
 		unique: false,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'MP',
 			amount: 20
@@ -193,7 +193,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 0,
+		range: 'All',
 		cost: {
 			type: 'HP',
 			amount: 24
@@ -222,7 +222,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'MP',
 			amount: 50
@@ -300,7 +300,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: true,
-		range: 2,
+		range: 'Random',
 		cost: {
 			type: 'MP',
 			amount: 20
@@ -348,7 +348,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: true,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'MP',
 			amount: 10
@@ -375,7 +375,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 0,
+		range: 'All',
 		cost: {
 			type: 'HP',
 			amount: 18
@@ -395,7 +395,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'HP',
 			amount: 13
@@ -415,7 +415,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: true,
-		range: 2,
+		range: 'Random',
 		cost: {
 			type: 'MP',
 			amount: 40
@@ -435,7 +435,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Nuke',
 		type: 'ATTACK',
 		unique: false,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'MP',
 			amount: 48
@@ -456,7 +456,7 @@ const skills: AnySkillData[] = [
 		type: 'AUTOBUFF',
 		unique: false,
 		buff: 'Attack',
-		range: 1
+		range: 'Ally'
 	},
 	{
 		name: 'Auto-Maraku',
@@ -464,7 +464,7 @@ const skills: AnySkillData[] = [
 		type: 'AUTOBUFF',
 		unique: false,
 		buff: 'Defense',
-		range: 0
+		range: 'Party'
 	},
 	{
 		name: 'Auto-Masuku',
@@ -472,7 +472,7 @@ const skills: AnySkillData[] = [
 		type: 'AUTOBUFF',
 		unique: false,
 		buff: 'Accuracy/Evasion',
-		range: 0
+		range: 'Party'
 	},
 	{
 		name: 'Auto-Mataru',
@@ -480,14 +480,14 @@ const skills: AnySkillData[] = [
 		type: 'AUTOBUFF',
 		unique: false,
 		buff: 'Attack',
-		range: 0
+		range: 'Party'
 	},
 	{
 		name: 'Axel Claw',
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 2,
+		range: 'Random',
 		cost: {
 			type: 'MP',
 			amount: 24
@@ -507,7 +507,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: true,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'HP',
 			amount: 25
@@ -529,7 +529,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Almighty',
 		type: 'ATTACK',
 		unique: true,
-		range: 0,
+		range: 'All',
 		cost: {
 			type: 'MP',
 			amount: 80
@@ -554,7 +554,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 0,
+		range: 'All',
 		cost: {
 			type: 'HP',
 			amount: 21
@@ -579,7 +579,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Recovery',
 		type: 'RECOVERY',
 		unique: false,
-		range: 1,
+		range: 'Ally',
 		cost: 4,
 		ailments: [
 			'Burn',
@@ -595,7 +595,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'HP',
 			amount: 5
@@ -623,7 +623,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: true,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'HP',
 			amount: 20
@@ -645,7 +645,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'MP',
 			amount: 15
@@ -667,7 +667,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'MP',
 			amount: 15
@@ -687,7 +687,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'MP',
 			amount: 5
@@ -709,7 +709,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Dark',
 		type: 'ATTACK',
 		unique: false,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'MP',
 			amount: 30
@@ -731,7 +731,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'HP',
 			amount: 16
@@ -751,7 +751,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Almighty',
 		type: 'ATTACK',
 		unique: true,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'MP',
 			amount: 48
@@ -771,7 +771,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 0,
+		range: 'All',
 		cost: {
 			type: 'HP',
 			amount: 18
@@ -791,7 +791,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Support',
 		type: 'BARRIER',
 		unique: false,
-		range: 1,
+		range: 'Ally',
 		cost: 22,
 		barriers: [
 			'Painting'
@@ -802,7 +802,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 2,
+		range: 'Random',
 		cost: {
 			type: 'MP',
 			amount: 20
@@ -827,7 +827,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'MP',
 			amount: 15
@@ -849,7 +849,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 0,
+		range: 'All',
 		cost: {
 			type: 'HP',
 			amount: 22
@@ -898,7 +898,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'MP',
 			amount: 12
@@ -927,7 +927,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 0,
+		range: 'All',
 		cost: {
 			type: 'HP',
 			amount: 22
@@ -952,7 +952,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'HP',
 			amount: 9
@@ -986,7 +986,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'MP',
 			amount: 45
@@ -1014,7 +1014,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Ice',
 		type: 'ATTACK',
 		unique: false,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'MP',
 			amount: 10
@@ -1034,7 +1034,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Ice',
 		type: 'ATTACK',
 		unique: false,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'MP',
 			amount: 50
@@ -1054,7 +1054,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Ice',
 		type: 'ATTACK',
 		unique: false,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'MP',
 			amount: 35
@@ -1074,7 +1074,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Ice',
 		type: 'ATTACK',
 		unique: false,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'MP',
 			amount: 20
@@ -1103,7 +1103,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Recovery',
 		type: 'RECOVERY',
 		unique: true,
-		range: 0,
+		range: 'Party',
 		cost: 24,
 		ailments: [],
 		amount: 'Half',
@@ -1117,7 +1117,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: true,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'MP',
 			amount: 20
@@ -1139,7 +1139,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'MP',
 			amount: 75
@@ -1159,7 +1159,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Support',
 		type: 'SUPPORT',
 		unique: true,
-		range: 0,
+		range: 'Party',
 		cost: 50,
 		surround: false,
 		buffs: [
@@ -1182,7 +1182,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Recovery',
 		type: 'RECOVERY',
 		unique: false,
-		range: 1,
+		range: 'Ally',
 		cost: 10,
 		ailments: [],
 		amount: 'Moderate',
@@ -1213,7 +1213,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Recovery',
 		type: 'RECOVERY',
 		unique: false,
-		range: 1,
+		range: 'Ally',
 		cost: 5,
 		ailments: [
 			'Charm'
@@ -1227,7 +1227,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Support',
 		type: 'SUPPORT',
 		unique: true,
-		range: 1,
+		range: 'One',
 		cost: 90,
 		surround: false,
 		buffs: [],
@@ -1244,7 +1244,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'HP',
 			amount: 6
@@ -1301,7 +1301,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'HP',
 			amount: 10
@@ -1323,7 +1323,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Nuke',
 		type: 'ATTACK',
 		unique: false,
-		range: 0,
+		range: 'All',
 		cost: {
 			type: 'MP',
 			amount: 54
@@ -1370,7 +1370,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 0,
+		range: 'All',
 		cost: {
 			type: 'HP',
 			amount: 14
@@ -1404,7 +1404,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'MP',
 			amount: 10
@@ -1426,7 +1426,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 0,
+		range: 'All',
 		cost: {
 			type: 'MP',
 			amount: 25
@@ -1454,7 +1454,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: true,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'HP',
 			amount: 20
@@ -1476,7 +1476,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'HP',
 			amount: 12
@@ -1498,7 +1498,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 0,
+		range: 'All',
 		cost: {
 			type: 'MP',
 			amount: 20
@@ -1528,7 +1528,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'MP',
 			amount: 24
@@ -1548,7 +1548,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: true,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'MP',
 			amount: 25
@@ -1603,7 +1603,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'MP',
 			amount: 25
@@ -1628,7 +1628,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Ailment',
 		type: 'AILMENT',
 		unique: false,
-		range: 1,
+		range: 'One',
 		cost: 5,
 		ailments: [
 			'Mirage'
@@ -1641,7 +1641,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: true,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'MP',
 			amount: 50
@@ -1663,7 +1663,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 0,
+		range: 'All',
 		cost: {
 			type: 'MP',
 			amount: 35
@@ -1683,7 +1683,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Dark',
 		type: 'ATTACK',
 		unique: true,
-		range: 0,
+		range: 'All',
 		cost: {
 			type: 'MP',
 			amount: 120
@@ -1705,7 +1705,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Almighty',
 		type: 'ATTACK',
 		unique: true,
-		range: 0,
+		range: 'All',
 		cost: {
 			type: 'MP',
 			amount: 70
@@ -1730,7 +1730,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'HP',
 			amount: 20
@@ -1755,7 +1755,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Support',
 		type: 'SUPPORT',
 		unique: false,
-		range: 0,
+		range: 'All',
 		cost: 150,
 		surround: false,
 		buffs: [],
@@ -1773,14 +1773,14 @@ const skills: AnySkillData[] = [
 		type: 'AUTOBUFF',
 		unique: false,
 		buff: 'Defense',
-		range: 1
+		range: 'Ally'
 	},
 	{
 		name: 'Dekaja',
 		affinity: 'Support',
 		type: 'SUPPORT',
 		unique: false,
-		range: 0,
+		range: 'All',
 		cost: 40,
 		surround: false,
 		buffs: [
@@ -1797,7 +1797,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Support',
 		type: 'SUPPORT',
 		unique: false,
-		range: 0,
+		range: 'Party',
 		cost: 40,
 		surround: false,
 		buffs: [],
@@ -1830,7 +1830,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Recovery',
 		type: 'RECOVERY',
 		unique: false,
-		range: 1,
+		range: 'Ally',
 		cost: 8,
 		ailments: [],
 		amount: 'Slight',
@@ -1842,7 +1842,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Recovery',
 		type: 'RECOVERY',
 		unique: false,
-		range: 1,
+		range: 'Ally',
 		cost: 30,
 		ailments: [
 			'ALL'
@@ -1856,7 +1856,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Recovery',
 		type: 'RECOVERY',
 		unique: false,
-		range: 1,
+		range: 'Ally',
 		cost: 35,
 		ailments: [],
 		amount: 'Full',
@@ -1868,7 +1868,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Recovery',
 		type: 'RECOVERY',
 		unique: false,
-		range: 1,
+		range: 'Ally',
 		cost: 15,
 		ailments: [],
 		amount: 'Moderate',
@@ -1880,7 +1880,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Dark',
 		type: 'ATTACK',
 		unique: true,
-		range: 2,
+		range: 'Random',
 		cost: {
 			type: 'MP',
 			amount: 35
@@ -1902,7 +1902,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Almighty',
 		type: 'ATTACK',
 		unique: true,
-		range: 0,
+		range: 'All',
 		cost: {
 			type: 'MP',
 			amount: 35
@@ -2072,7 +2072,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Almighty',
 		type: 'ATTACK',
 		unique: true,
-		range: 0,
+		range: 'All',
 		cost: {
 			type: 'MP',
 			amount: 32
@@ -2094,7 +2094,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Ailment',
 		type: 'AILMENT',
 		unique: false,
-		range: 1,
+		range: 'One',
 		cost: 10,
 		ailments: [
 			'Sleep'
@@ -2107,7 +2107,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 0,
+		range: 'All',
 		cost: {
 			type: 'HP',
 			amount: 16
@@ -2132,7 +2132,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'HP',
 			amount: 10
@@ -2152,7 +2152,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Gun',
 		type: 'ATTACK',
 		unique: false,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'HP',
 			amount: 12
@@ -2260,7 +2260,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'MP',
 			amount: 20
@@ -2282,7 +2282,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'MP',
 			amount: 10
@@ -2307,7 +2307,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Ailment',
 		type: 'AILMENT',
 		unique: false,
-		range: 1,
+		range: 'One',
 		cost: 10,
 		ailments: [
 			'Mirage'
@@ -2320,7 +2320,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'MP',
 			amount: 20
@@ -2393,7 +2393,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Recovery',
 		type: 'RECOVERY',
 		unique: true,
-		range: 0,
+		range: 'Party',
 		cost: 150,
 		ailments: [],
 		amount: '130%',
@@ -2428,7 +2428,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Almighty',
 		type: 'ATTACK',
 		unique: false,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'MP',
 			amount: 15
@@ -2450,7 +2450,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Recovery',
 		type: 'RECOVERY',
 		unique: false,
-		range: 1,
+		range: 'Ally',
 		cost: 4,
 		ailments: [
 			'Confuse',
@@ -2468,7 +2468,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Recovery',
 		type: 'RECOVERY',
 		unique: false,
-		range: 0,
+		range: 'Party',
 		cost: 8,
 		ailments: [
 			'Confuse',
@@ -2501,7 +2501,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Ice',
 		type: 'ATTACK',
 		unique: true,
-		range: 2,
+		range: 'Random',
 		cost: {
 			type: 'MP',
 			amount: 50
@@ -2637,7 +2637,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Ailment',
 		type: 'AILMENT',
 		unique: false,
-		range: 0,
+		range: 'All',
 		cost: 12,
 		ailments: [
 			'Fear'
@@ -2650,7 +2650,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Ailment',
 		type: 'AILMENT',
 		unique: false,
-		range: 1,
+		range: 'One',
 		cost: 5,
 		ailments: [
 			'Fear'
@@ -2663,7 +2663,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Dark',
 		type: 'ATTACK',
 		unique: true,
-		range: 0,
+		range: 'All',
 		cost: {
 			type: 'MP',
 			amount: 70
@@ -2685,7 +2685,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'MP',
 			amount: 15
@@ -2718,7 +2718,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'HP',
 			amount: 14
@@ -2738,7 +2738,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'MP',
 			amount: 25
@@ -2784,7 +2784,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'MP',
 			amount: 50
@@ -2840,7 +2840,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Fire',
 		type: 'ATTACK',
 		unique: false,
-		range: 2,
+		range: 'Random',
 		cost: {
 			type: 'MP',
 			amount: 25
@@ -2860,7 +2860,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Fire',
 		type: 'ATTACK',
 		unique: false,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'MP',
 			amount: 25
@@ -2880,7 +2880,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Almighty',
 		type: 'ATTACK',
 		unique: true,
-		range: 2,
+		range: 'Random',
 		cost: {
 			type: 'MP',
 			amount: 80
@@ -2925,7 +2925,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 0,
+		range: 'All',
 		cost: {
 			type: 'HP',
 			amount: 19
@@ -2950,7 +2950,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Force',
 		type: 'ATTACK',
 		unique: false,
-		range: 2,
+		range: 'Random',
 		cost: {
 			type: 'MP',
 			amount: 60
@@ -2970,7 +2970,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Ailment',
 		type: 'AILMENT',
 		unique: false,
-		range: 0,
+		range: 'All',
 		cost: 25,
 		ailments: [
 			'Mirage'
@@ -3025,7 +3025,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Almighty',
 		type: 'SUSCEPTIBILITY',
 		unique: false,
-		range: 1,
+		range: 'Foe',
 		cost: 8
 	},
 	{
@@ -3042,7 +3042,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Nuke',
 		type: 'ATTACK',
 		unique: false,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'MP',
 			amount: 4
@@ -3062,7 +3062,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Nuke',
 		type: 'ATTACK',
 		unique: false,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'MP',
 			amount: 12
@@ -3082,7 +3082,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Almighty',
 		type: 'ATTACK',
 		unique: false,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'MP',
 			amount: 60
@@ -3102,7 +3102,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Nuke',
 		type: 'ATTACK',
 		unique: false,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'MP',
 			amount: 8
@@ -3122,7 +3122,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'MP',
 			amount: 25
@@ -3155,7 +3155,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Ailment',
 		type: 'AILMENT',
 		unique: true,
-		range: 0,
+		range: 'All',
 		cost: 80,
 		ailments: [
 			'Charm'
@@ -3178,7 +3178,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: true,
-		range: 0,
+		range: 'All',
 		cost: {
 			type: 'MP',
 			amount: 170
@@ -3200,7 +3200,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 0,
+		range: 'All',
 		cost: {
 			type: 'HP',
 			amount: 12
@@ -3220,7 +3220,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Support',
 		type: 'SUPPORT',
 		unique: false,
-		range: 0,
+		range: 'Party',
 		cost: 20,
 		surround: false,
 		buffs: [
@@ -3237,7 +3237,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Wind',
 		type: 'ATTACK',
 		unique: false,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'MP',
 			amount: 3
@@ -3257,7 +3257,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Wind',
 		type: 'ATTACK',
 		unique: false,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'MP',
 			amount: 10
@@ -3277,7 +3277,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Wind',
 		type: 'ATTACK',
 		unique: false,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'MP',
 			amount: 6
@@ -3297,7 +3297,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'HP',
 			amount: 16
@@ -3317,7 +3317,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Fire',
 		type: 'ATTACK',
 		unique: true,
-		range: 0,
+		range: 'All',
 		cost: {
 			type: 'MP',
 			amount: 30
@@ -3345,7 +3345,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'HP',
 			amount: 9
@@ -3367,7 +3367,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'HP',
 			amount: 16
@@ -3387,7 +3387,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 0,
+		range: 'All',
 		cost: {
 			type: 'HP',
 			amount: 25
@@ -3407,7 +3407,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Ice',
 		type: 'ATTACK',
 		unique: false,
-		range: 2,
+		range: 'Random',
 		cost: {
 			type: 'MP',
 			amount: 60
@@ -3427,7 +3427,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Light',
 		type: 'ATTACK',
 		unique: true,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'MP',
 			amount: 60
@@ -3449,7 +3449,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'HP',
 			amount: 22
@@ -3469,7 +3469,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Recovery',
 		type: 'RECOVERY',
 		unique: true,
-		range: 0,
+		range: 'Party',
 		cost: 180,
 		ailments: [],
 		amount: 'Moderate',
@@ -3485,7 +3485,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'MP',
 			amount: 10
@@ -3574,7 +3574,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: true,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'MP',
 			amount: 50
@@ -3596,7 +3596,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 0,
+		range: 'All',
 		cost: {
 			type: 'MP',
 			amount: 60
@@ -3616,7 +3616,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Light',
 		type: 'ATTACK',
 		unique: false,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'MP',
 			amount: 15
@@ -3638,7 +3638,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Light',
 		type: 'ATTACK',
 		unique: false,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'MP',
 			amount: 55
@@ -3667,7 +3667,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Light',
 		type: 'ATTACK',
 		unique: false,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'MP',
 			amount: 25
@@ -3689,7 +3689,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Recovery',
 		type: 'RECOVERY',
 		unique: true,
-		range: 1,
+		range: 'Ally',
 		cost: 30,
 		ailments: [],
 		amount: 'Slight',
@@ -3703,7 +3703,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: true,
-		range: 2,
+		range: 'Random',
 		cost: {
 			type: 'MP',
 			amount: 60
@@ -3723,7 +3723,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'HP',
 			amount: 9
@@ -3748,7 +3748,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: true,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'MP',
 			amount: 20
@@ -3789,7 +3789,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Support',
 		type: 'SUPPORT',
 		unique: false,
-		range: 1,
+		range: 'Ally',
 		cost: 30,
 		surround: false,
 		buffs: [
@@ -3817,7 +3817,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 0,
+		range: 'All',
 		cost: {
 			type: 'MP',
 			amount: 15
@@ -3850,7 +3850,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'MP',
 			amount: 15
@@ -3872,7 +3872,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Fire',
 		type: 'ATTACK',
 		unique: true,
-		range: 0,
+		range: 'All',
 		cost: {
 			type: 'MP',
 			amount: 40
@@ -3892,7 +3892,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Force',
 		type: 'ATTACK',
 		unique: true,
-		range: 0,
+		range: 'All',
 		cost: {
 			type: 'MP',
 			amount: 40
@@ -3914,7 +3914,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Fire',
 		type: 'ATTACK',
 		unique: true,
-		range: 0,
+		range: 'All',
 		cost: {
 			type: 'MP',
 			amount: 70
@@ -3944,7 +3944,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: true,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'MP',
 			amount: 5
@@ -3966,7 +3966,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Ice',
 		type: 'ATTACK',
 		unique: true,
-		range: 0,
+		range: 'All',
 		cost: {
 			type: 'MP',
 			amount: 25
@@ -3986,7 +3986,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: true,
-		range: 0,
+		range: 'All',
 		cost: {
 			type: 'MP',
 			amount: 30
@@ -4006,7 +4006,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'MP',
 			amount: 45
@@ -4133,7 +4133,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Recovery',
 		type: 'RECOVERY',
 		unique: true,
-		range: 0,
+		range: 'Party',
 		cost: 27,
 		ailments: [],
 		amount: 'Full',
@@ -4169,7 +4169,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Recovery',
 		type: 'RECOVERY',
 		unique: true,
-		range: 0,
+		range: 'Party',
 		cost: 15,
 		ailments: [],
 		amount: 'Slight',
@@ -4181,7 +4181,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'MP',
 			amount: 20
@@ -4203,7 +4203,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Ice',
 		type: 'ATTACK',
 		unique: false,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'MP',
 			amount: 65
@@ -4259,7 +4259,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Ice',
 		type: 'ATTACK',
 		unique: false,
-		range: 2,
+		range: 'Random',
 		cost: {
 			type: 'MP',
 			amount: 25
@@ -4279,7 +4279,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Ice',
 		type: 'ATTACK',
 		unique: false,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'MP',
 			amount: 25
@@ -4377,7 +4377,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Ice',
 		type: 'ATTACK',
 		unique: true,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'MP',
 			amount: 20
@@ -4399,7 +4399,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: true,
-		range: 0,
+		range: 'All',
 		cost: {
 			type: 'MP',
 			amount: 90
@@ -4432,7 +4432,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Support',
 		type: 'BARRIER',
 		unique: true,
-		range: 0,
+		range: 'Party',
 		cost: 15,
 		barriers: [
 			'Kannabi Veil'
@@ -4443,7 +4443,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: true,
-		range: 0,
+		range: 'All',
 		cost: {
 			type: 'MP',
 			amount: 50
@@ -4463,7 +4463,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Elec',
 		type: 'ATTACK',
 		unique: true,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'MP',
 			amount: 50
@@ -4485,7 +4485,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Force',
 		type: 'ATTACK',
 		unique: false,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'MP',
 			amount: 65
@@ -4507,7 +4507,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'HP',
 			amount: 14
@@ -4527,7 +4527,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Ice',
 		type: 'ATTACK',
 		unique: true,
-		range: 0,
+		range: 'All',
 		cost: {
 			type: 'MP',
 			amount: 35
@@ -4549,7 +4549,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: true,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'HP',
 			amount: 25
@@ -4600,7 +4600,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Almighty',
 		type: 'ATTACK',
 		unique: false,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'MP',
 			amount: 10
@@ -4630,7 +4630,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Support',
 		type: 'BARRIER',
 		unique: false,
-		range: 0,
+		range: 'Party',
 		cost: 95,
 		barriers: [
 			'Tetrakarn',
@@ -4695,7 +4695,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Light',
 		type: 'ATTACK',
 		unique: true,
-		range: 0,
+		range: 'All',
 		cost: {
 			type: 'MP',
 			amount: 60
@@ -4717,7 +4717,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'HP',
 			amount: 3
@@ -4737,7 +4737,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Ailment',
 		type: 'AILMENT',
 		unique: false,
-		range: 0,
+		range: 'All',
 		cost: 25,
 		ailments: [
 			'Sleep'
@@ -4750,7 +4750,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'MP',
 			amount: 5
@@ -4770,7 +4770,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Support',
 		type: 'SUPPORT',
 		unique: false,
-		range: 0,
+		range: 'Party',
 		cost: 150,
 		surround: false,
 		buffs: [
@@ -4787,7 +4787,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Recovery',
 		type: 'RECOVERY',
 		unique: false,
-		range: 0,
+		range: 'Party',
 		cost: 8,
 		ailments: [
 			'Burn',
@@ -4803,7 +4803,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Ice',
 		type: 'ATTACK',
 		unique: false,
-		range: 0,
+		range: 'All',
 		cost: {
 			type: 'MP',
 			amount: 15
@@ -4823,7 +4823,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Ice',
 		type: 'ATTACK',
 		unique: false,
-		range: 0,
+		range: 'All',
 		cost: {
 			type: 'MP',
 			amount: 75
@@ -4843,7 +4843,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Ice',
 		type: 'ATTACK',
 		unique: false,
-		range: 0,
+		range: 'All',
 		cost: {
 			type: 'MP',
 			amount: 50
@@ -4863,7 +4863,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Ice',
 		type: 'ATTACK',
 		unique: false,
-		range: 0,
+		range: 'All',
 		cost: {
 			type: 'MP',
 			amount: 30
@@ -4883,7 +4883,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: true,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'MP',
 			amount: 50
@@ -4905,7 +4905,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Almighty',
 		type: 'ATTACK',
 		unique: true,
-		range: 2,
+		range: 'Random',
 		cost: {
 			type: 'MP',
 			amount: 50
@@ -4930,7 +4930,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 2,
+		range: 'Random',
 		cost: {
 			type: 'MP',
 			amount: 36
@@ -4950,7 +4950,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'MP',
 			amount: 10
@@ -4975,7 +4975,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Nuke',
 		type: 'ATTACK',
 		unique: false,
-		range: 0,
+		range: 'All',
 		cost: {
 			type: 'MP',
 			amount: 10
@@ -4995,7 +4995,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Nuke',
 		type: 'ATTACK',
 		unique: false,
-		range: 0,
+		range: 'All',
 		cost: {
 			type: 'MP',
 			amount: 22
@@ -5015,7 +5015,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Nuke',
 		type: 'ATTACK',
 		unique: false,
-		range: 0,
+		range: 'All',
 		cost: {
 			type: 'MP',
 			amount: 16
@@ -5035,7 +5035,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Wind',
 		type: 'ATTACK',
 		unique: false,
-		range: 0,
+		range: 'All',
 		cost: {
 			type: 'MP',
 			amount: 8
@@ -5055,7 +5055,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Wind',
 		type: 'ATTACK',
 		unique: false,
-		range: 0,
+		range: 'All',
 		cost: {
 			type: 'MP',
 			amount: 20
@@ -5075,7 +5075,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Wind',
 		type: 'ATTACK',
 		unique: false,
-		range: 0,
+		range: 'All',
 		cost: {
 			type: 'MP',
 			amount: 14
@@ -5095,7 +5095,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Dark',
 		type: 'ATTACK',
 		unique: true,
-		range: 0,
+		range: 'All',
 		cost: {
 			type: 'MP',
 			amount: 30
@@ -5128,7 +5128,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Light',
 		type: 'ATTACK',
 		unique: false,
-		range: 0,
+		range: 'All',
 		cost: {
 			type: 'MP',
 			amount: 25
@@ -5150,7 +5150,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Light',
 		type: 'ATTACK',
 		unique: false,
-		range: 0,
+		range: 'All',
 		cost: {
 			type: 'MP',
 			amount: 80
@@ -5172,7 +5172,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Light',
 		type: 'ATTACK',
 		unique: false,
-		range: 0,
+		range: 'All',
 		cost: {
 			type: 'MP',
 			amount: 40
@@ -5194,7 +5194,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Ailment',
 		type: 'AILMENT',
 		unique: false,
-		range: 1,
+		range: 'One',
 		cost: 10,
 		ailments: [
 			'Seal'
@@ -5207,7 +5207,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Ailment',
 		type: 'AILMENT',
 		unique: false,
-		range: 0,
+		range: 'All',
 		cost: 25,
 		ailments: [
 			'Seal'
@@ -5228,7 +5228,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Support',
 		type: 'BARRIER',
 		unique: false,
-		range: 1,
+		range: 'Ally',
 		cost: 50,
 		barriers: [
 			'Makarakarn'
@@ -5239,7 +5239,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Dark',
 		type: 'ATTACK',
 		unique: false,
-		range: 0,
+		range: 'All',
 		cost: {
 			type: 'MP',
 			amount: 25
@@ -5261,7 +5261,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Dark',
 		type: 'ATTACK',
 		unique: false,
-		range: 0,
+		range: 'All',
 		cost: {
 			type: 'MP',
 			amount: 80
@@ -5283,7 +5283,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Dark',
 		type: 'ATTACK',
 		unique: false,
-		range: 0,
+		range: 'All',
 		cost: {
 			type: 'MP',
 			amount: 40
@@ -5322,7 +5322,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Psy',
 		type: 'ATTACK',
 		unique: false,
-		range: 0,
+		range: 'All',
 		cost: {
 			type: 'MP',
 			amount: 10
@@ -5342,7 +5342,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Psy',
 		type: 'ATTACK',
 		unique: false,
-		range: 0,
+		range: 'All',
 		cost: {
 			type: 'MP',
 			amount: 16
@@ -5362,7 +5362,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Psy',
 		type: 'ATTACK',
 		unique: false,
-		range: 0,
+		range: 'All',
 		cost: {
 			type: 'MP',
 			amount: 22
@@ -5382,7 +5382,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Fire',
 		type: 'ATTACK',
 		unique: false,
-		range: 0,
+		range: 'All',
 		cost: {
 			type: 'MP',
 			amount: 15
@@ -5402,7 +5402,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Fire',
 		type: 'ATTACK',
 		unique: false,
-		range: 0,
+		range: 'All',
 		cost: {
 			type: 'MP',
 			amount: 75
@@ -5422,7 +5422,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Fire',
 		type: 'ATTACK',
 		unique: false,
-		range: 0,
+		range: 'All',
 		cost: {
 			type: 'MP',
 			amount: 50
@@ -5442,7 +5442,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Fire',
 		type: 'ATTACK',
 		unique: false,
-		range: 0,
+		range: 'All',
 		cost: {
 			type: 'MP',
 			amount: 30
@@ -5462,7 +5462,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Support',
 		type: 'SUPPORT',
 		unique: false,
-		range: 0,
+		range: 'Party',
 		cost: 30,
 		surround: false,
 		buffs: [
@@ -5477,7 +5477,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Support',
 		type: 'SUPPORT',
 		unique: false,
-		range: 0,
+		range: 'All',
 		cost: 30,
 		surround: false,
 		buffs: [],
@@ -5492,7 +5492,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Fire',
 		type: 'ATTACK',
 		unique: true,
-		range: 0,
+		range: 'All',
 		cost: {
 			type: 'MP',
 			amount: 32
@@ -5517,7 +5517,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Ailment',
 		type: 'AILMENT',
 		unique: false,
-		range: 1,
+		range: 'One',
 		cost: 10,
 		ailments: [
 			'Charm'
@@ -5530,7 +5530,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: true,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'HP',
 			amount: 25
@@ -5550,7 +5550,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Support',
 		type: 'SUPPORT',
 		unique: false,
-		range: 0,
+		range: 'Party',
 		cost: 30,
 		surround: false,
 		buffs: [
@@ -5565,7 +5565,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Support',
 		type: 'SUPPORT',
 		unique: false,
-		range: 0,
+		range: 'All',
 		cost: 30,
 		surround: false,
 		buffs: [],
@@ -5580,7 +5580,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Support',
 		type: 'SUPPORT',
 		unique: false,
-		range: 0,
+		range: 'Party',
 		cost: 30,
 		surround: false,
 		buffs: [
@@ -5595,7 +5595,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Support',
 		type: 'SUPPORT',
 		unique: false,
-		range: 0,
+		range: 'All',
 		cost: 30,
 		surround: false,
 		buffs: [],
@@ -5610,7 +5610,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Recovery',
 		type: 'RECOVERY',
 		unique: true,
-		range: 0,
+		range: 'Party',
 		cost: 140,
 		ailments: [
 			'ALL'
@@ -5626,7 +5626,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Force',
 		type: 'ATTACK',
 		unique: false,
-		range: 0,
+		range: 'All',
 		cost: {
 			type: 'MP',
 			amount: 15
@@ -5646,7 +5646,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Force',
 		type: 'ATTACK',
 		unique: false,
-		range: 0,
+		range: 'All',
 		cost: {
 			type: 'MP',
 			amount: 75
@@ -5666,7 +5666,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Force',
 		type: 'ATTACK',
 		unique: false,
-		range: 0,
+		range: 'All',
 		cost: {
 			type: 'MP',
 			amount: 50
@@ -5686,7 +5686,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Force',
 		type: 'ATTACK',
 		unique: false,
-		range: 0,
+		range: 'All',
 		cost: {
 			type: 'MP',
 			amount: 30
@@ -5706,7 +5706,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Elec',
 		type: 'ATTACK',
 		unique: false,
-		range: 0,
+		range: 'All',
 		cost: {
 			type: 'MP',
 			amount: 15
@@ -5726,7 +5726,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Elec',
 		type: 'ATTACK',
 		unique: false,
-		range: 0,
+		range: 'All',
 		cost: {
 			type: 'MP',
 			amount: 75
@@ -5746,7 +5746,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Elec',
 		type: 'ATTACK',
 		unique: false,
-		range: 0,
+		range: 'All',
 		cost: {
 			type: 'MP',
 			amount: 50
@@ -5766,7 +5766,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Elec',
 		type: 'ATTACK',
 		unique: false,
-		range: 0,
+		range: 'All',
 		cost: {
 			type: 'MP',
 			amount: 30
@@ -5786,7 +5786,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Recovery',
 		type: 'RECOVERY',
 		unique: false,
-		range: 0,
+		range: 'Party',
 		cost: 30,
 		ailments: [],
 		amount: 'Slight',
@@ -5798,7 +5798,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Recovery',
 		type: 'RECOVERY',
 		unique: false,
-		range: 0,
+		range: 'Party',
 		cost: 150,
 		ailments: [],
 		amount: 'Full',
@@ -5810,7 +5810,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Recovery',
 		type: 'RECOVERY',
 		unique: false,
-		range: 0,
+		range: 'Party',
 		cost: 60,
 		ailments: [],
 		amount: 'Moderate',
@@ -5822,7 +5822,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Almighty',
 		type: 'ATTACK',
 		unique: true,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'MP',
 			amount: 5
@@ -5844,7 +5844,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 0,
+		range: 'All',
 		cost: {
 			type: 'MP',
 			amount: 50
@@ -5866,7 +5866,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'HP',
 			amount: 16
@@ -5886,7 +5886,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Almighty',
 		type: 'ATTACK',
 		unique: false,
-		range: 0,
+		range: 'All',
 		cost: {
 			type: 'MP',
 			amount: 40
@@ -5906,7 +5906,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Fire',
 		type: 'ATTACK',
 		unique: true,
-		range: 0,
+		range: 'All',
 		cost: {
 			type: 'MP',
 			amount: 130
@@ -5928,7 +5928,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Almighty',
 		type: 'ATTACK',
 		unique: false,
-		range: 0,
+		range: 'All',
 		cost: {
 			type: 'MP',
 			amount: 70
@@ -5948,7 +5948,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Almighty',
 		type: 'ATTACK',
 		unique: false,
-		range: 0,
+		range: 'All',
 		cost: {
 			type: 'MP',
 			amount: 120
@@ -5968,7 +5968,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 0,
+		range: 'All',
 		cost: {
 			type: 'HP',
 			amount: 15
@@ -5993,7 +5993,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Recovery',
 		type: 'RECOVERY',
 		unique: false,
-		range: 0,
+		range: 'Party',
 		cost: 30,
 		ailments: [
 			'ALL'
@@ -6007,7 +6007,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'MP',
 			amount: 25
@@ -6029,7 +6029,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 0,
+		range: 'All',
 		cost: {
 			type: 'HP',
 			amount: 19
@@ -6054,7 +6054,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'HP',
 			amount: 8
@@ -6074,7 +6074,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: true,
-		range: 0,
+		range: 'All',
 		cost: {
 			type: 'HP',
 			amount: 16
@@ -6094,7 +6094,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Recovery',
 		type: 'RECOVERY',
 		unique: true,
-		range: 0,
+		range: 'Party',
 		cost: 20,
 		ailments: [],
 		amount: 'Slight',
@@ -6106,7 +6106,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Fire',
 		type: 'ATTACK',
 		unique: true,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'MP',
 			amount: 15
@@ -6131,7 +6131,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 2,
+		range: 'Random',
 		cost: {
 			type: 'MP',
 			amount: 35
@@ -6165,7 +6165,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Almighty',
 		type: 'ATTACK',
 		unique: true,
-		range: 0,
+		range: 'All',
 		cost: {
 			type: 'MP',
 			amount: 52
@@ -6185,7 +6185,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'MP',
 			amount: 30
@@ -6205,7 +6205,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Dark',
 		type: 'ATTACK',
 		unique: false,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'MP',
 			amount: 15
@@ -6227,7 +6227,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Dark',
 		type: 'ATTACK',
 		unique: false,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'MP',
 			amount: 55
@@ -6256,7 +6256,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Dark',
 		type: 'ATTACK',
 		unique: false,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'MP',
 			amount: 25
@@ -6278,7 +6278,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Almighty',
 		type: 'ATTACK',
 		unique: true,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'MP',
 			amount: 50
@@ -6308,7 +6308,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 0,
+		range: 'All',
 		cost: {
 			type: 'HP',
 			amount: 16
@@ -6333,7 +6333,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'MP',
 			amount: 55
@@ -6355,7 +6355,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Almighty',
 		type: 'ATTACK',
 		unique: true,
-		range: 0,
+		range: 'All',
 		cost: {
 			type: 'MP',
 			amount: 40
@@ -6375,7 +6375,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Elec',
 		type: 'ATTACK',
 		unique: false,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'MP',
 			amount: 65
@@ -6397,7 +6397,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 0,
+		range: 'All',
 		cost: {
 			type: 'HP',
 			amount: 18
@@ -6422,7 +6422,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'MP',
 			amount: 15
@@ -6442,7 +6442,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'HP',
 			amount: 12
@@ -6467,7 +6467,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Recovery',
 		type: 'RECOVERY',
 		unique: true,
-		range: 0,
+		range: 'Party',
 		cost: 24,
 		ailments: [],
 		amount: 'Half',
@@ -6483,7 +6483,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'MP',
 			amount: 36
@@ -6503,7 +6503,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Ailment',
 		type: 'AILMENT',
 		unique: false,
-		range: 0,
+		range: 'All',
 		cost: 12,
 		ailments: [
 			'Mirage'
@@ -6678,7 +6678,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Ailment',
 		type: 'AILMENT',
 		unique: false,
-		range: 1,
+		range: 'One',
 		cost: 5,
 		ailments: [
 			'Despair'
@@ -6691,7 +6691,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Gun',
 		type: 'ATTACK',
 		unique: false,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'HP',
 			amount: 17
@@ -6711,7 +6711,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 0,
+		range: 'All',
 		cost: {
 			type: 'HP',
 			amount: 16
@@ -6743,7 +6743,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Recovery',
 		type: 'RECOVERY',
 		unique: true,
-		range: 0,
+		range: 'Party',
 		cost: 38,
 		ailments: [],
 		amount: 'Full',
@@ -6757,7 +6757,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: true,
-		range: 0,
+		range: 'All',
 		cost: {
 			type: 'MP',
 			amount: 70
@@ -6779,7 +6779,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Wind',
 		type: 'ATTACK',
 		unique: false,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'MP',
 			amount: 42
@@ -6799,7 +6799,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: true,
-		range: 0,
+		range: 'All',
 		cost: {
 			type: 'MP',
 			amount: 65
@@ -6822,7 +6822,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Recovery',
 		type: 'RECOVERY',
 		unique: false,
-		range: 1,
+		range: 'Ally',
 		cost: 8,
 		ailments: [
 			'ALL'
@@ -6836,7 +6836,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: true,
-		range: 0,
+		range: 'All',
 		cost: {
 			type: 'MP',
 			amount: 50
@@ -6858,7 +6858,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Ailment',
 		type: 'AILMENT',
 		unique: true,
-		range: 0,
+		range: 'All',
 		cost: 4,
 		ailments: [
 			'Sleep'
@@ -6888,7 +6888,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'MP',
 			amount: 15
@@ -6910,7 +6910,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Ailment',
 		type: 'AILMENT',
 		unique: false,
-		range: 1,
+		range: 'One',
 		cost: 10,
 		ailments: [
 			'Poison'
@@ -6923,7 +6923,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Ailment',
 		type: 'AILMENT',
 		unique: false,
-		range: 0,
+		range: 'All',
 		cost: 12,
 		ailments: [
 			'Poison'
@@ -6952,7 +6952,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'HP',
 			amount: 9
@@ -6977,7 +6977,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Recovery',
 		type: 'RECOVERY',
 		unique: false,
-		range: 1,
+		range: 'Ally',
 		cost: 3,
 		ailments: [
 			'Poison'
@@ -6991,7 +6991,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'MP',
 			amount: 40
@@ -7013,7 +7013,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'HP',
 			amount: 10
@@ -7033,7 +7033,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Ailment',
 		type: 'AILMENT',
 		unique: true,
-		range: 0,
+		range: 'All',
 		cost: 35,
 		ailments: [
 			'Confuse',
@@ -7048,7 +7048,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'HP',
 			amount: 20
@@ -7068,7 +7068,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Dark',
 		type: 'ATTACK',
 		unique: true,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'MP',
 			amount: 35
@@ -7093,7 +7093,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Psy',
 		type: 'ATTACK',
 		unique: false,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'MP',
 			amount: 4
@@ -7113,7 +7113,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Psy',
 		type: 'ATTACK',
 		unique: false,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'MP',
 			amount: 8
@@ -7133,7 +7133,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Psy',
 		type: 'ATTACK',
 		unique: false,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'MP',
 			amount: 12
@@ -7179,7 +7179,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Psy',
 		type: 'ATTACK',
 		unique: false,
-		range: 0,
+		range: 'All',
 		cost: {
 			type: 'MP',
 			amount: 54
@@ -7199,7 +7199,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Psy',
 		type: 'ATTACK',
 		unique: false,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'MP',
 			amount: 48
@@ -7227,7 +7227,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Ailment',
 		type: 'AILMENT',
 		unique: false,
-		range: 1,
+		range: 'One',
 		cost: 10,
 		ailments: [
 			'Confuse'
@@ -7240,7 +7240,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'MP',
 			amount: 15
@@ -7262,7 +7262,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'MP',
 			amount: 25
@@ -7293,7 +7293,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Ice',
 		type: 'ATTACK',
 		unique: true,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'MP',
 			amount: 40
@@ -7313,7 +7313,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Fire',
 		type: 'ATTACK',
 		unique: true,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'MP',
 			amount: 40
@@ -7333,7 +7333,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Elec',
 		type: 'ATTACK',
 		unique: true,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'MP',
 			amount: 40
@@ -7353,7 +7353,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Force',
 		type: 'ATTACK',
 		unique: true,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'MP',
 			amount: 40
@@ -7373,7 +7373,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Fire',
 		type: 'ATTACK',
 		unique: false,
-		range: 2,
+		range: 'Random',
 		cost: {
 			type: 'MP',
 			amount: 60
@@ -7393,7 +7393,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'HP',
 			amount: 20
@@ -7415,7 +7415,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Support',
 		type: 'SUPPORT',
 		unique: false,
-		range: 1,
+		range: 'Ally',
 		cost: 8,
 		surround: false,
 		buffs: [
@@ -7430,7 +7430,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Support',
 		type: 'SUPPORT',
 		unique: false,
-		range: 1,
+		range: 'One',
 		cost: 8,
 		surround: false,
 		buffs: [],
@@ -7445,7 +7445,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 2,
+		range: 'Random',
 		cost: {
 			type: 'MP',
 			amount: 35
@@ -7475,7 +7475,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Almighty',
 		type: 'ATTACK',
 		unique: true,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'MP',
 			amount: 99
@@ -7505,7 +7505,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Recovery',
 		type: 'RECOVERY',
 		unique: false,
-		range: 1,
+		range: 'Ally',
 		cost: 20,
 		ailments: [],
 		amount: 'Half',
@@ -7519,7 +7519,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Support',
 		type: 'SUPPORT',
 		unique: true,
-		range: 1,
+		range: 'Ally',
 		cost: 8,
 		surround: false,
 		buffs: [
@@ -7574,7 +7574,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Recovery',
 		type: 'RECOVERY',
 		unique: false,
-		range: 1,
+		range: 'Ally',
 		cost: 5,
 		ailments: [
 			'Mirage'
@@ -7841,7 +7841,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Recovery',
 		type: 'RECOVERY',
 		unique: true,
-		range: 1,
+		range: 'Ally',
 		cost: 100,
 		ailments: [],
 		amount: 'Full',
@@ -7864,7 +7864,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Gun',
 		type: 'ATTACK',
 		unique: false,
-		range: 0,
+		range: 'All',
 		cost: {
 			type: 'HP',
 			amount: 24
@@ -7884,7 +7884,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'HP',
 			amount: 14
@@ -7906,7 +7906,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Elec',
 		type: 'ATTACK',
 		unique: true,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'MP',
 			amount: 20
@@ -7926,7 +7926,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Force',
 		type: 'ATTACK',
 		unique: true,
-		range: 0,
+		range: 'All',
 		cost: {
 			type: 'MP',
 			amount: 50
@@ -7957,7 +7957,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Almighty',
 		type: 'ATTACK',
 		unique: true,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'MP',
 			amount: 20
@@ -7977,7 +7977,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Recovery',
 		type: 'RECOVERY',
 		unique: false,
-		range: 0,
+		range: 'Party',
 		cost: 48,
 		ailments: [
 			'ALL'
@@ -7991,7 +7991,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Recovery',
 		type: 'RECOVERY',
 		unique: false,
-		range: 1,
+		range: 'Ally',
 		cost: 60,
 		ailments: [],
 		amount: 'Full',
@@ -8005,7 +8005,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Almighty',
 		type: 'ATTACK',
 		unique: true,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'MP',
 			amount: 15
@@ -8028,7 +8028,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 2,
+		range: 'Random',
 		cost: {
 			type: 'MP',
 			amount: 12
@@ -8048,7 +8048,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'MP',
 			amount: 25
@@ -8070,7 +8070,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Ailment',
 		type: 'AILMENT',
 		unique: false,
-		range: 0,
+		range: 'All',
 		cost: 25,
 		ailments: [
 			'Charm'
@@ -8091,7 +8091,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Support',
 		type: 'BARRIER',
 		unique: true,
-		range: 0,
+		range: 'Party',
 		cost: 160,
 		barriers: [
 			'Shield of Justice'
@@ -8102,7 +8102,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Light',
 		type: 'ATTACK',
 		unique: true,
-		range: 0,
+		range: 'All',
 		cost: {
 			type: 'MP',
 			amount: 22
@@ -8131,7 +8131,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Elec',
 		type: 'ATTACK',
 		unique: false,
-		range: 2,
+		range: 'Random',
 		cost: {
 			type: 'MP',
 			amount: 25
@@ -8151,7 +8151,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Almighty',
 		type: 'ATTACK',
 		unique: true,
-		range: 0,
+		range: 'All',
 		cost: {
 			type: 'MP',
 			amount: 45
@@ -8173,7 +8173,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'HP',
 			amount: 5
@@ -8193,7 +8193,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'HP',
 			amount: 10
@@ -8218,7 +8218,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'HP',
 			amount: 10
@@ -8252,7 +8252,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Ailment',
 		type: 'AILMENT',
 		unique: false,
-		range: 0,
+		range: 'All',
 		cost: 35,
 		ailments: [
 			'Sleep',
@@ -8266,7 +8266,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Gun',
 		type: 'ATTACK',
 		unique: false,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'HP',
 			amount: 9
@@ -8286,7 +8286,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: true,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'MP',
 			amount: 35
@@ -8308,7 +8308,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'HP',
 			amount: 8
@@ -8328,7 +8328,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Elec',
 		type: 'ATTACK',
 		unique: true,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'MP',
 			amount: 55
@@ -8348,7 +8348,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Ailment',
 		type: 'AILMENT',
 		unique: false,
-		range: 1,
+		range: 'One',
 		cost: 5,
 		ailments: [
 			'Exhaustion'
@@ -8372,7 +8372,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Almighty',
 		type: 'ATTACK',
 		unique: true,
-		range: 0,
+		range: 'All',
 		cost: {
 			type: 'MP',
 			amount: 50
@@ -8411,7 +8411,7 @@ const skills: AnySkillData[] = [
 		type: 'AUTOBUFF',
 		unique: false,
 		buff: 'Accuracy/Evasion',
-		range: 1
+		range: 'Ally'
 	},
 	{
 		name: 'Spell Master',
@@ -8425,7 +8425,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Almighty',
 		type: 'ATTACK',
 		unique: false,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'MP',
 			amount: 5
@@ -8447,7 +8447,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Ailment',
 		type: 'AILMENT',
 		unique: true,
-		range: 0,
+		range: 'All',
 		cost: 50,
 		ailments: [
 			'Mirage'
@@ -8463,7 +8463,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Almighty',
 		type: 'SUSCEPTIBILITY',
 		unique: false,
-		range: 0,
+		range: 'All',
 		cost: 5
 	},
 	{
@@ -8478,7 +8478,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'MP',
 			amount: 25
@@ -8498,7 +8498,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Ice',
 		type: 'ATTACK',
 		unique: true,
-		range: 2,
+		range: 'Random',
 		cost: {
 			type: 'MP',
 			amount: 18
@@ -8518,7 +8518,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Elec',
 		type: 'ATTACK',
 		unique: false,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'MP',
 			amount: 25
@@ -8566,7 +8566,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Support',
 		type: 'SUPPORT',
 		unique: false,
-		range: 1,
+		range: 'Ally',
 		cost: 8,
 		surround: false,
 		buffs: [
@@ -8581,7 +8581,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Support',
 		type: 'SUPPORT',
 		unique: false,
-		range: 1,
+		range: 'One',
 		cost: 8,
 		surround: false,
 		buffs: [],
@@ -8596,7 +8596,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Recovery',
 		type: 'RECOVERY',
 		unique: true,
-		range: 1,
+		range: 'Ally',
 		cost: 12,
 		ailments: [
 			'ALL'
@@ -8625,7 +8625,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 0,
+		range: 'All',
 		cost: {
 			type: 'HP',
 			amount: 17
@@ -8645,7 +8645,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'HP',
 			amount: 25
@@ -8665,7 +8665,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Almighty',
 		type: 'ATTACK',
 		unique: true,
-		range: 0,
+		range: 'All',
 		cost: {
 			type: 'MP',
 			amount: 160
@@ -8687,7 +8687,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Support',
 		type: 'SUPPORT',
 		unique: false,
-		range: 1,
+		range: 'Ally',
 		cost: 8,
 		surround: false,
 		buffs: [
@@ -8702,7 +8702,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Support',
 		type: 'SUPPORT',
 		unique: false,
-		range: 1,
+		range: 'One',
 		cost: 8,
 		surround: false,
 		buffs: [],
@@ -8725,7 +8725,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Ailment',
 		type: 'AILMENT',
 		unique: false,
-		range: 1,
+		range: 'One',
 		cost: 5,
 		ailments: [
 			'Rage'
@@ -8746,7 +8746,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'HP',
 			amount: 17
@@ -8766,7 +8766,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Ailment',
 		type: 'AILMENT',
 		unique: false,
-		range: 0,
+		range: 'All',
 		cost: 25,
 		ailments: [
 			'Confuse'
@@ -8779,7 +8779,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: true,
-		range: 2,
+		range: 'Random',
 		cost: {
 			type: 'MP',
 			amount: 35
@@ -8806,7 +8806,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'HP',
 			amount: 8
@@ -8839,7 +8839,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Support',
 		type: 'BARRIER',
 		unique: false,
-		range: 1,
+		range: 'Ally',
 		cost: 24,
 		barriers: [
 			'Tetraja'
@@ -8850,7 +8850,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Support',
 		type: 'BARRIER',
 		unique: false,
-		range: 1,
+		range: 'Ally',
 		cost: 50,
 		barriers: [
 			'Tetrakarn'
@@ -8861,7 +8861,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Ice',
 		type: 'ATTACK',
 		unique: true,
-		range: 2,
+		range: 'Random',
 		cost: {
 			type: 'MP',
 			amount: 45
@@ -8889,7 +8889,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Support',
 		type: 'SUPPORT',
 		unique: false,
-		range: 0,
+		range: 'Party',
 		cost: 30,
 		surround: true,
 		buffs: [
@@ -8913,7 +8913,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Elec',
 		type: 'ATTACK',
 		unique: false,
-		range: 2,
+		range: 'Random',
 		cost: {
 			type: 'MP',
 			amount: 60
@@ -8933,7 +8933,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 0,
+		range: 'All',
 		cost: {
 			type: 'MP',
 			amount: 60
@@ -8953,7 +8953,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Fire',
 		type: 'ATTACK',
 		unique: true,
-		range: 0,
+		range: 'All',
 		cost: {
 			type: 'MP',
 			amount: 34
@@ -8978,7 +8978,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'HP',
 			amount: 12
@@ -9006,7 +9006,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Dark',
 		type: 'ATTACK',
 		unique: true,
-		range: 0,
+		range: 'All',
 		cost: {
 			type: 'MP',
 			amount: 30
@@ -9031,7 +9031,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Ailment',
 		type: 'AILMENT',
 		unique: false,
-		range: 0,
+		range: 'All',
 		cost: 25,
 		ailments: [
 			'Poison'
@@ -9044,7 +9044,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Ailment',
 		type: 'AILMENT',
 		unique: false,
-		range: 0,
+		range: 'All',
 		cost: 15,
 		ailments: [
 			'Poison'
@@ -9059,7 +9059,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'MP',
 			amount: 10
@@ -9122,7 +9122,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Gun',
 		type: 'ATTACK',
 		unique: false,
-		range: 0,
+		range: 'All',
 		cost: {
 			type: 'HP',
 			amount: 16
@@ -9142,7 +9142,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Fire',
 		type: 'ATTACK',
 		unique: false,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'MP',
 			amount: 65
@@ -9188,7 +9188,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Wind',
 		type: 'ATTACK',
 		unique: false,
-		range: 0,
+		range: 'All',
 		cost: {
 			type: 'MP',
 			amount: 48
@@ -9208,7 +9208,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 0,
+		range: 'All',
 		cost: {
 			type: 'HP',
 			amount: 13
@@ -9228,7 +9228,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Support',
 		type: 'SUPPORT',
 		unique: false,
-		range: 0,
+		range: 'Party',
 		cost: 20,
 		surround: false,
 		buffs: [
@@ -9246,7 +9246,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'MP',
 			amount: 15
@@ -9268,7 +9268,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 0,
+		range: 'All',
 		cost: {
 			type: 'HP',
 			amount: 18
@@ -9304,7 +9304,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'HP',
 			amount: 18
@@ -9326,7 +9326,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Almighty',
 		type: 'ATTACK',
 		unique: true,
-		range: 0,
+		range: 'All',
 		cost: {
 			type: 'MP',
 			amount: 60
@@ -9351,7 +9351,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 0,
+		range: 'All',
 		cost: {
 			type: 'HP',
 			amount: 16
@@ -9376,7 +9376,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 0,
+		range: 'All',
 		cost: {
 			type: 'HP',
 			amount: 23
@@ -9396,7 +9396,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Ailment',
 		type: 'AILMENT',
 		unique: false,
-		range: 0,
+		range: 'All',
 		cost: 12,
 		ailments: [
 			'Rage'
@@ -9409,7 +9409,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Dark',
 		type: 'ATTACK',
 		unique: true,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'MP',
 			amount: 40
@@ -9438,7 +9438,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Light',
 		type: 'ATTACK',
 		unique: false,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'MP',
 			amount: 30
@@ -9486,7 +9486,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Force',
 		type: 'ATTACK',
 		unique: false,
-		range: 2,
+		range: 'Random',
 		cost: {
 			type: 'MP',
 			amount: 25
@@ -9506,7 +9506,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Force',
 		type: 'ATTACK',
 		unique: false,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'MP',
 			amount: 25
@@ -9542,7 +9542,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: true,
-		range: 2,
+		range: 'Random',
 		cost: {
 			type: 'MP',
 			amount: 35
@@ -9564,7 +9564,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 0,
+		range: 'All',
 		cost: {
 			type: 'MP',
 			amount: 50
@@ -9586,7 +9586,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Recovery',
 		type: 'RECOVERY',
 		unique: true,
-		range: 0,
+		range: 'Party',
 		cost: 25,
 		ailments: [],
 		amount: 'Moderate',
@@ -9600,7 +9600,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Force',
 		type: 'ATTACK',
 		unique: false,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'MP',
 			amount: 10
@@ -9620,7 +9620,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Force',
 		type: 'ATTACK',
 		unique: false,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'MP',
 			amount: 50
@@ -9640,7 +9640,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Force',
 		type: 'ATTACK',
 		unique: false,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'MP',
 			amount: 35
@@ -9660,7 +9660,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Force',
 		type: 'ATTACK',
 		unique: false,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'MP',
 			amount: 20
@@ -9680,7 +9680,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Elec',
 		type: 'ATTACK',
 		unique: false,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'MP',
 			amount: 10
@@ -9700,7 +9700,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Elec',
 		type: 'ATTACK',
 		unique: false,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'MP',
 			amount: 50
@@ -9720,7 +9720,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Elec',
 		type: 'ATTACK',
 		unique: false,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'MP',
 			amount: 35
@@ -9740,7 +9740,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Elec',
 		type: 'ATTACK',
 		unique: false,
-		range: 1,
+		range: 'One',
 		cost: {
 			type: 'MP',
 			amount: 20

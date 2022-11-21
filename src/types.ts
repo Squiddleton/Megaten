@@ -36,8 +36,8 @@ export type Race = 'Amatsu' | 'Avatar' | 'Avian' | 'Beast' | 'Brute' | 'Deity' |
 | 'Femme' | 'Fiend' | 'Foul' | 'Fury' | 'Genma' | 'Godly' | 'Haunt' | 'Herald' | 'Holy' | 'Jaki' | 'Jirae' | 'Kishin' | 'Kunitsu' | 'Lady'
 | 'Megami' | 'Mitama' | 'Night' | 'Nymph' | 'Persona' | 'Picaro' | 'Raptor' | 'Snake' | 'Treasure' | 'Tyrant' | 'Vile' | 'Wargod' | 'Wilder' | 'Yoma' | null;
 
-export type Range = 0 | 1;
-export type ChargeRange = 'Self' | 'Ally' | 'Party';
+export type AllyRange = 'Ally' | 'Party';
+export type EnemyRange = 'One' | 'All';
 
 export type RecoveryAmount = 'Slight' | 'Moderate' | 'Half' | 'Full' | '130%' | null;
 

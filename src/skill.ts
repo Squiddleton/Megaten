@@ -3,7 +3,7 @@ import { normalize } from '@squiddleton/util';
 import type { AilBoostSkillData, AilDefensiveSkillData, AilmentSkillData, AttackSkillData, AutoBuffSkillData, BarrierBreakSkillData, BarrierSkillData, BlockSkillData, BoostSkillData, BreakSkillData, ChargeSkillData, CritBoostSkillData, CritSkillData, DefensiveSkillData, EndureSkillData, EvasionSkillData, HalveSkillData, InstaKillBoostSkillData, MasterSkillData, MiscSkillData, NaviSkillData, PersonaCounterSkillData, PostBattleSkillData, RecoverySkillData, RegenSkillData, SMTCounterSkillData, SiphonSkillData, SkillData, SpringSkillData, SupportSkillData, SusceptibilitySkillData, TauntSkillData, WallSkillData } from './dataTypes';
 import MegatenError from './error';
 import skillData from './skillData';
-import type { AilResistance, Ailment, AnyAffinity, AttackDisplay, Barrier, Buff, Charge, ChargeRange, CounterAffinity, CounterDisplay, DamagingAffinity, HPMP, HPMPAil, LightDark, PersonaAffinity, PostBattleStat, Range, RecoveryAmount, Resistance, RestoreCriteria, Series, SkillType } from './types';
+import type { AilResistance, Ailment, AllyRange, AnyAffinity, AttackDisplay, Barrier, Buff, Charge, CounterAffinity, CounterDisplay, DamagingAffinity, EnemyRange, HPMP, HPMPAil, LightDark, PersonaAffinity, PostBattleStat, RecoveryAmount, Resistance, RestoreCriteria, Series, SkillType } from './types';
 
 export abstract class Skill implements SkillData {
 	name: string;
@@ -75,7 +75,7 @@ export class AilDefensiveSkill extends Skill implements AilDefensiveSkillData {
 export class AilmentSkill extends Skill implements AilmentSkillData {
 	affinity: 'Ailment';
 	type: 'AILMENT';
-	range: Range;
+	range: EnemyRange;
 	cost: number;
 	ailments: Ailment[];
 	chance: number;
@@ -98,7 +98,7 @@ export class AilmentSkill extends Skill implements AilmentSkillData {
 export class AttackSkill extends Skill implements AttackSkillData {
 	affinity: DamagingAffinity;
 	type: 'ATTACK';
-	range: Range | 2;
+	range: EnemyRange | 'Random';
 	cost: {
 		type: HPMP;
 		amount: number;
@@ -130,7 +130,11 @@ export class AttackSkill extends Skill implements AttackSkillData {
 	}
 	get description() {
 		const { ailments, flags } = this;
-		const range = ['all foes', '1 foe', 'random foes'][this.range];
+		const range = {
+			One: '1 foe',
+			All: 'all foes',
+			Random: 'random foes'
+		}[this.range];
 		const displayAffinity = `${this.power.display} ${this.affinity}`;
 
 		let description = `${displayAffinity} damage to ${range}.`;
@@ -229,7 +233,7 @@ export class AutoBuffSkill extends Skill implements AutoBuffSkillData {
 	affinity: 'Passive';
 	type: 'AUTOBUFF';
 	buff: Exclude<Buff, 'Double Accuracy/Evasion' | 'Double Defense'>;
-	range: Range;
+	range: AllyRange;
 	constructor(data: AutoBuffSkillData) {
 		super(data);
 		this.affinity = data.affinity;
@@ -239,7 +243,7 @@ export class AutoBuffSkill extends Skill implements AutoBuffSkillData {
 	}
 	get description() {
 		let buffSkillName = { Attack: 'Tarukaja', Defense: 'Rakukaja', 'Accuracy/Evasion' : 'Sukukaja' }[this.buff];
-		const isParty = this.range === 0;
+		const isParty = this.range === 'Party';
 		if (isParty) {
 			buffSkillName = buffSkillName.toLowerCase();
 		}
@@ -250,7 +254,7 @@ export class AutoBuffSkill extends Skill implements AutoBuffSkillData {
 export class BarrierSkill extends Skill implements BarrierSkillData {
 	affinity: 'Support';
 	type: 'BARRIER';
-	range: Range;
+	range: AllyRange;
 	cost: number;
 	barriers: Barrier[];
 	constructor(data: BarrierSkillData) {
@@ -347,7 +351,7 @@ export class BreakSkill extends Skill implements BreakSkillData {
 export class ChargeSkill extends Skill implements ChargeSkillData {
 	affinity: 'Support';
 	type: 'CHARGE';
-	range: ChargeRange;
+	range: AllyRange | 'Self';
 	cost: number;
 	charge: Charge;
 	constructor(data: ChargeSkillData) {
@@ -609,7 +613,7 @@ export class PostBattleSkill extends Skill implements PostBattleSkillData {
 export class RecoverySkill extends Skill implements RecoverySkillData {
 	affinity: 'Recovery';
 	type: 'RECOVERY';
-	range: Range;
+	range: AllyRange;
 	cost: number;
 	amount: RecoveryAmount;
 	ailments: (Ailment | 'ALL')[];
@@ -627,21 +631,22 @@ export class RecoverySkill extends Skill implements RecoverySkillData {
 		this.flags = data.flags;
 	}
 	get description() {
+		const isParty = this.range === 'Party';
 		if (this.ailments.length > 0) {
 			if (this.ailments.includes('ALL')) {
-				if (this.amount === null) return `Cure status ailments on ${this.range === 0 ? 'all allies' : '1 ally'}.`;
-				return `${this.amount} HP recovery and cures status ailments${this.flags.includes('Revert Debuffs') ? '/debuffs' : ''} for ${this.range === 0 ? 'all allies' : '1 ally'}.`;
+				if (this.amount === null) return `Cure status ailments on ${isParty ? 'all allies' : '1 ally'}.`;
+				return `${this.amount} HP recovery and cures status ailments${this.flags.includes('Revert Debuffs') ? '/debuffs' : ''} for ${isParty ? 'all allies' : '1 ally'}.`;
 			}
-			return `Cures ${this.ailments.join('/')} for ${this.range === 0 ? 'all allies' : 'one ally'}.`;
+			return `Cures ${this.ailments.join('/')} for ${isParty ? 'all allies' : 'one ally'}.`;
 		}
 		else if (this.flags.includes('Revive') && this.amount !== null) {
 			if (this.flags.includes('Summon')) return 'Summons 1 demon at full HP. Effective on dead members as well.';
-			return `Revive ${this.range === 0 ? 'all allies' : 'one ally'} with ${this.amount.toLowerCase()} HP.`;
+			return `Revive ${isParty ? 'all allies' : 'one ally'} with ${this.amount.toLowerCase()} HP.`;
 		}
 		else if (this.amount === '130%') {
 			return 'Full HP recovery to all allies and heals above MAX HP.';
 		}
-		return `${this.amount} HP recovery to ${this.range === 0 ? 'all allies' : '1 ally'}${this.buffs.length > 0 ? ` and raises ${this.buffs.length === 3 ? 'all stats' : this.buffs.join('/')} by ${this.buffs[0].includes('Double') ? '2 ranks' : '1 rank'} for 3 turns` : ''}.`;
+		return `${this.amount} HP recovery to $isParty ? 'all allies' : '1 ally'}${this.buffs.length > 0 ? ` and raises ${this.buffs.length === 3 ? 'all stats' : this.buffs.join('/')} by ${this.buffs[0].includes('Double') ? '2 ranks' : '1 rank'} for 3 turns` : ''}.`;
 	}
 }
 
@@ -745,7 +750,7 @@ export class SpringSkill extends Skill implements SpringSkillData {
 export class SupportSkill extends Skill implements SupportSkillData {
 	affinity: 'Support';
 	type: 'SUPPORT';
-	range: Range;
+	range: AllyRange | EnemyRange;
 	cost: number;
 	buffs: Buff[];
 	debuffs: Buff[];
@@ -770,8 +775,8 @@ export class SupportSkill extends Skill implements SupportSkillData {
 				const isDekaja = this.buffs.length > 0;
 				return `Negates status ${isDekaja ? '' : 'de'}buff effects on all ${isDekaja ? 'foes' : 'allies'}.`;
 			}
-			if (this.buffs.length > 0) return `Raises ${this.buffs.length === 3 ? 'all stats' : this.buffs.join('/')} of ${this.range === 0 ? 'all allies' : '1 ally'} by ${this.buffs[0].includes('Double') ? '2 ranks' : '1 rank'} for 3 turns${this.surround ? ' when surrounded' : ''}.`;
-			else if (this.debuffs.length > 0) return `Lowers ${this.debuffs.length === 3 ? 'all stats' : this.debuffs.join('/')} of ${this.range === 0 ? 'all foes' : '1 foe'} by ${this.debuffs[0].includes('Double') ? '2 ranks' : '1 rank'} for 3 turns.`;
+			if (this.buffs.length > 0) return `Raises ${this.buffs.length === 3 ? 'all stats' : this.buffs.join('/')} of ${this.range === 'Party' ? 'all allies' : '1 ally'} by ${this.buffs[0].includes('Double') ? '2 ranks' : '1 rank'} for 3 turns${this.surround ? ' when surrounded' : ''}.`;
+			else if (this.debuffs.length > 0) return `Lowers ${this.debuffs.length === 3 ? 'all stats' : this.debuffs.join('/')} of ${this.range === 'Party' ? 'all foes' : '1 foe'} by ${this.debuffs[0].includes('Double') ? '2 ranks' : '1 rank'} for 3 turns.`;
 			else throw new Error(`A SUPPORT skill does not fall into a category for description: ${JSON.stringify(this, null, 2)}`);
 		}
 	}
@@ -780,7 +785,7 @@ export class SupportSkill extends Skill implements SupportSkillData {
 export class SusceptibilitySkill extends Skill implements SusceptibilitySkillData {
 	affinity: 'Almighty';
 	type: 'SUSCEPTIBILITY';
-	range: Range;
+	range: 'Foe' | 'All';
 	cost: number;
 	constructor(data: SusceptibilitySkillData) {
 		super(data);
@@ -790,7 +795,7 @@ export class SusceptibilitySkill extends Skill implements SusceptibilitySkillDat
 		this.cost = data.cost;
 	}
 	get description() {
-		return `Increases chance of inflicting ailments to ${this.range === 0 ? 'all' : 'one foe'}.`;
+		return `Increases chance of inflicting ailments to ${this.range === 'All' ? 'all' : 'one foe'}.`;
 	}
 }
 

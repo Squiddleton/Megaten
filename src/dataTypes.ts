@@ -1,4 +1,4 @@
-import type { AilResistance, Ailment, AnyAffinity, Arcana, AttackDisplay, Barrier, Buff, Charge, ChargeRange, CounterAffinity, CounterDisplay, DamagingAffinity, Game, HPMP, HPMPAil, LightDark, PersonaAffinity, PostBattleStat, Race, Range, RecoveryAmount, Resistance, RestoreCriteria, Series, SkillType, Stage } from './types';
+import type { AilResistance, Ailment, AllyRange, AnyAffinity, Arcana, AttackDisplay, Barrier, Buff, Charge, CounterAffinity, CounterDisplay, DamagingAffinity, EnemyRange, Game, HPMP, HPMPAil, LightDark, PersonaAffinity, PostBattleStat, Race, RecoveryAmount, Resistance, RestoreCriteria, Series, SkillType, Stage } from './types';
 
 export interface DemonData {
 	name: string;
@@ -57,7 +57,7 @@ export interface AilDefensiveSkillData extends SkillData {
 export interface AilmentSkillData extends SkillData {
 	affinity: 'Ailment';
 	type: 'AILMENT';
-	range: Range;
+	range: EnemyRange;
 	cost: number;
 	ailments: Ailment[];
 	chance: number;
@@ -67,7 +67,7 @@ export interface AilmentSkillData extends SkillData {
 export interface AttackSkillData extends SkillData {
 	affinity: DamagingAffinity;
 	type: 'ATTACK';
-	range: Range | 2;
+	range: EnemyRange | 'Random';
 	cost: {
 		type: HPMP;
 		amount: number;
@@ -90,13 +90,13 @@ export interface AutoBuffSkillData extends SkillData {
 	affinity: 'Passive';
 	type: 'AUTOBUFF';
 	buff: Exclude<Buff, 'Double Accuracy/Evasion' | 'Double Defense'>;
-	range: Range;
+	range: AllyRange;
 }
 
 export interface BarrierSkillData extends SkillData {
 	affinity: 'Support';
 	type: 'BARRIER';
-	range: Range;
+	range: AllyRange;
 	cost: number;
 	barriers: Barrier[];
 }
@@ -133,7 +133,7 @@ export interface BreakSkillData extends SkillData {
 export interface ChargeSkillData extends SkillData {
 	affinity: 'Support';
 	type: 'CHARGE';
-	range: ChargeRange;
+	range: AllyRange | 'Self';
 	cost: number;
 	charge: Charge;
 }
@@ -222,7 +222,7 @@ export interface PostBattleSkillData extends SkillData {
 export interface RecoverySkillData extends SkillData {
 	affinity: 'Recovery';
 	type: 'RECOVERY';
-	range: Range;
+	range: AllyRange;
 	cost: number;
 	amount: RecoveryAmount;
 	ailments: (Ailment | 'ALL')[];
@@ -269,7 +269,7 @@ export interface SpringSkillData extends SkillData {
 export interface SupportSkillData extends SkillData {
 	affinity: 'Support';
 	type: 'SUPPORT';
-	range: Range;
+	range: AllyRange | EnemyRange;
 	cost: number;
 	buffs: Buff[];
 	debuffs: Buff[];
@@ -281,7 +281,7 @@ export interface SupportSkillData extends SkillData {
 export interface SusceptibilitySkillData extends SkillData {
 	affinity: 'Almighty';
 	type: 'SUSCEPTIBILITY';
-	range: Range;
+	range: 'Foe' | 'All';
 	cost: number;
 }
 
