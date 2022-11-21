@@ -1,9 +1,9 @@
 import { readFileSync } from 'node:fs';
 import { Collection } from '@discordjs/collection';
 import { formatPossessive, normalize } from '@squiddleton/util';
-import demonData from './demonList';
+import type { DemonData, PersonaData } from './dataTypes';
+import demonData from './demonData';
 import MegatenError from './error';
-import type { DemonData, PersonaData } from './listTypes';
 import type { Arcana, Element, Game, Inherit, Race, Stage } from './types';
 
 function isPersona(demon: Demon): demon is Persona;

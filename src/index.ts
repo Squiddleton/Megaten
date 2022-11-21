@@ -1,5 +1,5 @@
 export * from './demons';
 export { default as MegatenError } from './error';
-export * from './listTypes';
+export * from './dataTypes';
 export * from './skills';
 export * from './types';
