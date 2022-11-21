@@ -63,7 +63,7 @@ Demon {
   mp: 153,
   st: 14,
   ma: 29,
-  en: 15,
+  vi: 15,
   ag: 21,
   lu: 21,
   learnset: [
