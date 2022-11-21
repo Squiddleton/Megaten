@@ -58,7 +58,7 @@ const skills: AnySkillData[] = [
 		type: 'MISC',
 		unique: false,
 		cost: null,
-		effect: 'Greatly decreases chance of instakill and being afflicted with ailments.'
+		description: 'Greatly decreases chance of instakill and being afflicted with ailments.'
 	},
 	{
 		name: 'Abyssal Wings',
@@ -293,7 +293,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Passive',
 		type: 'NAVI',
 		unique: false,
-		effect: 'Confirm affinities of enemies you have previously attacked.'
+		description: 'Confirm affinities of enemies you have previously attacked.'
 	},
 	{
 		name: 'Andalucia',
@@ -616,7 +616,7 @@ const skills: AnySkillData[] = [
 		type: 'MISC',
 		unique: false,
 		cost: null,
-		effect: 'Increases Accuracy.'
+		description: 'Increases Accuracy.'
 	},
 	{
 		name: 'Beast Weaver',
@@ -875,7 +875,7 @@ const skills: AnySkillData[] = [
 		type: 'MISC',
 		unique: false,
 		cost: null,
-		effect: 'Increases Critical Rate.'
+		description: 'Increases Critical Rate.'
 	},
 	{
 		name: 'Boon Boost',
@@ -883,7 +883,7 @@ const skills: AnySkillData[] = [
 		type: 'MISC',
 		unique: false,
 		cost: null,
-		effect: 'Your -kaja/-nda skills last 1 extra turn.'
+		description: 'Your -kaja/-nda skills last 1 extra turn.'
 	},
 	{
 		name: 'Boon Boost EX',
@@ -891,7 +891,7 @@ const skills: AnySkillData[] = [
 		type: 'MISC',
 		unique: false,
 		cost: null,
-		effect: 'Your -kaja/-nda skills last 2 extra turns.'
+		description: 'Your -kaja/-nda skills last 2 extra turns.'
 	},
 	{
 		name: 'Bouncing Claw',
@@ -1175,7 +1175,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Passive',
 		type: 'NAVI',
 		unique: false,
-		effect: 'Escape random battles successfully.'
+		description: 'Escape random battles successfully.'
 	},
 	{
 		name: 'Champion"s Cup',
@@ -1197,7 +1197,7 @@ const skills: AnySkillData[] = [
 		type: 'MISC',
 		unique: true,
 		cost: 150,
-		effect: 'Chance of instakill to all foes. Foe\'s Press Turn Icons will be halved next turn.'
+		description: 'Chance of instakill to all foes. Foe\'s Press Turn Icons will be halved next turn.'
 	},
 	{
 		name: 'Charge',
@@ -1259,7 +1259,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Passive',
 		type: 'NAVI',
 		unique: false,
-		effect: 'Reveals all elemental affinities on all enemies.'
+		description: 'Reveals all elemental affinities on all enemies.'
 	},
 	{
 		name: 'Concentrate',
@@ -1430,7 +1430,7 @@ const skills: AnySkillData[] = [
 		type: 'MISC',
 		unique: false,
 		cost: null,
-		effect: 'Increases Critical damage, but normal damage decreases.'
+		description: 'Increases Critical damage, but normal damage decreases.'
 	},
 	{
 		name: 'Cross Slash',
@@ -1906,7 +1906,7 @@ const skills: AnySkillData[] = [
 		type: 'MISC',
 		unique: false,
 		cost: null,
-		effect: 'Increases the effect of healing skills by 50%.'
+		description: 'Increases the effect of healing skills by 50%.'
 	},
 	{
 		name: 'Divine Judgement',
@@ -2156,7 +2156,7 @@ const skills: AnySkillData[] = [
 		type: 'MISC',
 		unique: false,
 		cost: null,
-		effect: 'Greatly increases Accuracy.'
+		description: 'Greatly increases Accuracy.'
 	},
 	{
 		name: 'Drain Dark',
@@ -2404,7 +2404,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Passive',
 		type: 'NAVI',
 		unique: false,
-		effect: 'Reveal the location of Shadows on each floor over a wide area.'
+		description: 'Reveal the location of Shadows on each floor over a wide area.'
 	},
 	{
 		name: 'Energy Drain',
@@ -2469,7 +2469,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Passive',
 		type: 'NAVI',
 		unique: false,
-		effect: 'Return to the entrance of Tartarus or the Desert of Doors.'
+		description: 'Return to the entrance of Tartarus or the Desert of Doors.'
 	},
 	{
 		name: 'Estoma',
@@ -2477,7 +2477,7 @@ const skills: AnySkillData[] = [
 		type: 'MISC',
 		unique: false,
 		cost: 35,
-		effect: 'Prevents any enemy encounters until next New Moon.'
+		description: 'Prevents any enemy encounters until next New Moon.'
 	},
 	{
 		name: 'Eternal Blizzard',
@@ -2613,7 +2613,7 @@ const skills: AnySkillData[] = [
 		type: 'MISC',
 		unique: true,
 		cost: 100,
-		effect: 'Chance of instakill to 1 foe.'
+		description: 'Chance of instakill to 1 foe.'
 	},
 	{
 		name: 'Evil Smile',
@@ -2901,7 +2901,7 @@ const skills: AnySkillData[] = [
 		type: 'MISC',
 		unique: false,
 		cost: null,
-		effect: 'Take the blow, but decreases damage by half.'
+		description: 'Take the blow, but decreases damage by half.'
 	},
 	{
 		name: 'Flash Bomb',
@@ -3154,7 +3154,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Passive',
 		type: 'NAVI',
 		unique: false,
-		effect: 'Reveal an enemy\'s stats, weak points, and skills.'
+		description: 'Reveal an enemy\'s stats, weak points, and skills.'
 	},
 	{
 		name: 'Gaea Rage',
@@ -3321,7 +3321,7 @@ const skills: AnySkillData[] = [
 		type: 'MISC',
 		unique: false,
 		cost: 28,
-		effect: 'Insta-kills foes inflicted with Fear.'
+		description: 'Insta-kills foes inflicted with Fear.'
 	},
 	{
 		name: 'Giant Slice',
@@ -3756,7 +3756,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Passive',
 		type: 'NAVI',
 		unique: false,
-		effect: 'Recover 5% HP after battle (party).'
+		description: 'Recover 5% HP after battle (party).'
 	},
 	{
 		name: 'Heal Pleroma',
@@ -3920,7 +3920,7 @@ const skills: AnySkillData[] = [
 		type: 'MISC',
 		unique: false,
 		cost: null,
-		effect: 'Decreases chance of instakill and being afflicted with ailments.'
+		description: 'Decreases chance of instakill and being afflicted with ailments.'
 	},
 	{
 		name: 'Hellish Slash',
@@ -4309,7 +4309,7 @@ const skills: AnySkillData[] = [
 		type: 'MISC',
 		unique: false,
 		cost: null,
-		effect: '(Demon) EXP earned increases when the demon\'s Lv is lower than the Nahobino.'
+		description: '(Demon) EXP earned increases when the demon\'s Lv is lower than the Nahobino.'
 	},
 	{
 		name: 'Insta-Heal',
@@ -4408,7 +4408,7 @@ const skills: AnySkillData[] = [
 		type: 'MISC',
 		unique: true,
 		cost: 25,
-		effect: 'Anything could happen...'
+		description: 'Anything could happen...'
 	},
 	{
 		name: 'Kannabi Veil',
@@ -6284,7 +6284,7 @@ const skills: AnySkillData[] = [
 		type: 'MISC',
 		unique: false,
 		cost: null,
-		effect: 'Greatly increases Critical Rate.'
+		description: 'Greatly increases Critical Rate.'
 	},
 	{
 		name: 'Mustard Bomb',
@@ -6719,7 +6719,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Passive',
 		type: 'NAVI',
 		unique: false,
-		effect: 'Ask Fuuka to use Oracle.'
+		description: 'Ask Fuuka to use Oracle.'
 	},
 	{
 		name: 'Oratorio',
@@ -6920,7 +6920,7 @@ const skills: AnySkillData[] = [
 		type: 'MISC',
 		unique: false,
 		cost: null,
-		effect: 'Increases effects of Poison.'
+		description: 'Increases effects of Poison.'
 	},
 	{
 		name: 'Poison Master',
@@ -6928,7 +6928,7 @@ const skills: AnySkillData[] = [
 		type: 'MISC',
 		unique: false,
 		cost: null,
-		effect: 'Greatly increases effects of Poison.'
+		description: 'Greatly increases effects of Poison.'
 	},
 	{
 		name: 'Poison Skewer',
@@ -7481,7 +7481,7 @@ const skills: AnySkillData[] = [
 		type: 'MISC',
 		unique: false,
 		cost: null,
-		effect: 'Showtime guage increases more quickly.'
+		description: 'Showtime guage increases more quickly.'
 	},
 	{
 		name: 'Recarm',
@@ -7550,7 +7550,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Passive',
 		type: 'NAVI',
 		unique: false,
-		effect: 'Recover 5% SP after battle (party).'
+		description: 'Recover 5% SP after battle (party).'
 	},
 	{
 		name: 'Re Patra',
@@ -7933,7 +7933,7 @@ const skills: AnySkillData[] = [
 		type: 'MISC',
 		unique: false,
 		cost: null,
-		effect: 'Being Evaded/Nulled/Drained/Repelled doesn\'t consume additional Press Turn Icons.'
+		description: 'Being Evaded/Nulled/Drained/Repelled doesn\'t consume additional Press Turn Icons.'
 	},
 	{
 		name: 'Sakanagi',
@@ -8067,7 +8067,7 @@ const skills: AnySkillData[] = [
 		type: 'MISC',
 		unique: false,
 		cost: null,
-		effect: 'Decreases chance of being hit by a Critical.'
+		description: 'Decreases chance of being hit by a Critical.'
 	},
 	{
 		name: 'Shield of Justice',
@@ -8454,7 +8454,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Passive',
 		type: 'NAVI',
 		unique: false,
-		effect: 'Recover 10% HP after battle (party).'
+		description: 'Recover 10% HP after battle (party).'
 	},
 	{
 		name: 'Steel Needle',
@@ -8521,28 +8521,28 @@ const skills: AnySkillData[] = [
 		affinity: 'Passive',
 		type: 'NAVI',
 		unique: false,
-		effect: 'Restores 10% HP to backup members after battle.'
+		description: 'Restores 10% HP to backup members after battle.'
 	},
 	{
 		name: 'Subrecover HP EX',
 		affinity: 'Passive',
 		type: 'NAVI',
 		unique: false,
-		effect: 'Restores 20% HP to backup members after battle.'
+		description: 'Restores 20% HP to backup members after battle.'
 	},
 	{
 		name: 'Subrecover SP',
 		affinity: 'Passive',
 		type: 'NAVI',
 		unique: false,
-		effect: 'Restores 1% SP to backup members after battle.'
+		description: 'Restores 1% SP to backup members after battle.'
 	},
 	{
 		name: 'Subrecover SP EX',
 		affinity: 'Passive',
 		type: 'NAVI',
 		unique: false,
-		effect: 'Restores 3% SP to backup members after battle.'
+		description: 'Restores 3% SP to backup members after battle.'
 	},
 	{
 		name: 'Sukukaja',
@@ -8593,7 +8593,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Passive',
 		type: 'NAVI',
 		unique: false,
-		effect: 'Displays all buffs and debuffs currently in effect.'
+		description: 'Displays all buffs and debuffs currently in effect.'
 	},
 	{
 		name: 'Survival Trick',
@@ -8722,7 +8722,7 @@ const skills: AnySkillData[] = [
 		type: 'MISC',
 		unique: false,
 		cost: null,
-		effect: 'Increases duration of Kaja-type buff skills when landing a Critical.'
+		description: 'Increases duration of Kaja-type buff skills when landing a Critical.'
 	},
 	{
 		name: 'Tempest Slash',
@@ -8865,7 +8865,7 @@ const skills: AnySkillData[] = [
 		type: 'MISC',
 		unique: true,
 		cost: 30,
-		effect: 'May inflict Down/Dizzy on all foes.'
+		description: 'May inflict Down/Dizzy on all foes.'
 	},
 	{
 		name: 'Thermopylae',
@@ -8889,7 +8889,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Passive',
 		type: 'NAVI',
 		unique: false,
-		effect: 'Reveal the effectiveness of an attack.'
+		description: 'Reveal the effectiveness of an attack.'
 	},
 	{
 		name: 'Thunder Reign',
@@ -8982,7 +8982,7 @@ const skills: AnySkillData[] = [
 		type: 'MISC',
 		unique: false,
 		cost: null,
-		effect: 'Automatic Sukukaja after a Baton Pass.'
+		description: 'Automatic Sukukaja after a Baton Pass.'
 	},
 	{
 		name: 'Toxic Breath',
@@ -9068,7 +9068,7 @@ const skills: AnySkillData[] = [
 		type: 'MISC',
 		unique: false,
 		cost: 18,
-		effect: 'Instantly escape from a dungeon.'
+		description: 'Instantly escape from a dungeon.'
 	},
 	{
 		name: 'Trafuri',
@@ -9076,21 +9076,21 @@ const skills: AnySkillData[] = [
 		type: 'MISC',
 		unique: false,
 		cost: 6,
-		effect: 'Guarantees escape from escapable battles.'
+		description: 'Guarantees escape from escapable battles.'
 	},
 	{
 		name: 'Treasure Radar',
 		affinity: 'Passive',
 		type: 'NAVI',
 		unique: false,
-		effect: 'Reveal the location of treasure chests on each floor.'
+		description: 'Reveal the location of treasure chests on each floor.'
 	},
 	{
 		name: 'Treasure Skimmer',
 		affinity: 'Passive',
 		type: 'NAVI',
 		unique: false,
-		effect: 'Find out if a foe is carrying a rare item ahead of time.'
+		description: 'Find out if a foe is carrying a rare item ahead of time.'
 	},
 	{
 		name: 'Trigger Happy',
@@ -9098,7 +9098,7 @@ const skills: AnySkillData[] = [
 		type: 'MISC',
 		unique: false,
 		cost: null,
-		effect: 'Increases chance of Critical from Gun attacks.'
+		description: 'Increases chance of Critical from Gun attacks.'
 	},
 	{
 		name: 'Triple Down',
@@ -9156,7 +9156,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Passive',
 		type: 'NAVI',
 		unique: false,
-		effect: 'Ultimate support effect of strengthening/healing all allies may activate in battle.'
+		description: 'Ultimate support effect of strengthening/healing all allies may activate in battle.'
 	},
 	{
 		name: 'Unshaken Will',
@@ -9280,7 +9280,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Passive',
 		type: 'NAVI',
 		unique: false,
-		effect: 'Recover 10% SP after battle (party).'
+		description: 'Recover 10% SP after battle (party).'
 	},
 	{
 		name: 'Vile Assault',
@@ -9414,7 +9414,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Passive',
 		type: 'NAVI',
 		unique: false,
-		effect: 'Reveal an enemy\'s affinity at the start of battle.'
+		description: 'Reveal an enemy\'s affinity at the start of battle.'
 	},
 	{
 		name: 'White Dracostrike',

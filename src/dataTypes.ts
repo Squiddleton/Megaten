@@ -57,32 +57,32 @@ export interface AilDefensiveSkillData extends SkillData {
 export interface AilmentSkillData extends SkillData {
 	affinity: 'Ailment';
 	type: 'AILMENT';
-	range: EnemyRange;
-	cost: number;
 	ailments: Ailment[];
 	chance: number;
+	cost: number;
 	flags: string[];
+	range: EnemyRange;
 }
 
 export interface AttackSkillData extends SkillData {
 	affinity: DamagingAffinity;
 	type: 'ATTACK';
-	range: EnemyRange | 'Random';
-	cost: {
-		type: HPMP;
-		amount: number;
-	};
-	power: {
-		amount: number;
-		display: AttackDisplay;
-	};
-	min: number;
-	max: number;
-	flags: string[];
 	ailments: {
 		name: Ailment;
 		chance: number;
 	}[];
+	cost: {
+		type: HPMP;
+		amount: number;
+	};
+	flags: string[];
+	max: number;
+	min: number;
+	power: {
+		amount: number;
+		display: AttackDisplay;
+	};
+	range: EnemyRange | 'Random';
 	series: Series;
 }
 
@@ -96,16 +96,16 @@ export interface AutoBuffSkillData extends SkillData {
 export interface BarrierSkillData extends SkillData {
 	affinity: 'Support';
 	type: 'BARRIER';
-	range: AllyRange;
-	cost: number;
 	barriers: Barrier[];
+	cost: number;
+	range: AllyRange;
 }
 
 export interface BarrierBreakSkillData extends SkillData {
 	affinity: 'Support';
 	type: 'BARRIERBREAK';
-	cost: number;
 	barrier: Barrier;
+	cost: number;
 }
 
 export interface BlockSkillData extends SkillData {
@@ -118,8 +118,8 @@ export interface BlockSkillData extends SkillData {
 export interface BoostSkillData extends SkillData {
 	affinity: 'Passive';
 	type: 'BOOST';
-	element: DamagingAffinity | 'Recovery' | 'ALL';
 	amount: number;
+	element: DamagingAffinity | 'Recovery' | 'ALL';
 	stacks: '+' | 'x';
 }
 
@@ -133,9 +133,9 @@ export interface BreakSkillData extends SkillData {
 export interface ChargeSkillData extends SkillData {
 	affinity: 'Support';
 	type: 'CHARGE';
-	range: AllyRange | 'Self';
-	cost: number;
 	charge: Charge;
+	cost: number;
+	range: AllyRange | 'Self';
 }
 
 export interface PersonaCounterSkillData extends SkillData {
@@ -147,8 +147,8 @@ export interface PersonaCounterSkillData extends SkillData {
 export interface CritSkillData extends SkillData {
 	affinity: 'Support';
 	type: 'CRIT';
-	range: 'Ally' | 'Party' | 'All';
 	cost: number;
+	range: AllyRange | 'All';
 }
 
 export interface CritBoostSkillData extends SkillData {
@@ -168,15 +168,15 @@ export interface DefensiveSkillData extends SkillData {
 export interface EndureSkillData extends SkillData {
 	affinity: 'Passive';
 	type: 'ENDURE';
-	priority: number;
 	instakill: boolean;
+	priority: number;
 }
 
 export interface EvasionSkillData extends SkillData {
 	affinity: 'Passive';
 	type: 'EVASION';
-	elements: (DamagingAffinity | 'ALL')[];
 	amount: number;
+	elements: (DamagingAffinity | 'ALL')[];
 	surround: boolean;
 	weather: boolean;
 }
@@ -202,13 +202,13 @@ export interface MasterSkillData extends SkillData {
 export interface MiscSkillData extends SkillData {
 	type: 'MISC';
 	cost: number | null;
-	effect: string;
+	description: string;
 }
 
 export interface NaviSkillData extends SkillData {
 	affinity: 'Passive';
 	type: 'NAVI';
-	effect: string;
+	description: string;
 }
 
 export interface PostBattleSkillData extends SkillData {
@@ -222,22 +222,22 @@ export interface PostBattleSkillData extends SkillData {
 export interface RecoverySkillData extends SkillData {
 	affinity: 'Recovery';
 	type: 'RECOVERY';
-	range: AllyRange;
-	cost: number;
-	amount: RecoveryAmount;
 	ailments: (Ailment | 'ALL')[];
+	amount: RecoveryAmount;
 	buffs: Buff[];
+	cost: number;
 	flags: string[];
+	range: AllyRange;
 }
 
 export interface RegenSkillData extends SkillData {
 	affinity: 'Passive';
 	type: 'REGEN';
-	hpmpail: HPMPAil;
-	amount: number;
-	percent: boolean;
 	ambush: boolean;
+	amount: number;
 	baton: boolean;
+	hpmpail: HPMPAil;
+	percent: boolean;
 }
 
 export interface SiphonSkillData extends SkillData {
@@ -269,20 +269,20 @@ export interface SpringSkillData extends SkillData {
 export interface SupportSkillData extends SkillData {
 	affinity: 'Support';
 	type: 'SUPPORT';
-	range: AllyRange | EnemyRange;
-	cost: number;
+	auto: (Barrier | Charge)[];
 	buffs: Buff[];
+	cost: number;
 	debuffs: Buff[];
 	negate: boolean;
-	auto: (Barrier | Charge)[];
+	range: AllyRange | EnemyRange;
 	surround: boolean;
 }
 
 export interface SusceptibilitySkillData extends SkillData {
 	affinity: 'Almighty';
 	type: 'SUSCEPTIBILITY';
-	range: 'Foe' | 'All';
 	cost: number;
+	range: 'Foe' | 'All';
 }
 
 export interface TauntSkillData extends SkillData {
