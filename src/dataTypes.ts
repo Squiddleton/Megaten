@@ -4,8 +4,8 @@ export interface DemonData {
 	name: string;
 	aliases: string[];
 	inherit: Exclude<AnyAffinity, 'Gun' | 'Passive'>;
-	arcana: Arcana;
-	race: Race;
+	arcana: Arcana | null;
+	race: Race | null;
 	level: number;
 	hp: number | null;
 	mp: number | null;
@@ -223,7 +223,7 @@ export interface RecoverySkillData extends SkillData {
 	affinity: 'Recovery';
 	type: 'RECOVERY';
 	ailments: (Ailment | 'ALL')[];
-	amount: RecoveryAmount;
+	amount: RecoveryAmount | null;
 	buffs: Buff[];
 	cost: number;
 	flags: string[];

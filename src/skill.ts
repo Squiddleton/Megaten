@@ -650,7 +650,7 @@ export class RecoverySkill extends Skill implements RecoverySkillData {
 	type: 'RECOVERY';
 	description: string;
 	ailments: (Ailment | 'ALL')[];
-	amount: RecoveryAmount;
+	amount: RecoveryAmount | null;
 	buffs: Buff[];
 	cost: number;
 	flags: string[];

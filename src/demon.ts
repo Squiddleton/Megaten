@@ -18,8 +18,8 @@ export class Demon implements DemonData {
 	devName: string;
 	aliases: string[];
 	inherit: Exclude<AnyAffinity, 'Gun' | 'Passive'>;
-	arcana: Arcana;
-	race: Race;
+	arcana: Arcana | null;
+	race: Race | null;
 	level: number;
 	hp: number | null;
 	mp: number | null;
