@@ -1,4 +1,4 @@
-import type { Affinity, AilResistance, Ailment, Arcana, AttackDisplay, Barrier, Buff, Charge, ChargeRange, CounterAffinity, CounterDisplay, Element, Game, HPMP, HPMPAil, Inherit, LightDark, PostBattleStat, Race, Range, RecoveryAmount, Resistance, RestoreCriteria, SMTElement, Series, SkillType } from './types';
+import type { Affinity, AilResistance, Ailment, Arcana, AttackDisplay, Barrier, Buff, Charge, ChargeRange, CounterAffinity, CounterDisplay, Element, Game, HPMP, HPMPAil, Inherit, LightDark, PostBattleStat, Race, Range, RecoveryAmount, Resistance, RestoreCriteria, SMTElement, Series, SkillType, Stage } from './types';
 
 export interface DemonData {
 	name: string;
@@ -28,18 +28,18 @@ export interface DemonData {
 
 export interface PersonaData extends DemonData {
 	user: string;
-	stage: 1 | 2 | 3;
+	stage: Stage;
 	evoSkill: string | null;
 }
 
-export interface BaseSkillData {
+export interface SkillData {
 	name: string;
 	affinity: Affinity;
 	type: SkillType;
 	unique: boolean;
 }
 
-export interface AilBoostSkillData extends BaseSkillData {
+export interface AilBoostSkillData extends SkillData {
 	affinity: 'Passive';
 	type: 'AILBOOST';
 	ailment: Ailment | 'ALL';
@@ -47,14 +47,14 @@ export interface AilBoostSkillData extends BaseSkillData {
 	weather: boolean;
 }
 
-export interface AilDefensiveSkillData extends BaseSkillData {
+export interface AilDefensiveSkillData extends SkillData {
 	affinity: 'Passive';
 	type: 'AILDEFENSIVE';
 	ailment: Ailment | 'ALL' | 'Confuse/Fear/Rage/Despair';
 	resistance: AilResistance;
 }
 
-export interface AilmentSkillData extends BaseSkillData {
+export interface AilmentSkillData extends SkillData {
 	affinity: 'Ailment';
 	type: 'AILMENT';
 	range: Range;
@@ -64,7 +64,7 @@ export interface AilmentSkillData extends BaseSkillData {
 	flags: string[];
 }
 
-export interface AttackSkillData extends BaseSkillData {
+export interface AttackSkillData extends SkillData {
 	affinity: Element;
 	type: 'ATTACK';
 	range: Range | 2;
@@ -86,14 +86,14 @@ export interface AttackSkillData extends BaseSkillData {
 	series: Series;
 }
 
-export interface AutoBuffSkillData extends BaseSkillData {
+export interface AutoBuffSkillData extends SkillData {
 	affinity: 'Passive';
 	type: 'AUTOBUFF';
 	buff: Exclude<Buff, 'Double Accuracy/Evasion' | 'Double Defense'>;
 	range: Range;
 }
 
-export interface BarrierSkillData extends BaseSkillData {
+export interface BarrierSkillData extends SkillData {
 	affinity: 'Support';
 	type: 'BARRIER';
 	range: Range;
@@ -101,21 +101,21 @@ export interface BarrierSkillData extends BaseSkillData {
 	barriers: Barrier[];
 }
 
-export interface BarrierBreakSkillData extends BaseSkillData {
+export interface BarrierBreakSkillData extends SkillData {
 	affinity: 'Support';
 	type: 'BARRIERBREAK';
 	cost: number;
 	barrier: Barrier;
 }
 
-export interface BlockSkillData extends BaseSkillData {
+export interface BlockSkillData extends SkillData {
 	affinity: 'Support';
 	type: 'BLOCK';
 	cost: number;
 	element: Exclude<SMTElement, 'Almighty'>;
 }
 
-export interface BoostSkillData extends BaseSkillData {
+export interface BoostSkillData extends SkillData {
 	affinity: 'Passive';
 	type: 'BOOST';
 	element: Element | 'Recovery' | 'ALL';
@@ -123,14 +123,14 @@ export interface BoostSkillData extends BaseSkillData {
 	stacks: '+' | 'x';
 }
 
-export interface BreakSkillData extends BaseSkillData {
+export interface BreakSkillData extends SkillData {
 	affinity: 'Support';
 	type: 'BREAK';
 	cost: number;
 	element: Element;
 }
 
-export interface ChargeSkillData extends BaseSkillData {
+export interface ChargeSkillData extends SkillData {
 	affinity: 'Support';
 	type: 'CHARGE';
 	range: ChargeRange;
@@ -138,41 +138,41 @@ export interface ChargeSkillData extends BaseSkillData {
 	charge: Charge;
 }
 
-export interface PersonaCounterSkillData extends BaseSkillData {
+export interface PersonaCounterSkillData extends SkillData {
 	affinity: 'Passive';
 	type: 'PERSONACOUNTER';
 	chance: number;
 }
 
-export interface CritSkillData extends BaseSkillData {
+export interface CritSkillData extends SkillData {
 	affinity: 'Support';
 	type: 'CRIT';
 	range: 'Ally' | 'Party' | 'All';
 	cost: number;
 }
 
-export interface CritBoostSkillData extends BaseSkillData {
+export interface CritBoostSkillData extends SkillData {
 	affinity: 'Passive';
 	type: 'CRITBOOST';
 	amount: number;
 	criteria: 'Ambush' | 'Surround' | null;
 }
 
-export interface DefensiveSkillData extends BaseSkillData {
+export interface DefensiveSkillData extends SkillData {
 	affinity: 'Passive';
 	type: 'DEFENSIVE';
 	element: Element;
 	newAffinity: Resistance;
 }
 
-export interface EndureSkillData extends BaseSkillData {
+export interface EndureSkillData extends SkillData {
 	affinity: 'Passive';
 	type: 'ENDURE';
 	priority: number;
 	instakill: boolean;
 }
 
-export interface EvasionSkillData extends BaseSkillData {
+export interface EvasionSkillData extends SkillData {
 	affinity: 'Passive';
 	type: 'EVASION';
 	elements: (Element | 'ALL')[];
@@ -181,37 +181,37 @@ export interface EvasionSkillData extends BaseSkillData {
 	weather: boolean;
 }
 
-export interface HalveSkillData extends BaseSkillData {
+export interface HalveSkillData extends SkillData {
 	affinity: LightDark;
 	type: 'HALVE';
 	cost: number;
 }
 
-export interface InstaKillBoostSkillData extends BaseSkillData {
+export interface InstaKillBoostSkillData extends SkillData {
 	affinity: 'Passive';
 	type: 'INSTAKILLBOOST';
 	element: LightDark;
 }
 
-export interface MasterSkillData extends BaseSkillData {
+export interface MasterSkillData extends SkillData {
 	affinity: 'Passive';
 	type: 'MASTER';
 	skill: HPMP;
 }
 
-export interface MiscSkillData extends BaseSkillData {
+export interface MiscSkillData extends SkillData {
 	type: 'MISC';
 	cost: number | null;
 	effect: string;
 }
 
-export interface NaviSkillData extends BaseSkillData {
+export interface NaviSkillData extends SkillData {
 	affinity: 'Passive';
 	type: 'NAVI';
 	effect: string;
 }
 
-export interface PostBattleSkillData extends BaseSkillData {
+export interface PostBattleSkillData extends SkillData {
 	affinity: 'Passive';
 	type: 'POSTBATTLE';
 	amount: number;
@@ -219,7 +219,7 @@ export interface PostBattleSkillData extends BaseSkillData {
 	stat: PostBattleStat;
 }
 
-export interface RecoverySkillData extends BaseSkillData {
+export interface RecoverySkillData extends SkillData {
 	affinity: 'Recovery';
 	type: 'RECOVERY';
 	range: Range;
@@ -230,7 +230,7 @@ export interface RecoverySkillData extends BaseSkillData {
 	flags: string[];
 }
 
-export interface RegenSkillData extends BaseSkillData {
+export interface RegenSkillData extends SkillData {
 	affinity: 'Passive';
 	type: 'REGEN';
 	hpmpail: HPMPAil;
@@ -240,14 +240,14 @@ export interface RegenSkillData extends BaseSkillData {
 	baton: boolean;
 }
 
-export interface SiphonSkillData extends BaseSkillData {
+export interface SiphonSkillData extends SkillData {
 	affinity: 'Passive';
 	type: 'SIPHON';
 	amount: number;
 	criteria: RestoreCriteria;
 }
 
-export interface SMTCounterSkillData extends BaseSkillData {
+export interface SMTCounterSkillData extends SkillData {
 	affinity: 'Passive';
 	type: 'SMTCOUNTER';
 	attackDown: boolean;
@@ -259,14 +259,14 @@ export interface SMTCounterSkillData extends BaseSkillData {
 	};
 }
 
-export interface SpringSkillData extends BaseSkillData {
+export interface SpringSkillData extends SkillData {
 	affinity: 'Passive';
 	type: 'SPRING';
 	amount: number;
 	hpmp: HPMP;
 }
 
-export interface SupportSkillData extends BaseSkillData {
+export interface SupportSkillData extends SkillData {
 	affinity: 'Support';
 	type: 'SUPPORT';
 	range: Range;
@@ -278,21 +278,21 @@ export interface SupportSkillData extends BaseSkillData {
 	surround: boolean;
 }
 
-export interface SusceptibilitySkillData extends BaseSkillData {
+export interface SusceptibilitySkillData extends SkillData {
 	affinity: 'Almighty';
 	type: 'SUSCEPTIBILITY';
 	range: Range;
 	cost: number;
 }
 
-export interface TauntSkillData extends BaseSkillData {
+export interface TauntSkillData extends SkillData {
 	affinity: 'Support';
 	type: 'TAUNT';
 	buff: Buff | null;
 	cost: number;
 }
 
-export interface WallSkillData extends BaseSkillData {
+export interface WallSkillData extends SkillData {
 	affinity: 'Support';
 	type: 'WALL';
 	cost: number;

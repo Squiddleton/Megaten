@@ -1,10 +1,15 @@
 import { readFileSync } from 'node:fs';
-import { normalize } from '@squiddleton/util';
-import demonList from './demonList';
-import { DemonData, PersonaData } from './listTypes';
-import { Arcana, Element, Game, Inherit, Race } from './types';
+import { Collection } from '@discordjs/collection';
+import { formatPossessive, normalize } from '@squiddleton/util';
+import demonData from './demonList';
+import type { DemonData, PersonaData } from './listTypes';
+import type { Arcana, Element, Game, Inherit, Race, Stage } from './types';
 
-export const isPersonaData = (data: DemonData): data is PersonaData => data.race === 'Persona';
+function isPersona(demon: Demon): demon is Persona;
+function isPersona(demon: DemonData): demon is PersonaData;
+function isPersona(demon: Demon | DemonData) {
+	return demon.race === 'Persona';
+}
 
 export class Demon implements DemonData {
 	name: string;
@@ -54,20 +59,30 @@ export class Demon implements DemonData {
 		this.repel = data.repel;
 		this.game = data.game;
 	}
-	get image() {
-		return readFileSync(`${__dirname}/images/demons/${this.devName}.png`);
-	}
 	isPersona(): this is Persona {
-		return this.race === 'Persona';
+		return isPersona(this);
 	}
 	toString() {
 		return `${this.race} ${this.name}`;
 	}
+	get image() {
+		return readFileSync(`${__dirname}/images/demons/${this.devName}.png`);
+	}
+	static array: Demon[] = [];
+	static collection: Collection<string, Demon> = new Collection();
+	static get(name: string, error: true): Demon;
+	static get(name: string, error?: boolean): Demon | null;
+	static get(name: string, error = false) {
+		name = normalize(name);
+		const found = Demon.collection.get(name) ?? Demon.collection.find(demon => demon.aliases.includes(name)) ?? null;
+		if (error && found === null) throw new Error(`No Demon was found with the name "${name}"`);
+		return found;
+	}
 }
 
-export class Persona extends Demon {
+export class Persona extends Demon implements PersonaData {
 	user: string;
-	stage: 1 | 2 | 3;
+	stage: Stage;
 	evoSkill: string | null;
 	constructor(data: PersonaData) {
 		super(data);
@@ -76,10 +91,20 @@ export class Persona extends Demon {
 		this.evoSkill = data.evoSkill;
 	}
 	get evolution(): Persona | null {
-		const evoPersona = demonList.filter(isPersonaData).find(demon => demon.user === this.user && demon.stage === (this.stage + 1));
-		return evoPersona === undefined ? null : new Persona(evoPersona);
+		const found = Demon.collection.find((demon): demon is Persona => demon.isPersona() && demon.user === this.user && demon.stage === (this.stage + 1));
+		return found === undefined ? null : new Persona(found);
 	}
+	static array: Persona[] = [];
+	static collection: Collection<string, Persona> = new Collection();
 	toString() {
-		return `${this.user}'${['s', 'z'].some(l => this.user.endsWith(l)) ? '' : 's'} ${this.name}`;
+		return `${formatPossessive(this.user)} ${this.name}`;
 	}
 }
+
+Demon.array = demonData.map(data => new (isPersona(data) ? Persona : Demon)(data));
+Demon.collection = new Collection(Demon.array.map(demon => [demon.devName, demon]));
+
+const personaFilter = (demon: Demon): demon is Persona => demon.isPersona();
+
+Persona.array = Demon.array.filter(personaFilter);
+Persona.collection = Demon.collection.filter(personaFilter);

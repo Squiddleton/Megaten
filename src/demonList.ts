@@ -1,4 +1,4 @@
-import { DemonData, PersonaData } from './listTypes';
+import type { DemonData, PersonaData } from './listTypes';
 
 const demons: (DemonData | PersonaData)[] = [
 	{

@@ -1,23 +1,34 @@
+import { Collection } from '@discordjs/collection';
 import { normalize } from '@squiddleton/util';
-import type { AilBoostSkillData, AilDefensiveSkillData, AilmentSkillData, AttackSkillData, AutoBuffSkillData, BarrierBreakSkillData, BarrierSkillData, BaseSkillData, BlockSkillData, BoostSkillData, BreakSkillData, ChargeSkillData, CritBoostSkillData, CritSkillData, DefensiveSkillData, EndureSkillData, EvasionSkillData, HalveSkillData, InstaKillBoostSkillData, MasterSkillData, MiscSkillData, NaviSkillData, PersonaCounterSkillData, PostBattleSkillData, RecoverySkillData, RegenSkillData, SMTCounterSkillData, SiphonSkillData, SpringSkillData, SupportSkillData, SusceptibilitySkillData, TauntSkillData, WallSkillData } from './listTypes';
+import type { AilBoostSkillData, AilDefensiveSkillData, AilmentSkillData, AttackSkillData, AutoBuffSkillData, BarrierBreakSkillData, BarrierSkillData, BlockSkillData, BoostSkillData, BreakSkillData, ChargeSkillData, CritBoostSkillData, CritSkillData, DefensiveSkillData, EndureSkillData, EvasionSkillData, HalveSkillData, InstaKillBoostSkillData, MasterSkillData, MiscSkillData, NaviSkillData, PersonaCounterSkillData, PostBattleSkillData, RecoverySkillData, RegenSkillData, SMTCounterSkillData, SiphonSkillData, SkillData, SpringSkillData, SupportSkillData, SusceptibilitySkillData, TauntSkillData, WallSkillData } from './listTypes';
+import skillData from './skillList';
 import type { Affinity, AilResistance, Ailment, AttackDisplay, Barrier, Buff, Charge, ChargeRange, CounterAffinity, CounterDisplay, Element, HPMP, HPMPAil, LightDark, PostBattleStat, Range, RecoveryAmount, Resistance, RestoreCriteria, SMTElement, Series, SkillType } from './types';
 
-export class BaseSkill implements BaseSkillData {
+export class Skill implements SkillData {
 	name: string;
 	devName: string;
 	affinity: Affinity;
 	type: SkillType;
 	unique: boolean;
-	constructor(data: BaseSkillData) {
+	constructor(data: SkillData) {
 		this.name = data.name;
 		this.devName = normalize(data.name);
 		this.affinity = data.affinity;
 		this.type = data.type;
 		this.unique = data.unique;
 	}
+	static array: AnySkill[] = [];
+	static collection: Collection<string, AnySkill> = new Collection();
+	static get(name: string, error: true): AnySkill;
+	static get(name: string, error?: boolean): AnySkill | null;
+	static get(name: string, error = false) {
+		const found = this.collection.get(normalize(name)) ?? null;
+		if (error && found === null) throw new Error(`No Skill was found with the name "${name}"`);
+		return found;
+	}
 }
 
-export class AilBoostSkill extends BaseSkill implements AilBoostSkillData {
+export class AilBoostSkill extends Skill implements AilBoostSkillData {
 	affinity: 'Passive';
 	type: 'AILBOOST';
 	ailment: Ailment | 'ALL';
@@ -37,7 +48,7 @@ export class AilBoostSkill extends BaseSkill implements AilBoostSkillData {
 	}
 }
 
-export class AilDefensiveSkill extends BaseSkill implements AilDefensiveSkillData {
+export class AilDefensiveSkill extends Skill implements AilDefensiveSkillData {
 	affinity: 'Passive';
 	type: 'AILDEFENSIVE';
 	ailment: Ailment | 'ALL' | 'Confuse/Fear/Rage/Despair';
@@ -61,7 +72,7 @@ export class AilDefensiveSkill extends BaseSkill implements AilDefensiveSkillDat
 	}
 }
 
-export class AilmentSkill extends BaseSkill implements AilmentSkillData {
+export class AilmentSkill extends Skill implements AilmentSkillData {
 	affinity: 'Ailment';
 	type: 'AILMENT';
 	range: Range;
@@ -84,7 +95,7 @@ export class AilmentSkill extends BaseSkill implements AilmentSkillData {
 	}
 }
 
-export class AttackSkill extends BaseSkill {
+export class AttackSkill extends Skill {
 	affinity: Element;
 	type: 'ATTACK';
 	range: Range | 2;
@@ -215,7 +226,7 @@ export class AttackSkill extends BaseSkill {
 	}
 }
 
-export class AutoBuffSkill extends BaseSkill {
+export class AutoBuffSkill extends Skill {
 	affinity: 'Passive';
 	type: 'AUTOBUFF';
 	buff: Exclude<Buff, 'Double Accuracy/Evasion' | 'Double Defense'>;
@@ -237,7 +248,7 @@ export class AutoBuffSkill extends BaseSkill {
 	}
 }
 
-export class BarrierSkill extends BaseSkill {
+export class BarrierSkill extends Skill {
 	affinity: 'Support';
 	type: 'BARRIER';
 	range: Range;
@@ -262,7 +273,7 @@ export class BarrierSkill extends BaseSkill {
 	}
 }
 
-export class BarrierBreakSkill extends BaseSkill {
+export class BarrierBreakSkill extends Skill {
 	constructor(data: BarrierBreakSkillData) {
 		super(data);
 		this.affinity = data.affinity;
@@ -279,7 +290,7 @@ export class BarrierBreakSkill extends BaseSkill {
 	}
 }
 
-export class BlockSkill extends BaseSkill {
+export class BlockSkill extends Skill {
 	affinity: 'Support';
 	type: 'BLOCK';
 	cost: number;
@@ -296,7 +307,7 @@ export class BlockSkill extends BaseSkill {
 	}
 }
 
-export class BoostSkill extends BaseSkill {
+export class BoostSkill extends Skill {
 	affinity: 'Passive';
 	type: 'BOOST';
 	element: Element | 'Recovery' | 'ALL';
@@ -317,7 +328,7 @@ export class BoostSkill extends BaseSkill {
 	}
 }
 
-export class BreakSkill extends BaseSkill {
+export class BreakSkill extends Skill {
 	affinity: 'Support';
 	type: 'BREAK';
 	cost: number;
@@ -334,7 +345,7 @@ export class BreakSkill extends BaseSkill {
 	}
 }
 
-export class ChargeSkill extends BaseSkill {
+export class ChargeSkill extends Skill {
 	affinity: 'Support';
 	type: 'CHARGE';
 	range: ChargeRange;
@@ -361,7 +372,7 @@ export class ChargeSkill extends BaseSkill {
 	}
 }
 
-export class CritSkill extends BaseSkill {
+export class CritSkill extends Skill {
 	affinity: 'Support';
 	type: 'CRIT';
 	range: 'Ally' | 'Party' | 'All';
@@ -378,7 +389,7 @@ export class CritSkill extends BaseSkill {
 	}
 }
 
-export class CritBoostSkill extends BaseSkill {
+export class CritBoostSkill extends Skill {
 	affinity: 'Passive';
 	type: 'CRITBOOST';
 	amount: number;
@@ -403,7 +414,7 @@ export class CritBoostSkill extends BaseSkill {
 	}
 }
 
-export class DefensiveSkill extends BaseSkill {
+export class DefensiveSkill extends Skill {
 	affinity: 'Passive';
 	type: 'DEFENSIVE';
 	element: Element;
@@ -426,7 +437,7 @@ export class DefensiveSkill extends BaseSkill {
 	}
 }
 
-export class EndureSkill extends BaseSkill {
+export class EndureSkill extends Skill {
 	affinity: 'Passive';
 	type: 'ENDURE';
 	priority: number;
@@ -445,7 +456,7 @@ export class EndureSkill extends BaseSkill {
 	}
 }
 
-export class EvasionSkill extends BaseSkill {
+export class EvasionSkill extends Skill {
 	affinity: 'Passive';
 	type: 'EVASION';
 	elements: (Element | 'ALL')[];
@@ -470,7 +481,7 @@ export class EvasionSkill extends BaseSkill {
 	}
 }
 
-export class HalveSkill extends BaseSkill {
+export class HalveSkill extends Skill {
 	affinity: LightDark;
 	type: 'HALVE';
 	cost: number;
@@ -485,7 +496,7 @@ export class HalveSkill extends BaseSkill {
 	}
 }
 
-export class InstaKillBoostSkill extends BaseSkill {
+export class InstaKillBoostSkill extends Skill {
 	affinity: 'Passive';
 	type: 'INSTAKILLBOOST';
 	element: LightDark;
@@ -500,7 +511,7 @@ export class InstaKillBoostSkill extends BaseSkill {
 	}
 }
 
-export class MasterSkill extends BaseSkill {
+export class MasterSkill extends Skill {
 	affinity: 'Passive';
 	type: 'MASTER';
 	skill: HPMP;
@@ -515,7 +526,7 @@ export class MasterSkill extends BaseSkill {
 	}
 }
 
-export class MiscSkill extends BaseSkill {
+export class MiscSkill extends Skill {
 	type: 'MISC';
 	cost: number | null;
 	effect: string;
@@ -531,7 +542,7 @@ export class MiscSkill extends BaseSkill {
 	}
 }
 
-export class NaviSkill extends BaseSkill {
+export class NaviSkill extends Skill {
 	affinity: 'Passive';
 	type: 'NAVI';
 	effect: string;
@@ -546,7 +557,7 @@ export class NaviSkill extends BaseSkill {
 	}
 }
 
-export class PersonaCounterSkill extends BaseSkill {
+export class PersonaCounterSkill extends Skill {
 	affinity: 'Passive';
 	type: 'PERSONACOUNTER';
 	chance: number;
@@ -561,7 +572,7 @@ export class PersonaCounterSkill extends BaseSkill {
 	}
 }
 
-export class PostBattleSkill extends BaseSkill {
+export class PostBattleSkill extends Skill {
 	affinity: 'Passive';
 	type: 'POSTBATTLE';
 	amount: number;
@@ -595,7 +606,7 @@ export class PostBattleSkill extends BaseSkill {
 	}
 }
 
-export class RecoverySkill extends BaseSkill {
+export class RecoverySkill extends Skill {
 	affinity: 'Recovery';
 	type: 'RECOVERY';
 	range: Range;
@@ -634,7 +645,7 @@ export class RecoverySkill extends BaseSkill {
 	}
 }
 
-export class RegenSkill extends BaseSkill {
+export class RegenSkill extends Skill {
 	affinity: 'Passive';
 	type: 'REGEN';
 	hpmpail: HPMPAil;
@@ -673,7 +684,7 @@ export class RegenSkill extends BaseSkill {
 	}
 }
 
-export class SiphonSkill extends BaseSkill {
+export class SiphonSkill extends Skill {
 	affinity: 'Passive';
 	type: 'SIPHON';
 	amount: number;
@@ -690,7 +701,7 @@ export class SiphonSkill extends BaseSkill {
 	}
 }
 
-export class SMTCounterSkill extends BaseSkill {
+export class SMTCounterSkill extends Skill {
 	affinity: 'Passive';
 	type: 'SMTCOUNTER';
 	attackDown: boolean;
@@ -714,7 +725,7 @@ export class SMTCounterSkill extends BaseSkill {
 	}
 }
 
-export class SpringSkill extends BaseSkill {
+export class SpringSkill extends Skill {
 	affinity: 'Passive';
 	type: 'SPRING';
 	amount: number;
@@ -731,7 +742,7 @@ export class SpringSkill extends BaseSkill {
 	}
 }
 
-export class SupportSkill extends BaseSkill {
+export class SupportSkill extends Skill {
 	affinity: 'Support';
 	type: 'SUPPORT';
 	range: Range;
@@ -766,7 +777,7 @@ export class SupportSkill extends BaseSkill {
 	}
 }
 
-export class SusceptibilitySkill extends BaseSkill {
+export class SusceptibilitySkill extends Skill {
 	affinity: 'Almighty';
 	type: 'SUSCEPTIBILITY';
 	range: Range;
@@ -783,7 +794,7 @@ export class SusceptibilitySkill extends BaseSkill {
 	}
 }
 
-export class TauntSkill extends BaseSkill {
+export class TauntSkill extends Skill {
 	affinity: 'Support';
 	type: 'TAUNT';
 	buff: Buff | null;
@@ -801,7 +812,7 @@ export class TauntSkill extends BaseSkill {
 	}
 }
 
-export class WallSkill extends BaseSkill {
+export class WallSkill extends Skill {
 	affinity: 'Support';
 	type: 'WALL';
 	cost: number;
@@ -818,7 +829,7 @@ export class WallSkill extends BaseSkill {
 	}
 }
 
-export const dataToClass = (data: SkillData): Skill => {
+const dataToClass = (data: AnySkillData): AnySkill => {
 	switch (data.type) {
 		case 'AILBOOST': return new AilBoostSkill(data);
 		case 'AILDEFENSIVE': return new AilDefensiveSkill(data);
@@ -855,10 +866,13 @@ export const dataToClass = (data: SkillData): Skill => {
 	}
 };
 
-export type SkillData = AilBoostSkillData | AilDefensiveSkillData | AilmentSkillData | AttackSkillData | AutoBuffSkillData | BarrierSkillData | BarrierBreakSkillData | BlockSkillData | BoostSkillData | BreakSkillData
+Skill.array = skillData.map(skill => dataToClass(skill));
+Skill.collection = new Collection(Skill.array.map(skill => [skill.devName, skill]));
+
+export type AnySkillData = AilBoostSkillData | AilDefensiveSkillData | AilmentSkillData | AttackSkillData | AutoBuffSkillData | BarrierSkillData | BarrierBreakSkillData | BlockSkillData | BoostSkillData | BreakSkillData
 | ChargeSkillData | CritSkillData | CritBoostSkillData | DefensiveSkillData | EndureSkillData | EvasionSkillData | HalveSkillData | InstaKillBoostSkillData | MasterSkillData | MiscSkillData | NaviSkillData
 | PersonaCounterSkillData | PostBattleSkillData | RecoverySkillData | RegenSkillData | SiphonSkillData | SMTCounterSkillData | SpringSkillData | SupportSkillData | SusceptibilitySkillData | TauntSkillData | WallSkillData;
 
-export type Skill = AilBoostSkill | AilDefensiveSkill | AilmentSkill | AttackSkill | AutoBuffSkill | BarrierSkill | BarrierBreakSkill | BlockSkill | BoostSkill | BreakSkill
+export type AnySkill = AilBoostSkill | AilDefensiveSkill | AilmentSkill | AttackSkill | AutoBuffSkill | BarrierSkill | BarrierBreakSkill | BlockSkill | BoostSkill | BreakSkill
 | ChargeSkill | CritSkill | CritBoostSkill | DefensiveSkill | EndureSkill | EvasionSkill | HalveSkill | InstaKillBoostSkill | MasterSkill | MiscSkill | NaviSkill
 | PersonaCounterSkill | PostBattleSkill | RecoverySkill | RegenSkill | SiphonSkill | SMTCounterSkill | SpringSkill | SupportSkill | SusceptibilitySkill | TauntSkill | WallSkill;

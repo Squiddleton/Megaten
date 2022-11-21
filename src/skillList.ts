@@ -1,6 +1,6 @@
-import { SkillData } from './skills';
+import type { AnySkillData } from './skills';
 
-const skills: SkillData[] = [
+const skills: AnySkillData[] = [
 	{
 		name: '+15% EXP',
 		affinity: 'Passive',
