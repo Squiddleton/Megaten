@@ -776,8 +776,7 @@ export class SupportSkill extends Skill implements SupportSkillData {
 				return `Negates status ${isDekaja ? '' : 'de'}buff effects on all ${isDekaja ? 'foes' : 'allies'}.`;
 			}
 			if (this.buffs.length > 0) return `Raises ${this.buffs.length === 3 ? 'all stats' : this.buffs.join('/')} of ${this.range === 'Party' ? 'all allies' : '1 ally'} by ${this.buffs[0].includes('Double') ? '2 ranks' : '1 rank'} for 3 turns${this.surround ? ' when surrounded' : ''}.`;
-			else if (this.debuffs.length > 0) return `Lowers ${this.debuffs.length === 3 ? 'all stats' : this.debuffs.join('/')} of ${this.range === 'Party' ? 'all foes' : '1 foe'} by ${this.debuffs[0].includes('Double') ? '2 ranks' : '1 rank'} for 3 turns.`;
-			else throw new Error(`A SUPPORT skill does not fall into a category for description: ${JSON.stringify(this, null, 2)}`);
+			return `Lowers ${this.debuffs.length === 3 ? 'all stats' : this.debuffs.join('/')} of ${this.range === 'Party' ? 'all foes' : '1 foe'} by ${this.debuffs[0].includes('Double') ? '2 ranks' : '1 rank'} for 3 turns.`;
 		}
 	}
 }
