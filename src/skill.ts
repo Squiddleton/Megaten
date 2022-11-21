@@ -127,10 +127,10 @@ export class AttackSkill extends Skill implements AttackSkillData {
 		if (flags.includes('Drain HP/MP')) {
 			this.description = `${displayAffinity} HP/MP drain attack to ${displayRange}.`;
 		}
-		if (flags.includes('Drain HP')) {
+		else if (flags.includes('Drain HP')) {
 			this.description = `${displayAffinity} ${power.display === 'Weak' ? 'HP drain' : 'HP-draining'} attack to ${displayRange}.`;
 		}
-		if (flags.includes('Drain MP')) {
+		else if (flags.includes('Drain MP')) {
 			this.description = `${displayAffinity} MP drain attack to ${displayRange}.`;
 		}
 		else {
@@ -507,9 +507,9 @@ export class EvasionSkill extends Skill implements EvasionSkillData {
 		this.type = data.type;
 
 		if (amount === 3) this.description = `Greatly increases Evasion from ${elements[0]} skills. Does not stack.`;
-		if (weather) this.description = 'Greatly increases Evasion from all affinities during Rain/Snow.';
-		if (surround) this.description = 'Greatly decreases Accuracy of all foes\' attacks except Almighty when surrounded.';
-		if (elements.length !== 1) this.description = 'Increases Evasion from all magical attacks except Almighty.';
+		else if (weather) this.description = 'Greatly increases Evasion from all affinities during Rain/Snow.';
+		else if (surround) this.description = 'Greatly decreases Accuracy of all foes\' attacks except Almighty when surrounded.';
+		else if (elements.length !== 1) this.description = 'Increases Evasion from all magical attacks except Almighty.';
 		else this.description = `${amount === 3 ? 'Greatly i' : 'I'}ncreases Evasion from ${elements[0]} skills.${amount === 3 ? ' Does not stack.' : ''}`;
 
 		this.amount = amount;
@@ -628,8 +628,9 @@ export class PostBattleSkill extends Skill implements PostBattleSkillData {
 				break;
 			}
 			case 'EXP': {
-				if (inactive) this.description = `Earn ${amount}% EXP even when not participating in battle.`;
-				else this.description = `EXP gained in battle increased by ${amount}%.`;
+				this.description = inactive
+					? `Earn ${amount}% EXP even when not participating in battle.`
+					: `EXP gained in battle increased by ${amount}%.`;
 				break;
 			}
 			case 'Money': {
@@ -662,14 +663,11 @@ export class RecoverySkill extends Skill implements RecoverySkillData {
 
 		const isParty = range === 'Party';
 		if (ailments.length > 0) {
-			if (ailments.includes('ALL')) {
-				this.description = amount === null
+			this.description = ailments.includes('ALL')
+				? amount === null
 					? `Cure status ailments on ${isParty ? 'all allies' : '1 ally'}.`
-					: `${amount} HP recovery and cures status ailments${flags.includes('Revert Debuffs') ? '/debuffs' : ''} for ${isParty ? 'all allies' : '1 ally'}.`;
-			}
-			else {
-				this.description = `Cures ${ailments.join('/')} for ${isParty ? 'all allies' : 'one ally'}.`;
-			}
+					: `${amount} HP recovery and cures status ailments${flags.includes('Revert Debuffs') ? '/debuffs' : ''} for ${isParty ? 'all allies' : '1 ally'}.`
+				: `Cures ${ailments.join('/')} for ${isParty ? 'all allies' : 'one ally'}.`;
 		}
 		else if (flags.includes('Revive') && amount !== null) {
 			this.description = flags.includes('Summon')
@@ -795,16 +793,13 @@ export class SupportSkill extends Skill implements SupportSkillData {
 		this.affinity = data.affinity;
 		this.type = data.type;
 
-		if (negate) {
-			const isDekaja = buffs.length > 0;
-			this.description = `Negates status ${isDekaja ? '' : 'de'}buff effects on all ${isDekaja ? 'foes' : 'allies'}.`;
-		}
-		else if (buffs.length > 0) {
-			this.description = `Raises ${buffs.length === 3 ? 'all stats' : buffs.join('/')} of ${range === 'Party' ? 'all allies' : '1 ally'} by ${buffs[0].includes('Double') ? '2 ranks' : '1 rank'} for 3 turns${surround ? ' when surrounded' : ''}.`;
-		}
-		else {
-			this.description = `Lowers ${debuffs.length === 3 ? 'all stats' : debuffs.join('/')} of ${range === 'Party' ? 'all foes' : '1 foe'} by ${debuffs[0].includes('Double') ? '2 ranks' : '1 rank'} for 3 turns.`;
-		}
+		const isAllyRangeFunc = (r: AllyRange | EnemyRange): r is AllyRange => ['Ally', 'Party'].includes(range);
+		const isAllyRange = isAllyRangeFunc(range);
+		this.description = negate
+			? `Negates status ${isAllyRange ? 'de' : ''}buff effects on all ${isAllyRange ? 'allies' : 'foes'}.`
+			: isAllyRange
+				? `Raises ${buffs.length === 3 ? 'all stats' : buffs.join('/')} of ${range === 'Party' ? 'all allies' : '1 ally'} by ${buffs[0].includes('Double') ? '2 ranks' : '1 rank'} for 3 turns${surround ? ' when surrounded' : ''}.`
+				: `Lowers ${debuffs.length === 3 ? 'all stats' : debuffs.join('/')} of ${range === 'All' ? 'all foes' : '1 foe'} by ${debuffs[0].includes('Double') ? '2 ranks' : '1 rank'} for 3 turns.`;
 
 		this.auto = data.auto;
 		this.buffs = buffs;
