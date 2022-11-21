@@ -1223,23 +1223,6 @@ const skills: AnySkillData[] = [
 		flags: []
 	},
 	{
-		name: 'Checkmate',
-		affinity: 'Support',
-		type: 'SUPPORT',
-		unique: true,
-		range: 'One',
-		cost: 90,
-		surround: false,
-		buffs: [],
-		negate: false,
-		debuffs: [
-			'Attack',
-			'Defense',
-			'Accuracy/Evasion'
-		],
-		auto: []
-	},
-	{
 		name: 'Cleave',
 		affinity: 'Phys',
 		type: 'ATTACK',
