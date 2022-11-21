@@ -1,4 +1,5 @@
 import { readFileSync } from 'node:fs';
+import path from 'node:path';
 import { Collection } from '@discordjs/collection';
 import { formatPossessive, normalize } from '@squiddleton/util';
 import type { DemonData, PersonaData } from './dataTypes';
@@ -67,7 +68,7 @@ export class Demon implements DemonData {
 		return `${this.race} ${this.name}`;
 	}
 	get image() {
-		return readFileSync(`${__dirname}/images/demons/${this.devName}.png`);
+		return readFileSync(path.join(__dirname, '..', `images/demons/${this.devName}.png`));
 	}
 	static array: Demon[] = [];
 	static collection: Collection<string, Demon> = new Collection();
