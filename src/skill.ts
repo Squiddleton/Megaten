@@ -113,7 +113,6 @@ export class AttackSkill extends Skill {
 	ailments: {
 		name: Ailment;
 		chance: number;
-
 	}[];
 	series: Series;
 	constructor(data: AttackSkillData) {
