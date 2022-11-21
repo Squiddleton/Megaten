@@ -2,6 +2,7 @@ import { readFileSync } from 'node:fs';
 import { Collection } from '@discordjs/collection';
 import { formatPossessive, normalize } from '@squiddleton/util';
 import demonData from './demonList';
+import MegatenError from './error';
 import type { DemonData, PersonaData } from './listTypes';
 import type { Arcana, Element, Game, Inherit, Race, Stage } from './types';
 
@@ -74,8 +75,8 @@ export class Demon implements DemonData {
 	static get(name: string, error?: boolean): Demon | null;
 	static get(name: string, error = false) {
 		name = normalize(name);
-		const found = Demon.collection.get(name) ?? Demon.collection.find(demon => demon.aliases.includes(name)) ?? null;
-		if (error && found === null) throw new Error(`No Demon was found with the name "${name}"`);
+		const found = this.collection.get(name) ?? Demon.collection.find(demon => demon.aliases.includes(name)) ?? null;
+		if (error && found === null) throw new MegatenError(name, 'Demon');
 		return found;
 	}
 }
@@ -96,6 +97,18 @@ export class Persona extends Demon implements PersonaData {
 	}
 	static array: Persona[] = [];
 	static collection: Collection<string, Persona> = new Collection();
+	static get(name: string, error: true): Persona;
+	static get(name: string, error?: boolean): Persona | null;
+	static get(name: string, error = false) {
+		try {
+			return super.get(name, error);
+		}
+		catch (e) {
+			if (e instanceof MegatenError) {
+				throw new MegatenError(name, 'Persona');
+			}
+		}
+	}
 	toString() {
 		return `${formatPossessive(this.user)} ${this.name}`;
 	}

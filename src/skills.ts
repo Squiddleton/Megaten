@@ -1,5 +1,6 @@
 import { Collection } from '@discordjs/collection';
 import { normalize } from '@squiddleton/util';
+import MegatenError from './error';
 import type { AilBoostSkillData, AilDefensiveSkillData, AilmentSkillData, AttackSkillData, AutoBuffSkillData, BarrierBreakSkillData, BarrierSkillData, BlockSkillData, BoostSkillData, BreakSkillData, ChargeSkillData, CritBoostSkillData, CritSkillData, DefensiveSkillData, EndureSkillData, EvasionSkillData, HalveSkillData, InstaKillBoostSkillData, MasterSkillData, MiscSkillData, NaviSkillData, PersonaCounterSkillData, PostBattleSkillData, RecoverySkillData, RegenSkillData, SMTCounterSkillData, SiphonSkillData, SkillData, SpringSkillData, SupportSkillData, SusceptibilitySkillData, TauntSkillData, WallSkillData } from './listTypes';
 import skillData from './skillList';
 import type { Affinity, AilResistance, Ailment, AttackDisplay, Barrier, Buff, Charge, ChargeRange, CounterAffinity, CounterDisplay, Element, HPMP, HPMPAil, LightDark, PostBattleStat, Range, RecoveryAmount, Resistance, RestoreCriteria, SMTElement, Series, SkillType } from './types';
@@ -23,7 +24,7 @@ export class Skill implements SkillData {
 	static get(name: string, error?: boolean): AnySkill | null;
 	static get(name: string, error = false) {
 		const found = this.collection.get(normalize(name)) ?? null;
-		if (error && found === null) throw new Error(`No Skill was found with the name "${name}"`);
+		if (error && found === null) throw new MegatenError(name, 'Skill');
 		return found;
 	}
 }

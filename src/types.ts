@@ -30,6 +30,8 @@ export type HPMP = 'HP' | 'MP';
 export type HPMPAil = HPMP | 'HPMP' | 'AIL';
 export type PostBattleStat = HPMP | 'HPMP' | 'EXP' | 'Money';
 
+export type MegatenErrorType = 'Demon' | 'Persona' | 'Skill';
+
 export type Race = 'Amatsu' | 'Avatar' | 'Avian' | 'Beast' | 'Brute' | 'Deity' | 'Devil' | 'Divine' | 'Dragon' | 'Drake' | 'Element' | 'Fairy' | 'Fallen'
 | 'Femme' | 'Fiend' | 'Foul' | 'Fury' | 'Genma' | 'Godly' | 'Haunt' | 'Herald' | 'Holy' | 'Jaki' | 'Jirae' | 'Kishin' | 'Kunitsu' | 'Lady'
 | 'Megami' | 'Mitama' | 'Night' | 'Nymph' | 'Persona' | 'Picaro' | 'Raptor' | 'Snake' | 'Treasure' | 'Tyrant' | 'Vile' | 'Wargod' | 'Wilder' | 'Yoma' | null;
