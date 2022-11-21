@@ -26,13 +26,22 @@ npm install megaten
 After installation, you may use it through methods such as the following:
 
 ```javascript
-const megaten = require('megaten') // Or, "import megaten from 'megaten'" in ES6. Destructuring syntax is also supported
+const { Demon, Skill, Persona } = require('megaten') // Supports CommonJS, ES6, star import, and destructuring syntax
 
-// All get... functions find by the input's name without attention to capitalization, spaces, punctuation, etc. via the exported "noPunc" utility function
-const jack = megaten.getDemon('Jack Frost!!!') // Gets a Demon instance
-const bufu = megaten.getSkill('bufu') // Gets a Skill instance
+// get() functions find by the input's name without attention to capitalization, spaces, punctuation, etc. via the normalize() utility function
+const jack = Demon.get('Jack Frost!!!'); // Gets a Demon instance; may also return a Persona instance, typeguarded via Demon.prototype.isPersona()
+const bufu = Skill.get('bufu'); // Gets a Skill instance
+const zorro = Persona.get('ZORRO!'); // Gets a guaranteed Persona instance
 
-const { demons, skills } = megaten // Gets full arrays of the respective data instances
+const demonArray = Demon.array; // Gets an array of all demons
+const demonCollection = Demon.collection; // Gets a discord.js Collection of all demons
+// The other structures also have static .array and .collection properties
+const skillArray = Skill.array;
+const personaCollection = Persona.collection;
+
+// All get() functions take optional arguments that typeguard for nonexistent structures
+const nullDemon = Demon.get('Kazuma Kaneko'); // Returns null; typed as "Demon | null"
+const errorDemon = Demon.get('Masayuki Doi', true); // Throws a MegatenError; typed as just "Demon"
 ```
 
 ## Demons
@@ -121,90 +130,7 @@ Persona {
       name: 'Patra',
       level: 5
     },
-    {
-      name: 'Media',
-      level: 11
-    },
-    {
-      name: 'Lucky Punch',
-      level: 13
-    },
-    {
-      name: 'Magaru',
-      level: 16
-    },
-    {
-      name: 'Pulinpa',
-      level: 19
-    },
-    {
-      name: 'Me Patra',
-      level: 21
-    },
-    {
-      name: 'Diarama',
-      level: 24
-    },
-    {
-      name: 'Garula',
-      level: 26
-    },
-    {
-      name: 'Recarm',
-      level: 28
-    },
-    {
-      name: 'Wind Break',
-      level: 32
-    },
-    {
-      name: 'Mediarama',
-      level: 34
-    },
-    {
-      name: 'Magarula',
-      level: 37
-    },
-    {
-      name: 'Miracle Punch',
-      level: 40
-    },
-    {
-      name: 'Wind Boost',
-      level: 43
-    },
-    {
-      name: 'Samarecarm',
-      level: 45
-    },
-    {
-      name: 'Diarahan',
-      level: 49
-    },
-    {
-      name: 'Garudyne',
-      level: 52
-    },
-    {
-      name: 'Masukunda',
-      level: 55
-    },
-    {
-      name: 'Mediarahan',
-      level: 58
-    },
-    {
-      name: 'Magarudyne',
-      level: 62
-    },
-    {
-      name: 'Wind Amp',
-      level: 69
-    },
-    {
-      name: 'Salvation',
-      level: 75
-    }
+    // ...
   ],
   weak: [
     'Elec'
@@ -218,20 +144,18 @@ Persona {
   drain: [],
   repel: [],
   game: 'p5',
-  image: Buffer {...},
-  isPersona(): true,
   user: 'Morgana',
   stage: 2,
   evoSkill: "Evade Elec",
+  image: Buffer {...},
+  isPersona(): true,
   evolution: Persona {...}
 }
 ```
 
-The `demons` array contains both Demon and Persona instances. For type-guarding, use `Demon.prototype.isPersona()` which returns `true` for Persona instances and `false` for the base class.
-
 ## Skills
 
-Each skill is marked by a type property which groups similar skill instances together. Please see index.d.ts or use IntelliSense for each type's format.
+Each skill is marked by a type property which groups similar skill instances together. Refer to the types in [src/skill.ts](src/skill.ts) or use your IDE for each type of skill's format.
 
 ### Example
 
@@ -239,9 +163,9 @@ Each skill is marked by a type property which groups similar skill instances tog
 AttackSkill {
   name: 'Ziodyne',
   devName: 'ziodyne',
+  unique: false,
   affinity: 'Elec',
   type: 'ATTACK',
-  unique: false,
   range: 1,
   cost: {
     type: 'MP',
@@ -266,10 +190,10 @@ AttackSkill {
 * Skills with major changes to their function (e.g. Taunt in SMTV vs. Taunt in P5) are split into separate skills ("Taunt" vs. "Taunt -Persona-").
 * Dashes are used instead of parentheses due to a similar naming scheme used in official song titles (e.g. "Last Surprise -Scramble-").
 * Skills with specific uses and few similar skills are placed into a "MISC" type. Their "effect" property lists the skill's description in its last major appearance.
-* Typings are designed to be as specific as possible for efficient use.
+* Typings are designed to be as specific as possible for IntelliSense and TypeScript usage.
 * Images originate from the best obtainable picture of the demon found at the current time. These will be updated if/when renders are available for many Personas and classic demons.
 * Terms with multiple series-dependent names are given the name from SMTV (e.g. Vitality over Endurance, Light over Bless, Seal over Forget). However, Force and Wind remain separated.
-* Kouha/Eiha skills were changed to Hama/Mudo skills since the latter deal damage in the latest installments.
+* Kouha/Eiha skills were changed to Hama/Mudo skills since the latter also deal damage in the latest installments.
 
 ## Credits
 
