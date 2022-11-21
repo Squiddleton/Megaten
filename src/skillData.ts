@@ -1,4 +1,4 @@
-import type { AnySkillData } from './skills';
+import type { AnySkillData } from './skill';
 
 const skills: AnySkillData[] = [
 	{
