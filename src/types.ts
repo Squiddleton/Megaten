@@ -20,8 +20,8 @@ export type Buff = 'Attack' | 'Defense' | 'Accuracy/Evasion' | 'Double Defense' 
 
 export type PersonaAffinity = 'Gun' | 'Wind' | 'Psy' | 'Nuke';
 export type SMTAffinity = 'Force';
-export type AnyAffinity = 'Phys' | 'Fire' | 'Ice' | 'Elec' | 'Light' | 'Dark' | 'Almighty' | 'Recovery' | 'Ailment' | 'Support' | 'Passive' | SMTAffinity | PersonaAffinity;
-export type DamagingAffinity = Exclude<AnyAffinity, 'Recovery' | 'Ailment' | 'Support' | 'Passive'>;
+export type AnyAffinity = 'Phys' | 'Fire' | 'Ice' | 'Elec' | 'Light' | 'Dark' | 'Almighty' | 'Recovery' | 'Ailment' | 'Support' | 'Passive' | 'Misc' | SMTAffinity | PersonaAffinity;
+export type DamagingAffinity = Exclude<AnyAffinity, 'Recovery' | 'Ailment' | 'Support' | 'Passive' | 'Misc'>;
 export type CounterAffinity = 'Phys' | 'Dark';
 
 export type Game = 'p3' | 'p4' | 'p5' | 'smt5';

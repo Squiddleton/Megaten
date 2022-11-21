@@ -9072,7 +9072,7 @@ const skills: AnySkillData[] = [
 	},
 	{
 		name: 'Trafuri',
-		affinity: 'Support',
+		affinity: 'Misc',
 		type: 'MISC',
 		unique: false,
 		cost: 6,
