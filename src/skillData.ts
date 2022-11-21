@@ -1175,7 +1175,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Passive',
 		type: 'NAVI',
 		unique: false,
-		effect: ''
+		effect: 'Escape random battles successfully.'
 	},
 	{
 		name: 'Champion"s Cup',
@@ -1259,7 +1259,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Passive',
 		type: 'NAVI',
 		unique: false,
-		effect: ''
+		effect: 'Reveals all elemental affinities on all enemies.'
 	},
 	{
 		name: 'Concentrate',
@@ -2404,7 +2404,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Passive',
 		type: 'NAVI',
 		unique: false,
-		effect: ''
+		effect: 'Reveal the location of Shadows on each floor over a wide area.'
 	},
 	{
 		name: 'Energy Drain',
@@ -2469,7 +2469,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Passive',
 		type: 'NAVI',
 		unique: false,
-		effect: ''
+		effect: 'Return to the entrance of Tartarus or the Desert of Doors.'
 	},
 	{
 		name: 'Estoma',
@@ -3154,7 +3154,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Passive',
 		type: 'NAVI',
 		unique: false,
-		effect: ''
+		effect: 'Reveal an enemy\'s stats, weak points, and skills.'
 	},
 	{
 		name: 'Gaea Rage',
@@ -3756,7 +3756,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Passive',
 		type: 'NAVI',
 		unique: false,
-		effect: ''
+		effect: 'Recover 5% HP after battle (party).'
 	},
 	{
 		name: 'Heal Pleroma',
@@ -6719,7 +6719,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Passive',
 		type: 'NAVI',
 		unique: false,
-		effect: ''
+		effect: 'Ask Fuuka to use Oracle.'
 	},
 	{
 		name: 'Oratorio',
@@ -7550,7 +7550,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Passive',
 		type: 'NAVI',
 		unique: false,
-		effect: ''
+		effect: 'Recover 5% SP after battle (party).'
 	},
 	{
 		name: 'Re Patra',
@@ -8454,7 +8454,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Passive',
 		type: 'NAVI',
 		unique: false,
-		effect: ''
+		effect: 'Recover 10% HP after battle (party).'
 	},
 	{
 		name: 'Steel Needle',
@@ -8593,7 +8593,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Passive',
 		type: 'NAVI',
 		unique: false,
-		effect: ''
+		effect: 'Displays all buffs and debuffs currently in effect.'
 	},
 	{
 		name: 'Survival Trick',
@@ -8889,7 +8889,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Passive',
 		type: 'NAVI',
 		unique: false,
-		effect: ''
+		effect: 'Reveal the effectiveness of an attack.'
 	},
 	{
 		name: 'Thunder Reign',
@@ -9083,7 +9083,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Passive',
 		type: 'NAVI',
 		unique: false,
-		effect: ''
+		effect: 'Reveal the location of treasure chests on each floor.'
 	},
 	{
 		name: 'Treasure Skimmer',
@@ -9280,7 +9280,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Passive',
 		type: 'NAVI',
 		unique: false,
-		effect: ''
+		effect: 'Recover 10% SP after battle (party).'
 	},
 	{
 		name: 'Vile Assault',
@@ -9414,7 +9414,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Passive',
 		type: 'NAVI',
 		unique: false,
-		effect: ''
+		effect: 'Reveal an enemy\'s affinity at the start of battle.'
 	},
 	{
 		name: 'White Dracostrike',
