@@ -829,7 +829,7 @@ export class WallSkill extends Skill implements WallSkillData {
 	}
 }
 
-const dataToClass = (data: AnySkillData): AnySkill => {
+Skill.array = skillData.map(data => {
 	switch (data.type) {
 		case 'AILBOOST': return new AilBoostSkill(data);
 		case 'AILDEFENSIVE': return new AilDefensiveSkill(data);
@@ -864,9 +864,7 @@ const dataToClass = (data: AnySkillData): AnySkill => {
 		case 'TAUNT': return new TauntSkill(data);
 		case 'WALL': return new WallSkill(data);
 	}
-};
-
-Skill.array = skillData.map(skill => dataToClass(skill));
+});
 Skill.collection = new Collection(Skill.array.map(skill => [skill.devName, skill]));
 
 export type AnySkillData = AilBoostSkillData | AilDefensiveSkillData | AilmentSkillData | AttackSkillData | AutoBuffSkillData | BarrierSkillData | BarrierBreakSkillData | BlockSkillData | BoostSkillData | BreakSkillData
