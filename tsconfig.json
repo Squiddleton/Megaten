@@ -3,19 +3,15 @@
     "target": "ESNext",
     "module": "CommonJS",
     "rootDir": "src",
-    "moduleResolution": "node",  
-    "strict": true,
-    "skipLibCheck": true,
+    "declaration": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "outDir": "dist",
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
-    "outDir": "dist",
-    "declaration": true,
-    "resolveJsonModule": true
-  },
-  "include": [
-    "src"
-  ],
-  "exclude": [
-    "node_modules"
-  ]
+    "importsNotUsedAsValues": "error",
+    "strict": true,
+    "useUnknownInCatchVariables": true,
+    "skipLibCheck": true
+  }
 }
