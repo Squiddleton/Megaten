@@ -6,19 +6,34 @@ import skillData from './skillData';
 import type { AilResistance, Ailment, AllyRange, AnyAffinity, AnyRange, AttackDisplay, Barrier, Buff, Charge, CounterAffinity, CounterDisplay, DamagingAffinity, EnemyRange, HPMP, HPMPAil, LightDark, PersonaAffinity, PostBattleStat, RecoveryAmount, Resistance, RestoreCriteria, SMTAffinity, Series, SkillType } from './types';
 
 export abstract class Skill implements SkillData {
+	/** The skill's name */
 	name: string;
+	/** The skill's unique, normalized name */
 	devName: string;
+	/** Whether the skill is unique to any specific demon(s) */
 	unique: boolean;
+	/** The skill's affinity */
 	abstract affinity: AnyAffinity;
+	/** The skill's type */
 	abstract type: SkillType;
+	/** The skill's description */
 	abstract description: string;
 	constructor(data: SkillData) {
 		this.name = data.name;
 		this.devName = normalize(data.name);
 		this.unique = data.unique;
 	}
+	/** An array of every Skill instance */
 	static array: AnySkill[] = [];
+	/** A Collection of every Skill instance, mapped by their devName properties */
 	static collection: Collection<string, AnySkill> = new Collection();
+	/**
+	 *
+	 * Gets a Skill instance by its name.
+	 *
+	 * @param name - The skill's name
+	 * @param error - Whether to throw an exception instead of returning null if no skill is found; defaults to false
+	 */
 	static get(name: string, error: true): AnySkill;
 	static get(name: string, error?: boolean): AnySkill | null;
 	static get(name: string, error = false) {
@@ -76,13 +91,13 @@ export class AilmentSkill extends Skill implements AilmentSkillData {
 	chance: number;
 	cost: number;
 	flags: string[];
-	range: EnemyRange;
+	range: Exclude<EnemyRange, 'Random'>;
 	constructor(data: AilmentSkillData) {
 		const { ailments, flags, range } = data;
 		super(data);
 		this.affinity = data.affinity;
 		this.type = data.type;
-		this.description = `Chance of inflicting ${ailments.join(' and ')} to ${range ? '1 foe' : 'all foes'}${flags.length === 0 ? '' : `and lowers ${flags.map(flag => flag.split(' ')[0]).join('')} by ${data.flags.every(flag => flag.includes('Greatly')) ? '2 ranks' : '1 rank'} for 3 turns.`}`;
+		this.description = `Chance of inflicting ${ailments.join(' and ')} to ${range === 'One' ? '1 foe' : 'all foes'}${flags.length === 0 ? '' : `and lowers ${flags.map(flag => flag.split(' ')[0]).join('')} by ${data.flags.every(flag => flag.includes('Greatly')) ? '2 ranks' : '1 rank'} for 3 turns.`}`;
 		this.ailments = ailments;
 		this.chance = data.chance;
 		this.cost = data.cost;
@@ -110,7 +125,7 @@ export class AttackSkill extends Skill implements AttackSkillData {
 		amount: number;
 		display: AttackDisplay;
 	};
-	range: EnemyRange | 'Random';
+	range: EnemyRange;
 	series: Series;
 	constructor(data: AttackSkillData) {
 		const { affinity, ailments, flags, max, min, power, range } = data;

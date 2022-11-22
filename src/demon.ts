@@ -14,29 +14,50 @@ function isPersona(demon: Demon | DemonData) {
 }
 
 export class Demon implements DemonData {
+	/** The demon's name */
 	name: string;
+	/** The demon's normalized, unique name */
 	devName: string;
+	/** Other names for the demon */
 	aliases: string[];
+	/** The affinity that this demon can inherit skills of */
 	inherit: Exclude<AnyAffinity, 'Gun' | 'Passive'>;
+	/** The demon's Arcana in Persona titles, or null if none */
 	arcana: Arcana | null;
+	/** The demon's race in Shin Megami Tensei titles, or null if none */
 	race: Race | null;
+	/** The demon's initial level */
 	level: number;
+	/** The demon's initial HP */
 	hp: number | null;
+	/** The demon's initial MP */
 	mp: number | null;
+	/** The demon's initial strength stat */
 	st: number;
+	/** The demon's initial vitality/endurance stat */
 	vi: number;
+	/** The demon's initial magic stat */
 	ma: number;
+	/** The demon's initial agility stat */
 	ag: number;
+	/** The demon's initial luck stat */
 	lu: number;
+	/** The skills that the demon learns by leveling up */
 	learnset: {
 		name: string;
 		level: number;
 	}[];
+	/** The affinities that the demon is weak to */
 	weak: DamagingAffinity[];
+	/** The affinities that the demon resists */
 	resist: DamagingAffinity[];
+	/** The affinities that the demon nullifies */
 	null: DamagingAffinity[];
+	/** The affinities that the demon drains */
 	drain: DamagingAffinity[];
+	/** The affinities that the demon repels */
 	repel: DamagingAffinity[];
+	/** The game that this demon's data originates from */
 	game: Game;
 	constructor(data: DemonData) {
 		this.name = data.name;
@@ -61,17 +82,29 @@ export class Demon implements DemonData {
 		this.repel = data.repel;
 		this.game = data.game;
 	}
+	/** Whether the demon is a Persona instance */
 	isPersona(): this is Persona {
 		return isPersona(this);
 	}
+	/** Returns a string in "(Race) (Name)" format, or just the name if the race is null */
 	toString() {
-		return `${this.race} ${this.name}`;
+		return this.race === null ? this.name : `${this.race} ${this.name}`;
 	}
+	/** An image of the demon */
 	get image() {
 		return readFileSync(path.join(__dirname, '..', `images/demons/${this.devName}.png`));
 	}
+	/** An array of every Demon and Persona instance */
 	static array: Demon[] = [];
+	/** A Collection of every Demon and Persona instance, mapped by their devName properties */
 	static collection: Collection<string, Demon> = new Collection();
+	/**
+	 *
+	 * Gets a Demon instance by its name.
+	 *
+	 * @param name - The demon's name
+	 * @param error - Whether to throw an exception instead of returning null if no demon is found; defaults to false
+	 */
 	static get(name: string, error: true): Demon;
 	static get(name: string, error?: boolean): Demon | null;
 	static get(name: string, error = false) {
@@ -83,8 +116,11 @@ export class Demon implements DemonData {
 }
 
 export class Persona extends Demon implements PersonaData {
+	/** The Persona's user */
 	user: string;
+	/** The Persona's stage of evolution */
 	stage: Stage;
+	/** The skill that the Persona will learn upon reaching this stage */
 	evoSkill: string | null;
 	constructor(data: PersonaData) {
 		super(data);
@@ -92,12 +128,28 @@ export class Persona extends Demon implements PersonaData {
 		this.stage = data.stage;
 		this.evoSkill = data.evoSkill;
 	}
+	/** The Persona that this Persona can evolve into, or null if none */
 	get evolution(): Persona | null {
 		const found = Demon.collection.find((demon): demon is Persona => demon.isPersona() && demon.user === this.user && demon.stage === (this.stage + 1));
 		return found === undefined ? null : new Persona(found);
 	}
+	/**
+	 * Returns a string in "(User) (Name)" format
+	 */
+	toString() {
+		return `${formatPossessive(this.user)} ${this.name}`;
+	}
+	/** An array of every Persona instance */
 	static array: Persona[] = [];
+	/** A Collection of every Persona instance, mapped by their devName properties */
 	static collection: Collection<string, Persona> = new Collection();
+	/**
+	 *
+	 * Gets a Persona instance by its name.
+	 *
+	 * @param name - The Persona's name
+	 * @param error - Whether to throw an exception instead of returning null if no Persona is found; defaults to false
+	 */
 	static get(name: string, error: true): Persona;
 	static get(name: string, error?: boolean): Persona | null;
 	static get(name: string, error = false) {
@@ -109,9 +161,6 @@ export class Persona extends Demon implements PersonaData {
 				throw new MegatenError(name, 'Persona');
 			}
 		}
-	}
-	toString() {
-		return `${formatPossessive(this.user)} ${this.name}`;
 	}
 }
 

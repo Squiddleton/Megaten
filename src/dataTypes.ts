@@ -1,5 +1,6 @@
 import type { AilResistance, Ailment, AllyRange, AnyAffinity, AnyRange, Arcana, AttackDisplay, Barrier, Buff, Charge, CounterAffinity, CounterDisplay, DamagingAffinity, EnemyRange, Game, HPMP, HPMPAil, LightDark, PersonaAffinity, PostBattleStat, Race, RecoveryAmount, Resistance, RestoreCriteria, SMTAffinity, Series, SkillType, Stage } from './types';
 
+/** Data used for constructing a Demon instance */
 export interface DemonData {
 	name: string;
 	aliases: string[];
@@ -26,12 +27,14 @@ export interface DemonData {
 	game: Game;
 }
 
+/** Data used for constructing a Persona instance */
 export interface PersonaData extends DemonData {
 	user: string;
 	stage: Stage;
 	evoSkill: string | null;
 }
 
+/** Data used for constructing a Skill instance */
 export interface SkillData {
 	name: string;
 	affinity: AnyAffinity;
@@ -61,7 +64,7 @@ export interface AilmentSkillData extends SkillData {
 	chance: number;
 	cost: number;
 	flags: string[];
-	range: EnemyRange;
+	range: Exclude<EnemyRange, 'Random'>;
 }
 
 export interface AttackSkillData extends SkillData {
@@ -82,7 +85,7 @@ export interface AttackSkillData extends SkillData {
 		amount: number;
 		display: AttackDisplay;
 	};
-	range: EnemyRange | 'Random';
+	range: EnemyRange;
 	series: Series;
 }
 
