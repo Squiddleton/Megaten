@@ -277,7 +277,7 @@ export interface SupportSkillData extends SkillData {
 	cost: number;
 	debuffs: Buff[];
 	negate: boolean;
-	range: AnyRange;
+	range: Exclude<AnyRange, 'Random'>;
 	surround: boolean;
 }
 

@@ -880,7 +880,7 @@ export class SupportSkill extends Skill implements SupportSkillData {
 	/** Whether the skill negates its buffs or debuffs from enemies or allies, respectively */
 	negate: boolean;
 	/** The range that the skill targets */
-	range: AnyRange;
+	range: Exclude<AnyRange, 'Random'>;
 	/** Whether the skill only takes effect when surrounded */
 	surround: boolean;
 	constructor(data: SupportSkillData) {
@@ -889,7 +889,7 @@ export class SupportSkill extends Skill implements SupportSkillData {
 		this.affinity = data.affinity;
 		this.type = data.type;
 
-		const isAllyRangeFunc = (r: AnyRange): r is AllyRange => ['Ally', 'Party'].includes(range);
+		const isAllyRangeFunc = (r: Exclude<AnyRange, 'Random'>): r is AllyRange => ['Ally', 'Party'].includes(range);
 		const isAllyRange = isAllyRangeFunc(range);
 		this.description = negate
 			? `Negates status ${isAllyRange ? 'de' : ''}buff effects on all ${isAllyRange ? 'allies' : 'foes'}.`
