@@ -38,6 +38,7 @@ export type Race = 'Amatsu' | 'Avatar' | 'Avian' | 'Beast' | 'Brute' | 'Deity' |
 
 export type AllyRange = 'Ally' | 'Party';
 export type EnemyRange = 'One' | 'All';
+export type AnyRange = AllyRange | EnemyRange;
 
 export type RecoveryAmount = 'Slight' | 'Moderate' | 'Half' | 'Full' | '130%';
 

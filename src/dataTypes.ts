@@ -1,4 +1,4 @@
-import type { AilResistance, Ailment, AllyRange, AnyAffinity, Arcana, AttackDisplay, Barrier, Buff, Charge, CounterAffinity, CounterDisplay, DamagingAffinity, EnemyRange, Game, HPMP, HPMPAil, LightDark, PersonaAffinity, PostBattleStat, Race, RecoveryAmount, Resistance, RestoreCriteria, SMTAffinity, Series, SkillType, Stage } from './types';
+import type { AilResistance, Ailment, AllyRange, AnyAffinity, AnyRange, Arcana, AttackDisplay, Barrier, Buff, Charge, CounterAffinity, CounterDisplay, DamagingAffinity, EnemyRange, Game, HPMP, HPMPAil, LightDark, PersonaAffinity, PostBattleStat, Race, RecoveryAmount, Resistance, RestoreCriteria, SMTAffinity, Series, SkillType, Stage } from './types';
 
 export interface DemonData {
 	name: string;
@@ -274,7 +274,7 @@ export interface SupportSkillData extends SkillData {
 	cost: number;
 	debuffs: Buff[];
 	negate: boolean;
-	range: AllyRange | EnemyRange;
+	range: AnyRange;
 	surround: boolean;
 }
 

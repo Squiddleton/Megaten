@@ -3,7 +3,7 @@ import { normalize } from '@squiddleton/util';
 import type { AilBoostSkillData, AilDefensiveSkillData, AilmentSkillData, AttackSkillData, AutoBuffSkillData, BarrierBreakSkillData, BarrierSkillData, BlockSkillData, BoostSkillData, BreakSkillData, ChargeSkillData, CritBoostSkillData, CritSkillData, DefensiveSkillData, EndureSkillData, EvasionSkillData, HalveSkillData, InstaKillBoostSkillData, MasterSkillData, MiscSkillData, NaviSkillData, PersonaCounterSkillData, PostBattleSkillData, RecoverySkillData, RegenSkillData, SMTCounterSkillData, SiphonSkillData, SkillData, SpringSkillData, SupportSkillData, SusceptibilitySkillData, TauntSkillData, WallSkillData } from './dataTypes';
 import MegatenError from './error';
 import skillData from './skillData';
-import type { AilResistance, Ailment, AllyRange, AnyAffinity, AttackDisplay, Barrier, Buff, Charge, CounterAffinity, CounterDisplay, DamagingAffinity, EnemyRange, HPMP, HPMPAil, LightDark, PersonaAffinity, PostBattleStat, RecoveryAmount, Resistance, RestoreCriteria, SMTAffinity, Series, SkillType } from './types';
+import type { AilResistance, Ailment, AllyRange, AnyAffinity, AnyRange, AttackDisplay, Barrier, Buff, Charge, CounterAffinity, CounterDisplay, DamagingAffinity, EnemyRange, HPMP, HPMPAil, LightDark, PersonaAffinity, PostBattleStat, RecoveryAmount, Resistance, RestoreCriteria, SMTAffinity, Series, SkillType } from './types';
 
 export abstract class Skill implements SkillData {
 	name: string;
@@ -785,7 +785,7 @@ export class SupportSkill extends Skill implements SupportSkillData {
 	cost: number;
 	debuffs: Buff[];
 	negate: boolean;
-	range: AllyRange | EnemyRange;
+	range: AnyRange;
 	surround: boolean;
 	constructor(data: SupportSkillData) {
 		const { buffs, debuffs, negate, range, surround } = data;
@@ -793,7 +793,7 @@ export class SupportSkill extends Skill implements SupportSkillData {
 		this.affinity = data.affinity;
 		this.type = data.type;
 
-		const isAllyRangeFunc = (r: AllyRange | EnemyRange): r is AllyRange => ['Ally', 'Party'].includes(range);
+		const isAllyRangeFunc = (r: AnyRange): r is AllyRange => ['Ally', 'Party'].includes(range);
 		const isAllyRange = isAllyRangeFunc(range);
 		this.description = negate
 			? `Negates status ${isAllyRange ? 'de' : ''}buff effects on all ${isAllyRange ? 'allies' : 'foes'}.`
