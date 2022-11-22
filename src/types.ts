@@ -7,7 +7,7 @@ export type AilResistance = 'Resist' | 'Null';
 export type Resistance = AilResistance | 'Drain' | 'Repel';
 
 /** Ranges for skills targeting allies */
-export type AllyRange = 'Ally' | 'Party';
+export type AllyRange = 'Self' | 'Ally' | 'Party';
 /** Ranges for skills targeting enemies */
 export type EnemyRange = 'One' | 'All' | 'Random';
 /** Ranges for skills targeting specific entities */

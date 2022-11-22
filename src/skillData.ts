@@ -456,7 +456,7 @@ const skills: AnySkillData[] = [
 		type: 'AUTOBUFF',
 		unique: false,
 		buff: 'Attack',
-		range: 'Ally'
+		range: 'Self'
 	},
 	{
 		name: 'Auto-Maraku',
@@ -1756,7 +1756,7 @@ const skills: AnySkillData[] = [
 		type: 'AUTOBUFF',
 		unique: false,
 		buff: 'Defense',
-		range: 'Ally'
+		range: 'Self'
 	},
 	{
 		name: 'Dekaja',
@@ -8394,7 +8394,7 @@ const skills: AnySkillData[] = [
 		type: 'AUTOBUFF',
 		unique: false,
 		buff: 'Accuracy/Evasion',
-		range: 'Ally'
+		range: 'Self'
 	},
 	{
 		name: 'Spell Master',

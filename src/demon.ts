@@ -30,7 +30,7 @@ export class Demon implements DemonData {
 	level: number;
 	/** The demon's initial HP */
 	hp: number | null;
-	/** The demon's initial MP */
+	/** The demon's initial MP/SP */
 	mp: number | null;
 	/** The demon's initial strength stat */
 	st: number;

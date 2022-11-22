@@ -93,7 +93,7 @@ export interface AutoBuffSkillData extends SkillData {
 	affinity: 'Passive';
 	type: 'AUTOBUFF';
 	buff: Exclude<Buff, 'Double Accuracy/Evasion' | 'Double Defense'>;
-	range: AllyRange;
+	range: 'Self' | 'Party';
 }
 
 export interface BarrierSkillData extends SkillData {
@@ -101,7 +101,7 @@ export interface BarrierSkillData extends SkillData {
 	type: 'BARRIER';
 	barriers: Barrier[];
 	cost: number;
-	range: AllyRange;
+	range: Exclude<AllyRange, 'Self'>;
 }
 
 export interface BarrierBreakSkillData extends SkillData {
@@ -138,7 +138,7 @@ export interface ChargeSkillData extends SkillData {
 	type: 'CHARGE';
 	charge: Charge;
 	cost: number;
-	range: AllyRange | 'Self';
+	range: AllyRange;
 }
 
 export interface PersonaCounterSkillData extends SkillData {
@@ -151,7 +151,7 @@ export interface CritSkillData extends SkillData {
 	affinity: 'Support';
 	type: 'CRIT';
 	cost: number;
-	range: AllyRange | 'All';
+	range: Exclude<AllyRange, 'Self'> | 'All';
 }
 
 export interface CritBoostSkillData extends SkillData {
@@ -230,7 +230,7 @@ export interface RecoverySkillData extends SkillData {
 	buffs: Buff[];
 	cost: number;
 	flags: string[];
-	range: AllyRange;
+	range: Exclude<AllyRange, 'Self'>;
 }
 
 export interface RegenSkillData extends SkillData {
