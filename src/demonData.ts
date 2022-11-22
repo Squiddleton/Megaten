@@ -115,7 +115,7 @@ const demons: (DemonData | PersonaData)[] = [
 	{
 		name: 'Abdiel -Fallen-',
 		aliases: [
-			'abdiel'
+			'Abdiel'
 		],
 		inherit: 'Dark',
 		arcana: null,
@@ -2391,7 +2391,7 @@ const demons: (DemonData | PersonaData)[] = [
 	{
 		name: 'Athena',
 		aliases: [
-			'pallasathena'
+			'Pallas Athena'
 		],
 		inherit: 'Almighty',
 		arcana: 'Chariot',
@@ -3456,7 +3456,7 @@ const demons: (DemonData | PersonaData)[] = [
 	{
 		name: 'Byakko',
 		aliases: [
-			'baihu'
+			'Baihu'
 		],
 		inherit: 'Elec',
 		arcana: 'Temperance',
@@ -4254,7 +4254,7 @@ const demons: (DemonData | PersonaData)[] = [
 	{
 		name: 'Cerberus -P3-',
 		aliases: [
-			'cerberus'
+			'Cerberus'
 		],
 		inherit: 'Dark',
 		arcana: 'Strength',
@@ -5612,7 +5612,7 @@ const demons: (DemonData | PersonaData)[] = [
 	{
 		name: 'Feng Huang',
 		aliases: [
-			'phoenix'
+			'Phoenix'
 		],
 		inherit: 'Fire',
 		arcana: 'Faith',
@@ -6244,7 +6244,7 @@ const demons: (DemonData | PersonaData)[] = [
 	{
 		name: 'Genbu',
 		aliases: [
-			'xuanwu'
+			'Xuanwu'
 		],
 		inherit: 'Ice',
 		arcana: 'Temperance',
@@ -6293,7 +6293,7 @@ const demons: (DemonData | PersonaData)[] = [
 	{
 		name: 'Girimehkala',
 		aliases: [
-			'girimekhala'
+			'Girimekhala'
 		],
 		inherit: 'Phys',
 		arcana: 'Moon',
@@ -7503,8 +7503,8 @@ const demons: (DemonData | PersonaData)[] = [
 	{
 		name: 'Hokuto Seikun',
 		aliases: [
-			'beidouxingjun',
-			'beijiweng'
+			'Beidou Xingjun',
+			'Beiji Weng'
 		],
 		inherit: 'Elec',
 		arcana: 'Hierophant',
@@ -8146,7 +8146,7 @@ const demons: (DemonData | PersonaData)[] = [
 	{
 		name: 'Isis -P3-',
 		aliases: [
-			'isis'
+			'Isis'
 		],
 		inherit: 'Wind',
 		arcana: 'Lovers',
@@ -8514,7 +8514,7 @@ const demons: (DemonData | PersonaData)[] = [
 	{
 		name: 'Jack-o\'-Lantern',
 		aliases: [
-			'pyrojack'
+			'Pyro Jack'
 		],
 		inherit: 'Fire',
 		arcana: 'Magician',
@@ -10196,7 +10196,7 @@ const demons: (DemonData | PersonaData)[] = [
 	{
 		name: 'Kohryu',
 		aliases: [
-			'huanglong'
+			'Huang Long'
 		],
 		inherit: 'Almighty',
 		arcana: 'Hierophant',
@@ -10407,8 +10407,8 @@ const demons: (DemonData | PersonaData)[] = [
 	{
 		name: 'Koropokguru',
 		aliases: [
-			'koropokkuru',
-			'koropokkur'
+			'Koropokkuru',
+			'Koropokkur'
 		],
 		inherit: 'Ice',
 		arcana: 'Hermit',
@@ -10742,7 +10742,7 @@ const demons: (DemonData | PersonaData)[] = [
 	{
 		name: 'Kushinada',
 		aliases: [
-			'kushinadahime'
+			'Kushinada-Hime'
 		],
 		inherit: 'Recovery',
 		arcana: 'Lovers',
@@ -11304,7 +11304,7 @@ const demons: (DemonData | PersonaData)[] = [
 	{
 		name: 'Loki -P5-',
 		aliases: [
-			'loki'
+			'Loki'
 		],
 		inherit: 'Dark',
 		arcana: 'Justice',
@@ -12913,7 +12913,7 @@ const demons: (DemonData | PersonaData)[] = [
 	{
 		name: 'Mitra',
 		aliases: [
-			'mithra'
+			'Mithra'
 		],
 		inherit: 'Almighty',
 		arcana: 'Temperance',
@@ -13226,7 +13226,7 @@ const demons: (DemonData | PersonaData)[] = [
 	{
 		name: 'Muu Shuwuu',
 		aliases: [
-			'mohshuvuu'
+			'Moh Shuvuu'
 		],
 		inherit: 'Force',
 		arcana: 'Priestess',
@@ -13378,7 +13378,7 @@ const demons: (DemonData | PersonaData)[] = [
 	{
 		name: 'Nata Taishi',
 		aliases: [
-			'nezha'
+			'Nezha'
 		],
 		inherit: 'Phys',
 		arcana: 'Chariot',
@@ -13889,7 +13889,7 @@ const demons: (DemonData | PersonaData)[] = [
 	{
 		name: 'Nuwa -Snake-',
 		aliases: [
-			'nuwa'
+			'Nuwa'
 		],
 		inherit: 'Force',
 		arcana: null,
@@ -14475,7 +14475,7 @@ const demons: (DemonData | PersonaData)[] = [
 	{
 		name: 'Orpheus F',
 		aliases: [
-			'forpheus'
+			'F Orpheus'
 		],
 		inherit: 'Fire',
 		arcana: 'Fool',
@@ -14540,8 +14540,8 @@ const demons: (DemonData | PersonaData)[] = [
 	{
 		name: 'Orpheus F Picaro',
 		aliases: [
-			'forpheuspicaro',
-			'orpheuspicarof'
+			'F Orpheus Picaro',
+			'Orpheus Picaro F'
 		],
 		inherit: 'Almighty',
 		arcana: 'Fool',
@@ -14801,7 +14801,7 @@ const demons: (DemonData | PersonaData)[] = [
 	{
 		name: 'Oyamatsumi',
 		aliases: [
-			'ouyamatsumi'
+			'Ouyamatsumi'
 		],
 		inherit: 'Ice',
 		arcana: 'Strength',
@@ -15935,7 +15935,7 @@ const demons: (DemonData | PersonaData)[] = [
 	{
 		name: 'Queen Mab',
 		aliases: [
-			'queenmedb'
+			'Queen Medb'
 		],
 		inherit: 'Fire',
 		arcana: 'Magician',
@@ -16039,7 +16039,7 @@ const demons: (DemonData | PersonaData)[] = [
 	{
 		name: 'Raja Naga',
 		aliases: [
-			'nagaraja'
+			'Naga Raja'
 		],
 		inherit: 'Elec',
 		arcana: 'Temperance',
@@ -16514,7 +16514,7 @@ const demons: (DemonData | PersonaData)[] = [
 	{
 		name: 'Rokuten Maoh',
 		aliases: [
-			'rokutenmaou'
+			'Rokuten Maou'
 		],
 		inherit: 'Elec',
 		arcana: 'Emperor',
@@ -17003,7 +17003,7 @@ const demons: (DemonData | PersonaData)[] = [
 	{
 		name: 'Seiryu',
 		aliases: [
-			'qinglong'
+			'Qing Long'
 		],
 		inherit: 'Force',
 		arcana: 'Councillor',
@@ -17058,7 +17058,7 @@ const demons: (DemonData | PersonaData)[] = [
 	{
 		name: 'Seiten Taisei -P5-',
 		aliases: [
-			'seitentaisei'
+			'Seiten Taisei'
 		],
 		inherit: 'Elec',
 		arcana: 'Chariot',
@@ -17895,7 +17895,7 @@ const demons: (DemonData | PersonaData)[] = [
 	{
 		name: 'Sukuna-Hikona -P4-',
 		aliases: [
-			'sukunahikona'
+			'Sukuna-Hikona'
 		],
 		inherit: 'Almighty',
 		arcana: 'Fortune',
@@ -18217,7 +18217,7 @@ const demons: (DemonData | PersonaData)[] = [
 	{
 		name: 'Suzaku',
 		aliases: [
-			'zhuque'
+			'Zhuque'
 		],
 		inherit: 'Fire',
 		arcana: 'Sun',
@@ -19531,7 +19531,7 @@ const demons: (DemonData | PersonaData)[] = [
 	{
 		name: 'Tsukiyomi',
 		aliases: [
-			'tsukuyomi'
+			'Tsukuyomi'
 		],
 		inherit: 'Almighty',
 		arcana: 'Moon',
@@ -19594,7 +19594,7 @@ const demons: (DemonData | PersonaData)[] = [
 	{
 		name: 'Tsukiyomi Picaro',
 		aliases: [
-			'tsukuyomipicaro'
+			'Tsukuyomi Picaro'
 		],
 		inherit: 'Almighty',
 		arcana: 'Moon',
@@ -20484,7 +20484,7 @@ const demons: (DemonData | PersonaData)[] = [
 	{
 		name: 'Yaksini',
 		aliases: [
-			'yakshini'
+			'Yakshini'
 		],
 		inherit: 'Force',
 		arcana: 'Empress',

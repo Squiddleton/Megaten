@@ -76,7 +76,7 @@ export class Demon implements DemonData {
 	static get(name: string, error?: boolean): Demon | null;
 	static get(name: string, error = false) {
 		name = normalize(name);
-		const found = this.collection.get(name) ?? Demon.collection.find(demon => demon.aliases.includes(name)) ?? null;
+		const found = this.collection.get(name) ?? Demon.collection.find(demon => demon.aliases.some(alias => normalize(alias) === name)) ?? null;
 		if (error && found === null) throw new MegatenError(name, 'Demon');
 		return found;
 	}
