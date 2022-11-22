@@ -239,7 +239,7 @@ export interface RegenSkillData extends SkillData {
 	ambush: boolean;
 	amount: number;
 	baton: boolean;
-	hpmpail: HPMPAil;
+	stat: HPMPAil;
 	percent: boolean;
 }
 
@@ -266,7 +266,7 @@ export interface SpringSkillData extends SkillData {
 	affinity: 'Passive';
 	type: 'SPRING';
 	amount: number;
-	hpmp: HPMP;
+	stat: HPMP;
 }
 
 export interface SupportSkillData extends SkillData {

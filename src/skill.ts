@@ -777,11 +777,11 @@ export class RegenSkill extends Skill implements RegenSkillData {
 	/** Whether the skill only takes effect after a Baton Pass */
 	baton: boolean;
 	/** The stat that the skill recovers */
-	hpmpail: HPMPAil;
+	stat: HPMPAil;
 	/** Whether the amount is a percentage of its max instead of a fixed amount */
 	percent: boolean;
 	constructor(data: RegenSkillData) {
-		const { ambush, amount, baton, hpmpail } = data;
+		const { ambush, amount, baton, stat } = data;
 		super(data);
 		this.affinity = data.affinity;
 		this.type = data.type;
@@ -790,11 +790,11 @@ export class RegenSkill extends Skill implements RegenSkillData {
 			MP: baton ? `Restores ${amount} SP after a Baton Pass.` : `Restores ${amount} MP each turn in battle.`,
 			HPMP: ambush ? `Restores 5% max HP and ${amount} SP each turn during an Ambush.` : `Restores ${amount}% HP and ${amount} SP each turn in battle.`,
 			AIL: amount === 1 ? 'Decreases recovery time from ailments by half.' : 'Decreases recovery time from ailments to 1 turn.'
-		}[hpmpail];
+		}[stat];
 		this.ambush = ambush;
 		this.amount = amount;
 		this.baton = baton;
-		this.hpmpail = hpmpail;
+		this.stat = stat;
 		this.percent = data.percent;
 	}
 }
@@ -853,15 +853,15 @@ export class SpringSkill extends Skill implements SpringSkillData {
 	/** The amount that the stat is increased by */
 	amount: number;
 	/** The stat whose maximum the skill increases */
-	hpmp: HPMP;
+	stat: HPMP;
 	constructor(data: SpringSkillData) {
-		const { amount, hpmp } = data;
+		const { amount, stat } = data;
 		super(data);
 		this.affinity = data.affinity;
 		this.type = data.type;
-		this.description = `${amount === 30 ? 'Greatly i' : 'I'}ncreases MAX ${hpmp}.`;
+		this.description = `${amount === 30 ? 'Greatly i' : 'I'}ncreases MAX ${stat}.`;
 		this.amount = amount;
-		this.hpmp = hpmp;
+		this.stat = stat;
 	}
 }
 

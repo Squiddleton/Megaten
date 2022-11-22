@@ -2691,7 +2691,7 @@ const skills: AnySkillData[] = [
 		type: 'REGEN',
 		unique: false,
 		amount: 1,
-		hpmpail: 'AIL',
+		stat: 'AIL',
 		percent: false,
 		ambush: false,
 		baton: false
@@ -3497,7 +3497,7 @@ const skills: AnySkillData[] = [
 		type: 'SPRING',
 		unique: false,
 		amount: 30,
-		hpmp: 'HP'
+		stat: 'HP'
 	},
 	{
 		name: 'Great Mana Spring',
@@ -3505,7 +3505,7 @@ const skills: AnySkillData[] = [
 		type: 'SPRING',
 		unique: false,
 		amount: 30,
-		hpmp: 'MP'
+		stat: 'MP'
 	},
 	{
 		name: 'Growth 1',
@@ -3790,7 +3790,7 @@ const skills: AnySkillData[] = [
 		type: 'REGEN',
 		unique: false,
 		amount: 10,
-		hpmpail: 'HPMP',
+		stat: 'HPMP',
 		percent: false,
 		ambush: true,
 		baton: false
@@ -4131,7 +4131,7 @@ const skills: AnySkillData[] = [
 		type: 'REGEN',
 		unique: true,
 		amount: 25,
-		hpmpail: 'HP',
+		stat: 'HP',
 		percent: true,
 		ambush: false,
 		baton: false
@@ -4142,7 +4142,7 @@ const skills: AnySkillData[] = [
 		type: 'REGEN',
 		unique: true,
 		amount: 15,
-		hpmpail: 'HPMP',
+		stat: 'HPMP',
 		percent: true,
 		ambush: false,
 		baton: false
@@ -4317,7 +4317,7 @@ const skills: AnySkillData[] = [
 		type: 'REGEN',
 		unique: false,
 		amount: 2,
-		hpmpail: 'AIL',
+		stat: 'AIL',
 		percent: false,
 		ambush: false,
 		baton: false
@@ -4328,7 +4328,7 @@ const skills: AnySkillData[] = [
 		type: 'REGEN',
 		unique: false,
 		amount: 3,
-		hpmpail: 'MP',
+		stat: 'MP',
 		percent: false,
 		ambush: false,
 		baton: false
@@ -4339,7 +4339,7 @@ const skills: AnySkillData[] = [
 		type: 'REGEN',
 		unique: false,
 		amount: 5,
-		hpmpail: 'MP',
+		stat: 'MP',
 		percent: false,
 		ambush: false,
 		baton: false
@@ -4350,7 +4350,7 @@ const skills: AnySkillData[] = [
 		type: 'REGEN',
 		unique: false,
 		amount: 7,
-		hpmpail: 'MP',
+		stat: 'MP',
 		percent: false,
 		ambush: false,
 		baton: false
@@ -4606,7 +4606,7 @@ const skills: AnySkillData[] = [
 		type: 'SPRING',
 		unique: false,
 		amount: 15,
-		hpmp: 'HP'
+		stat: 'HP'
 	},
 	{
 		name: 'Life Wall',
@@ -5298,7 +5298,7 @@ const skills: AnySkillData[] = [
 		type: 'SPRING',
 		unique: false,
 		amount: 15,
-		hpmp: 'MP'
+		stat: 'MP'
 	},
 	{
 		name: 'Mapsi',
@@ -7518,7 +7518,7 @@ const skills: AnySkillData[] = [
 		type: 'REGEN',
 		unique: false,
 		amount: 2,
-		hpmpail: 'HP',
+		stat: 'HP',
 		percent: true,
 		ambush: false,
 		baton: false
@@ -7529,7 +7529,7 @@ const skills: AnySkillData[] = [
 		type: 'REGEN',
 		unique: false,
 		amount: 4,
-		hpmpail: 'HP',
+		stat: 'HP',
 		percent: true,
 		ambush: false,
 		baton: false
@@ -7540,7 +7540,7 @@ const skills: AnySkillData[] = [
 		type: 'REGEN',
 		unique: false,
 		amount: 6,
-		hpmpail: 'HP',
+		stat: 'HP',
 		percent: true,
 		ambush: false,
 		baton: false
@@ -8345,7 +8345,7 @@ const skills: AnySkillData[] = [
 		type: 'REGEN',
 		unique: false,
 		amount: 20,
-		hpmpail: 'MP',
+		stat: 'MP',
 		percent: false,
 		ambush: false,
 		baton: true
@@ -8383,7 +8383,7 @@ const skills: AnySkillData[] = [
 		type: 'REGEN',
 		unique: false,
 		amount: 5,
-		hpmpail: 'MP',
+		stat: 'MP',
 		percent: false,
 		ambush: false,
 		baton: true
