@@ -239,8 +239,8 @@ export interface RegenSkillData extends SkillData {
 	ambush: boolean;
 	amount: number;
 	baton: boolean;
-	stat: HPMPAil;
 	percent: boolean;
+	stat: HPMPAil;
 }
 
 export interface SiphonSkillData extends SkillData {

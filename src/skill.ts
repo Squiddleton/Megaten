@@ -776,10 +776,10 @@ export class RegenSkill extends Skill implements RegenSkillData {
 	amount: number;
 	/** Whether the skill only takes effect after a Baton Pass */
 	baton: boolean;
-	/** The stat that the skill recovers */
-	stat: HPMPAil;
 	/** Whether the amount is a percentage of its max instead of a fixed amount */
 	percent: boolean;
+	/** The stat that the skill recovers */
+	stat: HPMPAil;
 	constructor(data: RegenSkillData) {
 		const { ambush, amount, baton, stat } = data;
 		super(data);
