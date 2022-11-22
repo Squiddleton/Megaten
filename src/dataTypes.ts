@@ -1,4 +1,4 @@
-import type { AilResistance, Ailment, AllyRange, AnyAffinity, Arcana, AttackDisplay, Barrier, Buff, Charge, CounterAffinity, CounterDisplay, DamagingAffinity, EnemyRange, Game, HPMP, HPMPAil, LightDark, PersonaAffinity, PostBattleStat, Race, RecoveryAmount, Resistance, RestoreCriteria, Series, SkillType, Stage } from './types';
+import type { AilResistance, Ailment, AllyRange, AnyAffinity, Arcana, AttackDisplay, Barrier, Buff, Charge, CounterAffinity, CounterDisplay, DamagingAffinity, EnemyRange, Game, HPMP, HPMPAil, LightDark, PersonaAffinity, PostBattleStat, Race, RecoveryAmount, Resistance, RestoreCriteria, SMTAffinity, Series, SkillType, Stage } from './types';
 
 export interface DemonData {
 	name: string;
@@ -127,7 +127,7 @@ export interface BreakSkillData extends SkillData {
 	affinity: 'Support';
 	type: 'BREAK';
 	cost: number;
-	element: DamagingAffinity;
+	element: Exclude<DamagingAffinity, SMTAffinity | 'Almighty'>;
 }
 
 export interface ChargeSkillData extends SkillData {
@@ -161,7 +161,7 @@ export interface CritBoostSkillData extends SkillData {
 export interface DefensiveSkillData extends SkillData {
 	affinity: 'Passive';
 	type: 'DEFENSIVE';
-	element: DamagingAffinity;
+	element: Exclude<DamagingAffinity, 'Almighty'>;
 	newAffinity: Resistance;
 }
 
@@ -296,5 +296,5 @@ export interface WallSkillData extends SkillData {
 	affinity: 'Support';
 	type: 'WALL';
 	cost: number;
-	element: DamagingAffinity;
+	element: Exclude<DamagingAffinity, SMTAffinity | 'Almighty'>;
 }

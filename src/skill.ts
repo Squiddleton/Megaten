@@ -3,7 +3,7 @@ import { normalize } from '@squiddleton/util';
 import type { AilBoostSkillData, AilDefensiveSkillData, AilmentSkillData, AttackSkillData, AutoBuffSkillData, BarrierBreakSkillData, BarrierSkillData, BlockSkillData, BoostSkillData, BreakSkillData, ChargeSkillData, CritBoostSkillData, CritSkillData, DefensiveSkillData, EndureSkillData, EvasionSkillData, HalveSkillData, InstaKillBoostSkillData, MasterSkillData, MiscSkillData, NaviSkillData, PersonaCounterSkillData, PostBattleSkillData, RecoverySkillData, RegenSkillData, SMTCounterSkillData, SiphonSkillData, SkillData, SpringSkillData, SupportSkillData, SusceptibilitySkillData, TauntSkillData, WallSkillData } from './dataTypes';
 import MegatenError from './error';
 import skillData from './skillData';
-import type { AilResistance, Ailment, AllyRange, AnyAffinity, AttackDisplay, Barrier, Buff, Charge, CounterAffinity, CounterDisplay, DamagingAffinity, EnemyRange, HPMP, HPMPAil, LightDark, PersonaAffinity, PostBattleStat, RecoveryAmount, Resistance, RestoreCriteria, Series, SkillType } from './types';
+import type { AilResistance, Ailment, AllyRange, AnyAffinity, AttackDisplay, Barrier, Buff, Charge, CounterAffinity, CounterDisplay, DamagingAffinity, EnemyRange, HPMP, HPMPAil, LightDark, PersonaAffinity, PostBattleStat, RecoveryAmount, Resistance, RestoreCriteria, SMTAffinity, Series, SkillType } from './types';
 
 export abstract class Skill implements SkillData {
 	name: string;
@@ -354,7 +354,7 @@ export class BreakSkill extends Skill implements BreakSkillData {
 	type: 'BREAK';
 	description: string;
 	cost: number;
-	element: DamagingAffinity;
+	element: Exclude<DamagingAffinity, SMTAffinity | 'Almighty'>;
 	constructor(data: BreakSkillData) {
 		const { element } = data;
 		super(data);
@@ -453,7 +453,7 @@ export class DefensiveSkill extends Skill implements DefensiveSkillData {
 	affinity: 'Passive';
 	type: 'DEFENSIVE';
 	description: string;
-	element: DamagingAffinity;
+	element: Exclude<DamagingAffinity, 'Almighty'>;
 	newAffinity: Resistance;
 	constructor(data: DefensiveSkillData) {
 		const { element, newAffinity } = data;
@@ -852,7 +852,7 @@ export class WallSkill extends Skill implements WallSkillData {
 	type: 'WALL';
 	description: string;
 	cost: number;
-	element: DamagingAffinity;
+	element: Exclude<DamagingAffinity, SMTAffinity | 'Almighty'>;
 	constructor(data: WallSkillData) {
 		const { element } = data;
 		super(data);
