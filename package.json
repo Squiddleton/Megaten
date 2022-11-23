@@ -13,10 +13,7 @@
     "persona",
     "atlus"
   ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Squiddleton/Megaten"
-  },
+  "repository": "github:Squiddleton/Megaten",
   "homepage": "https://github.com/Squiddleton/Megaten#readme",
   "bugs": "https://github.com/Squiddleton/Megaten/issues",
   "scripts": {
