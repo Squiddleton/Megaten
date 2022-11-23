@@ -43,6 +43,7 @@ export abstract class Skill implements SkillData {
 	}
 }
 
+/** A skill that boosts the chance of afflicting ailments */
 export class AilBoostSkill extends Skill implements AilBoostSkillData {
 	affinity: 'Passive';
 	type: 'AILBOOST';
@@ -67,6 +68,7 @@ export class AilBoostSkill extends Skill implements AilBoostSkillData {
 	}
 }
 
+/** A skill that decreases the chance of being afflicted by an ailment */
 export class AilDefensiveSkill extends Skill implements AilDefensiveSkillData {
 	affinity: 'Passive';
 	type: 'AILDEFENSIVE';
@@ -88,6 +90,7 @@ export class AilDefensiveSkill extends Skill implements AilDefensiveSkillData {
 	}
 }
 
+/** A skill that afflicts an ailment */
 export class AilmentSkill extends Skill implements AilmentSkillData {
 	affinity: 'Ailment';
 	type: 'AILMENT';
@@ -98,7 +101,7 @@ export class AilmentSkill extends Skill implements AilmentSkillData {
 	chance: number;
 	/** The skill's MP cost */
 	cost: number;
-	/** Special flags for the skill */
+	/** The skill's special or notable features */
 	flags: string[];
 	/** The range that the skill targets */
 	range: Exclude<EnemyRange, 'Random'>;
@@ -116,6 +119,7 @@ export class AilmentSkill extends Skill implements AilmentSkillData {
 	}
 }
 
+/** A skill that deals damage, potentially having other effects */
 export class AttackSkill extends Skill implements AttackSkillData {
 	affinity: DamagingAffinity;
 	type: 'ATTACK';
@@ -130,7 +134,7 @@ export class AttackSkill extends Skill implements AttackSkillData {
 		type: HPMP;
 		amount: number;
 	};
-	/** Special flags for the skill */
+	/** The skill's special or notable features */
 	flags: string[];
 	/** The maximum times that the skill can land */
 	max: number;
@@ -257,6 +261,7 @@ export class AttackSkill extends Skill implements AttackSkillData {
 	}
 }
 
+/** A skill that automatically casts a buff at the start of battle */
 export class AutoBuffSkill extends Skill implements AutoBuffSkillData {
 	affinity: 'Passive';
 	type: 'AUTOBUFF';
@@ -283,6 +288,7 @@ export class AutoBuffSkill extends Skill implements AutoBuffSkillData {
 	}
 }
 
+/** A skill that forms a barrier */
 export class BarrierSkill extends Skill implements BarrierSkillData {
 	affinity: 'Support';
 	type: 'BARRIER';
@@ -330,6 +336,7 @@ export class BarrierSkill extends Skill implements BarrierSkillData {
 	}
 }
 
+/** A skill that negates a barrier */
 export class BarrierBreakSkill extends Skill implements BarrierBreakSkillData {
 	affinity: 'Support';
 	type: 'BARRIERBREAK';
@@ -349,6 +356,7 @@ export class BarrierBreakSkill extends Skill implements BarrierBreakSkillData {
 	}
 }
 
+/** A skill that temporarily blocks attacks of a certain affinity */
 export class BlockSkill extends Skill implements BlockSkillData {
 	affinity: 'Support';
 	type: 'BLOCK';
@@ -368,6 +376,7 @@ export class BlockSkill extends Skill implements BlockSkillData {
 	}
 }
 
+/** A skill that boosts the amount of damage/recovery of an affinity */
 export class BoostSkill extends Skill implements BoostSkillData {
 	affinity: 'Passive';
 	type: 'BOOST';
@@ -394,6 +403,7 @@ export class BoostSkill extends Skill implements BoostSkillData {
 	}
 }
 
+/** A skill that negates an affinity resistance */
 export class BreakSkill extends Skill implements BreakSkillData {
 	affinity: 'Support';
 	type: 'BREAK';
@@ -413,6 +423,7 @@ export class BreakSkill extends Skill implements BreakSkillData {
 	}
 }
 
+/** A skill that casts a charge */
 export class ChargeSkill extends Skill implements ChargeSkillData {
 	affinity: 'Support';
 	type: 'CHARGE';
@@ -453,6 +464,7 @@ export class ChargeSkill extends Skill implements ChargeSkillData {
 	}
 }
 
+/** A skill that, when cast, increases the chance of landing critical hits */
 export class CritSkill extends Skill implements CritSkillData {
 	affinity: 'Support';
 	type: 'CRIT';
@@ -472,6 +484,7 @@ export class CritSkill extends Skill implements CritSkillData {
 	}
 }
 
+/** A skill that passively increaes the chance of landing critical hits */
 export class CritBoostSkill extends Skill implements CritBoostSkillData {
 	affinity: 'Passive';
 	type: 'CRITBOOST';
@@ -503,6 +516,7 @@ export class CritBoostSkill extends Skill implements CritBoostSkillData {
 	}
 }
 
+/** A skill that increases resistance to damage from an affinity */
 export class DefensiveSkill extends Skill implements DefensiveSkillData {
 	affinity: 'Passive';
 	type: 'DEFENSIVE';
@@ -527,6 +541,7 @@ export class DefensiveSkill extends Skill implements DefensiveSkillData {
 	}
 }
 
+/** A skill that prevents the user from dying */
 export class EndureSkill extends Skill implements EndureSkillData {
 	affinity: 'Passive';
 	type: 'ENDURE';
@@ -550,6 +565,7 @@ export class EndureSkill extends Skill implements EndureSkillData {
 	}
 }
 
+/** A skill that increases evasion from affinities */
 export class EvasionSkill extends Skill implements EvasionSkillData {
 	affinity: 'Passive';
 	type: 'EVASION';
@@ -581,6 +597,7 @@ export class EvasionSkill extends Skill implements EvasionSkillData {
 	}
 }
 
+/** A skill that halves an enemy's HP */
 export class HalveSkill extends Skill implements HalveSkillData {
 	affinity: LightDark;
 	type: 'HALVE';
@@ -596,6 +613,7 @@ export class HalveSkill extends Skill implements HalveSkillData {
 	}
 }
 
+/** A skill that increases the chance of landing an insta-kill */
 export class InstaKillBoostSkill extends Skill implements InstaKillBoostSkillData {
 	affinity: 'Passive';
 	type: 'INSTAKILLBOOST';
@@ -612,6 +630,7 @@ export class InstaKillBoostSkill extends Skill implements InstaKillBoostSkillDat
 	}
 }
 
+/** A skill that decreases the cost of skills */
 export class MasterSkill extends Skill implements MasterSkillData {
 	affinity: 'Passive';
 	type: 'MASTER';
@@ -628,6 +647,7 @@ export class MasterSkill extends Skill implements MasterSkillData {
 	}
 }
 
+/** A skill with miscellaneous (likely unique) effects */
 export class MiscSkill extends Skill implements MiscSkillData {
 	affinity: AnyAffinity;
 	type: 'MISC';
@@ -643,6 +663,7 @@ export class MiscSkill extends Skill implements MiscSkillData {
 	}
 }
 
+/** A skill learned by a navigator in the Persona serise */
 export class NaviSkill extends Skill implements NaviSkillData {
 	affinity: 'Passive';
 	type: 'NAVI';
@@ -655,6 +676,7 @@ export class NaviSkill extends Skill implements NaviSkillData {
 	}
 }
 
+/** A skill that may reflect physical damage */
 export class PersonaCounterSkill extends Skill implements PersonaCounterSkillData {
 	affinity: 'Passive';
 	type: 'PERSONACOUNTER';
@@ -671,6 +693,7 @@ export class PersonaCounterSkill extends Skill implements PersonaCounterSkillDat
 	}
 }
 
+/** A skill that restores a stat when a battle ends */
 export class PostBattleSkill extends Skill implements PostBattleSkillData {
 	affinity: 'Passive';
 	type: 'POSTBATTLE';
@@ -715,6 +738,7 @@ export class PostBattleSkill extends Skill implements PostBattleSkillData {
 	}
 }
 
+/** A skill that recovers HP, ailments, and/or casts buffs */
 export class RecoverySkill extends Skill implements RecoverySkillData {
 	affinity: 'Recovery';
 	type: 'RECOVERY';
@@ -766,6 +790,7 @@ export class RecoverySkill extends Skill implements RecoverySkillData {
 	}
 }
 
+/** A skill that regenerates a stat each turn */
 export class RegenSkill extends Skill implements RegenSkillData {
 	affinity: 'Passive';
 	type: 'REGEN';
@@ -799,6 +824,7 @@ export class RegenSkill extends Skill implements RegenSkillData {
 	}
 }
 
+/** A skill that restores MP under certain criteria */
 export class SiphonSkill extends Skill implements SiphonSkillData {
 	affinity: 'Passive';
 	type: 'SIPHON';
@@ -818,6 +844,7 @@ export class SiphonSkill extends Skill implements SiphonSkillData {
 	}
 }
 
+/** A skill that automatically triggers when hit by a physical attack */
 export class SMTCounterSkill extends Skill implements SMTCounterSkillData {
 	affinity: 'Passive';
 	type: 'SMTCOUNTER';
@@ -846,6 +873,7 @@ export class SMTCounterSkill extends Skill implements SMTCounterSkillData {
 	}
 }
 
+/** A skill that increases the user's maximum HP or MP */
 export class SpringSkill extends Skill implements SpringSkillData {
 	affinity: 'Passive';
 	type: 'SPRING';
@@ -865,6 +893,7 @@ export class SpringSkill extends Skill implements SpringSkillData {
 	}
 }
 
+/** A skill that casts buffs, debuffs, or negates those on either allies or enemies */
 export class SupportSkill extends Skill implements SupportSkillData {
 	affinity: 'Support';
 	type: 'SUPPORT';
@@ -907,6 +936,7 @@ export class SupportSkill extends Skill implements SupportSkillData {
 	}
 }
 
+/** A skill that increases the target's susceptibility to ailments */
 export class SusceptibilitySkill extends Skill implements SusceptibilitySkillData {
 	affinity: 'Almighty';
 	type: 'SUSCEPTIBILITY';
@@ -926,6 +956,7 @@ export class SusceptibilitySkill extends Skill implements SusceptibilitySkillDat
 	}
 }
 
+/** A skill that increases the chance of enemies targeting the user */
 export class TauntSkill extends Skill implements TauntSkillData {
 	affinity: 'Support';
 	type: 'TAUNT';
@@ -947,6 +978,7 @@ export class TauntSkill extends Skill implements TauntSkillData {
 	}
 }
 
+/** A skill that temporarily increases an ally's resistance to damage from an affinity */
 export class WallSkill extends Skill implements WallSkillData {
 	affinity: 'Support';
 	type: 'WALL';
