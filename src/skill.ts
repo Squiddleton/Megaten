@@ -3,7 +3,7 @@ import { normalize } from '@squiddleton/util';
 import type { AilBoostSkillData, AilDefensiveSkillData, AilmentSkillData, AttackSkillData, AutoBuffSkillData, BarrierBreakSkillData, BarrierSkillData, BlockSkillData, BoostSkillData, BreakSkillData, ChargeSkillData, CritBoostSkillData, CritSkillData, DefensiveSkillData, EndureSkillData, EvasionSkillData, HalveSkillData, InstaKillBoostSkillData, MasterSkillData, MiscSkillData, NaviSkillData, PersonaCounterSkillData, PostBattleSkillData, RecoverySkillData, RegenSkillData, SMTCounterSkillData, SiphonSkillData, SkillData, SpringSkillData, SupportSkillData, SusceptibilitySkillData, TauntSkillData, WallSkillData } from './dataTypes';
 import MegatenError from './error';
 import skillData from './skillData';
-import type { AilResistance, Ailment, AllyRange, AnyAffinity, AnyRange, AttackDisplay, Barrier, Buff, Charge, CounterAffinity, CounterDisplay, DamagingAffinity, EnemyRange, HPMP, HPMPAil, LightDark, PersonaAffinity, PostBattleStat, RecoveryAmount, Resistance, RestoreCriteria, SMTAffinity, Series, SkillType } from './types';
+import type { AilResistance, Ailment, AllyRange, AnyAffinity, AnyRange, AttackDisplay, Barrier, Buff, Charge, CounterAffinity, CounterDisplay, DamagingAffinity, EnemyRange, EvasionBoostCriteria, HPMP, HPMPAil, LightDark, PersonaAffinity, PostBattleStat, RecoveryAmount, Resistance, RestoreCriteria, SMTAffinity, Series, SkillType } from './types';
 
 export abstract class Skill implements SkillData {
 	/** The skill's name */
@@ -572,28 +572,25 @@ export class EvasionSkill extends Skill implements EvasionSkillData {
 	description: string;
 	/** The amount that the skill increases the chance of evading the elements by */
 	amount: number;
+	/** The conditions that the skill triggers under, or null if always in effect */
+	criteria: EvasionBoostCriteria | null;
 	/** The affinities that the skill increases the chance of evading */
 	elements: (DamagingAffinity | 'ALL')[];
-	/** Whether the skill only triggers when the user is surrounded */
-	surround: boolean;
-	/** Whether the skill only takes effect under certain weather conditions */
-	weather: boolean;
 	constructor(data: EvasionSkillData) {
-		const { amount, elements, surround, weather } = data;
+		const { amount, criteria, elements } = data;
 		super(data);
 		this.affinity = data.affinity;
 		this.type = data.type;
 
 		if (amount === 3) this.description = `Greatly increases Evasion from ${elements[0]} skills. Does not stack.`;
-		else if (weather) this.description = 'Greatly increases Evasion from all affinities during Rain/Snow.';
-		else if (surround) this.description = 'Greatly decreases Accuracy of all foes\' attacks except Almighty when surrounded.';
+		else if (criteria === 'Rain/Snow') this.description = 'Greatly increases Evasion from all affinities during Rain/Snow.';
+		else if (criteria === 'Surrounded') this.description = 'Greatly decreases Accuracy of all foes\' attacks except Almighty when surrounded.';
 		else if (elements.length !== 1) this.description = 'Increases Evasion from all magical attacks except Almighty.';
 		else this.description = `${amount === 3 ? 'Greatly i' : 'I'}ncreases Evasion from ${elements[0]} skills.${amount === 3 ? ' Does not stack.' : ''}`;
 
 		this.amount = amount;
+		this.criteria = criteria;
 		this.elements = elements;
-		this.surround = surround;
-		this.weather = weather;
 	}
 }
 

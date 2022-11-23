@@ -245,8 +245,7 @@ const skills: AnySkillData[] = [
 		type: 'EVASION',
 		unique: false,
 		amount: 2,
-		surround: false,
-		weather: false,
+		criteria: null,
 		elements: [
 			'Phys',
 			'Gun',
@@ -321,8 +320,7 @@ const skills: AnySkillData[] = [
 		type: 'EVASION',
 		unique: false,
 		amount: 2,
-		surround: false,
-		weather: false,
+		criteria: null,
 		elements: [
 			'Fire',
 			'Ice',
@@ -1248,8 +1246,7 @@ const skills: AnySkillData[] = [
 		type: 'EVASION',
 		unique: false,
 		amount: 2,
-		surround: false,
-		weather: true,
+		criteria: 'Rain/Snow',
 		elements: [
 			'ALL'
 		]
@@ -1930,8 +1927,7 @@ const skills: AnySkillData[] = [
 		type: 'EVASION',
 		unique: false,
 		amount: 2,
-		surround: false,
-		weather: false,
+		criteria: null,
 		elements: [
 			'Dark'
 		]
@@ -1942,8 +1938,7 @@ const skills: AnySkillData[] = [
 		type: 'EVASION',
 		unique: false,
 		amount: 2,
-		surround: false,
-		weather: false,
+		criteria: null,
 		elements: [
 			'Elec'
 		]
@@ -1954,8 +1949,7 @@ const skills: AnySkillData[] = [
 		type: 'EVASION',
 		unique: false,
 		amount: 2,
-		surround: false,
-		weather: false,
+		criteria: null,
 		elements: [
 			'Fire'
 		]
@@ -1966,8 +1960,7 @@ const skills: AnySkillData[] = [
 		type: 'EVASION',
 		unique: false,
 		amount: 2,
-		surround: false,
-		weather: false,
+		criteria: null,
 		elements: [
 			'Ice'
 		]
@@ -1978,8 +1971,7 @@ const skills: AnySkillData[] = [
 		type: 'EVASION',
 		unique: false,
 		amount: 2,
-		surround: false,
-		weather: false,
+		criteria: null,
 		elements: [
 			'Light'
 		]
@@ -1990,8 +1982,7 @@ const skills: AnySkillData[] = [
 		type: 'EVASION',
 		unique: false,
 		amount: 2,
-		surround: false,
-		weather: false,
+		criteria: null,
 		elements: [
 			'Dark'
 		]
@@ -2002,8 +1993,7 @@ const skills: AnySkillData[] = [
 		type: 'EVASION',
 		unique: false,
 		amount: 2,
-		surround: false,
-		weather: false,
+		criteria: null,
 		elements: [
 			'Phys'
 		]
@@ -2014,8 +2004,7 @@ const skills: AnySkillData[] = [
 		type: 'EVASION',
 		unique: false,
 		amount: 2,
-		surround: false,
-		weather: false,
+		criteria: null,
 		elements: [
 			'Psy'
 		]
@@ -2026,8 +2015,7 @@ const skills: AnySkillData[] = [
 		type: 'EVASION',
 		unique: false,
 		amount: 2,
-		surround: false,
-		weather: false,
+		criteria: null,
 		elements: [
 			'Wind'
 		]
@@ -2505,8 +2493,7 @@ const skills: AnySkillData[] = [
 		type: 'EVASION',
 		unique: false,
 		amount: 3,
-		surround: false,
-		weather: false,
+		criteria: null,
 		elements: [
 			'Dark'
 		]
@@ -2517,8 +2504,7 @@ const skills: AnySkillData[] = [
 		type: 'EVASION',
 		unique: false,
 		amount: 3,
-		surround: false,
-		weather: false,
+		criteria: null,
 		elements: [
 			'Elec'
 		]
@@ -2529,8 +2515,7 @@ const skills: AnySkillData[] = [
 		type: 'EVASION',
 		unique: false,
 		amount: 3,
-		surround: false,
-		weather: false,
+		criteria: null,
 		elements: [
 			'Fire'
 		]
@@ -2541,8 +2526,7 @@ const skills: AnySkillData[] = [
 		type: 'EVASION',
 		unique: false,
 		amount: 3,
-		surround: false,
-		weather: false,
+		criteria: null,
 		elements: [
 			'Ice'
 		]
@@ -2553,8 +2537,7 @@ const skills: AnySkillData[] = [
 		type: 'EVASION',
 		unique: false,
 		amount: 3,
-		surround: false,
-		weather: false,
+		criteria: null,
 		elements: [
 			'Light'
 		]
@@ -2565,8 +2548,7 @@ const skills: AnySkillData[] = [
 		type: 'EVASION',
 		unique: false,
 		amount: 3,
-		surround: false,
-		weather: false,
+		criteria: null,
 		elements: [
 			'Nuke'
 		]
@@ -2577,8 +2559,7 @@ const skills: AnySkillData[] = [
 		type: 'EVASION',
 		unique: false,
 		amount: 3,
-		surround: false,
-		weather: false,
+		criteria: null,
 		elements: [
 			'Phys'
 		]
@@ -2589,8 +2570,7 @@ const skills: AnySkillData[] = [
 		type: 'EVASION',
 		unique: false,
 		amount: 3,
-		surround: false,
-		weather: false,
+		criteria: null,
 		elements: [
 			'Psy'
 		]
@@ -2601,8 +2581,7 @@ const skills: AnySkillData[] = [
 		type: 'EVASION',
 		unique: false,
 		amount: 3,
-		surround: false,
-		weather: false,
+		criteria: null,
 		elements: [
 			'Wind'
 		]
@@ -4553,8 +4532,7 @@ const skills: AnySkillData[] = [
 		type: 'EVASION',
 		unique: false,
 		amount: 2,
-		surround: true,
-		weather: false,
+		criteria: 'Surrounded',
 		elements: [
 			'Phys',
 			'Gun',

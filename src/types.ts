@@ -32,6 +32,8 @@ export type CounterDisplay = 'Weak' | 'Medium';
 /** Displayed damage values for AttackSkill instances */
 export type AttackDisplay = CounterDisplay | 'Minuscule' | 'Heavy' | 'Severe' | 'Colossal';
 
+export type EvasionBoostCriteria = 'Surrounded' | 'Rain/Snow';
+
 /** Games that Demon data can originate from */
 export type Game = 'p3' | 'p4' | 'p5' | 'smt5';
 
