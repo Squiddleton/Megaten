@@ -34,5 +34,8 @@
   "dependencies": {
     "@discordjs/collection": "^1.2.0",
     "@squiddleton/util": "^1.0.1"
+  },
+  "engines": {
+    "node": ">=14.0.0"
   }
 }
