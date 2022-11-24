@@ -308,30 +308,34 @@ export class BarrierSkill extends Skill implements BarrierSkillData {
 		this.affinity = data.affinity;
 		this.type = data.type;
 
-		const [barrier] = data.barriers;
-		switch (barrier) {
-			case 'Tetraja': {
-				this.description = 'A barrier that nullifies an insta-kill for all allies one time.';
-				break;
+		if (data.barriers.length > 1) {
+			this.description = 'Forms a barrier that reflects all attacks for all allies.';
+		}
+		else {
+			const [barrier] = data.barriers;
+			switch (barrier) {
+				case 'Tetraja': {
+					this.description = 'A barrier that nullifies an insta-kill for all allies one time.';
+					break;
+				}
+				case 'Painting': {
+					this.description = 'Forms a barrier that can absorb one attack (except Almighty).';
+					break;
+				}
+				case 'Shield of Justice': {
+					this.description = 'Shields the party from all damage once.';
+					break;
+				}
+				case 'Kannabi Veil': {
+					this.description = 'Decreases damage to all allies until the next turn.';
+					break;
+				}
+				case 'Tetrakarn':
+				case 'Makarakarn': {
+					this.description = `Reflects a ${barrier === 'Tetrakarn' ? 'Phys' : 'Magic'} attack once for 1 ally for 1 turn.`;
+					break;
+				}
 			}
-			case 'Painting': {
-				this.description = 'Forms a barrier that can absorb one attack (except Almighty).';
-				break;
-			}
-			case 'Shield of Justice': {
-				this.description = 'Shields the party from all damage once.';
-				break;
-			}
-			case 'Kannabi Veil': {
-				this.description = 'Decreases damage to all allies until the next turn.';
-				break;
-			}
-			case 'Tetrakarn':
-			case 'Makarakarn': {
-				this.description = `Reflects a ${barrier === 'Tetrakarn' ? 'Phys' : 'Magic'} attack once for 1 ally for 1 turn.`;
-				break;
-			}
-			default: this.description = 'Forms a barrier that reflects all attacks for all allies.';
 		}
 
 		this.barriers = data.barriers;
