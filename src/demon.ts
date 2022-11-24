@@ -130,8 +130,7 @@ export class Persona extends Demon implements PersonaData {
 	}
 	/** The Persona that this Persona can evolve into, or null if none */
 	get evolution(): Persona | null {
-		const found = Demon.collection.find((demon): demon is Persona => demon.isPersona() && demon.user === this.user && demon.stage === (this.stage + 1));
-		return found === undefined ? null : new Persona(found);
+		return Persona.collection.find(persona => persona.user === this.user && persona.stage === (this.stage + 1)) ?? null;
 	}
 	/**
 	 * Returns a string in "(User) (Name)" format
