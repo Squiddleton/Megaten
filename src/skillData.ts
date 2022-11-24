@@ -2670,10 +2670,9 @@ const skills: AnySkillData[] = [
 		type: 'REGEN',
 		unique: false,
 		amount: 1,
-		stat: 'AIL',
+		criteria: null,
 		percent: false,
-		ambush: false,
-		baton: false
+		stat: 'AIL'
 	},
 	{
 		name: 'Fatal End',
@@ -3769,10 +3768,9 @@ const skills: AnySkillData[] = [
 		type: 'REGEN',
 		unique: false,
 		amount: 10,
-		stat: 'HPMP',
+		criteria: 'Ambush',
 		percent: false,
-		ambush: true,
-		baton: false
+		stat: 'HPMP'
 	},
 	{
 		name: 'Heat Wave',
@@ -4110,10 +4108,9 @@ const skills: AnySkillData[] = [
 		type: 'REGEN',
 		unique: true,
 		amount: 25,
-		stat: 'HP',
+		criteria: 'Turn Start',
 		percent: true,
-		ambush: false,
-		baton: false
+		stat: 'HP'
 	},
 	{
 		name: 'Holy Whisper',
@@ -4121,10 +4118,9 @@ const skills: AnySkillData[] = [
 		type: 'REGEN',
 		unique: true,
 		amount: 15,
-		stat: 'HPMP',
+		criteria: 'Turn Start',
 		percent: true,
-		ambush: false,
-		baton: false
+		stat: 'HPMP'
 	},
 	{
 		name: 'Humble Blessing',
@@ -4296,10 +4292,9 @@ const skills: AnySkillData[] = [
 		type: 'REGEN',
 		unique: false,
 		amount: 2,
-		stat: 'AIL',
+		criteria: null,
 		percent: false,
-		ambush: false,
-		baton: false
+		stat: 'AIL'
 	},
 	{
 		name: 'Invigorate 1',
@@ -4307,10 +4302,9 @@ const skills: AnySkillData[] = [
 		type: 'REGEN',
 		unique: false,
 		amount: 3,
-		stat: 'MP',
+		criteria: 'Turn Start',
 		percent: false,
-		ambush: false,
-		baton: false
+		stat: 'MP'
 	},
 	{
 		name: 'Invigorate 2',
@@ -4318,10 +4312,9 @@ const skills: AnySkillData[] = [
 		type: 'REGEN',
 		unique: false,
 		amount: 5,
-		stat: 'MP',
+		criteria: 'Turn Start',
 		percent: false,
-		ambush: false,
-		baton: false
+		stat: 'MP'
 	},
 	{
 		name: 'Invigorate 3',
@@ -4329,10 +4322,9 @@ const skills: AnySkillData[] = [
 		type: 'REGEN',
 		unique: false,
 		amount: 7,
-		stat: 'MP',
+		criteria: 'Turn Start',
 		percent: false,
-		ambush: false,
-		baton: false
+		stat: 'MP'
 	},
 	{
 		name: 'Jack Bufula',
@@ -7496,10 +7488,9 @@ const skills: AnySkillData[] = [
 		type: 'REGEN',
 		unique: false,
 		amount: 2,
-		stat: 'HP',
+		criteria: 'Turn Start',
 		percent: true,
-		ambush: false,
-		baton: false
+		stat: 'HP'
 	},
 	{
 		name: 'Regenerate 2',
@@ -7507,10 +7498,9 @@ const skills: AnySkillData[] = [
 		type: 'REGEN',
 		unique: false,
 		amount: 4,
-		stat: 'HP',
+		criteria: 'Turn Start',
 		percent: true,
-		ambush: false,
-		baton: false
+		stat: 'HP'
 	},
 	{
 		name: 'Regenerate 3',
@@ -7518,10 +7508,9 @@ const skills: AnySkillData[] = [
 		type: 'REGEN',
 		unique: false,
 		amount: 6,
-		stat: 'HP',
+		criteria: 'Turn Start',
 		percent: true,
-		ambush: false,
-		baton: false
+		stat: 'HP'
 	},
 	{
 		name: 'Relaxing Wave',
@@ -8323,10 +8312,9 @@ const skills: AnySkillData[] = [
 		type: 'REGEN',
 		unique: false,
 		amount: 20,
-		stat: 'MP',
+		criteria: 'Baton Pass',
 		percent: false,
-		ambush: false,
-		baton: true
+		stat: 'MP'
 	},
 	{
 		name: 'Soul Divide',
@@ -8361,10 +8349,9 @@ const skills: AnySkillData[] = [
 		type: 'REGEN',
 		unique: false,
 		amount: 5,
-		stat: 'MP',
+		criteria: 'Baton Pass',
 		percent: false,
-		ambush: false,
-		baton: true
+		stat: 'MP'
 	},
 	{
 		name: 'Speed Master',

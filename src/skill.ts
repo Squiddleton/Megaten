@@ -3,7 +3,7 @@ import { normalize } from '@squiddleton/util';
 import type { AilBoostSkillData, AilDefensiveSkillData, AilmentSkillData, AttackSkillData, AutoBuffSkillData, BarrierBreakSkillData, BarrierSkillData, BlockSkillData, BoostSkillData, BreakSkillData, ChargeSkillData, CritBoostSkillData, CritSkillData, DefensiveSkillData, EndureSkillData, EvasionSkillData, HalveSkillData, InstaKillBoostSkillData, MasterSkillData, MiscSkillData, NaviSkillData, PersonaCounterSkillData, PostBattleSkillData, RecoverySkillData, RegenSkillData, SMTCounterSkillData, SiphonSkillData, SkillData, SpringSkillData, SupportSkillData, SusceptibilitySkillData, TauntSkillData, WallSkillData } from './dataTypes';
 import MegatenError from './error';
 import skillData from './skillData';
-import type { AilResistance, Ailment, AllyRange, AnyAffinity, AnyRange, AttackDisplay, Barrier, Buff, Charge, CounterAffinity, CounterDisplay, DamagingAffinity, EnemyRange, EvasionBoostCriteria, HPMP, HPMPAil, LightDark, PersonaAffinity, PostBattleStat, RecoveryAmount, Resistance, RestoreCriteria, SMTAffinity, Series, SkillType } from './types';
+import type { AilResistance, Ailment, AllyRange, AnyAffinity, AnyRange, AttackDisplay, Barrier, Buff, Charge, CounterAffinity, CounterDisplay, DamagingAffinity, EnemyRange, EvasionBoostCriteria, HPMP, HPMPAil, LightDark, PersonaAffinity, PostBattleStat, RecoveryAmount, RegenCriteria, Resistance, RestoreCriteria, SMTAffinity, Series, SkillType } from './types';
 
 export abstract class Skill implements SkillData {
 	/** The skill's name */
@@ -792,32 +792,29 @@ export class RegenSkill extends Skill implements RegenSkillData {
 	affinity: 'Passive';
 	type: 'REGEN';
 	description: string;
-	/** Whether the skill only takes effect during an ambush */
-	ambush: boolean;
 	/** The amount of the stat that the skill recovers */
 	amount: number;
-	/** Whether the skill only takes effect after a Baton Pass */
-	baton: boolean;
+	/** The criteria for the skill taking effect, or null if always in effect */
+	criteria: RegenCriteria | null;
 	/** Whether the amount is a percentage of its max instead of a fixed amount */
 	percent: boolean;
 	/** The stat that the skill recovers */
 	stat: HPMPAil;
 	constructor(data: RegenSkillData) {
-		const { ambush, amount, baton, stat } = data;
+		const { amount, criteria, stat } = data;
 		super(data);
 		this.affinity = data.affinity;
 		this.type = data.type;
 		this.description = {
 			HP: `Restores ${amount}% of max HP each turn in battle.`,
-			MP: baton ? `Restores ${amount} SP after a Baton Pass.` : `Restores ${amount} MP each turn in battle.`,
-			HPMP: ambush ? `Restores 5% max HP and ${amount} SP each turn during an Ambush.` : `Restores ${amount}% HP and ${amount} SP each turn in battle.`,
+			MP: criteria === 'Baton Pass' ? `Restores ${amount} SP after a Baton Pass.` : `Restores ${amount} MP each turn in battle.`,
+			HPMP: criteria === 'Ambush' ? `Restores 5% max HP and ${amount} SP each turn during an Ambush.` : `Restores ${amount}% HP and ${amount} SP each turn in battle.`,
 			AIL: amount === 1 ? 'Decreases recovery time from ailments by half.' : 'Decreases recovery time from ailments to 1 turn.'
 		}[stat];
-		this.ambush = ambush;
 		this.amount = amount;
-		this.baton = baton;
-		this.stat = stat;
+		this.criteria = criteria;
 		this.percent = data.percent;
+		this.stat = stat;
 	}
 }
 

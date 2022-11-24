@@ -32,6 +32,7 @@ export type CounterDisplay = 'Weak' | 'Medium';
 /** Displayed damage values for AttackSkill instances */
 export type AttackDisplay = CounterDisplay | 'Minuscule' | 'Heavy' | 'Severe' | 'Colossal';
 
+/** Criteria causing EvasionSkill instances to take effect */
 export type EvasionBoostCriteria = 'Surrounded' | 'Rain/Snow';
 
 /** Games that Demon data can originate from */
@@ -68,7 +69,10 @@ export type Race = 'Amatsu' | 'Avatar' | 'Avian' | 'Beast' | 'Brute' | 'Deity' |
 /** The displayed amount that RecoverySkill instances can recover  */
 export type RecoveryAmount = 'Slight' | 'Moderate' | 'Half' | 'Full' | '130%';
 
-/** Criteria causing SiphonSkill instances to trigger */
+/** Criteria causing RegenSkill instances to take effect */
+export type RegenCriteria = 'Ambush' | 'Baton Pass' | 'Turn Start';
+
+/** Criteria causing SiphonSkill instances to take effect */
 export type RestoreCriteria = 'Weakness/Critical' | 'Ailment';
 
 /** Series that Skill data can originate from */
