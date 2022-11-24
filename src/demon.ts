@@ -157,9 +157,8 @@ export class Persona extends Demon implements PersonaData {
 			return super.get(name, error);
 		}
 		catch (e) {
-			if (e instanceof MegatenError) {
-				throw new MegatenError(name, 'Persona');
-			}
+			if (e instanceof MegatenError) throw new MegatenError(name, 'Persona');
+			else throw e;
 		}
 	}
 }
