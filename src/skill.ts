@@ -23,6 +23,10 @@ export abstract class Skill implements SkillData {
 		this.devName = normalize(data.name);
 		this.unique = data.unique;
 	}
+	/** Returns a string in "(Name): (Description)" format */
+	toString() {
+		return `${this.name}: ${this.description}`;
+	}
 	/** An array of every Skill instance */
 	static array: AnySkill[] = [];
 	/** A Collection of every Skill instance, mapped by their devName properties */
