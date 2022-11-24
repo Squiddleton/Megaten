@@ -269,7 +269,7 @@ export class AutoBuffSkill extends Skill implements AutoBuffSkillData {
 	/** The buff automatically applied by the skill */
 	buff: Exclude<Buff, 'Double Accuracy/Evasion' | 'Double Defense'>;
 	/** The range that the skill targets */
-	range: 'Self' | 'Party';
+	range: Exclude<AllyRange, 'Ally'>;
 	constructor(data: AutoBuffSkillData) {
 		const { buff, range } = data;
 		super(data);

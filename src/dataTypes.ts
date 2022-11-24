@@ -93,7 +93,7 @@ export interface AutoBuffSkillData extends SkillData {
 	affinity: 'Passive';
 	type: 'AUTOBUFF';
 	buff: Exclude<Buff, 'Double Accuracy/Evasion' | 'Double Defense'>;
-	range: 'Self' | 'Party';
+	range: Exclude<AllyRange, 'Ally'>;
 }
 
 export interface BarrierSkillData extends SkillData {
