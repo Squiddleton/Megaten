@@ -640,15 +640,15 @@ export class MasterSkill extends Skill implements MasterSkillData {
 	affinity: 'Passive';
 	type: 'MASTER';
 	description: string;
-	/** The type of cost lowered by the skill */
-	skill: HPMP;
+	/** The stat cost that the skill lowers */
+	stat: HPMP;
 	constructor(data: MasterSkillData) {
-		const { skill } = data;
+		const { stat } = data;
 		super(data);
 		this.affinity = data.affinity;
 		this.type = data.type;
-		this.description = `Decreases ${skill} cost of skills by half.`;
-		this.skill = skill;
+		this.description = `Decreases ${stat} cost of skills by half.`;
+		this.stat = stat;
 	}
 }
 

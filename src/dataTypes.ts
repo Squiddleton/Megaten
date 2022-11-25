@@ -198,7 +198,7 @@ export interface InstaKillBoostSkillData extends SkillData {
 export interface MasterSkillData extends SkillData {
 	affinity: 'Passive';
 	type: 'MASTER';
-	skill: HPMP;
+	stat: HPMP;
 }
 
 export interface MiscSkillData extends SkillData {

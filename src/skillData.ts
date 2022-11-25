@@ -366,7 +366,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Passive',
 		type: 'MASTER',
 		unique: false,
-		skill: 'HP'
+		stat: 'HP'
 	},
 	{
 		name: 'Arrow Rain',
@@ -8366,7 +8366,7 @@ const skills: AnySkillData[] = [
 		affinity: 'Passive',
 		type: 'MASTER',
 		unique: false,
-		skill: 'MP'
+		stat: 'MP'
 	},
 	{
 		name: 'Spirit Drain',
