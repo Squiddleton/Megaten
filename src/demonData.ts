@@ -1,6 +1,6 @@
 import type { DemonData, PersonaData } from './dataTypes';
 
-const demons: Readonly<(DemonData | PersonaData)>[] = [
+const demonData: Readonly<(DemonData | PersonaData)>[] = [
 	{
 		name: 'Abaddon',
 		aliases: [],
@@ -21314,4 +21314,4 @@ const demons: Readonly<(DemonData | PersonaData)>[] = [
 	}
 ];
 
-export default demons;
+export default demonData;
