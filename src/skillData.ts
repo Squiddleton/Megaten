@@ -1,6 +1,6 @@
 import type { AnySkillData } from './skill';
 
-const skills: AnySkillData[] = [
+const skills: Readonly<AnySkillData>[] = [
 	{
 		name: '+15% EXP',
 		affinity: 'Passive',
