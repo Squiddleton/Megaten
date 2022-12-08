@@ -61,11 +61,13 @@ Demon {
   level: 25,
   hp: 119,
   mp: 153,
-  st: 14,
-  ma: 29,
-  vi: 15,
-  ag: 21,
-  lu: 21,
+  stats: {
+    st: 14,
+    ma: 29,
+    vi: 15,
+    ag: 21,
+    lu: 21
+  },
   learnset: [
     {
       name: 'Ice Breath',
@@ -88,15 +90,17 @@ Demon {
       level: 28
     }
   ],
-  weak: [
-    'Fire'
-  ],
-  resist: [],
-  null: [],
-  drain: [
-    'Ice'
-  ],
-  repel: [],
+  affinities: {
+    weak: [
+      'Fire'
+    ],
+    resist: [],
+    null: [],
+    drain: [
+      'Ice'
+    ],
+    repel: []
+  },
   game: 'smt5',
   image: Buffer {...},
   isPersona(): false
@@ -112,11 +116,13 @@ Persona {
   level: 1,
   hp: null,
   mp: null,
-  st: 2,
-  vi: 1,
-  ma: 3,
-  ag: 3,
-  lu: 1,
+  stats: {
+    st: 2,
+    vi: 1,
+    ma: 3,
+    ag: 3,
+    lu: 1
+  },
   learnset: [
     {
       name: 'Garu',
@@ -132,23 +138,25 @@ Persona {
     },
     // ...
   ],
-  weak: [
-    'Elec'
-  ],
-  resist: [
-    'Light'
-  ],
-  null: [
-    'Wind'
-  ],
-  drain: [],
-  repel: [],
+  affinities: {
+    weak: [
+      'Elec'
+    ],
+    resist: [
+      'Light'
+    ],
+    null: [
+      'Wind'
+    ],
+    drain: [],
+    repel: []
+  },
   game: 'p5',
+  image: Buffer {...},
+  isPersona(): true,
   user: 'Morgana',
   stage: 2,
   evoSkill: "Evade Elec",
-  image: Buffer {...},
-  isPersona(): true,
   evolution: Persona {...}
 }
 ```
