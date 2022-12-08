@@ -5,7 +5,7 @@ import { formatPossessive, normalize } from '@squiddleton/util';
 import type { DemonData, PersonaData } from './dataTypes';
 import demonData from './demonData';
 import MegatenError from './error';
-import type { AnyAffinity, Arcana, DamagingAffinity, Game, Race, Stage } from './types';
+import type { AnyAffinity, Arcana, DemonAffinities, DemonStats, Game, Race, Stage } from './types';
 
 function isPersona(demon: Demon): demon is Persona;
 function isPersona(demon: DemonData): demon is PersonaData;
@@ -32,31 +32,15 @@ export class Demon implements DemonData {
 	hp: number | null;
 	/** The demon's initial MP/SP */
 	mp: number | null;
-	/** The demon's initial strength stat */
-	st: number;
-	/** The demon's initial vitality/endurance stat */
-	vi: number;
-	/** The demon's initial magic stat */
-	ma: number;
-	/** The demon's initial agility stat */
-	ag: number;
-	/** The demon's initial luck stat */
-	lu: number;
+	/** The demon's initial stats */
+	stats: DemonStats;
 	/** The skills that the demon learns by leveling up */
 	learnset: {
 		name: string;
 		level: number;
 	}[];
-	/** The affinities that the demon is weak to */
-	weak: DamagingAffinity[];
-	/** The affinities that the demon resists */
-	resist: DamagingAffinity[];
-	/** The affinities that the demon nullifies */
-	null: DamagingAffinity[];
-	/** The affinities that the demon drains */
-	drain: DamagingAffinity[];
-	/** The affinities that the demon repels */
-	repel: DamagingAffinity[];
+	/** The demon's affinities */
+	affinities: DemonAffinities;
 	/** The game that this demon's data originates from */
 	game: Game;
 	constructor(data: DemonData) {
@@ -69,17 +53,9 @@ export class Demon implements DemonData {
 		this.level = data.level;
 		this.hp = data.hp;
 		this.mp = data.mp;
-		this.st = data.st;
-		this.vi = data.vi;
-		this.ma = data.ma;
-		this.ag = data.ag;
-		this.lu = data.lu;
+		this.stats = data.stats;
 		this.learnset = data.learnset;
-		this.weak = data.weak;
-		this.resist = data.resist;
-		this.null = data.null;
-		this.drain = data.drain;
-		this.repel = data.repel;
+		this.affinities = data.affinities;
 		this.game = data.game;
 	}
 	/** Whether the demon is a Persona instance */

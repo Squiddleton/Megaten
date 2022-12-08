@@ -10,11 +10,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 72,
 		hp: 479,
 		mp: 300,
-		st: 52,
-		ma: 42,
-		vi: 60,
-		ag: 35,
-		lu: 47,
+		stats: {
+			st: 52,
+			vi: 60,
+			ma: 42,
+			ag: 35,
+			lu: 47
+		},
 		learnset: [
 			{
 				name: 'Fogna',
@@ -45,17 +47,19 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 75
 			}
 		],
-		weak: [
-			'Elec'
-		],
-		resist: [
-			'Dark'
-		],
-		null: [
-			'Fire'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Elec'
+			],
+			resist: [
+				'Dark'
+			],
+			null: [
+				'Fire'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -67,11 +71,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 80,
 		hp: 535,
 		mp: 346,
-		st: 70,
-		ma: 65,
-		vi: 50,
-		ag: 55,
-		lu: 31,
+		stats: {
+			st: 70,
+			vi: 50,
+			ma: 65,
+			ag: 55,
+			lu: 31
+		},
 		learnset: [
 			{
 				name: 'Floral Gust',
@@ -98,18 +104,20 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 83
 			}
 		],
-		weak: [
-			'Dark'
-		],
-		resist: [
-			'Elec',
-			'Force'
-		],
-		null: [],
-		drain: [],
-		repel: [
-			'Light'
-		],
+		affinities: {
+			weak: [
+				'Dark'
+			],
+			resist: [
+				'Elec',
+				'Force'
+			],
+			null: [],
+			drain: [],
+			repel: [
+				'Light'
+			]
+		},
 		game: 'smt5'
 	},
 	{
@@ -123,11 +131,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 89,
 		hp: 596,
 		mp: 451,
-		st: 70,
-		ma: 85,
-		vi: 65,
-		ag: 83,
-		lu: 51,
+		stats: {
+			st: 70,
+			vi: 65,
+			ma: 85,
+			ag: 83,
+			lu: 51
+		},
 		learnset: [
 			{
 				name: 'Akashic Arts',
@@ -158,19 +168,21 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 92
 			}
 		],
-		weak: [
-			'Light'
-		],
-		resist: [
-			'Ice',
-			'Elec',
-			'Force'
-		],
-		null: [],
-		drain: [],
-		repel: [
-			'Dark'
-		],
+		affinities: {
+			weak: [
+				'Light'
+			],
+			resist: [
+				'Ice',
+				'Elec',
+				'Force'
+			],
+			null: [],
+			drain: [],
+			repel: [
+				'Dark'
+			]
+		},
 		game: 'smt5'
 	},
 	{
@@ -182,11 +194,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 71,
 		hp: 402,
 		mp: 310,
-		st: 57,
-		ma: 62,
-		vi: 39,
-		ag: 50,
-		lu: 32,
+		stats: {
+			st: 57,
+			vi: 39,
+			ma: 62,
+			ag: 50,
+			lu: 32
+		},
 		learnset: [
 			{
 				name: 'Agibarion',
@@ -217,17 +231,19 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 75
 			}
 		],
-		weak: [
-			'Ice'
-		],
-		resist: [
-			'Fire'
-		],
-		null: [
-			'Dark'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Ice'
+			],
+			resist: [
+				'Fire'
+			],
+			null: [
+				'Dark'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -239,11 +255,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 12,
 		hp: 62,
 		mp: 99,
-		st: 9,
-		ma: 17,
-		vi: 9,
-		ag: 11,
-		lu: 12,
+		stats: {
+			st: 9,
+			vi: 9,
+			ma: 17,
+			ag: 11,
+			lu: 12
+		},
 		learnset: [
 			{
 				name: 'Makajama',
@@ -258,15 +276,17 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 13
 			}
 		],
-		weak: [
-			'Elec'
-		],
-		resist: [
-			'Force'
-		],
-		null: [],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Elec'
+			],
+			resist: [
+				'Force'
+			],
+			null: [],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -278,11 +298,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 10,
 		hp: 55,
 		mp: 93,
-		st: 7,
-		ma: 14,
-		vi: 9,
-		ag: 11,
-		lu: 11,
+		stats: {
+			st: 7,
+			vi: 9,
+			ma: 14,
+			ag: 11,
+			lu: 11
+		},
 		learnset: [
 			{
 				name: 'Zio',
@@ -297,16 +319,18 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 12
 			}
 		],
-		weak: [
-			'Ice',
-			'Dark'
-		],
-		resist: [],
-		null: [
-			'Elec'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Ice',
+				'Dark'
+			],
+			resist: [],
+			null: [
+				'Elec'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -318,11 +342,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 21,
 		hp: null,
 		mp: null,
-		st: 15,
-		ma: 15,
-		vi: 14,
-		ag: 15,
-		lu: 11,
+		stats: {
+			st: 15,
+			vi: 14,
+			ma: 15,
+			ag: 15,
+			lu: 11
+		},
 		learnset: [
 			{
 				name: 'Frei',
@@ -409,21 +435,20 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 75
 			}
 		],
-		weak: [
-			'Psy'
-		],
-		resist: [
-			'Dark'
-		],
-		null: [
-			'Nuke'
-		],
-		drain: [],
-		repel: [],
-		game: 'p5',
-		user: 'Makoto Niijima',
-		stage: 3,
-		evoSkill: 'Debilitate'
+		affinities: {
+			weak: [
+				'Psy'
+			],
+			resist: [
+				'Dark'
+			],
+			null: [
+				'Nuke'
+			],
+			drain: [],
+			repel: []
+		},
+		game: 'p5'
 	},
 	{
 		name: 'Aitvaras',
@@ -434,11 +459,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 17,
 		hp: 84,
 		mp: 112,
-		st: 12,
-		ma: 16,
-		vi: 12,
-		ag: 16,
-		lu: 17,
+		stats: {
+			st: 12,
+			vi: 12,
+			ma: 16,
+			ag: 16,
+			lu: 17
+		},
 		learnset: [
 			{
 				name: 'Mirage Shot',
@@ -453,15 +480,17 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 19
 			}
 		],
-		weak: [
-			'Ice'
-		],
-		resist: [],
-		null: [
-			'Fire'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Ice'
+			],
+			resist: [],
+			null: [
+				'Fire'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -473,11 +502,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 31,
 		hp: null,
 		mp: null,
-		st: 17,
-		ma: 23,
-		vi: 20,
-		ag: 21,
-		lu: 35,
+		stats: {
+			st: 17,
+			vi: 20,
+			ma: 23,
+			ag: 21,
+			lu: 35
+		},
 		learnset: [
 			{
 				name: 'Analysis',
@@ -500,15 +531,14 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 67
 			}
 		],
-		weak: [],
-		resist: [],
-		null: [],
-		drain: [],
-		repel: [],
-		game: 'p5',
-		user: 'Futaba Sakura',
-		stage: 3,
-		evoSkill: 'Ultimate Support'
+		affinities: {
+			weak: [],
+			resist: [],
+			null: [],
+			drain: [],
+			repel: []
+		},
+		game: 'p5'
 	},
 	{
 		name: 'Alice',
@@ -519,11 +549,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 40,
 		hp: 189,
 		mp: 255,
-		st: 7,
-		ma: 46,
-		vi: 25,
-		ag: 30,
-		lu: 34,
+		stats: {
+			st: 7,
+			vi: 25,
+			ma: 46,
+			ag: 30,
+			lu: 34
+		},
 		learnset: [
 			{
 				name: 'Die For Me!',
@@ -554,15 +586,17 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 43
 			}
 		],
-		weak: [
-			'Light'
-		],
-		resist: [],
-		null: [],
-		drain: [
-			'Dark'
-		],
-		repel: [],
+		affinities: {
+			weak: [
+				'Light'
+			],
+			resist: [],
+			null: [],
+			drain: [
+				'Dark'
+			],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -574,11 +608,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 81,
 		hp: 410,
 		mp: 418,
-		st: 24,
-		ma: 68,
-		vi: 75,
-		ag: 50,
-		lu: 61,
+		stats: {
+			st: 24,
+			vi: 75,
+			ma: 68,
+			ag: 50,
+			lu: 61
+		},
 		learnset: [
 			{
 				name: 'Donum Gladi',
@@ -609,14 +645,16 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 84
 			}
 		],
-		weak: [],
-		resist: [
-			'Light',
-			'Dark'
-		],
-		null: [],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [],
+			resist: [
+				'Light',
+				'Dark'
+			],
+			null: [],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -628,11 +666,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 76,
 		hp: 407,
 		mp: 450,
-		st: 26,
-		ma: 70,
-		vi: 40,
-		ag: 63,
-		lu: 59,
+		stats: {
+			st: 26,
+			vi: 40,
+			ma: 70,
+			ag: 63,
+			lu: 59
+		},
 		learnset: [
 			{
 				name: 'Energy Drain',
@@ -663,21 +703,23 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 79
 			}
 		],
-		weak: [
-			'Fire',
-			'Ice'
-		],
-		resist: [
-			'Light'
-		],
-		null: [
-			'Force',
-			'Dark'
-		],
-		drain: [],
-		repel: [
-			'Elec'
-		],
+		affinities: {
+			weak: [
+				'Fire',
+				'Ice'
+			],
+			resist: [
+				'Light'
+			],
+			null: [
+				'Force',
+				'Dark'
+			],
+			drain: [],
+			repel: [
+				'Elec'
+			]
+		},
 		game: 'smt5'
 	},
 	{
@@ -689,11 +731,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 15,
 		hp: null,
 		mp: null,
-		st: 8,
-		ma: 15,
-		vi: 11,
-		ag: 8,
-		lu: 10,
+		stats: {
+			st: 8,
+			vi: 11,
+			ma: 15,
+			ag: 8,
+			lu: 10
+		},
 		learnset: [
 			{
 				name: 'Dia',
@@ -772,21 +816,20 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 76
 			}
 		],
-		weak: [
-			'Ice'
-		],
-		resist: [
-			'Elec'
-		],
-		null: [
-			'Fire'
-		],
-		drain: [],
-		repel: [],
-		game: 'p4',
-		user: 'Yukiko Amagi',
-		stage: 2,
-		evoSkill: null
+		affinities: {
+			weak: [
+				'Ice'
+			],
+			resist: [
+				'Elec'
+			],
+			null: [
+				'Fire'
+			],
+			drain: [],
+			repel: []
+		},
+		game: 'p4'
 	},
 	{
 		name: 'Ame-no-Uzume',
@@ -797,11 +840,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 22,
 		hp: 99,
 		mp: 139,
-		st: 11,
-		ma: 26,
-		vi: 14,
-		ag: 19,
-		lu: 20,
+		stats: {
+			st: 11,
+			vi: 14,
+			ma: 26,
+			ag: 19,
+			lu: 20
+		},
 		learnset: [
 			{
 				name: 'Hama',
@@ -828,15 +873,17 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 25
 			}
 		],
-		weak: [
-			'Force'
-		],
-		resist: [],
-		null: [
-			'Elec'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Force'
+			],
+			resist: [],
+			null: [
+				'Elec'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -848,11 +895,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 82,
 		hp: 619,
 		mp: 329,
-		st: 69,
-		ma: 64,
-		vi: 74,
-		ag: 32,
-		lu: 46,
+		stats: {
+			st: 69,
+			vi: 74,
+			ma: 64,
+			ag: 32,
+			lu: 46
+		},
 		learnset: [
 			{
 				name: 'Abyssal Mask',
@@ -883,19 +932,21 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 85
 			}
 		],
-		weak: [
-			'Ice'
-		],
-		resist: [
-			'Phys',
-			'Light',
-			'Dark'
-		],
-		null: [],
-		drain: [
-			'Fire'
-		],
-		repel: [],
+		affinities: {
+			weak: [
+				'Ice'
+			],
+			resist: [
+				'Phys',
+				'Light',
+				'Dark'
+			],
+			null: [],
+			drain: [
+				'Fire'
+			],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -907,11 +958,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 29,
 		hp: 141,
 		mp: 199,
-		st: 14,
-		ma: 32,
-		vi: 24,
-		ag: 22,
-		lu: 22,
+		stats: {
+			st: 14,
+			vi: 24,
+			ma: 32,
+			ag: 22,
+			lu: 22
+		},
 		learnset: [
 			{
 				name: 'Diarama',
@@ -938,18 +991,20 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 32
 			}
 		],
-		weak: [
-			'Fire',
-			'Elec'
-		],
-		resist: [],
-		null: [
-			'Light'
-		],
-		drain: [
-			'Ice'
-		],
-		repel: [],
+		affinities: {
+			weak: [
+				'Fire',
+				'Elec'
+			],
+			resist: [],
+			null: [
+				'Light'
+			],
+			drain: [
+				'Ice'
+			],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -961,11 +1016,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 59,
 		hp: 384,
 		mp: 206,
-		st: 55,
-		ma: 24,
-		vi: 56,
-		ag: 29,
-		lu: 34,
+		stats: {
+			st: 55,
+			vi: 56,
+			ma: 24,
+			ag: 29,
+			lu: 34
+		},
 		learnset: [
 			{
 				name: 'Ice Dracostrike',
@@ -992,18 +1049,20 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 62
 			}
 		],
-		weak: [
-			'Force',
-			'Dark'
-		],
-		resist: [],
-		null: [
-			'Ice',
-			'Elec',
-			'Light'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Force',
+				'Dark'
+			],
+			resist: [],
+			null: [
+				'Ice',
+				'Elec',
+				'Light'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -1015,11 +1074,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 21,
 		hp: null,
 		mp: null,
-		st: 15,
-		ma: 15,
-		vi: 14,
-		ag: 15,
-		lu: 11,
+		stats: {
+			st: 15,
+			vi: 14,
+			ma: 15,
+			ag: 15,
+			lu: 11
+		},
 		learnset: [
 			{
 				name: 'Frei',
@@ -1106,21 +1167,20 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 75
 			}
 		],
-		weak: [
-			'Psy'
-		],
-		resist: [
-			'Dark'
-		],
-		null: [
-			'Nuke'
-		],
-		drain: [],
-		repel: [],
-		game: 'p5',
-		user: 'Makoto Niijima',
-		stage: 2,
-		evoSkill: 'Evade Psy'
+		affinities: {
+			weak: [
+				'Psy'
+			],
+			resist: [
+				'Dark'
+			],
+			null: [
+				'Nuke'
+			],
+			drain: [],
+			repel: []
+		},
+		game: 'p5'
 	},
 	{
 		name: 'Andras',
@@ -1131,11 +1191,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 18,
 		hp: 92,
 		mp: 108,
-		st: 13,
-		ma: 12,
-		vi: 13,
-		ag: 20,
-		lu: 19,
+		stats: {
+			st: 13,
+			vi: 13,
+			ma: 12,
+			ag: 20,
+			lu: 19
+		},
 		learnset: [
 			{
 				name: 'Poisma',
@@ -1158,16 +1220,18 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 21
 			}
 		],
-		weak: [
-			'Elec',
-			'Light'
-		],
-		resist: [],
-		null: [
-			'Ice'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Elec',
+				'Light'
+			],
+			resist: [],
+			null: [
+				'Ice'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -1179,11 +1243,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 10,
 		hp: 59,
 		mp: 103,
-		st: 6,
-		ma: 16,
-		vi: 8,
-		ag: 12,
-		lu: 12,
+		stats: {
+			st: 6,
+			vi: 8,
+			ma: 16,
+			ag: 12,
+			lu: 12
+		},
 		learnset: [
 			{
 				name: 'Hama',
@@ -1202,16 +1268,18 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 13
 			}
 		],
-		weak: [
-			'Force',
-			'Dark'
-		],
-		resist: [],
-		null: [
-			'Light'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Force',
+				'Dark'
+			],
+			resist: [],
+			null: [
+				'Light'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -1223,11 +1291,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 41,
 		hp: 184,
 		mp: 240,
-		st: 15,
-		ma: 45,
-		vi: 22,
-		ag: 31,
-		lu: 34,
+		stats: {
+			st: 15,
+			vi: 22,
+			ma: 45,
+			ag: 31,
+			lu: 34
+		},
 		learnset: [
 			{
 				name: 'Mahama',
@@ -1254,17 +1324,19 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 44
 			}
 		],
-		weak: [
-			'Force'
-		],
-		resist: [
-			'Dark'
-		],
-		null: [
-			'Light'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Force'
+			],
+			resist: [
+				'Dark'
+			],
+			null: [
+				'Light'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -1276,11 +1348,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 48,
 		hp: 272,
 		mp: 176,
-		st: 39,
-		ma: 24,
-		vi: 32,
-		ag: 45,
-		lu: 26,
+		stats: {
+			st: 39,
+			vi: 32,
+			ma: 24,
+			ag: 45,
+			lu: 26
+		},
 		learnset: [
 			{
 				name: 'Damascus Claw',
@@ -1303,15 +1377,17 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 51
 			}
 		],
-		weak: [
-			'Force'
-		],
-		resist: [],
-		null: [
-			'Elec'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Force'
+			],
+			resist: [],
+			null: [
+				'Elec'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -1323,11 +1399,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 16,
 		hp: 76,
 		mp: 118,
-		st: 9,
-		ma: 19,
-		vi: 11,
-		ag: 17,
-		lu: 15,
+		stats: {
+			st: 9,
+			vi: 11,
+			ma: 19,
+			ag: 17,
+			lu: 15
+		},
 		learnset: [
 			{
 				name: 'Bufu',
@@ -1346,15 +1424,17 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 18
 			}
 		],
-		weak: [
-			'Fire'
-		],
-		resist: [
-			'Ice'
-		],
-		null: [],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Fire'
+			],
+			resist: [
+				'Ice'
+			],
+			null: [],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -1366,11 +1446,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 15,
 		hp: 72,
 		mp: 109,
-		st: 8,
-		ma: 20,
-		vi: 11,
-		ag: 13,
-		lu: 15,
+		stats: {
+			st: 8,
+			vi: 11,
+			ma: 20,
+			ag: 13,
+			lu: 15
+		},
 		learnset: [
 			{
 				name: 'Bufu',
@@ -1385,15 +1467,17 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 16
 			}
 		],
-		weak: [
-			'Fire'
-		],
-		resist: [
-			'Ice'
-		],
-		null: [],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Fire'
+			],
+			resist: [
+				'Ice'
+			],
+			null: [],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -1405,11 +1489,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 62,
 		hp: 290,
 		mp: 317,
-		st: 27,
-		ma: 58,
-		vi: 37,
-		ag: 34,
-		lu: 52,
+		stats: {
+			st: 27,
+			vi: 37,
+			ma: 58,
+			ag: 34,
+			lu: 52
+		},
 		learnset: [
 			{
 				name: 'Megidola',
@@ -1436,21 +1522,23 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 65
 			}
 		],
-		weak: [
-			'Fire',
-			'Ice',
-			'Elec',
-			'Force'
-		],
-		resist: [
-			'Light',
-			'Dark'
-		],
-		null: [
-			'Phys'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Fire',
+				'Ice',
+				'Elec',
+				'Force'
+			],
+			resist: [
+				'Light',
+				'Dark'
+			],
+			null: [
+				'Phys'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -1462,11 +1550,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 30,
 		hp: null,
 		mp: null,
-		st: 20,
-		ma: 18,
-		vi: 20,
-		ag: 20,
-		lu: 19,
+		stats: {
+			st: 20,
+			vi: 20,
+			ma: 18,
+			ag: 20,
+			lu: 19
+		},
 		learnset: [
 			{
 				name: 'Miracle Punch',
@@ -1497,15 +1587,17 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 35
 			}
 		],
-		weak: [
-			'Ice'
-		],
-		resist: [
-			'Phys'
-		],
-		null: [],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Ice'
+			],
+			resist: [
+				'Phys'
+			],
+			null: [],
+			drain: [],
+			repel: []
+		},
 		game: 'p5'
 	},
 	{
@@ -1517,11 +1609,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 18,
 		hp: 102,
 		mp: 114,
-		st: 15,
-		ma: 16,
-		vi: 14,
-		ag: 18,
-		lu: 16,
+		stats: {
+			st: 15,
+			vi: 14,
+			ma: 16,
+			ag: 18,
+			lu: 16
+		},
 		learnset: [
 			{
 				name: 'Hama',
@@ -1544,16 +1638,18 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 21
 			}
 		],
-		weak: [
-			'Elec',
-			'Dark'
-		],
-		resist: [],
-		null: [
-			'Light'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Elec',
+				'Dark'
+			],
+			resist: [],
+			null: [
+				'Light'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -1565,11 +1661,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 84,
 		hp: null,
 		mp: null,
-		st: 54,
-		ma: 56,
-		vi: 55,
-		ag: 54,
-		lu: 40,
+		stats: {
+			st: 54,
+			vi: 55,
+			ma: 56,
+			ag: 54,
+			lu: 40
+		},
 		learnset: [
 			{
 				name: 'God"s Hand',
@@ -1600,16 +1698,18 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 90
 			}
 		],
-		weak: [],
-		resist: [
-			'Phys'
-		],
-		null: [
-			'Ice',
-			'Elec'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [],
+			resist: [
+				'Phys'
+			],
+			null: [
+				'Ice',
+				'Elec'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'p5'
 	},
 	{
@@ -1621,11 +1721,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 25,
 		hp: null,
 		mp: null,
-		st: 18,
-		ma: 15,
-		vi: 20,
-		ag: 15,
-		lu: 14,
+		stats: {
+			st: 18,
+			vi: 20,
+			ma: 15,
+			ag: 15,
+			lu: 14
+		},
 		learnset: [
 			{
 				name: 'Gale Slash',
@@ -1652,17 +1754,19 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 30
 			}
 		],
-		weak: [
-			'Wind'
-		],
-		resist: [
-			'Phys'
-		],
-		null: [
-			'Light'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Wind'
+			],
+			resist: [
+				'Phys'
+			],
+			null: [
+				'Light'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'p4'
 	},
 	{
@@ -1674,11 +1778,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 30,
 		hp: null,
 		mp: null,
-		st: 23,
-		ma: 19,
-		vi: 20,
-		ag: 17,
-		lu: 18,
+		stats: {
+			st: 23,
+			vi: 20,
+			ma: 19,
+			ag: 17,
+			lu: 18
+		},
 		learnset: [
 			{
 				name: 'Beast Weaver',
@@ -1709,22 +1815,21 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 36
 			}
 		],
-		weak: [
-			'Psy'
-		],
-		resist: [
-			'Gun',
-			'Light'
-		],
-		null: [
-			'Nuke'
-		],
-		drain: [],
-		repel: [],
-		game: 'p5',
-		user: 'Labrys',
-		stage: 1,
-		evoSkill: null
+		affinities: {
+			weak: [
+				'Psy'
+			],
+			resist: [
+				'Gun',
+				'Light'
+			],
+			null: [
+				'Nuke'
+			],
+			drain: [],
+			repel: []
+		},
+		game: 'p5'
 	},
 	{
 		name: 'Ariadne Picaro',
@@ -1735,11 +1840,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 42,
 		hp: null,
 		mp: null,
-		st: 36,
-		ma: 23,
-		vi: 29,
-		ag: 24,
-		lu: 21,
+		stats: {
+			st: 36,
+			vi: 29,
+			ma: 23,
+			ag: 24,
+			lu: 21
+		},
 		learnset: [
 			{
 				name: 'Beast Weaver',
@@ -1770,18 +1877,20 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 48
 			}
 		],
-		weak: [
-			'Psy'
-		],
-		resist: [
-			'Gun',
-			'Light'
-		],
-		null: [
-			'Nuke'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Psy'
+			],
+			resist: [
+				'Gun',
+				'Light'
+			],
+			null: [
+				'Nuke'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'p5'
 	},
 	{
@@ -1793,11 +1902,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 75,
 		hp: 474,
 		mp: 324,
-		st: 69,
-		ma: 47,
-		vi: 61,
-		ag: 35,
-		lu: 42,
+		stats: {
+			st: 69,
+			vi: 61,
+			ma: 47,
+			ag: 35,
+			lu: 42
+		},
 		learnset: [
 			{
 				name: 'Bufubarion',
@@ -1828,18 +1939,20 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 79
 			}
 		],
-		weak: [
-			'Elec'
-		],
-		resist: [
-			'Force',
-			'Dark'
-		],
-		null: [],
-		drain: [],
-		repel: [
-			'Ice'
-		],
+		affinities: {
+			weak: [
+				'Elec'
+			],
+			resist: [
+				'Force',
+				'Dark'
+			],
+			null: [],
+			drain: [],
+			repel: [
+				'Ice'
+			]
+		},
 		game: 'smt5'
 	},
 	{
@@ -1851,11 +1964,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 1,
 		hp: null,
 		mp: null,
-		st: 2,
-		ma: 2,
-		vi: 2,
-		ag: 3,
-		lu: 1,
+		stats: {
+			st: 2,
+			vi: 2,
+			ma: 2,
+			ag: 3,
+			lu: 1
+		},
 		learnset: [
 			{
 				name: 'Mudo',
@@ -1878,20 +1993,19 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 7
 			}
 		],
-		weak: [
-			'Ice',
-			'Light'
-		],
-		resist: [
-			'Dark'
-		],
-		null: [],
-		drain: [],
-		repel: [],
-		game: 'p5',
-		user: 'P5 Protagonist',
-		stage: 1,
-		evoSkill: null
+		affinities: {
+			weak: [
+				'Ice',
+				'Light'
+			],
+			resist: [
+				'Dark'
+			],
+			null: [],
+			drain: [],
+			repel: []
+		},
+		game: 'p5'
 	},
 	{
 		name: 'Artemis',
@@ -1902,11 +2016,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 37,
 		hp: 211,
 		mp: 189,
-		st: 36,
-		ma: 31,
-		vi: 24,
-		ag: 28,
-		lu: 23,
+		stats: {
+			st: 36,
+			vi: 24,
+			ma: 31,
+			ag: 28,
+			lu: 23
+		},
 		learnset: [
 			{
 				name: 'Astral Saintstrike',
@@ -1937,19 +2053,21 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 41
 			}
 		],
-		weak: [
-			'Fire'
-		],
-		resist: [
-			'Light',
-			'Dark'
-		],
-		null: [
-			'Ice',
-			'Elec'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Fire'
+			],
+			resist: [
+				'Light',
+				'Dark'
+			],
+			null: [
+				'Ice',
+				'Elec'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -1961,11 +2079,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 18,
 		hp: null,
 		mp: null,
-		st: 11,
-		ma: 16,
-		vi: 11,
-		ag: 12,
-		lu: 11,
+		stats: {
+			st: 11,
+			vi: 11,
+			ma: 16,
+			ag: 12,
+			lu: 11
+		},
 		learnset: [
 			{
 				name: 'Analysis',
@@ -2036,19 +2156,18 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 76
 			}
 		],
-		weak: [
-			'Fire'
-		],
-		resist: [],
-		null: [
-			'Ice'
-		],
-		drain: [],
-		repel: [],
-		game: 'p3',
-		user: 'Mitsuru Kirijo',
-		stage: 2,
-		evoSkill: null
+		affinities: {
+			weak: [
+				'Fire'
+			],
+			resist: [],
+			null: [
+				'Ice'
+			],
+			drain: [],
+			repel: []
+		},
+		game: 'p3'
 	},
 	{
 		name: 'Astarte',
@@ -2059,11 +2178,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 36,
 		hp: null,
 		mp: null,
-		st: 27,
-		ma: 25,
-		vi: 22,
-		ag: 22,
-		lu: 21,
+		stats: {
+			st: 27,
+			vi: 22,
+			ma: 25,
+			ag: 22,
+			lu: 21
+		},
 		learnset: [
 			{
 				name: 'Psio',
@@ -2142,21 +2263,20 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 75
 			}
 		],
-		weak: [
-			'Nuke'
-		],
-		resist: [
-			'Ice'
-		],
-		null: [
-			'Psy'
-		],
-		drain: [],
-		repel: [],
-		game: 'p5',
-		user: 'Haru Okumura',
-		stage: 2,
-		evoSkill: 'Evade Nuke'
+		affinities: {
+			weak: [
+				'Nuke'
+			],
+			resist: [
+				'Ice'
+			],
+			null: [
+				'Psy'
+			],
+			drain: [],
+			repel: []
+		},
+		game: 'p5'
 	},
 	{
 		name: 'Asterius',
@@ -2167,11 +2287,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 56,
 		hp: null,
 		mp: null,
-		st: 43,
-		ma: 43,
-		vi: 32,
-		ag: 32,
-		lu: 25,
+		stats: {
+			st: 43,
+			vi: 32,
+			ma: 43,
+			ag: 32,
+			lu: 25
+		},
 		learnset: [
 			{
 				name: 'Titanomachia -Persona-',
@@ -2202,22 +2324,21 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 62
 			}
 		],
-		weak: [
-			'Ice'
-		],
-		resist: [
-			'Fire',
-			'Psy'
-		],
-		null: [
-			'Dark'
-		],
-		drain: [],
-		repel: [],
-		game: 'p5',
-		user: 'Shadow Labrys',
-		stage: 1,
-		evoSkill: null
+		affinities: {
+			weak: [
+				'Ice'
+			],
+			resist: [
+				'Fire',
+				'Psy'
+			],
+			null: [
+				'Dark'
+			],
+			drain: [],
+			repel: []
+		},
+		game: 'p5'
 	},
 	{
 		name: 'Asterius Picaro',
@@ -2228,11 +2349,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 62,
 		hp: null,
 		mp: null,
-		st: 46,
-		ma: 46,
-		vi: 36,
-		ag: 36,
-		lu: 29,
+		stats: {
+			st: 46,
+			vi: 36,
+			ma: 46,
+			ag: 36,
+			lu: 29
+		},
 		learnset: [
 			{
 				name: 'Titanomachia -Persona-',
@@ -2263,18 +2386,20 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 68
 			}
 		],
-		weak: [
-			'Ice'
-		],
-		resist: [
-			'Fire',
-			'Psy'
-		],
-		null: [
-			'Dark'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Ice'
+			],
+			resist: [
+				'Fire',
+				'Psy'
+			],
+			null: [
+				'Dark'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'p5'
 	},
 	{
@@ -2286,11 +2411,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 84,
 		hp: 543,
 		mp: 382,
-		st: 80,
-		ma: 53,
-		vi: 73,
-		ag: 52,
-		lu: 53,
+		stats: {
+			st: 80,
+			vi: 73,
+			ma: 53,
+			ag: 52,
+			lu: 53
+		},
 		learnset: [
 			{
 				name: 'Agibarion',
@@ -2321,19 +2448,21 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 88
 			}
 		],
-		weak: [
-			'Ice'
-		],
-		resist: [
-			'Dark'
-		],
-		null: [
-			'Light'
-		],
-		drain: [],
-		repel: [
-			'Fire'
-		],
+		affinities: {
+			weak: [
+				'Ice'
+			],
+			resist: [
+				'Dark'
+			],
+			null: [
+				'Light'
+			],
+			drain: [],
+			repel: [
+				'Fire'
+			]
+		},
 		game: 'smt5'
 	},
 	{
@@ -2345,11 +2474,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 54,
 		hp: 328,
 		mp: 201,
-		st: 48,
-		ma: 41,
-		vi: 42,
-		ag: 26,
-		lu: 25,
+		stats: {
+			st: 48,
+			vi: 42,
+			ma: 41,
+			ag: 26,
+			lu: 25
+		},
 		learnset: [
 			{
 				name: 'Fatal Sword',
@@ -2376,16 +2507,18 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 57
 			}
 		],
-		weak: [
-			'Ice'
-		],
-		resist: [],
-		null: [
-			'Light',
-			'Dark'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Ice'
+			],
+			resist: [],
+			null: [
+				'Light',
+				'Dark'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -2399,11 +2532,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 46,
 		hp: null,
 		mp: null,
-		st: 33,
-		ma: 27,
-		vi: 29,
-		ag: 29,
-		lu: 27,
+		stats: {
+			st: 33,
+			vi: 29,
+			ma: 27,
+			ag: 29,
+			lu: 27
+		},
 		learnset: [
 			{
 				name: 'Akashic Arts',
@@ -2438,21 +2573,20 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 52
 			}
 		],
-		weak: [
-			'Elec'
-		],
-		resist: [
-			'Phys'
-		],
-		null: [
-			'Gun'
-		],
-		drain: [],
-		repel: [],
-		game: 'p5',
-		user: 'Aigis',
-		stage: 2,
-		evoSkill: null
+		affinities: {
+			weak: [
+				'Elec'
+			],
+			resist: [
+				'Phys'
+			],
+			null: [
+				'Gun'
+			],
+			drain: [],
+			repel: []
+		},
+		game: 'p5'
 	},
 	{
 		name: 'Athena Picaro',
@@ -2463,11 +2597,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 50,
 		hp: null,
 		mp: null,
-		st: 35,
-		ma: 30,
-		vi: 31,
-		ag: 32,
-		lu: 29,
+		stats: {
+			st: 35,
+			vi: 31,
+			ma: 30,
+			ag: 32,
+			lu: 29
+		},
 		learnset: [
 			{
 				name: 'Akashic Arts',
@@ -2502,17 +2638,19 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 56
 			}
 		],
-		weak: [
-			'Elec'
-		],
-		resist: [
-			'Phys'
-		],
-		null: [
-			'Gun'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Elec'
+			],
+			resist: [
+				'Phys'
+			],
+			null: [
+				'Gun'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'p5'
 	},
 	{
@@ -2524,11 +2662,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 64,
 		hp: 312,
 		mp: 328,
-		st: 28,
-		ma: 59,
-		vi: 44,
-		ag: 41,
-		lu: 42,
+		stats: {
+			st: 28,
+			vi: 44,
+			ma: 59,
+			ag: 41,
+			lu: 42
+		},
 		learnset: [
 			{
 				name: 'Hamaon',
@@ -2555,17 +2695,19 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 67
 			}
 		],
-		weak: [
-			'Fire'
-		],
-		resist: [
-			'Ice'
-		],
-		null: [
-			'Light'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Fire'
+			],
+			resist: [
+				'Ice'
+			],
+			null: [
+				'Light'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -2577,11 +2719,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 27,
 		hp: 149,
 		mp: 129,
-		st: 28,
-		ma: 24,
-		vi: 18,
-		ag: 21,
-		lu: 15,
+		stats: {
+			st: 28,
+			vi: 18,
+			ma: 24,
+			ag: 21,
+			lu: 15
+		},
 		learnset: [
 			{
 				name: 'Agilao',
@@ -2608,15 +2752,17 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 30
 			}
 		],
-		weak: [
-			'Dark'
-		],
-		resist: [],
-		null: [
-			'Fire'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Dark'
+			],
+			resist: [],
+			null: [
+				'Fire'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -2628,11 +2774,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 11,
 		hp: 68,
 		mp: 77,
-		st: 10,
-		ma: 12,
-		vi: 10,
-		ag: 13,
-		lu: 12,
+		stats: {
+			st: 10,
+			vi: 10,
+			ma: 12,
+			ag: 13,
+			lu: 12
+		},
 		learnset: [
 			{
 				name: 'Bufu',
@@ -2647,15 +2795,17 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 13
 			}
 		],
-		weak: [
-			'Elec'
-		],
-		resist: [
-			'Ice'
-		],
-		null: [],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Elec'
+			],
+			resist: [
+				'Ice'
+			],
+			null: [],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -2667,11 +2817,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 93,
 		hp: 578,
 		mp: 476,
-		st: 74,
-		ma: 98,
-		vi: 76,
-		ag: 65,
-		lu: 67,
+		stats: {
+			st: 74,
+			vi: 76,
+			ma: 98,
+			ag: 65,
+			lu: 67
+		},
 		learnset: [
 			{
 				name: 'Makarakarn',
@@ -2702,20 +2854,22 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 96
 			}
 		],
-		weak: [
-			'Ice'
-		],
-		resist: [
-			'Fire',
-			'Force'
-		],
-		null: [
-			'Light'
-		],
-		drain: [],
-		repel: [
-			'Elec'
-		],
+		affinities: {
+			weak: [
+				'Ice'
+			],
+			resist: [
+				'Fire',
+				'Force'
+			],
+			null: [
+				'Light'
+			],
+			drain: [],
+			repel: [
+				'Elec'
+			]
+		},
 		game: 'smt5'
 	},
 	{
@@ -2727,11 +2881,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 33,
 		hp: 142,
 		mp: 180,
-		st: 16,
-		ma: 34,
-		vi: 19,
-		ag: 26,
-		lu: 26,
+		stats: {
+			st: 16,
+			vi: 19,
+			ma: 34,
+			ag: 26,
+			lu: 26
+		},
 		learnset: [
 			{
 				name: 'Maragion',
@@ -2754,15 +2910,17 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 36
 			}
 		],
-		weak: [
-			'Light'
-		],
-		resist: [],
-		null: [
-			'Dark'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Light'
+			],
+			resist: [],
+			null: [
+				'Dark'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -2774,11 +2932,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 60,
 		hp: 346,
 		mp: 233,
-		st: 46,
-		ma: 33,
-		vi: 46,
-		ag: 39,
-		lu: 40,
+		stats: {
+			st: 46,
+			vi: 46,
+			ma: 33,
+			ag: 39,
+			lu: 40
+		},
 		learnset: [
 			{
 				name: 'Damascus Claw',
@@ -2805,17 +2965,19 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 63
 			}
 		],
-		weak: [
-			'Force',
-			'Dark'
-		],
-		resist: [],
-		null: [
-			'Elec',
-			'Light'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Force',
+				'Dark'
+			],
+			resist: [],
+			null: [
+				'Elec',
+				'Light'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -2827,11 +2989,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 31,
 		hp: 190,
 		mp: 114,
-		st: 26,
-		ma: 15,
-		vi: 31,
-		ag: 21,
-		lu: 24,
+		stats: {
+			st: 26,
+			vi: 31,
+			ma: 15,
+			ag: 21,
+			lu: 24
+		},
 		learnset: [
 			{
 				name: 'Crusher Onslaught',
@@ -2854,16 +3018,18 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 34
 			}
 		],
-		weak: [
-			'Elec'
-		],
-		resist: [
-			'Fire',
-			'Ice'
-		],
-		null: [],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Elec'
+			],
+			resist: [
+				'Fire',
+				'Ice'
+			],
+			null: [],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -2875,11 +3041,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 95,
 		hp: 570,
 		mp: 517,
-		st: 65,
-		ma: 76,
-		vi: 75,
-		ag: 92,
-		lu: 92,
+		stats: {
+			st: 65,
+			vi: 75,
+			ma: 76,
+			ag: 92,
+			lu: 92
+		},
 		learnset: [
 			{
 				name: 'Death Flies',
@@ -2910,20 +3078,22 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 98
 			}
 		],
-		weak: [
-			'Force'
-		],
-		resist: [
-			'Ice',
-			'Light'
-		],
-		null: [
-			'Dark'
-		],
-		drain: [
-			'Elec'
-		],
-		repel: [],
+		affinities: {
+			weak: [
+				'Force'
+			],
+			resist: [
+				'Ice',
+				'Light'
+			],
+			null: [
+				'Dark'
+			],
+			drain: [
+				'Elec'
+			],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -2935,11 +3105,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 92,
 		hp: 650,
 		mp: 391,
-		st: 96,
-		ma: 75,
-		vi: 90,
-		ag: 61,
-		lu: 50,
+		stats: {
+			st: 96,
+			vi: 90,
+			ma: 75,
+			ag: 61,
+			lu: 50
+		},
 		learnset: [
 			{
 				name: 'Hell Thrust',
@@ -2970,17 +3142,19 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 96
 			}
 		],
-		weak: [
-			'Ice'
-		],
-		resist: [],
-		null: [
-			'Fire',
-			'Force',
-			'Dark'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Ice'
+			],
+			resist: [],
+			null: [
+				'Fire',
+				'Force',
+				'Dark'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -2992,11 +3166,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 44,
 		hp: 225,
 		mp: 190,
-		st: 31,
-		ma: 34,
-		vi: 39,
-		ag: 20,
-		lu: 28,
+		stats: {
+			st: 31,
+			vi: 39,
+			ma: 34,
+			ag: 20,
+			lu: 28
+		},
 		learnset: [
 			{
 				name: 'Mabufula',
@@ -3023,20 +3199,22 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 47
 			}
 		],
-		weak: [
-			'Fire',
-			'Light'
-		],
-		resist: [
-			'Phys',
-			'Elec'
-		],
-		null: [
-			'Ice',
-			'Dark'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Fire',
+				'Light'
+			],
+			resist: [
+				'Phys',
+				'Elec'
+			],
+			null: [
+				'Ice',
+				'Dark'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -3048,11 +3226,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 24,
 		hp: 144,
 		mp: 101,
-		st: 26,
-		ma: 13,
-		vi: 24,
-		ag: 18,
-		lu: 14,
+		stats: {
+			st: 26,
+			vi: 24,
+			ma: 13,
+			ag: 18,
+			lu: 14
+		},
 		learnset: [
 			{
 				name: 'Bloody Glee',
@@ -3075,16 +3255,18 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 27
 			}
 		],
-		weak: [
-			'Ice'
-		],
-		resist: [
-			'Fire',
-			'Dark'
-		],
-		null: [],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Ice'
+			],
+			resist: [
+				'Fire',
+				'Dark'
+			],
+			null: [],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -3096,11 +3278,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 14,
 		hp: 88,
 		mp: 76,
-		st: 18,
-		ma: 8,
-		vi: 14,
-		ag: 13,
-		lu: 11,
+		stats: {
+			st: 18,
+			vi: 14,
+			ma: 8,
+			ag: 13,
+			lu: 11
+		},
 		learnset: [
 			{
 				name: 'Beatdown',
@@ -3115,16 +3299,18 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 16
 			}
 		],
-		weak: [
-			'Elec',
-			'Light'
-		],
-		resist: [],
-		null: [
-			'Dark'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Elec',
+				'Light'
+			],
+			resist: [],
+			null: [
+				'Dark'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -3136,11 +3322,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 58,
 		hp: 344,
 		mp: 262,
-		st: 49,
-		ma: 45,
-		vi: 41,
-		ag: 28,
-		lu: 33,
+		stats: {
+			st: 49,
+			vi: 41,
+			ma: 45,
+			ag: 28,
+			lu: 33
+		},
 		learnset: [
 			{
 				name: 'Agidyne',
@@ -3171,16 +3359,18 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 61
 			}
 		],
-		weak: [
-			'Ice'
-		],
-		resist: [],
-		null: [
-			'Fire',
-			'Light'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Ice'
+			],
+			resist: [],
+			null: [
+				'Fire',
+				'Light'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -3192,11 +3382,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 44,
 		hp: 255,
 		mp: 204,
-		st: 38,
-		ma: 33,
-		vi: 37,
-		ag: 26,
-		lu: 28,
+		stats: {
+			st: 38,
+			vi: 37,
+			ma: 33,
+			ag: 26,
+			lu: 28
+		},
 		learnset: [
 			{
 				name: 'Black Dracostrike',
@@ -3227,19 +3419,21 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 47
 			}
 		],
-		weak: [
-			'Light'
-		],
-		resist: [
-			'Fire'
-		],
-		null: [
-			'Ice'
-		],
-		drain: [],
-		repel: [
-			'Dark'
-		],
+		affinities: {
+			weak: [
+				'Light'
+			],
+			resist: [
+				'Fire'
+			],
+			null: [
+				'Ice'
+			],
+			drain: [],
+			repel: [
+				'Dark'
+			]
+		},
 		game: 'smt5'
 	},
 	{
@@ -3251,11 +3445,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 33,
 		hp: 217,
 		mp: 119,
-		st: 23,
-		ma: 21,
-		vi: 35,
-		ag: 15,
-		lu: 23,
+		stats: {
+			st: 23,
+			vi: 35,
+			ma: 21,
+			ag: 15,
+			lu: 23
+		},
 		learnset: [
 			{
 				name: 'Life Drain',
@@ -3278,16 +3474,18 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 36
 			}
 		],
-		weak: [
-			'Fire',
-			'Light'
-		],
-		resist: [
-			'Phys'
-		],
-		null: [],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Fire',
+				'Light'
+			],
+			resist: [
+				'Phys'
+			],
+			null: [],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -3299,11 +3497,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 52,
 		hp: 273,
 		mp: 256,
-		st: 30,
-		ma: 48,
-		vi: 37,
-		ag: 49,
-		lu: 35,
+		stats: {
+			st: 30,
+			vi: 37,
+			ma: 48,
+			ag: 49,
+			lu: 35
+		},
 		learnset: [
 			{
 				name: 'Bufudyne',
@@ -3334,18 +3534,20 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 55
 			}
 		],
-		weak: [
-			'Force'
-		],
-		resist: [
-			'Light',
-			'Dark'
-		],
-		null: [],
-		drain: [],
-		repel: [
-			'Ice'
-		],
+		affinities: {
+			weak: [
+				'Force'
+			],
+			resist: [
+				'Light',
+				'Dark'
+			],
+			null: [],
+			drain: [],
+			repel: [
+				'Ice'
+			]
+		},
 		game: 'smt5'
 	},
 	{
@@ -3357,11 +3559,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 24,
 		hp: 126,
 		mp: 121,
-		st: 23,
-		ma: 19,
-		vi: 19,
-		ag: 14,
-		lu: 20,
+		stats: {
+			st: 23,
+			vi: 19,
+			ma: 19,
+			ag: 14,
+			lu: 20
+		},
 		learnset: [
 			{
 				name: 'Dormina',
@@ -3384,15 +3588,17 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 27
 			}
 		],
-		weak: [
-			'Fire'
-		],
-		resist: [],
-		null: [
-			'Dark'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Fire'
+			],
+			resist: [],
+			null: [
+				'Dark'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -3404,11 +3610,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 70,
 		hp: null,
 		mp: null,
-		st: 42,
-		ma: 49,
-		vi: 43,
-		ag: 51,
-		lu: 52,
+		stats: {
+			st: 42,
+			vi: 43,
+			ma: 49,
+			ag: 51,
+			lu: 52
+		},
 		learnset: [
 			{
 				name: 'Agidyne',
@@ -3439,18 +3647,20 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 75
 			}
 		],
-		weak: [
-			'Ice',
-			'Nuke'
-		],
-		resist: [],
-		null: [
-			'Fire',
-			'Wind',
-			'Dark'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Ice',
+				'Nuke'
+			],
+			resist: [],
+			null: [
+				'Fire',
+				'Wind',
+				'Dark'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'p5'
 	},
 	{
@@ -3464,11 +3674,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 43,
 		hp: 199,
 		mp: 222,
-		st: 30,
-		ma: 23,
-		vi: 25,
-		ag: 42,
-		lu: 35,
+		stats: {
+			st: 30,
+			vi: 25,
+			ma: 23,
+			ag: 42,
+			lu: 35
+		},
 		learnset: [
 			{
 				name: 'Damascus Claw',
@@ -3495,15 +3707,17 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 46
 			}
 		],
-		weak: [
-			'Force'
-		],
-		resist: [],
-		null: [
-			'Elec'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Force'
+			],
+			resist: [],
+			null: [
+				'Elec'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -3515,11 +3729,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 12,
 		hp: null,
 		mp: null,
-		st: 9,
-		ma: 10,
-		vi: 8,
-		ag: 9,
-		lu: 7,
+		stats: {
+			st: 9,
+			vi: 8,
+			ma: 10,
+			ag: 9,
+			lu: 7
+		},
 		learnset: [
 			{
 				name: 'Sonic Punch',
@@ -3598,19 +3814,18 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 76
 			}
 		],
-		weak: [
-			'Ice'
-		],
-		resist: [],
-		null: [
-			'Elec'
-		],
-		drain: [],
-		repel: [],
-		game: 'p3',
-		user: 'Akihiko Sanada',
-		stage: 2,
-		evoSkill: null
+		affinities: {
+			weak: [
+				'Ice'
+			],
+			resist: [],
+			null: [
+				'Elec'
+			],
+			drain: [],
+			repel: []
+		},
+		game: 'p3'
 	},
 	{
 		name: 'Cait Sith',
@@ -3621,11 +3836,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 7,
 		hp: 54,
 		mp: 70,
-		st: 10,
-		ma: 10,
-		vi: 7,
-		ag: 7,
-		lu: 5,
+		stats: {
+			st: 10,
+			vi: 7,
+			ma: 10,
+			ag: 7,
+			lu: 5
+		},
 		learnset: [
 			{
 				name: 'Dia',
@@ -3640,15 +3857,17 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 10
 			}
 		],
-		weak: [
-			'Force'
-		],
-		resist: [
-			'Elec'
-		],
-		null: [],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Force'
+			],
+			resist: [
+				'Elec'
+			],
+			null: [],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -3660,11 +3879,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 69,
 		hp: 407,
 		mp: 286,
-		st: 50,
-		ma: 45,
-		vi: 58,
-		ag: 39,
-		lu: 35,
+		stats: {
+			st: 50,
+			vi: 58,
+			ma: 45,
+			ag: 39,
+			lu: 35
+		},
 		learnset: [
 			{
 				name: 'Agibarion',
@@ -3691,17 +3912,19 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 72
 			}
 		],
-		weak: [
-			'Ice'
-		],
-		resist: [
-			'Fire'
-		],
-		null: [
-			'Light'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Ice'
+			],
+			resist: [
+				'Fire'
+			],
+			null: [
+				'Light'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -3713,11 +3936,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 4,
 		hp: null,
 		mp: null,
-		st: 5,
-		ma: 3,
-		vi: 5,
-		ag: 3,
-		lu: 3,
+		stats: {
+			st: 5,
+			vi: 5,
+			ma: 3,
+			ag: 3,
+			lu: 3
+		},
 		learnset: [
 			{
 				name: 'Zio',
@@ -3812,19 +4037,18 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 75
 			}
 		],
-		weak: [
-			'Wind'
-		],
-		resist: [
-			'Elec'
-		],
-		null: [],
-		drain: [],
-		repel: [],
-		game: 'p5',
-		user: 'Ryuji Sakamoto',
-		stage: 1,
-		evoSkill: null
+		affinities: {
+			weak: [
+				'Wind'
+			],
+			resist: [
+				'Elec'
+			],
+			null: [],
+			drain: [],
+			repel: []
+		},
+		game: 'p5'
 	},
 	{
 		name: 'Carmen',
@@ -3835,11 +4059,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 5,
 		hp: null,
 		mp: null,
-		st: 3,
-		ma: 6,
-		vi: 4,
-		ag: 4,
-		lu: 5,
+		stats: {
+			st: 3,
+			vi: 4,
+			ma: 6,
+			ag: 4,
+			lu: 5
+		},
 		learnset: [
 			{
 				name: 'Agi',
@@ -3926,19 +4152,18 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 74
 			}
 		],
-		weak: [
-			'Ice'
-		],
-		resist: [
-			'Fire'
-		],
-		null: [],
-		drain: [],
-		repel: [],
-		game: 'p5',
-		user: 'Ann Takamaki',
-		stage: 1,
-		evoSkill: null
+		affinities: {
+			weak: [
+				'Ice'
+			],
+			resist: [
+				'Fire'
+			],
+			null: [],
+			drain: [],
+			repel: []
+		},
+		game: 'p5'
 	},
 	{
 		name: 'Castor',
@@ -3949,11 +4174,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 37,
 		hp: null,
 		mp: null,
-		st: 32,
-		ma: 20,
-		vi: 27,
-		ag: 22,
-		lu: 17,
+		stats: {
+			st: 32,
+			vi: 27,
+			ma: 20,
+			ag: 22,
+			lu: 17
+		},
 		learnset: [
 			{
 				name: 'Regenerate 1',
@@ -4008,15 +4235,14 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 77
 			}
 		],
-		weak: [],
-		resist: [],
-		null: [],
-		drain: [],
-		repel: [],
-		game: 'p3',
-		user: 'Shinjiro Aragaki',
-		stage: 1,
-		evoSkill: null
+		affinities: {
+			weak: [],
+			resist: [],
+			null: [],
+			drain: [],
+			repel: []
+		},
+		game: 'p3'
 	},
 	{
 		name: 'Célestine',
@@ -4027,11 +4253,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 5,
 		hp: null,
 		mp: null,
-		st: 3,
-		ma: 6,
-		vi: 4,
-		ag: 4,
-		lu: 5,
+		stats: {
+			st: 3,
+			vi: 4,
+			ma: 6,
+			ag: 4,
+			lu: 5
+		},
 		learnset: [
 			{
 				name: 'Agi',
@@ -4118,21 +4346,20 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 74
 			}
 		],
-		weak: [
-			'Ice'
-		],
-		resist: [
-			'Elec'
-		],
-		null: [
-			'Fire'
-		],
-		drain: [],
-		repel: [],
-		game: 'p5',
-		user: 'Ann Takamaki',
-		stage: 3,
-		evoSkill: 'High Energy'
+		affinities: {
+			weak: [
+				'Ice'
+			],
+			resist: [
+				'Elec'
+			],
+			null: [
+				'Fire'
+			],
+			drain: [],
+			repel: []
+		},
+		game: 'p5'
 	},
 	{
 		name: 'Cendrillon',
@@ -4143,11 +4370,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 75,
 		hp: null,
 		mp: null,
-		st: 55,
-		ma: 46,
-		vi: 36,
-		ag: 51,
-		lu: 44,
+		stats: {
+			st: 55,
+			vi: 36,
+			ma: 46,
+			ag: 51,
+			lu: 44
+		},
 		learnset: [
 			{
 				name: 'Apt Pupil',
@@ -4186,19 +4415,18 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 80
 			}
 		],
-		weak: [
-			'Dark'
-		],
-		resist: [],
-		null: [
-			'Light'
-		],
-		drain: [],
-		repel: [],
-		game: 'p5',
-		user: 'Sumire Yoshizawa',
-		stage: 1,
-		evoSkill: null
+		affinities: {
+			weak: [
+				'Dark'
+			],
+			resist: [],
+			null: [
+				'Light'
+			],
+			drain: [],
+			repel: []
+		},
+		game: 'p5'
 	},
 	{
 		name: 'Cerberus',
@@ -4209,11 +4437,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 64,
 		hp: 450,
 		mp: 223,
-		st: 53,
-		ma: 28,
-		vi: 59,
-		ag: 43,
-		lu: 30,
+		stats: {
+			st: 53,
+			vi: 59,
+			ma: 28,
+			ag: 43,
+			lu: 30
+		},
 		learnset: [
 			{
 				name: 'Fire Breath',
@@ -4240,15 +4470,17 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 67
 			}
 		],
-		weak: [
-			'Ice'
-		],
-		resist: [],
-		null: [],
-		drain: [],
-		repel: [
-			'Fire'
-		],
+		affinities: {
+			weak: [
+				'Ice'
+			],
+			resist: [],
+			null: [],
+			drain: [],
+			repel: [
+				'Fire'
+			]
+		},
 		game: 'smt5'
 	},
 	{
@@ -4262,11 +4494,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 34,
 		hp: 450,
 		mp: 223,
-		st: 53,
-		ma: 28,
-		vi: 59,
-		ag: 43,
-		lu: 30,
+		stats: {
+			st: 53,
+			vi: 59,
+			ma: 28,
+			ag: 43,
+			lu: 30
+		},
 		learnset: [
 			{
 				name: 'Fire Breath',
@@ -4293,19 +4527,18 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 67
 			}
 		],
-		weak: [
-			'Ice'
-		],
-		resist: [],
-		null: [],
-		drain: [],
-		repel: [
-			'Fire'
-		],
-		game: 'p3',
-		user: 'Koromaru',
-		stage: 1,
-		evoSkill: null
+		affinities: {
+			weak: [
+				'Ice'
+			],
+			resist: [],
+			null: [],
+			drain: [],
+			repel: [
+				'Fire'
+			]
+		},
+		game: 'p3'
 	},
 	{
 		name: 'Chernobog',
@@ -4316,11 +4549,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 52,
 		hp: 248,
 		mp: 251,
-		st: 43,
-		ma: 45,
-		vi: 27,
-		ag: 29,
-		lu: 35,
+		stats: {
+			st: 43,
+			vi: 27,
+			ma: 45,
+			ag: 29,
+			lu: 35
+		},
 		learnset: [
 			{
 				name: 'Blight',
@@ -4347,15 +4582,17 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 55
 			}
 		],
-		weak: [
-			'Light'
-		],
-		resist: [],
-		null: [
-			'Dark'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Light'
+			],
+			resist: [],
+			null: [
+				'Dark'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -4367,11 +4604,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 55,
 		hp: 320,
 		mp: 216,
-		st: 47,
-		ma: 41,
-		vi: 37,
-		ag: 34,
-		lu: 27,
+		stats: {
+			st: 47,
+			vi: 37,
+			ma: 41,
+			ag: 34,
+			lu: 27
+		},
 		learnset: [
 			{
 				name: 'Fierce Roar',
@@ -4402,17 +4641,19 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 58
 			}
 		],
-		weak: [
-			'Force'
-		],
-		resist: [
-			'Fire'
-		],
-		null: [
-			'Elec'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Force'
+			],
+			resist: [
+				'Fire'
+			],
+			null: [
+				'Elec'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -4424,11 +4665,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 87,
 		hp: 577,
 		mp: 378,
-		st: 81,
-		ma: 71,
-		vi: 73,
-		ag: 45,
-		lu: 53,
+		stats: {
+			st: 81,
+			vi: 73,
+			ma: 71,
+			ag: 45,
+			lu: 53
+		},
 		learnset: [
 			{
 				name: 'Glacial Blast',
@@ -4459,18 +4702,20 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 90
 			}
 		],
-		weak: [
-			'Fire',
-			'Elec'
-		],
-		resist: [],
-		null: [
-			'Ice'
-		],
-		drain: [],
-		repel: [
-			'Force'
-		],
+		affinities: {
+			weak: [
+				'Fire',
+				'Elec'
+			],
+			resist: [],
+			null: [
+				'Ice'
+			],
+			drain: [],
+			repel: [
+				'Force'
+			]
+		},
 		game: 'smt5'
 	},
 	{
@@ -4482,11 +4727,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 28,
 		hp: null,
 		mp: null,
-		st: 16,
-		ma: 19,
-		vi: 19,
-		ag: 18,
-		lu: 19,
+		stats: {
+			st: 16,
+			vi: 19,
+			ma: 19,
+			ag: 18,
+			lu: 19
+		},
 		learnset: [
 			{
 				name: 'Pulinpa',
@@ -4521,17 +4768,19 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 33
 			}
 		],
-		weak: [
-			'Light'
-		],
-		resist: [
-			'Phys'
-		],
-		null: [],
-		drain: [
-			'Fire'
-		],
-		repel: [],
+		affinities: {
+			weak: [
+				'Light'
+			],
+			resist: [
+				'Phys'
+			],
+			null: [],
+			drain: [
+				'Fire'
+			],
+			repel: []
+		},
 		game: 'p5'
 	},
 	{
@@ -4543,11 +4792,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 27,
 		hp: 124,
 		mp: 185,
-		st: 16,
-		ma: 25,
-		vi: 18,
-		ag: 25,
-		lu: 24,
+		stats: {
+			st: 16,
+			vi: 18,
+			ma: 25,
+			ag: 25,
+			lu: 24
+		},
 		learnset: [
 			{
 				name: 'Ghastfire Rain',
@@ -4574,17 +4825,19 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 30
 			}
 		],
-		weak: [
-			'Dark'
-		],
-		resist: [
-			'Fire',
-			'Ice',
-			'Light'
-		],
-		null: [],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Dark'
+			],
+			resist: [
+				'Fire',
+				'Ice',
+				'Light'
+			],
+			null: [],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -4596,11 +4849,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 61,
 		hp: 404,
 		mp: 412,
-		st: 26,
-		ma: 69,
-		vi: 42,
-		ag: 44,
-		lu: 51,
+		stats: {
+			st: 26,
+			vi: 42,
+			ma: 69,
+			ag: 44,
+			lu: 51
+		},
 		learnset: [
 			{
 				name: 'Diarahan',
@@ -4631,20 +4886,22 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 64
 			}
 		],
-		weak: [
-			'Dark'
-		],
-		resist: [
-			'Fire',
-			'Ice',
-			'Elec',
-			'Force'
-		],
-		null: [],
-		drain: [
-			'Light'
-		],
-		repel: [],
+		affinities: {
+			weak: [
+				'Dark'
+			],
+			resist: [
+				'Fire',
+				'Ice',
+				'Elec',
+				'Force'
+			],
+			null: [],
+			drain: [
+				'Light'
+			],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -4656,11 +4913,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 52,
 		hp: 278,
 		mp: 265,
-		st: 20,
-		ma: 33,
-		vi: 42,
-		ag: 51,
-		lu: 30,
+		stats: {
+			st: 20,
+			vi: 42,
+			ma: 33,
+			ag: 51,
+			lu: 30
+		},
 		learnset: [
 			{
 				name: 'Lullaby',
@@ -4687,15 +4946,17 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 55
 			}
 		],
-		weak: [
-			'Ice'
-		],
-		resist: [],
-		null: [
-			'Fire'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Ice'
+			],
+			resist: [],
+			null: [
+				'Fire'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -4707,11 +4968,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 52,
 		hp: 293,
 		mp: 201,
-		st: 41,
-		ma: 33,
-		vi: 37,
-		ag: 40,
-		lu: 25,
+		stats: {
+			st: 41,
+			vi: 37,
+			ma: 33,
+			ag: 40,
+			lu: 25
+		},
 		learnset: [
 			{
 				name: 'Fatal Sword',
@@ -4738,17 +5001,19 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 55
 			}
 		],
-		weak: [
-			'Elec'
-		],
-		resist: [
-			'Phys'
-		],
-		null: [
-			'Force'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Elec'
+			],
+			resist: [
+				'Phys'
+			],
+			null: [
+				'Force'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -4760,11 +5025,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 56,
 		hp: 298,
 		mp: 240,
-		st: 49,
-		ma: 44,
-		vi: 29,
-		ag: 22,
-		lu: 48,
+		stats: {
+			st: 49,
+			vi: 29,
+			ma: 44,
+			ag: 22,
+			lu: 48
+		},
 		learnset: [
 			{
 				name: 'Dark Sword',
@@ -4791,17 +5058,19 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 59
 			}
 		],
-		weak: [
-			'Elec'
-		],
-		resist: [
-			'Fire'
-		],
-		null: [
-			'Light'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Elec'
+			],
+			resist: [
+				'Fire'
+			],
+			null: [
+				'Light'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -4813,11 +5082,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 7,
 		hp: 59,
 		mp: 73,
-		st: 11,
-		ma: 10,
-		vi: 6,
-		ag: 9,
-		lu: 7,
+		stats: {
+			st: 11,
+			vi: 6,
+			ma: 10,
+			ag: 9,
+			lu: 7
+		},
 		learnset: [
 			{
 				name: 'Hellish Slash',
@@ -4836,18 +5107,20 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 10
 			}
 		],
-		weak: [
-			'Elec',
-			'Light'
-		],
-		resist: [
-			'Fire'
-		],
-		null: [
-			'Dark'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Elec',
+				'Light'
+			],
+			resist: [
+				'Fire'
+			],
+			null: [
+				'Dark'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -4859,11 +5132,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 30,
 		hp: 144,
 		mp: 183,
-		st: 15,
-		ma: 36,
-		vi: 21,
-		ag: 19,
-		lu: 30,
+		stats: {
+			st: 15,
+			vi: 21,
+			ma: 36,
+			ag: 19,
+			lu: 30
+		},
 		learnset: [
 			{
 				name: 'Mahama',
@@ -4890,16 +5165,18 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 33
 			}
 		],
-		weak: [
-			'Fire'
-		],
-		resist: [],
-		null: [
-			'Light',
-			'Dark'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Fire'
+			],
+			resist: [],
+			null: [
+				'Light',
+				'Dark'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -4911,11 +5188,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 46,
 		hp: 226,
 		mp: 169,
-		st: 44,
-		ma: 20,
-		vi: 31,
-		ag: 32,
-		lu: 33,
+		stats: {
+			st: 44,
+			vi: 31,
+			ma: 20,
+			ag: 32,
+			lu: 33
+		},
 		learnset: [
 			{
 				name: 'Dark Sword',
@@ -4938,17 +5217,19 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 49
 			}
 		],
-		weak: [
-			'Ice',
-			'Light'
-		],
-		resist: [
-			'Phys',
-			'Fire'
-		],
-		null: [],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Ice',
+				'Light'
+			],
+			resist: [
+				'Phys',
+				'Fire'
+			],
+			null: [],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -4960,11 +5241,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 93,
 		hp: 496,
 		mp: 564,
-		st: 42,
-		ma: 103,
-		vi: 59,
-		ag: 65,
-		lu: 110,
+		stats: {
+			st: 42,
+			vi: 59,
+			ma: 103,
+			ag: 65,
+			lu: 110
+		},
 		learnset: [
 			{
 				name: 'Hamabarion',
@@ -4995,20 +5278,22 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 96
 			}
 		],
-		weak: [
-			'Dark'
-		],
-		resist: [
-			'Fire',
-			'Ice',
-			'Elec',
-			'Force'
-		],
-		null: [
-			'Light'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Dark'
+			],
+			resist: [
+				'Fire',
+				'Ice',
+				'Elec',
+				'Force'
+			],
+			null: [
+				'Light'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -5020,11 +5305,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 55,
 		hp: 276,
 		mp: 269,
-		st: 31,
-		ma: 48,
-		vi: 33,
-		ag: 33,
-		lu: 41,
+		stats: {
+			st: 31,
+			vi: 33,
+			ma: 48,
+			ag: 33,
+			lu: 41
+		},
 		learnset: [
 			{
 				name: 'Agidyne',
@@ -5047,15 +5334,17 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 58
 			}
 		],
-		weak: [
-			'Light'
-		],
-		resist: [],
-		null: [
-			'Dark'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Light'
+			],
+			resist: [],
+			null: [
+				'Dark'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -5067,11 +5356,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 76,
 		hp: 377,
 		mp: 450,
-		st: 27,
-		ma: 69,
-		vi: 40,
-		ag: 53,
-		lu: 65,
+		stats: {
+			st: 27,
+			vi: 40,
+			ma: 69,
+			ag: 53,
+			lu: 65
+		},
 		learnset: [
 			{
 				name: 'Diamrita',
@@ -5102,16 +5393,18 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 79
 			}
 		],
-		weak: [
-			'Fire'
-		],
-		resist: [],
-		null: [
-			'Light',
-			'Dark'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Fire'
+			],
+			resist: [],
+			null: [
+				'Light',
+				'Dark'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -5123,11 +5416,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 1,
 		hp: null,
 		mp: null,
-		st: 2,
-		ma: 3,
-		vi: 1,
-		ag: 3,
-		lu: 1,
+		stats: {
+			st: 2,
+			vi: 1,
+			ma: 3,
+			ag: 3,
+			lu: 1
+		},
 		learnset: [
 			{
 				name: 'Garu',
@@ -5226,21 +5521,20 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 75
 			}
 		],
-		weak: [
-			'Elec'
-		],
-		resist: [
-			'Light'
-		],
-		null: [
-			'Wind'
-		],
-		drain: [],
-		repel: [],
-		game: 'p5',
-		user: 'Morgana',
-		stage: 3,
-		evoSkill: 'Miracle Rush'
+		affinities: {
+			weak: [
+				'Elec'
+			],
+			resist: [
+				'Light'
+			],
+			null: [
+				'Wind'
+			],
+			drain: [],
+			repel: []
+		},
+		game: 'p5'
 	},
 	{
 		name: 'Dionysus',
@@ -5251,11 +5545,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 44,
 		hp: 225,
 		mp: 182,
-		st: 33,
-		ma: 31,
-		vi: 30,
-		ag: 32,
-		lu: 30,
+		stats: {
+			st: 33,
+			vi: 30,
+			ma: 31,
+			ag: 32,
+			lu: 30
+		},
 		learnset: [
 			{
 				name: 'Acrobat Kick',
@@ -5282,17 +5578,19 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 47
 			}
 		],
-		weak: [
-			'Ice'
-		],
-		resist: [
-			'Elec'
-		],
-		null: [
-			'Fire'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Ice'
+			],
+			resist: [
+				'Elec'
+			],
+			null: [
+				'Fire'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -5304,11 +5602,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 39,
 		hp: null,
 		mp: null,
-		st: 25,
-		ma: 31,
-		vi: 24,
-		ag: 26,
-		lu: 21,
+		stats: {
+			st: 25,
+			vi: 24,
+			ma: 31,
+			ag: 26,
+			lu: 21
+		},
 		learnset: [
 			{
 				name: 'Maragion',
@@ -5339,13 +5639,15 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 44
 			}
 		],
-		weak: [],
-		resist: [],
-		null: [],
-		drain: [],
-		repel: [
-			'Fire'
-		],
+		affinities: {
+			weak: [],
+			resist: [],
+			null: [],
+			drain: [],
+			repel: [
+				'Fire'
+			]
+		},
 		game: 'p4'
 	},
 	{
@@ -5357,11 +5659,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 50,
 		hp: 223,
 		mp: 253,
-		st: 23,
-		ma: 48,
-		vi: 28,
-		ag: 35,
-		lu: 40,
+		stats: {
+			st: 23,
+			vi: 28,
+			ma: 48,
+			ag: 35,
+			lu: 40
+		},
 		learnset: [
 			{
 				name: 'Diarahan',
@@ -5384,17 +5688,19 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 53
 			}
 		],
-		weak: [
-			'Force',
-			'Dark'
-		],
-		resist: [],
-		null: [
-			'Elec',
-			'Light'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Force',
+				'Dark'
+			],
+			resist: [],
+			null: [
+				'Elec',
+				'Light'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -5406,11 +5712,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 37,
 		hp: 214,
 		mp: 157,
-		st: 38,
-		ma: 19,
-		vi: 32,
-		ag: 24,
-		lu: 20,
+		stats: {
+			st: 38,
+			vi: 32,
+			ma: 19,
+			ag: 24,
+			lu: 20
+		},
 		learnset: [
 			{
 				name: 'Blight',
@@ -5433,17 +5741,19 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 40
 			}
 		],
-		weak: [
-			'Elec'
-		],
-		resist: [
-			'Dark'
-		],
-		null: [
-			'Fire'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Elec'
+			],
+			resist: [
+				'Dark'
+			],
+			null: [
+				'Fire'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -5455,11 +5765,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 75,
 		hp: null,
 		mp: null,
-		st: 55,
-		ma: 46,
-		vi: 36,
-		ag: 51,
-		lu: 44,
+		stats: {
+			st: 55,
+			vi: 36,
+			ma: 46,
+			ag: 51,
+			lu: 44
+		},
 		learnset: [
 			{
 				name: 'Apt Pupil',
@@ -5498,21 +5810,20 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 80
 			}
 		],
-		weak: [
-			'Dark'
-		],
-		resist: [
-			'Nuke'
-		],
-		null: [
-			'Light'
-		],
-		drain: [],
-		repel: [],
-		game: 'p5',
-		user: 'Sumire Yoshizawa',
-		stage: 3,
-		evoSkill: 'Masquerade'
+		affinities: {
+			weak: [
+				'Dark'
+			],
+			resist: [
+				'Nuke'
+			],
+			null: [
+				'Light'
+			],
+			drain: [],
+			repel: []
+		},
+		game: 'p5'
 	},
 	{
 		name: 'Erthys',
@@ -5523,11 +5834,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 9,
 		hp: 73,
 		mp: 62,
-		st: 8,
-		ma: 11,
-		vi: 12,
-		ag: 9,
-		lu: 9,
+		stats: {
+			st: 8,
+			vi: 12,
+			ma: 11,
+			ag: 9,
+			lu: 9
+		},
 		learnset: [
 			{
 				name: 'Dustoma',
@@ -5542,15 +5855,17 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 12
 			}
 		],
-		weak: [
-			'Force'
-		],
-		resist: [
-			'Elec'
-		],
-		null: [],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Force'
+			],
+			resist: [
+				'Elec'
+			],
+			null: [],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -5562,11 +5877,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 60,
 		hp: 370,
 		mp: 220,
-		st: 56,
-		ma: 23,
-		vi: 50,
-		ag: 29,
-		lu: 41,
+		stats: {
+			st: 56,
+			vi: 50,
+			ma: 23,
+			ag: 29,
+			lu: 41
+		},
 		learnset: [
 			{
 				name: 'Mortal Jihad',
@@ -5597,16 +5914,18 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 63
 			}
 		],
-		weak: [
-			'Ice',
-			'Elec'
-		],
-		resist: [
-			'Phys'
-		],
-		null: [],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Ice',
+				'Elec'
+			],
+			resist: [
+				'Phys'
+			],
+			null: [],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -5620,11 +5939,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 22,
 		hp: 128,
 		mp: 116,
-		st: 16,
-		ma: 20,
-		vi: 16,
-		ag: 20,
-		lu: 17,
+		stats: {
+			st: 16,
+			vi: 16,
+			ma: 20,
+			ag: 20,
+			lu: 17
+		},
 		learnset: [
 			{
 				name: 'Agilao',
@@ -5651,17 +5972,19 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 25
 			}
 		],
-		weak: [
-			'Dark'
-		],
-		resist: [
-			'Force'
-		],
-		null: [
-			'Fire'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Dark'
+			],
+			resist: [
+				'Force'
+			],
+			null: [
+				'Fire'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -5673,11 +5996,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 71,
 		hp: 437,
 		mp: 325,
-		st: 58,
-		ma: 52,
-		vi: 47,
-		ag: 52,
-		lu: 37,
+		stats: {
+			st: 58,
+			vi: 47,
+			ma: 52,
+			ag: 52,
+			lu: 37
+		},
 		learnset: [
 			{
 				name: 'Agibarion',
@@ -5708,16 +6033,18 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 75
 			}
 		],
-		weak: [
-			'Elec'
-		],
-		resist: [],
-		null: [
-			'Fire',
-			'Light'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Elec'
+			],
+			resist: [],
+			null: [
+				'Fire',
+				'Light'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -5729,11 +6056,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 18,
 		hp: 83,
 		mp: 119,
-		st: 9,
-		ma: 22,
-		vi: 12,
-		ag: 15,
-		lu: 17,
+		stats: {
+			st: 9,
+			vi: 12,
+			ma: 22,
+			ag: 15,
+			lu: 17
+		},
 		learnset: [
 			{
 				name: 'Agi',
@@ -5748,15 +6077,17 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 19
 			}
 		],
-		weak: [
-			'Ice'
-		],
-		resist: [
-			'Fire'
-		],
-		null: [],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Ice'
+			],
+			resist: [
+				'Fire'
+			],
+			null: [],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -5768,11 +6099,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 50,
 		hp: 285,
 		mp: 182,
-		st: 50,
-		ma: 30,
-		vi: 36,
-		ag: 36,
-		lu: 20,
+		stats: {
+			st: 50,
+			vi: 36,
+			ma: 30,
+			ag: 36,
+			lu: 20
+		},
 		learnset: [
 			{
 				name: 'Black Dracostrike',
@@ -5799,17 +6132,19 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 53
 			}
 		],
-		weak: [
-			'Ice'
-		],
-		resist: [
-			'Dark'
-		],
-		null: [
-			'Fire'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Ice'
+			],
+			resist: [
+				'Dark'
+			],
+			null: [
+				'Fire'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -5821,11 +6156,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 31,
 		hp: 141,
 		mp: 170,
-		st: 19,
-		ma: 26,
-		vi: 20,
-		ag: 24,
-		lu: 25,
+		stats: {
+			st: 19,
+			vi: 20,
+			ma: 26,
+			ag: 24,
+			lu: 25
+		},
 		learnset: [
 			{
 				name: 'Ice Breath',
@@ -5852,18 +6189,20 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 34
 			}
 		],
-		weak: [
-			'Elec',
-			'Light'
-		],
-		resist: [],
-		null: [
-			'Dark'
-		],
-		drain: [
-			'Ice'
-		],
-		repel: [],
+		affinities: {
+			weak: [
+				'Elec',
+				'Light'
+			],
+			resist: [],
+			null: [
+				'Dark'
+			],
+			drain: [
+				'Ice'
+			],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -5875,11 +6214,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 15,
 		hp: 86,
 		mp: 114,
-		st: 8,
-		ma: 21,
-		vi: 10,
-		ag: 14,
-		lu: 18,
+		stats: {
+			st: 8,
+			vi: 10,
+			ma: 21,
+			ag: 14,
+			lu: 18
+		},
 		learnset: [
 			{
 				name: 'Dia',
@@ -5902,16 +6243,18 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 17
 			}
 		],
-		weak: [
-			'Elec',
-			'Dark'
-		],
-		resist: [],
-		null: [
-			'Force'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Elec',
+				'Dark'
+			],
+			resist: [],
+			null: [
+				'Force'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -5923,11 +6266,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 69,
 		hp: 424,
 		mp: 291,
-		st: 63,
-		ma: 32,
-		vi: 46,
-		ag: 48,
-		lu: 39,
+		stats: {
+			st: 63,
+			vi: 46,
+			ma: 32,
+			ag: 48,
+			lu: 39
+		},
 		learnset: [
 			{
 				name: 'Catastrophe',
@@ -5954,15 +6299,17 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 72
 			}
 		],
-		weak: [
-			'Dark'
-		],
-		resist: [],
-		null: [
-			'Light'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Dark'
+			],
+			resist: [],
+			null: [
+				'Light'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -5974,11 +6321,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 63,
 		hp: 346,
 		mp: 282,
-		st: 43,
-		ma: 39,
-		vi: 37,
-		ag: 51,
-		lu: 40,
+		stats: {
+			st: 43,
+			vi: 37,
+			ma: 39,
+			ag: 51,
+			lu: 40
+		},
 		learnset: [
 			{
 				name: 'Force Pleroma',
@@ -6005,15 +6354,17 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 66
 			}
 		],
-		weak: [
-			'Elec'
-		],
-		resist: [],
-		null: [
-			'Force'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Elec'
+			],
+			resist: [],
+			null: [
+				'Force'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -6025,11 +6376,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 86,
 		hp: 534,
 		mp: 437,
-		st: 56,
-		ma: 73,
-		vi: 65,
-		ag: 64,
-		lu: 67,
+		stats: {
+			st: 56,
+			vi: 65,
+			ma: 73,
+			ag: 64,
+			lu: 67
+		},
 		learnset: [
 			{
 				name: 'Diamrita',
@@ -6060,18 +6413,20 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 90
 			}
 		],
-		weak: [
-			'Elec'
-		],
-		resist: [
-			'Fire'
-		],
-		null: [
-			'Ice',
-			'Light'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Elec'
+			],
+			resist: [
+				'Fire'
+			],
+			null: [
+				'Ice',
+				'Light'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -6083,11 +6438,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 57,
 		hp: 364,
 		mp: 217,
-		st: 50,
-		ma: 31,
-		vi: 54,
-		ag: 23,
-		lu: 35,
+		stats: {
+			st: 50,
+			vi: 54,
+			ma: 31,
+			ag: 23,
+			lu: 35
+		},
 		learnset: [
 			{
 				name: 'Mighty Cleave',
@@ -6114,18 +6471,20 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 60
 			}
 		],
-		weak: [
-			'Elec',
-			'Dark'
-		],
-		resist: [
-			'Phys'
-		],
-		null: [
-			'Force'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Elec',
+				'Dark'
+			],
+			resist: [
+				'Phys'
+			],
+			null: [
+				'Force'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -6137,11 +6496,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 29,
 		hp: null,
 		mp: null,
-		st: 16,
-		ma: 22,
-		vi: 16,
-		ag: 19,
-		lu: 21,
+		stats: {
+			st: 16,
+			vi: 16,
+			ma: 22,
+			ag: 19,
+			lu: 21
+		},
 		learnset: [
 			{
 				name: 'Bufula',
@@ -6172,16 +6533,18 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 35
 			}
 		],
-		weak: [
-			'Fire',
-			'Dark'
-		],
-		resist: [],
-		null: [],
-		drain: [
-			'Ice'
-		],
-		repel: [],
+		affinities: {
+			weak: [
+				'Fire',
+				'Dark'
+			],
+			resist: [],
+			null: [],
+			drain: [
+				'Ice'
+			],
+			repel: []
+		},
 		game: 'p4'
 	},
 	{
@@ -6193,11 +6556,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 64,
 		hp: 319,
 		mp: 302,
-		st: 46,
-		ma: 32,
-		vi: 33,
-		ag: 56,
-		lu: 51,
+		stats: {
+			st: 46,
+			vi: 33,
+			ma: 32,
+			ag: 56,
+			lu: 51
+		},
 		learnset: [
 			{
 				name: 'Masukukaja',
@@ -6228,17 +6593,19 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 67
 			}
 		],
-		weak: [
-			'Elec'
-		],
-		resist: [
-			'Light'
-		],
-		null: [],
-		drain: [
-			'Force'
-		],
-		repel: [],
+		affinities: {
+			weak: [
+				'Elec'
+			],
+			resist: [
+				'Light'
+			],
+			null: [],
+			drain: [
+				'Force'
+			],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -6252,11 +6619,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 23,
 		hp: 153,
 		mp: 88,
-		st: 23,
-		ma: 15,
-		vi: 28,
-		ag: 8,
-		lu: 16,
+		stats: {
+			st: 23,
+			vi: 28,
+			ma: 15,
+			ag: 8,
+			lu: 16
+		},
 		learnset: [
 			{
 				name: 'Ice Breath',
@@ -6279,15 +6648,17 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 26
 			}
 		],
-		weak: [
-			'Fire'
-		],
-		resist: [],
-		null: [
-			'Ice'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Fire'
+			],
+			resist: [],
+			null: [
+				'Ice'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -6301,11 +6672,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 66,
 		hp: 381,
 		mp: 245,
-		st: 61,
-		ma: 46,
-		vi: 40,
-		ag: 35,
-		lu: 38,
+		stats: {
+			st: 61,
+			vi: 40,
+			ma: 46,
+			ag: 35,
+			lu: 38
+		},
 		learnset: [
 			{
 				name: 'Hades Blast',
@@ -6332,19 +6705,21 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 69
 			}
 		],
-		weak: [
-			'Elec',
-			'Force',
-			'Light'
-		],
-		resist: [
-			'Dark'
-		],
-		null: [],
-		drain: [],
-		repel: [
-			'Phys'
-		],
+		affinities: {
+			weak: [
+				'Elec',
+				'Force',
+				'Light'
+			],
+			resist: [
+				'Dark'
+			],
+			null: [],
+			drain: [],
+			repel: [
+				'Phys'
+			]
+		},
 		game: 'smt5'
 	},
 	{
@@ -6356,11 +6731,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 15,
 		hp: null,
 		mp: null,
-		st: 13,
-		ma: 10,
-		vi: 11,
-		ag: 10,
-		lu: 8,
+		stats: {
+			st: 13,
+			vi: 11,
+			ma: 10,
+			ag: 10,
+			lu: 8
+		},
 		learnset: [
 			{
 				name: 'Bufu',
@@ -6451,19 +6828,18 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 73
 			}
 		],
-		weak: [
-			'Fire'
-		],
-		resist: [
-			'Ice'
-		],
-		null: [],
-		drain: [],
-		repel: [],
-		game: 'p5',
-		user: 'Yusuke Kitagawa',
-		stage: 1,
-		evoSkill: null
+		affinities: {
+			weak: [
+				'Fire'
+			],
+			resist: [
+				'Ice'
+			],
+			null: [],
+			drain: [],
+			repel: []
+		},
+		game: 'p5'
 	},
 	{
 		name: 'Gorgon',
@@ -6474,11 +6850,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 34,
 		hp: null,
 		mp: null,
-		st: 20,
-		ma: 21,
-		vi: 25,
-		ag: 24,
-		lu: 19,
+		stats: {
+			st: 20,
+			vi: 25,
+			ma: 21,
+			ag: 24,
+			lu: 19
+		},
 		learnset: [
 			{
 				name: 'Bufula',
@@ -6505,15 +6883,17 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 39
 			}
 		],
-		weak: [
-			'Light'
-		],
-		resist: [],
-		null: [
-			'Ice'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Light'
+			],
+			resist: [],
+			null: [
+				'Ice'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'p4'
 	},
 	{
@@ -6525,11 +6905,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 15,
 		hp: null,
 		mp: null,
-		st: 13,
-		ma: 10,
-		vi: 11,
-		ag: 10,
-		lu: 8,
+		stats: {
+			st: 13,
+			vi: 11,
+			ma: 10,
+			ag: 10,
+			lu: 8
+		},
 		learnset: [
 			{
 				name: 'Bufu',
@@ -6620,21 +7002,20 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 73
 			}
 		],
-		weak: [
-			'Fire'
-		],
-		resist: [
-			'Wind'
-		],
-		null: [
-			'Ice'
-		],
-		drain: [],
-		repel: [],
-		game: 'p5',
-		user: 'Yusuke Kitagawa',
-		stage: 3,
-		evoSkill: 'Luster Candy'
+		affinities: {
+			weak: [
+				'Fire'
+			],
+			resist: [
+				'Wind'
+			],
+			null: [
+				'Ice'
+			],
+			drain: [],
+			repel: []
+		},
+		game: 'p5'
 	},
 	{
 		name: 'Hachiman',
@@ -6645,11 +7026,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 70,
 		hp: null,
 		mp: null,
-		st: 33,
-		ma: 60,
-		vi: 39,
-		ag: 38,
-		lu: 47,
+		stats: {
+			st: 33,
+			vi: 39,
+			ma: 60,
+			ag: 38,
+			lu: 47
+		},
 		learnset: [
 			{
 				name: 'Maziodyne',
@@ -6676,16 +7059,18 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 75
 			}
 		],
-		weak: [
-			'Dark'
-		],
-		resist: [],
-		null: [
-			'Ice',
-			'Elec'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Dark'
+			],
+			resist: [],
+			null: [
+				'Ice',
+				'Elec'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'p4'
 	},
 	{
@@ -6697,11 +7082,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 46,
 		hp: 267,
 		mp: 169,
-		st: 44,
-		ma: 22,
-		vi: 36,
-		ag: 32,
-		lu: 28,
+		stats: {
+			st: 44,
+			vi: 36,
+			ma: 22,
+			ag: 32,
+			lu: 28
+		},
 		learnset: [
 			{
 				name: 'Purple Smoke',
@@ -6724,15 +7111,17 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 49
 			}
 		],
-		weak: [
-			'Elec'
-		],
-		resist: [],
-		null: [],
-		drain: [],
-		repel: [
-			'Force'
-		],
+		affinities: {
+			weak: [
+				'Elec'
+			],
+			resist: [],
+			null: [],
+			drain: [],
+			repel: [
+				'Force'
+			]
+		},
 		game: 'smt5'
 	},
 	{
@@ -6744,11 +7133,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 4,
 		hp: null,
 		mp: null,
-		st: 4,
-		ma: 4,
-		vi: 4,
-		ag: 2,
-		lu: 3,
+		stats: {
+			st: 4,
+			vi: 4,
+			ma: 4,
+			ag: 2,
+			lu: 3
+		},
 		learnset: [
 			{
 				name: 'Skewer',
@@ -6827,21 +7218,20 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 74
 			}
 		],
-		weak: [
-			'Fire'
-		],
-		resist: [],
-		null: [
-			'Light'
-		],
-		drain: [
-			'Ice'
-		],
-		repel: [],
-		game: 'p4',
-		user: 'Chie Satonaka',
-		stage: 3,
-		evoSkill: 'Luster Candy'
+		affinities: {
+			weak: [
+				'Fire'
+			],
+			resist: [],
+			null: [
+				'Light'
+			],
+			drain: [
+				'Ice'
+			],
+			repel: []
+		},
+		game: 'p4'
 	},
 	{
 		name: 'Hariti',
@@ -6852,11 +7242,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 35,
 		hp: 166,
 		mp: 196,
-		st: 25,
-		ma: 32,
-		vi: 20,
-		ag: 25,
-		lu: 26,
+		stats: {
+			st: 25,
+			vi: 20,
+			ma: 32,
+			ag: 25,
+			lu: 26
+		},
 		learnset: [
 			{
 				name: 'Diarama',
@@ -6883,15 +7275,17 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 38
 			}
 		],
-		weak: [
-			'Force'
-		],
-		resist: [],
-		null: [
-			'Dark'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Force'
+			],
+			resist: [],
+			null: [
+				'Dark'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -6903,11 +7297,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 84,
 		hp: null,
 		mp: null,
-		st: 51,
-		ma: 59,
-		vi: 52,
-		ag: 56,
-		lu: 41,
+		stats: {
+			st: 51,
+			vi: 52,
+			ma: 59,
+			ag: 56,
+			lu: 41
+		},
 		learnset: [
 			{
 				name: 'Debilitate',
@@ -6938,18 +7334,20 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 89
 			}
 		],
-		weak: [],
-		resist: [
-			'Fire'
-		],
-		null: [
-			'Psy',
-			'Dark'
-		],
-		drain: [
-			'Wind'
-		],
-		repel: [],
+		affinities: {
+			weak: [],
+			resist: [
+				'Fire'
+			],
+			null: [
+				'Psy',
+				'Dark'
+			],
+			drain: [
+				'Wind'
+			],
+			repel: []
+		},
 		game: 'p5'
 	},
 	{
@@ -6961,11 +7359,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 40,
 		hp: 218,
 		mp: 209,
-		st: 35,
-		ma: 27,
-		vi: 33,
-		ag: 37,
-		lu: 32,
+		stats: {
+			st: 35,
+			vi: 33,
+			ma: 27,
+			ag: 37,
+			lu: 32
+		},
 		learnset: [
 			{
 				name: 'Carnage Fang',
@@ -6996,19 +7396,21 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 43
 			}
 		],
-		weak: [
-			'Force',
-			'Dark'
-		],
-		resist: [
-			'Phys',
-			'Light'
-		],
-		null: [
-			'Elec'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Force',
+				'Dark'
+			],
+			resist: [
+				'Phys',
+				'Light'
+			],
+			null: [
+				'Elec'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -7020,11 +7422,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 5,
 		hp: null,
 		mp: null,
-		st: 3,
-		ma: 6,
-		vi: 4,
-		ag: 4,
-		lu: 5,
+		stats: {
+			st: 3,
+			vi: 4,
+			ma: 6,
+			ag: 4,
+			lu: 5
+		},
 		learnset: [
 			{
 				name: 'Agi',
@@ -7111,21 +7515,20 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 74
 			}
 		],
-		weak: [
-			'Ice'
-		],
-		resist: [
-			'Elec'
-		],
-		null: [
-			'Fire'
-		],
-		drain: [],
-		repel: [],
-		game: 'p5',
-		user: 'Ann Takamaki',
-		stage: 2,
-		evoSkill: 'Evade Ice'
+		affinities: {
+			weak: [
+				'Ice'
+			],
+			resist: [
+				'Elec'
+			],
+			null: [
+				'Fire'
+			],
+			drain: [],
+			repel: []
+		},
+		game: 'p5'
 	},
 	{
 		name: 'Hecatoncheires',
@@ -7136,11 +7539,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 55,
 		hp: 365,
 		mp: 190,
-		st: 52,
-		ma: 21,
-		vi: 52,
-		ag: 29,
-		lu: 32,
+		stats: {
+			st: 52,
+			vi: 52,
+			ma: 21,
+			ag: 29,
+			lu: 32
+		},
 		learnset: [
 			{
 				name: 'Critical Aura',
@@ -7167,15 +7572,17 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 58
 			}
 		],
-		weak: [
-			'Force'
-		],
-		resist: [],
-		null: [
-			'Dark'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Force'
+			],
+			resist: [],
+			null: [
+				'Dark'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -7187,11 +7594,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 36,
 		hp: 194,
 		mp: 173,
-		st: 26,
-		ma: 27,
-		vi: 23,
-		ag: 34,
-		lu: 28,
+		stats: {
+			st: 26,
+			vi: 23,
+			ma: 27,
+			ag: 34,
+			lu: 28
+		},
 		learnset: [
 			{
 				name: 'Hell Burner',
@@ -7218,19 +7627,21 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 39
 			}
 		],
-		weak: [
-			'Ice'
-		],
-		resist: [
-			'Light',
-			'Dark'
-		],
-		null: [
-			'Fire',
-			'Force'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Ice'
+			],
+			resist: [
+				'Light',
+				'Dark'
+			],
+			null: [
+				'Fire',
+				'Force'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -7242,11 +7653,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 75,
 		hp: null,
 		mp: null,
-		st: 53,
-		ma: 47,
-		vi: 46,
-		ag: 47,
-		lu: 39,
+		stats: {
+			st: 53,
+			vi: 46,
+			ma: 47,
+			ag: 47,
+			lu: 39
+		},
 		learnset: [
 			{
 				name: 'Fortify Spirit',
@@ -7281,21 +7694,20 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 0
 			}
 		],
-		weak: [
-			'Light'
-		],
-		resist: [
-			'Psy'
-		],
-		null: [
-			'Dark'
-		],
-		drain: [],
-		repel: [],
-		game: 'p5',
-		user: 'Goro Akechi',
-		stage: 3,
-		evoSkill: 'Rebellion Blade'
+		affinities: {
+			weak: [
+				'Light'
+			],
+			resist: [
+				'Psy'
+			],
+			null: [
+				'Dark'
+			],
+			drain: [],
+			repel: []
+		},
+		game: 'p5'
 	},
 	{
 		name: 'Hermes',
@@ -7306,11 +7718,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 1,
 		hp: null,
 		mp: null,
-		st: 3,
-		ma: 2,
-		vi: 2,
-		ag: 2,
-		lu: 1,
+		stats: {
+			st: 3,
+			vi: 2,
+			ma: 2,
+			ag: 2,
+			lu: 1
+		},
 		learnset: [
 			{
 				name: 'Cleave',
@@ -7369,19 +7783,18 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 55
 			}
 		],
-		weak: [
-			'Wind'
-		],
-		resist: [
-			'Fire'
-		],
-		null: [],
-		drain: [],
-		repel: [],
-		game: 'p3',
-		user: 'Junpei Iori',
-		stage: 1,
-		evoSkill: null
+		affinities: {
+			weak: [
+				'Wind'
+			],
+			resist: [
+				'Fire'
+			],
+			null: [],
+			drain: [],
+			repel: []
+		},
+		game: 'p3'
 	},
 	{
 		name: 'High Pixie',
@@ -7392,11 +7805,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 18,
 		hp: 93,
 		mp: 129,
-		st: 9,
-		ma: 23,
-		vi: 12,
-		ag: 20,
-		lu: 16,
+		stats: {
+			st: 9,
+			vi: 12,
+			ma: 23,
+			ag: 20,
+			lu: 16
+		},
 		learnset: [
 			{
 				name: 'Dia',
@@ -7419,15 +7834,17 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 21
 			}
 		],
-		weak: [
-			'Ice'
-		],
-		resist: [
-			'Force'
-		],
-		null: [],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Ice'
+			],
+			resist: [
+				'Force'
+			],
+			null: [],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -7439,11 +7856,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 34,
 		hp: null,
 		mp: null,
-		st: 15,
-		ma: 25,
-		vi: 20,
-		ag: 21,
-		lu: 24,
+		stats: {
+			st: 15,
+			vi: 20,
+			ma: 25,
+			ag: 21,
+			lu: 24
+		},
 		learnset: [
 			{
 				name: 'Analysis',
@@ -7490,15 +7909,14 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 79
 			}
 		],
-		weak: [],
-		resist: [],
-		null: [],
-		drain: [],
-		repel: [],
-		game: 'p4',
-		user: 'Rise Kujikawa',
-		stage: 1,
-		evoSkill: null
+		affinities: {
+			weak: [],
+			resist: [],
+			null: [],
+			drain: [],
+			repel: []
+		},
+		game: 'p4'
 	},
 	{
 		name: 'Hokuto Seikun',
@@ -7512,11 +7930,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 45,
 		hp: null,
 		mp: null,
-		st: 29,
-		ma: 34,
-		vi: 31,
-		ag: 26,
-		lu: 22,
+		stats: {
+			st: 29,
+			vi: 31,
+			ma: 34,
+			ag: 26,
+			lu: 22
+		},
 		learnset: [
 			{
 				name: 'Zionga',
@@ -7547,15 +7967,17 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 51
 			}
 		],
-		weak: [
-			'Fire'
-		],
-		resist: [],
-		null: [],
-		drain: [],
-		repel: [
-			'Elec'
-		],
+		affinities: {
+			weak: [
+				'Fire'
+			],
+			resist: [],
+			null: [],
+			drain: [],
+			repel: [
+				'Elec'
+			]
+		},
 		game: 'p4'
 	},
 	{
@@ -7567,11 +7989,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 42,
 		hp: 194,
 		mp: 203,
-		st: 25,
-		ma: 28,
-		vi: 27,
-		ag: 38,
-		lu: 35,
+		stats: {
+			st: 25,
+			vi: 27,
+			ma: 28,
+			ag: 38,
+			lu: 35
+		},
 		learnset: [
 			{
 				name: 'Diarama',
@@ -7598,19 +8022,21 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 45
 			}
 		],
-		weak: [
-			'Force',
-			'Dark'
-		],
-		resist: [
-			'Fire',
-			'Elec'
-		],
-		null: [],
-		drain: [],
-		repel: [
-			'Light'
-		],
+		affinities: {
+			weak: [
+				'Force',
+				'Dark'
+			],
+			resist: [
+				'Fire',
+				'Elec'
+			],
+			null: [],
+			drain: [],
+			repel: [
+				'Light'
+			]
+		},
 		game: 'smt5'
 	},
 	{
@@ -7622,11 +8048,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 31,
 		hp: 133,
 		mp: 168,
-		st: 12,
-		ma: 31,
-		vi: 21,
-		ag: 29,
-		lu: 29,
+		stats: {
+			st: 12,
+			vi: 21,
+			ma: 31,
+			ag: 29,
+			lu: 29
+		},
 		learnset: [
 			{
 				name: 'Agilao',
@@ -7649,15 +8077,17 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 34
 			}
 		],
-		weak: [
-			'Ice'
-		],
-		resist: [],
-		null: [
-			'Fire'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Ice'
+			],
+			resist: [],
+			null: [
+				'Fire'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -7669,11 +8099,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 53,
 		hp: 316,
 		mp: 194,
-		st: 54,
-		ma: 24,
-		vi: 43,
-		ag: 33,
-		lu: 30,
+		stats: {
+			st: 54,
+			vi: 43,
+			ma: 24,
+			ag: 33,
+			lu: 30
+		},
 		learnset: [
 			{
 				name: 'Fire Breath',
@@ -7700,15 +8132,17 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 56
 			}
 		],
-		weak: [
-			'Ice'
-		],
-		resist: [],
-		null: [
-			'Fire'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Ice'
+			],
+			resist: [],
+			null: [
+				'Fire'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -7720,11 +8154,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 42,
 		hp: 204,
 		mp: 245,
-		st: 19,
-		ma: 51,
-		vi: 24,
-		ag: 33,
-		lu: 35,
+		stats: {
+			st: 19,
+			vi: 24,
+			ma: 51,
+			ag: 33,
+			lu: 35
+		},
 		learnset: [
 			{
 				name: 'Golden Apple',
@@ -7751,17 +8187,19 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 45
 			}
 		],
-		weak: [
-			'Elec'
-		],
-		resist: [
-			'Force'
-		],
-		null: [
-			'Light'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Elec'
+			],
+			resist: [
+				'Force'
+			],
+			null: [
+				'Light'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -7773,11 +8211,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 87,
 		hp: 467,
 		mp: 508,
-		st: 57,
-		ma: 96,
-		vi: 68,
-		ag: 59,
-		lu: 68,
+		stats: {
+			st: 57,
+			vi: 68,
+			ma: 96,
+			ag: 59,
+			lu: 68
+		},
 		learnset: [
 			{
 				name: 'Raging Blizzard',
@@ -7808,19 +8248,21 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 90
 			}
 		],
-		weak: [
-			'Phys',
-			'Dark'
-		],
-		resist: [],
-		null: [
-			'Fire',
-			'Ice',
-			'Elec',
-			'Force'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Phys',
+				'Dark'
+			],
+			resist: [],
+			null: [
+				'Fire',
+				'Ice',
+				'Elec',
+				'Force'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -7832,11 +8274,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 22,
 		hp: 118,
 		mp: 110,
-		st: 17,
-		ma: 17,
-		vi: 15,
-		ag: 20,
-		lu: 18,
+		stats: {
+			st: 17,
+			vi: 15,
+			ma: 17,
+			ag: 20,
+			lu: 18
+		},
 		learnset: [
 			{
 				name: 'Dream Needle',
@@ -7859,15 +8303,17 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 25
 			}
 		],
-		weak: [
-			'Elec'
-		],
-		resist: [
-			'Force'
-		],
-		null: [],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Elec'
+			],
+			resist: [
+				'Force'
+			],
+			null: [],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -7879,11 +8325,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 24,
 		hp: 114,
 		mp: 134,
-		st: 16,
-		ma: 15,
-		vi: 17,
-		ag: 25,
-		lu: 21,
+		stats: {
+			st: 16,
+			vi: 17,
+			ma: 15,
+			ag: 25,
+			lu: 21
+		},
 		learnset: [
 			{
 				name: 'Fire Breath',
@@ -7902,18 +8350,20 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 27
 			}
 		],
-		weak: [
-			'Ice',
-			'Light'
-		],
-		resist: [
-			'Dark'
-		],
-		null: [
-			'Fire'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Ice',
+				'Light'
+			],
+			resist: [
+				'Dark'
+			],
+			null: [
+				'Fire'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -7925,11 +8375,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 1,
 		hp: null,
 		mp: null,
-		st: 1,
-		ma: 3,
-		vi: 2,
-		ag: 1,
-		lu: 3,
+		stats: {
+			st: 1,
+			vi: 2,
+			ma: 3,
+			ag: 1,
+			lu: 3
+		},
 		learnset: [
 			{
 				name: 'Dia',
@@ -7980,19 +8432,18 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 46
 			}
 		],
-		weak: [
-			'Elec'
-		],
-		resist: [
-			'Wind'
-		],
-		null: [],
-		drain: [],
-		repel: [],
-		game: 'p3',
-		user: 'Yukari Takeba',
-		stage: 1,
-		evoSkill: null
+		affinities: {
+			weak: [
+				'Elec'
+			],
+			resist: [
+				'Wind'
+			],
+			null: [],
+			drain: [],
+			repel: []
+		},
+		game: 'p3'
 	},
 	{
 		name: 'Ippon-Datara',
@@ -8003,11 +8454,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 17,
 		hp: 120,
 		mp: 79,
-		st: 17,
-		ma: 12,
-		vi: 20,
-		ag: 9,
-		lu: 15,
+		stats: {
+			st: 17,
+			vi: 20,
+			ma: 12,
+			ag: 9,
+			lu: 15
+		},
 		learnset: [
 			{
 				name: 'Beatdown',
@@ -8026,15 +8479,17 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 19
 			}
 		],
-		weak: [
-			'Light'
-		],
-		resist: [
-			'Fire'
-		],
-		null: [],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Light'
+			],
+			resist: [
+				'Fire'
+			],
+			null: [],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -8046,11 +8501,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 62,
 		hp: 310,
 		mp: 317,
-		st: 20,
-		ma: 61,
-		vi: 33,
-		ag: 41,
-		lu: 53,
+		stats: {
+			st: 20,
+			vi: 33,
+			ma: 61,
+			ag: 41,
+			lu: 53
+		},
 		learnset: [
 			{
 				name: 'Mahamaon',
@@ -8077,17 +8534,19 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 65
 			}
 		],
-		weak: [
-			'Force',
-			'Dark'
-		],
-		resist: [],
-		null: [
-			'Elec',
-			'Light'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Force',
+				'Dark'
+			],
+			resist: [],
+			null: [
+				'Elec',
+				'Light'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -8099,11 +8558,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 46,
 		hp: 204,
 		mp: 251,
-		st: 21,
-		ma: 47,
-		vi: 25,
-		ag: 36,
-		lu: 36,
+		stats: {
+			st: 21,
+			vi: 25,
+			ma: 47,
+			ag: 36,
+			lu: 36
+		},
 		learnset: [
 			{
 				name: 'Elec Block',
@@ -8130,17 +8591,19 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 49
 			}
 		],
-		weak: [
-			'Dark'
-		],
-		resist: [
-			'Fire'
-		],
-		null: [
-			'Elec'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Dark'
+			],
+			resist: [
+				'Fire'
+			],
+			null: [
+				'Elec'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -8154,11 +8617,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 1,
 		hp: 204,
 		mp: 251,
-		st: 21,
-		ma: 47,
-		vi: 25,
-		ag: 36,
-		lu: 36,
+		stats: {
+			st: 21,
+			vi: 25,
+			ma: 47,
+			ag: 36,
+			lu: 36
+		},
 		learnset: [
 			{
 				name: 'Elec Block',
@@ -8185,21 +8650,20 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 49
 			}
 		],
-		weak: [
-			'Dark'
-		],
-		resist: [
-			'Fire'
-		],
-		null: [
-			'Elec'
-		],
-		drain: [],
-		repel: [],
-		game: 'p3',
-		user: 'Yukari Takeba',
-		stage: 2,
-		evoSkill: null
+		affinities: {
+			weak: [
+				'Dark'
+			],
+			resist: [
+				'Fire'
+			],
+			null: [
+				'Elec'
+			],
+			drain: [],
+			repel: []
+		},
+		game: 'p3'
 	},
 	{
 		name: 'Izanagi',
@@ -8210,11 +8674,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 1,
 		hp: null,
 		mp: null,
-		st: 3,
-		ma: 2,
-		vi: 2,
-		ag: 3,
-		lu: 2,
+		stats: {
+			st: 3,
+			vi: 2,
+			ma: 2,
+			ag: 3,
+			lu: 2
+		},
 		learnset: [
 			{
 				name: 'Zio',
@@ -8261,21 +8727,20 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 25
 			}
 		],
-		weak: [
-			'Wind'
-		],
-		resist: [
-			'Elec'
-		],
-		null: [
-			'Dark'
-		],
-		drain: [],
-		repel: [],
-		game: 'p5',
-		user: 'P4 Protgaonist',
-		stage: 1,
-		evoSkill: null
+		affinities: {
+			weak: [
+				'Wind'
+			],
+			resist: [
+				'Elec'
+			],
+			null: [
+				'Dark'
+			],
+			drain: [],
+			repel: []
+		},
+		game: 'p5'
 	},
 	{
 		name: 'Izanagi-no-Okami',
@@ -8286,11 +8751,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 80,
 		hp: null,
 		mp: null,
-		st: 52,
-		ma: 56,
-		vi: 46,
-		ag: 48,
-		lu: 45,
+		stats: {
+			st: 52,
+			vi: 46,
+			ma: 56,
+			ag: 48,
+			lu: 45
+		},
 		learnset: [
 			{
 				name: 'Myriad Truths',
@@ -8325,24 +8792,23 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 85
 			}
 		],
-		weak: [],
-		resist: [
-			'Phys',
-			'Gun',
-			'Fire',
-			'Ice',
-			'Wind',
-			'Elec',
-			'Psy',
-			'Nuke'
-		],
-		null: [],
-		drain: [],
-		repel: [],
-		game: 'p5',
-		user: 'P4 Protagonist',
-		stage: 2,
-		evoSkill: null
+		affinities: {
+			weak: [],
+			resist: [
+				'Phys',
+				'Gun',
+				'Fire',
+				'Ice',
+				'Wind',
+				'Elec',
+				'Psy',
+				'Nuke'
+			],
+			null: [],
+			drain: [],
+			repel: []
+		},
+		game: 'p5'
 	},
 	{
 		name: 'Izanagi-no-Okami Picaro',
@@ -8353,11 +8819,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 89,
 		hp: null,
 		mp: null,
-		st: 54,
-		ma: 61,
-		vi: 56,
-		ag: 58,
-		lu: 45,
+		stats: {
+			st: 54,
+			vi: 56,
+			ma: 61,
+			ag: 58,
+			lu: 45
+		},
 		learnset: [
 			{
 				name: 'Myriad Truths',
@@ -8392,20 +8860,22 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 94
 			}
 		],
-		weak: [],
-		resist: [
-			'Phys',
-			'Gun',
-			'Fire',
-			'Ice',
-			'Wind',
-			'Elec',
-			'Psy',
-			'Nuke'
-		],
-		null: [],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [],
+			resist: [
+				'Phys',
+				'Gun',
+				'Fire',
+				'Ice',
+				'Wind',
+				'Elec',
+				'Psy',
+				'Nuke'
+			],
+			null: [],
+			drain: [],
+			repel: []
+		},
 		game: 'p5'
 	},
 	{
@@ -8417,11 +8887,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 23,
 		hp: null,
 		mp: null,
-		st: 16,
-		ma: 15,
-		vi: 15,
-		ag: 16,
-		lu: 14,
+		stats: {
+			st: 16,
+			vi: 15,
+			ma: 15,
+			ag: 16,
+			lu: 14
+		},
 		learnset: [
 			{
 				name: 'Cross Slash',
@@ -8452,16 +8924,18 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 28
 			}
 		],
-		weak: [
-			'Wind'
-		],
-		resist: [],
-		null: [
-			'Elec',
-			'Dark'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Wind'
+			],
+			resist: [],
+			null: [
+				'Elec',
+				'Dark'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'p5'
 	},
 	{
@@ -8473,11 +8947,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 25,
 		hp: 119,
 		mp: 153,
-		st: 14,
-		ma: 29,
-		vi: 15,
-		ag: 21,
-		lu: 21,
+		stats: {
+			st: 14,
+			vi: 15,
+			ma: 29,
+			ag: 21,
+			lu: 21
+		},
 		learnset: [
 			{
 				name: 'Ice Breath',
@@ -8500,15 +8976,17 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 28
 			}
 		],
-		weak: [
-			'Fire'
-		],
-		resist: [],
-		null: [],
-		drain: [
-			'Ice'
-		],
-		repel: [],
+		affinities: {
+			weak: [
+				'Fire'
+			],
+			resist: [],
+			null: [],
+			drain: [
+				'Ice'
+			],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -8522,11 +9000,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 20,
 		hp: 90,
 		mp: 135,
-		st: 11,
-		ma: 23,
-		vi: 12,
-		ag: 19,
-		lu: 18,
+		stats: {
+			st: 11,
+			vi: 12,
+			ma: 23,
+			ag: 19,
+			lu: 18
+		},
 		learnset: [
 			{
 				name: 'Agilao',
@@ -8545,15 +9025,17 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 23
 			}
 		],
-		weak: [
-			'Ice'
-		],
-		resist: [],
-		null: [
-			'Fire'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Ice'
+			],
+			resist: [],
+			null: [
+				'Fire'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -8565,11 +9047,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 32,
 		hp: 165,
 		mp: 158,
-		st: 22,
-		ma: 18,
-		vi: 24,
-		ag: 27,
-		lu: 26,
+		stats: {
+			st: 22,
+			vi: 24,
+			ma: 18,
+			ag: 27,
+			lu: 26
+		},
 		learnset: [
 			{
 				name: 'Axel Claw',
@@ -8596,16 +9080,18 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 35
 			}
 		],
-		weak: [
-			'Elec',
-			'Dark'
-		],
-		resist: [],
-		null: [],
-		drain: [
-			'Force'
-		],
-		repel: [],
+		affinities: {
+			weak: [
+				'Elec',
+				'Dark'
+			],
+			resist: [],
+			null: [],
+			drain: [
+				'Force'
+			],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -8617,11 +9103,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 51,
 		hp: 312,
 		mp: 212,
-		st: 40,
-		ma: 38,
-		vi: 42,
-		ag: 24,
-		lu: 29,
+		stats: {
+			st: 40,
+			vi: 42,
+			ma: 38,
+			ag: 24,
+			lu: 29
+		},
 		learnset: [
 			{
 				name: 'Dark Sword',
@@ -8652,17 +9140,19 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 54
 			}
 		],
-		weak: [
-			'Fire'
-		],
-		resist: [
-			'Light'
-		],
-		null: [
-			'Ice'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Fire'
+			],
+			resist: [
+				'Light'
+			],
+			null: [
+				'Ice'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -8674,11 +9164,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 62,
 		hp: null,
 		mp: null,
-		st: 27,
-		ma: 51,
-		vi: 38,
-		ag: 39,
-		lu: 28,
+		stats: {
+			st: 27,
+			vi: 38,
+			ma: 51,
+			ag: 39,
+			lu: 28
+		},
 		learnset: [
 			{
 				name: 'Agidyne',
@@ -8705,15 +9197,17 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 68
 			}
 		],
-		weak: [
-			'Elec'
-		],
-		resist: [],
-		null: [],
-		drain: [
-			'Fire'
-		],
-		repel: [],
+		affinities: {
+			weak: [
+				'Elec'
+			],
+			resist: [],
+			null: [],
+			drain: [
+				'Fire'
+			],
+			repel: []
+		},
 		game: 'p4'
 	},
 	{
@@ -8725,11 +9219,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 4,
 		hp: null,
 		mp: null,
-		st: 5,
-		ma: 3,
-		vi: 3,
-		ag: 5,
-		lu: 4,
+		stats: {
+			st: 5,
+			vi: 3,
+			ma: 3,
+			ag: 5,
+			lu: 4
+		},
 		learnset: [
 			{
 				name: 'Garu',
@@ -8804,19 +9300,18 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 73
 			}
 		],
-		weak: [
-			'Elec'
-		],
-		resist: [
-			'Wind'
-		],
-		null: [],
-		drain: [],
-		repel: [],
-		game: 'p4',
-		user: 'Yosuke Hanamura',
-		stage: 1,
-		evoSkill: null
+		affinities: {
+			weak: [
+				'Elec'
+			],
+			resist: [
+				'Wind'
+			],
+			null: [],
+			drain: [],
+			repel: []
+		},
+		game: 'p4'
 	},
 	{
 		name: 'Johanna',
@@ -8827,11 +9322,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 21,
 		hp: null,
 		mp: null,
-		st: 15,
-		ma: 15,
-		vi: 14,
-		ag: 15,
-		lu: 11,
+		stats: {
+			st: 15,
+			vi: 14,
+			ma: 15,
+			ag: 15,
+			lu: 11
+		},
 		learnset: [
 			{
 				name: 'Frei',
@@ -8918,19 +9415,18 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 75
 			}
 		],
-		weak: [
-			'Psy'
-		],
-		resist: [
-			'Nuke'
-		],
-		null: [],
-		drain: [],
-		repel: [],
-		game: 'p5',
-		user: 'Makoto Niijima',
-		stage: 1,
-		evoSkill: null
+		affinities: {
+			weak: [
+				'Psy'
+			],
+			resist: [
+				'Nuke'
+			],
+			null: [],
+			drain: [],
+			repel: []
+		},
+		game: 'p5'
 	},
 	{
 		name: 'Juno',
@@ -8941,11 +9437,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 17,
 		hp: null,
 		mp: null,
-		st: 8,
-		ma: 14,
-		vi: 12,
-		ag: 9,
-		lu: 12,
+		stats: {
+			st: 8,
+			vi: 12,
+			ma: 14,
+			ag: 9,
+			lu: 12
+		},
 		learnset: [
 			{
 				name: 'Full Analysis',
@@ -8972,15 +9470,14 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 72
 			}
 		],
-		weak: [],
-		resist: [],
-		null: [],
-		drain: [],
-		repel: [],
-		game: 'p3',
-		user: 'Fuuka Yamagishi',
-		stage: 2,
-		evoSkill: null
+		affinities: {
+			weak: [],
+			resist: [],
+			null: [],
+			drain: [],
+			repel: []
+		},
+		game: 'p3'
 	},
 	{
 		name: 'Kaguya',
@@ -8991,11 +9488,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 16,
 		hp: null,
 		mp: null,
-		st: 11,
-		ma: 15,
-		vi: 12,
-		ag: 11,
-		lu: 6,
+		stats: {
+			st: 11,
+			vi: 12,
+			ma: 15,
+			ag: 11,
+			lu: 6
+		},
 		learnset: [
 			{
 				name: 'Shining Arrows',
@@ -9026,22 +9525,21 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 22
 			}
 		],
-		weak: [
-			'Fire'
-		],
-		resist: [
-			'Wind'
-		],
-		null: [
-			'Light',
-			'Dark'
-		],
-		drain: [],
-		repel: [],
-		game: 'p5',
-		user: 'Marie',
-		stage: 1,
-		evoSkill: null
+		affinities: {
+			weak: [
+				'Fire'
+			],
+			resist: [
+				'Wind'
+			],
+			null: [
+				'Light',
+				'Dark'
+			],
+			drain: [],
+			repel: []
+		},
+		game: 'p5'
 	},
 	{
 		name: 'Kaguya Picaro',
@@ -9052,11 +9550,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 25,
 		hp: null,
 		mp: null,
-		st: 17,
-		ma: 20,
-		vi: 19,
-		ag: 15,
-		lu: 11,
+		stats: {
+			st: 17,
+			vi: 19,
+			ma: 20,
+			ag: 15,
+			lu: 11
+		},
 		learnset: [
 			{
 				name: 'Shining Arrows',
@@ -9087,16 +9587,18 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 31
 			}
 		],
-		weak: [
-			'Fire'
-		],
-		resist: [],
-		null: [
-			'Light',
-			'Dark'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Fire'
+			],
+			resist: [],
+			null: [
+				'Light',
+				'Dark'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'p5'
 	},
 	{
@@ -9108,11 +9610,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 45,
 		hp: 209,
 		mp: 216,
-		st: 24,
-		ma: 30,
-		vi: 27,
-		ag: 41,
-		lu: 38,
+		stats: {
+			st: 24,
+			vi: 27,
+			ma: 30,
+			ag: 41,
+			lu: 38
+		},
 		learnset: [
 			{
 				name: 'Makajamaon',
@@ -9135,15 +9639,17 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 48
 			}
 		],
-		weak: [
-			'Light'
-		],
-		resist: [],
-		null: [
-			'Dark'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Light'
+			],
+			resist: [],
+			null: [
+				'Dark'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -9155,11 +9661,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 36,
 		hp: null,
 		mp: null,
-		st: 21,
-		ma: 25,
-		vi: 23,
-		ag: 26,
-		lu: 20,
+		stats: {
+			st: 21,
+			vi: 23,
+			ma: 25,
+			ag: 26,
+			lu: 20
+		},
 		learnset: [
 			{
 				name: 'Hama',
@@ -9218,19 +9726,18 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 78
 			}
 		],
-		weak: [
-			'Dark'
-		],
-		resist: [],
-		null: [
-			'Light'
-		],
-		drain: [],
-		repel: [],
-		game: 'p3',
-		user: 'Ken Amada',
-		stage: 2,
-		evoSkill: null
+		affinities: {
+			weak: [
+				'Dark'
+			],
+			resist: [],
+			null: [
+				'Light'
+			],
+			drain: [],
+			repel: []
+		},
+		game: 'p3'
 	},
 	{
 		name: 'Kali',
@@ -9241,11 +9748,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 76,
 		hp: 481,
 		mp: 288,
-		st: 74,
-		ma: 35,
-		vi: 62,
-		ag: 48,
-		lu: 35,
+		stats: {
+			st: 74,
+			vi: 62,
+			ma: 35,
+			ag: 48,
+			lu: 35
+		},
 		learnset: [
 			{
 				name: 'Black Dracostrike',
@@ -9272,20 +9781,22 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 79
 			}
 		],
-		weak: [
-			'Ice',
-			'Force'
-		],
-		resist: [
-			'Light'
-		],
-		null: [
-			'Fire'
-		],
-		drain: [],
-		repel: [
-			'Dark'
-		],
+		affinities: {
+			weak: [
+				'Ice',
+				'Force'
+			],
+			resist: [
+				'Light'
+			],
+			null: [
+				'Fire'
+			],
+			drain: [],
+			repel: [
+				'Dark'
+			]
+		},
 		game: 'smt5'
 	},
 	{
@@ -9297,11 +9808,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 35,
 		hp: null,
 		mp: null,
-		st: 24,
-		ma: 25,
-		vi: 20,
-		ag: 22,
-		lu: 16,
+		stats: {
+			st: 24,
+			vi: 20,
+			ma: 25,
+			ag: 22,
+			lu: 16
+		},
 		learnset: [
 			{
 				name: 'Mediarama',
@@ -9376,22 +9889,21 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 72
 			}
 		],
-		weak: [
-			'Elec'
-		],
-		resist: [
-			'Wind',
-			'Dark'
-		],
-		null: [
-			'Ice'
-		],
-		drain: [],
-		repel: [],
-		game: 'p4',
-		user: 'Teddie',
-		stage: 2,
-		evoSkill: null
+		affinities: {
+			weak: [
+				'Elec'
+			],
+			resist: [
+				'Wind',
+				'Dark'
+			],
+			null: [
+				'Ice'
+			],
+			drain: [],
+			repel: []
+		},
+		game: 'p4'
 	},
 	{
 		name: 'Kamui-Moshiri',
@@ -9402,11 +9914,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 35,
 		hp: null,
 		mp: null,
-		st: 24,
-		ma: 25,
-		vi: 20,
-		ag: 22,
-		lu: 16,
+		stats: {
+			st: 24,
+			vi: 20,
+			ma: 25,
+			ag: 22,
+			lu: 16
+		},
 		learnset: [
 			{
 				name: 'Mediarama',
@@ -9481,20 +9995,19 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 72
 			}
 		],
-		weak: [],
-		resist: [],
-		null: [
-			'Wind',
-			'Dark'
-		],
-		drain: [
-			'Ice'
-		],
-		repel: [],
-		game: 'p4',
-		user: 'Teddie',
-		stage: 3,
-		evoSkill: 'Kamui Miracle'
+		affinities: {
+			weak: [],
+			resist: [],
+			null: [
+				'Wind',
+				'Dark'
+			],
+			drain: [
+				'Ice'
+			],
+			repel: []
+		},
+		game: 'p4'
 	},
 	{
 		name: 'Kamu Susano-o',
@@ -9505,11 +10018,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 15,
 		hp: null,
 		mp: null,
-		st: 13,
-		ma: 10,
-		vi: 11,
-		ag: 10,
-		lu: 8,
+		stats: {
+			st: 13,
+			vi: 11,
+			ma: 10,
+			ag: 10,
+			lu: 8
+		},
 		learnset: [
 			{
 				name: 'Bufu',
@@ -9600,21 +10115,20 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 73
 			}
 		],
-		weak: [
-			'Fire'
-		],
-		resist: [
-			'Wind'
-		],
-		null: [
-			'Ice'
-		],
-		drain: [],
-		repel: [],
-		game: 'p5',
-		user: 'Yusuke Kitagawa',
-		stage: 2,
-		evoSkill: 'Evade Fire'
+		affinities: {
+			weak: [
+				'Fire'
+			],
+			resist: [
+				'Wind'
+			],
+			null: [
+				'Ice'
+			],
+			drain: [],
+			repel: []
+		},
+		game: 'p5'
 	},
 	{
 		name: 'Kanzeon',
@@ -9625,11 +10139,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 34,
 		hp: null,
 		mp: null,
-		st: 15,
-		ma: 25,
-		vi: 20,
-		ag: 21,
-		lu: 24,
+		stats: {
+			st: 15,
+			vi: 20,
+			ma: 25,
+			ag: 21,
+			lu: 24
+		},
 		learnset: [
 			{
 				name: 'Analysis',
@@ -9676,15 +10192,14 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 79
 			}
 		],
-		weak: [],
-		resist: [],
-		null: [],
-		drain: [],
-		repel: [],
-		game: 'p4',
-		user: 'Rise Kujikawa',
-		stage: 2,
-		evoSkill: null
+		affinities: {
+			weak: [],
+			resist: [],
+			null: [],
+			drain: [],
+			repel: []
+		},
+		game: 'p4'
 	},
 	{
 		name: 'Kaya-no-Hime',
@@ -9695,11 +10210,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 21,
 		hp: 94,
 		mp: 143,
-		st: 10,
-		ma: 25,
-		vi: 12,
-		ag: 18,
-		lu: 21,
+		stats: {
+			st: 10,
+			vi: 12,
+			ma: 25,
+			ag: 18,
+			lu: 21
+		},
 		learnset: [
 			{
 				name: 'Bufula',
@@ -9722,15 +10239,17 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 24
 			}
 		],
-		weak: [
-			'Fire'
-		],
-		resist: [
-			'Ice'
-		],
-		null: [],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Fire'
+			],
+			resist: [
+				'Ice'
+			],
+			null: [],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -9742,11 +10261,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 30,
 		hp: 136,
 		mp: 153,
-		st: 20,
-		ma: 19,
-		vi: 21,
-		ag: 29,
-		lu: 24,
+		stats: {
+			st: 20,
+			vi: 21,
+			ma: 19,
+			ag: 29,
+			lu: 24
+		},
 		learnset: [
 			{
 				name: 'Berserker God',
@@ -9773,15 +10294,17 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 33
 			}
 		],
-		weak: [
-			'Force'
-		],
-		resist: [
-			'Ice'
-		],
-		null: [],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Force'
+			],
+			resist: [
+				'Ice'
+			],
+			null: [],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -9793,11 +10316,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 62,
 		hp: 358,
 		mp: 293,
-		st: 49,
-		ma: 53,
-		vi: 42,
-		ag: 30,
-		lu: 44,
+		stats: {
+			st: 49,
+			vi: 42,
+			ma: 53,
+			ag: 30,
+			lu: 44
+		},
 		learnset: [
 			{
 				name: 'Agidyne',
@@ -9828,17 +10353,19 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 65
 			}
 		],
-		weak: [
-			'Ice'
-		],
-		resist: [
-			'Fire'
-		],
-		null: [
-			'Light'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Ice'
+			],
+			resist: [
+				'Fire'
+			],
+			null: [
+				'Light'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -9850,11 +10377,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 78,
 		hp: 434,
 		mp: 413,
-		st: 49,
-		ma: 72,
-		vi: 50,
-		ag: 54,
-		lu: 55,
+		stats: {
+			st: 49,
+			vi: 50,
+			ma: 72,
+			ag: 54,
+			lu: 55
+		},
 		learnset: [
 			{
 				name: 'Mahamabarion',
@@ -9881,20 +10410,22 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 81
 			}
 		],
-		weak: [
-			'Ice'
-		],
-		resist: [
-			'Elec',
-			'Force'
-		],
-		null: [
-			'Fire'
-		],
-		drain: [
-			'Light'
-		],
-		repel: [],
+		affinities: {
+			weak: [
+				'Ice'
+			],
+			resist: [
+				'Elec',
+				'Force'
+			],
+			null: [
+				'Fire'
+			],
+			drain: [
+				'Light'
+			],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -9906,11 +10437,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 24,
 		hp: 105,
 		mp: 165,
-		st: 10,
-		ma: 30,
-		vi: 15,
-		ag: 20,
-		lu: 20,
+		stats: {
+			st: 10,
+			vi: 15,
+			ma: 30,
+			ag: 20,
+			lu: 20
+		},
 		learnset: [
 			{
 				name: 'Tarunda',
@@ -9933,17 +10466,19 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 27
 			}
 		],
-		weak: [
-			'Elec'
-		],
-		resist: [
-			'Light'
-		],
-		null: [
-			'Force'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Elec'
+			],
+			resist: [
+				'Light'
+			],
+			null: [
+				'Force'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -9955,11 +10490,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 33,
 		hp: 172,
 		mp: 175,
-		st: 27,
-		ma: 34,
-		vi: 21,
-		ag: 21,
-		lu: 26,
+		stats: {
+			st: 27,
+			vi: 21,
+			ma: 34,
+			ag: 21,
+			lu: 26
+		},
 		learnset: [
 			{
 				name: 'Bufula',
@@ -9986,18 +10523,20 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 36
 			}
 		],
-		weak: [
-			'Fire',
-			'Dark'
-		],
-		resist: [],
-		null: [
-			'Light'
-		],
-		drain: [
-			'Ice'
-		],
-		repel: [],
+		affinities: {
+			weak: [
+				'Fire',
+				'Dark'
+			],
+			resist: [],
+			null: [
+				'Light'
+			],
+			drain: [
+				'Ice'
+			],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -10009,11 +10548,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 49,
 		hp: 323,
 		mp: 170,
-		st: 43,
-		ma: 27,
-		vi: 52,
-		ag: 21,
-		lu: 25,
+		stats: {
+			st: 43,
+			vi: 52,
+			ma: 27,
+			ag: 21,
+			lu: 25
+		},
 		learnset: [
 			{
 				name: 'Berserker God',
@@ -10040,15 +10581,17 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 52
 			}
 		],
-		weak: [
-			'Force'
-		],
-		resist: [],
-		null: [
-			'Elec'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Force'
+			],
+			resist: [],
+			null: [
+				'Elec'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -10060,11 +10603,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 35,
 		hp: null,
 		mp: null,
-		st: 24,
-		ma: 25,
-		vi: 20,
-		ag: 22,
-		lu: 16,
+		stats: {
+			st: 24,
+			vi: 20,
+			ma: 25,
+			ag: 22,
+			lu: 16
+		},
 		learnset: [
 			{
 				name: 'Mediarama',
@@ -10139,19 +10684,18 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 72
 			}
 		],
-		weak: [
-			'Elec'
-		],
-		resist: [
-			'Ice'
-		],
-		null: [],
-		drain: [],
-		repel: [],
-		game: 'p4',
-		user: 'Teddie',
-		stage: 1,
-		evoSkill: null
+		affinities: {
+			weak: [
+				'Elec'
+			],
+			resist: [
+				'Ice'
+			],
+			null: [],
+			drain: [],
+			repel: []
+		},
+		game: 'p4'
 	},
 	{
 		name: 'Kodama',
@@ -10162,11 +10706,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 6,
 		hp: 46,
 		mp: 65,
-		st: 5,
-		ma: 9,
-		vi: 8,
-		ag: 8,
-		lu: 9,
+		stats: {
+			st: 5,
+			vi: 8,
+			ma: 9,
+			ag: 8,
+			lu: 9
+		},
 		learnset: [
 			{
 				name: 'Zan',
@@ -10181,16 +10727,18 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 8
 			}
 		],
-		weak: [
-			'Fire',
-			'Ice'
-		],
-		resist: [
-			'Force'
-		],
-		null: [],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Fire',
+				'Ice'
+			],
+			resist: [
+				'Force'
+			],
+			null: [],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -10204,11 +10752,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 78,
 		hp: 455,
 		mp: 365,
-		st: 56,
-		ma: 58,
-		vi: 57,
-		ag: 58,
-		lu: 56,
+		stats: {
+			st: 56,
+			vi: 57,
+			ma: 58,
+			ag: 58,
+			lu: 56
+		},
 		learnset: [
 			{
 				name: 'Luster Candy',
@@ -10235,20 +10785,22 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 81
 			}
 		],
-		weak: [
-			'Dark'
-		],
-		resist: [
-			'Fire',
-			'Ice',
-			'Elec',
-			'Force'
-		],
-		null: [
-			'Light'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Dark'
+			],
+			resist: [
+				'Fire',
+				'Ice',
+				'Elec',
+				'Force'
+			],
+			null: [
+				'Light'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -10260,11 +10812,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 15,
 		hp: null,
 		mp: null,
-		st: 8,
-		ma: 15,
-		vi: 11,
-		ag: 8,
-		lu: 10,
+		stats: {
+			st: 8,
+			vi: 11,
+			ma: 15,
+			ag: 8,
+			lu: 10
+		},
 		learnset: [
 			{
 				name: 'Dia',
@@ -10343,19 +10897,18 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 76
 			}
 		],
-		weak: [
-			'Ice'
-		],
-		resist: [
-			'Fire'
-		],
-		null: [],
-		drain: [],
-		repel: [],
-		game: 'p4',
-		user: 'Yukiko Amagi',
-		stage: 1,
-		evoSkill: null
+		affinities: {
+			weak: [
+				'Ice'
+			],
+			resist: [
+				'Fire'
+			],
+			null: [],
+			drain: [],
+			repel: []
+		},
+		game: 'p4'
 	},
 	{
 		name: 'Koppa Tengu',
@@ -10366,11 +10919,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 24,
 		hp: 116,
 		mp: 129,
-		st: 13,
-		ma: 18,
-		vi: 16,
-		ag: 27,
-		lu: 20,
+		stats: {
+			st: 13,
+			vi: 16,
+			ma: 18,
+			ag: 27,
+			lu: 20
+		},
 		learnset: [
 			{
 				name: 'Mazan',
@@ -10393,15 +10948,17 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 27
 			}
 		],
-		weak: [
-			'Elec'
-		],
-		resist: [
-			'Force'
-		],
-		null: [],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Elec'
+			],
+			resist: [
+				'Force'
+			],
+			null: [],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -10416,11 +10973,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 26,
 		hp: 118,
 		mp: 148,
-		st: 13,
-		ma: 27,
-		vi: 15,
-		ag: 21,
-		lu: 25,
+		stats: {
+			st: 13,
+			vi: 15,
+			ma: 27,
+			ag: 21,
+			lu: 25
+		},
 		learnset: [
 			{
 				name: 'Bufula',
@@ -10447,18 +11006,20 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 29
 			}
 		],
-		weak: [
-			'Force',
-			'Dark'
-		],
-		resist: [
-			'Light'
-		],
-		null: [
-			'Ice'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Force',
+				'Dark'
+			],
+			resist: [
+				'Light'
+			],
+			null: [
+				'Ice'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -10470,11 +11031,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 44,
 		hp: 249,
 		mp: 194,
-		st: 33,
-		ma: 31,
-		vi: 33,
-		ag: 29,
-		lu: 30,
+		stats: {
+			st: 33,
+			vi: 33,
+			ma: 31,
+			ag: 29,
+			lu: 30
+		},
 		learnset: [
 			{
 				name: 'Crusher Onslaught',
@@ -10505,17 +11068,19 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 47
 			}
 		],
-		weak: [
-			'Elec'
-		],
-		resist: [
-			'Light'
-		],
-		null: [
-			'Force'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Elec'
+			],
+			resist: [
+				'Light'
+			],
+			null: [
+				'Force'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -10527,11 +11092,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 34,
 		hp: null,
 		mp: null,
-		st: 15,
-		ma: 25,
-		vi: 20,
-		ag: 21,
-		lu: 24,
+		stats: {
+			st: 15,
+			vi: 20,
+			ma: 25,
+			ag: 21,
+			lu: 24
+		},
 		learnset: [
 			{
 				name: 'Analysis',
@@ -10578,15 +11145,14 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 79
 			}
 		],
-		weak: [],
-		resist: [],
-		null: [],
-		drain: [],
-		repel: [],
-		game: 'p4',
-		user: 'Rise Kujikawa',
-		stage: 3,
-		evoSkill: 'Complete Analysis'
+		affinities: {
+			weak: [],
+			resist: [],
+			null: [],
+			drain: [],
+			repel: []
+		},
+		game: 'p4'
 	},
 	{
 		name: 'Kumbhanda',
@@ -10597,11 +11163,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 41,
 		hp: 208,
 		mp: 168,
-		st: 32,
-		ma: 30,
-		vi: 26,
-		ag: 29,
-		lu: 27,
+		stats: {
+			st: 32,
+			vi: 26,
+			ma: 30,
+			ag: 29,
+			lu: 27
+		},
 		learnset: [
 			{
 				name: 'Critical Wave',
@@ -10628,17 +11196,19 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 44
 			}
 		],
-		weak: [
-			'Elec'
-		],
-		resist: [
-			'Dark'
-		],
-		null: [
-			'Force'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Elec'
+			],
+			resist: [
+				'Dark'
+			],
+			null: [
+				'Force'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -10650,11 +11220,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 39,
 		hp: 179,
 		mp: 186,
-		st: 28,
-		ma: 21,
-		vi: 25,
-		ag: 36,
-		lu: 31,
+		stats: {
+			st: 28,
+			vi: 25,
+			ma: 21,
+			ag: 36,
+			lu: 31
+		},
 		learnset: [
 			{
 				name: 'Acrobat Kick',
@@ -10677,15 +11249,17 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 42
 			}
 		],
-		weak: [
-			'Elec'
-		],
-		resist: [],
-		null: [
-			'Force'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Elec'
+			],
+			resist: [],
+			null: [
+				'Force'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -10697,11 +11271,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 12,
 		hp: null,
 		mp: null,
-		st: 7,
-		ma: 11,
-		vi: 9,
-		ag: 8,
-		lu: 8,
+		stats: {
+			st: 7,
+			vi: 9,
+			ma: 11,
+			ag: 8,
+			lu: 8
+		},
 		learnset: [
 			{
 				name: 'Dia',
@@ -10728,15 +11304,17 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 16
 			}
 		],
-		weak: [
-			'Fire'
-		],
-		resist: [
-			'Wind'
-		],
-		null: [],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Fire'
+			],
+			resist: [
+				'Wind'
+			],
+			null: [],
+			drain: [],
+			repel: []
+		},
 		game: 'p5'
 	},
 	{
@@ -10750,11 +11328,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 49,
 		hp: 218,
 		mp: 259,
-		st: 22,
-		ma: 50,
-		vi: 27,
-		ag: 36,
-		lu: 37,
+		stats: {
+			st: 22,
+			vi: 27,
+			ma: 50,
+			ag: 36,
+			lu: 37
+		},
 		learnset: [
 			{
 				name: 'Dekaja',
@@ -10777,15 +11357,17 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 52
 			}
 		],
-		weak: [
-			'Dark'
-		],
-		resist: [],
-		null: [
-			'Light'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Dark'
+			],
+			resist: [],
+			null: [
+				'Light'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -10797,11 +11379,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 58,
 		hp: 334,
 		mp: 256,
-		st: 24,
-		ma: 39,
-		vi: 44,
-		ag: 31,
-		lu: 56,
+		stats: {
+			st: 24,
+			vi: 44,
+			ma: 39,
+			ag: 31,
+			lu: 56
+		},
 		learnset: [
 			{
 				name: 'Donum Magici',
@@ -10832,13 +11416,15 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 62
 			}
 		],
-		weak: [
-			'Force'
-		],
-		resist: [],
-		null: [],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Force'
+			],
+			resist: [],
+			null: [],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -10850,11 +11436,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 48,
 		hp: 253,
 		mp: 264,
-		st: 30,
-		ma: 47,
-		vi: 36,
-		ag: 27,
-		lu: 39,
+		stats: {
+			st: 30,
+			vi: 36,
+			ma: 47,
+			ag: 27,
+			lu: 39
+		},
 		learnset: [
 			{
 				name: 'Bufudyne',
@@ -10885,18 +11473,20 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 51
 			}
 		],
-		weak: [
-			'Fire'
-		],
-		resist: [
-			'Ice',
-			'Force'
-		],
-		null: [
-			'Dark'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Fire'
+			],
+			resist: [
+				'Ice',
+				'Force'
+			],
+			null: [
+				'Dark'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -10908,11 +11498,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 70,
 		hp: 363,
 		mp: 373,
-		st: 30,
-		ma: 65,
-		vi: 41,
-		ag: 44,
-		lu: 51,
+		stats: {
+			st: 30,
+			vi: 41,
+			ma: 65,
+			ag: 44,
+			lu: 51
+		},
 		learnset: [
 			{
 				name: 'Hamabarion',
@@ -10943,17 +11535,19 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 73
 			}
 		],
-		weak: [
-			'Elec'
-		],
-		resist: [
-			'Force'
-		],
-		null: [
-			'Light'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Elec'
+			],
+			resist: [
+				'Force'
+			],
+			null: [
+				'Light'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -10965,11 +11559,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 36,
 		hp: 156,
 		mp: 188,
-		st: 21,
-		ma: 27,
-		vi: 24,
-		ag: 28,
-		lu: 29,
+		stats: {
+			st: 21,
+			vi: 24,
+			ma: 27,
+			ag: 28,
+			lu: 29
+		},
 		learnset: [
 			{
 				name: 'Life Drain',
@@ -10996,15 +11592,17 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 39
 			}
 		],
-		weak: [
-			'Ice'
-		],
-		resist: [],
-		null: [
-			'Elec'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Ice'
+			],
+			resist: [],
+			null: [
+				'Elec'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -11016,11 +11614,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 17,
 		hp: 82,
 		mp: 115,
-		st: 9,
-		ma: 20,
-		vi: 14,
-		ag: 13,
-		lu: 15,
+		stats: {
+			st: 9,
+			vi: 14,
+			ma: 20,
+			ag: 13,
+			lu: 15
+		},
 		learnset: [
 			{
 				name: 'Curse Siphon',
@@ -11043,16 +11643,18 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 19
 			}
 		],
-		weak: [
-			'Force',
-			'Light'
-		],
-		resist: [],
-		null: [
-			'Dark'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Force',
+				'Light'
+			],
+			resist: [],
+			null: [
+				'Dark'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -11064,11 +11666,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 19,
 		hp: 100,
 		mp: 93,
-		st: 15,
-		ma: 16,
-		vi: 18,
-		ag: 14,
-		lu: 15,
+		stats: {
+			st: 15,
+			vi: 18,
+			ma: 16,
+			ag: 14,
+			lu: 15
+		},
 		learnset: [
 			{
 				name: 'Mudo',
@@ -11087,16 +11691,18 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 22
 			}
 		],
-		weak: [
-			'Elec',
-			'Light'
-		],
-		resist: [],
-		null: [
-			'Dark'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Elec',
+				'Light'
+			],
+			resist: [],
+			null: [
+				'Dark'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -11108,11 +11714,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 32,
 		hp: 138,
 		mp: 172,
-		st: 13,
-		ma: 34,
-		vi: 18,
-		ag: 27,
-		lu: 26,
+		stats: {
+			st: 13,
+			vi: 18,
+			ma: 34,
+			ag: 27,
+			lu: 26
+		},
 		learnset: [
 			{
 				name: 'Marin Karin',
@@ -11135,15 +11743,17 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 36
 			}
 		],
-		weak: [
-			'Ice'
-		],
-		resist: [],
-		null: [
-			'Elec'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Ice'
+			],
+			resist: [],
+			null: [
+				'Elec'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -11155,11 +11765,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 68,
 		hp: 326,
 		mp: 363,
-		st: 22,
-		ma: 63,
-		vi: 36,
-		ag: 48,
-		lu: 57,
+		stats: {
+			st: 22,
+			vi: 36,
+			ma: 63,
+			ag: 48,
+			lu: 57
+		},
 		learnset: [
 			{
 				name: 'Megidola',
@@ -11186,18 +11798,20 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 71
 			}
 		],
-		weak: [
-			'Force'
-		],
-		resist: [
-			'Fire',
-			'Ice',
-			'Elec',
-			'Dark'
-		],
-		null: [],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Force'
+			],
+			resist: [
+				'Fire',
+				'Ice',
+				'Elec',
+				'Dark'
+			],
+			null: [],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -11209,11 +11823,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 30,
 		hp: 129,
 		mp: 163,
-		st: 15,
-		ma: 31,
-		vi: 16,
-		ag: 24,
-		lu: 26,
+		stats: {
+			st: 15,
+			vi: 16,
+			ma: 31,
+			ag: 24,
+			lu: 26
+		},
 		learnset: [
 			{
 				name: 'Poison Adept',
@@ -11236,15 +11852,17 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 33
 			}
 		],
-		weak: [
-			'Light'
-		],
-		resist: [],
-		null: [
-			'Dark'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Light'
+			],
+			resist: [],
+			null: [
+				'Dark'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -11256,11 +11874,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 56,
 		hp: 276,
 		mp: 284,
-		st: 31,
-		ma: 47,
-		vi: 33,
-		ag: 40,
-		lu: 42,
+		stats: {
+			st: 31,
+			vi: 33,
+			ma: 47,
+			ag: 40,
+			lu: 42
+		},
 		learnset: [
 			{
 				name: 'Bufudyne',
@@ -11287,18 +11907,20 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 59
 			}
 		],
-		weak: [
-			'Light'
-		],
-		resist: [
-			'Force',
-			'Dark'
-		],
-		null: [
-			'Ice'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Light'
+			],
+			resist: [
+				'Force',
+				'Dark'
+			],
+			null: [
+				'Ice'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -11312,11 +11934,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 75,
 		hp: 276,
 		mp: 284,
-		st: 31,
-		ma: 47,
-		vi: 33,
-		ag: 40,
-		lu: 42,
+		stats: {
+			st: 31,
+			vi: 33,
+			ma: 47,
+			ag: 40,
+			lu: 42
+		},
 		learnset: [
 			{
 				name: 'Bufudyne',
@@ -11343,22 +11967,21 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 59
 			}
 		],
-		weak: [
-			'Light'
-		],
-		resist: [
-			'Force',
-			'Dark'
-		],
-		null: [
-			'Ice'
-		],
-		drain: [],
-		repel: [],
-		game: 'p5',
-		user: 'Goro Akechi',
-		stage: 2,
-		evoSkill: null
+		affinities: {
+			weak: [
+				'Light'
+			],
+			resist: [
+				'Force',
+				'Dark'
+			],
+			null: [
+				'Ice'
+			],
+			drain: [],
+			repel: []
+		},
+		game: 'p5'
 	},
 	{
 		name: 'Loup-garou',
@@ -11369,11 +11992,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 54,
 		hp: 322,
 		mp: 198,
-		st: 51,
-		ma: 24,
-		vi: 39,
-		ag: 49,
-		lu: 21,
+		stats: {
+			st: 51,
+			vi: 39,
+			ma: 24,
+			ag: 49,
+			lu: 21
+		},
 		learnset: [
 			{
 				name: 'Madness Nails',
@@ -11400,18 +12025,20 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 57
 			}
 		],
-		weak: [
-			'Ice',
-			'Light'
-		],
-		resist: [
-			'Fire'
-		],
-		null: [
-			'Elec'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Ice',
+				'Light'
+			],
+			resist: [
+				'Fire'
+			],
+			null: [
+				'Elec'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -11423,11 +12050,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 17,
 		hp: null,
 		mp: null,
-		st: 8,
-		ma: 14,
-		vi: 12,
-		ag: 9,
-		lu: 12,
+		stats: {
+			st: 8,
+			vi: 12,
+			ma: 14,
+			ag: 9,
+			lu: 12
+		},
 		learnset: [
 			{
 				name: 'Full Analysis',
@@ -11446,15 +12075,14 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 41
 			}
 		],
-		weak: [],
-		resist: [],
-		null: [],
-		drain: [],
-		repel: [],
-		game: 'p3',
-		user: 'Fuuka Yamagishi',
-		stage: 1,
-		evoSkill: null
+		affinities: {
+			weak: [],
+			resist: [],
+			null: [],
+			drain: [],
+			repel: []
+		},
+		game: 'p3'
 	},
 	{
 		name: 'Lucifer',
@@ -11465,11 +12093,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 93,
 		hp: null,
 		mp: null,
-		st: 61,
-		ma: 59,
-		vi: 59,
-		ag: 52,
-		lu: 55,
+		stats: {
+			st: 61,
+			vi: 59,
+			ma: 59,
+			ag: 52,
+			lu: 55
+		},
 		learnset: [
 			{
 				name: 'Gigantomachia',
@@ -11504,23 +12134,25 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 99
 			}
 		],
-		weak: [
-			'Light'
-		],
-		resist: [
-			'Fire',
-			'Ice',
-			'Elec',
-			'Wind'
-		],
-		null: [
-			'Phys',
-			'Gun'
-		],
-		drain: [
-			'Dark'
-		],
-		repel: [],
+		affinities: {
+			weak: [
+				'Light'
+			],
+			resist: [
+				'Fire',
+				'Ice',
+				'Elec',
+				'Wind'
+			],
+			null: [
+				'Phys',
+				'Gun'
+			],
+			drain: [
+				'Dark'
+			],
+			repel: []
+		},
 		game: 'p5'
 	},
 	{
@@ -11532,11 +12164,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 36,
 		hp: null,
 		mp: null,
-		st: 27,
-		ma: 25,
-		vi: 22,
-		ag: 22,
-		lu: 21,
+		stats: {
+			st: 27,
+			vi: 22,
+			ma: 25,
+			ag: 22,
+			lu: 21
+		},
 		learnset: [
 			{
 				name: 'Psio',
@@ -11615,21 +12249,20 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 75
 			}
 		],
-		weak: [
-			'Nuke'
-		],
-		resist: [
-			'Ice'
-		],
-		null: [
-			'Psy'
-		],
-		drain: [],
-		repel: [],
-		game: 'p5',
-		user: 'Haru Okumura',
-		stage: 3,
-		evoSkill: 'Life Wall'
+		affinities: {
+			weak: [
+				'Nuke'
+			],
+			resist: [
+				'Ice'
+			],
+			null: [
+				'Psy'
+			],
+			drain: [],
+			repel: []
+		},
+		game: 'p5'
 	},
 	{
 		name: 'Macabre',
@@ -11640,11 +12273,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 43,
 		hp: 240,
 		mp: 158,
-		st: 42,
-		ma: 18,
-		vi: 30,
-		ag: 27,
-		lu: 32,
+		stats: {
+			st: 42,
+			vi: 30,
+			ma: 18,
+			ag: 27,
+			lu: 32
+		},
 		learnset: [
 			{
 				name: 'Black Dracostrike',
@@ -11671,15 +12306,17 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 46
 			}
 		],
-		weak: [
-			'Light'
-		],
-		resist: [],
-		null: [
-			'Dark'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Light'
+			],
+			resist: [],
+			null: [
+				'Dark'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -11691,11 +12328,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 83,
 		hp: 524,
 		mp: 389,
-		st: 69,
-		ma: 74,
-		vi: 65,
-		ag: 45,
-		lu: 41,
+		stats: {
+			st: 69,
+			vi: 65,
+			ma: 74,
+			ag: 45,
+			lu: 41
+		},
 		learnset: [
 			{
 				name: 'Debilitate',
@@ -11726,17 +12365,19 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 86
 			}
 		],
-		weak: [
-			'Ice'
-		],
-		resist: [],
-		null: [
-			'Dark'
-		],
-		drain: [
-			'Fire'
-		],
-		repel: [],
+		affinities: {
+			weak: [
+				'Ice'
+			],
+			resist: [],
+			null: [
+				'Dark'
+			],
+			drain: [
+				'Fire'
+			],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -11748,11 +12389,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 44,
 		hp: null,
 		mp: null,
-		st: 37,
-		ma: 35,
-		vi: 32,
-		ag: 25,
-		lu: 10,
+		stats: {
+			st: 37,
+			vi: 32,
+			ma: 35,
+			ag: 25,
+			lu: 10
+		},
 		learnset: [
 			{
 				name: 'Magatsu Mandala',
@@ -11783,22 +12426,21 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 50
 			}
 		],
-		weak: [
-			'Nuke'
-		],
-		resist: [
-			'Gun'
-		],
-		null: [
-			'Light',
-			'Dark'
-		],
-		drain: [],
-		repel: [],
-		game: 'p5',
-		user: 'Tohru Adachi',
-		stage: 2,
-		evoSkill: null
+		affinities: {
+			weak: [
+				'Nuke'
+			],
+			resist: [
+				'Gun'
+			],
+			null: [
+				'Light',
+				'Dark'
+			],
+			drain: [],
+			repel: []
+		},
+		game: 'p5'
 	},
 	{
 		name: 'Magatsu-Izanagi Picaro',
@@ -11809,11 +12451,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 48,
 		hp: null,
 		mp: null,
-		st: 40,
-		ma: 38,
-		vi: 35,
-		ag: 27,
-		lu: 11,
+		stats: {
+			st: 40,
+			vi: 35,
+			ma: 38,
+			ag: 27,
+			lu: 11
+		},
 		learnset: [
 			{
 				name: 'Magatsu Mandala',
@@ -11844,18 +12488,20 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 54
 			}
 		],
-		weak: [
-			'Nuke'
-		],
-		resist: [
-			'Gun'
-		],
-		null: [
-			'Light',
-			'Dark'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Nuke'
+			],
+			resist: [
+				'Gun'
+			],
+			null: [
+				'Light',
+				'Dark'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'p5'
 	},
 	{
@@ -11867,11 +12513,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 21,
 		hp: 109,
 		mp: 119,
-		st: 13,
-		ma: 17,
-		vi: 16,
-		ag: 21,
-		lu: 24,
+		stats: {
+			st: 13,
+			vi: 16,
+			ma: 17,
+			ag: 21,
+			lu: 24
+		},
 		learnset: [
 			{
 				name: 'Dia',
@@ -11894,15 +12542,17 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 23
 			}
 		],
-		weak: [
-			'Dark'
-		],
-		resist: [
-			'Light'
-		],
-		null: [],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Dark'
+			],
+			resist: [
+				'Light'
+			],
+			null: [],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -11914,11 +12564,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 25,
 		hp: 109,
 		mp: 156,
-		st: 15,
-		ma: 29,
-		vi: 14,
-		ag: 21,
-		lu: 21,
+		stats: {
+			st: 15,
+			vi: 14,
+			ma: 29,
+			ag: 21,
+			lu: 21
+		},
 		learnset: [
 			{
 				name: 'Sanguine Drain',
@@ -11941,15 +12593,17 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 28
 			}
 		],
-		weak: [
-			'Light'
-		],
-		resist: [],
-		null: [
-			'Dark'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Light'
+			],
+			resist: [],
+			null: [
+				'Dark'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -11961,11 +12615,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 6,
 		hp: 49,
 		mp: 75,
-		st: 6,
-		ma: 9,
-		vi: 7,
-		ag: 11,
-		lu: 9,
+		stats: {
+			st: 6,
+			vi: 7,
+			ma: 9,
+			ag: 11,
+			lu: 9
+		},
 		learnset: [
 			{
 				name: 'Zio',
@@ -11980,15 +12636,17 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 9
 			}
 		],
-		weak: [
-			'Fire'
-		],
-		resist: [
-			'Elec'
-		],
-		null: [],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Fire'
+			],
+			resist: [
+				'Elec'
+			],
+			null: [],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -12000,11 +12658,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 67,
 		hp: 449,
 		mp: 249,
-		st: 57,
-		ma: 31,
-		vi: 61,
-		ag: 25,
-		lu: 53,
+		stats: {
+			st: 57,
+			vi: 61,
+			ma: 31,
+			ag: 25,
+			lu: 53
+		},
 		learnset: [
 			{
 				name: 'Charge',
@@ -12035,18 +12695,20 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 70
 			}
 		],
-		weak: [
-			'Ice'
-		],
-		resist: [
-			'Light',
-			'Dark'
-		],
-		null: [],
-		drain: [
-			'Elec'
-		],
-		repel: [],
+		affinities: {
+			weak: [
+				'Ice'
+			],
+			resist: [
+				'Light',
+				'Dark'
+			],
+			null: [],
+			drain: [
+				'Elec'
+			],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -12058,11 +12720,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 83,
 		hp: 424,
 		mp: 485,
-		st: 34,
-		ma: 80,
-		vi: 46,
-		ag: 61,
-		lu: 74,
+		stats: {
+			st: 34,
+			vi: 46,
+			ma: 80,
+			ag: 61,
+			lu: 74
+		},
 		learnset: [
 			{
 				name: 'Diamrita',
@@ -12093,19 +12757,21 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 86
 			}
 		],
-		weak: [
-			'Elec'
-		],
-		resist: [
-			'Dark'
-		],
-		null: [
-			'Light'
-		],
-		drain: [
-			'Force'
-		],
-		repel: [],
+		affinities: {
+			weak: [
+				'Elec'
+			],
+			resist: [
+				'Dark'
+			],
+			null: [
+				'Light'
+			],
+			drain: [
+				'Force'
+			],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -12117,11 +12783,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 24,
 		hp: 136,
 		mp: 154,
-		st: 23,
-		ma: 17,
-		vi: 14,
-		ag: 28,
-		lu: 22,
+		stats: {
+			st: 23,
+			vi: 14,
+			ma: 17,
+			ag: 28,
+			lu: 22
+		},
 		learnset: [
 			{
 				name: 'Andalucia',
@@ -12148,18 +12816,20 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 27
 			}
 		],
-		weak: [
-			'Elec'
-		],
-		resist: [
-			'Light',
-			'Dark'
-		],
-		null: [
-			'Force'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Elec'
+			],
+			resist: [
+				'Light',
+				'Dark'
+			],
+			null: [
+				'Force'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -12171,11 +12841,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 60,
 		hp: 341,
 		mp: 281,
-		st: 44,
-		ma: 30,
-		vi: 41,
-		ag: 52,
-		lu: 38,
+		stats: {
+			st: 44,
+			vi: 41,
+			ma: 30,
+			ag: 52,
+			lu: 38
+		},
 		learnset: [
 			{
 				name: 'Hamaon',
@@ -12202,17 +12874,19 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 63
 			}
 		],
-		weak: [
-			'Force'
-		],
-		resist: [],
-		null: [
-			'Dark'
-		],
-		drain: [
-			'Light'
-		],
-		repel: [],
+		affinities: {
+			weak: [
+				'Force'
+			],
+			resist: [],
+			null: [
+				'Dark'
+			],
+			drain: [
+				'Light'
+			],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -12224,11 +12898,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 79,
 		hp: 503,
 		mp: 455,
-		st: 64,
-		ma: 71,
-		vi: 44,
-		ag: 50,
-		lu: 66,
+		stats: {
+			st: 64,
+			vi: 44,
+			ma: 71,
+			ag: 50,
+			lu: 66
+		},
 		learnset: [
 			{
 				name: 'Agibarion',
@@ -12259,17 +12935,19 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 82
 			}
 		],
-		weak: [
-			'Light'
-		],
-		resist: [],
-		null: [
-			'Phys'
-		],
-		drain: [
-			'Dark'
-		],
-		repel: [],
+		affinities: {
+			weak: [
+				'Light'
+			],
+			resist: [],
+			null: [
+				'Phys'
+			],
+			drain: [
+				'Dark'
+			],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -12281,11 +12959,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 1,
 		hp: null,
 		mp: null,
-		st: 2,
-		ma: 3,
-		vi: 1,
-		ag: 3,
-		lu: 1,
+		stats: {
+			st: 2,
+			vi: 1,
+			ma: 3,
+			ag: 3,
+			lu: 1
+		},
 		learnset: [
 			{
 				name: 'Garu',
@@ -12384,21 +13064,20 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 75
 			}
 		],
-		weak: [
-			'Elec'
-		],
-		resist: [
-			'Light'
-		],
-		null: [
-			'Wind'
-		],
-		drain: [],
-		repel: [],
-		game: 'p5',
-		user: 'Morgana',
-		stage: 2,
-		evoSkill: 'Evade Elec'
+		affinities: {
+			weak: [
+				'Elec'
+			],
+			resist: [
+				'Light'
+			],
+			null: [
+				'Wind'
+			],
+			drain: [],
+			repel: []
+		},
+		game: 'p5'
 	},
 	{
 		name: 'Mermaid',
@@ -12409,11 +13088,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 12,
 		hp: 72,
 		mp: 122,
-		st: 8,
-		ma: 17,
-		vi: 9,
-		ag: 11,
-		lu: 15,
+		stats: {
+			st: 8,
+			vi: 9,
+			ma: 17,
+			ag: 11,
+			lu: 15
+		},
 		learnset: [
 			{
 				name: 'Stormcaller Song',
@@ -12432,16 +13113,18 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 15
 			}
 		],
-		weak: [
-			'Fire',
-			'Elec'
-		],
-		resist: [],
-		null: [
-			'Ice'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Fire',
+				'Elec'
+			],
+			resist: [],
+			null: [
+				'Ice'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -12453,11 +13136,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 81,
 		hp: null,
 		mp: null,
-		st: 50,
-		ma: 50,
-		vi: 50,
-		ag: 50,
-		lu: 50,
+		stats: {
+			st: 50,
+			vi: 50,
+			ma: 50,
+			ag: 50,
+			lu: 50
+		},
 		learnset: [
 			{
 				name: 'Oratorio',
@@ -12492,26 +13177,25 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 87
 			}
 		],
-		weak: [
-			'Dark'
-		],
-		resist: [
-			'Fire',
-			'Ice',
-			'Elec',
-			'Wind',
-			'Psy',
-			'Nuke'
-		],
-		null: [],
-		drain: [],
-		repel: [
-			'Light'
-		],
-		game: 'p5',
-		user: 'P3 Protagonist',
-		stage: 2,
-		evoSkill: null
+		affinities: {
+			weak: [
+				'Dark'
+			],
+			resist: [
+				'Fire',
+				'Ice',
+				'Elec',
+				'Wind',
+				'Psy',
+				'Nuke'
+			],
+			null: [],
+			drain: [],
+			repel: [
+				'Light'
+			]
+		},
+		game: 'p5'
 	},
 	{
 		name: 'Messiah Picaro',
@@ -12522,11 +13206,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 90,
 		hp: null,
 		mp: null,
-		st: 56,
-		ma: 56,
-		vi: 56,
-		ag: 56,
-		lu: 56,
+		stats: {
+			st: 56,
+			vi: 56,
+			ma: 56,
+			ag: 56,
+			lu: 56
+		},
 		learnset: [
 			{
 				name: 'Oratorio',
@@ -12561,22 +13247,24 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 96
 			}
 		],
-		weak: [
-			'Dark'
-		],
-		resist: [
-			'Fire',
-			'Ice',
-			'Elec',
-			'Wind',
-			'Psy',
-			'Nuke'
-		],
-		null: [],
-		drain: [],
-		repel: [
-			'Light'
-		],
+		affinities: {
+			weak: [
+				'Dark'
+			],
+			resist: [
+				'Fire',
+				'Ice',
+				'Elec',
+				'Wind',
+				'Psy',
+				'Nuke'
+			],
+			null: [],
+			drain: [],
+			repel: [
+				'Light'
+			]
+		},
 		game: 'p5'
 	},
 	{
@@ -12588,11 +13276,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 95,
 		hp: 626,
 		mp: 443,
-		st: 82,
-		ma: 95,
-		vi: 79,
-		ag: 72,
-		lu: 76,
+		stats: {
+			st: 82,
+			vi: 79,
+			ma: 95,
+			ag: 72,
+			lu: 76
+		},
 		learnset: [
 			{
 				name: 'Dekaja',
@@ -12623,18 +13313,20 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 98
 			}
 		],
-		weak: [],
-		resist: [
-			'Fire',
-			'Ice',
-			'Elec',
-			'Force'
-		],
-		null: [
-			'Light'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [],
+			resist: [
+				'Fire',
+				'Ice',
+				'Elec',
+				'Force'
+			],
+			null: [
+				'Light'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -12646,11 +13338,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 90,
 		hp: 552,
 		mp: 474,
-		st: 76,
-		ma: 78,
-		vi: 65,
-		ag: 76,
-		lu: 59,
+		stats: {
+			st: 76,
+			vi: 65,
+			ma: 78,
+			ag: 76,
+			lu: 59
+		},
 		learnset: [
 			{
 				name: 'Akashic Arts',
@@ -12681,17 +13375,19 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 93
 			}
 		],
-		weak: [
-			'Force'
-		],
-		resist: [],
-		null: [
-			'Fire',
-			'Ice',
-			'Light'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Force'
+			],
+			resist: [],
+			null: [
+				'Fire',
+				'Ice',
+				'Light'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -12703,11 +13399,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 36,
 		hp: null,
 		mp: null,
-		st: 27,
-		ma: 25,
-		vi: 22,
-		ag: 22,
-		lu: 21,
+		stats: {
+			st: 27,
+			vi: 22,
+			ma: 25,
+			ag: 22,
+			lu: 21
+		},
 		learnset: [
 			{
 				name: 'Psio',
@@ -12786,19 +13484,18 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 75
 			}
 		],
-		weak: [
-			'Nuke'
-		],
-		resist: [
-			'Psy'
-		],
-		null: [],
-		drain: [],
-		repel: [],
-		game: 'p5',
-		user: 'Haru Okumura',
-		stage: 1,
-		evoSkill: null
+		affinities: {
+			weak: [
+				'Nuke'
+			],
+			resist: [
+				'Psy'
+			],
+			null: [],
+			drain: [],
+			repel: []
+		},
+		game: 'p5'
 	},
 	{
 		name: 'Mishaguji',
@@ -12809,11 +13506,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 42,
 		hp: 235,
 		mp: 159,
-		st: 39,
-		ma: 21,
-		vi: 31,
-		ag: 32,
-		lu: 25,
+		stats: {
+			st: 39,
+			vi: 31,
+			ma: 21,
+			ag: 32,
+			lu: 25
+		},
 		learnset: [
 			{
 				name: 'Beatdown',
@@ -12840,17 +13539,19 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 45
 			}
 		],
-		weak: [
-			'Force',
-			'Light'
-		],
-		resist: [],
-		null: [
-			'Elec',
-			'Dark'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Force',
+				'Light'
+			],
+			resist: [],
+			null: [
+				'Elec',
+				'Dark'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -12862,11 +13563,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 77,
 		hp: 462,
 		mp: 325,
-		st: 58,
-		ma: 60,
-		vi: 49,
-		ag: 42,
-		lu: 50,
+		stats: {
+			st: 58,
+			vi: 49,
+			ma: 60,
+			ag: 42,
+			lu: 50
+		},
 		learnset: [
 			{
 				name: 'Dekaja',
@@ -12897,17 +13600,19 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 80
 			}
 		],
-		weak: [
-			'Ice'
-		],
-		resist: [],
-		null: [
-			'Light'
-		],
-		drain: [
-			'Fire'
-		],
-		repel: [],
+		affinities: {
+			weak: [
+				'Ice'
+			],
+			resist: [],
+			null: [
+				'Light'
+			],
+			drain: [
+				'Fire'
+			],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -12921,11 +13626,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 65,
 		hp: 339,
 		mp: 302,
-		st: 43,
-		ma: 53,
-		vi: 39,
-		ag: 37,
-		lu: 43,
+		stats: {
+			st: 43,
+			vi: 39,
+			ma: 53,
+			ag: 37,
+			lu: 43
+		},
 		learnset: [
 			{
 				name: 'Hamaon',
@@ -12952,17 +13659,19 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 68
 			}
 		],
-		weak: [
-			'Ice'
-		],
-		resist: [
-			'Dark'
-		],
-		null: [
-			'Light'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Ice'
+			],
+			resist: [
+				'Dark'
+			],
+			null: [
+				'Light'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -12974,11 +13683,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 16,
 		hp: 88,
 		mp: 90,
-		st: 15,
-		ma: 12,
-		vi: 15,
-		ag: 11,
-		lu: 16,
+		stats: {
+			st: 15,
+			vi: 15,
+			ma: 12,
+			ag: 11,
+			lu: 16
+		},
 		learnset: [
 			{
 				name: 'Dustoma',
@@ -12997,15 +13708,17 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 18
 			}
 		],
-		weak: [
-			'Force'
-		],
-		resist: [
-			'Elec'
-		],
-		null: [],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Force'
+			],
+			resist: [
+				'Elec'
+			],
+			null: [],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -13017,11 +13730,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 51,
 		hp: 297,
 		mp: 212,
-		st: 42,
-		ma: 42,
-		vi: 36,
-		ag: 28,
-		lu: 25,
+		stats: {
+			st: 42,
+			vi: 36,
+			ma: 42,
+			ag: 28,
+			lu: 25
+		},
 		learnset: [
 			{
 				name: 'Agidyne',
@@ -13048,18 +13763,20 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 54
 			}
 		],
-		weak: [
-			'Ice'
-		],
-		resist: [
-			'Elec',
-			'Dark'
-		],
-		null: [
-			'Fire'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Ice'
+			],
+			resist: [
+				'Elec',
+				'Dark'
+			],
+			null: [
+				'Fire'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -13071,11 +13788,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 63,
 		hp: 306,
 		mp: 338,
-		st: 28,
-		ma: 59,
-		vi: 58,
-		ag: 24,
-		lu: 46,
+		stats: {
+			st: 28,
+			vi: 58,
+			ma: 59,
+			ag: 24,
+			lu: 46
+		},
 		learnset: [
 			{
 				name: 'Agidyne',
@@ -13102,17 +13821,19 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 66
 			}
 		],
-		weak: [
-			'Elec'
-		],
-		resist: [
-			'Fire'
-		],
-		null: [],
-		drain: [
-			'Dark'
-		],
-		repel: [],
+		affinities: {
+			weak: [
+				'Elec'
+			],
+			resist: [
+				'Fire'
+			],
+			null: [],
+			drain: [
+				'Dark'
+			],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -13124,11 +13845,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 64,
 		hp: 352,
 		mp: 362,
-		st: 42,
-		ma: 60,
-		vi: 45,
-		ag: 36,
-		lu: 40,
+		stats: {
+			st: 42,
+			vi: 45,
+			ma: 60,
+			ag: 36,
+			lu: 40
+		},
 		learnset: [
 			{
 				name: 'Babylon Goblet',
@@ -13159,21 +13882,23 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 67
 			}
 		],
-		weak: [
-			'Force'
-		],
-		resist: [
-			'Fire',
-			'Light',
-			'Dark'
-		],
-		null: [],
-		drain: [
-			'Elec'
-		],
-		repel: [
-			'Phys'
-		],
+		affinities: {
+			weak: [
+				'Force'
+			],
+			resist: [
+				'Fire',
+				'Light',
+				'Dark'
+			],
+			null: [],
+			drain: [
+				'Elec'
+			],
+			repel: [
+				'Phys'
+			]
+		},
 		game: 'smt5'
 	},
 	{
@@ -13185,11 +13910,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 29,
 		hp: 139,
 		mp: 153,
-		st: 17,
-		ma: 15,
-		vi: 19,
-		ag: 30,
-		lu: 27,
+		stats: {
+			st: 17,
+			vi: 19,
+			ma: 15,
+			ag: 30,
+			lu: 27
+		},
 		learnset: [
 			{
 				name: 'Pulinpa',
@@ -13212,15 +13939,17 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 32
 			}
 		],
-		weak: [
-			'Force'
-		],
-		resist: [],
-		null: [
-			'Elec'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Force'
+			],
+			resist: [],
+			null: [
+				'Elec'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -13234,11 +13963,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 38,
 		hp: 175,
 		mp: 202,
-		st: 16,
-		ma: 34,
-		vi: 20,
-		ag: 36,
-		lu: 29,
+		stats: {
+			st: 16,
+			vi: 20,
+			ma: 34,
+			ag: 36,
+			lu: 29
+		},
 		learnset: [
 			{
 				name: 'Mazanma',
@@ -13265,15 +13996,17 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 41
 			}
 		],
-		weak: [
-			'Fire'
-		],
-		resist: [],
-		null: [
-			'Force'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Fire'
+			],
+			resist: [],
+			null: [
+				'Force'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -13285,11 +14018,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 27,
 		hp: 115,
 		mp: 109,
-		st: 28,
-		ma: 14,
-		vi: 25,
-		ag: 20,
-		lu: 15,
+		stats: {
+			st: 28,
+			vi: 25,
+			ma: 14,
+			ag: 20,
+			lu: 15
+		},
 		learnset: [
 			{
 				name: 'Heat Wave',
@@ -13312,16 +14047,18 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 30
 			}
 		],
-		weak: [
-			'Fire',
-			'Force'
-		],
-		resist: [],
-		null: [
-			'Elec'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Fire',
+				'Force'
+			],
+			resist: [],
+			null: [
+				'Elec'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -13333,11 +14070,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 38,
 		hp: 175,
 		mp: 187,
-		st: 22,
-		ma: 34,
-		vi: 16,
-		ag: 35,
-		lu: 31,
+		stats: {
+			st: 22,
+			vi: 16,
+			ma: 34,
+			ag: 35,
+			lu: 31
+		},
 		learnset: [
 			{
 				name: 'Hellish Mask',
@@ -13364,15 +14103,17 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 41
 			}
 		],
-		weak: [
-			'Fire'
-		],
-		resist: [],
-		null: [
-			'Force'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Fire'
+			],
+			resist: [],
+			null: [
+				'Force'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -13386,11 +14127,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 6,
 		hp: null,
 		mp: null,
-		st: 6,
-		ma: 2,
-		vi: 6,
-		ag: 10,
-		lu: 6,
+		stats: {
+			st: 6,
+			vi: 6,
+			ma: 2,
+			ag: 10,
+			lu: 6
+		},
 		learnset: [
 			{
 				name: 'Bash',
@@ -13421,15 +14164,17 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 10
 			}
 		],
-		weak: [
-			'Elec'
-		],
-		resist: [
-			'Fire'
-		],
-		null: [],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Elec'
+			],
+			resist: [
+				'Fire'
+			],
+			null: [],
+			drain: [],
+			repel: []
+		},
 		game: 'p4'
 	},
 	{
@@ -13441,11 +14186,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 67,
 		hp: 300,
 		mp: 365,
-		st: 27,
-		ma: 67,
-		vi: 30,
-		ag: 42,
-		lu: 56,
+		stats: {
+			st: 27,
+			vi: 30,
+			ma: 67,
+			ag: 42,
+			lu: 56
+		},
 		learnset: [
 			{
 				name: 'Mamudoon',
@@ -13468,16 +14215,18 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 70
 			}
 		],
-		weak: [
-			'Force',
-			'Light'
-		],
-		resist: [],
-		null: [],
-		drain: [],
-		repel: [
-			'Dark'
-		],
+		affinities: {
+			weak: [
+				'Force',
+				'Light'
+			],
+			resist: [],
+			null: [],
+			drain: [],
+			repel: [
+				'Dark'
+			]
+		},
 		game: 'smt5'
 	},
 	{
@@ -13489,11 +14238,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 31,
 		hp: null,
 		mp: null,
-		st: 17,
-		ma: 23,
-		vi: 20,
-		ag: 21,
-		lu: 35,
+		stats: {
+			st: 17,
+			vi: 20,
+			ma: 23,
+			ag: 21,
+			lu: 35
+		},
 		learnset: [
 			{
 				name: 'Analysis',
@@ -13516,15 +14267,14 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 67
 			}
 		],
-		weak: [],
-		resist: [],
-		null: [],
-		drain: [],
-		repel: [],
-		game: 'p5',
-		user: 'Futaba Sakura',
-		stage: 1,
-		evoSkill: null
+		affinities: {
+			weak: [],
+			resist: [],
+			null: [],
+			drain: [],
+			repel: []
+		},
+		game: 'p5'
 	},
 	{
 		name: 'Nekomata',
@@ -13535,11 +14285,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 34,
 		hp: 158,
 		mp: 166,
-		st: 23,
-		ma: 18,
-		vi: 20,
-		ag: 33,
-		lu: 29,
+		stats: {
+			st: 23,
+			vi: 20,
+			ma: 18,
+			ag: 33,
+			lu: 29
+		},
 		learnset: [
 			{
 				name: 'Axel Claw',
@@ -13562,18 +14314,20 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 37
 			}
 		],
-		weak: [
-			'Ice',
-			'Elec'
-		],
-		resist: [
-			'Fire'
-		],
-		null: [
-			'Force'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Ice',
+				'Elec'
+			],
+			resist: [
+				'Fire'
+			],
+			null: [
+				'Force'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -13585,11 +14339,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 5,
 		hp: 57,
 		mp: 73,
-		st: 6,
-		ma: 7,
-		vi: 11,
-		ag: 4,
-		lu: 8,
+		stats: {
+			st: 6,
+			vi: 11,
+			ma: 7,
+			ag: 4,
+			lu: 8
+		},
 		learnset: [
 			{
 				name: 'Dia',
@@ -13608,18 +14364,20 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 8
 			}
 		],
-		weak: [
-			'Fire',
-			'Force'
-		],
-		resist: [
-			'Light'
-		],
-		null: [
-			'Elec'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Fire',
+				'Force'
+			],
+			resist: [
+				'Light'
+			],
+			null: [
+				'Elec'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -13631,11 +14389,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 36,
 		hp: null,
 		mp: null,
-		st: 21,
-		ma: 25,
-		vi: 23,
-		ag: 26,
-		lu: 20,
+		stats: {
+			st: 21,
+			vi: 23,
+			ma: 25,
+			ag: 26,
+			lu: 20
+		},
 		learnset: [
 			{
 				name: 'Hama',
@@ -13666,19 +14426,18 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 42
 			}
 		],
-		weak: [
-			'Dark'
-		],
-		resist: [
-			'Light'
-		],
-		null: [],
-		drain: [],
-		repel: [],
-		game: 'p3',
-		user: 'Ken Amada',
-		stage: 1,
-		evoSkill: null
+		affinities: {
+			weak: [
+				'Dark'
+			],
+			resist: [
+				'Light'
+			],
+			null: [],
+			drain: [],
+			repel: []
+		},
+		game: 'p3'
 	},
 	{
 		name: 'Nigi Mitama',
@@ -13689,11 +14448,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 22,
 		hp: null,
 		mp: null,
-		st: 13,
-		ma: 15,
-		vi: 15,
-		ag: 16,
-		lu: 14,
+		stats: {
+			st: 13,
+			vi: 15,
+			ma: 15,
+			ag: 16,
+			lu: 14
+		},
 		learnset: [
 			{
 				name: 'Baisudi',
@@ -13720,16 +14481,18 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 26
 			}
 		],
-		weak: [
-			'Elec'
-		],
-		resist: [
-			'Light',
-			'Dark'
-		],
-		null: [],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Elec'
+			],
+			resist: [
+				'Light',
+				'Dark'
+			],
+			null: [],
+			drain: [],
+			repel: []
+		},
 		game: 'p5'
 	},
 	{
@@ -13741,11 +14504,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 67,
 		hp: 358,
 		mp: 321,
-		st: 39,
-		ma: 59,
-		vi: 40,
-		ag: 34,
-		lu: 49,
+		stats: {
+			st: 39,
+			vi: 40,
+			ma: 59,
+			ag: 34,
+			lu: 49
+		},
 		learnset: [
 			{
 				name: 'Luster Candy',
@@ -13768,17 +14533,19 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 70
 			}
 		],
-		weak: [
-			'Elec'
-		],
-		resist: [
-			'Light'
-		],
-		null: [
-			'Dark'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Elec'
+			],
+			resist: [
+				'Light'
+			],
+			null: [
+				'Dark'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -13790,11 +14557,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 49,
 		hp: 289,
 		mp: 180,
-		st: 47,
-		ma: 30,
-		vi: 38,
-		ag: 25,
-		lu: 29,
+		stats: {
+			st: 47,
+			vi: 38,
+			ma: 30,
+			ag: 25,
+			lu: 29
+		},
 		learnset: [
 			{
 				name: 'Axel Claw',
@@ -13821,15 +14590,17 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 52
 			}
 		],
-		weak: [
-			'Force'
-		],
-		resist: [],
-		null: [
-			'Elec'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Force'
+			],
+			resist: [],
+			null: [
+				'Elec'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -13841,11 +14612,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 80,
 		hp: 438,
 		mp: 455,
-		st: 63,
-		ma: 70,
-		vi: 52,
-		ag: 44,
-		lu: 50,
+		stats: {
+			st: 63,
+			vi: 52,
+			ma: 70,
+			ag: 44,
+			lu: 50
+		},
 		learnset: [
 			{
 				name: 'Dancing Strike',
@@ -13872,18 +14645,20 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 83
 			}
 		],
-		weak: [
-			'Fire'
-		],
-		resist: [
-			'Elec',
-			'Dark'
-		],
-		null: [],
-		drain: [],
-		repel: [
-			'Force'
-		],
+		affinities: {
+			weak: [
+				'Fire'
+			],
+			resist: [
+				'Elec',
+				'Dark'
+			],
+			null: [],
+			drain: [],
+			repel: [
+				'Force'
+			]
+		},
 		game: 'smt5'
 	},
 	{
@@ -13897,11 +14672,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 89,
 		hp: 502,
 		mp: 522,
-		st: 44,
-		ma: 105,
-		vi: 65,
-		ag: 60,
-		lu: 74,
+		stats: {
+			st: 44,
+			vi: 65,
+			ma: 105,
+			ag: 60,
+			lu: 74
+		},
 		learnset: [
 			{
 				name: 'Diarahan',
@@ -13932,18 +14709,20 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 92
 			}
 		],
-		weak: [
-			'Fire'
-		],
-		resist: [],
-		null: [
-			'Elec',
-			'Dark'
-		],
-		drain: [],
-		repel: [
-			'Force'
-		],
+		affinities: {
+			weak: [
+				'Fire'
+			],
+			resist: [],
+			null: [
+				'Elec',
+				'Dark'
+			],
+			drain: [],
+			repel: [
+				'Force'
+			]
+		},
 		game: 'smt5'
 	},
 	{
@@ -13955,11 +14734,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 12,
 		hp: 71,
 		mp: 91,
-		st: 14,
-		ma: 9,
-		vi: 10,
-		ag: 13,
-		lu: 12,
+		stats: {
+			st: 14,
+			vi: 10,
+			ma: 9,
+			ag: 13,
+			lu: 12
+		},
 		learnset: [
 			{
 				name: 'Sukukaja',
@@ -13978,17 +14759,19 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 14
 			}
 		],
-		weak: [
-			'Ice',
-			'Light'
-		],
-		resist: [
-			'Elec',
-			'Dark'
-		],
-		null: [],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Ice',
+				'Light'
+			],
+			resist: [
+				'Elec',
+				'Dark'
+			],
+			null: [],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -14000,11 +14783,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 47,
 		hp: 242,
 		mp: 211,
-		st: 32,
-		ma: 33,
-		vi: 29,
-		ag: 35,
-		lu: 32,
+		stats: {
+			st: 32,
+			vi: 29,
+			ma: 33,
+			ag: 35,
+			lu: 32
+		},
 		learnset: [
 			{
 				name: 'Diamrita',
@@ -14031,15 +14816,17 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 50
 			}
 		],
-		weak: [
-			'Elec'
-		],
-		resist: [],
-		null: [
-			'Force'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Elec'
+			],
+			resist: [],
+			null: [
+				'Force'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -14051,11 +14838,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 77,
 		hp: 477,
 		mp: 345,
-		st: 65,
-		ma: 57,
-		vi: 58,
-		ag: 48,
-		lu: 32,
+		stats: {
+			st: 65,
+			vi: 58,
+			ma: 57,
+			ag: 48,
+			lu: 32
+		},
 		learnset: [
 			{
 				name: 'Figment Slash',
@@ -14086,18 +14875,20 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 80
 			}
 		],
-		weak: [
-			'Force'
-		],
-		resist: [],
-		null: [
-			'Light',
-			'Dark'
-		],
-		drain: [],
-		repel: [
-			'Elec'
-		],
+		affinities: {
+			weak: [
+				'Force'
+			],
+			resist: [],
+			null: [
+				'Light',
+				'Dark'
+			],
+			drain: [],
+			repel: [
+				'Elec'
+			]
+		},
 		game: 'smt5'
 	},
 	{
@@ -14109,11 +14900,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 55,
 		hp: 320,
 		mp: 236,
-		st: 47,
-		ma: 26,
-		vi: 47,
-		ag: 40,
-		lu: 28,
+		stats: {
+			st: 47,
+			vi: 47,
+			ma: 26,
+			ag: 40,
+			lu: 28
+		},
 		learnset: [
 			{
 				name: 'Fatal Sword',
@@ -14140,16 +14933,18 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 58
 			}
 		],
-		weak: [
-			'Ice'
-		],
-		resist: [
-			'Light',
-			'Dark'
-		],
-		null: [],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Ice'
+			],
+			resist: [
+				'Light',
+				'Dark'
+			],
+			null: [],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -14161,11 +14956,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 7,
 		hp: null,
 		mp: null,
-		st: 5,
-		ma: 8,
-		vi: 5,
-		ag: 4,
-		lu: 6,
+		stats: {
+			st: 5,
+			vi: 5,
+			ma: 8,
+			ag: 4,
+			lu: 6
+		},
 		learnset: [
 			{
 				name: 'Zio',
@@ -14200,15 +14997,17 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 12
 			}
 		],
-		weak: [
-			'Ice'
-		],
-		resist: [
-			'Elec'
-		],
-		null: [],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Ice'
+			],
+			resist: [
+				'Elec'
+			],
+			null: [],
+			drain: [],
+			repel: []
+		},
 		game: 'p4'
 	},
 	{
@@ -14220,11 +15019,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 78,
 		hp: 549,
 		mp: 297,
-		st: 67,
-		ma: 46,
-		vi: 65,
-		ag: 31,
-		lu: 48,
+		stats: {
+			st: 67,
+			vi: 65,
+			ma: 46,
+			ag: 31,
+			lu: 48
+		},
 		learnset: [
 			{
 				name: 'Dragon Eye',
@@ -14255,17 +15056,19 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 81
 			}
 		],
-		weak: [
-			'Light'
-		],
-		resist: [
-			'Phys',
-			'Ice',
-			'Force'
-		],
-		null: [],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Light'
+			],
+			resist: [
+				'Phys',
+				'Ice',
+				'Force'
+			],
+			null: [],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -14277,11 +15080,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 23,
 		hp: 151,
 		mp: 93,
-		st: 21,
-		ma: 12,
-		vi: 24,
-		ag: 12,
-		lu: 16,
+		stats: {
+			st: 21,
+			vi: 24,
+			ma: 12,
+			ag: 12,
+			lu: 16
+		},
 		learnset: [
 			{
 				name: 'Crusher Onslaught',
@@ -14300,16 +15105,18 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 25
 			}
 		],
-		weak: [
-			'Elec',
-			'Light'
-		],
-		resist: [
-			'Phys'
-		],
-		null: [],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Elec',
+				'Light'
+			],
+			resist: [
+				'Phys'
+			],
+			null: [],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -14321,11 +15128,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 4,
 		hp: 42,
 		mp: 59,
-		st: 5,
-		ma: 8,
-		vi: 8,
-		ag: 7,
-		lu: 6,
+		stats: {
+			st: 5,
+			vi: 8,
+			ma: 8,
+			ag: 7,
+			lu: 6
+		},
 		learnset: [
 			{
 				name: 'Agi',
@@ -14340,16 +15149,18 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 6
 			}
 		],
-		weak: [
-			'Ice',
-			'Force'
-		],
-		resist: [
-			'Fire'
-		],
-		null: [],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Ice',
+				'Force'
+			],
+			resist: [
+				'Fire'
+			],
+			null: [],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -14361,11 +15172,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 49,
 		hp: 213,
 		mp: 264,
-		st: 35,
-		ma: 41,
-		vi: 32,
-		ag: 26,
-		lu: 35,
+		stats: {
+			st: 35,
+			vi: 32,
+			ma: 41,
+			ag: 26,
+			lu: 35
+		},
 		learnset: [
 			{
 				name: 'Agidyne',
@@ -14392,17 +15205,19 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 52
 			}
 		],
-		weak: [
-			'Ice'
-		],
-		resist: [
-			'Dark'
-		],
-		null: [
-			'Fire'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Ice'
+			],
+			resist: [
+				'Dark'
+			],
+			null: [
+				'Fire'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -14414,11 +15229,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 1,
 		hp: null,
 		mp: null,
-		st: 2,
-		ma: 2,
-		vi: 2,
-		ag: 2,
-		lu: 2,
+		stats: {
+			st: 2,
+			vi: 2,
+			ma: 2,
+			ag: 2,
+			lu: 2
+		},
 		learnset: [
 			{
 				name: 'Bash',
@@ -14457,20 +15274,19 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 32
 			}
 		],
-		weak: [
-			'Elec',
-			'Dark'
-		],
-		resist: [
-			'Light'
-		],
-		null: [],
-		drain: [],
-		repel: [],
-		game: 'p5',
-		user: 'P3 Protagonist',
-		stage: 1,
-		evoSkill: null
+		affinities: {
+			weak: [
+				'Elec',
+				'Dark'
+			],
+			resist: [
+				'Light'
+			],
+			null: [],
+			drain: [],
+			repel: []
+		},
+		game: 'p5'
 	},
 	{
 		name: 'Orpheus F',
@@ -14483,11 +15299,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 1,
 		hp: null,
 		mp: null,
-		st: 2,
-		ma: 2,
-		vi: 2,
-		ag: 2,
-		lu: 2,
+		stats: {
+			st: 2,
+			vi: 2,
+			ma: 2,
+			ag: 2,
+			lu: 2
+		},
 		learnset: [
 			{
 				name: 'Bash',
@@ -14522,20 +15340,19 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 15
 			}
 		],
-		weak: [
-			'Elec',
-			'Dark'
-		],
-		resist: [
-			'Light'
-		],
-		null: [],
-		drain: [],
-		repel: [],
-		game: 'p5',
-		user: 'P3 Protagonist',
-		stage: 1,
-		evoSkill: null
+		affinities: {
+			weak: [
+				'Elec',
+				'Dark'
+			],
+			resist: [
+				'Light'
+			],
+			null: [],
+			drain: [],
+			repel: []
+		},
+		game: 'p5'
 	},
 	{
 		name: 'Orpheus F Picaro',
@@ -14549,11 +15366,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 13,
 		hp: null,
 		mp: null,
-		st: 9,
-		ma: 11,
-		vi: 9,
-		ag: 10,
-		lu: 7,
+		stats: {
+			st: 9,
+			vi: 9,
+			ma: 11,
+			ag: 10,
+			lu: 7
+		},
 		learnset: [
 			{
 				name: 'Neo Cadenza',
@@ -14584,16 +15403,18 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 0
 			}
 		],
-		weak: [
-			'Elec',
-			'Dark'
-		],
-		resist: [
-			'Light'
-		],
-		null: [],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Elec',
+				'Dark'
+			],
+			resist: [
+				'Light'
+			],
+			null: [],
+			drain: [],
+			repel: []
+		},
 		game: 'p5'
 	},
 	{
@@ -14605,11 +15426,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 20,
 		hp: null,
 		mp: null,
-		st: 19,
-		ma: 19,
-		vi: 19,
-		ag: 19,
-		lu: 18,
+		stats: {
+			st: 19,
+			vi: 19,
+			ma: 19,
+			ag: 19,
+			lu: 18
+		},
 		learnset: [
 			{
 				name: 'Cadenza',
@@ -14640,16 +15463,18 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 35
 			}
 		],
-		weak: [
-			'Elec',
-			'Dark'
-		],
-		resist: [
-			'Light'
-		],
-		null: [],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Elec',
+				'Dark'
+			],
+			resist: [
+				'Light'
+			],
+			null: [],
+			drain: [],
+			repel: []
+		},
 		game: 'p5'
 	},
 	{
@@ -14661,37 +15486,38 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 90,
 		hp: null,
 		mp: null,
-		st: 62,
-		ma: 62,
-		vi: 62,
-		ag: 62,
-		lu: 62,
+		stats: {
+			st: 62,
+			vi: 62,
+			ma: 62,
+			ag: 62,
+			lu: 62
+		},
 		learnset: [
 			{
 				name: 'Victory Cry',
 				level: 0
 			}
 		],
-		weak: [],
-		resist: [
-			'Phys',
-			'Gun',
-			'Fire',
-			'Ice',
-			'Elec',
-			'Wind',
-			'Nuke',
-			'Psy',
-			'Light',
-			'Dark'
-		],
-		null: [],
-		drain: [],
-		repel: [],
-		game: 'p5',
-		user: 'P3 Protagonist',
-		stage: 3,
-		evoSkill: null
+		affinities: {
+			weak: [],
+			resist: [
+				'Phys',
+				'Gun',
+				'Fire',
+				'Ice',
+				'Elec',
+				'Wind',
+				'Nuke',
+				'Psy',
+				'Light',
+				'Dark'
+			],
+			null: [],
+			drain: [],
+			repel: []
+		},
+		game: 'p5'
 	},
 	{
 		name: 'Orthrus',
@@ -14702,11 +15528,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 42,
 		hp: 255,
 		mp: 155,
-		st: 41,
-		ma: 21,
-		vi: 32,
-		ag: 34,
-		lu: 22,
+		stats: {
+			st: 41,
+			vi: 32,
+			ma: 21,
+			ag: 34,
+			lu: 22
+		},
 		learnset: [
 			{
 				name: 'Axel Claw',
@@ -14733,17 +15561,19 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 45
 			}
 		],
-		weak: [
-			'Ice'
-		],
-		resist: [
-			'Dark'
-		],
-		null: [
-			'Fire'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Ice'
+			],
+			resist: [
+				'Dark'
+			],
+			null: [
+				'Fire'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -14755,11 +15585,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 44,
 		hp: 264,
 		mp: 169,
-		st: 45,
-		ma: 21,
-		vi: 35,
-		ag: 33,
-		lu: 26,
+		stats: {
+			st: 45,
+			vi: 35,
+			ma: 21,
+			ag: 33,
+			lu: 26
+		},
 		learnset: [
 			{
 				name: 'Beast Eye',
@@ -14786,16 +15618,18 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 47
 			}
 		],
-		weak: [
-			'Fire'
-		],
-		resist: [],
-		null: [
-			'Ice',
-			'Dark'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Fire'
+			],
+			resist: [],
+			null: [
+				'Ice',
+				'Dark'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -14809,11 +15643,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 40,
 		hp: 261,
 		mp: 140,
-		st: 36,
-		ma: 23,
-		vi: 38,
-		ag: 18,
-		lu: 26,
+		stats: {
+			st: 36,
+			vi: 38,
+			ma: 23,
+			ag: 18,
+			lu: 26
+		},
 		learnset: [
 			{
 				name: 'Ice Dracostrike',
@@ -14836,18 +15672,20 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 43
 			}
 		],
-		weak: [
-			'Fire'
-		],
-		resist: [
-			'Ice',
-			'Elec'
-		],
-		null: [
-			'Dark'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Fire'
+			],
+			resist: [
+				'Ice',
+				'Elec'
+			],
+			null: [
+				'Dark'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -14859,11 +15697,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 51,
 		hp: null,
 		mp: null,
-		st: 38,
-		ma: 29,
-		vi: 30,
-		ag: 33,
-		lu: 30,
+		stats: {
+			st: 38,
+			vi: 30,
+			ma: 29,
+			ag: 33,
+			lu: 30
+		},
 		learnset: [
 			{
 				name: 'Blight',
@@ -14890,18 +15730,20 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 56
 			}
 		],
-		weak: [
-			'Ice',
-			'Light'
-		],
-		resist: [],
-		null: [
-			'Fire'
-		],
-		drain: [],
-		repel: [
-			'Dark'
-		],
+		affinities: {
+			weak: [
+				'Ice',
+				'Light'
+			],
+			resist: [],
+			null: [
+				'Fire'
+			],
+			drain: [],
+			repel: [
+				'Dark'
+			]
+		},
 		game: 'p4'
 	},
 	{
@@ -14913,11 +15755,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 57,
 		hp: 305,
 		mp: 261,
-		st: 51,
-		ma: 40,
-		vi: 35,
-		ag: 37,
-		lu: 53,
+		stats: {
+			st: 51,
+			vi: 35,
+			ma: 40,
+			ag: 37,
+			lu: 53
+		},
 		learnset: [
 			{
 				name: 'Mabufudyne',
@@ -14948,18 +15792,20 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 60
 			}
 		],
-		weak: [
-			'Fire'
-		],
-		resist: [
-			'Light',
-			'Dark'
-		],
-		null: [
-			'Ice'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Fire'
+			],
+			resist: [
+				'Light',
+				'Dark'
+			],
+			null: [
+				'Ice'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -14971,11 +15817,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 29,
 		hp: null,
 		mp: null,
-		st: 19,
-		ma: 13,
-		vi: 25,
-		ag: 18,
-		lu: 14,
+		stats: {
+			st: 19,
+			vi: 25,
+			ma: 13,
+			ag: 18,
+			lu: 14
+		},
 		learnset: [
 			{
 				name: 'Kill Rush',
@@ -15026,21 +15874,20 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 60
 			}
 		],
-		weak: [
-			'Elec'
-		],
-		resist: [
-			'Phys'
-		],
-		null: [
-			'Dark'
-		],
-		drain: [],
-		repel: [],
-		game: 'p3',
-		user: 'Aigis',
-		stage: 1,
-		evoSkill: null
+		affinities: {
+			weak: [
+				'Elec'
+			],
+			resist: [
+				'Phys'
+			],
+			null: [
+				'Dark'
+			],
+			drain: [],
+			repel: []
+		},
+		game: 'p3'
 	},
 	{
 		name: 'Pandora',
@@ -15051,11 +15898,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 1,
 		hp: null,
 		mp: null,
-		st: 2,
-		ma: 5,
-		vi: 4,
-		ag: 6,
-		lu: 4,
+		stats: {
+			st: 2,
+			vi: 4,
+			ma: 5,
+			ag: 6,
+			lu: 4
+		},
 		learnset: [
 			{
 				name: 'Hama',
@@ -15142,19 +15991,18 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 70
 			}
 		],
-		weak: [
-			'Dark'
-		],
-		resist: [],
-		null: [
-			'Light'
-		],
-		drain: [],
-		repel: [],
-		game: 'p5',
-		user: 'Sophia',
-		stage: 2,
-		evoSkill: 'Mahamabarion'
+		affinities: {
+			weak: [
+				'Dark'
+			],
+			resist: [],
+			null: [
+				'Light'
+			],
+			drain: [],
+			repel: []
+		},
+		game: 'p5'
 	},
 	{
 		name: 'Parvati',
@@ -15165,11 +16013,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 35,
 		hp: 151,
 		mp: 204,
-		st: 17,
-		ma: 39,
-		vi: 20,
-		ag: 28,
-		lu: 29,
+		stats: {
+			st: 17,
+			vi: 20,
+			ma: 39,
+			ag: 28,
+			lu: 29
+		},
 		learnset: [
 			{
 				name: 'Bowl of Hygieia',
@@ -15196,16 +16046,18 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 38
 			}
 		],
-		weak: [
-			'Fire'
-		],
-		resist: [
-			'Ice',
-			'Light'
-		],
-		null: [],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Fire'
+			],
+			resist: [
+				'Ice',
+				'Light'
+			],
+			null: [],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -15217,11 +16069,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 52,
 		hp: 273,
 		mp: 241,
-		st: 31,
-		ma: 41,
-		vi: 34,
-		ag: 35,
-		lu: 40,
+		stats: {
+			st: 31,
+			vi: 34,
+			ma: 41,
+			ag: 35,
+			lu: 40
+		},
 		learnset: [
 			{
 				name: 'Mamudoon',
@@ -15252,17 +16106,19 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 55
 			}
 		],
-		weak: [
-			'Ice'
-		],
-		resist: [
-			'Force'
-		],
-		null: [
-			'Dark'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Ice'
+			],
+			resist: [
+				'Force'
+			],
+			null: [
+				'Dark'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -15274,11 +16130,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 18,
 		hp: null,
 		mp: null,
-		st: 11,
-		ma: 16,
-		vi: 11,
-		ag: 12,
-		lu: 11,
+		stats: {
+			st: 11,
+			vi: 11,
+			ma: 16,
+			ag: 12,
+			lu: 11
+		},
 		learnset: [
 			{
 				name: 'Analysis',
@@ -15333,19 +16191,18 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 55
 			}
 		],
-		weak: [
-			'Fire'
-		],
-		resist: [
-			'Ice'
-		],
-		null: [],
-		drain: [],
-		repel: [],
-		game: 'p3',
-		user: 'Mitsuru Kirijo',
-		stage: 1,
-		evoSkill: null
+		affinities: {
+			weak: [
+				'Fire'
+			],
+			resist: [
+				'Ice'
+			],
+			null: [],
+			drain: [],
+			repel: []
+		},
+		game: 'p3'
 	},
 	{
 		name: 'Pisaca',
@@ -15356,11 +16213,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 31,
 		hp: 144,
 		mp: 155,
-		st: 26,
-		ma: 12,
-		vi: 20,
-		ag: 30,
-		lu: 26,
+		stats: {
+			st: 26,
+			vi: 20,
+			ma: 12,
+			ag: 30,
+			lu: 26
+		},
 		learnset: [
 			{
 				name: 'Damascus Claw',
@@ -15387,16 +16246,18 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 34
 			}
 		],
-		weak: [
-			'Fire',
-			'Light'
-		],
-		resist: [],
-		null: [
-			'Dark'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Fire',
+				'Light'
+			],
+			resist: [],
+			null: [
+				'Dark'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -15408,11 +16269,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 1,
 		hp: null,
 		mp: null,
-		st: 2,
-		ma: 5,
-		vi: 4,
-		ag: 6,
-		lu: 4,
+		stats: {
+			st: 2,
+			vi: 4,
+			ma: 5,
+			ag: 6,
+			lu: 4
+		},
 		learnset: [
 			{
 				name: 'Hama',
@@ -15479,19 +16342,18 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 48
 			}
 		],
-		weak: [
-			'Dark'
-		],
-		resist: [
-			'Light'
-		],
-		null: [],
-		drain: [],
-		repel: [],
-		game: 'p5',
-		user: 'Sophia',
-		stage: 1,
-		evoSkill: null
+		affinities: {
+			weak: [
+				'Dark'
+			],
+			resist: [
+				'Light'
+			],
+			null: [],
+			drain: [],
+			repel: []
+		},
+		game: 'p5'
 	},
 	{
 		name: 'Pixie',
@@ -15502,11 +16364,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 2,
 		hp: 32,
 		mp: 82,
-		st: 2,
-		ma: 7,
-		vi: 4,
-		ag: 8,
-		lu: 6,
+		stats: {
+			st: 2,
+			vi: 4,
+			ma: 7,
+			ag: 8,
+			lu: 6
+		},
 		learnset: [
 			{
 				name: 'Dia',
@@ -15525,15 +16389,17 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 4
 			}
 		],
-		weak: [
-			'Dark'
-		],
-		resist: [
-			'Force'
-		],
-		null: [],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Dark'
+			],
+			resist: [
+				'Force'
+			],
+			null: [],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -15545,11 +16411,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 25,
 		hp: 115,
 		mp: 137,
-		st: 17,
-		ma: 16,
-		vi: 17,
-		ag: 20,
-		lu: 23,
+		stats: {
+			st: 17,
+			vi: 17,
+			ma: 16,
+			ag: 20,
+			lu: 23
+		},
 		learnset: [
 			{
 				name: 'Masukunda',
@@ -15572,16 +16440,18 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 28
 			}
 		],
-		weak: [
-			'Force',
-			'Light'
-		],
-		resist: [],
-		null: [
-			'Elec'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Force',
+				'Light'
+			],
+			resist: [],
+			null: [
+				'Elec'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -15593,11 +16463,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 12,
 		hp: null,
 		mp: null,
-		st: 9,
-		ma: 10,
-		vi: 8,
-		ag: 9,
-		lu: 7,
+		stats: {
+			st: 9,
+			vi: 8,
+			ma: 10,
+			ag: 9,
+			lu: 7
+		},
 		learnset: [
 			{
 				name: 'Sonic Punch',
@@ -15644,19 +16516,18 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 41
 			}
 		],
-		weak: [
-			'Ice'
-		],
-		resist: [
-			'Elec'
-		],
-		null: [],
-		drain: [],
-		repel: [],
-		game: 'p3',
-		user: 'Akihiko Sanada',
-		stage: 1,
-		evoSkill: null
+		affinities: {
+			weak: [
+				'Ice'
+			],
+			resist: [
+				'Elec'
+			],
+			null: [],
+			drain: [],
+			repel: []
+		},
+		game: 'p3'
 	},
 	{
 		name: 'Power',
@@ -15667,11 +16538,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 39,
 		hp: 239,
 		mp: 153,
-		st: 31,
-		ma: 27,
-		vi: 36,
-		ag: 21,
-		lu: 25,
+		stats: {
+			st: 31,
+			vi: 36,
+			ma: 27,
+			ag: 21,
+			lu: 25
+		},
 		learnset: [
 			{
 				name: 'Fang Breaker',
@@ -15698,18 +16571,20 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 42
 			}
 		],
-		weak: [
-			'Force',
-			'Dark'
-		],
-		resist: [
-			'Elec'
-		],
-		null: [
-			'Light'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Force',
+				'Dark'
+			],
+			resist: [
+				'Elec'
+			],
+			null: [
+				'Light'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -15721,11 +16596,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 3,
 		hp: 40,
 		mp: 54,
-		st: 8,
-		ma: 7,
-		vi: 7,
-		ag: 5,
-		lu: 4,
+		stats: {
+			st: 8,
+			vi: 7,
+			ma: 7,
+			ag: 5,
+			lu: 4
+		},
 		learnset: [
 			{
 				name: 'Bestial Bite',
@@ -15740,17 +16617,19 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 5
 			}
 		],
-		weak: [
-			'Fire',
-			'Force',
-			'Light'
-		],
-		resist: [
-			'Dark'
-		],
-		null: [],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Fire',
+				'Force',
+				'Light'
+			],
+			resist: [
+				'Dark'
+			],
+			null: [],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -15762,11 +16641,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 28,
 		hp: 130,
 		mp: 175,
-		st: 13,
-		ma: 34,
-		vi: 16,
-		ag: 22,
-		lu: 22,
+		stats: {
+			st: 13,
+			vi: 16,
+			ma: 34,
+			ag: 22,
+			lu: 22
+		},
 		learnset: [
 			{
 				name: 'Diarama',
@@ -15789,15 +16670,17 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 31
 			}
 		],
-		weak: [
-			'Dark'
-		],
-		resist: [],
-		null: [
-			'Light'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Dark'
+			],
+			resist: [],
+			null: [
+				'Light'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -15809,11 +16692,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 31,
 		hp: null,
 		mp: null,
-		st: 17,
-		ma: 23,
-		vi: 20,
-		ag: 21,
-		lu: 35,
+		stats: {
+			st: 17,
+			vi: 20,
+			ma: 23,
+			ag: 21,
+			lu: 35
+		},
 		learnset: [
 			{
 				name: 'Analysis',
@@ -15836,15 +16721,14 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 67
 			}
 		],
-		weak: [],
-		resist: [],
-		null: [],
-		drain: [],
-		repel: [],
-		game: 'p5',
-		user: 'Futaba Sakura',
-		stage: 2,
-		evoSkill: 'Treasure Skimmer'
+		affinities: {
+			weak: [],
+			resist: [],
+			null: [],
+			drain: [],
+			repel: []
+		},
+		game: 'p5'
 	},
 	{
 		name: 'Psyche',
@@ -15855,11 +16739,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 25,
 		hp: null,
 		mp: null,
-		st: 18,
-		ma: 13,
-		vi: 20,
-		ag: 18,
-		lu: 13,
+		stats: {
+			st: 18,
+			vi: 20,
+			ma: 13,
+			ag: 18,
+			lu: 13
+		},
 		learnset: [
 			{
 				name: 'Fatal End',
@@ -15922,15 +16808,14 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 75
 			}
 		],
-		weak: [],
-		resist: [],
-		null: [],
-		drain: [],
-		repel: [],
-		game: 'p3',
-		user: 'Metis',
-		stage: 1,
-		evoSkill: null
+		affinities: {
+			weak: [],
+			resist: [],
+			null: [],
+			drain: [],
+			repel: []
+		},
+		game: 'p3'
 	},
 	{
 		name: 'Queen Mab',
@@ -15943,11 +16828,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 56,
 		hp: 266,
 		mp: 289,
-		st: 25,
-		ma: 52,
-		vi: 30,
-		ag: 33,
-		lu: 49,
+		stats: {
+			st: 25,
+			vi: 30,
+			ma: 52,
+			ag: 33,
+			lu: 49
+		},
 		learnset: [
 			{
 				name: 'Agidyne',
@@ -15974,15 +16861,17 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 59
 			}
 		],
-		weak: [
-			'Elec'
-		],
-		resist: [],
-		null: [
-			'Force'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Elec'
+			],
+			resist: [],
+			null: [
+				'Force'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -15994,11 +16883,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 34,
 		hp: 171,
 		mp: 144,
-		st: 24,
-		ma: 30,
-		vi: 23,
-		ag: 24,
-		lu: 24,
+		stats: {
+			st: 24,
+			vi: 23,
+			ma: 30,
+			ag: 24,
+			lu: 24
+		},
 		learnset: [
 			{
 				name: 'Agilao',
@@ -16025,15 +16916,17 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 37
 			}
 		],
-		weak: [
-			'Elec'
-		],
-		resist: [],
-		null: [
-			'Fire'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Elec'
+			],
+			resist: [],
+			null: [
+				'Fire'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -16047,11 +16940,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 40,
 		hp: 241,
 		mp: 140,
-		st: 33,
-		ma: 31,
-		vi: 36,
-		ag: 19,
-		lu: 22,
+		stats: {
+			st: 33,
+			vi: 36,
+			ma: 31,
+			ag: 19,
+			lu: 22
+		},
 		learnset: [
 			{
 				name: 'Elec Pleroma',
@@ -16078,18 +16973,20 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 43
 			}
 		],
-		weak: [
-			'Fire',
-			'Force'
-		],
-		resist: [
-			'Ice'
-		],
-		null: [],
-		drain: [
-			'Elec'
-		],
-		repel: [],
+		affinities: {
+			weak: [
+				'Fire',
+				'Force'
+			],
+			resist: [
+				'Ice'
+			],
+			null: [],
+			drain: [
+				'Elec'
+			],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -16101,11 +16998,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 20,
 		hp: 114,
 		mp: 90,
-		st: 25,
-		ma: 10,
-		vi: 19,
-		ag: 16,
-		lu: 14,
+		stats: {
+			st: 25,
+			vi: 19,
+			ma: 10,
+			ag: 16,
+			lu: 14
+		},
 		learnset: [
 			{
 				name: 'Counter',
@@ -16124,16 +17023,18 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 22
 			}
 		],
-		weak: [
-			'Ice'
-		],
-		resist: [
-			'Light',
-			'Dark'
-		],
-		null: [],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Ice'
+			],
+			resist: [
+				'Light',
+				'Dark'
+			],
+			null: [],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -16145,11 +17046,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 70,
 		hp: 334,
 		mp: 348,
-		st: 46,
-		ma: 59,
-		vi: 36,
-		ag: 39,
-		lu: 51,
+		stats: {
+			st: 46,
+			vi: 36,
+			ma: 59,
+			ag: 39,
+			lu: 51
+		},
 		learnset: [
 			{
 				name: 'Nihil Claw',
@@ -16176,17 +17079,19 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 73
 			}
 		],
-		weak: [
-			'Fire',
-			'Elec',
-			'Light'
-		],
-		resist: [],
-		null: [],
-		drain: [],
-		repel: [
-			'Phys'
-		],
+		affinities: {
+			weak: [
+				'Fire',
+				'Elec',
+				'Light'
+			],
+			resist: [],
+			null: [],
+			drain: [],
+			repel: [
+				'Phys'
+			]
+		},
 		game: 'smt5'
 	},
 	{
@@ -16198,11 +17103,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 76,
 		hp: null,
 		mp: null,
-		st: 47,
-		ma: 49,
-		vi: 43,
-		ag: 54,
-		lu: 42,
+		stats: {
+			st: 47,
+			vi: 43,
+			ma: 49,
+			ag: 54,
+			lu: 42
+		},
 		learnset: [
 			{
 				name: 'Phantom Snow',
@@ -16237,19 +17144,18 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 82
 			}
 		],
-		weak: [
-			'Light'
-		],
-		resist: [],
-		null: [
-			'Dark'
-		],
-		drain: [],
-		repel: [],
-		game: 'p5',
-		user: 'P5 Protagonist',
-		stage: 3,
-		evoSkill: null
+		affinities: {
+			weak: [
+				'Light'
+			],
+			resist: [],
+			null: [
+				'Dark'
+			],
+			drain: [],
+			repel: []
+		},
+		game: 'p5'
 	},
 	{
 		name: 'Raphael',
@@ -16260,11 +17166,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 84,
 		hp: 528,
 		mp: 387,
-		st: 70,
-		ma: 80,
-		vi: 62,
-		ag: 50,
-		lu: 48,
+		stats: {
+			st: 70,
+			vi: 62,
+			ma: 80,
+			ag: 50,
+			lu: 48
+		},
 		learnset: [
 			{
 				name: 'Hamabarion',
@@ -16295,18 +17203,20 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 87
 			}
 		],
-		weak: [
-			'Fire'
-		],
-		resist: [
-			'Elec'
-		],
-		null: [
-			'Force',
-			'Light'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Fire'
+			],
+			resist: [
+				'Elec'
+			],
+			null: [
+				'Force',
+				'Light'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -16318,11 +17228,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 47,
 		hp: 272,
 		mp: 201,
-		st: 39,
-		ma: 37,
-		vi: 29,
-		ag: 31,
-		lu: 32,
+		stats: {
+			st: 39,
+			vi: 29,
+			ma: 37,
+			ag: 31,
+			lu: 32
+		},
 		learnset: [
 			{
 				name: 'Pierce Armor',
@@ -16353,20 +17265,22 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 50
 			}
 		],
-		weak: [
-			'Ice'
-		],
-		resist: [
-			'Light',
-			'Dark'
-		],
-		null: [],
-		drain: [
-			'Force'
-		],
-		repel: [
-			'Elec'
-		],
+		affinities: {
+			weak: [
+				'Ice'
+			],
+			resist: [
+				'Light',
+				'Dark'
+			],
+			null: [],
+			drain: [
+				'Force'
+			],
+			repel: [
+				'Elec'
+			]
+		},
 		game: 'smt5'
 	},
 	{
@@ -16378,11 +17292,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 10,
 		hp: 165,
 		mp: 93,
-		st: 10,
-		ma: 10,
-		vi: 10,
-		ag: 10,
-		lu: 10,
+		stats: {
+			st: 10,
+			vi: 10,
+			ma: 10,
+			ag: 10,
+			lu: 10
+		},
 		learnset: [
 			{
 				name: 'Maragi',
@@ -16417,16 +17333,18 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 0
 			}
 		],
-		weak: [
-			'Nuke'
-		],
-		resist: [
-			'Phys',
-			'Gun'
-		],
-		null: [],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Nuke'
+			],
+			resist: [
+				'Phys',
+				'Gun'
+			],
+			null: [],
+			drain: [],
+			repel: []
+		},
 		game: 'p5'
 	},
 	{
@@ -16438,11 +17356,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 45,
 		hp: null,
 		mp: null,
-		st: 32,
-		ma: 29,
-		vi: 28,
-		ag: 29,
-		lu: 24,
+		stats: {
+			st: 32,
+			vi: 28,
+			ma: 29,
+			ag: 29,
+			lu: 24
+		},
 		learnset: [
 			{
 				name: 'Megidola',
@@ -16497,19 +17417,18 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 70
 			}
 		],
-		weak: [
-			'Dark'
-		],
-		resist: [
-			'Light'
-		],
-		null: [],
-		drain: [],
-		repel: [],
-		game: 'p5',
-		user: 'Goro Akechi',
-		stage: 1,
-		evoSkill: null
+		affinities: {
+			weak: [
+				'Dark'
+			],
+			resist: [
+				'Light'
+			],
+			null: [],
+			drain: [],
+			repel: []
+		},
+		game: 'p5'
 	},
 	{
 		name: 'Rokuten Maoh',
@@ -16522,11 +17441,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 25,
 		hp: null,
 		mp: null,
-		st: 20,
-		ma: 11,
-		vi: 17,
-		ag: 15,
-		lu: 14,
+		stats: {
+			st: 20,
+			vi: 17,
+			ma: 11,
+			ag: 15,
+			lu: 14
+		},
 		learnset: [
 			{
 				name: 'Mazio',
@@ -16597,19 +17518,18 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 75
 			}
 		],
-		weak: [
-			'Wind'
-		],
-		resist: [],
-		null: [
-			'Elec'
-		],
-		drain: [],
-		repel: [],
-		game: 'p4',
-		user: 'Kanji Tatsumi',
-		stage: 2,
-		evoSkill: null
+		affinities: {
+			weak: [
+				'Wind'
+			],
+			resist: [],
+			null: [
+				'Elec'
+			],
+			drain: [],
+			repel: []
+		},
+		game: 'p4'
 	},
 	{
 		name: 'Saki Mitama',
@@ -16620,11 +17540,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 6,
 		hp: null,
 		mp: null,
-		st: 4,
-		ma: 6,
-		vi: 5,
-		ag: 6,
-		lu: 4,
+		stats: {
+			st: 4,
+			vi: 5,
+			ma: 6,
+			ag: 6,
+			lu: 4
+		},
 		learnset: [
 			{
 				name: 'Bufu',
@@ -16651,15 +17573,17 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 10
 			}
 		],
-		weak: [
-			'Wind'
-		],
-		resist: [
-			'Ice'
-		],
-		null: [],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Wind'
+			],
+			resist: [
+				'Ice'
+			],
+			null: [],
+			drain: [],
+			repel: []
+		},
 		game: 'p5'
 	},
 	{
@@ -16671,11 +17595,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 88,
 		hp: 536,
 		mp: 458,
-		st: 71,
-		ma: 83,
-		vi: 74,
-		ag: 63,
-		lu: 53,
+		stats: {
+			st: 71,
+			vi: 74,
+			ma: 83,
+			ag: 63,
+			lu: 53
+		},
 		learnset: [
 			{
 				name: 'Freikugel',
@@ -16706,19 +17632,21 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 91
 			}
 		],
-		weak: [
-			'Force'
-		],
-		resist: [
-			'Dark'
-		],
-		null: [
-			'Phys',
-			'Elec',
-			'Light'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Force'
+			],
+			resist: [
+				'Dark'
+			],
+			null: [
+				'Phys',
+				'Elec',
+				'Light'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -16730,11 +17658,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 8,
 		hp: 55,
 		mp: 81,
-		st: 9,
-		ma: 9,
-		vi: 8,
-		ag: 11,
-		lu: 12,
+		stats: {
+			st: 9,
+			vi: 8,
+			ma: 9,
+			ag: 11,
+			lu: 12
+		},
 		learnset: [
 			{
 				name: 'Dream Needle',
@@ -16753,15 +17683,17 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 11
 			}
 		],
-		weak: [
-			'Elec'
-		],
-		resist: [
-			'Force'
-		],
-		null: [],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Elec'
+			],
+			resist: [
+				'Force'
+			],
+			null: [],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -16773,11 +17705,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 47,
 		hp: 208,
 		mp: 254,
-		st: 21,
-		ma: 48,
-		vi: 25,
-		ag: 37,
-		lu: 36,
+		stats: {
+			st: 21,
+			vi: 25,
+			ma: 48,
+			ag: 37,
+			lu: 36
+		},
 		learnset: [
 			{
 				name: 'Bufudyne',
@@ -16804,16 +17738,18 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 50
 			}
 		],
-		weak: [
-			'Fire',
-			'Dark'
-		],
-		resist: [],
-		null: [
-			'Ice'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Fire',
+				'Dark'
+			],
+			resist: [],
+			null: [
+				'Ice'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -16825,11 +17761,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 92,
 		hp: null,
 		mp: null,
-		st: 62,
-		ma: 59,
-		vi: 55,
-		ag: 52,
-		lu: 55,
+		stats: {
+			st: 62,
+			vi: 55,
+			ma: 59,
+			ag: 52,
+			lu: 55
+		},
 		learnset: [
 			{
 				name: 'Bufubarion',
@@ -16864,16 +17802,18 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 98
 			}
 		],
-		weak: [],
-		resist: [
-			'Gun'
-		],
-		null: [],
-		drain: [],
-		repel: [
-			'Ice',
-			'Dark'
-		],
+		affinities: {
+			weak: [],
+			resist: [
+				'Gun'
+			],
+			null: [],
+			drain: [],
+			repel: [
+				'Ice',
+				'Dark'
+			]
+		},
 		game: 'p5'
 	},
 	{
@@ -16885,11 +17825,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 95,
 		hp: null,
 		mp: null,
-		st: 63,
-		ma: 60,
-		vi: 57,
-		ag: 56,
-		lu: 56,
+		stats: {
+			st: 63,
+			vi: 57,
+			ma: 60,
+			ag: 56,
+			lu: 56
+		},
 		learnset: [
 			{
 				name: 'Mamudobarion',
@@ -16924,28 +17866,27 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 99
 			}
 		],
-		weak: [],
-		resist: [
-			'Phys',
-			'Gun',
-			'Fire',
-			'Ice',
-			'Elec',
-			'Wind',
-			'Psy',
-			'Nuke'
-		],
-		null: [
-			'Light'
-		],
-		drain: [
-			'Dark'
-		],
-		repel: [],
-		game: 'p5',
-		user: 'P5 Protagonist',
-		stage: 2,
-		evoSkill: null
+		affinities: {
+			weak: [],
+			resist: [
+				'Phys',
+				'Gun',
+				'Fire',
+				'Ice',
+				'Elec',
+				'Wind',
+				'Psy',
+				'Nuke'
+			],
+			null: [
+				'Light'
+			],
+			drain: [
+				'Dark'
+			],
+			repel: []
+		},
+		game: 'p5'
 	},
 	{
 		name: 'Scathach',
@@ -16956,11 +17897,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 55,
 		hp: 307,
 		mp: 238,
-		st: 44,
-		ma: 37,
-		vi: 32,
-		ag: 40,
-		lu: 32,
+		stats: {
+			st: 44,
+			vi: 32,
+			ma: 37,
+			ag: 40,
+			lu: 32
+		},
 		learnset: [
 			{
 				name: 'Mahamaon',
@@ -16987,17 +17930,19 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 58
 			}
 		],
-		weak: [
-			'Elec'
-		],
-		resist: [
-			'Light'
-		],
-		null: [
-			'Force'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Elec'
+			],
+			resist: [
+				'Light'
+			],
+			null: [
+				'Force'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -17011,11 +17956,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 45,
 		hp: 231,
 		mp: 183,
-		st: 31,
-		ma: 33,
-		vi: 29,
-		ag: 36,
-		lu: 31,
+		stats: {
+			st: 31,
+			vi: 29,
+			ma: 33,
+			ag: 36,
+			lu: 31
+		},
 		learnset: [
 			{
 				name: 'Bufula',
@@ -17042,17 +17989,19 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 48
 			}
 		],
-		weak: [
-			'Elec'
-		],
-		resist: [
-			'Ice'
-		],
-		null: [
-			'Force'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Elec'
+			],
+			resist: [
+				'Ice'
+			],
+			null: [
+				'Force'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -17066,11 +18015,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 4,
 		hp: null,
 		mp: null,
-		st: 5,
-		ma: 3,
-		vi: 5,
-		ag: 3,
-		lu: 3,
+		stats: {
+			st: 5,
+			vi: 5,
+			ma: 3,
+			ag: 3,
+			lu: 3
+		},
 		learnset: [
 			{
 				name: 'Zio',
@@ -17165,21 +18116,20 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 75
 			}
 		],
-		weak: [
-			'Wind'
-		],
-		resist: [
-			'Fire'
-		],
-		null: [
-			'Elec'
-		],
-		drain: [],
-		repel: [],
-		game: 'p5',
-		user: 'Ryuji Sakamoto',
-		stage: 2,
-		evoSkill: 'Evade Wind'
+		affinities: {
+			weak: [
+				'Wind'
+			],
+			resist: [
+				'Fire'
+			],
+			null: [
+				'Elec'
+			],
+			drain: [],
+			repel: []
+		},
+		game: 'p5'
 	},
 	{
 		name: 'Senri',
@@ -17190,11 +18140,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 9,
 		hp: null,
 		mp: null,
-		st: 7,
-		ma: 7,
-		vi: 4,
-		ag: 14,
-		lu: 7,
+		stats: {
+			st: 7,
+			vi: 4,
+			ma: 7,
+			ag: 14,
+			lu: 7
+		},
 		learnset: [
 			{
 				name: 'Dia',
@@ -17221,15 +18173,17 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 14
 			}
 		],
-		weak: [
-			'Elec'
-		],
-		resist: [],
-		null: [
-			'Fire'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Elec'
+			],
+			resist: [],
+			null: [
+				'Fire'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'p4'
 	},
 	{
@@ -17241,11 +18195,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 35,
 		hp: 193,
 		mp: 163,
-		st: 35,
-		ma: 26,
-		vi: 25,
-		ag: 27,
-		lu: 20,
+		stats: {
+			st: 35,
+			vi: 25,
+			ma: 26,
+			ag: 27,
+			lu: 20
+		},
 		learnset: [
 			{
 				name: 'Deathbound',
@@ -17268,16 +18224,18 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 38
 			}
 		],
-		weak: [
-			'Elec',
-			'Dark'
-		],
-		resist: [],
-		null: [
-			'Force'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Elec',
+				'Dark'
+			],
+			resist: [],
+			null: [
+				'Force'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -17289,11 +18247,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 67,
 		hp: 409,
 		mp: 284,
-		st: 62,
-		ma: 51,
-		vi: 43,
-		ag: 40,
-		lu: 34,
+		stats: {
+			st: 62,
+			vi: 43,
+			ma: 51,
+			ag: 40,
+			lu: 34
+		},
 		learnset: [
 			{
 				name: 'Madness Nails',
@@ -17320,18 +18280,20 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 70
 			}
 		],
-		weak: [
-			'Ice'
-		],
-		resist: [
-			'Light',
-			'Dark'
-		],
-		null: [
-			'Elec'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Ice'
+			],
+			resist: [
+				'Light',
+				'Dark'
+			],
+			null: [
+				'Elec'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -17343,11 +18305,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 19,
 		hp: 91,
 		mp: 117,
-		st: 15,
-		ma: 15,
-		vi: 14,
-		ag: 19,
-		lu: 16,
+		stats: {
+			st: 15,
+			vi: 14,
+			ma: 15,
+			ag: 19,
+			lu: 16
+		},
 		learnset: [
 			{
 				name: 'Bestial Bite',
@@ -17370,16 +18334,18 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 22
 			}
 		],
-		weak: [
-			'Fire'
-		],
-		resist: [
-			'Elec',
-			'Force'
-		],
-		null: [],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Fire'
+			],
+			resist: [
+				'Elec',
+				'Force'
+			],
+			null: [],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -17391,11 +18357,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 29,
 		hp: 135,
 		mp: 159,
-		st: 16,
-		ma: 29,
-		vi: 18,
-		ag: 23,
-		lu: 23,
+		stats: {
+			st: 16,
+			vi: 18,
+			ma: 29,
+			ag: 23,
+			lu: 23
+		},
 		learnset: [
 			{
 				name: 'Hama',
@@ -17418,18 +18386,20 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 32
 			}
 		],
-		weak: [
-			'Fire',
-			'Force'
-		],
-		resist: [
-			'Phys',
-			'Light',
-			'Dark'
-		],
-		null: [],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Fire',
+				'Force'
+			],
+			resist: [
+				'Phys',
+				'Light',
+				'Dark'
+			],
+			null: [],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -17441,11 +18411,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 96,
 		hp: 670,
 		mp: 440,
-		st: 101,
-		ma: 88,
-		vi: 79,
-		ag: 74,
-		lu: 73,
+		stats: {
+			st: 101,
+			vi: 79,
+			ma: 88,
+			ag: 74,
+			lu: 73
+		},
 		learnset: [
 			{
 				name: 'Hades Blast',
@@ -17476,20 +18448,22 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 99
 			}
 		],
-		weak: [
-			'Ice'
-		],
-		resist: [
-			'Phys',
-			'Light',
-			'Dark'
-		],
-		null: [],
-		drain: [
-			'Fire',
-			'Elec'
-		],
-		repel: [],
+		affinities: {
+			weak: [
+				'Ice'
+			],
+			resist: [
+				'Phys',
+				'Light',
+				'Dark'
+			],
+			null: [],
+			drain: [
+				'Fire',
+				'Elec'
+			],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -17501,11 +18475,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 63,
 		hp: 398,
 		mp: 233,
-		st: 59,
-		ma: 27,
-		vi: 54,
-		ag: 41,
-		lu: 29,
+		stats: {
+			st: 59,
+			vi: 54,
+			ma: 27,
+			ag: 41,
+			lu: 29
+		},
 		learnset: [
 			{
 				name: 'Brave Blade',
@@ -17536,17 +18512,19 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 66
 			}
 		],
-		weak: [
-			'Force',
-			'Light',
-			'Dark'
-		],
-		resist: [],
-		null: [],
-		drain: [
-			'Phys'
-		],
-		repel: [],
+		affinities: {
+			weak: [
+				'Force',
+				'Light',
+				'Dark'
+			],
+			resist: [],
+			null: [],
+			drain: [
+				'Phys'
+			],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -17558,11 +18536,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 41,
 		hp: 189,
 		mp: 210,
-		st: 19,
-		ma: 40,
-		vi: 23,
-		ag: 29,
-		lu: 34,
+		stats: {
+			st: 19,
+			vi: 23,
+			ma: 40,
+			ag: 29,
+			lu: 34
+		},
 		learnset: [
 			{
 				name: 'Bufula',
@@ -17589,15 +18569,17 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 44
 			}
 		],
-		weak: [
-			'Fire'
-		],
-		resist: [],
-		null: [
-			'Ice'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Fire'
+			],
+			resist: [],
+			null: [
+				'Ice'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -17609,11 +18591,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 67,
 		hp: 320,
 		mp: 345,
-		st: 22,
-		ma: 62,
-		vi: 36,
-		ag: 54,
-		lu: 49,
+		stats: {
+			st: 22,
+			vi: 36,
+			ma: 62,
+			ag: 54,
+			lu: 49
+		},
 		learnset: [
 			{
 				name: 'Mabufudyne',
@@ -17640,17 +18624,19 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 70
 			}
 		],
-		weak: [
-			'Fire'
-		],
-		resist: [
-			'Ice'
-		],
-		null: [
-			'Dark'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Fire'
+			],
+			resist: [
+				'Ice'
+			],
+			null: [
+				'Dark'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -17662,11 +18648,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 1,
 		hp: 41,
 		mp: 40,
-		st: 5,
-		ma: 4,
-		vi: 6,
-		ag: 3,
-		lu: 4,
+		stats: {
+			st: 5,
+			vi: 6,
+			ma: 4,
+			ag: 3,
+			lu: 4
+		},
 		learnset: [
 			{
 				name: 'Lunge',
@@ -17681,17 +18669,19 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 3
 			}
 		],
-		weak: [
-			'Fire',
-			'Ice',
-			'Elec',
-			'Force',
-			'Light'
-		],
-		resist: [],
-		null: [],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Fire',
+				'Ice',
+				'Elec',
+				'Force',
+				'Light'
+			],
+			resist: [],
+			null: [],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -17703,11 +18693,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 77,
 		hp: 399,
 		mp: 407,
-		st: 33,
-		ma: 67,
-		vi: 43,
-		ag: 68,
-		lu: 55,
+		stats: {
+			st: 33,
+			vi: 43,
+			ma: 67,
+			ag: 68,
+			lu: 55
+		},
 		learnset: [
 			{
 				name: 'Mahamabarion',
@@ -17734,18 +18726,20 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 80
 			}
 		],
-		weak: [
-			'Force'
-		],
-		resist: [
-			'Ice',
-			'Elec'
-		],
-		null: [],
-		drain: [
-			'Light'
-		],
-		repel: [],
+		affinities: {
+			weak: [
+				'Force'
+			],
+			resist: [
+				'Ice',
+				'Elec'
+			],
+			null: [],
+			drain: [
+				'Light'
+			],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -17757,11 +18751,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 38,
 		hp: 165,
 		mp: 197,
-		st: 17,
-		ma: 38,
-		vi: 20,
-		ag: 31,
-		lu: 29,
+		stats: {
+			st: 17,
+			vi: 20,
+			ma: 38,
+			ag: 31,
+			lu: 29
+		},
 		learnset: [
 			{
 				name: 'Bufula',
@@ -17788,17 +18784,19 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 41
 			}
 		],
-		weak: [
-			'Light'
-		],
-		resist: [
-			'Fire'
-		],
-		null: [
-			'Ice'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Light'
+			],
+			resist: [
+				'Fire'
+			],
+			null: [
+				'Ice'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -17810,11 +18808,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 17,
 		hp: 83,
 		mp: 98,
-		st: 12,
-		ma: 16,
-		vi: 14,
-		ag: 16,
-		lu: 14,
+		stats: {
+			st: 12,
+			vi: 14,
+			ma: 16,
+			ag: 16,
+			lu: 14
+		},
 		learnset: [
 			{
 				name: 'Mazan',
@@ -17829,16 +18829,18 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 19
 			}
 		],
-		weak: [
-			'Fire',
-			'Ice'
-		],
-		resist: [],
-		null: [
-			'Force'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Fire',
+				'Ice'
+			],
+			resist: [],
+			null: [
+				'Force'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -17850,11 +18852,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 56,
 		hp: 328,
 		mp: 227,
-		st: 47,
-		ma: 41,
-		vi: 39,
-		ag: 33,
-		lu: 28,
+		stats: {
+			st: 47,
+			vi: 39,
+			ma: 41,
+			ag: 33,
+			lu: 28
+		},
 		learnset: [
 			{
 				name: 'Fang Breaker',
@@ -17881,15 +18885,17 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 59
 			}
 		],
-		weak: [
-			'Fire'
-		],
-		resist: [],
-		null: [
-			'Ice'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Fire'
+			],
+			resist: [],
+			null: [
+				'Ice'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -17903,11 +18909,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 37,
 		hp: 206,
 		mp: 169,
-		st: 28,
-		ma: 30,
-		vi: 26,
-		ag: 26,
-		lu: 26,
+		stats: {
+			st: 28,
+			vi: 26,
+			ma: 30,
+			ag: 26,
+			lu: 26
+		},
 		learnset: [
 			{
 				name: 'Eternal Blizzard',
@@ -17934,22 +18942,21 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 40
 			}
 		],
-		weak: [
-			'Elec'
-		],
-		resist: [
-			'Light',
-			'Dark'
-		],
-		null: [
-			'Ice'
-		],
-		drain: [],
-		repel: [],
-		game: 'p4',
-		user: 'Naoto Shirogane',
-		stage: 1,
-		evoSkill: null
+		affinities: {
+			weak: [
+				'Elec'
+			],
+			resist: [
+				'Light',
+				'Dark'
+			],
+			null: [
+				'Ice'
+			],
+			drain: [],
+			repel: []
+		},
+		game: 'p4'
 	},
 	{
 		name: 'Sumeo-Okami',
@@ -17960,11 +18967,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 15,
 		hp: null,
 		mp: null,
-		st: 8,
-		ma: 15,
-		vi: 11,
-		ag: 8,
-		lu: 10,
+		stats: {
+			st: 8,
+			vi: 11,
+			ma: 15,
+			ag: 8,
+			lu: 10
+		},
 		learnset: [
 			{
 				name: 'Dia',
@@ -18043,21 +19052,20 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 76
 			}
 		],
-		weak: [
-			'Ice'
-		],
-		resist: [],
-		null: [
-			'Elec'
-		],
-		drain: [
-			'Fire'
-		],
-		repel: [],
-		game: 'p4',
-		user: 'Yukiko Amagi',
-		stage: 3,
-		evoSkill: 'Maragibarion'
+		affinities: {
+			weak: [
+				'Ice'
+			],
+			resist: [],
+			null: [
+				'Elec'
+			],
+			drain: [
+				'Fire'
+			],
+			repel: []
+		},
+		game: 'p4'
 	},
 	{
 		name: 'Surt',
@@ -18068,11 +19076,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 62,
 		hp: 388,
 		mp: 233,
-		st: 56,
-		ma: 46,
-		vi: 49,
-		ag: 29,
-		lu: 36,
+		stats: {
+			st: 56,
+			vi: 49,
+			ma: 46,
+			ag: 29,
+			lu: 36
+		},
 		learnset: [
 			{
 				name: 'Brave Blade',
@@ -18099,15 +19109,17 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 65
 			}
 		],
-		weak: [
-			'Ice'
-		],
-		resist: [],
-		null: [],
-		drain: [
-			'Fire'
-		],
-		repel: [],
+		affinities: {
+			weak: [
+				'Ice'
+			],
+			resist: [],
+			null: [],
+			drain: [
+				'Fire'
+			],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -18119,11 +19131,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 4,
 		hp: null,
 		mp: null,
-		st: 5,
-		ma: 3,
-		vi: 3,
-		ag: 5,
-		lu: 4,
+		stats: {
+			st: 5,
+			vi: 3,
+			ma: 3,
+			ag: 5,
+			lu: 4
+		},
 		learnset: [
 			{
 				name: 'Garu',
@@ -18198,21 +19212,20 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 73
 			}
 		],
-		weak: [
-			'Elec'
-		],
-		resist: [
-			'Fire'
-		],
-		null: [
-			'Wind'
-		],
-		drain: [],
-		repel: [],
-		game: 'p4',
-		user: 'Yosuke Hanamura',
-		stage: 2,
-		evoSkill: null
+		affinities: {
+			weak: [
+				'Elec'
+			],
+			resist: [
+				'Fire'
+			],
+			null: [
+				'Wind'
+			],
+			drain: [],
+			repel: []
+		},
+		game: 'p4'
 	},
 	{
 		name: 'Suzaku',
@@ -18225,11 +19238,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 43,
 		hp: 188,
 		mp: 219,
-		st: 23,
-		ma: 41,
-		vi: 24,
-		ag: 36,
-		lu: 28,
+		stats: {
+			st: 23,
+			vi: 24,
+			ma: 41,
+			ag: 36,
+			lu: 28
+		},
 		learnset: [
 			{
 				name: 'Agilao',
@@ -18256,15 +19271,17 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 46
 			}
 		],
-		weak: [
-			'Ice'
-		],
-		resist: [],
-		null: [
-			'Fire'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Ice'
+			],
+			resist: [],
+			null: [
+				'Fire'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -18276,11 +19293,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 4,
 		hp: null,
 		mp: null,
-		st: 4,
-		ma: 4,
-		vi: 4,
-		ag: 2,
-		lu: 3,
+		stats: {
+			st: 4,
+			vi: 4,
+			ma: 4,
+			ag: 2,
+			lu: 3
+		},
 		learnset: [
 			{
 				name: 'Skewer',
@@ -18359,21 +19378,20 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 74
 			}
 		],
-		weak: [
-			'Fire'
-		],
-		resist: [
-			'Light'
-		],
-		null: [
-			'Ice'
-		],
-		drain: [],
-		repel: [],
-		game: 'p4',
-		user: 'Chie Satonaka',
-		stage: 2,
-		evoSkill: null
+		affinities: {
+			weak: [
+				'Fire'
+			],
+			resist: [
+				'Light'
+			],
+			null: [
+				'Ice'
+			],
+			drain: [],
+			repel: []
+		},
+		game: 'p4'
 	},
 	{
 		name: 'Takehaya Susano-o',
@@ -18384,11 +19402,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 4,
 		hp: null,
 		mp: null,
-		st: 5,
-		ma: 3,
-		vi: 3,
-		ag: 5,
-		lu: 4,
+		stats: {
+			st: 5,
+			vi: 3,
+			ma: 3,
+			ag: 5,
+			lu: 4
+		},
 		learnset: [
 			{
 				name: 'Garu',
@@ -18463,21 +19483,20 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 73
 			}
 		],
-		weak: [
-			'Elec'
-		],
-		resist: [],
-		null: [
-			'Fire'
-		],
-		drain: [
-			'Wind'
-		],
-		repel: [],
-		game: 'p4',
-		user: 'Yosuke Hanamura',
-		stage: 3,
-		evoSkill: 'Youthful Wind'
+		affinities: {
+			weak: [
+				'Elec'
+			],
+			resist: [],
+			null: [
+				'Fire'
+			],
+			drain: [
+				'Wind'
+			],
+			repel: []
+		},
+		game: 'p4'
 	},
 	{
 		name: 'Takeji Zaiten',
@@ -18488,11 +19507,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 25,
 		hp: null,
 		mp: null,
-		st: 20,
-		ma: 11,
-		vi: 17,
-		ag: 15,
-		lu: 14,
+		stats: {
+			st: 20,
+			vi: 17,
+			ma: 11,
+			ag: 15,
+			lu: 14
+		},
 		learnset: [
 			{
 				name: 'Mazio',
@@ -18563,21 +19584,20 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 75
 			}
 		],
-		weak: [
-			'Wind'
-		],
-		resist: [
-			'Phys'
-		],
-		null: [],
-		drain: [
-			'Elec'
-		],
-		repel: [],
-		game: 'p4',
-		user: 'Kanji Tatsumi',
-		stage: 3,
-		evoSkill: 'The Man"s Way'
+		affinities: {
+			weak: [
+				'Wind'
+			],
+			resist: [
+				'Phys'
+			],
+			null: [],
+			drain: [
+				'Elec'
+			],
+			repel: []
+		},
+		game: 'p4'
 	},
 	{
 		name: 'Take-Mikazuchi',
@@ -18588,11 +19608,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 25,
 		hp: null,
 		mp: null,
-		st: 20,
-		ma: 11,
-		vi: 17,
-		ag: 15,
-		lu: 14,
+		stats: {
+			st: 20,
+			vi: 17,
+			ma: 11,
+			ag: 15,
+			lu: 14
+		},
 		learnset: [
 			{
 				name: 'Mazio',
@@ -18663,19 +19685,18 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 75
 			}
 		],
-		weak: [
-			'Wind'
-		],
-		resist: [
-			'Elec'
-		],
-		null: [],
-		drain: [],
-		repel: [],
-		game: 'p4',
-		user: 'Kanji Tatsumi',
-		stage: 1,
-		evoSkill: null
+		affinities: {
+			weak: [
+				'Wind'
+			],
+			resist: [
+				'Elec'
+			],
+			null: [],
+			drain: [],
+			repel: []
+		},
+		game: 'p4'
 	},
 	{
 		name: 'Take-Minakata',
@@ -18686,11 +19707,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 19,
 		hp: 107,
 		mp: 98,
-		st: 18,
-		ma: 12,
-		vi: 18,
-		ag: 16,
-		lu: 15,
+		stats: {
+			st: 18,
+			vi: 18,
+			ma: 12,
+			ag: 16,
+			lu: 15
+		},
 		learnset: [
 			{
 				name: 'Lunge',
@@ -18713,15 +19736,17 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 22
 			}
 		],
-		weak: [
-			'Fire'
-		],
-		resist: [
-			'Elec'
-		],
-		null: [],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Fire'
+			],
+			resist: [
+				'Elec'
+			],
+			null: [],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -18733,11 +19758,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 27,
 		hp: null,
 		mp: null,
-		st: 21,
-		ma: 16,
-		vi: 18,
-		ag: 16,
-		lu: 17,
+		stats: {
+			st: 21,
+			vi: 18,
+			ma: 16,
+			ag: 16,
+			lu: 17
+		},
 		learnset: [
 			{
 				name: 'Assault Dive',
@@ -18768,20 +19795,22 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 32
 			}
 		],
-		weak: [
-			'Dark'
-		],
-		resist: [
-			'Phys',
-			'Wind'
-		],
-		null: [
-			'Fire'
-		],
-		drain: [
-			'Light'
-		],
-		repel: [],
+		affinities: {
+			weak: [
+				'Dark'
+			],
+			resist: [
+				'Phys',
+				'Wind'
+			],
+			null: [
+				'Fire'
+			],
+			drain: [
+				'Light'
+			],
+			repel: []
+		},
 		game: 'p5'
 	},
 	{
@@ -18793,11 +19822,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 65,
 		hp: null,
 		mp: null,
-		st: 43,
-		ma: 49,
-		vi: 41,
-		ag: 38,
-		lu: 31,
+		stats: {
+			st: 43,
+			vi: 41,
+			ma: 49,
+			ag: 38,
+			lu: 31
+		},
 		learnset: [
 			{
 				name: 'Door of Hades',
@@ -18828,21 +19859,20 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 70
 			}
 		],
-		weak: [
-			'Light'
-		],
-		resist: [
-			'Phys'
-		],
-		null: [],
-		drain: [],
-		repel: [
-			'Dark'
-		],
-		game: 'p5',
-		user: 'Margaret',
-		stage: 1,
-		evoSkill: null
+		affinities: {
+			weak: [
+				'Light'
+			],
+			resist: [
+				'Phys'
+			],
+			null: [],
+			drain: [],
+			repel: [
+				'Dark'
+			]
+		},
+		game: 'p5'
 	},
 	{
 		name: 'Thanatos Picaro',
@@ -18853,11 +19883,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 69,
 		hp: null,
 		mp: null,
-		st: 45,
-		ma: 51,
-		vi: 43,
-		ag: 40,
-		lu: 35,
+		stats: {
+			st: 45,
+			vi: 43,
+			ma: 51,
+			ag: 40,
+			lu: 35
+		},
 		learnset: [
 			{
 				name: 'Door of Hades',
@@ -18888,17 +19920,19 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 74
 			}
 		],
-		weak: [
-			'Light'
-		],
-		resist: [
-			'Phys'
-		],
-		null: [],
-		drain: [],
-		repel: [
-			'Dark'
-		],
+		affinities: {
+			weak: [
+				'Light'
+			],
+			resist: [
+				'Phys'
+			],
+			null: [],
+			drain: [],
+			repel: [
+				'Dark'
+			]
+		},
 		game: 'p5'
 	},
 	{
@@ -18910,11 +19944,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 66,
 		hp: 399,
 		mp: 272,
-		st: 58,
-		ma: 43,
-		vi: 56,
-		ag: 29,
-		lu: 36,
+		stats: {
+			st: 58,
+			vi: 56,
+			ma: 43,
+			ag: 29,
+			lu: 36
+		},
 		learnset: [
 			{
 				name: 'Hell Thrust',
@@ -18941,18 +19977,20 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 69
 			}
 		],
-		weak: [
-			'Force'
-		],
-		resist: [
-			'Fire',
-			'Light'
-		],
-		null: [],
-		drain: [
-			'Elec'
-		],
-		repel: [],
+		affinities: {
+			weak: [
+				'Force'
+			],
+			resist: [
+				'Fire',
+				'Light'
+			],
+			null: [],
+			drain: [
+				'Elec'
+			],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -18964,11 +20002,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 33,
 		hp: 144,
 		mp: 241,
-		st: 18,
-		ma: 36,
-		vi: 22,
-		ag: 21,
-		lu: 27,
+		stats: {
+			st: 18,
+			vi: 22,
+			ma: 36,
+			ag: 21,
+			lu: 27
+		},
 		learnset: [
 			{
 				name: 'Hamaon',
@@ -18995,15 +20035,17 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 36
 			}
 		],
-		weak: [
-			'Dark'
-		],
-		resist: [],
-		null: [
-			'Fire'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Dark'
+			],
+			resist: [],
+			null: [
+				'Fire'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -19015,11 +20057,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 64,
 		hp: 327,
 		mp: 313,
-		st: 28,
-		ma: 54,
-		vi: 44,
-		ag: 41,
-		lu: 47,
+		stats: {
+			st: 28,
+			vi: 44,
+			ma: 54,
+			ag: 41,
+			lu: 47
+		},
 		learnset: [
 			{
 				name: 'Mahamaon',
@@ -19046,17 +20090,19 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 67
 			}
 		],
-		weak: [
-			'Ice',
-			'Dark'
-		],
-		resist: [],
-		null: [
-			'Fire',
-			'Light'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Ice',
+				'Dark'
+			],
+			resist: [],
+			null: [
+				'Fire',
+				'Light'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -19068,11 +20114,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 38,
 		hp: 192,
 		mp: 172,
-		st: 27,
-		ma: 32,
-		vi: 18,
-		ag: 36,
-		lu: 21,
+		stats: {
+			st: 27,
+			vi: 18,
+			ma: 32,
+			ag: 36,
+			lu: 21
+		},
 		learnset: [
 			{
 				name: 'Elec Pleroma',
@@ -19099,15 +20147,17 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 41
 			}
 		],
-		weak: [
-			'Force'
-		],
-		resist: [],
-		null: [
-			'Elec'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Force'
+			],
+			resist: [],
+			null: [
+				'Elec'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -19119,11 +20169,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 57,
 		hp: 262,
 		mp: 395,
-		st: 25,
-		ma: 54,
-		vi: 36,
-		ag: 35,
-		lu: 42,
+		stats: {
+			st: 25,
+			vi: 36,
+			ma: 54,
+			ag: 35,
+			lu: 42
+		},
 		learnset: [
 			{
 				name: 'Diarahan',
@@ -19150,17 +20202,19 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 60
 			}
 		],
-		weak: [
-			'Fire'
-		],
-		resist: [
-			'Dark'
-		],
-		null: [
-			'Light'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Fire'
+			],
+			resist: [
+				'Dark'
+			],
+			null: [
+				'Light'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -19172,11 +20226,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 4,
 		hp: null,
 		mp: null,
-		st: 4,
-		ma: 4,
-		vi: 4,
-		ag: 2,
-		lu: 3,
+		stats: {
+			st: 4,
+			vi: 4,
+			ma: 4,
+			ag: 2,
+			lu: 3
+		},
 		learnset: [
 			{
 				name: 'Skewer',
@@ -19255,19 +20311,18 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 74
 			}
 		],
-		weak: [
-			'Fire'
-		],
-		resist: [
-			'Ice'
-		],
-		null: [],
-		drain: [],
-		repel: [],
-		game: 'p4',
-		user: 'Chie Satonaka',
-		stage: 1,
-		evoSkill: null
+		affinities: {
+			weak: [
+				'Fire'
+			],
+			resist: [
+				'Ice'
+			],
+			null: [],
+			drain: [],
+			repel: []
+		},
+		game: 'p4'
 	},
 	{
 		name: 'Triglav',
@@ -19278,11 +20333,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 43,
 		hp: null,
 		mp: null,
-		st: 33,
-		ma: 23,
-		vi: 27,
-		ag: 32,
-		lu: 21,
+		stats: {
+			st: 33,
+			vi: 27,
+			ma: 23,
+			ag: 32,
+			lu: 21
+		},
 		learnset: [
 			{
 				name: 'Heat Wave',
@@ -19313,15 +20370,17 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 49
 			}
 		],
-		weak: [
-			'Elec'
-		],
-		resist: [
-			'Phys'
-		],
-		null: [],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Elec'
+			],
+			resist: [
+				'Phys'
+			],
+			null: [],
+			drain: [],
+			repel: []
+		},
 		game: 'p4'
 	},
 	{
@@ -19333,11 +20392,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 1,
 		hp: null,
 		mp: null,
-		st: 3,
-		ma: 2,
-		vi: 2,
-		ag: 2,
-		lu: 1,
+		stats: {
+			st: 3,
+			vi: 2,
+			ma: 2,
+			ag: 2,
+			lu: 1
+		},
 		learnset: [
 			{
 				name: 'Cleave',
@@ -19416,19 +20477,18 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 75
 			}
 		],
-		weak: [
-			'Wind'
-		],
-		resist: [],
-		null: [
-			'Fire'
-		],
-		drain: [],
-		repel: [],
-		game: 'p3',
-		user: 'Junpei Iori',
-		stage: 2,
-		evoSkill: 'Spring of Life'
+		affinities: {
+			weak: [
+				'Wind'
+			],
+			resist: [],
+			null: [
+				'Fire'
+			],
+			drain: [],
+			repel: []
+		},
+		game: 'p3'
 	},
 	{
 		name: 'Trumpeter',
@@ -19439,11 +20499,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 73,
 		hp: 398,
 		mp: 402,
-		st: 32,
-		ma: 77,
-		vi: 30,
-		ag: 55,
-		lu: 57,
+		stats: {
+			st: 32,
+			vi: 30,
+			ma: 77,
+			ag: 55,
+			lu: 57
+		},
 		learnset: [
 			{
 				name: 'Dekaja',
@@ -19474,19 +20536,21 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 76
 			}
 		],
-		weak: [],
-		resist: [
-			'Fire',
-			'Ice',
-			'Elec',
-			'Force'
-		],
-		null: [
-			'Light',
-			'Dark'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [],
+			resist: [
+				'Fire',
+				'Ice',
+				'Elec',
+				'Force'
+			],
+			null: [
+				'Light',
+				'Dark'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -19498,11 +20562,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 13,
 		hp: 101,
 		mp: 83,
-		st: 14,
-		ma: 12,
-		vi: 16,
-		ag: 9,
-		lu: 10,
+		stats: {
+			st: 14,
+			vi: 16,
+			ma: 12,
+			ag: 9,
+			lu: 10
+		},
 		learnset: [
 			{
 				name: 'Mazio',
@@ -19517,15 +20583,17 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 15
 			}
 		],
-		weak: [
-			'Ice'
-		],
-		resist: [
-			'Elec'
-		],
-		null: [],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Ice'
+			],
+			resist: [
+				'Elec'
+			],
+			null: [],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -19539,11 +20607,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 50,
 		hp: null,
 		mp: null,
-		st: 38,
-		ma: 32,
-		vi: 33,
-		ag: 37,
-		lu: 17,
+		stats: {
+			st: 38,
+			vi: 33,
+			ma: 32,
+			ag: 37,
+			lu: 17
+		},
 		learnset: [
 			{
 				name: 'Abyssal Wings',
@@ -19574,22 +20644,21 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 56
 			}
 		],
-		weak: [
-			'Nuke'
-		],
-		resist: [
-			'Phys',
-			'Light'
-		],
-		null: [],
-		drain: [],
-		repel: [
-			'Dark'
-		],
-		game: 'p5',
-		user: 'Sho Minazuki',
-		stage: 1,
-		evoSkill: null
+		affinities: {
+			weak: [
+				'Nuke'
+			],
+			resist: [
+				'Phys',
+				'Light'
+			],
+			null: [],
+			drain: [],
+			repel: [
+				'Dark'
+			]
+		},
+		game: 'p5'
 	},
 	{
 		name: 'Tsukiyomi Picaro',
@@ -19602,11 +20671,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 55,
 		hp: null,
 		mp: null,
-		st: 41,
-		ma: 35,
-		vi: 36,
-		ag: 40,
-		lu: 20,
+		stats: {
+			st: 41,
+			vi: 36,
+			ma: 35,
+			ag: 40,
+			lu: 20
+		},
 		learnset: [
 			{
 				name: 'Abyssal Wings',
@@ -19637,18 +20708,20 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 61
 			}
 		],
-		weak: [
-			'Nuke'
-		],
-		resist: [
-			'Phys',
-			'Light'
-		],
-		null: [],
-		drain: [],
-		repel: [
-			'Dark'
-		],
+		affinities: {
+			weak: [
+				'Nuke'
+			],
+			resist: [
+				'Phys',
+				'Light'
+			],
+			null: [],
+			drain: [],
+			repel: [
+				'Dark'
+			]
+		},
 		game: 'p5'
 	},
 	{
@@ -19660,11 +20733,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 11,
 		hp: 80,
 		mp: 70,
-		st: 15,
-		ma: 7,
-		vi: 13,
-		ag: 10,
-		lu: 8,
+		stats: {
+			st: 15,
+			vi: 13,
+			ma: 7,
+			ag: 10,
+			lu: 8
+		},
 		learnset: [
 			{
 				name: 'Gram Slice',
@@ -19679,15 +20754,17 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 14
 			}
 		],
-		weak: [
-			'Force'
-		],
-		resist: [
-			'Dark'
-		],
-		null: [],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Force'
+			],
+			resist: [
+				'Dark'
+			],
+			null: [],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -19699,11 +20776,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 70,
 		hp: null,
 		mp: null,
-		st: 46,
-		ma: 56,
-		vi: 41,
-		ag: 39,
-		lu: 35,
+		stats: {
+			st: 46,
+			vi: 41,
+			ma: 56,
+			ag: 39,
+			lu: 35
+		},
 		learnset: [
 			{
 				name: 'Ziodyne',
@@ -19738,17 +20817,19 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 77
 			}
 		],
-		weak: [
-			'Wind'
-		],
-		resist: [],
-		null: [
-			'Dark'
-		],
-		drain: [],
-		repel: [
-			'Elec'
-		],
+		affinities: {
+			weak: [
+				'Wind'
+			],
+			resist: [],
+			null: [
+				'Dark'
+			],
+			drain: [],
+			repel: [
+				'Elec'
+			]
+		},
 		game: 'p4'
 	},
 	{
@@ -19760,11 +20841,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 33,
 		hp: null,
 		mp: null,
-		st: 21,
-		ma: 27,
-		vi: 13,
-		ag: 26,
-		lu: 19,
+		stats: {
+			st: 21,
+			vi: 13,
+			ma: 27,
+			ag: 26,
+			lu: 19
+		},
 		learnset: [
 			{
 				name: 'Diarama',
@@ -19791,15 +20874,17 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 37
 			}
 		],
-		weak: [
-			'Fire'
-		],
-		resist: [],
-		null: [],
-		drain: [
-			'Ice'
-		],
-		repel: [],
+		affinities: {
+			weak: [
+				'Fire'
+			],
+			resist: [],
+			null: [],
+			drain: [
+				'Ice'
+			],
+			repel: []
+		},
 		game: 'p4'
 	},
 	{
@@ -19811,11 +20896,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 39,
 		hp: null,
 		mp: null,
-		st: 20,
-		ma: 27,
-		vi: 25,
-		ag: 28,
-		lu: 24,
+		stats: {
+			st: 20,
+			vi: 25,
+			ma: 27,
+			ag: 28,
+			lu: 24
+		},
 		learnset: [
 			{
 				name: 'Assault Dive',
@@ -19846,18 +20933,20 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 44
 			}
 		],
-		weak: [
-			'Dark'
-		],
-		resist: [
-			'Psy'
-		],
-		null: [
-			'Ice',
-			'Light'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Dark'
+			],
+			resist: [
+				'Psy'
+			],
+			null: [
+				'Ice',
+				'Light'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'p5'
 	},
 	{
@@ -19869,11 +20958,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 82,
 		hp: 516,
 		mp: 371,
-		st: 66,
-		ma: 64,
-		vi: 59,
-		ag: 57,
-		lu: 45,
+		stats: {
+			st: 66,
+			vi: 59,
+			ma: 64,
+			ag: 57,
+			lu: 45
+		},
 		learnset: [
 			{
 				name: 'Akashic Arts',
@@ -19900,18 +20991,20 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 85
 			}
 		],
-		weak: [
-			'Ice'
-		],
-		resist: [
-			'Elec'
-		],
-		null: [
-			'Fire',
-			'Light'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Ice'
+			],
+			resist: [
+				'Elec'
+			],
+			null: [
+				'Fire',
+				'Light'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -19923,11 +21016,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 40,
 		hp: null,
 		mp: null,
-		st: 34,
-		ma: 26,
-		vi: 32,
-		ag: 25,
-		lu: 22,
+		stats: {
+			st: 34,
+			vi: 32,
+			ma: 26,
+			ag: 25,
+			lu: 22
+		},
 		learnset: [
 			{
 				name: 'Tarukaja',
@@ -20002,15 +21097,14 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 80
 			}
 		],
-		weak: [],
-		resist: [],
-		null: [],
-		drain: [],
-		repel: [],
-		game: 'p5',
-		user: 'Zenkichi Hasegawa',
-		stage: 1,
-		evoSkill: null
+		affinities: {
+			weak: [],
+			resist: [],
+			null: [],
+			drain: [],
+			repel: []
+		},
+		game: 'p5'
 	},
 	{
 		name: 'Valkyrie',
@@ -20021,11 +21115,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 40,
 		hp: 222,
 		mp: 148,
-		st: 42,
-		ma: 18,
-		vi: 32,
-		ag: 26,
-		lu: 24,
+		stats: {
+			st: 42,
+			vi: 32,
+			ma: 18,
+			ag: 26,
+			lu: 24
+		},
 		learnset: [
 			{
 				name: 'Critical Wave',
@@ -20048,15 +21144,17 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 43
 			}
 		],
-		weak: [
-			'Force'
-		],
-		resist: [],
-		null: [
-			'Light'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Force'
+			],
+			resist: [],
+			null: [
+				'Light'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -20068,11 +21166,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 75,
 		hp: null,
 		mp: null,
-		st: 55,
-		ma: 46,
-		vi: 36,
-		ag: 51,
-		lu: 44,
+		stats: {
+			st: 55,
+			vi: 36,
+			ma: 46,
+			ag: 51,
+			lu: 44
+		},
 		learnset: [
 			{
 				name: 'Apt Pupil',
@@ -20111,19 +21211,18 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 80
 			}
 		],
-		weak: [
-			'Dark'
-		],
-		resist: [],
-		null: [
-			'Light'
-		],
-		drain: [],
-		repel: [],
-		game: 'p5',
-		user: 'Sumire Yoshizawa',
-		stage: 2,
-		evoSkill: 'Evade Dark'
+		affinities: {
+			weak: [
+				'Dark'
+			],
+			resist: [],
+			null: [
+				'Light'
+			],
+			drain: [],
+			repel: []
+		},
+		game: 'p5'
 	},
 	{
 		name: 'Vasuki',
@@ -20134,11 +21233,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 74,
 		hp: 424,
 		mp: 335,
-		st: 43,
-		ma: 53,
-		vi: 43,
-		ag: 47,
-		lu: 63,
+		stats: {
+			st: 43,
+			vi: 43,
+			ma: 53,
+			ag: 47,
+			lu: 63
+		},
 		learnset: [
 			{
 				name: 'Mabufubarion',
@@ -20169,17 +21270,19 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 77
 			}
 		],
-		weak: [
-			'Fire'
-		],
-		resist: [
-			'Dark'
-		],
-		null: [],
-		drain: [],
-		repel: [
-			'Ice'
-		],
+		affinities: {
+			weak: [
+				'Fire'
+			],
+			resist: [
+				'Dark'
+			],
+			null: [],
+			drain: [],
+			repel: [
+				'Ice'
+			]
+		},
 		game: 'smt5'
 	},
 	{
@@ -20191,11 +21294,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 87,
 		hp: 452,
 		mp: 523,
-		st: 46,
-		ma: 90,
-		vi: 57,
-		ag: 67,
-		lu: 71,
+		stats: {
+			st: 46,
+			vi: 57,
+			ma: 90,
+			ag: 67,
+			lu: 71
+		},
 		learnset: [
 			{
 				name: 'Mahamabarion',
@@ -20226,18 +21331,20 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 90
 			}
 		],
-		weak: [
-			'Fire'
-		],
-		resist: [],
-		null: [
-			'Phys',
-			'Dark'
-		],
-		drain: [],
-		repel: [
-			'Light'
-		],
+		affinities: {
+			weak: [
+				'Fire'
+			],
+			resist: [],
+			null: [
+				'Phys',
+				'Dark'
+			],
+			drain: [],
+			repel: [
+				'Light'
+			]
+		},
 		game: 'smt5'
 	},
 	{
@@ -20249,11 +21356,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 80,
 		hp: null,
 		mp: null,
-		st: 46,
-		ma: 59,
-		vi: 45,
-		ag: 56,
-		lu: 41,
+		stats: {
+			st: 46,
+			vi: 45,
+			ma: 59,
+			ag: 56,
+			lu: 41
+		},
 		learnset: [
 			{
 				name: 'Divine Judgement',
@@ -20284,19 +21393,21 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 85
 			}
 		],
-		weak: [
-			'Wind'
-		],
-		resist: [
-			'Elec'
-		],
-		null: [
-			'Dark'
-		],
-		drain: [
-			'Light'
-		],
-		repel: [],
+		affinities: {
+			weak: [
+				'Wind'
+			],
+			resist: [
+				'Elec'
+			],
+			null: [
+				'Dark'
+			],
+			drain: [
+				'Light'
+			],
+			repel: []
+		},
 		game: 'p5'
 	},
 	{
@@ -20308,11 +21419,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 43,
 		hp: 239,
 		mp: 195,
-		st: 25,
-		ma: 40,
-		vi: 31,
-		ag: 29,
-		lu: 34,
+		stats: {
+			st: 25,
+			vi: 31,
+			ma: 40,
+			ag: 29,
+			lu: 34
+		},
 		learnset: [
 			{
 				name: 'Agidyne',
@@ -20343,18 +21456,20 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 46
 			}
 		],
-		weak: [
-			'Elec'
-		],
-		resist: [
-			'Light',
-			'Dark'
-		],
-		null: [],
-		drain: [],
-		repel: [
-			'Fire'
-		],
+		affinities: {
+			weak: [
+				'Elec'
+			],
+			resist: [
+				'Light',
+				'Dark'
+			],
+			null: [],
+			drain: [],
+			repel: [
+				'Fire'
+			]
+		},
 		game: 'smt5'
 	},
 	{
@@ -20366,11 +21481,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 4,
 		hp: null,
 		mp: null,
-		st: 5,
-		ma: 3,
-		vi: 5,
-		ag: 3,
-		lu: 3,
+		stats: {
+			st: 5,
+			vi: 5,
+			ma: 3,
+			ag: 3,
+			lu: 3
+		},
 		learnset: [
 			{
 				name: 'Zio',
@@ -20465,21 +21582,20 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 75
 			}
 		],
-		weak: [
-			'Wind'
-		],
-		resist: [
-			'Fire'
-		],
-		null: [
-			'Elec'
-		],
-		drain: [],
-		repel: [],
-		game: 'p5',
-		user: 'Ryuji Sakamoto',
-		stage: 3,
-		evoSkill: 'Fighting Spirit'
+		affinities: {
+			weak: [
+				'Wind'
+			],
+			resist: [
+				'Fire'
+			],
+			null: [
+				'Elec'
+			],
+			drain: [],
+			repel: []
+		},
+		game: 'p5'
 	},
 	{
 		name: 'Yaksini',
@@ -20492,11 +21608,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 30,
 		hp: 172,
 		mp: 117,
-		st: 31,
-		ma: 14,
-		vi: 25,
-		ag: 24,
-		lu: 17,
+		stats: {
+			st: 31,
+			vi: 25,
+			ma: 14,
+			ag: 24,
+			lu: 17
+		},
 		learnset: [
 			{
 				name: 'Counter',
@@ -20519,15 +21637,17 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 33
 			}
 		],
-		weak: [
-			'Elec'
-		],
-		resist: [],
-		null: [
-			'Force'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Elec'
+			],
+			resist: [],
+			null: [
+				'Force'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -20539,11 +21659,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 72,
 		hp: 468,
 		mp: 255,
-		st: 66,
-		ma: 26,
-		vi: 72,
-		ag: 33,
-		lu: 40,
+		stats: {
+			st: 66,
+			vi: 72,
+			ma: 26,
+			ag: 33,
+			lu: 40
+		},
 		learnset: [
 			{
 				name: 'Dragon Eye',
@@ -20570,16 +21692,18 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 75
 			}
 		],
-		weak: [
-			'Elec'
-		],
-		resist: [],
-		null: [
-			'Fire',
-			'Ice'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Elec'
+			],
+			resist: [],
+			null: [
+				'Fire',
+				'Ice'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -20591,11 +21715,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 55,
 		hp: null,
 		mp: null,
-		st: 32,
-		ma: 38,
-		vi: 32,
-		ag: 40,
-		lu: 31,
+		stats: {
+			st: 32,
+			vi: 32,
+			ma: 38,
+			ag: 40,
+			lu: 31
+		},
 		learnset: [
 			{
 				name: 'Tempest Slash',
@@ -20662,20 +21788,19 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 75
 			}
 		],
-		weak: [],
-		resist: [],
-		null: [
-			'Fire'
-		],
-		drain: [],
-		repel: [
-			'Light',
-			'Dark'
-		],
-		game: 'p4',
-		user: 'Naoto Shirogane',
-		stage: 3,
-		evoSkill: 'Shield of Justice'
+		affinities: {
+			weak: [],
+			resist: [],
+			null: [
+				'Fire'
+			],
+			drain: [],
+			repel: [
+				'Light',
+				'Dark'
+			]
+		},
+		game: 'p4'
 	},
 	{
 		name: 'Yamato-Takeru',
@@ -20686,11 +21811,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 55,
 		hp: null,
 		mp: null,
-		st: 32,
-		ma: 38,
-		vi: 32,
-		ag: 40,
-		lu: 31,
+		stats: {
+			st: 32,
+			vi: 32,
+			ma: 38,
+			ag: 40,
+			lu: 31
+		},
 		learnset: [
 			{
 				name: 'Tempest Slash',
@@ -20757,20 +21884,19 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 75
 			}
 		],
-		weak: [],
-		resist: [
-			'Fire'
-		],
-		null: [
-			'Light',
-			'Dark'
-		],
-		drain: [],
-		repel: [],
-		game: 'p4',
-		user: 'Naoto Shirogane',
-		stage: 2,
-		evoSkill: null
+		affinities: {
+			weak: [],
+			resist: [
+				'Fire'
+			],
+			null: [
+				'Light',
+				'Dark'
+			],
+			drain: [],
+			repel: []
+		},
+		game: 'p4'
 	},
 	{
 		name: 'Yatagarasu',
@@ -20781,11 +21907,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 54,
 		hp: 258,
 		mp: 296,
-		st: 31,
-		ma: 42,
-		vi: 33,
-		ag: 44,
-		lu: 39,
+		stats: {
+			st: 31,
+			vi: 33,
+			ma: 42,
+			ag: 44,
+			lu: 39
+		},
 		learnset: [
 			{
 				name: 'Diarahan',
@@ -20812,17 +21940,19 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 57
 			}
 		],
-		weak: [
-			'Dark'
-		],
-		resist: [
-			'Force'
-		],
-		null: [
-			'Light'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Dark'
+			],
+			resist: [
+				'Force'
+			],
+			null: [
+				'Light'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -20834,11 +21964,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 2,
 		hp: null,
 		mp: null,
-		st: 2,
-		ma: 7,
-		vi: 7,
-		ag: 11,
-		lu: 6,
+		stats: {
+			st: 2,
+			vi: 7,
+			ma: 7,
+			ag: 11,
+			lu: 6
+		},
 		learnset: [
 			{
 				name: 'Poisma',
@@ -20865,15 +21997,17 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 11
 			}
 		],
-		weak: [
-			'Fire'
-		],
-		resist: [
-			'Ice'
-		],
-		null: [],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Fire'
+			],
+			resist: [
+				'Ice'
+			],
+			null: [],
+			drain: [],
+			repel: []
+		},
 		game: 'p4'
 	},
 	{
@@ -20885,11 +22019,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 45,
 		hp: 253,
 		mp: 200,
-		st: 47,
-		ma: 22,
-		vi: 25,
-		ag: 46,
-		lu: 31,
+		stats: {
+			st: 47,
+			vi: 25,
+			ma: 22,
+			ag: 46,
+			lu: 31
+		},
 		learnset: [
 			{
 				name: 'Hassou Tobi',
@@ -20912,15 +22048,17 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 48
 			}
 		],
-		weak: [
-			'Dark'
-		],
-		resist: [
-			'Phys'
-		],
-		null: [],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Dark'
+			],
+			resist: [
+				'Phys'
+			],
+			null: [],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -20932,11 +22070,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 50,
 		hp: 255,
 		mp: 212,
-		st: 34,
-		ma: 51,
-		vi: 35,
-		ag: 23,
-		lu: 27,
+		stats: {
+			st: 34,
+			vi: 35,
+			ma: 51,
+			ag: 23,
+			lu: 27
+		},
 		learnset: [
 			{
 				name: 'Bufudyne',
@@ -20967,15 +22107,17 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 53
 			}
 		],
-		weak: [
-			'Fire'
-		],
-		resist: [],
-		null: [
-			'Elec'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Fire'
+			],
+			resist: [],
+			null: [
+				'Elec'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -20987,11 +22129,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 72,
 		hp: 444,
 		mp: 325,
-		st: 61,
-		ma: 57,
-		vi: 50,
-		ag: 35,
-		lu: 37,
+		stats: {
+			st: 61,
+			vi: 50,
+			ma: 57,
+			ag: 35,
+			lu: 37
+		},
 		learnset: [
 			{
 				name: 'Murderous Glee',
@@ -21018,17 +22162,19 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 75
 			}
 		],
-		weak: [
-			'Elec'
-		],
-		resist: [
-			'Fire',
-			'Light',
-			'Dark'
-		],
-		null: [],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Elec'
+			],
+			resist: [
+				'Fire',
+				'Light',
+				'Dark'
+			],
+			null: [],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -21040,11 +22186,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 86,
 		hp: 520,
 		mp: 448,
-		st: 73,
-		ma: 62,
-		vi: 56,
-		ag: 82,
-		lu: 54,
+		stats: {
+			st: 73,
+			vi: 56,
+			ma: 62,
+			ag: 82,
+			lu: 54
+		},
 		learnset: [
 			{
 				name: 'Impaler\'s Animus',
@@ -21075,17 +22223,19 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 89
 			}
 		],
-		weak: [
-			'Force'
-		],
-		resist: [],
-		null: [
-			'Elec',
-			'Light',
-			'Dark'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Force'
+			],
+			resist: [],
+			null: [
+				'Elec',
+				'Light',
+				'Dark'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -21097,11 +22247,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 14,
 		hp: 73,
 		mp: 97,
-		st: 15,
-		ma: 9,
-		vi: 11,
-		ag: 14,
-		lu: 16,
+		stats: {
+			st: 15,
+			vi: 11,
+			ma: 9,
+			ag: 14,
+			lu: 16
+		},
 		learnset: [
 			{
 				name: 'Needle Spray',
@@ -21120,15 +22272,17 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 17
 			}
 		],
-		weak: [
-			'Fire'
-		],
-		resist: [
-			'Dark'
-		],
-		null: [],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Fire'
+			],
+			resist: [
+				'Dark'
+			],
+			null: [],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	},
 	{
@@ -21140,11 +22294,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 1,
 		hp: null,
 		mp: null,
-		st: 2,
-		ma: 3,
-		vi: 1,
-		ag: 3,
-		lu: 1,
+		stats: {
+			st: 2,
+			vi: 1,
+			ma: 3,
+			ag: 3,
+			lu: 1
+		},
 		learnset: [
 			{
 				name: 'Garu',
@@ -21243,19 +22399,18 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 75
 			}
 		],
-		weak: [
-			'Elec'
-		],
-		resist: [
-			'Wind'
-		],
-		null: [],
-		drain: [],
-		repel: [],
-		game: 'p5',
-		user: 'Morgana',
-		stage: 1,
-		evoSkill: null
+		affinities: {
+			weak: [
+				'Elec'
+			],
+			resist: [
+				'Wind'
+			],
+			null: [],
+			drain: [],
+			repel: []
+		},
+		game: 'p5'
 	},
 	{
 		name: 'Zouchouten',
@@ -21266,11 +22421,13 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		level: 36,
 		hp: 213,
 		mp: 150,
-		st: 29,
-		ma: 24,
-		vi: 27,
-		ag: 22,
-		lu: 26,
+		stats: {
+			st: 29,
+			vi: 27,
+			ma: 24,
+			ag: 22,
+			lu: 26
+		},
 		learnset: [
 			{
 				name: 'Charge',
@@ -21301,15 +22458,17 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 				level: 39
 			}
 		],
-		weak: [
-			'Force'
-		],
-		resist: [],
-		null: [
-			'Light'
-		],
-		drain: [],
-		repel: [],
+		affinities: {
+			weak: [
+				'Force'
+			],
+			resist: [],
+			null: [
+				'Light'
+			],
+			drain: [],
+			repel: []
+		},
 		game: 'smt5'
 	}
 ];

@@ -32,6 +32,33 @@ export type CounterDisplay = 'Weak' | 'Medium';
 /** Displayed damage values for AttackSkill instances */
 export type AttackDisplay = CounterDisplay | 'Minuscule' | 'Heavy' | 'Severe' | 'Colossal';
 
+export interface DemonAffinities {
+	/** The affinities that the demon is weak to */
+	weak: DamagingAffinity[];
+	/** The affinities that the demon resists */
+	resist: DamagingAffinity[];
+	/** The affinities that the demon nullifies */
+	null: DamagingAffinity[];
+	/** The affinities that the demon drains */
+	drain: DamagingAffinity[];
+	/** The affinities that the demon repels */
+	repel: DamagingAffinity[];
+}
+
+/** A demon's stats */
+export interface DemonStats {
+	/** The demon's strength */
+	st: number;
+	/** The demon's vitality/endurance */
+	vi: number;
+	/** The demon's magic */
+	ma: number;
+	/** The demon's agility */
+	ag: number;
+	/** The demon's luck */
+	lu: number;
+}
+
 /** Criteria causing EvasionSkill instances to take effect */
 export type EvasionBoostCriteria = 'Surrounded' | 'Rain/Snow';
 
