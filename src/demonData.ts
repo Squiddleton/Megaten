@@ -4960,6 +4960,70 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		game: 'smt5'
 	},
 	{
+		name: 'Crystal Skull',
+		aliases: [],
+		inherit: 'Support',
+		arcana: 'Fool',
+		race: 'Treasure',
+		level: 50,
+		hp: null,
+		mp: null,
+		stats: {
+			st: 50,
+			vi: 50,
+			ma: 50,
+			ag: 50,
+			lu: 50
+		},
+		learnset: [
+			{
+				name: 'Maragidyne',
+				level: 0
+			},
+			{
+				name: 'Mabufudyne',
+				level: 0
+			},
+			{
+				name: 'Maziodyne',
+				level: 0
+			},
+			{
+				name: 'Magarudyne',
+				level: 0
+			},
+			{
+				name: 'Mapsiodyne',
+				level: 0
+			},
+			{
+				name: 'Mafreidyne',
+				level: 0
+			},
+			{
+				name: 'Mahamabarion',
+				level: 0
+			},
+			{
+				name: 'Mamudobarion',
+				level: 0
+			}
+		],
+		affinities: {
+			weak: [
+				'Wind'
+			],
+			resist: [
+				'Phys',
+				'Gun'
+			],
+			null: [],
+			drain: [],
+			repel: []
+		},
+		game: 'p5'
+	},
+	{
 		name: 'Cu Chulainn',
 		aliases: [],
 		inherit: 'Force',
@@ -5820,6 +5884,70 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 			null: [
 				'Light'
 			],
+			drain: [],
+			repel: []
+		},
+		game: 'p5'
+	},
+	{
+		name: 'Emperor\'s Amulet',
+		aliases: [],
+		inherit: 'Support',
+		arcana: 'Hanged',
+		race: 'Treasure',
+		level: 35,
+		hp: null,
+		mp: null,
+		stats: {
+			st: 35,
+			vi: 35,
+			ma: 35,
+			ag: 35,
+			lu: 35
+		},
+		learnset: [
+			{
+				name: 'Agidyne',
+				level: 0
+			},
+			{
+				name: 'Bufudyne',
+				level: 0
+			},
+			{
+				name: 'Garudyne',
+				level: 0
+			},
+			{
+				name: 'Ziodyne',
+				level: 0
+			},
+			{
+				name: 'Psiodyne',
+				level: 0
+			},
+			{
+				name: 'Freidyne',
+				level: 0
+			},
+			{
+				name: 'Hamabarion',
+				level: 0
+			},
+			{
+				name: 'Mudobarion',
+				level: 0
+			}
+		],
+		affinities: {
+			weak: [
+				'Elec'
+			],
+			resist: [
+				'Phys',
+				'Gun'
+			],
+			null: [],
 			drain: [],
 			repel: []
 		},
@@ -7979,6 +8107,70 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 			]
 		},
 		game: 'p4'
+	},
+	{
+		name: 'Hope Diamond',
+		aliases: [],
+		inherit: 'Support',
+		arcana: 'Death',
+		race: 'Treasure',
+		level: 40,
+		hp: null,
+		mp: null,
+		stats: {
+			st: 40,
+			vi: 40,
+			ma: 40,
+			ag: 40,
+			lu: 40
+		},
+		learnset: [
+			{
+				name: 'Auto-Mataru',
+				level: 0
+			},
+			{
+				name: 'Auto-Maraku',
+				level: 0
+			},
+			{
+				name: 'Auto-Masuku',
+				level: 0
+			},
+			{
+				name: 'Endure',
+				level: 0
+			},
+			{
+				name: 'Regenerate 2',
+				level: 0
+			},
+			{
+				name: 'Invigorate 2',
+				level: 0
+			},
+			{
+				name: 'High Counter',
+				level: 0
+			},
+			{
+				name: 'Fast Heal',
+				level: 0
+			}
+		],
+		affinities: {
+			weak: [
+				'Ice'
+			],
+			resist: [
+				'Phys',
+				'Gun'
+			],
+			null: [],
+			drain: [],
+			repel: []
+		},
+		game: 'p5'
 	},
 	{
 		name: 'Horus',
@@ -10740,6 +10932,69 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 			repel: []
 		},
 		game: 'smt5'
+	},
+	{
+		name: 'Koh-i-Noor',
+		aliases: [],
+		inherit: 'Support',
+		arcana: 'Priestess',
+		race: 'Treasure',
+		level: 25,
+		hp: null,
+		mp: null,
+		stats: {
+			st: 25,
+			vi: 25,
+			ma: 25,
+			ag: 25,
+			lu: 25
+		},
+		learnset: [
+			{
+				name: 'Dodge Fire',
+				level: 0
+			},
+			{
+				name: 'Dodge Ice',
+				level: 0
+			},
+			{
+				name: 'Dodge Elec',
+				level: 0
+			},
+			{
+				name: 'Dodge Wind',
+				level: 0
+			},
+			{
+				name: 'Dodge Psy',
+				level: 0
+			},
+			{
+				name: 'Dodge Nuke',
+				level: 0
+			},
+			{
+				name: 'Dodge Light',
+				level: 0
+			},
+			{
+				name: 'Dodge Dark',
+				level: 0
+			}
+		],
+		affinities: {
+			weak: [
+				'Gun'
+			],
+			resist: [
+				'Phys'
+			],
+			null: [],
+			drain: [],
+			repel: []
+		},
+		game: 'p5'
 	},
 	{
 		name: 'Kohryu',
@@ -15164,6 +15419,134 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		game: 'smt5'
 	},
 	{
+		name: 'Orichalcum',
+		aliases: [],
+		inherit: 'Support',
+		arcana: 'Faith',
+		race: 'Treasure',
+		level: 60,
+		hp: null,
+		mp: null,
+		stats: {
+			st: 60,
+			vi: 60,
+			ma: 60,
+			ag: 60,
+			lu: 60
+		},
+		learnset: [
+			{
+				name: 'Agibarion',
+				level: 0
+			},
+			{
+				name: 'Bufubarion',
+				level: 0
+			},
+			{
+				name: 'Panta Rhei',
+				level: 0
+			},
+			{
+				name: 'Ziobarion',
+				level: 0
+			},
+			{
+				name: 'Psycho Force',
+				level: 0
+			},
+			{
+				name: 'Atomic Flare',
+				level: 0
+			},
+			{
+				name: 'Divine Judgement',
+				level: 0
+			},
+			{
+				name: 'Demonic Decree',
+				level: 0
+			}
+		],
+		affinities: {
+			weak: [
+				'Light'
+			],
+			resist: [
+				'Phys',
+				'Gun'
+			],
+			null: [],
+			drain: [],
+			repel: []
+		},
+		game: 'p5'
+	},
+	{
+		name: 'Orlov',
+		aliases: [],
+		inherit: 'Support',
+		arcana: 'Strength',
+		race: 'Treasure',
+		level: 30,
+		hp: null,
+		mp: null,
+		stats: {
+			st: 30,
+			vi: 30,
+			ma: 30,
+			ag: 30,
+			lu: 30
+		},
+		learnset: [
+			{
+				name: 'Maragion',
+				level: 0
+			},
+			{
+				name: 'Mabufula',
+				level: 0
+			},
+			{
+				name: 'Magarula',
+				level: 0
+			},
+			{
+				name: 'Mazionga',
+				level: 0
+			},
+			{
+				name: 'Mapsio',
+				level: 0
+			},
+			{
+				name: 'Mafreila',
+				level: 0
+			},
+			{
+				name: 'Mahamaon',
+				level: 0
+			},
+			{
+				name: 'Mamudoon',
+				level: 0
+			}
+		],
+		affinities: {
+			weak: [
+				'Dark'
+			],
+			resist: [
+				'Phys',
+				'Gun'
+			],
+			null: [],
+			drain: [],
+			repel: []
+		},
+		game: 'p5'
+	},
+	{
 		name: 'Orobas',
 		aliases: [],
 		inherit: 'Fire',
@@ -16875,6 +17258,70 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		game: 'smt5'
 	},
 	{
+		name: 'Queen\'s Necklace',
+		aliases: [],
+		inherit: 'Support',
+		arcana: 'Empress',
+		race: 'Treasure',
+		level: 15,
+		hp: null,
+		mp: null,
+		stats: {
+			st: 15,
+			vi: 15,
+			ma: 15,
+			ag: 15,
+			lu: 15
+		},
+		learnset: [
+			{
+				name: 'Tarukaja',
+				level: 0
+			},
+			{
+				name: 'Rakukaja',
+				level: 0
+			},
+			{
+				name: 'Sukukaja',
+				level: 0
+			},
+			{
+				name: 'Recarm',
+				level: 0
+			},
+			{
+				name: 'Media',
+				level: 0
+			},
+			{
+				name: 'Tarunda',
+				level: 0
+			},
+			{
+				name: 'Rakunda',
+				level: 0
+			},
+			{
+				name: 'Sukunda',
+				level: 0
+			}
+		],
+		affinities: {
+			weak: [
+				'Psy'
+			],
+			resist: [
+				'Phys',
+				'Gun'
+			],
+			null: [],
+			drain: [],
+			repel: []
+		},
+		game: 'p5'
+	},
+	{
 		name: 'Quetzalcoatl',
 		aliases: [],
 		inherit: 'Fire',
@@ -17290,8 +17737,8 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 		arcana: 'Emperor',
 		race: 'Treasure',
 		level: 10,
-		hp: 165,
-		mp: 93,
+		hp: null,
+		mp: null,
 		stats: {
 			st: 10,
 			vi: 10,
@@ -18741,6 +19188,70 @@ const demonData: Readonly<(DemonData | PersonaData)>[] = [
 			repel: []
 		},
 		game: 'smt5'
+	},
+	{
+		name: 'Stone of Scone',
+		aliases: [],
+		inherit: 'Support',
+		arcana: 'Fortune',
+		race: 'Treasure',
+		level: 20,
+		hp: null,
+		mp: null,
+		stats: {
+			st: 20,
+			vi: 20,
+			ma: 20,
+			ag: 20,
+			lu: 20
+		},
+		learnset: [
+			{
+				name: 'Agilao',
+				level: 0
+			},
+			{
+				name: 'Bufula',
+				level: 0
+			},
+			{
+				name: 'Zionga',
+				level: 0
+			},
+			{
+				name: 'Garula',
+				level: 0
+			},
+			{
+				name: 'Psio',
+				level: 0
+			},
+			{
+				name: 'Freila',
+				level: 0
+			},
+			{
+				name: 'Hamaon',
+				level: 0
+			},
+			{
+				name: 'Mudoon',
+				level: 0
+			}
+		],
+		affinities: {
+			weak: [
+				'Fire'
+			],
+			resist: [
+				'Phys',
+				'Gun'
+			],
+			null: [],
+			drain: [],
+			repel: []
+		},
+		game: 'p5'
 	},
 	{
 		name: 'Succubus',
