@@ -4763,6 +4763,24 @@ const skillData: Readonly<AnySkillData[]> = [
 		stat: 'MP'
 	},
 	{
+		name: 'Light of Order',
+		affinity: 'Recovery',
+		type: 'RECOVERY',
+		unique: true,
+		range: 'Party',
+		cost: 150,
+		ailments: [],
+		amount: 'Moderate',
+		buffs: [
+			'Attack',
+			'Defense',
+			'Accuracy/Evasion'
+		],
+		flags: [
+			'Negate'
+		]
+	},
+	{
 		name: 'Light Pleroma',
 		affinity: 'Passive',
 		type: 'BOOST',

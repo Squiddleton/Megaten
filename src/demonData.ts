@@ -20325,6 +20325,65 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		game: 'p5'
 	},
 	{
+		name: 'Tao',
+		aliases: [],
+		inherit: 'Light',
+		arcana: null,
+		race: 'Panagia',
+		level: 60,
+		hp: 308,
+		mp: 355,
+		stats: {
+			st: 20,
+			vi: 44,
+			ma: 62,
+			ag: 38,
+			lu: 49
+		},
+		learnset: [
+			{
+				name: 'Light of Order',
+				level: 0
+			},
+			{
+				name: 'Hamaon',
+				level: 0
+			},
+			{
+				name: 'Megidola',
+				level: 0
+			},
+			{
+				name: 'Matarunda',
+				level: 0
+			},
+			{
+				name: 'Mahamaon',
+				level: 61
+			},
+			{
+				name: 'Mana Aid',
+				level: 62
+			},
+			{
+				name: 'Null Dark',
+				level: 64
+			}
+		],
+		affinities: {
+			weak: [
+				'Dark'
+			],
+			resist: [],
+			null: [
+				'Light'
+			],
+			drain: [],
+			repel: []
+		},
+		game: 'smt5'
+	},
+	{
 		name: 'Thanatos',
 		aliases: [],
 		inherit: 'Almighty',
