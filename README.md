@@ -181,7 +181,8 @@ AttackSkill {
   },
   power: {
     amount: 215,
-    display: 'Heavy'
+    display: 'Heavy',
+    type: 'Magic'
   },
   min: 1,
   max: 1,
