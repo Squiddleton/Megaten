@@ -758,6 +758,9 @@ export class RecoverySkill extends Skill implements RecoverySkillData {
 					: `${amount} HP recovery and cures status ailments${flags.includes('Revert Debuffs') ? '/debuffs' : ''} for ${isParty ? 'all allies' : '1 ally'}.`
 				: `Cures ${ailments.join('/')} for ${isParty ? 'all allies' : 'one ally'}.`;
 		}
+		else if (flags.includes('Negate')) {
+			this.description = `${amount} HP recovery for all allies. Cancels debuffs and raises all stats 1 tier for 3 turns.`;
+		}
 		else if (flags.includes('Revive') && amount !== null) {
 			this.description = flags.includes('Summon')
 				? 'Summons 1 demon at full HP. Effective on dead members as well.'
@@ -767,7 +770,7 @@ export class RecoverySkill extends Skill implements RecoverySkillData {
 			this.description = 'Full HP recovery to all allies and heals above MAX HP.';
 		}
 		else {
-			this.description = `${amount} HP recovery to $isParty ? 'all allies' : '1 ally'}${buffs.length > 0 ? ` and raises ${buffs.length === 3 ? 'all stats' : buffs.join('/')} by ${buffs[0].includes('Double') ? '2 ranks' : '1 rank'} for 3 turns` : ''}.`;
+			this.description = `${amount} HP recovery to ${isParty ? 'all allies' : '1 ally'}${buffs.length > 0 ? ` and raises ${buffs.length === 3 ? 'all stats' : buffs.join('/')} by ${buffs[0].includes('Double') ? '2 ranks' : '1 rank'} for 3 turns` : ''}.`;
 		}
 
 		this.amount = amount;
