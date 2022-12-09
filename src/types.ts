@@ -75,9 +75,6 @@ export type HPMPAil = HPMP | 'HPMP' | 'AIL';
 /** The stat which a PostBattleSkill instance increases */
 export type PostBattleStat = HPMP | 'HPMP' | 'EXP' | 'Money';
 
-/** The type of structure that a MegatenError may throw from */
-export type MegatenErrorType = 'Demon' | 'Persona' | 'Skill';
-
 /** Affinities exclusive to the Persona series */
 export type PersonaAffinity = 'Gun' | 'Wind' | 'Psy' | 'Nuke';
 /** Affinities exclusive to the SMT series */

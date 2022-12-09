@@ -1,7 +1,8 @@
-import type { MegatenErrorType } from './types';
+/** The type of structure that a MegatenError may throw from */
+export type MegatenErrorType = 'Demon' | 'Persona' | 'Skill';
 
 /** An exception thrown from the megaten package */
-export default class MegatenError extends Error {
+export class MegatenError extends Error {
 	/** The input that caused the exception */
 	name: string;
 	/** The type of structure where no structure matched the input */

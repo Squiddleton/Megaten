@@ -4,7 +4,7 @@ import { Collection } from '@discordjs/collection';
 import { formatPossessive, normalize } from '@squiddleton/util';
 import type { DemonData, PersonaData } from './dataTypes';
 import demonData from './demonData';
-import MegatenError from './error';
+import { MegatenError } from './error';
 import type { AnyAffinity, Arcana, DemonAffinities, DemonStats, Game, Race, Stage } from './types';
 
 function isPersona(demon: Demon): demon is Persona;
