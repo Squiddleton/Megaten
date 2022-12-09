@@ -1,9 +1,9 @@
 import { Collection } from '@discordjs/collection';
 import { normalize } from '@squiddleton/util';
-import type { AilBoostSkillData, AilDefensiveSkillData, AilmentSkillData, AttackSkillData, AutoBuffSkillData, BarrierBreakSkillData, BarrierSkillData, BlockSkillData, BoostSkillData, BreakSkillData, ChargeSkillData, CritBoostSkillData, CritSkillData, DefensiveSkillData, EndureSkillData, EvasionSkillData, HalveSkillData, InstaKillBoostSkillData, MasterSkillData, MiscSkillData, NaviSkillData, PersonaCounterSkillData, PostBattleSkillData, RecoverySkillData, RegenSkillData, SMTCounterSkillData, SiphonSkillData, SkillData, SpringSkillData, SupportSkillData, SusceptibilitySkillData, TauntSkillData, WallSkillData } from './dataTypes';
+import type { AilBoostSkillData, AilDefensiveSkillData, AilmentSkillData, AttackSkillData, AutoBuffSkillData, BarrierBreakSkillData, BarrierSkillData, BoostSkillData, BreakSkillData, ChargeSkillData, CritBoostSkillData, CritSkillData, DefensiveSkillData, EndureSkillData, EvasionSkillData, HalveSkillData, InstaKillBoostSkillData, MasterSkillData, MiscSkillData, NaviSkillData, PersonaCounterSkillData, PostBattleSkillData, RecoverySkillData, RegenSkillData, SMTCounterSkillData, SiphonSkillData, SkillData, SpringSkillData, SupportSkillData, SusceptibilitySkillData, TauntSkillData, WallSkillData } from './dataTypes';
 import { MegatenError } from './error';
 import skillData from './skillData';
-import type { AilResistance, Ailment, AllyRange, AnyAffinity, AnyRange, AttackDisplay, Barrier, Buff, Charge, CounterAffinity, CounterDisplay, DamageType, DamagingAffinity, EnemyRange, EvasionBoostCriteria, HPMP, HPMPAil, LightDark, PersonaAffinity, PostBattleStat, RecoveryAmount, RegenCriteria, Resistance, RestoreCriteria, SMTAffinity, Series, SkillType } from './types';
+import type { AilResistance, Ailment, AllyRange, AnyAffinity, AnyRange, AttackDisplay, Barrier, Buff, Charge, CounterAffinity, CounterDisplay, DamageType, DamagingAffinity, EnemyRange, EvasionBoostCriteria, HPMP, HPMPAil, LightDark, PostBattleStat, RecoveryAmount, RegenCriteria, Resistance, RestoreCriteria, SMTAffinity, Series, SkillType } from './types';
 
 export abstract class Skill implements SkillData {
 	/** The skill's name */
@@ -336,6 +336,9 @@ export class BarrierSkill extends Skill implements BarrierSkillData {
 					this.description = `Reflects a ${barrier === 'Tetrakarn' ? 'Phys' : 'Magic'} attack once for 1 ally for 1 turn.`;
 					break;
 				}
+				default: {
+					this.description = `Nullifies a${['Ice', 'Elec'].some(e => this.name.includes(e)) ? 'n' : ''} ${this.name.replace(' Wall', '')} attack against all allies once for 1 turn.`;
+				}
 			}
 		}
 
@@ -362,26 +365,6 @@ export class BarrierBreakSkill extends Skill implements BarrierBreakSkillData {
 		this.description = `Negates ${barrier} on all foes.`;
 		this.barrier = barrier;
 		this.cost = data.cost;
-	}
-}
-
-/** A skill that temporarily blocks attacks of a certain affinity */
-export class BlockSkill extends Skill implements BlockSkillData {
-	affinity: 'Support';
-	type: 'BLOCK';
-	description: string;
-	/** The skill's MP cost */
-	cost: number;
-	/** The affinity that the skill blocks */
-	element: Exclude<DamagingAffinity, PersonaAffinity | 'Almighty'>;
-	constructor(data: BlockSkillData) {
-		const { element } = data;
-		super(data);
-		this.affinity = data.affinity;
-		this.type = data.type;
-		this.description = `Nullifies a${['Ice', 'Elec'].includes(element) ? 'n' : ''} ${element} attack against all allies once for 1 turn.`;
-		this.cost = data.cost;
-		this.element = element;
 	}
 }
 
@@ -1010,7 +993,6 @@ Skill.array = skillData.map(data => {
 		case 'AUTOBUFF': return new AutoBuffSkill(data);
 		case 'BARRIER': return new BarrierSkill(data);
 		case 'BARRIERBREAK': return new BarrierBreakSkill(data);
-		case 'BLOCK': return new BlockSkill(data);
 		case 'BOOST': return new BoostSkill(data);
 		case 'BREAK': return new BreakSkill(data);
 		case 'CHARGE': return new ChargeSkill(data);
@@ -1039,10 +1021,10 @@ Skill.array = skillData.map(data => {
 });
 Skill.collection = new Collection(Skill.array.map(skill => [skill.devName, skill]));
 
-export type AnySkillData = AilBoostSkillData | AilDefensiveSkillData | AilmentSkillData | AttackSkillData | AutoBuffSkillData | BarrierSkillData | BarrierBreakSkillData | BlockSkillData | BoostSkillData | BreakSkillData
+export type AnySkillData = AilBoostSkillData | AilDefensiveSkillData | AilmentSkillData | AttackSkillData | AutoBuffSkillData | BarrierSkillData | BarrierBreakSkillData | BoostSkillData | BreakSkillData
 | ChargeSkillData | CritSkillData | CritBoostSkillData | DefensiveSkillData | EndureSkillData | EvasionSkillData | HalveSkillData | InstaKillBoostSkillData | MasterSkillData | MiscSkillData | NaviSkillData
 | PersonaCounterSkillData | PostBattleSkillData | RecoverySkillData | RegenSkillData | SiphonSkillData | SMTCounterSkillData | SpringSkillData | SupportSkillData | SusceptibilitySkillData | TauntSkillData | WallSkillData;
 
-export type AnySkill = AilBoostSkill | AilDefensiveSkill | AilmentSkill | AttackSkill | AutoBuffSkill | BarrierSkill | BarrierBreakSkill | BlockSkill | BoostSkill | BreakSkill
+export type AnySkill = AilBoostSkill | AilDefensiveSkill | AilmentSkill | AttackSkill | AutoBuffSkill | BarrierSkill | BarrierBreakSkill | BoostSkill | BreakSkill
 | ChargeSkill | CritSkill | CritBoostSkill | DefensiveSkill | EndureSkill | EvasionSkill | HalveSkill | InstaKillBoostSkill | MasterSkill | MiscSkill | NaviSkill
 | PersonaCounterSkill | PostBattleSkill | RecoverySkill | RegenSkill | SiphonSkill | SMTCounterSkill | SpringSkill | SupportSkill | SusceptibilitySkill | TauntSkill | WallSkill;

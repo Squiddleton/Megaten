@@ -1,4 +1,4 @@
-import type { AilResistance, Ailment, AllyRange, AnyAffinity, AnyRange, Arcana, AttackDisplay, Barrier, Buff, Charge, CounterAffinity, CounterDisplay, DamageType, DamagingAffinity, DemonAffinities, DemonStats, EnemyRange, EvasionBoostCriteria, Game, HPMP, HPMPAil, LightDark, PersonaAffinity, PostBattleStat, Race, RecoveryAmount, RegenCriteria, Resistance, RestoreCriteria, SMTAffinity, Series, SkillType, Stage } from './types';
+import type { AilResistance, Ailment, AllyRange, AnyAffinity, AnyRange, Arcana, AttackDisplay, Barrier, Buff, Charge, CounterAffinity, CounterDisplay, DamageType, DamagingAffinity, DemonAffinities, DemonStats, EnemyRange, EvasionBoostCriteria, Game, HPMP, HPMPAil, LightDark, PostBattleStat, Race, RecoveryAmount, RegenCriteria, Resistance, RestoreCriteria, SMTAffinity, Series, SkillType, Stage } from './types';
 
 /** Data used for constructing a Demon instance */
 export interface DemonData {
@@ -102,13 +102,6 @@ export interface BarrierBreakSkillData extends SkillData {
 	type: 'BARRIERBREAK';
 	barrier: Barrier;
 	cost: number;
-}
-
-export interface BlockSkillData extends SkillData {
-	affinity: 'Support';
-	type: 'BLOCK';
-	cost: number;
-	element: Exclude<DamagingAffinity, PersonaAffinity | 'Almighty'>;
 }
 
 export interface BoostSkillData extends SkillData {

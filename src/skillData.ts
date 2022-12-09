@@ -1607,10 +1607,13 @@ const skillData: Readonly<AnySkillData[]> = [
 	{
 		name: 'Dark Block',
 		affinity: 'Support',
-		type: 'BLOCK',
+		type: 'BARRIER',
 		unique: false,
+		range: 'Party',
 		cost: 40,
-		element: 'Dark'
+		barriers: [
+			'Dark Block'
+		]
 	},
 	{
 		name: 'Dark Boost',
@@ -2378,10 +2381,13 @@ const skillData: Readonly<AnySkillData[]> = [
 	{
 		name: 'Elec Block',
 		affinity: 'Support',
-		type: 'BLOCK',
+		type: 'BARRIER',
 		unique: false,
+		range: 'Party',
 		cost: 40,
-		element: 'Elec'
+		barriers: [
+			'Elec Block'
+		]
 	},
 	{
 		name: 'Elec Boost',
@@ -2839,10 +2845,13 @@ const skillData: Readonly<AnySkillData[]> = [
 	{
 		name: 'Fire Block',
 		affinity: 'Support',
-		type: 'BLOCK',
+		type: 'BARRIER',
 		unique: false,
+		range: 'Party',
 		cost: 40,
-		element: 'Fire'
+		barriers: [
+			'Fire Block'
+		]
 	},
 	{
 		name: 'Fire Boost',
@@ -3012,10 +3021,13 @@ const skillData: Readonly<AnySkillData[]> = [
 	{
 		name: 'Force Block',
 		affinity: 'Support',
-		type: 'BLOCK',
+		type: 'BARRIER',
 		unique: false,
+		range: 'Party',
 		cost: 40,
-		element: 'Force'
+		barriers: [
+			'Force Block'
+		]
 	},
 	{
 		name: 'Force Pleroma',
@@ -4289,10 +4301,13 @@ const skillData: Readonly<AnySkillData[]> = [
 	{
 		name: 'Ice Block',
 		affinity: 'Support',
-		type: 'BLOCK',
+		type: 'BARRIER',
 		unique: false,
+		range: 'Party',
 		cost: 40,
-		element: 'Ice'
+		barriers: [
+			'Ice Block'
+		]
 	},
 	{
 		name: 'Ice Boost',
@@ -4712,10 +4727,13 @@ const skillData: Readonly<AnySkillData[]> = [
 	{
 		name: 'Light Block',
 		affinity: 'Support',
-		type: 'BLOCK',
+		type: 'BARRIER',
 		unique: false,
+		range: 'Party',
 		cost: 40,
-		element: 'Light'
+		barriers: [
+			'Light Block'
+		]
 	},
 	{
 		name: 'Light Boost',
@@ -7016,10 +7034,13 @@ const skillData: Readonly<AnySkillData[]> = [
 	{
 		name: 'Phys Block',
 		affinity: 'Support',
-		type: 'BLOCK',
+		type: 'BARRIER',
 		unique: false,
+		range: 'Party',
 		cost: 70,
-		element: 'Phys'
+		barriers: [
+			'Phys Block'
+		]
 	},
 	{
 		name: 'Phys Pleroma',
