@@ -1,6 +1,6 @@
 import type { AnySkillData } from './skill';
 
-const skillData: Readonly<AnySkillData>[] = [
+const skillData: Readonly<AnySkillData[]> = [
 	{
 		name: '+15% EXP',
 		affinity: 'Passive',
@@ -44,7 +44,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 270,
-			display: 'Severe'
+			display: 'Severe',
+			type: 'Magic'
 		},
 		min: 1,
 		max: 1,
@@ -72,7 +73,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 205,
-			display: 'Severe'
+			display: 'Severe',
+			type: 'Magic'
 		},
 		min: 1,
 		max: 1,
@@ -92,7 +94,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 80,
-			display: 'Weak'
+			display: 'Weak',
+			type: 'Physical'
 		},
 		min: 1,
 		max: 1,
@@ -120,7 +123,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 130,
-			display: 'Weak'
+			display: 'Weak',
+			type: 'Magic'
 		},
 		min: 1,
 		max: 1,
@@ -140,7 +144,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 265,
-			display: 'Severe'
+			display: 'Severe',
+			type: 'Magic'
 		},
 		min: 1,
 		max: 1,
@@ -160,7 +165,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 215,
-			display: 'Heavy'
+			display: 'Heavy',
+			type: 'Magic'
 		},
 		min: 1,
 		max: 1,
@@ -180,7 +186,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 160,
-			display: 'Medium'
+			display: 'Medium',
+			type: 'Magic'
 		},
 		min: 1,
 		max: 1,
@@ -200,7 +207,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 150,
-			display: 'Medium'
+			display: 'Medium',
+			type: 'Physical'
 		},
 		min: 1,
 		max: 3,
@@ -229,7 +237,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 275,
-			display: 'Severe'
+			display: 'Severe',
+			type: 'Physical'
 		},
 		min: 1,
 		max: 1,
@@ -306,7 +315,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 85,
-			display: 'Weak'
+			display: 'Weak',
+			type: 'Physical'
 		},
 		min: 3,
 		max: 6,
@@ -353,7 +363,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 20,
-			display: 'Weak'
+			display: 'Weak',
+			type: 'Physical'
 		},
 		min: 8,
 		max: 8,
@@ -380,7 +391,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 125,
-			display: 'Heavy'
+			display: 'Heavy',
+			type: 'Physical'
 		},
 		min: 2,
 		max: 2,
@@ -400,7 +412,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 180,
-			display: 'Heavy'
+			display: 'Heavy',
+			type: 'Physical'
 		},
 		min: 1,
 		max: 1,
@@ -420,7 +433,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 20,
-			display: 'Weak'
+			display: 'Weak',
+			type: 'Physical'
 		},
 		min: 15,
 		max: 15,
@@ -440,7 +454,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 265,
-			display: 'Severe'
+			display: 'Severe',
+			type: 'Magic'
 		},
 		min: 1,
 		max: 1,
@@ -492,7 +507,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 120,
-			display: 'Medium'
+			display: 'Medium',
+			type: 'Physical'
 		},
 		min: 2,
 		max: 4,
@@ -512,7 +528,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 125,
-			display: 'Medium'
+			display: 'Medium',
+			type: 'Physical'
 		},
 		min: 3,
 		max: 3,
@@ -534,7 +551,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 180,
-			display: 'Severe'
+			display: 'Severe',
+			type: 'Magic'
 		},
 		min: 1,
 		max: 1,
@@ -559,7 +577,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 150,
-			display: 'Medium'
+			display: 'Medium',
+			type: 'Physical'
 		},
 		min: 1,
 		max: 1,
@@ -600,7 +619,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 110,
-			display: 'Weak'
+			display: 'Weak',
+			type: 'Physical'
 		},
 		min: 1,
 		max: 1,
@@ -628,7 +648,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 600,
-			display: 'Colossal'
+			display: 'Colossal',
+			type: 'Physical'
 		},
 		min: 1,
 		max: 1,
@@ -650,7 +671,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 110,
-			display: 'Weak'
+			display: 'Weak',
+			type: 'Physical'
 		},
 		min: 1,
 		max: 1,
@@ -672,7 +694,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 180,
-			display: 'Medium'
+			display: 'Medium',
+			type: 'Physical'
 		},
 		min: 1,
 		max: 1,
@@ -692,7 +715,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 130,
-			display: 'Weak'
+			display: 'Weak',
+			type: 'Physical'
 		},
 		min: 1,
 		max: 1,
@@ -714,7 +738,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 200,
-			display: 'Medium'
+			display: 'Medium',
+			type: 'Physical'
 		},
 		min: 1,
 		max: 1,
@@ -736,7 +761,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 200,
-			display: 'Medium'
+			display: 'Medium',
+			type: 'Physical'
 		},
 		min: 1,
 		max: 1,
@@ -756,7 +782,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 210,
-			display: 'Severe'
+			display: 'Severe',
+			type: 'Magic'
 		},
 		min: 1,
 		max: 1,
@@ -776,7 +803,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 80,
-			display: 'Medium'
+			display: 'Medium',
+			type: 'Physical'
 		},
 		min: 2,
 		max: 4,
@@ -807,7 +835,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 100,
-			display: 'Weak'
+			display: 'Weak',
+			type: 'Physical'
 		},
 		min: 2,
 		max: 4,
@@ -832,7 +861,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 130,
-			display: 'Weak'
+			display: 'Weak',
+			type: 'Physical'
 		},
 		min: 1,
 		max: 1,
@@ -854,7 +884,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 200,
-			display: 'Heavy'
+			display: 'Heavy',
+			type: 'Physical'
 		},
 		min: 1,
 		max: 1,
@@ -903,7 +934,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 65,
-			display: 'Weak'
+			display: 'Weak',
+			type: 'Physical'
 		},
 		min: 1,
 		max: 3,
@@ -932,7 +964,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 200,
-			display: 'Heavy'
+			display: 'Heavy',
+			type: 'Physical'
 		},
 		min: 1,
 		max: 1,
@@ -957,7 +990,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 100,
-			display: 'Medium'
+			display: 'Medium',
+			type: 'Physical'
 		},
 		min: 1,
 		max: 1,
@@ -971,15 +1005,6 @@ const skillData: Readonly<AnySkillData>[] = [
 		series: 'persona'
 	},
 	{
-		name: 'Charm Boost',
-		affinity: 'Passive',
-		type: 'AILBOOST',
-		unique: false,
-		ailment: 'Charm',
-		amount: 25,
-		weather: false
-	},
-	{
 		name: 'Brave Blade',
 		affinity: 'Phys',
 		type: 'ATTACK',
@@ -991,7 +1016,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 220,
-			display: 'Heavy'
+			display: 'Heavy',
+			type: 'Physical'
 		},
 		min: 1,
 		max: 1,
@@ -1019,7 +1045,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 130,
-			display: 'Weak'
+			display: 'Weak',
+			type: 'Magic'
 		},
 		min: 1,
 		max: 1,
@@ -1039,7 +1066,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 265,
-			display: 'Severe'
+			display: 'Severe',
+			type: 'Magic'
 		},
 		min: 1,
 		max: 1,
@@ -1059,7 +1087,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 215,
-			display: 'Heavy'
+			display: 'Heavy',
+			type: 'Magic'
 		},
 		min: 1,
 		max: 1,
@@ -1079,7 +1108,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 160,
-			display: 'Medium'
+			display: 'Medium',
+			type: 'Magic'
 		},
 		min: 1,
 		max: 1,
@@ -1122,7 +1152,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 260,
-			display: 'Heavy'
+			display: 'Heavy',
+			type: 'Physical'
 		},
 		min: 1,
 		max: 1,
@@ -1144,7 +1175,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 290,
-			display: 'Severe'
+			display: 'Severe',
+			type: 'Physical'
 		},
 		min: 1,
 		max: 1,
@@ -1207,6 +1239,15 @@ const skillData: Readonly<AnySkillData>[] = [
 		charge: 'Charge'
 	},
 	{
+		name: 'Charm Boost',
+		affinity: 'Passive',
+		type: 'AILBOOST',
+		unique: false,
+		ailment: 'Charm',
+		amount: 25,
+		weather: false
+	},
+	{
 		name: 'Charmdi',
 		affinity: 'Recovery',
 		type: 'RECOVERY',
@@ -1232,7 +1273,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 75,
-			display: 'Weak'
+			display: 'Weak',
+			type: 'Physical'
 		},
 		min: 1,
 		max: 1,
@@ -1288,7 +1330,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 125,
-			display: 'Medium'
+			display: 'Medium',
+			type: 'Physical'
 		},
 		min: 1,
 		max: 1,
@@ -1310,7 +1353,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 185,
-			display: 'Severe'
+			display: 'Severe',
+			type: 'Magic'
 		},
 		min: 1,
 		max: 1,
@@ -1357,7 +1401,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 110,
-			display: 'Medium'
+			display: 'Medium',
+			type: 'Physical'
 		},
 		min: 1,
 		max: 1,
@@ -1391,7 +1436,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 160,
-			display: 'Weak'
+			display: 'Weak',
+			type: 'Physical'
 		},
 		min: 1,
 		max: 1,
@@ -1413,7 +1459,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 90,
-			display: 'Weak'
+			display: 'Weak',
+			type: 'Physical'
 		},
 		min: 1,
 		max: 1,
@@ -1441,7 +1488,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 260,
-			display: 'Heavy'
+			display: 'Heavy',
+			type: 'Physical'
 		},
 		min: 2,
 		max: 2,
@@ -1463,7 +1511,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 180,
-			display: 'Medium'
+			display: 'Medium',
+			type: 'Physical'
 		},
 		min: 1,
 		max: 1,
@@ -1485,7 +1534,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 170,
-			display: 'Medium'
+			display: 'Medium',
+			type: 'Physical'
 		},
 		min: 1,
 		max: 1,
@@ -1515,7 +1565,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 90,
-			display: 'Medium'
+			display: 'Medium',
+			type: 'Physical'
 		},
 		min: 2,
 		max: 3,
@@ -1535,7 +1586,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 80,
-			display: 'Medium'
+			display: 'Medium',
+			type: 'Physical'
 		},
 		min: 3,
 		max: 3,
@@ -1590,7 +1642,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 90,
-			display: 'Medium'
+			display: 'Medium',
+			type: 'Physical'
 		},
 		min: 2,
 		max: 2,
@@ -1628,33 +1681,14 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 200,
-			display: 'Medium'
+			display: 'Medium',
+			type: 'Physical'
 		},
 		min: 1,
 		max: 1,
 		flags: [
 			'Baton Boost'
 		],
-		ailments: [],
-		series: 'smt'
-	},
-	{
-		name: 'Deathbound',
-		affinity: 'Phys',
-		type: 'ATTACK',
-		unique: false,
-		range: 'All',
-		cost: {
-			type: 'MP',
-			amount: 35
-		},
-		power: {
-			amount: 150,
-			display: 'Medium'
-		},
-		min: 1,
-		max: 1,
-		flags: [],
 		ailments: [],
 		series: 'smt'
 	},
@@ -1670,7 +1704,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 320,
-			display: 'Severe'
+			display: 'Severe',
+			type: 'Magic'
 		},
 		min: 1,
 		max: 1,
@@ -1692,7 +1727,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 160,
-			display: 'Heavy'
+			display: 'Heavy',
+			type: 'Magic'
 		},
 		min: 1,
 		max: 1,
@@ -1717,7 +1753,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 270,
-			display: 'Severe'
+			display: 'Severe',
+			type: 'Physical'
 		},
 		min: 1,
 		max: 1,
@@ -1729,6 +1766,27 @@ const skillData: Readonly<AnySkillData>[] = [
 			}
 		],
 		series: 'persona'
+	},
+	{
+		name: 'Deathbound',
+		affinity: 'Phys',
+		type: 'ATTACK',
+		unique: false,
+		range: 'All',
+		cost: {
+			type: 'MP',
+			amount: 35
+		},
+		power: {
+			amount: 150,
+			display: 'Medium',
+			type: 'Physical'
+		},
+		min: 1,
+		max: 1,
+		flags: [],
+		ailments: [],
+		series: 'smt'
 	},
 	{
 		name: 'Debilitate',
@@ -1867,7 +1925,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 120,
-			display: 'Medium'
+			display: 'Medium',
+			type: 'Magic'
 		},
 		min: 2,
 		max: 5,
@@ -1889,7 +1948,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 170,
-			display: 'Heavy'
+			display: 'Heavy',
+			type: 'Magic'
 		},
 		min: 1,
 		max: 1,
@@ -1911,15 +1971,6 @@ const skillData: Readonly<AnySkillData>[] = [
 		type: 'HALVE',
 		unique: false,
 		cost: 48
-	},
-	{
-		name: 'Mirage Boost',
-		affinity: 'Passive',
-		type: 'AILBOOST',
-		unique: false,
-		ailment: 'Mirage',
-		amount: 25,
-		weather: false
 	},
 	{
 		name: 'Dodge Dark',
@@ -2050,7 +2101,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 110,
-			display: 'Heavy'
+			display: 'Heavy',
+			type: 'Magic'
 		},
 		min: 1,
 		max: 1,
@@ -2058,6 +2110,32 @@ const skillData: Readonly<AnySkillData>[] = [
 			'Instakill'
 		],
 		ailments: [],
+		series: 'persona'
+	},
+	{
+		name: 'Dormin Rush',
+		affinity: 'Phys',
+		type: 'ATTACK',
+		unique: false,
+		range: 'All',
+		cost: {
+			type: 'HP',
+			amount: 16
+		},
+		power: {
+			amount: 100,
+			display: 'Medium',
+			type: 'Physical'
+		},
+		min: 1,
+		max: 1,
+		flags: [],
+		ailments: [
+			{
+				name: 'Sleep',
+				chance: 5
+			}
+		],
 		series: 'persona'
 	},
 	{
@@ -2074,31 +2152,6 @@ const skillData: Readonly<AnySkillData>[] = [
 		flags: []
 	},
 	{
-		name: 'Dormin Rush',
-		affinity: 'Phys',
-		type: 'ATTACK',
-		unique: false,
-		range: 'All',
-		cost: {
-			type: 'HP',
-			amount: 16
-		},
-		power: {
-			amount: 100,
-			display: 'Medium'
-		},
-		min: 1,
-		max: 1,
-		flags: [],
-		ailments: [
-			{
-				name: 'Sleep',
-				chance: 5
-			}
-		],
-		series: 'persona'
-	},
-	{
 		name: 'Double Fangs',
 		affinity: 'Phys',
 		type: 'ATTACK',
@@ -2110,7 +2163,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 75,
-			display: 'Weak'
+			display: 'Weak',
+			type: 'Physical'
 		},
 		min: 2,
 		max: 2,
@@ -2130,7 +2184,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 100,
-			display: 'Weak'
+			display: 'Weak',
+			type: 'Physical'
 		},
 		min: 2,
 		max: 2,
@@ -2238,7 +2293,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 140,
-			display: 'Weak'
+			display: 'Weak',
+			type: 'Physical'
 		},
 		min: 1,
 		max: 1,
@@ -2260,7 +2316,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 110,
-			display: 'Weak'
+			display: 'Weak',
+			type: 'Physical'
 		},
 		min: 1,
 		max: 1,
@@ -2298,7 +2355,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 150,
-			display: 'Medium'
+			display: 'Medium',
+			type: 'Physical'
 		},
 		min: 1,
 		max: 1,
@@ -2406,7 +2464,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 80,
-			display: 'Weak'
+			display: 'Weak',
+			type: 'Magic'
 		},
 		min: 1,
 		max: 1,
@@ -2479,7 +2538,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 90,
-			display: 'Weak'
+			display: 'Weak',
+			type: 'Magic'
 		},
 		min: 3,
 		max: 6,
@@ -2632,7 +2692,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 250,
-			display: 'Severe'
+			display: 'Severe',
+			type: 'Magic'
 		},
 		min: 1,
 		max: 1,
@@ -2654,7 +2715,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 130,
-			display: 'Weak'
+			display: 'Weak',
+			type: 'Physical'
 		},
 		min: 1,
 		max: 1,
@@ -2686,7 +2748,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 160,
-			display: 'Weak'
+			display: 'Weak',
+			type: 'Physical'
 		},
 		min: 1,
 		max: 1,
@@ -2706,7 +2769,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 180,
-			display: 'Medium'
+			display: 'Medium',
+			type: 'Physical'
 		},
 		min: 1,
 		max: 1,
@@ -2752,7 +2816,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 300,
-			display: 'Severe'
+			display: 'Severe',
+			type: 'Physical'
 		},
 		min: 1,
 		max: 1,
@@ -2808,7 +2873,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 90,
-			display: 'Weak'
+			display: 'Weak',
+			type: 'Magic'
 		},
 		min: 2,
 		max: 5,
@@ -2828,7 +2894,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 200,
-			display: 'Medium'
+			display: 'Medium',
+			type: 'Physical'
 		},
 		min: 1,
 		max: 1,
@@ -2848,7 +2915,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 105,
-			display: 'Medium'
+			display: 'Medium',
+			type: 'Magic'
 		},
 		min: 3,
 		max: 7,
@@ -2893,7 +2961,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 125,
-			display: 'Medium'
+			display: 'Medium',
+			type: 'Physical'
 		},
 		min: 1,
 		max: 1,
@@ -2918,7 +2987,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 150,
-			display: 'Medium'
+			display: 'Medium',
+			type: 'Magic'
 		},
 		min: 2,
 		max: 5,
@@ -2955,15 +3025,6 @@ const skillData: Readonly<AnySkillData>[] = [
 		amount: 20,
 		element: 'Force',
 		stacks: '+'
-	},
-	{
-		name: 'Seal Boost',
-		affinity: 'Passive',
-		type: 'AILBOOST',
-		unique: false,
-		ailment: 'Seal',
-		amount: 25,
-		weather: false
 	},
 	{
 		name: 'Fortified Moxy',
@@ -3010,7 +3071,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 130,
-			display: 'Weak'
+			display: 'Weak',
+			type: 'Magic'
 		},
 		min: 1,
 		max: 1,
@@ -3030,7 +3092,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 215,
-			display: 'Heavy'
+			display: 'Heavy',
+			type: 'Magic'
 		},
 		min: 1,
 		max: 1,
@@ -3050,7 +3113,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 230,
-			display: 'Severe'
+			display: 'Severe',
+			type: 'Physical'
 		},
 		min: 1,
 		max: 1,
@@ -3070,7 +3134,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 160,
-			display: 'Medium'
+			display: 'Medium',
+			type: 'Magic'
 		},
 		min: 1,
 		max: 1,
@@ -3090,7 +3155,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 165,
-			display: 'Medium'
+			display: 'Medium',
+			type: 'Physical'
 		},
 		min: 1,
 		max: 1,
@@ -3146,7 +3212,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 270,
-			display: 'Severe'
+			display: 'Severe',
+			type: 'Physical'
 		},
 		min: 1,
 		max: 1,
@@ -3168,7 +3235,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 150,
-			display: 'Weak'
+			display: 'Weak',
+			type: 'Physical'
 		},
 		min: 1,
 		max: 1,
@@ -3205,7 +3273,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 130,
-			display: 'Weak'
+			display: 'Weak',
+			type: 'Magic'
 		},
 		min: 1,
 		max: 1,
@@ -3225,7 +3294,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 215,
-			display: 'Heavy'
+			display: 'Heavy',
+			type: 'Magic'
 		},
 		min: 1,
 		max: 1,
@@ -3245,7 +3315,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 160,
-			display: 'Medium'
+			display: 'Medium',
+			type: 'Magic'
 		},
 		min: 1,
 		max: 1,
@@ -3265,7 +3336,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 90,
-			display: 'Weak'
+			display: 'Weak',
+			type: 'Physical'
 		},
 		min: 3,
 		max: 4,
@@ -3285,7 +3357,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 150,
-			display: 'Medium'
+			display: 'Medium',
+			type: 'Magic'
 		},
 		min: 1,
 		max: 1,
@@ -3313,7 +3386,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 85,
-			display: 'Medium'
+			display: 'Medium',
+			type: 'Physical'
 		},
 		min: 1,
 		max: 1,
@@ -3335,7 +3409,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 240,
-			display: 'Heavy'
+			display: 'Heavy',
+			type: 'Physical'
 		},
 		min: 1,
 		max: 1,
@@ -3355,7 +3430,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 350,
-			display: 'Colossal'
+			display: 'Colossal',
+			type: 'Physical'
 		},
 		min: 1,
 		max: 1,
@@ -3375,7 +3451,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 150,
-			display: 'Medium'
+			display: 'Medium',
+			type: 'Magic'
 		},
 		min: 2,
 		max: 5,
@@ -3395,7 +3472,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 100,
-			display: 'Weak'
+			display: 'Weak',
+			type: 'Magic'
 		},
 		min: 1,
 		max: 1,
@@ -3417,7 +3495,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 400,
-			display: 'Colossal'
+			display: 'Colossal',
+			type: 'Physical'
 		},
 		min: 1,
 		max: 1,
@@ -3453,7 +3532,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 140,
-			display: 'Weak'
+			display: 'Weak',
+			type: 'Physical'
 		},
 		min: 1,
 		max: 1,
@@ -3542,7 +3622,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 300,
-			display: 'Severe'
+			display: 'Severe',
+			type: 'Physical'
 		},
 		min: 1,
 		max: 1,
@@ -3564,7 +3645,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 190,
-			display: 'Heavy'
+			display: 'Heavy',
+			type: 'Physical'
 		},
 		min: 1,
 		max: 1,
@@ -3584,29 +3666,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 140,
-			display: 'Weak'
-		},
-		min: 1,
-		max: 1,
-		flags: [
-			'Weakness Instakill'
-		],
-		ailments: [],
-		series: 'smt'
-	},
-	{
-		name: 'Hamabarion',
-		affinity: 'Light',
-		type: 'ATTACK',
-		unique: false,
-		range: 'One',
-		cost: {
-			type: 'MP',
-			amount: 55
-		},
-		power: {
-			amount: 265,
-			display: 'Severe'
+			display: 'Weak',
+			type: 'Magic'
 		},
 		min: 1,
 		max: 1,
@@ -3624,6 +3685,29 @@ const skillData: Readonly<AnySkillData>[] = [
 		element: 'Light'
 	},
 	{
+		name: 'Hamabarion',
+		affinity: 'Light',
+		type: 'ATTACK',
+		unique: false,
+		range: 'One',
+		cost: {
+			type: 'MP',
+			amount: 55
+		},
+		power: {
+			amount: 265,
+			display: 'Severe',
+			type: 'Magic'
+		},
+		min: 1,
+		max: 1,
+		flags: [
+			'Weakness Instakill'
+		],
+		ailments: [],
+		series: 'smt'
+	},
+	{
 		name: 'Hamaon',
 		affinity: 'Light',
 		type: 'ATTACK',
@@ -3635,7 +3719,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 175,
-			display: 'Heavy'
+			display: 'Heavy',
+			type: 'Magic'
 		},
 		min: 1,
 		max: 1,
@@ -3671,7 +3756,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 30,
-			display: 'Weak'
+			display: 'Weak',
+			type: 'Physical'
 		},
 		min: 8,
 		max: 8,
@@ -3691,7 +3777,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 150,
-			display: 'Weak'
+			display: 'Weak',
+			type: 'Physical'
 		},
 		min: 1,
 		max: 1,
@@ -3716,7 +3803,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 200,
-			display: 'Medium'
+			display: 'Medium',
+			type: 'Physical'
 		},
 		min: 1,
 		max: 1,
@@ -3730,13 +3818,6 @@ const skillData: Readonly<AnySkillData>[] = [
 		series: 'smt'
 	},
 	{
-		name: 'Healing Wave',
-		affinity: 'Passive',
-		type: 'NAVI',
-		unique: false,
-		description: 'Recover 5% HP after battle (party).'
-	},
-	{
 		name: 'Heal Pleroma',
 		affinity: 'Passive',
 		type: 'BOOST',
@@ -3744,6 +3825,13 @@ const skillData: Readonly<AnySkillData>[] = [
 		amount: 20,
 		element: 'Recovery',
 		stacks: '+'
+	},
+	{
+		name: 'Healing Wave',
+		affinity: 'Passive',
+		type: 'NAVI',
+		unique: false,
+		description: 'Recover 5% HP after battle (party).'
 	},
 	{
 		name: 'Heat Riser',
@@ -3784,7 +3872,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 100,
-			display: 'Weak'
+			display: 'Weak',
+			type: 'Physical'
 		},
 		min: 1,
 		max: 1,
@@ -3817,7 +3906,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 160,
-			display: 'Medium'
+			display: 'Medium',
+			type: 'Physical'
 		},
 		min: 1,
 		max: 1,
@@ -3839,7 +3929,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 150,
-			display: 'Heavy'
+			display: 'Heavy',
+			type: 'Magic'
 		},
 		min: 1,
 		max: 1,
@@ -3859,12 +3950,57 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 120,
-			display: 'Medium'
+			display: 'Medium',
+			type: 'Magic'
 		},
 		min: 1,
 		max: 1,
 		flags: [
 			'Revert Buffs'
+		],
+		ailments: [],
+		series: 'smt'
+	},
+	{
+		name: 'Hell Spin',
+		affinity: 'Phys',
+		type: 'ATTACK',
+		unique: true,
+		range: 'All',
+		cost: {
+			type: 'MP',
+			amount: 30
+		},
+		power: {
+			amount: 150,
+			display: 'Heavy',
+			type: 'Physical'
+		},
+		min: 1,
+		max: 1,
+		flags: [],
+		ailments: [],
+		series: 'smt'
+	},
+	{
+		name: 'Hell Thrust',
+		affinity: 'Phys',
+		type: 'ATTACK',
+		unique: false,
+		range: 'One',
+		cost: {
+			type: 'MP',
+			amount: 45
+		},
+		power: {
+			amount: 235,
+			display: 'Heavy',
+			type: 'Physical'
+		},
+		min: 1,
+		max: 1,
+		flags: [
+			'Pierce'
 		],
 		ailments: [],
 		series: 'smt'
@@ -3881,7 +4017,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 160,
-			display: 'Heavy'
+			display: 'Heavy',
+			type: 'Magic'
 		},
 		min: 1,
 		max: 1,
@@ -3911,7 +4048,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 55,
-			display: 'Weak'
+			display: 'Weak',
+			type: 'Physical'
 		},
 		min: 4,
 		max: 4,
@@ -3933,53 +4071,12 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 130,
-			display: 'Medium'
+			display: 'Medium',
+			type: 'Magic'
 		},
 		min: 1,
 		max: 1,
 		flags: [],
-		ailments: [],
-		series: 'smt'
-	},
-	{
-		name: 'Hell Spin',
-		affinity: 'Phys',
-		type: 'ATTACK',
-		unique: true,
-		range: 'All',
-		cost: {
-			type: 'MP',
-			amount: 30
-		},
-		power: {
-			amount: 150,
-			display: 'Heavy'
-		},
-		min: 1,
-		max: 1,
-		flags: [],
-		ailments: [],
-		series: 'smt'
-	},
-	{
-		name: 'Hell Thrust',
-		affinity: 'Phys',
-		type: 'ATTACK',
-		unique: false,
-		range: 'One',
-		cost: {
-			type: 'MP',
-			amount: 45
-		},
-		power: {
-			amount: 235,
-			display: 'Heavy'
-		},
-		min: 1,
-		max: 1,
-		flags: [
-			'Pierce'
-		],
 		ailments: [],
 		series: 'smt'
 	},
@@ -4146,7 +4243,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 90,
-			display: 'Weak'
+			display: 'Weak',
+			type: 'Physical'
 		},
 		min: 2,
 		max: 2,
@@ -4168,7 +4266,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 230,
-			display: 'Heavy'
+			display: 'Heavy',
+			type: 'Magic'
 		},
 		min: 1,
 		max: 1,
@@ -4224,7 +4323,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 90,
-			display: 'Weak'
+			display: 'Weak',
+			type: 'Magic'
 		},
 		min: 2,
 		max: 5,
@@ -4244,7 +4344,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 200,
-			display: 'Medium'
+			display: 'Medium',
+			type: 'Physical'
 		},
 		min: 1,
 		max: 1,
@@ -4338,7 +4439,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 160,
-			display: 'Medium'
+			display: 'Medium',
+			type: 'Magic'
 		},
 		min: 1,
 		max: 1,
@@ -4360,7 +4462,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 260,
-			display: 'Severe'
+			display: 'Severe',
+			type: 'Physical'
 		},
 		min: 1,
 		max: 1,
@@ -4404,7 +4507,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 150,
-			display: 'Heavy'
+			display: 'Heavy',
+			type: 'Physical'
 		},
 		min: 1,
 		max: 1,
@@ -4424,29 +4528,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 300,
-			display: 'Severe'
-		},
-		min: 1,
-		max: 1,
-		flags: [
-			'Pierce'
-		],
-		ailments: [],
-		series: 'smt'
-	},
-	{
-		name: 'Killing Wind',
-		affinity: 'Force',
-		type: 'ATTACK',
-		unique: false,
-		range: 'One',
-		cost: {
-			type: 'MP',
-			amount: 65
-		},
-		power: {
-			amount: 230,
-			display: 'Heavy'
+			display: 'Severe',
+			type: 'Physical'
 		},
 		min: 1,
 		max: 1,
@@ -4468,13 +4551,37 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 90,
-			display: 'Weak'
+			display: 'Weak',
+			type: 'Physical'
 		},
 		min: 1,
 		max: 3,
 		flags: [],
 		ailments: [],
 		series: 'persona'
+	},
+	{
+		name: 'Killing Wind',
+		affinity: 'Force',
+		type: 'ATTACK',
+		unique: false,
+		range: 'One',
+		cost: {
+			type: 'MP',
+			amount: 65
+		},
+		power: {
+			amount: 230,
+			display: 'Heavy',
+			type: 'Magic'
+		},
+		min: 1,
+		max: 1,
+		flags: [
+			'Pierce'
+		],
+		ailments: [],
+		series: 'smt'
 	},
 	{
 		name: 'King Bufula',
@@ -4488,7 +4595,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 110,
-			display: 'Medium'
+			display: 'Medium',
+			type: 'Magic'
 		},
 		min: 1,
 		max: 1,
@@ -4510,7 +4618,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 450,
-			display: 'Colossal'
+			display: 'Colossal',
+			type: 'Physical'
 		},
 		min: 1,
 		max: 1,
@@ -4560,7 +4669,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 120,
-			display: 'Weak'
+			display: 'Weak',
+			type: 'Magic'
 		},
 		min: 1,
 		max: 1,
@@ -4655,7 +4765,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 220,
-			display: 'Severe'
+			display: 'Severe',
+			type: 'Magic'
 		},
 		min: 1,
 		max: 1,
@@ -4677,7 +4788,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 25,
-			display: 'Minuscule'
+			display: 'Minuscule',
+			type: 'Physical'
 		},
 		min: 1,
 		max: 1,
@@ -4710,7 +4822,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 145,
-			display: 'Weak'
+			display: 'Weak',
+			type: 'Physical'
 		},
 		min: 1,
 		max: 1,
@@ -4763,7 +4876,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 95,
-			display: 'Weak'
+			display: 'Weak',
+			type: 'Magic'
 		},
 		min: 1,
 		max: 1,
@@ -4783,7 +4897,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 185,
-			display: 'Severe'
+			display: 'Severe',
+			type: 'Magic'
 		},
 		min: 1,
 		max: 1,
@@ -4803,7 +4918,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 155,
-			display: 'Heavy'
+			display: 'Heavy',
+			type: 'Magic'
 		},
 		min: 1,
 		max: 1,
@@ -4823,7 +4939,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 120,
-			display: 'Medium'
+			display: 'Medium',
+			type: 'Magic'
 		},
 		min: 1,
 		max: 1,
@@ -4843,7 +4960,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 270,
-			display: 'Severe'
+			display: 'Severe',
+			type: 'Physical'
 		},
 		min: 1,
 		max: 1,
@@ -4865,7 +4983,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 150,
-			display: 'Weak'
+			display: 'Weak',
+			type: 'Magic'
 		},
 		min: 2,
 		max: 5,
@@ -4890,7 +5009,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 165,
-			display: 'Heavy'
+			display: 'Heavy',
+			type: 'Physical'
 		},
 		min: 2,
 		max: 4,
@@ -4910,7 +5030,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 110,
-			display: 'Weak'
+			display: 'Weak',
+			type: 'Physical'
 		},
 		min: 1,
 		max: 1,
@@ -4935,7 +5056,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 95,
-			display: 'Weak'
+			display: 'Weak',
+			type: 'Magic'
 		},
 		min: 1,
 		max: 1,
@@ -4955,7 +5077,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 155,
-			display: 'Heavy'
+			display: 'Heavy',
+			type: 'Magic'
 		},
 		min: 1,
 		max: 1,
@@ -4975,7 +5098,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 120,
-			display: 'Medium'
+			display: 'Medium',
+			type: 'Magic'
 		},
 		min: 1,
 		max: 1,
@@ -4995,7 +5119,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 95,
-			display: 'Weak'
+			display: 'Weak',
+			type: 'Magic'
 		},
 		min: 1,
 		max: 1,
@@ -5015,7 +5140,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 155,
-			display: 'Heavy'
+			display: 'Heavy',
+			type: 'Magic'
 		},
 		min: 1,
 		max: 1,
@@ -5035,7 +5161,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 120,
-			display: 'Medium'
+			display: 'Medium',
+			type: 'Magic'
 		},
 		min: 1,
 		max: 1,
@@ -5055,7 +5182,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 155,
-			display: 'Heavy'
+			display: 'Heavy',
+			type: 'Magic'
 		},
 		min: 1,
 		max: 1,
@@ -5088,7 +5216,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 105,
-			display: 'Weak'
+			display: 'Weak',
+			type: 'Magic'
 		},
 		min: 1,
 		max: 1,
@@ -5110,7 +5239,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 185,
-			display: 'Severe'
+			display: 'Severe',
+			type: 'Magic'
 		},
 		min: 1,
 		max: 1,
@@ -5132,7 +5262,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 135,
-			display: 'Heavy'
+			display: 'Heavy',
+			type: 'Magic'
 		},
 		min: 1,
 		max: 1,
@@ -5199,7 +5330,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 105,
-			display: 'Weak'
+			display: 'Weak',
+			type: 'Magic'
 		},
 		min: 1,
 		max: 1,
@@ -5221,7 +5353,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 185,
-			display: 'Severe'
+			display: 'Severe',
+			type: 'Magic'
 		},
 		min: 1,
 		max: 1,
@@ -5243,7 +5376,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 135,
-			display: 'Heavy'
+			display: 'Heavy',
+			type: 'Magic'
 		},
 		min: 1,
 		max: 1,
@@ -5282,7 +5416,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 95,
-			display: 'Weak'
+			display: 'Weak',
+			type: 'Magic'
 		},
 		min: 1,
 		max: 1,
@@ -5302,7 +5437,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 120,
-			display: 'Medium'
+			display: 'Medium',
+			type: 'Magic'
 		},
 		min: 1,
 		max: 1,
@@ -5322,7 +5458,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 155,
-			display: 'Heavy'
+			display: 'Heavy',
+			type: 'Magic'
 		},
 		min: 1,
 		max: 1,
@@ -5342,7 +5479,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 95,
-			display: 'Weak'
+			display: 'Weak',
+			type: 'Magic'
 		},
 		min: 1,
 		max: 1,
@@ -5362,7 +5500,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 185,
-			display: 'Severe'
+			display: 'Severe',
+			type: 'Magic'
 		},
 		min: 1,
 		max: 1,
@@ -5382,7 +5521,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 155,
-			display: 'Heavy'
+			display: 'Heavy',
+			type: 'Magic'
 		},
 		min: 1,
 		max: 1,
@@ -5402,7 +5542,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 120,
-			display: 'Medium'
+			display: 'Medium',
+			type: 'Magic'
 		},
 		min: 1,
 		max: 1,
@@ -5452,7 +5593,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 185,
-			display: 'Severe'
+			display: 'Severe',
+			type: 'Magic'
 		},
 		min: 1,
 		max: 1,
@@ -5490,7 +5632,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 250,
-			display: 'Severe'
+			display: 'Severe',
+			type: 'Physical'
 		},
 		min: 2,
 		max: 2,
@@ -5586,7 +5729,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 95,
-			display: 'Weak'
+			display: 'Weak',
+			type: 'Magic'
 		},
 		min: 1,
 		max: 1,
@@ -5606,7 +5750,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 185,
-			display: 'Severe'
+			display: 'Severe',
+			type: 'Magic'
 		},
 		min: 1,
 		max: 1,
@@ -5626,7 +5771,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 155,
-			display: 'Heavy'
+			display: 'Heavy',
+			type: 'Magic'
 		},
 		min: 1,
 		max: 1,
@@ -5646,7 +5792,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 120,
-			display: 'Medium'
+			display: 'Medium',
+			type: 'Magic'
 		},
 		min: 1,
 		max: 1,
@@ -5666,7 +5813,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 95,
-			display: 'Weak'
+			display: 'Weak',
+			type: 'Magic'
 		},
 		min: 1,
 		max: 1,
@@ -5686,7 +5834,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 185,
-			display: 'Severe'
+			display: 'Severe',
+			type: 'Magic'
 		},
 		min: 1,
 		max: 1,
@@ -5706,7 +5855,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 155,
-			display: 'Heavy'
+			display: 'Heavy',
+			type: 'Magic'
 		},
 		min: 1,
 		max: 1,
@@ -5726,13 +5876,28 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 120,
-			display: 'Medium'
+			display: 'Medium',
+			type: 'Magic'
 		},
 		min: 1,
 		max: 1,
 		flags: [],
 		ailments: [],
 		series: 'smt'
+	},
+	{
+		name: 'Me Patra',
+		affinity: 'Recovery',
+		type: 'RECOVERY',
+		unique: false,
+		range: 'Party',
+		cost: 30,
+		ailments: [
+			'ALL'
+		],
+		amount: null,
+		buffs: [],
+		flags: []
 	},
 	{
 		name: 'Media',
@@ -5782,7 +5947,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 120,
-			display: 'Weak'
+			display: 'Weak',
+			type: 'Magic'
 		},
 		min: 1,
 		max: 1,
@@ -5804,7 +5970,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 260,
-			display: 'Heavy'
+			display: 'Heavy',
+			type: 'Physical'
 		},
 		min: 1,
 		max: 1,
@@ -5826,7 +5993,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 310,
-			display: 'Severe'
+			display: 'Severe',
+			type: 'Physical'
 		},
 		min: 1,
 		max: 1,
@@ -5846,7 +6014,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 125,
-			display: 'Medium'
+			display: 'Medium',
+			type: 'Magic'
 		},
 		min: 1,
 		max: 1,
@@ -5866,7 +6035,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 250,
-			display: 'Severe'
+			display: 'Severe',
+			type: 'Magic'
 		},
 		min: 1,
 		max: 1,
@@ -5888,7 +6058,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 160,
-			display: 'Heavy'
+			display: 'Heavy',
+			type: 'Magic'
 		},
 		min: 1,
 		max: 1,
@@ -5908,7 +6079,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 190,
-			display: 'Severe'
+			display: 'Severe',
+			type: 'Magic'
 		},
 		min: 1,
 		max: 1,
@@ -5928,7 +6100,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 130,
-			display: 'Weak'
+			display: 'Weak',
+			type: 'Physical'
 		},
 		min: 1,
 		max: 1,
@@ -5942,20 +6115,6 @@ const skillData: Readonly<AnySkillData>[] = [
 		series: 'persona'
 	},
 	{
-		name: 'Me Patra',
-		affinity: 'Recovery',
-		type: 'RECOVERY',
-		unique: false,
-		range: 'Party',
-		cost: 30,
-		ailments: [
-			'ALL'
-		],
-		amount: null,
-		buffs: [],
-		flags: []
-	},
-	{
 		name: 'Mighty Cleave',
 		affinity: 'Phys',
 		type: 'ATTACK',
@@ -5967,7 +6126,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 240,
-			display: 'Heavy'
+			display: 'Heavy',
+			type: 'Physical'
 		},
 		min: 1,
 		max: 1,
@@ -5989,7 +6149,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 150,
-			display: 'Medium'
+			display: 'Medium',
+			type: 'Physical'
 		},
 		min: 1,
 		max: 1,
@@ -6014,7 +6175,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 100,
-			display: 'Medium'
+			display: 'Medium',
+			type: 'Physical'
 		},
 		min: 1,
 		max: 1,
@@ -6034,7 +6196,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 100,
-			display: 'Medium'
+			display: 'Medium',
+			type: 'Physical'
 		},
 		min: 1,
 		max: 1,
@@ -6055,6 +6218,15 @@ const skillData: Readonly<AnySkillData>[] = [
 		flags: []
 	},
 	{
+		name: 'Mirage Boost',
+		affinity: 'Passive',
+		type: 'AILBOOST',
+		unique: false,
+		ailment: 'Mirage',
+		amount: 25,
+		weather: false
+	},
+	{
 		name: 'Mirage Shot',
 		affinity: 'Fire',
 		type: 'ATTACK',
@@ -6066,7 +6238,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 160,
-			display: 'Medium'
+			display: 'Medium',
+			type: 'Magic'
 		},
 		min: 1,
 		max: 1,
@@ -6091,7 +6264,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 120,
-			display: 'Medium'
+			display: 'Medium',
+			type: 'Physical'
 		},
 		min: 2,
 		max: 4,
@@ -6125,7 +6299,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 210,
-			display: 'Severe'
+			display: 'Severe',
+			type: 'Magic'
 		},
 		min: 1,
 		max: 1,
@@ -6145,7 +6320,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 250,
-			display: 'Heavy'
+			display: 'Heavy',
+			type: 'Physical'
 		},
 		min: 1,
 		max: 1,
@@ -6165,29 +6341,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 140,
-			display: 'Weak'
-		},
-		min: 1,
-		max: 1,
-		flags: [
-			'Weakness Instakill'
-		],
-		ailments: [],
-		series: 'smt'
-	},
-	{
-		name: 'Mudobarion',
-		affinity: 'Dark',
-		type: 'ATTACK',
-		unique: false,
-		range: 'One',
-		cost: {
-			type: 'MP',
-			amount: 55
-		},
-		power: {
-			amount: 265,
-			display: 'Severe'
+			display: 'Weak',
+			type: 'Magic'
 		},
 		min: 1,
 		max: 1,
@@ -6205,6 +6360,29 @@ const skillData: Readonly<AnySkillData>[] = [
 		element: 'Dark'
 	},
 	{
+		name: 'Mudobarion',
+		affinity: 'Dark',
+		type: 'ATTACK',
+		unique: false,
+		range: 'One',
+		cost: {
+			type: 'MP',
+			amount: 55
+		},
+		power: {
+			amount: 265,
+			display: 'Severe',
+			type: 'Magic'
+		},
+		min: 1,
+		max: 1,
+		flags: [
+			'Weakness Instakill'
+		],
+		ailments: [],
+		series: 'smt'
+	},
+	{
 		name: 'Mudoon',
 		affinity: 'Dark',
 		type: 'ATTACK',
@@ -6216,7 +6394,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 175,
-			display: 'Heavy'
+			display: 'Heavy',
+			type: 'Magic'
 		},
 		min: 1,
 		max: 1,
@@ -6238,7 +6417,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 275,
-			display: 'Severe'
+			display: 'Severe',
+			type: 'Physical'
 		},
 		min: 1,
 		max: 1,
@@ -6268,7 +6448,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 125,
-			display: 'Medium'
+			display: 'Medium',
+			type: 'Physical'
 		},
 		min: 1,
 		max: 1,
@@ -6293,7 +6474,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 80,
-			display: 'Weak'
+			display: 'Weak',
+			type: 'Physical'
 		},
 		min: 5,
 		max: 5,
@@ -6315,7 +6497,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 160,
-			display: 'Heavy'
+			display: 'Heavy',
+			type: 'Magic'
 		},
 		min: 3,
 		max: 3,
@@ -6335,7 +6518,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 230,
-			display: 'Heavy'
+			display: 'Heavy',
+			type: 'Magic'
 		},
 		min: 1,
 		max: 1,
@@ -6357,7 +6541,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 125,
-			display: 'Medium'
+			display: 'Medium',
+			type: 'Physical'
 		},
 		min: 1,
 		max: 1,
@@ -6382,7 +6567,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 70,
-			display: 'Weak'
+			display: 'Weak',
+			type: 'Physical'
 		},
 		min: 1,
 		max: 4,
@@ -6402,7 +6588,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 200,
-			display: 'Heavy'
+			display: 'Heavy',
+			type: 'Physical'
 		},
 		min: 1,
 		max: 1,
@@ -6443,7 +6630,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 125,
-			display: 'Heavy'
+			display: 'Heavy',
+			type: 'Physical'
 		},
 		min: 2,
 		max: 3,
@@ -6523,14 +6711,6 @@ const skillData: Readonly<AnySkillData>[] = [
 		newAffinity: 'Null'
 	},
 	{
-		name: 'Null Mirage',
-		affinity: 'Passive',
-		type: 'AILDEFENSIVE',
-		unique: false,
-		ailment: 'Mirage',
-		resistance: 'Null'
-	},
-	{
 		name: 'Null Elec',
 		affinity: 'Passive',
 		type: 'DEFENSIVE',
@@ -6555,14 +6735,6 @@ const skillData: Readonly<AnySkillData>[] = [
 		newAffinity: 'Null'
 	},
 	{
-		name: 'Null Seal',
-		affinity: 'Passive',
-		type: 'AILDEFENSIVE',
-		unique: false,
-		ailment: 'Seal',
-		resistance: 'Null'
-	},
-	{
 		name: 'Null Ice',
 		affinity: 'Passive',
 		type: 'DEFENSIVE',
@@ -6577,6 +6749,14 @@ const skillData: Readonly<AnySkillData>[] = [
 		unique: false,
 		element: 'Light',
 		newAffinity: 'Null'
+	},
+	{
+		name: 'Null Mirage',
+		affinity: 'Passive',
+		type: 'AILDEFENSIVE',
+		unique: false,
+		ailment: 'Mirage',
+		resistance: 'Null'
 	},
 	{
 		name: 'Null Nuke',
@@ -6608,6 +6788,14 @@ const skillData: Readonly<AnySkillData>[] = [
 		type: 'AILDEFENSIVE',
 		unique: false,
 		ailment: 'Rage',
+		resistance: 'Null'
+	},
+	{
+		name: 'Null Seal',
+		affinity: 'Passive',
+		type: 'AILDEFENSIVE',
+		unique: false,
+		ailment: 'Seal',
 		resistance: 'Null'
 	},
 	{
@@ -6651,7 +6839,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 280,
-			display: 'Severe'
+			display: 'Severe',
+			type: 'Physical'
 		},
 		min: 1,
 		max: 1,
@@ -6671,7 +6860,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 100,
-			display: 'Medium'
+			display: 'Medium',
+			type: 'Physical'
 		},
 		min: 1,
 		max: 1,
@@ -6717,7 +6907,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 170,
-			display: 'Medium'
+			display: 'Medium',
+			type: 'Physical'
 		},
 		min: 1,
 		max: 1,
@@ -6739,7 +6930,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 265,
-			display: 'Severe'
+			display: 'Severe',
+			type: 'Magic'
 		},
 		min: 1,
 		max: 1,
@@ -6759,7 +6951,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 180,
-			display: 'Medium'
+			display: 'Medium',
+			type: 'Physical'
 		},
 		min: 1,
 		max: 1,
@@ -6796,7 +6989,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 170,
-			display: 'Heavy'
+			display: 'Heavy',
+			type: 'Physical'
 		},
 		min: 1,
 		max: 1,
@@ -6848,7 +7042,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 130,
-			display: 'Weak'
+			display: 'Weak',
+			type: 'Physical'
 		},
 		min: 1,
 		max: 1,
@@ -6872,19 +7067,6 @@ const skillData: Readonly<AnySkillData>[] = [
 		flags: []
 	},
 	{
-		name: 'Poison Mist',
-		affinity: 'Ailment',
-		type: 'AILMENT',
-		unique: false,
-		range: 'All',
-		cost: 12,
-		ailments: [
-			'Poison'
-		],
-		chance: 55,
-		flags: []
-	},
-	{
 		name: 'Poison Adept',
 		affinity: 'Passive',
 		type: 'MISC',
@@ -6901,6 +7083,19 @@ const skillData: Readonly<AnySkillData>[] = [
 		description: 'Greatly increases effects of Poison.'
 	},
 	{
+		name: 'Poison Mist',
+		affinity: 'Ailment',
+		type: 'AILMENT',
+		unique: false,
+		range: 'All',
+		cost: 12,
+		ailments: [
+			'Poison'
+		],
+		chance: 55,
+		flags: []
+	},
+	{
 		name: 'Poison Skewer',
 		affinity: 'Phys',
 		type: 'ATTACK',
@@ -6912,7 +7107,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 110,
-			display: 'Weak'
+			display: 'Weak',
+			type: 'Physical'
 		},
 		min: 1,
 		max: 1,
@@ -6951,7 +7147,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 155,
-			display: 'Medium'
+			display: 'Medium',
+			type: 'Physical'
 		},
 		min: 1,
 		max: 1,
@@ -6973,7 +7170,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 180,
-			display: 'Medium'
+			display: 'Medium',
+			type: 'Physical'
 		},
 		min: 1,
 		max: 1,
@@ -7008,7 +7206,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 425,
-			display: 'Colossal'
+			display: 'Colossal',
+			type: 'Physical'
 		},
 		min: 1,
 		max: 1,
@@ -7028,7 +7227,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 240,
-			display: 'Heavy'
+			display: 'Heavy',
+			type: 'Magic'
 		},
 		min: 1,
 		max: 1,
@@ -7053,7 +7253,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 130,
-			display: 'Weak'
+			display: 'Weak',
+			type: 'Magic'
 		},
 		min: 1,
 		max: 1,
@@ -7073,7 +7274,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 160,
-			display: 'Medium'
+			display: 'Medium',
+			type: 'Magic'
 		},
 		min: 1,
 		max: 1,
@@ -7093,7 +7295,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 215,
-			display: 'Heavy'
+			display: 'Heavy',
+			type: 'Magic'
 		},
 		min: 1,
 		max: 1,
@@ -7128,6 +7331,14 @@ const skillData: Readonly<AnySkillData>[] = [
 		element: 'Psy'
 	},
 	{
+		name: 'Psy Wall',
+		affinity: 'Support',
+		type: 'WALL',
+		unique: false,
+		cost: 18,
+		element: 'Psy'
+	},
+	{
 		name: 'Psycho Blast',
 		affinity: 'Psy',
 		type: 'ATTACK',
@@ -7139,7 +7350,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 185,
-			display: 'Severe'
+			display: 'Severe',
+			type: 'Magic'
 		},
 		min: 1,
 		max: 1,
@@ -7159,21 +7371,14 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 265,
-			display: 'Severe'
+			display: 'Severe',
+			type: 'Magic'
 		},
 		min: 1,
 		max: 1,
 		flags: [],
 		ailments: [],
 		series: 'persona'
-	},
-	{
-		name: 'Psy Wall',
-		affinity: 'Support',
-		type: 'WALL',
-		unique: false,
-		cost: 18,
-		element: 'Psy'
 	},
 	{
 		name: 'Pulinpa',
@@ -7200,7 +7405,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 150,
-			display: 'Medium'
+			display: 'Medium',
+			type: 'Physical'
 		},
 		min: 1,
 		max: 1,
@@ -7222,7 +7428,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 75,
-			display: 'Weak'
+			display: 'Weak',
+			type: 'Physical'
 		},
 		min: 3,
 		max: 3,
@@ -7253,7 +7460,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 300,
-			display: 'Severe'
+			display: 'Severe',
+			type: 'Magic'
 		},
 		min: 1,
 		max: 1,
@@ -7273,7 +7481,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 300,
-			display: 'Severe'
+			display: 'Severe',
+			type: 'Magic'
 		},
 		min: 1,
 		max: 1,
@@ -7293,7 +7502,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 300,
-			display: 'Severe'
+			display: 'Severe',
+			type: 'Magic'
 		},
 		min: 1,
 		max: 1,
@@ -7313,7 +7523,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 300,
-			display: 'Severe'
+			display: 'Severe',
+			type: 'Magic'
 		},
 		min: 1,
 		max: 1,
@@ -7333,7 +7544,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 150,
-			display: 'Medium'
+			display: 'Medium',
+			type: 'Magic'
 		},
 		min: 2,
 		max: 5,
@@ -7353,7 +7565,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 260,
-			display: 'Heavy'
+			display: 'Heavy',
+			type: 'Physical'
 		},
 		min: 1,
 		max: 1,
@@ -7405,7 +7618,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 180,
-			display: 'Medium'
+			display: 'Medium',
+			type: 'Physical'
 		},
 		min: 2,
 		max: 5,
@@ -7414,6 +7628,28 @@ const skillData: Readonly<AnySkillData>[] = [
 		],
 		ailments: [],
 		series: 'smt'
+	},
+	{
+		name: 'Re Patra',
+		affinity: 'Recovery',
+		type: 'RECOVERY',
+		unique: false,
+		range: 'Ally',
+		cost: 5,
+		ailments: [
+			'Mirage'
+		],
+		amount: null,
+		buffs: [],
+		flags: []
+	},
+	{
+		name: 'Rebel Soul',
+		affinity: 'Passive',
+		type: 'MISC',
+		unique: false,
+		cost: null,
+		description: 'Showtime guage increases more quickly.'
 	},
 	{
 		name: 'Rebellion',
@@ -7435,7 +7671,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 450,
-			display: 'Colossal'
+			display: 'Colossal',
+			type: 'Magic'
 		},
 		min: 1,
 		max: 1,
@@ -7444,14 +7681,6 @@ const skillData: Readonly<AnySkillData>[] = [
 		],
 		ailments: [],
 		series: 'persona'
-	},
-	{
-		name: 'Rebel Soul',
-		affinity: 'Passive',
-		type: 'MISC',
-		unique: false,
-		cost: null,
-		description: 'Showtime guage increases more quickly.'
 	},
 	{
 		name: 'Recarm',
@@ -7518,20 +7747,6 @@ const skillData: Readonly<AnySkillData>[] = [
 		type: 'NAVI',
 		unique: false,
 		description: 'Recover 5% SP after battle (party).'
-	},
-	{
-		name: 'Re Patra',
-		affinity: 'Recovery',
-		type: 'RECOVERY',
-		unique: false,
-		range: 'Ally',
-		cost: 5,
-		ailments: [
-			'Mirage'
-		],
-		amount: null,
-		buffs: [],
-		flags: []
 	},
 	{
 		name: 'Repel Dark',
@@ -7646,14 +7861,6 @@ const skillData: Readonly<AnySkillData>[] = [
 		resistance: 'Resist'
 	},
 	{
-		name: 'Resist Mirage',
-		affinity: 'Passive',
-		type: 'AILDEFENSIVE',
-		unique: false,
-		ailment: 'Mirage',
-		resistance: 'Resist'
-	},
-	{
 		name: 'Resist Elec',
 		affinity: 'Passive',
 		type: 'DEFENSIVE',
@@ -7694,14 +7901,6 @@ const skillData: Readonly<AnySkillData>[] = [
 		newAffinity: 'Resist'
 	},
 	{
-		name: 'Resist Seal',
-		affinity: 'Passive',
-		type: 'AILDEFENSIVE',
-		unique: false,
-		ailment: 'Seal',
-		resistance: 'Resist'
-	},
-	{
 		name: 'Resist Ice',
 		affinity: 'Passive',
 		type: 'DEFENSIVE',
@@ -7716,6 +7915,14 @@ const skillData: Readonly<AnySkillData>[] = [
 		unique: false,
 		element: 'Light',
 		newAffinity: 'Resist'
+	},
+	{
+		name: 'Resist Mirage',
+		affinity: 'Passive',
+		type: 'AILDEFENSIVE',
+		unique: false,
+		ailment: 'Mirage',
+		resistance: 'Resist'
 	},
 	{
 		name: 'Resist Nuke',
@@ -7748,6 +7955,14 @@ const skillData: Readonly<AnySkillData>[] = [
 		unique: false,
 		element: 'Psy',
 		newAffinity: 'Resist'
+	},
+	{
+		name: 'Resist Seal',
+		affinity: 'Passive',
+		type: 'AILDEFENSIVE',
+		unique: false,
+		ailment: 'Seal',
+		resistance: 'Resist'
 	},
 	{
 		name: 'Resist Sleep',
@@ -7821,7 +8036,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 310,
-			display: 'Severe'
+			display: 'Severe',
+			type: 'Physical'
 		},
 		min: 1,
 		max: 1,
@@ -7841,7 +8057,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 220,
-			display: 'Heavy'
+			display: 'Heavy',
+			type: 'Physical'
 		},
 		min: 1,
 		max: 1,
@@ -7863,7 +8080,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 200,
-			display: 'Heavy'
+			display: 'Heavy',
+			type: 'Magic'
 		},
 		min: 1,
 		max: 1,
@@ -7883,7 +8101,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 140,
-			display: 'Heavy'
+			display: 'Heavy',
+			type: 'Magic'
 		},
 		min: 1,
 		max: 1,
@@ -7914,7 +8133,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 230,
-			display: 'Medium'
+			display: 'Medium',
+			type: 'Physical'
 		},
 		min: 1,
 		max: 1,
@@ -7962,7 +8182,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 120,
-			display: 'Weak'
+			display: 'Weak',
+			type: 'Magic'
 		},
 		min: 1,
 		max: 1,
@@ -7985,13 +8206,23 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 85,
-			display: 'Weak'
+			display: 'Weak',
+			type: 'Physical'
 		},
 		min: 2,
 		max: 4,
 		flags: [],
 		ailments: [],
 		series: 'smt'
+	},
+	{
+		name: 'Seal Boost',
+		affinity: 'Passive',
+		type: 'AILBOOST',
+		unique: false,
+		ailment: 'Seal',
+		amount: 25,
+		weather: false
 	},
 	{
 		name: 'Severing Bite',
@@ -8005,7 +8236,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 190,
-			display: 'Heavy'
+			display: 'Heavy',
+			type: 'Physical'
 		},
 		min: 1,
 		max: 1,
@@ -8059,7 +8291,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 15,
-			display: 'Weak'
+			display: 'Weak',
+			type: 'Magic'
 		},
 		min: 4,
 		max: 8,
@@ -8088,7 +8321,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 90,
-			display: 'Weak'
+			display: 'Weak',
+			type: 'Magic'
 		},
 		min: 2,
 		max: 5,
@@ -8108,7 +8342,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 140,
-			display: 'Medium'
+			display: 'Medium',
+			type: 'Magic'
 		},
 		min: 1,
 		max: 1,
@@ -8130,7 +8365,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 130,
-			display: 'Weak'
+			display: 'Weak',
+			type: 'Physical'
 		},
 		min: 1,
 		max: 1,
@@ -8150,7 +8386,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 125,
-			display: 'Medium'
+			display: 'Medium',
+			type: 'Physical'
 		},
 		min: 1,
 		max: 1,
@@ -8175,7 +8412,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 125,
-			display: 'Medium'
+			display: 'Medium',
+			type: 'Physical'
 		},
 		min: 1,
 		max: 1,
@@ -8223,7 +8461,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 100,
-			display: 'Medium'
+			display: 'Medium',
+			type: 'Physical'
 		},
 		min: 1,
 		max: 1,
@@ -8243,7 +8482,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 160,
-			display: 'Weak'
+			display: 'Weak',
+			type: 'Physical'
 		},
 		min: 1,
 		max: 1,
@@ -8265,7 +8505,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 140,
-			display: 'Weak'
+			display: 'Weak',
+			type: 'Physical'
 		},
 		min: 1,
 		max: 1,
@@ -8285,7 +8526,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 330,
-			display: 'Severe'
+			display: 'Severe',
+			type: 'Magic'
 		},
 		min: 1,
 		max: 1,
@@ -8328,7 +8570,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 230,
-			display: 'Severe'
+			display: 'Severe',
+			type: 'Magic'
 		},
 		min: 1,
 		max: 1,
@@ -8380,7 +8623,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 100,
-			display: 'Weak'
+			display: 'Weak',
+			type: 'Magic'
 		},
 		min: 1,
 		max: 1,
@@ -8433,30 +8677,11 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 75,
-			display: 'Medium'
+			display: 'Medium',
+			type: 'Physical'
 		},
 		min: 1,
 		max: 4,
-		flags: [],
-		ailments: [],
-		series: 'smt'
-	},
-	{
-		name: 'Stormcaller Song',
-		affinity: 'Ice',
-		type: 'ATTACK',
-		unique: true,
-		range: 'Random',
-		cost: {
-			type: 'MP',
-			amount: 18
-		},
-		power: {
-			amount: 60,
-			display: 'Weak'
-		},
-		min: 3,
-		max: 6,
 		flags: [],
 		ailments: [],
 		series: 'smt'
@@ -8473,10 +8698,32 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 200,
-			display: 'Medium'
+			display: 'Medium',
+			type: 'Physical'
 		},
 		min: 1,
 		max: 1,
+		flags: [],
+		ailments: [],
+		series: 'smt'
+	},
+	{
+		name: 'Stormcaller Song',
+		affinity: 'Ice',
+		type: 'ATTACK',
+		unique: true,
+		range: 'Random',
+		cost: {
+			type: 'MP',
+			amount: 18
+		},
+		power: {
+			amount: 60,
+			display: 'Weak',
+			type: 'Magic'
+		},
+		min: 3,
+		max: 6,
 		flags: [],
 		ailments: [],
 		series: 'smt'
@@ -8580,7 +8827,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 25,
-			display: 'Minuscule'
+			display: 'Minuscule',
+			type: 'Physical'
 		},
 		min: 2,
 		max: 4,
@@ -8600,7 +8848,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 375,
-			display: 'Colossal'
+			display: 'Colossal',
+			type: 'Physical'
 		},
 		min: 1,
 		max: 1,
@@ -8620,7 +8869,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 230,
-			display: 'Severe'
+			display: 'Severe',
+			type: 'Magic'
 		},
 		min: 1,
 		max: 1,
@@ -8701,7 +8951,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 20,
-			display: 'Minuscule'
+			display: 'Minuscule',
+			type: 'Physical'
 		},
 		min: 3,
 		max: 5,
@@ -8723,6 +8974,32 @@ const skillData: Readonly<AnySkillData>[] = [
 		flags: []
 	},
 	{
+		name: 'Terror Claw',
+		affinity: 'Phys',
+		type: 'ATTACK',
+		unique: false,
+		range: 'One',
+		cost: {
+			type: 'HP',
+			amount: 8
+		},
+		power: {
+			amount: 90,
+			display: 'Medium',
+			type: 'Physical'
+		},
+		min: 1,
+		max: 1,
+		flags: [],
+		ailments: [
+			{
+				name: 'Fear',
+				chance: 20
+			}
+		],
+		series: 'persona'
+	},
+	{
 		name: 'Terrorblade',
 		affinity: 'Phys',
 		type: 'ATTACK',
@@ -8734,7 +9011,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 250,
-			display: 'Heavy'
+			display: 'Heavy',
+			type: 'Physical'
 		},
 		min: 1,
 		max: 3,
@@ -8748,31 +9026,6 @@ const skillData: Readonly<AnySkillData>[] = [
 			}
 		],
 		series: 'smt'
-	},
-	{
-		name: 'Terror Claw',
-		affinity: 'Phys',
-		type: 'ATTACK',
-		unique: false,
-		range: 'One',
-		cost: {
-			type: 'HP',
-			amount: 8
-		},
-		power: {
-			amount: 90,
-			display: 'Medium'
-		},
-		min: 1,
-		max: 1,
-		flags: [],
-		ailments: [
-			{
-				name: 'Fear',
-				chance: 20
-			}
-		],
-		series: 'persona'
 	},
 	{
 		name: 'Tetra Break',
@@ -8816,7 +9069,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 95,
-			display: 'Weak'
+			display: 'Weak',
+			type: 'Magic'
 		},
 		min: 3,
 		max: 7,
@@ -8868,7 +9122,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 150,
-			display: 'Medium'
+			display: 'Medium',
+			type: 'Magic'
 		},
 		min: 2,
 		max: 5,
@@ -8888,7 +9143,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 150,
-			display: 'Medium'
+			display: 'Medium',
+			type: 'Physical'
 		},
 		min: 1,
 		max: 1,
@@ -8908,7 +9164,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 190,
-			display: 'Severe'
+			display: 'Severe',
+			type: 'Magic'
 		},
 		min: 1,
 		max: 1,
@@ -8933,7 +9190,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 75,
-			display: 'Medium'
+			display: 'Medium',
+			type: 'Physical'
 		},
 		min: 2,
 		max: 4,
@@ -8961,7 +9219,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 120,
-			display: 'Medium'
+			display: 'Medium',
+			type: 'Magic'
 		},
 		min: 1,
 		max: 1,
@@ -9014,7 +9273,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 110,
-			display: 'Weak'
+			display: 'Weak',
+			type: 'Physical'
 		},
 		min: 1,
 		max: 1,
@@ -9077,7 +9337,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 40,
-			display: 'Weak'
+			display: 'Weak',
+			type: 'Physical'
 		},
 		min: 3,
 		max: 3,
@@ -9097,7 +9358,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 230,
-			display: 'Heavy'
+			display: 'Heavy',
+			type: 'Magic'
 		},
 		min: 1,
 		max: 1,
@@ -9143,7 +9405,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 185,
-			display: 'Severe'
+			display: 'Severe',
+			type: 'Magic'
 		},
 		min: 1,
 		max: 1,
@@ -9163,7 +9426,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 100,
-			display: 'Medium'
+			display: 'Medium',
+			type: 'Physical'
 		},
 		min: 1,
 		max: 1,
@@ -9201,7 +9465,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 160,
-			display: 'Weak'
+			display: 'Weak',
+			type: 'Physical'
 		},
 		min: 1,
 		max: 1,
@@ -9223,7 +9488,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 150,
-			display: 'Medium'
+			display: 'Medium',
+			type: 'Physical'
 		},
 		min: 1,
 		max: 1,
@@ -9259,7 +9525,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 300,
-			display: 'Heavy'
+			display: 'Heavy',
+			type: 'Physical'
 		},
 		min: 1,
 		max: 1,
@@ -9281,7 +9548,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 150,
-			display: 'Medium'
+			display: 'Medium',
+			type: 'Magic'
 		},
 		min: 1,
 		max: 1,
@@ -9306,7 +9574,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 175,
-			display: 'Heavy'
+			display: 'Heavy',
+			type: 'Physical'
 		},
 		min: 1,
 		max: 1,
@@ -9331,7 +9600,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 280,
-			display: 'Severe'
+			display: 'Severe',
+			type: 'Physical'
 		},
 		min: 1,
 		max: 1,
@@ -9364,7 +9634,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 300,
-			display: 'Severe'
+			display: 'Severe',
+			type: 'Magic'
 		},
 		min: 1,
 		max: 1,
@@ -9393,7 +9664,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 200,
-			display: 'Medium'
+			display: 'Medium',
+			type: 'Physical'
 		},
 		min: 1,
 		max: 1,
@@ -9441,7 +9713,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 90,
-			display: 'Weak'
+			display: 'Weak',
+			type: 'Magic'
 		},
 		min: 2,
 		max: 5,
@@ -9461,7 +9734,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 200,
-			display: 'Medium'
+			display: 'Medium',
+			type: 'Physical'
 		},
 		min: 1,
 		max: 1,
@@ -9497,7 +9771,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 30,
-			display: 'Weak'
+			display: 'Weak',
+			type: 'Physical'
 		},
 		min: 8,
 		max: 8,
@@ -9519,7 +9794,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 60,
-			display: 'Weak'
+			display: 'Weak',
+			type: 'Physical'
 		},
 		min: 1,
 		max: 1,
@@ -9555,7 +9831,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 130,
-			display: 'Weak'
+			display: 'Weak',
+			type: 'Magic'
 		},
 		min: 1,
 		max: 1,
@@ -9575,7 +9852,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 265,
-			display: 'Severe'
+			display: 'Severe',
+			type: 'Magic'
 		},
 		min: 1,
 		max: 1,
@@ -9595,7 +9873,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 215,
-			display: 'Heavy'
+			display: 'Heavy',
+			type: 'Magic'
 		},
 		min: 1,
 		max: 1,
@@ -9615,7 +9894,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 160,
-			display: 'Medium'
+			display: 'Medium',
+			type: 'Magic'
 		},
 		min: 1,
 		max: 1,
@@ -9635,7 +9915,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 130,
-			display: 'Weak'
+			display: 'Weak',
+			type: 'Magic'
 		},
 		min: 1,
 		max: 1,
@@ -9655,7 +9936,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 265,
-			display: 'Severe'
+			display: 'Severe',
+			type: 'Magic'
 		},
 		min: 1,
 		max: 1,
@@ -9675,7 +9957,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 215,
-			display: 'Heavy'
+			display: 'Heavy',
+			type: 'Magic'
 		},
 		min: 1,
 		max: 1,
@@ -9695,7 +9978,8 @@ const skillData: Readonly<AnySkillData>[] = [
 		},
 		power: {
 			amount: 160,
-			display: 'Medium'
+			display: 'Medium',
+			type: 'Magic'
 		},
 		min: 1,
 		max: 1,

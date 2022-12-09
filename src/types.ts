@@ -32,6 +32,9 @@ export type CounterDisplay = 'Weak' | 'Medium';
 /** Displayed damage values for AttackSkill instances */
 export type AttackDisplay = CounterDisplay | 'Minuscule' | 'Heavy' | 'Severe' | 'Colossal';
 
+/** Types of damage dealt */
+export type DamageType = 'Physical' | 'Magic';
+
 export interface DemonAffinities {
 	/** The affinities that the demon is weak to */
 	weak: DamagingAffinity[];

@@ -1,4 +1,4 @@
-import type { AilResistance, Ailment, AllyRange, AnyAffinity, AnyRange, Arcana, AttackDisplay, Barrier, Buff, Charge, CounterAffinity, CounterDisplay, DamagingAffinity, DemonAffinities, DemonStats, EnemyRange, EvasionBoostCriteria, Game, HPMP, HPMPAil, LightDark, PersonaAffinity, PostBattleStat, Race, RecoveryAmount, RegenCriteria, Resistance, RestoreCriteria, SMTAffinity, Series, SkillType, Stage } from './types';
+import type { AilResistance, Ailment, AllyRange, AnyAffinity, AnyRange, Arcana, AttackDisplay, Barrier, Buff, Charge, CounterAffinity, CounterDisplay, DamageType, DamagingAffinity, DemonAffinities, DemonStats, EnemyRange, EvasionBoostCriteria, Game, HPMP, HPMPAil, LightDark, PersonaAffinity, PostBattleStat, Race, RecoveryAmount, RegenCriteria, Resistance, RestoreCriteria, SMTAffinity, Series, SkillType, Stage } from './types';
 
 /** Data used for constructing a Demon instance */
 export interface DemonData {
@@ -76,6 +76,7 @@ export interface AttackSkillData extends SkillData {
 	power: {
 		amount: number;
 		display: AttackDisplay;
+		type: DamageType;
 	};
 	range: EnemyRange;
 	series: Series;
