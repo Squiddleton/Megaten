@@ -37,20 +37,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Almighty',
 		type: 'ATTACK',
 		unique: true,
-		range: 'All',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 50
 		},
+		flags: [],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 270,
 			display: 'Severe',
 			type: 'Magic'
 		},
-		min: 1,
-		max: 1,
-		flags: [],
-		ailments: [],
+		range: 'All',
 		series: 'persona'
 	},
 	{
@@ -66,20 +66,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Dark',
 		type: 'ATTACK',
 		unique: true,
-		range: 'All',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 30
 		},
+		flags: [],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 205,
 			display: 'Severe',
 			type: 'Magic'
 		},
-		min: 1,
-		max: 1,
-		flags: [],
-		ailments: [],
+		range: 'All',
 		series: 'persona'
 	},
 	{
@@ -87,20 +87,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 'One',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 25
 		},
+		flags: [],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 80,
 			display: 'Weak',
 			type: 'Physical'
 		},
-		min: 1,
-		max: 1,
-		flags: [],
-		ailments: [],
+		range: 'One',
 		series: 'smt'
 	},
 	{
@@ -116,20 +116,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Fire',
 		type: 'ATTACK',
 		unique: false,
-		range: 'One',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 10
 		},
+		flags: [],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 130,
 			display: 'Weak',
 			type: 'Magic'
 		},
-		min: 1,
-		max: 1,
-		flags: [],
-		ailments: [],
+		range: 'One',
 		series: 'smt'
 	},
 	{
@@ -137,20 +137,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Fire',
 		type: 'ATTACK',
 		unique: false,
-		range: 'One',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 50
 		},
+		flags: [],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 265,
 			display: 'Severe',
 			type: 'Magic'
 		},
-		min: 1,
-		max: 1,
-		flags: [],
-		ailments: [],
+		range: 'One',
 		series: 'smt'
 	},
 	{
@@ -158,20 +158,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Fire',
 		type: 'ATTACK',
 		unique: false,
-		range: 'One',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 35
 		},
+		flags: [],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 215,
 			display: 'Heavy',
 			type: 'Magic'
 		},
-		min: 1,
-		max: 1,
-		flags: [],
-		ailments: [],
+		range: 'One',
 		series: 'smt'
 	},
 	{
@@ -179,20 +179,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Fire',
 		type: 'ATTACK',
 		unique: false,
-		range: 'One',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 20
 		},
+		flags: [],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 160,
 			display: 'Medium',
 			type: 'Magic'
 		},
-		min: 1,
-		max: 1,
-		flags: [],
-		ailments: [],
+		range: 'One',
 		series: 'smt'
 	},
 	{
@@ -200,20 +200,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 'All',
+		ailments: [],
 		cost: {
 			type: 'HP',
 			amount: 24
 		},
+		flags: [],
+		max: 3,
+		min: 1,
 		power: {
 			amount: 150,
 			display: 'Medium',
 			type: 'Physical'
 		},
-		min: 1,
-		max: 3,
-		flags: [],
-		ailments: [],
+		range: 'All',
 		series: 'persona'
 	},
 	{
@@ -230,22 +230,22 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 'One',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 50
 		},
+		flags: [
+			'Crit Damage Boost'
+		],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 275,
 			display: 'Severe',
 			type: 'Physical'
 		},
-		min: 1,
-		max: 1,
-		flags: [
-			'Crit Damage Boost'
-		],
-		ailments: [],
+		range: 'One',
 		series: 'smt'
 	},
 	{
@@ -308,20 +308,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: true,
-		range: 'Random',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 20
 		},
+		flags: [],
+		max: 6,
+		min: 3,
 		power: {
 			amount: 85,
 			display: 'Weak',
 			type: 'Physical'
 		},
-		min: 3,
-		max: 6,
-		flags: [],
-		ailments: [],
+		range: 'Random',
 		series: 'smt'
 	},
 	{
@@ -356,20 +356,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: true,
-		range: 'One',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 10
 		},
+		flags: [],
+		max: 8,
+		min: 8,
 		power: {
 			amount: 20,
 			display: 'Weak',
 			type: 'Physical'
 		},
-		min: 8,
-		max: 8,
-		flags: [],
-		ailments: [],
+		range: 'One',
 		series: 'smt'
 	},
 	{
@@ -384,20 +384,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 'All',
+		ailments: [],
 		cost: {
 			type: 'HP',
 			amount: 18
 		},
+		flags: [],
+		max: 2,
+		min: 2,
 		power: {
 			amount: 125,
 			display: 'Heavy',
 			type: 'Physical'
 		},
-		min: 2,
-		max: 2,
-		flags: [],
-		ailments: [],
+		range: 'All',
 		series: 'persona'
 	},
 	{
@@ -405,20 +405,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 'One',
+		ailments: [],
 		cost: {
 			type: 'HP',
 			amount: 13
 		},
+		flags: [],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 180,
 			display: 'Heavy',
 			type: 'Physical'
 		},
-		min: 1,
-		max: 1,
-		flags: [],
-		ailments: [],
+		range: 'One',
 		series: 'persona'
 	},
 	{
@@ -426,20 +426,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: true,
-		range: 'Random',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 40
 		},
+		flags: [],
+		max: 15,
+		min: 15,
 		power: {
 			amount: 20,
 			display: 'Weak',
 			type: 'Physical'
 		},
-		min: 15,
-		max: 15,
-		flags: [],
-		ailments: [],
+		range: 'Random',
 		series: 'smt'
 	},
 	{
@@ -447,20 +447,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Nuke',
 		type: 'ATTACK',
 		unique: false,
-		range: 'One',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 48
 		},
+		flags: [],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 265,
 			display: 'Severe',
 			type: 'Magic'
 		},
-		min: 1,
-		max: 1,
-		flags: [],
-		ailments: [],
+		range: 'One',
 		series: 'persona'
 	},
 	{
@@ -500,20 +500,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 'Random',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 24
 		},
+		flags: [],
+		max: 4,
+		min: 2,
 		power: {
 			amount: 120,
 			display: 'Medium',
 			type: 'Physical'
 		},
-		min: 2,
-		max: 4,
-		flags: [],
-		ailments: [],
+		range: 'Random',
 		series: 'smt'
 	},
 	{
@@ -521,22 +521,22 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: true,
-		range: 'One',
+		ailments: [],
 		cost: {
 			type: 'HP',
 			amount: 25
 		},
+		flags: [
+			'Accuracy Boost'
+		],
+		max: 3,
+		min: 3,
 		power: {
 			amount: 125,
 			display: 'Medium',
 			type: 'Physical'
 		},
-		min: 3,
-		max: 3,
-		flags: [
-			'Accuracy Boost'
-		],
-		ailments: [],
+		range: 'One',
 		series: 'persona'
 	},
 	{
@@ -544,25 +544,25 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Almighty',
 		type: 'ATTACK',
 		unique: true,
-		range: 'All',
-		cost: {
-			type: 'MP',
-			amount: 80
-		},
-		power: {
-			amount: 180,
-			display: 'Severe',
-			type: 'Magic'
-		},
-		min: 1,
-		max: 1,
-		flags: [],
 		ailments: [
 			{
 				name: 'Confuse',
 				chance: 45
 			}
 		],
+		cost: {
+			type: 'MP',
+			amount: 80
+		},
+		flags: [],
+		max: 1,
+		min: 1,
+		power: {
+			amount: 180,
+			display: 'Severe',
+			type: 'Magic'
+		},
+		range: 'All',
 		series: 'smt'
 	},
 	{
@@ -570,25 +570,25 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 'All',
-		cost: {
-			type: 'HP',
-			amount: 21
-		},
-		power: {
-			amount: 150,
-			display: 'Medium',
-			type: 'Physical'
-		},
-		min: 1,
-		max: 1,
-		flags: [],
 		ailments: [
 			{
 				name: 'Despair',
 				chance: 5
 			}
 		],
+		cost: {
+			type: 'HP',
+			amount: 21
+		},
+		flags: [],
+		max: 1,
+		min: 1,
+		power: {
+			amount: 150,
+			display: 'Medium',
+			type: 'Physical'
+		},
+		range: 'All',
 		series: 'persona'
 	},
 	{
@@ -612,20 +612,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 'One',
+		ailments: [],
 		cost: {
 			type: 'HP',
 			amount: 5
 		},
+		flags: [],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 110,
 			display: 'Weak',
 			type: 'Physical'
 		},
-		min: 1,
-		max: 1,
-		flags: [],
-		ailments: [],
+		range: 'One',
 		series: 'persona'
 	},
 	{
@@ -641,22 +641,22 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: true,
-		range: 'One',
+		ailments: [],
 		cost: {
 			type: 'HP',
 			amount: 20
 		},
+		flags: [
+			'Attack Reduced'
+		],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 600,
 			display: 'Colossal',
 			type: 'Physical'
 		},
-		min: 1,
-		max: 1,
-		flags: [
-			'Attack Reduced'
-		],
-		ailments: [],
+		range: 'One',
 		series: 'persona'
 	},
 	{
@@ -664,22 +664,22 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 'One',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 15
 		},
+		flags: [
+			'HP Dependent'
+		],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 110,
 			display: 'Weak',
 			type: 'Physical'
 		},
-		min: 1,
-		max: 1,
-		flags: [
-			'HP Dependent'
-		],
-		ailments: [],
+		range: 'One',
 		series: 'smt'
 	},
 	{
@@ -687,20 +687,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 'One',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 15
 		},
+		flags: [],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 180,
 			display: 'Medium',
 			type: 'Physical'
 		},
-		min: 1,
-		max: 1,
-		flags: [],
-		ailments: [],
+		range: 'One',
 		series: 'smt'
 	},
 	{
@@ -708,22 +708,22 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 'One',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 5
 		},
+		flags: [
+			'Crit Damage Boost'
+		],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 130,
 			display: 'Weak',
 			type: 'Physical'
 		},
-		min: 1,
-		max: 1,
-		flags: [
-			'Crit Damage Boost'
-		],
-		ailments: [],
+		range: 'One',
 		series: 'smt'
 	},
 	{
@@ -731,22 +731,22 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Dark',
 		type: 'ATTACK',
 		unique: false,
-		range: 'One',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 30
 		},
+		flags: [
+			'Weakness Instakill'
+		],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 200,
 			display: 'Medium',
 			type: 'Physical'
 		},
-		min: 1,
-		max: 1,
-		flags: [
-			'Weakness Instakill'
-		],
-		ailments: [],
+		range: 'One',
 		series: 'smt'
 	},
 	{
@@ -754,20 +754,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 'One',
+		ailments: [],
 		cost: {
 			type: 'HP',
 			amount: 16
 		},
+		flags: [],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 200,
 			display: 'Medium',
 			type: 'Physical'
 		},
-		min: 1,
-		max: 1,
-		flags: [],
-		ailments: [],
+		range: 'One',
 		series: 'persona'
 	},
 	{
@@ -775,20 +775,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Almighty',
 		type: 'ATTACK',
 		unique: true,
-		range: 'One',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 48
 		},
+		flags: [],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 210,
 			display: 'Severe',
 			type: 'Magic'
 		},
-		min: 1,
-		max: 1,
-		flags: [],
-		ailments: [],
+		range: 'One',
 		series: 'persona'
 	},
 	{
@@ -796,20 +796,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 'All',
+		ailments: [],
 		cost: {
 			type: 'HP',
 			amount: 18
 		},
+		flags: [],
+		max: 4,
+		min: 2,
 		power: {
 			amount: 80,
 			display: 'Medium',
 			type: 'Physical'
 		},
-		min: 2,
-		max: 4,
-		flags: [],
-		ailments: [],
+		range: 'All',
 		series: 'persona'
 	},
 	{
@@ -828,25 +828,25 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 'Random',
-		cost: {
-			type: 'MP',
-			amount: 20
-		},
-		power: {
-			amount: 100,
-			display: 'Weak',
-			type: 'Physical'
-		},
-		min: 2,
-		max: 4,
-		flags: [],
 		ailments: [
 			{
 				name: 'Poison',
 				chance: 35
 			}
 		],
+		cost: {
+			type: 'MP',
+			amount: 20
+		},
+		flags: [],
+		max: 4,
+		min: 2,
+		power: {
+			amount: 100,
+			display: 'Weak',
+			type: 'Physical'
+		},
+		range: 'Random',
 		series: 'smt'
 	},
 	{
@@ -854,22 +854,22 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 'One',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 15
 		},
+		flags: [
+			'Accuracy/Evasion Down'
+		],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 130,
 			display: 'Weak',
 			type: 'Physical'
 		},
-		min: 1,
-		max: 1,
-		flags: [
-			'Accuracy/Evasion Down'
-		],
-		ailments: [],
+		range: 'One',
 		series: 'smt'
 	},
 	{
@@ -877,25 +877,25 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 'All',
-		cost: {
-			type: 'HP',
-			amount: 22
-		},
-		power: {
-			amount: 200,
-			display: 'Heavy',
-			type: 'Physical'
-		},
-		min: 1,
-		max: 1,
-		flags: [],
 		ailments: [
 			{
 				name: 'Fear',
 				chance: 5
 			}
 		],
+		cost: {
+			type: 'HP',
+			amount: 22
+		},
+		flags: [],
+		max: 1,
+		min: 1,
+		power: {
+			amount: 200,
+			display: 'Heavy',
+			type: 'Physical'
+		},
+		range: 'All',
 		series: 'persona'
 	},
 	{
@@ -927,20 +927,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 'One',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 12
 		},
+		flags: [],
+		max: 3,
+		min: 1,
 		power: {
 			amount: 65,
 			display: 'Weak',
 			type: 'Physical'
 		},
-		min: 1,
-		max: 3,
-		flags: [],
-		ailments: [],
+		range: 'One',
 		series: 'smt'
 	},
 	{
@@ -957,25 +957,25 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 'All',
-		cost: {
-			type: 'HP',
-			amount: 22
-		},
-		power: {
-			amount: 200,
-			display: 'Heavy',
-			type: 'Physical'
-		},
-		min: 1,
-		max: 1,
-		flags: [],
 		ailments: [
 			{
 				name: 'Charm',
 				chance: 5
 			}
 		],
+		cost: {
+			type: 'HP',
+			amount: 22
+		},
+		flags: [],
+		max: 1,
+		min: 1,
+		power: {
+			amount: 200,
+			display: 'Heavy',
+			type: 'Physical'
+		},
+		range: 'All',
 		series: 'persona'
 	},
 	{
@@ -983,25 +983,25 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 'One',
-		cost: {
-			type: 'HP',
-			amount: 9
-		},
-		power: {
-			amount: 100,
-			display: 'Medium',
-			type: 'Physical'
-		},
-		min: 1,
-		max: 1,
-		flags: [],
 		ailments: [
 			{
 				name: 'Charm',
 				chance: 20
 			}
 		],
+		cost: {
+			type: 'HP',
+			amount: 9
+		},
+		flags: [],
+		max: 1,
+		min: 1,
+		power: {
+			amount: 100,
+			display: 'Medium',
+			type: 'Physical'
+		},
+		range: 'One',
 		series: 'persona'
 	},
 	{
@@ -1009,20 +1009,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 'One',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 45
 		},
+		flags: [],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 220,
 			display: 'Heavy',
 			type: 'Physical'
 		},
-		min: 1,
-		max: 1,
-		flags: [],
-		ailments: [],
+		range: 'One',
 		series: 'smt'
 	},
 	{
@@ -1038,20 +1038,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Ice',
 		type: 'ATTACK',
 		unique: false,
-		range: 'One',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 10
 		},
+		flags: [],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 130,
 			display: 'Weak',
 			type: 'Magic'
 		},
-		min: 1,
-		max: 1,
-		flags: [],
-		ailments: [],
+		range: 'One',
 		series: 'smt'
 	},
 	{
@@ -1059,20 +1059,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Ice',
 		type: 'ATTACK',
 		unique: false,
-		range: 'One',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 50
 		},
+		flags: [],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 265,
 			display: 'Severe',
 			type: 'Magic'
 		},
-		min: 1,
-		max: 1,
-		flags: [],
-		ailments: [],
+		range: 'One',
 		series: 'smt'
 	},
 	{
@@ -1080,20 +1080,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Ice',
 		type: 'ATTACK',
 		unique: false,
-		range: 'One',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 35
 		},
+		flags: [],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 215,
 			display: 'Heavy',
 			type: 'Magic'
 		},
-		min: 1,
-		max: 1,
-		flags: [],
-		ailments: [],
+		range: 'One',
 		series: 'smt'
 	},
 	{
@@ -1101,20 +1101,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Ice',
 		type: 'ATTACK',
 		unique: false,
-		range: 'One',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 20
 		},
+		flags: [],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 160,
 			display: 'Medium',
 			type: 'Magic'
 		},
-		min: 1,
-		max: 1,
-		flags: [],
-		ailments: [],
+		range: 'One',
 		series: 'smt'
 	},
 	{
@@ -1145,22 +1145,22 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: true,
-		range: 'One',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 20
 		},
+		flags: [
+			'Crit Damage Boost'
+		],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 260,
 			display: 'Heavy',
 			type: 'Physical'
 		},
-		min: 1,
-		max: 1,
-		flags: [
-			'Crit Damage Boost'
-		],
-		ailments: [],
+		range: 'One',
 		series: 'smt'
 	},
 	{
@@ -1168,20 +1168,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 'One',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 75
 		},
+		flags: [],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 290,
 			display: 'Severe',
 			type: 'Physical'
 		},
-		min: 1,
-		max: 1,
-		flags: [],
-		ailments: [],
+		range: 'One',
 		series: 'smt'
 	},
 	{
@@ -1266,20 +1266,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 'One',
+		ailments: [],
 		cost: {
 			type: 'HP',
 			amount: 6
 		},
+		flags: [],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 75,
 			display: 'Weak',
 			type: 'Physical'
 		},
-		min: 1,
-		max: 1,
-		flags: [],
-		ailments: [],
+		range: 'One',
 		series: 'persona'
 	},
 	{
@@ -1323,22 +1323,22 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 'One',
+		ailments: [],
 		cost: {
 			type: 'HP',
 			amount: 10
 		},
+		flags: [
+			'Surround Boost'
+		],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 125,
 			display: 'Medium',
 			type: 'Physical'
 		},
-		min: 1,
-		max: 1,
-		flags: [
-			'Surround Boost'
-		],
-		ailments: [],
+		range: 'One',
 		series: 'persona'
 	},
 	{
@@ -1346,20 +1346,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Nuke',
 		type: 'ATTACK',
 		unique: false,
-		range: 'All',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 54
 		},
+		flags: [],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 185,
 			display: 'Severe',
 			type: 'Magic'
 		},
-		min: 1,
-		max: 1,
-		flags: [],
-		ailments: [],
+		range: 'All',
 		series: 'persona'
 	},
 	{
@@ -1394,25 +1394,25 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 'All',
-		cost: {
-			type: 'HP',
-			amount: 14
-		},
-		power: {
-			amount: 110,
-			display: 'Medium',
-			type: 'Physical'
-		},
-		min: 1,
-		max: 1,
-		flags: [],
 		ailments: [
 			{
 				name: 'Rage',
 				chance: 20
 			}
 		],
+		cost: {
+			type: 'HP',
+			amount: 14
+		},
+		flags: [],
+		max: 1,
+		min: 1,
+		power: {
+			amount: 110,
+			display: 'Medium',
+			type: 'Physical'
+		},
+		range: 'All',
 		series: 'persona'
 	},
 	{
@@ -1429,22 +1429,22 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 'One',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 10
 		},
+		flags: [
+			'Half Accuracy'
+		],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 160,
 			display: 'Weak',
 			type: 'Physical'
 		},
-		min: 1,
-		max: 1,
-		flags: [
-			'Half Accuracy'
-		],
-		ailments: [],
+		range: 'One',
 		series: 'smt'
 	},
 	{
@@ -1452,20 +1452,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 'All',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 25
 		},
+		flags: [],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 90,
 			display: 'Weak',
 			type: 'Physical'
 		},
-		min: 1,
-		max: 1,
-		flags: [],
-		ailments: [],
+		range: 'All',
 		series: 'smt'
 	},
 	{
@@ -1481,22 +1481,22 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: true,
-		range: 'One',
+		ailments: [],
 		cost: {
 			type: 'HP',
 			amount: 20
 		},
+		flags: [
+			'Accuracy Boost'
+		],
+		max: 2,
+		min: 2,
 		power: {
 			amount: 260,
 			display: 'Heavy',
 			type: 'Physical'
 		},
-		min: 2,
-		max: 2,
-		flags: [
-			'Accuracy Boost'
-		],
-		ailments: [],
+		range: 'One',
 		series: 'persona'
 	},
 	{
@@ -1504,22 +1504,22 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 'One',
+		ailments: [],
 		cost: {
 			type: 'HP',
 			amount: 12
 		},
+		flags: [
+			'Down Boost'
+		],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 180,
 			display: 'Medium',
 			type: 'Physical'
 		},
-		min: 1,
-		max: 1,
-		flags: [
-			'Down Boost'
-		],
-		ailments: [],
+		range: 'One',
 		series: 'persona'
 	},
 	{
@@ -1527,22 +1527,22 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 'All',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 20
 		},
+		flags: [
+			'Half Accuracy'
+		],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 170,
 			display: 'Medium',
 			type: 'Physical'
 		},
-		min: 1,
-		max: 1,
-		flags: [
-			'Half Accuracy'
-		],
-		ailments: [],
+		range: 'All',
 		series: 'smt'
 	},
 	{
@@ -1558,20 +1558,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 'One',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 24
 		},
+		flags: [],
+		max: 3,
+		min: 2,
 		power: {
 			amount: 90,
 			display: 'Medium',
 			type: 'Physical'
 		},
-		min: 2,
-		max: 3,
-		flags: [],
-		ailments: [],
+		range: 'One',
 		series: 'smt'
 	},
 	{
@@ -1579,20 +1579,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: true,
-		range: 'One',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 25
 		},
+		flags: [],
+		max: 3,
+		min: 3,
 		power: {
 			amount: 80,
 			display: 'Medium',
 			type: 'Physical'
 		},
-		min: 3,
-		max: 3,
-		flags: [],
-		ailments: [],
+		range: 'One',
 		series: 'smt'
 	},
 	{
@@ -1638,25 +1638,25 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 'One',
-		cost: {
-			type: 'MP',
-			amount: 25
-		},
-		power: {
-			amount: 90,
-			display: 'Medium',
-			type: 'Physical'
-		},
-		min: 2,
-		max: 2,
-		flags: [],
 		ailments: [
 			{
 				name: 'Seal',
 				chance: 30
 			}
 		],
+		cost: {
+			type: 'MP',
+			amount: 25
+		},
+		flags: [],
+		max: 2,
+		min: 2,
+		power: {
+			amount: 90,
+			display: 'Medium',
+			type: 'Physical'
+		},
+		range: 'One',
 		series: 'smt'
 	},
 	{
@@ -1677,22 +1677,22 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: true,
-		range: 'One',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 50
 		},
+		flags: [
+			'Baton Boost'
+		],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 200,
 			display: 'Medium',
 			type: 'Physical'
 		},
-		min: 1,
-		max: 1,
-		flags: [
-			'Baton Boost'
-		],
-		ailments: [],
+		range: 'One',
 		series: 'smt'
 	},
 	{
@@ -1700,22 +1700,22 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Dark',
 		type: 'ATTACK',
 		unique: true,
-		range: 'All',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 120
 		},
+		flags: [
+			'Weakness Instakill'
+		],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 320,
 			display: 'Severe',
 			type: 'Magic'
 		},
-		min: 1,
-		max: 1,
-		flags: [
-			'Weakness Instakill'
-		],
-		ailments: [],
+		range: 'All',
 		series: 'smt'
 	},
 	{
@@ -1723,25 +1723,25 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Almighty',
 		type: 'ATTACK',
 		unique: true,
-		range: 'All',
-		cost: {
-			type: 'MP',
-			amount: 70
-		},
-		power: {
-			amount: 160,
-			display: 'Heavy',
-			type: 'Magic'
-		},
-		min: 1,
-		max: 1,
-		flags: [],
 		ailments: [
 			{
 				name: 'Charm',
 				chance: 45
 			}
 		],
+		cost: {
+			type: 'MP',
+			amount: 70
+		},
+		flags: [],
+		max: 1,
+		min: 1,
+		power: {
+			amount: 160,
+			display: 'Heavy',
+			type: 'Magic'
+		},
+		range: 'All',
 		series: 'smt'
 	},
 	{
@@ -1749,25 +1749,25 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 'One',
-		cost: {
-			type: 'HP',
-			amount: 20
-		},
-		power: {
-			amount: 270,
-			display: 'Severe',
-			type: 'Physical'
-		},
-		min: 1,
-		max: 1,
-		flags: [],
 		ailments: [
 			{
 				name: 'Fear',
 				chance: 20
 			}
 		],
+		cost: {
+			type: 'HP',
+			amount: 20
+		},
+		flags: [],
+		max: 1,
+		min: 1,
+		power: {
+			amount: 270,
+			display: 'Severe',
+			type: 'Physical'
+		},
+		range: 'One',
 		series: 'persona'
 	},
 	{
@@ -1775,20 +1775,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 'All',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 35
 		},
+		flags: [],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 150,
 			display: 'Medium',
 			type: 'Physical'
 		},
-		min: 1,
-		max: 1,
-		flags: [],
-		ailments: [],
+		range: 'All',
 		series: 'smt'
 	},
 	{
@@ -1921,22 +1921,22 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Dark',
 		type: 'ATTACK',
 		unique: true,
-		range: 'Random',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 35
 		},
+		flags: [
+			'Weakness Instakill'
+		],
+		max: 5,
+		min: 2,
 		power: {
 			amount: 120,
 			display: 'Medium',
 			type: 'Magic'
 		},
-		min: 2,
-		max: 5,
-		flags: [
-			'Weakness Instakill'
-		],
-		ailments: [],
+		range: 'Random',
 		series: 'smt'
 	},
 	{
@@ -1944,20 +1944,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Almighty',
 		type: 'ATTACK',
 		unique: true,
-		range: 'All',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 35
 		},
+		flags: [],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 170,
 			display: 'Heavy',
 			type: 'Magic'
 		},
-		min: 1,
-		max: 1,
-		flags: [],
-		ailments: [],
+		range: 'All',
 		series: 'smt'
 	},
 	{
@@ -2097,22 +2097,22 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Almighty',
 		type: 'ATTACK',
 		unique: true,
-		range: 'All',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 32
 		},
+		flags: [
+			'Instakill'
+		],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 110,
 			display: 'Heavy',
 			type: 'Magic'
 		},
-		min: 1,
-		max: 1,
-		flags: [
-			'Instakill'
-		],
-		ailments: [],
+		range: 'All',
 		series: 'persona'
 	},
 	{
@@ -2120,25 +2120,25 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 'All',
-		cost: {
-			type: 'HP',
-			amount: 16
-		},
-		power: {
-			amount: 100,
-			display: 'Medium',
-			type: 'Physical'
-		},
-		min: 1,
-		max: 1,
-		flags: [],
 		ailments: [
 			{
 				name: 'Sleep',
 				chance: 5
 			}
 		],
+		cost: {
+			type: 'HP',
+			amount: 16
+		},
+		flags: [],
+		max: 1,
+		min: 1,
+		power: {
+			amount: 100,
+			display: 'Medium',
+			type: 'Physical'
+		},
+		range: 'All',
 		series: 'persona'
 	},
 	{
@@ -2159,20 +2159,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 'One',
+		ailments: [],
 		cost: {
 			type: 'HP',
 			amount: 10
 		},
+		flags: [],
+		max: 2,
+		min: 2,
 		power: {
 			amount: 75,
 			display: 'Weak',
 			type: 'Physical'
 		},
-		min: 2,
-		max: 2,
-		flags: [],
-		ailments: [],
+		range: 'One',
 		series: 'persona'
 	},
 	{
@@ -2180,20 +2180,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Gun',
 		type: 'ATTACK',
 		unique: false,
-		range: 'One',
+		ailments: [],
 		cost: {
 			type: 'HP',
 			amount: 12
 		},
+		flags: [],
+		max: 2,
+		min: 2,
 		power: {
 			amount: 100,
 			display: 'Weak',
 			type: 'Physical'
 		},
-		min: 2,
-		max: 2,
-		flags: [],
-		ailments: [],
+		range: 'One',
 		series: 'persona'
 	},
 	{
@@ -2289,22 +2289,22 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 'One',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 20
 		},
+		flags: [
+			'Asleep Boost'
+		],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 140,
 			display: 'Weak',
 			type: 'Physical'
 		},
-		min: 1,
-		max: 1,
-		flags: [
-			'Asleep Boost'
-		],
-		ailments: [],
+		range: 'One',
 		series: 'smt'
 	},
 	{
@@ -2312,25 +2312,25 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 'One',
-		cost: {
-			type: 'MP',
-			amount: 10
-		},
-		power: {
-			amount: 110,
-			display: 'Weak',
-			type: 'Physical'
-		},
-		min: 1,
-		max: 1,
-		flags: [],
 		ailments: [
 			{
 				name: 'Sleep',
 				chance: 55
 			}
 		],
+		cost: {
+			type: 'MP',
+			amount: 10
+		},
+		flags: [],
+		max: 1,
+		min: 1,
+		power: {
+			amount: 110,
+			display: 'Weak',
+			type: 'Physical'
+		},
+		range: 'One',
 		series: 'smt'
 	},
 	{
@@ -2351,22 +2351,22 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 'One',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 20
 		},
+		flags: [
+			'Drain HP'
+		],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 150,
 			display: 'Medium',
 			type: 'Physical'
 		},
-		min: 1,
-		max: 1,
-		flags: [
-			'Drain HP'
-		],
-		ailments: [],
+		range: 'One',
 		series: 'smt'
 	},
 	{
@@ -2463,22 +2463,22 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Almighty',
 		type: 'ATTACK',
 		unique: false,
-		range: 'One',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 15
 		},
+		flags: [
+			'Drain HP/MP'
+		],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 80,
 			display: 'Weak',
 			type: 'Magic'
 		},
-		min: 1,
-		max: 1,
-		flags: [
-			'Drain HP/MP'
-		],
-		ailments: [],
+		range: 'One',
 		series: 'smt'
 	},
 	{
@@ -2537,20 +2537,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Ice',
 		type: 'ATTACK',
 		unique: true,
-		range: 'Random',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 50
 		},
+		flags: [],
+		max: 6,
+		min: 3,
 		power: {
 			amount: 90,
 			display: 'Weak',
 			type: 'Magic'
 		},
-		min: 3,
-		max: 6,
-		flags: [],
-		ailments: [],
+		range: 'Random',
 		series: 'smt'
 	},
 	{
@@ -2691,22 +2691,22 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Dark',
 		type: 'ATTACK',
 		unique: true,
-		range: 'All',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 70
 		},
+		flags: [
+			'Weakness Instakill'
+		],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 250,
 			display: 'Severe',
 			type: 'Magic'
 		},
-		min: 1,
-		max: 1,
-		flags: [
-			'Weakness Instakill'
-		],
-		ailments: [],
+		range: 'All',
 		series: 'smt'
 	},
 	{
@@ -2714,22 +2714,22 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 'One',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 15
 		},
+		flags: [
+			'Attack Down'
+		],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 130,
 			display: 'Weak',
 			type: 'Physical'
 		},
-		min: 1,
-		max: 1,
-		flags: [
-			'Attack Down'
-		],
-		ailments: [],
+		range: 'One',
 		series: 'smt'
 	},
 	{
@@ -2747,20 +2747,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 'One',
+		ailments: [],
 		cost: {
 			type: 'HP',
 			amount: 14
 		},
+		flags: [],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 160,
 			display: 'Weak',
 			type: 'Physical'
 		},
-		min: 1,
-		max: 1,
-		flags: [],
-		ailments: [],
+		range: 'One',
 		series: 'persona'
 	},
 	{
@@ -2768,20 +2768,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 'One',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 25
 		},
+		flags: [],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 180,
 			display: 'Medium',
 			type: 'Physical'
 		},
-		min: 1,
-		max: 1,
-		flags: [],
-		ailments: [],
+		range: 'One',
 		series: 'smt'
 	},
 	{
@@ -2815,22 +2815,22 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 'One',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 50
 		},
+		flags: [
+			'Half Accuracy'
+		],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 300,
 			display: 'Severe',
 			type: 'Physical'
 		},
-		min: 1,
-		max: 1,
-		flags: [
-			'Half Accuracy'
-		],
-		ailments: [],
+		range: 'One',
 		series: 'smt'
 	},
 	{
@@ -2875,20 +2875,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Fire',
 		type: 'ATTACK',
 		unique: false,
-		range: 'Random',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 25
 		},
+		flags: [],
+		max: 5,
+		min: 2,
 		power: {
 			amount: 90,
 			display: 'Weak',
 			type: 'Magic'
 		},
-		min: 2,
-		max: 5,
-		flags: [],
-		ailments: [],
+		range: 'Random',
 		series: 'smt'
 	},
 	{
@@ -2896,20 +2896,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Fire',
 		type: 'ATTACK',
 		unique: false,
-		range: 'One',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 25
 		},
+		flags: [],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 200,
 			display: 'Medium',
 			type: 'Physical'
 		},
-		min: 1,
-		max: 1,
-		flags: [],
-		ailments: [],
+		range: 'One',
 		series: 'smt'
 	},
 	{
@@ -2917,20 +2917,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Almighty',
 		type: 'ATTACK',
 		unique: true,
-		range: 'Random',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 80
 		},
+		flags: [],
+		max: 7,
+		min: 3,
 		power: {
 			amount: 105,
 			display: 'Medium',
 			type: 'Magic'
 		},
-		min: 3,
-		max: 7,
-		flags: [],
-		ailments: [],
+		range: 'Random',
 		series: 'smt'
 	},
 	{
@@ -2963,25 +2963,25 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 'All',
-		cost: {
-			type: 'HP',
-			amount: 19
-		},
-		power: {
-			amount: 125,
-			display: 'Medium',
-			type: 'Physical'
-		},
-		min: 1,
-		max: 1,
-		flags: [],
 		ailments: [
 			{
 				name: 'Mirage',
 				chance: 5
 			}
 		],
+		cost: {
+			type: 'HP',
+			amount: 19
+		},
+		flags: [],
+		max: 1,
+		min: 1,
+		power: {
+			amount: 125,
+			display: 'Medium',
+			type: 'Physical'
+		},
+		range: 'All',
 		series: 'persona'
 	},
 	{
@@ -2989,20 +2989,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Force',
 		type: 'ATTACK',
 		unique: false,
-		range: 'Random',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 60
 		},
+		flags: [],
+		max: 5,
+		min: 2,
 		power: {
 			amount: 150,
 			display: 'Medium',
 			type: 'Magic'
 		},
-		min: 2,
-		max: 5,
-		flags: [],
-		ailments: [],
+		range: 'Random',
 		series: 'smt'
 	},
 	{
@@ -3076,20 +3076,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Nuke',
 		type: 'ATTACK',
 		unique: false,
-		range: 'One',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 4
 		},
+		flags: [],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 130,
 			display: 'Weak',
 			type: 'Magic'
 		},
-		min: 1,
-		max: 1,
-		flags: [],
-		ailments: [],
+		range: 'One',
 		series: 'persona'
 	},
 	{
@@ -3097,20 +3097,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Nuke',
 		type: 'ATTACK',
 		unique: false,
-		range: 'One',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 12
 		},
+		flags: [],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 215,
 			display: 'Heavy',
 			type: 'Magic'
 		},
-		min: 1,
-		max: 1,
-		flags: [],
-		ailments: [],
+		range: 'One',
 		series: 'persona'
 	},
 	{
@@ -3118,20 +3118,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Almighty',
 		type: 'ATTACK',
 		unique: false,
-		range: 'One',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 60
 		},
+		flags: [],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 230,
 			display: 'Severe',
 			type: 'Physical'
 		},
-		min: 1,
-		max: 1,
-		flags: [],
-		ailments: [],
+		range: 'One',
 		series: 'smt'
 	},
 	{
@@ -3139,20 +3139,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Nuke',
 		type: 'ATTACK',
 		unique: false,
-		range: 'One',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 8
 		},
+		flags: [],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 160,
 			display: 'Medium',
 			type: 'Magic'
 		},
-		min: 1,
-		max: 1,
-		flags: [],
-		ailments: [],
+		range: 'One',
 		series: 'persona'
 	},
 	{
@@ -3160,19 +3160,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 'One',
-		cost: {
-			type: 'MP',
-			amount: 25
-		},
-		power: {
-			amount: 165,
-			display: 'Medium',
-			type: 'Physical'
-		},
-		min: 1,
-		max: 1,
-		flags: [],
 		ailments: [
 			{
 				name: 'Poison',
@@ -3187,6 +3174,19 @@ const skillData: Readonly<AnySkillData[]> = [
 				chance: 25
 			}
 		],
+		cost: {
+			type: 'MP',
+			amount: 25
+		},
+		flags: [],
+		max: 1,
+		min: 1,
+		power: {
+			amount: 165,
+			display: 'Medium',
+			type: 'Physical'
+		},
+		range: 'One',
 		series: 'smt'
 	},
 	{
@@ -3217,22 +3217,22 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: true,
-		range: 'All',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 170
 		},
+		flags: [
+			'Pierce'
+		],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 270,
 			display: 'Severe',
 			type: 'Physical'
 		},
-		min: 1,
-		max: 1,
-		flags: [
-			'Pierce'
-		],
-		ailments: [],
+		range: 'All',
 		series: 'smt'
 	},
 	{
@@ -3240,20 +3240,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 'All',
+		ailments: [],
 		cost: {
 			type: 'HP',
 			amount: 12
 		},
+		flags: [],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 150,
 			display: 'Weak',
 			type: 'Physical'
 		},
-		min: 1,
-		max: 1,
-		flags: [],
-		ailments: [],
+		range: 'All',
 		series: 'persona'
 	},
 	{
@@ -3278,20 +3278,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Wind',
 		type: 'ATTACK',
 		unique: false,
-		range: 'One',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 3
 		},
+		flags: [],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 130,
 			display: 'Weak',
 			type: 'Magic'
 		},
-		min: 1,
-		max: 1,
-		flags: [],
-		ailments: [],
+		range: 'One',
 		series: 'persona'
 	},
 	{
@@ -3299,20 +3299,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Wind',
 		type: 'ATTACK',
 		unique: false,
-		range: 'One',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 10
 		},
+		flags: [],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 215,
 			display: 'Heavy',
 			type: 'Magic'
 		},
-		min: 1,
-		max: 1,
-		flags: [],
-		ailments: [],
+		range: 'One',
 		series: 'persona'
 	},
 	{
@@ -3320,20 +3320,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Wind',
 		type: 'ATTACK',
 		unique: false,
-		range: 'One',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 6
 		},
+		flags: [],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 160,
 			display: 'Medium',
 			type: 'Magic'
 		},
-		min: 1,
-		max: 1,
-		flags: [],
-		ailments: [],
+		range: 'One',
 		series: 'persona'
 	},
 	{
@@ -3341,20 +3341,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 'One',
+		ailments: [],
 		cost: {
 			type: 'HP',
 			amount: 16
 		},
+		flags: [],
+		max: 4,
+		min: 3,
 		power: {
 			amount: 90,
 			display: 'Weak',
 			type: 'Physical'
 		},
-		min: 3,
-		max: 4,
-		flags: [],
-		ailments: [],
+		range: 'One',
 		series: 'persona'
 	},
 	{
@@ -3362,20 +3362,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Fire',
 		type: 'ATTACK',
 		unique: true,
-		range: 'All',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 30
 		},
+		flags: [],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 150,
 			display: 'Medium',
 			type: 'Magic'
 		},
-		min: 1,
-		max: 1,
-		flags: [],
-		ailments: [],
+		range: 'All',
 		series: 'smt'
 	},
 	{
@@ -3391,22 +3391,22 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 'One',
+		ailments: [],
 		cost: {
 			type: 'HP',
 			amount: 9
 		},
+		flags: [
+			'Baton Boost'
+		],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 85,
 			display: 'Medium',
 			type: 'Physical'
 		},
-		min: 1,
-		max: 1,
-		flags: [
-			'Baton Boost'
-		],
-		ailments: [],
+		range: 'One',
 		series: 'persona'
 	},
 	{
@@ -3414,20 +3414,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 'One',
+		ailments: [],
 		cost: {
 			type: 'HP',
 			amount: 16
 		},
+		flags: [],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 240,
 			display: 'Heavy',
 			type: 'Physical'
 		},
-		min: 1,
-		max: 1,
-		flags: [],
-		ailments: [],
+		range: 'One',
 		series: 'persona'
 	},
 	{
@@ -3435,20 +3435,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 'All',
+		ailments: [],
 		cost: {
 			type: 'HP',
 			amount: 25
 		},
+		flags: [],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 350,
 			display: 'Colossal',
 			type: 'Physical'
 		},
-		min: 1,
-		max: 1,
-		flags: [],
-		ailments: [],
+		range: 'All',
 		series: 'persona'
 	},
 	{
@@ -3456,20 +3456,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Ice',
 		type: 'ATTACK',
 		unique: false,
-		range: 'Random',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 60
 		},
+		flags: [],
+		max: 5,
+		min: 2,
 		power: {
 			amount: 150,
 			display: 'Medium',
 			type: 'Magic'
 		},
-		min: 2,
-		max: 5,
-		flags: [],
-		ailments: [],
+		range: 'Random',
 		series: 'smt'
 	},
 	{
@@ -3477,22 +3477,22 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Light',
 		type: 'ATTACK',
 		unique: true,
-		range: 'One',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 60
 		},
+		flags: [
+			'Instakill'
+		],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 100,
 			display: 'Weak',
 			type: 'Magic'
 		},
-		min: 1,
-		max: 1,
-		flags: [
-			'Instakill'
-		],
-		ailments: [],
+		range: 'One',
 		series: 'smt'
 	},
 	{
@@ -3500,20 +3500,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 'One',
+		ailments: [],
 		cost: {
 			type: 'HP',
 			amount: 22
 		},
+		flags: [],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 400,
 			display: 'Colossal',
 			type: 'Physical'
 		},
-		min: 1,
-		max: 1,
-		flags: [],
-		ailments: [],
+		range: 'One',
 		series: 'persona'
 	},
 	{
@@ -3537,20 +3537,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 'One',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 10
 		},
+		flags: [],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 140,
 			display: 'Weak',
 			type: 'Physical'
 		},
-		min: 1,
-		max: 1,
-		flags: [],
-		ailments: [],
+		range: 'One',
 		series: 'smt'
 	},
 	{
@@ -3627,22 +3627,22 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: true,
-		range: 'One',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 50
 		},
+		flags: [
+			'Pierce'
+		],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 300,
 			display: 'Severe',
 			type: 'Physical'
 		},
-		min: 1,
-		max: 1,
-		flags: [
-			'Pierce'
-		],
-		ailments: [],
+		range: 'One',
 		series: 'smt'
 	},
 	{
@@ -3650,20 +3650,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 'All',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 60
 		},
+		flags: [],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 190,
 			display: 'Heavy',
 			type: 'Physical'
 		},
-		min: 1,
-		max: 1,
-		flags: [],
-		ailments: [],
+		range: 'All',
 		series: 'smt'
 	},
 	{
@@ -3671,22 +3671,22 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Light',
 		type: 'ATTACK',
 		unique: false,
-		range: 'One',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 15
 		},
+		flags: [
+			'Weakness Instakill'
+		],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 140,
 			display: 'Weak',
 			type: 'Magic'
 		},
-		min: 1,
-		max: 1,
-		flags: [
-			'Weakness Instakill'
-		],
-		ailments: [],
+		range: 'One',
 		series: 'smt'
 	},
 	{
@@ -3701,22 +3701,22 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Light',
 		type: 'ATTACK',
 		unique: false,
-		range: 'One',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 55
 		},
+		flags: [
+			'Weakness Instakill'
+		],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 265,
 			display: 'Severe',
 			type: 'Magic'
 		},
-		min: 1,
-		max: 1,
-		flags: [
-			'Weakness Instakill'
-		],
-		ailments: [],
+		range: 'One',
 		series: 'smt'
 	},
 	{
@@ -3724,22 +3724,22 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Light',
 		type: 'ATTACK',
 		unique: false,
-		range: 'One',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 25
 		},
+		flags: [
+			'Weakness Instakill'
+		],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 175,
 			display: 'Heavy',
 			type: 'Magic'
 		},
-		min: 1,
-		max: 1,
-		flags: [
-			'Weakness Instakill'
-		],
-		ailments: [],
+		range: 'One',
 		series: 'smt'
 	},
 	{
@@ -3761,20 +3761,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: true,
-		range: 'Random',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 60
 		},
+		flags: [],
+		max: 8,
+		min: 8,
 		power: {
 			amount: 30,
 			display: 'Weak',
 			type: 'Physical'
 		},
-		min: 8,
-		max: 8,
-		flags: [],
-		ailments: [],
+		range: 'Random',
 		series: 'smt'
 	},
 	{
@@ -3782,25 +3782,25 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 'One',
-		cost: {
-			type: 'HP',
-			amount: 9
-		},
-		power: {
-			amount: 150,
-			display: 'Weak',
-			type: 'Physical'
-		},
-		min: 1,
-		max: 1,
-		flags: [],
 		ailments: [
 			{
 				name: 'Seal',
 				chance: 20
 			}
 		],
+		cost: {
+			type: 'HP',
+			amount: 9
+		},
+		flags: [],
+		max: 1,
+		min: 1,
+		power: {
+			amount: 150,
+			display: 'Weak',
+			type: 'Physical'
+		},
+		range: 'One',
 		series: 'persona'
 	},
 	{
@@ -3808,25 +3808,25 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: true,
-		range: 'One',
-		cost: {
-			type: 'MP',
-			amount: 20
-		},
-		power: {
-			amount: 200,
-			display: 'Medium',
-			type: 'Physical'
-		},
-		min: 1,
-		max: 1,
-		flags: [],
 		ailments: [
 			{
 				name: 'Confuse',
 				chance: 70
 			}
 		],
+		cost: {
+			type: 'MP',
+			amount: 20
+		},
+		flags: [],
+		max: 1,
+		min: 1,
+		power: {
+			amount: 200,
+			display: 'Medium',
+			type: 'Physical'
+		},
+		range: 'One',
 		series: 'smt'
 	},
 	{
@@ -3877,20 +3877,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 'All',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 15
 		},
+		flags: [],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 100,
 			display: 'Weak',
 			type: 'Physical'
 		},
-		min: 1,
-		max: 1,
-		flags: [],
-		ailments: [],
+		range: 'All',
 		series: 'smt'
 	},
 	{
@@ -3911,22 +3911,22 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 'One',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 15
 		},
+		flags: [
+			'Crit Damage Boost'
+		],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 160,
 			display: 'Medium',
 			type: 'Physical'
 		},
-		min: 1,
-		max: 1,
-		flags: [
-			'Crit Damage Boost'
-		],
-		ailments: [],
+		range: 'One',
 		series: 'smt'
 	},
 	{
@@ -3934,20 +3934,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Fire',
 		type: 'ATTACK',
 		unique: true,
-		range: 'All',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 40
 		},
+		flags: [],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 150,
 			display: 'Heavy',
 			type: 'Magic'
 		},
-		min: 1,
-		max: 1,
-		flags: [],
-		ailments: [],
+		range: 'All',
 		series: 'smt'
 	},
 	{
@@ -3955,22 +3955,22 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Force',
 		type: 'ATTACK',
 		unique: true,
-		range: 'All',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 40
 		},
+		flags: [
+			'Revert Buffs'
+		],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 120,
 			display: 'Medium',
 			type: 'Magic'
 		},
-		min: 1,
-		max: 1,
-		flags: [
-			'Revert Buffs'
-		],
-		ailments: [],
+		range: 'All',
 		series: 'smt'
 	},
 	{
@@ -3978,20 +3978,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: true,
-		range: 'All',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 30
 		},
+		flags: [],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 150,
 			display: 'Heavy',
 			type: 'Physical'
 		},
-		min: 1,
-		max: 1,
-		flags: [],
-		ailments: [],
+		range: 'All',
 		series: 'smt'
 	},
 	{
@@ -3999,22 +3999,22 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 'One',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 45
 		},
+		flags: [
+			'Pierce'
+		],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 235,
 			display: 'Heavy',
 			type: 'Physical'
 		},
-		min: 1,
-		max: 1,
-		flags: [
-			'Pierce'
-		],
-		ailments: [],
+		range: 'One',
 		series: 'smt'
 	},
 	{
@@ -4022,22 +4022,22 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Fire',
 		type: 'ATTACK',
 		unique: true,
-		range: 'All',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 70
 		},
+		flags: [
+			'Revert Buffs'
+		],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 160,
 			display: 'Heavy',
 			type: 'Magic'
 		},
-		min: 1,
-		max: 1,
-		flags: [
-			'Revert Buffs'
-		],
-		ailments: [],
+		range: 'All',
 		series: 'smt'
 	},
 	{
@@ -4053,22 +4053,22 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: true,
-		range: 'One',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 5
 		},
+		flags: [
+			'Half Accuracy'
+		],
+		max: 4,
+		min: 4,
 		power: {
 			amount: 55,
 			display: 'Weak',
 			type: 'Physical'
 		},
-		min: 4,
-		max: 4,
-		flags: [
-			'Half Accuracy'
-		],
-		ailments: [],
+		range: 'One',
 		series: 'smt'
 	},
 	{
@@ -4076,20 +4076,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Ice',
 		type: 'ATTACK',
 		unique: true,
-		range: 'All',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 25
 		},
+		flags: [],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 130,
 			display: 'Medium',
 			type: 'Magic'
 		},
-		min: 1,
-		max: 1,
-		flags: [],
-		ailments: [],
+		range: 'All',
 		series: 'smt'
 	},
 	{
@@ -4248,22 +4248,22 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 'One',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 20
 		},
+		flags: [
+			'Charmed Boost'
+		],
+		max: 2,
+		min: 2,
 		power: {
 			amount: 90,
 			display: 'Weak',
 			type: 'Physical'
 		},
-		min: 2,
-		max: 2,
-		flags: [
-			'Charmed Boost'
-		],
-		ailments: [],
+		range: 'One',
 		series: 'smt'
 	},
 	{
@@ -4271,22 +4271,22 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Ice',
 		type: 'ATTACK',
 		unique: false,
-		range: 'One',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 65
 		},
+		flags: [
+			'Pierce'
+		],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 230,
 			display: 'Heavy',
 			type: 'Magic'
 		},
-		min: 1,
-		max: 1,
-		flags: [
-			'Pierce'
-		],
-		ailments: [],
+		range: 'One',
 		series: 'smt'
 	},
 	{
@@ -4331,20 +4331,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Ice',
 		type: 'ATTACK',
 		unique: false,
-		range: 'Random',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 25
 		},
+		flags: [],
+		max: 5,
+		min: 2,
 		power: {
 			amount: 90,
 			display: 'Weak',
 			type: 'Magic'
 		},
-		min: 2,
-		max: 5,
-		flags: [],
-		ailments: [],
+		range: 'Random',
 		series: 'smt'
 	},
 	{
@@ -4352,20 +4352,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Ice',
 		type: 'ATTACK',
 		unique: false,
-		range: 'One',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 25
 		},
+		flags: [],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 200,
 			display: 'Medium',
 			type: 'Physical'
 		},
-		min: 1,
-		max: 1,
-		flags: [],
-		ailments: [],
+		range: 'One',
 		series: 'smt'
 	},
 	{
@@ -4447,22 +4447,22 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Ice',
 		type: 'ATTACK',
 		unique: true,
-		range: 'One',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 20
 		},
+		flags: [
+			'Defense Down'
+		],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 160,
 			display: 'Medium',
 			type: 'Magic'
 		},
-		min: 1,
-		max: 1,
-		flags: [
-			'Defense Down'
-		],
-		ailments: [],
+		range: 'One',
 		series: 'smt'
 	},
 	{
@@ -4470,25 +4470,25 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: true,
-		range: 'All',
-		cost: {
-			type: 'MP',
-			amount: 90
-		},
-		power: {
-			amount: 260,
-			display: 'Severe',
-			type: 'Physical'
-		},
-		min: 1,
-		max: 1,
-		flags: [],
 		ailments: [
 			{
 				name: 'Seal',
 				chance: 40
 			}
 		],
+		cost: {
+			type: 'MP',
+			amount: 90
+		},
+		flags: [],
+		max: 1,
+		min: 1,
+		power: {
+			amount: 260,
+			display: 'Severe',
+			type: 'Physical'
+		},
+		range: 'All',
 		series: 'smt'
 	},
 	{
@@ -4515,20 +4515,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: true,
-		range: 'All',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 50
 		},
+		flags: [],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 150,
 			display: 'Heavy',
 			type: 'Physical'
 		},
-		min: 1,
-		max: 1,
-		flags: [],
-		ailments: [],
+		range: 'All',
 		series: 'smt'
 	},
 	{
@@ -4536,22 +4536,22 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Elec',
 		type: 'ATTACK',
 		unique: true,
-		range: 'One',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 50
 		},
+		flags: [
+			'Pierce'
+		],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 300,
 			display: 'Severe',
 			type: 'Physical'
 		},
-		min: 1,
-		max: 1,
-		flags: [
-			'Pierce'
-		],
-		ailments: [],
+		range: 'One',
 		series: 'smt'
 	},
 	{
@@ -4559,20 +4559,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 'One',
+		ailments: [],
 		cost: {
 			type: 'HP',
 			amount: 14
 		},
+		flags: [],
+		max: 3,
+		min: 1,
 		power: {
 			amount: 90,
 			display: 'Weak',
 			type: 'Physical'
 		},
-		min: 1,
-		max: 3,
-		flags: [],
-		ailments: [],
+		range: 'One',
 		series: 'persona'
 	},
 	{
@@ -4580,22 +4580,22 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Force',
 		type: 'ATTACK',
 		unique: false,
-		range: 'One',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 65
 		},
+		flags: [
+			'Pierce'
+		],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 230,
 			display: 'Heavy',
 			type: 'Magic'
 		},
-		min: 1,
-		max: 1,
-		flags: [
-			'Pierce'
-		],
-		ailments: [],
+		range: 'One',
 		series: 'smt'
 	},
 	{
@@ -4603,22 +4603,22 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Ice',
 		type: 'ATTACK',
 		unique: true,
-		range: 'All',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 35
 		},
+		flags: [
+			'Defense Down'
+		],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 110,
 			display: 'Medium',
 			type: 'Magic'
 		},
-		min: 1,
-		max: 1,
-		flags: [
-			'Defense Down'
-		],
-		ailments: [],
+		range: 'All',
 		series: 'smt'
 	},
 	{
@@ -4626,20 +4626,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: true,
-		range: 'One',
+		ailments: [],
 		cost: {
 			type: 'HP',
 			amount: 25
 		},
+		flags: [],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 450,
 			display: 'Colossal',
 			type: 'Physical'
 		},
-		min: 1,
-		max: 1,
-		flags: [],
-		ailments: [],
+		range: 'One',
 		series: 'persona'
 	},
 	{
@@ -4677,22 +4677,22 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Almighty',
 		type: 'ATTACK',
 		unique: false,
-		range: 'One',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 10
 		},
+		flags: [
+			'Drain HP'
+		],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 120,
 			display: 'Weak',
 			type: 'Magic'
 		},
-		min: 1,
-		max: 1,
-		flags: [
-			'Drain HP'
-		],
-		ailments: [],
+		range: 'One',
 		series: 'smt'
 	},
 	{
@@ -4794,22 +4794,22 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Light',
 		type: 'ATTACK',
 		unique: true,
-		range: 'All',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 60
 		},
+		flags: [
+			'Weakness Instakill'
+		],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 220,
 			display: 'Severe',
 			type: 'Magic'
 		},
-		min: 1,
-		max: 1,
-		flags: [
-			'Weakness Instakill'
-		],
-		ailments: [],
+		range: 'All',
 		series: 'smt'
 	},
 	{
@@ -4817,20 +4817,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 'One',
+		ailments: [],
 		cost: {
 			type: 'HP',
 			amount: 3
 		},
+		flags: [],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 25,
 			display: 'Minuscule',
 			type: 'Physical'
 		},
-		min: 1,
-		max: 1,
-		flags: [],
-		ailments: [],
+		range: 'One',
 		series: 'persona'
 	},
 	{
@@ -4851,20 +4851,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 'One',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 5
 		},
+		flags: [],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 145,
 			display: 'Weak',
 			type: 'Physical'
 		},
-		min: 1,
-		max: 1,
-		flags: [],
-		ailments: [],
+		range: 'One',
 		series: 'smt'
 	},
 	{
@@ -4905,20 +4905,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Ice',
 		type: 'ATTACK',
 		unique: false,
-		range: 'All',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 15
 		},
+		flags: [],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 95,
 			display: 'Weak',
 			type: 'Magic'
 		},
-		min: 1,
-		max: 1,
-		flags: [],
-		ailments: [],
+		range: 'All',
 		series: 'smt'
 	},
 	{
@@ -4926,20 +4926,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Ice',
 		type: 'ATTACK',
 		unique: false,
-		range: 'All',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 75
 		},
+		flags: [],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 185,
 			display: 'Severe',
 			type: 'Magic'
 		},
-		min: 1,
-		max: 1,
-		flags: [],
-		ailments: [],
+		range: 'All',
 		series: 'smt'
 	},
 	{
@@ -4947,20 +4947,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Ice',
 		type: 'ATTACK',
 		unique: false,
-		range: 'All',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 50
 		},
+		flags: [],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 155,
 			display: 'Heavy',
 			type: 'Magic'
 		},
-		min: 1,
-		max: 1,
-		flags: [],
-		ailments: [],
+		range: 'All',
 		series: 'smt'
 	},
 	{
@@ -4968,20 +4968,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Ice',
 		type: 'ATTACK',
 		unique: false,
-		range: 'All',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 30
 		},
+		flags: [],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 120,
 			display: 'Medium',
 			type: 'Magic'
 		},
-		min: 1,
-		max: 1,
-		flags: [],
-		ailments: [],
+		range: 'All',
 		series: 'smt'
 	},
 	{
@@ -4989,22 +4989,22 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: true,
-		range: 'One',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 50
 		},
+		flags: [
+			'Crit Damage Boost'
+		],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 270,
 			display: 'Severe',
 			type: 'Physical'
 		},
-		min: 1,
-		max: 1,
-		flags: [
-			'Crit Damage Boost'
-		],
-		ailments: [],
+		range: 'One',
 		series: 'smt'
 	},
 	{
@@ -5012,25 +5012,25 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Almighty',
 		type: 'ATTACK',
 		unique: true,
-		range: 'Random',
-		cost: {
-			type: 'MP',
-			amount: 50
-		},
-		power: {
-			amount: 150,
-			display: 'Weak',
-			type: 'Magic'
-		},
-		min: 2,
-		max: 5,
-		flags: [],
 		ailments: [
 			{
 				name: 'Seal',
 				chance: 40
 			}
 		],
+		cost: {
+			type: 'MP',
+			amount: 50
+		},
+		flags: [],
+		max: 5,
+		min: 2,
+		power: {
+			amount: 150,
+			display: 'Weak',
+			type: 'Magic'
+		},
+		range: 'Random',
 		series: 'smt'
 	},
 	{
@@ -5038,20 +5038,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 'Random',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 36
 		},
+		flags: [],
+		max: 4,
+		min: 2,
 		power: {
 			amount: 165,
 			display: 'Heavy',
 			type: 'Physical'
 		},
-		min: 2,
-		max: 4,
-		flags: [],
-		ailments: [],
+		range: 'Random',
 		series: 'smt'
 	},
 	{
@@ -5059,25 +5059,25 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 'One',
-		cost: {
-			type: 'MP',
-			amount: 10
-		},
-		power: {
-			amount: 110,
-			display: 'Weak',
-			type: 'Physical'
-		},
-		min: 1,
-		max: 1,
-		flags: [],
 		ailments: [
 			{
 				name: 'Confuse',
 				chance: 45
 			}
 		],
+		cost: {
+			type: 'MP',
+			amount: 10
+		},
+		flags: [],
+		max: 1,
+		min: 1,
+		power: {
+			amount: 110,
+			display: 'Weak',
+			type: 'Physical'
+		},
+		range: 'One',
 		series: 'smt'
 	},
 	{
@@ -5085,20 +5085,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Nuke',
 		type: 'ATTACK',
 		unique: false,
-		range: 'All',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 10
 		},
+		flags: [],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 95,
 			display: 'Weak',
 			type: 'Magic'
 		},
-		min: 1,
-		max: 1,
-		flags: [],
-		ailments: [],
+		range: 'All',
 		series: 'persona'
 	},
 	{
@@ -5106,20 +5106,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Nuke',
 		type: 'ATTACK',
 		unique: false,
-		range: 'All',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 22
 		},
+		flags: [],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 155,
 			display: 'Heavy',
 			type: 'Magic'
 		},
-		min: 1,
-		max: 1,
-		flags: [],
-		ailments: [],
+		range: 'All',
 		series: 'persona'
 	},
 	{
@@ -5127,20 +5127,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Nuke',
 		type: 'ATTACK',
 		unique: false,
-		range: 'All',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 16
 		},
+		flags: [],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 120,
 			display: 'Medium',
 			type: 'Magic'
 		},
-		min: 1,
-		max: 1,
-		flags: [],
-		ailments: [],
+		range: 'All',
 		series: 'persona'
 	},
 	{
@@ -5148,20 +5148,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Wind',
 		type: 'ATTACK',
 		unique: false,
-		range: 'All',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 8
 		},
+		flags: [],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 95,
 			display: 'Weak',
 			type: 'Magic'
 		},
-		min: 1,
-		max: 1,
-		flags: [],
-		ailments: [],
+		range: 'All',
 		series: 'persona'
 	},
 	{
@@ -5169,20 +5169,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Wind',
 		type: 'ATTACK',
 		unique: false,
-		range: 'All',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 20
 		},
+		flags: [],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 155,
 			display: 'Heavy',
 			type: 'Magic'
 		},
-		min: 1,
-		max: 1,
-		flags: [],
-		ailments: [],
+		range: 'All',
 		series: 'persona'
 	},
 	{
@@ -5190,20 +5190,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Wind',
 		type: 'ATTACK',
 		unique: false,
-		range: 'All',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 14
 		},
+		flags: [],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 120,
 			display: 'Medium',
 			type: 'Magic'
 		},
-		min: 1,
-		max: 1,
-		flags: [],
-		ailments: [],
+		range: 'All',
 		series: 'persona'
 	},
 	{
@@ -5211,19 +5211,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Dark',
 		type: 'ATTACK',
 		unique: true,
-		range: 'All',
-		cost: {
-			type: 'MP',
-			amount: 30
-		},
-		power: {
-			amount: 155,
-			display: 'Heavy',
-			type: 'Magic'
-		},
-		min: 1,
-		max: 1,
-		flags: [],
 		ailments: [
 			{
 				name: 'Confuse',
@@ -5238,6 +5225,19 @@ const skillData: Readonly<AnySkillData[]> = [
 				chance: 20
 			}
 		],
+		cost: {
+			type: 'MP',
+			amount: 30
+		},
+		flags: [],
+		max: 1,
+		min: 1,
+		power: {
+			amount: 155,
+			display: 'Heavy',
+			type: 'Magic'
+		},
+		range: 'All',
 		series: 'persona'
 	},
 	{
@@ -5245,22 +5245,22 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Light',
 		type: 'ATTACK',
 		unique: false,
-		range: 'All',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 25
 		},
+		flags: [
+			'Weakness Instakill'
+		],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 105,
 			display: 'Weak',
 			type: 'Magic'
 		},
-		min: 1,
-		max: 1,
-		flags: [
-			'Weakness Instakill'
-		],
-		ailments: [],
+		range: 'All',
 		series: 'smt'
 	},
 	{
@@ -5268,22 +5268,22 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Light',
 		type: 'ATTACK',
 		unique: false,
-		range: 'All',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 80
 		},
+		flags: [
+			'Weakness Instakill'
+		],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 185,
 			display: 'Severe',
 			type: 'Magic'
 		},
-		min: 1,
-		max: 1,
-		flags: [
-			'Weakness Instakill'
-		],
-		ailments: [],
+		range: 'All',
 		series: 'smt'
 	},
 	{
@@ -5291,22 +5291,22 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Light',
 		type: 'ATTACK',
 		unique: false,
-		range: 'All',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 40
 		},
+		flags: [
+			'Weakness Instakill'
+		],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 135,
 			display: 'Heavy',
 			type: 'Magic'
 		},
-		min: 1,
-		max: 1,
-		flags: [
-			'Weakness Instakill'
-		],
-		ailments: [],
+		range: 'All',
 		series: 'smt'
 	},
 	{
@@ -5359,22 +5359,22 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Dark',
 		type: 'ATTACK',
 		unique: false,
-		range: 'All',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 25
 		},
+		flags: [
+			'Weakness Instakill'
+		],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 105,
 			display: 'Weak',
 			type: 'Magic'
 		},
-		min: 1,
-		max: 1,
-		flags: [
-			'Weakness Instakill'
-		],
-		ailments: [],
+		range: 'All',
 		series: 'smt'
 	},
 	{
@@ -5382,22 +5382,22 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Dark',
 		type: 'ATTACK',
 		unique: false,
-		range: 'All',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 80
 		},
+		flags: [
+			'Weakness Instakill'
+		],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 185,
 			display: 'Severe',
 			type: 'Magic'
 		},
-		min: 1,
-		max: 1,
-		flags: [
-			'Weakness Instakill'
-		],
-		ailments: [],
+		range: 'All',
 		series: 'smt'
 	},
 	{
@@ -5405,22 +5405,22 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Dark',
 		type: 'ATTACK',
 		unique: false,
-		range: 'All',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 40
 		},
+		flags: [
+			'Weakness Instakill'
+		],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 135,
 			display: 'Heavy',
 			type: 'Magic'
 		},
-		min: 1,
-		max: 1,
-		flags: [
-			'Weakness Instakill'
-		],
-		ailments: [],
+		range: 'All',
 		series: 'smt'
 	},
 	{
@@ -5445,20 +5445,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Psy',
 		type: 'ATTACK',
 		unique: false,
-		range: 'All',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 10
 		},
+		flags: [],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 95,
 			display: 'Weak',
 			type: 'Magic'
 		},
-		min: 1,
-		max: 1,
-		flags: [],
-		ailments: [],
+		range: 'All',
 		series: 'persona'
 	},
 	{
@@ -5466,20 +5466,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Psy',
 		type: 'ATTACK',
 		unique: false,
-		range: 'All',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 16
 		},
+		flags: [],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 120,
 			display: 'Medium',
 			type: 'Magic'
 		},
-		min: 1,
-		max: 1,
-		flags: [],
-		ailments: [],
+		range: 'All',
 		series: 'persona'
 	},
 	{
@@ -5487,20 +5487,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Psy',
 		type: 'ATTACK',
 		unique: false,
-		range: 'All',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 22
 		},
+		flags: [],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 155,
 			display: 'Heavy',
 			type: 'Magic'
 		},
-		min: 1,
-		max: 1,
-		flags: [],
-		ailments: [],
+		range: 'All',
 		series: 'persona'
 	},
 	{
@@ -5508,20 +5508,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Fire',
 		type: 'ATTACK',
 		unique: false,
-		range: 'All',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 15
 		},
+		flags: [],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 95,
 			display: 'Weak',
 			type: 'Magic'
 		},
-		min: 1,
-		max: 1,
-		flags: [],
-		ailments: [],
+		range: 'All',
 		series: 'smt'
 	},
 	{
@@ -5529,20 +5529,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Fire',
 		type: 'ATTACK',
 		unique: false,
-		range: 'All',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 75
 		},
+		flags: [],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 185,
 			display: 'Severe',
 			type: 'Magic'
 		},
-		min: 1,
-		max: 1,
-		flags: [],
-		ailments: [],
+		range: 'All',
 		series: 'smt'
 	},
 	{
@@ -5550,20 +5550,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Fire',
 		type: 'ATTACK',
 		unique: false,
-		range: 'All',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 50
 		},
+		flags: [],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 155,
 			display: 'Heavy',
 			type: 'Magic'
 		},
-		min: 1,
-		max: 1,
-		flags: [],
-		ailments: [],
+		range: 'All',
 		series: 'smt'
 	},
 	{
@@ -5571,20 +5571,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Fire',
 		type: 'ATTACK',
 		unique: false,
-		range: 'All',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 30
 		},
+		flags: [],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 120,
 			display: 'Medium',
 			type: 'Magic'
 		},
-		min: 1,
-		max: 1,
-		flags: [],
-		ailments: [],
+		range: 'All',
 		series: 'smt'
 	},
 	{
@@ -5622,25 +5622,25 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Fire',
 		type: 'ATTACK',
 		unique: true,
-		range: 'All',
-		cost: {
-			type: 'MP',
-			amount: 32
-		},
-		power: {
-			amount: 185,
-			display: 'Severe',
-			type: 'Magic'
-		},
-		min: 1,
-		max: 1,
-		flags: [],
 		ailments: [
 			{
 				name: 'Burn',
 				chance: 5
 			}
 		],
+		cost: {
+			type: 'MP',
+			amount: 32
+		},
+		flags: [],
+		max: 1,
+		min: 1,
+		power: {
+			amount: 185,
+			display: 'Severe',
+			type: 'Magic'
+		},
+		range: 'All',
 		series: 'persona'
 	},
 	{
@@ -5661,20 +5661,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: true,
-		range: 'One',
+		ailments: [],
 		cost: {
 			type: 'HP',
 			amount: 25
 		},
+		flags: [],
+		max: 2,
+		min: 2,
 		power: {
 			amount: 250,
 			display: 'Severe',
 			type: 'Physical'
 		},
-		min: 2,
-		max: 2,
-		flags: [],
-		ailments: [],
+		range: 'One',
 		series: 'persona'
 	},
 	{
@@ -5758,20 +5758,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Force',
 		type: 'ATTACK',
 		unique: false,
-		range: 'All',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 15
 		},
+		flags: [],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 95,
 			display: 'Weak',
 			type: 'Magic'
 		},
-		min: 1,
-		max: 1,
-		flags: [],
-		ailments: [],
+		range: 'All',
 		series: 'smt'
 	},
 	{
@@ -5779,20 +5779,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Force',
 		type: 'ATTACK',
 		unique: false,
-		range: 'All',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 75
 		},
+		flags: [],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 185,
 			display: 'Severe',
 			type: 'Magic'
 		},
-		min: 1,
-		max: 1,
-		flags: [],
-		ailments: [],
+		range: 'All',
 		series: 'smt'
 	},
 	{
@@ -5800,20 +5800,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Force',
 		type: 'ATTACK',
 		unique: false,
-		range: 'All',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 50
 		},
+		flags: [],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 155,
 			display: 'Heavy',
 			type: 'Magic'
 		},
-		min: 1,
-		max: 1,
-		flags: [],
-		ailments: [],
+		range: 'All',
 		series: 'smt'
 	},
 	{
@@ -5821,20 +5821,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Force',
 		type: 'ATTACK',
 		unique: false,
-		range: 'All',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 30
 		},
+		flags: [],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 120,
 			display: 'Medium',
 			type: 'Magic'
 		},
-		min: 1,
-		max: 1,
-		flags: [],
-		ailments: [],
+		range: 'All',
 		series: 'smt'
 	},
 	{
@@ -5842,20 +5842,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Elec',
 		type: 'ATTACK',
 		unique: false,
-		range: 'All',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 15
 		},
+		flags: [],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 95,
 			display: 'Weak',
 			type: 'Magic'
 		},
-		min: 1,
-		max: 1,
-		flags: [],
-		ailments: [],
+		range: 'All',
 		series: 'smt'
 	},
 	{
@@ -5863,20 +5863,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Elec',
 		type: 'ATTACK',
 		unique: false,
-		range: 'All',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 75
 		},
+		flags: [],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 185,
 			display: 'Severe',
 			type: 'Magic'
 		},
-		min: 1,
-		max: 1,
-		flags: [],
-		ailments: [],
+		range: 'All',
 		series: 'smt'
 	},
 	{
@@ -5884,20 +5884,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Elec',
 		type: 'ATTACK',
 		unique: false,
-		range: 'All',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 50
 		},
+		flags: [],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 155,
 			display: 'Heavy',
 			type: 'Magic'
 		},
-		min: 1,
-		max: 1,
-		flags: [],
-		ailments: [],
+		range: 'All',
 		series: 'smt'
 	},
 	{
@@ -5905,20 +5905,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Elec',
 		type: 'ATTACK',
 		unique: false,
-		range: 'All',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 30
 		},
+		flags: [],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 120,
 			display: 'Medium',
 			type: 'Magic'
 		},
-		min: 1,
-		max: 1,
-		flags: [],
-		ailments: [],
+		range: 'All',
 		series: 'smt'
 	},
 	{
@@ -5976,22 +5976,22 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Almighty',
 		type: 'ATTACK',
 		unique: true,
-		range: 'One',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 5
 		},
+		flags: [
+			'Drain HP/MP'
+		],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 120,
 			display: 'Weak',
 			type: 'Magic'
 		},
-		min: 1,
-		max: 1,
-		flags: [
-			'Drain HP/MP'
-		],
-		ailments: [],
+		range: 'One',
 		series: 'smt'
 	},
 	{
@@ -5999,22 +5999,22 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 'All',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 50
 		},
+		flags: [
+			'Half Accuracy'
+		],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 260,
 			display: 'Heavy',
 			type: 'Physical'
 		},
-		min: 1,
-		max: 1,
-		flags: [
-			'Half Accuracy'
-		],
-		ailments: [],
+		range: 'All',
 		series: 'smt'
 	},
 	{
@@ -6022,20 +6022,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 'One',
+		ailments: [],
 		cost: {
 			type: 'HP',
 			amount: 16
 		},
+		flags: [],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 310,
 			display: 'Severe',
 			type: 'Physical'
 		},
-		min: 1,
-		max: 1,
-		flags: [],
-		ailments: [],
+		range: 'One',
 		series: 'persona'
 	},
 	{
@@ -6043,20 +6043,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Almighty',
 		type: 'ATTACK',
 		unique: false,
-		range: 'All',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 40
 		},
+		flags: [],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 125,
 			display: 'Medium',
 			type: 'Magic'
 		},
-		min: 1,
-		max: 1,
-		flags: [],
-		ailments: [],
+		range: 'All',
 		series: 'smt'
 	},
 	{
@@ -6064,22 +6064,22 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Fire',
 		type: 'ATTACK',
 		unique: true,
-		range: 'All',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 130
 		},
+		flags: [
+			'Pierce'
+		],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 250,
 			display: 'Severe',
 			type: 'Magic'
 		},
-		min: 1,
-		max: 1,
-		flags: [
-			'Pierce'
-		],
-		ailments: [],
+		range: 'All',
 		series: 'smt'
 	},
 	{
@@ -6087,20 +6087,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Almighty',
 		type: 'ATTACK',
 		unique: false,
-		range: 'All',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 70
 		},
+		flags: [],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 160,
 			display: 'Heavy',
 			type: 'Magic'
 		},
-		min: 1,
-		max: 1,
-		flags: [],
-		ailments: [],
+		range: 'All',
 		series: 'smt'
 	},
 	{
@@ -6108,20 +6108,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Almighty',
 		type: 'ATTACK',
 		unique: false,
-		range: 'All',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 120
 		},
+		flags: [],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 190,
 			display: 'Severe',
 			type: 'Magic'
 		},
-		min: 1,
-		max: 1,
-		flags: [],
-		ailments: [],
+		range: 'All',
 		series: 'smt'
 	},
 	{
@@ -6129,25 +6129,25 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 'All',
-		cost: {
-			type: 'HP',
-			amount: 15
-		},
-		power: {
-			amount: 130,
-			display: 'Weak',
-			type: 'Physical'
-		},
-		min: 1,
-		max: 1,
-		flags: [],
 		ailments: [
 			{
 				name: 'Seal',
 				chance: 5
 			}
 		],
+		cost: {
+			type: 'HP',
+			amount: 15
+		},
+		flags: [],
+		max: 1,
+		min: 1,
+		power: {
+			amount: 130,
+			display: 'Weak',
+			type: 'Physical'
+		},
+		range: 'All',
 		series: 'persona'
 	},
 	{
@@ -6155,22 +6155,22 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 'One',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 25
 		},
+		flags: [
+			'Half Accuracy'
+		],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 240,
 			display: 'Heavy',
 			type: 'Physical'
 		},
-		min: 1,
-		max: 1,
-		flags: [
-			'Half Accuracy'
-		],
-		ailments: [],
+		range: 'One',
 		series: 'smt'
 	},
 	{
@@ -6178,25 +6178,25 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 'All',
-		cost: {
-			type: 'HP',
-			amount: 19
-		},
-		power: {
-			amount: 150,
-			display: 'Medium',
-			type: 'Physical'
-		},
-		min: 1,
-		max: 1,
-		flags: [],
 		ailments: [
 			{
 				name: 'Confuse',
 				chance: 5
 			}
 		],
+		cost: {
+			type: 'HP',
+			amount: 19
+		},
+		flags: [],
+		max: 1,
+		min: 1,
+		power: {
+			amount: 150,
+			display: 'Medium',
+			type: 'Physical'
+		},
+		range: 'All',
 		series: 'persona'
 	},
 	{
@@ -6204,20 +6204,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 'One',
+		ailments: [],
 		cost: {
 			type: 'HP',
 			amount: 8
 		},
+		flags: [],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 100,
 			display: 'Medium',
 			type: 'Physical'
 		},
-		min: 1,
-		max: 1,
-		flags: [],
-		ailments: [],
+		range: 'One',
 		series: 'persona'
 	},
 	{
@@ -6225,20 +6225,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: true,
-		range: 'All',
+		ailments: [],
 		cost: {
 			type: 'HP',
 			amount: 16
 		},
+		flags: [],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 100,
 			display: 'Medium',
 			type: 'Physical'
 		},
-		min: 1,
-		max: 1,
-		flags: [],
-		ailments: [],
+		range: 'All',
 		series: 'persona'
 	},
 	{
@@ -6267,25 +6267,25 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Fire',
 		type: 'ATTACK',
 		unique: true,
-		range: 'One',
-		cost: {
-			type: 'MP',
-			amount: 15
-		},
-		power: {
-			amount: 160,
-			display: 'Medium',
-			type: 'Magic'
-		},
-		min: 1,
-		max: 1,
-		flags: [],
 		ailments: [
 			{
 				name: 'Mirage',
 				chance: 75
 			}
 		],
+		cost: {
+			type: 'MP',
+			amount: 15
+		},
+		flags: [],
+		max: 1,
+		min: 1,
+		power: {
+			amount: 160,
+			display: 'Medium',
+			type: 'Magic'
+		},
+		range: 'One',
 		series: 'smt'
 	},
 	{
@@ -6293,25 +6293,25 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 'Random',
-		cost: {
-			type: 'MP',
-			amount: 35
-		},
-		power: {
-			amount: 120,
-			display: 'Medium',
-			type: 'Physical'
-		},
-		min: 2,
-		max: 4,
-		flags: [],
 		ailments: [
 			{
 				name: 'Mirage',
 				chance: 35
 			}
 		],
+		cost: {
+			type: 'MP',
+			amount: 35
+		},
+		flags: [],
+		max: 4,
+		min: 2,
+		power: {
+			amount: 120,
+			display: 'Medium',
+			type: 'Physical'
+		},
+		range: 'Random',
 		series: 'smt'
 	},
 	{
@@ -6328,20 +6328,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Almighty',
 		type: 'ATTACK',
 		unique: true,
-		range: 'All',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 52
 		},
+		flags: [],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 210,
 			display: 'Severe',
 			type: 'Magic'
 		},
-		min: 1,
-		max: 1,
-		flags: [],
-		ailments: [],
+		range: 'All',
 		series: 'persona'
 	},
 	{
@@ -6349,20 +6349,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 'One',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 30
 		},
+		flags: [],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 250,
 			display: 'Heavy',
 			type: 'Physical'
 		},
-		min: 1,
-		max: 1,
-		flags: [],
-		ailments: [],
+		range: 'One',
 		series: 'smt'
 	},
 	{
@@ -6370,22 +6370,22 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Dark',
 		type: 'ATTACK',
 		unique: false,
-		range: 'One',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 15
 		},
+		flags: [
+			'Weakness Instakill'
+		],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 140,
 			display: 'Weak',
 			type: 'Magic'
 		},
-		min: 1,
-		max: 1,
-		flags: [
-			'Weakness Instakill'
-		],
-		ailments: [],
+		range: 'One',
 		series: 'smt'
 	},
 	{
@@ -6400,22 +6400,22 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Dark',
 		type: 'ATTACK',
 		unique: false,
-		range: 'One',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 55
 		},
+		flags: [
+			'Weakness Instakill'
+		],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 265,
 			display: 'Severe',
 			type: 'Magic'
 		},
-		min: 1,
-		max: 1,
-		flags: [
-			'Weakness Instakill'
-		],
-		ailments: [],
+		range: 'One',
 		series: 'smt'
 	},
 	{
@@ -6423,22 +6423,22 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Dark',
 		type: 'ATTACK',
 		unique: false,
-		range: 'One',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 25
 		},
+		flags: [
+			'Weakness Instakill'
+		],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 175,
 			display: 'Heavy',
 			type: 'Magic'
 		},
-		min: 1,
-		max: 1,
-		flags: [
-			'Weakness Instakill'
-		],
-		ailments: [],
+		range: 'One',
 		series: 'smt'
 	},
 	{
@@ -6446,22 +6446,22 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Almighty',
 		type: 'ATTACK',
 		unique: true,
-		range: 'One',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 50
 		},
+		flags: [
+			'Crit Damage Boost'
+		],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 275,
 			display: 'Severe',
 			type: 'Physical'
 		},
-		min: 1,
-		max: 1,
-		flags: [
-			'Crit Damage Boost'
-		],
-		ailments: [],
+		range: 'One',
 		series: 'smt'
 	},
 	{
@@ -6477,25 +6477,25 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 'All',
-		cost: {
-			type: 'HP',
-			amount: 16
-		},
-		power: {
-			amount: 125,
-			display: 'Medium',
-			type: 'Physical'
-		},
-		min: 1,
-		max: 1,
-		flags: [],
 		ailments: [
 			{
 				name: 'Enervation',
 				chance: 5
 			}
 		],
+		cost: {
+			type: 'HP',
+			amount: 16
+		},
+		flags: [],
+		max: 1,
+		min: 1,
+		power: {
+			amount: 125,
+			display: 'Medium',
+			type: 'Physical'
+		},
+		range: 'All',
 		series: 'persona'
 	},
 	{
@@ -6503,22 +6503,22 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 'One',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 55
 		},
+		flags: [
+			'Half Accuracy'
+		],
+		max: 5,
+		min: 5,
 		power: {
 			amount: 80,
 			display: 'Weak',
 			type: 'Physical'
 		},
-		min: 5,
-		max: 5,
-		flags: [
-			'Half Accuracy'
-		],
-		ailments: [],
+		range: 'One',
 		series: 'smt'
 	},
 	{
@@ -6526,20 +6526,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Almighty',
 		type: 'ATTACK',
 		unique: true,
-		range: 'All',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 40
 		},
+		flags: [],
+		max: 3,
+		min: 3,
 		power: {
 			amount: 160,
 			display: 'Heavy',
 			type: 'Magic'
 		},
-		min: 3,
-		max: 3,
-		flags: [],
-		ailments: [],
+		range: 'All',
 		series: 'persona'
 	},
 	{
@@ -6547,22 +6547,22 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Elec',
 		type: 'ATTACK',
 		unique: false,
-		range: 'One',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 65
 		},
+		flags: [
+			'Pierce'
+		],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 230,
 			display: 'Heavy',
 			type: 'Magic'
 		},
-		min: 1,
-		max: 1,
-		flags: [
-			'Pierce'
-		],
-		ailments: [],
+		range: 'One',
 		series: 'smt'
 	},
 	{
@@ -6570,25 +6570,25 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 'All',
-		cost: {
-			type: 'HP',
-			amount: 18
-		},
-		power: {
-			amount: 125,
-			display: 'Medium',
-			type: 'Physical'
-		},
-		min: 1,
-		max: 1,
-		flags: [],
 		ailments: [
 			{
 				name: 'Exhaustion',
 				chance: 5
 			}
 		],
+		cost: {
+			type: 'HP',
+			amount: 18
+		},
+		flags: [],
+		max: 1,
+		min: 1,
+		power: {
+			amount: 125,
+			display: 'Medium',
+			type: 'Physical'
+		},
+		range: 'All',
 		series: 'persona'
 	},
 	{
@@ -6596,20 +6596,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 'One',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 15
 		},
+		flags: [],
+		max: 4,
+		min: 1,
 		power: {
 			amount: 70,
 			display: 'Weak',
 			type: 'Physical'
 		},
-		min: 1,
-		max: 4,
-		flags: [],
-		ailments: [],
+		range: 'One',
 		series: 'smt'
 	},
 	{
@@ -6617,25 +6617,25 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 'One',
-		cost: {
-			type: 'HP',
-			amount: 12
-		},
-		power: {
-			amount: 200,
-			display: 'Heavy',
-			type: 'Physical'
-		},
-		min: 1,
-		max: 1,
-		flags: [],
 		ailments: [
 			{
 				name: 'Despair',
 				chance: 20
 			}
 		],
+		cost: {
+			type: 'HP',
+			amount: 12
+		},
+		flags: [],
+		max: 1,
+		min: 1,
+		power: {
+			amount: 200,
+			display: 'Heavy',
+			type: 'Physical'
+		},
+		range: 'One',
 		series: 'persona'
 	},
 	{
@@ -6659,20 +6659,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 'One',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 36
 		},
+		flags: [],
+		max: 3,
+		min: 2,
 		power: {
 			amount: 125,
 			display: 'Heavy',
 			type: 'Physical'
 		},
-		min: 2,
-		max: 3,
-		flags: [],
-		ailments: [],
+		range: 'One',
 		series: 'smt'
 	},
 	{
@@ -6868,20 +6868,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Gun',
 		type: 'ATTACK',
 		unique: false,
-		range: 'One',
+		ailments: [],
 		cost: {
 			type: 'HP',
 			amount: 17
 		},
+		flags: [],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 280,
 			display: 'Severe',
 			type: 'Physical'
 		},
-		min: 1,
-		max: 1,
-		flags: [],
-		ailments: [],
+		range: 'One',
 		series: 'persona'
 	},
 	{
@@ -6889,25 +6889,25 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 'All',
-		cost: {
-			type: 'HP',
-			amount: 16
-		},
-		power: {
-			amount: 100,
-			display: 'Medium',
-			type: 'Physical'
-		},
-		min: 1,
-		max: 1,
-		flags: [],
 		ailments: [
 			{
 				name: 'Rage',
 				chance: 5
 			}
 		],
+		cost: {
+			type: 'HP',
+			amount: 16
+		},
+		flags: [],
+		max: 1,
+		min: 1,
+		power: {
+			amount: 100,
+			display: 'Medium',
+			type: 'Physical'
+		},
+		range: 'All',
 		series: 'persona'
 	},
 	{
@@ -6936,22 +6936,22 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: true,
-		range: 'All',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 70
 		},
+		flags: [
+			'Defense Down'
+		],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 170,
 			display: 'Medium',
 			type: 'Physical'
 		},
-		min: 1,
-		max: 1,
-		flags: [
-			'Defense Down'
-		],
-		ailments: [],
+		range: 'All',
 		series: 'smt'
 	},
 	{
@@ -6959,20 +6959,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Wind',
 		type: 'ATTACK',
 		unique: false,
-		range: 'One',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 42
 		},
+		flags: [],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 265,
 			display: 'Severe',
 			type: 'Magic'
 		},
-		min: 1,
-		max: 1,
-		flags: [],
-		ailments: [],
+		range: 'One',
 		series: 'persona'
 	},
 	{
@@ -6980,23 +6980,23 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: true,
-		range: 'All',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 65
 		},
+		flags: [
+			'Attack Down',
+			'Defense Down'
+		],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 180,
 			display: 'Medium',
 			type: 'Physical'
 		},
-		min: 1,
-		max: 1,
-		flags: [
-			'Attack Down',
-			'Defense Down'
-		],
-		ailments: [],
+		range: 'All',
 		series: 'smt'
 	},
 	{
@@ -7018,22 +7018,22 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: true,
-		range: 'All',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 50
 		},
+		flags: [
+			'Afflicted Boost'
+		],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 170,
 			display: 'Heavy',
 			type: 'Physical'
 		},
-		min: 1,
-		max: 1,
-		flags: [
-			'Afflicted Boost'
-		],
-		ailments: [],
+		range: 'All',
 		series: 'smt'
 	},
 	{
@@ -7074,22 +7074,22 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 'One',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 15
 		},
+		flags: [
+			'Defense Down'
+		],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 130,
 			display: 'Weak',
 			type: 'Physical'
 		},
-		min: 1,
-		max: 1,
-		flags: [
-			'Defense Down'
-		],
-		ailments: [],
+		range: 'One',
 		series: 'smt'
 	},
 	{
@@ -7139,25 +7139,25 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 'One',
-		cost: {
-			type: 'HP',
-			amount: 9
-		},
-		power: {
-			amount: 110,
-			display: 'Weak',
-			type: 'Physical'
-		},
-		min: 1,
-		max: 1,
-		flags: [],
 		ailments: [
 			{
 				name: 'Poison',
 				chance: 20
 			}
 		],
+		cost: {
+			type: 'HP',
+			amount: 9
+		},
+		flags: [],
+		max: 1,
+		min: 1,
+		power: {
+			amount: 110,
+			display: 'Weak',
+			type: 'Physical'
+		},
+		range: 'One',
 		series: 'persona'
 	},
 	{
@@ -7179,22 +7179,22 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 'One',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 40
 		},
+		flags: [
+			'HP Dependent'
+		],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 155,
 			display: 'Medium',
 			type: 'Physical'
 		},
-		min: 1,
-		max: 1,
-		flags: [
-			'HP Dependent'
-		],
-		ailments: [],
+		range: 'One',
 		series: 'smt'
 	},
 	{
@@ -7202,20 +7202,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 'One',
+		ailments: [],
 		cost: {
 			type: 'HP',
 			amount: 10
 		},
+		flags: [],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 180,
 			display: 'Medium',
 			type: 'Physical'
 		},
-		min: 1,
-		max: 1,
-		flags: [],
-		ailments: [],
+		range: 'One',
 		series: 'persona'
 	},
 	{
@@ -7238,20 +7238,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 'One',
+		ailments: [],
 		cost: {
 			type: 'HP',
 			amount: 20
 		},
+		flags: [],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 425,
 			display: 'Colossal',
 			type: 'Physical'
 		},
-		min: 1,
-		max: 1,
-		flags: [],
-		ailments: [],
+		range: 'One',
 		series: 'persona'
 	},
 	{
@@ -7259,25 +7259,25 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Dark',
 		type: 'ATTACK',
 		unique: true,
-		range: 'One',
-		cost: {
-			type: 'MP',
-			amount: 35
-		},
-		power: {
-			amount: 240,
-			display: 'Heavy',
-			type: 'Magic'
-		},
-		min: 1,
-		max: 1,
-		flags: [],
 		ailments: [
 			{
 				name: 'Poison',
 				chance: 100
 			}
 		],
+		cost: {
+			type: 'MP',
+			amount: 35
+		},
+		flags: [],
+		max: 1,
+		min: 1,
+		power: {
+			amount: 240,
+			display: 'Heavy',
+			type: 'Magic'
+		},
+		range: 'One',
 		series: 'smt'
 	},
 	{
@@ -7285,20 +7285,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Psy',
 		type: 'ATTACK',
 		unique: false,
-		range: 'One',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 4
 		},
+		flags: [],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 130,
 			display: 'Weak',
 			type: 'Magic'
 		},
-		min: 1,
-		max: 1,
-		flags: [],
-		ailments: [],
+		range: 'One',
 		series: 'persona'
 	},
 	{
@@ -7306,20 +7306,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Psy',
 		type: 'ATTACK',
 		unique: false,
-		range: 'One',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 8
 		},
+		flags: [],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 160,
 			display: 'Medium',
 			type: 'Magic'
 		},
-		min: 1,
-		max: 1,
-		flags: [],
-		ailments: [],
+		range: 'One',
 		series: 'persona'
 	},
 	{
@@ -7327,20 +7327,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Psy',
 		type: 'ATTACK',
 		unique: false,
-		range: 'One',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 12
 		},
+		flags: [],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 215,
 			display: 'Heavy',
 			type: 'Magic'
 		},
-		min: 1,
-		max: 1,
-		flags: [],
-		ailments: [],
+		range: 'One',
 		series: 'persona'
 	},
 	{
@@ -7382,20 +7382,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Psy',
 		type: 'ATTACK',
 		unique: false,
-		range: 'All',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 54
 		},
+		flags: [],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 185,
 			display: 'Severe',
 			type: 'Magic'
 		},
-		min: 1,
-		max: 1,
-		flags: [],
-		ailments: [],
+		range: 'All',
 		series: 'persona'
 	},
 	{
@@ -7403,20 +7403,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Psy',
 		type: 'ATTACK',
 		unique: false,
-		range: 'One',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 48
 		},
+		flags: [],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 265,
 			display: 'Severe',
 			type: 'Magic'
 		},
-		min: 1,
-		max: 1,
-		flags: [],
-		ailments: [],
+		range: 'One',
 		series: 'persona'
 	},
 	{
@@ -7437,22 +7437,22 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 'One',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 15
 		},
+		flags: [
+			'Pierce'
+		],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 150,
 			display: 'Medium',
 			type: 'Physical'
 		},
-		min: 1,
-		max: 1,
-		flags: [
-			'Pierce'
-		],
-		ailments: [],
+		range: 'One',
 		series: 'smt'
 	},
 	{
@@ -7460,22 +7460,22 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 'One',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 25
 		},
+		flags: [
+			'Confused Boost'
+		],
+		max: 3,
+		min: 3,
 		power: {
 			amount: 75,
 			display: 'Weak',
 			type: 'Physical'
 		},
-		min: 3,
-		max: 3,
-		flags: [
-			'Confused Boost'
-		],
-		ailments: [],
+		range: 'One',
 		series: 'smt'
 	},
 	{
@@ -7492,20 +7492,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Ice',
 		type: 'ATTACK',
 		unique: true,
-		range: 'One',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 40
 		},
+		flags: [],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 300,
 			display: 'Severe',
 			type: 'Magic'
 		},
-		min: 1,
-		max: 1,
-		flags: [],
-		ailments: [],
+		range: 'One',
 		series: 'smt'
 	},
 	{
@@ -7513,20 +7513,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Fire',
 		type: 'ATTACK',
 		unique: true,
-		range: 'One',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 40
 		},
+		flags: [],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 300,
 			display: 'Severe',
 			type: 'Magic'
 		},
-		min: 1,
-		max: 1,
-		flags: [],
-		ailments: [],
+		range: 'One',
 		series: 'smt'
 	},
 	{
@@ -7534,20 +7534,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Elec',
 		type: 'ATTACK',
 		unique: true,
-		range: 'One',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 40
 		},
+		flags: [],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 300,
 			display: 'Severe',
 			type: 'Magic'
 		},
-		min: 1,
-		max: 1,
-		flags: [],
-		ailments: [],
+		range: 'One',
 		series: 'smt'
 	},
 	{
@@ -7555,20 +7555,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Force',
 		type: 'ATTACK',
 		unique: true,
-		range: 'One',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 40
 		},
+		flags: [],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 300,
 			display: 'Severe',
 			type: 'Magic'
 		},
-		min: 1,
-		max: 1,
-		flags: [],
-		ailments: [],
+		range: 'One',
 		series: 'smt'
 	},
 	{
@@ -7576,20 +7576,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Fire',
 		type: 'ATTACK',
 		unique: false,
-		range: 'Random',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 60
 		},
+		flags: [],
+		max: 5,
+		min: 2,
 		power: {
 			amount: 150,
 			display: 'Medium',
 			type: 'Magic'
 		},
-		min: 2,
-		max: 5,
-		flags: [],
-		ailments: [],
+		range: 'Random',
 		series: 'smt'
 	},
 	{
@@ -7597,22 +7597,22 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 'One',
+		ailments: [],
 		cost: {
 			type: 'HP',
 			amount: 20
 		},
+		flags: [
+			'Weather Boost'
+		],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 260,
 			display: 'Heavy',
 			type: 'Physical'
 		},
-		min: 1,
-		max: 1,
-		flags: [
-			'Weather Boost'
-		],
-		ailments: [],
+		range: 'One',
 		series: 'persona'
 	},
 	{
@@ -7650,22 +7650,22 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 'Random',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 35
 		},
+		flags: [
+			'Half Accuracy'
+		],
+		max: 5,
+		min: 2,
 		power: {
 			amount: 180,
 			display: 'Medium',
 			type: 'Physical'
 		},
-		min: 2,
-		max: 5,
-		flags: [
-			'Half Accuracy'
-		],
-		ailments: [],
+		range: 'Random',
 		series: 'smt'
 	},
 	{
@@ -7703,22 +7703,22 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Almighty',
 		type: 'ATTACK',
 		unique: true,
-		range: 'One',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 99
 		},
+		flags: [
+			'Down Boost'
+		],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 450,
 			display: 'Colossal',
 			type: 'Magic'
 		},
-		min: 1,
-		max: 1,
-		flags: [
-			'Down Boost'
-		],
-		ailments: [],
+		range: 'One',
 		series: 'persona'
 	},
 	{
@@ -8068,20 +8068,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Gun',
 		type: 'ATTACK',
 		unique: false,
-		range: 'All',
+		ailments: [],
 		cost: {
 			type: 'HP',
 			amount: 24
 		},
+		flags: [],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 310,
 			display: 'Severe',
 			type: 'Physical'
 		},
-		min: 1,
-		max: 1,
-		flags: [],
-		ailments: [],
+		range: 'All',
 		series: 'persona'
 	},
 	{
@@ -8089,22 +8089,22 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 'One',
+		ailments: [],
 		cost: {
 			type: 'HP',
 			amount: 14
 		},
+		flags: [
+			'Baton Boost'
+		],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 220,
 			display: 'Heavy',
 			type: 'Physical'
 		},
-		min: 1,
-		max: 1,
-		flags: [
-			'Baton Boost'
-		],
-		ailments: [],
+		range: 'One',
 		series: 'persona'
 	},
 	{
@@ -8112,20 +8112,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Elec',
 		type: 'ATTACK',
 		unique: true,
-		range: 'One',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 20
 		},
+		flags: [],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 200,
 			display: 'Heavy',
 			type: 'Magic'
 		},
-		min: 1,
-		max: 1,
-		flags: [],
-		ailments: [],
+		range: 'One',
 		series: 'smt'
 	},
 	{
@@ -8133,23 +8133,23 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Force',
 		type: 'ATTACK',
 		unique: true,
-		range: 'All',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 50
 		},
+		flags: [
+			'Defense Down',
+			'Attack Down'
+		],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 140,
 			display: 'Heavy',
 			type: 'Magic'
 		},
-		min: 1,
-		max: 1,
-		flags: [
-			'Defense Down',
-			'Attack Down'
-		],
-		ailments: [],
+		range: 'All',
 		series: 'smt'
 	},
 	{
@@ -8165,20 +8165,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Almighty',
 		type: 'ATTACK',
 		unique: true,
-		range: 'One',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 20
 		},
+		flags: [],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 230,
 			display: 'Medium',
 			type: 'Physical'
 		},
-		min: 1,
-		max: 1,
-		flags: [],
-		ailments: [],
+		range: 'One',
 		series: 'smt'
 	},
 	{
@@ -8214,23 +8214,23 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Almighty',
 		type: 'ATTACK',
 		unique: true,
-		range: 'One',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 15
 		},
+		flags: [
+			'Attack Down',
+			'Drain HP'
+		],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 120,
 			display: 'Weak',
 			type: 'Magic'
 		},
-		min: 1,
-		max: 1,
-		flags: [
-			'Attack Down',
-			'Drain HP'
-		],
-		ailments: [],
+		range: 'One',
 		series: 'smt'
 	},
 	{
@@ -8238,20 +8238,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 'Random',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 12
 		},
+		flags: [],
+		max: 4,
+		min: 2,
 		power: {
 			amount: 85,
 			display: 'Weak',
 			type: 'Physical'
 		},
-		min: 2,
-		max: 4,
-		flags: [],
-		ailments: [],
+		range: 'Random',
 		series: 'smt'
 	},
 	{
@@ -8268,22 +8268,22 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 'One',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 25
 		},
+		flags: [
+			'Crit Damage Boost'
+		],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 190,
 			display: 'Heavy',
 			type: 'Physical'
 		},
-		min: 1,
-		max: 1,
-		flags: [
-			'Crit Damage Boost'
-		],
-		ailments: [],
+		range: 'One',
 		series: 'smt'
 	},
 	{
@@ -8323,20 +8323,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Light',
 		type: 'ATTACK',
 		unique: true,
-		range: 'All',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 22
 		},
+		flags: [],
+		max: 8,
+		min: 4,
 		power: {
 			amount: 15,
 			display: 'Weak',
 			type: 'Magic'
 		},
-		min: 4,
-		max: 8,
-		flags: [],
-		ailments: [],
+		range: 'All',
 		series: 'persona'
 	},
 	{
@@ -8353,20 +8353,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Elec',
 		type: 'ATTACK',
 		unique: false,
-		range: 'Random',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 25
 		},
+		flags: [],
+		max: 5,
+		min: 2,
 		power: {
 			amount: 90,
 			display: 'Weak',
 			type: 'Magic'
 		},
-		min: 2,
-		max: 5,
-		flags: [],
-		ailments: [],
+		range: 'Random',
 		series: 'smt'
 	},
 	{
@@ -8374,22 +8374,22 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Almighty',
 		type: 'ATTACK',
 		unique: true,
-		range: 'All',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 45
 		},
+		flags: [
+			'Accuracy/Evasion Down'
+		],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 140,
 			display: 'Medium',
 			type: 'Magic'
 		},
-		min: 1,
-		max: 1,
-		flags: [
-			'Accuracy/Evasion Down'
-		],
-		ailments: [],
+		range: 'All',
 		series: 'smt'
 	},
 	{
@@ -8397,20 +8397,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 'One',
+		ailments: [],
 		cost: {
 			type: 'HP',
 			amount: 5
 		},
+		flags: [],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 130,
 			display: 'Weak',
 			type: 'Physical'
 		},
-		min: 1,
-		max: 1,
-		flags: [],
-		ailments: [],
+		range: 'One',
 		series: 'persona'
 	},
 	{
@@ -8418,25 +8418,25 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 'One',
-		cost: {
-			type: 'HP',
-			amount: 10
-		},
-		power: {
-			amount: 125,
-			display: 'Medium',
-			type: 'Physical'
-		},
-		min: 1,
-		max: 1,
-		flags: [],
 		ailments: [
 			{
 				name: 'Confuse',
 				chance: 20
 			}
 		],
+		cost: {
+			type: 'HP',
+			amount: 10
+		},
+		flags: [],
+		max: 1,
+		min: 1,
+		power: {
+			amount: 125,
+			display: 'Medium',
+			type: 'Physical'
+		},
+		range: 'One',
 		series: 'persona'
 	},
 	{
@@ -8444,25 +8444,25 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 'One',
-		cost: {
-			type: 'HP',
-			amount: 10
-		},
-		power: {
-			amount: 125,
-			display: 'Medium',
-			type: 'Physical'
-		},
-		min: 1,
-		max: 1,
-		flags: [],
 		ailments: [
 			{
 				name: 'Mirage',
 				chance: 20
 			}
 		],
+		cost: {
+			type: 'HP',
+			amount: 10
+		},
+		flags: [],
+		max: 1,
+		min: 1,
+		power: {
+			amount: 125,
+			display: 'Medium',
+			type: 'Physical'
+		},
+		range: 'One',
 		series: 'persona'
 	},
 	{
@@ -8493,20 +8493,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Gun',
 		type: 'ATTACK',
 		unique: false,
-		range: 'One',
+		ailments: [],
 		cost: {
 			type: 'HP',
 			amount: 9
 		},
+		flags: [],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 100,
 			display: 'Medium',
 			type: 'Physical'
 		},
-		min: 1,
-		max: 1,
-		flags: [],
-		ailments: [],
+		range: 'One',
 		series: 'persona'
 	},
 	{
@@ -8514,22 +8514,22 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: true,
-		range: 'One',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 35
 		},
+		flags: [
+			'Defense Greatly Down'
+		],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 160,
 			display: 'Weak',
 			type: 'Physical'
 		},
-		min: 1,
-		max: 1,
-		flags: [
-			'Defense Greatly Down'
-		],
-		ailments: [],
+		range: 'One',
 		series: 'smt'
 	},
 	{
@@ -8537,20 +8537,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 'One',
+		ailments: [],
 		cost: {
 			type: 'HP',
 			amount: 8
 		},
+		flags: [],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 140,
 			display: 'Weak',
 			type: 'Physical'
 		},
-		min: 1,
-		max: 1,
-		flags: [],
-		ailments: [],
+		range: 'One',
 		series: 'persona'
 	},
 	{
@@ -8558,20 +8558,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Elec',
 		type: 'ATTACK',
 		unique: true,
-		range: 'One',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 55
 		},
+		flags: [],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 330,
 			display: 'Severe',
 			type: 'Magic'
 		},
-		min: 1,
-		max: 1,
-		flags: [],
-		ailments: [],
+		range: 'One',
 		series: 'smt'
 	},
 	{
@@ -8602,27 +8602,27 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Almighty',
 		type: 'ATTACK',
 		unique: true,
-		range: 'All',
-		cost: {
-			type: 'MP',
-			amount: 50
-		},
-		power: {
-			amount: 230,
-			display: 'Severe',
-			type: 'Magic'
-		},
-		min: 1,
-		max: 1,
-		flags: [
-			'Half Accuracy'
-		],
 		ailments: [
 			{
 				name: 'Seal',
 				chance: 40
 			}
 		],
+		cost: {
+			type: 'MP',
+			amount: 50
+		},
+		flags: [
+			'Half Accuracy'
+		],
+		max: 1,
+		min: 1,
+		power: {
+			amount: 230,
+			display: 'Severe',
+			type: 'Magic'
+		},
+		range: 'All',
 		series: 'smt'
 	},
 	{
@@ -8655,22 +8655,22 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Almighty',
 		type: 'ATTACK',
 		unique: false,
-		range: 'One',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 5
 		},
+		flags: [
+			'Drain MP'
+		],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 100,
 			display: 'Weak',
 			type: 'Magic'
 		},
-		min: 1,
-		max: 1,
-		flags: [
-			'Drain MP'
-		],
-		ailments: [],
+		range: 'One',
 		series: 'smt'
 	},
 	{
@@ -8709,20 +8709,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 'One',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 25
 		},
+		flags: [],
+		max: 4,
+		min: 1,
 		power: {
 			amount: 75,
 			display: 'Medium',
 			type: 'Physical'
 		},
-		min: 1,
-		max: 4,
-		flags: [],
-		ailments: [],
+		range: 'One',
 		series: 'smt'
 	},
 	{
@@ -8730,20 +8730,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Elec',
 		type: 'ATTACK',
 		unique: false,
-		range: 'One',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 25
 		},
+		flags: [],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 200,
 			display: 'Medium',
 			type: 'Physical'
 		},
-		min: 1,
-		max: 1,
-		flags: [],
-		ailments: [],
+		range: 'One',
 		series: 'smt'
 	},
 	{
@@ -8751,20 +8751,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Ice',
 		type: 'ATTACK',
 		unique: true,
-		range: 'Random',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 18
 		},
+		flags: [],
+		max: 6,
+		min: 3,
 		power: {
 			amount: 60,
 			display: 'Weak',
 			type: 'Magic'
 		},
-		min: 3,
-		max: 6,
-		flags: [],
-		ailments: [],
+		range: 'Random',
 		series: 'smt'
 	},
 	{
@@ -8859,20 +8859,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 'All',
+		ailments: [],
 		cost: {
 			type: 'HP',
 			amount: 17
 		},
+		flags: [],
+		max: 4,
+		min: 2,
 		power: {
 			amount: 25,
 			display: 'Minuscule',
 			type: 'Physical'
 		},
-		min: 2,
-		max: 4,
-		flags: [],
-		ailments: [],
+		range: 'All',
 		series: 'persona'
 	},
 	{
@@ -8880,20 +8880,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 'One',
+		ailments: [],
 		cost: {
 			type: 'HP',
 			amount: 25
 		},
+		flags: [],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 375,
 			display: 'Colossal',
 			type: 'Physical'
 		},
-		min: 1,
-		max: 1,
-		flags: [],
-		ailments: [],
+		range: 'One',
 		series: 'persona'
 	},
 	{
@@ -8901,22 +8901,22 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Almighty',
 		type: 'ATTACK',
 		unique: true,
-		range: 'All',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 160
 		},
+		flags: [
+			'Minimize Defense'
+		],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 230,
 			display: 'Severe',
 			type: 'Magic'
 		},
-		min: 1,
-		max: 1,
-		flags: [
-			'Minimize Defense'
-		],
-		ailments: [],
+		range: 'All',
 		series: 'smt'
 	},
 	{
@@ -8983,20 +8983,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 'One',
+		ailments: [],
 		cost: {
 			type: 'HP',
 			amount: 17
 		},
+		flags: [],
+		max: 5,
+		min: 3,
 		power: {
 			amount: 20,
 			display: 'Minuscule',
 			type: 'Physical'
 		},
-		min: 3,
-		max: 5,
-		flags: [],
-		ailments: [],
+		range: 'One',
 		series: 'persona'
 	},
 	{
@@ -9017,25 +9017,25 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 'One',
-		cost: {
-			type: 'HP',
-			amount: 8
-		},
-		power: {
-			amount: 90,
-			display: 'Medium',
-			type: 'Physical'
-		},
-		min: 1,
-		max: 1,
-		flags: [],
 		ailments: [
 			{
 				name: 'Fear',
 				chance: 20
 			}
 		],
+		cost: {
+			type: 'HP',
+			amount: 8
+		},
+		flags: [],
+		max: 1,
+		min: 1,
+		power: {
+			amount: 90,
+			display: 'Medium',
+			type: 'Physical'
+		},
+		range: 'One',
 		series: 'persona'
 	},
 	{
@@ -9043,27 +9043,27 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: true,
-		range: 'Random',
-		cost: {
-			type: 'MP',
-			amount: 35
-		},
-		power: {
-			amount: 250,
-			display: 'Heavy',
-			type: 'Physical'
-		},
-		min: 1,
-		max: 3,
-		flags: [
-			'Pierce'
-		],
 		ailments: [
 			{
 				name: 'Confuse',
 				chance: 50
 			}
 		],
+		cost: {
+			type: 'MP',
+			amount: 35
+		},
+		flags: [
+			'Pierce'
+		],
+		max: 3,
+		min: 1,
+		power: {
+			amount: 250,
+			display: 'Heavy',
+			type: 'Physical'
+		},
+		range: 'Random',
 		series: 'smt'
 	},
 	{
@@ -9101,20 +9101,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Ice',
 		type: 'ATTACK',
 		unique: true,
-		range: 'Random',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 45
 		},
+		flags: [],
+		max: 7,
+		min: 3,
 		power: {
 			amount: 95,
 			display: 'Weak',
 			type: 'Magic'
 		},
-		min: 3,
-		max: 7,
-		flags: [],
-		ailments: [],
+		range: 'Random',
 		series: 'smt'
 	},
 	{
@@ -9154,20 +9154,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Elec',
 		type: 'ATTACK',
 		unique: false,
-		range: 'Random',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 60
 		},
+		flags: [],
+		max: 5,
+		min: 2,
 		power: {
 			amount: 150,
 			display: 'Medium',
 			type: 'Magic'
 		},
-		min: 2,
-		max: 5,
-		flags: [],
-		ailments: [],
+		range: 'Random',
 		series: 'smt'
 	},
 	{
@@ -9175,20 +9175,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 'All',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 60
 		},
+		flags: [],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 150,
 			display: 'Medium',
 			type: 'Physical'
 		},
-		min: 1,
-		max: 1,
-		flags: [],
-		ailments: [],
+		range: 'All',
 		series: 'smt'
 	},
 	{
@@ -9196,25 +9196,25 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Fire',
 		type: 'ATTACK',
 		unique: true,
-		range: 'All',
-		cost: {
-			type: 'MP',
-			amount: 34
-		},
-		power: {
-			amount: 190,
-			display: 'Severe',
-			type: 'Magic'
-		},
-		min: 1,
-		max: 1,
-		flags: [],
 		ailments: [
 			{
 				name: 'Fear',
 				chance: 70
 			}
 		],
+		cost: {
+			type: 'MP',
+			amount: 34
+		},
+		flags: [],
+		max: 1,
+		min: 1,
+		power: {
+			amount: 190,
+			display: 'Severe',
+			type: 'Magic'
+		},
+		range: 'All',
 		series: 'persona'
 	},
 	{
@@ -9222,20 +9222,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 'One',
+		ailments: [],
 		cost: {
 			type: 'HP',
 			amount: 12
 		},
+		flags: [],
+		max: 4,
+		min: 2,
 		power: {
 			amount: 75,
 			display: 'Medium',
 			type: 'Physical'
 		},
-		min: 2,
-		max: 4,
-		flags: [],
-		ailments: [],
+		range: 'One',
 		series: 'persona'
 	},
 	{
@@ -9251,25 +9251,25 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Dark',
 		type: 'ATTACK',
 		unique: true,
-		range: 'All',
-		cost: {
-			type: 'MP',
-			amount: 30
-		},
-		power: {
-			amount: 120,
-			display: 'Medium',
-			type: 'Magic'
-		},
-		min: 1,
-		max: 1,
-		flags: [],
 		ailments: [
 			{
 				name: 'Poison',
 				chance: 50
 			}
 		],
+		cost: {
+			type: 'MP',
+			amount: 30
+		},
+		flags: [],
+		max: 1,
+		min: 1,
+		power: {
+			amount: 120,
+			display: 'Medium',
+			type: 'Magic'
+		},
+		range: 'All',
 		series: 'smt'
 	},
 	{
@@ -9305,25 +9305,25 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 'One',
-		cost: {
-			type: 'MP',
-			amount: 10
-		},
-		power: {
-			amount: 110,
-			display: 'Weak',
-			type: 'Physical'
-		},
-		min: 1,
-		max: 1,
-		flags: [],
 		ailments: [
 			{
 				name: 'Poison',
 				chance: 60
 			}
 		],
+		cost: {
+			type: 'MP',
+			amount: 10
+		},
+		flags: [],
+		max: 1,
+		min: 1,
+		power: {
+			amount: 110,
+			display: 'Weak',
+			type: 'Physical'
+		},
+		range: 'One',
 		series: 'smt'
 	},
 	{
@@ -9369,20 +9369,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Gun',
 		type: 'ATTACK',
 		unique: false,
-		range: 'All',
+		ailments: [],
 		cost: {
 			type: 'HP',
 			amount: 16
 		},
+		flags: [],
+		max: 3,
+		min: 3,
 		power: {
 			amount: 40,
 			display: 'Weak',
 			type: 'Physical'
 		},
-		min: 3,
-		max: 3,
-		flags: [],
-		ailments: [],
+		range: 'All',
 		series: 'persona'
 	},
 	{
@@ -9390,22 +9390,22 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Fire',
 		type: 'ATTACK',
 		unique: false,
-		range: 'One',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 65
 		},
+		flags: [
+			'Pierce'
+		],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 230,
 			display: 'Heavy',
 			type: 'Magic'
 		},
-		min: 1,
-		max: 1,
-		flags: [
-			'Pierce'
-		],
-		ailments: [],
+		range: 'One',
 		series: 'smt'
 	},
 	{
@@ -9437,20 +9437,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Wind',
 		type: 'ATTACK',
 		unique: false,
-		range: 'All',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 48
 		},
+		flags: [],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 185,
 			display: 'Severe',
 			type: 'Magic'
 		},
-		min: 1,
-		max: 1,
-		flags: [],
-		ailments: [],
+		range: 'All',
 		series: 'persona'
 	},
 	{
@@ -9458,20 +9458,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 'All',
+		ailments: [],
 		cost: {
 			type: 'HP',
 			amount: 13
 		},
+		flags: [],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 100,
 			display: 'Medium',
 			type: 'Physical'
 		},
-		min: 1,
-		max: 1,
-		flags: [],
-		ailments: [],
+		range: 'All',
 		series: 'persona'
 	},
 	{
@@ -9497,22 +9497,22 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 'One',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 15
 		},
+		flags: [
+			'Poisoned Boost'
+		],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 160,
 			display: 'Weak',
 			type: 'Physical'
 		},
-		min: 1,
-		max: 1,
-		flags: [
-			'Poisoned Boost'
-		],
-		ailments: [],
+		range: 'One',
 		series: 'smt'
 	},
 	{
@@ -9520,20 +9520,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 'All',
+		ailments: [],
 		cost: {
 			type: 'HP',
 			amount: 18
 		},
+		flags: [],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 150,
 			display: 'Medium',
 			type: 'Physical'
 		},
-		min: 1,
-		max: 1,
-		flags: [],
-		ailments: [],
+		range: 'All',
 		series: 'persona'
 	},
 	{
@@ -9557,22 +9557,22 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 'One',
+		ailments: [],
 		cost: {
 			type: 'HP',
 			amount: 18
 		},
+		flags: [
+			'Down Boost'
+		],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 300,
 			display: 'Heavy',
 			type: 'Physical'
 		},
-		min: 1,
-		max: 1,
-		flags: [
-			'Down Boost'
-		],
-		ailments: [],
+		range: 'One',
 		series: 'persona'
 	},
 	{
@@ -9580,25 +9580,25 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Almighty',
 		type: 'ATTACK',
 		unique: true,
-		range: 'All',
-		cost: {
-			type: 'MP',
-			amount: 60
-		},
-		power: {
-			amount: 150,
-			display: 'Medium',
-			type: 'Magic'
-		},
-		min: 1,
-		max: 1,
-		flags: [],
 		ailments: [
 			{
 				name: 'Seal',
 				chance: 40
 			}
 		],
+		cost: {
+			type: 'MP',
+			amount: 60
+		},
+		flags: [],
+		max: 1,
+		min: 1,
+		power: {
+			amount: 150,
+			display: 'Medium',
+			type: 'Magic'
+		},
+		range: 'All',
 		series: 'smt'
 	},
 	{
@@ -9606,25 +9606,25 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 'All',
-		cost: {
-			type: 'HP',
-			amount: 16
-		},
-		power: {
-			amount: 175,
-			display: 'Heavy',
-			type: 'Physical'
-		},
-		min: 1,
-		max: 1,
-		flags: [],
 		ailments: [
 			{
 				name: 'Poison',
 				chance: 5
 			}
 		],
+		cost: {
+			type: 'HP',
+			amount: 16
+		},
+		flags: [],
+		max: 1,
+		min: 1,
+		power: {
+			amount: 175,
+			display: 'Heavy',
+			type: 'Physical'
+		},
+		range: 'All',
 		series: 'persona'
 	},
 	{
@@ -9632,20 +9632,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 'All',
+		ailments: [],
 		cost: {
 			type: 'HP',
 			amount: 23
 		},
+		flags: [],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 280,
 			display: 'Severe',
 			type: 'Physical'
 		},
-		min: 1,
-		max: 1,
-		flags: [],
-		ailments: [],
+		range: 'All',
 		series: 'persona'
 	},
 	{
@@ -9666,22 +9666,22 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Dark',
 		type: 'ATTACK',
 		unique: true,
-		range: 'One',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 40
 		},
+		flags: [
+			'Weakness Instakill'
+		],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 300,
 			display: 'Severe',
 			type: 'Magic'
 		},
-		min: 1,
-		max: 1,
-		flags: [
-			'Weakness Instakill'
-		],
-		ailments: [],
+		range: 'One',
 		series: 'smt'
 	},
 	{
@@ -9696,22 +9696,22 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Light',
 		type: 'ATTACK',
 		unique: false,
-		range: 'One',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 30
 		},
+		flags: [
+			'Weakness Instakill'
+		],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 200,
 			display: 'Medium',
 			type: 'Physical'
 		},
-		min: 1,
-		max: 1,
-		flags: [
-			'Weakness Instakill'
-		],
-		ailments: [],
+		range: 'One',
 		series: 'smt'
 	},
 	{
@@ -9745,20 +9745,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Force',
 		type: 'ATTACK',
 		unique: false,
-		range: 'Random',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 25
 		},
+		flags: [],
+		max: 5,
+		min: 2,
 		power: {
 			amount: 90,
 			display: 'Weak',
 			type: 'Magic'
 		},
-		min: 2,
-		max: 5,
-		flags: [],
-		ailments: [],
+		range: 'Random',
 		series: 'smt'
 	},
 	{
@@ -9766,20 +9766,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Force',
 		type: 'ATTACK',
 		unique: false,
-		range: 'One',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 25
 		},
+		flags: [],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 200,
 			display: 'Medium',
 			type: 'Physical'
 		},
-		min: 1,
-		max: 1,
-		flags: [],
-		ailments: [],
+		range: 'One',
 		series: 'smt'
 	},
 	{
@@ -9803,22 +9803,22 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: true,
-		range: 'Random',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 35
 		},
+		flags: [
+			'Crit Damage Boost'
+		],
+		max: 8,
+		min: 8,
 		power: {
 			amount: 30,
 			display: 'Weak',
 			type: 'Physical'
 		},
-		min: 8,
-		max: 8,
-		flags: [
-			'Crit Damage Boost'
-		],
-		ailments: [],
+		range: 'Random',
 		series: 'smt'
 	},
 	{
@@ -9826,22 +9826,22 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
-		range: 'All',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 50
 		},
+		flags: [
+			'Pierce'
+		],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 60,
 			display: 'Weak',
 			type: 'Physical'
 		},
-		min: 1,
-		max: 1,
-		flags: [
-			'Pierce'
-		],
-		ailments: [],
+		range: 'All',
 		series: 'smt'
 	},
 	{
@@ -9863,20 +9863,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Force',
 		type: 'ATTACK',
 		unique: false,
-		range: 'One',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 10
 		},
+		flags: [],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 130,
 			display: 'Weak',
 			type: 'Magic'
 		},
-		min: 1,
-		max: 1,
-		flags: [],
-		ailments: [],
+		range: 'One',
 		series: 'smt'
 	},
 	{
@@ -9884,20 +9884,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Force',
 		type: 'ATTACK',
 		unique: false,
-		range: 'One',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 50
 		},
+		flags: [],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 265,
 			display: 'Severe',
 			type: 'Magic'
 		},
-		min: 1,
-		max: 1,
-		flags: [],
-		ailments: [],
+		range: 'One',
 		series: 'smt'
 	},
 	{
@@ -9905,20 +9905,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Force',
 		type: 'ATTACK',
 		unique: false,
-		range: 'One',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 35
 		},
+		flags: [],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 215,
 			display: 'Heavy',
 			type: 'Magic'
 		},
-		min: 1,
-		max: 1,
-		flags: [],
-		ailments: [],
+		range: 'One',
 		series: 'smt'
 	},
 	{
@@ -9926,20 +9926,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Force',
 		type: 'ATTACK',
 		unique: false,
-		range: 'One',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 20
 		},
+		flags: [],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 160,
 			display: 'Medium',
 			type: 'Magic'
 		},
-		min: 1,
-		max: 1,
-		flags: [],
-		ailments: [],
+		range: 'One',
 		series: 'smt'
 	},
 	{
@@ -9947,20 +9947,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Elec',
 		type: 'ATTACK',
 		unique: false,
-		range: 'One',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 10
 		},
+		flags: [],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 130,
 			display: 'Weak',
 			type: 'Magic'
 		},
-		min: 1,
-		max: 1,
-		flags: [],
-		ailments: [],
+		range: 'One',
 		series: 'smt'
 	},
 	{
@@ -9968,20 +9968,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Elec',
 		type: 'ATTACK',
 		unique: false,
-		range: 'One',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 50
 		},
+		flags: [],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 265,
 			display: 'Severe',
 			type: 'Magic'
 		},
-		min: 1,
-		max: 1,
-		flags: [],
-		ailments: [],
+		range: 'One',
 		series: 'smt'
 	},
 	{
@@ -9989,20 +9989,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Elec',
 		type: 'ATTACK',
 		unique: false,
-		range: 'One',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 35
 		},
+		flags: [],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 215,
 			display: 'Heavy',
 			type: 'Magic'
 		},
-		min: 1,
-		max: 1,
-		flags: [],
-		ailments: [],
+		range: 'One',
 		series: 'smt'
 	},
 	{
@@ -10010,20 +10010,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Elec',
 		type: 'ATTACK',
 		unique: false,
-		range: 'One',
+		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 20
 		},
+		flags: [],
+		max: 1,
+		min: 1,
 		power: {
 			amount: 160,
 			display: 'Medium',
 			type: 'Magic'
 		},
-		min: 1,
-		max: 1,
-		flags: [],
-		ailments: [],
+		range: 'One',
 		series: 'smt'
 	}
 ];
