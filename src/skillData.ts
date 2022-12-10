@@ -37,6 +37,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Almighty',
 		type: 'ATTACK',
 		unique: true,
+		accuracy: 0,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -66,6 +67,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Dark',
 		type: 'ATTACK',
 		unique: true,
+		accuracy: 0,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -87,12 +89,15 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 98,
 		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 25
 		},
-		flags: [],
+		flags: [
+			'+200% Crit Rate'
+		],
 		max: 1,
 		min: 1,
 		power: {
@@ -116,6 +121,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Fire',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 98,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -137,6 +143,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Fire',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 98,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -158,6 +165,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Fire',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 98,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -179,6 +187,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Fire',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 98,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -200,6 +209,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 0,
 		ailments: [],
 		cost: {
 			type: 'HP',
@@ -230,6 +240,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 98,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -308,6 +319,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: true,
+		accuracy: 108,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -356,6 +368,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: true,
+		accuracy: 98,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -384,6 +397,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 0,
 		ailments: [],
 		cost: {
 			type: 'HP',
@@ -405,6 +419,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 0,
 		ailments: [],
 		cost: {
 			type: 'HP',
@@ -426,6 +441,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: true,
+		accuracy: 108,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -447,6 +463,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Nuke',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 0,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -500,6 +517,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 98,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -521,6 +539,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: true,
+		accuracy: 0,
 		ailments: [],
 		cost: {
 			type: 'HP',
@@ -544,6 +563,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Almighty',
 		type: 'ATTACK',
 		unique: true,
+		accuracy: 98,
 		ailments: [
 			{
 				name: 'Confuse',
@@ -570,6 +590,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 0,
 		ailments: [
 			{
 				name: 'Despair',
@@ -612,6 +633,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 0,
 		ailments: [],
 		cost: {
 			type: 'HP',
@@ -641,6 +663,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: true,
+		accuracy: 0,
 		ailments: [],
 		cost: {
 			type: 'HP',
@@ -664,6 +687,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 98,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -687,6 +711,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 98,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -708,6 +733,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 98,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -731,6 +757,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Dark',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 98,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -754,6 +781,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 0,
 		ailments: [],
 		cost: {
 			type: 'HP',
@@ -775,6 +803,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Almighty',
 		type: 'ATTACK',
 		unique: true,
+		accuracy: 0,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -796,6 +825,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 0,
 		ailments: [],
 		cost: {
 			type: 'HP',
@@ -828,6 +858,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 98,
 		ailments: [
 			{
 				name: 'Poison',
@@ -854,6 +885,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 98,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -877,6 +909,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 0,
 		ailments: [
 			{
 				name: 'Fear',
@@ -927,6 +960,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 98,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -957,6 +991,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 0,
 		ailments: [
 			{
 				name: 'Charm',
@@ -983,6 +1018,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 0,
 		ailments: [
 			{
 				name: 'Charm',
@@ -1009,12 +1045,15 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 98,
 		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 45
 		},
-		flags: [],
+		flags: [
+			'+30% Crit Rate'
+		],
 		max: 1,
 		min: 1,
 		power: {
@@ -1038,6 +1077,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Ice',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 98,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -1059,6 +1099,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Ice',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 98,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -1080,6 +1121,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Ice',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 98,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -1101,6 +1143,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Ice',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 98,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -1145,6 +1188,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: true,
+		accuracy: 98,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -1168,6 +1212,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 98,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -1266,6 +1311,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 0,
 		ailments: [],
 		cost: {
 			type: 'HP',
@@ -1323,6 +1369,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 0,
 		ailments: [],
 		cost: {
 			type: 'HP',
@@ -1346,6 +1393,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Nuke',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 0,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -1394,6 +1442,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 0,
 		ailments: [
 			{
 				name: 'Rage',
@@ -1429,13 +1478,14 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 50,
 		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 10
 		},
 		flags: [
-			'Half Accuracy'
+			'+200% Crit Rate'
 		],
 		max: 1,
 		min: 1,
@@ -1452,12 +1502,15 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 98,
 		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 25
 		},
-		flags: [],
+		flags: [
+			'+20% Crit Rate'
+		],
 		max: 1,
 		min: 1,
 		power: {
@@ -1481,6 +1534,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: true,
+		accuracy: 0,
 		ailments: [],
 		cost: {
 			type: 'HP',
@@ -1504,6 +1558,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 0,
 		ailments: [],
 		cost: {
 			type: 'HP',
@@ -1527,14 +1582,13 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 50,
 		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 20
 		},
-		flags: [
-			'Half Accuracy'
-		],
+		flags: [],
 		max: 1,
 		min: 1,
 		power: {
@@ -1558,6 +1612,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 98,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -1579,12 +1634,15 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: true,
+		accuracy: 98,
 		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 25
 		},
-		flags: [],
+		flags: [
+			'+30% Crit Rate'
+		],
 		max: 3,
 		min: 3,
 		power: {
@@ -1638,6 +1696,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 98,
 		ailments: [
 			{
 				name: 'Seal',
@@ -1677,13 +1736,14 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: true,
+		accuracy: 108,
 		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 50
 		},
 		flags: [
-			'Baton Boost'
+			'+200% Crit Rate'
 		],
 		max: 1,
 		min: 1,
@@ -1700,6 +1760,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Dark',
 		type: 'ATTACK',
 		unique: true,
+		accuracy: 98,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -1723,6 +1784,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Almighty',
 		type: 'ATTACK',
 		unique: true,
+		accuracy: 108,
 		ailments: [
 			{
 				name: 'Charm',
@@ -1749,6 +1811,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 0,
 		ailments: [
 			{
 				name: 'Fear',
@@ -1775,6 +1838,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 98,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -1921,6 +1985,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Dark',
 		type: 'ATTACK',
 		unique: true,
+		accuracy: 98,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -1944,6 +2009,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Almighty',
 		type: 'ATTACK',
 		unique: true,
+		accuracy: 98,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -2097,6 +2163,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Almighty',
 		type: 'ATTACK',
 		unique: true,
+		accuracy: 0,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -2120,6 +2187,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 0,
 		ailments: [
 			{
 				name: 'Sleep',
@@ -2159,6 +2227,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 0,
 		ailments: [],
 		cost: {
 			type: 'HP',
@@ -2180,6 +2249,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Gun',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 0,
 		ailments: [],
 		cost: {
 			type: 'HP',
@@ -2289,6 +2359,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 98,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -2312,6 +2383,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 98,
 		ailments: [
 			{
 				name: 'Sleep',
@@ -2351,6 +2423,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 98,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -2463,6 +2536,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Almighty',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 98,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -2537,6 +2611,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Ice',
 		type: 'ATTACK',
 		unique: true,
+		accuracy: 98,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -2691,6 +2766,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Dark',
 		type: 'ATTACK',
 		unique: true,
+		accuracy: 108,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -2714,6 +2790,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 98,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -2747,6 +2824,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 0,
 		ailments: [],
 		cost: {
 			type: 'HP',
@@ -2768,12 +2846,15 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 98,
 		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 25
 		},
-		flags: [],
+		flags: [
+			'+30% Crit Rate'
+		],
 		max: 1,
 		min: 1,
 		power: {
@@ -2815,13 +2896,14 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 50,
 		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 50
 		},
 		flags: [
-			'Half Accuracy'
+			'+200% Crit Rate'
 		],
 		max: 1,
 		min: 1,
@@ -2875,6 +2957,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Fire',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 98,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -2896,6 +2979,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Fire',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 98,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -2917,6 +3001,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Almighty',
 		type: 'ATTACK',
 		unique: true,
+		accuracy: 108,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -2963,6 +3048,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 0,
 		ailments: [
 			{
 				name: 'Mirage',
@@ -2989,6 +3075,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Force',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 98,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -3076,6 +3163,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Nuke',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 0,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -3097,6 +3185,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Nuke',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 0,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -3118,6 +3207,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Almighty',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 98,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -3139,6 +3229,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Nuke',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 0,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -3160,6 +3251,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 98,
 		ailments: [
 			{
 				name: 'Poison',
@@ -3217,6 +3309,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: true,
+		accuracy: 98,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -3240,6 +3333,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 0,
 		ailments: [],
 		cost: {
 			type: 'HP',
@@ -3278,6 +3372,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Wind',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 0,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -3299,6 +3394,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Wind',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 0,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -3320,6 +3416,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Wind',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 0,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -3341,6 +3438,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 0,
 		ailments: [],
 		cost: {
 			type: 'HP',
@@ -3362,6 +3460,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Fire',
 		type: 'ATTACK',
 		unique: true,
+		accuracy: 98,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -3391,6 +3490,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 0,
 		ailments: [],
 		cost: {
 			type: 'HP',
@@ -3414,6 +3514,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 0,
 		ailments: [],
 		cost: {
 			type: 'HP',
@@ -3435,6 +3536,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 0,
 		ailments: [],
 		cost: {
 			type: 'HP',
@@ -3456,6 +3558,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Ice',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 98,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -3477,6 +3580,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Light',
 		type: 'ATTACK',
 		unique: true,
+		accuracy: 108,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -3500,6 +3604,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 0,
 		ailments: [],
 		cost: {
 			type: 'HP',
@@ -3537,12 +3642,15 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 98,
 		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 10
 		},
-		flags: [],
+		flags: [
+			'+30% Crit Rate'
+		],
 		max: 1,
 		min: 1,
 		power: {
@@ -3627,6 +3735,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: true,
+		accuracy: 118,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -3650,6 +3759,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 98,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -3671,6 +3781,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Light',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 98,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -3701,6 +3812,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Light',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 98,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -3724,6 +3836,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Light',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 98,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -3761,12 +3874,15 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: true,
+		accuracy: 98,
 		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 60
 		},
-		flags: [],
+		flags: [
+			'+200% Crit Rate'
+		],
 		max: 8,
 		min: 8,
 		power: {
@@ -3782,6 +3898,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 0,
 		ailments: [
 			{
 				name: 'Seal',
@@ -3808,6 +3925,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: true,
+		accuracy: 108,
 		ailments: [
 			{
 				name: 'Confuse',
@@ -3877,6 +3995,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 98,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -3911,6 +4030,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 98,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -3934,6 +4054,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Fire',
 		type: 'ATTACK',
 		unique: true,
+		accuracy: 98,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -3955,13 +4076,14 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Force',
 		type: 'ATTACK',
 		unique: true,
+		accuracy: 98,
 		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 40
 		},
 		flags: [
-			'Revert Buffs'
+			'Negate Buffs'
 		],
 		max: 1,
 		min: 1,
@@ -3978,6 +4100,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: true,
+		accuracy: 98,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -3999,6 +4122,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 98,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -4022,13 +4146,14 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Fire',
 		type: 'ATTACK',
 		unique: true,
+		accuracy: 98,
 		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 70
 		},
 		flags: [
-			'Revert Buffs'
+			'Negate Buffs'
 		],
 		max: 1,
 		min: 1,
@@ -4053,14 +4178,13 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: true,
+		accuracy: 50,
 		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 5
 		},
-		flags: [
-			'Half Accuracy'
-		],
+		flags: [],
 		max: 4,
 		min: 4,
 		power: {
@@ -4076,6 +4200,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Ice',
 		type: 'ATTACK',
 		unique: true,
+		accuracy: 98,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -4248,6 +4373,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 98,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -4271,6 +4397,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Ice',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 98,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -4331,6 +4458,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Ice',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 98,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -4352,6 +4480,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Ice',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 98,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -4447,6 +4576,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Ice',
 		type: 'ATTACK',
 		unique: true,
+		accuracy: 98,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -4470,6 +4600,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: true,
+		accuracy: 108,
 		ailments: [
 			{
 				name: 'Seal',
@@ -4480,7 +4611,9 @@ const skillData: Readonly<AnySkillData[]> = [
 			type: 'MP',
 			amount: 90
 		},
-		flags: [],
+		flags: [
+			'+40% Crit Rate'
+		],
 		max: 1,
 		min: 1,
 		power: {
@@ -4515,12 +4648,15 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: true,
+		accuracy: 98,
 		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 50
 		},
-		flags: [],
+		flags: [
+			'+30% Crit Rate'
+		],
 		max: 1,
 		min: 1,
 		power: {
@@ -4536,6 +4672,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Elec',
 		type: 'ATTACK',
 		unique: true,
+		accuracy: 118,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -4559,6 +4696,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 0,
 		ailments: [],
 		cost: {
 			type: 'HP',
@@ -4580,6 +4718,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Force',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 98,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -4603,6 +4742,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Ice',
 		type: 'ATTACK',
 		unique: true,
+		accuracy: 98,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -4626,6 +4766,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: true,
+		accuracy: 0,
 		ailments: [],
 		cost: {
 			type: 'HP',
@@ -4677,6 +4818,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Almighty',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 98,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -4794,6 +4936,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Light',
 		type: 'ATTACK',
 		unique: true,
+		accuracy: 98,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -4817,6 +4960,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 0,
 		ailments: [],
 		cost: {
 			type: 'HP',
@@ -4851,6 +4995,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 98,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -4905,6 +5050,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Ice',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 98,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -4926,6 +5072,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Ice',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 98,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -4947,6 +5094,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Ice',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 98,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -4968,6 +5116,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Ice',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 98,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -4989,6 +5138,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: true,
+		accuracy: 108,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -5012,6 +5162,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Almighty',
 		type: 'ATTACK',
 		unique: true,
+		accuracy: 108,
 		ailments: [
 			{
 				name: 'Seal',
@@ -5038,6 +5189,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 98,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -5059,6 +5211,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 98,
 		ailments: [
 			{
 				name: 'Confuse',
@@ -5085,6 +5238,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Nuke',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 0,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -5106,6 +5260,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Nuke',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 0,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -5127,6 +5282,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Nuke',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 0,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -5148,6 +5304,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Wind',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 0,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -5169,6 +5326,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Wind',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 0,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -5190,6 +5348,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Wind',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 0,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -5211,6 +5370,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Dark',
 		type: 'ATTACK',
 		unique: true,
+		accuracy: 0,
 		ailments: [
 			{
 				name: 'Confuse',
@@ -5245,6 +5405,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Light',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 98,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -5268,6 +5429,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Light',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 98,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -5291,6 +5453,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Light',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 98,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -5359,6 +5522,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Dark',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 98,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -5382,6 +5546,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Dark',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 98,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -5405,6 +5570,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Dark',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 98,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -5445,6 +5611,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Psy',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 0,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -5466,6 +5633,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Psy',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 0,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -5487,6 +5655,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Psy',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 0,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -5508,6 +5677,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Fire',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 98,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -5529,6 +5699,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Fire',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 98,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -5550,6 +5721,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Fire',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 98,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -5571,6 +5743,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Fire',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 98,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -5622,6 +5795,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Fire',
 		type: 'ATTACK',
 		unique: true,
+		accuracy: 0,
 		ailments: [
 			{
 				name: 'Burn',
@@ -5661,6 +5835,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: true,
+		accuracy: 0,
 		ailments: [],
 		cost: {
 			type: 'HP',
@@ -5758,6 +5933,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Force',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 98,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -5779,6 +5955,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Force',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 98,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -5800,6 +5977,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Force',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 98,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -5821,6 +5999,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Force',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 98,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -5842,6 +6021,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Elec',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 98,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -5863,6 +6043,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Elec',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 98,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -5884,6 +6065,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Elec',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 98,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -5905,6 +6087,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Elec',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 98,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -5976,6 +6159,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Almighty',
 		type: 'ATTACK',
 		unique: true,
+		accuracy: 98,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -5999,14 +6183,13 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 50,
 		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 50
 		},
-		flags: [
-			'Half Accuracy'
-		],
+		flags: [],
 		max: 1,
 		min: 1,
 		power: {
@@ -6022,6 +6205,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 0,
 		ailments: [],
 		cost: {
 			type: 'HP',
@@ -6043,6 +6227,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Almighty',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 98,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -6064,6 +6249,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Fire',
 		type: 'ATTACK',
 		unique: true,
+		accuracy: 98,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -6087,6 +6273,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Almighty',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 98,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -6108,6 +6295,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Almighty',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 98,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -6129,6 +6317,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 0,
 		ailments: [
 			{
 				name: 'Seal',
@@ -6155,13 +6344,14 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 50,
 		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 25
 		},
 		flags: [
-			'Half Accuracy'
+			'+200% Crit Rate'
 		],
 		max: 1,
 		min: 1,
@@ -6178,6 +6368,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 0,
 		ailments: [
 			{
 				name: 'Confuse',
@@ -6204,6 +6395,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 0,
 		ailments: [],
 		cost: {
 			type: 'HP',
@@ -6225,6 +6417,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: true,
+		accuracy: 0,
 		ailments: [],
 		cost: {
 			type: 'HP',
@@ -6267,6 +6460,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Fire',
 		type: 'ATTACK',
 		unique: true,
+		accuracy: 98,
 		ailments: [
 			{
 				name: 'Mirage',
@@ -6293,6 +6487,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 98,
 		ailments: [
 			{
 				name: 'Mirage',
@@ -6328,6 +6523,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Almighty',
 		type: 'ATTACK',
 		unique: true,
+		accuracy: 0,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -6349,6 +6545,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 98,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -6370,6 +6567,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Dark',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 98,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -6400,6 +6598,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Dark',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 98,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -6423,6 +6622,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Dark',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 98,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -6446,6 +6646,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Almighty',
 		type: 'ATTACK',
 		unique: true,
+		accuracy: 98,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -6477,6 +6678,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 0,
 		ailments: [
 			{
 				name: 'Enervation',
@@ -6503,14 +6705,13 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 50,
 		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 55
 		},
-		flags: [
-			'Half Accuracy'
-		],
+		flags: [],
 		max: 5,
 		min: 5,
 		power: {
@@ -6526,6 +6727,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Almighty',
 		type: 'ATTACK',
 		unique: true,
+		accuracy: 0,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -6547,6 +6749,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Elec',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 98,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -6570,6 +6773,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 0,
 		ailments: [
 			{
 				name: 'Exhaustion',
@@ -6596,12 +6800,15 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 98,
 		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 15
 		},
-		flags: [],
+		flags: [
+			'+20% Crit Rate'
+		],
 		max: 4,
 		min: 1,
 		power: {
@@ -6617,6 +6824,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 0,
 		ailments: [
 			{
 				name: 'Despair',
@@ -6659,6 +6867,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 98,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -6868,6 +7077,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Gun',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 0,
 		ailments: [],
 		cost: {
 			type: 'HP',
@@ -6889,6 +7099,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 0,
 		ailments: [
 			{
 				name: 'Rage',
@@ -6936,6 +7147,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: true,
+		accuracy: 108,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -6959,6 +7171,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Wind',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 0,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -6980,6 +7193,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: true,
+		accuracy: 98,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -7018,6 +7232,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: true,
+		accuracy: 108,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -7074,6 +7289,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 98,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -7139,6 +7355,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 0,
 		ailments: [
 			{
 				name: 'Poison',
@@ -7179,6 +7396,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 98,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -7202,6 +7420,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 0,
 		ailments: [],
 		cost: {
 			type: 'HP',
@@ -7238,6 +7457,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 0,
 		ailments: [],
 		cost: {
 			type: 'HP',
@@ -7259,6 +7479,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Dark',
 		type: 'ATTACK',
 		unique: true,
+		accuracy: 98,
 		ailments: [
 			{
 				name: 'Poison',
@@ -7285,6 +7506,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Psy',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 0,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -7306,6 +7528,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Psy',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 0,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -7327,6 +7550,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Psy',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 0,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -7382,6 +7606,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Psy',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 0,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -7403,6 +7628,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Psy',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 0,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -7437,6 +7663,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 98,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -7460,6 +7687,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 98,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -7492,6 +7720,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Ice',
 		type: 'ATTACK',
 		unique: true,
+		accuracy: 108,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -7513,6 +7742,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Fire',
 		type: 'ATTACK',
 		unique: true,
+		accuracy: 108,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -7534,6 +7764,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Elec',
 		type: 'ATTACK',
 		unique: true,
+		accuracy: 108,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -7555,6 +7786,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Force',
 		type: 'ATTACK',
 		unique: true,
+		accuracy: 108,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -7576,6 +7808,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Fire',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 98,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -7597,6 +7830,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 0,
 		ailments: [],
 		cost: {
 			type: 'HP',
@@ -7650,6 +7884,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 50,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -7703,6 +7938,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Almighty',
 		type: 'ATTACK',
 		unique: true,
+		accuracy: 0,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -8068,6 +8304,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Gun',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 0,
 		ailments: [],
 		cost: {
 			type: 'HP',
@@ -8089,6 +8326,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 0,
 		ailments: [],
 		cost: {
 			type: 'HP',
@@ -8112,6 +8350,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Elec',
 		type: 'ATTACK',
 		unique: true,
+		accuracy: 98,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -8133,6 +8372,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Force',
 		type: 'ATTACK',
 		unique: true,
+		accuracy: 98,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -8165,6 +8405,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Almighty',
 		type: 'ATTACK',
 		unique: true,
+		accuracy: 98,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -8214,6 +8455,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Almighty',
 		type: 'ATTACK',
 		unique: true,
+		accuracy: 98,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -8238,6 +8480,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 98,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -8268,6 +8511,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 98,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -8323,6 +8567,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Light',
 		type: 'ATTACK',
 		unique: true,
+		accuracy: 0,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -8353,6 +8598,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Elec',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 98,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -8374,6 +8620,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Almighty',
 		type: 'ATTACK',
 		unique: true,
+		accuracy: 98,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -8397,6 +8644,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 0,
 		ailments: [],
 		cost: {
 			type: 'HP',
@@ -8418,6 +8666,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 0,
 		ailments: [
 			{
 				name: 'Confuse',
@@ -8444,6 +8693,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 0,
 		ailments: [
 			{
 				name: 'Mirage',
@@ -8493,6 +8743,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Gun',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 0,
 		ailments: [],
 		cost: {
 			type: 'HP',
@@ -8514,6 +8765,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: true,
+		accuracy: 98,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -8537,6 +8789,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 0,
 		ailments: [],
 		cost: {
 			type: 'HP',
@@ -8558,6 +8811,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Elec',
 		type: 'ATTACK',
 		unique: true,
+		accuracy: 98,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -8602,6 +8856,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Almighty',
 		type: 'ATTACK',
 		unique: true,
+		accuracy: 50,
 		ailments: [
 			{
 				name: 'Seal',
@@ -8612,9 +8867,7 @@ const skillData: Readonly<AnySkillData[]> = [
 			type: 'MP',
 			amount: 50
 		},
-		flags: [
-			'Half Accuracy'
-		],
+		flags: [],
 		max: 1,
 		min: 1,
 		power: {
@@ -8655,6 +8908,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Almighty',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 98,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -8709,12 +8963,15 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 98,
 		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 25
 		},
-		flags: [],
+		flags: [
+			'+20% Crit Rate'
+		],
 		max: 4,
 		min: 1,
 		power: {
@@ -8730,6 +8987,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Elec',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 98,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -8751,6 +9009,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Ice',
 		type: 'ATTACK',
 		unique: true,
+		accuracy: 98,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -8859,6 +9118,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 0,
 		ailments: [],
 		cost: {
 			type: 'HP',
@@ -8880,6 +9140,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 0,
 		ailments: [],
 		cost: {
 			type: 'HP',
@@ -8901,6 +9162,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Almighty',
 		type: 'ATTACK',
 		unique: true,
+		accuracy: 108,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -8983,6 +9245,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 0,
 		ailments: [],
 		cost: {
 			type: 'HP',
@@ -9017,6 +9280,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 0,
 		ailments: [
 			{
 				name: 'Fear',
@@ -9043,6 +9307,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: true,
+		accuracy: 108,
 		ailments: [
 			{
 				name: 'Confuse',
@@ -9101,6 +9366,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Ice',
 		type: 'ATTACK',
 		unique: true,
+		accuracy: 98,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -9154,6 +9420,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Elec',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 98,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -9175,12 +9442,15 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 98,
 		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 60
 		},
-		flags: [],
+		flags: [
+			'+20% Crit Rate'
+		],
 		max: 1,
 		min: 1,
 		power: {
@@ -9196,6 +9466,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Fire',
 		type: 'ATTACK',
 		unique: true,
+		accuracy: 0,
 		ailments: [
 			{
 				name: 'Fear',
@@ -9222,6 +9493,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 0,
 		ailments: [],
 		cost: {
 			type: 'HP',
@@ -9251,6 +9523,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Dark',
 		type: 'ATTACK',
 		unique: true,
+		accuracy: 98,
 		ailments: [
 			{
 				name: 'Poison',
@@ -9305,6 +9578,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 98,
 		ailments: [
 			{
 				name: 'Poison',
@@ -9369,6 +9643,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Gun',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 0,
 		ailments: [],
 		cost: {
 			type: 'HP',
@@ -9390,6 +9665,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Fire',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 98,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -9437,6 +9713,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Wind',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 0,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -9458,6 +9735,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 0,
 		ailments: [],
 		cost: {
 			type: 'HP',
@@ -9497,6 +9775,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 98,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -9520,6 +9799,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 0,
 		ailments: [],
 		cost: {
 			type: 'HP',
@@ -9557,6 +9837,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 0,
 		ailments: [],
 		cost: {
 			type: 'HP',
@@ -9580,6 +9861,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Almighty',
 		type: 'ATTACK',
 		unique: true,
+		accuracy: 98,
 		ailments: [
 			{
 				name: 'Seal',
@@ -9606,6 +9888,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 0,
 		ailments: [
 			{
 				name: 'Poison',
@@ -9632,6 +9915,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 0,
 		ailments: [],
 		cost: {
 			type: 'HP',
@@ -9666,6 +9950,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Dark',
 		type: 'ATTACK',
 		unique: true,
+		accuracy: 98,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -9696,6 +9981,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Light',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 98,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -9745,6 +10031,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Force',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 98,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -9766,6 +10053,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Force',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 98,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -9803,6 +10091,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: true,
+		accuracy: 98,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -9826,13 +10115,15 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 98,
 		ailments: [],
 		cost: {
 			type: 'MP',
 			amount: 50
 		},
 		flags: [
-			'Pierce'
+			'Pierce',
+			'+200% Crit Rate'
 		],
 		max: 1,
 		min: 1,
@@ -9863,6 +10154,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Force',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 98,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -9884,6 +10176,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Force',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 98,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -9905,6 +10198,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Force',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 98,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -9926,6 +10220,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Force',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 98,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -9947,6 +10242,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Elec',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 98,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -9968,6 +10264,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Elec',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 98,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -9989,6 +10286,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Elec',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 98,
 		ailments: [],
 		cost: {
 			type: 'MP',
@@ -10010,6 +10308,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Elec',
 		type: 'ATTACK',
 		unique: false,
+		accuracy: 98,
 		ailments: [],
 		cost: {
 			type: 'MP',

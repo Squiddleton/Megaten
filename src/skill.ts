@@ -127,6 +127,8 @@ export class AttackSkill extends Skill implements AttackSkillData {
 	affinity: DamagingAffinity;
 	type: 'ATTACK';
 	description: string;
+	/** The skill's accuracy */
+	accuracy: number;
 	/** The ailment names and chances that the skill can afflict */
 	ailments: Ailment[];
 	/** The skill cost's type and amount */
@@ -215,7 +217,7 @@ export class AttackSkill extends Skill implements AttackSkillData {
 			if (flags.includes('HP Dependent')) {
 				this.description += 'The more remaining HP you have, the stronger the attack.';
 			}
-			if (flags.includes('Half Accuracy')) {
+			if (data.accuracy === 50) {
 				this.description += 'Low Accuracy.';
 			}
 			if (flags.includes('Instakill')) {
@@ -230,7 +232,7 @@ export class AttackSkill extends Skill implements AttackSkillData {
 			if (flags.includes('Poisoned Boost')) {
 				this.description += 'Greater effect if target is Poisoned.';
 			}
-			if (flags.includes('Revert Buffs')) {
+			if (flags.includes('Negate Buffs')) {
 				this.description += 'Negates target\'s status buff effects';
 			}
 			if (flags.includes('Surround Boost')) {
@@ -244,6 +246,7 @@ export class AttackSkill extends Skill implements AttackSkillData {
 			}
 		}
 
+		this.accuracy = data.accuracy;
 		this.ailments = ailments;
 		this.cost = data.cost;
 		this.flags = flags;

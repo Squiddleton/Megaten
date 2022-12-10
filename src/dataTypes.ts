@@ -59,6 +59,7 @@ export interface AilmentSkillData extends SkillData {
 export interface AttackSkillData extends SkillData {
 	affinity: DamagingAffinity;
 	type: 'ATTACK';
+	accuracy: number;
 	ailments: Ailment[];
 	cost: AttackCost;
 	flags: string[];
