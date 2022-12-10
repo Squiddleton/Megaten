@@ -439,7 +439,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		aliases: [],
 		affinities: {
 			skillPotential: null,
-			inherit: 'Nuke'
+			inherit: null
 		},
 		arcana: 'Priestess',
 		race: 'Persona',
@@ -624,9 +624,9 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		aliases: [],
 		affinities: {
 			skillPotential: null,
-			inherit: 'Almighty'
+			inherit: null
 		},
-		arcana: 'Hermit',
+		arcana: 'Justice',
 		race: 'Persona',
 		level: 31,
 		hp: null,
@@ -915,7 +915,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		aliases: [],
 		affinities: {
 			skillPotential: null,
-			inherit: 'Fire'
+			inherit: null
 		},
 		arcana: 'Priestess',
 		race: 'Persona',
@@ -1332,7 +1332,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		aliases: [],
 		affinities: {
 			skillPotential: null,
-			inherit: 'Nuke'
+			inherit: null
 		},
 		arcana: 'Priestess',
 		race: 'Persona',
@@ -2546,7 +2546,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		aliases: [],
 		affinities: {
 			skillPotential: null,
-			inherit: 'Ice'
+			inherit: null
 		},
 		arcana: 'Empress',
 		race: 'Persona',
@@ -2652,7 +2652,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		aliases: [],
 		affinities: {
 			skillPotential: null,
-			inherit: 'Psy'
+			inherit: null
 		},
 		arcana: 'Empress',
 		race: 'Persona',
@@ -4581,7 +4581,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		aliases: [],
 		affinities: {
 			skillPotential: null,
-			inherit: 'Elec'
+			inherit: null
 		},
 		arcana: 'Emperor',
 		race: 'Persona',
@@ -4827,7 +4827,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		aliases: [],
 		affinities: {
 			skillPotential: null,
-			inherit: 'Elec'
+			inherit: null
 		},
 		arcana: 'Chariot',
 		race: 'Persona',
@@ -4957,7 +4957,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		aliases: [],
 		affinities: {
 			skillPotential: null,
-			inherit: 'Fire'
+			inherit: null
 		},
 		arcana: 'Lovers',
 		race: 'Persona',
@@ -5079,7 +5079,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		aliases: [],
 		affinities: {
 			skillPotential: null,
-			inherit: 'Phys'
+			inherit: null
 		},
 		arcana: 'Hierophant',
 		race: 'Persona',
@@ -5165,7 +5165,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		aliases: [],
 		affinities: {
 			skillPotential: null,
-			inherit: 'Fire'
+			inherit: null
 		},
 		arcana: 'Lovers',
 		race: 'Persona',
@@ -5289,7 +5289,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		aliases: [],
 		affinities: {
 			skillPotential: null,
-			inherit: 'Light'
+			inherit: null
 		},
 		arcana: 'Faith',
 		race: 'Persona',
@@ -5438,7 +5438,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		],
 		affinities: {
 			skillPotential: null,
-			inherit: 'Dark'
+			inherit: null
 		},
 		arcana: 'Strength',
 		race: 'Persona',
@@ -6724,7 +6724,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		aliases: [],
 		affinities: {
 			skillPotential: null,
-			inherit: 'Wind'
+			inherit: null
 		},
 		arcana: 'Magician',
 		race: 'Persona',
@@ -7134,7 +7134,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		aliases: [],
 		affinities: {
 			skillPotential: null,
-			inherit: 'Light'
+			inherit: null
 		},
 		arcana: 'Faith',
 		race: 'Persona',
@@ -8443,7 +8443,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		aliases: [],
 		affinities: {
 			skillPotential: null,
-			inherit: 'Ice'
+			inherit: null
 		},
 		arcana: 'Emperor',
 		race: 'Persona',
@@ -8628,7 +8628,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		aliases: [],
 		affinities: {
 			skillPotential: null,
-			inherit: 'Ice'
+			inherit: null
 		},
 		arcana: 'Emperor',
 		race: 'Persona',
@@ -8885,7 +8885,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		aliases: [],
 		affinities: {
 			skillPotential: null,
-			inherit: 'Ice'
+			inherit: null
 		},
 		arcana: 'Chariot',
 		race: 'Persona',
@@ -9219,7 +9219,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		aliases: [],
 		affinities: {
 			skillPotential: null,
-			inherit: 'Fire'
+			inherit: null
 		},
 		arcana: 'Lovers',
 		race: 'Persona',
@@ -9492,7 +9492,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		aliases: [],
 		affinities: {
 			skillPotential: null,
-			inherit: 'Almighty'
+			inherit: null
 		},
 		arcana: 'Justice',
 		race: 'Persona',
@@ -9564,7 +9564,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		aliases: [],
 		affinities: {
 			skillPotential: null,
-			inherit: 'Fire'
+			inherit: null
 		},
 		arcana: 'Magician',
 		race: 'Persona',
@@ -9728,7 +9728,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		aliases: [],
 		affinities: {
 			skillPotential: null,
-			inherit: 'Almighty'
+			inherit: null
 		},
 		arcana: 'Lovers',
 		race: 'Persona',
@@ -10447,7 +10447,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		aliases: [],
 		affinities: {
 			skillPotential: null,
-			inherit: 'Wind'
+			inherit: null
 		},
 		arcana: 'Lovers',
 		race: 'Persona',
@@ -10748,7 +10748,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		],
 		affinities: {
 			skillPotential: null,
-			inherit: 'Wind'
+			inherit: null
 		},
 		arcana: 'Lovers',
 		race: 'Persona',
@@ -11451,7 +11451,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		aliases: [],
 		affinities: {
 			skillPotential: null,
-			inherit: 'Wind'
+			inherit: null
 		},
 		arcana: 'Magician',
 		race: 'Persona',
@@ -11561,7 +11561,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		aliases: [],
 		affinities: {
 			skillPotential: null,
-			inherit: 'Nuke'
+			inherit: null
 		},
 		arcana: 'Priestess',
 		race: 'Persona',
@@ -11683,7 +11683,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		aliases: [],
 		affinities: {
 			skillPotential: null,
-			inherit: 'Almighty'
+			inherit: null
 		},
 		arcana: 'Priestess',
 		race: 'Persona',
@@ -11943,7 +11943,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		aliases: [],
 		affinities: {
 			skillPotential: null,
-			inherit: 'Light'
+			inherit: null
 		},
 		arcana: 'Justice',
 		race: 'Persona',
@@ -12113,7 +12113,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		aliases: [],
 		affinities: {
 			skillPotential: null,
-			inherit: 'Recovery'
+			inherit: null
 		},
 		arcana: 'Star',
 		race: 'Persona',
@@ -12226,7 +12226,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		aliases: [],
 		affinities: {
 			skillPotential: null,
-			inherit: 'Recovery'
+			inherit: null
 		},
 		arcana: 'Star',
 		race: 'Persona',
@@ -12337,7 +12337,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		aliases: [],
 		affinities: {
 			skillPotential: null,
-			inherit: 'Ice'
+			inherit: null
 		},
 		arcana: 'Emperor',
 		race: 'Persona',
@@ -12465,7 +12465,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		aliases: [],
 		affinities: {
 			skillPotential: null,
-			inherit: 'Almighty'
+			inherit: null
 		},
 		arcana: 'Lovers',
 		race: 'Persona',
@@ -13060,7 +13060,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		aliases: [],
 		affinities: {
 			skillPotential: null,
-			inherit: 'Recovery'
+			inherit: null
 		},
 		arcana: 'Star',
 		race: 'Persona',
@@ -13377,7 +13377,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		aliases: [],
 		affinities: {
 			skillPotential: null,
-			inherit: 'Fire'
+			inherit: null
 		},
 		arcana: 'Priestess',
 		race: 'Persona',
@@ -13716,7 +13716,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		aliases: [],
 		affinities: {
 			skillPotential: null,
-			inherit: 'Almighty'
+			inherit: null
 		},
 		arcana: 'Lovers',
 		race: 'Persona',
@@ -14809,7 +14809,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		],
 		affinities: {
 			skillPotential: null,
-			inherit: 'Dark'
+			inherit: null
 		},
 		arcana: 'Justice',
 		race: 'Persona',
@@ -14948,7 +14948,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		aliases: [],
 		affinities: {
 			skillPotential: null,
-			inherit: 'Almighty'
+			inherit: null
 		},
 		arcana: 'Priestess',
 		race: 'Persona',
@@ -15069,7 +15069,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		aliases: [],
 		affinities: {
 			skillPotential: null,
-			inherit: 'Psy'
+			inherit: null
 		},
 		arcana: 'Empress',
 		race: 'Persona',
@@ -16067,7 +16067,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		aliases: [],
 		affinities: {
 			skillPotential: null,
-			inherit: 'Wind'
+			inherit: null
 		},
 		arcana: 'Magician',
 		race: 'Persona',
@@ -16575,7 +16575,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		aliases: [],
 		affinities: {
 			skillPotential: null,
-			inherit: 'Psy'
+			inherit: null
 		},
 		arcana: 'Empress',
 		race: 'Persona',
@@ -17629,9 +17629,9 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		aliases: [],
 		affinities: {
 			skillPotential: null,
-			inherit: 'Almighty'
+			inherit: null
 		},
-		arcana: 'Hermit',
+		arcana: 'Justice',
 		race: 'Persona',
 		level: 31,
 		hp: null,
@@ -17825,7 +17825,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		aliases: [],
 		affinities: {
 			skillPotential: null,
-			inherit: 'Light'
+			inherit: null
 		},
 		arcana: 'Justice',
 		race: 'Persona',
@@ -19306,7 +19306,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		aliases: [],
 		affinities: {
 			skillPotential: null,
-			inherit: 'Almighty'
+			inherit: null
 		},
 		arcana: 'Fool',
 		race: 'Persona',
@@ -19725,7 +19725,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		aliases: [],
 		affinities: {
 			skillPotential: null,
-			inherit: 'Recovery'
+			inherit: null
 		},
 		arcana: 'Chariot',
 		race: 'Persona',
@@ -19813,7 +19813,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		aliases: [],
 		affinities: {
 			skillPotential: null,
-			inherit: 'Light'
+			inherit: null
 		},
 		arcana: 'Hope',
 		race: 'Persona',
@@ -20088,7 +20088,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		aliases: [],
 		affinities: {
 			skillPotential: null,
-			inherit: 'Ice'
+			inherit: null
 		},
 		arcana: 'Empress',
 		race: 'Persona',
@@ -20250,7 +20250,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		aliases: [],
 		affinities: {
 			skillPotential: null,
-			inherit: 'Light'
+			inherit: null
 		},
 		arcana: 'Hope',
 		race: 'Persona',
@@ -20485,7 +20485,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		aliases: [],
 		affinities: {
 			skillPotential: null,
-			inherit: 'Elec'
+			inherit: null
 		},
 		arcana: 'Emperor',
 		race: 'Persona',
@@ -20771,9 +20771,9 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		aliases: [],
 		affinities: {
 			skillPotential: null,
-			inherit: 'Almighty'
+			inherit: null
 		},
-		arcana: 'Hermit',
+		arcana: 'Justice',
 		race: 'Persona',
 		level: 31,
 		hp: null,
@@ -20825,7 +20825,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		aliases: [],
 		affinities: {
 			skillPotential: null,
-			inherit: 'Ice'
+			inherit: null
 		},
 		arcana: 'Hierophant',
 		race: 'Persona',
@@ -21648,7 +21648,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		aliases: [],
 		affinities: {
 			skillPotential: null,
-			inherit: 'Light'
+			inherit: null
 		},
 		arcana: 'Justice',
 		race: 'Persona',
@@ -21740,7 +21740,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		],
 		affinities: {
 			skillPotential: null,
-			inherit: 'Elec'
+			inherit: null
 		},
 		arcana: 'Emperor',
 		race: 'Persona',
@@ -22423,7 +22423,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		],
 		affinities: {
 			skillPotential: null,
-			inherit: 'Elec'
+			inherit: null
 		},
 		arcana: 'Chariot',
 		race: 'Persona',
@@ -23702,7 +23702,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		],
 		affinities: {
 			skillPotential: null,
-			inherit: 'Almighty'
+			inherit: null
 		},
 		arcana: 'Fortune',
 		race: 'Persona',
@@ -23803,7 +23803,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		aliases: [],
 		affinities: {
 			skillPotential: null,
-			inherit: 'Fire'
+			inherit: null
 		},
 		arcana: 'Priestess',
 		race: 'Persona',
@@ -23990,7 +23990,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		aliases: [],
 		affinities: {
 			skillPotential: null,
-			inherit: 'Wind'
+			inherit: null
 		},
 		arcana: 'Magician',
 		race: 'Persona',
@@ -24175,7 +24175,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		aliases: [],
 		affinities: {
 			skillPotential: null,
-			inherit: 'Ice'
+			inherit: null
 		},
 		arcana: 'Chariot',
 		race: 'Persona',
@@ -24291,7 +24291,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		aliases: [],
 		affinities: {
 			skillPotential: null,
-			inherit: 'Wind'
+			inherit: null
 		},
 		arcana: 'Magician',
 		race: 'Persona',
@@ -24403,7 +24403,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		aliases: [],
 		affinities: {
 			skillPotential: null,
-			inherit: 'Elec'
+			inherit: null
 		},
 		arcana: 'Emperor',
 		race: 'Persona',
@@ -24511,7 +24511,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		aliases: [],
 		affinities: {
 			skillPotential: null,
-			inherit: 'Elec'
+			inherit: null
 		},
 		arcana: 'Emperor',
 		race: 'Persona',
@@ -25329,7 +25329,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		aliases: [],
 		affinities: {
 			skillPotential: null,
-			inherit: 'Ice'
+			inherit: null
 		},
 		arcana: 'Chariot',
 		race: 'Persona',
@@ -25506,7 +25506,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		aliases: [],
 		affinities: {
 			skillPotential: null,
-			inherit: 'Fire'
+			inherit: null
 		},
 		arcana: 'Magician',
 		race: 'Persona',
@@ -26222,7 +26222,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		aliases: [],
 		affinities: {
 			skillPotential: null,
-			inherit: 'Almighty'
+			inherit: null
 		},
 		arcana: 'Apostle',
 		race: 'Persona',
@@ -26395,7 +26395,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		aliases: [],
 		affinities: {
 			skillPotential: null,
-			inherit: 'Light'
+			inherit: null
 		},
 		arcana: 'Faith',
 		race: 'Persona',
@@ -26773,7 +26773,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		aliases: [],
 		affinities: {
 			skillPotential: null,
-			inherit: 'Elec'
+			inherit: null
 		},
 		arcana: 'Chariot',
 		race: 'Persona',
@@ -27055,7 +27055,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		aliases: [],
 		affinities: {
 			skillPotential: null,
-			inherit: 'Almighty'
+			inherit: null
 		},
 		arcana: 'Fortune',
 		race: 'Persona',
@@ -27155,7 +27155,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		aliases: [],
 		affinities: {
 			skillPotential: null,
-			inherit: 'Almighty'
+			inherit: null
 		},
 		arcana: 'Fortune',
 		race: 'Persona',
@@ -27761,7 +27761,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		aliases: [],
 		affinities: {
 			skillPotential: null,
-			inherit: 'Wind'
+			inherit: null
 		},
 		arcana: 'Magician',
 		race: 'Persona',
