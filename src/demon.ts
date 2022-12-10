@@ -83,8 +83,8 @@ export class Demon implements DemonData {
 	static get(name: string, error: true): Demon;
 	static get(name: string, error?: boolean): Demon | null;
 	static get(name: string, error = false) {
-		name = normalize(name);
-		const found = this.map.get(name) ?? Demon.array.find(demon => demon.aliases.some(alias => normalize(alias) === name)) ?? null;
+		const normalized = normalize(name);
+		const found = this.map.get(normalized) ?? Demon.array.find(demon => demon.aliases.some(alias => normalize(alias) === normalized)) ?? null;
 		if (error && found === null) throw new MegatenError(name, 'Demon');
 		return found;
 	}
