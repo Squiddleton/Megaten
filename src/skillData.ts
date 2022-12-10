@@ -1376,7 +1376,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		}
 	},
 	{
-		name: 'Counter -Persona-',
+		name: 'Counter - Persona',
 		affinity: 'Passive',
 		type: 'PERSONACOUNTER',
 		unique: false,
@@ -8690,7 +8690,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		]
 	},
 	{
-		name: 'Stagnant Air -Persona-',
+		name: 'Stagnant Air - Persona',
 		affinity: 'Almighty',
 		type: 'SUSCEPTIBILITY',
 		unique: false,
@@ -8958,7 +8958,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		cost: 10
 	},
 	{
-		name: 'Taunt -Persona-',
+		name: 'Taunt - Persona',
 		affinity: 'Ailment',
 		type: 'AILMENT',
 		unique: false,
@@ -9192,7 +9192,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		series: 'smt'
 	},
 	{
-		name: 'Titanomachia -Persona-',
+		name: 'Titanomachia - Persona',
 		affinity: 'Fire',
 		type: 'ATTACK',
 		unique: true,

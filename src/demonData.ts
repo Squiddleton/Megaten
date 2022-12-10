@@ -1963,7 +1963,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 0
 			},
 			{
-				name: 'Taunt -Persona-',
+				name: 'Taunt - Persona',
 				level: 0
 			},
 			{
@@ -2154,7 +2154,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 0
 			},
 			{
-				name: 'Counter -Persona-',
+				name: 'Counter - Persona',
 				level: 0
 			},
 			{
@@ -2784,7 +2784,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		},
 		learnset: [
 			{
-				name: 'Titanomachia -Persona-',
+				name: 'Titanomachia - Persona',
 				level: 0
 			},
 			{
@@ -2853,7 +2853,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		},
 		learnset: [
 			{
-				name: 'Titanomachia -Persona-',
+				name: 'Titanomachia - Persona',
 				level: 0
 			},
 			{
@@ -4460,7 +4460,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 0
 			},
 			{
-				name: 'Stagnant Air -Persona-',
+				name: 'Stagnant Air - Persona',
 				level: 0
 			},
 			{
@@ -5099,7 +5099,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 0
 			},
 			{
-				name: 'Counter -Persona-',
+				name: 'Counter - Persona',
 				level: 0
 			},
 			{
@@ -5432,7 +5432,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		game: 'smt5'
 	},
 	{
-		name: 'Cerberus -P3-',
+		name: 'Cerberus - P3',
 		aliases: [
 			'Cerberus'
 		],
@@ -8479,7 +8479,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 20
 			},
 			{
-				name: 'Counter -Persona-',
+				name: 'Counter - Persona',
 				level: 22
 			},
 			{
@@ -8664,7 +8664,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 20
 			},
 			{
-				name: 'Counter -Persona-',
+				name: 'Counter - Persona',
 				level: 22
 			},
 			{
@@ -8929,7 +8929,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 22
 			},
 			{
-				name: 'Counter -Persona-',
+				name: 'Counter - Persona',
 				level: 24
 			},
 			{
@@ -9612,7 +9612,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 32
 			},
 			{
-				name: 'Counter -Persona-',
+				name: 'Counter - Persona',
 				level: 35
 			},
 			{
@@ -10742,7 +10742,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		game: 'smt5'
 	},
 	{
-		name: 'Isis -P3-',
+		name: 'Isis - P3',
 		aliases: [
 			'Isis'
 		],
@@ -12373,7 +12373,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 20
 			},
 			{
-				name: 'Counter -Persona-',
+				name: 'Counter - Persona',
 				level: 22
 			},
 			{
@@ -14803,7 +14803,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		game: 'smt5'
 	},
 	{
-		name: 'Loki -P5-',
+		name: 'Loki - P5',
 		aliases: [
 			'Loki'
 		],
@@ -19603,7 +19603,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 0
 			},
 			{
-				name: 'Stagnant Air -Persona-',
+				name: 'Stagnant Air - Persona',
 				level: 53
 			},
 			{
@@ -22417,7 +22417,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		game: 'smt5'
 	},
 	{
-		name: 'Seiten Taisei -P5-',
+		name: 'Seiten Taisei - P5',
 		aliases: [
 			'Seiten Taisei'
 		],
@@ -23696,7 +23696,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		game: 'smt5'
 	},
 	{
-		name: 'Sukuna-Hikona -P4-',
+		name: 'Sukuna-Hikona - P4',
 		aliases: [
 			'Sukuna-Hikona'
 		],
@@ -24219,7 +24219,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 22
 			},
 			{
-				name: 'Counter -Persona-',
+				name: 'Counter - Persona',
 				level: 24
 			},
 			{
@@ -25373,7 +25373,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 22
 			},
 			{
-				name: 'Counter -Persona-',
+				name: 'Counter - Persona',
 				level: 24
 			},
 			{
@@ -25554,7 +25554,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 32
 			},
 			{
-				name: 'Counter -Persona-',
+				name: 'Counter - Persona',
 				level: 35
 			},
 			{

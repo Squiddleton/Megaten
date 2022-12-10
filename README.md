@@ -197,7 +197,7 @@ AttackSkill {
 * Attack skills prior to SMTV have their base power adjusted to be proportional to newer damage values. If you need damage values relative to particular games, please check the links in the Credits section.
 * Ailment chances prior to SMTV were estimated based on known chances of ailments with similar display chances. This information will be updated if the exact odds are deduced.
 * Skills with major changes to their function (e.g. Taunt in SMTV vs. Taunt in P5) are split into separate skills ("Taunt" vs. "Taunt -Persona-").
-* Dashes are used instead of parentheses due to a similar naming scheme used in official song titles (e.g. "Last Surprise -Scramble-").
+* Dashes are used instead of parentheses due to a similar naming scheme used in official song titles (e.g. "Last Surprise - Scramble").
 * Skills with specific uses and few similar skills are placed into a "MISC" type. Their "effect" property lists the skill's description in its last major appearance.
 * Typings are designed to be as specific as possible for IntelliSense and TypeScript usage.
 * Images originate from the best obtainable picture of the demon found at the current time. These will be updated if/when renders are available for many Personas and classic demons.
