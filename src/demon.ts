@@ -4,7 +4,7 @@ import { formatPossessive, normalize } from '@squiddleton/util';
 import type { DemonData, PersonaData } from './dataTypes';
 import demonData from './demonData';
 import { MegatenError } from './error';
-import type { AnyAffinity, Arcana, DemonAffinities, DemonStats, Game, Race, Stage } from './types';
+import type { Arcana, DemonAffinities, DemonResistances, DemonStats, Game, Race, Stage } from './types';
 
 function isPersona(demon: Demon): demon is Persona;
 function isPersona(demon: DemonData): demon is PersonaData;
@@ -19,8 +19,8 @@ export class Demon implements DemonData {
 	devName: string;
 	/** Other names for the demon */
 	aliases: string[];
-	/** The affinity that this demon can inherit skills of */
-	inherit: Exclude<AnyAffinity, 'Gun' | 'Passive'>;
+	/** The demon's skill potential and inherit affinity */
+	affinities: DemonAffinities;
 	/** The demon's Arcana in Persona titles, or null if none */
 	arcana: Arcana | null;
 	/** The demon's race in Shin Megami Tensei titles, or null if none */
@@ -38,15 +38,15 @@ export class Demon implements DemonData {
 		name: string;
 		level: number;
 	}[];
-	/** The demon's affinities */
-	affinities: DemonAffinities;
+	/** The demon's resistances */
+	resistances: DemonResistances;
 	/** The game that this demon's data originates from */
 	game: Game;
 	constructor(data: DemonData) {
 		this.name = data.name;
 		this.devName = normalize(data.name);
 		this.aliases = data.aliases;
-		this.inherit = data.inherit;
+		this.affinities = data.affinities;
 		this.arcana = data.arcana;
 		this.race = data.race;
 		this.level = data.level;
@@ -54,7 +54,7 @@ export class Demon implements DemonData {
 		this.mp = data.mp;
 		this.stats = data.stats;
 		this.learnset = data.learnset;
-		this.affinities = data.affinities;
+		this.resistances = data.resistances;
 		this.game = data.game;
 	}
 	/** Whether the demon is a Persona instance */

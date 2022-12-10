@@ -36,6 +36,14 @@ export type AttackDisplay = CounterDisplay | 'Minuscule' | 'Heavy' | 'Severe' | 
 export type DamageType = 'Physical' | 'Magic';
 
 export interface DemonAffinities {
+	skillPotential: SkillPotential | null;
+	/** The affinity that this demon can inherit skills of */
+	inherit: Exclude<AnyAffinity, 'Gun' | 'Passive'> | null;
+}
+
+export interface DemonResistances {
+	/** The ailments that the demon resists or nullifies */
+	ailments: Partial<Record<Ailment, AilResistance | 'Weak'>> | null;
 	/** The affinities that the demon is weak to */
 	weak: DamagingAffinity[];
 	/** The affinities that the demon resists */
@@ -104,6 +112,8 @@ export type RestoreCriteria = 'Weakness/Critical' | 'Ailment';
 
 /** Series that Skill data can originate from */
 export type Series = 'persona' | 'smt';
+
+export type SkillPotential = Record<Exclude<AnyAffinity, PersonaAffinity | 'Passive' | 'Misc'>, number>;
 
 /** Skill instances' types */
 export type SkillType = 'AILBOOST' | 'AILDEFENSIVE' | 'AILMENT' | 'ATTACK' | 'AUTOBUFF' | 'BARRIER' | 'BARRIERBREAK' | 'BOOST' | 'BREAK'

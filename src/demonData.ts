@@ -4,7 +4,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Abaddon',
 		aliases: [],
-		inherit: 'Phys',
+		affinities: {
+			skillPotential: {
+				Phys: 4,
+				Fire: 2,
+				Ice: 0,
+				Elec: -5,
+				Force: 0,
+				Light: 0,
+				Dark: 1,
+				Almighty: 0,
+				Ailment: 3,
+				Recovery: 0,
+				Support: 0
+			},
+			inherit: null
+		},
 		arcana: 'Judgement',
 		race: 'Tyrant',
 		level: 72,
@@ -47,7 +62,11 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 75
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {
+				Seal: 'Weak',
+				Mirage: 'Resist'
+			},
 			weak: [
 				'Elec'
 			],
@@ -65,7 +84,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Abdiel',
 		aliases: [],
-		inherit: 'Light',
+		affinities: {
+			skillPotential: {
+				Phys: 2,
+				Fire: 0,
+				Ice: 0,
+				Elec: 2,
+				Force: 2,
+				Light: 5,
+				Dark: -5,
+				Almighty: -4,
+				Ailment: -2,
+				Recovery: 0,
+				Support: 0
+			},
+			inherit: null
+		},
 		arcana: null,
 		race: 'Herald',
 		level: 80,
@@ -104,7 +138,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 83
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {},
 			weak: [
 				'Dark'
 			],
@@ -125,7 +160,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		aliases: [
 			'Abdiel'
 		],
-		inherit: 'Dark',
+		affinities: {
+			skillPotential: {
+				Phys: 0,
+				Fire: 0,
+				Ice: 4,
+				Elec: 0,
+				Force: 2,
+				Light: -5,
+				Dark: 7,
+				Almighty: 0,
+				Ailment: 0,
+				Recovery: -3,
+				Support: 0
+			},
+			inherit: null
+		},
 		arcana: null,
 		race: 'Fallen',
 		level: 89,
@@ -168,7 +218,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 92
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {
+				Confuse: 'Null'
+			},
 			weak: [
 				'Light'
 			],
@@ -188,7 +241,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Adramelech',
 		aliases: [],
-		inherit: 'Fire',
+		affinities: {
+			skillPotential: {
+				Phys: 1,
+				Fire: 6,
+				Ice: -5,
+				Elec: 0,
+				Force: 0,
+				Light: 0,
+				Dark: 2,
+				Almighty: 0,
+				Ailment: 0,
+				Recovery: 0,
+				Support: 0
+			},
+			inherit: null
+		},
 		arcana: 'Hanged',
 		race: 'Fallen',
 		level: 71,
@@ -231,7 +299,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 75
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {},
 			weak: [
 				'Ice'
 			],
@@ -249,7 +318,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Aeros',
 		aliases: [],
-		inherit: 'Force',
+		affinities: {
+			skillPotential: {
+				Phys: 0,
+				Fire: 0,
+				Ice: 0,
+				Elec: -4,
+				Force: 3,
+				Light: 0,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 1,
+				Recovery: 0,
+				Support: 0
+			},
+			inherit: null
+		},
 		arcana: null,
 		race: 'Element',
 		level: 12,
@@ -276,7 +360,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 13
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {},
 			weak: [
 				'Elec'
 			],
@@ -292,7 +377,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Agathion',
 		aliases: [],
-		inherit: 'Elec',
+		affinities: {
+			skillPotential: {
+				Phys: 0,
+				Fire: 0,
+				Ice: -4,
+				Elec: 2,
+				Force: 0,
+				Light: 0,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 0,
+				Recovery: 0,
+				Support: 2
+			},
+			inherit: null
+		},
 		arcana: 'Chariot',
 		race: 'Yoma',
 		level: 10,
@@ -319,7 +419,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 12
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {},
 			weak: [
 				'Ice',
 				'Dark'
@@ -336,7 +437,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Agnes',
 		aliases: [],
-		inherit: 'Nuke',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Nuke'
+		},
 		arcana: 'Priestess',
 		race: 'Persona',
 		level: 21,
@@ -435,7 +539,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 75
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: null,
 			weak: [
 				'Psy'
 			],
@@ -448,12 +553,30 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'p5'
+		game: 'p5',
+		user: 'Makoto Niijima',
+		stage: 3,
+		evoSkill: 'Debilitate'
 	},
 	{
 		name: 'Aitvaras',
 		aliases: [],
-		inherit: 'Fire',
+		affinities: {
+			skillPotential: {
+				Phys: 0,
+				Fire: 3,
+				Ice: -3,
+				Elec: 0,
+				Force: 0,
+				Light: 0,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 1,
+				Recovery: 0,
+				Support: 1
+			},
+			inherit: null
+		},
 		arcana: null,
 		race: 'Drake',
 		level: 17,
@@ -480,7 +603,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 19
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {
+				Poison: 'Resist'
+			},
 			weak: [
 				'Ice'
 			],
@@ -496,7 +622,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Al Azif',
 		aliases: [],
-		inherit: 'Almighty',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Almighty'
+		},
 		arcana: 'Hermit',
 		race: 'Persona',
 		level: 31,
@@ -531,19 +660,38 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 67
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: null,
 			weak: [],
 			resist: [],
 			null: [],
 			drain: [],
 			repel: []
 		},
-		game: 'p5'
+		game: 'p5',
+		user: 'Futaba Sakura',
+		stage: 3,
+		evoSkill: 'Ultimate Support'
 	},
 	{
 		name: 'Alice',
 		aliases: [],
-		inherit: 'Dark',
+		affinities: {
+			skillPotential: {
+				Phys: 0,
+				Fire: 0,
+				Ice: 0,
+				Elec: 0,
+				Force: 0,
+				Light: -5,
+				Dark: 5,
+				Almighty: 0,
+				Ailment: 3,
+				Recovery: -2,
+				Support: 0
+			},
+			inherit: null
+		},
 		arcana: 'Death',
 		race: 'Fiend',
 		level: 40,
@@ -586,7 +734,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 43
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {},
 			weak: [
 				'Light'
 			],
@@ -602,7 +751,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Alilat',
 		aliases: [],
-		inherit: 'Almighty',
+		affinities: {
+			skillPotential: {
+				Phys: -6,
+				Fire: 0,
+				Ice: 0,
+				Elec: 0,
+				Force: 0,
+				Light: 0,
+				Dark: 0,
+				Almighty: 4,
+				Ailment: 0,
+				Recovery: 3,
+				Support: 3
+			},
+			inherit: null
+		},
 		arcana: 'Empress',
 		race: 'Lady',
 		level: 81,
@@ -645,7 +809,15 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 84
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {
+				Mirage: 'Resist',
+				Confuse: 'Resist',
+				Charm: 'Resist',
+				Sleep: 'Null',
+				Poison: 'Null',
+				Seal: 'Null'
+			},
 			weak: [],
 			resist: [
 				'Light',
@@ -660,7 +832,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Amanozako',
 		aliases: [],
-		inherit: 'Elec',
+		affinities: {
+			skillPotential: {
+				Phys: 0,
+				Fire: -4,
+				Ice: -4,
+				Elec: 4,
+				Force: 2,
+				Light: 0,
+				Dark: 0,
+				Almighty: 3,
+				Ailment: 0,
+				Recovery: 2,
+				Support: 0
+			},
+			inherit: null
+		},
 		arcana: null,
 		race: 'Genma',
 		level: 76,
@@ -703,7 +890,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 79
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {},
 			weak: [
 				'Fire',
 				'Ice'
@@ -725,7 +913,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Amaterasu',
 		aliases: [],
-		inherit: 'Fire',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Fire'
+		},
 		arcana: 'Priestess',
 		race: 'Persona',
 		level: 15,
@@ -816,7 +1007,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 76
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: null,
 			weak: [
 				'Ice'
 			],
@@ -829,12 +1021,30 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'p4'
+		game: 'p4',
+		user: 'Yukiko Amagi',
+		stage: 2,
+		evoSkill: null
 	},
 	{
 		name: 'Ame-no-Uzume',
 		aliases: [],
-		inherit: 'Elec',
+		affinities: {
+			skillPotential: {
+				Phys: -3,
+				Fire: 0,
+				Ice: 0,
+				Elec: 2,
+				Force: -3,
+				Light: 2,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 0,
+				Recovery: 1,
+				Support: 2
+			},
+			inherit: null
+		},
 		arcana: 'Lovers',
 		race: 'Megami',
 		level: 22,
@@ -873,7 +1083,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 25
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {},
 			weak: [
 				'Force'
 			],
@@ -889,7 +1100,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Amon',
 		aliases: [],
-		inherit: 'Fire',
+		affinities: {
+			skillPotential: {
+				Phys: 2,
+				Fire: 6,
+				Ice: -6,
+				Elec: 0,
+				Force: 0,
+				Light: 0,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 0,
+				Recovery: 0,
+				Support: 4
+			},
+			inherit: null
+		},
 		arcana: null,
 		race: 'Tyrant',
 		level: 82,
@@ -932,7 +1158,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 85
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {},
 			weak: [
 				'Ice'
 			],
@@ -952,7 +1179,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Anahita',
 		aliases: [],
-		inherit: 'Ice',
+		affinities: {
+			skillPotential: {
+				Phys: 0,
+				Fire: -2,
+				Ice: 4,
+				Elec: -6,
+				Force: 0,
+				Light: 2,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 0,
+				Recovery: 2,
+				Support: 1
+			},
+			inherit: null
+		},
 		arcana: null,
 		race: 'Megami',
 		level: 29,
@@ -991,7 +1233,11 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 32
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {
+				Mirage: 'Resist',
+				Confuse: 'Resist'
+			},
 			weak: [
 				'Fire',
 				'Elec'
@@ -1010,7 +1256,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Ananta',
 		aliases: [],
-		inherit: 'Ice',
+		affinities: {
+			skillPotential: {
+				Phys: 0,
+				Fire: 0,
+				Ice: 4,
+				Elec: 2,
+				Force: -4,
+				Light: 2,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 0,
+				Recovery: 0,
+				Support: 0
+			},
+			inherit: null
+		},
 		arcana: 'Councillor',
 		race: 'Dragon',
 		level: 59,
@@ -1049,7 +1310,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 62
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {},
 			weak: [
 				'Force',
 				'Dark'
@@ -1068,7 +1330,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Anat',
 		aliases: [],
-		inherit: 'Nuke',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Nuke'
+		},
 		arcana: 'Priestess',
 		race: 'Persona',
 		level: 21,
@@ -1167,7 +1432,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 75
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: null,
 			weak: [
 				'Psy'
 			],
@@ -1180,12 +1446,30 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'p5'
+		game: 'p5',
+		user: 'Makoto Niijima',
+		stage: 2,
+		evoSkill: 'Evade Psy'
 	},
 	{
 		name: 'Andras',
 		aliases: [],
-		inherit: 'Force',
+		affinities: {
+			skillPotential: {
+				Phys: 0,
+				Fire: 0,
+				Ice: 0,
+				Elec: 0,
+				Force: 2,
+				Light: -2,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 1,
+				Recovery: 0,
+				Support: 2
+			},
+			inherit: null
+		},
 		arcana: 'Devil',
 		race: 'Fallen',
 		level: 18,
@@ -1220,7 +1504,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 21
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {
+				Charm: 'Resist'
+			},
 			weak: [
 				'Elec',
 				'Light'
@@ -1237,7 +1524,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Angel',
 		aliases: [],
-		inherit: 'Light',
+		affinities: {
+			skillPotential: {
+				Phys: 0,
+				Fire: 0,
+				Ice: 0,
+				Elec: 0,
+				Force: -3,
+				Light: 3,
+				Dark: -4,
+				Almighty: 0,
+				Ailment: 0,
+				Recovery: 2,
+				Support: 2
+			},
+			inherit: null
+		},
 		arcana: 'Justice',
 		race: 'Divine',
 		level: 10,
@@ -1268,7 +1570,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 13
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {},
 			weak: [
 				'Force',
 				'Dark'
@@ -1285,7 +1588,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Anubis',
 		aliases: [],
-		inherit: 'Almighty',
+		affinities: {
+			skillPotential: {
+				Phys: -3,
+				Fire: 0,
+				Ice: 0,
+				Elec: 0,
+				Force: -3,
+				Light: 4,
+				Dark: 4,
+				Almighty: 0,
+				Ailment: 0,
+				Recovery: 1,
+				Support: 0
+			},
+			inherit: null
+		},
 		arcana: 'Judgement',
 		race: 'Avatar',
 		level: 41,
@@ -1324,7 +1642,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 44
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {
+				Seal: 'Resist'
+			},
 			weak: [
 				'Force'
 			],
@@ -1342,7 +1663,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Anzu',
 		aliases: [],
-		inherit: 'Phys',
+		affinities: {
+			skillPotential: {
+				Phys: 3,
+				Fire: 0,
+				Ice: 0,
+				Elec: 2,
+				Force: -4,
+				Light: 0,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 0,
+				Recovery: 0,
+				Support: 1
+			},
+			inherit: null
+		},
 		arcana: 'Hierophant',
 		race: 'Raptor',
 		level: 48,
@@ -1377,7 +1713,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 51
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {
+				Sleep: 'Weak',
+				Seal: 'Resist',
+				Mirage: 'Null'
+			},
 			weak: [
 				'Force'
 			],
@@ -1393,7 +1734,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Apsaras',
 		aliases: [],
-		inherit: 'Ice',
+		affinities: {
+			skillPotential: {
+				Phys: 0,
+				Fire: -3,
+				Ice: 2,
+				Elec: 0,
+				Force: 0,
+				Light: 0,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 0,
+				Recovery: 1,
+				Support: 1
+			},
+			inherit: null
+		},
 		arcana: 'Priestess',
 		race: 'Yoma',
 		level: 16,
@@ -1424,7 +1780,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 18
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {
+				Confuse: 'Weak',
+				Sleep: 'Resist',
+				Charm: 'Resist'
+			},
 			weak: [
 				'Fire'
 			],
@@ -1440,7 +1801,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Aquans',
 		aliases: [],
-		inherit: 'Ice',
+		affinities: {
+			skillPotential: {
+				Phys: 0,
+				Fire: -4,
+				Ice: 3,
+				Elec: 0,
+				Force: 0,
+				Light: 0,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 1,
+				Recovery: 0,
+				Support: 0
+			},
+			inherit: null
+		},
 		arcana: null,
 		race: 'Element',
 		level: 15,
@@ -1467,7 +1843,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 16
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {},
 			weak: [
 				'Fire'
 			],
@@ -1483,7 +1860,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Arahabaki',
 		aliases: [],
-		inherit: 'Almighty',
+		affinities: {
+			skillPotential: {
+				Phys: 0,
+				Fire: -4,
+				Ice: -2,
+				Elec: -3,
+				Force: -3,
+				Light: 0,
+				Dark: 0,
+				Almighty: 3,
+				Ailment: 0,
+				Recovery: 0,
+				Support: 3
+			},
+			inherit: null
+		},
 		arcana: 'Hermit',
 		race: 'Kunitsu',
 		level: 62,
@@ -1522,7 +1914,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 65
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {},
 			weak: [
 				'Fire',
 				'Ice',
@@ -1544,7 +1937,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Ara Mitama',
 		aliases: [],
-		inherit: 'Nuke',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Nuke'
+		},
 		arcana: 'Chariot',
 		race: 'Mitama',
 		level: 30,
@@ -1587,7 +1983,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 35
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: null,
 			weak: [
 				'Ice'
 			],
@@ -1603,7 +2000,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Archangel',
 		aliases: [],
-		inherit: 'Light',
+		affinities: {
+			skillPotential: {
+				Phys: 1,
+				Fire: 1,
+				Ice: 0,
+				Elec: 0,
+				Force: 0,
+				Light: 3,
+				Dark: -5,
+				Almighty: 0,
+				Ailment: 0,
+				Recovery: 0,
+				Support: 0
+			},
+			inherit: null
+		},
 		arcana: 'Justice',
 		race: 'Divine',
 		level: 18,
@@ -1638,7 +2050,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 21
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {},
 			weak: [
 				'Elec',
 				'Dark'
@@ -1655,7 +2068,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Ardha',
 		aliases: [],
-		inherit: 'Almighty',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Almighty'
+		},
 		arcana: 'Temperance',
 		race: 'Deity',
 		level: 84,
@@ -1698,7 +2114,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 90
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: null,
 			weak: [],
 			resist: [
 				'Phys'
@@ -1715,7 +2132,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Ares',
 		aliases: [],
-		inherit: 'Phys',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Phys'
+		},
 		arcana: 'Chariot',
 		race: 'Fury',
 		level: 25,
@@ -1754,7 +2174,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 30
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: null,
 			weak: [
 				'Wind'
 			],
@@ -1772,7 +2193,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Ariadne',
 		aliases: [],
-		inherit: 'Almighty',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Almighty'
+		},
 		arcana: 'Fortune',
 		race: 'Persona',
 		level: 30,
@@ -1815,7 +2239,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 36
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: null,
 			weak: [
 				'Psy'
 			],
@@ -1829,12 +2254,18 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'p5'
+		game: 'p5',
+		user: 'Labrys',
+		stage: 1,
+		evoSkill: null
 	},
 	{
 		name: 'Ariadne Picaro',
 		aliases: [],
-		inherit: 'Almighty',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Almighty'
+		},
 		arcana: 'Fortune',
 		race: 'Picaro',
 		level: 42,
@@ -1877,7 +2308,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 48
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: null,
 			weak: [
 				'Psy'
 			],
@@ -1896,7 +2328,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Arioch',
 		aliases: [],
-		inherit: 'Ice',
+		affinities: {
+			skillPotential: {
+				Phys: 2,
+				Fire: 0,
+				Ice: 5,
+				Elec: -7,
+				Force: 0,
+				Light: 0,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 2,
+				Recovery: 0,
+				Support: 0
+			},
+			inherit: null
+		},
 		arcana: null,
 		race: 'Tyrant',
 		level: 75,
@@ -1939,7 +2386,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 79
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {},
 			weak: [
 				'Elec'
 			],
@@ -1958,7 +2406,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Arsène',
 		aliases: [],
-		inherit: 'Dark',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Dark'
+		},
 		arcana: 'Fool',
 		race: 'Persona',
 		level: 1,
@@ -1993,7 +2444,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 7
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: null,
 			weak: [
 				'Ice',
 				'Light'
@@ -2005,12 +2457,30 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'p5'
+		game: 'p5',
+		user: 'P5 Protagonist',
+		stage: 1,
+		evoSkill: null
 	},
 	{
 		name: 'Artemis',
 		aliases: [],
-		inherit: 'Phys',
+		affinities: {
+			skillPotential: {
+				Phys: 5,
+				Fire: -4,
+				Ice: 3,
+				Elec: 3,
+				Force: 0,
+				Light: 0,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 1,
+				Recovery: 0,
+				Support: 2
+			},
+			inherit: null
+		},
 		arcana: null,
 		race: 'Megami',
 		level: 37,
@@ -2053,7 +2523,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 41
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {},
 			weak: [
 				'Fire'
 			],
@@ -2073,7 +2544,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Artemisia',
 		aliases: [],
-		inherit: 'Ice',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Ice'
+		},
 		arcana: 'Empress',
 		race: 'Persona',
 		level: 18,
@@ -2156,7 +2630,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 76
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: null,
 			weak: [
 				'Fire'
 			],
@@ -2167,12 +2642,18 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'p3'
+		game: 'p3',
+		user: 'Mitsuru Kirijo',
+		stage: 2,
+		evoSkill: null
 	},
 	{
 		name: 'Astarte',
 		aliases: [],
-		inherit: 'Psy',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Psy'
+		},
 		arcana: 'Empress',
 		race: 'Persona',
 		level: 36,
@@ -2263,7 +2744,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 75
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: null,
 			weak: [
 				'Nuke'
 			],
@@ -2276,12 +2758,18 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'p5'
+		game: 'p5',
+		user: 'Haru Okumura',
+		stage: 2,
+		evoSkill: 'Evade Nuke'
 	},
 	{
 		name: 'Asterius',
 		aliases: [],
-		inherit: 'Almighty',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Almighty'
+		},
 		arcana: 'Fortune',
 		race: 'Persona',
 		level: 56,
@@ -2324,7 +2812,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 62
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: null,
 			weak: [
 				'Ice'
 			],
@@ -2338,12 +2827,18 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'p5'
+		game: 'p5',
+		user: 'Shadow Labrys',
+		stage: 1,
+		evoSkill: null
 	},
 	{
 		name: 'Asterius Picaro',
 		aliases: [],
-		inherit: 'Almighty',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Almighty'
+		},
 		arcana: 'Fortune',
 		race: 'Picaro',
 		level: 62,
@@ -2386,7 +2881,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 68
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: null,
 			weak: [
 				'Ice'
 			],
@@ -2405,7 +2901,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Asura',
 		aliases: [],
-		inherit: 'Fire',
+		affinities: {
+			skillPotential: {
+				Phys: 3,
+				Fire: 5,
+				Ice: -4,
+				Elec: 0,
+				Force: 0,
+				Light: 0,
+				Dark: 0,
+				Almighty: 3,
+				Ailment: 0,
+				Recovery: -4,
+				Support: 0
+			},
+			inherit: null
+		},
 		arcana: 'Sun',
 		race: 'Fury',
 		level: 84,
@@ -2448,7 +2959,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 88
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {},
 			weak: [
 				'Ice'
 			],
@@ -2468,7 +2980,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Atavaka',
 		aliases: [],
-		inherit: 'Phys',
+		affinities: {
+			skillPotential: {
+				Phys: 4,
+				Fire: 0,
+				Ice: -5,
+				Elec: 0,
+				Force: 0,
+				Light: 2,
+				Dark: 2,
+				Almighty: 0,
+				Ailment: 0,
+				Recovery: 0,
+				Support: 0
+			},
+			inherit: null
+		},
 		arcana: 'Faith',
 		race: 'Deity',
 		level: 54,
@@ -2507,7 +3034,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 57
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {
+				Seal: 'Weak'
+			},
 			weak: [
 				'Ice'
 			],
@@ -2526,7 +3056,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		aliases: [
 			'Pallas Athena'
 		],
-		inherit: 'Almighty',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Almighty'
+		},
 		arcana: 'Chariot',
 		race: 'Persona',
 		level: 46,
@@ -2573,7 +3106,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 52
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: null,
 			weak: [
 				'Elec'
 			],
@@ -2586,12 +3120,18 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'p5'
+		game: 'p5',
+		user: 'Aigis',
+		stage: 2,
+		evoSkill: null
 	},
 	{
 		name: 'Athena Picaro',
 		aliases: [],
-		inherit: 'Almighty',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Almighty'
+		},
 		arcana: 'Chariot',
 		race: 'Picaro',
 		level: 50,
@@ -2638,7 +3178,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 56
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: null,
 			weak: [
 				'Elec'
 			],
@@ -2656,7 +3197,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Atropos',
 		aliases: [],
-		inherit: 'Ice',
+		affinities: {
+			skillPotential: {
+				Phys: 0,
+				Fire: -4,
+				Ice: 4,
+				Elec: 0,
+				Force: 0,
+				Light: 3,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 1,
+				Recovery: 0,
+				Support: 0
+			},
+			inherit: null
+		},
 		arcana: 'Fortune',
 		race: 'Femme',
 		level: 64,
@@ -2695,7 +3251,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 67
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {},
 			weak: [
 				'Fire'
 			],
@@ -2713,7 +3270,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Attis',
 		aliases: [],
-		inherit: 'Phys',
+		affinities: {
+			skillPotential: {
+				Phys: 3,
+				Fire: 2,
+				Ice: 0,
+				Elec: 0,
+				Force: 0,
+				Light: 0,
+				Dark: -4,
+				Almighty: 0,
+				Ailment: 0,
+				Recovery: 2,
+				Support: 0
+			},
+			inherit: null
+		},
 		arcana: 'Hanged',
 		race: 'Kishin',
 		level: 27,
@@ -2752,7 +3324,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 30
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {
+				Sleep: 'Weak'
+			},
 			weak: [
 				'Dark'
 			],
@@ -2768,7 +3343,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Azumi',
 		aliases: [],
-		inherit: 'Ice',
+		affinities: {
+			skillPotential: {
+				Phys: 0,
+				Fire: 0,
+				Ice: 2,
+				Elec: -3,
+				Force: 0,
+				Light: 0,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 0,
+				Recovery: 1,
+				Support: 0
+			},
+			inherit: null
+		},
 		arcana: 'Hermit',
 		race: 'Brute',
 		level: 11,
@@ -2795,7 +3385,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 13
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {},
 			weak: [
 				'Elec'
 			],
@@ -2811,7 +3402,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Baal',
 		aliases: [],
-		inherit: 'Elec',
+		affinities: {
+			skillPotential: {
+				Phys: 0,
+				Fire: 3,
+				Ice: -5,
+				Elec: 5,
+				Force: 2,
+				Light: 3,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 4,
+				Recovery: -3,
+				Support: 0
+			},
+			inherit: null
+		},
 		arcana: 'Emperor',
 		race: 'Deity',
 		level: 93,
@@ -2854,7 +3460,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 96
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {},
 			weak: [
 				'Ice'
 			],
@@ -2875,7 +3482,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Baphomet',
 		aliases: [],
-		inherit: 'Dark',
+		affinities: {
+			skillPotential: {
+				Phys: 0,
+				Fire: 1,
+				Ice: 0,
+				Elec: 0,
+				Force: 0,
+				Light: -3,
+				Dark: 3,
+				Almighty: 0,
+				Ailment: 0,
+				Recovery: 0,
+				Support: 0
+			},
+			inherit: null
+		},
 		arcana: 'Devil',
 		race: 'Vile',
 		level: 33,
@@ -2910,7 +3532,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 36
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {
+				Poison: 'Weak'
+			},
 			weak: [
 				'Light'
 			],
@@ -2926,7 +3551,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Barong',
 		aliases: [],
-		inherit: 'Elec',
+		affinities: {
+			skillPotential: {
+				Phys: 3,
+				Fire: 0,
+				Ice: 0,
+				Elec: 4,
+				Force: -3,
+				Light: 0,
+				Dark: -3,
+				Almighty: 0,
+				Ailment: 0,
+				Recovery: 0,
+				Support: 1
+			},
+			inherit: null
+		},
 		arcana: 'Emperor',
 		race: 'Avatar',
 		level: 60,
@@ -2965,7 +3605,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 63
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {
+				Poison: 'Resist'
+			},
 			weak: [
 				'Force',
 				'Dark'
@@ -2983,7 +3626,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Basilisk',
 		aliases: [],
-		inherit: 'Ailment',
+		affinities: {
+			skillPotential: {
+				Phys: 0,
+				Fire: 0,
+				Ice: 2,
+				Elec: -3,
+				Force: 0,
+				Light: 0,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 5,
+				Recovery: 0,
+				Support: 0
+			},
+			inherit: null
+		},
 		arcana: 'Sun',
 		race: 'Drake',
 		level: 31,
@@ -3018,7 +3676,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 34
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {
+				Poison: 'Resist'
+			},
 			weak: [
 				'Elec'
 			],
@@ -3035,7 +3696,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Beelzebub',
 		aliases: [],
-		inherit: 'Dark',
+		affinities: {
+			skillPotential: {
+				Phys: 0,
+				Fire: 0,
+				Ice: 2,
+				Elec: 4,
+				Force: -6,
+				Light: -2,
+				Dark: 6,
+				Almighty: 0,
+				Ailment: 0,
+				Recovery: -4,
+				Support: 2
+			},
+			inherit: null
+		},
 		arcana: 'Devil',
 		race: 'Tyrant',
 		level: 95,
@@ -3078,7 +3754,13 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 98
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {
+				Sleep: 'Null',
+				Mirage: 'Null',
+				Poison: 'Null',
+				Confuse: 'Null'
+			},
 			weak: [
 				'Force'
 			],
@@ -3099,7 +3781,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Belial',
 		aliases: [],
-		inherit: 'Fire',
+		affinities: {
+			skillPotential: {
+				Phys: 3,
+				Fire: 6,
+				Ice: -7,
+				Elec: 0,
+				Force: 0,
+				Light: 0,
+				Dark: 2,
+				Almighty: 0,
+				Ailment: 0,
+				Recovery: 0,
+				Support: 0
+			},
+			inherit: null
+		},
 		arcana: 'Devil',
 		race: 'Tyrant',
 		level: 92,
@@ -3142,7 +3839,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 96
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {},
 			weak: [
 				'Ice'
 			],
@@ -3160,7 +3858,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Belphegor',
 		aliases: [],
-		inherit: 'Dark',
+		affinities: {
+			skillPotential: {
+				Phys: 0,
+				Fire: 0,
+				Ice: 4,
+				Elec: 0,
+				Force: 0,
+				Light: 0,
+				Dark: 4,
+				Almighty: 0,
+				Ailment: 0,
+				Recovery: -3,
+				Support: 1
+			},
+			inherit: null
+		},
 		arcana: 'Tower',
 		race: 'Tyrant',
 		level: 44,
@@ -3199,7 +3912,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 47
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {},
 			weak: [
 				'Fire',
 				'Light'
@@ -3220,7 +3934,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Berith',
 		aliases: [],
-		inherit: 'Fire',
+		affinities: {
+			skillPotential: {
+				Phys: 2,
+				Fire: 2,
+				Ice: -3,
+				Elec: 0,
+				Force: 0,
+				Light: 0,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 0,
+				Recovery: 1,
+				Support: 0
+			},
+			inherit: null
+		},
 		arcana: 'Hierophant',
 		race: 'Fallen',
 		level: 24,
@@ -3255,7 +3984,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 27
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {},
 			weak: [
 				'Ice'
 			],
@@ -3272,7 +4002,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Bicorn',
 		aliases: [],
-		inherit: 'Dark',
+		affinities: {
+			skillPotential: {
+				Phys: 2,
+				Fire: 0,
+				Ice: 0,
+				Elec: -3,
+				Force: 0,
+				Light: -2,
+				Dark: 2,
+				Almighty: 0,
+				Ailment: 0,
+				Recovery: -1,
+				Support: 0
+			},
+			inherit: null
+		},
 		arcana: 'Hermit',
 		race: 'Wilder',
 		level: 14,
@@ -3299,7 +4044,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 16
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {},
 			weak: [
 				'Elec',
 				'Light'
@@ -3316,7 +4062,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Bishamonten',
 		aliases: [],
-		inherit: 'Fire',
+		affinities: {
+			skillPotential: {
+				Phys: 5,
+				Fire: 5,
+				Ice: -4,
+				Elec: 0,
+				Force: 0,
+				Light: 3,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 0,
+				Recovery: 0,
+				Support: 0
+			},
+			inherit: null
+		},
 		arcana: 'Hierophant',
 		race: 'Kishin',
 		level: 58,
@@ -3359,7 +4120,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 61
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {},
 			weak: [
 				'Ice'
 			],
@@ -3376,7 +4138,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Black Frost',
 		aliases: [],
-		inherit: 'Dark',
+		affinities: {
+			skillPotential: {
+				Phys: 0,
+				Fire: 0,
+				Ice: 3,
+				Elec: 0,
+				Force: 0,
+				Light: -4,
+				Dark: 4,
+				Almighty: 0,
+				Ailment: 0,
+				Recovery: 0,
+				Support: 0
+			},
+			inherit: null
+		},
 		arcana: 'Fool',
 		race: 'Night',
 		level: 44,
@@ -3419,7 +4196,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 47
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {},
 			weak: [
 				'Light'
 			],
@@ -3439,7 +4217,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Black Ooze',
 		aliases: [],
-		inherit: 'Ailment',
+		affinities: {
+			skillPotential: {
+				Phys: 2,
+				Fire: -2,
+				Ice: 0,
+				Elec: 0,
+				Force: 0,
+				Light: -2,
+				Dark: 0,
+				Almighty: 2,
+				Ailment: 6,
+				Recovery: -3,
+				Support: 0
+			},
+			inherit: null
+		},
 		arcana: 'Moon',
 		race: 'Foul',
 		level: 33,
@@ -3474,7 +4267,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 36
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {
+				Mirage: 'Weak',
+				Confuse: 'Weak',
+				Charm: 'Weak'
+			},
 			weak: [
 				'Fire',
 				'Light'
@@ -3491,7 +4289,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Black Rider',
 		aliases: [],
-		inherit: 'Ice',
+		affinities: {
+			skillPotential: {
+				Phys: 0,
+				Fire: 0,
+				Ice: 7,
+				Elec: 0,
+				Force: -5,
+				Light: 0,
+				Dark: 2,
+				Almighty: 5,
+				Ailment: 0,
+				Recovery: 0,
+				Support: 1
+			},
+			inherit: null
+		},
 		arcana: 'Tower',
 		race: 'Fiend',
 		level: 52,
@@ -3534,7 +4347,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 55
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {
+				Confuse: 'Null'
+			},
 			weak: [
 				'Force'
 			],
@@ -3553,7 +4369,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Bugs',
 		aliases: [],
-		inherit: 'Dark',
+		affinities: {
+			skillPotential: {
+				Phys: 0,
+				Fire: -2,
+				Ice: 0,
+				Elec: 0,
+				Force: 0,
+				Light: 0,
+				Dark: 5,
+				Almighty: 0,
+				Ailment: 0,
+				Recovery: -4,
+				Support: 2
+			},
+			inherit: null
+		},
 		arcana: 'Fool',
 		race: 'Wilder',
 		level: 24,
@@ -3588,7 +4419,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 27
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {
+				Sleep: 'Resist'
+			},
 			weak: [
 				'Fire'
 			],
@@ -3604,7 +4438,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Byakhee',
 		aliases: [],
-		inherit: 'Fire',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Fire'
+		},
 		arcana: 'Moon',
 		race: null,
 		level: 70,
@@ -3647,7 +4484,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 75
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: null,
 			weak: [
 				'Ice',
 				'Nuke'
@@ -3668,7 +4506,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		aliases: [
 			'Baihu'
 		],
-		inherit: 'Elec',
+		affinities: {
+			skillPotential: {
+				Phys: 2,
+				Fire: 0,
+				Ice: 0,
+				Elec: 5,
+				Force: -6,
+				Light: 0,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 0,
+				Recovery: 0,
+				Support: 1
+			},
+			inherit: null
+		},
 		arcana: 'Temperance',
 		race: 'Holy',
 		level: 43,
@@ -3707,7 +4560,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 46
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {
+				Confuse: 'Weak'
+			},
 			weak: [
 				'Force'
 			],
@@ -3723,7 +4579,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Caesar',
 		aliases: [],
-		inherit: 'Elec',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Elec'
+		},
 		arcana: 'Emperor',
 		race: 'Persona',
 		level: 12,
@@ -3814,7 +4673,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 76
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: null,
 			weak: [
 				'Ice'
 			],
@@ -3825,12 +4685,30 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'p3'
+		game: 'p3',
+		user: 'Akihiko Sanada',
+		stage: 2,
+		evoSkill: null
 	},
 	{
 		name: 'Cait Sith',
 		aliases: [],
-		inherit: 'Elec',
+		affinities: {
+			skillPotential: {
+				Phys: 0,
+				Fire: 0,
+				Ice: 0,
+				Elec: 1,
+				Force: -3,
+				Light: 0,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 0,
+				Recovery: 1,
+				Support: 1
+			},
+			inherit: null
+		},
 		arcana: 'Magician',
 		race: 'Beast',
 		level: 7,
@@ -3857,7 +4735,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 10
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {},
 			weak: [
 				'Force'
 			],
@@ -3873,7 +4752,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Camael',
 		aliases: [],
-		inherit: 'Phys',
+		affinities: {
+			skillPotential: {
+				Phys: 3,
+				Fire: 0,
+				Ice: -4,
+				Elec: 0,
+				Force: 0,
+				Light: 2,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 0,
+				Recovery: 2,
+				Support: 0
+			},
+			inherit: null
+		},
 		arcana: null,
 		race: 'Herald',
 		level: 69,
@@ -3912,7 +4806,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 72
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {},
 			weak: [
 				'Ice'
 			],
@@ -3930,7 +4825,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Captain Kidd',
 		aliases: [],
-		inherit: 'Elec',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Elec'
+		},
 		arcana: 'Chariot',
 		race: 'Persona',
 		level: 4,
@@ -4037,7 +4935,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 75
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: null,
 			weak: [
 				'Wind'
 			],
@@ -4048,12 +4947,18 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'p5'
+		game: 'p5',
+		user: 'Ryuji Sakamoto',
+		stage: 1,
+		evoSkill: null
 	},
 	{
 		name: 'Carmen',
 		aliases: [],
-		inherit: 'Fire',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Fire'
+		},
 		arcana: 'Lovers',
 		race: 'Persona',
 		level: 5,
@@ -4152,7 +5057,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 74
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: null,
 			weak: [
 				'Ice'
 			],
@@ -4163,12 +5069,18 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'p5'
+		game: 'p5',
+		user: 'Ann Takamaki',
+		stage: 1,
+		evoSkill: null
 	},
 	{
 		name: 'Castor',
 		aliases: [],
-		inherit: 'Phys',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Phys'
+		},
 		arcana: 'Hierophant',
 		race: 'Persona',
 		level: 37,
@@ -4235,19 +5147,26 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 77
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: null,
 			weak: [],
 			resist: [],
 			null: [],
 			drain: [],
 			repel: []
 		},
-		game: 'p3'
+		game: 'p3',
+		user: 'Shinjiro Aragaki',
+		stage: 1,
+		evoSkill: null
 	},
 	{
 		name: 'Célestine',
 		aliases: [],
-		inherit: 'Fire',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Fire'
+		},
 		arcana: 'Lovers',
 		race: 'Persona',
 		level: 5,
@@ -4346,7 +5265,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 74
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: null,
 			weak: [
 				'Ice'
 			],
@@ -4359,12 +5279,18 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'p5'
+		game: 'p5',
+		user: 'Ann Takamaki',
+		stage: 3,
+		evoSkill: 'High Energy'
 	},
 	{
 		name: 'Cendrillon',
 		aliases: [],
-		inherit: 'Light',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Light'
+		},
 		arcana: 'Faith',
 		race: 'Persona',
 		level: 75,
@@ -4415,7 +5341,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 80
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: null,
 			weak: [
 				'Dark'
 			],
@@ -4426,12 +5353,30 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'p5'
+		game: 'p5',
+		user: 'Sumire Yoshizawa',
+		stage: 1,
+		evoSkill: null
 	},
 	{
 		name: 'Cerberus',
 		aliases: [],
-		inherit: 'Fire',
+		affinities: {
+			skillPotential: {
+				Phys: 3,
+				Fire: 4,
+				Ice: -5,
+				Elec: 0,
+				Force: 0,
+				Light: 0,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 0,
+				Recovery: 0,
+				Support: 0
+			},
+			inherit: null
+		},
 		arcana: 'Chariot',
 		race: 'Beast',
 		level: 64,
@@ -4470,7 +5415,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 67
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {
+				Seal: 'Resist'
+			},
 			weak: [
 				'Ice'
 			],
@@ -4488,7 +5436,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		aliases: [
 			'Cerberus'
 		],
-		inherit: 'Dark',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Dark'
+		},
 		arcana: 'Strength',
 		race: 'Persona',
 		level: 34,
@@ -4527,7 +5478,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 67
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: null,
 			weak: [
 				'Ice'
 			],
@@ -4538,12 +5490,30 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				'Fire'
 			]
 		},
-		game: 'p3'
+		game: 'p3',
+		user: 'Koromaru',
+		stage: 1,
+		evoSkill: null
 	},
 	{
 		name: 'Chernobog',
 		aliases: [],
-		inherit: 'Ailment',
+		affinities: {
+			skillPotential: {
+				Phys: 0,
+				Fire: 0,
+				Ice: 0,
+				Elec: 0,
+				Force: 0,
+				Light: -2,
+				Dark: 3,
+				Almighty: 0,
+				Ailment: 4,
+				Recovery: -3,
+				Support: 0
+			},
+			inherit: null
+		},
 		arcana: 'Death',
 		race: 'Fury',
 		level: 52,
@@ -4582,7 +5552,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 55
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {
+				Poison: 'Resist'
+			},
 			weak: [
 				'Light'
 			],
@@ -4598,7 +5571,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Chimera',
 		aliases: [],
-		inherit: 'Elec',
+		affinities: {
+			skillPotential: {
+				Phys: 3,
+				Fire: 2,
+				Ice: 0,
+				Elec: 3,
+				Force: -4,
+				Light: 0,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 0,
+				Recovery: -2,
+				Support: 0
+			},
+			inherit: null
+		},
 		arcana: 'Strength',
 		race: 'Holy',
 		level: 55,
@@ -4641,7 +5629,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 58
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {
+				Poison: 'Weak'
+			},
 			weak: [
 				'Force'
 			],
@@ -4659,7 +5650,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Chi You',
 		aliases: [],
-		inherit: 'Ice',
+		affinities: {
+			skillPotential: {
+				Phys: 4,
+				Fire: -5,
+				Ice: 4,
+				Elec: -5,
+				Force: 2,
+				Light: 0,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 0,
+				Recovery: 0,
+				Support: 0
+			},
+			inherit: null
+		},
 		arcana: 'Chariot',
 		race: 'Tyrant',
 		level: 87,
@@ -4702,7 +5708,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 90
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {},
 			weak: [
 				'Fire',
 				'Elec'
@@ -4721,7 +5728,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Choronzon',
 		aliases: [],
-		inherit: 'Dark',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Dark'
+		},
 		arcana: 'Magician',
 		race: 'Haunt',
 		level: 28,
@@ -4768,7 +5778,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 33
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: null,
 			weak: [
 				'Light'
 			],
@@ -4786,7 +5797,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Cironnup',
 		aliases: [],
-		inherit: 'Fire',
+		affinities: {
+			skillPotential: {
+				Phys: 0,
+				Fire: 3,
+				Ice: 1,
+				Elec: 0,
+				Force: 0,
+				Light: 2,
+				Dark: -5,
+				Almighty: -2,
+				Ailment: 0,
+				Recovery: 0,
+				Support: 4
+			},
+			inherit: null
+		},
 		arcana: null,
 		race: 'Holy',
 		level: 27,
@@ -4825,7 +5851,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 30
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {},
 			weak: [
 				'Dark'
 			],
@@ -4843,7 +5870,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Cleopatra',
 		aliases: [],
-		inherit: 'Light',
+		affinities: {
+			skillPotential: {
+				Phys: 0,
+				Fire: 0,
+				Ice: 6,
+				Elec: 0,
+				Force: 5,
+				Light: 5,
+				Dark: -6,
+				Almighty: 0,
+				Ailment: 3,
+				Recovery: 5,
+				Support: 5
+			},
+			inherit: null
+		},
 		arcana: null,
 		race: 'Femme',
 		level: 61,
@@ -4886,7 +5928,11 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 64
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {
+				Mirage: 'Resist',
+				Charm: 'Resist'
+			},
 			weak: [
 				'Dark'
 			],
@@ -4907,7 +5953,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Clotho',
 		aliases: [],
-		inherit: 'Recovery',
+		affinities: {
+			skillPotential: {
+				Phys: 0,
+				Fire: 1,
+				Ice: -5,
+				Elec: 0,
+				Force: 0,
+				Light: 0,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 1,
+				Recovery: 3,
+				Support: 2
+			},
+			inherit: null
+		},
 		arcana: 'Fortune',
 		race: 'Femme',
 		level: 52,
@@ -4946,7 +6007,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 55
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {
+				Sleep: 'Null'
+			},
 			weak: [
 				'Ice'
 			],
@@ -4962,7 +6026,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Crystal Skull',
 		aliases: [],
-		inherit: 'Support',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Support'
+		},
 		arcana: 'Fool',
 		race: 'Treasure',
 		level: 50,
@@ -5009,7 +6076,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 0
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: null,
 			weak: [
 				'Wind'
 			],
@@ -5026,7 +6094,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Cu Chulainn',
 		aliases: [],
-		inherit: 'Force',
+		affinities: {
+			skillPotential: {
+				Phys: 4,
+				Fire: 0,
+				Ice: 0,
+				Elec: -2,
+				Force: 4,
+				Light: 0,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 0,
+				Recovery: 0,
+				Support: 2
+			},
+			inherit: null
+		},
 		arcana: 'Faith',
 		race: 'Genma',
 		level: 52,
@@ -5065,7 +6148,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 55
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {
+				Seal: 'Resist'
+			},
 			weak: [
 				'Elec'
 			],
@@ -5083,7 +6169,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Cybele',
 		aliases: [],
-		inherit: 'Phys',
+		affinities: {
+			skillPotential: {
+				Phys: 4,
+				Fire: 2,
+				Ice: 0,
+				Elec: -6,
+				Force: 0,
+				Light: 0,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 0,
+				Recovery: 2,
+				Support: 0
+			},
+			inherit: null
+		},
 		arcana: 'Priestess',
 		race: 'Lady',
 		level: 56,
@@ -5122,7 +6223,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 59
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {
+				Mirage: 'Weak'
+			},
 			weak: [
 				'Elec'
 			],
@@ -5140,7 +6244,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Daemon',
 		aliases: [],
-		inherit: 'Dark',
+		affinities: {
+			skillPotential: {
+				Phys: 2,
+				Fire: 2,
+				Ice: 0,
+				Elec: 0,
+				Force: 0,
+				Light: -4,
+				Dark: 2,
+				Almighty: 0,
+				Ailment: 0,
+				Recovery: 0,
+				Support: 0
+			},
+			inherit: null
+		},
 		arcana: null,
 		race: 'Brute',
 		level: 7,
@@ -5171,7 +6290,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 10
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {},
 			weak: [
 				'Elec',
 				'Light'
@@ -5190,7 +6310,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Daisoujou',
 		aliases: [],
-		inherit: 'Almighty',
+		affinities: {
+			skillPotential: {
+				Phys: 0,
+				Fire: -5,
+				Ice: 0,
+				Elec: 0,
+				Force: 0,
+				Light: 4,
+				Dark: 4,
+				Almighty: 0,
+				Ailment: 3,
+				Recovery: 1,
+				Support: 0
+			},
+			inherit: null
+		},
 		arcana: 'Hierophant',
 		race: 'Fiend',
 		level: 30,
@@ -5229,7 +6364,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 33
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {
+				Sleep: 'Resist',
+				Confuse: 'Resist',
+				Charm: 'Resist'
+			},
 			weak: [
 				'Fire'
 			],
@@ -5246,7 +6386,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Dakini',
 		aliases: [],
-		inherit: 'Fire',
+		affinities: {
+			skillPotential: {
+				Phys: 2,
+				Fire: 3,
+				Ice: -4,
+				Elec: 0,
+				Force: 0,
+				Light: 0,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 1,
+				Recovery: 0,
+				Support: -2
+			},
+			inherit: null
+		},
 		arcana: 'Empress',
 		race: 'Femme',
 		level: 46,
@@ -5281,7 +6436,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 49
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {
+				Seal: 'Null'
+			},
 			weak: [
 				'Ice',
 				'Light'
@@ -5299,7 +6457,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Danu',
 		aliases: [],
-		inherit: 'Recovery',
+		affinities: {
+			skillPotential: {
+				Phys: -3,
+				Fire: 0,
+				Ice: 2,
+				Elec: 0,
+				Force: 0,
+				Light: 3,
+				Dark: -7,
+				Almighty: 4,
+				Ailment: 0,
+				Recovery: 4,
+				Support: 2
+			},
+			inherit: null
+		},
 		arcana: null,
 		race: 'Lady',
 		level: 93,
@@ -5342,7 +6515,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 96
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {},
 			weak: [
 				'Dark'
 			],
@@ -5363,7 +6537,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Decarabia',
 		aliases: [],
-		inherit: 'Dark',
+		affinities: {
+			skillPotential: {
+				Phys: 0,
+				Fire: 2,
+				Ice: 0,
+				Elec: 0,
+				Force: 0,
+				Light: -4,
+				Dark: 3,
+				Almighty: 2,
+				Ailment: 1,
+				Recovery: 0,
+				Support: 0
+			},
+			inherit: null
+		},
 		arcana: 'Councillor',
 		race: 'Fallen',
 		level: 55,
@@ -5398,7 +6587,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 58
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {},
 			weak: [
 				'Light'
 			],
@@ -5414,7 +6604,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Demeter',
 		aliases: [],
-		inherit: 'Recovery',
+		affinities: {
+			skillPotential: {
+				Phys: 0,
+				Fire: -5,
+				Ice: 0,
+				Elec: 0,
+				Force: 3,
+				Light: 1,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 0,
+				Recovery: 4,
+				Support: 3
+			},
+			inherit: null
+		},
 		arcana: null,
 		race: 'Megami',
 		level: 76,
@@ -5457,7 +6662,13 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 79
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {
+				Sleep: 'Resist',
+				Poison: 'Resist',
+				Charm: 'Resist',
+				Seal: 'Resist'
+			},
 			weak: [
 				'Fire'
 			],
@@ -5474,7 +6685,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Diego',
 		aliases: [],
-		inherit: 'Wind',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Wind'
+		},
 		arcana: 'Magician',
 		race: 'Persona',
 		level: 1,
@@ -5585,7 +6799,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 75
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: null,
 			weak: [
 				'Elec'
 			],
@@ -5598,12 +6813,30 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'p5'
+		game: 'p5',
+		user: 'Morgana',
+		stage: 3,
+		evoSkill: 'Miracle Rush'
 	},
 	{
 		name: 'Dionysus',
 		aliases: [],
-		inherit: 'Ailment',
+		affinities: {
+			skillPotential: {
+				Phys: 2,
+				Fire: 2,
+				Ice: -4,
+				Elec: 0,
+				Force: 0,
+				Light: 0,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 3,
+				Recovery: 0,
+				Support: 0
+			},
+			inherit: null
+		},
 		arcana: 'Councillor',
 		race: 'Fury',
 		level: 44,
@@ -5642,7 +6875,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 47
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {
+				Charm: 'Null'
+			},
 			weak: [
 				'Ice'
 			],
@@ -5660,7 +6896,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Dis',
 		aliases: [],
-		inherit: 'Fire',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Fire'
+		},
 		arcana: 'Magician',
 		race: 'Yoma',
 		level: 39,
@@ -5703,7 +6942,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 44
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: null,
 			weak: [],
 			resist: [],
 			null: [],
@@ -5717,7 +6957,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Dominion',
 		aliases: [],
-		inherit: 'Light',
+		affinities: {
+			skillPotential: {
+				Phys: 0,
+				Fire: 0,
+				Ice: 0,
+				Elec: 3,
+				Force: 0,
+				Light: 3,
+				Dark: -5,
+				Almighty: 0,
+				Ailment: 0,
+				Recovery: 1,
+				Support: 2
+			},
+			inherit: null
+		},
 		arcana: 'Justice',
 		race: 'Divine',
 		level: 50,
@@ -5752,7 +7007,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 53
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {},
 			weak: [
 				'Force',
 				'Dark'
@@ -5770,7 +7026,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Eligor',
 		aliases: [],
-		inherit: 'Phys',
+		affinities: {
+			skillPotential: {
+				Phys: 3,
+				Fire: 2,
+				Ice: 0,
+				Elec: -3,
+				Force: 0,
+				Light: 0,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 0,
+				Recovery: 0,
+				Support: 1
+			},
+			inherit: null
+		},
 		arcana: 'Emperor',
 		race: 'Fallen',
 		level: 37,
@@ -5805,7 +7076,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 40
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {},
 			weak: [
 				'Elec'
 			],
@@ -5823,7 +7095,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Ella',
 		aliases: [],
-		inherit: 'Light',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Light'
+		},
 		arcana: 'Faith',
 		race: 'Persona',
 		level: 75,
@@ -5874,7 +7149,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 80
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: null,
 			weak: [
 				'Dark'
 			],
@@ -5892,7 +7168,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Emperor\'s Amulet',
 		aliases: [],
-		inherit: 'Support',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Support'
+		},
 		arcana: 'Hanged',
 		race: 'Treasure',
 		level: 35,
@@ -5939,7 +7218,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 0
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: null,
 			weak: [
 				'Elec'
 			],
@@ -5951,12 +7231,30 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'p5'
+		game: 'p5',
+		user: 'Sumire Yoshizawa',
+		stage: 3,
+		evoSkill: 'Masquerade'
 	},
 	{
 		name: 'Erthys',
 		aliases: [],
-		inherit: 'Elec',
+		affinities: {
+			skillPotential: {
+				Phys: 0,
+				Fire: 0,
+				Ice: 0,
+				Elec: 3,
+				Force: -4,
+				Light: 0,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 1,
+				Recovery: 0,
+				Support: 0
+			},
+			inherit: null
+		},
 		arcana: null,
 		race: 'Element',
 		level: 9,
@@ -5983,7 +7281,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 12
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {},
 			weak: [
 				'Force'
 			],
@@ -5999,7 +7298,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Fafnir',
 		aliases: [],
-		inherit: 'Phys',
+		affinities: {
+			skillPotential: {
+				Phys: 4,
+				Fire: 0,
+				Ice: -3,
+				Elec: -3,
+				Force: 0,
+				Light: 0,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 3,
+				Recovery: 0,
+				Support: 0
+			},
+			inherit: null
+		},
 		arcana: 'Hermit',
 		race: 'Drake',
 		level: 60,
@@ -6042,7 +7356,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 63
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {
+				Poison: 'Null'
+			},
 			weak: [
 				'Ice',
 				'Elec'
@@ -6061,7 +7378,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		aliases: [
 			'Phoenix'
 		],
-		inherit: 'Fire',
+		affinities: {
+			skillPotential: {
+				Phys: 0,
+				Fire: 4,
+				Ice: 0,
+				Elec: 0,
+				Force: 2,
+				Light: 0,
+				Dark: -4,
+				Almighty: 0,
+				Ailment: 0,
+				Recovery: 3,
+				Support: 0
+			},
+			inherit: null
+		},
 		arcana: 'Faith',
 		race: 'Avian',
 		level: 22,
@@ -6100,7 +7432,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 25
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {
+				Seal: 'Weak'
+			},
 			weak: [
 				'Dark'
 			],
@@ -6118,7 +7453,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Fionn mac Cumhaill',
 		aliases: [],
-		inherit: 'Phys',
+		affinities: {
+			skillPotential: {
+				Phys: 5,
+				Fire: 4,
+				Ice: 3,
+				Elec: -6,
+				Force: 0,
+				Light: 0,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 0,
+				Recovery: 0,
+				Support: 0
+			},
+			inherit: null
+		},
 		arcana: null,
 		race: 'Genma',
 		level: 71,
@@ -6161,7 +7511,11 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 75
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {
+				Sleep: 'Null',
+				Seal: 'Null'
+			},
 			weak: [
 				'Elec'
 			],
@@ -6178,7 +7532,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Flaemis',
 		aliases: [],
-		inherit: 'Fire',
+		affinities: {
+			skillPotential: {
+				Phys: 0,
+				Fire: 3,
+				Ice: -4,
+				Elec: 0,
+				Force: 0,
+				Light: 0,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 1,
+				Recovery: 0,
+				Support: 0
+			},
+			inherit: null
+		},
 		arcana: null,
 		race: 'Element',
 		level: 18,
@@ -6205,7 +7574,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 19
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {},
 			weak: [
 				'Ice'
 			],
@@ -6221,7 +7591,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Flauros',
 		aliases: [],
-		inherit: 'Fire',
+		affinities: {
+			skillPotential: {
+				Phys: 2,
+				Fire: 4,
+				Ice: -6,
+				Elec: 0,
+				Force: 0,
+				Light: 0,
+				Dark: 2,
+				Almighty: 0,
+				Ailment: 0,
+				Recovery: 0,
+				Support: 0
+			},
+			inherit: null
+		},
 		arcana: 'Devil',
 		race: 'Fallen',
 		level: 50,
@@ -6260,7 +7645,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 53
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {
+				Sleep: 'Weak'
+			},
 			weak: [
 				'Ice'
 			],
@@ -6278,7 +7666,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Forneus',
 		aliases: [],
-		inherit: 'Ice',
+		affinities: {
+			skillPotential: {
+				Phys: 0,
+				Fire: 0,
+				Ice: 4,
+				Elec: -5,
+				Force: 0,
+				Light: -3,
+				Dark: 2,
+				Almighty: 0,
+				Ailment: 2,
+				Recovery: 0,
+				Support: 2
+			},
+			inherit: null
+		},
 		arcana: 'Magician',
 		race: 'Fallen',
 		level: 31,
@@ -6317,7 +7720,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 34
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {},
 			weak: [
 				'Elec',
 				'Light'
@@ -6336,7 +7740,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Fortuna',
 		aliases: [],
-		inherit: 'Force',
+		affinities: {
+			skillPotential: {
+				Phys: -1,
+				Fire: 0,
+				Ice: 0,
+				Elec: -3,
+				Force: 3,
+				Light: 1,
+				Dark: -3,
+				Almighty: 0,
+				Ailment: 0,
+				Recovery: 2,
+				Support: 1
+			},
+			inherit: null
+		},
 		arcana: 'Fortune',
 		race: 'Megami',
 		level: 15,
@@ -6371,7 +7790,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 17
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {},
 			weak: [
 				'Elec',
 				'Dark'
@@ -6388,7 +7808,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Futsunushi',
 		aliases: [],
-		inherit: 'Phys',
+		affinities: {
+			skillPotential: {
+				Phys: 6,
+				Fire: 0,
+				Ice: 0,
+				Elec: 0,
+				Force: 0,
+				Light: 0,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 0,
+				Recovery: -3,
+				Support: 4
+			},
+			inherit: null
+		},
 		arcana: 'Magician',
 		race: 'Wargod',
 		level: 69,
@@ -6427,7 +7862,13 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 72
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {
+				Sleep: 'Weak',
+				Seal: 'Resist',
+				Mirage: 'Null',
+				Confuse: 'Null'
+			},
 			weak: [
 				'Dark'
 			],
@@ -6443,7 +7884,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Fuu-Ki',
 		aliases: [],
-		inherit: 'Force',
+		affinities: {
+			skillPotential: {
+				Phys: 2,
+				Fire: 0,
+				Ice: 0,
+				Elec: -5,
+				Force: 5,
+				Light: 0,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 0,
+				Recovery: -3,
+				Support: 1
+			},
+			inherit: null
+		},
 		arcana: 'Star',
 		race: 'Brute',
 		level: 63,
@@ -6482,7 +7938,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 66
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {
+				Charm: 'Weak'
+			},
 			weak: [
 				'Elec'
 			],
@@ -6498,7 +7957,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Gabriel',
 		aliases: [],
-		inherit: 'Ice',
+		affinities: {
+			skillPotential: {
+				Phys: 0,
+				Fire: 0,
+				Ice: 5,
+				Elec: -4,
+				Force: 0,
+				Light: 3,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: -7,
+				Recovery: 3,
+				Support: 1
+			},
+			inherit: null
+		},
 		arcana: 'Temperance',
 		race: 'Herald',
 		level: 86,
@@ -6541,7 +8015,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 90
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {},
 			weak: [
 				'Elec'
 			],
@@ -6560,7 +8035,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Ganesha',
 		aliases: [],
-		inherit: 'Phys',
+		affinities: {
+			skillPotential: {
+				Phys: 3,
+				Fire: 0,
+				Ice: 0,
+				Elec: -6,
+				Force: 1,
+				Light: 0,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 0,
+				Recovery: 0,
+				Support: 4
+			},
+			inherit: null
+		},
 		arcana: 'Sun',
 		race: 'Wargod',
 		level: 57,
@@ -6599,7 +8089,11 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 60
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {
+				Poison: 'Weak',
+				Confuse: 'Resist'
+			},
 			weak: [
 				'Elec',
 				'Dark'
@@ -6618,7 +8112,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Ganga',
 		aliases: [],
-		inherit: 'Ice',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Ice'
+		},
 		arcana: 'Priestess',
 		race: 'Dragon',
 		level: 29,
@@ -6661,7 +8158,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 35
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: null,
 			weak: [
 				'Fire',
 				'Dark'
@@ -6678,7 +8176,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Garuda',
 		aliases: [],
-		inherit: 'Force',
+		affinities: {
+			skillPotential: {
+				Phys: 2,
+				Fire: 0,
+				Ice: 0,
+				Elec: -4,
+				Force: 5,
+				Light: 0,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 0,
+				Recovery: 0,
+				Support: 1
+			},
+			inherit: null
+		},
 		arcana: 'Star',
 		race: 'Avian',
 		level: 64,
@@ -6721,7 +8234,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 67
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {
+				Seal: 'Resist'
+			},
 			weak: [
 				'Elec'
 			],
@@ -6741,7 +8257,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		aliases: [
 			'Xuanwu'
 		],
-		inherit: 'Ice',
+		affinities: {
+			skillPotential: {
+				Phys: 2,
+				Fire: -6,
+				Ice: 5,
+				Elec: 0,
+				Force: 0,
+				Light: 0,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 0,
+				Recovery: 0,
+				Support: 2
+			},
+			inherit: null
+		},
 		arcana: 'Temperance',
 		race: 'Dragon',
 		level: 23,
@@ -6776,7 +8307,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 26
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {},
 			weak: [
 				'Fire'
 			],
@@ -6794,7 +8326,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		aliases: [
 			'Girimekhala'
 		],
-		inherit: 'Phys',
+		affinities: {
+			skillPotential: {
+				Phys: 4,
+				Fire: 0,
+				Ice: 0,
+				Elec: 0,
+				Force: 0,
+				Light: 0,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 1,
+				Recovery: -3,
+				Support: 2
+			},
+			inherit: null
+		},
 		arcana: 'Moon',
 		race: 'Vile',
 		level: 66,
@@ -6833,7 +8380,11 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 69
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {
+				Sleep: 'Weak',
+				Poison: 'Resist'
+			},
 			weak: [
 				'Elec',
 				'Force',
@@ -6853,7 +8404,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Goemon',
 		aliases: [],
-		inherit: 'Ice',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Ice'
+		},
 		arcana: 'Emperor',
 		race: 'Persona',
 		level: 15,
@@ -6956,7 +8510,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 73
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: null,
 			weak: [
 				'Fire'
 			],
@@ -6967,12 +8522,18 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'p5'
+		game: 'p5',
+		user: 'Yusuke Kitagawa',
+		stage: 1,
+		evoSkill: null
 	},
 	{
 		name: 'Gorgon',
 		aliases: [],
-		inherit: 'Ice',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Ice'
+		},
 		arcana: 'Empress',
 		race: 'Femme',
 		level: 34,
@@ -7011,7 +8572,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 39
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: null,
 			weak: [
 				'Light'
 			],
@@ -7027,7 +8589,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Gorokichi',
 		aliases: [],
-		inherit: 'Ice',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Ice'
+		},
 		arcana: 'Emperor',
 		race: 'Persona',
 		level: 15,
@@ -7130,7 +8695,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 73
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: null,
 			weak: [
 				'Fire'
 			],
@@ -7143,12 +8709,18 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'p5'
+		game: 'p5',
+		user: 'Yusuke Kitagawa',
+		stage: 3,
+		evoSkill: 'Luster Candy'
 	},
 	{
 		name: 'Hachiman',
 		aliases: [],
-		inherit: 'Elec',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Elec'
+		},
 		arcana: 'Hierophant',
 		race: 'Deity',
 		level: 70,
@@ -7187,7 +8759,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 75
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: null,
 			weak: [
 				'Dark'
 			],
@@ -7204,7 +8777,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Hanuman',
 		aliases: [],
-		inherit: 'Phys',
+		affinities: {
+			skillPotential: {
+				Phys: 3,
+				Fire: 0,
+				Ice: 0,
+				Elec: -5,
+				Force: 2,
+				Light: 0,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 0,
+				Recovery: 0,
+				Support: 1
+			},
+			inherit: null
+		},
 		arcana: 'Strength',
 		race: 'Genma',
 		level: 46,
@@ -7239,7 +8827,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 49
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {
+				Mirage: 'Weak'
+			},
 			weak: [
 				'Elec'
 			],
@@ -7255,7 +8846,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Haraedo-no-Okami',
 		aliases: [],
-		inherit: 'Ice',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Ice'
+		},
 		arcana: 'Chariot',
 		race: 'Persona',
 		level: 4,
@@ -7346,7 +8940,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 74
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: null,
 			weak: [
 				'Fire'
 			],
@@ -7359,12 +8954,30 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			],
 			repel: []
 		},
-		game: 'p4'
+		game: 'p4',
+		user: 'Chie Satonaka',
+		stage: 3,
+		evoSkill: 'Luster Candy'
 	},
 	{
 		name: 'Hariti',
 		aliases: [],
-		inherit: 'Recovery',
+		affinities: {
+			skillPotential: {
+				Phys: 0,
+				Fire: 0,
+				Ice: 0,
+				Elec: 0,
+				Force: -2,
+				Light: 0,
+				Dark: 2,
+				Almighty: 0,
+				Ailment: 2,
+				Recovery: 3,
+				Support: 0
+			},
+			inherit: null
+		},
 		arcana: 'Empress',
 		race: 'Lady',
 		level: 35,
@@ -7403,7 +9016,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 38
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {
+				Sleep: 'Resist'
+			},
 			weak: [
 				'Force'
 			],
@@ -7419,7 +9035,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Hastur',
 		aliases: [],
-		inherit: 'Wind',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Wind'
+		},
 		arcana: 'Star',
 		race: null,
 		level: 84,
@@ -7462,7 +9081,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 89
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: null,
 			weak: [],
 			resist: [
 				'Fire'
@@ -7481,7 +9101,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Hayataro',
 		aliases: [],
-		inherit: 'Phys',
+		affinities: {
+			skillPotential: {
+				Phys: 5,
+				Fire: 0,
+				Ice: 0,
+				Elec: 4,
+				Force: -5,
+				Light: 3,
+				Dark: -3,
+				Almighty: 0,
+				Ailment: 0,
+				Recovery: 3,
+				Support: 3
+			},
+			inherit: null
+		},
 		arcana: null,
 		race: 'Holy',
 		level: 40,
@@ -7524,7 +9159,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 43
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {},
 			weak: [
 				'Force',
 				'Dark'
@@ -7544,7 +9180,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Hecate',
 		aliases: [],
-		inherit: 'Fire',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Fire'
+		},
 		arcana: 'Lovers',
 		race: 'Persona',
 		level: 5,
@@ -7643,7 +9282,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 74
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: null,
 			weak: [
 				'Ice'
 			],
@@ -7656,12 +9296,30 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'p5'
+		game: 'p5',
+		user: 'Ann Takamaki',
+		stage: 2,
+		evoSkill: 'Evade Ice'
 	},
 	{
 		name: 'Hecatoncheires',
 		aliases: [],
-		inherit: 'Phys',
+		affinities: {
+			skillPotential: {
+				Phys: 4,
+				Fire: 0,
+				Ice: 0,
+				Elec: 0,
+				Force: -2,
+				Light: 0,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 2,
+				Recovery: -4,
+				Support: 1
+			},
+			inherit: null
+		},
 		arcana: 'Hanged',
 		race: 'Jaki',
 		level: 55,
@@ -7700,7 +9358,11 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 58
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {
+				Mirage: 'Weak',
+				Confuse: 'Resist'
+			},
 			weak: [
 				'Force'
 			],
@@ -7716,7 +9378,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Hell Biker',
 		aliases: [],
-		inherit: 'Fire',
+		affinities: {
+			skillPotential: {
+				Phys: 3,
+				Fire: 4,
+				Ice: -5,
+				Elec: 0,
+				Force: 4,
+				Light: 0,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 2,
+				Recovery: 0,
+				Support: 0
+			},
+			inherit: null
+		},
 		arcana: 'Death',
 		race: 'Fiend',
 		level: 36,
@@ -7755,7 +9432,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 39
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {},
 			weak: [
 				'Ice'
 			],
@@ -7775,7 +9453,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Hereward',
 		aliases: [],
-		inherit: 'Almighty',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Almighty'
+		},
 		arcana: 'Justice',
 		race: 'Persona',
 		level: 75,
@@ -7822,7 +9503,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 0
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: null,
 			weak: [
 				'Light'
 			],
@@ -7835,12 +9517,18 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'p5'
+		game: 'p5',
+		user: 'Goro Akechi',
+		stage: 3,
+		evoSkill: 'Rebellion Blade'
 	},
 	{
 		name: 'Hermes',
 		aliases: [],
-		inherit: 'Fire',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Fire'
+		},
 		arcana: 'Magician',
 		race: 'Persona',
 		level: 1,
@@ -7911,7 +9599,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 55
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: null,
 			weak: [
 				'Wind'
 			],
@@ -7922,12 +9611,30 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'p3'
+		game: 'p3',
+		user: 'Junpei Iori',
+		stage: 1,
+		evoSkill: null
 	},
 	{
 		name: 'High Pixie',
 		aliases: [],
-		inherit: 'Recovery',
+		affinities: {
+			skillPotential: {
+				Phys: 0,
+				Fire: 0,
+				Ice: -4,
+				Elec: 1,
+				Force: 1,
+				Light: 0,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 0,
+				Recovery: 1,
+				Support: 1
+			},
+			inherit: null
+		},
 		arcana: 'Fool',
 		race: 'Fairy',
 		level: 18,
@@ -7962,7 +9669,11 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 21
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {
+				Confuse: 'Resist',
+				Seal: 'Resist'
+			},
 			weak: [
 				'Ice'
 			],
@@ -7978,7 +9689,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Himiko',
 		aliases: [],
-		inherit: 'Almighty',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Almighty'
+		},
 		arcana: 'Lovers',
 		race: 'Persona',
 		level: 34,
@@ -8037,14 +9751,18 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 79
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: null,
 			weak: [],
 			resist: [],
 			null: [],
 			drain: [],
 			repel: []
 		},
-		game: 'p4'
+		game: 'p4',
+		user: 'Rise Kujikawa',
+		stage: 1,
+		evoSkill: null
 	},
 	{
 		name: 'Hokuto Seikun',
@@ -8052,7 +9770,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			'Beidou Xingjun',
 			'Beiji Weng'
 		],
-		inherit: 'Elec',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Elec'
+		},
 		arcana: 'Hierophant',
 		race: 'Fury',
 		level: 45,
@@ -8095,7 +9816,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 51
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: null,
 			weak: [
 				'Fire'
 			],
@@ -8111,7 +9833,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Hope Diamond',
 		aliases: [],
-		inherit: 'Support',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Support'
+		},
 		arcana: 'Death',
 		race: 'Treasure',
 		level: 40,
@@ -8158,7 +9883,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 0
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: null,
 			weak: [
 				'Ice'
 			],
@@ -8175,7 +9901,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Horus',
 		aliases: [],
-		inherit: 'Light',
+		affinities: {
+			skillPotential: {
+				Phys: 0,
+				Fire: 0,
+				Ice: 0,
+				Elec: 0,
+				Force: 0,
+				Light: 3,
+				Dark: -4,
+				Almighty: 2,
+				Ailment: 0,
+				Recovery: 2,
+				Support: 2
+			},
+			inherit: null
+		},
 		arcana: 'Sun',
 		race: 'Deity',
 		level: 42,
@@ -8214,7 +9955,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 45
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {},
 			weak: [
 				'Force',
 				'Dark'
@@ -8234,7 +9976,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Hua Po',
 		aliases: [],
-		inherit: 'Fire',
+		affinities: {
+			skillPotential: {
+				Phys: 0,
+				Fire: 2,
+				Ice: -3,
+				Elec: 0,
+				Force: 0,
+				Light: 0,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 0,
+				Recovery: 1,
+				Support: 1
+			},
+			inherit: null
+		},
 		arcana: 'Hanged',
 		race: 'Jirae',
 		level: 31,
@@ -8269,7 +10026,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 34
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {
+				Mirage: 'Weak'
+			},
 			weak: [
 				'Ice'
 			],
@@ -8285,7 +10045,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Hydra',
 		aliases: [],
-		inherit: 'Fire',
+		affinities: {
+			skillPotential: {
+				Phys: 3,
+				Fire: 3,
+				Ice: -4,
+				Elec: 0,
+				Force: 0,
+				Light: 0,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 2,
+				Recovery: -1,
+				Support: 0
+			},
+			inherit: null
+		},
 		arcana: null,
 		race: 'Drake',
 		level: 53,
@@ -8324,7 +10099,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 56
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {
+				Poison: 'Resist'
+			},
 			weak: [
 				'Ice'
 			],
@@ -8340,7 +10118,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Idun',
 		aliases: [],
-		inherit: 'Recovery',
+		affinities: {
+			skillPotential: {
+				Phys: 0,
+				Fire: 0,
+				Ice: 0,
+				Elec: 0,
+				Force: 2,
+				Light: 2,
+				Dark: -4,
+				Almighty: 0,
+				Ailment: 0,
+				Recovery: 4,
+				Support: 2
+			},
+			inherit: null
+		},
 		arcana: null,
 		race: 'Megami',
 		level: 42,
@@ -8379,7 +10172,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 45
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {
+				Charm: 'Resist'
+			},
 			weak: [
 				'Elec'
 			],
@@ -8397,7 +10193,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Inanna',
 		aliases: [],
-		inherit: 'Almighty',
+		affinities: {
+			skillPotential: {
+				Phys: -6,
+				Fire: 5,
+				Ice: 5,
+				Elec: 5,
+				Force: 5,
+				Light: 0,
+				Dark: 0,
+				Almighty: 3,
+				Ailment: -6,
+				Recovery: -4,
+				Support: 2
+			},
+			inherit: null
+		},
 		arcana: null,
 		race: 'Lady',
 		level: 87,
@@ -8440,7 +10251,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 90
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {},
 			weak: [
 				'Phys',
 				'Dark'
@@ -8460,7 +10272,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Incubus',
 		aliases: [],
-		inherit: 'Ailment',
+		affinities: {
+			skillPotential: {
+				Phys: 0,
+				Fire: 0,
+				Ice: 0,
+				Elec: -4,
+				Force: 1,
+				Light: 0,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 5,
+				Recovery: 0,
+				Support: -2
+			},
+			inherit: null
+		},
 		arcana: 'Devil',
 		race: 'Night',
 		level: 22,
@@ -8495,7 +10322,11 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 25
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {
+				Sleep: 'Resist',
+				Charm: 'Null'
+			},
 			weak: [
 				'Elec'
 			],
@@ -8511,7 +10342,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Inugami',
 		aliases: [],
-		inherit: 'Fire',
+		affinities: {
+			skillPotential: {
+				Phys: 0,
+				Fire: 3,
+				Ice: -4,
+				Elec: 0,
+				Force: 0,
+				Light: 0,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 1,
+				Recovery: 1,
+				Support: 0
+			},
+			inherit: null
+		},
 		arcana: 'Hanged',
 		race: 'Beast',
 		level: 24,
@@ -8542,7 +10388,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 27
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {},
 			weak: [
 				'Ice',
 				'Light'
@@ -8561,7 +10408,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Io',
 		aliases: [],
-		inherit: 'Wind',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Wind'
+		},
 		arcana: 'Lovers',
 		race: 'Persona',
 		level: 1,
@@ -8624,7 +10474,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 46
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: null,
 			weak: [
 				'Elec'
 			],
@@ -8635,12 +10486,30 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'p3'
+		game: 'p3',
+		user: 'Yukari Takeba',
+		stage: 1,
+		evoSkill: null
 	},
 	{
 		name: 'Ippon-Datara',
 		aliases: [],
-		inherit: 'Phys',
+		affinities: {
+			skillPotential: {
+				Phys: 2,
+				Fire: 0,
+				Ice: 0,
+				Elec: 0,
+				Force: 0,
+				Light: -3,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 1,
+				Recovery: 0,
+				Support: 2
+			},
+			inherit: null
+		},
 		arcana: 'Hermit',
 		race: 'Brute',
 		level: 17,
@@ -8671,7 +10540,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 19
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {},
 			weak: [
 				'Light'
 			],
@@ -8687,7 +10557,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Ishtar',
 		aliases: [],
-		inherit: 'Light',
+		affinities: {
+			skillPotential: {
+				Phys: 0,
+				Fire: 0,
+				Ice: 0,
+				Elec: 2,
+				Force: 0,
+				Light: 3,
+				Dark: -3,
+				Almighty: 0,
+				Ailment: 0,
+				Recovery: 2,
+				Support: 2
+			},
+			inherit: null
+		},
 		arcana: 'Lovers',
 		race: 'Lady',
 		level: 62,
@@ -8726,7 +10611,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 65
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {
+				Charm: 'Resist'
+			},
 			weak: [
 				'Force',
 				'Dark'
@@ -8744,7 +10632,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Isis',
 		aliases: [],
-		inherit: 'Elec',
+		affinities: {
+			skillPotential: {
+				Phys: -4,
+				Fire: 0,
+				Ice: 0,
+				Elec: 4,
+				Force: 0,
+				Light: 0,
+				Dark: -3,
+				Almighty: 0,
+				Ailment: 0,
+				Recovery: 3,
+				Support: 1
+			},
+			inherit: null
+		},
 		arcana: 'Priestess',
 		race: 'Lady',
 		level: 46,
@@ -8783,7 +10686,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 49
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {
+				Seal: 'Resist'
+			},
 			weak: [
 				'Dark'
 			],
@@ -8803,7 +10709,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		aliases: [
 			'Isis'
 		],
-		inherit: 'Wind',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Wind'
+		},
 		arcana: 'Lovers',
 		race: 'Persona',
 		level: 1,
@@ -8842,7 +10751,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 49
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: null,
 			weak: [
 				'Dark'
 			],
@@ -8855,12 +10765,18 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'p3'
+		game: 'p3',
+		user: 'Yukari Takeba',
+		stage: 2,
+		evoSkill: null
 	},
 	{
 		name: 'Izanagi',
 		aliases: [],
-		inherit: 'Elec',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Elec'
+		},
 		arcana: 'Fool',
 		race: 'Persona',
 		level: 1,
@@ -8919,7 +10835,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 25
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: null,
 			weak: [
 				'Wind'
 			],
@@ -8932,12 +10849,18 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'p5'
+		game: 'p5',
+		user: 'P4 Protgaonist',
+		stage: 1,
+		evoSkill: null
 	},
 	{
 		name: 'Izanagi-no-Okami',
 		aliases: [],
-		inherit: 'Almighty',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Almighty'
+		},
 		arcana: 'World',
 		race: 'Persona',
 		level: 80,
@@ -8984,7 +10907,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 85
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: null,
 			weak: [],
 			resist: [
 				'Phys',
@@ -9000,12 +10924,18 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'p5'
+		game: 'p5',
+		user: 'P4 Protagonist',
+		stage: 2,
+		evoSkill: null
 	},
 	{
 		name: 'Izanagi-no-Okami Picaro',
 		aliases: [],
-		inherit: 'Almighty',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Almighty'
+		},
 		arcana: 'World',
 		race: 'Picaro',
 		level: 89,
@@ -9052,7 +10982,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 94
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: null,
 			weak: [],
 			resist: [
 				'Phys',
@@ -9073,7 +11004,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Izanagi Picaro',
 		aliases: [],
-		inherit: 'Almighty',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Almighty'
+		},
 		arcana: 'Fool',
 		race: 'Picaro',
 		level: 23,
@@ -9116,7 +11050,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 28
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: null,
 			weak: [
 				'Wind'
 			],
@@ -9133,7 +11068,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Jack Frost',
 		aliases: [],
-		inherit: 'Ice',
+		affinities: {
+			skillPotential: {
+				Phys: 0,
+				Fire: -5,
+				Ice: 4,
+				Elec: 0,
+				Force: 0,
+				Light: 2,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 0,
+				Recovery: 0,
+				Support: 0
+			},
+			inherit: null
+		},
 		arcana: 'Magician',
 		race: 'Fairy',
 		level: 25,
@@ -9168,7 +11118,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 28
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {
+				Charm: 'Weak'
+			},
 			weak: [
 				'Fire'
 			],
@@ -9186,7 +11139,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		aliases: [
 			'Pyro Jack'
 		],
-		inherit: 'Fire',
+		affinities: {
+			skillPotential: {
+				Phys: 0,
+				Fire: 5,
+				Ice: -5,
+				Elec: 0,
+				Force: 0,
+				Light: -1,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 0,
+				Recovery: 0,
+				Support: 1
+			},
+			inherit: null
+		},
 		arcana: 'Magician',
 		race: 'Fairy',
 		level: 20,
@@ -9217,7 +11185,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 23
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {
+				Confuse: 'Weak'
+			},
 			weak: [
 				'Ice'
 			],
@@ -9233,7 +11204,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Jatayu',
 		aliases: [],
-		inherit: 'Force',
+		affinities: {
+			skillPotential: {
+				Phys: 0,
+				Fire: 0,
+				Ice: 0,
+				Elec: 0,
+				Force: 4,
+				Light: 0,
+				Dark: -3,
+				Almighty: 0,
+				Ailment: 0,
+				Recovery: 0,
+				Support: 3
+			},
+			inherit: null
+		},
 		arcana: 'Hanged',
 		race: 'Avian',
 		level: 32,
@@ -9272,7 +11258,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 35
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {},
 			weak: [
 				'Elec',
 				'Dark'
@@ -9289,7 +11276,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Jikokuten',
 		aliases: [],
-		inherit: 'Phys',
+		affinities: {
+			skillPotential: {
+				Phys: 4,
+				Fire: -5,
+				Ice: 3,
+				Elec: 0,
+				Force: 0,
+				Light: 0,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 0,
+				Recovery: 0,
+				Support: 3
+			},
+			inherit: null
+		},
 		arcana: 'Temperance',
 		race: 'Kishin',
 		level: 51,
@@ -9332,7 +11334,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 54
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {},
 			weak: [
 				'Fire'
 			],
@@ -9350,7 +11353,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Jinn',
 		aliases: [],
-		inherit: 'Fire',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Fire'
+		},
 		arcana: 'Magician',
 		race: 'Yoma',
 		level: 62,
@@ -9389,7 +11395,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 68
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: null,
 			weak: [
 				'Elec'
 			],
@@ -9405,7 +11412,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Jiraiya',
 		aliases: [],
-		inherit: 'Wind',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Wind'
+		},
 		arcana: 'Magician',
 		race: 'Persona',
 		level: 4,
@@ -9492,7 +11502,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 73
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: null,
 			weak: [
 				'Elec'
 			],
@@ -9503,12 +11514,18 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'p4'
+		game: 'p4',
+		user: 'Yosuke Hanamura',
+		stage: 1,
+		evoSkill: null
 	},
 	{
 		name: 'Johanna',
 		aliases: [],
-		inherit: 'Nuke',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Nuke'
+		},
 		arcana: 'Priestess',
 		race: 'Persona',
 		level: 21,
@@ -9607,7 +11624,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 75
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: null,
 			weak: [
 				'Psy'
 			],
@@ -9618,12 +11636,18 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'p5'
+		game: 'p5',
+		user: 'Makoto Niijima',
+		stage: 1,
+		evoSkill: null
 	},
 	{
 		name: 'Juno',
 		aliases: [],
-		inherit: 'Almighty',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Almighty'
+		},
 		arcana: 'Priestess',
 		race: 'Persona',
 		level: 17,
@@ -9662,19 +11686,26 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 72
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: null,
 			weak: [],
 			resist: [],
 			null: [],
 			drain: [],
 			repel: []
 		},
-		game: 'p3'
+		game: 'p3',
+		user: 'Fuuka Yamagishi',
+		stage: 2,
+		evoSkill: null
 	},
 	{
 		name: 'Kaguya',
 		aliases: [],
-		inherit: 'Almighty',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Almighty'
+		},
 		arcana: 'Moon',
 		race: 'Persona',
 		level: 16,
@@ -9717,7 +11748,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 22
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: null,
 			weak: [
 				'Fire'
 			],
@@ -9731,12 +11763,18 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'p5'
+		game: 'p5',
+		user: 'Marie',
+		stage: 1,
+		evoSkill: null
 	},
 	{
 		name: 'Kaguya Picaro',
 		aliases: [],
-		inherit: 'Almighty',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Almighty'
+		},
 		arcana: 'Moon',
 		race: 'Picaro',
 		level: 25,
@@ -9779,7 +11817,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 31
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: null,
 			weak: [
 				'Fire'
 			],
@@ -9796,7 +11835,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Kaiwan',
 		aliases: [],
-		inherit: 'Dark',
+		affinities: {
+			skillPotential: {
+				Phys: 0,
+				Fire: 0,
+				Ice: 0,
+				Elec: 0,
+				Force: 0,
+				Light: -3,
+				Dark: 3,
+				Almighty: 0,
+				Ailment: 1,
+				Recovery: 0,
+				Support: 2
+			},
+			inherit: null
+		},
 		arcana: 'Star',
 		race: 'Night',
 		level: 45,
@@ -9831,7 +11885,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 48
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {
+				Seal: 'Resist'
+			},
 			weak: [
 				'Light'
 			],
@@ -9847,7 +11904,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Kala-Nemi',
 		aliases: [],
-		inherit: 'Light',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Light'
+		},
 		arcana: 'Justice',
 		race: 'Persona',
 		level: 36,
@@ -9918,7 +11978,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 78
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: null,
 			weak: [
 				'Dark'
 			],
@@ -9929,12 +11990,30 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'p3'
+		game: 'p3',
+		user: 'Ken Amada',
+		stage: 2,
+		evoSkill: null
 	},
 	{
 		name: 'Kali',
 		aliases: [],
-		inherit: 'Phys',
+		affinities: {
+			skillPotential: {
+				Phys: 4,
+				Fire: 3,
+				Ice: -2,
+				Elec: 0,
+				Force: 0,
+				Light: 0,
+				Dark: 2,
+				Almighty: 0,
+				Ailment: 0,
+				Recovery: 0,
+				Support: -3
+			},
+			inherit: null
+		},
 		arcana: 'Empress',
 		race: 'Femme',
 		level: 76,
@@ -9973,7 +12052,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 79
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {},
 			weak: [
 				'Ice',
 				'Force'
@@ -9994,7 +12074,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Kamui',
 		aliases: [],
-		inherit: 'Recovery',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Recovery'
+		},
 		arcana: 'Star',
 		race: 'Persona',
 		level: 35,
@@ -10081,7 +12164,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 72
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: null,
 			weak: [
 				'Elec'
 			],
@@ -10095,12 +12179,18 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'p4'
+		game: 'p4',
+		user: 'Teddie',
+		stage: 2,
+		evoSkill: null
 	},
 	{
 		name: 'Kamui-Moshiri',
 		aliases: [],
-		inherit: 'Recovery',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Recovery'
+		},
 		arcana: 'Star',
 		race: 'Persona',
 		level: 35,
@@ -10187,7 +12277,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 72
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: null,
 			weak: [],
 			resist: [],
 			null: [
@@ -10199,12 +12290,18 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			],
 			repel: []
 		},
-		game: 'p4'
+		game: 'p4',
+		user: 'Teddie',
+		stage: 3,
+		evoSkill: 'Kamui Miracle'
 	},
 	{
 		name: 'Kamu Susano-o',
 		aliases: [],
-		inherit: 'Ice',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Ice'
+		},
 		arcana: 'Emperor',
 		race: 'Persona',
 		level: 15,
@@ -10307,7 +12404,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 73
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: null,
 			weak: [
 				'Fire'
 			],
@@ -10320,12 +12418,18 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'p5'
+		game: 'p5',
+		user: 'Yusuke Kitagawa',
+		stage: 2,
+		evoSkill: 'Evade Fire'
 	},
 	{
 		name: 'Kanzeon',
 		aliases: [],
-		inherit: 'Almighty',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Almighty'
+		},
 		arcana: 'Lovers',
 		race: 'Persona',
 		level: 34,
@@ -10384,19 +12488,38 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 79
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: null,
 			weak: [],
 			resist: [],
 			null: [],
 			drain: [],
 			repel: []
 		},
-		game: 'p4'
+		game: 'p4',
+		user: 'Rise Kujikawa',
+		stage: 2,
+		evoSkill: null
 	},
 	{
 		name: 'Kaya-no-Hime',
 		aliases: [],
-		inherit: 'Recovery',
+		affinities: {
+			skillPotential: {
+				Phys: 0,
+				Fire: -4,
+				Ice: 2,
+				Elec: 0,
+				Force: 0,
+				Light: 0,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: -2,
+				Recovery: 3,
+				Support: 2
+			},
+			inherit: null
+		},
 		arcana: null,
 		race: 'Jirae',
 		level: 21,
@@ -10431,7 +12554,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 24
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {
+				Poison: 'Weak',
+				Sleep: 'Resist',
+				Charm: 'Resist'
+			},
 			weak: [
 				'Fire'
 			],
@@ -10447,7 +12575,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Kelpie',
 		aliases: [],
-		inherit: 'Recovery',
+		affinities: {
+			skillPotential: {
+				Phys: 0,
+				Fire: 0,
+				Ice: 0,
+				Elec: 0,
+				Force: -3,
+				Light: 0,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 0,
+				Recovery: 3,
+				Support: 1
+			},
+			inherit: null
+		},
 		arcana: 'Strength',
 		race: 'Fairy',
 		level: 30,
@@ -10486,7 +12629,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 33
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {
+				Mirage: 'Null'
+			},
 			weak: [
 				'Force'
 			],
@@ -10502,7 +12648,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Khonsu',
 		aliases: [],
-		inherit: 'Light',
+		affinities: {
+			skillPotential: {
+				Phys: 3,
+				Fire: 4,
+				Ice: -5,
+				Elec: 0,
+				Force: 0,
+				Light: 5,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 0,
+				Recovery: 0,
+				Support: 3
+			},
+			inherit: null
+		},
 		arcana: null,
 		race: 'Deity',
 		level: 62,
@@ -10545,7 +12706,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 65
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {},
 			weak: [
 				'Ice'
 			],
@@ -10563,7 +12725,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Khonsu Ra',
 		aliases: [],
-		inherit: 'Fire',
+		affinities: {
+			skillPotential: {
+				Phys: 3,
+				Fire: 7,
+				Ice: -5,
+				Elec: 0,
+				Force: 0,
+				Light: -5,
+				Dark: 0,
+				Almighty: 3,
+				Ailment: 0,
+				Recovery: 0,
+				Support: 0
+			},
+			inherit: null
+		},
 		arcana: null,
 		race: 'Deity',
 		level: 78,
@@ -10602,7 +12779,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 81
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {
+				Seal: 'Null'
+			},
 			weak: [
 				'Ice'
 			],
@@ -10623,7 +12803,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Kikuri-Hime',
 		aliases: [],
-		inherit: 'Recovery',
+		affinities: {
+			skillPotential: {
+				Phys: -2,
+				Fire: 0,
+				Ice: 0,
+				Elec: -5,
+				Force: 2,
+				Light: 0,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 0,
+				Recovery: 3,
+				Support: 2
+			},
+			inherit: null
+		},
 		arcana: 'Priestess',
 		race: 'Lady',
 		level: 24,
@@ -10658,7 +12853,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 27
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {
+				Charm: 'Resist'
+			},
 			weak: [
 				'Elec'
 			],
@@ -10676,7 +12874,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'King Frost',
 		aliases: [],
-		inherit: 'Ice',
+		affinities: {
+			skillPotential: {
+				Phys: 0,
+				Fire: -6,
+				Ice: 5,
+				Elec: 0,
+				Force: 0,
+				Light: 0,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 1,
+				Recovery: 0,
+				Support: 1
+			},
+			inherit: null
+		},
 		arcana: 'Emperor',
 		race: 'Tyrant',
 		level: 33,
@@ -10715,7 +12928,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 36
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {},
 			weak: [
 				'Fire',
 				'Dark'
@@ -10734,7 +12948,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Kin-Ki',
 		aliases: [],
-		inherit: 'Phys',
+		affinities: {
+			skillPotential: {
+				Phys: 4,
+				Fire: 0,
+				Ice: 0,
+				Elec: 2,
+				Force: -4,
+				Light: 0,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 0,
+				Recovery: -2,
+				Support: 0
+			},
+			inherit: null
+		},
 		arcana: 'Chariot',
 		race: 'Brute',
 		level: 49,
@@ -10773,7 +13002,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 52
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {
+				Mirage: 'Weak'
+			},
 			weak: [
 				'Force'
 			],
@@ -10789,7 +13021,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Kintoki-Douji',
 		aliases: [],
-		inherit: 'Recovery',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Recovery'
+		},
 		arcana: 'Star',
 		race: 'Persona',
 		level: 35,
@@ -10876,7 +13111,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 72
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: null,
 			weak: [
 				'Elec'
 			],
@@ -10887,12 +13123,30 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'p4'
+		game: 'p4',
+		user: 'Teddie',
+		stage: 1,
+		evoSkill: null
 	},
 	{
 		name: 'Kodama',
 		aliases: [],
-		inherit: 'Force',
+		affinities: {
+			skillPotential: {
+				Phys: 0,
+				Fire: -3,
+				Ice: -3,
+				Elec: 0,
+				Force: 2,
+				Light: 0,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 1,
+				Recovery: 1,
+				Support: 0
+			},
+			inherit: null
+		},
 		arcana: 'Star',
 		race: 'Jirae',
 		level: 6,
@@ -10919,7 +13173,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 8
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {},
 			weak: [
 				'Fire',
 				'Ice'
@@ -10936,7 +13191,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Koh-i-Noor',
 		aliases: [],
-		inherit: 'Support',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Support'
+		},
 		arcana: 'Priestess',
 		race: 'Treasure',
 		level: 25,
@@ -10983,7 +13241,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 0
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: null,
 			weak: [
 				'Gun'
 			],
@@ -11001,7 +13260,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		aliases: [
 			'Huang Long'
 		],
-		inherit: 'Almighty',
+		affinities: {
+			skillPotential: {
+				Phys: 0,
+				Fire: 0,
+				Ice: 0,
+				Elec: 0,
+				Force: 0,
+				Light: 0,
+				Dark: -5,
+				Almighty: 5,
+				Ailment: 0,
+				Recovery: 2,
+				Support: 2
+			},
+			inherit: null
+		},
 		arcana: 'Hierophant',
 		race: 'Dragon',
 		level: 78,
@@ -11040,7 +13314,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 81
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {
+				Confuse: 'Resist'
+			},
 			weak: [
 				'Dark'
 			],
@@ -11061,7 +13338,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Konohana Sakuya',
 		aliases: [],
-		inherit: 'Fire',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Fire'
+		},
 		arcana: 'Priestess',
 		race: 'Persona',
 		level: 15,
@@ -11152,7 +13432,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 76
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: null,
 			weak: [
 				'Ice'
 			],
@@ -11163,12 +13444,30 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'p4'
+		game: 'p4',
+		user: 'Yukiko Amagi',
+		stage: 1,
+		evoSkill: null
 	},
 	{
 		name: 'Koppa Tengu',
 		aliases: [],
-		inherit: 'Force',
+		affinities: {
+			skillPotential: {
+				Phys: 0,
+				Fire: 0,
+				Ice: 0,
+				Elec: -3,
+				Force: 3,
+				Light: 0,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 0,
+				Recovery: 0,
+				Support: 1
+			},
+			inherit: null
+		},
 		arcana: 'Temperance',
 		race: 'Yoma',
 		level: 24,
@@ -11203,7 +13502,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 27
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {
+				Sleep: 'Resist'
+			},
 			weak: [
 				'Elec'
 			],
@@ -11222,7 +13524,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			'Koropokkuru',
 			'Koropokkur'
 		],
-		inherit: 'Ice',
+		affinities: {
+			skillPotential: {
+				Phys: 0,
+				Fire: 0,
+				Ice: 4,
+				Elec: 0,
+				Force: -3,
+				Light: 0,
+				Dark: -4,
+				Almighty: 0,
+				Ailment: 0,
+				Recovery: 1,
+				Support: 3
+			},
+			inherit: null
+		},
 		arcana: 'Hermit',
 		race: 'Jirae',
 		level: 26,
@@ -11261,7 +13578,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 29
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {
+				Poison: 'Resist'
+			},
 			weak: [
 				'Force',
 				'Dark'
@@ -11280,7 +13600,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Koumokuten',
 		aliases: [],
-		inherit: 'Force',
+		affinities: {
+			skillPotential: {
+				Phys: 4,
+				Fire: 0,
+				Ice: 0,
+				Elec: -4,
+				Force: 4,
+				Light: 0,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 0,
+				Recovery: 0,
+				Support: 3
+			},
+			inherit: null
+		},
 		arcana: 'Hermit',
 		race: 'Kishin',
 		level: 44,
@@ -11323,7 +13658,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 47
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {},
 			weak: [
 				'Elec'
 			],
@@ -11341,7 +13677,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Kouzeon',
 		aliases: [],
-		inherit: 'Almighty',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Almighty'
+		},
 		arcana: 'Lovers',
 		race: 'Persona',
 		level: 34,
@@ -11400,19 +13739,38 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 79
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: null,
 			weak: [],
 			resist: [],
 			null: [],
 			drain: [],
 			repel: []
 		},
-		game: 'p4'
+		game: 'p4',
+		user: 'Rise Kujikawa',
+		stage: 3,
+		evoSkill: 'Complete Analysis'
 	},
 	{
 		name: 'Kumbhanda',
 		aliases: [],
-		inherit: 'Phys',
+		affinities: {
+			skillPotential: {
+				Phys: 3,
+				Fire: 0,
+				Ice: 0,
+				Elec: -5,
+				Force: 0,
+				Light: 0,
+				Dark: 2,
+				Almighty: 0,
+				Ailment: 2,
+				Recovery: 0,
+				Support: 0
+			},
+			inherit: null
+		},
 		arcana: 'Hermit',
 		race: 'Haunt',
 		level: 41,
@@ -11451,7 +13809,13 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 44
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {
+				Mirage: 'Weak',
+				Poison: 'Resist',
+				Confuse: 'Resist',
+				Charm: 'Resist'
+			},
 			weak: [
 				'Elec'
 			],
@@ -11469,7 +13833,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Kurama Tengu',
 		aliases: [],
-		inherit: 'Force',
+		affinities: {
+			skillPotential: {
+				Phys: 1,
+				Fire: 0,
+				Ice: 0,
+				Elec: -5,
+				Force: 4,
+				Light: 2,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 0,
+				Recovery: 0,
+				Support: 0
+			},
+			inherit: null
+		},
 		arcana: 'Hermit',
 		race: 'Genma',
 		level: 39,
@@ -11504,7 +13883,11 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 42
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {
+				Charm: 'Weak',
+				Seal: 'Resist'
+			},
 			weak: [
 				'Elec'
 			],
@@ -11520,7 +13903,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Kushi Mitama',
 		aliases: [],
-		inherit: 'Recovery',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Recovery'
+		},
 		arcana: 'Councillor',
 		race: 'Mitama',
 		level: 12,
@@ -11559,7 +13945,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 16
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: null,
 			weak: [
 				'Fire'
 			],
@@ -11577,7 +13964,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		aliases: [
 			'Kushinada-Hime'
 		],
-		inherit: 'Recovery',
+		affinities: {
+			skillPotential: {
+				Phys: 0,
+				Fire: 0,
+				Ice: 0,
+				Elec: 0,
+				Force: 0,
+				Light: 3,
+				Dark: -3,
+				Almighty: 0,
+				Ailment: 0,
+				Recovery: 4,
+				Support: 1
+			},
+			inherit: null
+		},
 		arcana: 'Lovers',
 		race: 'Kunitsu',
 		level: 49,
@@ -11612,7 +14014,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 52
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {},
 			weak: [
 				'Dark'
 			],
@@ -11628,7 +14031,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Lachesis',
 		aliases: [],
-		inherit: 'Ailment',
+		affinities: {
+			skillPotential: {
+				Phys: 0,
+				Fire: 0,
+				Ice: 0,
+				Elec: 0,
+				Force: -5,
+				Light: 0,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 5,
+				Recovery: 0,
+				Support: 4
+			},
+			inherit: null
+		},
 		arcana: 'Fortune',
 		race: 'Femme',
 		level: 58,
@@ -11671,7 +14089,15 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 62
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {
+				Sleep: 'Resist',
+				Mirage: 'Resist',
+				Poison: 'Resist',
+				Confuse: 'Resist',
+				Charm: 'Resist',
+				Seal: 'Resist'
+			},
 			weak: [
 				'Force'
 			],
@@ -11685,7 +14111,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Lahmu',
 		aliases: [],
-		inherit: 'Ailment',
+		affinities: {
+			skillPotential: {
+				Phys: 2,
+				Fire: -4,
+				Ice: 3,
+				Elec: 0,
+				Force: 2,
+				Light: 0,
+				Dark: 3,
+				Almighty: 2,
+				Ailment: 3,
+				Recovery: 0,
+				Support: 0
+			},
+			inherit: null
+		},
 		arcana: null,
 		race: 'Vile',
 		level: 48,
@@ -11728,7 +14169,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 51
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {
+				Confuse: 'Null'
+			},
 			weak: [
 				'Fire'
 			],
@@ -11747,7 +14191,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Lakshmi',
 		aliases: [],
-		inherit: 'Recovery',
+		affinities: {
+			skillPotential: {
+				Phys: -4,
+				Fire: 0,
+				Ice: 0,
+				Elec: -3,
+				Force: 3,
+				Light: 3,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 0,
+				Recovery: 3,
+				Support: 3
+			},
+			inherit: null
+		},
 		arcana: 'Fortune',
 		race: 'Megami',
 		level: 70,
@@ -11790,7 +14249,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 73
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {
+				Charm: 'Null'
+			},
 			weak: [
 				'Elec'
 			],
@@ -11808,7 +14270,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Lamia',
 		aliases: [],
-		inherit: 'Dark',
+		affinities: {
+			skillPotential: {
+				Phys: 0,
+				Fire: 0,
+				Ice: -3,
+				Elec: 3,
+				Force: 0,
+				Light: -2,
+				Dark: 2,
+				Almighty: 0,
+				Ailment: 3,
+				Recovery: -1,
+				Support: 0
+			},
+			inherit: null
+		},
 		arcana: 'Empress',
 		race: 'Femme',
 		level: 36,
@@ -11847,7 +14324,11 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 39
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {
+				Mirage: 'Weak',
+				Poison: 'Resist'
+			},
 			weak: [
 				'Ice'
 			],
@@ -11863,7 +14344,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Leanan Sidhe',
 		aliases: [],
-		inherit: 'Almighty',
+		affinities: {
+			skillPotential: {
+				Phys: -1,
+				Fire: 0,
+				Ice: 0,
+				Elec: 0,
+				Force: -3,
+				Light: -2,
+				Dark: 3,
+				Almighty: 0,
+				Ailment: 3,
+				Recovery: 2,
+				Support: 0
+			},
+			inherit: null
+		},
 		arcana: 'Lovers',
 		race: 'Femme',
 		level: 17,
@@ -11898,7 +14394,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 19
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {
+				Poison: 'Weak'
+			},
 			weak: [
 				'Force',
 				'Light'
@@ -11915,7 +14414,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Legion',
 		aliases: [],
-		inherit: 'Dark',
+		affinities: {
+			skillPotential: {
+				Phys: 0,
+				Fire: 0,
+				Ice: 0,
+				Elec: 0,
+				Force: 0,
+				Light: -3,
+				Dark: 2,
+				Almighty: 0,
+				Ailment: 2,
+				Recovery: -1,
+				Support: 0
+			},
+			inherit: null
+		},
 		arcana: 'Fool',
 		race: 'Foul',
 		level: 19,
@@ -11946,7 +14460,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 22
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {},
 			weak: [
 				'Elec',
 				'Light'
@@ -11963,7 +14478,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Lilim',
 		aliases: [],
-		inherit: 'Elec',
+		affinities: {
+			skillPotential: {
+				Phys: 0,
+				Fire: 0,
+				Ice: -3,
+				Elec: 3,
+				Force: 0,
+				Light: 0,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 2,
+				Recovery: 0,
+				Support: 0
+			},
+			inherit: null
+		},
 		arcana: 'Devil',
 		race: 'Night',
 		level: 32,
@@ -11998,7 +14528,11 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 36
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {
+				Sleep: 'Resist',
+				Charm: 'Null'
+			},
 			weak: [
 				'Ice'
 			],
@@ -12014,7 +14548,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Lilith',
 		aliases: [],
-		inherit: 'Elec',
+		affinities: {
+			skillPotential: {
+				Phys: 0,
+				Fire: 0,
+				Ice: 0,
+				Elec: 4,
+				Force: -5,
+				Light: 0,
+				Dark: 0,
+				Almighty: 2,
+				Ailment: 3,
+				Recovery: 0,
+				Support: 0
+			},
+			inherit: null
+		},
 		arcana: 'Moon',
 		race: 'Night',
 		level: 68,
@@ -12053,7 +14602,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 71
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {},
 			weak: [
 				'Force'
 			],
@@ -12072,7 +14622,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Loa',
 		aliases: [],
-		inherit: 'Ailment',
+		affinities: {
+			skillPotential: {
+				Phys: 0,
+				Fire: 0,
+				Ice: 0,
+				Elec: 0,
+				Force: 0,
+				Light: -3,
+				Dark: 3,
+				Almighty: 0,
+				Ailment: 4,
+				Recovery: 0,
+				Support: 0
+			},
+			inherit: null
+		},
 		arcana: 'Hermit',
 		race: 'Jaki',
 		level: 30,
@@ -12107,7 +14672,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 33
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {
+				Poison: 'Null'
+			},
 			weak: [
 				'Light'
 			],
@@ -12123,7 +14691,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Loki',
 		aliases: [],
-		inherit: 'Almighty',
+		affinities: {
+			skillPotential: {
+				Phys: 0,
+				Fire: 3,
+				Ice: 3,
+				Elec: 3,
+				Force: 3,
+				Light: -3,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 0,
+				Recovery: 0,
+				Support: 0
+			},
+			inherit: null
+		},
 		arcana: 'Fool',
 		race: 'Tyrant',
 		level: 56,
@@ -12162,7 +14745,11 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 59
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {
+				Poison: 'Weak',
+				Charm: 'Resist'
+			},
 			weak: [
 				'Light'
 			],
@@ -12183,7 +14770,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		aliases: [
 			'Loki'
 		],
-		inherit: 'Dark',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Dark'
+		},
 		arcana: 'Justice',
 		race: 'Persona',
 		level: 75,
@@ -12222,7 +14812,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 59
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: null,
 			weak: [
 				'Light'
 			],
@@ -12236,12 +14827,30 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'p5'
+		game: 'p5',
+		user: 'Goro Akechi',
+		stage: 2,
+		evoSkill: null
 	},
 	{
 		name: 'Loup-garou',
 		aliases: [],
-		inherit: 'Phys',
+		affinities: {
+			skillPotential: {
+				Phys: 3,
+				Fire: 2,
+				Ice: 0,
+				Elec: 2,
+				Force: 0,
+				Light: -4,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 0,
+				Recovery: 0,
+				Support: 0
+			},
+			inherit: null
+		},
 		arcana: null,
 		race: 'Beast',
 		level: 54,
@@ -12280,7 +14889,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 57
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {},
 			weak: [
 				'Ice',
 				'Light'
@@ -12299,7 +14909,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Lucia',
 		aliases: [],
-		inherit: 'Almighty',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Almighty'
+		},
 		arcana: 'Priestess',
 		race: 'Persona',
 		level: 17,
@@ -12330,19 +14943,26 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 41
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: null,
 			weak: [],
 			resist: [],
 			null: [],
 			drain: [],
 			repel: []
 		},
-		game: 'p3'
+		game: 'p3',
+		user: 'Fuuka Yamagishi',
+		stage: 1,
+		evoSkill: null
 	},
 	{
 		name: 'Lucifer',
 		aliases: [],
-		inherit: 'Almighty',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Almighty'
+		},
 		arcana: 'Star',
 		race: 'Devil',
 		level: 93,
@@ -12389,7 +15009,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 99
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: null,
 			weak: [
 				'Light'
 			],
@@ -12413,7 +15034,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Lucy',
 		aliases: [],
-		inherit: 'Psy',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Psy'
+		},
 		arcana: 'Empress',
 		race: 'Persona',
 		level: 36,
@@ -12504,7 +15128,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 75
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: null,
 			weak: [
 				'Nuke'
 			],
@@ -12517,12 +15142,30 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'p5'
+		game: 'p5',
+		user: 'Haru Okumura',
+		stage: 3,
+		evoSkill: 'Life Wall'
 	},
 	{
 		name: 'Macabre',
 		aliases: [],
-		inherit: 'Ailment',
+		affinities: {
+			skillPotential: {
+				Phys: 1,
+				Fire: 0,
+				Ice: 0,
+				Elec: 0,
+				Force: 0,
+				Light: -3,
+				Dark: 1,
+				Almighty: 0,
+				Ailment: 5,
+				Recovery: 0,
+				Support: 0
+			},
+			inherit: null
+		},
 		arcana: 'Hanged',
 		race: 'Jaki',
 		level: 43,
@@ -12561,7 +15204,11 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 46
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {
+				Confuse: 'Resist',
+				Poison: 'Null'
+			},
 			weak: [
 				'Light'
 			],
@@ -12577,7 +15224,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Mada',
 		aliases: [],
-		inherit: 'Fire',
+		affinities: {
+			skillPotential: {
+				Phys: 3,
+				Fire: 5,
+				Ice: -4,
+				Elec: 0,
+				Force: 0,
+				Light: 0,
+				Dark: 0,
+				Almighty: -3,
+				Ailment: 0,
+				Recovery: 3,
+				Support: 2
+			},
+			inherit: null
+		},
 		arcana: 'Tower',
 		race: 'Vile',
 		level: 83,
@@ -12620,7 +15282,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 86
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {},
 			weak: [
 				'Ice'
 			],
@@ -12638,7 +15301,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Magatsu-Izanagi',
 		aliases: [],
-		inherit: 'Almighty',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Almighty'
+		},
 		arcana: 'Tower',
 		race: 'Persona',
 		level: 44,
@@ -12681,7 +15347,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 50
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: null,
 			weak: [
 				'Nuke'
 			],
@@ -12695,12 +15362,18 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'p5'
+		game: 'p5',
+		user: 'Tohru Adachi',
+		stage: 2,
+		evoSkill: null
 	},
 	{
 		name: 'Magatsu-Izanagi Picaro',
 		aliases: [],
-		inherit: 'Almighty',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Almighty'
+		},
 		arcana: 'Tower',
 		race: 'Picaro',
 		level: 48,
@@ -12743,7 +15416,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 54
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: null,
 			weak: [
 				'Nuke'
 			],
@@ -12762,7 +15436,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Makami',
 		aliases: [],
-		inherit: 'Recovery',
+		affinities: {
+			skillPotential: {
+				Phys: 0,
+				Fire: 0,
+				Ice: 0,
+				Elec: 0,
+				Force: 0,
+				Light: 1,
+				Dark: 0,
+				Almighty: -2,
+				Ailment: -2,
+				Recovery: 3,
+				Support: 2
+			},
+			inherit: null
+		},
 		arcana: 'Temperance',
 		race: 'Avatar',
 		level: 21,
@@ -12797,7 +15486,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 23
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {
+				Confuse: 'Weak'
+			},
 			weak: [
 				'Dark'
 			],
@@ -12813,7 +15505,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Manananggal',
 		aliases: [],
-		inherit: 'Dark',
+		affinities: {
+			skillPotential: {
+				Phys: 0,
+				Fire: 0,
+				Ice: 0,
+				Elec: 0,
+				Force: 2,
+				Light: -2,
+				Dark: 3,
+				Almighty: 0,
+				Ailment: 2,
+				Recovery: 0,
+				Support: 0
+			},
+			inherit: null
+		},
 		arcana: null,
 		race: 'Femme',
 		level: 25,
@@ -12848,7 +15555,11 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 28
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {
+				Mirage: 'Resist',
+				Charm: 'Resist'
+			},
 			weak: [
 				'Light'
 			],
@@ -12864,7 +15575,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Mandrake',
 		aliases: [],
-		inherit: 'Ailment',
+		affinities: {
+			skillPotential: {
+				Phys: 0,
+				Fire: -3,
+				Ice: 0,
+				Elec: 1,
+				Force: 0,
+				Light: 0,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 3,
+				Recovery: 1,
+				Support: 0
+			},
+			inherit: null
+		},
 		arcana: 'Death',
 		race: 'Yoma',
 		level: 6,
@@ -12891,7 +15617,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 9
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {
+				Mirage: 'Weak'
+			},
 			weak: [
 				'Fire'
 			],
@@ -12907,7 +15636,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Mara',
 		aliases: [],
-		inherit: 'Phys',
+		affinities: {
+			skillPotential: {
+				Phys: 5,
+				Fire: 0,
+				Ice: -6,
+				Elec: 0,
+				Force: 0,
+				Light: 0,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 3,
+				Recovery: 0,
+				Support: 0
+			},
+			inherit: null
+		},
 		arcana: 'Tower',
 		race: 'Tyrant',
 		level: 67,
@@ -12950,7 +15694,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 70
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {
+				Charm: 'Null'
+			},
 			weak: [
 				'Ice'
 			],
@@ -12969,7 +15716,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Maria',
 		aliases: [],
-		inherit: 'Recovery',
+		affinities: {
+			skillPotential: {
+				Phys: -3,
+				Fire: 0,
+				Ice: 0,
+				Elec: -5,
+				Force: 4,
+				Light: 4,
+				Dark: -5,
+				Almighty: 0,
+				Ailment: 0,
+				Recovery: 4,
+				Support: 2
+			},
+			inherit: null
+		},
 		arcana: 'Faith',
 		race: 'Megami',
 		level: 83,
@@ -13012,7 +15774,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 86
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {
+				Sleep: 'Null'
+			},
 			weak: [
 				'Elec'
 			],
@@ -13032,7 +15797,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Matador',
 		aliases: [],
-		inherit: 'Phys',
+		affinities: {
+			skillPotential: {
+				Phys: 4,
+				Fire: 0,
+				Ice: 0,
+				Elec: -5,
+				Force: 3,
+				Light: 0,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 0,
+				Recovery: 0,
+				Support: 1
+			},
+			inherit: null
+		},
 		arcana: 'Death',
 		race: 'Fiend',
 		level: 24,
@@ -13071,7 +15851,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 27
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {
+				Sleep: 'Resist',
+				Mirage: 'Resist',
+				Seal: 'Resist'
+			},
 			weak: [
 				'Elec'
 			],
@@ -13090,7 +15875,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Melchizedek',
 		aliases: [],
-		inherit: 'Light',
+		affinities: {
+			skillPotential: {
+				Phys: 2,
+				Fire: 0,
+				Ice: 0,
+				Elec: 0,
+				Force: -6,
+				Light: 5,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 0,
+				Recovery: 0,
+				Support: 2
+			},
+			inherit: null
+		},
 		arcana: 'Justice',
 		race: 'Herald',
 		level: 60,
@@ -13129,7 +15929,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 63
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {},
 			weak: [
 				'Force'
 			],
@@ -13147,7 +15948,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Mephisto',
 		aliases: [],
-		inherit: 'Ailment',
+		affinities: {
+			skillPotential: {
+				Phys: 7,
+				Fire: 7,
+				Ice: 0,
+				Elec: 0,
+				Force: 0,
+				Light: -6,
+				Dark: 9,
+				Almighty: 0,
+				Ailment: 9,
+				Recovery: 0,
+				Support: 4
+			},
+			inherit: null
+		},
 		arcana: null,
 		race: 'Tyrant',
 		level: 79,
@@ -13190,7 +16006,15 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 82
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {
+				Sleep: 'Resist',
+				Mirage: 'Resist',
+				Poison: 'Resist',
+				Confuse: 'Resist',
+				Charm: 'Resist',
+				Seal: 'Resist'
+			},
 			weak: [
 				'Light'
 			],
@@ -13208,7 +16032,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Mercurius',
 		aliases: [],
-		inherit: 'Wind',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Wind'
+		},
 		arcana: 'Magician',
 		race: 'Persona',
 		level: 1,
@@ -13319,7 +16146,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 75
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: null,
 			weak: [
 				'Elec'
 			],
@@ -13332,12 +16160,30 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'p5'
+		game: 'p5',
+		user: 'Morgana',
+		stage: 2,
+		evoSkill: 'Evade Elec'
 	},
 	{
 		name: 'Mermaid',
 		aliases: [],
-		inherit: 'Ice',
+		affinities: {
+			skillPotential: {
+				Phys: -2,
+				Fire: -2,
+				Ice: 3,
+				Elec: -4,
+				Force: 0,
+				Light: 0,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 3,
+				Recovery: 0,
+				Support: 2
+			},
+			inherit: null
+		},
 		arcana: null,
 		race: 'Femme',
 		level: 12,
@@ -13368,7 +16214,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 15
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {
+				Sleep: 'Resist'
+			},
 			weak: [
 				'Fire',
 				'Elec'
@@ -13385,7 +16234,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Messiah',
 		aliases: [],
-		inherit: 'Almighty',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Almighty'
+		},
 		arcana: 'Judgement',
 		race: 'Persona',
 		level: 81,
@@ -13432,7 +16284,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 87
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: null,
 			weak: [
 				'Dark'
 			],
@@ -13450,12 +16303,18 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				'Light'
 			]
 		},
-		game: 'p5'
+		game: 'p5',
+		user: 'P3 Protagonist',
+		stage: 2,
+		evoSkill: null
 	},
 	{
 		name: 'Messiah Picaro',
 		aliases: [],
-		inherit: 'Almighty',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Almighty'
+		},
 		arcana: 'Judgement',
 		race: 'Picaro',
 		level: 90,
@@ -13502,7 +16361,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 96
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: null,
 			weak: [
 				'Dark'
 			],
@@ -13525,7 +16385,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Metatron',
 		aliases: [],
-		inherit: 'Almighty',
+		affinities: {
+			skillPotential: {
+				Phys: 0,
+				Fire: 0,
+				Ice: 0,
+				Elec: 0,
+				Force: 0,
+				Light: 5,
+				Dark: 0,
+				Almighty: 6,
+				Ailment: -4,
+				Recovery: -4,
+				Support: 2
+			},
+			inherit: null
+		},
 		arcana: 'Justice',
 		race: 'Herald',
 		level: 95,
@@ -13568,7 +16443,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 98
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {},
 			weak: [],
 			resist: [
 				'Fire',
@@ -13587,7 +16463,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Michael',
 		aliases: [],
-		inherit: 'Fire',
+		affinities: {
+			skillPotential: {
+				Phys: 2,
+				Fire: 5,
+				Ice: 0,
+				Elec: 0,
+				Force: -4,
+				Light: 3,
+				Dark: -5,
+				Almighty: 4,
+				Ailment: 0,
+				Recovery: 0,
+				Support: 0
+			},
+			inherit: null
+		},
 		arcana: 'Judgement',
 		race: 'Herald',
 		level: 90,
@@ -13630,7 +16521,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 93
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {},
 			weak: [
 				'Force'
 			],
@@ -13648,7 +16540,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Milady',
 		aliases: [],
-		inherit: 'Psy',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Psy'
+		},
 		arcana: 'Empress',
 		race: 'Persona',
 		level: 36,
@@ -13739,7 +16634,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 75
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: null,
 			weak: [
 				'Nuke'
 			],
@@ -13750,12 +16646,30 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'p5'
+		game: 'p5',
+		user: 'Haru Okumura',
+		stage: 1,
+		evoSkill: null
 	},
 	{
 		name: 'Mishaguji',
 		aliases: [],
-		inherit: 'Elec',
+		affinities: {
+			skillPotential: {
+				Phys: 0,
+				Fire: 0,
+				Ice: 0,
+				Elec: 3,
+				Force: -6,
+				Light: 0,
+				Dark: 2,
+				Almighty: 0,
+				Ailment: 0,
+				Recovery: 0,
+				Support: 1
+			},
+			inherit: null
+		},
 		arcana: 'Hierophant',
 		race: 'Vile',
 		level: 42,
@@ -13794,7 +16708,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 45
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {
+				Sleep: 'Resist'
+			},
 			weak: [
 				'Force',
 				'Light'
@@ -13812,7 +16729,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Mithras',
 		aliases: [],
-		inherit: 'Fire',
+		affinities: {
+			skillPotential: {
+				Phys: 1,
+				Fire: 5,
+				Ice: -4,
+				Elec: 0,
+				Force: 0,
+				Light: 3,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 0,
+				Recovery: 0,
+				Support: 1
+			},
+			inherit: null
+		},
 		arcana: 'Sun',
 		race: 'Tyrant',
 		level: 77,
@@ -13855,7 +16787,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 80
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {},
 			weak: [
 				'Ice'
 			],
@@ -13875,7 +16808,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		aliases: [
 			'Mithra'
 		],
-		inherit: 'Almighty',
+		affinities: {
+			skillPotential: {
+				Phys: 0,
+				Fire: 0,
+				Ice: -5,
+				Elec: 0,
+				Force: 0,
+				Light: 3,
+				Dark: 3,
+				Almighty: 2,
+				Ailment: 0,
+				Recovery: 3,
+				Support: 0
+			},
+			inherit: null
+		},
 		arcana: 'Temperance',
 		race: 'Deity',
 		level: 65,
@@ -13914,7 +16862,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 68
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {},
 			weak: [
 				'Ice'
 			],
@@ -13932,7 +16881,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Mokoi',
 		aliases: [],
-		inherit: 'Ailment',
+		affinities: {
+			skillPotential: {
+				Phys: 0,
+				Fire: 0,
+				Ice: 0,
+				Elec: 2,
+				Force: -3,
+				Light: 0,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 2,
+				Recovery: 0,
+				Support: -1
+			},
+			inherit: null
+		},
 		arcana: 'Death',
 		race: 'Night',
 		level: 16,
@@ -13963,7 +16927,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 18
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {},
 			weak: [
 				'Force'
 			],
@@ -13979,7 +16944,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Moloch',
 		aliases: [],
-		inherit: 'Fire',
+		affinities: {
+			skillPotential: {
+				Phys: 2,
+				Fire: 4,
+				Ice: -5,
+				Elec: 0,
+				Force: 0,
+				Light: 0,
+				Dark: 2,
+				Almighty: 0,
+				Ailment: 0,
+				Recovery: 0,
+				Support: 0
+			},
+			inherit: null
+		},
 		arcana: 'Hanged',
 		race: 'Tyrant',
 		level: 51,
@@ -14018,7 +16998,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 54
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {},
 			weak: [
 				'Ice'
 			],
@@ -14037,7 +17018,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Mot',
 		aliases: [],
-		inherit: 'Force',
+		affinities: {
+			skillPotential: {
+				Phys: 0,
+				Fire: 0,
+				Ice: 0,
+				Elec: -6,
+				Force: 4,
+				Light: 0,
+				Dark: 4,
+				Almighty: 4,
+				Ailment: 0,
+				Recovery: 0,
+				Support: 0
+			},
+			inherit: null
+		},
 		arcana: 'Death',
 		race: 'Fury',
 		level: 63,
@@ -14076,7 +17072,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 66
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {},
 			weak: [
 				'Elec'
 			],
@@ -14094,7 +17091,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Mother Harlot',
 		aliases: [],
-		inherit: 'Almighty',
+		affinities: {
+			skillPotential: {
+				Phys: 0,
+				Fire: 4,
+				Ice: 0,
+				Elec: 4,
+				Force: -6,
+				Light: 0,
+				Dark: 0,
+				Almighty: 6,
+				Ailment: 3,
+				Recovery: 0,
+				Support: 3
+			},
+			inherit: null
+		},
 		arcana: 'Empress',
 		race: 'Fiend',
 		level: 64,
@@ -14137,7 +17149,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 67
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {
+				Charm: 'Null'
+			},
 			weak: [
 				'Force'
 			],
@@ -14159,7 +17174,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Mothman',
 		aliases: [],
-		inherit: 'Ailment',
+		affinities: {
+			skillPotential: {
+				Phys: 0,
+				Fire: 0,
+				Ice: 0,
+				Elec: 1,
+				Force: -3,
+				Light: 0,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 4,
+				Recovery: 0,
+				Support: 0
+			},
+			inherit: null
+		},
 		arcana: 'Moon',
 		race: 'Wilder',
 		level: 29,
@@ -14194,7 +17224,11 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 32
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {
+				Mirage: 'Resist',
+				Poison: 'Resist'
+			},
 			weak: [
 				'Force'
 			],
@@ -14212,7 +17246,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		aliases: [
 			'Moh Shuvuu'
 		],
-		inherit: 'Force',
+		affinities: {
+			skillPotential: {
+				Phys: 0,
+				Fire: -3,
+				Ice: 0,
+				Elec: 0,
+				Force: 3,
+				Light: 0,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 0,
+				Recovery: 1,
+				Support: 2
+			},
+			inherit: null
+		},
 		arcana: 'Priestess',
 		race: 'Raptor',
 		level: 38,
@@ -14251,7 +17300,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 41
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {},
 			weak: [
 				'Fire'
 			],
@@ -14267,7 +17317,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Naga',
 		aliases: [],
-		inherit: 'Phys',
+		affinities: {
+			skillPotential: {
+				Phys: 2,
+				Fire: -3,
+				Ice: 0,
+				Elec: 1,
+				Force: 0,
+				Light: 0,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 0,
+				Recovery: 0,
+				Support: 1
+			},
+			inherit: null
+		},
 		arcana: 'Hermit',
 		race: 'Snake',
 		level: 27,
@@ -14302,7 +17367,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 30
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {
+				Seal: 'Null'
+			},
 			weak: [
 				'Fire',
 				'Force'
@@ -14319,7 +17387,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Narcissus',
 		aliases: [],
-		inherit: 'Force',
+		affinities: {
+			skillPotential: {
+				Phys: -2,
+				Fire: -3,
+				Ice: 0,
+				Elec: 0,
+				Force: 4,
+				Light: 0,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 3,
+				Recovery: 0,
+				Support: 0
+			},
+			inherit: null
+		},
 		arcana: 'Lovers',
 		race: 'Jirae',
 		level: 38,
@@ -14358,7 +17441,11 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 41
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {
+				Confuse: 'Resist',
+				Charm: 'Null'
+			},
 			weak: [
 				'Fire'
 			],
@@ -14376,7 +17463,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		aliases: [
 			'Nezha'
 		],
-		inherit: 'Phys',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Phys'
+		},
 		arcana: 'Chariot',
 		race: 'Genma',
 		level: 6,
@@ -14419,7 +17509,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 10
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: null,
 			weak: [
 				'Elec'
 			],
@@ -14435,7 +17526,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Nebiros',
 		aliases: [],
-		inherit: 'Dark',
+		affinities: {
+			skillPotential: {
+				Phys: 0,
+				Fire: 0,
+				Ice: 0,
+				Elec: 0,
+				Force: -3,
+				Light: -3,
+				Dark: 4,
+				Almighty: 2,
+				Ailment: 0,
+				Recovery: 0,
+				Support: 0
+			},
+			inherit: null
+		},
 		arcana: 'Devil',
 		race: 'Fallen',
 		level: 67,
@@ -14470,7 +17576,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 70
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {},
 			weak: [
 				'Force',
 				'Light'
@@ -14487,7 +17594,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Necronomicon',
 		aliases: [],
-		inherit: 'Almighty',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Almighty'
+		},
 		arcana: 'Hermit',
 		race: 'Persona',
 		level: 31,
@@ -14522,19 +17632,38 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 67
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: null,
 			weak: [],
 			resist: [],
 			null: [],
 			drain: [],
 			repel: []
 		},
-		game: 'p5'
+		game: 'p5',
+		user: 'Futaba Sakura',
+		stage: 1,
+		evoSkill: null
 	},
 	{
 		name: 'Nekomata',
 		aliases: [],
-		inherit: 'Phys',
+		affinities: {
+			skillPotential: {
+				Phys: 3,
+				Fire: 0,
+				Ice: -5,
+				Elec: 0,
+				Force: 2,
+				Light: 0,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 2,
+				Recovery: 0,
+				Support: 0
+			},
+			inherit: null
+		},
 		arcana: 'Magician',
 		race: 'Beast',
 		level: 34,
@@ -14569,7 +17698,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 37
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {
+				Charm: 'Resist'
+			},
 			weak: [
 				'Ice',
 				'Elec'
@@ -14588,7 +17720,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Neko Shogun',
 		aliases: [],
-		inherit: 'Recovery',
+		affinities: {
+			skillPotential: {
+				Phys: 0,
+				Fire: -1,
+				Ice: 0,
+				Elec: 0,
+				Force: -3,
+				Light: 0,
+				Dark: 0,
+				Almighty: -4,
+				Ailment: 0,
+				Recovery: 3,
+				Support: 3
+			},
+			inherit: null
+		},
 		arcana: 'Star',
 		race: 'Wargod',
 		level: 5,
@@ -14619,7 +17766,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 8
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {
+				Mirage: 'Resist',
+				Poison: 'Resist',
+				Confuse: 'Resist'
+			},
 			weak: [
 				'Fire',
 				'Force'
@@ -14638,7 +17790,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Nemesis',
 		aliases: [],
-		inherit: 'Light',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Light'
+		},
 		arcana: 'Justice',
 		race: 'Persona',
 		level: 36,
@@ -14681,7 +17836,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 42
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: null,
 			weak: [
 				'Dark'
 			],
@@ -14692,12 +17848,18 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'p3'
+		game: 'p3',
+		user: 'Ken Amada',
+		stage: 1,
+		evoSkill: null
 	},
 	{
 		name: 'Nigi Mitama',
 		aliases: [],
-		inherit: 'Recovery',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Recovery'
+		},
 		arcana: 'Councillor',
 		race: 'Mitama',
 		level: 22,
@@ -14736,7 +17898,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 26
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: null,
 			weak: [
 				'Elec'
 			],
@@ -14753,7 +17916,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Norn',
 		aliases: [],
-		inherit: 'Recovery',
+		affinities: {
+			skillPotential: {
+				Phys: 0,
+				Fire: 0,
+				Ice: 0,
+				Elec: -4,
+				Force: 0,
+				Light: 1,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 0,
+				Recovery: 4,
+				Support: 3
+			},
+			inherit: null
+		},
 		arcana: 'Fortune',
 		race: 'Megami',
 		level: 67,
@@ -14788,7 +17966,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 70
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {
+				Seal: 'Resist'
+			},
 			weak: [
 				'Elec'
 			],
@@ -14806,7 +17987,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Nue',
 		aliases: [],
-		inherit: 'Elec',
+		affinities: {
+			skillPotential: {
+				Phys: 1,
+				Fire: 0,
+				Ice: 0,
+				Elec: 4,
+				Force: -3,
+				Light: 0,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 0,
+				Recovery: 0,
+				Support: -2
+			},
+			inherit: null
+		},
 		arcana: 'Death',
 		race: 'Wilder',
 		level: 49,
@@ -14845,7 +18041,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 52
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {
+				Charm: 'Weak'
+			},
 			weak: [
 				'Force'
 			],
@@ -14861,7 +18060,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Nuwa',
 		aliases: [],
-		inherit: 'Force',
+		affinities: {
+			skillPotential: {
+				Phys: 2,
+				Fire: -5,
+				Ice: 0,
+				Elec: 0,
+				Force: 4,
+				Light: 0,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 0,
+				Recovery: 2,
+				Support: 0
+			},
+			inherit: null
+		},
 		arcana: null,
 		race: 'Lady',
 		level: 80,
@@ -14900,7 +18114,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 83
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {
+				Charm: 'Null'
+			},
 			weak: [
 				'Fire'
 			],
@@ -14921,7 +18138,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		aliases: [
 			'Nuwa'
 		],
-		inherit: 'Force',
+		affinities: {
+			skillPotential: {
+				Phys: 0,
+				Fire: -6,
+				Ice: 2,
+				Elec: 3,
+				Force: 7,
+				Light: -3,
+				Dark: -3,
+				Almighty: 0,
+				Ailment: 0,
+				Recovery: 3,
+				Support: 0
+			},
+			inherit: null
+		},
 		arcana: null,
 		race: 'Snake',
 		level: 89,
@@ -14964,7 +18196,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 92
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {
+				Charm: 'Null'
+			},
 			weak: [
 				'Fire'
 			],
@@ -14983,7 +18218,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Obariyon',
 		aliases: [],
-		inherit: 'Phys',
+		affinities: {
+			skillPotential: {
+				Phys: 3,
+				Fire: 0,
+				Ice: -3,
+				Elec: 0,
+				Force: 0,
+				Light: 0,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 0,
+				Recovery: 1,
+				Support: 1
+			},
+			inherit: null
+		},
 		arcana: 'Fool',
 		race: 'Haunt',
 		level: 12,
@@ -15014,7 +18264,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 14
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {},
 			weak: [
 				'Ice',
 				'Light'
@@ -15032,7 +18283,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Oberon',
 		aliases: [],
-		inherit: 'Force',
+		affinities: {
+			skillPotential: {
+				Phys: 0,
+				Fire: 0,
+				Ice: 0,
+				Elec: -4,
+				Force: 3,
+				Light: 0,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 0,
+				Recovery: 2,
+				Support: 2
+			},
+			inherit: null
+		},
 		arcana: 'Emperor',
 		race: 'Fairy',
 		level: 47,
@@ -15071,7 +18337,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 50
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {
+				Charm: 'Weak'
+			},
 			weak: [
 				'Elec'
 			],
@@ -15087,7 +18356,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Odin',
 		aliases: [],
-		inherit: 'Phys',
+		affinities: {
+			skillPotential: {
+				Phys: 6,
+				Fire: 0,
+				Ice: 0,
+				Elec: 4,
+				Force: -6,
+				Light: 0,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 0,
+				Recovery: 0,
+				Support: 1
+			},
+			inherit: null
+		},
 		arcana: 'Emperor',
 		race: 'Deity',
 		level: 77,
@@ -15130,7 +18414,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 80
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {
+				Mirage: 'Resist'
+			},
 			weak: [
 				'Force'
 			],
@@ -15149,7 +18436,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Okuninushi',
 		aliases: [],
-		inherit: 'Recovery',
+		affinities: {
+			skillPotential: {
+				Phys: 2,
+				Fire: 0,
+				Ice: -5,
+				Elec: 0,
+				Force: 0,
+				Light: 2,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 0,
+				Recovery: 4,
+				Support: 0
+			},
+			inherit: null
+		},
 		arcana: 'Faith',
 		race: 'Kunitsu',
 		level: 55,
@@ -15188,7 +18490,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 58
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {},
 			weak: [
 				'Ice'
 			],
@@ -15205,7 +18508,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Omoikane',
 		aliases: [],
-		inherit: 'Elec',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Elec'
+		},
 		arcana: 'Hierophant',
 		race: 'Amatsu',
 		level: 7,
@@ -15252,7 +18558,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 12
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: null,
 			weak: [
 				'Ice'
 			],
@@ -15268,7 +18575,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Ongyo-Ki',
 		aliases: [],
-		inherit: 'Phys',
+		affinities: {
+			skillPotential: {
+				Phys: 5,
+				Fire: 0,
+				Ice: 0,
+				Elec: 0,
+				Force: 0,
+				Light: -4,
+				Dark: 0,
+				Almighty: 3,
+				Ailment: 4,
+				Recovery: 0,
+				Support: 0
+			},
+			inherit: null
+		},
 		arcana: 'Hermit',
 		race: 'Brute',
 		level: 78,
@@ -15311,7 +18633,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 81
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {},
 			weak: [
 				'Light'
 			],
@@ -15329,7 +18652,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Oni',
 		aliases: [],
-		inherit: 'Phys',
+		affinities: {
+			skillPotential: {
+				Phys: 3,
+				Fire: 0,
+				Ice: 0,
+				Elec: -2,
+				Force: 0,
+				Light: 0,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 0,
+				Recovery: -1,
+				Support: 0
+			},
+			inherit: null
+		},
 		arcana: 'Strength',
 		race: 'Brute',
 		level: 23,
@@ -15360,7 +18698,11 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 25
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {
+				Sleep: 'Weak',
+				Confuse: 'Weak'
+			},
 			weak: [
 				'Elec',
 				'Light'
@@ -15377,7 +18719,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Onmoraki',
 		aliases: [],
-		inherit: 'Fire',
+		affinities: {
+			skillPotential: {
+				Phys: 0,
+				Fire: 2,
+				Ice: -3,
+				Elec: 0,
+				Force: 0,
+				Light: 0,
+				Dark: 1,
+				Almighty: 0,
+				Ailment: 0,
+				Recovery: 0,
+				Support: 0
+			},
+			inherit: null
+		},
 		arcana: 'Moon',
 		race: 'Raptor',
 		level: 4,
@@ -15404,7 +18761,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 6
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {
+				Mirage: 'Weak'
+			},
 			weak: [
 				'Ice',
 				'Force'
@@ -15421,7 +18781,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Orichalcum',
 		aliases: [],
-		inherit: 'Support',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Support'
+		},
 		arcana: 'Faith',
 		race: 'Treasure',
 		level: 60,
@@ -15468,7 +18831,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 0
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: null,
 			weak: [
 				'Light'
 			],
@@ -15485,7 +18849,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Orlov',
 		aliases: [],
-		inherit: 'Support',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Support'
+		},
 		arcana: 'Strength',
 		race: 'Treasure',
 		level: 30,
@@ -15532,7 +18899,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 0
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: null,
 			weak: [
 				'Dark'
 			],
@@ -15549,7 +18917,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Orobas',
 		aliases: [],
-		inherit: 'Fire',
+		affinities: {
+			skillPotential: {
+				Phys: 1,
+				Fire: 3,
+				Ice: -4,
+				Elec: 0,
+				Force: 0,
+				Light: -2,
+				Dark: 2,
+				Almighty: 0,
+				Ailment: 0,
+				Recovery: 0,
+				Support: 1
+			},
+			inherit: null
+		},
 		arcana: 'Hierophant',
 		race: 'Beast',
 		level: 49,
@@ -15588,7 +18971,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 52
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {
+				Confuse: 'Null'
+			},
 			weak: [
 				'Ice'
 			],
@@ -15606,7 +18992,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Orpheus',
 		aliases: [],
-		inherit: 'Fire',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Fire'
+		},
 		arcana: 'Fool',
 		race: 'Persona',
 		level: 1,
@@ -15657,7 +19046,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 32
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: null,
 			weak: [
 				'Elec',
 				'Dark'
@@ -15669,14 +19059,20 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'p5'
+		game: 'p5',
+		user: 'P3 Protagonist',
+		stage: 1,
+		evoSkill: null
 	},
 	{
 		name: 'Orpheus F',
 		aliases: [
 			'F Orpheus'
 		],
-		inherit: 'Fire',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Fire'
+		},
 		arcana: 'Fool',
 		race: 'Persona',
 		level: 1,
@@ -15723,7 +19119,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 15
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: null,
 			weak: [
 				'Elec',
 				'Dark'
@@ -15735,7 +19132,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'p5'
+		game: 'p5',
+		user: 'P3 Protagonist',
+		stage: 1,
+		evoSkill: null
 	},
 	{
 		name: 'Orpheus F Picaro',
@@ -15743,7 +19143,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			'F Orpheus Picaro',
 			'Orpheus Picaro F'
 		],
-		inherit: 'Almighty',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Almighty'
+		},
 		arcana: 'Fool',
 		race: 'Picaro',
 		level: 13,
@@ -15786,7 +19189,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 0
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: null,
 			weak: [
 				'Elec',
 				'Dark'
@@ -15803,7 +19207,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Orpheus Picaro',
 		aliases: [],
-		inherit: 'Almighty',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Almighty'
+		},
 		arcana: 'Fool',
 		race: 'Picaro',
 		level: 20,
@@ -15846,7 +19253,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 35
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: null,
 			weak: [
 				'Elec',
 				'Dark'
@@ -15863,7 +19271,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Orpheus Telos',
 		aliases: [],
-		inherit: 'Almighty',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Almighty'
+		},
 		arcana: 'Fool',
 		race: 'Persona',
 		level: 90,
@@ -15882,7 +19293,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 0
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: null,
 			weak: [],
 			resist: [
 				'Phys',
@@ -15900,12 +19312,30 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'p5'
+		game: 'p5',
+		user: 'P3 Protagonist',
+		stage: 3,
+		evoSkill: null
 	},
 	{
 		name: 'Orthrus',
 		aliases: [],
-		inherit: 'Fire',
+		affinities: {
+			skillPotential: {
+				Phys: 3,
+				Fire: 3,
+				Ice: -5,
+				Elec: 0,
+				Force: 0,
+				Light: 0,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 0,
+				Recovery: -2,
+				Support: 1
+			},
+			inherit: null
+		},
 		arcana: 'Hanged',
 		race: 'Beast',
 		level: 42,
@@ -15944,7 +19374,11 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 45
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {
+				Poison: 'Weak',
+				Confuse: 'Resist'
+			},
 			weak: [
 				'Ice'
 			],
@@ -15962,7 +19396,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Ose',
 		aliases: [],
-		inherit: 'Ice',
+		affinities: {
+			skillPotential: {
+				Phys: 3,
+				Fire: 0,
+				Ice: 0,
+				Elec: 0,
+				Force: 0,
+				Light: 0,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: -3,
+				Recovery: 0,
+				Support: 3
+			},
+			inherit: null
+		},
 		arcana: 'Fool',
 		race: 'Fallen',
 		level: 44,
@@ -16001,7 +19450,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 47
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {
+				Charm: 'Weak'
+			},
 			weak: [
 				'Fire'
 			],
@@ -16020,7 +19472,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		aliases: [
 			'Ouyamatsumi'
 		],
-		inherit: 'Ice',
+		affinities: {
+			skillPotential: {
+				Phys: 2,
+				Fire: -6,
+				Ice: 5,
+				Elec: 0,
+				Force: 0,
+				Light: 0,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 0,
+				Recovery: 1,
+				Support: 4
+			},
+			inherit: null
+		},
 		arcana: 'Strength',
 		race: 'Kunitsu',
 		level: 40,
@@ -16055,7 +19522,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 43
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {
+				Mirage: 'Weak'
+			},
 			weak: [
 				'Fire'
 			],
@@ -16074,7 +19544,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Pabilsag',
 		aliases: [],
-		inherit: 'Phys',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Phys'
+		},
 		arcana: 'Emperor',
 		race: 'Holy',
 		level: 51,
@@ -16113,7 +19586,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 56
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: null,
 			weak: [
 				'Ice',
 				'Light'
@@ -16132,7 +19606,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Pale Rider',
 		aliases: [],
-		inherit: 'Ailment',
+		affinities: {
+			skillPotential: {
+				Phys: 4,
+				Fire: -5,
+				Ice: 3,
+				Elec: 0,
+				Force: 0,
+				Light: 0,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 7,
+				Recovery: 0,
+				Support: 2
+			},
+			inherit: null
+		},
 		arcana: 'Death',
 		race: 'Fiend',
 		level: 57,
@@ -16175,7 +19664,14 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 60
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {
+				Sleep: 'Resist',
+				Charm: 'Resist',
+				Seal: 'Resist',
+				Mirage: 'Null',
+				Poison: 'Null'
+			},
 			weak: [
 				'Fire'
 			],
@@ -16194,7 +19690,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Palladion',
 		aliases: [],
-		inherit: 'Recovery',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Recovery'
+		},
 		arcana: 'Chariot',
 		race: 'Persona',
 		level: 29,
@@ -16257,7 +19756,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 60
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: null,
 			weak: [
 				'Elec'
 			],
@@ -16270,12 +19770,18 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'p3'
+		game: 'p3',
+		user: 'Aigis',
+		stage: 1,
+		evoSkill: null
 	},
 	{
 		name: 'Pandora',
 		aliases: [],
-		inherit: 'Light',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Light'
+		},
 		arcana: 'Hope',
 		race: 'Persona',
 		level: 1,
@@ -16374,7 +19880,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 70
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: null,
 			weak: [
 				'Dark'
 			],
@@ -16385,12 +19892,30 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'p5'
+		game: 'p5',
+		user: 'Sophia',
+		stage: 2,
+		evoSkill: 'Mahamabarion'
 	},
 	{
 		name: 'Parvati',
 		aliases: [],
-		inherit: 'Recovery',
+		affinities: {
+			skillPotential: {
+				Phys: 0,
+				Fire: -3,
+				Ice: 0,
+				Elec: 0,
+				Force: 0,
+				Light: 2,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 0,
+				Recovery: 4,
+				Support: 3
+			},
+			inherit: null
+		},
 		arcana: 'Lovers',
 		race: 'Megami',
 		level: 35,
@@ -16429,7 +19954,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 38
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {
+				Confuse: 'Null'
+			},
 			weak: [
 				'Fire'
 			],
@@ -16446,7 +19974,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Pazuzu',
 		aliases: [],
-		inherit: 'Ailment',
+		affinities: {
+			skillPotential: {
+				Phys: 0,
+				Fire: 0,
+				Ice: -5,
+				Elec: 0,
+				Force: 3,
+				Light: 0,
+				Dark: 1,
+				Almighty: 0,
+				Ailment: 4,
+				Recovery: 0,
+				Support: 0
+			},
+			inherit: null
+		},
 		arcana: 'Devil',
 		race: 'Vile',
 		level: 52,
@@ -16489,7 +20032,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 55
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {
+				Confuse: 'Resist'
+			},
 			weak: [
 				'Ice'
 			],
@@ -16507,7 +20053,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Penthesilea',
 		aliases: [],
-		inherit: 'Ice',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Ice'
+		},
 		arcana: 'Empress',
 		race: 'Persona',
 		level: 18,
@@ -16574,7 +20123,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 55
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: null,
 			weak: [
 				'Fire'
 			],
@@ -16585,12 +20135,30 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'p3'
+		game: 'p3',
+		user: 'Mitsuru Kirijo',
+		stage: 1,
+		evoSkill: null
 	},
 	{
 		name: 'Pisaca',
 		aliases: [],
-		inherit: 'Dark',
+		affinities: {
+			skillPotential: {
+				Phys: 2,
+				Fire: -3,
+				Ice: 0,
+				Elec: 0,
+				Force: 0,
+				Light: 0,
+				Dark: 2,
+				Almighty: 0,
+				Ailment: 1,
+				Recovery: -2,
+				Support: 0
+			},
+			inherit: null
+		},
 		arcana: 'Death',
 		race: 'Haunt',
 		level: 31,
@@ -16629,7 +20197,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 34
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {},
 			weak: [
 				'Fire',
 				'Light'
@@ -16646,7 +20215,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Pithos',
 		aliases: [],
-		inherit: 'Light',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Light'
+		},
 		arcana: 'Hope',
 		race: 'Persona',
 		level: 1,
@@ -16725,7 +20297,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 48
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: null,
 			weak: [
 				'Dark'
 			],
@@ -16736,12 +20309,30 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'p5'
+		game: 'p5',
+		user: 'Sophia',
+		stage: 1,
+		evoSkill: null
 	},
 	{
 		name: 'Pixie',
 		aliases: [],
-		inherit: 'Recovery',
+		affinities: {
+			skillPotential: {
+				Phys: 0,
+				Fire: 0,
+				Ice: 0,
+				Elec: 0,
+				Force: 1,
+				Light: 0,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: -1,
+				Recovery: 1,
+				Support: 1
+			},
+			inherit: null
+		},
 		arcana: 'Lovers',
 		race: 'Fairy',
 		level: 2,
@@ -16772,7 +20363,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 4
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {
+				Confuse: 'Weak'
+			},
 			weak: [
 				'Dark'
 			],
@@ -16788,7 +20382,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Poltergeist',
 		aliases: [],
-		inherit: 'Elec',
+		affinities: {
+			skillPotential: {
+				Phys: 0,
+				Fire: 0,
+				Ice: 0,
+				Elec: 2,
+				Force: -1,
+				Light: -2,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 0,
+				Recovery: 0,
+				Support: 2
+			},
+			inherit: null
+		},
 		arcana: 'Devil',
 		race: 'Haunt',
 		level: 25,
@@ -16823,7 +20432,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 28
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {},
 			weak: [
 				'Force',
 				'Light'
@@ -16840,7 +20450,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Polydeuces',
 		aliases: [],
-		inherit: 'Elec',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Elec'
+		},
 		arcana: 'Emperor',
 		race: 'Persona',
 		level: 12,
@@ -16899,7 +20512,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 41
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: null,
 			weak: [
 				'Ice'
 			],
@@ -16910,12 +20524,30 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'p3'
+		game: 'p3',
+		user: 'Akihiko Sanada',
+		stage: 1,
+		evoSkill: null
 	},
 	{
 		name: 'Power',
 		aliases: [],
-		inherit: 'Light',
+		affinities: {
+			skillPotential: {
+				Phys: 3,
+				Fire: 0,
+				Ice: 0,
+				Elec: 0,
+				Force: 0,
+				Light: 3,
+				Dark: -6,
+				Almighty: 0,
+				Ailment: 0,
+				Recovery: 1,
+				Support: 0
+			},
+			inherit: null
+		},
 		arcana: 'Justice',
 		race: 'Divine',
 		level: 39,
@@ -16954,7 +20586,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 42
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {},
 			weak: [
 				'Force',
 				'Dark'
@@ -16973,7 +20606,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Preta',
 		aliases: [],
-		inherit: 'Dark',
+		affinities: {
+			skillPotential: {
+				Phys: 1,
+				Fire: 0,
+				Ice: 1,
+				Elec: 0,
+				Force: 0,
+				Light: -3,
+				Dark: 3,
+				Almighty: 0,
+				Ailment: 0,
+				Recovery: -1,
+				Support: 0
+			},
+			inherit: null
+		},
 		arcana: null,
 		race: 'Haunt',
 		level: 3,
@@ -17000,7 +20648,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 5
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {},
 			weak: [
 				'Fire',
 				'Force',
@@ -17018,7 +20667,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Principality',
 		aliases: [],
-		inherit: 'Light',
+		affinities: {
+			skillPotential: {
+				Phys: 0,
+				Fire: 0,
+				Ice: 0,
+				Elec: 0,
+				Force: 0,
+				Light: 4,
+				Dark: -5,
+				Almighty: 0,
+				Ailment: 0,
+				Recovery: 2,
+				Support: 1
+			},
+			inherit: null
+		},
 		arcana: 'Justice',
 		race: 'Divine',
 		level: 28,
@@ -17053,7 +20717,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 31
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {
+				Seal: 'Weak'
+			},
 			weak: [
 				'Dark'
 			],
@@ -17069,7 +20736,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Prometheus',
 		aliases: [],
-		inherit: 'Almighty',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Almighty'
+		},
 		arcana: 'Hermit',
 		race: 'Persona',
 		level: 31,
@@ -17104,19 +20774,26 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 67
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: null,
 			weak: [],
 			resist: [],
 			null: [],
 			drain: [],
 			repel: []
 		},
-		game: 'p5'
+		game: 'p5',
+		user: 'Futaba Sakura',
+		stage: 2,
+		evoSkill: 'Treasure Skimmer'
 	},
 	{
 		name: 'Psyche',
 		aliases: [],
-		inherit: 'Ice',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Ice'
+		},
 		arcana: 'Hierophant',
 		race: 'Persona',
 		level: 25,
@@ -17191,21 +20868,40 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 75
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: null,
 			weak: [],
 			resist: [],
 			null: [],
 			drain: [],
 			repel: []
 		},
-		game: 'p3'
+		game: 'p3',
+		user: 'Metis',
+		stage: 1,
+		evoSkill: null
 	},
 	{
 		name: 'Queen Mab',
 		aliases: [
 			'Queen Medb'
 		],
-		inherit: 'Fire',
+		affinities: {
+			skillPotential: {
+				Phys: 0,
+				Fire: 3,
+				Ice: 0,
+				Elec: -2,
+				Force: 2,
+				Light: 0,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 3,
+				Recovery: 0,
+				Support: 0
+			},
+			inherit: null
+		},
 		arcana: 'Magician',
 		race: 'Night',
 		level: 56,
@@ -17244,7 +20940,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 59
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {
+				Poison: 'Weak',
+				Sleep: 'Resist',
+				Charm: 'Resist'
+			},
 			weak: [
 				'Elec'
 			],
@@ -17260,7 +20961,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Queen\'s Necklace',
 		aliases: [],
-		inherit: 'Support',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Support'
+		},
 		arcana: 'Empress',
 		race: 'Treasure',
 		level: 15,
@@ -17307,7 +21011,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 0
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: null,
 			weak: [
 				'Psy'
 			],
@@ -17324,7 +21029,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Quetzalcoatl',
 		aliases: [],
-		inherit: 'Fire',
+		affinities: {
+			skillPotential: {
+				Phys: 0,
+				Fire: 4,
+				Ice: 0,
+				Elec: -6,
+				Force: 4,
+				Light: 0,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 0,
+				Recovery: 0,
+				Support: 2
+			},
+			inherit: null
+		},
 		arcana: 'Sun',
 		race: 'Dragon',
 		level: 34,
@@ -17363,7 +21083,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 37
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {},
 			weak: [
 				'Elec'
 			],
@@ -17381,7 +21102,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		aliases: [
 			'Naga Raja'
 		],
-		inherit: 'Elec',
+		affinities: {
+			skillPotential: {
+				Phys: 3,
+				Fire: -3,
+				Ice: 1,
+				Elec: 3,
+				Force: -4,
+				Light: 0,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 0,
+				Recovery: 0,
+				Support: -1
+			},
+			inherit: null
+		},
 		arcana: 'Temperance',
 		race: 'Snake',
 		level: 40,
@@ -17420,7 +21156,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 43
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {},
 			weak: [
 				'Fire',
 				'Force'
@@ -17439,7 +21176,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Rakshasa',
 		aliases: [],
-		inherit: 'Phys',
+		affinities: {
+			skillPotential: {
+				Phys: 2,
+				Fire: 0,
+				Ice: 0,
+				Elec: 0,
+				Force: 0,
+				Light: 0,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 0,
+				Recovery: -1,
+				Support: 1
+			},
+			inherit: null
+		},
 		arcana: 'Strength',
 		race: 'Jaki',
 		level: 20,
@@ -17470,7 +21222,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 22
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {
+				Sleep: 'Weak'
+			},
 			weak: [
 				'Ice'
 			],
@@ -17487,7 +21242,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Rangda',
 		aliases: [],
-		inherit: 'Force',
+		affinities: {
+			skillPotential: {
+				Phys: 3,
+				Fire: 0,
+				Ice: 0,
+				Elec: -5,
+				Force: 3,
+				Light: -3,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 0,
+				Recovery: 1,
+				Support: 0
+			},
+			inherit: null
+		},
 		arcana: 'Magician',
 		race: 'Femme',
 		level: 70,
@@ -17526,7 +21296,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 73
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {
+				Sleep: 'Weak'
+			},
 			weak: [
 				'Fire',
 				'Elec',
@@ -17544,7 +21317,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Raoul',
 		aliases: [],
-		inherit: 'Almighty',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Almighty'
+		},
 		arcana: 'Fool',
 		race: 'Persona',
 		level: 76,
@@ -17591,7 +21367,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 82
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: null,
 			weak: [
 				'Light'
 			],
@@ -17602,12 +21379,30 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'p5'
+		game: 'p5',
+		user: 'P5 Protagonist',
+		stage: 3,
+		evoSkill: null
 	},
 	{
 		name: 'Raphael',
 		aliases: [],
-		inherit: 'Force',
+		affinities: {
+			skillPotential: {
+				Phys: 0,
+				Fire: -4,
+				Ice: 0,
+				Elec: 0,
+				Force: 5,
+				Light: 3,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 2,
+				Recovery: 3,
+				Support: -2
+			},
+			inherit: null
+		},
 		arcana: 'Lovers',
 		race: 'Herald',
 		level: 84,
@@ -17650,7 +21445,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 87
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {},
 			weak: [
 				'Fire'
 			],
@@ -17669,7 +21465,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Red Rider',
 		aliases: [],
-		inherit: 'Phys',
+		affinities: {
+			skillPotential: {
+				Phys: 6,
+				Fire: 0,
+				Ice: -5,
+				Elec: 4,
+				Force: 4,
+				Light: 0,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 0,
+				Recovery: 0,
+				Support: 2
+			},
+			inherit: null
+		},
 		arcana: 'Tower',
 		race: 'Fiend',
 		level: 47,
@@ -17712,7 +21523,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 50
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {},
 			weak: [
 				'Ice'
 			],
@@ -17733,7 +21545,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Regent',
 		aliases: [],
-		inherit: 'Support',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Support'
+		},
 		arcana: 'Emperor',
 		race: 'Treasure',
 		level: 10,
@@ -17780,7 +21595,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 0
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: null,
 			weak: [
 				'Nuke'
 			],
@@ -17797,7 +21613,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Robin Hood',
 		aliases: [],
-		inherit: 'Light',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Light'
+		},
 		arcana: 'Justice',
 		race: 'Persona',
 		level: 45,
@@ -17864,7 +21683,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 70
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: null,
 			weak: [
 				'Dark'
 			],
@@ -17875,14 +21695,20 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'p5'
+		game: 'p5',
+		user: 'Goro Akechi',
+		stage: 1,
+		evoSkill: null
 	},
 	{
 		name: 'Rokuten Maoh',
 		aliases: [
 			'Rokuten Maou'
 		],
-		inherit: 'Elec',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Elec'
+		},
 		arcana: 'Emperor',
 		race: 'Persona',
 		level: 25,
@@ -17965,7 +21791,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 75
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: null,
 			weak: [
 				'Wind'
 			],
@@ -17976,12 +21803,18 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'p4'
+		game: 'p4',
+		user: 'Kanji Tatsumi',
+		stage: 2,
+		evoSkill: null
 	},
 	{
 		name: 'Saki Mitama',
 		aliases: [],
-		inherit: 'Recovery',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Recovery'
+		},
 		arcana: 'Lovers',
 		race: 'Mitama',
 		level: 6,
@@ -18020,7 +21853,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 10
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: null,
 			weak: [
 				'Wind'
 			],
@@ -18036,7 +21870,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Sandalphon',
 		aliases: [],
-		inherit: 'Light',
+		affinities: {
+			skillPotential: {
+				Phys: 0,
+				Fire: 0,
+				Ice: 0,
+				Elec: 3,
+				Force: -4,
+				Light: 5,
+				Dark: 0,
+				Almighty: 3,
+				Ailment: -5,
+				Recovery: 0,
+				Support: 0
+			},
+			inherit: null
+		},
 		arcana: 'Moon',
 		race: 'Herald',
 		level: 88,
@@ -18079,7 +21928,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 91
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {},
 			weak: [
 				'Force'
 			],
@@ -18099,7 +21949,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Sandman',
 		aliases: [],
-		inherit: 'Ailment',
+		affinities: {
+			skillPotential: {
+				Phys: 1,
+				Fire: 0,
+				Ice: 0,
+				Elec: -3,
+				Force: 1,
+				Light: 0,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 3,
+				Recovery: 0,
+				Support: -1
+			},
+			inherit: null
+		},
 		arcana: 'Magician',
 		race: 'Night',
 		level: 8,
@@ -18130,7 +21995,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 11
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {},
 			weak: [
 				'Elec'
 			],
@@ -18146,7 +22012,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Sarasvati',
 		aliases: [],
-		inherit: 'Ice',
+		affinities: {
+			skillPotential: {
+				Phys: 0,
+				Fire: -4,
+				Ice: 3,
+				Elec: 0,
+				Force: 0,
+				Light: 0,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 2,
+				Recovery: 0,
+				Support: 2
+			},
+			inherit: null
+		},
 		arcana: 'Priestess',
 		race: 'Megami',
 		level: 47,
@@ -18185,7 +22066,11 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 50
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {
+				Confuse: 'Resist',
+				Charm: 'Null'
+			},
 			weak: [
 				'Fire',
 				'Dark'
@@ -18202,7 +22087,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Satan',
 		aliases: [],
-		inherit: 'Ice',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Ice'
+		},
 		arcana: 'Judgement',
 		race: 'Godly',
 		level: 92,
@@ -18249,7 +22137,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 98
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: null,
 			weak: [],
 			resist: [
 				'Gun'
@@ -18266,7 +22155,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Satanael',
 		aliases: [],
-		inherit: 'Almighty',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Almighty'
+		},
 		arcana: 'Fool',
 		race: 'Persona',
 		level: 95,
@@ -18313,7 +22205,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 99
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: null,
 			weak: [],
 			resist: [
 				'Phys',
@@ -18333,12 +22226,30 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			],
 			repel: []
 		},
-		game: 'p5'
+		game: 'p5',
+		user: 'P5 Protagonist',
+		stage: 2,
+		evoSkill: null
 	},
 	{
 		name: 'Scathach',
 		aliases: [],
-		inherit: 'Force',
+		affinities: {
+			skillPotential: {
+				Phys: 1,
+				Fire: 0,
+				Ice: 0,
+				Elec: -5,
+				Force: 3,
+				Light: 0,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 2,
+				Recovery: 2,
+				Support: 0
+			},
+			inherit: null
+		},
 		arcana: 'Priestess',
 		race: 'Megami',
 		level: 55,
@@ -18377,7 +22288,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 58
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {
+				Seal: 'Resist'
+			},
 			weak: [
 				'Elec'
 			],
@@ -18397,7 +22311,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		aliases: [
 			'Qing Long'
 		],
-		inherit: 'Force',
+		affinities: {
+			skillPotential: {
+				Phys: 0,
+				Fire: 0,
+				Ice: 2,
+				Elec: -6,
+				Force: 5,
+				Light: 0,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 0,
+				Recovery: 0,
+				Support: 1
+			},
+			inherit: null
+		},
 		arcana: 'Councillor',
 		race: 'Dragon',
 		level: 45,
@@ -18436,7 +22365,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 48
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {
+				Sleep: 'Weak'
+			},
 			weak: [
 				'Elec'
 			],
@@ -18456,7 +22388,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		aliases: [
 			'Seiten Taisei'
 		],
-		inherit: 'Elec',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Elec'
+		},
 		arcana: 'Chariot',
 		race: 'Persona',
 		level: 4,
@@ -18563,7 +22498,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 75
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: null,
 			weak: [
 				'Wind'
 			],
@@ -18576,12 +22512,18 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'p5'
+		game: 'p5',
+		user: 'Ryuji Sakamoto',
+		stage: 2,
+		evoSkill: 'Evade Wind'
 	},
 	{
 		name: 'Senri',
 		aliases: [],
-		inherit: 'Recovery',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Recovery'
+		},
 		arcana: 'Empress',
 		race: 'Nymph',
 		level: 9,
@@ -18620,7 +22562,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 14
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: null,
 			weak: [
 				'Elec'
 			],
@@ -18636,7 +22579,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Setanta',
 		aliases: [],
-		inherit: 'Phys',
+		affinities: {
+			skillPotential: {
+				Phys: 3,
+				Fire: 0,
+				Ice: 0,
+				Elec: -3,
+				Force: 1,
+				Light: 0,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 0,
+				Recovery: 0,
+				Support: 2
+			},
+			inherit: null
+		},
 		arcana: 'Emperor',
 		race: 'Fairy',
 		level: 35,
@@ -18671,7 +22629,11 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 38
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {
+				Confuse: 'Weak',
+				Seal: 'Resist'
+			},
 			weak: [
 				'Elec',
 				'Dark'
@@ -18688,7 +22650,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Seth',
 		aliases: [],
-		inherit: 'Ailment',
+		affinities: {
+			skillPotential: {
+				Phys: 3,
+				Fire: 0,
+				Ice: -6,
+				Elec: 3,
+				Force: 3,
+				Light: 0,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 2,
+				Recovery: -5,
+				Support: 0
+			},
+			inherit: null
+		},
 		arcana: 'Tower',
 		race: 'Drake',
 		level: 67,
@@ -18727,7 +22704,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 70
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {
+				Mirage: 'Weak'
+			},
 			weak: [
 				'Ice'
 			],
@@ -18746,7 +22726,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Shiisaa',
 		aliases: [],
-		inherit: 'Elec',
+		affinities: {
+			skillPotential: {
+				Phys: 1,
+				Fire: -3,
+				Ice: 0,
+				Elec: 3,
+				Force: 0,
+				Light: 0,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 0,
+				Recovery: 0,
+				Support: 2
+			},
+			inherit: null
+		},
 		arcana: 'Strength',
 		race: 'Holy',
 		level: 19,
@@ -18781,7 +22776,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 22
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {
+				Charm: 'Weak'
+			},
 			weak: [
 				'Fire'
 			],
@@ -18798,7 +22796,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Shiki-Ouji',
 		aliases: [],
-		inherit: 'Almighty',
+		affinities: {
+			skillPotential: {
+				Phys: 0,
+				Fire: -5,
+				Ice: 0,
+				Elec: 0,
+				Force: 0,
+				Light: 2,
+				Dark: 2,
+				Almighty: 0,
+				Ailment: 1,
+				Recovery: 0,
+				Support: 0
+			},
+			inherit: null
+		},
 		arcana: 'Chariot',
 		race: 'Brute',
 		level: 29,
@@ -18833,7 +22846,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 32
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {
+				Confuse: 'Weak'
+			},
 			weak: [
 				'Fire',
 				'Force'
@@ -18852,7 +22868,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Shiva',
 		aliases: [],
-		inherit: 'Phys',
+		affinities: {
+			skillPotential: {
+				Phys: 6,
+				Fire: 3,
+				Ice: -5,
+				Elec: 3,
+				Force: 0,
+				Light: 0,
+				Dark: 0,
+				Almighty: 3,
+				Ailment: -5,
+				Recovery: -2,
+				Support: 2
+			},
+			inherit: null
+		},
 		arcana: 'Judgement',
 		race: 'Fury',
 		level: 96,
@@ -18895,7 +22926,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 99
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {
+				Mirage: 'Resist'
+			},
 			weak: [
 				'Ice'
 			],
@@ -18916,7 +22950,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Siegfried',
 		aliases: [],
-		inherit: 'Phys',
+		affinities: {
+			skillPotential: {
+				Phys: 6,
+				Fire: 0,
+				Ice: 0,
+				Elec: 0,
+				Force: 0,
+				Light: -5,
+				Dark: -5,
+				Almighty: -5,
+				Ailment: 0,
+				Recovery: -4,
+				Support: 1
+			},
+			inherit: null
+		},
 		arcana: 'Faith',
 		race: 'Wargod',
 		level: 63,
@@ -18959,7 +23008,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 66
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {},
 			weak: [
 				'Force',
 				'Light',
@@ -18977,7 +23027,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Silky',
 		aliases: [],
-		inherit: 'Ice',
+		affinities: {
+			skillPotential: {
+				Phys: -3,
+				Fire: 0,
+				Ice: 3,
+				Elec: 0,
+				Force: 0,
+				Light: 0,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 0,
+				Recovery: 2,
+				Support: 1
+			},
+			inherit: null
+		},
 		arcana: 'Priestess',
 		race: 'Fairy',
 		level: 41,
@@ -19016,7 +23081,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 44
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {
+				Confuse: 'Weak',
+				Charm: 'Resist',
+				Sleep: 'Null'
+			},
 			weak: [
 				'Fire'
 			],
@@ -19032,7 +23102,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Skadi',
 		aliases: [],
-		inherit: 'Ice',
+		affinities: {
+			skillPotential: {
+				Phys: 0,
+				Fire: -5,
+				Ice: 4,
+				Elec: 0,
+				Force: 0,
+				Light: 0,
+				Dark: 3,
+				Almighty: 0,
+				Ailment: 1,
+				Recovery: 0,
+				Support: 0
+			},
+			inherit: null
+		},
 		arcana: 'Priestess',
 		race: 'Lady',
 		level: 67,
@@ -19071,7 +23156,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 70
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {
+				Seal: 'Null'
+			},
 			weak: [
 				'Fire'
 			],
@@ -19089,7 +23177,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Slime',
 		aliases: [],
-		inherit: 'Ailment',
+		affinities: {
+			skillPotential: {
+				Phys: 1,
+				Fire: -3,
+				Ice: -3,
+				Elec: -3,
+				Force: -3,
+				Light: -3,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 3,
+				Recovery: 0,
+				Support: -1
+			},
+			inherit: null
+		},
 		arcana: 'Chariot',
 		race: 'Foul',
 		level: 1,
@@ -19116,7 +23219,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 3
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {
+				Poison: 'Resist'
+			},
 			weak: [
 				'Fire',
 				'Ice',
@@ -19134,7 +23240,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Sraosha',
 		aliases: [],
-		inherit: 'Light',
+		affinities: {
+			skillPotential: {
+				Phys: 0,
+				Fire: 0,
+				Ice: 0,
+				Elec: 0,
+				Force: -5,
+				Light: 5,
+				Dark: 0,
+				Almighty: 2,
+				Ailment: 0,
+				Recovery: 3,
+				Support: 0
+			},
+			inherit: null
+		},
 		arcana: 'Star',
 		race: 'Herald',
 		level: 77,
@@ -19173,7 +23294,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 80
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {},
 			weak: [
 				'Force'
 			],
@@ -19192,7 +23314,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Stone of Scone',
 		aliases: [],
-		inherit: 'Support',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Support'
+		},
 		arcana: 'Fortune',
 		race: 'Treasure',
 		level: 20,
@@ -19239,7 +23364,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 0
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: null,
 			weak: [
 				'Fire'
 			],
@@ -19256,7 +23382,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Succubus',
 		aliases: [],
-		inherit: 'Ailment',
+		affinities: {
+			skillPotential: {
+				Phys: 0,
+				Fire: 0,
+				Ice: 4,
+				Elec: 0,
+				Force: 0,
+				Light: -5,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 4,
+				Recovery: 0,
+				Support: 1
+			},
+			inherit: null
+		},
 		arcana: 'Moon',
 		race: 'Night',
 		level: 38,
@@ -19295,7 +23436,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 41
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {},
 			weak: [
 				'Light'
 			],
@@ -19313,7 +23455,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Sudama',
 		aliases: [],
-		inherit: 'Force',
+		affinities: {
+			skillPotential: {
+				Phys: 0,
+				Fire: -3,
+				Ice: -2,
+				Elec: 0,
+				Force: 3,
+				Light: 0,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 2,
+				Recovery: 0,
+				Support: 0
+			},
+			inherit: null
+		},
 		arcana: 'Hermit',
 		race: 'Jirae',
 		level: 17,
@@ -19340,7 +23497,11 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 19
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {
+				Sleep: 'Weak',
+				Confuse: 'Resist'
+			},
 			weak: [
 				'Fire',
 				'Ice'
@@ -19357,7 +23518,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Sui-Ki',
 		aliases: [],
-		inherit: 'Ice',
+		affinities: {
+			skillPotential: {
+				Phys: 2,
+				Fire: -5,
+				Ice: 4,
+				Elec: 0,
+				Force: 0,
+				Light: 0,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 0,
+				Recovery: 0,
+				Support: 1
+			},
+			inherit: null
+		},
 		arcana: 'Moon',
 		race: 'Brute',
 		level: 56,
@@ -19396,7 +23572,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 59
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {
+				Seal: 'Weak'
+			},
 			weak: [
 				'Fire'
 			],
@@ -19410,13 +23589,26 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		game: 'smt5'
 	},
 	{
-		name: 'Sukuna-Hikona -P4-',
-		aliases: [
-			'Sukuna-Hikona'
-		],
-		inherit: 'Almighty',
-		arcana: 'Fortune',
-		race: 'Persona',
+		name: 'Sukuna-Hikona',
+		aliases: [],
+		affinities: {
+			skillPotential: {
+				Phys: 2,
+				Fire: 0,
+				Ice: 4,
+				Elec: -5,
+				Force: 4,
+				Light: 0,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 0,
+				Recovery: 0,
+				Support: 3
+			},
+			inherit: null
+		},
+		arcana: null,
+		race: 'Kunitsu',
 		level: 37,
 		hp: 206,
 		mp: 169,
@@ -19453,7 +23645,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 40
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: null,
 			weak: [
 				'Elec'
 			],
@@ -19467,12 +23660,118 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'p4'
+		game: 'smt5'
+	},
+	{
+		name: 'Sukuna-Hikona -P4-',
+		aliases: [
+			'Sukuna-Hikona'
+		],
+		affinities: {
+			skillPotential: null,
+			inherit: 'Almighty'
+		},
+		arcana: 'Fortune',
+		race: 'Persona',
+		level: 55,
+		hp: null,
+		mp: null,
+		stats: {
+			st: 32,
+			vi: 32,
+			ma: 38,
+			ag: 40,
+			lu: 31
+		},
+		learnset: [
+			{
+				name: 'Tempest Slash',
+				level: 0
+			},
+			{
+				name: 'Agidyne',
+				level: 0
+			},
+			{
+				name: 'Garudyne',
+				level: 0
+			},
+			{
+				name: 'Mudoon',
+				level: 0
+			},
+			{
+				name: 'Hamaon',
+				level: 0
+			},
+			{
+				name: 'Megidola',
+				level: 0
+			},
+			{
+				name: 'Deathbound',
+				level: 0
+			},
+			{
+				name: 'Tetrakarn',
+				level: 56
+			},
+			{
+				name: 'Blight',
+				level: 58
+			},
+			{
+				name: 'Mudo Boost',
+				level: 60
+			},
+			{
+				name: 'Hama Boost',
+				level: 62
+			},
+			{
+				name: 'Makarakarn',
+				level: 64
+			},
+			{
+				name: 'Mamudoon',
+				level: 68
+			},
+			{
+				name: 'Mahamaon',
+				level: 70
+			},
+			{
+				name: 'Vorpal Blade',
+				level: 73
+			},
+			{
+				name: 'Megidolaon',
+				level: 75
+			}
+		],
+		resistances: {
+			ailments: null,
+			weak: [],
+			resist: [
+				'Light',
+				'Dark'
+			],
+			null: [],
+			drain: [],
+			repel: []
+		},
+		game: 'p4',
+		user: 'Naoto Shirogane',
+		stage: 1,
+		evoSkill: null
 	},
 	{
 		name: 'Sumeo-Okami',
 		aliases: [],
-		inherit: 'Fire',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Fire'
+		},
 		arcana: 'Priestess',
 		race: 'Persona',
 		level: 15,
@@ -19563,7 +23862,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 76
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: null,
 			weak: [
 				'Ice'
 			],
@@ -19576,12 +23876,30 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			],
 			repel: []
 		},
-		game: 'p4'
+		game: 'p4',
+		user: 'Yukiko Amagi',
+		stage: 3,
+		evoSkill: 'Maragibarion'
 	},
 	{
 		name: 'Surt',
 		aliases: [],
-		inherit: 'Fire',
+		affinities: {
+			skillPotential: {
+				Phys: 4,
+				Fire: 6,
+				Ice: -6,
+				Elec: 0,
+				Force: 0,
+				Light: 0,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 0,
+				Recovery: 0,
+				Support: 0
+			},
+			inherit: null
+		},
 		arcana: 'Magician',
 		race: 'Tyrant',
 		level: 62,
@@ -19620,7 +23938,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 65
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {},
 			weak: [
 				'Ice'
 			],
@@ -19636,7 +23955,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Susano-o',
 		aliases: [],
-		inherit: 'Wind',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Wind'
+		},
 		arcana: 'Magician',
 		race: 'Persona',
 		level: 4,
@@ -19723,7 +24045,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 73
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: null,
 			weak: [
 				'Elec'
 			],
@@ -19736,14 +24059,32 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'p4'
+		game: 'p4',
+		user: 'Yosuke Hanamura',
+		stage: 2,
+		evoSkill: null
 	},
 	{
 		name: 'Suzaku',
 		aliases: [
 			'Zhuque'
 		],
-		inherit: 'Fire',
+		affinities: {
+			skillPotential: {
+				Phys: 0,
+				Fire: 5,
+				Ice: 0,
+				Elec: -6,
+				Force: 0,
+				Light: 0,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 1,
+				Recovery: 0,
+				Support: 1
+			},
+			inherit: null
+		},
 		arcana: 'Sun',
 		race: 'Avian',
 		level: 43,
@@ -19782,7 +24123,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 46
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {},
 			weak: [
 				'Ice'
 			],
@@ -19798,7 +24140,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Suzuka Gongen',
 		aliases: [],
-		inherit: 'Ice',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Ice'
+		},
 		arcana: 'Chariot',
 		race: 'Persona',
 		level: 4,
@@ -19889,7 +24234,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 74
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: null,
 			weak: [
 				'Fire'
 			],
@@ -19902,12 +24248,18 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'p4'
+		game: 'p4',
+		user: 'Chie Satonaka',
+		stage: 2,
+		evoSkill: null
 	},
 	{
 		name: 'Takehaya Susano-o',
 		aliases: [],
-		inherit: 'Wind',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Wind'
+		},
 		arcana: 'Magician',
 		race: 'Persona',
 		level: 4,
@@ -19994,7 +24346,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 73
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: null,
 			weak: [
 				'Elec'
 			],
@@ -20007,12 +24360,18 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			],
 			repel: []
 		},
-		game: 'p4'
+		game: 'p4',
+		user: 'Yosuke Hanamura',
+		stage: 3,
+		evoSkill: 'Youthful Wind'
 	},
 	{
 		name: 'Takeji Zaiten',
 		aliases: [],
-		inherit: 'Elec',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Elec'
+		},
 		arcana: 'Emperor',
 		race: 'Persona',
 		level: 25,
@@ -20095,7 +24454,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 75
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: null,
 			weak: [
 				'Wind'
 			],
@@ -20108,12 +24468,18 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			],
 			repel: []
 		},
-		game: 'p4'
+		game: 'p4',
+		user: 'Kanji Tatsumi',
+		stage: 3,
+		evoSkill: 'The Man"s Way'
 	},
 	{
 		name: 'Take-Mikazuchi',
 		aliases: [],
-		inherit: 'Elec',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Elec'
+		},
 		arcana: 'Emperor',
 		race: 'Persona',
 		level: 25,
@@ -20196,7 +24562,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 75
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: null,
 			weak: [
 				'Wind'
 			],
@@ -20207,12 +24574,30 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'p4'
+		game: 'p4',
+		user: 'Kanji Tatsumi',
+		stage: 1,
+		evoSkill: null
 	},
 	{
 		name: 'Take-Minakata',
 		aliases: [],
-		inherit: 'Elec',
+		affinities: {
+			skillPotential: {
+				Phys: 2,
+				Fire: -3,
+				Ice: 0,
+				Elec: 2,
+				Force: 0,
+				Light: 0,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: -1,
+				Recovery: 0,
+				Support: 0
+			},
+			inherit: null
+		},
 		arcana: 'Hanged',
 		race: 'Kunitsu',
 		level: 19,
@@ -20247,7 +24632,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 22
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {},
 			weak: [
 				'Fire'
 			],
@@ -20263,7 +24649,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Tam Lin',
 		aliases: [],
-		inherit: 'Almighty',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Almighty'
+		},
 		arcana: 'Faith',
 		race: 'Genma',
 		level: 27,
@@ -20306,7 +24695,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 32
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: null,
 			weak: [
 				'Dark'
 			],
@@ -20327,7 +24717,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Tao',
 		aliases: [],
-		inherit: 'Light',
+		affinities: {
+			skillPotential: {
+				Phys: -5,
+				Fire: 0,
+				Ice: 0,
+				Elec: 0,
+				Force: 0,
+				Light: 5,
+				Dark: -5,
+				Almighty: 4,
+				Ailment: 0,
+				Recovery: 3,
+				Support: 3
+			},
+			inherit: null
+		},
 		arcana: null,
 		race: 'Panagia',
 		level: 60,
@@ -20370,7 +24775,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 64
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {
+				Charm: 'Null'
+			},
 			weak: [
 				'Dark'
 			],
@@ -20386,7 +24794,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Thanatos',
 		aliases: [],
-		inherit: 'Almighty',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Almighty'
+		},
 		arcana: 'Death',
 		race: 'Persona',
 		level: 65,
@@ -20429,7 +24840,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 70
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: null,
 			weak: [
 				'Light'
 			],
@@ -20442,12 +24854,18 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				'Dark'
 			]
 		},
-		game: 'p5'
+		game: 'p5',
+		user: 'Elizabeth',
+		stage: 1,
+		evoSkill: null
 	},
 	{
 		name: 'Thanatos Picaro',
 		aliases: [],
-		inherit: 'Almighty',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Almighty'
+		},
 		arcana: 'Death',
 		race: 'Picaro',
 		level: 69,
@@ -20490,7 +24908,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 74
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: null,
 			weak: [
 				'Light'
 			],
@@ -20508,7 +24927,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Thor',
 		aliases: [],
-		inherit: 'Elec',
+		affinities: {
+			skillPotential: {
+				Phys: 4,
+				Fire: 0,
+				Ice: 0,
+				Elec: 4,
+				Force: -5,
+				Light: 0,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 0,
+				Recovery: 0,
+				Support: 0
+			},
+			inherit: null
+		},
 		arcana: 'Chariot',
 		race: 'Kishin',
 		level: 66,
@@ -20547,7 +24981,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 69
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {},
 			weak: [
 				'Force'
 			],
@@ -20566,7 +25001,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Thoth',
 		aliases: [],
-		inherit: 'Light',
+		affinities: {
+			skillPotential: {
+				Phys: 0,
+				Fire: 0,
+				Ice: 0,
+				Elec: 0,
+				Force: 0,
+				Light: 2,
+				Dark: 3,
+				Almighty: 1,
+				Ailment: 0,
+				Recovery: 0,
+				Support: 3
+			},
+			inherit: null
+		},
 		arcana: 'Emperor',
 		race: 'Deity',
 		level: 33,
@@ -20605,7 +25055,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 36
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {
+				Sleep: 'Weak'
+			},
 			weak: [
 				'Dark'
 			],
@@ -20621,7 +25074,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Throne',
 		aliases: [],
-		inherit: 'Light',
+		affinities: {
+			skillPotential: {
+				Phys: 0,
+				Fire: 4,
+				Ice: -3,
+				Elec: 0,
+				Force: 0,
+				Light: 4,
+				Dark: -6,
+				Almighty: 0,
+				Ailment: 0,
+				Recovery: 1,
+				Support: 0
+			},
+			inherit: null
+		},
 		arcana: 'Justice',
 		race: 'Divine',
 		level: 64,
@@ -20660,7 +25128,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 67
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {},
 			weak: [
 				'Ice',
 				'Dark'
@@ -20678,7 +25147,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Thunderbird',
 		aliases: [],
-		inherit: 'Elec',
+		affinities: {
+			skillPotential: {
+				Phys: 0,
+				Fire: 0,
+				Ice: 0,
+				Elec: 5,
+				Force: -3,
+				Light: 0,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 0,
+				Recovery: 0,
+				Support: 2
+			},
+			inherit: null
+		},
 		arcana: 'Sun',
 		race: 'Avian',
 		level: 38,
@@ -20717,7 +25201,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 41
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {},
 			weak: [
 				'Force'
 			],
@@ -20733,7 +25218,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Titania',
 		aliases: [],
-		inherit: 'Recovery',
+		affinities: {
+			skillPotential: {
+				Phys: -4,
+				Fire: 0,
+				Ice: 0,
+				Elec: 3,
+				Force: 0,
+				Light: 0,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 0,
+				Recovery: 3,
+				Support: 1
+			},
+			inherit: null
+		},
 		arcana: 'Empress',
 		race: 'Fairy',
 		level: 57,
@@ -20772,7 +25272,11 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 60
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {
+				Confuse: 'Resist',
+				Mirage: 'Resist'
+			},
 			weak: [
 				'Fire'
 			],
@@ -20790,7 +25294,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Tomoe',
 		aliases: [],
-		inherit: 'Ice',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Ice'
+		},
 		arcana: 'Chariot',
 		race: 'Persona',
 		level: 4,
@@ -20881,7 +25388,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 74
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: null,
 			weak: [
 				'Fire'
 			],
@@ -20892,12 +25400,18 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'p4'
+		game: 'p4',
+		user: 'Chie Satonaka',
+		stage: 1,
+		evoSkill: null
 	},
 	{
 		name: 'Triglav',
 		aliases: [],
-		inherit: 'Phys',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Phys'
+		},
 		arcana: 'Chariot',
 		race: 'Fury',
 		level: 43,
@@ -20940,7 +25454,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 49
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: null,
 			weak: [
 				'Elec'
 			],
@@ -20956,7 +25471,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Trismegistus',
 		aliases: [],
-		inherit: 'Fire',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Fire'
+		},
 		arcana: 'Magician',
 		race: 'Persona',
 		level: 1,
@@ -21047,7 +25565,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 75
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: null,
 			weak: [
 				'Wind'
 			],
@@ -21058,12 +25577,30 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'p3'
+		game: 'p3',
+		user: 'Junpei Iori',
+		stage: 2,
+		evoSkill: 'Spring of Life'
 	},
 	{
 		name: 'Trumpeter',
 		aliases: [],
-		inherit: 'Almighty',
+		affinities: {
+			skillPotential: {
+				Phys: -6,
+				Fire: 3,
+				Ice: 3,
+				Elec: 3,
+				Force: 3,
+				Light: 0,
+				Dark: 0,
+				Almighty: 5,
+				Ailment: 4,
+				Recovery: 0,
+				Support: 0
+			},
+			inherit: null
+		},
 		arcana: 'Judgement',
 		race: 'Fiend',
 		level: 73,
@@ -21106,7 +25643,11 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 76
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {
+				Sleep: 'Null',
+				Seal: 'Null'
+			},
 			weak: [],
 			resist: [
 				'Fire',
@@ -21126,7 +25667,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Tsuchigumo',
 		aliases: [],
-		inherit: 'Elec',
+		affinities: {
+			skillPotential: {
+				Phys: 1,
+				Fire: 0,
+				Ice: 0,
+				Elec: 2,
+				Force: 0,
+				Light: 0,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 0,
+				Recovery: -2,
+				Support: 1
+			},
+			inherit: null
+		},
 		arcana: 'Strength',
 		race: 'Jirae',
 		level: 13,
@@ -21153,7 +25709,11 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 15
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {
+				Charm: 'Weak',
+				Poison: 'Resist'
+			},
 			weak: [
 				'Ice'
 			],
@@ -21171,7 +25731,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		aliases: [
 			'Tsukuyomi'
 		],
-		inherit: 'Almighty',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Almighty'
+		},
 		arcana: 'Moon',
 		race: 'Persona',
 		level: 50,
@@ -21214,7 +25777,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 56
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: null,
 			weak: [
 				'Nuke'
 			],
@@ -21228,14 +25792,20 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				'Dark'
 			]
 		},
-		game: 'p5'
+		game: 'p5',
+		user: 'Sho Minazuki',
+		stage: 1,
+		evoSkill: null
 	},
 	{
 		name: 'Tsukiyomi Picaro',
 		aliases: [
 			'Tsukuyomi Picaro'
 		],
-		inherit: 'Almighty',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Almighty'
+		},
 		arcana: 'Moon',
 		race: 'Picaro',
 		level: 55,
@@ -21278,7 +25848,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 61
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: null,
 			weak: [
 				'Nuke'
 			],
@@ -21297,7 +25868,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Turdak',
 		aliases: [],
-		inherit: 'Phys',
+		affinities: {
+			skillPotential: {
+				Phys: 2,
+				Fire: 0,
+				Ice: 0,
+				Elec: 0,
+				Force: -3,
+				Light: 0,
+				Dark: 1,
+				Almighty: 0,
+				Ailment: 0,
+				Recovery: 0,
+				Support: 0
+			},
+			inherit: null
+		},
 		arcana: 'Judgement',
 		race: 'Jaki',
 		level: 11,
@@ -21324,7 +25910,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 14
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {},
 			weak: [
 				'Force'
 			],
@@ -21340,7 +25927,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Tzitzimitl',
 		aliases: [],
-		inherit: 'Elec',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Elec'
+		},
 		arcana: 'Priestess',
 		race: 'Tyrant',
 		level: 70,
@@ -21387,7 +25977,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 77
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: null,
 			weak: [
 				'Wind'
 			],
@@ -21405,7 +25996,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Undine',
 		aliases: [],
-		inherit: 'Recovery',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Recovery'
+		},
 		arcana: 'Lovers',
 		race: 'Element',
 		level: 33,
@@ -21444,7 +26038,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 37
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: null,
 			weak: [
 				'Fire'
 			],
@@ -21460,7 +26055,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Unicorn',
 		aliases: [],
-		inherit: 'Light',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Light'
+		},
 		arcana: 'Faith',
 		race: 'Holy',
 		level: 39,
@@ -21503,7 +26101,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 44
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: null,
 			weak: [
 				'Dark'
 			],
@@ -21522,7 +26121,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Uriel',
 		aliases: [],
-		inherit: 'Fire',
+		affinities: {
+			skillPotential: {
+				Phys: 2,
+				Fire: 5,
+				Ice: -5,
+				Elec: 2,
+				Force: 0,
+				Light: 3,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 0,
+				Recovery: 0,
+				Support: -4
+			},
+			inherit: null
+		},
 		arcana: 'Justice',
 		race: 'Herald',
 		level: 82,
@@ -21561,7 +26175,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 85
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {},
 			weak: [
 				'Ice'
 			],
@@ -21580,7 +26195,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Valjean',
 		aliases: [],
-		inherit: 'Almighty',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Almighty'
+		},
 		arcana: 'Apostle',
 		race: 'Persona',
 		level: 40,
@@ -21667,19 +26285,38 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 80
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: null,
 			weak: [],
 			resist: [],
 			null: [],
 			drain: [],
 			repel: []
 		},
-		game: 'p5'
+		game: 'p5',
+		user: 'Zenkichi Hasegawa',
+		stage: 1,
+		evoSkill: null
 	},
 	{
 		name: 'Valkyrie',
 		aliases: [],
-		inherit: 'Phys',
+		affinities: {
+			skillPotential: {
+				Phys: 3,
+				Fire: 0,
+				Ice: 0,
+				Elec: 2,
+				Force: -4,
+				Light: 0,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 0,
+				Recovery: 0,
+				Support: 2
+			},
+			inherit: null
+		},
 		arcana: 'Strength',
 		race: 'Yoma',
 		level: 40,
@@ -21714,7 +26351,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 43
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {},
 			weak: [
 				'Force'
 			],
@@ -21730,7 +26368,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Vanadis',
 		aliases: [],
-		inherit: 'Light',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Light'
+		},
 		arcana: 'Faith',
 		race: 'Persona',
 		level: 75,
@@ -21781,7 +26422,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 80
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: null,
 			weak: [
 				'Dark'
 			],
@@ -21792,12 +26434,30 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'p5'
+		game: 'p5',
+		user: 'Sumire Yoshizawa',
+		stage: 2,
+		evoSkill: 'Evade Dark'
 	},
 	{
 		name: 'Vasuki',
 		aliases: [],
-		inherit: 'Ailment',
+		affinities: {
+			skillPotential: {
+				Phys: 0,
+				Fire: -5,
+				Ice: 4,
+				Elec: 0,
+				Force: 0,
+				Light: 0,
+				Dark: 1,
+				Almighty: 0,
+				Ailment: 7,
+				Recovery: 0,
+				Support: -4
+			},
+			inherit: null
+		},
 		arcana: 'Star',
 		race: 'Drake',
 		level: 74,
@@ -21840,7 +26500,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 77
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {
+				Sleep: 'Null',
+				Mirage: 'Null',
+				Poison: 'Null'
+			},
 			weak: [
 				'Fire'
 			],
@@ -21858,7 +26523,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Vishnu',
 		aliases: [],
-		inherit: 'Dark',
+		affinities: {
+			skillPotential: {
+				Phys: 0,
+				Fire: -5,
+				Ice: 0,
+				Elec: 0,
+				Force: 0,
+				Light: 4,
+				Dark: 6,
+				Almighty: 0,
+				Ailment: 0,
+				Recovery: 3,
+				Support: 0
+			},
+			inherit: null
+		},
 		arcana: 'Fool',
 		race: 'Deity',
 		level: 87,
@@ -21901,7 +26581,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 90
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {},
 			weak: [
 				'Fire'
 			],
@@ -21920,7 +26601,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Vohu Manah',
 		aliases: [],
-		inherit: 'Almighty',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Almighty'
+		},
 		arcana: 'Councillor',
 		race: 'Divine',
 		level: 80,
@@ -21963,7 +26647,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 85
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: null,
 			weak: [
 				'Wind'
 			],
@@ -21983,7 +26668,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'White Rider',
 		aliases: [],
-		inherit: 'Light',
+		affinities: {
+			skillPotential: {
+				Phys: 0,
+				Fire: 5,
+				Ice: 0,
+				Elec: -5,
+				Force: 0,
+				Light: 7,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 0,
+				Recovery: 0,
+				Support: 3
+			},
+			inherit: null
+		},
 		arcana: 'Chariot',
 		race: 'Fiend',
 		level: 43,
@@ -22026,7 +26726,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 46
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {},
 			weak: [
 				'Elec'
 			],
@@ -22045,7 +26746,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'William',
 		aliases: [],
-		inherit: 'Elec',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Elec'
+		},
 		arcana: 'Chariot',
 		race: 'Persona',
 		level: 4,
@@ -22152,7 +26856,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 75
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: null,
 			weak: [
 				'Wind'
 			],
@@ -22165,14 +26870,32 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'p5'
+		game: 'p5',
+		user: 'Ryuji Sakamoto',
+		stage: 3,
+		evoSkill: 'Fighting Spirit'
 	},
 	{
 		name: 'Yaksini',
 		aliases: [
 			'Yakshini'
 		],
-		inherit: 'Force',
+		affinities: {
+			skillPotential: {
+				Phys: 2,
+				Fire: 0,
+				Ice: 0,
+				Elec: -3,
+				Force: 2,
+				Light: 0,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 0,
+				Recovery: 0,
+				Support: 0
+			},
+			inherit: null
+		},
 		arcana: 'Empress',
 		race: 'Femme',
 		level: 30,
@@ -22207,7 +26930,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 33
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {
+				Seal: 'Weak'
+			},
 			weak: [
 				'Elec'
 			],
@@ -22223,7 +26949,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Yamata-no-Orochi',
 		aliases: [],
-		inherit: 'Phys',
+		affinities: {
+			skillPotential: {
+				Phys: 4,
+				Fire: 3,
+				Ice: 0,
+				Elec: -2,
+				Force: 0,
+				Light: 0,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: -5,
+				Recovery: 0,
+				Support: 0
+			},
+			inherit: null
+		},
 		arcana: 'Judgement',
 		race: 'Snake',
 		level: 72,
@@ -22262,7 +27003,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 75
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {
+				Sleep: 'Weak',
+				Poison: 'Weak',
+				Confuse: 'Weak'
+			},
 			weak: [
 				'Elec'
 			],
@@ -22274,12 +27020,18 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		user: 'Naoto Shirogane',
+		stage: 3,
+		evoSkill: 'Shield of Justice'
 	},
 	{
 		name: 'Yamato Sumeragi',
 		aliases: [],
-		inherit: 'Almighty',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Almighty'
+		},
 		arcana: 'Fortune',
 		race: 'Persona',
 		level: 55,
@@ -22358,7 +27110,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 75
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: null,
 			weak: [],
 			resist: [],
 			null: [
@@ -22375,7 +27128,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Yamato-Takeru',
 		aliases: [],
-		inherit: 'Almighty',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Almighty'
+		},
 		arcana: 'Fortune',
 		race: 'Persona',
 		level: 55,
@@ -22454,7 +27210,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 75
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: null,
 			weak: [],
 			resist: [
 				'Fire'
@@ -22466,12 +27223,30 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'p4'
+		game: 'p4',
+		user: 'Naoto Shirogane',
+		stage: 2,
+		evoSkill: null
 	},
 	{
 		name: 'Yatagarasu',
 		aliases: [],
-		inherit: 'Light',
+		affinities: {
+			skillPotential: {
+				Phys: 0,
+				Fire: 0,
+				Ice: 0,
+				Elec: 0,
+				Force: 2,
+				Light: 4,
+				Dark: -7,
+				Almighty: 0,
+				Ailment: 0,
+				Recovery: 2,
+				Support: 2
+			},
+			inherit: null
+		},
 		arcana: 'Councillor',
 		race: 'Avian',
 		level: 54,
@@ -22510,7 +27285,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 57
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {
+				Charm: 'Weak'
+			},
 			weak: [
 				'Dark'
 			],
@@ -22528,7 +27306,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Yomotsu-Shikome',
 		aliases: [],
-		inherit: 'Ailment',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Ailment'
+		},
 		arcana: 'Fool',
 		race: 'Femme',
 		level: 2,
@@ -22567,7 +27348,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 11
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: null,
 			weak: [
 				'Fire'
 			],
@@ -22583,7 +27365,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Yoshitsune',
 		aliases: [],
-		inherit: 'Phys',
+		affinities: {
+			skillPotential: {
+				Phys: 5,
+				Fire: 0,
+				Ice: 0,
+				Elec: 0,
+				Force: 0,
+				Light: 0,
+				Dark: -4,
+				Almighty: 0,
+				Ailment: 0,
+				Recovery: 0,
+				Support: 1
+			},
+			inherit: null
+		},
 		arcana: 'Tower',
 		race: 'Wargod',
 		level: 45,
@@ -22618,7 +27415,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 48
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {
+				Mirage: 'Null'
+			},
 			weak: [
 				'Dark'
 			],
@@ -22634,7 +27434,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Yurlungur',
 		aliases: [],
-		inherit: 'Ice',
+		affinities: {
+			skillPotential: {
+				Phys: 0,
+				Fire: 0,
+				Ice: 3,
+				Elec: 2,
+				Force: 0,
+				Light: 0,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: -5,
+				Recovery: 1,
+				Support: 1
+			},
+			inherit: null
+		},
 		arcana: 'Sun',
 		race: 'Snake',
 		level: 50,
@@ -22677,7 +27492,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 53
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {
+				Seal: 'Weak'
+			},
 			weak: [
 				'Fire'
 			],
@@ -22693,7 +27511,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Zaou-Gongen',
 		aliases: [],
-		inherit: 'Phys',
+		affinities: {
+			skillPotential: {
+				Phys: 5,
+				Fire: 4,
+				Ice: 0,
+				Elec: -7,
+				Force: 0,
+				Light: 0,
+				Dark: 0,
+				Almighty: 3,
+				Ailment: 0,
+				Recovery: 0,
+				Support: 0
+			},
+			inherit: null
+		},
 		arcana: 'Strength',
 		race: 'Fury',
 		level: 72,
@@ -22732,7 +27565,13 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 75
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {
+				Sleep: 'Null',
+				Mirage: 'Null',
+				Confuse: 'Null',
+				Charm: 'Null'
+			},
 			weak: [
 				'Elec'
 			],
@@ -22750,7 +27589,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Zeus',
 		aliases: [],
-		inherit: 'Elec',
+		affinities: {
+			skillPotential: {
+				Phys: 4,
+				Fire: 0,
+				Ice: 0,
+				Elec: 6,
+				Force: -6,
+				Light: 0,
+				Dark: 0,
+				Almighty: 2,
+				Ailment: 0,
+				Recovery: 0,
+				Support: 1
+			},
+			inherit: null
+		},
 		arcana: null,
 		race: 'Deity',
 		level: 86,
@@ -22793,7 +27647,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 89
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {
+				Seal: 'Resist'
+			},
 			weak: [
 				'Force'
 			],
@@ -22811,7 +27668,22 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Zhen',
 		aliases: [],
-		inherit: 'Ailment',
+		affinities: {
+			skillPotential: {
+				Phys: 2,
+				Fire: -3,
+				Ice: 0,
+				Elec: 1,
+				Force: 0,
+				Light: 0,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 2,
+				Recovery: 0,
+				Support: 0
+			},
+			inherit: null
+		},
 		arcana: null,
 		race: 'Raptor',
 		level: 14,
@@ -22842,7 +27714,11 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 17
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {
+				Mirage: 'Resist',
+				Poison: 'Resist'
+			},
 			weak: [
 				'Fire'
 			],
@@ -22858,7 +27734,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Zorro',
 		aliases: [],
-		inherit: 'Wind',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Wind'
+		},
 		arcana: 'Magician',
 		race: 'Persona',
 		level: 1,
@@ -22969,7 +27848,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 75
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: null,
 			weak: [
 				'Elec'
 			],
@@ -22980,12 +27860,30 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'p5'
+		game: 'p5',
+		user: 'Morgana',
+		stage: 1,
+		evoSkill: null
 	},
 	{
 		name: 'Zouchouten',
 		aliases: [],
-		inherit: 'Phys',
+		affinities: {
+			skillPotential: {
+				Phys: 4,
+				Fire: 0,
+				Ice: 0,
+				Elec: 0,
+				Force: -4,
+				Light: 3,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 0,
+				Recovery: 0,
+				Support: 1
+			},
+			inherit: null
+		},
 		arcana: 'Strength',
 		race: 'Kishin',
 		level: 36,
@@ -23028,7 +27926,8 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 39
 			}
 		],
-		affinities: {
+		resistances: {
+			ailments: {},
 			weak: [
 				'Force'
 			],
