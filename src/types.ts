@@ -36,9 +36,10 @@ export type AttackDisplay = CounterDisplay | 'Minuscule' | 'Heavy' | 'Severe' | 
 export type DamageType = 'Physical' | 'Magic';
 
 export interface DemonAffinities {
+	/** The demon's skill potential */
 	skillPotential: SkillPotential | null;
 	/** The affinity that this demon can inherit skills of */
-	inherit: Exclude<AnyAffinity, 'Gun' | 'Passive' | 'Misc' | SMTAffinity> | null;
+	inherit: InheritAffinity | null;
 }
 
 export interface DemonResistances {
@@ -91,6 +92,8 @@ export type SMTAffinity = 'Force';
 export type AnyAffinity = 'Phys' | 'Fire' | 'Ice' | 'Elec' | 'Light' | 'Dark' | 'Almighty' | 'Recovery' | 'Ailment' | 'Support' | 'Passive' | 'Misc' | SMTAffinity | PersonaAffinity;
 /** Affinities used by damage-dealing skills */
 export type DamagingAffinity = Exclude<AnyAffinity, 'Recovery' | 'Ailment' | 'Support' | 'Passive' | 'Misc'>;
+/** Affinities that can be demons' inherit affinity */
+export type InheritAffinity = Exclude<AnyAffinity, 'Gun' | 'Passive' | 'Misc' | SMTAffinity>;
 /** Affinities used by SMTCounterSkill instances */
 export type CounterAffinity = 'Phys' | 'Dark';
 /** The Light and Dark affinities */
