@@ -38,7 +38,7 @@ export type DamageType = 'Physical' | 'Magic';
 export interface DemonAffinities {
 	skillPotential: SkillPotential | null;
 	/** The affinity that this demon can inherit skills of */
-	inherit: Exclude<AnyAffinity, 'Gun' | 'Passive'> | null;
+	inherit: Exclude<AnyAffinity, 'Gun' | 'Passive' | 'Misc' | SMTAffinity> | null;
 }
 
 export interface DemonResistances {

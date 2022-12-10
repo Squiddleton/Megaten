@@ -18,7 +18,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				Recovery: 0,
 				Support: 0
 			},
-			inherit: null
+			inherit: 'Dark'
 		},
 		arcana: 'Judgement',
 		race: 'Tyrant',
@@ -690,7 +690,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				Recovery: -2,
 				Support: 0
 			},
-			inherit: null
+			inherit: 'Dark'
 		},
 		arcana: 'Death',
 		race: 'Fiend',
@@ -1043,7 +1043,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				Recovery: 1,
 				Support: 2
 			},
-			inherit: null
+			inherit: 'Ice'
 		},
 		arcana: 'Lovers',
 		race: 'Megami',
@@ -1468,7 +1468,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				Recovery: 0,
 				Support: 2
 			},
-			inherit: null
+			inherit: 'Ice'
 		},
 		arcana: 'Devil',
 		race: 'Fallen',
@@ -1874,7 +1874,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				Recovery: 0,
 				Support: 3
 			},
-			inherit: null
+			inherit: 'Dark'
 		},
 		arcana: 'Hermit',
 		race: 'Kunitsu',
@@ -2014,7 +2014,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				Recovery: 0,
 				Support: 0
 			},
-			inherit: null
+			inherit: 'Light'
 		},
 		arcana: 'Justice',
 		race: 'Divine',
@@ -3948,7 +3948,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				Recovery: 1,
 				Support: 0
 			},
-			inherit: null
+			inherit: 'Support'
 		},
 		arcana: 'Hierophant',
 		race: 'Fallen',
@@ -4016,7 +4016,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				Recovery: -1,
 				Support: 0
 			},
-			inherit: null
+			inherit: 'Wind'
 		},
 		arcana: 'Hermit',
 		race: 'Wilder',
@@ -4152,7 +4152,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				Recovery: 0,
 				Support: 0
 			},
-			inherit: null
+			inherit: 'Ice'
 		},
 		arcana: 'Fool',
 		race: 'Night',
@@ -4231,7 +4231,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				Recovery: -3,
 				Support: 0
 			},
-			inherit: null
+			inherit: 'Dark'
 		},
 		arcana: 'Moon',
 		race: 'Foul',
@@ -4383,7 +4383,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				Recovery: -4,
 				Support: 2
 			},
-			inherit: null
+			inherit: 'Psy'
 		},
 		arcana: 'Fool',
 		race: 'Wilder',
@@ -5375,7 +5375,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				Recovery: 0,
 				Support: 0
 			},
-			inherit: null
+			inherit: 'Fire'
 		},
 		arcana: 'Chariot',
 		race: 'Beast',
@@ -5443,52 +5443,89 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		arcana: 'Strength',
 		race: 'Persona',
 		level: 34,
-		hp: 450,
-		mp: 223,
+		hp: null,
+		mp: null,
 		stats: {
-			st: 53,
-			vi: 59,
-			ma: 28,
-			ag: 43,
-			lu: 30
+			st: 20,
+			vi: 21,
+			ma: 20,
+			ag: 29,
+			lu: 19
 		},
 		learnset: [
 			{
-				name: 'Fire Breath',
+				name: 'Agilao',
 				level: 0
 			},
 			{
-				name: 'Power Punch',
+				name: 'Mudo',
 				level: 0
 			},
 			{
-				name: 'Severing Bite',
+				name: 'Sukukaja',
 				level: 0
 			},
 			{
-				name: 'Resist Phys',
-				level: 65
+				name: 'Maragion',
+				level: 38
 			},
 			{
-				name: 'Madness Nails',
-				level: 66
+				name: 'Counterstrike',
+				level: 40
 			},
 			{
-				name: 'Enduring Soul',
+				name: 'Mamudo',
+				level: 42
+			},
+			{
+				name: 'Agidyne',
+				level: 45
+			},
+			{
+				name: 'Fire Boost',
+				level: 48
+			},
+			{
+				name: 'Masukukaja',
+				level: 50
+			},
+			{
+				name: 'High Counter',
+				level: 52
+			},
+			{
+				name: 'Mudoon',
+				level: 56
+			},
+			{
+				name: 'Mudo Boost',
+				level: 60
+			},
+			{
+				name: 'Maragidyne',
 				level: 67
+			},
+			{
+				name: 'Mamudoon',
+				level: 71
+			},
+			{
+				name: 'Fire Amp',
+				level: 77
 			}
 		],
 		resistances: {
 			ailments: null,
 			weak: [
-				'Ice'
+				'Light'
 			],
 			resist: [],
-			null: [],
+			null: [
+				'Fire',
+				'Dark'
+			],
 			drain: [],
-			repel: [
-				'Fire'
-			]
+			repel: []
 		},
 		game: 'p3',
 		user: 'Koromaru',
@@ -6108,7 +6145,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				Recovery: 0,
 				Support: 2
 			},
-			inherit: null
+			inherit: 'Phys'
 		},
 		arcana: 'Faith',
 		race: 'Genma',
@@ -6971,7 +7008,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				Recovery: 1,
 				Support: 2
 			},
-			inherit: null
+			inherit: 'Light'
 		},
 		arcana: 'Justice',
 		race: 'Divine',
@@ -7040,7 +7077,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				Recovery: 0,
 				Support: 1
 			},
-			inherit: null
+			inherit: 'Fire'
 		},
 		arcana: 'Emperor',
 		race: 'Fallen',
@@ -7680,7 +7717,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				Recovery: 0,
 				Support: 2
 			},
-			inherit: null
+			inherit: 'Psy'
 		},
 		arcana: 'Magician',
 		race: 'Fallen',
@@ -7754,7 +7791,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				Recovery: 2,
 				Support: 1
 			},
-			inherit: null
+			inherit: 'Wind'
 		},
 		arcana: 'Fortune',
 		race: 'Megami',
@@ -8049,7 +8086,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				Recovery: 0,
 				Support: 4
 			},
-			inherit: null
+			inherit: 'Nuke'
 		},
 		arcana: 'Sun',
 		race: 'Wargod',
@@ -9318,7 +9355,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				Recovery: -4,
 				Support: 1
 			},
-			inherit: null
+			inherit: 'Phys'
 		},
 		arcana: 'Hanged',
 		race: 'Jaki',
@@ -9633,7 +9670,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				Recovery: 1,
 				Support: 1
 			},
-			inherit: null
+			inherit: 'Wind'
 		},
 		arcana: 'Fool',
 		race: 'Fairy',
@@ -9990,7 +10027,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				Recovery: 1,
 				Support: 1
 			},
-			inherit: null
+			inherit: 'Fire'
 		},
 		arcana: 'Hanged',
 		race: 'Jirae',
@@ -11082,7 +11119,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				Recovery: 0,
 				Support: 0
 			},
-			inherit: null
+			inherit: 'Ice'
 		},
 		arcana: 'Magician',
 		race: 'Fairy',
@@ -11153,7 +11190,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				Recovery: 0,
 				Support: 1
 			},
-			inherit: null
+			inherit: 'Fire'
 		},
 		arcana: 'Magician',
 		race: 'Fairy',
@@ -11849,7 +11886,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				Recovery: 0,
 				Support: 2
 			},
-			inherit: null
+			inherit: 'Psy'
 		},
 		arcana: 'Star',
 		race: 'Night',
@@ -12012,7 +12049,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				Recovery: 0,
 				Support: -3
 			},
-			inherit: null
+			inherit: 'Psy'
 		},
 		arcana: 'Empress',
 		race: 'Femme',
@@ -12817,7 +12854,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				Recovery: 3,
 				Support: 2
 			},
-			inherit: null
+			inherit: 'Support'
 		},
 		arcana: 'Priestess',
 		race: 'Lady',
@@ -12888,7 +12925,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				Recovery: 0,
 				Support: 1
 			},
-			inherit: null
+			inherit: 'Ice'
 		},
 		arcana: 'Emperor',
 		race: 'Tyrant',
@@ -13466,7 +13503,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				Recovery: 0,
 				Support: 1
 			},
-			inherit: null
+			inherit: 'Wind'
 		},
 		arcana: 'Temperance',
 		race: 'Yoma',
@@ -13847,7 +13884,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				Recovery: 0,
 				Support: 0
 			},
-			inherit: null
+			inherit: 'Wind'
 		},
 		arcana: 'Hermit',
 		race: 'Genma',
@@ -14284,7 +14321,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				Recovery: -1,
 				Support: 0
 			},
-			inherit: null
+			inherit: 'Fire'
 		},
 		arcana: 'Empress',
 		race: 'Femme',
@@ -14428,7 +14465,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				Recovery: -1,
 				Support: 0
 			},
-			inherit: null
+			inherit: 'Psy'
 		},
 		arcana: 'Fool',
 		race: 'Foul',
@@ -14492,7 +14529,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				Recovery: 0,
 				Support: 0
 			},
-			inherit: null
+			inherit: 'Support'
 		},
 		arcana: 'Devil',
 		race: 'Night',
@@ -14562,7 +14599,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				Recovery: 0,
 				Support: 0
 			},
-			inherit: null
+			inherit: 'Ice'
 		},
 		arcana: 'Moon',
 		race: 'Night',
@@ -14965,15 +15002,15 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		},
 		arcana: 'Star',
 		race: 'Devil',
-		level: 93,
+		level: 90,
 		hp: null,
 		mp: null,
 		stats: {
-			st: 61,
-			vi: 59,
-			ma: 59,
-			ag: 52,
-			lu: 55
+			st: 59,
+			vi: 57,
+			ma: 57,
+			ag: 54,
+			lu: 50
 		},
 		learnset: [
 			{
@@ -14981,31 +15018,27 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 0
 			},
 			{
-				name: 'Drain Dark',
+				name: 'Blazing Hell',
 				level: 0
 			},
 			{
-				name: 'Morning Star',
-				level: 94
+				name: 'Rebel Soul',
+				level: 0
 			},
 			{
-				name: 'Spell Master',
+				name: 'Concentrate',
 				level: 95
 			},
 			{
-				name: 'Heat Riser',
+				name: 'Morning Star',
 				level: 96
 			},
 			{
-				name: 'Repel Light',
-				level: 97
-			},
-			{
-				name: 'Insta-Heal',
+				name: 'Heat Riser',
 				level: 98
 			},
 			{
-				name: 'Drain Phys',
+				name: 'Shadow of Grief',
 				level: 99
 			}
 		],
@@ -15015,13 +15048,13 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				'Light'
 			],
 			resist: [
+				'Phys',
 				'Fire',
 				'Ice',
 				'Elec',
 				'Wind'
 			],
 			null: [
-				'Phys',
 				'Gun'
 			],
 			drain: [
@@ -15650,7 +15683,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				Recovery: 0,
 				Support: 0
 			},
-			inherit: null
+			inherit: 'Fire'
 		},
 		arcana: 'Tower',
 		race: 'Tyrant',
@@ -16399,7 +16432,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				Recovery: -4,
 				Support: 2
 			},
-			inherit: null
+			inherit: 'Light'
 		},
 		arcana: 'Justice',
 		race: 'Herald',
@@ -16743,7 +16776,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				Recovery: 0,
 				Support: 1
 			},
-			inherit: null
+			inherit: 'Nuke'
 		},
 		arcana: 'Sun',
 		race: 'Tyrant',
@@ -16822,7 +16855,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				Recovery: 3,
 				Support: 0
 			},
-			inherit: null
+			inherit: 'Light'
 		},
 		arcana: 'Temperance',
 		race: 'Deity',
@@ -16895,7 +16928,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				Recovery: 0,
 				Support: -1
 			},
-			inherit: null
+			inherit: 'Support'
 		},
 		arcana: 'Death',
 		race: 'Night',
@@ -17032,7 +17065,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				Recovery: 0,
 				Support: 0
 			},
-			inherit: null
+			inherit: 'Nuke'
 		},
 		arcana: 'Death',
 		race: 'Fury',
@@ -17188,7 +17221,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				Recovery: 0,
 				Support: 0
 			},
-			inherit: null
+			inherit: 'Elec'
 		},
 		arcana: 'Moon',
 		race: 'Wilder',
@@ -17331,7 +17364,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				Recovery: 0,
 				Support: 1
 			},
-			inherit: null
+			inherit: 'Elec'
 		},
 		arcana: 'Hermit',
 		race: 'Snake',
@@ -17540,7 +17573,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				Recovery: 0,
 				Support: 0
 			},
-			inherit: null
+			inherit: 'Dark'
 		},
 		arcana: 'Devil',
 		race: 'Fallen',
@@ -17734,7 +17767,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				Recovery: 3,
 				Support: 3
 			},
-			inherit: null
+			inherit: 'Fire'
 		},
 		arcana: 'Star',
 		race: 'Wargod',
@@ -17930,7 +17963,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				Recovery: 4,
 				Support: 3
 			},
-			inherit: null
+			inherit: 'Wind'
 		},
 		arcana: 'Fortune',
 		race: 'Megami',
@@ -18450,7 +18483,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				Recovery: 4,
 				Support: 0
 			},
-			inherit: null
+			inherit: 'Psy'
 		},
 		arcana: 'Faith',
 		race: 'Kunitsu',
@@ -19334,7 +19367,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				Recovery: -2,
 				Support: 1
 			},
-			inherit: null
+			inherit: 'Nuke'
 		},
 		arcana: 'Hanged',
 		race: 'Beast',
@@ -20157,7 +20190,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				Recovery: -2,
 				Support: 0
 			},
-			inherit: null
+			inherit: 'Dark'
 		},
 		arcana: 'Death',
 		race: 'Haunt',
@@ -20331,7 +20364,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				Recovery: 1,
 				Support: 1
 			},
-			inherit: null
+			inherit: 'Recovery'
 		},
 		arcana: 'Lovers',
 		race: 'Fairy',
@@ -20681,7 +20714,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				Recovery: 2,
 				Support: 1
 			},
-			inherit: null
+			inherit: 'Recovery'
 		},
 		arcana: 'Justice',
 		race: 'Divine',
@@ -20900,7 +20933,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				Recovery: 0,
 				Support: 0
 			},
-			inherit: null
+			inherit: 'Fire'
 		},
 		arcana: 'Magician',
 		race: 'Night',
@@ -21116,7 +21149,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				Recovery: 0,
 				Support: -1
 			},
-			inherit: null
+			inherit: 'Elec'
 		},
 		arcana: 'Temperance',
 		race: 'Snake',
@@ -22026,7 +22059,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				Recovery: 0,
 				Support: 2
 			},
-			inherit: null
+			inherit: 'Recovery'
 		},
 		arcana: 'Priestess',
 		race: 'Megami',
@@ -22593,7 +22626,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				Recovery: 0,
 				Support: 2
 			},
-			inherit: null
+			inherit: 'Nuke'
 		},
 		arcana: 'Emperor',
 		race: 'Fairy',
@@ -22664,7 +22697,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				Recovery: -5,
 				Support: 0
 			},
-			inherit: null
+			inherit: 'Dark'
 		},
 		arcana: 'Tower',
 		race: 'Drake',
@@ -22740,7 +22773,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				Recovery: 0,
 				Support: 2
 			},
-			inherit: null
+			inherit: 'Elec'
 		},
 		arcana: 'Strength',
 		race: 'Holy',
@@ -22964,7 +22997,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				Recovery: -4,
 				Support: 1
 			},
-			inherit: null
+			inherit: 'Phys'
 		},
 		arcana: 'Faith',
 		race: 'Wargod',
@@ -23041,7 +23074,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				Recovery: 2,
 				Support: 1
 			},
-			inherit: null
+			inherit: 'Ice'
 		},
 		arcana: 'Priestess',
 		race: 'Fairy',
@@ -23191,7 +23224,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				Recovery: 0,
 				Support: -1
 			},
-			inherit: null
+			inherit: 'Dark'
 		},
 		arcana: 'Chariot',
 		race: 'Foul',
@@ -23396,7 +23429,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				Recovery: 0,
 				Support: 1
 			},
-			inherit: null
+			inherit: 'Psy'
 		},
 		arcana: 'Moon',
 		race: 'Night',
@@ -24941,7 +24974,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				Recovery: 0,
 				Support: 0
 			},
-			inherit: null
+			inherit: 'Elec'
 		},
 		arcana: 'Chariot',
 		race: 'Kishin',
@@ -25599,7 +25632,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				Recovery: 0,
 				Support: 0
 			},
-			inherit: null
+			inherit: 'Nuke'
 		},
 		arcana: 'Judgement',
 		race: 'Fiend',
@@ -26057,18 +26090,18 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		aliases: [],
 		affinities: {
 			skillPotential: null,
-			inherit: 'Light'
+			inherit: 'Nuke'
 		},
-		arcana: 'Faith',
+		arcana: 'Hierophant',
 		race: 'Holy',
 		level: 39,
 		hp: null,
 		mp: null,
 		stats: {
 			st: 20,
-			vi: 25,
-			ma: 27,
-			ag: 28,
+			vi: 24,
+			ma: 26,
+			ag: 27,
 			lu: 24
 		},
 		learnset: [
@@ -26077,28 +26110,20 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 0
 			},
 			{
-				name: 'Mahama',
+				name: 'Mafreila',
 				level: 0
 			},
 			{
-				name: 'Dekunda',
+				name: 'Mediarama',
 				level: 0
 			},
 			{
-				name: 'Samarecarm',
-				level: 41
+				name: 'Recarm',
+				level: 40
 			},
 			{
-				name: 'Swift Strike',
+				name: 'Regenerate 2',
 				level: 42
-			},
-			{
-				name: 'Hamabarion',
-				level: 43
-			},
-			{
-				name: 'Hamaon',
-				level: 44
 			}
 		],
 		resistances: {
@@ -26315,7 +26340,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				Recovery: 0,
 				Support: 2
 			},
-			inherit: null
+			inherit: 'Phys'
 		},
 		arcana: 'Strength',
 		race: 'Yoma',
@@ -27245,7 +27270,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				Recovery: 2,
 				Support: 2
 			},
-			inherit: null
+			inherit: 'Elec'
 		},
 		arcana: 'Councillor',
 		race: 'Avian',
@@ -27379,7 +27404,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				Recovery: 0,
 				Support: 1
 			},
-			inherit: null
+			inherit: 'Phys'
 		},
 		arcana: 'Tower',
 		race: 'Wargod',
