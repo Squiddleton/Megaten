@@ -1,5 +1,11 @@
-/** Ailments inflicted by Skill instances */
-export type Ailment = 'Burn' | 'Charm' | 'Confuse' | 'Despair' | 'Enervation' | 'Exhaustion' | 'Fear' | 'Freeze' | 'Mirage' | 'Poison' | 'Rage' | 'Seal' | 'Shock' | 'Sleep';
+/** An ailment inflicted by a skill */
+export interface Ailment {
+	name: AilmentName;
+	chance: number;
+}
+
+/** Ailments' names */
+export type AilmentName = 'Burn' | 'Charm' | 'Confuse' | 'Despair' | 'Enervation' | 'Exhaustion' | 'Fear' | 'Freeze' | 'Mirage' | 'Poison' | 'Rage' | 'Seal' | 'Shock' | 'Sleep';
 
 /** Resistances to ailments */
 export type AilResistance = 'Resist' | 'Null';
@@ -18,6 +24,24 @@ export type Arcana = 'Fool' | 'Magician' | 'Priestess' | 'Empress' | 'Emperor' |
 | 'Justice' | 'Hermit' | 'Fortune' | 'Strength' | 'Hanged' | 'Death' | 'Temperance' | 'Devil' | 'Tower'
 | 'Star' | 'Moon' | 'Sun' | 'Judgement' | 'Faith' | 'Councillor' | 'World' | 'Apostle' | 'Hope';
 
+/** An ATTACK-type skill's cost */
+export interface AttackCost {
+	/** The amount of HP or MP that the skill uses */
+	amount: number;
+	/** The type of stat that the skill uses */
+	type: HPMP;
+}
+
+/** An ATTACK-type skill's power */
+export interface AttackPower {
+	/** The skill's base power */
+	amount: number;
+	/** The skill's public power relative to other skills */
+	display: AttackDisplay;
+	/** The type of damage that the skill inflicts */
+	type: DamageType;
+}
+
 /** Barriers set up by a Skill instance */
 export type Barrier = 'Painting' | 'Kannabi Veil' | 'Tetrakarn' | 'Makarakarn' | 'Shield of Justice' | 'Tetraja' | `${string} Block`;
 
@@ -32,6 +56,14 @@ export type CounterDisplay = 'Weak' | 'Medium';
 /** Displayed damage values for AttackSkill instances */
 export type AttackDisplay = CounterDisplay | 'Minuscule' | 'Heavy' | 'Severe' | 'Colossal';
 
+/** An SMTCOUNTER-type skill's power */
+export interface CounterPower {
+	/** The skill's base power */
+	amount: number;
+	/** The skill's public power relative to other skills */
+	display: CounterDisplay;
+}
+
 /** Types of damage dealt */
 export type DamageType = 'Physical' | 'Magic';
 
@@ -44,7 +76,7 @@ export interface DemonAffinities {
 
 export interface DemonResistances {
 	/** The ailments that the demon resists or nullifies */
-	ailments: Partial<Record<Ailment, AilResistance | 'Weak'>> | null;
+	ailments: Partial<Record<AilmentName, AilResistance | 'Weak'>> | null;
 	/** The affinities that the demon is weak to */
 	weak: DamagingAffinity[];
 	/** The affinities that the demon resists */
@@ -55,6 +87,14 @@ export interface DemonResistances {
 	drain: DamagingAffinity[];
 	/** The affinities that the demon repels */
 	repel: DamagingAffinity[];
+}
+
+/** A skill that a demon naturally learns */
+export interface DemonSkill {
+	/** The skill's name */
+	name: string;
+	/** The level that the skill is learned, or 0 if innate */
+	level: number;
 }
 
 /** A demon's stats */

@@ -4,7 +4,7 @@ import { formatPossessive, normalize } from '@squiddleton/util';
 import type { DemonData, PersonaData } from './dataTypes';
 import demonData from './demonData';
 import { MegatenError } from './error';
-import type { Arcana, DemonAffinities, DemonResistances, DemonStats, Game, Race, Stage } from './types';
+import type { Arcana, DemonAffinities, DemonResistances, DemonSkill, DemonStats, Game, Race, Stage } from './types';
 
 function isPersona(demon: Demon): demon is Persona;
 function isPersona(demon: DemonData): demon is PersonaData;
@@ -34,10 +34,7 @@ export class Demon implements DemonData {
 	/** The demon's initial stats */
 	stats: DemonStats;
 	/** The skills that the demon learns by leveling up */
-	learnset: {
-		name: string;
-		level: number;
-	}[];
+	learnset: DemonSkill[];
 	/** The demon's resistances */
 	resistances: DemonResistances;
 	/** The game that this demon's data originates from */

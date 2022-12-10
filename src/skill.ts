@@ -2,7 +2,7 @@ import { normalize } from '@squiddleton/util';
 import type { AilBoostSkillData, AilDefensiveSkillData, AilmentSkillData, AttackSkillData, AutoBuffSkillData, BarrierBreakSkillData, BarrierSkillData, BoostSkillData, BreakSkillData, ChargeSkillData, CritBoostSkillData, CritSkillData, DefensiveSkillData, EndureSkillData, EvasionSkillData, HalveSkillData, InstaKillBoostSkillData, MasterSkillData, MiscSkillData, NaviSkillData, PersonaCounterSkillData, PostBattleSkillData, RecoverySkillData, RegenSkillData, SMTCounterSkillData, SiphonSkillData, SkillData, SpringSkillData, SupportSkillData, SusceptibilitySkillData, TauntSkillData, WallSkillData } from './dataTypes';
 import { MegatenError } from './error';
 import skillData from './skillData';
-import type { AilResistance, Ailment, AllyRange, AnyAffinity, AnyRange, AttackDisplay, Barrier, Buff, Charge, CounterAffinity, CounterDisplay, DamageType, DamagingAffinity, EnemyRange, EvasionBoostCriteria, HPMP, HPMPAil, LightDark, PostBattleStat, RecoveryAmount, RegenCriteria, Resistance, RestoreCriteria, SMTAffinity, Series, SkillType } from './types';
+import type { AilResistance, Ailment, AilmentName, AllyRange, AnyAffinity, AnyRange, AttackCost, AttackPower, Barrier, Buff, Charge, CounterAffinity, CounterPower, DamagingAffinity, EnemyRange, EvasionBoostCriteria, HPMP, HPMPAil, LightDark, PostBattleStat, RecoveryAmount, RegenCriteria, Resistance, RestoreCriteria, SMTAffinity, Series, SkillType } from './types';
 
 export abstract class Skill implements SkillData {
 	/** The skill's name */
@@ -52,7 +52,7 @@ export class AilBoostSkill extends Skill implements AilBoostSkillData {
 	type: 'AILBOOST';
 	description: string;
 	/** The ailment that the skill increases the odds of afflicting */
-	ailment: Ailment | 'ALL';
+	ailment: AilmentName | 'ALL';
 	/** The amount that the odds of afflicting the ailment are increased by */
 	amount: number;
 	/** Whether the skill only takes effect under certain weather conditions */
@@ -77,7 +77,7 @@ export class AilDefensiveSkill extends Skill implements AilDefensiveSkillData {
 	type: 'AILDEFENSIVE';
 	description: string;
 	/** The ailment whose odds of affliction are reduced by the skill */
-	ailment: Ailment | 'ALL' | 'Confuse/Fear/Rage/Despair';
+	ailment: AilmentName | 'ALL' | 'Confuse/Fear/Rage/Despair';
 	/** The level of resistance to the ailment */
 	resistance: AilResistance;
 	constructor(data: AilDefensiveSkillData) {
@@ -99,7 +99,7 @@ export class AilmentSkill extends Skill implements AilmentSkillData {
 	type: 'AILMENT';
 	description: string;
 	/** The ailments that the skill can afflict */
-	ailments: Ailment[];
+	ailments: AilmentName[];
 	/** The chance of afflicting the ailments */
 	chance: number;
 	/** The skill's MP cost */
@@ -128,15 +128,9 @@ export class AttackSkill extends Skill implements AttackSkillData {
 	type: 'ATTACK';
 	description: string;
 	/** The ailment names and chances that the skill can afflict */
-	ailments: {
-		name: Ailment;
-		chance: number;
-	}[];
+	ailments: Ailment[];
 	/** The skill cost's type and amount */
-	cost: {
-		type: HPMP;
-		amount: number;
-	};
+	cost: AttackCost;
 	/** The skill's special or notable features */
 	flags: string[];
 	/** The maximum times that the skill can land */
@@ -144,11 +138,7 @@ export class AttackSkill extends Skill implements AttackSkillData {
 	/** The minimum times that the skill can land, excluding misses */
 	min: number;
 	/** The numerical and displayed amount of damage that the skill deals */
-	power: {
-		amount: number;
-		display: AttackDisplay;
-		type: DamageType;
-	};
+	power: AttackPower;
 	/** The range that the skill targets */
 	range: EnemyRange;
 	/** The series that the skill data originates from */
@@ -732,7 +722,7 @@ export class RecoverySkill extends Skill implements RecoverySkillData {
 	type: 'RECOVERY';
 	description: string;
 	/** The ailments that the skill recovers from */
-	ailments: (Ailment | 'ALL')[];
+	ailments: (AilmentName | 'ALL')[];
 	/** The displayed amount that the skill recovers by */
 	amount: RecoveryAmount | null;
 	/** The buffs that the skill casts */
@@ -844,10 +834,7 @@ export class SMTCounterSkill extends Skill implements SMTCounterSkillData {
 	/** The affinity of the attack dealt from the counter */
 	element: CounterAffinity;
 	/** The numerical and displayed amount of damage that the skill deals */
-	power: {
-		amount: number;
-		display: CounterDisplay;
-	};
+	power: CounterPower;
 	constructor(data: SMTCounterSkillData) {
 		const { attackDown, element, power } = data;
 		super(data);

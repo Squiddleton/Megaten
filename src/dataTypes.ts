@@ -1,4 +1,4 @@
-import type { AilResistance, Ailment, AllyRange, AnyAffinity, AnyRange, Arcana, AttackDisplay, Barrier, Buff, Charge, CounterAffinity, CounterDisplay, DamageType, DamagingAffinity, DemonAffinities, DemonResistances, DemonStats, EnemyRange, EvasionBoostCriteria, Game, HPMP, HPMPAil, LightDark, PostBattleStat, Race, RecoveryAmount, RegenCriteria, Resistance, RestoreCriteria, SMTAffinity, Series, SkillType, Stage } from './types';
+import type { AilResistance, Ailment, AilmentName, AllyRange, AnyAffinity, AnyRange, Arcana, AttackCost, AttackPower, Barrier, Buff, Charge, CounterAffinity, CounterPower, DamagingAffinity, DemonAffinities, DemonResistances, DemonSkill, DemonStats, EnemyRange, EvasionBoostCriteria, Game, HPMP, HPMPAil, LightDark, PostBattleStat, Race, RecoveryAmount, RegenCriteria, Resistance, RestoreCriteria, SMTAffinity, Series, SkillType, Stage } from './types';
 
 /** Data used for constructing a Demon instance */
 export interface DemonData {
@@ -11,10 +11,7 @@ export interface DemonData {
 	hp: number | null;
 	mp: number | null;
 	stats: DemonStats;
-	learnset: {
-		name: string;
-		level: number;
-	}[];
+	learnset: DemonSkill[];
 	resistances: DemonResistances;
 	game: Game;
 }
@@ -37,7 +34,7 @@ export interface SkillData {
 export interface AilBoostSkillData extends SkillData {
 	affinity: 'Passive';
 	type: 'AILBOOST';
-	ailment: Ailment | 'ALL';
+	ailment: AilmentName | 'ALL';
 	amount: number;
 	weather: boolean;
 }
@@ -45,14 +42,14 @@ export interface AilBoostSkillData extends SkillData {
 export interface AilDefensiveSkillData extends SkillData {
 	affinity: 'Passive';
 	type: 'AILDEFENSIVE';
-	ailment: Ailment | 'ALL' | 'Confuse/Fear/Rage/Despair';
+	ailment: AilmentName | 'ALL' | 'Confuse/Fear/Rage/Despair';
 	resistance: AilResistance;
 }
 
 export interface AilmentSkillData extends SkillData {
 	affinity: 'Ailment';
 	type: 'AILMENT';
-	ailments: Ailment[];
+	ailments: AilmentName[];
 	chance: number;
 	cost: number;
 	flags: string[];
@@ -62,22 +59,12 @@ export interface AilmentSkillData extends SkillData {
 export interface AttackSkillData extends SkillData {
 	affinity: DamagingAffinity;
 	type: 'ATTACK';
-	ailments: {
-		name: Ailment;
-		chance: number;
-	}[];
-	cost: {
-		type: HPMP;
-		amount: number;
-	};
+	ailments: Ailment[];
+	cost: AttackCost;
 	flags: string[];
 	max: number;
 	min: number;
-	power: {
-		amount: number;
-		display: AttackDisplay;
-		type: DamageType;
-	};
+	power: AttackPower;
 	range: EnemyRange;
 	series: Series;
 }
@@ -210,7 +197,7 @@ export interface PostBattleSkillData extends SkillData {
 export interface RecoverySkillData extends SkillData {
 	affinity: 'Recovery';
 	type: 'RECOVERY';
-	ailments: (Ailment | 'ALL')[];
+	ailments: (AilmentName | 'ALL')[];
 	amount: RecoveryAmount | null;
 	buffs: Buff[];
 	cost: number;
@@ -240,10 +227,7 @@ export interface SMTCounterSkillData extends SkillData {
 	attackDown: boolean;
 	chance: number;
 	element: CounterAffinity;
-	power: {
-		amount: number;
-		display: CounterDisplay;
-	};
+	power: CounterPower;
 }
 
 export interface SpringSkillData extends SkillData {
