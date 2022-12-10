@@ -34,10 +34,10 @@ const bufu = Skill.get('bufu'); // Gets a Skill instance
 const zorro = Persona.get('ZORRO!'); // Gets a guaranteed Persona instance
 
 const demonArray = Demon.array; // Gets an array of all demons
-const demonCollection = Demon.collection; // Gets a discord.js Collection of all demons
-// The other structures also have static .array and .collection properties
+const demonMap = Demon.map; // Gets a map of all demons, keyed by their devName properties
+// The other structures also have static .array and .map properties
 const skillArray = Skill.array;
-const personaCollection = Persona.collection;
+const personaMap = Persona.map;
 
 // All get() functions take optional arguments that typeguard for nonexistent structures
 const nullDemon = Demon.get('Kazuma Kaneko'); // Returns null; typed as "Demon | null"

@@ -1,6 +1,5 @@
 import { readFileSync } from 'node:fs';
 import path from 'node:path';
-import { Collection } from '@discordjs/collection';
 import { formatPossessive, normalize } from '@squiddleton/util';
 import type { DemonData, PersonaData } from './dataTypes';
 import demonData from './demonData';
@@ -72,8 +71,8 @@ export class Demon implements DemonData {
 	}
 	/** An array of every Demon and Persona instance */
 	static array: Demon[] = [];
-	/** A Collection of every Demon and Persona instance, mapped by their devName properties */
-	static collection: Collection<string, Demon> = new Collection();
+	/** A map of every Demon and Persona instance, keyed by their devName properties */
+	static map: Map<string, Demon> = new Map();
 	/**
 	 *
 	 * Gets a Demon instance by its name.
@@ -85,7 +84,7 @@ export class Demon implements DemonData {
 	static get(name: string, error?: boolean): Demon | null;
 	static get(name: string, error = false) {
 		name = normalize(name);
-		const found = this.collection.get(name) ?? Demon.collection.find(demon => demon.aliases.some(alias => normalize(alias) === name)) ?? null;
+		const found = this.map.get(name) ?? Demon.array.find(demon => demon.aliases.some(alias => normalize(alias) === name)) ?? null;
 		if (error && found === null) throw new MegatenError(name, 'Demon');
 		return found;
 	}
@@ -106,7 +105,7 @@ export class Persona extends Demon implements PersonaData {
 	}
 	/** The Persona that this Persona can evolve into, or null if none */
 	get evolution(): Persona | null {
-		return Persona.collection.find(persona => persona.user === this.user && persona.stage === (this.stage + 1)) ?? null;
+		return Persona.array.find(persona => persona.user === this.user && persona.stage === (this.stage + 1)) ?? null;
 	}
 	/**
 	 * Returns a string in "(User) (Name)" format
@@ -116,8 +115,8 @@ export class Persona extends Demon implements PersonaData {
 	}
 	/** An array of every Persona instance */
 	static array: Persona[] = [];
-	/** A Collection of every Persona instance, mapped by their devName properties */
-	static collection: Collection<string, Persona> = new Collection();
+	/** A map of every Persona instance, keyed by their devName properties */
+	static map: Map<string, Persona> = new Map();
 	/**
 	 *
 	 * Gets a Persona instance by its name.
@@ -138,10 +137,13 @@ export class Persona extends Demon implements PersonaData {
 	}
 }
 
+function mapToCollection(demon: Persona): [string, Persona];
+function mapToCollection(demon: Demon) {
+	return [demon.devName, demon];
+}
+
 Demon.array = demonData.map(data => new (isPersona(data) ? Persona : Demon)(data));
-Demon.collection = new Collection(Demon.array.map(demon => [demon.devName, demon]));
+Demon.map = new Map(Demon.array.map(demon => [demon.devName, demon]));
 
-const personaFilter = (demon: Demon): demon is Persona => demon.isPersona();
-
-Persona.array = Demon.array.filter(personaFilter);
-Persona.collection = Demon.collection.filter(personaFilter);
+Persona.array = Demon.array.filter((demon): demon is Persona => demon.isPersona());
+Persona.map = new Map(Persona.array.map(mapToCollection));

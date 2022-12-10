@@ -1,4 +1,3 @@
-import { Collection } from '@discordjs/collection';
 import { normalize } from '@squiddleton/util';
 import type { AilBoostSkillData, AilDefensiveSkillData, AilmentSkillData, AttackSkillData, AutoBuffSkillData, BarrierBreakSkillData, BarrierSkillData, BoostSkillData, BreakSkillData, ChargeSkillData, CritBoostSkillData, CritSkillData, DefensiveSkillData, EndureSkillData, EvasionSkillData, HalveSkillData, InstaKillBoostSkillData, MasterSkillData, MiscSkillData, NaviSkillData, PersonaCounterSkillData, PostBattleSkillData, RecoverySkillData, RegenSkillData, SMTCounterSkillData, SiphonSkillData, SkillData, SpringSkillData, SupportSkillData, SusceptibilitySkillData, TauntSkillData, WallSkillData } from './dataTypes';
 import { MegatenError } from './error';
@@ -29,8 +28,8 @@ export abstract class Skill implements SkillData {
 	}
 	/** An array of every Skill instance */
 	static array: AnySkill[] = [];
-	/** A Collection of every Skill instance, mapped by their devName properties */
-	static collection: Collection<string, AnySkill> = new Collection();
+	/** A map of every Skill instance, keyed by their devName properties */
+	static map: Map<string, AnySkill> = new Map();
 	/**
 	 *
 	 * Gets a Skill instance by its name.
@@ -41,7 +40,7 @@ export abstract class Skill implements SkillData {
 	static get(name: string, error: true): AnySkill;
 	static get(name: string, error?: boolean): AnySkill | null;
 	static get(name: string, error = false) {
-		const found = this.collection.get(normalize(name)) ?? null;
+		const found = this.map.get(normalize(name)) ?? null;
 		if (error && found === null) throw new MegatenError(name, 'Skill');
 		return found;
 	}
@@ -1022,7 +1021,7 @@ Skill.array = skillData.map(data => {
 		case 'WALL': return new WallSkill(data);
 	}
 });
-Skill.collection = new Collection(Skill.array.map(skill => [skill.devName, skill]));
+Skill.map = new Map(Skill.array.map(skill => [skill.devName, skill]));
 
 export type AnySkillData = AilBoostSkillData | AilDefensiveSkillData | AilmentSkillData | AttackSkillData | AutoBuffSkillData | BarrierSkillData | BarrierBreakSkillData | BoostSkillData | BreakSkillData
 | ChargeSkillData | CritSkillData | CritBoostSkillData | DefensiveSkillData | EndureSkillData | EvasionSkillData | HalveSkillData | InstaKillBoostSkillData | MasterSkillData | MiscSkillData | NaviSkillData
