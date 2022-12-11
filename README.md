@@ -194,6 +194,7 @@ Each skill is marked by a type property which groups similar skill instances tog
 ```javascript
 AttackSkill {
   name: 'Ziodyne',
+  devName: 'ziodyne',
   affinity: 'Elec',
   type: 'ATTACK',
   unique: false,
