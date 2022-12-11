@@ -10725,7 +10725,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		],
 		resistances: {
 			ailments: {
-				Seal: 'Resist'
+				Seal: 'Weak'
 			},
 			weak: [
 				'Dark'
@@ -10753,51 +10753,97 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		arcana: 'Lovers',
 		race: 'Persona',
 		level: 1,
-		hp: 204,
-		mp: 251,
+		hp: null,
+		mp: null,
 		stats: {
-			st: 21,
-			vi: 25,
-			ma: 47,
-			ag: 36,
-			lu: 36
+			st: 1,
+			vi: 3,
+			ma: 2,
+			ag: 1,
+			lu: 3
 		},
 		learnset: [
 			{
-				name: 'Elec Block',
+				name: 'Dia',
 				level: 0
 			},
 			{
-				name: 'Samarecarm',
-				level: 0
+				name: 'Patra',
+				level: 4
 			},
 			{
-				name: 'Zionga',
-				level: 0
+				name: 'Garu',
+				level: 5
+			},
+			{
+				name: 'Charmdi',
+				level: 16
+			},
+			{
+				name: 'Magaru',
+				level: 21
+			},
+			{
+				name: 'Media',
+				level: 22
+			},
+			{
+				name: 'Diarama',
+				level: 25
+			},
+			{
+				name: 'Recarm',
+				level: 28
+			},
+			{
+				name: 'Garula',
+				level: 32
 			},
 			{
 				name: 'Me Patra',
-				level: 47
+				level: 36
 			},
 			{
-				name: 'Mazionga',
-				level: 48
+				name: 'Mediarama',
+				level: 43
 			},
 			{
-				name: 'Marakukaja',
-				level: 49
+				name: 'Magarula',
+				level: 46
+			},
+			{
+				name: 'Diarahan',
+				level: 52
+			},
+			{
+				name: 'Garudyne',
+				level: 57
+			},
+			{
+				name: 'Wind Break',
+				level: 60
+			},
+			{
+				name: 'Magarudyne',
+				level: 65
+			},
+			{
+				name: 'Samarecarm',
+				level: 68
+			},
+			{
+				name: 'Mediarahan',
+				level: 74
 			}
 		],
 		resistances: {
 			ailments: null,
 			weak: [
-				'Dark'
-			],
-			resist: [
-				'Fire'
-			],
-			null: [
 				'Elec'
+			],
+			resist: [],
+			null: [
+				'Wind'
 			],
 			drain: [],
 			repel: []
@@ -14814,39 +14860,47 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		arcana: 'Justice',
 		race: 'Persona',
 		level: 75,
-		hp: 276,
-		mp: 284,
+		hp: null,
+		mp: null,
 		stats: {
-			st: 31,
-			vi: 33,
+			st: 53,
+			vi: 46,
 			ma: 47,
-			ag: 40,
-			lu: 42
+			ag: 47,
+			lu: 39
 		},
 		learnset: [
 			{
-				name: 'Bufudyne',
+				name: 'Fortify Spirit',
 				level: 0
 			},
 			{
-				name: 'Mabufudyne',
+				name: 'Laevateinn',
 				level: 0
 			},
 			{
-				name: 'Ziodyne',
+				name: 'Megidolaon',
 				level: 0
 			},
 			{
-				name: 'High Restore',
-				level: 57
+				name: 'Debilitate',
+				level: 0
 			},
 			{
-				name: 'Agidyne',
-				level: 58
+				name: 'Riot Gun',
+				level: 0
 			},
 			{
-				name: 'Mazandyne',
-				level: 59
+				name: 'Mudobarion',
+				level: 0
+			},
+			{
+				name: 'Attack Master',
+				level: 0
+			},
+			{
+				name: 'Evade Light',
+				level: 0
 			}
 		],
 		resistances: {
@@ -14854,12 +14908,9 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			weak: [
 				'Light'
 			],
-			resist: [
-				'Force',
-				'Dark'
-			],
+			resist: [],
 			null: [
-				'Ice'
+				'Dark'
 			],
 			drain: [],
 			repel: []
