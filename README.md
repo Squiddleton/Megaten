@@ -55,7 +55,22 @@ Demon {
   name: 'Jack Frost',
   devName: 'jackfrost',
   aliases: [],
-  inherit: 'Ice',
+  affinities: {
+    skillPotential: {
+      Phys: 0,
+      Fire: -5,
+      Ice: 4,
+      Elec: 0,
+      Force: 0,
+      Light: 2,
+      Dark: 0,
+      Almighty: 0,
+      Ailment: 0,
+      Recovery: 0,
+      Support: 0
+    },
+    inherit: 'Ice'
+  },
   arcana: 'Magician',
   race: 'Fairy',
   level: 25,
@@ -63,8 +78,8 @@ Demon {
   mp: 153,
   stats: {
     st: 14,
-    ma: 29,
     vi: 15,
+    ma: 29,
     ag: 21,
     lu: 21
   },
@@ -90,7 +105,10 @@ Demon {
       level: 28
     }
   ],
-  affinities: {
+  resistances: {
+    ailments: {
+      Charm: 'Weak'
+    },
     weak: [
       'Fire'
     ],
@@ -102,15 +120,19 @@ Demon {
     repel: []
   },
   game: 'smt5',
-  image: Buffer {...},
-  isPersona(): false
+  isPersona(): false,
+  toString(): 'Fairy Jack Frost',
+  image: Buffer { ... }
 }
 
 Persona {
   name: 'Mercurius',
   devName: 'mercurius',
   aliases: [],
-  inherit: 'Wind',
+  affinities: {
+    skillPotential: null,
+    inherit: null
+  },
   arcana: 'Magician',
   race: 'Persona',
   level: 1,
@@ -138,7 +160,8 @@ Persona {
     },
     // ...
   ],
-  affinities: {
+  resistances: {
+    ailments: null,
     weak: [
       'Elec'
     ],
@@ -152,12 +175,13 @@ Persona {
     repel: []
   },
   game: 'p5',
-  image: Buffer {...},
-  isPersona(): true,
   user: 'Morgana',
   stage: 2,
-  evoSkill: "Evade Elec",
-  evolution: Persona {...}
+  evoSkill: 'Evade Elec',
+  isPersona(): false,
+  toString(): 'Morgana\'s Mercurius',
+  image: Buffer { ... },
+  evolution: Persona { name: 'Diego', ... }
 }
 ```
 
@@ -170,25 +194,27 @@ Each skill is marked by a type property which groups similar skill instances tog
 ```javascript
 AttackSkill {
   name: 'Ziodyne',
-  devName: 'ziodyne',
-  unique: false,
   affinity: 'Elec',
   type: 'ATTACK',
-  range: 1,
+  unique: false,
+  accuracy: 98,
+  ailments: [],
   cost: {
     type: 'MP',
     amount: 35
   },
+  flags: [],
+  max: 1,
+  min: 1,
   power: {
     amount: 215,
     display: 'Heavy',
     type: 'Magic'
   },
-  min: 1,
-  max: 1,
-  flags: [],
-  ailments: [],
-  series: 'smt'
+  range: 'One',
+  series: 'smt',
+  description: 'Heavy Elec damage to 1 foe.',
+  toString(): 'Ziodyne: Heavy Elec damage to 1 foe.'
 }
 ```
 
