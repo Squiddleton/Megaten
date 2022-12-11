@@ -467,7 +467,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		ailments: [],
 		cost: {
 			type: 'MP',
-			amount: 48
+			amount: 50
 		},
 		flags: [],
 		max: 1,
@@ -1373,7 +1373,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		ailments: [],
 		cost: {
 			type: 'MP',
-			amount: 54
+			amount: 75
 		},
 		flags: [],
 		max: 1,
@@ -7149,7 +7149,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		ailments: [],
 		cost: {
 			type: 'MP',
-			amount: 42
+			amount: 50
 		},
 		flags: [],
 		max: 1,
@@ -7584,7 +7584,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		ailments: [],
 		cost: {
 			type: 'MP',
-			amount: 54
+			amount: 75
 		},
 		flags: [],
 		max: 1,
@@ -7606,7 +7606,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		ailments: [],
 		cost: {
 			type: 'MP',
-			amount: 48
+			amount: 50
 		},
 		flags: [],
 		max: 1,
@@ -9691,7 +9691,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		ailments: [],
 		cost: {
 			type: 'MP',
-			amount: 48
+			amount: 75
 		},
 		flags: [],
 		max: 1,
