@@ -1,5 +1,5 @@
 /** A utility type used to narrow down Persona properties' types */
-type IfPersona<IsPersona extends boolean, valueIfPersona, valueIfNotPersona> = IsPersona extends true ? valueIfPersona : valueIfNotPersona;
+type IfPersona<IsPersona extends boolean, ValueIfPersona, ValueIfNotPersona> = IsPersona extends true ? ValueIfPersona : ValueIfNotPersona;
 
 /** An ailment inflicted by a skill */
 export interface Ailment {
