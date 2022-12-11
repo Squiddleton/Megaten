@@ -11471,7 +11471,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 0
 			},
 			{
-				name: 'Bash',
+				name: 'Lunge',
 				level: 0
 			},
 			{
@@ -17514,7 +17514,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		},
 		learnset: [
 			{
-				name: 'Bash',
+				name: 'Lunge',
 				level: 0
 			},
 			{
@@ -19043,7 +19043,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		},
 		learnset: [
 			{
-				name: 'Bash',
+				name: 'Lunge',
 				level: 0
 			},
 			{
@@ -19120,7 +19120,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		},
 		learnset: [
 			{
-				name: 'Bash',
+				name: 'Lunge',
 				level: 0
 			},
 			{
@@ -24010,7 +24010,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 0
 			},
 			{
-				name: 'Bash',
+				name: 'Lunge',
 				level: 0
 			},
 			{
@@ -24311,7 +24311,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 0
 			},
 			{
-				name: 'Bash',
+				name: 'Lunge',
 				level: 0
 			},
 			{

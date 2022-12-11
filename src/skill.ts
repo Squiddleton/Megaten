@@ -146,7 +146,7 @@ export class AttackSkill extends Skill implements AttackSkillData {
 	/** The series that the skill data originates from */
 	series: Series;
 	constructor(data: AttackSkillData) {
-		const { affinity, ailments, flags, max, min, power, range } = data;
+		const { accuracy, affinity, ailments, flags, max, min, power, range, series } = data;
 		super(data);
 		this.affinity = affinity;
 		this.type = data.type;
@@ -175,8 +175,11 @@ export class AttackSkill extends Skill implements AttackSkillData {
 		if (flags.length > 0) {
 			this.description += ' ';
 
-			if (flags.includes('Accuracy Boost')) {
+			if (accuracy >= 95 && series === 'persona') {
 				this.description += 'High Accuracy.';
+			}
+			else if (accuracy === 50) {
+				this.description += 'Low Accuracy.';
 			}
 			if (flags.includes('Accuracy/Evasion Down')) {
 				this.description += 'Lowers target\'s Accuracy/Evasion by 1 rank for 3 turns.';
@@ -217,9 +220,6 @@ export class AttackSkill extends Skill implements AttackSkillData {
 			if (flags.includes('HP Dependent')) {
 				this.description += 'The more remaining HP you have, the stronger the attack.';
 			}
-			if (data.accuracy === 50) {
-				this.description += 'Low Accuracy.';
-			}
 			if (flags.includes('Instakill')) {
 				this.description += 'Medium chance of insta-kill.';
 			}
@@ -246,7 +246,7 @@ export class AttackSkill extends Skill implements AttackSkillData {
 			}
 		}
 
-		this.accuracy = data.accuracy;
+		this.accuracy = accuracy;
 		this.ailments = ailments;
 		this.cost = data.cost;
 		this.flags = flags;
