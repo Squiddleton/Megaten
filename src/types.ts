@@ -117,13 +117,6 @@ export interface DemonStats {
 /** Criteria causing EvasionSkill instances to take effect */
 export type EvasionBoostCriteria = 'Surrounded' | 'Rain/Snow';
 
-/** Games in the Persona series */
-export type PersonaGame = 'p3' | 'p4' | 'p5';
-/** Games in the Shin Megami Tensei series */
-export type SMTGame = 'smt5';
-/** Games that Demon data can originate from */
-export type AnyGame = PersonaGame | SMTGame;
-
 /** The HP or MP stats */
 export type HPMP = 'HP' | 'MP';
 /** The stat which a RegenSkill instance regenerates */
@@ -145,6 +138,13 @@ export type InheritAffinity = Exclude<AnyAffinity, 'Gun' | 'Passive' | 'Misc' | 
 export type CounterAffinity = 'Phys' | 'Dark';
 /** The Light and Dark affinities */
 export type LightDark = 'Light' | 'Dark';
+
+/** Games in the Persona series */
+export type PersonaGame = 'p3' | 'p4' | 'p5';
+/** Games in the Shin Megami Tensei series */
+export type SMTGame = 'smt5';
+/** Games that Demon data can originate from */
+export type AnyGame = PersonaGame | SMTGame;
 
 /** Demons' races */
 export type Race = 'Amatsu' | 'Avatar' | 'Avian' | 'Beast' | 'Brute' | 'Deity' | 'Devil' | 'Divine' | 'Dragon' | 'Drake' | 'Element' | 'Fairy' | 'Fallen'
