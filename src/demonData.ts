@@ -7200,7 +7200,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'p5'
+		game: 'p5',
+		user: 'Sumire Yoshizawa',
+		stage: 3,
+		evoSkill: 'Masquerade'
 	},
 	{
 		name: 'Emperor\'s Amulet',
@@ -7268,10 +7271,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'p5',
-		user: 'Sumire Yoshizawa',
-		stage: 3,
-		evoSkill: 'Masquerade'
+		game: 'p5'
 	},
 	{
 		name: 'Erthys',
@@ -27045,10 +27045,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5',
-		user: 'Naoto Shirogane',
-		stage: 3,
-		evoSkill: 'Shield of Justice'
+		game: 'smt5'
 	},
 	{
 		name: 'Yamato Sumeragi',
@@ -27148,7 +27145,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				'Dark'
 			]
 		},
-		game: 'p4'
+		game: 'p4',
+		user: 'Naoto Shirogane',
+		stage: 3,
+		evoSkill: 'Shield of Justice'
 	},
 	{
 		name: 'Yamato-Takeru',
