@@ -1,4 +1,4 @@
-import type { AilResistance, Ailment, AilmentName, AllyRange, AnyAffinity, AnyRange, Arcana, AttackCost, AttackPower, Barrier, Buff, Charge, CounterAffinity, CounterPower, DamagingAffinity, DemonAffinities, DemonResistances, DemonSkill, DemonStats, EnemyRange, EvasionBoostCriteria, Game, HPMP, HPMPAil, LightDark, PostBattleStat, Race, RecoveryAmount, RegenCriteria, Resistance, RestoreCriteria, SMTAffinity, Series, SkillType, Stage } from './types';
+import type { AilResistance, Ailment, AilmentName, AllyRange, AnyAffinity, AnyGame, AnyRange, Arcana, AttackCost, AttackPower, Barrier, Buff, Charge, CounterAffinity, CounterPower, DamagingAffinity, DemonAffinities, DemonResistances, DemonSkill, DemonStats, EnemyRange, EvasionBoostCriteria, HPMP, HPMPAil, LightDark, PersonaGame, PostBattleStat, Race, RecoveryAmount, RegenCriteria, Resistance, RestoreCriteria, SMTAffinity, Series, SkillType, Stage } from './types';
 
 /** Data used for constructing a Demon instance */
 export interface DemonData {
@@ -13,11 +13,18 @@ export interface DemonData {
 	stats: DemonStats;
 	learnset: DemonSkill[];
 	resistances: DemonResistances;
-	game: Game;
+	game: AnyGame;
 }
 
 /** Data used for constructing a Persona instance */
 export interface PersonaData extends DemonData {
+	affinities: DemonAffinities<true>;
+	arcana: Arcana;
+	race: 'Persona';
+	hp: null;
+	mp: null;
+	resistances: DemonResistances<true>;
+	game: PersonaGame;
 	user: string;
 	stage: Stage;
 	evoSkill: string | null;

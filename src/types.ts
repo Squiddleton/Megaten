@@ -1,3 +1,6 @@
+/** A utility type used to narrow down Persona properties' types */
+type IfPersona<IsPersona extends boolean, valueIfPersona, valueIfNotPersona> = IsPersona extends true ? valueIfPersona : valueIfNotPersona;
+
 /** An ailment inflicted by a skill */
 export interface Ailment {
 	name: AilmentName;
@@ -67,16 +70,16 @@ export interface CounterPower {
 /** Types of damage dealt */
 export type DamageType = 'Physical' | 'Magic';
 
-export interface DemonAffinities {
+export interface DemonAffinities<IsPersona extends boolean = boolean> {
 	/** The demon's skill potential */
-	skillPotential: SkillPotential | null;
+	skillPotential: IfPersona<IsPersona, null, SkillPotential | null>;
 	/** The affinity that this demon can inherit skills of */
 	inherit: InheritAffinity | null;
 }
 
-export interface DemonResistances {
+export interface DemonResistances<IsPersona extends boolean = boolean> {
 	/** The ailments that the demon resists or nullifies */
-	ailments: Partial<Record<AilmentName, AilResistance | 'Weak'>> | null;
+	ailments: IfPersona<IsPersona, null, Partial<Record<AilmentName, AilResistance | 'Weak'>> | null>;
 	/** The affinities that the demon is weak to */
 	weak: DamagingAffinity[];
 	/** The affinities that the demon resists */
@@ -114,8 +117,12 @@ export interface DemonStats {
 /** Criteria causing EvasionSkill instances to take effect */
 export type EvasionBoostCriteria = 'Surrounded' | 'Rain/Snow';
 
+/** Games in the Persona series */
+export type PersonaGame = 'p3' | 'p4' | 'p5';
+/** Games in the Shin Megami Tensei series */
+export type SMTGame = 'smt5';
 /** Games that Demon data can originate from */
-export type Game = 'p3' | 'p4' | 'p5' | 'smt5';
+export type AnyGame = PersonaGame | SMTGame;
 
 /** The HP or MP stats */
 export type HPMP = 'HP' | 'MP';

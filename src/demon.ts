@@ -4,7 +4,7 @@ import { formatPossessive, normalize } from '@squiddleton/util';
 import type { DemonData, PersonaData } from './dataTypes';
 import demonData from './demonData';
 import { MegatenError } from './error';
-import type { Arcana, DemonAffinities, DemonResistances, DemonSkill, DemonStats, Game, Race, Stage } from './types';
+import type { AnyGame, Arcana, DemonAffinities, DemonResistances, DemonSkill, DemonStats, PersonaGame, Race, Stage } from './types';
 
 function isPersona(demon: Demon): demon is Persona;
 function isPersona(demon: DemonData): demon is PersonaData;
@@ -38,7 +38,7 @@ export class Demon implements DemonData {
 	/** The demon's resistances */
 	resistances: DemonResistances;
 	/** The game that this demon's data originates from */
-	game: Game;
+	game: AnyGame;
 	constructor(data: DemonData) {
 		this.name = data.name;
 		this.devName = normalize(data.name);
@@ -88,6 +88,13 @@ export class Demon implements DemonData {
 }
 
 export class Persona extends Demon implements PersonaData {
+	affinities: DemonAffinities<true>;
+	arcana: Arcana;
+	race: 'Persona';
+	hp: null;
+	mp: null;
+	resistances: DemonResistances<true>;
+	game: PersonaGame;
 	/** The Persona's user */
 	user: string;
 	/** The Persona's stage of evolution */
@@ -96,6 +103,13 @@ export class Persona extends Demon implements PersonaData {
 	evoSkill: string | null;
 	constructor(data: PersonaData) {
 		super(data);
+		this.affinities = data.affinities;
+		this.arcana = data.arcana;
+		this.hp = data.hp;
+		this.mp = data.mp;
+		this.race = data.race;
+		this.resistances = data.resistances;
+		this.game = data.game;
 		this.user = data.user;
 		this.stage = data.stage;
 		this.evoSkill = data.evoSkill;
