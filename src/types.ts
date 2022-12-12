@@ -8,7 +8,7 @@ export interface Ailment {
 }
 
 /** Ailments' names */
-export type AilmentName = 'Burn' | 'Charm' | 'Confuse' | 'Despair' | 'Enervation' | 'Exhaustion' | 'Fear' | 'Freeze' | 'Mirage' | 'Poison' | 'Rage' | 'Seal' | 'Shock' | 'Sleep';
+export type AilmentName = 'Burn' | 'Charm' | 'Confuse' | 'Despair' | 'Enervate' | 'Exhaustion' | 'Fear' | 'Freeze' | 'Mirage' | 'Poison' | 'Rage' | 'Seal' | 'Shock' | 'Sleep';
 
 /** Resistances to ailments */
 export type AilResistance = 'Resist' | 'Null';
@@ -157,11 +157,11 @@ export type RecoveryAmount = 'Slight' | 'Moderate' | 'Half' | 'Full' | '130%';
 /** Criteria causing RegenSkill instances to take effect */
 export type RegenCriteria = 'Ambush' | 'Baton Pass' | 'Turn Start';
 
-/** Criteria causing SiphonSkill instances to take effect */
-export type RestoreCriteria = 'Weakness/Critical' | 'Ailment';
-
 /** Series that Skill data can originate from */
 export type Series = 'persona' | 'smt';
+
+/** Criteria causing SiphonSkill instances to take effect */
+export type SiphonCriteria = 'Ailment' | 'Weakness/Critical' | 'Drain';
 
 export type SkillPotential = Record<Exclude<AnyAffinity, PersonaAffinity | 'Passive' | 'Misc'>, number>;
 

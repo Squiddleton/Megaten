@@ -1,4 +1,4 @@
-import type { AilResistance, Ailment, AilmentName, AllyRange, AnyAffinity, AnyGame, AnyRange, Arcana, AttackCost, AttackPower, Barrier, Buff, Charge, CounterAffinity, CounterPower, DamagingAffinity, DemonAffinities, DemonResistances, DemonSkill, DemonStats, EnemyRange, EvasionBoostCriteria, HPMP, HPMPAil, LightDark, PersonaGame, PostBattleStat, Race, RecoveryAmount, RegenCriteria, Resistance, RestoreCriteria, SMTAffinity, Series, SkillType, Stage } from './types';
+import type { AilResistance, Ailment, AilmentName, AllyRange, AnyAffinity, AnyGame, AnyRange, Arcana, AttackCost, AttackPower, Barrier, Buff, Charge, CounterAffinity, CounterPower, DamagingAffinity, DemonAffinities, DemonResistances, DemonSkill, DemonStats, EnemyRange, EvasionBoostCriteria, HPMP, HPMPAil, LightDark, PersonaGame, PostBattleStat, Race, RecoveryAmount, RegenCriteria, Resistance, SMTAffinity, Series, SiphonCriteria, SkillType, Stage } from './types';
 
 /** Data used for constructing a Demon instance */
 export interface DemonData {
@@ -226,7 +226,7 @@ export interface SiphonSkillData extends SkillData {
 	affinity: 'Passive';
 	type: 'SIPHON';
 	amount: number;
-	criteria: RestoreCriteria;
+	criteria: SiphonCriteria;
 }
 
 export interface SMTCounterSkillData extends SkillData {

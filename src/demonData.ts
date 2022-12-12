@@ -710,7 +710,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 43
 			},
 			{
-				name: 'Green Wall',
+				name: 'Wind Wall',
 				level: 44
 			},
 			{
@@ -2152,7 +2152,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		},
 		learnset: [
 			{
-				name: 'God"s Hand',
+				name: 'God\'s Hand',
 				level: 0
 			},
 			{
@@ -5062,7 +5062,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 71
 			},
 			{
-				name: 'God"s Hand',
+				name: 'God\'s Hand',
 				level: 75
 			}
 		],
@@ -5274,7 +5274,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 72
 			},
 			{
-				name: 'God"s Hand',
+				name: 'God\'s Hand',
 				level: 77
 			}
 		],
@@ -6375,7 +6375,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 13
 			},
 			{
-				name: 'White Wall',
+				name: 'Ice Wall',
 				level: 14
 			},
 			{
@@ -9354,7 +9354,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 67
 			},
 			{
-				name: 'God"s Hand',
+				name: 'God\'s Hand',
 				level: 70
 			},
 			{
@@ -10280,11 +10280,11 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		},
 		learnset: [
 			{
-				name: 'Foolish Whisper',
+				name: 'Makajamaon',
 				level: 0
 			},
 			{
-				name: 'Auto-Sukukaja',
+				name: 'Speed Master',
 				level: 0
 			},
 			{
@@ -15838,7 +15838,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 0
 			},
 			{
-				name: 'Blazing Hell',
+				name: 'Maragibarion',
 				level: 0
 			},
 			{
@@ -17243,7 +17243,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 0
 			},
 			{
-				name: 'God"s Hand',
+				name: 'God\'s Hand',
 				level: 0
 			},
 			{
@@ -23022,7 +23022,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 40
 			},
 			{
-				name: 'Survive Light',
+				name: 'Survival Trick',
 				level: 41
 			}
 		],
@@ -23858,7 +23858,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 71
 			},
 			{
-				name: 'God"s Hand',
+				name: 'God\'s Hand',
 				level: 75
 			}
 		],
@@ -25270,7 +25270,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 0
 			},
 			{
-				name: 'Makajam',
+				name: 'Makajama',
 				level: 0
 			},
 			{
@@ -25653,7 +25653,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 67
 			},
 			{
-				name: 'God"s Hand',
+				name: 'God\'s Hand',
 				level: 70
 			},
 			{
@@ -27055,7 +27055,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 67
 			},
 			{
-				name: 'God"s Hand',
+				name: 'God\'s Hand',
 				level: 70
 			},
 			{
@@ -28267,7 +28267,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		},
 		learnset: [
 			{
-				name: 'Foolish Whisper',
+				name: 'Makajamaon',
 				level: 0
 			},
 			{
@@ -28347,7 +28347,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 35
 			},
 			{
-				name: 'Blue Wall',
+				name: 'Elec Wall',
 				level: 37
 			},
 			{
@@ -28707,7 +28707,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 71
 			},
 			{
-				name: 'God"s Hand',
+				name: 'God\'s Hand',
 				level: 75
 			}
 		],
@@ -28763,11 +28763,11 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 0
 			},
 			{
-				name: 'Makajam',
+				name: 'Makajama',
 				level: 17
 			},
 			{
-				name: 'Silence Boost',
+				name: 'Seal Boost',
 				level: 18
 			},
 			{

@@ -117,6 +117,28 @@ const skillData: Readonly<AnySkillData[]> = [
 		criteria: 'Surround'
 	},
 	{
+		name: 'Aeon Rain',
+		affinity: 'Phys',
+		type: 'ATTACK',
+		unique: false,
+		accuracy: 75,
+		ailments: [],
+		cost: {
+			type: 'HP',
+			amount: 18
+		},
+		flags: [],
+		max: 1,
+		min: 3,
+		power: {
+			amount: 150,
+			display: 'Medium',
+			type: 'Physical'
+		},
+		range: 'All',
+		series: 'persona'
+	},
+	{
 		name: 'Agi',
 		affinity: 'Fire',
 		type: 'ATTACK',
@@ -1220,6 +1242,33 @@ const skillData: Readonly<AnySkillData[]> = [
 		negate: false,
 		debuffs: [],
 		auto: []
+	},
+	{
+		name: 'Cell Breaker',
+		affinity: 'Phys',
+		type: 'ATTACK',
+		unique: false,
+		accuracy: 90,
+		ailments: [
+			{
+				name: 'Enervate',
+				chance: 35
+			}
+		],
+		cost: {
+			type: 'HP',
+			amount: 10
+		},
+		flags: [],
+		max: 1,
+		min: 1,
+		power: {
+			amount: 140,
+			display: 'Weak',
+			type: 'Physical'
+		},
+		range: 'One',
+		series: 'persona'
 	},
 	{
 		name: 'Certain Escape',
@@ -2566,6 +2615,28 @@ const skillData: Readonly<AnySkillData[]> = [
 		flags: []
 	},
 	{
+		name: 'Enervate Boost',
+		affinity: 'Passive',
+		type: 'AILBOOST',
+		unique: false,
+		ailment: 'Enervate',
+		amount: 25,
+		weather: false
+	},
+	{
+		name: 'Enervation',
+		affinity: 'Ailment',
+		type: 'AILMENT',
+		unique: false,
+		range: 'One',
+		cost: 5,
+		ailments: [
+			'Enervate'
+		],
+		chance: 40,
+		flags: []
+	},
+	{
 		name: 'Escape Route',
 		affinity: 'Passive',
 		type: 'NAVI',
@@ -3574,7 +3645,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		series: 'smt'
 	},
 	{
-		name: 'God"s Hand',
+		name: 'God\'s Hand',
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: false,
@@ -6655,7 +6726,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		accuracy: 80,
 		ailments: [
 			{
-				name: 'Enervation',
+				name: 'Enervate',
 				chance: 5
 			}
 		],
@@ -6669,6 +6740,55 @@ const skillData: Readonly<AnySkillData[]> = [
 		power: {
 			amount: 125,
 			display: 'Medium',
+			type: 'Physical'
+		},
+		range: 'All',
+		series: 'persona'
+	},
+	{
+		name: 'Muzzle Shot',
+		affinity: 'Phys',
+		type: 'ATTACK',
+		unique: false,
+		accuracy: 90,
+		ailments: [
+			{
+				name: 'Seal',
+				chance: 35
+			}
+		],
+		cost: {
+			type: 'HP',
+			amount: 9
+		},
+		flags: [],
+		max: 1,
+		min: 1,
+		power: {
+			amount: 145,
+			display: 'Weak',
+			type: 'Physical'
+		},
+		range: 'One',
+		series: 'persona'
+	},
+	{
+		name: 'Myriad Arrows',
+		affinity: 'Phys',
+		type: 'ATTACK',
+		unique: false,
+		accuracy: 85,
+		ailments: [],
+		cost: {
+			type: 'HP',
+			amount: 22
+		},
+		flags: [],
+		max: 1,
+		min: 3,
+		power: {
+			amount: 150,
+			display: 'Heavy',
 			type: 'Physical'
 		},
 		range: 'All',
@@ -6938,6 +7058,14 @@ const skillData: Readonly<AnySkillData[]> = [
 		newAffinity: 'Null'
 	},
 	{
+		name: 'Null Enervate',
+		affinity: 'Passive',
+		type: 'AILDEFENSIVE',
+		unique: false,
+		ailment: 'Enervate',
+		resistance: 'Null'
+	},
+	{
 		name: 'Null Fire',
 		affinity: 'Passive',
 		type: 'DEFENSIVE',
@@ -6994,6 +7122,14 @@ const skillData: Readonly<AnySkillData[]> = [
 		newAffinity: 'Null'
 	},
 	{
+		name: 'Null Poison',
+		affinity: 'Passive',
+		type: 'AILDEFENSIVE',
+		unique: false,
+		ailment: 'Poison',
+		resistance: 'Null'
+	},
+	{
 		name: 'Null Psy',
 		affinity: 'Passive',
 		type: 'DEFENSIVE',
@@ -7032,6 +7168,19 @@ const skillData: Readonly<AnySkillData[]> = [
 		unique: false,
 		element: 'Wind',
 		newAffinity: 'Null'
+	},
+	{
+		name: 'Old One',
+		affinity: 'Ailment',
+		type: 'AILMENT',
+		unique: false,
+		range: 'All',
+		cost: 12,
+		ailments: [
+			'Enervate'
+		],
+		chance: 30,
+		flags: []
 	},
 	{
 		name: 'Ominous Words',
@@ -7302,6 +7451,42 @@ const skillData: Readonly<AnySkillData[]> = [
 		unique: false,
 		cost: null,
 		description: 'Increases effects of Poison.'
+	},
+	{
+		name: 'Poison Arrow',
+		affinity: 'Phys',
+		type: 'ATTACK',
+		unique: false,
+		accuracy: 85,
+		ailments: [
+			{
+				name: 'Poison',
+				chance: 35
+			}
+		],
+		cost: {
+			type: 'HP',
+			amount: 14
+		},
+		flags: [],
+		max: 1,
+		min: 1,
+		power: {
+			amount: 200,
+			display: 'Medium',
+			type: 'Physical'
+		},
+		range: 'One',
+		series: 'persona'
+	},
+	{
+		name: 'Poison Boost',
+		affinity: 'Passive',
+		type: 'AILBOOST',
+		unique: false,
+		ailment: 'Poison',
+		amount: 50,
+		weather: false
 	},
 	{
 		name: 'Poison Master',
@@ -8516,6 +8701,14 @@ const skillData: Readonly<AnySkillData[]> = [
 		],
 		chance: 45,
 		flags: []
+	},
+	{
+		name: 'Shadow of Grief',
+		affinity: 'Passive',
+		type: 'SIPHON',
+		unique: false,
+		amount: 22,
+		criteria: 'Drain'
 	},
 	{
 		name: 'Sharp Student',
