@@ -27,7 +27,7 @@ export interface PersonaData extends DemonData {
 	game: PersonaGame;
 	user: string;
 	stage: Stage;
-	evoSkill: string | null;
+	evoSkillName: string | null;
 }
 
 /** Data used for constructing a Skill instance */

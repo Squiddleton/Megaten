@@ -556,7 +556,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		game: 'p5',
 		user: 'Makoto Niijima',
 		stage: 3,
-		evoSkill: 'Debilitate'
+		evoSkillName: 'Debilitate'
 	},
 	{
 		name: 'Aitvaras',
@@ -671,7 +671,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		game: 'p5',
 		user: 'Futaba Sakura',
 		stage: 3,
-		evoSkill: 'Ultimate Support'
+		evoSkillName: 'Ultimate Support'
 	},
 	{
 		name: 'Alarune',
@@ -1090,7 +1090,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		game: 'p4',
 		user: 'Yukiko Amagi',
 		stage: 2,
-		evoSkill: null
+		evoSkillName: null
 	},
 	{
 		name: 'Ame-no-Uzume',
@@ -1515,7 +1515,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		game: 'p5',
 		user: 'Makoto Niijima',
 		stage: 2,
-		evoSkill: 'Evade Psy'
+		evoSkillName: 'Evade Psy'
 	},
 	{
 		name: 'Andras',
@@ -2323,7 +2323,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		game: 'p5',
 		user: 'Labrys',
 		stage: 1,
-		evoSkill: null
+		evoSkillName: null
 	},
 	{
 		name: 'Ariadne Picaro',
@@ -2526,7 +2526,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		game: 'p5',
 		user: 'P5 Protagonist',
 		stage: 1,
-		evoSkill: null
+		evoSkillName: null
 	},
 	{
 		name: 'Artemis',
@@ -2711,7 +2711,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		game: 'p3',
 		user: 'Mitsuru Kirijo',
 		stage: 2,
-		evoSkill: null
+		evoSkillName: null
 	},
 	{
 		name: 'Astarte',
@@ -2827,7 +2827,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		game: 'p5',
 		user: 'Haru Okumura',
 		stage: 2,
-		evoSkill: 'Evade Nuke'
+		evoSkillName: 'Evade Nuke'
 	},
 	{
 		name: 'Asterius',
@@ -2896,7 +2896,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		game: 'p5',
 		user: 'Shadow Labrys',
 		stage: 1,
-		evoSkill: null
+		evoSkillName: null
 	},
 	{
 		name: 'Asterius Picaro',
@@ -3189,7 +3189,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		game: 'p5',
 		user: 'Aigis',
 		stage: 2,
-		evoSkill: null
+		evoSkillName: null
 	},
 	{
 		name: 'Athena Picaro',
@@ -4819,7 +4819,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		game: 'p3',
 		user: 'Akihiko Sanada',
 		stage: 2,
-		evoSkill: null
+		evoSkillName: null
 	},
 	{
 		name: 'Cait Sith',
@@ -5081,7 +5081,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		game: 'p5',
 		user: 'Ryuji Sakamoto',
 		stage: 1,
-		evoSkill: null
+		evoSkillName: null
 	},
 	{
 		name: 'Carmen',
@@ -5203,7 +5203,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		game: 'p5',
 		user: 'Ann Takamaki',
 		stage: 1,
-		evoSkill: null
+		evoSkillName: null
 	},
 	{
 		name: 'Castor',
@@ -5289,7 +5289,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		game: 'p3',
 		user: 'Shinjiro Aragaki',
 		stage: 1,
-		evoSkill: null
+		evoSkillName: null
 	},
 	{
 		name: 'Célestine',
@@ -5413,7 +5413,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		game: 'p5',
 		user: 'Ann Takamaki',
 		stage: 3,
-		evoSkill: 'High Energy'
+		evoSkillName: 'High Energy'
 	},
 	{
 		name: 'Cendrillon',
@@ -5487,7 +5487,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		game: 'p5',
 		user: 'Sumire Yoshizawa',
 		stage: 1,
-		evoSkill: null
+		evoSkillName: null
 	},
 	{
 		name: 'Cerberus',
@@ -5661,7 +5661,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		game: 'p3',
 		user: 'Koromaru',
 		stage: 1,
-		evoSkill: null
+		evoSkillName: null
 	},
 	{
 		name: 'Chernobog',
@@ -7047,7 +7047,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		game: 'p5',
 		user: 'Morgana',
 		stage: 3,
-		evoSkill: 'Miracle Rush'
+		evoSkillName: 'Miracle Rush'
 	},
 	{
 		name: 'Dionysus',
@@ -7397,7 +7397,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		game: 'p5',
 		user: 'Sumire Yoshizawa',
 		stage: 3,
-		evoSkill: 'Masquerade'
+		evoSkillName: 'Masquerade'
 	},
 	{
 		name: 'Emperor\'s Amulet',
@@ -8883,7 +8883,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		game: 'p5',
 		user: 'Yusuke Kitagawa',
 		stage: 1,
-		evoSkill: null
+		evoSkillName: null
 	},
 	{
 		name: 'Gorgon',
@@ -9070,7 +9070,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		game: 'p5',
 		user: 'Yusuke Kitagawa',
 		stage: 3,
-		evoSkill: 'Luster Candy'
+		evoSkillName: 'Luster Candy'
 	},
 	{
 		name: 'Gurr',
@@ -9379,7 +9379,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		game: 'p4',
 		user: 'Chie Satonaka',
 		stage: 3,
-		evoSkill: 'Luster Candy'
+		evoSkillName: 'Luster Candy'
 	},
 	{
 		name: 'Hariti',
@@ -9721,7 +9721,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		game: 'p5',
 		user: 'Ann Takamaki',
 		stage: 2,
-		evoSkill: 'Evade Ice'
+		evoSkillName: 'Evade Ice'
 	},
 	{
 		name: 'Hecatoncheires',
@@ -10013,7 +10013,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		game: 'p5',
 		user: 'Goro Akechi',
 		stage: 3,
-		evoSkill: 'Rebellion Blade'
+		evoSkillName: 'Rebellion Blade'
 	},
 	{
 		name: 'Hermes',
@@ -10107,7 +10107,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		game: 'p3',
 		user: 'Junpei Iori',
 		stage: 1,
-		evoSkill: null
+		evoSkillName: null
 	},
 	{
 		name: 'High Pixie',
@@ -10255,7 +10255,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		game: 'p4',
 		user: 'Rise Kujikawa',
 		stage: 1,
-		evoSkill: null
+		evoSkillName: null
 	},
 	{
 		name: 'Hitokotonusi',
@@ -11111,7 +11111,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		game: 'p3',
 		user: 'Yukari Takeba',
 		stage: 1,
-		evoSkill: null
+		evoSkillName: null
 	},
 	{
 		name: 'Ippon-Datara',
@@ -11436,7 +11436,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		game: 'p3',
 		user: 'Yukari Takeba',
 		stage: 2,
-		evoSkill: null
+		evoSkillName: null
 	},
 	{
 		name: 'Izanagi',
@@ -11520,7 +11520,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		game: 'p5',
 		user: 'P4 Protgaonist',
 		stage: 1,
-		evoSkill: null
+		evoSkillName: null
 	},
 	{
 		name: 'Izanagi Picaro',
@@ -11659,7 +11659,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		game: 'p5',
 		user: 'P4 Protagonist',
 		stage: 2,
-		evoSkill: null
+		evoSkillName: null
 	},
 	{
 		name: 'Izanagi-no-Okami Picaro',
@@ -12185,7 +12185,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		game: 'p4',
 		user: 'Yosuke Hanamura',
 		stage: 1,
-		evoSkill: null
+		evoSkillName: null
 	},
 	{
 		name: 'Johanna',
@@ -12307,7 +12307,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		game: 'p5',
 		user: 'Makoto Niijima',
 		stage: 1,
-		evoSkill: null
+		evoSkillName: null
 	},
 	{
 		name: 'Juno',
@@ -12365,7 +12365,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		game: 'p3',
 		user: 'Fuuka Yamagishi',
 		stage: 2,
-		evoSkill: null
+		evoSkillName: null
 	},
 	{
 		name: 'Kaguya',
@@ -12434,7 +12434,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		game: 'p5',
 		user: 'Marie',
 		stage: 1,
-		evoSkill: null
+		evoSkillName: null
 	},
 	{
 		name: 'Kaguya Picaro',
@@ -12661,7 +12661,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		game: 'p3',
 		user: 'Ken Amada',
 		stage: 2,
-		evoSkill: null
+		evoSkillName: null
 	},
 	{
 		name: 'Kali',
@@ -12865,7 +12865,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		game: 'p5',
 		user: 'Yusuke Kitagawa',
 		stage: 2,
-		evoSkill: 'Evade Fire'
+		evoSkillName: 'Evade Fire'
 	},
 	{
 		name: 'Kamui',
@@ -12978,7 +12978,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		game: 'p4',
 		user: 'Teddie',
 		stage: 2,
-		evoSkill: null
+		evoSkillName: null
 	},
 	{
 		name: 'Kamui-Moshiri',
@@ -13089,7 +13089,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		game: 'p4',
 		user: 'Teddie',
 		stage: 3,
-		evoSkill: 'Kamui Miracle'
+		evoSkillName: 'Kamui Miracle'
 	},
 	{
 		name: 'Kanzeon',
@@ -13167,7 +13167,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		game: 'p4',
 		user: 'Rise Kujikawa',
 		stage: 2,
-		evoSkill: null
+		evoSkillName: null
 	},
 	{
 		name: 'Kartikeya',
@@ -13915,7 +13915,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		game: 'p4',
 		user: 'Teddie',
 		stage: 1,
-		evoSkill: null
+		evoSkillName: null
 	},
 	{
 		name: 'Kodama',
@@ -14236,7 +14236,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		game: 'p4',
 		user: 'Yukiko Amagi',
 		stage: 1,
-		evoSkill: null
+		evoSkillName: null
 	},
 	{
 		name: 'Koppa Tengu',
@@ -14539,7 +14539,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		game: 'p4',
 		user: 'Rise Kujikawa',
 		stage: 3,
-		evoSkill: 'Complete Analysis'
+		evoSkillName: 'Complete Analysis'
 	},
 	{
 		name: 'Kumbhanda',
@@ -15626,7 +15626,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		game: 'p5',
 		user: 'Goro Akechi',
 		stage: 2,
-		evoSkill: null
+		evoSkillName: null
 	},
 	{
 		name: 'Loup-garou',
@@ -15750,7 +15750,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		game: 'p3',
 		user: 'Fuuka Yamagishi',
 		stage: 1,
-		evoSkill: null
+		evoSkillName: null
 	},
 	{
 		name: 'Lucifer',
@@ -15937,7 +15937,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		game: 'p5',
 		user: 'Haru Okumura',
 		stage: 3,
-		evoSkill: 'Life Wall'
+		evoSkillName: 'Life Wall'
 	},
 	{
 		name: 'Macabre',
@@ -16157,7 +16157,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		game: 'p5',
 		user: 'Tohru Adachi',
 		stage: 2,
-		evoSkill: null
+		evoSkillName: null
 	},
 	{
 		name: 'Magatsu-Izanagi Picaro',
@@ -17085,7 +17085,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		game: 'p5',
 		user: 'Morgana',
 		stage: 2,
-		evoSkill: 'Evade Elec'
+		evoSkillName: 'Evade Elec'
 	},
 	{
 		name: 'Mermaid',
@@ -17228,7 +17228,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		game: 'p5',
 		user: 'P3 Protagonist',
 		stage: 2,
-		evoSkill: null
+		evoSkillName: null
 	},
 	{
 		name: 'Messiah Picaro',
@@ -17571,7 +17571,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		game: 'p5',
 		user: 'Haru Okumura',
 		stage: 1,
-		evoSkill: null
+		evoSkillName: null
 	},
 	{
 		name: 'Mishaguji',
@@ -18626,7 +18626,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		game: 'p5',
 		user: 'Futaba Sakura',
 		stage: 1,
-		evoSkill: null
+		evoSkillName: null
 	},
 	{
 		name: 'Neko Shogun',
@@ -18834,7 +18834,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		game: 'p3',
 		user: 'Ken Amada',
 		stage: 1,
-		evoSkill: null
+		evoSkillName: null
 	},
 	{
 		name: 'Nidhoggr',
@@ -20172,7 +20172,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		game: 'p5',
 		user: 'P3 Protagonist',
 		stage: 1,
-		evoSkill: null
+		evoSkillName: null
 	},
 	{
 		name: 'Orpheus F',
@@ -20245,7 +20245,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		game: 'p5',
 		user: 'P3 Protagonist',
 		stage: 1,
-		evoSkill: null
+		evoSkillName: null
 	},
 	{
 		name: 'Orpheus F Picaro',
@@ -20425,7 +20425,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		game: 'p5',
 		user: 'P3 Protagonist',
 		stage: 3,
-		evoSkill: null
+		evoSkillName: null
 	},
 	{
 		name: 'Orthrus',
@@ -20883,7 +20883,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		game: 'p3',
 		user: 'Aigis',
 		stage: 1,
-		evoSkill: null
+		evoSkillName: null
 	},
 	{
 		name: 'Pandora',
@@ -21005,7 +21005,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		game: 'p5',
 		user: 'Sophia',
 		stage: 2,
-		evoSkill: 'Mahamabarion'
+		evoSkillName: 'Mahamabarion'
 	},
 	{
 		name: 'Parvati',
@@ -21248,7 +21248,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		game: 'p3',
 		user: 'Mitsuru Kirijo',
 		stage: 1,
-		evoSkill: null
+		evoSkillName: null
 	},
 	{
 		name: 'Pisaca',
@@ -21422,7 +21422,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		game: 'p5',
 		user: 'Sophia',
 		stage: 1,
-		evoSkill: null
+		evoSkillName: null
 	},
 	{
 		name: 'Pixie',
@@ -21637,7 +21637,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		game: 'p3',
 		user: 'Akihiko Sanada',
 		stage: 1,
-		evoSkill: null
+		evoSkillName: null
 	},
 	{
 		name: 'Power',
@@ -21895,7 +21895,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		game: 'p5',
 		user: 'Futaba Sakura',
 		stage: 2,
-		evoSkill: 'Treasure Skimmer'
+		evoSkillName: 'Treasure Skimmer'
 	},
 	{
 		name: 'Psyche',
@@ -21989,7 +21989,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		game: 'p3',
 		user: 'Metis',
 		stage: 1,
-		evoSkill: null
+		evoSkillName: null
 	},
 	{
 		name: 'Queen Mab',
@@ -22492,7 +22492,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		game: 'p5',
 		user: 'P5 Protagonist',
 		stage: 3,
-		evoSkill: null
+		evoSkillName: null
 	},
 	{
 		name: 'Raphael',
@@ -22808,7 +22808,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		game: 'p5',
 		user: 'Goro Akechi',
 		stage: 1,
-		evoSkill: null
+		evoSkillName: null
 	},
 	{
 		name: 'Rokuten Maoh',
@@ -22916,7 +22916,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		game: 'p4',
 		user: 'Kanji Tatsumi',
 		stage: 2,
-		evoSkill: null
+		evoSkillName: null
 	},
 	{
 		name: 'Saki Mitama',
@@ -23405,7 +23405,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		game: 'p5',
 		user: 'P5 Protagonist',
 		stage: 2,
-		evoSkill: null
+		evoSkillName: null
 	},
 	{
 		name: 'Sati',
@@ -23879,7 +23879,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		game: 'p5',
 		user: 'Ryuji Sakamoto',
 		stage: 2,
-		evoSkill: 'Evade Wind'
+		evoSkillName: 'Evade Wind'
 	},
 	{
 		name: 'Senri',
@@ -25127,7 +25127,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		game: 'p4',
 		user: 'Naoto Shirogane',
 		stage: 1,
-		evoSkill: null
+		evoSkillName: null
 	},
 	{
 		name: 'Sumeo-Okami',
@@ -25243,7 +25243,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		game: 'p4',
 		user: 'Yukiko Amagi',
 		stage: 3,
-		evoSkill: 'Maragibarion'
+		evoSkillName: 'Maragibarion'
 	},
 	{
 		name: 'Suparna',
@@ -25489,7 +25489,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		game: 'p4',
 		user: 'Yosuke Hanamura',
 		stage: 2,
-		evoSkill: null
+		evoSkillName: null
 	},
 	{
 		name: 'Suzaku',
@@ -25678,7 +25678,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		game: 'p4',
 		user: 'Chie Satonaka',
 		stage: 2,
-		evoSkill: null
+		evoSkillName: null
 	},
 	{
 		name: 'Sylph',
@@ -25843,7 +25843,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		game: 'p4',
 		user: 'Kanji Tatsumi',
 		stage: 1,
-		evoSkill: null
+		evoSkillName: null
 	},
 	{
 		name: 'Take-Minakata',
@@ -26022,7 +26022,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		game: 'p4',
 		user: 'Yosuke Hanamura',
 		stage: 3,
-		evoSkill: 'Youthful Wind'
+		evoSkillName: 'Youthful Wind'
 	},
 	{
 		name: 'Takeji Zaiten',
@@ -26130,7 +26130,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		game: 'p4',
 		user: 'Kanji Tatsumi',
 		stage: 3,
-		evoSkill: 'The Man"s Way'
+		evoSkillName: 'The Man"s Way'
 	},
 	{
 		name: 'Tam Lin',
@@ -26473,7 +26473,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		game: 'p5',
 		user: 'Elizabeth',
 		stage: 1,
-		evoSkill: null
+		evoSkillName: null
 	},
 	{
 		name: 'Thanatos Picaro',
@@ -27078,7 +27078,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		game: 'p4',
 		user: 'Chie Satonaka',
 		stage: 1,
-		evoSkill: null
+		evoSkillName: null
 	},
 	{
 		name: 'Triglav',
@@ -27255,7 +27255,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		game: 'p3',
 		user: 'Junpei Iori',
 		stage: 2,
-		evoSkill: 'Spring of Life'
+		evoSkillName: 'Spring of Life'
 	},
 	{
 		name: 'Trumpeter',
@@ -27470,7 +27470,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		game: 'p5',
 		user: 'Sho Minazuki',
 		stage: 1,
-		evoSkill: null
+		evoSkillName: null
 	},
 	{
 		name: 'Tsukiyomi Picaro',
@@ -28022,7 +28022,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		game: 'p5',
 		user: 'Zenkichi Hasegawa',
 		stage: 1,
-		evoSkill: null
+		evoSkillName: null
 	},
 	{
 		name: 'Valkyrie',
@@ -28163,7 +28163,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		game: 'p5',
 		user: 'Sumire Yoshizawa',
 		stage: 2,
-		evoSkill: 'Evade Dark'
+		evoSkillName: 'Evade Dark'
 	},
 	{
 		name: 'Vasuki',
@@ -28728,7 +28728,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		game: 'p5',
 		user: 'Ryuji Sakamoto',
 		stage: 3,
-		evoSkill: 'Fighting Spirit'
+		evoSkillName: 'Fighting Spirit'
 	},
 	{
 		name: 'Xiezhai',
@@ -29041,7 +29041,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		game: 'p4',
 		user: 'Naoto Shirogane',
 		stage: 3,
-		evoSkill: 'Shield of Justice'
+		evoSkillName: 'Shield of Justice'
 	},
 	{
 		name: 'Yamato-Takeru',
@@ -29144,7 +29144,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		game: 'p4',
 		user: 'Naoto Shirogane',
 		stage: 2,
-		evoSkill: null
+		evoSkillName: null
 	},
 	{
 		name: 'Yatagarasu',
@@ -29850,7 +29850,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		game: 'p5',
 		user: 'Morgana',
 		stage: 1,
-		evoSkill: null
+		evoSkillName: null
 	},
 	{
 		name: 'Zouchouten',

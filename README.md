@@ -177,11 +177,12 @@ Persona {
   game: 'p5',
   user: 'Morgana',
   stage: 2,
-  evoSkill: 'Evade Elec',
+  evoSkillName: 'Evade Elec',
   isPersona(): false,
   toString(): 'Morgana\'s Mercurius',
   image: Buffer { ... },
-  evolution: Persona { name: 'Diego', ... }
+  evolution: Persona { name: 'Diego', ... },
+  evoSkill: EvasionSkill { name: 'Evade Elec', ... }
 }
 ```
 

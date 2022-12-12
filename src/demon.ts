@@ -4,6 +4,7 @@ import { formatPossessive, normalize } from '@squiddleton/util';
 import type { DemonData, PersonaData } from './dataTypes';
 import demonData from './demonData';
 import { MegatenError } from './error';
+import { AnySkill, Skill } from './skill';
 import type { AnyGame, Arcana, DemonAffinities, DemonResistances, DemonSkill, DemonStats, PersonaGame, Race, Stage } from './types';
 
 function isPersona(demon: Demon): demon is Persona;
@@ -99,8 +100,10 @@ export class Persona extends Demon implements PersonaData {
 	user: string;
 	/** The Persona's stage of evolution */
 	stage: Stage;
-	/** The skill that the Persona will learn upon reaching this stage */
-	evoSkill: string | null;
+	/** The name of the skill that the Persona will learn upon reaching this stage */
+	evoSkillName: string | null;
+	/** The instance of the skill that the Persona will learn upon reaching this stage */
+	evoSkill: AnySkill | null;
 	constructor(data: PersonaData) {
 		super(data);
 		this.affinities = data.affinities;
@@ -112,7 +115,8 @@ export class Persona extends Demon implements PersonaData {
 		this.game = data.game;
 		this.user = data.user;
 		this.stage = data.stage;
-		this.evoSkill = data.evoSkill;
+		this.evoSkillName = data.evoSkillName;
+		this.evoSkill = this.evoSkillName === null ? null : Skill.get(this.evoSkillName, true);
 	}
 	/** The Persona that this Persona can evolve into, or null if none */
 	get evolution(): Persona | null {
