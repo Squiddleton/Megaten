@@ -22,10 +22,10 @@ export type EnemyRange = 'One' | 'All' | 'Random';
 /** Ranges for skills targeting specific entities */
 export type AnyRange = AllyRange | EnemyRange;
 
-/** Demons' Arcanas */
-export type Arcana = 'Fool' | 'Magician' | 'Priestess' | 'Empress' | 'Emperor' | 'Hierophant' | 'Hunger' | 'Lovers'
-| 'Chariot' | 'Justice' | 'Hermit' | 'Fortune' | 'Strength' | 'Hanged' | 'Death' | 'Temperance' | 'Devil' | 'Tower'
-| 'Star' | 'Moon' | 'Sun' | 'Judgement' | 'Aeon' | 'Faith' | 'Councillor' | 'World' | 'Apostle' | 'Hope';
+/** Demons' Arcana */
+export type Arcana = 'Fool' | 'Magician' | 'Councillor' | 'Priestess' | 'Empress' | 'Emperor' | 'Hierophant' | 'Apostle'
+| 'Lovers' | 'Chariot' | 'Justice' | 'Hermit' | 'Fortune' | 'Strength' | 'Hunger' | 'Hanged' | 'Death' | 'Temperance'
+| 'Devil' | 'Tower' | 'Star' | 'Moon' | 'Sun' | 'Judgement' | 'Aeon' | 'World' | 'Faith' | 'Hope';
 
 /** An ATTACK-type skill's cost */
 export interface AttackCost {
