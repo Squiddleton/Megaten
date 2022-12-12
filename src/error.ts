@@ -4,12 +4,12 @@ export type MegatenErrorType = 'Demon' | 'Persona' | 'Skill';
 /** An exception thrown from the megaten package */
 export class MegatenError extends Error {
 	/** The input that caused the exception */
-	name: string;
+	structureName: string;
 	/** The type of structure where no structure matched the input */
-	type: MegatenErrorType;
-	constructor(name: string, type: MegatenErrorType) {
-		super(`No ${type} named "${name}" was found`);
-		this.name = name;
-		this.type = type;
+	structureType: MegatenErrorType;
+	constructor(structureName: string, structureType: MegatenErrorType) {
+		super(`No ${structureType} named "${structureName}" was found`);
+		this.structureName = structureName;
+		this.structureType = structureType;
 	}
 }
