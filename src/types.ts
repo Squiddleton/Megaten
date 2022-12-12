@@ -78,17 +78,17 @@ export interface DemonAffinities<IsPersona extends boolean = boolean> {
 }
 
 export interface DemonResistances<IsPersona extends boolean = boolean> {
-	/** The ailments that the demon resists or nullifies */
+	/** Ailments that the demon is weak to, resists, or nullifies */
 	ailments: IfPersona<IsPersona, null, Partial<Record<AilmentName, AilResistance | 'Weak'>> | null>;
 	/** The affinities that the demon is weak to */
 	weak: DamagingAffinity[];
-	/** The affinities that the demon resists */
+	/** Affinities that the demon resists */
 	resist: DamagingAffinity[];
-	/** The affinities that the demon nullifies */
+	/** Affinities that the demon nullifies */
 	null: DamagingAffinity[];
-	/** The affinities that the demon drains */
+	/** Affinities that the demon drains */
 	drain: DamagingAffinity[];
-	/** The affinities that the demon repels */
+	/** Affinities that the demon repels */
 	repel: DamagingAffinity[];
 }
 
