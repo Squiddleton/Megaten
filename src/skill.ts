@@ -558,23 +558,22 @@ export class EvasionSkill extends Skill implements EvasionSkillData {
 	amount: number;
 	/** The conditions that the skill triggers under, or null if always in effect */
 	criteria: EvasionBoostCriteria | null;
-	/** The affinities that the skill increases the chance of evading */
-	elements: (DamagingAffinity | 'ALL')[];
+	/** The affinity that the skill increases the chance of evading */
+	element: DamagingAffinity | 'Magic' | 'All';
 	constructor(data: EvasionSkillData) {
-		const { amount, criteria, elements } = data;
+		const { amount, criteria, element } = data;
 		super(data);
 		this.affinity = data.affinity;
 		this.type = data.type;
 
-		if (amount === 3) this.description = `Greatly increases Evasion from ${elements[0]} skills. Does not stack.`;
-		else if (criteria === 'Rain/Snow') this.description = 'Greatly increases Evasion from all affinities during Rain/Snow.';
+		if (criteria === 'Rain/Snow') this.description = 'Greatly increases Evasion from all affinities during Rain/Snow.';
 		else if (criteria === 'Surrounded') this.description = 'Greatly decreases Accuracy of all foes\' attacks except Almighty when surrounded.';
-		else if (elements.length !== 1) this.description = 'Increases Evasion from all magical attacks except Almighty.';
-		else this.description = `${amount === 3 ? 'Greatly i' : 'I'}ncreases Evasion from ${elements[0]} skills.${amount === 3 ? ' Does not stack.' : ''}`;
+		else if (element === 'Magic') this.description = 'Increases Evasion from all magical attacks except Almighty.';
+		else this.description = `${amount === 3 ? 'Greatly i' : 'I'}ncreases Evasion from ${element} skills.${amount === 3 ? ' Does not stack.' : ''}`;
 
 		this.amount = amount;
 		this.criteria = criteria;
-		this.elements = elements;
+		this.element = element;
 	}
 }
 

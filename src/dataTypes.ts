@@ -155,7 +155,7 @@ export interface EvasionSkillData extends SkillData {
 	type: 'EVASION';
 	amount: number;
 	criteria: EvasionBoostCriteria | null;
-	elements: (DamagingAffinity | 'ALL')[];
+	element: DamagingAffinity | 'Magic' | 'All';
 }
 
 export interface HalveSkillData extends SkillData {

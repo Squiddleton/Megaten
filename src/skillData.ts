@@ -288,19 +288,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		unique: false,
 		amount: 2,
 		criteria: null,
-		elements: [
-			'Phys',
-			'Gun',
-			'Fire',
-			'Ice',
-			'Elec',
-			'Wind',
-			'Psy',
-			'Nuke',
-			'Light',
-			'Dark',
-			'Almighty'
-		]
+		element: 'All'
 	},
 	{
 		name: 'Almighty Boost',
@@ -365,17 +353,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		unique: false,
 		amount: 2,
 		criteria: null,
-		elements: [
-			'Fire',
-			'Ice',
-			'Force',
-			'Wind',
-			'Elec',
-			'Psy',
-			'Nuke',
-			'Light',
-			'Dark'
-		]
+		element: 'Magic'
 	},
 	{
 		name: 'Apt Pupil',
@@ -1360,9 +1338,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		unique: false,
 		amount: 2,
 		criteria: 'Rain/Snow',
-		elements: [
-			'ALL'
-		]
+		element: 'All'
 	},
 	{
 		name: 'Complete Analysis',
@@ -2071,9 +2047,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		unique: false,
 		amount: 2,
 		criteria: null,
-		elements: [
-			'Dark'
-		]
+		element: 'Dark'
 	},
 	{
 		name: 'Dodge Elec',
@@ -2082,9 +2056,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		unique: false,
 		amount: 2,
 		criteria: null,
-		elements: [
-			'Elec'
-		]
+		element: 'Elec'
 	},
 	{
 		name: 'Dodge Fire',
@@ -2093,9 +2065,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		unique: false,
 		amount: 2,
 		criteria: null,
-		elements: [
-			'Fire'
-		]
+		element: 'Fire'
 	},
 	{
 		name: 'Dodge Ice',
@@ -2104,9 +2074,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		unique: false,
 		amount: 2,
 		criteria: null,
-		elements: [
-			'Ice'
-		]
+		element: 'Ice'
 	},
 	{
 		name: 'Dodge Light',
@@ -2115,9 +2083,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		unique: false,
 		amount: 2,
 		criteria: null,
-		elements: [
-			'Light'
-		]
+		element: 'Light'
 	},
 	{
 		name: 'Dodge Nuke',
@@ -2126,9 +2092,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		unique: false,
 		amount: 2,
 		criteria: null,
-		elements: [
-			'Dark'
-		]
+		element: 'Dark'
 	},
 	{
 		name: 'Dodge Phys',
@@ -2137,9 +2101,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		unique: false,
 		amount: 2,
 		criteria: null,
-		elements: [
-			'Phys'
-		]
+		element: 'Phys'
 	},
 	{
 		name: 'Dodge Psy',
@@ -2148,9 +2110,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		unique: false,
 		amount: 2,
 		criteria: null,
-		elements: [
-			'Psy'
-		]
+		element: 'Psy'
 	},
 	{
 		name: 'Dodge Wind',
@@ -2159,9 +2119,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		unique: false,
 		amount: 2,
 		criteria: null,
-		elements: [
-			'Wind'
-		]
+		element: 'Wind'
 	},
 	{
 		name: 'Donum Gladi',
@@ -2680,9 +2638,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		unique: false,
 		amount: 3,
 		criteria: null,
-		elements: [
-			'Dark'
-		]
+		element: 'Dark'
 	},
 	{
 		name: 'Evade Elec',
@@ -2691,9 +2647,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		unique: false,
 		amount: 3,
 		criteria: null,
-		elements: [
-			'Elec'
-		]
+		element: 'Elec'
 	},
 	{
 		name: 'Evade Fire',
@@ -2702,9 +2656,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		unique: false,
 		amount: 3,
 		criteria: null,
-		elements: [
-			'Fire'
-		]
+		element: 'Fire'
 	},
 	{
 		name: 'Evade Ice',
@@ -2713,9 +2665,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		unique: false,
 		amount: 3,
 		criteria: null,
-		elements: [
-			'Ice'
-		]
+		element: 'Ice'
 	},
 	{
 		name: 'Evade Light',
@@ -2724,9 +2674,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		unique: false,
 		amount: 3,
 		criteria: null,
-		elements: [
-			'Light'
-		]
+		element: 'Light'
 	},
 	{
 		name: 'Evade Nuke',
@@ -2735,9 +2683,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		unique: false,
 		amount: 3,
 		criteria: null,
-		elements: [
-			'Nuke'
-		]
+		element: 'Nuke'
 	},
 	{
 		name: 'Evade Phys',
@@ -2746,9 +2692,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		unique: false,
 		amount: 3,
 		criteria: null,
-		elements: [
-			'Phys'
-		]
+		element: 'Phys'
 	},
 	{
 		name: 'Evade Psy',
@@ -2757,9 +2701,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		unique: false,
 		amount: 3,
 		criteria: null,
-		elements: [
-			'Psy'
-		]
+		element: 'Psy'
 	},
 	{
 		name: 'Evade Wind',
@@ -2768,9 +2710,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		unique: false,
 		amount: 3,
 		criteria: null,
-		elements: [
-			'Wind'
-		]
+		element: 'Wind'
 	},
 	{
 		name: 'Evil Melody',
@@ -4835,19 +4775,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		unique: false,
 		amount: 2,
 		criteria: 'Surrounded',
-		elements: [
-			'Phys',
-			'Gun',
-			'Fire',
-			'Ice',
-			'Elec',
-			'Force',
-			'Wind',
-			'Psy',
-			'Nuke',
-			'Light',
-			'Dark'
-		]
+		element: 'All'
 	},
 	{
 		name: 'Life Aid',
