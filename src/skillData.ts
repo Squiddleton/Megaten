@@ -253,7 +253,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Passive',
 		type: 'AILBOOST',
 		unique: false,
-		ailment: 'ALL',
+		ailment: 'All',
 		amount: 25,
 		weather: false
 	},
@@ -313,7 +313,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Passive',
 		type: 'AILBOOST',
 		unique: false,
-		ailment: 'ALL',
+		ailment: 'All',
 		amount: 30,
 		weather: true
 	},
@@ -3121,7 +3121,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Passive',
 		type: 'AILDEFENSIVE',
 		unique: false,
-		ailment: 'ALL',
+		ailment: 'All',
 		resistance: 'Resist'
 	},
 	{
@@ -9783,7 +9783,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'BOOST',
 		unique: true,
 		amount: 25,
-		element: 'ALL',
+		element: 'All',
 		stacks: 'x'
 	},
 	{

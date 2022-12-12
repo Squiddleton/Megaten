@@ -52,7 +52,7 @@ export class AilBoostSkill extends Skill implements AilBoostSkillData {
 	type: 'AILBOOST';
 	description: string;
 	/** The ailment that the skill increases the odds of afflicting */
-	ailment: AilmentName | 'ALL';
+	ailment: AilmentName | 'All';
 	/** The amount that the odds of afflicting the ailment are increased by */
 	amount: number;
 	/** Whether the skill only takes effect under certain weather conditions */
@@ -64,7 +64,7 @@ export class AilBoostSkill extends Skill implements AilBoostSkillData {
 		this.type = data.type;
 		this.description = data.weather
 			? 'Increases chance of inflicting ailments during Rain/Snow.'
-			: `Increases chance of inflicting ${ailment === 'ALL' ? 'ailments' : ailment}.`;
+			: `Increases chance of inflicting ${ailment === 'All' ? 'ailments' : ailment}.`;
 		this.ailment = ailment;
 		this.amount = data.amount;
 		this.weather = data.weather;
@@ -77,7 +77,7 @@ export class AilDefensiveSkill extends Skill implements AilDefensiveSkillData {
 	type: 'AILDEFENSIVE';
 	description: string;
 	/** The ailment whose odds of affliction are reduced by the skill */
-	ailment: AilmentName | 'ALL' | 'Confuse/Fear/Rage/Despair';
+	ailment: AilmentName | 'All' | 'Confuse/Fear/Rage/Despair';
 	/** The level of resistance to the ailment */
 	resistance: AilResistance;
 	constructor(data: AilDefensiveSkillData) {
@@ -368,7 +368,7 @@ export class BoostSkill extends Skill implements BoostSkillData {
 	/** The amount that the element's damage is boosted by */
 	amount: number;
 	/** The affinity of the skills that the skill boosts */
-	element: DamagingAffinity | 'Recovery' | 'ALL';
+	element: DamagingAffinity | 'Recovery' | 'All';
 	/** Whether the skill stacks additively or multiplicatively */
 	stacks: '+' | 'x';
 	constructor(data: BoostSkillData) {
@@ -377,7 +377,7 @@ export class BoostSkill extends Skill implements BoostSkillData {
 		this.affinity = data.affinity;
 		this.type = data.type;
 
-		if (element === 'ALL') this.description = 'Strengtens all attacks. Can stack.';
+		if (element === 'All') this.description = 'Strengtens all attacks. Can stack.';
 		else if (stacks === 'x') this.description = `Strengthens ${element} skills by ${amount}%.`;
 		else this.description = `${amount === 35 ? 'Greatly i' : 'I'}ncreases ${element} attack damage.`;
 

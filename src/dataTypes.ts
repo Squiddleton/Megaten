@@ -41,7 +41,7 @@ export interface SkillData {
 export interface AilBoostSkillData extends SkillData {
 	affinity: 'Passive';
 	type: 'AILBOOST';
-	ailment: AilmentName | 'ALL';
+	ailment: AilmentName | 'All';
 	amount: number;
 	weather: boolean;
 }
@@ -49,7 +49,7 @@ export interface AilBoostSkillData extends SkillData {
 export interface AilDefensiveSkillData extends SkillData {
 	affinity: 'Passive';
 	type: 'AILDEFENSIVE';
-	ailment: AilmentName | 'ALL' | 'Confuse/Fear/Rage/Despair';
+	ailment: AilmentName | 'All' | 'Confuse/Fear/Rage/Despair';
 	resistance: AilResistance;
 }
 
@@ -103,7 +103,7 @@ export interface BoostSkillData extends SkillData {
 	affinity: 'Passive';
 	type: 'BOOST';
 	amount: number;
-	element: DamagingAffinity | 'Recovery' | 'ALL';
+	element: DamagingAffinity | 'Recovery' | 'All';
 	stacks: '+' | 'x';
 }
 
