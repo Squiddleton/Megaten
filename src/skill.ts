@@ -2,7 +2,7 @@ import { normalize } from '@squiddleton/util';
 import type { AilBoostSkillData, AilDefensiveSkillData, AilmentSkillData, AttackSkillData, AutoBuffSkillData, BarrierBreakSkillData, BarrierSkillData, BoostSkillData, BreakSkillData, ChargeSkillData, CritBoostSkillData, CritSkillData, DefensiveSkillData, EndureSkillData, EvasionSkillData, HalveSkillData, InstaKillBoostSkillData, MasterSkillData, MiscSkillData, NaviSkillData, PersonaCounterSkillData, PostBattleSkillData, RecoverySkillData, RegenSkillData, SMTCounterSkillData, SiphonSkillData, SkillData, SpringSkillData, SupportSkillData, SusceptibilitySkillData, TauntSkillData, WallSkillData } from './dataTypes';
 import { MegatenError } from './error';
 import skillData from './skillData';
-import type { AilResistance, Ailment, AilmentName, AllyRange, AnyAffinity, AnyRange, AttackCost, AttackPower, Barrier, Buff, Charge, CounterAffinity, CounterPower, DamagingAffinity, EnemyRange, EvasionBoostCriteria, HPMP, HPMPAil, LightDark, PostBattleStat, RecoveryAmount, RegenCriteria, Resistance, SMTAffinity, Series, SiphonCriteria, SkillType } from './types';
+import type { AilResistance, Ailment, AilmentName, AllyRange, AnyAffinity, AnyRange, AttackCost, AttackPower, Barrier, Buff, Charge, CounterAffinity, CounterPower, DamagingAffinity, EnemyRange, EvasionBoostCriteria, HPMP, HPMPAil, LightDark, OneOrAllAilments, OneOrAllDamagingAffinities, PostBattleStat, RecoveryAmount, RegenCriteria, Resistance, SMTAffinity, Series, SiphonCriteria, SkillType } from './types';
 
 export abstract class Skill implements SkillData {
 	/** The skill's name */
@@ -52,7 +52,7 @@ export class AilBoostSkill extends Skill implements AilBoostSkillData {
 	type: 'AILBOOST';
 	description: string;
 	/** The ailment that the skill increases the odds of afflicting */
-	ailment: AilmentName | 'All';
+	ailment: OneOrAllAilments;
 	/** The amount that the odds of afflicting the ailment are increased by */
 	amount: number;
 	/** Whether the skill only takes effect under certain weather conditions */
@@ -77,7 +77,7 @@ export class AilDefensiveSkill extends Skill implements AilDefensiveSkillData {
 	type: 'AILDEFENSIVE';
 	description: string;
 	/** The ailment whose odds of affliction are reduced by the skill */
-	ailment: AilmentName | 'All' | 'Confuse/Fear/Rage/Despair';
+	ailment: OneOrAllAilments | 'Confuse/Fear/Rage/Despair';
 	/** The level of resistance to the ailment */
 	resistance: AilResistance;
 	constructor(data: AilDefensiveSkillData) {
@@ -368,7 +368,7 @@ export class BoostSkill extends Skill implements BoostSkillData {
 	/** The amount that the element's damage is boosted by */
 	amount: number;
 	/** The affinity of the skills that the skill boosts */
-	element: DamagingAffinity | 'Recovery' | 'All';
+	element: OneOrAllDamagingAffinities | 'Recovery';
 	/** Whether the skill stacks additively or multiplicatively */
 	stacks: '+' | 'x';
 	constructor(data: BoostSkillData) {
@@ -559,7 +559,7 @@ export class EvasionSkill extends Skill implements EvasionSkillData {
 	/** The conditions that the skill triggers under, or null if always in effect */
 	criteria: EvasionBoostCriteria | null;
 	/** The affinity that the skill increases the chance of evading */
-	element: DamagingAffinity | 'Magic' | 'All';
+	element: OneOrAllDamagingAffinities | 'Magic';
 	constructor(data: EvasionSkillData) {
 		const { amount, criteria, element } = data;
 		super(data);

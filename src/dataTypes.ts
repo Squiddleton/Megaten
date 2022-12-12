@@ -1,4 +1,4 @@
-import type { AilResistance, Ailment, AilmentName, AllyRange, AnyAffinity, AnyGame, AnyRange, Arcana, AttackCost, AttackPower, Barrier, Buff, Charge, CounterAffinity, CounterPower, DamagingAffinity, DemonAffinities, DemonResistances, DemonSkill, DemonStats, EnemyRange, EvasionBoostCriteria, HPMP, HPMPAil, LightDark, PersonaGame, PostBattleStat, Race, RecoveryAmount, RegenCriteria, Resistance, SMTAffinity, Series, SiphonCriteria, SkillType, Stage } from './types';
+import type { AilResistance, Ailment, AilmentName, AllyRange, AnyAffinity, AnyGame, AnyRange, Arcana, AttackCost, AttackPower, Barrier, Buff, Charge, CounterAffinity, CounterPower, DamagingAffinity, DemonAffinities, DemonResistances, DemonSkill, DemonStats, EnemyRange, EvasionBoostCriteria, HPMP, HPMPAil, LightDark, OneOrAllAilments, OneOrAllDamagingAffinities, PersonaGame, PostBattleStat, Race, RecoveryAmount, RegenCriteria, Resistance, SMTAffinity, Series, SiphonCriteria, SkillType, Stage } from './types';
 
 /** Data used for constructing a Demon instance */
 export interface DemonData {
@@ -41,7 +41,7 @@ export interface SkillData {
 export interface AilBoostSkillData extends SkillData {
 	affinity: 'Passive';
 	type: 'AILBOOST';
-	ailment: AilmentName | 'All';
+	ailment: OneOrAllAilments;
 	amount: number;
 	weather: boolean;
 }
@@ -49,7 +49,7 @@ export interface AilBoostSkillData extends SkillData {
 export interface AilDefensiveSkillData extends SkillData {
 	affinity: 'Passive';
 	type: 'AILDEFENSIVE';
-	ailment: AilmentName | 'All' | 'Confuse/Fear/Rage/Despair';
+	ailment: OneOrAllAilments | 'Confuse/Fear/Rage/Despair';
 	resistance: AilResistance;
 }
 
@@ -103,7 +103,7 @@ export interface BoostSkillData extends SkillData {
 	affinity: 'Passive';
 	type: 'BOOST';
 	amount: number;
-	element: DamagingAffinity | 'Recovery' | 'All';
+	element: OneOrAllDamagingAffinities | 'Recovery';
 	stacks: '+' | 'x';
 }
 
@@ -155,7 +155,7 @@ export interface EvasionSkillData extends SkillData {
 	type: 'EVASION';
 	amount: number;
 	criteria: EvasionBoostCriteria | null;
-	element: DamagingAffinity | 'Magic' | 'All';
+	element: OneOrAllDamagingAffinities | 'Magic';
 }
 
 export interface HalveSkillData extends SkillData {

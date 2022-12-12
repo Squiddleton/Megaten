@@ -9,6 +9,8 @@ export interface Ailment {
 
 /** Ailments' names */
 export type AilmentName = 'Burn' | 'Charm' | 'Confuse' | 'Despair' | 'Enervate' | 'Exhaustion' | 'Fear' | 'Freeze' | 'Mirage' | 'Poison' | 'Rage' | 'Seal' | 'Shock' | 'Sleep';
+/** An ailment's name or all ailments */
+export type OneOrAllAilments = AilmentName | 'All';
 
 /** Resistances to ailments */
 export type AilResistance = 'Resist' | 'Null';
@@ -132,6 +134,8 @@ export type SMTAffinity = 'Force';
 export type AnyAffinity = 'Phys' | 'Fire' | 'Ice' | 'Elec' | 'Light' | 'Dark' | 'Almighty' | 'Recovery' | 'Ailment' | 'Support' | 'Passive' | 'Misc' | SMTAffinity | PersonaAffinity;
 /** Affinities used by damage-dealing skills */
 export type DamagingAffinity = Exclude<AnyAffinity, 'Recovery' | 'Ailment' | 'Support' | 'Passive' | 'Misc'>;
+/** A damaging affinity or all damaging affinities */
+export type OneOrAllDamagingAffinities = DamagingAffinity | 'All';
 /** Affinities that can be demons' inherit affinity */
 export type InheritAffinity = Exclude<AnyAffinity, 'Gun' | 'Passive' | 'Misc' | SMTAffinity>;
 /** Affinities used by SMTCounterSkill instances */
