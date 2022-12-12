@@ -7,9 +7,7 @@ import { MegatenError } from './error';
 import { AnySkill, Skill } from './skill';
 import type { AnyGame, Arcana, DemonAffinities, DemonResistances, DemonSkill, DemonStats, PersonaGame, Race, Stage } from './types';
 
-function isPersona(demon: Demon): demon is Persona;
-function isPersona(demon: DemonData): demon is PersonaData;
-function isPersona(demon: Demon | DemonData) {
+function isPersona(demon: Demon | DemonData): demon is Persona {
 	return demon.race === 'Persona';
 }
 
@@ -152,13 +150,8 @@ export class Persona extends Demon implements PersonaData {
 	}
 }
 
-function mapToCollection(demon: Persona): [string, Persona];
-function mapToCollection(demon: Demon) {
-	return [demon.devName, demon];
-}
-
 Demon.array = demonData.map(data => new (isPersona(data) ? Persona : Demon)(data));
 Demon.map = new Map(Demon.array.map(demon => [demon.devName, demon]));
 
-Persona.array = Demon.array.filter((demon): demon is Persona => demon.isPersona());
-Persona.map = new Map(Persona.array.map(mapToCollection));
+Persona.array = Demon.array.filter(isPersona);
+Persona.map = new Map(Persona.array.map(persona => [persona.devName, persona]));
