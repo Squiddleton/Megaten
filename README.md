@@ -225,10 +225,10 @@ AttackSkill {
 * Ailment chances prior to SMTV were estimated based on known chances of ailments with similar display chances. This information will be updated if the exact odds are deduced.
 * Skills with major changes to their function (e.g. Taunt in SMTV vs. Taunt in P5) are split into separate skills ("Taunt" vs. "Taunt - Persona").
 * Dashes are used instead of parentheses due to a similar naming scheme used in official song titles (e.g. "Last Surprise - Scramble").
-* Skills with specific uses and few similar skills are placed into a "MISC" type. Their "effect" property lists the skill's description in its last major appearance.
+* Skills with specific uses and few similar skills are placed into a "MISC" type.
 * Typings are designed to be as specific as possible for IntelliSense and TypeScript usage.
 * Images originate from the best obtainable picture of the demon found at the current time. These will be updated if/when renders are available for many Personas and classic demons.
-* Terms with multiple series-dependent names are given the name from SMTV (e.g. Vitality over Endurance, Light over Bless, Seal over Forget). However, Force and Wind remain separated.
+* Terms with multiple series-dependent names are given the name from SMTV (e.g. Vitality over Endurance, Light over Bless, Seal over Forget and Silence). However, Force and Wind remain separated.
 * Kouha/Eiha skills were changed to Hama/Mudo skills since the latter also deal damage in the latest installments.
 
 ## Credits
