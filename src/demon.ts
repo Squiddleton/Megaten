@@ -119,7 +119,7 @@ export class Persona extends Demon implements PersonaData {
 		this.evoSkill = this.evoSkillName === null ? null : Skill.get(this.evoSkillName, true);
 	}
 	/** The Persona that this Persona can evolve into, or null if none */
-	get evolution(): Persona | null {
+	get evolution() {
 		return Persona.array.find(persona => persona.user === this.user && persona.stage === (this.stage + 1)) ?? null;
 	}
 	/**
