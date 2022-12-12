@@ -122,12 +122,6 @@ export interface ChargeSkillData extends SkillData {
 	range: AllyRange;
 }
 
-export interface PersonaCounterSkillData extends SkillData {
-	affinity: 'Passive';
-	type: 'PERSONACOUNTER';
-	chance: number;
-}
-
 export interface CritSkillData extends SkillData {
 	affinity: 'Support';
 	type: 'CRIT';
@@ -192,6 +186,12 @@ export interface NaviSkillData extends SkillData {
 	affinity: 'Passive';
 	type: 'NAVI';
 	description: string;
+}
+
+export interface PersonaCounterSkillData extends SkillData {
+	affinity: 'Passive';
+	type: 'PERSONACOUNTER';
+	chance: number;
 }
 
 export interface PostBattleSkillData extends SkillData {
