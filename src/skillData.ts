@@ -9095,6 +9095,16 @@ const skillData: Readonly<AnySkillData[]> = [
 		series: 'smt'
 	},
 	{
+		name: 'Spring of Life',
+		affinity: 'Passive',
+		type: 'REGEN',
+		unique: true,
+		amount: 8,
+		criteria: 'Turn Start',
+		percent: true,
+		stat: 'HP'
+	},
+	{
 		name: 'Stagnant Air',
 		affinity: 'Ailment',
 		type: 'AILMENT',
