@@ -530,7 +530,7 @@ export class EndureSkill extends Skill implements EndureSkillData {
 	affinity: 'Passive';
 	type: 'ENDURE';
 	description: string;
-	/** Whether the skill only triggers from insta-kill skills */
+	/** Whether the skill only triggers from instakill skills */
 	instakill: boolean;
 	/** The priority that the skill triggers compared to other EndureSkill instances; a higher priority will trigger earlier in battle */
 	priority: number;
@@ -593,12 +593,12 @@ export class HalveSkill extends Skill implements HalveSkillData {
 	}
 }
 
-/** A skill that increases the chance of landing an insta-kill */
+/** A skill that increases the chance of landing an instakill */
 export class InstaKillBoostSkill extends Skill implements InstaKillBoostSkillData {
 	affinity: 'Passive';
 	type: 'INSTAKILLBOOST';
 	description: string;
-	/** The affinity of the insta-kill skill that the skill boosts */
+	/** The affinity of the instakill skill that the skill boosts */
 	element: LightDark;
 	constructor(data: InstaKillBoostSkillData) {
 		const { element } = data;
