@@ -9846,7 +9846,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 92
 			},
 			{
-				name: 'Morning Star',
+				name: 'Morning Star - Persona',
 				level: 94
 			}
 		],
@@ -15850,7 +15850,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 95
 			},
 			{
-				name: 'Morning Star',
+				name: 'Morning Star - Persona',
 				level: 96
 			},
 			{

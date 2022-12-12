@@ -6564,7 +6564,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		stat: 'Money'
 	},
 	{
-		name: 'Morning Star',
+		name: 'Morning Star - Persona',
 		affinity: 'Almighty',
 		type: 'ATTACK',
 		unique: true,
