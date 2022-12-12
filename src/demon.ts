@@ -104,8 +104,6 @@ export class Persona extends Demon implements PersonaData {
 	evoSkillName: string | null;
 	/** The instance of the skill that the Persona will learn upon reaching this stage */
 	evoSkill: AnySkill | null;
-	/** The Persona that this Persona can evolve into, or null if none */
-	evolution: Persona | null;
 	constructor(data: PersonaData) {
 		super(data);
 		this.affinities = data.affinities;
@@ -119,7 +117,10 @@ export class Persona extends Demon implements PersonaData {
 		this.stage = data.stage;
 		this.evoSkillName = data.evoSkillName;
 		this.evoSkill = this.evoSkillName === null ? null : Skill.get(this.evoSkillName, true);
-		this.evolution = Persona.array.find(persona => persona.user === this.user && persona.stage === (this.stage + 1)) ?? null;
+	}
+	/** The Persona that this Persona can evolve into, or null if none */
+	get evolution(): Persona | null {
+		return Persona.array.find(persona => persona.user === this.user && persona.stage === (this.stage + 1)) ?? null;
 	}
 	/**
 	 * Returns a string in "(User) (Name)" format
