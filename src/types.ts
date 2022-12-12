@@ -23,9 +23,9 @@ export type EnemyRange = 'One' | 'All' | 'Random';
 export type AnyRange = AllyRange | EnemyRange;
 
 /** Demons' Arcanas */
-export type Arcana = 'Fool' | 'Magician' | 'Priestess' | 'Empress' | 'Emperor' | 'Hierophant' | 'Lovers' | 'Chariot'
-| 'Justice' | 'Hermit' | 'Fortune' | 'Strength' | 'Hanged' | 'Death' | 'Temperance' | 'Devil' | 'Tower'
-| 'Star' | 'Moon' | 'Sun' | 'Judgement' | 'Faith' | 'Councillor' | 'World' | 'Apostle' | 'Hope';
+export type Arcana = 'Fool' | 'Magician' | 'Priestess' | 'Empress' | 'Emperor' | 'Hierophant' | 'Hunger' | 'Lovers'
+| 'Chariot' | 'Justice' | 'Hermit' | 'Fortune' | 'Strength' | 'Hanged' | 'Death' | 'Temperance' | 'Devil' | 'Tower'
+| 'Star' | 'Moon' | 'Sun' | 'Judgement' | 'Aeon' | 'Faith' | 'Councillor' | 'World' | 'Apostle' | 'Hope';
 
 /** An ATTACK-type skill's cost */
 export interface AttackCost {
@@ -148,8 +148,8 @@ export type AnyGame = PersonaGame | SMTGame;
 
 /** Demons' races */
 export type Race = 'Amatsu' | 'Avatar' | 'Avian' | 'Beast' | 'Brute' | 'Deity' | 'Devil' | 'Divine' | 'Dragon' | 'Drake' | 'Element' | 'Fairy' | 'Fallen'
-| 'Femme' | 'Fiend' | 'Foul' | 'Fury' | 'Genma' | 'Godly' | 'Haunt' | 'Herald' | 'Holy' | 'Jaki' | 'Jirae' | 'Kishin' | 'Kunitsu' | 'Lady'
-| 'Megami' | 'Mitama' | 'Night' | 'Nymph' | 'Panagia' | 'Persona' | 'Picaro' | 'Raptor' | 'Snake' | 'Treasure' | 'Tyrant' | 'Vile' | 'Wargod' | 'Wilder' | 'Yoma';
+| 'Femme' | 'Fiend' | 'Foul' | 'Fury' | 'Genma' | 'Godly' | 'Haunt' | 'Herald' | 'Holy' | 'Jaki' | 'Jirae' | 'Kishin' | 'Kunitsu' | 'Lady' | 'Megami'
+| 'Mitama' | 'Night' | 'Nymph' | 'Panagia' | 'Persona' | 'Picaro' | 'Raptor' | 'Snake' | 'Tenma' | 'Treasure' | 'Tyrant' | 'Vile' | 'Wargod' | 'Wilder' | 'Wood' | 'Yoma';
 
 /** The displayed amount that RecoverySkill instances can recover  */
 export type RecoveryAmount = 'Slight' | 'Moderate' | 'Half' | 'Full' | '130%';

@@ -674,6 +674,72 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		evoSkill: 'Ultimate Support'
 	},
 	{
+		name: 'Alarune',
+		aliases: [],
+		affinities: {
+			skillPotential: null,
+			inherit: 'Recovery'
+		},
+		arcana: 'Moon',
+		race: 'Wood',
+		level: 41,
+		hp: null,
+		mp: null,
+		stats: {
+			st: 17,
+			vi: 21,
+			ma: 35,
+			ag: 29,
+			lu: 28
+		},
+		learnset: [
+			{
+				name: 'Mediarama',
+				level: 0
+			},
+			{
+				name: 'Energy Shower',
+				level: 0
+			},
+			{
+				name: 'Old One',
+				level: 0
+			},
+			{
+				name: 'Makarakarn',
+				level: 43
+			},
+			{
+				name: 'Green Wall',
+				level: 44
+			},
+			{
+				name: 'Null Enervate',
+				level: 45
+			},
+			{
+				name: 'Enervate Boost',
+				level: 46
+			}
+		],
+		resistances: {
+			ailments: null,
+			weak: [
+				'Wind'
+			],
+			resist: [
+				'Fire',
+				'Ice'
+			],
+			null: [
+				'Dark'
+			],
+			drain: [],
+			repel: []
+		},
+		game: 'p4'
+	},
+	{
 		name: 'Alice',
 		aliases: [],
 		affinities: {
@@ -3480,6 +3546,71 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		game: 'smt5'
 	},
 	{
+		name: 'Baal Zebul',
+		aliases: [],
+		affinities: {
+			skillPotential: null,
+			inherit: 'Ice'
+		},
+		arcana: 'Moon',
+		race: 'Tyrant',
+		level: 77,
+		hp: null,
+		mp: null,
+		stats: {
+			st: 48,
+			vi: 49,
+			ma: 60,
+			ag: 40,
+			lu: 41
+		},
+		learnset: [
+			{
+				name: 'Mabufudyne',
+				level: 0
+			},
+			{
+				name: 'Mamudoon',
+				level: 0
+			},
+			{
+				name: 'Old One',
+				level: 0
+			},
+			{
+				name: 'Tentarafoo',
+				level: 78
+			},
+			{
+				name: 'Maziodyne',
+				level: 79
+			},
+			{
+				name: 'Mudo Boost',
+				level: 80
+			},
+			{
+				name: 'Stagnant Air',
+				level: 82
+			}
+		],
+		resistances: {
+			ailments: null,
+			weak: [
+				'Fire'
+			],
+			resist: [],
+			null: [
+				'Dark'
+			],
+			drain: [
+				'Ice'
+			],
+			repel: []
+		},
+		game: 'p4'
+	},
+	{
 		name: 'Baphomet',
 		aliases: [],
 		affinities: {
@@ -6204,6 +6335,69 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		game: 'smt5'
 	},
 	{
+		name: 'Cu Sith',
+		aliases: [],
+		affinities: {
+			skillPotential: null,
+			inherit: 'Wind'
+		},
+		arcana: 'Sun',
+		race: 'Beast',
+		level: 10,
+		hp: null,
+		mp: null,
+		stats: {
+			st: 10,
+			vi: 6,
+			ma: 5,
+			ag: 9,
+			lu: 7
+		},
+		learnset: [
+			{
+				name: 'Garu',
+				level: 0
+			},
+			{
+				name: 'Pulinpa',
+				level: 0
+			},
+			{
+				name: 'Rakukaja',
+				level: 0
+			},
+			{
+				name: 'Growth 1',
+				level: 11
+			},
+			{
+				name: 'Magaru',
+				level: 13
+			},
+			{
+				name: 'White Wall',
+				level: 14
+			},
+			{
+				name: 'Traesto',
+				level: 15
+			}
+		],
+		resistances: {
+			ailments: null,
+			weak: [
+				'Fire'
+			],
+			resist: [
+				'Wind'
+			],
+			null: [],
+			drain: [],
+			repel: []
+		},
+		game: 'p4'
+	},
+	{
 		name: 'Cybele',
 		aliases: [],
 		affinities: {
@@ -8290,6 +8484,69 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		game: 'smt5'
 	},
 	{
+		name: 'Gdon',
+		aliases: [],
+		affinities: {
+			skillPotential: null,
+			inherit: 'Fire'
+		},
+		arcana: 'Sun',
+		race: 'Beast',
+		level: 31,
+		hp: null,
+		mp: null,
+		stats: {
+			st: 27,
+			vi: 23,
+			ma: 10,
+			ag: 22,
+			lu: 18
+		},
+		learnset: [
+			{
+				name: 'Agilao',
+				level: 0
+			},
+			{
+				name: 'Maragi',
+				level: 0
+			},
+			{
+				name: 'Fire Break',
+				level: 0
+			},
+			{
+				name: 'Growth 2',
+				level: 33
+			},
+			{
+				name: 'Maragion',
+				level: 34
+			},
+			{
+				name: 'Fire Boost',
+				level: 35
+			},
+			{
+				name: 'Evade Ice',
+				level: 36
+			}
+		],
+		resistances: {
+			ailments: null,
+			weak: [
+				'Ice'
+			],
+			resist: [],
+			null: [],
+			drain: [
+				'Fire'
+			],
+			repel: []
+		},
+		game: 'p4'
+	},
+	{
 		name: 'Genbu',
 		aliases: [
 			'Xuanwu'
@@ -8357,6 +8614,70 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			repel: []
 		},
 		game: 'smt5'
+	},
+	{
+		name: 'Ghoul',
+		aliases: [],
+		affinities: {
+			skillPotential: null,
+			inherit: 'Ailment'
+		},
+		arcana: 'Death',
+		race: 'Haunt',
+		level: 9,
+		hp: null,
+		mp: null,
+		stats: {
+			st: 8,
+			vi: 9,
+			ma: 7,
+			ag: 5,
+			lu: 5
+		},
+		learnset: [
+			{
+				name: 'Lunge',
+				level: 0
+			},
+			{
+				name: 'Poisma',
+				level: 0
+			},
+			{
+				name: 'Sukukaja',
+				level: 10
+			},
+			{
+				name: 'Enervation',
+				level: 11
+			},
+			{
+				name: 'Poison Skewer',
+				level: 12
+			},
+			{
+				name: 'Rakunda',
+				level: 13
+			},
+			{
+				name: 'Poison Boost',
+				level: 14
+			}
+		],
+		resistances: {
+			ailments: null,
+			weak: [
+				'Fire',
+				'Light'
+			],
+			resist: [],
+			null: [
+				'Ice'
+			],
+			drain: [],
+			repel: []
+		},
+		game: 'p4'
 	},
 	{
 		name: 'Girimehkala',
@@ -8750,6 +9071,70 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		user: 'Yusuke Kitagawa',
 		stage: 3,
 		evoSkill: 'Luster Candy'
+	},
+	{
+		name: 'Gurr',
+		aliases: [],
+		affinities: {
+			skillPotential: null,
+			inherit: 'Phys'
+		},
+		arcana: 'Hunger',
+		race: 'Raptor',
+		level: 20,
+		hp: null,
+		mp: null,
+		stats: {
+			st: 16,
+			vi: 14,
+			ma: 11,
+			ag: 15,
+			lu: 11
+		},
+		learnset: [
+			{
+				name: 'Muzzle Shot',
+				level: 0
+			},
+			{
+				name: 'Attack Master',
+				level: 0
+			},
+			{
+				name: 'Growth 1',
+				level: 21
+			},
+			{
+				name: 'Swift Strike',
+				level: 22
+			},
+			{
+				name: 'Poison Mist',
+				level: 23
+			},
+			{
+				name: 'Poison Boost',
+				level: 25
+			},
+			{
+				name: 'Resist Phys',
+				level: 27
+			}
+		],
+		resistances: {
+			ailments: null,
+			weak: [
+				'Light'
+			],
+			resist: [
+				'Wind',
+				'Dark'
+			],
+			null: [],
+			drain: [],
+			repel: []
+		},
+		game: 'p4'
 	},
 	{
 		name: 'Hachiman',
@@ -9413,6 +9798,77 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		game: 'smt5'
 	},
 	{
+		name: 'Helel',
+		aliases: [],
+		affinities: {
+			skillPotential: null,
+			inherit: 'Almighty'
+		},
+		arcana: 'Star',
+		race: 'Tyrant',
+		level: 87,
+		hp: null,
+		mp: null,
+		stats: {
+			st: 56,
+			vi: 56,
+			ma: 57,
+			ag: 49,
+			lu: 50
+		},
+		learnset: [
+			{
+				name: 'Megidolaon',
+				level: 0
+			},
+			{
+				name: 'Maragidyne',
+				level: 0
+			},
+			{
+				name: 'God\'s Hand',
+				level: 0
+			},
+			{
+				name: 'Salvation',
+				level: 88
+			},
+			{
+				name: 'Insta-Heal',
+				level: 90
+			},
+			{
+				name: 'Repel Wind',
+				level: 91
+			},
+			{
+				name: 'Arms Master',
+				level: 92
+			},
+			{
+				name: 'Morning Star',
+				level: 94
+			}
+		],
+		resistances: {
+			ailments: null,
+			weak: [
+				'Wind'
+			],
+			resist: [
+				'Phys'
+			],
+			null: [
+				'Fire',
+				'Light',
+				'Dark'
+			],
+			drain: [],
+			repel: []
+		},
+		game: 'p4'
+	},
+	{
 		name: 'Hell Biker',
 		aliases: [],
 		affinities: {
@@ -9800,6 +10256,72 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		user: 'Rise Kujikawa',
 		stage: 1,
 		evoSkill: null
+	},
+	{
+		name: 'Hitokotonusi',
+		aliases: [
+			'Hitokoto-Nushi'
+		],
+		affinities: {
+			skillPotential: null,
+			inherit: 'Ailment'
+		},
+		arcana: 'Hermit',
+		race: 'Kunitsu',
+		level: 41,
+		hp: null,
+		mp: null,
+		stats: {
+			st: 28,
+			vi: 30,
+			ma: 33,
+			ag: 20,
+			lu: 19
+		},
+		learnset: [
+			{
+				name: 'Foolish Whisper',
+				level: 0
+			},
+			{
+				name: 'Auto-Sukukaja',
+				level: 0
+			},
+			{
+				name: 'Poison Arrow',
+				level: 0
+			},
+			{
+				name: 'Zionga',
+				level: 43
+			},
+			{
+				name: 'Resist Fire',
+				level: 45
+			},
+			{
+				name: 'Elec Boost',
+				level: 46
+			},
+			{
+				name: 'Auto-Masuku',
+				level: 47
+			}
+		],
+		resistances: {
+			ailments: null,
+			weak: [
+				'Fire'
+			],
+			resist: [],
+			null: [
+				'Ice',
+				'Wind'
+			],
+			drain: [],
+			repel: []
+		},
+		game: 'p4'
 	},
 	{
 		name: 'Hokuto Seikun',
@@ -10226,6 +10748,69 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			repel: []
 		},
 		game: 'smt5'
+	},
+	{
+		name: 'Ikusa',
+		aliases: [
+			'Yomotsu-Ikusa'
+		],
+		affinities: {
+			skillPotential: null,
+			inherit: 'Ailment'
+		},
+		arcana: 'Hanged',
+		race: 'Brute',
+		level: 22,
+		hp: null,
+		mp: null,
+		stats: {
+			st: 17,
+			vi: 18,
+			ma: 16,
+			ag: 12,
+			lu: 10
+		},
+		learnset: [
+			{
+				name: 'Cell Breaker',
+				level: 0
+			},
+			{
+				name: 'Mabufu',
+				level: 0
+			},
+			{
+				name: 'Enervate Boost',
+				level: 24
+			},
+			{
+				name: 'Foul Breath',
+				level: 25
+			},
+			{
+				name: 'Poison Mist',
+				level: 26
+			},
+			{
+				name: 'Poison Boost',
+				level: 27
+			}
+		],
+		resistances: {
+			ailments: null,
+			weak: [
+				'Fire'
+			],
+			resist: [
+				'Ice'
+			],
+			null: [
+				'Dark'
+			],
+			drain: [],
+			repel: []
+		},
+		game: 'p4'
 	},
 	{
 		name: 'Inanna',
@@ -12585,6 +13170,124 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		evoSkill: null
 	},
 	{
+		name: 'Narasimha',
+		aliases: [],
+		affinities: {
+			skillPotential: null,
+			inherit: 'Light'
+		},
+		arcana: 'Sun',
+		race: 'Avatar',
+		level: 47,
+		hp: null,
+		mp: null,
+		stats: {
+			st: 29,
+			vi: 30,
+			ma: 27,
+			ag: 35,
+			lu: 27
+		},
+		learnset: [
+			{
+				name: 'Hamaon',
+				level: 0
+			},
+			{
+				name: 'Tempest Slash',
+				level: 0
+			},
+			{
+				name: 'Counterstrike',
+				level: 48
+			},
+			{
+				name: 'Evade Wind',
+				level: 49
+			},
+			{
+				name: 'Mahamaon',
+				level: 51
+			},
+			{
+				name: 'Auto-Mataru',
+				level: 53
+			}
+		],
+		resistances: {
+			ailments: null,
+			weak: [
+				'Fire'
+			],
+			resist: [
+				'Phys'
+			],
+			null: [
+				'Light'
+			],
+			drain: [],
+			repel: []
+		},
+		game: 'p4'
+	},
+	{
+		name: 'Kartikeya',
+		aliases: [],
+		affinities: {
+			skillPotential: null,
+			inherit: 'Elec'
+		},
+		arcana: 'Star',
+		race: 'Fury',
+		level: 67,
+		hp: null,
+		mp: null,
+		stats: {
+			st: 47,
+			vi: 40,
+			ma: 39,
+			ag: 44,
+			lu: 38
+		},
+		learnset: [
+			{
+				name: 'Maziodyne',
+				level: 0
+			},
+			{
+				name: 'Auto-Mataru',
+				level: 0
+			},
+			{
+				name: 'High Counter',
+				level: 68
+			},
+			{
+				name: 'Myriad Arrows',
+				level: 69
+			},
+			{
+				name: 'Growth 2',
+				level: 70
+			},
+			{
+				name: 'Primal Force',
+				level: 75
+			}
+		],
+		resistances: {
+			ailments: null,
+			weak: [],
+			resist: [],
+			null: [],
+			drain: [],
+			repel: [
+				'Elec'
+			]
+		},
+		game: 'p4'
+	},
+	{
 		name: 'Kaya-no-Hime',
 		aliases: [],
 		affinities: {
@@ -13027,6 +13730,70 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			repel: []
 		},
 		game: 'smt5'
+	},
+	{
+		name: 'Kingu',
+		aliases: [],
+		affinities: {
+			skillPotential: null,
+			inherit: 'Recovery'
+		},
+		arcana: 'Aeon',
+		race: 'Drake',
+		level: 58,
+		hp: null,
+		mp: null,
+		stats: {
+			st: 38,
+			vi: 38,
+			ma: 44,
+			ag: 30,
+			lu: 31
+		},
+		learnset: [
+			{
+				name: 'Mediarama',
+				level: 0
+			},
+			{
+				name: 'Evade Fire',
+				level: 0
+			},
+			{
+				name: 'Auto-Masuku',
+				level: 0
+			},
+			{
+				name: 'Null Confuse',
+				level: 59
+			},
+			{
+				name: 'Null Poison',
+				level: 60
+			},
+			{
+				name: 'Vicious Strike',
+				level: 62
+			},
+			{
+				name: 'Endure',
+				level: 63
+			}
+		],
+		resistances: {
+			ailments: null,
+			weak: [
+				'Fire'
+			],
+			resist: [
+				'Elec',
+				'Dark'
+			],
+			null: [],
+			drain: [],
+			repel: []
+		},
+		game: 'p4'
 	},
 	{
 		name: 'Kin-Ki',
@@ -13985,7 +14752,9 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Kushi Mitama',
-		aliases: [],
+		aliases: [
+			'Kusi Mitama'
+		],
 		affinities: {
 			skillPotential: null,
 			inherit: 'Recovery'
@@ -15518,6 +16287,75 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		game: 'p5'
 	},
 	{
+		name: 'Mahakala',
+		aliases: [],
+		affinities: {
+			skillPotential: null,
+			inherit: 'Phys'
+		},
+		arcana: 'Death',
+		race: 'Tenma',
+		level: 78,
+		hp: null,
+		mp: null,
+		stats: {
+			st: 58,
+			vi: 57,
+			ma: 38,
+			ag: 49,
+			lu: 39
+		},
+		learnset: [
+			{
+				name: 'Agidyne',
+				level: 0
+			},
+			{
+				name: 'Myriad Arrows',
+				level: 0
+			},
+			{
+				name: 'Charge',
+				level: 0
+			},
+			{
+				name: 'Concentrate',
+				level: 80
+			},
+			{
+				name: 'Maragidyne',
+				level: 82
+			},
+			{
+				name: 'Mamudoon',
+				level: 83
+			},
+			{
+				name: 'Fire Amp',
+				level: 84
+			},
+			{
+				name: 'Mudo Boost',
+				level: 85
+			}
+		],
+		resistances: {
+			ailments: null,
+			weak: [],
+			resist: [],
+			null: [
+				'Dark'
+			],
+			drain: [
+				'Fire'
+			],
+			repel: [
+				'Elec'
+			]
+		},
+		game: 'p4'
+	},
+	{
 		name: 'Makami',
 		aliases: [],
 		affinities: {
@@ -15877,6 +16715,67 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			repel: []
 		},
 		game: 'smt5'
+	},
+	{
+		name: 'Masakado',
+		aliases: [],
+		affinities: {
+			skillPotential: null,
+			inherit: 'Light'
+		},
+		arcana: 'Tower',
+		race: 'Fury',
+		level: 69,
+		hp: null,
+		mp: null,
+		stats: {
+			st: 51,
+			vi: 45,
+			ma: 32,
+			ag: 46,
+			lu: 40
+		},
+		learnset: [
+			{
+				name: 'Mahamaon',
+				level: 0
+			},
+			{
+				name: 'Tempest Slash',
+				level: 0
+			},
+			{
+				name: 'Myriad Arrows',
+				level: 71
+			},
+			{
+				name: 'Hama Boost',
+				level: 73
+			},
+			{
+				name: 'Arms Master',
+				level: 74
+			},
+			{
+				name: 'Enduring Soul',
+				level: 76
+			}
+		],
+		resistances: {
+			ailments: null,
+			weak: [
+				'Elec',
+				'Dark'
+			],
+			resist: [],
+			null: [
+				'Phys',
+				'Fire'
+			],
+			drain: [],
+			repel: []
+		},
+		game: 'p4'
 	},
 	{
 		name: 'Matador',
@@ -17938,6 +18837,70 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		evoSkill: null
 	},
 	{
+		name: 'Nidhoggr',
+		aliases: [],
+		affinities: {
+			skillPotential: null,
+			inherit: 'Dark'
+		},
+		arcana: 'Hermit',
+		race: 'Drake',
+		level: 55,
+		hp: null,
+		mp: null,
+		stats: {
+			st: 23,
+			vi: 35,
+			ma: 41,
+			ag: 31,
+			lu: 42
+		},
+		learnset: [
+			{
+				name: 'Mamudoon',
+				level: 0
+			},
+			{
+				name: 'Evil Smile',
+				level: 0
+			},
+			{
+				name: 'Ghastly Wail',
+				level: 57
+			},
+			{
+				name: 'Bufudyne',
+				level: 58
+			},
+			{
+				name: 'Stagnant Air',
+				level: 59
+			},
+			{
+				name: 'Resist Phys',
+				level: 60
+			},
+			{
+				name: 'Ice Boost',
+				level: 61
+			}
+		],
+		resistances: {
+			ailments: null,
+			weak: [
+				'Light'
+			],
+			resist: [],
+			null: [
+				'Ice',
+				'Dark'
+			],
+			drain: [],
+			repel: []
+		},
+		game: 'p4'
+	},
+	{
 		name: 'Nigi Mitama',
 		aliases: [],
 		affinities: {
@@ -18067,6 +19030,69 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			repel: []
 		},
 		game: 'smt5'
+	},
+	{
+		name: 'Nozuchi',
+		aliases: [],
+		affinities: {
+			skillPotential: null,
+			inherit: 'Ailment'
+		},
+		arcana: 'Moon',
+		race: 'Snake',
+		level: 27,
+		hp: null,
+		mp: null,
+		stats: {
+			st: 26,
+			vi: 19,
+			ma: 13,
+			ag: 15,
+			lu: 15
+		},
+		learnset: [
+			{
+				name: 'Poison Mist',
+				level: 0
+			},
+			{
+				name: 'Enervation',
+				level: 0
+			},
+			{
+				name: 'Ailment Boost',
+				level: 0
+			},
+			{
+				name: 'Zionga',
+				level: 29
+			},
+			{
+				name: 'Rakukaja',
+				level: 30
+			},
+			{
+				name: 'Null Poison',
+				level: 31
+			},
+			{
+				name: 'Null Enervate',
+				level: 32
+			}
+		],
+		resistances: {
+			ailments: null,
+			weak: [
+				'Ice'
+			],
+			resist: [],
+			null: [],
+			drain: [],
+			repel: [
+				'Elec'
+			]
+		},
+		game: 'p4'
 	},
 	{
 		name: 'Nue',
@@ -21952,6 +22978,72 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		game: 'p5'
 	},
 	{
+		name: 'Samael',
+		aliases: [],
+		affinities: {
+			skillPotential: null,
+			inherit: 'Dark'
+		},
+		arcana: 'Death',
+		race: 'Fallen',
+		level: 36,
+		hp: null,
+		mp: null,
+		stats: {
+			st: 24,
+			vi: 25,
+			ma: 29,
+			ag: 19,
+			lu: 18
+		},
+		learnset: [
+			{
+				name: 'Mudoon',
+				level: 0
+			},
+			{
+				name: 'Matarunda',
+				level: 0
+			},
+			{
+				name: 'Poison Mist',
+				level: 0
+			},
+			{
+				name: 'Dekunda',
+				level: 38
+			},
+			{
+				name: 'Megido',
+				level: 39
+			},
+			{
+				name: 'Mudo Boost',
+				level: 40
+			},
+			{
+				name: 'Survive Light',
+				level: 41
+			}
+		],
+		resistances: {
+			ailments: null,
+			weak: [
+				'Wind'
+			],
+			resist: [
+				'Ice'
+			],
+			null: [
+				'Elec',
+				'Dark'
+			],
+			drain: [],
+			repel: []
+		},
+		game: 'p4'
+	},
+	{
 		name: 'Sandalphon',
 		aliases: [],
 		affinities: {
@@ -22316,6 +23408,126 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		evoSkill: null
 	},
 	{
+		name: 'Sati',
+		aliases: [],
+		affinities: {
+			skillPotential: null,
+			inherit: 'Fire'
+		},
+		arcana: 'Aeon',
+		race: 'Megami',
+		level: 31,
+		hp: null,
+		mp: null,
+		stats: {
+			st: 19,
+			vi: 20,
+			ma: 27,
+			ag: 17,
+			lu: 17
+		},
+		learnset: [
+			{
+				name: 'Maragi',
+				level: 0
+			},
+			{
+				name: 'Agilao',
+				level: 0
+			},
+			{
+				name: 'Energy Shower',
+				level: 0
+			},
+			{
+				name: 'Diarama',
+				level: 33
+			},
+			{
+				name: 'Trafuri',
+				level: 34
+			},
+			{
+				name: 'Maragion',
+				level: 36
+			}
+		],
+		resistances: {
+			ailments: null,
+			weak: [
+				'Ice'
+			],
+			resist: [],
+			null: [
+				'Fire'
+			],
+			drain: [],
+			repel: []
+		},
+		game: 'p4'
+	},
+	{
+		name: 'Saturnus',
+		aliases: [],
+		affinities: {
+			skillPotential: null,
+			inherit: 'Fire'
+		},
+		arcana: 'Star',
+		race: 'Vile',
+		level: 75,
+		hp: null,
+		mp: null,
+		stats: {
+			st: 50,
+			vi: 36,
+			ma: 57,
+			ag: 43,
+			lu: 49
+		},
+		learnset: [
+			{
+				name: 'Agidyne',
+				level: 0
+			},
+			{
+				name: 'Maragidyne',
+				level: 0
+			},
+			{
+				name: 'Fire Amp',
+				level: 0
+			},
+			{
+				name: 'Evade Ice',
+				level: 77
+			},
+			{
+				name: 'Growth 3',
+				level: 79
+			},
+			{
+				name: 'Spell Master',
+				level: 81
+			}
+		],
+		resistances: {
+			ailments: null,
+			weak: [
+				'Ice'
+			],
+			resist: [],
+			null: [
+				'Wind'
+			],
+			drain: [
+				'Fire'
+			],
+			repel: []
+		},
+		game: 'p4'
+	},
+	{
 		name: 'Scathach',
 		aliases: [],
 		affinities: {
@@ -22393,7 +23605,9 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Seiryu',
 		aliases: [
-			'Qing Long'
+			'Long',
+			'Qing Long',
+			'Seiryuu'
 		],
 		affinities: {
 			skillPotential: {
@@ -22466,6 +23680,72 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			repel: []
 		},
 		game: 'smt5'
+	},
+	{
+		name: 'Seiten Taisei',
+		aliases: [
+			'Qitian Dasheng'
+		],
+		affinities: {
+			skillPotential: null,
+			inherit: 'Phys'
+		},
+		arcana: 'Hunger',
+		race: 'Fury',
+		level: 68,
+		hp: null,
+		mp: null,
+		stats: {
+			st: 47,
+			vi: 40,
+			ma: 34,
+			ag: 48,
+			lu: 42
+		},
+		learnset: [
+			{
+				name: 'Brave Blade',
+				level: 0
+			},
+			{
+				name: 'Rebellion',
+				level: 0
+			},
+			{
+				name: 'Evade Elec',
+				level: 0
+			},
+			{
+				name: 'High Counter',
+				level: 69
+			},
+			{
+				name: 'Arms Master',
+				level: 71
+			},
+			{
+				name: 'Regenerate 3',
+				level: 74
+			},
+			{
+				name: 'Vorpal Blade',
+				level: 76
+			}
+		],
+		resistances: {
+			ailments: null,
+			weak: [
+				'Fire'
+			],
+			resist: [
+				'Phys',
+				'Wind'
+			],
+			null: [],
+			drain: [],
+			repel: []
+		},
+		game: 'p4'
 	},
 	{
 		name: 'Seiten Taisei - P5',
@@ -23966,6 +25246,69 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		evoSkill: 'Maragibarion'
 	},
 	{
+		name: 'Suparna',
+		aliases: [],
+		affinities: {
+			skillPotential: null,
+			inherit: 'Wind'
+		},
+		arcana: 'Sun',
+		race: 'Avian',
+		level: 77,
+		hp: null,
+		mp: null,
+		stats: {
+			st: 48,
+			vi: 45,
+			ma: 52,
+			ag: 55,
+			lu: 38
+		},
+		learnset: [
+			{
+				name: 'Garudyne',
+				level: 0
+			},
+			{
+				name: 'Makajam',
+				level: 0
+			},
+			{
+				name: 'Evade Ice',
+				level: 79
+			},
+			{
+				name: 'Wind Amp',
+				level: 80
+			},
+			{
+				name: 'Magarudyne',
+				level: 81
+			},
+			{
+				name: 'Evade Fire',
+				level: 82
+			},
+			{
+				name: 'Elec Amp',
+				level: 83
+			}
+		],
+		resistances: {
+			ailments: null,
+			weak: [
+				'Elec'
+			],
+			resist: [],
+			null: [
+				'Wind'
+			],
+			drain: [],
+			repel: []
+		},
+		game: 'p4'
+	},
+	{
 		name: 'Surt',
 		aliases: [],
 		affinities: {
@@ -24336,6 +25679,65 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		user: 'Chie Satonaka',
 		stage: 2,
 		evoSkill: null
+	},
+	{
+		name: 'Sylph',
+		aliases: [],
+		affinities: {
+			skillPotential: null,
+			inherit: 'Wind'
+		},
+		arcana: 'Temperance',
+		race: 'Element',
+		level: 11,
+		hp: null,
+		mp: null,
+		stats: {
+			st: 8,
+			vi: 5,
+			ma: 10,
+			ag: 10,
+			lu: 7
+		},
+		learnset: [
+			{
+				name: 'Garu',
+				level: 0
+			},
+			{
+				name: 'Sukukaja',
+				level: 0
+			},
+			{
+				name: 'Me Patra',
+				level: 0
+			},
+			{
+				name: 'Regenerate 1',
+				level: 12
+			},
+			{
+				name: 'Media',
+				level: 13
+			},
+			{
+				name: 'Magaru',
+				level: 14
+			}
+		],
+		resistances: {
+			ailments: null,
+			weak: [
+				'Elec'
+			],
+			resist: [
+				'Wind'
+			],
+			null: [],
+			drain: [],
+			repel: []
+		},
+		game: 'p4'
 	},
 	{
 		name: 'Takehaya Susano-o',
@@ -24874,6 +26276,195 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			repel: []
 		},
 		game: 'smt5'
+	},
+	{
+		name: 'Taowu',
+		aliases: [
+			'Taown'
+		],
+		affinities: {
+			skillPotential: null,
+			inherit: 'Recovery'
+		},
+		arcana: 'Hanged',
+		race: 'Wilder',
+		level: 56,
+		hp: null,
+		mp: null,
+		stats: {
+			st: 40,
+			vi: 37,
+			ma: 31,
+			ag: 38,
+			lu: 29
+		},
+		learnset: [
+			{
+				name: 'Aeon Rain',
+				level: 0
+			},
+			{
+				name: 'Dekaja',
+				level: 0
+			},
+			{
+				name: 'Matarukaja',
+				level: 0
+			},
+			{
+				name: 'Null Enervate',
+				level: 58
+			},
+			{
+				name: 'Charge',
+				level: 50
+			},
+			{
+				name: 'Evade Phys',
+				level: 61
+			},
+			{
+				name: 'Drain Fire',
+				level: 62
+			}
+		],
+		resistances: {
+			ailments: null,
+			weak: [
+				'Fire',
+				'Light'
+			],
+			resist: [],
+			null: [
+				'Wind',
+				'Dark'
+			],
+			drain: [],
+			repel: []
+		},
+		game: 'p4'
+	},
+	{
+		name: 'Taotie',
+		aliases: [
+			'Tao Tie'
+		],
+		affinities: {
+			skillPotential: null,
+			inherit: 'Almighty'
+		},
+		arcana: 'Tower',
+		race: 'Vile',
+		level: 35,
+		hp: null,
+		mp: null,
+		stats: {
+			st: 20,
+			vi: 30,
+			ma: 27,
+			ag: 22,
+			lu: 13
+		},
+		learnset: [
+			{
+				name: 'Megido',
+				level: 0
+			},
+			{
+				name: 'Mind Slice',
+				level: 0
+			},
+			{
+				name: 'Dekunda',
+				level: 0
+			},
+			{
+				name: 'Confuse Boost',
+				level: 37
+			},
+			{
+				name: 'Concentrate',
+				level: 38
+			},
+			{
+				name: 'Null Enervate',
+				level: 40
+			},
+			{
+				name: 'Torrent Shot',
+				level: 41
+			}
+		],
+		resistances: {
+			ailments: null,
+			weak: [],
+			resist: [],
+			null: [],
+			drain: [],
+			repel: [
+				'Dark'
+			]
+		},
+		game: 'p4'
+	},
+	{
+		name: 'Titan',
+		aliases: [],
+		affinities: {
+			skillPotential: null,
+			inherit: 'Elec'
+		},
+		arcana: 'Strength',
+		race: 'Jirae',
+		level: 14,
+		hp: null,
+		mp: null,
+		stats: {
+			st: 11,
+			vi: 10,
+			ma: 12,
+			ag: 10,
+			lu: 6
+		},
+		learnset: [
+			{
+				name: 'Mazio',
+				level: 0
+			},
+			{
+				name: 'Skull Cracker',
+				level: 0
+			},
+			{
+				name: 'Dekunda',
+				level: 0
+			},
+			{
+				name: 'Dodge Ice',
+				level: 16
+			},
+			{
+				name: 'Kill Rush',
+				level: 18
+			},
+			{
+				name: 'Resist Fear',
+				level: 19
+			}
+		],
+		resistances: {
+			ailments: null,
+			weak: [
+				'Ice'
+			],
+			resist: [
+				'Elec'
+			],
+			null: [],
+			drain: [],
+			repel: []
+		},
+		game: 'p4'
 	},
 	{
 		name: 'Thanatos',
@@ -26078,6 +27669,65 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		game: 'p4'
 	},
 	{
+		name: 'Ukobach',
+		aliases: [],
+		affinities: {
+			skillPotential: null,
+			inherit: 'Fire'
+		},
+		arcana: 'Devil',
+		race: 'Fallen',
+		level: 3,
+		hp: null,
+		mp: null,
+		stats: {
+			st: 3,
+			vi: 3,
+			ma: 4,
+			ag: 4,
+			lu: 2
+		},
+		learnset: [
+			{
+				name: 'Agi',
+				level: 0
+			},
+			{
+				name: 'Sukunda',
+				level: 0
+			},
+			{
+				name: 'Pulinpa',
+				level: 4
+			},
+			{
+				name: 'Confuse Boost',
+				level: 5
+			},
+			{
+				name: 'Resist Fire',
+				level: 6
+			},
+			{
+				name: 'Fire Break',
+				level: 7
+			}
+		],
+		resistances: {
+			ailments: null,
+			weak: [
+				'Ice'
+			],
+			resist: [
+				'Fire'
+			],
+			null: [],
+			drain: [],
+			repel: []
+		},
+		game: 'p4'
+	},
+	{
 		name: 'Undine',
 		aliases: [],
 		affinities: {
@@ -26597,6 +28247,135 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		game: 'smt5'
 	},
 	{
+		name: 'Vetala',
+		aliases: [],
+		affinities: {
+			skillPotential: null,
+			inherit: 'Ailment'
+		},
+		arcana: 'Devil',
+		race: 'Haunt',
+		level: 19,
+		hp: null,
+		mp: null,
+		stats: {
+			st: 17,
+			vi: 14,
+			ma: 10,
+			ag: 12,
+			lu: 11
+		},
+		learnset: [
+			{
+				name: 'Foolish Whisper',
+				level: 0
+			},
+			{
+				name: 'Evil Touch',
+				level: 0
+			},
+			{
+				name: 'Life Drain',
+				level: 20
+			},
+			{
+				name: 'Foul Breath',
+				level: 21
+			},
+			{
+				name: 'Brain Shake',
+				level: 22
+			},
+			{
+				name: 'Ghastly Wail',
+				level: 23
+			},
+			{
+				name: 'Fear Boost',
+				level: 24
+			}
+		],
+		resistances: {
+			ailments: null,
+			weak: [
+				'Fire'
+			],
+			resist: [
+				'Wind',
+				'Dark'
+			],
+			null: [],
+			drain: [],
+			repel: []
+		},
+		game: 'p4'
+	},
+	{
+		name: 'Virtue',
+		aliases: [],
+		affinities: {
+			skillPotential: null,
+			inherit: 'Light'
+		},
+		arcana: 'Justice',
+		race: 'Divine',
+		level: 33,
+		hp: null,
+		mp: null,
+		stats: {
+			st: 22,
+			vi: 21,
+			ma: 29,
+			ag: 19,
+			lu: 15
+		},
+		learnset: [
+			{
+				name: 'Mahama',
+				level: 0
+			},
+			{
+				name: 'Garula',
+				level: 0
+			},
+			{
+				name: 'Posumudi',
+				level: 0
+			},
+			{
+				name: 'Fatal End',
+				level: 35
+			},
+			{
+				name: 'Blue Wall',
+				level: 37
+			},
+			{
+				name: 'Hama Boost',
+				level: 38
+			},
+			{
+				name: 'Resist Dark',
+				level: 39
+			}
+		],
+		resistances: {
+			ailments: null,
+			weak: [
+				'Ice',
+				'Dark'
+			],
+			resist: [],
+			null: [
+				'Elec',
+				'Light'
+			],
+			drain: [],
+			repel: []
+		},
+		game: 'p4'
+	},
+	{
 		name: 'Vishnu',
 		aliases: [],
 		affinities: {
@@ -26950,6 +28729,69 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		user: 'Ryuji Sakamoto',
 		stage: 3,
 		evoSkill: 'Fighting Spirit'
+	},
+	{
+		name: 'Xiezhai',
+		aliases: [],
+		affinities: {
+			skillPotential: null,
+			inherit: 'Elec'
+		},
+		arcana: 'Temperance',
+		race: 'Avatar',
+		level: 16,
+		hp: null,
+		mp: null,
+		stats: {
+			st: 14,
+			vi: 9,
+			ma: 12,
+			ag: 13,
+			lu: 7
+		},
+		learnset: [
+			{
+				name: 'Zio',
+				level: 0
+			},
+			{
+				name: 'Mazio',
+				level: 0
+			},
+			{
+				name: 'Rakunda',
+				level: 0
+			},
+			{
+				name: 'Makajam',
+				level: 17
+			},
+			{
+				name: 'Silence Boost',
+				level: 18
+			},
+			{
+				name: 'Rampage',
+				level: 19
+			},
+			{
+				name: 'Elec Boost',
+				level: 21
+			}
+		],
+		resistances: {
+			ailments: null,
+			weak: [
+				'Wind'
+			],
+			resist: [
+				'Elec'
+			],
+			null: [],
+			drain: [],
+			repel: []
+		},
+		game: 'p4'
 	},
 	{
 		name: 'Yaksini',
@@ -27378,6 +29220,75 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			repel: []
 		},
 		game: 'smt5'
+	},
+	{
+		name: 'Yatsufusa',
+		aliases: [],
+		affinities: {
+			skillPotential: null,
+			inherit: 'Fire'
+		},
+		arcana: 'Hanged',
+		race: 'Holy',
+		level: 49,
+		hp: null,
+		mp: null,
+		stats: {
+			st: 32,
+			vi: 27,
+			ma: 33,
+			ag: 36,
+			lu: 26
+		},
+		learnset: [
+			{
+				name: 'Agidyne',
+				level: 0
+			},
+			{
+				name: 'Masukukaja',
+				level: 0
+			},
+			{
+				name: 'Fire Boost',
+				level: 0
+			},
+			{
+				name: 'Heat Wave',
+				level: 51
+			},
+			{
+				name: 'Charge',
+				level: 52
+			},
+			{
+				name: 'Dodge Phys',
+				level: 53
+			},
+			{
+				name: 'Maragidyne',
+				level: 54
+			},
+			{
+				name: 'Concentrate',
+				level: 55
+			}
+		],
+		resistances: {
+			ailments: null,
+			weak: [],
+			resist: [],
+			null: [
+				'Light'
+			],
+			drain: [
+				'Fire'
+			],
+			repel: [
+				'Wind'
+			]
+		},
+		game: 'p4'
 	},
 	{
 		name: 'Yomotsu-Shikome',
