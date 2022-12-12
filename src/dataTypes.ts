@@ -205,7 +205,7 @@ export interface PostBattleSkillData extends SkillData {
 export interface RecoverySkillData extends SkillData {
 	affinity: 'Recovery';
 	type: 'RECOVERY';
-	ailments: (AilmentName | 'ALL')[];
+	ailments: AilmentName[] | 'All' | null;
 	amount: RecoveryAmount | null;
 	buffs: Buff[];
 	cost: number;

@@ -1152,7 +1152,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		unique: true,
 		range: 'Party',
 		cost: 24,
-		ailments: [],
+		ailments: null,
 		amount: 'Half',
 		buffs: [
 			'Accuracy/Evasion'
@@ -1262,7 +1262,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		unique: false,
 		range: 'Ally',
 		cost: 10,
-		ailments: [],
+		ailments: null,
 		amount: 'Moderate',
 		buffs: [
 			'Attack'
@@ -1936,7 +1936,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		unique: false,
 		range: 'Ally',
 		cost: 8,
-		ailments: [],
+		ailments: null,
 		amount: 'Slight',
 		buffs: [],
 		flags: []
@@ -1948,9 +1948,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		unique: false,
 		range: 'Ally',
 		cost: 30,
-		ailments: [
-			'ALL'
-		],
+		ailments: 'All',
 		amount: 'Moderate',
 		buffs: [],
 		flags: []
@@ -1962,7 +1960,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		unique: false,
 		range: 'Ally',
 		cost: 35,
-		ailments: [],
+		ailments: null,
 		amount: 'Full',
 		buffs: [],
 		flags: []
@@ -1974,7 +1972,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		unique: false,
 		range: 'Ally',
 		cost: 15,
-		ailments: [],
+		ailments: null,
 		amount: 'Moderate',
 		buffs: [],
 		flags: []
@@ -2484,7 +2482,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		unique: true,
 		range: 'Party',
 		cost: 150,
-		ailments: [],
+		ailments: null,
 		amount: '130%',
 		buffs: [],
 		flags: []
@@ -3613,7 +3611,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		unique: true,
 		range: 'Party',
 		cost: 180,
-		ailments: [],
+		ailments: null,
 		amount: 'Moderate',
 		buffs: [
 			'Attack',
@@ -3847,7 +3845,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		unique: true,
 		range: 'Ally',
 		cost: 30,
-		ailments: [],
+		ailments: null,
 		amount: 'Slight',
 		buffs: [
 			'Double Defense'
@@ -4314,7 +4312,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		unique: true,
 		range: 'Party',
 		cost: 27,
-		ailments: [],
+		ailments: null,
 		amount: 'Full',
 		buffs: [],
 		flags: [
@@ -4348,7 +4346,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		unique: true,
 		range: 'Party',
 		cost: 15,
-		ailments: [],
+		ailments: null,
 		amount: 'Slight',
 		buffs: [],
 		flags: []
@@ -4884,7 +4882,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		unique: true,
 		range: 'Party',
 		cost: 150,
-		ailments: [],
+		ailments: null,
 		amount: 'Moderate',
 		buffs: [
 			'Attack',
@@ -5892,9 +5890,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		unique: true,
 		range: 'Party',
 		cost: 140,
-		ailments: [
-			'ALL'
-		],
+		ailments: 'All',
 		amount: 'Moderate',
 		buffs: [],
 		flags: [
@@ -6084,9 +6080,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		unique: false,
 		range: 'Party',
 		cost: 30,
-		ailments: [
-			'ALL'
-		],
+		ailments: 'All',
 		amount: null,
 		buffs: [],
 		flags: []
@@ -6098,7 +6092,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		unique: false,
 		range: 'Party',
 		cost: 30,
-		ailments: [],
+		ailments: null,
 		amount: 'Slight',
 		buffs: [],
 		flags: []
@@ -6110,7 +6104,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		unique: false,
 		range: 'Party',
 		cost: 150,
-		ailments: [],
+		ailments: null,
 		amount: 'Full',
 		buffs: [],
 		flags: []
@@ -6122,7 +6116,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		unique: false,
 		range: 'Party',
 		cost: 60,
-		ailments: [],
+		ailments: null,
 		amount: 'Moderate',
 		buffs: [],
 		flags: []
@@ -6414,7 +6408,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		unique: true,
 		range: 'Party',
 		cost: 20,
-		ailments: [],
+		ailments: null,
 		amount: 'Slight',
 		buffs: [],
 		flags: []
@@ -6875,7 +6869,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		unique: true,
 		range: 'Party',
 		cost: 24,
-		ailments: [],
+		ailments: null,
 		amount: 'Half',
 		buffs: [
 			'Attack',
@@ -7186,7 +7180,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		unique: true,
 		range: 'Party',
 		cost: 38,
-		ailments: [],
+		ailments: null,
 		amount: 'Full',
 		buffs: [],
 		flags: [
@@ -7271,9 +7265,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		unique: false,
 		range: 'Ally',
 		cost: 8,
-		ailments: [
-			'ALL'
-		],
+		ailments: 'All',
 		amount: null,
 		buffs: [],
 		flags: []
@@ -8051,7 +8043,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		unique: false,
 		range: 'Ally',
 		cost: 20,
-		ailments: [],
+		ailments: null,
 		amount: 'Half',
 		buffs: [],
 		flags: [
@@ -8370,7 +8362,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		unique: true,
 		range: 'Ally',
 		cost: 100,
-		ailments: [],
+		ailments: null,
 		amount: 'Full',
 		buffs: [],
 		flags: [
@@ -8516,9 +8508,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		unique: false,
 		range: 'Party',
 		cost: 48,
-		ailments: [
-			'ALL'
-		],
+		ailments: 'All',
 		amount: 'Full',
 		buffs: [],
 		flags: []
@@ -8530,7 +8520,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		unique: false,
 		range: 'Ally',
 		cost: 60,
-		ailments: [],
+		ailments: null,
 		amount: 'Full',
 		buffs: [],
 		flags: [
@@ -9196,9 +9186,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		unique: true,
 		range: 'Ally',
 		cost: 12,
-		ailments: [
-			'ALL'
-		],
+		ailments: 'All',
 		amount: 'Moderate',
 		buffs: [],
 		flags: []
@@ -10247,7 +10235,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		unique: true,
 		range: 'Party',
 		cost: 25,
-		ailments: [],
+		ailments: null,
 		amount: 'Moderate',
 		buffs: [
 			'Accuracy/Evasion'

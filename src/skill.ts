@@ -724,7 +724,7 @@ export class RecoverySkill extends Skill implements RecoverySkillData {
 	type: 'RECOVERY';
 	description: string;
 	/** The ailments that the skill recovers from */
-	ailments: (AilmentName | 'ALL')[];
+	ailments: AilmentName[] | 'All' | null;
 	/** The displayed amount that the skill recovers by */
 	amount: RecoveryAmount | null;
 	/** The buffs that the skill casts */
@@ -742,12 +742,13 @@ export class RecoverySkill extends Skill implements RecoverySkillData {
 		this.type = data.type;
 
 		const isParty = range === 'Party';
-		if (ailments.length > 0) {
-			this.description = ailments.includes('ALL')
-				? amount === null
-					? `Cure status ailments on ${isParty ? 'all allies' : '1 ally'}.`
-					: `${amount} HP recovery and cures status ailments${flags.includes('Revert Debuffs') ? '/debuffs' : ''} for ${isParty ? 'all allies' : '1 ally'}.`
-				: `Cures ${ailments.join('/')} for ${isParty ? 'all allies' : 'one ally'}.`;
+		if (ailments === 'All') {
+			this.description = amount === null
+				? `Cure status ailments on ${isParty ? 'all allies' : '1 ally'}.`
+				: `${amount} HP recovery and cures status ailments${flags.includes('Revert Debuffs') ? '/debuffs' : ''} for ${isParty ? 'all allies' : '1 ally'}.`;
+		}
+		else if (ailments !== null) {
+			this.description = `Cures ${ailments.join('/')} for ${isParty ? 'all allies' : 'one ally'}.`;
 		}
 		else if (flags.includes('Negate')) {
 			this.description = `${amount} HP recovery for all allies. Cancels debuffs and raises all stats 1 tier for 3 turns.`;
@@ -764,8 +765,8 @@ export class RecoverySkill extends Skill implements RecoverySkillData {
 			this.description = `${amount} HP recovery to ${isParty ? 'all allies' : '1 ally'}${buffs.length > 0 ? ` and raises ${buffs.length === 3 ? 'all stats' : buffs.join('/')} by ${buffs[0].includes('Double') ? '2 ranks' : '1 rank'} for 3 turns` : ''}.`;
 		}
 
-		this.amount = amount;
 		this.ailments = ailments;
+		this.amount = amount;
 		this.buffs = buffs;
 		this.cost = data.cost;
 		this.flags = flags;
