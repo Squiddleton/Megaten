@@ -1924,6 +1924,69 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		game: 'smt5'
 	},
 	{
+		name: 'Ara Mitama',
+		aliases: [],
+		affinities: {
+			skillPotential: null,
+			inherit: 'Nuke'
+		},
+		arcana: 'Chariot',
+		race: 'Mitama',
+		level: 30,
+		hp: null,
+		mp: null,
+		stats: {
+			st: 20,
+			vi: 20,
+			ma: 18,
+			ag: 20,
+			lu: 19
+		},
+		learnset: [
+			{
+				name: 'Miracle Punch',
+				level: 0
+			},
+			{
+				name: 'Freila',
+				level: 0
+			},
+			{
+				name: 'Taunt - Persona',
+				level: 0
+			},
+			{
+				name: 'Rebellion',
+				level: 31
+			},
+			{
+				name: 'Marakunda',
+				level: 32
+			},
+			{
+				name: 'Rage Boost',
+				level: 34
+			},
+			{
+				name: 'Matarukaja',
+				level: 35
+			}
+		],
+		resistances: {
+			ailments: null,
+			weak: [
+				'Ice'
+			],
+			resist: [
+				'Phys'
+			],
+			null: [],
+			drain: [],
+			repel: []
+		},
+		game: 'p5'
+	},
+	{
 		name: 'Arahabaki',
 		aliases: [],
 		affinities: {
@@ -1999,69 +2062,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			repel: []
 		},
 		game: 'smt5'
-	},
-	{
-		name: 'Ara Mitama',
-		aliases: [],
-		affinities: {
-			skillPotential: null,
-			inherit: 'Nuke'
-		},
-		arcana: 'Chariot',
-		race: 'Mitama',
-		level: 30,
-		hp: null,
-		mp: null,
-		stats: {
-			st: 20,
-			vi: 20,
-			ma: 18,
-			ag: 20,
-			lu: 19
-		},
-		learnset: [
-			{
-				name: 'Miracle Punch',
-				level: 0
-			},
-			{
-				name: 'Freila',
-				level: 0
-			},
-			{
-				name: 'Taunt - Persona',
-				level: 0
-			},
-			{
-				name: 'Rebellion',
-				level: 31
-			},
-			{
-				name: 'Marakunda',
-				level: 32
-			},
-			{
-				name: 'Rage Boost',
-				level: 34
-			},
-			{
-				name: 'Matarukaja',
-				level: 35
-			}
-		],
-		resistances: {
-			ailments: null,
-			weak: [
-				'Ice'
-			],
-			resist: [
-				'Phys'
-			],
-			null: [],
-			drain: [],
-			repel: []
-		},
-		game: 'p5'
 	},
 	{
 		name: 'Archangel',
@@ -5737,6 +5737,84 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		game: 'smt5'
 	},
 	{
+		name: 'Chi You',
+		aliases: [],
+		affinities: {
+			skillPotential: {
+				Phys: 4,
+				Fire: -5,
+				Ice: 4,
+				Elec: -5,
+				Force: 2,
+				Light: 0,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 0,
+				Recovery: 0,
+				Support: 0
+			},
+			inherit: 'Psy'
+		},
+		arcana: 'Chariot',
+		race: 'Tyrant',
+		level: 87,
+		hp: 577,
+		mp: 378,
+		stats: {
+			st: 81,
+			vi: 73,
+			ma: 71,
+			ag: 45,
+			lu: 53
+		},
+		learnset: [
+			{
+				name: 'Glacial Blast',
+				level: 0
+			},
+			{
+				name: 'High Phys Pleroma',
+				level: 0
+			},
+			{
+				name: 'Mazanbarion',
+				level: 0
+			},
+			{
+				name: 'Yabusame Shot',
+				level: 0
+			},
+			{
+				name: 'Catastrophe',
+				level: 88
+			},
+			{
+				name: 'Myriad Slashes',
+				level: 89
+			},
+			{
+				name: 'Drain Ice',
+				level: 90
+			}
+		],
+		resistances: {
+			ailments: {},
+			weak: [
+				'Fire',
+				'Elec'
+			],
+			resist: [],
+			null: [
+				'Ice'
+			],
+			drain: [],
+			repel: [
+				'Force'
+			]
+		},
+		game: 'smt5'
+	},
+	{
 		name: 'Chimera',
 		aliases: [],
 		affinities: {
@@ -5812,84 +5890,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			],
 			drain: [],
 			repel: []
-		},
-		game: 'smt5'
-	},
-	{
-		name: 'Chi You',
-		aliases: [],
-		affinities: {
-			skillPotential: {
-				Phys: 4,
-				Fire: -5,
-				Ice: 4,
-				Elec: -5,
-				Force: 2,
-				Light: 0,
-				Dark: 0,
-				Almighty: 0,
-				Ailment: 0,
-				Recovery: 0,
-				Support: 0
-			},
-			inherit: 'Psy'
-		},
-		arcana: 'Chariot',
-		race: 'Tyrant',
-		level: 87,
-		hp: 577,
-		mp: 378,
-		stats: {
-			st: 81,
-			vi: 73,
-			ma: 71,
-			ag: 45,
-			lu: 53
-		},
-		learnset: [
-			{
-				name: 'Glacial Blast',
-				level: 0
-			},
-			{
-				name: 'High Phys Pleroma',
-				level: 0
-			},
-			{
-				name: 'Mazanbarion',
-				level: 0
-			},
-			{
-				name: 'Yabusame Shot',
-				level: 0
-			},
-			{
-				name: 'Catastrophe',
-				level: 88
-			},
-			{
-				name: 'Myriad Slashes',
-				level: 89
-			},
-			{
-				name: 'Drain Ice',
-				level: 90
-			}
-		],
-		resistances: {
-			ailments: {},
-			weak: [
-				'Fire',
-				'Elec'
-			],
-			resist: [],
-			null: [
-				'Ice'
-			],
-			drain: [],
-			repel: [
-				'Force'
-			]
 		},
 		game: 'smt5'
 	},
@@ -11523,6 +11523,70 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		evoSkill: null
 	},
 	{
+		name: 'Izanagi Picaro',
+		aliases: [],
+		affinities: {
+			skillPotential: null,
+			inherit: 'Almighty'
+		},
+		arcana: 'Fool',
+		race: 'Picaro',
+		level: 23,
+		hp: null,
+		mp: null,
+		stats: {
+			st: 16,
+			vi: 15,
+			ma: 15,
+			ag: 16,
+			lu: 14
+		},
+		learnset: [
+			{
+				name: 'Cross Slash',
+				level: 0
+			},
+			{
+				name: 'Zionga',
+				level: 0
+			},
+			{
+				name: 'Rakukaja',
+				level: 0
+			},
+			{
+				name: 'Rising Slash',
+				level: 24
+			},
+			{
+				name: 'Null Phys',
+				level: 25
+			},
+			{
+				name: 'Mazionga',
+				level: 27
+			},
+			{
+				name: 'Growth 3',
+				level: 28
+			}
+		],
+		resistances: {
+			ailments: null,
+			weak: [
+				'Wind'
+			],
+			resist: [],
+			null: [
+				'Elec',
+				'Dark'
+			],
+			drain: [],
+			repel: []
+		},
+		game: 'p5'
+	},
+	{
 		name: 'Izanagi-no-Okami',
 		aliases: [],
 		affinities: {
@@ -11664,70 +11728,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				'Nuke'
 			],
 			null: [],
-			drain: [],
-			repel: []
-		},
-		game: 'p5'
-	},
-	{
-		name: 'Izanagi Picaro',
-		aliases: [],
-		affinities: {
-			skillPotential: null,
-			inherit: 'Almighty'
-		},
-		arcana: 'Fool',
-		race: 'Picaro',
-		level: 23,
-		hp: null,
-		mp: null,
-		stats: {
-			st: 16,
-			vi: 15,
-			ma: 15,
-			ag: 16,
-			lu: 14
-		},
-		learnset: [
-			{
-				name: 'Cross Slash',
-				level: 0
-			},
-			{
-				name: 'Zionga',
-				level: 0
-			},
-			{
-				name: 'Rakukaja',
-				level: 0
-			},
-			{
-				name: 'Rising Slash',
-				level: 24
-			},
-			{
-				name: 'Null Phys',
-				level: 25
-			},
-			{
-				name: 'Mazionga',
-				level: 27
-			},
-			{
-				name: 'Growth 3',
-				level: 28
-			}
-		],
-		resistances: {
-			ailments: null,
-			weak: [
-				'Wind'
-			],
-			resist: [],
-			null: [
-				'Elec',
-				'Dark'
-			],
 			drain: [],
 			repel: []
 		},
@@ -12740,6 +12740,134 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		game: 'smt5'
 	},
 	{
+		name: 'Kamu Susano-o',
+		aliases: [],
+		affinities: {
+			skillPotential: null,
+			inherit: null
+		},
+		arcana: 'Emperor',
+		race: 'Persona',
+		level: 15,
+		hp: null,
+		mp: null,
+		stats: {
+			st: 13,
+			vi: 11,
+			ma: 10,
+			ag: 10,
+			lu: 8
+		},
+		learnset: [
+			{
+				name: 'Bufu',
+				level: 0
+			},
+			{
+				name: 'Giant Slice',
+				level: 0
+			},
+			{
+				name: 'Sukukaja',
+				level: 0
+			},
+			{
+				name: 'Vicious Strike',
+				level: 18
+			},
+			{
+				name: 'Mabufu',
+				level: 20
+			},
+			{
+				name: 'Counter - Persona',
+				level: 22
+			},
+			{
+				name: 'Rising Slash',
+				level: 23
+			},
+			{
+				name: 'Dormin Rush',
+				level: 27
+			},
+			{
+				name: 'Bufula',
+				level: 29
+			},
+			{
+				name: 'Speed Master',
+				level: 31
+			},
+			{
+				name: 'Tempest Slash',
+				level: 34
+			},
+			{
+				name: 'Counterstrike',
+				level: 37
+			},
+			{
+				name: 'Mabufula',
+				level: 40
+			},
+			{
+				name: 'Heat Wave',
+				level: 43
+			},
+			{
+				name: 'Deadly Fury',
+				level: 47
+			},
+			{
+				name: 'Masukukaja',
+				level: 49
+			},
+			{
+				name: 'Bufudyne',
+				level: 53
+			},
+			{
+				name: 'High Counter',
+				level: 58
+			},
+			{
+				name: 'Myriad Slashes',
+				level: 62
+			},
+			{
+				name: 'Mabufudyne',
+				level: 65
+			},
+			{
+				name: 'Vorpal Blade',
+				level: 69
+			},
+			{
+				name: 'Brave Blade',
+				level: 73
+			}
+		],
+		resistances: {
+			ailments: null,
+			weak: [
+				'Fire'
+			],
+			resist: [
+				'Wind'
+			],
+			null: [
+				'Ice'
+			],
+			drain: [],
+			repel: []
+		},
+		game: 'p5',
+		user: 'Yusuke Kitagawa',
+		stage: 2,
+		evoSkill: 'Evade Fire'
+	},
+	{
 		name: 'Kamui',
 		aliases: [],
 		affinities: {
@@ -12964,134 +13092,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		evoSkill: 'Kamui Miracle'
 	},
 	{
-		name: 'Kamu Susano-o',
-		aliases: [],
-		affinities: {
-			skillPotential: null,
-			inherit: null
-		},
-		arcana: 'Emperor',
-		race: 'Persona',
-		level: 15,
-		hp: null,
-		mp: null,
-		stats: {
-			st: 13,
-			vi: 11,
-			ma: 10,
-			ag: 10,
-			lu: 8
-		},
-		learnset: [
-			{
-				name: 'Bufu',
-				level: 0
-			},
-			{
-				name: 'Giant Slice',
-				level: 0
-			},
-			{
-				name: 'Sukukaja',
-				level: 0
-			},
-			{
-				name: 'Vicious Strike',
-				level: 18
-			},
-			{
-				name: 'Mabufu',
-				level: 20
-			},
-			{
-				name: 'Counter - Persona',
-				level: 22
-			},
-			{
-				name: 'Rising Slash',
-				level: 23
-			},
-			{
-				name: 'Dormin Rush',
-				level: 27
-			},
-			{
-				name: 'Bufula',
-				level: 29
-			},
-			{
-				name: 'Speed Master',
-				level: 31
-			},
-			{
-				name: 'Tempest Slash',
-				level: 34
-			},
-			{
-				name: 'Counterstrike',
-				level: 37
-			},
-			{
-				name: 'Mabufula',
-				level: 40
-			},
-			{
-				name: 'Heat Wave',
-				level: 43
-			},
-			{
-				name: 'Deadly Fury',
-				level: 47
-			},
-			{
-				name: 'Masukukaja',
-				level: 49
-			},
-			{
-				name: 'Bufudyne',
-				level: 53
-			},
-			{
-				name: 'High Counter',
-				level: 58
-			},
-			{
-				name: 'Myriad Slashes',
-				level: 62
-			},
-			{
-				name: 'Mabufudyne',
-				level: 65
-			},
-			{
-				name: 'Vorpal Blade',
-				level: 69
-			},
-			{
-				name: 'Brave Blade',
-				level: 73
-			}
-		],
-		resistances: {
-			ailments: null,
-			weak: [
-				'Fire'
-			],
-			resist: [
-				'Wind'
-			],
-			null: [
-				'Ice'
-			],
-			drain: [],
-			repel: []
-		},
-		game: 'p5',
-		user: 'Yusuke Kitagawa',
-		stage: 2,
-		evoSkill: 'Evade Fire'
-	},
-	{
 		name: 'Kanzeon',
 		aliases: [],
 		affinities: {
@@ -13168,67 +13168,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		user: 'Rise Kujikawa',
 		stage: 2,
 		evoSkill: null
-	},
-	{
-		name: 'Narasimha',
-		aliases: [],
-		affinities: {
-			skillPotential: null,
-			inherit: 'Light'
-		},
-		arcana: 'Sun',
-		race: 'Avatar',
-		level: 47,
-		hp: null,
-		mp: null,
-		stats: {
-			st: 29,
-			vi: 30,
-			ma: 27,
-			ag: 35,
-			lu: 27
-		},
-		learnset: [
-			{
-				name: 'Hamaon',
-				level: 0
-			},
-			{
-				name: 'Tempest Slash',
-				level: 0
-			},
-			{
-				name: 'Counterstrike',
-				level: 48
-			},
-			{
-				name: 'Evade Wind',
-				level: 49
-			},
-			{
-				name: 'Mahamaon',
-				level: 51
-			},
-			{
-				name: 'Auto-Mataru',
-				level: 53
-			}
-		],
-		resistances: {
-			ailments: null,
-			weak: [
-				'Fire'
-			],
-			resist: [
-				'Phys'
-			],
-			null: [
-				'Light'
-			],
-			drain: [],
-			repel: []
-		},
-		game: 'p4'
 	},
 	{
 		name: 'Kartikeya',
@@ -13658,6 +13597,79 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		game: 'smt5'
 	},
 	{
+		name: 'Kin-Ki',
+		aliases: [],
+		affinities: {
+			skillPotential: {
+				Phys: 4,
+				Fire: 0,
+				Ice: 0,
+				Elec: 2,
+				Force: -4,
+				Light: 0,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 0,
+				Recovery: -2,
+				Support: 0
+			},
+			inherit: 'Phys'
+		},
+		arcana: 'Chariot',
+		race: 'Brute',
+		level: 49,
+		hp: 323,
+		mp: 170,
+		stats: {
+			st: 43,
+			vi: 52,
+			ma: 27,
+			ag: 21,
+			lu: 25
+		},
+		learnset: [
+			{
+				name: 'Berserker God',
+				level: 0
+			},
+			{
+				name: 'Deathbound',
+				level: 0
+			},
+			{
+				name: 'Retaliate',
+				level: 0
+			},
+			{
+				name: 'Shockbound',
+				level: 50
+			},
+			{
+				name: 'Endure',
+				level: 51
+			},
+			{
+				name: 'Rampage',
+				level: 52
+			}
+		],
+		resistances: {
+			ailments: {
+				Mirage: 'Weak'
+			},
+			weak: [
+				'Force'
+			],
+			resist: [],
+			null: [
+				'Elec'
+			],
+			drain: [],
+			repel: []
+		},
+		game: 'smt5'
+	},
+	{
 		name: 'King Frost',
 		aliases: [],
 		affinities: {
@@ -13794,79 +13806,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			repel: []
 		},
 		game: 'p4'
-	},
-	{
-		name: 'Kin-Ki',
-		aliases: [],
-		affinities: {
-			skillPotential: {
-				Phys: 4,
-				Fire: 0,
-				Ice: 0,
-				Elec: 2,
-				Force: -4,
-				Light: 0,
-				Dark: 0,
-				Almighty: 0,
-				Ailment: 0,
-				Recovery: -2,
-				Support: 0
-			},
-			inherit: 'Phys'
-		},
-		arcana: 'Chariot',
-		race: 'Brute',
-		level: 49,
-		hp: 323,
-		mp: 170,
-		stats: {
-			st: 43,
-			vi: 52,
-			ma: 27,
-			ag: 21,
-			lu: 25
-		},
-		learnset: [
-			{
-				name: 'Berserker God',
-				level: 0
-			},
-			{
-				name: 'Deathbound',
-				level: 0
-			},
-			{
-				name: 'Retaliate',
-				level: 0
-			},
-			{
-				name: 'Shockbound',
-				level: 50
-			},
-			{
-				name: 'Endure',
-				level: 51
-			},
-			{
-				name: 'Rampage',
-				level: 52
-			}
-		],
-		resistances: {
-			ailments: {
-				Mirage: 'Weak'
-			},
-			weak: [
-				'Force'
-			],
-			resist: [],
-			null: [
-				'Elec'
-			],
-			drain: [],
-			repel: []
-		},
-		game: 'smt5'
 	},
 	{
 		name: 'Kintoki-Douji',
@@ -18368,6 +18307,67 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		game: 'smt5'
 	},
 	{
+		name: 'Narasimha',
+		aliases: [],
+		affinities: {
+			skillPotential: null,
+			inherit: 'Light'
+		},
+		arcana: 'Sun',
+		race: 'Avatar',
+		level: 47,
+		hp: null,
+		mp: null,
+		stats: {
+			st: 29,
+			vi: 30,
+			ma: 27,
+			ag: 35,
+			lu: 27
+		},
+		learnset: [
+			{
+				name: 'Hamaon',
+				level: 0
+			},
+			{
+				name: 'Tempest Slash',
+				level: 0
+			},
+			{
+				name: 'Counterstrike',
+				level: 48
+			},
+			{
+				name: 'Evade Wind',
+				level: 49
+			},
+			{
+				name: 'Mahamaon',
+				level: 51
+			},
+			{
+				name: 'Auto-Mataru',
+				level: 53
+			}
+		],
+		resistances: {
+			ailments: null,
+			weak: [
+				'Fire'
+			],
+			resist: [
+				'Phys'
+			],
+			null: [
+				'Light'
+			],
+			drain: [],
+			repel: []
+		},
+		game: 'p4'
+	},
+	{
 		name: 'Narcissus',
 		aliases: [],
 		affinities: {
@@ -18629,6 +18629,76 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		evoSkill: null
 	},
 	{
+		name: 'Neko Shogun',
+		aliases: [],
+		affinities: {
+			skillPotential: {
+				Phys: 0,
+				Fire: -1,
+				Ice: 0,
+				Elec: 0,
+				Force: -3,
+				Light: 0,
+				Dark: 0,
+				Almighty: -4,
+				Ailment: 0,
+				Recovery: 3,
+				Support: 3
+			},
+			inherit: 'Fire'
+		},
+		arcana: 'Star',
+		race: 'Wargod',
+		level: 5,
+		hp: 57,
+		mp: 73,
+		stats: {
+			st: 6,
+			vi: 11,
+			ma: 7,
+			ag: 4,
+			lu: 8
+		},
+		learnset: [
+			{
+				name: 'Dia',
+				level: 0
+			},
+			{
+				name: 'Rakunda',
+				level: 0
+			},
+			{
+				name: 'Sukunda',
+				level: 6
+			},
+			{
+				name: 'Fang Breaker',
+				level: 8
+			}
+		],
+		resistances: {
+			ailments: {
+				Mirage: 'Resist',
+				Poison: 'Resist',
+				Confuse: 'Resist'
+			},
+			weak: [
+				'Fire',
+				'Force'
+			],
+			resist: [
+				'Light'
+			],
+			null: [
+				'Elec'
+			],
+			drain: [],
+			repel: []
+		},
+		game: 'smt5'
+	},
+	{
 		name: 'Nekomata',
 		aliases: [],
 		affinities: {
@@ -18694,76 +18764,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			],
 			null: [
 				'Force'
-			],
-			drain: [],
-			repel: []
-		},
-		game: 'smt5'
-	},
-	{
-		name: 'Neko Shogun',
-		aliases: [],
-		affinities: {
-			skillPotential: {
-				Phys: 0,
-				Fire: -1,
-				Ice: 0,
-				Elec: 0,
-				Force: -3,
-				Light: 0,
-				Dark: 0,
-				Almighty: -4,
-				Ailment: 0,
-				Recovery: 3,
-				Support: 3
-			},
-			inherit: 'Fire'
-		},
-		arcana: 'Star',
-		race: 'Wargod',
-		level: 5,
-		hp: 57,
-		mp: 73,
-		stats: {
-			st: 6,
-			vi: 11,
-			ma: 7,
-			ag: 4,
-			lu: 8
-		},
-		learnset: [
-			{
-				name: 'Dia',
-				level: 0
-			},
-			{
-				name: 'Rakunda',
-				level: 0
-			},
-			{
-				name: 'Sukunda',
-				level: 6
-			},
-			{
-				name: 'Fang Breaker',
-				level: 8
-			}
-		],
-		resistances: {
-			ailments: {
-				Mirage: 'Resist',
-				Poison: 'Resist',
-				Confuse: 'Resist'
-			},
-			weak: [
-				'Fire',
-				'Force'
-			],
-			resist: [
-				'Light'
-			],
-			null: [
-				'Elec'
 			],
 			drain: [],
 			repel: []
@@ -25740,6 +25740,179 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		game: 'p4'
 	},
 	{
+		name: 'Take-Mikazuchi',
+		aliases: [],
+		affinities: {
+			skillPotential: null,
+			inherit: null
+		},
+		arcana: 'Emperor',
+		race: 'Persona',
+		level: 25,
+		hp: null,
+		mp: null,
+		stats: {
+			st: 20,
+			vi: 17,
+			ma: 11,
+			ag: 15,
+			lu: 14
+		},
+		learnset: [
+			{
+				name: 'Mazio',
+				level: 0
+			},
+			{
+				name: 'Zionga',
+				level: 0
+			},
+			{
+				name: 'Rakukaja',
+				level: 0
+			},
+			{
+				name: 'Kill Rush',
+				level: 0
+			},
+			{
+				name: 'Regenerate 1',
+				level: 0
+			},
+			{
+				name: 'Elec Boost',
+				level: 27
+			},
+			{
+				name: 'Fatal End',
+				level: 34
+			},
+			{
+				name: 'Cruel Attack',
+				level: 38
+			},
+			{
+				name: 'Mazionga',
+				level: 40
+			},
+			{
+				name: 'Torrent Shot',
+				level: 44
+			},
+			{
+				name: 'Elec Break',
+				level: 48
+			},
+			{
+				name: 'Ziodyne',
+				level: 54
+			},
+			{
+				name: 'Vile Assault',
+				level: 58
+			},
+			{
+				name: 'Matarukaja',
+				level: 60
+			},
+			{
+				name: 'Maziodyne',
+				level: 67
+			},
+			{
+				name: 'Primal Force',
+				level: 73
+			},
+			{
+				name: 'Elec Amp',
+				level: 75
+			}
+		],
+		resistances: {
+			ailments: null,
+			weak: [
+				'Wind'
+			],
+			resist: [
+				'Elec'
+			],
+			null: [],
+			drain: [],
+			repel: []
+		},
+		game: 'p4',
+		user: 'Kanji Tatsumi',
+		stage: 1,
+		evoSkill: null
+	},
+	{
+		name: 'Take-Minakata',
+		aliases: [],
+		affinities: {
+			skillPotential: {
+				Phys: 2,
+				Fire: -3,
+				Ice: 0,
+				Elec: 2,
+				Force: 0,
+				Light: 0,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: -1,
+				Recovery: 0,
+				Support: 0
+			},
+			inherit: 'Elec'
+		},
+		arcana: 'Hanged',
+		race: 'Kunitsu',
+		level: 19,
+		hp: 107,
+		mp: 98,
+		stats: {
+			st: 18,
+			vi: 18,
+			ma: 12,
+			ag: 16,
+			lu: 15
+		},
+		learnset: [
+			{
+				name: 'Lunge',
+				level: 0
+			},
+			{
+				name: 'Shockbound',
+				level: 0
+			},
+			{
+				name: 'Charge',
+				level: 20
+			},
+			{
+				name: 'Zionga',
+				level: 21
+			},
+			{
+				name: 'Counter',
+				level: 22
+			}
+		],
+		resistances: {
+			ailments: {},
+			weak: [
+				'Fire'
+			],
+			resist: [
+				'Elec'
+			],
+			null: [],
+			drain: [],
+			repel: []
+		},
+		game: 'smt5'
+	},
+	{
 		name: 'Takehaya Susano-o',
 		aliases: [],
 		affinities: {
@@ -25960,179 +26133,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		evoSkill: 'The Man"s Way'
 	},
 	{
-		name: 'Take-Mikazuchi',
-		aliases: [],
-		affinities: {
-			skillPotential: null,
-			inherit: null
-		},
-		arcana: 'Emperor',
-		race: 'Persona',
-		level: 25,
-		hp: null,
-		mp: null,
-		stats: {
-			st: 20,
-			vi: 17,
-			ma: 11,
-			ag: 15,
-			lu: 14
-		},
-		learnset: [
-			{
-				name: 'Mazio',
-				level: 0
-			},
-			{
-				name: 'Zionga',
-				level: 0
-			},
-			{
-				name: 'Rakukaja',
-				level: 0
-			},
-			{
-				name: 'Kill Rush',
-				level: 0
-			},
-			{
-				name: 'Regenerate 1',
-				level: 0
-			},
-			{
-				name: 'Elec Boost',
-				level: 27
-			},
-			{
-				name: 'Fatal End',
-				level: 34
-			},
-			{
-				name: 'Cruel Attack',
-				level: 38
-			},
-			{
-				name: 'Mazionga',
-				level: 40
-			},
-			{
-				name: 'Torrent Shot',
-				level: 44
-			},
-			{
-				name: 'Elec Break',
-				level: 48
-			},
-			{
-				name: 'Ziodyne',
-				level: 54
-			},
-			{
-				name: 'Vile Assault',
-				level: 58
-			},
-			{
-				name: 'Matarukaja',
-				level: 60
-			},
-			{
-				name: 'Maziodyne',
-				level: 67
-			},
-			{
-				name: 'Primal Force',
-				level: 73
-			},
-			{
-				name: 'Elec Amp',
-				level: 75
-			}
-		],
-		resistances: {
-			ailments: null,
-			weak: [
-				'Wind'
-			],
-			resist: [
-				'Elec'
-			],
-			null: [],
-			drain: [],
-			repel: []
-		},
-		game: 'p4',
-		user: 'Kanji Tatsumi',
-		stage: 1,
-		evoSkill: null
-	},
-	{
-		name: 'Take-Minakata',
-		aliases: [],
-		affinities: {
-			skillPotential: {
-				Phys: 2,
-				Fire: -3,
-				Ice: 0,
-				Elec: 2,
-				Force: 0,
-				Light: 0,
-				Dark: 0,
-				Almighty: 0,
-				Ailment: -1,
-				Recovery: 0,
-				Support: 0
-			},
-			inherit: 'Elec'
-		},
-		arcana: 'Hanged',
-		race: 'Kunitsu',
-		level: 19,
-		hp: 107,
-		mp: 98,
-		stats: {
-			st: 18,
-			vi: 18,
-			ma: 12,
-			ag: 16,
-			lu: 15
-		},
-		learnset: [
-			{
-				name: 'Lunge',
-				level: 0
-			},
-			{
-				name: 'Shockbound',
-				level: 0
-			},
-			{
-				name: 'Charge',
-				level: 20
-			},
-			{
-				name: 'Zionga',
-				level: 21
-			},
-			{
-				name: 'Counter',
-				level: 22
-			}
-		],
-		resistances: {
-			ailments: {},
-			weak: [
-				'Fire'
-			],
-			resist: [
-				'Elec'
-			],
-			null: [],
-			drain: [],
-			repel: []
-		},
-		game: 'smt5'
-	},
-	{
 		name: 'Tam Lin',
 		aliases: [],
 		affinities: {
@@ -26278,73 +26278,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		game: 'smt5'
 	},
 	{
-		name: 'Taowu',
-		aliases: [
-			'Taown'
-		],
-		affinities: {
-			skillPotential: null,
-			inherit: 'Recovery'
-		},
-		arcana: 'Hanged',
-		race: 'Wilder',
-		level: 56,
-		hp: null,
-		mp: null,
-		stats: {
-			st: 40,
-			vi: 37,
-			ma: 31,
-			ag: 38,
-			lu: 29
-		},
-		learnset: [
-			{
-				name: 'Aeon Rain',
-				level: 0
-			},
-			{
-				name: 'Dekaja',
-				level: 0
-			},
-			{
-				name: 'Matarukaja',
-				level: 0
-			},
-			{
-				name: 'Null Enervate',
-				level: 58
-			},
-			{
-				name: 'Charge',
-				level: 50
-			},
-			{
-				name: 'Evade Phys',
-				level: 61
-			},
-			{
-				name: 'Drain Fire',
-				level: 62
-			}
-		],
-		resistances: {
-			ailments: null,
-			weak: [
-				'Fire',
-				'Light'
-			],
-			resist: [],
-			null: [
-				'Wind',
-				'Dark'
-			],
-			drain: [],
-			repel: []
-		},
-		game: 'p4'
-	},
-	{
 		name: 'Taotie',
 		aliases: [
 			'Tao Tie'
@@ -26408,59 +26341,67 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		game: 'p4'
 	},
 	{
-		name: 'Titan',
-		aliases: [],
+		name: 'Taowu',
+		aliases: [
+			'Taown'
+		],
 		affinities: {
 			skillPotential: null,
-			inherit: 'Elec'
+			inherit: 'Recovery'
 		},
-		arcana: 'Strength',
-		race: 'Jirae',
-		level: 14,
+		arcana: 'Hanged',
+		race: 'Wilder',
+		level: 56,
 		hp: null,
 		mp: null,
 		stats: {
-			st: 11,
-			vi: 10,
-			ma: 12,
-			ag: 10,
-			lu: 6
+			st: 40,
+			vi: 37,
+			ma: 31,
+			ag: 38,
+			lu: 29
 		},
 		learnset: [
 			{
-				name: 'Mazio',
+				name: 'Aeon Rain',
 				level: 0
 			},
 			{
-				name: 'Skull Cracker',
+				name: 'Dekaja',
 				level: 0
 			},
 			{
-				name: 'Dekunda',
+				name: 'Matarukaja',
 				level: 0
 			},
 			{
-				name: 'Dodge Ice',
-				level: 16
+				name: 'Null Enervate',
+				level: 58
 			},
 			{
-				name: 'Kill Rush',
-				level: 18
+				name: 'Charge',
+				level: 50
 			},
 			{
-				name: 'Resist Fear',
-				level: 19
+				name: 'Evade Phys',
+				level: 61
+			},
+			{
+				name: 'Drain Fire',
+				level: 62
 			}
 		],
 		resistances: {
 			ailments: null,
 			weak: [
-				'Ice'
+				'Fire',
+				'Light'
 			],
-			resist: [
-				'Elec'
+			resist: [],
+			null: [
+				'Wind',
+				'Dark'
 			],
-			null: [],
 			drain: [],
 			repel: []
 		},
@@ -26889,6 +26830,65 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			repel: []
 		},
 		game: 'smt5'
+	},
+	{
+		name: 'Titan',
+		aliases: [],
+		affinities: {
+			skillPotential: null,
+			inherit: 'Elec'
+		},
+		arcana: 'Strength',
+		race: 'Jirae',
+		level: 14,
+		hp: null,
+		mp: null,
+		stats: {
+			st: 11,
+			vi: 10,
+			ma: 12,
+			ag: 10,
+			lu: 6
+		},
+		learnset: [
+			{
+				name: 'Mazio',
+				level: 0
+			},
+			{
+				name: 'Skull Cracker',
+				level: 0
+			},
+			{
+				name: 'Dekunda',
+				level: 0
+			},
+			{
+				name: 'Dodge Ice',
+				level: 16
+			},
+			{
+				name: 'Kill Rush',
+				level: 18
+			},
+			{
+				name: 'Resist Fear',
+				level: 19
+			}
+		],
+		resistances: {
+			ailments: null,
+			weak: [
+				'Ice'
+			],
+			resist: [
+				'Elec'
+			],
+			null: [],
+			drain: [],
+			repel: []
+		},
+		game: 'p4'
 	},
 	{
 		name: 'Titania',
