@@ -37,16 +37,6 @@ export interface AttackCost {
 	type: HPMP;
 }
 
-/** An ATTACK-type skill's power */
-export interface AttackPower {
-	/** The skill's base power */
-	amount: number;
-	/** The skill's public power relative to other skills */
-	display: AttackDisplay;
-	/** The type of damage that the skill inflicts */
-	type: DamageType;
-}
-
 /** Barriers set up by a Skill instance */
 export type Barrier = 'Painting' | 'Kannabi Veil' | 'Tetrakarn' | 'Makarakarn' | 'Shield of Justice' | 'Tetraja' | `${string} Block`;
 
@@ -60,14 +50,6 @@ export type Charge = 'Recovery' | 'Charge' | 'Concentrate' | 'Critical' | 'Pierc
 export type CounterDisplay = 'Weak' | 'Medium';
 /** Displayed damage values for AttackSkill instances */
 export type AttackDisplay = CounterDisplay | 'Minuscule' | 'Heavy' | 'Severe' | 'Colossal';
-
-/** An SMTCOUNTER-type skill's power */
-export interface CounterPower {
-	/** The skill's base power */
-	amount: number;
-	/** The skill's public power relative to other skills */
-	display: CounterDisplay;
-}
 
 /** Types of damage dealt */
 export type DamageType = 'Physical' | 'Magic';
@@ -149,6 +131,23 @@ export type PersonaGame = 'p3' | 'p4' | 'p5';
 export type SMTGame = 'smt5';
 /** Games that Demon data can originate from */
 export type AnyGame = PersonaGame | SMTGame;
+
+export interface BasePower {
+	/** The skill's base power */
+	amount: number;
+}
+/** An ATTACK-type skill's power */
+export interface AttackPower extends BasePower {
+	/** The skill's public power relative to other skills */
+	display: AttackDisplay;
+	/** The type of damage that the skill inflicts */
+	type: DamageType;
+}
+/** An SMTCOUNTER-type skill's power */
+export interface CounterPower extends BasePower {
+	/** The skill's public power relative to other skills */
+	display: CounterDisplay;
+}
 
 /** Demons' races */
 export type Race = 'Amatsu' | 'Avatar' | 'Avian' | 'Beast' | 'Brute' | 'Deity' | 'Devil' | 'Divine' | 'Dragon' | 'Drake' | 'Element' | 'Fairy' | 'Fallen'
