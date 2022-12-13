@@ -674,72 +674,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		evoSkillName: 'Ultimate Support'
 	},
 	{
-		name: 'Alarune',
-		aliases: [],
-		affinities: {
-			skillPotential: null,
-			inherit: 'Recovery'
-		},
-		arcana: 'Moon',
-		race: 'Wood',
-		level: 41,
-		hp: null,
-		mp: null,
-		stats: {
-			st: 17,
-			vi: 21,
-			ma: 35,
-			ag: 29,
-			lu: 28
-		},
-		learnset: [
-			{
-				name: 'Mediarama',
-				level: 0
-			},
-			{
-				name: 'Energy Shower',
-				level: 0
-			},
-			{
-				name: 'Old One',
-				level: 0
-			},
-			{
-				name: 'Makarakarn',
-				level: 43
-			},
-			{
-				name: 'Wind Wall',
-				level: 44
-			},
-			{
-				name: 'Null Enervate',
-				level: 45
-			},
-			{
-				name: 'Enervate Boost',
-				level: 46
-			}
-		],
-		resistances: {
-			ailments: null,
-			weak: [
-				'Wind'
-			],
-			resist: [
-				'Fire',
-				'Ice'
-			],
-			null: [
-				'Dark'
-			],
-			drain: [],
-			repel: []
-		},
-		game: 'p4'
-	},
-	{
 		name: 'Alice',
 		aliases: [],
 		affinities: {
@@ -894,6 +828,72 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			repel: []
 		},
 		game: 'smt5'
+	},
+	{
+		name: 'Alraune',
+		aliases: [],
+		affinities: {
+			skillPotential: null,
+			inherit: 'Recovery'
+		},
+		arcana: 'Moon',
+		race: 'Wood',
+		level: 41,
+		hp: null,
+		mp: null,
+		stats: {
+			st: 17,
+			vi: 21,
+			ma: 35,
+			ag: 29,
+			lu: 28
+		},
+		learnset: [
+			{
+				name: 'Mediarama',
+				level: 0
+			},
+			{
+				name: 'Energy Shower',
+				level: 0
+			},
+			{
+				name: 'Old One',
+				level: 0
+			},
+			{
+				name: 'Makarakarn',
+				level: 43
+			},
+			{
+				name: 'Wind Wall',
+				level: 44
+			},
+			{
+				name: 'Null Enervate',
+				level: 45
+			},
+			{
+				name: 'Enervate Boost',
+				level: 46
+			}
+		],
+		resistances: {
+			ailments: null,
+			weak: [
+				'Wind'
+			],
+			resist: [
+				'Fire',
+				'Ice'
+			],
+			null: [
+				'Dark'
+			],
+			drain: [],
+			repel: []
+		},
+		game: 'p4'
 	},
 	{
 		name: 'Amanozako',
@@ -18837,8 +18837,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		evoSkillName: null
 	},
 	{
-		name: 'Nidhoggr',
-		aliases: [],
+		name: 'Niddhoggr',
+		aliases: [
+			'Nidhoggr'
+		],
 		affinities: {
 			skillPotential: null,
 			inherit: 'Dark'
