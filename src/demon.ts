@@ -41,7 +41,7 @@ export class Demon implements DemonData {
 	constructor(data: DemonData) {
 		this.name = data.name;
 		this.devName = normalize(data.name);
-		this.aliases = data.aliases;
+		this.aliases = data.aliases ?? [];
 		this.affinities = data.affinities;
 		this.arcana = data.arcana;
 		this.race = data.race;
@@ -80,7 +80,7 @@ export class Demon implements DemonData {
 	static get(name: string, error?: boolean): Demon | null;
 	static get(name: string, error = false) {
 		const normalized = normalize(name);
-		const found = this.map.get(normalized) ?? Demon.array.find(demon => demon.aliases.some(alias => normalize(alias) === normalized)) ?? null;
+		const found = this.map.get(normalized) ?? this.array.find(demon => demon.aliases.some(alias => normalize(alias) === normalized)) ?? null;
 		if (error && found === null) throw new MegatenError(name, 'Demon');
 		return found;
 	}

@@ -8,7 +8,7 @@ export interface Ailment {
 }
 
 /** Ailments' names */
-export type AilmentName = 'Burn' | 'Charm' | 'Confuse' | 'Despair' | 'Enervate' | 'Exhaustion' | 'Fear' | 'Freeze' | 'Mirage' | 'Poison' | 'Rage' | 'Seal' | 'Shock' | 'Sleep';
+export type AilmentName = 'Burn' | 'Charm' | 'Confuse' | 'Despair' | 'Enervate' | 'Exhaust' | 'Fear' | 'Freeze' | 'Hunger' | 'Mirage' | 'Poison' | 'Rage' | 'Seal' | 'Shock' | 'Sleep';
 /** An ailment's name or all ailments */
 export type OneOrAllAilments = AilmentName | 'All';
 
@@ -25,9 +25,7 @@ export type EnemyRange = 'One' | 'All' | 'Random';
 export type AnyRange = AllyRange | EnemyRange;
 
 /** Demons' Arcana */
-export type Arcana = 'Fool' | 'Magician' | 'Councillor' | 'Priestess' | 'Empress' | 'Emperor' | 'Hierophant' | 'Apostle'
-| 'Lovers' | 'Chariot' | 'Justice' | 'Hermit' | 'Fortune' | 'Strength' | 'Hunger' | 'Hanged' | 'Death' | 'Temperance'
-| 'Devil' | 'Tower' | 'Star' | 'Moon' | 'Sun' | 'Judgement' | 'Aeon' | 'World' | 'Faith' | 'Hope';
+export type Arcana = 'Fool' | 'Magician' | 'Councillor' | 'Priestess' | 'Empress' | 'Emperor' | 'Hierophant' | 'Apostle' | 'Lovers' | 'Chariot' | 'Justice' | 'Hermit' | 'Fortune' | 'Strength' | 'Hunger' | 'Hanged' | 'Death' | 'Temperance' | 'Devil' | 'Tower' | 'Star' | 'Moon' | 'Sun' | 'Judgement' | 'Aeon' | 'World' | 'Faith' | 'Hope';
 
 /** An ATTACK-type skill's cost */
 export interface AttackCost {
@@ -35,6 +33,23 @@ export interface AttackCost {
 	amount: number;
 	/** The type of stat that the skill uses */
 	type: HPMP;
+}
+
+export interface BasePower {
+	/** The skill's base power */
+	amount: number;
+}
+/** An ATTACK-type skill's power */
+export interface AttackPower extends BasePower {
+	/** The skill's public power relative to other skills */
+	display: AttackDisplay;
+	/** The type of damage that the skill inflicts */
+	type: DamageType;
+}
+/** An SMTCOUNTER-type skill's power */
+export interface CounterPower extends BasePower {
+	/** The skill's public power relative to other skills */
+	display: CounterDisplay;
 }
 
 /** Barriers set up by a Skill instance */
@@ -98,6 +113,9 @@ export interface DemonStats {
 	lu: number;
 }
 
+/** Criteria causing EndureSkill instances to take effect */
+export type EndureCriteria = LightDark | 'Light/Dark';
+
 /** Criteria causing EvasionSkill instances to take effect */
 export type EvasionBoostCriteria = 'Surrounded' | 'Rain/Snow';
 
@@ -132,27 +150,8 @@ export type SMTGame = 'smt5';
 /** Games that Demon data can originate from */
 export type AnyGame = PersonaGame | SMTGame;
 
-export interface BasePower {
-	/** The skill's base power */
-	amount: number;
-}
-/** An ATTACK-type skill's power */
-export interface AttackPower extends BasePower {
-	/** The skill's public power relative to other skills */
-	display: AttackDisplay;
-	/** The type of damage that the skill inflicts */
-	type: DamageType;
-}
-/** An SMTCOUNTER-type skill's power */
-export interface CounterPower extends BasePower {
-	/** The skill's public power relative to other skills */
-	display: CounterDisplay;
-}
-
 /** Demons' races */
-export type Race = 'Amatsu' | 'Avatar' | 'Avian' | 'Beast' | 'Brute' | 'Deity' | 'Devil' | 'Divine' | 'Dragon' | 'Drake' | 'Element' | 'Fairy' | 'Fallen'
-| 'Femme' | 'Fiend' | 'Foul' | 'Fury' | 'Genma' | 'Godly' | 'Haunt' | 'Herald' | 'Holy' | 'Jaki' | 'Jirae' | 'Kishin' | 'Kunitsu' | 'Lady' | 'Megami'
-| 'Mitama' | 'Night' | 'Nymph' | 'Panagia' | 'Persona' | 'Picaro' | 'Raptor' | 'Snake' | 'Tenma' | 'Treasure' | 'Tyrant' | 'Vile' | 'Wargod' | 'Wilder' | 'Wood' | 'Yoma';
+export type Race = 'Amatsu' | 'Avatar' | 'Avian' | 'Beast' | 'Brute' | 'Deity' | 'Devil' | 'Divine' | 'Dragon' | 'Drake' | 'Element' | 'Fairy' | 'Fallen' | 'Femme' | 'Fiend' | 'Foul' | 'Fury' | 'Genma' | 'Godly' | 'Haunt' | 'Herald' | 'Holy' | 'Jaki' | 'Jirae' | 'Kishin' | 'Kunitsu' | 'Lady' | 'Megami' | 'Mitama' | 'Night' | 'Nymph' | 'Panagia' | 'Persona' | 'Picaro' | 'Raptor' | 'Snake' | 'Tenma' | 'Treasure' | 'Tyrant' | 'Vile' | 'Wargod' | 'Wilder' | 'Wood' | 'Yoma';
 
 /** The displayed amount that RecoverySkill instances can recover  */
 export type RecoveryAmount = 'Slight' | 'Moderate' | 'Half' | 'Full' | '130%';
@@ -163,15 +162,15 @@ export type RegenCriteria = 'Ambush' | 'Baton Pass' | 'Turn Start';
 /** Series that Skill data can originate from */
 export type Series = 'persona' | 'smt';
 
+export type SetAmount = number | `${number}%`;
+
 /** Criteria causing SiphonSkill instances to take effect */
 export type SiphonCriteria = 'Ailment' | 'Weakness/Critical' | 'Drain';
 
 export type SkillPotential = Record<Exclude<AnyAffinity, PersonaAffinity | 'Passive' | 'Misc'>, number>;
 
 /** Skill instances' types */
-export type SkillType = 'AILBOOST' | 'AILDEFENSIVE' | 'AILMENT' | 'ATTACK' | 'AUTOBUFF' | 'BARRIER' | 'BARRIERBREAK' | 'BOOST' | 'BREAK'
-| 'CHARGE' | 'CRIT' | 'CRITBOOST' | 'DEFENSIVE' | 'ENDURE' | 'EVASION' | 'HALVE' | 'INSTAKILLBOOST' | 'MASTER' | 'MISC' | 'NAVI'
-| 'PERSONACOUNTER' | 'POSTBATTLE' | 'RECOVERY' | 'REGEN' | 'SIPHON' | 'SMTCOUNTER' | 'SPRING' | 'SUPPORT' | 'SUSCEPTIBILITY' | 'TAUNT' | 'WALL';
+export type SkillType = 'AILBOOST' | 'AILDEFENSIVE' | 'AILMENT' | 'ATTACK' | 'AUTOBUFF' | 'BARRIER' | 'BARRIERBREAK' | 'BOOST' | 'BREAK' | 'CHARGE' | 'CRIT' | 'CRITBOOST' | 'DEFENSIVE' | 'ENDURE' | 'EVASION' | 'INSTAKILLBOOST' | 'MASTER' | 'MISC' | 'NAVI' | 'PERSONACOUNTER' | 'POSTBATTLE' | 'RECOVERY' | 'REGEN' | 'SET' | 'SIPHON' | 'SMTCOUNTER' | 'SPRING' | 'SUMMON' | 'SUPPORT' | 'SUSCEPTIBILITY' | 'TAUNT' | 'WALL';
 
 /** Stages for a Persona and its evolutions */
 export type Stage = 1 | 2 | 3;

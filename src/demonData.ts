@@ -3,7 +3,6 @@ import type { DemonData, PersonaData } from './dataTypes';
 const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	{
 		name: 'Abaddon',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 4,
@@ -83,7 +82,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Abdiel',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 2,
@@ -240,7 +238,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Adramelech',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 1,
@@ -317,7 +314,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Aeros',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 0,
@@ -376,7 +372,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Agathion',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 0,
@@ -436,7 +431,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Agnes',
-		aliases: [],
 		affinities: {
 			skillPotential: null,
 			inherit: null
@@ -556,11 +550,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		game: 'p5',
 		user: 'Makoto Niijima',
 		stage: 3,
-		evoSkillName: 'Debilitate'
+		evoSkillName: 'Checkmate'
 	},
 	{
 		name: 'Aitvaras',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 0,
@@ -621,7 +614,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Al Azif',
-		aliases: [],
 		affinities: {
 			skillPotential: null,
 			inherit: null
@@ -675,7 +667,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Alice',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 0,
@@ -750,7 +741,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Alilat',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: -6,
@@ -831,7 +821,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Alraune',
-		aliases: [],
 		affinities: {
 			skillPotential: null,
 			inherit: 'Recovery'
@@ -897,7 +886,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Amanozako',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 0,
@@ -978,7 +966,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Amaterasu',
-		aliases: [],
 		affinities: {
 			skillPotential: null,
 			inherit: null
@@ -1094,7 +1081,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Ame-no-Uzume',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: -3,
@@ -1165,7 +1151,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Amon',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 2,
@@ -1244,7 +1229,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Anahita',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 0,
@@ -1321,7 +1305,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Ananta',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 0,
@@ -1395,7 +1378,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Anat',
-		aliases: [],
 		affinities: {
 			skillPotential: null,
 			inherit: null
@@ -1519,7 +1501,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Andras',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 0,
@@ -1589,7 +1570,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Angel',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 0,
@@ -1653,7 +1633,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Anubis',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: -3,
@@ -1728,7 +1707,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Anzu',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 3,
@@ -1799,7 +1777,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Apsaras',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 0,
@@ -1866,7 +1843,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Aquans',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 0,
@@ -1925,7 +1901,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Ara Mitama',
-		aliases: [],
 		affinities: {
 			skillPotential: null,
 			inherit: 'Nuke'
@@ -1988,7 +1963,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Arahabaki',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 0,
@@ -2065,7 +2039,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Archangel',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 1,
@@ -2133,7 +2106,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Ardha',
-		aliases: [],
 		affinities: {
 			skillPotential: null,
 			inherit: 'Almighty'
@@ -2197,7 +2169,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Ares',
-		aliases: [],
 		affinities: {
 			skillPotential: null,
 			inherit: 'Phys'
@@ -2258,7 +2229,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Ariadne',
-		aliases: [],
 		affinities: {
 			skillPotential: null,
 			inherit: 'Almighty'
@@ -2327,7 +2297,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Ariadne Picaro',
-		aliases: [],
 		affinities: {
 			skillPotential: null,
 			inherit: 'Almighty'
@@ -2393,7 +2362,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Arioch',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 2,
@@ -2471,7 +2439,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Arsène',
-		aliases: [],
 		affinities: {
 			skillPotential: null,
 			inherit: 'Dark'
@@ -2530,7 +2497,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Artemis',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 5,
@@ -2609,7 +2575,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Artemisia',
-		aliases: [],
 		affinities: {
 			skillPotential: null,
 			inherit: null
@@ -2715,7 +2680,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Astarte',
-		aliases: [],
 		affinities: {
 			skillPotential: null,
 			inherit: null
@@ -2831,7 +2795,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Asterius',
-		aliases: [],
 		affinities: {
 			skillPotential: null,
 			inherit: 'Almighty'
@@ -2900,7 +2863,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Asterius Picaro',
-		aliases: [],
 		affinities: {
 			skillPotential: null,
 			inherit: 'Almighty'
@@ -2966,7 +2928,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Asura',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 3,
@@ -3045,7 +3006,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Atavaka',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 4,
@@ -3193,7 +3153,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Athena Picaro',
-		aliases: [],
 		affinities: {
 			skillPotential: null,
 			inherit: 'Almighty'
@@ -3262,7 +3221,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Atropos',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 0,
@@ -3335,7 +3293,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Attis',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 3,
@@ -3408,7 +3365,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Azumi',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 0,
@@ -3467,7 +3423,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Baal',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 0,
@@ -3547,7 +3502,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Baal Zebul',
-		aliases: [],
 		affinities: {
 			skillPotential: null,
 			inherit: 'Ice'
@@ -3612,7 +3566,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Baphomet',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 0,
@@ -3681,7 +3634,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Barong',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 3,
@@ -3756,7 +3708,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Basilisk',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 0,
@@ -3826,7 +3777,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Beelzebub',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 0,
@@ -3911,7 +3861,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Belial',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 3,
@@ -3988,7 +3937,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Belphegor',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 0,
@@ -4064,7 +4012,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Berith',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 2,
@@ -4132,7 +4079,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Bicorn',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 2,
@@ -4192,7 +4138,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Bishamonten',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 5,
@@ -4268,7 +4213,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Black Frost',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 0,
@@ -4347,7 +4291,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Black Ooze',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 2,
@@ -4419,7 +4362,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Black Rider',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 0,
@@ -4499,7 +4441,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Bugs',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 0,
@@ -4568,7 +4509,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Byakhee',
-		aliases: [],
 		affinities: {
 			skillPotential: null,
 			inherit: 'Fire'
@@ -4709,7 +4649,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Caesar',
-		aliases: [],
 		affinities: {
 			skillPotential: null,
 			inherit: null
@@ -4823,7 +4762,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Cait Sith',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 0,
@@ -4882,7 +4820,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Camael',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 3,
@@ -4955,7 +4892,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Captain Kidd',
-		aliases: [],
 		affinities: {
 			skillPotential: null,
 			inherit: null
@@ -5085,7 +5021,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Carmen',
-		aliases: [],
 		affinities: {
 			skillPotential: null,
 			inherit: null
@@ -5207,7 +5142,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Castor',
-		aliases: [],
 		affinities: {
 			skillPotential: null,
 			inherit: null
@@ -5293,7 +5227,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Célestine',
-		aliases: [],
 		affinities: {
 			skillPotential: null,
 			inherit: null
@@ -5417,7 +5350,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Cendrillon',
-		aliases: [],
 		affinities: {
 			skillPotential: null,
 			inherit: null
@@ -5491,7 +5423,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Cerberus',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 3,
@@ -5665,7 +5596,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Chernobog',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 0,
@@ -5738,7 +5668,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Chi You',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 4,
@@ -5816,7 +5745,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Chimera',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 3,
@@ -5895,7 +5823,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Choronzon',
-		aliases: [],
 		affinities: {
 			skillPotential: null,
 			inherit: 'Dark'
@@ -5964,7 +5891,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Cironnup',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 0,
@@ -6037,7 +5963,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Cleopatra',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 0,
@@ -6120,7 +6045,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Clotho',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 0,
@@ -6193,7 +6117,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Crystal Skull',
-		aliases: [],
 		affinities: {
 			skillPotential: null,
 			inherit: 'Support'
@@ -6261,7 +6184,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Cu Chulainn',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 4,
@@ -6336,7 +6258,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Cu Sith',
-		aliases: [],
 		affinities: {
 			skillPotential: null,
 			inherit: 'Wind'
@@ -6399,7 +6320,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Cybele',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 4,
@@ -6474,7 +6394,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Daemon',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 2,
@@ -6540,7 +6459,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Daisoujou',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 0,
@@ -6616,7 +6534,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Dakini',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 2,
@@ -6687,7 +6604,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Danu',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: -3,
@@ -6767,7 +6683,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Decarabia',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 0,
@@ -6834,7 +6749,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Demeter',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 0,
@@ -6915,7 +6829,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Diego',
-		aliases: [],
 		affinities: {
 			skillPotential: null,
 			inherit: null
@@ -7051,7 +6964,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Dionysus',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 2,
@@ -7126,7 +7038,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Dis',
-		aliases: [],
 		affinities: {
 			skillPotential: null,
 			inherit: 'Fire'
@@ -7187,7 +7098,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Dominion',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 0,
@@ -7256,7 +7166,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Eligor',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 3,
@@ -7325,7 +7234,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Ella',
-		aliases: [],
 		affinities: {
 			skillPotential: null,
 			inherit: null
@@ -7401,7 +7309,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Emperor\'s Amulet',
-		aliases: [],
 		affinities: {
 			skillPotential: null,
 			inherit: 'Support'
@@ -7469,7 +7376,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Erthys',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 0,
@@ -7528,7 +7434,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Fafnir',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 4,
@@ -7683,7 +7588,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Fionn mac Cumhaill',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 5,
@@ -7762,7 +7666,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Flaemis',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 0,
@@ -7821,7 +7724,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Flauros',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 2,
@@ -7896,7 +7798,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Forneus',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 0,
@@ -7970,7 +7871,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Fortuna',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: -1,
@@ -8038,7 +7938,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Futsunushi',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 6,
@@ -8114,7 +8013,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Fuu-Ki',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 2,
@@ -8187,7 +8085,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Gabriel',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 0,
@@ -8265,7 +8162,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Ganesha',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 3,
@@ -8342,7 +8238,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Ganga',
-		aliases: [],
 		affinities: {
 			skillPotential: null,
 			inherit: 'Ice'
@@ -8406,7 +8301,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Garuda',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 2,
@@ -8485,7 +8379,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Gdon',
-		aliases: [],
 		affinities: {
 			skillPotential: null,
 			inherit: 'Fire'
@@ -8617,7 +8510,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Ghoul',
-		aliases: [],
 		affinities: {
 			skillPotential: null,
 			inherit: 'Ailment'
@@ -8761,7 +8653,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Goemon',
-		aliases: [],
 		affinities: {
 			skillPotential: null,
 			inherit: null
@@ -8887,7 +8778,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Gorgon',
-		aliases: [],
 		affinities: {
 			skillPotential: null,
 			inherit: 'Ice'
@@ -8946,7 +8836,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Gorokichi',
-		aliases: [],
 		affinities: {
 			skillPotential: null,
 			inherit: null
@@ -9070,11 +8959,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		game: 'p5',
 		user: 'Yusuke Kitagawa',
 		stage: 3,
-		evoSkillName: 'Luster Candy'
+		evoSkillName: 'Hyakka Ryouran'
 	},
 	{
 		name: 'Gurr',
-		aliases: [],
 		affinities: {
 			skillPotential: null,
 			inherit: 'Phys'
@@ -9138,7 +9026,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Hachiman',
-		aliases: [],
 		affinities: {
 			skillPotential: null,
 			inherit: 'Elec'
@@ -9198,7 +9085,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Hanuman',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 3,
@@ -9267,7 +9153,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Haraedo-no-Okami',
-		aliases: [],
 		affinities: {
 			skillPotential: null,
 			inherit: null
@@ -9383,7 +9268,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Hariti',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 0,
@@ -9456,7 +9340,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Hastur',
-		aliases: [],
 		affinities: {
 			skillPotential: null,
 			inherit: 'Wind'
@@ -9522,7 +9405,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Hayataro',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 5,
@@ -9601,7 +9483,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Hecate',
-		aliases: [],
 		affinities: {
 			skillPotential: null,
 			inherit: null
@@ -9725,7 +9606,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Hecatoncheires',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 4,
@@ -9799,7 +9679,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Helel',
-		aliases: [],
 		affinities: {
 			skillPotential: null,
 			inherit: 'Almighty'
@@ -9870,7 +9749,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Hell Biker',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 3,
@@ -9945,7 +9823,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Hereward',
-		aliases: [],
 		affinities: {
 			skillPotential: null,
 			inherit: null
@@ -10017,7 +9894,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Hermes',
-		aliases: [],
 		affinities: {
 			skillPotential: null,
 			inherit: null
@@ -10111,7 +9987,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'High Pixie',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 0,
@@ -10181,7 +10056,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Himiko',
-		aliases: [],
 		affinities: {
 			skillPotential: null,
 			inherit: null
@@ -10391,7 +10265,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Hope Diamond',
-		aliases: [],
 		affinities: {
 			skillPotential: null,
 			inherit: 'Support'
@@ -10459,7 +10332,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Horus',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 0,
@@ -10534,7 +10406,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Hua Po',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 0,
@@ -10603,7 +10474,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Hydra',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 3,
@@ -10676,7 +10546,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Idun',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 0,
@@ -10814,7 +10683,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Inanna',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: -6,
@@ -10893,7 +10761,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Incubus',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 0,
@@ -10963,7 +10830,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Inugami',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 0,
@@ -11029,7 +10895,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Io',
-		aliases: [],
 		affinities: {
 			skillPotential: null,
 			inherit: null
@@ -11115,7 +10980,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Ippon-Datara',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 2,
@@ -11178,7 +11042,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Ishtar',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 0,
@@ -11253,7 +11116,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Isis',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: -4,
@@ -11440,7 +11302,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Izanagi',
-		aliases: [],
 		affinities: {
 			skillPotential: null,
 			inherit: 'Elec'
@@ -11524,7 +11385,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Izanagi Picaro',
-		aliases: [],
 		affinities: {
 			skillPotential: null,
 			inherit: 'Almighty'
@@ -11588,7 +11448,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Izanagi-no-Okami',
-		aliases: [],
 		affinities: {
 			skillPotential: null,
 			inherit: 'Almighty'
@@ -11663,7 +11522,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Izanagi-no-Okami Picaro',
-		aliases: [],
 		affinities: {
 			skillPotential: null,
 			inherit: 'Almighty'
@@ -11735,7 +11593,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Jack Frost',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 0,
@@ -11871,7 +11728,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Jatayu',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 0,
@@ -11943,7 +11799,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Jikokuten',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 4,
@@ -12020,7 +11875,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Jinn',
-		aliases: [],
 		affinities: {
 			skillPotential: null,
 			inherit: 'Fire'
@@ -12079,7 +11933,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Jiraiya',
-		aliases: [],
 		affinities: {
 			skillPotential: null,
 			inherit: null
@@ -12189,7 +12042,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Johanna',
-		aliases: [],
 		affinities: {
 			skillPotential: null,
 			inherit: null
@@ -12311,7 +12163,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Juno',
-		aliases: [],
 		affinities: {
 			skillPotential: null,
 			inherit: null
@@ -12369,7 +12220,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Kaguya',
-		aliases: [],
 		affinities: {
 			skillPotential: null,
 			inherit: 'Almighty'
@@ -12438,7 +12288,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Kaguya Picaro',
-		aliases: [],
 		affinities: {
 			skillPotential: null,
 			inherit: 'Almighty'
@@ -12502,7 +12351,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Kaiwan',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 0,
@@ -12571,7 +12419,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Kala-Nemi',
-		aliases: [],
 		affinities: {
 			skillPotential: null,
 			inherit: null
@@ -12665,7 +12512,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Kali',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 4,
@@ -12741,7 +12587,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Kamu Susano-o',
-		aliases: [],
 		affinities: {
 			skillPotential: null,
 			inherit: null
@@ -12869,7 +12714,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Kamui',
-		aliases: [],
 		affinities: {
 			skillPotential: null,
 			inherit: null
@@ -12982,7 +12826,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Kamui-Moshiri',
-		aliases: [],
 		affinities: {
 			skillPotential: null,
 			inherit: null
@@ -13093,7 +12936,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Kanzeon',
-		aliases: [],
 		affinities: {
 			skillPotential: null,
 			inherit: null
@@ -13171,7 +13013,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Kartikeya',
-		aliases: [],
 		affinities: {
 			skillPotential: null,
 			inherit: 'Elec'
@@ -13228,7 +13069,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Kaya-no-Hime',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 0,
@@ -13299,7 +13139,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Kelpie',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 0,
@@ -13372,7 +13211,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Khonsu',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 3,
@@ -13449,7 +13287,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Khonsu Ra',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 3,
@@ -13527,7 +13364,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Kikuri-Hime',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: -2,
@@ -13598,7 +13434,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Kin-Ki',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 4,
@@ -13671,7 +13506,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'King Frost',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 0,
@@ -13745,7 +13579,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Kingu',
-		aliases: [],
 		affinities: {
 			skillPotential: null,
 			inherit: 'Recovery'
@@ -13809,7 +13642,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Kintoki-Douji',
-		aliases: [],
 		affinities: {
 			skillPotential: null,
 			inherit: null
@@ -13919,7 +13751,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Kodama',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 0,
@@ -13979,7 +13810,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Koh-i-Noor',
-		aliases: [],
 		affinities: {
 			skillPotential: null,
 			inherit: 'Support'
@@ -14126,7 +13956,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Konohana Sakuya',
-		aliases: [],
 		affinities: {
 			skillPotential: null,
 			inherit: null
@@ -14240,7 +14069,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Koppa Tengu',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 0,
@@ -14388,7 +14216,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Koumokuten',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 4,
@@ -14465,7 +14292,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Kouzeon',
-		aliases: [],
 		affinities: {
 			skillPotential: null,
 			inherit: null
@@ -14543,7 +14369,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Kumbhanda',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 3,
@@ -14621,7 +14446,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Kurama Tengu',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 1,
@@ -14821,7 +14645,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Lachesis',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 0,
@@ -14901,7 +14724,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Lahmu',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 2,
@@ -14981,7 +14803,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Lakshmi',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: -4,
@@ -15060,7 +14881,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Lamia',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 0,
@@ -15134,7 +14954,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Leanan Sidhe',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: -1,
@@ -15204,7 +15023,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Legion',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 0,
@@ -15268,7 +15086,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Lilim',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 0,
@@ -15338,7 +15155,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Lilith',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 0,
@@ -15412,7 +15228,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Loa',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 0,
@@ -15481,7 +15296,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Loki',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 0,
@@ -15630,7 +15444,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Loup-garou',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 3,
@@ -15704,7 +15517,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Lucia',
-		aliases: [],
 		affinities: {
 			skillPotential: null,
 			inherit: null
@@ -15754,7 +15566,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Lucifer',
-		aliases: [],
 		affinities: {
 			skillPotential: null,
 			inherit: 'Almighty'
@@ -15825,7 +15636,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Lucy',
-		aliases: [],
 		affinities: {
 			skillPotential: null,
 			inherit: null
@@ -15941,7 +15751,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Macabre',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 1,
@@ -16015,7 +15824,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Mada',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 3,
@@ -16092,7 +15900,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Magatsu-Izanagi',
-		aliases: [],
 		affinities: {
 			skillPotential: null,
 			inherit: 'Almighty'
@@ -16161,7 +15968,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Magatsu-Izanagi Picaro',
-		aliases: [],
 		affinities: {
 			skillPotential: null,
 			inherit: 'Almighty'
@@ -16227,7 +16033,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Mahakala',
-		aliases: [],
 		affinities: {
 			skillPotential: null,
 			inherit: 'Phys'
@@ -16296,7 +16101,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Makami',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 0,
@@ -16365,7 +16169,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Manananggal',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 0,
@@ -16435,7 +16238,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Mandrake',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 0,
@@ -16496,7 +16298,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Mara',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 5,
@@ -16576,7 +16377,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Maria',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: -3,
@@ -16657,7 +16457,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Masakado',
-		aliases: [],
 		affinities: {
 			skillPotential: null,
 			inherit: 'Light'
@@ -16718,7 +16517,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Matador',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 4,
@@ -16796,7 +16594,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Melchizedek',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 2,
@@ -16869,7 +16666,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Mephisto',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 7,
@@ -16953,7 +16749,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Mercurius',
-		aliases: [],
 		affinities: {
 			skillPotential: null,
 			inherit: null
@@ -17089,7 +16884,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Mermaid',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: -2,
@@ -17155,7 +16949,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Messiah',
-		aliases: [],
 		affinities: {
 			skillPotential: null,
 			inherit: 'Almighty'
@@ -17232,7 +17025,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Messiah Picaro',
-		aliases: [],
 		affinities: {
 			skillPotential: null,
 			inherit: 'Almighty'
@@ -17306,7 +17098,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Metatron',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 0,
@@ -17384,7 +17175,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Michael',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 2,
@@ -17461,7 +17251,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Milady',
-		aliases: [],
 		affinities: {
 			skillPotential: null,
 			inherit: null
@@ -17575,7 +17364,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Mishaguji',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 0,
@@ -17650,7 +17438,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Mithras',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 1,
@@ -17802,7 +17589,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Mokoi',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 0,
@@ -17865,7 +17651,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Moloch',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 2,
@@ -17939,7 +17724,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Mot',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 0,
@@ -18012,7 +17796,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Mother Harlot',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 0,
@@ -18095,7 +17878,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Mothman',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 0,
@@ -18238,7 +18020,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Naga',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 2,
@@ -18308,7 +18089,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Narasimha',
-		aliases: [],
 		affinities: {
 			skillPotential: null,
 			inherit: 'Light'
@@ -18369,7 +18149,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Narcissus',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: -2,
@@ -18508,7 +18287,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Nebiros',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 0,
@@ -18576,7 +18354,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Necronomicon',
-		aliases: [],
 		affinities: {
 			skillPotential: null,
 			inherit: null
@@ -18630,7 +18407,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Neko Shogun',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 0,
@@ -18700,7 +18476,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Nekomata',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 3,
@@ -18772,7 +18547,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Nemesis',
-		aliases: [],
 		affinities: {
 			skillPotential: null,
 			inherit: null
@@ -18904,7 +18678,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Nigi Mitama',
-		aliases: [],
 		affinities: {
 			skillPotential: null,
 			inherit: 'Recovery'
@@ -18964,7 +18737,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Norn',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 0,
@@ -19035,7 +18807,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Nozuchi',
-		aliases: [],
 		affinities: {
 			skillPotential: null,
 			inherit: 'Ailment'
@@ -19098,7 +18869,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Nue',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 1,
@@ -19171,7 +18941,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Nuwa',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 2,
@@ -19329,7 +19098,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Obariyon',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 3,
@@ -19394,7 +19162,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Oberon',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 0,
@@ -19467,7 +19234,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Odin',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 6,
@@ -19547,7 +19313,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Okuninushi',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 2,
@@ -19619,7 +19384,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Omoikane',
-		aliases: [],
 		affinities: {
 			skillPotential: null,
 			inherit: 'Elec'
@@ -19686,7 +19450,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Ongyo-Ki',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 5,
@@ -19763,7 +19526,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Oni',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 3,
@@ -19830,7 +19592,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Onmoraki',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 0,
@@ -19892,7 +19653,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Orichalcum',
-		aliases: [],
 		affinities: {
 			skillPotential: null,
 			inherit: 'Support'
@@ -19960,7 +19720,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Orlov',
-		aliases: [],
 		affinities: {
 			skillPotential: null,
 			inherit: 'Support'
@@ -20028,7 +19787,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Orobas',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 1,
@@ -20103,7 +19861,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Orpheus',
-		aliases: [],
 		affinities: {
 			skillPotential: null,
 			inherit: 'Fire'
@@ -20318,7 +20075,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Orpheus Picaro',
-		aliases: [],
 		affinities: {
 			skillPotential: null,
 			inherit: 'Almighty'
@@ -20382,7 +20138,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Orpheus Telos',
-		aliases: [],
 		affinities: {
 			skillPotential: null,
 			inherit: null
@@ -20431,7 +20186,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Orthrus',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 3,
@@ -20507,7 +20261,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Ose',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 3,
@@ -20655,7 +20408,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Pabilsag',
-		aliases: [],
 		affinities: {
 			skillPotential: null,
 			inherit: 'Phys'
@@ -20717,7 +20469,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Pale Rider',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 4,
@@ -20801,7 +20552,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Palladion',
-		aliases: [],
 		affinities: {
 			skillPotential: null,
 			inherit: null
@@ -20889,7 +20639,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Pandora',
-		aliases: [],
 		affinities: {
 			skillPotential: null,
 			inherit: null
@@ -21011,7 +20760,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Parvati',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 0,
@@ -21085,7 +20833,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Pazuzu',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 0,
@@ -21164,7 +20911,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Penthesilea',
-		aliases: [],
 		affinities: {
 			skillPotential: null,
 			inherit: null
@@ -21254,7 +21000,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Pisaca',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 2,
@@ -21326,7 +21071,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Pithos',
-		aliases: [],
 		affinities: {
 			skillPotential: null,
 			inherit: null
@@ -21428,7 +21172,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Pixie',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 0,
@@ -21493,7 +21236,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Poltergeist',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 0,
@@ -21561,7 +21303,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Polydeuces',
-		aliases: [],
 		affinities: {
 			skillPotential: null,
 			inherit: null
@@ -21643,7 +21384,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Power',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 3,
@@ -21717,7 +21457,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Preta',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 1,
@@ -21778,7 +21517,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Principality',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 0,
@@ -21847,7 +21585,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Prometheus',
-		aliases: [],
 		affinities: {
 			skillPotential: null,
 			inherit: null
@@ -21901,7 +21638,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Psyche',
-		aliases: [],
 		affinities: {
 			skillPotential: null,
 			inherit: null
@@ -22072,7 +21808,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Queen\'s Necklace',
-		aliases: [],
 		affinities: {
 			skillPotential: null,
 			inherit: 'Support'
@@ -22140,7 +21875,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Quetzalcoatl',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 0,
@@ -22287,7 +22021,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Rakshasa',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 2,
@@ -22353,7 +22086,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Rangda',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 3,
@@ -22428,7 +22160,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Raoul',
-		aliases: [],
 		affinities: {
 			skillPotential: null,
 			inherit: 'Almighty'
@@ -22447,7 +22178,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		},
 		learnset: [
 			{
-				name: 'Phantom Snow',
+				name: 'Phantom Show',
 				level: 0
 			},
 			{
@@ -22498,7 +22229,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Raphael',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 0,
@@ -22576,7 +22306,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Red Rider',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 6,
@@ -22656,7 +22385,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Regent',
-		aliases: [],
 		affinities: {
 			skillPotential: null,
 			inherit: 'Support'
@@ -22724,7 +22452,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Robin Hood',
-		aliases: [],
 		affinities: {
 			skillPotential: null,
 			inherit: null
@@ -22922,7 +22649,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Saki Mitama',
-		aliases: [],
 		affinities: {
 			skillPotential: null,
 			inherit: 'Recovery'
@@ -22981,7 +22707,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Samael',
-		aliases: [],
 		affinities: {
 			skillPotential: null,
 			inherit: 'Dark'
@@ -23047,7 +22772,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Sandalphon',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 0,
@@ -23126,7 +22850,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Sandman',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 1,
@@ -23189,7 +22912,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Sarasvati',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 0,
@@ -23264,7 +22986,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Satan',
-		aliases: [],
 		affinities: {
 			skillPotential: null,
 			inherit: 'Ice'
@@ -23332,7 +23053,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Satanael',
-		aliases: [],
 		affinities: {
 			skillPotential: null,
 			inherit: 'Almighty'
@@ -23375,7 +23095,7 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				level: 97
 			},
 			{
-				name: 'Tyrant"s Mind',
+				name: 'Tyrant\'s Mind',
 				level: 98
 			},
 			{
@@ -23411,7 +23131,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Sati',
-		aliases: [],
 		affinities: {
 			skillPotential: null,
 			inherit: 'Fire'
@@ -23470,7 +23189,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Saturnus',
-		aliases: [],
 		affinities: {
 			skillPotential: null,
 			inherit: 'Fire'
@@ -23531,7 +23249,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Scathach',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 1,
@@ -23885,7 +23602,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Senri',
-		aliases: [],
 		affinities: {
 			skillPotential: null,
 			inherit: 'Recovery'
@@ -23944,7 +23660,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Setanta',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 3,
@@ -24015,7 +23730,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Seth',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 3,
@@ -24091,7 +23805,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Shiisaa',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 1,
@@ -24161,7 +23874,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Shiki-Ouji',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 0,
@@ -24233,7 +23945,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Shiva',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 6,
@@ -24315,7 +24026,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Siegfried',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 6,
@@ -24392,7 +24102,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Silky',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: -3,
@@ -24467,7 +24176,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Skadi',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 0,
@@ -24542,7 +24250,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Slime',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 1,
@@ -24605,7 +24312,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Sraosha',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 0,
@@ -24679,7 +24385,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Stone of Scone',
-		aliases: [],
 		affinities: {
 			skillPotential: null,
 			inherit: 'Support'
@@ -24747,7 +24452,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Succubus',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 0,
@@ -24820,7 +24524,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Sudama',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 0,
@@ -24883,7 +24586,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Sui-Ki',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 2,
@@ -24956,7 +24658,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Sukuna-Hikona',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 2,
@@ -25133,7 +24834,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Sumeo-Okami',
-		aliases: [],
 		affinities: {
 			skillPotential: null,
 			inherit: null
@@ -25249,7 +24949,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Suparna',
-		aliases: [],
 		affinities: {
 			skillPotential: null,
 			inherit: 'Wind'
@@ -25312,7 +25011,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Surt',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 4,
@@ -25383,7 +25081,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Susano-o',
-		aliases: [],
 		affinities: {
 			skillPotential: null,
 			inherit: null
@@ -25568,7 +25265,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Suzuka Gongen',
-		aliases: [],
 		affinities: {
 			skillPotential: null,
 			inherit: null
@@ -25684,7 +25380,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Sylph',
-		aliases: [],
 		affinities: {
 			skillPotential: null,
 			inherit: 'Wind'
@@ -25743,7 +25438,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Take-Mikazuchi',
-		aliases: [],
 		affinities: {
 			skillPotential: null,
 			inherit: null
@@ -25849,7 +25543,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Take-Minakata',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 2,
@@ -25916,7 +25609,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Takehaya Susano-o',
-		aliases: [],
 		affinities: {
 			skillPotential: null,
 			inherit: null
@@ -26028,7 +25720,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Takeji Zaiten',
-		aliases: [],
 		affinities: {
 			skillPotential: null,
 			inherit: null
@@ -26132,11 +25823,10 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 		game: 'p4',
 		user: 'Kanji Tatsumi',
 		stage: 3,
-		evoSkillName: 'The Man"s Way'
+		evoSkillName: 'The Man\'s Way'
 	},
 	{
 		name: 'Tam Lin',
-		aliases: [],
 		affinities: {
 			skillPotential: null,
 			inherit: 'Almighty'
@@ -26204,7 +25894,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Tao',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: -5,
@@ -26411,7 +26100,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Thanatos',
-		aliases: [],
 		affinities: {
 			skillPotential: null,
 			inherit: 'Almighty'
@@ -26479,7 +26167,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Thanatos Picaro',
-		aliases: [],
 		affinities: {
 			skillPotential: null,
 			inherit: 'Almighty'
@@ -26544,7 +26231,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Thor',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 4,
@@ -26618,7 +26304,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Thoth',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 0,
@@ -26691,7 +26376,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Throne',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 0,
@@ -26764,7 +26448,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Thunderbird',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 0,
@@ -26835,7 +26518,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Titan',
-		aliases: [],
 		affinities: {
 			skillPotential: null,
 			inherit: 'Elec'
@@ -26894,7 +26576,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Titania',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: -4,
@@ -26970,7 +26651,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Tomoe',
-		aliases: [],
 		affinities: {
 			skillPotential: null,
 			inherit: null
@@ -27084,7 +26764,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Triglav',
-		aliases: [],
 		affinities: {
 			skillPotential: null,
 			inherit: 'Phys'
@@ -27147,7 +26826,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Trismegistus',
-		aliases: [],
 		affinities: {
 			skillPotential: null,
 			inherit: null
@@ -27261,7 +26939,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Trumpeter',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: -6,
@@ -27343,7 +27020,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Tsuchigumo',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 1,
@@ -27544,7 +27220,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Turdak',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 2,
@@ -27603,7 +27278,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Tzitzimitl',
-		aliases: [],
 		affinities: {
 			skillPotential: null,
 			inherit: 'Elec'
@@ -27672,7 +27346,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Ukobach',
-		aliases: [],
 		affinities: {
 			skillPotential: null,
 			inherit: 'Fire'
@@ -27731,7 +27404,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Undine',
-		aliases: [],
 		affinities: {
 			skillPotential: null,
 			inherit: 'Recovery'
@@ -27790,7 +27462,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Unicorn',
-		aliases: [],
 		affinities: {
 			skillPotential: null,
 			inherit: 'Nuke'
@@ -27848,7 +27519,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Uriel',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 2,
@@ -27922,7 +27592,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Valjean',
-		aliases: [],
 		affinities: {
 			skillPotential: null,
 			inherit: null
@@ -28028,7 +27697,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Valkyrie',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 3,
@@ -28095,7 +27763,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Vanadis',
-		aliases: [],
 		affinities: {
 			skillPotential: null,
 			inherit: null
@@ -28169,7 +27836,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Vasuki',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 0,
@@ -28250,7 +27916,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Vetala',
-		aliases: [],
 		affinities: {
 			skillPotential: null,
 			inherit: 'Ailment'
@@ -28314,7 +27979,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Virtue',
-		aliases: [],
 		affinities: {
 			skillPotential: null,
 			inherit: 'Light'
@@ -28379,7 +28043,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Vishnu',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 0,
@@ -28457,7 +28120,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Vohu Manah',
-		aliases: [],
 		affinities: {
 			skillPotential: null,
 			inherit: 'Almighty'
@@ -28524,7 +28186,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'White Rider',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 0,
@@ -28602,7 +28263,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'William',
-		aliases: [],
 		affinities: {
 			skillPotential: null,
 			inherit: null
@@ -28734,7 +28394,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Xiezhai',
-		aliases: [],
 		affinities: {
 			skillPotential: null,
 			inherit: 'Elec'
@@ -28868,7 +28527,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Yamata-no-Orochi',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 4,
@@ -28944,7 +28602,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Yamato Sumeragi',
-		aliases: [],
 		affinities: {
 			skillPotential: null,
 			inherit: null
@@ -29047,7 +28704,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Yamato-Takeru',
-		aliases: [],
 		affinities: {
 			skillPotential: null,
 			inherit: null
@@ -29150,7 +28806,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Yatagarasu',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 0,
@@ -29225,7 +28880,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Yatsufusa',
-		aliases: [],
 		affinities: {
 			skillPotential: null,
 			inherit: 'Fire'
@@ -29294,7 +28948,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Yomotsu-Shikome',
-		aliases: [],
 		affinities: {
 			skillPotential: null,
 			inherit: 'Ailment'
@@ -29353,7 +29006,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Yoshitsune',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 5,
@@ -29422,7 +29074,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Yurlungur',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 0,
@@ -29499,7 +29150,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Zaou-Gongen',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 5,
@@ -29577,7 +29227,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Zeus',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 4,
@@ -29656,7 +29305,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Zhen',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 2,
@@ -29722,7 +29370,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Zorro',
-		aliases: [],
 		affinities: {
 			skillPotential: null,
 			inherit: null
@@ -29856,7 +29503,6 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 	},
 	{
 		name: 'Zouchouten',
-		aliases: [],
 		affinities: {
 			skillPotential: {
 				Phys: 4,

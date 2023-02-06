@@ -5,7 +5,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: '+15% EXP',
 		affinity: 'Passive',
 		type: 'POSTBATTLE',
-		unique: false,
 		amount: 15,
 		inactive: false,
 		stat: 'EXP'
@@ -14,7 +13,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: '+50% EXP',
 		affinity: 'Passive',
 		type: 'POSTBATTLE',
-		unique: false,
 		amount: 50,
 		inactive: false,
 		stat: 'EXP'
@@ -23,7 +21,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Abysmal Surge',
 		affinity: 'Ailment',
 		type: 'AILMENT',
-		unique: false,
 		range: 'All',
 		cost: 12,
 		ailments: [
@@ -44,8 +41,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 50
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 270,
 			display: 'Severe',
@@ -58,7 +53,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Abyssal Mask',
 		affinity: 'Passive',
 		type: 'MISC',
-		unique: false,
 		cost: null,
 		description: 'Greatly decreases chance of instakill and being afflicted with ailments.'
 	},
@@ -74,8 +68,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 30
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 205,
 			display: 'Severe',
@@ -88,7 +80,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Acrobat Kick',
 		affinity: 'Phys',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 98,
 		ailments: [],
 		cost: {
@@ -98,8 +89,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		flags: [
 			'+200% Crit Rate'
 		],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 80,
 			display: 'Weak',
@@ -109,10 +98,16 @@ const skillData: Readonly<AnySkillData[]> = [
 		series: 'smt'
 	},
 	{
+		name: 'Active Support',
+		affinity: 'Passive',
+		type: 'NAVI',
+		unique: null,
+		description: 'Moral Support may now Charge or recover SP.'
+	},
+	{
 		name: 'Adverse Resolve',
 		affinity: 'Passive',
 		type: 'CRITBOOST',
-		unique: false,
 		amount: 20,
 		criteria: 'Surround'
 	},
@@ -120,7 +115,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Aeon Rain',
 		affinity: 'Phys',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 75,
 		ailments: [],
 		cost: {
@@ -142,7 +136,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Agi',
 		affinity: 'Fire',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 98,
 		ailments: [],
 		cost: {
@@ -150,8 +143,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 10
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 130,
 			display: 'Weak',
@@ -162,9 +153,11 @@ const skillData: Readonly<AnySkillData[]> = [
 	},
 	{
 		name: 'Agibarion',
+		aliases: [
+			'Inferno'
+		],
 		affinity: 'Fire',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 98,
 		ailments: [],
 		cost: {
@@ -172,8 +165,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 50
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 265,
 			display: 'Severe',
@@ -186,7 +177,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Agidyne',
 		affinity: 'Fire',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 98,
 		ailments: [],
 		cost: {
@@ -194,8 +184,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 35
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 215,
 			display: 'Heavy',
@@ -208,7 +196,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Agilao',
 		affinity: 'Fire',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 98,
 		ailments: [],
 		cost: {
@@ -216,8 +203,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 20
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 160,
 			display: 'Medium',
@@ -230,7 +215,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Agneyastra',
 		affinity: 'Phys',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 80,
 		ailments: [],
 		cost: {
@@ -252,16 +236,17 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Ailment Boost',
 		affinity: 'Passive',
 		type: 'AILBOOST',
-		unique: false,
 		ailment: 'All',
 		amount: 25,
 		weather: false
 	},
 	{
 		name: 'Akashic Arts',
+		aliases: [
+			'Akasha Arts'
+		],
 		affinity: 'Phys',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 98,
 		ailments: [],
 		cost: {
@@ -271,8 +256,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		flags: [
 			'Crit Damage Boost'
 		],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 275,
 			display: 'Severe',
@@ -282,19 +265,39 @@ const skillData: Readonly<AnySkillData[]> = [
 		series: 'smt'
 	},
 	{
+		name: 'Alertness',
+		affinity: 'Passive',
+		type: 'MISC',
+		cost: null,
+		description: 'Decreases chance of being ambushed by foes.'
+	},
+	{
 		name: 'Ali Dance',
 		affinity: 'Passive',
 		type: 'EVASION',
-		unique: false,
 		amount: 2,
 		criteria: null,
 		element: 'All'
 	},
 	{
+		name: 'All-out Attack Boost',
+		affinity: 'Passive',
+		type: 'MISC',
+		cost: null,
+		description: 'Increases strength of All-Out Attacks.'
+	},
+	{
+		name: 'Almighty Amp',
+		affinity: 'Passive',
+		type: 'BOOST',
+		amount: 50,
+		element: 'Almighty',
+		stacks: 'x'
+	},
+	{
 		name: 'Almighty Boost',
 		affinity: 'Passive',
 		type: 'BOOST',
-		unique: false,
 		amount: 25,
 		element: 'Almighty',
 		stacks: 'x'
@@ -303,7 +306,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Almighty Pleroma',
 		affinity: 'Passive',
 		type: 'BOOST',
-		unique: false,
 		amount: 20,
 		element: 'Almighty',
 		stacks: '+'
@@ -312,7 +314,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Ambient Aid',
 		affinity: 'Passive',
 		type: 'AILBOOST',
-		unique: false,
 		ailment: 'All',
 		amount: 30,
 		weather: true
@@ -321,7 +322,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Analysis',
 		affinity: 'Passive',
 		type: 'NAVI',
-		unique: false,
+		unique: null,
 		description: 'Confirm affinities of enemies you have previously attacked.'
 	},
 	{
@@ -350,16 +351,26 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Angelic Grace',
 		affinity: 'Passive',
 		type: 'EVASION',
-		unique: false,
 		amount: 2,
 		criteria: null,
 		element: 'Magic'
 	},
 	{
+		name: 'Anima Freeze',
+		affinity: 'Ailment',
+		type: 'AILMENT',
+		range: 'All',
+		cost: 12,
+		ailments: [
+			'Exhaust'
+		],
+		chance: 30,
+		flags: []
+	},
+	{
 		name: 'Apt Pupil',
 		affinity: 'Passive',
 		type: 'CRITBOOST',
-		unique: false,
 		amount: 100,
 		criteria: null
 	},
@@ -367,7 +378,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Aramasa',
 		affinity: 'Phys',
 		type: 'ATTACK',
-		unique: true,
+		unique: null,
 		accuracy: 98,
 		ailments: [],
 		cost: {
@@ -389,14 +400,39 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Arms Master',
 		affinity: 'Passive',
 		type: 'MASTER',
-		unique: false,
+		amount: 50,
 		stat: 'HP'
+	},
+	{
+		name: 'Arm Chopper',
+		affinity: 'Phys',
+		type: 'ATTACK',
+		accuracy: 90,
+		ailments: [
+			{
+				name: 'Fear',
+				chance: 15
+			}
+		],
+		cost: {
+			type: 'HP',
+			amount: 9
+		},
+		flags: [],
+		max: 2,
+		min: 2,
+		power: {
+			amount: 75,
+			display: 'Weak',
+			type: 'Physical'
+		},
+		range: 'One',
+		series: 'persona'
 	},
 	{
 		name: 'Arrow Rain',
 		affinity: 'Phys',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 75,
 		ailments: [],
 		cost: {
@@ -418,7 +454,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Assault Dive',
 		affinity: 'Phys',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 90,
 		ailments: [],
 		cost: {
@@ -426,8 +461,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 13
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 180,
 			display: 'Heavy',
@@ -462,7 +495,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Atomic Flare',
 		affinity: 'Nuke',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 98,
 		ailments: [],
 		cost: {
@@ -470,8 +502,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 50
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 265,
 			display: 'Severe',
@@ -481,10 +511,37 @@ const skillData: Readonly<AnySkillData[]> = [
 		series: 'persona'
 	},
 	{
+		name: 'Atom Smasher',
+		affinity: 'Phys',
+		type: 'ATTACK',
+		accuracy: 80,
+		ailments: [
+			{
+				name: 'Fear',
+				chance: 15
+			}
+		],
+		cost: {
+			type: 'HP',
+			amount: 16
+		},
+		flags: [],
+		max: 2,
+		power: {
+			amount: 80,
+			display: 'Medium',
+			type: 'Physical'
+		},
+		range: 'All',
+		series: 'persona'
+	},
+	{
 		name: 'Attack Master',
+		aliases: [
+			'Auto-Tarukaja'
+		],
 		affinity: 'Passive',
 		type: 'AUTOBUFF',
-		unique: false,
 		buff: 'Attack',
 		range: 'Self'
 	},
@@ -492,7 +549,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Auto-Maraku',
 		affinity: 'Passive',
 		type: 'AUTOBUFF',
-		unique: false,
 		buff: 'Defense',
 		range: 'Party'
 	},
@@ -500,7 +556,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Auto-Masuku',
 		affinity: 'Passive',
 		type: 'AUTOBUFF',
-		unique: false,
 		buff: 'Accuracy/Evasion',
 		range: 'Party'
 	},
@@ -508,7 +563,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Auto-Mataru',
 		affinity: 'Passive',
 		type: 'AUTOBUFF',
-		unique: false,
 		buff: 'Attack',
 		range: 'Party'
 	},
@@ -516,7 +570,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Axel Claw',
 		affinity: 'Phys',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 98,
 		ailments: [],
 		cost: {
@@ -573,8 +626,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 80
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 180,
 			display: 'Severe',
@@ -587,7 +638,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Bad Beat',
 		affinity: 'Phys',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 80,
 		ailments: [
 			{
@@ -600,8 +650,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 21
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 150,
 			display: 'Medium',
@@ -614,7 +662,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Baisudi',
 		affinity: 'Recovery',
 		type: 'RECOVERY',
-		unique: false,
 		range: 'Ally',
 		cost: 4,
 		ailments: [
@@ -630,7 +677,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Beast Eye',
 		affinity: 'Passive',
 		type: 'MISC',
-		unique: false,
 		cost: null,
 		description: 'Increases Accuracy.'
 	},
@@ -648,8 +694,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		flags: [
 			'Attack Reduced'
 		],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 600,
 			display: 'Colossal',
@@ -662,7 +706,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Beatdown',
 		affinity: 'Phys',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 98,
 		ailments: [],
 		cost: {
@@ -672,8 +715,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		flags: [
 			'HP Dependent'
 		],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 110,
 			display: 'Weak',
@@ -686,7 +727,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Berserker God',
 		affinity: 'Phys',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 98,
 		ailments: [],
 		cost: {
@@ -694,8 +734,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 15
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 180,
 			display: 'Medium',
@@ -708,7 +746,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Bestial Bite',
 		affinity: 'Phys',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 98,
 		ailments: [],
 		cost: {
@@ -718,8 +755,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		flags: [
 			'Crit Damage Boost'
 		],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 130,
 			display: 'Weak',
@@ -732,7 +767,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Black Dracostrike',
 		affinity: 'Dark',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 98,
 		ailments: [],
 		cost: {
@@ -742,8 +776,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		flags: [
 			'Weakness Instakill'
 		],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 200,
 			display: 'Medium',
@@ -756,7 +788,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Black Spot',
 		affinity: 'Phys',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 80,
 		ailments: [],
 		cost: {
@@ -764,8 +795,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 16
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 200,
 			display: 'Medium',
@@ -786,8 +815,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 48
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 210,
 			display: 'Severe',
@@ -800,7 +827,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Blade of Fury',
 		affinity: 'Phys',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 90,
 		ailments: [],
 		cost: {
@@ -822,7 +848,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Bleeding Dry Brush',
 		affinity: 'Support',
 		type: 'BARRIER',
-		unique: false,
+		unique: null,
 		range: 'Ally',
 		cost: 22,
 		barriers: [
@@ -833,7 +859,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Blight',
 		affinity: 'Phys',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 98,
 		ailments: [
 			{
@@ -860,7 +885,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Blinding Strike',
 		affinity: 'Phys',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 98,
 		ailments: [],
 		cost: {
@@ -870,8 +894,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		flags: [
 			'Accuracy/Evasion Down'
 		],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 130,
 			display: 'Weak',
@@ -884,7 +906,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Bloodbath',
 		affinity: 'Phys',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 80,
 		ailments: [
 			{
@@ -897,8 +918,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 22
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 200,
 			display: 'Heavy',
@@ -911,7 +930,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Bloody Glee',
 		affinity: 'Passive',
 		type: 'MISC',
-		unique: false,
 		cost: null,
 		description: 'Increases Critical Rate.'
 	},
@@ -919,7 +937,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Boon Boost',
 		affinity: 'Passive',
 		type: 'MISC',
-		unique: false,
 		cost: null,
 		description: 'Your -kaja/-nda skills last 1 extra turn.'
 	},
@@ -927,7 +944,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Boon Boost EX',
 		affinity: 'Passive',
 		type: 'MISC',
-		unique: false,
 		cost: null,
 		description: 'Your -kaja/-nda skills last 2 extra turns.'
 	},
@@ -935,7 +951,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Bouncing Claw',
 		affinity: 'Phys',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 98,
 		ailments: [],
 		cost: {
@@ -957,7 +972,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Bowl of Hygieia',
 		affinity: 'Support',
 		type: 'CHARGE',
-		unique: false,
 		range: 'Self',
 		cost: 20,
 		charge: 'Recovery'
@@ -966,7 +980,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Brain Buster',
 		affinity: 'Phys',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 80,
 		ailments: [
 			{
@@ -979,8 +992,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 22
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 200,
 			display: 'Heavy',
@@ -993,7 +1004,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Brain Shake',
 		affinity: 'Phys',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 90,
 		ailments: [
 			{
@@ -1006,8 +1016,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 9
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 100,
 			display: 'Medium',
@@ -1020,7 +1028,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Brave Blade',
 		affinity: 'Phys',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 98,
 		ailments: [],
 		cost: {
@@ -1030,8 +1037,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		flags: [
 			'+30% Crit Rate'
 		],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 220,
 			display: 'Heavy',
@@ -1044,7 +1049,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Brave Step',
 		affinity: 'Support',
 		type: 'CRIT',
-		unique: true,
+		unique: null,
 		range: 'Party',
 		cost: 16
 	},
@@ -1052,7 +1057,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Bufu',
 		affinity: 'Ice',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 98,
 		ailments: [],
 		cost: {
@@ -1060,8 +1064,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 10
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 130,
 			display: 'Weak',
@@ -1072,9 +1074,12 @@ const skillData: Readonly<AnySkillData[]> = [
 	},
 	{
 		name: 'Bufubarion',
+		aliases: [
+			'Diamond Dust',
+			'Niflheim'
+		],
 		affinity: 'Ice',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 98,
 		ailments: [],
 		cost: {
@@ -1082,8 +1087,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 50
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 265,
 			display: 'Severe',
@@ -1096,7 +1099,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Bufudyne',
 		affinity: 'Ice',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 98,
 		ailments: [],
 		cost: {
@@ -1104,8 +1106,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 35
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 215,
 			display: 'Heavy',
@@ -1118,7 +1118,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Bufula',
 		affinity: 'Ice',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 98,
 		ailments: [],
 		cost: {
@@ -1126,8 +1125,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 20
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 160,
 			display: 'Medium',
@@ -1140,7 +1137,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Burn Boost',
 		affinity: 'Passive',
 		type: 'AILBOOST',
-		unique: false,
 		ailment: 'Burn',
 		amount: 25,
 		weather: false
@@ -1160,6 +1156,41 @@ const skillData: Readonly<AnySkillData[]> = [
 		flags: []
 	},
 	{
+		name: 'Call Allies',
+		affinity: 'Misc',
+		type: 'SUMMON',
+		unique: null,
+		demon: null
+	},
+	{
+		name: 'Call Angels',
+		affinity: 'Misc',
+		type: 'SUMMON',
+		unique: null,
+		demon: 'Dominion'
+	},
+	{
+		name: 'Call Evil',
+		affinity: 'Misc',
+		type: 'SUMMON',
+		unique: null,
+		demon: 'Loa'
+	},
+	{
+		name: 'Call Soldiers',
+		affinity: 'Misc',
+		type: 'SUMMON',
+		unique: null,
+		demon: 'Power'
+	},
+	{
+		name: 'Call Souls',
+		affinity: 'Misc',
+		type: 'SUMMON',
+		unique: null,
+		demon: 'Legion'
+	},
+	{
 		name: 'Carnage Fang',
 		affinity: 'Phys',
 		type: 'ATTACK',
@@ -1173,8 +1204,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		flags: [
 			'Crit Damage Boost'
 		],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 260,
 			display: 'Heavy',
@@ -1187,7 +1216,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Catastrophe',
 		affinity: 'Phys',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 98,
 		ailments: [],
 		cost: {
@@ -1195,8 +1223,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 75
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 290,
 			display: 'Severe',
@@ -1212,7 +1238,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		unique: true,
 		range: 'Party',
 		cost: 50,
-		surround: false,
+		flags: [],
 		buffs: [
 			'Defense',
 			'Accuracy/Evasion'
@@ -1225,7 +1251,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Cell Breaker',
 		affinity: 'Phys',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 90,
 		ailments: [
 			{
@@ -1238,8 +1263,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 10
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 140,
 			display: 'Weak',
@@ -1252,14 +1275,14 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Certain Escape',
 		affinity: 'Passive',
 		type: 'NAVI',
-		unique: false,
+		unique: null,
 		description: 'Escape random battles successfully.'
 	},
 	{
-		name: 'Champion"s Cup',
+		name: 'Champion\'s Cup',
 		affinity: 'Recovery',
 		type: 'RECOVERY',
-		unique: false,
+		unique: null,
 		range: 'Ally',
 		cost: 10,
 		ailments: null,
@@ -1273,24 +1296,28 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Chaotic Will',
 		affinity: 'Ailment',
 		type: 'MISC',
-		unique: true,
+		unique: null,
 		cost: 150,
 		description: 'Chance of instakill to all foes. Foe\'s Press Turn Icons will be halved next turn.'
 	},
 	{
 		name: 'Charge',
+		aliases: [
+			'Power Charge'
+		],
 		affinity: 'Support',
 		type: 'CHARGE',
-		unique: false,
 		range: 'Self',
 		cost: 10,
 		charge: 'Charge'
 	},
 	{
 		name: 'Charm Boost',
+		aliases: [
+			'Brainwash Boost'
+		],
 		affinity: 'Passive',
 		type: 'AILBOOST',
-		unique: false,
 		ailment: 'Charm',
 		amount: 25,
 		weather: false
@@ -1299,7 +1326,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Charmdi',
 		affinity: 'Recovery',
 		type: 'RECOVERY',
-		unique: false,
 		range: 'Ally',
 		cost: 5,
 		ailments: [
@@ -1310,10 +1336,26 @@ const skillData: Readonly<AnySkillData[]> = [
 		flags: []
 	},
 	{
+		name: 'Checkmate',
+		affinity: 'Support',
+		type: 'SUPPORT',
+		unique: null,
+		range: 'All',
+		cost: 90,
+		flags: [],
+		buffs: [],
+		negate: false,
+		debuffs: [
+			'Attack',
+			'Defense',
+			'Accuracy/Evasion'
+		],
+		auto: []
+	},
+	{
 		name: 'Cleave',
 		affinity: 'Phys',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 90,
 		ailments: [],
 		cost: {
@@ -1321,8 +1363,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 6
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 75,
 			display: 'Weak',
@@ -1335,7 +1375,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Climate Decorum',
 		affinity: 'Passive',
 		type: 'EVASION',
-		unique: false,
 		amount: 2,
 		criteria: 'Rain/Snow',
 		element: 'All'
@@ -1344,32 +1383,50 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Complete Analysis',
 		affinity: 'Passive',
 		type: 'NAVI',
-		unique: false,
+		unique: null,
 		description: 'Reveals all elemental affinities on all enemies.'
 	},
 	{
+		name: 'Concealment',
+		affinity: 'Support',
+		type: 'MISC',
+		cost: 4,
+		description: 'Decreases chance of being targeted by foes.'
+	},
+	{
 		name: 'Concentrate',
+		aliases: [
+			'Mind Charge'
+		],
 		affinity: 'Support',
 		type: 'CHARGE',
-		unique: false,
 		range: 'Self',
 		cost: 10,
 		charge: 'Concentrate'
 	},
 	{
 		name: 'Confuse Boost',
+		aliases: [
+			'Dizzy Boost'
+		],
 		affinity: 'Passive',
 		type: 'AILBOOST',
-		unique: false,
 		ailment: 'Confuse',
 		amount: 25,
 		weather: false
 	},
 	{
+		name: 'Cool Breeze',
+		affinity: 'Passive',
+		type: 'POSTBATTLE',
+		amount: 8,
+		inactive: false,
+		stat: 'HPMP'
+	},
+	{
 		name: 'Cornered Fang',
 		affinity: 'Phys',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 85,
 		ailments: [],
 		cost: {
@@ -1379,8 +1436,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		flags: [
 			'Surround Boost'
 		],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 125,
 			display: 'Medium',
@@ -1393,7 +1448,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Cosmic Flare',
 		affinity: 'Nuke',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 95,
 		ailments: [],
 		cost: {
@@ -1401,8 +1455,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 75
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 185,
 			display: 'Severe',
@@ -1415,7 +1467,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Counter',
 		affinity: 'Passive',
 		type: 'SMTCOUNTER',
-		unique: false,
 		attackDown: false,
 		chance: 50,
 		element: 'Phys',
@@ -1426,23 +1477,23 @@ const skillData: Readonly<AnySkillData[]> = [
 	},
 	{
 		name: 'Counter - Persona',
+		aliases: [
+			'Counter'
+		],
 		affinity: 'Passive',
 		type: 'PERSONACOUNTER',
-		unique: false,
 		chance: 10
 	},
 	{
 		name: 'Counterstrike',
 		affinity: 'Passive',
 		type: 'PERSONACOUNTER',
-		unique: false,
 		chance: 15
 	},
 	{
 		name: 'Crazy Chain',
 		affinity: 'Phys',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 80,
 		ailments: [
 			{
@@ -1455,8 +1506,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 14
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 110,
 			display: 'Medium',
@@ -1469,7 +1518,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Critical Aura',
 		affinity: 'Support',
 		type: 'CHARGE',
-		unique: false,
 		range: 'Self',
 		cost: 25,
 		charge: 'Critical'
@@ -1478,7 +1526,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Critical Slash',
 		affinity: 'Phys',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 50,
 		ailments: [],
 		cost: {
@@ -1488,8 +1535,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		flags: [
 			'+200% Crit Rate'
 		],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 160,
 			display: 'Weak',
@@ -1502,7 +1547,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Critical Wave',
 		affinity: 'Phys',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 98,
 		ailments: [],
 		cost: {
@@ -1512,8 +1556,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		flags: [
 			'+20% Crit Rate'
 		],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 90,
 			display: 'Weak',
@@ -1526,7 +1568,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Critical Zealot',
 		affinity: 'Passive',
 		type: 'MISC',
-		unique: false,
 		cost: null,
 		description: 'Increases Critical damage, but normal damage decreases.'
 	},
@@ -1556,7 +1597,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Cruel Attack',
 		affinity: 'Phys',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 90,
 		ailments: [],
 		cost: {
@@ -1566,8 +1606,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		flags: [
 			'Down Boost'
 		],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 180,
 			display: 'Medium',
@@ -1580,7 +1618,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Crusher Onslaught',
 		affinity: 'Phys',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 50,
 		ailments: [],
 		cost: {
@@ -1588,8 +1625,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 20
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 170,
 			display: 'Medium',
@@ -1602,7 +1637,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Curse Siphon',
 		affinity: 'Passive',
 		type: 'SIPHON',
-		unique: false,
 		amount: 10,
 		criteria: 'Ailment'
 	},
@@ -1610,7 +1644,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Damascus Claw',
 		affinity: 'Phys',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 98,
 		ailments: [],
 		cost: {
@@ -1654,9 +1687,11 @@ const skillData: Readonly<AnySkillData[]> = [
 	},
 	{
 		name: 'Dark Amp',
+		aliases: [
+			'Curse Amp'
+		],
 		affinity: 'Passive',
 		type: 'BOOST',
-		unique: false,
 		amount: 50,
 		element: 'Dark',
 		stacks: 'x'
@@ -1665,7 +1700,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Dark Block',
 		affinity: 'Support',
 		type: 'BARRIER',
-		unique: false,
 		range: 'Party',
 		cost: 40,
 		barriers: [
@@ -1674,9 +1708,11 @@ const skillData: Readonly<AnySkillData[]> = [
 	},
 	{
 		name: 'Dark Boost',
+		aliases: [
+			'Curse Boost'
+		],
 		affinity: 'Passive',
 		type: 'BOOST',
-		unique: false,
 		amount: 25,
 		element: 'Dark',
 		stacks: 'x'
@@ -1685,7 +1721,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Dark Pleroma',
 		affinity: 'Passive',
 		type: 'BOOST',
-		unique: false,
 		amount: 20,
 		element: 'Dark',
 		stacks: '+'
@@ -1694,7 +1729,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Dark Sword',
 		affinity: 'Phys',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 98,
 		ailments: [
 			{
@@ -1721,7 +1755,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Dazzler',
 		affinity: 'Ailment',
 		type: 'AILMENT',
-		unique: false,
 		range: 'One',
 		cost: 5,
 		ailments: [
@@ -1744,8 +1777,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		flags: [
 			'+200% Crit Rate'
 		],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 200,
 			display: 'Medium',
@@ -1768,8 +1799,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		flags: [
 			'Weakness Instakill'
 		],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 320,
 			display: 'Severe',
@@ -1795,8 +1824,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 70
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 160,
 			display: 'Heavy',
@@ -1809,7 +1836,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Death Scythe',
 		affinity: 'Phys',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 90,
 		ailments: [
 			{
@@ -1822,8 +1848,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 20
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 270,
 			display: 'Severe',
@@ -1836,7 +1860,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Deathbound',
 		affinity: 'Phys',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 98,
 		ailments: [],
 		cost: {
@@ -1844,8 +1867,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 35
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 150,
 			display: 'Medium',
@@ -1858,10 +1879,9 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Debilitate',
 		affinity: 'Support',
 		type: 'SUPPORT',
-		unique: false,
 		range: 'All',
 		cost: 150,
-		surround: false,
+		flags: [],
 		buffs: [],
 		negate: false,
 		debuffs: [
@@ -1873,9 +1893,11 @@ const skillData: Readonly<AnySkillData[]> = [
 	},
 	{
 		name: 'Defense Master',
+		aliases: [
+			'Auto-Rakukaja'
+		],
 		affinity: 'Passive',
 		type: 'AUTOBUFF',
-		unique: false,
 		buff: 'Defense',
 		range: 'Self'
 	},
@@ -1883,10 +1905,9 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Dekaja',
 		affinity: 'Support',
 		type: 'SUPPORT',
-		unique: false,
 		range: 'All',
 		cost: 40,
-		surround: false,
+		flags: [],
 		buffs: [
 			'Attack',
 			'Defense',
@@ -1900,10 +1921,9 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Dekunda',
 		affinity: 'Support',
 		type: 'SUPPORT',
-		unique: false,
 		range: 'Party',
 		cost: 40,
-		surround: false,
+		flags: [],
 		buffs: [],
 		negate: true,
 		debuffs: [
@@ -1915,16 +1935,18 @@ const skillData: Readonly<AnySkillData[]> = [
 	},
 	{
 		name: 'Demonic Decree',
+		aliases: [
+			'Hell\'s Judgment'
+		],
 		affinity: 'Dark',
-		type: 'HALVE',
-		unique: false,
+		type: 'SET',
+		amount: '50%',
 		cost: 48
 	},
 	{
 		name: 'Despair Boost',
 		affinity: 'Passive',
 		type: 'AILBOOST',
-		unique: false,
 		ailment: 'Despair',
 		amount: 25,
 		weather: false
@@ -1933,7 +1955,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Dia',
 		affinity: 'Recovery',
 		type: 'RECOVERY',
-		unique: false,
 		range: 'Ally',
 		cost: 8,
 		ailments: null,
@@ -1945,7 +1966,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Diamrita',
 		affinity: 'Recovery',
 		type: 'RECOVERY',
-		unique: false,
 		range: 'Ally',
 		cost: 30,
 		ailments: 'All',
@@ -1957,7 +1977,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Diarahan',
 		affinity: 'Recovery',
 		type: 'RECOVERY',
-		unique: false,
 		range: 'Ally',
 		cost: 35,
 		ailments: null,
@@ -1969,7 +1988,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Diarama',
 		affinity: 'Recovery',
 		type: 'RECOVERY',
-		unique: false,
 		range: 'Ally',
 		cost: 15,
 		ailments: null,
@@ -2005,7 +2023,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Divine Arrowfall',
 		affinity: 'Almighty',
 		type: 'ATTACK',
-		unique: true,
+		unique: null,
 		accuracy: 98,
 		ailments: [],
 		cost: {
@@ -2013,8 +2031,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 35
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 170,
 			display: 'Heavy',
@@ -2027,22 +2043,26 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Divine Grace',
 		affinity: 'Passive',
 		type: 'MISC',
-		unique: false,
 		cost: null,
 		description: 'Increases the effect of healing skills by 50%.'
 	},
 	{
 		name: 'Divine Judgement',
+		aliases: [
+			'God\'s Judgment'
+		],
 		affinity: 'Light',
-		type: 'HALVE',
-		unique: false,
+		type: 'SET',
+		amount: '50%',
 		cost: 48
 	},
 	{
 		name: 'Dodge Dark',
+		aliases: [
+			'Dodge Curse'
+		],
 		affinity: 'Passive',
 		type: 'EVASION',
-		unique: false,
 		amount: 2,
 		criteria: null,
 		element: 'Dark'
@@ -2051,7 +2071,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Dodge Elec',
 		affinity: 'Passive',
 		type: 'EVASION',
-		unique: false,
 		amount: 2,
 		criteria: null,
 		element: 'Elec'
@@ -2060,7 +2079,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Dodge Fire',
 		affinity: 'Passive',
 		type: 'EVASION',
-		unique: false,
 		amount: 2,
 		criteria: null,
 		element: 'Fire'
@@ -2069,16 +2087,17 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Dodge Ice',
 		affinity: 'Passive',
 		type: 'EVASION',
-		unique: false,
 		amount: 2,
 		criteria: null,
 		element: 'Ice'
 	},
 	{
 		name: 'Dodge Light',
+		aliases: [
+			'Dodge Bless'
+		],
 		affinity: 'Passive',
 		type: 'EVASION',
-		unique: false,
 		amount: 2,
 		criteria: null,
 		element: 'Light'
@@ -2087,16 +2106,17 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Dodge Nuke',
 		affinity: 'Passive',
 		type: 'EVASION',
-		unique: false,
 		amount: 2,
 		criteria: null,
 		element: 'Dark'
 	},
 	{
 		name: 'Dodge Phys',
+		aliases: [
+			'Dodge Physical'
+		],
 		affinity: 'Passive',
 		type: 'EVASION',
-		unique: false,
 		amount: 2,
 		criteria: null,
 		element: 'Phys'
@@ -2105,7 +2125,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Dodge Psy',
 		affinity: 'Passive',
 		type: 'EVASION',
-		unique: false,
 		amount: 2,
 		criteria: null,
 		element: 'Psy'
@@ -2114,7 +2133,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Dodge Wind',
 		affinity: 'Passive',
 		type: 'EVASION',
-		unique: false,
 		amount: 2,
 		criteria: null,
 		element: 'Wind'
@@ -2123,7 +2141,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Donum Gladi',
 		affinity: 'Support',
 		type: 'CHARGE',
-		unique: false,
 		range: 'Ally',
 		cost: 40,
 		charge: 'Charge'
@@ -2132,7 +2149,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Donum Magici',
 		affinity: 'Support',
 		type: 'CHARGE',
-		unique: false,
 		range: 'Ally',
 		cost: 40,
 		charge: 'Concentrate'
@@ -2151,8 +2167,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		flags: [
 			'Instakill'
 		],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 110,
 			display: 'Heavy',
@@ -2165,7 +2179,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Dormin Rush',
 		affinity: 'Phys',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 80,
 		ailments: [
 			{
@@ -2178,8 +2191,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 16
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 100,
 			display: 'Medium',
@@ -2192,7 +2203,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Dormina',
 		affinity: 'Ailment',
 		type: 'AILMENT',
-		unique: false,
 		range: 'One',
 		cost: 10,
 		ailments: [
@@ -2205,7 +2215,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Double Fangs',
 		affinity: 'Phys',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 90,
 		ailments: [],
 		cost: {
@@ -2227,7 +2236,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Double Shot',
 		affinity: 'Gun',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 90,
 		ailments: [],
 		cost: {
@@ -2249,31 +2257,36 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Dragon Eye',
 		affinity: 'Passive',
 		type: 'MISC',
-		unique: false,
 		cost: null,
 		description: 'Greatly increases Accuracy.'
 	},
 	{
 		name: 'Drain Dark',
+		aliases: [
+			'Drain Curse'
+		],
 		affinity: 'Passive',
 		type: 'DEFENSIVE',
-		unique: false,
 		element: 'Dark',
 		newAffinity: 'Drain'
 	},
 	{
 		name: 'Drain Elec',
+		aliases: [
+			'Absorb Elec'
+		],
 		affinity: 'Passive',
 		type: 'DEFENSIVE',
-		unique: false,
 		element: 'Elec',
 		newAffinity: 'Drain'
 	},
 	{
 		name: 'Drain Fire',
+		aliases: [
+			'Absorb Fire'
+		],
 		affinity: 'Passive',
 		type: 'DEFENSIVE',
-		unique: false,
 		element: 'Fire',
 		newAffinity: 'Drain'
 	},
@@ -2281,23 +2294,26 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Drain Force',
 		affinity: 'Passive',
 		type: 'DEFENSIVE',
-		unique: false,
 		element: 'Force',
 		newAffinity: 'Drain'
 	},
 	{
 		name: 'Drain Ice',
+		aliases: [
+			'Absorb Ice'
+		],
 		affinity: 'Passive',
 		type: 'DEFENSIVE',
-		unique: false,
 		element: 'Ice',
 		newAffinity: 'Drain'
 	},
 	{
 		name: 'Drain Light',
+		aliases: [
+			'Drain Bless'
+		],
 		affinity: 'Passive',
 		type: 'DEFENSIVE',
-		unique: false,
 		element: 'Light',
 		newAffinity: 'Drain'
 	},
@@ -2305,15 +2321,16 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Drain Nuke',
 		affinity: 'Passive',
 		type: 'DEFENSIVE',
-		unique: false,
 		element: 'Nuke',
 		newAffinity: 'Drain'
 	},
 	{
 		name: 'Drain Phys',
+		aliases: [
+			'Absorb Physical'
+		],
 		affinity: 'Passive',
 		type: 'DEFENSIVE',
-		unique: false,
 		element: 'Phys',
 		newAffinity: 'Drain'
 	},
@@ -2321,15 +2338,16 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Drain Psy',
 		affinity: 'Passive',
 		type: 'DEFENSIVE',
-		unique: false,
 		element: 'Psy',
 		newAffinity: 'Drain'
 	},
 	{
 		name: 'Drain Wind',
+		aliases: [
+			'Absorb Wind'
+		],
 		affinity: 'Passive',
 		type: 'DEFENSIVE',
-		unique: false,
 		element: 'Wind',
 		newAffinity: 'Drain'
 	},
@@ -2337,7 +2355,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Dream Fist',
 		affinity: 'Phys',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 98,
 		ailments: [],
 		cost: {
@@ -2347,8 +2364,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		flags: [
 			'Asleep Boost'
 		],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 140,
 			display: 'Weak',
@@ -2361,7 +2376,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Dream Needle',
 		affinity: 'Phys',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 98,
 		ailments: [
 			{
@@ -2374,8 +2388,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 10
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 110,
 			display: 'Weak',
@@ -2388,7 +2400,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Dustoma',
 		affinity: 'Ailment',
 		type: 'AILMENT',
-		unique: false,
 		range: 'One',
 		cost: 10,
 		ailments: [
@@ -2401,7 +2412,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Eat Whole',
 		affinity: 'Phys',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 98,
 		ailments: [],
 		cost: {
@@ -2411,8 +2421,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		flags: [
 			'Drain HP'
 		],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 150,
 			display: 'Medium',
@@ -2425,7 +2433,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Elec Amp',
 		affinity: 'Passive',
 		type: 'BOOST',
-		unique: false,
 		amount: 50,
 		element: 'Elec',
 		stacks: 'x'
@@ -2434,7 +2441,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Elec Block',
 		affinity: 'Support',
 		type: 'BARRIER',
-		unique: false,
 		range: 'Party',
 		cost: 40,
 		barriers: [
@@ -2445,7 +2451,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Elec Boost',
 		affinity: 'Passive',
 		type: 'BOOST',
-		unique: false,
 		amount: 25,
 		element: 'Elec',
 		stacks: 'x'
@@ -2454,7 +2459,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Elec Break',
 		affinity: 'Support',
 		type: 'BREAK',
-		unique: false,
 		cost: 15,
 		element: 'Elec'
 	},
@@ -2462,16 +2466,17 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Elec Pleroma',
 		affinity: 'Passive',
 		type: 'BOOST',
-		unique: false,
 		amount: 20,
 		element: 'Elec',
 		stacks: '+'
 	},
 	{
 		name: 'Elec Wall',
+		aliases: [
+			'Blue Wall'
+		],
 		affinity: 'Support',
 		type: 'WALL',
-		unique: false,
 		cost: 18,
 		element: 'Elec'
 	},
@@ -2488,33 +2493,51 @@ const skillData: Readonly<AnySkillData[]> = [
 		flags: []
 	},
 	{
+		name: 'Emergency Shift',
+		affinity: 'Passive',
+		type: 'NAVI',
+		unique: null,
+		description: 'Chance to swap current party with backups when 2 or more people are KO\'d.'
+	},
+	{
 		name: 'Endure',
 		affinity: 'Passive',
 		type: 'ENDURE',
-		unique: false,
-		priority: 1,
-		instakill: false
+		amount: 1,
+		criteria: null
+	},
+	{
+		name: 'Endure Dark',
+		affinity: 'Passive',
+		type: 'ENDURE',
+		amount: 100,
+		criteria: 'Dark'
+	},
+	{
+		name: 'Endure Light',
+		affinity: 'Passive',
+		type: 'ENDURE',
+		amount: 100,
+		criteria: 'Light'
 	},
 	{
 		name: 'Enduring Soul',
 		affinity: 'Passive',
 		type: 'ENDURE',
-		unique: false,
-		priority: 2,
-		instakill: false
+		amount: 2,
+		criteria: null
 	},
 	{
 		name: 'Enemy Radar',
 		affinity: 'Passive',
 		type: 'NAVI',
-		unique: false,
+		unique: null,
 		description: 'Reveal the location of Shadows on each floor over a wide area.'
 	},
 	{
 		name: 'Energy Drain',
 		affinity: 'Almighty',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 98,
 		ailments: [],
 		cost: {
@@ -2524,8 +2547,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		flags: [
 			'Drain HP/MP'
 		],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 80,
 			display: 'Weak',
@@ -2538,7 +2559,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Energy Drop',
 		affinity: 'Recovery',
 		type: 'RECOVERY',
-		unique: false,
 		range: 'Ally',
 		cost: 4,
 		ailments: [
@@ -2556,7 +2576,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Energy Shower',
 		affinity: 'Recovery',
 		type: 'RECOVERY',
-		unique: false,
 		range: 'Party',
 		cost: 8,
 		ailments: [
@@ -2574,7 +2593,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Enervate Boost',
 		affinity: 'Passive',
 		type: 'AILBOOST',
-		unique: false,
 		ailment: 'Enervate',
 		amount: 25,
 		weather: false
@@ -2583,7 +2601,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Enervation',
 		affinity: 'Ailment',
 		type: 'AILMENT',
-		unique: false,
 		range: 'One',
 		cost: 5,
 		ailments: [
@@ -2596,14 +2613,13 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Escape Route',
 		affinity: 'Passive',
 		type: 'NAVI',
-		unique: false,
+		unique: null,
 		description: 'Return to the entrance of Tartarus or the Desert of Doors.'
 	},
 	{
 		name: 'Estoma',
 		affinity: 'Support',
 		type: 'MISC',
-		unique: false,
 		cost: 35,
 		description: 'Prevents any enemy encounters until next New Moon.'
 	},
@@ -2631,9 +2647,11 @@ const skillData: Readonly<AnySkillData[]> = [
 	},
 	{
 		name: 'Evade Dark',
+		aliases: [
+			'Evade Curse'
+		],
 		affinity: 'Passive',
 		type: 'EVASION',
-		unique: false,
 		amount: 3,
 		criteria: null,
 		element: 'Dark'
@@ -2642,7 +2660,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Evade Elec',
 		affinity: 'Passive',
 		type: 'EVASION',
-		unique: false,
 		amount: 3,
 		criteria: null,
 		element: 'Elec'
@@ -2651,7 +2668,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Evade Fire',
 		affinity: 'Passive',
 		type: 'EVASION',
-		unique: false,
 		amount: 3,
 		criteria: null,
 		element: 'Fire'
@@ -2660,16 +2676,17 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Evade Ice',
 		affinity: 'Passive',
 		type: 'EVASION',
-		unique: false,
 		amount: 3,
 		criteria: null,
 		element: 'Ice'
 	},
 	{
 		name: 'Evade Light',
+		aliases: [
+			'Evade Bless'
+		],
 		affinity: 'Passive',
 		type: 'EVASION',
-		unique: false,
 		amount: 3,
 		criteria: null,
 		element: 'Light'
@@ -2678,16 +2695,17 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Evade Nuke',
 		affinity: 'Passive',
 		type: 'EVASION',
-		unique: false,
 		amount: 3,
 		criteria: null,
 		element: 'Nuke'
 	},
 	{
 		name: 'Evade Phys',
+		aliases: [
+			'Evade Physical'
+		],
 		affinity: 'Passive',
 		type: 'EVASION',
-		unique: false,
 		amount: 3,
 		criteria: null,
 		element: 'Phys'
@@ -2696,7 +2714,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Evade Psy',
 		affinity: 'Passive',
 		type: 'EVASION',
-		unique: false,
 		amount: 3,
 		criteria: null,
 		element: 'Psy'
@@ -2705,7 +2722,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Evade Wind',
 		affinity: 'Passive',
 		type: 'EVASION',
-		unique: false,
 		amount: 3,
 		criteria: null,
 		element: 'Wind'
@@ -2722,7 +2738,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Evil Smile',
 		affinity: 'Ailment',
 		type: 'AILMENT',
-		unique: false,
 		range: 'All',
 		cost: 12,
 		ailments: [
@@ -2735,7 +2750,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Evil Touch',
 		affinity: 'Ailment',
 		type: 'AILMENT',
-		unique: false,
 		range: 'One',
 		cost: 5,
 		ailments: [
@@ -2743,6 +2757,14 @@ const skillData: Readonly<AnySkillData[]> = [
 		],
 		chance: 70,
 		flags: []
+	},
+	{
+		name: 'Exhaust Boost',
+		affinity: 'Passive',
+		type: 'AILBOOST',
+		ailment: 'Exhaust',
+		amount: 25,
+		weather: false
 	},
 	{
 		name: 'Fallen Destroyer',
@@ -2758,8 +2780,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		flags: [
 			'Weakness Instakill'
 		],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 250,
 			display: 'Severe',
@@ -2769,10 +2789,22 @@ const skillData: Readonly<AnySkillData[]> = [
 		series: 'smt'
 	},
 	{
+		name: 'Famine\'s Scream',
+		affinity: 'Ailment',
+		type: 'AILMENT',
+		unique: null,
+		range: 'All',
+		cost: 0,
+		ailments: [
+			'Hunger'
+		],
+		chance: 25,
+		flags: []
+	},
+	{
 		name: 'Fang Breaker',
 		affinity: 'Phys',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 98,
 		ailments: [],
 		cost: {
@@ -2782,8 +2814,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		flags: [
 			'Attack Down'
 		],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 130,
 			display: 'Weak',
@@ -2796,7 +2826,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Fast Heal',
 		affinity: 'Passive',
 		type: 'REGEN',
-		unique: false,
 		amount: 1,
 		criteria: null,
 		percent: false,
@@ -2806,7 +2835,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Fatal End',
 		affinity: 'Phys',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 90,
 		ailments: [],
 		cost: {
@@ -2814,8 +2842,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 14
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 160,
 			display: 'Weak',
@@ -2828,7 +2854,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Fatal Sword',
 		affinity: 'Phys',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 98,
 		ailments: [],
 		cost: {
@@ -2838,8 +2863,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		flags: [
 			'+30% Crit Rate'
 		],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 180,
 			display: 'Medium',
@@ -2852,7 +2875,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Fear Boost',
 		affinity: 'Passive',
 		type: 'AILBOOST',
-		unique: false,
 		ailment: 'Fear',
 		amount: 25,
 		weather: false
@@ -2861,7 +2883,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Fierce Roar',
 		affinity: 'Support',
 		type: 'TAUNT',
-		unique: false,
 		buff: 'Defense',
 		cost: 30
 	},
@@ -2869,7 +2890,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Fighting Spirit',
 		affinity: 'Support',
 		type: 'CHARGE',
-		unique: false,
 		range: 'Party',
 		cost: 80,
 		charge: 'Charge'
@@ -2878,7 +2898,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Figment Slash',
 		affinity: 'Phys',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 50,
 		ailments: [],
 		cost: {
@@ -2888,8 +2907,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		flags: [
 			'+200% Crit Rate'
 		],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 300,
 			display: 'Severe',
@@ -2899,10 +2916,16 @@ const skillData: Readonly<AnySkillData[]> = [
 		series: 'smt'
 	},
 	{
+		name: 'Final Guard',
+		affinity: 'Passive',
+		type: 'NAVI',
+		unique: null,
+		description: 'Chance to nullify a fatal attack to a current party member.'
+	},
+	{
 		name: 'Fire Amp',
 		affinity: 'Passive',
 		type: 'BOOST',
-		unique: false,
 		amount: 50,
 		element: 'Fire',
 		stacks: 'x'
@@ -2911,7 +2934,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Fire Block',
 		affinity: 'Support',
 		type: 'BARRIER',
-		unique: false,
 		range: 'Party',
 		cost: 40,
 		barriers: [
@@ -2922,7 +2944,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Fire Boost',
 		affinity: 'Passive',
 		type: 'BOOST',
-		unique: false,
 		amount: 25,
 		element: 'Fire',
 		stacks: 'x'
@@ -2931,7 +2952,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Fire Break',
 		affinity: 'Support',
 		type: 'BREAK',
-		unique: false,
 		cost: 15,
 		element: 'Fire'
 	},
@@ -2939,7 +2959,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Fire Breath',
 		affinity: 'Fire',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 98,
 		ailments: [],
 		cost: {
@@ -2961,7 +2980,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Fire Dracostrike',
 		affinity: 'Fire',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 98,
 		ailments: [],
 		cost: {
@@ -2969,8 +2987,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 25
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 200,
 			display: 'Medium',
@@ -3005,16 +3021,17 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Fire Pleroma',
 		affinity: 'Passive',
 		type: 'BOOST',
-		unique: false,
 		amount: 20,
 		element: 'Fire',
 		stacks: '+'
 	},
 	{
 		name: 'Fire Wall',
+		aliases: [
+			'Red Wall'
+		],
 		affinity: 'Support',
 		type: 'WALL',
-		unique: false,
 		cost: 18,
 		element: 'Fire'
 	},
@@ -3022,7 +3039,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Firm Stance',
 		affinity: 'Passive',
 		type: 'MISC',
-		unique: false,
 		cost: null,
 		description: 'Take the blow, but decreases damage by half.'
 	},
@@ -3030,7 +3046,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Flash Bomb',
 		affinity: 'Phys',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 80,
 		ailments: [
 			{
@@ -3043,8 +3058,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 19
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 125,
 			display: 'Medium',
@@ -3057,7 +3070,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Floral Gust',
 		affinity: 'Force',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 98,
 		ailments: [],
 		cost: {
@@ -3079,7 +3091,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Fogna',
 		affinity: 'Ailment',
 		type: 'AILMENT',
-		unique: false,
 		range: 'All',
 		cost: 25,
 		ailments: [
@@ -3092,7 +3103,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Force Block',
 		affinity: 'Support',
 		type: 'BARRIER',
-		unique: false,
 		range: 'Party',
 		cost: 40,
 		barriers: [
@@ -3103,7 +3113,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Force Pleroma',
 		affinity: 'Passive',
 		type: 'BOOST',
-		unique: false,
 		amount: 20,
 		element: 'Force',
 		stacks: '+'
@@ -3112,7 +3121,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Fortified Moxy',
 		affinity: 'Passive',
 		type: 'CRITBOOST',
-		unique: false,
 		amount: 15,
 		criteria: 'Ambush'
 	},
@@ -3120,7 +3128,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Fortify Spirit',
 		affinity: 'Passive',
 		type: 'AILDEFENSIVE',
-		unique: false,
 		ailment: 'All',
 		resistance: 'Resist'
 	},
@@ -3128,7 +3135,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Foul Breath',
 		affinity: 'Almighty',
 		type: 'SUSCEPTIBILITY',
-		unique: false,
 		range: 'Foe',
 		cost: 8
 	},
@@ -3136,7 +3142,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Freeze Boost',
 		affinity: 'Passive',
 		type: 'AILBOOST',
-		unique: false,
 		ailment: 'Freeze',
 		amount: 25,
 		weather: false
@@ -3145,7 +3150,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Frei',
 		affinity: 'Nuke',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 98,
 		ailments: [],
 		cost: {
@@ -3153,8 +3157,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 4
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 130,
 			display: 'Weak',
@@ -3167,7 +3169,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Freidyne',
 		affinity: 'Nuke',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 98,
 		ailments: [],
 		cost: {
@@ -3175,8 +3176,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 12
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 215,
 			display: 'Heavy',
@@ -3189,7 +3188,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Freikugel',
 		affinity: 'Almighty',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 98,
 		ailments: [],
 		cost: {
@@ -3197,8 +3195,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 60
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 230,
 			display: 'Severe',
@@ -3211,7 +3207,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Freila',
 		affinity: 'Nuke',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 98,
 		ailments: [],
 		cost: {
@@ -3219,8 +3214,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 8
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 160,
 			display: 'Medium',
@@ -3233,7 +3226,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Frenzied Chomp',
 		affinity: 'Phys',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 98,
 		ailments: [
 			{
@@ -3254,8 +3246,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 25
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 165,
 			display: 'Medium',
@@ -3284,14 +3274,14 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Full Analysis',
 		affinity: 'Passive',
 		type: 'NAVI',
-		unique: false,
+		unique: null,
 		description: 'Reveal an enemy\'s stats, weak points, and skills.'
 	},
 	{
 		name: 'Gaea Rage',
 		affinity: 'Phys',
 		type: 'ATTACK',
-		unique: true,
+		unique: null,
 		accuracy: 98,
 		ailments: [],
 		cost: {
@@ -3301,8 +3291,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		flags: [
 			'Pierce'
 		],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 270,
 			display: 'Severe',
@@ -3315,7 +3303,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Gale Slash',
 		affinity: 'Phys',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 85,
 		ailments: [],
 		cost: {
@@ -3323,8 +3310,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 12
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 150,
 			display: 'Weak',
@@ -3334,13 +3319,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		series: 'persona'
 	},
 	{
-		name: 'Gambler"s Foresight',
+		name: 'Galgalim Eyes',
+		affinity: 'Almighty',
+		type: 'SET',
+		amount: 1,
+		cost: null
+	},
+	{
+		name: 'Gambler\'s Foresight',
 		affinity: 'Support',
 		type: 'SUPPORT',
-		unique: false,
+		unique: null,
 		range: 'Party',
 		cost: 20,
-		surround: false,
+		flags: [],
 		buffs: [
 			'Accuracy/Evasion'
 		],
@@ -3354,7 +3346,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Garu',
 		affinity: 'Wind',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 98,
 		ailments: [],
 		cost: {
@@ -3362,8 +3353,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 3
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 130,
 			display: 'Weak',
@@ -3376,7 +3365,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Garudyne',
 		affinity: 'Wind',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 98,
 		ailments: [],
 		cost: {
@@ -3384,8 +3372,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 10
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 215,
 			display: 'Heavy',
@@ -3398,7 +3384,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Garula',
 		affinity: 'Wind',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 98,
 		ailments: [],
 		cost: {
@@ -3406,8 +3391,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 6
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 160,
 			display: 'Medium',
@@ -3420,7 +3403,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Gatling Blows',
 		affinity: 'Phys',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 90,
 		ailments: [],
 		cost: {
@@ -3450,8 +3432,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 30
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 150,
 			display: 'Medium',
@@ -3464,7 +3444,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Ghastly Wail',
 		affinity: 'Almighty',
 		type: 'MISC',
-		unique: false,
 		cost: 28,
 		description: 'Insta-kills foes inflicted with Fear.'
 	},
@@ -3472,7 +3451,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Giant Slice',
 		affinity: 'Phys',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 90,
 		ailments: [],
 		cost: {
@@ -3482,8 +3460,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		flags: [
 			'Baton Boost'
 		],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 85,
 			display: 'Medium',
@@ -3496,7 +3472,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Gigantic Fist',
 		affinity: 'Phys',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 90,
 		ailments: [],
 		cost: {
@@ -3504,8 +3479,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 16
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 240,
 			display: 'Heavy',
@@ -3518,7 +3491,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Gigantomachia',
 		affinity: 'Phys',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 85,
 		ailments: [],
 		cost: {
@@ -3526,8 +3498,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 25
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 350,
 			display: 'Colossal',
@@ -3540,7 +3510,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Glacial Blast',
 		affinity: 'Ice',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 98,
 		ailments: [],
 		cost: {
@@ -3572,8 +3541,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		flags: [
 			'Instakill'
 		],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 100,
 			display: 'Weak',
@@ -3586,7 +3553,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'God\'s Hand',
 		affinity: 'Phys',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 90,
 		ailments: [],
 		cost: {
@@ -3594,8 +3560,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 22
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 400,
 			display: 'Colossal',
@@ -3624,7 +3588,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Gram Slice',
 		affinity: 'Phys',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 98,
 		ailments: [],
 		cost: {
@@ -3634,8 +3597,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		flags: [
 			'+30% Crit Rate'
 		],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 140,
 			display: 'Weak',
@@ -3648,7 +3609,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Great Curse Siphon',
 		affinity: 'Passive',
 		type: 'SIPHON',
-		unique: false,
 		amount: 20,
 		criteria: 'Ailment'
 	},
@@ -3656,23 +3616,22 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Great Life Spring',
 		affinity: 'Passive',
 		type: 'SPRING',
-		unique: false,
 		amount: 30,
+		percent: false,
 		stat: 'HP'
 	},
 	{
 		name: 'Great Mana Spring',
 		affinity: 'Passive',
 		type: 'SPRING',
-		unique: false,
 		amount: 30,
+		percent: false,
 		stat: 'MP'
 	},
 	{
 		name: 'Growth 1',
 		affinity: 'Passive',
 		type: 'POSTBATTLE',
-		unique: false,
 		amount: 25,
 		inactive: true,
 		stat: 'EXP'
@@ -3681,7 +3640,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Growth 2',
 		affinity: 'Passive',
 		type: 'POSTBATTLE',
-		unique: false,
 		amount: 50,
 		inactive: true,
 		stat: 'EXP'
@@ -3690,25 +3648,42 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Growth 3',
 		affinity: 'Passive',
 		type: 'POSTBATTLE',
-		unique: false,
 		amount: 100,
 		inactive: true,
 		stat: 'EXP'
 	},
 	{
+		name: 'Guiding Tendril',
+		affinity: 'Almighty',
+		type: 'MISC',
+		cost: 20,
+		description: 'Knockdown attack on all foes (only usable during an Ambush).'
+	},
+	{
+		name: 'Gun Accuracy +5%',
+		affinity: 'Passive',
+		type: 'MISC',
+		cost: null,
+		description: 'Increases Accuracy of Gun attacks by 5%.'
+	},
+	{
 		name: 'Gun Amp',
+		aliases: [
+			'Cripple'
+		],
 		affinity: 'Passive',
 		type: 'BOOST',
-		unique: false,
 		amount: 50,
 		element: 'Gun',
 		stacks: 'x'
 	},
 	{
 		name: 'Gun Boost',
+		aliases: [
+			'Snipe'
+		],
 		affinity: 'Passive',
 		type: 'BOOST',
-		unique: false,
 		amount: 25,
 		element: 'Gun',
 		stacks: 'x'
@@ -3727,8 +3702,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		flags: [
 			'Pierce'
 		],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 300,
 			display: 'Severe',
@@ -3741,7 +3714,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Hades Blast',
 		affinity: 'Phys',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 98,
 		ailments: [],
 		cost: {
@@ -3749,8 +3721,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 60
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 190,
 			display: 'Heavy',
@@ -3761,9 +3731,11 @@ const skillData: Readonly<AnySkillData[]> = [
 	},
 	{
 		name: 'Hama',
+		aliases: [
+			'Kouha'
+		],
 		affinity: 'Light',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 98,
 		ailments: [],
 		cost: {
@@ -3773,8 +3745,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		flags: [
 			'Weakness Instakill'
 		],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 140,
 			display: 'Weak',
@@ -3787,14 +3757,15 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Hama Boost',
 		affinity: 'Passive',
 		type: 'INSTAKILLBOOST',
-		unique: false,
 		element: 'Light'
 	},
 	{
 		name: 'Hamabarion',
+		aliases: [
+			'Kougaon'
+		],
 		affinity: 'Light',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 98,
 		ailments: [],
 		cost: {
@@ -3804,8 +3775,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		flags: [
 			'Weakness Instakill'
 		],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 265,
 			display: 'Severe',
@@ -3816,9 +3785,11 @@ const skillData: Readonly<AnySkillData[]> = [
 	},
 	{
 		name: 'Hamaon',
+		aliases: [
+			'Kouga'
+		],
 		affinity: 'Light',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 98,
 		ailments: [],
 		cost: {
@@ -3828,8 +3799,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		flags: [
 			'Weakness Instakill'
 		],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 175,
 			display: 'Heavy',
@@ -3880,7 +3849,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Headbutt',
 		affinity: 'Phys',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 90,
 		ailments: [
 			{
@@ -3893,8 +3861,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 9
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 150,
 			display: 'Weak',
@@ -3920,8 +3886,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 20
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 200,
 			display: 'Medium',
@@ -3934,7 +3898,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Heal Pleroma',
 		affinity: 'Passive',
 		type: 'BOOST',
-		unique: false,
 		amount: 20,
 		element: 'Recovery',
 		stacks: '+'
@@ -3943,17 +3906,16 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Healing Wave',
 		affinity: 'Passive',
 		type: 'NAVI',
-		unique: false,
+		unique: null,
 		description: 'Recover 5% HP after battle (party).'
 	},
 	{
 		name: 'Heat Riser',
 		affinity: 'Support',
 		type: 'SUPPORT',
-		unique: false,
 		range: 'Ally',
 		cost: 30,
-		surround: false,
+		flags: [],
 		buffs: [
 			'Attack',
 			'Defense',
@@ -3967,7 +3929,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Heat Up',
 		affinity: 'Passive',
 		type: 'REGEN',
-		unique: false,
 		amount: 10,
 		criteria: 'Ambush',
 		percent: false,
@@ -3977,7 +3938,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Heat Wave',
 		affinity: 'Phys',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 98,
 		ailments: [],
 		cost: {
@@ -3985,8 +3945,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 15
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 100,
 			display: 'Weak',
@@ -4012,7 +3970,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Heavy Blow',
 		affinity: 'Phys',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 98,
 		ailments: [],
 		cost: {
@@ -4022,8 +3979,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		flags: [
 			'Crit Damage Boost'
 		],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 160,
 			display: 'Medium',
@@ -4031,6 +3986,26 @@ const skillData: Readonly<AnySkillData[]> = [
 		},
 		range: 'One',
 		series: 'smt'
+	},
+	{
+		name: 'Heaven\'s Blade',
+		affinity: 'Phys',
+		type: 'ATTACK',
+		unique: true,
+		accuracy: 90,
+		ailments: [],
+		cost: {
+			type: 'HP',
+			amount: 19
+		},
+		flags: [],
+		power: {
+			amount: 300,
+			display: 'Heavy',
+			type: 'Physical'
+		},
+		range: 'One',
+		series: 'persona'
 	},
 	{
 		name: 'Hell Burner',
@@ -4044,8 +4019,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 40
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 150,
 			display: 'Heavy',
@@ -4068,8 +4041,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		flags: [
 			'Negate Buffs'
 		],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 120,
 			display: 'Medium',
@@ -4090,8 +4061,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 30
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 150,
 			display: 'Heavy',
@@ -4104,7 +4073,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Hell Thrust',
 		affinity: 'Phys',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 98,
 		ailments: [],
 		cost: {
@@ -4114,8 +4082,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		flags: [
 			'Pierce'
 		],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 235,
 			display: 'Heavy',
@@ -4138,8 +4104,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		flags: [
 			'Negate Buffs'
 		],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 160,
 			display: 'Heavy',
@@ -4152,7 +4116,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Hellish Mask',
 		affinity: 'Passive',
 		type: 'MISC',
-		unique: false,
 		cost: null,
 		description: 'Decreases chance of instakill and being afflicted with ailments.'
 	},
@@ -4190,8 +4153,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 25
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 130,
 			display: 'Medium',
@@ -4201,10 +4162,36 @@ const skillData: Readonly<AnySkillData[]> = [
 		series: 'smt'
 	},
 	{
+		name: 'Herculean Strike',
+		affinity: 'Phys',
+		type: 'ATTACK',
+		unique: true,
+		accuracy: 80,
+		ailments: [],
+		cost: {
+			type: 'HP',
+			amount: 16
+		},
+		flags: [],
+		power: {
+			amount: 110,
+			display: 'Medium',
+			type: 'Physical'
+		},
+		range: 'All',
+		series: 'persona'
+	},
+	{
+		name: 'Hide',
+		affinity: 'Passive',
+		type: 'MISC',
+		cost: null,
+		description: 'Decreases chance of being targeted by foes.'
+	},
+	{
 		name: 'High Almighty Pleroma',
 		affinity: 'Passive',
 		type: 'BOOST',
-		unique: false,
 		amount: 35,
 		element: 'Almighty',
 		stacks: '+'
@@ -4213,14 +4200,12 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'High Counter',
 		affinity: 'Passive',
 		type: 'PERSONACOUNTER',
-		unique: false,
 		chance: 20
 	},
 	{
 		name: 'High Dark Pleroma',
 		affinity: 'Passive',
 		type: 'BOOST',
-		unique: false,
 		amount: 35,
 		element: 'Dark',
 		stacks: '+'
@@ -4229,7 +4214,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'High Elec Pleroma',
 		affinity: 'Passive',
 		type: 'BOOST',
-		unique: false,
 		amount: 35,
 		element: 'Elec',
 		stacks: '+'
@@ -4238,7 +4222,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'High Energy',
 		affinity: 'Support',
 		type: 'CHARGE',
-		unique: false,
 		range: 'Party',
 		cost: 80,
 		charge: 'Concentrate'
@@ -4247,7 +4230,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'High Fire Pleroma',
 		affinity: 'Passive',
 		type: 'BOOST',
-		unique: false,
 		amount: 35,
 		element: 'Fire',
 		stacks: '+'
@@ -4256,7 +4238,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'High Force Pleroma',
 		affinity: 'Passive',
 		type: 'BOOST',
-		unique: false,
 		amount: 35,
 		element: 'Force',
 		stacks: '+'
@@ -4265,7 +4246,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'High Heal Pleroma',
 		affinity: 'Passive',
 		type: 'BOOST',
-		unique: false,
 		amount: 35,
 		element: 'Recovery',
 		stacks: '+'
@@ -4274,7 +4254,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'High Ice Pleroma',
 		affinity: 'Passive',
 		type: 'BOOST',
-		unique: false,
 		amount: 35,
 		element: 'Ice',
 		stacks: '+'
@@ -4283,7 +4262,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'High Light Pleroma',
 		affinity: 'Passive',
 		type: 'BOOST',
-		unique: false,
 		amount: 35,
 		element: 'Light',
 		stacks: '+'
@@ -4292,7 +4270,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'High Phys Pleroma',
 		affinity: 'Passive',
 		type: 'BOOST',
-		unique: false,
 		amount: 35,
 		element: 'Phys',
 		stacks: '+'
@@ -4301,7 +4278,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'High Restore',
 		affinity: 'Passive',
 		type: 'SIPHON',
-		unique: false,
 		amount: 20,
 		criteria: 'Weakness/Critical'
 	},
@@ -4352,10 +4328,26 @@ const skillData: Readonly<AnySkillData[]> = [
 		flags: []
 	},
 	{
+		name: 'Hyakka Ryouran',
+		affinity: 'Support',
+		type: 'SUPPORT',
+		unique: null,
+		range: 'Party',
+		cost: 90,
+		flags: [],
+		buffs: [
+			'Attack',
+			'Defense',
+			'Accuracy/Evasion'
+		],
+		negate: false,
+		debuffs: [],
+		auto: []
+	},
+	{
 		name: 'Hysterical Slap',
 		affinity: 'Phys',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 98,
 		ailments: [],
 		cost: {
@@ -4379,7 +4371,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Ice Age',
 		affinity: 'Ice',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 98,
 		ailments: [],
 		cost: {
@@ -4389,8 +4380,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		flags: [
 			'Pierce'
 		],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 230,
 			display: 'Heavy',
@@ -4403,7 +4392,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Ice Amp',
 		affinity: 'Passive',
 		type: 'BOOST',
-		unique: false,
 		amount: 50,
 		element: 'Ice',
 		stacks: 'x'
@@ -4412,7 +4400,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Ice Block',
 		affinity: 'Support',
 		type: 'BARRIER',
-		unique: false,
 		range: 'Party',
 		cost: 40,
 		barriers: [
@@ -4423,7 +4410,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Ice Boost',
 		affinity: 'Passive',
 		type: 'BOOST',
-		unique: false,
 		amount: 25,
 		element: 'Ice',
 		stacks: 'x'
@@ -4432,7 +4418,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Ice Break',
 		affinity: 'Support',
 		type: 'BREAK',
-		unique: false,
 		cost: 15,
 		element: 'Ice'
 	},
@@ -4440,7 +4425,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Ice Breath',
 		affinity: 'Ice',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 98,
 		ailments: [],
 		cost: {
@@ -4462,7 +4446,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Ice Dracostrike',
 		affinity: 'Ice',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 98,
 		ailments: [],
 		cost: {
@@ -4470,8 +4453,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 25
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 200,
 			display: 'Medium',
@@ -4484,16 +4465,17 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Ice Pleroma',
 		affinity: 'Passive',
 		type: 'BOOST',
-		unique: false,
 		amount: 20,
 		element: 'Ice',
 		stacks: '+'
 	},
 	{
 		name: 'Ice Wall',
+		aliases: [
+			'White Wall'
+		],
 		affinity: 'Support',
 		type: 'WALL',
-		unique: false,
 		cost: 18,
 		element: 'Ice'
 	},
@@ -4501,7 +4483,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Impaler\'s Animus',
 		affinity: 'Support',
 		type: 'CHARGE',
-		unique: false,
 		range: 'Self',
 		cost: 50,
 		charge: 'Pierce'
@@ -4510,7 +4491,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Inspiring Leader',
 		affinity: 'Passive',
 		type: 'MISC',
-		unique: false,
 		cost: null,
 		description: '(Demon) EXP earned increases when the demon\'s Lv is lower than the Nahobino.'
 	},
@@ -4518,7 +4498,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Insta-Heal',
 		affinity: 'Passive',
 		type: 'REGEN',
-		unique: false,
 		amount: 2,
 		criteria: null,
 		percent: false,
@@ -4528,7 +4507,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Invigorate 1',
 		affinity: 'Passive',
 		type: 'REGEN',
-		unique: false,
 		amount: 3,
 		criteria: 'Turn Start',
 		percent: false,
@@ -4538,7 +4516,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Invigorate 2',
 		affinity: 'Passive',
 		type: 'REGEN',
-		unique: false,
 		amount: 5,
 		criteria: 'Turn Start',
 		percent: false,
@@ -4548,7 +4525,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Invigorate 3',
 		affinity: 'Passive',
 		type: 'REGEN',
-		unique: false,
 		amount: 7,
 		criteria: 'Turn Start',
 		percent: false,
@@ -4568,8 +4544,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		flags: [
 			'Defense Down'
 		],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 160,
 			display: 'Medium',
@@ -4582,7 +4556,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Javelin Rain',
 		affinity: 'Phys',
 		type: 'ATTACK',
-		unique: true,
+		unique: null,
 		accuracy: 108,
 		ailments: [
 			{
@@ -4597,8 +4571,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		flags: [
 			'+40% Crit Rate'
 		],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 260,
 			display: 'Severe',
@@ -4608,10 +4580,17 @@ const skillData: Readonly<AnySkillData[]> = [
 		series: 'smt'
 	},
 	{
+		name: 'Judgement',
+		affinity: 'Light',
+		type: 'SET',
+		amount: 1,
+		cost: null
+	},
+	{
 		name: 'Kamui Miracle',
 		affinity: 'Recovery',
 		type: 'MISC',
-		unique: true,
+		unique: null,
 		cost: 25,
 		description: 'Anything could happen...'
 	},
@@ -4619,7 +4598,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Kannabi Veil',
 		affinity: 'Support',
 		type: 'BARRIER',
-		unique: true,
+		unique: null,
 		range: 'Party',
 		cost: 15,
 		barriers: [
@@ -4640,8 +4619,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		flags: [
 			'+30% Crit Rate'
 		],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 150,
 			display: 'Heavy',
@@ -4664,8 +4641,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		flags: [
 			'Pierce'
 		],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 300,
 			display: 'Severe',
@@ -4678,7 +4653,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Kill Rush',
 		affinity: 'Phys',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 90,
 		ailments: [],
 		cost: {
@@ -4700,7 +4674,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Killing Wind',
 		affinity: 'Force',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 98,
 		ailments: [],
 		cost: {
@@ -4710,8 +4683,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		flags: [
 			'Pierce'
 		],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 230,
 			display: 'Heavy',
@@ -4734,8 +4705,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		flags: [
 			'Defense Down'
 		],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 110,
 			display: 'Medium',
@@ -4745,10 +4714,17 @@ const skillData: Readonly<AnySkillData[]> = [
 		series: 'smt'
 	},
 	{
+		name: 'Kuzunoha Emblem',
+		affinity: 'Passive',
+		type: 'MASTER',
+		amount: 25,
+		stat: 'HPMP'
+	},
+	{
 		name: 'Laevateinn',
 		affinity: 'Phys',
 		type: 'ATTACK',
-		unique: true,
+		unique: null,
 		accuracy: 95,
 		ailments: [],
 		cost: {
@@ -4756,8 +4732,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 25
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 450,
 			display: 'Colossal',
@@ -4768,10 +4742,12 @@ const skillData: Readonly<AnySkillData[]> = [
 	},
 	{
 		name: 'Last Stand',
+		aliases: [
+			'Pressing Stance'
+		],
 		affinity: 'Passive',
 		type: 'EVASION',
-		unique: false,
-		amount: 2,
+		amount: 3,
 		criteria: 'Surrounded',
 		element: 'All'
 	},
@@ -4779,16 +4755,30 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Life Aid',
 		affinity: 'Passive',
 		type: 'POSTBATTLE',
-		unique: false,
 		amount: 50,
 		inactive: false,
+		stat: 'HP'
+	},
+	{
+		name: 'Life Boost',
+		affinity: 'Passive',
+		type: 'SPRING',
+		amount: 20,
+		percent: false,
+		stat: 'MP'
+	},
+	{
+		name: 'Life Bonus',
+		affinity: 'Passive',
+		type: 'SPRING',
+		amount: 10,
+		percent: true,
 		stat: 'HP'
 	},
 	{
 		name: 'Life Drain',
 		affinity: 'Almighty',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 98,
 		ailments: [],
 		cost: {
@@ -4798,8 +4788,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		flags: [
 			'Drain HP'
 		],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 120,
 			display: 'Weak',
@@ -4809,18 +4797,56 @@ const skillData: Readonly<AnySkillData[]> = [
 		series: 'smt'
 	},
 	{
+		name: 'Life Gain',
+		affinity: 'Passive',
+		type: 'SPRING',
+		amount: 20,
+		percent: true,
+		stat: 'HP'
+	},
+	{
+		name: 'Life Leech',
+		affinity: 'Almighty',
+		type: 'ATTACK',
+		unique: null,
+		accuracy: 90,
+		ailments: [],
+		cost: {
+			type: 'MP',
+			amount: 0
+		},
+		flags: [
+			'Drain HP',
+			'Static Damage'
+		],
+		power: {
+			amount: 150,
+			display: 'Medium',
+			type: 'Magic'
+		},
+		range: 'One',
+		series: 'persona'
+	},
+	{
 		name: 'Life Spring',
 		affinity: 'Passive',
 		type: 'SPRING',
-		unique: false,
 		amount: 15,
+		percent: false,
+		stat: 'HP'
+	},
+	{
+		name: 'Life Surge',
+		affinity: 'Passive',
+		type: 'SPRING',
+		amount: 30,
+		percent: true,
 		stat: 'HP'
 	},
 	{
 		name: 'Life Wall',
 		affinity: 'Support',
 		type: 'BARRIER',
-		unique: false,
 		range: 'Party',
 		cost: 95,
 		barriers: [
@@ -4830,9 +4856,11 @@ const skillData: Readonly<AnySkillData[]> = [
 	},
 	{
 		name: 'Light Amp',
+		aliases: [
+			'Bless Amp'
+		],
 		affinity: 'Passive',
 		type: 'BOOST',
-		unique: false,
 		amount: 50,
 		element: 'Light',
 		stacks: 'x'
@@ -4841,7 +4869,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Light Block',
 		affinity: 'Support',
 		type: 'BARRIER',
-		unique: false,
 		range: 'Party',
 		cost: 40,
 		barriers: [
@@ -4850,9 +4877,11 @@ const skillData: Readonly<AnySkillData[]> = [
 	},
 	{
 		name: 'Light Boost',
+		aliases: [
+			'Bless Boost'
+		],
 		affinity: 'Passive',
 		type: 'BOOST',
-		unique: false,
 		amount: 25,
 		element: 'Light',
 		stacks: 'x'
@@ -4861,7 +4890,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Light Life Aid',
 		affinity: 'Passive',
 		type: 'POSTBATTLE',
-		unique: false,
 		amount: 25,
 		inactive: false,
 		stat: 'HP'
@@ -4870,7 +4898,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Light Mana Aid',
 		affinity: 'Passive',
 		type: 'POSTBATTLE',
-		unique: false,
 		amount: 25,
 		inactive: false,
 		stat: 'MP'
@@ -4879,7 +4906,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Light of Order',
 		affinity: 'Recovery',
 		type: 'RECOVERY',
-		unique: true,
+		unique: null,
 		range: 'Party',
 		cost: 150,
 		ailments: null,
@@ -4897,7 +4924,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Light Pleroma',
 		affinity: 'Passive',
 		type: 'BOOST',
-		unique: false,
 		amount: 20,
 		element: 'Light',
 		stacks: '+'
@@ -4916,8 +4942,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		flags: [
 			'Weakness Instakill'
 		],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 220,
 			display: 'Severe',
@@ -4930,7 +4954,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Lucky Punch',
 		affinity: 'Phys',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 75,
 		ailments: [],
 		cost: {
@@ -4938,8 +4961,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 3
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 25,
 			display: 'Minuscule',
@@ -4952,7 +4973,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Lullaby',
 		affinity: 'Ailment',
 		type: 'AILMENT',
-		unique: false,
 		range: 'All',
 		cost: 25,
 		ailments: [
@@ -4963,9 +4983,11 @@ const skillData: Readonly<AnySkillData[]> = [
 	},
 	{
 		name: 'Lunge',
+		aliases: [
+			'Bash'
+		],
 		affinity: 'Phys',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 98,
 		ailments: [],
 		cost: {
@@ -4973,8 +4995,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 5
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 145,
 			display: 'Weak',
@@ -4987,10 +5007,9 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Luster Candy',
 		affinity: 'Support',
 		type: 'SUPPORT',
-		unique: false,
 		range: 'Party',
 		cost: 150,
-		surround: false,
+		flags: [],
 		buffs: [
 			'Attack',
 			'Defense',
@@ -5004,7 +5023,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Mabaisudi',
 		affinity: 'Recovery',
 		type: 'RECOVERY',
-		unique: false,
 		range: 'Party',
 		cost: 8,
 		ailments: [
@@ -5020,7 +5038,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Mabufu',
 		affinity: 'Ice',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 98,
 		ailments: [],
 		cost: {
@@ -5028,8 +5045,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 15
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 95,
 			display: 'Weak',
@@ -5040,9 +5055,11 @@ const skillData: Readonly<AnySkillData[]> = [
 	},
 	{
 		name: 'Mabufubarion',
+		aliases: [
+			'Ice Age'
+		],
 		affinity: 'Ice',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 98,
 		ailments: [],
 		cost: {
@@ -5050,8 +5067,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 75
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 185,
 			display: 'Severe',
@@ -5064,7 +5079,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Mabufudyne',
 		affinity: 'Ice',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 98,
 		ailments: [],
 		cost: {
@@ -5072,8 +5086,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 50
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 155,
 			display: 'Heavy',
@@ -5086,7 +5098,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Mabufula',
 		affinity: 'Ice',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 98,
 		ailments: [],
 		cost: {
@@ -5094,8 +5105,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 30
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 120,
 			display: 'Medium',
@@ -5118,8 +5127,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		flags: [
 			'Crit Damage Boost'
 		],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 270,
 			display: 'Severe',
@@ -5159,7 +5166,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Madness Nails',
 		affinity: 'Phys',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 98,
 		ailments: [],
 		cost: {
@@ -5181,7 +5187,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Madness Needle',
 		affinity: 'Phys',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 98,
 		ailments: [
 			{
@@ -5194,8 +5199,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 10
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 110,
 			display: 'Weak',
@@ -5208,7 +5211,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Mafrei',
 		affinity: 'Nuke',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 98,
 		ailments: [],
 		cost: {
@@ -5216,8 +5218,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 10
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 95,
 			display: 'Weak',
@@ -5230,7 +5230,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Mafreidyne',
 		affinity: 'Nuke',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 98,
 		ailments: [],
 		cost: {
@@ -5238,8 +5237,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 22
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 155,
 			display: 'Heavy',
@@ -5252,7 +5249,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Mafreila',
 		affinity: 'Nuke',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 98,
 		ailments: [],
 		cost: {
@@ -5260,8 +5256,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 16
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 120,
 			display: 'Medium',
@@ -5274,7 +5268,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Magaru',
 		affinity: 'Wind',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 98,
 		ailments: [],
 		cost: {
@@ -5282,8 +5275,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 8
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 95,
 			display: 'Weak',
@@ -5296,7 +5287,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Magarudyne',
 		affinity: 'Wind',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 98,
 		ailments: [],
 		cost: {
@@ -5304,8 +5294,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 20
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 155,
 			display: 'Heavy',
@@ -5318,7 +5306,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Magarula',
 		affinity: 'Wind',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 98,
 		ailments: [],
 		cost: {
@@ -5326,8 +5313,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 14
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 120,
 			display: 'Medium',
@@ -5361,8 +5346,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 30
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 155,
 			display: 'Heavy',
@@ -5372,10 +5355,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		series: 'persona'
 	},
 	{
+		name: 'Magic Ability',
+		affinity: 'Passive',
+		type: 'BOOST',
+		amount: 25,
+		element: 'Magic',
+		stacks: 'x'
+	},
+	{
 		name: 'Mahama',
+		aliases: [
+			'Makouha'
+		],
 		affinity: 'Light',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 98,
 		ailments: [],
 		cost: {
@@ -5385,8 +5378,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		flags: [
 			'Weakness Instakill'
 		],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 105,
 			display: 'Weak',
@@ -5397,9 +5388,12 @@ const skillData: Readonly<AnySkillData[]> = [
 	},
 	{
 		name: 'Mahamabarion',
+		aliases: [
+			'Makougaon',
+			'Samsara'
+		],
 		affinity: 'Light',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 98,
 		ailments: [],
 		cost: {
@@ -5409,8 +5403,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		flags: [
 			'Weakness Instakill'
 		],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 185,
 			display: 'Severe',
@@ -5421,9 +5413,11 @@ const skillData: Readonly<AnySkillData[]> = [
 	},
 	{
 		name: 'Mahamaon',
+		aliases: [
+			'Makouga'
+		],
 		affinity: 'Light',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 98,
 		ailments: [],
 		cost: {
@@ -5433,8 +5427,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		flags: [
 			'Weakness Instakill'
 		],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 135,
 			display: 'Heavy',
@@ -5445,9 +5437,11 @@ const skillData: Readonly<AnySkillData[]> = [
 	},
 	{
 		name: 'Makajama',
+		aliases: [
+			'Makajam'
+		],
 		affinity: 'Ailment',
 		type: 'AILMENT',
-		unique: false,
 		range: 'One',
 		cost: 10,
 		ailments: [
@@ -5458,9 +5452,11 @@ const skillData: Readonly<AnySkillData[]> = [
 	},
 	{
 		name: 'Makajamaon',
+		aliases: [
+			'Foolish Whisper'
+		],
 		affinity: 'Ailment',
 		type: 'AILMENT',
-		unique: false,
 		range: 'All',
 		cost: 25,
 		ailments: [
@@ -5473,7 +5469,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Makara Break',
 		affinity: 'Support',
 		type: 'BARRIERBREAK',
-		unique: false,
 		cost: 18,
 		barrier: 'Makarakarn'
 	},
@@ -5481,7 +5476,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Makarakarn',
 		affinity: 'Support',
 		type: 'BARRIER',
-		unique: false,
 		range: 'Ally',
 		cost: 50,
 		barriers: [
@@ -5490,9 +5484,11 @@ const skillData: Readonly<AnySkillData[]> = [
 	},
 	{
 		name: 'Mamudo',
+		aliases: [
+			'Maeiha'
+		],
 		affinity: 'Dark',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 98,
 		ailments: [],
 		cost: {
@@ -5502,8 +5498,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		flags: [
 			'Weakness Instakill'
 		],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 105,
 			display: 'Weak',
@@ -5514,9 +5508,12 @@ const skillData: Readonly<AnySkillData[]> = [
 	},
 	{
 		name: 'Mamudobarion',
+		aliases: [
+			'Die For Me!',
+			'Maeigaon'
+		],
 		affinity: 'Dark',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 98,
 		ailments: [],
 		cost: {
@@ -5526,8 +5523,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		flags: [
 			'Weakness Instakill'
 		],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 185,
 			display: 'Severe',
@@ -5538,9 +5533,11 @@ const skillData: Readonly<AnySkillData[]> = [
 	},
 	{
 		name: 'Mamudoon',
+		aliases: [
+			'Maeiga'
+		],
 		affinity: 'Dark',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 98,
 		ailments: [],
 		cost: {
@@ -5550,8 +5547,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		flags: [
 			'Weakness Instakill'
 		],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 135,
 			display: 'Heavy',
@@ -5564,24 +5559,30 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Mana Aid',
 		affinity: 'Passive',
 		type: 'POSTBATTLE',
-		unique: false,
 		amount: 50,
 		inactive: false,
+		stat: 'MP'
+	},
+	{
+		name: 'Mana Bonus',
+		affinity: 'Passive',
+		type: 'SPRING',
+		amount: 10,
+		percent: true,
 		stat: 'MP'
 	},
 	{
 		name: 'Mana Spring',
 		affinity: 'Passive',
 		type: 'SPRING',
-		unique: false,
 		amount: 15,
+		percent: false,
 		stat: 'MP'
 	},
 	{
 		name: 'Mapsi',
 		affinity: 'Psy',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 98,
 		ailments: [],
 		cost: {
@@ -5589,8 +5590,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 10
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 95,
 			display: 'Weak',
@@ -5603,7 +5602,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Mapsio',
 		affinity: 'Psy',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 98,
 		ailments: [],
 		cost: {
@@ -5611,8 +5609,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 16
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 120,
 			display: 'Medium',
@@ -5625,7 +5621,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Mapsiodyne',
 		affinity: 'Psy',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 98,
 		ailments: [],
 		cost: {
@@ -5633,8 +5628,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 22
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 155,
 			display: 'Heavy',
@@ -5647,7 +5640,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Maragi',
 		affinity: 'Fire',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 98,
 		ailments: [],
 		cost: {
@@ -5655,8 +5647,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 15
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 95,
 			display: 'Weak',
@@ -5667,9 +5657,11 @@ const skillData: Readonly<AnySkillData[]> = [
 	},
 	{
 		name: 'Maragibarion',
+		aliases: [
+			'Blazing Hell'
+		],
 		affinity: 'Fire',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 98,
 		ailments: [],
 		cost: {
@@ -5677,8 +5669,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 75
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 185,
 			display: 'Severe',
@@ -5691,7 +5681,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Maragidyne',
 		affinity: 'Fire',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 98,
 		ailments: [],
 		cost: {
@@ -5699,8 +5688,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 50
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 155,
 			display: 'Heavy',
@@ -5713,7 +5700,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Maragion',
 		affinity: 'Fire',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 98,
 		ailments: [],
 		cost: {
@@ -5721,8 +5707,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 30
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 120,
 			display: 'Medium',
@@ -5735,10 +5719,9 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Marakukaja',
 		affinity: 'Support',
 		type: 'SUPPORT',
-		unique: false,
 		range: 'Party',
 		cost: 30,
-		surround: false,
+		flags: [],
 		buffs: [
 			'Defense'
 		],
@@ -5750,10 +5733,9 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Marakunda',
 		affinity: 'Support',
 		type: 'SUPPORT',
-		unique: false,
 		range: 'All',
 		cost: 30,
-		surround: false,
+		flags: [],
 		buffs: [],
 		negate: false,
 		debuffs: [
@@ -5778,8 +5760,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 32
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 185,
 			display: 'Severe',
@@ -5792,7 +5772,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Marin Karin',
 		affinity: 'Ailment',
 		type: 'AILMENT',
-		unique: false,
 		range: 'One',
 		cost: 10,
 		ailments: [
@@ -5805,7 +5784,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Masquerade',
 		affinity: 'Phys',
 		type: 'ATTACK',
-		unique: true,
+		unique: null,
 		accuracy: 90,
 		ailments: [],
 		cost: {
@@ -5827,10 +5806,9 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Masukukaja',
 		affinity: 'Support',
 		type: 'SUPPORT',
-		unique: false,
 		range: 'Party',
 		cost: 30,
-		surround: false,
+		flags: [],
 		buffs: [
 			'Accuracy/Evasion'
 		],
@@ -5842,10 +5820,9 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Masukunda',
 		affinity: 'Support',
 		type: 'SUPPORT',
-		unique: false,
 		range: 'All',
 		cost: 30,
-		surround: false,
+		flags: [],
 		buffs: [],
 		negate: false,
 		debuffs: [
@@ -5857,10 +5834,9 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Matarukaja',
 		affinity: 'Support',
 		type: 'SUPPORT',
-		unique: false,
 		range: 'Party',
 		cost: 30,
-		surround: false,
+		flags: [],
 		buffs: [
 			'Attack'
 		],
@@ -5872,10 +5848,9 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Matarunda',
 		affinity: 'Support',
 		type: 'SUPPORT',
-		unique: false,
 		range: 'All',
 		cost: 30,
-		surround: false,
+		flags: [],
 		buffs: [],
 		negate: false,
 		debuffs: [
@@ -5901,7 +5876,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Mazan',
 		affinity: 'Force',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 98,
 		ailments: [],
 		cost: {
@@ -5909,8 +5883,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 15
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 95,
 			display: 'Weak',
@@ -5923,7 +5895,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Mazanbarion',
 		affinity: 'Force',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 98,
 		ailments: [],
 		cost: {
@@ -5931,8 +5902,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 75
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 185,
 			display: 'Severe',
@@ -5945,7 +5914,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Mazandyne',
 		affinity: 'Force',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 98,
 		ailments: [],
 		cost: {
@@ -5953,8 +5921,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 50
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 155,
 			display: 'Heavy',
@@ -5967,7 +5933,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Mazanma',
 		affinity: 'Force',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 98,
 		ailments: [],
 		cost: {
@@ -5975,8 +5940,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 30
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 120,
 			display: 'Medium',
@@ -5989,7 +5952,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Mazio',
 		affinity: 'Elec',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 98,
 		ailments: [],
 		cost: {
@@ -5997,8 +5959,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 15
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 95,
 			display: 'Weak',
@@ -6009,9 +5969,11 @@ const skillData: Readonly<AnySkillData[]> = [
 	},
 	{
 		name: 'Maziobarion',
+		aliases: [
+			'Wild Thunder'
+		],
 		affinity: 'Elec',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 98,
 		ailments: [],
 		cost: {
@@ -6019,8 +5981,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 75
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 185,
 			display: 'Severe',
@@ -6033,7 +5993,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Maziodyne',
 		affinity: 'Elec',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 98,
 		ailments: [],
 		cost: {
@@ -6041,8 +6000,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 50
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 155,
 			display: 'Heavy',
@@ -6055,7 +6012,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Mazionga',
 		affinity: 'Elec',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 98,
 		ailments: [],
 		cost: {
@@ -6063,8 +6019,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 30
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 120,
 			display: 'Medium',
@@ -6075,9 +6029,12 @@ const skillData: Readonly<AnySkillData[]> = [
 	},
 	{
 		name: 'Me Patra',
+		aliases: [
+			'Amrita',
+			'Amrita Shower'
+		],
 		affinity: 'Recovery',
 		type: 'RECOVERY',
-		unique: false,
 		range: 'Party',
 		cost: 30,
 		ailments: 'All',
@@ -6089,7 +6046,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Media',
 		affinity: 'Recovery',
 		type: 'RECOVERY',
-		unique: false,
 		range: 'Party',
 		cost: 30,
 		ailments: null,
@@ -6101,7 +6057,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Mediarahan',
 		affinity: 'Recovery',
 		type: 'RECOVERY',
-		unique: false,
 		range: 'Party',
 		cost: 150,
 		ailments: null,
@@ -6113,7 +6068,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Mediarama',
 		affinity: 'Recovery',
 		type: 'RECOVERY',
-		unique: false,
 		range: 'Party',
 		cost: 60,
 		ailments: null,
@@ -6135,8 +6089,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		flags: [
 			'Drain HP/MP'
 		],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 120,
 			display: 'Weak',
@@ -6149,7 +6101,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Megaton Press',
 		affinity: 'Phys',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 50,
 		ailments: [],
 		cost: {
@@ -6157,8 +6108,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 50
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 260,
 			display: 'Heavy',
@@ -6171,7 +6120,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Megaton Raid',
 		affinity: 'Phys',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 90,
 		ailments: [],
 		cost: {
@@ -6179,8 +6127,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 16
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 310,
 			display: 'Severe',
@@ -6193,7 +6139,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Megido',
 		affinity: 'Almighty',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 98,
 		ailments: [],
 		cost: {
@@ -6201,8 +6146,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 40
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 125,
 			display: 'Medium',
@@ -6225,8 +6168,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		flags: [
 			'Pierce'
 		],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 250,
 			display: 'Severe',
@@ -6239,7 +6180,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Megidola',
 		affinity: 'Almighty',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 98,
 		ailments: [],
 		cost: {
@@ -6247,8 +6187,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 70
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 160,
 			display: 'Heavy',
@@ -6261,7 +6199,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Megidolaon',
 		affinity: 'Almighty',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 98,
 		ailments: [],
 		cost: {
@@ -6269,8 +6206,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 120
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 190,
 			display: 'Severe',
@@ -6280,10 +6215,16 @@ const skillData: Readonly<AnySkillData[]> = [
 		series: 'smt'
 	},
 	{
+		name: 'Mementos Scan',
+		affinity: 'Passive',
+		type: 'NAVI',
+		unique: null,
+		description: 'Chance to fully map a floor of Mementos when entering that floor.'
+	},
+	{
 		name: 'Memory Blow',
 		affinity: 'Phys',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 80,
 		ailments: [
 			{
@@ -6296,8 +6237,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 15
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 130,
 			display: 'Weak',
@@ -6310,7 +6249,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Mighty Cleave',
 		affinity: 'Phys',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 50,
 		ailments: [],
 		cost: {
@@ -6320,8 +6258,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		flags: [
 			'+200% Crit Rate'
 		],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 240,
 			display: 'Heavy',
@@ -6331,10 +6267,28 @@ const skillData: Readonly<AnySkillData[]> = [
 		series: 'smt'
 	},
 	{
+		name: 'Mighty Swing',
+		affinity: 'Phys',
+		type: 'ATTACK',
+		accuracy: 90,
+		ailments: [],
+		cost: {
+			type: 'HP',
+			amount: 14
+		},
+		flags: [],
+		power: {
+			amount: 210,
+			display: 'Medium',
+			type: 'Physical'
+		},
+		range: 'One',
+		series: 'persona'
+	},
+	{
 		name: 'Mind Slice',
 		affinity: 'Phys',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 80,
 		ailments: [
 			{
@@ -6347,8 +6301,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 19
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 150,
 			display: 'Medium',
@@ -6361,7 +6313,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Miracle Punch',
 		affinity: 'Phys',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 75,
 		ailments: [],
 		cost: {
@@ -6369,8 +6320,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 8
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 100,
 			display: 'Medium',
@@ -6383,7 +6332,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Miracle Rush',
 		affinity: 'Phys',
 		type: 'ATTACK',
-		unique: true,
+		unique: null,
 		accuracy: 75,
 		ailments: [],
 		cost: {
@@ -6391,8 +6340,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 16
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 100,
 			display: 'Medium',
@@ -6405,7 +6352,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Miracle Water',
 		affinity: 'Recovery',
 		type: 'RECOVERY',
-		unique: true,
+		unique: null,
 		range: 'Party',
 		cost: 20,
 		ailments: null,
@@ -6417,7 +6364,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Mirage Boost',
 		affinity: 'Passive',
 		type: 'AILBOOST',
-		unique: false,
 		ailment: 'Mirage',
 		amount: 25,
 		weather: false
@@ -6439,8 +6385,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 15
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 160,
 			display: 'Medium',
@@ -6453,7 +6397,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Mist Rush',
 		affinity: 'Phys',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 98,
 		ailments: [
 			{
@@ -6480,13 +6423,22 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Money Boost',
 		affinity: 'Passive',
 		type: 'POSTBATTLE',
-		unique: false,
 		amount: 15,
 		inactive: false,
 		stat: 'Money'
 	},
 	{
+		name: 'Moral Support',
+		affinity: 'Passive',
+		type: 'NAVI',
+		unique: null,
+		description: 'Chance to cast Kaja or party-healing magic during battle.'
+	},
+	{
 		name: 'Morning Star - Persona',
+		aliases: [
+			'Morning Star'
+		],
 		affinity: 'Almighty',
 		type: 'ATTACK',
 		unique: true,
@@ -6497,8 +6449,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 52
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 210,
 			display: 'Severe',
@@ -6511,7 +6461,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Mortal Jihad',
 		affinity: 'Phys',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 98,
 		ailments: [],
 		cost: {
@@ -6519,8 +6468,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 30
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 250,
 			display: 'Heavy',
@@ -6531,9 +6478,11 @@ const skillData: Readonly<AnySkillData[]> = [
 	},
 	{
 		name: 'Mudo',
+		aliases: [
+			'Eiha'
+		],
 		affinity: 'Dark',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 98,
 		ailments: [],
 		cost: {
@@ -6543,8 +6492,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		flags: [
 			'Weakness Instakill'
 		],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 140,
 			display: 'Weak',
@@ -6557,14 +6504,15 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Mudo Boost',
 		affinity: 'Passive',
 		type: 'INSTAKILLBOOST',
-		unique: false,
 		element: 'Dark'
 	},
 	{
 		name: 'Mudobarion',
+		aliases: [
+			'Eigaon'
+		],
 		affinity: 'Dark',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 98,
 		ailments: [],
 		cost: {
@@ -6574,8 +6522,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		flags: [
 			'Weakness Instakill'
 		],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 265,
 			display: 'Severe',
@@ -6586,9 +6532,11 @@ const skillData: Readonly<AnySkillData[]> = [
 	},
 	{
 		name: 'Mudoon',
+		aliases: [
+			'Eiga'
+		],
 		affinity: 'Dark',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 98,
 		ailments: [],
 		cost: {
@@ -6598,8 +6546,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		flags: [
 			'Weakness Instakill'
 		],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 175,
 			display: 'Heavy',
@@ -6612,7 +6558,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Murakumo',
 		affinity: 'Almighty',
 		type: 'ATTACK',
-		unique: true,
+		unique: null,
 		accuracy: 98,
 		ailments: [],
 		cost: {
@@ -6622,8 +6568,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		flags: [
 			'Crit Damage Boost'
 		],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 275,
 			display: 'Severe',
@@ -6636,7 +6580,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Murderous Glee',
 		affinity: 'Passive',
 		type: 'MISC',
-		unique: false,
 		cost: null,
 		description: 'Greatly increases Critical Rate.'
 	},
@@ -6644,7 +6587,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Mustard Bomb',
 		affinity: 'Phys',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 80,
 		ailments: [
 			{
@@ -6657,8 +6599,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 16
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 125,
 			display: 'Medium',
@@ -6668,10 +6608,22 @@ const skillData: Readonly<AnySkillData[]> = [
 		series: 'persona'
 	},
 	{
+		name: 'Mutudi',
+		affinity: 'Recovery',
+		type: 'RECOVERY',
+		range: 'Ally',
+		cost: 3,
+		ailments: [
+			'Seal'
+		],
+		amount: null,
+		buffs: [],
+		flags: []
+	},
+	{
 		name: 'Muzzle Shot',
 		affinity: 'Phys',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 90,
 		ailments: [
 			{
@@ -6684,8 +6636,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 9
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 145,
 			display: 'Weak',
@@ -6698,7 +6648,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Myriad Arrows',
 		affinity: 'Phys',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 85,
 		ailments: [],
 		cost: {
@@ -6720,7 +6669,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Myriad Slashes',
 		affinity: 'Phys',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 50,
 		ailments: [],
 		cost: {
@@ -6764,7 +6712,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Narukami',
 		affinity: 'Elec',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 98,
 		ailments: [],
 		cost: {
@@ -6774,8 +6721,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		flags: [
 			'Pierce'
 		],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 230,
 			display: 'Heavy',
@@ -6788,11 +6733,10 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Navas Nebula',
 		affinity: 'Phys',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 80,
 		ailments: [
 			{
-				name: 'Exhaustion',
+				name: 'Exhaust',
 				chance: 5
 			}
 		],
@@ -6801,8 +6745,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 18
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 125,
 			display: 'Medium',
@@ -6815,7 +6757,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Needle Spray',
 		affinity: 'Phys',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 98,
 		ailments: [],
 		cost: {
@@ -6839,7 +6780,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Negative Pile',
 		affinity: 'Phys',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 90,
 		ailments: [
 			{
@@ -6852,8 +6792,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 12
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 200,
 			display: 'Heavy',
@@ -6879,10 +6817,23 @@ const skillData: Readonly<AnySkillData[]> = [
 		flags: []
 	},
 	{
+		name: 'Nervundi',
+		affinity: 'Recovery',
+		type: 'RECOVERY',
+		range: 'Ally',
+		cost: 3,
+		ailments: [
+			'Exhaust',
+			'Enervate'
+		],
+		amount: null,
+		buffs: [],
+		flags: []
+	},
+	{
 		name: 'Nihil Claw',
 		affinity: 'Phys',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 98,
 		ailments: [],
 		cost: {
@@ -6904,7 +6855,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Nocturnal Flash',
 		affinity: 'Ailment',
 		type: 'AILMENT',
-		unique: false,
 		range: 'All',
 		cost: 12,
 		ailments: [
@@ -6917,7 +6867,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Nuke Amp',
 		affinity: 'Passive',
 		type: 'BOOST',
-		unique: false,
 		amount: 50,
 		element: 'Nuke',
 		stacks: 'x'
@@ -6926,7 +6875,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Nuke Boost',
 		affinity: 'Passive',
 		type: 'BOOST',
-		unique: false,
 		amount: 25,
 		element: 'Nuke',
 		stacks: 'x'
@@ -6935,7 +6883,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Nuke Break',
 		affinity: 'Support',
 		type: 'BREAK',
-		unique: false,
 		cost: 15,
 		element: 'Nuke'
 	},
@@ -6943,39 +6890,57 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Nuke Wall',
 		affinity: 'Support',
 		type: 'WALL',
-		unique: false,
 		cost: 18,
 		element: 'Nuke'
 	},
 	{
-		name: 'Null Charm',
+		name: 'Null Burn',
 		affinity: 'Passive',
 		type: 'AILDEFENSIVE',
-		unique: false,
+		ailment: 'Burn',
+		resistance: 'Null'
+	},
+	{
+		name: 'Null Charm',
+		aliases: [
+			'Null Brainwash'
+		],
+		affinity: 'Passive',
+		type: 'AILDEFENSIVE',
 		ailment: 'Charm',
 		resistance: 'Null'
 	},
 	{
 		name: 'Null Confuse',
+		aliases: [
+			'Null Dizzy'
+		],
 		affinity: 'Passive',
 		type: 'AILDEFENSIVE',
-		unique: false,
 		ailment: 'Confuse',
 		resistance: 'Null'
 	},
 	{
 		name: 'Null Dark',
+		aliases: [
+			'Null Curse'
+		],
 		affinity: 'Passive',
 		type: 'DEFENSIVE',
-		unique: false,
 		element: 'Dark',
 		newAffinity: 'Null'
+	},
+	{
+		name: 'Null Despair',
+		affinity: 'Passive',
+		type: 'AILDEFENSIVE',
+		ailment: 'Despair',
+		resistance: 'Null'
 	},
 	{
 		name: 'Null Elec',
 		affinity: 'Passive',
 		type: 'DEFENSIVE',
-		unique: false,
 		element: 'Elec',
 		newAffinity: 'Null'
 	},
@@ -6983,15 +6948,27 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Null Enervate',
 		affinity: 'Passive',
 		type: 'AILDEFENSIVE',
-		unique: false,
 		ailment: 'Enervate',
+		resistance: 'Null'
+	},
+	{
+		name: 'Null Exhaust',
+		affinity: 'Passive',
+		type: 'AILDEFENSIVE',
+		ailment: 'Exhaust',
+		resistance: 'Null'
+	},
+	{
+		name: 'Null Fear',
+		affinity: 'Passive',
+		type: 'AILDEFENSIVE',
+		ailment: 'Fear',
 		resistance: 'Null'
 	},
 	{
 		name: 'Null Fire',
 		affinity: 'Passive',
 		type: 'DEFENSIVE',
-		unique: false,
 		element: 'Fire',
 		newAffinity: 'Null'
 	},
@@ -6999,31 +6976,51 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Null Force',
 		affinity: 'Passive',
 		type: 'DEFENSIVE',
-		unique: false,
 		element: 'Force',
 		newAffinity: 'Null'
+	},
+	{
+		name: 'Null Freeze',
+		affinity: 'Passive',
+		type: 'AILDEFENSIVE',
+		ailment: 'Freeze',
+		resistance: 'Null'
+	},
+	{
+		name: 'Null Hunger',
+		affinity: 'Passive',
+		type: 'AILDEFENSIVE',
+		ailment: 'Hunger',
+		resistance: 'Null'
 	},
 	{
 		name: 'Null Ice',
 		affinity: 'Passive',
 		type: 'DEFENSIVE',
-		unique: false,
 		element: 'Ice',
 		newAffinity: 'Null'
 	},
 	{
 		name: 'Null Light',
+		aliases: [
+			'Null Bless'
+		],
 		affinity: 'Passive',
 		type: 'DEFENSIVE',
-		unique: false,
 		element: 'Light',
+		newAffinity: 'Null'
+	},
+	{
+		name: 'Null Light/Dark',
+		affinity: 'Passive',
+		type: 'DEFENSIVE',
+		element: 'Light/Dark',
 		newAffinity: 'Null'
 	},
 	{
 		name: 'Null Mirage',
 		affinity: 'Passive',
 		type: 'AILDEFENSIVE',
-		unique: false,
 		ailment: 'Mirage',
 		resistance: 'Null'
 	},
@@ -7031,15 +7028,16 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Null Nuke',
 		affinity: 'Passive',
 		type: 'DEFENSIVE',
-		unique: false,
 		element: 'Nuke',
 		newAffinity: 'Null'
 	},
 	{
 		name: 'Null Phys',
+		aliases: [
+			'Null Physical'
+		],
 		affinity: 'Passive',
 		type: 'DEFENSIVE',
-		unique: false,
 		element: 'Phys',
 		newAffinity: 'Null'
 	},
@@ -7047,7 +7045,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Null Poison',
 		affinity: 'Passive',
 		type: 'AILDEFENSIVE',
-		unique: false,
 		ailment: 'Poison',
 		resistance: 'Null'
 	},
@@ -7055,7 +7052,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Null Psy',
 		affinity: 'Passive',
 		type: 'DEFENSIVE',
-		unique: false,
 		element: 'Psy',
 		newAffinity: 'Null'
 	},
@@ -7063,23 +7059,31 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Null Rage',
 		affinity: 'Passive',
 		type: 'AILDEFENSIVE',
-		unique: false,
 		ailment: 'Rage',
 		resistance: 'Null'
 	},
 	{
 		name: 'Null Seal',
+		aliases: [
+			'Null Forget',
+			'Null Mute'
+		],
 		affinity: 'Passive',
 		type: 'AILDEFENSIVE',
-		unique: false,
 		ailment: 'Seal',
+		resistance: 'Null'
+	},
+	{
+		name: 'Null Shock',
+		affinity: 'Passive',
+		type: 'AILDEFENSIVE',
+		ailment: 'Shock',
 		resistance: 'Null'
 	},
 	{
 		name: 'Null Sleep',
 		affinity: 'Passive',
 		type: 'AILDEFENSIVE',
-		unique: false,
 		ailment: 'Sleep',
 		resistance: 'Null'
 	},
@@ -7087,7 +7091,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Null Wind',
 		affinity: 'Passive',
 		type: 'DEFENSIVE',
-		unique: false,
 		element: 'Wind',
 		newAffinity: 'Null'
 	},
@@ -7095,7 +7098,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Old One',
 		affinity: 'Ailment',
 		type: 'AILMENT',
-		unique: false,
 		range: 'All',
 		cost: 12,
 		ailments: [
@@ -7108,7 +7110,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Ominous Words',
 		affinity: 'Ailment',
 		type: 'AILMENT',
-		unique: false,
 		range: 'One',
 		cost: 5,
 		ailments: [
@@ -7121,7 +7122,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'One-shot Kill',
 		affinity: 'Gun',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 90,
 		ailments: [],
 		cost: {
@@ -7129,8 +7129,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 17
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 280,
 			display: 'Severe',
@@ -7143,7 +7141,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Oni-Kagura',
 		affinity: 'Phys',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 80,
 		ailments: [
 			{
@@ -7156,8 +7153,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 16
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 100,
 			display: 'Medium',
@@ -7170,7 +7165,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Oracle',
 		affinity: 'Passive',
 		type: 'NAVI',
-		unique: false,
+		unique: null,
 		description: 'Ask Fuuka to use Oracle.'
 	},
 	{
@@ -7201,8 +7196,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		flags: [
 			'Defense Down'
 		],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 170,
 			display: 'Medium',
@@ -7215,7 +7208,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Panta Rhei',
 		affinity: 'Wind',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 98,
 		ailments: [],
 		cost: {
@@ -7223,8 +7215,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 50
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 265,
 			display: 'Severe',
@@ -7248,8 +7238,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			'Attack Down',
 			'Defense Down'
 		],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 180,
 			display: 'Medium',
@@ -7260,9 +7248,11 @@ const skillData: Readonly<AnySkillData[]> = [
 	},
 	{
 		name: 'Patra',
+		aliases: [
+			'Amrita Drop'
+		],
 		affinity: 'Recovery',
 		type: 'RECOVERY',
-		unique: false,
 		range: 'Ally',
 		cost: 8,
 		ailments: 'All',
@@ -7284,8 +7274,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		flags: [
 			'Afflicted Boost'
 		],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 170,
 			display: 'Heavy',
@@ -7295,7 +7283,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		series: 'smt'
 	},
 	{
-		name: 'Phantom Snow',
+		name: 'Phantom Show',
 		affinity: 'Ailment',
 		type: 'AILMENT',
 		unique: true,
@@ -7311,7 +7299,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Phys Block',
 		affinity: 'Support',
 		type: 'BARRIER',
-		unique: false,
 		range: 'Party',
 		cost: 70,
 		barriers: [
@@ -7322,7 +7309,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Phys Pleroma',
 		affinity: 'Passive',
 		type: 'BOOST',
-		unique: false,
 		amount: 20,
 		element: 'Phys',
 		stacks: '+'
@@ -7331,7 +7317,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Pierce Armor',
 		affinity: 'Phys',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 98,
 		ailments: [],
 		cost: {
@@ -7341,8 +7326,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		flags: [
 			'Defense Down'
 		],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 130,
 			display: 'Weak',
@@ -7355,7 +7338,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Poisma',
 		affinity: 'Ailment',
 		type: 'AILMENT',
-		unique: false,
 		range: 'One',
 		cost: 10,
 		ailments: [
@@ -7368,7 +7350,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Poison Adept',
 		affinity: 'Passive',
 		type: 'MISC',
-		unique: false,
 		cost: null,
 		description: 'Increases effects of Poison.'
 	},
@@ -7376,7 +7357,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Poison Arrow',
 		affinity: 'Phys',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 85,
 		ailments: [
 			{
@@ -7389,8 +7369,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 14
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 200,
 			display: 'Medium',
@@ -7403,7 +7381,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Poison Boost',
 		affinity: 'Passive',
 		type: 'AILBOOST',
-		unique: false,
 		ailment: 'Poison',
 		amount: 50,
 		weather: false
@@ -7412,7 +7389,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Poison Master',
 		affinity: 'Passive',
 		type: 'MISC',
-		unique: false,
 		cost: null,
 		description: 'Greatly increases effects of Poison.'
 	},
@@ -7420,7 +7396,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Poison Mist',
 		affinity: 'Ailment',
 		type: 'AILMENT',
-		unique: false,
 		range: 'All',
 		cost: 12,
 		ailments: [
@@ -7433,7 +7408,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Poison Skewer',
 		affinity: 'Phys',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 90,
 		ailments: [
 			{
@@ -7446,8 +7420,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 9
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 110,
 			display: 'Weak',
@@ -7457,10 +7429,16 @@ const skillData: Readonly<AnySkillData[]> = [
 		series: 'persona'
 	},
 	{
+		name: 'Position Hack',
+		affinity: 'Passive',
+		type: 'NAVI',
+		unique: null,
+		description: 'Chance to instantly Hold Up enemies when starting a battle.'
+	},
+	{
 		name: 'Posumudi',
 		affinity: 'Recovery',
 		type: 'RECOVERY',
-		unique: false,
 		range: 'Ally',
 		cost: 3,
 		ailments: [
@@ -7474,7 +7452,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Power Punch',
 		affinity: 'Phys',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 98,
 		ailments: [],
 		cost: {
@@ -7484,8 +7461,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		flags: [
 			'HP Dependent'
 		],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 155,
 			display: 'Medium',
@@ -7498,7 +7473,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Power Slash',
 		affinity: 'Phys',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 90,
 		ailments: [],
 		cost: {
@@ -7506,14 +7480,34 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 10
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 180,
 			display: 'Medium',
 			type: 'Physical'
 		},
 		range: 'One',
+		series: 'persona'
+	},
+	{
+		name: 'Pralaya',
+		affinity: 'Phys',
+		type: 'ATTACK',
+		unique: true,
+		accuracy: 80,
+		ailments: [],
+		cost: {
+			type: 'HP',
+			amount: 25
+		},
+		flags: [
+			'Instakill'
+		],
+		power: {
+			amount: 290,
+			display: 'Severe',
+			type: 'Physical'
+		},
+		range: 'All',
 		series: 'persona'
 	},
 	{
@@ -7532,10 +7526,18 @@ const skillData: Readonly<AnySkillData[]> = [
 		flags: []
 	},
 	{
+		name: 'President\'s Insight',
+		affinity: 'Support',
+		type: 'CHARGE',
+		unique: null,
+		range: 'Ally',
+		cost: 15,
+		charge: 'Concentrate'
+	},
+	{
 		name: 'Primal Force',
 		affinity: 'Phys',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 90,
 		ailments: [],
 		cost: {
@@ -7543,8 +7545,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 20
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 425,
 			display: 'Colossal',
@@ -7557,7 +7557,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Profaned Land',
 		affinity: 'Dark',
 		type: 'ATTACK',
-		unique: true,
+		unique: null,
 		accuracy: 98,
 		ailments: [
 			{
@@ -7570,8 +7570,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 35
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 240,
 			display: 'Heavy',
@@ -7584,7 +7582,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Psi',
 		affinity: 'Psy',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 98,
 		ailments: [],
 		cost: {
@@ -7592,8 +7589,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 4
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 130,
 			display: 'Weak',
@@ -7606,7 +7601,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Psio',
 		affinity: 'Psy',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 98,
 		ailments: [],
 		cost: {
@@ -7614,8 +7608,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 8
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 160,
 			display: 'Medium',
@@ -7628,7 +7620,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Psiodyne',
 		affinity: 'Psy',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 98,
 		ailments: [],
 		cost: {
@@ -7636,8 +7627,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 12
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 215,
 			display: 'Heavy',
@@ -7650,7 +7639,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Psy Amp',
 		affinity: 'Passive',
 		type: 'BOOST',
-		unique: false,
 		amount: 50,
 		element: 'Psy',
 		stacks: 'x'
@@ -7659,7 +7647,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Psy Boost',
 		affinity: 'Passive',
 		type: 'BOOST',
-		unique: false,
 		amount: 25,
 		element: 'Psy',
 		stacks: 'x'
@@ -7668,7 +7655,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Psy Break',
 		affinity: 'Support',
 		type: 'BREAK',
-		unique: false,
 		cost: 15,
 		element: 'Psy'
 	},
@@ -7676,7 +7662,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Psy Wall',
 		affinity: 'Support',
 		type: 'WALL',
-		unique: false,
 		cost: 18,
 		element: 'Psy'
 	},
@@ -7684,7 +7669,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Psycho Blast',
 		affinity: 'Psy',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 98,
 		ailments: [],
 		cost: {
@@ -7692,8 +7676,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 75
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 185,
 			display: 'Severe',
@@ -7706,7 +7688,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Psycho Force',
 		affinity: 'Psy',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 98,
 		ailments: [],
 		cost: {
@@ -7714,8 +7695,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 50
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 265,
 			display: 'Severe',
@@ -7728,7 +7707,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Pulinpa',
 		affinity: 'Ailment',
 		type: 'AILMENT',
-		unique: false,
 		range: 'One',
 		cost: 10,
 		ailments: [
@@ -7741,7 +7719,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Puncture Punch',
 		affinity: 'Phys',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 98,
 		ailments: [],
 		cost: {
@@ -7751,8 +7728,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		flags: [
 			'Pierce'
 		],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 150,
 			display: 'Medium',
@@ -7765,7 +7740,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Purple Smoke',
 		affinity: 'Phys',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 98,
 		ailments: [],
 		cost: {
@@ -7789,7 +7763,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Rage Boost',
 		affinity: 'Passive',
 		type: 'AILBOOST',
-		unique: false,
 		ailment: 'Rage',
 		amount: 25,
 		weather: false
@@ -7806,8 +7779,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 40
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 300,
 			display: 'Severe',
@@ -7828,8 +7799,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 40
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 300,
 			display: 'Severe',
@@ -7850,8 +7819,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 40
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 300,
 			display: 'Severe',
@@ -7872,8 +7839,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 40
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 300,
 			display: 'Severe',
@@ -7886,7 +7851,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Ragnarok',
 		affinity: 'Fire',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 98,
 		ailments: [],
 		cost: {
@@ -7908,7 +7872,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Rainy Death',
 		affinity: 'Phys',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 85,
 		ailments: [],
 		cost: {
@@ -7918,8 +7881,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		flags: [
 			'Weather Boost'
 		],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 260,
 			display: 'Heavy',
@@ -7932,10 +7893,9 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Rakukaja',
 		affinity: 'Support',
 		type: 'SUPPORT',
-		unique: false,
 		range: 'Ally',
 		cost: 8,
-		surround: false,
+		flags: [],
 		buffs: [
 			'Defense'
 		],
@@ -7947,10 +7907,9 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Rakunda',
 		affinity: 'Support',
 		type: 'SUPPORT',
-		unique: false,
 		range: 'One',
 		cost: 8,
-		surround: false,
+		flags: [],
 		buffs: [],
 		negate: false,
 		debuffs: [
@@ -7962,7 +7921,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Rampage',
 		affinity: 'Phys',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 50,
 		ailments: [],
 		cost: {
@@ -7986,7 +7944,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Re Patra',
 		affinity: 'Recovery',
 		type: 'RECOVERY',
-		unique: false,
 		range: 'Ally',
 		cost: 5,
 		ailments: [
@@ -8000,7 +7957,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Rebel Soul',
 		affinity: 'Passive',
 		type: 'MISC',
-		unique: false,
 		cost: null,
 		description: 'Showtime guage increases more quickly.'
 	},
@@ -8008,7 +7964,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Rebellion',
 		affinity: 'Support',
 		type: 'CRIT',
-		unique: false,
 		range: 'Ally',
 		cost: 5
 	},
@@ -8016,7 +7971,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Rebellion Blade',
 		affinity: 'Almighty',
 		type: 'ATTACK',
-		unique: true,
+		unique: null,
 		accuracy: 95,
 		ailments: [],
 		cost: {
@@ -8026,8 +7981,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		flags: [
 			'Down Boost'
 		],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 450,
 			display: 'Colossal',
@@ -8040,7 +7993,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Recarm',
 		affinity: 'Recovery',
 		type: 'RECOVERY',
-		unique: false,
 		range: 'Ally',
 		cost: 20,
 		ailments: null,
@@ -8051,13 +8003,21 @@ const skillData: Readonly<AnySkillData[]> = [
 		]
 	},
 	{
+		name: 'Recarmdra',
+		affinity: 'Recovery',
+		type: 'MISC',
+		unique: null,
+		cost: null,
+		description: 'Fully revive and recover party but user\'s HP drops to 1.'
+	},
+	{
 		name: 'Red Capote',
 		affinity: 'Support',
 		type: 'SUPPORT',
 		unique: true,
 		range: 'Ally',
 		cost: 8,
-		surround: false,
+		flags: [],
 		buffs: [
 			'Double Accuracy/Evasion'
 		],
@@ -8069,7 +8029,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Regenerate 1',
 		affinity: 'Passive',
 		type: 'REGEN',
-		unique: false,
 		amount: 2,
 		criteria: 'Turn Start',
 		percent: true,
@@ -8079,7 +8038,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Regenerate 2',
 		affinity: 'Passive',
 		type: 'REGEN',
-		unique: false,
 		amount: 4,
 		criteria: 'Turn Start',
 		percent: true,
@@ -8089,7 +8047,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Regenerate 3',
 		affinity: 'Passive',
 		type: 'REGEN',
-		unique: false,
 		amount: 6,
 		criteria: 'Turn Start',
 		percent: true,
@@ -8099,14 +8056,16 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Relaxing Wave',
 		affinity: 'Passive',
 		type: 'NAVI',
-		unique: false,
+		unique: null,
 		description: 'Recover 5% SP after battle (party).'
 	},
 	{
 		name: 'Repel Dark',
+		aliases: [
+			'Repel Curse'
+		],
 		affinity: 'Passive',
 		type: 'DEFENSIVE',
-		unique: false,
 		element: 'Dark',
 		newAffinity: 'Repel'
 	},
@@ -8114,7 +8073,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Repel Elec',
 		affinity: 'Passive',
 		type: 'DEFENSIVE',
-		unique: false,
 		element: 'Elec',
 		newAffinity: 'Repel'
 	},
@@ -8122,7 +8080,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Repel Fire',
 		affinity: 'Passive',
 		type: 'DEFENSIVE',
-		unique: false,
 		element: 'Fire',
 		newAffinity: 'Repel'
 	},
@@ -8130,7 +8087,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Repel Force',
 		affinity: 'Passive',
 		type: 'DEFENSIVE',
-		unique: false,
 		element: 'Force',
 		newAffinity: 'Repel'
 	},
@@ -8138,15 +8094,16 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Repel Ice',
 		affinity: 'Passive',
 		type: 'DEFENSIVE',
-		unique: false,
 		element: 'Ice',
 		newAffinity: 'Repel'
 	},
 	{
 		name: 'Repel Light',
+		aliases: [
+			'Repel Bless'
+		],
 		affinity: 'Passive',
 		type: 'DEFENSIVE',
-		unique: false,
 		element: 'Light',
 		newAffinity: 'Repel'
 	},
@@ -8154,15 +8111,16 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Repel Nuke',
 		affinity: 'Passive',
 		type: 'DEFENSIVE',
-		unique: false,
 		element: 'Nuke',
 		newAffinity: 'Repel'
 	},
 	{
 		name: 'Repel Phys',
+		aliases: [
+			'Repel Physical'
+		],
 		affinity: 'Passive',
 		type: 'DEFENSIVE',
-		unique: false,
 		element: 'Phys',
 		newAffinity: 'Repel'
 	},
@@ -8170,7 +8128,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Repel Psy',
 		affinity: 'Passive',
 		type: 'DEFENSIVE',
-		unique: false,
 		element: 'Psy',
 		newAffinity: 'Repel'
 	},
@@ -8178,31 +8135,43 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Repel Wind',
 		affinity: 'Passive',
 		type: 'DEFENSIVE',
-		unique: false,
 		element: 'Wind',
 		newAffinity: 'Repel'
 	},
 	{
-		name: 'Resist Charm',
+		name: 'Resist Burn',
 		affinity: 'Passive',
 		type: 'AILDEFENSIVE',
-		unique: false,
+		ailment: 'Burn',
+		resistance: 'Resist'
+	},
+	{
+		name: 'Resist Charm',
+		aliases: [
+			'Resist Brainwash'
+		],
+		affinity: 'Passive',
+		type: 'AILDEFENSIVE',
 		ailment: 'Charm',
 		resistance: 'Resist'
 	},
 	{
 		name: 'Resist Confuse',
+		aliases: [
+			'Resist Dizzy'
+		],
 		affinity: 'Passive',
 		type: 'AILDEFENSIVE',
-		unique: false,
 		ailment: 'Confuse',
 		resistance: 'Resist'
 	},
 	{
 		name: 'Resist Dark',
+		aliases: [
+			'Resist Curse'
+		],
 		affinity: 'Passive',
 		type: 'DEFENSIVE',
-		unique: false,
 		element: 'Dark',
 		newAffinity: 'Resist'
 	},
@@ -8210,7 +8179,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Resist Despair',
 		affinity: 'Passive',
 		type: 'AILDEFENSIVE',
-		unique: false,
 		ailment: 'Despair',
 		resistance: 'Resist'
 	},
@@ -8218,23 +8186,27 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Resist Elec',
 		affinity: 'Passive',
 		type: 'DEFENSIVE',
-		unique: false,
 		element: 'Elec',
 		newAffinity: 'Resist'
+	},
+	{
+		name: 'Resist Enervate',
+		affinity: 'Passive',
+		type: 'AILDEFENSIVE',
+		ailment: 'Enervate',
+		resistance: 'Resist'
 	},
 	{
 		name: 'Resist Exhaust',
 		affinity: 'Passive',
 		type: 'AILDEFENSIVE',
-		unique: false,
-		ailment: 'Exhaustion',
+		ailment: 'Exhaust',
 		resistance: 'Resist'
 	},
 	{
 		name: 'Resist Fear',
 		affinity: 'Passive',
 		type: 'AILDEFENSIVE',
-		unique: false,
 		ailment: 'Fear',
 		resistance: 'Resist'
 	},
@@ -8242,7 +8214,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Resist Fire',
 		affinity: 'Passive',
 		type: 'DEFENSIVE',
-		unique: false,
 		element: 'Fire',
 		newAffinity: 'Resist'
 	},
@@ -8250,23 +8221,37 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Resist Force',
 		affinity: 'Passive',
 		type: 'DEFENSIVE',
-		unique: false,
 		element: 'Force',
 		newAffinity: 'Resist'
+	},
+	{
+		name: 'Resist Freeze',
+		affinity: 'Passive',
+		type: 'AILDEFENSIVE',
+		ailment: 'Freeze',
+		resistance: 'Resist'
+	},
+	{
+		name: 'Resist Hunger',
+		affinity: 'Passive',
+		type: 'AILDEFENSIVE',
+		ailment: 'Hunger',
+		resistance: 'Resist'
 	},
 	{
 		name: 'Resist Ice',
 		affinity: 'Passive',
 		type: 'DEFENSIVE',
-		unique: false,
 		element: 'Ice',
 		newAffinity: 'Resist'
 	},
 	{
 		name: 'Resist Light',
+		aliases: [
+			'Resist Bless'
+		],
 		affinity: 'Passive',
 		type: 'DEFENSIVE',
-		unique: false,
 		element: 'Light',
 		newAffinity: 'Resist'
 	},
@@ -8274,7 +8259,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Resist Mirage',
 		affinity: 'Passive',
 		type: 'AILDEFENSIVE',
-		unique: false,
 		ailment: 'Mirage',
 		resistance: 'Resist'
 	},
@@ -8282,15 +8266,16 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Resist Nuke',
 		affinity: 'Passive',
 		type: 'DEFENSIVE',
-		unique: false,
 		element: 'Nuke',
 		newAffinity: 'Resist'
 	},
 	{
 		name: 'Resist Phys',
+		aliases: [
+			'Resist Physical'
+		],
 		affinity: 'Passive',
 		type: 'DEFENSIVE',
-		unique: false,
 		element: 'Phys',
 		newAffinity: 'Resist'
 	},
@@ -8298,7 +8283,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Resist Poison',
 		affinity: 'Passive',
 		type: 'AILDEFENSIVE',
-		unique: false,
 		ailment: 'Poison',
 		resistance: 'Resist'
 	},
@@ -8306,23 +8290,38 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Resist Psy',
 		affinity: 'Passive',
 		type: 'DEFENSIVE',
-		unique: false,
 		element: 'Psy',
 		newAffinity: 'Resist'
 	},
 	{
-		name: 'Resist Seal',
+		name: 'Resist Rage',
 		affinity: 'Passive',
 		type: 'AILDEFENSIVE',
-		unique: false,
+		ailment: 'Rage',
+		resistance: 'Resist'
+	},
+	{
+		name: 'Resist Seal',
+		aliases: [
+			'Resist Forget',
+			'Resist Mute'
+		],
+		affinity: 'Passive',
+		type: 'AILDEFENSIVE',
 		ailment: 'Seal',
+		resistance: 'Resist'
+	},
+	{
+		name: 'Resist Shock',
+		affinity: 'Passive',
+		type: 'AILDEFENSIVE',
+		ailment: 'Shock',
 		resistance: 'Resist'
 	},
 	{
 		name: 'Resist Sleep',
 		affinity: 'Passive',
 		type: 'AILDEFENSIVE',
-		unique: false,
 		ailment: 'Sleep',
 		resistance: 'Resist'
 	},
@@ -8330,7 +8329,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Resist Wind',
 		affinity: 'Passive',
 		type: 'DEFENSIVE',
-		unique: false,
 		element: 'Wind',
 		newAffinity: 'Resist'
 	},
@@ -8338,7 +8336,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Restore',
 		affinity: 'Passive',
 		type: 'SIPHON',
-		unique: false,
 		amount: 10,
 		criteria: 'Weakness/Critical'
 	},
@@ -8346,7 +8343,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Retaliate',
 		affinity: 'Passive',
 		type: 'SMTCOUNTER',
-		unique: false,
 		attackDown: false,
 		chance: 50,
 		element: 'Phys',
@@ -8356,10 +8352,23 @@ const skillData: Readonly<AnySkillData[]> = [
 		}
 	},
 	{
+		name: 'Reverse Rub',
+		affinity: 'Ailment',
+		type: 'AILMENT',
+		unique: null,
+		range: 'One',
+		cost: 0,
+		ailments: [
+			'Rage'
+		],
+		chance: 100,
+		flags: []
+	},
+	{
 		name: 'Revival Chant',
 		affinity: 'Recovery',
 		type: 'RECOVERY',
-		unique: true,
+		unique: null,
 		range: 'Ally',
 		cost: 100,
 		ailments: null,
@@ -8374,7 +8383,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Revolution',
 		affinity: 'Support',
 		type: 'CRIT',
-		unique: false,
 		range: 'All',
 		cost: 5
 	},
@@ -8382,7 +8390,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Riot Gun',
 		affinity: 'Gun',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 80,
 		ailments: [],
 		cost: {
@@ -8390,8 +8397,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 24
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 310,
 			display: 'Severe',
@@ -8404,7 +8409,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Rising Slash',
 		affinity: 'Phys',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 90,
 		ailments: [],
 		cost: {
@@ -8414,8 +8418,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		flags: [
 			'Baton Boost'
 		],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 220,
 			display: 'Heavy',
@@ -8428,7 +8430,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Ruinous Thunder',
 		affinity: 'Elec',
 		type: 'ATTACK',
-		unique: true,
+		unique: null,
 		accuracy: 98,
 		ailments: [],
 		cost: {
@@ -8436,8 +8438,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 20
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 200,
 			display: 'Heavy',
@@ -8461,8 +8461,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			'Defense Down',
 			'Attack Down'
 		],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 140,
 			display: 'Heavy',
@@ -8475,7 +8473,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Safeguard',
 		affinity: 'Passive',
 		type: 'MISC',
-		unique: false,
 		cost: null,
 		description: 'Being Evaded/Nulled/Drained/Repelled doesn\'t consume additional Press Turn Icons.'
 	},
@@ -8483,7 +8480,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Sakanagi',
 		affinity: 'Almighty',
 		type: 'ATTACK',
-		unique: true,
+		unique: null,
 		accuracy: 98,
 		ailments: [],
 		cost: {
@@ -8491,8 +8488,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 20
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 230,
 			display: 'Medium',
@@ -8505,7 +8500,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Salvation',
 		affinity: 'Recovery',
 		type: 'RECOVERY',
-		unique: false,
 		range: 'Party',
 		cost: 48,
 		ailments: 'All',
@@ -8517,7 +8511,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Samarecarm',
 		affinity: 'Recovery',
 		type: 'RECOVERY',
-		unique: false,
 		range: 'Ally',
 		cost: 60,
 		ailments: null,
@@ -8526,6 +8519,14 @@ const skillData: Readonly<AnySkillData[]> = [
 		flags: [
 			'Revive'
 		]
+	},
+	{
+		name: 'Samurai\'s Order',
+		affinity: 'Passive',
+		type: 'EVASION',
+		amount: 0,
+		criteria: null,
+		element: 'Crit/Magic'
 	},
 	{
 		name: 'Sanguine Drain',
@@ -8542,8 +8543,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			'Attack Down',
 			'Drain HP'
 		],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 120,
 			display: 'Weak',
@@ -8556,7 +8555,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Scratch Dance',
 		affinity: 'Phys',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 98,
 		ailments: [],
 		cost: {
@@ -8575,19 +8573,56 @@ const skillData: Readonly<AnySkillData[]> = [
 		series: 'smt'
 	},
 	{
+		name: 'Seal Bomb',
+		affinity: 'Phys',
+		type: 'ATTACK',
+		accuracy: 80,
+		ailments: [
+			{
+				name: 'Seal',
+				chance: 20
+			}
+		],
+		cost: {
+			type: 'HP',
+			amount: 14
+		},
+		flags: [],
+		power: {
+			amount: 110,
+			display: 'Medium',
+			type: 'Physical'
+		},
+		range: 'All',
+		series: 'persona'
+	},
+	{
 		name: 'Seal Boost',
+		aliases: [
+			'Forget Boost',
+			'Silence Boost'
+		],
 		affinity: 'Passive',
 		type: 'AILBOOST',
-		unique: false,
 		ailment: 'Seal',
 		amount: 25,
 		weather: false
 	},
 	{
+		name: 'Self-destruct',
+		aliases: [
+			'Last Resort'
+		],
+		affinity: 'Almighty',
+		type: 'MISC',
+		unique: null,
+		cost: null,
+		description: 'Medium Almighty damage to all. User dies.'
+	},
+	{
 		name: 'Severing Bite',
 		affinity: 'Phys',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 98,
 		ailments: [],
 		cost: {
@@ -8597,8 +8632,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		flags: [
 			'Crit Damage Boost'
 		],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 190,
 			display: 'Heavy',
@@ -8609,9 +8642,11 @@ const skillData: Readonly<AnySkillData[]> = [
 	},
 	{
 		name: 'Sexy Dance',
+		aliases: [
+			'Brain Jack'
+		],
 		affinity: 'Ailment',
 		type: 'AILMENT',
-		unique: false,
 		range: 'All',
 		cost: 25,
 		ailments: [
@@ -8624,7 +8659,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Shadow of Grief',
 		affinity: 'Passive',
 		type: 'SIPHON',
-		unique: false,
 		amount: 22,
 		criteria: 'Drain'
 	},
@@ -8632,7 +8666,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Sharp Student',
 		affinity: 'Passive',
 		type: 'MISC',
-		unique: false,
 		cost: null,
 		description: 'Decreases chance of being hit by a Critical.'
 	},
@@ -8640,7 +8673,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Shield of Justice',
 		affinity: 'Support',
 		type: 'BARRIER',
-		unique: true,
+		unique: null,
 		range: 'Party',
 		cost: 160,
 		barriers: [
@@ -8673,7 +8706,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Shock Boost',
 		affinity: 'Passive',
 		type: 'AILBOOST',
-		unique: false,
 		ailment: 'Shock',
 		amount: 25,
 		weather: false
@@ -8682,7 +8714,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Shockbound',
 		affinity: 'Elec',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 98,
 		ailments: [],
 		cost: {
@@ -8704,7 +8735,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Silt of Ruin',
 		affinity: 'Almighty',
 		type: 'ATTACK',
-		unique: true,
+		unique: null,
 		accuracy: 98,
 		ailments: [],
 		cost: {
@@ -8714,8 +8745,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		flags: [
 			'Accuracy/Evasion Down'
 		],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 140,
 			display: 'Medium',
@@ -8725,10 +8754,28 @@ const skillData: Readonly<AnySkillData[]> = [
 		series: 'smt'
 	},
 	{
+		name: 'Single Shot',
+		affinity: 'Phys',
+		type: 'ATTACK',
+		accuracy: 90,
+		ailments: [],
+		cost: {
+			type: 'HP',
+			amount: 8
+		},
+		flags: [],
+		power: {
+			amount: 145,
+			display: 'Weak',
+			type: 'Physical'
+		},
+		range: 'One',
+		series: 'persona'
+	},
+	{
 		name: 'Skewer',
 		affinity: 'Phys',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 85,
 		ailments: [],
 		cost: {
@@ -8736,8 +8783,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 5
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 130,
 			display: 'Weak',
@@ -8750,7 +8795,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Skull Cracker',
 		affinity: 'Phys',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 90,
 		ailments: [
 			{
@@ -8763,8 +8807,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 10
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 125,
 			display: 'Medium',
@@ -8777,7 +8819,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Sledgehammer',
 		affinity: 'Phys',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 90,
 		ailments: [
 			{
@@ -8790,8 +8831,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 10
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 125,
 			display: 'Medium',
@@ -8804,7 +8843,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Sleep Boost',
 		affinity: 'Passive',
 		type: 'AILBOOST',
-		unique: false,
 		ailment: 'Sleep',
 		amount: 25,
 		weather: false
@@ -8813,7 +8851,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Slumber Vortex',
 		affinity: 'Ailment',
 		type: 'AILMENT',
-		unique: false,
 		range: 'All',
 		cost: 35,
 		ailments: [
@@ -8827,7 +8864,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Snap',
 		affinity: 'Gun',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 90,
 		ailments: [],
 		cost: {
@@ -8835,8 +8871,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 9
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 100,
 			display: 'Medium',
@@ -8859,8 +8893,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		flags: [
 			'Defense Greatly Down'
 		],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 160,
 			display: 'Weak',
@@ -8873,7 +8905,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Sonic Punch',
 		affinity: 'Phys',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 90,
 		ailments: [],
 		cost: {
@@ -8881,8 +8912,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 8
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 140,
 			display: 'Weak',
@@ -8903,8 +8932,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 55
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 330,
 			display: 'Severe',
@@ -8917,11 +8944,10 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Soul Break',
 		affinity: 'Ailment',
 		type: 'AILMENT',
-		unique: false,
 		range: 'One',
 		cost: 5,
 		ailments: [
-			'Exhaustion'
+			'Exhaust'
 		],
 		chance: 70,
 		flags: []
@@ -8930,7 +8956,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Soul Chain',
 		affinity: 'Passive',
 		type: 'REGEN',
-		unique: false,
 		amount: 20,
 		criteria: 'Baton Pass',
 		percent: false,
@@ -8953,8 +8978,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 50
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 230,
 			display: 'Severe',
@@ -8967,7 +8990,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Soul Touch',
 		affinity: 'Passive',
 		type: 'REGEN',
-		unique: false,
 		amount: 5,
 		criteria: 'Baton Pass',
 		percent: false,
@@ -8975,9 +8997,11 @@ const skillData: Readonly<AnySkillData[]> = [
 	},
 	{
 		name: 'Speed Master',
+		aliases: [
+			'Auto-Sukukaja'
+		],
 		affinity: 'Passive',
 		type: 'AUTOBUFF',
-		unique: false,
 		buff: 'Accuracy/Evasion',
 		range: 'Self'
 	},
@@ -8985,14 +9009,13 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Spell Master',
 		affinity: 'Passive',
 		type: 'MASTER',
-		unique: false,
+		amount: 50,
 		stat: 'MP'
 	},
 	{
 		name: 'Spirit Drain',
 		affinity: 'Almighty',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 98,
 		ailments: [],
 		cost: {
@@ -9002,8 +9025,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		flags: [
 			'Drain MP'
 		],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 100,
 			display: 'Weak',
@@ -9013,10 +9034,33 @@ const skillData: Readonly<AnySkillData[]> = [
 		series: 'smt'
 	},
 	{
+		name: 'Spirit Leech',
+		affinity: 'Almighty',
+		type: 'ATTACK',
+		unique: null,
+		accuracy: 90,
+		ailments: [],
+		cost: {
+			type: 'MP',
+			amount: 0
+		},
+		flags: [
+			'Drain MP',
+			'Static Damage'
+		],
+		power: {
+			amount: 150,
+			display: 'Medium',
+			type: 'Magic'
+		},
+		range: 'One',
+		series: 'persona'
+	},
+	{
 		name: 'Spring of Life',
 		affinity: 'Passive',
 		type: 'REGEN',
-		unique: true,
+		unique: null,
 		amount: 8,
 		criteria: 'Turn Start',
 		percent: true,
@@ -9040,9 +9084,11 @@ const skillData: Readonly<AnySkillData[]> = [
 	},
 	{
 		name: 'Stagnant Air - Persona',
+		aliases: [
+			'Stagnant Air'
+		],
 		affinity: 'Almighty',
 		type: 'SUSCEPTIBILITY',
-		unique: false,
 		range: 'All',
 		cost: 5
 	},
@@ -9050,14 +9096,13 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Stamina Song',
 		affinity: 'Passive',
 		type: 'NAVI',
-		unique: false,
+		unique: null,
 		description: 'Recover 10% HP after battle (party).'
 	},
 	{
 		name: 'Steel Needle',
 		affinity: 'Phys',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 98,
 		ailments: [],
 		cost: {
@@ -9078,10 +9123,34 @@ const skillData: Readonly<AnySkillData[]> = [
 		series: 'smt'
 	},
 	{
+		name: 'Stomach Blow',
+		affinity: 'Phys',
+		type: 'ATTACK',
+		unique: null,
+		accuracy: 80,
+		ailments: [
+			{
+				name: 'Hunger',
+				chance: 100
+			}
+		],
+		cost: {
+			type: 'MP',
+			amount: 0
+		},
+		flags: [],
+		power: {
+			amount: 150,
+			display: 'Medium',
+			type: 'Physical'
+		},
+		range: 'One',
+		series: 'persona'
+	},
+	{
 		name: 'Storm Dracostrike',
 		affinity: 'Elec',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 98,
 		ailments: [],
 		cost: {
@@ -9089,8 +9158,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 25
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 200,
 			display: 'Medium',
@@ -9125,38 +9192,37 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Subrecover HP',
 		affinity: 'Passive',
 		type: 'NAVI',
-		unique: false,
+		unique: null,
 		description: 'Restores 10% HP to backup members after battle.'
 	},
 	{
 		name: 'Subrecover HP EX',
 		affinity: 'Passive',
 		type: 'NAVI',
-		unique: false,
+		unique: null,
 		description: 'Restores 20% HP to backup members after battle.'
 	},
 	{
 		name: 'Subrecover SP',
 		affinity: 'Passive',
 		type: 'NAVI',
-		unique: false,
+		unique: null,
 		description: 'Restores 1% SP to backup members after battle.'
 	},
 	{
 		name: 'Subrecover SP EX',
 		affinity: 'Passive',
 		type: 'NAVI',
-		unique: false,
+		unique: null,
 		description: 'Restores 3% SP to backup members after battle.'
 	},
 	{
 		name: 'Sukukaja',
 		affinity: 'Support',
 		type: 'SUPPORT',
-		unique: false,
 		range: 'Ally',
 		cost: 8,
-		surround: false,
+		flags: [],
 		buffs: [
 			'Accuracy/Evasion'
 		],
@@ -9168,16 +9234,22 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Sukunda',
 		affinity: 'Support',
 		type: 'SUPPORT',
-		unique: false,
 		range: 'One',
 		cost: 8,
-		surround: false,
+		flags: [],
 		buffs: [],
 		negate: false,
 		debuffs: [
 			'Accuracy/Evasion'
 		],
 		auto: []
+	},
+	{
+		name: 'Summon',
+		affinity: 'Misc',
+		type: 'SUMMON',
+		unique: null,
+		demon: null
 	},
 	{
 		name: 'Sun\'s Radiance',
@@ -9192,25 +9264,65 @@ const skillData: Readonly<AnySkillData[]> = [
 		flags: []
 	},
 	{
+		name: 'Support Plus 1',
+		affinity: 'Passive',
+		type: 'NAVI',
+		unique: null,
+		description: 'Activates Masukunda.'
+	},
+	{
+		name: 'Support Plus 2',
+		affinity: 'Passive',
+		type: 'NAVI',
+		unique: null,
+		description: 'Activates Masukunda and Marakunda.'
+	},
+	{
+		name: 'Support Plus 3',
+		affinity: 'Passive',
+		type: 'NAVI',
+		unique: null,
+		description: 'Activates Masukunda, Marakunda, and Matarunda.'
+	},
+	{
+		name: 'Support Rate Up',
+		affinity: 'Passive',
+		type: 'NAVI',
+		unique: null,
+		description: 'Increases activation of Moral Support.'
+	},
+	{
 		name: 'Support Scan',
 		affinity: 'Passive',
 		type: 'NAVI',
-		unique: false,
+		unique: null,
 		description: 'Displays all buffs and debuffs currently in effect.'
 	},
 	{
 		name: 'Survival Trick',
 		affinity: 'Passive',
 		type: 'ENDURE',
-		unique: false,
-		priority: 3,
-		instakill: true
+		amount: 3,
+		criteria: 'Light/Dark'
+	},
+	{
+		name: 'Survive Dark',
+		affinity: 'Passive',
+		type: 'ENDURE',
+		amount: 50,
+		criteria: 'Dark'
+	},
+	{
+		name: 'Survive Light',
+		affinity: 'Passive',
+		type: 'ENDURE',
+		amount: 50,
+		criteria: 'Light'
 	},
 	{
 		name: 'Swift Strike',
 		affinity: 'Phys',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 70,
 		ailments: [],
 		cost: {
@@ -9232,7 +9344,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Sword Dance',
 		affinity: 'Phys',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 90,
 		ailments: [],
 		cost: {
@@ -9240,8 +9351,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 25
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 375,
 			display: 'Colossal',
@@ -9264,8 +9373,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		flags: [
 			'Minimize Defense'
 		],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 230,
 			display: 'Severe',
@@ -9278,10 +9385,9 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Tarukaja',
 		affinity: 'Support',
 		type: 'SUPPORT',
-		unique: false,
 		range: 'Ally',
 		cost: 8,
-		surround: false,
+		flags: [],
 		buffs: [
 			'Attack'
 		],
@@ -9293,10 +9399,9 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Tarunda',
 		affinity: 'Support',
 		type: 'SUPPORT',
-		unique: false,
 		range: 'One',
 		cost: 8,
-		surround: false,
+		flags: [],
 		buffs: [],
 		negate: false,
 		debuffs: [
@@ -9308,15 +9413,17 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Taunt',
 		affinity: 'Support',
 		type: 'TAUNT',
-		unique: false,
 		buff: null,
 		cost: 10
 	},
 	{
 		name: 'Taunt - Persona',
+		aliases: [
+			'Taunt',
+			'Balzac'
+		],
 		affinity: 'Ailment',
 		type: 'AILMENT',
-		unique: false,
 		range: 'One',
 		cost: 5,
 		ailments: [
@@ -9326,10 +9433,16 @@ const skillData: Readonly<AnySkillData[]> = [
 		flags: []
 	},
 	{
+		name: 'Taunting Aura',
+		affinity: 'Support',
+		type: 'TAUNT',
+		buff: null,
+		cost: 4
+	},
+	{
 		name: 'Technical High',
 		affinity: 'Passive',
 		type: 'MISC',
-		unique: false,
 		cost: null,
 		description: 'Increases duration of Kaja-type buff skills when landing a Critical.'
 	},
@@ -9337,7 +9450,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Tempest Slash',
 		affinity: 'Phys',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 85,
 		ailments: [],
 		cost: {
@@ -9359,7 +9471,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Tentarafoo',
 		affinity: 'Ailment',
 		type: 'AILMENT',
-		unique: false,
 		range: 'All',
 		cost: 25,
 		ailments: [
@@ -9370,9 +9481,11 @@ const skillData: Readonly<AnySkillData[]> = [
 	},
 	{
 		name: 'Terror Claw',
+		aliases: [
+			'Golden Right'
+		],
 		affinity: 'Phys',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 90,
 		ailments: [
 			{
@@ -9385,8 +9498,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 8
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 90,
 			display: 'Medium',
@@ -9428,7 +9539,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Tetra Break',
 		affinity: 'Support',
 		type: 'BARRIERBREAK',
-		unique: false,
 		cost: 18,
 		barrier: 'Tetrakarn'
 	},
@@ -9436,7 +9546,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Tetraja',
 		affinity: 'Support',
 		type: 'BARRIER',
-		unique: false,
 		range: 'Ally',
 		cost: 24,
 		barriers: [
@@ -9447,7 +9556,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Tetrakarn',
 		affinity: 'Support',
 		type: 'BARRIER',
-		unique: false,
 		range: 'Ally',
 		cost: 50,
 		barriers: [
@@ -9458,7 +9566,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Thalassic Calamity',
 		affinity: 'Ice',
 		type: 'ATTACK',
-		unique: true,
+		unique: null,
 		accuracy: 98,
 		ailments: [],
 		cost: {
@@ -9477,10 +9585,10 @@ const skillData: Readonly<AnySkillData[]> = [
 		series: 'smt'
 	},
 	{
-		name: 'The Man"s Way',
+		name: 'The Man\'s Way',
 		affinity: 'Ailment',
 		type: 'MISC',
-		unique: true,
+		unique: null,
 		cost: 30,
 		description: 'May inflict Down/Dizzy on all foes.'
 	},
@@ -9488,10 +9596,11 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Thermopylae',
 		affinity: 'Support',
 		type: 'SUPPORT',
-		unique: false,
 		range: 'Party',
 		cost: 30,
-		surround: true,
+		flags: [
+			'Surrounded Only'
+		],
 		buffs: [
 			'Attack',
 			'Defense',
@@ -9505,14 +9614,13 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Third Eye',
 		affinity: 'Passive',
 		type: 'NAVI',
-		unique: false,
+		unique: null,
 		description: 'Reveal the effectiveness of an attack.'
 	},
 	{
 		name: 'Thunder Reign',
 		affinity: 'Elec',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 98,
 		ailments: [],
 		cost: {
@@ -9534,7 +9642,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Titanomachia',
 		affinity: 'Phys',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 98,
 		ailments: [],
 		cost: {
@@ -9544,8 +9651,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		flags: [
 			'+20% Crit Rate'
 		],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 150,
 			display: 'Medium',
@@ -9556,6 +9661,9 @@ const skillData: Readonly<AnySkillData[]> = [
 	},
 	{
 		name: 'Titanomachia - Persona',
+		aliases: [
+			'Titanomachia'
+		],
 		affinity: 'Fire',
 		type: 'ATTACK',
 		unique: true,
@@ -9571,8 +9679,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 34
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 190,
 			display: 'Severe',
@@ -9585,7 +9691,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Torrent Shot',
 		affinity: 'Phys',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 90,
 		ailments: [],
 		cost: {
@@ -9604,10 +9709,9 @@ const skillData: Readonly<AnySkillData[]> = [
 		series: 'persona'
 	},
 	{
-		name: 'Touch n" Go',
+		name: 'Touch n\' Go',
 		affinity: 'Passive',
 		type: 'MISC',
-		unique: false,
 		cost: null,
 		description: 'Automatic Sukukaja after a Baton Pass.'
 	},
@@ -9628,8 +9732,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 30
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 120,
 			display: 'Medium',
@@ -9642,7 +9744,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Toxic Cloud',
 		affinity: 'Ailment',
 		type: 'AILMENT',
-		unique: false,
 		range: 'All',
 		cost: 25,
 		ailments: [
@@ -9655,7 +9756,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Toxic Spray',
 		affinity: 'Ailment',
 		type: 'AILMENT',
-		unique: false,
 		range: 'All',
 		cost: 15,
 		ailments: [
@@ -9670,7 +9770,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Toxic Sting',
 		affinity: 'Phys',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 98,
 		ailments: [
 			{
@@ -9683,8 +9782,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 10
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 110,
 			display: 'Weak',
@@ -9697,7 +9794,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Traesto',
 		affinity: 'Support',
 		type: 'MISC',
-		unique: false,
 		cost: 18,
 		description: 'Instantly escape from a dungeon.'
 	},
@@ -9705,7 +9801,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Trafuri',
 		affinity: 'Misc',
 		type: 'MISC',
-		unique: false,
 		cost: 6,
 		description: 'Guarantees escape from escapable battles.'
 	},
@@ -9713,21 +9808,27 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Treasure Radar',
 		affinity: 'Passive',
 		type: 'NAVI',
-		unique: false,
+		unique: null,
 		description: 'Reveal the location of treasure chests on each floor.'
+	},
+	{
+		name: 'Treasure Reboot',
+		affinity: 'Passive',
+		type: 'NAVI',
+		unique: null,
+		description: 'Chance to revive search objects in the area after battle.'
 	},
 	{
 		name: 'Treasure Skimmer',
 		affinity: 'Passive',
 		type: 'NAVI',
-		unique: false,
+		unique: null,
 		description: 'Find out if a foe is carrying a rare item ahead of time.'
 	},
 	{
 		name: 'Trigger Happy',
 		affinity: 'Passive',
 		type: 'MISC',
-		unique: false,
 		cost: null,
 		description: 'Increases chance of Critical from Gun attacks.'
 	},
@@ -9735,7 +9836,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Triple Down',
 		affinity: 'Gun',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 70,
 		ailments: [],
 		cost: {
@@ -9757,7 +9857,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Trisagion',
 		affinity: 'Fire',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 98,
 		ailments: [],
 		cost: {
@@ -9767,8 +9866,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		flags: [
 			'Pierce'
 		],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 230,
 			display: 'Heavy',
@@ -9778,7 +9875,33 @@ const skillData: Readonly<AnySkillData[]> = [
 		series: 'smt'
 	},
 	{
-		name: 'Tyrant"s Mind',
+		name: 'Twin Shot',
+		affinity: 'Phys',
+		type: 'ATTACK',
+		accuracy: 90,
+		ailments: [
+			{
+				name: 'Confuse',
+				chance: 20
+			}
+		],
+		cost: {
+			type: 'HP',
+			amount: 10
+		},
+		flags: [],
+		max: 2,
+		min: 2,
+		power: {
+			amount: 120,
+			display: 'Weak',
+			type: 'Physical'
+		},
+		range: 'One',
+		series: 'persona'
+	},
+	{
+		name: 'Tyrant\'s Mind',
 		affinity: 'Passive',
 		type: 'BOOST',
 		unique: true,
@@ -9787,17 +9910,25 @@ const skillData: Readonly<AnySkillData[]> = [
 		stacks: 'x'
 	},
 	{
+		name: 'Tyrant\'s Will',
+		affinity: 'Support',
+		type: 'CHARGE',
+		unique: null,
+		range: 'Ally',
+		cost: 15,
+		charge: 'Charge'
+	},
+	{
 		name: 'Ultimate Support',
 		affinity: 'Passive',
 		type: 'NAVI',
-		unique: false,
+		unique: null,
 		description: 'Ultimate support effect of strengthening/healing all allies may activate in battle.'
 	},
 	{
 		name: 'Unshaken Will',
 		affinity: 'Passive',
 		type: 'AILDEFENSIVE',
-		unique: false,
 		ailment: 'Confuse/Fear/Rage/Despair',
 		resistance: 'Null'
 	},
@@ -9805,7 +9936,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Vacuum Wave',
 		affinity: 'Wind',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 98,
 		ailments: [],
 		cost: {
@@ -9813,8 +9943,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 75
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 185,
 			display: 'Severe',
@@ -9827,7 +9955,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Vajra Blast',
 		affinity: 'Phys',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 80,
 		ailments: [],
 		cost: {
@@ -9835,8 +9962,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 13
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 100,
 			display: 'Medium',
@@ -9849,10 +9974,10 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Vault Guardian',
 		affinity: 'Support',
 		type: 'SUPPORT',
-		unique: false,
+		unique: null,
 		range: 'Party',
 		cost: 20,
-		surround: false,
+		flags: [],
 		buffs: [
 			'Defense'
 		],
@@ -9867,7 +9992,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Venom Chaser',
 		affinity: 'Phys',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 98,
 		ailments: [],
 		cost: {
@@ -9877,8 +10001,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		flags: [
 			'Poisoned Boost'
 		],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 160,
 			display: 'Weak',
@@ -9891,7 +10013,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Vicious Strike',
 		affinity: 'Phys',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 80,
 		ailments: [],
 		cost: {
@@ -9899,8 +10020,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 18
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 150,
 			display: 'Medium',
@@ -9913,7 +10032,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Victory Cry',
 		affinity: 'Passive',
 		type: 'POSTBATTLE',
-		unique: false,
 		amount: 100,
 		inactive: false,
 		stat: 'HPMP'
@@ -9922,14 +10040,13 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Vigor Song',
 		affinity: 'Passive',
 		type: 'NAVI',
-		unique: false,
+		unique: null,
 		description: 'Recover 10% SP after battle (party).'
 	},
 	{
 		name: 'Vile Assault',
 		affinity: 'Phys',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 95,
 		ailments: [],
 		cost: {
@@ -9939,8 +10056,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		flags: [
 			'Down Boost'
 		],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 300,
 			display: 'Heavy',
@@ -9966,8 +10081,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 60
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 150,
 			display: 'Medium',
@@ -9980,7 +10093,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Virus Wave',
 		affinity: 'Phys',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 80,
 		ailments: [
 			{
@@ -9993,8 +10105,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 16
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 175,
 			display: 'Heavy',
@@ -10007,7 +10117,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Vorpal Blade',
 		affinity: 'Phys',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 80,
 		ailments: [],
 		cost: {
@@ -10015,8 +10124,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 23
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 280,
 			display: 'Severe',
@@ -10027,9 +10134,11 @@ const skillData: Readonly<AnySkillData[]> = [
 	},
 	{
 		name: 'Wage War',
+		aliases: [
+			'Valiant Dance'
+		],
 		affinity: 'Ailment',
 		type: 'AILMENT',
-		unique: false,
 		range: 'All',
 		cost: 12,
 		ailments: [
@@ -10052,8 +10161,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		flags: [
 			'Weakness Instakill'
 		],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 300,
 			display: 'Severe',
@@ -10066,14 +10173,13 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Weakness Scan',
 		affinity: 'Passive',
 		type: 'NAVI',
-		unique: false,
+		unique: null,
 		description: 'Reveal an enemy\'s affinity at the start of battle.'
 	},
 	{
 		name: 'White Dracostrike',
 		affinity: 'Light',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 98,
 		ailments: [],
 		cost: {
@@ -10083,8 +10189,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		flags: [
 			'Weakness Instakill'
 		],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 200,
 			display: 'Medium',
@@ -10097,7 +10201,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Wind Amp',
 		affinity: 'Passive',
 		type: 'BOOST',
-		unique: false,
 		amount: 50,
 		element: 'Wind',
 		stacks: 'x'
@@ -10106,7 +10209,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Wind Boost',
 		affinity: 'Passive',
 		type: 'BOOST',
-		unique: false,
 		amount: 25,
 		element: 'Wind',
 		stacks: 'x'
@@ -10115,7 +10217,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Wind Break',
 		affinity: 'Support',
 		type: 'BREAK',
-		unique: false,
 		cost: 15,
 		element: 'Wind'
 	},
@@ -10123,7 +10224,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Wind Breath',
 		affinity: 'Force',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 98,
 		ailments: [],
 		cost: {
@@ -10145,7 +10245,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Wind Dracostrike',
 		affinity: 'Force',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 98,
 		ailments: [],
 		cost: {
@@ -10153,8 +10252,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 25
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 200,
 			display: 'Medium',
@@ -10165,11 +10262,30 @@ const skillData: Readonly<AnySkillData[]> = [
 	},
 	{
 		name: 'Wind Wall',
+		aliases: [
+			'Green Wall'
+		],
 		affinity: 'Support',
 		type: 'WALL',
-		unique: false,
 		cost: 18,
 		element: 'Wind'
+	},
+	{
+		name: 'Wings of Wisdom',
+		affinity: 'Support',
+		type: 'SUPPORT',
+		unique: null,
+		range: 'Party',
+		cost: 10,
+		flags: [
+			'Cure Non-Special Ailments'
+		],
+		buffs: [],
+		negate: false,
+		debuffs: [],
+		auto: [
+			'Accuracy/Evasion'
+		]
 	},
 	{
 		name: 'Witness Me',
@@ -10183,7 +10299,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Wrath Tempest',
 		affinity: 'Phys',
 		type: 'ATTACK',
-		unique: true,
+		unique: null,
 		accuracy: 98,
 		ailments: [],
 		cost: {
@@ -10207,7 +10323,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Yabusame Shot',
 		affinity: 'Phys',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 98,
 		ailments: [],
 		cost: {
@@ -10218,8 +10333,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			'Pierce',
 			'+200% Crit Rate'
 		],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 60,
 			display: 'Weak',
@@ -10232,7 +10345,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Youthful Wind',
 		affinity: 'Recovery',
 		type: 'RECOVERY',
-		unique: true,
+		unique: null,
 		range: 'Party',
 		cost: 25,
 		ailments: null,
@@ -10246,7 +10359,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Zan',
 		affinity: 'Force',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 98,
 		ailments: [],
 		cost: {
@@ -10254,8 +10366,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 10
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 130,
 			display: 'Weak',
@@ -10268,7 +10378,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Zanbarion',
 		affinity: 'Force',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 98,
 		ailments: [],
 		cost: {
@@ -10276,8 +10385,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 50
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 265,
 			display: 'Severe',
@@ -10290,7 +10397,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Zandyne',
 		affinity: 'Force',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 98,
 		ailments: [],
 		cost: {
@@ -10298,8 +10404,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 35
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 215,
 			display: 'Heavy',
@@ -10312,7 +10416,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Zanma',
 		affinity: 'Force',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 98,
 		ailments: [],
 		cost: {
@@ -10320,8 +10423,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 20
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 160,
 			display: 'Medium',
@@ -10334,7 +10435,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Zio',
 		affinity: 'Elec',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 98,
 		ailments: [],
 		cost: {
@@ -10342,8 +10442,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 10
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 130,
 			display: 'Weak',
@@ -10354,9 +10452,11 @@ const skillData: Readonly<AnySkillData[]> = [
 	},
 	{
 		name: 'Ziobarion',
+		aliases: [
+			'Thunder Reign'
+		],
 		affinity: 'Elec',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 98,
 		ailments: [],
 		cost: {
@@ -10364,8 +10464,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 50
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 265,
 			display: 'Severe',
@@ -10378,7 +10476,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Ziodyne',
 		affinity: 'Elec',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 98,
 		ailments: [],
 		cost: {
@@ -10386,8 +10483,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 35
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 215,
 			display: 'Heavy',
@@ -10400,7 +10495,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Zionga',
 		affinity: 'Elec',
 		type: 'ATTACK',
-		unique: false,
 		accuracy: 98,
 		ailments: [],
 		cost: {
@@ -10408,8 +10502,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 20
 		},
 		flags: [],
-		max: 1,
-		min: 1,
 		power: {
 			amount: 160,
 			display: 'Medium',

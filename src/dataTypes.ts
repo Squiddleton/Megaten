@@ -1,9 +1,9 @@
-import type { AilResistance, Ailment, AilmentName, AllyRange, AnyAffinity, AnyGame, AnyRange, Arcana, AttackCost, AttackPower, Barrier, Buff, Charge, CounterAffinity, CounterPower, DamagingAffinity, DemonAffinities, DemonResistances, DemonSkill, DemonStats, EnemyRange, EvasionBoostCriteria, HPMP, HPMPAil, LightDark, OneOrAllAilments, OneOrAllDamagingAffinities, PersonaGame, PostBattleStat, Race, RecoveryAmount, RegenCriteria, Resistance, SMTAffinity, Series, SiphonCriteria, SkillType, Stage } from './types';
+import type { AilResistance, Ailment, AilmentName, AllyRange, AnyAffinity, AnyGame, AnyRange, Arcana, AttackCost, AttackPower, Barrier, Buff, Charge, CounterAffinity, CounterPower, DamagingAffinity, DemonAffinities, DemonResistances, DemonSkill, DemonStats, EndureCriteria, EnemyRange, EvasionBoostCriteria, HPMP, HPMPAil, LightDark, OneOrAllAilments, OneOrAllDamagingAffinities, PersonaGame, PostBattleStat, Race, RecoveryAmount, RegenCriteria, Resistance, SMTAffinity, Series, SetAmount, SiphonCriteria, SkillType, Stage } from './types';
 
 /** Data used for constructing a Demon instance */
 export interface DemonData {
 	name: string;
-	aliases: string[];
+	aliases?: string[];
 	affinities: DemonAffinities;
 	arcana: Arcana | null;
 	race: Race | null;
@@ -33,9 +33,10 @@ export interface PersonaData extends DemonData {
 /** Data used for constructing a Skill instance */
 export interface SkillData {
 	name: string;
+	aliases?: string[];
 	affinity: AnyAffinity;
 	type: SkillType;
-	unique: boolean;
+	unique?: boolean | null;
 }
 
 export interface AilBoostSkillData extends SkillData {
@@ -70,8 +71,8 @@ export interface AttackSkillData extends SkillData {
 	ailments: Ailment[];
 	cost: AttackCost;
 	flags: string[];
-	max: number;
-	min: number;
+	max?: number;
+	min?: number;
 	power: AttackPower;
 	range: EnemyRange;
 	series: Series;
@@ -103,7 +104,7 @@ export interface BoostSkillData extends SkillData {
 	affinity: 'Passive';
 	type: 'BOOST';
 	amount: number;
-	element: OneOrAllDamagingAffinities | 'Recovery';
+	element: OneOrAllDamagingAffinities | 'Magic' | 'Recovery';
 	stacks: '+' | 'x';
 }
 
@@ -139,15 +140,15 @@ export interface CritBoostSkillData extends SkillData {
 export interface DefensiveSkillData extends SkillData {
 	affinity: 'Passive';
 	type: 'DEFENSIVE';
-	element: Exclude<DamagingAffinity, 'Almighty'>;
+	element: Exclude<DamagingAffinity, 'Almighty'> | 'Light/Dark';
 	newAffinity: Resistance;
 }
 
 export interface EndureSkillData extends SkillData {
 	affinity: 'Passive';
 	type: 'ENDURE';
-	instakill: boolean;
-	priority: number;
+	amount: number;
+	criteria: EndureCriteria | null;
 }
 
 export interface EvasionSkillData extends SkillData {
@@ -155,13 +156,7 @@ export interface EvasionSkillData extends SkillData {
 	type: 'EVASION';
 	amount: number;
 	criteria: EvasionBoostCriteria | null;
-	element: OneOrAllDamagingAffinities | 'Magic';
-}
-
-export interface HalveSkillData extends SkillData {
-	affinity: LightDark;
-	type: 'HALVE';
-	cost: number;
+	element: OneOrAllDamagingAffinities | 'Crit/Magic' | 'Magic';
 }
 
 export interface InstaKillBoostSkillData extends SkillData {
@@ -173,7 +168,8 @@ export interface InstaKillBoostSkillData extends SkillData {
 export interface MasterSkillData extends SkillData {
 	affinity: 'Passive';
 	type: 'MASTER';
-	stat: HPMP;
+	amount: number;
+	stat: HPMP | 'HPMP';
 }
 
 export interface MiscSkillData extends SkillData {
@@ -185,6 +181,7 @@ export interface MiscSkillData extends SkillData {
 export interface NaviSkillData extends SkillData {
 	affinity: 'Passive';
 	type: 'NAVI';
+	unique: null;
 	description: string;
 }
 
@@ -222,6 +219,13 @@ export interface RegenSkillData extends SkillData {
 	stat: HPMPAil;
 }
 
+export interface SetSkillData extends SkillData {
+	affinity: LightDark | 'Almighty';
+	amount: SetAmount;
+	type: 'SET';
+	cost: number | null;
+}
+
 export interface SiphonSkillData extends SkillData {
 	affinity: 'Passive';
 	type: 'SIPHON';
@@ -242,19 +246,27 @@ export interface SpringSkillData extends SkillData {
 	affinity: 'Passive';
 	type: 'SPRING';
 	amount: number;
+	percent: boolean;
 	stat: HPMP;
+}
+
+export interface SummonSkillData extends SkillData {
+	unique: null;
+	affinity: 'Misc';
+	type: 'SUMMON';
+	demon: string | null;
 }
 
 export interface SupportSkillData extends SkillData {
 	affinity: 'Support';
 	type: 'SUPPORT';
-	auto: (Barrier | Charge)[];
+	auto: (Barrier | Buff | Charge)[];
 	buffs: Buff[];
 	cost: number;
 	debuffs: Buff[];
+	flags: string[];
 	negate: boolean;
 	range: Exclude<AnyRange, 'Random'>;
-	surround: boolean;
 }
 
 export interface SusceptibilitySkillData extends SkillData {

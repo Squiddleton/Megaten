@@ -1,26 +1,31 @@
 import { normalize } from '@squiddleton/util';
-import type { AilBoostSkillData, AilDefensiveSkillData, AilmentSkillData, AttackSkillData, AutoBuffSkillData, BarrierBreakSkillData, BarrierSkillData, BoostSkillData, BreakSkillData, ChargeSkillData, CritBoostSkillData, CritSkillData, DefensiveSkillData, EndureSkillData, EvasionSkillData, HalveSkillData, InstaKillBoostSkillData, MasterSkillData, MiscSkillData, NaviSkillData, PersonaCounterSkillData, PostBattleSkillData, RecoverySkillData, RegenSkillData, SMTCounterSkillData, SiphonSkillData, SkillData, SpringSkillData, SupportSkillData, SusceptibilitySkillData, TauntSkillData, WallSkillData } from './dataTypes';
+import type { AilBoostSkillData, AilDefensiveSkillData, AilmentSkillData, AttackSkillData, AutoBuffSkillData, BarrierBreakSkillData, BarrierSkillData, BoostSkillData, BreakSkillData, ChargeSkillData, CritBoostSkillData, CritSkillData, DefensiveSkillData, EndureSkillData, EvasionSkillData, InstaKillBoostSkillData, MasterSkillData, MiscSkillData, NaviSkillData, PersonaCounterSkillData, PostBattleSkillData, RecoverySkillData, RegenSkillData, SMTCounterSkillData, SetSkillData, SiphonSkillData, SkillData, SpringSkillData, SummonSkillData, SupportSkillData, SusceptibilitySkillData, TauntSkillData, WallSkillData } from './dataTypes';
 import { MegatenError } from './error';
 import skillData from './skillData';
-import type { AilResistance, Ailment, AilmentName, AllyRange, AnyAffinity, AnyRange, AttackCost, AttackPower, Barrier, Buff, Charge, CounterAffinity, CounterPower, DamagingAffinity, EnemyRange, EvasionBoostCriteria, HPMP, HPMPAil, LightDark, OneOrAllAilments, OneOrAllDamagingAffinities, PostBattleStat, RecoveryAmount, RegenCriteria, Resistance, SMTAffinity, Series, SiphonCriteria, SkillType } from './types';
+import type { AilResistance, Ailment, AilmentName, AllyRange, AnyAffinity, AnyRange, AttackCost, AttackPower, Barrier, Buff, Charge, CounterAffinity, CounterPower, DamagingAffinity, EndureCriteria, EnemyRange, EvasionBoostCriteria, HPMP, HPMPAil, LightDark, OneOrAllAilments, OneOrAllDamagingAffinities, PostBattleStat, RecoveryAmount, RegenCriteria, Resistance, SMTAffinity, Series, SetAmount, SiphonCriteria, SkillType } from './types';
 
 export abstract class Skill implements SkillData {
 	/** The skill's name */
 	name: string;
+	/** Other names for the skill */
+	aliases: string[];
 	/** The skill's unique, normalized name */
 	devName: string;
-	/** Whether the skill is unique to any specific demon(s) */
-	unique: boolean;
+	/** Whether the skill is unique to any specific demon(s), or null if the demon is unfusable */
+	unique: boolean | null;
 	/** The skill's affinity */
-	abstract affinity: AnyAffinity;
+	affinity: AnyAffinity;
 	/** The skill's type */
-	abstract type: SkillType;
+	type: SkillType;
 	/** The skill's description */
 	abstract description: string;
-	constructor(data: SkillData) {
+	constructor(data: AnySkillData) {
 		this.name = data.name;
+		this.aliases = data.aliases ?? [];
 		this.devName = normalize(data.name);
-		this.unique = data.unique;
+		this.unique = data.unique === undefined ? false : data.unique;
+		this.affinity = data.affinity;
+		this.type = data.type;
 	}
 	/** Returns a string in "(Name): (Description)" format */
 	toString() {
@@ -40,7 +45,8 @@ export abstract class Skill implements SkillData {
 	static get(name: string, error: true): AnySkill;
 	static get(name: string, error?: boolean): AnySkill | null;
 	static get(name: string, error = false) {
-		const found = this.map.get(normalize(name)) ?? null;
+		const normalized = normalize(name);
+		const found = this.map.get(normalized) ?? this.array.find(skill => skill.aliases.some(alias => normalize(alias) === normalized)) ?? null;
 		if (error && found === null) throw new MegatenError(name, 'Skill');
 		return found;
 	}
@@ -48,8 +54,8 @@ export abstract class Skill implements SkillData {
 
 /** A skill that boosts the chance of afflicting ailments */
 export class AilBoostSkill extends Skill implements AilBoostSkillData {
-	affinity: 'Passive';
-	type: 'AILBOOST';
+	declare affinity: 'Passive';
+	declare type: 'AILBOOST';
 	description: string;
 	/** The ailment that the skill increases the odds of afflicting */
 	ailment: OneOrAllAilments;
@@ -60,8 +66,6 @@ export class AilBoostSkill extends Skill implements AilBoostSkillData {
 	constructor(data: AilBoostSkillData) {
 		const { ailment } = data;
 		super(data);
-		this.affinity = data.affinity;
-		this.type = data.type;
 		this.description = data.weather
 			? 'Increases chance of inflicting ailments during Rain/Snow.'
 			: `Increases chance of inflicting ${ailment === 'All' ? 'ailments' : ailment}.`;
@@ -73,8 +77,8 @@ export class AilBoostSkill extends Skill implements AilBoostSkillData {
 
 /** A skill that decreases the chance of being afflicted by an ailment */
 export class AilDefensiveSkill extends Skill implements AilDefensiveSkillData {
-	affinity: 'Passive';
-	type: 'AILDEFENSIVE';
+	declare affinity: 'Passive';
+	declare type: 'AILDEFENSIVE';
 	description: string;
 	/** The ailment whose odds of affliction are reduced by the skill */
 	ailment: OneOrAllAilments | 'Confuse/Fear/Rage/Despair';
@@ -83,8 +87,6 @@ export class AilDefensiveSkill extends Skill implements AilDefensiveSkillData {
 	constructor(data: AilDefensiveSkillData) {
 		const { ailment, resistance } = data;
 		super(data);
-		this.affinity = data.affinity;
-		this.type = data.type;
 		this.description = resistance === 'Resist'
 			? `Decreases chance of being inflicted with ${ailment}.`
 			: `Prevents infliction of ${ailment}.`;
@@ -95,8 +97,8 @@ export class AilDefensiveSkill extends Skill implements AilDefensiveSkillData {
 
 /** A skill that afflicts an ailment */
 export class AilmentSkill extends Skill implements AilmentSkillData {
-	affinity: 'Ailment';
-	type: 'AILMENT';
+	declare affinity: 'Ailment';
+	declare type: 'AILMENT';
 	description: string;
 	/** The ailments that the skill can afflict */
 	ailments: AilmentName[];
@@ -111,8 +113,6 @@ export class AilmentSkill extends Skill implements AilmentSkillData {
 	constructor(data: AilmentSkillData) {
 		const { ailments, flags, range } = data;
 		super(data);
-		this.affinity = data.affinity;
-		this.type = data.type;
 		this.description = `Chance of inflicting ${ailments.join(' and ')} to ${range === 'One' ? '1 foe' : 'all foes'}${flags.length === 0 ? '' : `and lowers ${flags.map(flag => flag.split(' ')[0]).join('')} by ${data.flags.every(flag => flag.includes('Greatly')) ? '2 ranks' : '1 rank'} for 3 turns.`}`;
 		this.ailments = ailments;
 		this.chance = data.chance;
@@ -124,8 +124,8 @@ export class AilmentSkill extends Skill implements AilmentSkillData {
 
 /** A skill that deals damage, potentially having other effects */
 export class AttackSkill extends Skill implements AttackSkillData {
-	affinity: DamagingAffinity;
-	type: 'ATTACK';
+	declare affinity: DamagingAffinity;
+	declare type: 'ATTACK';
 	description: string;
 	/** The skill's accuracy */
 	accuracy: number;
@@ -148,10 +148,8 @@ export class AttackSkill extends Skill implements AttackSkillData {
 	constructor(data: AttackSkillData) {
 		const { accuracy, affinity, ailments, flags, max, min, power, range, series } = data;
 		super(data);
-		this.affinity = affinity;
-		this.type = data.type;
 
-		const displayAffinity = `${power.display} ${this.affinity}`;
+		const displayAffinity = `${power.display} ${affinity}`;
 		const displayRange = {
 			One: '1 foe',
 			All: 'all foes',
@@ -161,10 +159,14 @@ export class AttackSkill extends Skill implements AttackSkillData {
 			this.description = `${displayAffinity} HP/MP drain attack to ${displayRange}.`;
 		}
 		else if (flags.includes('Drain HP')) {
-			this.description = `${displayAffinity} ${power.display === 'Weak' ? 'HP drain' : 'HP-draining'} attack to ${displayRange}.`;
+			this.description = flags.includes('Static Damage')
+				? `Drains ${power.amount} HP from ${displayRange}.`
+				: `${displayAffinity} ${power.display === 'Weak' ? 'HP drain' : 'HP-draining'} attack to ${displayRange}.`;
 		}
 		else if (flags.includes('Drain MP')) {
-			this.description = `${displayAffinity} MP drain attack to ${displayRange}.`;
+			this.description = flags.includes('Static Damage')
+				? `Drains ${power.amount} MP from ${displayRange}.`
+				: `${displayAffinity} MP drain attack to ${displayRange}.`;
 		}
 		else {
 			this.description = `${displayAffinity} damage to ${displayRange}${max === 1 ? '' : ` ${max === min ? max : `${min}-${max}`} times`}.`;
@@ -250,18 +252,18 @@ export class AttackSkill extends Skill implements AttackSkillData {
 		this.ailments = ailments;
 		this.cost = data.cost;
 		this.flags = flags;
-		this.max = data.max;
-		this.min = data.min;
+		this.max = max ?? 1;
+		this.min = min ?? 1;
 		this.power = power;
 		this.range = range;
-		this.series = data.series;
+		this.series = series;
 	}
 }
 
 /** A skill that automatically casts a buff at the start of battle */
 export class AutoBuffSkill extends Skill implements AutoBuffSkillData {
-	affinity: 'Passive';
-	type: 'AUTOBUFF';
+	declare affinity: 'Passive';
+	declare type: 'AUTOBUFF';
 	description: string;
 	/** The buff automatically applied by the skill */
 	buff: Exclude<Buff, 'Double Accuracy/Evasion' | 'Double Defense'>;
@@ -270,10 +272,8 @@ export class AutoBuffSkill extends Skill implements AutoBuffSkillData {
 	constructor(data: AutoBuffSkillData) {
 		const { buff, range } = data;
 		super(data);
-		this.affinity = data.affinity;
-		this.type = data.type;
 
-		let buffSkillName = { Attack: 'Tarukaja', Defense: 'Rakukaja', 'Accuracy/Evasion' : 'Sukukaja' }[buff];
+		let buffSkillName = { Attack: 'Tarukaja', Defense: 'Rakukaja', 'Accuracy/Evasion': 'Sukukaja' }[buff];
 		const isParty = range === 'Party';
 		if (isParty) {
 			buffSkillName = buffSkillName.toLowerCase();
@@ -287,8 +287,8 @@ export class AutoBuffSkill extends Skill implements AutoBuffSkillData {
 
 /** A skill that forms a barrier */
 export class BarrierSkill extends Skill implements BarrierSkillData {
-	affinity: 'Support';
-	type: 'BARRIER';
+	declare affinity: 'Support';
+	declare type: 'BARRIER';
 	description: string;
 	/** The barriers that the skill creates */
 	barriers: Barrier[];
@@ -298,8 +298,6 @@ export class BarrierSkill extends Skill implements BarrierSkillData {
 	range: Exclude<AllyRange, 'Self'>;
 	constructor(data: BarrierSkillData) {
 		super(data);
-		this.affinity = data.affinity;
-		this.type = data.type;
 
 		if (data.barriers.length > 1) {
 			this.description = 'Forms a barrier that reflects all attacks for all allies.';
@@ -342,8 +340,8 @@ export class BarrierSkill extends Skill implements BarrierSkillData {
 
 /** A skill that negates a barrier */
 export class BarrierBreakSkill extends Skill implements BarrierBreakSkillData {
-	affinity: 'Support';
-	type: 'BARRIERBREAK';
+	declare affinity: 'Support';
+	declare type: 'BARRIERBREAK';
 	description: string;
 	/** The barrier that the skill removes */
 	barrier: Barrier;
@@ -352,8 +350,6 @@ export class BarrierBreakSkill extends Skill implements BarrierBreakSkillData {
 	constructor(data: BarrierBreakSkillData) {
 		const { barrier } = data;
 		super(data);
-		this.affinity = data.affinity;
-		this.type = data.type;
 		this.description = `Negates ${barrier} on all foes.`;
 		this.barrier = barrier;
 		this.cost = data.cost;
@@ -362,20 +358,18 @@ export class BarrierBreakSkill extends Skill implements BarrierBreakSkillData {
 
 /** A skill that boosts the amount of damage/recovery of an affinity */
 export class BoostSkill extends Skill implements BoostSkillData {
-	affinity: 'Passive';
-	type: 'BOOST';
+	declare affinity: 'Passive';
+	declare type: 'BOOST';
 	description: string;
 	/** The amount that the element's damage is boosted by */
 	amount: number;
 	/** The affinity of the skills that the skill boosts */
-	element: OneOrAllDamagingAffinities | 'Recovery';
+	element: OneOrAllDamagingAffinities | 'Magic' | 'Recovery';
 	/** Whether the skill stacks additively or multiplicatively */
 	stacks: '+' | 'x';
 	constructor(data: BoostSkillData) {
 		const { amount, element, stacks } = data;
 		super(data);
-		this.affinity = data.affinity;
-		this.type = data.type;
 
 		if (element === 'All') this.description = 'Strengtens all attacks. Can stack.';
 		else if (stacks === 'x') this.description = `Strengthens ${element} skills by ${amount}%.`;
@@ -389,8 +383,8 @@ export class BoostSkill extends Skill implements BoostSkillData {
 
 /** A skill that negates an affinity resistance */
 export class BreakSkill extends Skill implements BreakSkillData {
-	affinity: 'Support';
-	type: 'BREAK';
+	declare affinity: 'Support';
+	declare type: 'BREAK';
 	description: string;
 	/** The skill's MP cost */
 	cost: number;
@@ -399,8 +393,6 @@ export class BreakSkill extends Skill implements BreakSkillData {
 	constructor(data: BreakSkillData) {
 		const { element } = data;
 		super(data);
-		this.affinity = data.affinity;
-		this.type = data.type;
 		this.description = `Negates ${element} resistance of all foes. Cannot negate ${element} Wall.`;
 		this.cost = data.cost;
 		this.element = element;
@@ -409,8 +401,8 @@ export class BreakSkill extends Skill implements BreakSkillData {
 
 /** A skill that casts a charge */
 export class ChargeSkill extends Skill implements ChargeSkillData {
-	affinity: 'Support';
-	type: 'CHARGE';
+	declare affinity: 'Support';
+	declare type: 'CHARGE';
 	description: string;
 	/** The charge that the skill casts */
 	charge: Charge;
@@ -421,8 +413,6 @@ export class ChargeSkill extends Skill implements ChargeSkillData {
 	constructor(data: ChargeSkillData) {
 		const { charge, range } = data;
 		super(data);
-		this.affinity = data.affinity;
-		this.type = data.type;
 
 		switch (charge) {
 			case 'Critical': {
@@ -450,8 +440,8 @@ export class ChargeSkill extends Skill implements ChargeSkillData {
 
 /** A skill that, when cast, increases the chance of landing critical hits */
 export class CritSkill extends Skill implements CritSkillData {
-	affinity: 'Support';
-	type: 'CRIT';
+	declare affinity: 'Support';
+	declare type: 'CRIT';
 	description: string;
 	/** The skill's MP cost */
 	cost: number;
@@ -460,8 +450,6 @@ export class CritSkill extends Skill implements CritSkillData {
 	constructor(data: CritSkillData) {
 		const { range } = data;
 		super(data);
-		this.affinity = data.affinity;
-		this.type = data.type;
 		this.description = `Increases chance of Critical for ${{ All: 'all', Ally: 'one ally', Party: 'all allies' }[range]} for 3 turns.`;
 		this.cost = data.cost;
 		this.range = range;
@@ -470,8 +458,8 @@ export class CritSkill extends Skill implements CritSkillData {
 
 /** A skill that passively increaes the chance of landing critical hits */
 export class CritBoostSkill extends Skill implements CritBoostSkillData {
-	affinity: 'Passive';
-	type: 'CRITBOOST';
+	declare affinity: 'Passive';
+	declare type: 'CRITBOOST';
 	description: string;
 	/** The amount that the skill boosts the chance of a critical hit */
 	amount: number;
@@ -480,8 +468,6 @@ export class CritBoostSkill extends Skill implements CritBoostSkillData {
 	constructor(data: CritBoostSkillData) {
 		const { criteria } = data;
 		super(data);
-		this.affinity = data.affinity;
-		this.type = data.type;
 
 		switch (criteria) {
 			case 'Ambush': {
@@ -502,18 +488,16 @@ export class CritBoostSkill extends Skill implements CritBoostSkillData {
 
 /** A skill that increases resistance to damage from an affinity */
 export class DefensiveSkill extends Skill implements DefensiveSkillData {
-	affinity: 'Passive';
-	type: 'DEFENSIVE';
+	declare affinity: 'Passive';
+	declare type: 'DEFENSIVE';
 	description: string;
 	/** The affinity that the skill increases resistance from */
-	element: Exclude<DamagingAffinity, 'Almighty'>;
+	element: Exclude<DamagingAffinity, 'Almighty'> | 'Light/Dark';
 	/** The skill user's new affinity to the element */
 	newAffinity: Resistance;
 	constructor(data: DefensiveSkillData) {
 		const { element, newAffinity } = data;
 		super(data);
-		this.affinity = data.affinity;
-		this.type = data.type;
 		this.description = {
 			Drain: `Absorbs damage from ${element} skills.`,
 			Repel: `Reflects ${element} skills.`,
@@ -527,47 +511,45 @@ export class DefensiveSkill extends Skill implements DefensiveSkillData {
 
 /** A skill that prevents the user from dying */
 export class EndureSkill extends Skill implements EndureSkillData {
-	affinity: 'Passive';
-	type: 'ENDURE';
+	declare affinity: 'Passive';
+	declare type: 'ENDURE';
 	description: string;
-	/** Whether the skill only triggers from instakill skills */
-	instakill: boolean;
-	/** The priority that the skill triggers compared to other EndureSkill instances; a higher priority will trigger earlier in battle */
-	priority: number;
+	/** The priority that the skill triggers compared to other EndureSkill instances (a higher priority will trigger earlier in battle), or the chance that the skill triggers */
+	amount: number;
+	/** The conditions that the skill triggers under, or null if always in effect */
+	criteria: EndureCriteria | null;
 	constructor(data: EndureSkillData) {
-		const { instakill, priority } = data;
+		const { amount, criteria } = data;
 		super(data);
-		this.affinity = data.affinity;
-		this.type = data.type;
 
-		if (instakill) this.description = 'Survive insta-kill skills with 1 HP.';
-		else if (priority === 1) this.description = 'Revives with 1 HP when KO\'d. Usable once per battle.';
+		if (criteria === 'Light/Dark') this.description = 'Survive insta-kill skills with 1 HP.';
+		else if (criteria !== null) this.description = `${amount}% chance to survive ${criteria} skills with 1 HP.`;
+		else if (amount === 1) this.description = 'Revives with 1 HP when KO\'d. Usable once per battle.';
 		else this.description = 'Endures lethal attack and fully heals HP once in battle.';
 
-		this.instakill = instakill;
-		this.priority = priority;
+		this.amount = amount;
+		this.criteria = criteria;
 	}
 }
 
 /** A skill that increases evasion from affinities */
 export class EvasionSkill extends Skill implements EvasionSkillData {
-	affinity: 'Passive';
-	type: 'EVASION';
+	declare affinity: 'Passive';
+	declare type: 'EVASION';
 	description: string;
-	/** The amount that the skill increases the chance of evading the elements by */
+	/** The amount that the skill increases the chance of evading the elements by or 0 if unknown */
 	amount: number;
 	/** The conditions that the skill triggers under, or null if always in effect */
 	criteria: EvasionBoostCriteria | null;
 	/** The affinity that the skill increases the chance of evading */
-	element: OneOrAllDamagingAffinities | 'Magic';
+	element: OneOrAllDamagingAffinities | 'Crit/Magic' | 'Magic';
 	constructor(data: EvasionSkillData) {
 		const { amount, criteria, element } = data;
 		super(data);
-		this.affinity = data.affinity;
-		this.type = data.type;
 
 		if (criteria === 'Rain/Snow') this.description = 'Greatly increases Evasion from all affinities during Rain/Snow.';
 		else if (criteria === 'Surrounded') this.description = 'Greatly decreases Accuracy of all foes\' attacks except Almighty when surrounded.';
+		else if (element === 'Crit/Magic') this.description = 'Increases Evasion from Critical and magical attacks.';
 		else if (element === 'Magic') this.description = 'Increases Evasion from all magical attacks except Almighty.';
 		else this.description = `${amount === 3 ? 'Greatly i' : 'I'}ncreases Evasion from ${element} skills.${amount === 3 ? ' Does not stack.' : ''}`;
 
@@ -577,34 +559,16 @@ export class EvasionSkill extends Skill implements EvasionSkillData {
 	}
 }
 
-/** A skill that halves an enemy's HP */
-export class HalveSkill extends Skill implements HalveSkillData {
-	affinity: LightDark;
-	type: 'HALVE';
-	description: string;
-	/** The skill's MP cost */
-	cost: number;
-	constructor(data: HalveSkillData) {
-		super(data);
-		this.affinity = data.affinity;
-		this.type = data.type;
-		this.description = `${this.affinity} attack that reduces HP of one foe by 50%.`;
-		this.cost = data.cost;
-	}
-}
-
 /** A skill that increases the chance of landing an instakill */
 export class InstaKillBoostSkill extends Skill implements InstaKillBoostSkillData {
-	affinity: 'Passive';
-	type: 'INSTAKILLBOOST';
+	declare affinity: 'Passive';
+	declare type: 'INSTAKILLBOOST';
 	description: string;
 	/** The affinity of the instakill skill that the skill boosts */
 	element: LightDark;
 	constructor(data: InstaKillBoostSkillData) {
 		const { element } = data;
 		super(data);
-		this.affinity = data.affinity;
-		this.type = data.type;
 		this.description = `Increases success rate of ${element === 'Light' ? 'Hama' : 'Mudo'} skills.`;
 		this.element = element;
 	}
@@ -612,32 +576,36 @@ export class InstaKillBoostSkill extends Skill implements InstaKillBoostSkillDat
 
 /** A skill that decreases the cost of skills */
 export class MasterSkill extends Skill implements MasterSkillData {
-	affinity: 'Passive';
-	type: 'MASTER';
+	declare affinity: 'Passive';
+	declare type: 'MASTER';
 	description: string;
+	/** The amount of the stat that skills' costs are reduced by */
+	amount: number;
 	/** The stat cost that the skill lowers */
-	stat: HPMP;
+	stat: HPMP | 'HPMP';
 	constructor(data: MasterSkillData) {
-		const { stat } = data;
+		const { amount, stat } = data;
 		super(data);
-		this.affinity = data.affinity;
-		this.type = data.type;
-		this.description = `Decreases ${stat} cost of skills by half.`;
+		const displayStat = {
+			HP: 'HP',
+			MP: 'SP',
+			HPMP: 'HP and SP'
+		}[stat];
+		this.description = `Decreases ${displayStat} cost of skills by ${amount}%.`;
+		this.amount = amount;
 		this.stat = stat;
 	}
 }
 
 /** A skill with miscellaneous (likely unique) effects */
 export class MiscSkill extends Skill implements MiscSkillData {
-	affinity: AnyAffinity;
-	type: 'MISC';
+	declare affinity: AnyAffinity;
+	declare type: 'MISC';
 	description: string;
 	/** The skill's MP cost, or null if the skill has a Passive affinity */
 	cost: number | null;
 	constructor(data: MiscSkillData) {
 		super(data);
-		this.affinity = data.affinity;
-		this.type = data.type;
 		this.description = data.description;
 		this.cost = data.cost;
 	}
@@ -645,29 +613,26 @@ export class MiscSkill extends Skill implements MiscSkillData {
 
 /** A skill learned by a navigator in the Persona serise */
 export class NaviSkill extends Skill implements NaviSkillData {
-	affinity: 'Passive';
-	type: 'NAVI';
+	declare unique: null;
+	declare affinity: 'Passive';
+	declare type: 'NAVI';
 	description: string;
 	constructor(data: NaviSkillData) {
 		super(data);
-		this.affinity = data.affinity;
-		this.type = data.type;
 		this.description = data.description;
 	}
 }
 
 /** A skill that may reflect physical damage */
 export class PersonaCounterSkill extends Skill implements PersonaCounterSkillData {
-	affinity: 'Passive';
-	type: 'PERSONACOUNTER';
+	declare affinity: 'Passive';
+	declare type: 'PERSONACOUNTER';
 	description: string;
 	/** The chance of countering attacks */
 	chance: number;
 	constructor(data: PersonaCounterSkillData) {
 		const { chance } = data;
 		super(data);
-		this.affinity = data.affinity;
-		this.type = data.type;
 		this.description = `${chance}% chance of reflecting physical attacks.`;
 		this.chance = chance;
 	}
@@ -675,8 +640,8 @@ export class PersonaCounterSkill extends Skill implements PersonaCounterSkillDat
 
 /** A skill that restores a stat when a battle ends */
 export class PostBattleSkill extends Skill implements PostBattleSkillData {
-	affinity: 'Passive';
-	type: 'POSTBATTLE';
+	declare affinity: 'Passive';
+	declare type: 'POSTBATTLE';
 	description: string;
 	/** The amount of the stat that the skill increases */
 	amount: number;
@@ -687,8 +652,6 @@ export class PostBattleSkill extends Skill implements PostBattleSkillData {
 	constructor(data: PostBattleSkillData) {
 		const { amount, inactive, stat } = data;
 		super(data);
-		this.affinity = data.affinity;
-		this.type = data.type;
 
 		switch (stat) {
 			case 'HP':
@@ -697,7 +660,9 @@ export class PostBattleSkill extends Skill implements PostBattleSkillData {
 				break;
 			}
 			case 'HPMP': {
-				this.description = 'Fully restores HP/MP after battle.';
+				this.description = amount === 100
+					? 'Fully restores HP/MP after battle.'
+					: `Restores ${amount}% HP and SP after battle.`;
 				break;
 			}
 			case 'EXP': {
@@ -720,8 +685,8 @@ export class PostBattleSkill extends Skill implements PostBattleSkillData {
 
 /** A skill that recovers HP, ailments, and/or casts buffs */
 export class RecoverySkill extends Skill implements RecoverySkillData {
-	affinity: 'Recovery';
-	type: 'RECOVERY';
+	declare affinity: 'Recovery';
+	declare type: 'RECOVERY';
 	description: string;
 	/** The ailments that the skill recovers from */
 	ailments: AilmentName[] | 'All' | null;
@@ -738,8 +703,6 @@ export class RecoverySkill extends Skill implements RecoverySkillData {
 	constructor(data: RecoverySkillData) {
 		const { ailments, amount, buffs, flags, range } = data;
 		super(data);
-		this.affinity = data.affinity;
-		this.type = data.type;
 
 		const isParty = range === 'Party';
 		if (ailments === 'All') {
@@ -776,8 +739,8 @@ export class RecoverySkill extends Skill implements RecoverySkillData {
 
 /** A skill that regenerates a stat each turn */
 export class RegenSkill extends Skill implements RegenSkillData {
-	affinity: 'Passive';
-	type: 'REGEN';
+	declare affinity: 'Passive';
+	declare type: 'REGEN';
 	description: string;
 	/** The amount of the stat that the skill recovers */
 	amount: number;
@@ -790,8 +753,6 @@ export class RegenSkill extends Skill implements RegenSkillData {
 	constructor(data: RegenSkillData) {
 		const { amount, criteria, stat } = data;
 		super(data);
-		this.affinity = data.affinity;
-		this.type = data.type;
 		this.description = {
 			HP: `Restores ${amount}% of max HP each turn in battle.`,
 			MP: criteria === 'Baton Pass' ? `Restores ${amount} SP after a Baton Pass.` : `Restores ${amount} MP each turn in battle.`,
@@ -805,10 +766,30 @@ export class RegenSkill extends Skill implements RegenSkillData {
 	}
 }
 
+/** A skill that sets an enemy's HP to a specific amount */
+export class SetSkill extends Skill implements SetSkillData {
+	declare affinity: LightDark | 'Almighty';
+	declare type: 'SET';
+	description: string;
+	/** The amount or percent of the enemy's current HP to be set */
+	amount: SetAmount;
+	/** The skill's MP cost, or null if enemy-exclusive */
+	cost: number | null;
+	constructor(data: SetSkillData) {
+		const { amount } = data;
+		super(data);
+		this.description = typeof amount === 'string'
+			? `${this.affinity} attack that reduces HP of one foe by ${amount}.`
+			: `Reduces enemy to ${amount} HP.`;
+		this.amount = amount;
+		this.cost = data.cost;
+	}
+}
+
 /** A skill that restores MP under certain criteria */
 export class SiphonSkill extends Skill implements SiphonSkillData {
-	affinity: 'Passive';
-	type: 'SIPHON';
+	declare affinity: 'Passive';
+	declare type: 'SIPHON';
 	description: string;
 	/** The amount of MP that the skill recovers */
 	amount: number;
@@ -817,8 +798,6 @@ export class SiphonSkill extends Skill implements SiphonSkillData {
 	constructor(data: SiphonSkillData) {
 		const { amount, criteria } = data;
 		super(data);
-		this.affinity = data.affinity;
-		this.type = data.type;
 		this.description = `${amount === 10 ? 'Low ' : ' '}MP recovery when ${criteria === 'Ailment' ? 'inflicting status ailments' : 'you strike a foe\'s weakness or land a Critical'}.`;
 		this.amount = amount;
 		this.criteria = criteria;
@@ -827,8 +806,8 @@ export class SiphonSkill extends Skill implements SiphonSkillData {
 
 /** A skill that automatically triggers when hit by a physical attack */
 export class SMTCounterSkill extends Skill implements SMTCounterSkillData {
-	affinity: 'Passive';
-	type: 'SMTCOUNTER';
+	declare affinity: 'Passive';
+	declare type: 'SMTCOUNTER';
 	description: string;
 	/** Whether the skill lowers the attack of the attacker */
 	attackDown: boolean;
@@ -841,8 +820,6 @@ export class SMTCounterSkill extends Skill implements SMTCounterSkillData {
 	constructor(data: SMTCounterSkillData) {
 		const { attackDown, element, power } = data;
 		super(data);
-		this.affinity = data.affinity;
-		this.type = data.type;
 		this.description = `Chance to counter Strength-based attacks with a ${power.display.toLowerCase()} ${element} attack.${this.name === 'Retaliate' ? ' Does not stack with Counter.' : ''}${attackDown ? ' Lowers target\'s Attack 1 rank for 3 turns.' : ''}`;
 		this.attackDown = attackDown;
 		this.chance = data.chance;
@@ -853,71 +830,93 @@ export class SMTCounterSkill extends Skill implements SMTCounterSkillData {
 
 /** A skill that increases the user's maximum HP or MP */
 export class SpringSkill extends Skill implements SpringSkillData {
-	affinity: 'Passive';
-	type: 'SPRING';
+	declare affinity: 'Passive';
+	declare type: 'SPRING';
 	description: string;
 	/** The amount that the stat is increased by */
 	amount: number;
+	/** Whether the amount is a percentage of its max instead of a fixed amount */
+	percent: boolean;
 	/** The stat whose maximum the skill increases */
 	stat: HPMP;
 	constructor(data: SpringSkillData) {
-		const { amount, stat } = data;
+		const { amount, percent, stat } = data;
 		super(data);
-		this.affinity = data.affinity;
-		this.type = data.type;
-		this.description = `${amount === 30 ? 'Greatly i' : 'I'}ncreases MAX ${stat}.`;
+		this.description = percent
+			? `Increases max ${stat.replace('MP', 'SP')} by ${amount}%.`
+			: `${amount === 30 ? 'Greatly i' : 'I'}ncreases MAX ${stat}.`;
 		this.amount = amount;
+		this.percent = percent;
 		this.stat = stat;
+	}
+}
+
+/** A skill that summons one or more demons as allies */
+export class SummonSkill extends Skill implements SummonSkillData {
+	declare unique: null;
+	declare affinity: 'Misc';
+	declare type: 'SUMMON';
+	description: string;
+	/** The summoned demon's name or null if unknown */
+	demon: string | null;
+	constructor(data: SummonSkillData) {
+		super(data);
+		this.description = 'Summons allies.';
+		this.demon = data.demon;
 	}
 }
 
 /** A skill that casts buffs, debuffs, or negates those on either allies or enemies */
 export class SupportSkill extends Skill implements SupportSkillData {
-	affinity: 'Support';
-	type: 'SUPPORT';
+	declare affinity: 'Support';
+	declare type: 'SUPPORT';
 	description: string;
 	/** The barriers or charges automatically cast by having the skill */
-	auto: (Barrier | Charge)[];
+	auto: (Barrier | Buff | Charge)[];
 	/** The buffs cast by the skill */
 	buffs: Buff[];
 	/** The skill's MP cost */
 	cost: number;
 	/** The debuffs cast by the skill */
 	debuffs: Buff[];
+	/** The skill's special or notable features */
+	flags: string[];
 	/** Whether the skill negates its buffs or debuffs from enemies or allies, respectively */
 	negate: boolean;
 	/** The range that the skill targets */
 	range: Exclude<AnyRange, 'Random'>;
-	/** Whether the skill only takes effect when surrounded */
-	surround: boolean;
 	constructor(data: SupportSkillData) {
-		const { buffs, debuffs, negate, range, surround } = data;
+		const { buffs, debuffs, flags, negate, range } = data;
 		super(data);
-		this.affinity = data.affinity;
-		this.type = data.type;
 
 		const isAllyRangeFunc = (r: Exclude<AnyRange, 'Random'>): r is AllyRange => ['Ally', 'Party'].includes(range);
 		const isAllyRange = isAllyRangeFunc(range);
-		this.description = negate
-			? `Negates status ${isAllyRange ? 'de' : ''}buff effects on all ${isAllyRange ? 'allies' : 'foes'}.`
-			: isAllyRange
-				? `Raises ${buffs.length === 3 ? 'all stats' : buffs.join('/')} of ${range === 'Party' ? 'all allies' : '1 ally'} by ${buffs[0].includes('Double') ? '2 ranks' : '1 rank'} for 3 turns${surround ? ' when surrounded' : ''}.`
-				: `Lowers ${debuffs.length === 3 ? 'all stats' : debuffs.join('/')} of ${range === 'All' ? 'all foes' : '1 foe'} by ${debuffs[0].includes('Double') ? '2 ranks' : '1 rank'} for 3 turns.`;
+		if (flags.includes('Cure Non-Special Ailments')) {
+			this.description = 'Cures all non-special ailments for all allies.';
+		}
+		else {
+			this.description = negate
+				? `Negates status ${isAllyRange ? 'de' : ''}buff effects on all ${isAllyRange ? 'allies' : 'foes'}.`
+				: isAllyRange
+					? `Raises ${buffs.length === 3 ? 'all stats' : buffs.join('/')} of ${range === 'Party' ? 'all allies' : '1 ally'} by ${buffs[0].includes('Double') ? '2 ranks' : '1 rank'} for 3 turns${flags.includes('Surrounded Only') ? ' when surrounded' : ''}.`
+					: `Lowers ${debuffs.length === 3 ? 'all stats' : debuffs.join('/')} of ${range === 'All' ? 'all foes' : '1 foe'} by ${debuffs[0].includes('Double') ? '2 ranks' : '1 rank'} for 3 turns.`;
+
+		}
 
 		this.auto = data.auto;
 		this.buffs = buffs;
 		this.cost = data.cost;
 		this.debuffs = debuffs;
+		this.flags = flags;
 		this.negate = negate;
 		this.range = range;
-		this.surround = surround;
 	}
 }
 
 /** A skill that increases the target's susceptibility to ailments */
 export class SusceptibilitySkill extends Skill implements SusceptibilitySkillData {
-	affinity: 'Almighty';
-	type: 'SUSCEPTIBILITY';
+	declare affinity: 'Almighty';
+	declare type: 'SUSCEPTIBILITY';
 	description: string;
 	/** The skill's MP cost */
 	cost: number;
@@ -926,8 +925,6 @@ export class SusceptibilitySkill extends Skill implements SusceptibilitySkillDat
 	constructor(data: SusceptibilitySkillData) {
 		const { range } = data;
 		super(data);
-		this.affinity = data.affinity;
-		this.type = data.type;
 		this.description = `Increases chance of inflicting ailments to ${range === 'All' ? 'all' : 'one foe'}.`;
 		this.cost = data.cost;
 		this.range = range;
@@ -936,30 +933,30 @@ export class SusceptibilitySkill extends Skill implements SusceptibilitySkillDat
 
 /** A skill that increases the chance of enemies targeting the user */
 export class TauntSkill extends Skill implements TauntSkillData {
-	affinity: 'Support';
-	type: 'TAUNT';
+	declare affinity: 'Support';
+	declare type: 'TAUNT';
 	description: string;
 	/** The buff cast by the skill */
 	buff: Buff | null;
 	/** The skill's MP cost */
 	cost: number;
 	constructor(data: TauntSkillData) {
-		const { buff } = data;
+		const { buff, cost } = data;
 		super(data);
-		this.affinity = data.affinity;
-		this.type = data.type;
 		this.description = buff === null
-			? 'Raises chances of being targed by foes for 3 turns.'
+			? cost === 4
+				? 'Raises own chances of being targeted by foes.'
+				: 'Raises chances of being targeted by foes for 3 turns.'
 			: `Draws enemy hostility, but increases your ${buff} ${buff.includes('Double') ? '2 tiers' : 'by 1 rank'} for 3 turns.`;
 		this.buff = buff;
-		this.cost = data.cost;
+		this.cost = cost;
 	}
 }
 
 /** A skill that temporarily increases an ally's resistance to damage from an affinity */
 export class WallSkill extends Skill implements WallSkillData {
-	affinity: 'Support';
-	type: 'WALL';
+	declare affinity: 'Support';
+	declare type: 'WALL';
 	description: string;
 	/** The skill's MP cost */
 	cost: number;
@@ -968,8 +965,6 @@ export class WallSkill extends Skill implements WallSkillData {
 	constructor(data: WallSkillData) {
 		const { element } = data;
 		super(data);
-		this.affinity = data.affinity;
-		this.type = data.type;
 		this.description = `Adds ${element} resistance to one ally for 3 turns.`;
 		this.cost = data.cost;
 		this.element = element;
@@ -993,7 +988,6 @@ Skill.array = skillData.map(data => {
 		case 'DEFENSIVE': return new DefensiveSkill(data);
 		case 'ENDURE': return new EndureSkill(data);
 		case 'EVASION': return new EvasionSkill(data);
-		case 'HALVE': return new HalveSkill(data);
 		case 'INSTAKILLBOOST': return new InstaKillBoostSkill(data);
 		case 'MASTER': return new MasterSkill(data);
 		case 'MISC': return new MiscSkill(data);
@@ -1002,9 +996,11 @@ Skill.array = skillData.map(data => {
 		case 'POSTBATTLE': return new PostBattleSkill(data);
 		case 'RECOVERY': return new RecoverySkill(data);
 		case 'REGEN': return new RegenSkill(data);
+		case 'SET': return new SetSkill(data);
 		case 'SIPHON': return new SiphonSkill(data);
 		case 'SMTCOUNTER': return new SMTCounterSkill(data);
 		case 'SPRING': return new SpringSkill(data);
+		case 'SUMMON': return new SummonSkill(data);
 		case 'SUPPORT': return new SupportSkill(data);
 		case 'SUSCEPTIBILITY': return new SusceptibilitySkill(data);
 		case 'TAUNT': return new TauntSkill(data);
@@ -1013,10 +1009,6 @@ Skill.array = skillData.map(data => {
 });
 Skill.map = new Map(Skill.array.map(skill => [skill.devName, skill]));
 
-export type AnySkillData = AilBoostSkillData | AilDefensiveSkillData | AilmentSkillData | AttackSkillData | AutoBuffSkillData | BarrierSkillData | BarrierBreakSkillData | BoostSkillData | BreakSkillData
-| ChargeSkillData | CritSkillData | CritBoostSkillData | DefensiveSkillData | EndureSkillData | EvasionSkillData | HalveSkillData | InstaKillBoostSkillData | MasterSkillData | MiscSkillData | NaviSkillData
-| PersonaCounterSkillData | PostBattleSkillData | RecoverySkillData | RegenSkillData | SiphonSkillData | SMTCounterSkillData | SpringSkillData | SupportSkillData | SusceptibilitySkillData | TauntSkillData | WallSkillData;
+export type AnySkillData = AilBoostSkillData | AilDefensiveSkillData | AilmentSkillData | AttackSkillData | AutoBuffSkillData | BarrierSkillData | BarrierBreakSkillData | BoostSkillData | BreakSkillData | ChargeSkillData | CritSkillData | CritBoostSkillData | DefensiveSkillData | EndureSkillData | EvasionSkillData | InstaKillBoostSkillData | MasterSkillData | MiscSkillData | NaviSkillData | PersonaCounterSkillData | PostBattleSkillData | RecoverySkillData | RegenSkillData | SetSkillData | SiphonSkillData | SMTCounterSkillData | SpringSkillData | SummonSkillData | SupportSkillData | SusceptibilitySkillData | TauntSkillData | WallSkillData;
 
-export type AnySkill = AilBoostSkill | AilDefensiveSkill | AilmentSkill | AttackSkill | AutoBuffSkill | BarrierSkill | BarrierBreakSkill | BoostSkill | BreakSkill
-| ChargeSkill | CritSkill | CritBoostSkill | DefensiveSkill | EndureSkill | EvasionSkill | HalveSkill | InstaKillBoostSkill | MasterSkill | MiscSkill | NaviSkill
-| PersonaCounterSkill | PostBattleSkill | RecoverySkill | RegenSkill | SiphonSkill | SMTCounterSkill | SpringSkill | SupportSkill | SusceptibilitySkill | TauntSkill | WallSkill;
+export type AnySkill = AilBoostSkill | AilDefensiveSkill | AilmentSkill | AttackSkill | AutoBuffSkill | BarrierSkill | BarrierBreakSkill | BoostSkill | BreakSkill | ChargeSkill | CritSkill | CritBoostSkill | DefensiveSkill | EndureSkill | EvasionSkill | SetSkill | InstaKillBoostSkill | MasterSkill | MiscSkill | NaviSkill | PersonaCounterSkill | PostBattleSkill | RecoverySkill | RegenSkill | SetSkill | SiphonSkill | SMTCounterSkill | SpringSkill | SummonSkill | SupportSkill | SusceptibilitySkill | TauntSkill | WallSkill;
