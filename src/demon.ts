@@ -7,7 +7,7 @@ import { MegatenError } from './error';
 import { AnySkill, Skill } from './skill';
 import type { Alignment, AnyGame, Arcana, DemonAffinities, DemonResistances, DemonSkill, DemonStats, If, PersonaGame, PersonaRace, SMTRace, Stage } from './types';
 
-function isPersona(demon: Demon | DemonData<boolean>): demon is Persona {
+function isPersona(demon: Demon | DemonData): demon is Persona {
 	return demon.race === 'Persona';
 }
 

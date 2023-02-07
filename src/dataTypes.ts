@@ -1,7 +1,7 @@
 import type { AilResistance, Ailment, AilmentName, Alignment, AllyRange, AnyAffinity, AnyGame, AnyRange, Arcana, AttackCost, AttackPower, Barrier, Buff, Charge, CounterAffinity, CounterPower, DamagingAffinity, DemonAffinities, DemonResistances, DemonSkill, DemonStats, EndureCriteria, EnemyRange, EvasionBoostCriteria, HPMP, HPMPAil, If, LightDark, NumberOrPercent, OneOrAllAilments, OneOrAllDamagingAffinities, PersonaGame, PersonaRace, PostBattleStat, RecoveryAmount, RegenCriteria, Resistance, SMTAffinity, SMTRace, Series, SiphonCriteria, SkillType, Stage } from './types';
 
 /** Data used for constructing a Demon instance */
-export interface DemonData<PersonaBased extends boolean> {
+export interface DemonData<PersonaBased extends boolean = boolean> {
 	name: string;
 	aliases?: string[];
 	affinities: DemonAffinities<PersonaBased>;
