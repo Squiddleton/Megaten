@@ -5,9 +5,7 @@ import type { DemonData, PersonaData } from './dataTypes';
 import demonData from './demonData';
 import { MegatenError } from './error';
 import { AnySkill, Skill } from './skill';
-import type { Alignment, AnyGame, AnyRace, Arcana, DemonAffinities, DemonResistances, DemonSkill, DemonStats, If, PersonaGame, PersonaRace, SMTRace, Stage } from './types';
-
-const personaRaces: AnyRace[] = ['Persona', 'Picaro', 'Treasure'];
+import type { Alignment, AnyGame, Arcana, DemonAffinities, DemonResistances, DemonSkill, DemonStats, If, PersonaGame, PersonaRace, SMTRace, Stage } from './types';
 
 function isPersona(demon: Demon | DemonData): demon is Persona {
 	return demon.race === 'Persona';
@@ -66,7 +64,7 @@ export class Demon<PersonaBased extends boolean = boolean> implements DemonData<
 	}
 	/** Whether this demon originated in a Persona game */
 	isPersonaBased(): this is Demon<true> {
-		return this.race !== null && personaRaces.includes(this.race);
+		return this.race !== null && ['Persona', 'Picaro', 'Treasure'].includes(this.race);
 	}
 	/** Whether this demon originated in a Shin Megami Tensei game */
 	isSMTBased(): this is Demon<false> {
