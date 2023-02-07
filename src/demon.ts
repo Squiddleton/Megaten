@@ -39,8 +39,8 @@ export class Demon<PersonaBased extends boolean = boolean> implements DemonData<
 	/** The game that this demon's data originates from */
 	game: If<PersonaBased, PersonaGame, AnyGame>;
 	alignment: Alignment<PersonaBased>;
-	/** The demon's backstory */
-	lore: string;
+	/** The demon's backstory, or null for older Personas */
+	lore: If<PersonaBased, string | null, string>;
 	constructor(data: DemonData<PersonaBased>) {
 		this.name = data.name;
 		this.devName = normalize(data.name);

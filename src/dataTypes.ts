@@ -15,7 +15,7 @@ export interface DemonData<PersonaBased extends boolean = boolean> {
 	resistances: DemonResistances<PersonaBased>;
 	game: If<PersonaBased, PersonaGame, AnyGame>;
 	alignment: Alignment<PersonaBased>;
-	lore: string;
+	lore: If<PersonaBased, string | null, string>;
 }
 
 /** Data used for constructing a Persona instance */
