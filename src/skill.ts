@@ -2,7 +2,7 @@ import { normalize } from '@squiddleton/util';
 import type { AilBoostSkillData, AilDefensiveSkillData, AilmentSkillData, AttackSkillData, AutoBuffSkillData, BarrierBreakSkillData, BarrierSkillData, BoostSkillData, BreakSkillData, ChargeSkillData, CritBoostSkillData, CritSkillData, DefensiveSkillData, EndureSkillData, EvasionSkillData, InstaKillBoostSkillData, MasterSkillData, MiscSkillData, NaviSkillData, PersonaCounterSkillData, PostBattleSkillData, RecoverySkillData, RegenSkillData, SMTCounterSkillData, SetSkillData, SiphonSkillData, SkillData, SpringSkillData, SummonSkillData, SupportSkillData, SusceptibilitySkillData, TauntSkillData, WallSkillData } from './dataTypes';
 import { MegatenError } from './error';
 import skillData from './skillData';
-import type { AilResistance, Ailment, AilmentName, AllyRange, AnyAffinity, AnyRange, AttackCost, AttackPower, Barrier, Buff, Charge, CounterAffinity, CounterPower, DamagingAffinity, EndureCriteria, EnemyRange, EvasionBoostCriteria, HPMP, HPMPAil, LightDark, OneOrAllAilments, OneOrAllDamagingAffinities, PostBattleStat, RecoveryAmount, RegenCriteria, Resistance, SMTAffinity, Series, SetAmount, SiphonCriteria, SkillType } from './types';
+import type { AilResistance, Ailment, AilmentName, AllyRange, AnyAffinity, AnyRange, AttackCost, AttackPower, Barrier, Buff, Charge, CounterAffinity, CounterPower, DamagingAffinity, EndureCriteria, EnemyRange, EvasionBoostCriteria, HPMP, HPMPAil, LightDark, NumberOrPercent, OneOrAllAilments, OneOrAllDamagingAffinities, PostBattleStat, RecoveryAmount, RegenCriteria, Resistance, SMTAffinity, Series, SiphonCriteria, SkillType } from './types';
 
 export abstract class Skill implements SkillData {
 	/** The skill's name */
@@ -111,9 +111,9 @@ export class AilmentSkill extends Skill implements AilmentSkillData {
 	/** The range that the skill targets */
 	range: Exclude<EnemyRange, 'Random'>;
 	constructor(data: AilmentSkillData) {
-		const { ailments, flags, range } = data;
+		const { ailments, flags = [], range } = data;
 		super(data);
-		this.description = `Chance of inflicting ${ailments.join(' and ')} to ${range === 'One' ? '1 foe' : 'all foes'}${flags.length === 0 ? '' : `and lowers ${flags.map(flag => flag.split(' ')[0]).join('')} by ${data.flags.every(flag => flag.includes('Greatly')) ? '2 ranks' : '1 rank'} for 3 turns.`}`;
+		this.description = `Chance of inflicting ${ailments.join(' and ')} to ${range === 'One' ? '1 foe' : 'all foes'}${flags.length === 0 ? '' : `and lowers ${flags.map(flag => flag.split(' ')[0]).join('')} by ${flags.every(flag => flag.includes('Greatly')) ? '2 ranks' : '1 rank'} for 3 turns.`}`;
 		this.ailments = ailments;
 		this.chance = data.chance;
 		this.cost = data.cost;
@@ -146,7 +146,7 @@ export class AttackSkill extends Skill implements AttackSkillData {
 	/** The series that the skill data originates from */
 	series: Series;
 	constructor(data: AttackSkillData) {
-		const { accuracy, affinity, ailments, flags, max, min, power, range, series } = data;
+		const { accuracy, affinity, ailments = [], flags = [], max = 1, min = 1, power, range, series } = data;
 		super(data);
 
 		const displayAffinity = `${power.display} ${affinity}`;
@@ -171,6 +171,7 @@ export class AttackSkill extends Skill implements AttackSkillData {
 		else {
 			this.description = `${displayAffinity} damage to ${displayRange}${max === 1 ? '' : ` ${max === min ? max : `${min}-${max}`} times`}.`;
 		}
+
 		if (ailments.length > 0) {
 			this.description += ` Chance of inflicting ${ailments.map(a => a.name).join('/')}.`;
 		}
@@ -252,8 +253,8 @@ export class AttackSkill extends Skill implements AttackSkillData {
 		this.ailments = ailments;
 		this.cost = data.cost;
 		this.flags = flags;
-		this.max = max ?? 1;
-		this.min = min ?? 1;
+		this.max = max;
+		this.min = min;
 		this.power = power;
 		this.range = range;
 		this.series = series;
@@ -689,8 +690,8 @@ export class RecoverySkill extends Skill implements RecoverySkillData {
 	declare type: 'RECOVERY';
 	description: string;
 	/** The ailments that the skill recovers from */
-	ailments: AilmentName[] | 'All' | null;
-	/** The displayed amount that the skill recovers by */
+	ailments: AilmentName[] | 'All';
+	/** The displayed amount that the skill heals, or null if it does not heal */
 	amount: RecoveryAmount | null;
 	/** The buffs that the skill casts */
 	buffs: Buff[];
@@ -701,7 +702,7 @@ export class RecoverySkill extends Skill implements RecoverySkillData {
 	/** The range that the skill targets */
 	range: Exclude<AllyRange, 'Self'>;
 	constructor(data: RecoverySkillData) {
-		const { ailments, amount, buffs, flags, range } = data;
+		const { ailments = [], amount, buffs = [], flags = [], range } = data;
 		super(data);
 
 		const isParty = range === 'Party';
@@ -710,7 +711,7 @@ export class RecoverySkill extends Skill implements RecoverySkillData {
 				? `Cure status ailments on ${isParty ? 'all allies' : '1 ally'}.`
 				: `${amount} HP recovery and cures status ailments${flags.includes('Revert Debuffs') ? '/debuffs' : ''} for ${isParty ? 'all allies' : '1 ally'}.`;
 		}
-		else if (ailments !== null) {
+		else if (ailments.length > 0) {
 			this.description = `Cures ${ailments.join('/')} for ${isParty ? 'all allies' : 'one ally'}.`;
 		}
 		else if (flags.includes('Negate')) {
@@ -743,25 +744,22 @@ export class RegenSkill extends Skill implements RegenSkillData {
 	declare type: 'REGEN';
 	description: string;
 	/** The amount of the stat that the skill recovers */
-	amount: number;
+	amount: NumberOrPercent;
 	/** The criteria for the skill taking effect, or null if always in effect */
 	criteria: RegenCriteria | null;
-	/** Whether the amount is a percentage of its max instead of a fixed amount */
-	percent: boolean;
 	/** The stat that the skill recovers */
 	stat: HPMPAil;
 	constructor(data: RegenSkillData) {
 		const { amount, criteria, stat } = data;
 		super(data);
 		this.description = {
-			HP: `Restores ${amount}% of max HP each turn in battle.`,
+			HP: `Restores ${amount} of max HP each turn in battle.`,
 			MP: criteria === 'Baton Pass' ? `Restores ${amount} SP after a Baton Pass.` : `Restores ${amount} MP each turn in battle.`,
-			HPMP: criteria === 'Ambush' ? `Restores 5% max HP and ${amount} SP each turn during an Ambush.` : `Restores ${amount}% HP and ${amount} SP each turn in battle.`,
+			HPMP: criteria === 'Ambush' && typeof amount === 'number' ? `Restores ${amount / 2}% max HP and ${amount} SP each turn during an Ambush.` : `Restores ${amount}% HP and ${amount} SP each turn in battle.`,
 			AIL: amount === 1 ? 'Decreases recovery time from ailments by half.' : 'Decreases recovery time from ailments to 1 turn.'
 		}[stat];
 		this.amount = amount;
 		this.criteria = criteria;
-		this.percent = data.percent;
 		this.stat = stat;
 	}
 }
@@ -771,8 +769,8 @@ export class SetSkill extends Skill implements SetSkillData {
 	declare affinity: LightDark | 'Almighty';
 	declare type: 'SET';
 	description: string;
-	/** The amount or percent of the enemy's current HP to be set */
-	amount: SetAmount;
+	/** The amount of the enemy's current HP that it will be set to */
+	amount: NumberOrPercent;
 	/** The skill's MP cost, or null if enemy-exclusive */
 	cost: number | null;
 	constructor(data: SetSkillData) {
@@ -834,19 +832,16 @@ export class SpringSkill extends Skill implements SpringSkillData {
 	declare type: 'SPRING';
 	description: string;
 	/** The amount that the stat is increased by */
-	amount: number;
-	/** Whether the amount is a percentage of its max instead of a fixed amount */
-	percent: boolean;
+	amount: NumberOrPercent;
 	/** The stat whose maximum the skill increases */
 	stat: HPMP;
 	constructor(data: SpringSkillData) {
-		const { amount, percent, stat } = data;
+		const { amount, stat } = data;
 		super(data);
-		this.description = percent
-			? `Increases max ${stat.replace('MP', 'SP')} by ${amount}%.`
+		this.description = typeof amount === 'string'
+			? `Increases max ${stat.replace('MP', 'SP')} by ${amount}.`
 			: `${amount === 30 ? 'Greatly i' : 'I'}ncreases MAX ${stat}.`;
 		this.amount = amount;
-		this.percent = percent;
 		this.stat = stat;
 	}
 }
@@ -886,7 +881,7 @@ export class SupportSkill extends Skill implements SupportSkillData {
 	/** The range that the skill targets */
 	range: Exclude<AnyRange, 'Random'>;
 	constructor(data: SupportSkillData) {
-		const { buffs, debuffs, flags, negate, range } = data;
+		const { buffs, debuffs, flags = [], negate, range } = data;
 		super(data);
 
 		const isAllyRangeFunc = (r: Exclude<AnyRange, 'Random'>): r is AllyRange => ['Ally', 'Party'].includes(range);

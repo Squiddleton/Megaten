@@ -126,6 +126,9 @@ export type HPMPAil = HPMP | 'HPMP' | 'AIL';
 /** The stat which a PostBattleSkill instance increases */
 export type PostBattleStat = HPMP | 'HPMP' | 'EXP' | 'Money';
 
+/** A static number or a percentage */
+export type NumberOrPercent = number | `${number}%`;
+
 /** Affinities exclusive to the Persona series */
 export type PersonaAffinity = 'Gun' | 'Wind' | 'Psy' | 'Nuke';
 /** Affinities exclusive to the SMT series */
@@ -162,11 +165,10 @@ export type RegenCriteria = 'Ambush' | 'Baton Pass' | 'Turn Start';
 /** Series that Skill data can originate from */
 export type Series = 'persona' | 'smt';
 
-export type SetAmount = number | `${number}%`;
-
 /** Criteria causing SiphonSkill instances to take effect */
 export type SiphonCriteria = 'Ailment' | 'Weakness/Critical' | 'Drain';
 
+/** The effectiveness of a demon's skills based on the skills' affinities */
 export type SkillPotential = Record<Exclude<AnyAffinity, PersonaAffinity | 'Passive' | 'Misc'>, number>;
 
 /** Skill instances' types */

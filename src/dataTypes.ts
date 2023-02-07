@@ -1,4 +1,4 @@
-import type { AilResistance, Ailment, AilmentName, AllyRange, AnyAffinity, AnyGame, AnyRange, Arcana, AttackCost, AttackPower, Barrier, Buff, Charge, CounterAffinity, CounterPower, DamagingAffinity, DemonAffinities, DemonResistances, DemonSkill, DemonStats, EndureCriteria, EnemyRange, EvasionBoostCriteria, HPMP, HPMPAil, LightDark, OneOrAllAilments, OneOrAllDamagingAffinities, PersonaGame, PostBattleStat, Race, RecoveryAmount, RegenCriteria, Resistance, SMTAffinity, Series, SetAmount, SiphonCriteria, SkillType, Stage } from './types';
+import type { AilResistance, Ailment, AilmentName, AllyRange, AnyAffinity, AnyGame, AnyRange, Arcana, AttackCost, AttackPower, Barrier, Buff, Charge, CounterAffinity, CounterPower, DamagingAffinity, DemonAffinities, DemonResistances, DemonSkill, DemonStats, EndureCriteria, EnemyRange, EvasionBoostCriteria, HPMP, HPMPAil, LightDark, NumberOrPercent, OneOrAllAilments, OneOrAllDamagingAffinities, PersonaGame, PostBattleStat, Race, RecoveryAmount, RegenCriteria, Resistance, SMTAffinity, Series, SiphonCriteria, SkillType, Stage } from './types';
 
 /** Data used for constructing a Demon instance */
 export interface DemonData {
@@ -60,7 +60,7 @@ export interface AilmentSkillData extends SkillData {
 	ailments: AilmentName[];
 	chance: number;
 	cost: number;
-	flags: string[];
+	flags?: string[];
 	range: Exclude<EnemyRange, 'Random'>;
 }
 
@@ -68,9 +68,9 @@ export interface AttackSkillData extends SkillData {
 	affinity: DamagingAffinity;
 	type: 'ATTACK';
 	accuracy: number;
-	ailments: Ailment[];
+	ailments?: Ailment[];
 	cost: AttackCost;
-	flags: string[];
+	flags?: string[];
 	max?: number;
 	min?: number;
 	power: AttackPower;
@@ -202,26 +202,25 @@ export interface PostBattleSkillData extends SkillData {
 export interface RecoverySkillData extends SkillData {
 	affinity: 'Recovery';
 	type: 'RECOVERY';
-	ailments: AilmentName[] | 'All' | null;
+	ailments?: AilmentName[] | 'All';
 	amount: RecoveryAmount | null;
-	buffs: Buff[];
+	buffs?: Buff[];
 	cost: number;
-	flags: string[];
+	flags?: string[];
 	range: Exclude<AllyRange, 'Self'>;
 }
 
 export interface RegenSkillData extends SkillData {
 	affinity: 'Passive';
 	type: 'REGEN';
-	amount: number;
+	amount: NumberOrPercent;
 	criteria: RegenCriteria | null;
-	percent: boolean;
 	stat: HPMPAil;
 }
 
 export interface SetSkillData extends SkillData {
 	affinity: LightDark | 'Almighty';
-	amount: SetAmount;
+	amount: NumberOrPercent;
 	type: 'SET';
 	cost: number | null;
 }
@@ -245,8 +244,7 @@ export interface SMTCounterSkillData extends SkillData {
 export interface SpringSkillData extends SkillData {
 	affinity: 'Passive';
 	type: 'SPRING';
-	amount: number;
-	percent: boolean;
+	amount: NumberOrPercent;
 	stat: HPMP;
 }
 
@@ -264,7 +262,7 @@ export interface SupportSkillData extends SkillData {
 	buffs: Buff[];
 	cost: number;
 	debuffs: Buff[];
-	flags: string[];
+	flags?: string[];
 	negate: boolean;
 	range: Exclude<AnyRange, 'Random'>;
 }
