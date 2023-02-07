@@ -1,30 +1,26 @@
-import type { AilResistance, Ailment, AilmentName, AllyRange, AnyAffinity, AnyGame, AnyRange, Arcana, AttackCost, AttackPower, Barrier, Buff, Charge, CounterAffinity, CounterPower, DamagingAffinity, DemonAffinities, DemonResistances, DemonSkill, DemonStats, EndureCriteria, EnemyRange, EvasionBoostCriteria, HPMP, HPMPAil, LightDark, NumberOrPercent, OneOrAllAilments, OneOrAllDamagingAffinities, PersonaGame, PostBattleStat, Race, RecoveryAmount, RegenCriteria, Resistance, SMTAffinity, Series, SiphonCriteria, SkillType, Stage } from './types';
+import type { AilResistance, Ailment, AilmentName, Alignment, AllyRange, AnyAffinity, AnyGame, AnyRange, Arcana, AttackCost, AttackPower, Barrier, Buff, Charge, CounterAffinity, CounterPower, DamagingAffinity, DemonAffinities, DemonResistances, DemonSkill, DemonStats, EndureCriteria, EnemyRange, EvasionBoostCriteria, HPMP, HPMPAil, If, LightDark, NumberOrPercent, OneOrAllAilments, OneOrAllDamagingAffinities, PersonaGame, PersonaRace, PostBattleStat, RecoveryAmount, RegenCriteria, Resistance, SMTAffinity, SMTRace, Series, SiphonCriteria, SkillType, Stage } from './types';
 
 /** Data used for constructing a Demon instance */
-export interface DemonData {
+export interface DemonData<PersonaBased extends boolean> {
 	name: string;
 	aliases?: string[];
-	affinities: DemonAffinities;
-	arcana: Arcana | null;
-	race: Race | null;
+	affinities: DemonAffinities<PersonaBased>;
+	arcana: If<PersonaBased, Arcana, Arcana | null>;
+	race: If<PersonaBased, PersonaRace, SMTRace | null>;
 	level: number;
-	hp: number | null;
-	mp: number | null;
+	hp: If<PersonaBased, null, number | null>;
+	mp: If<PersonaBased, null, number | null>;
 	stats: DemonStats;
 	learnset: DemonSkill[];
-	resistances: DemonResistances;
-	game: AnyGame;
+	resistances: DemonResistances<PersonaBased>;
+	game: If<PersonaBased, PersonaGame, AnyGame>;
+	alignment: Alignment<PersonaBased>;
+	lore: string;
 }
 
 /** Data used for constructing a Persona instance */
-export interface PersonaData extends DemonData {
-	affinities: DemonAffinities<true>;
-	arcana: Arcana;
+export interface PersonaData extends DemonData<true> {
 	race: 'Persona';
-	hp: null;
-	mp: null;
-	resistances: DemonResistances<true>;
-	game: PersonaGame;
 	user: string;
 	stage: Stage;
 	evoSkillName: string | null;

@@ -1,6 +1,6 @@
 import type { DemonData, PersonaData } from './dataTypes';
 
-const demonData: Readonly<(DemonData | PersonaData)[]> = [
+const demonData: Readonly<(DemonData<true> | DemonData<false> | PersonaData)[]> = [
 	{
 		name: 'Abaddon',
 		affinities: {
@@ -78,7 +78,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Dark',
+			ethical: 'Chaos'
+		},
+		lore: ''
 	},
 	{
 		name: 'Abdiel',
@@ -151,7 +156,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				'Light'
 			]
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Light',
+			ethical: 'Law'
+		},
+		lore: ''
 	},
 	{
 		name: 'Abdiel -Fallen-',
@@ -234,7 +244,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				'Dark'
 			]
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Neutral',
+			ethical: 'Law'
+		},
+		lore: ''
 	},
 	{
 		name: 'Adramelech',
@@ -310,7 +325,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Neutral',
+			ethical: 'Chaos'
+		},
+		lore: ''
 	},
 	{
 		name: 'Aeros',
@@ -368,7 +388,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Light',
+			ethical: 'Neutral'
+		},
+		lore: ''
 	},
 	{
 		name: 'Agathion',
@@ -427,7 +452,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Neutral',
+			ethical: 'Law'
+		},
+		lore: ''
 	},
 	{
 		name: 'Agnes',
@@ -548,6 +578,11 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			repel: []
 		},
 		game: 'p5',
+		alignment: {
+			moral: null,
+			ethical: null
+		},
+		lore: '',
 		user: 'Makoto Niijima',
 		stage: 3,
 		evoSkillName: 'Checkmate'
@@ -610,7 +645,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Dark',
+			ethical: 'Chaos'
+		},
+		lore: ''
 	},
 	{
 		name: 'Al Azif',
@@ -661,6 +701,11 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			repel: []
 		},
 		game: 'p5',
+		alignment: {
+			moral: null,
+			ethical: null
+		},
+		lore: '',
 		user: 'Futaba Sakura',
 		stage: 3,
 		evoSkillName: 'Ultimate Support'
@@ -737,7 +782,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Unknown',
+			ethical: 'Unknown'
+		},
+		lore: ''
 	},
 	{
 		name: 'Alilat',
@@ -817,7 +867,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Light',
+			ethical: 'Chaos'
+		},
+		lore: ''
 	},
 	{
 		name: 'Alraune',
@@ -882,7 +937,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'p4'
+		game: 'p4',
+		alignment: {
+			moral: 'Dark',
+			ethical: 'Law'
+		},
+		lore: ''
 	},
 	{
 		name: 'Amanozako',
@@ -962,7 +1022,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				'Elec'
 			]
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Light',
+			ethical: 'Neutral'
+		},
+		lore: ''
 	},
 	{
 		name: 'Amaterasu',
@@ -1075,6 +1140,11 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			repel: []
 		},
 		game: 'p4',
+		alignment: {
+			moral: null,
+			ethical: null
+		},
+		lore: '',
 		user: 'Yukiko Amagi',
 		stage: 2,
 		evoSkillName: null
@@ -1147,7 +1217,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Light',
+			ethical: 'Neutral'
+		},
+		lore: ''
 	},
 	{
 		name: 'Amon',
@@ -1225,7 +1300,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Dark',
+			ethical: 'Chaos'
+		},
+		lore: ''
 	},
 	{
 		name: 'Anahita',
@@ -1301,7 +1381,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Light',
+			ethical: 'Neutral'
+		},
+		lore: ''
 	},
 	{
 		name: 'Ananta',
@@ -1374,7 +1459,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Light',
+			ethical: 'Chaos'
+		},
+		lore: ''
 	},
 	{
 		name: 'Anat',
@@ -1495,6 +1585,11 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			repel: []
 		},
 		game: 'p5',
+		alignment: {
+			moral: null,
+			ethical: null
+		},
+		lore: '',
 		user: 'Makoto Niijima',
 		stage: 2,
 		evoSkillName: 'Evade Psy'
@@ -1566,7 +1661,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Neutral',
+			ethical: 'Chaos'
+		},
+		lore: ''
 	},
 	{
 		name: 'Angel',
@@ -1629,7 +1729,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Neutral',
+			ethical: 'Law'
+		},
+		lore: ''
 	},
 	{
 		name: 'Anubis',
@@ -1703,7 +1808,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Light',
+			ethical: 'Neutral'
+		},
+		lore: ''
 	},
 	{
 		name: 'Anzu',
@@ -1773,7 +1883,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Dark',
+			ethical: 'Law'
+		},
+		lore: ''
 	},
 	{
 		name: 'Apsaras',
@@ -1839,7 +1954,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Neutral',
+			ethical: 'Law'
+		},
+		lore: ''
 	},
 	{
 		name: 'Aquans',
@@ -1897,7 +2017,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Light',
+			ethical: 'Neutral'
+		},
+		lore: ''
 	},
 	{
 		name: 'Ara Mitama',
@@ -1959,7 +2084,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'p5'
+		game: 'p5',
+		alignment: {
+			moral: 'Light',
+			ethical: 'Neutral'
+		},
+		lore: ''
 	},
 	{
 		name: 'Arahabaki',
@@ -2035,7 +2165,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Light',
+			ethical: 'Chaos'
+		},
+		lore: ''
 	},
 	{
 		name: 'Archangel',
@@ -2102,7 +2237,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Neutral',
+			ethical: 'Law'
+		},
+		lore: ''
 	},
 	{
 		name: 'Ardha',
@@ -2165,7 +2305,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'p5'
+		game: 'p5',
+		alignment: {
+			moral: 'Light',
+			ethical: 'Neutral'
+		},
+		lore: ''
 	},
 	{
 		name: 'Ares',
@@ -2225,7 +2370,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'p4'
+		game: 'p4',
+		alignment: {
+			moral: 'Light',
+			ethical: 'Chaos'
+		},
+		lore: ''
 	},
 	{
 		name: 'Ariadne',
@@ -2291,6 +2441,11 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			repel: []
 		},
 		game: 'p5',
+		alignment: {
+			moral: null,
+			ethical: null
+		},
+		lore: '',
 		user: 'Labrys',
 		stage: 1,
 		evoSkillName: null
@@ -2358,7 +2513,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'p5'
+		game: 'p5',
+		alignment: {
+			moral: null,
+			ethical: null
+		},
+		lore: ''
 	},
 	{
 		name: 'Arioch',
@@ -2435,7 +2595,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				'Ice'
 			]
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Dark',
+			ethical: 'Chaos'
+		},
+		lore: ''
 	},
 	{
 		name: 'Arsène',
@@ -2491,6 +2656,11 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			repel: []
 		},
 		game: 'p5',
+		alignment: {
+			moral: null,
+			ethical: null
+		},
+		lore: '',
 		user: 'P5 Protagonist',
 		stage: 1,
 		evoSkillName: null
@@ -2571,7 +2741,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Light',
+			ethical: 'Neutral'
+		},
+		lore: ''
 	},
 	{
 		name: 'Artemisia',
@@ -2674,6 +2849,11 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			repel: []
 		},
 		game: 'p3',
+		alignment: {
+			moral: null,
+			ethical: null
+		},
+		lore: '',
 		user: 'Mitsuru Kirijo',
 		stage: 2,
 		evoSkillName: null
@@ -2789,6 +2969,11 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			repel: []
 		},
 		game: 'p5',
+		alignment: {
+			moral: null,
+			ethical: null
+		},
+		lore: '',
 		user: 'Haru Okumura',
 		stage: 2,
 		evoSkillName: 'Evade Nuke'
@@ -2857,6 +3042,11 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			repel: []
 		},
 		game: 'p5',
+		alignment: {
+			moral: null,
+			ethical: null
+		},
+		lore: '',
 		user: 'Shadow Labrys',
 		stage: 1,
 		evoSkillName: null
@@ -2924,7 +3114,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'p5'
+		game: 'p5',
+		alignment: {
+			moral: null,
+			ethical: null
+		},
+		lore: ''
 	},
 	{
 		name: 'Asura',
@@ -3002,7 +3197,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				'Fire'
 			]
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Light',
+			ethical: 'Chaos'
+		},
+		lore: ''
 	},
 	{
 		name: 'Atavaka',
@@ -3075,7 +3275,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Light',
+			ethical: 'Neutral'
+		},
+		lore: ''
 	},
 	{
 		name: 'Athena',
@@ -3147,6 +3352,11 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			repel: []
 		},
 		game: 'p5',
+		alignment: {
+			moral: null,
+			ethical: null
+		},
+		lore: '',
 		user: 'Aigis',
 		stage: 2,
 		evoSkillName: null
@@ -3217,7 +3427,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'p5'
+		game: 'p5',
+		alignment: {
+			moral: null,
+			ethical: null
+		},
+		lore: ''
 	},
 	{
 		name: 'Atropos',
@@ -3289,7 +3504,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Neutral',
+			ethical: 'Chaos'
+		},
+		lore: ''
 	},
 	{
 		name: 'Attis',
@@ -3361,7 +3581,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Light',
+			ethical: 'Chaos'
+		},
+		lore: ''
 	},
 	{
 		name: 'Azumi',
@@ -3419,7 +3644,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Neutral',
+			ethical: 'Chaos'
+		},
+		lore: ''
 	},
 	{
 		name: 'Baal',
@@ -3498,7 +3728,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				'Elec'
 			]
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Light',
+			ethical: 'Neutral'
+		},
+		lore: ''
 	},
 	{
 		name: 'Baal Zebul',
@@ -3562,7 +3797,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			],
 			repel: []
 		},
-		game: 'p4'
+		game: 'p4',
+		alignment: {
+			moral: 'Dark',
+			ethical: 'Chaos'
+		},
+		lore: ''
 	},
 	{
 		name: 'Baphomet',
@@ -3630,7 +3870,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Dark',
+			ethical: 'Chaos'
+		},
+		lore: ''
 	},
 	{
 		name: 'Barong',
@@ -3704,7 +3949,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Light',
+			ethical: 'Neutral'
+		},
+		lore: ''
 	},
 	{
 		name: 'Basilisk',
@@ -3773,7 +4023,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Dark',
+			ethical: 'Chaos'
+		},
+		lore: ''
 	},
 	{
 		name: 'Beelzebub',
@@ -3857,7 +4112,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Dark',
+			ethical: 'Chaos'
+		},
+		lore: ''
 	},
 	{
 		name: 'Belial',
@@ -3933,7 +4193,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Dark',
+			ethical: 'Chaos'
+		},
+		lore: ''
 	},
 	{
 		name: 'Belphegor',
@@ -4008,7 +4273,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Dark',
+			ethical: 'Chaos'
+		},
+		lore: ''
 	},
 	{
 		name: 'Berith',
@@ -4075,7 +4345,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Neutral',
+			ethical: 'Chaos'
+		},
+		lore: ''
 	},
 	{
 		name: 'Bicorn',
@@ -4134,7 +4409,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Dark',
+			ethical: 'Neutral'
+		},
+		lore: ''
 	},
 	{
 		name: 'Bishamonten',
@@ -4209,7 +4489,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Light',
+			ethical: 'Chaos'
+		},
+		lore: ''
 	},
 	{
 		name: 'Black Frost',
@@ -4287,7 +4572,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				'Dark'
 			]
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Neutral',
+			ethical: 'Chaos'
+		},
+		lore: ''
 	},
 	{
 		name: 'Black Ooze',
@@ -4358,7 +4648,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Dark',
+			ethical: 'Chaos'
+		},
+		lore: ''
 	},
 	{
 		name: 'Black Rider',
@@ -4437,7 +4732,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				'Ice'
 			]
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Unknown',
+			ethical: 'Unknown'
+		},
+		lore: ''
 	},
 	{
 		name: 'Bugs',
@@ -4505,7 +4805,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Dark',
+			ethical: 'Neutral'
+		},
+		lore: ''
 	},
 	{
 		name: 'Byakhee',
@@ -4570,7 +4875,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'p5'
+		game: 'p5',
+		alignment: {
+			moral: 'Unknown',
+			ethical: 'Unknown'
+		},
+		lore: ''
 	},
 	{
 		name: 'Byakko',
@@ -4645,7 +4955,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Light',
+			ethical: 'Neutral'
+		},
+		lore: ''
 	},
 	{
 		name: 'Caesar',
@@ -4756,6 +5071,11 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			repel: []
 		},
 		game: 'p3',
+		alignment: {
+			moral: null,
+			ethical: null
+		},
+		lore: '',
 		user: 'Akihiko Sanada',
 		stage: 2,
 		evoSkillName: null
@@ -4816,7 +5136,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Neutral',
+			ethical: 'Neutral'
+		},
+		lore: ''
 	},
 	{
 		name: 'Camael',
@@ -4888,7 +5213,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Light',
+			ethical: 'Law'
+		},
+		lore: ''
 	},
 	{
 		name: 'Captain Kidd',
@@ -5015,6 +5345,11 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			repel: []
 		},
 		game: 'p5',
+		alignment: {
+			moral: null,
+			ethical: null
+		},
+		lore: '',
 		user: 'Ryuji Sakamoto',
 		stage: 1,
 		evoSkillName: null
@@ -5136,6 +5471,11 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			repel: []
 		},
 		game: 'p5',
+		alignment: {
+			moral: null,
+			ethical: null
+		},
+		lore: '',
 		user: 'Ann Takamaki',
 		stage: 1,
 		evoSkillName: null
@@ -5221,6 +5561,11 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			repel: []
 		},
 		game: 'p3',
+		alignment: {
+			moral: null,
+			ethical: null
+		},
+		lore: '',
 		user: 'Shinjiro Aragaki',
 		stage: 1,
 		evoSkillName: null
@@ -5344,6 +5689,11 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			repel: []
 		},
 		game: 'p5',
+		alignment: {
+			moral: null,
+			ethical: null
+		},
+		lore: '',
 		user: 'Ann Takamaki',
 		stage: 3,
 		evoSkillName: 'High Energy'
@@ -5417,6 +5767,11 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			repel: []
 		},
 		game: 'p5',
+		alignment: {
+			moral: null,
+			ethical: null
+		},
+		lore: '',
 		user: 'Sumire Yoshizawa',
 		stage: 1,
 		evoSkillName: null
@@ -5491,7 +5846,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				'Fire'
 			]
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Neutral',
+			ethical: 'Neutral'
+		},
+		lore: ''
 	},
 	{
 		name: 'Cerberus - P3',
@@ -5590,6 +5950,11 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			repel: []
 		},
 		game: 'p3',
+		alignment: {
+			moral: null,
+			ethical: null
+		},
+		lore: '',
 		user: 'Koromaru',
 		stage: 1,
 		evoSkillName: null
@@ -5664,7 +6029,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Light',
+			ethical: 'Chaos'
+		},
+		lore: ''
 	},
 	{
 		name: 'Chi You',
@@ -5741,7 +6111,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				'Force'
 			]
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Dark',
+			ethical: 'Chaos'
+		},
+		lore: ''
 	},
 	{
 		name: 'Chimera',
@@ -5819,7 +6194,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Light',
+			ethical: 'Neutral'
+		},
+		lore: ''
 	},
 	{
 		name: 'Choronzon',
@@ -5887,7 +6267,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			],
 			repel: []
 		},
-		game: 'p5'
+		game: 'p5',
+		alignment: {
+			moral: 'Unknown',
+			ethical: 'Law'
+		},
+		lore: ''
 	},
 	{
 		name: 'Cironnup',
@@ -5959,7 +6344,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Light',
+			ethical: 'Neutral'
+		},
+		lore: ''
 	},
 	{
 		name: 'Cleopatra',
@@ -6041,7 +6431,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Neutral',
+			ethical: 'Chaos'
+		},
+		lore: ''
 	},
 	{
 		name: 'Clotho',
@@ -6113,7 +6508,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Neutral',
+			ethical: 'Chaos'
+		},
+		lore: ''
 	},
 	{
 		name: 'Crystal Skull',
@@ -6180,7 +6580,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'p5'
+		game: 'p5',
+		alignment: {
+			moral: null,
+			ethical: null
+		},
+		lore: ''
 	},
 	{
 		name: 'Cu Chulainn',
@@ -6254,7 +6659,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Light',
+			ethical: 'Neutral'
+		},
+		lore: ''
 	},
 	{
 		name: 'Cu Sith',
@@ -6316,7 +6726,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'p4'
+		game: 'p4',
+		alignment: {
+			moral: 'Neutral',
+			ethical: 'Neutral'
+		},
+		lore: ''
 	},
 	{
 		name: 'Cybele',
@@ -6390,7 +6805,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Light',
+			ethical: 'Chaos'
+		},
+		lore: ''
 	},
 	{
 		name: 'Daemon',
@@ -6455,7 +6875,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Neutral',
+			ethical: 'Chaos'
+		},
+		lore: ''
 	},
 	{
 		name: 'Daisoujou',
@@ -6530,7 +6955,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Unknown',
+			ethical: 'Unknown'
+		},
+		lore: ''
 	},
 	{
 		name: 'Dakini',
@@ -6600,7 +7030,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Neutral',
+			ethical: 'Chaos'
+		},
+		lore: ''
 	},
 	{
 		name: 'Danu',
@@ -6679,7 +7114,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Light',
+			ethical: 'Neutral'
+		},
+		lore: ''
 	},
 	{
 		name: 'Decarabia',
@@ -6745,7 +7185,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Neutral',
+			ethical: 'Chaos'
+		},
+		lore: ''
 	},
 	{
 		name: 'Demeter',
@@ -6825,7 +7270,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Light',
+			ethical: 'Law'
+		},
+		lore: ''
 	},
 	{
 		name: 'Diego',
@@ -6958,6 +7408,11 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			repel: []
 		},
 		game: 'p5',
+		alignment: {
+			moral: null,
+			ethical: null
+		},
+		lore: '',
 		user: 'Morgana',
 		stage: 3,
 		evoSkillName: 'Miracle Rush'
@@ -7034,7 +7489,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Light',
+			ethical: 'Chaos'
+		},
+		lore: ''
 	},
 	{
 		name: 'Dis',
@@ -7094,7 +7554,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				'Fire'
 			]
 		},
-		game: 'p4'
+		game: 'p4',
+		alignment: {
+			moral: 'Neutral',
+			ethical: 'Law'
+		},
+		lore: ''
 	},
 	{
 		name: 'Dominion',
@@ -7162,7 +7627,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Neutral',
+			ethical: 'Law'
+		},
+		lore: ''
 	},
 	{
 		name: 'Eligor',
@@ -7230,7 +7700,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Neutral',
+			ethical: 'Chaos'
+		},
+		lore: ''
 	},
 	{
 		name: 'Ella',
@@ -7303,6 +7778,11 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			repel: []
 		},
 		game: 'p5',
+		alignment: {
+			moral: null,
+			ethical: null
+		},
+		lore: '',
 		user: 'Sumire Yoshizawa',
 		stage: 3,
 		evoSkillName: 'Masquerade'
@@ -7372,7 +7852,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'p5'
+		game: 'p5',
+		alignment: {
+			moral: null,
+			ethical: null
+		},
+		lore: ''
 	},
 	{
 		name: 'Erthys',
@@ -7430,7 +7915,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Light',
+			ethical: 'Neutral'
+		},
+		lore: ''
 	},
 	{
 		name: 'Fafnir',
@@ -7507,7 +7997,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Dark',
+			ethical: 'Chaos'
+		},
+		lore: ''
 	},
 	{
 		name: 'Feng Huang',
@@ -7584,7 +8079,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Light',
+			ethical: 'Law'
+		},
+		lore: ''
 	},
 	{
 		name: 'Fionn mac Cumhaill',
@@ -7662,7 +8162,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Light',
+			ethical: 'Neutral'
+		},
+		lore: ''
 	},
 	{
 		name: 'Flaemis',
@@ -7720,7 +8225,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Light',
+			ethical: 'Neutral'
+		},
+		lore: ''
 	},
 	{
 		name: 'Flauros',
@@ -7794,7 +8304,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Neutral',
+			ethical: 'Chaos'
+		},
+		lore: ''
 	},
 	{
 		name: 'Forneus',
@@ -7867,7 +8382,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Neutral',
+			ethical: 'Chaos'
+		},
+		lore: ''
 	},
 	{
 		name: 'Fortuna',
@@ -7934,7 +8454,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Light',
+			ethical: 'Neutral'
+		},
+		lore: ''
 	},
 	{
 		name: 'Futsunushi',
@@ -8009,7 +8534,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Light',
+			ethical: 'Neutral'
+		},
+		lore: ''
 	},
 	{
 		name: 'Fuu-Ki',
@@ -8081,7 +8611,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Neutral',
+			ethical: 'Chaos'
+		},
+		lore: ''
 	},
 	{
 		name: 'Gabriel',
@@ -8158,7 +8693,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Light',
+			ethical: 'Law'
+		},
+		lore: ''
 	},
 	{
 		name: 'Ganesha',
@@ -8234,7 +8774,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Light',
+			ethical: 'Neutral'
+		},
+		lore: ''
 	},
 	{
 		name: 'Ganga',
@@ -8297,7 +8842,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			],
 			repel: []
 		},
-		game: 'p4'
+		game: 'p4',
+		alignment: {
+			moral: 'Light',
+			ethical: 'Chaos'
+		},
+		lore: ''
 	},
 	{
 		name: 'Garuda',
@@ -8375,7 +8925,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Light',
+			ethical: 'Law'
+		},
+		lore: ''
 	},
 	{
 		name: 'Gdon',
@@ -8437,7 +8992,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			],
 			repel: []
 		},
-		game: 'p4'
+		game: 'p4',
+		alignment: {
+			moral: 'Neutral',
+			ethical: 'Neutral'
+		},
+		lore: ''
 	},
 	{
 		name: 'Genbu',
@@ -8506,7 +9066,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Light',
+			ethical: 'Chaos'
+		},
+		lore: ''
 	},
 	{
 		name: 'Ghoul',
@@ -8569,7 +9134,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'p4'
+		game: 'p4',
+		alignment: {
+			moral: 'Dark',
+			ethical: 'Chaos'
+		},
+		lore: ''
 	},
 	{
 		name: 'Girimehkala',
@@ -8649,7 +9219,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				'Phys'
 			]
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Dark',
+			ethical: 'Law'
+		},
+		lore: ''
 	},
 	{
 		name: 'Goemon',
@@ -8772,6 +9347,11 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			repel: []
 		},
 		game: 'p5',
+		alignment: {
+			moral: null,
+			ethical: null
+		},
+		lore: '',
 		user: 'Yusuke Kitagawa',
 		stage: 1,
 		evoSkillName: null
@@ -8832,7 +9412,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'p4'
+		game: 'p4',
+		alignment: {
+			moral: 'Neutral',
+			ethical: 'Chaos'
+		},
+		lore: ''
 	},
 	{
 		name: 'Gorokichi',
@@ -8957,6 +9542,11 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			repel: []
 		},
 		game: 'p5',
+		alignment: {
+			moral: null,
+			ethical: null
+		},
+		lore: '',
 		user: 'Yusuke Kitagawa',
 		stage: 3,
 		evoSkillName: 'Hyakka Ryouran'
@@ -9022,7 +9612,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'p4'
+		game: 'p4',
+		alignment: {
+			moral: 'Dark',
+			ethical: 'Law'
+		},
+		lore: ''
 	},
 	{
 		name: 'Hachiman',
@@ -9081,7 +9676,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'p4'
+		game: 'p4',
+		alignment: {
+			moral: 'Light',
+			ethical: 'Neutral'
+		},
+		lore: ''
 	},
 	{
 		name: 'Hanuman',
@@ -9149,7 +9749,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				'Force'
 			]
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Light',
+			ethical: 'Neutral'
+		},
+		lore: ''
 	},
 	{
 		name: 'Haraedo-no-Okami',
@@ -9262,6 +9867,11 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			repel: []
 		},
 		game: 'p4',
+		alignment: {
+			moral: null,
+			ethical: null
+		},
+		lore: '',
 		user: 'Chie Satonaka',
 		stage: 3,
 		evoSkillName: 'Luster Candy'
@@ -9336,7 +9946,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Light',
+			ethical: 'Chaos'
+		},
+		lore: ''
 	},
 	{
 		name: 'Hastur',
@@ -9401,7 +10016,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			],
 			repel: []
 		},
-		game: 'p5'
+		game: 'p5',
+		alignment: {
+			moral: 'Unknown',
+			ethical: 'Unknown'
+		},
+		lore: ''
 	},
 	{
 		name: 'Hayataro',
@@ -9479,7 +10099,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Light',
+			ethical: 'Neutral'
+		},
+		lore: ''
 	},
 	{
 		name: 'Hecate',
@@ -9600,6 +10225,11 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			repel: []
 		},
 		game: 'p5',
+		alignment: {
+			moral: null,
+			ethical: null
+		},
+		lore: '',
 		user: 'Ann Takamaki',
 		stage: 2,
 		evoSkillName: 'Evade Ice'
@@ -9675,7 +10305,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Dark',
+			ethical: 'Neutral'
+		},
+		lore: ''
 	},
 	{
 		name: 'Helel',
@@ -9745,7 +10380,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'p4'
+		game: 'p4',
+		alignment: {
+			moral: 'Dark',
+			ethical: 'Chaos'
+		},
+		lore: ''
 	},
 	{
 		name: 'Hell Biker',
@@ -9819,7 +10459,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Unknown',
+			ethical: 'Unknown'
+		},
+		lore: ''
 	},
 	{
 		name: 'Hereward',
@@ -9888,6 +10533,11 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			repel: []
 		},
 		game: 'p5',
+		alignment: {
+			moral: null,
+			ethical: null
+		},
+		lore: '',
 		user: 'Goro Akechi',
 		stage: 3,
 		evoSkillName: 'Rebellion Blade'
@@ -9981,6 +10631,11 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			repel: []
 		},
 		game: 'p3',
+		alignment: {
+			moral: null,
+			ethical: null
+		},
+		lore: '',
 		user: 'Junpei Iori',
 		stage: 1,
 		evoSkillName: null
@@ -10052,7 +10707,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Neutral',
+			ethical: 'Neutral'
+		},
+		lore: ''
 	},
 	{
 		name: 'Himiko',
@@ -10127,6 +10787,11 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			repel: []
 		},
 		game: 'p4',
+		alignment: {
+			moral: null,
+			ethical: null
+		},
+		lore: '',
 		user: 'Rise Kujikawa',
 		stage: 1,
 		evoSkillName: null
@@ -10195,7 +10860,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'p4'
+		game: 'p4',
+		alignment: {
+			moral: 'Light',
+			ethical: 'Chaos'
+		},
+		lore: ''
 	},
 	{
 		name: 'Hokuto Seikun',
@@ -10261,7 +10931,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				'Elec'
 			]
 		},
-		game: 'p4'
+		game: 'p4',
+		alignment: {
+			moral: 'Neutral',
+			ethical: 'Chaos'
+		},
+		lore: ''
 	},
 	{
 		name: 'Hope Diamond',
@@ -10328,7 +11003,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'p5'
+		game: 'p5',
+		alignment: {
+			moral: null,
+			ethical: null
+		},
+		lore: ''
 	},
 	{
 		name: 'Horus',
@@ -10402,7 +11082,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				'Light'
 			]
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Light',
+			ethical: 'Neutral'
+		},
+		lore: ''
 	},
 	{
 		name: 'Hua Po',
@@ -10470,7 +11155,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Neutral',
+			ethical: 'Neutral'
+		},
+		lore: ''
 	},
 	{
 		name: 'Hydra',
@@ -10542,7 +11232,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Dark',
+			ethical: 'Chaos'
+		},
+		lore: ''
 	},
 	{
 		name: 'Idun',
@@ -10616,7 +11311,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Light',
+			ethical: 'Neutral'
+		},
+		lore: ''
 	},
 	{
 		name: 'Ikusa',
@@ -10679,7 +11379,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'p4'
+		game: 'p4',
+		alignment: {
+			moral: 'Neutral',
+			ethical: 'Law'
+		},
+		lore: ''
 	},
 	{
 		name: 'Inanna',
@@ -10757,7 +11462,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Light',
+			ethical: 'Chaos'
+		},
+		lore: ''
 	},
 	{
 		name: 'Incubus',
@@ -10826,7 +11536,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Neutral',
+			ethical: 'Chaos'
+		},
+		lore: ''
 	},
 	{
 		name: 'Inugami',
@@ -10891,7 +11606,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Neutral',
+			ethical: 'Neutral'
+		},
+		lore: ''
 	},
 	{
 		name: 'Io',
@@ -10974,6 +11694,11 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			repel: []
 		},
 		game: 'p3',
+		alignment: {
+			moral: null,
+			ethical: null
+		},
+		lore: '',
 		user: 'Yukari Takeba',
 		stage: 1,
 		evoSkillName: null
@@ -11038,7 +11763,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Neutral',
+			ethical: 'Chaos'
+		},
+		lore: ''
 	},
 	{
 		name: 'Ishtar',
@@ -11112,7 +11842,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Light',
+			ethical: 'Chaos'
+		},
+		lore: ''
 	},
 	{
 		name: 'Isis',
@@ -11186,7 +11921,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Light',
+			ethical: 'Chaos'
+		},
+		lore: ''
 	},
 	{
 		name: 'Isis - P3',
@@ -11296,6 +12036,11 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			repel: []
 		},
 		game: 'p3',
+		alignment: {
+			moral: null,
+			ethical: null
+		},
+		lore: '',
 		user: 'Yukari Takeba',
 		stage: 2,
 		evoSkillName: null
@@ -11379,6 +12124,11 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			repel: []
 		},
 		game: 'p5',
+		alignment: {
+			moral: null,
+			ethical: null
+		},
+		lore: '',
 		user: 'P4 Protgaonist',
 		stage: 1,
 		evoSkillName: null
@@ -11444,7 +12194,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'p5'
+		game: 'p5',
+		alignment: {
+			moral: null,
+			ethical: null
+		},
+		lore: ''
 	},
 	{
 		name: 'Izanagi-no-Okami',
@@ -11516,6 +12271,11 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			repel: []
 		},
 		game: 'p5',
+		alignment: {
+			moral: null,
+			ethical: null
+		},
+		lore: '',
 		user: 'P4 Protagonist',
 		stage: 2,
 		evoSkillName: null
@@ -11589,7 +12349,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'p5'
+		game: 'p5',
+		alignment: {
+			moral: null,
+			ethical: null
+		},
+		lore: ''
 	},
 	{
 		name: 'Jack Frost',
@@ -11657,7 +12422,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Neutral',
+			ethical: 'Neutral'
+		},
+		lore: ''
 	},
 	{
 		name: 'Jack-o\'-Lantern',
@@ -11724,7 +12494,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Neutral',
+			ethical: 'Neutral'
+		},
+		lore: ''
 	},
 	{
 		name: 'Jatayu',
@@ -11795,7 +12570,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Light',
+			ethical: 'Law'
+		},
+		lore: ''
 	},
 	{
 		name: 'Jikokuten',
@@ -11871,7 +12651,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Light',
+			ethical: 'Chaos'
+		},
+		lore: ''
 	},
 	{
 		name: 'Jinn',
@@ -11929,7 +12714,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			],
 			repel: []
 		},
-		game: 'p4'
+		game: 'p4',
+		alignment: {
+			moral: 'Neutral',
+			ethical: 'Neutral'
+		},
+		lore: ''
 	},
 	{
 		name: 'Jiraiya',
@@ -12036,6 +12826,11 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			repel: []
 		},
 		game: 'p4',
+		alignment: {
+			moral: null,
+			ethical: null
+		},
+		lore: '',
 		user: 'Yosuke Hanamura',
 		stage: 1,
 		evoSkillName: null
@@ -12157,6 +12952,11 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			repel: []
 		},
 		game: 'p5',
+		alignment: {
+			moral: null,
+			ethical: null
+		},
+		lore: '',
 		user: 'Makoto Niijima',
 		stage: 1,
 		evoSkillName: null
@@ -12214,6 +13014,11 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			repel: []
 		},
 		game: 'p3',
+		alignment: {
+			moral: null,
+			ethical: null
+		},
+		lore: '',
 		user: 'Fuuka Yamagishi',
 		stage: 2,
 		evoSkillName: null
@@ -12282,6 +13087,11 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			repel: []
 		},
 		game: 'p5',
+		alignment: {
+			moral: null,
+			ethical: null
+		},
+		lore: '',
 		user: 'Marie',
 		stage: 1,
 		evoSkillName: null
@@ -12347,7 +13157,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'p5'
+		game: 'p5',
+		alignment: {
+			moral: null,
+			ethical: null
+		},
+		lore: ''
 	},
 	{
 		name: 'Kaiwan',
@@ -12415,7 +13230,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Neutral',
+			ethical: 'Chaos'
+		},
+		lore: ''
 	},
 	{
 		name: 'Kala-Nemi',
@@ -12506,6 +13326,11 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			repel: []
 		},
 		game: 'p3',
+		alignment: {
+			moral: null,
+			ethical: null
+		},
+		lore: '',
 		user: 'Ken Amada',
 		stage: 2,
 		evoSkillName: null
@@ -12583,7 +13408,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				'Dark'
 			]
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Neutral',
+			ethical: 'Chaos'
+		},
+		lore: ''
 	},
 	{
 		name: 'Kamu Susano-o',
@@ -12708,6 +13538,11 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			repel: []
 		},
 		game: 'p5',
+		alignment: {
+			moral: null,
+			ethical: null
+		},
+		lore: '',
 		user: 'Yusuke Kitagawa',
 		stage: 2,
 		evoSkillName: 'Evade Fire'
@@ -12820,6 +13655,11 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			repel: []
 		},
 		game: 'p4',
+		alignment: {
+			moral: null,
+			ethical: null
+		},
+		lore: '',
 		user: 'Teddie',
 		stage: 2,
 		evoSkillName: null
@@ -12930,6 +13770,11 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			repel: []
 		},
 		game: 'p4',
+		alignment: {
+			moral: null,
+			ethical: null
+		},
+		lore: '',
 		user: 'Teddie',
 		stage: 3,
 		evoSkillName: 'Kamui Miracle'
@@ -13007,6 +13852,11 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			repel: []
 		},
 		game: 'p4',
+		alignment: {
+			moral: null,
+			ethical: null
+		},
+		lore: '',
 		user: 'Rise Kujikawa',
 		stage: 2,
 		evoSkillName: null
@@ -13065,7 +13915,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				'Elec'
 			]
 		},
-		game: 'p4'
+		game: 'p4',
+		alignment: {
+			moral: 'Light',
+			ethical: 'Chaos'
+		},
+		lore: ''
 	},
 	{
 		name: 'Kaya-no-Hime',
@@ -13135,7 +13990,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Neutral',
+			ethical: 'Neutral'
+		},
+		lore: ''
 	},
 	{
 		name: 'Kelpie',
@@ -13207,7 +14067,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Neutral',
+			ethical: 'Neutral'
+		},
+		lore: ''
 	},
 	{
 		name: 'Khonsu',
@@ -13283,7 +14148,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Light',
+			ethical: 'Neutral'
+		},
+		lore: ''
 	},
 	{
 		name: 'Khonsu Ra',
@@ -13360,7 +14230,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Light',
+			ethical: 'Neutral'
+		},
+		lore: ''
 	},
 	{
 		name: 'Kikuri-Hime',
@@ -13430,7 +14305,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Light',
+			ethical: 'Chaos'
+		},
+		lore: ''
 	},
 	{
 		name: 'Kin-Ki',
@@ -13502,7 +14382,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Neutral',
+			ethical: 'Chaos'
+		},
+		lore: ''
 	},
 	{
 		name: 'King Frost',
@@ -13575,7 +14460,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Dark',
+			ethical: 'Chaos'
+		},
+		lore: ''
 	},
 	{
 		name: 'Kingu',
@@ -13638,7 +14528,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'p4'
+		game: 'p4',
+		alignment: {
+			moral: 'Dark',
+			ethical: 'Chaos'
+		},
+		lore: ''
 	},
 	{
 		name: 'Kintoki-Douji',
@@ -13745,6 +14640,11 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			repel: []
 		},
 		game: 'p4',
+		alignment: {
+			moral: null,
+			ethical: null
+		},
+		lore: '',
 		user: 'Teddie',
 		stage: 1,
 		evoSkillName: null
@@ -13806,7 +14706,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Neutral',
+			ethical: 'Neutral'
+		},
+		lore: ''
 	},
 	{
 		name: 'Koh-i-Noor',
@@ -13872,7 +14777,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'p5'
+		game: 'p5',
+		alignment: {
+			moral: null,
+			ethical: null
+		},
+		lore: ''
 	},
 	{
 		name: 'Kohryu',
@@ -13952,7 +14862,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Light',
+			ethical: 'Chaos'
+		},
+		lore: ''
 	},
 	{
 		name: 'Konohana Sakuya',
@@ -14063,6 +14978,11 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			repel: []
 		},
 		game: 'p4',
+		alignment: {
+			moral: null,
+			ethical: null
+		},
+		lore: '',
 		user: 'Yukiko Amagi',
 		stage: 1,
 		evoSkillName: null
@@ -14133,7 +15053,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Neutral',
+			ethical: 'Law'
+		},
+		lore: ''
 	},
 	{
 		name: 'Koropokguru',
@@ -14212,7 +15137,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Neutral',
+			ethical: 'Neutral'
+		},
+		lore: ''
 	},
 	{
 		name: 'Koumokuten',
@@ -14288,7 +15218,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Light',
+			ethical: 'Chaos'
+		},
+		lore: ''
 	},
 	{
 		name: 'Kouzeon',
@@ -14363,6 +15298,11 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			repel: []
 		},
 		game: 'p4',
+		alignment: {
+			moral: null,
+			ethical: null
+		},
+		lore: '',
 		user: 'Rise Kujikawa',
 		stage: 3,
 		evoSkillName: 'Complete Analysis'
@@ -14442,7 +15382,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Dark',
+			ethical: 'Chaos'
+		},
+		lore: ''
 	},
 	{
 		name: 'Kurama Tengu',
@@ -14511,7 +15456,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Light',
+			ethical: 'Neutral'
+		},
+		lore: ''
 	},
 	{
 		name: 'Kushi Mitama',
@@ -14572,7 +15522,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'p5'
+		game: 'p5',
+		alignment: {
+			moral: 'Light',
+			ethical: 'Neutral'
+		},
+		lore: ''
 	},
 	{
 		name: 'Kushinada',
@@ -14641,7 +15596,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Light',
+			ethical: 'Chaos'
+		},
+		lore: ''
 	},
 	{
 		name: 'Lachesis',
@@ -14720,7 +15680,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Neutral',
+			ethical: 'Chaos'
+		},
+		lore: ''
 	},
 	{
 		name: 'Lahmu',
@@ -14799,7 +15764,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Dark',
+			ethical: 'Chaos'
+		},
+		lore: ''
 	},
 	{
 		name: 'Lakshmi',
@@ -14877,7 +15847,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Light',
+			ethical: 'Neutral'
+		},
+		lore: ''
 	},
 	{
 		name: 'Lamia',
@@ -14950,7 +15925,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Neutral',
+			ethical: 'Chaos'
+		},
+		lore: ''
 	},
 	{
 		name: 'Leanan Sidhe',
@@ -15019,7 +15999,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Neutral',
+			ethical: 'Chaos'
+		},
+		lore: ''
 	},
 	{
 		name: 'Legion',
@@ -15082,7 +16067,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Dark',
+			ethical: 'Chaos'
+		},
+		lore: ''
 	},
 	{
 		name: 'Lilim',
@@ -15151,7 +16141,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Neutral',
+			ethical: 'Chaos'
+		},
+		lore: ''
 	},
 	{
 		name: 'Lilith',
@@ -15224,7 +16219,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Neutral',
+			ethical: 'Chaos'
+		},
+		lore: ''
 	},
 	{
 		name: 'Loa',
@@ -15292,7 +16292,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Dark',
+			ethical: 'Neutral'
+		},
+		lore: ''
 	},
 	{
 		name: 'Loki',
@@ -15368,7 +16373,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Dark',
+			ethical: 'Chaos'
+		},
+		lore: ''
 	},
 	{
 		name: 'Loki - P5',
@@ -15438,6 +16448,11 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			repel: []
 		},
 		game: 'p5',
+		alignment: {
+			moral: null,
+			ethical: null
+		},
+		lore: '',
 		user: 'Goro Akechi',
 		stage: 2,
 		evoSkillName: null
@@ -15513,7 +16528,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Neutral',
+			ethical: 'Neutral'
+		},
+		lore: ''
 	},
 	{
 		name: 'Lucia',
@@ -15560,6 +16580,11 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			repel: []
 		},
 		game: 'p3',
+		alignment: {
+			moral: null,
+			ethical: null
+		},
+		lore: '',
 		user: 'Fuuka Yamagishi',
 		stage: 1,
 		evoSkillName: null
@@ -15632,7 +16657,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			],
 			repel: []
 		},
-		game: 'p5'
+		game: 'p5',
+		alignment: {
+			moral: 'Dark',
+			ethical: 'Chaos'
+		},
+		lore: ''
 	},
 	{
 		name: 'Lucy',
@@ -15745,6 +16775,11 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			repel: []
 		},
 		game: 'p5',
+		alignment: {
+			moral: null,
+			ethical: null
+		},
+		lore: '',
 		user: 'Haru Okumura',
 		stage: 3,
 		evoSkillName: 'Life Wall'
@@ -15820,7 +16855,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Dark',
+			ethical: 'Neutral'
+		},
+		lore: ''
 	},
 	{
 		name: 'Mada',
@@ -15896,7 +16936,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Dark',
+			ethical: 'Law'
+		},
+		lore: ''
 	},
 	{
 		name: 'Magatsu-Izanagi',
@@ -15962,6 +17007,11 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			repel: []
 		},
 		game: 'p5',
+		alignment: {
+			moral: null,
+			ethical: null
+		},
+		lore: '',
 		user: 'Tohru Adachi',
 		stage: 2,
 		evoSkillName: null
@@ -16029,7 +17079,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'p5'
+		game: 'p5',
+		alignment: {
+			moral: null,
+			ethical: null
+		},
+		lore: ''
 	},
 	{
 		name: 'Mahakala',
@@ -16097,7 +17152,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				'Elec'
 			]
 		},
-		game: 'p4'
+		game: 'p4',
+		alignment: {
+			moral: 'Unknown',
+			ethical: 'Chaos'
+		},
+		lore: ''
 	},
 	{
 		name: 'Makami',
@@ -16165,7 +17225,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Light',
+			ethical: 'Neutral'
+		},
+		lore: ''
 	},
 	{
 		name: 'Manananggal',
@@ -16234,7 +17299,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Neutral',
+			ethical: 'Chaos'
+		},
+		lore: ''
 	},
 	{
 		name: 'Mandrake',
@@ -16294,7 +17364,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Neutral',
+			ethical: 'Law'
+		},
+		lore: ''
 	},
 	{
 		name: 'Mara',
@@ -16373,7 +17448,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Dark',
+			ethical: 'Chaos'
+		},
+		lore: ''
 	},
 	{
 		name: 'Maria',
@@ -16453,7 +17533,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Light',
+			ethical: 'Law'
+		},
+		lore: ''
 	},
 	{
 		name: 'Masakado',
@@ -16513,7 +17598,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'p4'
+		game: 'p4',
+		alignment: {
+			moral: 'Dark',
+			ethical: 'Neutral'
+		},
+		lore: ''
 	},
 	{
 		name: 'Matador',
@@ -16590,7 +17680,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Unknown',
+			ethical: 'Unknown'
+		},
+		lore: ''
 	},
 	{
 		name: 'Melchizedek',
@@ -16662,7 +17757,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Light',
+			ethical: 'Law'
+		},
+		lore: ''
 	},
 	{
 		name: 'Mephisto',
@@ -16745,7 +17845,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Dark',
+			ethical: 'Chaos'
+		},
+		lore: ''
 	},
 	{
 		name: 'Mercurius',
@@ -16878,6 +17983,11 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			repel: []
 		},
 		game: 'p5',
+		alignment: {
+			moral: null,
+			ethical: null
+		},
+		lore: '',
 		user: 'Morgana',
 		stage: 2,
 		evoSkillName: 'Evade Elec'
@@ -16945,7 +18055,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Neutral',
+			ethical: 'Chaos'
+		},
+		lore: ''
 	},
 	{
 		name: 'Messiah',
@@ -17019,6 +18134,11 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			]
 		},
 		game: 'p5',
+		alignment: {
+			moral: null,
+			ethical: null
+		},
+		lore: '',
 		user: 'P3 Protagonist',
 		stage: 2,
 		evoSkillName: null
@@ -17094,7 +18214,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				'Light'
 			]
 		},
-		game: 'p5'
+		game: 'p5',
+		alignment: {
+			moral: null,
+			ethical: null
+		},
+		lore: ''
 	},
 	{
 		name: 'Metatron',
@@ -17171,7 +18296,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Light',
+			ethical: 'Law'
+		},
+		lore: ''
 	},
 	{
 		name: 'Michael',
@@ -17247,7 +18377,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Light',
+			ethical: 'Law'
+		},
+		lore: ''
 	},
 	{
 		name: 'Milady',
@@ -17358,6 +18493,11 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			repel: []
 		},
 		game: 'p5',
+		alignment: {
+			moral: null,
+			ethical: null
+		},
+		lore: '',
 		user: 'Haru Okumura',
 		stage: 1,
 		evoSkillName: null
@@ -17434,7 +18574,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Dark',
+			ethical: 'Law'
+		},
+		lore: ''
 	},
 	{
 		name: 'Mithras',
@@ -17510,7 +18655,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Dark',
+			ethical: 'Chaos'
+		},
+		lore: ''
 	},
 	{
 		name: 'Mitra',
@@ -17585,7 +18735,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Light',
+			ethical: 'Neutral'
+		},
+		lore: ''
 	},
 	{
 		name: 'Mokoi',
@@ -17647,7 +18802,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Neutral',
+			ethical: 'Chaos'
+		},
+		lore: ''
 	},
 	{
 		name: 'Moloch',
@@ -17720,7 +18880,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Dark',
+			ethical: 'Chaos'
+		},
+		lore: ''
 	},
 	{
 		name: 'Mot',
@@ -17792,7 +18957,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Light',
+			ethical: 'Chaos'
+		},
+		lore: ''
 	},
 	{
 		name: 'Mother Harlot',
@@ -17874,7 +19044,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				'Phys'
 			]
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Unknown',
+			ethical: 'Unknown'
+		},
+		lore: ''
 	},
 	{
 		name: 'Mothman',
@@ -17943,7 +19118,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Dark',
+			ethical: 'Neutral'
+		},
+		lore: ''
 	},
 	{
 		name: 'Muu Shuwuu',
@@ -18016,7 +19196,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Dark',
+			ethical: 'Law'
+		},
+		lore: ''
 	},
 	{
 		name: 'Naga',
@@ -18085,7 +19270,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Neutral',
+			ethical: 'Chaos'
+		},
+		lore: ''
 	},
 	{
 		name: 'Narasimha',
@@ -18145,7 +19335,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'p4'
+		game: 'p4',
+		alignment: {
+			moral: 'Light',
+			ethical: 'Neutral'
+		},
+		lore: ''
 	},
 	{
 		name: 'Narcissus',
@@ -18218,7 +19413,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Neutral',
+			ethical: 'Neutral'
+		},
+		lore: ''
 	},
 	{
 		name: 'Nata Taishi',
@@ -18283,7 +19483,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'p4'
+		game: 'p4',
+		alignment: {
+			moral: 'Neutral',
+			ethical: 'Neutral'
+		},
+		lore: ''
 	},
 	{
 		name: 'Nebiros',
@@ -18350,7 +19555,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				'Dark'
 			]
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Neutral',
+			ethical: 'Chaos'
+		},
+		lore: ''
 	},
 	{
 		name: 'Necronomicon',
@@ -18401,6 +19611,11 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			repel: []
 		},
 		game: 'p5',
+		alignment: {
+			moral: null,
+			ethical: null
+		},
+		lore: '',
 		user: 'Futaba Sakura',
 		stage: 1,
 		evoSkillName: null
@@ -18472,7 +19687,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Light',
+			ethical: 'Neutral'
+		},
+		lore: ''
 	},
 	{
 		name: 'Nekomata',
@@ -18543,7 +19763,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Neutral',
+			ethical: 'Neutral'
+		},
+		lore: ''
 	},
 	{
 		name: 'Nemesis',
@@ -18606,6 +19831,11 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			repel: []
 		},
 		game: 'p3',
+		alignment: {
+			moral: null,
+			ethical: null
+		},
+		lore: '',
 		user: 'Ken Amada',
 		stage: 1,
 		evoSkillName: null
@@ -18674,7 +19904,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'p4'
+		game: 'p4',
+		alignment: {
+			moral: 'Dark',
+			ethical: 'Chaos'
+		},
+		lore: ''
 	},
 	{
 		name: 'Nigi Mitama',
@@ -18733,7 +19968,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'p5'
+		game: 'p5',
+		alignment: {
+			moral: 'Light',
+			ethical: 'Neutral'
+		},
+		lore: ''
 	},
 	{
 		name: 'Norn',
@@ -18803,7 +20043,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Light',
+			ethical: 'Neutral'
+		},
+		lore: ''
 	},
 	{
 		name: 'Nozuchi',
@@ -18865,7 +20110,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				'Elec'
 			]
 		},
-		game: 'p4'
+		game: 'p4',
+		alignment: {
+			moral: 'Neutral',
+			ethical: 'Neutral'
+		},
+		lore: ''
 	},
 	{
 		name: 'Nue',
@@ -18937,7 +20187,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Dark',
+			ethical: 'Neutral'
+		},
+		lore: ''
 	},
 	{
 		name: 'Nuwa',
@@ -19012,7 +20267,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				'Force'
 			]
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Light',
+			ethical: 'Chaos'
+		},
+		lore: ''
 	},
 	{
 		name: 'Nuwa -Snake-',
@@ -19094,7 +20354,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				'Force'
 			]
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Light',
+			ethical: 'Chaos'
+		},
+		lore: ''
 	},
 	{
 		name: 'Obariyon',
@@ -19158,7 +20423,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Dark',
+			ethical: 'Chaos'
+		},
+		lore: ''
 	},
 	{
 		name: 'Oberon',
@@ -19230,7 +20500,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Neutral',
+			ethical: 'Neutral'
+		},
+		lore: ''
 	},
 	{
 		name: 'Odin',
@@ -19309,7 +20584,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				'Elec'
 			]
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Light',
+			ethical: 'Neutral'
+		},
+		lore: ''
 	},
 	{
 		name: 'Okuninushi',
@@ -19380,7 +20660,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Light',
+			ethical: 'Chaos'
+		},
+		lore: ''
 	},
 	{
 		name: 'Omoikane',
@@ -19446,7 +20731,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'p4'
+		game: 'p4',
+		alignment: {
+			moral: 'Light',
+			ethical: 'Law'
+		},
+		lore: ''
 	},
 	{
 		name: 'Ongyo-Ki',
@@ -19522,7 +20812,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Neutral',
+			ethical: 'Chaos'
+		},
+		lore: ''
 	},
 	{
 		name: 'Oni',
@@ -19588,7 +20883,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Neutral',
+			ethical: 'Chaos'
+		},
+		lore: ''
 	},
 	{
 		name: 'Onmoraki',
@@ -19649,7 +20949,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Dark',
+			ethical: 'Law'
+		},
+		lore: ''
 	},
 	{
 		name: 'Orichalcum',
@@ -19716,7 +21021,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'p5'
+		game: 'p5',
+		alignment: {
+			moral: null,
+			ethical: null
+		},
+		lore: ''
 	},
 	{
 		name: 'Orlov',
@@ -19783,7 +21093,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'p5'
+		game: 'p5',
+		alignment: {
+			moral: null,
+			ethical: null
+		},
+		lore: ''
 	},
 	{
 		name: 'Orobas',
@@ -19857,7 +21172,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Neutral',
+			ethical: 'Chaos'
+		},
+		lore: ''
 	},
 	{
 		name: 'Orpheus',
@@ -19929,6 +21249,11 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			repel: []
 		},
 		game: 'p5',
+		alignment: {
+			moral: null,
+			ethical: null
+		},
+		lore: '',
 		user: 'P3 Protagonist',
 		stage: 1,
 		evoSkillName: null
@@ -20002,6 +21327,11 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			repel: []
 		},
 		game: 'p5',
+		alignment: {
+			moral: null,
+			ethical: null
+		},
+		lore: '',
 		user: 'P3 Protagonist',
 		stage: 1,
 		evoSkillName: null
@@ -20071,7 +21401,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'p5'
+		game: 'p5',
+		alignment: {
+			moral: null,
+			ethical: null
+		},
+		lore: ''
 	},
 	{
 		name: 'Orpheus Picaro',
@@ -20134,7 +21469,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'p5'
+		game: 'p5',
+		alignment: {
+			moral: null,
+			ethical: null
+		},
+		lore: ''
 	},
 	{
 		name: 'Orpheus Telos',
@@ -20180,6 +21520,11 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			repel: []
 		},
 		game: 'p5',
+		alignment: {
+			moral: null,
+			ethical: null
+		},
+		lore: '',
 		user: 'P3 Protagonist',
 		stage: 3,
 		evoSkillName: null
@@ -20257,7 +21602,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Neutral',
+			ethical: 'Neutral'
+		},
+		lore: ''
 	},
 	{
 		name: 'Ose',
@@ -20330,7 +21680,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Neutral',
+			ethical: 'Chaos'
+		},
+		lore: ''
 	},
 	{
 		name: 'Oyamatsumi',
@@ -20404,7 +21759,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Light',
+			ethical: 'Chaos'
+		},
+		lore: ''
 	},
 	{
 		name: 'Pabilsag',
@@ -20465,7 +21825,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				'Dark'
 			]
 		},
-		game: 'p4'
+		game: 'p4',
+		alignment: {
+			moral: 'Light',
+			ethical: 'Neutral'
+		},
+		lore: ''
 	},
 	{
 		name: 'Pale Rider',
@@ -20548,7 +21913,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Unknown',
+			ethical: 'Unknown'
+		},
+		lore: ''
 	},
 	{
 		name: 'Palladion',
@@ -20633,6 +22003,11 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			repel: []
 		},
 		game: 'p3',
+		alignment: {
+			moral: null,
+			ethical: null
+		},
+		lore: '',
 		user: 'Aigis',
 		stage: 1,
 		evoSkillName: null
@@ -20754,6 +22129,11 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			repel: []
 		},
 		game: 'p5',
+		alignment: {
+			moral: null,
+			ethical: null
+		},
+		lore: '',
 		user: 'Sophia',
 		stage: 2,
 		evoSkillName: 'Mahamabarion'
@@ -20829,7 +22209,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Light',
+			ethical: 'Neutral'
+		},
+		lore: ''
 	},
 	{
 		name: 'Pazuzu',
@@ -20907,7 +22292,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Dark',
+			ethical: 'Chaos'
+		},
+		lore: ''
 	},
 	{
 		name: 'Penthesilea',
@@ -20994,6 +22384,11 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			repel: []
 		},
 		game: 'p3',
+		alignment: {
+			moral: null,
+			ethical: null
+		},
+		lore: '',
 		user: 'Mitsuru Kirijo',
 		stage: 1,
 		evoSkillName: null
@@ -21067,7 +22462,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Dark',
+			ethical: 'Chaos'
+		},
+		lore: ''
 	},
 	{
 		name: 'Pithos',
@@ -21166,6 +22566,11 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			repel: []
 		},
 		game: 'p5',
+		alignment: {
+			moral: null,
+			ethical: null
+		},
+		lore: '',
 		user: 'Sophia',
 		stage: 1,
 		evoSkillName: null
@@ -21232,7 +22637,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Neutral',
+			ethical: 'Neutral'
+		},
+		lore: ''
 	},
 	{
 		name: 'Poltergeist',
@@ -21299,7 +22709,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Dark',
+			ethical: 'Chaos'
+		},
+		lore: ''
 	},
 	{
 		name: 'Polydeuces',
@@ -21378,6 +22793,11 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			repel: []
 		},
 		game: 'p3',
+		alignment: {
+			moral: null,
+			ethical: null
+		},
+		lore: '',
 		user: 'Akihiko Sanada',
 		stage: 1,
 		evoSkillName: null
@@ -21453,7 +22873,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Neutral',
+			ethical: 'Law'
+		},
+		lore: ''
 	},
 	{
 		name: 'Preta',
@@ -21513,7 +22938,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Dark',
+			ethical: 'Chaos'
+		},
+		lore: ''
 	},
 	{
 		name: 'Principality',
@@ -21581,7 +23011,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Neutral',
+			ethical: 'Law'
+		},
+		lore: ''
 	},
 	{
 		name: 'Prometheus',
@@ -21632,6 +23067,11 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			repel: []
 		},
 		game: 'p5',
+		alignment: {
+			moral: null,
+			ethical: null
+		},
+		lore: '',
 		user: 'Futaba Sakura',
 		stage: 2,
 		evoSkillName: 'Treasure Skimmer'
@@ -21725,6 +23165,11 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			repel: []
 		},
 		game: 'p3',
+		alignment: {
+			moral: null,
+			ethical: null
+		},
+		lore: '',
 		user: 'Metis',
 		stage: 1,
 		evoSkillName: null
@@ -21804,7 +23249,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Neutral',
+			ethical: 'Chaos'
+		},
+		lore: ''
 	},
 	{
 		name: 'Queen\'s Necklace',
@@ -21871,7 +23321,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'p5'
+		game: 'p5',
+		alignment: {
+			moral: null,
+			ethical: null
+		},
+		lore: ''
 	},
 	{
 		name: 'Quetzalcoatl',
@@ -21941,7 +23396,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Light',
+			ethical: 'Chaos'
+		},
+		lore: ''
 	},
 	{
 		name: 'Raja Naga',
@@ -22017,7 +23477,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Neutral',
+			ethical: 'Chaos'
+		},
+		lore: ''
 	},
 	{
 		name: 'Rakshasa',
@@ -22082,7 +23547,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Dark',
+			ethical: 'Neutral'
+		},
+		lore: ''
 	},
 	{
 		name: 'Rangda',
@@ -22156,7 +23626,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				'Phys'
 			]
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Neutral',
+			ethical: 'Chaos'
+		},
+		lore: ''
 	},
 	{
 		name: 'Raoul',
@@ -22223,6 +23698,11 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			repel: []
 		},
 		game: 'p5',
+		alignment: {
+			moral: null,
+			ethical: null
+		},
+		lore: '',
 		user: 'P5 Protagonist',
 		stage: 3,
 		evoSkillName: null
@@ -22302,7 +23782,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Light',
+			ethical: 'Law'
+		},
+		lore: ''
 	},
 	{
 		name: 'Red Rider',
@@ -22381,7 +23866,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				'Elec'
 			]
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Unknown',
+			ethical: 'Unknown'
+		},
+		lore: ''
 	},
 	{
 		name: 'Regent',
@@ -22448,7 +23938,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'p5'
+		game: 'p5',
+		alignment: {
+			moral: null,
+			ethical: null
+		},
+		lore: ''
 	},
 	{
 		name: 'Robin Hood',
@@ -22535,6 +24030,11 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			repel: []
 		},
 		game: 'p5',
+		alignment: {
+			moral: null,
+			ethical: null
+		},
+		lore: '',
 		user: 'Goro Akechi',
 		stage: 1,
 		evoSkillName: null
@@ -22643,6 +24143,11 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			repel: []
 		},
 		game: 'p4',
+		alignment: {
+			moral: null,
+			ethical: null
+		},
+		lore: '',
 		user: 'Kanji Tatsumi',
 		stage: 2,
 		evoSkillName: null
@@ -22703,7 +24208,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'p5'
+		game: 'p5',
+		alignment: {
+			moral: 'Light',
+			ethical: 'Neutral'
+		},
+		lore: ''
 	},
 	{
 		name: 'Samael',
@@ -22768,7 +24278,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'p4'
+		game: 'p4',
+		alignment: {
+			moral: 'Dark',
+			ethical: 'Law'
+		},
+		lore: ''
 	},
 	{
 		name: 'Sandalphon',
@@ -22846,7 +24361,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Light',
+			ethical: 'Law'
+		},
+		lore: ''
 	},
 	{
 		name: 'Sandman',
@@ -22908,7 +24428,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Neutral',
+			ethical: 'Chaos'
+		},
+		lore: ''
 	},
 	{
 		name: 'Sarasvati',
@@ -22982,7 +24507,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Light',
+			ethical: 'Neutral'
+		},
+		lore: ''
 	},
 	{
 		name: 'Satan',
@@ -23049,7 +24579,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				'Dark'
 			]
 		},
-		game: 'p5'
+		game: 'p5',
+		alignment: {
+			moral: 'Light',
+			ethical: 'Law'
+		},
+		lore: ''
 	},
 	{
 		name: 'Satanael',
@@ -23125,6 +24660,11 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			repel: []
 		},
 		game: 'p5',
+		alignment: {
+			moral: null,
+			ethical: null
+		},
+		lore: '',
 		user: 'P5 Protagonist',
 		stage: 2,
 		evoSkillName: null
@@ -23185,7 +24725,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'p4'
+		game: 'p4',
+		alignment: {
+			moral: 'Unknown',
+			ethical: 'Law'
+		},
+		lore: ''
 	},
 	{
 		name: 'Saturnus',
@@ -23245,7 +24790,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			],
 			repel: []
 		},
-		game: 'p4'
+		game: 'p4',
+		alignment: {
+			moral: 'Neutral',
+			ethical: 'Neutral'
+		},
+		lore: ''
 	},
 	{
 		name: 'Scathach',
@@ -23319,7 +24869,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Light',
+			ethical: 'Neutral'
+		},
+		lore: ''
 	},
 	{
 		name: 'Seiryu',
@@ -23398,7 +24953,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Light',
+			ethical: 'Chaos'
+		},
+		lore: ''
 	},
 	{
 		name: 'Seiten Taisei',
@@ -23464,7 +25024,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'p4'
+		game: 'p4',
+		alignment: {
+			moral: 'Light',
+			ethical: 'Chaos'
+		},
+		lore: ''
 	},
 	{
 		name: 'Seiten Taisei - P5',
@@ -23596,6 +25161,11 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			repel: []
 		},
 		game: 'p5',
+		alignment: {
+			moral: null,
+			ethical: null
+		},
+		lore: '',
 		user: 'Ryuji Sakamoto',
 		stage: 2,
 		evoSkillName: 'Evade Wind'
@@ -23656,7 +25226,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'p4'
+		game: 'p4',
+		alignment: {
+			moral: 'Neutral',
+			ethical: 'Law'
+		},
+		lore: ''
 	},
 	{
 		name: 'Setanta',
@@ -23726,7 +25301,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Neutral',
+			ethical: 'Neutral'
+		},
+		lore: ''
 	},
 	{
 		name: 'Seth',
@@ -23801,7 +25381,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Dark',
+			ethical: 'Chaos'
+		},
+		lore: ''
 	},
 	{
 		name: 'Shiisaa',
@@ -23870,7 +25455,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Light',
+			ethical: 'Neutral'
+		},
+		lore: ''
 	},
 	{
 		name: 'Shiki-Ouji',
@@ -23941,7 +25531,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Neutral',
+			ethical: 'Chaos'
+		},
+		lore: ''
 	},
 	{
 		name: 'Shiva',
@@ -24022,7 +25617,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Light',
+			ethical: 'Chaos'
+		},
+		lore: ''
 	},
 	{
 		name: 'Siegfried',
@@ -24098,7 +25698,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Light',
+			ethical: 'Neutral'
+		},
+		lore: ''
 	},
 	{
 		name: 'Silky',
@@ -24172,7 +25777,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Neutral',
+			ethical: 'Neutral'
+		},
+		lore: ''
 	},
 	{
 		name: 'Skadi',
@@ -24246,7 +25856,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Light',
+			ethical: 'Chaos'
+		},
+		lore: ''
 	},
 	{
 		name: 'Slime',
@@ -24308,7 +25923,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Dark',
+			ethical: 'Chaos'
+		},
+		lore: ''
 	},
 	{
 		name: 'Sraosha',
@@ -24381,7 +26001,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Light',
+			ethical: 'Law'
+		},
+		lore: ''
 	},
 	{
 		name: 'Stone of Scone',
@@ -24448,7 +26073,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'p5'
+		game: 'p5',
+		alignment: {
+			moral: null,
+			ethical: null
+		},
+		lore: ''
 	},
 	{
 		name: 'Succubus',
@@ -24520,7 +26150,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Neutral',
+			ethical: 'Chaos'
+		},
+		lore: ''
 	},
 	{
 		name: 'Sudama',
@@ -24582,7 +26217,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Neutral',
+			ethical: 'Neutral'
+		},
+		lore: ''
 	},
 	{
 		name: 'Sui-Ki',
@@ -24654,7 +26294,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Neutral',
+			ethical: 'Chaos'
+		},
+		lore: ''
 	},
 	{
 		name: 'Sukuna-Hikona',
@@ -24727,7 +26372,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Light',
+			ethical: 'Chaos'
+		},
+		lore: ''
 	},
 	{
 		name: 'Sukuna-Hikona - P4',
@@ -24828,6 +26478,11 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			repel: []
 		},
 		game: 'p4',
+		alignment: {
+			moral: null,
+			ethical: null
+		},
+		lore: '',
 		user: 'Naoto Shirogane',
 		stage: 1,
 		evoSkillName: null
@@ -24943,6 +26598,11 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			repel: []
 		},
 		game: 'p4',
+		alignment: {
+			moral: null,
+			ethical: null
+		},
+		lore: '',
 		user: 'Yukiko Amagi',
 		stage: 3,
 		evoSkillName: 'Maragibarion'
@@ -25007,7 +26667,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'p4'
+		game: 'p4',
+		alignment: {
+			moral: 'Light',
+			ethical: 'Law'
+		},
+		lore: ''
 	},
 	{
 		name: 'Surt',
@@ -25077,7 +26742,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Dark',
+			ethical: 'Chaos'
+		},
+		lore: ''
 	},
 	{
 		name: 'Susano-o',
@@ -25186,6 +26856,11 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			repel: []
 		},
 		game: 'p4',
+		alignment: {
+			moral: null,
+			ethical: null
+		},
+		lore: '',
 		user: 'Yosuke Hanamura',
 		stage: 2,
 		evoSkillName: null
@@ -25261,7 +26936,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Light',
+			ethical: 'Law'
+		},
+		lore: ''
 	},
 	{
 		name: 'Suzuka Gongen',
@@ -25374,6 +27054,11 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			repel: []
 		},
 		game: 'p4',
+		alignment: {
+			moral: null,
+			ethical: null
+		},
+		lore: '',
 		user: 'Chie Satonaka',
 		stage: 2,
 		evoSkillName: null
@@ -25434,7 +27119,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'p4'
+		game: 'p4',
+		alignment: {
+			moral: 'Light',
+			ethical: 'Neutral'
+		},
+		lore: ''
 	},
 	{
 		name: 'Take-Mikazuchi',
@@ -25537,6 +27227,11 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			repel: []
 		},
 		game: 'p4',
+		alignment: {
+			moral: null,
+			ethical: null
+		},
+		lore: '',
 		user: 'Kanji Tatsumi',
 		stage: 1,
 		evoSkillName: null
@@ -25605,7 +27300,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Light',
+			ethical: 'Chaos'
+		},
+		lore: ''
 	},
 	{
 		name: 'Takehaya Susano-o',
@@ -25714,6 +27414,11 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			repel: []
 		},
 		game: 'p4',
+		alignment: {
+			moral: null,
+			ethical: null
+		},
+		lore: '',
 		user: 'Yosuke Hanamura',
 		stage: 3,
 		evoSkillName: 'Youthful Wind'
@@ -25821,6 +27526,11 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			repel: []
 		},
 		game: 'p4',
+		alignment: {
+			moral: null,
+			ethical: null
+		},
+		lore: '',
 		user: 'Kanji Tatsumi',
 		stage: 3,
 		evoSkillName: 'The Man\'s Way'
@@ -25890,7 +27600,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			],
 			repel: []
 		},
-		game: 'p5'
+		game: 'p5',
+		alignment: {
+			moral: 'Light',
+			ethical: 'Neutral'
+		},
+		lore: ''
 	},
 	{
 		name: 'Tao',
@@ -25966,7 +27681,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Light',
+			ethical: 'Law'
+		},
+		lore: ''
 	},
 	{
 		name: 'Taotie',
@@ -26029,7 +27749,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				'Dark'
 			]
 		},
-		game: 'p4'
+		game: 'p4',
+		alignment: {
+			moral: 'Dark',
+			ethical: 'Law'
+		},
+		lore: ''
 	},
 	{
 		name: 'Taowu',
@@ -26096,7 +27821,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'p4'
+		game: 'p4',
+		alignment: {
+			moral: 'Unknown',
+			ethical: 'Unknown'
+		},
+		lore: ''
 	},
 	{
 		name: 'Thanatos',
@@ -26161,6 +27891,11 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			]
 		},
 		game: 'p5',
+		alignment: {
+			moral: null,
+			ethical: null
+		},
+		lore: '',
 		user: 'Elizabeth',
 		stage: 1,
 		evoSkillName: null
@@ -26227,7 +27962,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				'Dark'
 			]
 		},
-		game: 'p5'
+		game: 'p5',
+		alignment: {
+			moral: null,
+			ethical: null
+		},
+		lore: ''
 	},
 	{
 		name: 'Thor',
@@ -26300,7 +28040,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Light',
+			ethical: 'Chaos'
+		},
+		lore: ''
 	},
 	{
 		name: 'Thoth',
@@ -26372,7 +28117,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Light',
+			ethical: 'Neutral'
+		},
+		lore: ''
 	},
 	{
 		name: 'Throne',
@@ -26444,7 +28194,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Neutral',
+			ethical: 'Law'
+		},
+		lore: ''
 	},
 	{
 		name: 'Thunderbird',
@@ -26514,7 +28269,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Light',
+			ethical: 'Law'
+		},
+		lore: ''
 	},
 	{
 		name: 'Titan',
@@ -26572,7 +28332,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'p4'
+		game: 'p4',
+		alignment: {
+			moral: 'Neutral',
+			ethical: 'Neutral'
+		},
+		lore: ''
 	},
 	{
 		name: 'Titania',
@@ -26647,7 +28412,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Neutral',
+			ethical: 'Neutral'
+		},
+		lore: ''
 	},
 	{
 		name: 'Tomoe',
@@ -26758,6 +28528,11 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			repel: []
 		},
 		game: 'p4',
+		alignment: {
+			moral: null,
+			ethical: null
+		},
+		lore: '',
 		user: 'Chie Satonaka',
 		stage: 1,
 		evoSkillName: null
@@ -26822,7 +28597,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'p4'
+		game: 'p4',
+		alignment: {
+			moral: 'Unknown',
+			ethical: 'Unknown'
+		},
+		lore: ''
 	},
 	{
 		name: 'Trismegistus',
@@ -26933,6 +28713,11 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			repel: []
 		},
 		game: 'p3',
+		alignment: {
+			moral: null,
+			ethical: null
+		},
+		lore: '',
 		user: 'Junpei Iori',
 		stage: 2,
 		evoSkillName: 'Spring of Life'
@@ -27016,7 +28801,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Unknown',
+			ethical: 'Unknown'
+		},
+		lore: ''
 	},
 	{
 		name: 'Tsuchigumo',
@@ -27077,7 +28867,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Neutral',
+			ethical: 'Neutral'
+		},
+		lore: ''
 	},
 	{
 		name: 'Tsukiyomi',
@@ -27146,6 +28941,11 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			]
 		},
 		game: 'p5',
+		alignment: {
+			moral: null,
+			ethical: null
+		},
+		lore: '',
 		user: 'Sho Minazuki',
 		stage: 1,
 		evoSkillName: null
@@ -27216,7 +29016,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				'Dark'
 			]
 		},
-		game: 'p5'
+		game: 'p5',
+		alignment: {
+			moral: null,
+			ethical: null
+		},
+		lore: ''
 	},
 	{
 		name: 'Turdak',
@@ -27274,7 +29079,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Dark',
+			ethical: 'Neutral'
+		},
+		lore: ''
 	},
 	{
 		name: 'Tzitzimitl',
@@ -27342,7 +29152,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				'Elec'
 			]
 		},
-		game: 'p4'
+		game: 'p4',
+		alignment: {
+			moral: 'Dark',
+			ethical: 'Chaos'
+		},
+		lore: ''
 	},
 	{
 		name: 'Ukobach',
@@ -27400,7 +29215,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'p4'
+		game: 'p4',
+		alignment: {
+			moral: 'Neutral',
+			ethical: 'Chaos'
+		},
+		lore: ''
 	},
 	{
 		name: 'Undine',
@@ -27458,7 +29278,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			],
 			repel: []
 		},
-		game: 'p4'
+		game: 'p4',
+		alignment: {
+			moral: 'Light',
+			ethical: 'Neutral'
+		},
+		lore: ''
 	},
 	{
 		name: 'Unicorn',
@@ -27515,7 +29340,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'p5'
+		game: 'p5',
+		alignment: {
+			moral: 'Light',
+			ethical: 'Neutral'
+		},
+		lore: ''
 	},
 	{
 		name: 'Uriel',
@@ -27588,7 +29418,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Light',
+			ethical: 'Law'
+		},
+		lore: ''
 	},
 	{
 		name: 'Valjean',
@@ -27691,6 +29526,11 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			repel: []
 		},
 		game: 'p5',
+		alignment: {
+			moral: null,
+			ethical: null
+		},
+		lore: '',
 		user: 'Zenkichi Hasegawa',
 		stage: 1,
 		evoSkillName: null
@@ -27759,7 +29599,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Neutral',
+			ethical: 'Law'
+		},
+		lore: ''
 	},
 	{
 		name: 'Vanadis',
@@ -27830,6 +29675,11 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			repel: []
 		},
 		game: 'p5',
+		alignment: {
+			moral: null,
+			ethical: null
+		},
+		lore: '',
 		user: 'Sumire Yoshizawa',
 		stage: 2,
 		evoSkillName: 'Evade Dark'
@@ -27912,7 +29762,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				'Ice'
 			]
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Dark',
+			ethical: 'Chaos'
+		},
+		lore: ''
 	},
 	{
 		name: 'Vetala',
@@ -27975,7 +29830,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'p4'
+		game: 'p4',
+		alignment: {
+			moral: 'Dark',
+			ethical: 'Chaos'
+		},
+		lore: ''
 	},
 	{
 		name: 'Virtue',
@@ -28039,7 +29899,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'p4'
+		game: 'p4',
+		alignment: {
+			moral: 'Neutral',
+			ethical: 'Law'
+		},
+		lore: ''
 	},
 	{
 		name: 'Vishnu',
@@ -28116,7 +29981,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				'Light'
 			]
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Light',
+			ethical: 'Neutral'
+		},
+		lore: ''
 	},
 	{
 		name: 'Vohu Manah',
@@ -28182,7 +30052,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			],
 			repel: []
 		},
-		game: 'p5'
+		game: 'p5',
+		alignment: {
+			moral: 'Unknown',
+			ethical: 'Unknown'
+		},
+		lore: ''
 	},
 	{
 		name: 'White Rider',
@@ -28259,7 +30134,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				'Fire'
 			]
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Unknown',
+			ethical: 'Unknown'
+		},
+		lore: ''
 	},
 	{
 		name: 'William',
@@ -28388,6 +30268,11 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			repel: []
 		},
 		game: 'p5',
+		alignment: {
+			moral: null,
+			ethical: null
+		},
+		lore: '',
 		user: 'Ryuji Sakamoto',
 		stage: 3,
 		evoSkillName: 'Fighting Spirit'
@@ -28452,7 +30337,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'p4'
+		game: 'p4',
+		alignment: {
+			moral: 'Unknown',
+			ethical: 'Unknown'
+		},
+		lore: ''
 	},
 	{
 		name: 'Yaksini',
@@ -28523,7 +30413,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Neutral',
+			ethical: 'Chaos'
+		},
+		lore: ''
 	},
 	{
 		name: 'Yamata-no-Orochi',
@@ -28598,7 +30493,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Neutral',
+			ethical: 'Chaos'
+		},
+		lore: ''
 	},
 	{
 		name: 'Yamato Sumeragi',
@@ -28698,6 +30598,11 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			]
 		},
 		game: 'p4',
+		alignment: {
+			moral: null,
+			ethical: null
+		},
+		lore: '',
 		user: 'Naoto Shirogane',
 		stage: 3,
 		evoSkillName: 'Shield of Justice'
@@ -28800,6 +30705,11 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			repel: []
 		},
 		game: 'p4',
+		alignment: {
+			moral: null,
+			ethical: null
+		},
+		lore: '',
 		user: 'Naoto Shirogane',
 		stage: 2,
 		evoSkillName: null
@@ -28876,7 +30786,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Light',
+			ethical: 'Law'
+		},
+		lore: ''
 	},
 	{
 		name: 'Yatsufusa',
@@ -28944,7 +30859,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 				'Wind'
 			]
 		},
-		game: 'p4'
+		game: 'p4',
+		alignment: {
+			moral: 'Unknown',
+			ethical: 'Unknown'
+		},
+		lore: ''
 	},
 	{
 		name: 'Yomotsu-Shikome',
@@ -29002,7 +30922,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'p4'
+		game: 'p4',
+		alignment: {
+			moral: 'Neutral',
+			ethical: 'Chaos'
+		},
+		lore: ''
 	},
 	{
 		name: 'Yoshitsune',
@@ -29070,7 +30995,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Light',
+			ethical: 'Neutral'
+		},
+		lore: ''
 	},
 	{
 		name: 'Yurlungur',
@@ -29146,7 +31076,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Neutral',
+			ethical: 'Chaos'
+		},
+		lore: ''
 	},
 	{
 		name: 'Zaou-Gongen',
@@ -29223,7 +31158,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Light',
+			ethical: 'Chaos'
+		},
+		lore: ''
 	},
 	{
 		name: 'Zeus',
@@ -29301,7 +31241,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Light',
+			ethical: 'Neutral'
+		},
+		lore: ''
 	},
 	{
 		name: 'Zhen',
@@ -29366,7 +31311,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Dark',
+			ethical: 'Law'
+		},
+		lore: ''
 	},
 	{
 		name: 'Zorro',
@@ -29497,6 +31447,11 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			repel: []
 		},
 		game: 'p5',
+		alignment: {
+			moral: null,
+			ethical: null
+		},
+		lore: '',
 		user: 'Morgana',
 		stage: 1,
 		evoSkillName: null
@@ -29573,7 +31528,12 @@ const demonData: Readonly<(DemonData | PersonaData)[]> = [
 			drain: [],
 			repel: []
 		},
-		game: 'smt5'
+		game: 'smt5',
+		alignment: {
+			moral: 'Light',
+			ethical: 'Chaos'
+		},
+		lore: ''
 	}
 ];
 

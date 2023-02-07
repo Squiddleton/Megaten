@@ -1,5 +1,5 @@
-/** A utility type used to narrow down Persona properties' types */
-type IfPersona<IsPersona extends boolean, ValueIfPersona, ValueIfNotPersona> = IsPersona extends true ? ValueIfPersona : ValueIfNotPersona;
+/** A utility type for shortening ternary type checks */
+export type If<Bool extends boolean, ValueIfTrue, ValueIfFalse> = Bool extends true ? ValueIfTrue : ValueIfFalse;
 
 /** An ailment inflicted by a skill */
 export interface Ailment {
@@ -69,16 +69,16 @@ export type AttackDisplay = CounterDisplay | 'Minuscule' | 'Heavy' | 'Severe' | 
 /** Types of damage dealt */
 export type DamageType = 'Physical' | 'Magic';
 
-export interface DemonAffinities<IsPersona extends boolean = boolean> {
+export interface DemonAffinities<PersonaBased extends boolean = boolean> {
 	/** The demon's skill potential */
-	skillPotential: IfPersona<IsPersona, null, SkillPotential | null>;
+	skillPotential: If<PersonaBased, null, SkillPotential | null>;
 	/** The affinity that this demon can inherit skills of */
 	inherit: InheritAffinity | null;
 }
 
-export interface DemonResistances<IsPersona extends boolean = boolean> {
+export interface DemonResistances<PersonaBased extends boolean = boolean> {
 	/** Ailments that the demon is weak to, resists, or nullifies */
-	ailments: IfPersona<IsPersona, null, Partial<Record<AilmentName, AilResistance | 'Weak'>> | null>;
+	ailments: If<PersonaBased, null, Partial<Record<AilmentName, AilResistance | 'Weak'>> | null>;
 	/** The affinities that the demon is weak to */
 	weak: DamagingAffinity[];
 	/** Affinities that the demon resists */
@@ -126,6 +126,16 @@ export type HPMPAil = HPMP | 'HPMP' | 'AIL';
 /** The stat which a PostBattleSkill instance increases */
 export type PostBattleStat = HPMP | 'HPMP' | 'EXP' | 'Money';
 
+/** Demons' moral alignments */
+export type MoralAlignment = 'Light' | 'Neutral' | 'Dark' | 'Unknown';
+/** Demons' ethical alignments */
+export type EthicalAlignment = 'Law' | 'Neutral' | 'Chaos' | 'Unknown';
+/** Demons' alignments */
+export interface Alignment<PersonaBased extends boolean> {
+	moral: If<PersonaBased, null, MoralAlignment>;
+	ethical: If<PersonaBased, null, EthicalAlignment>;
+}
+
 /** A static number or a percentage */
 export type NumberOrPercent = number | `${number}%`;
 
@@ -153,8 +163,12 @@ export type SMTGame = 'smt5';
 /** Games that Demon data can originate from */
 export type AnyGame = PersonaGame | SMTGame;
 
+/** Custom races for demons originating in Persona games */
+export type PersonaRace = 'Persona' | 'Picaro' | 'Treasure';
 /** Demons' races */
-export type Race = 'Amatsu' | 'Avatar' | 'Avian' | 'Beast' | 'Brute' | 'Deity' | 'Devil' | 'Divine' | 'Dragon' | 'Drake' | 'Element' | 'Fairy' | 'Fallen' | 'Femme' | 'Fiend' | 'Foul' | 'Fury' | 'Genma' | 'Godly' | 'Haunt' | 'Herald' | 'Holy' | 'Jaki' | 'Jirae' | 'Kishin' | 'Kunitsu' | 'Lady' | 'Megami' | 'Mitama' | 'Night' | 'Nymph' | 'Panagia' | 'Persona' | 'Picaro' | 'Raptor' | 'Snake' | 'Tenma' | 'Treasure' | 'Tyrant' | 'Vile' | 'Wargod' | 'Wilder' | 'Wood' | 'Yoma';
+export type SMTRace = 'Amatsu' | 'Avatar' | 'Avian' | 'Beast' | 'Brute' | 'Deity' | 'Devil' | 'Divine' | 'Dragon' | 'Drake' | 'Element' | 'Fairy' | 'Fallen' | 'Femme' | 'Fiend' | 'Foul' | 'Fury' | 'Genma' | 'Godly' | 'Haunt' | 'Herald' | 'Holy' | 'Jaki' | 'Jirae' | 'Kishin' | 'Kunitsu' | 'Lady' | 'Megami' | 'Mitama' | 'Night' | 'Nymph' | 'Panagia' | 'Raptor' | 'Snake' | 'Tenma' | 'Tyrant' | 'Vile' | 'Wargod' | 'Wilder' | 'Wood' | 'Yoma';
+/** Demons' races */
+export type AnyRace = PersonaRace | SMTRace;
 
 /** The displayed amount that RecoverySkill instances can recover  */
 export type RecoveryAmount = 'Slight' | 'Moderate' | 'Half' | 'Full' | '130%';

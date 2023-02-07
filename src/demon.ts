@@ -5,13 +5,13 @@ import type { DemonData, PersonaData } from './dataTypes';
 import demonData from './demonData';
 import { MegatenError } from './error';
 import { AnySkill, Skill } from './skill';
-import type { AnyGame, Arcana, DemonAffinities, DemonResistances, DemonSkill, DemonStats, PersonaGame, Race, Stage } from './types';
+import type { Alignment, AnyGame, Arcana, DemonAffinities, DemonResistances, DemonSkill, DemonStats, If, PersonaGame, PersonaRace, SMTRace, Stage } from './types';
 
-function isPersona(demon: Demon | DemonData): demon is Persona {
+function isPersona(demon: Demon | DemonData<boolean>): demon is Persona {
 	return demon.race === 'Persona';
 }
 
-export class Demon implements DemonData {
+export class Demon<PersonaBased extends boolean = boolean> implements DemonData<PersonaBased> {
 	/** The demon's name */
 	name: string;
 	/** The demon's normalized, unique name */
@@ -19,26 +19,29 @@ export class Demon implements DemonData {
 	/** Other names for the demon */
 	aliases: string[];
 	/** The demon's skill potential and inherit affinity */
-	affinities: DemonAffinities;
+	affinities: DemonAffinities<PersonaBased>;
 	/** The demon's Arcana in Persona titles, or null if none */
-	arcana: Arcana | null;
+	arcana: If<PersonaBased, Arcana, Arcana | null>;
 	/** The demon's race in Shin Megami Tensei titles, or null if none */
-	race: Race | null;
+	race: If<PersonaBased, PersonaRace, SMTRace | null>;
 	/** The demon's initial level */
 	level: number;
 	/** The demon's initial HP */
-	hp: number | null;
+	hp: If<PersonaBased, null, number | null>;
 	/** The demon's initial MP/SP */
-	mp: number | null;
+	mp: If<PersonaBased, null, number | null>;
 	/** The demon's initial stats */
 	stats: DemonStats;
 	/** The skills that the demon learns by leveling up */
 	learnset: DemonSkill[];
 	/** The demon's resistances */
-	resistances: DemonResistances;
+	resistances: DemonResistances<PersonaBased>;
 	/** The game that this demon's data originates from */
-	game: AnyGame;
-	constructor(data: DemonData) {
+	game: If<PersonaBased, PersonaGame, AnyGame>;
+	alignment: Alignment<PersonaBased>;
+	/** The demon's backstory */
+	lore: string;
+	constructor(data: DemonData<PersonaBased>) {
 		this.name = data.name;
 		this.devName = normalize(data.name);
 		this.aliases = data.aliases ?? [];
@@ -52,10 +55,20 @@ export class Demon implements DemonData {
 		this.learnset = data.learnset;
 		this.resistances = data.resistances;
 		this.game = data.game;
+		this.alignment = data.alignment;
+		this.lore = data.lore;
 	}
 	/** Whether the demon is a Persona instance */
 	isPersona(): this is Persona {
 		return isPersona(this);
+	}
+	/** Whether this demon originated in a Persona game */
+	isPersonaBased(): this is Demon<true> {
+		return this.race !== null && ['Persona', 'Picaro', 'Treasure'].includes(this.race);
+	}
+	/** Whether this demon originated in a Shin Megami Tensei game */
+	isSMTBased(): this is Demon<false> {
+		return !this.isPersonaBased();
 	}
 	/** Returns a string in "(Race) (Name)" format, or just the name if the race is null */
 	toString() {
@@ -86,14 +99,16 @@ export class Demon implements DemonData {
 	}
 }
 
-export class Persona extends Demon implements PersonaData {
-	affinities: DemonAffinities<true>;
-	arcana: Arcana;
-	race: 'Persona';
-	hp: null;
-	mp: null;
-	resistances: DemonResistances<true>;
-	game: PersonaGame;
+export class Persona extends Demon<true> implements PersonaData {
+	declare affinities: DemonAffinities<true>;
+	declare arcana: Arcana;
+	declare race: 'Persona';
+	declare hp: null;
+	declare mp: null;
+	declare resistances: DemonResistances<true>;
+	declare game: PersonaGame;
+	declare moral: null;
+	declare ethical: null;
 	/** The Persona's user */
 	user: string;
 	/** The Persona's stage of evolution */
@@ -104,13 +119,6 @@ export class Persona extends Demon implements PersonaData {
 	evoSkill: AnySkill | null;
 	constructor(data: PersonaData) {
 		super(data);
-		this.affinities = data.affinities;
-		this.arcana = data.arcana;
-		this.hp = data.hp;
-		this.mp = data.mp;
-		this.race = data.race;
-		this.resistances = data.resistances;
-		this.game = data.game;
 		this.user = data.user;
 		this.stage = data.stage;
 		this.evoSkillName = data.evoSkillName;
@@ -150,7 +158,7 @@ export class Persona extends Demon implements PersonaData {
 	}
 }
 
-Demon.array = demonData.map(data => new (isPersona(data) ? Persona : Demon)(data));
+Demon.array = demonData.map(data => isPersona(data) ? new Persona(data) : new Demon(data));
 Demon.map = new Map(Demon.array.map(demon => [demon.devName, demon]));
 
 Persona.array = Demon.array.filter(isPersona);
