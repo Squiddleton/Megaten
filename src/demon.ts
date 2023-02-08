@@ -11,6 +11,8 @@ function isPersona(demon: Demon | DemonData): demon is Persona {
 	return demon.race === 'Persona';
 }
 
+export type AnyDemon = Demon<true> | Demon<false>;
+
 export class Demon<PersonaBased extends boolean = boolean> implements DemonData<PersonaBased> {
 	/** The demon's name */
 	name: string;
@@ -36,8 +38,9 @@ export class Demon<PersonaBased extends boolean = boolean> implements DemonData<
 	learnset: DemonSkill[];
 	/** The demon's resistances */
 	resistances: DemonResistances<PersonaBased>;
-	/** The game that this demon's data originates from */
+	/** The game that the demon's data originates from */
 	game: If<PersonaBased, PersonaGame, AnyGame>;
+	/** The demon's moral and ethical alignment */
 	alignment: Alignment<PersonaBased>;
 	/** The demon's backstory, or null for older Personas */
 	lore: If<PersonaBased, string | null, string>;
@@ -62,26 +65,22 @@ export class Demon<PersonaBased extends boolean = boolean> implements DemonData<
 	isPersona(): this is Persona {
 		return isPersona(this);
 	}
-	/** Whether this demon originated in a Persona game */
+	/** Whether the demon is a Persona series-exclusive */
 	isPersonaBased(): this is Demon<true> {
 		return this.race !== null && ['Persona', 'Picaro', 'Treasure'].includes(this.race);
 	}
-	/** Whether this demon originated in a Shin Megami Tensei game */
-	isSMTBased(): this is Demon<false> {
-		return !this.isPersonaBased();
-	}
 	/** Returns a string in "(Race) (Name)" format, or just the name if the race is null */
 	toString(): string {
-		return this.race !== null && this.isSMTBased() ? `${this.race} ${this.name}` : this.name;
+		return this.race !== null && !this.isPersonaBased() ? `${this.race} ${this.name}` : this.name;
 	}
 	/** An image of the demon */
 	get image() {
 		return readFileSync(path.join(__dirname, '..', `images/demons/${this.devName}.png`));
 	}
 	/** An array of every Demon and Persona instance */
-	static array: Demon[] = [];
+	static array: AnyDemon[] = [];
 	/** A map of every Demon and Persona instance, keyed by their devName properties */
-	static map: Map<string, Demon> = new Map();
+	static map: Map<string, AnyDemon> = new Map();
 	/**
 	 *
 	 * Gets a Demon instance by its name.
@@ -89,8 +88,8 @@ export class Demon<PersonaBased extends boolean = boolean> implements DemonData<
 	 * @param name - The demon's name
 	 * @param error - Whether to throw an exception instead of returning null if no demon is found; defaults to false
 	 */
-	static get(name: string, error: true): Demon;
-	static get(name: string, error?: boolean): Demon | null;
+	static get(name: string, error: true): AnyDemon;
+	static get(name: string, error?: boolean): AnyDemon | null;
 	static get(name: string, error = false) {
 		const normalized = normalize(name);
 		const found = this.map.get(normalized) ?? this.array.find(demon => demon.aliases.some(alias => normalize(alias) === normalized)) ?? null;

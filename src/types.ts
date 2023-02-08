@@ -3,7 +3,9 @@ export type If<Bool extends boolean, ValueIfTrue, ValueIfFalse> = Bool extends t
 
 /** An ailment inflicted by a skill */
 export interface Ailment {
+	/** The ailment's name */
 	name: AilmentName;
+	/** The percent chance of inflicting the ailment */
 	chance: number;
 }
 
@@ -72,7 +74,7 @@ export type DamageType = 'Physical' | 'Magic';
 export interface DemonAffinities<PersonaBased extends boolean = boolean> {
 	/** The demon's skill potential */
 	skillPotential: If<PersonaBased, null, SkillPotential | null>;
-	/** The affinity that this demon can inherit skills of */
+	/** The affinity that the demon can inherit skills of */
 	inherit: InheritAffinity | null;
 }
 
@@ -130,9 +132,11 @@ export type PostBattleStat = HPMP | 'HPMP' | 'EXP' | 'Money';
 export type MoralAlignment = 'Light' | 'Neutral' | 'Dark' | 'Unknown';
 /** Demons' ethical alignments */
 export type EthicalAlignment = 'Law' | 'Neutral' | 'Chaos' | 'Unknown';
-/** Demons' alignments */
+/** Demons' moral and ethical alignments */
 export interface Alignment<PersonaBased extends boolean> {
+	/** The demon's moral alignment (Light to Dark) */
 	moral: If<PersonaBased, null, MoralAlignment>;
+	/** The demon's ethical alignment (Law to Chaos) */
 	ethical: If<PersonaBased, null, EthicalAlignment>;
 }
 
