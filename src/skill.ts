@@ -181,7 +181,7 @@ export class AttackSkill extends Skill implements AttackSkillData {
 		}
 
 		if (ailments.length > 0) {
-			this.description += ` Chance of inflicting ${ailments.map(a => a.name).join('/')}.`;
+			this.description += ` Chance of inflicting ${ailments.map(ailment => ailment.name).join('/')}.`;
 		}
 		if (flags.length > 0) {
 			this.description += ' ';
@@ -336,7 +336,7 @@ export class BarrierSkill extends Skill implements BarrierSkillData {
 					break;
 				}
 				default: {
-					this.description = `Nullifies a${['Ice', 'Elec'].some(e => this.name.includes(e)) ? 'n' : ''} ${this.name.replace(' Wall', '')} attack against all allies once for 1 turn.`;
+					this.description = `Nullifies a${['Ice', 'Elec'].some(affinity => this.name.includes(affinity)) ? 'n' : ''} ${this.name.replace(' Wall', '')} attack against all allies once for 1 turn.`;
 				}
 			}
 		}
@@ -892,7 +892,7 @@ export class SupportSkill extends Skill implements SupportSkillData {
 		const { buffs, debuffs, flags = [], negate, range } = data;
 		super(data);
 
-		const isAllyRangeFunc = (r: Exclude<AnyRange, 'Random'>): r is AllyRange => ['Ally', 'Party'].includes(range);
+		const isAllyRangeFunc = (allyRange: Exclude<AnyRange, 'Random'>): allyRange is AllyRange => ['Ally', 'Party'].includes(range);
 		const isAllyRange = isAllyRangeFunc(range);
 		if (flags.includes('Cure Non-Special Ailments')) {
 			this.description = 'Cures all non-special ailments for all allies.';
