@@ -9,7 +9,7 @@ This contains the demons/Personas and skills from the following games, with more
 * Shin Megami Tensei V
 * Persona 5/Royal/Strikers
 * Persona 4/Golden
-* **(Incomplete)** Persona 3/Portable/FES
+* **Party Personas Only** Persona 3/Portable/FES
 
 NOTE: This is **not** a 1:1 database of all past data. Information is adjusted to the latest mainstream release, and more changes are found in the Notes section.
 
@@ -120,6 +120,11 @@ Demon {
     repel: []
   },
   game: 'smt5',
+  alignment: {
+    moral: 'Neutral',
+    ethical: 'Neutral'
+  },
+  lore: 'A frost spirit made from ice and snow that appears during the winter and melts away in the spring ...',
   isPersona(): false,
   toString(): 'Fairy Jack Frost',
   image: Buffer { ... }
@@ -175,13 +180,16 @@ Persona {
     repel: []
   },
   game: 'p5',
+  alignment: null,
+  lore: 'The Roman god of travelers and thieves ...',
   user: 'Morgana',
   stage: 2,
   evoSkillName: 'Evade Elec',
   isPersona(): false,
-  toString(): 'Morgana\'s Mercurius',
+  toString(): "Morgana's Mercurius",
   image: Buffer { ... },
   evolution: Persona { name: 'Diego', ... },
+  evoSkillName: 'Evade Elec',
   evoSkill: EvasionSkill { name: 'Evade Elec', ... }
 }
 ```
@@ -195,10 +203,11 @@ Each skill is marked by a type property which groups similar skill instances tog
 ```javascript
 AttackSkill {
   name: 'Ziodyne',
+  aliases: [],
   devName: 'ziodyne',
+  unique: false,
   affinity: 'Elec',
   type: 'ATTACK',
-  unique: false,
   accuracy: 98,
   ailments: [],
   cost: {
