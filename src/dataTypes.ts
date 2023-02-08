@@ -1,4 +1,4 @@
-import type { AilResistance, Ailment, AilmentName, Alignment, AllyRange, AnyAffinity, AnyGame, AnyRange, Arcana, AttackCost, AttackPower, Barrier, Buff, Charge, CounterAffinity, CounterPower, DamagingAffinity, DemonAffinities, DemonResistances, DemonSkill, DemonStats, EndureCriteria, EnemyRange, EvasionBoostCriteria, HPMP, HPMPAil, If, LightDark, NumberOrPercent, OneOrAllAilments, OneOrAllDamagingAffinities, PersonaGame, PersonaRace, PostBattleStat, RecoveryAmount, RegenCriteria, Resistance, SMTAffinity, SMTRace, Series, SiphonCriteria, SkillType, Stage } from './types';
+import type { AilBoostCriteria, AilResistance, Ailment, AilmentName, AllyRange, AnyAffinity, AnyGame, AnyRange, Arcana, AttackCost, AttackPower, Barrier, BoostStack, Buff, Charge, DamagingAffinity, DemonAffinities, DemonAlignment, DemonResistances, DemonSkill, DemonStats, EndureCriteria, EnemyRange, EvasionBoostCriteria, HPMP, HPMPAil, If, LightDark, NumberOrPercent, OneOrAllAilments, OneOrAllDamagingAffinities, PersonaGame, PersonaRace, PostBattleStat, RecoveryAmount, RegenCriteria, Resistance, SMTAffinity, SMTCounterAffinity, SMTCounterPower, SMTRace, Series, SiphonCriteria, SkillType, Stage } from './types';
 
 /** Data used for constructing a Demon instance */
 export interface DemonData<PersonaBased extends boolean = boolean> {
@@ -14,7 +14,7 @@ export interface DemonData<PersonaBased extends boolean = boolean> {
 	learnset: DemonSkill[];
 	resistances: DemonResistances<PersonaBased>;
 	game: If<PersonaBased, PersonaGame, AnyGame>;
-	alignment: Alignment<PersonaBased>;
+	alignment: If<PersonaBased, null, DemonAlignment>;
 	lore: If<PersonaBased, string | null, string>;
 }
 
@@ -40,7 +40,7 @@ export interface AilBoostSkillData extends SkillData {
 	type: 'AILBOOST';
 	ailment: OneOrAllAilments;
 	amount: number;
-	weather: boolean;
+	criteria: AilBoostCriteria | null;
 }
 
 export interface AilDefensiveSkillData extends SkillData {
@@ -101,7 +101,7 @@ export interface BoostSkillData extends SkillData {
 	type: 'BOOST';
 	amount: number;
 	element: OneOrAllDamagingAffinities | 'Magic' | 'Recovery';
-	stacks: '+' | 'x';
+	stacks: BoostStack;
 }
 
 export interface BreakSkillData extends SkillData {
@@ -137,7 +137,7 @@ export interface DefensiveSkillData extends SkillData {
 	affinity: 'Passive';
 	type: 'DEFENSIVE';
 	element: Exclude<DamagingAffinity, 'Almighty'> | 'Light/Dark';
-	newAffinity: Resistance;
+	newResistance: Resistance;
 }
 
 export interface EndureSkillData extends SkillData {
@@ -233,8 +233,8 @@ export interface SMTCounterSkillData extends SkillData {
 	type: 'SMTCOUNTER';
 	attackDown: boolean;
 	chance: number;
-	element: CounterAffinity;
-	power: CounterPower;
+	element: SMTCounterAffinity;
+	power: SMTCounterPower;
 }
 
 export interface SpringSkillData extends SkillData {

@@ -35,7 +35,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		unique: true,
 		accuracy: 90,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 50
 		},
 		power: {
@@ -60,7 +60,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		unique: true,
 		accuracy: 90,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 30
 		},
 		power: {
@@ -77,7 +77,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 25
 		},
 		flags: [
@@ -111,7 +111,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 75,
 		cost: {
-			type: 'HP',
+			stat: 'HP',
 			amount: 18
 		},
 		max: 1,
@@ -130,7 +130,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 10
 		},
 		power: {
@@ -150,7 +150,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 50
 		},
 		power: {
@@ -167,7 +167,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 35
 		},
 		power: {
@@ -184,7 +184,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 20
 		},
 		power: {
@@ -201,7 +201,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 80,
 		cost: {
-			type: 'HP',
+			stat: 'HP',
 			amount: 24
 		},
 		max: 3,
@@ -220,7 +220,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'AILBOOST',
 		ailment: 'All',
 		amount: 25,
-		weather: false
+		criteria: null
 	},
 	{
 		name: 'Akashic Arts',
@@ -231,7 +231,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 50
 		},
 		flags: [
@@ -297,7 +297,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'AILBOOST',
 		ailment: 'All',
 		amount: 30,
-		weather: true
+		criteria: 'Rain/Snow'
 	},
 	{
 		name: 'Analysis',
@@ -313,7 +313,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		unique: true,
 		accuracy: 108,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 20
 		},
 		max: 6,
@@ -359,7 +359,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		unique: null,
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 10
 		},
 		max: 8,
@@ -391,7 +391,7 @@ const skillData: Readonly<AnySkillData[]> = [
 			}
 		],
 		cost: {
-			type: 'HP',
+			stat: 'HP',
 			amount: 9
 		},
 		max: 2,
@@ -410,7 +410,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 75,
 		cost: {
-			type: 'HP',
+			stat: 'HP',
 			amount: 18
 		},
 		max: 2,
@@ -429,7 +429,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 90,
 		cost: {
-			type: 'HP',
+			stat: 'HP',
 			amount: 13
 		},
 		power: {
@@ -447,7 +447,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		unique: true,
 		accuracy: 108,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 40
 		},
 		max: 15,
@@ -466,7 +466,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 50
 		},
 		power: {
@@ -489,7 +489,7 @@ const skillData: Readonly<AnySkillData[]> = [
 			}
 		],
 		cost: {
-			type: 'HP',
+			stat: 'HP',
 			amount: 16
 		},
 		max: 2,
@@ -538,7 +538,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 24
 		},
 		max: 4,
@@ -558,7 +558,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		unique: true,
 		accuracy: 95,
 		cost: {
-			type: 'HP',
+			stat: 'HP',
 			amount: 25
 		},
 		max: 3,
@@ -584,7 +584,7 @@ const skillData: Readonly<AnySkillData[]> = [
 			}
 		],
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 80
 		},
 		power: {
@@ -607,7 +607,7 @@ const skillData: Readonly<AnySkillData[]> = [
 			}
 		],
 		cost: {
-			type: 'HP',
+			stat: 'HP',
 			amount: 21
 		},
 		power: {
@@ -645,7 +645,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		unique: true,
 		accuracy: 90,
 		cost: {
-			type: 'HP',
+			stat: 'HP',
 			amount: 20
 		},
 		flags: [
@@ -665,7 +665,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 15
 		},
 		flags: [
@@ -685,7 +685,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 15
 		},
 		power: {
@@ -702,7 +702,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 5
 		},
 		flags: [
@@ -722,7 +722,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 30
 		},
 		flags: [
@@ -742,7 +742,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 80,
 		cost: {
-			type: 'HP',
+			stat: 'HP',
 			amount: 16
 		},
 		power: {
@@ -760,7 +760,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		unique: true,
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 48
 		},
 		power: {
@@ -777,7 +777,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 90,
 		cost: {
-			type: 'HP',
+			stat: 'HP',
 			amount: 18
 		},
 		max: 4,
@@ -813,7 +813,7 @@ const skillData: Readonly<AnySkillData[]> = [
 			}
 		],
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 20
 		},
 		max: 4,
@@ -832,7 +832,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 15
 		},
 		flags: [
@@ -858,7 +858,7 @@ const skillData: Readonly<AnySkillData[]> = [
 			}
 		],
 		cost: {
-			type: 'HP',
+			stat: 'HP',
 			amount: 22
 		},
 		power: {
@@ -896,7 +896,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 12
 		},
 		max: 3,
@@ -929,7 +929,7 @@ const skillData: Readonly<AnySkillData[]> = [
 			}
 		],
 		cost: {
-			type: 'HP',
+			stat: 'HP',
 			amount: 22
 		},
 		power: {
@@ -952,7 +952,7 @@ const skillData: Readonly<AnySkillData[]> = [
 			}
 		],
 		cost: {
-			type: 'HP',
+			stat: 'HP',
 			amount: 9
 		},
 		power: {
@@ -969,7 +969,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 45
 		},
 		flags: [
@@ -997,7 +997,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 10
 		},
 		power: {
@@ -1018,7 +1018,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 50
 		},
 		power: {
@@ -1035,7 +1035,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 35
 		},
 		power: {
@@ -1052,7 +1052,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 20
 		},
 		power: {
@@ -1069,7 +1069,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'AILBOOST',
 		ailment: 'Burn',
 		amount: 25,
-		weather: false
+		criteria: null
 	},
 	{
 		name: 'Cadenza',
@@ -1125,7 +1125,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		unique: true,
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 20
 		},
 		flags: [
@@ -1145,7 +1145,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 75
 		},
 		power: {
@@ -1183,7 +1183,7 @@ const skillData: Readonly<AnySkillData[]> = [
 			}
 		],
 		cost: {
-			type: 'HP',
+			stat: 'HP',
 			amount: 10
 		},
 		power: {
@@ -1241,7 +1241,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'AILBOOST',
 		ailment: 'Charm',
 		amount: 25,
-		weather: false
+		criteria: null
 	},
 	{
 		name: 'Charmdi',
@@ -1276,7 +1276,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 90,
 		cost: {
-			type: 'HP',
+			stat: 'HP',
 			amount: 6
 		},
 		power: {
@@ -1329,7 +1329,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'AILBOOST',
 		ailment: 'Confuse',
 		amount: 25,
-		weather: false
+		criteria: null
 	},
 	{
 		name: 'Cool Breeze',
@@ -1345,7 +1345,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 85,
 		cost: {
-			type: 'HP',
+			stat: 'HP',
 			amount: 10
 		},
 		flags: [
@@ -1365,7 +1365,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 95,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 75
 		},
 		power: {
@@ -1415,7 +1415,7 @@ const skillData: Readonly<AnySkillData[]> = [
 			}
 		],
 		cost: {
-			type: 'HP',
+			stat: 'HP',
 			amount: 14
 		},
 		power: {
@@ -1440,7 +1440,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 50,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 10
 		},
 		flags: [
@@ -1460,7 +1460,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 25
 		},
 		flags: [
@@ -1488,7 +1488,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		unique: true,
 		accuracy: 99,
 		cost: {
-			type: 'HP',
+			stat: 'HP',
 			amount: 20
 		},
 		max: 2,
@@ -1507,7 +1507,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 90,
 		cost: {
-			type: 'HP',
+			stat: 'HP',
 			amount: 12
 		},
 		flags: [
@@ -1527,7 +1527,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 50,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 20
 		},
 		power: {
@@ -1551,7 +1551,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 24
 		},
 		max: 3,
@@ -1571,7 +1571,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		unique: true,
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 25
 		},
 		flags: [
@@ -1639,7 +1639,7 @@ const skillData: Readonly<AnySkillData[]> = [
 			}
 		],
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 25
 		},
 		max: 2,
@@ -1670,7 +1670,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		unique: true,
 		accuracy: 108,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 50
 		},
 		flags: [
@@ -1691,7 +1691,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		unique: true,
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 120
 		},
 		flags: [
@@ -1718,7 +1718,7 @@ const skillData: Readonly<AnySkillData[]> = [
 			}
 		],
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 70
 		},
 		power: {
@@ -1741,7 +1741,7 @@ const skillData: Readonly<AnySkillData[]> = [
 			}
 		],
 		cost: {
-			type: 'HP',
+			stat: 'HP',
 			amount: 20
 		},
 		power: {
@@ -1758,7 +1758,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 35
 		},
 		power: {
@@ -1840,7 +1840,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'AILBOOST',
 		ailment: 'Despair',
 		amount: 25,
-		weather: false
+		criteria: null
 	},
 	{
 		name: 'Dia',
@@ -1882,7 +1882,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		unique: true,
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 35
 		},
 		flags: [
@@ -1905,7 +1905,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		unique: null,
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 35
 		},
 		power: {
@@ -2037,7 +2037,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		unique: true,
 		accuracy: 90,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 32
 		},
 		flags: [
@@ -2063,7 +2063,7 @@ const skillData: Readonly<AnySkillData[]> = [
 			}
 		],
 		cost: {
-			type: 'HP',
+			stat: 'HP',
 			amount: 16
 		},
 		power: {
@@ -2091,7 +2091,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 90,
 		cost: {
-			type: 'HP',
+			stat: 'HP',
 			amount: 10
 		},
 		max: 2,
@@ -2110,7 +2110,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 90,
 		cost: {
-			type: 'HP',
+			stat: 'HP',
 			amount: 12
 		},
 		max: 2,
@@ -2138,7 +2138,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Passive',
 		type: 'DEFENSIVE',
 		element: 'Dark',
-		newAffinity: 'Drain'
+		newResistance: 'Drain'
 	},
 	{
 		name: 'Drain Elec',
@@ -2148,7 +2148,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Passive',
 		type: 'DEFENSIVE',
 		element: 'Elec',
-		newAffinity: 'Drain'
+		newResistance: 'Drain'
 	},
 	{
 		name: 'Drain Fire',
@@ -2158,14 +2158,14 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Passive',
 		type: 'DEFENSIVE',
 		element: 'Fire',
-		newAffinity: 'Drain'
+		newResistance: 'Drain'
 	},
 	{
 		name: 'Drain Force',
 		affinity: 'Passive',
 		type: 'DEFENSIVE',
 		element: 'Force',
-		newAffinity: 'Drain'
+		newResistance: 'Drain'
 	},
 	{
 		name: 'Drain Ice',
@@ -2175,7 +2175,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Passive',
 		type: 'DEFENSIVE',
 		element: 'Ice',
-		newAffinity: 'Drain'
+		newResistance: 'Drain'
 	},
 	{
 		name: 'Drain Light',
@@ -2185,14 +2185,14 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Passive',
 		type: 'DEFENSIVE',
 		element: 'Light',
-		newAffinity: 'Drain'
+		newResistance: 'Drain'
 	},
 	{
 		name: 'Drain Nuke',
 		affinity: 'Passive',
 		type: 'DEFENSIVE',
 		element: 'Nuke',
-		newAffinity: 'Drain'
+		newResistance: 'Drain'
 	},
 	{
 		name: 'Drain Phys',
@@ -2202,14 +2202,14 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Passive',
 		type: 'DEFENSIVE',
 		element: 'Phys',
-		newAffinity: 'Drain'
+		newResistance: 'Drain'
 	},
 	{
 		name: 'Drain Psy',
 		affinity: 'Passive',
 		type: 'DEFENSIVE',
 		element: 'Psy',
-		newAffinity: 'Drain'
+		newResistance: 'Drain'
 	},
 	{
 		name: 'Drain Wind',
@@ -2219,7 +2219,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Passive',
 		type: 'DEFENSIVE',
 		element: 'Wind',
-		newAffinity: 'Drain'
+		newResistance: 'Drain'
 	},
 	{
 		name: 'Dream Fist',
@@ -2227,7 +2227,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 20
 		},
 		flags: [
@@ -2253,7 +2253,7 @@ const skillData: Readonly<AnySkillData[]> = [
 			}
 		],
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 10
 		},
 		power: {
@@ -2281,7 +2281,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 20
 		},
 		flags: [
@@ -2403,7 +2403,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 15
 		},
 		flags: [
@@ -2453,7 +2453,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'AILBOOST',
 		ailment: 'Enervate',
 		amount: 25,
-		weather: false
+		criteria: null
 	},
 	{
 		name: 'Enervation',
@@ -2487,7 +2487,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		unique: true,
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 50
 		},
 		max: 6,
@@ -2617,7 +2617,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'AILBOOST',
 		ailment: 'Exhaust',
 		amount: 25,
-		weather: false
+		criteria: null
 	},
 	{
 		name: 'Fallen Destroyer',
@@ -2626,7 +2626,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		unique: true,
 		accuracy: 108,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 70
 		},
 		flags: [
@@ -2658,7 +2658,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 15
 		},
 		flags: [
@@ -2686,7 +2686,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 90,
 		cost: {
-			type: 'HP',
+			stat: 'HP',
 			amount: 14
 		},
 		power: {
@@ -2703,7 +2703,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 25
 		},
 		flags: [
@@ -2723,7 +2723,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'AILBOOST',
 		ailment: 'Fear',
 		amount: 25,
-		weather: false
+		criteria: null
 	},
 	{
 		name: 'Fierce Roar',
@@ -2746,7 +2746,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 50,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 50
 		},
 		flags: [
@@ -2806,7 +2806,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 25
 		},
 		max: 5,
@@ -2825,7 +2825,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 25
 		},
 		power: {
@@ -2843,7 +2843,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		unique: true,
 		accuracy: 108,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 80
 		},
 		max: 7,
@@ -2893,7 +2893,7 @@ const skillData: Readonly<AnySkillData[]> = [
 			}
 		],
 		cost: {
-			type: 'HP',
+			stat: 'HP',
 			amount: 19
 		},
 		power: {
@@ -2910,7 +2910,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 60
 		},
 		max: 5,
@@ -2979,7 +2979,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'AILBOOST',
 		ailment: 'Freeze',
 		amount: 25,
-		weather: false
+		criteria: null
 	},
 	{
 		name: 'Frei',
@@ -2987,7 +2987,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 4
 		},
 		power: {
@@ -3004,7 +3004,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 12
 		},
 		power: {
@@ -3021,7 +3021,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 60
 		},
 		power: {
@@ -3038,7 +3038,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 8
 		},
 		power: {
@@ -3069,7 +3069,7 @@ const skillData: Readonly<AnySkillData[]> = [
 			}
 		],
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 25
 		},
 		power: {
@@ -3110,7 +3110,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		unique: null,
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 170
 		},
 		flags: [
@@ -3130,7 +3130,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 85,
 		cost: {
-			type: 'HP',
+			stat: 'HP',
 			amount: 12
 		},
 		power: {
@@ -3170,7 +3170,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 3
 		},
 		power: {
@@ -3187,7 +3187,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 10
 		},
 		power: {
@@ -3204,7 +3204,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 6
 		},
 		power: {
@@ -3221,7 +3221,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 90,
 		cost: {
-			type: 'HP',
+			stat: 'HP',
 			amount: 16
 		},
 		max: 4,
@@ -3241,7 +3241,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		unique: true,
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 30
 		},
 		power: {
@@ -3265,7 +3265,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 90,
 		cost: {
-			type: 'HP',
+			stat: 'HP',
 			amount: 9
 		},
 		flags: [
@@ -3285,7 +3285,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 90,
 		cost: {
-			type: 'HP',
+			stat: 'HP',
 			amount: 16
 		},
 		power: {
@@ -3302,7 +3302,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 85,
 		cost: {
-			type: 'HP',
+			stat: 'HP',
 			amount: 25
 		},
 		power: {
@@ -3319,7 +3319,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 60
 		},
 		max: 5,
@@ -3339,7 +3339,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		unique: true,
 		accuracy: 108,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 60
 		},
 		flags: [
@@ -3359,7 +3359,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 90,
 		cost: {
-			type: 'HP',
+			stat: 'HP',
 			amount: 22
 		},
 		power: {
@@ -3390,7 +3390,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 10
 		},
 		flags: [
@@ -3492,7 +3492,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		unique: true,
 		accuracy: 118,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 50
 		},
 		flags: [
@@ -3512,7 +3512,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 60
 		},
 		power: {
@@ -3532,7 +3532,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 15
 		},
 		flags: [
@@ -3561,7 +3561,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 55
 		},
 		flags: [
@@ -3584,7 +3584,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 25
 		},
 		flags: [
@@ -3617,7 +3617,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		unique: true,
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 60
 		},
 		flags: [
@@ -3645,7 +3645,7 @@ const skillData: Readonly<AnySkillData[]> = [
 			}
 		],
 		cost: {
-			type: 'HP',
+			stat: 'HP',
 			amount: 9
 		},
 		power: {
@@ -3669,7 +3669,7 @@ const skillData: Readonly<AnySkillData[]> = [
 			}
 		],
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 20
 		},
 		power: {
@@ -3724,7 +3724,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 15
 		},
 		power: {
@@ -3754,7 +3754,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 15
 		},
 		flags: [
@@ -3775,7 +3775,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		unique: true,
 		accuracy: 90,
 		cost: {
-			type: 'HP',
+			stat: 'HP',
 			amount: 19
 		},
 		power: {
@@ -3793,7 +3793,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		unique: true,
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 40
 		},
 		power: {
@@ -3811,7 +3811,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		unique: true,
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 40
 		},
 		flags: [
@@ -3832,7 +3832,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		unique: true,
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 30
 		},
 		power: {
@@ -3849,7 +3849,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 45
 		},
 		flags: [
@@ -3870,7 +3870,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		unique: true,
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 70
 		},
 		flags: [
@@ -3898,7 +3898,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		unique: true,
 		accuracy: 50,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 5
 		},
 		max: 4,
@@ -3918,7 +3918,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		unique: true,
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 25
 		},
 		power: {
@@ -3936,7 +3936,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		unique: true,
 		accuracy: 80,
 		cost: {
-			type: 'HP',
+			stat: 'HP',
 			amount: 16
 		},
 		power: {
@@ -4109,7 +4109,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 20
 		},
 		flags: [
@@ -4131,7 +4131,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 65
 		},
 		flags: [
@@ -4184,7 +4184,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 25
 		},
 		max: 5,
@@ -4203,7 +4203,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 25
 		},
 		power: {
@@ -4286,7 +4286,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		unique: true,
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 20
 		},
 		flags: [
@@ -4313,7 +4313,7 @@ const skillData: Readonly<AnySkillData[]> = [
 			}
 		],
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 90
 		},
 		flags: [
@@ -4360,7 +4360,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		unique: true,
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 50
 		},
 		flags: [
@@ -4381,7 +4381,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		unique: true,
 		accuracy: 118,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 50
 		},
 		flags: [
@@ -4401,7 +4401,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 90,
 		cost: {
-			type: 'HP',
+			stat: 'HP',
 			amount: 14
 		},
 		max: 3,
@@ -4420,7 +4420,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 65
 		},
 		flags: [
@@ -4441,7 +4441,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		unique: true,
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 35
 		},
 		flags: [
@@ -4469,7 +4469,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		unique: null,
 		accuracy: 95,
 		cost: {
-			type: 'HP',
+			stat: 'HP',
 			amount: 25
 		},
 		power: {
@@ -4519,7 +4519,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 10
 		},
 		flags: [
@@ -4547,7 +4547,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		unique: null,
 		accuracy: 90,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 0
 		},
 		flags: [
@@ -4667,7 +4667,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		unique: true,
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 60
 		},
 		flags: [
@@ -4687,7 +4687,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 75,
 		cost: {
-			type: 'HP',
+			stat: 'HP',
 			amount: 3
 		},
 		power: {
@@ -4718,7 +4718,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 5
 		},
 		power: {
@@ -4763,7 +4763,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 15
 		},
 		power: {
@@ -4783,7 +4783,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 75
 		},
 		power: {
@@ -4800,7 +4800,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 50
 		},
 		power: {
@@ -4817,7 +4817,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 30
 		},
 		power: {
@@ -4835,7 +4835,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		unique: true,
 		accuracy: 108,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 50
 		},
 		flags: [
@@ -4862,7 +4862,7 @@ const skillData: Readonly<AnySkillData[]> = [
 			}
 		],
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 50
 		},
 		max: 5,
@@ -4881,7 +4881,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 36
 		},
 		max: 4,
@@ -4906,7 +4906,7 @@ const skillData: Readonly<AnySkillData[]> = [
 			}
 		],
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 10
 		},
 		power: {
@@ -4923,7 +4923,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 10
 		},
 		power: {
@@ -4940,7 +4940,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 22
 		},
 		power: {
@@ -4957,7 +4957,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 16
 		},
 		power: {
@@ -4974,7 +4974,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 8
 		},
 		power: {
@@ -4991,7 +4991,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 20
 		},
 		power: {
@@ -5008,7 +5008,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 14
 		},
 		power: {
@@ -5040,7 +5040,7 @@ const skillData: Readonly<AnySkillData[]> = [
 			}
 		],
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 30
 		},
 		power: {
@@ -5068,7 +5068,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 25
 		},
 		flags: [
@@ -5092,7 +5092,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 80
 		},
 		flags: [
@@ -5115,7 +5115,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 40
 		},
 		flags: [
@@ -5183,7 +5183,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 25
 		},
 		flags: [
@@ -5207,7 +5207,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 80
 		},
 		flags: [
@@ -5230,7 +5230,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 40
 		},
 		flags: [
@@ -5272,7 +5272,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 10
 		},
 		power: {
@@ -5289,7 +5289,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 16
 		},
 		power: {
@@ -5306,7 +5306,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 22
 		},
 		power: {
@@ -5323,7 +5323,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 15
 		},
 		power: {
@@ -5343,7 +5343,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 75
 		},
 		power: {
@@ -5360,7 +5360,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 50
 		},
 		power: {
@@ -5377,7 +5377,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 30
 		},
 		power: {
@@ -5427,7 +5427,7 @@ const skillData: Readonly<AnySkillData[]> = [
 			}
 		],
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 32
 		},
 		power: {
@@ -5456,7 +5456,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		unique: null,
 		accuracy: 90,
 		cost: {
-			type: 'HP',
+			stat: 'HP',
 			amount: 25
 		},
 		max: 2,
@@ -5541,7 +5541,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 15
 		},
 		power: {
@@ -5558,7 +5558,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 75
 		},
 		power: {
@@ -5575,7 +5575,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 50
 		},
 		power: {
@@ -5592,7 +5592,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 30
 		},
 		power: {
@@ -5609,7 +5609,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 15
 		},
 		power: {
@@ -5629,7 +5629,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 75
 		},
 		power: {
@@ -5646,7 +5646,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 50
 		},
 		power: {
@@ -5663,7 +5663,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 30
 		},
 		power: {
@@ -5718,7 +5718,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		unique: true,
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 5
 		},
 		flags: [
@@ -5738,7 +5738,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 50,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 50
 		},
 		power: {
@@ -5755,7 +5755,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 90,
 		cost: {
-			type: 'HP',
+			stat: 'HP',
 			amount: 16
 		},
 		power: {
@@ -5772,7 +5772,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 40
 		},
 		power: {
@@ -5790,7 +5790,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		unique: true,
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 130
 		},
 		flags: [
@@ -5810,7 +5810,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 70
 		},
 		power: {
@@ -5827,7 +5827,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 120
 		},
 		power: {
@@ -5857,7 +5857,7 @@ const skillData: Readonly<AnySkillData[]> = [
 			}
 		],
 		cost: {
-			type: 'HP',
+			stat: 'HP',
 			amount: 15
 		},
 		power: {
@@ -5874,7 +5874,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 50,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 25
 		},
 		flags: [
@@ -5894,7 +5894,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 90,
 		cost: {
-			type: 'HP',
+			stat: 'HP',
 			amount: 14
 		},
 		power: {
@@ -5917,7 +5917,7 @@ const skillData: Readonly<AnySkillData[]> = [
 			}
 		],
 		cost: {
-			type: 'HP',
+			stat: 'HP',
 			amount: 19
 		},
 		power: {
@@ -5934,7 +5934,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 75,
 		cost: {
-			type: 'HP',
+			stat: 'HP',
 			amount: 8
 		},
 		power: {
@@ -5952,7 +5952,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		unique: null,
 		accuracy: 75,
 		cost: {
-			type: 'HP',
+			stat: 'HP',
 			amount: 16
 		},
 		power: {
@@ -5978,7 +5978,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'AILBOOST',
 		ailment: 'Mirage',
 		amount: 25,
-		weather: false
+		criteria: null
 	},
 	{
 		name: 'Mirage Shot',
@@ -5993,7 +5993,7 @@ const skillData: Readonly<AnySkillData[]> = [
 			}
 		],
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 15
 		},
 		power: {
@@ -6016,7 +6016,7 @@ const skillData: Readonly<AnySkillData[]> = [
 			}
 		],
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 35
 		},
 		max: 4,
@@ -6054,7 +6054,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		unique: true,
 		accuracy: 95,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 52
 		},
 		power: {
@@ -6071,7 +6071,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 30
 		},
 		power: {
@@ -6091,7 +6091,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 15
 		},
 		flags: [
@@ -6120,7 +6120,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 55
 		},
 		flags: [
@@ -6143,7 +6143,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 25
 		},
 		flags: [
@@ -6164,7 +6164,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		unique: null,
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 50
 		},
 		flags: [
@@ -6197,7 +6197,7 @@ const skillData: Readonly<AnySkillData[]> = [
 			}
 		],
 		cost: {
-			type: 'HP',
+			stat: 'HP',
 			amount: 16
 		},
 		power: {
@@ -6231,7 +6231,7 @@ const skillData: Readonly<AnySkillData[]> = [
 			}
 		],
 		cost: {
-			type: 'HP',
+			stat: 'HP',
 			amount: 9
 		},
 		power: {
@@ -6248,7 +6248,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 85,
 		cost: {
-			type: 'HP',
+			stat: 'HP',
 			amount: 22
 		},
 		max: 1,
@@ -6267,7 +6267,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 50,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 55
 		},
 		max: 5,
@@ -6287,7 +6287,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		unique: true,
 		accuracy: 90,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 40
 		},
 		max: 3,
@@ -6306,7 +6306,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 65
 		},
 		flags: [
@@ -6332,7 +6332,7 @@ const skillData: Readonly<AnySkillData[]> = [
 			}
 		],
 		cost: {
-			type: 'HP',
+			stat: 'HP',
 			amount: 18
 		},
 		power: {
@@ -6349,7 +6349,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 15
 		},
 		flags: [
@@ -6377,7 +6377,7 @@ const skillData: Readonly<AnySkillData[]> = [
 			}
 		],
 		cost: {
-			type: 'HP',
+			stat: 'HP',
 			amount: 12
 		},
 		power: {
@@ -6420,7 +6420,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 36
 		},
 		max: 3,
@@ -6509,7 +6509,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Passive',
 		type: 'DEFENSIVE',
 		element: 'Dark',
-		newAffinity: 'Null'
+		newResistance: 'Null'
 	},
 	{
 		name: 'Null Despair',
@@ -6523,7 +6523,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Passive',
 		type: 'DEFENSIVE',
 		element: 'Elec',
-		newAffinity: 'Null'
+		newResistance: 'Null'
 	},
 	{
 		name: 'Null Enervate',
@@ -6551,14 +6551,14 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Passive',
 		type: 'DEFENSIVE',
 		element: 'Fire',
-		newAffinity: 'Null'
+		newResistance: 'Null'
 	},
 	{
 		name: 'Null Force',
 		affinity: 'Passive',
 		type: 'DEFENSIVE',
 		element: 'Force',
-		newAffinity: 'Null'
+		newResistance: 'Null'
 	},
 	{
 		name: 'Null Freeze',
@@ -6579,7 +6579,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Passive',
 		type: 'DEFENSIVE',
 		element: 'Ice',
-		newAffinity: 'Null'
+		newResistance: 'Null'
 	},
 	{
 		name: 'Null Light',
@@ -6589,14 +6589,14 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Passive',
 		type: 'DEFENSIVE',
 		element: 'Light',
-		newAffinity: 'Null'
+		newResistance: 'Null'
 	},
 	{
 		name: 'Null Light/Dark',
 		affinity: 'Passive',
 		type: 'DEFENSIVE',
 		element: 'Light/Dark',
-		newAffinity: 'Null'
+		newResistance: 'Null'
 	},
 	{
 		name: 'Null Mirage',
@@ -6610,7 +6610,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Passive',
 		type: 'DEFENSIVE',
 		element: 'Nuke',
-		newAffinity: 'Null'
+		newResistance: 'Null'
 	},
 	{
 		name: 'Null Phys',
@@ -6620,7 +6620,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Passive',
 		type: 'DEFENSIVE',
 		element: 'Phys',
-		newAffinity: 'Null'
+		newResistance: 'Null'
 	},
 	{
 		name: 'Null Poison',
@@ -6634,7 +6634,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Passive',
 		type: 'DEFENSIVE',
 		element: 'Psy',
-		newAffinity: 'Null'
+		newResistance: 'Null'
 	},
 	{
 		name: 'Null Rage',
@@ -6673,7 +6673,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Passive',
 		type: 'DEFENSIVE',
 		element: 'Wind',
-		newAffinity: 'Null'
+		newResistance: 'Null'
 	},
 	{
 		name: 'Old One',
@@ -6703,7 +6703,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 90,
 		cost: {
-			type: 'HP',
+			stat: 'HP',
 			amount: 17
 		},
 		power: {
@@ -6726,7 +6726,7 @@ const skillData: Readonly<AnySkillData[]> = [
 			}
 		],
 		cost: {
-			type: 'HP',
+			stat: 'HP',
 			amount: 16
 		},
 		power: {
@@ -6764,7 +6764,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		unique: true,
 		accuracy: 108,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 70
 		},
 		flags: [
@@ -6784,7 +6784,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 50
 		},
 		power: {
@@ -6802,7 +6802,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		unique: true,
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 65
 		},
 		flags: [
@@ -6836,7 +6836,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		unique: true,
 		accuracy: 108,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 50
 		},
 		flags: [
@@ -6886,7 +6886,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 15
 		},
 		flags: [
@@ -6930,7 +6930,7 @@ const skillData: Readonly<AnySkillData[]> = [
 			}
 		],
 		cost: {
-			type: 'HP',
+			stat: 'HP',
 			amount: 14
 		},
 		power: {
@@ -6947,7 +6947,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'AILBOOST',
 		ailment: 'Poison',
 		amount: 50,
-		weather: false
+		criteria: null
 	},
 	{
 		name: 'Poison Master',
@@ -6979,7 +6979,7 @@ const skillData: Readonly<AnySkillData[]> = [
 			}
 		],
 		cost: {
-			type: 'HP',
+			stat: 'HP',
 			amount: 9
 		},
 		power: {
@@ -7014,7 +7014,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 40
 		},
 		flags: [
@@ -7034,7 +7034,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 90,
 		cost: {
-			type: 'HP',
+			stat: 'HP',
 			amount: 10
 		},
 		power: {
@@ -7052,7 +7052,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		unique: true,
 		accuracy: 80,
 		cost: {
-			type: 'HP',
+			stat: 'HP',
 			amount: 25
 		},
 		flags: [
@@ -7095,7 +7095,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 90,
 		cost: {
-			type: 'HP',
+			stat: 'HP',
 			amount: 20
 		},
 		power: {
@@ -7119,7 +7119,7 @@ const skillData: Readonly<AnySkillData[]> = [
 			}
 		],
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 35
 		},
 		power: {
@@ -7136,7 +7136,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 4
 		},
 		power: {
@@ -7153,7 +7153,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 8
 		},
 		power: {
@@ -7170,7 +7170,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 12
 		},
 		power: {
@@ -7217,7 +7217,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 75
 		},
 		power: {
@@ -7234,7 +7234,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 50
 		},
 		power: {
@@ -7262,7 +7262,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 15
 		},
 		flags: [
@@ -7282,7 +7282,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 25
 		},
 		flags: [
@@ -7304,7 +7304,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'AILBOOST',
 		ailment: 'Rage',
 		amount: 25,
-		weather: false
+		criteria: null
 	},
 	{
 		name: 'Raging Blizzard',
@@ -7313,7 +7313,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		unique: true,
 		accuracy: 108,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 40
 		},
 		power: {
@@ -7331,7 +7331,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		unique: true,
 		accuracy: 108,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 40
 		},
 		power: {
@@ -7349,7 +7349,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		unique: true,
 		accuracy: 108,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 40
 		},
 		power: {
@@ -7367,7 +7367,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		unique: true,
 		accuracy: 108,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 40
 		},
 		power: {
@@ -7384,7 +7384,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 60
 		},
 		max: 5,
@@ -7403,7 +7403,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 85,
 		cost: {
-			type: 'HP',
+			stat: 'HP',
 			amount: 20
 		},
 		flags: [
@@ -7449,7 +7449,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 50,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 35
 		},
 		flags: [
@@ -7497,7 +7497,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		unique: null,
 		accuracy: 95,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 99
 		},
 		flags: [
@@ -7584,35 +7584,35 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Passive',
 		type: 'DEFENSIVE',
 		element: 'Dark',
-		newAffinity: 'Repel'
+		newResistance: 'Repel'
 	},
 	{
 		name: 'Repel Elec',
 		affinity: 'Passive',
 		type: 'DEFENSIVE',
 		element: 'Elec',
-		newAffinity: 'Repel'
+		newResistance: 'Repel'
 	},
 	{
 		name: 'Repel Fire',
 		affinity: 'Passive',
 		type: 'DEFENSIVE',
 		element: 'Fire',
-		newAffinity: 'Repel'
+		newResistance: 'Repel'
 	},
 	{
 		name: 'Repel Force',
 		affinity: 'Passive',
 		type: 'DEFENSIVE',
 		element: 'Force',
-		newAffinity: 'Repel'
+		newResistance: 'Repel'
 	},
 	{
 		name: 'Repel Ice',
 		affinity: 'Passive',
 		type: 'DEFENSIVE',
 		element: 'Ice',
-		newAffinity: 'Repel'
+		newResistance: 'Repel'
 	},
 	{
 		name: 'Repel Light',
@@ -7622,14 +7622,14 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Passive',
 		type: 'DEFENSIVE',
 		element: 'Light',
-		newAffinity: 'Repel'
+		newResistance: 'Repel'
 	},
 	{
 		name: 'Repel Nuke',
 		affinity: 'Passive',
 		type: 'DEFENSIVE',
 		element: 'Nuke',
-		newAffinity: 'Repel'
+		newResistance: 'Repel'
 	},
 	{
 		name: 'Repel Phys',
@@ -7639,21 +7639,21 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Passive',
 		type: 'DEFENSIVE',
 		element: 'Phys',
-		newAffinity: 'Repel'
+		newResistance: 'Repel'
 	},
 	{
 		name: 'Repel Psy',
 		affinity: 'Passive',
 		type: 'DEFENSIVE',
 		element: 'Psy',
-		newAffinity: 'Repel'
+		newResistance: 'Repel'
 	},
 	{
 		name: 'Repel Wind',
 		affinity: 'Passive',
 		type: 'DEFENSIVE',
 		element: 'Wind',
-		newAffinity: 'Repel'
+		newResistance: 'Repel'
 	},
 	{
 		name: 'Resist Burn',
@@ -7690,7 +7690,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Passive',
 		type: 'DEFENSIVE',
 		element: 'Dark',
-		newAffinity: 'Resist'
+		newResistance: 'Resist'
 	},
 	{
 		name: 'Resist Despair',
@@ -7704,7 +7704,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Passive',
 		type: 'DEFENSIVE',
 		element: 'Elec',
-		newAffinity: 'Resist'
+		newResistance: 'Resist'
 	},
 	{
 		name: 'Resist Enervate',
@@ -7732,14 +7732,14 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Passive',
 		type: 'DEFENSIVE',
 		element: 'Fire',
-		newAffinity: 'Resist'
+		newResistance: 'Resist'
 	},
 	{
 		name: 'Resist Force',
 		affinity: 'Passive',
 		type: 'DEFENSIVE',
 		element: 'Force',
-		newAffinity: 'Resist'
+		newResistance: 'Resist'
 	},
 	{
 		name: 'Resist Freeze',
@@ -7760,7 +7760,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Passive',
 		type: 'DEFENSIVE',
 		element: 'Ice',
-		newAffinity: 'Resist'
+		newResistance: 'Resist'
 	},
 	{
 		name: 'Resist Light',
@@ -7770,7 +7770,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Passive',
 		type: 'DEFENSIVE',
 		element: 'Light',
-		newAffinity: 'Resist'
+		newResistance: 'Resist'
 	},
 	{
 		name: 'Resist Mirage',
@@ -7784,7 +7784,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Passive',
 		type: 'DEFENSIVE',
 		element: 'Nuke',
-		newAffinity: 'Resist'
+		newResistance: 'Resist'
 	},
 	{
 		name: 'Resist Phys',
@@ -7794,7 +7794,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Passive',
 		type: 'DEFENSIVE',
 		element: 'Phys',
-		newAffinity: 'Resist'
+		newResistance: 'Resist'
 	},
 	{
 		name: 'Resist Poison',
@@ -7808,7 +7808,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Passive',
 		type: 'DEFENSIVE',
 		element: 'Psy',
-		newAffinity: 'Resist'
+		newResistance: 'Resist'
 	},
 	{
 		name: 'Resist Rage',
@@ -7847,7 +7847,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Passive',
 		type: 'DEFENSIVE',
 		element: 'Wind',
-		newAffinity: 'Resist'
+		newResistance: 'Resist'
 	},
 	{
 		name: 'Restore',
@@ -7907,7 +7907,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 80,
 		cost: {
-			type: 'HP',
+			stat: 'HP',
 			amount: 24
 		},
 		power: {
@@ -7924,7 +7924,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 90,
 		cost: {
-			type: 'HP',
+			stat: 'HP',
 			amount: 14
 		},
 		flags: [
@@ -7945,7 +7945,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		unique: null,
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 20
 		},
 		power: {
@@ -7963,7 +7963,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		unique: true,
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 50
 		},
 		flags: [
@@ -7992,7 +7992,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		unique: null,
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 20
 		},
 		power: {
@@ -8039,7 +8039,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		unique: true,
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 15
 		},
 		flags: [
@@ -8060,7 +8060,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 12
 		},
 		max: 4,
@@ -8085,7 +8085,7 @@ const skillData: Readonly<AnySkillData[]> = [
 			}
 		],
 		cost: {
-			type: 'HP',
+			stat: 'HP',
 			amount: 14
 		},
 		power: {
@@ -8106,7 +8106,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'AILBOOST',
 		ailment: 'Seal',
 		amount: 25,
-		weather: false
+		criteria: null
 	},
 	{
 		name: 'Self-destruct',
@@ -8125,7 +8125,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 25
 		},
 		flags: [
@@ -8185,7 +8185,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		unique: true,
 		accuracy: 90,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 22
 		},
 		max: 8,
@@ -8204,7 +8204,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'AILBOOST',
 		ailment: 'Shock',
 		amount: 25,
-		weather: false
+		criteria: null
 	},
 	{
 		name: 'Shockbound',
@@ -8212,7 +8212,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 25
 		},
 		max: 5,
@@ -8232,7 +8232,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		unique: null,
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 45
 		},
 		flags: [
@@ -8252,7 +8252,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 90,
 		cost: {
-			type: 'HP',
+			stat: 'HP',
 			amount: 8
 		},
 		power: {
@@ -8269,7 +8269,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 85,
 		cost: {
-			type: 'HP',
+			stat: 'HP',
 			amount: 5
 		},
 		power: {
@@ -8292,7 +8292,7 @@ const skillData: Readonly<AnySkillData[]> = [
 			}
 		],
 		cost: {
-			type: 'HP',
+			stat: 'HP',
 			amount: 10
 		},
 		power: {
@@ -8315,7 +8315,7 @@ const skillData: Readonly<AnySkillData[]> = [
 			}
 		],
 		cost: {
-			type: 'HP',
+			stat: 'HP',
 			amount: 10
 		},
 		power: {
@@ -8332,7 +8332,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'AILBOOST',
 		ailment: 'Sleep',
 		amount: 25,
-		weather: false
+		criteria: null
 	},
 	{
 		name: 'Slumber Vortex',
@@ -8352,7 +8352,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 90,
 		cost: {
-			type: 'HP',
+			stat: 'HP',
 			amount: 9
 		},
 		power: {
@@ -8370,7 +8370,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		unique: true,
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 35
 		},
 		flags: [
@@ -8390,7 +8390,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 90,
 		cost: {
-			type: 'HP',
+			stat: 'HP',
 			amount: 8
 		},
 		power: {
@@ -8408,7 +8408,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		unique: true,
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 55
 		},
 		power: {
@@ -8451,7 +8451,7 @@ const skillData: Readonly<AnySkillData[]> = [
 			}
 		],
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 50
 		},
 		power: {
@@ -8493,7 +8493,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 5
 		},
 		flags: [
@@ -8514,7 +8514,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		unique: null,
 		accuracy: 90,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 0
 		},
 		flags: [
@@ -8577,7 +8577,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 25
 		},
 		flags: [
@@ -8606,7 +8606,7 @@ const skillData: Readonly<AnySkillData[]> = [
 			}
 		],
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 0
 		},
 		power: {
@@ -8623,7 +8623,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 25
 		},
 		power: {
@@ -8641,7 +8641,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		unique: true,
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 18
 		},
 		max: 6,
@@ -8787,7 +8787,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 70,
 		cost: {
-			type: 'HP',
+			stat: 'HP',
 			amount: 17
 		},
 		max: 4,
@@ -8806,7 +8806,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 90,
 		cost: {
-			type: 'HP',
+			stat: 'HP',
 			amount: 25
 		},
 		power: {
@@ -8824,7 +8824,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		unique: true,
 		accuracy: 108,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 160
 		},
 		flags: [
@@ -8906,7 +8906,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 85,
 		cost: {
-			type: 'HP',
+			stat: 'HP',
 			amount: 17
 		},
 		max: 5,
@@ -8945,7 +8945,7 @@ const skillData: Readonly<AnySkillData[]> = [
 			}
 		],
 		cost: {
-			type: 'HP',
+			stat: 'HP',
 			amount: 8
 		},
 		power: {
@@ -8969,7 +8969,7 @@ const skillData: Readonly<AnySkillData[]> = [
 			}
 		],
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 35
 		},
 		flags: [
@@ -9019,7 +9019,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		unique: null,
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 45
 		},
 		max: 7,
@@ -9071,7 +9071,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 60
 		},
 		max: 5,
@@ -9090,7 +9090,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 60
 		},
 		flags: [
@@ -9120,7 +9120,7 @@ const skillData: Readonly<AnySkillData[]> = [
 			}
 		],
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 34
 		},
 		power: {
@@ -9137,7 +9137,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 90,
 		cost: {
-			type: 'HP',
+			stat: 'HP',
 			amount: 12
 		},
 		max: 4,
@@ -9170,7 +9170,7 @@ const skillData: Readonly<AnySkillData[]> = [
 			}
 		],
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 30
 		},
 		power: {
@@ -9218,7 +9218,7 @@ const skillData: Readonly<AnySkillData[]> = [
 			}
 		],
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 10
 		},
 		power: {
@@ -9277,7 +9277,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 70,
 		cost: {
-			type: 'HP',
+			stat: 'HP',
 			amount: 16
 		},
 		max: 3,
@@ -9296,7 +9296,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 65
 		},
 		flags: [
@@ -9322,7 +9322,7 @@ const skillData: Readonly<AnySkillData[]> = [
 			}
 		],
 		cost: {
-			type: 'HP',
+			stat: 'HP',
 			amount: 10
 		},
 		max: 2,
@@ -9373,7 +9373,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 75
 		},
 		power: {
@@ -9390,7 +9390,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 80,
 		cost: {
-			type: 'HP',
+			stat: 'HP',
 			amount: 13
 		},
 		power: {
@@ -9424,7 +9424,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 15
 		},
 		flags: [
@@ -9444,7 +9444,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 80,
 		cost: {
-			type: 'HP',
+			stat: 'HP',
 			amount: 18
 		},
 		power: {
@@ -9476,7 +9476,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 95,
 		cost: {
-			type: 'HP',
+			stat: 'HP',
 			amount: 18
 		},
 		flags: [
@@ -9503,7 +9503,7 @@ const skillData: Readonly<AnySkillData[]> = [
 			}
 		],
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 60
 		},
 		power: {
@@ -9526,7 +9526,7 @@ const skillData: Readonly<AnySkillData[]> = [
 			}
 		],
 		cost: {
-			type: 'HP',
+			stat: 'HP',
 			amount: 16
 		},
 		power: {
@@ -9543,7 +9543,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 80,
 		cost: {
-			type: 'HP',
+			stat: 'HP',
 			amount: 23
 		},
 		power: {
@@ -9575,7 +9575,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		unique: true,
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 40
 		},
 		flags: [
@@ -9602,7 +9602,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 30
 		},
 		flags: [
@@ -9645,7 +9645,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 25
 		},
 		max: 5,
@@ -9664,7 +9664,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 25
 		},
 		power: {
@@ -9717,7 +9717,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		unique: null,
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 35
 		},
 		flags: [
@@ -9739,7 +9739,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 50
 		},
 		flags: [
@@ -9772,7 +9772,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 10
 		},
 		power: {
@@ -9789,7 +9789,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 50
 		},
 		power: {
@@ -9806,7 +9806,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 35
 		},
 		power: {
@@ -9823,7 +9823,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 20
 		},
 		power: {
@@ -9840,7 +9840,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 10
 		},
 		power: {
@@ -9860,7 +9860,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 50
 		},
 		power: {
@@ -9877,7 +9877,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 35
 		},
 		power: {
@@ -9894,7 +9894,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		accuracy: 98,
 		cost: {
-			type: 'MP',
+			stat: 'MP',
 			amount: 20
 		},
 		power: {

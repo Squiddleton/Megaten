@@ -578,10 +578,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			repel: []
 		},
 		game: 'p5',
-		alignment: {
-			moral: null,
-			ethical: null
-		},
+		alignment: null,
 		lore: 'Another name of Johanna, the female pope of the middle ages. Posing as a man, her wits and ability helped her climb the ranks. Her story shook the Catholic Church to its core.',
 		user: 'Makoto Niijima',
 		stage: 3,
@@ -701,10 +698,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			repel: []
 		},
 		game: 'p5',
-		alignment: {
-			moral: null,
-			ethical: null
-		},
+		alignment: null,
 		lore: 'The original name of the Necronomicon, a tome of the Cthulhu Mythos\'s mysteries. Said to have been authored by Abdul Alhazred, a poet and devotee of Cthulhu known as the \'mad Arab.\'',
 		user: 'Futaba Sakura',
 		stage: 3,
@@ -1140,10 +1134,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			repel: []
 		},
 		game: 'p4',
-		alignment: {
-			moral: null,
-			ethical: null
-		},
+		alignment: null,
 		lore: null,
 		user: 'Yukiko Amagi',
 		stage: 2,
@@ -1585,10 +1576,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			repel: []
 		},
 		game: 'p5',
-		alignment: {
-			moral: null,
-			ethical: null
-		},
+		alignment: null,
 		lore: 'The daughter of Ugaritic\'s highest god El. She is the goddess of fertility, as well as hunting and war. Her characteristics are the characteristics of the seasons in Canaan.',
 		user: 'Makoto Niijima',
 		stage: 2,
@@ -2441,10 +2429,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			repel: []
 		},
 		game: 'p5',
-		alignment: {
-			moral: null,
-			ethical: null
-		},
+		alignment: null,
 		lore: 'A Persona of another story. She is the daughter of Minos, the king of Crete. She helped Theseus defeat the Minotaur and gave him a ball of yarn so he could escape the labyrinth.',
 		user: 'Labrys',
 		stage: 1,
@@ -2514,10 +2499,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			repel: []
 		},
 		game: 'p5',
-		alignment: {
-			moral: null,
-			ethical: null
-		},
+		alignment: null,
 		lore: 'A Persona turned picaro after becoming the Trickster\'s mask. She is the daughter of Minos. She helped Theseus defeat the Minoataur and gave him a ball of yarn so he could escape the Labyrinth.'
 	},
 	{
@@ -2656,10 +2638,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			repel: []
 		},
 		game: 'p5',
-		alignment: {
-			moral: null,
-			ethical: null
-		},
+		alignment: null,
 		lore: 'A being based off the main character of Maurice Leblanc\'s novels, Arsène Lupin. He appears everywhere and is a master of disguise. He is known to help law-abiding citizens.',
 		user: 'P5 Protagonist',
 		stage: 1,
@@ -2849,10 +2828,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			repel: []
 		},
 		game: 'p3',
-		alignment: {
-			moral: null,
-			ethical: null
-		},
+		alignment: null,
 		lore: null,
 		user: 'Mitsuru Kirijo',
 		stage: 2,
@@ -2969,10 +2945,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			repel: []
 		},
 		game: 'p5',
-		alignment: {
-			moral: null,
-			ethical: null
-		},
+		alignment: null,
 		lore: 'A Middle Eastern goddess of fertilty. Many scriptures note her folklore, and there is even a mention of her as the "Queen of Heaven" in the Bible.',
 		user: 'Haru Okumura',
 		stage: 2,
@@ -3042,10 +3015,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			repel: []
 		},
 		game: 'p5',
-		alignment: {
-			moral: null,
-			ethical: null
-		},
+		alignment: null,
 		lore: 'A Persona of another story. Due to a curse on his mother Pasiphae, he was born a bull-headed monster. Locked away in the labyrinth as the Minotaur, he wielded a double-sided axe.',
 		user: 'Shadow Labrys',
 		stage: 1,
@@ -3115,10 +3085,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			repel: []
 		},
 		game: 'p5',
-		alignment: {
-			moral: null,
-			ethical: null
-		},
+		alignment: null,
 		lore: 'A Persona turned picaro after becoming the Trickster\'s mask. Son of Pasiphae, he was born a bull-headed monster. Locked away in the labyrinth as the Minotaur, he wielded a double-sided axe.'
 	},
 	{
@@ -3352,10 +3319,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			repel: []
 		},
 		game: 'p5',
-		alignment: {
-			moral: null,
-			ethical: null
-		},
+		alignment: null,
 		lore: 'A Persona of another story. Daughter of Zeus, and a goddess of great martial ability. She fights to protect her land or her family, but never for sheer bloodlust. Her symbol is the olive tree.',
 		user: 'Aigis',
 		stage: 2,
@@ -3428,10 +3392,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			repel: []
 		},
 		game: 'p5',
-		alignment: {
-			moral: null,
-			ethical: null
-		},
+		alignment: null,
 		lore: 'A Persona turned picaro after becoming the Trickster\'s mask. Daughter of Zeus, and a goddess of great martial ability. She fights to protect her land or her family, but never for sheer bloodlust.'
 	},
 	{
@@ -5071,10 +5032,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			repel: []
 		},
 		game: 'p3',
-		alignment: {
-			moral: null,
-			ethical: null
-		},
+		alignment: null,
 		lore: null,
 		user: 'Akihiko Sanada',
 		stage: 2,
@@ -5345,10 +5303,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			repel: []
 		},
 		game: 'p5',
-		alignment: {
-			moral: null,
-			ethical: null
-		},
+		alignment: null,
 		lore: 'A 17th century privateer who eventually became a world-renowned pirate. At his execution, he declared he had a hidden treasure, leaving behind many legends.',
 		user: 'Ryuji Sakamoto',
 		stage: 1,
@@ -5471,10 +5426,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			repel: []
 		},
 		game: 'p5',
-		alignment: {
-			moral: null,
-			ethical: null
-		},
+		alignment: null,
 		lore: 'A gypsy thief from the novel by Merimee, which became famous through the opera by Bizet. She is a femme fatale who is beautiful but very capricious.',
 		user: 'Ann Takamaki',
 		stage: 1,
@@ -5561,10 +5513,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			repel: []
 		},
 		game: 'p3',
-		alignment: {
-			moral: null,
-			ethical: null
-		},
+		alignment: null,
 		lore: null,
 		user: 'Shinjiro Aragaki',
 		stage: 1,
@@ -5689,10 +5638,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			repel: []
 		},
 		game: 'p5',
-		alignment: {
-			moral: null,
-			ethical: null
-		},
+		alignment: null,
 		lore: 'A beautiful actress who performed as Carmen in the opera named for the role. So tempestuous and outspoken was she that it\'s said the main role was rewritten to better suit her.',
 		user: 'Ann Takamaki',
 		stage: 3,
@@ -5767,10 +5713,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			repel: []
 		},
 		game: 'p5',
-		alignment: {
-			moral: null,
-			ethical: null
-		},
+		alignment: null,
 		lore: 'The French name of the titular heroine of Cinderella, an oft-retold tale of great renown in which a mistreated waif gains luxury, beauty, and a single night\'s dance with a prince through the power of magic.',
 		user: 'Sumire Yoshizawa',
 		stage: 1,
@@ -5950,10 +5893,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			repel: []
 		},
 		game: 'p3',
-		alignment: {
-			moral: null,
-			ethical: null
-		},
+		alignment: null,
 		lore: null,
 		user: 'Koromaru',
 		stage: 1,
@@ -6584,10 +6524,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			repel: []
 		},
 		game: 'p5',
-		alignment: {
-			moral: null,
-			ethical: null
-		},
+		alignment: null,
 		lore: 'An ancient Out-Of-Place-Artifact found in Central and South America. It is said that if you collect 13 of them in one spot, the truth of the universe will be revealed.'
 	},
 	{
@@ -7411,10 +7348,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			repel: []
 		},
 		game: 'p5',
-		alignment: {
-			moral: null,
-			ethical: null
-		},
+		alignment: null,
 		lore: 'The true name of California\'s masked swordsman of justice, who fought corrupt officials during the era of Spanish rule. Despite being marked as a thief, he fought for the weak as a true gentleman.',
 		user: 'Morgana',
 		stage: 3,
@@ -7781,10 +7715,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			repel: []
 		},
 		game: 'p5',
-		alignment: {
-			moral: null,
-			ethical: null
-		},
+		alignment: null,
 		lore: 'The true name of Cinderella\'s heroine. "Cinder Ella" was a derisive nickname, born from her hard work always leaving her dusty and sooty. After marrying her prince, she became "Princess Ella."',
 		user: 'Sumire Yoshizawa',
 		stage: 3,
@@ -7856,10 +7787,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			repel: []
 		},
 		game: 'p5',
-		alignment: {
-			moral: null,
-			ethical: null
-		},
+		alignment: null,
 		lore: 'Also known as Charlemagne\'s talisman, it is said to make its owner an emperor. In between the two gems is a piece of Jesus\' cross and a hair of the Virgin Mary.'
 	},
 	{
@@ -9350,10 +9278,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			repel: []
 		},
 		game: 'p5',
-		alignment: {
-			moral: null,
-			ethical: null
-		},
+		alignment: null,
 		lore: 'Ishikawa Goemon was a thief who stole from the rich and gave to the poor in Japan during the Azuchi-Momoyama period. The kabuki scene of him sitting on the gate of Nanzen-ji is famous.',
 		user: 'Yusuke Kitagawa',
 		stage: 1,
@@ -9545,10 +9470,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			repel: []
 		},
 		game: 'p5',
-		alignment: {
-			moral: null,
-			ethical: null
-		},
+		alignment: null,
 		lore: 'Childhood nickname of Goemon Ishikawa. During his youth, he was raised among the Iga-ryu ninjas before he set off on his own to become a rogue ninja.',
 		user: 'Yusuke Kitagawa',
 		stage: 3,
@@ -9870,10 +9792,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			repel: []
 		},
 		game: 'p4',
-		alignment: {
-			moral: null,
-			ethical: null
-		},
+		alignment: null,
 		lore: null,
 		user: 'Chie Satonaka',
 		stage: 3,
@@ -10228,10 +10147,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			repel: []
 		},
 		game: 'p5',
-		alignment: {
-			moral: null,
-			ethical: null
-		},
+		alignment: null,
 		lore: 'A Greek goddess of crossroads, ghosts and witchcraft, she is commonly attended to by dogs. She is also known to be the chief of the witches that appears in the play "Macbeth"',
 		user: 'Ann Takamaki',
 		stage: 2,
@@ -10536,10 +10452,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			repel: []
 		},
 		game: 'p5',
-		alignment: {
-			moral: null,
-			ethical: null
-		},
+		alignment: null,
 		lore: 'The legendary Saxon who opposed the Normans during the conquest of England in the 11th century. Said to have been the basis for tales of Robin Hood. Called "Hereward the Wake" for his watchfulness.',
 		user: 'Goro Akechi',
 		stage: 3,
@@ -10634,10 +10547,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			repel: []
 		},
 		game: 'p3',
-		alignment: {
-			moral: null,
-			ethical: null
-		},
+		alignment: null,
 		lore: null,
 		user: 'Junpei Iori',
 		stage: 1,
@@ -10790,10 +10700,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			repel: []
 		},
 		game: 'p4',
-		alignment: {
-			moral: null,
-			ethical: null
-		},
+		alignment: null,
 		lore: null,
 		user: 'Rise Kujikawa',
 		stage: 1,
@@ -11007,10 +10914,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			repel: []
 		},
 		game: 'p5',
-		alignment: {
-			moral: null,
-			ethical: null
-		},
+		alignment: null,
 		lore: 'Unlike its name suggests, the Hope Diamond is a cursed jewel that brings ruin from one owner to the next. A few supposed victims include King Louis XVI and his wife, Marie Antoinette.'
 	},
 	{
@@ -11697,10 +11601,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			repel: []
 		},
 		game: 'p3',
-		alignment: {
-			moral: null,
-			ethical: null
-		},
+		alignment: null,
 		lore: null,
 		user: 'Yukari Takeba',
 		stage: 1,
@@ -12039,10 +11940,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			repel: []
 		},
 		game: 'p3',
-		alignment: {
-			moral: null,
-			ethical: null
-		},
+		alignment: null,
 		lore: null,
 		user: 'Yukari Takeba',
 		stage: 2,
@@ -12127,10 +12025,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			repel: []
 		},
 		game: 'p5',
-		alignment: {
-			moral: null,
-			ethical: null
-		},
+		alignment: null,
 		lore: 'A Persona of another story. One of the ancient gods who existed before Japan was formed. He created the Oyashima from chaos, then gave birth to countless children and laid the foundation of soil and nature.',
 		user: 'P4 Protgaonist',
 		stage: 1,
@@ -12198,10 +12093,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			repel: []
 		},
 		game: 'p5',
-		alignment: {
-			moral: null,
-			ethical: null
-		},
+		alignment: null,
 		lore: 'A Persona turned picaro after becoming the Trickster\'s mask. One of the ancient gods who existed before Japan was formed. He created the Oyashima from chaos, then gave birth to countless children.'
 	},
 	{
@@ -12274,10 +12166,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			repel: []
 		},
 		game: 'p5',
-		alignment: {
-			moral: null,
-			ethical: null
-		},
+		alignment: null,
 		lore: 'A Persona of another story. A Japanese god of creation, he begat the sky, ocean, and night, and 8 million other gods. Opposes his once-wife, the goddess Izanami, after an encounter in Yomotsu Hirasaka.',
 		user: 'P4 Protagonist',
 		stage: 2,
@@ -12353,10 +12242,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			repel: []
 		},
 		game: 'p5',
-		alignment: {
-			moral: null,
-			ethical: null
-		},
+		alignment: null,
 		lore: 'A Persona turned picaro after becoming the Trickster\'s mask. A Japanese god of creation, he begat the sky, ocean, and night, and 8 million other gods. Opposes his once-wife, the goddess Izanami.'
 	},
 	{
@@ -12829,10 +12715,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			repel: []
 		},
 		game: 'p4',
-		alignment: {
-			moral: null,
-			ethical: null
-		},
+		alignment: null,
 		lore: null,
 		user: 'Yosuke Hanamura',
 		stage: 1,
@@ -12955,10 +12838,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			repel: []
 		},
 		game: 'p5',
-		alignment: {
-			moral: null,
-			ethical: null
-		},
+		alignment: null,
 		lore: 'The mysterious female pope of the Middle Ages. She posed as a man and eventually made it all the way up to pope due to her unrivaled intellect. Her existence shook the history of the Catholic church.',
 		user: 'Makoto Niijima',
 		stage: 1,
@@ -13017,10 +12897,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			repel: []
 		},
 		game: 'p3',
-		alignment: {
-			moral: null,
-			ethical: null
-		},
+		alignment: null,
 		lore: null,
 		user: 'Fuuka Yamagishi',
 		stage: 2,
@@ -13090,10 +12967,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			repel: []
 		},
 		game: 'p5',
-		alignment: {
-			moral: null,
-			ethical: null
-		},
+		alignment: null,
 		lore: 'A Persona of another story. A divine being born from a glowing bamboo shoot. Though many proposed to her, none could complete her strict tasks. She eventually returned to her home the moon.',
 		user: 'Marie',
 		stage: 1,
@@ -13161,10 +13035,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			repel: []
 		},
 		game: 'p5',
-		alignment: {
-			moral: null,
-			ethical: null
-		},
+		alignment: null,
 		lore: 'A Persona turned picaro after becoming the Trickster\'s mask. She appeared from a glowing bamboo shoot. She received many proposals, bug rejected them and returned to the moon.'
 	},
 	{
@@ -13329,10 +13200,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			repel: []
 		},
 		game: 'p3',
-		alignment: {
-			moral: null,
-			ethical: null
-		},
+		alignment: null,
 		lore: null,
 		user: 'Ken Amada',
 		stage: 2,
@@ -13541,10 +13409,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			repel: []
 		},
 		game: 'p5',
-		alignment: {
-			moral: null,
-			ethical: null
-		},
+		alignment: null,
 		lore: 'A Japanese god found in the Izumo Fudoki. He was one of the three gods born from Izanagi. He was a violent ruffian, but also has a sensitive side, showing love for his mother and reading poems.',
 		user: 'Yusuke Kitagawa',
 		stage: 2,
@@ -13658,10 +13523,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			repel: []
 		},
 		game: 'p4',
-		alignment: {
-			moral: null,
-			ethical: null
-		},
+		alignment: null,
 		lore: null,
 		user: 'Teddie',
 		stage: 2,
@@ -13773,10 +13635,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			repel: []
 		},
 		game: 'p4',
-		alignment: {
-			moral: null,
-			ethical: null
-		},
+		alignment: null,
 		lore: null,
 		user: 'Teddie',
 		stage: 3,
@@ -13855,10 +13714,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			repel: []
 		},
 		game: 'p4',
-		alignment: {
-			moral: null,
-			ethical: null
-		},
+		alignment: null,
 		lore: null,
 		user: 'Rise Kujikawa',
 		stage: 2,
@@ -14643,10 +14499,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			repel: []
 		},
 		game: 'p4',
-		alignment: {
-			moral: null,
-			ethical: null
-		},
+		alignment: null,
 		lore: null,
 		user: 'Teddie',
 		stage: 1,
@@ -14781,10 +14634,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			repel: []
 		},
 		game: 'p5',
-		alignment: {
-			moral: null,
-			ethical: null
-		},
+		alignment: null,
 		lore: 'Once called the world\'s largest diamond, it was cut when it came to the British royal family. It is said to bring bad luck to any man who wears it, so only the females have ever adorned it.'
 	},
 	{
@@ -14981,10 +14831,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			repel: []
 		},
 		game: 'p4',
-		alignment: {
-			moral: null,
-			ethical: null
-		},
+		alignment: null,
 		lore: null,
 		user: 'Yukiko Amagi',
 		stage: 1,
@@ -15301,10 +15148,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			repel: []
 		},
 		game: 'p4',
-		alignment: {
-			moral: null,
-			ethical: null
-		},
+		alignment: null,
 		lore: null,
 		user: 'Rise Kujikawa',
 		stage: 3,
@@ -16451,10 +16295,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			repel: []
 		},
 		game: 'p5',
-		alignment: {
-			moral: null,
-			ethical: null
-		},
+		alignment: null,
 		lore: 'A malignant god of Norse mythology. Not always driven by malice, but impulsive and devious. He had an uneasy peace with Odin and the gods, but his part in Baldr\'s death drove them to finally punish him.',
 		user: 'Goro Akechi',
 		stage: 2,
@@ -16583,10 +16424,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			repel: []
 		},
 		game: 'p3',
-		alignment: {
-			moral: null,
-			ethical: null
-		},
+		alignment: null,
 		lore: null,
 		user: 'Fuuka Yamagishi',
 		stage: 1,
@@ -16778,10 +16616,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			repel: []
 		},
 		game: 'p5',
-		alignment: {
-			moral: null,
-			ethical: null
-		},
+		alignment: null,
 		lore: 'The Countess of Carlisle, and the historical basis for Alexandre Dumas\'s femme fatale, Milady de Winter. Known for her beauty and cunning, she was a courtier much favored by the Queen.',
 		user: 'Haru Okumura',
 		stage: 3,
@@ -17010,10 +16845,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			repel: []
 		},
 		game: 'p5',
-		alignment: {
-			moral: null,
-			ethical: null
-		},
+		alignment: null,
 		lore: 'A Persona of another story. He\'s Izanagi\'s rival and looks just like him. Magatsu means "calamity." Unlike Izanagi, who founded the land and brought order, he leads all back into chaos.',
 		user: 'Tohru Adachi',
 		stage: 2,
@@ -17086,10 +16918,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			repel: []
 		},
 		game: 'p5',
-		alignment: {
-			moral: null,
-			ethical: null
-		},
+		alignment: null,
 		lore: 'A Persona turned picaro after becoming the Trickster\'s mask. He\'s Izanagi\'s rival. Magatsu means "calamity," so, unlike Izanagi who founded the land and brought order, he leads all back into chaos.'
 	},
 	{
@@ -17989,10 +17818,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			repel: []
 		},
 		game: 'p5',
-		alignment: {
-			moral: null,
-			ethical: null
-		},
+		alignment: null,
 		lore: 'The Roman god of travelers and thieves. A diverse god, he is seen as a symbol of human unconscious and the mental world. He is equated with the Philosopher\'s Stone, the ultimate mystery in the field of alchemy.',
 		user: 'Morgana',
 		stage: 2,
@@ -18140,10 +17966,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			]
 		},
 		game: 'p5',
-		alignment: {
-			moral: null,
-			ethical: null
-		},
+		alignment: null,
 		lore: 'A Persona of another story. He appears before Judgment Day to save the virtuous. He is a universal figure, appearing in myths around the world. Many stories involve his death and rebirth.',
 		user: 'P3 Protagonist',
 		stage: 2,
@@ -18221,10 +18044,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			]
 		},
 		game: 'p5',
-		alignment: {
-			moral: null,
-			ethical: null
-		},
+		alignment: null,
 		lore: 'A Persona turned picaro after becoming the Trickster\'s mask. He appears before Judgment Day to save the virtuous. He is a universal figure, appearing in myths around the world.'
 	},
 	{
@@ -18499,10 +18319,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			repel: []
 		},
 		game: 'p5',
-		alignment: {
-			moral: null,
-			ethical: null
-		},
+		alignment: null,
 		lore: 'The beautiful woman that appears in Dumas\' "Three Musketeers". Branded with a fleur-de-lis symbol, she used many aliases to control nobility and get her vengeance.',
 		user: 'Haru Okumura',
 		stage: 1,
@@ -19617,10 +19434,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			repel: []
 		},
 		game: 'p5',
-		alignment: {
-			moral: null,
-			ethical: null
-		},
+		alignment: null,
 		lore: 'The grimoire which contains vital information of the Cthulhu mythos by Lovecraft. Its original name is Al Azif. It is said the book itself is alive.',
 		user: 'Futaba Sakura',
 		stage: 1,
@@ -19837,10 +19651,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			repel: []
 		},
 		game: 'p3',
-		alignment: {
-			moral: null,
-			ethical: null
-		},
+		alignment: null,
 		lore: null,
 		user: 'Ken Amada',
 		stage: 1,
@@ -21028,10 +20839,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			repel: []
 		},
 		game: 'p5',
-		alignment: {
-			moral: null,
-			ethical: null
-		},
+		alignment: null,
 		lore: 'A metal mentioned in ancient Greek literature. Some accounts say it was merely brass, but other stories suggest it was, in fact, a legendary material.'
 	},
 	{
@@ -21100,10 +20908,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			repel: []
 		},
 		game: 'p5',
-		alignment: {
-			moral: null,
-			ethical: null
-		},
+		alignment: null,
 		lore: 'A diamond stolen from a Hindu temple that is said to drive its owner to their death. It was cut into smaller pieces in an attempt to break the curse.'
 	},
 	{
@@ -21255,10 +21060,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			repel: []
 		},
 		game: 'p5',
-		alignment: {
-			moral: null,
-			ethical: null
-		},
+		alignment: null,
 		lore: 'A Persona of another story. A poet skilled with the lyre. He tried to retrieve his wife from Hades, but she vanished when he looked back before reaching the surface.',
 		user: 'P3 Protagonist',
 		stage: 1,
@@ -21333,10 +21135,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			repel: []
 		},
 		game: 'p5',
-		alignment: {
-			moral: null,
-			ethical: null
-		},
+		alignment: null,
 		lore: 'A Persona of another story. A poet skilled with the lyre. He tried to retrieve his wife from Hades, but she vanished when he looked back before reaching the surface.',
 		user: 'P3 Protagonist',
 		stage: 1,
@@ -21408,10 +21207,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			repel: []
 		},
 		game: 'p5',
-		alignment: {
-			moral: null,
-			ethical: null
-		},
+		alignment: null,
 		lore: 'A Persona turned picaro after becoming the Trickster\'s mask. A Greek poet who tried to retrieve his wife from Hades, but she vanished when he looked back before reaching the surface.'
 	},
 	{
@@ -21476,10 +21272,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			repel: []
 		},
 		game: 'p5',
-		alignment: {
-			moral: null,
-			ethical: null
-		},
+		alignment: null,
 		lore: 'A Persona turned picaro after becoming the Trickster\'s mask. A Greek poet who tried to retrieve his wife from Hades, but she vanished when he looked back before reaching the surface.'
 	},
 	{
@@ -21526,10 +21319,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			repel: []
 		},
 		game: 'p3',
-		alignment: {
-			moral: null,
-			ethical: null
-		},
+		alignment: null,
 		lore: 'By bonding with many people, Orpheus was once again born from the sea of the soul. He has awakened to the power of Cipher, which holds endless possibilities.',
 		user: 'P3 Protagonist',
 		stage: 3,
@@ -22009,10 +21799,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			repel: []
 		},
 		game: 'p3',
-		alignment: {
-			moral: null,
-			ethical: null
-		},
+		alignment: null,
 		lore: null,
 		user: 'Aigis',
 		stage: 1,
@@ -22135,10 +21922,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			repel: []
 		},
 		game: 'p5',
-		alignment: {
-			moral: null,
-			ethical: null
-		},
+		alignment: null,
 		lore: 'The first woman created by the Greek gods, made to punish mankind\'s hubris. She opens a forbidden vessel (said to be a jar or a box) and unleashes evil into the world, but also reveals Hope, to ensure humanity is not crushed by despair.',
 		user: 'Sophia',
 		stage: 2,
@@ -22390,10 +22174,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			repel: []
 		},
 		game: 'p3',
-		alignment: {
-			moral: null,
-			ethical: null
-		},
+		alignment: null,
 		lore: null,
 		user: 'Mitsuru Kirijo',
 		stage: 1,
@@ -22572,10 +22353,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			repel: []
 		},
 		game: 'p5',
-		alignment: {
-			moral: null,
-			ethical: null
-		},
+		alignment: null,
 		lore: 'A set of mysterious objects Sophia uses in battle to mimic the powers of Persona-users. Though they function similarly to Personas, their inner workings are completely unknown. It\'s name is derived from the Greek word for "jar."',
 		user: 'Sophia',
 		stage: 1,
@@ -22799,10 +22577,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			repel: []
 		},
 		game: 'p3',
-		alignment: {
-			moral: null,
-			ethical: null
-		},
+		alignment: null,
 		lore: null,
 		user: 'Akihiko Sanada',
 		stage: 1,
@@ -23073,10 +22848,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			repel: []
 		},
 		game: 'p5',
-		alignment: {
-			moral: null,
-			ethical: null
-		},
+		alignment: null,
 		lore: 'The Greek Titan created mankind from clay. He later stole fire from Olympus and, in turn, gave it to mankind against Zeus\'s will. His name is often synonymous with fire and "divine knowledge."',
 		user: 'Futaba Sakura',
 		stage: 2,
@@ -23171,10 +22943,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			repel: []
 		},
 		game: 'p3',
-		alignment: {
-			moral: null,
-			ethical: null
-		},
+		alignment: null,
 		lore: null,
 		user: 'Metis',
 		stage: 1,
@@ -23328,10 +23097,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			repel: []
 		},
 		game: 'p5',
-		alignment: {
-			moral: null,
-			ethical: null
-		},
+		alignment: null,
 		lore: 'The diamond necklace that Jeanne de la Motte swindled from jewelers in 1785 by claiming it was on behalf of the Queen of France, Marie Antoinette.'
 	},
 	{
@@ -23704,10 +23470,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			repel: []
 		},
 		game: 'p5',
-		alignment: {
-			moral: null,
-			ethical: null
-		},
+		alignment: null,
 		lore: 'Another alias of Maurice Leblanc\'s hero, Arsène Lupin. Infamous as a phantom thief, he was also known to be a man of many friends, lovers, and treasured allies.',
 		user: 'P5 Protagonist',
 		stage: 3,
@@ -23945,10 +23708,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			repel: []
 		},
 		game: 'p5',
-		alignment: {
-			moral: null,
-			ethical: null
-		},
+		alignment: null,
 		lore: 'A bluish-tinged diamond that Napoleon Bonaparte had mounted to the pommel of his sword. It was named after the French Regent Philippe II, Duke of Orleans, who had purchased it in 1717.'
 	},
 	{
@@ -24036,10 +23796,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			repel: []
 		},
 		game: 'p5',
-		alignment: {
-			moral: null,
-			ethical: null
-		},
+		alignment: null,
 		lore: 'A noble thief that made waves in England during the Middle Ages. He is an expert archer and leader of the Merry Men, outlaws of justice who made Sherwood Forest their home.',
 		user: 'Goro Akechi',
 		stage: 1,
@@ -24149,10 +23906,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			repel: []
 		},
 		game: 'p4',
-		alignment: {
-			moral: null,
-			ethical: null
-		},
+		alignment: null,
 		lore: null,
 		user: 'Kanji Tatsumi',
 		stage: 2,
@@ -24666,10 +24420,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			repel: []
 		},
 		game: 'p5',
-		alignment: {
-			moral: null,
-			ethical: null
-		},
+		alignment: null,
 		lore: 'An archangel who is said to be the form of Satan before he fell from Heaven. The second son of God, he rebelled against Him for freedom and bestowed free will and chaos upon humanity.',
 		user: 'P5 Protagonist',
 		stage: 2,
@@ -25167,10 +24918,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			repel: []
 		},
 		game: 'p5',
-		alignment: {
-			moral: null,
-			ethical: null
-		},
+		alignment: null,
 		lore: 'A title Sun Wukong had given himself. Born from a rock, he wreaked havoc and was punished by Buddha who imprisoned him under a mountain. Eventually, he was saved by a monk named Xuanzang.',
 		user: 'Ryuji Sakamoto',
 		stage: 2,
@@ -26080,10 +25828,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			repel: []
 		},
 		game: 'p5',
-		alignment: {
-			moral: null,
-			ethical: null
-		},
+		alignment: null,
 		lore: 'Also known as the Stone of Destiny, it is a stone used in the coronations of Scotland\'s monarchs. Legends say the stone is linked to angels.'
 	},
 	{
@@ -26484,10 +26229,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			repel: []
 		},
 		game: 'p4',
-		alignment: {
-			moral: null,
-			ethical: null
-		},
+		alignment: null,
 		lore: null,
 		user: 'Naoto Shirogane',
 		stage: 1,
@@ -26604,10 +26346,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			repel: []
 		},
 		game: 'p4',
-		alignment: {
-			moral: null,
-			ethical: null
-		},
+		alignment: null,
 		lore: null,
 		user: 'Yukiko Amagi',
 		stage: 3,
@@ -26862,10 +26601,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			repel: []
 		},
 		game: 'p4',
-		alignment: {
-			moral: null,
-			ethical: null
-		},
+		alignment: null,
 		lore: null,
 		user: 'Yosuke Hanamura',
 		stage: 2,
@@ -27060,10 +26796,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			repel: []
 		},
 		game: 'p4',
-		alignment: {
-			moral: null,
-			ethical: null
-		},
+		alignment: null,
 		lore: null,
 		user: 'Chie Satonaka',
 		stage: 2,
@@ -27233,10 +26966,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			repel: []
 		},
 		game: 'p4',
-		alignment: {
-			moral: null,
-			ethical: null
-		},
+		alignment: null,
 		lore: null,
 		user: 'Kanji Tatsumi',
 		stage: 1,
@@ -27420,10 +27150,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			repel: []
 		},
 		game: 'p4',
-		alignment: {
-			moral: null,
-			ethical: null
-		},
+		alignment: null,
 		lore: null,
 		user: 'Yosuke Hanamura',
 		stage: 3,
@@ -27532,10 +27259,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			repel: []
 		},
 		game: 'p4',
-		alignment: {
-			moral: null,
-			ethical: null
-		},
+		alignment: null,
 		lore: null,
 		user: 'Kanji Tatsumi',
 		stage: 3,
@@ -27897,10 +27621,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			]
 		},
 		game: 'p5',
-		alignment: {
-			moral: null,
-			ethical: null
-		},
+		alignment: null,
 		lore: 'A Persona of another story. The Greek god of death, he is the son of Nyx and the twin brother of Hypnos. He is known to provide mortals with a peaceful death.',
 		user: 'Elizabeth',
 		stage: 1,
@@ -27969,10 +27690,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			]
 		},
 		game: 'p5',
-		alignment: {
-			moral: null,
-			ethical: null
-		},
+		alignment: null,
 		lore: 'A Persona turned picaro after becoming the Trickster\'s mask. The Greek god of death, he is the son of Nyx and the twin brother of Hypnos. He is known to provide mortals with a peaceful death.'
 	},
 	{
@@ -28534,10 +28252,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			repel: []
 		},
 		game: 'p4',
-		alignment: {
-			moral: null,
-			ethical: null
-		},
+		alignment: null,
 		lore: null,
 		user: 'Chie Satonaka',
 		stage: 1,
@@ -28719,10 +28434,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			repel: []
 		},
 		game: 'p3',
-		alignment: {
-			moral: null,
-			ethical: null
-		},
+		alignment: null,
 		lore: null,
 		user: 'Junpei Iori',
 		stage: 2,
@@ -28947,10 +28659,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			]
 		},
 		game: 'p5',
-		alignment: {
-			moral: null,
-			ethical: null
-		},
+		alignment: null,
 		lore: 'A Persona of another story. An important god born from the Japanese god Izanagi, he governs over the moon and the night. There are many theories behind this mysterious god.',
 		user: 'Sho Minazuki',
 		stage: 1,
@@ -29023,10 +28732,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			]
 		},
 		game: 'p5',
-		alignment: {
-			moral: null,
-			ethical: null
-		},
+		alignment: null,
 		lore: 'A Persona turned picaro after becoming the Trickster\'s mask. An important god born from the Japanese god Izanagi, he governs over the moon and the night. There are many theories behind this mysterious god.'
 	},
 	{
@@ -29532,10 +29238,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			repel: []
 		},
 		game: 'p5',
-		alignment: {
-			moral: null,
-			ethical: null
-		},
+		alignment: null,
 		lore: 'Protagonist of Victor Hugo\'s "Les Misérables." Jailed after stealing bread for his starving nephews, he was consumed by bitterness, but a bishop\'s mercy inspired a change of heart. He strove to be a virtuous champion of the poor and downtrodden.',
 		user: 'Zenkichi Hasegawa',
 		stage: 1,
@@ -29681,10 +29384,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			repel: []
 		},
 		game: 'p5',
-		alignment: {
-			moral: null,
-			ethical: null
-		},
+		alignment: null,
 		lore: 'The true name of Freyja, of the Norse Vanir deities. Younger twin sister of Freyr. Her name means "dis of the Vanir" - dis being a goddess. Known to be a great beauty and a witchlike master of magic.',
 		user: 'Sumire Yoshizawa',
 		stage: 2,
@@ -30274,10 +29974,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			repel: []
 		},
 		game: 'p5',
-		alignment: {
-			moral: null,
-			ethical: null
-		},
+		alignment: null,
 		lore: 'The other name of Captain Kidd, world-renowned pirate. For years after his death, songs and legends of his life inspired many to chase rumors of his buried treasure across the seas.',
 		user: 'Ryuji Sakamoto',
 		stage: 3,
@@ -30604,10 +30301,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			]
 		},
 		game: 'p4',
-		alignment: {
-			moral: null,
-			ethical: null
-		},
+		alignment: null,
 		lore: null,
 		user: 'Naoto Shirogane',
 		stage: 3,
@@ -30711,10 +30405,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			repel: []
 		},
 		game: 'p4',
-		alignment: {
-			moral: null,
-			ethical: null
-		},
+		alignment: null,
 		lore: null,
 		user: 'Naoto Shirogane',
 		stage: 2,
@@ -31453,10 +31144,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			repel: []
 		},
 		game: 'p5',
-		alignment: {
-			moral: null,
-			ethical: null
-		},
+		alignment: null,
 		lore: 'A masked swordsman of justice who fought in California against corrupt officials during the era of Spanish rule. He always left his "Z" mark with his rapier wherever he appeared.',
 		user: 'Morgana',
 		stage: 1,

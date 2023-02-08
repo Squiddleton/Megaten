@@ -1,7 +1,10 @@
-/** A utility type for shortening ternary type checks */
+/** A utility type for shortening ternary typings */
 export type If<Bool extends boolean, ValueIfTrue, ValueIfFalse> = Bool extends true ? ValueIfTrue : ValueIfFalse;
 
-/** An ailment inflicted by a skill */
+/** Criteria for AilBoostSkill instances taking effect */
+export type AilBoostCriteria = 'Rain/Snow';
+
+/** An ailment/status effect */
 export interface Ailment {
 	/** The ailment's name */
 	name: AilmentName;
@@ -23,39 +26,42 @@ export type Resistance = AilResistance | 'Drain' | 'Repel';
 export type AllyRange = 'Self' | 'Ally' | 'Party';
 /** Ranges for skills targeting enemies */
 export type EnemyRange = 'One' | 'All' | 'Random';
-/** Ranges for skills targeting specific entities */
+/** Ranges for skills */
 export type AnyRange = AllyRange | EnemyRange;
 
 /** Demons' Arcana */
 export type Arcana = 'Fool' | 'Magician' | 'Councillor' | 'Priestess' | 'Empress' | 'Emperor' | 'Hierophant' | 'Apostle' | 'Lovers' | 'Chariot' | 'Justice' | 'Hermit' | 'Fortune' | 'Strength' | 'Hunger' | 'Hanged' | 'Death' | 'Temperance' | 'Devil' | 'Tower' | 'Star' | 'Moon' | 'Sun' | 'Judgement' | 'Aeon' | 'World' | 'Faith' | 'Hope';
 
-/** An ATTACK-type skill's cost */
+/** An AttackSkill instance's cost */
 export interface AttackCost {
 	/** The amount of HP or MP that the skill uses */
 	amount: number;
-	/** The type of stat that the skill uses */
-	type: HPMP;
+	/** The stat that the skill uses */
+	stat: HPMP;
 }
 
+/** A base for skills with a specific amount of power */
 export interface BasePower {
 	/** The skill's base power */
 	amount: number;
+	/** The skill's visible power relative to other skills */
+	display: unknown;
 }
-/** An ATTACK-type skill's power */
+/** An AttackSkill instance's power */
 export interface AttackPower extends BasePower {
-	/** The skill's public power relative to other skills */
 	display: AttackDisplay;
 	/** The type of damage that the skill inflicts */
 	type: DamageType;
 }
-/** An SMTCOUNTER-type skill's power */
-export interface CounterPower extends BasePower {
-	/** The skill's public power relative to other skills */
+/** An SMTCounterSkill instance's power */
+export interface SMTCounterPower extends BasePower {
 	display: CounterDisplay;
 }
 
-/** Barriers set up by a Skill instance */
-export type Barrier = 'Painting' | 'Kannabi Veil' | 'Tetrakarn' | 'Makarakarn' | 'Shield of Justice' | 'Tetraja' | `${string} Block`;
+/** Barriers formed by a Skill instance */
+export type Barrier = 'Painting' | 'Kannabi Veil' | 'Tetrakarn' | 'Makarakarn' | 'Shield of Justice' | 'Tetraja' | `${DamagingAffinity} Block`;
+
+export type BoostStack = '+' | 'x';
 
 /** Buffs cast by a Skill instance */
 export type Buff = 'Attack' | 'Defense' | 'Accuracy/Evasion' | 'Double Defense' | 'Double Accuracy/Evasion';
@@ -71,17 +77,19 @@ export type AttackDisplay = CounterDisplay | 'Minuscule' | 'Heavy' | 'Severe' | 
 /** Types of damage dealt */
 export type DamageType = 'Physical' | 'Magic';
 
+/** A demon's skill potential and inherit affinity */
 export interface DemonAffinities<PersonaBased extends boolean = boolean> {
 	/** The demon's skill potential */
 	skillPotential: If<PersonaBased, null, SkillPotential | null>;
-	/** The affinity that the demon can inherit skills of */
+	/** The affinity that the demon can learn skills of */
 	inherit: InheritAffinity | null;
 }
 
+/** A demon's ailment and affinity resistances */
 export interface DemonResistances<PersonaBased extends boolean = boolean> {
 	/** Ailments that the demon is weak to, resists, or nullifies */
 	ailments: If<PersonaBased, null, Partial<Record<AilmentName, AilResistance | 'Weak'>> | null>;
-	/** The affinities that the demon is weak to */
+	/** Affinities that the demon is weak to */
 	weak: DamagingAffinity[];
 	/** Affinities that the demon resists */
 	resist: DamagingAffinity[];
@@ -93,7 +101,7 @@ export interface DemonResistances<PersonaBased extends boolean = boolean> {
 	repel: DamagingAffinity[];
 }
 
-/** A skill that a demon naturally learns */
+/** A skill that a demon learns via leveling up */
 export interface DemonSkill {
 	/** The skill's name */
 	name: string;
@@ -103,22 +111,22 @@ export interface DemonSkill {
 
 /** A demon's stats */
 export interface DemonStats {
-	/** The demon's strength */
+	/** The demon's strength stat */
 	st: number;
-	/** The demon's vitality/endurance */
+	/** The demon's vitality/endurance stat */
 	vi: number;
-	/** The demon's magic */
+	/** The demon's magic stat */
 	ma: number;
-	/** The demon's agility */
+	/** The demon's agility stat */
 	ag: number;
-	/** The demon's luck */
+	/** The demon's luck stat */
 	lu: number;
 }
 
-/** Criteria causing EndureSkill instances to take effect */
+/** Criteria for EndureSkill instances taking effect */
 export type EndureCriteria = LightDark | 'Light/Dark';
 
-/** Criteria causing EvasionSkill instances to take effect */
+/** Criteria for EvasionSkill instances taking effect */
 export type EvasionBoostCriteria = 'Surrounded' | 'Rain/Snow';
 
 /** The HP or MP stats */
@@ -132,20 +140,20 @@ export type PostBattleStat = HPMP | 'HPMP' | 'EXP' | 'Money';
 export type MoralAlignment = 'Light' | 'Neutral' | 'Dark' | 'Unknown';
 /** Demons' ethical alignments */
 export type EthicalAlignment = 'Law' | 'Neutral' | 'Chaos' | 'Unknown';
-/** Demons' moral and ethical alignments */
-export interface Alignment<PersonaBased extends boolean> {
-	/** The demon's moral alignment (Light to Dark) */
-	moral: If<PersonaBased, null, MoralAlignment>;
-	/** The demon's ethical alignment (Law to Chaos) */
-	ethical: If<PersonaBased, null, EthicalAlignment>;
+/** A demon's moral and ethical alignment */
+export interface DemonAlignment {
+	/** The demon's moral alignment (Light v. Dark) */
+	moral: MoralAlignment;
+	/** The demon's ethical alignment (Law v. Chaos) */
+	ethical: EthicalAlignment;
 }
 
-/** A static number or a percentage */
+/** A static number or a percent */
 export type NumberOrPercent = number | `${number}%`;
 
 /** Affinities exclusive to the Persona series */
 export type PersonaAffinity = 'Gun' | 'Wind' | 'Psy' | 'Nuke';
-/** Affinities exclusive to the SMT series */
+/** Affinities exclusive to the mainline Shin Megami Tensei series */
 export type SMTAffinity = 'Force';
 /** Affinities used by demons and skills */
 export type AnyAffinity = 'Phys' | 'Fire' | 'Ice' | 'Elec' | 'Light' | 'Dark' | 'Almighty' | 'Recovery' | 'Ailment' | 'Support' | 'Passive' | 'Misc' | SMTAffinity | PersonaAffinity;
@@ -153,23 +161,23 @@ export type AnyAffinity = 'Phys' | 'Fire' | 'Ice' | 'Elec' | 'Light' | 'Dark' | 
 export type DamagingAffinity = Exclude<AnyAffinity, 'Recovery' | 'Ailment' | 'Support' | 'Passive' | 'Misc'>;
 /** A damaging affinity or all damaging affinities */
 export type OneOrAllDamagingAffinities = DamagingAffinity | 'All';
-/** Affinities that can be demons' inherit affinity */
+/** Affinities that can be a demon's inherit affinity */
 export type InheritAffinity = Exclude<AnyAffinity, 'Gun' | 'Passive' | 'Misc' | SMTAffinity>;
 /** Affinities used by SMTCounterSkill instances */
-export type CounterAffinity = 'Phys' | 'Dark';
+export type SMTCounterAffinity = 'Phys' | 'Dark';
 /** The Light and Dark affinities */
 export type LightDark = 'Light' | 'Dark';
 
-/** Games in the Persona series */
+/** Mainline Persona games */
 export type PersonaGame = 'p3' | 'p4' | 'p5';
-/** Games in the Shin Megami Tensei series */
+/** Mainline Shin Megami Tensei games */
 export type SMTGame = 'smt5';
-/** Games that Demon data can originate from */
+/** Games that demon data can originate from */
 export type AnyGame = PersonaGame | SMTGame;
 
-/** Custom races for demons originating in Persona games */
+/** Custom races for demons that originate in Persona games */
 export type PersonaRace = 'Persona' | 'Picaro' | 'Treasure';
-/** Demons' races */
+/** Demons' official races */
 export type SMTRace = 'Amatsu' | 'Avatar' | 'Avian' | 'Beast' | 'Brute' | 'Deity' | 'Devil' | 'Divine' | 'Dragon' | 'Drake' | 'Element' | 'Fairy' | 'Fallen' | 'Femme' | 'Fiend' | 'Foul' | 'Fury' | 'Genma' | 'Godly' | 'Haunt' | 'Herald' | 'Holy' | 'Jaki' | 'Jirae' | 'Kishin' | 'Kunitsu' | 'Lady' | 'Megami' | 'Mitama' | 'Night' | 'Nymph' | 'Panagia' | 'Raptor' | 'Snake' | 'Tenma' | 'Tyrant' | 'Vile' | 'Wargod' | 'Wilder' | 'Wood' | 'Yoma';
 /** Demons' races */
 export type AnyRace = PersonaRace | SMTRace;
@@ -177,13 +185,13 @@ export type AnyRace = PersonaRace | SMTRace;
 /** The displayed amount that RecoverySkill instances can recover  */
 export type RecoveryAmount = 'Slight' | 'Moderate' | 'Half' | 'Full' | '130%';
 
-/** Criteria causing RegenSkill instances to take effect */
+/** Criteria for RegenSkill instances taking effect */
 export type RegenCriteria = 'Ambush' | 'Baton Pass' | 'Turn Start';
 
-/** Series that Skill data can originate from */
+/** Game series that skill data can originate from */
 export type Series = 'persona' | 'smt';
 
-/** Criteria causing SiphonSkill instances to take effect */
+/** Criteria for SiphonSkill instances taking effect */
 export type SiphonCriteria = 'Ailment' | 'Weakness/Critical' | 'Drain';
 
 /** The effectiveness of a demon's skills based on the skills' affinities */
