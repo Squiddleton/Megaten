@@ -373,13 +373,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		series: 'smt'
 	},
 	{
-		name: 'Arms Master',
-		affinity: 'Passive',
-		type: 'MASTER',
-		amount: 50,
-		stat: 'HP'
-	},
-	{
 		name: 'Arm Chopper',
 		affinity: 'Phys',
 		type: 'ATTACK',
@@ -403,6 +396,13 @@ const skillData: Readonly<AnySkillData[]> = [
 		},
 		range: 'One',
 		series: 'persona'
+	},
+	{
+		name: 'Arms Master',
+		affinity: 'Passive',
+		type: 'MASTER',
+		amount: 50,
+		stat: 'HP'
 	},
 	{
 		name: 'Arrow Rain',
@@ -1685,6 +1685,23 @@ const skillData: Readonly<AnySkillData[]> = [
 		series: 'smt'
 	},
 	{
+		name: 'Deathbound',
+		affinity: 'Phys',
+		type: 'ATTACK',
+		accuracy: 98,
+		cost: {
+			stat: 'MP',
+			amount: 35
+		},
+		power: {
+			amount: 150,
+			display: 'Medium',
+			type: 'Physical'
+		},
+		range: 'All',
+		series: 'smt'
+	},
+	{
 		name: 'Death Flies',
 		affinity: 'Dark',
 		type: 'ATTACK',
@@ -1751,23 +1768,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		},
 		range: 'One',
 		series: 'persona'
-	},
-	{
-		name: 'Deathbound',
-		affinity: 'Phys',
-		type: 'ATTACK',
-		accuracy: 98,
-		cost: {
-			stat: 'MP',
-			amount: 35
-		},
-		power: {
-			amount: 150,
-			display: 'Medium',
-			type: 'Physical'
-		},
-		range: 'All',
-		series: 'smt'
 	},
 	{
 		name: 'Debilitate',
@@ -2052,6 +2052,17 @@ const skillData: Readonly<AnySkillData[]> = [
 		series: 'persona'
 	},
 	{
+		name: 'Dormina',
+		affinity: 'Ailment',
+		type: 'AILMENT',
+		range: 'One',
+		cost: 10,
+		ailments: [
+			'Sleep'
+		],
+		chance: 80
+	},
+	{
 		name: 'Dormin Rush',
 		affinity: 'Phys',
 		type: 'ATTACK',
@@ -2073,17 +2084,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		},
 		range: 'All',
 		series: 'persona'
-	},
-	{
-		name: 'Dormina',
-		affinity: 'Ailment',
-		type: 'AILMENT',
-		range: 'One',
-		cost: 10,
-		ailments: [
-			'Sleep'
-		],
-		chance: 80
 	},
 	{
 		name: 'Double Fangs',
@@ -3547,12 +3547,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		series: 'smt'
 	},
 	{
-		name: 'Hama Boost',
-		affinity: 'Passive',
-		type: 'INSTAKILLBOOST',
-		element: 'Light'
-	},
-	{
 		name: 'Hamabarion',
 		aliases: [
 			'Kougaon'
@@ -3574,6 +3568,12 @@ const skillData: Readonly<AnySkillData[]> = [
 		},
 		range: 'One',
 		series: 'smt'
+	},
+	{
+		name: 'Hama Boost',
+		affinity: 'Passive',
+		type: 'INSTAKILLBOOST',
+		element: 'Light'
 	},
 	{
 		name: 'Hamaon',
@@ -3681,19 +3681,19 @@ const skillData: Readonly<AnySkillData[]> = [
 		series: 'smt'
 	},
 	{
+		name: 'Healing Wave',
+		affinity: 'Passive',
+		type: 'NAVI',
+		unique: null,
+		description: 'Recover 5% HP after battle (party).'
+	},
+	{
 		name: 'Heal Pleroma',
 		affinity: 'Passive',
 		type: 'BOOST',
 		amount: 20,
 		element: 'Recovery',
 		stacks: '+'
-	},
-	{
-		name: 'Healing Wave',
-		affinity: 'Passive',
-		type: 'NAVI',
-		unique: null,
-		description: 'Recover 5% HP after battle (party).'
 	},
 	{
 		name: 'Heat Riser',
@@ -3749,6 +3749,24 @@ const skillData: Readonly<AnySkillData[]> = [
 		}
 	},
 	{
+		name: 'Heaven\'s Blade',
+		affinity: 'Phys',
+		type: 'ATTACK',
+		unique: true,
+		accuracy: 90,
+		cost: {
+			stat: 'HP',
+			amount: 19
+		},
+		power: {
+			amount: 300,
+			display: 'Heavy',
+			type: 'Physical'
+		},
+		range: 'One',
+		series: 'persona'
+	},
+	{
 		name: 'Heavy Blow',
 		affinity: 'Phys',
 		type: 'ATTACK',
@@ -3767,24 +3785,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		},
 		range: 'One',
 		series: 'smt'
-	},
-	{
-		name: 'Heaven\'s Blade',
-		affinity: 'Phys',
-		type: 'ATTACK',
-		unique: true,
-		accuracy: 90,
-		cost: {
-			stat: 'HP',
-			amount: 19
-		},
-		power: {
-			amount: 300,
-			display: 'Heavy',
-			type: 'Physical'
-		},
-		range: 'One',
-		series: 'persona'
 	},
 	{
 		name: 'Hell Burner',
@@ -3823,44 +3823,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			type: 'Magic'
 		},
 		range: 'All',
-		series: 'smt'
-	},
-	{
-		name: 'Hell Spin',
-		affinity: 'Phys',
-		type: 'ATTACK',
-		unique: true,
-		accuracy: 98,
-		cost: {
-			stat: 'MP',
-			amount: 30
-		},
-		power: {
-			amount: 150,
-			display: 'Heavy',
-			type: 'Physical'
-		},
-		range: 'All',
-		series: 'smt'
-	},
-	{
-		name: 'Hell Thrust',
-		affinity: 'Phys',
-		type: 'ATTACK',
-		accuracy: 98,
-		cost: {
-			stat: 'MP',
-			amount: 45
-		},
-		flags: [
-			'Pierce'
-		],
-		power: {
-			amount: 235,
-			display: 'Heavy',
-			type: 'Physical'
-		},
-		range: 'One',
 		series: 'smt'
 	},
 	{
@@ -3927,6 +3889,44 @@ const skillData: Readonly<AnySkillData[]> = [
 			type: 'Magic'
 		},
 		range: 'All',
+		series: 'smt'
+	},
+	{
+		name: 'Hell Spin',
+		affinity: 'Phys',
+		type: 'ATTACK',
+		unique: true,
+		accuracy: 98,
+		cost: {
+			stat: 'MP',
+			amount: 30
+		},
+		power: {
+			amount: 150,
+			display: 'Heavy',
+			type: 'Physical'
+		},
+		range: 'All',
+		series: 'smt'
+	},
+	{
+		name: 'Hell Thrust',
+		affinity: 'Phys',
+		type: 'ATTACK',
+		accuracy: 98,
+		cost: {
+			stat: 'MP',
+			amount: 45
+		},
+		flags: [
+			'Pierce'
+		],
+		power: {
+			amount: 235,
+			display: 'Heavy',
+			type: 'Physical'
+		},
+		range: 'One',
 		series: 'smt'
 	},
 	{
@@ -4396,25 +4396,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		series: 'smt'
 	},
 	{
-		name: 'Kill Rush',
-		affinity: 'Phys',
-		type: 'ATTACK',
-		accuracy: 90,
-		cost: {
-			stat: 'HP',
-			amount: 14
-		},
-		max: 3,
-		min: 1,
-		power: {
-			amount: 90,
-			display: 'Weak',
-			type: 'Physical'
-		},
-		range: 'One',
-		series: 'persona'
-	},
-	{
 		name: 'Killing Wind',
 		affinity: 'Force',
 		type: 'ATTACK',
@@ -4433,6 +4414,25 @@ const skillData: Readonly<AnySkillData[]> = [
 		},
 		range: 'One',
 		series: 'smt'
+	},
+	{
+		name: 'Kill Rush',
+		affinity: 'Phys',
+		type: 'ATTACK',
+		accuracy: 90,
+		cost: {
+			stat: 'HP',
+			amount: 14
+		},
+		max: 3,
+		min: 1,
+		power: {
+			amount: 90,
+			display: 'Weak',
+			type: 'Physical'
+		},
+		range: 'One',
+		series: 'persona'
 	},
 	{
 		name: 'King Bufula',
@@ -4500,18 +4500,18 @@ const skillData: Readonly<AnySkillData[]> = [
 		stat: 'HP'
 	},
 	{
-		name: 'Life Boost',
-		affinity: 'Passive',
-		type: 'SPRING',
-		amount: 20,
-		stat: 'MP'
-	},
-	{
 		name: 'Life Bonus',
 		affinity: 'Passive',
 		type: 'SPRING',
 		amount: '10%',
 		stat: 'HP'
+	},
+	{
+		name: 'Life Boost',
+		affinity: 'Passive',
+		type: 'SPRING',
+		amount: 20,
+		stat: 'MP'
 	},
 	{
 		name: 'Life Drain',
@@ -5675,19 +5675,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		series: 'smt'
 	},
 	{
-		name: 'Me Patra',
-		aliases: [
-			'Amrita',
-			'Amrita Shower'
-		],
-		affinity: 'Recovery',
-		type: 'RECOVERY',
-		range: 'Party',
-		cost: 30,
-		ailments: 'All',
-		amount: null
-	},
-	{
 		name: 'Media',
 		affinity: 'Recovery',
 		type: 'RECOVERY',
@@ -5867,6 +5854,19 @@ const skillData: Readonly<AnySkillData[]> = [
 		},
 		range: 'All',
 		series: 'persona'
+	},
+	{
+		name: 'Me Patra',
+		aliases: [
+			'Amrita',
+			'Amrita Shower'
+		],
+		affinity: 'Recovery',
+		type: 'RECOVERY',
+		range: 'Party',
+		cost: 30,
+		ailments: 'All',
+		amount: null
 	},
 	{
 		name: 'Mighty Cleave',
@@ -6106,12 +6106,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		series: 'smt'
 	},
 	{
-		name: 'Mudo Boost',
-		affinity: 'Passive',
-		type: 'INSTAKILLBOOST',
-		element: 'Dark'
-	},
-	{
 		name: 'Mudobarion',
 		aliases: [
 			'Eigaon'
@@ -6133,6 +6127,12 @@ const skillData: Readonly<AnySkillData[]> = [
 		},
 		range: 'One',
 		series: 'smt'
+	},
+	{
+		name: 'Mudo Boost',
+		affinity: 'Passive',
+		type: 'INSTAKILLBOOST',
+		element: 'Dark'
 	},
 	{
 		name: 'Mudoon',
@@ -7205,13 +7205,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		element: 'Psy'
 	},
 	{
-		name: 'Psy Wall',
-		affinity: 'Support',
-		type: 'WALL',
-		cost: 18,
-		element: 'Psy'
-	},
-	{
 		name: 'Psycho Blast',
 		affinity: 'Psy',
 		type: 'ATTACK',
@@ -7244,6 +7237,13 @@ const skillData: Readonly<AnySkillData[]> = [
 		},
 		range: 'One',
 		series: 'persona'
+	},
+	{
+		name: 'Psy Wall',
+		affinity: 'Support',
+		type: 'WALL',
+		cost: 18,
+		element: 'Psy'
 	},
 	{
 		name: 'Pulinpa',
@@ -7466,24 +7466,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		series: 'smt'
 	},
 	{
-		name: 'Re Patra',
-		affinity: 'Recovery',
-		type: 'RECOVERY',
-		range: 'Ally',
-		cost: 5,
-		ailments: [
-			'Mirage'
-		],
-		amount: null
-	},
-	{
-		name: 'Rebel Soul',
-		affinity: 'Passive',
-		type: 'MISC',
-		cost: null,
-		description: 'Showtime guage increases more quickly.'
-	},
-	{
 		name: 'Rebellion',
 		affinity: 'Support',
 		type: 'CRIT',
@@ -7510,6 +7492,13 @@ const skillData: Readonly<AnySkillData[]> = [
 		},
 		range: 'One',
 		series: 'persona'
+	},
+	{
+		name: 'Rebel Soul',
+		affinity: 'Passive',
+		type: 'MISC',
+		cost: null,
+		description: 'Showtime guage increases more quickly.'
 	},
 	{
 		name: 'Recarm',
@@ -7575,6 +7564,17 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'NAVI',
 		unique: null,
 		description: 'Recover 5% MP after battle (party).'
+	},
+	{
+		name: 'Re Patra',
+		affinity: 'Recovery',
+		type: 'RECOVERY',
+		range: 'Ally',
+		cost: 5,
+		ailments: [
+			'Mirage'
+		],
+		amount: null
 	},
 	{
 		name: 'Repel Dark',
@@ -8618,23 +8618,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		series: 'persona'
 	},
 	{
-		name: 'Storm Dracostrike',
-		affinity: 'Elec',
-		type: 'ATTACK',
-		accuracy: 98,
-		cost: {
-			stat: 'MP',
-			amount: 25
-		},
-		power: {
-			amount: 200,
-			display: 'Medium',
-			type: 'Physical'
-		},
-		range: 'One',
-		series: 'smt'
-	},
-	{
 		name: 'Stormcaller Song',
 		affinity: 'Ice',
 		type: 'ATTACK',
@@ -8652,6 +8635,23 @@ const skillData: Readonly<AnySkillData[]> = [
 			type: 'Magic'
 		},
 		range: 'Random',
+		series: 'smt'
+	},
+	{
+		name: 'Storm Dracostrike',
+		affinity: 'Elec',
+		type: 'ATTACK',
+		accuracy: 98,
+		cost: {
+			stat: 'MP',
+			amount: 25
+		},
+		power: {
+			amount: 200,
+			display: 'Medium',
+			type: 'Physical'
+		},
+		range: 'One',
 		series: 'smt'
 	},
 	{
@@ -8878,6 +8878,13 @@ const skillData: Readonly<AnySkillData[]> = [
 		cost: 10
 	},
 	{
+		name: 'Taunting Aura',
+		affinity: 'Support',
+		type: 'TAUNT',
+		buff: null,
+		cost: 4
+	},
+	{
 		name: 'Taunt - Persona',
 		aliases: [
 			'Taunt',
@@ -8891,13 +8898,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			'Rage'
 		],
 		chance: 70
-	},
-	{
-		name: 'Taunting Aura',
-		affinity: 'Support',
-		type: 'TAUNT',
-		buff: null,
-		cost: 4
 	},
 	{
 		name: 'Technical High',
@@ -8937,32 +8937,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		chance: 45
 	},
 	{
-		name: 'Terror Claw',
-		aliases: [
-			'Golden Right'
-		],
-		affinity: 'Phys',
-		type: 'ATTACK',
-		accuracy: 90,
-		ailments: [
-			{
-				name: 'Fear',
-				chance: 20
-			}
-		],
-		cost: {
-			stat: 'HP',
-			amount: 8
-		},
-		power: {
-			amount: 90,
-			display: 'Medium',
-			type: 'Physical'
-		},
-		range: 'One',
-		series: 'persona'
-	},
-	{
 		name: 'Terrorblade',
 		affinity: 'Phys',
 		type: 'ATTACK',
@@ -8990,6 +8964,32 @@ const skillData: Readonly<AnySkillData[]> = [
 		},
 		range: 'Random',
 		series: 'smt'
+	},
+	{
+		name: 'Terror Claw',
+		aliases: [
+			'Golden Right'
+		],
+		affinity: 'Phys',
+		type: 'ATTACK',
+		accuracy: 90,
+		ailments: [
+			{
+				name: 'Fear',
+				chance: 20
+			}
+		],
+		cost: {
+			stat: 'HP',
+			amount: 8
+		},
+		power: {
+			amount: 90,
+			display: 'Medium',
+			type: 'Physical'
+		},
+		range: 'One',
+		series: 'persona'
 	},
 	{
 		name: 'Tetra Break',
