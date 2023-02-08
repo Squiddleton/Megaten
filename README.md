@@ -28,7 +28,7 @@ After installation, you may use it through methods such as the following:
 ```javascript
 const { Demon, Skill, Persona } = require('megaten') // Supports CommonJS, ES6, star import, and destructuring syntax
 
-// get() functions find by the input's name without attention to capitalization, spaces, punctuation, etc. via the normalize() utility function
+// get() functions find by the input's name without attention to capitalization, spaces, punctuation, etc.
 const jack = Demon.get('Jack Frost!!!'); // Gets a Demon instance; may also return a Persona instance, typeguarded via Demon.prototype.isPersona()
 const bufu = Skill.get('bufu'); // Gets a Skill instance
 const zorro = Persona.get('ZORRO!'); // Gets a guaranteed Persona instance
@@ -39,14 +39,14 @@ const demonMap = Demon.map; // Gets a map of all demons, keyed by their devName 
 const skillArray = Skill.array;
 const personaMap = Persona.map;
 
-// All get() functions take optional arguments that typeguard for nonexistent structures
-const nullDemon = Demon.get('Kazuma Kaneko'); // Returns null; typed as "Demon | null"
-const errorDemon = Demon.get('Masayuki Doi', true); // Throws a MegatenError; typed as just "Demon"
+// All get() functions take optional arguments that guard against missing structures
+const nullDemon = Demon.get('Kazuma Kaneko'); // Type: Demon | null; returns null
+const errorDemon = Demon.get('Masayuki Doi', true); // Type: Demon; throws a MegatenError
 ```
 
 ## Demons
 
-Most demons follow an identical template. However, ones that are specifically attached to the Persona series (marked by a 'Persona' race) have additional properties.
+Most demons follow an identical template. However, the Persona subclass (differentiated by the 'Persona' race) have additional properties.
 
 ### Examples
 
@@ -238,7 +238,7 @@ AttackSkill {
 * Skills with specific uses and few similar skills are placed into a "MISC" type.
 * Typings are designed to be as specific as possible for IntelliSense and TypeScript usage.
 * Images originate from the best obtainable picture of the demon found at the current time. These will be updated if/when renders are available for many Personas and classic demons.
-* Terms with multiple series-dependent names are given the name from SMTV (e.g. Vitality over Endurance, Light over Bless, Seal over Forget and Silence). However, Force and Wind remain separated.
+* Terms with multiple series-dependent names are given the name from SMTV (e.g. MP over SP, Vitality over Endurance, Light over Bless, Seal over Forget and Silence). However, Force and Wind remain separated.
 * Kouha/Eiha skills were changed to Hama/Mudo skills since the latter also deal damage in the latest installments.
 
 ## Credits
