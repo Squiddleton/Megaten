@@ -1,6 +1,6 @@
 import type { DemonData, PersonaData } from './dataTypes';
 
-const demonData: Readonly<(DemonData<true> | DemonData<false> | PersonaData)[]> = [
+const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] = Object.freeze([
 	{
 		name: 'Abaddon',
 		affinities: {
@@ -31541,6 +31541,6 @@ const demonData: Readonly<(DemonData<true> | DemonData<false> | PersonaData)[]> 
 		},
 		lore: 'Zouchouten, protector of the South, is one of the Four Heavenly Kings in Buddhist mythology.\nSimilarly to his fellow kings, he is often depicted as a fierc warrior, clad in armor and wielding a long sword, though he is sometimes shown wielding a trident instead. Also known as Virudhaka, he is god of the five grains.'
 	}
-];
+]);
 
 export default demonData;

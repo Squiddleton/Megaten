@@ -10,6 +10,9 @@ import type { Alignment, AnyGame, Arcana, DemonAffinities, DemonResistances, Dem
 function isPersona(demon: Demon | DemonData): demon is Persona {
 	return demon.race === 'Persona';
 }
+function mapByDevName<T extends Demon>(obj: T): [string, T] {
+	return [obj.devName, obj];
+}
 
 export type AnyDemon = Demon<true> | Demon<false>;
 
@@ -78,7 +81,7 @@ export class Demon<PersonaBased extends boolean = boolean> implements DemonData<
 		return readFileSync(path.join(__dirname, '..', `images/demons/${this.devName}.png`));
 	}
 	/** An array of every Demon and Persona instance */
-	static array: AnyDemon[] = [];
+	static array: readonly AnyDemon[] = [];
 	/** A map of every Demon and Persona instance, keyed by their devName properties */
 	static map: Map<string, AnyDemon> = new Map();
 	/**
@@ -134,7 +137,7 @@ export class Persona extends Demon<true> implements PersonaData {
 		return `${formatPossessive(this.user)} ${this.name}`;
 	}
 	/** An array of every Persona instance */
-	static array: Persona[] = [];
+	static array: readonly Persona[] = [];
 	/** A map of every Persona instance, keyed by their devName properties */
 	static map: Map<string, Persona> = new Map();
 	/**
@@ -157,8 +160,8 @@ export class Persona extends Demon<true> implements PersonaData {
 	}
 }
 
-Demon.array = demonData.map(data => isPersona(data) ? new Persona(data) : new Demon(data));
-Demon.map = new Map(Demon.array.map(demon => [demon.devName, demon]));
+Demon.array = Object.freeze(demonData.map(data => isPersona(data) ? new Persona(data) : new Demon(data)));
+Demon.map = new Map(Demon.array.map(mapByDevName));
 
-Persona.array = Demon.array.filter(isPersona);
-Persona.map = new Map(Persona.array.map(persona => [persona.devName, persona]));
+Persona.array = Object.freeze(Demon.array.filter(isPersona));
+Persona.map = new Map(Persona.array.map(mapByDevName));
