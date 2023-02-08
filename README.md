@@ -46,7 +46,7 @@ const errorDemon = Demon.get('Masayuki Doi', true); // Type: Demon; throws a Meg
 
 ## Demons
 
-Most demons follow an identical template. However, the Persona subclass (differentiated by the 'Persona' race) have additional properties.
+Most demons follow an identical template. However, the Persona subclass (differentiated by the `'Persona'` race) have additional properties.
 
 ### Examples
 
@@ -227,6 +227,35 @@ AttackSkill {
   description: 'Heavy Elec damage to 1 foe.',
   toString(): 'Ziodyne: Heavy Elec damage to 1 foe.'
 }
+```
+
+## Other Classes
+
+### MegatenError
+
+A `MegatenError` is thrown when a `Structure.get(...)` function with `true` as the second argument is unable to find a matching structure.
+
+```javascript
+try {
+  Persona.get('Shigenori Soejima', true);
+}
+catch (e) {
+  if (e instanceof MegatenError) {
+    console.log({
+      name: e.structureName, // 'Shigenori Soejima'
+      type: e.structureType // 'Persona'
+    });
+  }
+}
+```
+
+### BattleThemes
+
+The `BattleThemes` namespace includes `ShinMegamiTensei5` and `Persona5` enums, and each enum contains Spotify links to the battle themes from its respective game.
+
+```javascript
+BattleThemes.ShinMegamiTensei5.Destruction; // 'https://open.spotify.com/track/2CmTSrnpy8TBl3fdvcjY6P?si=d5bd93a3a0c84778'
+BattleThemes.Persona5.LastSurprise; // 'https://open.spotify.com/track/4cPnNnTMkJ6soUOUzEtmcp?si=01eee74b90ab45a9'
 ```
 
 ## Notes
