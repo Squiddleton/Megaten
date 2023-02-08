@@ -597,8 +597,8 @@ export class MasterSkill extends Skill implements MasterSkillData {
 		super(data);
 		const displayStat = {
 			HP: 'HP',
-			MP: 'SP',
-			HPMP: 'HP and SP'
+			MP: 'MP',
+			HPMP: 'HP and MP'
 		}[stat];
 		this.description = `Decreases ${displayStat} cost of skills by ${amount}%.`;
 		this.amount = amount;
@@ -671,7 +671,7 @@ export class PostBattleSkill extends Skill implements PostBattleSkillData {
 			case 'HPMP': {
 				this.description = amount === 100
 					? 'Fully restores HP/MP after battle.'
-					: `Restores ${amount}% HP and SP after battle.`;
+					: `Restores ${amount}% HP and MP after battle.`;
 				break;
 			}
 			case 'EXP': {
@@ -762,8 +762,8 @@ export class RegenSkill extends Skill implements RegenSkillData {
 		super(data);
 		this.description = {
 			HP: `Restores ${amount} of max HP each turn in battle.`,
-			MP: criteria === 'Baton Pass' ? `Restores ${amount} SP after a Baton Pass.` : `Restores ${amount} MP each turn in battle.`,
-			HPMP: criteria === 'Ambush' && typeof amount === 'number' ? `Restores ${amount / 2}% max HP and ${amount} SP each turn during an Ambush.` : `Restores ${amount}% HP and ${amount} SP each turn in battle.`,
+			MP: criteria === 'Baton Pass' ? `Restores ${amount} MP after a Baton Pass.` : `Restores ${amount} MP each turn in battle.`,
+			HPMP: criteria === 'Ambush' && typeof amount === 'number' ? `Restores ${amount / 2}% max HP and ${amount} MP each turn during an Ambush.` : `Restores ${amount}% HP and ${amount} MP each turn in battle.`,
 			AIL: amount === 1 ? 'Decreases recovery time from ailments by half.' : 'Decreases recovery time from ailments to 1 turn.'
 		}[stat];
 		this.amount = amount;
@@ -847,7 +847,7 @@ export class SpringSkill extends Skill implements SpringSkillData {
 		const { amount, stat } = data;
 		super(data);
 		this.description = typeof amount === 'string'
-			? `Increases max ${stat.replace('MP', 'SP')} by ${amount}.`
+			? `Increases max ${stat} by ${amount}.`
 			: `${amount === 30 ? 'Greatly i' : 'I'}ncreases MAX ${stat}.`;
 		this.amount = amount;
 		this.stat = stat;

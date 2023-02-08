@@ -677,7 +677,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 				level: 38
 			},
 			{
-				name: 'Subrecover SP',
+				name: 'Subrecover MP',
 				level: 49
 			},
 			{
@@ -685,7 +685,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 				level: 58
 			},
 			{
-				name: 'Subrecover SP EX',
+				name: 'Subrecover MP EX',
 				level: 67
 			}
 		],
@@ -19413,7 +19413,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 				level: 38
 			},
 			{
-				name: 'Subrecover SP',
+				name: 'Subrecover MP',
 				level: 49
 			},
 			{
@@ -19421,7 +19421,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 				level: 58
 			},
 			{
-				name: 'Subrecover SP EX',
+				name: 'Subrecover MP EX',
 				level: 67
 			}
 		],
@@ -22827,7 +22827,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 				level: 38
 			},
 			{
-				name: 'Subrecover SP',
+				name: 'Subrecover MP',
 				level: 49
 			},
 			{
@@ -22835,7 +22835,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 				level: 58
 			},
 			{
-				name: 'Subrecover SP EX',
+				name: 'Subrecover MP EX',
 				level: 67
 			}
 		],

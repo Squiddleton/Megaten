@@ -96,7 +96,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Passive',
 		type: 'NAVI',
 		unique: null,
-		description: 'Moral Support may now Charge or recover SP.'
+		description: 'Moral Support may now Charge or recover MP.'
 	},
 	{
 		name: 'Adverse Resolve',
@@ -7574,7 +7574,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Passive',
 		type: 'NAVI',
 		unique: null,
-		description: 'Recover 5% SP after battle (party).'
+		description: 'Recover 5% MP after battle (party).'
 	},
 	{
 		name: 'Repel Dark',
@@ -8669,18 +8669,24 @@ const skillData: Readonly<AnySkillData[]> = [
 		description: 'Restores 20% HP to backup members after battle.'
 	},
 	{
-		name: 'Subrecover SP',
+		name: 'Subrecover MP',
+		aliases: [
+			'Subrecover SP'
+		],
 		affinity: 'Passive',
 		type: 'NAVI',
 		unique: null,
-		description: 'Restores 1% SP to backup members after battle.'
+		description: 'Restores 1% MP to backup members after battle.'
 	},
 	{
-		name: 'Subrecover SP EX',
+		name: 'Subrecover MP EX',
+		aliases: [
+			'Subrecover SP EX'
+		],
 		affinity: 'Passive',
 		type: 'NAVI',
 		unique: null,
-		description: 'Restores 3% SP to backup members after battle.'
+		description: 'Restores 3% MP to backup members after battle.'
 	},
 	{
 		name: 'Sukukaja',
@@ -9468,7 +9474,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Passive',
 		type: 'NAVI',
 		unique: null,
-		description: 'Recover 10% SP after battle (party).'
+		description: 'Recover 10% MP after battle (party).'
 	},
 	{
 		name: 'Vile Assault',
