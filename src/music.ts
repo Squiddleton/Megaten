@@ -26,7 +26,7 @@ export namespace BattleThemes {
 		Edifice = 'https://open.spotify.com/track/1JqsoHAAtIhaBYFa5wIUCX?si=d489f271c046421c',
 		/** Plays against Mitamas */
 		Mitama = 'https://open.spotify.com/track/40l360SI8nd3u1qUFqsbce?si=a7ea9bfb8f534875',
-		/** Plays against Fury Shiva */
+		/** Plays against Shiva */
 		Destruction = 'https://open.spotify.com/track/2CmTSrnpy8TBl3fdvcjY6P?si=d5bd93a3a0c84778',
 		/** Plays against many law-aligned bosses, such as Camael */
 		Seraph = 'https://open.spotify.com/track/3dCCF4hL3wFvYEkRrpJPXb?si=d3b218ffd826472c',
@@ -36,13 +36,13 @@ export namespace BattleThemes {
 		Tsukuyomi = 'https://open.spotify.com/track/2FNgjWRJmPUbzmKZku882o?si=ce8767599df84f5f',
 		/** Plays against Nahobino Abdiel */
 		Nuwa = 'https://open.spotify.com/track/7izJxuR9bvbvS2zBIXji1X?si=0fe95a22964840e8',
-		/** Plays against Matter Lucifer */
+		/** Plays against Lucifer */
 		Eon = 'https://open.spotify.com/track/4jDJy7X1KaQNibOQT6OS2b?si=179542e826f5471a',
 		/** Plays against DLC bosses, such as Cleopatra */
 		Addition = 'https://open.spotify.com/track/1Ebj9boU3nrfLp0wOyNJxj?si=ca12c70772044a2f',
 		/** Plays against Fiends */
 		Fiend = 'https://open.spotify.com/track/5I6kKTcEq79FWvKM8Fq88h?si=59483912833f4e3e',
-		/** Plays against King Demi-fiend */
+		/** Plays against Demi-fiend */
 		DemiFiend = 'https://open.spotify.com/track/3QnNIehRq1iR5PxiEQwmUB?si=a285cfd2792d4adb'
 	}
 	/** Battle themes from Persona 5, Persona 5 Royal, and Persona 5 Strikers */
@@ -81,9 +81,9 @@ export namespace BattleThemes {
 		RiversInTheDesertScramble = 'https://open.spotify.com/track/1uNgekMKe3a7JNqiFakbcb?si=15f84ca2183c4e68',
 		/** Plays against Akira the Hero and at Tokyo Tower */
 		CounterStrike = 'https://open.spotify.com/track/3WvvYdNIcRBh8pzvZ03khk?si=26851e67ab1a4c25',
-		/** Plays against False God Demiurge's first stage */
+		/** Plays against Demiurge's first stage */
 		DemiurgeIExodus = 'https://open.spotify.com/track/6tGRgonQSLvG1CCS8GBsIt?si=493217adfa9947e9',
-		/** Plays against False God Demiurge's second stage */
+		/** Plays against Demiurge's second stage */
 		DemiurgeIINegai = 'https://open.spotify.com/track/7cXMQJaeGFTVuRYjrx7nZj?si=11f35477730d447c'
 	}
 }
