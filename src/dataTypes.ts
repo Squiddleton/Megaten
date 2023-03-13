@@ -1,4 +1,4 @@
-import type { AilBoostCriteria, AilResistance, Ailment, AilmentName, AllyRange, AnyAffinity, AnyGame, AnyRange, Arcana, AttackCost, AttackPower, Barrier, BoostStack, Buff, Charge, DamagingAffinity, DemonAffinities, DemonAlignment, DemonResistances, DemonSkill, DemonStats, EndureCriteria, EnemyRange, EvasionBoostCriteria, HPMP, HPMPAil, If, LightDark, NumberOrPercent, OneOrAllAilments, OneOrAllDamagingAffinities, PersonaGame, PersonaRace, PostBattleStat, RecoveryAmount, RegenCriteria, Resistance, SMTAffinity, SMTCounterAffinity, SMTCounterPower, SMTRace, Series, SiphonCriteria, SkillType, Stage } from './types';
+import type { AilBoostCriteria, AilResistance, Ailment, AilmentName, AllyRange, AnyAffinity, AnyGame, AnyRange, Arcana, AttackCost, AttackFlag, AttackPower, Barrier, BoostStack, Buff, Charge, DamagingAffinity, Debuff, DemonAffinities, DemonAlignment, DemonResistances, DemonSkill, DemonStats, EndureCriteria, EnemyRange, EvasionBoostCriteria, HPMP, HPMPAil, If, LightDark, NumberOrPercent, OneOrAllAilments, OneOrAllDamagingAffinities, PersonaGame, PersonaRace, PostBattleStat, RecoveryAmount, RecoveryFlag, RegenCriteria, Resistance, SMTAffinity, SMTCounterAffinity, SMTCounterPower, SMTRace, Series, SingleOrDoubleBuff, SiphonCriteria, SkillType, Stage, SupportFlag } from './types';
 
 /** Data used for constructing a Demon instance */
 export interface DemonData<PersonaBased extends boolean = boolean> {
@@ -56,7 +56,7 @@ export interface AilmentSkillData extends SkillData {
 	ailments: AilmentName[];
 	chance: number;
 	cost: number;
-	flags?: string[];
+	flags?: Debuff[];
 	range: Exclude<EnemyRange, 'Random'>;
 }
 
@@ -66,7 +66,7 @@ export interface AttackSkillData extends SkillData {
 	accuracy: number;
 	ailments?: Ailment[];
 	cost: AttackCost;
-	flags?: string[];
+	flags?: AttackFlag[];
 	max?: number;
 	min?: number;
 	power: AttackPower;
@@ -200,9 +200,9 @@ export interface RecoverySkillData extends SkillData {
 	type: 'RECOVERY';
 	ailments?: AilmentName[] | 'All';
 	amount: RecoveryAmount | null;
-	buffs?: Buff[];
+	buffs?: SingleOrDoubleBuff[];
 	cost: number;
-	flags?: string[];
+	flags?: RecoveryFlag[];
 	range: Exclude<AllyRange, 'Self'>;
 }
 
@@ -255,10 +255,10 @@ export interface SupportSkillData extends SkillData {
 	affinity: 'Support';
 	type: 'SUPPORT';
 	auto: (Barrier | Buff | Charge)[];
-	buffs: Buff[];
+	buffs: SingleOrDoubleBuff[];
 	cost: number;
 	debuffs: Buff[];
-	flags?: string[];
+	flags?: SupportFlag[];
 	negate: boolean;
 	range: Exclude<AnyRange, 'Random'>;
 }
@@ -273,7 +273,7 @@ export interface SusceptibilitySkillData extends SkillData {
 export interface TauntSkillData extends SkillData {
 	affinity: 'Support';
 	type: 'TAUNT';
-	buff: Buff | null;
+	buff: SingleOrDoubleBuff | null;
 	cost: number;
 }
 

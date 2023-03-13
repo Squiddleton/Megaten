@@ -2,7 +2,7 @@ import { normalize } from '@squiddleton/util';
 import type { AilBoostSkillData, AilDefensiveSkillData, AilmentSkillData, AttackSkillData, AutoBuffSkillData, BarrierBreakSkillData, BarrierSkillData, BoostSkillData, BreakSkillData, ChargeSkillData, CritBoostSkillData, CritSkillData, DefensiveSkillData, EndureSkillData, EvasionSkillData, InstaKillBoostSkillData, MasterSkillData, MiscSkillData, NaviSkillData, PersonaCounterSkillData, PostBattleSkillData, RecoverySkillData, RegenSkillData, SMTCounterSkillData, SetSkillData, SiphonSkillData, SkillData, SpringSkillData, SummonSkillData, SupportSkillData, SusceptibilitySkillData, TauntSkillData, WallSkillData } from './dataTypes';
 import { MegatenError } from './error';
 import skillData from './skillData';
-import type { AilBoostCriteria, AilResistance, Ailment, AilmentName, AllyRange, AnyAffinity, AnyRange, AttackCost, AttackPower, Barrier, BoostStack, Buff, Charge, DamagingAffinity, EndureCriteria, EnemyRange, EvasionBoostCriteria, HPMP, HPMPAil, LightDark, NumberOrPercent, OneOrAllAilments, OneOrAllDamagingAffinities, PostBattleStat, RecoveryAmount, RegenCriteria, Resistance, SMTAffinity, SMTCounterAffinity, SMTCounterPower, Series, SiphonCriteria, SkillType } from './types';
+import type { AilBoostCriteria, AilResistance, Ailment, AilmentName, AllyRange, AnyAffinity, AnyRange, AttackCost, AttackFlag, AttackPower, Barrier, BoostStack, Buff, Charge, DamagingAffinity, Debuff, EndureCriteria, EnemyRange, EvasionBoostCriteria, HPMP, HPMPAil, LightDark, NumberOrPercent, OneOrAllAilments, OneOrAllDamagingAffinities, PostBattleStat, RecoveryAmount, RecoveryFlag, RegenCriteria, Resistance, SMTAffinity, SMTCounterAffinity, SMTCounterPower, Series, SingleOrDoubleBuff, SiphonCriteria, SkillType, SupportFlag } from './types';
 
 export abstract class Skill implements SkillData {
 	/** The skill's name */
@@ -115,7 +115,7 @@ export class AilmentSkill extends Skill implements AilmentSkillData {
 	/** The skill's MP cost */
 	cost: number;
 	/** The skill's special or notable features */
-	flags: string[];
+	flags: Debuff[];
 	/** The range that the skill targets */
 	range: Exclude<EnemyRange, 'Random'>;
 	constructor(data: AilmentSkillData) {
@@ -142,7 +142,7 @@ export class AttackSkill extends Skill implements AttackSkillData {
 	/** The skill cost's type and amount */
 	cost: AttackCost;
 	/** The skill's special or notable features */
-	flags: string[];
+	flags: AttackFlag[];
 	/** The maximum times that the skill can land */
 	max: number;
 	/** The minimum times that the skill can land, excluding misses */
@@ -190,7 +190,7 @@ export class AttackSkill extends Skill implements AttackSkillData {
 		if (ailments.length > 0) sentences.push(`Chance of inflicting ${ailments.map(ailment => ailment.name).join('/')}.`);
 
 		if (flags.length > 0) {
-			if (['+20% Crit Rate', '+30% Crit Rate'].some(flag => flags.includes(flag))) {
+			if (flags.includes('+20% Crit Rate') || flags.includes('+30% Crit Rate')) {
 				sentences.push('High chance of Critical.');
 			}
 			if (flags.includes('+200% Crit Rate') && accuracy !== 50) {
@@ -714,11 +714,11 @@ export class RecoverySkill extends Skill implements RecoverySkillData {
 	/** The displayed amount that the skill heals, or null if it does not heal */
 	amount: RecoveryAmount | null;
 	/** The buffs that the skill casts */
-	buffs: Buff[];
+	buffs: SingleOrDoubleBuff[];
 	/** The skill's MP cost */
 	cost: number;
 	/** Special flags for the skill */
-	flags: string[];
+	flags: RecoveryFlag[];
 	/** The range that the skill targets */
 	range: Exclude<AllyRange, 'Self'>;
 	constructor(data: RecoverySkillData) {
@@ -889,13 +889,13 @@ export class SupportSkill extends Skill implements SupportSkillData {
 	/** The barriers or charges automatically cast by having the skill */
 	auto: (Barrier | Buff | Charge)[];
 	/** The buffs cast by the skill */
-	buffs: Buff[];
+	buffs: SingleOrDoubleBuff[];
 	/** The skill's MP cost */
 	cost: number;
 	/** The debuffs cast by the skill */
 	debuffs: Buff[];
 	/** The skill's special or notable features */
-	flags: string[];
+	flags: SupportFlag[];
 	/** Whether the skill negates its buffs or debuffs from enemies or allies, respectively */
 	negate: boolean;
 	/** The range that the skill targets */
@@ -951,7 +951,7 @@ export class TauntSkill extends Skill implements TauntSkillData {
 	declare type: 'TAUNT';
 	description: string;
 	/** The buff cast by the skill, or null if none */
-	buff: Buff | null;
+	buff: SingleOrDoubleBuff | null;
 	/** The skill's MP cost */
 	cost: number;
 	constructor(data: TauntSkillData) {

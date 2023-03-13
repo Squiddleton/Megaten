@@ -40,6 +40,9 @@ export interface AttackCost {
 	stat: HPMP;
 }
 
+/** Flags for AttackSkill instances */
+export type AttackFlag = '+20% Crit Rate' | '+200% Crit Rate' | '+30% Crit Rate' | 'Accuracy/Evasion Down' | 'Afflicted Boost' | 'Asleep Boost' | 'Attack Down' | 'Attack Reduced' | 'Baton Boost' | 'Charmed Boost' | 'Confused Boost' | 'Crit Damage Boost' | 'Defense Down' | 'Defense Greatly Down' | 'Down Boost' | 'Drain HP' | 'Drain HP/MP' | 'Drain MP' | 'HP Dependent' | 'Instakill' | 'Minimize Defense' | 'Negate Buffs' | 'Pierce' | 'Poisoned Boost' | 'Static Damage' | 'Surround Boost' | 'Weakness Instakill' | 'Weather Boost';
+
 /** A base for skills with a specific amount of power */
 export interface BasePower {
 	/** The skill's base power */
@@ -64,7 +67,10 @@ export type Barrier = 'Painting' | 'Kannabi Veil' | 'Tetrakarn' | 'Makarakarn' |
 export type BoostStack = '+' | 'x';
 
 /** Buffs cast by a Skill instance */
-export type Buff = 'Attack' | 'Defense' | 'Accuracy/Evasion' | 'Double Defense' | 'Double Accuracy/Evasion';
+export type Buff = 'Attack' | 'Defense' | 'Accuracy/Evasion';
+
+/** A one- or two-stage buff */
+export type SingleOrDoubleBuff = Buff | `Double ${Buff}`;
 
 /** Charges cast by a Skill instance */
 export type Charge = 'Recovery' | 'Charge' | 'Concentrate' | 'Critical' | 'Pierce';
@@ -76,6 +82,9 @@ export type AttackDisplay = CounterDisplay | 'Minuscule' | 'Heavy' | 'Severe' | 
 
 /** Types of damage dealt */
 export type DamageType = 'Physical' | 'Magic';
+
+/** Debuffs cast by AilmentSkill flags */
+export type Debuff = `${Buff} Down` | `${Buff} Greatly Down`;
 
 /** A demon's skill potential and inherit affinity */
 export interface DemonAffinities<PersonaBased extends boolean = boolean> {
@@ -185,6 +194,9 @@ export type AnyRace = PersonaRace | SMTRace;
 /** The displayed amount that RecoverySkill instances can recover  */
 export type RecoveryAmount = 'Slight' | 'Moderate' | 'Half' | 'Full' | '130%';
 
+/** Flags for RecoverySkill instances */
+export type RecoveryFlag = 'Negate' | 'Revert Debuffs' | 'Revive' | 'Summon';
+
 /** Criteria for RegenSkill instances taking effect */
 export type RegenCriteria = 'Ambush' | 'Baton Pass' | 'Turn Start';
 
@@ -202,3 +214,6 @@ export type SkillType = 'AILBOOST' | 'AILDEFENSIVE' | 'AILMENT' | 'ATTACK' | 'AU
 
 /** Stages for a Persona and its evolutions */
 export type Stage = 1 | 2 | 3;
+
+/** Flags for SupportSkill instances */
+export type SupportFlag = 'Cure Non-Special Ailments' | 'Surrounded Only';
