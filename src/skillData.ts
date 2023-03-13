@@ -4316,9 +4316,7 @@ const skillData: Readonly<AnySkillData[]> = [
 			stat: 'MP',
 			amount: 90
 		},
-		flags: [
-			'+40% Crit Rate'
-		],
+		flags: [],
 		power: {
 			amount: 260,
 			display: 'Severe',
