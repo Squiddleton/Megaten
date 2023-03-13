@@ -7452,9 +7452,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			stat: 'MP',
 			amount: 35
 		},
-		flags: [
-			'Half Accuracy'
-		],
 		max: 5,
 		min: 2,
 		power: {
