@@ -12027,7 +12027,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 		game: 'p5',
 		alignment: null,
 		lore: 'A Persona of another story. One of the ancient gods who existed before Japan was formed. He created the Oyashima from chaos, then gave birth to countless children and laid the foundation of soil and nature.',
-		user: 'P4 Protgaonist',
+		user: 'P4 Protagonist',
 		stage: 1,
 		evoSkillName: null
 	},
