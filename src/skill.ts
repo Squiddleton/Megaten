@@ -244,14 +244,14 @@ export class AttackSkill extends Skill implements AttackSkillData {
 			if (flags.includes('Minimize Defense')) {
 				sentences.push('Lowers target\'s Defense to the minimum for 3 turns.');
 			}
+			if (flags.includes('Negate Buffs')) {
+				sentences.push('Negates target\'s status buff effects.');
+			}
 			if (flags.includes('Pierce') && ailments.length === 0 && !flags.includes('+200% Crit Rate')) {
 				sentences.push('Ignores affinity resistance and pierces through.');
 			}
 			if (flags.includes('Poisoned Boost')) {
 				sentences.push('Greater effect if target is Poisoned.');
-			}
-			if (flags.includes('Negate Buffs')) {
-				sentences.push('Negates target\'s status buff effects.');
 			}
 			if (flags.includes('Surround Boost')) {
 				sentences.push('Powers up when surrounded.');
