@@ -45,6 +45,29 @@ export namespace BattleThemes {
 		/** Plays against Demi-fiend */
 		DemiFiend = 'https://open.spotify.com/track/3QnNIehRq1iR5PxiEQwmUB?si=a285cfd2792d4adb'
 	}
+	/** Battle themes from Persona 4 and Persona 4 Golden */
+	export enum Persona4 {
+		/** Plays during the first battle and against sub-bosses */
+		ReachOutToTheTruthFirstBattle = 'https://open.spotify.com/track/03fiYQmDHsPTwY2r2dWduo?si=ebf485a0f1164f91',
+		/** Plays during normal battles */
+		ReachOutToTheTruth = 'https://open.spotify.com/track/7JR73H8enwnGiYFS2I6eWW?si=b7dae308f61d4b6d',
+		/** Plays against most bosses */
+		IllFaceMyself = 'https://open.spotify.com/track/3bIptcKSHukdhPnECzImAw?si=78dd9cead9bb4bf5',
+		/** Plays against Kunino-sagiri and Shadow Adachi */
+		ANewWorldFool = 'https://open.spotify.com/track/1V4YlI5VHqEhPLfh9Bhmvo?si=05145a9bfe2d44de',
+		/** Plays against Ameno-sagiri */
+		TheAlmighty = 'https://open.spotify.com/track/2SzaLThldhzZgZBOLJoYuK?si=ea04ccd639994dca',
+		/** Plays against Izanami */
+		Fog = 'https://open.spotify.com/track/6NWivSlW5f6XSHdPvz3r1p?si=bbd7b22571bb48c5',
+		/** Plays against Izanami-no-Okami */
+		TheGenesis = 'https://open.spotify.com/track/3jchSDCKaAXdxD8FitPEKY?si=a0421b85c2d54d17',
+		/** Plays during normal battles in Golden without a Player Advantage */
+		TimeToMakeHistory = 'https://open.spotify.com/track/3fHtkMIsiv9kC0Tv2iSS3h?si=9cc77858bd1b46c4',
+		/** Plays against Shadow Mitsuo */
+		RevelationsMitsuo = 'https://open.spotify.com/track/4cR1G53EAu6wXSSQwDGcRy?si=8c053b1f9bc84353',
+		/** Plays against Marie and Kusumi-no-Okami */
+		IllFaceMyselfReincarnation = 'https://open.spotify.com/track/1PraA0CrjHLo16lwUw6NSq?si=647450860d034953'
+	}
 	/** Battle themes from Persona 5, Persona 5 Royal, and Persona 5 Strikers */
 	export enum Persona5 {
 		/** Plays during awakening battles */
