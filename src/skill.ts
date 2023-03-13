@@ -238,7 +238,8 @@ export class AttackSkill extends Skill implements AttackSkillData {
 				this.description += 'Lowers target\'s Defense to the minimum for 3 turns.';
 			}
 			if (flags.includes('Pierce')) {
-				this.description += 'Ignores affinity resistance and pierces through.';
+				if (flags.includes('+200% Crit Rate')) this.description += 'Ignores resistance, pierces, and always Critical.';
+				else this.description += 'Ignores affinity resistance and pierces through.';
 			}
 			if (flags.includes('Poisoned Boost')) {
 				this.description += 'Greater effect if target is Poisoned.';
