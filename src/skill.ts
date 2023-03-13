@@ -157,7 +157,12 @@ export class AttackSkill extends Skill implements AttackSkillData {
 		const { accuracy, affinity, ailments = [], flags = [], max = 1, min = 1, power, range, series } = data;
 		super(data);
 
-		const displayAffinity = `${power.display} ${affinity}`;
+		const times = max === 1
+			? ''
+			: max === min
+				? max.toString()
+				: `${min}~${max}`;
+		const displayAffinity = `${times !== '' ? `${times} ${power.display.toLowerCase()}` : power.display} ${(flags.includes('Pierce') && ailments.length > 0) ? 'Piercing ' : ''}${(power.type === 'Physical' && !['Phys', 'Gun'].includes(affinity)) ? 'Strength-based ' : ''}${affinity}`;
 		const displayRange = {
 			One: '1 foe',
 			All: 'all foes',
@@ -177,86 +182,92 @@ export class AttackSkill extends Skill implements AttackSkillData {
 				: `${displayAffinity} MP drain attack to ${displayRange}.`;
 		}
 		else {
-			this.description = `${displayAffinity} damage to ${displayRange}${max === 1 ? '' : ` ${max === min ? max : `${min}-${max}`} times`}.`;
+			this.description = `${displayAffinity} attack${max > 1 ? 's' : ''} to ${displayRange}.`;
 		}
 
-		if (ailments.length > 0) {
-			this.description += ` Chance of inflicting ${ailments.map(ailment => ailment.name).join('/')}.`;
-		}
+		const sentences: string[] = [];
+
+		if (ailments.length > 0) sentences.push(`Chance of inflicting ${ailments.map(ailment => ailment.name).join('/')}.`);
+
 		if (flags.length > 0) {
-			this.description += ' ';
-
-			if (accuracy >= 95 && series === 'persona') {
-				this.description += 'High Accuracy.';
+			if (['+20% Crit Rate', '+30% Crit Rate'].some(flag => flags.includes(flag))) {
+				sentences.push('High chance of Critical.');
 			}
-			else if (accuracy === 50) {
-				this.description += 'Low Accuracy.';
+			if (flags.includes('+200% Crit Rate') && accuracy !== 50) {
+				if (flags.includes('Pierce')) sentences.push('Ignores resistance, pierces, and always Critical.');
+				else if (accuracy === 50) sentences.push('Low accuracy, but hits are always Critical.');
+				else sentences.push('Always lands Critical hits.');
 			}
 			if (flags.includes('Accuracy/Evasion Down')) {
-				this.description += 'Lowers target\'s Accuracy/Evasion by 1 rank for 3 turns.';
+				sentences.push('Lowers target\'s Accuracy/Evasion by 1 rank for 3 turns.');
 			}
 			if (flags.includes('Afflicted Boost')) {
-				this.description += 'Greater effect if target has an ailment.';
+				sentences.push('Greater effect if target has an ailment.');
 			}
 			if (flags.includes('Asleep Boost')) {
-				this.description += 'Greater effect when target is asleep.';
+				sentences.push('Greater effect when target is asleep.');
 			}
 			if (flags.includes('Attack Down')) {
-				this.description += 'Lowers target\'s Attack by 1 rank for 3 turns.';
+				if (flags.includes('Defense Down')) sentences.push('Lowers target\'s Attack/Defense by 1 rank for 3 turns.');
+				else sentences.push('Lowers target\'s Attack by 1 rank for 3 turns.');
 			}
 			if (flags.includes('Attack Reduced')) {
-				this.description += 'Decreases Attack after use.';
+				sentences.push('Decreases Attack after use.');
 			}
 			if (flags.includes('Baton Boost')) {
-				this.description += 'Powers up after a Baton Pass.';
+				sentences.push('Powers up after a Baton Pass.');
 			}
 			if (flags.includes('Charmed Boost')) {
-				this.description += 'Greater effect if target is Charmed.';
+				sentences.push('Greater effect if target is Charmed.');
 			}
 			if (flags.includes('Confused Boost')) {
-				this.description += 'Greater effect when target is Confused.';
+				sentences.push('Greater effect when target is Confused.');
 			}
 			if (flags.includes('Crit Damage Boost')) {
-				this.description += 'Greater effect if a Critical hit.';
+				sentences.push('Greater effect when landing a Critical.');
 			}
 			if (flags.includes('Defense Down')) {
-				this.description += 'Lowers target\'s Defense by 1 rank for 3 turns.';
+				if (!flags.includes('Attack Down')) sentences.push('Lowers target\'s Defense by 1 rank for 3 turns.');
 			}
 			if (flags.includes('Defense Greatly Down')) {
-				this.description += 'Lowers Defense by 2 ranks for 3 turns.';
+				sentences.push('Lowers Defense by 2 ranks for 3 turns.');
 			}
 			if (flags.includes('Down Boost')) {
-				this.description += 'Highly effective if foe is Downed.';
+				sentences.push('Highly effective if foe is Downed.');
 			}
 			if (flags.includes('HP Dependent')) {
-				this.description += 'The more remaining HP you have, the stronger the attack.';
+				sentences.push('The more remaining HP you have, the stronger the attack.');
 			}
 			if (flags.includes('Instakill')) {
-				this.description += 'Medium chance of insta-kill.';
+				sentences.push('Chance of instakill.');
 			}
 			if (flags.includes('Minimize Defense')) {
-				this.description += 'Lowers target\'s Defense to the minimum for 3 turns.';
+				sentences.push('Lowers target\'s Defense to the minimum for 3 turns.');
 			}
-			if (flags.includes('Pierce')) {
-				if (flags.includes('+200% Crit Rate')) this.description += 'Ignores resistance, pierces, and always Critical.';
-				else this.description += 'Ignores affinity resistance and pierces through.';
+			if (flags.includes('Pierce') && ailments.length === 0 && !flags.includes('+200% Crit Rate')) {
+				sentences.push('Ignores affinity resistance and pierces through.');
 			}
 			if (flags.includes('Poisoned Boost')) {
-				this.description += 'Greater effect if target is Poisoned.';
+				sentences.push('Greater effect if target is Poisoned.');
 			}
 			if (flags.includes('Negate Buffs')) {
-				this.description += 'Negates target\'s status buff effects';
+				sentences.push('Negates target\'s status buff effects.');
 			}
 			if (flags.includes('Surround Boost')) {
-				this.description += 'Powers up when surrounded.';
+				sentences.push('Powers up when surrounded.');
 			}
 			if (flags.includes('Weakness Instakill')) {
-				this.description += 'Chance of instakill when striking weakness.';
+				sentences.push('Chance of instakill when striking weakness.');
 			}
 			if (flags.includes('Weather Boost')) {
-				this.description += 'Increased Critical rate in rainy or snowy weather.';
+				sentences.push('Increased Critical rate in rainy or snowy weather.');
 			}
 		}
+
+		if (accuracy >= 95 && affinity === 'Phys' && series === 'persona') sentences.push('High accuracy.');
+		else if (accuracy === 50 && !flags.includes('+200% Crit Rate')) sentences.push('Low accuracy.');
+
+		if (sentences.length > 0) this.description += ` ${sentences.join(' ')}`;
 
 		this.accuracy = accuracy;
 		this.ailments = ailments;
