@@ -900,7 +900,7 @@ const skillData: Readonly<AnySkillData[]> = [
 			amount: 12
 		},
 		max: 3,
-		min: 1,
+		min: 2,
 		power: {
 			amount: 65,
 			display: 'Weak',
