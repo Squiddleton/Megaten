@@ -12968,7 +12968,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 		},
 		game: 'p5',
 		alignment: null,
-		lore: 'A Persona of another story. A divine being born from a glowing bamboo shoot. Though many proposed to her, none could complete her strict tasks. She eventually returned to her home the moon.',
+		lore: 'A Persona of another story. A divine being born from a glowing bamboo shoot. Though many proposed to her, none could complete her strict tasks. She eventually returned to her home, the moon.',
 		user: 'Marie',
 		stage: 1,
 		evoSkillName: null
@@ -13036,7 +13036,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 		},
 		game: 'p5',
 		alignment: null,
-		lore: 'A Persona turned picaro after becoming the Trickster\'s mask. She appeared from a glowing bamboo shoot. She received many proposals, bug rejected them and returned to the moon.'
+		lore: 'A Persona turned picaro after becoming the Trickster\'s mask. She appeared from a glowing bamboo shoot. She received many proposals, but rejected them and returned to the moon.'
 	},
 	{
 		name: 'Kaiwan',
@@ -19098,7 +19098,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Neutral',
 			ethical: 'Chaos'
 		},
-		lore: 'Half-snake, half-human, they are divine beings in Hindu lore.\nworshipped as bringers of fertility, they live in the bottoms of lakes and seas, and enjoy singing and dancing outside of battle.'
+		lore: 'Half-snake, half-human, they are divine beings in Hindu lore.\nWorshipped as bringers of fertility, they live in the bottoms of lakes and seas, and enjoy singing and dancing outside of battle.'
 	},
 	{
 		name: 'Narasimha',
