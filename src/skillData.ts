@@ -4467,7 +4467,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		unique: null,
-		accuracy: 95,
+		accuracy: 90,
 		cost: {
 			stat: 'HP',
 			amount: 25
@@ -9477,7 +9477,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Vile Assault',
 		affinity: 'Phys',
 		type: 'ATTACK',
-		accuracy: 95,
+		accuracy: 90,
 		cost: {
 			stat: 'HP',
 			amount: 18
