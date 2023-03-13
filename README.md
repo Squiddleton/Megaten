@@ -251,7 +251,7 @@ catch (e) {
 
 ### BattleThemes
 
-The `BattleThemes` namespace includes `ShinMegamiTensei5` and `Persona5` enums, and each enum contains Spotify links to the battle themes from its respective game.
+The `BattleThemes` namespace includes enums containing Spotify links to the battle themes from the enum's respective game.
 
 ```javascript
 BattleThemes.ShinMegamiTensei5.Destruction; // 'https://open.spotify.com/track/2CmTSrnpy8TBl3fdvcjY6P?si=d5bd93a3a0c84778'
