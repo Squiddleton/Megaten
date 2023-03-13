@@ -16,6 +16,8 @@ export interface Ailment {
 export type AilmentName = 'Burn' | 'Charm' | 'Confuse' | 'Despair' | 'Enervate' | 'Exhaust' | 'Fear' | 'Freeze' | 'Hunger' | 'Mirage' | 'Poison' | 'Rage' | 'Seal' | 'Shock' | 'Sleep';
 /** An ailment's name or all ailments */
 export type OneOrAllAilments = AilmentName | 'All';
+/** Ailments that an AilDefensiveSkill instance protects against */
+export type AilDefensiveAilment = OneOrAllAilments | 'Confuse/Fear/Rage/Despair';
 
 /** Resistances to ailments */
 export type AilResistance = 'Resist' | 'Null';
@@ -28,6 +30,20 @@ export type AllyRange = 'Self' | 'Ally' | 'Party';
 export type EnemyRange = 'One' | 'All' | 'Random';
 /** Ranges for skills */
 export type AnyRange = AllyRange | EnemyRange;
+/** Range for AilmentSkill instances */
+export type AilmentRange = Exclude<EnemyRange, 'Random'>;
+/** Range for AutoBuffSkill instances */
+export type AutoBuffRange = Exclude<AllyRange, 'Ally'>;
+/** Range for BarrierSkill instances */
+export type BarrierRange = Exclude<AllyRange, 'Self'>;
+/** Range for CritSkill instances */
+export type CritRange = Exclude<AllyRange, 'Self'> | 'All';
+/** Range for RecoverySkill instances */
+export type RecoveryRange = Exclude<AllyRange, 'Self'>;
+/** Range for SupportSkill instances */
+export type SupportRange = Exclude<AnyRange, 'Random'>;
+/** Range for SusceptibilitySkill instances */
+export type SusceptibilityRange = 'Foe' | 'All';
 
 /** Demons' Arcana */
 export type Arcana = 'Fool' | 'Magician' | 'Councillor' | 'Priestess' | 'Empress' | 'Emperor' | 'Hierophant' | 'Apostle' | 'Lovers' | 'Chariot' | 'Justice' | 'Hermit' | 'Fortune' | 'Strength' | 'Hunger' | 'Hanged' | 'Death' | 'Temperance' | 'Devil' | 'Tower' | 'Star' | 'Moon' | 'Sun' | 'Judgement' | 'Aeon' | 'World' | 'Faith' | 'Hope';
@@ -79,6 +95,9 @@ export type Charge = 'Recovery' | 'Charge' | 'Concentrate' | 'Critical' | 'Pierc
 export type CounterDisplay = 'Weak' | 'Medium';
 /** Displayed damage values for AttackSkill instances */
 export type AttackDisplay = CounterDisplay | 'Minuscule' | 'Heavy' | 'Severe' | 'Colossal';
+
+/** Criteria for CritBoostSkill instances taking effect */
+export type CritBoostCriteria = 'Ambush' | 'Surround';
 
 /** Types of damage dealt */
 export type DamageType = 'Physical' | 'Magic';
@@ -140,10 +159,12 @@ export type EvasionBoostCriteria = 'Surrounded' | 'Rain/Snow';
 
 /** The HP or MP stats */
 export type HPMP = 'HP' | 'MP';
-/** The stat which a RegenSkill instance regenerates */
+/** The stat that a RegenSkill instance regenerates */
 export type HPMPAil = HPMP | 'HPMP' | 'AIL';
-/** The stat which a PostBattleSkill instance increases */
-export type PostBattleStat = HPMP | 'HPMP' | 'EXP' | 'Money';
+/** The cost stat that a MasterSkill instance decreases */
+export type MasterStat = Exclude<HPMPAil, 'AIL'>;
+/** The stat that a PostBattleSkill instance increases */
+export type PostBattleStat = MasterStat | 'EXP' | 'Money';
 
 /** Demons' moral alignments */
 export type MoralAlignment = 'Light' | 'Neutral' | 'Dark' | 'Unknown';
@@ -172,10 +193,22 @@ export type DamagingAffinity = Exclude<AnyAffinity, 'Recovery' | 'Ailment' | 'Su
 export type OneOrAllDamagingAffinities = DamagingAffinity | 'All';
 /** Affinities that can be a demon's inherit affinity */
 export type InheritAffinity = Exclude<AnyAffinity, 'Gun' | 'Passive' | 'Misc' | SMTAffinity>;
-/** Affinities used by SMTCounterSkill instances */
-export type SMTCounterAffinity = 'Phys' | 'Dark';
 /** The Light and Dark affinities */
 export type LightDark = 'Light' | 'Dark';
+/** Affinities used by BoostSkill instances */
+export type BoostAffinity = OneOrAllDamagingAffinities | 'Magic' | 'Recovery';
+/** Affinities used by BreakSkill instances */
+export type BreakAffinity = Exclude<DamagingAffinity, SMTAffinity | 'Almighty'>;
+/** Affinities used by DefensiveSkill instances */
+export type DefensiveAffinity = Exclude<DamagingAffinity, 'Almighty'> | 'Light/Dark';
+/** Affinities used by EvasionSkill instances */
+export type EvasionAffinity = OneOrAllDamagingAffinities | 'Crit/Magic' | 'Magic';
+/** Affinities used by SetSkill instances */
+export type SetAffinity = LightDark | 'Almighty';
+/** Affinities used by SMTCounterSkill instances */
+export type SMTCounterAffinity = 'Phys' | 'Dark';
+/** Affinities used by WallSkill instances */
+export type WallAffinity = Exclude<DamagingAffinity, SMTAffinity | 'Phys' | 'Gun' | LightDark | 'Almighty'>;
 
 /** Mainline Persona games */
 export type PersonaGame = 'p3' | 'p4' | 'p5';
@@ -214,6 +247,9 @@ export type SkillType = 'AILBOOST' | 'AILDEFENSIVE' | 'AILMENT' | 'ATTACK' | 'AU
 
 /** Stages for a Persona and its evolutions */
 export type Stage = 1 | 2 | 3;
+
+/** Effects automatically applied by having a SupportSkill instance */
+export type SupportAutoEffect = Barrier | Buff | Charge;
 
 /** Flags for SupportSkill instances */
 export type SupportFlag = 'Cure Non-Special Ailments' | 'Surrounded Only';

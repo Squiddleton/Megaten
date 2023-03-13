@@ -2,7 +2,7 @@ import { normalize } from '@squiddleton/util';
 import type { AilBoostSkillData, AilDefensiveSkillData, AilmentSkillData, AttackSkillData, AutoBuffSkillData, BarrierBreakSkillData, BarrierSkillData, BoostSkillData, BreakSkillData, ChargeSkillData, CritBoostSkillData, CritSkillData, DefensiveSkillData, EndureSkillData, EvasionSkillData, InstaKillBoostSkillData, MasterSkillData, MiscSkillData, NaviSkillData, PersonaCounterSkillData, PostBattleSkillData, RecoverySkillData, RegenSkillData, SMTCounterSkillData, SetSkillData, SiphonSkillData, SkillData, SpringSkillData, SummonSkillData, SupportSkillData, SusceptibilitySkillData, TauntSkillData, WallSkillData } from './dataTypes';
 import { MegatenError } from './error';
 import skillData from './skillData';
-import type { AilBoostCriteria, AilResistance, Ailment, AilmentName, AllyRange, AnyAffinity, AnyRange, AttackCost, AttackFlag, AttackPower, Barrier, BoostStack, Buff, Charge, DamagingAffinity, Debuff, EndureCriteria, EnemyRange, EvasionBoostCriteria, HPMP, HPMPAil, LightDark, NumberOrPercent, OneOrAllAilments, OneOrAllDamagingAffinities, PostBattleStat, RecoveryAmount, RecoveryFlag, RegenCriteria, Resistance, SMTAffinity, SMTCounterAffinity, SMTCounterPower, Series, SingleOrDoubleBuff, SiphonCriteria, SkillType, SupportFlag } from './types';
+import type { AilBoostCriteria, AilDefensiveAilment, AilResistance, Ailment, AilmentName, AilmentRange, AllyRange, AnyAffinity, AttackCost, AttackFlag, AttackPower, AutoBuffRange, Barrier, BarrierRange, BoostAffinity, BoostStack, BreakAffinity, Buff, Charge, CritBoostCriteria, CritRange, DamagingAffinity, Debuff, DefensiveAffinity, EndureCriteria, EnemyRange, EvasionAffinity, EvasionBoostCriteria, HPMP, HPMPAil, LightDark, MasterStat, NumberOrPercent, OneOrAllAilments, PostBattleStat, RecoveryAmount, RecoveryFlag, RecoveryRange, RegenCriteria, Resistance, SMTCounterAffinity, SMTCounterPower, Series, SetAffinity, SingleOrDoubleBuff, SiphonCriteria, SkillType, SupportAutoEffect, SupportFlag, SupportRange, SusceptibilityRange, WallAffinity } from './types';
 
 export abstract class Skill implements SkillData {
 	/** The skill's name */
@@ -89,7 +89,7 @@ export class AilDefensiveSkill extends Skill implements AilDefensiveSkillData {
 	declare type: 'AILDEFENSIVE';
 	description: string;
 	/** The ailment resisted by this skill */
-	ailment: OneOrAllAilments | 'Confuse/Fear/Rage/Despair';
+	ailment: AilDefensiveAilment;
 	/** The level of resistance to the ailment */
 	resistance: AilResistance;
 	constructor(data: AilDefensiveSkillData) {
@@ -117,7 +117,7 @@ export class AilmentSkill extends Skill implements AilmentSkillData {
 	/** The skill's special or notable features */
 	flags: Debuff[];
 	/** The range that the skill targets */
-	range: Exclude<EnemyRange, 'Random'>;
+	range: AilmentRange;
 	constructor(data: AilmentSkillData) {
 		const { ailments, flags = [], range } = data;
 		super(data);
@@ -287,9 +287,9 @@ export class AutoBuffSkill extends Skill implements AutoBuffSkillData {
 	declare type: 'AUTOBUFF';
 	description: string;
 	/** The buff automatically applied by the skill */
-	buff: Exclude<Buff, `Double ${Buff}`>;
+	buff: Buff;
 	/** The range that the skill targets */
-	range: Exclude<AllyRange, 'Ally'>;
+	range: AutoBuffRange;
 	constructor(data: AutoBuffSkillData) {
 		const { buff, range } = data;
 		super(data);
@@ -316,7 +316,7 @@ export class BarrierSkill extends Skill implements BarrierSkillData {
 	/** The skill's MP cost */
 	cost: number;
 	/** The range that the skill targets */
-	range: Exclude<AllyRange, 'Self'>;
+	range: BarrierRange;
 	constructor(data: BarrierSkillData) {
 		super(data);
 
@@ -385,7 +385,7 @@ export class BoostSkill extends Skill implements BoostSkillData {
 	/** The amount that the element's damage is boosted by */
 	amount: number;
 	/** The affinity of the skills that the skill boosts */
-	element: OneOrAllDamagingAffinities | 'Magic' | 'Recovery';
+	element: BoostAffinity;
 	/** Whether the skill stacks additively or multiplicatively */
 	stacks: BoostStack;
 	constructor(data: BoostSkillData) {
@@ -410,7 +410,7 @@ export class BreakSkill extends Skill implements BreakSkillData {
 	/** The skill's MP cost */
 	cost: number;
 	/** The affinity whose resistance is negated by the skill */
-	element: Exclude<DamagingAffinity, SMTAffinity | 'Almighty'>;
+	element: BreakAffinity;
 	constructor(data: BreakSkillData) {
 		const { element } = data;
 		super(data);
@@ -467,7 +467,7 @@ export class CritSkill extends Skill implements CritSkillData {
 	/** The skill's MP cost */
 	cost: number;
 	/** The range that the skill targets */
-	range: Exclude<AllyRange, 'Self'> | 'All';
+	range: CritRange;
 	constructor(data: CritSkillData) {
 		const { range } = data;
 		super(data);
@@ -485,7 +485,7 @@ export class CritBoostSkill extends Skill implements CritBoostSkillData {
 	/** The additional chance of landing a critical hit */
 	amount: number;
 	/** The conditions that the skill triggers under, or null if always in effect */
-	criteria: 'Ambush' | 'Surround' | null;
+	criteria: CritBoostCriteria | null;
 	constructor(data: CritBoostSkillData) {
 		const { criteria } = data;
 		super(data);
@@ -513,7 +513,7 @@ export class DefensiveSkill extends Skill implements DefensiveSkillData {
 	declare type: 'DEFENSIVE';
 	description: string;
 	/** The affinity that the skill increases resistance from */
-	element: Exclude<DamagingAffinity, 'Almighty'> | 'Light/Dark';
+	element: DefensiveAffinity;
 	/** The skill user's new resistance to the element */
 	newResistance: Resistance;
 	constructor(data: DefensiveSkillData) {
@@ -563,7 +563,7 @@ export class EvasionSkill extends Skill implements EvasionSkillData {
 	/** The conditions that the skill triggers under, or null if always in effect */
 	criteria: EvasionBoostCriteria | null;
 	/** The affinity that the skill increases evasion from */
-	element: OneOrAllDamagingAffinities | 'Crit/Magic' | 'Magic';
+	element: EvasionAffinity;
 	constructor(data: EvasionSkillData) {
 		const { amount, criteria, element } = data;
 		super(data);
@@ -603,7 +603,7 @@ export class MasterSkill extends Skill implements MasterSkillData {
 	/** The amount of the stat that skills' costs are reduced by */
 	amount: number;
 	/** The stat cost that the skill lowers */
-	stat: HPMP | 'HPMP';
+	stat: MasterStat;
 	constructor(data: MasterSkillData) {
 		const { amount, stat } = data;
 		super(data);
@@ -720,7 +720,7 @@ export class RecoverySkill extends Skill implements RecoverySkillData {
 	/** Special flags for the skill */
 	flags: RecoveryFlag[];
 	/** The range that the skill targets */
-	range: Exclude<AllyRange, 'Self'>;
+	range: RecoveryRange;
 	constructor(data: RecoverySkillData) {
 		const { ailments = [], amount, buffs = [], flags = [], range } = data;
 		super(data);
@@ -786,7 +786,7 @@ export class RegenSkill extends Skill implements RegenSkillData {
 
 /** A skill that sets an enemy's HP to a specific amount */
 export class SetSkill extends Skill implements SetSkillData {
-	declare affinity: LightDark | 'Almighty';
+	declare affinity: SetAffinity;
 	declare type: 'SET';
 	description: string;
 	/** The amount of the enemy's current HP that it will be set to */
@@ -887,7 +887,7 @@ export class SupportSkill extends Skill implements SupportSkillData {
 	declare type: 'SUPPORT';
 	description: string;
 	/** The barriers or charges automatically cast by having the skill */
-	auto: (Barrier | Buff | Charge)[];
+	auto: SupportAutoEffect[];
 	/** The buffs cast by the skill */
 	buffs: SingleOrDoubleBuff[];
 	/** The skill's MP cost */
@@ -899,12 +899,12 @@ export class SupportSkill extends Skill implements SupportSkillData {
 	/** Whether the skill negates its buffs or debuffs from enemies or allies, respectively */
 	negate: boolean;
 	/** The range that the skill targets */
-	range: Exclude<AnyRange, 'Random'>;
+	range: SupportRange;
 	constructor(data: SupportSkillData) {
 		const { buffs, debuffs, flags = [], negate, range } = data;
 		super(data);
 
-		const isAllyRangeFunc = (allyRange: Exclude<AnyRange, 'Random'>): allyRange is AllyRange => ['Ally', 'Party'].includes(range);
+		const isAllyRangeFunc = (allyRange: SupportRange): allyRange is AllyRange => ['Ally', 'Party'].includes(range);
 		const isAllyRange = isAllyRangeFunc(range);
 		if (flags.includes('Cure Non-Special Ailments')) {
 			this.description = 'Cures all non-special ailments for all allies.';
@@ -935,7 +935,7 @@ export class SusceptibilitySkill extends Skill implements SusceptibilitySkillDat
 	/** The skill's MP cost */
 	cost: number;
 	/** The range that the skill targets */
-	range: 'Foe' | 'All';
+	range: SusceptibilityRange;
 	constructor(data: SusceptibilitySkillData) {
 		const { range } = data;
 		super(data);
@@ -975,7 +975,7 @@ export class WallSkill extends Skill implements WallSkillData {
 	/** The skill's MP cost */
 	cost: number;
 	/** The affinity that the skill temporarily increases resistance from */
-	element: Exclude<DamagingAffinity, SMTAffinity | 'Almighty'>;
+	element: WallAffinity;
 	constructor(data: WallSkillData) {
 		const { element } = data;
 		super(data);
