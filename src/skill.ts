@@ -121,7 +121,7 @@ export class AilmentSkill extends Skill implements AilmentSkillData {
 	constructor(data: AilmentSkillData) {
 		const { ailments, flags = [], range } = data;
 		super(data);
-		this.description = `Chance of inflicting ${ailments.join(' and ')} to ${range === 'One' ? '1 foe' : 'all foes'}${flags.length === 0 ? '' : `and lowers ${flags.map(flag => flag.split(' ')[0]).join('')} by ${flags.every(flag => flag.includes('Greatly')) ? '2 ranks' : '1 rank'} for 3 turns.`}`;
+		this.description = `Chance of inflicting ${ailments.join(' and ')} to ${range === 'One' ? '1 foe' : 'all foes'}${flags.length === 0 ? '' : `and lowers ${flags.map(flag => flag.split(' ')[0]).join('')} by ${flags.every(flag => flag.includes('Greatly')) ? '2 ranks' : '1 rank'} for 3 turns`}.`;
 		this.ailments = ailments;
 		this.chance = data.chance;
 		this.cost = data.cost;
