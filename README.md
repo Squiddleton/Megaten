@@ -53,8 +53,8 @@ Most demons follow an identical template. However, the Persona subclass (differe
 ```javascript
 Demon {
   name: 'Jack Frost',
-  devName: 'jackfrost',
   aliases: [],
+  devName: 'jackfrost',
   affinities: {
     skillPotential: {
       Phys: 0,
@@ -132,8 +132,8 @@ Demon {
 
 Persona {
   name: 'Mercurius',
-  devName: 'mercurius',
   aliases: [],
+  devName: 'mercurius',
   affinities: {
     skillPotential: null,
     inherit: null
@@ -224,8 +224,8 @@ AttackSkill {
   },
   range: 'One',
   series: 'smt',
-  description: 'Heavy Elec damage to 1 foe.',
-  toString(): 'Ziodyne: Heavy Elec damage to 1 foe.'
+  description: 'Heavy Elec attack to 1 foe.',
+  toString(): 'Ziodyne: Heavy Elec attack to 1 foe.'
 }
 ```
 
