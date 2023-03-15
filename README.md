@@ -26,7 +26,7 @@ npm install megaten
 After installation, you may use it through methods such as the following:
 
 ```javascript
-const { Demon, Skill, Persona } = require('megaten') // Supports CommonJS, ES6, star import, and destructuring syntax
+const { Demon, Skill, Persona } = require('megaten'); // Supports CommonJS, ES6, star import, and destructuring syntax
 
 // get() functions find by the input's name without attention to capitalization, spaces, punctuation, etc.
 const jack = Demon.get('Jack Frost!!!'); // Gets a Demon instance; may also return a Persona instance, typeguarded via Demon.prototype.isPersona()
