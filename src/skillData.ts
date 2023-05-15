@@ -2988,7 +2988,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		accuracy: 98,
 		cost: {
 			stat: 'MP',
-			amount: 4
+			amount: 10
 		},
 		power: {
 			amount: 130,
@@ -3005,7 +3005,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		accuracy: 98,
 		cost: {
 			stat: 'MP',
-			amount: 12
+			amount: 35
 		},
 		power: {
 			amount: 215,
@@ -3039,7 +3039,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		accuracy: 98,
 		cost: {
 			stat: 'MP',
-			amount: 8
+			amount: 20
 		},
 		power: {
 			amount: 160,
@@ -3171,7 +3171,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		accuracy: 98,
 		cost: {
 			stat: 'MP',
-			amount: 3
+			amount: 10
 		},
 		power: {
 			amount: 130,
@@ -3188,7 +3188,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		accuracy: 98,
 		cost: {
 			stat: 'MP',
-			amount: 10
+			amount: 35
 		},
 		power: {
 			amount: 215,
@@ -3205,7 +3205,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		accuracy: 98,
 		cost: {
 			stat: 'MP',
-			amount: 6
+			amount: 20
 		},
 		power: {
 			amount: 160,
@@ -4922,7 +4922,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		accuracy: 98,
 		cost: {
 			stat: 'MP',
-			amount: 10
+			amount: 15
 		},
 		power: {
 			amount: 95,
@@ -4939,7 +4939,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		accuracy: 98,
 		cost: {
 			stat: 'MP',
-			amount: 22
+			amount: 50
 		},
 		power: {
 			amount: 155,
@@ -4956,7 +4956,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		accuracy: 98,
 		cost: {
 			stat: 'MP',
-			amount: 16
+			amount: 30
 		},
 		power: {
 			amount: 120,
@@ -4973,7 +4973,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		accuracy: 98,
 		cost: {
 			stat: 'MP',
-			amount: 8
+			amount: 15
 		},
 		power: {
 			amount: 95,
@@ -4990,7 +4990,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		accuracy: 98,
 		cost: {
 			stat: 'MP',
-			amount: 20
+			amount: 50
 		},
 		power: {
 			amount: 155,
@@ -5007,7 +5007,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		accuracy: 98,
 		cost: {
 			stat: 'MP',
-			amount: 14
+			amount: 30
 		},
 		power: {
 			amount: 120,
@@ -5271,7 +5271,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		accuracy: 98,
 		cost: {
 			stat: 'MP',
-			amount: 10
+			amount: 15
 		},
 		power: {
 			amount: 95,
@@ -5288,7 +5288,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		accuracy: 98,
 		cost: {
 			stat: 'MP',
-			amount: 16
+			amount: 30
 		},
 		power: {
 			amount: 120,
@@ -5305,7 +5305,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		accuracy: 98,
 		cost: {
 			stat: 'MP',
-			amount: 22
+			amount: 50
 		},
 		power: {
 			amount: 155,
@@ -7135,7 +7135,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		accuracy: 98,
 		cost: {
 			stat: 'MP',
-			amount: 4
+			amount: 10
 		},
 		power: {
 			amount: 130,
@@ -7152,7 +7152,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		accuracy: 98,
 		cost: {
 			stat: 'MP',
-			amount: 8
+			amount: 20
 		},
 		power: {
 			amount: 160,
@@ -7169,7 +7169,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		accuracy: 98,
 		cost: {
 			stat: 'MP',
-			amount: 12
+			amount: 35
 		},
 		power: {
 			amount: 215,
