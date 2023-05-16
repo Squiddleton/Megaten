@@ -19,7 +19,8 @@
   "scripts": {
     "lint": "eslint . --fix",
     "build": "tsc",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "npm run build",
+    "start": "npm run build && node ."
   },
   "devDependencies": {
     "@types/node": "^14.18.36",
