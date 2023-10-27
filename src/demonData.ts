@@ -20113,7 +20113,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			inherit: null
 		},
 		arcana: null,
-		race: 'Snake',
+		race: 'Lady',
 		level: 89,
 		hp: 502,
 		mp: 522,
