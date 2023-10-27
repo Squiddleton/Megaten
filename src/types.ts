@@ -220,7 +220,7 @@ export type AnyGame = PersonaGame | SMTGame;
 /** Custom races for demons that originate in Persona games */
 export type PersonaRace = 'Persona' | 'Picaro' | 'Treasure';
 /** Demons' official races */
-export type SMTRace = 'Amatsu' | 'Avatar' | 'Avian' | 'Beast' | 'Brute' | 'Deity' | 'Devil' | 'Divine' | 'Dragon' | 'Drake' | 'Element' | 'Fairy' | 'Fallen' | 'Femme' | 'Fiend' | 'Foul' | 'Fury' | 'Genma' | 'Godly' | 'Haunt' | 'Herald' | 'Holy' | 'Jaki' | 'Jirae' | 'Kishin' | 'Kunitsu' | 'Lady' | 'Megami' | 'Mitama' | 'Night' | 'Nymph' | 'Panagia' | 'Raptor' | 'Snake' | 'Tenma' | 'Tyrant' | 'Vile' | 'Wargod' | 'Wilder' | 'Wood' | 'Yoma';
+export type SMTRace = 'Amatsu' | 'Avatar' | 'Avian' | 'Beast' | 'Brute' | 'Deity' | 'Devil' | 'Divine' | 'Dragon' | 'Drake' | 'Element' | 'Fairy' | 'Fallen' | 'Femme' | 'Fiend' | 'Foul' | 'Fury' | 'Genma' | 'Godly' | 'Haunt' | 'Herald' | 'Holy' | 'Jaki' | 'Jirae' | 'King' | 'Kishin' | 'Kunitsu' | 'Lady' | 'Matter' | 'Megami' | 'Meta' | 'Mitama' | 'Nahobino' | 'Night' | 'Nymph' | 'Panagia' | 'Raptor' | 'Snake' | 'Tenma' | 'Tyrant' | 'Vile' | 'Wargod' | 'Wilder' | 'Wood' | 'Yoma';
 /** Demons' races */
 export type AnyRace = PersonaRace | SMTRace;
 
