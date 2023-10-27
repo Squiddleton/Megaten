@@ -34,7 +34,7 @@ export namespace BattleThemes {
 		Abdiel = 'https://open.spotify.com/track/6OqE3lLzo3uyM5sKW6OMDA?si=627dc0413368497b',
 		/** Plays against Nahobino Tsukuyomi */
 		Tsukuyomi = 'https://open.spotify.com/track/2FNgjWRJmPUbzmKZku882o?si=ce8767599df84f5f',
-		/** Plays against Nahobino Abdiel */
+		/** Plays against Nahobino Nuwa */
 		Nuwa = 'https://open.spotify.com/track/7izJxuR9bvbvS2zBIXji1X?si=0fe95a22964840e8',
 		/** Plays against Lucifer */
 		Eon = 'https://open.spotify.com/track/4jDJy7X1KaQNibOQT6OS2b?si=179542e826f5471a',
