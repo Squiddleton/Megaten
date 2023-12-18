@@ -1,7 +1,7 @@
 import type { SMT5BossData } from './dataTypes.js';
 import { BattleThemes } from './music.js';
 
-const bosses: SMT5BossData[] = [
+const smt5Bosses: SMT5BossData[] = [
 	{
 		name: 'Abaddon',
 		skillPotential: {
@@ -7287,4 +7287,4 @@ const bosses: SMT5BossData[] = [
 	}
 ];
 
-export default bosses;
+export default smt5Bosses;
