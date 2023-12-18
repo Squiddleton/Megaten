@@ -1,6 +1,6 @@
 import type { SMT5StandardEnemyData } from './dataTypes.js';
 
-const smt5StandardEnemies: SMT5StandardEnemyData[] = [
+export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 	{
 		name: 'Adramelech',
 		skillPotential: {
@@ -5371,5 +5371,3 @@ const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 		]
 	}
 ];
-
-export default smt5StandardEnemies;
