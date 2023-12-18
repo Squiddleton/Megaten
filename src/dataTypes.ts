@@ -1,3 +1,4 @@
+import type { BattleThemes } from './music.js';
 import type { AilBoostCriteria, AilDefensiveAilment, AilResistance, Ailment, AilmentName, AilmentRange, AllyRange, AnyAffinity, AnyGame, Arcana, AttackCost, AttackFlag, AttackPower, AutoBuffRange, Barrier, BarrierRange, BoostAffinity, BoostStack, BreakAffinity, Buff, Charge, CritBoostCriteria, CritRange, DamagingAffinity, Debuff, DefensiveAffinity, DemonAffinities, DemonAlignment, DemonResistances, DemonSkill, DemonStats, EndureCriteria, EnemyRange, EvasionAffinity, EvasionBoostCriteria, HPMP, HPMPAil, If, LightDark, MasterStat, NumberOrPercent, OneOrAllAilments, PersonaGame, PersonaRace, PostBattleStat, RecoveryAmount, RecoveryFlag, RecoveryRange, RegenCriteria, Resistance, SMTCounterAffinity, SMTCounterPower, SMTRace, Series, SetAffinity, SingleOrDoubleBuff, SiphonCriteria, SkillPotential, SkillType, Stage, SupportAutoEffect, SupportFlag, SupportRange, SusceptibilityRange, WallAffinity } from './types.js';
 
 /** Data used for constructing a Demon instance */
@@ -26,18 +27,38 @@ export interface PersonaData extends DemonData<true> {
 	evoSkillName: string | null;
 }
 
+/** A standard enemy in Shin Megami Tensei V */
 export interface SMT5StandardEnemyData {
+	/** The enemy's name */
 	name: string;
+	/** The enemy's skill potential */
 	skillPotential: SkillPotential;
+	/** The enemy's race */
 	race: SMTRace;
+	/** The enemy's level */
 	level: number;
+	/** The enemy's HP */
 	hp: number;
+	/** The enemy's stats */
 	stats: DemonStats;
+	/** The names of the enemy's skills */
 	skills: string[];
+	/** The enemy's ailment and affinity resistances */
 	resistances: DemonResistances<false>;
+	/** The enemy's moral and ethical alignment */
 	alignment: DemonAlignment;
+	/** The enemy's backstory */
 	lore: string;
+	/** The names of the item drops rewarded upon defeating the enemy */
 	itemDrops: string[];
+}
+
+/** A boss in Shin Megami Tensei V */
+export interface SMT5BossData extends SMT5StandardEnemyData {
+	/** The song that plays during the boss battle, or null during non-Nahobino Empyrean forced encounters */
+	theme: BattleThemes.ShinMegamiTensei5 | null;
+	/** The distinguishing form of the demon for this boss battle, or undefined if the standard form */
+	variant?: string;
 }
 
 /** Data used for constructing a Skill instance */
