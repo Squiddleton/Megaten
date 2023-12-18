@@ -5,7 +5,7 @@ import skillData from './skillData';
 import type { AilBoostCriteria, AilDefensiveAilment, AilResistance, Ailment, AilmentName, AilmentRange, AllyRange, AnyAffinity, AttackCost, AttackFlag, AttackPower, AutoBuffRange, Barrier, BarrierRange, BoostAffinity, BoostStack, BreakAffinity, Buff, Charge, CritBoostCriteria, CritRange, DamagingAffinity, Debuff, DefensiveAffinity, EndureCriteria, EnemyRange, EvasionAffinity, EvasionBoostCriteria, HPMP, HPMPAil, LightDark, MasterStat, NumberOrPercent, OneOrAllAilments, PostBattleStat, RecoveryAmount, RecoveryFlag, RecoveryRange, RegenCriteria, Resistance, SMTCounterAffinity, SMTCounterPower, Series, SetAffinity, SingleOrDoubleBuff, SiphonCriteria, SkillType, SupportAutoEffect, SupportFlag, SupportRange, SusceptibilityRange, WallAffinity } from './types';
 
 export abstract class Skill implements SkillData {
-	/** The skill's name */
+	/** The skill's name (adjusted for consistency with SMT5) */
 	name: string;
 	/** The skill's alternative names */
 	aliases: string[];
@@ -13,11 +13,11 @@ export abstract class Skill implements SkillData {
 	devName: string;
 	/** Whether the skill is unique to any specific demon(s), or null if the demon cannot be fused */
 	unique: boolean | null;
-	/** The skill's affinity */
+	/** The skill's affinity (adjusted for consistency with SMT5) */
 	affinity: AnyAffinity;
 	/** The skill's type */
 	type: SkillType;
-	/** The skill's description */
+	/** The skill's description (adjusted for consistency with SMT5) */
 	abstract description: string;
 	constructor(data: AnySkillData) {
 		this.name = data.name;
@@ -110,7 +110,7 @@ export class AilmentSkill extends Skill implements AilmentSkillData {
 	description: string;
 	/** The ailments that the skill inflicts */
 	ailments: AilmentName[];
-	/** The chance of inflicting the ailments */
+	/** The chance of inflicting the ailments (adjusted for consistency with SMT5) */
 	chance: number;
 	/** The skill's MP cost */
 	cost: number;
@@ -558,7 +558,7 @@ export class EvasionSkill extends Skill implements EvasionSkillData {
 	declare affinity: 'Passive';
 	declare type: 'EVASION';
 	description: string;
-	/** The amount that the skill increases the chance of evading the elements by or 0 if unknown */
+	/** The amount that the skill increases the chance of evading the elements by, or 0 if unknown */
 	amount: number;
 	/** The conditions that the skill triggers under, or null if always in effect */
 	criteria: EvasionBoostCriteria | null;
@@ -585,7 +585,7 @@ export class InstaKillBoostSkill extends Skill implements InstaKillBoostSkillDat
 	declare affinity: 'Passive';
 	declare type: 'INSTAKILLBOOST';
 	description: string;
-	/** The affinity of the instakill skill that the skill boosts */
+	/** The affinity of the instakill skill that the skill boosts (adjusted for consistency with SMT5) */
 	element: LightDark;
 	constructor(data: InstaKillBoostSkillData) {
 		const { element } = data;

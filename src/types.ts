@@ -12,7 +12,7 @@ export interface Ailment {
 	chance: number;
 }
 
-/** Ailments' names */
+/** Ailments' names (adjusted for consistency with SMT5) */
 export type AilmentName = 'Burn' | 'Charm' | 'Confuse' | 'Despair' | 'Enervate' | 'Exhaust' | 'Fear' | 'Freeze' | 'Hunger' | 'Mirage' | 'Poison' | 'Rage' | 'Seal' | 'Shock' | 'Sleep';
 /** An ailment's name or all ailments */
 export type OneOrAllAilments = AilmentName | 'All';
@@ -61,7 +61,7 @@ export type AttackFlag = '+20% Crit Rate' | '+200% Crit Rate' | '+30% Crit Rate'
 
 /** A base for skills with a specific amount of power */
 export interface BasePower {
-	/** The skill's base power */
+	/** The skill's base power (adjusted for consistency with SMT5) */
 	amount: number;
 	/** The skill's visible power relative to other skills */
 	display: unknown;
