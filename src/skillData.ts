@@ -3257,7 +3257,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Almighty',
 		type: 'MISC',
 		cost: 28,
-		description: 'Insta-kills foes inflicted with Fear.'
+		description: 'Instakills foes inflicted with Fear.'
 	},
 	{
 		name: 'Giant Slice',

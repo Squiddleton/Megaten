@@ -327,7 +327,7 @@ export class BarrierSkill extends Skill implements BarrierSkillData {
 			const [barrier] = data.barriers;
 			switch (barrier) {
 				case 'Tetraja': {
-					this.description = 'A barrier that nullifies an insta-kill for all allies one time.';
+					this.description = 'A barrier that nullifies an instakill for all allies one time.';
 					break;
 				}
 				case 'Painting': {
@@ -543,7 +543,7 @@ export class EndureSkill extends Skill implements EndureSkillData {
 		const { amount, criteria } = data;
 		super(data);
 
-		if (criteria === 'Light/Dark') this.description = 'Survive insta-kill skills with 1 HP.';
+		if (criteria === 'Light/Dark') this.description = 'Survive instakill skills with 1 HP.';
 		else if (criteria !== null) this.description = `${amount}% chance to survive ${criteria} skills with 1 HP.`;
 		else if (amount === 1) this.description = 'Revives with 1 HP when KO\'d. Usable once per battle.';
 		else this.description = 'Endures lethal attack and fully heals HP once in battle.';
