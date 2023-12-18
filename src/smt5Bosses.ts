@@ -6363,7 +6363,7 @@ export const smt5Bosses: SMT5BossData[] = [
 		},
 		skills: [
 			'Berserker God',
-			'Ziogna',
+			'Zionga',
 			'Mazionga'
 		],
 		resistances: {
