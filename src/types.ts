@@ -13,7 +13,7 @@ export interface Ailment {
 }
 
 /** Ailments' names (adjusted for consistency with SMT5) */
-export type AilmentName = 'Burn' | 'Charm' | 'Confuse' | 'Despair' | 'Enervate' | 'Exhaust' | 'Fear' | 'Freeze' | 'Hunger' | 'Mirage' | 'Poison' | 'Rage' | 'Seal' | 'Shock' | 'Sleep';
+export type AilmentName = 'Burn' | 'Charm' | 'Confuse' | 'Despair' | 'Enervate' | 'Exhaust' | 'Fear' | 'Freeze' | 'Hunger' | 'Mirage' | 'Mud' | 'Poison' | 'Rage' | 'Seal' | 'Shock' | 'Sleep';
 /** An ailment's name or all ailments */
 export type OneOrAllAilments = AilmentName | 'All';
 /** Ailments that an AilDefensiveSkill instance protects against */
@@ -57,7 +57,7 @@ export interface AttackCost {
 }
 
 /** Flags for AttackSkill instances */
-export type AttackFlag = '+20% Crit Rate' | '+200% Crit Rate' | '+30% Crit Rate' | 'Accuracy/Evasion Down' | 'Afflicted Boost' | 'Asleep Boost' | 'Attack Down' | 'Attack Reduced' | 'Baton Boost' | 'Charmed Boost' | 'Confused Boost' | 'Crit Damage Boost' | 'Defense Down' | 'Defense Greatly Down' | 'Down Boost' | 'Drain HP' | 'Drain HP/MP' | 'Drain MP' | 'HP Dependent' | 'Instakill' | 'Minimize Defense' | 'Negate Buffs' | 'Pierce' | 'Poisoned Boost' | 'Static Damage' | 'Surround Boost' | 'Weakness Instakill' | 'Weather Boost';
+export type AttackFlag = '+20% Crit Rate' | '+200% Crit Rate' | '+30% Crit Rate' | 'Accuracy/Evasion Down' | 'Afflicted Boost' | 'Asleep Boost' | 'Attack Down' | 'Attack Reduced' | 'Baton Boost' | 'Charmed Boost' | 'Confused Boost' | 'Crit Damage Boost' | 'Defense Down' | 'Defense Greatly Down' | 'Down Boost' | 'Drain HP' | 'Drain HP/MP' | 'Drain MP' | 'HP Dependent' | 'Instakill' | 'Minimize Defense' | 'Negate Buffs' | 'Pierce' | 'Poisoned Boost' | 'Shroud Dependent' | 'Static Damage' | 'Surround Boost' | 'Weakness Instakill' | 'Weather Boost';
 
 /** A base for skills with a specific amount of power */
 export interface BasePower {
@@ -206,7 +206,7 @@ export type EvasionAffinity = OneOrAllDamagingAffinities | 'Crit/Magic' | 'Magic
 /** Affinities used by SetSkill instances */
 export type SetAffinity = LightDark | 'Almighty';
 /** Affinities used by SMTCounterSkill instances */
-export type SMTCounterAffinity = 'Phys' | 'Dark';
+export type SMTCounterAffinity = 'Phys' | 'Elec' | 'Dark' | 'Almighty';
 /** Affinities used by WallSkill instances */
 export type WallAffinity = Exclude<DamagingAffinity, SMTAffinity | 'Phys' | 'Gun' | LightDark | 'Almighty'>;
 
@@ -252,4 +252,4 @@ export type Stage = 1 | 2 | 3;
 export type SupportAutoEffect = Barrier | Buff | Charge;
 
 /** Flags for SupportSkill instances */
-export type SupportFlag = 'Cure Non-Special Ailments' | 'Surrounded Only';
+export type SupportFlag = 'Cure Non-Special Ailments' | 'Maximize Buff' | 'Minimize Debuffs' | 'Surrounded Only';

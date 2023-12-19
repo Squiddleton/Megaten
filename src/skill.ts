@@ -835,14 +835,21 @@ export class SMTCounterSkill extends Skill implements SMTCounterSkillData {
 	element: SMTCounterAffinity;
 	/** The numerical and displayed amount of damage that the skill deals */
 	power: SMTCounterPower;
+	/** Whether the skill inflicts Shroud on the attacker */
+	shroud: boolean;
 	constructor(data: SMTCounterSkillData) {
-		const { attackDown, element, power } = data;
+		const { attackDown, chance, element, power, shroud = false } = data;
 		super(data);
-		this.description = `Chance to counter Strength-based attacks with a ${power.display.toLowerCase()} ${element} attack.${this.name === 'Retaliate' ? ' Does not stack with Counter.' : ''}${attackDown ? ' Lowers target\'s Attack 1 rank for 3 turns.' : ''}`;
+		this.description = shroud
+			? `Counters all attacks with a ${power.display.toLowerCase()} ${element} attack for one turn. Counterattack also inflicts Shroud.`
+			: chance === 100
+				? `Counterattacks with ${power.display.toLowerCase()} ${element} attack when a Thunder Bit is defeated.`
+				: `Chance to counter Strength-based attacks with a ${power.display.toLowerCase()} ${element} attack.${this.name === 'Retaliate' ? ' Does not stack with Counter.' : ''}${attackDown ? ' Lowers target\'s Attack 1 rank for 3 turns.' : ''}`;
 		this.attackDown = attackDown;
-		this.chance = data.chance;
+		this.chance = chance;
 		this.element = element;
 		this.power = power;
+		this.shroud = shroud;
 	}
 }
 
@@ -908,6 +915,12 @@ export class SupportSkill extends Skill implements SupportSkillData {
 		const isAllyRange = isAllyRangeFunc(range);
 		if (flags.includes('Cure Non-Special Ailments')) {
 			this.description = 'Cures all non-special ailments for all allies.';
+		}
+		else if (flags.includes('Maximize Buff')) {
+			this.description = `Maximizes ${buffs[0]} for 3 turns.`;
+		}
+		else if (flags.includes('Minimize Debuffs')) {
+			this.description = `Minimizes ${debuffs.join('/')} of 1 foe for 3 turns.`;
 		}
 		else {
 			this.description = negate

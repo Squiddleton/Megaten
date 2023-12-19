@@ -572,6 +572,30 @@ const skillData: Readonly<AnySkillData[]> = [
 		series: 'persona'
 	},
 	{
+		name: 'Babylon Curse',
+		affinity: 'Almighty',
+		type: 'ATTACK',
+		unique: null,
+		accuracy: 98,
+		ailments: [
+			{
+				name: 'Mud',
+				chance: 100
+			}
+		],
+		cost: {
+			stat: 'MP',
+			amount: 0
+		},
+		power: {
+			amount: 100,
+			display: 'Weak',
+			type: 'Magic'
+		},
+		range: 'One',
+		series: 'smt'
+	},
+	{
 		name: 'Babylon Goblet',
 		affinity: 'Almighty',
 		type: 'ATTACK',
@@ -1296,6 +1320,23 @@ const skillData: Readonly<AnySkillData[]> = [
 		element: 'All'
 	},
 	{
+		name: 'Cold Dark Matter',
+		affinity: 'Support',
+		type: 'SUPPORT',
+		unique: null,
+		range: 'Self',
+		cost: 0,
+		buffs: [
+			'Defense'
+		],
+		negate: false,
+		debuffs: [],
+		flags: [
+			'Maximize Buff'
+		],
+		auto: []
+	},
+	{
 		name: 'Complete Analysis',
 		affinity: 'Passive',
 		type: 'NAVI',
@@ -1330,6 +1371,14 @@ const skillData: Readonly<AnySkillData[]> = [
 		ailment: 'Confuse',
 		amount: 25,
 		criteria: null
+	},
+	{
+		name: 'Contempt of God',
+		affinity: 'Misc',
+		type: 'MISC',
+		unique: null,
+		cost: 0,
+		description: 'Adds 2 Press Turn Icons to your next turn.'
 	},
 	{
 		name: 'Cool Breeze',
@@ -2222,6 +2271,33 @@ const skillData: Readonly<AnySkillData[]> = [
 		newResistance: 'Drain'
 	},
 	{
+		name: 'Dreadful Gleam',
+		affinity: 'Elec',
+		type: 'ATTACK',
+		unique: null,
+		accuracy: 108,
+		ailments: [
+			{
+				name: 'Seal',
+				chance: 40
+			}
+		],
+		cost: {
+			stat: 'MP',
+			amount: 0
+		},
+		power: {
+			amount: 150,
+			display: 'Heavy',
+			type: 'Magic'
+		},
+		range: 'All',
+		series: 'smt',
+		flags: [
+			'Pierce'
+		]
+	},
+	{
 		name: 'Dream Fist',
 		affinity: 'Phys',
 		type: 'ATTACK',
@@ -2294,6 +2370,14 @@ const skillData: Readonly<AnySkillData[]> = [
 		},
 		range: 'One',
 		series: 'smt'
+	},
+	{
+		name: 'Electrify',
+		affinity: 'Misc',
+		type: 'MISC',
+		unique: null,
+		cost: 0,
+		description: 'Greatly increases the damage of the next Rising Storm Dragon performed by 1 ally.'
 	},
 	{
 		name: 'Elec Amp',
@@ -2582,6 +2666,18 @@ const skillData: Readonly<AnySkillData[]> = [
 		element: 'Wind'
 	},
 	{
+		name: 'Evil Gleam',
+		affinity: 'Ailment',
+		type: 'AILMENT',
+		unique: null,
+		range: 'All',
+		cost: 0,
+		ailments: [
+			'Charm'
+		],
+		chance: 65
+	},
+	{
 		name: 'Evil Melody',
 		affinity: 'Ailment',
 		type: 'MISC',
@@ -2639,6 +2735,56 @@ const skillData: Readonly<AnySkillData[]> = [
 		},
 		range: 'All',
 		series: 'smt'
+	},
+	{
+		name: 'Falling Star - Fire',
+		affinity: 'Fire',
+		type: 'ATTACK',
+		unique: null,
+		accuracy: 178,
+		cost: {
+			stat: 'MP',
+			amount: 0
+		},
+		flags: [
+			'Pierce'
+		],
+		power: {
+			amount: 1000,
+			display: 'Severe',
+			type: 'Magic'
+		},
+		range: 'One',
+		series: 'smt'
+	},
+	{
+		name: 'Falling Star - Ice',
+		affinity: 'Ice',
+		type: 'ATTACK',
+		unique: null,
+		accuracy: 178,
+		cost: {
+			stat: 'MP',
+			amount: 0
+		},
+		flags: [
+			'Pierce'
+		],
+		power: {
+			amount: 1000,
+			display: 'Severe',
+			type: 'Magic'
+		},
+		range: 'One',
+		series: 'smt'
+	},
+	{
+		name: 'False Replication',
+		affinity: 'Misc',
+		type: 'MISC',
+		unique: null,
+		cost: 0,
+		description: 'Creates a replica.'
 	},
 	{
 		name: 'Famine\'s Scream',
@@ -3081,6 +3227,24 @@ const skillData: Readonly<AnySkillData[]> = [
 		series: 'smt'
 	},
 	{
+		name: 'Frenzy',
+		affinity: 'Phys',
+		type: 'ATTACK',
+		unique: null,
+		accuracy: 88,
+		cost: {
+			stat: 'MP',
+			amount: 0
+		},
+		power: {
+			amount: 80,
+			display: 'Medium',
+			type: 'Physical'
+		},
+		range: 'All',
+		series: 'smt'
+	},
+	{
 		name: 'Frolic',
 		affinity: 'Ailment',
 		type: 'AILMENT',
@@ -3147,6 +3311,24 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'SET',
 		amount: 1,
 		cost: null
+	},
+	{
+		name: 'Galvanic Slash',
+		affinity: 'Elec',
+		type: 'ATTACK',
+		unique: null,
+		accuracy: 108,
+		cost: {
+			stat: 'MP',
+			amount: 0
+		},
+		power: {
+			amount: 200,
+			display: 'Heavy',
+			type: 'Physical'
+		},
+		range: 'One',
+		series: 'smt'
 	},
 	{
 		name: 'Gambler\'s Foresight',
@@ -3524,6 +3706,24 @@ const skillData: Readonly<AnySkillData[]> = [
 		series: 'smt'
 	},
 	{
+		name: 'Hailstorm of God',
+		affinity: 'Ice',
+		type: 'ATTACK',
+		unique: null,
+		accuracy: 108,
+		cost: {
+			stat: 'MP',
+			amount: 0
+		},
+		power: {
+			amount: 220,
+			display: 'Severe',
+			type: 'Magic'
+		},
+		range: 'All',
+		series: 'smt'
+	},
+	{
 		name: 'Hama',
 		aliases: [
 			'Kouha'
@@ -3785,6 +3985,27 @@ const skillData: Readonly<AnySkillData[]> = [
 		},
 		range: 'One',
 		series: 'smt'
+	},
+	{
+		name: 'Heliopolis Dawn',
+		affinity: 'Fire',
+		type: 'ATTACK',
+		unique: null,
+		accuracy: 108,
+		cost: {
+			stat: 'MP',
+			amount: 0
+		},
+		power: {
+			amount: 600,
+			display: 'Severe',
+			type: 'Magic'
+		},
+		range: 'All',
+		series: 'smt',
+		flags: [
+			'Shroud Dependent'
+		]
 	},
 	{
 		name: 'Hell Burner',
@@ -4061,6 +4282,25 @@ const skillData: Readonly<AnySkillData[]> = [
 		]
 	},
 	{
+		name: 'Holy Crucifixion',
+		affinity: 'Support',
+		type: 'SUPPORT',
+		unique: null,
+		range: 'One',
+		cost: 0,
+		buffs: [],
+		negate: false,
+		debuffs: [
+			'Attack',
+			'Defense',
+			'Accuracy/Evasion'
+		],
+		flags: [
+			'Minimize Debuffs'
+		],
+		auto: []
+	},
+	{
 		name: 'Holy Embrace',
 		affinity: 'Passive',
 		type: 'REGEN',
@@ -4077,6 +4317,23 @@ const skillData: Readonly<AnySkillData[]> = [
 		amount: 15,
 		criteria: 'Turn Start',
 		stat: 'HPMP'
+	},
+	{
+		name: 'Hot Dark Matter',
+		affinity: 'Support',
+		type: 'SUPPORT',
+		unique: null,
+		range: 'Self',
+		cost: 0,
+		buffs: [
+			'Attack'
+		],
+		negate: false,
+		debuffs: [],
+		flags: [
+			'Maximize Buff'
+		],
+		auto: []
 	},
 	{
 		name: 'Humble Blessing',
@@ -4241,6 +4498,42 @@ const skillData: Readonly<AnySkillData[]> = [
 		charge: 'Pierce'
 	},
 	{
+		name: 'Impetus',
+		affinity: 'Phys',
+		type: 'ATTACK',
+		unique: null,
+		accuracy: 108,
+		cost: {
+			stat: 'MP',
+			amount: 0
+		},
+		power: {
+			amount: 220,
+			display: 'Severe',
+			type: 'Physical'
+		},
+		range: 'All',
+		series: 'smt'
+	},
+	{
+		name: 'Inferno of God',
+		affinity: 'Fire',
+		type: 'ATTACK',
+		unique: null,
+		accuracy: 108,
+		cost: {
+			stat: 'MP',
+			amount: 0
+		},
+		power: {
+			amount: 220,
+			display: 'Severe',
+			type: 'Magic'
+		},
+		range: 'All',
+		series: 'smt'
+	},
+	{
 		name: 'Inspiring Leader',
 		affinity: 'Passive',
 		type: 'MISC',
@@ -4316,7 +4609,6 @@ const skillData: Readonly<AnySkillData[]> = [
 			stat: 'MP',
 			amount: 90
 		},
-		flags: [],
 		power: {
 			amount: 260,
 			display: 'Severe',
@@ -4584,6 +4876,37 @@ const skillData: Readonly<AnySkillData[]> = [
 			'Tetrakarn',
 			'Makarakarn'
 		]
+	},
+	{
+		name: 'Lightning Pulse',
+		affinity: 'Passive',
+		type: 'SMTCOUNTER',
+		unique: null,
+		attackDown: false,
+		chance: 100,
+		element: 'Elec',
+		power: {
+			amount: 100,
+			display: 'Weak'
+		}
+	},
+	{
+		name: 'Lightning of God',
+		affinity: 'Elec',
+		type: 'ATTACK',
+		unique: null,
+		accuracy: 108,
+		cost: {
+			stat: 'MP',
+			amount: 0
+		},
+		power: {
+			amount: 220,
+			display: 'Severe',
+			type: 'Magic'
+		},
+		range: 'All',
+		series: 'smt'
 	},
 	{
 		name: 'Light Amp',
@@ -5056,6 +5379,29 @@ const skillData: Readonly<AnySkillData[]> = [
 		amount: 25,
 		element: 'Magic',
 		stacks: 'x'
+	},
+	{
+		name: 'Magma Axis',
+		affinity: 'Fire',
+		type: 'ATTACK',
+		unique: null,
+		accuracy: 108,
+		cost: {
+			stat: 'MP',
+			amount: 0
+		},
+		flags: [
+			'Pierce'
+		],
+		min: 3,
+		max: 8,
+		power: {
+			amount: 110,
+			display: 'Medium',
+			type: 'Magic'
+		},
+		range: 'Random',
+		series: 'smt'
 	},
 	{
 		name: 'Mahama',
@@ -5854,6 +6200,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		series: 'persona'
 	},
 	{
+		name: 'Mesektet\'s Path',
+		affinity: 'Passive',
+		type: 'SMTCOUNTER',
+		unique: null,
+		attackDown: false,
+		chance: 100,
+		element: 'Almighty',
+		power: {
+			amount: 50,
+			display: 'Weak'
+		},
+		shroud: true
+	},
+	{
 		name: 'Me Patra',
 		aliases: [
 			'Amrita',
@@ -6036,11 +6396,50 @@ const skillData: Readonly<AnySkillData[]> = [
 		stat: 'Money'
 	},
 	{
+		name: 'Moonlight Frost',
+		affinity: 'Ice',
+		type: 'ATTACK',
+		unique: null,
+		accuracy: 98,
+		cost: {
+			stat: 'MP',
+			amount: 0
+		},
+		power: {
+			amount: 450,
+			display: 'Severe',
+			type: 'Magic'
+		},
+		range: 'All',
+		series: 'smt',
+		flags: [
+			'Pierce'
+		]
+	},
+	{
 		name: 'Moral Support',
 		affinity: 'Passive',
 		type: 'NAVI',
 		unique: null,
 		description: 'Chance to cast Kaja or party-healing magic during battle.'
+	},
+	{
+		name: 'Morning Star',
+		affinity: 'Almighty',
+		type: 'ATTACK',
+		unique: null,
+		accuracy: 178,
+		cost: {
+			stat: 'MP',
+			amount: 0
+		},
+		power: {
+			amount: 1000,
+			display: 'Severe',
+			type: 'Magic'
+		},
+		range: 'All',
+		series: 'smt'
 	},
 	{
 		name: 'Morning Star - Persona',
@@ -7275,6 +7674,27 @@ const skillData: Readonly<AnySkillData[]> = [
 		series: 'smt'
 	},
 	{
+		name: 'Purgatorium',
+		affinity: 'Fire',
+		type: 'ATTACK',
+		unique: null,
+		accuracy: 108,
+		cost: {
+			stat: 'MP',
+			amount: 0
+		},
+		power: {
+			amount: 210,
+			display: 'Severe',
+			type: 'Magic'
+		},
+		range: 'All',
+		series: 'smt',
+		flags: [
+			'Pierce'
+		]
+	},
+	{
 		name: 'Purple Smoke',
 		affinity: 'Phys',
 		type: 'ATTACK',
@@ -7934,6 +8354,27 @@ const skillData: Readonly<AnySkillData[]> = [
 		series: 'persona'
 	},
 	{
+		name: 'Rising Storm Dragon',
+		affinity: 'Elec',
+		type: 'ATTACK',
+		unique: null,
+		accuracy: 118,
+		cost: {
+			stat: 'MP',
+			amount: 0
+		},
+		power: {
+			amount: 1000,
+			display: 'Severe',
+			type: 'Magic'
+		},
+		range: 'All',
+		series: 'smt',
+		flags: [
+			'Pierce'
+		]
+	},
+	{
 		name: 'Ruinous Thunder',
 		affinity: 'Elec',
 		type: 'ATTACK',
@@ -8377,6 +8818,24 @@ const skillData: Readonly<AnySkillData[]> = [
 			type: 'Physical'
 		},
 		range: 'One',
+		series: 'smt'
+	},
+	{
+		name: 'Sonic Boom',
+		affinity: 'Force',
+		type: 'ATTACK',
+		unique: null,
+		accuracy: 108,
+		cost: {
+			stat: 'MP',
+			amount: 0
+		},
+		power: {
+			amount: 145,
+			display: 'Medium',
+			type: 'Magic'
+		},
+		range: 'All',
 		series: 'smt'
 	},
 	{
@@ -9133,6 +9592,24 @@ const skillData: Readonly<AnySkillData[]> = [
 		series: 'persona'
 	},
 	{
+		name: 'Tornado of God',
+		affinity: 'Force',
+		type: 'ATTACK',
+		unique: null,
+		accuracy: 108,
+		cost: {
+			stat: 'MP',
+			amount: 0
+		},
+		power: {
+			amount: 220,
+			display: 'Severe',
+			type: 'Magic'
+		},
+		range: 'All',
+		series: 'smt'
+	},
+	{
 		name: 'Torrent Shot',
 		affinity: 'Phys',
 		type: 'ATTACK',
@@ -9310,6 +9787,14 @@ const skillData: Readonly<AnySkillData[]> = [
 		},
 		range: 'One',
 		series: 'smt'
+	},
+	{
+		name: 'True Replication',
+		affinity: 'Misc',
+		type: 'MISC',
+		unique: null,
+		cost: 0,
+		description: 'Creates a replica.'
 	},
 	{
 		name: 'Twin Shot',
@@ -9618,6 +10103,18 @@ const skillData: Readonly<AnySkillData[]> = [
 		series: 'smt'
 	},
 	{
+		name: 'Wild Dance',
+		affinity: 'Ailment',
+		type: 'AILMENT',
+		unique: null,
+		range: 'All',
+		cost: 0,
+		ailments: [
+			'Confuse'
+		],
+		chance: 65
+	},
+	{
 		name: 'Wind Amp',
 		affinity: 'Passive',
 		type: 'BOOST',
@@ -9732,6 +10229,30 @@ const skillData: Readonly<AnySkillData[]> = [
 			type: 'Physical'
 		},
 		range: 'Random',
+		series: 'smt'
+	},
+	{
+		name: 'Xeros Beat',
+		affinity: 'Phys',
+		type: 'ATTACK',
+		unique: null,
+		accuracy: 108,
+		ailments: [
+			{
+				name: 'Mirage',
+				chance: 50
+			}
+		],
+		cost: {
+			stat: 'MP',
+			amount: 0
+		},
+		power: {
+			amount: 160,
+			display: 'Severe',
+			type: 'Physical'
+		},
+		range: 'All',
 		series: 'smt'
 	},
 	{

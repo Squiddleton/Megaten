@@ -270,6 +270,7 @@ export interface SMTCounterSkillData extends SkillData {
 	chance: number;
 	element: SMTCounterAffinity;
 	power: SMTCounterPower;
+	shroud?: boolean;
 }
 
 export interface SpringSkillData extends SkillData {
