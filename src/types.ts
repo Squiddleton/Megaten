@@ -78,7 +78,7 @@ export interface SMTCounterPower extends BasePower {
 }
 
 /** Barriers formed by a Skill instance */
-export type Barrier = 'Painting' | 'Kannabi Veil' | 'Tetrakarn' | 'Makarakarn' | 'Shield of Justice' | 'Tetraja' | `${DamagingAffinity} Block`;
+export type Barrier = 'Painting' | 'Kannabi Veil' | 'Tetrakarn' | 'Makarakarn' | 'Shield of Justice' | 'Tetraja' | `${Exclude<DamagingAffinity, PersonaAffinity | 'Almighty'>} Block`;
 
 export type BoostStack = '+' | 'x';
 
