@@ -107,6 +107,62 @@ export namespace BattleThemes {
 		/** Plays against Demiurge's first stage */
 		DemiurgeIExodus = 'https://open.spotify.com/track/6tGRgonQSLvG1CCS8GBsIt?si=493217adfa9947e9',
 		/** Plays against Demiurge's second stage */
-		DemiurgeIINegai = 'https://open.spotify.com/track/7cXMQJaeGFTVuRYjrx7nZj?si=11f35477730d447c'
+		DemiurgeIINegai = 'https://open.spotify.com/track/7cXMQJaeGFTVuRYjrx7nZj?si=11f35477730d447c',
+		/** Plays against Marie's Phantom Thieves */
+		FallOut = 'https://open.spotify.com/track/0x1NnClL0MJOqhWxo3uqJ1?si=1ed7f1cec9004f80',
+		/** Plays during normal battles in Tactica */
+		Infiltrate = 'https://open.spotify.com/track/3tL8bjz0Fa5Bx84BdhIVvS?si=c899abce15524fa7',
+		/** Plays during normal battlesin Tactica */
+		GotYourTail = 'https://open.spotify.com/track/1MIWPMRDRYQsmF3UMD0Zut?si=dbdc95320e1b471c',
+		/** Plays during normal battles in Marie's Kingdom */
+		InsideTheCastle = 'https://open.spotify.com/track/1p2zEZjQSMkK3thEHQkhCQ?si=80b35c79230d4f01',
+		/** Plays against Marie's first stage */
+		MasterOfTheCastle = 'https://open.spotify.com/track/5xKoXLLtlpPHyZKzfPPFzQ?si=a81810b87eb84427',
+		/** Plays against Marie's and Yoshiki's last stages */
+		Inextinguishable = 'https://open.spotify.com/track/12KKkqG5N1w4YvUH2PmgbG?si=25bc20253c6947ff',
+		/** Plays during normal battles in Yoshiki's Kingdom */
+		UnderSurveillance = 'https://open.spotify.com/track/6d4K4JdE7WIdXUULCOZTuy?si=0e494852b6bb449f',
+		/** Plays during normal battlesin Tactica */
+		TruthOrDare = 'https://open.spotify.com/track/12g2LnxAGNtKvemsDfyD5o?si=1d782b03a0844d16',
+		/** Plays during normal battles in Yoshiki's Kingdom */
+		CastleOfContraptions = 'https://open.spotify.com/track/4UvSPsXuBanBPGI74oENAM?si=e54f6bf3a0b843c3',
+		/** Plays against Yoshiki's first stage */
+		FeudalLord = 'https://open.spotify.com/track/5cOy8LxGHrCNERSQxWssN2?si=7f5f358fafe54b1e',
+		/** Plays during normal battles in Shadow Toshiro's Kingdom */
+		HellBeyondTheDoor = 'https://open.spotify.com/track/3HXxJUu6CEQQDTbMlpbisW?si=28b5aa84939c490d',
+		/** Plays during normal battles in Shadow Toshiro's Kingdom */
+		SearchingForTheKey = 'https://open.spotify.com/track/2NGoAicZ8Gg1Dgbq9dEHn8?si=80a38354e7bb4fc8',
+		/** Plays during normal battles in Shadow Toshiro's Kingdom */
+		TheTrueSinner = 'https://open.spotify.com/track/2NoWgx5a7EPa6Fwyro6tSs?si=bf7799bae447456b',
+		/** Plays against Marie's second stage */
+		AffairOfHonor = 'https://open.spotify.com/track/2YbzCHYo4vkGpU8EHmu96K?si=e89559c228014828',
+		/** Plays against Shadow Toshiro */
+		AlterEgo = 'https://open.spotify.com/track/6iPj1HiF88Ax4iasBB63dY?si=09f762d10ca84f6b',
+		/** Plays against Eri Natsuhara */
+		AbyssOfDespair = 'https://open.spotify.com/track/6oz8HA97SWDrdyInVK7mO6?si=4f5b969e8b4946d1',
+		/** Plays against normal battles in Salmael's Kingdom */
+		ThePathToGod = 'https://open.spotify.com/track/1ly6i8qjqM9DMpKuO2uMSm?si=4e7976e0c414428c',
+		/** Plays against Marie and Yoshiki in Salmael's Kingdom */
+		InextinguishableAnotherVersion = 'https://open.spotify.com/track/2EKeV1BoIc49dPfZRupEv3?si=3cbae154b2ca4392',
+		/** Plays against Salmael's first stage */
+		RevolutionIsABlade = 'https://open.spotify.com/track/3RBdH33Ak2JOCNoLaIEGFw?si=133a5e9b6df84d17',
+		/** Plays against Salmael's second stage */
+		Mastermind = 'https://open.spotify.com/track/6xFHfvF5YA7qTKPlH4XlUY?si=61ec10026a994e73',
+		/** Plays during Challenge Battles in Tactica */
+		PrisonLabor2023 = 'https://open.spotify.com/track/6WqwGhgeCByBx82FGpoqF6?si=12a485c5dcd742b5',
+		/** Plays during normal battles in The Streets */
+		Puzzlement = 'https://open.spotify.com/track/0W1boALd5gIw0RF6zKx5WC?si=e7802b2063f34f1a',
+		/** Plays during normal battles in The Streets */
+		IAmHere = 'https://open.spotify.com/track/50jVTIEErCZWpVjisH4p4Y?si=a505b471a25a4d06',
+		/** Plays against Guernica */
+		QuietStorm = 'https://open.spotify.com/track/7qxlqbWhVxzIuIb1gUJJ9G?si=fdb422404c3248b9',
+		/** Plays during normal battles in The Streets */
+		TheNightWeStood = 'https://open.spotify.com/track/01eDPGlMKJROidqY7thAY0?si=c0a47de994384c37',
+		/** Plays during normal battles in The Streets */
+		ABurden = 'https://open.spotify.com/track/7cw5OkCVRuFC6kaUiM7v46?si=6782876ba73845de',
+		/** Plays against Jerri's first stage */
+		DiscipleOfGod = 'https://open.spotify.com/track/6qIxwldo71mViUdsK6oN9w?si=c57a6e3d7036482b',
+		/** Plays against Jerri's second stage */
+		Providence = 'https://open.spotify.com/track/6HdxcOlr2JxA18RHkdxwsR?si=13020d50ad4f44b9'
 	}
 }
