@@ -1,11 +1,11 @@
 import { readFileSync } from 'node:fs';
 import path from 'node:path';
 import { formatPossessive, normalize } from '@squiddleton/util';
-import type { DemonData, PersonaData } from './dataTypes';
-import demonData from './demonData';
-import { MegatenError } from './error';
-import { AnySkill, Skill } from './skill';
-import type { AnyGame, Arcana, DemonAffinities, DemonAlignment, DemonResistances, DemonSkill, DemonStats, If, PersonaGame, PersonaRace, SMTRace, Stage } from './types';
+import type { DemonData, PersonaData } from './dataTypes.js';
+import demonData from './demonData.js';
+import { MegatenError } from './error.js';
+import { AnySkill, Skill } from './skill.js';
+import type { AnyGame, Arcana, DemonAffinities, DemonAlignment, DemonResistances, DemonSkill, DemonStats, If, PersonaGame, PersonaRace, SMTRace, Stage } from './types.js';
 
 function isPersona(demon: Demon | DemonData): demon is Persona {
 	return demon.race === 'Persona';

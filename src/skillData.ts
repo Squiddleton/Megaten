@@ -1,4 +1,4 @@
-import type { AnySkillData } from './skill';
+import type { AnySkillData } from './skill.js';
 
 const skillData: Readonly<AnySkillData[]> = [
 	{

@@ -1,4 +1,4 @@
-import type { DemonData, PersonaData } from './dataTypes';
+import type { DemonData, PersonaData } from './dataTypes.js';
 
 const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] = Object.freeze([
 	{
