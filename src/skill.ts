@@ -119,7 +119,7 @@ export class AilmentSkill extends Skill implements AilmentSkillData {
 	/**
 	 * The skill's special or notable features
 	 *
-	 * @deprecated Use AilmentSkill#debuffs instead
+	 * @deprecated Use AilmentSkill#debuffs instead.
 	 */
 	flags: Debuff[];
 	/** The range that the skill targets */
