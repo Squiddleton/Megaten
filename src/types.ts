@@ -163,7 +163,13 @@ export type HPMP = 'HP' | 'MP';
 /** The cost stat that a MasterSkill instance decreases */
 export type MasterStat = HPMP | 'HPMP';
 /** The stat that a RegenSkill instance regenerates */
-export type HPMPAil = MasterStat | 'AIL';
+export type RegenStat = MasterStat | 'AIL';
+/**
+ * The stat that a RegenSkill instance regenerates
+ *
+ * @deprecated Use RegenStat instead.
+ */
+export type HPMPAil = RegenStat;
 /** The stat that a PostBattleSkill instance increases */
 export type PostBattleStat = MasterStat | 'EXP' | 'Money';
 
