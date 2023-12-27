@@ -741,9 +741,6 @@ export class RecoverySkill extends Skill implements RecoverySkillData {
 		else if (ailments.length > 0) {
 			this.description = `Cures ${ailments.join('/')} for ${isParty ? 'all allies' : 'one ally'}.`;
 		}
-		else if (flags.includes('Negate')) {
-			this.description = `${amount} HP recovery for all allies. Cancels debuffs and raises all stats 1 tier for 3 turns.`;
-		}
 		else if (flags.includes('Revive') && amount !== null) {
 			this.description = flags.includes('Summon')
 				? 'Summons 1 demon at full HP. Effective on dead members as well.'
