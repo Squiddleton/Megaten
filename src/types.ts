@@ -160,10 +160,10 @@ export type EvasionBoostCriteria = 'Surrounded' | 'Rain/Snow';
 
 /** The HP or MP stats */
 export type HPMP = 'HP' | 'MP';
-/** The stat that a RegenSkill instance regenerates */
-export type HPMPAil = HPMP | 'HPMP' | 'AIL';
 /** The cost stat that a MasterSkill instance decreases */
-export type MasterStat = Exclude<HPMPAil, 'AIL'>;
+export type MasterStat = HPMP | 'HPMP';
+/** The stat that a RegenSkill instance regenerates */
+export type HPMPAil = MasterStat | 'AIL';
 /** The stat that a PostBattleSkill instance increases */
 export type PostBattleStat = MasterStat | 'EXP' | 'Money';
 
