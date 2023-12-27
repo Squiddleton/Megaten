@@ -114,18 +114,25 @@ export class AilmentSkill extends Skill implements AilmentSkillData {
 	chance: number;
 	/** The skill's MP cost */
 	cost: number;
-	/** The skill's special or notable features */
+	/** Debuffs that the skill applies */
+	debuffs: Debuff[];
+	/**
+	 * The skill's special or notable features
+	 *
+	 * @deprecated Use AilmentSkill#debuffs instead
+	 */
 	flags: Debuff[];
 	/** The range that the skill targets */
 	range: AilmentRange;
 	constructor(data: AilmentSkillData) {
-		const { ailments, flags = [], range } = data;
+		const { ailments, flags: debuffs = [], range } = data;
 		super(data);
-		this.description = `Chance of inflicting ${ailments.join(' and ')} to ${range === 'One' ? '1 foe' : 'all foes'}${flags.length === 0 ? '' : `and lowers ${flags.map(flag => flag.split(' ')[0]).join('')} by ${flags.every(flag => flag.includes('Greatly')) ? '2 ranks' : '1 rank'} for 3 turns`}.`;
+		this.description = `Chance of inflicting ${ailments.join(' and ')} to ${range === 'One' ? '1 foe' : 'all foes'}${debuffs.length === 0 ? '' : `and lowers ${debuffs.map(debuff => debuff.split(' ')[0]).join('')} by ${debuffs.every(debuff => debuff.includes('Greatly')) ? '2 ranks' : '1 rank'} for 3 turns`}.`;
 		this.ailments = ailments;
 		this.chance = data.chance;
 		this.cost = data.cost;
-		this.flags = flags;
+		this.debuffs = debuffs;
+		this.flags = this.debuffs;
 		this.range = range;
 	}
 }
