@@ -4970,7 +4970,7 @@ const skillData: Readonly<AnySkillData[]> = [
 			'Accuracy/Evasion'
 		],
 		flags: [
-			'Negate'
+			'Revert Debuffs'
 		]
 	},
 	{
