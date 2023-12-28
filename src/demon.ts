@@ -1,4 +1,5 @@
 import { readFileSync } from 'node:fs';
+import { readFile } from 'node:fs/promises';
 import path from 'node:path';
 import { formatPossessive, normalize } from '@squiddleton/util';
 import type { DemonData, PersonaData } from './dataTypes.js';
@@ -63,6 +64,10 @@ export class Demon<PersonaBased extends boolean = boolean> implements DemonData<
 		this.game = data.game;
 		this.alignment = data.alignment;
 		this.lore = data.lore;
+	}
+	/** Asynchronously gets an image of the demon */
+	getImage() {
+		return readFile(path.join(__dirname, '..', `images/demons/${this.devName}.png`));
 	}
 	/** Whether the demon is a Persona instance */
 	isPersona(): this is Persona {
