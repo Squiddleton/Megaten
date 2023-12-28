@@ -1,41 +1,41 @@
 {
-  "name": "megaten",
-  "version": "2.1.0",
-  "description": "An unofficial collection of data from the Shin Megami Tensei and Persona games.",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "author": "Squiddleton",
-  "license": "MIT",
-  "keywords": [
-    "megaten",
-    "shin megami tensei",
-    "smt",
-    "persona",
-    "atlus"
-  ],
-  "repository": "github:Squiddleton/Megaten",
-  "homepage": "https://github.com/Squiddleton/Megaten#readme",
-  "bugs": "https://github.com/Squiddleton/Megaten/issues",
-  "scripts": {
-    "lint": "eslint . --fix",
-    "build": "tsc",
-    "prepublishOnly": "npm run build",
-    "start": "npm run build && node ."
-  },
-  "devDependencies": {
-    "@types/node": "^14.18.36",
-    "@typescript-eslint/eslint-plugin": "^5.43.0",
-    "@typescript-eslint/parser": "^5.43.0",
-    "eslint": "^8.28.0",
-    "eslint-import-resolver-typescript": "^3.5.2",
-    "eslint-plugin-import": "^2.26.0",
-    "eslint-plugin-tsdoc": "^0.2.17",
-    "typescript": "^4.9.3"
-  },
-  "dependencies": {
-    "@squiddleton/util": "^1.0.1"
-  },
-  "engines": {
-    "node": ">=14.0.0"
-  }
+	"name": "megaten",
+	"version": "2.1.0",
+	"description": "An unofficial collection of data from the Shin Megami Tensei and Persona games.",
+	"main": "dist/index.js",
+	"types": "dist/index.d.ts",
+	"author": "Squiddleton",
+	"license": "MIT",
+	"keywords": [
+		"megaten",
+		"shin megami tensei",
+		"smt",
+		"persona",
+		"atlus"
+	],
+	"repository": "github:Squiddleton/Megaten",
+	"homepage": "https://github.com/Squiddleton/Megaten#readme",
+	"bugs": "https://github.com/Squiddleton/Megaten/issues",
+	"scripts": {
+		"lint": "eslint . --fix",
+		"build": "tsc",
+		"prepublishOnly": "npm run build",
+		"start": "npm run build && node ."
+	},
+	"devDependencies": {
+		"@types/node": "^14.18.36",
+		"@typescript-eslint/eslint-plugin": "^5.43.0",
+		"@typescript-eslint/parser": "^5.43.0",
+		"eslint": "^8.28.0",
+		"eslint-import-resolver-typescript": "^3.5.2",
+		"eslint-plugin-import": "^2.26.0",
+		"eslint-plugin-tsdoc": "^0.2.17",
+		"typescript": "^4.9.3"
+	},
+	"dependencies": {
+		"@squiddleton/util": "^1.0.1"
+	},
+	"engines": {
+		"node": ">=14.0.0"
+	}
 }
