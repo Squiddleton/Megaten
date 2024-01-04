@@ -176,17 +176,16 @@ export const smt5Bosses: SMT5BossData[] = [
 				Seal: 'Null'
 			},
 			weak: [
+				'Ice'
+			],
+			resist: [],
+			null: [
 				'Dark'
 			],
-			resist: [
-				'Elec',
-				'Force'
+			drain: [
+				'Fire'
 			],
-			null: [],
-			drain: [],
-			repel: [
-				'Light'
-			]
+			repel: []
 		},
 		alignment: {
 			moral: 'Light',
@@ -3636,11 +3635,11 @@ export const smt5Bosses: SMT5BossData[] = [
 				Seal: 'Null'
 			},
 			weak: [
-				'Fire'
+				'Force',
+				'Light'
 			],
 			resist: [
-				'Ice',
-				'Force'
+				'Fire'
 			],
 			null: [
 				'Dark'
@@ -3699,11 +3698,12 @@ export const smt5Bosses: SMT5BossData[] = [
 				Seal: 'Null'
 			},
 			weak: [
-				'Fire'
+				'Force',
+				'Light'
 			],
 			resist: [
-				'Ice',
-				'Force'
+				'Fire',
+				'Ice'
 			],
 			null: [
 				'Dark'
@@ -5049,11 +5049,11 @@ export const smt5Bosses: SMT5BossData[] = [
 			weak: [
 				'Fire'
 			],
-			resist: [
+			resist: [],
+			null: [
 				'Elec',
 				'Dark'
 			],
-			null: [],
 			drain: [],
 			repel: [
 				'Force'
