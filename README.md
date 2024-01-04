@@ -258,6 +258,10 @@ BattleThemes.ShinMegamiTensei5.Destruction; // 'https://open.spotify.com/track/2
 BattleThemes.Persona5.LastSurprise; // 'https://open.spotify.com/track/4cPnNnTMkJ6soUOUzEtmcp?si=01eee74b90ab45a9'
 ```
 
+### Enemies
+
+The arrays `smt5StandardEnemies` and `smt5Bosses` contain data for Shin Megami Tensei V standard enemies and bosses, respectively. Due to their simplistic nature, each is a normal object rather than a class instance. Bosses have the same structure as standard enemies except for the addition of a `theme` property with their battle theme and an optional `variant` property for special designs of the character, such as Amanozako's "Berserk" variant and Lahmu's "Bound" and "Unbound" variants.
+
 ## Notes
 
 * Attack skills prior to SMTV have their base power adjusted to be proportional to newer damage values. If you need damage values relative to particular games, please check the links in the Credits section.
