@@ -4,14 +4,16 @@
 
 A fan-made, unofficial collection of demons and skills from the "Megaten" series, primarily consisting of the Shin Megami Tensei and Persona franchises.
 
-This contains the demons/Personas and skills from the following games, with more being added over time:
+This package currently contains the following data from the games, with more being added over time:
 
-* Shin Megami Tensei V
-* Persona 5/Royal/Strikers
-* Persona 4/Golden
-* **Party Personas Only** Persona 3/Portable/FES
+Game | Skills | Demons/Personas | Guests/Party Member Personas | Enemies/Shadows | Bosses
+-------- | -------- | -------- | -------- | -------- | --------
+Shin Megami Tensei V | Yes | Yes | No | Yes | Yes
+Persona 5 (Vanilla/Royal/Strikers) | Yes | Yes | Yes | No | No
+Persona 4 (Vanilla/Golden) | Yes | Yes | Yes | No | No
+Persona 3 (Vanilla/FES/Portable) | No | No | Yes | No | No
 
-NOTE: This is **not** a 1:1 database of all past data. Information is adjusted to the latest mainstream release, and more changes are found in the Notes section.
+NOTE: This is **not** a 1:1 database of all past data. Information such as MP amounts and damage values may be adjusted to the latest mainstream release, and more changes are found in the Notes section.
 
 ## Usage
 
