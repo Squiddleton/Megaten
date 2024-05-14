@@ -24,7 +24,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		range: 'All',
 		cost: 12,
 		ailments: [
-			'Fear'
+			'Despair'
 		],
 		chance: 55
 	},
