@@ -6,7 +6,7 @@ import type { DemonData, PersonaData } from './dataTypes.js';
 import demonData from './demonData.js';
 import { MegatenError } from './error.js';
 import { AnySkill, Skill } from './skill.js';
-import type { AnyGame, Arcana, DemonAffinities, DemonAlignment, DemonResistances, DemonSkill, DemonStats, If, PersonaGame, PersonaRace, SMTRace, Stage } from './types.js';
+import type { AnyGame, Arcana, DemonAffinities, DemonAlignment, DemonOrigin, DemonResistances, DemonSkill, DemonStats, If, PersonaGame, PersonaRace, SMTRace, Stage } from './types.js';
 
 function isPersona(demon: Demon | DemonData): demon is Persona {
 	return demon.race === 'Persona';
@@ -48,6 +48,8 @@ export class Demon<PersonaBased extends boolean = boolean> implements DemonData<
 	alignment: If<PersonaBased, null, DemonAlignment>;
 	/** The demon's backstory, or null for older Personas */
 	lore: If<PersonaBased, string | null, string>;
+	/** The demon's mythological origin */
+	origin: DemonOrigin;
 	constructor(data: DemonData<PersonaBased>) {
 		this.name = data.name;
 		this.aliases = data.aliases ?? [];
@@ -64,6 +66,7 @@ export class Demon<PersonaBased extends boolean = boolean> implements DemonData<
 		this.game = data.game;
 		this.alignment = data.alignment;
 		this.lore = data.lore;
+		this.origin = data.origin;
 	}
 	/** Asynchronously gets an image of the demon */
 	getImage() {

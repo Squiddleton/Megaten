@@ -114,6 +114,9 @@ export interface DemonAffinities<PersonaBased extends boolean = boolean> {
 	inherit: InheritAffinity | null;
 }
 
+/** A demon's mythological origin */
+export type DemonOrigin = 'Aboriginal' | 'Abrahamic' | 'Arabian' | 'ATLUS Original' | 'Balinese' | 'Buddhist' | 'Buryat' | 'Canaanite' | 'Celtic' | 'Chinese' | 'Egyptian' | 'European' | 'Filipino' | 'Greco-Roman' | 'Haitian' | 'Hindu' | 'Japanese' | 'Lithuanian' | 'Lovecraftian' | 'Historical' | 'Mesopotamian' | 'Modern Fiction' | 'Norse' | 'North American' | 'Slavic' | 'South American' | 'Universal' | 'Zoroastrian';
+
 /** A demon's ailment and affinity resistances */
 export interface DemonResistances<PersonaBased extends boolean = boolean> {
 	/** Ailments that the demon is weak to, resists, or nullifies */

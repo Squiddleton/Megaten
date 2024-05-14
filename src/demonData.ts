@@ -83,7 +83,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Dark',
 			ethical: 'Chaos'
 		},
-		lore: 'The king of the abyss that appears in the Book of Revelation of the New Testament.\nHe controls locusts and plagues and leads the seventh order of demons who are set to appear at the sounding of the fifth trumpet on Judgment Day, when it is said that will bring horde of locusts to make the people suffer. His name in Hebrew means "destroyer" or "endless pit". It is thought that his origins lie in deification of the natural disasters caused by locust swarms.'
+		lore: 'The king of the abyss that appears in the Book of Revelation of the New Testament.\nHe controls locusts and plagues and leads the seventh order of demons who are set to appear at the sounding of the fifth trumpet on Judgment Day, when it is said that will bring horde of locusts to make the people suffer. His name in Hebrew means "destroyer" or "endless pit". It is thought that his origins lie in deification of the natural disasters caused by locust swarms.',
+		origin: 'Abrahamic'
 	},
 	{
 		name: 'Abdiel',
@@ -161,7 +162,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Light',
 			ethical: 'Law'
 		},
-		lore: 'A high-ranking angel that is wholly devoted to God. The name Abdiel carries the meaning of "slave to God," which supposedly originates from the Arabic word for "slave".\nOf the angels who followed Satan, Abdiel was the only one to reject the temptation to rebel against God, and instead received God\'s praises for returning to His side. Abdiel then led the angels to fight against Lucifer.'
+		lore: 'A high-ranking angel that is wholly devoted to God. The name Abdiel carries the meaning of "slave to God," which supposedly originates from the Arabic word for "slave".\nOf the angels who followed Satan, Abdiel was the only one to reject the temptation to rebel against God, and instead received God\'s praises for returning to His side. Abdiel then led the angels to fight against Lucifer.',
+		origin: 'Abrahamic'
 	},
 	{
 		name: 'Abdiel -Fallen-',
@@ -249,7 +251,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Neutral',
 			ethical: 'Law'
 		},
-		lore: 'A high-ranking angel that is devoted to God. The name carries the meaning of "slave to God," which supposedly originates from the Arabic word for "slave".\nOf the angels who followed Satan, Abdiel was the only one to reject the temptation to rebel against God, and instead received praise for returning to His side. Abdiel took this form after resolving to protect the order that God created and thus fell to darkness to obtain power greater than that of the angels.'
+		lore: 'A high-ranking angel that is devoted to God. The name carries the meaning of "slave to God," which supposedly originates from the Arabic word for "slave".\nOf the angels who followed Satan, Abdiel was the only one to reject the temptation to rebel against God, and instead received praise for returning to His side. Abdiel took this form after resolving to protect the order that God created and thus fell to darkness to obtain power greater than that of the angels.',
+		origin: 'Abrahamic'
 	},
 	{
 		name: 'Adramelech',
@@ -330,7 +333,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Neutral',
 			ethical: 'Chaos'
 		},
-		lore: 'Chancellor of Hell and supervisor of Satan\'s wardrobe. He has the body of a mule, though he may also sometimes appear as a peacock.\nHe was worshipped by the Assyrians, who occasionally offered him children as sacrifice.'
+		lore: 'Chancellor of Hell and supervisor of Satan\'s wardrobe. He has the body of a mule, though he may also sometimes appear as a peacock.\nHe was worshipped by the Assyrians, who occasionally offered him children as sacrifice.',
+		origin: 'Abrahamic'
 	},
 	{
 		name: 'Aeros',
@@ -393,7 +397,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Light',
 			ethical: 'Neutral'
 		},
-		lore: 'A wind elemental; one of the four elements in energy form.\nIt is said to be a fusion of "moist" and "heat" essences, forming the basis for an exponential energy increase.'
+		lore: 'A wind elemental; one of the four elements in energy form.\nIt is said to be a fusion of "moist" and "heat" essences, forming the basis for an exponential energy increase.',
+		origin: 'Universal'
 	},
 	{
 		name: 'Agathion',
@@ -457,7 +462,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Neutral',
 			ethical: 'Law'
 		},
-		lore: 'A familiar with no physical body that only appears during the day.\nThere is no consensus on the appearance of an Agathion: it can resemble a human, bird, or animal. They are usually sealed away in bottles or pots but can also be sealed in rings or talismans. The term Agathion is also used as a general term for familiars.'
+		lore: 'A familiar with no physical body that only appears during the day.\nThere is no consensus on the appearance of an Agathion: it can resemble a human, bird, or animal. They are usually sealed away in bottles or pots but can also be sealed in rings or talismans. The term Agathion is also used as a general term for familiars.',
+		origin: 'European'
 	},
 	{
 		name: 'Agnes',
@@ -580,6 +586,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 		game: 'p5',
 		alignment: null,
 		lore: 'Another name of Johanna, the female pope of the middle ages. Posing as a man, her wits and ability helped her climb the ranks. Her story shook the Catholic Church to its core.',
+		origin: 'European',
 		user: 'Makoto Niijima',
 		stage: 3,
 		evoSkillName: 'Checkmate'
@@ -647,7 +654,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Dark',
 			ethical: 'Chaos'
 		},
-		lore: 'A fairy in Lithuanian mythology.\nIndoors, it takes the form of a black cat or rooster. Outdoors, it takes the form of a small dragon or a snake with a burning tail. The Aitvaras makes the home it inhabits rich by stealing from its neighbors. It is said that it typically demands an omelette as compensation and is difficult to chase away once it\'s settled into a home. It can, however, be exterminated by shining it with the flame of a candle purified by the church.'
+		lore: 'A fairy in Lithuanian mythology.\nIndoors, it takes the form of a black cat or rooster. Outdoors, it takes the form of a small dragon or a snake with a burning tail. The Aitvaras makes the home it inhabits rich by stealing from its neighbors. It is said that it typically demands an omelette as compensation and is difficult to chase away once it\'s settled into a home. It can, however, be exterminated by shining it with the flame of a candle purified by the church.',
+		origin: 'Lithuanian'
 	},
 	{
 		name: 'Al Azif',
@@ -700,6 +708,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 		game: 'p5',
 		alignment: null,
 		lore: 'The original name of the Necronomicon, a tome of the Cthulhu Mythos\'s mysteries. Said to have been authored by Abdul Alhazred, a poet and devotee of Cthulhu known as the \'mad Arab.\'',
+		origin: 'Lovecraftian',
 		user: 'Futaba Sakura',
 		stage: 3,
 		evoSkillName: 'Ultimate Support'
@@ -781,7 +790,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Unknown',
 			ethical: 'Unknown'
 		},
-		lore: 'A mysterious spirit that takes the form of a blonde girl. Despite her innocent appearance, she possesses immeasurable magical strength.\nSome say she is the ghost of an English girl who died a tragic death. Others say she is merely an apparition born from someone\'s imagination.'
+		lore: 'A mysterious spirit that takes the form of a blonde girl. Despite her innocent appearance, she possesses immeasurable magical strength.\nSome say she is the ghost of an English girl who died a tragic death. Others say she is merely an apparition born from someone\'s imagination.',
+		origin: 'European'
 	},
 	{
 		name: 'Alilat',
@@ -866,7 +876,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Light',
 			ethical: 'Chaos'
 		},
-		lore: 'The Arabian mother goddess also known as Allat.\nShe was thought to reside in the Black Stone at the Kaaba, where and her son, Dusura, were worshipped by desert nomads.'
+		lore: 'The Arabian mother goddess also known as Allat.\nShe was thought to reside in the Black Stone at the Kaaba, where and her son, Dusura, were worshipped by desert nomads.',
+		origin: 'Arabian'
 	},
 	{
 		name: 'Alraune',
@@ -936,7 +947,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Dark',
 			ethical: 'Law'
 		},
-		lore: 'A cursed Norse spirit in the form of a beautiful woman, known to bloom from the blood of hanged men. She was believed to tell secrets if properly tended to.'
+		lore: 'A cursed Norse spirit in the form of a beautiful woman, known to bloom from the blood of hanged men. She was believed to tell secrets if properly tended to.',
+		origin: 'Norse'
 	},
 	{
 		name: 'Amanozako',
@@ -1021,7 +1033,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Light',
 			ethical: 'Neutral'
 		},
-		lore: 'A Japanese goddess commonly thought to be the ancestor of the tengu and amanojaku.\nThe famed warrior Susano-o once allowed his tempestuous spirit to build up to such an intense degree, he vomited her out as a result. Similarly to Susano-o, she has a wild personality and tends to go on a rampage if she doesn\'t get her way. It is said that she can hurl even the most powerful gods a great distance, and that her fangs can mangle the very sharpest of blades. Like amanojaku, she is prone to doing the exact opposite of what is expected.'
+		lore: 'A Japanese goddess commonly thought to be the ancestor of the tengu and amanojaku.\nThe famed warrior Susano-o once allowed his tempestuous spirit to build up to such an intense degree, he vomited her out as a result. Similarly to Susano-o, she has a wild personality and tends to go on a rampage if she doesn\'t get her way. It is said that she can hurl even the most powerful gods a great distance, and that her fangs can mangle the very sharpest of blades. Like amanojaku, she is prone to doing the exact opposite of what is expected.',
+		origin: 'Japanese'
 	},
 	{
 		name: 'Amaterasu',
@@ -1136,6 +1149,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 		game: 'p4',
 		alignment: null,
 		lore: null,
+		origin: 'Japanese',
 		user: 'Yukiko Amagi',
 		stage: 2,
 		evoSkillName: null
@@ -1213,7 +1227,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Light',
 			ethical: 'Neutral'
 		},
-		lore: 'The goddess of entertainment in Japanese lore.\nShe governs many sacred dances and is most famous for the provocative dance she used to lure out Amaterasu, who had barricaded herself inside a cave. She later became Sarutahiko\'s wife.'
+		lore: 'The goddess of entertainment in Japanese lore.\nShe governs many sacred dances and is most famous for the provocative dance she used to lure out Amaterasu, who had barricaded herself inside a cave. She later became Sarutahiko\'s wife.',
+		origin: 'Japanese'
 	},
 	{
 		name: 'Amon',
@@ -1296,7 +1311,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Dark',
 			ethical: 'Chaos'
 		},
-		lore: 'One of the 72 demons of Solomon\'s Ars Goetia.\nHe is the seventh spirit of Goetia and the Grand Marquis of Hell. Amon is depicted in several different forms, sometimes appearing as a wolf with a serpent\'s tail and other times appearing as having the head of an owl, the torso of a wolf and the tail of a snake sometimes replacing his hind legs altogether. It is said that he bestows knowledge of the past and the future. He is also incredibly loyal, having led his army to assist Satan when Satan rebelled against God.'
+		lore: 'One of the 72 demons of Solomon\'s Ars Goetia.\nHe is the seventh spirit of Goetia and the Grand Marquis of Hell. Amon is depicted in several different forms, sometimes appearing as a wolf with a serpent\'s tail and other times appearing as having the head of an owl, the torso of a wolf and the tail of a snake sometimes replacing his hind legs altogether. It is said that he bestows knowledge of the past and the future. He is also incredibly loyal, having led his army to assist Satan when Satan rebelled against God.',
+		origin: 'Abrahamic'
 	},
 	{
 		name: 'Anahita',
@@ -1377,7 +1393,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Light',
 			ethical: 'Neutral'
 		},
-		lore: 'A Zoroastrian goddess whose name means "pure."\nWhile primarily known as a beautiful deity who rules over rivers and water, she is also the goddess of health, fertility, safe delivery, production of livestock, harvest, wealth and expansion of land. She is often portrayed as an elegant virgin wearing a crown decorated with numerous stars in addition to a golden necklace and a golden cape, and is typically shown holding a water jug. She is also a brave god of war astride a four-wheeled chariot, toppling demons and tyrants alike. Both her allies and her enemies have been said to have offered their prayers to her.'
+		lore: 'A Zoroastrian goddess whose name means "pure."\nWhile primarily known as a beautiful deity who rules over rivers and water, she is also the goddess of health, fertility, safe delivery, production of livestock, harvest, wealth and expansion of land. She is often portrayed as an elegant virgin wearing a crown decorated with numerous stars in addition to a golden necklace and a golden cape, and is typically shown holding a water jug. She is also a brave god of war astride a four-wheeled chariot, toppling demons and tyrants alike. Both her allies and her enemies have been said to have offered their prayers to her.',
+		origin: 'Zoroastrian'
 	},
 	{
 		name: 'Ananta',
@@ -1455,7 +1472,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Light',
 			ethical: 'Chaos'
 		},
-		lore: 'The 1,000-headed serpent of Hindu legend, Ananta is Sanskrit for "infinite."\nVishnu slept atop him before waking up to create the universe.'
+		lore: 'The 1,000-headed serpent of Hindu legend, Ananta is Sanskrit for "infinite."\nVishnu slept atop him before waking up to create the universe.',
+		origin: 'Hindu'
 	},
 	{
 		name: 'Anat',
@@ -1578,6 +1596,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 		game: 'p5',
 		alignment: null,
 		lore: 'The daughter of Ugaritic\'s highest god El. She is the goddess of fertility, as well as hunting and war. Her characteristics are the characteristics of the seasons in Canaan.',
+		origin: 'Canaanite',
 		user: 'Makoto Niijima',
 		stage: 2,
 		evoSkillName: 'Evade Psy'
@@ -1654,7 +1673,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Neutral',
 			ethical: 'Chaos'
 		},
-		lore: 'One of the 72 demons of the Goetia.\nThe great Marquis of Hell, he appears where there is battle to stoke the hatred within soldiers. He helps defeat the enemies of those who summon him.'
+		lore: 'One of the 72 demons of the Goetia.\nThe great Marquis of Hell, he appears where there is battle to stoke the hatred within soldiers. He helps defeat the enemies of those who summon him.',
+		origin: 'Abrahamic'
 	},
 	{
 		name: 'Angel',
@@ -1722,7 +1742,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Neutral',
 			ethical: 'Law'
 		},
-		lore: 'Ninth of the nine orders of angels.\nThey are closest in nature to humans. They watch over individuals and offer warning to those who stray from the path.'
+		lore: 'Ninth of the nine orders of angels.\nThey are closest in nature to humans. They watch over individuals and offer warning to those who stray from the path.',
+		origin: 'Abrahamic'
 	},
 	{
 		name: 'Anubis',
@@ -1801,7 +1822,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Light',
 			ethical: 'Neutral'
 		},
-		lore: 'The jackal-headed god of the dead and embalming from Egyptian myth.\nHe weighs the hearts of the dead to determine their final destination. He is also said to govern the technique of mummification'
+		lore: 'The jackal-headed god of the dead and embalming from Egyptian myth.\nHe weighs the hearts of the dead to determine their final destination. He is also said to govern the technique of mummification',
+		origin: 'Egyptian'
 	},
 	{
 		name: 'Anzu',
@@ -1876,7 +1898,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Dark',
 			ethical: 'Law'
 		},
-		lore: 'An evil deity of Mesopotamian folklore with an eagle\'s body and lion\'s head.\nWhile the god Enlil purified himself, Anzu stole the Tablet of Destinies from him in an attempt to become the chief god.'
+		lore: 'An evil deity of Mesopotamian folklore with an eagle\'s body and lion\'s head.\nWhile the god Enlil purified himself, Anzu stole the Tablet of Destinies from him in an attempt to become the chief god.',
+		origin: 'Mesopotamian'
 	},
 	{
 		name: 'Apsaras',
@@ -1947,7 +1970,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Neutral',
 			ethical: 'Law'
 		},
-		lore: 'Water spirits in Hindu lore.\nThey are beautiful young women who dance for the gods. They also guide heroes who fall in battle to paradise.'
+		lore: 'Water spirits in Hindu lore.\nThey are beautiful young women who dance for the gods. They also guide heroes who fall in battle to paradise.',
+		origin: 'Hindu'
 	},
 	{
 		name: 'Aquans',
@@ -2010,7 +2034,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Light',
 			ethical: 'Neutral'
 		},
-		lore: 'A water elemental; one of the four elements in energy form.\nAccording to Aristotle, it is composed of both "moist" and "cold" essences.'
+		lore: 'A water elemental; one of the four elements in energy form.\nAccording to Aristotle, it is composed of both "moist" and "cold" essences.',
+		origin: 'Universal'
 	},
 	{
 		name: 'Arahabaki',
@@ -2091,7 +2116,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Light',
 			ethical: 'Chaos'
 		},
-		lore: 'A major deity in ancient Japanese mythology. Clay dolls were often sculpted in its image.\nHowever, because this god was known to be worshipped by a rebel, the dolls later came to be considered symbols of defiance.'
+		lore: 'A major deity in ancient Japanese mythology. Clay dolls were often sculpted in its image.\nHowever, because this god was known to be worshipped by a rebel, the dolls later came to be considered symbols of defiance.',
+		origin: 'Japanese'
 	},
 	{
 		name: 'Ara Mitama',
@@ -2158,7 +2184,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Light',
 			ethical: 'Neutral'
 		},
-		lore: 'One of the four great aspects of Shinto thought, it has the power to grant wildness and ferocity.\nIt is said to aid in one\'s bravery, growth, and endeavors, though it can potentially lead one in a negative direction.'
+		lore: 'One of the four great aspects of Shinto thought, it has the power to grant wildness and ferocity.\nIt is said to aid in one\'s bravery, growth, and endeavors, though it can potentially lead one in a negative direction.',
+		origin: 'Japanese'
 	},
 	{
 		name: 'Archangel',
@@ -2230,7 +2257,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Neutral',
 			ethical: 'Law'
 		},
-		lore: 'Eighth of the nine orders of angels.\nThey are responsible for ministering to humans and delivering messages. As warriors of the heavens, they lead the armies of heaven against the forces of darkness.'
+		lore: 'Eighth of the nine orders of angels.\nThey are responsible for ministering to humans and delivering messages. As warriors of the heavens, they lead the armies of heaven against the forces of darkness.',
+		origin: 'Abrahamic'
 	},
 	{
 		name: 'Ardha',
@@ -2298,7 +2326,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Light',
 			ethical: 'Neutral'
 		},
-		lore: 'A god of dual gender whose appearance is half that of the destroyer, Shiva, and half his wife, Parvati. Ardha is the ideal figure of Shaktism, the perfect god.'
+		lore: 'A god of dual gender whose appearance is half that of the destroyer, Shiva, and half his wife, Parvati. Ardha is the ideal figure of Shaktism, the perfect god.',
+		origin: 'Hindu'
 	},
 	{
 		name: 'Ares',
@@ -2363,7 +2392,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Light',
 			ethical: 'Chaos'
 		},
-		lore: 'The god of war in Greek myth. Other gods despised him for his cruel and violent nature. Opposed Athena, who represented strategic warfare.'
+		lore: 'The god of war in Greek myth. Other gods despised him for his cruel and violent nature. Opposed Athena, who represented strategic warfare.',
+		origin: 'Greco-Roman'
 	},
 	{
 		name: 'Ariadne',
@@ -2431,9 +2461,10 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 		game: 'p5',
 		alignment: null,
 		lore: 'A Persona of another story. She is the daughter of Minos, the king of Crete. She helped Theseus defeat the Minotaur and gave him a ball of yarn so he could escape the labyrinth.',
+		origin: 'Greco-Roman',
 		user: 'Labrys',
 		stage: 1,
-		evoSkillName: null
+		evoSkillName: 'Greco-Roman'
 	},
 	{
 		name: 'Ariadne Picaro',
@@ -2500,7 +2531,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 		},
 		game: 'p5',
 		alignment: null,
-		lore: 'A Persona turned picaro after becoming the Trickster\'s mask. She is the daughter of Minos. She helped Theseus defeat the Minoataur and gave him a ball of yarn so he could escape the Labyrinth.'
+		lore: 'A Persona turned picaro after becoming the Trickster\'s mask. She is the daughter of Minos. She helped Theseus defeat the Minoataur and gave him a ball of yarn so he could escape the Labyrinth.',
+		origin: 'Greco-Roman'
 	},
 	{
 		name: 'Arioch',
@@ -2582,7 +2614,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Dark',
 			ethical: 'Chaos'
 		},
-		lore: 'The fallen angel of Israel and the demon of vengeance.\nHis name means "ferocious lion" and he is said to aid in vengeance of those who seek his service. During his time as an angel of God, he was recognized as the guardian angel of the saint Enoch. It is said that his name originally belonged to one in either the Book of Genesis or the Book of Daniel, only to become associated with the demon thereafter.'
+		lore: 'The fallen angel of Israel and the demon of vengeance.\nHis name means "ferocious lion" and he is said to aid in vengeance of those who seek his service. During his time as an angel of God, he was recognized as the guardian angel of the saint Enoch. It is said that his name originally belonged to one in either the Book of Genesis or the Book of Daniel, only to become associated with the demon thereafter.',
+		origin: 'Abrahamic'
 	},
 	{
 		name: 'Arsène',
@@ -2640,6 +2673,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 		game: 'p5',
 		alignment: null,
 		lore: 'A being based off the main character of Maurice Leblanc\'s novels, Arsène Lupin. He appears everywhere and is a master of disguise. He is known to help law-abiding citizens.',
+		origin: 'Modern Fiction',
 		user: 'P5 Protagonist',
 		stage: 1,
 		evoSkillName: null
@@ -2725,7 +2759,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Light',
 			ethical: 'Neutral'
 		},
-		lore: 'The Greek goddess of hunting and chastity. She was often identified with the moon goddess Selene and was therefore also worshipped as a moon goddess herself.\nLike her twin brother, Apollo, her association with archery granted her the title of "far-shooter" in addition to being recognized as a bringer of plague and death. This is depicted in myth, in which she is deceived by Apollo and shoots her beloved Orion.'
+		lore: 'The Greek goddess of hunting and chastity. She was often identified with the moon goddess Selene and was therefore also worshipped as a moon goddess herself.\nLike her twin brother, Apollo, her association with archery granted her the title of "far-shooter" in addition to being recognized as a bringer of plague and death. This is depicted in myth, in which she is deceived by Apollo and shoots her beloved Orion.',
+		origin: 'Greco-Roman'
 	},
 	{
 		name: 'Artemisia',
@@ -2830,6 +2865,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 		game: 'p3',
 		alignment: null,
 		lore: null,
+		origin: 'Historical',
 		user: 'Mitsuru Kirijo',
 		stage: 2,
 		evoSkillName: null
@@ -2947,6 +2983,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 		game: 'p5',
 		alignment: null,
 		lore: 'A Middle Eastern goddess of fertilty. Many scriptures note her folklore, and there is even a mention of her as the "Queen of Heaven" in the Bible.',
+		origin: 'Abrahamic',
 		user: 'Haru Okumura',
 		stage: 2,
 		evoSkillName: 'Evade Nuke'
@@ -3017,6 +3054,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 		game: 'p5',
 		alignment: null,
 		lore: 'A Persona of another story. Due to a curse on his mother Pasiphae, he was born a bull-headed monster. Locked away in the labyrinth as the Minotaur, he wielded a double-sided axe.',
+		origin: 'Greco-Roman',
 		user: 'Shadow Labrys',
 		stage: 1,
 		evoSkillName: null
@@ -3086,7 +3124,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 		},
 		game: 'p5',
 		alignment: null,
-		lore: 'A Persona turned picaro after becoming the Trickster\'s mask. Son of Pasiphae, he was born a bull-headed monster. Locked away in the labyrinth as the Minotaur, he wielded a double-sided axe.'
+		lore: 'A Persona turned picaro after becoming the Trickster\'s mask. Son of Pasiphae, he was born a bull-headed monster. Locked away in the labyrinth as the Minotaur, he wielded a double-sided axe.',
+		origin: 'Greco-Roman'
 	},
 	{
 		name: 'Asura',
@@ -3169,7 +3208,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Light',
 			ethical: 'Chaos'
 		},
-		lore: 'A violent group of demons in Hindu lore.\nThey were very powerful and caused the gods great trouble. They are a fiercely strict group and attack anyone who runs counter to their ideals. They were originally gods of light worshipped in Persia. The Zoroastrian god Ahura Mazda was one of them.'
+		lore: 'A violent group of demons in Hindu lore.\nThey were very powerful and caused the gods great trouble. They are a fiercely strict group and attack anyone who runs counter to their ideals. They were originally gods of light worshipped in Persia. The Zoroastrian god Ahura Mazda was one of them.',
+		origin: 'Hindu'
 	},
 	{
 		name: 'Atavaka',
@@ -3247,7 +3287,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Light',
 			ethical: 'Neutral'
 		},
-		lore: 'One of the eight Yasha-o.\nHis domain is war and protection. Originally known as a wicked devourer of children, he later became one of the greatest of the Wisdom Kings after receiving the Buddha\'s enlightenment.'
+		lore: 'One of the eight Yasha-o.\nHis domain is war and protection. Originally known as a wicked devourer of children, he later became one of the greatest of the Wisdom Kings after receiving the Buddha\'s enlightenment.',
+		origin: 'Buddhist'
 	},
 	{
 		name: 'Athena',
@@ -3321,6 +3362,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 		game: 'p5',
 		alignment: null,
 		lore: 'A Persona of another story. Daughter of Zeus, and a goddess of great martial ability. She fights to protect her land or her family, but never for sheer bloodlust. Her symbol is the olive tree.',
+		origin: 'Greco-Roman',
 		user: 'Aigis',
 		stage: 2,
 		evoSkillName: null
@@ -3393,7 +3435,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 		},
 		game: 'p5',
 		alignment: null,
-		lore: 'A Persona turned picaro after becoming the Trickster\'s mask. Daughter of Zeus, and a goddess of great martial ability. She fights to protect her land or her family, but never for sheer bloodlust.'
+		lore: 'A Persona turned picaro after becoming the Trickster\'s mask. Daughter of Zeus, and a goddess of great martial ability. She fights to protect her land or her family, but never for sheer bloodlust.',
+		origin: 'Greco-Roman'
 	},
 	{
 		name: 'Atropos',
@@ -3470,7 +3513,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Neutral',
 			ethical: 'Chaos'
 		},
-		lore: 'One of the three Moirae Sisters in Greek mythology.\nShe cuts the life threads of those whose time has come.'
+		lore: 'One of the three Moirae Sisters in Greek mythology.\nShe cuts the life threads of those whose time has come.',
+		origin: 'Greco-Roman'
 	},
 	{
 		name: 'Attis',
@@ -3547,7 +3591,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Light',
 			ethical: 'Chaos'
 		},
-		lore: 'A Phrygian god who symbolizes life, death, and revival.\nHe rejected Cybele\'s love and was driven mad, dying shortly after castrating himself. Cybele then resurrected him.'
+		lore: 'A Phrygian god who symbolizes life, death, and revival.\nHe rejected Cybele\'s love and was driven mad, dying shortly after castrating himself. Cybele then resurrected him.',
+		origin: 'Greco-Roman'
 	},
 	{
 		name: 'Azumi',
@@ -3610,7 +3655,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Neutral',
 			ethical: 'Chaos'
 		},
-		lore: 'A water deity of the Azumi, a Japanese seafaring tribe. As such, it can freely control water.\nThe three gods born from Izanagi after he returned from Yomi are said to be the Azumi tribe\'s ancestors.'
+		lore: 'A water deity of the Azumi, a Japanese seafaring tribe. As such, it can freely control water.\nThe three gods born from Izanagi after he returned from Yomi are said to be the Azumi tribe\'s ancestors.',
+		origin: 'Japanese'
 	},
 	{
 		name: 'Baal',
@@ -3694,7 +3740,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Light',
 			ethical: 'Neutral'
 		},
-		lore: 'The chief Semitic god.\nBearing a name that means "Lord" or "owner," he was revered as a god of fertility in addition to being known as the god of Canaan and both brother and consort to the goddess Anat. Many demons, such as Bael, Beelzebub, Belphegor and Berith are believed to be derivations of Baal. There were even instances of him being worshipped in the very same temples as Yahweh (YHVH) in times long since passed.'
+		lore: 'The chief Semitic god.\nBearing a name that means "Lord" or "owner," he was revered as a god of fertility in addition to being known as the god of Canaan and both brother and consort to the goddess Anat. Many demons, such as Bael, Beelzebub, Belphegor and Berith are believed to be derivations of Baal. There were even instances of him being worshipped in the very same temples as Yahweh (YHVH) in times long since passed.',
+		origin: 'Canaanite'
 	},
 	{
 		name: 'Baal Zebul',
@@ -3763,7 +3810,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Dark',
 			ethical: 'Chaos'
 		},
-		lore: 'Demon whose name means "Lord of the High Place." Possibly derived from the Syrian deity Ba\'al, he presides over death and the spirits of the deceased. Many worshipped him because of this power.'
+		lore: 'Demon whose name means "Lord of the High Place." Possibly derived from the Syrian deity Ba\'al, he presides over death and the spirits of the deceased. Many worshipped him because of this power.',
+		origin: 'Abrahamic'
 	},
 	{
 		name: 'Baphomet',
@@ -3836,7 +3884,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Dark',
 			ethical: 'Chaos'
 		},
-		lore: 'An idol commonly worshipped by the Knights Templar.\nIt is a demon with the head of a goat.\nThis figure later became the idol of worship for witches as well.'
+		lore: 'An idol commonly worshipped by the Knights Templar.\nIt is a demon with the head of a goat.\nThis figure later became the idol of worship for witches as well.',
+		origin: 'European'
 	},
 	{
 		name: 'Barong',
@@ -3915,7 +3964,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Light',
 			ethical: 'Neutral'
 		},
-		lore: 'Said to live in the forests of Bali, it was an evil god whom the people sacrificed and made their guardian.\nNow a symbol of good, it is fated to war with Rangda, the avatar of evil, for all eternity.'
+		lore: 'Said to live in the forests of Bali, it was an evil god whom the people sacrificed and made their guardian.\nNow a symbol of good, it is fated to war with Rangda, the avatar of evil, for all eternity.',
+		origin: 'Balinese'
 	},
 	{
 		name: 'Basilisk',
@@ -3989,7 +4039,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Dark',
 			ethical: 'Chaos'
 		},
-		lore: 'A dark dragon from Northern Africa marked by wings and a crested crown.\nIts name means "king of snakes," and both its breath and gaze are so toxic that they instantly kill any human or animal unfortunate enough to be subjected to them.'
+		lore: 'A dark dragon from Northern Africa marked by wings and a crested crown.\nIts name means "king of snakes," and both its breath and gaze are so toxic that they instantly kill any human or animal unfortunate enough to be subjected to them.',
+		origin: 'European'
 	},
 	{
 		name: 'Beelzebub',
@@ -4078,7 +4129,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Dark',
 			ethical: 'Chaos'
 		},
-		lore: 'Lord of the Flies and the prince of Hell.\nHe is established as a high-ranking demon in the Bible and his multitude of flies are said to carry souls down to the abyss. He has been speculated to be a bastardization of the Canaanite god Baal.'
+		lore: 'Lord of the Flies and the prince of Hell.\nHe is established as a high-ranking demon in the Bible and his multitude of flies are said to carry souls down to the abyss. He has been speculated to be a bastardization of the Canaanite god Baal.',
+		origin: 'Abrahamic'
 	},
 	{
 		name: 'Belial',
@@ -4159,7 +4211,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Dark',
 			ethical: 'Chaos'
 		},
-		lore: 'One of the 72 demons of Goetia invoked by King Solomon.\nHe leads 50 legions of demons as their chief and is said to appear before his conjurer as two beautiful angels in a chariot of fire. His name means "worthless," and he is known to be exceptionally cunning, having caused the fall of Sodom and Gomorrah in addition to persecuting Jesus Christ.'
+		lore: 'One of the 72 demons of Goetia invoked by King Solomon.\nHe leads 50 legions of demons as their chief and is said to appear before his conjurer as two beautiful angels in a chariot of fire. His name means "worthless," and he is known to be exceptionally cunning, having caused the fall of Sodom and Gomorrah in addition to persecuting Jesus Christ.',
+		origin: 'Abrahamic'
 	},
 	{
 		name: 'Belphegor',
@@ -4239,7 +4292,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Dark',
 			ethical: 'Chaos'
 		},
-		lore: 'Demonic governor of the deadly sin of sloth who also excels at both invention and discovery.\nIt is rumored that he may be the disgraced form of Baal Peor, Syrian god of abundant crops.'
+		lore: 'Demonic governor of the deadly sin of sloth who also excels at both invention and discovery.\nIt is rumored that he may be the disgraced form of Baal Peor, Syrian god of abundant crops.',
+		origin: 'Abrahamic'
 	},
 	{
 		name: 'Berith',
@@ -4311,7 +4365,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Neutral',
 			ethical: 'Chaos'
 		},
-		lore: 'One of the 72 demons of Goetia.\nKnown as the Duke of Hell, he rides a gigantic horse and burns those without manners.'
+		lore: 'One of the 72 demons of Goetia.\nKnown as the Duke of Hell, he rides a gigantic horse and burns those without manners.',
+		origin: 'Abrahamic'
 	},
 	{
 		name: 'Bicorn',
@@ -4375,7 +4430,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Dark',
 			ethical: 'Neutral'
 		},
-		lore: 'An evil creature that looks like a horse with two curving horns.\nIt is said to be the opposite of a Chichevache, but theory speculates that it is actually a mistranslation of "Re\'em," a two-horned beast that appears in the Old Testament.'
+		lore: 'An evil creature that looks like a horse with two curving horns.\nIt is said to be the opposite of a Chichevache, but theory speculates that it is actually a mistranslation of "Re\'em," a two-horned beast that appears in the Old Testament.',
+		origin: 'European'
 	},
 	{
 		name: 'Bishamonten',
@@ -4455,7 +4511,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Light',
 			ethical: 'Chaos'
 		},
-		lore: 'The strongest of the Four Heavenly Kings, also known as Tamonten, and in Buddhist mythology, Vaishravana.\nHe protects the North and is recognized as the god of war. Similarly to his fellow kings, he is often depicted as a fierce warrior, clad in armor and wielding a great spear. Bishamonten is also well known as a bringer of fortune, being one of the Shichi Fukujin, the seven gods of fortune.'
+		lore: 'The strongest of the Four Heavenly Kings, also known as Tamonten, and in Buddhist mythology, Vaishravana.\nHe protects the North and is recognized as the god of war. Similarly to his fellow kings, he is often depicted as a fierce warrior, clad in armor and wielding a great spear. Bishamonten is also well known as a bringer of fortune, being one of the Shichi Fukujin, the seven gods of fortune.',
+		origin: 'Buddhist'
 	},
 	{
 		name: 'Black Frost',
@@ -4538,7 +4595,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Neutral',
 			ethical: 'Chaos'
 		},
-		lore: 'A Jack Frost that grew powerful and evil.\nThese are the evolved form of the fairly peaceful winter fairy and mark the transformation from small prankster into massively powerful entity.'
+		lore: 'A Jack Frost that grew powerful and evil.\nThese are the evolved form of the fairly peaceful winter fairy and mark the transformation from small prankster into massively powerful entity.',
+		origin: 'ATLUS Original'
 	},
 	{
 		name: 'Black Ooze',
@@ -4614,7 +4672,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Dark',
 			ethical: 'Chaos'
 		},
-		lore: 'An amoeba-like monster that attacks and eats people.\nSupposedly, it is actually a demon that failed to take form and now roams in search of Magatsushi. It is said that when a Slime\'s ability to absorb Magatsuhi goes out of control, it transforms into a Black Ooze.'
+		lore: 'An amoeba-like monster that attacks and eats people.\nSupposedly, it is actually a demon that failed to take form and now roams in search of Magatsushi. It is said that when a Slime\'s ability to absorb Magatsuhi goes out of control, it transforms into a Black Ooze.',
+		origin: 'ATLUS Original'
 	},
 	{
 		name: 'Black Rider',
@@ -4698,7 +4757,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Unknown',
 			ethical: 'Unknown'
 		},
-		lore: 'One of the Four Horsemen of the Apocalypse spoken of in the Book of Revelation.\nHe rides a black horse and carries scales, indicating the terrible famine he is to bring. He also has been given the authority to end the lives of those who are suffering.'
+		lore: 'One of the Four Horsemen of the Apocalypse spoken of in the Book of Revelation.\nHe rides a black horse and carries scales, indicating the terrible famine he is to bring. He also has been given the authority to end the lives of those who are suffering.',
+		origin: 'Abrahamic'
 	},
 	{
 		name: 'Bugs',
@@ -4771,7 +4831,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Dark',
 			ethical: 'Neutral'
 		},
-		lore: 'A type of goblin from Welsh folklore that eats children who don\'t listen to their parents.\nThey are said to look like humans covered head to toe with hair, and are recognized as an iconic monster that appears at nighttime. They are often spoken of by mothers wishing to discipline their children as noted in the popular phrase, "For naughty kids who disobey, the Bugs will come and surely prey."'
+		lore: 'A type of goblin from Welsh folklore that eats children who don\'t listen to their parents.\nThey are said to look like humans covered head to toe with hair, and are recognized as an iconic monster that appears at nighttime. They are often spoken of by mothers wishing to discipline their children as noted in the popular phrase, "For naughty kids who disobey, the Bugs will come and surely prey."',
+		origin: 'European'
 	},
 	{
 		name: 'Byakhee',
@@ -4841,7 +4902,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Unknown',
 			ethical: 'Unknown'
 		},
-		lore: 'A malformed, winged servant of the Cthulhu Mythos\' cosmic god Hastur. They can fly even in the vacuum of space and it\'s said that if you can summon one, it will carry you wherever you wish.'
+		lore: 'A malformed, winged servant of the Cthulhu Mythos\' cosmic god Hastur. They can fly even in the vacuum of space and it\'s said that if you can summon one, it will carry you wherever you wish.',
+		origin: 'Lovecraftian'
 	},
 	{
 		name: 'Byakko',
@@ -4921,7 +4983,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Light',
 			ethical: 'Neutral'
 		},
-		lore: 'One of the Ssu-Ling, celestial creatures in Chinese mythology.\nIt represents the west, the season of autumn, and the element of metal. It is believed to be the king of all beasts.'
+		lore: 'One of the Ssu-Ling, celestial creatures in Chinese mythology.\nIt represents the west, the season of autumn, and the element of metal. It is believed to be the king of all beasts.',
+		origin: 'Chinese'
 	},
 	{
 		name: 'Caesar',
@@ -5034,6 +5097,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 		game: 'p3',
 		alignment: null,
 		lore: null,
+		origin: 'Historical',
 		user: 'Akihiko Sanada',
 		stage: 2,
 		evoSkillName: null
@@ -5099,7 +5163,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Neutral',
 			ethical: 'Neutral'
 		},
-		lore: 'A fae beast from the Scottish highlands whose kingdoms can be found in tree hollows or abandoned houses.\nDog-sized, they have white tufts or hair on their chest, green, intelligent eyes, and are even capable of understanding the human language. Though they usually stick to their territory, some have been known to live with humans as normal black cats. They are generally peaceful, but should a human treat one poorly, they will forcibly take that human to their kingdom.'
+		lore: 'A fae beast from the Scottish highlands whose kingdoms can be found in tree hollows or abandoned houses.\nDog-sized, they have white tufts or hair on their chest, green, intelligent eyes, and are even capable of understanding the human language. Though they usually stick to their territory, some have been known to live with humans as normal black cats. They are generally peaceful, but should a human treat one poorly, they will forcibly take that human to their kingdom.',
+		origin: 'European'
 	},
 	{
 		name: 'Camael',
@@ -5176,7 +5241,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Light',
 			ethical: 'Law'
 		},
-		lore: 'The angel of god in Jewish mythology. He rules over the angels known as the Powers, and his name Camael means "one who sees god."\nHe is also the commander of the angels of destruction, punishment, and death in addition to being the ruler of Mars.'
+		lore: 'The angel of god in Jewish mythology. He rules over the angels known as the Powers, and his name Camael means "one who sees god."\nHe is also the commander of the angels of destruction, punishment, and death in addition to being the ruler of Mars.',
+		origin: 'Abrahamic'
 	},
 	{
 		name: 'Captain Kidd',
@@ -5305,6 +5371,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 		game: 'p5',
 		alignment: null,
 		lore: 'A 17th century privateer who eventually became a world-renowned pirate. At his execution, he declared he had a hidden treasure, leaving behind many legends.',
+		origin: 'Historical',
 		user: 'Ryuji Sakamoto',
 		stage: 1,
 		evoSkillName: null
@@ -5428,6 +5495,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 		game: 'p5',
 		alignment: null,
 		lore: 'A gypsy thief from the novel by Merimee, which became famous through the opera by Bizet. She is a femme fatale who is beautiful but very capricious.',
+		origin: 'Modern Fiction',
 		user: 'Ann Takamaki',
 		stage: 1,
 		evoSkillName: null
@@ -5515,6 +5583,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 		game: 'p3',
 		alignment: null,
 		lore: null,
+		origin: 'Greco-Roman',
 		user: 'Shinjiro Aragaki',
 		stage: 1,
 		evoSkillName: null
@@ -5640,6 +5709,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 		game: 'p5',
 		alignment: null,
 		lore: 'A beautiful actress who performed as Carmen in the opera named for the role. So tempestuous and outspoken was she that it\'s said the main role was rewritten to better suit her.',
+		origin: 'Historical',
 		user: 'Ann Takamaki',
 		stage: 3,
 		evoSkillName: 'High Energy'
@@ -5715,6 +5785,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 		game: 'p5',
 		alignment: null,
 		lore: 'The French name of the titular heroine of Cinderella, an oft-retold tale of great renown in which a mistreated waif gains luxury, beauty, and a single night\'s dance with a prince through the power of magic.',
+		origin: 'Modern Fiction',
 		user: 'Sumire Yoshizawa',
 		stage: 1,
 		evoSkillName: null
@@ -5794,7 +5865,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Neutral',
 			ethical: 'Neutral'
 		},
-		lore: 'The guardian hound of Hades in Greek lore.\nIt traditionally has three heads and a snake\'s tail. It was born from Typhon, the giant of wind, and Echidna, the mother of monsters. It is also the older brother of Orthrus.'
+		lore: 'The guardian hound of Hades in Greek lore.\nIt traditionally has three heads and a snake\'s tail. It was born from Typhon, the giant of wind, and Echidna, the mother of monsters. It is also the older brother of Orthrus.',
+		origin: 'Greco-Roman'
 	},
 	{
 		name: 'Cerberus - P3',
@@ -5895,6 +5967,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 		game: 'p3',
 		alignment: null,
 		lore: null,
+		origin: 'Greco-Roman',
 		user: 'Koromaru',
 		stage: 1,
 		evoSkillName: null
@@ -5974,7 +6047,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Light',
 			ethical: 'Chaos'
 		},
-		lore: 'The god of night, evil and death in Slavic lore. His name means "black god".\nLike many other gods of the dead, he is said to live below the earth. His counterpart is Belobog, the "white god." Despite being feared, he was also worshipped. The curse, "May the black god end you," is still used in Ukraine to this day.'
+		lore: 'The god of night, evil and death in Slavic lore. His name means "black god".\nLike many other gods of the dead, he is said to live below the earth. His counterpart is Belobog, the "white god." Despite being feared, he was also worshipped. The curse, "May the black god end you," is still used in Ukraine to this day.',
+		origin: 'Slavic'
 	},
 	{
 		name: 'Chimera',
@@ -6057,7 +6131,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Light',
 			ethical: 'Neutral'
 		},
-		lore: 'A monster that is part lion, part goat, and part snake.\nOriginally a symbol representing the seasons, it became a violent monster adopted into Greek mythology. Its father is Typhon and its mother Echidna.'
+		lore: 'A monster that is part lion, part goat, and part snake.\nOriginally a symbol representing the seasons, it became a violent monster adopted into Greek mythology. Its father is Typhon and its mother Echidna.',
+		origin: 'Greco-Roman'
 	},
 	{
 		name: 'Chi You',
@@ -6139,7 +6214,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Dark',
 			ethical: 'Chaos'
 		},
-		lore: 'A Chinese god of war, often depicted with a bull\'s head, six or eight arms and four eyes.\nHe invented many weapons and commanded an invincible army. Seeking control of the land, he fought with Huang Di and though he was winning, Huang Di invented something of his own, the South-Pointing Chariot and promptly defeated him. Huang Di then had Chi You\'s head buried thousands of li apart from his body.'
+		lore: 'A Chinese god of war, often depicted with a bull\'s head, six or eight arms and four eyes.\nHe invented many weapons and commanded an invincible army. Seeking control of the land, he fought with Huang Di and though he was winning, Huang Di invented something of his own, the South-Pointing Chariot and promptly defeated him. Huang Di then had Chi You\'s head buried thousands of li apart from his body.',
+		origin: 'Chinese'
 	},
 	{
 		name: 'Choronzon',
@@ -6212,7 +6288,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Unknown',
 			ethical: 'Law'
 		},
-		lore: 'A demon summoned by a sorcerer named Crowley at the beginning of the 20th century. He prevents those from attempting to reach enlightenment.'
+		lore: 'A demon summoned by a sorcerer named Crowley at the beginning of the 20th century. He prevents those from attempting to reach enlightenment.',
+		origin: 'European'
 	},
 	{
 		name: 'Cironnup',
@@ -6292,7 +6369,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Light',
 			ethical: 'Neutral'
 		},
-		lore: '"Fox" in the Ainu tongue. Though "Sumari" is another word for "fox," chironnupu refers to "those who we kill" — which is to say, the various small-to-medium-sized Canidae.\nIt is also a divine beast that alerts people to forthcoming disasters by howling loudly from the mountains.'
+		lore: '"Fox" in the Ainu tongue. Though "Sumari" is another word for "fox," chironnupu refers to "those who we kill" — which is to say, the various small-to-medium-sized Canidae.\nIt is also a divine beast that alerts people to forthcoming disasters by howling loudly from the mountains.',
+		origin: 'Japanese'
 	},
 	{
 		name: 'Cleopatra',
@@ -6379,7 +6457,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Neutral',
 			ethical: 'Chaos'
 		},
-		lore: 'More specifically, Cleopatra VII. Her name means "glory of the father" in Greek.\nShe is known as one of the greatest beauties ever to live, having charmed many with her musical voice and conversation skills. It is said that all of history would have unfolded differently had even her nose been longer or shorter.'
+		lore: 'More specifically, Cleopatra VII. Her name means "glory of the father" in Greek.\nShe is known as one of the greatest beauties ever to live, having charmed many with her musical voice and conversation skills. It is said that all of history would have unfolded differently had even her nose been longer or shorter.',
+		origin: 'Historical'
 	},
 	{
 		name: 'Clotho',
@@ -6456,7 +6535,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Neutral',
 			ethical: 'Chaos'
 		},
-		lore: 'One of the three Moirae Sisters in Greek mythology.\nShe is the spinner of the threads of fate.'
+		lore: 'One of the three Moirae Sisters in Greek mythology.\nShe is the spinner of the threads of fate.',
+		origin: 'Greco-Roman'
 	},
 	{
 		name: 'Crystal Skull',
@@ -6525,7 +6605,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 		},
 		game: 'p5',
 		alignment: null,
-		lore: 'An ancient Out-Of-Place-Artifact found in Central and South America. It is said that if you collect 13 of them in one spot, the truth of the universe will be revealed.'
+		lore: 'An ancient Out-Of-Place-Artifact found in Central and South America. It is said that if you collect 13 of them in one spot, the truth of the universe will be revealed.',
+		origin: 'South American'
 	},
 	{
 		name: 'Cu Chulainn',
@@ -6604,7 +6685,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Light',
 			ethical: 'Neutral'
 		},
-		lore: 'A gallant Celtic hero and son of the sun god Lugh.\nHe is said to have beaten an army singlehandedly. He was cursed to die after spurning the war goddess Morrighan and was impaled on his own mighty spear, Gae Bolg.'
+		lore: 'A gallant Celtic hero and son of the sun god Lugh.\nHe is said to have beaten an army singlehandedly. He was cursed to die after spurning the war goddess Morrighan and was impaled on his own mighty spear, Gae Bolg.',
+		origin: 'Celtic'
 	},
 	{
 		name: 'Cu Sith',
@@ -6671,7 +6753,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Neutral',
 			ethical: 'Neutral'
 		},
-		lore: 'A dog fairy in Scottish folklore. Its main duties are to transport fairies and be a watchdog. It can transfix a target it\'s chasing by barking three times.'
+		lore: 'A dog fairy in Scottish folklore. Its main duties are to transport fairies and be a watchdog. It can transfix a target it\'s chasing by barking three times.',
+		origin: 'Celtic'
 	},
 	{
 		name: 'Cybele',
@@ -6750,7 +6833,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Light',
 			ethical: 'Chaos'
 		},
-		lore: 'Mother goddess of nature.\nA temple of her was created atop a mountain in Phrygia, where she was worshipped. She ruled over beasts and was said to be served by lions. She later became a goddess passionately worshipped in Rome.'
+		lore: 'Mother goddess of nature.\nA temple of her was created atop a mountain in Phrygia, where she was worshipped. She ruled over beasts and was said to be served by lions. She later became a goddess passionately worshipped in Rome.',
+		origin: 'Greco-Roman'
 	},
 	{
 		name: 'Daemon',
@@ -6820,7 +6904,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Neutral',
 			ethical: 'Chaos'
 		},
-		lore: 'A low-ranking class of spirits. While the name may conjure up familiar images of "demons" due to Christianity\'s influence, daemons were not strictly associated with good or evil and simply thought to be lesser supernatural beings, sometimes acting as tutelary spirits that guided the souls of men.\nWhat might be considered a demon today would\'ve been called a "cacodaemon" in ancient Greece — that is, an evil spirit. In contrast, their benevolent counterparts were known as "agathodaemons."'
+		lore: 'A low-ranking class of spirits. While the name may conjure up familiar images of "demons" due to Christianity\'s influence, daemons were not strictly associated with good or evil and simply thought to be lesser supernatural beings, sometimes acting as tutelary spirits that guided the souls of men.\nWhat might be considered a demon today would\'ve been called a "cacodaemon" in ancient Greece — that is, an evil spirit. In contrast, their benevolent counterparts were known as "agathodaemons."',
+		origin: 'Universal'
 	},
 	{
 		name: 'Daisoujou',
@@ -6900,7 +6985,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Unknown',
 			ethical: 'Unknown'
 		},
-		lore: 'A monk who died while fasting for the sake of humanity. Because of his intense spiritual power, his body continues to exist without rotting.\nIt is said that on the day of salvation, he will appear in front of humankind once again.'
+		lore: 'A monk who died while fasting for the sake of humanity. Because of his intense spiritual power, his body continues to exist without rotting.\nIt is said that on the day of salvation, he will appear in front of humankind once again.',
+		origin: 'Buddhist'
 	},
 	{
 		name: 'Dakini',
@@ -6975,7 +7061,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Neutral',
 			ethical: 'Chaos'
 		},
-		lore: 'Hindu deities of passion and relations. They are Kali\'s attendants.\nThey eat human flesh and gather at graveyards and crematories each night. Their name means "sky dancer."'
+		lore: 'Hindu deities of passion and relations. They are Kali\'s attendants.\nThey eat human flesh and gather at graveyards and crematories each night. Their name means "sky dancer."',
+		origin: 'Hindu'
 	},
 	{
 		name: 'Danu',
@@ -7059,7 +7146,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Light',
 			ethical: 'Neutral'
 		},
-		lore: 'The mother goddess of Celtic mythology. She is the mother of the Tuatha De Danann, a race of gods and also the world itself, having given birth to all life.\nDanu\'s large body is said to be lying down on earth to this day. The Munster region in Ireland, which is said to be especially blessed by her.'
+		lore: 'The mother goddess of Celtic mythology. She is the mother of the Tuatha De Danann, a race of gods and also the world itself, having given birth to all life.\nDanu\'s large body is said to be lying down on earth to this day. The Munster region in Ireland, which is said to be especially blessed by her.',
+		origin: 'Celtic'
 	},
 	{
 		name: 'Decarabia',
@@ -7130,7 +7218,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Neutral',
 			ethical: 'Chaos'
 		},
-		lore: 'One of the 72 demons of the Goetia.\nHe comes in the shape of a star and has vast knowledge of herbs and jewels. He can also control birds at will.'
+		lore: 'One of the 72 demons of the Goetia.\nHe comes in the shape of a star and has vast knowledge of herbs and jewels. He can also control birds at will.',
+		origin: 'Abrahamic'
 	},
 	{
 		name: 'Demeter',
@@ -7215,7 +7304,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Light',
 			ethical: 'Law'
 		},
-		lore: 'A goddess from Greek mythology. Her name means "Mother Earth" in ancient Greek.\nShe is the sister of Zeus, goddess of fertility and is said to be the one who taught humanity the ways of agriculture. With the advancement of civilization, laws were put into place and she was given another name, "Demeter Thesmophoros".'
+		lore: 'A goddess from Greek mythology. Her name means "Mother Earth" in ancient Greek.\nShe is the sister of Zeus, goddess of fertility and is said to be the one who taught humanity the ways of agriculture. With the advancement of civilization, laws were put into place and she was given another name, "Demeter Thesmophoros".',
+		origin: 'Greco-Roman'
 	},
 	{
 		name: 'Diego',
@@ -7350,6 +7440,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 		game: 'p5',
 		alignment: null,
 		lore: 'The true name of California\'s masked swordsman of justice, who fought corrupt officials during the era of Spanish rule. Despite being marked as a thief, he fought for the weak as a true gentleman.',
+		origin: 'Modern Fiction',
 		user: 'Morgana',
 		stage: 3,
 		evoSkillName: 'Miracle Rush'
@@ -7431,7 +7522,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Light',
 			ethical: 'Chaos'
 		},
-		lore: 'The Greek god of wine and theater. He had two births.\nMyth tells that Zeus took the premature Dionysus from his dying mother, Semele, and allowed him to mature inside his thigh so that the underdeveloped god might have a proper birth.'
+		lore: 'The Greek god of wine and theater. He had two births.\nMyth tells that Zeus took the premature Dionysus from his dying mother, Semele, and allowed him to mature inside his thigh so that the underdeveloped god might have a proper birth.',
+		origin: 'Greco-Roman'
 	},
 	{
 		name: 'Dis',
@@ -7496,7 +7588,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Neutral',
 			ethical: 'Law'
 		},
-		lore: 'A spiritual attendant to humans in Norse lore. She is known as a goddess of both farming and war, though some see her as a low-ranking servant of the valkyries.'
+		lore: 'A spiritual attendant to humans in Norse lore. She is known as a goddess of both farming and war, though some see her as a low-ranking servant of the valkyries.',
+		origin: 'Norse'
 	},
 	{
 		name: 'Dominion',
@@ -7569,7 +7662,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Neutral',
 			ethical: 'Law'
 		},
-		lore: 'The fourth of the nine orders of angels. Their name carries the meaning of "governance," and it is their duty to oversee the other angels.\nIt is said that their work is the embodiment of God\'s will, and that they wish for this governance to spread throughout the cosmos.'
+		lore: 'The fourth of the nine orders of angels. Their name carries the meaning of "governance," and it is their duty to oversee the other angels.\nIt is said that their work is the embodiment of God\'s will, and that they wish for this governance to spread throughout the cosmos.',
+		origin: 'Abrahamic'
 	},
 	{
 		name: 'Eligor',
@@ -7642,7 +7736,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Neutral',
 			ethical: 'Chaos'
 		},
-		lore: 'One of the 72 demons of the Goetia.\nHe takes the appearance of a knight and has the power to see things to come. He also possesses great knowledge of many wars.'
+		lore: 'One of the 72 demons of the Goetia.\nHe takes the appearance of a knight and has the power to see things to come. He also possesses great knowledge of many wars.',
+		origin: 'Abrahamic'
 	},
 	{
 		name: 'Ella',
@@ -7717,6 +7812,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 		game: 'p5',
 		alignment: null,
 		lore: 'The true name of Cinderella\'s heroine. "Cinder Ella" was a derisive nickname, born from her hard work always leaving her dusty and sooty. After marrying her prince, she became "Princess Ella."',
+		origin: 'Modern Fiction',
 		user: 'Sumire Yoshizawa',
 		stage: 3,
 		evoSkillName: 'Masquerade'
@@ -7788,7 +7884,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 		},
 		game: 'p5',
 		alignment: null,
-		lore: 'Also known as Charlemagne\'s talisman, it is said to make its owner an emperor. In between the two gems is a piece of Jesus\' cross and a hair of the Virgin Mary.'
+		lore: 'Also known as Charlemagne\'s talisman, it is said to make its owner an emperor. In between the two gems is a piece of Jesus\' cross and a hair of the Virgin Mary.',
+		origin: 'Abrahamic'
 	},
 	{
 		name: 'Erthys',
@@ -7851,7 +7948,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Light',
 			ethical: 'Neutral'
 		},
-		lore: 'An earth elemental; one of the four elements in energy form.\nIt is said to be composed of "dry" and "cold" essences, which are known to be the basic components of destruction.'
+		lore: 'An earth elemental; one of the four elements in energy form.\nIt is said to be composed of "dry" and "cold" essences, which are known to be the basic components of destruction.',
+		origin: 'Universal'
 	},
 	{
 		name: 'Fafnir',
@@ -7933,7 +8031,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Dark',
 			ethical: 'Chaos'
 		},
-		lore: 'An evil dragon of Norse lore, it was vanquished by the hero Siegfried.\nAccording to the Volsunga saga, it was extremely venomous, had legs like snakes, and shook the ground with every step.'
+		lore: 'An evil dragon of Norse lore, it was vanquished by the hero Siegfried.\nAccording to the Volsunga saga, it was extremely venomous, had legs like snakes, and shook the ground with every step.',
+		origin: 'Norse'
 	},
 	{
 		name: 'Feng Huang',
@@ -8015,7 +8114,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Light',
 			ethical: 'Law'
 		},
-		lore: 'The legendary bird of Chinese myth, said to appear only in times of peace.\nIt is the ruler of all birds. When it dies, birds across the land chirp with sadness.'
+		lore: 'The legendary bird of Chinese myth, said to appear only in times of peace.\nIt is the ruler of all birds. When it dies, birds across the land chirp with sadness.',
+		origin: 'Chinese'
 	},
 	{
 		name: 'Fionn mac Cumhaill',
@@ -8098,7 +8198,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Light',
 			ethical: 'Neutral'
 		},
-		lore: 'The leader of the Fianna, warriors who protected High King Cormac of Ireland. He was born as Deimne, but, due to his blond hair and white skin, he soon came to be called "Fionn," a name meaning "golden hair."\nWhen training under the druid, Finn Eces, he was ordered to cook the Salmon of Knowledge, and upon licking some of the salmon\'s fat from his thumb, he gained its knowledge. From that point on, it is said that Fionn could tap this knowledge any time he licked his thumb.'
+		lore: 'The leader of the Fianna, warriors who protected High King Cormac of Ireland. He was born as Deimne, but, due to his blond hair and white skin, he soon came to be called "Fionn," a name meaning "golden hair."\nWhen training under the druid, Finn Eces, he was ordered to cook the Salmon of Knowledge, and upon licking some of the salmon\'s fat from his thumb, he gained its knowledge. From that point on, it is said that Fionn could tap this knowledge any time he licked his thumb.',
+		origin: 'Celtic'
 	},
 	{
 		name: 'Flaemis',
@@ -8161,7 +8262,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Light',
 			ethical: 'Neutral'
 		},
-		lore: 'A fire elemental; one of the four elements in energy form.\nIt is said to be composed of both "dry" and "heat" essences. The ancient Greek concepts of the four basic elements significantly influenced early astrology.'
+		lore: 'A fire elemental; one of the four elements in energy form.\nIt is said to be composed of both "dry" and "heat" essences. The ancient Greek concepts of the four basic elements significantly influenced early astrology.',
+		origin: 'Universal'
 	},
 	{
 		name: 'Flauros',
@@ -8240,7 +8342,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Neutral',
 			ethical: 'Chaos'
 		},
-		lore: 'One of the 72 demons of the Goetia.\nHe appears as a leopard and can see the past and future. He can control fire, which he uses to burn his adversaries to death.'
+		lore: 'One of the 72 demons of the Goetia.\nHe appears as a leopard and can see the past and future. He can control fire, which he uses to burn his adversaries to death.',
+		origin: 'Abrahamic'
 	},
 	{
 		name: 'Forneus',
@@ -8318,7 +8421,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Neutral',
 			ethical: 'Chaos'
 		},
-		lore: 'One of the 72 demons of the Goetia.\nHe appears as a great sea monster and is skilled in many languages in addition to being a master of rhetoric.'
+		lore: 'One of the 72 demons of the Goetia.\nHe appears as a great sea monster and is skilled in many languages in addition to being a master of rhetoric.',
+		origin: 'Abrahamic'
 	},
 	{
 		name: 'Fortuna',
@@ -8390,7 +8494,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Light',
 			ethical: 'Neutral'
 		},
-		lore: 'The Roman goddess of luck, she spins the Wheel of Fortune and is believed to have originally been a fertility goddess. Her Greek counterpart is Tyche.'
+		lore: 'The Roman goddess of luck, she spins the Wheel of Fortune and is believed to have originally been a fertility goddess. Her Greek counterpart is Tyche.',
+		origin: 'Greco-Roman'
 	},
 	{
 		name: 'Futsunushi',
@@ -8470,7 +8575,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Light',
 			ethical: 'Neutral'
 		},
-		lore: 'The Nihonshoki sword deity who pacified Ashihara-no-Nakatasukuni.\nHis name comes from "futsu," the fashion in which things are cut, and "nushi," a term meaning, "nature as a god."'
+		lore: 'The Nihonshoki sword deity who pacified Ashihara-no-Nakatasukuni.\nHis name comes from "futsu," the fashion in which things are cut, and "nushi," a term meaning, "nature as a god."',
+		origin: 'Japanese'
 	},
 	{
 		name: 'Fuu-Ki',
@@ -8547,7 +8653,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Neutral',
 			ethical: 'Chaos'
 		},
-		lore: 'One of the four oni controlled by Fujiwara no Chikata, it sends hurricanes to blow away its enemies.\nSome say that Fuu-Ki is the original ninja.'
+		lore: 'One of the four oni controlled by Fujiwara no Chikata, it sends hurricanes to blow away its enemies.\nSome say that Fuu-Ki is the original ninja.',
+		origin: 'Japanese'
 	},
 	{
 		name: 'Gabriel',
@@ -8629,7 +8736,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Light',
 			ethical: 'Law'
 		},
-		lore: 'One of the four major angels. The name Gabriel means "God is my strength."\nActing as a messenger for God, Gabriel is the one who informed the virgin Mary of her pregnancy. Though often depicted with a feminine face, there are various interpretations suggesting Gabriel is not androgynous but is in fact a woman.'
+		lore: 'One of the four major angels. The name Gabriel means "God is my strength."\nActing as a messenger for God, Gabriel is the one who informed the virgin Mary of her pregnancy. Though often depicted with a feminine face, there are various interpretations suggesting Gabriel is not androgynous but is in fact a woman.',
+		origin: 'Abrahamic'
 	},
 	{
 		name: 'Ganesha',
@@ -8710,7 +8818,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Light',
 			ethical: 'Neutral'
 		},
-		lore: 'The elephant-headed god in Hindu mythology.\nHe was originally created out of dirt by Parvati to prevent anyone from watching her bathe. It is said that Shiva knocked his head off but later replaced it with an elphant\'s head.'
+		lore: 'The elephant-headed god in Hindu mythology.\nHe was originally created out of dirt by Parvati to prevent anyone from watching her bathe. It is said that Shiva knocked his head off but later replaced it with an elphant\'s head.',
+		origin: 'Hindu'
 	},
 	{
 		name: 'Ganga',
@@ -8778,7 +8887,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Light',
 			ethical: 'Chaos'
 		},
-		lore: 'The personification of the Ganges river. Originally from the heavens, she came to earth to clean the souls of the people as a result of the prayers of Bhagiratha.'
+		lore: 'The personification of the Ganges river. Originally from the heavens, she came to earth to clean the souls of the people as a result of the prayers of Bhagiratha.',
+		origin: 'Hindu'
 	},
 	{
 		name: 'Garuda',
@@ -8861,7 +8971,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Light',
 			ethical: 'Law'
 		},
-		lore: 'A divine bird-man in Hindu mythology.\nHe hunts Nagas as a result of a dispute between the two creatures\' mothers. According to legend, he once fought with the gods, and was even granted immortality in exchange for becoming Vishnu\'s carrier.'
+		lore: 'A divine bird-man in Hindu mythology.\nHe hunts Nagas as a result of a dispute between the two creatures\' mothers. According to legend, he once fought with the gods, and was even granted immortality in exchange for becoming Vishnu\'s carrier.',
+		origin: 'Hindu'
 	},
 	{
 		name: 'Gdon',
@@ -8928,7 +9039,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Neutral',
 			ethical: 'Neutral'
 		},
-		lore: 'The tigress mount of the goddess Durga, of Hindu myth. Durga was born to defeat the Asura Mahisha, and Gdon was granted to her to help complete the task.'
+		lore: 'The tigress mount of the goddess Durga, of Hindu myth. Durga was born to defeat the Asura Mahisha, and Gdon was granted to her to help complete the task.',
+		origin: 'Hindu'
 	},
 	{
 		name: 'Genbu',
@@ -9002,7 +9114,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Light',
 			ethical: 'Chaos'
 		},
-		lore: 'One of the Ssu-Ling, celestial creatures in Chinese mythology.\nIt represents the north, the season of winter, and the element of water. Known to be a great warrior, it is said to support the Earth from below.'
+		lore: 'One of the Ssu-Ling, celestial creatures in Chinese mythology.\nIt represents the north, the season of winter, and the element of water. Known to be a great warrior, it is said to support the Earth from below.',
+		origin: 'Chinese'
 	},
 	{
 		name: 'Ghoul',
@@ -9070,7 +9183,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Dark',
 			ethical: 'Chaos'
 		},
-		lore: 'Cannibalistic demon from Islamic lore. It feeds on the flesh of both the living and the dead. It is indistinguishable from normal humans, and prefers to prey on children and travelers.'
+		lore: 'Cannibalistic demon from Islamic lore. It feeds on the flesh of both the living and the dead. It is indistinguishable from normal humans, and prefers to prey on children and travelers.',
+		origin: 'Abrahamic'
 	},
 	{
 		name: 'Girimehkala',
@@ -9155,7 +9269,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Dark',
 			ethical: 'Law'
 		},
-		lore: 'A giant elephant monster of Sri Lankan mythology.\nIt is typically portrayed as being ridden by Mara, the Evil One. Whoever looks into its evil eye is said to be met with great misfortune.'
+		lore: 'A giant elephant monster of Sri Lankan mythology.\nIt is typically portrayed as being ridden by Mara, the Evil One. Whoever looks into its evil eye is said to be met with great misfortune.',
+		origin: 'Buddhist'
 	},
 	{
 		name: 'Goemon',
@@ -9280,6 +9395,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 		game: 'p5',
 		alignment: null,
 		lore: 'Ishikawa Goemon was a thief who stole from the rich and gave to the poor in Japan during the Azuchi-Momoyama period. The kabuki scene of him sitting on the gate of Nanzen-ji is famous.',
+		origin: 'Historical',
 		user: 'Yusuke Kitagawa',
 		stage: 1,
 		evoSkillName: null
@@ -9345,7 +9461,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Neutral',
 			ethical: 'Chaos'
 		},
-		lore: 'A hideous female monster with poison fangs and snakes instead of hair. Her name is Greek for "terrible." After Perseus took her head, he offered it to the gods who helped hem slay her.'
+		lore: 'A hideous female monster with poison fangs and snakes instead of hair. Her name is Greek for "terrible." After Perseus took her head, he offered it to the gods who helped hem slay her.',
+		origin: 'Greco-Roman'
 	},
 	{
 		name: 'Gorokichi',
@@ -9472,6 +9589,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 		game: 'p5',
 		alignment: null,
 		lore: 'Childhood nickname of Goemon Ishikawa. During his youth, he was raised among the Iga-ryu ninjas before he set off on his own to become a rogue ninja.',
+		origin: 'Historical',
 		user: 'Yusuke Kitagawa',
 		stage: 3,
 		evoSkillName: 'Hyakka Ryouran'
@@ -9542,7 +9660,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Dark',
 			ethical: 'Law'
 		},
-		lore: 'A demon that takes the shape of a giant bird in Sri Lankan myth. It is thought to be a derivation of Garuda.'
+		lore: 'A demon that takes the shape of a giant bird in Sri Lankan myth. It is thought to be a derivation of Garuda.',
+		origin: 'Hindu'
 	},
 	{
 		name: 'Hachiman',
@@ -9606,7 +9725,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Light',
 			ethical: 'Neutral'
 		},
-		lore: 'A god who migrated from Silla to Kyushu to give oracles to the people. Later deified as a guardian of samurai across Japan. Also called Yahata, or "a figure for gods to possess."'
+		lore: 'A god who migrated from Silla to Kyushu to give oracles to the people. Later deified as a guardian of samurai across Japan. Also called Yahata, or "a figure for gods to possess."',
+		origin: 'Japanese'
 	},
 	{
 		name: 'Hanuman',
@@ -9679,7 +9799,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Light',
 			ethical: 'Neutral'
 		},
-		lore: 'A hero of Hindu descent. He can transform into anything, fly, and possesses incredible strength.\nHe performed many heroic deeds in the Ramayana and is most always depicted as a monkey.'
+		lore: 'A hero of Hindu descent. He can transform into anything, fly, and possesses incredible strength.\nHe performed many heroic deeds in the Ramayana and is most always depicted as a monkey.',
+		origin: 'Hindu'
 	},
 	{
 		name: 'Haraedo-no-Okami',
@@ -9794,6 +9915,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 		game: 'p4',
 		alignment: null,
 		lore: null,
+		origin: 'Japanese',
 		user: 'Chie Satonaka',
 		stage: 3,
 		evoSkillName: 'Luster Candy'
@@ -9873,7 +9995,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Light',
 			ethical: 'Chaos'
 		},
-		lore: 'A Buddhist goddess also known as Kishimojin.\nShe was originally an evil devil who ate children, but when Buddha hit the most beloved of her 500 children, she was stricken with sorrow. Having been taught the pain of losing a child, she then became a good god and started eating pomegranates instead of children.'
+		lore: 'A Buddhist goddess also known as Kishimojin.\nShe was originally an evil devil who ate children, but when Buddha hit the most beloved of her 500 children, she was stricken with sorrow. Having been taught the pain of losing a child, she then became a good god and started eating pomegranates instead of children.',
+		origin: 'Buddhist'
 	},
 	{
 		name: 'Hastur',
@@ -9943,7 +10066,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Unknown',
 			ethical: 'Unknown'
 		},
-		lore: 'An evil god of the Cthulhu Mythos and one of the eldritch deities known as Great Old Ones. It wields great power over wind. Also called "The Unspeakable" and "The King in Yellow."'
+		lore: 'An evil god of the Cthulhu Mythos and one of the eldritch deities known as Great Old Ones. It wields great power over wind. Also called "The Unspeakable" and "The King in Yellow."',
+		origin: 'Lovecraftian'
 	},
 	{
 		name: 'Hayataro',
@@ -10026,7 +10150,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Light',
 			ethical: 'Neutral'
 		},
-		lore: 'The spirit of a monster-bursting dog that used to live at Kozen-ji.\nLong ago, the villagers of Mitsuke would offer one of their own girls to a giant monkey yokai to prevent it from ravaging the fields. A monk passing by learned of this and that it greatly feared Hayataro. The monk then rushed off and found him at a temple. Hayataro was offered in place of a village girl, where he then defeated the monster, but was mortally wounded in the epic battle. The loyal dog traveled back to Kozen-ji, where he died shortly after reuniting with his master.'
+		lore: 'The spirit of a monster-bursting dog that used to live at Kozen-ji.\nLong ago, the villagers of Mitsuke would offer one of their own girls to a giant monkey yokai to prevent it from ravaging the fields. A monk passing by learned of this and that it greatly feared Hayataro. The monk then rushed off and found him at a temple. Hayataro was offered in place of a village girl, where he then defeated the monster, but was mortally wounded in the epic battle. The loyal dog traveled back to Kozen-ji, where he died shortly after reuniting with his master.',
+		origin: 'Japanese'
 	},
 	{
 		name: 'Hecate',
@@ -10149,6 +10274,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 		game: 'p5',
 		alignment: null,
 		lore: 'A Greek goddess of crossroads, ghosts and witchcraft, she is commonly attended to by dogs. She is also known to be the chief of the witches that appears in the play "Macbeth"',
+		origin: 'Greco-Roman',
 		user: 'Ann Takamaki',
 		stage: 2,
 		evoSkillName: 'Evade Ice'
@@ -10229,7 +10355,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Dark',
 			ethical: 'Neutral'
 		},
-		lore: 'Giants born from Uranus and Gaia in Greek mythology. The name means "those with a hundred arms."\nDuring the war of the Titans, Zeus freed them from the underworld to help him obtain victory.'
+		lore: 'Giants born from Uranus and Gaia in Greek mythology. The name means "those with a hundred arms."\nDuring the war of the Titans, Zeus freed them from the underworld to help him obtain victory.',
+		origin: 'Greco-Roman'
 	},
 	{
 		name: 'Helel',
@@ -10304,7 +10431,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Dark',
 			ethical: 'Chaos'
 		},
-		lore: 'A fallen angel in Judeo-Christian lore whose name signifies "Morning Star." Primarily known for defying God, but also worshipped as a bringer of light to mankind.'
+		lore: 'A fallen angel in Judeo-Christian lore whose name signifies "Morning Star." Primarily known for defying God, but also worshipped as a bringer of light to mankind.',
+		origin: 'Abrahamic'
 	},
 	{
 		name: 'Hell Biker',
@@ -10383,7 +10511,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Unknown',
 			ethical: 'Unknown'
 		},
-		lore: 'A biker-turned-Fiend that claims to come from Hell.\nArmed with an intense hatred of himself and the world, his reliance solely on his own poewr turned him into this abominable figure.'
+		lore: 'A biker-turned-Fiend that claims to come from Hell.\nArmed with an intense hatred of himself and the world, his reliance solely on his own poewr turned him into this abominable figure.',
+		origin: 'North American'
 	},
 	{
 		name: 'Hereward',
@@ -10454,6 +10583,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 		game: 'p5',
 		alignment: null,
 		lore: 'The legendary Saxon who opposed the Normans during the conquest of England in the 11th century. Said to have been the basis for tales of Robin Hood. Called "Hereward the Wake" for his watchfulness.',
+		origin: 'Historical',
 		user: 'Goro Akechi',
 		stage: 3,
 		evoSkillName: 'Rebellion Blade'
@@ -10549,6 +10679,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 		game: 'p3',
 		alignment: null,
 		lore: null,
+		origin: 'Greco-Roman',
 		user: 'Junpei Iori',
 		stage: 1,
 		evoSkillName: null
@@ -10625,7 +10756,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Neutral',
 			ethical: 'Neutral'
 		},
-		lore: 'One of a higher class of pixie, these are the Seelie Court\'s more powerful soldiers.\nThey are charged with guarding the ruins and caves where other pixies dwell.'
+		lore: 'One of a higher class of pixie, these are the Seelie Court\'s more powerful soldiers.\nThey are charged with guarding the ruins and caves where other pixies dwell.',
+		origin: 'European'
 	},
 	{
 		name: 'Himiko',
@@ -10702,6 +10834,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 		game: 'p4',
 		alignment: null,
 		lore: null,
+		origin: 'Japanese',
 		user: 'Rise Kujikawa',
 		stage: 1,
 		evoSkillName: null
@@ -10775,7 +10908,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Light',
 			ethical: 'Chaos'
 		},
-		lore: 'Japanese god of words, thought to be the deification of echoes. Said to proclaim good and bad in a single word, and all words uttered by him come true.'
+		lore: 'Japanese god of words, thought to be the deification of echoes. Said to proclaim good and bad in a single word, and all words uttered by him come true.',
+		origin: 'Japanese'
 	},
 	{
 		name: 'Hokuto Seikun',
@@ -10846,7 +10980,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Neutral',
 			ethical: 'Chaos'
 		},
-		lore: '"According to Chinese myth, Hokuto Seikun, or "Wise Man of the North Star," determines the moment that one is born.'
+		lore: 'According to Chinese myth, Hokuto Seikun, or "Wise Man of the North Star," determines the moment that one is born.',
+		origin: 'Chinese'
 	},
 	{
 		name: 'Hope Diamond',
@@ -10915,7 +11050,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 		},
 		game: 'p5',
 		alignment: null,
-		lore: 'Unlike its name suggests, the Hope Diamond is a cursed jewel that brings ruin from one owner to the next. A few supposed victims include King Louis XVI and his wife, Marie Antoinette.'
+		lore: 'Unlike its name suggests, the Hope Diamond is a cursed jewel that brings ruin from one owner to the next. A few supposed victims include King Louis XVI and his wife, Marie Antoinette.',
+		origin: 'European'
 	},
 	{
 		name: 'Horus',
@@ -10994,7 +11130,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Light',
 			ethical: 'Neutral'
 		},
-		lore: 'An ancient god of Egypt known for having the sun and moon as his watchful eyes.\nHe was revered by some as the principal god, most likely due to his association with the celestial bodies above. Myth often depicts him as a hawk or a falcon.'
+		lore: 'An ancient god of Egypt known for having the sun and moon as his watchful eyes.\nHe was revered by some as the principal god, most likely due to his association with the celestial bodies above. Myth often depicts him as a hawk or a falcon.',
+		origin: 'Egyptian'
 	},
 	{
 		name: 'Hua Po',
@@ -11067,7 +11204,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Neutral',
 			ethical: 'Neutral'
 		},
-		lore: 'Tree spirits in Chinese mythology that are born when three or more people hang themselves from the same tree.\nThey take the form of a beautiful woman in white clothing, however they are much smaller in size than a human. They cannot talk, though they can chirp like birds.'
+		lore: 'Tree spirits in Chinese mythology that are born when three or more people hang themselves from the same tree.\nThey take the form of a beautiful woman in white clothing, however they are much smaller in size than a human. They cannot talk, though they can chirp like birds.',
+		origin: 'Chinese'
 	},
 	{
 		name: 'Hydra',
@@ -11144,7 +11282,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Dark',
 			ethical: 'Chaos'
 		},
-		lore: 'One of the monsters in Greek mythology. It is usually depicted as having 9 heads, but some may say that it has as many as 100.\nIts father is Typhon, giant of the wind, and its mother is Echidna, goddess of the snake. The Hydra has incredible regenerating power; so much so that when one of its heads is cut off, two more will sprout from the wound. It is also extremely venomous and simply inhaling its breath is enough to kill. The slaying of Hydra is listed as one of the 12 great labors of Hercules.'
+		lore: 'One of the monsters in Greek mythology. It is usually depicted as having 9 heads, but some may say that it has as many as 100.\nIts father is Typhon, giant of the wind, and its mother is Echidna, goddess of the snake. The Hydra has incredible regenerating power; so much so that when one of its heads is cut off, two more will sprout from the wound. It is also extremely venomous and simply inhaling its breath is enough to kill. The slaying of Hydra is listed as one of the 12 great labors of Hercules.',
+		origin: 'Greco-Roman'
 	},
 	{
 		name: 'Idun',
@@ -11223,7 +11362,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Light',
 			ethical: 'Neutral'
 		},
-		lore: 'A goddess from Norse mythology. She is the keeper of the golden apples and wife to Bragi the god of poetry.\nGods in Norse mythology are said to retain their youth via her apples, which are safely kept in a box made from ash wood.'
+		lore: 'A goddess from Norse mythology. She is the keeper of the golden apples and wife to Bragi the god of poetry.\nGods in Norse mythology are said to retain their youth via her apples, which are safely kept in a box made from ash wood.',
+		origin: 'Norse'
 	},
 	{
 		name: 'Ikusa',
@@ -11291,7 +11431,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Neutral',
 			ethical: 'Law'
 		},
-		lore: 'Izanami sent them after Izanagi at Yomotsu Hirasaka, the entrance of Yomi, the Japanese land of shadows. The army of Ikusa is led by Yomotsu Shikome.'
+		lore: 'Izanami sent them after Izanagi at Yomotsu Hirasaka, the entrance of Yomi, the Japanese land of shadows. The army of Ikusa is led by Yomotsu Shikome.',
+		origin: 'Japanese'
 	},
 	{
 		name: 'Inanna',
@@ -11374,7 +11515,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Light',
 			ethical: 'Chaos'
 		},
-		lore: 'The Sumerian goddess of fertility.\nHer name means "Lady of Heaven," and she is often viewed as one and the same with Aphrodite, Ishtar, and Venus. She is also a goddess of warfare, and it is said that even male gods feared her great power.'
+		lore: 'The Sumerian goddess of fertility.\nHer name means "Lady of Heaven," and she is often viewed as one and the same with Aphrodite, Ishtar, and Venus. She is also a goddess of warfare, and it is said that even male gods feared her great power.',
+		origin: 'Mesopotamian'
 	},
 	{
 		name: 'Incubus',
@@ -11448,7 +11590,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Neutral',
 			ethical: 'Chaos'
 		},
-		lore: 'A male demon of popular European folklore during medieval ages and the counterpart to the Succubus.\nThey are known to visit women in their sleep and have sex with them. The offspring born from these incidents are said to later become witches and wizards.'
+		lore: 'A male demon of popular European folklore during medieval ages and the counterpart to the Succubus.\nThey are known to visit women in their sleep and have sex with them. The offspring born from these incidents are said to later become witches and wizards.',
+		origin: 'European'
 	},
 	{
 		name: 'Inugami',
@@ -11518,7 +11661,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Neutral',
 			ethical: 'Neutral'
 		},
-		lore: 'Spirits of dogs said to possess humans in Japanese folklore.\nThose possessed enter a state of "inu-tsuki" and go crazy. Onmyoji, or Japanese sorcerers, summon them to do their will.'
+		lore: 'Spirits of dogs said to possess humans in Japanese folklore.\nThose possessed enter a state of "inu-tsuki" and go crazy. Onmyoji, or Japanese sorcerers, summon them to do their will.',
+		origin: 'Japanese'
 	},
 	{
 		name: 'Io',
@@ -11603,6 +11747,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 		game: 'p3',
 		alignment: null,
 		lore: null,
+		origin: 'Greco-Roman',
 		user: 'Yukari Takeba',
 		stage: 1,
 		evoSkillName: null
@@ -11672,7 +11817,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Neutral',
 			ethical: 'Chaos'
 		},
-		lore: 'A monster with one eye and one leg, said to live deep in the mountains of Kumano, Japan.\nA single footprint measuring 30 cm has been sighted in the snowy mountains.'
+		lore: 'A monster with one eye and one leg, said to live deep in the mountains of Kumano, Japan.\nA single footprint measuring 30 cm has been sighted in the snowy mountains.',
+		origin: 'Japanese'
 	},
 	{
 		name: 'Ishtar',
@@ -11751,7 +11897,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Light',
 			ethical: 'Chaos'
 		},
-		lore: 'A Mesopotamian goddess of love and war. Dubbed the "Queen of Heaven," the planet Venus was often seen as the embodiment of the goddess herself.\nIn the Epic of Gilgamesh, she makes many heroes her lovers, but the story also foretells that she will eventually kill them or turn them into animals.'
+		lore: 'A Mesopotamian goddess of love and war. Dubbed the "Queen of Heaven," the planet Venus was often seen as the embodiment of the goddess herself.\nIn the Epic of Gilgamesh, she makes many heroes her lovers, but the story also foretells that she will eventually kill them or turn them into animals.',
+		origin: 'Mesopotamian'
 	},
 	{
 		name: 'Isis',
@@ -11830,7 +11977,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Light',
 			ethical: 'Chaos'
 		},
-		lore: 'The mother goddess of Egypt. She is wife and sister to Osiris, god of the underworld.\nKnown for her powerful magic, she could perform miracles such as raising her husband from the dead. As the patron goddess of the dead, her image can be found at many burial sites.'
+		lore: 'The mother goddess of Egypt. She is wife and sister to Osiris, god of the underworld.\nKnown for her powerful magic, she could perform miracles such as raising her husband from the dead. As the patron goddess of the dead, her image can be found at many burial sites.',
+		origin: 'Egyptian'
 	},
 	{
 		name: 'Isis - P3',
@@ -11942,6 +12090,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 		game: 'p3',
 		alignment: null,
 		lore: null,
+		origin: 'Egyptian',
 		user: 'Yukari Takeba',
 		stage: 2,
 		evoSkillName: null
@@ -12027,6 +12176,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 		game: 'p5',
 		alignment: null,
 		lore: 'A Persona of another story. One of the ancient gods who existed before Japan was formed. He created the Oyashima from chaos, then gave birth to countless children and laid the foundation of soil and nature.',
+		origin: 'Japanese',
 		user: 'P4 Protagonist',
 		stage: 1,
 		evoSkillName: null
@@ -12103,6 +12253,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 		game: 'p5',
 		alignment: null,
 		lore: 'A Persona of another story. A Japanese god of creation, he begat the sky, ocean, and night, and 8 million other gods. Opposes his once-wife, the goddess Izanami, after an encounter in Yomotsu Hirasaka.',
+		origin: 'Japanese',
 		user: 'P4 Protagonist',
 		stage: 2,
 		evoSkillName: null
@@ -12178,7 +12329,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 		},
 		game: 'p5',
 		alignment: null,
-		lore: 'A Persona turned picaro after becoming the Trickster\'s mask. A Japanese god of creation, he begat the sky, ocean, and night, and 8 million other gods. Opposes his once-wife, the goddess Izanami.'
+		lore: 'A Persona turned picaro after becoming the Trickster\'s mask. A Japanese god of creation, he begat the sky, ocean, and night, and 8 million other gods. Opposes his once-wife, the goddess Izanami.',
+		origin: 'Japanese'
 	},
 	{
 		name: 'Izanagi Picaro',
@@ -12243,7 +12395,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 		},
 		game: 'p5',
 		alignment: null,
-		lore: 'A Persona turned picaro after becoming the Trickster\'s mask. One of the ancient gods who existed before Japan was formed. He created the Oyashima from chaos, then gave birth to countless children.'
+		lore: 'A Persona turned picaro after becoming the Trickster\'s mask. One of the ancient gods who existed before Japan was formed. He created the Oyashima from chaos, then gave birth to countless children.',
+		origin: 'Japanese'
 	},
 	{
 		name: 'Jack Frost',
@@ -12316,7 +12469,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Neutral',
 			ethical: 'Neutral'
 		},
-		lore: 'A frost spirit made from ice and snow that appears during the winter and melts away in the spring.\nDo not be fooled by his cute demeanor, however, for Jack Frost is known to freeze people with his cold breath, smiling all the while. Some suggest that he originally looked like an abominable snowman, but may have changed form to appear more approachable and thus more easily lure in his victims.'
+		lore: 'A frost spirit made from ice and snow that appears during the winter and melts away in the spring.\nDo not be fooled by his cute demeanor, however, for Jack Frost is known to freeze people with his cold breath, smiling all the while. Some suggest that he originally looked like an abominable snowman, but may have changed form to appear more approachable and thus more easily lure in his victims.',
+		origin: 'European'
 	},
 	{
 		name: 'Jack-o\'-Lantern',
@@ -12388,7 +12542,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Neutral',
 			ethical: 'Neutral'
 		},
-		lore: 'An Irish spirit typically found in swamps, bogs, or marshes.\nSaid to be spirits of the dead, Jack-o\'-Lanterns appear as floating flames and are known around the world by various names such as "Will-o\'-the-Wisp" and "Hitodama." They are also said to come out at night to startle travelers and make them lose their way.'
+		lore: 'An Irish spirit typically found in swamps, bogs, or marshes.\nSaid to be spirits of the dead, Jack-o\'-Lanterns appear as floating flames and are known around the world by various names such as "Will-o\'-the-Wisp" and "Hitodama." They are also said to come out at night to startle travelers and make them lose their way.',
+		origin: 'Celtic'
 	},
 	{
 		name: 'Jatayu',
@@ -12464,7 +12619,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Light',
 			ethical: 'Law'
 		},
-		lore: 'The Hindu king of birds.\nIn the Ramayana, he fought bravely against Ravana in an attempt to save Sita, the wife of Rama, the seventh avatar of Vishnu. However, he was unfortunately defeated.'
+		lore: 'The Hindu king of birds.\nIn the Ramayana, he fought bravely against Ravana in an attempt to save Sita, the wife of Rama, the seventh avatar of Vishnu. However, he was unfortunately defeated.',
+		origin: 'Hindu'
 	},
 	{
 		name: 'Jikokuten',
@@ -12545,7 +12701,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Light',
 			ethical: 'Chaos'
 		},
-		lore: 'Jikokuten, protector of the East, is one of the Four Heavenly Kings in Buddhist mythology.\nHe is also known as Dhritarashtra, and similarly to his fellow kings, is often depicted as a fierce warrior, clad in armor and wielding a sword. As his name suggests, it is said that he bestows serenity upon a country.'
+		lore: 'Jikokuten, protector of the East, is one of the Four Heavenly Kings in Buddhist mythology.\nHe is also known as Dhritarashtra, and similarly to his fellow kings, is often depicted as a fierce warrior, clad in armor and wielding a sword. As his name suggests, it is said that he bestows serenity upon a country.',
+		origin: 'Buddhist'
 	},
 	{
 		name: 'Jinn',
@@ -12608,7 +12765,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Neutral',
 			ethical: 'Neutral'
 		},
-		lore: 'A spirit of wind and fire appearing in Arabian lore. It can transform at will and grant wishes to those who release it from its bottle or jar.'
+		lore: 'A spirit of wind and fire appearing in Arabian lore. It can transform at will and grant wishes to those who release it from its bottle or jar.',
+		origin: 'Arabian'
 	},
 	{
 		name: 'Jiraiya',
@@ -12717,6 +12875,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 		game: 'p4',
 		alignment: null,
 		lore: null,
+		origin: 'Japanese',
 		user: 'Yosuke Hanamura',
 		stage: 1,
 		evoSkillName: null
@@ -12840,6 +12999,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 		game: 'p5',
 		alignment: null,
 		lore: 'The mysterious female pope of the Middle Ages. She posed as a man and eventually made it all the way up to pope due to her unrivaled intellect. Her existence shook the history of the Catholic church.',
+		origin: 'European',
 		user: 'Makoto Niijima',
 		stage: 1,
 		evoSkillName: null
@@ -12899,6 +13059,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 		game: 'p3',
 		alignment: null,
 		lore: null,
+		origin: 'Greco-Roman',
 		user: 'Fuuka Yamagishi',
 		stage: 2,
 		evoSkillName: null
@@ -12969,6 +13130,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 		game: 'p5',
 		alignment: null,
 		lore: 'A Persona of another story. A divine being born from a glowing bamboo shoot. Though many proposed to her, none could complete her strict tasks. She eventually returned to her home, the moon.',
+		origin: 'Japanese',
 		user: 'Marie',
 		stage: 1,
 		evoSkillName: null
@@ -13036,7 +13198,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 		},
 		game: 'p5',
 		alignment: null,
-		lore: 'A Persona turned picaro after becoming the Trickster\'s mask. She appeared from a glowing bamboo shoot. She received many proposals, but rejected them and returned to the moon.'
+		lore: 'A Persona turned picaro after becoming the Trickster\'s mask. She appeared from a glowing bamboo shoot. She received many proposals, but rejected them and returned to the moon.',
+		origin: 'Japanese'
 	},
 	{
 		name: 'Kaiwan',
@@ -13109,7 +13272,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Neutral',
 			ethical: 'Chaos'
 		},
-		lore: 'A god in Assyrian legend, his name is interchangeable with Sakkut, another incarnation of the star-god, Saturn.'
+		lore: 'A god in Assyrian legend, his name is interchangeable with Sakkut, another incarnation of the star-god, Saturn.',
+		origin: 'Mesopotamian'
 	},
 	{
 		name: 'Kala-Nemi',
@@ -13202,6 +13366,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 		game: 'p3',
 		alignment: null,
 		lore: null,
+		origin: 'Hindu',
 		user: 'Ken Amada',
 		stage: 2,
 		evoSkillName: null
@@ -13284,7 +13449,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Neutral',
 			ethical: 'Chaos'
 		},
-		lore: 'The Black One, a symbol of death and destruction.\nShe is said to be another face of Parvati, Shiva\'s consort. Wearing a necklace of human heads, she wields numerous bloody swords, one for each of her many arms. It is said that when Durga, another form of Parvati, was fighting the Asuras, she summoned Kali and defeated the Asura army in an instant.'
+		lore: 'The Black One, a symbol of death and destruction.\nShe is said to be another face of Parvati, Shiva\'s consort. Wearing a necklace of human heads, she wields numerous bloody swords, one for each of her many arms. It is said that when Durga, another form of Parvati, was fighting the Asuras, she summoned Kali and defeated the Asura army in an instant.',
+		origin: 'Hindu'
 	},
 	{
 		name: 'Kamui',
@@ -13396,6 +13562,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 		game: 'p4',
 		alignment: null,
 		lore: null,
+		origin: 'Japanese',
 		user: 'Teddie',
 		stage: 2,
 		evoSkillName: null
@@ -13508,6 +13675,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 		game: 'p4',
 		alignment: null,
 		lore: null,
+		origin: 'Japanese',
 		user: 'Teddie',
 		stage: 3,
 		evoSkillName: 'Kamui Miracle'
@@ -13637,6 +13805,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 		game: 'p5',
 		alignment: null,
 		lore: 'A Japanese god found in the Izumo Fudoki. He was one of the three gods born from Izanagi. He was a violent ruffian, but also has a sensitive side, showing love for his mother and reading poems.',
+		origin: 'Japanese',
 		user: 'Yusuke Kitagawa',
 		stage: 2,
 		evoSkillName: 'Evade Fire'
@@ -13716,6 +13885,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 		game: 'p4',
 		alignment: null,
 		lore: null,
+		origin: 'Buddhist',
 		user: 'Rise Kujikawa',
 		stage: 2,
 		evoSkillName: null
@@ -13779,7 +13949,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Light',
 			ethical: 'Chaos'
 		},
-		lore: 'A Hindu god of war, also known as Skanda and Murugan. He rides upon a peacock called Paravani, with a bow and arrow drawn. He commands the army of the gods, and defeated the forces of Asura.'
+		lore: 'A Hindu god of war, also known as Skanda and Murugan. He rides upon a peacock called Paravani, with a bow and arrow drawn. He commands the army of the gods, and defeated the forces of Asura.',
+		origin: 'Hindu'
 	},
 	{
 		name: 'Kaya-no-Hime',
@@ -13854,7 +14025,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Neutral',
 			ethical: 'Neutral'
 		},
-		lore: 'A goddess of grasses in Japanese mythology.\nThe name "Kaya" refers to the grass that was used to build traditional grass-roof houses, highlighting its importance to the people of ancient Japan.'
+		lore: 'A goddess of grasses in Japanese mythology.\nThe name "Kaya" refers to the grass that was used to build traditional grass-roof houses, highlighting its importance to the people of ancient Japan.',
+		origin: 'Japanese'
 	},
 	{
 		name: 'Kelpie',
@@ -13931,7 +14103,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Neutral',
 			ethical: 'Neutral'
 		},
-		lore: 'A fairy of Celtic folklore that lives by the water and takes the appearance of a horse.\nThey often drown those who attempt to ride them, but, if tames, they can be valuable mounts.'
+		lore: 'A fairy of Celtic folklore that lives by the water and takes the appearance of a horse.\nThey often drown those who attempt to ride them, but, if tames, they can be valuable mounts.',
+		origin: 'Celtic'
 	},
 	{
 		name: 'Khonsu',
@@ -14012,7 +14185,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Light',
 			ethical: 'Neutral'
 		},
-		lore: 'The Egyptian god of the moon.\nOften portrayed as a mummy with two long braids of hair, he is said to be a reincarnation of the moon itself and holds possession over what\'s known as the moon ship. He also acts as a companion to the Pharaoh\'s shadow. Hieroglyphics found in Unas\' pyramid depict him as a god who prepares meals for an oppressive, god-devouring king.'
+		lore: 'The Egyptian god of the moon.\nOften portrayed as a mummy with two long braids of hair, he is said to be a reincarnation of the moon itself and holds possession over what\'s known as the moon ship. He also acts as a companion to the Pharaoh\'s shadow. Hieroglyphics found in Unas\' pyramid depict him as a god who prepares meals for an oppressive, god-devouring king.',
+		origin: 'Egyptian'
 	},
 	{
 		name: 'Khonsu Ra',
@@ -14094,7 +14268,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Light',
 			ethical: 'Neutral'
 		},
-		lore: 'The form of the Egyptian god of the Moon, Khonsu, upon gaining the power of the sun god, Ra.\nHidden behind a foreboding mask, he possesses the dual powers of the sun and moon, the day and night, and the living and the dead.'
+		lore: 'The form of the Egyptian god of the Moon, Khonsu, upon gaining the power of the sun god, Ra.\nHidden behind a foreboding mask, he possesses the dual powers of the sun and moon, the day and night, and the living and the dead.',
+		origin: 'Egyptian'
 	},
 	{
 		name: 'Kikuri-Hime',
@@ -14169,7 +14344,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Light',
 			ethical: 'Chaos'
 		},
-		lore: 'The goddess of Shirayama, also called Shirayama-Hime, and the deification of a maiden who relayed Izanami\'s words.\nShe once mediated between Izanagi and Izanami during their confrontation in Yomi, the land of the dead. Since she is the goddess of love and marriage, she was thought to have been named for "kukuri," meaning "to bring people together."'
+		lore: 'The goddess of Shirayama, also called Shirayama-Hime, and the deification of a maiden who relayed Izanami\'s words.\nShe once mediated between Izanagi and Izanami during their confrontation in Yomi, the land of the dead. Since she is the goddess of love and marriage, she was thought to have been named for "kukuri," meaning "to bring people together."',
+		origin: 'Japanese'
 	},
 	{
 		name: 'King Frost',
@@ -14247,7 +14423,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Dark',
 			ethical: 'Chaos'
 		},
-		lore: 'The king of snow who rules over an infinite number of Jack Frosts.\nHe has the power to freeze the entire world but is unaware of it due to his rather naïve personality.'
+		lore: 'The king of snow who rules over an infinite number of Jack Frosts.\nHe has the power to freeze the entire world but is unaware of it due to his rather naïve personality.',
+		origin: 'ATLUS Original'
 	},
 	{
 		name: 'Kingu',
@@ -14315,7 +14492,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Dark',
 			ethical: 'Chaos'
 		},
-		lore: 'The son and second consort to the female dragon Tiamat. He was to be the leader of the gods, but was killed by Marduk. Mankind was created from his blood.'
+		lore: 'The son and second consort to the female dragon Tiamat. He was to be the leader of the gods, but was killed by Marduk. Mankind was created from his blood.',
+		origin: 'Mesopotamian'
 	},
 	{
 		name: 'Kin-Ki',
@@ -14392,7 +14570,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Neutral',
 			ethical: 'Chaos'
 		},
-		lore: 'One of the four oni controlled by Fujiwara no Chikata, its body is so hard that no weapons can penetrate it.\nIt and its comrades fell into hell through holes that can still be found in Mie Prefecture, Japan (the modern-day Iga Province).'
+		lore: 'One of the four oni controlled by Fujiwara no Chikata, its body is so hard that no weapons can penetrate it.\nIt and its comrades fell into hell through holes that can still be found in Mie Prefecture, Japan (the modern-day Iga Province).',
+		origin: 'Japanese'
 	},
 	{
 		name: 'Kintoki-Douji',
@@ -14501,6 +14680,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 		game: 'p4',
 		alignment: null,
 		lore: null,
+		origin: 'Japanese',
 		user: 'Teddie',
 		stage: 1,
 		evoSkillName: null
@@ -14567,7 +14747,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Neutral',
 			ethical: 'Neutral'
 		},
-		lore: 'In Japanese mythology, they are the spirits of plants. They are born from trees that live 100 years.\nIt was once thought that the echoes heard in valleys were actually from Kodama replying.'
+		lore: 'In Japanese mythology, they are the spirits of plants. They are born from trees that live 100 years.\nIt was once thought that the echoes heard in valleys were actually from Kodama replying.',
+		origin: 'Japanese'
 	},
 	{
 		name: 'Koh-i-Noor',
@@ -14635,7 +14816,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 		},
 		game: 'p5',
 		alignment: null,
-		lore: 'Once called the world\'s largest diamond, it was cut when it came to the British royal family. It is said to bring bad luck to any man who wears it, so only the females have ever adorned it.'
+		lore: 'Once called the world\'s largest diamond, it was cut when it came to the British royal family. It is said to bring bad luck to any man who wears it, so only the females have ever adorned it.',
+		origin: 'European'
 	},
 	{
 		name: 'Kohryu',
@@ -14720,7 +14902,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Light',
 			ethical: 'Chaos'
 		},
-		lore: 'One of the holy dragons of Chinese lore, the Golden Dragon appears in times of great fortune or joy.\nHis dominion over the earth extends to the four gods Qing Long, Xuanwu, Zhuquem and Baihu.'
+		lore: 'One of the holy dragons of Chinese lore, the Golden Dragon appears in times of great fortune or joy.\nHis dominion over the earth extends to the four gods Qing Long, Xuanwu, Zhuquem and Baihu.',
+		origin: 'Chinese'
 	},
 	{
 		name: 'Konohana Sakuya',
@@ -14833,6 +15016,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 		game: 'p4',
 		alignment: null,
 		lore: null,
+		origin: 'Japanese',
 		user: 'Yukiko Amagi',
 		stage: 1,
 		evoSkillName: null
@@ -14908,7 +15092,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Neutral',
 			ethical: 'Law'
 		},
-		lore: 'A smaller member of the Tengu race less powerful than other Tengu.\nThey are believed to be an incarnation of an old wolf and are capable of eventually transforming into Karasu Tengu.'
+		lore: 'A smaller member of the Tengu race less powerful than other Tengu.\nThey are believed to be an incarnation of an old wolf and are capable of eventually transforming into Karasu Tengu.',
+		origin: 'Japanese'
 	},
 	{
 		name: 'Koropokguru',
@@ -14992,7 +15177,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Neutral',
 			ethical: 'Neutral'
 		},
-		lore: 'Small human-like creatures that have kind, calm personalities.\nOnce coexisting with the Ainu people of Japan, there was a falling out at some point, and they disappeared.'
+		lore: 'Small human-like creatures that have kind, calm personalities.\nOnce coexisting with the Ainu people of Japan, there was a falling out at some point, and they disappeared.',
+		origin: 'Japanese'
 	},
 	{
 		name: 'Koumokuten',
@@ -15073,7 +15259,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Light',
 			ethical: 'Chaos'
 		},
-		lore: 'Koumokuten, protector of the West, is one of the Four Heavenly Kings of Buddhist mythology.\nSimilarly to his fellow kings, he is often depicted as a fierce warrior, clad in armor and wielding a trident. He is also known as Virupaksha and is said to keep a close eye on the world with his sharp gaze, preaching to the people all the while.'
+		lore: 'Koumokuten, protector of the West, is one of the Four Heavenly Kings of Buddhist mythology.\nSimilarly to his fellow kings, he is often depicted as a fierce warrior, clad in armor and wielding a trident. He is also known as Virupaksha and is said to keep a close eye on the world with his sharp gaze, preaching to the people all the while.',
+		origin: 'Buddhist'
 	},
 	{
 		name: 'Kouzeon',
@@ -15150,6 +15337,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 		game: 'p4',
 		alignment: null,
 		lore: null,
+		origin: 'Buddhist',
 		user: 'Rise Kujikawa',
 		stage: 3,
 		evoSkillName: 'Complete Analysis'
@@ -15234,7 +15422,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Dark',
 			ethical: 'Chaos'
 		},
-		lore: 'Demons of Buddhist origin, known for draining the life energy of humans.\nIt is said that they often change shape and take the form of a gourd. They stand three meters tall, with red hair and dark skin, and have the body of a human but the head of a white horse. They once served Rudra, but according to Buddhist scriptures, they now follow Zouchouten of the Four Heavenly Kings.'
+		lore: 'Demons of Buddhist origin, known for draining the life energy of humans.\nIt is said that they often change shape and take the form of a gourd. They stand three meters tall, with red hair and dark skin, and have the body of a human but the head of a white horse. They once served Rudra, but according to Buddhist scriptures, they now follow Zouchouten of the Four Heavenly Kings.',
+		origin: 'Buddhist'
 	},
 	{
 		name: 'Kurama Tengu',
@@ -15308,7 +15497,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Light',
 			ethical: 'Neutral'
 		},
-		lore: 'A tengu that is said to have lived in Mt. Kurama in Kyoto.\nThe most powerful and well-known of the tengu, he has the power to fend off disease and bring good fortune. He is also said to have trained Yoshitsune how to fight with a sword when Yoshitsune was still a child. Some believe him to be Bishamonten\'s night form.'
+		lore: 'A tengu that is said to have lived in Mt. Kurama in Kyoto.\nThe most powerful and well-known of the tengu, he has the power to fend off disease and bring good fortune. He is also said to have trained Yoshitsune how to fight with a sword when Yoshitsune was still a child. Some believe him to be Bishamonten\'s night form.',
+		origin: 'Japanese'
 	},
 	{
 		name: 'Kushi Mitama',
@@ -15374,7 +15564,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Light',
 			ethical: 'Neutral'
 		},
-		lore: 'One of the four great aspects of Shinto thought, it uses its power to bring good omens.\nIt is said to aid in one\'s wisdom, observation, and skill, and can also mend fractured paths.'
+		lore: 'One of the four great aspects of Shinto thought, it uses its power to bring good omens.\nIt is said to aid in one\'s wisdom, observation, and skill, and can also mend fractured paths.',
+		origin: 'Japanese'
 	},
 	{
 		name: 'Kushinada',
@@ -15448,7 +15639,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Light',
 			ethical: 'Chaos'
 		},
-		lore: 'Kushinada-Hime is a goddess in Japanese mythology.\nWhen she was human, she was saved from the eight-headed serpent Yamata-no-Orochi by the storm god Susano-o, whom she later wedded.'
+		lore: 'Kushinada-Hime is a goddess in Japanese mythology.\nWhen she was human, she was saved from the eight-headed serpent Yamata-no-Orochi by the storm god Susano-o, whom she later wedded.',
+		origin: 'Japanese'
 	},
 	{
 		name: 'Lachesis',
@@ -15532,7 +15724,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Neutral',
 			ethical: 'Chaos'
 		},
-		lore: 'One of the three Moirae Sisters in Greek mythology.\nShe is the apportioner, measuring the thread which determines a person\'s life span.'
+		lore: 'One of the three Moirae Sisters in Greek mythology.\nShe is the apportioner, measuring the thread which determines a person\'s life span.',
+		origin: 'Greco-Roman'
 	},
 	{
 		name: 'Lahmu',
@@ -15616,7 +15809,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Dark',
 			ethical: 'Chaos'
 		},
-		lore: 'A god that appears in Babylonian mythology.\nBorn from Apsu and Tiamat, he and his sister, Lahamu, gave birth to Anshar and Kishar. Lahmu is at times depicted as a large serpent, but has also been illustrated as a man wearing a red sash with six curls in his hair. Regardless, he is always shown alongside Lahamu and it is thought that together they represent the slit in the sea where Apsu\'s fresh water and Tiamat\'s sea water mix.'
+		lore: 'A god that appears in Babylonian mythology.\nBorn from Apsu and Tiamat, he and his sister, Lahamu, gave birth to Anshar and Kishar. Lahmu is at times depicted as a large serpent, but has also been illustrated as a man wearing a red sash with six curls in his hair. Regardless, he is always shown alongside Lahamu and it is thought that together they represent the slit in the sea where Apsu\'s fresh water and Tiamat\'s sea water mix.',
+		origin: 'Mesopotamian'
 	},
 	{
 		name: 'Lakshmi',
@@ -15699,7 +15893,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Light',
 			ethical: 'Neutral'
 		},
-		lore: 'Goddess of beauty and good fortune in Hindu lore.\nVishnu\'s wife and Kama\'s mother, she is regarded as the goddess of love and is said to embody the ideal woman. She is also known to have charmed many gods with her dance.'
+		lore: 'Goddess of beauty and good fortune in Hindu lore.\nVishnu\'s wife and Kama\'s mother, she is regarded as the goddess of love and is said to embody the ideal woman. She is also known to have charmed many gods with her dance.',
+		origin: 'Hindu'
 	},
 	{
 		name: 'Lamia',
@@ -15777,7 +15972,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Neutral',
 			ethical: 'Chaos'
 		},
-		lore: 'Half-woman, half-snake creatures that appear in Greek mythology and are said to reside in Libya.\nThey supposedly favor the blood of children and young men.'
+		lore: 'Half-woman, half-snake creatures that appear in Greek mythology and are said to reside in Libya.\nThey supposedly favor the blood of children and young men.',
+		origin: 'Greco-Roman'
 	},
 	{
 		name: 'Leanan Sidhe',
@@ -15851,7 +16047,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Neutral',
 			ethical: 'Chaos'
 		},
-		lore: 'A beautiful faerie of Irish lore whose name means "faerie mistress."\nShe drains the life of her lovers in return for granting them artistic inspiration.'
+		lore: 'A beautiful faerie of Irish lore whose name means "faerie mistress."\nShe drains the life of her lovers in return for granting them artistic inspiration.',
+		origin: 'Celtic'
 	},
 	{
 		name: 'Legion',
@@ -15919,7 +16116,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Dark',
 			ethical: 'Chaos'
 		},
-		lore: 'A demon or horde of demons quoted as saying, "For we are many" in the New Testament.\nThe name comes from the Roman military term for an army unit of 3,000 to 6,000 men.'
+		lore: 'A demon or horde of demons quoted as saying, "For we are many" in the New Testament.\nThe name comes from the Roman military term for an army unit of 3,000 to 6,000 men.',
+		origin: 'Abrahamic'
 	},
 	{
 		name: 'Lilim',
@@ -15993,7 +16191,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Neutral',
 			ethical: 'Chaos'
 		},
-		lore: 'A demon in female form from Judeo-Christian lore known to tempt sleeping men and attack infants.\nShe is the daughter of the demoness Lilith, who tempted Adam. Like her mother, she drains men of their essence.'
+		lore: 'A demon in female form from Judeo-Christian lore known to tempt sleeping men and attack infants.\nShe is the daughter of the demoness Lilith, who tempted Adam. Like her mother, she drains men of their essence.',
+		origin: 'Abrahamic'
 	},
 	{
 		name: 'Lilith',
@@ -16071,7 +16270,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Neutral',
 			ethical: 'Chaos'
 		},
-		lore: 'She is said to have been Adam\'s first wife. Refusing to obey Adam, she left Eden and became a demon of the night.\nThough there are several theories regarding her disobedience, she is often regarded as a symbol of infidelity.'
+		lore: 'She is said to have been Adam\'s first wife. Refusing to obey Adam, she left Eden and became a demon of the night.\nThough there are several theories regarding her disobedience, she is often regarded as a symbol of infidelity.',
+		origin: 'Abrahamic'
 	},
 	{
 		name: 'Loa',
@@ -16144,7 +16344,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Dark',
 			ethical: 'Neutral'
 		},
-		lore: 'A group of divinities worshipped in voodoo religion.\nOf the many hidden entities mentioned in religious doctrines, the ones that influence human activities in the earthly realm are known by this name. It is said that those aligned with shadow also possess powerful dark magic.'
+		lore: 'A group of divinities worshipped in voodoo religion.\nOf the many hidden entities mentioned in religious doctrines, the ones that influence human activities in the earthly realm are known by this name. It is said that those aligned with shadow also possess powerful dark magic.',
+		origin: 'Haitian'
 	},
 	{
 		name: 'Loki',
@@ -16225,7 +16426,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Dark',
 			ethical: 'Chaos'
 		},
-		lore: 'A malevolent god of Norse mythology.\nThough not always driven by malice, he can be capricious and is quite cunning, and despite being a blood brother to Odin, he was punished for many of his wrong doings, including the murder of Odin\'s child, Baldur.'
+		lore: 'A malevolent god of Norse mythology.\nThough not always driven by malice, he can be capricious and is quite cunning, and despite being a blood brother to Odin, he was punished for many of his wrong doings, including the murder of Odin\'s child, Baldur.',
+		origin: 'Norse'
 	},
 	{
 		name: 'Loki - P5',
@@ -16297,6 +16499,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 		game: 'p5',
 		alignment: null,
 		lore: 'A malignant god of Norse mythology. Not always driven by malice, but impulsive and devious. He had an uneasy peace with Odin and the gods, but his part in Baldr\'s death drove them to finally punish him.',
+		origin: 'Norse',
 		user: 'Goro Akechi',
 		stage: 2,
 		evoSkillName: null
@@ -16377,7 +16580,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Neutral',
 			ethical: 'Neutral'
 		},
-		lore: 'A type of werewolf originating in France. It appears human during the day, but transforms into its beastly form at night, when it has been known to viciously attack humans.\nThey are said to have once been ordinary human beings. However, upon turning into a loup-garou, one cannot regain their humanity ever again.'
+		lore: 'A type of werewolf originating in France. It appears human during the day, but transforms into its beastly form at night, when it has been known to viciously attack humans.\nThey are said to have once been ordinary human beings. However, upon turning into a loup-garou, one cannot regain their humanity ever again.',
+		origin: 'European'
 	},
 	{
 		name: 'Lucia',
@@ -16426,6 +16630,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 		game: 'p3',
 		alignment: null,
 		lore: null,
+		origin: 'Historical',
 		user: 'Fuuka Yamagishi',
 		stage: 1,
 		evoSkillName: null
@@ -16503,7 +16708,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Dark',
 			ethical: 'Chaos'
 		},
-		lore: 'A fallen Judeo-Christian angel, he lead a rebellion with an army of angels against God and lost. He waits in Hell for his chance to challenge God once more and strike him down.'
+		lore: 'A fallen Judeo-Christian angel, he lead a rebellion with an army of angels against God and lost. He waits in Hell for his chance to challenge God once more and strike him down.',
+		origin: 'Abrahamic'
 	},
 	{
 		name: 'Lucy',
@@ -16618,6 +16824,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 		game: 'p5',
 		alignment: null,
 		lore: 'The Countess of Carlisle, and the historical basis for Alexandre Dumas\'s femme fatale, Milady de Winter. Known for her beauty and cunning, she was a courtier much favored by the Queen.',
+		origin: 'Historical',
 		user: 'Haru Okumura',
 		stage: 3,
 		evoSkillName: 'Life Wall'
@@ -16698,7 +16905,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Dark',
 			ethical: 'Neutral'
 		},
-		lore: 'An evil spirit appearing in medieval oratorios as the grim reaper.\nIt is truly Death itself, with the power to lead humans to their demise in an instant. It is depicted as a skeleton with a black cloak and a sickle to reap human souls in a single stroke. True to its name, it dances the feared Dance of Death, a reminder that all worldly things must someday meet their end.'
+		lore: 'An evil spirit appearing in medieval oratorios as the grim reaper.\nIt is truly Death itself, with the power to lead humans to their demise in an instant. It is depicted as a skeleton with a black cloak and a sickle to reap human souls in a single stroke. True to its name, it dances the feared Dance of Death, a reminder that all worldly things must someday meet their end.',
+		origin: 'European'
 	},
 	{
 		name: 'Mada',
@@ -16779,7 +16987,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Dark',
 			ethical: 'Law'
 		},
-		lore: 'A giant Asura in Hinduism whose name means "the intoxicator."\nIt is said that the sage Chyavana created it from fire. Mada has the power to swollow its enemies, and even the deity Indra has been said to surrender to its power.'
+		lore: 'A giant Asura in Hinduism whose name means "the intoxicator."\nIt is said that the sage Chyavana created it from fire. Mada has the power to swollow its enemies, and even the deity Indra has been said to surrender to its power.',
+		origin: 'Hindu'
 	},
 	{
 		name: 'Magatsu-Izanagi',
@@ -16847,6 +17056,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 		game: 'p5',
 		alignment: null,
 		lore: 'A Persona of another story. He\'s Izanagi\'s rival and looks just like him. Magatsu means "calamity." Unlike Izanagi, who founded the land and brought order, he leads all back into chaos.',
+		origin: 'ATLUS Original',
 		user: 'Tohru Adachi',
 		stage: 2,
 		evoSkillName: null
@@ -16919,7 +17129,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 		},
 		game: 'p5',
 		alignment: null,
-		lore: 'A Persona turned picaro after becoming the Trickster\'s mask. He\'s Izanagi\'s rival. Magatsu means "calamity," so, unlike Izanagi who founded the land and brought order, he leads all back into chaos.'
+		lore: 'A Persona turned picaro after becoming the Trickster\'s mask. He\'s Izanagi\'s rival. Magatsu means "calamity," so, unlike Izanagi who founded the land and brought order, he leads all back into chaos.',
+		origin: 'ATLUS Original'
 	},
 	{
 		name: 'Mahakala',
@@ -16992,7 +17203,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Unknown',
 			ethical: 'Chaos'
 		},
-		lore: 'Indian god who repels evil, known as Daikokuten in Buddhism. Its swords are fearsome, but by paying tribute to him, believers may be blessed with tremendous wealth and happiness.'
+		lore: 'Indian god who repels evil, known as Daikokuten in Buddhism. Its swords are fearsome, but by paying tribute to him, believers may be blessed with tremendous wealth and happiness.',
+		origin: 'Buddhist'
 	},
 	{
 		name: 'Makami',
@@ -17065,7 +17277,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Light',
 			ethical: 'Neutral'
 		},
-		lore: 'A divine beast in Japanese mythology.\nIt has been said to ward off evil and disasters, especially thefts and fire, and is commonly drawn on "ema," a type of Japanese amulet. However, despite being known primarily for protection, it has also been rumored to eat people.'
+		lore: 'A divine beast in Japanese mythology.\nIt has been said to ward off evil and disasters, especially thefts and fire, and is commonly drawn on "ema," a type of Japanese amulet. However, despite being known primarily for protection, it has also been rumored to eat people.',
+		origin: 'Japanese'
 	},
 	{
 		name: 'Manananggal',
@@ -17139,7 +17352,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Neutral',
 			ethical: 'Chaos'
 		},
-		lore: 'A witch whose lore originated in the Philippines.\nIt masquerades as a beautiful woman during the day but transforms into a blood-sucking monster at night. It has the ability to separate its upper and lower body, and can sprout bat wings from its back to fly in search of humans to suck their blood. It is said that the Manananggal preys on unborn fetuses in particular, using its proboscis-like tongue to open the wombs of pregnant women, wherein it will suck the fetus\' blood, or devour it outright.'
+		lore: 'A witch whose lore originated in the Philippines.\nIt masquerades as a beautiful woman during the day but transforms into a blood-sucking monster at night. It has the ability to separate its upper and lower body, and can sprout bat wings from its back to fly in search of humans to suck their blood. It is said that the Manananggal preys on unborn fetuses in particular, using its proboscis-like tongue to open the wombs of pregnant women, wherein it will suck the fetus\' blood, or devour it outright.',
+		origin: 'Filipino'
 	},
 	{
 		name: 'Mandrake',
@@ -17204,7 +17418,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Neutral',
 			ethical: 'Law'
 		},
-		lore: 'A magical plant whose roots take the appearance of a human.\nMandrakes are a precious component in potions to heal sicknesses, but obtaining one is notoriously difficult. When pulled from the ground, they let out a bloodcurdling scream, killing anyone unlucky enough to hear it. There are both male and female variations of Mandrakes.'
+		lore: 'A magical plant whose roots take the appearance of a human.\nMandrakes are a precious component in potions to heal sicknesses, but obtaining one is notoriously difficult. When pulled from the ground, they let out a bloodcurdling scream, killing anyone unlucky enough to hear it. There are both male and female variations of Mandrakes.',
+		origin: 'European'
 	},
 	{
 		name: 'Mara',
@@ -17288,7 +17503,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Dark',
 			ethical: 'Chaos'
 		},
-		lore: 'A Buddhist demon that represents the fear of death.\nAlso known as "The Evil One," he sent his daughter to tempt Buddha during his meditations.'
+		lore: 'A Buddhist demon that represents the fear of death.\nAlso known as "The Evil One," he sent his daughter to tempt Buddha during his meditations.',
+		origin: 'Buddhist'
 	},
 	{
 		name: 'Maria',
@@ -17373,7 +17589,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Light',
 			ethical: 'Law'
 		},
-		lore: 'The maternal figure of Christianity.\nGabriel informed her that she was to be the mother of Jesus. Some sects revere her as Virgin Mary, but other denominations do not focus on her.'
+		lore: 'The maternal figure of Christianity.\nGabriel informed her that she was to be the mother of Jesus. Some sects revere her as Virgin Mary, but other denominations do not focus on her.',
+		origin: 'Abrahamic'
 	},
 	{
 		name: 'Masakado',
@@ -17438,7 +17655,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Dark',
 			ethical: 'Neutral'
 		},
-		lore: 'Taira no Masakado, hero of the Heian period. He claimed the title "Shinno" (New Emperor) and rebelled against the government. He was killed, but it is said he became a demigod.'
+		lore: 'Taira no Masakado, hero of the Heian period. He claimed the title "Shinno" (New Emperor) and rebelled against the government. He was killed, but it is said he became a demigod.',
+		origin: 'Japanese'
 	},
 	{
 		name: 'Matador',
@@ -17520,7 +17738,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Unknown',
 			ethical: 'Unknown'
 		},
-		lore: 'A master sportsman who entertains the audience at the cost of his own peril; even one small slip-up can spell certain death.\nIt is said that some of the men who die in this cruel game remain in this world as Fiends, bound by regret as well as the thirst for the cheers and excitement.'
+		lore: 'A master sportsman who entertains the audience at the cost of his own peril; even one small slip-up can spell certain death.\nIt is said that some of the men who die in this cruel game remain in this world as Fiends, bound by regret as well as the thirst for the cheers and excitement.',
+		origin: 'European'
 	},
 	{
 		name: 'Melchizedek',
@@ -17597,7 +17816,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Light',
 			ethical: 'Law'
 		},
-		lore: 'A Christian Gnostic angel said to be the "savior of angels."\nIn the Bible, he is referred to as "Melchizedek, king of Saelm.'
+		lore: 'A Christian Gnostic angel said to be the "savior of angels."\nIn the Bible, he is referred to as "Melchizedek, king of Saelm.',
+		origin: 'Abrahamic'
 	},
 	{
 		name: 'Mephisto',
@@ -17685,7 +17905,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Dark',
 			ethical: 'Chaos'
 		},
-		lore: 'More accurately, Mephistopheles. He is one of the princes of Hell and his name means "he who loves not the light".\nHe is commonly known as the demon summoned by Georg Faust. Other than Satan himself, he is the most feared commander in Hell. However, he despises having fallen into Hell and hates any and all humans who have been granted salvation. He is rather knowledgeable in the realms of astronomy, astrology and meteorology in addition to being a skilled illusionist who can manipulate all five senses.'
+		lore: 'More accurately, Mephistopheles. He is one of the princes of Hell and his name means "he who loves not the light".\nHe is commonly known as the demon summoned by Georg Faust. Other than Satan himself, he is the most feared commander in Hell. However, he despises having fallen into Hell and hates any and all humans who have been granted salvation. He is rather knowledgeable in the realms of astronomy, astrology and meteorology in addition to being a skilled illusionist who can manipulate all five senses.',
+		origin: 'Abrahamic'
 	},
 	{
 		name: 'Mercurius',
@@ -17820,6 +18041,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 		game: 'p5',
 		alignment: null,
 		lore: 'The Roman god of travelers and thieves. A diverse god, he is seen as a symbol of human unconscious and the mental world. He is equated with the Philosopher\'s Stone, the ultimate mystery in the field of alchemy.',
+		origin: 'Greco-Roman',
 		user: 'Morgana',
 		stage: 2,
 		evoSkillName: 'Evade Elec'
@@ -17892,7 +18114,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Neutral',
 			ethical: 'Chaos'
 		},
-		lore: 'Half-woman, half-fish inhabitant of the ocean. Males are called mermen.\nMermaids are regarded as unlucky omens by many fishermen, often foretelling severe storms or poor catches. Legend says they use their voices to charm men, causing them to crash their ships.'
+		lore: 'Half-woman, half-fish inhabitant of the ocean. Males are called mermen.\nMermaids are regarded as unlucky omens by many fishermen, often foretelling severe storms or poor catches. Legend says they use their voices to charm men, causing them to crash their ships.',
+		origin: 'European'
 	},
 	{
 		name: 'Messiah',
@@ -17968,6 +18191,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 		game: 'p5',
 		alignment: null,
 		lore: 'A Persona of another story. He appears before Judgment Day to save the virtuous. He is a universal figure, appearing in myths around the world. Many stories involve his death and rebirth.',
+		origin: 'Universal',
 		user: 'P3 Protagonist',
 		stage: 2,
 		evoSkillName: null
@@ -18045,7 +18269,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 		},
 		game: 'p5',
 		alignment: null,
-		lore: 'A Persona turned picaro after becoming the Trickster\'s mask. He appears before Judgment Day to save the virtuous. He is a universal figure, appearing in myths around the world.'
+		lore: 'A Persona turned picaro after becoming the Trickster\'s mask. He appears before Judgment Day to save the virtuous. He is a universal figure, appearing in myths around the world.',
+		origin: 'Universal'
 	},
 	{
 		name: 'Metatron',
@@ -18127,7 +18352,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Light',
 			ethical: 'Law'
 		},
-		lore: 'One of the most important angels in the hierarchy, yet the most mysterious.\nHe is the scribe and advocate of heaven.'
+		lore: 'One of the most important angels in the hierarchy, yet the most mysterious.\nHe is the scribe and advocate of heaven.',
+		origin: 'Abrahamic'
 	},
 	{
 		name: 'Michael',
@@ -18208,7 +18434,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Light',
 			ethical: 'Law'
 		},
-		lore: 'One of the four major angels, his name means "He who is like God."\nHe stands at the top of the angel hierarchy and carries a divine armament known to shatter any blade.'
+		lore: 'One of the four major angels, his name means "He who is like God."\nHe stands at the top of the angel hierarchy and carries a divine armament known to shatter any blade.',
+		origin: 'Abrahamic'
 	},
 	{
 		name: 'Milady',
@@ -18321,6 +18548,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 		game: 'p5',
 		alignment: null,
 		lore: 'The beautiful woman that appears in Dumas\' "Three Musketeers". Branded with a fleur-de-lis symbol, she used many aliases to control nobility and get her vengeance.',
+		origin: 'Modern Fiction',
 		user: 'Haru Okumura',
 		stage: 1,
 		evoSkillName: null
@@ -18402,7 +18630,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Dark',
 			ethical: 'Law'
 		},
-		lore: 'An indigenous god of the Shinano region from before the forces of Yamato occupied the land.\nSaid to be born from the belief that divine spirits dwelled in rocks and stones.'
+		lore: 'An indigenous god of the Shinano region from before the forces of Yamato occupied the land.\nSaid to be born from the belief that divine spirits dwelled in rocks and stones.',
+		origin: 'Japanese'
 	},
 	{
 		name: 'Mithras',
@@ -18483,7 +18712,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Dark',
 			ethical: 'Chaos'
 		},
-		lore: 'A sun deity who was worshipped in the Roman Empire from the 1st to the 4th century AD.\nThe rituals of the religion were secretive, but it is believed they entailed covering oneself in the blood of sheep and bulls. He was said to be reborn after death, inspiring worshippers to hold a festival each winter solstice.'
+		lore: 'A sun deity who was worshipped in the Roman Empire from the 1st to the 4th century AD.\nThe rituals of the religion were secretive, but it is believed they entailed covering oneself in the blood of sheep and bulls. He was said to be reborn after death, inspiring worshippers to hold a festival each winter solstice.',
+		origin: 'Greco-Roman'
 	},
 	{
 		name: 'Mitra',
@@ -18563,7 +18793,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Light',
 			ethical: 'Neutral'
 		},
-		lore: 'Commonly known as Mitra-Buddha or Mitra.\nAn ancient Persian god of contracts, he was also revered as a sun god. He is a protector of the world\'s harmony and truth, and passes judgment upon those who threaten it. It is said that one of his powers to safeguard harmony allows him to cure any illness.'
+		lore: 'Commonly known as Mitra-Buddha or Mitra.\nAn ancient Persian god of contracts, he was also revered as a sun god. He is a protector of the world\'s harmony and truth, and passes judgment upon those who threaten it. It is said that one of his powers to safeguard harmony allows him to cure any illness.',
+		origin: 'Zoroastrian'
 	},
 	{
 		name: 'Mokoi',
@@ -18630,7 +18861,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Neutral',
 			ethical: 'Chaos'
 		},
-		lore: 'A monster from Aboriginal folktales.\nIt lives in a jungle alongside owls and, though it appears human, has an abnormally large head. It also lacks a tongue and therefore cannot speak. Myth tells that these creatures are reincarnations of the "soul of the shadow," and they are even said to engage in intercourse with human women from time to time as well as eat children and fight humans.'
+		lore: 'A monster from Aboriginal folktales.\nIt lives in a jungle alongside owls and, though it appears human, has an abnormally large head. It also lacks a tongue and therefore cannot speak. Myth tells that these creatures are reincarnations of the "soul of the shadow," and they are even said to engage in intercourse with human women from time to time as well as eat children and fight humans.',
+		origin: 'Aboriginal'
 	},
 	{
 		name: 'Moloch',
@@ -18708,7 +18940,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Dark',
 			ethical: 'Chaos'
 		},
-		lore: 'A Canaanite god of fire.\nTradition states that a bronze statue of a human with the head of a female ox would be placed at the altar as its vessel. It is said that the statue would first be heated with fire, then children would be put inside as a sacrifice. The Bible mentions its name as a cruel pagan god.'
+		lore: 'A Canaanite god of fire.\nTradition states that a bronze statue of a human with the head of a female ox would be placed at the altar as its vessel. It is said that the statue would first be heated with fire, then children would be put inside as a sacrifice. The Bible mentions its name as a cruel pagan god.',
+		origin: 'Canaanite'
 	},
 	{
 		name: 'Mot',
@@ -18785,7 +19018,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Light',
 			ethical: 'Chaos'
 		},
-		lore: 'The Canaanite god of death.\nEvery year he attemps to kill Baal, the god of fertility, only to see him raised from the dead with the help of Baal\'s sister, Anat.'
+		lore: 'The Canaanite god of death.\nEvery year he attemps to kill Baal, the god of fertility, only to see him raised from the dead with the help of Baal\'s sister, Anat.',
+		origin: 'Canaanite'
 	},
 	{
 		name: 'Mother Harlot',
@@ -18872,7 +19106,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Unknown',
 			ethical: 'Unknown'
 		},
-		lore: 'Reviled as the "Whore of Babylon" in the Book of Revelation.\nShe defies God from atop a scarlet-colored beast with seven heads and ten horns, and carries a golden cup brimming with abominations and the filth of her deeds.'
+		lore: 'Reviled as the "Whore of Babylon" in the Book of Revelation.\nShe defies God from atop a scarlet-colored beast with seven heads and ten horns, and carries a golden cup brimming with abominations and the filth of her deeds.',
+		origin: 'Abrahamic'
 	},
 	{
 		name: 'Mothman',
@@ -18946,7 +19181,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Dark',
 			ethical: 'Neutral'
 		},
-		lore: 'A cryptid sighted in West Virginia from the 1960s to 1980s.\nIt has red, shining eyes and was known for the finlike appendages on both sides of its boy. It has been said to walk on two foot and fly without moving these appendages. It has a keen sense for blood which allows it to easily track its prey. Eyewitnesses say that a UFO was sighted when Mothman appeared, so many believe that it is actually an alien.'
+		lore: 'A cryptid sighted in West Virginia from the 1960s to 1980s.\nIt has red, shining eyes and was known for the finlike appendages on both sides of its boy. It has been said to walk on two foot and fly without moving these appendages. It has a keen sense for blood which allows it to easily track its prey. Eyewitnesses say that a UFO was sighted when Mothman appeared, so many believe that it is actually an alien.',
+		origin: 'North American'
 	},
 	{
 		name: 'Muu Shuwuu',
@@ -19024,7 +19260,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Dark',
 			ethical: 'Law'
 		},
-		lore: 'Meaning "evil bird," it is the ghost of a young girl who died without knowing love in Buryat folklore.\nShe seduces travelers, only to crack their heads open and suck out their brains with her beak.'
+		lore: 'Meaning "evil bird," it is the ghost of a young girl who died without knowing love in Buryat folklore.\nShe seduces travelers, only to crack their heads open and suck out their brains with her beak.',
+		origin: 'Buryat'
 	},
 	{
 		name: 'Naga',
@@ -19098,7 +19335,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Neutral',
 			ethical: 'Chaos'
 		},
-		lore: 'Half-snake, half-human, they are divine beings in Hindu lore.\nWorshipped as bringers of fertility, they live in the bottoms of lakes and seas, and enjoy singing and dancing outside of battle.'
+		lore: 'Half-snake, half-human, they are divine beings in Hindu lore.\nWorshipped as bringers of fertility, they live in the bottoms of lakes and seas, and enjoy singing and dancing outside of battle.',
+		origin: 'Hindu'
 	},
 	{
 		name: 'Narasimha',
@@ -19163,7 +19401,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Light',
 			ethical: 'Neutral'
 		},
-		lore: 'The 4th avatar of Vishnu. He took this form to defeat Hiranyakashipu, who can\'t be killed by human, animal or deva, and killed his foe at dusk, since he couldn\'t die at other times.'
+		lore: 'The 4th avatar of Vishnu. He took this form to defeat Hiranyakashipu, who can\'t be killed by human, animal or deva, and killed his foe at dusk, since he couldn\'t die at other times.',
+		origin: 'Hindu'
 	},
 	{
 		name: 'Narcissus',
@@ -19241,7 +19480,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Neutral',
 			ethical: 'Neutral'
 		},
-		lore: 'A young man of Greek lore. He rejected the nymph Echo, who faded to a whisper out of despair.\nCursed by Nemesis, he fell in love with his own reflection and wasted away, becoming the flower that now bears his name.'
+		lore: 'A young man of Greek lore. He rejected the nymph Echo, who faded to a whisper out of despair.\nCursed by Nemesis, he fell in love with his own reflection and wasted away, becoming the flower that now bears his name.',
+		origin: 'Greco-Roman'
 	},
 	{
 		name: 'Nata Taishi',
@@ -19311,7 +19551,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Neutral',
 			ethical: 'Neutral'
 		},
-		lore: 'A demon of Chinese mythology, also known as Zhongtan Yuanshuai. He committed suicide to atone for killing a Dragon King, but was brought back to life as a lotus.'
+		lore: 'A demon of Chinese mythology, also known as Zhongtan Yuanshuai. He committed suicide to atone for killing a Dragon King, but was brought back to life as a lotus.',
+		origin: 'Chinese'
 	},
 	{
 		name: 'Nebiros',
@@ -19383,7 +19624,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Neutral',
 			ethical: 'Chaos'
 		},
-		lore: 'The general of Hell. He keeps watch over other demons.\nOne of Hell\'s greatest necromancers, he can control souls and corpses.'
+		lore: 'The general of Hell. He keeps watch over other demons.\nOne of Hell\'s greatest necromancers, he can control souls and corpses.',
+		origin: 'Abrahamic'
 	},
 	{
 		name: 'Necronomicon',
@@ -19436,6 +19678,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 		game: 'p5',
 		alignment: null,
 		lore: 'The grimoire which contains vital information of the Cthulhu mythos by Lovecraft. Its original name is Al Azif. It is said the book itself is alive.',
+		origin: 'Lovecraftian',
 		user: 'Futaba Sakura',
 		stage: 1,
 		evoSkillName: null
@@ -19514,7 +19757,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Neutral',
 			ethical: 'Neutral'
 		},
-		lore: 'Incarnations of long-living cats in Japanese mythology.\nThey can speak to humans and, depending on their power, can do various things. Some can turn into humans, while others can have the dead do their bidding'
+		lore: 'Incarnations of long-living cats in Japanese mythology.\nThey can speak to humans and, depending on their power, can do various things. Some can turn into humans, while others can have the dead do their bidding',
+		origin: 'Japanese'
 	},
 	{
 		name: 'Neko Shogun',
@@ -19588,7 +19832,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Light',
 			ethical: 'Neutral'
 		},
-		lore: 'The god of prophecy in Taoist religion.\nIt is said to have the head of a cat and the body of a human, and its shrine was located in Annam, which is present-day Vietnam. The shrine was meant for Mao Shangshu, a 14-15th century general who conquered Vietnam. However, because the name "Mao" is similar to the Chinese word for cat, the temple was effectively misnamed, and he was reborn as a different god. It should also be noted that there is a similar story about the god of sailing known as "Tetsu Neko Shogun."'
+		lore: 'The god of prophecy in Taoist religion.\nIt is said to have the head of a cat and the body of a human, and its shrine was located in Annam, which is present-day Vietnam. The shrine was meant for Mao Shangshu, a 14-15th century general who conquered Vietnam. However, because the name "Mao" is similar to the Chinese word for cat, the temple was effectively misnamed, and he was reborn as a different god. It should also be noted that there is a similar story about the god of sailing known as "Tetsu Neko Shogun."',
+		origin: 'Chinese'
 	},
 	{
 		name: 'Nemesis',
@@ -19653,6 +19898,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 		game: 'p3',
 		alignment: null,
 		lore: null,
+		origin: 'Greco-Roman',
 		user: 'Ken Amada',
 		stage: 1,
 		evoSkillName: null
@@ -19726,7 +19972,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Dark',
 			ethical: 'Chaos'
 		},
-		lore: 'An evil dragon that gnaws on the roots of Yggdrasil, the World Tree. It rules over the evil snakes that live there. Capable of surviving Ragnarok by feeding on the slain corpses that drift to it.'
+		lore: 'An evil dragon that gnaws on the roots of Yggdrasil, the World Tree. It rules over the evil snakes that live there. Capable of surviving Ragnarok by feeding on the slain corpses that drift to it.',
+		origin: 'Norse'
 	},
 	{
 		name: 'Nigi Mitama',
@@ -19790,7 +20037,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Light',
 			ethical: 'Neutral'
 		},
-		lore: 'One of the four great aspects of Shinto thought, it works gently to help maintain a calm mind.\nIt is said to aid in one\'s relations, calmness, and sociability, and can also lead one in a positive direction.'
+		lore: 'One of the four great aspects of Shinto thought, it works gently to help maintain a calm mind.\nIt is said to aid in one\'s relations, calmness, and sociability, and can also lead one in a positive direction.',
+		origin: 'Japanese'
 	},
 	{
 		name: 'Norn',
@@ -19865,7 +20113,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Light',
 			ethical: 'Neutral'
 		},
-		lore: 'The goddesses of fate in Norse myth.\nThey live below the roots of Yggdrasil and weave the threads of fate by which even the gods are bound.'
+		lore: 'The goddesses of fate in Norse myth.\nThey live below the roots of Yggdrasil and weave the threads of fate by which even the gods are bound.',
+		origin: 'Norse'
 	},
 	{
 		name: 'Nozuchi',
@@ -19932,7 +20181,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Neutral',
 			ethical: 'Neutral'
 		},
-		lore: 'A spirit of earth from Japanese myth, whose name means "god of fields." Though not innately evil, its temper may cause it to attack humans from behind a tree or bushes.'
+		lore: 'A spirit of earth from Japanese myth, whose name means "god of fields." Though not innately evil, its temper may cause it to attack humans from behind a tree or bushes.',
+		origin: 'Japanese'
 	},
 	{
 		name: 'Nue',
@@ -20009,7 +20259,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Dark',
 			ethical: 'Neutral'
 		},
-		lore: 'A legendary monster in Japanese mythology. It has the head of a monkey, the body of a tanuki, the arms and legs of a tiger, and the tail of a snake.\nDue to its bizarre appearance, the term "Nue" is sometimes used to describe a person of unknown origins. According to The Tale of Heike, the Nue would come to the emperor\'s palace every night from 2 to 2:30 A.M., shrouded in a dark cloud, where it would howl in a horrific and terrifying manner. However, the warrior Minamoto no Yorimasa eventually shot it down with his bow.'
+		lore: 'A legendary monster in Japanese mythology. It has the head of a monkey, the body of a tanuki, the arms and legs of a tiger, and the tail of a snake.\nDue to its bizarre appearance, the term "Nue" is sometimes used to describe a person of unknown origins. According to The Tale of Heike, the Nue would come to the emperor\'s palace every night from 2 to 2:30 A.M., shrouded in a dark cloud, where it would howl in a horrific and terrifying manner. However, the warrior Minamoto no Yorimasa eventually shot it down with his bow.',
+		origin: 'Japanese'
 	},
 	{
 		name: 'Nuwa',
@@ -20089,7 +20340,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Light',
 			ethical: 'Chaos'
 		},
-		lore: 'A goddess that appears in Chinese mythology.\nRecognized as one of the sovereigns, she is said to have the head of a human and a body of a serpent. She is also known to be responsible for the creation of humanity, having created them from mud. Legend tells that when one of the four pillars said to hold up the world broke, she repaired it. Furthermore, her colleague Fuxi is typically labeled as either her brother or her husband, depending on what version of her story is told.'
+		lore: 'A goddess that appears in Chinese mythology.\nRecognized as one of the sovereigns, she is said to have the head of a human and a body of a serpent. She is also known to be responsible for the creation of humanity, having created them from mud. Legend tells that when one of the four pillars said to hold up the world broke, she repaired it. Furthermore, her colleague Fuxi is typically labeled as either her brother or her husband, depending on what version of her story is told.',
+		origin: 'Chinese'
 	},
 	{
 		name: 'Nuwa -Snake-',
@@ -20113,7 +20365,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			inherit: null
 		},
 		arcana: null,
-		race: 'Lady',
+		race: 'Snake',
 		level: 89,
 		hp: 502,
 		mp: 522,
@@ -20176,7 +20428,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Light',
 			ethical: 'Chaos'
 		},
-		lore: 'A goddess that appears in Chinese mythology.\nRecognized as one of the sovereigns, she is said to have the head of a human and a body of a serpent. She is also known to be responsible for the creation of humanity, having created them from mud. Legend tells that when one of the four pillars said to hold up the world broke, she repaired it. Furthermore, her colleague Fuxi is typically labeled as either her brother or her husband, depending on what version of her story is told.'
+		lore: 'A goddess that appears in Chinese mythology.\nRecognized as one of the sovereigns, she is said to have the head of a human and a body of a serpent. She is also known to be responsible for the creation of humanity, having created them from mud. Legend tells that when one of the four pillars said to hold up the world broke, she repaired it. Furthermore, her colleague Fuxi is typically labeled as either her brother or her husband, depending on what version of her story is told.',
+		origin: 'Chinese'
 	},
 	{
 		name: 'Obariyon',
@@ -20245,7 +20498,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Dark',
 			ethical: 'Chaos'
 		},
-		lore: 'A "piggyback monster" of Japan that jumps on the backs of those who walk on wooded paths at night.\nIts weight becomes progressively heavier to the point of being nearly unbearable, but it is said that it will transform into gold coins if you can carry it all the way back home.'
+		lore: 'A "piggyback monster" of Japan that jumps on the backs of those who walk on wooded paths at night.\nIts weight becomes progressively heavier to the point of being nearly unbearable, but it is said that it will transform into gold coins if you can carry it all the way back home.',
+		origin: 'Japanese'
 	},
 	{
 		name: 'Oberon',
@@ -20322,7 +20576,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Neutral',
 			ethical: 'Neutral'
 		},
-		lore: 'The king of the fairies and the husband of Titania.\nHe is quite old, but due to a curse he received when he was young, he remains small yet still beautiful. He often flirts with human women and has earned many a scolding from his wife as a result.'
+		lore: 'The king of the fairies and the husband of Titania.\nHe is quite old, but due to a curse he received when he was young, he remains small yet still beautiful. He often flirts with human women and has earned many a scolding from his wife as a result.',
+		origin: 'European'
 	},
 	{
 		name: 'Odin',
@@ -20406,7 +20661,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Light',
 			ethical: 'Neutral'
 		},
-		lore: 'The All-Father in Norse Mythology. Warrior, sorcerer and near insatiable seeker of knowledge, he rides his eight-legged horse Sleipnir, armed with both Gungnir, his mighty spear and Draupnir, an enchanting ring.\nHe is known to have willingly sacrificed an eye to drink from the Well of Wisdom and is also recognized as the one who welcomes the souls of departed warriors as they cross over into Valhalla.'
+		lore: 'The All-Father in Norse Mythology. Warrior, sorcerer and near insatiable seeker of knowledge, he rides his eight-legged horse Sleipnir, armed with both Gungnir, his mighty spear and Draupnir, an enchanting ring.\nHe is known to have willingly sacrificed an eye to drink from the Well of Wisdom and is also recognized as the one who welcomes the souls of departed warriors as they cross over into Valhalla.',
+		origin: 'Norse'
 	},
 	{
 		name: 'Okuninushi',
@@ -20482,7 +20738,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Light',
 			ethical: 'Chaos'
 		},
-		lore: 'A Kunitsu deity of Japanese mythology that governs agriculture and medicine.\nSaid to have built the country of Izumo with Susano-o\'s daughter, Suseri-Hime. He is a peaceful god who prefers not to fight.'
+		lore: 'A Kunitsu deity of Japanese mythology that governs agriculture and medicine.\nSaid to have built the country of Izumo with Susano-o\'s daughter, Suseri-Hime. He is a peaceful god who prefers not to fight.',
+		origin: 'Japanese'
 	},
 	{
 		name: 'Omoikane',
@@ -20553,7 +20810,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Light',
 			ethical: 'Law'
 		},
-		lore: 'A deity of knowledge in Japanese myth. He conceived the plan to draw Amaterasu from the Amato-Iwato, the cave she was hiding in.'
+		lore: 'A deity of knowledge in Japanese myth. He conceived the plan to draw Amaterasu from the Amato-Iwato, the cave she was hiding in.',
+		origin: 'Japanese'
 	},
 	{
 		name: 'Ongyo-Ki',
@@ -20634,7 +20892,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Neutral',
 			ethical: 'Chaos'
 		},
-		lore: 'One of the four oni controlled by Fujiwara no Chikata, who ruled Iga and Ise during the Heian Period.\nBy suppressing its aura, thereby preventing others from sensing its presence, it can effectively ambush its enemies. Oni have been said to act as liaisons between humans and gods, and the Fudoki holds many records of such exchanges in this region.'
+		lore: 'One of the four oni controlled by Fujiwara no Chikata, who ruled Iga and Ise during the Heian Period.\nBy suppressing its aura, thereby preventing others from sensing its presence, it can effectively ambush its enemies. Oni have been said to act as liaisons between humans and gods, and the Fudoki holds many records of such exchanges in this region.',
+		origin: 'Japanese'
 	},
 	{
 		name: 'Oni',
@@ -20705,7 +20964,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Neutral',
 			ethical: 'Chaos'
 		},
-		lore: 'A common demon in Japanese mythology. This terrifying and powerful creature is known to raid human villages for food, riches, and women.\nIt is characterized by red skin, horns on its head, long claws, and sharp fangs.'
+		lore: 'A common demon in Japanese mythology. This terrifying and powerful creature is known to raid human villages for food, riches, and women.\nIt is characterized by red skin, horns on its head, long claws, and sharp fangs.',
+		origin: 'Japanese'
 	},
 	{
 		name: 'Onmoraki',
@@ -20771,7 +21031,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Dark',
 			ethical: 'Law'
 		},
-		lore: 'A Japanese monster that takes the form of a bird with the face of a man. It produces a sickening chirp and spits a wicked flame.\nIts true identity is a corpse that hasn\'t had a proper memorial service, and it is said to appear before monks who neglect their duties.'
+		lore: 'A Japanese monster that takes the form of a bird with the face of a man. It produces a sickening chirp and spits a wicked flame.\nIts true identity is a corpse that hasn\'t had a proper memorial service, and it is said to appear before monks who neglect their duties.',
+		origin: 'Japanese'
 	},
 	{
 		name: 'Orichalcum',
@@ -20840,7 +21101,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 		},
 		game: 'p5',
 		alignment: null,
-		lore: 'A metal mentioned in ancient Greek literature. Some accounts say it was merely brass, but other stories suggest it was, in fact, a legendary material.'
+		lore: 'A metal mentioned in ancient Greek literature. Some accounts say it was merely brass, but other stories suggest it was, in fact, a legendary material.',
+		origin: 'Greco-Roman'
 	},
 	{
 		name: 'Orlov',
@@ -20909,7 +21171,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 		},
 		game: 'p5',
 		alignment: null,
-		lore: 'A diamond stolen from a Hindu temple that is said to drive its owner to their death. It was cut into smaller pieces in an attempt to break the curse.'
+		lore: 'A diamond stolen from a Hindu temple that is said to drive its owner to their death. It was cut into smaller pieces in an attempt to break the curse.',
+		origin: 'Hindu'
 	},
 	{
 		name: 'Orobas',
@@ -20988,7 +21251,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Neutral',
 			ethical: 'Chaos'
 		},
-		lore: 'One of 72 demons in Solomon\'s Goetia.\nHe is said to appear as a human with a head of a horse. He answers all questions conerning past, present and future and is both liked and respected by sorcerers. According to legend, he was often summoned by sorcerers seeking to see through lies or predict the future.'
+		lore: 'One of 72 demons in Solomon\'s Goetia.\nHe is said to appear as a human with a head of a horse. He answers all questions conerning past, present and future and is both liked and respected by sorcerers. According to legend, he was often summoned by sorcerers seeking to see through lies or predict the future.',
+		origin: 'Abrahamic'
 	},
 	{
 		name: 'Orpheus',
@@ -21062,6 +21326,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 		game: 'p5',
 		alignment: null,
 		lore: 'A Persona of another story. A poet skilled with the lyre. He tried to retrieve his wife from Hades, but she vanished when he looked back before reaching the surface.',
+		origin: 'Greco-Roman',
 		user: 'P3 Protagonist',
 		stage: 1,
 		evoSkillName: null
@@ -21137,6 +21402,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 		game: 'p5',
 		alignment: null,
 		lore: 'A Persona of another story. A poet skilled with the lyre. He tried to retrieve his wife from Hades, but she vanished when he looked back before reaching the surface.',
+		origin: 'Greco-Roman',
 		user: 'P3 Protagonist',
 		stage: 1,
 		evoSkillName: null
@@ -21208,7 +21474,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 		},
 		game: 'p5',
 		alignment: null,
-		lore: 'A Persona turned picaro after becoming the Trickster\'s mask. A Greek poet who tried to retrieve his wife from Hades, but she vanished when he looked back before reaching the surface.'
+		lore: 'A Persona turned picaro after becoming the Trickster\'s mask. A Greek poet who tried to retrieve his wife from Hades, but she vanished when he looked back before reaching the surface.',
+		origin: 'Greco-Roman'
 	},
 	{
 		name: 'Orpheus Picaro',
@@ -21273,7 +21540,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 		},
 		game: 'p5',
 		alignment: null,
-		lore: 'A Persona turned picaro after becoming the Trickster\'s mask. A Greek poet who tried to retrieve his wife from Hades, but she vanished when he looked back before reaching the surface.'
+		lore: 'A Persona turned picaro after becoming the Trickster\'s mask. A Greek poet who tried to retrieve his wife from Hades, but she vanished when he looked back before reaching the surface.',
+		origin: 'Greco-Roman'
 	},
 	{
 		name: 'Orpheus Telos',
@@ -21321,6 +21589,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 		game: 'p3',
 		alignment: null,
 		lore: 'By bonding with many people, Orpheus was once again born from the sea of the soul. He has awakened to the power of Cipher, which holds endless possibilities.',
+		origin: 'Greco-Roman',
 		user: 'P3 Protagonist',
 		stage: 3,
 		evoSkillName: null
@@ -21403,7 +21672,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Neutral',
 			ethical: 'Neutral'
 		},
-		lore: 'The two-headed dog who protected the Titan Geryon\'s red cattle in Greek lore.\nDespite his skill as a guard, Hercules killed him in one blow while performing one of his 12 great labors.'
+		lore: 'The two-headed dog who protected the Titan Geryon\'s red cattle in Greek lore.\nDespite his skill as a guard, Hercules killed him in one blow while performing one of his 12 great labors.',
+		origin: 'Greco-Roman'
 	},
 	{
 		name: 'Ose',
@@ -21481,7 +21751,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Neutral',
 			ethical: 'Chaos'
 		},
-		lore: 'One of the 72 demons of the Goetia.\nAppearing as half-man and half-beast, it is said that he can change his form according to the desires of the one who summons him, though not for very long.'
+		lore: 'One of the 72 demons of the Goetia.\nAppearing as half-man and half-beast, it is said that he can change his form according to the desires of the one who summons him, though not for very long.',
+		origin: 'Abrahamic'
 	},
 	{
 		name: 'Oyamatsumi',
@@ -21560,7 +21831,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Light',
 			ethical: 'Chaos'
 		},
-		lore: 'One of the Kunitsukami\'s in Japanese mythology. He is the grandfather of Susano-o\'s wife, Kushinada-Hime.\nHe is known as the god of the mountains but is also considered to be the god of water and rice fields because he ruled over water sources and harvests.'
+		lore: 'One of the Kunitsukami\'s in Japanese mythology. He is the grandfather of Susano-o\'s wife, Kushinada-Hime.\nHe is known as the god of the mountains but is also considered to be the god of water and rice fields because he ruled over water sources and harvests.',
+		origin: 'Japanese'
 	},
 	{
 		name: 'Pabilsag',
@@ -21626,7 +21898,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Light',
 			ethical: 'Neutral'
 		},
-		lore: 'A guardian of the gate to paradise. This beast with a human head and a scorpion body appears in Mesopotamian lore.'
+		lore: 'A guardian of the gate to paradise. This beast with a human head and a scorpion body appears in Mesopotamian lore.',
+		origin: 'Mesopotamian'
 	},
 	{
 		name: 'Pale Rider',
@@ -21714,7 +21987,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Unknown',
 			ethical: 'Unknown'
 		},
-		lore: 'One of the Four Horsemen of the Apocalypse spoken of in the Book of Revelation.\nHe rides upon a sickly pale horse and bears the name "Death." The embodiment of Hell itself follows behind him, eager to claim his victims. Fittingly, he has been given authority to mete out widespread death and disease.'
+		lore: 'One of the Four Horsemen of the Apocalypse spoken of in the Book of Revelation.\nHe rides upon a sickly pale horse and bears the name "Death." The embodiment of Hell itself follows behind him, eager to claim his victims. Fittingly, he has been given authority to mete out widespread death and disease.',
+		origin: 'Abrahamic'
 	},
 	{
 		name: 'Palladion',
@@ -21801,6 +22075,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 		game: 'p3',
 		alignment: null,
 		lore: null,
+		origin: 'Greco-Roman',
 		user: 'Aigis',
 		stage: 1,
 		evoSkillName: null
@@ -21924,6 +22199,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 		game: 'p5',
 		alignment: null,
 		lore: 'The first woman created by the Greek gods, made to punish mankind\'s hubris. She opens a forbidden vessel (said to be a jar or a box) and unleashes evil into the world, but also reveals Hope, to ensure humanity is not crushed by despair.',
+		origin: 'Greco-Roman',
 		user: 'Sophia',
 		stage: 2,
 		evoSkillName: 'Mahamabarion'
@@ -22004,7 +22280,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Light',
 			ethical: 'Neutral'
 		},
-		lore: 'This beautiful goddess of love is one of Shiva\'s wives in Hindu mythology.\nShe won Shiva\'s love despite the fact that he was an ascetic.'
+		lore: 'This beautiful goddess of love is one of Shiva\'s wives in Hindu mythology.\nShe won Shiva\'s love despite the fact that he was an ascetic.',
+		origin: 'Hindu'
 	},
 	{
 		name: 'Pazuzu',
@@ -22087,7 +22364,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Dark',
 			ethical: 'Chaos'
 		},
-		lore: 'A demon from Sumerian civilization, he governs the southwestern wind.\nHe has the face of a lion, the body of a human, the wings of a bird, the talons of an eagle, the tail of a scorpion and a curved horn protruding from his forehead. It is said that the wind he blew from the Persian Gulf spread disease throughout the land.'
+		lore: 'A demon from Sumerian civilization, he governs the southwestern wind.\nHe has the face of a lion, the body of a human, the wings of a bird, the talons of an eagle, the tail of a scorpion and a curved horn protruding from his forehead. It is said that the wind he blew from the Persian Gulf spread disease throughout the land.',
+		origin: 'Mesopotamian'
 	},
 	{
 		name: 'Penthesilea',
@@ -22176,6 +22454,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 		game: 'p3',
 		alignment: null,
 		lore: null,
+		origin: 'Greco-Roman',
 		user: 'Mitsuru Kirijo',
 		stage: 1,
 		evoSkillName: null
@@ -22254,7 +22533,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Dark',
 			ethical: 'Chaos'
 		},
-		lore: 'A type of demon in Hindu mythology that arises from the vices of men such as criminals, drunkards and adulterers.\nKnown to feast on the flesh of corpses, it is said that it can possess a human by entering through their mouth, where it will plague them until it is driven away through magic or medicine. It is also said that anyone who looks upon one directly is guaranteed to die within nine months.'
+		lore: 'A type of demon in Hindu mythology that arises from the vices of men such as criminals, drunkards and adulterers.\nKnown to feast on the flesh of corpses, it is said that it can possess a human by entering through their mouth, where it will plague them until it is driven away through magic or medicine. It is also said that anyone who looks upon one directly is guaranteed to die within nine months.',
+		origin: 'Hindu'
 	},
 	{
 		name: 'Pithos',
@@ -22355,6 +22635,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 		game: 'p5',
 		alignment: null,
 		lore: 'A set of mysterious objects Sophia uses in battle to mimic the powers of Persona-users. Though they function similarly to Personas, their inner workings are completely unknown. It\'s name is derived from the Greek word for "jar."',
+		origin: 'Greco-Roman',
 		user: 'Sophia',
 		stage: 1,
 		evoSkillName: null
@@ -22426,7 +22707,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Neutral',
 			ethical: 'Neutral'
 		},
-		lore: 'A small fairy found in southwestern Britain known for their cheerful nature and love of pranks.\nTheir physical appearance changes from region to region, but their personality is always playful and mischievous. A common prank they like to pull is causing humans to wander in circles. However, they are also known to help farmers from time to time and are generally considered good fairies.'
+		lore: 'A small fairy found in southwestern Britain known for their cheerful nature and love of pranks.\nTheir physical appearance changes from region to region, but their personality is always playful and mischievous. A common prank they like to pull is causing humans to wander in circles. However, they are also known to help farmers from time to time and are generally considered good fairies.',
+		origin: 'European'
 	},
 	{
 		name: 'Poltergeist',
@@ -22498,7 +22780,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Dark',
 			ethical: 'Chaos'
 		},
-		lore: 'A mischievous spirit known for haunting houses. The name is German in origin, and literally means "noisy ghost."\nIt can do various things, from pulling harmless pranks like making loud noises and moving objects through the air, to dangerous, destructive acts, like starting fires and assaulting people. Poltergeist incidents often occur in homes with children or teenagers, and one theory states that the cause is a child\'s unstable mentality.'
+		lore: 'A mischievous spirit known for haunting houses. The name is German in origin, and literally means "noisy ghost."\nIt can do various things, from pulling harmless pranks like making loud noises and moving objects through the air, to dangerous, destructive acts, like starting fires and assaulting people. Poltergeist incidents often occur in homes with children or teenagers, and one theory states that the cause is a child\'s unstable mentality.',
+		origin: 'European'
 	},
 	{
 		name: 'Polydeuces',
@@ -22579,6 +22862,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 		game: 'p3',
 		alignment: null,
 		lore: null,
+		origin: 'Greco-Roman',
 		user: 'Akihiko Sanada',
 		stage: 1,
 		evoSkillName: null
@@ -22659,7 +22943,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Neutral',
 			ethical: 'Law'
 		},
-		lore: 'The sixth of the nine order of angels. Their name carries the meaning of "power of God."\nAs their duty is to protect the souls of humans, they are constantly on patrol to guard against demon attacks.'
+		lore: 'The sixth of the nine order of angels. Their name carries the meaning of "power of God."\nAs their duty is to protect the souls of humans, they are constantly on patrol to guard against demon attacks.',
+		origin: 'Abrahamic'
 	},
 	{
 		name: 'Preta',
@@ -22724,7 +23009,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Dark',
 			ethical: 'Chaos'
 		},
-		lore: 'Known as "gaki" in Japanese, they are ghoulish demons of Buddhist lore.\nGreedy humans cast into the preta realm become these. Their hunger is unrelenting and their suffering continues until they are reincarnated.'
+		lore: 'Known as "gaki" in Japanese, they are ghoulish demons of Buddhist lore.\nGreedy humans cast into the preta realm become these. Their hunger is unrelenting and their suffering continues until they are reincarnated.',
+		origin: 'Japanese'
 	},
 	{
 		name: 'Principality',
@@ -22797,7 +23083,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Neutral',
 			ethical: 'Law'
 		},
-		lore: 'The seventh of the nine orders of angels.\nThey are charged with overseeing the welfare of countries and civilizations.'
+		lore: 'The seventh of the nine orders of angels.\nThey are charged with overseeing the welfare of countries and civilizations.',
+		origin: 'Abrahamic'
 	},
 	{
 		name: 'Prometheus',
@@ -22850,6 +23137,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 		game: 'p5',
 		alignment: null,
 		lore: 'The Greek Titan created mankind from clay. He later stole fire from Olympus and, in turn, gave it to mankind against Zeus\'s will. His name is often synonymous with fire and "divine knowledge."',
+		origin: 'Greco-Roman',
 		user: 'Futaba Sakura',
 		stage: 2,
 		evoSkillName: 'Treasure Skimmer'
@@ -22945,6 +23233,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 		game: 'p3',
 		alignment: null,
 		lore: null,
+		origin: 'Greco-Roman',
 		user: 'Metis',
 		stage: 1,
 		evoSkillName: null
@@ -23029,7 +23318,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Neutral',
 			ethical: 'Chaos'
 		},
-		lore: 'The queen of fairies in Celtic mythology.\nSome say she was the inspiration for William Shakespeare\'s Queen Mab, leading many to conclude that she and the fairy queen Titania, Oberon\'s wife, are one and the same. She was known to give mead mixed with her blood to her many consorts.'
+		lore: 'The queen of fairies in Celtic mythology.\nSome say she was the inspiration for William Shakespeare\'s Queen Mab, leading many to conclude that she and the fairy queen Titania, Oberon\'s wife, are one and the same. She was known to give mead mixed with her blood to her many consorts.',
+		origin: 'Celtic'
 	},
 	{
 		name: 'Queen\'s Necklace',
@@ -23098,7 +23388,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 		},
 		game: 'p5',
 		alignment: null,
-		lore: 'The diamond necklace that Jeanne de la Motte swindled from jewelers in 1785 by claiming it was on behalf of the Queen of France, Marie Antoinette.'
+		lore: 'The diamond necklace that Jeanne de la Motte swindled from jewelers in 1785 by claiming it was on behalf of the Queen of France, Marie Antoinette.',
+		origin: 'European'
 	},
 	{
 		name: 'Quetzalcoatl',
@@ -23173,7 +23464,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Light',
 			ethical: 'Chaos'
 		},
-		lore: 'An Aztec creator deity known as the Feathered Serpent.\nHe is identified as the sun and is also known as the god of wind and giver of breath. He is said to have created humans by sprinkling blood on the bones of people from a previously created world, and acts as guardian of their fertility and culture. According to legend, the planet Venus is actually Quetzalcoatl\'s heart.'
+		lore: 'An Aztec creator deity known as the Feathered Serpent.\nHe is identified as the sun and is also known as the god of wind and giver of breath. He is said to have created humans by sprinkling blood on the bones of people from a previously created world, and acts as guardian of their fertility and culture. According to legend, the planet Venus is actually Quetzalcoatl\'s heart.',
+		origin: 'South American'
 	},
 	{
 		name: 'Raja Naga',
@@ -23254,7 +23546,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Neutral',
 			ethical: 'Chaos'
 		},
-		lore: 'The king of the Naga, a half-man, half-snake tribe in Hindu lore.\nThe dragon kings of Nanda and Takshaka of Buddhist myth fall into this royal category.'
+		lore: 'The king of the Naga, a half-man, half-snake tribe in Hindu lore.\nThe dragon kings of Nanda and Takshaka of Buddhist myth fall into this royal category.',
+		origin: 'Hindu'
 	},
 	{
 		name: 'Rakshasa',
@@ -23324,7 +23617,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Dark',
 			ethical: 'Neutral'
 		},
-		lore: 'Evil spirits that battle the gods in Hindu lore. They also attack humans.\nTheir hideous appearance symbolizes their evil nature, but they can also change shape to fool humans.'
+		lore: 'Evil spirits that battle the gods in Hindu lore. They also attack humans.\nTheir hideous appearance symbolizes their evil nature, but they can also change shape to fool humans.',
+		origin: 'Hindu'
 	},
 	{
 		name: 'Rangda',
@@ -23403,7 +23697,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Neutral',
 			ethical: 'Chaos'
 		},
-		lore: 'A wicked witch and the symbol of evil in Balinese Hinduism. When women who used magic held a grudge or went down the path of evil, they became this dreadful creature.\nShe spreads plagues, causes natural disasters, curses people, and even uses evil spirits to do her bidding. The holy beast Barong that symbolizes good is her eternal rival. Even if defeated, she will come back to life, and their battle will have no end.'
+		lore: 'A wicked witch and the symbol of evil in Balinese Hinduism. When women who used magic held a grudge or went down the path of evil, they became this dreadful creature.\nShe spreads plagues, causes natural disasters, curses people, and even uses evil spirits to do her bidding. The holy beast Barong that symbolizes good is her eternal rival. Even if defeated, she will come back to life, and their battle will have no end.',
+		origin: 'Balinese'
 	},
 	{
 		name: 'Raoul',
@@ -23472,6 +23767,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 		game: 'p5',
 		alignment: null,
 		lore: 'Another alias of Maurice Leblanc\'s hero, Arsène Lupin. Infamous as a phantom thief, he was also known to be a man of many friends, lovers, and treasured allies.',
+		origin: 'Modern Fiction',
 		user: 'P5 Protagonist',
 		stage: 3,
 		evoSkillName: null
@@ -23556,7 +23852,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Light',
 			ethical: 'Law'
 		},
-		lore: 'One of the four major angels. His name means "healer."\nHe explains the history of the fallen angels and the creation of Adam and Eve.'
+		lore: 'One of the four major angels. His name means "healer."\nHe explains the history of the fallen angels and the creation of Adam and Eve.',
+		origin: 'Abrahamic'
 	},
 	{
 		name: 'Red Rider',
@@ -23640,7 +23937,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Unknown',
 			ethical: 'Unknown'
 		},
-		lore: 'One of the Four Horsemen of the Apocalypse spoken of in the Book of Revelation.\nHe rides a red horse and carries a greatsword. It is said that he has the power to destroy peace and make men slay one another.'
+		lore: 'One of the Four Horsemen of the Apocalypse spoken of in the Book of Revelation.\nHe rides a red horse and carries a greatsword. It is said that he has the power to destroy peace and make men slay one another.',
+		origin: 'Abrahamic'
 	},
 	{
 		name: 'Regent',
@@ -23709,7 +24007,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 		},
 		game: 'p5',
 		alignment: null,
-		lore: 'A bluish-tinged diamond that Napoleon Bonaparte had mounted to the pommel of his sword. It was named after the French Regent Philippe II, Duke of Orleans, who had purchased it in 1717.'
+		lore: 'A bluish-tinged diamond that Napoleon Bonaparte had mounted to the pommel of his sword. It was named after the French Regent Philippe II, Duke of Orleans, who had purchased it in 1717.',
+		origin: 'European'
 	},
 	{
 		name: 'Robin Hood',
@@ -23798,6 +24097,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 		game: 'p5',
 		alignment: null,
 		lore: 'A noble thief that made waves in England during the Middle Ages. He is an expert archer and leader of the Merry Men, outlaws of justice who made Sherwood Forest their home.',
+		origin: 'European',
 		user: 'Goro Akechi',
 		stage: 1,
 		evoSkillName: null
@@ -23908,6 +24208,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 		game: 'p4',
 		alignment: null,
 		lore: null,
+		origin: 'Buddhist',
 		user: 'Kanji Tatsumi',
 		stage: 2,
 		evoSkillName: null
@@ -23973,7 +24274,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Light',
 			ethical: 'Neutral'
 		},
-		lore: 'One of the four great aspects of Shinto thought, it brings great bounty from the hunt.\nIt is said to aid in love, profit, and growth, and can even create new paths.'
+		lore: 'One of the four great aspects of Shinto thought, it brings great bounty from the hunt.\nIt is said to aid in love, profit, and growth, and can even create new paths.',
+		origin: 'Japanese'
 	},
 	{
 		name: 'Samael',
@@ -24043,7 +24345,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Dark',
 			ethical: 'Law'
 		},
-		lore: 'A mysterious angel with the name "poison of God". He is often shown as a serpent. Opinions differ on whether he is fallen or not, but either way, he is linked with death.'
+		lore: 'A mysterious angel with the name "poison of God". He is often shown as a serpent. Opinions differ on whether he is fallen or not, but either way, he is linked with death.',
+		origin: 'Abrahamic'
 	},
 	{
 		name: 'Sandalphon',
@@ -24126,7 +24429,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Light',
 			ethical: 'Law'
 		},
-		lore: 'The twin brother of Metatron.\nAn influential angel in Jewish mythology, he governs the songs of heaven, and his colossal size has led many to believe that it would take a human being 500 years to reach his head.'
+		lore: 'The twin brother of Metatron.\nAn influential angel in Jewish mythology, he governs the songs of heaven, and his colossal size has led many to believe that it would take a human being 500 years to reach his head.',
+		origin: 'Abrahamic'
 	},
 	{
 		name: 'Sandman',
@@ -24193,7 +24497,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Neutral',
 			ethical: 'Chaos'
 		},
-		lore: 'A fairy from rural Germany rumored to put people to sleep using the magic sand he carried in his bag.\nIf a victim resisted, he would sit on their eyelids to force them to sleep. It has even been said that "naughty children" who refused to go to sleep would be punished by having their eyes scooped out and taken away, though this is speculated to be a fabrication thought up by German mothers.'
+		lore: 'A fairy from rural Germany rumored to put people to sleep using the magic sand he carried in his bag.\nIf a victim resisted, he would sit on their eyelids to force them to sleep. It has even been said that "naughty children" who refused to go to sleep would be punished by having their eyes scooped out and taken away, though this is speculated to be a fabrication thought up by German mothers.',
+		origin: 'European'
 	},
 	{
 		name: 'Sarasvati',
@@ -24272,7 +24577,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Light',
 			ethical: 'Neutral'
 		},
-		lore: 'The consort of Brahma in Hindu lore.\nShe embodies the river and her name means "one who flows." She is also the goddess of music and art and is said to be skilled in every artistic or creative pursuit known to man.'
+		lore: 'The consort of Brahma in Hindu lore.\nShe embodies the river and her name means "one who flows." She is also the goddess of music and art and is said to be skilled in every artistic or creative pursuit known to man.',
+		origin: 'Hindu'
 	},
 	{
 		name: 'Satan',
@@ -24344,7 +24650,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Light',
 			ethical: 'Law'
 		},
-		lore: 'The Judeo-Christian prince of darkness, he is known for his role as the snake that tempted Adam and Eve in Eden. It is also said that he was sent by God to test man\'s piety.'
+		lore: 'The Judeo-Christian prince of darkness, he is known for his role as the snake that tempted Adam and Eve in Eden. It is also said that he was sent by God to test man\'s piety.',
+		origin: 'Abrahamic'
 	},
 	{
 		name: 'Satanael',
@@ -24422,6 +24729,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 		game: 'p5',
 		alignment: null,
 		lore: 'An archangel who is said to be the form of Satan before he fell from Heaven. The second son of God, he rebelled against Him for freedom and bestowed free will and chaos upon humanity.',
+		origin: 'Abrahamic',
 		user: 'P5 Protagonist',
 		stage: 2,
 		evoSkillName: null
@@ -24487,7 +24795,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Unknown',
 			ethical: 'Law'
 		},
-		lore: 'Shiva\'s first consort in Hindu myth, she threw herself into a sacrifical fire in protest of her father\'s treatment of Shiva. Reborn as Parvati, she was reunited with Shiva.'
+		lore: 'Shiva\'s first consort in Hindu myth, she threw herself into a sacrifical fire in protest of her father\'s treatment of Shiva. Reborn as Parvati, she was reunited with Shiva.',
+		origin: 'Hindu'
 	},
 	{
 		name: 'Saturnus',
@@ -24552,7 +24861,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Neutral',
 			ethical: 'Neutral'
 		},
-		lore: 'The Roman god of agriculture. He is commonly identified with Cronus. In an attempt to prevent his destiny, he ate his children, but was overthrown as fated.'
+		lore: 'The Roman god of agriculture. He is commonly identified with Cronus. In an attempt to prevent his destiny, he ate his children, but was overthrown as fated.',
+		origin: 'Greco-Roman'
 	},
 	{
 		name: 'Scathach',
@@ -24631,7 +24941,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Light',
 			ethical: 'Neutral'
 		},
-		lore: 'The war goddess of Celtic lore as well as the queen of the Land of Shadows.\nShe is a skilled magician and a master warrior who trains the many young men who come to her in the art of war. The famed Cu Chulainn was one of her students and it is said that he received the legendary Gae Bolg from her upon mastering her teachings.'
+		lore: 'The war goddess of Celtic lore as well as the queen of the Land of Shadows.\nShe is a skilled magician and a master warrior who trains the many young men who come to her in the art of war. The famed Cu Chulainn was one of her students and it is said that he received the legendary Gae Bolg from her upon mastering her teachings.',
+		origin: 'Celtic'
 	},
 	{
 		name: 'Seiryu',
@@ -24715,7 +25026,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Light',
 			ethical: 'Chaos'
 		},
-		lore: 'One of the Ssu-Ling, celestial creatures in Chinese mythology.\nIt represents the east, the season of spring, and the element of wood. It is the noblest of the Ssu-Ling and dwells in a palace at the bottom of the ocean. In Feng Shui, placing water to the east is known to guide its power, and is said to bring good fortune.'
+		lore: 'One of the Ssu-Ling, celestial creatures in Chinese mythology.\nIt represents the east, the season of spring, and the element of wood. It is the noblest of the Ssu-Ling and dwells in a palace at the bottom of the ocean. In Feng Shui, placing water to the east is known to guide its power, and is said to bring good fortune.',
+		origin: 'Chinese'
 	},
 	{
 		name: 'Seiten Taisei',
@@ -24786,7 +25098,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Light',
 			ethical: 'Chaos'
 		},
-		lore: 'Sun Wu Kong was supposedly born from a rock. He wreaked havoc and was punished by Buddha, but was eventually saved by a monk named Santsang.'
+		lore: 'Sun Wu Kong was supposedly born from a rock. He wreaked havoc and was punished by Buddha, but was eventually saved by a monk named Santsang.',
+		origin: 'Buddhist'
 	},
 	{
 		name: 'Seiten Taisei - P5',
@@ -24920,6 +25233,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 		game: 'p5',
 		alignment: null,
 		lore: 'A title Sun Wukong had given himself. Born from a rock, he wreaked havoc and was punished by Buddha who imprisoned him under a mountain. Eventually, he was saved by a monk named Xuanzang.',
+		origin: 'Buddhist',
 		user: 'Ryuji Sakamoto',
 		stage: 2,
 		evoSkillName: 'Evade Wind'
@@ -24985,7 +25299,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Neutral',
 			ethical: 'Law'
 		},
-		lore: 'A spirit formed of a long-lived wildcat. It disguises itself as a beautiful woman to take vitality from men. Some say other demon animals collect vitality in order to become Senri themselves.'
+		lore: 'A spirit formed of a long-lived wildcat. It disguises itself as a beautiful woman to take vitality from men. Some say other demon animals collect vitality in order to become Senri themselves.',
+		origin: 'Chinese'
 	},
 	{
 		name: 'Setanta',
@@ -25060,7 +25375,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Neutral',
 			ethical: 'Neutral'
 		},
-		lore: 'A brave young man in Celtic myth.\nAfter defeating a fierce guard dog, he volunteered to take its place, thus earning himself "Culann\'s Hound" as his nickname.'
+		lore: 'A brave young man in Celtic myth.\nAfter defeating a fierce guard dog, he volunteered to take its place, thus earning himself "Culann\'s Hound" as his nickname.',
+		origin: 'Celtic'
 	},
 	{
 		name: 'Seth',
@@ -25140,7 +25456,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Dark',
 			ethical: 'Chaos'
 		},
-		lore: 'The Egyptian god of the desert, chaos and evil.\nHe murdered his brother, Osiris, and tried to become chief god, but he was castrated by Osiris\' son, Horus.'
+		lore: 'The Egyptian god of the desert, chaos and evil.\nHe murdered his brother, Osiris, and tried to become chief god, but he was castrated by Osiris\' son, Horus.',
+		origin: 'Egyptian'
 	},
 	{
 		name: 'Shiisaa',
@@ -25214,7 +25531,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Light',
 			ethical: 'Neutral'
 		},
-		lore: 'A holy beast said to protect houses from evil and grant them fortune.\nThough it may look similar to Shinto guardian dogs, it is actually modeled after a lion. There are many stories about it in Ryukyu lore.'
+		lore: 'A holy beast said to protect houses from evil and grant them fortune.\nThough it may look similar to Shinto guardian dogs, it is actually modeled after a lion. There are many stories about it in Ryukyu lore.',
+		origin: 'Japanese'
 	},
 	{
 		name: 'Shiki-Ouji',
@@ -25290,7 +25608,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Neutral',
 			ethical: 'Chaos'
 		},
-		lore: 'A powerful creature often summoned by Japanese sorcerers called onmyoji.\nThey are used both to hurt and to heal, but their true nature is said to be very violent.'
+		lore: 'A powerful creature often summoned by Japanese sorcerers called onmyoji.\nThey are used both to hurt and to heal, but their true nature is said to be very violent.',
+		origin: 'Japanese'
 	},
 	{
 		name: 'Shiva',
@@ -25376,7 +25695,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Light',
 			ethical: 'Chaos'
 		},
-		lore: 'The great god who governs the destruction and creation of the world. He is the most worshipped god in Hinduism alongside Vishnu.\nIt is said that he purifies the world through destruction only to rebuild it anew, and though he casts terrifying destruction against the demons, he also blesses his followers. Shiva has been depicted in many ways, but the most common is for him to have four hands, one face and three eyes. He wields a trishula, or trident, and his third eye is said to emit a ray of light that destroys all it touches.'
+		lore: 'The great god who governs the destruction and creation of the world. He is the most worshipped god in Hinduism alongside Vishnu.\nIt is said that he purifies the world through destruction only to rebuild it anew, and though he casts terrifying destruction against the demons, he also blesses his followers. Shiva has been depicted in many ways, but the most common is for him to have four hands, one face and three eyes. He wields a trishula, or trident, and his third eye is said to emit a ray of light that destroys all it touches.',
+		origin: 'Hindu'
 	},
 	{
 		name: 'Siegfried',
@@ -25457,7 +25777,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Light',
 			ethical: 'Neutral'
 		},
-		lore: 'The name of the hero in the epic German poem, the Nibelungenlied, often seen as the same as Sigurd of Norse folklore.\nHe was married to Kriemhild, the princess of Burgundy, and is said to have become wrapped up in a feud between her and Brunhilde of Austrasia, resulting in many attempts on his life. The dragon Fafnir\'s blood made him invincible, but a single leaf on his back resulted in a weak spot, which was later exploited by the treacherous Hagan.'
+		lore: 'The name of the hero in the epic German poem, the Nibelungenlied, often seen as the same as Sigurd of Norse folklore.\nHe was married to Kriemhild, the princess of Burgundy, and is said to have become wrapped up in a feud between her and Brunhilde of Austrasia, resulting in many attempts on his life. The dragon Fafnir\'s blood made him invincible, but a single leaf on his back resulted in a weak spot, which was later exploited by the treacherous Hagan.',
+		origin: 'Norse'
 	},
 	{
 		name: 'Silky',
@@ -25536,7 +25857,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Neutral',
 			ethical: 'Neutral'
 		},
-		lore: 'A house fairy of England and Scotland.\nA welcome spirit, she carries out household chores while everyone sleeps. It is said you can hear her silk skirts rustle as she works. However, she is not without a dangerous side, and will kill anyone who tries to cause harm to the family she protects.'
+		lore: 'A house fairy of England and Scotland.\nA welcome spirit, she carries out household chores while everyone sleeps. It is said you can hear her silk skirts rustle as she works. However, she is not without a dangerous side, and will kill anyone who tries to cause harm to the family she protects.',
+		origin: 'European'
 	},
 	{
 		name: 'Skadi',
@@ -25615,7 +25937,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Light',
 			ethical: 'Chaos'
 		},
-		lore: 'A giantess called the "snowshoe goddess," she is the embodiment of winter.\nAccording to legend, all gods will return to her at the end of Ragnarok.'
+		lore: 'A giantess called the "snowshoe goddess," she is the embodiment of winter.\nAccording to legend, all gods will return to her at the end of Ragnarok.',
+		origin: 'Norse'
 	},
 	{
 		name: 'Slime',
@@ -25682,7 +26005,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Dark',
 			ethical: 'Chaos'
 		},
-		lore: 'A gel-like monster. It is said to be the byproduct of a failed summoning.\nDevoid of its original powers, it is trapped in an incomplete gel form. There are several theories of when the slime first was recorded as a monster. They tend to collect shiny objects.'
+		lore: 'A gel-like monster. It is said to be the byproduct of a failed summoning.\nDevoid of its original powers, it is trapped in an incomplete gel form. There are several theories of when the slime first was recorded as a monster. They tend to collect shiny objects.',
+		origin: 'ATLUS Original'
 	},
 	{
 		name: 'Sraosha',
@@ -25760,7 +26084,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Light',
 			ethical: 'Law'
 		},
-		lore: 'In Zoroastrian lore, Sraosha\'s duty is to listen to humanity\'s cry for Ahura Mazda.\nIt is also known to descend after sunset to vanquish evil, and its name literally means "observance."'
+		lore: 'In Zoroastrian lore, Sraosha\'s duty is to listen to humanity\'s cry for Ahura Mazda.\nIt is also known to descend after sunset to vanquish evil, and its name literally means "observance."',
+		origin: 'Zoroastrian'
 	},
 	{
 		name: 'Stone of Scone',
@@ -25829,7 +26154,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 		},
 		game: 'p5',
 		alignment: null,
-		lore: 'Also known as the Stone of Destiny, it is a stone used in the coronations of Scotland\'s monarchs. Legends say the stone is linked to angels.'
+		lore: 'Also known as the Stone of Destiny, it is a stone used in the coronations of Scotland\'s monarchs. Legends say the stone is linked to angels.',
+		origin: 'European'
 	},
 	{
 		name: 'Succubus',
@@ -25906,7 +26232,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Neutral',
 			ethical: 'Chaos'
 		},
-		lore: 'A female demon in popular European folklore during the medieval ages.\nThey are known to visit men in their sleep and have sex with them. And though they appear beautiful in the dream, in reality, they are ugly, old hags.'
+		lore: 'A female demon in popular European folklore during the medieval ages.\nThey are known to visit men in their sleep and have sex with them. And though they appear beautiful in the dream, in reality, they are ugly, old hags.',
+		origin: 'European'
 	},
 	{
 		name: 'Sudama',
@@ -25973,7 +26300,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Neutral',
 			ethical: 'Neutral'
 		},
-		lore: 'Earth spirits in Japanese mythology. They are born from ancient trees and boulders.\nThey are not evil but will transform into humans or monsters to warn people not to infiltrate their mountains.'
+		lore: 'Earth spirits in Japanese mythology. They are born from ancient trees and boulders.\nThey are not evil but will transform into humans or monsters to warn people not to infiltrate their mountains.',
+		origin: 'Japanese'
 	},
 	{
 		name: 'Sui-Ki',
@@ -26050,7 +26378,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Neutral',
 			ethical: 'Chaos'
 		},
-		lore: 'One of the four oni controlled by Fujiwara no Chikata, it can cause floods with the swing of its arms. In the Taiheiki, Ki no Tomoo expelled the oni by reading a Japanese poem.'
+		lore: 'One of the four oni controlled by Fujiwara no Chikata, it can cause floods with the swing of its arms. In the Taiheiki, Ki no Tomoo expelled the oni by reading a Japanese poem.',
+		origin: 'Japanese'
 	},
 	{
 		name: 'Sukuna-Hikona',
@@ -26128,7 +26457,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Light',
 			ethical: 'Chaos'
 		},
-		lore: 'One of the gods of Japanese lore. Son of Kamimusubi, he was so small he fell through her fingers at birth.\nThough he would normally be counted among the Amatsukami, he became blood-brothers with Okuninushi, and is now considered a Kunitsukami. After building Japan with Okuninushi, he is said to have returned to Tokoyo no Kuni, the land of eternity.'
+		lore: 'One of the gods of Japanese lore. Son of Kamimusubi, he was so small he fell through her fingers at birth.\nThough he would normally be counted among the Amatsukami, he became blood-brothers with Okuninushi, and is now considered a Kunitsukami. After building Japan with Okuninushi, he is said to have returned to Tokoyo no Kuni, the land of eternity.',
+		origin: 'Japanese'
 	},
 	{
 		name: 'Sukuna-Hikona - P4',
@@ -26231,6 +26561,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 		game: 'p4',
 		alignment: null,
 		lore: null,
+		origin: 'Japanese',
 		user: 'Naoto Shirogane',
 		stage: 1,
 		evoSkillName: null
@@ -26348,6 +26679,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 		game: 'p4',
 		alignment: null,
 		lore: null,
+		origin: 'Japanese',
 		user: 'Yukiko Amagi',
 		stage: 3,
 		evoSkillName: 'Maragibarion'
@@ -26417,7 +26749,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Light',
 			ethical: 'Law'
 		},
-		lore: 'A legendary bird of Hindu mythology. Its name means "one with beautiful wings." It can create wind at will by flapping its wings, and can also change its size freely.'
+		lore: 'A legendary bird of Hindu mythology. Its name means "one with beautiful wings." It can create wind at will by flapping its wings, and can also change its size freely.',
+		origin: 'Hindu'
 	},
 	{
 		name: 'Surt',
@@ -26492,7 +26825,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Dark',
 			ethical: 'Chaos'
 		},
-		lore: 'A fire giant from Norse mythology.\nHe rules over Muspelheim, the realm of fire and brandishes a sword of fire called "Laevateinn". In Ragnarok, he will set the world ablaze.'
+		lore: 'A fire giant from Norse mythology.\nHe rules over Muspelheim, the realm of fire and brandishes a sword of fire called "Laevateinn". In Ragnarok, he will set the world ablaze.',
+		origin: 'Norse'
 	},
 	{
 		name: 'Susano-o',
@@ -26603,6 +26937,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 		game: 'p4',
 		alignment: null,
 		lore: null,
+		origin: 'Japanese',
 		user: 'Yosuke Hanamura',
 		stage: 2,
 		evoSkillName: null
@@ -26683,7 +27018,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Light',
 			ethical: 'Law'
 		},
-		lore: 'One of the Ssu-Ling, celestial creatures in Chinese mythology.\nIt represents the south, the season of summer, and the element of fire. It is said to resemble a quail in appearance and have a beautiful chirping voice.'
+		lore: 'One of the Ssu-Ling, celestial creatures in Chinese mythology.\nIt represents the south, the season of summer, and the element of fire. It is said to resemble a quail in appearance and have a beautiful chirping voice.',
+		origin: 'Chinese'
 	},
 	{
 		name: 'Suzuka Gongen',
@@ -26798,6 +27134,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 		game: 'p4',
 		alignment: null,
 		lore: null,
+		origin: 'Japanese',
 		user: 'Chie Satonaka',
 		stage: 2,
 		evoSkillName: null
@@ -26863,7 +27200,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Light',
 			ethical: 'Neutral'
 		},
-		lore: 'A cheerful, mischief-loving spirit that governs air. Since belief in it dates back generations, many have tried to find a real Sylph.'
+		lore: 'A cheerful, mischief-loving spirit that governs air. Since belief in it dates back generations, many have tried to find a real Sylph.',
+		origin: 'European'
 	},
 	{
 		name: 'Takehaya Susano-o',
@@ -26975,6 +27313,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 		alignment: null,
 		lore: null,
 		user: 'Yosuke Hanamura',
+		origin: 'Japanese',
 		stage: 3,
 		evoSkillName: 'Youthful Wind'
 	},
@@ -27083,6 +27422,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 		game: 'p4',
 		alignment: null,
 		lore: null,
+		origin: 'Buddhist',
 		user: 'Kanji Tatsumi',
 		stage: 3,
 		evoSkillName: 'The Man\'s Way'
@@ -27190,6 +27530,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 		game: 'p4',
 		alignment: null,
 		lore: null,
+		origin: 'Japanese',
 		user: 'Kanji Tatsumi',
 		stage: 1,
 		evoSkillName: null
@@ -27263,7 +27604,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Light',
 			ethical: 'Chaos'
 		},
-		lore: 'A Japanese god of war, hunting, and fertility.\nHe fought Take-Mikazuchi for control of Japan and lost. He escaped to Suwa but has been prohibited from leaving ever since.'
+		lore: 'A Japanese god of war, hunting, and fertility.\nHe fought Take-Mikazuchi for control of Japan and lost. He escaped to Suwa but has been prohibited from leaving ever since.',
+		origin: 'Japanese'
 	},
 	{
 		name: 'Tam Lin',
@@ -27335,7 +27677,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Light',
 			ethical: 'Neutral'
 		},
-		lore: 'A fae knight of the Seelie Court, said to protect the forest of Carterhaugh. After being kidnapped by the faeries at the tender age of 9, he lived much of his life among them.'
+		lore: 'A fae knight of the Seelie Court, said to protect the forest of Carterhaugh. After being kidnapped by the faeries at the tender age of 9, he lived much of his life among them.',
+		origin: 'European'
 	},
 	{
 		name: 'Tao',
@@ -27416,7 +27759,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Light',
 			ethical: 'Law'
 		},
-		lore: 'Once cherished as the Saint of Bethel, Tao Isonokami was forced to watch helplessly as a close friend perished before her eyes. At that moment, the voice of a higher being spoke unto her, awakening the goddess within.\nEven after her divine transfiguration, she appears to have retained her memories. However, she has cast off her former personality, and no longer acts as she once did as a human.'
+		lore: 'Once cherished as the Saint of Bethel, Tao Isonokami was forced to watch helplessly as a close friend perished before her eyes. At that moment, the voice of a higher being spoke unto her, awakening the goddess within.\nEven after her divine transfiguration, she appears to have retained her memories. However, she has cast off her former personality, and no longer acts as she once did as a human.',
+		origin: 'ATLUS Original'
 	},
 	{
 		name: 'Taotie',
@@ -27484,7 +27828,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Dark',
 			ethical: 'Law'
 		},
-		lore: 'One of the Si-xiong of ancient China. It has a human face on a sheep-like body, and sharp fangs. Its insatiable hunger causes it to eat until nothing remains.'
+		lore: 'One of the Si-xiong of ancient China. It has a human face on a sheep-like body, and sharp fangs. Its insatiable hunger causes it to eat until nothing remains.',
+		origin: 'Chinese'
 	},
 	{
 		name: 'Taowu',
@@ -27556,7 +27901,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Unknown',
 			ethical: 'Unknown'
 		},
-		lore: 'One of the Si-xiong from the west side of China, it is believed to carry the blood of a great emperor. Its stubborn personality leads it to fight until it can no longer stand.'
+		lore: 'One of the Si-xiong from the west side of China, it is believed to carry the blood of a great emperor. Its stubborn personality leads it to fight until it can no longer stand.',
+		origin: 'Chinese'
 	},
 	{
 		name: 'Thanatos',
@@ -27623,6 +27969,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 		game: 'p5',
 		alignment: null,
 		lore: 'A Persona of another story. The Greek god of death, he is the son of Nyx and the twin brother of Hypnos. He is known to provide mortals with a peaceful death.',
+		origin: 'Greco-Roman',
 		user: 'Elizabeth',
 		stage: 1,
 		evoSkillName: null
@@ -27691,7 +28038,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 		},
 		game: 'p5',
 		alignment: null,
-		lore: 'A Persona turned picaro after becoming the Trickster\'s mask. The Greek god of death, he is the son of Nyx and the twin brother of Hypnos. He is known to provide mortals with a peaceful death.'
+		lore: 'A Persona turned picaro after becoming the Trickster\'s mask. The Greek god of death, he is the son of Nyx and the twin brother of Hypnos. He is known to provide mortals with a peaceful death.',
+		origin: 'Greco-Roman'
 	},
 	{
 		name: 'Thor',
@@ -27769,7 +28117,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Light',
 			ethical: 'Chaos'
 		},
-		lore: 'The Norse god of thunder and fertility whose strength is incomparable.\nHe is a heroic and honest god worshipped mainly by farmers and is primarily known for defeating the giants. He wields Mjolnir, a hammer that returns to its owner after being thrown. He and the World Serpent, Jormungandr, are fated to kill each other at the end of Ragnarok.'
+		lore: 'The Norse god of thunder and fertility whose strength is incomparable.\nHe is a heroic and honest god worshipped mainly by farmers and is primarily known for defeating the giants. He wields Mjolnir, a hammer that returns to its owner after being thrown. He and the World Serpent, Jormungandr, are fated to kill each other at the end of Ragnarok.',
+		origin: 'Norse'
 	},
 	{
 		name: 'Thoth',
@@ -27846,7 +28195,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Light',
 			ethical: 'Neutral'
 		},
-		lore: 'An almighty god of Egyptian lore with the head of a baboon. He stands opposite of Seth, the god of evil, and sides with Osiris and Isis, the gods of good.'
+		lore: 'An almighty god of Egyptian lore with the head of a baboon. He stands opposite of Seth, the god of evil, and sides with Osiris and Isis, the gods of good.',
+		origin: 'Egyptian'
 	},
 	{
 		name: 'Throne',
@@ -27923,7 +28273,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Neutral',
 			ethical: 'Law'
 		},
-		lore: 'The third of the nine orders of angels. Their Hebrew name, Ophan, carries the meaning of "wheel".\nThey are the highest ranking angels to carry a material body and are tasked with carrying the seat of God.'
+		lore: 'The third of the nine orders of angels. Their Hebrew name, Ophan, carries the meaning of "wheel".\nThey are the highest ranking angels to carry a material body and are tasked with carrying the seat of God.',
+		origin: 'Abrahamic'
 	},
 	{
 		name: 'Thunderbird',
@@ -27998,7 +28349,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Light',
 			ethical: 'Law'
 		},
-		lore: 'A revered bird of Native American mythology said to live atop cloud-shrouded peaks.\nIt resembles an eagle, and its wingbeats create mighty thunderclaps. Some legends say its eyes can unleash lightning, and other accounts say it can carry an entire lake on its back or even swallow an entire whale whole.'
+		lore: 'A revered bird of Native American mythology said to live atop cloud-shrouded peaks.\nIt resembles an eagle, and its wingbeats create mighty thunderclaps. Some legends say its eyes can unleash lightning, and other accounts say it can carry an entire lake on its back or even swallow an entire whale whole.',
+		origin: 'North American'
 	},
 	{
 		name: 'Titan',
@@ -28061,7 +28413,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Neutral',
 			ethical: 'Neutral'
 		},
-		lore: 'The children of Gaia and Uranus in Greek myth. They ruled the land as gods before the Olympians overthrew them.'
+		lore: 'The children of Gaia and Uranus in Greek myth. They ruled the land as gods before the Olympians overthrew them.',
+		origin: 'Greco-Roman'
 	},
 	{
 		name: 'Titania',
@@ -28141,7 +28494,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Neutral',
 			ethical: 'Neutral'
 		},
-		lore: 'The queen of the fairies and King Oberon\'s wife. She is based on the Roman goddess Diana and was later imagined as a fairy.\nShe is famously recognized as a queen in William Shakespeare\'s "A Midsummer Night\'s Dream."'
+		lore: 'The queen of the fairies and King Oberon\'s wife. She is based on the Roman goddess Diana and was later imagined as a fairy.\nShe is famously recognized as a queen in William Shakespeare\'s "A Midsummer Night\'s Dream."',
+		origin: 'European'
 	},
 	{
 		name: 'Tomoe',
@@ -28254,6 +28608,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 		game: 'p4',
 		alignment: null,
 		lore: null,
+		origin: 'Japanese',
 		user: 'Chie Satonaka',
 		stage: 1,
 		evoSkillName: null
@@ -28323,7 +28678,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Unknown',
 			ethical: 'Unknown'
 		},
-		lore: 'A Slavic god whose name means "three heads". He rode a holy black horse, in contrast to Sventovit, who rode a white horse.'
+		lore: 'A Slavic god whose name means "three heads". He rode a holy black horse, in contrast to Sventovit, who rode a white horse.',
+		origin: 'Slavic'
 	},
 	{
 		name: 'Trismegistus',
@@ -28436,6 +28792,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 		game: 'p3',
 		alignment: null,
 		lore: null,
+		origin: 'Greco-Roman',
 		user: 'Junpei Iori',
 		stage: 2,
 		evoSkillName: 'Spring of Life'
@@ -28524,7 +28881,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Unknown',
 			ethical: 'Unknown'
 		},
-		lore: 'Angels that sound their trumpets to signify the coming of the apocalypse ordained in the Book of Revelation.\nIt is said that the trumpets bring plagues and disasters, turning the earth into a land of death and sufferring.'
+		lore: 'Angels that sound their trumpets to signify the coming of the apocalypse ordained in the Book of Revelation.\nIt is said that the trumpets bring plagues and disasters, turning the earth into a land of death and sufferring.',
+		origin: 'Abrahamic'
 	},
 	{
 		name: 'Tsuchigumo',
@@ -28590,7 +28948,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Neutral',
 			ethical: 'Neutral'
 		},
-		lore: 'Monsters said to come from the bastardization of certain clans of Japan. The word carries the literal meaning of "dirt spider."\nThose who did not pledge allegiance to the Imperial Court were called this derogatory term because of their short stature and spindly limbs. As time passed, people may have misinterpreted the name for a literal meaning and made them into spiders, or perhaps the manifestations of grudges of those who were persecuted by the Imperial Court.'
+		lore: 'Monsters said to come from the bastardization of certain clans of Japan. The word carries the literal meaning of "dirt spider."\nThose who did not pledge allegiance to the Imperial Court were called this derogatory term because of their short stature and spindly limbs. As time passed, people may have misinterpreted the name for a literal meaning and made them into spiders, or perhaps the manifestations of grudges of those who were persecuted by the Imperial Court.',
+		origin: 'Japanese'
 	},
 	{
 		name: 'Tsukiyomi',
@@ -28661,6 +29020,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 		game: 'p5',
 		alignment: null,
 		lore: 'A Persona of another story. An important god born from the Japanese god Izanagi, he governs over the moon and the night. There are many theories behind this mysterious god.',
+		origin: 'Japanese',
 		user: 'Sho Minazuki',
 		stage: 1,
 		evoSkillName: null
@@ -28733,7 +29093,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 		},
 		game: 'p5',
 		alignment: null,
-		lore: 'A Persona turned picaro after becoming the Trickster\'s mask. An important god born from the Japanese god Izanagi, he governs over the moon and the night. There are many theories behind this mysterious god.'
+		lore: 'A Persona turned picaro after becoming the Trickster\'s mask. An important god born from the Japanese god Izanagi, he governs over the moon and the night. There are many theories behind this mysterious god.',
+		origin: 'Japanese'
 	},
 	{
 		name: 'Turdak',
@@ -28796,7 +29157,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Dark',
 			ethical: 'Neutral'
 		},
-		lore: 'An Indian deity that serves Yama, the god of death.\nWhen Yama judges a dead soul to be guilty, Turdak acts as the executioner and drags that soul to hell.'
+		lore: 'An Indian deity that serves Yama, the god of death.\nWhen Yama judges a dead soul to be guilty, Turdak acts as the executioner and drags that soul to hell.',
+		origin: 'Hindu'
 	},
 	{
 		name: 'Tzitzimitl',
@@ -28869,7 +29231,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Dark',
 			ethical: 'Chaos'
 		},
-		lore: 'Goddess of Aztec myth who governs night and fear, she symbolizes death and evil. Her wawr with the sun god caused a catastrophic solar eclipse. She seeks a sacrifice every 52 years.'
+		lore: 'Goddess of Aztec myth who governs night and fear, she symbolizes death and evil. Her wawr with the sun god caused a catastrophic solar eclipse. She seeks a sacrifice every 52 years.',
+		origin: 'South American'
 	},
 	{
 		name: 'Ukobach',
@@ -28932,7 +29295,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Neutral',
 			ethical: 'Chaos'
 		},
-		lore: 'A subordinate demon of Hell, ordered by Beelzebub to stoke the fires that heat its iron pots. He also throws coals into the fire to torment humans trapped in Hell.'
+		lore: 'A subordinate demon of Hell, ordered by Beelzebub to stoke the fires that heat its iron pots. He also throws coals into the fire to torment humans trapped in Hell.',
+		origin: 'Abrahamic'
 	},
 	{
 		name: 'Undine',
@@ -28995,7 +29359,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Light',
 			ethical: 'Neutral'
 		},
-		lore: 'This water spirit lives in lakes and fountains, appearing as a beautiful woman. It has no soul unless it marries a human man, which is a serious taboo among Undines.'
+		lore: 'This water spirit lives in lakes and fountains, appearing as a beautiful woman. It has no soul unless it marries a human man, which is a serious taboo among Undines.',
+		origin: 'European'
 	},
 	{
 		name: 'Unicorn',
@@ -29057,7 +29422,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Light',
 			ethical: 'Neutral'
 		},
-		lore: 'A legendary white horse with a single spiral horn. It can only be tamed by a pure maiden, and its horn supposedly has miraculous healing capabilities.'
+		lore: 'A legendary white horse with a single spiral horn. It can only be tamed by a pure maiden, and its horn supposedly has miraculous healing capabilities.',
+		origin: 'European'
 	},
 	{
 		name: 'Uriel',
@@ -29135,7 +29501,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Light',
 			ethical: 'Law'
 		},
-		lore: 'One of the four major angels.\nHis name means "flame of God," and he possesses knowledge of all celestial phenomena. He is also the first angel Satan met after falling to Earth.'
+		lore: 'One of the four major angels.\nHis name means "flame of God," and he possesses knowledge of all celestial phenomena. He is also the first angel Satan met after falling to Earth.',
+		origin: 'Abrahamic'
 	},
 	{
 		name: 'Valjean',
@@ -29240,6 +29607,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 		game: 'p5',
 		alignment: null,
 		lore: 'Protagonist of Victor Hugo\'s "Les Misérables." Jailed after stealing bread for his starving nephews, he was consumed by bitterness, but a bishop\'s mercy inspired a change of heart. He strove to be a virtuous champion of the poor and downtrodden.',
+		origin: 'Modern Fiction',
 		user: 'Zenkichi Hasegawa',
 		stage: 1,
 		evoSkillName: null
@@ -29313,7 +29681,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Neutral',
 			ethical: 'Law'
 		},
-		lore: 'Daughters of Odin from Norse mythology.\nTheir name means "choosers of the slain." Armed with shining armor and spears, they look for brave warriors to take to Valhalla, so that they may fight in Ragnarok.'
+		lore: 'Daughters of Odin from Norse mythology.\nTheir name means "choosers of the slain." Armed with shining armor and spears, they look for brave warriors to take to Valhalla, so that they may fight in Ragnarok.',
+		origin: 'Norse'
 	},
 	{
 		name: 'Vanadis',
@@ -29386,6 +29755,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 		game: 'p5',
 		alignment: null,
 		lore: 'The true name of Freyja, of the Norse Vanir deities. Younger twin sister of Freyr. Her name means "dis of the Vanir" - dis being a goddess. Known to be a great beauty and a witchlike master of magic.',
+		origin: 'Norse',
 		user: 'Sumire Yoshizawa',
 		stage: 2,
 		evoSkillName: 'Evade Dark'
@@ -29473,7 +29843,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Dark',
 			ethical: 'Chaos'
 		},
-		lore: 'A giant serpent of Hindu lore.\nIt is said that gods and demons used him as a rope to churn the sea of milk to create Amrita, while also using Mt. Mandara as the stick. The strain from this caused him to exhale incredibly poisonous venom, but it was safely swallowed up by Shiva.'
+		lore: 'A giant serpent of Hindu lore.\nIt is said that gods and demons used him as a rope to churn the sea of milk to create Amrita, while also using Mt. Mandara as the stick. The strain from this caused him to exhale incredibly poisonous venom, but it was safely swallowed up by Shiva.',
+		origin: 'Hindu'
 	},
 	{
 		name: 'Vetala',
@@ -29541,7 +29912,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Dark',
 			ethical: 'Chaos'
 		},
-		lore: 'A type of Preta in Hindu and Buddhist myth. Classified as "powerful ghosts," they have varying shapes and forms. They can control the dead and eat humans.'
+		lore: 'A type of Preta in Hindu and Buddhist myth. Classified as "powerful ghosts," they have varying shapes and forms. They can control the dead and eat humans.',
+		origin: 'Hindu'
 	},
 	{
 		name: 'Virtue',
@@ -29610,7 +29982,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Neutral',
 			ethical: 'Law'
 		},
-		lore: 'The fifth of the nine orders of angels, also known as "The Shining Ones." They work miracles and support those struggling with their faith.'
+		lore: 'The fifth of the nine orders of angels, also known as "The Shining Ones." They work miracles and support those struggling with their faith.',
+		origin: 'Abrahamic'
 	},
 	{
 		name: 'Vishnu',
@@ -29692,7 +30065,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Light',
 			ethical: 'Neutral'
 		},
-		lore: 'One of the Trimurti and the highest-ranking god in Hinduism.\nHe governs the universe and is also recognized as its protector. It is said that, when the surface world is in danger, he will appear as an avatar.'
+		lore: 'One of the Trimurti and the highest-ranking god in Hinduism.\nHe governs the universe and is also recognized as its protector. It is said that, when the surface world is in danger, he will appear as an avatar.',
+		origin: 'Hindu'
 	},
 	{
 		name: 'Vohu Manah',
@@ -29763,7 +30137,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Unknown',
 			ethical: 'Unknown'
 		},
-		lore: 'The second of Zoroastrianism\'s "divine sparks," Amesha Spenta, its name means "good thought." This holy entity is said to have given Zoroaster revelations from God.'
+		lore: 'The second of Zoroastrianism\'s "divine sparks," Amesha Spenta, its name means "good thought." This holy entity is said to have given Zoroaster revelations from God.',
+		origin: 'Zoroastrian'
 	},
 	{
 		name: 'White Rider',
@@ -29845,7 +30220,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Unknown',
 			ethical: 'Unknown'
 		},
-		lore: 'One of the Four Horsemen of the Apocalypse spoken of in the Book of Revelation.\nHe rides a white horse and carries a bow. Wears a resplendent crown as a symbol of God\'s dominion over Armageddon, and promises to bring total victory.'
+		lore: 'One of the Four Horsemen of the Apocalypse spoken of in the Book of Revelation.\nHe rides a white horse and carries a bow. Wears a resplendent crown as a symbol of God\'s dominion over Armageddon, and promises to bring total victory.',
+		origin: 'Abrahamic'
 	},
 	{
 		name: 'William',
@@ -29976,6 +30352,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 		game: 'p5',
 		alignment: null,
 		lore: 'The other name of Captain Kidd, world-renowned pirate. For years after his death, songs and legends of his life inspired many to chase rumors of his buried treasure across the seas.',
+		origin: 'Historical',
 		user: 'Ryuji Sakamoto',
 		stage: 3,
 		evoSkillName: 'Fighting Spirit'
@@ -30045,7 +30422,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Unknown',
 			ethical: 'Unknown'
 		},
-		lore: 'A spirit from Chinese legend, shaped like a sheep, that can see through any lie. It occasionally appears in the human world to punish evildoers with the power stored in its sharp horn.'
+		lore: 'A spirit from Chinese legend, shaped like a sheep, that can see through any lie. It occasionally appears in the human world to punish evildoers with the power stored in its sharp horn.',
+		origin: 'Chinese'
 	},
 	{
 		name: 'Yaksini',
@@ -30121,7 +30499,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Neutral',
 			ethical: 'Chaos'
 		},
-		lore: 'Semi-divine beings in Hindu mythology.\nThough they were once worshipped by the Dravidians as goddesses of the harvest, they became interpreted as demons with the spread of Hinduism and the two clashing ideologies. They are depicted as naked women with voluptuous bodies'
+		lore: 'Semi-divine beings in Hindu mythology.\nThough they were once worshipped by the Dravidians as goddesses of the harvest, they became interpreted as demons with the spread of Hinduism and the two clashing ideologies. They are depicted as naked women with voluptuous bodies',
+		origin: 'Hindu'
 	},
 	{
 		name: 'Yamata-no-Orochi',
@@ -30201,7 +30580,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Neutral',
 			ethical: 'Chaos'
 		},
-		lore: 'A giant snake with eight heads that the hero Susano-o defeated to save Kushinada-Hime.\nThe legendary sword Ame-no-Murakumo-no-Tsurugi, also known as the "Sword of Kusanagi," was said to have emerged from its belly.'
+		lore: 'A giant snake with eight heads that the hero Susano-o defeated to save Kushinada-Hime.\nThe legendary sword Ame-no-Murakumo-no-Tsurugi, also known as the "Sword of Kusanagi," was said to have emerged from its belly.',
+		origin: 'Japanese'
 	},
 	{
 		name: 'Yamato Sumeragi',
@@ -30304,6 +30684,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 		alignment: null,
 		lore: null,
 		user: 'Naoto Shirogane',
+		origin: 'Japanese',
 		stage: 3,
 		evoSkillName: 'Shield of Justice'
 	},
@@ -30407,6 +30788,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 		game: 'p4',
 		alignment: null,
 		lore: null,
+		origin: 'Japanese',
 		user: 'Naoto Shirogane',
 		stage: 2,
 		evoSkillName: null
@@ -30488,7 +30870,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Light',
 			ethical: 'Law'
 		},
-		lore: 'A divine creature in Japanese mythology, they are three-legged ravens that the goddess Amaterasu sent to help humans.\nIt is said that they helped Emperor Jinmu claim victory, and, despite their divine standing, those who are unworthy have been known to go mad after looking them directly in the eye.'
+		lore: 'A divine creature in Japanese mythology, they are three-legged ravens that the goddess Amaterasu sent to help humans.\nIt is said that they helped Emperor Jinmu claim victory, and, despite their divine standing, those who are unworthy have been known to go mad after looking them directly in the eye.',
+		origin: 'Japanese'
 	},
 	{
 		name: 'Yatsufusa',
@@ -30561,7 +30944,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Unknown',
 			ethical: 'Unknown'
 		},
-		lore: '7 days after its birth, a wolf killed its mother. Yoshizane Satomi later promised his daughter\'s hand if it could defeat the enemy, but after Yatsufasa\'s success, Yoshizane\'s retainer shot it dead.'
+		lore: '7 days after its birth, a wolf killed its mother. Yoshizane Satomi later promised his daughter\'s hand if it could defeat the enemy, but after Yatsufasa\'s success, Yoshizane\'s retainer shot it dead.',
+		origin: 'Japanese'
 	},
 	{
 		name: 'Yomotsu-Shikome',
@@ -30624,7 +31008,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Neutral',
 			ethical: 'Chaos'
 		},
-		lore: 'A demoness in Japanese mythology that lives in Yomi, the netherworld. She is the first demon Izanami sends after Izanagi.'
+		lore: 'A demoness in Japanese mythology that lives in Yomi, the netherworld. She is the first demon Izanami sends after Izanagi.',
+		origin: 'Japanese'
 	},
 	{
 		name: 'Yoshitsune',
@@ -30697,7 +31082,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Light',
 			ethical: 'Neutral'
 		},
-		lore: 'A Japanese general of the Genpei War near the end of the Heian era and start of the Kamakura era.\nAlso known as Ushiwakamaru, he is said to have learned the art of war from the Mt. Kurama Tengu. On joining his half-brother Yoritomo\'s army, he defeated the Taira one by one, finishing them off at the battle of Dan-no-ura. He was later pursued by Yoritomo\'s army, only to kill himself at Koromogawa.'
+		lore: 'A Japanese general of the Genpei War near the end of the Heian era and start of the Kamakura era.\nAlso known as Ushiwakamaru, he is said to have learned the art of war from the Mt. Kurama Tengu. On joining his half-brother Yoritomo\'s army, he defeated the Taira one by one, finishing them off at the battle of Dan-no-ura. He was later pursued by Yoritomo\'s army, only to kill himself at Koromogawa.',
+		origin: 'Japanese'
 	},
 	{
 		name: 'Yurlungur',
@@ -30778,7 +31164,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Neutral',
 			ethical: 'Chaos'
 		},
-		lore: 'In Oceanian folklore, he is a giant copper python.\nA being that transcends good and evil, he governs the weather and is considered a god of harvest. He is known as the "Rainbow Serpent" because the water in the well he calls home is said to shine like a rainbow.'
+		lore: 'In Oceanian folklore, he is a giant copper python.\nA being that transcends good and evil, he governs the weather and is considered a god of harvest. He is known as the "Rainbow Serpent" because the water in the well he calls home is said to shine like a rainbow.',
+		origin: 'Aboriginal'
 	},
 	{
 		name: 'Zaou-Gongen',
@@ -30860,7 +31247,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Light',
 			ethical: 'Chaos'
 		},
-		lore: 'Repeller of evil found at Kinpusen by En-no-Ozunu.\nBelieved to be a fusion of Buddha, Guanyin, and Maitreya, he is a god who originated from Japan, rather than the Buddhavacana.'
+		lore: 'Repeller of evil found at Kinpusen by En-no-Ozunu.\nBelieved to be a fusion of Buddha, Guanyin, and Maitreya, he is a god who originated from Japan, rather than the Buddhavacana.',
+		origin: 'Buddhist'
 	},
 	{
 		name: 'Zeus',
@@ -30943,7 +31331,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Light',
 			ethical: 'Neutral'
 		},
-		lore: 'The main deity of Greek mythology. Said to be omnipotent, he is both god of the sky and ruler of the twelve gods of Olympus.\nHe is a son of the titan Kronos and brother to both Hades and Poseidon. Upon defeating his father, he claimed the right to rule the entire universe. He also fathered many children with not only goddesses, but a number of human women as well.'
+		lore: 'The main deity of Greek mythology. Said to be omnipotent, he is both god of the sky and ruler of the twelve gods of Olympus.\nHe is a son of the titan Kronos and brother to both Hades and Poseidon. Upon defeating his father, he claimed the right to rule the entire universe. He also fathered many children with not only goddesses, but a number of human women as well.',
+		origin: 'Greco-Roman'
 	},
 	{
 		name: 'Zhen',
@@ -31013,7 +31402,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Dark',
 			ethical: 'Law'
 		},
-		lore: 'A bird in Chinese mythology said to have poison in its feathers because it eats poisonous snakes.\nDipping a feather into wine will turn it into a deadly poison, able to kill anyone with a single drop.'
+		lore: 'A bird in Chinese mythology said to have poison in its feathers because it eats poisonous snakes.\nDipping a feather into wine will turn it into a deadly poison, able to kill anyone with a single drop.',
+		origin: 'Chinese'
 	},
 	{
 		name: 'Zorro',
@@ -31146,6 +31536,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 		game: 'p5',
 		alignment: null,
 		lore: 'A masked swordsman of justice who fought in California against corrupt officials during the era of Spanish rule. He always left his "Z" mark with his rapier wherever he appeared.',
+		origin: 'Modern Fiction',
 		user: 'Morgana',
 		stage: 1,
 		evoSkillName: null
@@ -31227,7 +31618,8 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 			moral: 'Light',
 			ethical: 'Chaos'
 		},
-		lore: 'Zouchouten, protector of the South, is one of the Four Heavenly Kings in Buddhist mythology.\nSimilarly to his fellow kings, he is often depicted as a fierc warrior, clad in armor and wielding a long sword, though he is sometimes shown wielding a trident instead. Also known as Virudhaka, he is god of the five grains.'
+		lore: 'Zouchouten, protector of the South, is one of the Four Heavenly Kings in Buddhist mythology.\nSimilarly to his fellow kings, he is often depicted as a fierc warrior, clad in armor and wielding a long sword, though he is sometimes shown wielding a trident instead. Also known as Virudhaka, he is god of the five grains.',
+		origin: 'Buddhist'
 	}
 ]);
 
