@@ -127,6 +127,7 @@ Demon {
     ethical: 'Neutral'
   },
   lore: 'A frost spirit made from ice and snow that appears during the winter and melts away in the spring ...',
+  origin: 'European',
   isPersona(): false,
   toString(): 'Fairy Jack Frost',
   image: Buffer { ... }
@@ -184,6 +185,7 @@ Persona {
   game: 'p5',
   alignment: null,
   lore: 'The Roman god of travelers and thieves ...',
+  origin: 'Greco-Roman',
   user: 'Morgana',
   stage: 2,
   evoSkillName: 'Evade Elec',
