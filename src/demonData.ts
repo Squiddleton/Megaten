@@ -2464,7 +2464,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 		origin: 'Greco-Roman',
 		user: 'Labrys',
 		stage: 1,
-		evoSkillName: 'Greco-Roman'
+		evoSkillName: null
 	},
 	{
 		name: 'Ariadne Picaro',
