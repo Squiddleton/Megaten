@@ -238,7 +238,7 @@ export type AnyRace = PersonaRace | SMTRace;
 export type RecoveryAmount = 'Slight' | 'Moderate' | 'Half' | 'Full' | '130%';
 
 /** Flags for RecoverySkill instances */
-export type RecoveryFlag = 'Negate' | 'Revert Debuffs' | 'Revive' | 'Summon';
+export type RecoveryFlag = 'Revert Debuffs' | 'Revive' | 'Summon';
 
 /** Criteria for RegenSkill instances taking effect */
 export type RegenCriteria = 'Ambush' | 'Baton Pass' | 'Turn Start';
