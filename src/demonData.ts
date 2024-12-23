@@ -4906,9 +4906,9 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 		origin: 'Lovecraftian'
 	},
 	{
-		name: 'Byakko',
+		name: 'Baihu',
 		aliases: [
-			'Baihu'
+			'Byakko'
 		],
 		affinities: {
 			skillPotential: {
