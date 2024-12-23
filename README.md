@@ -129,8 +129,7 @@ Demon {
   lore: 'A frost spirit made from ice and snow that appears during the winter and melts away in the spring ...',
   origin: 'European',
   isPersona(): false,
-  toString(): 'Fairy Jack Frost',
-  image: Buffer { ... }
+  toString(): 'Fairy Jack Frost'
 }
 
 Persona {
@@ -190,8 +189,7 @@ Persona {
   stage: 2,
   evoSkillName: 'Evade Elec',
   isPersona(): false,
-  toString(): "Morgana's Mercurius",
-  image: Buffer { ... },
+  toString(): "Morgana's Mercurius"
   evolution: Persona { name: 'Diego', ... },
   evoSkillName: 'Evade Elec',
   evoSkill: EvasionSkill { name: 'Evade Elec', ... }
