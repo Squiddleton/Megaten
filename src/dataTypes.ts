@@ -191,7 +191,7 @@ export interface EvasionSkillData extends SkillData {
 	element: EvasionAffinity;
 }
 
-export interface InstaKillBoostSkillData extends SkillData {
+export interface InstakillBoostSkillData extends SkillData {
 	affinity: 'Passive';
 	type: 'INSTAKILLBOOST';
 	element: LightDark;

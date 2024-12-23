@@ -1,5 +1,5 @@
 import { normalize } from '@squiddleton/util';
-import type { AilBoostSkillData, AilDefensiveSkillData, AilmentSkillData, AttackSkillData, AutoBuffSkillData, BarrierBreakSkillData, BarrierSkillData, BoostSkillData, BreakSkillData, ChargeSkillData, CritBoostSkillData, CritSkillData, DefensiveSkillData, EndureSkillData, EvasionSkillData, InstaKillBoostSkillData, MasterSkillData, MiscSkillData, NaviSkillData, PersonaCounterSkillData, PostBattleSkillData, RecoverySkillData, RegenSkillData, SMTCounterSkillData, SetSkillData, SiphonSkillData, SkillData, SpringSkillData, SummonSkillData, SupportSkillData, SusceptibilitySkillData, TauntSkillData, WallSkillData } from './dataTypes.js';
+import type { AilBoostSkillData, AilDefensiveSkillData, AilmentSkillData, AttackSkillData, AutoBuffSkillData, BarrierBreakSkillData, BarrierSkillData, BoostSkillData, BreakSkillData, ChargeSkillData, CritBoostSkillData, CritSkillData, DefensiveSkillData, EndureSkillData, EvasionSkillData, InstakillBoostSkillData, MasterSkillData, MiscSkillData, NaviSkillData, PersonaCounterSkillData, PostBattleSkillData, RecoverySkillData, RegenSkillData, SMTCounterSkillData, SetSkillData, SiphonSkillData, SkillData, SpringSkillData, SummonSkillData, SupportSkillData, SusceptibilitySkillData, TauntSkillData, WallSkillData } from './dataTypes.js';
 import { MegatenError } from './error.js';
 import skillData from './skillData.js';
 import type { AilBoostCriteria, AilDefensiveAilment, AilResistance, Ailment, AilmentName, AilmentRange, AllyRange, AnyAffinity, AttackCost, AttackFlag, AttackPower, AutoBuffRange, Barrier, BarrierRange, BoostAffinity, BoostStack, BreakAffinity, Buff, Charge, CritBoostCriteria, CritRange, DamagingAffinity, Debuff, DefensiveAffinity, EndureCriteria, EnemyRange, EvasionAffinity, EvasionBoostCriteria, HPMP, LightDark, MasterStat, NumberOrPercent, OneOrAllAilments, PostBattleStat, RecoveryAmount, RecoveryFlag, RecoveryRange, RegenCriteria, RegenStat, Resistance, SMTCounterAffinity, SMTCounterPower, Series, SetAffinity, SingleOrDoubleBuff, SiphonCriteria, SkillType, SupportAutoEffect, SupportFlag, SupportRange, SusceptibilityRange, WallAffinity } from './types.js';
@@ -588,13 +588,13 @@ export class EvasionSkill extends Skill implements EvasionSkillData {
 }
 
 /** A skill that increases the chance of landing an instakill */
-export class InstaKillBoostSkill extends Skill implements InstaKillBoostSkillData {
+export class InstakillBoostSkill extends Skill implements InstakillBoostSkillData {
 	declare affinity: 'Passive';
 	declare type: 'INSTAKILLBOOST';
 	description: string;
 	/** The affinity of the instakill skill that the skill boosts (adjusted for consistency with SMT5) */
 	element: LightDark;
-	constructor(data: InstaKillBoostSkillData) {
+	constructor(data: InstakillBoostSkillData) {
 		const { element } = data;
 		super(data);
 		this.description = `Increases success rate of ${element === 'Light' ? 'Hama' : 'Mudo'} skills.`;
@@ -1019,7 +1019,7 @@ Skill.array = Object.freeze(skillData.map(data => {
 		case 'DEFENSIVE': return new DefensiveSkill(data);
 		case 'ENDURE': return new EndureSkill(data);
 		case 'EVASION': return new EvasionSkill(data);
-		case 'INSTAKILLBOOST': return new InstaKillBoostSkill(data);
+		case 'INSTAKILLBOOST': return new InstakillBoostSkill(data);
 		case 'MASTER': return new MasterSkill(data);
 		case 'MISC': return new MiscSkill(data);
 		case 'NAVI': return new NaviSkill(data);
@@ -1040,6 +1040,6 @@ Skill.array = Object.freeze(skillData.map(data => {
 }));
 Skill.map = new Map(Skill.array.map(skill => [skill.devName, skill]));
 
-export type AnySkillData = AilBoostSkillData | AilDefensiveSkillData | AilmentSkillData | AttackSkillData | AutoBuffSkillData | BarrierSkillData | BarrierBreakSkillData | BoostSkillData | BreakSkillData | ChargeSkillData | CritSkillData | CritBoostSkillData | DefensiveSkillData | EndureSkillData | EvasionSkillData | InstaKillBoostSkillData | MasterSkillData | MiscSkillData | NaviSkillData | PersonaCounterSkillData | PostBattleSkillData | RecoverySkillData | RegenSkillData | SetSkillData | SiphonSkillData | SMTCounterSkillData | SpringSkillData | SummonSkillData | SupportSkillData | SusceptibilitySkillData | TauntSkillData | WallSkillData;
+export type AnySkillData = AilBoostSkillData | AilDefensiveSkillData | AilmentSkillData | AttackSkillData | AutoBuffSkillData | BarrierSkillData | BarrierBreakSkillData | BoostSkillData | BreakSkillData | ChargeSkillData | CritSkillData | CritBoostSkillData | DefensiveSkillData | EndureSkillData | EvasionSkillData | InstakillBoostSkillData | MasterSkillData | MiscSkillData | NaviSkillData | PersonaCounterSkillData | PostBattleSkillData | RecoverySkillData | RegenSkillData | SetSkillData | SiphonSkillData | SMTCounterSkillData | SpringSkillData | SummonSkillData | SupportSkillData | SusceptibilitySkillData | TauntSkillData | WallSkillData;
 
-export type AnySkill = AilBoostSkill | AilDefensiveSkill | AilmentSkill | AttackSkill | AutoBuffSkill | BarrierSkill | BarrierBreakSkill | BoostSkill | BreakSkill | ChargeSkill | CritSkill | CritBoostSkill | DefensiveSkill | EndureSkill | EvasionSkill | SetSkill | InstaKillBoostSkill | MasterSkill | MiscSkill | NaviSkill | PersonaCounterSkill | PostBattleSkill | RecoverySkill | RegenSkill | SetSkill | SiphonSkill | SMTCounterSkill | SpringSkill | SummonSkill | SupportSkill | SusceptibilitySkill | TauntSkill | WallSkill;
+export type AnySkill = AilBoostSkill | AilDefensiveSkill | AilmentSkill | AttackSkill | AutoBuffSkill | BarrierSkill | BarrierBreakSkill | BoostSkill | BreakSkill | ChargeSkill | CritSkill | CritBoostSkill | DefensiveSkill | EndureSkill | EvasionSkill | SetSkill | InstakillBoostSkill | MasterSkill | MiscSkill | NaviSkill | PersonaCounterSkill | PostBattleSkill | RecoverySkill | RegenSkill | SetSkill | SiphonSkill | SMTCounterSkill | SpringSkill | SummonSkill | SupportSkill | SusceptibilitySkill | TauntSkill | WallSkill;
