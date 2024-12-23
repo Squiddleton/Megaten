@@ -579,6 +579,7 @@ export class EvasionSkill extends Skill implements EvasionSkillData {
 		else if (criteria === 'Surrounded') this.description = 'Greatly decreases Accuracy of all foes\' attacks except Almighty when surrounded.';
 		else if (element === 'Crit/Magic') this.description = 'Increases Evasion from Critical and magical attacks.';
 		else if (element === 'Magic') this.description = 'Increases Evasion from all magical attacks except Almighty.';
+		else if (element === 'All') this.description = 'Greatly reduces the hit rate of incoming attacks.';
 		else this.description = `${amount === 3 ? 'Greatly i' : 'I'}ncreases Evasion from ${element} skills.${amount === 3 ? ' Does not stack.' : ''}`;
 
 		this.amount = amount;
