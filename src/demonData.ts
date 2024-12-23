@@ -166,7 +166,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 		origin: 'Abrahamic'
 	},
 	{
-		name: 'Abdiel -Fallen-',
+		name: 'Abdiel - Fallen',
 		aliases: [
 			'Abdiel'
 		],
@@ -20344,7 +20344,7 @@ const demonData: readonly (DemonData<true> | DemonData<false> | PersonaData)[] =
 		origin: 'Chinese'
 	},
 	{
-		name: 'Nuwa -Snake-',
+		name: 'Nuwa - Snake',
 		aliases: [
 			'Nuwa'
 		],
