@@ -78,7 +78,7 @@ export class Demon<PersonaBased extends boolean = boolean> implements DemonData<
 		return this.race !== null && !this.isPersonaBased() ? `${this.race} ${this.name}` : this.name;
 	}
 	/** An array of every Demon and Persona instance */
-	static array: readonly AnyDemon[] = [];
+	static array: AnyDemon[] = [];
 	/** A map of every Demon and Persona instance, keyed by their devName properties */
 	static map: Map<string, AnyDemon> = new Map();
 	/**
@@ -144,7 +144,7 @@ export class Persona extends Demon<true> implements PersonaData {
 		return `${formatPossessive(this.user)} ${this.name}`;
 	}
 	/** An array of every Persona instance */
-	static array: readonly Persona[] = [];
+	static array: Persona[] = [];
 	/** A map of every Persona instance, keyed by their devName properties */
 	static map: Map<string, Persona> = new Map();
 	/**
@@ -177,8 +177,8 @@ export class Persona extends Demon<true> implements PersonaData {
 	}
 }
 
-Demon.array = Object.freeze(demonData.map(data => isPersona(data) ? new Persona(data) : new Demon(data)));
+Demon.array = demonData.map(data => isPersona(data) ? new Persona(data) : new Demon(data));
 Demon.map = new Map(Demon.array.map(mapByDevName));
 
-Persona.array = Object.freeze(Demon.array.filter(isPersona));
+Persona.array = Demon.array.filter(isPersona);
 Persona.map = new Map(Persona.array.map(mapByDevName));

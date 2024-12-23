@@ -32,7 +32,7 @@ export abstract class Skill implements SkillData {
 		return `${this.name}: ${this.description}`;
 	}
 	/** An array of every Skill instance */
-	static array: readonly AnySkill[] = [];
+	static array: AnySkill[] = [];
 	/** A map of every Skill instance, keyed by their devName properties */
 	static map: Map<string, AnySkill> = new Map();
 	/**
@@ -1002,7 +1002,7 @@ export class WallSkill extends Skill implements WallSkillData {
 	}
 }
 
-Skill.array = Object.freeze(skillData.map(data => {
+Skill.array = skillData.map(data => {
 	switch (data.type) {
 		case 'AILBOOST': return new AilBoostSkill(data);
 		case 'AILDEFENSIVE': return new AilDefensiveSkill(data);
@@ -1037,7 +1037,7 @@ Skill.array = Object.freeze(skillData.map(data => {
 		case 'TAUNT': return new TauntSkill(data);
 		case 'WALL': return new WallSkill(data);
 	}
-}));
+});
 Skill.map = new Map(Skill.array.map(skill => [skill.devName, skill]));
 
 export type AnySkillData = AilBoostSkillData | AilDefensiveSkillData | AilmentSkillData | AttackSkillData | AutoBuffSkillData | BarrierSkillData | BarrierBreakSkillData | BoostSkillData | BreakSkillData | ChargeSkillData | CritSkillData | CritBoostSkillData | DefensiveSkillData | EndureSkillData | EvasionSkillData | InstakillBoostSkillData | MasterSkillData | MiscSkillData | NaviSkillData | PersonaCounterSkillData | PostBattleSkillData | RecoverySkillData | RegenSkillData | SetSkillData | SiphonSkillData | SMTCounterSkillData | SpringSkillData | SummonSkillData | SupportSkillData | SusceptibilitySkillData | TauntSkillData | WallSkillData;
