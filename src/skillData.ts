@@ -7978,7 +7978,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Passive',
 		type: 'NAVI',
 		unique: null,
-		description: 'Recover 5% MP after battle (party).'
+		description: 'Recover 5% SP after battle (party).'
 	},
 	{
 		name: 'Re Patra',
@@ -9123,24 +9123,18 @@ const skillData: Readonly<AnySkillData[]> = [
 		description: 'Restores 20% HP to backup members after battle.'
 	},
 	{
-		name: 'Subrecover MP',
-		aliases: [
-			'Subrecover SP'
-		],
+		name: 'Subrecover SP',
 		affinity: 'Passive',
 		type: 'NAVI',
 		unique: null,
-		description: 'Restores 1% MP to backup members after battle.'
+		description: 'Restores 1% SP to backup members after battle.'
 	},
 	{
-		name: 'Subrecover MP EX',
-		aliases: [
-			'Subrecover SP EX'
-		],
+		name: 'Subrecover SP EX',
 		affinity: 'Passive',
 		type: 'NAVI',
 		unique: null,
-		description: 'Restores 3% MP to backup members after battle.'
+		description: 'Restores 3% SP to backup members after battle.'
 	},
 	{
 		name: 'Sukukaja',
@@ -9954,7 +9948,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Passive',
 		type: 'NAVI',
 		unique: null,
-		description: 'Recover 10% MP after battle (party).'
+		description: 'Recover 10% SP after battle (party).'
 	},
 	{
 		name: 'Vile Assault',
