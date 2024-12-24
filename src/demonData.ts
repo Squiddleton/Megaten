@@ -14906,7 +14906,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		origin: 'Chinese'
 	},
 	{
-		name: 'Konohana Sakuya',
+		name: 'Konohana Sakuya - P4',
+		aliases: [
+			'Konohana Sakuya'
+		],
 		affinities: {
 			skillPotential: null,
 			inherit: null
