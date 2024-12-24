@@ -19484,78 +19484,6 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		origin: 'Greco-Roman'
 	},
 	{
-		name: 'Nezha Taizi',
-		aliases: [
-			'Nata Taishi',
-			'Nezha'
-		],
-		affinities: {
-			skillPotential: null,
-			inherit: 'Phys'
-		},
-		arcana: 'Chariot',
-		race: 'Genma',
-		level: 6,
-		hp: null,
-		mp: null,
-		stats: {
-			st: 6,
-			vi: 6,
-			ma: 2,
-			ag: 10,
-			lu: 6
-		},
-		learnset: [
-			{
-				name: 'Lunge',
-				level: 0
-			},
-			{
-				name: 'Rakunda',
-				level: 0
-			},
-			{
-				name: 'Dekunda',
-				level: 0
-			},
-			{
-				name: 'Sonic Punch',
-				level: 7
-			},
-			{
-				name: 'Dodge Ice',
-				level: 8
-			},
-			{
-				name: 'Resist Mirage',
-				level: 9
-			},
-			{
-				name: 'Soul Break',
-				level: 10
-			}
-		],
-		resistances: {
-			ailments: null,
-			weak: [
-				'Elec'
-			],
-			resist: [
-				'Fire'
-			],
-			null: [],
-			drain: [],
-			repel: []
-		},
-		game: 'p4',
-		alignment: {
-			moral: 'Neutral',
-			ethical: 'Neutral'
-		},
-		lore: 'A demon of Chinese mythology, also known as Zhongtan Yuanshuai. He committed suicide to atone for killing a Dragon King, but was brought back to life as a lotus.',
-		origin: 'Chinese'
-	},
-	{
 		name: 'Nebiros',
 		affinities: {
 			skillPotential: {
@@ -19903,6 +19831,78 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		user: 'Ken Amada',
 		stage: 1,
 		evoSkillName: null
+	},
+	{
+		name: 'Nezha Taizi',
+		aliases: [
+			'Nata Taishi',
+			'Nezha'
+		],
+		affinities: {
+			skillPotential: null,
+			inherit: 'Phys'
+		},
+		arcana: 'Chariot',
+		race: 'Genma',
+		level: 6,
+		hp: null,
+		mp: null,
+		stats: {
+			st: 6,
+			vi: 6,
+			ma: 2,
+			ag: 10,
+			lu: 6
+		},
+		learnset: [
+			{
+				name: 'Lunge',
+				level: 0
+			},
+			{
+				name: 'Rakunda',
+				level: 0
+			},
+			{
+				name: 'Dekunda',
+				level: 0
+			},
+			{
+				name: 'Sonic Punch',
+				level: 7
+			},
+			{
+				name: 'Dodge Ice',
+				level: 8
+			},
+			{
+				name: 'Resist Mirage',
+				level: 9
+			},
+			{
+				name: 'Soul Break',
+				level: 10
+			}
+		],
+		resistances: {
+			ailments: null,
+			weak: [
+				'Elec'
+			],
+			resist: [
+				'Fire'
+			],
+			null: [],
+			drain: [],
+			repel: []
+		},
+		game: 'p4',
+		alignment: {
+			moral: 'Neutral',
+			ethical: 'Neutral'
+		},
+		lore: 'A demon of Chinese mythology, also known as Zhongtan Yuanshuai. He committed suicide to atone for killing a Dragon King, but was brought back to life as a lotus.',
+		origin: 'Chinese'
 	},
 	{
 		name: 'Niddhoggr',
