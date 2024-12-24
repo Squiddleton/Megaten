@@ -9187,9 +9187,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		origin: 'Abrahamic'
 	},
 	{
-		name: 'Girimehkala',
+		name: 'Girimekhala',
 		aliases: [
-			'Girimekhala'
+			'Girimehkala'
 		],
 		affinities: {
 			skillPotential: {
@@ -19484,8 +19484,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		origin: 'Greco-Roman'
 	},
 	{
-		name: 'Nata Taishi',
+		name: 'Nezha Taizi',
 		aliases: [
+			'Nata Taishi',
 			'Nezha'
 		],
 		affinities: {
