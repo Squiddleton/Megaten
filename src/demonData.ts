@@ -592,6 +592,89 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		evoSkillName: 'Checkmate'
 	},
 	{
+		name: 'Agrat',
+		affinities: {
+			skillPotential: {
+				Phys: -3,
+				Fire: 2,
+				Ice: 4,
+				Elec: -5,
+				Force: 0,
+				Light: 0,
+				Dark: 0,
+				Almighty: 5,
+				Ailment: -4,
+				Recovery: 3,
+				Support: 0
+			},
+			inherit: null
+		},
+		arcana: null,
+		race: 'Qadištu',
+		level: 68,
+		hp: 348,
+		mp: 396,
+		stats: {
+			st: 26,
+			vi: 51,
+			ma: 78,
+			ag: 42,
+			lu: 39
+		},
+		learnset: [
+			{
+				name: 'Queen\'s Decree',
+				level: 0
+			},
+			{
+				name: 'Mabufudyne',
+				level: 0
+			},
+			{
+				name: 'Agidyne',
+				level: 0
+			},
+			{
+				name: 'Diamrita',
+				level: 0
+			},
+			{
+				name: 'Almighty Pleroma',
+				level: 69
+			},
+			{
+				name: 'Bufubarion',
+				level: 70
+			},
+			{
+				name: 'Mediarahan',
+				level: 71
+			}
+		],
+		resistances: {
+			ailments: {},
+			weak: [
+				'Elec'
+			],
+			resist: [
+				'Fire',
+				'Dark'
+			],
+			null: [
+				'Ice'
+			],
+			repel: [],
+			drain: []
+		},
+		game: 'smt5',
+		alignment: {
+			moral: 'Neutral',
+			ethical: 'Chaos'
+		},
+		lore: 'Agrat bat Mahlat. One of the four female demons in the Zohar, a spiritual text of Jewish mystical thought.\nHer name means "Agrat, daughter of Mahlat": said to be the child of Mahlat, daughter of Ishmael, who had a child with a desert demon named Igrathiel. A queen of demons, she is called "the demon who dances on the roof" and is said to wander the air with a horde of messengers of destruction on Wednesday and Sabbath eve. It is also said that men sometimed begged Agrat for help, seeking for her to share the night with them.',
+		origin: 'Abrahamic'
+	},
+	{
 		name: 'Aitvaras',
 		affinities: {
 			skillPotential: {
@@ -951,6 +1034,84 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		origin: 'Norse'
 	},
 	{
+		name: 'Amabie',
+		affinities: {
+			skillPotential: {
+				Phys: 0,
+				Fire: 0,
+				Ice: 1,
+				Elec: 0,
+				Force: 0,
+				Light: 0,
+				Dark: -3,
+				Almighty: 0,
+				Ailment: -3,
+				Recovery: 3,
+				Support: 2
+			},
+			inherit: null
+		},
+		arcana: null,
+		race: 'Enigma',
+		level: 39,
+		hp: 190,
+		mp: 202,
+		stats: {
+			st: 15,
+			vi: 29,
+			ma: 38,
+			ag: 26,
+			lu: 34
+		},
+		learnset: [
+			{
+				name: 'Good Cheer',
+				level: 0
+			},
+			{
+				name: 'Media',
+				level: 0
+			},
+			{
+				name: 'Bowl of Hygieia',
+				level: 0
+			},
+			{
+				name: 'Heal Pleroma',
+				level: 40
+			},
+			{
+				name: 'Resist Dark',
+				level: 41
+			},
+			{
+				name: 'Samarecarm',
+				level: 42
+			}
+		],
+		resistances: {
+			ailments: {},
+			weak: [
+				'Dark'
+			],
+			resist: [
+				'Light'
+			],
+			null: [
+				'Ice'
+			],
+			repel: [],
+			drain: []
+		},
+		game: 'smt5',
+		alignment: {
+			moral: 'Light',
+			ethical: 'Neutral'
+		},
+		lore: 'A Japanese yokai said to have appeared in the Higo Province during the Edo period. One day, it was spotted as a glowing object in the sea, and made a prophecy to those who investigated it. The prophecy was that for the next six years, there would be a bountiful harvest, but also an epidemic of disease. Once that time came, it said, those who fell ill should be shown a drawing of Amabie as soon as possible to ward off the sickness. Similar rumors were recorded around this time for amabiko, jinjahime, and kudan.',
+		origin: 'Japanese'
+	},
+	{
 		name: 'Amanozako',
 		affinities: {
 			skillPotential: {
@@ -1250,25 +1411,17 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		},
 		arcana: null,
 		race: 'Tyrant',
-		level: 82,
-		hp: 619,
-		mp: 329,
+		level: 87,
+		hp: 668,
+		mp: 352,
 		stats: {
-			st: 69,
-			vi: 74,
-			ma: 64,
-			ag: 32,
-			lu: 46
+			st: 73,
+			vi: 78,
+			ma: 66,
+			ag: 34,
+			lu: 49
 		},
 		learnset: [
-			{
-				name: 'Abyssal Mask',
-				level: 0
-			},
-			{
-				name: 'Madness Nails',
-				level: 0
-			},
 			{
 				name: 'Megido Flame',
 				level: 0
@@ -1278,16 +1431,24 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 				level: 0
 			},
 			{
+				name: 'Madness Nails',
+				level: 0
+			},
+			{
+				name: 'Abyssal Mask',
+				level: 0
+			},
+			{
 				name: 'Great Life Spring',
-				level: 83
+				level: 88
 			},
 			{
 				name: 'Debilitate',
-				level: 84
+				level: 89
 			},
 			{
 				name: 'Trisagion',
-				level: 85
+				level: 90
 			}
 		],
 		resistances: {
@@ -1301,17 +1462,17 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 				'Dark'
 			],
 			null: [],
+			repel: [],
 			drain: [
 				'Fire'
-			],
-			repel: []
+			]
 		},
 		game: 'smt5',
 		alignment: {
 			moral: 'Dark',
 			ethical: 'Chaos'
 		},
-		lore: 'One of the 72 demons of Solomon\'s Ars Goetia.\nHe is the seventh spirit of Goetia and the Grand Marquis of Hell. Amon is depicted in several different forms, sometimes appearing as a wolf with a serpent\'s tail and other times appearing as having the head of an owl, the torso of a wolf and the tail of a snake sometimes replacing his hind legs altogether. It is said that he bestows knowledge of the past and the future. He is also incredibly loyal, having led his army to assist Satan when Satan rebelled against God.',
+		lore: 'One of the 72 demons of Solomon\'s "Ars Goetia."\nHe is the seventh spirit of Goetia and the Grand Marquis of Hell. Amon is depicted in several different forms, sometimes appearing as a wolf with a serpent\'s tail, and other times appearing as having the head of an owl, the torso of a wolf, and the tail of a snake sometimes replacing his hind legs altogether. It is said that he bestows knowledge of the past and the future. He is also incredibly loyal, having led his army to assist Satan when Satan rebelled against God.',
 		origin: 'Abrahamic'
 	},
 	{
@@ -1395,6 +1556,84 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		},
 		lore: 'A Zoroastrian goddess whose name means "pure."\nWhile primarily known as a beautiful deity who rules over rivers and water, she is also the goddess of health, fertility, safe delivery, production of livestock, harvest, wealth and expansion of land. She is often portrayed as an elegant virgin wearing a crown decorated with numerous stars in addition to a golden necklace and a golden cape, and is typically shown holding a water jug. She is also a brave god of war astride a four-wheeled chariot, toppling demons and tyrants alike. Both her allies and her enemies have been said to have offered their prayers to her.',
 		origin: 'Zoroastrian'
+	},
+	{
+		name: 'Anansi',
+		affinities: {
+			skillPotential: {
+				Phys: 0,
+				Fire: -4,
+				Ice: 2,
+				Elec: 0,
+				Force: 0,
+				Light: 0,
+				Dark: 2,
+				Almighty: 0,
+				Ailment: 1,
+				Recovery: 0,
+				Support: 0
+			},
+			inherit: null
+		},
+		arcana: null,
+		race: 'Genma',
+		level: 49,
+		hp: 225,
+		mp: 243,
+		stats: {
+			st: 22,
+			vi: 27,
+			ma: 47,
+			ag: 30,
+			lu: 43
+		},
+		learnset: [
+			{
+				name: 'What Comes After Four',
+				level: 0
+			},
+			{
+				name: 'Bufudyne',
+				level: 0
+			},
+			{
+				name: 'Makajamaon',
+				level: 0
+			},
+			{
+				name: 'Fire Block',
+				level: 50
+			},
+			{
+				name: 'Life Aid',
+				level: 51
+			},
+			{
+				name: 'Mamudoon',
+				level: 52
+			}
+		],
+		resistances: {
+			ailments: {},
+			weak: [
+				'Fire'
+			],
+			resist: [
+				'Dark'
+			],
+			null: [
+				'Ice'
+			],
+			repel: [],
+			drain: []
+		},
+		game: 'smt5',
+		alignment: {
+			moral: 'Light',
+			ethical: 'Neutral'
+		},
+		lore: 'A folkloric hero of the Ashanti and other tribes in West Africa. He is depicted as a trickster who gets by on his wit and cunning. Portrayed as a spider or a man, depending on interpretation.\nAnansi appears in many stories, including one where he collects the people\'s wisdom in a gourd and attempts to hang it from a tree. But in a fit of dismay, he upends it and scatters wisdom across the world. Other stories tell of how he buys the stories of the sky god Onyankopon and makes them his own. These stories are collectively called Anansesem, or spider tales.',
+		origin: 'African'
 	},
 	{
 		name: 'Ananta',
@@ -1673,7 +1912,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			moral: 'Neutral',
 			ethical: 'Chaos'
 		},
-		lore: 'One of the 72 demons of the Goetia.\nThe great Marquis of Hell, he appears where there is battle to stoke the hatred within soldiers. He helps defeat the enemies of those who summon him.',
+		lore: 'One of the 72 demons of the "Ars Goetia."\nThe great Marquis of Hell, he appears where there is battle to stoke the hatred within soldiers. He helps defeat the enemies of those who summon him.',
 		origin: 'Abrahamic'
 	},
 	{
@@ -1951,9 +2190,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		],
 		resistances: {
 			ailments: {
+				Charm: 'Null',
 				Confuse: 'Weak',
-				Sleep: 'Resist',
-				Charm: 'Resist'
+				Sleep: 'Resist'
 			},
 			weak: [
 				'Fire'
@@ -1962,8 +2201,8 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 				'Ice'
 			],
 			null: [],
-			drain: [],
-			repel: []
+			repel: [],
+			drain: []
 		},
 		game: 'smt5',
 		alignment: {
@@ -2616,6 +2855,91 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		},
 		lore: 'The fallen angel of Israel and the demon of vengeance.\nHis name means "ferocious lion" and he is said to aid in vengeance of those who seek his service. During his time as an angel of God, he was recognized as the guardian angel of the saint Enoch. It is said that his name originally belonged to one in either the Book of Genesis or the Book of Daniel, only to become associated with the demon thereafter.',
 		origin: 'Abrahamic'
+	},
+	{
+		name: 'Armaiti',
+		affinities: {
+			skillPotential: {
+				Phys: -3,
+				Fire: 0,
+				Ice: 0,
+				Elec: 0,
+				Force: 0,
+				Light: 0,
+				Dark: 0,
+				Almighty: 4,
+				Ailment: -2,
+				Recovery: 2,
+				Support: 1
+			},
+			inherit: null
+		},
+		arcana: null,
+		race: 'Herald',
+		level: 53,
+		hp: 245,
+		mp: 259,
+		stats: {
+			st: 27,
+			vi: 33,
+			ma: 48,
+			ag: 38,
+			lu: 35
+		},
+		learnset: [
+			{
+				name: 'Spirit Drain',
+				level: 0
+			},
+			{
+				name: 'Mediarama',
+				level: 0
+			},
+			{
+				name: 'Tetrakarn',
+				level: 0
+			},
+			{
+				name: 'Great Mana Spring',
+				level: 54
+			},
+			{
+				name: 'Diarahan',
+				level: 55
+			},
+			{
+				name: 'Megidola',
+				level: 56
+			}
+		],
+		resistances: {
+			ailments: {
+				Charm: 'Resist',
+				Seal: 'Resist',
+				Confuse: 'Resist',
+				Poison: 'Resist',
+				Sleep: 'Resist',
+				Mirage: 'Resist'
+			},
+			weak: [
+				'Elec',
+				'Force'
+			],
+			resist: [],
+			null: [
+				'Light',
+				'Dark'
+			],
+			repel: [],
+			drain: []
+		},
+		game: 'smt5',
+		alignment: {
+			moral: 'Light',
+			ethical: 'Law'
+		},
+		lore: 'An archangel worshipped in Zoroastrianism, and one of the Amesha Spenta.\nShe is the daughter of the head god Ahura Mazda, and an angel who oversees the earth and provides pasture for livestock. Armaiti is roughly translated as "devotion," and she is the personification of piety. It is said that she is heartbroken when sinful humans walk on her path, and rejoices when those who follow the laws of heaven feed their livestock and birth pious and virtuous children.',
+		origin: 'Zoroastrian'
 	},
 	{
 		name: 'Arsène',
@@ -3595,6 +3919,86 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		origin: 'Greco-Roman'
 	},
 	{
+		name: 'Azazel',
+		affinities: {
+			skillPotential: {
+				Phys: 0,
+				Fire: 3,
+				Ice: 0,
+				Elec: -4,
+				Force: 3,
+				Light: -2,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 0,
+				Recovery: 2,
+				Support: 0
+			},
+			inherit: null
+		},
+		arcana: null,
+		race: 'Fallen',
+		level: 61,
+		hp: 350,
+		mp: 297,
+		stats: {
+			st: 38,
+			vi: 44,
+			ma: 56,
+			ag: 32,
+			lu: 34
+		},
+		learnset: [
+			{
+				name: 'Agidyne',
+				level: 0
+			},
+			{
+				name: 'Mazandyne',
+				level: 0
+			},
+			{
+				name: 'Mediarama',
+				level: 0
+			},
+			{
+				name: 'Maragidyne',
+				level: 62
+			},
+			{
+				name: 'High Restore',
+				level: 63
+			},
+			{
+				name: 'Resist Light',
+				level: 64
+			}
+		],
+		resistances: {
+			ailments: {},
+			weak: [
+				'Elec',
+				'Light'
+			],
+			resist: [
+				'Dark'
+			],
+			null: [
+				'Fire',
+				'Force'
+			],
+			repel: [],
+			drain: []
+		},
+		game: 'smt5',
+		alignment: {
+			moral: 'Neutral',
+			ethical: 'Chaos'
+		},
+		lore: 'A leader of the Grigori, a group of angels who descended to earth to educate humans. He is said to have committed acts of defiance against God, such as being attracted to beautiful human daughters on earth and taking them as wives, and giving humans various truths of forbidden knowledge. Azazel imparted knowledge of armors, ornaments, and makeup, teaching men to fight and struggle and women to dress up and seduce men.',
+		origin: 'Abrahamic'
+	},
+	{
 		name: 'Azumi',
 		affinities: {
 			skillPotential: {
@@ -3812,6 +4216,87 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		},
 		lore: 'Demon whose name means "Lord of the High Place." Possibly derived from the Syrian deity Ba\'al, he presides over death and the spirits of the deceased. Many worshipped him because of this power.',
 		origin: 'Abrahamic'
+	},
+	{
+		name: 'Baihu',
+		aliases: [
+			'Byakko'
+		],
+		affinities: {
+			skillPotential: {
+				Phys: 2,
+				Fire: 0,
+				Ice: 0,
+				Elec: 5,
+				Force: -6,
+				Light: 0,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 0,
+				Recovery: 0,
+				Support: 1
+			},
+			inherit: 'Ice'
+		},
+		arcana: 'Temperance',
+		race: 'Holy',
+		level: 49,
+		hp: 230,
+		mp: 249,
+		stats: {
+			st: 33,
+			vi: 28,
+			ma: 25,
+			ag: 48,
+			lu: 40
+		},
+		learnset: [
+			{
+				name: 'Damascus Claw',
+				level: 0
+			},
+			{
+				name: 'Storm Dracostrike',
+				level: 0
+			},
+			{
+				name: 'Mazionga',
+				level: 0
+			},
+			{
+				name: 'Fierce Roar',
+				level: 50
+			},
+			{
+				name: 'Great Life Spring',
+				level: 51
+			},
+			{
+				name: 'Frenzied Chomp',
+				level: 52
+			}
+		],
+		resistances: {
+			ailments: {
+				Confuse: 'Weak'
+			},
+			weak: [
+				'Force'
+			],
+			resist: [],
+			null: [
+				'Elec'
+			],
+			repel: [],
+			drain: []
+		},
+		game: 'smt5',
+		alignment: {
+			moral: 'Light',
+			ethical: 'Neutral'
+		},
+		lore: 'One of the Ssu-Ling, celestial creatures in Chinese mythology.\nIt represents the west, the season of autumn, and the element of metal. It is believed to be the king of all beasts.',
+		origin: 'Chinese'
 	},
 	{
 		name: 'Baphomet',
@@ -4047,10 +4532,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		affinities: {
 			skillPotential: {
 				Phys: 0,
-				Fire: 0,
+				Fire: -6,
 				Ice: 2,
 				Elec: 4,
-				Force: -6,
+				Force: 0,
 				Light: -2,
 				Dark: 6,
 				Almighty: 0,
@@ -4078,7 +4563,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 				level: 0
 			},
 			{
-				name: 'Debilitate',
+				name: 'Thunder Reign',
 				level: 0
 			},
 			{
@@ -4086,7 +4571,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 				level: 0
 			},
 			{
-				name: 'Thunder Reign',
+				name: 'Debilitate',
 				level: 0
 			},
 			{
@@ -4104,13 +4589,13 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		],
 		resistances: {
 			ailments: {
-				Sleep: 'Null',
-				Mirage: 'Null',
+				Confuse: 'Null',
 				Poison: 'Null',
-				Confuse: 'Null'
+				Sleep: 'Null',
+				Mirage: 'Null'
 			},
 			weak: [
-				'Force'
+				'Fire'
 			],
 			resist: [
 				'Ice',
@@ -4119,17 +4604,17 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			null: [
 				'Dark'
 			],
+			repel: [],
 			drain: [
 				'Elec'
-			],
-			repel: []
+			]
 		},
 		game: 'smt5',
 		alignment: {
 			moral: 'Dark',
 			ethical: 'Chaos'
 		},
-		lore: 'Lord of the Flies and the prince of Hell.\nHe is established as a high-ranking demon in the Bible and his multitude of flies are said to carry souls down to the abyss. He has been speculated to be a bastardization of the Canaanite god Baal.',
+		lore: 'Lord of the Flies and the Prince of Hell.\nHe is established as a high-ranking demon in the Bible, and his multitude of flies are said to carry souls down to the abyss. It has been speculated that he is a bastardization of the Canaanite god Baal.',
 		origin: 'Abrahamic'
 	},
 	{
@@ -4904,87 +5389,6 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		},
 		lore: 'A malformed, winged servant of the Cthulhu Mythos\' cosmic god Hastur. They can fly even in the vacuum of space and it\'s said that if you can summon one, it will carry you wherever you wish.',
 		origin: 'Lovecraftian'
-	},
-	{
-		name: 'Baihu',
-		aliases: [
-			'Byakko'
-		],
-		affinities: {
-			skillPotential: {
-				Phys: 2,
-				Fire: 0,
-				Ice: 0,
-				Elec: 5,
-				Force: -6,
-				Light: 0,
-				Dark: 0,
-				Almighty: 0,
-				Ailment: 0,
-				Recovery: 0,
-				Support: 1
-			},
-			inherit: 'Ice'
-		},
-		arcana: 'Temperance',
-		race: 'Holy',
-		level: 43,
-		hp: 199,
-		mp: 222,
-		stats: {
-			st: 30,
-			vi: 25,
-			ma: 23,
-			ag: 42,
-			lu: 35
-		},
-		learnset: [
-			{
-				name: 'Damascus Claw',
-				level: 0
-			},
-			{
-				name: 'Mazionga',
-				level: 0
-			},
-			{
-				name: 'Storm Dracostrike',
-				level: 0
-			},
-			{
-				name: 'Fierce Roar',
-				level: 44
-			},
-			{
-				name: 'Great Life Spring',
-				level: 45
-			},
-			{
-				name: 'Frenzied Chomp',
-				level: 46
-			}
-		],
-		resistances: {
-			ailments: {
-				Confuse: 'Weak'
-			},
-			weak: [
-				'Force'
-			],
-			resist: [],
-			null: [
-				'Elec'
-			],
-			drain: [],
-			repel: []
-		},
-		game: 'smt5',
-		alignment: {
-			moral: 'Light',
-			ethical: 'Neutral'
-		},
-		lore: 'One of the Ssu-Ling, celestial creatures in Chinese mythology.\nIt represents the west, the season of autumn, and the element of metal. It is believed to be the king of all beasts.',
-		origin: 'Chinese'
 	},
 	{
 		name: 'Caesar',
@@ -6051,6 +6455,86 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		origin: 'Slavic'
 	},
 	{
+		name: 'Cherub',
+		affinities: {
+			skillPotential: {
+				Phys: 0,
+				Fire: 0,
+				Ice: 0,
+				Elec: 0,
+				Force: 3,
+				Light: 4,
+				Dark: -4,
+				Almighty: 1,
+				Ailment: 0,
+				Recovery: 0,
+				Support: -3
+			},
+			inherit: null
+		},
+		arcana: null,
+		race: 'Divine',
+		level: 71,
+		hp: 348,
+		mp: 351,
+		stats: {
+			st: 34,
+			vi: 42,
+			ma: 60,
+			ag: 55,
+			lu: 50
+		},
+		learnset: [
+			{
+				name: 'Judgment Light',
+				level: 0
+			},
+			{
+				name: 'Wind Breath',
+				level: 0
+			},
+			{
+				name: 'Megidola',
+				level: 0
+			},
+			{
+				name: 'Zanbarion',
+				level: 72
+			},
+			{
+				name: 'Hamabarion',
+				level: 73
+			},
+			{
+				name: 'Null Light',
+				level: 74
+			}
+		],
+		resistances: {
+			ailments: {
+				Seal: 'Weak'
+			},
+			weak: [
+				'Dark'
+			],
+			resist: [
+				'Light'
+			],
+			null: [],
+			repel: [],
+			drain: [
+				'Force'
+			]
+		},
+		game: 'smt5',
+		alignment: {
+			moral: 'Neutral',
+			ethical: 'Law'
+		},
+		lore: 'A senior angel in the angelic hierarchy, ranked second in the order of angels.\nThey are represented by four wings and four faces, and carry the throne of God or drive His chariot. In the Bible, they are known as the gatekeepers of the Garden of Eden, where they are said to guard the tree of life with flaming swords.',
+		origin: 'Abrahamic'
+	},
+	{
 		name: 'Chimera',
 		affinities: {
 			skillPotential: {
@@ -6154,23 +6638,23 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		},
 		arcana: 'Chariot',
 		race: 'Tyrant',
-		level: 87,
-		hp: 577,
-		mp: 378,
+		level: 77,
+		hp: 497,
+		mp: 325,
 		stats: {
-			st: 81,
-			vi: 73,
-			ma: 71,
-			ag: 45,
-			lu: 53
+			st: 75,
+			vi: 67,
+			ma: 65,
+			ag: 39,
+			lu: 47
 		},
 		learnset: [
 			{
-				name: 'Glacial Blast',
+				name: 'Yabusame Shot',
 				level: 0
 			},
 			{
-				name: 'High Phys Pleroma',
+				name: 'Glacial Blast',
 				level: 0
 			},
 			{
@@ -6178,20 +6662,20 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 				level: 0
 			},
 			{
-				name: 'Yabusame Shot',
+				name: 'High Phys Pleroma',
 				level: 0
 			},
 			{
 				name: 'Catastrophe',
-				level: 88
+				level: 78
 			},
 			{
 				name: 'Myriad Slashes',
-				level: 89
+				level: 79
 			},
 			{
 				name: 'Drain Ice',
-				level: 90
+				level: 81
 			}
 		],
 		resistances: {
@@ -6204,17 +6688,17 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			null: [
 				'Ice'
 			],
-			drain: [],
 			repel: [
 				'Force'
-			]
+			],
+			drain: []
 		},
 		game: 'smt5',
 		alignment: {
 			moral: 'Dark',
 			ethical: 'Chaos'
 		},
-		lore: 'A Chinese god of war, often depicted with a bull\'s head, six or eight arms and four eyes.\nHe invented many weapons and commanded an invincible army. Seeking control of the land, he fought with Huang Di and though he was winning, Huang Di invented something of his own, the South-Pointing Chariot and promptly defeated him. Huang Di then had Chi You\'s head buried thousands of li apart from his body.',
+		lore: 'A Chinese demon king often depicted with a bull\'s head, six or eight arms, and four eyes.\nHe invented many weapons and commanded an invincible army. Seeking control of the mortal world, he fought with the Yellow Emperor Huang Di. Though he was winning, the Yellow Emperor ultimately defeated him. Huang Di then had Chi You\'s head buried thousands of li apart from his body.',
 		origin: 'Chinese'
 	},
 	{
@@ -6378,10 +6862,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			skillPotential: {
 				Phys: 0,
 				Fire: 0,
-				Ice: 6,
+				Ice: 5,
 				Elec: 0,
 				Force: 5,
-				Light: 5,
+				Light: 6,
 				Dark: -6,
 				Almighty: 0,
 				Ailment: 3,
@@ -6393,20 +6877,16 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		arcana: null,
 		race: 'Femme',
 		level: 61,
-		hp: 404,
-		mp: 412,
+		hp: 306,
+		mp: 352,
 		stats: {
 			st: 26,
-			vi: 42,
+			vi: 32,
 			ma: 69,
 			ag: 44,
 			lu: 51
 		},
 		learnset: [
-			{
-				name: 'Diarahan',
-				level: 0
-			},
 			{
 				name: 'Frolic',
 				level: 0
@@ -6417,6 +6897,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			},
 			{
 				name: 'Mabufudyne',
+				level: 0
+			},
+			{
+				name: 'Diarahan',
 				level: 0
 			},
 			{
@@ -6434,23 +6918,23 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		],
 		resistances: {
 			ailments: {
-				Mirage: 'Resist',
-				Charm: 'Resist'
+				Charm: 'Resist',
+				Poison: 'Weak',
+				Sleep: 'Weak',
+				Mirage: 'Resist'
 			},
 			weak: [
 				'Dark'
 			],
 			resist: [
-				'Fire',
 				'Ice',
-				'Elec',
 				'Force'
 			],
 			null: [],
+			repel: [],
 			drain: [
 				'Light'
-			],
-			repel: []
+			]
 		},
 		game: 'smt5',
 		alignment: {
@@ -6640,15 +7124,15 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		},
 		learnset: [
 			{
-				name: 'Fatal Sword',
+				name: 'Gae Bolg',
+				level: 0
+			},
+			{
+				name: 'Deathbound',
 				level: 0
 			},
 			{
 				name: 'Mazanma',
-				level: 0
-			},
-			{
-				name: 'Zandyne',
 				level: 0
 			},
 			{
@@ -6677,15 +7161,15 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			null: [
 				'Force'
 			],
-			drain: [],
-			repel: []
+			repel: [],
+			drain: []
 		},
 		game: 'smt5',
 		alignment: {
 			moral: 'Light',
 			ethical: 'Neutral'
 		},
-		lore: 'A gallant Celtic hero and son of the sun god Lugh.\nHe is said to have beaten an army singlehandedly. He was cursed to die after spurning the war goddess Morrighan and was impaled on his own mighty spear, Gae Bolg.',
+		lore: 'A gallant Celtic hero and son of the sun god Lugh.\nHe is said to have beaten a whole army singlehandedly. He was cursed to die after spurning the war goddess Morrigan and was impaled on his own mighty spear, Gae Bolg.',
 		origin: 'Celtic'
 	},
 	{
@@ -6906,6 +7390,89 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		},
 		lore: 'A low-ranking class of spirits. While the name may conjure up familiar images of "demons" due to Christianity\'s influence, daemons were not strictly associated with good or evil and simply thought to be lesser supernatural beings, sometimes acting as tutelary spirits that guided the souls of men.\nWhat might be considered a demon today would\'ve been called a "cacodaemon" in ancient Greece — that is, an evil spirit. In contrast, their benevolent counterparts were known as "agathodaemons."',
 		origin: 'Universal'
+	},
+	{
+		name: 'Dagda',
+		affinities: {
+			skillPotential: {
+				Phys: 6,
+				Fire: 0,
+				Ice: 0,
+				Elec: 0,
+				Force: 0,
+				Light: -4,
+				Dark: -4,
+				Almighty: 3,
+				Ailment: 0,
+				Recovery: 0,
+				Support: 0
+			},
+			inherit: null
+		},
+		arcana: null,
+		race: 'Deity',
+		level: 80,
+		hp: 559,
+		mp: 339,
+		stats: {
+			st: 85,
+			vi: 65,
+			ma: 43,
+			ag: 43,
+			lu: 41
+		},
+		learnset: [
+			{
+				name: 'Lost Hit',
+				level: 0
+			},
+			{
+				name: 'Hades Blast',
+				level: 0
+			},
+			{
+				name: 'Power Punch',
+				level: 0
+			},
+			{
+				name: 'Luster Candy',
+				level: 0
+			},
+			{
+				name: 'Freikugel',
+				level: 81
+			},
+			{
+				name: 'High Phys Pleroma',
+				level: 83
+			},
+			{
+				name: 'Null Phys',
+				level: 84
+			}
+		],
+		resistances: {
+			ailments: {},
+			weak: [
+				'Light'
+			],
+			resist: [],
+			null: [
+				'Fire',
+				'Ice',
+				'Elec',
+				'Force'
+			],
+			repel: [],
+			drain: []
+		},
+		game: 'smt5',
+		alignment: {
+			moral: 'Light',
+			ethical: 'Neutral'
+		},
+		lore: 'A god of Celtic myth and the supreme deity of the Tuatha Dé Danann. His name means "the good god."\nA glutton for porridge, he\'s even-tempered and excels in martial arts. His treasures include a club with the power to destroy and resurrect, a golden harp that can control the seasons, and a cauldron of endless food.',
+		origin: 'Celtic'
 	},
 	{
 		name: 'Daisoujou',
@@ -7181,6 +7748,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		},
 		learnset: [
 			{
+				name: 'Hell Gaze',
+				level: 0
+			},
+			{
 				name: 'Agidyne',
 				level: 0
 			},
@@ -7210,15 +7781,15 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			null: [
 				'Dark'
 			],
-			drain: [],
-			repel: []
+			repel: [],
+			drain: []
 		},
 		game: 'smt5',
 		alignment: {
 			moral: 'Neutral',
 			ethical: 'Chaos'
 		},
-		lore: 'One of the 72 demons of the Goetia.\nHe comes in the shape of a star and has vast knowledge of herbs and jewels. He can also control birds at will.',
+		lore: 'One of the 72 demons of the "Ars Goetia."\nHe comes in the shape of a star and has vast knowledge of herbs and jewels. He can also control birds at will.',
 		origin: 'Abrahamic'
 	},
 	{
@@ -7526,69 +8097,84 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		origin: 'Greco-Roman'
 	},
 	{
-		name: 'Dis',
+		name: 'Dís',
 		affinities: {
-			skillPotential: null,
+			skillPotential: {
+				Phys: -4,
+				Fire: 0,
+				Ice: 0,
+				Elec: 0,
+				Force: 0,
+				Light: 0,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 0,
+				Recovery: 2,
+				Support: 2
+			},
 			inherit: 'Fire'
 		},
 		arcana: 'Magician',
 		race: 'Yoma',
-		level: 39,
-		hp: null,
-		mp: null,
+		level: 31,
+		hp: 153,
+		mp: 158,
 		stats: {
-			st: 25,
-			vi: 24,
-			ma: 31,
-			ag: 26,
-			lu: 21
+			st: 15,
+			vi: 25,
+			ma: 26,
+			ag: 23,
+			lu: 26
 		},
 		learnset: [
-			{
-				name: 'Maragion',
-				level: 0
-			},
 			{
 				name: 'Diarama',
 				level: 0
 			},
 			{
-				name: 'Dekunda',
+				name: 'Elec Block',
 				level: 0
 			},
 			{
-				name: 'Dodge Ice',
-				level: 41
+				name: 'Ice Block',
+				level: 0
 			},
 			{
-				name: 'Masukunda',
-				level: 10
+				name: 'Fire Block',
+				level: 32
 			},
 			{
-				name: 'Agidyne',
-				level: 43
+				name: 'Force Block',
+				level: 33
 			},
 			{
-				name: 'Concentrate',
-				level: 44
+				name: 'Me Patra',
+				level: 35
 			}
 		],
 		resistances: {
-			ailments: null,
-			weak: [],
-			resist: [],
+			ailments: {
+				Seal: 'Null'
+			},
+			weak: [
+				'Phys'
+			],
+			resist: [
+				'Fire',
+				'Ice',
+				'Elec',
+				'Force'
+			],
 			null: [],
-			drain: [],
-			repel: [
-				'Fire'
-			]
+			repel: [],
+			drain: []
 		},
-		game: 'p4',
+		game: 'smt5',
 		alignment: {
 			moral: 'Neutral',
 			ethical: 'Law'
 		},
-		lore: 'A spiritual attendant to humans in Norse lore. She is known as a goddess of both farming and war, though some see her as a low-ranking servant of the valkyries.',
+		lore: 'Figures in Norse mythology considered to be spiritual companions of humans.\nWhile they are said to be protectors of agriculture and livestock, they are also noted as masters of war. They are sometimes regarded as spirits that accompany the Valkyrie, or play a similar role. Also interpreted as lesser goddesses.',
 		origin: 'Norse'
 	},
 	{
@@ -7666,6 +8252,246 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		origin: 'Abrahamic'
 	},
 	{
+		name: 'Dormarth',
+		affinities: {
+			skillPotential: {
+				Phys: 3,
+				Fire: 0,
+				Ice: 0,
+				Elec: 0,
+				Force: -3,
+				Light: 0,
+				Dark: 1,
+				Almighty: 0,
+				Ailment: 2,
+				Recovery: -3,
+				Support: 0
+			},
+			inherit: null
+		},
+		arcana: null,
+		race: 'Wilder',
+		level: 40,
+		hp: 193,
+		mp: 189,
+		stats: {
+			st: 30,
+			vi: 21,
+			ma: 26,
+			ag: 33,
+			lu: 31
+		},
+		learnset: [
+			{
+				name: 'Frenzied Chomp',
+				level: 0
+			},
+			{
+				name: 'Mudoon',
+				level: 0
+			},
+			{
+				name: 'Axel Claw',
+				level: 0
+			},
+			{
+				name: 'Purple Smoke',
+				level: 41
+			},
+			{
+				name: 'Hysterical Slap',
+				level: 42
+			},
+			{
+				name: 'Dark Pleroma',
+				level: 43
+			}
+		],
+		resistances: {
+			ailments: {
+				Charm: 'Resist',
+				Confuse: 'Resist',
+				Poison: 'Resist',
+				Mirage: 'Resist'
+			},
+			weak: [
+				'Force'
+			],
+			resist: [
+				'Light'
+			],
+			null: [
+				'Dark'
+			],
+			repel: [],
+			drain: []
+		},
+		game: 'smt5',
+		alignment: {
+			moral: 'Dark',
+			ethical: 'Neutral'
+		},
+		lore: 'A canine demon of Celtic mythology.\nCommanded by Gwyn, King of the Afterlife, she is said to be a hound with a red nose visible through even the mountain mist. The meaning of her name is uncertain and subject to much speculation, but the most common theory is "death\'s door," and she is thought to be the gatekeeper of the afterlife under Gwyn\'s reign.',
+		origin: 'Celtic'
+	},
+	{
+		name: 'Efreet',
+		affinities: {
+			skillPotential: {
+				Phys: 0,
+				Fire: 5,
+				Ice: -5,
+				Elec: 0,
+				Force: 0,
+				Light: 0,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 0,
+				Recovery: 0,
+				Support: 1
+			},
+			inherit: null
+		},
+		arcana: null,
+		race: 'Yoma',
+		level: 52,
+		hp: 284,
+		mp: 224,
+		stats: {
+			st: 34,
+			vi: 38,
+			ma: 43,
+			ag: 32,
+			lu: 29
+		},
+		learnset: [
+			{
+				name: 'Agidyne',
+				level: 0
+			},
+			{
+				name: 'Fire Pleroma',
+				level: 0
+			},
+			{
+				name: 'Matarukaja',
+				level: 0
+			},
+			{
+				name: 'Concentrate',
+				level: 53
+			},
+			{
+				name: 'Safeguard',
+				level: 54
+			},
+			{
+				name: 'Maragidyne',
+				level: 56
+			}
+		],
+		resistances: {
+			ailments: {},
+			weak: [
+				'Ice'
+			],
+			resist: [],
+			null: [],
+			repel: [],
+			drain: [
+				'Fire'
+			]
+		},
+		game: 'smt5',
+		alignment: {
+			moral: 'Neutral',
+			ethical: 'Law'
+		},
+		lore: 'A type of powerful spirit in Arabic folklore that wields the power of fire.\nIt is said they will grant various boons of magic to those who summon them, but they also have violent tempers and will not hesitate to kill anyone who sparks their ire.',
+		origin: 'Arabian'
+	},
+	{
+		name: 'Eisheth',
+		affinities: {
+			skillPotential: {
+				Phys: 6,
+				Fire: 0,
+				Ice: 0,
+				Elec: 0,
+				Force: -3,
+				Light: -3,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 3,
+				Recovery: 0,
+				Support: 0
+			},
+			inherit: null
+		},
+		arcana: null,
+		race: 'Qadištu',
+		level: 66,
+		hp: 412,
+		mp: 278,
+		stats: {
+			st: 66,
+			vi: 60,
+			ma: 21,
+			ag: 55,
+			lu: 28
+		},
+		learnset: [
+			{
+				name: 'Voracious Salvation',
+				level: 0
+			},
+			{
+				name: 'Mist Rush',
+				level: 0
+			},
+			{
+				name: 'Murderous Glee',
+				level: 0
+			},
+			{
+				name: 'Titanomachia',
+				level: 0
+			},
+			{
+				name: 'Phys Pleroma',
+				level: 67
+			},
+			{
+				name: 'Critical Zealot',
+				level: 68
+			},
+			{
+				name: 'Nihil Claw',
+				level: 70
+			}
+		],
+		resistances: {
+			ailments: {},
+			weak: [
+				'Force'
+			],
+			resist: [],
+			null: [
+				'Fire',
+				'Dark'
+			],
+			repel: [],
+			drain: []
+		},
+		game: 'smt5',
+		alignment: {
+			moral: 'Neutral',
+			ethical: 'Chaos'
+		},
+		lore: 'Eisheth Zenunim. One of the four female demons in the Zohar, a spiritual text of Jewish mystical thought.\nSaid to be a princess of the Qlippoth, a concept of evil power in the same school of thought, she is the embodiment of sin; seducing many humans and leading them to their destruction. It is said that when people abuse words with mystical power, those words are taken away by the devil to create an evil world of arrogance and vanity. From this world, Eisheth appears to terrorize humanity.',
+		origin: 'Abrahamic'
+	},
+	{
 		name: 'Eligor',
 		affinities: {
 			skillPotential: {
@@ -7697,11 +8523,15 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		},
 		learnset: [
 			{
+				name: 'Dark Sword',
+				level: 0
+			},
+			{
 				name: 'Blight',
 				level: 0
 			},
 			{
-				name: 'Dark Sword',
+				name: 'Riberama',
 				level: 0
 			},
 			{
@@ -7728,15 +8558,15 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			null: [
 				'Fire'
 			],
-			drain: [],
-			repel: []
+			repel: [],
+			drain: []
 		},
 		game: 'smt5',
 		alignment: {
 			moral: 'Neutral',
 			ethical: 'Chaos'
 		},
-		lore: 'One of the 72 demons of the Goetia.\nHe takes the appearance of a knight and has the power to see things to come. He also possesses great knowledge of many wars.',
+		lore: 'One of the 72 demons of the "Ars Goetia".\nHe takes the appearance of a knight and has the power to see things to come. He also possesses great knowledge of many wars.',
 		origin: 'Abrahamic'
 	},
 	{
@@ -8118,6 +8948,84 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		origin: 'Chinese'
 	},
 	{
+		name: 'Fenrir',
+		affinities: {
+			skillPotential: {
+				Phys: 4,
+				Fire: 0,
+				Ice: 4,
+				Elec: 0,
+				Force: -4,
+				Light: 0,
+				Dark: 0,
+				Almighty: -2,
+				Ailment: 0,
+				Recovery: -1,
+				Support: 0
+			},
+			inherit: null
+		},
+		arcana: null,
+		race: 'Wilder',
+		level: 65,
+		hp: 373,
+		mp: 253,
+		stats: {
+			st: 61,
+			vi: 41,
+			ma: 36,
+			ag: 54,
+			lu: 30
+		},
+		learnset: [
+			{
+				name: 'Ice Dracostrike',
+				level: 0
+			},
+			{
+				name: 'Severing Bite',
+				level: 0
+			},
+			{
+				name: 'Retaliate',
+				level: 0
+			},
+			{
+				name: 'Mabufudyne',
+				level: 66
+			},
+			{
+				name: 'Impaler\'s Animus',
+				level: 67
+			},
+			{
+				name: 'Murderous Glee',
+				level: 68
+			}
+		],
+		resistances: {
+			ailments: {
+				Seal: 'Resist'
+			},
+			weak: [
+				'Force'
+			],
+			resist: [],
+			null: [],
+			repel: [],
+			drain: [
+				'Ice'
+			]
+		},
+		game: 'smt5',
+		alignment: {
+			moral: 'Dark',
+			ethical: 'Chaos'
+		},
+		lore: 'An evil dragon of Norse lore that was vanquished by the hero Siegfried.\nAccording to the Völsunga saga, it was extremely venomous, had legs like snakes, and shook the ground with every step.',
+		origin: 'Norse'
+	},
+	{
 		name: 'Fionn mac Cumhaill',
 		affinities: {
 			skillPotential: {
@@ -8149,11 +9057,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		},
 		learnset: [
 			{
-				name: 'Agibarion',
-				level: 0
-			},
-			{
-				name: 'Estoma',
+				name: 'Mac an Luin',
 				level: 0
 			},
 			{
@@ -8161,7 +9065,11 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 				level: 0
 			},
 			{
-				name: 'Mac an Luin',
+				name: 'Agibarion',
+				level: 0
+			},
+			{
+				name: 'Riberama',
 				level: 0
 			},
 			{
@@ -8179,8 +9087,8 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		],
 		resistances: {
 			ailments: {
-				Sleep: 'Null',
-				Seal: 'Null'
+				Seal: 'Null',
+				Sleep: 'Null'
 			},
 			weak: [
 				'Elec'
@@ -8190,15 +9098,15 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 				'Fire',
 				'Light'
 			],
-			drain: [],
-			repel: []
+			repel: [],
+			drain: []
 		},
 		game: 'smt5',
 		alignment: {
 			moral: 'Light',
 			ethical: 'Neutral'
 		},
-		lore: 'The leader of the Fianna, warriors who protected High King Cormac of Ireland. He was born as Deimne, but, due to his blond hair and white skin, he soon came to be called "Fionn," a name meaning "golden hair."\nWhen training under the druid, Finn Eces, he was ordered to cook the Salmon of Knowledge, and upon licking some of the salmon\'s fat from his thumb, he gained its knowledge. From that point on, it is said that Fionn could tap this knowledge any time he licked his thumb.',
+		lore: 'The leader of the Fianna, warriors who protected High King Cormac of Ireland. He was born as Deimne, but, due to his blond hair and white skin, he soon came to be called "Fionn," a name meaning "golden hair."\nWhen training under the druid Finn Eces, he was ordered to cook the Salmon of Knowledge. Upon licking some of the salmon\'s fat from his thumb, he gained its knowledge. From that point on, it is said that Fionn could tap this knowledge any time he licked his thumb.',
 		origin: 'Celtic'
 	},
 	{
@@ -8342,7 +9250,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			moral: 'Neutral',
 			ethical: 'Chaos'
 		},
-		lore: 'One of the 72 demons of the Goetia.\nHe appears as a leopard and can see the past and future. He can control fire, which he uses to burn his adversaries to death.',
+		lore: 'One of the 72 demons of the "Ars Goetia."\nHe appears as a leopard and can see the past and future. He can control fire, which he uses to burn his adversaries to death.',
 		origin: 'Abrahamic'
 	},
 	{
@@ -8421,7 +9329,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			moral: 'Neutral',
 			ethical: 'Chaos'
 		},
-		lore: 'One of the 72 demons of the Goetia.\nHe appears as a great sea monster and is skilled in many languages in addition to being a master of rhetoric.',
+		lore: 'One of the 72 demons of the "Ars Goetia."\nHe appears as a great sea monster and is skilled in many languages in addition to being a master of rhetoric.',
 		origin: 'Abrahamic'
 	},
 	{
@@ -9210,8 +10118,8 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		arcana: 'Moon',
 		race: 'Vile',
 		level: 66,
-		hp: 381,
-		mp: 245,
+		hp: 335,
+		mp: 225,
 		stats: {
 			st: 61,
 			vi: 40,
@@ -9221,11 +10129,11 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		},
 		learnset: [
 			{
-				name: 'Hades Blast',
+				name: 'Hell Thrust',
 				level: 0
 			},
 			{
-				name: 'Hell Thrust',
+				name: 'Hades Blast',
 				level: 0
 			},
 			{
@@ -9247,8 +10155,8 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		],
 		resistances: {
 			ailments: {
-				Sleep: 'Weak',
-				Poison: 'Resist'
+				Poison: 'Resist',
+				Sleep: 'Weak'
 			},
 			weak: [
 				'Elec',
@@ -9259,10 +10167,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 				'Dark'
 			],
 			null: [],
-			drain: [],
 			repel: [
 				'Phys'
-			]
+			],
+			drain: []
 		},
 		game: 'smt5',
 		alignment: {
@@ -9271,6 +10179,85 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		},
 		lore: 'A giant elephant monster of Sri Lankan mythology.\nIt is typically portrayed as being ridden by Mara, the Evil One. Whoever looks into its evil eye is said to be met with great misfortune.',
 		origin: 'Buddhist'
+	},
+	{
+		name: 'Glasya-Labolas',
+		affinities: {
+			skillPotential: {
+				Phys: 3,
+				Fire: 0,
+				Ice: 0,
+				Elec: -4,
+				Force: 4,
+				Light: 0,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 1,
+				Recovery: -3,
+				Support: 0
+			},
+			inherit: null
+		},
+		arcana: null,
+		race: 'Beast',
+		level: 59,
+		hp: 333,
+		mp: 255,
+		stats: {
+			st: 39,
+			vi: 41,
+			ma: 45,
+			ag: 38,
+			lu: 45
+		},
+		learnset: [
+			{
+				name: 'Mirage Assailment',
+				level: 0
+			},
+			{
+				name: 'Severing Bite',
+				level: 0
+			},
+			{
+				name: 'Zandyne',
+				level: 0
+			},
+			{
+				name: 'Force Pleroma',
+				level: 60
+			},
+			{
+				name: 'Abyssal Mask',
+				level: 61
+			},
+			{
+				name: 'Resist Phys',
+				level: 62
+			}
+		],
+		resistances: {
+			ailments: {
+				Mirage: 'Null'
+			},
+			weak: [
+				'Elec'
+			],
+			resist: [],
+			null: [
+				'Force',
+				'Dark'
+			],
+			repel: [],
+			drain: []
+		},
+		game: 'smt5',
+		alignment: {
+			moral: 'Neutral',
+			ethical: 'Neutral'
+		},
+		lore: 'One of the 72 demons of the "Ars Goetia," sometimes referred to as Caacrinolaas.\nHis form is described as a dog with griffin-like wings, and he can impart instant knowledge in all arts and sciences. It is also said that he is the author of bloodshed and murder, excels at predicting the future, and can make people invisible. Some accounts suggest the demon Nebiros uses him as a mount.',
+		origin: 'Abrahamic'
 	},
 	{
 		name: 'Goemon',
@@ -9399,6 +10386,88 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		user: 'Yusuke Kitagawa',
 		stage: 1,
 		evoSkillName: null
+	},
+	{
+		name: 'Gogmagog',
+		affinities: {
+			skillPotential: {
+				Phys: 5,
+				Fire: -1,
+				Ice: 0,
+				Elec: 0,
+				Force: -2,
+				Light: 0,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: -2,
+				Recovery: 0,
+				Support: 0
+			},
+			inherit: null
+		},
+		arcana: null,
+		race: 'Jirae',
+		level: 61,
+		hp: 412,
+		mp: 212,
+		stats: {
+			st: 46,
+			vi: 56,
+			ma: 27,
+			ag: 31,
+			lu: 42
+		},
+		learnset: [
+			{
+				name: 'Power Punch',
+				level: 0
+			},
+			{
+				name: 'Rampage',
+				level: 0
+			},
+			{
+				name: 'Critical Aura',
+				level: 0
+			},
+			{
+				name: 'Critical Zealot',
+				level: 62
+			},
+			{
+				name: 'Titanomachia',
+				level: 63
+			},
+			{
+				name: 'Phys Pleroma',
+				level: 65
+			}
+		],
+		resistances: {
+			ailments: {
+				Seal: 'Weak',
+				Confuse: 'Weak'
+			},
+			weak: [
+				'Fire',
+				'Force',
+				'Dark'
+			],
+			resist: [],
+			null: [
+				'Phys',
+				'Ice'
+			],
+			repel: [],
+			drain: []
+		},
+		game: 'smt5',
+		alignment: {
+			moral: 'Neutral',
+			ethical: 'Neutral'
+		},
+		lore: 'A giant believed to have lived on the island of Britain in prehistoric times.\nHis body was so huge that he could destroy a sailing ship with a swing of his arm. He repelled all who invaded the island, but was defeated by Brutus of Troy.',
+		origin: 'European'
 	},
 	{
 		name: 'Gorgon',
@@ -9595,72 +10664,152 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		evoSkillName: 'Hyakka Ryouran'
 	},
 	{
-		name: 'Gurr',
+		name: 'Gremlin',
 		affinities: {
-			skillPotential: null,
-			inherit: 'Phys'
+			skillPotential: {
+				Phys: 0,
+				Fire: -2,
+				Ice: 2,
+				Elec: 1,
+				Force: -2,
+				Light: 0,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 1,
+				Recovery: 0,
+				Support: 0
+			},
+			inherit: null
 		},
-		arcana: 'Hunger',
-		race: 'Raptor',
-		level: 20,
-		hp: null,
-		mp: null,
+		arcana: null,
+		race: 'Jaki',
+		level: 5,
+		hp: 47,
+		mp: 80,
 		stats: {
-			st: 16,
-			vi: 14,
-			ma: 11,
-			ag: 15,
+			st: 4,
+			vi: 5,
+			ma: 8,
+			ag: 10,
 			lu: 11
 		},
 		learnset: [
 			{
-				name: 'Muzzle Shot',
+				name: 'Dustoma',
 				level: 0
 			},
 			{
-				name: 'Attack Master',
-				level: 0
+				name: 'Zio',
+				level: 6
 			},
 			{
-				name: 'Growth 1',
-				level: 21
-			},
-			{
-				name: 'Swift Strike',
-				level: 22
-			},
-			{
-				name: 'Poison Mist',
-				level: 23
-			},
-			{
-				name: 'Poison Boost',
-				level: 25
-			},
-			{
-				name: 'Resist Phys',
-				level: 27
+				name: 'Bufu',
+				level: 7
 			}
 		],
 		resistances: {
-			ailments: null,
+			ailments: {},
+			weak: [
+				'Fire',
+				'Force'
+			],
+			resist: [
+				'Ice',
+				'Elec'
+			],
+			null: [],
+			repel: [],
+			drain: []
+		},
+		game: 'smt5',
+		alignment: {
+			moral: 'Dark',
+			ethical: 'Neutral'
+		},
+		lore: 'A mischievous sprite that enjoys wreaking havoc on machines and tools. It\'s said that during World War II, Gremlins often were found when examining plane failures.\nThough rather troublesome creatures, Gremlins have been known to be quite useful at times and are even said to have helped Benjamin Franklin with his famous kite experiment.',
+		origin: 'European'
+	},
+	{
+		name: 'Gurulu',
+		aliases: [
+			'Gurr'
+		],
+		affinities: {
+			skillPotential: {
+				Phys: 2,
+				Fire: 0,
+				Ice: 0,
+				Elec: 0,
+				Force: 3,
+				Light: -4,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 3,
+				Recovery: -2,
+				Support: 0
+			},
+			inherit: 'Phys'
+		},
+		arcana: 'Hunger',
+		race: 'Raptor',
+		level: 68,
+		hp: 333,
+		mp: 346,
+		stats: {
+			st: 44,
+			vi: 35,
+			ma: 39,
+			ag: 59,
+			lu: 53
+		},
+		learnset: [
+			{
+				name: 'Slumber Vortex',
+				level: 0
+			},
+			{
+				name: 'Mazandyne',
+				level: 0
+			},
+			{
+				name: 'Dark Sword',
+				level: 0
+			},
+			{
+				name: 'Yabusame Shot',
+				level: 69
+			},
+			{
+				name: 'Zanbarion',
+				level: 70
+			},
+			{
+				name: 'Nihil Claw',
+				level: 72
+			}
+		],
+		resistances: {
+			ailments: {
+				Poison: 'Resist',
+				Sleep: 'Resist',
+				Mirage: 'Resist'
+			},
 			weak: [
 				'Light'
 			],
-			resist: [
-				'Wind',
-				'Dark'
+			resist: [],
+			null: [
+				'Force'
 			],
-			null: [],
-			drain: [],
-			repel: []
+			repel: [],
+			drain: []
 		},
-		game: 'p4',
+		game: 'smt5',
 		alignment: {
 			moral: 'Dark',
 			ethical: 'Law'
 		},
-		lore: 'A demon that takes the shape of a giant bird in Sri Lankan myth. It is thought to be a derivation of Garuda.',
+		lore: 'A demon that takes the shape of a giant bird in Sri Lankan mythology.\nAlso known as "Gurulu Yaksha." It is believed to be a derivation of Garuda, the spirit bird of Indian mythology, which is in ideological opposition to its place in Sri Lankan mythology, in which it is interpreted as a demon.',
 		origin: 'Hindu'
 	},
 	{
@@ -9727,6 +10876,75 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		},
 		lore: 'A god who migrated from Silla to Kyushu to give oracles to the people. Later deified as a guardian of samurai across Japan. Also called Yahata, or "a figure for gods to possess."',
 		origin: 'Japanese'
+	},
+	{
+		name: 'Halphas',
+		affinities: {
+			skillPotential: {
+				Phys: 0,
+				Fire: 0,
+				Ice: 0,
+				Elec: -2,
+				Force: 2,
+				Light: 0,
+				Dark: 0,
+				Almighty: -2,
+				Ailment: 2,
+				Recovery: 0,
+				Support: 0
+			},
+			inherit: null
+		},
+		arcana: null,
+		race: 'Fallen',
+		level: 11,
+		hp: 62,
+		mp: 89,
+		stats: {
+			st: 6,
+			vi: 6,
+			ma: 13,
+			ag: 15,
+			lu: 15
+		},
+		learnset: [
+			{
+				name: 'Dormina',
+				level: 0
+			},
+			{
+				name: 'Marin Karin',
+				level: 0
+			},
+			{
+				name: 'Mazan',
+				level: 12
+			},
+			{
+				name: 'Makajama',
+				level: 14
+			}
+		],
+		resistances: {
+			ailments: {},
+			weak: [
+				'Elec'
+			],
+			resist: [
+				'Light',
+				'Dark'
+			],
+			null: [],
+			repel: [],
+			drain: []
+		},
+		game: 'smt5',
+		alignment: {
+			moral: 'Neutral',
+			ethical: 'Chaos'
+		},
+		lore: 'One of the 72 demons of the "Ars Goetia." He is called the Count of Death and Destruction, and appears as a jet-black dove with blood-red eyes. He is a craftsman and builds towers full of weapons.',
+		origin: 'Abrahamic'
 	},
 	{
 		name: 'Hanuman',
@@ -9919,6 +11137,90 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		user: 'Chie Satonaka',
 		stage: 3,
 		evoSkillName: 'Luster Candy'
+	},
+	{
+		name: 'Hare of Inaba',
+		affinities: {
+			skillPotential: {
+				Phys: -3,
+				Fire: 0,
+				Ice: 0,
+				Elec: 0,
+				Force: 0,
+				Light: 0,
+				Dark: 0,
+				Almighty: -2,
+				Ailment: 1,
+				Recovery: 1,
+				Support: 3
+			},
+			inherit: null
+		},
+		arcana: null,
+		race: 'UMA',
+		level: 31,
+		hp: 166,
+		mp: 155,
+		stats: {
+			st: 19,
+			vi: 24,
+			ma: 22,
+			ag: 34,
+			lu: 23
+		},
+		learnset: [
+			{
+				name: 'Taunt',
+				level: 0
+			},
+			{
+				name: 'Trafuri',
+				level: 0
+			},
+			{
+				name: 'Masukukaja',
+				level: 0
+			},
+			{
+				name: 'Resist Force',
+				level: 0
+			},
+			{
+				name: 'Resist Elec',
+				level: 32
+			},
+			{
+				name: 'Resist Fire',
+				level: 33
+			},
+			{
+				name: 'Resist Ice',
+				level: 34
+			}
+		],
+		resistances: {
+			ailments: {},
+			weak: [
+				'Fire',
+				'Ice',
+				'Elec',
+				'Force'
+			],
+			resist: [],
+			null: [
+				'Light',
+				'Dark'
+			],
+			repel: [],
+			drain: []
+		},
+		game: 'smt5',
+		alignment: {
+			moral: 'Neutral',
+			ethical: 'Neutral'
+		},
+		lore: 'Known in Japanese as "Inaba no Shirousagi," it is a smart rabbit written about in the Kojiki, worshipped as a hare god.\nWanting to cross the sea from Oki Island to the mainland, he had sharks line up in a row and crossed on them, under the guise of helping to count them. Once he crossed and revealed that he was just using them as a bridge, the sharks skinned him. He was healed by a passing god.',
+		origin: 'Japanese'
 	},
 	{
 		name: 'Hariti',
@@ -11132,6 +12434,94 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		},
 		lore: 'An ancient god of Egypt known for having the sun and moon as his watchful eyes.\nHe was revered by some as the principal god, most likely due to his association with the celestial bodies above. Myth often depicts him as a hawk or a falcon.',
 		origin: 'Egyptian'
+	},
+	{
+		name: 'Huang Long',
+		aliases: [
+			'Kohryu'
+		],
+		affinities: {
+			skillPotential: {
+				Phys: 0,
+				Fire: 0,
+				Ice: 0,
+				Elec: 0,
+				Force: 0,
+				Light: 0,
+				Dark: -5,
+				Almighty: 5,
+				Ailment: 0,
+				Recovery: 2,
+				Support: 2
+			},
+			inherit: 'Psy'
+		},
+		arcana: 'Hierophant',
+		race: 'Dragon',
+		level: 78,
+		hp: 410,
+		mp: 330,
+		stats: {
+			st: 56,
+			vi: 50,
+			ma: 58,
+			ag: 49,
+			lu: 56
+		},
+		learnset: [
+			{
+				name: 'Megidolaon',
+				level: 0
+			},
+			{
+				name: 'Samarecarm',
+				level: 0
+			},
+			{
+				name: 'Luster Candy',
+				level: 0
+			},
+			{
+				name: 'Fierce Roar',
+				level: 79
+			},
+			{
+				name: 'Almighty Pleroma',
+				level: 80
+			},
+			{
+				name: 'Phys Block',
+				level: 81
+			}
+		],
+		resistances: {
+			ailments: {
+				Confuse: 'Resist',
+				Sleep: 'Weak',
+				Mirage: 'Weak'
+			},
+			weak: [
+				'Dark'
+			],
+			resist: [
+				'Fire',
+				'Ice',
+				'Elec',
+				'Force'
+			],
+			null: [
+				'Light'
+			],
+			repel: [],
+			drain: []
+		},
+		game: 'smt5',
+		alignment: {
+			moral: 'Light',
+			ethical: 'Chaos'
+		},
+		lore: 'One of the holy dragons of Chinese lore, the Golden Dragon appears in times of great fortune or joy.\nHis dominion over the earth extends to the four gods Qing Long, Xuanwu, Zhuque, and Baihu.',
+		origin: 'Chinese'
 	},
 	{
 		name: 'Hua Po',
@@ -12507,7 +13897,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		},
 		learnset: [
 			{
-				name: 'Agilao',
+				name: 'Jack Agilao',
 				level: 0
 			},
 			{
@@ -12515,7 +13905,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 				level: 0
 			},
 			{
-				name: 'Tarunda',
+				name: 'Concentrate',
 				level: 21
 			},
 			{
@@ -12534,15 +13924,15 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			null: [
 				'Fire'
 			],
-			drain: [],
-			repel: []
+			repel: [],
+			drain: []
 		},
 		game: 'smt5',
 		alignment: {
 			moral: 'Neutral',
 			ethical: 'Neutral'
 		},
-		lore: 'An Irish spirit typically found in swamps, bogs, or marshes.\nSaid to be spirits of the dead, Jack-o\'-Lanterns appear as floating flames and are known around the world by various names such as "Will-o\'-the-Wisp" and "Hitodama." They are also said to come out at night to startle travelers and make them lose their way.',
+		lore: 'An Irish spirit typically found in swamps, bogs, or marshes.\nSaid to be spirits of the dead, Jack-o\'-Lanterns appear as floating flames and are known around the world by various names such as Will-o\'-the-Wisp and Hitodama. They are also said to come out at night to startle travelers and make them lose their way.',
 		origin: 'Celtic'
 	},
 	{
@@ -13391,19 +14781,19 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		},
 		arcana: 'Empress',
 		race: 'Femme',
-		level: 76,
-		hp: 481,
-		mp: 288,
+		level: 74,
+		hp: 465,
+		mp: 279,
 		stats: {
-			st: 74,
-			vi: 62,
-			ma: 35,
+			st: 73,
+			vi: 61,
+			ma: 34,
 			ag: 48,
-			lu: 35
+			lu: 33
 		},
 		learnset: [
 			{
-				name: 'Black Dracostrike',
+				name: 'Hell Thrust',
 				level: 0
 			},
 			{
@@ -13411,20 +14801,20 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 				level: 0
 			},
 			{
-				name: 'Hell Thrust',
+				name: 'Black Dracostrike',
 				level: 0
 			},
 			{
 				name: 'Maragibarion',
-				level: 77
+				level: 75
 			},
 			{
 				name: 'Murderous Glee',
-				level: 78
+				level: 76
 			},
 			{
 				name: 'Catastrophe',
-				level: 79
+				level: 77
 			}
 		],
 		resistances: {
@@ -13439,10 +14829,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			null: [
 				'Fire'
 			],
-			drain: [],
 			repel: [
 				'Dark'
-			]
+			],
+			drain: []
 		},
 		game: 'smt5',
 		alignment: {
@@ -13891,6 +15281,79 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		evoSkillName: null
 	},
 	{
+		name: 'Karasu Tengu',
+		affinities: {
+			skillPotential: {
+				Phys: 0,
+				Fire: 0,
+				Ice: 0,
+				Elec: -4,
+				Force: 3,
+				Light: 1,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 0,
+				Recovery: 0,
+				Support: 2
+			},
+			inherit: null
+		},
+		arcana: null,
+		race: 'Brute',
+		level: 35,
+		hp: 169,
+		mp: 166,
+		stats: {
+			st: 26,
+			vi: 22,
+			ma: 27,
+			ag: 30,
+			lu: 23
+		},
+		learnset: [
+			{
+				name: 'Wind Breath',
+				level: 0
+			},
+			{
+				name: 'Masukunda',
+				level: 0
+			},
+			{
+				name: 'Puncture Punch',
+				level: 36
+			},
+			{
+				name: 'Mazanma',
+				level: 37
+			},
+			{
+				name: 'Light Mana Aid',
+				level: 38
+			}
+		],
+		resistances: {
+			ailments: {},
+			weak: [
+				'Elec'
+			],
+			resist: [
+				'Force',
+				'Light'
+			],
+			null: [],
+			repel: [],
+			drain: []
+		},
+		game: 'smt5',
+		alignment: {
+			moral: 'Neutral',
+			ethical: 'Chaos'
+		},
+		lore: 'A member of the tengu race.\nThey do not have the long nose that usually represents the tengu, but, as the name "karasu" (crow) suggests, they are said to have a sharp beak similar to that of a crow. They harbor an evil nature, seeking to corrupt people by haunting them.',
+		origin: 'Japanese'
+	},
+	{
 		name: 'Kartikeya',
 		affinities: {
 			skillPotential: null,
@@ -14197,7 +15660,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 				Ice: -5,
 				Elec: 0,
 				Force: 0,
-				Light: -5,
+				Light: 5,
 				Dark: 0,
 				Almighty: 3,
 				Ailment: 0,
@@ -14220,15 +15683,15 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		},
 		learnset: [
 			{
-				name: 'Mahamabarion',
-				level: 0
-			},
-			{
-				name: 'Maragibarion',
+				name: 'Heliopolis Dawn',
 				level: 0
 			},
 			{
 				name: 'Trisagion',
+				level: 0
+			},
+			{
+				name: 'Mahamabarion',
 				level: 0
 			},
 			{
@@ -14258,10 +15721,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			null: [
 				'Fire'
 			],
+			repel: [],
 			drain: [
 				'Light'
-			],
-			repel: []
+			]
 		},
 		game: 'smt5',
 		alignment: {
@@ -14574,6 +16037,93 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		origin: 'Japanese'
 	},
 	{
+		name: 'Kinmamon',
+		affinities: {
+			skillPotential: {
+				Phys: -3,
+				Fire: 0,
+				Ice: 0,
+				Elec: 0,
+				Force: 0,
+				Light: 0,
+				Dark: 0,
+				Almighty: 4,
+				Ailment: -5,
+				Recovery: 4,
+				Support: 0
+			},
+			inherit: null
+		},
+		arcana: null,
+		race: 'Enigma',
+		level: 68,
+		hp: 360,
+		mp: 352,
+		stats: {
+			st: 27,
+			vi: 46,
+			ma: 67,
+			ag: 43,
+			lu: 53
+		},
+		learnset: [
+			{
+				name: 'Megidola',
+				level: 0
+			},
+			{
+				name: 'Mediarama',
+				level: 0
+			},
+			{
+				name: 'Diamrita',
+				level: 0
+			},
+			{
+				name: 'Bowl of Hygieia',
+				level: 0
+			},
+			{
+				name: 'Energy Drain',
+				level: 69
+			},
+			{
+				name: 'Abyssal Mask',
+				level: 70
+			},
+			{
+				name: 'Almighty Pleroma',
+				level: 72
+			}
+		],
+		resistances: {
+			ailments: {
+				Charm: 'Resist',
+				Confuse: 'Resist',
+				Sleep: 'Resist'
+			},
+			weak: [
+				'Elec',
+				'Force'
+			],
+			resist: [],
+			null: [
+				'Fire',
+				'Light',
+				'Dark'
+			],
+			repel: [],
+			drain: []
+		},
+		game: 'smt5',
+		alignment: {
+			moral: 'Light',
+			ethical: 'Neutral'
+		},
+		lore: 'Highest god of Ryukyu Shinto. He hails from the eternal kingdom Nirai Kanai, and protects the Ryukyu Islands.\nThere is a Yin and a Yang duality to this eity, with Kiraikanaino Kinmamon coming from the sky and Ohokakerakuno Kinmamon from the sea. He brings gifts of wisdom, and appears before people through women.',
+		origin: 'Japanese'
+	},
+	{
 		name: 'Kintoki-Douji',
 		affinities: {
 			skillPotential: null,
@@ -14820,90 +16370,90 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		origin: 'European'
 	},
 	{
-		name: 'Kohryu',
-		aliases: [
-			'Huang Long'
-		],
+		name: 'Konohana Sakuya',
 		affinities: {
 			skillPotential: {
-				Phys: 0,
-				Fire: 0,
+				Phys: -3,
+				Fire: 4,
 				Ice: 0,
-				Elec: 0,
-				Force: 0,
+				Elec: -3,
+				Force: 2,
 				Light: 0,
-				Dark: -5,
-				Almighty: 5,
+				Dark: 0,
+				Almighty: 0,
 				Ailment: 0,
-				Recovery: 2,
-				Support: 2
+				Recovery: 4,
+				Support: 3
 			},
-			inherit: 'Psy'
+			inherit: null
 		},
-		arcana: 'Hierophant',
-		race: 'Dragon',
-		level: 78,
-		hp: 455,
-		mp: 365,
+		arcana: null,
+		race: 'Kunitsu',
+		level: 50,
+		hp: 253,
+		mp: 303,
 		stats: {
-			st: 56,
-			vi: 57,
-			ma: 58,
-			ag: 58,
-			lu: 56
+			st: 20,
+			vi: 37,
+			ma: 48,
+			ag: 33,
+			lu: 38
 		},
 		learnset: [
 			{
-				name: 'Luster Candy',
+				name: 'Sakuya Sakura',
 				level: 0
 			},
 			{
-				name: 'Megidolaon',
+				name: 'Agidyne',
 				level: 0
 			},
 			{
-				name: 'Samarecarm',
+				name: 'Heal Pleroma',
 				level: 0
 			},
 			{
-				name: 'Fierce Roar',
-				level: 79
+				name: 'Bowl of Hygieia',
+				level: 0
 			},
 			{
-				name: 'Almighty Pleroma',
-				level: 80
+				name: 'Great Mana Spring',
+				level: 51
 			},
 			{
-				name: 'Phys Block',
-				level: 81
+				name: 'Zandyne',
+				level: 52
+			},
+			{
+				name: 'Maragidyne',
+				level: 53
 			}
 		],
 		resistances: {
 			ailments: {
+				Charm: 'Resist',
+				Seal: 'Resist',
 				Confuse: 'Resist'
 			},
 			weak: [
-				'Dark'
+				'Elec'
 			],
-			resist: [
-				'Fire',
-				'Ice',
-				'Elec',
+			resist: [],
+			null: [
 				'Force'
 			],
-			null: [
-				'Light'
+			repel: [
+				'Fire'
 			],
-			drain: [],
-			repel: []
+			drain: []
 		},
 		game: 'smt5',
 		alignment: {
 			moral: 'Light',
 			ethical: 'Chaos'
 		},
-		lore: 'One of the holy dragons of Chinese lore, the Golden Dragon appears in times of great fortune or joy.\nHis dominion over the earth extends to the four gods Qing Long, Xuanwu, Zhuquem and Baihu.',
-		origin: 'Chinese'
+		lore: 'One of the Kunitsukami in Japanese mythology. Daughter of Oyamatsumi.\nYounger sister of Iwanaga-hime. Her name means "a woman who blooms and flourishes like a cherry blossom." She is considered one of the most beautiful of Japan\'s myriad gods. She fell in love with Ninigi of the Amatsukami and became his wife. After she became pregnant in just one night, he questioned whether the child was truly his and therefore godly. As proof that the child was of the Amatsukami, she barricaded herself in a birthing-house and set it on fire, then successfully gave birth. Originally, she is said to have been a god who governed water. However, this legacy of giving birth in a fire earned her regard as the goddess of volcanoes, and she is identified with the volcano spirit Asama no Okami.',
+		origin: 'Japanese'
 	},
 	{
 		name: 'Konohana Sakuya - P4',
@@ -15346,6 +16896,160 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		evoSkillName: 'Complete Analysis'
 	},
 	{
+		name: 'Kresnik',
+		affinities: {
+			skillPotential: {
+				Phys: 4,
+				Fire: 0,
+				Ice: 0,
+				Elec: 0,
+				Force: -4,
+				Light: 3,
+				Dark: -2,
+				Almighty: 0,
+				Ailment: 0,
+				Recovery: 0,
+				Support: 0
+			},
+			inherit: null
+		},
+		arcana: null,
+		race: 'Genma',
+		level: 60,
+		hp: 359,
+		mp: 251,
+		stats: {
+			st: 56,
+			vi: 45,
+			ma: 28,
+			ag: 41,
+			lu: 29
+		},
+		learnset: [
+			{
+				name: 'White Dracostrike',
+				level: 0
+			},
+			{
+				name: 'Brave Blade',
+				level: 0
+			},
+			{
+				name: 'Phys Pleroma',
+				level: 0
+			},
+			{
+				name: 'Mist Rush',
+				level: 61
+			},
+			{
+				name: 'Retaliate',
+				level: 62
+			},
+			{
+				name: 'Mana Aid',
+				level: 63
+			}
+		],
+		resistances: {
+			ailments: {},
+			weak: [
+				'Force'
+			],
+			resist: [
+				'Phys'
+			],
+			null: [
+				'Light'
+			],
+			repel: [],
+			drain: []
+		},
+		game: 'smt5',
+		alignment: {
+			moral: 'Light',
+			ethical: 'Neutral'
+		},
+		lore: 'A virtuous vampire hunter blessed by the power of light. His name comes from the word "cross."\nArchnemesis of a Slovenian vampire, Kudlak, with whom he engages in endless conflict. Both of them fight by transforming into animals such as pigs, bulls, and horses, but Kresnik\'s bestial forms are always pure white in color. Kudlak, the enemy of God, is never considered to be a match for the emissary of light, and their battles always end with Kresnik\'s victory.',
+		origin: 'Slavic'
+	},
+	{
+		name: 'Kudlak',
+		affinities: {
+			skillPotential: {
+				Phys: 0,
+				Fire: -4,
+				Ice: 0,
+				Elec: 0,
+				Force: 0,
+				Light: -2,
+				Dark: 4,
+				Almighty: 0,
+				Ailment: 3,
+				Recovery: 0,
+				Support: 0
+			},
+			inherit: null
+		},
+		arcana: null,
+		race: 'Haunt',
+		level: 60,
+		hp: 333,
+		mp: 295,
+		stats: {
+			st: 31,
+			vi: 37,
+			ma: 49,
+			ag: 42,
+			lu: 44
+		},
+		learnset: [
+			{
+				name: 'Mudoon',
+				level: 0
+			},
+			{
+				name: 'Spirit Drain',
+				level: 0
+			},
+			{
+				name: 'Slumber Vortex',
+				level: 0
+			},
+			{
+				name: 'Mamudoon',
+				level: 61
+			},
+			{
+				name: 'Abyssal Mask',
+				level: 62
+			},
+			{
+				name: 'Enduring Soul',
+				level: 63
+			}
+		],
+		resistances: {
+			ailments: {},
+			weak: [
+				'Fire'
+			],
+			resist: [],
+			null: [],
+			repel: [],
+			drain: [
+				'Dark'
+			]
+		},
+		game: 'smt5',
+		alignment: {
+			moral: 'Dark',
+			ethical: 'Chaos'
+		},
+		lore: 'An evil vampire who fights Kresnik, a proxy of God.\nIt is said that all bad things, including diseases, poor harvests, and bad luck, are all under Kudlak\'s purview. He transforms into various animal forms to fight with Kresnik, and his other forms are always colored black.',
+		origin: 'Slavic'
+	},
+	{
 		name: 'Kumbhanda',
 		affinities: {
 			skillPotential: {
@@ -15756,17 +17460,13 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		stats: {
 			st: 30,
 			vi: 36,
-			ma: 47,
+			ma: 49,
 			ag: 27,
-			lu: 39
+			lu: 30
 		},
 		learnset: [
 			{
-				name: 'Bufudyne',
-				level: 0
-			},
-			{
-				name: 'Mudoon',
+				name: 'Silt of Ruin',
 				level: 0
 			},
 			{
@@ -15774,7 +17474,11 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 				level: 0
 			},
 			{
-				name: 'Silt of Ruin',
+				name: 'Bufudyne',
+				level: 0
+			},
+			{
+				name: 'Mudoon',
 				level: 0
 			},
 			{
@@ -15804,15 +17508,15 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			null: [
 				'Dark'
 			],
-			drain: [],
-			repel: []
+			repel: [],
+			drain: []
 		},
 		game: 'smt5',
 		alignment: {
 			moral: 'Dark',
 			ethical: 'Chaos'
 		},
-		lore: 'A god that appears in Babylonian mythology.\nBorn from Apsu and Tiamat, he and his sister, Lahamu, gave birth to Anshar and Kishar. Lahmu is at times depicted as a large serpent, but has also been illustrated as a man wearing a red sash with six curls in his hair. Regardless, he is always shown alongside Lahamu and it is thought that together they represent the slit in the sea where Apsu\'s fresh water and Tiamat\'s sea water mix.',
+		lore: 'A god that appears in Babylonian mythology.\nBorn from Apsu and Tiamat, he and his sister, Lahamu, gave birth to Anshar and Kishar. Lahmu is at times depicted as a large serpent but has also been illustrated as a man wearing a red sash with six curls in his hair. Regardless, he is always shown alongside Lahamu, and it is thought that together they represent the silt in the sea where Apsu\'s fresh water and Tiamat\'s sea water mix.',
 		origin: 'Mesopotamian'
 	},
 	{
@@ -16201,79 +17905,84 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		name: 'Lilith',
 		affinities: {
 			skillPotential: {
-				Phys: 0,
+				Phys: -2,
 				Fire: 0,
 				Ice: 0,
 				Elec: 4,
-				Force: -5,
-				Light: 0,
+				Force: 6,
+				Light: -6,
 				Dark: 0,
-				Almighty: 2,
-				Ailment: 3,
-				Recovery: 0,
-				Support: 0
+				Almighty: 1,
+				Ailment: 0,
+				Recovery: -3,
+				Support: 3
 			},
 			inherit: 'Ice'
 		},
 		arcana: 'Moon',
-		race: 'Night',
-		level: 68,
-		hp: 326,
-		mp: 363,
+		race: 'Qadištu',
+		level: 72,
+		hp: 442,
+		mp: 355,
 		stats: {
-			st: 22,
-			vi: 36,
-			ma: 63,
-			ag: 48,
-			lu: 57
+			st: 37,
+			vi: 60,
+			ma: 72,
+			ag: 35,
+			lu: 42
 		},
 		learnset: [
 			{
-				name: 'Megidola',
+				name: 'Mother Earth',
 				level: 0
 			},
 			{
-				name: 'Slumber Vortex',
+				name: 'Zanbarion',
 				level: 0
 			},
 			{
-				name: 'Ziobarion',
+				name: 'Maziodyne',
 				level: 0
-			},
-			{
-				name: 'Null Elec',
-				level: 69
-			},
-			{
-				name: 'Almighty Pleroma',
-				level: 70
 			},
 			{
 				name: 'Energy Drain',
-				level: 71
+				level: 0
+			},
+			{
+				name: 'Luster Candy',
+				level: 73
+			},
+			{
+				name: 'High Force Pleroma',
+				level: 75
+			},
+			{
+				name: 'Mazanbarion',
+				level: 76
 			}
 		],
 		resistances: {
 			ailments: {},
 			weak: [
-				'Force'
+				'Light'
 			],
 			resist: [
-				'Fire',
-				'Ice',
+				'Phys',
 				'Elec',
 				'Dark'
 			],
 			null: [],
-			drain: [],
-			repel: []
+			repel: [],
+			drain: [
+				'Force'
+			]
 		},
 		game: 'smt5',
 		alignment: {
 			moral: 'Neutral',
 			ethical: 'Chaos'
 		},
-		lore: 'She is said to have been Adam\'s first wife. Refusing to obey Adam, she left Eden and became a demon of the night.\nThough there are several theories regarding her disobedience, she is often regarded as a symbol of infidelity.',
+		lore: 'Said to have been Adam\'s first wife. Refusing to obey him, she left Eden and became a demon of the night.\nThough there are several theories regarding her disobedience, she is often regarded as a symbol of infidelity. Some theories suggest she was originally the mother goddess of Babylonia. In the Zohar, a Jewish spiritual text, she is listed as the first of four demons; seducer of men, killer of infants, and first consort of Samael.',
 		origin: 'Abrahamic'
 	},
 	{
@@ -16641,77 +18350,75 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 	{
 		name: 'Lucifer',
 		affinities: {
-			skillPotential: null,
+			skillPotential: {
+				Phys: 0,
+				Fire: 4,
+				Ice: 4,
+				Elec: 2,
+				Force: 2,
+				Light: -8,
+				Dark: 3,
+				Almighty: 7,
+				Ailment: 0,
+				Recovery: 1,
+				Support: 0
+			},
 			inherit: 'Almighty'
 		},
 		arcana: 'Star',
 		race: 'Devil',
-		level: 90,
-		hp: null,
-		mp: null,
+		level: 99,
+		hp: 650,
+		mp: 650,
 		stats: {
-			st: 59,
-			vi: 57,
-			ma: 57,
-			ag: 54,
-			lu: 50
+			st: 73,
+			vi: 92,
+			ma: 108,
+			ag: 65,
+			lu: 73
 		},
 		learnset: [
 			{
-				name: 'Gigantomachia',
+				name: 'Root of Evil',
 				level: 0
 			},
 			{
-				name: 'Maragibarion',
+				name: 'Trisagion',
 				level: 0
 			},
 			{
-				name: 'Rebel Soul',
+				name: 'Ice Age',
 				level: 0
 			},
 			{
-				name: 'Concentrate',
-				level: 95
-			},
-			{
-				name: 'Morning Star - Persona',
-				level: 96
-			},
-			{
-				name: 'Heat Riser',
-				level: 98
-			},
-			{
-				name: 'Shadow of Grief',
-				level: 99
+				name: 'Diarahan',
+				level: 0
 			}
 		],
 		resistances: {
-			ailments: null,
+			ailments: {
+				Charm: 'Null',
+				Confuse: 'Null',
+				Sleep: 'Null'
+			},
 			weak: [
 				'Light'
 			],
-			resist: [
-				'Phys',
-				'Fire',
+			resist: [],
+			null: [],
+			repel: [
 				'Ice',
 				'Elec',
-				'Wind'
-			],
-			null: [
-				'Gun'
-			],
-			drain: [
 				'Dark'
 			],
-			repel: []
+			drain: []
 		},
-		game: 'p5',
+		game: 'smt5',
 		alignment: {
 			moral: 'Dark',
 			ethical: 'Chaos'
 		},
-		lore: 'A fallen Judeo-Christian angel, he lead a rebellion with an army of angels against God and lost. He waits in Hell for his chance to challenge God once more and strike him down.',
+		lore: 'The Lord of Chaos who leads the fallen angels and, according to Christian tradition, is equated with Satan.\nHis name holds the meaning of "one who brings light" indicating that he was once the most beautiful of the archangels. However, it is said that he rebelled against the almighty Creator and chose to become a fallen angel.',
 		origin: 'Abrahamic'
 	},
 	{
@@ -16931,27 +18638,19 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		},
 		arcana: 'Tower',
 		race: 'Vile',
-		level: 83,
-		hp: 524,
-		mp: 389,
+		level: 76,
+		hp: 469,
+		mp: 353,
 		stats: {
-			st: 69,
-			vi: 65,
-			ma: 74,
-			ag: 45,
-			lu: 41
+			st: 64,
+			vi: 61,
+			ma: 69,
+			ag: 41,
+			lu: 38
 		},
 		learnset: [
 			{
-				name: 'Debilitate',
-				level: 0
-			},
-			{
 				name: 'Hades Blast',
-				level: 0
-			},
-			{
-				name: 'Mediarahan',
 				level: 0
 			},
 			{
@@ -16959,16 +18658,24 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 				level: 0
 			},
 			{
+				name: 'Mediarahan',
+				level: 0
+			},
+			{
+				name: 'Debilitate',
+				level: 0
+			},
+			{
 				name: 'Dekunda',
-				level: 84
+				level: 77
 			},
 			{
 				name: 'Ragnarok',
-				level: 85
+				level: 79
 			},
 			{
 				name: 'Akashic Arts',
-				level: 86
+				level: 80
 			}
 		],
 		resistances: {
@@ -16980,18 +18687,101 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			null: [
 				'Dark'
 			],
+			repel: [],
 			drain: [
 				'Fire'
-			],
-			repel: []
+			]
 		},
 		game: 'smt5',
 		alignment: {
 			moral: 'Dark',
 			ethical: 'Law'
 		},
-		lore: 'A giant Asura in Hinduism whose name means "the intoxicator."\nIt is said that the sage Chyavana created it from fire. Mada has the power to swollow its enemies, and even the deity Indra has been said to surrender to its power.',
+		lore: 'A giant Asura in Hinduism whose name means "the intoxicator."\nIt is said that the sage Chyavana created it from fire. Mada has the power to swallow its enemies, and even the deity Indra has been said to surrender to its power.',
 		origin: 'Hindu'
+	},
+	{
+		name: 'Mad Gasser',
+		affinities: {
+			skillPotential: {
+				Phys: 0,
+				Fire: 0,
+				Ice: 0,
+				Elec: 0,
+				Force: 0,
+				Light: -2,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 5,
+				Recovery: -4,
+				Support: 1
+			},
+			inherit: null
+		},
+		arcana: null,
+		race: 'Foul',
+		level: 48,
+		hp: 260,
+		mp: 209,
+		stats: {
+			st: 38,
+			vi: 33,
+			ma: 25,
+			ag: 28,
+			lu: 41
+		},
+		learnset: [
+			{
+				name: 'Toxic Cloud',
+				level: 0
+			},
+			{
+				name: 'Blight',
+				level: 0
+			},
+			{
+				name: 'Poison Adept',
+				level: 0
+			},
+			{
+				name: 'Riberama',
+				level: 49
+			},
+			{
+				name: 'Great Curse Siphon',
+				level: 50
+			},
+			{
+				name: 'Phys Block',
+				level: 51
+			}
+		],
+		resistances: {
+			ailments: {
+				Charm: 'Weak',
+				Seal: 'Weak',
+				Confuse: 'Weak',
+				Poison: 'Null',
+				Sleep: 'Null',
+				Mirage: 'Null'
+			},
+			weak: [
+				'Light'
+			],
+			resist: [],
+			null: [
+				'Dark'
+			],
+			repel: [],
+			drain: []
+		},
+		game: 'smt5',
+		alignment: {
+			moral: 'Dark',
+			ethical: 'Chaos'
+		},
+		lore: 'A mysterious figure that spreads and unknown poisonous gas around.\nHe wears all black and is said to be a tall man. The gas he uses has a sweet smell, but inhaling it will cause intense headaches and vomiting. He returns when people begin to forget his existence, though he is rarely sighted.',
+		origin: 'North American'
 	},
 	{
 		name: 'Magatsu-Izanagi',
@@ -17456,19 +19246,19 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		},
 		learnset: [
 			{
-				name: 'Charge',
-				level: 0
-			},
-			{
 				name: 'Hell Thrust',
 				level: 0
 			},
 			{
-				name: 'Slumber Vortex',
+				name: 'Toxic Spray',
 				level: 0
 			},
 			{
-				name: 'Toxic Spray',
+				name: 'Dance of Mara',
+				level: 0
+			},
+			{
+				name: 'Charge',
 				level: 0
 			},
 			{
@@ -17496,10 +19286,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 				'Dark'
 			],
 			null: [],
+			repel: [],
 			drain: [
 				'Elec'
-			],
-			repel: []
+			]
 		},
 		game: 'smt5',
 		alignment: {
@@ -17596,70 +19386,261 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		origin: 'Abrahamic'
 	},
 	{
-		name: 'Masakado',
+		name: 'Marici',
 		affinities: {
-			skillPotential: null,
-			inherit: 'Light'
+			skillPotential: {
+				Phys: 5,
+				Fire: 0,
+				Ice: 2,
+				Elec: 0,
+				Force: 0,
+				Light: 2,
+				Dark: -3,
+				Almighty: 1,
+				Ailment: 0,
+				Recovery: -5,
+				Support: 2
+			},
+			inherit: null
 		},
-		arcana: 'Tower',
-		race: 'Fury',
-		level: 69,
-		hp: null,
-		mp: null,
+		arcana: null,
+		race: 'Kishin',
+		level: 78,
+		hp: 508,
+		mp: 312,
 		stats: {
-			st: 51,
-			vi: 45,
-			ma: 32,
-			ag: 46,
-			lu: 40
+			st: 69,
+			vi: 47,
+			ma: 44,
+			ag: 52,
+			lu: 60
 		},
 		learnset: [
 			{
-				name: 'Mahamaon',
+				name: 'Formless Arrows',
 				level: 0
 			},
 			{
-				name: 'Tempest Slash',
+				name: 'Mist Rush',
 				level: 0
 			},
 			{
-				name: 'Myriad Arrows',
-				level: 71
+				name: 'Hamabarion',
+				level: 0
 			},
 			{
-				name: 'Hama Boost',
-				level: 73
+				name: 'Luster Candy',
+				level: 0
 			},
 			{
-				name: 'Arms Master',
-				level: 74
+				name: 'Glacial Blast',
+				level: 79
 			},
 			{
-				name: 'Enduring Soul',
-				level: 76
+				name: 'Freikugel',
+				level: 81
+			},
+			{
+				name: 'High Phys Pleroma',
+				level: 82
 			}
 		],
 		resistances: {
-			ailments: null,
+			ailments: {
+				Confuse: 'Weak',
+				Poison: 'Weak',
+				Mirage: 'Null'
+			},
 			weak: [
-				'Elec',
 				'Dark'
+			],
+			resist: [
+				'Phys',
+				'Ice',
+				'Elec'
+			],
+			null: [
+				'Fire'
+			],
+			repel: [
+				'Light'
+			],
+			drain: []
+		},
+		game: 'smt5',
+		alignment: {
+			moral: 'Light',
+			ethical: 'Chaos'
+		},
+		lore: 'A sun goddess of Buddhism, her name means "light" or "heat haze." In Japan, where she is known as Marishiten, she was worshipped by warriors, said to protect them from harm and enemy detection. Often portrayed as having three heads and six-to-eight arms, holding weapons such as swords, bows, and vajra.',
+		origin: 'Buddhist'
+	},
+	{
+		name: 'Masakado',
+		affinities: {
+			skillPotential: {
+				Phys: 6,
+				Fire: 0,
+				Ice: 0,
+				Elec: 0,
+				Force: 0,
+				Light: -4,
+				Dark: -4,
+				Almighty: 6,
+				Ailment: 0,
+				Recovery: 0,
+				Support: 0
+			},
+			inherit: 'Light'
+		},
+		arcana: 'Tower',
+		race: 'Wargod',
+		level: 94,
+		hp: 676,
+		mp: 409,
+		stats: {
+			st: 104,
+			vi: 89,
+			ma: 46,
+			ag: 59,
+			lu: 83
+		},
+		learnset: [
+			{
+				name: 'Recalcitrant Execution',
+				level: 0
+			},
+			{
+				name: 'Brave Blade',
+				level: 0
+			},
+			{
+				name: 'Figment Slash',
+				level: 0
+			},
+			{
+				name: 'Critical Zealot',
+				level: 0
+			},
+			{
+				name: 'Freikugel',
+				level: 95
+			},
+			{
+				name: 'Murderous Glee',
+				level: 96
+			},
+			{
+				name: 'High Almighty Pleroma',
+				level: 97
+			}
+		],
+		resistances: {
+			ailments: {
+				Sleep: 'Weak',
+				Mirage: 'Weak'
+			},
+			weak: [],
+			resist: [
+				'Phys'
+			],
+			null: [
+				'Light',
+				'Dark'
+			],
+			repel: [],
+			drain: []
+		},
+		game: 'smt5',
+		alignment: {
+			moral: 'Light',
+			ethical: 'Neutral'
+		},
+		lore: 'A general who rebelled against the Imperial Court in the mid-Heian period: Taira no Masakado.\nHe succeeded in ruling Kanto and declared himself emperor, but was later defeated by Fujiwara no Hidesato and Taira no Sadamori. After death, he was enshrined as a vengeful spirit, but was later viewed as a hero and became revered as a guardian deity of the Kanto region, where he has remained to this day.',
+		origin: 'Japanese'
+	},
+	{
+		name: 'Mastema',
+		affinities: {
+			skillPotential: {
+				Phys: 2,
+				Fire: -5,
+				Ice: 0,
+				Elec: -3,
+				Force: 3,
+				Light: 3,
+				Dark: 0,
+				Almighty: 3,
+				Ailment: 0,
+				Recovery: 0,
+				Support: 0
+			},
+			inherit: null
+		},
+		arcana: null,
+		race: 'Herald',
+		level: 83,
+		hp: 550,
+		mp: 400,
+		stats: {
+			st: 69,
+			vi: 59,
+			ma: 69,
+			ag: 47,
+			lu: 53
+		},
+		learnset: [
+			{
+				name: 'Great Lament',
+				level: 0
+			},
+			{
+				name: 'Floral Gust',
+				level: 0
+			},
+			{
+				name: 'Hamabarion',
+				level: 0
+			},
+			{
+				name: 'Dark Sword',
+				level: 0
+			},
+			{
+				name: 'Great Mana Spring',
+				level: 84
+			},
+			{
+				name: 'Mahamabarion',
+				level: 85
+			},
+			{
+				name: 'High Light Pleroma',
+				level: 86
+			}
+		],
+		resistances: {
+			ailments: {},
+			weak: [
+				'Fire'
 			],
 			resist: [],
 			null: [
-				'Phys',
-				'Fire'
+				'Light'
 			],
-			drain: [],
-			repel: []
+			repel: [
+				'Ice',
+				'Force'
+			],
+			drain: []
 		},
-		game: 'p4',
+		game: 'smt5',
 		alignment: {
-			moral: 'Dark',
-			ethical: 'Neutral'
+			moral: 'Light',
+			ethical: 'Law'
 		},
-		lore: 'Taira no Masakado, hero of the Heian period. He claimed the title "Shinno" (New Emperor) and rebelled against the government. He was killed, but it is said he became a demigod.',
-		origin: 'Japanese'
+		lore: 'An angel who persecutes evil in Hebrew lore. His role is to deliver punishment on behalf of God.\nHe is said to be permitted by God to tempt humans and test their faith, and even has demons as his servants, at the behest of God. The Zadokite Fragments and the Dead Sea Scrolls describe him as the angel of woe, the father of all evil, and a flatterer of God.',
+		origin: 'Abrahamic'
 	},
 	{
 		name: 'Matador',
@@ -18656,23 +20637,19 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		},
 		arcana: 'Sun',
 		race: 'Tyrant',
-		level: 77,
-		hp: 462,
-		mp: 325,
+		level: 82,
+		hp: 501,
+		mp: 351,
 		stats: {
-			st: 58,
-			vi: 49,
-			ma: 60,
-			ag: 42,
-			lu: 50
+			st: 61,
+			vi: 52,
+			ma: 63,
+			ag: 45,
+			lu: 53
 		},
 		learnset: [
 			{
-				name: 'Dekaja',
-				level: 0
-			},
-			{
-				name: 'Hamabarion',
+				name: 'Rampage',
 				level: 0
 			},
 			{
@@ -18680,20 +20657,24 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 				level: 0
 			},
 			{
-				name: 'Rampage',
+				name: 'Hamabarion',
+				level: 0
+			},
+			{
+				name: 'Dekaja',
 				level: 0
 			},
 			{
 				name: 'Dekunda',
-				level: 78
+				level: 83
 			},
 			{
 				name: 'Ragnarok',
-				level: 79
+				level: 84
 			},
 			{
 				name: 'High Fire Pleroma',
-				level: 80
+				level: 85
 			}
 		],
 		resistances: {
@@ -18705,10 +20686,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			null: [
 				'Light'
 			],
+			repel: [],
 			drain: [
 				'Fire'
-			],
-			repel: []
+			]
 		},
 		game: 'smt5',
 		alignment: {
@@ -19029,7 +21010,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		affinities: {
 			skillPotential: {
 				Phys: 0,
-				Fire: 4,
+				Fire: 1,
 				Ice: 0,
 				Elec: 4,
 				Force: -6,
@@ -19045,8 +21026,8 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		arcana: 'Empress',
 		race: 'Fiend',
 		level: 64,
-		hp: 352,
-		mp: 362,
+		hp: 319,
+		mp: 295,
 		stats: {
 			st: 42,
 			vi: 45,
@@ -19060,11 +21041,11 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 				level: 0
 			},
 			{
-				name: 'Concentrate',
+				name: 'Death Lust',
 				level: 0
 			},
 			{
-				name: 'Death Lust',
+				name: 'Concentrate',
 				level: 0
 			},
 			{
@@ -19086,22 +21067,23 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		],
 		resistances: {
 			ailments: {
-				Charm: 'Null'
+				Charm: 'Null',
+				Sleep: 'Weak'
 			},
 			weak: [
+				'Ice',
 				'Force'
 			],
 			resist: [
-				'Fire',
 				'Light',
 				'Dark'
 			],
 			null: [],
-			drain: [
-				'Elec'
-			],
 			repel: [
 				'Phys'
+			],
+			drain: [
+				'Elec'
 			]
 		},
 		game: 'smt5',
@@ -19120,9 +21102,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 				Fire: 0,
 				Ice: 0,
 				Elec: 1,
-				Force: -3,
-				Light: 0,
-				Dark: 0,
+				Force: 2,
+				Light: -2,
+				Dark: -2,
 				Almighty: 0,
 				Ailment: 4,
 				Recovery: 0,
@@ -19144,11 +21126,15 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		},
 		learnset: [
 			{
-				name: 'Pulinpa',
+				name: 'Gale Charge',
 				level: 0
 			},
 			{
 				name: 'Zionga',
+				level: 0
+			},
+			{
+				name: 'Pulinpa',
 				level: 0
 			},
 			{
@@ -19166,8 +21152,8 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		],
 		resistances: {
 			ailments: {
-				Mirage: 'Resist',
-				Poison: 'Resist'
+				Poison: 'Resist',
+				Mirage: 'Resist'
 			},
 			weak: [
 				'Force'
@@ -19176,15 +21162,15 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			null: [
 				'Elec'
 			],
-			drain: [],
-			repel: []
+			repel: [],
+			drain: []
 		},
 		game: 'smt5',
 		alignment: {
 			moral: 'Dark',
 			ethical: 'Neutral'
 		},
-		lore: 'A cryptid sighted in West Virginia from the 1960s to 1980s.\nIt has red, shining eyes and was known for the finlike appendages on both sides of its boy. It has been said to walk on two foot and fly without moving these appendages. It has a keen sense for blood which allows it to easily track its prey. Eyewitnesses say that a UFO was sighted when Mothman appeared, so many believe that it is actually an alien.',
+		lore: 'A cryptid sighted in West Virginia from the 1960s to the 1980s.\nIt has red, shining eyes and was known for the finlike appendages on both sides of its body. It has been said to walk on two foot and fly without moving these appendages. It has a keen sense for blood which allows it to easily track its prey. Eyewitnesses say that a UFO was sighted when Mothman appeared, so many believe that it is actually an alien.',
 		origin: 'North American'
 	},
 	{
@@ -19222,15 +21208,15 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		},
 		learnset: [
 			{
+				name: 'Maiden\'s Morsel',
+				level: 0
+			},
+			{
 				name: 'Mazanma',
 				level: 0
 			},
 			{
 				name: 'Tetrakarn',
-				level: 0
-			},
-			{
-				name: 'Zanma',
 				level: 0
 			},
 			{
@@ -19255,8 +21241,8 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			null: [
 				'Force'
 			],
-			drain: [],
-			repel: []
+			repel: [],
+			drain: []
 		},
 		game: 'smt5',
 		alignment: {
@@ -19265,6 +21251,94 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		},
 		lore: 'Meaning "evil bird," it is the ghost of a young girl who died without knowing love in Buryat folklore.\nShe seduces travelers, only to crack their heads open and suck out their brains with her beak.',
 		origin: 'Buryat'
+	},
+	{
+		name: 'Naamah',
+		affinities: {
+			skillPotential: {
+				Phys: -6,
+				Fire: 0,
+				Ice: 0,
+				Elec: 0,
+				Force: 0,
+				Light: -3,
+				Dark: 3,
+				Almighty: 0,
+				Ailment: 7,
+				Recovery: 0,
+				Support: 2
+			},
+			inherit: null
+		},
+		arcana: null,
+		race: 'Qadištu',
+		level: 63,
+		hp: 313,
+		mp: 363,
+		stats: {
+			st: 21,
+			vi: 42,
+			ma: 57,
+			ag: 45,
+			lu: 55
+		},
+		learnset: [
+			{
+				name: 'Capitulate to Pleasure',
+				level: 0
+			},
+			{
+				name: 'Slumber Vortex',
+				level: 0
+			},
+			{
+				name: 'Mamudoon',
+				level: 0
+			},
+			{
+				name: 'Abyssal Mask',
+				level: 0
+			},
+			{
+				name: 'Great Curse Siphon',
+				level: 64
+			},
+			{
+				name: 'Debilitate',
+				level: 66
+			},
+			{
+				name: 'Mudobarion',
+				level: 67
+			}
+		],
+		resistances: {
+			ailments: {
+				Charm: 'Null',
+				Confuse: 'Null'
+			},
+			weak: [
+				'Phys'
+			],
+			resist: [
+				'Fire',
+				'Ice',
+				'Elec',
+				'Force'
+			],
+			null: [
+				'Dark'
+			],
+			repel: [],
+			drain: []
+		},
+		game: 'smt5',
+		alignment: {
+			moral: 'Neutral',
+			ethical: 'Chaos'
+		},
+		lore: 'One of the four demons in the Zohar, a spiritual text of Jewish mystical thought. Her name means "pleasure" in Hebrew.\nShe is the most carnal of the four demons, and specializes in seduction. She is said to have intercourse with human men in their dreams and to give birth to numerous evil spirits, almost solely driven by her own desires. Her beauty bewitches even angels, and she birthed the demon king Asmodeus with an angel named Shomron. It is believed she was originally a human female, sister of Tubal-cain (a descendent of the Old Testament\'s Cain), and only later was she interpreted as a demon.',
+		origin: 'Abrahamic'
 	},
 	{
 		name: 'Naga',
@@ -19340,6 +21414,91 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		},
 		lore: 'Half-snake, half-human, they are divine beings in Hindu lore.\nWorshipped as bringers of fertility, they live in the bottoms of lakes and seas, and enjoy singing and dancing outside of battle.',
 		origin: 'Hindu'
+	},
+	{
+		name: 'Nahobeeho',
+		affinities: {
+			skillPotential: {
+				Phys: 4,
+				Fire: 0,
+				Ice: 5,
+				Elec: 3,
+				Force: -5,
+				Light: 0,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: -4,
+				Recovery: 0,
+				Support: 1
+			},
+			inherit: null
+		},
+		arcana: null,
+		race: 'Fairy',
+		level: 65,
+		hp: 398,
+		mp: 287,
+		stats: {
+			st: 63,
+			vi: 50,
+			ma: 33,
+			ag: 41,
+			lu: 38
+		},
+		learnset: [
+			{
+				name: 'Jack Tempest',
+				level: 0
+			},
+			{
+				name: 'Storm Dracostrike',
+				level: 0
+			},
+			{
+				name: 'Mortal Jihad',
+				level: 0
+			},
+			{
+				name: 'Critical Aura',
+				level: 0
+			},
+			{
+				name: 'High Restore',
+				level: 66
+			},
+			{
+				name: 'Enduring Soul',
+				level: 67
+			},
+			{
+				name: 'Freikugel',
+				level: 69
+			}
+		],
+		resistances: {
+			ailments: {},
+			weak: [
+				'Force'
+			],
+			resist: [
+				'Phys',
+				'Light'
+			],
+			null: [
+				'Elec'
+			],
+			repel: [],
+			drain: [
+				'Ice'
+			]
+		},
+		game: 'smt5',
+		alignment: {
+			moral: 'Neutral',
+			ethical: 'Neutral'
+		},
+		lore: 'A Jack Frost who looks like a certain Nahobino. Not content with being a mere demon, he pushes himself to his limits.\nHis blue hair and costume are homemade, and he\'s said to be proud of his divine craftsmanship. He likes snowy mornings, and by his own words, aims to create a world of silver.',
+		origin: 'ATLUS Original'
 	},
 	{
 		name: 'Narasimha',
@@ -19439,15 +21598,15 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		},
 		learnset: [
 			{
-				name: 'Hellish Mask',
-				level: 0
-			},
-			{
 				name: 'Sexy Dance',
 				level: 0
 			},
 			{
 				name: 'Tentarafoo',
+				level: 0
+			},
+			{
+				name: 'Hellish Mask',
 				level: 0
 			},
 			{
@@ -19459,14 +21618,14 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 				level: 40
 			},
 			{
-				name: 'Estoma',
+				name: 'Hysterical Slap',
 				level: 41
 			}
 		],
 		resistances: {
 			ailments: {
-				Confuse: 'Resist',
-				Charm: 'Null'
+				Charm: 'Null',
+				Confuse: 'Resist'
 			},
 			weak: [
 				'Fire'
@@ -19475,8 +21634,8 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			null: [
 				'Force'
 			],
-			drain: [],
-			repel: []
+			repel: [],
+			drain: []
 		},
 		game: 'smt5',
 		alignment: {
@@ -19842,69 +22001,78 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			'Nezha'
 		],
 		affinities: {
-			skillPotential: null,
+			skillPotential: {
+				Phys: 2,
+				Fire: 2,
+				Ice: 0,
+				Elec: -2,
+				Force: 2,
+				Light: 0,
+				Dark: 0,
+				Almighty: -2,
+				Ailment: 0,
+				Recovery: -2,
+				Support: 0
+			},
 			inherit: 'Phys'
 		},
 		arcana: 'Chariot',
-		race: 'Genma',
-		level: 6,
-		hp: null,
-		mp: null,
+		race: 'Wargod',
+		level: 28,
+		hp: 155,
+		mp: 137,
 		stats: {
-			st: 6,
-			vi: 6,
-			ma: 2,
-			ag: 10,
-			lu: 6
+			st: 28,
+			vi: 22,
+			ma: 24,
+			ag: 16,
+			lu: 14
 		},
 		learnset: [
 			{
-				name: 'Lunge',
+				name: 'Agilao',
 				level: 0
 			},
 			{
-				name: 'Rakunda',
+				name: 'Zanma',
 				level: 0
 			},
 			{
-				name: 'Dekunda',
+				name: 'Berserker God',
 				level: 0
 			},
 			{
-				name: 'Sonic Punch',
-				level: 7
+				name: 'Counter',
+				level: 29
 			},
 			{
-				name: 'Dodge Ice',
-				level: 8
+				name: 'Riberama',
+				level: 30
 			},
 			{
-				name: 'Resist Mirage',
-				level: 9
-			},
-			{
-				name: 'Soul Break',
-				level: 10
+				name: 'Endure',
+				level: 32
 			}
 		],
 		resistances: {
-			ailments: null,
+			ailments: {},
 			weak: [
 				'Elec'
 			],
 			resist: [
-				'Fire'
+				'Fire',
+				'Force'
 			],
 			null: [],
-			drain: [],
-			repel: []
+			repel: [],
+			drain: []
 		},
-		game: 'p4',
+		game: 'smt5',
 		alignment: {
-			moral: 'Neutral',
+			moral: 'Light',
 			ethical: 'Neutral'
 		},
-		lore: 'A demon of Chinese mythology, also known as Zhongtan Yuanshuai. He committed suicide to atone for killing a Dragon King, but was brought back to life as a lotus.',
+		lore: 'A protection deity of Chinese lore. Sometimes said to take the form of an ageless young man, he was granted his trusty weapon Qiankun Quan (Universe Ring) and his trademark Hun Tian Ling (Red Armillary Sash) upon birth. He later committed suicide as atonement for killing the Dragon King, but was brought back to life with lotus roots. In "Journey to the West," he fought an intense battle with Sun Wukong.',
 		origin: 'Chinese'
 	},
 	{
@@ -20123,69 +22291,73 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 	{
 		name: 'Nozuchi',
 		affinities: {
-			skillPotential: null,
+			skillPotential: {
+				Phys: 2,
+				Fire: -1,
+				Ice: -1,
+				Elec: -1,
+				Force: 0,
+				Light: 0,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 0,
+				Recovery: 0,
+				Support: 2
+			},
 			inherit: 'Ailment'
 		},
 		arcana: 'Moon',
 		race: 'Snake',
-		level: 27,
-		hp: null,
-		mp: null,
+		level: 15,
+		hp: 108,
+		mp: 69,
 		stats: {
-			st: 26,
+			st: 17,
 			vi: 19,
-			ma: 13,
-			ag: 15,
-			lu: 15
+			ma: 9,
+			ag: 9,
+			lu: 11
 		},
 		learnset: [
 			{
-				name: 'Poison Mist',
+				name: 'Lunge',
 				level: 0
 			},
 			{
-				name: 'Enervation',
+				name: 'Counter',
 				level: 0
 			},
 			{
-				name: 'Ailment Boost',
-				level: 0
+				name: 'Taunt',
+				level: 16
 			},
 			{
-				name: 'Zionga',
-				level: 29
-			},
-			{
-				name: 'Rakukaja',
-				level: 30
-			},
-			{
-				name: 'Null Poison',
-				level: 31
-			},
-			{
-				name: 'Null Enervate',
-				level: 32
+				name: 'Life Spring',
+				level: 17
 			}
 		],
 		resistances: {
-			ailments: null,
+			ailments: {
+				Poison: 'Resist'
+			},
 			weak: [
-				'Ice'
-			],
-			resist: [],
-			null: [],
-			drain: [],
-			repel: [
+				'Fire',
+				'Ice',
 				'Elec'
-			]
+			],
+			resist: [
+				'Phys'
+			],
+			null: [],
+			repel: [],
+			drain: []
 		},
-		game: 'p4',
+		game: 'smt5',
 		alignment: {
 			moral: 'Neutral',
-			ethical: 'Neutral'
+			ethical: 'Chaos'
 		},
-		lore: 'A spirit of earth from Japanese myth, whose name means "god of fields." Though not innately evil, its temper may cause it to attack humans from behind a tree or bushes.',
+		lore: 'Said to be the spirit of a serpent that has lived in the mountains since ancient times in the Nihon Shoki and is also said to govern the earth\'s veins.\nThe name Nozuchi comes from the ancient Japanese word for "god of the fields." It is said to live deep in the mountains behind trees and in thickets. It has a large mouth at the end of its head, but no eyes or nose. It is not evil, but rather violent all the same. When it sees a human, it may try to harm or even eat them.',
 		origin: 'Japanese'
 	},
 	{
@@ -20434,6 +22606,77 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		},
 		lore: 'A goddess that appears in Chinese mythology.\nRecognized as one of the sovereigns, she is said to have the head of a human and a body of a serpent. She is also known to be responsible for the creation of humanity, having created them from mud. Legend tells that when one of the four pillars said to hold up the world broke, she repaired it. Furthermore, her colleague Fuxi is typically labeled as either her brother or her husband, depending on what version of her story is told.',
 		origin: 'Chinese'
+	},
+	{
+		name: 'Nyami Nyami',
+		affinities: {
+			skillPotential: {
+				Phys: 0,
+				Fire: -1,
+				Ice: 3,
+				Elec: -1,
+				Force: 0,
+				Light: 0,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 0,
+				Recovery: 0,
+				Support: 0
+			},
+			inherit: null
+		},
+		arcana: null,
+		race: 'Dragon',
+		level: 13,
+		hp: 62,
+		mp: 109,
+		stats: {
+			st: 10,
+			vi: 9,
+			ma: 17,
+			ag: 11,
+			lu: 13
+		},
+		learnset: [
+			{
+				name: 'Glacial Dragon Spiral',
+				level: 0
+			},
+			{
+				name: 'Bestial Bite',
+				level: 0
+			},
+			{
+				name: 'Life Drain',
+				level: 14
+			},
+			{
+				name: 'Mabufu',
+				level: 15
+			}
+		],
+		resistances: {
+			ailments: {
+				Mirage: 'Resist'
+			},
+			weak: [
+				'Fire',
+				'Elec'
+			],
+			resist: [],
+			null: [
+				'Ice'
+			],
+			repel: [],
+			drain: []
+		},
+		game: 'smt5',
+		alignment: {
+			moral: 'Light',
+			ethical: 'Chaos'
+		},
+		lore: 'Zambezi River god of the Tonga and Lozi tribes of southern Africa.\nHe has the body of a snake and the head of a fish or dragon. He is said to protect people near the water and provide them with food. He lived with his wife, Kitapo, until the construction of the Kariba Dam, which separated them. The local inhabitants were also forced to move to barren land. It is said that the great floods that occurred during the construction of the dam were casued by the Nyami Nyami, who was angered by these events.',
+		origin: 'African'
 	},
 	{
 		name: 'Obariyon',
@@ -20704,15 +22947,15 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 				level: 0
 			},
 			{
-				name: 'Me Patra',
-				level: 0
-			},
-			{
 				name: 'Mediarama',
 				level: 0
 			},
 			{
-				name: 'Estoma',
+				name: 'Me Patra',
+				level: 0
+			},
+			{
+				name: 'Mist Rush',
 				level: 56
 			},
 			{
@@ -20734,15 +22977,15 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 				'Dark'
 			],
 			null: [],
-			drain: [],
-			repel: []
+			repel: [],
+			drain: []
 		},
 		game: 'smt5',
 		alignment: {
 			moral: 'Light',
 			ethical: 'Chaos'
 		},
-		lore: 'A Kunitsu deity of Japanese mythology that governs agriculture and medicine.\nSaid to have built the country of Izumo with Susano-o\'s daughter, Suseri-Hime. He is a peaceful god who prefers not to fight.',
+		lore: 'A Kunitsu deity of Japanese mythology that governs agriculture and medicine.\nSaid to have built the country of Izumo with Susano-o\'s daughte, Suseri-Hime. He is a peaceful god who prefers not to fight.',
 		origin: 'Japanese'
 	},
 	{
@@ -20837,19 +23080,19 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		},
 		arcana: 'Hermit',
 		race: 'Brute',
-		level: 78,
-		hp: 549,
-		mp: 297,
+		level: 75,
+		hp: 524,
+		mp: 284,
 		stats: {
-			st: 67,
-			vi: 65,
-			ma: 46,
-			ag: 31,
-			lu: 48
+			st: 64,
+			vi: 63,
+			ma: 45,
+			ag: 30,
+			lu: 47
 		},
 		learnset: [
 			{
-				name: 'Dragon Eye',
+				name: 'Mist Rush',
 				level: 0
 			},
 			{
@@ -20857,24 +23100,24 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 				level: 0
 			},
 			{
-				name: 'Mist Rush',
-				level: 0
-			},
-			{
 				name: 'Slumber Vortex',
 				level: 0
 			},
 			{
+				name: 'Dragon Eye',
+				level: 0
+			},
+			{
 				name: 'Impaler\'s Animus',
-				level: 79
+				level: 76
 			},
 			{
 				name: 'Nihil Claw',
-				level: 80
+				level: 77
 			},
 			{
 				name: 'Null Phys',
-				level: 81
+				level: 79
 			}
 		],
 		resistances: {
@@ -20888,8 +23131,8 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 				'Force'
 			],
 			null: [],
-			drain: [],
-			repel: []
+			repel: [],
+			drain: []
 		},
 		game: 'smt5',
 		alignment: {
@@ -21037,6 +23280,84 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		},
 		lore: 'A Japanese monster that takes the form of a bird with the face of a man. It produces a sickening chirp and spits a wicked flame.\nIts true identity is a corpse that hasn\'t had a proper memorial service, and it is said to appear before monks who neglect their duties.',
 		origin: 'Japanese'
+	},
+	{
+		name: 'Onyankopon',
+		affinities: {
+			skillPotential: {
+				Phys: -2,
+				Fire: 0,
+				Ice: 0,
+				Elec: 0,
+				Force: 0,
+				Light: 0,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: -2,
+				Recovery: 2,
+				Support: 4
+			},
+			inherit: null
+		},
+		arcana: null,
+		race: 'Enigma',
+		level: 50,
+		hp: 273,
+		mp: 238,
+		stats: {
+			st: 22,
+			vi: 41,
+			ma: 48,
+			ag: 31,
+			lu: 38
+		},
+		learnset: [
+			{
+				name: 'King of Tales',
+				level: 0
+			},
+			{
+				name: 'Donum Magici',
+				level: 0
+			},
+			{
+				name: 'Diamrita',
+				level: 0
+			},
+			{
+				name: 'Tetrakarn',
+				level: 51
+			},
+			{
+				name: 'Donum Gladi',
+				level: 52
+			},
+			{
+				name: 'Mediarama',
+				level: 53
+			}
+		],
+		resistances: {
+			ailments: {},
+			weak: [
+				'Phys'
+			],
+			resist: [],
+			null: [
+				'Fire',
+				'Elec',
+				'Light'
+			],
+			repel: [],
+			drain: []
+		},
+		game: 'smt5',
+		alignment: {
+			moral: 'Light',
+			ethical: 'Neutral'
+		},
+		lore: 'A sky god of the Ashanti people and other tribes in West Africa. One of the aliases of the supreme god Nyame, said to mean "the all-knowing and all-seeing."\nThe god of spiders who created all things, he is said to be the god who imparts joy and motivation to live, and the one people look to in times of hardship. At first, he lived near humans, but when they struck the roots of a yam with a pestle, he migrated to the sky. Although far removed from humans, he is not considered unapproachable.',
+		origin: 'African'
 	},
 	{
 		name: 'Orichalcum',
@@ -21755,7 +24076,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			moral: 'Neutral',
 			ethical: 'Chaos'
 		},
-		lore: 'One of the 72 demons of the Goetia.\nAppearing as half-man and half-beast, it is said that he can change his form according to the desires of the one who summons him, though not for very long.',
+		lore: 'One of the 72 demons of the "Ars Goetia."\nAppearing as half-man and half-beast, it is said that he can change his form according to the desires of the one who summons him, though not for very long.',
 		origin: 'Abrahamic'
 	},
 	{
@@ -22372,6 +24693,80 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		origin: 'Mesopotamian'
 	},
 	{
+		name: 'Peallaidh',
+		affinities: {
+			skillPotential: {
+				Phys: 0,
+				Fire: -3,
+				Ice: 1,
+				Elec: 0,
+				Force: 0,
+				Light: -2,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 3,
+				Recovery: 0,
+				Support: 1
+			},
+			inherit: null
+		},
+		arcana: null,
+		race: 'Wilder',
+		level: 8,
+		hp: 63,
+		mp: 83,
+		stats: {
+			st: 6,
+			vi: 12,
+			ma: 11,
+			ag: 7,
+			lu: 9
+		},
+		learnset: [
+			{
+				name: 'Bufu',
+				level: 0
+			},
+			{
+				name: 'Mudo',
+				level: 0
+			},
+			{
+				name: 'Pulinpa',
+				level: 9
+			},
+			{
+				name: 'Entangling Tendrils',
+				level: 10
+			},
+			{
+				name: 'Rakukaja',
+				level: 11
+			}
+		],
+		resistances: {
+			ailments: {},
+			weak: [
+				'Fire',
+				'Light'
+			],
+			resist: [
+				'Ice',
+				'Dark'
+			],
+			null: [],
+			repel: [],
+			drain: []
+		},
+		game: 'smt5',
+		alignment: {
+			moral: 'Dark',
+			ethical: 'Neutral'
+		},
+		lore: 'A half-human, half-beast Scottish fairy. Said to prefer to live near water, such as rivers, lakes, and shores.\nA kind of spirit called "ùruisg," it is described as a hairy human male figure with the upper body of a man, the legs of a deer and the hooves of a goat. When lonely, they are said to run after travelers and others all night in search of human companionship. Although basically harmless, they are said to be the most malevolent of the ùruisg fairies and dangerous to approach.',
+		origin: 'European'
+	},
+	{
 		name: 'Penthesilea',
 		affinities: {
 			skillPotential: null,
@@ -22648,15 +25043,15 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		name: 'Pixie',
 		affinities: {
 			skillPotential: {
-				Phys: 0,
+				Phys: -2,
 				Fire: 0,
 				Ice: 0,
 				Elec: 0,
 				Force: 1,
 				Light: 0,
-				Dark: 0,
+				Dark: -1,
 				Almighty: 0,
-				Ailment: -1,
+				Ailment: 1,
 				Recovery: 1,
 				Support: 1
 			},
@@ -22703,15 +25098,15 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 				'Force'
 			],
 			null: [],
-			drain: [],
-			repel: []
+			repel: [],
+			drain: []
 		},
 		game: 'smt5',
 		alignment: {
 			moral: 'Neutral',
 			ethical: 'Neutral'
 		},
-		lore: 'A small fairy found in southwestern Britain known for their cheerful nature and love of pranks.\nTheir physical appearance changes from region to region, but their personality is always playful and mischievous. A common prank they like to pull is causing humans to wander in circles. However, they are also known to help farmers from time to time and are generally considered good fairies.',
+		lore: 'Small fairies found in southwestern Britain known for their cheerful nature and love of pranks.\nTheir physical appearance changes from region to region, but their personality is always playful and mischievous. A common prank they like to pull is causing humans to wander in circles. However, they are also known to help farmers from time to time and are generally considered good fairies.',
 		origin: 'European'
 	},
 	{
@@ -23645,8 +26040,8 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		arcana: 'Magician',
 		race: 'Femme',
 		level: 70,
-		hp: 334,
-		mp: 348,
+		hp: 297,
+		mp: 328,
 		stats: {
 			st: 46,
 			vi: 36,
@@ -23691,10 +26086,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			],
 			resist: [],
 			null: [],
-			drain: [],
 			repel: [
 				'Phys'
-			]
+			],
+			drain: []
 		},
 		game: 'smt5',
 		alignment: {
@@ -24284,72 +26679,85 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 	{
 		name: 'Samael',
 		affinities: {
-			skillPotential: null,
+			skillPotential: {
+				Phys: -4,
+				Fire: 0,
+				Ice: -6,
+				Elec: 0,
+				Force: 0,
+				Light: 4,
+				Dark: 4,
+				Almighty: 2,
+				Ailment: 7,
+				Recovery: 2,
+				Support: 0
+			},
 			inherit: 'Dark'
 		},
 		arcana: 'Death',
-		race: 'Fallen',
-		level: 36,
-		hp: null,
-		mp: null,
+		race: 'Drake',
+		level: 88,
+		hp: 572,
+		mp: 435,
 		stats: {
-			st: 24,
-			vi: 25,
-			ma: 29,
-			ag: 19,
-			lu: 18
+			st: 48,
+			vi: 70,
+			ma: 85,
+			ag: 55,
+			lu: 57
 		},
 		learnset: [
 			{
-				name: 'Mudoon',
+				name: 'Hamabarion',
 				level: 0
 			},
 			{
-				name: 'Matarunda',
+				name: 'Deicidal Poison',
 				level: 0
 			},
 			{
-				name: 'Poison Mist',
+				name: 'Samarecarm',
 				level: 0
 			},
 			{
-				name: 'Dekunda',
-				level: 38
+				name: 'Poison Master',
+				level: 0
 			},
 			{
-				name: 'Megido',
-				level: 39
+				name: 'Mamudobarion',
+				level: 89
 			},
 			{
-				name: 'Mudo Boost',
-				level: 40
+				name: 'Megidolaon',
+				level: 90
 			},
 			{
-				name: 'Survival Trick',
-				level: 41
+				name: 'Mediarahan',
+				level: 91
 			}
 		],
 		resistances: {
-			ailments: null,
+			ailments: {
+				Poison: 'Null',
+				Mirage: 'Null'
+			},
 			weak: [
-				'Wind'
-			],
-			resist: [
 				'Ice'
 			],
-			null: [
-				'Elec',
+			resist: [],
+			null: [],
+			repel: [
+				'Light',
 				'Dark'
 			],
-			drain: [],
-			repel: []
+			drain: []
 		},
-		game: 'p4',
+		game: 'smt5',
 		alignment: {
 			moral: 'Dark',
-			ethical: 'Law'
+			ethical: 'Chaos'
 		},
-		lore: 'A mysterious angel with the name "poison of God". He is often shown as a serpent. Opinions differ on whether he is fallen or not, but either way, he is linked with death.',
+		lore: 'An enigmatic angel whose name bears the unusual meaning "poison of God" and who is commonly depicted as a winged serpent.\nThough an angel, he is often referred to as the leader of daemons. It\'s been suggested that he\'s a fallen angel, but several descriptions in the Bible and other sources refute this.',
 		origin: 'Abrahamic'
 	},
 	{
@@ -24587,74 +26995,71 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 	{
 		name: 'Satan',
 		affinities: {
-			skillPotential: null,
+			skillPotential: {
+				Phys: 6,
+				Fire: 6,
+				Ice: 3,
+				Elec: 3,
+				Force: 3,
+				Light: 0,
+				Dark: 0,
+				Almighty: 7,
+				Ailment: -5,
+				Recovery: -2,
+				Support: 2
+			},
 			inherit: 'Ice'
 		},
 		arcana: 'Judgement',
-		race: 'Godly',
-		level: 92,
-		hp: null,
-		mp: null,
+		race: 'Primal',
+		level: 99,
+		hp: 700,
+		mp: 550,
 		stats: {
-			st: 62,
-			vi: 55,
-			ma: 59,
-			ag: 52,
-			lu: 55
+			st: 103,
+			vi: 72,
+			ma: 103,
+			ag: 61,
+			lu: 70
 		},
 		learnset: [
 			{
-				name: 'Bufubarion',
+				name: 'Megido Ark',
 				level: 0
 			},
 			{
-				name: 'Mabufubarion',
+				name: 'Akashic Arts',
 				level: 0
 			},
 			{
-				name: 'Regenerate 3',
+				name: 'Trisagion',
 				level: 0
 			},
 			{
-				name: 'Black Viper',
-				level: 94
-			},
-			{
-				name: 'Invigorate 3',
-				level: 95
-			},
-			{
-				name: 'Fortify Spirit',
-				level: 96
-			},
-			{
-				name: 'Concentrate',
-				level: 97
-			},
-			{
-				name: 'Drain Ice',
-				level: 98
+				name: 'High Almighty Pleroma',
+				level: 0
 			}
 		],
 		resistances: {
-			ailments: null,
+			ailments: {},
 			weak: [],
 			resist: [
-				'Gun'
+				'Phys'
 			],
 			null: [],
-			drain: [],
-			repel: [
-				'Ice',
+			repel: [],
+			drain: [
+				'Fire',
+				'Light',
 				'Dark'
 			]
 		},
-		game: 'p5',
+		game: 'smt5',
 		alignment: {
 			moral: 'Light',
 			ethical: 'Law'
 		},
-		lore: 'The Judeo-Christian prince of darkness, he is known for his role as the snake that tempted Adam and Eve in Eden. It is also said that he was sent by God to test man\'s piety.',
+		lore: 'A Judeo-Christian angel of darkness with a nam that means "adversary."\nAlso known as the evil serpent that tempted Adam and Eve in the Garden of Eden. In the Book of Job, he is depicted as a servant of God who tests Job, a man of faith, and is said to be the accuser angel sent from the heavens to judge mankind.',
 		origin: 'Abrahamic'
 	},
 	{
@@ -24805,67 +27210,81 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 	{
 		name: 'Saturnus',
 		affinities: {
-			skillPotential: null,
+			skillPotential: {
+				Phys: 4,
+				Fire: 5,
+				Ice: -5,
+				Elec: 0,
+				Force: 0,
+				Light: 0,
+				Dark: 0,
+				Almighty: -2,
+				Ailment: 0,
+				Recovery: 0,
+				Support: 0
+			},
 			inherit: 'Fire'
 		},
 		arcana: 'Star',
 		race: 'Vile',
-		level: 75,
-		hp: null,
-		mp: null,
+		level: 88,
+		hp: 588,
+		mp: 389,
 		stats: {
-			st: 50,
-			vi: 36,
-			ma: 57,
-			ag: 43,
-			lu: 49
+			st: 85,
+			vi: 65,
+			ma: 60,
+			ag: 52,
+			lu: 48
 		},
 		learnset: [
 			{
-				name: 'Agidyne',
+				name: 'Ragnarok',
 				level: 0
 			},
 			{
-				name: 'Maragidyne',
+				name: 'Eat Whole',
 				level: 0
 			},
 			{
-				name: 'Fire Amp',
+				name: 'Maragibarion',
 				level: 0
 			},
 			{
-				name: 'Evade Ice',
-				level: 77
+				name: 'Madness Nails',
+				level: 89
 			},
 			{
-				name: 'Growth 3',
-				level: 79
+				name: 'Trisagion',
+				level: 90
 			},
 			{
-				name: 'Spell Master',
-				level: 81
+				name: 'High Fire Pleroma',
+				level: 91
 			}
 		],
 		resistances: {
-			ailments: null,
+			ailments: {},
 			weak: [
 				'Ice'
 			],
-			resist: [],
-			null: [
-				'Wind'
+			resist: [
+				'Dark'
 			],
+			null: [
+				'Light'
+			],
+			repel: [],
 			drain: [
 				'Fire'
-			],
-			repel: []
+			]
 		},
-		game: 'p4',
+		game: 'smt5',
 		alignment: {
-			moral: 'Neutral',
-			ethical: 'Neutral'
+			moral: 'Dark',
+			ethical: 'Law'
 		},
-		lore: 'The Roman god of agriculture. He is commonly identified with Cronus. In an attempt to prevent his destiny, he ate his children, but was overthrown as fated.',
+		lore: 'A fertility god of Roman mythology, associated with the primordial earth. He is commonly identified with the Greek god Cronus. Often referred to as "Black Sun" by Chaldean astronomers, linked to the low position of the sun around the time of the winter solstice. Also knwon as the "Night Sun" and also the "King of Death" living in the depths of the underworld. It is said that people prayed to Saturnus, the winter sun, to call for a new spring, and that custom became what we now know as Christmas.',
 		origin: 'Greco-Roman'
 	},
 	{
@@ -25245,65 +27664,81 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 	{
 		name: 'Senri',
 		affinities: {
-			skillPotential: null,
+			skillPotential: {
+				Phys: 0,
+				Fire: 0,
+				Ice: 0,
+				Elec: -3,
+				Force: 2,
+				Light: 0,
+				Dark: 0,
+				Almighty: -2,
+				Ailment: 2,
+				Recovery: 2,
+				Support: 0
+			},
 			inherit: 'Recovery'
 		},
 		arcana: 'Empress',
-		race: 'Nymph',
-		level: 9,
-		hp: null,
-		mp: null,
+		race: 'Holy',
+		level: 43,
+		hp: 203,
+		mp: 210,
 		stats: {
-			st: 7,
-			vi: 4,
-			ma: 7,
-			ag: 14,
-			lu: 7
+			st: 31,
+			vi: 22,
+			ma: 33,
+			ag: 30,
+			lu: 35
 		},
 		learnset: [
 			{
-				name: 'Dia',
+				name: 'Sexy Dance',
 				level: 0
 			},
 			{
-				name: 'Makajama',
+				name: 'Diamrita',
 				level: 0
 			},
 			{
-				name: 'Agi',
+				name: 'Wind Dracostrike',
 				level: 0
 			},
 			{
-				name: 'Dekunda',
-				level: 10
+				name: 'Mazanma',
+				level: 44
 			},
 			{
-				name: 'Media',
-				level: 11
+				name: 'Acrobat Kick',
+				level: 45
 			},
 			{
-				name: 'Trafuri',
-				level: 14
+				name: 'Force Pleroma',
+				level: 46
 			}
 		],
 		resistances: {
-			ailments: null,
+			ailments: {
+				Charm: 'Null'
+			},
 			weak: [
 				'Elec'
 			],
-			resist: [],
-			null: [
-				'Fire'
+			resist: [
+				'Force'
 			],
-			drain: [],
-			repel: []
+			null: [
+				'Light'
+			],
+			repel: [],
+			drain: []
 		},
-		game: 'p4',
+		game: 'smt5',
 		alignment: {
-			moral: 'Neutral',
-			ethical: 'Law'
+			moral: 'Light',
+			ethical: 'Neutral'
 		},
-		lore: 'A spirit formed of a long-lived wildcat. It disguises itself as a beautiful woman to take vitality from men. Some say other demon animals collect vitality in order to become Senri themselves.',
+		lore: 'A yokai said to be born from the incarnation of a long-lived wildcat. It disguises itself as a beautiful woman and collects vitality from human men.\nIt is said to be the highest rank possible for a beast\'s demonic incarnation, similar to nekomata. Some believe all beast-demons gather spirits in the hopes of becoming a Senri themselves.',
 		origin: 'Chinese'
 	},
 	{
@@ -25578,15 +28013,15 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 				level: 0
 			},
 			{
-				name: 'Mahama',
+				name: 'Makajama',
 				level: 30
 			},
 			{
-				name: 'Makajama',
+				name: 'Mahama',
 				level: 31
 			},
 			{
-				name: 'Estoma',
+				name: 'Riberama',
 				level: 32
 			}
 		],
@@ -25604,8 +28039,8 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 				'Dark'
 			],
 			null: [],
-			drain: [],
-			repel: []
+			repel: [],
+			drain: []
 		},
 		game: 'smt5',
 		alignment: {
@@ -25723,14 +28158,14 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		arcana: 'Faith',
 		race: 'Wargod',
 		level: 63,
-		hp: 398,
-		mp: 233,
+		hp: 338,
+		mp: 213,
 		stats: {
 			st: 59,
-			vi: 54,
-			ma: 27,
-			ag: 41,
-			lu: 29
+			vi: 41,
+			ma: 30,
+			ag: 47,
+			lu: 33
 		},
 		learnset: [
 			{
@@ -25738,7 +28173,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 				level: 0
 			},
 			{
-				name: 'Mighty Cleave',
+				name: 'Titanomachia',
 				level: 0
 			},
 			{
@@ -25746,7 +28181,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 				level: 0
 			},
 			{
-				name: 'Titanomachia',
+				name: 'Mighty Cleave',
 				level: 0
 			},
 			{
@@ -25763,7 +28198,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {},
+			ailments: {
+				Seal: 'Weak',
+				Mirage: 'Weak'
+			},
 			weak: [
 				'Force',
 				'Light',
@@ -25771,17 +28209,17 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			],
 			resist: [],
 			null: [],
+			repel: [],
 			drain: [
 				'Phys'
-			],
-			repel: []
+			]
 		},
 		game: 'smt5',
 		alignment: {
 			moral: 'Light',
 			ethical: 'Neutral'
 		},
-		lore: 'The name of the hero in the epic German poem, the Nibelungenlied, often seen as the same as Sigurd of Norse folklore.\nHe was married to Kriemhild, the princess of Burgundy, and is said to have become wrapped up in a feud between her and Brunhilde of Austrasia, resulting in many attempts on his life. The dragon Fafnir\'s blood made him invincible, but a single leaf on his back resulted in a weak spot, which was later exploited by the treacherous Hagan.',
+		lore: 'The name of the hero in the epic German poem, the Nibelungenlied, often seen as the same as Sigurd of Norse folklore.\nHe was married to Kriemhild, the princess of Burgundy, and is said to have become wrapped up in a feud between her and Brunhilde of Austrasia, resulting in many attempts on his life. The dragon Fafnir\'s blood made him invincible, but a single leaf on his back resulted in a weak spot, which was later exploited by the treacherous Hagen.',
 		origin: 'Norse'
 	},
 	{
@@ -27688,13 +30126,13 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		name: 'Tao',
 		affinities: {
 			skillPotential: {
-				Phys: -5,
+				Phys: -3,
 				Fire: 0,
 				Ice: 0,
 				Elec: 0,
 				Force: 0,
 				Light: 5,
-				Dark: -5,
+				Dark: -3,
 				Almighty: 4,
 				Ailment: 0,
 				Recovery: 3,
@@ -27720,7 +30158,11 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 				level: 0
 			},
 			{
-				name: 'Hamaon',
+				name: 'Samarecarm',
+				level: 0
+			},
+			{
+				name: 'Mahamaon',
 				level: 0
 			},
 			{
@@ -27732,11 +30174,11 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 				level: 0
 			},
 			{
-				name: 'Mahamaon',
-				level: 61
+				name: 'Mana Aid',
+				level: 0
 			},
 			{
-				name: 'Mana Aid',
+				name: 'Hamabarion',
 				level: 62
 			},
 			{
@@ -27746,7 +30188,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		],
 		resistances: {
 			ailments: {
-				Charm: 'Null'
+				Charm: 'Null',
+				Confuse: 'Resist',
+				Poison: 'Resist'
 			},
 			weak: [
 				'Dark'
@@ -27755,15 +30199,15 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			null: [
 				'Light'
 			],
-			drain: [],
-			repel: []
+			repel: [],
+			drain: []
 		},
 		game: 'smt5',
 		alignment: {
 			moral: 'Light',
 			ethical: 'Law'
 		},
-		lore: 'Once cherished as the Saint of Bethel, Tao Isonokami was forced to watch helplessly as a close friend perished before her eyes. At that moment, the voice of a higher being spoke unto her, awakening the goddess within.\nEven after her divine transfiguration, she appears to have retained her memories. However, she has cast off her former personality, and no longer acts as she once did as a human.',
+		lore: 'Once cherished as the Saint of Bethel, Tao Isonokami was forced to watch helplessly as a close friend perished before her eyes. It was then that the voice of a higher being spoke unto her, awakening the goddess power within.\nEven after her divine transfiguration, she appears to have retained her memories. However, she has cast off her former personality, and no longer acts as she once did as a human.',
 		origin: 'ATLUS Original'
 	},
 	{
@@ -28833,10 +31277,6 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		},
 		learnset: [
 			{
-				name: 'Dekaja',
-				level: 0
-			},
-			{
 				name: 'Evil Melody',
 				level: 0
 			},
@@ -28846,6 +31286,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			},
 			{
 				name: 'Megidolaon',
+				level: 0
+			},
+			{
+				name: 'Dekaja',
 				level: 0
 			},
 			{
@@ -28863,22 +31307,17 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		],
 		resistances: {
 			ailments: {
-				Sleep: 'Null',
-				Seal: 'Null'
+				Seal: 'Null',
+				Sleep: 'Null'
 			},
 			weak: [],
-			resist: [
-				'Fire',
-				'Ice',
-				'Elec',
-				'Force'
-			],
+			resist: [],
 			null: [
 				'Light',
 				'Dark'
 			],
-			drain: [],
-			repel: []
+			repel: [],
+			drain: []
 		},
 		game: 'smt5',
 		alignment: {
@@ -29101,6 +31540,78 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		origin: 'Japanese'
 	},
 	{
+		name: 'Turbo Granny',
+		affinities: {
+			skillPotential: {
+				Phys: 3,
+				Fire: 0,
+				Ice: 0,
+				Elec: 0,
+				Force: 1,
+				Light: -2,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 0,
+				Recovery: -2,
+				Support: 0
+			},
+			inherit: null
+		},
+		arcana: null,
+		race: 'Foul',
+		level: 26,
+		hp: 114,
+		mp: 141,
+		stats: {
+			st: 20,
+			vi: 15,
+			ma: 17,
+			ag: 32,
+			lu: 18
+		},
+		learnset: [
+			{
+				name: 'Wind Breath',
+				level: 0
+			},
+			{
+				name: 'Blinding Strike',
+				level: 0
+			},
+			{
+				name: 'Crusher Onslaught',
+				level: 0
+			},
+			{
+				name: 'Trafuri',
+				level: 27
+			},
+			{
+				name: 'Critical Aura',
+				level: 28
+			}
+		],
+		resistances: {
+			ailments: {},
+			weak: [
+				'Light'
+			],
+			resist: [],
+			null: [
+				'Dark'
+			],
+			repel: [],
+			drain: []
+		},
+		game: 'smt5',
+		alignment: {
+			moral: 'Dark',
+			ethical: 'Chaos'
+		},
+		lore: 'The ghost of an old lady who runs on all fours at blazing speeds near Mt. Rokko.\nShould you manage to catch a glimpse of her back as she races by, you will likely see a piece of paper on her back that reads "Turbo." She is not a dangerous ghost, but her love for speed is insatiable. Similar ghosts include the "Dash Hag" of the Shuto Expressway and the "100 km/h Granny" of Hokkaido.',
+		origin: 'Japanese'
+	},
+	{
 		name: 'Turdak',
 		affinities: {
 			skillPotential: {
@@ -29167,75 +31678,82 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 	{
 		name: 'Tzitzimitl',
 		affinities: {
-			skillPotential: null,
+			skillPotential: {
+				Phys: 0,
+				Fire: 0,
+				Ice: 3,
+				Elec: 0,
+				Force: 0,
+				Light: 0,
+				Dark: 4,
+				Almighty: 0,
+				Ailment: 0,
+				Recovery: -4,
+				Support: 0
+			},
 			inherit: 'Elec'
 		},
 		arcana: 'Priestess',
-		race: 'Tyrant',
-		level: 70,
-		hp: null,
-		mp: null,
+		race: 'Vile',
+		level: 75,
+		hp: 393,
+		mp: 394,
 		stats: {
-			st: 46,
-			vi: 41,
-			ma: 56,
-			ag: 39,
-			lu: 35
+			st: 32,
+			vi: 49,
+			ma: 74,
+			ag: 52,
+			lu: 44
 		},
 		learnset: [
 			{
-				name: 'Ziodyne',
+				name: 'Makajamaon',
 				level: 0
 			},
 			{
-				name: 'Virus Wave',
+				name: 'Mudobarion',
 				level: 0
 			},
 			{
-				name: 'Mustard Bomb',
+				name: 'Bufubarion',
 				level: 0
 			},
 			{
-				name: 'Seal Boost',
-				level: 71
-			},
-			{
-				name: 'Dekaja',
-				level: 72
-			},
-			{
-				name: 'Regenerate 3',
-				level: 73
-			},
-			{
-				name: 'Maziodyne',
+				name: 'Impaler\'s Animus',
 				level: 76
 			},
 			{
-				name: 'Repel Elec',
+				name: 'Glacial Blast',
 				level: 77
+			},
+			{
+				name: 'Mamudobarion',
+				level: 78
 			}
 		],
 		resistances: {
-			ailments: null,
+			ailments: {
+				Seal: 'Null',
+				Confuse: 'Weak',
+				Mirage: 'Weak'
+			},
 			weak: [
-				'Wind'
+				'Fire'
 			],
 			resist: [],
 			null: [
+				'Light',
 				'Dark'
 			],
-			drain: [],
-			repel: [
-				'Elec'
-			]
+			repel: [],
+			drain: []
 		},
-		game: 'p4',
+		game: 'smt5',
 		alignment: {
 			moral: 'Dark',
-			ethical: 'Chaos'
+			ethical: 'Law'
 		},
-		lore: 'Goddess of Aztec myth who governs night and fear, she symbolizes death and evil. Her wawr with the sun god caused a catastrophic solar eclipse. She seeks a sacrifice every 52 years.',
+		lore: 'Aztec goddesses of night and fear. They constantly attack the sun and cause solar eclipses. They demand a sacrifice once every 52 years.',
 		origin: 'South American'
 	},
 	{
@@ -29369,64 +31887,78 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 	{
 		name: 'Unicorn',
 		affinities: {
-			skillPotential: null,
+			skillPotential: {
+				Phys: 0,
+				Fire: 0,
+				Ice: 0,
+				Elec: -2,
+				Force: 0,
+				Light: 2,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: -1,
+				Recovery: 1,
+				Support: 1
+			},
 			inherit: 'Nuke'
 		},
 		arcana: 'Hierophant',
 		race: 'Holy',
-		level: 39,
-		hp: null,
-		mp: null,
+		level: 11,
+		hp: 76,
+		mp: 76,
 		stats: {
-			st: 20,
-			vi: 24,
-			ma: 26,
-			ag: 27,
-			lu: 24
+			st: 10,
+			vi: 12,
+			ma: 10,
+			ag: 11,
+			lu: 8
 		},
 		learnset: [
 			{
-				name: 'Assault Dive',
+				name: 'Dia',
 				level: 0
 			},
 			{
-				name: 'Mafreila',
+				name: 'Patra',
 				level: 0
 			},
 			{
-				name: 'Mediarama',
+				name: 'Hama',
 				level: 0
+			},
+			{
+				name: 'Sukukaja',
+				level: 13
 			},
 			{
 				name: 'Recarm',
-				level: 40
-			},
-			{
-				name: 'Regenerate 2',
-				level: 42
+				level: 14
 			}
 		],
 		resistances: {
-			ailments: null,
+			ailments: {
+				Charm: 'Resist',
+				Confuse: 'Resist',
+				Poison: 'Weak',
+				Mirage: 'Weak'
+			},
 			weak: [
-				'Dark'
+				'Elec'
 			],
-			resist: [
-				'Psy'
-			],
+			resist: [],
 			null: [
-				'Ice',
 				'Light'
 			],
-			drain: [],
-			repel: []
+			repel: [],
+			drain: []
 		},
-		game: 'p5',
+		game: 'smt5',
 		alignment: {
 			moral: 'Light',
 			ethical: 'Neutral'
 		},
-		lore: 'A legendary white horse with a single spiral horn. It can only be tamed by a pure maiden, and its horn supposedly has miraculous healing capabilities.',
+		lore: 'A white horse of Scottish legend, featuring a spiral horn on its forehead. This horn is said to make a panacea for all manner of ailments, but it will only open its heart to the purest of maidens, allowing only them to touch its body.',
 		origin: 'European'
 	},
 	{
@@ -30145,6 +32677,159 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		origin: 'Zoroastrian'
 	},
 	{
+		name: 'Vouivre',
+		affinities: {
+			skillPotential: {
+				Phys: 2,
+				Fire: 0,
+				Ice: -3,
+				Elec: 0,
+				Force: 0,
+				Light: 0,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 2,
+				Recovery: 0,
+				Support: 0
+			},
+			inherit: null
+		},
+		arcana: null,
+		race: 'Snake',
+		level: 20,
+		hp: 114,
+		mp: 100,
+		stats: {
+			st: 22,
+			vi: 16,
+			ma: 11,
+			ag: 16,
+			lu: 18
+		},
+		learnset: [
+			{
+				name: 'Toxic Sting',
+				level: 0
+			},
+			{
+				name: 'Venom Chaser',
+				level: 0
+			},
+			{
+				name: 'Curse Siphon',
+				level: 21
+			},
+			{
+				name: 'Madness Needle',
+				level: 22
+			},
+			{
+				name: 'Toxic Spray',
+				level: 23
+			}
+		],
+		resistances: {
+			ailments: {
+				Seal: 'Resist',
+				Poison: 'Null',
+				Sleep: 'Resist'
+			},
+			weak: [
+				'Ice'
+			],
+			resist: [],
+			null: [],
+			repel: [],
+			drain: []
+		},
+		game: 'smt5',
+		alignment: {
+			moral: 'Neutral',
+			ethical: 'Chaos'
+		},
+		lore: 'A female dragon with bat wings, eagle legs, and a viper tail. Sometimes depicted as a beautiful female spirit.\nThe secret of Vouivre\'s power is a garnet jewel on her forehead, which if lost or stolen, causes her to lose all her magical powers and forces her to obey the gem\'s owner. Some believe the jewel is not actually found in her forehead, but actually refers to her eyes.',
+		origin: 'European'
+	},
+	{
+		name: 'Vritra',
+		affinities: {
+			skillPotential: {
+				Phys: 2,
+				Fire: 0,
+				Ice: 0,
+				Elec: 3,
+				Force: -3,
+				Light: 0,
+				Dark: 0,
+				Almighty: -1,
+				Ailment: 0,
+				Recovery: 0,
+				Support: 0
+			},
+			inherit: null
+		},
+		arcana: null,
+		race: 'Dragon',
+		level: 52,
+		hp: 263,
+		mp: 246,
+		stats: {
+			st: 40,
+			vi: 32,
+			ma: 40,
+			ag: 34,
+			lu: 30
+		},
+		learnset: [
+			{
+				name: 'Shockbound',
+				level: 0
+			},
+			{
+				name: 'Axel Claw',
+				level: 0
+			},
+			{
+				name: 'Marakunda',
+				level: 0
+			},
+			{
+				name: 'Ziodyne',
+				level: 53
+			},
+			{
+				name: 'Dragon Eye',
+				level: 54
+			},
+			{
+				name: 'Mortal Jihad',
+				level: 55
+			}
+		],
+		resistances: {
+			ailments: {},
+			weak: [
+				'Force'
+			],
+			resist: [
+				'Ice',
+				'Light'
+			],
+			null: [
+				'Elec'
+			],
+			repel: [],
+			drain: []
+		},
+		game: 'smt5',
+		alignment: {
+			moral: 'Light',
+			ethical: 'Chaos'
+		},
+		lore: 'A ferocious giant dragon of Hindu mythology. Its name means "obstacle," and it\'s said to block the rivers in the sky, bringing drought.\nWhen Indra, god of thunder, defeats him, the earth\'s rains will return. However, Vritra will rise again the following year. The battle between the two is said to continue for eternity.',
+		origin: 'Hindu'
+	},
+	{
 		name: 'White Rider',
 		affinities: {
 			skillPotential: {
@@ -30364,75 +33049,87 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 	{
 		name: 'Xiezhai',
 		affinities: {
-			skillPotential: null,
+			skillPotential: {
+				Phys: 3,
+				Fire: 0,
+				Ice: 1,
+				Elec: 0,
+				Force: 0,
+				Light: 1,
+				Dark: -1,
+				Almighty: 0,
+				Ailment: -4,
+				Recovery: 0,
+				Support: 0
+			},
 			inherit: 'Elec'
 		},
 		arcana: 'Temperance',
 		race: 'Avatar',
-		level: 16,
-		hp: null,
-		mp: null,
+		level: 29,
+		hp: 161,
+		mp: 127,
 		stats: {
-			st: 14,
-			vi: 9,
-			ma: 12,
-			ag: 13,
-			lu: 7
+			st: 24,
+			vi: 25,
+			ma: 24,
+			ag: 18,
+			lu: 16
 		},
 		learnset: [
 			{
-				name: 'Zio',
+				name: 'Pierce Armor',
 				level: 0
 			},
 			{
-				name: 'Mazio',
+				name: 'Heavy Blow',
 				level: 0
 			},
 			{
-				name: 'Rakunda',
+				name: 'Bufula',
 				level: 0
 			},
 			{
-				name: 'Makajama',
-				level: 17
+				name: 'Hamaon',
+				level: 30
 			},
 			{
-				name: 'Seal Boost',
-				level: 18
-			},
-			{
-				name: 'Rampage',
-				level: 19
-			},
-			{
-				name: 'Elec Boost',
-				level: 21
+				name: 'Puncture Punch',
+				level: 31
 			}
 		],
 		resistances: {
-			ailments: null,
+			ailments: {
+				Charm: 'Weak',
+				Seal: 'Weak',
+				Confuse: 'Weak',
+				Poison: 'Weak',
+				Sleep: 'Weak',
+				Mirage: 'Weak'
+			},
 			weak: [
-				'Wind'
+				'Dark'
 			],
-			resist: [
-				'Elec'
+			resist: [],
+			null: [
+				'Ice',
+				'Light'
 			],
-			null: [],
-			drain: [],
-			repel: []
+			repel: [],
+			drain: []
 		},
-		game: 'p4',
+		game: 'smt5',
 		alignment: {
-			moral: 'Unknown',
-			ethical: 'Unknown'
+			moral: 'Light',
+			ethical: 'Neutral'
 		},
-		lore: 'A spirit from Chinese legend, shaped like a sheep, that can see through any lie. It occasionally appears in the human world to punish evildoers with the power stored in its sharp horn.',
+		lore: 'A sacred beast resembling a sheep in Chinese legend.\nIts eyes are said to have the power to see through any lie. Often appearing in the human world, it is said to punish the wicked with the power of its sharp horn.',
 		origin: 'Chinese'
 	},
 	{
-		name: 'Yaksini',
+		name: 'Yakshini',
 		aliases: [
-			'Yakshini'
+			'Yaksini'
 		],
 		affinities: {
 			skillPotential: {
@@ -30503,7 +33200,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			moral: 'Neutral',
 			ethical: 'Chaos'
 		},
-		lore: 'Semi-divine beings in Hindu mythology.\nThough they were once worshipped by the Dravidians as goddesses of the harvest, they became interpreted as demons with the spread of Hinduism and the two clashing ideologies. They are depicted as naked women with voluptuous bodies',
+		lore: 'Semi-divine beings in Hindu mythology.\nThough they were once worshipped by the Dravidians as goddesses of the harvest, they became interpreted as demons with the spread of Hinduism and the two clashing ideologies. They are depicted as naked women with voluptuous bodies.',
 		origin: 'Hindu'
 	},
 	{
@@ -30952,6 +33649,94 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		origin: 'Japanese'
 	},
 	{
+		name: 'Yoko',
+		affinities: {
+			skillPotential: {
+				Phys: -3,
+				Fire: 3,
+				Ice: 0,
+				Elec: 0,
+				Force: 0,
+				Light: -3,
+				Dark: 5,
+				Almighty: 4,
+				Ailment: 0,
+				Recovery: 3,
+				Support: 3
+			},
+			inherit: null
+		},
+		arcana: null,
+		race: 'Panagia',
+		level: 82,
+		hp: 441,
+		mp: 500,
+		stats: {
+			st: 27,
+			vi: 58,
+			ma: 85,
+			ag: 56,
+			lu: 66
+		},
+		learnset: [
+			{
+				name: 'Primordial Chaos',
+				level: 0
+			},
+			{
+				name: 'Energy Drain',
+				level: 0
+			},
+			{
+				name: 'Agibarion',
+				level: 0
+			},
+			{
+				name: 'Mudobarion',
+				level: 0
+			},
+			{
+				name: 'Mediarahan',
+				level: 0
+			},
+			{
+				name: 'Phys Block',
+				level: 0
+			},
+			{
+				name: 'Null Light',
+				level: 0
+			},
+			{
+				name: 'Abyssal Mask',
+				level: 0
+			}
+		],
+		resistances: {
+			ailments: {
+				Seal: 'Null',
+				Sleep: 'Resist',
+				Mirage: 'Resist'
+			},
+			weak: [
+				'Light'
+			],
+			resist: [],
+			null: [
+				'Dark'
+			],
+			repel: [],
+			drain: []
+		},
+		game: 'smt5',
+		alignment: {
+			moral: 'Light',
+			ethical: 'Chaos'
+		},
+		lore: 'Awoke as a goddess when the Tokyo Conception took place, but was sealed in Shakan by the Creator, who did not want to give up His throne.\nYoko Hiromine, whose power was unsealed by Lilith of the Qadištu, was restored to her goddess form. Those who have awakened as goddesses often struggle to retain mortal perspectives and values. Yoko, however, remains relatively human in her perspective due to her time in a normal human state while her powers were sealed.',
+		origin: 'ATLUS Original'
+	},
+	{
 		name: 'Yomotsu-Shikome',
 		affinities: {
 			skillPotential: null,
@@ -31069,6 +33854,8 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		],
 		resistances: {
 			ailments: {
+				Poison: 'Weak',
+				Sleep: 'Weak',
 				Mirage: 'Null'
 			},
 			weak: [
@@ -31078,8 +33865,8 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 				'Phys'
 			],
 			null: [],
-			drain: [],
-			repel: []
+			repel: [],
+			drain: []
 		},
 		game: 'smt5',
 		alignment: {
@@ -31407,6 +34194,76 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			ethical: 'Law'
 		},
 		lore: 'A bird in Chinese mythology said to have poison in its feathers because it eats poisonous snakes.\nDipping a feather into wine will turn it into a deadly poison, able to kill anyone with a single drop.',
+		origin: 'Chinese'
+	},
+	{
+		name: 'Zhu Tun She',
+		affinities: {
+			skillPotential: {
+				Phys: 2,
+				Fire: 0,
+				Ice: 0,
+				Elec: 0,
+				Force: 0,
+				Light: 0,
+				Dark: -2,
+				Almighty: 0,
+				Ailment: 3,
+				Recovery: -3,
+				Support: 0
+			},
+			inherit: null
+		},
+		arcana: null,
+		race: 'Drake',
+		level: 9,
+		hp: 73,
+		mp: 65,
+		stats: {
+			st: 13,
+			vi: 11,
+			ma: 6,
+			ag: 10,
+			lu: 8
+		},
+		learnset: [
+			{
+				name: 'Lunge',
+				level: 0
+			},
+			{
+				name: 'Poisma',
+				level: 0
+			},
+			{
+				name: 'Bouncing Claw',
+				level: 10
+			},
+			{
+				name: 'Rakunda',
+				level: 12
+			}
+		],
+		resistances: {
+			ailments: {
+				Poison: 'Null'
+			},
+			weak: [
+				'Dark'
+			],
+			resist: [
+				'Ice'
+			],
+			null: [],
+			repel: [],
+			drain: []
+		},
+		game: 'smt5',
+		alignment: {
+			moral: 'Dark',
+			ethical: 'Chaos'
+		},
+		lore: 'A monstrous snake-like beast sighted in China during the Song dynasty.\nIt appeared before soldiers-in-training and tried to swallow humans, but was defeated by a soldier with sorcerous powers. A bizarre, hairy quadruped about three feet long, it emerges from a bamboo grove with a pig-like squeal. Because its features defy taxonomic classification, it is highly suspected to be a creature wholly unknown.',
 		origin: 'Chinese'
 	},
 	{
