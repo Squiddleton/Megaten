@@ -9951,81 +9951,6 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		origin: 'Hindu'
 	},
 	{
-		name: 'Genbu',
-		aliases: [
-			'Xuanwu'
-		],
-		affinities: {
-			skillPotential: {
-				Phys: 2,
-				Fire: -6,
-				Ice: 5,
-				Elec: 0,
-				Force: 0,
-				Light: 0,
-				Dark: 0,
-				Almighty: 0,
-				Ailment: 0,
-				Recovery: 0,
-				Support: 2
-			},
-			inherit: 'Ice'
-		},
-		arcana: 'Temperance',
-		race: 'Dragon',
-		level: 23,
-		hp: 153,
-		mp: 88,
-		stats: {
-			st: 23,
-			vi: 28,
-			ma: 15,
-			ag: 8,
-			lu: 16
-		},
-		learnset: [
-			{
-				name: 'Ice Breath',
-				level: 0
-			},
-			{
-				name: 'Rakukaja',
-				level: 0
-			},
-			{
-				name: 'Heavy Blow',
-				level: 24
-			},
-			{
-				name: 'Bufula',
-				level: 25
-			},
-			{
-				name: 'Critical Aura',
-				level: 26
-			}
-		],
-		resistances: {
-			ailments: {},
-			weak: [
-				'Fire'
-			],
-			resist: [],
-			null: [
-				'Ice'
-			],
-			drain: [],
-			repel: []
-		},
-		game: 'smt5',
-		alignment: {
-			moral: 'Light',
-			ethical: 'Chaos'
-		},
-		lore: 'One of the Ssu-Ling, celestial creatures in Chinese mythology.\nIt represents the north, the season of winter, and the element of water. Known to be a great warrior, it is said to support the Earth from below.',
-		origin: 'Chinese'
-	},
-	{
 		name: 'Ghoul',
 		affinities: {
 			skillPotential: null,
@@ -13649,7 +13574,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		evoSkillName: null
 	},
 	{
-		name: 'Izanagi-no-Okami Picaro',
+		name: 'Izanagi-no-Okami Pic.',
+		aliases: [
+			'Izanagi-no-Okami Picaro'
+		],
 		affinities: {
 			skillPotential: null,
 			inherit: 'Almighty'
@@ -16649,10 +16577,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		origin: 'Japanese'
 	},
 	{
-		name: 'Koropokguru',
+		name: 'Koropokkur',
 		aliases: [
 			'Koropokkuru',
-			'Koropokkur'
+			'Koropokguru'
 		],
 		affinities: {
 			skillPotential: {
@@ -17275,9 +17203,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		origin: 'Japanese'
 	},
 	{
-		name: 'Kushinada',
+		name: 'Kushinada-Hime',
 		aliases: [
-			'Kushinada-Hime'
+			'Kushinada'
 		],
 		affinities: {
 			skillPotential: {
@@ -18853,77 +18781,6 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		user: 'Tohru Adachi',
 		stage: 2,
 		evoSkillName: null
-	},
-	{
-		name: 'Magatsu-Izanagi Picaro',
-		aliases: [
-			'M. Izanagi Picaro'
-		],
-		affinities: {
-			skillPotential: null,
-			inherit: 'Almighty'
-		},
-		arcana: 'Tower',
-		race: 'Picaro',
-		level: 48,
-		hp: null,
-		mp: null,
-		stats: {
-			st: 40,
-			vi: 35,
-			ma: 38,
-			ag: 27,
-			lu: 11
-		},
-		learnset: [
-			{
-				name: 'Magatsu Mandala',
-				level: 0
-			},
-			{
-				name: 'Megidola',
-				level: 0
-			},
-			{
-				name: 'Ghastly Wail',
-				level: 0
-			},
-			{
-				name: 'Magarudyne',
-				level: 49
-			},
-			{
-				name: 'Bloodbath',
-				level: 50
-			},
-			{
-				name: 'Speed Master',
-				level: 52
-			},
-			{
-				name: 'Heat Riser',
-				level: 54
-			}
-		],
-		resistances: {
-			ailments: null,
-			weak: [
-				'Nuke'
-			],
-			resist: [
-				'Gun'
-			],
-			null: [
-				'Light',
-				'Dark'
-			],
-			drain: [],
-			repel: []
-		},
-		game: 'p5',
-		alignment: null,
-		lore: 'A Persona turned picaro after becoming the Trickster\'s mask. He\'s Izanagi\'s rival. Magatsu means "calamity," so, unlike Izanagi who founded the land and brought order, he leads all back into chaos.',
-		origin: 'ATLUS Original'
 	},
 	{
 		name: 'Mahakala',
@@ -21253,6 +21110,77 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		origin: 'Buryat'
 	},
 	{
+		name: 'M. Izanagi Picaro',
+		aliases: [
+			'Magatsu-Izanagi Picaro'
+		],
+		affinities: {
+			skillPotential: null,
+			inherit: 'Almighty'
+		},
+		arcana: 'Tower',
+		race: 'Picaro',
+		level: 48,
+		hp: null,
+		mp: null,
+		stats: {
+			st: 40,
+			vi: 35,
+			ma: 38,
+			ag: 27,
+			lu: 11
+		},
+		learnset: [
+			{
+				name: 'Magatsu Mandala',
+				level: 0
+			},
+			{
+				name: 'Megidola',
+				level: 0
+			},
+			{
+				name: 'Ghastly Wail',
+				level: 0
+			},
+			{
+				name: 'Magarudyne',
+				level: 49
+			},
+			{
+				name: 'Bloodbath',
+				level: 50
+			},
+			{
+				name: 'Speed Master',
+				level: 52
+			},
+			{
+				name: 'Heat Riser',
+				level: 54
+			}
+		],
+		resistances: {
+			ailments: null,
+			weak: [
+				'Nuke'
+			],
+			resist: [
+				'Gun'
+			],
+			null: [
+				'Light',
+				'Dark'
+			],
+			drain: [],
+			repel: []
+		},
+		game: 'p5',
+		alignment: null,
+		lore: 'A Persona turned picaro after becoming the Trickster\'s mask. He\'s Izanagi\'s rival. Magatsu means "calamity," so, unlike Izanagi who founded the land and brought order, he leads all back into chaos.',
+		origin: 'ATLUS Original'
+	},
+	{
 		name: 'Naamah',
 		affinities: {
 			skillPotential: {
@@ -21413,6 +21341,88 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			ethical: 'Chaos'
 		},
 		lore: 'Half-snake, half-human, they are divine beings in Hindu lore.\nWorshipped as bringers of fertility, they live in the bottoms of lakes and seas, and enjoy singing and dancing outside of battle.',
+		origin: 'Hindu'
+	},
+	{
+		name: 'Naga Raja',
+		aliases: [
+			'Raja Naga'
+		],
+		affinities: {
+			skillPotential: {
+				Phys: 3,
+				Fire: -3,
+				Ice: 1,
+				Elec: 3,
+				Force: -4,
+				Light: 0,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 0,
+				Recovery: 0,
+				Support: -1
+			},
+			inherit: 'Elec'
+		},
+		arcana: 'Temperance',
+		race: 'Snake',
+		level: 40,
+		hp: 241,
+		mp: 140,
+		stats: {
+			st: 33,
+			vi: 36,
+			ma: 31,
+			ag: 19,
+			lu: 22
+		},
+		learnset: [
+			{
+				name: 'Elec Pleroma',
+				level: 0
+			},
+			{
+				name: 'Ice Breath',
+				level: 0
+			},
+			{
+				name: 'Shockbound',
+				level: 0
+			},
+			{
+				name: 'Critical Slash',
+				level: 41
+			},
+			{
+				name: 'Pierce Armor',
+				level: 42
+			},
+			{
+				name: 'Storm Dracostrike',
+				level: 43
+			}
+		],
+		resistances: {
+			ailments: {},
+			weak: [
+				'Fire',
+				'Force'
+			],
+			resist: [
+				'Ice'
+			],
+			null: [],
+			drain: [
+				'Elec'
+			],
+			repel: []
+		},
+		game: 'smt5',
+		alignment: {
+			moral: 'Neutral',
+			ethical: 'Chaos'
+		},
+		lore: 'The king of the Naga, a half-man, half-snake tribe in Hindu lore.\nThe dragon kings of Nanda and Takshaka of Buddhist myth fall into this royal category.',
 		origin: 'Hindu'
 	},
 	{
@@ -23733,10 +23743,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		evoSkillName: null
 	},
 	{
-		name: 'Orpheus F Picaro',
+		name: 'Orpheus Picaro F',
 		aliases: [
 			'F Orpheus Picaro',
-			'Orpheus Picaro F'
+			'Orpheus F Picaro'
 		],
 		affinities: {
 			skillPotential: null,
@@ -25638,9 +25648,94 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		evoSkillName: null
 	},
 	{
-		name: 'Queen Mab',
+		name: 'Qing Long',
 		aliases: [
-			'Queen Medb'
+			'Long',
+			'Seiryu',
+			'Seiryuu'
+		],
+		affinities: {
+			skillPotential: {
+				Phys: 0,
+				Fire: 0,
+				Ice: 2,
+				Elec: -6,
+				Force: 5,
+				Light: 0,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 0,
+				Recovery: 0,
+				Support: 1
+			},
+			inherit: 'Ice'
+		},
+		arcana: 'Councillor',
+		race: 'Dragon',
+		level: 45,
+		hp: 231,
+		mp: 183,
+		stats: {
+			st: 31,
+			vi: 29,
+			ma: 33,
+			ag: 36,
+			lu: 31
+		},
+		learnset: [
+			{
+				name: 'Bufula',
+				level: 0
+			},
+			{
+				name: 'Matarunda',
+				level: 0
+			},
+			{
+				name: 'Wind Breath',
+				level: 0
+			},
+			{
+				name: 'Ice Pleroma',
+				level: 46
+			},
+			{
+				name: 'Eat Whole',
+				level: 47
+			},
+			{
+				name: 'Dragon Eye',
+				level: 48
+			}
+		],
+		resistances: {
+			ailments: {
+				Sleep: 'Weak'
+			},
+			weak: [
+				'Elec'
+			],
+			resist: [
+				'Ice'
+			],
+			null: [
+				'Force'
+			],
+			drain: [],
+			repel: []
+		},
+		game: 'smt5',
+		alignment: {
+			moral: 'Light',
+			ethical: 'Chaos'
+		},
+		lore: 'One of the Ssu-Ling, celestial creatures in Chinese mythology.\nIt represents the east, the season of spring, and the element of wood. It is the noblest of the Ssu-Ling and dwells in a palace at the bottom of the ocean. In Feng Shui, placing water to the east is known to guide its power, and is said to bring good fortune.',
+		origin: 'Chinese'
+	},
+	{
+		name: 'Queen Medb',
+		aliases: [
+			'Queen Mab'
 		],
 		affinities: {
 			skillPotential: {
@@ -25865,88 +25960,6 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		},
 		lore: 'An Aztec creator deity known as the Feathered Serpent.\nHe is identified as the sun and is also known as the god of wind and giver of breath. He is said to have created humans by sprinkling blood on the bones of people from a previously created world, and acts as guardian of their fertility and culture. According to legend, the planet Venus is actually Quetzalcoatl\'s heart.',
 		origin: 'South American'
-	},
-	{
-		name: 'Raja Naga',
-		aliases: [
-			'Naga Raja'
-		],
-		affinities: {
-			skillPotential: {
-				Phys: 3,
-				Fire: -3,
-				Ice: 1,
-				Elec: 3,
-				Force: -4,
-				Light: 0,
-				Dark: 0,
-				Almighty: 0,
-				Ailment: 0,
-				Recovery: 0,
-				Support: -1
-			},
-			inherit: 'Elec'
-		},
-		arcana: 'Temperance',
-		race: 'Snake',
-		level: 40,
-		hp: 241,
-		mp: 140,
-		stats: {
-			st: 33,
-			vi: 36,
-			ma: 31,
-			ag: 19,
-			lu: 22
-		},
-		learnset: [
-			{
-				name: 'Elec Pleroma',
-				level: 0
-			},
-			{
-				name: 'Ice Breath',
-				level: 0
-			},
-			{
-				name: 'Shockbound',
-				level: 0
-			},
-			{
-				name: 'Critical Slash',
-				level: 41
-			},
-			{
-				name: 'Pierce Armor',
-				level: 42
-			},
-			{
-				name: 'Storm Dracostrike',
-				level: 43
-			}
-		],
-		resistances: {
-			ailments: {},
-			weak: [
-				'Fire',
-				'Force'
-			],
-			resist: [
-				'Ice'
-			],
-			null: [],
-			drain: [
-				'Elec'
-			],
-			repel: []
-		},
-		game: 'smt5',
-		alignment: {
-			moral: 'Neutral',
-			ethical: 'Chaos'
-		},
-		lore: 'The king of the Naga, a half-man, half-snake tribe in Hindu lore.\nThe dragon kings of Nanda and Takshaka of Buddhist myth fall into this royal category.',
-		origin: 'Hindu'
 	},
 	{
 		name: 'Rakshasa',
@@ -27366,91 +27379,6 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		},
 		lore: 'The war goddess of Celtic lore as well as the queen of the Land of Shadows.\nShe is a skilled magician and a master warrior who trains the many young men who come to her in the art of war. The famed Cu Chulainn was one of her students and it is said that he received the legendary Gae Bolg from her upon mastering her teachings.',
 		origin: 'Celtic'
-	},
-	{
-		name: 'Seiryu',
-		aliases: [
-			'Long',
-			'Qing Long',
-			'Seiryuu'
-		],
-		affinities: {
-			skillPotential: {
-				Phys: 0,
-				Fire: 0,
-				Ice: 2,
-				Elec: -6,
-				Force: 5,
-				Light: 0,
-				Dark: 0,
-				Almighty: 0,
-				Ailment: 0,
-				Recovery: 0,
-				Support: 1
-			},
-			inherit: 'Ice'
-		},
-		arcana: 'Councillor',
-		race: 'Dragon',
-		level: 45,
-		hp: 231,
-		mp: 183,
-		stats: {
-			st: 31,
-			vi: 29,
-			ma: 33,
-			ag: 36,
-			lu: 31
-		},
-		learnset: [
-			{
-				name: 'Bufula',
-				level: 0
-			},
-			{
-				name: 'Matarunda',
-				level: 0
-			},
-			{
-				name: 'Wind Breath',
-				level: 0
-			},
-			{
-				name: 'Ice Pleroma',
-				level: 46
-			},
-			{
-				name: 'Eat Whole',
-				level: 47
-			},
-			{
-				name: 'Dragon Eye',
-				level: 48
-			}
-		],
-		resistances: {
-			ailments: {
-				Sleep: 'Weak'
-			},
-			weak: [
-				'Elec'
-			],
-			resist: [
-				'Ice'
-			],
-			null: [
-				'Force'
-			],
-			drain: [],
-			repel: []
-		},
-		game: 'smt5',
-		alignment: {
-			moral: 'Light',
-			ethical: 'Chaos'
-		},
-		lore: 'One of the Ssu-Ling, celestial creatures in Chinese mythology.\nIt represents the east, the season of spring, and the element of wood. It is the noblest of the Ssu-Ling and dwells in a palace at the bottom of the ocean. In Feng Shui, placing water to the east is known to guide its power, and is said to bring good fortune.',
-		origin: 'Chinese'
 	},
 	{
 		name: 'Seiten Taisei',
@@ -29383,85 +29311,6 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		user: 'Yosuke Hanamura',
 		stage: 2,
 		evoSkillName: null
-	},
-	{
-		name: 'Suzaku',
-		aliases: [
-			'Zhuque'
-		],
-		affinities: {
-			skillPotential: {
-				Phys: 0,
-				Fire: 5,
-				Ice: 0,
-				Elec: -6,
-				Force: 0,
-				Light: 0,
-				Dark: 0,
-				Almighty: 0,
-				Ailment: 1,
-				Recovery: 0,
-				Support: 1
-			},
-			inherit: 'Nuke'
-		},
-		arcana: 'Sun',
-		race: 'Avian',
-		level: 43,
-		hp: 188,
-		mp: 219,
-		stats: {
-			st: 23,
-			vi: 24,
-			ma: 41,
-			ag: 36,
-			lu: 28
-		},
-		learnset: [
-			{
-				name: 'Agilao',
-				level: 0
-			},
-			{
-				name: 'Fire Pleroma',
-				level: 0
-			},
-			{
-				name: 'Matarunda',
-				level: 0
-			},
-			{
-				name: 'Maragion',
-				level: 44
-			},
-			{
-				name: 'Fire Block',
-				level: 45
-			},
-			{
-				name: 'Dekunda',
-				level: 46
-			}
-		],
-		resistances: {
-			ailments: {},
-			weak: [
-				'Ice'
-			],
-			resist: [],
-			null: [
-				'Fire'
-			],
-			drain: [],
-			repel: []
-		},
-		game: 'smt5',
-		alignment: {
-			moral: 'Light',
-			ethical: 'Law'
-		},
-		lore: 'One of the Ssu-Ling, celestial creatures in Chinese mythology.\nIt represents the south, the season of summer, and the element of fire. It is said to resemble a quail in appearance and have a beautiful chirping voice.',
-		origin: 'Chinese'
 	},
 	{
 		name: 'Suzuka Gongen',
@@ -33127,6 +32976,81 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		origin: 'Chinese'
 	},
 	{
+		name: 'Xuanwu',
+		aliases: [
+			'Genbu'
+		],
+		affinities: {
+			skillPotential: {
+				Phys: 2,
+				Fire: -6,
+				Ice: 5,
+				Elec: 0,
+				Force: 0,
+				Light: 0,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 0,
+				Recovery: 0,
+				Support: 2
+			},
+			inherit: 'Ice'
+		},
+		arcana: 'Temperance',
+		race: 'Dragon',
+		level: 23,
+		hp: 153,
+		mp: 88,
+		stats: {
+			st: 23,
+			vi: 28,
+			ma: 15,
+			ag: 8,
+			lu: 16
+		},
+		learnset: [
+			{
+				name: 'Ice Breath',
+				level: 0
+			},
+			{
+				name: 'Rakukaja',
+				level: 0
+			},
+			{
+				name: 'Heavy Blow',
+				level: 24
+			},
+			{
+				name: 'Bufula',
+				level: 25
+			},
+			{
+				name: 'Critical Aura',
+				level: 26
+			}
+		],
+		resistances: {
+			ailments: {},
+			weak: [
+				'Fire'
+			],
+			resist: [],
+			null: [
+				'Ice'
+			],
+			drain: [],
+			repel: []
+		},
+		game: 'smt5',
+		alignment: {
+			moral: 'Light',
+			ethical: 'Chaos'
+		},
+		lore: 'One of the Ssu-Ling, celestial creatures in Chinese mythology.\nIt represents the north, the season of winter, and the element of water. Known to be a great warrior, it is said to support the Earth from below.',
+		origin: 'Chinese'
+	},
+	{
 		name: 'Yakshini',
 		aliases: [
 			'Yaksini'
@@ -34264,6 +34188,85 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			ethical: 'Chaos'
 		},
 		lore: 'A monstrous snake-like beast sighted in China during the Song dynasty.\nIt appeared before soldiers-in-training and tried to swallow humans, but was defeated by a soldier with sorcerous powers. A bizarre, hairy quadruped about three feet long, it emerges from a bamboo grove with a pig-like squeal. Because its features defy taxonomic classification, it is highly suspected to be a creature wholly unknown.',
+		origin: 'Chinese'
+	},
+	{
+		name: 'Zhuque',
+		aliases: [
+			'Suzaku'
+		],
+		affinities: {
+			skillPotential: {
+				Phys: 0,
+				Fire: 5,
+				Ice: 0,
+				Elec: -6,
+				Force: 0,
+				Light: 0,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 1,
+				Recovery: 0,
+				Support: 1
+			},
+			inherit: 'Nuke'
+		},
+		arcana: 'Sun',
+		race: 'Avian',
+		level: 43,
+		hp: 188,
+		mp: 219,
+		stats: {
+			st: 23,
+			vi: 24,
+			ma: 41,
+			ag: 36,
+			lu: 28
+		},
+		learnset: [
+			{
+				name: 'Agilao',
+				level: 0
+			},
+			{
+				name: 'Fire Pleroma',
+				level: 0
+			},
+			{
+				name: 'Matarunda',
+				level: 0
+			},
+			{
+				name: 'Maragion',
+				level: 44
+			},
+			{
+				name: 'Fire Block',
+				level: 45
+			},
+			{
+				name: 'Dekunda',
+				level: 46
+			}
+		],
+		resistances: {
+			ailments: {},
+			weak: [
+				'Ice'
+			],
+			resist: [],
+			null: [
+				'Fire'
+			],
+			drain: [],
+			repel: []
+		},
+		game: 'smt5',
+		alignment: {
+			moral: 'Light',
+			ethical: 'Law'
+		},
+		lore: 'One of the Ssu-Ling, celestial creatures in Chinese mythology.\nIt represents the south, the season of summer, and the element of fire. It is said to resemble a quail in appearance and have a beautiful chirping voice.',
 		origin: 'Chinese'
 	},
 	{
