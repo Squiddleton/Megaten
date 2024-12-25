@@ -2277,6 +2277,74 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		origin: 'Universal'
 	},
 	{
+		name: 'Ara Mitama',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Nuke'
+		},
+		arcana: 'Chariot',
+		race: 'Mitama',
+		level: 30,
+		hp: null,
+		mp: null,
+		stats: {
+			st: 20,
+			vi: 20,
+			ma: 18,
+			ag: 20,
+			lu: 19
+		},
+		learnset: [
+			{
+				name: 'Miracle Punch',
+				level: 0
+			},
+			{
+				name: 'Freila',
+				level: 0
+			},
+			{
+				name: 'Taunt - Persona',
+				level: 0
+			},
+			{
+				name: 'Rebellion',
+				level: 31
+			},
+			{
+				name: 'Marakunda',
+				level: 32
+			},
+			{
+				name: 'Rage Boost',
+				level: 34
+			},
+			{
+				name: 'Matarukaja',
+				level: 35
+			}
+		],
+		resistances: {
+			ailments: null,
+			weak: [
+				'Ice'
+			],
+			resist: [
+				'Phys'
+			],
+			null: [],
+			drain: [],
+			repel: []
+		},
+		game: 'p5',
+		alignment: {
+			moral: 'Light',
+			ethical: 'Neutral'
+		},
+		lore: 'One of the four great aspects of Shinto thought, it has the power to grant wildness and ferocity.\nIt is said to aid in one\'s bravery, growth, and endeavors, though it can potentially lead one in a negative direction.',
+		origin: 'Japanese'
+	},
+	{
 		name: 'Arahabaki',
 		affinities: {
 			skillPotential: {
@@ -2356,74 +2424,6 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			ethical: 'Chaos'
 		},
 		lore: 'A major deity in ancient Japanese mythology. Clay dolls were often sculpted in its image.\nHowever, because this god was known to be worshipped by a rebel, the dolls later came to be considered symbols of defiance.',
-		origin: 'Japanese'
-	},
-	{
-		name: 'Ara Mitama',
-		affinities: {
-			skillPotential: null,
-			inherit: 'Nuke'
-		},
-		arcana: 'Chariot',
-		race: 'Mitama',
-		level: 30,
-		hp: null,
-		mp: null,
-		stats: {
-			st: 20,
-			vi: 20,
-			ma: 18,
-			ag: 20,
-			lu: 19
-		},
-		learnset: [
-			{
-				name: 'Miracle Punch',
-				level: 0
-			},
-			{
-				name: 'Freila',
-				level: 0
-			},
-			{
-				name: 'Taunt - Persona',
-				level: 0
-			},
-			{
-				name: 'Rebellion',
-				level: 31
-			},
-			{
-				name: 'Marakunda',
-				level: 32
-			},
-			{
-				name: 'Rage Boost',
-				level: 34
-			},
-			{
-				name: 'Matarukaja',
-				level: 35
-			}
-		],
-		resistances: {
-			ailments: null,
-			weak: [
-				'Ice'
-			],
-			resist: [
-				'Phys'
-			],
-			null: [],
-			drain: [],
-			repel: []
-		},
-		game: 'p5',
-		alignment: {
-			moral: 'Light',
-			ethical: 'Neutral'
-		},
-		lore: 'One of the four great aspects of Shinto thought, it has the power to grant wildness and ferocity.\nIt is said to aid in one\'s bravery, growth, and endeavors, though it can potentially lead one in a negative direction.',
 		origin: 'Japanese'
 	},
 	{
@@ -6535,6 +6535,89 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		origin: 'Abrahamic'
 	},
 	{
+		name: 'Chi You',
+		affinities: {
+			skillPotential: {
+				Phys: 4,
+				Fire: -5,
+				Ice: 4,
+				Elec: -5,
+				Force: 2,
+				Light: 0,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 0,
+				Recovery: 0,
+				Support: 0
+			},
+			inherit: 'Psy'
+		},
+		arcana: 'Chariot',
+		race: 'Tyrant',
+		level: 77,
+		hp: 497,
+		mp: 325,
+		stats: {
+			st: 75,
+			vi: 67,
+			ma: 65,
+			ag: 39,
+			lu: 47
+		},
+		learnset: [
+			{
+				name: 'Yabusame Shot',
+				level: 0
+			},
+			{
+				name: 'Glacial Blast',
+				level: 0
+			},
+			{
+				name: 'Mazanbarion',
+				level: 0
+			},
+			{
+				name: 'High Phys Pleroma',
+				level: 0
+			},
+			{
+				name: 'Catastrophe',
+				level: 78
+			},
+			{
+				name: 'Myriad Slashes',
+				level: 79
+			},
+			{
+				name: 'Drain Ice',
+				level: 81
+			}
+		],
+		resistances: {
+			ailments: {},
+			weak: [
+				'Fire',
+				'Elec'
+			],
+			resist: [],
+			null: [
+				'Ice'
+			],
+			repel: [
+				'Force'
+			],
+			drain: []
+		},
+		game: 'smt5',
+		alignment: {
+			moral: 'Dark',
+			ethical: 'Chaos'
+		},
+		lore: 'A Chinese demon king often depicted with a bull\'s head, six or eight arms, and four eyes.\nHe invented many weapons and commanded an invincible army. Seeking control of the mortal world, he fought with the Yellow Emperor Huang Di. Though he was winning, the Yellow Emperor ultimately defeated him. Huang Di then had Chi You\'s head buried thousands of li apart from his body.',
+		origin: 'Chinese'
+	},
+	{
 		name: 'Chimera',
 		affinities: {
 			skillPotential: {
@@ -6617,89 +6700,6 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		},
 		lore: 'A monster that is part lion, part goat, and part snake.\nOriginally a symbol representing the seasons, it became a violent monster adopted into Greek mythology. Its father is Typhon and its mother Echidna.',
 		origin: 'Greco-Roman'
-	},
-	{
-		name: 'Chi You',
-		affinities: {
-			skillPotential: {
-				Phys: 4,
-				Fire: -5,
-				Ice: 4,
-				Elec: -5,
-				Force: 2,
-				Light: 0,
-				Dark: 0,
-				Almighty: 0,
-				Ailment: 0,
-				Recovery: 0,
-				Support: 0
-			},
-			inherit: 'Psy'
-		},
-		arcana: 'Chariot',
-		race: 'Tyrant',
-		level: 77,
-		hp: 497,
-		mp: 325,
-		stats: {
-			st: 75,
-			vi: 67,
-			ma: 65,
-			ag: 39,
-			lu: 47
-		},
-		learnset: [
-			{
-				name: 'Yabusame Shot',
-				level: 0
-			},
-			{
-				name: 'Glacial Blast',
-				level: 0
-			},
-			{
-				name: 'Mazanbarion',
-				level: 0
-			},
-			{
-				name: 'High Phys Pleroma',
-				level: 0
-			},
-			{
-				name: 'Catastrophe',
-				level: 78
-			},
-			{
-				name: 'Myriad Slashes',
-				level: 79
-			},
-			{
-				name: 'Drain Ice',
-				level: 81
-			}
-		],
-		resistances: {
-			ailments: {},
-			weak: [
-				'Fire',
-				'Elec'
-			],
-			resist: [],
-			null: [
-				'Ice'
-			],
-			repel: [
-				'Force'
-			],
-			drain: []
-		},
-		game: 'smt5',
-		alignment: {
-			moral: 'Dark',
-			ethical: 'Chaos'
-		},
-		lore: 'A Chinese demon king often depicted with a bull\'s head, six or eight arms, and four eyes.\nHe invented many weapons and commanded an invincible army. Seeking control of the mortal world, he fought with the Yellow Emperor Huang Di. Though he was winning, the Yellow Emperor ultimately defeated him. Huang Di then had Chi You\'s head buried thousands of li apart from his body.',
-		origin: 'Chinese'
 	},
 	{
 		name: 'Choronzon',
@@ -12361,6 +12361,80 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		origin: 'Egyptian'
 	},
 	{
+		name: 'Hua Po',
+		affinities: {
+			skillPotential: {
+				Phys: 0,
+				Fire: 2,
+				Ice: -3,
+				Elec: 0,
+				Force: 0,
+				Light: 0,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 0,
+				Recovery: 1,
+				Support: 1
+			},
+			inherit: 'Fire'
+		},
+		arcana: 'Hanged',
+		race: 'Jirae',
+		level: 31,
+		hp: 133,
+		mp: 168,
+		stats: {
+			st: 12,
+			vi: 21,
+			ma: 31,
+			ag: 29,
+			lu: 29
+		},
+		learnset: [
+			{
+				name: 'Agilao',
+				level: 0
+			},
+			{
+				name: 'Maragi',
+				level: 0
+			},
+			{
+				name: 'Matarunda',
+				level: 32
+			},
+			{
+				name: 'Light Mana Aid',
+				level: 33
+			},
+			{
+				name: 'Media',
+				level: 34
+			}
+		],
+		resistances: {
+			ailments: {
+				Mirage: 'Weak'
+			},
+			weak: [
+				'Ice'
+			],
+			resist: [],
+			null: [
+				'Fire'
+			],
+			drain: [],
+			repel: []
+		},
+		game: 'smt5',
+		alignment: {
+			moral: 'Neutral',
+			ethical: 'Neutral'
+		},
+		lore: 'Tree spirits in Chinese mythology that are born when three or more people hang themselves from the same tree.\nThey take the form of a beautiful woman in white clothing, however they are much smaller in size than a human. They cannot talk, though they can chirp like birds.',
+		origin: 'Chinese'
+	},
+	{
 		name: 'Huang Long',
 		aliases: [
 			'Kohryu'
@@ -12446,80 +12520,6 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			ethical: 'Chaos'
 		},
 		lore: 'One of the holy dragons of Chinese lore, the Golden Dragon appears in times of great fortune or joy.\nHis dominion over the earth extends to the four gods Qing Long, Xuanwu, Zhuque, and Baihu.',
-		origin: 'Chinese'
-	},
-	{
-		name: 'Hua Po',
-		affinities: {
-			skillPotential: {
-				Phys: 0,
-				Fire: 2,
-				Ice: -3,
-				Elec: 0,
-				Force: 0,
-				Light: 0,
-				Dark: 0,
-				Almighty: 0,
-				Ailment: 0,
-				Recovery: 1,
-				Support: 1
-			},
-			inherit: 'Fire'
-		},
-		arcana: 'Hanged',
-		race: 'Jirae',
-		level: 31,
-		hp: 133,
-		mp: 168,
-		stats: {
-			st: 12,
-			vi: 21,
-			ma: 31,
-			ag: 29,
-			lu: 29
-		},
-		learnset: [
-			{
-				name: 'Agilao',
-				level: 0
-			},
-			{
-				name: 'Maragi',
-				level: 0
-			},
-			{
-				name: 'Matarunda',
-				level: 32
-			},
-			{
-				name: 'Light Mana Aid',
-				level: 33
-			},
-			{
-				name: 'Media',
-				level: 34
-			}
-		],
-		resistances: {
-			ailments: {
-				Mirage: 'Weak'
-			},
-			weak: [
-				'Ice'
-			],
-			resist: [],
-			null: [
-				'Fire'
-			],
-			drain: [],
-			repel: []
-		},
-		game: 'smt5',
-		alignment: {
-			moral: 'Neutral',
-			ethical: 'Neutral'
-		},
-		lore: 'Tree spirits in Chinese mythology that are born when three or more people hang themselves from the same tree.\nThey take the form of a beautiful woman in white clothing, however they are much smaller in size than a human. They cannot talk, though they can chirp like birds.',
 		origin: 'Chinese'
 	},
 	{
@@ -13497,6 +13497,72 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		evoSkillName: null
 	},
 	{
+		name: 'Izanagi Picaro',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Almighty'
+		},
+		arcana: 'Fool',
+		race: 'Picaro',
+		level: 23,
+		hp: null,
+		mp: null,
+		stats: {
+			st: 16,
+			vi: 15,
+			ma: 15,
+			ag: 16,
+			lu: 14
+		},
+		learnset: [
+			{
+				name: 'Cross Slash',
+				level: 0
+			},
+			{
+				name: 'Zionga',
+				level: 0
+			},
+			{
+				name: 'Rakukaja',
+				level: 0
+			},
+			{
+				name: 'Rising Slash',
+				level: 24
+			},
+			{
+				name: 'Null Phys',
+				level: 25
+			},
+			{
+				name: 'Mazionga',
+				level: 27
+			},
+			{
+				name: 'Growth 3',
+				level: 28
+			}
+		],
+		resistances: {
+			ailments: null,
+			weak: [
+				'Wind'
+			],
+			resist: [],
+			null: [
+				'Elec',
+				'Dark'
+			],
+			drain: [],
+			repel: []
+		},
+		game: 'p5',
+		alignment: null,
+		lore: 'A Persona turned picaro after becoming the Trickster\'s mask. One of the ancient gods who existed before Japan was formed. He created the Oyashima from chaos, then gave birth to countless children.',
+		origin: 'Japanese'
+	},
+	{
 		name: 'Izanagi-no-Okami',
 		affinities: {
 			skillPotential: null,
@@ -13648,72 +13714,6 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		game: 'p5',
 		alignment: null,
 		lore: 'A Persona turned picaro after becoming the Trickster\'s mask. A Japanese god of creation, he begat the sky, ocean, and night, and 8 million other gods. Opposes his once-wife, the goddess Izanami.',
-		origin: 'Japanese'
-	},
-	{
-		name: 'Izanagi Picaro',
-		affinities: {
-			skillPotential: null,
-			inherit: 'Almighty'
-		},
-		arcana: 'Fool',
-		race: 'Picaro',
-		level: 23,
-		hp: null,
-		mp: null,
-		stats: {
-			st: 16,
-			vi: 15,
-			ma: 15,
-			ag: 16,
-			lu: 14
-		},
-		learnset: [
-			{
-				name: 'Cross Slash',
-				level: 0
-			},
-			{
-				name: 'Zionga',
-				level: 0
-			},
-			{
-				name: 'Rakukaja',
-				level: 0
-			},
-			{
-				name: 'Rising Slash',
-				level: 24
-			},
-			{
-				name: 'Null Phys',
-				level: 25
-			},
-			{
-				name: 'Mazionga',
-				level: 27
-			},
-			{
-				name: 'Growth 3',
-				level: 28
-			}
-		],
-		resistances: {
-			ailments: null,
-			weak: [
-				'Wind'
-			],
-			resist: [],
-			null: [
-				'Elec',
-				'Dark'
-			],
-			drain: [],
-			repel: []
-		},
-		game: 'p5',
-		alignment: null,
-		lore: 'A Persona turned picaro after becoming the Trickster\'s mask. One of the ancient gods who existed before Japan was formed. He created the Oyashima from chaos, then gave birth to countless children.',
 		origin: 'Japanese'
 	},
 	{
@@ -14771,6 +14771,136 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		origin: 'Hindu'
 	},
 	{
+		name: 'Kamu Susano-o',
+		affinities: {
+			skillPotential: null,
+			inherit: null
+		},
+		arcana: 'Emperor',
+		race: 'Persona',
+		level: 15,
+		hp: null,
+		mp: null,
+		stats: {
+			st: 13,
+			vi: 11,
+			ma: 10,
+			ag: 10,
+			lu: 8
+		},
+		learnset: [
+			{
+				name: 'Bufu',
+				level: 0
+			},
+			{
+				name: 'Giant Slice',
+				level: 0
+			},
+			{
+				name: 'Sukukaja',
+				level: 0
+			},
+			{
+				name: 'Vicious Strike',
+				level: 18
+			},
+			{
+				name: 'Mabufu',
+				level: 20
+			},
+			{
+				name: 'Counter - Persona',
+				level: 22
+			},
+			{
+				name: 'Rising Slash',
+				level: 23
+			},
+			{
+				name: 'Dormin Rush',
+				level: 27
+			},
+			{
+				name: 'Bufula',
+				level: 29
+			},
+			{
+				name: 'Speed Master',
+				level: 31
+			},
+			{
+				name: 'Tempest Slash',
+				level: 34
+			},
+			{
+				name: 'Counterstrike',
+				level: 37
+			},
+			{
+				name: 'Mabufula',
+				level: 40
+			},
+			{
+				name: 'Heat Wave',
+				level: 43
+			},
+			{
+				name: 'Deadly Fury',
+				level: 47
+			},
+			{
+				name: 'Masukukaja',
+				level: 49
+			},
+			{
+				name: 'Bufudyne',
+				level: 53
+			},
+			{
+				name: 'High Counter',
+				level: 58
+			},
+			{
+				name: 'Myriad Slashes',
+				level: 62
+			},
+			{
+				name: 'Mabufudyne',
+				level: 65
+			},
+			{
+				name: 'Vorpal Blade',
+				level: 69
+			},
+			{
+				name: 'Brave Blade',
+				level: 73
+			}
+		],
+		resistances: {
+			ailments: null,
+			weak: [
+				'Fire'
+			],
+			resist: [
+				'Wind'
+			],
+			null: [
+				'Ice'
+			],
+			drain: [],
+			repel: []
+		},
+		game: 'p5',
+		alignment: null,
+		lore: 'A Japanese god found in the Izumo Fudoki. He was one of the three gods born from Izanagi. He was a violent ruffian, but also has a sensitive side, showing love for his mother and reading poems.',
+		origin: 'Japanese',
+		user: 'Yusuke Kitagawa',
+		stage: 2,
+		evoSkillName: 'Evade Fire'
+	},
+	{
 		name: 'Kamui',
 		affinities: {
 			skillPotential: null,
@@ -14997,136 +15127,6 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		user: 'Teddie',
 		stage: 3,
 		evoSkillName: 'Kamui Miracle'
-	},
-	{
-		name: 'Kamu Susano-o',
-		affinities: {
-			skillPotential: null,
-			inherit: null
-		},
-		arcana: 'Emperor',
-		race: 'Persona',
-		level: 15,
-		hp: null,
-		mp: null,
-		stats: {
-			st: 13,
-			vi: 11,
-			ma: 10,
-			ag: 10,
-			lu: 8
-		},
-		learnset: [
-			{
-				name: 'Bufu',
-				level: 0
-			},
-			{
-				name: 'Giant Slice',
-				level: 0
-			},
-			{
-				name: 'Sukukaja',
-				level: 0
-			},
-			{
-				name: 'Vicious Strike',
-				level: 18
-			},
-			{
-				name: 'Mabufu',
-				level: 20
-			},
-			{
-				name: 'Counter - Persona',
-				level: 22
-			},
-			{
-				name: 'Rising Slash',
-				level: 23
-			},
-			{
-				name: 'Dormin Rush',
-				level: 27
-			},
-			{
-				name: 'Bufula',
-				level: 29
-			},
-			{
-				name: 'Speed Master',
-				level: 31
-			},
-			{
-				name: 'Tempest Slash',
-				level: 34
-			},
-			{
-				name: 'Counterstrike',
-				level: 37
-			},
-			{
-				name: 'Mabufula',
-				level: 40
-			},
-			{
-				name: 'Heat Wave',
-				level: 43
-			},
-			{
-				name: 'Deadly Fury',
-				level: 47
-			},
-			{
-				name: 'Masukukaja',
-				level: 49
-			},
-			{
-				name: 'Bufudyne',
-				level: 53
-			},
-			{
-				name: 'High Counter',
-				level: 58
-			},
-			{
-				name: 'Myriad Slashes',
-				level: 62
-			},
-			{
-				name: 'Mabufudyne',
-				level: 65
-			},
-			{
-				name: 'Vorpal Blade',
-				level: 69
-			},
-			{
-				name: 'Brave Blade',
-				level: 73
-			}
-		],
-		resistances: {
-			ailments: null,
-			weak: [
-				'Fire'
-			],
-			resist: [
-				'Wind'
-			],
-			null: [
-				'Ice'
-			],
-			drain: [],
-			repel: []
-		},
-		game: 'p5',
-		alignment: null,
-		lore: 'A Japanese god found in the Izumo Fudoki. He was one of the three gods born from Izanagi. He was a violent ruffian, but also has a sensitive side, showing love for his mother and reading poems.',
-		origin: 'Japanese',
-		user: 'Yusuke Kitagawa',
-		stage: 2,
-		evoSkillName: 'Evade Fire'
 	},
 	{
 		name: 'Kanzeon',
@@ -15739,6 +15739,84 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		origin: 'Japanese'
 	},
 	{
+		name: 'Kin-Ki',
+		affinities: {
+			skillPotential: {
+				Phys: 4,
+				Fire: 0,
+				Ice: 0,
+				Elec: 2,
+				Force: -4,
+				Light: 0,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 0,
+				Recovery: -2,
+				Support: 0
+			},
+			inherit: 'Phys'
+		},
+		arcana: 'Chariot',
+		race: 'Brute',
+		level: 49,
+		hp: 323,
+		mp: 170,
+		stats: {
+			st: 43,
+			vi: 52,
+			ma: 27,
+			ag: 21,
+			lu: 25
+		},
+		learnset: [
+			{
+				name: 'Berserker God',
+				level: 0
+			},
+			{
+				name: 'Deathbound',
+				level: 0
+			},
+			{
+				name: 'Retaliate',
+				level: 0
+			},
+			{
+				name: 'Shockbound',
+				level: 50
+			},
+			{
+				name: 'Endure',
+				level: 51
+			},
+			{
+				name: 'Rampage',
+				level: 52
+			}
+		],
+		resistances: {
+			ailments: {
+				Mirage: 'Weak'
+			},
+			weak: [
+				'Force'
+			],
+			resist: [],
+			null: [
+				'Elec'
+			],
+			drain: [],
+			repel: []
+		},
+		game: 'smt5',
+		alignment: {
+			moral: 'Neutral',
+			ethical: 'Chaos'
+		},
+		lore: 'One of the four oni controlled by Fujiwara no Chikata, its body is so hard that no weapons can penetrate it.\nIt and its comrades fell into hell through holes that can still be found in Mie Prefecture, Japan (the modern-day Iga Province).',
+		origin: 'Japanese'
+	},
+	{
 		name: 'King Frost',
 		affinities: {
 			skillPotential: {
@@ -15885,84 +15963,6 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		},
 		lore: 'The son and second consort to the female dragon Tiamat. He was to be the leader of the gods, but was killed by Marduk. Mankind was created from his blood.',
 		origin: 'Mesopotamian'
-	},
-	{
-		name: 'Kin-Ki',
-		affinities: {
-			skillPotential: {
-				Phys: 4,
-				Fire: 0,
-				Ice: 0,
-				Elec: 2,
-				Force: -4,
-				Light: 0,
-				Dark: 0,
-				Almighty: 0,
-				Ailment: 0,
-				Recovery: -2,
-				Support: 0
-			},
-			inherit: 'Phys'
-		},
-		arcana: 'Chariot',
-		race: 'Brute',
-		level: 49,
-		hp: 323,
-		mp: 170,
-		stats: {
-			st: 43,
-			vi: 52,
-			ma: 27,
-			ag: 21,
-			lu: 25
-		},
-		learnset: [
-			{
-				name: 'Berserker God',
-				level: 0
-			},
-			{
-				name: 'Deathbound',
-				level: 0
-			},
-			{
-				name: 'Retaliate',
-				level: 0
-			},
-			{
-				name: 'Shockbound',
-				level: 50
-			},
-			{
-				name: 'Endure',
-				level: 51
-			},
-			{
-				name: 'Rampage',
-				level: 52
-			}
-		],
-		resistances: {
-			ailments: {
-				Mirage: 'Weak'
-			},
-			weak: [
-				'Force'
-			],
-			resist: [],
-			null: [
-				'Elec'
-			],
-			drain: [],
-			repel: []
-		},
-		game: 'smt5',
-		alignment: {
-			moral: 'Neutral',
-			ethical: 'Chaos'
-		},
-		lore: 'One of the four oni controlled by Fujiwara no Chikata, its body is so hard that no weapons can penetrate it.\nIt and its comrades fell into hell through holes that can still be found in Mie Prefecture, Japan (the modern-day Iga Province).',
-		origin: 'Japanese'
 	},
 	{
 		name: 'Kinmamon',
@@ -18468,6 +18468,77 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		evoSkillName: 'Life Wall'
 	},
 	{
+		name: 'M. Izanagi Picaro',
+		aliases: [
+			'Magatsu-Izanagi Picaro'
+		],
+		affinities: {
+			skillPotential: null,
+			inherit: 'Almighty'
+		},
+		arcana: 'Tower',
+		race: 'Picaro',
+		level: 48,
+		hp: null,
+		mp: null,
+		stats: {
+			st: 40,
+			vi: 35,
+			ma: 38,
+			ag: 27,
+			lu: 11
+		},
+		learnset: [
+			{
+				name: 'Magatsu Mandala',
+				level: 0
+			},
+			{
+				name: 'Megidola',
+				level: 0
+			},
+			{
+				name: 'Ghastly Wail',
+				level: 0
+			},
+			{
+				name: 'Magarudyne',
+				level: 49
+			},
+			{
+				name: 'Bloodbath',
+				level: 50
+			},
+			{
+				name: 'Speed Master',
+				level: 52
+			},
+			{
+				name: 'Heat Riser',
+				level: 54
+			}
+		],
+		resistances: {
+			ailments: null,
+			weak: [
+				'Nuke'
+			],
+			resist: [
+				'Gun'
+			],
+			null: [
+				'Light',
+				'Dark'
+			],
+			drain: [],
+			repel: []
+		},
+		game: 'p5',
+		alignment: null,
+		lore: 'A Persona turned picaro after becoming the Trickster\'s mask. He\'s Izanagi\'s rival. Magatsu means "calamity," so, unlike Izanagi who founded the land and brought order, he leads all back into chaos.',
+		origin: 'ATLUS Original'
+	},
+	{
 		name: 'Macabre',
 		affinities: {
 			skillPotential: {
@@ -18545,88 +18616,6 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		},
 		lore: 'An evil spirit appearing in medieval oratorios as the grim reaper.\nIt is truly Death itself, with the power to lead humans to their demise in an instant. It is depicted as a skeleton with a black cloak and a sickle to reap human souls in a single stroke. True to its name, it dances the feared Dance of Death, a reminder that all worldly things must someday meet their end.',
 		origin: 'European'
-	},
-	{
-		name: 'Mada',
-		affinities: {
-			skillPotential: {
-				Phys: 3,
-				Fire: 5,
-				Ice: -4,
-				Elec: 0,
-				Force: 0,
-				Light: 0,
-				Dark: 0,
-				Almighty: -3,
-				Ailment: 0,
-				Recovery: 3,
-				Support: 2
-			},
-			inherit: 'Fire'
-		},
-		arcana: 'Tower',
-		race: 'Vile',
-		level: 76,
-		hp: 469,
-		mp: 353,
-		stats: {
-			st: 64,
-			vi: 61,
-			ma: 69,
-			ag: 41,
-			lu: 38
-		},
-		learnset: [
-			{
-				name: 'Hades Blast',
-				level: 0
-			},
-			{
-				name: 'Trisagion',
-				level: 0
-			},
-			{
-				name: 'Mediarahan',
-				level: 0
-			},
-			{
-				name: 'Debilitate',
-				level: 0
-			},
-			{
-				name: 'Dekunda',
-				level: 77
-			},
-			{
-				name: 'Ragnarok',
-				level: 79
-			},
-			{
-				name: 'Akashic Arts',
-				level: 80
-			}
-		],
-		resistances: {
-			ailments: {},
-			weak: [
-				'Ice'
-			],
-			resist: [],
-			null: [
-				'Dark'
-			],
-			repel: [],
-			drain: [
-				'Fire'
-			]
-		},
-		game: 'smt5',
-		alignment: {
-			moral: 'Dark',
-			ethical: 'Law'
-		},
-		lore: 'A giant Asura in Hinduism whose name means "the intoxicator."\nIt is said that the sage Chyavana created it from fire. Mada has the power to swallow its enemies, and even the deity Indra has been said to surrender to its power.',
-		origin: 'Hindu'
 	},
 	{
 		name: 'Mad Gasser',
@@ -18710,6 +18699,88 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		},
 		lore: 'A mysterious figure that spreads and unknown poisonous gas around.\nHe wears all black and is said to be a tall man. The gas he uses has a sweet smell, but inhaling it will cause intense headaches and vomiting. He returns when people begin to forget his existence, though he is rarely sighted.',
 		origin: 'North American'
+	},
+	{
+		name: 'Mada',
+		affinities: {
+			skillPotential: {
+				Phys: 3,
+				Fire: 5,
+				Ice: -4,
+				Elec: 0,
+				Force: 0,
+				Light: 0,
+				Dark: 0,
+				Almighty: -3,
+				Ailment: 0,
+				Recovery: 3,
+				Support: 2
+			},
+			inherit: 'Fire'
+		},
+		arcana: 'Tower',
+		race: 'Vile',
+		level: 76,
+		hp: 469,
+		mp: 353,
+		stats: {
+			st: 64,
+			vi: 61,
+			ma: 69,
+			ag: 41,
+			lu: 38
+		},
+		learnset: [
+			{
+				name: 'Hades Blast',
+				level: 0
+			},
+			{
+				name: 'Trisagion',
+				level: 0
+			},
+			{
+				name: 'Mediarahan',
+				level: 0
+			},
+			{
+				name: 'Debilitate',
+				level: 0
+			},
+			{
+				name: 'Dekunda',
+				level: 77
+			},
+			{
+				name: 'Ragnarok',
+				level: 79
+			},
+			{
+				name: 'Akashic Arts',
+				level: 80
+			}
+		],
+		resistances: {
+			ailments: {},
+			weak: [
+				'Ice'
+			],
+			resist: [],
+			null: [
+				'Dark'
+			],
+			repel: [],
+			drain: [
+				'Fire'
+			]
+		},
+		game: 'smt5',
+		alignment: {
+			moral: 'Dark',
+			ethical: 'Law'
+		},
+		lore: 'A giant Asura in Hinduism whose name means "the intoxicator."\nIt is said that the sage Chyavana created it from fire. Mada has the power to swallow its enemies, and even the deity Indra has been said to surrender to its power.',
+		origin: 'Hindu'
 	},
 	{
 		name: 'Magatsu-Izanagi',
@@ -21110,77 +21181,6 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		origin: 'Buryat'
 	},
 	{
-		name: 'M. Izanagi Picaro',
-		aliases: [
-			'Magatsu-Izanagi Picaro'
-		],
-		affinities: {
-			skillPotential: null,
-			inherit: 'Almighty'
-		},
-		arcana: 'Tower',
-		race: 'Picaro',
-		level: 48,
-		hp: null,
-		mp: null,
-		stats: {
-			st: 40,
-			vi: 35,
-			ma: 38,
-			ag: 27,
-			lu: 11
-		},
-		learnset: [
-			{
-				name: 'Magatsu Mandala',
-				level: 0
-			},
-			{
-				name: 'Megidola',
-				level: 0
-			},
-			{
-				name: 'Ghastly Wail',
-				level: 0
-			},
-			{
-				name: 'Magarudyne',
-				level: 49
-			},
-			{
-				name: 'Bloodbath',
-				level: 50
-			},
-			{
-				name: 'Speed Master',
-				level: 52
-			},
-			{
-				name: 'Heat Riser',
-				level: 54
-			}
-		],
-		resistances: {
-			ailments: null,
-			weak: [
-				'Nuke'
-			],
-			resist: [
-				'Gun'
-			],
-			null: [
-				'Light',
-				'Dark'
-			],
-			drain: [],
-			repel: []
-		},
-		game: 'p5',
-		alignment: null,
-		lore: 'A Persona turned picaro after becoming the Trickster\'s mask. He\'s Izanagi\'s rival. Magatsu means "calamity," so, unlike Izanagi who founded the land and brought order, he leads all back into chaos.',
-		origin: 'ATLUS Original'
-	},
-	{
 		name: 'Naamah',
 		affinities: {
 			skillPotential: {
@@ -21785,6 +21785,81 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		evoSkillName: null
 	},
 	{
+		name: 'Neko Shogun',
+		affinities: {
+			skillPotential: {
+				Phys: 0,
+				Fire: -1,
+				Ice: 0,
+				Elec: 0,
+				Force: -3,
+				Light: 0,
+				Dark: 0,
+				Almighty: -4,
+				Ailment: 0,
+				Recovery: 3,
+				Support: 3
+			},
+			inherit: 'Fire'
+		},
+		arcana: 'Star',
+		race: 'Wargod',
+		level: 5,
+		hp: 57,
+		mp: 73,
+		stats: {
+			st: 6,
+			vi: 11,
+			ma: 7,
+			ag: 4,
+			lu: 8
+		},
+		learnset: [
+			{
+				name: 'Dia',
+				level: 0
+			},
+			{
+				name: 'Rakunda',
+				level: 0
+			},
+			{
+				name: 'Sukunda',
+				level: 6
+			},
+			{
+				name: 'Fang Breaker',
+				level: 8
+			}
+		],
+		resistances: {
+			ailments: {
+				Mirage: 'Resist',
+				Poison: 'Resist',
+				Confuse: 'Resist'
+			},
+			weak: [
+				'Fire',
+				'Force'
+			],
+			resist: [
+				'Light'
+			],
+			null: [
+				'Elec'
+			],
+			drain: [],
+			repel: []
+		},
+		game: 'smt5',
+		alignment: {
+			moral: 'Light',
+			ethical: 'Neutral'
+		},
+		lore: 'The god of prophecy in Taoist religion.\nIt is said to have the head of a cat and the body of a human, and its shrine was located in Annam, which is present-day Vietnam. The shrine was meant for Mao Shangshu, a 14-15th century general who conquered Vietnam. However, because the name "Mao" is similar to the Chinese word for cat, the temple was effectively misnamed, and he was reborn as a different god. It should also be noted that there is a similar story about the god of sailing known as "Tetsu Neko Shogun."',
+		origin: 'Chinese'
+	},
+	{
 		name: 'Nekomata',
 		affinities: {
 			skillPotential: {
@@ -21860,81 +21935,6 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		},
 		lore: 'Incarnations of long-living cats in Japanese mythology.\nThey can speak to humans and, depending on their power, can do various things. Some can turn into humans, while others can have the dead do their bidding',
 		origin: 'Japanese'
-	},
-	{
-		name: 'Neko Shogun',
-		affinities: {
-			skillPotential: {
-				Phys: 0,
-				Fire: -1,
-				Ice: 0,
-				Elec: 0,
-				Force: -3,
-				Light: 0,
-				Dark: 0,
-				Almighty: -4,
-				Ailment: 0,
-				Recovery: 3,
-				Support: 3
-			},
-			inherit: 'Fire'
-		},
-		arcana: 'Star',
-		race: 'Wargod',
-		level: 5,
-		hp: 57,
-		mp: 73,
-		stats: {
-			st: 6,
-			vi: 11,
-			ma: 7,
-			ag: 4,
-			lu: 8
-		},
-		learnset: [
-			{
-				name: 'Dia',
-				level: 0
-			},
-			{
-				name: 'Rakunda',
-				level: 0
-			},
-			{
-				name: 'Sukunda',
-				level: 6
-			},
-			{
-				name: 'Fang Breaker',
-				level: 8
-			}
-		],
-		resistances: {
-			ailments: {
-				Mirage: 'Resist',
-				Poison: 'Resist',
-				Confuse: 'Resist'
-			},
-			weak: [
-				'Fire',
-				'Force'
-			],
-			resist: [
-				'Light'
-			],
-			null: [
-				'Elec'
-			],
-			drain: [],
-			repel: []
-		},
-		game: 'smt5',
-		alignment: {
-			moral: 'Light',
-			ethical: 'Neutral'
-		},
-		lore: 'The god of prophecy in Taoist religion.\nIt is said to have the head of a cat and the body of a human, and its shrine was located in Annam, which is present-day Vietnam. The shrine was meant for Mao Shangshu, a 14-15th century general who conquered Vietnam. However, because the name "Mao" is similar to the Chinese word for cat, the temple was effectively misnamed, and he was reborn as a different god. It should also be noted that there is a similar story about the god of sailing known as "Tetsu Neko Shogun."',
-		origin: 'Chinese'
 	},
 	{
 		name: 'Nemesis',
@@ -23743,6 +23743,72 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		evoSkillName: null
 	},
 	{
+		name: 'Orpheus Picaro',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Almighty'
+		},
+		arcana: 'Fool',
+		race: 'Picaro',
+		level: 20,
+		hp: null,
+		mp: null,
+		stats: {
+			st: 19,
+			vi: 19,
+			ma: 19,
+			ag: 19,
+			lu: 18
+		},
+		learnset: [
+			{
+				name: 'Cadenza',
+				level: 0
+			},
+			{
+				name: 'Maragion',
+				level: 0
+			},
+			{
+				name: 'Matarunda',
+				level: 0
+			},
+			{
+				name: 'Endure',
+				level: 30
+			},
+			{
+				name: 'Agidyne',
+				level: 32
+			},
+			{
+				name: 'Matarukaja',
+				level: 33
+			},
+			{
+				name: 'Fire Boost',
+				level: 35
+			}
+		],
+		resistances: {
+			ailments: null,
+			weak: [
+				'Elec',
+				'Dark'
+			],
+			resist: [
+				'Light'
+			],
+			null: [],
+			drain: [],
+			repel: []
+		},
+		game: 'p5',
+		alignment: null,
+		lore: 'A Persona turned picaro after becoming the Trickster\'s mask. A Greek poet who tried to retrieve his wife from Hades, but she vanished when he looked back before reaching the surface.',
+		origin: 'Greco-Roman'
+	},
+	{
 		name: 'Orpheus Picaro F',
 		aliases: [
 			'F Orpheus Picaro',
@@ -23792,72 +23858,6 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			{
 				name: 'Dodge Dark',
 				level: 0
-			}
-		],
-		resistances: {
-			ailments: null,
-			weak: [
-				'Elec',
-				'Dark'
-			],
-			resist: [
-				'Light'
-			],
-			null: [],
-			drain: [],
-			repel: []
-		},
-		game: 'p5',
-		alignment: null,
-		lore: 'A Persona turned picaro after becoming the Trickster\'s mask. A Greek poet who tried to retrieve his wife from Hades, but she vanished when he looked back before reaching the surface.',
-		origin: 'Greco-Roman'
-	},
-	{
-		name: 'Orpheus Picaro',
-		affinities: {
-			skillPotential: null,
-			inherit: 'Almighty'
-		},
-		arcana: 'Fool',
-		race: 'Picaro',
-		level: 20,
-		hp: null,
-		mp: null,
-		stats: {
-			st: 19,
-			vi: 19,
-			ma: 19,
-			ag: 19,
-			lu: 18
-		},
-		learnset: [
-			{
-				name: 'Cadenza',
-				level: 0
-			},
-			{
-				name: 'Maragion',
-				level: 0
-			},
-			{
-				name: 'Matarunda',
-				level: 0
-			},
-			{
-				name: 'Endure',
-				level: 30
-			},
-			{
-				name: 'Agidyne',
-				level: 32
-			},
-			{
-				name: 'Matarukaja',
-				level: 33
-			},
-			{
-				name: 'Fire Boost',
-				level: 35
 			}
 		],
 		resistances: {
@@ -29495,6 +29495,186 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		origin: 'European'
 	},
 	{
+		name: 'Take-Mikazuchi',
+		affinities: {
+			skillPotential: null,
+			inherit: null
+		},
+		arcana: 'Emperor',
+		race: 'Persona',
+		level: 25,
+		hp: null,
+		mp: null,
+		stats: {
+			st: 20,
+			vi: 17,
+			ma: 11,
+			ag: 15,
+			lu: 14
+		},
+		learnset: [
+			{
+				name: 'Mazio',
+				level: 0
+			},
+			{
+				name: 'Zionga',
+				level: 0
+			},
+			{
+				name: 'Rakukaja',
+				level: 0
+			},
+			{
+				name: 'Kill Rush',
+				level: 0
+			},
+			{
+				name: 'Regenerate 1',
+				level: 0
+			},
+			{
+				name: 'Elec Boost',
+				level: 27
+			},
+			{
+				name: 'Fatal End',
+				level: 34
+			},
+			{
+				name: 'Cruel Attack',
+				level: 38
+			},
+			{
+				name: 'Mazionga',
+				level: 40
+			},
+			{
+				name: 'Torrent Shot',
+				level: 44
+			},
+			{
+				name: 'Elec Break',
+				level: 48
+			},
+			{
+				name: 'Ziodyne',
+				level: 54
+			},
+			{
+				name: 'Vile Assault',
+				level: 58
+			},
+			{
+				name: 'Matarukaja',
+				level: 60
+			},
+			{
+				name: 'Maziodyne',
+				level: 67
+			},
+			{
+				name: 'Primal Force',
+				level: 73
+			},
+			{
+				name: 'Elec Amp',
+				level: 75
+			}
+		],
+		resistances: {
+			ailments: null,
+			weak: [
+				'Wind'
+			],
+			resist: [
+				'Elec'
+			],
+			null: [],
+			drain: [],
+			repel: []
+		},
+		game: 'p4',
+		alignment: null,
+		lore: null,
+		origin: 'Japanese',
+		user: 'Kanji Tatsumi',
+		stage: 1,
+		evoSkillName: null
+	},
+	{
+		name: 'Take-Minakata',
+		affinities: {
+			skillPotential: {
+				Phys: 2,
+				Fire: -3,
+				Ice: 0,
+				Elec: 2,
+				Force: 0,
+				Light: 0,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: -1,
+				Recovery: 0,
+				Support: 0
+			},
+			inherit: 'Elec'
+		},
+		arcana: 'Hanged',
+		race: 'Kunitsu',
+		level: 19,
+		hp: 107,
+		mp: 98,
+		stats: {
+			st: 18,
+			vi: 18,
+			ma: 12,
+			ag: 16,
+			lu: 15
+		},
+		learnset: [
+			{
+				name: 'Lunge',
+				level: 0
+			},
+			{
+				name: 'Shockbound',
+				level: 0
+			},
+			{
+				name: 'Charge',
+				level: 20
+			},
+			{
+				name: 'Zionga',
+				level: 21
+			},
+			{
+				name: 'Counter',
+				level: 22
+			}
+		],
+		resistances: {
+			ailments: {},
+			weak: [
+				'Fire'
+			],
+			resist: [
+				'Elec'
+			],
+			null: [],
+			drain: [],
+			repel: []
+		},
+		game: 'smt5',
+		alignment: {
+			moral: 'Light',
+			ethical: 'Chaos'
+		},
+		lore: 'A Japanese god of war, hunting, and fertility.\nHe fought Take-Mikazuchi for control of Japan and lost. He escaped to Suwa but has been prohibited from leaving ever since.',
+		origin: 'Japanese'
+	},
+	{
 		name: 'Takehaya Susano-o',
 		affinities: {
 			skillPotential: null,
@@ -29717,186 +29897,6 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		user: 'Kanji Tatsumi',
 		stage: 3,
 		evoSkillName: 'The Man\'s Way'
-	},
-	{
-		name: 'Take-Mikazuchi',
-		affinities: {
-			skillPotential: null,
-			inherit: null
-		},
-		arcana: 'Emperor',
-		race: 'Persona',
-		level: 25,
-		hp: null,
-		mp: null,
-		stats: {
-			st: 20,
-			vi: 17,
-			ma: 11,
-			ag: 15,
-			lu: 14
-		},
-		learnset: [
-			{
-				name: 'Mazio',
-				level: 0
-			},
-			{
-				name: 'Zionga',
-				level: 0
-			},
-			{
-				name: 'Rakukaja',
-				level: 0
-			},
-			{
-				name: 'Kill Rush',
-				level: 0
-			},
-			{
-				name: 'Regenerate 1',
-				level: 0
-			},
-			{
-				name: 'Elec Boost',
-				level: 27
-			},
-			{
-				name: 'Fatal End',
-				level: 34
-			},
-			{
-				name: 'Cruel Attack',
-				level: 38
-			},
-			{
-				name: 'Mazionga',
-				level: 40
-			},
-			{
-				name: 'Torrent Shot',
-				level: 44
-			},
-			{
-				name: 'Elec Break',
-				level: 48
-			},
-			{
-				name: 'Ziodyne',
-				level: 54
-			},
-			{
-				name: 'Vile Assault',
-				level: 58
-			},
-			{
-				name: 'Matarukaja',
-				level: 60
-			},
-			{
-				name: 'Maziodyne',
-				level: 67
-			},
-			{
-				name: 'Primal Force',
-				level: 73
-			},
-			{
-				name: 'Elec Amp',
-				level: 75
-			}
-		],
-		resistances: {
-			ailments: null,
-			weak: [
-				'Wind'
-			],
-			resist: [
-				'Elec'
-			],
-			null: [],
-			drain: [],
-			repel: []
-		},
-		game: 'p4',
-		alignment: null,
-		lore: null,
-		origin: 'Japanese',
-		user: 'Kanji Tatsumi',
-		stage: 1,
-		evoSkillName: null
-	},
-	{
-		name: 'Take-Minakata',
-		affinities: {
-			skillPotential: {
-				Phys: 2,
-				Fire: -3,
-				Ice: 0,
-				Elec: 2,
-				Force: 0,
-				Light: 0,
-				Dark: 0,
-				Almighty: 0,
-				Ailment: -1,
-				Recovery: 0,
-				Support: 0
-			},
-			inherit: 'Elec'
-		},
-		arcana: 'Hanged',
-		race: 'Kunitsu',
-		level: 19,
-		hp: 107,
-		mp: 98,
-		stats: {
-			st: 18,
-			vi: 18,
-			ma: 12,
-			ag: 16,
-			lu: 15
-		},
-		learnset: [
-			{
-				name: 'Lunge',
-				level: 0
-			},
-			{
-				name: 'Shockbound',
-				level: 0
-			},
-			{
-				name: 'Charge',
-				level: 20
-			},
-			{
-				name: 'Zionga',
-				level: 21
-			},
-			{
-				name: 'Counter',
-				level: 22
-			}
-		],
-		resistances: {
-			ailments: {},
-			weak: [
-				'Fire'
-			],
-			resist: [
-				'Elec'
-			],
-			null: [],
-			drain: [],
-			repel: []
-		},
-		game: 'smt5',
-		alignment: {
-			moral: 'Light',
-			ethical: 'Chaos'
-		},
-		lore: 'A Japanese god of war, hunting, and fertility.\nHe fought Take-Mikazuchi for control of Japan and lost. He escaped to Suwa but has been prohibited from leaving ever since.',
-		origin: 'Japanese'
 	},
 	{
 		name: 'Tam Lin',
