@@ -230,7 +230,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		],
 		resistances: {
 			ailments: {
-				Confuse: 'Null'
+				Confusion: 'Null'
 			},
 			weak: [
 				'Light'
@@ -939,7 +939,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		resistances: {
 			ailments: {
 				Mirage: 'Resist',
-				Confuse: 'Resist',
+				Confusion: 'Resist',
 				Charm: 'Resist',
 				Sleep: 'Null',
 				Poison: 'Null',
@@ -1534,7 +1534,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		resistances: {
 			ailments: {
 				Mirage: 'Resist',
-				Confuse: 'Resist'
+				Confusion: 'Resist'
 			},
 			weak: [
 				'Fire',
@@ -2191,7 +2191,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		resistances: {
 			ailments: {
 				Charm: 'Null',
-				Confuse: 'Weak',
+				Confusion: 'Weak',
 				Sleep: 'Resist'
 			},
 			weak: [
@@ -2916,7 +2916,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			ailments: {
 				Charm: 'Resist',
 				Seal: 'Resist',
-				Confuse: 'Resist',
+				Confusion: 'Resist',
 				Poison: 'Resist',
 				Sleep: 'Resist',
 				Mirage: 'Resist'
@@ -4278,7 +4278,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		],
 		resistances: {
 			ailments: {
-				Confuse: 'Weak'
+				Confusion: 'Weak'
 			},
 			weak: [
 				'Force'
@@ -4589,7 +4589,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		],
 		resistances: {
 			ailments: {
-				Confuse: 'Null',
+				Confusion: 'Null',
 				Poison: 'Null',
 				Sleep: 'Null',
 				Mirage: 'Null'
@@ -5138,7 +5138,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		resistances: {
 			ailments: {
 				Mirage: 'Weak',
-				Confuse: 'Weak',
+				Confusion: 'Weak',
 				Charm: 'Weak'
 			},
 			weak: [
@@ -5222,7 +5222,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		],
 		resistances: {
 			ailments: {
-				Confuse: 'Null'
+				Confusion: 'Null'
 			},
 			weak: [
 				'Force'
@@ -7533,7 +7533,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		resistances: {
 			ailments: {
 				Sleep: 'Resist',
-				Confuse: 'Resist',
+				Confusion: 'Resist',
 				Charm: 'Resist'
 			},
 			weak: [
@@ -8310,7 +8310,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		resistances: {
 			ailments: {
 				Charm: 'Resist',
-				Confuse: 'Resist',
+				Confusion: 'Resist',
 				Poison: 'Resist',
 				Mirage: 'Resist'
 			},
@@ -9466,7 +9466,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 				Sleep: 'Weak',
 				Seal: 'Resist',
 				Mirage: 'Null',
-				Confuse: 'Null'
+				Confusion: 'Null'
 			},
 			weak: [
 				'Dark'
@@ -9706,7 +9706,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		resistances: {
 			ailments: {
 				Poison: 'Weak',
-				Confuse: 'Resist'
+				Confusion: 'Resist'
 			},
 			weak: [
 				'Elec',
@@ -10371,7 +10371,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		resistances: {
 			ailments: {
 				Seal: 'Weak',
-				Confuse: 'Weak'
+				Confusion: 'Weak'
 			},
 			weak: [
 				'Fire',
@@ -11565,7 +11565,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		resistances: {
 			ailments: {
 				Mirage: 'Weak',
-				Confuse: 'Resist'
+				Confusion: 'Resist'
 			},
 			weak: [
 				'Force'
@@ -11965,7 +11965,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		],
 		resistances: {
 			ailments: {
-				Confuse: 'Resist',
+				Confusion: 'Resist',
 				Seal: 'Resist'
 			},
 			weak: [
@@ -12495,7 +12495,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		],
 		resistances: {
 			ailments: {
-				Confuse: 'Resist',
+				Confusion: 'Resist',
 				Sleep: 'Weak',
 				Mirage: 'Weak'
 			},
@@ -13843,7 +13843,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		],
 		resistances: {
 			ailments: {
-				Confuse: 'Weak'
+				Confusion: 'Weak'
 			},
 			weak: [
 				'Ice'
@@ -16027,7 +16027,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		resistances: {
 			ailments: {
 				Charm: 'Resist',
-				Confuse: 'Resist',
+				Confusion: 'Resist',
 				Sleep: 'Resist'
 			},
 			weak: [
@@ -16361,7 +16361,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			ailments: {
 				Charm: 'Resist',
 				Seal: 'Resist',
-				Confuse: 'Resist'
+				Confusion: 'Resist'
 			},
 			weak: [
 				'Elec'
@@ -17037,7 +17037,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			ailments: {
 				Mirage: 'Weak',
 				Poison: 'Resist',
-				Confuse: 'Resist',
+				Confusion: 'Resist',
 				Charm: 'Resist'
 			},
 			weak: [
@@ -17342,7 +17342,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 				Sleep: 'Resist',
 				Mirage: 'Resist',
 				Poison: 'Resist',
-				Confuse: 'Resist',
+				Confusion: 'Resist',
 				Charm: 'Resist',
 				Seal: 'Resist'
 			},
@@ -17424,7 +17424,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		],
 		resistances: {
 			ailments: {
-				Confuse: 'Null'
+				Confusion: 'Null'
 			},
 			weak: [
 				'Fire'
@@ -18326,7 +18326,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		resistances: {
 			ailments: {
 				Charm: 'Null',
-				Confuse: 'Null',
+				Confusion: 'Null',
 				Sleep: 'Null'
 			},
 			weak: [
@@ -18596,7 +18596,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		],
 		resistances: {
 			ailments: {
-				Confuse: 'Resist',
+				Confusion: 'Resist',
 				Poison: 'Null'
 			},
 			weak: [
@@ -18677,7 +18677,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			ailments: {
 				Charm: 'Weak',
 				Seal: 'Weak',
-				Confuse: 'Weak',
+				Confusion: 'Weak',
 				Poison: 'Null',
 				Sleep: 'Null',
 				Mirage: 'Null'
@@ -18981,7 +18981,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		],
 		resistances: {
 			ailments: {
-				Confuse: 'Weak'
+				Confusion: 'Weak'
 			},
 			weak: [
 				'Dark'
@@ -19375,7 +19375,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		],
 		resistances: {
 			ailments: {
-				Confuse: 'Weak',
+				Confusion: 'Weak',
 				Poison: 'Weak',
 				Mirage: 'Null'
 			},
@@ -19796,7 +19796,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 				Sleep: 'Resist',
 				Mirage: 'Resist',
 				Poison: 'Resist',
-				Confuse: 'Resist',
+				Confusion: 'Resist',
 				Charm: 'Resist',
 				Seal: 'Resist'
 			},
@@ -21243,7 +21243,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		resistances: {
 			ailments: {
 				Charm: 'Null',
-				Confuse: 'Null'
+				Confusion: 'Null'
 			},
 			weak: [
 				'Phys'
@@ -21635,7 +21635,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		resistances: {
 			ailments: {
 				Charm: 'Null',
-				Confuse: 'Resist'
+				Confusion: 'Resist'
 			},
 			weak: [
 				'Fire'
@@ -21836,7 +21836,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			ailments: {
 				Mirage: 'Resist',
 				Poison: 'Resist',
-				Confuse: 'Resist'
+				Confusion: 'Resist'
 			},
 			weak: [
 				'Fire',
@@ -23203,7 +23203,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		resistances: {
 			ailments: {
 				Sleep: 'Weak',
-				Confuse: 'Weak'
+				Confusion: 'Weak'
 			},
 			weak: [
 				'Elec',
@@ -23567,7 +23567,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		],
 		resistances: {
 			ailments: {
-				Confuse: 'Null'
+				Confusion: 'Null'
 			},
 			weak: [
 				'Ice'
@@ -23988,7 +23988,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		resistances: {
 			ailments: {
 				Poison: 'Weak',
-				Confuse: 'Resist'
+				Confusion: 'Resist'
 			},
 			weak: [
 				'Ice'
@@ -24597,7 +24597,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		],
 		resistances: {
 			ailments: {
-				Confuse: 'Null'
+				Confusion: 'Null'
 			},
 			weak: [
 				'Fire'
@@ -24680,7 +24680,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		],
 		resistances: {
 			ailments: {
-				Confuse: 'Resist'
+				Confusion: 'Resist'
 			},
 			weak: [
 				'Ice'
@@ -25099,7 +25099,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		],
 		resistances: {
 			ailments: {
-				Confuse: 'Weak'
+				Confusion: 'Weak'
 			},
 			weak: [
 				'Dark'
@@ -26983,7 +26983,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		],
 		resistances: {
 			ailments: {
-				Confuse: 'Resist',
+				Confusion: 'Resist',
 				Charm: 'Null'
 			},
 			weak: [
@@ -27723,7 +27723,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		],
 		resistances: {
 			ailments: {
-				Confuse: 'Weak',
+				Confusion: 'Weak',
 				Seal: 'Resist'
 			},
 			weak: [
@@ -27955,7 +27955,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		],
 		resistances: {
 			ailments: {
-				Confuse: 'Weak'
+				Confusion: 'Weak'
 			},
 			weak: [
 				'Fire',
@@ -28208,7 +28208,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		],
 		resistances: {
 			ailments: {
-				Confuse: 'Weak',
+				Confusion: 'Weak',
 				Charm: 'Resist',
 				Sleep: 'Null'
 			},
@@ -28652,7 +28652,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		resistances: {
 			ailments: {
 				Sleep: 'Weak',
-				Confuse: 'Resist'
+				Confusion: 'Resist'
 			},
 			weak: [
 				'Fire',
@@ -30038,7 +30038,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		resistances: {
 			ailments: {
 				Charm: 'Null',
-				Confuse: 'Resist',
+				Confusion: 'Resist',
 				Poison: 'Resist'
 			},
 			weak: [
@@ -30771,7 +30771,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		],
 		resistances: {
 			ailments: {
-				Confuse: 'Resist',
+				Confusion: 'Resist',
 				Mirage: 'Resist'
 			},
 			weak: [
@@ -31583,7 +31583,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		resistances: {
 			ailments: {
 				Seal: 'Null',
-				Confuse: 'Weak',
+				Confusion: 'Weak',
 				Mirage: 'Weak'
 			},
 			weak: [
@@ -31788,7 +31788,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		resistances: {
 			ailments: {
 				Charm: 'Resist',
-				Confuse: 'Resist',
+				Confusion: 'Resist',
 				Poison: 'Weak',
 				Mirage: 'Weak'
 			},
@@ -32951,7 +32951,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			ailments: {
 				Charm: 'Weak',
 				Seal: 'Weak',
-				Confuse: 'Weak',
+				Confusion: 'Weak',
 				Poison: 'Weak',
 				Sleep: 'Weak',
 				Mirage: 'Weak'
@@ -33187,7 +33187,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			ailments: {
 				Sleep: 'Weak',
 				Poison: 'Weak',
-				Confuse: 'Weak'
+				Confusion: 'Weak'
 			},
 			weak: [
 				'Elec'
@@ -33942,7 +33942,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			ailments: {
 				Sleep: 'Null',
 				Mirage: 'Null',
-				Confuse: 'Null',
+				Confusion: 'Null',
 				Charm: 'Null'
 			},
 			weak: [

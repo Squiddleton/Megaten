@@ -41,7 +41,7 @@ export const smt5Bosses: SMT5BossData[] = [
 				Sleep: 'Resist',
 				Mirage: 'Resist',
 				Poison: 'Resist',
-				Confuse: 'Resist',
+				Confusion: 'Resist',
 				Charm: 'Resist',
 				Seal: 'Weak'
 			},
@@ -106,7 +106,7 @@ export const smt5Bosses: SMT5BossData[] = [
 				Sleep: 'Resist',
 				Mirage: 'Resist',
 				Poison: 'Resist',
-				Confuse: 'Resist',
+				Confusion: 'Resist',
 				Charm: 'Resist',
 				Seal: 'Resist'
 			},
@@ -171,7 +171,7 @@ export const smt5Bosses: SMT5BossData[] = [
 				Sleep: 'Null',
 				Mirage: 'Resist',
 				Poison: 'Resist',
-				Confuse: 'Null',
+				Confusion: 'Null',
 				Charm: 'Null',
 				Seal: 'Null'
 			},
@@ -234,7 +234,7 @@ export const smt5Bosses: SMT5BossData[] = [
 				Sleep: 'Resist',
 				Mirage: 'Resist',
 				Poison: 'Resist',
-				Confuse: 'Resist',
+				Confusion: 'Resist',
 				Charm: 'Resist',
 				Seal: 'Resist'
 			},
@@ -292,7 +292,7 @@ export const smt5Bosses: SMT5BossData[] = [
 		resistances: {
 			ailments: {
 				Mirage: 'Resist',
-				Confuse: 'Resist',
+				Confusion: 'Resist',
 				Charm: 'Resist',
 				Sleep: 'Null',
 				Poison: 'Null',
@@ -357,7 +357,7 @@ export const smt5Bosses: SMT5BossData[] = [
 				Sleep: 'Resist',
 				Mirage: 'Resist',
 				Poison: 'Resist',
-				Confuse: 'Resist',
+				Confusion: 'Resist',
 				Charm: 'Resist',
 				Seal: 'Resist'
 			},
@@ -428,7 +428,7 @@ export const smt5Bosses: SMT5BossData[] = [
 				Sleep: 'Resist',
 				Mirage: 'Resist',
 				Poison: 'Resist',
-				Confuse: 'Resist',
+				Confusion: 'Resist',
 				Charm: 'Resist',
 				Seal: 'Resist'
 			},
@@ -493,7 +493,7 @@ export const smt5Bosses: SMT5BossData[] = [
 				Sleep: 'Resist',
 				Mirage: 'Resist',
 				Poison: 'Resist',
-				Confuse: 'Resist',
+				Confusion: 'Resist',
 				Charm: 'Resist',
 				Seal: 'Resist'
 			},
@@ -603,7 +603,7 @@ export const smt5Bosses: SMT5BossData[] = [
 		],
 		resistances: {
 			ailments: {
-				Confuse: 'Weak',
+				Confusion: 'Weak',
 				Sleep: 'Resist',
 				Charm: 'Resist'
 			},
@@ -664,7 +664,7 @@ export const smt5Bosses: SMT5BossData[] = [
 				Sleep: 'Resist',
 				Mirage: 'Resist',
 				Poison: 'Resist',
-				Confuse: 'Resist',
+				Confusion: 'Resist',
 				Charm: 'Resist',
 				Seal: 'Resist'
 			},
@@ -732,7 +732,7 @@ export const smt5Bosses: SMT5BossData[] = [
 				Sleep: 'Resist',
 				Mirage: 'Resist',
 				Poison: 'Resist',
-				Confuse: 'Resist',
+				Confusion: 'Resist',
 				Charm: 'Resist',
 				Seal: 'Resist'
 			},
@@ -798,7 +798,7 @@ export const smt5Bosses: SMT5BossData[] = [
 				Sleep: 'Resist',
 				Mirage: 'Resist',
 				Poison: 'Resist',
-				Confuse: 'Resist',
+				Confusion: 'Resist',
 				Charm: 'Resist',
 				Seal: 'Resist'
 			},
@@ -862,7 +862,7 @@ export const smt5Bosses: SMT5BossData[] = [
 				Sleep: 'Resist',
 				Mirage: 'Resist',
 				Poison: 'Resist',
-				Confuse: 'Resist',
+				Confusion: 'Resist',
 				Charm: 'Resist',
 				Seal: 'Resist'
 			},
@@ -929,7 +929,7 @@ export const smt5Bosses: SMT5BossData[] = [
 				Sleep: 'Resist',
 				Mirage: 'Resist',
 				Poison: 'Resist',
-				Confuse: 'Resist',
+				Confusion: 'Resist',
 				Charm: 'Resist',
 				Seal: 'Resist'
 			},
@@ -994,7 +994,7 @@ export const smt5Bosses: SMT5BossData[] = [
 				Sleep: 'Resist',
 				Mirage: 'Resist',
 				Poison: 'Resist',
-				Confuse: 'Weak',
+				Confusion: 'Weak',
 				Charm: 'Resist',
 				Seal: 'Resist'
 			},
@@ -1056,7 +1056,7 @@ export const smt5Bosses: SMT5BossData[] = [
 				Sleep: 'Resist',
 				Mirage: 'Resist',
 				Poison: 'Resist',
-				Confuse: 'Resist',
+				Confusion: 'Resist',
 				Charm: 'Resist',
 				Seal: 'Resist'
 			},
@@ -1121,7 +1121,7 @@ export const smt5Bosses: SMT5BossData[] = [
 				Sleep: 'Resist',
 				Mirage: 'Resist',
 				Poison: 'Resist',
-				Confuse: 'Resist',
+				Confusion: 'Resist',
 				Charm: 'Resist',
 				Seal: 'Resist'
 			},
@@ -1188,7 +1188,7 @@ export const smt5Bosses: SMT5BossData[] = [
 				Sleep: 'Resist',
 				Mirage: 'Resist',
 				Poison: 'Resist',
-				Confuse: 'Resist',
+				Confusion: 'Resist',
 				Charm: 'Resist',
 				Seal: 'Resist'
 			},
@@ -1251,7 +1251,7 @@ export const smt5Bosses: SMT5BossData[] = [
 				Sleep: 'Resist',
 				Mirage: 'Resist',
 				Poison: 'Resist',
-				Confuse: 'Resist',
+				Confusion: 'Resist',
 				Charm: 'Resist',
 				Seal: 'Resist'
 			},
@@ -1311,7 +1311,7 @@ export const smt5Bosses: SMT5BossData[] = [
 				Sleep: 'Resist',
 				Mirage: 'Resist',
 				Poison: 'Resist',
-				Confuse: 'Resist',
+				Confusion: 'Resist',
 				Charm: 'Resist',
 				Seal: 'Resist'
 			},
@@ -1376,7 +1376,7 @@ export const smt5Bosses: SMT5BossData[] = [
 				Sleep: 'Resist',
 				Mirage: 'Resist',
 				Poison: 'Resist',
-				Confuse: 'Null',
+				Confusion: 'Null',
 				Charm: 'Resist',
 				Seal: 'Resist'
 			},
@@ -1436,7 +1436,7 @@ export const smt5Bosses: SMT5BossData[] = [
 				Sleep: 'Null',
 				Mirage: 'Null',
 				Poison: 'Null',
-				Confuse: 'Null',
+				Confusion: 'Null',
 				Charm: 'Null',
 				Seal: 'Null'
 			},
@@ -1493,7 +1493,7 @@ export const smt5Bosses: SMT5BossData[] = [
 				Sleep: 'Resist',
 				Mirage: 'Resist',
 				Poison: 'Resist',
-				Confuse: 'Resist',
+				Confusion: 'Resist',
 				Charm: 'Resist',
 				Seal: 'Resist'
 			},
@@ -1559,7 +1559,7 @@ export const smt5Bosses: SMT5BossData[] = [
 				Sleep: 'Resist',
 				Mirage: 'Resist',
 				Poison: 'Resist',
-				Confuse: 'Resist',
+				Confusion: 'Resist',
 				Charm: 'Resist',
 				Seal: 'Resist'
 			},
@@ -1621,7 +1621,7 @@ export const smt5Bosses: SMT5BossData[] = [
 				Sleep: 'Resist',
 				Mirage: 'Resist',
 				Poison: 'Weak',
-				Confuse: 'Resist',
+				Confusion: 'Resist',
 				Charm: 'Resist',
 				Seal: 'Resist'
 			},
@@ -1685,7 +1685,7 @@ export const smt5Bosses: SMT5BossData[] = [
 				Sleep: 'Resist',
 				Mirage: 'Resist',
 				Poison: 'Resist',
-				Confuse: 'Resist',
+				Confusion: 'Resist',
 				Charm: 'Resist',
 				Seal: 'Resist'
 			},
@@ -1743,7 +1743,7 @@ export const smt5Bosses: SMT5BossData[] = [
 				Sleep: 'Null',
 				Mirage: 'Null',
 				Poison: 'Null',
-				Confuse: 'Null',
+				Confusion: 'Null',
 				Charm: 'Null',
 				Seal: 'Null'
 			},
@@ -1801,7 +1801,7 @@ export const smt5Bosses: SMT5BossData[] = [
 				Sleep: 'Resist',
 				Mirage: 'Resist',
 				Poison: 'Resist',
-				Confuse: 'Resist',
+				Confusion: 'Resist',
 				Charm: 'Resist',
 				Seal: 'Resist'
 			},
@@ -1867,7 +1867,7 @@ export const smt5Bosses: SMT5BossData[] = [
 				Sleep: 'Resist',
 				Mirage: 'Resist',
 				Poison: 'Resist',
-				Confuse: 'Resist',
+				Confusion: 'Resist',
 				Charm: 'Resist',
 				Seal: 'Resist'
 			},
@@ -1936,7 +1936,7 @@ export const smt5Bosses: SMT5BossData[] = [
 				Sleep: 'Resist',
 				Mirage: 'Resist',
 				Poison: 'Resist',
-				Confuse: 'Resist',
+				Confusion: 'Resist',
 				Charm: 'Resist',
 				Seal: 'Resist'
 			},
@@ -1998,7 +1998,7 @@ export const smt5Bosses: SMT5BossData[] = [
 				Sleep: 'Null',
 				Mirage: 'Null',
 				Poison: 'Resist',
-				Confuse: 'Null',
+				Confusion: 'Null',
 				Charm: 'Null',
 				Seal: 'Resist'
 			},
@@ -2052,7 +2052,7 @@ export const smt5Bosses: SMT5BossData[] = [
 				Sleep: 'Null',
 				Mirage: 'Null',
 				Poison: 'Resist',
-				Confuse: 'Null',
+				Confusion: 'Null',
 				Charm: 'Null',
 				Seal: 'Resist'
 			},
@@ -2107,7 +2107,7 @@ export const smt5Bosses: SMT5BossData[] = [
 				Sleep: 'Resist',
 				Mirage: 'Resist',
 				Poison: 'Resist',
-				Confuse: 'Resist',
+				Confusion: 'Resist',
 				Charm: 'Null',
 				Seal: 'Resist'
 			},
@@ -2167,7 +2167,7 @@ export const smt5Bosses: SMT5BossData[] = [
 				Sleep: 'Resist',
 				Mirage: 'Resist',
 				Poison: 'Resist',
-				Confuse: 'Resist',
+				Confusion: 'Resist',
 				Charm: 'Resist',
 				Seal: 'Resist'
 			},
@@ -2231,7 +2231,7 @@ export const smt5Bosses: SMT5BossData[] = [
 				Sleep: 'Null',
 				Mirage: 'Resist',
 				Poison: 'Resist',
-				Confuse: 'Resist',
+				Confusion: 'Resist',
 				Charm: 'Resist',
 				Seal: 'Null'
 			},
@@ -2294,7 +2294,7 @@ export const smt5Bosses: SMT5BossData[] = [
 				Sleep: 'Null',
 				Mirage: 'Resist',
 				Poison: 'Resist',
-				Confuse: 'Resist',
+				Confusion: 'Resist',
 				Charm: 'Resist',
 				Seal: 'Null'
 			},
@@ -2352,7 +2352,7 @@ export const smt5Bosses: SMT5BossData[] = [
 				Sleep: 'Resist',
 				Mirage: 'Null',
 				Poison: 'Resist',
-				Confuse: 'Null',
+				Confusion: 'Null',
 				Charm: 'Resist',
 				Seal: 'Resist'
 			},
@@ -2412,7 +2412,7 @@ export const smt5Bosses: SMT5BossData[] = [
 				Sleep: 'Resist',
 				Mirage: 'Resist',
 				Poison: 'Resist',
-				Confuse: 'Resist',
+				Confusion: 'Resist',
 				Charm: 'Resist',
 				Seal: 'Resist'
 			},
@@ -2475,7 +2475,7 @@ export const smt5Bosses: SMT5BossData[] = [
 				Sleep: 'Resist',
 				Mirage: 'Resist',
 				Poison: 'Resist',
-				Confuse: 'Resist',
+				Confusion: 'Resist',
 				Charm: 'Resist',
 				Seal: 'Resist'
 			},
@@ -2540,7 +2540,7 @@ export const smt5Bosses: SMT5BossData[] = [
 				Sleep: 'Weak',
 				Mirage: 'Resist',
 				Poison: 'Resist',
-				Confuse: 'Resist',
+				Confusion: 'Resist',
 				Charm: 'Resist',
 				Seal: 'Resist'
 			},
@@ -2606,7 +2606,7 @@ export const smt5Bosses: SMT5BossData[] = [
 				Sleep: 'Resist',
 				Mirage: 'Weak',
 				Poison: 'Resist',
-				Confuse: 'Resist',
+				Confusion: 'Resist',
 				Charm: 'Resist',
 				Seal: 'Resist'
 			},
@@ -2667,7 +2667,7 @@ export const smt5Bosses: SMT5BossData[] = [
 				Sleep: 'Resist',
 				Mirage: 'Resist',
 				Poison: 'Resist',
-				Confuse: 'Resist',
+				Confusion: 'Resist',
 				Charm: 'Resist',
 				Seal: 'Resist'
 			},
@@ -2736,7 +2736,7 @@ export const smt5Bosses: SMT5BossData[] = [
 				Sleep: 'Resist',
 				Mirage: 'Resist',
 				Poison: 'Resist',
-				Confuse: 'Resist',
+				Confusion: 'Resist',
 				Charm: 'Resist',
 				Seal: 'Resist'
 			},
@@ -2801,7 +2801,7 @@ export const smt5Bosses: SMT5BossData[] = [
 				Sleep: 'Resist',
 				Mirage: 'Resist',
 				Poison: 'Resist',
-				Confuse: 'Resist',
+				Confusion: 'Resist',
 				Charm: 'Resist',
 				Seal: 'Resist'
 			},
@@ -2865,7 +2865,7 @@ export const smt5Bosses: SMT5BossData[] = [
 				Sleep: 'Resist',
 				Mirage: 'Resist',
 				Poison: 'Null',
-				Confuse: 'Resist',
+				Confusion: 'Resist',
 				Charm: 'Resist',
 				Seal: 'Resist'
 			},
@@ -2927,7 +2927,7 @@ export const smt5Bosses: SMT5BossData[] = [
 				Sleep: 'Resist',
 				Mirage: 'Resist',
 				Poison: 'Resist',
-				Confuse: 'Resist',
+				Confusion: 'Resist',
 				Charm: 'Resist',
 				Seal: 'Resist'
 			},
@@ -2997,7 +2997,7 @@ export const smt5Bosses: SMT5BossData[] = [
 				Sleep: 'Resist',
 				Mirage: 'Resist',
 				Poison: 'Resist',
-				Confuse: 'Resist',
+				Confusion: 'Resist',
 				Charm: 'Resist',
 				Seal: 'Resist'
 			},
@@ -3059,7 +3059,7 @@ export const smt5Bosses: SMT5BossData[] = [
 				Sleep: 'Resist',
 				Mirage: 'Resist',
 				Poison: 'Resist',
-				Confuse: 'Resist',
+				Confusion: 'Resist',
 				Charm: 'Resist',
 				Seal: 'Resist'
 			},
@@ -3120,7 +3120,7 @@ export const smt5Bosses: SMT5BossData[] = [
 				Sleep: 'Resist',
 				Mirage: 'Resist',
 				Poison: 'Resist',
-				Confuse: 'Resist',
+				Confusion: 'Resist',
 				Charm: 'Resist',
 				Seal: 'Resist'
 			},
@@ -3184,7 +3184,7 @@ export const smt5Bosses: SMT5BossData[] = [
 				Sleep: 'Resist',
 				Mirage: 'Resist',
 				Poison: 'Resist',
-				Confuse: 'Resist',
+				Confusion: 'Resist',
 				Charm: 'Resist',
 				Seal: 'Resist'
 			},
@@ -3249,7 +3249,7 @@ export const smt5Bosses: SMT5BossData[] = [
 				Sleep: 'Resist',
 				Mirage: 'Resist',
 				Poison: 'Resist',
-				Confuse: 'Resist',
+				Confusion: 'Resist',
 				Charm: 'Resist',
 				Seal: 'Resist'
 			},
@@ -3315,7 +3315,7 @@ export const smt5Bosses: SMT5BossData[] = [
 				Sleep: 'Resist',
 				Mirage: 'Resist',
 				Poison: 'Resist',
-				Confuse: 'Resist',
+				Confusion: 'Resist',
 				Charm: 'Resist',
 				Seal: 'Null'
 			},
@@ -3381,7 +3381,7 @@ export const smt5Bosses: SMT5BossData[] = [
 				Sleep: 'Resist',
 				Mirage: 'Resist',
 				Poison: 'Resist',
-				Confuse: 'Resist',
+				Confusion: 'Resist',
 				Charm: 'Resist',
 				Seal: 'Resist'
 			},
@@ -3446,7 +3446,7 @@ export const smt5Bosses: SMT5BossData[] = [
 				Sleep: 'Resist',
 				Mirage: 'Resist',
 				Poison: 'Resist',
-				Confuse: 'Resist',
+				Confusion: 'Resist',
 				Charm: 'Resist',
 				Seal: 'Resist'
 			},
@@ -3510,7 +3510,7 @@ export const smt5Bosses: SMT5BossData[] = [
 				Sleep: 'Resist',
 				Mirage: 'Resist',
 				Poison: 'Resist',
-				Confuse: 'Resist',
+				Confusion: 'Resist',
 				Charm: 'Resist',
 				Seal: 'Resist'
 			},
@@ -3573,7 +3573,7 @@ export const smt5Bosses: SMT5BossData[] = [
 				Sleep: 'Resist',
 				Mirage: 'Resist',
 				Poison: 'Resist',
-				Confuse: 'Resist',
+				Confusion: 'Resist',
 				Charm: 'Resist',
 				Seal: 'Resist'
 			},
@@ -3630,7 +3630,7 @@ export const smt5Bosses: SMT5BossData[] = [
 				Sleep: 'Null',
 				Mirage: 'Null',
 				Poison: 'Null',
-				Confuse: 'Null',
+				Confusion: 'Null',
 				Charm: 'Null',
 				Seal: 'Null'
 			},
@@ -3693,7 +3693,7 @@ export const smt5Bosses: SMT5BossData[] = [
 				Sleep: 'Null',
 				Mirage: 'Null',
 				Poison: 'Null',
-				Confuse: 'Null',
+				Confusion: 'Null',
 				Charm: 'Null',
 				Seal: 'Null'
 			},
@@ -3758,7 +3758,7 @@ export const smt5Bosses: SMT5BossData[] = [
 				Sleep: 'Resist',
 				Mirage: 'Resist',
 				Poison: 'Resist',
-				Confuse: 'Null',
+				Confusion: 'Null',
 				Charm: 'Resist',
 				Seal: 'Resist'
 			},
@@ -3818,7 +3818,7 @@ export const smt5Bosses: SMT5BossData[] = [
 				Sleep: 'Null',
 				Mirage: 'Null',
 				Poison: 'Null',
-				Confuse: 'Null',
+				Confusion: 'Null',
 				Charm: 'Null',
 				Seal: 'Null'
 			},
@@ -3931,7 +3931,7 @@ export const smt5Bosses: SMT5BossData[] = [
 				Sleep: 'Resist',
 				Mirage: 'Resist',
 				Poison: 'Resist',
-				Confuse: 'Resist',
+				Confusion: 'Resist',
 				Charm: 'Null',
 				Seal: 'Resist'
 			},
@@ -3990,7 +3990,7 @@ export const smt5Bosses: SMT5BossData[] = [
 				Sleep: 'Resist',
 				Mirage: 'Resist',
 				Poison: 'Weak',
-				Confuse: 'Resist',
+				Confusion: 'Resist',
 				Charm: 'Resist',
 				Seal: 'Resist'
 			},
@@ -4054,7 +4054,7 @@ export const smt5Bosses: SMT5BossData[] = [
 				Sleep: 'Resist',
 				Mirage: 'Resist',
 				Poison: 'Resist',
-				Confuse: 'Resist',
+				Confusion: 'Resist',
 				Charm: 'Resist',
 				Seal: 'Resist'
 			},
@@ -4128,7 +4128,7 @@ export const smt5Bosses: SMT5BossData[] = [
 				Sleep: 'Null',
 				Mirage: 'Null',
 				Poison: 'Null',
-				Confuse: 'Null',
+				Confusion: 'Null',
 				Charm: 'Null',
 				Seal: 'Null'
 			},
@@ -4198,7 +4198,7 @@ export const smt5Bosses: SMT5BossData[] = [
 				Sleep: 'Null',
 				Mirage: 'Null',
 				Poison: 'Null',
-				Confuse: 'Null',
+				Confusion: 'Null',
 				Charm: 'Null',
 				Seal: 'Null'
 			},
@@ -4264,7 +4264,7 @@ export const smt5Bosses: SMT5BossData[] = [
 				Sleep: 'Null',
 				Mirage: 'Null',
 				Poison: 'Null',
-				Confuse: 'Null',
+				Confusion: 'Null',
 				Charm: 'Null',
 				Seal: 'Null'
 			},
@@ -4334,7 +4334,7 @@ export const smt5Bosses: SMT5BossData[] = [
 				Sleep: 'Null',
 				Mirage: 'Null',
 				Poison: 'Null',
-				Confuse: 'Null',
+				Confusion: 'Null',
 				Charm: 'Null',
 				Seal: 'Null'
 			},
@@ -4400,7 +4400,7 @@ export const smt5Bosses: SMT5BossData[] = [
 				Sleep: 'Null',
 				Mirage: 'Resist',
 				Poison: 'Resist',
-				Confuse: 'Resist',
+				Confusion: 'Resist',
 				Charm: 'Resist',
 				Seal: 'Resist'
 			},
@@ -4467,7 +4467,7 @@ export const smt5Bosses: SMT5BossData[] = [
 				Sleep: 'Resist',
 				Mirage: 'Resist',
 				Poison: 'Resist',
-				Confuse: 'Resist',
+				Confusion: 'Resist',
 				Charm: 'Resist',
 				Seal: 'Resist'
 			},
@@ -4532,7 +4532,7 @@ export const smt5Bosses: SMT5BossData[] = [
 				Sleep: 'Resist',
 				Mirage: 'Resist',
 				Poison: 'Resist',
-				Confuse: 'Resist',
+				Confusion: 'Resist',
 				Charm: 'Resist',
 				Seal: 'Resist'
 			},
@@ -4599,7 +4599,7 @@ export const smt5Bosses: SMT5BossData[] = [
 				Sleep: 'Resist',
 				Mirage: 'Resist',
 				Poison: 'Resist',
-				Confuse: 'Resist',
+				Confusion: 'Resist',
 				Charm: 'Resist',
 				Seal: 'Resist'
 			},
@@ -4663,7 +4663,7 @@ export const smt5Bosses: SMT5BossData[] = [
 				Sleep: 'Resist',
 				Mirage: 'Resist',
 				Poison: 'Resist',
-				Confuse: 'Resist',
+				Confusion: 'Resist',
 				Charm: 'Resist',
 				Seal: 'Resist'
 			},
@@ -4729,7 +4729,7 @@ export const smt5Bosses: SMT5BossData[] = [
 				Sleep: 'Resist',
 				Mirage: 'Resist',
 				Poison: 'Resist',
-				Confuse: 'Resist',
+				Confusion: 'Resist',
 				Charm: 'Resist',
 				Seal: 'Resist'
 			},
@@ -4795,7 +4795,7 @@ export const smt5Bosses: SMT5BossData[] = [
 				Sleep: 'Resist',
 				Mirage: 'Resist',
 				Poison: 'Resist',
-				Confuse: 'Resist',
+				Confusion: 'Resist',
 				Charm: 'Resist',
 				Seal: 'Resist'
 			},
@@ -4856,7 +4856,7 @@ export const smt5Bosses: SMT5BossData[] = [
 				Sleep: 'Resist',
 				Mirage: 'Resist',
 				Poison: 'Resist',
-				Confuse: 'Resist',
+				Confusion: 'Resist',
 				Charm: 'Resist',
 				Seal: 'Resist'
 			},
@@ -4914,7 +4914,7 @@ export const smt5Bosses: SMT5BossData[] = [
 				Sleep: 'Null',
 				Mirage: 'Null',
 				Poison: 'Null',
-				Confuse: 'Null',
+				Confusion: 'Null',
 				Charm: 'Null',
 				Seal: 'Null'
 			},
@@ -4975,7 +4975,7 @@ export const smt5Bosses: SMT5BossData[] = [
 				Sleep: 'Resist',
 				Mirage: 'Resist',
 				Poison: 'Resist',
-				Confuse: 'Resist',
+				Confusion: 'Resist',
 				Charm: 'Null',
 				Seal: 'Resist'
 			},
@@ -5042,7 +5042,7 @@ export const smt5Bosses: SMT5BossData[] = [
 				Sleep: 'Resist',
 				Mirage: 'Resist',
 				Poison: 'Resist',
-				Confuse: 'Resist',
+				Confusion: 'Resist',
 				Charm: 'Null',
 				Seal: 'Resist'
 			},
@@ -5108,7 +5108,7 @@ export const smt5Bosses: SMT5BossData[] = [
 				Sleep: 'Null',
 				Mirage: 'Resist',
 				Poison: 'Resist',
-				Confuse: 'Null',
+				Confusion: 'Null',
 				Charm: 'Null',
 				Seal: 'Null'
 			},
@@ -5178,7 +5178,7 @@ export const smt5Bosses: SMT5BossData[] = [
 				Sleep: 'Resist',
 				Mirage: 'Resist',
 				Poison: 'Resist',
-				Confuse: 'Resist',
+				Confusion: 'Resist',
 				Charm: 'Resist',
 				Seal: 'Resist'
 			},
@@ -5243,7 +5243,7 @@ export const smt5Bosses: SMT5BossData[] = [
 				Sleep: 'Resist',
 				Mirage: 'Resist',
 				Poison: 'Resist',
-				Confuse: 'Resist',
+				Confusion: 'Resist',
 				Charm: 'Resist',
 				Seal: 'Resist'
 			},
@@ -5301,7 +5301,7 @@ export const smt5Bosses: SMT5BossData[] = [
 		resistances: {
 			ailments: {
 				Sleep: 'Weak',
-				Confuse: 'Weak'
+				Confusion: 'Weak'
 			},
 			weak: [
 				'Elec',
@@ -5358,7 +5358,7 @@ export const smt5Bosses: SMT5BossData[] = [
 				Sleep: 'Resist',
 				Mirage: 'Weak',
 				Poison: 'Resist',
-				Confuse: 'Resist',
+				Confusion: 'Resist',
 				Charm: 'Resist',
 				Seal: 'Resist'
 			},
@@ -5420,7 +5420,7 @@ export const smt5Bosses: SMT5BossData[] = [
 				Sleep: 'Resist',
 				Mirage: 'Weak',
 				Poison: 'Resist',
-				Confuse: 'Resist',
+				Confusion: 'Resist',
 				Charm: 'Resist',
 				Seal: 'Resist'
 			},
@@ -5482,7 +5482,7 @@ export const smt5Bosses: SMT5BossData[] = [
 		resistances: {
 			ailments: {
 				Sleep: 'Resist',
-				Confuse: 'Resist',
+				Confusion: 'Resist',
 				Charm: 'Resist',
 				Seal: 'Resist',
 				Mirage: 'Null',
@@ -5549,7 +5549,7 @@ export const smt5Bosses: SMT5BossData[] = [
 				Sleep: 'Resist',
 				Mirage: 'Resist',
 				Poison: 'Resist',
-				Confuse: 'Resist',
+				Confusion: 'Resist',
 				Charm: 'Resist',
 				Seal: 'Resist'
 			},
@@ -5611,7 +5611,7 @@ export const smt5Bosses: SMT5BossData[] = [
 				Sleep: 'Resist',
 				Mirage: 'Resist',
 				Poison: 'Resist',
-				Confuse: 'Resist',
+				Confusion: 'Resist',
 				Charm: 'Resist',
 				Seal: 'Weak'
 			},
@@ -5669,7 +5669,7 @@ export const smt5Bosses: SMT5BossData[] = [
 				Sleep: 'Weak',
 				Mirage: 'Resist',
 				Poison: 'Resist',
-				Confuse: 'Resist',
+				Confusion: 'Resist',
 				Charm: 'Resist',
 				Seal: 'Resist'
 			},
@@ -5731,7 +5731,7 @@ export const smt5Bosses: SMT5BossData[] = [
 				Sleep: 'Resist',
 				Mirage: 'Resist',
 				Poison: 'Resist',
-				Confuse: 'Resist',
+				Confusion: 'Resist',
 				Charm: 'Resist',
 				Seal: 'Resist'
 			},
@@ -5792,7 +5792,7 @@ export const smt5Bosses: SMT5BossData[] = [
 				Sleep: 'Resist',
 				Mirage: 'Resist',
 				Poison: 'Resist',
-				Confuse: 'Resist',
+				Confusion: 'Resist',
 				Charm: 'Resist',
 				Seal: 'Resist'
 			},
@@ -5856,7 +5856,7 @@ export const smt5Bosses: SMT5BossData[] = [
 				Sleep: 'Resist',
 				Mirage: 'Resist',
 				Poison: 'Resist',
-				Confuse: 'Resist',
+				Confusion: 'Resist',
 				Charm: 'Resist',
 				Seal: 'Resist'
 			},
@@ -5925,7 +5925,7 @@ export const smt5Bosses: SMT5BossData[] = [
 				Sleep: 'Resist',
 				Mirage: 'Weak',
 				Poison: 'Resist',
-				Confuse: 'Resist',
+				Confusion: 'Resist',
 				Charm: 'Resist',
 				Seal: 'Resist'
 			},
@@ -5986,7 +5986,7 @@ export const smt5Bosses: SMT5BossData[] = [
 				Sleep: 'Resist',
 				Mirage: 'Resist',
 				Poison: 'Resist',
-				Confuse: 'Weak',
+				Confusion: 'Weak',
 				Charm: 'Resist',
 				Seal: 'Resist'
 			},
@@ -6053,7 +6053,7 @@ export const smt5Bosses: SMT5BossData[] = [
 				Sleep: 'Resist',
 				Mirage: 'Resist',
 				Poison: 'Resist',
-				Confuse: 'Resist',
+				Confusion: 'Resist',
 				Charm: 'Resist',
 				Seal: 'Resist'
 			},
@@ -6121,7 +6121,7 @@ export const smt5Bosses: SMT5BossData[] = [
 				Sleep: 'Resist',
 				Mirage: 'Resist',
 				Poison: 'Resist',
-				Confuse: 'Resist',
+				Confusion: 'Resist',
 				Charm: 'Resist',
 				Seal: 'Resist'
 			},
@@ -6184,7 +6184,7 @@ export const smt5Bosses: SMT5BossData[] = [
 				Sleep: 'Resist',
 				Mirage: 'Resist',
 				Poison: 'Resist',
-				Confuse: 'Resist',
+				Confusion: 'Resist',
 				Charm: 'Resist',
 				Seal: 'Resist'
 			},
@@ -6247,7 +6247,7 @@ export const smt5Bosses: SMT5BossData[] = [
 				Sleep: 'Resist',
 				Mirage: 'Resist',
 				Poison: 'Resist',
-				Confuse: 'Resist',
+				Confusion: 'Resist',
 				Charm: 'Resist',
 				Seal: 'Resist'
 			},
@@ -6312,7 +6312,7 @@ export const smt5Bosses: SMT5BossData[] = [
 				Sleep: 'Resist',
 				Mirage: 'Resist',
 				Poison: 'Resist',
-				Confuse: 'Resist',
+				Confusion: 'Resist',
 				Charm: 'Resist',
 				Seal: 'Resist'
 			},
@@ -6371,7 +6371,7 @@ export const smt5Bosses: SMT5BossData[] = [
 				Sleep: 'Resist',
 				Mirage: 'Resist',
 				Poison: 'Resist',
-				Confuse: 'Resist',
+				Confusion: 'Resist',
 				Charm: 'Resist',
 				Seal: 'Resist'
 			},
@@ -6424,7 +6424,7 @@ export const smt5Bosses: SMT5BossData[] = [
 				Sleep: 'Null',
 				Mirage: 'Null',
 				Poison: 'Null',
-				Confuse: 'Null',
+				Confusion: 'Null',
 				Charm: 'Null',
 				Seal: 'Null'
 			},
@@ -6481,7 +6481,7 @@ export const smt5Bosses: SMT5BossData[] = [
 				Sleep: 'Resist',
 				Mirage: 'Resist',
 				Poison: 'Resist',
-				Confuse: 'Resist',
+				Confusion: 'Resist',
 				Charm: 'Resist',
 				Seal: 'Resist'
 			},
@@ -6544,7 +6544,7 @@ export const smt5Bosses: SMT5BossData[] = [
 				Sleep: 'Null',
 				Mirage: 'Resist',
 				Poison: 'Resist',
-				Confuse: 'Resist',
+				Confusion: 'Resist',
 				Charm: 'Resist',
 				Seal: 'Null'
 			},
@@ -6616,7 +6616,7 @@ export const smt5Bosses: SMT5BossData[] = [
 				Sleep: 'Resist',
 				Mirage: 'Resist',
 				Poison: 'Resist',
-				Confuse: 'Resist',
+				Confusion: 'Resist',
 				Charm: 'Resist',
 				Seal: 'Null'
 			},
@@ -6683,7 +6683,7 @@ export const smt5Bosses: SMT5BossData[] = [
 				Sleep: 'Resist',
 				Mirage: 'Resist',
 				Poison: 'Resist',
-				Confuse: 'Resist',
+				Confusion: 'Resist',
 				Charm: 'Resist',
 				Seal: 'Resist'
 			},
@@ -6750,7 +6750,7 @@ export const smt5Bosses: SMT5BossData[] = [
 				Sleep: 'Null',
 				Mirage: 'Null',
 				Poison: 'Null',
-				Confuse: 'Resist',
+				Confusion: 'Resist',
 				Charm: 'Resist',
 				Seal: 'Resist'
 			},
@@ -6814,7 +6814,7 @@ export const smt5Bosses: SMT5BossData[] = [
 				Sleep: 'Resist',
 				Mirage: 'Resist',
 				Poison: 'Resist',
-				Confuse: 'Resist',
+				Confusion: 'Resist',
 				Charm: 'Resist',
 				Seal: 'Resist'
 			},
@@ -6880,7 +6880,7 @@ export const smt5Bosses: SMT5BossData[] = [
 				Sleep: 'Resist',
 				Mirage: 'Resist',
 				Poison: 'Weak',
-				Confuse: 'Resist',
+				Confusion: 'Resist',
 				Charm: 'Resist',
 				Seal: 'Resist'
 			},
@@ -6944,7 +6944,7 @@ export const smt5Bosses: SMT5BossData[] = [
 				Seal: 'Resist',
 				Sleep: 'Null',
 				Mirage: 'Null',
-				Confuse: 'Null',
+				Confusion: 'Null',
 				Charm: 'Null'
 			},
 			weak: [
@@ -7008,7 +7008,7 @@ export const smt5Bosses: SMT5BossData[] = [
 				Sleep: 'Resist',
 				Mirage: 'Resist',
 				Poison: 'Resist',
-				Confuse: 'Resist',
+				Confusion: 'Resist',
 				Charm: 'Resist',
 				Seal: 'Resist'
 			},
@@ -7074,7 +7074,7 @@ export const smt5Bosses: SMT5BossData[] = [
 				Sleep: 'Resist',
 				Mirage: 'Resist',
 				Poison: 'Resist',
-				Confuse: 'Resist',
+				Confusion: 'Resist',
 				Charm: 'Resist',
 				Seal: 'Resist'
 			},
@@ -7138,7 +7138,7 @@ export const smt5Bosses: SMT5BossData[] = [
 				Sleep: 'Resist',
 				Mirage: 'Resist',
 				Poison: 'Resist',
-				Confuse: 'Resist',
+				Confusion: 'Resist',
 				Charm: 'Weak',
 				Seal: 'Resist'
 			},
@@ -7199,7 +7199,7 @@ export const smt5Bosses: SMT5BossData[] = [
 				Sleep: 'Resist',
 				Mirage: 'Resist',
 				Poison: 'Resist',
-				Confuse: 'Resist',
+				Confusion: 'Resist',
 				Charm: 'Resist',
 				Seal: 'Resist'
 			},
@@ -7261,7 +7261,7 @@ export const smt5Bosses: SMT5BossData[] = [
 				Sleep: 'Resist',
 				Mirage: 'Resist',
 				Poison: 'Resist',
-				Confuse: 'Resist',
+				Confusion: 'Resist',
 				Charm: 'Resist',
 				Seal: 'Resist'
 			},

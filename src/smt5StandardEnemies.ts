@@ -625,7 +625,7 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 		resistances: {
 			ailments: {
 				Mirage: 'Weak',
-				Confuse: 'Weak',
+				Confusion: 'Weak',
 				Charm: 'Weak'
 			},
 			weak: [
@@ -1562,7 +1562,7 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 		resistances: {
 			ailments: {
 				Mirage: 'Weak',
-				Confuse: 'Resist'
+				Confusion: 'Resist'
 			},
 			weak: [
 				'Force'
@@ -1885,7 +1885,7 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 		],
 		resistances: {
 			ailments: {
-				Confuse: 'Weak'
+				Confusion: 'Weak'
 			},
 			weak: [
 				'Ice'
@@ -2383,7 +2383,7 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			ailments: {
 				Mirage: 'Weak',
 				Poison: 'Resist',
-				Confuse: 'Resist',
+				Confusion: 'Resist',
 				Charm: 'Resist'
 			},
 			weak: [
@@ -2499,7 +2499,7 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 				Sleep: 'Resist',
 				Mirage: 'Resist',
 				Poison: 'Resist',
-				Confuse: 'Resist',
+				Confusion: 'Resist',
 				Charm: 'Resist',
 				Seal: 'Resist'
 			},
@@ -2826,7 +2826,7 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 		],
 		resistances: {
 			ailments: {
-				Confuse: 'Resist',
+				Confusion: 'Resist',
 				Poison: 'Null'
 			},
 			weak: [
@@ -3426,7 +3426,7 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 		],
 		resistances: {
 			ailments: {
-				Confuse: 'Resist',
+				Confusion: 'Resist',
 				Charm: 'Null'
 			},
 			weak: [
@@ -3810,7 +3810,7 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 		resistances: {
 			ailments: {
 				Sleep: 'Weak',
-				Confuse: 'Weak'
+				Confusion: 'Weak'
 			},
 			weak: [
 				'Elec',
@@ -3920,7 +3920,7 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 		],
 		resistances: {
 			ailments: {
-				Confuse: 'Null'
+				Confusion: 'Null'
 			},
 			weak: [
 				'Ice'
@@ -3978,7 +3978,7 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 		resistances: {
 			ailments: {
 				Poison: 'Weak',
-				Confuse: 'Resist'
+				Confusion: 'Resist'
 			},
 			weak: [
 				'Ice'
@@ -4091,7 +4091,7 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 		],
 		resistances: {
 			ailments: {
-				Confuse: 'Resist'
+				Confusion: 'Resist'
 			},
 			weak: [
 				'Ice'
@@ -4199,7 +4199,7 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 		],
 		resistances: {
 			ailments: {
-				Confuse: 'Weak'
+				Confusion: 'Weak'
 			},
 			weak: [
 				'Dark'
@@ -4579,7 +4579,7 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 		],
 		resistances: {
 			ailments: {
-				Confuse: 'Weak',
+				Confusion: 'Weak',
 				Seal: 'Resist'
 			},
 			weak: [
@@ -4635,7 +4635,7 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 		],
 		resistances: {
 			ailments: {
-				Confuse: 'Weak'
+				Confusion: 'Weak'
 			},
 			weak: [
 				'Fire',
@@ -4801,7 +4801,7 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 		resistances: {
 			ailments: {
 				Sleep: 'Weak',
-				Confuse: 'Resist'
+				Confusion: 'Resist'
 			},
 			weak: [
 				'Fire',
@@ -4966,7 +4966,7 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 		],
 		resistances: {
 			ailments: {
-				Confuse: 'Resist',
+				Confusion: 'Resist',
 				Mirage: 'Resist'
 			},
 			weak: [
@@ -5237,7 +5237,7 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			ailments: {
 				Sleep: 'Weak',
 				Poison: 'Weak',
-				Confuse: 'Weak'
+				Confusion: 'Weak'
 			},
 			weak: [
 				'Elec'

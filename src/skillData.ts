@@ -603,7 +603,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		accuracy: 98,
 		ailments: [
 			{
-				name: 'Confuse',
+				name: 'Confusion',
 				chance: 45
 			}
 		],
@@ -1368,7 +1368,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		],
 		affinity: 'Passive',
 		type: 'AILBOOST',
-		ailment: 'Confuse',
+		ailment: 'Confusion',
 		amount: 25,
 		criteria: null
 	},
@@ -2508,7 +2508,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		range: 'Ally',
 		cost: 4,
 		ailments: [
-			'Confuse',
+			'Confusion',
 			'Fear',
 			'Despair',
 			'Rage',
@@ -2523,7 +2523,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		range: 'Party',
 		cost: 8,
 		ailments: [
-			'Confuse',
+			'Confusion',
 			'Fear',
 			'Despair',
 			'Rage',
@@ -3206,7 +3206,7 @@ const skillData: Readonly<AnySkillData[]> = [
 				chance: 25
 			},
 			{
-				name: 'Confuse',
+				name: 'Confusion',
 				chance: 25
 			},
 			{
@@ -3864,7 +3864,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		accuracy: 108,
 		ailments: [
 			{
-				name: 'Confuse',
+				name: 'Confusion',
 				chance: 70
 			}
 		],
@@ -5222,7 +5222,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		accuracy: 98,
 		ailments: [
 			{
-				name: 'Confuse',
+				name: 'Confusion',
 				chance: 45
 			}
 		],
@@ -5348,7 +5348,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		accuracy: 90,
 		ailments: [
 			{
-				name: 'Confuse',
+				name: 'Confusion',
 				chance: 20
 			},
 			{
@@ -6270,7 +6270,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		accuracy: 80,
 		ailments: [
 			{
-				name: 'Confuse',
+				name: 'Confusion',
 				chance: 5
 			}
 		],
@@ -6895,7 +6895,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		],
 		affinity: 'Passive',
 		type: 'AILDEFENSIVE',
-		ailment: 'Confuse',
+		ailment: 'Confusion',
 		resistance: 'Null'
 	},
 	{
@@ -7471,7 +7471,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		range: 'All',
 		cost: 35,
 		ailments: [
-			'Confuse',
+			'Confusion',
 			'Charm',
 			'Sleep'
 		],
@@ -7649,7 +7649,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		range: 'One',
 		cost: 10,
 		ailments: [
-			'Confuse'
+			'Confusion'
 		],
 		chance: 70
 	},
@@ -8094,7 +8094,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		],
 		affinity: 'Passive',
 		type: 'AILDEFENSIVE',
-		ailment: 'Confuse',
+		ailment: 'Confusion',
 		resistance: 'Resist'
 	},
 	{
@@ -8723,7 +8723,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		accuracy: 90,
 		ailments: [
 			{
-				name: 'Confuse',
+				name: 'Confusion',
 				chance: 20
 			}
 		],
@@ -9380,7 +9380,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		range: 'All',
 		cost: 25,
 		ailments: [
-			'Confuse'
+			'Confusion'
 		],
 		chance: 45
 	},
@@ -9392,7 +9392,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		accuracy: 108,
 		ailments: [
 			{
-				name: 'Confuse',
+				name: 'Confusion',
 				chance: 50
 			}
 		],
@@ -9797,7 +9797,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		accuracy: 90,
 		ailments: [
 			{
-				name: 'Confuse',
+				name: 'Confusion',
 				chance: 20
 			}
 		],
@@ -10104,7 +10104,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		range: 'All',
 		cost: 0,
 		ailments: [
-			'Confuse'
+			'Confusion'
 		],
 		chance: 65
 	},
