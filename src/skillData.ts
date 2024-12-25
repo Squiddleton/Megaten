@@ -1109,35 +1109,35 @@ const skillData: Readonly<AnySkillData[]> = [
 	},
 	{
 		name: 'Call Allies',
-		affinity: 'Misc',
+		affinity: 'Special',
 		type: 'SUMMON',
 		unique: null,
 		demon: null
 	},
 	{
 		name: 'Call Angels',
-		affinity: 'Misc',
+		affinity: 'Special',
 		type: 'SUMMON',
 		unique: null,
 		demon: 'Dominion'
 	},
 	{
 		name: 'Call Evil',
-		affinity: 'Misc',
+		affinity: 'Special',
 		type: 'SUMMON',
 		unique: null,
 		demon: 'Loa'
 	},
 	{
 		name: 'Call Soldiers',
-		affinity: 'Misc',
+		affinity: 'Special',
 		type: 'SUMMON',
 		unique: null,
 		demon: 'Power'
 	},
 	{
 		name: 'Call Souls',
-		affinity: 'Misc',
+		affinity: 'Special',
 		type: 'SUMMON',
 		unique: null,
 		demon: 'Legion'
@@ -1374,7 +1374,7 @@ const skillData: Readonly<AnySkillData[]> = [
 	},
 	{
 		name: 'Contempt of God',
-		affinity: 'Misc',
+		affinity: 'Special',
 		type: 'MISC',
 		unique: null,
 		cost: 0,
@@ -2373,7 +2373,7 @@ const skillData: Readonly<AnySkillData[]> = [
 	},
 	{
 		name: 'Electrify',
-		affinity: 'Misc',
+		affinity: 'Special',
 		type: 'MISC',
 		unique: null,
 		cost: 0,
@@ -2780,7 +2780,7 @@ const skillData: Readonly<AnySkillData[]> = [
 	},
 	{
 		name: 'False Replication',
-		affinity: 'Misc',
+		affinity: 'Special',
 		type: 'MISC',
 		unique: null,
 		cost: 0,
@@ -9164,7 +9164,7 @@ const skillData: Readonly<AnySkillData[]> = [
 	},
 	{
 		name: 'Summon',
-		affinity: 'Misc',
+		affinity: 'Special',
 		type: 'SUMMON',
 		unique: null,
 		demon: null
@@ -9710,7 +9710,7 @@ const skillData: Readonly<AnySkillData[]> = [
 	},
 	{
 		name: 'Trafuri',
-		affinity: 'Misc',
+		affinity: 'Special',
 		type: 'MISC',
 		cost: 6,
 		description: 'Guarantees escape from escapable battles.'
@@ -9784,7 +9784,7 @@ const skillData: Readonly<AnySkillData[]> = [
 	},
 	{
 		name: 'True Replication',
-		affinity: 'Misc',
+		affinity: 'Special',
 		type: 'MISC',
 		unique: null,
 		cost: 0,

@@ -881,7 +881,7 @@ export class SpringSkill extends Skill implements SpringSkillData {
 /** A skill that summons one or more demons as allies */
 export class SummonSkill extends Skill implements SummonSkillData {
 	declare unique: null;
-	declare affinity: 'Misc';
+	declare affinity: 'Special';
 	declare type: 'SUMMON';
 	description: string;
 	/** The summoned demon's name, or null if unknown */

@@ -196,13 +196,13 @@ export type PersonaAffinity = 'Gun' | 'Wind' | 'Psy' | 'Nuke';
 /** Affinities exclusive to the mainline Shin Megami Tensei series */
 export type SMTAffinity = 'Force';
 /** Affinities used by demons and skills */
-export type AnyAffinity = 'Phys' | 'Fire' | 'Ice' | 'Elec' | 'Light' | 'Dark' | 'Almighty' | 'Recovery' | 'Ailment' | 'Support' | 'Passive' | 'Misc' | SMTAffinity | PersonaAffinity;
+export type AnyAffinity = 'Phys' | 'Fire' | 'Ice' | 'Elec' | 'Light' | 'Dark' | 'Almighty' | 'Recovery' | 'Ailment' | 'Support' | 'Passive' | 'Special' | SMTAffinity | PersonaAffinity;
 /** Affinities used by damage-dealing skills */
-export type DamagingAffinity = Exclude<AnyAffinity, 'Recovery' | 'Ailment' | 'Support' | 'Passive' | 'Misc'>;
+export type DamagingAffinity = Exclude<AnyAffinity, 'Recovery' | 'Ailment' | 'Support' | 'Passive' | 'Special'>;
 /** A damaging affinity or all damaging affinities */
 export type OneOrAllDamagingAffinities = DamagingAffinity | 'All';
 /** Affinities that can be a demon's inherit affinity */
-export type InheritAffinity = Exclude<AnyAffinity, 'Gun' | 'Passive' | 'Misc' | SMTAffinity>;
+export type InheritAffinity = Exclude<AnyAffinity, 'Gun' | 'Passive' | 'Special' | SMTAffinity>;
 /** The Light and Dark affinities */
 export type LightDark = 'Light' | 'Dark';
 /** Affinities used by BoostSkill instances */
@@ -250,7 +250,7 @@ export type Series = 'persona' | 'smt';
 export type SiphonCriteria = 'Ailment' | 'Weakness/Critical' | 'Drain';
 
 /** The effectiveness of a demon's skills based on the skills' affinities */
-export type SkillPotential = Record<Exclude<AnyAffinity, PersonaAffinity | 'Passive' | 'Misc'>, number>;
+export type SkillPotential = Record<Exclude<AnyAffinity, PersonaAffinity | 'Passive' | 'Special'>, number>;
 
 /** Skill instances' types */
 export type SkillType = 'AILBOOST' | 'AILDEFENSIVE' | 'AILMENT' | 'ATTACK' | 'AUTOBUFF' | 'BARRIER' | 'BARRIERBREAK' | 'BOOST' | 'BREAK' | 'CHARGE' | 'CRIT' | 'CRITBOOST' | 'DEFENSIVE' | 'ENDURE' | 'EVASION' | 'INSTAKILLBOOST' | 'MASTER' | 'MISC' | 'NAVI' | 'PERSONACOUNTER' | 'POSTBATTLE' | 'RECOVERY' | 'REGEN' | 'SET' | 'SIPHON' | 'SMTCOUNTER' | 'SPRING' | 'SUMMON' | 'SUPPORT' | 'SUSCEPTIBILITY' | 'TAUNT' | 'WALL';

@@ -283,7 +283,7 @@ export interface SpringSkillData extends SkillData {
 
 export interface SummonSkillData extends SkillData {
 	unique: null;
-	affinity: 'Misc';
+	affinity: 'Special';
 	type: 'SUMMON';
 	demon: string | null;
 }
