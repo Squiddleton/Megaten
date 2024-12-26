@@ -2961,7 +2961,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		},
 		learnset: [
 			{
-				name: 'Mudo',
+				name: 'Eiha',
 				level: 0
 			},
 			{
@@ -6733,7 +6733,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 				level: 0
 			},
 			{
-				name: 'Mamudo',
+				name: 'Maeiha',
 				level: 29
 			},
 			{
@@ -6741,7 +6741,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 				level: 30
 			},
 			{
-				name: 'Mudoon',
+				name: 'Eiga',
 				level: 31
 			},
 			{
@@ -7066,11 +7066,11 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 				level: 0
 			},
 			{
-				name: 'Mahamabarion',
+				name: 'Makougaon',
 				level: 0
 			},
 			{
-				name: 'Mamudobarion',
+				name: 'Maeigaon',
 				level: 0
 			}
 		],
@@ -8691,11 +8691,11 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 				level: 0
 			},
 			{
-				name: 'Hamabarion',
+				name: 'Kougaon',
 				level: 0
 			},
 			{
-				name: 'Mudobarion',
+				name: 'Eigaon',
 				level: 0
 			}
 		],
@@ -11781,7 +11781,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 				level: 0
 			},
 			{
-				name: 'Mudobarion',
+				name: 'Eigaon',
 				level: 0
 			},
 			{
@@ -18112,7 +18112,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 				level: 0
 			},
 			{
-				name: 'Mudobarion',
+				name: 'Eigaon',
 				level: 0
 			},
 			{
@@ -23483,11 +23483,11 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 				level: 0
 			},
 			{
-				name: 'Mahamaon',
+				name: 'Makouga',
 				level: 0
 			},
 			{
-				name: 'Mamudoon',
+				name: 'Maeiga',
 				level: 0
 			}
 		],
@@ -26136,7 +26136,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 				level: 0
 			},
 			{
-				name: 'Mudobarion',
+				name: 'Eigaon',
 				level: 0
 			},
 			{
@@ -26144,7 +26144,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 				level: 0
 			},
 			{
-				name: 'Mamudobarion',
+				name: 'Maeigaon',
 				level: 78
 			},
 			{
@@ -26396,11 +26396,11 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 				level: 0
 			},
 			{
-				name: 'Mahama',
+				name: 'Makouha',
 				level: 0
 			},
 			{
-				name: 'Mamudo',
+				name: 'Maeiha',
 				level: 0
 			}
 		],
@@ -26450,6 +26450,14 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 				level: 0
 			},
 			{
+				name: 'Kouga',
+				level: 0
+			},
+			{
+				name: 'Eiga',
+				level: 0
+			},
+			{
 				name: 'Hamaon',
 				level: 0
 			},
@@ -26462,11 +26470,11 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 				level: 0
 			},
 			{
-				name: 'Hamabarion',
+				name: 'Kougaon',
 				level: 47
 			},
 			{
-				name: 'Mudobarion',
+				name: 'Eigaon',
 				level: 48
 			},
 			{
@@ -27095,7 +27103,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		},
 		learnset: [
 			{
-				name: 'Mamudobarion',
+				name: 'Maeigaon',
 				level: 0
 			},
 			{
@@ -28501,11 +28509,11 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 				level: 0
 			},
 			{
-				name: 'Hamaon',
+				name: 'Kouga',
 				level: 0
 			},
 			{
-				name: 'Mudoon',
+				name: 'Eiga',
 				level: 0
 			}
 		],
@@ -30225,7 +30233,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 				level: 0
 			},
 			{
-				name: 'Mamudobarion',
+				name: 'Maeigaon',
 				level: 0
 			},
 			{
@@ -30295,7 +30303,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 				level: 0
 			},
 			{
-				name: 'Mamudobarion',
+				name: 'Maeigaon',
 				level: 0
 			},
 			{

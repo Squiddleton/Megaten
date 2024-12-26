@@ -2372,6 +2372,57 @@ const skillData: Readonly<AnySkillData[]> = [
 		series: 'smt'
 	},
 	{
+		name: 'Eiga',
+		affinity: 'Dark',
+		type: 'ATTACK',
+		accuracy: 98,
+		cost: {
+			stat: 'MP',
+			amount: 10
+		},
+		power: {
+			amount: 160,
+			display: 'Medium',
+			type: 'Magic'
+		},
+		range: 'One',
+		series: 'persona'
+	},
+	{
+		name: 'Eigaon',
+		affinity: 'Dark',
+		type: 'ATTACK',
+		accuracy: 98,
+		cost: {
+			stat: 'MP',
+			amount: 10
+		},
+		power: {
+			amount: 215,
+			display: 'Heavy',
+			type: 'Magic'
+		},
+		range: 'One',
+		series: 'persona'
+	},
+	{
+		name: 'Eiha',
+		affinity: 'Dark',
+		type: 'ATTACK',
+		accuracy: 98,
+		cost: {
+			stat: 'MP',
+			amount: 10
+		},
+		power: {
+			amount: 130,
+			display: 'Weak',
+			type: 'Magic'
+		},
+		range: 'One',
+		series: 'persona'
+	},
+	{
 		name: 'Electrify',
 		affinity: 'Special',
 		type: 'MISC',
@@ -3725,9 +3776,6 @@ const skillData: Readonly<AnySkillData[]> = [
 	},
 	{
 		name: 'Hama',
-		aliases: [
-			'Kouha'
-		],
 		affinity: 'Light',
 		type: 'ATTACK',
 		accuracy: 98,
@@ -3748,9 +3796,6 @@ const skillData: Readonly<AnySkillData[]> = [
 	},
 	{
 		name: 'Hamabarion',
-		aliases: [
-			'Kougaon'
-		],
 		affinity: 'Light',
 		type: 'ATTACK',
 		accuracy: 98,
@@ -3777,9 +3822,6 @@ const skillData: Readonly<AnySkillData[]> = [
 	},
 	{
 		name: 'Hamaon',
-		aliases: [
-			'Kouga'
-		],
 		affinity: 'Light',
 		type: 'ATTACK',
 		accuracy: 98,
@@ -4746,6 +4788,57 @@ const skillData: Readonly<AnySkillData[]> = [
 		series: 'smt'
 	},
 	{
+		name: 'Kouga',
+		affinity: 'Light',
+		type: 'ATTACK',
+		accuracy: 98,
+		cost: {
+			stat: 'MP',
+			amount: 10
+		},
+		power: {
+			amount: 160,
+			display: 'Medium',
+			type: 'Magic'
+		},
+		range: 'One',
+		series: 'persona'
+	},
+	{
+		name: 'Kougaon',
+		affinity: 'Light',
+		type: 'ATTACK',
+		accuracy: 98,
+		cost: {
+			stat: 'MP',
+			amount: 10
+		},
+		power: {
+			amount: 215,
+			display: 'Heavy',
+			type: 'Magic'
+		},
+		range: 'One',
+		series: 'persona'
+	},
+	{
+		name: 'Kouha',
+		affinity: 'Light',
+		type: 'ATTACK',
+		accuracy: 98,
+		cost: {
+			stat: 'MP',
+			amount: 10
+		},
+		power: {
+			amount: 130,
+			display: 'Weak',
+			type: 'Magic'
+		},
+		range: 'One',
+		series: 'persona'
+	},
+	{
 		name: 'Kuzunoha Emblem',
 		affinity: 'Passive',
 		type: 'MASTER',
@@ -5239,6 +5332,57 @@ const skillData: Readonly<AnySkillData[]> = [
 		series: 'smt'
 	},
 	{
+		name: 'Maeiga',
+		affinity: 'Dark',
+		type: 'ATTACK',
+		accuracy: 98,
+		cost: {
+			stat: 'MP',
+			amount: 15
+		},
+		power: {
+			amount: 120,
+			display: 'Medium',
+			type: 'Magic'
+		},
+		range: 'All',
+		series: 'persona'
+	},
+	{
+		name: 'Maeigaon',
+		affinity: 'Dark',
+		type: 'ATTACK',
+		accuracy: 98,
+		cost: {
+			stat: 'MP',
+			amount: 15
+		},
+		power: {
+			amount: 155,
+			display: 'Heavy',
+			type: 'Magic'
+		},
+		range: 'All',
+		series: 'persona'
+	},
+	{
+		name: 'Maeiha',
+		affinity: 'Dark',
+		type: 'ATTACK',
+		accuracy: 98,
+		cost: {
+			stat: 'MP',
+			amount: 15
+		},
+		power: {
+			amount: 95,
+			display: 'Weak',
+			type: 'Magic'
+		},
+		range: 'All',
+		series: 'persona'
+	},
+	{
 		name: 'Mafrei',
 		affinity: 'Nuke',
 		type: 'ATTACK',
@@ -5405,9 +5549,6 @@ const skillData: Readonly<AnySkillData[]> = [
 	},
 	{
 		name: 'Mahama',
-		aliases: [
-			'Makouha'
-		],
 		affinity: 'Light',
 		type: 'ATTACK',
 		accuracy: 98,
@@ -5429,7 +5570,6 @@ const skillData: Readonly<AnySkillData[]> = [
 	{
 		name: 'Mahamabarion',
 		aliases: [
-			'Makougaon',
 			'Samsara'
 		],
 		affinity: 'Light',
@@ -5452,9 +5592,6 @@ const skillData: Readonly<AnySkillData[]> = [
 	},
 	{
 		name: 'Mahamaon',
-		aliases: [
-			'Makouga'
-		],
 		affinity: 'Light',
 		type: 'ATTACK',
 		accuracy: 98,
@@ -5519,10 +5656,58 @@ const skillData: Readonly<AnySkillData[]> = [
 		]
 	},
 	{
+		name: 'Makouga',
+		affinity: 'Light',
+		type: 'ATTACK',
+		accuracy: 98,
+		cost: {
+			stat: 'MP',
+			amount: 15
+		},
+		power: {
+			amount: 120,
+			display: 'Medium',
+			type: 'Magic'
+		},
+		range: 'All',
+		series: 'persona'
+	},
+	{
+		name: 'Makougaon',
+		affinity: 'Light',
+		type: 'ATTACK',
+		accuracy: 98,
+		cost: {
+			stat: 'MP',
+			amount: 15
+		},
+		power: {
+			amount: 155,
+			display: 'Heavy',
+			type: 'Magic'
+		},
+		range: 'All',
+		series: 'persona'
+	},
+	{
+		name: 'Makouha',
+		affinity: 'Light',
+		type: 'ATTACK',
+		accuracy: 98,
+		cost: {
+			stat: 'MP',
+			amount: 15
+		},
+		power: {
+			amount: 95,
+			display: 'Weak',
+			type: 'Magic'
+		},
+		range: 'All',
+		series: 'persona'
+	},
+	{
 		name: 'Mamudo',
-		aliases: [
-			'Maeiha'
-		],
 		affinity: 'Dark',
 		type: 'ATTACK',
 		accuracy: 98,
@@ -5544,8 +5729,7 @@ const skillData: Readonly<AnySkillData[]> = [
 	{
 		name: 'Mamudobarion',
 		aliases: [
-			'Die For Me!',
-			'Maeigaon'
+			'Die For Me!'
 		],
 		affinity: 'Dark',
 		type: 'ATTACK',
@@ -5567,9 +5751,6 @@ const skillData: Readonly<AnySkillData[]> = [
 	},
 	{
 		name: 'Mamudoon',
-		aliases: [
-			'Maeiga'
-		],
 		affinity: 'Dark',
 		type: 'ATTACK',
 		accuracy: 98,
@@ -6481,9 +6662,6 @@ const skillData: Readonly<AnySkillData[]> = [
 	},
 	{
 		name: 'Mudo',
-		aliases: [
-			'Eiha'
-		],
 		affinity: 'Dark',
 		type: 'ATTACK',
 		accuracy: 98,
@@ -6504,9 +6682,6 @@ const skillData: Readonly<AnySkillData[]> = [
 	},
 	{
 		name: 'Mudobarion',
-		aliases: [
-			'Eigaon'
-		],
 		affinity: 'Dark',
 		type: 'ATTACK',
 		accuracy: 98,
@@ -6533,9 +6708,6 @@ const skillData: Readonly<AnySkillData[]> = [
 	},
 	{
 		name: 'Mudoon',
-		aliases: [
-			'Eiga'
-		],
 		affinity: 'Dark',
 		type: 'ATTACK',
 		accuracy: 98,
