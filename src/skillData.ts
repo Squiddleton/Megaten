@@ -1654,7 +1654,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		range: 'Party',
 		cost: 40,
 		barriers: [
-			'Dark Block'
+			'Dark Nullify'
 		]
 	},
 	{
@@ -2394,7 +2394,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		range: 'Party',
 		cost: 40,
 		barriers: [
-			'Elec Block'
+			'Elec Nullify'
 		]
 	},
 	{
@@ -2928,7 +2928,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		range: 'Party',
 		cost: 40,
 		barriers: [
-			'Fire Block'
+			'Fire Nullify'
 		]
 	},
 	{
@@ -3087,7 +3087,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		range: 'Party',
 		cost: 40,
 		barriers: [
-			'Force Block'
+			'Force Nullify'
 		]
 	},
 	{
@@ -4417,7 +4417,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		range: 'Party',
 		cost: 40,
 		barriers: [
-			'Ice Block'
+			'Ice Nullify'
 		]
 	},
 	{
@@ -4640,7 +4640,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		range: 'Party',
 		cost: 15,
 		barriers: [
-			'Kannabi Veil'
+			'Damage Down'
 		]
 	},
 	{
@@ -4873,8 +4873,8 @@ const skillData: Readonly<AnySkillData[]> = [
 		range: 'Party',
 		cost: 95,
 		barriers: [
-			'Tetrakarn',
-			'Makarakarn'
+			'Repel Phys',
+			'Repel Magic'
 		]
 	},
 	{
@@ -4926,7 +4926,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		range: 'Party',
 		cost: 40,
 		barriers: [
-			'Light Block'
+			'Light Nullify'
 		]
 	},
 	{
@@ -5506,16 +5506,16 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Support',
 		type: 'BARRIERBREAK',
 		cost: 18,
-		barrier: 'Makarakarn'
+		barrier: 'Repel Magic'
 	},
 	{
-		name: 'Makarakarn',
+		name: 'Makarkarn',
 		affinity: 'Support',
 		type: 'BARRIER',
 		range: 'Ally',
 		cost: 50,
 		barriers: [
-			'Makarakarn'
+			'Repel Magic'
 		]
 	},
 	{
@@ -7266,7 +7266,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		range: 'Party',
 		cost: 70,
 		barriers: [
-			'Phys Block'
+			'Phys Nullify'
 		]
 	},
 	{
@@ -9444,7 +9444,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Support',
 		type: 'BARRIERBREAK',
 		cost: 18,
-		barrier: 'Tetrakarn'
+		barrier: 'Repel Phys'
 	},
 	{
 		name: 'Tetraja',
@@ -9463,7 +9463,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		range: 'Ally',
 		cost: 50,
 		barriers: [
-			'Tetrakarn'
+			'Repel Phys'
 		]
 	},
 	{
@@ -9894,8 +9894,8 @@ const skillData: Readonly<AnySkillData[]> = [
 		negate: false,
 		debuffs: [],
 		auto: [
-			'Tetrakarn',
-			'Makarakarn'
+			'Repel Phys',
+			'Repel Magic'
 		]
 	},
 	{

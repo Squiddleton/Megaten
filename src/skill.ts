@@ -345,17 +345,21 @@ export class BarrierSkill extends Skill implements BarrierSkillData {
 					this.description = 'Shields the party from all damage once.';
 					break;
 				}
-				case 'Kannabi Veil': {
+				case 'Damage Down': {
 					this.description = 'Decreases damage to all allies until the next turn.';
 					break;
 				}
-				case 'Tetrakarn':
-				case 'Makarakarn': {
-					this.description = `Reflects a ${barrier === 'Tetrakarn' ? 'Phys' : 'Magic'} attack once for 1 ally for 1 turn.`;
+				case 'Repel Phys':
+				case 'Repel Magic': {
+					this.description = `Reflects a ${barrier.replace('Repel ', '')} attack once for 1 ally for 1 turn.`;
+					break;
+				}
+				case 'Absolute Evasion': {
+					this.description = 'Guarantees evasion from 1 attack for self for 1 turn.';
 					break;
 				}
 				default: {
-					this.description = `Nullifies a${['Ice', 'Elec'].some(affinity => this.name.includes(affinity)) ? 'n' : ''} ${this.name.replace(' Wall', '')} attack against all allies once for 1 turn.`;
+					this.description = `Nullifies a${['Ice', 'Elec'].some(affinity => barrier.includes(affinity)) ? 'n' : ''} ${barrier.replace(' Nullify', '')} attack against all allies once for 1 turn.`;
 				}
 			}
 		}
