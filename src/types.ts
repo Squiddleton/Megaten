@@ -90,7 +90,7 @@ export type Buff = 'Attack' | 'Defense' | 'Accuracy/Evasion';
 export type SingleOrDoubleBuff = Buff | `Double ${Buff}`;
 
 /** Charges cast by a Skill instance */
-export type Charge = 'Phys Charge' | 'Magic Charge' | 'Critical Charge' | 'Recovery Charge' | 'Pierce Charge' | 'Successive Strikes';
+export type Charge = 'Phys Charge' | 'Phys Charge - Donum' | 'Magic Charge' | 'Magic Charge - Donum' | 'Critical Charge' | 'Recovery Charge' | 'Pierce Charge' | 'Pierce Charge EX' | 'Successive Strikes';
 
 /** Displayed damage values for SMTCounterSkill instances */
 export type CounterDisplay = 'Weak' | 'Medium';

@@ -2069,7 +2069,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'CHARGE',
 		range: 'Ally',
 		cost: 40,
-		charge: 'Phys Charge'
+		charge: 'Phys Charge - Donum'
 	},
 	{
 		name: 'Donum Magici',
@@ -2077,7 +2077,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'CHARGE',
 		range: 'Ally',
 		cost: 40,
-		charge: 'Magic Charge'
+		charge: 'Magic Charge - Donum'
 	},
 	{
 		name: 'Door of Hades',
