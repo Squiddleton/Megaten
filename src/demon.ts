@@ -38,7 +38,7 @@ export class Demon<PersonaBased extends boolean = boolean> implements DemonData<
 	/** The skills that the demon learns via leveling up */
 	learnset: DemonSkill[];
 	/** The demon's ailment and affinity resistances */
-	resistances: DemonResistances<PersonaBased>;
+	resistances: DemonResistances;
 	/** The game that the demon's data originates from */
 	game: If<PersonaBased, PersonaGame, AnyGame>;
 	/** The demon's major and minor alignment */
@@ -114,7 +114,7 @@ export class Persona extends Demon<true> implements PersonaData {
 	declare race: 'Persona';
 	declare hp: null;
 	declare mp: null;
-	declare resistances: DemonResistances<true>;
+	declare resistances: DemonResistances;
 	declare game: PersonaGame;
 	/** The Persona's user */
 	user: string;

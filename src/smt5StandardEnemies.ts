@@ -33,18 +33,9 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			'Mudobarion'
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Ice'
-			],
-			resist: [
-				'Fire'
-			],
-			null: [
-				'Dark'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Resist',
+			Ice: 'Weak',
+			Dark: 'Null'
 		},
 		alignment: {
 			major: 'Neutral',
@@ -86,17 +77,9 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			'Zio'
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Ice',
-				'Dark'
-			],
-			resist: [],
-			null: [
-				'Elec'
-			],
-			drain: [],
-			repel: []
+			Ice: 'Weak',
+			Elec: 'Null',
+			Dark: 'Weak'
 		},
 		alignment: {
 			major: 'Neutral',
@@ -138,18 +121,9 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			'Mirage Shot'
 		],
 		resistances: {
-			ailments: {
-				Poison: 'Resist'
-			},
-			weak: [
-				'Ice'
-			],
-			resist: [],
-			null: [
-				'Fire'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Null',
+			Ice: 'Weak',
+			Poison: 'Resist'
 		},
 		alignment: {
 			major: 'Dark',
@@ -192,19 +166,10 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			'Sukukaja'
 		],
 		resistances: {
-			ailments: {
-				Charm: 'Resist'
-			},
-			weak: [
-				'Elec',
-				'Light'
-			],
-			resist: [],
-			null: [
-				'Ice'
-			],
-			drain: [],
-			repel: []
+			Ice: 'Null',
+			Elec: 'Weak',
+			Light: 'Weak',
+			Charm: 'Resist'
 		},
 		alignment: {
 			major: 'Neutral',
@@ -247,20 +212,11 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			'Steel Needle'
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Weak',
-				Seal: 'Resist',
-				Mirage: 'Null'
-			},
-			weak: [
-				'Force'
-			],
-			resist: [],
-			null: [
-				'Elec'
-			],
-			drain: [],
-			repel: []
+			Elec: 'Null',
+			Force: 'Weak',
+			Sleep: 'Weak',
+			Seal: 'Resist',
+			Mirage: 'Null'
 		},
 		alignment: {
 			major: 'Dark',
@@ -304,18 +260,9 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			'Slumber Vortex'
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Fire'
-			],
-			resist: [
-				'Ice'
-			],
-			null: [
-				'Light'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Weak',
+			Ice: 'Resist',
+			Light: 'Null'
 		},
 		alignment: {
 			major: 'Neutral',
@@ -357,16 +304,8 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			'Bufu'
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Elec'
-			],
-			resist: [
-				'Ice'
-			],
-			null: [],
-			drain: [],
-			repel: []
+			Ice: 'Resist',
+			Elec: 'Weak'
 		},
 		alignment: {
 			major: 'Neutral',
@@ -409,18 +348,9 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			'Mudoon'
 		],
 		resistances: {
-			ailments: {
-				Poison: 'Weak'
-			},
-			weak: [
-				'Light'
-			],
-			resist: [],
-			null: [
-				'Dark'
-			],
-			drain: [],
-			repel: []
+			Light: 'Weak',
+			Dark: 'Null',
+			Poison: 'Weak'
 		},
 		alignment: {
 			major: 'Dark',
@@ -463,19 +393,10 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			'Toxic Cloud'
 		],
 		resistances: {
-			ailments: {
-				Poison: 'Resist'
-			},
-			weak: [
-				'Elec'
-			],
-			resist: [
-				'Fire',
-				'Ice'
-			],
-			null: [],
-			drain: [],
-			repel: []
+			Fire: 'Resist',
+			Ice: 'Resist',
+			Elec: 'Weak',
+			Poison: 'Resist'
 		},
 		alignment: {
 			major: 'Dark',
@@ -518,17 +439,9 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			'Bloody Glee'
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Ice'
-			],
-			resist: [
-				'Fire',
-				'Dark'
-			],
-			null: [],
-			drain: [],
-			repel: []
+			Fire: 'Resist',
+			Ice: 'Weak',
+			Dark: 'Resist'
 		},
 		alignment: {
 			major: 'Neutral',
@@ -570,17 +483,9 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			'Beatdown'
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Elec',
-				'Light'
-			],
-			resist: [],
-			null: [
-				'Dark'
-			],
-			drain: [],
-			repel: []
+			Elec: 'Weak',
+			Light: 'Weak',
+			Dark: 'Null'
 		},
 		alignment: {
 			major: 'Dark',
@@ -623,21 +528,12 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			'Life Drain'
 		],
 		resistances: {
-			ailments: {
-				Mirage: 'Weak',
-				Confusion: 'Weak',
-				Charm: 'Weak'
-			},
-			weak: [
-				'Fire',
-				'Light'
-			],
-			resist: [
-				'Phys'
-			],
-			null: [],
-			drain: [],
-			repel: []
+			Phys: 'Resist',
+			Fire: 'Weak',
+			Light: 'Weak',
+			Mirage: 'Weak',
+			Confusion: 'Weak',
+			Charm: 'Weak'
 		},
 		alignment: {
 			major: 'Dark',
@@ -680,18 +576,9 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			'Dormina'
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Resist'
-			},
-			weak: [
-				'Fire'
-			],
-			resist: [],
-			null: [
-				'Dark'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Weak',
+			Dark: 'Null',
+			Sleep: 'Resist'
 		},
 		alignment: {
 			major: 'Dark',
@@ -733,16 +620,8 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			'Dia'
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Force'
-			],
-			resist: [
-				'Elec'
-			],
-			null: [],
-			drain: [],
-			repel: []
+			Elec: 'Resist',
+			Force: 'Weak'
 		},
 		alignment: {
 			major: 'Neutral',
@@ -786,18 +665,9 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			'Fire Breath'
 		],
 		resistances: {
-			ailments: {
-				Seal: 'Resist'
-			},
-			weak: [
-				'Ice'
-			],
-			resist: [],
-			null: [],
-			drain: [],
-			repel: [
-				'Fire'
-			]
+			Fire: 'Repel',
+			Ice: 'Weak',
+			Seal: 'Resist'
 		},
 		alignment: {
 			major: 'Neutral',
@@ -842,19 +712,10 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			'High Phys Pleroma'
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Fire',
-				'Elec'
-			],
-			resist: [],
-			null: [
-				'Ice'
-			],
-			drain: [],
-			repel: [
-				'Force'
-			]
+			Fire: 'Weak',
+			Ice: 'Null',
+			Elec: 'Weak',
+			Force: 'Repel'
 		},
 		alignment: {
 			major: 'Dark',
@@ -897,18 +758,10 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			'Hama'
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Dark'
-			],
-			resist: [
-				'Fire',
-				'Ice',
-				'Light'
-			],
-			null: [],
-			drain: [],
-			repel: []
+			Fire: 'Resist',
+			Ice: 'Resist',
+			Light: 'Resist',
+			Dark: 'Weak'
 		},
 		alignment: {
 			major: 'Light',
@@ -952,18 +805,9 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			'Makarakarn'
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Null'
-			},
-			weak: [
-				'Ice'
-			],
-			resist: [],
-			null: [
-				'Fire'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Null',
+			Ice: 'Weak',
+			Sleep: 'Null'
 		},
 		alignment: {
 			major: 'Neutral',
@@ -1005,19 +849,10 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			'Hellish Slash'
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Elec',
-				'Light'
-			],
-			resist: [
-				'Fire'
-			],
-			null: [
-				'Dark'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Resist',
+			Elec: 'Weak',
+			Light: 'Weak',
+			Dark: 'Null'
 		},
 		alignment: {
 			major: 'Neutral',
@@ -1060,20 +895,11 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			'Dark Sword'
 		],
 		resistances: {
-			ailments: {
-				Seal: 'Null'
-			},
-			weak: [
-				'Ice',
-				'Light'
-			],
-			resist: [
-				'Phys',
-				'Fire'
-			],
-			null: [],
-			drain: [],
-			repel: []
+			Phys: 'Resist',
+			Fire: 'Resist',
+			Ice: 'Weak',
+			Light: 'Weak',
+			Seal: 'Null'
 		},
 		alignment: {
 			major: 'Neutral',
@@ -1116,16 +942,8 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			'Tetrakarn'
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Light'
-			],
-			resist: [],
-			null: [
-				'Dark'
-			],
-			drain: [],
-			repel: []
+			Light: 'Weak',
+			Dark: 'Null'
 		},
 		alignment: {
 			major: 'Neutral',
@@ -1168,18 +986,9 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			'Blight'
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Elec'
-			],
-			resist: [
-				'Dark'
-			],
-			null: [
-				'Fire'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Null',
+			Elec: 'Weak',
+			Dark: 'Resist'
 		},
 		alignment: {
 			major: 'Neutral',
@@ -1223,19 +1032,10 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			'Poison Adept'
 		],
 		resistances: {
-			ailments: {
-				Poison: 'Null'
-			},
-			weak: [
-				'Ice',
-				'Elec'
-			],
-			resist: [
-				'Phys'
-			],
-			null: [],
-			drain: [],
-			repel: []
+			Phys: 'Resist',
+			Ice: 'Weak',
+			Elec: 'Weak',
+			Poison: 'Null'
 		},
 		alignment: {
 			major: 'Dark',
@@ -1278,20 +1078,10 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			'Black Dracostrike'
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Weak'
-			},
-			weak: [
-				'Ice'
-			],
-			resist: [
-				'Dark'
-			],
-			null: [
-				'Fire'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Null',
+			Ice: 'Weak',
+			Dark: 'Resist',
+			Sleep: 'Weak'
 		},
 		alignment: {
 			major: 'Neutral',
@@ -1335,19 +1125,10 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			'Marakunda'
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Elec',
-				'Light'
-			],
-			resist: [],
-			null: [
-				'Dark'
-			],
-			drain: [
-				'Ice'
-			],
-			repel: []
+			Ice: 'Drain',
+			Elec: 'Weak',
+			Light: 'Weak',
+			Dark: 'Null'
 		},
 		alignment: {
 			major: 'Neutral',
@@ -1391,18 +1172,9 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			'Force Pleroma'
 		],
 		resistances: {
-			ailments: {
-				Charm: 'Weak'
-			},
-			weak: [
-				'Elec'
-			],
-			resist: [],
-			null: [
-				'Force'
-			],
-			drain: [],
-			repel: []
+			Elec: 'Weak',
+			Force: 'Null',
+			Charm: 'Weak'
 		},
 		alignment: {
 			major: 'Neutral',
@@ -1446,23 +1218,13 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			'Marakunda'
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Weak',
-				Poison: 'Resist'
-			},
-			weak: [
-				'Elec',
-				'Force',
-				'Light'
-			],
-			resist: [
-				'Dark'
-			],
-			null: [],
-			drain: [],
-			repel: [
-				'Phys'
-			]
+			Phys: 'Repel',
+			Elec: 'Weak',
+			Force: 'Weak',
+			Light: 'Weak',
+			Dark: 'Resist',
+			Sleep: 'Weak',
+			Poison: 'Resist'
 		},
 		alignment: {
 			major: 'Dark',
@@ -1505,18 +1267,9 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			'Wind Dracostrike'
 		],
 		resistances: {
-			ailments: {
-				Mirage: 'Weak'
-			},
-			weak: [
-				'Elec'
-			],
-			resist: [],
-			null: [],
-			drain: [],
-			repel: [
-				'Force'
-			]
+			Elec: 'Weak',
+			Force: 'Repel',
+			Mirage: 'Weak'
 		},
 		alignment: {
 			major: 'Light',
@@ -1560,19 +1313,10 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			'Critical Aura'
 		],
 		resistances: {
-			ailments: {
-				Mirage: 'Weak',
-				Confusion: 'Resist'
-			},
-			weak: [
-				'Force'
-			],
-			resist: [],
-			null: [
-				'Dark'
-			],
-			drain: [],
-			repel: []
+			Force: 'Weak',
+			Dark: 'Null',
+			Mirage: 'Weak',
+			Confusion: 'Resist'
 		},
 		alignment: {
 			major: 'Dark',
@@ -1615,18 +1359,9 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			'Maragi'
 		],
 		resistances: {
-			ailments: {
-				Mirage: 'Weak'
-			},
-			weak: [
-				'Ice'
-			],
-			resist: [],
-			null: [
-				'Fire'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Null',
+			Ice: 'Weak',
+			Mirage: 'Weak'
 		},
 		alignment: {
 			major: 'Neutral',
@@ -1669,19 +1404,10 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			'Marin Karin'
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Resist',
-				Charm: 'Null'
-			},
-			weak: [
-				'Elec'
-			],
-			resist: [
-				'Force'
-			],
-			null: [],
-			drain: [],
-			repel: []
+			Elec: 'Weak',
+			Force: 'Resist',
+			Sleep: 'Resist',
+			Charm: 'Null'
 		},
 		alignment: {
 			major: 'Neutral',
@@ -1723,19 +1449,10 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			'Fire Breath'
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Ice',
-				'Light'
-			],
-			resist: [
-				'Dark'
-			],
-			null: [
-				'Fire'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Null',
+			Ice: 'Weak',
+			Light: 'Weak',
+			Dark: 'Resist'
 		},
 		alignment: {
 			major: 'Neutral',
@@ -1778,16 +1495,8 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			'Heat Wave'
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Light'
-			],
-			resist: [
-				'Fire'
-			],
-			null: [],
-			drain: [],
-			repel: []
+			Fire: 'Resist',
+			Light: 'Weak'
 		},
 		alignment: {
 			major: 'Neutral',
@@ -1830,18 +1539,9 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			'Ice Breath'
 		],
 		resistances: {
-			ailments: {
-				Charm: 'Weak'
-			},
-			weak: [
-				'Fire'
-			],
-			resist: [],
-			null: [],
-			drain: [
-				'Ice'
-			],
-			repel: []
+			Fire: 'Weak',
+			Ice: 'Drain',
+			Charm: 'Weak'
 		},
 		alignment: {
 			major: 'Neutral',
@@ -1884,18 +1584,9 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			'Maragi'
 		],
 		resistances: {
-			ailments: {
-				Confusion: 'Weak'
-			},
-			weak: [
-				'Ice'
-			],
-			resist: [],
-			null: [
-				'Fire'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Null',
+			Ice: 'Weak',
+			Confusion: 'Weak'
 		},
 		alignment: {
 			major: 'Neutral',
@@ -1938,18 +1629,9 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			'Makajamaon'
 		],
 		resistances: {
-			ailments: {
-				Seal: 'Resist'
-			},
-			weak: [
-				'Light'
-			],
-			resist: [],
-			null: [
-				'Dark'
-			],
-			drain: [],
-			repel: []
+			Light: 'Weak',
+			Dark: 'Null',
+			Seal: 'Resist'
 		},
 		alignment: {
 			major: 'Neutral',
@@ -1993,21 +1675,11 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			'Black Dracostrike'
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Ice',
-				'Force'
-			],
-			resist: [
-				'Light'
-			],
-			null: [
-				'Fire'
-			],
-			drain: [],
-			repel: [
-				'Dark'
-			]
+			Fire: 'Null',
+			Ice: 'Weak',
+			Force: 'Weak',
+			Light: 'Resist',
+			Dark: 'Repel'
 		},
 		alignment: {
 			major: 'Neutral',
@@ -2050,20 +1722,11 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			'Bufula'
 		],
 		resistances: {
-			ailments: {
-				Poison: 'Weak',
-				Sleep: 'Resist',
-				Charm: 'Resist'
-			},
-			weak: [
-				'Fire'
-			],
-			resist: [
-				'Ice'
-			],
-			null: [],
-			drain: [],
-			repel: []
+			Fire: 'Weak',
+			Ice: 'Resist',
+			Poison: 'Weak',
+			Sleep: 'Resist',
+			Charm: 'Resist'
 		},
 		alignment: {
 			major: 'Neutral',
@@ -2106,18 +1769,9 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			'Diarama'
 		],
 		resistances: {
-			ailments: {
-				Mirage: 'Null'
-			},
-			weak: [
-				'Force'
-			],
-			resist: [
-				'Ice'
-			],
-			null: [],
-			drain: [],
-			repel: []
+			Ice: 'Resist',
+			Force: 'Weak',
+			Mirage: 'Null'
 		},
 		alignment: {
 			major: 'Neutral',
@@ -2161,18 +1815,9 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			'Retaliate'
 		],
 		resistances: {
-			ailments: {
-				Mirage: 'Weak'
-			},
-			weak: [
-				'Force'
-			],
-			resist: [],
-			null: [
-				'Elec'
-			],
-			drain: [],
-			repel: []
+			Elec: 'Null',
+			Force: 'Weak',
+			Mirage: 'Weak'
 		},
 		alignment: {
 			major: 'Neutral',
@@ -2214,17 +1859,9 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			'Zan'
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Fire',
-				'Ice'
-			],
-			resist: [
-				'Force'
-			],
-			null: [],
-			drain: [],
-			repel: []
+			Fire: 'Weak',
+			Ice: 'Weak',
+			Force: 'Resist'
 		},
 		alignment: {
 			major: 'Neutral',
@@ -2267,18 +1904,9 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			'Mazan'
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Resist'
-			},
-			weak: [
-				'Elec'
-			],
-			resist: [
-				'Force'
-			],
-			null: [],
-			drain: [],
-			repel: []
+			Elec: 'Weak',
+			Force: 'Resist',
+			Sleep: 'Resist'
 		},
 		alignment: {
 			major: 'Neutral',
@@ -2322,21 +1950,11 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			'Tarukaja'
 		],
 		resistances: {
-			ailments: {
-				Poison: 'Resist'
-			},
-			weak: [
-				'Force',
-				'Dark'
-			],
-			resist: [
-				'Light'
-			],
-			null: [
-				'Ice'
-			],
-			drain: [],
-			repel: []
+			Ice: 'Null',
+			Force: 'Weak',
+			Light: 'Resist',
+			Dark: 'Weak',
+			Poison: 'Resist'
 		},
 		alignment: {
 			major: 'Neutral',
@@ -2380,23 +1998,13 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			'Spirit Drain'
 		],
 		resistances: {
-			ailments: {
-				Mirage: 'Weak',
-				Poison: 'Resist',
-				Confusion: 'Resist',
-				Charm: 'Resist'
-			},
-			weak: [
-				'Elec'
-			],
-			resist: [
-				'Dark'
-			],
-			null: [
-				'Force'
-			],
-			drain: [],
-			repel: []
+			Elec: 'Weak',
+			Force: 'Null',
+			Dark: 'Resist',
+			Mirage: 'Weak',
+			Poison: 'Resist',
+			Confusion: 'Resist',
+			Charm: 'Resist'
 		},
 		alignment: {
 			major: 'Dark',
@@ -2439,19 +2047,10 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			'Wind Dracostrike'
 		],
 		resistances: {
-			ailments: {
-				Charm: 'Weak',
-				Seal: 'Resist'
-			},
-			weak: [
-				'Elec'
-			],
-			resist: [],
-			null: [
-				'Force'
-			],
-			drain: [],
-			repel: []
+			Elec: 'Weak',
+			Force: 'Null',
+			Charm: 'Weak',
+			Seal: 'Resist'
 		},
 		alignment: {
 			major: 'Light',
@@ -2495,21 +2094,13 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			'Donum Magici'
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Resist',
-				Mirage: 'Resist',
-				Poison: 'Resist',
-				Confusion: 'Resist',
-				Charm: 'Resist',
-				Seal: 'Resist'
-			},
-			weak: [
-				'Force'
-			],
-			resist: [],
-			null: [],
-			drain: [],
-			repel: []
+			Force: 'Weak',
+			Sleep: 'Resist',
+			Mirage: 'Resist',
+			Poison: 'Resist',
+			Confusion: 'Resist',
+			Charm: 'Resist',
+			Seal: 'Resist'
 		},
 		alignment: {
 			major: 'Neutral',
@@ -2553,19 +2144,10 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			'Makajama'
 		],
 		resistances: {
-			ailments: {
-				Mirage: 'Weak',
-				Poison: 'Resist'
-			},
-			weak: [
-				'Ice'
-			],
-			resist: [],
-			null: [
-				'Elec'
-			],
-			drain: [],
-			repel: []
+			Ice: 'Weak',
+			Elec: 'Null',
+			Mirage: 'Weak',
+			Poison: 'Resist'
 		},
 		alignment: {
 			major: 'Neutral',
@@ -2607,17 +2189,9 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			'Mudo'
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Elec',
-				'Light'
-			],
-			resist: [],
-			null: [
-				'Dark'
-			],
-			drain: [],
-			repel: []
+			Elec: 'Weak',
+			Light: 'Weak',
+			Dark: 'Null'
 		},
 		alignment: {
 			major: 'Dark',
@@ -2660,19 +2234,10 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			'Marin Karin'
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Resist',
-				Charm: 'Null'
-			},
-			weak: [
-				'Ice'
-			],
-			resist: [],
-			null: [
-				'Elec'
-			],
-			drain: [],
-			repel: []
+			Ice: 'Weak',
+			Elec: 'Null',
+			Sleep: 'Resist',
+			Charm: 'Null'
 		},
 		alignment: {
 			major: 'Neutral',
@@ -2714,18 +2279,9 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			'Toxic Sting'
 		],
 		resistances: {
-			ailments: {
-				Poison: 'Null'
-			},
-			weak: [
-				'Light'
-			],
-			resist: [],
-			null: [
-				'Dark'
-			],
-			drain: [],
-			repel: []
+			Light: 'Weak',
+			Dark: 'Null',
+			Poison: 'Null'
 		},
 		alignment: {
 			major: 'Dark',
@@ -2769,19 +2325,10 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			'Madness Nails'
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Ice',
-				'Light'
-			],
-			resist: [
-				'Fire'
-			],
-			null: [
-				'Elec'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Resist',
+			Ice: 'Weak',
+			Elec: 'Null',
+			Light: 'Weak'
 		},
 		alignment: {
 			major: 'Neutral',
@@ -2825,19 +2372,10 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			'Black Dracostrike'
 		],
 		resistances: {
-			ailments: {
-				Confusion: 'Resist',
-				Poison: 'Null'
-			},
-			weak: [
-				'Light'
-			],
-			resist: [],
-			null: [
-				'Dark'
-			],
-			drain: [],
-			repel: []
+			Light: 'Weak',
+			Dark: 'Null',
+			Confusion: 'Resist',
+			Poison: 'Null'
 		},
 		alignment: {
 			major: 'Dark',
@@ -2881,18 +2419,9 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			'Mediarahan'
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Ice'
-			],
-			resist: [],
-			null: [
-				'Dark'
-			],
-			drain: [
-				'Fire'
-			],
-			repel: []
+			Fire: 'Drain',
+			Ice: 'Weak',
+			Dark: 'Null'
 		},
 		alignment: {
 			major: 'Dark',
@@ -2935,19 +2464,10 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			'Zanma'
 		],
 		resistances: {
-			ailments: {
-				Mirage: 'Resist',
-				Charm: 'Resist'
-			},
-			weak: [
-				'Light'
-			],
-			resist: [],
-			null: [
-				'Dark'
-			],
-			drain: [],
-			repel: []
+			Light: 'Weak',
+			Dark: 'Null',
+			Mirage: 'Resist',
+			Charm: 'Resist'
 		},
 		alignment: {
 			major: 'Neutral',
@@ -2989,18 +2509,9 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			'Zio'
 		],
 		resistances: {
-			ailments: {
-				Mirage: 'Weak'
-			},
-			weak: [
-				'Fire'
-			],
-			resist: [
-				'Elec'
-			],
-			null: [],
-			drain: [],
-			repel: []
+			Fire: 'Weak',
+			Elec: 'Resist',
+			Mirage: 'Weak'
 		},
 		alignment: {
 			major: 'Neutral',
@@ -3042,19 +2553,10 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			'Stormcaller Song'
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Resist'
-			},
-			weak: [
-				'Fire',
-				'Elec'
-			],
-			resist: [],
-			null: [
-				'Ice'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Weak',
+			Ice: 'Null',
+			Elec: 'Weak',
+			Sleep: 'Resist'
 		},
 		alignment: {
 			major: 'Neutral',
@@ -3097,20 +2599,11 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			'Matarunda'
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Resist'
-			},
-			weak: [
-				'Force',
-				'Light'
-			],
-			resist: [],
-			null: [
-				'Elec',
-				'Dark'
-			],
-			drain: [],
-			repel: []
+			Elec: 'Null',
+			Force: 'Weak',
+			Light: 'Weak',
+			Dark: 'Null',
+			Sleep: 'Resist'
 		},
 		alignment: {
 			major: 'Dark',
@@ -3153,16 +2646,8 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			'Dustoma'
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Force'
-			],
-			resist: [
-				'Elec'
-			],
-			null: [],
-			drain: [],
-			repel: []
+			Elec: 'Resist',
+			Force: 'Weak'
 		},
 		alignment: {
 			major: 'Neutral',
@@ -3205,19 +2690,10 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			'Pulinpa'
 		],
 		resistances: {
-			ailments: {
-				Mirage: 'Resist',
-				Poison: 'Resist'
-			},
-			weak: [
-				'Force'
-			],
-			resist: [],
-			null: [
-				'Elec'
-			],
-			drain: [],
-			repel: []
+			Elec: 'Null',
+			Force: 'Weak',
+			Mirage: 'Resist',
+			Poison: 'Resist'
 		},
 		alignment: {
 			major: 'Dark',
@@ -3261,16 +2737,8 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			'Tetrakarn'
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Fire'
-			],
-			resist: [],
-			null: [
-				'Force'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Weak',
+			Force: 'Null'
 		},
 		alignment: {
 			major: 'Dark',
@@ -3313,19 +2781,10 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			'Heat Wave'
 		],
 		resistances: {
-			ailments: {
-				Seal: 'Null'
-			},
-			weak: [
-				'Fire',
-				'Force'
-			],
-			resist: [],
-			null: [
-				'Elec'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Weak',
+			Elec: 'Null',
+			Force: 'Weak',
+			Seal: 'Null'
 		},
 		alignment: {
 			major: 'Neutral',
@@ -3369,19 +2828,10 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			'Elec Pleroma'
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Fire',
-				'Force'
-			],
-			resist: [
-				'Ice'
-			],
-			null: [],
-			drain: [
-				'Elec'
-			],
-			repel: []
+			Fire: 'Weak',
+			Ice: 'Resist',
+			Elec: 'Drain',
+			Force: 'Weak'
 		},
 		alignment: {
 			major: 'Neutral',
@@ -3425,19 +2875,10 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			'Hellish Mask'
 		],
 		resistances: {
-			ailments: {
-				Confusion: 'Resist',
-				Charm: 'Null'
-			},
-			weak: [
-				'Fire'
-			],
-			resist: [],
-			null: [
-				'Force'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Weak',
+			Force: 'Null',
+			Confusion: 'Resist',
+			Charm: 'Null'
 		},
 		alignment: {
 			major: 'Neutral',
@@ -3480,17 +2921,9 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			'Megidola'
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Force',
-				'Light'
-			],
-			resist: [],
-			null: [],
-			drain: [],
-			repel: [
-				'Dark'
-			]
+			Force: 'Weak',
+			Light: 'Weak',
+			Dark: 'Repel'
 		},
 		alignment: {
 			major: 'Neutral',
@@ -3533,21 +2966,11 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			'Beast Eye'
 		],
 		resistances: {
-			ailments: {
-				Charm: 'Resist'
-			},
-			weak: [
-				'Ice',
-				'Elec'
-			],
-			resist: [
-				'Fire'
-			],
-			null: [
-				'Force'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Resist',
+			Ice: 'Weak',
+			Elec: 'Weak',
+			Force: 'Null',
+			Charm: 'Resist'
 		},
 		alignment: {
 			major: 'Neutral',
@@ -3591,18 +3014,9 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			'Beast Eye'
 		],
 		resistances: {
-			ailments: {
-				Charm: 'Weak'
-			},
-			weak: [
-				'Force'
-			],
-			resist: [],
-			null: [
-				'Elec'
-			],
-			drain: [],
-			repel: []
+			Elec: 'Null',
+			Force: 'Weak',
+			Charm: 'Weak'
 		},
 		alignment: {
 			major: 'Dark',
@@ -3645,18 +3059,10 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			'Sukukaja'
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Ice',
-				'Light'
-			],
-			resist: [
-				'Elec',
-				'Dark'
-			],
-			null: [],
-			drain: [],
-			repel: []
+			Ice: 'Weak',
+			Elec: 'Resist',
+			Light: 'Weak',
+			Dark: 'Resist'
 		},
 		alignment: {
 			major: 'Dark',
@@ -3699,18 +3105,9 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			'Diamrita'
 		],
 		resistances: {
-			ailments: {
-				Charm: 'Weak'
-			},
-			weak: [
-				'Elec'
-			],
-			resist: [],
-			null: [
-				'Force'
-			],
-			drain: [],
-			repel: []
+			Elec: 'Weak',
+			Force: 'Null',
+			Charm: 'Weak'
 		},
 		alignment: {
 			major: 'Neutral',
@@ -3754,18 +3151,10 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			'Slumber Vortex'
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Light'
-			],
-			resist: [
-				'Phys',
-				'Ice',
-				'Force'
-			],
-			null: [],
-			drain: [],
-			repel: []
+			Phys: 'Resist',
+			Ice: 'Resist',
+			Force: 'Resist',
+			Light: 'Weak'
 		},
 		alignment: {
 			major: 'Neutral',
@@ -3808,20 +3197,11 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			'Crusher Onslaught'
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Weak',
-				Confusion: 'Weak'
-			},
-			weak: [
-				'Elec',
-				'Light'
-			],
-			resist: [
-				'Phys'
-			],
-			null: [],
-			drain: [],
-			repel: []
+			Phys: 'Resist',
+			Elec: 'Weak',
+			Light: 'Weak',
+			Sleep: 'Weak',
+			Confusion: 'Weak'
 		},
 		alignment: {
 			major: 'Neutral',
@@ -3863,19 +3243,10 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			'Agi'
 		],
 		resistances: {
-			ailments: {
-				Mirage: 'Weak'
-			},
-			weak: [
-				'Ice',
-				'Force'
-			],
-			resist: [
-				'Fire'
-			],
-			null: [],
-			drain: [],
-			repel: []
+			Fire: 'Resist',
+			Ice: 'Weak',
+			Force: 'Weak',
+			Mirage: 'Weak'
 		},
 		alignment: {
 			major: 'Dark',
@@ -3919,20 +3290,10 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			'Megido'
 		],
 		resistances: {
-			ailments: {
-				Confusion: 'Null'
-			},
-			weak: [
-				'Ice'
-			],
-			resist: [
-				'Dark'
-			],
-			null: [
-				'Fire'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Null',
+			Ice: 'Weak',
+			Dark: 'Resist',
+			Confusion: 'Null'
 		},
 		alignment: {
 			major: 'Neutral',
@@ -3976,21 +3337,11 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			'Fire Dracostrike'
 		],
 		resistances: {
-			ailments: {
-				Poison: 'Weak',
-				Confusion: 'Resist'
-			},
-			weak: [
-				'Ice'
-			],
-			resist: [
-				'Dark'
-			],
-			null: [
-				'Fire'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Null',
+			Ice: 'Weak',
+			Dark: 'Resist',
+			Poison: 'Weak',
+			Confusion: 'Resist'
 		},
 		alignment: {
 			major: 'Neutral',
@@ -4034,19 +3385,10 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			'Beast Eye'
 		],
 		resistances: {
-			ailments: {
-				Charm: 'Weak'
-			},
-			weak: [
-				'Fire'
-			],
-			resist: [],
-			null: [
-				'Ice',
-				'Dark'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Weak',
+			Ice: 'Null',
+			Dark: 'Null',
+			Charm: 'Weak'
 		},
 		alignment: {
 			major: 'Neutral',
@@ -4090,20 +3432,10 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			'Tentarafoo'
 		],
 		resistances: {
-			ailments: {
-				Confusion: 'Resist'
-			},
-			weak: [
-				'Ice'
-			],
-			resist: [
-				'Force'
-			],
-			null: [
-				'Dark'
-			],
-			drain: [],
-			repel: []
+			Ice: 'Weak',
+			Force: 'Resist',
+			Dark: 'Null',
+			Confusion: 'Resist'
 		},
 		alignment: {
 			major: 'Dark',
@@ -4146,17 +3478,9 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			'Fang Breaker'
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Fire',
-				'Light'
-			],
-			resist: [],
-			null: [
-				'Dark'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Weak',
+			Light: 'Weak',
+			Dark: 'Null'
 		},
 		alignment: {
 			major: 'Dark',
@@ -4198,18 +3522,9 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			'Dia'
 		],
 		resistances: {
-			ailments: {
-				Confusion: 'Weak'
-			},
-			weak: [
-				'Dark'
-			],
-			resist: [
-				'Force'
-			],
-			null: [],
-			drain: [],
-			repel: []
+			Force: 'Resist',
+			Dark: 'Weak',
+			Confusion: 'Weak'
 		},
 		alignment: {
 			major: 'Neutral',
@@ -4252,17 +3567,9 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			'Masukunda'
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Force',
-				'Light'
-			],
-			resist: [],
-			null: [
-				'Elec'
-			],
-			drain: [],
-			repel: []
+			Elec: 'Null',
+			Force: 'Weak',
+			Light: 'Weak'
 		},
 		alignment: {
 			major: 'Dark',
@@ -4304,18 +3611,10 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			'Bestial Bite'
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Fire',
-				'Force',
-				'Light'
-			],
-			resist: [
-				'Dark'
-			],
-			null: [],
-			drain: [],
-			repel: []
+			Fire: 'Weak',
+			Force: 'Weak',
+			Light: 'Weak',
+			Dark: 'Resist'
 		},
 		alignment: {
 			major: 'Dark',
@@ -4359,20 +3658,11 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			'Fogna'
 		],
 		resistances: {
-			ailments: {
-				Poison: 'Weak',
-				Sleep: 'Resist',
-				Charm: 'Resist'
-			},
-			weak: [
-				'Elec'
-			],
-			resist: [],
-			null: [
-				'Force'
-			],
-			drain: [],
-			repel: []
+			Elec: 'Weak',
+			Force: 'Null',
+			Poison: 'Weak',
+			Sleep: 'Resist',
+			Charm: 'Resist'
 		},
 		alignment: {
 			major: 'Neutral',
@@ -4415,19 +3705,10 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			'Counter'
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Weak'
-			},
-			weak: [
-				'Ice'
-			],
-			resist: [
-				'Light',
-				'Dark'
-			],
-			null: [],
-			drain: [],
-			repel: []
+			Ice: 'Weak',
+			Light: 'Resist',
+			Dark: 'Resist',
+			Sleep: 'Weak'
 		},
 		alignment: {
 			major: 'Dark',
@@ -4471,20 +3752,11 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			'Wind Breath'
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Weak'
-			},
-			weak: [
-				'Fire',
-				'Elec',
-				'Light'
-			],
-			resist: [],
-			null: [],
-			drain: [],
-			repel: [
-				'Phys'
-			]
+			Phys: 'Repel',
+			Fire: 'Weak',
+			Elec: 'Weak',
+			Light: 'Weak',
+			Sleep: 'Weak'
 		},
 		alignment: {
 			major: 'Neutral',
@@ -4526,16 +3798,8 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			'Dream Needle'
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Elec'
-			],
-			resist: [
-				'Force'
-			],
-			null: [],
-			drain: [],
-			repel: []
+			Elec: 'Weak',
+			Force: 'Resist'
 		},
 		alignment: {
 			major: 'Neutral',
@@ -4578,20 +3842,11 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			'Deathbound'
 		],
 		resistances: {
-			ailments: {
-				Confusion: 'Weak',
-				Seal: 'Resist'
-			},
-			weak: [
-				'Elec',
-				'Dark'
-			],
-			resist: [],
-			null: [
-				'Force'
-			],
-			drain: [],
-			repel: []
+			Elec: 'Weak',
+			Force: 'Null',
+			Dark: 'Weak',
+			Confusion: 'Weak',
+			Seal: 'Resist'
 		},
 		alignment: {
 			major: 'Neutral',
@@ -4634,21 +3889,12 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			'Mudo'
 		],
 		resistances: {
-			ailments: {
-				Confusion: 'Weak'
-			},
-			weak: [
-				'Fire',
-				'Force'
-			],
-			resist: [
-				'Phys',
-				'Light',
-				'Dark'
-			],
-			null: [],
-			drain: [],
-			repel: []
+			Phys: 'Resist',
+			Fire: 'Weak',
+			Force: 'Weak',
+			Light: 'Resist',
+			Dark: 'Resist',
+			Confusion: 'Weak'
 		},
 		alignment: {
 			major: 'Neutral',
@@ -4690,20 +3936,12 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			'Lunge'
 		],
 		resistances: {
-			ailments: {
-				Poison: 'Resist'
-			},
-			weak: [
-				'Fire',
-				'Ice',
-				'Elec',
-				'Force',
-				'Light'
-			],
-			resist: [],
-			null: [],
-			drain: [],
-			repel: []
+			Fire: 'Weak',
+			Ice: 'Weak',
+			Elec: 'Weak',
+			Force: 'Weak',
+			Light: 'Weak',
+			Poison: 'Resist'
 		},
 		alignment: {
 			major: 'Dark',
@@ -4746,18 +3984,9 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			'Masukunda'
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Light'
-			],
-			resist: [
-				'Fire'
-			],
-			null: [
-				'Ice'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Resist',
+			Ice: 'Null',
+			Light: 'Weak'
 		},
 		alignment: {
 			major: 'Neutral',
@@ -4799,20 +4028,11 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			'Mazan'
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Weak',
-				Confusion: 'Resist'
-			},
-			weak: [
-				'Fire',
-				'Ice'
-			],
-			resist: [],
-			null: [
-				'Force'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Weak',
+			Ice: 'Weak',
+			Force: 'Null',
+			Sleep: 'Weak',
+			Confusion: 'Resist'
 		},
 		alignment: {
 			major: 'Neutral',
@@ -4856,18 +4076,9 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			'Marakukaja'
 		],
 		resistances: {
-			ailments: {
-				Seal: 'Weak'
-			},
-			weak: [
-				'Fire'
-			],
-			resist: [],
-			null: [
-				'Ice'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Weak',
+			Ice: 'Null',
+			Seal: 'Weak'
 		},
 		alignment: {
 			major: 'Neutral',
@@ -4911,18 +4122,10 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			'Mediarama'
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Ice',
-				'Dark'
-			],
-			resist: [],
-			null: [
-				'Fire',
-				'Light'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Null',
+			Ice: 'Weak',
+			Light: 'Null',
+			Dark: 'Weak'
 		},
 		alignment: {
 			major: 'Neutral',
@@ -4965,21 +4168,11 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			'Diarahan'
 		],
 		resistances: {
-			ailments: {
-				Confusion: 'Resist',
-				Mirage: 'Resist'
-			},
-			weak: [
-				'Fire'
-			],
-			resist: [
-				'Dark'
-			],
-			null: [
-				'Light'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Weak',
+			Light: 'Null',
+			Dark: 'Resist',
+			Confusion: 'Resist',
+			Mirage: 'Resist'
 		},
 		alignment: {
 			major: 'Neutral',
@@ -5021,19 +4214,10 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			'Mazio'
 		],
 		resistances: {
-			ailments: {
-				Charm: 'Weak',
-				Poison: 'Resist'
-			},
-			weak: [
-				'Ice'
-			],
-			resist: [
-				'Elec'
-			],
-			null: [],
-			drain: [],
-			repel: []
+			Ice: 'Weak',
+			Elec: 'Resist',
+			Charm: 'Weak',
+			Poison: 'Resist'
 		},
 		alignment: {
 			major: 'Neutral',
@@ -5075,16 +4259,8 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			'Gram Slice'
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Force'
-			],
-			resist: [
-				'Dark'
-			],
-			null: [],
-			drain: [],
-			repel: []
+			Force: 'Weak',
+			Dark: 'Resist'
 		},
 		alignment: {
 			major: 'Dark',
@@ -5127,16 +4303,8 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			'Storm Dracostrike'
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Force'
-			],
-			resist: [],
-			null: [
-				'Light'
-			],
-			drain: [],
-			repel: []
+			Force: 'Weak',
+			Light: 'Null'
 		},
 		alignment: {
 			major: 'Neutral',
@@ -5179,18 +4347,9 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			'Counter'
 		],
 		resistances: {
-			ailments: {
-				Seal: 'Weak'
-			},
-			weak: [
-				'Elec'
-			],
-			resist: [],
-			null: [
-				'Force'
-			],
-			drain: [],
-			repel: []
+			Elec: 'Weak',
+			Force: 'Null',
+			Seal: 'Weak'
 		},
 		alignment: {
 			major: 'Neutral',
@@ -5234,21 +4393,12 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			'Dragon Eye'
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Weak',
-				Poison: 'Weak',
-				Confusion: 'Weak'
-			},
-			weak: [
-				'Elec'
-			],
-			resist: [],
-			null: [
-				'Fire',
-				'Ice'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Null',
+			Ice: 'Null',
+			Elec: 'Weak',
+			Sleep: 'Weak',
+			Poison: 'Weak',
+			Confusion: 'Weak'
 		},
 		alignment: {
 			major: 'Neutral',
@@ -5292,18 +4442,9 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			'Diarahan'
 		],
 		resistances: {
-			ailments: {
-				Seal: 'Weak'
-			},
-			weak: [
-				'Fire'
-			],
-			resist: [],
-			null: [
-				'Elec'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Weak',
+			Elec: 'Null',
+			Seal: 'Weak'
 		},
 		alignment: {
 			major: 'Neutral',
@@ -5345,19 +4486,10 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			'Needle Spray'
 		],
 		resistances: {
-			ailments: {
-				Mirage: 'Resist',
-				Poison: 'Resist'
-			},
-			weak: [
-				'Fire'
-			],
-			resist: [
-				'Dark'
-			],
-			null: [],
-			drain: [],
-			repel: []
+			Fire: 'Weak',
+			Dark: 'Resist',
+			Mirage: 'Resist',
+			Poison: 'Resist'
 		},
 		alignment: {
 			major: 'Dark',

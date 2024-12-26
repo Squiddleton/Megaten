@@ -1,5 +1,5 @@
 import type { BattleThemes } from './music.js';
-import type { AilBoostCriteria, AilDefensiveAilment, AilResistance, Ailment, AilmentName, AilmentRange, AllyRange, AnyAffinity, AnyGame, Arcana, AttackCost, AttackFlag, AttackPower, AutoBuffRange, Barrier, BarrierRange, BoostAffinity, BoostStack, BreakAffinity, Buff, Charge, CritBoostCriteria, CritRange, DamagingAffinity, Debuff, DefensiveAffinity, DemonAffinities, DemonAlignment, DemonOrigin, DemonResistances, DemonSkill, DemonStats, EndureCriteria, EnemyRange, EvasionAffinity, EvasionBoostCriteria, HPMP, If, LightDark, MasterStat, NumberOrPercent, OneOrAllAilments, PersonaGame, PersonaRace, PostBattleStat, RecoveryAmount, RecoveryFlag, RecoveryRange, RegenCriteria, RegenStat, Resistance, SMTCounterAffinity, SMTCounterPower, SMTRace, Series, SetAffinity, SingleOrDoubleBuff, SiphonCriteria, SkillPotential, SkillType, Stage, SupportAutoEffect, SupportFlag, SupportRange, SusceptibilityRange, WallAffinity } from './types.js';
+import type { AilBoostCriteria, AilDefensiveAilment, AilResistance, Ailment, AilmentName, AilmentRange, AllyRange, AnyAffinity, AnyGame, Arcana, AttackCost, AttackFlag, AttackPower, AutoBuffRange, Barrier, BarrierRange, BoostAffinity, BoostStack, BreakAffinity, Buff, Charge, CritBoostCriteria, CritRange, DamagingAffinity, Debuff, DefensiveAffinity, DefensiveSKillResistance, DemonAffinities, DemonAlignment, DemonOrigin, DemonResistances, DemonSkill, DemonStats, EndureCriteria, EnemyRange, EvasionAffinity, EvasionBoostCriteria, HPMP, If, LightDark, MasterStat, NumberOrPercent, OneOrAllAilments, PersonaGame, PersonaRace, PostBattleStat, RecoveryAmount, RecoveryFlag, RecoveryRange, RegenCriteria, RegenStat, SMTCounterAffinity, SMTCounterPower, SMTRace, Series, SetAffinity, SingleOrDoubleBuff, SiphonCriteria, SkillPotential, SkillType, Stage, SupportAutoEffect, SupportFlag, SupportRange, SusceptibilityRange, WallAffinity } from './types.js';
 
 /** Data used for constructing a Demon instance */
 export interface DemonData<PersonaBased extends boolean = boolean> {
@@ -13,7 +13,7 @@ export interface DemonData<PersonaBased extends boolean = boolean> {
 	mp: If<PersonaBased, null, number | null>;
 	stats: DemonStats;
 	learnset: DemonSkill[];
-	resistances: DemonResistances<PersonaBased>;
+	resistances: DemonResistances;
 	game: If<PersonaBased, PersonaGame, AnyGame>;
 	alignment: If<PersonaBased, null, DemonAlignment>;
 	lore: If<PersonaBased, string | null, string>;
@@ -45,7 +45,7 @@ export interface SMT5StandardEnemyData {
 	/** The names of the enemy's skills */
 	skills: string[];
 	/** The enemy's ailment and affinity resistances */
-	resistances: DemonResistances<false>;
+	resistances: DemonResistances;
 	/** The enemy's major and minor alignment */
 	alignment: DemonAlignment;
 	/** The enemy's backstory */
@@ -173,7 +173,7 @@ export interface DefensiveSkillData extends SkillData {
 	affinity: 'Passive';
 	type: 'DEFENSIVE';
 	element: DefensiveAffinity;
-	newResistance: Resistance;
+	newResistance: DefensiveSKillResistance;
 }
 
 export interface EndureSkillData extends SkillData {

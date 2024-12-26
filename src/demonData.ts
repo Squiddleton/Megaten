@@ -62,21 +62,11 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Seal: 'Weak',
-				Mirage: 'Resist'
-			},
-			weak: [
-				'Elec'
-			],
-			resist: [
-				'Dark'
-			],
-			null: [
-				'Fire'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Null',
+			Elec: 'Weak',
+			Dark: 'Resist',
+			Seal: 'Weak',
+			Mirage: 'Resist'
 		},
 		game: 'smt5',
 		alignment: {
@@ -143,19 +133,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Dark'
-			],
-			resist: [
-				'Elec',
-				'Force'
-			],
-			null: [],
-			drain: [],
-			repel: [
-				'Light'
-			]
+			Elec: 'Resist',
+			Force: 'Resist',
+			Light: 'Repel',
+			Dark: 'Weak'
 		},
 		game: 'smt5',
 		alignment: {
@@ -229,22 +210,12 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Confusion: 'Null'
-			},
-			weak: [
-				'Light'
-			],
-			resist: [
-				'Ice',
-				'Elec',
-				'Force'
-			],
-			null: [],
-			drain: [],
-			repel: [
-				'Dark'
-			]
+			Ice: 'Resist',
+			Elec: 'Resist',
+			Force: 'Resist',
+			Light: 'Weak',
+			Dark: 'Repel',
+			Confusion: 'Null'
 		},
 		game: 'smt5',
 		alignment: {
@@ -315,18 +286,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Ice'
-			],
-			resist: [
-				'Fire'
-			],
-			null: [
-				'Dark'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Resist',
+			Ice: 'Weak',
+			Dark: 'Null'
 		},
 		game: 'smt5',
 		alignment: {
@@ -381,16 +343,8 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Elec'
-			],
-			resist: [
-				'Force'
-			],
-			null: [],
-			drain: [],
-			repel: []
+			Elec: 'Weak',
+			Force: 'Resist'
 		},
 		game: 'smt5',
 		alignment: {
@@ -445,17 +399,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Ice',
-				'Dark'
-			],
-			resist: [],
-			null: [
-				'Elec'
-			],
-			drain: [],
-			repel: []
+			Ice: 'Weak',
+			Elec: 'Null',
+			Dark: 'Weak'
 		},
 		game: 'smt5',
 		alignment: {
@@ -570,18 +516,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: null,
-			weak: [
-				'Psy'
-			],
-			resist: [
-				'Dark'
-			],
-			null: [
-				'Nuke'
-			],
-			drain: [],
-			repel: []
+			Psy: 'Weak',
+			Nuke: 'Null',
+			Dark: 'Resist'
 		},
 		game: 'p5',
 		alignment: null,
@@ -652,19 +589,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Elec'
-			],
-			resist: [
-				'Fire',
-				'Dark'
-			],
-			null: [
-				'Ice'
-			],
-			repel: [],
-			drain: []
+			Fire: 'Resist',
+			Ice: 'Null',
+			Elec: 'Weak',
+			Dark: 'Resist'
 		},
 		game: 'smt5',
 		alignment: {
@@ -719,18 +647,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Poison: 'Resist'
-			},
-			weak: [
-				'Ice'
-			],
-			resist: [],
-			null: [
-				'Fire'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Null',
+			Ice: 'Weak',
+			Poison: 'Resist'
 		},
 		game: 'smt5',
 		alignment: {
@@ -780,14 +699,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 				level: 67
 			}
 		],
-		resistances: {
-			ailments: null,
-			weak: [],
-			resist: [],
-			null: [],
-			drain: [],
-			repel: []
-		},
+		resistances: {},
 		game: 'p5',
 		alignment: null,
 		lore: 'The original name of the Necronomicon, a tome of the Cthulhu Mythos\'s mysteries. Said to have been authored by Abdul Alhazred, a poet and devotee of Cthulhu known as the \'mad Arab.\'',
@@ -857,16 +769,8 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Light'
-			],
-			resist: [],
-			null: [],
-			drain: [
-				'Dark'
-			],
-			repel: []
+			Light: 'Weak',
+			Dark: 'Drain'
 		},
 		game: 'smt5',
 		alignment: {
@@ -937,22 +841,14 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Mirage: 'Resist',
-				Confusion: 'Resist',
-				Charm: 'Resist',
-				Sleep: 'Null',
-				Poison: 'Null',
-				Seal: 'Null'
-			},
-			weak: [],
-			resist: [
-				'Light',
-				'Dark'
-			],
-			null: [],
-			drain: [],
-			repel: []
+			Light: 'Resist',
+			Dark: 'Resist',
+			Mirage: 'Resist',
+			Confusion: 'Resist',
+			Charm: 'Resist',
+			Sleep: 'Null',
+			Poison: 'Null',
+			Seal: 'Null'
 		},
 		game: 'smt5',
 		alignment: {
@@ -1011,19 +907,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: null,
-			weak: [
-				'Wind'
-			],
-			resist: [
-				'Fire',
-				'Ice'
-			],
-			null: [
-				'Dark'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Resist',
+			Ice: 'Resist',
+			Wind: 'Weak',
+			Dark: 'Null'
 		},
 		game: 'p4',
 		alignment: {
@@ -1090,18 +977,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Dark'
-			],
-			resist: [
-				'Light'
-			],
-			null: [
-				'Ice'
-			],
-			repel: [],
-			drain: []
+			Ice: 'Null',
+			Light: 'Resist',
+			Dark: 'Weak'
 		},
 		game: 'smt5',
 		alignment: {
@@ -1172,22 +1050,12 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Fire',
-				'Ice'
-			],
-			resist: [
-				'Light'
-			],
-			null: [
-				'Force',
-				'Dark'
-			],
-			drain: [],
-			repel: [
-				'Elec'
-			]
+			Fire: 'Weak',
+			Ice: 'Weak',
+			Elec: 'Repel',
+			Force: 'Null',
+			Light: 'Resist',
+			Dark: 'Null'
 		},
 		game: 'smt5',
 		alignment: {
@@ -1294,18 +1162,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: null,
-			weak: [
-				'Ice'
-			],
-			resist: [
-				'Elec'
-			],
-			null: [
-				'Fire'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Null',
+			Ice: 'Weak',
+			Elec: 'Resist'
 		},
 		game: 'p4',
 		alignment: null,
@@ -1372,16 +1231,8 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Force'
-			],
-			resist: [],
-			null: [
-				'Elec'
-			],
-			drain: [],
-			repel: []
+			Elec: 'Null',
+			Force: 'Weak'
 		},
 		game: 'smt5',
 		alignment: {
@@ -1452,20 +1303,11 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Ice'
-			],
-			resist: [
-				'Phys',
-				'Light',
-				'Dark'
-			],
-			null: [],
-			repel: [],
-			drain: [
-				'Fire'
-			]
+			Phys: 'Resist',
+			Fire: 'Drain',
+			Ice: 'Weak',
+			Light: 'Resist',
+			Dark: 'Resist'
 		},
 		game: 'smt5',
 		alignment: {
@@ -1532,22 +1374,12 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Mirage: 'Resist',
-				Confusion: 'Resist'
-			},
-			weak: [
-				'Fire',
-				'Elec'
-			],
-			resist: [],
-			null: [
-				'Light'
-			],
-			drain: [
-				'Ice'
-			],
-			repel: []
+			Fire: 'Weak',
+			Ice: 'Drain',
+			Elec: 'Weak',
+			Light: 'Null',
+			Mirage: 'Resist',
+			Confusion: 'Resist'
 		},
 		game: 'smt5',
 		alignment: {
@@ -1614,18 +1446,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Fire'
-			],
-			resist: [
-				'Dark'
-			],
-			null: [
-				'Ice'
-			],
-			repel: [],
-			drain: []
+			Fire: 'Weak',
+			Ice: 'Null',
+			Dark: 'Resist'
 		},
 		game: 'smt5',
 		alignment: {
@@ -1692,19 +1515,11 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Force',
-				'Dark'
-			],
-			resist: [],
-			null: [
-				'Ice',
-				'Elec',
-				'Light'
-			],
-			drain: [],
-			repel: []
+			Ice: 'Null',
+			Elec: 'Null',
+			Force: 'Weak',
+			Light: 'Null',
+			Dark: 'Weak'
 		},
 		game: 'smt5',
 		alignment: {
@@ -1819,18 +1634,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: null,
-			weak: [
-				'Psy'
-			],
-			resist: [
-				'Dark'
-			],
-			null: [
-				'Nuke'
-			],
-			drain: [],
-			repel: []
+			Psy: 'Weak',
+			Nuke: 'Null',
+			Dark: 'Resist'
 		},
 		game: 'p5',
 		alignment: null,
@@ -1893,19 +1699,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Charm: 'Resist'
-			},
-			weak: [
-				'Elec',
-				'Light'
-			],
-			resist: [],
-			null: [
-				'Ice'
-			],
-			drain: [],
-			repel: []
+			Ice: 'Null',
+			Elec: 'Weak',
+			Light: 'Weak',
+			Charm: 'Resist'
 		},
 		game: 'smt5',
 		alignment: {
@@ -1964,17 +1761,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Force',
-				'Dark'
-			],
-			resist: [],
-			null: [
-				'Light'
-			],
-			drain: [],
-			repel: []
+			Force: 'Weak',
+			Light: 'Null',
+			Dark: 'Weak'
 		},
 		game: 'smt5',
 		alignment: {
@@ -2041,20 +1830,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Seal: 'Resist'
-			},
-			weak: [
-				'Force'
-			],
-			resist: [
-				'Dark'
-			],
-			null: [
-				'Light'
-			],
-			drain: [],
-			repel: []
+			Force: 'Weak',
+			Light: 'Null',
+			Dark: 'Resist',
+			Seal: 'Resist'
 		},
 		game: 'smt5',
 		alignment: {
@@ -2117,20 +1896,11 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Weak',
-				Seal: 'Resist',
-				Mirage: 'Null'
-			},
-			weak: [
-				'Force'
-			],
-			resist: [],
-			null: [
-				'Elec'
-			],
-			drain: [],
-			repel: []
+			Elec: 'Null',
+			Force: 'Weak',
+			Sleep: 'Weak',
+			Seal: 'Resist',
+			Mirage: 'Null'
 		},
 		game: 'smt5',
 		alignment: {
@@ -2189,20 +1959,11 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Charm: 'Null',
-				Confusion: 'Weak',
-				Sleep: 'Resist'
-			},
-			weak: [
-				'Fire'
-			],
-			resist: [
-				'Ice'
-			],
-			null: [],
-			repel: [],
-			drain: []
+			Fire: 'Weak',
+			Ice: 'Resist',
+			Charm: 'Null',
+			Confusion: 'Weak',
+			Sleep: 'Resist'
 		},
 		game: 'smt5',
 		alignment: {
@@ -2257,16 +2018,8 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Fire'
-			],
-			resist: [
-				'Ice'
-			],
-			null: [],
-			drain: [],
-			repel: []
+			Fire: 'Weak',
+			Ice: 'Resist'
 		},
 		game: 'smt5',
 		alignment: {
@@ -2325,16 +2078,8 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: null,
-			weak: [
-				'Ice'
-			],
-			resist: [
-				'Phys'
-			],
-			null: [],
-			drain: [],
-			repel: []
+			Phys: 'Resist',
+			Ice: 'Weak'
 		},
 		game: 'p5',
 		alignment: {
@@ -2401,22 +2146,13 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Fire',
-				'Ice',
-				'Elec',
-				'Force'
-			],
-			resist: [
-				'Light',
-				'Dark'
-			],
-			null: [
-				'Phys'
-			],
-			drain: [],
-			repel: []
+			Phys: 'Null',
+			Fire: 'Weak',
+			Ice: 'Weak',
+			Elec: 'Weak',
+			Force: 'Weak',
+			Light: 'Resist',
+			Dark: 'Resist'
 		},
 		game: 'smt5',
 		alignment: {
@@ -2479,17 +2215,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Elec',
-				'Dark'
-			],
-			resist: [],
-			null: [
-				'Light'
-			],
-			drain: [],
-			repel: []
+			Elec: 'Weak',
+			Light: 'Null',
+			Dark: 'Weak'
 		},
 		game: 'smt5',
 		alignment: {
@@ -2548,17 +2276,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: null,
-			weak: [],
-			resist: [
-				'Phys'
-			],
-			null: [
-				'Ice',
-				'Elec'
-			],
-			drain: [],
-			repel: []
+			Phys: 'Resist',
+			Ice: 'Null',
+			Elec: 'Null'
 		},
 		game: 'p5',
 		alignment: {
@@ -2613,18 +2333,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: null,
-			weak: [
-				'Wind'
-			],
-			resist: [
-				'Phys'
-			],
-			null: [
-				'Light'
-			],
-			drain: [],
-			repel: []
+			Phys: 'Resist',
+			Wind: 'Weak',
+			Light: 'Null'
 		},
 		game: 'p4',
 		alignment: {
@@ -2683,19 +2394,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: null,
-			weak: [
-				'Psy'
-			],
-			resist: [
-				'Gun',
-				'Light'
-			],
-			null: [
-				'Nuke'
-			],
-			drain: [],
-			repel: []
+			Gun: 'Resist',
+			Psy: 'Weak',
+			Nuke: 'Null',
+			Light: 'Resist'
 		},
 		game: 'p5',
 		alignment: null,
@@ -2754,19 +2456,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: null,
-			weak: [
-				'Psy'
-			],
-			resist: [
-				'Gun',
-				'Light'
-			],
-			null: [
-				'Nuke'
-			],
-			drain: [],
-			repel: []
+			Gun: 'Resist',
+			Psy: 'Weak',
+			Nuke: 'Null',
+			Light: 'Resist'
 		},
 		game: 'p5',
 		alignment: null,
@@ -2834,19 +2527,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Elec'
-			],
-			resist: [
-				'Force',
-				'Dark'
-			],
-			null: [],
-			drain: [],
-			repel: [
-				'Ice'
-			]
+			Ice: 'Repel',
+			Elec: 'Weak',
+			Force: 'Resist',
+			Dark: 'Resist'
 		},
 		game: 'smt5',
 		alignment: {
@@ -2913,25 +2597,16 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Charm: 'Resist',
-				Seal: 'Resist',
-				Confusion: 'Resist',
-				Poison: 'Resist',
-				Sleep: 'Resist',
-				Mirage: 'Resist'
-			},
-			weak: [
-				'Elec',
-				'Force'
-			],
-			resist: [],
-			null: [
-				'Light',
-				'Dark'
-			],
-			repel: [],
-			drain: []
+			Elec: 'Weak',
+			Force: 'Weak',
+			Light: 'Null',
+			Dark: 'Null',
+			Charm: 'Resist',
+			Seal: 'Resist',
+			Confusion: 'Resist',
+			Poison: 'Resist',
+			Sleep: 'Resist',
+			Mirage: 'Resist'
 		},
 		game: 'smt5',
 		alignment: {
@@ -2982,17 +2657,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: null,
-			weak: [
-				'Ice',
-				'Light'
-			],
-			resist: [
-				'Dark'
-			],
-			null: [],
-			drain: [],
-			repel: []
+			Ice: 'Weak',
+			Light: 'Weak',
+			Dark: 'Resist'
 		},
 		game: 'p5',
 		alignment: null,
@@ -3063,20 +2730,11 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Fire'
-			],
-			resist: [
-				'Light',
-				'Dark'
-			],
-			null: [
-				'Ice',
-				'Elec'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Weak',
+			Ice: 'Null',
+			Elec: 'Null',
+			Light: 'Resist',
+			Dark: 'Resist'
 		},
 		game: 'smt5',
 		alignment: {
@@ -3175,16 +2833,8 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: null,
-			weak: [
-				'Fire'
-			],
-			resist: [],
-			null: [
-				'Ice'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Weak',
+			Ice: 'Null'
 		},
 		game: 'p3',
 		alignment: null,
@@ -3291,18 +2941,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: null,
-			weak: [
-				'Nuke'
-			],
-			resist: [
-				'Ice'
-			],
-			null: [
-				'Psy'
-			],
-			drain: [],
-			repel: []
+			Ice: 'Resist',
+			Psy: 'Null',
+			Nuke: 'Weak'
 		},
 		game: 'p5',
 		alignment: null,
@@ -3361,19 +3002,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: null,
-			weak: [
-				'Ice'
-			],
-			resist: [
-				'Fire',
-				'Psy'
-			],
-			null: [
-				'Dark'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Resist',
+			Ice: 'Weak',
+			Psy: 'Resist',
+			Dark: 'Null'
 		},
 		game: 'p5',
 		alignment: null,
@@ -3432,19 +3064,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: null,
-			weak: [
-				'Ice'
-			],
-			resist: [
-				'Fire',
-				'Psy'
-			],
-			null: [
-				'Dark'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Resist',
+			Ice: 'Weak',
+			Psy: 'Resist',
+			Dark: 'Null'
 		},
 		game: 'p5',
 		alignment: null,
@@ -3512,20 +3135,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Ice'
-			],
-			resist: [
-				'Dark'
-			],
-			null: [
-				'Light'
-			],
-			drain: [],
-			repel: [
-				'Fire'
-			]
+			Fire: 'Repel',
+			Ice: 'Weak',
+			Light: 'Null',
+			Dark: 'Resist'
 		},
 		game: 'smt5',
 		alignment: {
@@ -3592,19 +3205,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Seal: 'Weak'
-			},
-			weak: [
-				'Ice'
-			],
-			resist: [],
-			null: [
-				'Light',
-				'Dark'
-			],
-			drain: [],
-			repel: []
+			Ice: 'Weak',
+			Light: 'Null',
+			Dark: 'Null',
+			Seal: 'Weak'
 		},
 		game: 'smt5',
 		alignment: {
@@ -3670,18 +3274,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: null,
-			weak: [
-				'Elec'
-			],
-			resist: [
-				'Phys'
-			],
-			null: [
-				'Gun'
-			],
-			drain: [],
-			repel: []
+			Phys: 'Resist',
+			Gun: 'Null',
+			Elec: 'Weak'
 		},
 		game: 'p5',
 		alignment: null,
@@ -3744,18 +3339,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: null,
-			weak: [
-				'Elec'
-			],
-			resist: [
-				'Phys'
-			],
-			null: [
-				'Gun'
-			],
-			drain: [],
-			repel: []
+			Phys: 'Resist',
+			Gun: 'Null',
+			Elec: 'Weak'
 		},
 		game: 'p5',
 		alignment: null,
@@ -3819,18 +3405,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Fire'
-			],
-			resist: [
-				'Ice'
-			],
-			null: [
-				'Light'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Weak',
+			Ice: 'Resist',
+			Light: 'Null'
 		},
 		game: 'smt5',
 		alignment: {
@@ -3897,18 +3474,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Weak'
-			},
-			weak: [
-				'Dark'
-			],
-			resist: [],
-			null: [
-				'Fire'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Null',
+			Dark: 'Weak',
+			Sleep: 'Weak'
 		},
 		game: 'smt5',
 		alignment: {
@@ -3975,20 +3543,11 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Elec',
-				'Light'
-			],
-			resist: [
-				'Dark'
-			],
-			null: [
-				'Fire',
-				'Force'
-			],
-			repel: [],
-			drain: []
+			Fire: 'Null',
+			Elec: 'Weak',
+			Force: 'Null',
+			Light: 'Weak',
+			Dark: 'Resist'
 		},
 		game: 'smt5',
 		alignment: {
@@ -4043,16 +3602,8 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Elec'
-			],
-			resist: [
-				'Ice'
-			],
-			null: [],
-			drain: [],
-			repel: []
+			Ice: 'Resist',
+			Elec: 'Weak'
 		},
 		game: 'smt5',
 		alignment: {
@@ -4123,21 +3674,11 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Ice'
-			],
-			resist: [
-				'Fire',
-				'Force'
-			],
-			null: [
-				'Light'
-			],
-			drain: [],
-			repel: [
-				'Elec'
-			]
+			Fire: 'Resist',
+			Ice: 'Weak',
+			Elec: 'Repel',
+			Force: 'Resist',
+			Light: 'Null'
 		},
 		game: 'smt5',
 		alignment: {
@@ -4196,18 +3737,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: null,
-			weak: [
-				'Fire'
-			],
-			resist: [],
-			null: [
-				'Dark'
-			],
-			drain: [
-				'Ice'
-			],
-			repel: []
+			Fire: 'Weak',
+			Ice: 'Drain',
+			Dark: 'Null'
 		},
 		game: 'p4',
 		alignment: {
@@ -4277,18 +3809,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Confusion: 'Weak'
-			},
-			weak: [
-				'Force'
-			],
-			resist: [],
-			null: [
-				'Elec'
-			],
-			repel: [],
-			drain: []
+			Elec: 'Null',
+			Force: 'Weak',
+			Confusion: 'Weak'
 		},
 		game: 'smt5',
 		alignment: {
@@ -4351,18 +3874,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Poison: 'Weak'
-			},
-			weak: [
-				'Light'
-			],
-			resist: [],
-			null: [
-				'Dark'
-			],
-			drain: [],
-			repel: []
+			Light: 'Weak',
+			Dark: 'Null',
+			Poison: 'Weak'
 		},
 		game: 'smt5',
 		alignment: {
@@ -4429,20 +3943,11 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Poison: 'Resist'
-			},
-			weak: [
-				'Force',
-				'Dark'
-			],
-			resist: [],
-			null: [
-				'Elec',
-				'Light'
-			],
-			drain: [],
-			repel: []
+			Elec: 'Null',
+			Force: 'Weak',
+			Light: 'Null',
+			Dark: 'Weak',
+			Poison: 'Resist'
 		},
 		game: 'smt5',
 		alignment: {
@@ -4505,19 +4010,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Poison: 'Resist'
-			},
-			weak: [
-				'Elec'
-			],
-			resist: [
-				'Fire',
-				'Ice'
-			],
-			null: [],
-			drain: [],
-			repel: []
+			Fire: 'Resist',
+			Ice: 'Resist',
+			Elec: 'Weak',
+			Poison: 'Resist'
 		},
 		game: 'smt5',
 		alignment: {
@@ -4588,26 +4084,15 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Confusion: 'Null',
-				Poison: 'Null',
-				Sleep: 'Null',
-				Mirage: 'Null'
-			},
-			weak: [
-				'Fire'
-			],
-			resist: [
-				'Ice',
-				'Light'
-			],
-			null: [
-				'Dark'
-			],
-			repel: [],
-			drain: [
-				'Elec'
-			]
+			Fire: 'Weak',
+			Ice: 'Resist',
+			Elec: 'Drain',
+			Light: 'Resist',
+			Dark: 'Null',
+			Confusion: 'Null',
+			Poison: 'Null',
+			Sleep: 'Null',
+			Mirage: 'Null'
 		},
 		game: 'smt5',
 		alignment: {
@@ -4678,18 +4163,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Ice'
-			],
-			resist: [],
-			null: [
-				'Fire',
-				'Force',
-				'Dark'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Null',
+			Ice: 'Weak',
+			Force: 'Null',
+			Dark: 'Null'
 		},
 		game: 'smt5',
 		alignment: {
@@ -4756,21 +4233,12 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Fire',
-				'Light'
-			],
-			resist: [
-				'Phys',
-				'Elec'
-			],
-			null: [
-				'Ice',
-				'Dark'
-			],
-			drain: [],
-			repel: []
+			Phys: 'Resist',
+			Fire: 'Weak',
+			Ice: 'Null',
+			Elec: 'Resist',
+			Light: 'Weak',
+			Dark: 'Null'
 		},
 		game: 'smt5',
 		alignment: {
@@ -4833,17 +4301,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Ice'
-			],
-			resist: [
-				'Fire',
-				'Dark'
-			],
-			null: [],
-			drain: [],
-			repel: []
+			Fire: 'Resist',
+			Ice: 'Weak',
+			Dark: 'Resist'
 		},
 		game: 'smt5',
 		alignment: {
@@ -4898,17 +4358,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Elec',
-				'Light'
-			],
-			resist: [],
-			null: [
-				'Dark'
-			],
-			drain: [],
-			repel: []
+			Elec: 'Weak',
+			Light: 'Weak',
+			Dark: 'Null'
 		},
 		game: 'smt5',
 		alignment: {
@@ -4979,17 +4431,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Ice'
-			],
-			resist: [],
-			null: [
-				'Fire',
-				'Light'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Null',
+			Ice: 'Weak',
+			Light: 'Null'
 		},
 		game: 'smt5',
 		alignment: {
@@ -5060,20 +4504,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Light'
-			],
-			resist: [
-				'Fire'
-			],
-			null: [
-				'Ice'
-			],
-			drain: [],
-			repel: [
-				'Dark'
-			]
+			Fire: 'Resist',
+			Ice: 'Null',
+			Light: 'Weak',
+			Dark: 'Repel'
 		},
 		game: 'smt5',
 		alignment: {
@@ -5136,21 +4570,12 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Mirage: 'Weak',
-				Confusion: 'Weak',
-				Charm: 'Weak'
-			},
-			weak: [
-				'Fire',
-				'Light'
-			],
-			resist: [
-				'Phys'
-			],
-			null: [],
-			drain: [],
-			repel: []
+			Phys: 'Resist',
+			Fire: 'Weak',
+			Light: 'Weak',
+			Mirage: 'Weak',
+			Confusion: 'Weak',
+			Charm: 'Weak'
 		},
 		game: 'smt5',
 		alignment: {
@@ -5221,21 +4646,11 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Confusion: 'Null'
-			},
-			weak: [
-				'Force'
-			],
-			resist: [
-				'Light',
-				'Dark'
-			],
-			null: [],
-			drain: [],
-			repel: [
-				'Ice'
-			]
+			Ice: 'Repel',
+			Force: 'Weak',
+			Light: 'Resist',
+			Dark: 'Resist',
+			Confusion: 'Null'
 		},
 		game: 'smt5',
 		alignment: {
@@ -5298,18 +4713,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Resist'
-			},
-			weak: [
-				'Fire'
-			],
-			resist: [],
-			null: [
-				'Dark'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Weak',
+			Dark: 'Null',
+			Sleep: 'Resist'
 		},
 		game: 'smt5',
 		alignment: {
@@ -5368,19 +4774,11 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: null,
-			weak: [
-				'Ice',
-				'Nuke'
-			],
-			resist: [],
-			null: [
-				'Fire',
-				'Wind',
-				'Dark'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Null',
+			Ice: 'Weak',
+			Wind: 'Null',
+			Nuke: 'Weak',
+			Dark: 'Null'
 		},
 		game: 'p5',
 		alignment: {
@@ -5487,16 +4885,8 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: null,
-			weak: [
-				'Ice'
-			],
-			resist: [],
-			null: [
-				'Elec'
-			],
-			drain: [],
-			repel: []
+			Ice: 'Weak',
+			Elec: 'Null'
 		},
 		game: 'p3',
 		alignment: null,
@@ -5551,16 +4941,8 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Force'
-			],
-			resist: [
-				'Elec'
-			],
-			null: [],
-			drain: [],
-			repel: []
+			Elec: 'Resist',
+			Force: 'Weak'
 		},
 		game: 'smt5',
 		alignment: {
@@ -5627,18 +5009,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Ice'
-			],
-			resist: [
-				'Fire'
-			],
-			null: [
-				'Light'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Resist',
+			Ice: 'Weak',
+			Light: 'Null'
 		},
 		game: 'smt5',
 		alignment: {
@@ -5761,16 +5134,8 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: null,
-			weak: [
-				'Wind'
-			],
-			resist: [
-				'Elec'
-			],
-			null: [],
-			drain: [],
-			repel: []
+			Elec: 'Resist',
+			Wind: 'Weak'
 		},
 		game: 'p5',
 		alignment: null,
@@ -5885,16 +5250,8 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: null,
-			weak: [
-				'Ice'
-			],
-			resist: [
-				'Fire'
-			],
-			null: [],
-			drain: [],
-			repel: []
+			Fire: 'Resist',
+			Ice: 'Weak'
 		},
 		game: 'p5',
 		alignment: null,
@@ -5976,14 +5333,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 				level: 77
 			}
 		],
-		resistances: {
-			ailments: null,
-			weak: [],
-			resist: [],
-			null: [],
-			drain: [],
-			repel: []
-		},
+		resistances: {},
 		game: 'p3',
 		alignment: null,
 		lore: null,
@@ -6097,18 +5447,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: null,
-			weak: [
-				'Ice'
-			],
-			resist: [
-				'Elec'
-			],
-			null: [
-				'Fire'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Null',
+			Ice: 'Weak',
+			Elec: 'Resist'
 		},
 		game: 'p5',
 		alignment: null,
@@ -6175,16 +5516,8 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: null,
-			weak: [
-				'Dark'
-			],
-			resist: [],
-			null: [
-				'Light'
-			],
-			drain: [],
-			repel: []
+			Light: 'Null',
+			Dark: 'Weak'
 		},
 		game: 'p5',
 		alignment: null,
@@ -6251,18 +5584,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Seal: 'Resist'
-			},
-			weak: [
-				'Ice'
-			],
-			resist: [],
-			null: [],
-			drain: [],
-			repel: [
-				'Fire'
-			]
+			Fire: 'Repel',
+			Ice: 'Weak',
+			Seal: 'Resist'
 		},
 		game: 'smt5',
 		alignment: {
@@ -6356,17 +5680,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: null,
-			weak: [
-				'Light'
-			],
-			resist: [],
-			null: [
-				'Fire',
-				'Dark'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Null',
+			Light: 'Weak',
+			Dark: 'Null'
 		},
 		game: 'p3',
 		alignment: null,
@@ -6433,18 +5749,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Poison: 'Resist'
-			},
-			weak: [
-				'Light'
-			],
-			resist: [],
-			null: [
-				'Dark'
-			],
-			drain: [],
-			repel: []
+			Light: 'Weak',
+			Dark: 'Null',
+			Poison: 'Resist'
 		},
 		game: 'smt5',
 		alignment: {
@@ -6511,20 +5818,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Seal: 'Weak'
-			},
-			weak: [
-				'Dark'
-			],
-			resist: [
-				'Light'
-			],
-			null: [],
-			repel: [],
-			drain: [
-				'Force'
-			]
+			Force: 'Drain',
+			Light: 'Resist',
+			Dark: 'Weak',
+			Seal: 'Weak'
 		},
 		game: 'smt5',
 		alignment: {
@@ -6595,19 +5892,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Fire',
-				'Elec'
-			],
-			resist: [],
-			null: [
-				'Ice'
-			],
-			repel: [
-				'Force'
-			],
-			drain: []
+			Fire: 'Weak',
+			Ice: 'Null',
+			Elec: 'Weak',
+			Force: 'Repel'
 		},
 		game: 'smt5',
 		alignment: {
@@ -6678,20 +5966,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Poison: 'Weak'
-			},
-			weak: [
-				'Force'
-			],
-			resist: [
-				'Fire'
-			],
-			null: [
-				'Elec'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Resist',
+			Elec: 'Null',
+			Force: 'Weak',
+			Poison: 'Weak'
 		},
 		game: 'smt5',
 		alignment: {
@@ -6754,18 +6032,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: null,
-			weak: [
-				'Light'
-			],
-			resist: [
-				'Phys'
-			],
-			null: [],
-			drain: [
-				'Fire'
-			],
-			repel: []
+			Phys: 'Resist',
+			Fire: 'Drain',
+			Light: 'Weak'
 		},
 		game: 'p5',
 		alignment: {
@@ -6835,18 +6104,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Dark'
-			],
-			resist: [
-				'Fire',
-				'Ice',
-				'Light'
-			],
-			null: [],
-			drain: [],
-			repel: []
+			Fire: 'Resist',
+			Ice: 'Resist',
+			Light: 'Resist',
+			Dark: 'Weak'
 		},
 		game: 'smt5',
 		alignment: {
@@ -6917,24 +6178,14 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Charm: 'Resist',
-				Poison: 'Weak',
-				Sleep: 'Weak',
-				Mirage: 'Resist'
-			},
-			weak: [
-				'Dark'
-			],
-			resist: [
-				'Ice',
-				'Force'
-			],
-			null: [],
-			repel: [],
-			drain: [
-				'Light'
-			]
+			Ice: 'Resist',
+			Force: 'Resist',
+			Light: 'Drain',
+			Dark: 'Weak',
+			Charm: 'Resist',
+			Poison: 'Weak',
+			Sleep: 'Weak',
+			Mirage: 'Resist'
 		},
 		game: 'smt5',
 		alignment: {
@@ -7001,18 +6252,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Null'
-			},
-			weak: [
-				'Ice'
-			],
-			resist: [],
-			null: [
-				'Fire'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Null',
+			Ice: 'Weak',
+			Sleep: 'Null'
 		},
 		game: 'smt5',
 		alignment: {
@@ -7075,17 +6317,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: null,
-			weak: [
-				'Wind'
-			],
-			resist: [
-				'Phys',
-				'Gun'
-			],
-			null: [],
-			drain: [],
-			repel: []
+			Phys: 'Resist',
+			Gun: 'Resist',
+			Wind: 'Weak'
 		},
 		game: 'p5',
 		alignment: null,
@@ -7149,20 +6383,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Seal: 'Resist'
-			},
-			weak: [
-				'Elec'
-			],
-			resist: [
-				'Phys'
-			],
-			null: [
-				'Force'
-			],
-			repel: [],
-			drain: []
+			Phys: 'Resist',
+			Elec: 'Weak',
+			Force: 'Null',
+			Seal: 'Resist'
 		},
 		game: 'smt5',
 		alignment: {
@@ -7221,16 +6445,8 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: null,
-			weak: [
-				'Fire'
-			],
-			resist: [
-				'Wind'
-			],
-			null: [],
-			drain: [],
-			repel: []
+			Fire: 'Weak',
+			Wind: 'Resist'
 		},
 		game: 'p4',
 		alignment: {
@@ -7297,20 +6513,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Mirage: 'Weak'
-			},
-			weak: [
-				'Elec'
-			],
-			resist: [
-				'Fire'
-			],
-			null: [
-				'Light'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Resist',
+			Elec: 'Weak',
+			Light: 'Null',
+			Mirage: 'Weak'
 		},
 		game: 'smt5',
 		alignment: {
@@ -7369,19 +6575,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Elec',
-				'Light'
-			],
-			resist: [
-				'Fire'
-			],
-			null: [
-				'Dark'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Resist',
+			Elec: 'Weak',
+			Light: 'Weak',
+			Dark: 'Null'
 		},
 		game: 'smt5',
 		alignment: {
@@ -7452,19 +6649,11 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Light'
-			],
-			resist: [],
-			null: [
-				'Fire',
-				'Ice',
-				'Elec',
-				'Force'
-			],
-			repel: [],
-			drain: []
+			Fire: 'Null',
+			Ice: 'Null',
+			Elec: 'Null',
+			Force: 'Null',
+			Light: 'Weak'
 		},
 		game: 'smt5',
 		alignment: {
@@ -7531,21 +6720,12 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Resist',
-				Confusion: 'Resist',
-				Charm: 'Resist'
-			},
-			weak: [
-				'Fire'
-			],
-			resist: [],
-			null: [
-				'Light',
-				'Dark'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Weak',
+			Light: 'Null',
+			Dark: 'Null',
+			Sleep: 'Resist',
+			Confusion: 'Resist',
+			Charm: 'Resist'
 		},
 		game: 'smt5',
 		alignment: {
@@ -7608,20 +6788,11 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Seal: 'Null'
-			},
-			weak: [
-				'Ice',
-				'Light'
-			],
-			resist: [
-				'Phys',
-				'Fire'
-			],
-			null: [],
-			drain: [],
-			repel: []
+			Phys: 'Resist',
+			Fire: 'Resist',
+			Ice: 'Weak',
+			Light: 'Weak',
+			Seal: 'Null'
 		},
 		game: 'smt5',
 		alignment: {
@@ -7692,21 +6863,12 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Dark'
-			],
-			resist: [
-				'Fire',
-				'Ice',
-				'Elec',
-				'Force'
-			],
-			null: [
-				'Light'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Resist',
+			Ice: 'Resist',
+			Elec: 'Resist',
+			Force: 'Resist',
+			Light: 'Null',
+			Dark: 'Weak'
 		},
 		game: 'smt5',
 		alignment: {
@@ -7773,16 +6935,8 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Light'
-			],
-			resist: [],
-			null: [
-				'Dark'
-			],
-			repel: [],
-			drain: []
+			Light: 'Weak',
+			Dark: 'Null'
 		},
 		game: 'smt5',
 		alignment: {
@@ -7853,22 +7007,13 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Resist',
-				Poison: 'Resist',
-				Charm: 'Resist',
-				Seal: 'Resist'
-			},
-			weak: [
-				'Fire'
-			],
-			resist: [],
-			null: [
-				'Light',
-				'Dark'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Weak',
+			Light: 'Null',
+			Dark: 'Null',
+			Sleep: 'Resist',
+			Poison: 'Resist',
+			Charm: 'Resist',
+			Seal: 'Resist'
 		},
 		game: 'smt5',
 		alignment: {
@@ -7995,18 +7140,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: null,
-			weak: [
-				'Elec'
-			],
-			resist: [
-				'Light'
-			],
-			null: [
-				'Wind'
-			],
-			drain: [],
-			repel: []
+			Elec: 'Weak',
+			Wind: 'Null',
+			Light: 'Resist'
 		},
 		game: 'p5',
 		alignment: null,
@@ -8073,20 +7209,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Charm: 'Null'
-			},
-			weak: [
-				'Ice'
-			],
-			resist: [
-				'Elec'
-			],
-			null: [
-				'Fire'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Null',
+			Ice: 'Weak',
+			Elec: 'Resist',
+			Charm: 'Null'
 		},
 		game: 'smt5',
 		alignment: {
@@ -8153,21 +7279,12 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Seal: 'Null'
-			},
-			weak: [
-				'Phys'
-			],
-			resist: [
-				'Fire',
-				'Ice',
-				'Elec',
-				'Force'
-			],
-			null: [],
-			repel: [],
-			drain: []
+			Phys: 'Weak',
+			Fire: 'Resist',
+			Ice: 'Resist',
+			Elec: 'Resist',
+			Force: 'Resist',
+			Seal: 'Null'
 		},
 		game: 'smt5',
 		alignment: {
@@ -8230,18 +7347,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Force',
-				'Dark'
-			],
-			resist: [],
-			null: [
-				'Elec',
-				'Light'
-			],
-			drain: [],
-			repel: []
+			Elec: 'Null',
+			Force: 'Weak',
+			Light: 'Null',
+			Dark: 'Weak'
 		},
 		game: 'smt5',
 		alignment: {
@@ -8308,23 +7417,13 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Charm: 'Resist',
-				Confusion: 'Resist',
-				Poison: 'Resist',
-				Mirage: 'Resist'
-			},
-			weak: [
-				'Force'
-			],
-			resist: [
-				'Light'
-			],
-			null: [
-				'Dark'
-			],
-			repel: [],
-			drain: []
+			Force: 'Weak',
+			Light: 'Resist',
+			Dark: 'Null',
+			Charm: 'Resist',
+			Confusion: 'Resist',
+			Poison: 'Resist',
+			Mirage: 'Resist'
 		},
 		game: 'smt5',
 		alignment: {
@@ -8391,16 +7490,8 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Ice'
-			],
-			resist: [],
-			null: [],
-			repel: [],
-			drain: [
-				'Fire'
-			]
+			Fire: 'Drain',
+			Ice: 'Weak'
 		},
 		game: 'smt5',
 		alignment: {
@@ -8471,17 +7562,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Force'
-			],
-			resist: [],
-			null: [
-				'Fire',
-				'Dark'
-			],
-			repel: [],
-			drain: []
+			Fire: 'Null',
+			Force: 'Weak',
+			Dark: 'Null'
 		},
 		game: 'smt5',
 		alignment: {
@@ -8548,18 +7631,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Elec'
-			],
-			resist: [
-				'Dark'
-			],
-			null: [
-				'Fire'
-			],
-			repel: [],
-			drain: []
+			Fire: 'Null',
+			Elec: 'Weak',
+			Dark: 'Resist'
 		},
 		game: 'smt5',
 		alignment: {
@@ -8626,18 +7700,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: null,
-			weak: [
-				'Dark'
-			],
-			resist: [
-				'Nuke'
-			],
-			null: [
-				'Light'
-			],
-			drain: [],
-			repel: []
+			Nuke: 'Resist',
+			Light: 'Null',
+			Dark: 'Weak'
 		},
 		game: 'p5',
 		alignment: null,
@@ -8700,17 +7765,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: null,
-			weak: [
-				'Elec'
-			],
-			resist: [
-				'Phys',
-				'Gun'
-			],
-			null: [],
-			drain: [],
-			repel: []
+			Phys: 'Resist',
+			Gun: 'Resist',
+			Elec: 'Weak'
 		},
 		game: 'p5',
 		alignment: null,
@@ -8762,16 +7819,8 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Force'
-			],
-			resist: [
-				'Elec'
-			],
-			null: [],
-			drain: [],
-			repel: []
+			Elec: 'Resist',
+			Force: 'Weak'
 		},
 		game: 'smt5',
 		alignment: {
@@ -8842,19 +7891,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Poison: 'Null'
-			},
-			weak: [
-				'Ice',
-				'Elec'
-			],
-			resist: [
-				'Phys'
-			],
-			null: [],
-			drain: [],
-			repel: []
+			Phys: 'Resist',
+			Ice: 'Weak',
+			Elec: 'Weak',
+			Poison: 'Null'
 		},
 		game: 'smt5',
 		alignment: {
@@ -8924,20 +7964,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Seal: 'Weak'
-			},
-			weak: [
-				'Dark'
-			],
-			resist: [
-				'Force'
-			],
-			null: [
-				'Fire'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Null',
+			Force: 'Resist',
+			Dark: 'Weak',
+			Seal: 'Weak'
 		},
 		game: 'smt5',
 		alignment: {
@@ -9004,18 +8034,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Seal: 'Resist'
-			},
-			weak: [
-				'Force'
-			],
-			resist: [],
-			null: [],
-			repel: [],
-			drain: [
-				'Ice'
-			]
+			Ice: 'Drain',
+			Force: 'Weak',
+			Seal: 'Resist'
 		},
 		game: 'smt5',
 		alignment: {
@@ -9086,20 +8107,11 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Seal: 'Null',
-				Sleep: 'Null'
-			},
-			weak: [
-				'Elec'
-			],
-			resist: [],
-			null: [
-				'Fire',
-				'Light'
-			],
-			repel: [],
-			drain: []
+			Fire: 'Null',
+			Elec: 'Weak',
+			Light: 'Null',
+			Seal: 'Null',
+			Sleep: 'Null'
 		},
 		game: 'smt5',
 		alignment: {
@@ -9154,16 +8166,8 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Ice'
-			],
-			resist: [
-				'Fire'
-			],
-			null: [],
-			drain: [],
-			repel: []
+			Fire: 'Resist',
+			Ice: 'Weak'
 		},
 		game: 'smt5',
 		alignment: {
@@ -9230,20 +8234,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Weak'
-			},
-			weak: [
-				'Ice'
-			],
-			resist: [
-				'Dark'
-			],
-			null: [
-				'Fire'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Null',
+			Ice: 'Weak',
+			Dark: 'Resist',
+			Sleep: 'Weak'
 		},
 		game: 'smt5',
 		alignment: {
@@ -9310,19 +8304,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Elec',
-				'Light'
-			],
-			resist: [],
-			null: [
-				'Dark'
-			],
-			drain: [
-				'Ice'
-			],
-			repel: []
+			Ice: 'Drain',
+			Elec: 'Weak',
+			Light: 'Weak',
+			Dark: 'Null'
 		},
 		game: 'smt5',
 		alignment: {
@@ -9385,17 +8370,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Elec',
-				'Dark'
-			],
-			resist: [],
-			null: [
-				'Force'
-			],
-			drain: [],
-			repel: []
+			Elec: 'Weak',
+			Force: 'Null',
+			Dark: 'Weak'
 		},
 		game: 'smt5',
 		alignment: {
@@ -9462,21 +8439,12 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Weak',
-				Seal: 'Resist',
-				Mirage: 'Null',
-				Confusion: 'Null'
-			},
-			weak: [
-				'Dark'
-			],
-			resist: [],
-			null: [
-				'Light'
-			],
-			drain: [],
-			repel: []
+			Light: 'Null',
+			Dark: 'Weak',
+			Sleep: 'Weak',
+			Seal: 'Resist',
+			Mirage: 'Null',
+			Confusion: 'Null'
 		},
 		game: 'smt5',
 		alignment: {
@@ -9543,18 +8511,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Charm: 'Weak'
-			},
-			weak: [
-				'Elec'
-			],
-			resist: [],
-			null: [
-				'Force'
-			],
-			drain: [],
-			repel: []
+			Elec: 'Weak',
+			Force: 'Null',
+			Charm: 'Weak'
 		},
 		game: 'smt5',
 		alignment: {
@@ -9625,19 +8584,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Elec'
-			],
-			resist: [
-				'Fire'
-			],
-			null: [
-				'Ice',
-				'Light'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Resist',
+			Ice: 'Null',
+			Elec: 'Weak',
+			Light: 'Null'
 		},
 		game: 'smt5',
 		alignment: {
@@ -9704,22 +8654,12 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Poison: 'Weak',
-				Confusion: 'Resist'
-			},
-			weak: [
-				'Elec',
-				'Dark'
-			],
-			resist: [
-				'Phys'
-			],
-			null: [
-				'Force'
-			],
-			drain: [],
-			repel: []
+			Phys: 'Resist',
+			Elec: 'Weak',
+			Force: 'Null',
+			Dark: 'Weak',
+			Poison: 'Weak',
+			Confusion: 'Resist'
 		},
 		game: 'smt5',
 		alignment: {
@@ -9778,17 +8718,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: null,
-			weak: [
-				'Fire',
-				'Dark'
-			],
-			resist: [],
-			null: [],
-			drain: [
-				'Ice'
-			],
-			repel: []
+			Fire: 'Weak',
+			Ice: 'Drain',
+			Dark: 'Weak'
 		},
 		game: 'p4',
 		alignment: {
@@ -9859,20 +8791,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Seal: 'Resist'
-			},
-			weak: [
-				'Elec'
-			],
-			resist: [
-				'Light'
-			],
-			null: [],
-			drain: [
-				'Force'
-			],
-			repel: []
+			Elec: 'Weak',
+			Force: 'Drain',
+			Light: 'Resist',
+			Seal: 'Resist'
 		},
 		game: 'smt5',
 		alignment: {
@@ -9931,16 +8853,8 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: null,
-			weak: [
-				'Ice'
-			],
-			resist: [],
-			null: [],
-			drain: [
-				'Fire'
-			],
-			repel: []
+			Fire: 'Drain',
+			Ice: 'Weak'
 		},
 		game: 'p4',
 		alignment: {
@@ -9999,17 +8913,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: null,
-			weak: [
-				'Fire',
-				'Light'
-			],
-			resist: [],
-			null: [
-				'Ice'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Weak',
+			Ice: 'Null',
+			Light: 'Weak'
 		},
 		game: 'p4',
 		alignment: {
@@ -10079,23 +8985,13 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Poison: 'Resist',
-				Sleep: 'Weak'
-			},
-			weak: [
-				'Elec',
-				'Force',
-				'Light'
-			],
-			resist: [
-				'Dark'
-			],
-			null: [],
-			repel: [
-				'Phys'
-			],
-			drain: []
+			Phys: 'Repel',
+			Elec: 'Weak',
+			Force: 'Weak',
+			Light: 'Weak',
+			Dark: 'Resist',
+			Poison: 'Resist',
+			Sleep: 'Weak'
 		},
 		game: 'smt5',
 		alignment: {
@@ -10162,19 +9058,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Mirage: 'Null'
-			},
-			weak: [
-				'Elec'
-			],
-			resist: [],
-			null: [
-				'Force',
-				'Dark'
-			],
-			repel: [],
-			drain: []
+			Elec: 'Weak',
+			Force: 'Null',
+			Dark: 'Null',
+			Mirage: 'Null'
 		},
 		game: 'smt5',
 		alignment: {
@@ -10293,16 +9180,8 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: null,
-			weak: [
-				'Fire'
-			],
-			resist: [
-				'Ice'
-			],
-			null: [],
-			drain: [],
-			repel: []
+			Fire: 'Weak',
+			Ice: 'Resist'
 		},
 		game: 'p5',
 		alignment: null,
@@ -10369,22 +9248,13 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Seal: 'Weak',
-				Confusion: 'Weak'
-			},
-			weak: [
-				'Fire',
-				'Force',
-				'Dark'
-			],
-			resist: [],
-			null: [
-				'Phys',
-				'Ice'
-			],
-			repel: [],
-			drain: []
+			Phys: 'Null',
+			Fire: 'Weak',
+			Ice: 'Null',
+			Force: 'Weak',
+			Dark: 'Weak',
+			Seal: 'Weak',
+			Confusion: 'Weak'
 		},
 		game: 'smt5',
 		alignment: {
@@ -10439,16 +9309,8 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: null,
-			weak: [
-				'Light'
-			],
-			resist: [],
-			null: [
-				'Ice'
-			],
-			drain: [],
-			repel: []
+			Ice: 'Null',
+			Light: 'Weak'
 		},
 		game: 'p4',
 		alignment: {
@@ -10567,18 +9429,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: null,
-			weak: [
-				'Fire'
-			],
-			resist: [
-				'Wind'
-			],
-			null: [
-				'Ice'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Weak',
+			Ice: 'Null',
+			Wind: 'Resist'
 		},
 		game: 'p5',
 		alignment: null,
@@ -10633,18 +9486,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Fire',
-				'Force'
-			],
-			resist: [
-				'Ice',
-				'Elec'
-			],
-			null: [],
-			repel: [],
-			drain: []
+			Fire: 'Weak',
+			Ice: 'Resist',
+			Elec: 'Resist',
+			Force: 'Weak'
 		},
 		game: 'smt5',
 		alignment: {
@@ -10714,20 +9559,11 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Poison: 'Resist',
-				Sleep: 'Resist',
-				Mirage: 'Resist'
-			},
-			weak: [
-				'Light'
-			],
-			resist: [],
-			null: [
-				'Force'
-			],
-			repel: [],
-			drain: []
+			Force: 'Null',
+			Light: 'Weak',
+			Poison: 'Resist',
+			Sleep: 'Resist',
+			Mirage: 'Resist'
 		},
 		game: 'smt5',
 		alignment: {
@@ -10782,17 +9618,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: null,
-			weak: [
-				'Dark'
-			],
-			resist: [],
-			null: [
-				'Ice',
-				'Elec'
-			],
-			drain: [],
-			repel: []
+			Ice: 'Null',
+			Elec: 'Null',
+			Dark: 'Weak'
 		},
 		game: 'p4',
 		alignment: {
@@ -10851,17 +9679,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Elec'
-			],
-			resist: [
-				'Light',
-				'Dark'
-			],
-			null: [],
-			repel: [],
-			drain: []
+			Elec: 'Weak',
+			Light: 'Resist',
+			Dark: 'Resist'
 		},
 		game: 'smt5',
 		alignment: {
@@ -10924,18 +9744,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Mirage: 'Weak'
-			},
-			weak: [
-				'Elec'
-			],
-			resist: [],
-			null: [],
-			drain: [],
-			repel: [
-				'Force'
-			]
+			Elec: 'Weak',
+			Force: 'Repel',
+			Mirage: 'Weak'
 		},
 		game: 'smt5',
 		alignment: {
@@ -11042,18 +9853,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: null,
-			weak: [
-				'Fire'
-			],
-			resist: [],
-			null: [
-				'Light'
-			],
-			drain: [
-				'Ice'
-			],
-			repel: []
+			Fire: 'Weak',
+			Ice: 'Drain',
+			Light: 'Null'
 		},
 		game: 'p4',
 		alignment: null,
@@ -11124,20 +9926,12 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Fire',
-				'Ice',
-				'Elec',
-				'Force'
-			],
-			resist: [],
-			null: [
-				'Light',
-				'Dark'
-			],
-			repel: [],
-			drain: []
+			Fire: 'Weak',
+			Ice: 'Weak',
+			Elec: 'Weak',
+			Force: 'Weak',
+			Light: 'Null',
+			Dark: 'Null'
 		},
 		game: 'smt5',
 		alignment: {
@@ -11204,18 +9998,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Resist'
-			},
-			weak: [
-				'Force'
-			],
-			resist: [],
-			null: [
-				'Dark'
-			],
-			drain: [],
-			repel: []
+			Force: 'Weak',
+			Dark: 'Null',
+			Sleep: 'Resist'
 		},
 		game: 'smt5',
 		alignment: {
@@ -11274,19 +10059,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: null,
-			weak: [],
-			resist: [
-				'Fire'
-			],
-			null: [
-				'Psy',
-				'Dark'
-			],
-			drain: [
-				'Wind'
-			],
-			repel: []
+			Fire: 'Resist',
+			Wind: 'Drain',
+			Psy: 'Null',
+			Dark: 'Null'
 		},
 		game: 'p5',
 		alignment: {
@@ -11357,20 +10133,11 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Force',
-				'Dark'
-			],
-			resist: [
-				'Phys',
-				'Light'
-			],
-			null: [
-				'Elec'
-			],
-			drain: [],
-			repel: []
+			Phys: 'Resist',
+			Elec: 'Null',
+			Force: 'Weak',
+			Light: 'Resist',
+			Dark: 'Weak'
 		},
 		game: 'smt5',
 		alignment: {
@@ -11485,18 +10252,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: null,
-			weak: [
-				'Ice'
-			],
-			resist: [
-				'Elec'
-			],
-			null: [
-				'Fire'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Null',
+			Ice: 'Weak',
+			Elec: 'Resist'
 		},
 		game: 'p5',
 		alignment: null,
@@ -11563,19 +10321,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Mirage: 'Weak',
-				Confusion: 'Resist'
-			},
-			weak: [
-				'Force'
-			],
-			resist: [],
-			null: [
-				'Dark'
-			],
-			drain: [],
-			repel: []
+			Force: 'Weak',
+			Dark: 'Null',
+			Mirage: 'Weak',
+			Confusion: 'Resist'
 		},
 		game: 'smt5',
 		alignment: {
@@ -11638,20 +10387,11 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: null,
-			weak: [
-				'Wind'
-			],
-			resist: [
-				'Phys'
-			],
-			null: [
-				'Fire',
-				'Light',
-				'Dark'
-			],
-			drain: [],
-			repel: []
+			Phys: 'Resist',
+			Fire: 'Null',
+			Wind: 'Weak',
+			Light: 'Null',
+			Dark: 'Null'
 		},
 		game: 'p4',
 		alignment: {
@@ -11718,20 +10458,11 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Ice'
-			],
-			resist: [
-				'Light',
-				'Dark'
-			],
-			null: [
-				'Fire',
-				'Force'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Null',
+			Ice: 'Weak',
+			Force: 'Null',
+			Light: 'Resist',
+			Dark: 'Resist'
 		},
 		game: 'smt5',
 		alignment: {
@@ -11794,18 +10525,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: null,
-			weak: [
-				'Light'
-			],
-			resist: [
-				'Psy'
-			],
-			null: [
-				'Dark'
-			],
-			drain: [],
-			repel: []
+			Psy: 'Resist',
+			Light: 'Weak',
+			Dark: 'Null'
 		},
 		game: 'p5',
 		alignment: null,
@@ -11892,16 +10614,8 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: null,
-			weak: [
-				'Wind'
-			],
-			resist: [
-				'Fire'
-			],
-			null: [],
-			drain: [],
-			repel: []
+			Fire: 'Resist',
+			Wind: 'Weak'
 		},
 		game: 'p3',
 		alignment: null,
@@ -11964,19 +10678,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Confusion: 'Resist',
-				Seal: 'Resist'
-			},
-			weak: [
-				'Ice'
-			],
-			resist: [
-				'Force'
-			],
-			null: [],
-			drain: [],
-			repel: []
+			Ice: 'Weak',
+			Force: 'Resist',
+			Confusion: 'Resist',
+			Seal: 'Resist'
 		},
 		game: 'smt5',
 		alignment: {
@@ -12050,14 +10755,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 				level: 79
 			}
 		],
-		resistances: {
-			ailments: null,
-			weak: [],
-			resist: [],
-			null: [],
-			drain: [],
-			repel: []
-		},
+		resistances: {},
 		game: 'p4',
 		alignment: null,
 		lore: null,
@@ -12118,17 +10816,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: null,
-			weak: [
-				'Fire'
-			],
-			resist: [],
-			null: [
-				'Ice',
-				'Wind'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Weak',
+			Ice: 'Null',
+			Wind: 'Null'
 		},
 		game: 'p4',
 		alignment: {
@@ -12191,16 +10881,8 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: null,
-			weak: [
-				'Fire'
-			],
-			resist: [],
-			null: [],
-			drain: [],
-			repel: [
-				'Elec'
-			]
+			Fire: 'Weak',
+			Elec: 'Repel'
 		},
 		game: 'p4',
 		alignment: {
@@ -12263,17 +10945,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: null,
-			weak: [
-				'Ice'
-			],
-			resist: [
-				'Phys',
-				'Gun'
-			],
-			null: [],
-			drain: [],
-			repel: []
+			Phys: 'Resist',
+			Gun: 'Resist',
+			Ice: 'Weak'
 		},
 		game: 'p5',
 		alignment: null,
@@ -12337,20 +11011,11 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Force',
-				'Dark'
-			],
-			resist: [
-				'Fire',
-				'Elec'
-			],
-			null: [],
-			drain: [],
-			repel: [
-				'Light'
-			]
+			Fire: 'Resist',
+			Elec: 'Resist',
+			Force: 'Weak',
+			Light: 'Repel',
+			Dark: 'Weak'
 		},
 		game: 'smt5',
 		alignment: {
@@ -12413,18 +11078,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Mirage: 'Weak'
-			},
-			weak: [
-				'Ice'
-			],
-			resist: [],
-			null: [
-				'Fire'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Null',
+			Ice: 'Weak',
+			Mirage: 'Weak'
 		},
 		game: 'smt5',
 		alignment: {
@@ -12494,25 +11150,15 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Confusion: 'Resist',
-				Sleep: 'Weak',
-				Mirage: 'Weak'
-			},
-			weak: [
-				'Dark'
-			],
-			resist: [
-				'Fire',
-				'Ice',
-				'Elec',
-				'Force'
-			],
-			null: [
-				'Light'
-			],
-			repel: [],
-			drain: []
+			Fire: 'Resist',
+			Ice: 'Resist',
+			Elec: 'Resist',
+			Force: 'Resist',
+			Light: 'Null',
+			Dark: 'Weak',
+			Confusion: 'Resist',
+			Sleep: 'Weak',
+			Mirage: 'Weak'
 		},
 		game: 'smt5',
 		alignment: {
@@ -12579,18 +11225,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Poison: 'Resist'
-			},
-			weak: [
-				'Ice'
-			],
-			resist: [],
-			null: [
-				'Fire'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Null',
+			Ice: 'Weak',
+			Poison: 'Resist'
 		},
 		game: 'smt5',
 		alignment: {
@@ -12657,20 +11294,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Charm: 'Resist'
-			},
-			weak: [
-				'Elec'
-			],
-			resist: [
-				'Force'
-			],
-			null: [
-				'Light'
-			],
-			drain: [],
-			repel: []
+			Elec: 'Weak',
+			Force: 'Resist',
+			Light: 'Null',
+			Charm: 'Resist'
 		},
 		game: 'smt5',
 		alignment: {
@@ -12728,18 +11355,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: null,
-			weak: [
-				'Fire'
-			],
-			resist: [
-				'Ice'
-			],
-			null: [
-				'Dark'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Weak',
+			Ice: 'Resist',
+			Dark: 'Null'
 		},
 		game: 'p4',
 		alignment: {
@@ -12810,20 +11428,12 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Phys',
-				'Dark'
-			],
-			resist: [],
-			null: [
-				'Fire',
-				'Ice',
-				'Elec',
-				'Force'
-			],
-			drain: [],
-			repel: []
+			Phys: 'Weak',
+			Fire: 'Null',
+			Ice: 'Null',
+			Elec: 'Null',
+			Force: 'Null',
+			Dark: 'Weak'
 		},
 		game: 'smt5',
 		alignment: {
@@ -12886,19 +11496,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Resist',
-				Charm: 'Null'
-			},
-			weak: [
-				'Elec'
-			],
-			resist: [
-				'Force'
-			],
-			null: [],
-			drain: [],
-			repel: []
+			Elec: 'Weak',
+			Force: 'Resist',
+			Sleep: 'Resist',
+			Charm: 'Null'
 		},
 		game: 'smt5',
 		alignment: {
@@ -12957,19 +11558,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Ice',
-				'Light'
-			],
-			resist: [
-				'Dark'
-			],
-			null: [
-				'Fire'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Null',
+			Ice: 'Weak',
+			Light: 'Weak',
+			Dark: 'Resist'
 		},
 		game: 'smt5',
 		alignment: {
@@ -13048,16 +11640,8 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: null,
-			weak: [
-				'Elec'
-			],
-			resist: [
-				'Wind'
-			],
-			null: [],
-			drain: [],
-			repel: []
+			Elec: 'Weak',
+			Wind: 'Resist'
 		},
 		game: 'p3',
 		alignment: null,
@@ -13116,16 +11700,8 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Light'
-			],
-			resist: [
-				'Fire'
-			],
-			null: [],
-			drain: [],
-			repel: []
+			Fire: 'Resist',
+			Light: 'Weak'
 		},
 		game: 'smt5',
 		alignment: {
@@ -13192,20 +11768,11 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Charm: 'Resist'
-			},
-			weak: [
-				'Force',
-				'Dark'
-			],
-			resist: [],
-			null: [
-				'Elec',
-				'Light'
-			],
-			drain: [],
-			repel: []
+			Elec: 'Null',
+			Force: 'Weak',
+			Light: 'Null',
+			Dark: 'Weak',
+			Charm: 'Resist'
 		},
 		game: 'smt5',
 		alignment: {
@@ -13272,20 +11839,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Seal: 'Weak'
-			},
-			weak: [
-				'Dark'
-			],
-			resist: [
-				'Fire'
-			],
-			null: [
-				'Elec'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Resist',
+			Elec: 'Null',
+			Dark: 'Weak',
+			Seal: 'Weak'
 		},
 		game: 'smt5',
 		alignment: {
@@ -13391,16 +11948,8 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: null,
-			weak: [
-				'Elec'
-			],
-			resist: [],
-			null: [
-				'Wind'
-			],
-			drain: [],
-			repel: []
+			Elec: 'Weak',
+			Wind: 'Null'
 		},
 		game: 'p3',
 		alignment: null,
@@ -13475,18 +12024,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: null,
-			weak: [
-				'Wind'
-			],
-			resist: [
-				'Elec'
-			],
-			null: [
-				'Dark'
-			],
-			drain: [],
-			repel: []
+			Elec: 'Resist',
+			Wind: 'Weak',
+			Dark: 'Null'
 		},
 		game: 'p5',
 		alignment: null,
@@ -13545,17 +12085,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: null,
-			weak: [
-				'Wind'
-			],
-			resist: [],
-			null: [
-				'Elec',
-				'Dark'
-			],
-			drain: [],
-			repel: []
+			Elec: 'Null',
+			Wind: 'Weak',
+			Dark: 'Null'
 		},
 		game: 'p5',
 		alignment: null,
@@ -13615,21 +12147,14 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: null,
-			weak: [],
-			resist: [
-				'Phys',
-				'Gun',
-				'Fire',
-				'Ice',
-				'Wind',
-				'Elec',
-				'Psy',
-				'Nuke'
-			],
-			null: [],
-			drain: [],
-			repel: []
+			Phys: 'Resist',
+			Gun: 'Resist',
+			Fire: 'Resist',
+			Ice: 'Resist',
+			Elec: 'Resist',
+			Wind: 'Resist',
+			Psy: 'Resist',
+			Nuke: 'Resist'
 		},
 		game: 'p5',
 		alignment: null,
@@ -13695,21 +12220,14 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: null,
-			weak: [],
-			resist: [
-				'Phys',
-				'Gun',
-				'Fire',
-				'Ice',
-				'Wind',
-				'Elec',
-				'Psy',
-				'Nuke'
-			],
-			null: [],
-			drain: [],
-			repel: []
+			Phys: 'Resist',
+			Gun: 'Resist',
+			Fire: 'Resist',
+			Ice: 'Resist',
+			Elec: 'Resist',
+			Wind: 'Resist',
+			Psy: 'Resist',
+			Nuke: 'Resist'
 		},
 		game: 'p5',
 		alignment: null,
@@ -13769,18 +12287,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Charm: 'Weak'
-			},
-			weak: [
-				'Fire'
-			],
-			resist: [],
-			null: [],
-			drain: [
-				'Ice'
-			],
-			repel: []
+			Fire: 'Weak',
+			Ice: 'Drain',
+			Charm: 'Weak'
 		},
 		game: 'smt5',
 		alignment: {
@@ -13842,18 +12351,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Confusion: 'Weak'
-			},
-			weak: [
-				'Ice'
-			],
-			resist: [],
-			null: [
-				'Fire'
-			],
-			repel: [],
-			drain: []
+			Fire: 'Null',
+			Ice: 'Weak',
+			Confusion: 'Weak'
 		},
 		game: 'smt5',
 		alignment: {
@@ -13920,17 +12420,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Elec',
-				'Dark'
-			],
-			resist: [],
-			null: [],
-			drain: [
-				'Force'
-			],
-			repel: []
+			Elec: 'Weak',
+			Force: 'Drain',
+			Dark: 'Weak'
 		},
 		game: 'smt5',
 		alignment: {
@@ -14001,18 +12493,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Fire'
-			],
-			resist: [
-				'Light'
-			],
-			null: [
-				'Ice'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Weak',
+			Ice: 'Null',
+			Light: 'Resist'
 		},
 		game: 'smt5',
 		alignment: {
@@ -14067,16 +12550,8 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: null,
-			weak: [
-				'Elec'
-			],
-			resist: [],
-			null: [],
-			drain: [
-				'Fire'
-			],
-			repel: []
+			Fire: 'Drain',
+			Elec: 'Weak'
 		},
 		game: 'p4',
 		alignment: {
@@ -14179,16 +12654,8 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: null,
-			weak: [
-				'Elec'
-			],
-			resist: [
-				'Wind'
-			],
-			null: [],
-			drain: [],
-			repel: []
+			Elec: 'Weak',
+			Wind: 'Resist'
 		},
 		game: 'p4',
 		alignment: null,
@@ -14303,16 +12770,8 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: null,
-			weak: [
-				'Psy'
-			],
-			resist: [
-				'Nuke'
-			],
-			null: [],
-			drain: [],
-			repel: []
+			Psy: 'Weak',
+			Nuke: 'Resist'
 		},
 		game: 'p5',
 		alignment: null,
@@ -14366,14 +12825,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 				level: 72
 			}
 		],
-		resistances: {
-			ailments: null,
-			weak: [],
-			resist: [],
-			null: [],
-			drain: [],
-			repel: []
-		},
+		resistances: {},
 		game: 'p3',
 		alignment: null,
 		lore: null,
@@ -14431,19 +12883,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: null,
-			weak: [
-				'Fire'
-			],
-			resist: [
-				'Wind'
-			],
-			null: [
-				'Light',
-				'Dark'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Weak',
+			Wind: 'Resist',
+			Light: 'Null',
+			Dark: 'Null'
 		},
 		game: 'p5',
 		alignment: null,
@@ -14502,17 +12945,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: null,
-			weak: [
-				'Fire'
-			],
-			resist: [],
-			null: [
-				'Light',
-				'Dark'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Weak',
+			Light: 'Null',
+			Dark: 'Null'
 		},
 		game: 'p5',
 		alignment: null,
@@ -14572,18 +13007,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Seal: 'Resist'
-			},
-			weak: [
-				'Light'
-			],
-			resist: [],
-			null: [
-				'Dark'
-			],
-			drain: [],
-			repel: []
+			Light: 'Weak',
+			Dark: 'Null',
+			Seal: 'Resist'
 		},
 		game: 'smt5',
 		alignment: {
@@ -14670,16 +13096,8 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: null,
-			weak: [
-				'Dark'
-			],
-			resist: [],
-			null: [
-				'Light'
-			],
-			drain: [],
-			repel: []
+			Light: 'Null',
+			Dark: 'Weak'
 		},
 		game: 'p3',
 		alignment: null,
@@ -14746,21 +13164,11 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Ice',
-				'Force'
-			],
-			resist: [
-				'Light'
-			],
-			null: [
-				'Fire'
-			],
-			repel: [
-				'Dark'
-			],
-			drain: []
+			Fire: 'Null',
+			Ice: 'Weak',
+			Force: 'Weak',
+			Light: 'Resist',
+			Dark: 'Repel'
 		},
 		game: 'smt5',
 		alignment: {
@@ -14879,18 +13287,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: null,
-			weak: [
-				'Fire'
-			],
-			resist: [
-				'Wind'
-			],
-			null: [
-				'Ice'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Weak',
+			Ice: 'Null',
+			Wind: 'Resist'
 		},
 		game: 'p5',
 		alignment: null,
@@ -14993,19 +13392,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: null,
-			weak: [
-				'Elec'
-			],
-			resist: [
-				'Wind',
-				'Dark'
-			],
-			null: [
-				'Ice'
-			],
-			drain: [],
-			repel: []
+			Ice: 'Null',
+			Elec: 'Weak',
+			Wind: 'Resist',
+			Dark: 'Resist'
 		},
 		game: 'p4',
 		alignment: null,
@@ -15108,17 +13498,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: null,
-			weak: [],
-			resist: [],
-			null: [
-				'Wind',
-				'Dark'
-			],
-			drain: [
-				'Ice'
-			],
-			repel: []
+			Ice: 'Drain',
+			Wind: 'Null',
+			Dark: 'Null'
 		},
 		game: 'p4',
 		alignment: null,
@@ -15192,14 +13574,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 				level: 79
 			}
 		],
-		resistances: {
-			ailments: null,
-			weak: [],
-			resist: [],
-			null: [],
-			drain: [],
-			repel: []
-		},
+		resistances: {},
 		game: 'p4',
 		alignment: null,
 		lore: null,
@@ -15261,17 +13636,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Elec'
-			],
-			resist: [
-				'Force',
-				'Light'
-			],
-			null: [],
-			repel: [],
-			drain: []
+			Elec: 'Weak',
+			Force: 'Resist',
+			Light: 'Resist'
 		},
 		game: 'smt5',
 		alignment: {
@@ -15326,14 +13693,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: null,
-			weak: [],
-			resist: [],
-			null: [],
-			drain: [],
-			repel: [
-				'Elec'
-			]
+			Elec: 'Repel'
 		},
 		game: 'p4',
 		alignment: {
@@ -15396,20 +13756,11 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Poison: 'Weak',
-				Sleep: 'Resist',
-				Charm: 'Resist'
-			},
-			weak: [
-				'Fire'
-			],
-			resist: [
-				'Ice'
-			],
-			null: [],
-			drain: [],
-			repel: []
+			Fire: 'Weak',
+			Ice: 'Resist',
+			Poison: 'Weak',
+			Sleep: 'Resist',
+			Charm: 'Resist'
 		},
 		game: 'smt5',
 		alignment: {
@@ -15476,18 +13827,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Mirage: 'Null'
-			},
-			weak: [
-				'Force'
-			],
-			resist: [
-				'Ice'
-			],
-			null: [],
-			drain: [],
-			repel: []
+			Ice: 'Resist',
+			Force: 'Weak',
+			Mirage: 'Null'
 		},
 		game: 'smt5',
 		alignment: {
@@ -15558,18 +13900,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Ice'
-			],
-			resist: [
-				'Fire'
-			],
-			null: [
-				'Light'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Resist',
+			Ice: 'Weak',
+			Light: 'Null'
 		},
 		game: 'smt5',
 		alignment: {
@@ -15636,23 +13969,12 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Seal: 'Null'
-			},
-			weak: [
-				'Ice'
-			],
-			resist: [
-				'Elec',
-				'Force'
-			],
-			null: [
-				'Fire'
-			],
-			repel: [],
-			drain: [
-				'Light'
-			]
+			Fire: 'Null',
+			Ice: 'Weak',
+			Elec: 'Resist',
+			Force: 'Resist',
+			Light: 'Drain',
+			Seal: 'Null'
 		},
 		game: 'smt5',
 		alignment: {
@@ -15715,20 +14037,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Charm: 'Resist'
-			},
-			weak: [
-				'Elec'
-			],
-			resist: [
-				'Light'
-			],
-			null: [
-				'Force'
-			],
-			drain: [],
-			repel: []
+			Elec: 'Weak',
+			Force: 'Null',
+			Light: 'Resist',
+			Charm: 'Resist'
 		},
 		game: 'smt5',
 		alignment: {
@@ -15795,18 +14107,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Mirage: 'Weak'
-			},
-			weak: [
-				'Force'
-			],
-			resist: [],
-			null: [
-				'Elec'
-			],
-			drain: [],
-			repel: []
+			Elec: 'Null',
+			Force: 'Weak',
+			Mirage: 'Weak'
 		},
 		game: 'smt5',
 		alignment: {
@@ -15873,19 +14176,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Fire',
-				'Dark'
-			],
-			resist: [],
-			null: [
-				'Light'
-			],
-			drain: [
-				'Ice'
-			],
-			repel: []
+			Fire: 'Weak',
+			Ice: 'Drain',
+			Light: 'Null',
+			Dark: 'Weak'
 		},
 		game: 'smt5',
 		alignment: {
@@ -15944,17 +14238,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: null,
-			weak: [
-				'Fire'
-			],
-			resist: [
-				'Elec',
-				'Dark'
-			],
-			null: [],
-			drain: [],
-			repel: []
+			Fire: 'Weak',
+			Elec: 'Resist',
+			Dark: 'Resist'
 		},
 		game: 'p4',
 		alignment: {
@@ -16025,23 +14311,14 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Charm: 'Resist',
-				Confusion: 'Resist',
-				Sleep: 'Resist'
-			},
-			weak: [
-				'Elec',
-				'Force'
-			],
-			resist: [],
-			null: [
-				'Fire',
-				'Light',
-				'Dark'
-			],
-			repel: [],
-			drain: []
+			Fire: 'Null',
+			Elec: 'Weak',
+			Force: 'Weak',
+			Light: 'Null',
+			Dark: 'Null',
+			Charm: 'Resist',
+			Confusion: 'Resist',
+			Sleep: 'Resist'
 		},
 		game: 'smt5',
 		alignment: {
@@ -16144,16 +14421,8 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: null,
-			weak: [
-				'Elec'
-			],
-			resist: [
-				'Ice'
-			],
-			null: [],
-			drain: [],
-			repel: []
+			Ice: 'Resist',
+			Elec: 'Weak'
 		},
 		game: 'p4',
 		alignment: null,
@@ -16208,17 +14477,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Fire',
-				'Ice'
-			],
-			resist: [
-				'Force'
-			],
-			null: [],
-			drain: [],
-			repel: []
+			Fire: 'Weak',
+			Ice: 'Weak',
+			Force: 'Resist'
 		},
 		game: 'smt5',
 		alignment: {
@@ -16281,16 +14542,8 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: null,
-			weak: [
-				'Gun'
-			],
-			resist: [
-				'Phys'
-			],
-			null: [],
-			drain: [],
-			repel: []
+			Phys: 'Resist',
+			Gun: 'Weak'
 		},
 		game: 'p5',
 		alignment: null,
@@ -16358,22 +14611,12 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Charm: 'Resist',
-				Seal: 'Resist',
-				Confusion: 'Resist'
-			},
-			weak: [
-				'Elec'
-			],
-			resist: [],
-			null: [
-				'Force'
-			],
-			repel: [
-				'Fire'
-			],
-			drain: []
+			Fire: 'Repel',
+			Elec: 'Weak',
+			Force: 'Null',
+			Charm: 'Resist',
+			Seal: 'Resist',
+			Confusion: 'Resist'
 		},
 		game: 'smt5',
 		alignment: {
@@ -16483,16 +14726,8 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: null,
-			weak: [
-				'Ice'
-			],
-			resist: [
-				'Fire'
-			],
-			null: [],
-			drain: [],
-			repel: []
+			Fire: 'Resist',
+			Ice: 'Weak'
 		},
 		game: 'p4',
 		alignment: null,
@@ -16555,18 +14790,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Resist'
-			},
-			weak: [
-				'Elec'
-			],
-			resist: [
-				'Force'
-			],
-			null: [],
-			drain: [],
-			repel: []
+			Elec: 'Weak',
+			Force: 'Resist',
+			Sleep: 'Resist'
 		},
 		game: 'smt5',
 		alignment: {
@@ -16637,21 +14863,11 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Poison: 'Resist'
-			},
-			weak: [
-				'Force',
-				'Dark'
-			],
-			resist: [
-				'Light'
-			],
-			null: [
-				'Ice'
-			],
-			drain: [],
-			repel: []
+			Ice: 'Null',
+			Force: 'Weak',
+			Light: 'Resist',
+			Dark: 'Weak',
+			Poison: 'Resist'
 		},
 		game: 'smt5',
 		alignment: {
@@ -16722,18 +14938,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Elec'
-			],
-			resist: [
-				'Light'
-			],
-			null: [
-				'Force'
-			],
-			drain: [],
-			repel: []
+			Elec: 'Weak',
+			Force: 'Null',
+			Light: 'Resist'
 		},
 		game: 'smt5',
 		alignment: {
@@ -16807,14 +15014,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 				level: 79
 			}
 		],
-		resistances: {
-			ailments: null,
-			weak: [],
-			resist: [],
-			null: [],
-			drain: [],
-			repel: []
-		},
+		resistances: {},
 		game: 'p4',
 		alignment: null,
 		lore: null,
@@ -16880,18 +15080,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Force'
-			],
-			resist: [
-				'Phys'
-			],
-			null: [
-				'Light'
-			],
-			repel: [],
-			drain: []
+			Phys: 'Resist',
+			Force: 'Weak',
+			Light: 'Null'
 		},
 		game: 'smt5',
 		alignment: {
@@ -16958,16 +15149,8 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Fire'
-			],
-			resist: [],
-			null: [],
-			repel: [],
-			drain: [
-				'Dark'
-			]
+			Fire: 'Weak',
+			Dark: 'Drain'
 		},
 		game: 'smt5',
 		alignment: {
@@ -17034,23 +15217,13 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Mirage: 'Weak',
-				Poison: 'Resist',
-				Confusion: 'Resist',
-				Charm: 'Resist'
-			},
-			weak: [
-				'Elec'
-			],
-			resist: [
-				'Dark'
-			],
-			null: [
-				'Force'
-			],
-			drain: [],
-			repel: []
+			Elec: 'Weak',
+			Force: 'Null',
+			Dark: 'Resist',
+			Mirage: 'Weak',
+			Poison: 'Resist',
+			Confusion: 'Resist',
+			Charm: 'Resist'
 		},
 		game: 'smt5',
 		alignment: {
@@ -17113,19 +15286,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Charm: 'Weak',
-				Seal: 'Resist'
-			},
-			weak: [
-				'Elec'
-			],
-			resist: [],
-			null: [
-				'Force'
-			],
-			drain: [],
-			repel: []
+			Elec: 'Weak',
+			Force: 'Null',
+			Charm: 'Weak',
+			Seal: 'Resist'
 		},
 		game: 'smt5',
 		alignment: {
@@ -17183,16 +15347,8 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: null,
-			weak: [
-				'Fire'
-			],
-			resist: [
-				'Wind'
-			],
-			null: [],
-			drain: [],
-			repel: []
+			Fire: 'Weak',
+			Wind: 'Resist'
 		},
 		game: 'p5',
 		alignment: {
@@ -17258,16 +15414,8 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Dark'
-			],
-			resist: [],
-			null: [
-				'Light'
-			],
-			drain: [],
-			repel: []
+			Light: 'Null',
+			Dark: 'Weak'
 		},
 		game: 'smt5',
 		alignment: {
@@ -17338,21 +15486,13 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Resist',
-				Mirage: 'Resist',
-				Poison: 'Resist',
-				Confusion: 'Resist',
-				Charm: 'Resist',
-				Seal: 'Resist'
-			},
-			weak: [
-				'Force'
-			],
-			resist: [],
-			null: [],
-			drain: [],
-			repel: []
+			Force: 'Weak',
+			Sleep: 'Resist',
+			Mirage: 'Resist',
+			Poison: 'Resist',
+			Confusion: 'Resist',
+			Charm: 'Resist',
+			Seal: 'Resist'
 		},
 		game: 'smt5',
 		alignment: {
@@ -17423,21 +15563,11 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Confusion: 'Null'
-			},
-			weak: [
-				'Fire'
-			],
-			resist: [
-				'Ice',
-				'Force'
-			],
-			null: [
-				'Dark'
-			],
-			repel: [],
-			drain: []
+			Fire: 'Weak',
+			Ice: 'Resist',
+			Force: 'Resist',
+			Dark: 'Null',
+			Confusion: 'Null'
 		},
 		game: 'smt5',
 		alignment: {
@@ -17508,20 +15638,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Charm: 'Null'
-			},
-			weak: [
-				'Elec'
-			],
-			resist: [
-				'Force'
-			],
-			null: [
-				'Light'
-			],
-			drain: [],
-			repel: []
+			Elec: 'Weak',
+			Force: 'Resist',
+			Light: 'Null',
+			Charm: 'Null'
 		},
 		game: 'smt5',
 		alignment: {
@@ -17588,19 +15708,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Mirage: 'Weak',
-				Poison: 'Resist'
-			},
-			weak: [
-				'Ice'
-			],
-			resist: [],
-			null: [
-				'Elec'
-			],
-			drain: [],
-			repel: []
+			Ice: 'Weak',
+			Elec: 'Null',
+			Mirage: 'Weak',
+			Poison: 'Resist'
 		},
 		game: 'smt5',
 		alignment: {
@@ -17663,19 +15774,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Poison: 'Weak'
-			},
-			weak: [
-				'Force',
-				'Light'
-			],
-			resist: [],
-			null: [
-				'Dark'
-			],
-			drain: [],
-			repel: []
+			Force: 'Weak',
+			Light: 'Weak',
+			Dark: 'Null',
+			Poison: 'Weak'
 		},
 		game: 'smt5',
 		alignment: {
@@ -17734,17 +15836,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Elec',
-				'Light'
-			],
-			resist: [],
-			null: [
-				'Dark'
-			],
-			drain: [],
-			repel: []
+			Elec: 'Weak',
+			Light: 'Weak',
+			Dark: 'Null'
 		},
 		game: 'smt5',
 		alignment: {
@@ -17807,19 +15901,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Resist',
-				Charm: 'Null'
-			},
-			weak: [
-				'Ice'
-			],
-			resist: [],
-			null: [
-				'Elec'
-			],
-			drain: [],
-			repel: []
+			Ice: 'Weak',
+			Elec: 'Null',
+			Sleep: 'Resist',
+			Charm: 'Null'
 		},
 		game: 'smt5',
 		alignment: {
@@ -17890,20 +15975,11 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Light'
-			],
-			resist: [
-				'Phys',
-				'Elec',
-				'Dark'
-			],
-			null: [],
-			repel: [],
-			drain: [
-				'Force'
-			]
+			Phys: 'Resist',
+			Elec: 'Resist',
+			Force: 'Drain',
+			Light: 'Weak',
+			Dark: 'Resist'
 		},
 		game: 'smt5',
 		alignment: {
@@ -17966,18 +16042,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Poison: 'Null'
-			},
-			weak: [
-				'Light'
-			],
-			resist: [],
-			null: [
-				'Dark'
-			],
-			drain: [],
-			repel: []
+			Light: 'Weak',
+			Dark: 'Null',
+			Poison: 'Null'
 		},
 		game: 'smt5',
 		alignment: {
@@ -18044,22 +16111,12 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Poison: 'Weak',
-				Charm: 'Resist'
-			},
-			weak: [
-				'Light'
-			],
-			resist: [
-				'Force',
-				'Dark'
-			],
-			null: [
-				'Ice'
-			],
-			drain: [],
-			repel: []
+			Ice: 'Null',
+			Force: 'Resist',
+			Light: 'Weak',
+			Dark: 'Resist',
+			Poison: 'Weak',
+			Charm: 'Resist'
 		},
 		game: 'smt5',
 		alignment: {
@@ -18125,16 +16182,8 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: null,
-			weak: [
-				'Light'
-			],
-			resist: [],
-			null: [
-				'Dark'
-			],
-			drain: [],
-			repel: []
+			Light: 'Weak',
+			Dark: 'Null'
 		},
 		game: 'p5',
 		alignment: null,
@@ -18201,19 +16250,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Ice',
-				'Light'
-			],
-			resist: [
-				'Fire'
-			],
-			null: [
-				'Elec'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Resist',
+			Ice: 'Weak',
+			Elec: 'Null',
+			Light: 'Weak'
 		},
 		game: 'smt5',
 		alignment: {
@@ -18259,14 +16299,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 				level: 41
 			}
 		],
-		resistances: {
-			ailments: null,
-			weak: [],
-			resist: [],
-			null: [],
-			drain: [],
-			repel: []
-		},
+		resistances: {},
 		game: 'p3',
 		alignment: null,
 		lore: null,
@@ -18324,22 +16357,13 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Charm: 'Null',
-				Confusion: 'Null',
-				Sleep: 'Null'
-			},
-			weak: [
-				'Light'
-			],
-			resist: [],
-			null: [],
-			repel: [
-				'Ice',
-				'Elec',
-				'Dark'
-			],
-			drain: []
+			Ice: 'Repel',
+			Elec: 'Repel',
+			Light: 'Weak',
+			Dark: 'Repel',
+			Charm: 'Null',
+			Confusion: 'Null',
+			Sleep: 'Null'
 		},
 		game: 'smt5',
 		alignment: {
@@ -18446,18 +16470,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: null,
-			weak: [
-				'Nuke'
-			],
-			resist: [
-				'Ice'
-			],
-			null: [
-				'Psy'
-			],
-			drain: [],
-			repel: []
+			Ice: 'Resist',
+			Psy: 'Null',
+			Nuke: 'Weak'
 		},
 		game: 'p5',
 		alignment: null,
@@ -18519,19 +16534,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: null,
-			weak: [
-				'Nuke'
-			],
-			resist: [
-				'Gun'
-			],
-			null: [
-				'Light',
-				'Dark'
-			],
-			drain: [],
-			repel: []
+			Gun: 'Resist',
+			Nuke: 'Weak',
+			Light: 'Null',
+			Dark: 'Null'
 		},
 		game: 'p5',
 		alignment: null,
@@ -18595,19 +16601,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Confusion: 'Resist',
-				Poison: 'Null'
-			},
-			weak: [
-				'Light'
-			],
-			resist: [],
-			null: [
-				'Dark'
-			],
-			drain: [],
-			repel: []
+			Light: 'Weak',
+			Dark: 'Null',
+			Confusion: 'Resist',
+			Poison: 'Null'
 		},
 		game: 'smt5',
 		alignment: {
@@ -18674,23 +16671,14 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Charm: 'Weak',
-				Seal: 'Weak',
-				Confusion: 'Weak',
-				Poison: 'Null',
-				Sleep: 'Null',
-				Mirage: 'Null'
-			},
-			weak: [
-				'Light'
-			],
-			resist: [],
-			null: [
-				'Dark'
-			],
-			repel: [],
-			drain: []
+			Light: 'Weak',
+			Dark: 'Null',
+			Charm: 'Weak',
+			Seal: 'Weak',
+			Confusion: 'Weak',
+			Poison: 'Null',
+			Sleep: 'Null',
+			Mirage: 'Null'
 		},
 		game: 'smt5',
 		alignment: {
@@ -18761,18 +16749,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Ice'
-			],
-			resist: [],
-			null: [
-				'Dark'
-			],
-			repel: [],
-			drain: [
-				'Fire'
-			]
+			Fire: 'Drain',
+			Ice: 'Weak',
+			Dark: 'Null'
 		},
 		game: 'smt5',
 		alignment: {
@@ -18831,19 +16810,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: null,
-			weak: [
-				'Nuke'
-			],
-			resist: [
-				'Gun'
-			],
-			null: [
-				'Light',
-				'Dark'
-			],
-			drain: [],
-			repel: []
+			Gun: 'Resist',
+			Nuke: 'Weak',
+			Light: 'Null',
+			Dark: 'Null'
 		},
 		game: 'p5',
 		alignment: null,
@@ -18906,18 +16876,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: null,
-			weak: [],
-			resist: [],
-			null: [
-				'Dark'
-			],
-			drain: [
-				'Fire'
-			],
-			repel: [
-				'Elec'
-			]
+			Fire: 'Drain',
+			Elec: 'Repel',
+			Dark: 'Null'
 		},
 		game: 'p4',
 		alignment: {
@@ -18980,18 +16941,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Confusion: 'Weak'
-			},
-			weak: [
-				'Dark'
-			],
-			resist: [
-				'Light'
-			],
-			null: [],
-			drain: [],
-			repel: []
+			Light: 'Resist',
+			Dark: 'Weak',
+			Confusion: 'Weak'
 		},
 		game: 'smt5',
 		alignment: {
@@ -19054,19 +17006,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Mirage: 'Resist',
-				Charm: 'Resist'
-			},
-			weak: [
-				'Light'
-			],
-			resist: [],
-			null: [
-				'Dark'
-			],
-			drain: [],
-			repel: []
+			Light: 'Weak',
+			Dark: 'Null',
+			Mirage: 'Resist',
+			Charm: 'Resist'
 		},
 		game: 'smt5',
 		alignment: {
@@ -19121,18 +17064,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Mirage: 'Weak'
-			},
-			weak: [
-				'Fire'
-			],
-			resist: [
-				'Elec'
-			],
-			null: [],
-			drain: [],
-			repel: []
+			Fire: 'Weak',
+			Elec: 'Resist',
+			Mirage: 'Weak'
 		},
 		game: 'smt5',
 		alignment: {
@@ -19203,21 +17137,11 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Charm: 'Null'
-			},
-			weak: [
-				'Ice'
-			],
-			resist: [
-				'Light',
-				'Dark'
-			],
-			null: [],
-			repel: [],
-			drain: [
-				'Elec'
-			]
+			Ice: 'Weak',
+			Elec: 'Drain',
+			Light: 'Resist',
+			Dark: 'Resist',
+			Charm: 'Null'
 		},
 		game: 'smt5',
 		alignment: {
@@ -19288,22 +17212,11 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Null'
-			},
-			weak: [
-				'Elec'
-			],
-			resist: [
-				'Dark'
-			],
-			null: [
-				'Light'
-			],
-			drain: [
-				'Force'
-			],
-			repel: []
+			Elec: 'Weak',
+			Force: 'Drain',
+			Light: 'Null',
+			Dark: 'Resist',
+			Sleep: 'Null'
 		},
 		game: 'smt5',
 		alignment: {
@@ -19374,26 +17287,15 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Confusion: 'Weak',
-				Poison: 'Weak',
-				Mirage: 'Null'
-			},
-			weak: [
-				'Dark'
-			],
-			resist: [
-				'Phys',
-				'Ice',
-				'Elec'
-			],
-			null: [
-				'Fire'
-			],
-			repel: [
-				'Light'
-			],
-			drain: []
+			Phys: 'Resist',
+			Fire: 'Null',
+			Ice: 'Resist',
+			Elec: 'Resist',
+			Light: 'Repel',
+			Dark: 'Weak',
+			Confusion: 'Weak',
+			Poison: 'Weak',
+			Mirage: 'Null'
 		},
 		game: 'smt5',
 		alignment: {
@@ -19464,20 +17366,11 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Weak',
-				Mirage: 'Weak'
-			},
-			weak: [],
-			resist: [
-				'Phys'
-			],
-			null: [
-				'Light',
-				'Dark'
-			],
-			repel: [],
-			drain: []
+			Phys: 'Resist',
+			Light: 'Null',
+			Dark: 'Null',
+			Sleep: 'Weak',
+			Mirage: 'Weak'
 		},
 		game: 'smt5',
 		alignment: {
@@ -19548,19 +17441,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Fire'
-			],
-			resist: [],
-			null: [
-				'Light'
-			],
-			repel: [
-				'Ice',
-				'Force'
-			],
-			drain: []
+			Fire: 'Weak',
+			Ice: 'Repel',
+			Force: 'Repel',
+			Light: 'Null'
 		},
 		game: 'smt5',
 		alignment: {
@@ -19627,23 +17511,13 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Resist',
-				Mirage: 'Resist',
-				Seal: 'Resist'
-			},
-			weak: [
-				'Elec'
-			],
-			resist: [
-				'Light',
-				'Dark'
-			],
-			null: [
-				'Force'
-			],
-			drain: [],
-			repel: []
+			Elec: 'Weak',
+			Force: 'Null',
+			Light: 'Resist',
+			Dark: 'Resist',
+			Sleep: 'Resist',
+			Mirage: 'Resist',
+			Seal: 'Resist'
 		},
 		game: 'smt5',
 		alignment: {
@@ -19710,18 +17584,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Force'
-			],
-			resist: [],
-			null: [
-				'Dark'
-			],
-			drain: [
-				'Light'
-			],
-			repel: []
+			Force: 'Weak',
+			Light: 'Drain',
+			Dark: 'Null'
 		},
 		game: 'smt5',
 		alignment: {
@@ -19792,25 +17657,15 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Resist',
-				Mirage: 'Resist',
-				Poison: 'Resist',
-				Confusion: 'Resist',
-				Charm: 'Resist',
-				Seal: 'Resist'
-			},
-			weak: [
-				'Light'
-			],
-			resist: [],
-			null: [
-				'Phys'
-			],
-			drain: [
-				'Dark'
-			],
-			repel: []
+			Phys: 'Null',
+			Light: 'Weak',
+			Dark: 'Drain',
+			Sleep: 'Resist',
+			Mirage: 'Resist',
+			Poison: 'Resist',
+			Confusion: 'Resist',
+			Charm: 'Resist',
+			Seal: 'Resist'
 		},
 		game: 'smt5',
 		alignment: {
@@ -19937,18 +17792,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: null,
-			weak: [
-				'Elec'
-			],
-			resist: [
-				'Light'
-			],
-			null: [
-				'Wind'
-			],
-			drain: [],
-			repel: []
+			Elec: 'Weak',
+			Wind: 'Null',
+			Light: 'Resist'
 		},
 		game: 'p5',
 		alignment: null,
@@ -20007,19 +17853,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Resist'
-			},
-			weak: [
-				'Fire',
-				'Elec'
-			],
-			resist: [],
-			null: [
-				'Ice'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Weak',
+			Ice: 'Null',
+			Elec: 'Weak',
+			Sleep: 'Resist'
 		},
 		game: 'smt5',
 		alignment: {
@@ -20082,23 +17919,14 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: null,
-			weak: [
-				'Dark'
-			],
-			resist: [
-				'Fire',
-				'Ice',
-				'Elec',
-				'Wind',
-				'Psy',
-				'Nuke'
-			],
-			null: [],
-			drain: [],
-			repel: [
-				'Light'
-			]
+			Fire: 'Resist',
+			Ice: 'Resist',
+			Elec: 'Resist',
+			Wind: 'Resist',
+			Psy: 'Resist',
+			Nuke: 'Resist',
+			Light: 'Repel',
+			Dark: 'Weak'
 		},
 		game: 'p5',
 		alignment: null,
@@ -20161,23 +17989,14 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: null,
-			weak: [
-				'Dark'
-			],
-			resist: [
-				'Fire',
-				'Ice',
-				'Elec',
-				'Wind',
-				'Psy',
-				'Nuke'
-			],
-			null: [],
-			drain: [],
-			repel: [
-				'Light'
-			]
+			Fire: 'Resist',
+			Ice: 'Resist',
+			Elec: 'Resist',
+			Wind: 'Resist',
+			Psy: 'Resist',
+			Nuke: 'Resist',
+			Light: 'Repel',
+			Dark: 'Weak'
 		},
 		game: 'p5',
 		alignment: null,
@@ -20245,19 +18064,11 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {},
-			weak: [],
-			resist: [
-				'Fire',
-				'Ice',
-				'Elec',
-				'Force'
-			],
-			null: [
-				'Light'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Resist',
+			Ice: 'Resist',
+			Elec: 'Resist',
+			Force: 'Resist',
+			Light: 'Null'
 		},
 		game: 'smt5',
 		alignment: {
@@ -20328,18 +18139,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Force'
-			],
-			resist: [],
-			null: [
-				'Fire',
-				'Ice',
-				'Light'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Null',
+			Ice: 'Null',
+			Force: 'Weak',
+			Light: 'Null'
 		},
 		game: 'smt5',
 		alignment: {
@@ -20446,16 +18249,8 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: null,
-			weak: [
-				'Nuke'
-			],
-			resist: [
-				'Psy'
-			],
-			null: [],
-			drain: [],
-			repel: []
+			Psy: 'Resist',
+			Nuke: 'Weak'
 		},
 		game: 'p5',
 		alignment: null,
@@ -20522,20 +18317,11 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Resist'
-			},
-			weak: [
-				'Force',
-				'Light'
-			],
-			resist: [],
-			null: [
-				'Elec',
-				'Dark'
-			],
-			drain: [],
-			repel: []
+			Elec: 'Null',
+			Force: 'Weak',
+			Light: 'Weak',
+			Dark: 'Null',
+			Sleep: 'Resist'
 		},
 		game: 'smt5',
 		alignment: {
@@ -20606,18 +18392,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Ice'
-			],
-			resist: [],
-			null: [
-				'Light'
-			],
-			repel: [],
-			drain: [
-				'Fire'
-			]
+			Fire: 'Drain',
+			Ice: 'Weak',
+			Light: 'Null'
 		},
 		game: 'smt5',
 		alignment: {
@@ -20687,18 +18464,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Ice'
-			],
-			resist: [
-				'Dark'
-			],
-			null: [
-				'Light'
-			],
-			drain: [],
-			repel: []
+			Ice: 'Weak',
+			Light: 'Null',
+			Dark: 'Resist'
 		},
 		game: 'smt5',
 		alignment: {
@@ -20757,16 +18525,8 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Force'
-			],
-			resist: [
-				'Elec'
-			],
-			null: [],
-			drain: [],
-			repel: []
+			Elec: 'Resist',
+			Force: 'Weak'
 		},
 		game: 'smt5',
 		alignment: {
@@ -20833,19 +18593,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Ice'
-			],
-			resist: [
-				'Elec',
-				'Dark'
-			],
-			null: [
-				'Fire'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Null',
+			Ice: 'Weak',
+			Elec: 'Resist',
+			Dark: 'Resist'
 		},
 		game: 'smt5',
 		alignment: {
@@ -20912,18 +18663,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Elec'
-			],
-			resist: [
-				'Fire'
-			],
-			null: [],
-			drain: [
-				'Dark'
-			],
-			repel: []
+			Fire: 'Resist',
+			Elec: 'Weak',
+			Dark: 'Drain'
 		},
 		game: 'smt5',
 		alignment: {
@@ -20994,25 +18736,14 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Charm: 'Null',
-				Sleep: 'Weak'
-			},
-			weak: [
-				'Ice',
-				'Force'
-			],
-			resist: [
-				'Light',
-				'Dark'
-			],
-			null: [],
-			repel: [
-				'Phys'
-			],
-			drain: [
-				'Elec'
-			]
+			Phys: 'Repel',
+			Ice: 'Weak',
+			Elec: 'Drain',
+			Force: 'Weak',
+			Light: 'Resist',
+			Dark: 'Resist',
+			Charm: 'Null',
+			Sleep: 'Weak'
 		},
 		game: 'smt5',
 		alignment: {
@@ -21079,19 +18810,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Poison: 'Resist',
-				Mirage: 'Resist'
-			},
-			weak: [
-				'Force'
-			],
-			resist: [],
-			null: [
-				'Elec'
-			],
-			repel: [],
-			drain: []
+			Elec: 'Null',
+			Force: 'Weak',
+			Poison: 'Resist',
+			Mirage: 'Resist'
 		},
 		game: 'smt5',
 		alignment: {
@@ -21161,16 +18883,8 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Fire'
-			],
-			resist: [],
-			null: [
-				'Force'
-			],
-			repel: [],
-			drain: []
+			Fire: 'Weak',
+			Force: 'Null'
 		},
 		game: 'smt5',
 		alignment: {
@@ -21241,24 +18955,14 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Charm: 'Null',
-				Confusion: 'Null'
-			},
-			weak: [
-				'Phys'
-			],
-			resist: [
-				'Fire',
-				'Ice',
-				'Elec',
-				'Force'
-			],
-			null: [
-				'Dark'
-			],
-			repel: [],
-			drain: []
+			Phys: 'Weak',
+			Fire: 'Resist',
+			Ice: 'Resist',
+			Elec: 'Resist',
+			Force: 'Resist',
+			Dark: 'Null',
+			Charm: 'Null',
+			Confusion: 'Null'
 		},
 		game: 'smt5',
 		alignment: {
@@ -21321,19 +19025,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Seal: 'Null'
-			},
-			weak: [
-				'Fire',
-				'Force'
-			],
-			resist: [],
-			null: [
-				'Elec'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Weak',
+			Elec: 'Null',
+			Force: 'Weak',
+			Seal: 'Null'
 		},
 		game: 'smt5',
 		alignment: {
@@ -21403,19 +19098,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Fire',
-				'Force'
-			],
-			resist: [
-				'Ice'
-			],
-			null: [],
-			drain: [
-				'Elec'
-			],
-			repel: []
+			Fire: 'Weak',
+			Ice: 'Resist',
+			Elec: 'Drain',
+			Force: 'Weak'
 		},
 		game: 'smt5',
 		alignment: {
@@ -21486,21 +19172,11 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Force'
-			],
-			resist: [
-				'Phys',
-				'Light'
-			],
-			null: [
-				'Elec'
-			],
-			repel: [],
-			drain: [
-				'Ice'
-			]
+			Phys: 'Resist',
+			Ice: 'Drain',
+			Elec: 'Null',
+			Force: 'Weak',
+			Light: 'Resist'
 		},
 		game: 'smt5',
 		alignment: {
@@ -21555,18 +19231,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: null,
-			weak: [
-				'Fire'
-			],
-			resist: [
-				'Phys'
-			],
-			null: [
-				'Light'
-			],
-			drain: [],
-			repel: []
+			Phys: 'Resist',
+			Fire: 'Weak',
+			Light: 'Null'
 		},
 		game: 'p4',
 		alignment: {
@@ -21633,19 +19300,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Charm: 'Null',
-				Confusion: 'Resist'
-			},
-			weak: [
-				'Fire'
-			],
-			resist: [],
-			null: [
-				'Force'
-			],
-			repel: [],
-			drain: []
+			Fire: 'Weak',
+			Force: 'Null',
+			Charm: 'Null',
+			Confusion: 'Resist'
 		},
 		game: 'smt5',
 		alignment: {
@@ -21708,17 +19366,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Force',
-				'Light'
-			],
-			resist: [],
-			null: [],
-			drain: [],
-			repel: [
-				'Dark'
-			]
+			Force: 'Weak',
+			Light: 'Weak',
+			Dark: 'Repel'
 		},
 		game: 'smt5',
 		alignment: {
@@ -21768,14 +19418,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 				level: 67
 			}
 		],
-		resistances: {
-			ailments: null,
-			weak: [],
-			resist: [],
-			null: [],
-			drain: [],
-			repel: []
-		},
+		resistances: {},
 		game: 'p5',
 		alignment: null,
 		lore: 'The grimoire which contains vital information of the Cthulhu mythos by Lovecraft. Its original name is Al Azif. It is said the book itself is alive.',
@@ -21833,23 +19476,13 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Mirage: 'Resist',
-				Poison: 'Resist',
-				Confusion: 'Resist'
-			},
-			weak: [
-				'Fire',
-				'Force'
-			],
-			resist: [
-				'Light'
-			],
-			null: [
-				'Elec'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Weak',
+			Elec: 'Null',
+			Force: 'Weak',
+			Light: 'Resist',
+			Mirage: 'Resist',
+			Poison: 'Resist',
+			Confusion: 'Resist'
 		},
 		game: 'smt5',
 		alignment: {
@@ -21912,21 +19545,11 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Charm: 'Resist'
-			},
-			weak: [
-				'Ice',
-				'Elec'
-			],
-			resist: [
-				'Fire'
-			],
-			null: [
-				'Force'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Resist',
+			Ice: 'Weak',
+			Elec: 'Weak',
+			Force: 'Null',
+			Charm: 'Resist'
 		},
 		game: 'smt5',
 		alignment: {
@@ -21985,16 +19608,8 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: null,
-			weak: [
-				'Dark'
-			],
-			resist: [
-				'Light'
-			],
-			null: [],
-			drain: [],
-			repel: []
+			Light: 'Resist',
+			Dark: 'Weak'
 		},
 		game: 'p3',
 		alignment: null,
@@ -22065,17 +19680,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Elec'
-			],
-			resist: [
-				'Fire',
-				'Force'
-			],
-			null: [],
-			repel: [],
-			drain: []
+			Fire: 'Resist',
+			Elec: 'Weak',
+			Force: 'Resist'
 		},
 		game: 'smt5',
 		alignment: {
@@ -22137,17 +19744,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: null,
-			weak: [
-				'Light'
-			],
-			resist: [],
-			null: [
-				'Ice',
-				'Dark'
-			],
-			drain: [],
-			repel: []
+			Ice: 'Null',
+			Light: 'Weak',
+			Dark: 'Null'
 		},
 		game: 'p4',
 		alignment: {
@@ -22202,17 +19801,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: null,
-			weak: [
-				'Elec'
-			],
-			resist: [
-				'Light',
-				'Dark'
-			],
-			null: [],
-			drain: [],
-			repel: []
+			Elec: 'Weak',
+			Light: 'Resist',
+			Dark: 'Resist'
 		},
 		game: 'p5',
 		alignment: {
@@ -22275,20 +19866,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Seal: 'Resist'
-			},
-			weak: [
-				'Elec'
-			],
-			resist: [
-				'Light'
-			],
-			null: [
-				'Dark'
-			],
-			drain: [],
-			repel: []
+			Elec: 'Weak',
+			Light: 'Resist',
+			Dark: 'Null',
+			Seal: 'Resist'
 		},
 		game: 'smt5',
 		alignment: {
@@ -22347,20 +19928,11 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Poison: 'Resist'
-			},
-			weak: [
-				'Fire',
-				'Ice',
-				'Elec'
-			],
-			resist: [
-				'Phys'
-			],
-			null: [],
-			repel: [],
-			drain: []
+			Phys: 'Resist',
+			Fire: 'Weak',
+			Ice: 'Weak',
+			Elec: 'Weak',
+			Poison: 'Resist'
 		},
 		game: 'smt5',
 		alignment: {
@@ -22427,18 +19999,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Charm: 'Weak'
-			},
-			weak: [
-				'Force'
-			],
-			resist: [],
-			null: [
-				'Elec'
-			],
-			drain: [],
-			repel: []
+			Elec: 'Null',
+			Force: 'Weak',
+			Charm: 'Weak'
 		},
 		game: 'smt5',
 		alignment: {
@@ -22505,21 +20068,11 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Charm: 'Null'
-			},
-			weak: [
-				'Fire'
-			],
-			resist: [
-				'Elec',
-				'Dark'
-			],
-			null: [],
-			drain: [],
-			repel: [
-				'Force'
-			]
+			Fire: 'Weak',
+			Elec: 'Resist',
+			Force: 'Repel',
+			Dark: 'Resist',
+			Charm: 'Null'
 		},
 		game: 'smt5',
 		alignment: {
@@ -22593,21 +20146,11 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Charm: 'Null'
-			},
-			weak: [
-				'Fire'
-			],
-			resist: [],
-			null: [
-				'Elec',
-				'Dark'
-			],
-			drain: [],
-			repel: [
-				'Force'
-			]
+			Fire: 'Weak',
+			Elec: 'Null',
+			Force: 'Repel',
+			Dark: 'Null',
+			Charm: 'Null'
 		},
 		game: 'smt5',
 		alignment: {
@@ -22666,19 +20209,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Mirage: 'Resist'
-			},
-			weak: [
-				'Fire',
-				'Elec'
-			],
-			resist: [],
-			null: [
-				'Ice'
-			],
-			repel: [],
-			drain: []
+			Fire: 'Weak',
+			Ice: 'Null',
+			Elec: 'Weak',
+			Mirage: 'Resist'
 		},
 		game: 'smt5',
 		alignment: {
@@ -22737,18 +20271,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Ice',
-				'Light'
-			],
-			resist: [
-				'Elec',
-				'Dark'
-			],
-			null: [],
-			drain: [],
-			repel: []
+			Ice: 'Weak',
+			Elec: 'Resist',
+			Light: 'Weak',
+			Dark: 'Resist'
 		},
 		game: 'smt5',
 		alignment: {
@@ -22815,18 +20341,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Charm: 'Weak'
-			},
-			weak: [
-				'Elec'
-			],
-			resist: [],
-			null: [
-				'Force'
-			],
-			drain: [],
-			repel: []
+			Elec: 'Weak',
+			Force: 'Null',
+			Charm: 'Weak'
 		},
 		game: 'smt5',
 		alignment: {
@@ -22897,21 +20414,11 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Mirage: 'Resist'
-			},
-			weak: [
-				'Force'
-			],
-			resist: [],
-			null: [
-				'Light',
-				'Dark'
-			],
-			drain: [],
-			repel: [
-				'Elec'
-			]
+			Elec: 'Repel',
+			Force: 'Weak',
+			Light: 'Null',
+			Dark: 'Null',
+			Mirage: 'Resist'
 		},
 		game: 'smt5',
 		alignment: {
@@ -22978,17 +20485,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Ice'
-			],
-			resist: [
-				'Light',
-				'Dark'
-			],
-			null: [],
-			repel: [],
-			drain: []
+			Ice: 'Weak',
+			Light: 'Resist',
+			Dark: 'Resist'
 		},
 		game: 'smt5',
 		alignment: {
@@ -23051,16 +20550,8 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: null,
-			weak: [
-				'Ice'
-			],
-			resist: [
-				'Elec'
-			],
-			null: [],
-			drain: [],
-			repel: []
+			Ice: 'Weak',
+			Elec: 'Resist'
 		},
 		game: 'p4',
 		alignment: {
@@ -23131,18 +20622,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Light'
-			],
-			resist: [
-				'Phys',
-				'Ice',
-				'Force'
-			],
-			null: [],
-			repel: [],
-			drain: []
+			Phys: 'Resist',
+			Ice: 'Resist',
+			Force: 'Resist',
+			Light: 'Weak'
 		},
 		game: 'smt5',
 		alignment: {
@@ -23201,20 +20684,11 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Weak',
-				Confusion: 'Weak'
-			},
-			weak: [
-				'Elec',
-				'Light'
-			],
-			resist: [
-				'Phys'
-			],
-			null: [],
-			drain: [],
-			repel: []
+			Phys: 'Resist',
+			Elec: 'Weak',
+			Light: 'Weak',
+			Sleep: 'Weak',
+			Confusion: 'Weak'
 		},
 		game: 'smt5',
 		alignment: {
@@ -23269,19 +20743,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Mirage: 'Weak'
-			},
-			weak: [
-				'Ice',
-				'Force'
-			],
-			resist: [
-				'Fire'
-			],
-			null: [],
-			drain: [],
-			repel: []
+			Fire: 'Resist',
+			Ice: 'Weak',
+			Force: 'Weak',
+			Mirage: 'Weak'
 		},
 		game: 'smt5',
 		alignment: {
@@ -23348,18 +20813,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Phys'
-			],
-			resist: [],
-			null: [
-				'Fire',
-				'Elec',
-				'Light'
-			],
-			repel: [],
-			drain: []
+			Phys: 'Weak',
+			Fire: 'Null',
+			Elec: 'Null',
+			Light: 'Null'
 		},
 		game: 'smt5',
 		alignment: {
@@ -23422,17 +20879,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: null,
-			weak: [
-				'Light'
-			],
-			resist: [
-				'Phys',
-				'Gun'
-			],
-			null: [],
-			drain: [],
-			repel: []
+			Phys: 'Resist',
+			Gun: 'Resist',
+			Light: 'Weak'
 		},
 		game: 'p5',
 		alignment: null,
@@ -23492,17 +20941,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: null,
-			weak: [
-				'Dark'
-			],
-			resist: [
-				'Phys',
-				'Gun'
-			],
-			null: [],
-			drain: [],
-			repel: []
+			Phys: 'Resist',
+			Gun: 'Resist',
+			Dark: 'Weak'
 		},
 		game: 'p5',
 		alignment: null,
@@ -23566,20 +21007,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Confusion: 'Null'
-			},
-			weak: [
-				'Ice'
-			],
-			resist: [
-				'Dark'
-			],
-			null: [
-				'Fire'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Null',
+			Ice: 'Weak',
+			Dark: 'Resist',
+			Confusion: 'Null'
 		},
 		game: 'smt5',
 		alignment: {
@@ -23646,17 +21077,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: null,
-			weak: [
-				'Elec',
-				'Dark'
-			],
-			resist: [
-				'Light'
-			],
-			null: [],
-			drain: [],
-			repel: []
+			Elec: 'Weak',
+			Light: 'Resist',
+			Dark: 'Weak'
 		},
 		game: 'p5',
 		alignment: null,
@@ -23722,17 +21145,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: null,
-			weak: [
-				'Elec',
-				'Dark'
-			],
-			resist: [
-				'Light'
-			],
-			null: [],
-			drain: [],
-			repel: []
+			Elec: 'Weak',
+			Light: 'Resist',
+			Dark: 'Weak'
 		},
 		game: 'p5',
 		alignment: null,
@@ -23791,17 +21206,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: null,
-			weak: [
-				'Elec',
-				'Dark'
-			],
-			resist: [
-				'Light'
-			],
-			null: [],
-			drain: [],
-			repel: []
+			Elec: 'Weak',
+			Light: 'Resist',
+			Dark: 'Weak'
 		},
 		game: 'p5',
 		alignment: null,
@@ -23861,17 +21268,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: null,
-			weak: [
-				'Elec',
-				'Dark'
-			],
-			resist: [
-				'Light'
-			],
-			null: [],
-			drain: [],
-			repel: []
+			Elec: 'Weak',
+			Light: 'Resist',
+			Dark: 'Weak'
 		},
 		game: 'p5',
 		alignment: null,
@@ -23903,23 +21302,16 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: null,
-			weak: [],
-			resist: [
-				'Phys',
-				'Gun',
-				'Fire',
-				'Ice',
-				'Elec',
-				'Wind',
-				'Nuke',
-				'Psy',
-				'Light',
-				'Dark'
-			],
-			null: [],
-			drain: [],
-			repel: []
+			Phys: 'Resist',
+			Gun: 'Resist',
+			Fire: 'Resist',
+			Ice: 'Resist',
+			Elec: 'Resist',
+			Wind: 'Resist',
+			Psy: 'Resist',
+			Nuke: 'Resist',
+			Light: 'Resist',
+			Dark: 'Resist'
 		},
 		game: 'p3',
 		alignment: null,
@@ -23986,21 +21378,11 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Poison: 'Weak',
-				Confusion: 'Resist'
-			},
-			weak: [
-				'Ice'
-			],
-			resist: [
-				'Dark'
-			],
-			null: [
-				'Fire'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Null',
+			Ice: 'Weak',
+			Dark: 'Resist',
+			Poison: 'Weak',
+			Confusion: 'Resist'
 		},
 		game: 'smt5',
 		alignment: {
@@ -24067,19 +21449,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Charm: 'Weak'
-			},
-			weak: [
-				'Fire'
-			],
-			resist: [],
-			null: [
-				'Ice',
-				'Dark'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Weak',
+			Ice: 'Null',
+			Dark: 'Null',
+			Charm: 'Weak'
 		},
 		game: 'smt5',
 		alignment: {
@@ -24145,21 +21518,11 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Mirage: 'Weak'
-			},
-			weak: [
-				'Fire'
-			],
-			resist: [
-				'Ice',
-				'Elec'
-			],
-			null: [
-				'Dark'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Weak',
+			Ice: 'Resist',
+			Elec: 'Resist',
+			Dark: 'Null',
+			Mirage: 'Weak'
 		},
 		game: 'smt5',
 		alignment: {
@@ -24214,19 +21577,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: null,
-			weak: [
-				'Ice',
-				'Light'
-			],
-			resist: [],
-			null: [
-				'Fire'
-			],
-			drain: [],
-			repel: [
-				'Dark'
-			]
+			Fire: 'Null',
+			Ice: 'Weak',
+			Light: 'Weak',
+			Dark: 'Repel'
 		},
 		game: 'p4',
 		alignment: {
@@ -24297,25 +21651,15 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Resist',
-				Charm: 'Resist',
-				Seal: 'Resist',
-				Mirage: 'Null',
-				Poison: 'Null'
-			},
-			weak: [
-				'Fire'
-			],
-			resist: [
-				'Light',
-				'Dark'
-			],
-			null: [
-				'Ice'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Weak',
+			Ice: 'Null',
+			Light: 'Resist',
+			Dark: 'Resist',
+			Sleep: 'Resist',
+			Charm: 'Resist',
+			Seal: 'Resist',
+			Mirage: 'Null',
+			Poison: 'Null'
 		},
 		game: 'smt5',
 		alignment: {
@@ -24394,18 +21738,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: null,
-			weak: [
-				'Elec'
-			],
-			resist: [
-				'Phys'
-			],
-			null: [
-				'Dark'
-			],
-			drain: [],
-			repel: []
+			Phys: 'Resist',
+			Elec: 'Weak',
+			Dark: 'Null'
 		},
 		game: 'p3',
 		alignment: null,
@@ -24520,16 +21855,8 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: null,
-			weak: [
-				'Dark'
-			],
-			resist: [],
-			null: [
-				'Light'
-			],
-			drain: [],
-			repel: []
+			Light: 'Null',
+			Dark: 'Weak'
 		},
 		game: 'p5',
 		alignment: null,
@@ -24596,19 +21923,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Confusion: 'Null'
-			},
-			weak: [
-				'Fire'
-			],
-			resist: [
-				'Ice',
-				'Light'
-			],
-			null: [],
-			drain: [],
-			repel: []
+			Fire: 'Weak',
+			Ice: 'Resist',
+			Light: 'Resist',
+			Confusion: 'Null'
 		},
 		game: 'smt5',
 		alignment: {
@@ -24679,20 +21997,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Confusion: 'Resist'
-			},
-			weak: [
-				'Ice'
-			],
-			resist: [
-				'Force'
-			],
-			null: [
-				'Dark'
-			],
-			drain: [],
-			repel: []
+			Ice: 'Weak',
+			Force: 'Resist',
+			Dark: 'Null',
+			Confusion: 'Resist'
 		},
 		game: 'smt5',
 		alignment: {
@@ -24755,18 +22063,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Fire',
-				'Light'
-			],
-			resist: [
-				'Ice',
-				'Dark'
-			],
-			null: [],
-			repel: [],
-			drain: []
+			Fire: 'Weak',
+			Ice: 'Resist',
+			Light: 'Weak',
+			Dark: 'Resist'
 		},
 		game: 'smt5',
 		alignment: {
@@ -24849,16 +22149,8 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: null,
-			weak: [
-				'Fire'
-			],
-			resist: [
-				'Ice'
-			],
-			null: [],
-			drain: [],
-			repel: []
+			Fire: 'Weak',
+			Ice: 'Resist'
 		},
 		game: 'p3',
 		alignment: null,
@@ -24925,17 +22217,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Fire',
-				'Light'
-			],
-			resist: [],
-			null: [
-				'Dark'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Weak',
+			Light: 'Weak',
+			Dark: 'Null'
 		},
 		game: 'smt5',
 		alignment: {
@@ -25030,16 +22314,8 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: null,
-			weak: [
-				'Dark'
-			],
-			resist: [
-				'Light'
-			],
-			null: [],
-			drain: [],
-			repel: []
+			Light: 'Resist',
+			Dark: 'Weak'
 		},
 		game: 'p5',
 		alignment: null,
@@ -25098,18 +22374,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Confusion: 'Weak'
-			},
-			weak: [
-				'Dark'
-			],
-			resist: [
-				'Force'
-			],
-			null: [],
-			repel: [],
-			drain: []
+			Force: 'Resist',
+			Dark: 'Weak',
+			Confusion: 'Weak'
 		},
 		game: 'smt5',
 		alignment: {
@@ -25172,17 +22439,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Force',
-				'Light'
-			],
-			resist: [],
-			null: [
-				'Elec'
-			],
-			drain: [],
-			repel: []
+			Elec: 'Null',
+			Force: 'Weak',
+			Light: 'Weak'
 		},
 		game: 'smt5',
 		alignment: {
@@ -25257,16 +22516,8 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: null,
-			weak: [
-				'Ice'
-			],
-			resist: [
-				'Elec'
-			],
-			null: [],
-			drain: [],
-			repel: []
+			Ice: 'Weak',
+			Elec: 'Resist'
 		},
 		game: 'p3',
 		alignment: null,
@@ -25333,19 +22584,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Force',
-				'Dark'
-			],
-			resist: [
-				'Elec'
-			],
-			null: [
-				'Light'
-			],
-			drain: [],
-			repel: []
+			Elec: 'Resist',
+			Force: 'Weak',
+			Light: 'Null',
+			Dark: 'Weak'
 		},
 		game: 'smt5',
 		alignment: {
@@ -25400,18 +22642,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Fire',
-				'Force',
-				'Light'
-			],
-			resist: [
-				'Dark'
-			],
-			null: [],
-			drain: [],
-			repel: []
+			Fire: 'Weak',
+			Force: 'Weak',
+			Light: 'Weak',
+			Dark: 'Resist'
 		},
 		game: 'smt5',
 		alignment: {
@@ -25474,18 +22708,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Seal: 'Weak'
-			},
-			weak: [
-				'Dark'
-			],
-			resist: [],
-			null: [
-				'Light'
-			],
-			drain: [],
-			repel: []
+			Light: 'Null',
+			Dark: 'Weak',
+			Seal: 'Weak'
 		},
 		game: 'smt5',
 		alignment: {
@@ -25535,14 +22760,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 				level: 67
 			}
 		],
-		resistances: {
-			ailments: null,
-			weak: [],
-			resist: [],
-			null: [],
-			drain: [],
-			repel: []
-		},
+		resistances: {},
 		game: 'p5',
 		alignment: null,
 		lore: 'The Greek Titan created mankind from clay. He later stole fire from Olympus and, in turn, gave it to mankind against Zeus\'s will. His name is often synonymous with fire and "divine knowledge."',
@@ -25631,14 +22849,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 				level: 75
 			}
 		],
-		resistances: {
-			ailments: null,
-			weak: [],
-			resist: [],
-			null: [],
-			drain: [],
-			repel: []
-		},
+		resistances: {},
 		game: 'p3',
 		alignment: null,
 		lore: null,
@@ -25709,20 +22920,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Weak'
-			},
-			weak: [
-				'Elec'
-			],
-			resist: [
-				'Ice'
-			],
-			null: [
-				'Force'
-			],
-			drain: [],
-			repel: []
+			Ice: 'Resist',
+			Elec: 'Weak',
+			Force: 'Null',
+			Sleep: 'Weak'
 		},
 		game: 'smt5',
 		alignment: {
@@ -25792,20 +22993,11 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Poison: 'Weak',
-				Sleep: 'Resist',
-				Charm: 'Resist'
-			},
-			weak: [
-				'Elec'
-			],
-			resist: [],
-			null: [
-				'Force'
-			],
-			drain: [],
-			repel: []
+			Elec: 'Weak',
+			Force: 'Null',
+			Poison: 'Weak',
+			Sleep: 'Resist',
+			Charm: 'Resist'
 		},
 		game: 'smt5',
 		alignment: {
@@ -25868,17 +23060,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: null,
-			weak: [
-				'Psy'
-			],
-			resist: [
-				'Phys',
-				'Gun'
-			],
-			null: [],
-			drain: [],
-			repel: []
+			Phys: 'Resist',
+			Gun: 'Resist',
+			Psy: 'Weak'
 		},
 		game: 'p5',
 		alignment: null,
@@ -25942,16 +23126,8 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Elec'
-			],
-			resist: [],
-			null: [
-				'Fire'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Null',
+			Elec: 'Weak'
 		},
 		game: 'smt5',
 		alignment: {
@@ -26010,19 +23186,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Weak'
-			},
-			weak: [
-				'Ice'
-			],
-			resist: [
-				'Light',
-				'Dark'
-			],
-			null: [],
-			drain: [],
-			repel: []
+			Ice: 'Weak',
+			Light: 'Resist',
+			Dark: 'Resist',
+			Sleep: 'Weak'
 		},
 		game: 'smt5',
 		alignment: {
@@ -26089,20 +23256,11 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Weak'
-			},
-			weak: [
-				'Fire',
-				'Elec',
-				'Light'
-			],
-			resist: [],
-			null: [],
-			repel: [
-				'Phys'
-			],
-			drain: []
+			Phys: 'Repel',
+			Fire: 'Weak',
+			Elec: 'Weak',
+			Light: 'Weak',
+			Sleep: 'Weak'
 		},
 		game: 'smt5',
 		alignment: {
@@ -26165,16 +23323,8 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: null,
-			weak: [
-				'Light'
-			],
-			resist: [],
-			null: [
-				'Dark'
-			],
-			drain: [],
-			repel: []
+			Light: 'Weak',
+			Dark: 'Null'
 		},
 		game: 'p5',
 		alignment: null,
@@ -26245,19 +23395,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Fire'
-			],
-			resist: [
-				'Elec'
-			],
-			null: [
-				'Force',
-				'Light'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Weak',
+			Elec: 'Resist',
+			Force: 'Null',
+			Light: 'Null'
 		},
 		game: 'smt5',
 		alignment: {
@@ -26328,21 +23469,11 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Ice'
-			],
-			resist: [
-				'Light',
-				'Dark'
-			],
-			null: [],
-			drain: [
-				'Force'
-			],
-			repel: [
-				'Elec'
-			]
+			Ice: 'Weak',
+			Elec: 'Repel',
+			Force: 'Drain',
+			Light: 'Resist',
+			Dark: 'Resist'
 		},
 		game: 'smt5',
 		alignment: {
@@ -26405,17 +23536,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: null,
-			weak: [
-				'Nuke'
-			],
-			resist: [
-				'Phys',
-				'Gun'
-			],
-			null: [],
-			drain: [],
-			repel: []
+			Phys: 'Resist',
+			Gun: 'Resist',
+			Nuke: 'Weak'
 		},
 		game: 'p5',
 		alignment: null,
@@ -26503,16 +23626,8 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: null,
-			weak: [
-				'Dark'
-			],
-			resist: [
-				'Light'
-			],
-			null: [],
-			drain: [],
-			repel: []
+			Light: 'Resist',
+			Dark: 'Weak'
 		},
 		game: 'p5',
 		alignment: null,
@@ -26614,16 +23729,8 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: null,
-			weak: [
-				'Wind'
-			],
-			resist: [],
-			null: [
-				'Elec'
-			],
-			drain: [],
-			repel: []
+			Elec: 'Null',
+			Wind: 'Weak'
 		},
 		game: 'p4',
 		alignment: null,
@@ -26678,16 +23785,8 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: null,
-			weak: [
-				'Wind'
-			],
-			resist: [
-				'Ice'
-			],
-			null: [],
-			drain: [],
-			repel: []
+			Ice: 'Resist',
+			Wind: 'Weak'
 		},
 		game: 'p5',
 		alignment: {
@@ -26758,20 +23857,11 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Poison: 'Null',
-				Mirage: 'Null'
-			},
-			weak: [
-				'Ice'
-			],
-			resist: [],
-			null: [],
-			repel: [
-				'Light',
-				'Dark'
-			],
-			drain: []
+			Ice: 'Weak',
+			Light: 'Repel',
+			Dark: 'Repel',
+			Poison: 'Null',
+			Mirage: 'Null'
 		},
 		game: 'smt5',
 		alignment: {
@@ -26842,20 +23932,11 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Force'
-			],
-			resist: [
-				'Dark'
-			],
-			null: [
-				'Phys',
-				'Elec',
-				'Light'
-			],
-			drain: [],
-			repel: []
+			Phys: 'Null',
+			Elec: 'Null',
+			Force: 'Weak',
+			Light: 'Null',
+			Dark: 'Resist'
 		},
 		game: 'smt5',
 		alignment: {
@@ -26914,16 +23995,8 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Elec'
-			],
-			resist: [
-				'Force'
-			],
-			null: [],
-			drain: [],
-			repel: []
+			Elec: 'Weak',
+			Force: 'Resist'
 		},
 		game: 'smt5',
 		alignment: {
@@ -26990,20 +24063,11 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Confusion: 'Resist',
-				Charm: 'Null'
-			},
-			weak: [
-				'Fire',
-				'Dark'
-			],
-			resist: [],
-			null: [
-				'Ice'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Weak',
+			Ice: 'Null',
+			Dark: 'Weak',
+			Confusion: 'Resist',
+			Charm: 'Null'
 		},
 		game: 'smt5',
 		alignment: {
@@ -27062,18 +24126,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {},
-			weak: [],
-			resist: [
-				'Phys'
-			],
-			null: [],
-			repel: [],
-			drain: [
-				'Fire',
-				'Light',
-				'Dark'
-			]
+			Phys: 'Resist',
+			Fire: 'Drain',
+			Light: 'Drain',
+			Dark: 'Drain'
 		},
 		game: 'smt5',
 		alignment: {
@@ -27136,25 +24192,16 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: null,
-			weak: [],
-			resist: [
-				'Phys',
-				'Gun',
-				'Fire',
-				'Ice',
-				'Elec',
-				'Wind',
-				'Psy',
-				'Nuke'
-			],
-			null: [
-				'Light'
-			],
-			drain: [
-				'Dark'
-			],
-			repel: []
+			Phys: 'Resist',
+			Gun: 'Resist',
+			Fire: 'Resist',
+			Ice: 'Resist',
+			Elec: 'Resist',
+			Wind: 'Resist',
+			Psy: 'Resist',
+			Nuke: 'Resist',
+			Light: 'Null',
+			Dark: 'Drain'
 		},
 		game: 'p5',
 		alignment: null,
@@ -27209,16 +24256,8 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: null,
-			weak: [
-				'Ice'
-			],
-			resist: [],
-			null: [
-				'Fire'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Null',
+			Ice: 'Weak'
 		},
 		game: 'p4',
 		alignment: {
@@ -27285,20 +24324,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Ice'
-			],
-			resist: [
-				'Dark'
-			],
-			null: [
-				'Light'
-			],
-			repel: [],
-			drain: [
-				'Fire'
-			]
+			Fire: 'Drain',
+			Ice: 'Weak',
+			Light: 'Null',
+			Dark: 'Resist'
 		},
 		game: 'smt5',
 		alignment: {
@@ -27365,20 +24394,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Seal: 'Resist'
-			},
-			weak: [
-				'Elec'
-			],
-			resist: [
-				'Light'
-			],
-			null: [
-				'Force'
-			],
-			drain: [],
-			repel: []
+			Elec: 'Weak',
+			Force: 'Null',
+			Light: 'Resist',
+			Seal: 'Resist'
 		},
 		game: 'smt5',
 		alignment: {
@@ -27440,17 +24459,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: null,
-			weak: [
-				'Fire'
-			],
-			resist: [
-				'Phys',
-				'Wind'
-			],
-			null: [],
-			drain: [],
-			repel: []
+			Phys: 'Resist',
+			Fire: 'Weak',
+			Wind: 'Resist'
 		},
 		game: 'p4',
 		alignment: {
@@ -27576,18 +24587,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: null,
-			weak: [
-				'Wind'
-			],
-			resist: [
-				'Fire'
-			],
-			null: [
-				'Elec'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Resist',
+			Elec: 'Null',
+			Wind: 'Weak'
 		},
 		game: 'p5',
 		alignment: null,
@@ -27654,20 +24656,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Charm: 'Null'
-			},
-			weak: [
-				'Elec'
-			],
-			resist: [
-				'Force'
-			],
-			null: [
-				'Light'
-			],
-			repel: [],
-			drain: []
+			Elec: 'Weak',
+			Force: 'Resist',
+			Light: 'Null',
+			Charm: 'Null'
 		},
 		game: 'smt5',
 		alignment: {
@@ -27730,20 +24722,11 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Confusion: 'Weak',
-				Seal: 'Resist'
-			},
-			weak: [
-				'Elec',
-				'Dark'
-			],
-			resist: [],
-			null: [
-				'Force'
-			],
-			drain: [],
-			repel: []
+			Elec: 'Weak',
+			Force: 'Null',
+			Dark: 'Weak',
+			Confusion: 'Weak',
+			Seal: 'Resist'
 		},
 		game: 'smt5',
 		alignment: {
@@ -27810,21 +24793,11 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Mirage: 'Weak'
-			},
-			weak: [
-				'Ice'
-			],
-			resist: [
-				'Light',
-				'Dark'
-			],
-			null: [
-				'Elec'
-			],
-			drain: [],
-			repel: []
+			Ice: 'Weak',
+			Elec: 'Null',
+			Light: 'Resist',
+			Dark: 'Resist',
+			Mirage: 'Weak'
 		},
 		game: 'smt5',
 		alignment: {
@@ -27887,19 +24860,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Charm: 'Weak'
-			},
-			weak: [
-				'Fire'
-			],
-			resist: [
-				'Elec',
-				'Force'
-			],
-			null: [],
-			drain: [],
-			repel: []
+			Fire: 'Weak',
+			Elec: 'Resist',
+			Force: 'Resist',
+			Charm: 'Weak'
 		},
 		game: 'smt5',
 		alignment: {
@@ -27962,21 +24926,12 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Confusion: 'Weak'
-			},
-			weak: [
-				'Fire',
-				'Force'
-			],
-			resist: [
-				'Phys',
-				'Light',
-				'Dark'
-			],
-			null: [],
-			repel: [],
-			drain: []
+			Phys: 'Resist',
+			Fire: 'Weak',
+			Force: 'Weak',
+			Light: 'Resist',
+			Dark: 'Resist',
+			Confusion: 'Weak'
 		},
 		game: 'smt5',
 		alignment: {
@@ -28047,23 +25002,13 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Mirage: 'Resist'
-			},
-			weak: [
-				'Ice'
-			],
-			resist: [
-				'Phys',
-				'Light',
-				'Dark'
-			],
-			null: [],
-			drain: [
-				'Fire',
-				'Elec'
-			],
-			repel: []
+			Phys: 'Resist',
+			Fire: 'Drain',
+			Ice: 'Weak',
+			Elec: 'Drain',
+			Light: 'Resist',
+			Dark: 'Resist',
+			Mirage: 'Resist'
 		},
 		game: 'smt5',
 		alignment: {
@@ -28134,21 +25079,12 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Seal: 'Weak',
-				Mirage: 'Weak'
-			},
-			weak: [
-				'Force',
-				'Light',
-				'Dark'
-			],
-			resist: [],
-			null: [],
-			repel: [],
-			drain: [
-				'Phys'
-			]
+			Phys: 'Drain',
+			Force: 'Weak',
+			Light: 'Weak',
+			Dark: 'Weak',
+			Seal: 'Weak',
+			Mirage: 'Weak'
 		},
 		game: 'smt5',
 		alignment: {
@@ -28215,20 +25151,11 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Confusion: 'Weak',
-				Charm: 'Resist',
-				Sleep: 'Null'
-			},
-			weak: [
-				'Fire'
-			],
-			resist: [],
-			null: [
-				'Ice'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Weak',
+			Ice: 'Null',
+			Confusion: 'Weak',
+			Charm: 'Resist',
+			Sleep: 'Null'
 		},
 		game: 'smt5',
 		alignment: {
@@ -28295,20 +25222,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Seal: 'Null'
-			},
-			weak: [
-				'Fire'
-			],
-			resist: [
-				'Ice'
-			],
-			null: [
-				'Dark'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Weak',
+			Ice: 'Resist',
+			Dark: 'Null',
+			Seal: 'Null'
 		},
 		game: 'smt5',
 		alignment: {
@@ -28363,20 +25280,12 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Poison: 'Resist'
-			},
-			weak: [
-				'Fire',
-				'Ice',
-				'Elec',
-				'Force',
-				'Light'
-			],
-			resist: [],
-			null: [],
-			drain: [],
-			repel: []
+			Fire: 'Weak',
+			Ice: 'Weak',
+			Elec: 'Weak',
+			Force: 'Weak',
+			Light: 'Weak',
+			Poison: 'Resist'
 		},
 		game: 'smt5',
 		alignment: {
@@ -28443,19 +25352,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Force'
-			],
-			resist: [
-				'Ice',
-				'Elec'
-			],
-			null: [],
-			drain: [
-				'Light'
-			],
-			repel: []
+			Ice: 'Resist',
+			Elec: 'Resist',
+			Force: 'Weak',
+			Light: 'Drain'
 		},
 		game: 'smt5',
 		alignment: {
@@ -28518,17 +25418,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: null,
-			weak: [
-				'Fire'
-			],
-			resist: [
-				'Phys',
-				'Gun'
-			],
-			null: [],
-			drain: [],
-			repel: []
+			Phys: 'Resist',
+			Gun: 'Resist',
+			Fire: 'Weak'
 		},
 		game: 'p5',
 		alignment: null,
@@ -28592,18 +25484,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Light'
-			],
-			resist: [
-				'Fire'
-			],
-			null: [
-				'Ice'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Resist',
+			Ice: 'Null',
+			Light: 'Weak'
 		},
 		game: 'smt5',
 		alignment: {
@@ -28658,20 +25541,11 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Weak',
-				Confusion: 'Resist'
-			},
-			weak: [
-				'Fire',
-				'Ice'
-			],
-			resist: [],
-			null: [
-				'Force'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Weak',
+			Ice: 'Weak',
+			Force: 'Null',
+			Sleep: 'Weak',
+			Confusion: 'Resist'
 		},
 		game: 'smt5',
 		alignment: {
@@ -28738,18 +25612,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Seal: 'Weak'
-			},
-			weak: [
-				'Fire'
-			],
-			resist: [],
-			null: [
-				'Ice'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Weak',
+			Ice: 'Null',
+			Seal: 'Weak'
 		},
 		game: 'smt5',
 		alignment: {
@@ -28816,19 +25681,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: null,
-			weak: [
-				'Elec'
-			],
-			resist: [
-				'Light',
-				'Dark'
-			],
-			null: [
-				'Ice'
-			],
-			drain: [],
-			repel: []
+			Ice: 'Null',
+			Elec: 'Weak',
+			Light: 'Resist',
+			Dark: 'Resist'
 		},
 		game: 'smt5',
 		alignment: {
@@ -28926,15 +25782,8 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: null,
-			weak: [],
-			resist: [
-				'Light',
-				'Dark'
-			],
-			null: [],
-			drain: [],
-			repel: []
+			Light: 'Resist',
+			Dark: 'Resist'
 		},
 		game: 'p4',
 		alignment: null,
@@ -29041,18 +25890,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: null,
-			weak: [
-				'Ice'
-			],
-			resist: [],
-			null: [
-				'Elec'
-			],
-			drain: [
-				'Fire'
-			],
-			repel: []
+			Fire: 'Drain',
+			Ice: 'Weak',
+			Elec: 'Null'
 		},
 		game: 'p4',
 		alignment: null,
@@ -29111,16 +25951,8 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: null,
-			weak: [
-				'Elec'
-			],
-			resist: [],
-			null: [
-				'Wind'
-			],
-			drain: [],
-			repel: []
+			Elec: 'Weak',
+			Wind: 'Null'
 		},
 		game: 'p4',
 		alignment: {
@@ -29187,16 +26019,8 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Ice'
-			],
-			resist: [],
-			null: [],
-			drain: [
-				'Fire'
-			],
-			repel: []
+			Fire: 'Drain',
+			Ice: 'Weak'
 		},
 		game: 'smt5',
 		alignment: {
@@ -29299,18 +26123,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: null,
-			weak: [
-				'Elec'
-			],
-			resist: [
-				'Fire'
-			],
-			null: [
-				'Wind'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Resist',
+			Elec: 'Weak',
+			Wind: 'Null'
 		},
 		game: 'p4',
 		alignment: null,
@@ -29417,18 +26232,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: null,
-			weak: [
-				'Fire'
-			],
-			resist: [
-				'Light'
-			],
-			null: [
-				'Ice'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Weak',
+			Ice: 'Null',
+			Light: 'Resist'
 		},
 		game: 'p4',
 		alignment: null,
@@ -29483,16 +26289,8 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: null,
-			weak: [
-				'Elec'
-			],
-			resist: [
-				'Wind'
-			],
-			null: [],
-			drain: [],
-			repel: []
+			Elec: 'Weak',
+			Wind: 'Resist'
 		},
 		game: 'p4',
 		alignment: {
@@ -29591,16 +26389,8 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: null,
-			weak: [
-				'Wind'
-			],
-			resist: [
-				'Elec'
-			],
-			null: [],
-			drain: [],
-			repel: []
+			Elec: 'Resist',
+			Wind: 'Weak'
 		},
 		game: 'p4',
 		alignment: null,
@@ -29663,16 +26453,8 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Fire'
-			],
-			resist: [
-				'Elec'
-			],
-			null: [],
-			drain: [],
-			repel: []
+			Fire: 'Weak',
+			Elec: 'Resist'
 		},
 		game: 'smt5',
 		alignment: {
@@ -29775,18 +26557,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: null,
-			weak: [
-				'Elec'
-			],
-			resist: [],
-			null: [
-				'Fire'
-			],
-			drain: [
-				'Wind'
-			],
-			repel: []
+			Fire: 'Null',
+			Elec: 'Weak',
+			Wind: 'Drain'
 		},
 		game: 'p4',
 		alignment: null,
@@ -29885,18 +26658,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: null,
-			weak: [
-				'Wind'
-			],
-			resist: [
-				'Phys'
-			],
-			null: [],
-			drain: [
-				'Elec'
-			],
-			repel: []
+			Phys: 'Resist',
+			Elec: 'Drain',
+			Wind: 'Weak'
 		},
 		game: 'p4',
 		alignment: null,
@@ -29955,21 +26719,11 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: null,
-			weak: [
-				'Dark'
-			],
-			resist: [
-				'Phys',
-				'Wind'
-			],
-			null: [
-				'Fire'
-			],
-			drain: [
-				'Light'
-			],
-			repel: []
+			Phys: 'Resist',
+			Fire: 'Null',
+			Wind: 'Resist',
+			Light: 'Drain',
+			Dark: 'Weak'
 		},
 		game: 'p5',
 		alignment: {
@@ -30044,20 +26798,11 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Charm: 'Null',
-				Confusion: 'Resist',
-				Poison: 'Resist'
-			},
-			weak: [
-				'Dark'
-			],
-			resist: [],
-			null: [
-				'Light'
-			],
-			repel: [],
-			drain: []
+			Light: 'Null',
+			Dark: 'Weak',
+			Charm: 'Null',
+			Confusion: 'Resist',
+			Poison: 'Resist'
 		},
 		game: 'smt5',
 		alignment: {
@@ -30119,14 +26864,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: null,
-			weak: [],
-			resist: [],
-			null: [],
-			drain: [],
-			repel: [
-				'Dark'
-			]
+			Dark: 'Repel'
 		},
 		game: 'p4',
 		alignment: {
@@ -30188,18 +26926,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: null,
-			weak: [
-				'Fire',
-				'Light'
-			],
-			resist: [],
-			null: [
-				'Wind',
-				'Dark'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Weak',
+			Wind: 'Null',
+			Light: 'Weak',
+			Dark: 'Null'
 		},
 		game: 'p4',
 		alignment: {
@@ -30258,18 +26988,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: null,
-			weak: [
-				'Light'
-			],
-			resist: [
-				'Phys'
-			],
-			null: [],
-			drain: [],
-			repel: [
-				'Dark'
-			]
+			Phys: 'Resist',
+			Light: 'Weak',
+			Dark: 'Repel'
 		},
 		game: 'p5',
 		alignment: null,
@@ -30328,18 +27049,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: null,
-			weak: [
-				'Light'
-			],
-			resist: [
-				'Phys'
-			],
-			null: [],
-			drain: [],
-			repel: [
-				'Dark'
-			]
+			Phys: 'Resist',
+			Light: 'Weak',
+			Dark: 'Repel'
 		},
 		game: 'p5',
 		alignment: null,
@@ -30403,19 +27115,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Force'
-			],
-			resist: [
-				'Fire',
-				'Light'
-			],
-			null: [],
-			drain: [
-				'Elec'
-			],
-			repel: []
+			Fire: 'Resist',
+			Elec: 'Drain',
+			Force: 'Weak',
+			Light: 'Resist'
 		},
 		game: 'smt5',
 		alignment: {
@@ -30482,18 +27185,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Weak'
-			},
-			weak: [
-				'Dark'
-			],
-			resist: [],
-			null: [
-				'Fire'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Null',
+			Dark: 'Weak',
+			Sleep: 'Weak'
 		},
 		game: 'smt5',
 		alignment: {
@@ -30560,18 +27254,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Ice',
-				'Dark'
-			],
-			resist: [],
-			null: [
-				'Fire',
-				'Light'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Null',
+			Ice: 'Weak',
+			Light: 'Null',
+			Dark: 'Weak'
 		},
 		game: 'smt5',
 		alignment: {
@@ -30638,16 +27324,8 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Force'
-			],
-			resist: [],
-			null: [
-				'Elec'
-			],
-			drain: [],
-			repel: []
+			Elec: 'Null',
+			Force: 'Weak'
 		},
 		game: 'smt5',
 		alignment: {
@@ -30702,16 +27380,8 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: null,
-			weak: [
-				'Ice'
-			],
-			resist: [
-				'Elec'
-			],
-			null: [],
-			drain: [],
-			repel: []
+			Ice: 'Weak',
+			Elec: 'Resist'
 		},
 		game: 'p4',
 		alignment: {
@@ -30778,21 +27448,11 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Confusion: 'Resist',
-				Mirage: 'Resist'
-			},
-			weak: [
-				'Fire'
-			],
-			resist: [
-				'Dark'
-			],
-			null: [
-				'Light'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Weak',
+			Light: 'Null',
+			Dark: 'Resist',
+			Confusion: 'Resist',
+			Mirage: 'Resist'
 		},
 		game: 'smt5',
 		alignment: {
@@ -30899,16 +27559,8 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: null,
-			weak: [
-				'Fire'
-			],
-			resist: [
-				'Ice'
-			],
-			null: [],
-			drain: [],
-			repel: []
+			Fire: 'Weak',
+			Ice: 'Resist'
 		},
 		game: 'p4',
 		alignment: null,
@@ -30967,16 +27619,8 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: null,
-			weak: [
-				'Elec'
-			],
-			resist: [
-				'Phys'
-			],
-			null: [],
-			drain: [],
-			repel: []
+			Phys: 'Resist',
+			Elec: 'Weak'
 		},
 		game: 'p4',
 		alignment: {
@@ -31083,16 +27727,8 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: null,
-			weak: [
-				'Wind'
-			],
-			resist: [],
-			null: [
-				'Fire'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Null',
+			Wind: 'Weak'
 		},
 		game: 'p3',
 		alignment: null,
@@ -31163,18 +27799,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Seal: 'Null',
-				Sleep: 'Null'
-			},
-			weak: [],
-			resist: [],
-			null: [
-				'Light',
-				'Dark'
-			],
-			repel: [],
-			drain: []
+			Light: 'Null',
+			Dark: 'Null',
+			Seal: 'Null',
+			Sleep: 'Null'
 		},
 		game: 'smt5',
 		alignment: {
@@ -31229,19 +27857,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Charm: 'Weak',
-				Poison: 'Resist'
-			},
-			weak: [
-				'Ice'
-			],
-			resist: [
-				'Elec'
-			],
-			null: [],
-			drain: [],
-			repel: []
+			Ice: 'Weak',
+			Elec: 'Resist',
+			Charm: 'Weak',
+			Poison: 'Resist'
 		},
 		game: 'smt5',
 		alignment: {
@@ -31303,19 +27922,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: null,
-			weak: [
-				'Nuke'
-			],
-			resist: [
-				'Phys',
-				'Light'
-			],
-			null: [],
-			drain: [],
-			repel: [
-				'Dark'
-			]
+			Phys: 'Resist',
+			Nuke: 'Weak',
+			Light: 'Resist',
+			Dark: 'Repel'
 		},
 		game: 'p5',
 		alignment: null,
@@ -31377,19 +27987,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: null,
-			weak: [
-				'Nuke'
-			],
-			resist: [
-				'Phys',
-				'Light'
-			],
-			null: [],
-			drain: [],
-			repel: [
-				'Dark'
-			]
+			Phys: 'Resist',
+			Nuke: 'Weak',
+			Light: 'Resist',
+			Dark: 'Repel'
 		},
 		game: 'p5',
 		alignment: null,
@@ -31449,16 +28050,8 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Light'
-			],
-			resist: [],
-			null: [
-				'Dark'
-			],
-			repel: [],
-			drain: []
+			Light: 'Weak',
+			Dark: 'Null'
 		},
 		game: 'smt5',
 		alignment: {
@@ -31513,16 +28106,8 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Force'
-			],
-			resist: [
-				'Dark'
-			],
-			null: [],
-			drain: [],
-			repel: []
+			Force: 'Weak',
+			Dark: 'Resist'
 		},
 		game: 'smt5',
 		alignment: {
@@ -31589,21 +28174,12 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Seal: 'Null',
-				Confusion: 'Weak',
-				Mirage: 'Weak'
-			},
-			weak: [
-				'Fire'
-			],
-			resist: [],
-			null: [
-				'Light',
-				'Dark'
-			],
-			repel: [],
-			drain: []
+			Fire: 'Weak',
+			Light: 'Null',
+			Dark: 'Null',
+			Seal: 'Null',
+			Confusion: 'Weak',
+			Mirage: 'Weak'
 		},
 		game: 'smt5',
 		alignment: {
@@ -31658,16 +28234,8 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: null,
-			weak: [
-				'Ice'
-			],
-			resist: [
-				'Fire'
-			],
-			null: [],
-			drain: [],
-			repel: []
+			Fire: 'Resist',
+			Ice: 'Weak'
 		},
 		game: 'p4',
 		alignment: {
@@ -31722,16 +28290,8 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: null,
-			weak: [
-				'Fire'
-			],
-			resist: [],
-			null: [],
-			drain: [
-				'Ice'
-			],
-			repel: []
+			Fire: 'Weak',
+			Ice: 'Drain'
 		},
 		game: 'p4',
 		alignment: {
@@ -31794,21 +28354,12 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Charm: 'Resist',
-				Confusion: 'Resist',
-				Poison: 'Weak',
-				Mirage: 'Weak'
-			},
-			weak: [
-				'Elec'
-			],
-			resist: [],
-			null: [
-				'Light'
-			],
-			repel: [],
-			drain: []
+			Elec: 'Weak',
+			Light: 'Null',
+			Charm: 'Resist',
+			Confusion: 'Resist',
+			Poison: 'Weak',
+			Mirage: 'Weak'
 		},
 		game: 'smt5',
 		alignment: {
@@ -31875,19 +28426,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Ice'
-			],
-			resist: [
-				'Elec'
-			],
-			null: [
-				'Fire',
-				'Light'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Null',
+			Ice: 'Weak',
+			Elec: 'Resist',
+			Light: 'Null'
 		},
 		game: 'smt5',
 		alignment: {
@@ -31989,14 +28531,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 				level: 80
 			}
 		],
-		resistances: {
-			ailments: null,
-			weak: [],
-			resist: [],
-			null: [],
-			drain: [],
-			repel: []
-		},
+		resistances: {},
 		game: 'p5',
 		alignment: null,
 		lore: 'Protagonist of Victor Hugo\'s "Les Misérables." Jailed after stealing bread for his starving nephews, he was consumed by bitterness, but a bishop\'s mercy inspired a change of heart. He strove to be a virtuous champion of the poor and downtrodden.',
@@ -32058,16 +28593,8 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Force'
-			],
-			resist: [],
-			null: [
-				'Light'
-			],
-			drain: [],
-			repel: []
+			Force: 'Weak',
+			Light: 'Null'
 		},
 		game: 'smt5',
 		alignment: {
@@ -32134,16 +28661,8 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: null,
-			weak: [
-				'Dark'
-			],
-			resist: [],
-			null: [
-				'Light'
-			],
-			drain: [],
-			repel: []
+			Light: 'Null',
+			Dark: 'Weak'
 		},
 		game: 'p5',
 		alignment: null,
@@ -32214,22 +28733,12 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Null',
-				Mirage: 'Null',
-				Poison: 'Null'
-			},
-			weak: [
-				'Fire'
-			],
-			resist: [
-				'Dark'
-			],
-			null: [],
-			drain: [],
-			repel: [
-				'Ice'
-			]
+			Fire: 'Weak',
+			Ice: 'Repel',
+			Dark: 'Resist',
+			Sleep: 'Null',
+			Mirage: 'Null',
+			Poison: 'Null'
 		},
 		game: 'smt5',
 		alignment: {
@@ -32288,17 +28797,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: null,
-			weak: [
-				'Fire'
-			],
-			resist: [
-				'Wind',
-				'Dark'
-			],
-			null: [],
-			drain: [],
-			repel: []
+			Fire: 'Weak',
+			Wind: 'Resist',
+			Dark: 'Resist'
 		},
 		game: 'p4',
 		alignment: {
@@ -32357,18 +28858,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: null,
-			weak: [
-				'Ice',
-				'Dark'
-			],
-			resist: [],
-			null: [
-				'Elec',
-				'Light'
-			],
-			drain: [],
-			repel: []
+			Ice: 'Weak',
+			Elec: 'Null',
+			Light: 'Null',
+			Dark: 'Weak'
 		},
 		game: 'p4',
 		alignment: {
@@ -32439,19 +28932,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Fire'
-			],
-			resist: [],
-			null: [
-				'Phys',
-				'Dark'
-			],
-			drain: [],
-			repel: [
-				'Light'
-			]
+			Phys: 'Null',
+			Fire: 'Weak',
+			Light: 'Repel',
+			Dark: 'Null'
 		},
 		game: 'smt5',
 		alignment: {
@@ -32510,20 +28994,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: null,
-			weak: [
-				'Wind'
-			],
-			resist: [
-				'Elec'
-			],
-			null: [
-				'Dark'
-			],
-			drain: [
-				'Light'
-			],
-			repel: []
+			Elec: 'Resist',
+			Wind: 'Weak',
+			Light: 'Drain',
+			Dark: 'Null'
 		},
 		game: 'p5',
 		alignment: {
@@ -32586,18 +29060,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Seal: 'Resist',
-				Poison: 'Null',
-				Sleep: 'Resist'
-			},
-			weak: [
-				'Ice'
-			],
-			resist: [],
-			null: [],
-			repel: [],
-			drain: []
+			Ice: 'Weak',
+			Seal: 'Resist',
+			Poison: 'Null',
+			Sleep: 'Resist'
 		},
 		game: 'smt5',
 		alignment: {
@@ -32664,19 +29130,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Force'
-			],
-			resist: [
-				'Ice',
-				'Light'
-			],
-			null: [
-				'Elec'
-			],
-			repel: [],
-			drain: []
+			Ice: 'Resist',
+			Elec: 'Null',
+			Force: 'Weak',
+			Light: 'Resist'
 		},
 		game: 'smt5',
 		alignment: {
@@ -32747,19 +29204,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Elec'
-			],
-			resist: [
-				'Light',
-				'Dark'
-			],
-			null: [],
-			drain: [],
-			repel: [
-				'Fire'
-			]
+			Fire: 'Repel',
+			Elec: 'Weak',
+			Light: 'Resist',
+			Dark: 'Resist'
 		},
 		game: 'smt5',
 		alignment: {
@@ -32882,18 +29330,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: null,
-			weak: [
-				'Wind'
-			],
-			resist: [
-				'Fire'
-			],
-			null: [
-				'Elec'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Resist',
+			Elec: 'Null',
+			Wind: 'Weak'
 		},
 		game: 'p5',
 		alignment: null,
@@ -32956,24 +29395,15 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Charm: 'Weak',
-				Seal: 'Weak',
-				Confusion: 'Weak',
-				Poison: 'Weak',
-				Sleep: 'Weak',
-				Mirage: 'Weak'
-			},
-			weak: [
-				'Dark'
-			],
-			resist: [],
-			null: [
-				'Ice',
-				'Light'
-			],
-			repel: [],
-			drain: []
+			Ice: 'Null',
+			Light: 'Null',
+			Dark: 'Weak',
+			Charm: 'Weak',
+			Seal: 'Weak',
+			Confusion: 'Weak',
+			Poison: 'Weak',
+			Sleep: 'Weak',
+			Mirage: 'Weak'
 		},
 		game: 'smt5',
 		alignment: {
@@ -33039,16 +29469,8 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Fire'
-			],
-			resist: [],
-			null: [
-				'Ice'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Weak',
+			Ice: 'Null'
 		},
 		game: 'smt5',
 		alignment: {
@@ -33114,18 +29536,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Seal: 'Weak'
-			},
-			weak: [
-				'Elec'
-			],
-			resist: [],
-			null: [
-				'Force'
-			],
-			drain: [],
-			repel: []
+			Elec: 'Weak',
+			Force: 'Null',
+			Seal: 'Weak'
 		},
 		game: 'smt5',
 		alignment: {
@@ -33192,21 +29605,12 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Weak',
-				Poison: 'Weak',
-				Confusion: 'Weak'
-			},
-			weak: [
-				'Elec'
-			],
-			resist: [],
-			null: [
-				'Fire',
-				'Ice'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Null',
+			Ice: 'Null',
+			Elec: 'Weak',
+			Sleep: 'Weak',
+			Poison: 'Weak',
+			Confusion: 'Weak'
 		},
 		game: 'smt5',
 		alignment: {
@@ -33301,17 +29705,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: null,
-			weak: [],
-			resist: [],
-			null: [
-				'Fire'
-			],
-			drain: [],
-			repel: [
-				'Light',
-				'Dark'
-			]
+			Fire: 'Null',
+			Light: 'Repel',
+			Dark: 'Repel'
 		},
 		game: 'p4',
 		alignment: null,
@@ -33406,17 +29802,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: null,
-			weak: [],
-			resist: [
-				'Fire'
-			],
-			null: [
-				'Light',
-				'Dark'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Resist',
+			Light: 'Null',
+			Dark: 'Null'
 		},
 		game: 'p4',
 		alignment: null,
@@ -33483,20 +29871,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Charm: 'Weak'
-			},
-			weak: [
-				'Dark'
-			],
-			resist: [
-				'Force'
-			],
-			null: [
-				'Light'
-			],
-			drain: [],
-			repel: []
+			Force: 'Resist',
+			Light: 'Null',
+			Dark: 'Weak',
+			Charm: 'Weak'
 		},
 		game: 'smt5',
 		alignment: {
@@ -33559,18 +29937,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: null,
-			weak: [],
-			resist: [],
-			null: [
-				'Light'
-			],
-			drain: [
-				'Fire'
-			],
-			repel: [
-				'Wind'
-			]
+			Fire: 'Drain',
+			Wind: 'Repel',
+			Light: 'Null'
 		},
 		game: 'p4',
 		alignment: {
@@ -33645,20 +30014,11 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Seal: 'Null',
-				Sleep: 'Resist',
-				Mirage: 'Resist'
-			},
-			weak: [
-				'Light'
-			],
-			resist: [],
-			null: [
-				'Dark'
-			],
-			repel: [],
-			drain: []
+			Light: 'Weak',
+			Dark: 'Null',
+			Seal: 'Null',
+			Sleep: 'Resist',
+			Mirage: 'Resist'
 		},
 		game: 'smt5',
 		alignment: {
@@ -33713,16 +30073,8 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: null,
-			weak: [
-				'Fire'
-			],
-			resist: [
-				'Ice'
-			],
-			null: [],
-			drain: [],
-			repel: []
+			Fire: 'Weak',
+			Ice: 'Resist'
 		},
 		game: 'p4',
 		alignment: {
@@ -33785,20 +30137,11 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Poison: 'Weak',
-				Sleep: 'Weak',
-				Mirage: 'Null'
-			},
-			weak: [
-				'Dark'
-			],
-			resist: [
-				'Phys'
-			],
-			null: [],
-			repel: [],
-			drain: []
+			Phys: 'Resist',
+			Dark: 'Weak',
+			Poison: 'Weak',
+			Sleep: 'Weak',
+			Mirage: 'Null'
 		},
 		game: 'smt5',
 		alignment: {
@@ -33869,18 +30212,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Seal: 'Weak'
-			},
-			weak: [
-				'Fire'
-			],
-			resist: [],
-			null: [
-				'Elec'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Weak',
+			Elec: 'Null',
+			Seal: 'Weak'
 		},
 		game: 'smt5',
 		alignment: {
@@ -33947,23 +30281,14 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Null',
-				Mirage: 'Null',
-				Confusion: 'Null',
-				Charm: 'Null'
-			},
-			weak: [
-				'Elec'
-			],
-			resist: [
-				'Fire',
-				'Light',
-				'Dark'
-			],
-			null: [],
-			drain: [],
-			repel: []
+			Fire: 'Resist',
+			Elec: 'Weak',
+			Light: 'Resist',
+			Dark: 'Resist',
+			Sleep: 'Null',
+			Mirage: 'Null',
+			Confusion: 'Null',
+			Charm: 'Null'
 		},
 		game: 'smt5',
 		alignment: {
@@ -34034,20 +30359,11 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Seal: 'Resist'
-			},
-			weak: [
-				'Force'
-			],
-			resist: [],
-			null: [
-				'Elec',
-				'Light',
-				'Dark'
-			],
-			drain: [],
-			repel: []
+			Elec: 'Null',
+			Force: 'Weak',
+			Light: 'Null',
+			Dark: 'Null',
+			Seal: 'Resist'
 		},
 		game: 'smt5',
 		alignment: {
@@ -34106,19 +30422,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Mirage: 'Resist',
-				Poison: 'Resist'
-			},
-			weak: [
-				'Fire'
-			],
-			resist: [
-				'Dark'
-			],
-			null: [],
-			drain: [],
-			repel: []
+			Fire: 'Weak',
+			Dark: 'Resist',
+			Mirage: 'Resist',
+			Poison: 'Resist'
 		},
 		game: 'smt5',
 		alignment: {
@@ -34177,18 +30484,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {
-				Poison: 'Null'
-			},
-			weak: [
-				'Dark'
-			],
-			resist: [
-				'Ice'
-			],
-			null: [],
-			repel: [],
-			drain: []
+			Ice: 'Resist',
+			Dark: 'Weak',
+			Poison: 'Null'
 		},
 		game: 'smt5',
 		alignment: {
@@ -34258,16 +30556,8 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Ice'
-			],
-			resist: [],
-			null: [
-				'Fire'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Null',
+			Ice: 'Weak'
 		},
 		game: 'smt5',
 		alignment: {
@@ -34394,16 +30684,8 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: null,
-			weak: [
-				'Elec'
-			],
-			resist: [
-				'Wind'
-			],
-			null: [],
-			drain: [],
-			repel: []
+			Elec: 'Weak',
+			Wind: 'Resist'
 		},
 		game: 'p5',
 		alignment: null,
@@ -34474,16 +30756,8 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			}
 		],
 		resistances: {
-			ailments: {},
-			weak: [
-				'Force'
-			],
-			resist: [],
-			null: [
-				'Light'
-			],
-			drain: [],
-			repel: []
+			Force: 'Weak',
+			Light: 'Null'
 		},
 		game: 'smt5',
 		alignment: {

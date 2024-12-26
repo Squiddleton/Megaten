@@ -21,8 +21,10 @@ export type AilDefensiveAilment = OneOrAllAilments | 'Confuse/Fear/Rage/Despair'
 
 /** Resistances to ailments */
 export type AilResistance = 'Resist' | 'Null';
-/** Resistances to damaging skills */
-export type Resistance = AilResistance | 'Drain' | 'Repel';
+/* Resistances to damaging affinities */
+export type Resistance = 'Weak' | AilResistance | 'Repel' | 'Drain';
+/* Resistances created by DefensiveSkill instances */
+export type DefensiveSKillResistance = Exclude<Resistance, 'Weak'>;
 
 /** Ranges for skills targeting allies */
 export type AllyRange = 'Self' | 'Ally' | 'Party';
@@ -118,20 +120,7 @@ export interface DemonAffinities<PersonaBased extends boolean = boolean> {
 export type DemonOrigin = 'Aboriginal' | 'Abrahamic' | 'African' | 'Arabian' | 'ATLUS Original' | 'Balinese' | 'Buddhist' | 'Buryat' | 'Canaanite' | 'Celtic' | 'Chinese' | 'Egyptian' | 'European' | 'Filipino' | 'Greco-Roman' | 'Haitian' | 'Hindu' | 'Japanese' | 'Lithuanian' | 'Lovecraftian' | 'Historical' | 'Mesopotamian' | 'Modern Fiction' | 'Norse' | 'North American' | 'Slavic' | 'South American' | 'Universal' | 'Zoroastrian';
 
 /** A demon's ailment and affinity resistances */
-export interface DemonResistances<PersonaBased extends boolean = boolean> {
-	/** Ailments that the demon is weak to, resists, or nullifies */
-	ailments: If<PersonaBased, null, Partial<Record<AilmentName, AilResistance | 'Weak'>> | null>;
-	/** Affinities that the demon is weak to */
-	weak: DamagingAffinity[];
-	/** Affinities that the demon resists */
-	resist: DamagingAffinity[];
-	/** Affinities that the demon nullifies */
-	null: DamagingAffinity[];
-	/** Affinities that the demon drains */
-	drain: DamagingAffinity[];
-	/** Affinities that the demon repels */
-	repel: DamagingAffinity[];
-}
+export type DemonResistances = Partial<Record<DamagingAffinity | AilmentName, Resistance>>;
 
 /** A skill that a demon learns via leveling up */
 export interface DemonSkill {

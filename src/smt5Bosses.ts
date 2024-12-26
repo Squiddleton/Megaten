@@ -37,25 +37,15 @@ export const smt5Bosses: SMT5BossData[] = [
 			'Retaliate'
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Resist',
-				Mirage: 'Resist',
-				Poison: 'Resist',
-				Confusion: 'Resist',
-				Charm: 'Resist',
-				Seal: 'Weak'
-			},
-			weak: [
-				'Elec'
-			],
-			resist: [
-				'Dark'
-			],
-			null: [
-				'Fire'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Null',
+			Elec: 'Weak',
+			Dark: 'Resist',
+			Sleep: 'Resist',
+			Mirage: 'Resist',
+			Poison: 'Resist',
+			Confusion: 'Resist',
+			Charm: 'Resist',
+			Seal: 'Weak'
 		},
 		alignment: {
 			major: 'Dark',
@@ -102,26 +92,16 @@ export const smt5Bosses: SMT5BossData[] = [
 			'Mighty Cleave'
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Resist',
-				Mirage: 'Resist',
-				Poison: 'Resist',
-				Confusion: 'Resist',
-				Charm: 'Resist',
-				Seal: 'Resist'
-			},
-			weak: [
-				'Dark'
-			],
-			resist: [
-				'Elec',
-				'Force'
-			],
-			null: [],
-			drain: [],
-			repel: [
-				'Light'
-			]
+			Elec: 'Resist',
+			Force: 'Resist',
+			Light: 'Repel',
+			Dark: 'Weak',
+			Sleep: 'Resist',
+			Mirage: 'Resist',
+			Poison: 'Resist',
+			Confusion: 'Resist',
+			Charm: 'Resist',
+			Seal: 'Resist'
 		},
 		alignment: {
 			major: 'Light',
@@ -167,25 +147,15 @@ export const smt5Bosses: SMT5BossData[] = [
 			'Impetus'
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Null',
-				Mirage: 'Resist',
-				Poison: 'Resist',
-				Confusion: 'Null',
-				Charm: 'Null',
-				Seal: 'Null'
-			},
-			weak: [
-				'Ice'
-			],
-			resist: [],
-			null: [
-				'Dark'
-			],
-			drain: [
-				'Fire'
-			],
-			repel: []
+			Fire: 'Drain',
+			Ice: 'Weak',
+			Dark: 'Null',
+			Sleep: 'Null',
+			Mirage: 'Resist',
+			Poison: 'Resist',
+			Confusion: 'Null',
+			Charm: 'Null',
+			Seal: 'Null'
 		},
 		alignment: {
 			major: 'Light',
@@ -230,25 +200,15 @@ export const smt5Bosses: SMT5BossData[] = [
 			'Deathbound'
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Resist',
-				Mirage: 'Resist',
-				Poison: 'Resist',
-				Confusion: 'Resist',
-				Charm: 'Resist',
-				Seal: 'Resist'
-			},
-			weak: [
-				'Ice'
-			],
-			resist: [
-				'Fire'
-			],
-			null: [
-				'Dark'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Resist',
+			Ice: 'Weak',
+			Dark: 'Null',
+			Sleep: 'Resist',
+			Mirage: 'Resist',
+			Poison: 'Resist',
+			Confusion: 'Resist',
+			Charm: 'Resist',
+			Seal: 'Resist'
 		},
 		alignment: {
 			major: 'Neutral',
@@ -290,22 +250,14 @@ export const smt5Bosses: SMT5BossData[] = [
 			'Concentrate'
 		],
 		resistances: {
-			ailments: {
-				Mirage: 'Resist',
-				Confusion: 'Resist',
-				Charm: 'Resist',
-				Sleep: 'Null',
-				Poison: 'Null',
-				Seal: 'Null'
-			},
-			weak: [],
-			resist: [
-				'Light',
-				'Dark'
-			],
-			null: [],
-			drain: [],
-			repel: []
+			Light: 'Resist',
+			Dark: 'Resist',
+			Mirage: 'Resist',
+			Confusion: 'Resist',
+			Charm: 'Resist',
+			Sleep: 'Null',
+			Poison: 'Null',
+			Seal: 'Null'
 		},
 		alignment: {
 			major: 'Light',
@@ -353,29 +305,18 @@ export const smt5Bosses: SMT5BossData[] = [
 			'Diarama'
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Resist',
-				Mirage: 'Resist',
-				Poison: 'Resist',
-				Confusion: 'Resist',
-				Charm: 'Resist',
-				Seal: 'Resist'
-			},
-			weak: [
-				'Fire',
-				'Ice'
-			],
-			resist: [
-				'Light'
-			],
-			null: [
-				'Force',
-				'Dark'
-			],
-			drain: [],
-			repel: [
-				'Elec'
-			]
+			Fire: 'Weak',
+			Ice: 'Weak',
+			Elec: 'Repel',
+			Force: 'Null',
+			Light: 'Resist',
+			Dark: 'Null',
+			Sleep: 'Resist',
+			Mirage: 'Resist',
+			Poison: 'Resist',
+			Confusion: 'Resist',
+			Charm: 'Resist',
+			Seal: 'Resist'
 		},
 		alignment: {
 			major: 'Light',
@@ -424,27 +365,17 @@ export const smt5Bosses: SMT5BossData[] = [
 			'Makarakarn'
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Resist',
-				Mirage: 'Resist',
-				Poison: 'Resist',
-				Confusion: 'Resist',
-				Charm: 'Resist',
-				Seal: 'Resist'
-			},
-			weak: [
-				'Ice'
-			],
-			resist: [
-				'Phys',
-				'Light',
-				'Dark'
-			],
-			null: [],
-			drain: [
-				'Fire'
-			],
-			repel: []
+			Phys: 'Resist',
+			Fire: 'Drain',
+			Ice: 'Weak',
+			Light: 'Resist',
+			Dark: 'Resist',
+			Sleep: 'Resist',
+			Mirage: 'Resist',
+			Poison: 'Resist',
+			Confusion: 'Resist',
+			Charm: 'Resist',
+			Seal: 'Resist'
 		},
 		alignment: {
 			major: 'Dark',
@@ -489,26 +420,16 @@ export const smt5Bosses: SMT5BossData[] = [
 			'Matarunda'
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Resist',
-				Mirage: 'Resist',
-				Poison: 'Resist',
-				Confusion: 'Resist',
-				Charm: 'Resist',
-				Seal: 'Resist'
-			},
-			weak: [
-				'Fire',
-				'Elec'
-			],
-			resist: [],
-			null: [
-				'Light'
-			],
-			drain: [
-				'Ice'
-			],
-			repel: []
+			Fire: 'Weak',
+			Ice: 'Drain',
+			Elec: 'Weak',
+			Light: 'Null',
+			Sleep: 'Resist',
+			Mirage: 'Resist',
+			Poison: 'Resist',
+			Confusion: 'Resist',
+			Charm: 'Resist',
+			Seal: 'Resist'
 		},
 		alignment: {
 			major: 'Light',
@@ -551,19 +472,10 @@ export const smt5Bosses: SMT5BossData[] = [
 			'Sukukaja'
 		],
 		resistances: {
-			ailments: {
-				Charm: 'Resist'
-			},
-			weak: [
-				'Elec',
-				'Light'
-			],
-			resist: [],
-			null: [
-				'Ice'
-			],
-			drain: [],
-			repel: []
+			Ice: 'Null',
+			Elec: 'Weak',
+			Light: 'Weak',
+			Charm: 'Resist'
 		},
 		alignment: {
 			major: 'Neutral',
@@ -602,20 +514,11 @@ export const smt5Bosses: SMT5BossData[] = [
 			'Bufu'
 		],
 		resistances: {
-			ailments: {
-				Confusion: 'Weak',
-				Sleep: 'Resist',
-				Charm: 'Resist'
-			},
-			weak: [
-				'Fire'
-			],
-			resist: [
-				'Ice'
-			],
-			null: [],
-			drain: [],
-			repel: []
+			Fire: 'Weak',
+			Ice: 'Resist',
+			Confusion: 'Weak',
+			Sleep: 'Resist',
+			Charm: 'Resist'
 		},
 		alignment: {
 			major: 'Neutral',
@@ -660,29 +563,19 @@ export const smt5Bosses: SMT5BossData[] = [
 			'Donum Magici'
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Resist',
-				Mirage: 'Resist',
-				Poison: 'Resist',
-				Confusion: 'Resist',
-				Charm: 'Resist',
-				Seal: 'Resist'
-			},
-			weak: [
-				'Fire',
-				'Ice',
-				'Elec',
-				'Force'
-			],
-			resist: [
-				'Light',
-				'Dark'
-			],
-			null: [
-				'Phys'
-			],
-			drain: [],
-			repel: []
+			Phys: 'Null',
+			Fire: 'Weak',
+			Ice: 'Weak',
+			Elec: 'Weak',
+			Force: 'Weak',
+			Light: 'Resist',
+			Dark: 'Resist',
+			Sleep: 'Resist',
+			Mirage: 'Resist',
+			Poison: 'Resist',
+			Confusion: 'Resist',
+			Charm: 'Resist',
+			Seal: 'Resist'
 		},
 		alignment: {
 			major: 'Light',
@@ -728,26 +621,16 @@ export const smt5Bosses: SMT5BossData[] = [
 			'Mabufudyne'
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Resist',
-				Mirage: 'Resist',
-				Poison: 'Resist',
-				Confusion: 'Resist',
-				Charm: 'Resist',
-				Seal: 'Resist'
-			},
-			weak: [
-				'Elec'
-			],
-			resist: [
-				'Force',
-				'Dark'
-			],
-			null: [],
-			drain: [],
-			repel: [
-				'Ice'
-			]
+			Ice: 'Repel',
+			Elec: 'Weak',
+			Force: 'Resist',
+			Dark: 'Resist',
+			Sleep: 'Resist',
+			Mirage: 'Resist',
+			Poison: 'Resist',
+			Confusion: 'Resist',
+			Charm: 'Resist',
+			Seal: 'Resist'
 		},
 		alignment: {
 			major: 'Dark',
@@ -794,27 +677,17 @@ export const smt5Bosses: SMT5BossData[] = [
 			'Tarukaja'
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Resist',
-				Mirage: 'Resist',
-				Poison: 'Resist',
-				Confusion: 'Resist',
-				Charm: 'Resist',
-				Seal: 'Resist'
-			},
-			weak: [
-				'Fire'
-			],
-			resist: [
-				'Light',
-				'Dark'
-			],
-			null: [
-				'Ice',
-				'Elec'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Weak',
+			Ice: 'Null',
+			Elec: 'Null',
+			Light: 'Resist',
+			Dark: 'Resist',
+			Sleep: 'Resist',
+			Mirage: 'Resist',
+			Poison: 'Resist',
+			Confusion: 'Resist',
+			Charm: 'Resist',
+			Seal: 'Resist'
 		},
 		alignment: {
 			major: 'Light',
@@ -858,27 +731,16 @@ export const smt5Bosses: SMT5BossData[] = [
 			'Megidola'
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Resist',
-				Mirage: 'Resist',
-				Poison: 'Resist',
-				Confusion: 'Resist',
-				Charm: 'Resist',
-				Seal: 'Resist'
-			},
-			weak: [
-				'Ice'
-			],
-			resist: [
-				'Dark'
-			],
-			null: [
-				'Light'
-			],
-			drain: [],
-			repel: [
-				'Fire'
-			]
+			Fire: 'Repel',
+			Ice: 'Weak',
+			Light: 'Null',
+			Dark: 'Resist',
+			Sleep: 'Resist',
+			Mirage: 'Resist',
+			Poison: 'Resist',
+			Confusion: 'Resist',
+			Charm: 'Resist',
+			Seal: 'Resist'
 		},
 		alignment: {
 			major: 'Light',
@@ -925,28 +787,17 @@ export const smt5Bosses: SMT5BossData[] = [
 			'Sukukaja'
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Resist',
-				Mirage: 'Resist',
-				Poison: 'Resist',
-				Confusion: 'Resist',
-				Charm: 'Resist',
-				Seal: 'Resist'
-			},
-			weak: [
-				'Ice'
-			],
-			resist: [
-				'Fire',
-				'Force'
-			],
-			null: [
-				'Light'
-			],
-			drain: [],
-			repel: [
-				'Elec'
-			]
+			Fire: 'Resist',
+			Ice: 'Weak',
+			Elec: 'Repel',
+			Force: 'Resist',
+			Light: 'Null',
+			Sleep: 'Resist',
+			Mirage: 'Resist',
+			Poison: 'Resist',
+			Confusion: 'Resist',
+			Charm: 'Resist',
+			Seal: 'Resist'
 		},
 		alignment: {
 			major: 'Light',
@@ -990,23 +841,14 @@ export const smt5Bosses: SMT5BossData[] = [
 			'Frenzied Chomp'
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Resist',
-				Mirage: 'Resist',
-				Poison: 'Resist',
-				Confusion: 'Weak',
-				Charm: 'Resist',
-				Seal: 'Resist'
-			},
-			weak: [
-				'Force'
-			],
-			resist: [],
-			null: [
-				'Elec'
-			],
-			drain: [],
-			repel: []
+			Elec: 'Null',
+			Force: 'Weak',
+			Sleep: 'Resist',
+			Mirage: 'Resist',
+			Poison: 'Resist',
+			Confusion: 'Weak',
+			Charm: 'Resist',
+			Seal: 'Resist'
 		},
 		alignment: {
 			major: 'Light',
@@ -1052,25 +894,16 @@ export const smt5Bosses: SMT5BossData[] = [
 			'Mamudobarion'
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Resist',
-				Mirage: 'Resist',
-				Poison: 'Resist',
-				Confusion: 'Resist',
-				Charm: 'Resist',
-				Seal: 'Resist'
-			},
-			weak: [
-				'Ice'
-			],
-			resist: [],
-			null: [
-				'Fire',
-				'Force',
-				'Dark'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Null',
+			Ice: 'Weak',
+			Force: 'Null',
+			Dark: 'Null',
+			Sleep: 'Resist',
+			Mirage: 'Resist',
+			Poison: 'Resist',
+			Confusion: 'Resist',
+			Charm: 'Resist',
+			Seal: 'Resist'
 		},
 		alignment: {
 			major: 'Dark',
@@ -1117,28 +950,18 @@ export const smt5Bosses: SMT5BossData[] = [
 			'Marin Karin'
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Resist',
-				Mirage: 'Resist',
-				Poison: 'Resist',
-				Confusion: 'Resist',
-				Charm: 'Resist',
-				Seal: 'Resist'
-			},
-			weak: [
-				'Fire',
-				'Light'
-			],
-			resist: [
-				'Phys',
-				'Elec'
-			],
-			null: [
-				'Ice',
-				'Dark'
-			],
-			drain: [],
-			repel: []
+			Phys: 'Resist',
+			Fire: 'Weak',
+			Ice: 'Null',
+			Elec: 'Resist',
+			Light: 'Weak',
+			Dark: 'Null',
+			Sleep: 'Resist',
+			Mirage: 'Resist',
+			Poison: 'Resist',
+			Confusion: 'Resist',
+			Charm: 'Resist',
+			Seal: 'Resist'
 		},
 		alignment: {
 			major: 'Dark',
@@ -1184,24 +1007,15 @@ export const smt5Bosses: SMT5BossData[] = [
 			'Maragidyne'
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Resist',
-				Mirage: 'Resist',
-				Poison: 'Resist',
-				Confusion: 'Resist',
-				Charm: 'Resist',
-				Seal: 'Resist'
-			},
-			weak: [
-				'Ice'
-			],
-			resist: [],
-			null: [
-				'Fire',
-				'Light'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Null',
+			Ice: 'Weak',
+			Light: 'Null',
+			Sleep: 'Resist',
+			Mirage: 'Resist',
+			Poison: 'Resist',
+			Confusion: 'Resist',
+			Charm: 'Resist',
+			Seal: 'Resist'
 		},
 		alignment: {
 			major: 'Light',
@@ -1247,24 +1061,15 @@ export const smt5Bosses: SMT5BossData[] = [
 			'Megidolaon'
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Resist',
-				Mirage: 'Resist',
-				Poison: 'Resist',
-				Confusion: 'Resist',
-				Charm: 'Resist',
-				Seal: 'Resist'
-			},
-			weak: [
-				'Ice'
-			],
-			resist: [],
-			null: [
-				'Fire',
-				'Light'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Null',
+			Ice: 'Weak',
+			Light: 'Null',
+			Sleep: 'Resist',
+			Mirage: 'Resist',
+			Poison: 'Resist',
+			Confusion: 'Resist',
+			Charm: 'Resist',
+			Seal: 'Resist'
 		},
 		alignment: {
 			major: 'Light',
@@ -1307,27 +1112,16 @@ export const smt5Bosses: SMT5BossData[] = [
 			'Black Dracostrike'
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Resist',
-				Mirage: 'Resist',
-				Poison: 'Resist',
-				Confusion: 'Resist',
-				Charm: 'Resist',
-				Seal: 'Resist'
-			},
-			weak: [
-				'Light'
-			],
-			resist: [
-				'Fire'
-			],
-			null: [
-				'Ice'
-			],
-			drain: [],
-			repel: [
-				'Dark'
-			]
+			Fire: 'Resist',
+			Ice: 'Null',
+			Light: 'Weak',
+			Dark: 'Repel',
+			Sleep: 'Resist',
+			Mirage: 'Resist',
+			Poison: 'Resist',
+			Confusion: 'Resist',
+			Charm: 'Resist',
+			Seal: 'Resist'
 		},
 		alignment: {
 			major: 'Neutral',
@@ -1372,26 +1166,16 @@ export const smt5Bosses: SMT5BossData[] = [
 			'Call Souls'
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Resist',
-				Mirage: 'Resist',
-				Poison: 'Resist',
-				Confusion: 'Null',
-				Charm: 'Resist',
-				Seal: 'Resist'
-			},
-			weak: [
-				'Force'
-			],
-			resist: [
-				'Light',
-				'Dark'
-			],
-			null: [],
-			drain: [],
-			repel: [
-				'Ice'
-			]
+			Ice: 'Repel',
+			Force: 'Weak',
+			Light: 'Resist',
+			Dark: 'Resist',
+			Sleep: 'Resist',
+			Mirage: 'Resist',
+			Poison: 'Resist',
+			Confusion: 'Null',
+			Charm: 'Resist',
+			Seal: 'Resist'
 		},
 		alignment: {
 			major: 'Unknown',
@@ -1432,23 +1216,14 @@ export const smt5Bosses: SMT5BossData[] = [
 		},
 		skills: [],
 		resistances: {
-			ailments: {
-				Sleep: 'Null',
-				Mirage: 'Null',
-				Poison: 'Null',
-				Confusion: 'Null',
-				Charm: 'Null',
-				Seal: 'Null'
-			},
-			weak: [
-				'Ice'
-			],
-			resist: [],
-			null: [
-				'Fire'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Null',
+			Ice: 'Weak',
+			Sleep: 'Null',
+			Mirage: 'Null',
+			Poison: 'Null',
+			Confusion: 'Null',
+			Charm: 'Null',
+			Seal: 'Null'
 		},
 		alignment: {
 			major: 'Neutral',
@@ -1489,25 +1264,15 @@ export const smt5Bosses: SMT5BossData[] = [
 			'Diarama'
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Resist',
-				Mirage: 'Resist',
-				Poison: 'Resist',
-				Confusion: 'Resist',
-				Charm: 'Resist',
-				Seal: 'Resist'
-			},
-			weak: [
-				'Ice'
-			],
-			resist: [
-				'Fire'
-			],
-			null: [
-				'Light'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Resist',
+			Ice: 'Weak',
+			Light: 'Null',
+			Sleep: 'Resist',
+			Mirage: 'Resist',
+			Poison: 'Resist',
+			Confusion: 'Resist',
+			Charm: 'Resist',
+			Seal: 'Resist'
 		},
 		alignment: {
 			major: 'Light',
@@ -1555,23 +1320,14 @@ export const smt5Bosses: SMT5BossData[] = [
 			'Mamudoon'
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Resist',
-				Mirage: 'Resist',
-				Poison: 'Resist',
-				Confusion: 'Resist',
-				Charm: 'Resist',
-				Seal: 'Resist'
-			},
-			weak: [
-				'Light'
-			],
-			resist: [],
-			null: [
-				'Dark'
-			],
-			drain: [],
-			repel: []
+			Light: 'Weak',
+			Dark: 'Null',
+			Sleep: 'Resist',
+			Mirage: 'Resist',
+			Poison: 'Resist',
+			Confusion: 'Resist',
+			Charm: 'Resist',
+			Seal: 'Resist'
 		},
 		alignment: {
 			major: 'Light',
@@ -1617,25 +1373,15 @@ export const smt5Bosses: SMT5BossData[] = [
 			'Ziodyne'
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Resist',
-				Mirage: 'Resist',
-				Poison: 'Weak',
-				Confusion: 'Resist',
-				Charm: 'Resist',
-				Seal: 'Resist'
-			},
-			weak: [
-				'Force'
-			],
-			resist: [
-				'Fire'
-			],
-			null: [
-				'Elec'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Resist',
+			Elec: 'Null',
+			Force: 'Weak',
+			Sleep: 'Resist',
+			Mirage: 'Resist',
+			Poison: 'Weak',
+			Confusion: 'Resist',
+			Charm: 'Resist',
+			Seal: 'Resist'
 		},
 		alignment: {
 			major: 'Light',
@@ -1681,28 +1427,18 @@ export const smt5Bosses: SMT5BossData[] = [
 			'Mabufubarion'
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Resist',
-				Mirage: 'Resist',
-				Poison: 'Resist',
-				Confusion: 'Resist',
-				Charm: 'Resist',
-				Seal: 'Resist'
-			},
-			weak: [
-				'Dark'
-			],
-			resist: [
-				'Fire',
-				'Ice',
-				'Elec',
-				'Wind'
-			],
-			null: [],
-			drain: [
-				'Light'
-			],
-			repel: []
+			Fire: 'Resist',
+			Ice: 'Resist',
+			Elec: 'Resist',
+			Wind: 'Resist',
+			Light: 'Drain',
+			Dark: 'Weak',
+			Sleep: 'Resist',
+			Mirage: 'Resist',
+			Poison: 'Resist',
+			Confusion: 'Resist',
+			Charm: 'Resist',
+			Seal: 'Resist'
 		},
 		alignment: {
 			major: 'Neutral',
@@ -1739,23 +1475,14 @@ export const smt5Bosses: SMT5BossData[] = [
 		},
 		skills: [],
 		resistances: {
-			ailments: {
-				Sleep: 'Null',
-				Mirage: 'Null',
-				Poison: 'Null',
-				Confusion: 'Null',
-				Charm: 'Null',
-				Seal: 'Null'
-			},
-			weak: [
-				'Fire'
-			],
-			resist: [],
-			null: [
-				'Ice'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Weak',
+			Ice: 'Null',
+			Sleep: 'Null',
+			Mirage: 'Null',
+			Poison: 'Null',
+			Confusion: 'Null',
+			Charm: 'Null',
+			Seal: 'Null'
 		},
 		alignment: {
 			major: 'Neutral',
@@ -1797,24 +1524,15 @@ export const smt5Bosses: SMT5BossData[] = [
 			'Mahama'
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Resist',
-				Mirage: 'Resist',
-				Poison: 'Resist',
-				Confusion: 'Resist',
-				Charm: 'Resist',
-				Seal: 'Resist'
-			},
-			weak: [
-				'Fire'
-			],
-			resist: [],
-			null: [
-				'Light',
-				'Dark'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Weak',
+			Light: 'Null',
+			Dark: 'Null',
+			Sleep: 'Resist',
+			Mirage: 'Resist',
+			Poison: 'Resist',
+			Confusion: 'Resist',
+			Charm: 'Resist',
+			Seal: 'Resist'
 		},
 		alignment: {
 			major: 'Unknown',
@@ -1863,28 +1581,18 @@ export const smt5Bosses: SMT5BossData[] = [
 			'Dragon Eye'
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Resist',
-				Mirage: 'Resist',
-				Poison: 'Resist',
-				Confusion: 'Resist',
-				Charm: 'Resist',
-				Seal: 'Resist'
-			},
-			weak: [
-				'Dark'
-			],
-			resist: [
-				'Fire',
-				'Ice',
-				'Elec',
-				'Force'
-			],
-			null: [
-				'Light'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Resist',
+			Ice: 'Resist',
+			Elec: 'Resist',
+			Force: 'Resist',
+			Light: 'Null',
+			Dark: 'Weak',
+			Sleep: 'Resist',
+			Mirage: 'Resist',
+			Poison: 'Resist',
+			Confusion: 'Resist',
+			Charm: 'Resist',
+			Seal: 'Resist'
 		},
 		alignment: {
 			major: 'Light',
@@ -1932,27 +1640,19 @@ export const smt5Bosses: SMT5BossData[] = [
 			'Mediarahan'
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Resist',
-				Mirage: 'Resist',
-				Poison: 'Resist',
-				Confusion: 'Resist',
-				Charm: 'Resist',
-				Seal: 'Resist'
-			},
-			weak: [],
-			resist: [
-				'Phys',
-				'Fire',
-				'Ice',
-				'Elec',
-				'Force',
-				'Light',
-				'Dark'
-			],
-			null: [],
-			drain: [],
-			repel: []
+			Phys: 'Resist',
+			Fire: 'Resist',
+			Ice: 'Resist',
+			Elec: 'Resist',
+			Force: 'Resist',
+			Light: 'Resist',
+			Dark: 'Resist',
+			Sleep: 'Resist',
+			Mirage: 'Resist',
+			Poison: 'Resist',
+			Confusion: 'Resist',
+			Charm: 'Resist',
+			Seal: 'Resist'
 		},
 		alignment: {
 			major: 'Neutral',
@@ -1994,21 +1694,13 @@ export const smt5Bosses: SMT5BossData[] = [
 			'Masukukaja'
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Null',
-				Mirage: 'Null',
-				Poison: 'Resist',
-				Confusion: 'Null',
-				Charm: 'Null',
-				Seal: 'Resist'
-			},
-			weak: [
-				'Light'
-			],
-			resist: [],
-			null: [],
-			drain: [],
-			repel: []
+			Light: 'Weak',
+			Sleep: 'Null',
+			Mirage: 'Null',
+			Poison: 'Resist',
+			Confusion: 'Null',
+			Charm: 'Null',
+			Seal: 'Resist'
 		},
 		alignment: {
 			major: 'Light',
@@ -2048,21 +1740,13 @@ export const smt5Bosses: SMT5BossData[] = [
 			'Luster Candy'
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Null',
-				Mirage: 'Null',
-				Poison: 'Resist',
-				Confusion: 'Null',
-				Charm: 'Null',
-				Seal: 'Resist'
-			},
-			weak: [
-				'Elec'
-			],
-			resist: [],
-			null: [],
-			drain: [],
-			repel: []
+			Elec: 'Weak',
+			Sleep: 'Null',
+			Mirage: 'Null',
+			Poison: 'Resist',
+			Confusion: 'Null',
+			Charm: 'Null',
+			Seal: 'Resist'
 		},
 		alignment: {
 			major: 'Light',
@@ -2103,25 +1787,15 @@ export const smt5Bosses: SMT5BossData[] = [
 			'Sexy Dance'
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Resist',
-				Mirage: 'Resist',
-				Poison: 'Resist',
-				Confusion: 'Resist',
-				Charm: 'Null',
-				Seal: 'Resist'
-			},
-			weak: [
-				'Ice'
-			],
-			resist: [
-				'Elec'
-			],
-			null: [
-				'Fire'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Null',
+			Ice: 'Weak',
+			Elec: 'Resist',
+			Sleep: 'Resist',
+			Mirage: 'Resist',
+			Poison: 'Resist',
+			Confusion: 'Resist',
+			Charm: 'Null',
+			Seal: 'Resist'
 		},
 		alignment: {
 			major: 'Light',
@@ -2163,25 +1837,15 @@ export const smt5Bosses: SMT5BossData[] = [
 			'Maragi'
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Resist',
-				Mirage: 'Resist',
-				Poison: 'Resist',
-				Confusion: 'Resist',
-				Charm: 'Resist',
-				Seal: 'Resist'
-			},
-			weak: [
-				'Elec'
-			],
-			resist: [
-				'Dark'
-			],
-			null: [
-				'Fire'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Null',
+			Elec: 'Weak',
+			Dark: 'Resist',
+			Sleep: 'Resist',
+			Mirage: 'Resist',
+			Poison: 'Resist',
+			Confusion: 'Resist',
+			Charm: 'Resist',
+			Seal: 'Resist'
 		},
 		alignment: {
 			major: 'Neutral',
@@ -2227,24 +1891,15 @@ export const smt5Bosses: SMT5BossData[] = [
 			'Tarukaja'
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Null',
-				Mirage: 'Resist',
-				Poison: 'Resist',
-				Confusion: 'Resist',
-				Charm: 'Resist',
-				Seal: 'Null'
-			},
-			weak: [
-				'Elec'
-			],
-			resist: [],
-			null: [
-				'Fire',
-				'Light'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Null',
+			Elec: 'Weak',
+			Light: 'Null',
+			Sleep: 'Null',
+			Mirage: 'Resist',
+			Poison: 'Resist',
+			Confusion: 'Resist',
+			Charm: 'Resist',
+			Seal: 'Null'
 		},
 		alignment: {
 			major: 'Light',
@@ -2290,24 +1945,15 @@ export const smt5Bosses: SMT5BossData[] = [
 			'Deathbound'
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Null',
-				Mirage: 'Resist',
-				Poison: 'Resist',
-				Confusion: 'Resist',
-				Charm: 'Resist',
-				Seal: 'Null'
-			},
-			weak: [
-				'Elec'
-			],
-			resist: [],
-			null: [
-				'Fire',
-				'Light'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Null',
+			Elec: 'Weak',
+			Light: 'Null',
+			Sleep: 'Null',
+			Mirage: 'Resist',
+			Poison: 'Resist',
+			Confusion: 'Resist',
+			Charm: 'Resist',
+			Seal: 'Null'
 		},
 		alignment: {
 			major: 'Light',
@@ -2348,23 +1994,14 @@ export const smt5Bosses: SMT5BossData[] = [
 			'Tarukaja'
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Resist',
-				Mirage: 'Null',
-				Poison: 'Resist',
-				Confusion: 'Null',
-				Charm: 'Resist',
-				Seal: 'Resist'
-			},
-			weak: [
-				'Dark'
-			],
-			resist: [],
-			null: [
-				'Light'
-			],
-			drain: [],
-			repel: []
+			Light: 'Null',
+			Dark: 'Weak',
+			Sleep: 'Resist',
+			Mirage: 'Null',
+			Poison: 'Resist',
+			Confusion: 'Null',
+			Charm: 'Resist',
+			Seal: 'Resist'
 		},
 		alignment: {
 			major: 'Light',
@@ -2408,26 +2045,16 @@ export const smt5Bosses: SMT5BossData[] = [
 			'Hamaon'
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Resist',
-				Mirage: 'Resist',
-				Poison: 'Resist',
-				Confusion: 'Resist',
-				Charm: 'Resist',
-				Seal: 'Resist'
-			},
-			weak: [
-				'Elec'
-			],
-			resist: [
-				'Fire'
-			],
-			null: [
-				'Ice',
-				'Light'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Resist',
+			Ice: 'Null',
+			Elec: 'Weak',
+			Light: 'Null',
+			Sleep: 'Resist',
+			Mirage: 'Resist',
+			Poison: 'Resist',
+			Confusion: 'Resist',
+			Charm: 'Resist',
+			Seal: 'Resist'
 		},
 		alignment: {
 			major: 'Light',
@@ -2471,25 +2098,15 @@ export const smt5Bosses: SMT5BossData[] = [
 			'Retaliate'
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Resist',
-				Mirage: 'Resist',
-				Poison: 'Resist',
-				Confusion: 'Resist',
-				Charm: 'Resist',
-				Seal: 'Resist'
-			},
-			weak: [
-				'Elec'
-			],
-			resist: [
-				'Light'
-			],
-			null: [],
-			drain: [
-				'Force'
-			],
-			repel: []
+			Elec: 'Weak',
+			Force: 'Drain',
+			Light: 'Resist',
+			Sleep: 'Resist',
+			Mirage: 'Resist',
+			Poison: 'Resist',
+			Confusion: 'Resist',
+			Charm: 'Resist',
+			Seal: 'Resist'
 		},
 		alignment: {
 			major: 'Light',
@@ -2536,27 +2153,17 @@ export const smt5Bosses: SMT5BossData[] = [
 			'Tentarafoo'
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Weak',
-				Mirage: 'Resist',
-				Poison: 'Resist',
-				Confusion: 'Resist',
-				Charm: 'Resist',
-				Seal: 'Resist'
-			},
-			weak: [
-				'Elec',
-				'Force',
-				'Light'
-			],
-			resist: [
-				'Dark'
-			],
-			null: [],
-			drain: [],
-			repel: [
-				'Phys'
-			]
+			Phys: 'Repel',
+			Elec: 'Weak',
+			Force: 'Weak',
+			Light: 'Weak',
+			Dark: 'Resist',
+			Sleep: 'Weak',
+			Mirage: 'Resist',
+			Poison: 'Resist',
+			Confusion: 'Resist',
+			Charm: 'Resist',
+			Seal: 'Resist'
 		},
 		alignment: {
 			major: 'Dark',
@@ -2602,23 +2209,14 @@ export const smt5Bosses: SMT5BossData[] = [
 			'Critical Aura'
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Resist',
-				Mirage: 'Weak',
-				Poison: 'Resist',
-				Confusion: 'Resist',
-				Charm: 'Resist',
-				Seal: 'Resist'
-			},
-			weak: [
-				'Force'
-			],
-			resist: [],
-			null: [
-				'Dark'
-			],
-			drain: [],
-			repel: []
+			Force: 'Weak',
+			Dark: 'Null',
+			Sleep: 'Resist',
+			Mirage: 'Weak',
+			Poison: 'Resist',
+			Confusion: 'Resist',
+			Charm: 'Resist',
+			Seal: 'Resist'
 		},
 		alignment: {
 			major: 'Dark',
@@ -2663,27 +2261,17 @@ export const smt5Bosses: SMT5BossData[] = [
 			'Tentarafoo'
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Resist',
-				Mirage: 'Resist',
-				Poison: 'Resist',
-				Confusion: 'Resist',
-				Charm: 'Resist',
-				Seal: 'Resist'
-			},
-			weak: [
-				'Ice'
-			],
-			resist: [
-				'Light',
-				'Dark'
-			],
-			null: [
-				'Fire',
-				'Force'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Null',
+			Ice: 'Weak',
+			Force: 'Null',
+			Light: 'Resist',
+			Dark: 'Resist',
+			Sleep: 'Resist',
+			Mirage: 'Resist',
+			Poison: 'Resist',
+			Confusion: 'Resist',
+			Charm: 'Resist',
+			Seal: 'Resist'
 		},
 		alignment: {
 			major: 'Unknown',
@@ -2732,27 +2320,17 @@ export const smt5Bosses: SMT5BossData[] = [
 			'Masukunda'
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Resist',
-				Mirage: 'Resist',
-				Poison: 'Resist',
-				Confusion: 'Resist',
-				Charm: 'Resist',
-				Seal: 'Resist'
-			},
-			weak: [
-				'Force',
-				'Dark'
-			],
-			resist: [
-				'Fire',
-				'Elec'
-			],
-			null: [],
-			drain: [],
-			repel: [
-				'Light'
-			]
+			Fire: 'Resist',
+			Elec: 'Resist',
+			Force: 'Weak',
+			Light: 'Repel',
+			Dark: 'Weak',
+			Sleep: 'Resist',
+			Mirage: 'Resist',
+			Poison: 'Resist',
+			Confusion: 'Resist',
+			Charm: 'Resist',
+			Seal: 'Resist'
 		},
 		alignment: {
 			major: 'Light',
@@ -2797,28 +2375,18 @@ export const smt5Bosses: SMT5BossData[] = [
 			'Mabufudyne'
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Resist',
-				Mirage: 'Resist',
-				Poison: 'Resist',
-				Confusion: 'Resist',
-				Charm: 'Resist',
-				Seal: 'Resist'
-			},
-			weak: [
-				'Dark'
-			],
-			resist: [
-				'Fire',
-				'Ice',
-				'Elec',
-				'Force'
-			],
-			null: [
-				'Light'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Resist',
+			Ice: 'Resist',
+			Elec: 'Resist',
+			Force: 'Resist',
+			Light: 'Null',
+			Dark: 'Weak',
+			Sleep: 'Resist',
+			Mirage: 'Resist',
+			Poison: 'Resist',
+			Confusion: 'Resist',
+			Charm: 'Resist',
+			Seal: 'Resist'
 		},
 		alignment: {
 			major: 'Light',
@@ -2861,23 +2429,14 @@ export const smt5Bosses: SMT5BossData[] = [
 			'Fire Breath'
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Resist',
-				Mirage: 'Resist',
-				Poison: 'Null',
-				Confusion: 'Resist',
-				Charm: 'Resist',
-				Seal: 'Resist'
-			},
-			weak: [
-				'Ice'
-			],
-			resist: [],
-			null: [
-				'Fire'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Null',
+			Ice: 'Weak',
+			Sleep: 'Resist',
+			Mirage: 'Resist',
+			Poison: 'Null',
+			Confusion: 'Resist',
+			Charm: 'Resist',
+			Seal: 'Resist'
 		},
 		alignment: {
 			major: 'Dark',
@@ -2923,27 +2482,18 @@ export const smt5Bosses: SMT5BossData[] = [
 			'Concentrate'
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Resist',
-				Mirage: 'Resist',
-				Poison: 'Resist',
-				Confusion: 'Resist',
-				Charm: 'Resist',
-				Seal: 'Resist'
-			},
-			weak: [
-				'Phys',
-				'Dark'
-			],
-			resist: [],
-			null: [
-				'Fire',
-				'Ice',
-				'Elec',
-				'Force'
-			],
-			drain: [],
-			repel: []
+			Phys: 'Weak',
+			Fire: 'Null',
+			Ice: 'Null',
+			Elec: 'Null',
+			Force: 'Null',
+			Dark: 'Weak',
+			Sleep: 'Resist',
+			Mirage: 'Resist',
+			Poison: 'Resist',
+			Confusion: 'Resist',
+			Charm: 'Resist',
+			Seal: 'Resist'
 		},
 		alignment: {
 			major: 'Light',
@@ -2993,25 +2543,16 @@ export const smt5Bosses: SMT5BossData[] = [
 			'Marakunda'
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Resist',
-				Mirage: 'Resist',
-				Poison: 'Resist',
-				Confusion: 'Resist',
-				Charm: 'Resist',
-				Seal: 'Resist'
-			},
-			weak: [
-				'Force',
-				'Dark'
-			],
-			resist: [],
-			null: [
-				'Elec',
-				'Light'
-			],
-			drain: [],
-			repel: []
+			Elec: 'Null',
+			Force: 'Weak',
+			Light: 'Null',
+			Dark: 'Weak',
+			Sleep: 'Resist',
+			Mirage: 'Resist',
+			Poison: 'Resist',
+			Confusion: 'Resist',
+			Charm: 'Resist',
+			Seal: 'Resist'
 		},
 		alignment: {
 			major: 'Light',
@@ -3055,24 +2596,15 @@ export const smt5Bosses: SMT5BossData[] = [
 			'Lunge'
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Resist',
-				Mirage: 'Resist',
-				Poison: 'Resist',
-				Confusion: 'Resist',
-				Charm: 'Resist',
-				Seal: 'Resist'
-			},
-			weak: [
-				'Elec',
-				'Dark'
-			],
-			resist: [],
-			null: [],
-			drain: [
-				'Force'
-			],
-			repel: []
+			Elec: 'Weak',
+			Force: 'Drain',
+			Dark: 'Weak',
+			Sleep: 'Resist',
+			Mirage: 'Resist',
+			Poison: 'Resist',
+			Confusion: 'Resist',
+			Charm: 'Resist',
+			Seal: 'Resist'
 		},
 		alignment: {
 			major: 'Light',
@@ -3116,25 +2648,15 @@ export const smt5Bosses: SMT5BossData[] = [
 			'Deathbound'
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Resist',
-				Mirage: 'Resist',
-				Poison: 'Resist',
-				Confusion: 'Resist',
-				Charm: 'Resist',
-				Seal: 'Resist'
-			},
-			weak: [
-				'Fire'
-			],
-			resist: [
-				'Light'
-			],
-			null: [
-				'Ice'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Weak',
+			Ice: 'Null',
+			Light: 'Resist',
+			Sleep: 'Resist',
+			Mirage: 'Resist',
+			Poison: 'Resist',
+			Confusion: 'Resist',
+			Charm: 'Resist',
+			Seal: 'Resist'
 		},
 		alignment: {
 			major: 'Light',
@@ -3180,25 +2702,15 @@ export const smt5Bosses: SMT5BossData[] = [
 			'Megidolaon'
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Resist',
-				Mirage: 'Resist',
-				Poison: 'Resist',
-				Confusion: 'Resist',
-				Charm: 'Resist',
-				Seal: 'Resist'
-			},
-			weak: [
-				'Fire'
-			],
-			resist: [
-				'Light'
-			],
-			null: [
-				'Ice'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Weak',
+			Ice: 'Null',
+			Light: 'Resist',
+			Sleep: 'Resist',
+			Mirage: 'Resist',
+			Poison: 'Resist',
+			Confusion: 'Resist',
+			Charm: 'Resist',
+			Seal: 'Resist'
 		},
 		alignment: {
 			major: 'Light',
@@ -3245,25 +2757,15 @@ export const smt5Bosses: SMT5BossData[] = [
 			'Diarama'
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Resist',
-				Mirage: 'Resist',
-				Poison: 'Resist',
-				Confusion: 'Resist',
-				Charm: 'Resist',
-				Seal: 'Resist'
-			},
-			weak: [
-				'Ice'
-			],
-			resist: [
-				'Fire'
-			],
-			null: [
-				'Light'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Resist',
+			Ice: 'Weak',
+			Light: 'Null',
+			Sleep: 'Resist',
+			Mirage: 'Resist',
+			Poison: 'Resist',
+			Confusion: 'Resist',
+			Charm: 'Resist',
+			Seal: 'Resist'
 		},
 		alignment: {
 			major: 'Light',
@@ -3311,28 +2813,17 @@ export const smt5Bosses: SMT5BossData[] = [
 			'Heliopolis Dawn'
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Resist',
-				Mirage: 'Resist',
-				Poison: 'Resist',
-				Confusion: 'Resist',
-				Charm: 'Resist',
-				Seal: 'Null'
-			},
-			weak: [
-				'Ice'
-			],
-			resist: [
-				'Elec',
-				'Force'
-			],
-			null: [
-				'Fire'
-			],
-			drain: [
-				'Light'
-			],
-			repel: []
+			Fire: 'Null',
+			Ice: 'Weak',
+			Elec: 'Resist',
+			Force: 'Resist',
+			Light: 'Drain',
+			Sleep: 'Resist',
+			Mirage: 'Resist',
+			Poison: 'Resist',
+			Confusion: 'Resist',
+			Charm: 'Resist',
+			Seal: 'Null'
 		},
 		alignment: {
 			major: 'Light',
@@ -3377,26 +2868,16 @@ export const smt5Bosses: SMT5BossData[] = [
 			'Berserker God'
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Resist',
-				Mirage: 'Resist',
-				Poison: 'Resist',
-				Confusion: 'Resist',
-				Charm: 'Resist',
-				Seal: 'Resist'
-			},
-			weak: [
-				'Fire',
-				'Dark'
-			],
-			resist: [],
-			null: [
-				'Light'
-			],
-			drain: [
-				'Ice'
-			],
-			repel: []
+			Fire: 'Weak',
+			Ice: 'Drain',
+			Light: 'Null',
+			Dark: 'Weak',
+			Sleep: 'Resist',
+			Mirage: 'Resist',
+			Poison: 'Resist',
+			Confusion: 'Resist',
+			Charm: 'Resist',
+			Seal: 'Resist'
 		},
 		alignment: {
 			major: 'Dark',
@@ -3442,25 +2923,15 @@ export const smt5Bosses: SMT5BossData[] = [
 			'Crusher Onslaught'
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Resist',
-				Mirage: 'Resist',
-				Poison: 'Resist',
-				Confusion: 'Resist',
-				Charm: 'Resist',
-				Seal: 'Resist'
-			},
-			weak: [
-				'Elec'
-			],
-			resist: [
-				'Light'
-			],
-			null: [
-				'Force'
-			],
-			drain: [],
-			repel: []
+			Elec: 'Weak',
+			Force: 'Null',
+			Light: 'Resist',
+			Sleep: 'Resist',
+			Mirage: 'Resist',
+			Poison: 'Resist',
+			Confusion: 'Resist',
+			Charm: 'Resist',
+			Seal: 'Resist'
 		},
 		alignment: {
 			major: 'Light',
@@ -3506,25 +2977,15 @@ export const smt5Bosses: SMT5BossData[] = [
 			'Impaler\'s Animus'
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Resist',
-				Mirage: 'Resist',
-				Poison: 'Resist',
-				Confusion: 'Resist',
-				Charm: 'Resist',
-				Seal: 'Resist'
-			},
-			weak: [
-				'Elec'
-			],
-			resist: [
-				'Light'
-			],
-			null: [
-				'Force'
-			],
-			drain: [],
-			repel: []
+			Elec: 'Weak',
+			Force: 'Null',
+			Light: 'Resist',
+			Sleep: 'Resist',
+			Mirage: 'Resist',
+			Poison: 'Resist',
+			Confusion: 'Resist',
+			Charm: 'Resist',
+			Seal: 'Resist'
 		},
 		alignment: {
 			major: 'Light',
@@ -3569,25 +3030,15 @@ export const smt5Bosses: SMT5BossData[] = [
 			'Mazanma'
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Resist',
-				Mirage: 'Resist',
-				Poison: 'Resist',
-				Confusion: 'Resist',
-				Charm: 'Resist',
-				Seal: 'Resist'
-			},
-			weak: [
-				'Elec'
-			],
-			resist: [
-				'Dark'
-			],
-			null: [
-				'Force'
-			],
-			drain: [],
-			repel: []
+			Elec: 'Weak',
+			Force: 'Null',
+			Dark: 'Resist',
+			Sleep: 'Resist',
+			Mirage: 'Resist',
+			Poison: 'Resist',
+			Confusion: 'Resist',
+			Charm: 'Resist',
+			Seal: 'Resist'
 		},
 		alignment: {
 			major: 'Dark',
@@ -3626,26 +3077,16 @@ export const smt5Bosses: SMT5BossData[] = [
 			'Mudo'
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Null',
-				Mirage: 'Null',
-				Poison: 'Null',
-				Confusion: 'Null',
-				Charm: 'Null',
-				Seal: 'Null'
-			},
-			weak: [
-				'Force',
-				'Light'
-			],
-			resist: [
-				'Fire'
-			],
-			null: [
-				'Dark'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Resist',
+			Force: 'Weak',
+			Light: 'Weak',
+			Dark: 'Null',
+			Sleep: 'Null',
+			Mirage: 'Null',
+			Poison: 'Null',
+			Confusion: 'Null',
+			Charm: 'Null',
+			Seal: 'Null'
 		},
 		alignment: {
 			major: 'Dark',
@@ -3689,27 +3130,17 @@ export const smt5Bosses: SMT5BossData[] = [
 			'Charge'
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Null',
-				Mirage: 'Null',
-				Poison: 'Null',
-				Confusion: 'Null',
-				Charm: 'Null',
-				Seal: 'Null'
-			},
-			weak: [
-				'Force',
-				'Light'
-			],
-			resist: [
-				'Fire',
-				'Ice'
-			],
-			null: [
-				'Dark'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Resist',
+			Ice: 'Resist',
+			Force: 'Weak',
+			Light: 'Weak',
+			Dark: 'Null',
+			Sleep: 'Null',
+			Mirage: 'Null',
+			Poison: 'Null',
+			Confusion: 'Null',
+			Charm: 'Null',
+			Seal: 'Null'
 		},
 		alignment: {
 			major: 'Dark',
@@ -3754,26 +3185,16 @@ export const smt5Bosses: SMT5BossData[] = [
 			'Mazionga'
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Resist',
-				Mirage: 'Resist',
-				Poison: 'Resist',
-				Confusion: 'Null',
-				Charm: 'Resist',
-				Seal: 'Resist'
-			},
-			weak: [
-				'Fire'
-			],
-			resist: [
-				'Ice',
-				'Force'
-			],
-			null: [
-				'Dark'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Weak',
+			Ice: 'Resist',
+			Force: 'Resist',
+			Dark: 'Null',
+			Sleep: 'Resist',
+			Mirage: 'Resist',
+			Poison: 'Resist',
+			Confusion: 'Null',
+			Charm: 'Resist',
+			Seal: 'Resist'
 		},
 		alignment: {
 			major: 'Dark',
@@ -3814,26 +3235,16 @@ export const smt5Bosses: SMT5BossData[] = [
 		},
 		skills: [],
 		resistances: {
-			ailments: {
-				Sleep: 'Null',
-				Mirage: 'Null',
-				Poison: 'Null',
-				Confusion: 'Null',
-				Charm: 'Null',
-				Seal: 'Null'
-			},
-			weak: [
-				'Wind',
-				'Light'
-			],
-			resist: [
-				'Fire'
-			],
-			null: [
-				'Dark'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Resist',
+			Wind: 'Weak',
+			Light: 'Weak',
+			Dark: 'Null',
+			Sleep: 'Null',
+			Mirage: 'Null',
+			Poison: 'Null',
+			Confusion: 'Null',
+			Charm: 'Null',
+			Seal: 'Null'
 		},
 		alignment: {
 			major: 'Dark',
@@ -3872,19 +3283,10 @@ export const smt5Bosses: SMT5BossData[] = [
 			'Mudo'
 		],
 		resistances: {
-			ailments: {
-				Poison: 'Weak'
-			},
-			weak: [
-				'Force',
-				'Light'
-			],
-			resist: [],
-			null: [
-				'Dark'
-			],
-			drain: [],
-			repel: []
+			Force: 'Weak',
+			Light: 'Weak',
+			Dark: 'Null',
+			Poison: 'Weak'
 		},
 		alignment: {
 			major: 'Neutral',
@@ -3927,23 +3329,14 @@ export const smt5Bosses: SMT5BossData[] = [
 			'Zionga'
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Resist',
-				Mirage: 'Resist',
-				Poison: 'Resist',
-				Confusion: 'Resist',
-				Charm: 'Null',
-				Seal: 'Resist'
-			},
-			weak: [
-				'Ice'
-			],
-			resist: [],
-			null: [
-				'Elec'
-			],
-			drain: [],
-			repel: []
+			Ice: 'Weak',
+			Elec: 'Null',
+			Sleep: 'Resist',
+			Mirage: 'Resist',
+			Poison: 'Resist',
+			Confusion: 'Resist',
+			Charm: 'Null',
+			Seal: 'Resist'
 		},
 		alignment: {
 			major: 'Neutral',
@@ -3986,26 +3379,16 @@ export const smt5Bosses: SMT5BossData[] = [
 			'Pulinpa'
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Resist',
-				Mirage: 'Resist',
-				Poison: 'Weak',
-				Confusion: 'Resist',
-				Charm: 'Resist',
-				Seal: 'Resist'
-			},
-			weak: [
-				'Light'
-			],
-			resist: [
-				'Force',
-				'Dark'
-			],
-			null: [
-				'Ice'
-			],
-			drain: [],
-			repel: []
+			Ice: 'Null',
+			Force: 'Resist',
+			Light: 'Weak',
+			Dark: 'Resist',
+			Sleep: 'Resist',
+			Mirage: 'Resist',
+			Poison: 'Weak',
+			Confusion: 'Resist',
+			Charm: 'Resist',
+			Seal: 'Resist'
 		},
 		alignment: {
 			major: 'Dark',
@@ -4050,26 +3433,16 @@ export const smt5Bosses: SMT5BossData[] = [
 			'Critical Aura'
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Resist',
-				Mirage: 'Resist',
-				Poison: 'Resist',
-				Confusion: 'Resist',
-				Charm: 'Resist',
-				Seal: 'Resist'
-			},
-			weak: [
-				'Ice',
-				'Light'
-			],
-			resist: [
-				'Fire'
-			],
-			null: [
-				'Elec'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Resist',
+			Ice: 'Weak',
+			Elec: 'Null',
+			Light: 'Weak',
+			Sleep: 'Resist',
+			Mirage: 'Resist',
+			Poison: 'Resist',
+			Confusion: 'Resist',
+			Charm: 'Resist',
+			Seal: 'Resist'
 		},
 		alignment: {
 			major: 'Neutral',
@@ -4124,28 +3497,18 @@ export const smt5Bosses: SMT5BossData[] = [
 			'Dekunda'
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Null',
-				Mirage: 'Null',
-				Poison: 'Null',
-				Confusion: 'Null',
-				Charm: 'Null',
-				Seal: 'Null'
-			},
-			weak: [],
-			resist: [
-				'Phys'
-			],
-			null: [
-				'Fire',
-				'Ice',
-				'Elec',
-				'Force'
-			],
-			drain: [
-				'Light'
-			],
-			repel: []
+			Phys: 'Resist',
+			Fire: 'Null',
+			Ice: 'Null',
+			Elec: 'Null',
+			Force: 'Null',
+			Light: 'Drain',
+			Sleep: 'Null',
+			Mirage: 'Null',
+			Poison: 'Null',
+			Confusion: 'Null',
+			Charm: 'Null',
+			Seal: 'Null'
 		},
 		alignment: {
 			major: 'Neutral',
@@ -4194,23 +3557,14 @@ export const smt5Bosses: SMT5BossData[] = [
 			'Javelin Rain'
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Null',
-				Mirage: 'Null',
-				Poison: 'Null',
-				Confusion: 'Null',
-				Charm: 'Null',
-				Seal: 'Null'
-			},
-			weak: [
-				'Light'
-			],
-			resist: [],
-			null: [],
-			drain: [
-				'Dark'
-			],
-			repel: []
+			Light: 'Weak',
+			Dark: 'Drain',
+			Sleep: 'Null',
+			Mirage: 'Null',
+			Poison: 'Null',
+			Confusion: 'Null',
+			Charm: 'Null',
+			Seal: 'Null'
 		},
 		alignment: {
 			major: 'Neutral',
@@ -4260,28 +3614,18 @@ export const smt5Bosses: SMT5BossData[] = [
 			'Dekunda'
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Null',
-				Mirage: 'Null',
-				Poison: 'Null',
-				Confusion: 'Null',
-				Charm: 'Null',
-				Seal: 'Null'
-			},
-			weak: [],
-			resist: [
-				'Phys'
-			],
-			null: [
-				'Fire',
-				'Ice',
-				'Elec',
-				'Force'
-			],
-			drain: [
-				'Light'
-			],
-			repel: []
+			Phys: 'Resist',
+			Fire: 'Null',
+			Ice: 'Null',
+			Elec: 'Null',
+			Force: 'Null',
+			Light: 'Drain',
+			Sleep: 'Null',
+			Mirage: 'Null',
+			Poison: 'Null',
+			Confusion: 'Null',
+			Charm: 'Null',
+			Seal: 'Null'
 		},
 		alignment: {
 			major: 'Neutral',
@@ -4330,28 +3674,18 @@ export const smt5Bosses: SMT5BossData[] = [
 			'Mudobarion'
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Null',
-				Mirage: 'Null',
-				Poison: 'Null',
-				Confusion: 'Null',
-				Charm: 'Null',
-				Seal: 'Null'
-			},
-			weak: [],
-			resist: [
-				'Phys'
-			],
-			null: [
-				'Fire',
-				'Ice',
-				'Elec',
-				'Force'
-			],
-			drain: [
-				'Light'
-			],
-			repel: []
+			Phys: 'Resist',
+			Fire: 'Null',
+			Ice: 'Null',
+			Elec: 'Null',
+			Force: 'Null',
+			Light: 'Drain',
+			Sleep: 'Null',
+			Mirage: 'Null',
+			Poison: 'Null',
+			Confusion: 'Null',
+			Charm: 'Null',
+			Seal: 'Null'
 		},
 		alignment: {
 			major: 'Neutral',
@@ -4396,27 +3730,16 @@ export const smt5Bosses: SMT5BossData[] = [
 			'Diarahan'
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Null',
-				Mirage: 'Resist',
-				Poison: 'Resist',
-				Confusion: 'Resist',
-				Charm: 'Resist',
-				Seal: 'Resist'
-			},
-			weak: [
-				'Elec'
-			],
-			resist: [
-				'Dark'
-			],
-			null: [
-				'Light'
-			],
-			drain: [
-				'Force'
-			],
-			repel: []
+			Elec: 'Weak',
+			Force: 'Drain',
+			Light: 'Null',
+			Dark: 'Resist',
+			Sleep: 'Null',
+			Mirage: 'Resist',
+			Poison: 'Resist',
+			Confusion: 'Resist',
+			Charm: 'Resist',
+			Seal: 'Resist'
 		},
 		alignment: {
 			major: 'Light',
@@ -4463,26 +3786,16 @@ export const smt5Bosses: SMT5BossData[] = [
 			'Marakunda'
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Resist',
-				Mirage: 'Resist',
-				Poison: 'Resist',
-				Confusion: 'Resist',
-				Charm: 'Resist',
-				Seal: 'Resist'
-			},
-			weak: [
-				'Elec'
-			],
-			resist: [
-				'Light',
-				'Dark'
-			],
-			null: [
-				'Force'
-			],
-			drain: [],
-			repel: []
+			Elec: 'Weak',
+			Force: 'Null',
+			Light: 'Resist',
+			Dark: 'Resist',
+			Sleep: 'Resist',
+			Mirage: 'Resist',
+			Poison: 'Resist',
+			Confusion: 'Resist',
+			Charm: 'Resist',
+			Seal: 'Resist'
 		},
 		alignment: {
 			major: 'Unknown',
@@ -4528,25 +3841,15 @@ export const smt5Bosses: SMT5BossData[] = [
 			'Fogna'
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Resist',
-				Mirage: 'Resist',
-				Poison: 'Resist',
-				Confusion: 'Resist',
-				Charm: 'Resist',
-				Seal: 'Resist'
-			},
-			weak: [
-				'Force'
-			],
-			resist: [],
-			null: [
-				'Dark'
-			],
-			drain: [
-				'Light'
-			],
-			repel: []
+			Force: 'Weak',
+			Light: 'Drain',
+			Dark: 'Null',
+			Sleep: 'Resist',
+			Mirage: 'Resist',
+			Poison: 'Resist',
+			Confusion: 'Resist',
+			Charm: 'Resist',
+			Seal: 'Resist'
 		},
 		alignment: {
 			major: 'Light',
@@ -4595,25 +3898,15 @@ export const smt5Bosses: SMT5BossData[] = [
 			'Mamudobarion'
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Resist',
-				Mirage: 'Resist',
-				Poison: 'Resist',
-				Confusion: 'Resist',
-				Charm: 'Resist',
-				Seal: 'Resist'
-			},
-			weak: [
-				'Light'
-			],
-			resist: [],
-			null: [
-				'Phys'
-			],
-			drain: [
-				'Dark'
-			],
-			repel: []
+			Phys: 'Null',
+			Light: 'Weak',
+			Dark: 'Drain',
+			Sleep: 'Resist',
+			Mirage: 'Resist',
+			Poison: 'Resist',
+			Confusion: 'Resist',
+			Charm: 'Resist',
+			Seal: 'Resist'
 		},
 		alignment: {
 			major: 'Dark',
@@ -4659,26 +3952,17 @@ export const smt5Bosses: SMT5BossData[] = [
 			'Mahamabarion'
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Resist',
-				Mirage: 'Resist',
-				Poison: 'Resist',
-				Confusion: 'Resist',
-				Charm: 'Resist',
-				Seal: 'Resist'
-			},
-			weak: [],
-			resist: [
-				'Fire',
-				'Ice',
-				'Elec',
-				'Force'
-			],
-			null: [
-				'Light'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Resist',
+			Ice: 'Resist',
+			Elec: 'Resist',
+			Force: 'Resist',
+			Light: 'Null',
+			Sleep: 'Resist',
+			Mirage: 'Resist',
+			Poison: 'Resist',
+			Confusion: 'Resist',
+			Charm: 'Resist',
+			Seal: 'Resist'
 		},
 		alignment: {
 			major: 'Light',
@@ -4725,25 +4009,16 @@ export const smt5Bosses: SMT5BossData[] = [
 			'Megidolaon'
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Resist',
-				Mirage: 'Resist',
-				Poison: 'Resist',
-				Confusion: 'Resist',
-				Charm: 'Resist',
-				Seal: 'Resist'
-			},
-			weak: [
-				'Force'
-			],
-			resist: [],
-			null: [
-				'Fire',
-				'Ice',
-				'Light'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Null',
+			Ice: 'Null',
+			Force: 'Weak',
+			Light: 'Null',
+			Sleep: 'Resist',
+			Mirage: 'Resist',
+			Poison: 'Resist',
+			Confusion: 'Resist',
+			Charm: 'Resist',
+			Seal: 'Resist'
 		},
 		alignment: {
 			major: 'Light',
@@ -4791,25 +4066,15 @@ export const smt5Bosses: SMT5BossData[] = [
 			'Megidola'
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Resist',
-				Mirage: 'Resist',
-				Poison: 'Resist',
-				Confusion: 'Resist',
-				Charm: 'Resist',
-				Seal: 'Resist'
-			},
-			weak: [
-				'Ice'
-			],
-			resist: [],
-			null: [
-				'Light'
-			],
-			drain: [
-				'Fire'
-			],
-			repel: []
+			Fire: 'Drain',
+			Ice: 'Weak',
+			Light: 'Null',
+			Sleep: 'Resist',
+			Mirage: 'Resist',
+			Poison: 'Resist',
+			Confusion: 'Resist',
+			Charm: 'Resist',
+			Seal: 'Resist'
 		},
 		alignment: {
 			major: 'Dark',
@@ -4852,26 +4117,16 @@ export const smt5Bosses: SMT5BossData[] = [
 			'Rampage'
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Resist',
-				Mirage: 'Resist',
-				Poison: 'Resist',
-				Confusion: 'Resist',
-				Charm: 'Resist',
-				Seal: 'Resist'
-			},
-			weak: [
-				'Ice'
-			],
-			resist: [
-				'Elec',
-				'Dark'
-			],
-			null: [
-				'Fire'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Null',
+			Ice: 'Weak',
+			Elec: 'Resist',
+			Dark: 'Resist',
+			Sleep: 'Resist',
+			Mirage: 'Resist',
+			Poison: 'Resist',
+			Confusion: 'Resist',
+			Charm: 'Resist',
+			Seal: 'Resist'
 		},
 		alignment: {
 			major: 'Dark',
@@ -4910,24 +4165,16 @@ export const smt5Bosses: SMT5BossData[] = [
 		},
 		skills: [],
 		resistances: {
-			ailments: {
-				Sleep: 'Null',
-				Mirage: 'Null',
-				Poison: 'Null',
-				Confusion: 'Null',
-				Charm: 'Null',
-				Seal: 'Null'
-			},
-			weak: [
-				'Fire',
-				'Ice',
-				'Elec',
-				'Force'
-			],
-			resist: [],
-			null: [],
-			drain: [],
-			repel: []
+			Fire: 'Weak',
+			Ice: 'Weak',
+			Elec: 'Weak',
+			Force: 'Weak',
+			Sleep: 'Null',
+			Mirage: 'Null',
+			Poison: 'Null',
+			Confusion: 'Null',
+			Charm: 'Null',
+			Seal: 'Null'
 		},
 		alignment: {
 			major: 'Neutral',
@@ -4971,29 +4218,18 @@ export const smt5Bosses: SMT5BossData[] = [
 			'Dekunda'
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Resist',
-				Mirage: 'Resist',
-				Poison: 'Resist',
-				Confusion: 'Resist',
-				Charm: 'Null',
-				Seal: 'Resist'
-			},
-			weak: [
-				'Force'
-			],
-			resist: [
-				'Fire',
-				'Light',
-				'Dark'
-			],
-			null: [],
-			drain: [
-				'Elec'
-			],
-			repel: [
-				'Phys'
-			]
+			Phys: 'Repel',
+			Fire: 'Resist',
+			Elec: 'Drain',
+			Force: 'Weak',
+			Light: 'Resist',
+			Dark: 'Resist',
+			Sleep: 'Resist',
+			Mirage: 'Resist',
+			Poison: 'Resist',
+			Confusion: 'Resist',
+			Charm: 'Null',
+			Seal: 'Resist'
 		},
 		alignment: {
 			major: 'Unknown',
@@ -5038,26 +4274,16 @@ export const smt5Bosses: SMT5BossData[] = [
 			'Mazio'
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Resist',
-				Mirage: 'Resist',
-				Poison: 'Resist',
-				Confusion: 'Resist',
-				Charm: 'Null',
-				Seal: 'Resist'
-			},
-			weak: [
-				'Fire'
-			],
-			resist: [],
-			null: [
-				'Elec',
-				'Dark'
-			],
-			drain: [],
-			repel: [
-				'Force'
-			]
+			Fire: 'Weak',
+			Elec: 'Null',
+			Force: 'Repel',
+			Dark: 'Null',
+			Sleep: 'Resist',
+			Mirage: 'Resist',
+			Poison: 'Resist',
+			Confusion: 'Resist',
+			Charm: 'Null',
+			Seal: 'Resist'
 		},
 		alignment: {
 			major: 'Light',
@@ -5104,26 +4330,16 @@ export const smt5Bosses: SMT5BossData[] = [
 			'Rising Storm Dragon'
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Null',
-				Mirage: 'Resist',
-				Poison: 'Resist',
-				Confusion: 'Null',
-				Charm: 'Null',
-				Seal: 'Null'
-			},
-			weak: [
-				'Fire'
-			],
-			resist: [],
-			null: [
-				'Elec',
-				'Dark'
-			],
-			drain: [],
-			repel: [
-				'Force'
-			]
+			Fire: 'Weak',
+			Elec: 'Null',
+			Force: 'Repel',
+			Dark: 'Null',
+			Sleep: 'Null',
+			Mirage: 'Resist',
+			Poison: 'Resist',
+			Confusion: 'Null',
+			Charm: 'Null',
+			Seal: 'Null'
 		},
 		alignment: {
 			major: 'Light',
@@ -5174,26 +4390,16 @@ export const smt5Bosses: SMT5BossData[] = [
 			'Dekaja'
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Resist',
-				Mirage: 'Resist',
-				Poison: 'Resist',
-				Confusion: 'Resist',
-				Charm: 'Resist',
-				Seal: 'Resist'
-			},
-			weak: [
-				'Force'
-			],
-			resist: [],
-			null: [
-				'Light',
-				'Dark'
-			],
-			drain: [],
-			repel: [
-				'Elec'
-			]
+			Elec: 'Repel',
+			Force: 'Weak',
+			Light: 'Null',
+			Dark: 'Null',
+			Sleep: 'Resist',
+			Mirage: 'Resist',
+			Poison: 'Resist',
+			Confusion: 'Resist',
+			Charm: 'Resist',
+			Seal: 'Resist'
 		},
 		alignment: {
 			major: 'Light',
@@ -5239,24 +4445,15 @@ export const smt5Bosses: SMT5BossData[] = [
 			'Diarama'
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Resist',
-				Mirage: 'Resist',
-				Poison: 'Resist',
-				Confusion: 'Resist',
-				Charm: 'Resist',
-				Seal: 'Resist'
-			},
-			weak: [
-				'Ice'
-			],
-			resist: [
-				'Light',
-				'Dark'
-			],
-			null: [],
-			drain: [],
-			repel: []
+			Ice: 'Weak',
+			Light: 'Resist',
+			Dark: 'Resist',
+			Sleep: 'Resist',
+			Mirage: 'Resist',
+			Poison: 'Resist',
+			Confusion: 'Resist',
+			Charm: 'Resist',
+			Seal: 'Resist'
 		},
 		alignment: {
 			major: 'Light',
@@ -5299,20 +4496,11 @@ export const smt5Bosses: SMT5BossData[] = [
 			'Crusher Onslaught'
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Weak',
-				Confusion: 'Weak'
-			},
-			weak: [
-				'Elec',
-				'Light'
-			],
-			resist: [
-				'Phys'
-			],
-			null: [],
-			drain: [],
-			repel: []
+			Phys: 'Resist',
+			Elec: 'Weak',
+			Light: 'Weak',
+			Sleep: 'Weak',
+			Confusion: 'Weak'
 		},
 		alignment: {
 			major: 'Neutral',
@@ -5354,26 +4542,16 @@ export const smt5Bosses: SMT5BossData[] = [
 			'Tetrakarn'
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Resist',
-				Mirage: 'Weak',
-				Poison: 'Resist',
-				Confusion: 'Resist',
-				Charm: 'Resist',
-				Seal: 'Resist'
-			},
-			weak: [
-				'Fire'
-			],
-			resist: [
-				'Ice',
-				'Elec'
-			],
-			null: [
-				'Dark'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Weak',
+			Ice: 'Resist',
+			Elec: 'Resist',
+			Dark: 'Null',
+			Sleep: 'Resist',
+			Mirage: 'Weak',
+			Poison: 'Resist',
+			Confusion: 'Resist',
+			Charm: 'Resist',
+			Seal: 'Resist'
 		},
 		alignment: {
 			major: 'Light',
@@ -5416,26 +4594,16 @@ export const smt5Bosses: SMT5BossData[] = [
 			'Beatdown'
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Resist',
-				Mirage: 'Weak',
-				Poison: 'Resist',
-				Confusion: 'Resist',
-				Charm: 'Resist',
-				Seal: 'Resist'
-			},
-			weak: [
-				'Fire'
-			],
-			resist: [
-				'Ice',
-				'Elec'
-			],
-			null: [
-				'Dark'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Weak',
+			Ice: 'Resist',
+			Elec: 'Resist',
+			Dark: 'Null',
+			Sleep: 'Resist',
+			Mirage: 'Weak',
+			Poison: 'Resist',
+			Confusion: 'Resist',
+			Charm: 'Resist',
+			Seal: 'Resist'
 		},
 		alignment: {
 			major: 'Light',
@@ -5480,26 +4648,16 @@ export const smt5Bosses: SMT5BossData[] = [
 			'Dekaja'
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Resist',
-				Confusion: 'Resist',
-				Charm: 'Resist',
-				Seal: 'Resist',
-				Mirage: 'Null',
-				Poison: 'Null'
-			},
-			weak: [
-				'Fire'
-			],
-			resist: [
-				'Light',
-				'Dark'
-			],
-			null: [
-				'Ice'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Weak',
+			Ice: 'Null',
+			Light: 'Resist',
+			Dark: 'Resist',
+			Sleep: 'Resist',
+			Confusion: 'Resist',
+			Charm: 'Resist',
+			Seal: 'Resist',
+			Mirage: 'Null',
+			Poison: 'Null'
 		},
 		alignment: {
 			major: 'Unknown',
@@ -5545,25 +4703,15 @@ export const smt5Bosses: SMT5BossData[] = [
 			'Mazan'
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Resist',
-				Mirage: 'Resist',
-				Poison: 'Resist',
-				Confusion: 'Resist',
-				Charm: 'Resist',
-				Seal: 'Resist'
-			},
-			weak: [
-				'Ice'
-			],
-			resist: [
-				'Force'
-			],
-			null: [
-				'Dark'
-			],
-			drain: [],
-			repel: []
+			Ice: 'Weak',
+			Force: 'Resist',
+			Dark: 'Null',
+			Sleep: 'Resist',
+			Mirage: 'Resist',
+			Poison: 'Resist',
+			Confusion: 'Resist',
+			Charm: 'Resist',
+			Seal: 'Resist'
 		},
 		alignment: {
 			major: 'Dark',
@@ -5607,23 +4755,14 @@ export const smt5Bosses: SMT5BossData[] = [
 			'Hamaon'
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Resist',
-				Mirage: 'Resist',
-				Poison: 'Resist',
-				Confusion: 'Resist',
-				Charm: 'Resist',
-				Seal: 'Weak'
-			},
-			weak: [
-				'Dark'
-			],
-			resist: [],
-			null: [
-				'Light'
-			],
-			drain: [],
-			repel: []
+			Light: 'Null',
+			Dark: 'Weak',
+			Sleep: 'Resist',
+			Mirage: 'Resist',
+			Poison: 'Resist',
+			Confusion: 'Resist',
+			Charm: 'Resist',
+			Seal: 'Weak'
 		},
 		alignment: {
 			major: 'Neutral',
@@ -5665,25 +4804,15 @@ export const smt5Bosses: SMT5BossData[] = [
 			'Eat Whole'
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Weak',
-				Mirage: 'Resist',
-				Poison: 'Resist',
-				Confusion: 'Resist',
-				Charm: 'Resist',
-				Seal: 'Resist'
-			},
-			weak: [
-				'Elec'
-			],
-			resist: [
-				'Ice'
-			],
-			null: [
-				'Force'
-			],
-			drain: [],
-			repel: []
+			Ice: 'Resist',
+			Elec: 'Weak',
+			Force: 'Null',
+			Sleep: 'Weak',
+			Mirage: 'Resist',
+			Poison: 'Resist',
+			Confusion: 'Resist',
+			Charm: 'Resist',
+			Seal: 'Resist'
 		},
 		alignment: {
 			major: 'Light',
@@ -5727,23 +4856,14 @@ export const smt5Bosses: SMT5BossData[] = [
 			'Toxic Cloud'
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Resist',
-				Mirage: 'Resist',
-				Poison: 'Resist',
-				Confusion: 'Resist',
-				Charm: 'Resist',
-				Seal: 'Resist'
-			},
-			weak: [
-				'Elec'
-			],
-			resist: [],
-			null: [
-				'Fire'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Null',
+			Elec: 'Weak',
+			Sleep: 'Resist',
+			Mirage: 'Resist',
+			Poison: 'Resist',
+			Confusion: 'Resist',
+			Charm: 'Resist',
+			Seal: 'Resist'
 		},
 		alignment: {
 			major: 'Light',
@@ -5788,26 +4908,16 @@ export const smt5Bosses: SMT5BossData[] = [
 			'Makajamaon'
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Resist',
-				Mirage: 'Resist',
-				Poison: 'Resist',
-				Confusion: 'Resist',
-				Charm: 'Resist',
-				Seal: 'Resist'
-			},
-			weak: [
-				'Fire'
-			],
-			resist: [
-				'Elec'
-			],
-			null: [
-				'Force',
-				'Light'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Weak',
+			Elec: 'Resist',
+			Force: 'Null',
+			Light: 'Null',
+			Sleep: 'Resist',
+			Mirage: 'Resist',
+			Poison: 'Resist',
+			Confusion: 'Resist',
+			Charm: 'Resist',
+			Seal: 'Resist'
 		},
 		alignment: {
 			major: 'Light',
@@ -5852,28 +4962,17 @@ export const smt5Bosses: SMT5BossData[] = [
 			'Call Soldiers'
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Resist',
-				Mirage: 'Resist',
-				Poison: 'Resist',
-				Confusion: 'Resist',
-				Charm: 'Resist',
-				Seal: 'Resist'
-			},
-			weak: [
-				'Ice'
-			],
-			resist: [
-				'Light',
-				'Dark'
-			],
-			null: [],
-			drain: [
-				'Force'
-			],
-			repel: [
-				'Elec'
-			]
+			Ice: 'Weak',
+			Elec: 'Repel',
+			Force: 'Drain',
+			Light: 'Resist',
+			Dark: 'Resist',
+			Sleep: 'Resist',
+			Mirage: 'Resist',
+			Poison: 'Resist',
+			Confusion: 'Resist',
+			Charm: 'Resist',
+			Seal: 'Resist'
 		},
 		alignment: {
 			major: 'Unknown',
@@ -5921,26 +5020,16 @@ export const smt5Bosses: SMT5BossData[] = [
 			'Frenzied Chomp'
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Resist',
-				Mirage: 'Weak',
-				Poison: 'Resist',
-				Confusion: 'Resist',
-				Charm: 'Resist',
-				Seal: 'Resist'
-			},
-			weak: [
-				'Ice'
-			],
-			resist: [
-				'Light',
-				'Dark'
-			],
-			null: [
-				'Elec'
-			],
-			drain: [],
-			repel: []
+			Ice: 'Weak',
+			Elec: 'Null',
+			Light: 'Resist',
+			Dark: 'Resist',
+			Sleep: 'Resist',
+			Mirage: 'Weak',
+			Poison: 'Resist',
+			Confusion: 'Resist',
+			Charm: 'Resist',
+			Seal: 'Resist'
 		},
 		alignment: {
 			major: 'Dark',
@@ -5982,26 +5071,17 @@ export const smt5Bosses: SMT5BossData[] = [
 			'Tarukaja'
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Resist',
-				Mirage: 'Resist',
-				Poison: 'Resist',
-				Confusion: 'Weak',
-				Charm: 'Resist',
-				Seal: 'Resist'
-			},
-			weak: [
-				'Fire',
-				'Force'
-			],
-			resist: [
-				'Phys',
-				'Light',
-				'Dark'
-			],
-			null: [],
-			drain: [],
-			repel: []
+			Phys: 'Resist',
+			Fire: 'Weak',
+			Force: 'Weak',
+			Light: 'Resist',
+			Dark: 'Resist',
+			Sleep: 'Resist',
+			Mirage: 'Resist',
+			Poison: 'Resist',
+			Confusion: 'Weak',
+			Charm: 'Resist',
+			Seal: 'Resist'
 		},
 		alignment: {
 			major: 'Neutral',
@@ -6049,28 +5129,18 @@ export const smt5Bosses: SMT5BossData[] = [
 			'Dragon Eye'
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Resist',
-				Mirage: 'Resist',
-				Poison: 'Resist',
-				Confusion: 'Resist',
-				Charm: 'Resist',
-				Seal: 'Resist'
-			},
-			weak: [
-				'Ice'
-			],
-			resist: [
-				'Phys',
-				'Light',
-				'Dark'
-			],
-			null: [],
-			drain: [
-				'Fire',
-				'Elec'
-			],
-			repel: []
+			Phys: 'Resist',
+			Fire: 'Drain',
+			Ice: 'Weak',
+			Elec: 'Drain',
+			Light: 'Resist',
+			Dark: 'Resist',
+			Sleep: 'Resist',
+			Mirage: 'Resist',
+			Poison: 'Resist',
+			Confusion: 'Resist',
+			Charm: 'Resist',
+			Seal: 'Resist'
 		},
 		alignment: {
 			major: 'Light',
@@ -6117,24 +5187,15 @@ export const smt5Bosses: SMT5BossData[] = [
 			'Mist Rush'
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Resist',
-				Mirage: 'Resist',
-				Poison: 'Resist',
-				Confusion: 'Resist',
-				Charm: 'Resist',
-				Seal: 'Resist'
-			},
-			weak: [
-				'Dark'
-			],
-			resist: [
-				'Phys',
-				'Elec'
-			],
-			null: [],
-			drain: [],
-			repel: []
+			Phys: 'Resist',
+			Elec: 'Resist',
+			Dark: 'Weak',
+			Sleep: 'Resist',
+			Mirage: 'Resist',
+			Poison: 'Resist',
+			Confusion: 'Resist',
+			Charm: 'Resist',
+			Seal: 'Resist'
 		},
 		alignment: {
 			major: 'Light',
@@ -6180,26 +5241,16 @@ export const smt5Bosses: SMT5BossData[] = [
 			'Makarakarn'
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Resist',
-				Mirage: 'Resist',
-				Poison: 'Resist',
-				Confusion: 'Resist',
-				Charm: 'Resist',
-				Seal: 'Resist'
-			},
-			weak: [
-				'Force'
-			],
-			resist: [
-				'Ice',
-				'Elec'
-			],
-			null: [],
-			drain: [
-				'Light'
-			],
-			repel: []
+			Ice: 'Resist',
+			Elec: 'Resist',
+			Force: 'Weak',
+			Light: 'Drain',
+			Sleep: 'Resist',
+			Mirage: 'Resist',
+			Poison: 'Resist',
+			Confusion: 'Resist',
+			Charm: 'Resist',
+			Seal: 'Resist'
 		},
 		alignment: {
 			major: 'Light',
@@ -6243,26 +5294,16 @@ export const smt5Bosses: SMT5BossData[] = [
 			'Blinding Strike'
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Resist',
-				Mirage: 'Resist',
-				Poison: 'Resist',
-				Confusion: 'Resist',
-				Charm: 'Resist',
-				Seal: 'Resist'
-			},
-			weak: [
-				'Elec'
-			],
-			resist: [
-				'Light',
-				'Dark'
-			],
-			null: [
-				'Ice'
-			],
-			drain: [],
-			repel: []
+			Ice: 'Null',
+			Elec: 'Weak',
+			Light: 'Resist',
+			Dark: 'Resist',
+			Sleep: 'Resist',
+			Mirage: 'Resist',
+			Poison: 'Resist',
+			Confusion: 'Resist',
+			Charm: 'Resist',
+			Seal: 'Resist'
 		},
 		alignment: {
 			major: 'Light',
@@ -6308,23 +5349,14 @@ export const smt5Bosses: SMT5BossData[] = [
 			'Maragi'
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Resist',
-				Mirage: 'Resist',
-				Poison: 'Resist',
-				Confusion: 'Resist',
-				Charm: 'Resist',
-				Seal: 'Resist'
-			},
-			weak: [
-				'Ice'
-			],
-			resist: [],
-			null: [],
-			drain: [
-				'Fire'
-			],
-			repel: []
+			Fire: 'Drain',
+			Ice: 'Weak',
+			Sleep: 'Resist',
+			Mirage: 'Resist',
+			Poison: 'Resist',
+			Confusion: 'Resist',
+			Charm: 'Resist',
+			Seal: 'Resist'
 		},
 		alignment: {
 			major: 'Dark',
@@ -6367,23 +5399,14 @@ export const smt5Bosses: SMT5BossData[] = [
 			'Mazionga'
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Resist',
-				Mirage: 'Resist',
-				Poison: 'Resist',
-				Confusion: 'Resist',
-				Charm: 'Resist',
-				Seal: 'Resist'
-			},
-			weak: [
-				'Fire'
-			],
-			resist: [
-				'Elec'
-			],
-			null: [],
-			drain: [],
-			repel: []
+			Fire: 'Weak',
+			Elec: 'Resist',
+			Sleep: 'Resist',
+			Mirage: 'Resist',
+			Poison: 'Resist',
+			Confusion: 'Resist',
+			Charm: 'Resist',
+			Seal: 'Resist'
 		},
 		alignment: {
 			major: 'Light',
@@ -6420,21 +5443,13 @@ export const smt5Bosses: SMT5BossData[] = [
 		},
 		skills: [],
 		resistances: {
-			ailments: {
-				Sleep: 'Null',
-				Mirage: 'Null',
-				Poison: 'Null',
-				Confusion: 'Null',
-				Charm: 'Null',
-				Seal: 'Null'
-			},
-			weak: [
-				'Fire'
-			],
-			resist: [],
-			null: [],
-			drain: [],
-			repel: []
+			Fire: 'Weak',
+			Sleep: 'Null',
+			Mirage: 'Null',
+			Poison: 'Null',
+			Confusion: 'Null',
+			Charm: 'Null',
+			Seal: 'Null'
 		},
 		alignment: {
 			major: 'Light',
@@ -6477,23 +5492,14 @@ export const smt5Bosses: SMT5BossData[] = [
 			'Sonic Boom'
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Resist',
-				Mirage: 'Resist',
-				Poison: 'Resist',
-				Confusion: 'Resist',
-				Charm: 'Resist',
-				Seal: 'Resist'
-			},
-			weak: [
-				'Force'
-			],
-			resist: [],
-			null: [
-				'Elec'
-			],
-			drain: [],
-			repel: []
+			Elec: 'Null',
+			Force: 'Weak',
+			Sleep: 'Resist',
+			Mirage: 'Resist',
+			Poison: 'Resist',
+			Confusion: 'Resist',
+			Charm: 'Resist',
+			Seal: 'Resist'
 		},
 		alignment: {
 			major: 'Light',
@@ -6540,27 +5546,18 @@ export const smt5Bosses: SMT5BossData[] = [
 			'Dekaja'
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Null',
-				Mirage: 'Resist',
-				Poison: 'Resist',
-				Confusion: 'Resist',
-				Charm: 'Resist',
-				Seal: 'Null'
-			},
-			weak: [],
-			resist: [
-				'Fire',
-				'Ice',
-				'Elec',
-				'Force'
-			],
-			null: [
-				'Light',
-				'Dark'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Resist',
+			Ice: 'Resist',
+			Elec: 'Resist',
+			Force: 'Resist',
+			Light: 'Null',
+			Dark: 'Null',
+			Sleep: 'Null',
+			Mirage: 'Resist',
+			Poison: 'Resist',
+			Confusion: 'Resist',
+			Charm: 'Resist',
+			Seal: 'Null'
 		},
 		alignment: {
 			major: 'Unknown',
@@ -6612,27 +5609,16 @@ export const smt5Bosses: SMT5BossData[] = [
 			'Debilitate'
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Resist',
-				Mirage: 'Resist',
-				Poison: 'Resist',
-				Confusion: 'Resist',
-				Charm: 'Resist',
-				Seal: 'Null'
-			},
-			weak: [
-				'Fire'
-			],
-			resist: [
-				'Elec'
-			],
-			null: [
-				'Light'
-			],
-			drain: [
-				'Ice'
-			],
-			repel: []
+			Fire: 'Weak',
+			Ice: 'Drain',
+			Elec: 'Resist',
+			Light: 'Null',
+			Sleep: 'Resist',
+			Mirage: 'Resist',
+			Poison: 'Resist',
+			Confusion: 'Resist',
+			Charm: 'Resist',
+			Seal: 'Null'
 		},
 		alignment: {
 			major: 'Light',
@@ -6679,26 +5665,16 @@ export const smt5Bosses: SMT5BossData[] = [
 			'Mighty Cleave'
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Resist',
-				Mirage: 'Resist',
-				Poison: 'Resist',
-				Confusion: 'Resist',
-				Charm: 'Resist',
-				Seal: 'Resist'
-			},
-			weak: [
-				'Ice'
-			],
-			resist: [
-				'Elec'
-			],
-			null: [
-				'Fire',
-				'Light'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Null',
+			Ice: 'Weak',
+			Elec: 'Resist',
+			Light: 'Null',
+			Sleep: 'Resist',
+			Mirage: 'Resist',
+			Poison: 'Resist',
+			Confusion: 'Resist',
+			Charm: 'Resist',
+			Seal: 'Resist'
 		},
 		alignment: {
 			major: 'Light',
@@ -6746,25 +5722,15 @@ export const smt5Bosses: SMT5BossData[] = [
 			'Venom Chaser'
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Null',
-				Mirage: 'Null',
-				Poison: 'Null',
-				Confusion: 'Resist',
-				Charm: 'Resist',
-				Seal: 'Resist'
-			},
-			weak: [
-				'Fire'
-			],
-			resist: [
-				'Dark'
-			],
-			null: [],
-			drain: [],
-			repel: [
-				'Ice'
-			]
+			Fire: 'Weak',
+			Ice: 'Repel',
+			Dark: 'Resist',
+			Sleep: 'Null',
+			Mirage: 'Null',
+			Poison: 'Null',
+			Confusion: 'Resist',
+			Charm: 'Resist',
+			Seal: 'Resist'
 		},
 		alignment: {
 			major: 'Dark',
@@ -6810,26 +5776,16 @@ export const smt5Bosses: SMT5BossData[] = [
 			'Call Angels'
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Resist',
-				Mirage: 'Resist',
-				Poison: 'Resist',
-				Confusion: 'Resist',
-				Charm: 'Resist',
-				Seal: 'Resist'
-			},
-			weak: [
-				'Elec'
-			],
-			resist: [
-				'Light',
-				'Dark'
-			],
-			null: [],
-			drain: [],
-			repel: [
-				'Fire'
-			]
+			Fire: 'Repel',
+			Elec: 'Weak',
+			Light: 'Resist',
+			Dark: 'Resist',
+			Sleep: 'Resist',
+			Mirage: 'Resist',
+			Poison: 'Resist',
+			Confusion: 'Resist',
+			Charm: 'Resist',
+			Seal: 'Resist'
 		},
 		alignment: {
 			major: 'Unknown',
@@ -6876,23 +5832,14 @@ export const smt5Bosses: SMT5BossData[] = [
 			'Critical Aura'
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Resist',
-				Mirage: 'Resist',
-				Poison: 'Weak',
-				Confusion: 'Resist',
-				Charm: 'Resist',
-				Seal: 'Resist'
-			},
-			weak: [
-				'Fire'
-			],
-			resist: [],
-			null: [
-				'Ice'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Weak',
+			Ice: 'Null',
+			Sleep: 'Resist',
+			Mirage: 'Resist',
+			Poison: 'Weak',
+			Confusion: 'Resist',
+			Charm: 'Resist',
+			Seal: 'Resist'
 		},
 		alignment: {
 			major: 'Light',
@@ -6939,25 +5886,16 @@ export const smt5Bosses: SMT5BossData[] = [
 			'Pandemonic Crush'
 		],
 		resistances: {
-			ailments: {
-				Poison: 'Resist',
-				Seal: 'Resist',
-				Sleep: 'Null',
-				Mirage: 'Null',
-				Confusion: 'Null',
-				Charm: 'Null'
-			},
-			weak: [
-				'Elec'
-			],
-			resist: [
-				'Fire',
-				'Light',
-				'Dark'
-			],
-			null: [],
-			drain: [],
-			repel: []
+			Fire: 'Resist',
+			Elec: 'Weak',
+			Light: 'Resist',
+			Dark: 'Resist',
+			Poison: 'Resist',
+			Seal: 'Resist',
+			Sleep: 'Null',
+			Mirage: 'Null',
+			Confusion: 'Null',
+			Charm: 'Null'
 		},
 		alignment: {
 			major: 'Light',
@@ -7004,25 +5942,16 @@ export const smt5Bosses: SMT5BossData[] = [
 			'Brave Blade'
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Resist',
-				Mirage: 'Resist',
-				Poison: 'Resist',
-				Confusion: 'Resist',
-				Charm: 'Resist',
-				Seal: 'Resist'
-			},
-			weak: [
-				'Force'
-			],
-			resist: [],
-			null: [
-				'Elec',
-				'Light',
-				'Dark'
-			],
-			drain: [],
-			repel: []
+			Elec: 'Null',
+			Force: 'Weak',
+			Light: 'Null',
+			Dark: 'Null',
+			Sleep: 'Resist',
+			Mirage: 'Resist',
+			Poison: 'Resist',
+			Confusion: 'Resist',
+			Charm: 'Resist',
+			Seal: 'Resist'
 		},
 		alignment: {
 			major: 'Light',
@@ -7070,25 +5999,16 @@ export const smt5Bosses: SMT5BossData[] = [
 			'Luster Candy'
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Resist',
-				Mirage: 'Resist',
-				Poison: 'Resist',
-				Confusion: 'Resist',
-				Charm: 'Resist',
-				Seal: 'Resist'
-			},
-			weak: [
-				'Force'
-			],
-			resist: [],
-			null: [
-				'Elec',
-				'Light',
-				'Dark'
-			],
-			drain: [],
-			repel: []
+			Elec: 'Null',
+			Force: 'Weak',
+			Light: 'Null',
+			Dark: 'Null',
+			Sleep: 'Resist',
+			Mirage: 'Resist',
+			Poison: 'Resist',
+			Confusion: 'Resist',
+			Charm: 'Resist',
+			Seal: 'Resist'
 		},
 		alignment: {
 			major: 'Light',
@@ -7134,23 +6054,14 @@ export const smt5Bosses: SMT5BossData[] = [
 			'Lullaby'
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Resist',
-				Mirage: 'Resist',
-				Poison: 'Resist',
-				Confusion: 'Resist',
-				Charm: 'Weak',
-				Seal: 'Resist'
-			},
-			weak: [
-				'Ice'
-			],
-			resist: [],
-			null: [
-				'Fire'
-			],
-			drain: [],
-			repel: []
+			Fire: 'Null',
+			Ice: 'Weak',
+			Sleep: 'Resist',
+			Mirage: 'Resist',
+			Poison: 'Resist',
+			Confusion: 'Resist',
+			Charm: 'Weak',
+			Seal: 'Resist'
 		},
 		alignment: {
 			major: 'Light',
@@ -7195,23 +6106,14 @@ export const smt5Bosses: SMT5BossData[] = [
 			'Dormina'
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Resist',
-				Mirage: 'Resist',
-				Poison: 'Resist',
-				Confusion: 'Resist',
-				Charm: 'Resist',
-				Seal: 'Resist'
-			},
-			weak: [
-				'Force'
-			],
-			resist: [],
-			null: [
-				'Light'
-			],
-			drain: [],
-			repel: []
+			Force: 'Weak',
+			Light: 'Null',
+			Sleep: 'Resist',
+			Mirage: 'Resist',
+			Poison: 'Resist',
+			Confusion: 'Resist',
+			Charm: 'Resist',
+			Seal: 'Resist'
 		},
 		alignment: {
 			major: 'Light',
@@ -7257,23 +6159,14 @@ export const smt5Bosses: SMT5BossData[] = [
 			'Dekunda'
 		],
 		resistances: {
-			ailments: {
-				Sleep: 'Resist',
-				Mirage: 'Resist',
-				Poison: 'Resist',
-				Confusion: 'Resist',
-				Charm: 'Resist',
-				Seal: 'Resist'
-			},
-			weak: [
-				'Force'
-			],
-			resist: [],
-			null: [
-				'Light'
-			],
-			drain: [],
-			repel: []
+			Force: 'Weak',
+			Light: 'Null',
+			Sleep: 'Resist',
+			Mirage: 'Resist',
+			Poison: 'Resist',
+			Confusion: 'Resist',
+			Charm: 'Resist',
+			Seal: 'Resist'
 		},
 		alignment: {
 			major: 'Light',
