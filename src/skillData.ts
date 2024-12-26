@@ -939,7 +939,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'CHARGE',
 		range: 'Self',
 		cost: 20,
-		charge: 'Recovery'
+		charge: 'Recovery Charge'
 	},
 	{
 		name: 'Brain Buster',
@@ -1254,7 +1254,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'CHARGE',
 		range: 'Self',
 		cost: 10,
-		charge: 'Charge'
+		charge: 'Phys Charge'
 	},
 	{
 		name: 'Charm Boost',
@@ -1359,7 +1359,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'CHARGE',
 		range: 'Self',
 		cost: 10,
-		charge: 'Concentrate'
+		charge: 'Magic Charge'
 	},
 	{
 		name: 'Confuse Boost',
@@ -1481,7 +1481,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'CHARGE',
 		range: 'Self',
 		cost: 25,
-		charge: 'Critical'
+		charge: 'Critical Charge'
 	},
 	{
 		name: 'Critical Slash',
@@ -2069,7 +2069,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'CHARGE',
 		range: 'Ally',
 		cost: 40,
-		charge: 'Charge'
+		charge: 'Phys Charge'
 	},
 	{
 		name: 'Donum Magici',
@@ -2077,7 +2077,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'CHARGE',
 		range: 'Ally',
 		cost: 40,
-		charge: 'Concentrate'
+		charge: 'Magic Charge'
 	},
 	{
 		name: 'Door of Hades',
@@ -2884,7 +2884,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'CHARGE',
 		range: 'Party',
 		cost: 80,
-		charge: 'Charge'
+		charge: 'Phys Charge'
 	},
 	{
 		name: 'Figment Slash',
@@ -3343,7 +3343,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		negate: false,
 		debuffs: [],
 		auto: [
-			'Concentrate'
+			'Magic Charge'
 		]
 	},
 	{
@@ -4211,7 +4211,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'CHARGE',
 		range: 'Party',
 		cost: 80,
-		charge: 'Concentrate'
+		charge: 'Magic Charge'
 	},
 	{
 		name: 'High Fire Pleroma',
@@ -4495,7 +4495,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'CHARGE',
 		range: 'Self',
 		cost: 50,
-		charge: 'Pierce'
+		charge: 'Pierce Charge'
 	},
 	{
 		name: 'Impetus',
@@ -7484,7 +7484,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		unique: null,
 		range: 'Ally',
 		cost: 15,
-		charge: 'Concentrate'
+		charge: 'Magic Charge'
 	},
 	{
 		name: 'Primal Force',
@@ -9831,7 +9831,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		unique: null,
 		range: 'Ally',
 		cost: 15,
-		charge: 'Charge'
+		charge: 'Phys Charge'
 	},
 	{
 		name: 'Ultimate Support',

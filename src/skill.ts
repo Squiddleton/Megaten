@@ -443,21 +443,25 @@ export class ChargeSkill extends Skill implements ChargeSkillData {
 		super(data);
 
 		switch (charge) {
-			case 'Critical': {
+			case 'Critical Charge': {
 				this.description = 'Next Strength-based attack of self will be 100% accurate and guaranteed Critical.';
 				break;
 			}
-			case 'Pierce': {
-				this.description = 'Increases the damage of the next attack and adds Pierce effect for self.';
-				break;
-			}
-			case 'Recovery': {
+			case 'Recovery Charge': {
 				this.description = 'Greatly increases the effect of the next HP healing skill of self and allows it to heal above MAX HP.';
 				break;
 			}
+			case 'Pierce Charge': {
+				this.description = 'Increases the damage of the next attack and adds Pierce effect for self.';
+				break;
+			}
+			case 'Successive Strikes': {
+				this.description = 'Causes the next attack of self to be performed 4 times consecutively.';
+				break;
+			}
 			default: this.description = range === 'Party'
-				? `Next ${charge === 'Charge' ? 'physical' : 'magical'} attack deals over double the damage for all allies.`
-				: `Greatly increases damage of the next ${charge === 'Charge' ? 'Strength' : 'Magic'}-based attack ${range === 'Self' ? 'from self' : 'on 1 ally'}.`;
+				? `Next ${charge === 'Phys Charge' ? 'physical' : 'magical'} attack deals over double the damage for all allies.`
+				: `Greatly increases damage of the next ${charge === 'Phys Charge' ? 'Strength' : 'Magic'}-based attack ${range === 'Self' ? 'from self' : 'on 1 ally'}.`;
 		}
 
 		this.charge = charge;
