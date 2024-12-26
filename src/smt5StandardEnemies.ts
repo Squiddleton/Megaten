@@ -47,8 +47,8 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Neutral',
-			ethical: 'Chaos'
+			major: 'Neutral',
+			minor: 'Chaos'
 		},
 		lore: 'Chancellor of Hell and supervisor of Satan\'s wardrobe. He has the body of a mule, though he may also sometimes appear as a peacock.\nHe was worshipped by the Assyrians, who occasionally offered him children as sacrifice.',
 		itemDrops: [
@@ -99,8 +99,8 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Neutral',
-			ethical: 'Law'
+			major: 'Neutral',
+			minor: 'Law'
 		},
 		lore: 'A familiar with no physical body that only appears during the day.\nThere is no consensus on the appearance of an Agathion: it can resemble a human, bird, or animal. They are usually sealed away in bottles or pots but can also be sealed in rings or talismans. The term Agathion is also used as a general term for familiars.',
 		itemDrops: [
@@ -152,8 +152,8 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Dark',
-			ethical: 'Chaos'
+			major: 'Dark',
+			minor: 'Chaos'
 		},
 		lore: 'A fairy in Lithuanian mythology.\nIndoors, it takes the form of a black cat or rooster. Outdoors, it takes the form of a small dragon or a snake with a burning tail. The Aitvaras makes the home it inhabits rich by stealing from its neighbors. It is said that it typically demands an omelette as compensation and is difficult to chase away once it\'s settled into a home. It can, however, be exterminated by shining it with the flame of a candle purified by the church.',
 		itemDrops: [
@@ -207,8 +207,8 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Neutral',
-			ethical: 'Chaos'
+			major: 'Neutral',
+			minor: 'Chaos'
 		},
 		lore: 'One of the 72 demons of the Goetia.\nThe great Marquis of Hell, he appears where there is battle to stoke the hatred within soldiers. He helps defeat the enemies of those who summon him.',
 		itemDrops: [
@@ -263,8 +263,8 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Dark',
-			ethical: 'Law'
+			major: 'Dark',
+			minor: 'Law'
 		},
 		lore: 'An evil deity of Mesopotamian folklore with an eagle\'s body and lion\'s head.\nWhile the god Enlil purified himself, Anzu stole the Tablet of Destinies from him in an attempt to become the chief god.',
 		itemDrops: [
@@ -318,8 +318,8 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Neutral',
-			ethical: 'Chaos'
+			major: 'Neutral',
+			minor: 'Chaos'
 		},
 		lore: 'One of the three Moirae Sisters in Greek mythology.\nShe cuts the life threads of those whose time has come.',
 		itemDrops: [
@@ -369,8 +369,8 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Neutral',
-			ethical: 'Chaos'
+			major: 'Neutral',
+			minor: 'Chaos'
 		},
 		lore: 'A water deity of the Azumi, a Japanese seafaring tribe. As such, it can freely control water.\nThe three gods born from Izanagi after he returned from Yomi are said to be the Azumi tribe\'s ancestors.',
 		itemDrops: [
@@ -423,8 +423,8 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Dark',
-			ethical: 'Chaos'
+			major: 'Dark',
+			minor: 'Chaos'
 		},
 		lore: 'An idol commonly worshipped by the Knights Templar.\nIt is a demon with the head of a goat.\nThis figure later became the idol of worship for witches as well.',
 		itemDrops: [
@@ -478,8 +478,8 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Dark',
-			ethical: 'Chaos'
+			major: 'Dark',
+			minor: 'Chaos'
 		},
 		lore: 'A dark dragon from Northern Africa marked by wings and a crested crown.\nIts name means "king of snakes," and both its breath and gaze are so toxic that they instantly kill any human or animal unfortunate enough to be subjected to them.',
 		itemDrops: [
@@ -531,8 +531,8 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Neutral',
-			ethical: 'Chaos'
+			major: 'Neutral',
+			minor: 'Chaos'
 		},
 		lore: 'One of the 72 demons of Goetia.\nKnown as the Duke of Hell, he rides a gigantic horse and burns those without manners.',
 		itemDrops: [
@@ -583,8 +583,8 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Dark',
-			ethical: 'Neutral'
+			major: 'Dark',
+			minor: 'Neutral'
 		},
 		lore: 'An evil creature that looks like a horse with two curving horns.\nIt is said to be the opposite of a Chichevache, but theory speculates that it is actually a mistranslation of "Re\'em," a two-horned beast that appears in the Old Testament.',
 		itemDrops: [
@@ -640,8 +640,8 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Dark',
-			ethical: 'Chaos'
+			major: 'Dark',
+			minor: 'Chaos'
 		},
 		lore: 'An amoeba-like monster that attacks and eats people.\nSupposedly, it is actually a demon that failed to take form and now roams in search of Magatsushi. It is said that when a Slime\'s ability to absorb Magatsuhi goes out of control, it transforms into a Black Ooze.',
 		itemDrops: [
@@ -694,8 +694,8 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Dark',
-			ethical: 'Neutral'
+			major: 'Dark',
+			minor: 'Neutral'
 		},
 		lore: 'A type of goblin from Welsh folklore that eats children who don\'t listen to their parents.\nThey are said to look like humans covered head to toe with hair, and are recognized as an iconic monster that appears at nighttime. They are often spoken of by mothers wishing to discipline their children as noted in the popular phrase, "For naughty kids who disobey, the Bugs will come and surely prey."',
 		itemDrops: [
@@ -745,8 +745,8 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Neutral',
-			ethical: 'Neutral'
+			major: 'Neutral',
+			minor: 'Neutral'
 		},
 		lore: 'A fae beast from the Scottish highlands whose kingdoms can be found in tree hollows or abandoned houses.\nDog-sized, they have white tufts or hair on their chest, green, intelligent eyes, and are even capable of understanding the human language. Though they usually stick to their territory, some have been known to live with humans as normal black cats. They are generally peaceful, but should a human treat one poorly, they will forcibly take that human to their kingdom.',
 		itemDrops: [
@@ -800,8 +800,8 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			]
 		},
 		alignment: {
-			moral: 'Neutral',
-			ethical: 'Neutral'
+			major: 'Neutral',
+			minor: 'Neutral'
 		},
 		lore: 'The guardian hound of Hades in Greek lore.\nIt traditionally has three heads and a snake\'s tail. It was born from Typhon, the giant of wind, and Echidna, the mother of monsters. It is also the older brother of Orthrus.',
 		itemDrops: [
@@ -857,8 +857,8 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			]
 		},
 		alignment: {
-			moral: 'Dark',
-			ethical: 'Chaos'
+			major: 'Dark',
+			minor: 'Chaos'
 		},
 		lore: 'A Chinese god of war, often depicted with a bull\'s head, six or eight arms and four eyes.\nHe invented many weapons and commanded an invincible army. Seeking control of the land, he fought with Huang Di and though he was winning, Huang Di invented something of his own, the South-Pointing Chariot and promptly defeated him. Huang Di then had Chi You\'s head buried thousands of li apart from his body.',
 		itemDrops: [
@@ -911,8 +911,8 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Light',
-			ethical: 'Neutral'
+			major: 'Light',
+			minor: 'Neutral'
 		},
 		lore: '"Fox" in the Ainu tongue. Though "Sumari" is another word for "fox," chironnupu refers to "those who we kill" — which is to say, the various small-to-medium-sized Canidae.\nIt is also a divine beast that alerts people to forthcoming disasters by howling loudly from the mountains.',
 		itemDrops: [
@@ -966,8 +966,8 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Neutral',
-			ethical: 'Chaos'
+			major: 'Neutral',
+			minor: 'Chaos'
 		},
 		lore: 'One of the three Moirae Sisters in Greek mythology.\nShe is the spinner of the threads of fate.',
 		itemDrops: [
@@ -1020,8 +1020,8 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Neutral',
-			ethical: 'Chaos'
+			major: 'Neutral',
+			minor: 'Chaos'
 		},
 		lore: 'A low-ranking class of spirits. While the name may conjure up familiar images of "demons" due to Christianity\'s influence, daemons were not strictly associated with good or evil and simply thought to be lesser supernatural beings, sometimes acting as tutelary spirits that guided the souls of men.\nWhat might be considered a demon today would\'ve been called a "cacodaemon" in ancient Greece — that is, an evil spirit. In contrast, their benevolent counterparts were known as "agathodaemons."',
 		itemDrops: [
@@ -1076,8 +1076,8 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Neutral',
-			ethical: 'Chaos'
+			major: 'Neutral',
+			minor: 'Chaos'
 		},
 		lore: 'Hindu deities of passion and relations. They are Kali\'s attendants.\nThey eat human flesh and gather at graveyards and crematories each night. Their name means "sky dancer."',
 		itemDrops: [
@@ -1128,8 +1128,8 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Neutral',
-			ethical: 'Chaos'
+			major: 'Neutral',
+			minor: 'Chaos'
 		},
 		lore: 'One of the 72 demons of the Goetia.\nHe comes in the shape of a star and has vast knowledge of herbs and jewels. He can also control birds at will.',
 		itemDrops: [
@@ -1182,8 +1182,8 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Neutral',
-			ethical: 'Chaos'
+			major: 'Neutral',
+			minor: 'Chaos'
 		},
 		lore: 'One of the 72 demons of the Goetia.\nHe takes the appearance of a knight and has the power to see things to come. He also possesses great knowledge of many wars.',
 		itemDrops: [
@@ -1238,8 +1238,8 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Dark',
-			ethical: 'Chaos'
+			major: 'Dark',
+			minor: 'Chaos'
 		},
 		lore: 'An evil dragon of Norse lore, it was vanquished by the hero Siegfried.\nAccording to the Volsunga saga, it was extremely venomous, had legs like snakes, and shook the ground with every step.',
 		itemDrops: [
@@ -1294,8 +1294,8 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Neutral',
-			ethical: 'Chaos'
+			major: 'Neutral',
+			minor: 'Chaos'
 		},
 		lore: 'One of the 72 demons of the Goetia.\nHe appears as a leopard and can see the past and future. He can control fire, which he uses to burn his adversaries to death.',
 		itemDrops: [
@@ -1350,8 +1350,8 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Neutral',
-			ethical: 'Chaos'
+			major: 'Neutral',
+			minor: 'Chaos'
 		},
 		lore: 'One of the 72 demons of the Goetia.\nHe appears as a great sea monster and is skilled in many languages in addition to being a master of rhetoric.',
 		itemDrops: [
@@ -1405,8 +1405,8 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Neutral',
-			ethical: 'Chaos'
+			major: 'Neutral',
+			minor: 'Chaos'
 		},
 		lore: 'One of the four oni controlled by Fujiwara no Chikata, it sends hurricanes to blow away its enemies.\nSome say that Fuu-Ki is the original ninja.',
 		itemDrops: [
@@ -1465,8 +1465,8 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			]
 		},
 		alignment: {
-			moral: 'Dark',
-			ethical: 'Law'
+			major: 'Dark',
+			minor: 'Law'
 		},
 		lore: 'A giant elephant monster of Sri Lankan mythology.\nIt is typically portrayed as being ridden by Mara, the Evil One. Whoever looks into its evil eye is said to be met with great misfortune.',
 		itemDrops: [
@@ -1519,8 +1519,8 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			]
 		},
 		alignment: {
-			moral: 'Light',
-			ethical: 'Neutral'
+			major: 'Light',
+			minor: 'Neutral'
 		},
 		lore: 'A hero of Hindu descent. He can transform into anything, fly, and possesses incredible strength.\nHe performed many heroic deeds in the Ramayana and is most always depicted as a monkey.',
 		itemDrops: [
@@ -1575,8 +1575,8 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Dark',
-			ethical: 'Neutral'
+			major: 'Dark',
+			minor: 'Neutral'
 		},
 		lore: 'Giants born from Uranus and Gaia in Greek mythology. The name means "those with a hundred arms."\nDuring the war of the Titans, Zeus freed them from the underworld to help him obtain victory.',
 		itemDrops: [
@@ -1629,8 +1629,8 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Neutral',
-			ethical: 'Neutral'
+			major: 'Neutral',
+			minor: 'Neutral'
 		},
 		lore: 'Tree spirits in Chinese mythology that are born when three or more people hang themselves from the same tree.\nThey take the form of a beautiful woman in white clothing, however they are much smaller in size than a human. They cannot talk, though they can chirp like birds.',
 		itemDrops: [
@@ -1684,8 +1684,8 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Neutral',
-			ethical: 'Chaos'
+			major: 'Neutral',
+			minor: 'Chaos'
 		},
 		lore: 'A male demon of popular European folklore during medieval ages and the counterpart to the Succubus.\nThey are known to visit women in their sleep and have sex with them. The offspring born from these incidents are said to later become witches and wizards.',
 		itemDrops: [
@@ -1738,8 +1738,8 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Neutral',
-			ethical: 'Neutral'
+			major: 'Neutral',
+			minor: 'Neutral'
 		},
 		lore: 'Spirits of dogs said to possess humans in Japanese folklore.\nThose possessed enter a state of "inu-tsuki" and go crazy. Onmyoji, or Japanese sorcerers, summon them to do their will.',
 		itemDrops: [
@@ -1790,8 +1790,8 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Neutral',
-			ethical: 'Chaos'
+			major: 'Neutral',
+			minor: 'Chaos'
 		},
 		lore: 'A monster with one eye and one leg, said to live deep in the mountains of Kumano, Japan.\nA single footprint measuring 30 cm has been sighted in the snowy mountains.',
 		itemDrops: [
@@ -1844,8 +1844,8 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Neutral',
-			ethical: 'Neutral'
+			major: 'Neutral',
+			minor: 'Neutral'
 		},
 		lore: 'A frost spirit made from ice and snow that appears during the winter and melts away in the spring.\nDo not be fooled by his cute demeanor, however, for Jack Frost is known to freeze people with his cold breath, smiling all the while. Some suggest that he originally looked like an abominable snowman, but may have changed form to appear more approachable and thus more easily lure in his victims.',
 		itemDrops: [
@@ -1898,8 +1898,8 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Neutral',
-			ethical: 'Neutral'
+			major: 'Neutral',
+			minor: 'Neutral'
 		},
 		lore: 'An Irish spirit typically found in swamps, bogs, or marshes.\nSaid to be spirits of the dead, Jack-o\'-Lanterns appear as floating flames and are known around the world by various names such as "Will-o\'-the-Wisp" and "Hitodama." They are also said to come out at night to startle travelers and make them lose their way.',
 		itemDrops: [
@@ -1952,8 +1952,8 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Neutral',
-			ethical: 'Chaos'
+			major: 'Neutral',
+			minor: 'Chaos'
 		},
 		lore: 'A god in Assyrian legend, his name is interchangeable with Sakkut, another incarnation of the star-god, Saturn.',
 		itemDrops: [
@@ -2010,8 +2010,8 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			]
 		},
 		alignment: {
-			moral: 'Neutral',
-			ethical: 'Chaos'
+			major: 'Neutral',
+			minor: 'Chaos'
 		},
 		lore: 'The Black One, a symbol of death and destruction.\nShe is said to be another face of Parvati, Shiva\'s consort. Wearing a necklace of human heads, she wields numerous bloody swords, one for each of her many arms. It is said that when Durga, another form of Parvati, was fighting the Asuras, she summoned Kali and defeated the Asura army in an instant.',
 		itemDrops: [
@@ -2066,8 +2066,8 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Neutral',
-			ethical: 'Neutral'
+			major: 'Neutral',
+			minor: 'Neutral'
 		},
 		lore: 'A goddess of grasses in Japanese mythology.\nThe name "Kaya" refers to the grass that was used to build traditional grass-roof houses, highlighting its importance to the people of ancient Japan.',
 		itemDrops: [
@@ -2120,8 +2120,8 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Neutral',
-			ethical: 'Neutral'
+			major: 'Neutral',
+			minor: 'Neutral'
 		},
 		lore: 'A fairy of Celtic folklore that lives by the water and takes the appearance of a horse.\nThey often drown those who attempt to ride them, but, if tames, they can be valuable mounts.',
 		itemDrops: [
@@ -2175,8 +2175,8 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Neutral',
-			ethical: 'Chaos'
+			major: 'Neutral',
+			minor: 'Chaos'
 		},
 		lore: 'One of the four oni controlled by Fujiwara no Chikata, its body is so hard that no weapons can penetrate it.\nIt and its comrades fell into hell through holes that can still be found in Mie Prefecture, Japan (the modern-day Iga Province).',
 		itemDrops: [
@@ -2227,8 +2227,8 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Neutral',
-			ethical: 'Neutral'
+			major: 'Neutral',
+			minor: 'Neutral'
 		},
 		lore: 'In Japanese mythology, they are the spirits of plants. They are born from trees that live 100 years.\nIt was once thought that the echoes heard in valleys were actually from Kodama replying.',
 		itemDrops: [
@@ -2281,8 +2281,8 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Neutral',
-			ethical: 'Law'
+			major: 'Neutral',
+			minor: 'Law'
 		},
 		lore: 'A smaller member of the Tengu race less powerful than other Tengu.\nThey are believed to be an incarnation of an old wolf and are capable of eventually transforming into Karasu Tengu.',
 		itemDrops: [
@@ -2339,8 +2339,8 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Neutral',
-			ethical: 'Neutral'
+			major: 'Neutral',
+			minor: 'Neutral'
 		},
 		lore: 'Small human-like creatures that have kind, calm personalities.\nOnce coexisting with the Ainu people of Japan, there was a falling out at some point, and they disappeared.',
 		itemDrops: [
@@ -2399,8 +2399,8 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Dark',
-			ethical: 'Chaos'
+			major: 'Dark',
+			minor: 'Chaos'
 		},
 		lore: 'Demons of Buddhist origin, known for draining the life energy of humans.\nIt is said that they often change shape and take the form of a gourd. They stand three meters tall, with red hair and dark skin, and have the body of a human but the head of a white horse. They once served Rudra, but according to Buddhist scriptures, they now follow Zouchouten of the Four Heavenly Kings.',
 		itemDrops: [
@@ -2454,8 +2454,8 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Light',
-			ethical: 'Neutral'
+			major: 'Light',
+			minor: 'Neutral'
 		},
 		lore: 'A tengu that is said to have lived in Mt. Kurama in Kyoto.\nThe most powerful and well-known of the tengu, he has the power to fend off disease and bring good fortune. He is also said to have trained Yoshitsune how to fight with a sword when Yoshitsune was still a child. Some believe him to be Bishamonten\'s night form.',
 		itemDrops: [
@@ -2512,8 +2512,8 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Neutral',
-			ethical: 'Chaos'
+			major: 'Neutral',
+			minor: 'Chaos'
 		},
 		lore: 'One of the three Moirae Sisters in Greek mythology.\nShe is the apportioner, measuring the thread which determines a person\'s life span.',
 		itemDrops: [
@@ -2568,8 +2568,8 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Neutral',
-			ethical: 'Chaos'
+			major: 'Neutral',
+			minor: 'Chaos'
 		},
 		lore: 'Half-woman, half-snake creatures that appear in Greek mythology and are said to reside in Libya.\nThey supposedly favor the blood of children and young men.',
 		itemDrops: [
@@ -2620,8 +2620,8 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Dark',
-			ethical: 'Chaos'
+			major: 'Dark',
+			minor: 'Chaos'
 		},
 		lore: 'A demon or horde of demons quoted as saying, "For we are many" in the New Testament.\nThe name comes from the Roman military term for an army unit of 3,000 to 6,000 men.',
 		itemDrops: [
@@ -2675,8 +2675,8 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Neutral',
-			ethical: 'Chaos'
+			major: 'Neutral',
+			minor: 'Chaos'
 		},
 		lore: 'A demon in female form from Judeo-Christian lore known to tempt sleeping men and attack infants.\nShe is the daughter of the demoness Lilith, who tempted Adam. Like her mother, she drains men of their essence.',
 		itemDrops: [
@@ -2728,8 +2728,8 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Dark',
-			ethical: 'Neutral'
+			major: 'Dark',
+			minor: 'Neutral'
 		},
 		lore: 'A group of divinities worshipped in voodoo religion.\nOf the many hidden entities mentioned in religious doctrines, the ones that influence human activities in the earthly realm are known by this name. It is said that those aligned with shadow also possess powerful dark magic.',
 		itemDrops: [
@@ -2784,8 +2784,8 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Neutral',
-			ethical: 'Neutral'
+			major: 'Neutral',
+			minor: 'Neutral'
 		},
 		lore: 'A type of werewolf originating in France. It appears human during the day, but transforms into its beastly form at night, when it has been known to viciously attack humans.\nThey are said to have once been ordinary human beings. However, upon turning into a loup-garou, one cannot regain their humanity ever again.',
 		itemDrops: [
@@ -2840,8 +2840,8 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Dark',
-			ethical: 'Neutral'
+			major: 'Dark',
+			minor: 'Neutral'
 		},
 		lore: 'An evil spirit appearing in medieval oratorios as the grim reaper.\nIt is truly Death itself, with the power to lead humans to their demise in an instant. It is depicted as a skeleton with a black cloak and a sickle to reap human souls in a single stroke. True to its name, it dances the feared Dance of Death, a reminder that all worldly things must someday meet their end.',
 		itemDrops: [
@@ -2895,8 +2895,8 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Dark',
-			ethical: 'Law'
+			major: 'Dark',
+			minor: 'Law'
 		},
 		lore: 'A giant Asura in Hinduism whose name means "the intoxicator."\nIt is said that the sage Chyavana created it from fire. Mada has the power to swollow its enemies, and even the deity Indra has been said to surrender to its power.',
 		itemDrops: [
@@ -2950,8 +2950,8 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Neutral',
-			ethical: 'Chaos'
+			major: 'Neutral',
+			minor: 'Chaos'
 		},
 		lore: 'A witch whose lore originated in the Philippines.\nIt masquerades as a beautiful woman during the day but transforms into a blood-sucking monster at night. It has the ability to separate its upper and lower body, and can sprout bat wings from its back to fly in search of humans to suck their blood. It is said that the Manananggal preys on unborn fetuses in particular, using its proboscis-like tongue to open the wombs of pregnant women, wherein it will suck the fetus\' blood, or devour it outright.',
 		itemDrops: [
@@ -3003,8 +3003,8 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Neutral',
-			ethical: 'Law'
+			major: 'Neutral',
+			minor: 'Law'
 		},
 		lore: 'A magical plant whose roots take the appearance of a human.\nMandrakes are a precious component in potions to heal sicknesses, but obtaining one is notoriously difficult. When pulled from the ground, they let out a bloodcurdling scream, killing anyone unlucky enough to hear it. There are both male and female variations of Mandrakes.',
 		itemDrops: [
@@ -3057,8 +3057,8 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Neutral',
-			ethical: 'Chaos'
+			major: 'Neutral',
+			minor: 'Chaos'
 		},
 		lore: 'Half-woman, half-fish inhabitant of the ocean. Males are called mermen.\nMermaids are regarded as unlucky omens by many fishermen, often foretelling severe storms or poor catches. Legend says they use their voices to charm men, causing them to crash their ships.',
 		itemDrops: [
@@ -3113,8 +3113,8 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Dark',
-			ethical: 'Law'
+			major: 'Dark',
+			minor: 'Law'
 		},
 		lore: 'An indigenous god of the Shinano region from before the forces of Yamato occupied the land.\nSaid to be born from the belief that divine spirits dwelled in rocks and stones.',
 		itemDrops: [
@@ -3165,8 +3165,8 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Neutral',
-			ethical: 'Chaos'
+			major: 'Neutral',
+			minor: 'Chaos'
 		},
 		lore: 'A monster from Aboriginal folktales.\nIt lives in a jungle alongside owls and, though it appears human, has an abnormally large head. It also lacks a tongue and therefore cannot speak. Myth tells that these creatures are reincarnations of the "soul of the shadow," and they are even said to engage in intercourse with human women from time to time as well as eat children and fight humans.',
 		itemDrops: [
@@ -3220,8 +3220,8 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Dark',
-			ethical: 'Neutral'
+			major: 'Dark',
+			minor: 'Neutral'
 		},
 		lore: 'A cryptid sighted in West Virginia from the 1960s to 1980s.\nIt has red, shining eyes and was known for the finlike appendages on both sides of its boy. It has been said to walk on two foot and fly without moving these appendages. It has a keen sense for blood which allows it to easily track its prey. Eyewitnesses say that a UFO was sighted when Mothman appeared, so many believe that it is actually an alien.',
 		itemDrops: [
@@ -3273,8 +3273,8 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Dark',
-			ethical: 'Law'
+			major: 'Dark',
+			minor: 'Law'
 		},
 		lore: 'Meaning "evil bird," it is the ghost of a young girl who died without knowing love in Buryat folklore.\nShe seduces travelers, only to crack their heads open and suck out their brains with her beak.',
 		itemDrops: [
@@ -3328,8 +3328,8 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Neutral',
-			ethical: 'Chaos'
+			major: 'Neutral',
+			minor: 'Chaos'
 		},
 		lore: 'Half-snake, half-human, they are divine beings in Hindu lore.\nWorshipped as bringers of fertility, they live in the bottoms of lakes and seas, and enjoy singing and dancing outside of battle.',
 		itemDrops: [
@@ -3384,8 +3384,8 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Neutral',
-			ethical: 'Chaos'
+			major: 'Neutral',
+			minor: 'Chaos'
 		},
 		lore: 'The king of the Naga, a half-man, half-snake tribe in Hindu lore.\nThe dragon kings of Nanda and Takshaka of Buddhist myth fall into this royal category.',
 		itemDrops: [
@@ -3440,8 +3440,8 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Neutral',
-			ethical: 'Neutral'
+			major: 'Neutral',
+			minor: 'Neutral'
 		},
 		lore: 'A young man of Greek lore. He rejected the nymph Echo, who faded to a whisper out of despair.\nCursed by Nemesis, he fell in love with his own reflection and wasted away, becoming the flower that now bears his name.',
 		itemDrops: [
@@ -3493,8 +3493,8 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			]
 		},
 		alignment: {
-			moral: 'Neutral',
-			ethical: 'Chaos'
+			major: 'Neutral',
+			minor: 'Chaos'
 		},
 		lore: 'The general of Hell. He keeps watch over other demons.\nOne of Hell\'s greatest necromancers, he can control souls and corpses.',
 		itemDrops: [
@@ -3550,8 +3550,8 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Neutral',
-			ethical: 'Neutral'
+			major: 'Neutral',
+			minor: 'Neutral'
 		},
 		lore: 'Incarnations of long-living cats in Japanese mythology.\nThey can speak to humans and, depending on their power, can do various things. Some can turn into humans, while others can have the dead do their bidding',
 		itemDrops: [
@@ -3605,8 +3605,8 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Dark',
-			ethical: 'Neutral'
+			major: 'Dark',
+			minor: 'Neutral'
 		},
 		lore: 'A legendary monster in Japanese mythology. It has the head of a monkey, the body of a tanuki, the arms and legs of a tiger, and the tail of a snake.\nDue to its bizarre appearance, the term "Nue" is sometimes used to describe a person of unknown origins. According to The Tale of Heike, the Nue would come to the emperor\'s palace every night from 2 to 2:30 A.M., shrouded in a dark cloud, where it would howl in a horrific and terrifying manner. However, the warrior Minamoto no Yorimasa eventually shot it down with his bow.',
 		itemDrops: [
@@ -3659,8 +3659,8 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Dark',
-			ethical: 'Chaos'
+			major: 'Dark',
+			minor: 'Chaos'
 		},
 		lore: 'A "piggyback monster" of Japan that jumps on the backs of those who walk on wooded paths at night.\nIts weight becomes progressively heavier to the point of being nearly unbearable, but it is said that it will transform into gold coins if you can carry it all the way back home.',
 		itemDrops: [
@@ -3713,8 +3713,8 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Neutral',
-			ethical: 'Neutral'
+			major: 'Neutral',
+			minor: 'Neutral'
 		},
 		lore: 'The king of the fairies and the husband of Titania.\nHe is quite old, but due to a curse he received when he was young, he remains small yet still beautiful. He often flirts with human women and has earned many a scolding from his wife as a result.',
 		itemDrops: [
@@ -3768,8 +3768,8 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Neutral',
-			ethical: 'Chaos'
+			major: 'Neutral',
+			minor: 'Chaos'
 		},
 		lore: 'One of the four oni controlled by Fujiwara no Chikata, who ruled Iga and Ise during the Heian Period.\nBy suppressing its aura, thereby preventing others from sensing its presence, it can effectively ambush its enemies. Oni have been said to act as liaisons between humans and gods, and the Fudoki holds many records of such exchanges in this region.',
 		itemDrops: [
@@ -3824,8 +3824,8 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Neutral',
-			ethical: 'Chaos'
+			major: 'Neutral',
+			minor: 'Chaos'
 		},
 		lore: 'A common demon in Japanese mythology. This terrifying and powerful creature is known to raid human villages for food, riches, and women.\nIt is characterized by red skin, horns on its head, long claws, and sharp fangs.',
 		itemDrops: [
@@ -3878,8 +3878,8 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Dark',
-			ethical: 'Law'
+			major: 'Dark',
+			minor: 'Law'
 		},
 		lore: 'A Japanese monster that takes the form of a bird with the face of a man. It produces a sickening chirp and spits a wicked flame.\nIts true identity is a corpse that hasn\'t had a proper memorial service, and it is said to appear before monks who neglect their duties.',
 		itemDrops: [
@@ -3935,8 +3935,8 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Neutral',
-			ethical: 'Chaos'
+			major: 'Neutral',
+			minor: 'Chaos'
 		},
 		lore: 'One of 72 demons in Solomon\'s Goetia.\nHe is said to appear as a human with a head of a horse. He answers all questions conerning past, present and future and is both liked and respected by sorcerers. According to legend, he was often summoned by sorcerers seeking to see through lies or predict the future.',
 		itemDrops: [
@@ -3993,8 +3993,8 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Neutral',
-			ethical: 'Neutral'
+			major: 'Neutral',
+			minor: 'Neutral'
 		},
 		lore: 'The two-headed dog who protected the Titan Geryon\'s red cattle in Greek lore.\nDespite his skill as a guard, Hercules killed him in one blow while performing one of his 12 great labors.',
 		itemDrops: [
@@ -4049,8 +4049,8 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Neutral',
-			ethical: 'Chaos'
+			major: 'Neutral',
+			minor: 'Chaos'
 		},
 		lore: 'One of the 72 demons of the Goetia.\nAppearing as half-man and half-beast, it is said that he can change his form according to the desires of the one who summons him, though not for very long.',
 		itemDrops: [
@@ -4106,8 +4106,8 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Dark',
-			ethical: 'Chaos'
+			major: 'Dark',
+			minor: 'Chaos'
 		},
 		lore: 'A demon from Sumerian civilization, he governs the southwestern wind.\nHe has the face of a lion, the body of a human, the wings of a bird, the talons of an eagle, the tail of a scorpion and a curved horn protruding from his forehead. It is said that the wind he blew from the Persian Gulf spread disease throughout the land.',
 		itemDrops: [
@@ -4159,8 +4159,8 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Dark',
-			ethical: 'Chaos'
+			major: 'Dark',
+			minor: 'Chaos'
 		},
 		lore: 'A type of demon in Hindu mythology that arises from the vices of men such as criminals, drunkards and adulterers.\nKnown to feast on the flesh of corpses, it is said that it can possess a human by entering through their mouth, where it will plague them until it is driven away through magic or medicine. It is also said that anyone who looks upon one directly is guaranteed to die within nine months.',
 		itemDrops: [
@@ -4212,8 +4212,8 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Neutral',
-			ethical: 'Neutral'
+			major: 'Neutral',
+			minor: 'Neutral'
 		},
 		lore: 'A small fairy found in southwestern Britain known for their cheerful nature and love of pranks.\nTheir physical appearance changes from region to region, but their personality is always playful and mischievous. A common prank they like to pull is causing humans to wander in circles. However, they are also known to help farmers from time to time and are generally considered good fairies.',
 		itemDrops: [
@@ -4265,8 +4265,8 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Dark',
-			ethical: 'Chaos'
+			major: 'Dark',
+			minor: 'Chaos'
 		},
 		lore: 'A mischievous spirit known for haunting houses. The name is German in origin, and literally means "noisy ghost."\nIt can do various things, from pulling harmless pranks like making loud noises and moving objects through the air, to dangerous, destructive acts, like starting fires and assaulting people. Poltergeist incidents often occur in homes with children or teenagers, and one theory states that the cause is a child\'s unstable mentality.',
 		itemDrops: [
@@ -4318,8 +4318,8 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Dark',
-			ethical: 'Chaos'
+			major: 'Dark',
+			minor: 'Chaos'
 		},
 		lore: 'Known as "gaki" in Japanese, they are ghoulish demons of Buddhist lore.\nGreedy humans cast into the preta realm become these. Their hunger is unrelenting and their suffering continues until they are reincarnated.',
 		itemDrops: [
@@ -4375,8 +4375,8 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Neutral',
-			ethical: 'Chaos'
+			major: 'Neutral',
+			minor: 'Chaos'
 		},
 		lore: 'The queen of fairies in Celtic mythology.\nSome say she was the inspiration for William Shakespeare\'s Queen Mab, leading many to conclude that she and the fairy queen Titania, Oberon\'s wife, are one and the same. She was known to give mead mixed with her blood to her many consorts.',
 		itemDrops: [
@@ -4430,8 +4430,8 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Dark',
-			ethical: 'Neutral'
+			major: 'Dark',
+			minor: 'Neutral'
 		},
 		lore: 'Evil spirits that battle the gods in Hindu lore. They also attack humans.\nTheir hideous appearance symbolizes their evil nature, but they can also change shape to fool humans.',
 		itemDrops: [
@@ -4487,8 +4487,8 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			]
 		},
 		alignment: {
-			moral: 'Neutral',
-			ethical: 'Chaos'
+			major: 'Neutral',
+			minor: 'Chaos'
 		},
 		lore: 'A wicked witch and the symbol of evil in Balinese Hinduism. When women who used magic held a grudge or went down the path of evil, they became this dreadful creature.\nShe spreads plagues, causes natural disasters, curses people, and even uses evil spirits to do her bidding. The holy beast Barong that symbolizes good is her eternal rival. Even if defeated, she will come back to life, and their battle will have no end.',
 		itemDrops: [
@@ -4538,8 +4538,8 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Neutral',
-			ethical: 'Chaos'
+			major: 'Neutral',
+			minor: 'Chaos'
 		},
 		lore: 'A fairy from rural Germany rumored to put people to sleep using the magic sand he carried in his bag.\nIf a victim resisted, he would sit on their eyelids to force them to sleep. It has even been said that "naughty children" who refused to go to sleep would be punished by having their eyes scooped out and taken away, though this is speculated to be a fabrication thought up by German mothers.',
 		itemDrops: [
@@ -4594,8 +4594,8 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Neutral',
-			ethical: 'Neutral'
+			major: 'Neutral',
+			minor: 'Neutral'
 		},
 		lore: 'A brave young man in Celtic myth.\nAfter defeating a fierce guard dog, he volunteered to take its place, thus earning himself "Culann\'s Hound" as his nickname.',
 		itemDrops: [
@@ -4651,8 +4651,8 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Neutral',
-			ethical: 'Chaos'
+			major: 'Neutral',
+			minor: 'Chaos'
 		},
 		lore: 'A powerful creature often summoned by Japanese sorcerers called onmyoji.\nThey are used both to hurt and to heal, but their true nature is said to be very violent.',
 		itemDrops: [
@@ -4706,8 +4706,8 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Dark',
-			ethical: 'Chaos'
+			major: 'Dark',
+			minor: 'Chaos'
 		},
 		lore: 'A gel-like monster. It is said to be the byproduct of a failed summoning.\nDevoid of its original powers, it is trapped in an incomplete gel form. There are several theories of when the slime first was recorded as a monster. They tend to collect shiny objects.',
 		itemDrops: [
@@ -4760,8 +4760,8 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Neutral',
-			ethical: 'Chaos'
+			major: 'Neutral',
+			minor: 'Chaos'
 		},
 		lore: 'A female demon in popular European folklore during the medieval ages.\nThey are known to visit men in their sleep and have sex with them. And though they appear beautiful in the dream, in reality, they are ugly, old hags.',
 		itemDrops: [
@@ -4815,8 +4815,8 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Neutral',
-			ethical: 'Neutral'
+			major: 'Neutral',
+			minor: 'Neutral'
 		},
 		lore: 'Earth spirits in Japanese mythology. They are born from ancient trees and boulders.\nThey are not evil but will transform into humans or monsters to warn people not to infiltrate their mountains.',
 		itemDrops: [
@@ -4870,8 +4870,8 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Neutral',
-			ethical: 'Chaos'
+			major: 'Neutral',
+			minor: 'Chaos'
 		},
 		lore: 'One of the four oni controlled by Fujiwara no Chikata, it can cause floods with the swing of its arms. In the Taiheiki, Ki no Tomoo expelled the oni by reading a Japanese poem.',
 		itemDrops: [
@@ -4925,8 +4925,8 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Neutral',
-			ethical: 'Law'
+			major: 'Neutral',
+			minor: 'Law'
 		},
 		lore: 'The third of the nine orders of angels. Their Hebrew name, Ophan, carries the meaning of "wheel".\nThey are the highest ranking angels to carry a material body and are tasked with carrying the seat of God.',
 		itemDrops: [
@@ -4982,8 +4982,8 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Neutral',
-			ethical: 'Neutral'
+			major: 'Neutral',
+			minor: 'Neutral'
 		},
 		lore: 'The queen of the fairies and King Oberon\'s wife. She is based on the Roman goddess Diana and was later imagined as a fairy.\nShe is famously recognized as a queen in William Shakespeare\'s "A Midsummer Night\'s Dream."',
 		itemDrops: [
@@ -5036,8 +5036,8 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Neutral',
-			ethical: 'Neutral'
+			major: 'Neutral',
+			minor: 'Neutral'
 		},
 		lore: 'Monsters said to come from the bastardization of certain clans of Japan. The word carries the literal meaning of "dirt spider."\nThose who did not pledge allegiance to the Imperial Court were called this derogatory term because of their short stature and spindly limbs. As time passed, people may have misinterpreted the name for a literal meaning and made them into spiders, or perhaps the manifestations of grudges of those who were persecuted by the Imperial Court.',
 		itemDrops: [
@@ -5087,8 +5087,8 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Dark',
-			ethical: 'Neutral'
+			major: 'Dark',
+			minor: 'Neutral'
 		},
 		lore: 'An Indian deity that serves Yama, the god of death.\nWhen Yama judges a dead soul to be guilty, Turdak acts as the executioner and drags that soul to hell.',
 		itemDrops: [
@@ -5139,8 +5139,8 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Neutral',
-			ethical: 'Law'
+			major: 'Neutral',
+			minor: 'Law'
 		},
 		lore: 'Daughters of Odin from Norse mythology.\nTheir name means "choosers of the slain." Armed with shining armor and spears, they look for brave warriors to take to Valhalla, so that they may fight in Ragnarok.',
 		itemDrops: [
@@ -5193,8 +5193,8 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Neutral',
-			ethical: 'Chaos'
+			major: 'Neutral',
+			minor: 'Chaos'
 		},
 		lore: 'Semi-divine beings in Hindu mythology.\nThough they were once worshipped by the Dravidians as goddesses of the harvest, they became interpreted as demons with the spread of Hinduism and the two clashing ideologies. They are depicted as naked women with voluptuous bodies',
 		itemDrops: [
@@ -5251,8 +5251,8 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Neutral',
-			ethical: 'Chaos'
+			major: 'Neutral',
+			minor: 'Chaos'
 		},
 		lore: 'A giant snake with eight heads that the hero Susano-o defeated to save Kushinada-Hime.\nThe legendary sword Ame-no-Murakumo-no-Tsurugi, also known as the "Sword of Kusanagi," was said to have emerged from its belly.',
 		itemDrops: [
@@ -5306,8 +5306,8 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Neutral',
-			ethical: 'Chaos'
+			major: 'Neutral',
+			minor: 'Chaos'
 		},
 		lore: 'In Oceanian folklore, he is a giant copper python.\nA being that transcends good and evil, he governs the weather and is considered a god of harvest. He is known as the "Rainbow Serpent" because the water in the well he calls home is said to shine like a rainbow.',
 		itemDrops: [
@@ -5360,8 +5360,8 @@ export const smt5StandardEnemies: SMT5StandardEnemyData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Dark',
-			ethical: 'Law'
+			major: 'Dark',
+			minor: 'Law'
 		},
 		lore: 'A bird in Chinese mythology said to have poison in its feathers because it eats poisonous snakes.\nDipping a feather into wine will turn it into a deadly poison, able to kill anyone with a single drop.',
 		itemDrops: [

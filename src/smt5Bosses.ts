@@ -58,8 +58,8 @@ export const smt5Bosses: SMT5BossData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Dark',
-			ethical: 'Chaos'
+			major: 'Dark',
+			minor: 'Chaos'
 		},
 		lore: 'The king of the abyss that appears in the Book of Revelation of the New Testament.\nHe controls locusts and plagues and leads the seventh order of demons who are set to appear at the sounding of the fifth trumpet on Judgment Day, when it is said that will bring horde of locusts to make the people suffer. His name in Hebrew means "destroyer" or "endless pit". It is thought that his origins lie in deification of the natural disasters caused by locust swarms.',
 		itemDrops: [
@@ -124,8 +124,8 @@ export const smt5Bosses: SMT5BossData[] = [
 			]
 		},
 		alignment: {
-			moral: 'Light',
-			ethical: 'Law'
+			major: 'Light',
+			minor: 'Law'
 		},
 		lore: 'A high-ranking angel that is wholly devoted to God. The name Abdiel carries the meaning of "slave to God," which supposedly originates from the Arabic word for "slave".\nOf the angels who followed Satan, Abdiel was the only one to reject the temptation to rebel against God, and instead received God\'s praises for returning to His side. Abdiel then led the angels to fight against Lucifer.',
 		itemDrops: [],
@@ -188,8 +188,8 @@ export const smt5Bosses: SMT5BossData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Light',
-			ethical: 'Law'
+			major: 'Light',
+			minor: 'Law'
 		},
 		lore: 'A high-ranking angel entirely devoted to carrying out God\'s will. Her name carries the meaning of "slave to God," which supposedly originates from the Arabic word for "slave."\nOf all the angels who followed Lucifer, Abdiel was the only one to reject the temptation to rebel against God, and instead received praise for returning to His side.\nAbdiel assumed her forbidden Nahobino form after fusing with Ichiro Dazai, proving just how far she would go to protect God\'s earthly and spiritual order.',
 		itemDrops: [
@@ -251,8 +251,8 @@ export const smt5Bosses: SMT5BossData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Neutral',
-			ethical: 'Chaos'
+			major: 'Neutral',
+			minor: 'Chaos'
 		},
 		lore: 'Chancellor of Hell and supervisor of Satan\'s wardrobe. He has the body of a mule, though he may also sometimes appear as a peacock.\nHe was worshipped by the Assyrians, who occasionally offered him children as sacrifice.',
 		itemDrops: [
@@ -308,8 +308,8 @@ export const smt5Bosses: SMT5BossData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Light',
-			ethical: 'Chaos'
+			major: 'Light',
+			minor: 'Chaos'
 		},
 		lore: 'The Arabian mother goddess also known as Allat.\nShe was thought to reside in the Black Stone at the Kaaba, where and her son, Dusura, were worshipped by desert nomads.',
 		itemDrops: [
@@ -378,8 +378,8 @@ export const smt5Bosses: SMT5BossData[] = [
 			]
 		},
 		alignment: {
-			moral: 'Light',
-			ethical: 'Neutral'
+			major: 'Light',
+			minor: 'Neutral'
 		},
 		lore: 'A Japanese goddess commonly thought to be the ancestor of the tengu and amanojaku.\nThe famed warrior Susano-o once allowed his tempestuous spirit to build up to such an intense degree, he vomited her out as a result. Similarly to Susano-o, she has a wild personality and tends to go on a rampage if she doesn\'t get her way. It is said that she can hurl even the most powerful gods a great distance, and that her fangs can mangle the very sharpest of blades. Like amanojaku, she is prone to doing the exact opposite of what is expected.',
 		itemDrops: [
@@ -447,8 +447,8 @@ export const smt5Bosses: SMT5BossData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Dark',
-			ethical: 'Chaos'
+			major: 'Dark',
+			minor: 'Chaos'
 		},
 		lore: 'One of the 72 demons of Solomon\'s Ars Goetia.\nHe is the seventh spirit of Goetia and the Grand Marquis of Hell. Amon is depicted in several different forms, sometimes appearing as a wolf with a serpent\'s tail and other times appearing as having the head of an owl, the torso of a wolf and the tail of a snake sometimes replacing his hind legs altogether. It is said that he bestows knowledge of the past and the future. He is also incredibly loyal, having led his army to assist Satan when Satan rebelled against God.',
 		itemDrops: [
@@ -511,8 +511,8 @@ export const smt5Bosses: SMT5BossData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Light',
-			ethical: 'Neutral'
+			major: 'Light',
+			minor: 'Neutral'
 		},
 		lore: 'A Zoroastrian goddess whose name means "pure."\nWhile primarily known as a beautiful deity who rules over rivers and water, she is also the goddess of health, fertility, safe delivery, production of livestock, harvest, wealth and expansion of land. She is often portrayed as an elegant virgin wearing a crown decorated with numerous stars in addition to a golden necklace and a golden cape, and is typically shown holding a water jug. She is also a brave god of war astride a four-wheeled chariot, toppling demons and tyrants alike. Both her allies and her enemies have been said to have offered their prayers to her.',
 		itemDrops: [
@@ -566,8 +566,8 @@ export const smt5Bosses: SMT5BossData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Neutral',
-			ethical: 'Chaos'
+			major: 'Neutral',
+			minor: 'Chaos'
 		},
 		lore: 'One of the 72 demons of the Goetia.\nThe great Marquis of Hell, he appears where there is battle to stoke the hatred within soldiers. He helps defeat the enemies of those who summon him.',
 		itemDrops: [],
@@ -618,8 +618,8 @@ export const smt5Bosses: SMT5BossData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Neutral',
-			ethical: 'Law'
+			major: 'Neutral',
+			minor: 'Law'
 		},
 		lore: 'Water spirits in Hindu lore.\nThey are beautiful young women who dance for the gods. They also guide heroes who fall in battle to paradise.',
 		itemDrops: [
@@ -685,8 +685,8 @@ export const smt5Bosses: SMT5BossData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Light',
-			ethical: 'Chaos'
+			major: 'Light',
+			minor: 'Chaos'
 		},
 		lore: 'A major deity in ancient Japanese mythology. Clay dolls were often sculpted in its image.\nHowever, because this god was known to be worshipped by a rebel, the dolls later came to be considered symbols of defiance.',
 		itemDrops: [
@@ -750,8 +750,8 @@ export const smt5Bosses: SMT5BossData[] = [
 			]
 		},
 		alignment: {
-			moral: 'Dark',
-			ethical: 'Chaos'
+			major: 'Dark',
+			minor: 'Chaos'
 		},
 		lore: 'The fallen angel of Israel and the demon of vengeance.\nHis name means "ferocious lion" and he is said to aid in vengeance of those who seek his service. During his time as an angel of God, he was recognized as the guardian angel of the saint Enoch. It is said that his name originally belonged to one in either the Book of Genesis or the Book of Daniel, only to become associated with the demon thereafter.',
 		itemDrops: [
@@ -817,8 +817,8 @@ export const smt5Bosses: SMT5BossData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Light',
-			ethical: 'Neutral'
+			major: 'Light',
+			minor: 'Neutral'
 		},
 		lore: 'The Greek goddess of hunting and chastity. She was often identified with the moon goddess Selene and was therefore also worshipped as a moon goddess herself.\nLike her twin brother, Apollo, her association with archery granted her the title of "far-shooter" in addition to being recognized as a bringer of plague and death. This is depicted in myth, in which she is deceived by Apollo and shoots her beloved Orion.',
 		itemDrops: [],
@@ -881,8 +881,8 @@ export const smt5Bosses: SMT5BossData[] = [
 			]
 		},
 		alignment: {
-			moral: 'Light',
-			ethical: 'Chaos'
+			major: 'Light',
+			minor: 'Chaos'
 		},
 		lore: 'A violent group of demons in Hindu lore.\nThey were very powerful and caused the gods great trouble. They are a fiercely strict group and attack anyone who runs counter to their ideals. They were originally gods of light worshipped in Persia. The Zoroastrian god Ahura Mazda was one of them.',
 		itemDrops: [
@@ -949,8 +949,8 @@ export const smt5Bosses: SMT5BossData[] = [
 			]
 		},
 		alignment: {
-			moral: 'Light',
-			ethical: 'Neutral'
+			major: 'Light',
+			minor: 'Neutral'
 		},
 		lore: 'The chief Semitic god.\nBearing a name that means "Lord" or "owner," he was revered as a god of fertility in addition to being known as the god of Canaan and both brother and consort to the goddess Anat. Many demons, such as Bael, Beelzebub, Belphegor and Berith are believed to be derivations of Baal. There were even instances of him being worshipped in the very same temples as Yahweh (YHVH) in times long since passed.',
 		itemDrops: [
@@ -1009,8 +1009,8 @@ export const smt5Bosses: SMT5BossData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Light',
-			ethical: 'Neutral'
+			major: 'Light',
+			minor: 'Neutral'
 		},
 		lore: 'One of the Ssu-Ling, celestial creatures in Chinese mythology.\nIt represents the west, the season of autumn, and the element of metal. It is believed to be the king of all beasts.',
 		itemDrops: [
@@ -1073,8 +1073,8 @@ export const smt5Bosses: SMT5BossData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Dark',
-			ethical: 'Chaos'
+			major: 'Dark',
+			minor: 'Chaos'
 		},
 		lore: 'One of the 72 demons of Goetia invoked by King Solomon.\nHe leads 50 legions of demons as their chief and is said to appear before his conjurer as two beautiful angels in a chariot of fire. His name means "worthless," and he is known to be exceptionally cunning, having caused the fall of Sodom and Gomorrah in addition to persecuting Jesus Christ.',
 		itemDrops: [
@@ -1141,8 +1141,8 @@ export const smt5Bosses: SMT5BossData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Dark',
-			ethical: 'Chaos'
+			major: 'Dark',
+			minor: 'Chaos'
 		},
 		lore: 'Demonic governor of the deadly sin of sloth who also excels at both invention and discovery.\nIt is rumored that he may be the disgraced form of Baal Peor, Syrian god of abundant crops.',
 		itemDrops: [
@@ -1204,8 +1204,8 @@ export const smt5Bosses: SMT5BossData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Light',
-			ethical: 'Chaos'
+			major: 'Light',
+			minor: 'Chaos'
 		},
 		lore: 'The strongest of the Four Heavenly Kings, also known as Tamonten, and in Buddhist mythology, Vaishravana.\nHe protects the North and is recognized as the god of war. Similarly to his fellow kings, he is often depicted as a fierce warrior, clad in armor and wielding a great spear. Bishamonten is also well known as a bringer of fortune, being one of the Shichi Fukujin, the seven gods of fortune.',
 		itemDrops: [],
@@ -1267,8 +1267,8 @@ export const smt5Bosses: SMT5BossData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Light',
-			ethical: 'Chaos'
+			major: 'Light',
+			minor: 'Chaos'
 		},
 		lore: 'The strongest of the Four Heavenly Kings, also known as Tamonten, and in Buddhist mythology, Vaishravana.\nHe protects the North and is recognized as the god of war. Similarly to his fellow kings, he is often depicted as a fierce warrior, clad in armor and wielding a great spear. Bishamonten is also well known as a bringer of fortune, being one of the Shichi Fukujin, the seven gods of fortune.',
 		itemDrops: [
@@ -1330,8 +1330,8 @@ export const smt5Bosses: SMT5BossData[] = [
 			]
 		},
 		alignment: {
-			moral: 'Neutral',
-			ethical: 'Chaos'
+			major: 'Neutral',
+			minor: 'Chaos'
 		},
 		lore: 'A Jack Frost that grew powerful and evil.\nThese are the evolved form of the fairly peaceful winter fairy and mark the transformation from small prankster into massively powerful entity.',
 		itemDrops: [
@@ -1394,8 +1394,8 @@ export const smt5Bosses: SMT5BossData[] = [
 			]
 		},
 		alignment: {
-			moral: 'Unknown',
-			ethical: 'Unknown'
+			major: 'Unknown',
+			minor: 'Unknown'
 		},
 		lore: 'One of the Four Horsemen of the Apocalypse spoken of in the Book of Revelation.\nHe rides a black horse and carries scales, indicating the terrible famine he is to bring. He also has been given the authority to end the lives of those who are suffering.',
 		itemDrops: [
@@ -1451,8 +1451,8 @@ export const smt5Bosses: SMT5BossData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Neutral',
-			ethical: 'Neutral'
+			major: 'Neutral',
+			minor: 'Neutral'
 		},
 		lore: 'A star of flames created by Lucifer.\nIn Milton\'s "Paradise Lost", the former angel is shown burning with passion, swearing to continue his rebellion, even after his defeat. Those who are hit with this falling star are said to be burned by his fiery will.',
 		itemDrops: [],
@@ -1510,8 +1510,8 @@ export const smt5Bosses: SMT5BossData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Light',
-			ethical: 'Law'
+			major: 'Light',
+			minor: 'Law'
 		},
 		lore: 'The angel of god in Jewish mythology. He rules over the angels known as the Powers, and his name Camael means "one who sees god."\nHe is also the commander of the angels of destruction, punishment, and death in addition to being the ruler of Mars.',
 		itemDrops: [
@@ -1574,8 +1574,8 @@ export const smt5Bosses: SMT5BossData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Light',
-			ethical: 'Chaos'
+			major: 'Light',
+			minor: 'Chaos'
 		},
 		lore: 'The god of night, evil and death in Slavic lore. His name means "black god".\nLike many other gods of the dead, he is said to live below the earth. His counterpart is Belobog, the "white god." Despite being feared, he was also worshipped. The curse, "May the black god end you," is still used in Ukraine to this day.',
 		itemDrops: [
@@ -1638,8 +1638,8 @@ export const smt5Bosses: SMT5BossData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Light',
-			ethical: 'Neutral'
+			major: 'Light',
+			minor: 'Neutral'
 		},
 		lore: 'A monster that is part lion, part goat, and part snake.\nOriginally a symbol representing the seasons, it became a violent monster adopted into Greek mythology. Its father is Typhon and its mother Echidna.',
 		itemDrops: [
@@ -1705,8 +1705,8 @@ export const smt5Bosses: SMT5BossData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Neutral',
-			ethical: 'Chaos'
+			major: 'Neutral',
+			minor: 'Chaos'
 		},
 		lore: 'More specifically, Cleopatra VII. Her name means "glory of the father" in Greek.\nShe is known as one of the greatest beauties ever to live, having charmed many with her musical voice and conversation skills. It is said that all of history would have unfolded differently had even her nose been longer or shorter.',
 		itemDrops: [],
@@ -1758,8 +1758,8 @@ export const smt5Bosses: SMT5BossData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Neutral',
-			ethical: 'Neutral'
+			major: 'Neutral',
+			minor: 'Neutral'
 		},
 		lore: 'A star of ice created by Lucifer.\nIn Dante\'s "Divine Comedy", the former angel is shown buried in the frozen Cocytus, deep within the darkest depths of the underworld. Those who are hit with this falling star are said to be frozen even long after death.',
 		itemDrops: [],
@@ -1817,8 +1817,8 @@ export const smt5Bosses: SMT5BossData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Unknown',
-			ethical: 'Unknown'
+			major: 'Unknown',
+			minor: 'Unknown'
 		},
 		lore: 'A monk who died while fasting for the sake of humanity. Because of his intense spiritual power, his body continues to exist without rotting.\nIt is said that on the day of salvation, he will appear in front of humankind once again.',
 		itemDrops: [
@@ -1887,8 +1887,8 @@ export const smt5Bosses: SMT5BossData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Light',
-			ethical: 'Neutral'
+			major: 'Light',
+			minor: 'Neutral'
 		},
 		lore: 'The mother goddess of Celtic mythology. She is the mother of the Tuatha De Danann, a race of gods and also the world itself, having given birth to all life.\nDanu\'s large body is said to be lying down on earth to this day. The Munster region in Ireland, which is said to be especially blessed by her.',
 		itemDrops: [
@@ -1955,8 +1955,8 @@ export const smt5Bosses: SMT5BossData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Neutral',
-			ethical: 'Chaos'
+			major: 'Neutral',
+			minor: 'Chaos'
 		},
 		lore: 'Once an ordinary high school student, now the bane of God\'s creation. On the whim of a certain blond-haired child, he was made to survive the Conception, but at the cost of a gruesome transformation. After emerging from the Shinjuku Medical Center with the body of a demon, he became the Demi-fiend of legend, as prophesied in the Scripture of Miroku.',
 		itemDrops: [
@@ -2011,8 +2011,8 @@ export const smt5Bosses: SMT5BossData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Light',
-			ethical: 'Law'
+			major: 'Light',
+			minor: 'Law'
 		},
 		lore: 'A high-ranking angel entirely devoted to carrying out God\'s will. Her name carries the meaning of "slave to God," which supposedly originates from the Arabic word for "slave."\nOf all the angels who followed Lucifer, Abdiel was the only one to reject the temptation to rebel against God, and instead received praise for returning to His side.\nAbdiel assumed her forbidden Nahobino form after fusing with Ichiro Dazai, proving just how far she would go to protect God\'s earthly and spiritual order.',
 		itemDrops: [],
@@ -2065,8 +2065,8 @@ export const smt5Bosses: SMT5BossData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Light',
-			ethical: 'Law'
+			major: 'Light',
+			minor: 'Law'
 		},
 		lore: 'A high-ranking angel entirely devoted to carrying out God\'s will. Her name carries the meaning of "slave to God," which supposedly originates from the Arabic word for "slave."\nOf all the angels who followed Lucifer, Abdiel was the only one to reject the temptation to rebel against God, and instead received praise for returning to His side.\nAbdiel assumed her forbidden Nahobino form after fusing with Ichiro Dazai, proving just how far she would go to protect God\'s earthly and spiritual order.',
 		itemDrops: [],
@@ -2124,8 +2124,8 @@ export const smt5Bosses: SMT5BossData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Light',
-			ethical: 'Chaos'
+			major: 'Light',
+			minor: 'Chaos'
 		},
 		lore: 'The Greek god of wine and theater. He had two births.\nMyth tells that Zeus took the premature Dionysus from his dying mother, Semele, and allowed him to mature inside his thigh so that the underdeveloped god might have a proper birth.',
 		itemDrops: [
@@ -2184,8 +2184,8 @@ export const smt5Bosses: SMT5BossData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Neutral',
-			ethical: 'Chaos'
+			major: 'Neutral',
+			minor: 'Chaos'
 		},
 		lore: 'One of the 72 demons of the Goetia.\nHe takes the appearance of a knight and has the power to see things to come. He also possesses great knowledge of many wars.',
 		itemDrops: [
@@ -2247,8 +2247,8 @@ export const smt5Bosses: SMT5BossData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Light',
-			ethical: 'Neutral'
+			major: 'Light',
+			minor: 'Neutral'
 		},
 		lore: 'The leader of the Fianna, warriors who protected High King Cormac of Ireland. He was born as Deimne, but, due to his blond hair and white skin, he soon came to be called "Fionn," a name meaning "golden hair."\nWhen training under the druid, Finn Eces, he was ordered to cook the Salmon of Knowledge, and upon licking some of the salmon\'s fat from his thumb, he gained its knowledge. From that point on, it is said that Fionn could tap this knowledge any time he licked his thumb.',
 		itemDrops: [],
@@ -2310,8 +2310,8 @@ export const smt5Bosses: SMT5BossData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Light',
-			ethical: 'Neutral'
+			major: 'Light',
+			minor: 'Neutral'
 		},
 		lore: 'The leader of the Fianna, warriors who protected High King Cormac of Ireland. He was born as Deimne, but, due to his blond hair and white skin, he soon came to be called "Fionn," a name meaning "golden hair."\nWhen training under the druid, Finn Eces, he was ordered to cook the Salmon of Knowledge, and upon licking some of the salmon\'s fat from his thumb, he gained its knowledge. From that point on, it is said that Fionn could tap this knowledge any time he licked his thumb.',
 		itemDrops: [],
@@ -2367,8 +2367,8 @@ export const smt5Bosses: SMT5BossData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Light',
-			ethical: 'Neutral'
+			major: 'Light',
+			minor: 'Neutral'
 		},
 		lore: 'The Nihonshoki sword deity who pacified Ashihara-no-Nakatasukuni.\nHis name comes from "futsu," the fashion in which things are cut, and "nushi," a term meaning, "nature as a god."',
 		itemDrops: [
@@ -2430,8 +2430,8 @@ export const smt5Bosses: SMT5BossData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Light',
-			ethical: 'Law'
+			major: 'Light',
+			minor: 'Law'
 		},
 		lore: 'One of the four major angels. The name Gabriel means "God is my strength."\nActing as a messenger for God, Gabriel is the one who informed the virgin Mary of her pregnancy. Though often depicted with a feminine face, there are various interpretations suggesting Gabriel is not androgynous but is in fact a woman.',
 		itemDrops: [
@@ -2492,8 +2492,8 @@ export const smt5Bosses: SMT5BossData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Light',
-			ethical: 'Law'
+			major: 'Light',
+			minor: 'Law'
 		},
 		lore: 'A divine bird-man in Hindu mythology.\nHe hunts Nagas as a result of a dispute between the two creatures\' mothers. According to legend, he once fought with the gods, and was even granted immortality in exchange for becoming Vishnu\'s carrier.',
 		itemDrops: [
@@ -2559,8 +2559,8 @@ export const smt5Bosses: SMT5BossData[] = [
 			]
 		},
 		alignment: {
-			moral: 'Dark',
-			ethical: 'Law'
+			major: 'Dark',
+			minor: 'Law'
 		},
 		lore: 'A giant elephant monster of Sri Lankan mythology.\nIt is typically portrayed as being ridden by Mara, the Evil One. Whoever looks into its evil eye is said to be met with great misfortune.',
 		itemDrops: [
@@ -2621,8 +2621,8 @@ export const smt5Bosses: SMT5BossData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Dark',
-			ethical: 'Neutral'
+			major: 'Dark',
+			minor: 'Neutral'
 		},
 		lore: 'Giants born from Uranus and Gaia in Greek mythology. The name means "those with a hundred arms."\nDuring the war of the Titans, Zeus freed them from the underworld to help him obtain victory.',
 		itemDrops: [
@@ -2686,8 +2686,8 @@ export const smt5Bosses: SMT5BossData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Unknown',
-			ethical: 'Unknown'
+			major: 'Unknown',
+			minor: 'Unknown'
 		},
 		lore: 'A biker-turned-Fiend that claims to come from Hell.\nArmed with an intense hatred of himself and the world, his reliance solely on his own poewr turned him into this abominable figure.',
 		itemDrops: [
@@ -2755,8 +2755,8 @@ export const smt5Bosses: SMT5BossData[] = [
 			]
 		},
 		alignment: {
-			moral: 'Light',
-			ethical: 'Neutral'
+			major: 'Light',
+			minor: 'Neutral'
 		},
 		lore: 'An ancient god of Egypt known for having the sun and moon as his watchful eyes.\nHe was revered by some as the principal god, most likely due to his association with the celestial bodies above. Myth often depicts him as a hawk or a falcon.',
 		itemDrops: [
@@ -2821,8 +2821,8 @@ export const smt5Bosses: SMT5BossData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Light',
-			ethical: 'Chaos'
+			major: 'Light',
+			minor: 'Chaos'
 		},
 		lore: 'One of the holy dragons of Chinese lore, the Golden Dragon appears in times of great fortune or joy.\nHis dominion over the earth extends to the four gods Qing Long, Xuanwu, Zhuquem and Baihu.',
 		itemDrops: [
@@ -2880,8 +2880,8 @@ export const smt5Bosses: SMT5BossData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Dark',
-			ethical: 'Chaos'
+			major: 'Dark',
+			minor: 'Chaos'
 		},
 		lore: 'One of the monsters in Greek mythology. It is usually depicted as having 9 heads, but some may say that it has as many as 100.\nIts father is Typhon, giant of the wind, and its mother is Echidna, goddess of the snake. The Hydra has incredible regenerating power; so much so that when one of its heads is cut off, two more will sprout from the wound. It is also extremely venomous and simply inhaling its breath is enough to kill. The slaying of Hydra is listed as one of the 12 great labors of Hercules.',
 		itemDrops: [
@@ -2946,8 +2946,8 @@ export const smt5Bosses: SMT5BossData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Light',
-			ethical: 'Chaos'
+			major: 'Light',
+			minor: 'Chaos'
 		},
 		lore: 'The Sumerian goddess of fertility.\nHer name means "Lady of Heaven," and she is often viewed as one and the same with Aphrodite, Ishtar, and Venus. She is also a goddess of warfare, and it is said that even male gods feared her great power.',
 		itemDrops: [
@@ -3014,8 +3014,8 @@ export const smt5Bosses: SMT5BossData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Light',
-			ethical: 'Chaos'
+			major: 'Light',
+			minor: 'Chaos'
 		},
 		lore: 'A Mesopotamian goddess of love and war. Dubbed the "Queen of Heaven," the planet Venus was often seen as the embodiment of the goddess herself.\nIn the Epic of Gilgamesh, she makes many heroes her lovers, but the story also foretells that she will eventually kill them or turn them into animals.',
 		itemDrops: [
@@ -3075,8 +3075,8 @@ export const smt5Bosses: SMT5BossData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Light',
-			ethical: 'Law'
+			major: 'Light',
+			minor: 'Law'
 		},
 		lore: 'The Hindu king of birds.\nIn the Ramayana, he fought bravely against Ravana in an attempt to save Sita, the wife of Rama, the seventh avatar of Vishnu. However, he was unfortunately defeated.',
 		itemDrops: [],
@@ -3137,8 +3137,8 @@ export const smt5Bosses: SMT5BossData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Light',
-			ethical: 'Chaos'
+			major: 'Light',
+			minor: 'Chaos'
 		},
 		lore: 'Jikokuten, protector of the East, is one of the Four Heavenly Kings in Buddhist mythology.\nHe is also known as Dhritarashtra, and similarly to his fellow kings, is often depicted as a fierce warrior, clad in armor and wielding a sword. As his name suggests, it is said that he bestows serenity upon a country.',
 		itemDrops: [],
@@ -3201,8 +3201,8 @@ export const smt5Bosses: SMT5BossData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Light',
-			ethical: 'Chaos'
+			major: 'Light',
+			minor: 'Chaos'
 		},
 		lore: 'Jikokuten, protector of the East, is one of the Four Heavenly Kings in Buddhist mythology.\nHe is also known as Dhritarashtra, and similarly to his fellow kings, is often depicted as a fierce warrior, clad in armor and wielding a sword. As his name suggests, it is said that he bestows serenity upon a country.',
 		itemDrops: [
@@ -3266,8 +3266,8 @@ export const smt5Bosses: SMT5BossData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Light',
-			ethical: 'Neutral'
+			major: 'Light',
+			minor: 'Neutral'
 		},
 		lore: 'The Egyptian god of the moon.\nOften portrayed as a mummy with two long braids of hair, he is said to be a reincarnation of the moon itself and holds possession over what\'s known as the moon ship. He also acts as a companion to the Pharaoh\'s shadow. Hieroglyphics found in Unas\' pyramid depict him as a god who prepares meals for an oppressive, god-devouring king.',
 		itemDrops: [
@@ -3335,8 +3335,8 @@ export const smt5Bosses: SMT5BossData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Light',
-			ethical: 'Neutral'
+			major: 'Light',
+			minor: 'Neutral'
 		},
 		lore: 'The form of the Egyptian god of the Moon, Khonsu, upon gaining the power of the sun god, Ra.\nHidden behind a foreboding mask, he possesses the dual powers of the sun and moon, the day and night, and the living and the dead.',
 		itemDrops: [
@@ -3399,8 +3399,8 @@ export const smt5Bosses: SMT5BossData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Dark',
-			ethical: 'Chaos'
+			major: 'Dark',
+			minor: 'Chaos'
 		},
 		lore: 'The king of snow who rules over an infinite number of Jack Frosts.\nHe has the power to freeze the entire world but is unaware of it due to his rather naïve personality.',
 		itemDrops: [
@@ -3463,8 +3463,8 @@ export const smt5Bosses: SMT5BossData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Light',
-			ethical: 'Chaos'
+			major: 'Light',
+			minor: 'Chaos'
 		},
 		lore: 'Koumokuten, protector of the West, is one of the Four Heavenly Kings of Buddhist mythology.\nSimilarly to his fellow kings, he is often depicted as a fierce warrior, clad in armor and wielding a trident. He is also known as Virupaksha and is said to keep a close eye on the world with his sharp gaze, preaching to the people all the while.',
 		itemDrops: [],
@@ -3527,8 +3527,8 @@ export const smt5Bosses: SMT5BossData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Light',
-			ethical: 'Chaos'
+			major: 'Light',
+			minor: 'Chaos'
 		},
 		lore: 'Koumokuten, protector of the West, is one of the Four Heavenly Kings of Buddhist mythology.\nSimilarly to his fellow kings, he is often depicted as a fierce warrior, clad in armor and wielding a trident. He is also known as Virupaksha and is said to keep a close eye on the world with his sharp gaze, preaching to the people all the while.',
 		itemDrops: [
@@ -3590,8 +3590,8 @@ export const smt5Bosses: SMT5BossData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Dark',
-			ethical: 'Chaos'
+			major: 'Dark',
+			minor: 'Chaos'
 		},
 		lore: 'Demons of Buddhist origin, known for draining the life energy of humans.\nIt is said that they often change shape and take the form of a gourd. They stand three meters tall, with red hair and dark skin, and have the body of a human but the head of a white horse. They once served Rudra, but according to Buddhist scriptures, they now follow Zouchouten of the Four Heavenly Kings.',
 		itemDrops: [],
@@ -3648,8 +3648,8 @@ export const smt5Bosses: SMT5BossData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Dark',
-			ethical: 'Chaos'
+			major: 'Dark',
+			minor: 'Chaos'
 		},
 		lore: 'A god that appears in Babylonian mythology.\nBorn from Apsu and Tiamat, he and his sister, Lahamu, gave birth to Anshar and Kishar. Lahmu is at times depicted as a large serpent, but has also been illustrated as a man wearing a red sash with six curls in his hair. Regardless, he is always shown alongside Lahamu and it is thought that together they represent the slit in the sea where Apsu\'s fresh water and Tiamat\'s sea water mix.',
 		itemDrops: [],
@@ -3712,8 +3712,8 @@ export const smt5Bosses: SMT5BossData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Dark',
-			ethical: 'Chaos'
+			major: 'Dark',
+			minor: 'Chaos'
 		},
 		lore: 'A god that appears in Babylonian mythology.\nBorn from Apsu and Tiamat, he and his sister, Lahamu, gave birth to Anshar and Kishar. Lahmu is at times depicted as a large serpent, but has also been illustrated as a man wearing a red sash with six curls in his hair. Regardless, he is always shown alongside Lahamu and it is thought that together they represent the slit in the sea where Apsu\'s fresh water and Tiamat\'s sea water mix.',
 		itemDrops: [],
@@ -3776,8 +3776,8 @@ export const smt5Bosses: SMT5BossData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Dark',
-			ethical: 'Chaos'
+			major: 'Dark',
+			minor: 'Chaos'
 		},
 		lore: 'A god that appears in Babylonian mythology.\nBorn from Apsu and Tiamat, he and his sister, Lahamu, gave birth to Anshar and Kishar. Lahmu is at times depicted as a large serpent, but has also been illustrated as a man wearing a red sash with six curls in his hair. Regardless, he is always shown alongside Lahamu and it is thought that together they represent the slit in the sea where Apsu\'s fresh water and Tiamat\'s sea water mix.',
 		itemDrops: [
@@ -3836,8 +3836,8 @@ export const smt5Bosses: SMT5BossData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Dark',
-			ethical: 'Chaos'
+			major: 'Dark',
+			minor: 'Chaos'
 		},
 		lore: 'A god that appears in Babylonian mythology.\nBorn from Apsu and Tiamat, he and his sister, Lahamu, gave birth to Anshar and Kishar. Lahmu is at times depicted as a large serpent, but has also been illustrated as a man wearing a red sash with six curls in his hair. Regardless, he is always shown alongside Lahamu and it is thought that together they represent the slit in the sea where Apsu\'s fresh water and Tiamat\'s sea water mix.',
 		itemDrops: [],
@@ -3887,8 +3887,8 @@ export const smt5Bosses: SMT5BossData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Neutral',
-			ethical: 'Chaos'
+			major: 'Neutral',
+			minor: 'Chaos'
 		},
 		lore: 'A beautiful faerie of Irish lore whose name means "faerie mistress."\nShe drains the life of her lovers in return for granting them artistic inspiration.',
 		itemDrops: [
@@ -3946,8 +3946,8 @@ export const smt5Bosses: SMT5BossData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Neutral',
-			ethical: 'Chaos'
+			major: 'Neutral',
+			minor: 'Chaos'
 		},
 		lore: 'A demon in female form from Judeo-Christian lore known to tempt sleeping men and attack infants.\nShe is the daughter of the demoness Lilith, who tempted Adam. Like her mother, she drains men of their essence.',
 		itemDrops: [],
@@ -4008,8 +4008,8 @@ export const smt5Bosses: SMT5BossData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Dark',
-			ethical: 'Chaos'
+			major: 'Dark',
+			minor: 'Chaos'
 		},
 		lore: 'A malevolent god of Norse mythology.\nThough not always driven by malice, he can be capricious and is quite cunning, and despite being a blood brother to Odin, he was punished for many of his wrong doings, including the murder of Odin\'s child, Baldur.',
 		itemDrops: [
@@ -4072,8 +4072,8 @@ export const smt5Bosses: SMT5BossData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Neutral',
-			ethical: 'Neutral'
+			major: 'Neutral',
+			minor: 'Neutral'
 		},
 		lore: 'A type of werewolf originating in France. It appears human during the day, but transforms into its beastly form at night, when it has been known to viciously attack humans.\nThey are said to have once been ordinary human beings. However, upon turning into a loup-garou, one cannot regain their humanity ever again.',
 		itemDrops: [
@@ -4148,8 +4148,8 @@ export const smt5Bosses: SMT5BossData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Neutral',
-			ethical: 'Neutral'
+			major: 'Neutral',
+			minor: 'Neutral'
 		},
 		lore: 'The Lord of Chaos who leads the fallen angels and is equated with Satan, according to Christian traditions.\nHis name holds the meaning of "one who brings light," indicating that he was once the most beautiful of the archangels. However, it is said that he rebelled against the almighty Creator and chose to become a fallen angel.\nAfter defeating the Creator during Armageddon, he ended up not assuming the Throne of Creation, and instead transcended to a higher plane of existence.',
 		itemDrops: [],
@@ -4213,8 +4213,8 @@ export const smt5Bosses: SMT5BossData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Neutral',
-			ethical: 'Neutral'
+			major: 'Neutral',
+			minor: 'Neutral'
 		},
 		lore: 'The Lord of Chaos who leads the fallen angels and is equated with Satan, according to Christian traditions.\nHis name holds the meaning of "one who brings light," indicating that he was once the most beautiful of the archangels. However, it is said that he rebelled against the almighty Creator and chose to become a fallen angel.\nAfter defeating the Creator during Armageddon, he ended up not assuming the Throne of Creation, and instead transcended to a higher plane of existence.',
 		itemDrops: [],
@@ -4284,8 +4284,8 @@ export const smt5Bosses: SMT5BossData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Neutral',
-			ethical: 'Neutral'
+			major: 'Neutral',
+			minor: 'Neutral'
 		},
 		lore: 'The Lord of Chaos who leads the fallen angels and is equated with Satan, according to Christian traditions.\nHis name holds the meaning of "one who brings light," indicating that he was once the most beautiful of the archangels. However, it is said that he rebelled against the almighty Creator and chose to become a fallen angel.\nAfter defeating the Creator during Armageddon, he ended up not assuming the Throne of Creation, and instead transcended to a higher plane of existence.',
 		itemDrops: [],
@@ -4354,8 +4354,8 @@ export const smt5Bosses: SMT5BossData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Neutral',
-			ethical: 'Neutral'
+			major: 'Neutral',
+			minor: 'Neutral'
 		},
 		lore: 'The Lord of Chaos who leads the fallen angels and is equated with Satan, according to Christian traditions.\nHis name holds the meaning of "one who brings light," indicating that he was once the most beautiful of the archangels. However, it is said that he rebelled against the almighty Creator and chose to become a fallen angel.\nAfter defeating the Creator during Armageddon, he ended up not assuming the Throne of Creation, and instead transcended to a higher plane of existence.',
 		itemDrops: [],
@@ -4419,8 +4419,8 @@ export const smt5Bosses: SMT5BossData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Light',
-			ethical: 'Law'
+			major: 'Light',
+			minor: 'Law'
 		},
 		lore: 'The maternal figure of Christianity.\nGabriel informed her that she was to be the mother of Jesus. Some sects revere her as Virgin Mary, but other denominations do not focus on her.',
 		itemDrops: [
@@ -4485,8 +4485,8 @@ export const smt5Bosses: SMT5BossData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Unknown',
-			ethical: 'Unknown'
+			major: 'Unknown',
+			minor: 'Unknown'
 		},
 		lore: 'A master sportsman who entertains the audience at the cost of his own peril; even one small slip-up can spell certain death.\nIt is said that some of the men who die in this cruel game remain in this world as Fiends, bound by regret as well as the thirst for the cheers and excitement.',
 		itemDrops: [
@@ -4549,8 +4549,8 @@ export const smt5Bosses: SMT5BossData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Light',
-			ethical: 'Law'
+			major: 'Light',
+			minor: 'Law'
 		},
 		lore: 'A Christian Gnostic angel said to be the "savior of angels."\nIn the Bible, he is referred to as "Melchizedek, king of Saelm.',
 		itemDrops: [
@@ -4616,8 +4616,8 @@ export const smt5Bosses: SMT5BossData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Dark',
-			ethical: 'Chaos'
+			major: 'Dark',
+			minor: 'Chaos'
 		},
 		lore: 'More accurately, Mephistopheles. He is one of the princes of Hell and his name means "he who loves not the light".\nHe is commonly known as the demon summoned by Georg Faust. Other than Satan himself, he is the most feared commander in Hell. However, he despises having fallen into Hell and hates any and all humans who have been granted salvation. He is rather knowledgeable in the realms of astronomy, astrology and meteorology in addition to being a skilled illusionist who can manipulate all five senses.',
 		itemDrops: [],
@@ -4681,8 +4681,8 @@ export const smt5Bosses: SMT5BossData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Light',
-			ethical: 'Law'
+			major: 'Light',
+			minor: 'Law'
 		},
 		lore: 'One of the most important angels in the hierarchy, yet the most mysterious.\nHe is the scribe and advocate of heaven.',
 		itemDrops: [
@@ -4746,8 +4746,8 @@ export const smt5Bosses: SMT5BossData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Light',
-			ethical: 'Law'
+			major: 'Light',
+			minor: 'Law'
 		},
 		lore: 'One of the four major angels, his name means "He who is like God."\nHe stands at the top of the angel hierarchy and carries a divine armament known to shatter any blade.',
 		itemDrops: [
@@ -4812,8 +4812,8 @@ export const smt5Bosses: SMT5BossData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Dark',
-			ethical: 'Chaos'
+			major: 'Dark',
+			minor: 'Chaos'
 		},
 		lore: 'A sun deity who was worshipped in the Roman Empire from the 1st to the 4th century AD.\nThe rituals of the religion were secretive, but it is believed they entailed covering oneself in the blood of sheep and bulls. He was said to be reborn after death, inspiring worshippers to hold a festival each winter solstice.',
 		itemDrops: [
@@ -4874,8 +4874,8 @@ export const smt5Bosses: SMT5BossData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Dark',
-			ethical: 'Chaos'
+			major: 'Dark',
+			minor: 'Chaos'
 		},
 		lore: 'A Canaanite god of fire.\nTradition states that a bronze statue of a human with the head of a female ox would be placed at the altar as its vessel. It is said that the statue would first be heated with fire, then children would be put inside as a sacrifice. The Bible mentions its name as a cruel pagan god.',
 		itemDrops: [
@@ -4930,8 +4930,8 @@ export const smt5Bosses: SMT5BossData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Neutral',
-			ethical: 'Neutral'
+			major: 'Neutral',
+			minor: 'Neutral'
 		},
 		lore: 'A star of light created by Lucifer.\nLucifer himself is also known as the "Morning Star", and it is this very star that represents both his rebellion and his fall from the heavens. Though it brought great destruction, Lucifer would nevertheless emerge as the victor in the new world, or so the legend says.',
 		itemDrops: [],
@@ -4996,8 +4996,8 @@ export const smt5Bosses: SMT5BossData[] = [
 			]
 		},
 		alignment: {
-			moral: 'Unknown',
-			ethical: 'Unknown'
+			major: 'Unknown',
+			minor: 'Unknown'
 		},
 		lore: 'Reviled as the "Whore of Babylon" in the Book of Revelation.\nShe defies God from atop a scarlet-colored beast with seven heads and ten horns, and carries a golden cup brimming with abominations and the filth of her deeds.',
 		itemDrops: [
@@ -5060,8 +5060,8 @@ export const smt5Bosses: SMT5BossData[] = [
 			]
 		},
 		alignment: {
-			moral: 'Light',
-			ethical: 'Chaos'
+			major: 'Light',
+			minor: 'Chaos'
 		},
 		lore: 'A goddess that appears in Chinese mythology.\nRecognized as one of the sovereigns, she is said to have the head of a human and a body of a serpent. She is also known to be responsible for the creation of humanity, having created them from mud. Legend tells that when one of the four pillars said to hold up the world broke, she repaired it. Furthermore, her colleague Fuxi is typically labeled as either her brother or her husband, depending on what version of her story is told.',
 		itemDrops: [],
@@ -5126,8 +5126,8 @@ export const smt5Bosses: SMT5BossData[] = [
 			]
 		},
 		alignment: {
-			moral: 'Light',
-			ethical: 'Neutral'
+			major: 'Light',
+			minor: 'Neutral'
 		},
 		lore: 'A goddess that appears in Chinese mythology.\nRecognized as one of the sovereigns, she is said to have the head of a human and a body of a serpent. She is also known to be responsible for the creation of humanity, having created them from mud.\nShe assumed the form of a Nahobino after fusing with the bearer of her Knowledge, Shohei Yakumo.',
 		itemDrops: [
@@ -5196,8 +5196,8 @@ export const smt5Bosses: SMT5BossData[] = [
 			]
 		},
 		alignment: {
-			moral: 'Light',
-			ethical: 'Neutral'
+			major: 'Light',
+			minor: 'Neutral'
 		},
 		lore: 'The All-Father in Norse Mythology. Warrior, sorcerer and near insatiable seeker of knowledge, he rides his eight-legged horse Sleipnir, armed with both Gungnir, his mighty spear and Draupnir, an enchanting ring.\nHe is known to have willingly sacrificed an eye to drink from the Well of Wisdom and is also recognized as the one who welcomes the souls of departed warriors as they cross over into Valhalla.',
 		itemDrops: [
@@ -5259,8 +5259,8 @@ export const smt5Bosses: SMT5BossData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Light',
-			ethical: 'Chaos'
+			major: 'Light',
+			minor: 'Chaos'
 		},
 		lore: 'A Kunitsu deity of Japanese mythology that governs agriculture and medicine.\nSaid to have built the country of Izumo with Susano-o\'s daughter, Suseri-Hime. He is a peaceful god who prefers not to fight.',
 		itemDrops: [
@@ -5315,8 +5315,8 @@ export const smt5Bosses: SMT5BossData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Neutral',
-			ethical: 'Chaos'
+			major: 'Neutral',
+			minor: 'Chaos'
 		},
 		lore: 'A common demon in Japanese mythology. This terrifying and powerful creature is known to raid human villages for food, riches, and women.\nIt is characterized by red skin, horns on its head, long claws, and sharp fangs.',
 		itemDrops: [
@@ -5376,8 +5376,8 @@ export const smt5Bosses: SMT5BossData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Light',
-			ethical: 'Chaos'
+			major: 'Light',
+			minor: 'Chaos'
 		},
 		lore: 'One of the Kunitsukami\'s in Japanese mythology. He is the grandfather of Susano-o\'s wife, Kushinada-Hime.\nHe is known as the god of the mountains but is also considered to be the god of water and rice fields because he ruled over water sources and harvests.',
 		itemDrops: [],
@@ -5438,8 +5438,8 @@ export const smt5Bosses: SMT5BossData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Light',
-			ethical: 'Chaos'
+			major: 'Light',
+			minor: 'Chaos'
 		},
 		lore: 'One of the Kunitsukami\'s in Japanese mythology. He is the grandfather of Susano-o\'s wife, Kushinada-Hime.\nHe is known as the god of the mountains but is also considered to be the god of water and rice fields because he ruled over water sources and harvests.',
 		itemDrops: [
@@ -5502,8 +5502,8 @@ export const smt5Bosses: SMT5BossData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Unknown',
-			ethical: 'Unknown'
+			major: 'Unknown',
+			minor: 'Unknown'
 		},
 		lore: 'One of the Four Horsemen of the Apocalypse spoken of in the Book of Revelation.\nHe rides upon a sickly pale horse and bears the name "Death." The embodiment of Hell itself follows behind him, eager to claim his victims. Fittingly, he has been given authority to mete out widespread death and disease.',
 		itemDrops: [
@@ -5566,8 +5566,8 @@ export const smt5Bosses: SMT5BossData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Dark',
-			ethical: 'Chaos'
+			major: 'Dark',
+			minor: 'Chaos'
 		},
 		lore: 'A demon from Sumerian civilization, he governs the southwestern wind.\nHe has the face of a lion, the body of a human, the wings of a bird, the talons of an eagle, the tail of a scorpion and a curved horn protruding from his forehead. It is said that the wind he blew from the Persian Gulf spread disease throughout the land.',
 		itemDrops: [
@@ -5626,8 +5626,8 @@ export const smt5Bosses: SMT5BossData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Neutral',
-			ethical: 'Law'
+			major: 'Neutral',
+			minor: 'Law'
 		},
 		lore: 'The seventh of the nine orders of angels.\nThey are charged with overseeing the welfare of countries and civilizations.',
 		itemDrops: [],
@@ -5686,8 +5686,8 @@ export const smt5Bosses: SMT5BossData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Light',
-			ethical: 'Chaos'
+			major: 'Light',
+			minor: 'Chaos'
 		},
 		lore: 'One of the Ssu-Ling, celestial creatures in Chinese mythology.\nIt represents the east, the season of spring, and the element of wood. It is the noblest of the Ssu-Ling and dwells in a palace at the bottom of the ocean. In Feng Shui, placing water to the east is known to guide its power, and is said to bring good fortune.',
 		itemDrops: [
@@ -5746,8 +5746,8 @@ export const smt5Bosses: SMT5BossData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Light',
-			ethical: 'Chaos'
+			major: 'Light',
+			minor: 'Chaos'
 		},
 		lore: 'An Aztec creator deity known as the Feathered Serpent.\nHe is identified as the sun and is also known as the god of wind and giver of breath. He is said to have created humans by sprinkling blood on the bones of people from a previously created world, and acts as guardian of their fertility and culture. According to legend, the planet Venus is actually Quetzalcoatl\'s heart.',
 		itemDrops: [
@@ -5810,8 +5810,8 @@ export const smt5Bosses: SMT5BossData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Light',
-			ethical: 'Law'
+			major: 'Light',
+			minor: 'Law'
 		},
 		lore: 'One of the four major angels. His name means "healer."\nHe explains the history of the fallen angels and the creation of Adam and Eve.',
 		itemDrops: [
@@ -5876,8 +5876,8 @@ export const smt5Bosses: SMT5BossData[] = [
 			]
 		},
 		alignment: {
-			moral: 'Unknown',
-			ethical: 'Unknown'
+			major: 'Unknown',
+			minor: 'Unknown'
 		},
 		lore: 'One of the Four Horsemen of the Apocalypse spoken of in the Book of Revelation.\nHe rides a red horse and carries a greatsword. It is said that he has the power to destroy peace and make men slay one another.',
 		itemDrops: [
@@ -5943,8 +5943,8 @@ export const smt5Bosses: SMT5BossData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Dark',
-			ethical: 'Chaos'
+			major: 'Dark',
+			minor: 'Chaos'
 		},
 		lore: 'The Egyptian god of the desert, chaos and evil.\nHe murdered his brother, Osiris, and tried to become chief god, but he was castrated by Osiris\' son, Horus.',
 		itemDrops: [],
@@ -6004,8 +6004,8 @@ export const smt5Bosses: SMT5BossData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Neutral',
-			ethical: 'Chaos'
+			major: 'Neutral',
+			minor: 'Chaos'
 		},
 		lore: 'A powerful creature often summoned by Japanese sorcerers called onmyoji.\nThey are used both to hurt and to heal, but their true nature is said to be very violent.',
 		itemDrops: [
@@ -6073,8 +6073,8 @@ export const smt5Bosses: SMT5BossData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Light',
-			ethical: 'Chaos'
+			major: 'Light',
+			minor: 'Chaos'
 		},
 		lore: 'The great god who governs the destruction and creation of the world. He is the most worshipped god in Hinduism alongside Vishnu.\nIt is said that he purifies the world through destruction only to rebuild it anew, and though he casts terrifying destruction against the demons, he also blesses his followers. Shiva has been depicted in many ways, but the most common is for him to have four hands, one face and three eyes. He wields a trishula, or trident, and his third eye is said to emit a ray of light that destroys all it touches.',
 		itemDrops: [
@@ -6137,8 +6137,8 @@ export const smt5Bosses: SMT5BossData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Light',
-			ethical: 'Neutral'
+			major: 'Light',
+			minor: 'Neutral'
 		},
 		lore: 'A man who eradicates demons for the sake of humanity\'s spiritual independence. Curiously, he happens to operate alongside one such demon: a goddess named Nuwa.',
 		itemDrops: [
@@ -6202,8 +6202,8 @@ export const smt5Bosses: SMT5BossData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Light',
-			ethical: 'Law'
+			major: 'Light',
+			minor: 'Law'
 		},
 		lore: 'In Zoroastrian lore, Sraosha\'s duty is to listen to humanity\'s cry for Ahura Mazda.\nIt is also known to descend after sunset to vanquish evil, and its name literally means "observance."',
 		itemDrops: [
@@ -6265,8 +6265,8 @@ export const smt5Bosses: SMT5BossData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Light',
-			ethical: 'Chaos'
+			major: 'Light',
+			minor: 'Chaos'
 		},
 		lore: 'One of the gods of Japanese lore. Son of Kamimusubi, he was so small he fell through her fingers at birth.\nThough he would normally be counted among the Amatsukami, he became blood-brothers with Okuninushi, and is now considered a Kunitsukami. After building Japan with Okuninushi, he is said to have returned to Tokoyo no Kuni, the land of eternity.',
 		itemDrops: [],
@@ -6327,8 +6327,8 @@ export const smt5Bosses: SMT5BossData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Dark',
-			ethical: 'Chaos'
+			major: 'Dark',
+			minor: 'Chaos'
 		},
 		lore: 'A fire giant from Norse mythology.\nHe rules over Muspelheim, the realm of fire and brandishes a sword of fire called "Laevateinn". In Ragnarok, he will set the world ablaze.',
 		itemDrops: [
@@ -6386,8 +6386,8 @@ export const smt5Bosses: SMT5BossData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Light',
-			ethical: 'Chaos'
+			major: 'Light',
+			minor: 'Chaos'
 		},
 		lore: 'A Japanese god of war, hunting, and fertility.\nHe fought Take-Mikazuchi for control of Japan and lost. He escaped to Suwa but has been prohibited from leaving ever since.',
 		itemDrops: [],
@@ -6437,8 +6437,8 @@ export const smt5Bosses: SMT5BossData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Light',
-			ethical: 'Neutral'
+			major: 'Light',
+			minor: 'Neutral'
 		},
 		lore: 'A goddess that appears in Chinese mythology.\nRecognized as one of the sovereigns, she is said to have the head of a human and a body of a serpent. She is also known to be responsible for the creation of humanity, having created them from mud.\nShe assumed the form of a Nahobino after fusing with the bearer of her Knowledge, Shohei Yakumo.',
 		itemDrops: [],
@@ -6496,8 +6496,8 @@ export const smt5Bosses: SMT5BossData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Light',
-			ethical: 'Law'
+			major: 'Light',
+			minor: 'Law'
 		},
 		lore: 'A revered bird of Native American mythology said to live atop cloud-shrouded peaks.\nIt resembles an eagle, and its wingbeats create mighty thunderclaps. Some legends say its eyes can unleash lightning, and other accounts say it can carry an entire lake on its back or even swallow an entire whale whole.',
 		itemDrops: [
@@ -6563,8 +6563,8 @@ export const smt5Bosses: SMT5BossData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Unknown',
-			ethical: 'Unknown'
+			major: 'Unknown',
+			minor: 'Unknown'
 		},
 		lore: 'Angels that sound their trumpets to signify the coming of the apocalypse ordained in the Book of Revelation.\nIt is said that the trumpets bring plagues and disasters, turning the earth into a land of death and sufferring.',
 		itemDrops: [
@@ -6635,8 +6635,8 @@ export const smt5Bosses: SMT5BossData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Light',
-			ethical: 'Chaos'
+			major: 'Light',
+			minor: 'Chaos'
 		},
 		lore: 'A god that appears in Japanese legend, believed to be the deification of the moon and the ruler of the night.\nAccording to the Kojiki and Nihon Shoki, he was born from Izanagi, and is younger brother to Amaterasu as well as older brother to Susano-o.\nUpon fusing with Yuzuru Atsuta and reassimilating his lost Knowledge, he thus assumed his original Nahobino form.',
 		itemDrops: [
@@ -6701,8 +6701,8 @@ export const smt5Bosses: SMT5BossData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Light',
-			ethical: 'Law'
+			major: 'Light',
+			minor: 'Law'
 		},
 		lore: 'One of the four major angels.\nHis name means "flame of God," and he possesses knowledge of all celestial phenomena. He is also the first angel Satan met after falling to Earth.',
 		itemDrops: [
@@ -6767,8 +6767,8 @@ export const smt5Bosses: SMT5BossData[] = [
 			]
 		},
 		alignment: {
-			moral: 'Dark',
-			ethical: 'Chaos'
+			major: 'Dark',
+			minor: 'Chaos'
 		},
 		lore: 'A giant serpent of Hindu lore.\nIt is said that gods and demons used him as a rope to churn the sea of milk to create Amrita, while also using Mt. Mandara as the stick. The strain from this caused him to exhale incredibly poisonous venom, but it was safely swallowed up by Shiva.',
 		itemDrops: [
@@ -6832,8 +6832,8 @@ export const smt5Bosses: SMT5BossData[] = [
 			]
 		},
 		alignment: {
-			moral: 'Unknown',
-			ethical: 'Unknown'
+			major: 'Unknown',
+			minor: 'Unknown'
 		},
 		lore: 'One of the Four Horsemen of the Apocalypse spoken of in the Book of Revelation.\nHe rides a white horse and carries a bow. Wears a resplendent crown as a symbol of God\'s dominion over Armageddon, and promises to bring total victory.',
 		itemDrops: [
@@ -6895,8 +6895,8 @@ export const smt5Bosses: SMT5BossData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Light',
-			ethical: 'Chaos'
+			major: 'Light',
+			minor: 'Chaos'
 		},
 		lore: 'One of the Ssu-Ling, celestial creatures in Chinese mythology.\nIt represents the north, the season of winter, and the element of water. Known to be a great warrior, it is said to support the Earth from below.',
 		itemDrops: [
@@ -6960,8 +6960,8 @@ export const smt5Bosses: SMT5BossData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Light',
-			ethical: 'Chaos'
+			major: 'Light',
+			minor: 'Chaos'
 		},
 		lore: 'Repeller of evil found at Kinpusen by En-no-Ozunu.\nBelieved to be a fusion of Buddha, Guanyin, and Maitreya, he is a god who originated from Japan, rather than the Buddhavacana.',
 		itemDrops: [
@@ -7025,8 +7025,8 @@ export const smt5Bosses: SMT5BossData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Light',
-			ethical: 'Neutral'
+			major: 'Light',
+			minor: 'Neutral'
 		},
 		lore: 'The main deity of Greek mythology. Said to be omnipotent, he is both god of the sky and ruler of the twelve gods of Olympus.\nHe is a son of the titan Kronos and brother to both Hades and Poseidon. Upon defeating his father, he claimed the right to rule the entire universe. He also fathered many children with not only goddesses, but a number of human women as well.',
 		itemDrops: [
@@ -7091,8 +7091,8 @@ export const smt5Bosses: SMT5BossData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Light',
-			ethical: 'Neutral'
+			major: 'Light',
+			minor: 'Neutral'
 		},
 		lore: 'The main deity of Greek mythology. Said to be omnipotent, he is both god of the sky and ruler of the twelve gods of Olympus.\nHe is a son of the titan Kronos and brother to both Hades and Poseidon. Upon defeating his father, he claimed the right to rule the entire universe. He also fathered many children with not only goddesses, but a number of human women as well.',
 		itemDrops: [
@@ -7153,8 +7153,8 @@ export const smt5Bosses: SMT5BossData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Light',
-			ethical: 'Law'
+			major: 'Light',
+			minor: 'Law'
 		},
 		lore: 'One of the Ssu-Ling, celestial creatures in Chinese mythology.\nIt represents the south, the season of summer, and the element of fire. It is said to resemble a quail in appearance and have a beautiful chirping voice.',
 		itemDrops: [
@@ -7214,8 +7214,8 @@ export const smt5Bosses: SMT5BossData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Light',
-			ethical: 'Chaos'
+			major: 'Light',
+			minor: 'Chaos'
 		},
 		lore: 'Zouchouten, protector of the South, is one of the Four Heavenly Kings in Buddhist mythology.\nSimilarly to his fellow kings, he is often depicted as a fierc warrior, clad in armor and wielding a long sword, though he is sometimes shown wielding a trident instead. Also known as Virudhaka, he is god of the five grains.',
 		itemDrops: [],
@@ -7276,8 +7276,8 @@ export const smt5Bosses: SMT5BossData[] = [
 			repel: []
 		},
 		alignment: {
-			moral: 'Light',
-			ethical: 'Chaos'
+			major: 'Light',
+			minor: 'Chaos'
 		},
 		lore: 'Zouchouten, protector of the South, is one of the Four Heavenly Kings in Buddhist mythology.\nSimilarly to his fellow kings, he is often depicted as a fierc warrior, clad in armor and wielding a long sword, though he is sometimes shown wielding a trident instead. Also known as Virudhaka, he is god of the five grains.',
 		itemDrops: [

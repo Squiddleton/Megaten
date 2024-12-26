@@ -176,16 +176,16 @@ export type HPMPAil = RegenStat;
 /** The stat that a PostBattleSkill instance increases */
 export type PostBattleStat = MasterStat | 'EXP' | 'Money';
 
-/** Demons' moral alignments */
-export type MoralAlignment = 'Light' | 'Neutral' | 'Dark' | 'Unknown';
-/** Demons' ethical alignments */
-export type EthicalAlignment = 'Law' | 'Neutral' | 'Chaos' | 'Unknown';
-/** A demon's moral and ethical alignment */
+/** Demons' major alignments that indicate their character */
+export type MajorAlignment = 'Light' | 'Neutral' | 'Dark' | 'Unknown';
+/** Demons' minor alignments that indicate their ideals */
+export type MinorAlignment = 'Law' | 'Neutral' | 'Chaos' | 'Unknown';
+/** A demon's major and minor alignment */
 export interface DemonAlignment {
-	/** The demon's moral alignment (Light v. Dark) */
-	moral: MoralAlignment;
-	/** The demon's ethical alignment (Law v. Chaos) */
-	ethical: EthicalAlignment;
+	/** The demon's major alignment indicative of their character (Light v. Dark) */
+	major: MajorAlignment;
+	/** The demon's minor alignment indicative of their ideals (Law v. Chaos) */
+	minor: MinorAlignment;
 }
 
 /** A static number or a percent */

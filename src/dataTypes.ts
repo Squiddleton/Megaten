@@ -46,7 +46,7 @@ export interface SMT5StandardEnemyData {
 	skills: string[];
 	/** The enemy's ailment and affinity resistances */
 	resistances: DemonResistances<false>;
-	/** The enemy's moral and ethical alignment */
+	/** The enemy's major and minor alignment */
 	alignment: DemonAlignment;
 	/** The enemy's backstory */
 	lore: string;

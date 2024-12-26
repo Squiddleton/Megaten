@@ -41,7 +41,7 @@ export class Demon<PersonaBased extends boolean = boolean> implements DemonData<
 	resistances: DemonResistances<PersonaBased>;
 	/** The game that the demon's data originates from */
 	game: If<PersonaBased, PersonaGame, AnyGame>;
-	/** The demon's moral and ethical alignment */
+	/** The demon's major and minor alignment */
 	alignment: If<PersonaBased, null, DemonAlignment>;
 	/** The demon's backstory, or null for older Personas */
 	lore: If<PersonaBased, string | null, string>;
@@ -116,8 +116,6 @@ export class Persona extends Demon<true> implements PersonaData {
 	declare mp: null;
 	declare resistances: DemonResistances<true>;
 	declare game: PersonaGame;
-	declare moral: null;
-	declare ethical: null;
 	/** The Persona's user */
 	user: string;
 	/** The Persona's stage of evolution */
