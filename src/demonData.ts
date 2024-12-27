@@ -24136,7 +24136,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			major: 'Light',
 			minor: 'Law'
 		},
-		lore: 'A Judeo-Christian angel of darkness with a nam that means "adversary."\nAlso known as the evil serpent that tempted Adam and Eve in the Garden of Eden. In the Book of Job, he is depicted as a servant of God who tests Job, a man of faith, and is said to be the accuser angel sent from the heavens to judge mankind.',
+		lore: 'A Judeo-Christian angel of darkness with a name that means "adversary."\nAlso known as the evil serpent that tempted Adam and Eve in the Garden of Eden. In the Book of Job, he is depicted as a servant of God who tests Job, a man of faith, and is said to be the accuser angel sent from the heavens to judge mankind.',
 		origin: 'Abrahamic'
 	},
 	{
