@@ -36,8 +36,6 @@ export type AnyRange = AllyRange | EnemyRange;
 export type AilmentRange = Exclude<EnemyRange, 'Random'>;
 /** Range for AutoBuffSkill instances */
 export type AutoBuffRange = Exclude<AllyRange, 'Ally'>;
-/** Range for BarrierSkill instances */
-export type BarrierRange = Exclude<AllyRange, 'Self'>;
 /** Range for CritSkill instances */
 export type CritRange = Exclude<AllyRange, 'Self'> | 'All';
 /** Range for RecoverySkill instances */
@@ -55,28 +53,23 @@ export interface AttackCost {
 	/** The amount of HP or MP that the skill uses */
 	amount: number;
 	/** The stat that the skill uses */
-	stat: HPMP;
+	stat: AttackCostStat;
 }
 
 /** Flags for AttackSkill instances */
-export type AttackFlag = '+20% Crit Rate' | '+200% Crit Rate' | '+30% Crit Rate' | 'Accuracy/Evasion Down' | 'Afflicted Boost' | 'Asleep Boost' | 'Attack Down' | 'Attack Reduced' | 'Baton Boost' | 'Charmed Boost' | 'Confused Boost' | 'Crit Damage Boost' | 'Defense Down' | 'Defense Greatly Down' | 'Down Boost' | 'Drain HP' | 'Drain HP/MP' | 'Drain MP' | 'HP Dependent' | 'Instakill' | 'Minimize Defense' | 'Negate Buffs' | 'Pierce' | 'Poisoned Boost' | 'Shroud Dependent' | 'Static Damage' | 'Surround Boost' | 'Weakness Instakill' | 'Weather Boost';
+export type AttackFlag = '+20% Crit Rate' | '+200% Crit Rate' | '+30% Crit Rate' | 'Afflicted Boost' | 'Asleep Boost' | 'Attack Reduced' | 'Baton Boost' | 'Charmed Boost' | 'Confused Boost' | 'Crit Damage Boost' | 'Debuff Number Dependent' | 'Defense Greatly Down' | 'Down Boost' | 'Drain HP' | 'Drain HP/MP' | 'Drain MP' | 'Foe Number Dependent' | 'HP Dependent' | 'Instakill' | 'Minimize Defense' | 'Mirage Boost' | 'Negate Buffs' | 'Pierce' | 'Poisoned Boost' | 'Shroud Dependent' | 'Static Damage' | 'Surround Boost' | 'Weakness Instakill' | 'Weather Boost' | `${Buff} Down` | `${Buff} Greatly Down`;
 
 /** A base for skills with a specific amount of power */
 export interface BasePower {
 	/** The skill's base power (adjusted for consistency with SMT5) */
 	amount: number;
 	/** The skill's visible power relative to other skills */
-	display: unknown;
+	display: AttackDisplay;
 }
 /** An AttackSkill instance's power */
 export interface AttackPower extends BasePower {
-	display: AttackDisplay;
 	/** The type of damage that the skill inflicts */
 	type: DamageType;
-}
-/** An SMTCounterSkill instance's power */
-export interface SMTCounterPower extends BasePower {
-	display: CounterDisplay;
 }
 
 /** Barriers formed by a Skill instance */
@@ -97,16 +90,13 @@ export type Charge = 'Phys Charge' | 'Phys Charge - Donum' | 'Magic Charge' | 'M
 /** Displayed damage values for SMTCounterSkill instances */
 export type CounterDisplay = 'Weak' | 'Medium';
 /** Displayed damage values for AttackSkill instances */
-export type AttackDisplay = CounterDisplay | 'Minuscule' | 'Heavy' | 'Severe' | 'Colossal';
+export type AttackDisplay = CounterDisplay | 'Minimal' | 'Heavy' | 'Severe' | 'Colossal' | 'Weak to heavy' | 'Medium to severe';
 
 /** Criteria for CritBoostSkill instances taking effect */
 export type CritBoostCriteria = 'Ambush' | 'Surround';
 
 /** Types of damage dealt */
 export type DamageType = 'Physical' | 'Magic';
-
-/** Debuffs cast by AilmentSkill flags */
-export type Debuff = `${Buff} Down` | `${Buff} Greatly Down`;
 
 /** A demon's skill potential and inherit affinity */
 export interface DemonAffinities<PersonaBased extends boolean = boolean> {
@@ -151,11 +141,11 @@ export type EndureCriteria = LightDark | 'Light/Dark';
 export type EvasionBoostCriteria = 'Surrounded' | 'Rain/Snow';
 
 /** The HP or MP stats */
-export type HPMP = 'HP' | 'MP';
-/** The cost stat that a MasterSkill instance decreases */
-export type MasterStat = HPMP | 'HPMP';
+export type HPMP = 'HP' | 'MP' | 'HPMP';
+/** The cost stat that an AttackSkill instance decreases */
+export type AttackCostStat = Exclude<HPMP, 'HPMP'>;
 /** The stat that a RegenSkill instance regenerates */
-export type RegenStat = MasterStat | 'AIL';
+export type RegenStat = HPMP | 'AIL';
 /**
  * The stat that a RegenSkill instance regenerates
  *
@@ -163,7 +153,7 @@ export type RegenStat = MasterStat | 'AIL';
  */
 export type HPMPAil = RegenStat;
 /** The stat that a PostBattleSkill instance increases */
-export type PostBattleStat = MasterStat | 'EXP' | 'Money';
+export type PostBattleStat = HPMP | 'EXP' | 'Money';
 
 /** Demons' major alignments that indicate their character */
 export type MajorAlignment = 'Light' | 'Neutral' | 'Dark' | 'Unknown';
@@ -226,8 +216,11 @@ export type AnyRace = PersonaRace | SMTRace;
 /** The displayed amount that RecoverySkill instances can recover  */
 export type RecoveryAmount = 'Slight' | 'Moderate' | 'Half' | 'Full' | '130%';
 
+/** Flags for AilmentSkill instances */
+export type AilmentSkillFlag = `${Buff} Down` | `${Buff} Greatly Down` | 'Negate Buffs' | 'Charm Instakill';
+
 /** Flags for RecoverySkill instances */
-export type RecoveryFlag = 'Revert Debuffs' | 'Revive' | 'Summon';
+export type RecoveryFlag = 'Revert Debuffs' | 'Revive' | 'Summon' | 'Recover HP/MP';
 
 /** Criteria for RegenSkill instances taking effect */
 export type RegenCriteria = 'Ambush' | 'Baton Pass' | 'Turn Start';

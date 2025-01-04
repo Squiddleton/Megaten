@@ -2,7 +2,7 @@ import { normalize } from '@squiddleton/util';
 import type { AilBoostSkillData, AilDefensiveSkillData, AilmentSkillData, AttackSkillData, AutoBuffSkillData, BarrierBreakSkillData, BarrierSkillData, BoostSkillData, BreakSkillData, ChargeSkillData, CritBoostSkillData, CritSkillData, DefensiveSkillData, EndureSkillData, EvasionSkillData, InstakillBoostSkillData, MasterSkillData, MiscSkillData, NaviSkillData, PersonaCounterSkillData, PostBattleSkillData, RecoverySkillData, RegenSkillData, SMTCounterSkillData, SetSkillData, SiphonSkillData, SkillData, SpringSkillData, SummonSkillData, SupportSkillData, SusceptibilitySkillData, TauntSkillData, WallSkillData } from './dataTypes.js';
 import { MegatenError } from './error.js';
 import skillData from './skillData.js';
-import type { AilBoostCriteria, AilDefensiveAilment, AilResistance, Ailment, AilmentName, AilmentRange, AllyRange, AnyAffinity, AttackCost, AttackFlag, AttackPower, AutoBuffRange, Barrier, BarrierRange, BoostAffinity, BoostStack, BreakAffinity, Buff, Charge, CritBoostCriteria, CritRange, DamagingAffinity, Debuff, DefensiveAffinity, DefensiveSKillResistance, EndureCriteria, EnemyRange, EvasionAffinity, EvasionBoostCriteria, HPMP, LightDark, MasterStat, NumberOrPercent, OneOrAllAilments, PostBattleStat, RecoveryAmount, RecoveryFlag, RecoveryRange, RegenCriteria, RegenStat, SMTCounterAffinity, SMTCounterPower, Series, SetAffinity, SingleOrDoubleBuff, SiphonCriteria, SkillType, SupportAutoEffect, SupportFlag, SupportRange, SusceptibilityRange, WallAffinity } from './types.js';
+import type { AilBoostCriteria, AilDefensiveAilment, AilResistance, Ailment, AilmentName, AilmentRange, AilmentSkillFlag, AllyRange, AnyAffinity, AttackCost, AttackFlag, AttackPower, AutoBuffRange, Barrier, BasePower, BoostAffinity, BoostStack, BreakAffinity, Buff, Charge, CritBoostCriteria, CritRange, DamagingAffinity, DefensiveAffinity, DefensiveSKillResistance, EndureCriteria, EnemyRange, EvasionAffinity, EvasionBoostCriteria, HPMP, LightDark, NumberOrPercent, OneOrAllAilments, PostBattleStat, RecoveryAmount, RecoveryFlag, RecoveryRange, RegenCriteria, RegenStat, SMTCounterAffinity, Series, SetAffinity, SingleOrDoubleBuff, SiphonCriteria, SkillType, SupportAutoEffect, SupportFlag, SupportRange, SusceptibilityRange, WallAffinity } from './types.js';
 
 export abstract class Skill implements SkillData {
 	/** The skill's name (adjusted for consistency with SMT5) */
@@ -115,13 +115,13 @@ export class AilmentSkill extends Skill implements AilmentSkillData {
 	/** The skill's MP cost */
 	cost: number;
 	/** Debuffs that the skill applies */
-	debuffs: Debuff[];
+	debuffs: AilmentSkillFlag[];
 	/**
 	 * The skill's special or notable features
 	 *
 	 * @deprecated Use AilmentSkill#debuffs instead.
 	 */
-	flags: Debuff[];
+	flags: AilmentSkillFlag[];
 	/** The range that the skill targets */
 	range: AilmentRange;
 	constructor(data: AilmentSkillData) {
@@ -323,7 +323,7 @@ export class BarrierSkill extends Skill implements BarrierSkillData {
 	/** The skill's MP cost */
 	cost: number;
 	/** The range that the skill targets */
-	range: BarrierRange;
+	range: AllyRange;
 	constructor(data: BarrierSkillData) {
 		super(data);
 
@@ -619,7 +619,7 @@ export class MasterSkill extends Skill implements MasterSkillData {
 	/** The amount of the stat that skills' costs are reduced by */
 	amount: number;
 	/** The stat cost that the skill lowers */
-	stat: MasterStat;
+	stat: HPMP;
 	constructor(data: MasterSkillData) {
 		const { amount, stat } = data;
 		super(data);
@@ -840,18 +840,22 @@ export class SMTCounterSkill extends Skill implements SMTCounterSkillData {
 	declare affinity: 'Passive';
 	declare type: 'SMTCOUNTER';
 	description: string;
-	/** Whether the skill lowers the attack of the attacker */
-	attackDown: boolean;
 	/** The chance for the skill to take effect */
 	chance: number;
 	/** The affinity of the attack dealt from the counter */
 	element: SMTCounterAffinity;
 	/** The numerical and displayed amount of damage that the skill deals */
-	power: SMTCounterPower;
+	power: BasePower;
+	/** Whether the skill lowers the attack of the attacker */
+	attackDown: boolean;
 	/** Whether the skill inflicts Shroud on the attacker */
 	shroud: boolean;
+	/** Whether the counterattack ignores affinity resistances */
+	pierce: boolean;
+	/** Whether the skill increases evasion and takes effect by evading an attack */
+	evasionBased: boolean;
 	constructor(data: SMTCounterSkillData) {
-		const { attackDown, chance, element, power, shroud = false } = data;
+		const { chance, element, power, attackDown = false, shroud = false, pierce = false, evasionBased = false } = data;
 		super(data);
 		this.description = shroud
 			? `Counters all attacks with a ${power.display.toLowerCase()} ${element} attack for one turn. Counterattack also inflicts Shroud.`
@@ -863,6 +867,8 @@ export class SMTCounterSkill extends Skill implements SMTCounterSkillData {
 		this.element = element;
 		this.power = power;
 		this.shroud = shroud;
+		this.pierce = pierce;
+		this.evasionBased = evasionBased;
 	}
 }
 
@@ -880,7 +886,9 @@ export class SpringSkill extends Skill implements SpringSkillData {
 		super(data);
 		this.description = typeof amount === 'string'
 			? `Increases max ${stat} by ${amount}.`
-			: `${amount === 30 ? 'Greatly i' : 'I'}ncreases MAX ${stat}.`;
+			: stat === 'HPMP'
+				? `Increases MAX HP and MP by ${amount}.`
+				: `${amount === 30 ? 'Greatly i' : 'I'}ncreases MAX ${stat}.`;
 		this.amount = amount;
 		this.stat = stat;
 	}
@@ -892,7 +900,7 @@ export class SummonSkill extends Skill implements SummonSkillData {
 	declare affinity: 'Special';
 	declare type: 'SUMMON';
 	description: string;
-	/** The summoned demon's name, or null if unknown */
+	/** The summoned demon's name or race, or null if unknown */
 	demon: string | null;
 	constructor(data: SummonSkillData) {
 		super(data);

@@ -29,6 +29,33 @@ const skillData: Readonly<AnySkillData[]> = [
 		chance: 55
 	},
 	{
+		name: 'Abyssal Beckoning',
+		affinity: 'Almighty',
+		type: 'ATTACK',
+		unique: null,
+		accuracy: 98,
+		ailments: [
+			{
+				name: 'Sleep',
+				chance: 70
+			}
+		],
+		cost: {
+			stat: 'MP',
+			amount: 10
+		},
+		flags: [
+			'Drain HP/MP'
+		],
+		power: {
+			amount: 120,
+			display: 'Weak',
+			type: 'Magic'
+		},
+		range: 'All',
+		series: 'smt'
+	},
+	{
 		name: 'Abyssal Eye',
 		affinity: 'Almighty',
 		type: 'ATTACK',
@@ -697,7 +724,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		],
 		power: {
 			amount: 110,
-			display: 'Weak',
+			display: 'Weak to heavy',
 			type: 'Physical'
 		},
 		range: 'One',
@@ -1143,6 +1170,21 @@ const skillData: Readonly<AnySkillData[]> = [
 		demon: 'Legion'
 	},
 	{
+		name: 'Capitulate to Pleasure',
+		affinity: 'Ailment',
+		type: 'AILMENT',
+		unique: true,
+		range: 'All',
+		cost: 30,
+		ailments: [
+			'Charm'
+		],
+		chance: 80,
+		flags: [
+			'Negate Buffs'
+		]
+	},
+	{
 		name: 'Carnage Fang',
 		affinity: 'Phys',
 		type: 'ATTACK',
@@ -1429,7 +1471,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Counter',
 		affinity: 'Passive',
 		type: 'SMTCOUNTER',
-		attackDown: false,
 		chance: 50,
 		element: 'Phys',
 		power: {
@@ -1612,6 +1653,21 @@ const skillData: Readonly<AnySkillData[]> = [
 		},
 		range: 'One',
 		series: 'smt'
+	},
+	{
+		name: 'Dance of Mara',
+		affinity: 'Ailment',
+		type: 'AILMENT',
+		unique: true,
+		range: 'All',
+		cost: 35,
+		ailments: [
+			'Charm'
+		],
+		chance: 70,
+		flags: [
+			'Charm Instakill'
+		]
 	},
 	{
 		name: 'Dancing Strike',
@@ -1842,6 +1898,21 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'AUTOBUFF',
 		buff: 'Defense',
 		range: 'Self'
+	},
+	{
+		name: 'Deicidal Poison',
+		affinity: 'Ailment',
+		type: 'AILMENT',
+		unique: true,
+		range: 'All',
+		cost: 50,
+		ailments: [
+			'Poison'
+		],
+		chance: 90,
+		flags: [
+			'Accuracy/Evasion Greatly Down'
+		]
 	},
 	{
 		name: 'Dekaja',
@@ -2491,6 +2562,20 @@ const skillData: Readonly<AnySkillData[]> = [
 		amount: '130%'
 	},
 	{
+		name: 'Elusive Eclipse',
+		affinity: 'Passive',
+		type: 'SMTCOUNTER',
+		chance: 100,
+		element: 'Phys',
+		power: {
+			amount: 300,
+			display: 'Severe'
+		},
+		pierce: true,
+		evasionBased: true,
+		unique: null
+	},
+	{
 		name: 'Emergency Shift',
 		affinity: 'Passive',
 		type: 'NAVI',
@@ -2600,6 +2685,21 @@ const skillData: Readonly<AnySkillData[]> = [
 			'Enervate'
 		],
 		chance: 40
+	},
+	{
+		name: 'Entangling Tendrils',
+		affinity: 'Ailment',
+		type: 'AILMENT',
+		unique: true,
+		range: 'All',
+		cost: 25,
+		ailments: [
+			'Seal'
+		],
+		chance: 40,
+		flags: [
+			'Attack Down'
+		]
 	},
 	{
 		name: 'Escape Route',
@@ -2715,6 +2815,14 @@ const skillData: Readonly<AnySkillData[]> = [
 		amount: 3,
 		criteria: null,
 		element: 'Wind'
+	},
+	{
+		name: 'Evergreen Dance',
+		affinity: 'Support',
+		type: 'MISC',
+		unique: null,
+		cost: 25,
+		description: 'Greatly fills the Magatsuhi Gauge. (Once per turn)'
 	},
 	{
 		name: 'Evil Gleam',
@@ -3150,6 +3258,29 @@ const skillData: Readonly<AnySkillData[]> = [
 		stacks: '+'
 	},
 	{
+		name: 'Formless Arrows',
+		affinity: 'Phys',
+		type: 'ATTACK',
+		unique: true,
+		accuracy: 98,
+		cost: {
+			stat: 'MP',
+			amount: 30
+		},
+		power: {
+			amount: 40,
+			display: 'Weak',
+			type: 'Physical'
+		},
+		range: 'All',
+		series: 'smt',
+		flags: [
+			'Mirage Boost'
+		],
+		min: 5,
+		max: 5
+	},
+	{
 		name: 'Fortified Moxy',
 		affinity: 'Passive',
 		type: 'CRITBOOST',
@@ -3319,6 +3450,28 @@ const skillData: Readonly<AnySkillData[]> = [
 		description: 'Reveal an enemy\'s stats, weak points, and skills.'
 	},
 	{
+		name: 'Gae Bolg',
+		affinity: 'Force',
+		type: 'ATTACK',
+		unique: true,
+		accuracy: 98,
+		cost: {
+			stat: 'MP',
+			amount: 60
+		},
+		power: {
+			amount: 150,
+			display: 'Medium',
+			type: 'Physical'
+		},
+		range: 'One',
+		series: 'smt',
+		flags: [
+			'Pierce',
+			'+200% Crit Rate'
+		]
+	},
+	{
 		name: 'Gaea Rage',
 		affinity: 'Phys',
 		type: 'ATTACK',
@@ -3338,6 +3491,27 @@ const skillData: Readonly<AnySkillData[]> = [
 		},
 		range: 'All',
 		series: 'smt'
+	},
+	{
+		name: 'Gale Charge',
+		affinity: 'Force',
+		type: 'ATTACK',
+		unique: true,
+		accuracy: 98,
+		cost: {
+			stat: 'MP',
+			amount: 25
+		},
+		power: {
+			amount: 90,
+			display: 'Medium',
+			type: 'Physical'
+		},
+		range: 'Random',
+		series: 'smt',
+		flags: [
+			'+200% Crit Rate'
+		]
 	},
 	{
 		name: 'Gale Slash',
@@ -3566,6 +3740,27 @@ const skillData: Readonly<AnySkillData[]> = [
 		series: 'smt'
 	},
 	{
+		name: 'Glacial Dragon Spiral',
+		affinity: 'Ice',
+		type: 'ATTACK',
+		unique: true,
+		accuracy: 98,
+		cost: {
+			stat: 'MP',
+			amount: 15
+		},
+		power: {
+			amount: 145,
+			display: 'Weak',
+			type: 'Magic'
+		},
+		range: 'One',
+		series: 'smt',
+		flags: [
+			'Pierce'
+		]
+	},
+	{
 		name: 'God\'s Bow',
 		affinity: 'Light',
 		type: 'ATTACK',
@@ -3650,6 +3845,37 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'SPRING',
 		amount: 30,
 		stat: 'HP'
+	},
+	{
+		name: 'Great Lament',
+		affinity: 'Almighty',
+		type: 'ATTACK',
+		accuracy: 98,
+		ailments: [
+			{
+				name: 'Poison',
+				chance: 50
+			},
+			{
+				name: 'Mirage',
+				chance: 50
+			}
+		],
+		cost: {
+			stat: 'MP',
+			amount: 140
+		},
+		power: {
+			amount: 180,
+			display: 'Severe',
+			type: 'Magic'
+		},
+		range: 'All',
+		series: 'smt',
+		unique: true,
+		flags: [
+			'Afflicted Boost'
+		]
 	},
 	{
 		name: 'Great Mana Spring',
@@ -3982,13 +4208,33 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Passive',
 		type: 'SMTCOUNTER',
 		unique: true,
-		attackDown: true,
 		chance: 65,
 		element: 'Dark',
 		power: {
 			amount: 100,
 			display: 'Weak'
-		}
+		},
+		attackDown: true
+	},
+	{
+		name: 'Heavenly Ikuyumi',
+		affinity: 'Almighty',
+		type: 'ATTACK',
+		accuracy: 98,
+		cost: {
+			stat: 'MP',
+			amount: 65
+		},
+		flags: [
+			'Debuff Number Dependent'
+		],
+		power: {
+			amount: 150,
+			display: 'Medium to severe',
+			type: 'Magic'
+		},
+		range: 'One',
+		series: 'smt'
 	},
 	{
 		name: 'Heaven\'s Blade',
@@ -4087,6 +4333,28 @@ const skillData: Readonly<AnySkillData[]> = [
 		},
 		range: 'All',
 		series: 'smt'
+	},
+	{
+		name: 'Hell Gaze',
+		affinity: 'Dark',
+		type: 'ATTACK',
+		unique: true,
+		accuracy: 98,
+		cost: {
+			stat: 'MP',
+			amount: 55
+		},
+		power: {
+			amount: 200,
+			display: 'Medium',
+			type: 'Physical'
+		},
+		range: 'One',
+		series: 'smt',
+		flags: [
+			'Pierce',
+			'Weakness Instakill'
+		]
 	},
 	{
 		name: 'Hellish Brand',
@@ -4540,6 +4808,14 @@ const skillData: Readonly<AnySkillData[]> = [
 		charge: 'Pierce Charge'
 	},
 	{
+		name: 'Impaler\'s Revenge',
+		affinity: 'Passive',
+		type: 'MISC',
+		cost: null,
+		description: 'Chance of granting Impaler\'s Animus after user\'s attack has been Nulled/Drained/Repelled.',
+		unique: null
+	},
+	{
 		name: 'Impetus',
 		affinity: 'Phys',
 		type: 'ATTACK',
@@ -4576,6 +4852,22 @@ const skillData: Readonly<AnySkillData[]> = [
 		series: 'smt'
 	},
 	{
+		name: 'Inflaming Divinity',
+		affinity: 'Support',
+		type: 'SUPPORT',
+		unique: null,
+		range: 'Ally',
+		cost: 50,
+		buffs: [
+			'Double Attack',
+			'Double Defense',
+			'Double Accuracy/Evasion'
+		],
+		negate: false,
+		debuffs: [],
+		auto: []
+	},
+	{
 		name: 'Inspiring Leader',
 		affinity: 'Passive',
 		type: 'MISC',
@@ -4589,6 +4881,14 @@ const skillData: Readonly<AnySkillData[]> = [
 		amount: 2,
 		criteria: null,
 		stat: 'AIL'
+	},
+	{
+		name: 'Intercalation',
+		affinity: 'Passive',
+		type: 'MISC',
+		cost: null,
+		description: 'After evading an attack, adds 1 Press Turn Icon at the start of the user\'s next turn.',
+		unique: null
 	},
 	{
 		name: 'Invigorate 1',
@@ -4613,6 +4913,27 @@ const skillData: Readonly<AnySkillData[]> = [
 		amount: 7,
 		criteria: 'Turn Start',
 		stat: 'MP'
+	},
+	{
+		name: 'Jack Agilao',
+		affinity: 'Fire',
+		type: 'ATTACK',
+		unique: true,
+		accuracy: 98,
+		cost: {
+			stat: 'MP',
+			amount: 20
+		},
+		power: {
+			amount: 160,
+			display: 'Medium',
+			type: 'Magic'
+		},
+		range: 'One',
+		series: 'smt',
+		flags: [
+			'Attack Down'
+		]
 	},
 	{
 		name: 'Jack Bufula',
@@ -4975,7 +5296,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Passive',
 		type: 'SMTCOUNTER',
 		unique: null,
-		attackDown: false,
 		chance: 100,
 		element: 'Elec',
 		power: {
@@ -5106,7 +5426,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		},
 		power: {
 			amount: 25,
-			display: 'Minuscule',
+			display: 'Minimal',
 			type: 'Physical'
 		},
 		range: 'One',
@@ -5122,6 +5442,16 @@ const skillData: Readonly<AnySkillData[]> = [
 			'Sleep'
 		],
 		chance: 55
+	},
+	{
+		name: 'Luminescent Mirage',
+		affinity: 'Support',
+		type: 'BARRIER',
+		range: 'Self',
+		cost: 100,
+		barriers: [
+			'Absolute Evasion'
+		]
 	},
 	{
 		name: 'Lunge',
@@ -5517,6 +5847,14 @@ const skillData: Readonly<AnySkillData[]> = [
 		series: 'persona'
 	},
 	{
+		name: 'Magatsuhi Plunder',
+		affinity: 'Special',
+		type: 'MISC',
+		unique: null,
+		cost: 35,
+		description: 'Drain HP from 1 ally. User\'s affinity resistances, skills, and Magatsuhi Skills will change depending on the drained ally.'
+	},
+	{
 		name: 'Magic Ability',
 		affinity: 'Passive',
 		type: 'BOOST',
@@ -5609,6 +5947,27 @@ const skillData: Readonly<AnySkillData[]> = [
 		},
 		range: 'All',
 		series: 'smt'
+	},
+	{
+		name: 'Maiden\'s Morsel',
+		affinity: 'Almighty',
+		type: 'ATTACK',
+		unique: true,
+		accuracy: 98,
+		cost: {
+			stat: 'MP',
+			amount: 8
+		},
+		power: {
+			amount: 100,
+			display: 'Medium',
+			type: 'Magic'
+		},
+		range: 'One',
+		series: 'smt',
+		flags: [
+			'Charmed Boost'
+		]
 	},
 	{
 		name: 'Makajama',
@@ -6296,6 +6655,27 @@ const skillData: Readonly<AnySkillData[]> = [
 		series: 'smt'
 	},
 	{
+		name: 'Megido Ark',
+		affinity: 'Almighty',
+		type: 'ATTACK',
+		unique: true,
+		accuracy: 98,
+		cost: {
+			stat: 'MP',
+			amount: 60
+		},
+		flags: [
+			'Foe Number Dependent'
+		],
+		power: {
+			amount: 10,
+			display: 'Medium to severe',
+			type: 'Magic'
+		},
+		range: 'One',
+		series: 'smt'
+	},
+	{
 		name: 'Megido Flame',
 		affinity: 'Fire',
 		type: 'ATTACK',
@@ -6385,7 +6765,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Passive',
 		type: 'SMTCOUNTER',
 		unique: null,
-		attackDown: false,
 		chance: 100,
 		element: 'Almighty',
 		power: {
@@ -6510,6 +6889,30 @@ const skillData: Readonly<AnySkillData[]> = [
 		range: 'Party',
 		cost: 20,
 		amount: 'Slight'
+	},
+	{
+		name: 'Mirage Assailment',
+		affinity: 'Force',
+		type: 'ATTACK',
+		unique: true,
+		accuracy: 98,
+		ailments: [
+			{
+				name: 'Mirage',
+				chance: 30
+			}
+		],
+		cost: {
+			stat: 'MP',
+			amount: 50
+		},
+		power: {
+			amount: 155,
+			display: 'Heavy',
+			type: 'Magic'
+		},
+		range: 'All',
+		series: 'smt'
 	},
 	{
 		name: 'Mirage Boost',
@@ -7591,7 +7994,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		],
 		power: {
 			amount: 155,
-			display: 'Medium',
+			display: 'Medium to severe',
 			type: 'Physical'
 		},
 		range: 'One',
@@ -7674,6 +8077,37 @@ const skillData: Readonly<AnySkillData[]> = [
 		},
 		range: 'One',
 		series: 'persona'
+	},
+	{
+		name: 'Primordial Chaos',
+		affinity: 'Almighty',
+		type: 'ATTACK',
+		accuracy: 98,
+		cost: {
+			stat: 'MP',
+			amount: 150
+		},
+		power: {
+			amount: 210,
+			display: 'Heavy',
+			type: 'Magic'
+		},
+		range: 'All',
+		series: 'smt',
+		unique: true,
+		flags: [
+			'Negate Buffs',
+			'Attack Down',
+			'Defense Down',
+			'Accuracy/Evasion Down'
+		]
+	},
+	{
+		name: 'Primordial Parturition',
+		affinity: 'Special',
+		type: 'SUMMON',
+		unique: null,
+		demon: 'Qadištu'
 	},
 	{
 		name: 'Profaned Land',
@@ -7886,6 +8320,26 @@ const skillData: Readonly<AnySkillData[]> = [
 			type: 'Physical'
 		},
 		range: 'One',
+		series: 'smt'
+	},
+	{
+		name: 'Queen\'s Decree',
+		affinity: 'Almighty',
+		type: 'ATTACK',
+		unique: true,
+		accuracy: 98,
+		cost: {
+			stat: 'MP',
+			amount: 60
+		},
+		min: 12,
+		max: 12,
+		power: {
+			amount: 25,
+			display: 'Minimal',
+			type: 'Magic'
+		},
+		range: 'Random',
 		series: 'smt'
 	},
 	{
@@ -8447,7 +8901,6 @@ const skillData: Readonly<AnySkillData[]> = [
 		name: 'Retaliate',
 		affinity: 'Passive',
 		type: 'SMTCOUNTER',
-		attackDown: false,
 		chance: 50,
 		element: 'Phys',
 		power: {
@@ -8547,6 +9000,14 @@ const skillData: Readonly<AnySkillData[]> = [
 		]
 	},
 	{
+		name: 'Rooted Soul',
+		affinity: 'Passive',
+		type: 'SPRING',
+		amount: 30,
+		stat: 'HPMP',
+		unique: null
+	},
+	{
 		name: 'Ruinous Thunder',
 		affinity: 'Elec',
 		type: 'ATTACK',
@@ -8610,6 +9071,23 @@ const skillData: Readonly<AnySkillData[]> = [
 		},
 		range: 'One',
 		series: 'smt'
+	},
+	{
+		name: 'Sakuya Sakura',
+		affinity: 'Recovery',
+		type: 'RECOVERY',
+		unique: true,
+		range: 'Party',
+		cost: 180,
+		amount: 'Slight',
+		buffs: [
+			'Attack',
+			'Defense',
+			'Accuracy/Evasion'
+		],
+		flags: [
+			'Recover HP/MP'
+		]
 	},
 	{
 		name: 'Salvation',
@@ -8717,6 +9195,28 @@ const skillData: Readonly<AnySkillData[]> = [
 		criteria: null
 	},
 	{
+		name: 'Seething Mansemat',
+		affinity: 'Phys',
+		type: 'ATTACK',
+		accuracy: 98,
+		cost: {
+			stat: 'MP',
+			amount: 100
+		},
+		power: {
+			amount: 120,
+			display: 'Weak',
+			type: 'Physical'
+		},
+		range: 'All',
+		series: 'smt',
+		unique: true,
+		flags: [
+			'+200% Crit Rate',
+			'Crit Damage Boost'
+		]
+	},
+	{
 		name: 'Self-destruct',
 		aliases: [
 			'Last Resort'
@@ -8767,6 +9267,13 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'SIPHON',
 		amount: 22,
 		criteria: 'Drain'
+	},
+	{
+		name: 'Shadow Summoning',
+		affinity: 'Special',
+		type: 'SUMMON',
+		unique: null,
+		demon: 'Qadištu'
 	},
 	{
 		name: 'Sharp Student',
@@ -9420,7 +9927,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		min: 2,
 		power: {
 			amount: 25,
-			display: 'Minuscule',
+			display: 'Minimal',
 			type: 'Physical'
 		},
 		range: 'All',
@@ -9539,7 +10046,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		min: 3,
 		power: {
 			amount: 20,
-			display: 'Minuscule',
+			display: 'Minimal',
 			type: 'Physical'
 		},
 		range: 'One',
@@ -10020,6 +10527,35 @@ const skillData: Readonly<AnySkillData[]> = [
 		resistance: 'Null'
 	},
 	{
+		name: 'Untainted Wind',
+		affinity: 'Force',
+		type: 'ATTACK',
+		unique: null,
+		accuracy: 98,
+		ailments: [
+			{
+				name: 'Charm',
+				chance: 50
+			}
+		],
+		cost: {
+			stat: 'MP',
+			amount: 240
+		},
+		flags: [
+			'Attack Greatly Down',
+			'Defense Greatly Down',
+			'Accuracy/Evasion Greatly Down'
+		],
+		power: {
+			amount: 150,
+			display: 'Heavy',
+			type: 'Magic'
+		},
+		range: 'All',
+		series: 'smt'
+	},
+	{
 		name: 'Vacuum Wave',
 		affinity: 'Wind',
 		type: 'ATTACK',
@@ -10188,6 +10724,28 @@ const skillData: Readonly<AnySkillData[]> = [
 		},
 		range: 'All',
 		series: 'persona'
+	},
+	{
+		name: 'Voracious Salvation',
+		affinity: 'Phys',
+		type: 'ATTACK',
+		unique: true,
+		accuracy: 98,
+		cost: {
+			stat: 'MP',
+			amount: 35
+		},
+		flags: [
+			'Afflicted Boost',
+			'Drain HP'
+		],
+		power: {
+			amount: 200,
+			display: 'Heavy',
+			type: 'Physical'
+		},
+		range: 'All',
+		series: 'smt'
 	},
 	{
 		name: 'Vorpal Blade',

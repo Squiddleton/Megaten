@@ -1,5 +1,5 @@
 import type { BattleThemes } from './music.js';
-import type { AilBoostCriteria, AilDefensiveAilment, AilResistance, Ailment, AilmentName, AilmentRange, AllyRange, AnyAffinity, AnyGame, Arcana, AttackCost, AttackFlag, AttackPower, AutoBuffRange, Barrier, BarrierRange, BoostAffinity, BoostStack, BreakAffinity, Buff, Charge, CritBoostCriteria, CritRange, DamagingAffinity, Debuff, DefensiveAffinity, DefensiveSKillResistance, DemonAffinities, DemonAlignment, DemonOrigin, DemonResistances, DemonSkill, DemonStats, EndureCriteria, EnemyRange, EvasionAffinity, EvasionBoostCriteria, HPMP, If, LightDark, MasterStat, NumberOrPercent, OneOrAllAilments, PersonaGame, PersonaRace, PostBattleStat, RecoveryAmount, RecoveryFlag, RecoveryRange, RegenCriteria, RegenStat, SMTCounterAffinity, SMTCounterPower, SMTRace, Series, SetAffinity, SingleOrDoubleBuff, SiphonCriteria, SkillPotential, SkillType, Stage, SupportAutoEffect, SupportFlag, SupportRange, SusceptibilityRange, WallAffinity } from './types.js';
+import type { AilBoostCriteria, AilDefensiveAilment, AilResistance, Ailment, AilmentName, AilmentRange, AilmentSkillFlag, AllyRange, AnyAffinity, AnyGame, Arcana, AttackCost, AttackFlag, AttackPower, AutoBuffRange, Barrier, BasePower, BoostAffinity, BoostStack, BreakAffinity, Buff, Charge, CritBoostCriteria, CritRange, DamagingAffinity, DefensiveAffinity, DefensiveSKillResistance, DemonAffinities, DemonAlignment, DemonOrigin, DemonResistances, DemonSkill, DemonStats, EndureCriteria, EnemyRange, EvasionAffinity, EvasionBoostCriteria, HPMP, If, LightDark, NumberOrPercent, OneOrAllAilments, PersonaGame, PersonaRace, PostBattleStat, RecoveryAmount, RecoveryFlag, RecoveryRange, RegenCriteria, RegenStat, SMTCounterAffinity, SMTRace, Series, SetAffinity, SingleOrDoubleBuff, SiphonCriteria, SkillPotential, SkillType, Stage, SupportAutoEffect, SupportFlag, SupportRange, SusceptibilityRange, WallAffinity } from './types.js';
 
 /** Data used for constructing a Demon instance */
 export interface DemonData<PersonaBased extends boolean = boolean> {
@@ -92,7 +92,7 @@ export interface AilmentSkillData extends SkillData {
 	ailments: AilmentName[];
 	chance: number;
 	cost: number;
-	flags?: Debuff[];
+	flags?: AilmentSkillFlag[];
 	range: AilmentRange;
 }
 
@@ -122,7 +122,7 @@ export interface BarrierSkillData extends SkillData {
 	type: 'BARRIER';
 	barriers: Barrier[];
 	cost: number;
-	range: BarrierRange;
+	range: AllyRange;
 }
 
 export interface BarrierBreakSkillData extends SkillData {
@@ -201,7 +201,7 @@ export interface MasterSkillData extends SkillData {
 	affinity: 'Passive';
 	type: 'MASTER';
 	amount: number;
-	stat: MasterStat;
+	stat: HPMP;
 }
 
 export interface MiscSkillData extends SkillData {
@@ -267,11 +267,13 @@ export interface SiphonSkillData extends SkillData {
 export interface SMTCounterSkillData extends SkillData {
 	affinity: 'Passive';
 	type: 'SMTCOUNTER';
-	attackDown: boolean;
 	chance: number;
 	element: SMTCounterAffinity;
-	power: SMTCounterPower;
+	power: BasePower;
+	attackDown?: boolean;
 	shroud?: boolean;
+	pierce?: boolean;
+	evasionBased?: boolean;
 }
 
 export interface SpringSkillData extends SkillData {
