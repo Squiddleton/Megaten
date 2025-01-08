@@ -34,12 +34,12 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		unique: null,
 		accuracy: 98,
-		ailments: [
-			{
-				name: 'Sleep',
-				chance: 70
-			}
-		],
+		ailments: {
+			names: [
+				'Sleep'
+			],
+			chance: 70
+		},
 		cost: {
 			stat: 'MP',
 			amount: 10
@@ -404,12 +404,12 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		accuracy: 90,
-		ailments: [
-			{
-				name: 'Fear',
-				chance: 15
-			}
-		],
+		ailments: {
+			names: [
+				'Fear'
+			],
+			chance: 15
+		},
 		cost: {
 			stat: 'HP',
 			amount: 9
@@ -509,12 +509,12 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		accuracy: 80,
-		ailments: [
-			{
-				name: 'Fear',
-				chance: 15
-			}
-		],
+		ailments: {
+			names: [
+				'Fear'
+			],
+			chance: 15
+		},
 		cost: {
 			stat: 'HP',
 			amount: 16
@@ -604,12 +604,12 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		unique: null,
 		accuracy: 98,
-		ailments: [
-			{
-				name: 'Mud',
-				chance: 100
-			}
-		],
+		ailments: {
+			names: [
+				'Mud'
+			],
+			chance: 100
+		},
 		cost: {
 			stat: 'MP',
 			amount: 0
@@ -628,12 +628,12 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		unique: true,
 		accuracy: 98,
-		ailments: [
-			{
-				name: 'Confusion',
-				chance: 45
-			}
-		],
+		ailments: {
+			names: [
+				'Confusion'
+			],
+			chance: 45
+		},
 		cost: {
 			stat: 'MP',
 			amount: 80
@@ -651,12 +651,12 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		accuracy: 80,
-		ailments: [
-			{
-				name: 'Despair',
-				chance: 5
-			}
-		],
+		ailments: {
+			names: [
+				'Despair'
+			],
+			chance: 5
+		},
 		cost: {
 			stat: 'HP',
 			amount: 21
@@ -857,12 +857,12 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		accuracy: 98,
-		ailments: [
-			{
-				name: 'Poison',
-				chance: 35
-			}
-		],
+		ailments: {
+			names: [
+				'Poison'
+			],
+			chance: 35
+		},
 		cost: {
 			stat: 'MP',
 			amount: 20
@@ -902,12 +902,12 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		accuracy: 80,
-		ailments: [
-			{
-				name: 'Fear',
-				chance: 5
-			}
-		],
+		ailments: {
+			names: [
+				'Fear'
+			],
+			chance: 5
+		},
 		cost: {
 			stat: 'HP',
 			amount: 22
@@ -973,12 +973,12 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		accuracy: 80,
-		ailments: [
-			{
-				name: 'Charm',
-				chance: 5
-			}
-		],
+		ailments: {
+			names: [
+				'Charm'
+			],
+			chance: 5
+		},
 		cost: {
 			stat: 'HP',
 			amount: 22
@@ -996,12 +996,12 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		accuracy: 90,
-		ailments: [
-			{
-				name: 'Charm',
-				chance: 20
-			}
-		],
+		ailments: {
+			names: [
+				'Charm'
+			],
+			chance: 20
+		},
 		cost: {
 			stat: 'HP',
 			amount: 9
@@ -1242,12 +1242,12 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		accuracy: 90,
-		ailments: [
-			{
-				name: 'Enervate',
-				chance: 35
-			}
-		],
+		ailments: {
+			names: [
+				'Enervate'
+			],
+			chance: 35
+		},
 		cost: {
 			stat: 'HP',
 			amount: 10
@@ -1498,12 +1498,12 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		accuracy: 80,
-		ailments: [
-			{
-				name: 'Rage',
-				chance: 20
-			}
-		],
+		ailments: {
+			names: [
+				'Rage'
+			],
+			chance: 20
+		},
 		cost: {
 			stat: 'HP',
 			amount: 14
@@ -1737,12 +1737,12 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		accuracy: 98,
-		ailments: [
-			{
-				name: 'Seal',
-				chance: 30
-			}
-		],
+		ailments: {
+			names: [
+				'Seal'
+			],
+			chance: 30
+		},
 		cost: {
 			stat: 'MP',
 			amount: 25
@@ -1833,12 +1833,12 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		unique: true,
 		accuracy: 108,
-		ailments: [
-			{
-				name: 'Charm',
-				chance: 45
-			}
-		],
+		ailments: {
+			names: [
+				'Charm'
+			],
+			chance: 45
+		},
 		cost: {
 			stat: 'MP',
 			amount: 70
@@ -1856,12 +1856,12 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		accuracy: 90,
-		ailments: [
-			{
-				name: 'Fear',
-				chance: 20
-			}
-		],
+		ailments: {
+			names: [
+				'Fear'
+			],
+			chance: 20
+		},
 		cost: {
 			stat: 'HP',
 			amount: 20
@@ -2187,12 +2187,12 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		accuracy: 80,
-		ailments: [
-			{
-				name: 'Sleep',
-				chance: 5
-			}
-		],
+		ailments: {
+			names: [
+				'Sleep'
+			],
+			chance: 5
+		},
 		cost: {
 			stat: 'HP',
 			amount: 16
@@ -2347,12 +2347,12 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		unique: null,
 		accuracy: 108,
-		ailments: [
-			{
-				name: 'Seal',
-				chance: 40
-			}
-		],
+		ailments: {
+			names: [
+				'Seal'
+			],
+			chance: 40
+		},
 		cost: {
 			stat: 'MP',
 			amount: 0
@@ -2393,12 +2393,12 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		accuracy: 98,
-		ailments: [
-			{
-				name: 'Sleep',
-				chance: 55
-			}
-		],
+		ailments: {
+			names: [
+				'Sleep'
+			],
+			chance: 55
+		},
 		cost: {
 			stat: 'MP',
 			amount: 10
@@ -3191,12 +3191,12 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		accuracy: 80,
-		ailments: [
-			{
-				name: 'Mirage',
-				chance: 5
-			}
-		],
+		ailments: {
+			names: [
+				'Mirage'
+			],
+			chance: 5
+		},
 		cost: {
 			stat: 'HP',
 			amount: 19
@@ -3382,20 +3382,14 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		accuracy: 98,
-		ailments: [
-			{
-				name: 'Poison',
-				chance: 25
-			},
-			{
-				name: 'Confusion',
-				chance: 25
-			},
-			{
-				name: 'Charm',
-				chance: 25
-			}
-		],
+		ailments: {
+			names: [
+				'Poison',
+				'Confusion',
+				'Charm'
+			],
+			chance: 25
+		},
 		cost: {
 			stat: 'MP',
 			amount: 25
@@ -3851,16 +3845,13 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Almighty',
 		type: 'ATTACK',
 		accuracy: 98,
-		ailments: [
-			{
-				name: 'Poison',
-				chance: 50
-			},
-			{
-				name: 'Mirage',
-				chance: 50
-			}
-		],
+		ailments: {
+			names: [
+				'Poison',
+				'Mirage'
+			],
+			chance: 50
+		},
 		cost: {
 			stat: 'MP',
 			amount: 140
@@ -4106,12 +4097,12 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		accuracy: 90,
-		ailments: [
-			{
-				name: 'Seal',
-				chance: 20
-			}
-		],
+		ailments: {
+			names: [
+				'Seal'
+			],
+			chance: 20
+		},
 		cost: {
 			stat: 'HP',
 			amount: 9
@@ -4130,12 +4121,12 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		unique: true,
 		accuracy: 108,
-		ailments: [
-			{
-				name: 'Confusion',
-				chance: 70
-			}
-		],
+		ailments: {
+			names: [
+				'Confusion'
+			],
+			chance: 70
+		},
 		cost: {
 			stat: 'MP',
 			amount: 20
@@ -4962,12 +4953,12 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		unique: null,
 		accuracy: 108,
-		ailments: [
-			{
-				name: 'Seal',
-				chance: 40
-			}
-		],
+		ailments: {
+			names: [
+				'Seal'
+			],
+			chance: 40
+		},
 		cost: {
 			stat: 'MP',
 			amount: 90
@@ -5599,12 +5590,12 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		unique: true,
 		accuracy: 108,
-		ailments: [
-			{
-				name: 'Seal',
-				chance: 40
-			}
-		],
+		ailments: {
+			names: [
+				'Seal'
+			],
+			chance: 40
+		},
 		cost: {
 			stat: 'MP',
 			amount: 50
@@ -5643,12 +5634,12 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		accuracy: 98,
-		ailments: [
-			{
-				name: 'Confusion',
-				chance: 45
-			}
-		],
+		ailments: {
+			names: [
+				'Confusion'
+			],
+			chance: 45
+		},
 		cost: {
 			stat: 'MP',
 			amount: 10
@@ -5820,20 +5811,14 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		unique: true,
 		accuracy: 90,
-		ailments: [
-			{
-				name: 'Confusion',
-				chance: 20
-			},
-			{
-				name: 'Fear',
-				chance: 20
-			},
-			{
-				name: 'Despair',
-				chance: 20
-			}
-		],
+		ailments: {
+			names: [
+				'Confusion',
+				'Fear',
+				'Despair'
+			],
+			chance: 20
+		},
 		cost: {
 			stat: 'MP',
 			amount: 30
@@ -6304,12 +6289,12 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		unique: true,
 		accuracy: 95,
-		ailments: [
-			{
-				name: 'Burn',
-				chance: 5
-			}
-		],
+		ailments: {
+			names: [
+				'Burn'
+			],
+			chance: 5
+		},
 		cost: {
 			stat: 'MP',
 			amount: 32
@@ -6742,12 +6727,12 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		accuracy: 80,
-		ailments: [
-			{
-				name: 'Seal',
-				chance: 5
-			}
-		],
+		ailments: {
+			names: [
+				'Seal'
+			],
+			chance: 5
+		},
 		cost: {
 			stat: 'HP',
 			amount: 15
@@ -6828,12 +6813,12 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		accuracy: 80,
-		ailments: [
-			{
-				name: 'Confusion',
-				chance: 5
-			}
-		],
+		ailments: {
+			names: [
+				'Confusion'
+			],
+			chance: 5
+		},
 		cost: {
 			stat: 'HP',
 			amount: 19
@@ -6896,12 +6881,12 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		unique: true,
 		accuracy: 98,
-		ailments: [
-			{
-				name: 'Mirage',
-				chance: 30
-			}
-		],
+		ailments: {
+			names: [
+				'Mirage'
+			],
+			chance: 30
+		},
 		cost: {
 			stat: 'MP',
 			amount: 50
@@ -6928,12 +6913,12 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		unique: true,
 		accuracy: 98,
-		ailments: [
-			{
-				name: 'Mirage',
-				chance: 75
-			}
-		],
+		ailments: {
+			names: [
+				'Mirage'
+			],
+			chance: 75
+		},
 		cost: {
 			stat: 'MP',
 			amount: 15
@@ -6951,12 +6936,12 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		accuracy: 98,
-		ailments: [
-			{
-				name: 'Mirage',
-				chance: 35
-			}
-		],
+		ailments: {
+			names: [
+				'Mirage'
+			],
+			chance: 35
+		},
 		cost: {
 			stat: 'MP',
 			amount: 35
@@ -7162,12 +7147,12 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		accuracy: 80,
-		ailments: [
-			{
-				name: 'Enervate',
-				chance: 5
-			}
-		],
+		ailments: {
+			names: [
+				'Enervate'
+			],
+			chance: 5
+		},
 		cost: {
 			stat: 'HP',
 			amount: 16
@@ -7196,12 +7181,12 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		accuracy: 90,
-		ailments: [
-			{
-				name: 'Seal',
-				chance: 35
-			}
-		],
+		ailments: {
+			names: [
+				'Seal'
+			],
+			chance: 35
+		},
 		cost: {
 			stat: 'HP',
 			amount: 9
@@ -7297,12 +7282,12 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		accuracy: 80,
-		ailments: [
-			{
-				name: 'Exhaust',
-				chance: 5
-			}
-		],
+		ailments: {
+			names: [
+				'Exhaust'
+			],
+			chance: 5
+		},
 		cost: {
 			stat: 'HP',
 			amount: 18
@@ -7342,12 +7327,12 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		accuracy: 90,
-		ailments: [
-			{
-				name: 'Despair',
-				chance: 20
-			}
-		],
+		ailments: {
+			names: [
+				'Despair'
+			],
+			chance: 20
+		},
 		cost: {
 			stat: 'HP',
 			amount: 12
@@ -7691,12 +7676,12 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		accuracy: 80,
-		ailments: [
-			{
-				name: 'Rage',
-				chance: 5
-			}
-		],
+		ailments: {
+			names: [
+				'Rage'
+			],
+			chance: 5
+		},
 		cost: {
 			stat: 'HP',
 			amount: 16
@@ -7895,12 +7880,12 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		accuracy: 85,
-		ailments: [
-			{
-				name: 'Poison',
-				chance: 35
-			}
-		],
+		ailments: {
+			names: [
+				'Poison'
+			],
+			chance: 35
+		},
 		cost: {
 			stat: 'HP',
 			amount: 14
@@ -7944,12 +7929,12 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		accuracy: 90,
-		ailments: [
-			{
-				name: 'Poison',
-				chance: 20
-			}
-		],
+		ailments: {
+			names: [
+				'Poison'
+			],
+			chance: 20
+		},
 		cost: {
 			stat: 'HP',
 			amount: 9
@@ -8115,12 +8100,12 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		unique: null,
 		accuracy: 98,
-		ailments: [
-			{
-				name: 'Poison',
-				chance: 100
-			}
-		],
+		ailments: {
+			names: [
+				'Poison'
+			],
+			chance: 100
+		},
 		cost: {
 			stat: 'MP',
 			amount: 35
@@ -9164,12 +9149,12 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		accuracy: 80,
-		ailments: [
-			{
-				name: 'Seal',
-				chance: 20
-			}
-		],
+		ailments: {
+			names: [
+				'Seal'
+			],
+			chance: 20
+		},
 		cost: {
 			stat: 'HP',
 			amount: 14
@@ -9400,12 +9385,12 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		accuracy: 90,
-		ailments: [
-			{
-				name: 'Confusion',
-				chance: 20
-			}
-		],
+		ailments: {
+			names: [
+				'Confusion'
+			],
+			chance: 20
+		},
 		cost: {
 			stat: 'HP',
 			amount: 10
@@ -9423,12 +9408,12 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		accuracy: 90,
-		ailments: [
-			{
-				name: 'Mirage',
-				chance: 20
-			}
-		],
+		ailments: {
+			names: [
+				'Mirage'
+			],
+			chance: 20
+		},
 		cost: {
 			stat: 'HP',
 			amount: 10
@@ -9577,12 +9562,12 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		unique: true,
 		accuracy: 50,
-		ailments: [
-			{
-				name: 'Seal',
-				chance: 40
-			}
-		],
+		ailments: {
+			names: [
+				'Seal'
+			],
+			chance: 40
+		},
 		cost: {
 			stat: 'MP',
 			amount: 50
@@ -9732,12 +9717,12 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		unique: null,
 		accuracy: 80,
-		ailments: [
-			{
-				name: 'Hunger',
-				chance: 100
-			}
-		],
+		ailments: {
+			names: [
+				'Hunger'
+			],
+			chance: 100
+		},
 		cost: {
 			stat: 'MP',
 			amount: 0
@@ -10069,12 +10054,12 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		unique: true,
 		accuracy: 108,
-		ailments: [
-			{
-				name: 'Confusion',
-				chance: 50
-			}
-		],
+		ailments: {
+			names: [
+				'Confusion'
+			],
+			chance: 50
+		},
 		cost: {
 			stat: 'MP',
 			amount: 35
@@ -10100,12 +10085,12 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		accuracy: 90,
-		ailments: [
-			{
-				name: 'Fear',
-				chance: 20
-			}
-		],
+		ailments: {
+			names: [
+				'Fear'
+			],
+			chance: 20
+		},
 		cost: {
 			stat: 'HP',
 			amount: 8
@@ -10246,12 +10231,12 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		unique: true,
 		accuracy: 90,
-		ailments: [
-			{
-				name: 'Fear',
-				chance: 70
-			}
-		],
+		ailments: {
+			names: [
+				'Fear'
+			],
+			chance: 70
+		},
 		cost: {
 			stat: 'MP',
 			amount: 34
@@ -10314,12 +10299,12 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		unique: true,
 		accuracy: 98,
-		ailments: [
-			{
-				name: 'Poison',
-				chance: 50
-			}
-		],
+		ailments: {
+			names: [
+				'Poison'
+			],
+			chance: 50
+		},
 		cost: {
 			stat: 'MP',
 			amount: 30
@@ -10362,12 +10347,12 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		accuracy: 98,
-		ailments: [
-			{
-				name: 'Poison',
-				chance: 60
-			}
-		],
+		ailments: {
+			names: [
+				'Poison'
+			],
+			chance: 60
+		},
 		cost: {
 			stat: 'MP',
 			amount: 10
@@ -10474,12 +10459,12 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		accuracy: 90,
-		ailments: [
-			{
-				name: 'Confusion',
-				chance: 20
-			}
-		],
+		ailments: {
+			names: [
+				'Confusion'
+			],
+			chance: 20
+		},
 		cost: {
 			stat: 'HP',
 			amount: 10
@@ -10532,12 +10517,12 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		unique: null,
 		accuracy: 98,
-		ailments: [
-			{
-				name: 'Charm',
-				chance: 50
-			}
-		],
+		ailments: {
+			names: [
+				'Charm'
+			],
+			chance: 50
+		},
 		cost: {
 			stat: 'MP',
 			amount: 240
@@ -10684,12 +10669,12 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		unique: true,
 		accuracy: 98,
-		ailments: [
-			{
-				name: 'Seal',
-				chance: 40
-			}
-		],
+		ailments: {
+			names: [
+				'Seal'
+			],
+			chance: 40
+		},
 		cost: {
 			stat: 'MP',
 			amount: 60
@@ -10707,12 +10692,12 @@ const skillData: Readonly<AnySkillData[]> = [
 		affinity: 'Phys',
 		type: 'ATTACK',
 		accuracy: 80,
-		ailments: [
-			{
-				name: 'Poison',
-				chance: 5
-			}
-		],
+		ailments: {
+			names: [
+				'Poison'
+			],
+			chance: 5
+		},
 		cost: {
 			stat: 'HP',
 			amount: 16
@@ -10961,12 +10946,12 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		unique: null,
 		accuracy: 108,
-		ailments: [
-			{
-				name: 'Mirage',
-				chance: 50
-			}
-		],
+		ailments: {
+			names: [
+				'Mirage'
+			],
+			chance: 50
+		},
 		cost: {
 			stat: 'MP',
 			amount: 0

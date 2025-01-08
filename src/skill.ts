@@ -2,7 +2,7 @@ import { normalize } from '@squiddleton/util';
 import type { AilBoostSkillData, AilDefensiveSkillData, AilmentSkillData, AttackSkillData, AutoBuffSkillData, BarrierBreakSkillData, BarrierSkillData, BoostSkillData, BreakSkillData, ChargeSkillData, CritBoostSkillData, CritSkillData, DefensiveSkillData, EndureSkillData, EvasionSkillData, InstakillBoostSkillData, MasterSkillData, MiscSkillData, NaviSkillData, PersonaCounterSkillData, PostBattleSkillData, RecoverySkillData, RegenSkillData, SMTCounterSkillData, SetSkillData, SiphonSkillData, SkillData, SpringSkillData, SummonSkillData, SupportSkillData, SusceptibilitySkillData, TauntSkillData, WallSkillData } from './dataTypes.js';
 import { MegatenError } from './error.js';
 import skillData from './skillData.js';
-import type { AilBoostCriteria, AilDefensiveAilment, AilResistance, Ailment, AilmentName, AilmentRange, AilmentSkillFlag, AllyRange, AnyAffinity, AttackCost, AttackFlag, AttackPower, AutoBuffRange, Barrier, BasePower, BoostAffinity, BoostStack, BreakAffinity, Buff, Charge, CritBoostCriteria, CritRange, DamagingAffinity, DefensiveAffinity, DefensiveSKillResistance, EndureCriteria, EnemyRange, EvasionAffinity, EvasionBoostCriteria, HPMP, LightDark, NumberOrPercent, OneOrAllAilments, PostBattleStat, RecoveryAmount, RecoveryFlag, RecoveryRange, RegenCriteria, RegenStat, SMTCounterAffinity, Series, SetAffinity, SingleOrDoubleBuff, SiphonCriteria, SkillType, SupportAutoEffect, SupportFlag, SupportRange, SusceptibilityRange, WallAffinity } from './types.js';
+import type { AilBoostCriteria, AilDefensiveAilment, AilResistance, AilmentName, AilmentRange, AilmentSkillFlag, AllyRange, AnyAffinity, AttackAilments, AttackCost, AttackFlag, AttackPower, AutoBuffRange, Barrier, BasePower, BoostAffinity, BoostStack, BreakAffinity, Buff, Charge, CritBoostCriteria, CritRange, DamagingAffinity, DefensiveAffinity, DefensiveSKillResistance, EndureCriteria, EnemyRange, EvasionAffinity, EvasionBoostCriteria, HPMP, LightDark, NumberOrPercent, OneOrAllAilments, PostBattleStat, RecoveryAmount, RecoveryFlag, RecoveryRange, RegenCriteria, RegenStat, SMTCounterAffinity, Series, SetAffinity, SingleOrDoubleBuff, SiphonCriteria, SkillType, SupportAutoEffect, SupportFlag, SupportRange, SusceptibilityRange, WallAffinity } from './types.js';
 
 export abstract class Skill implements SkillData {
 	/** The skill's name (adjusted for consistency with SMT5) */
@@ -145,7 +145,7 @@ export class AttackSkill extends Skill implements AttackSkillData {
 	/** The skill's accuracy */
 	accuracy: number;
 	/** The names and chances of ailments that the skill inflicts */
-	ailments: Ailment[];
+	ailments: AttackAilments | null;
 	/** The skill cost's type and amount */
 	cost: AttackCost;
 	/** The skill's special or notable features */
@@ -161,7 +161,7 @@ export class AttackSkill extends Skill implements AttackSkillData {
 	/** The game series that the skill data originates from */
 	series: Series;
 	constructor(data: AttackSkillData) {
-		const { accuracy, affinity, ailments = [], flags = [], max = 1, min = 1, power, range, series } = data;
+		const { accuracy, affinity, ailments = null, flags = [], max = 1, min = 1, power, range, series } = data;
 		super(data);
 
 		const times = max === 1
@@ -169,7 +169,7 @@ export class AttackSkill extends Skill implements AttackSkillData {
 			: max === min
 				? max.toString()
 				: `${min}~${max}`;
-		const displayAffinity = `${times !== '' ? `${times} ${power.display.toLowerCase()}` : power.display} ${(flags.includes('Pierce') && ailments.length > 0) ? 'Piercing ' : ''}${(power.type === 'Physical' && !['Phys', 'Gun'].includes(affinity)) ? 'Strength-based ' : ''}${affinity}`;
+		const displayAffinity = `${times !== '' ? `${times} ${power.display.toLowerCase()}` : power.display} ${(flags.includes('Pierce') && ailments !== null) ? 'Piercing ' : ''}${(power.type === 'Physical' && !['Phys', 'Gun'].includes(affinity)) ? 'Strength-based ' : ''}${affinity}`;
 		const displayRange = {
 			One: '1 foe',
 			All: 'all foes',
@@ -194,7 +194,7 @@ export class AttackSkill extends Skill implements AttackSkillData {
 
 		const sentences: string[] = [];
 
-		if (ailments.length > 0) sentences.push(`Chance of inflicting ${ailments.map(ailment => ailment.name).join('/')}.`);
+		if (ailments !== null) sentences.push(`Chance of inflicting ${ailments.names.join('/')}.`);
 
 		if (flags.length > 0) {
 			if (flags.includes('+20% Crit Rate') || flags.includes('+30% Crit Rate')) {
@@ -254,7 +254,7 @@ export class AttackSkill extends Skill implements AttackSkillData {
 			if (flags.includes('Negate Buffs')) {
 				sentences.push('Negates target\'s status buff effects.');
 			}
-			if (flags.includes('Pierce') && ailments.length === 0 && !flags.includes('+200% Crit Rate')) {
+			if (flags.includes('Pierce') && ailments === null && !flags.includes('+200% Crit Rate')) {
 				sentences.push('Ignores affinity resistance and pierces through.');
 			}
 			if (flags.includes('Poisoned Boost')) {

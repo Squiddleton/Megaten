@@ -4,11 +4,11 @@ export type If<Bool extends boolean, ValueIfTrue, ValueIfFalse> = Bool extends t
 /** Criteria for AilBoostSkill instances taking effect */
 export type AilBoostCriteria = 'Rain/Snow';
 
-/** An ailment/status effect */
-export interface Ailment {
-	/** The ailment's name */
-	name: AilmentName;
-	/** The percent chance of inflicting the ailment */
+/** Ailments possibly inflicted by AttackSkill instances */
+export interface AttackAilments {
+	/** Ailments the skill may inflict */
+	names: AilmentName[];
+	/** The percent chance of inflicting one of the ailments */
 	chance: number;
 }
 
