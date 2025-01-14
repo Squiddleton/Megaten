@@ -2,7 +2,7 @@ import { normalize } from '@squiddleton/util';
 import type { AilBoostSkillData, AilDefensiveSkillData, AilmentSkillData, AttackSkillData, AutoBuffSkillData, BarrierBreakSkillData, BarrierSkillData, BoostSkillData, BreakSkillData, ChargeSkillData, CritBoostSkillData, CritSkillData, DefensiveSkillData, EndureSkillData, EvasionSkillData, InstakillBoostSkillData, MasterSkillData, MiscSkillData, NaviSkillData, PersonaCounterSkillData, PostBattleSkillData, RecoverySkillData, RegenSkillData, SMTCounterSkillData, SetSkillData, SiphonSkillData, SkillData, SpringSkillData, SummonSkillData, SupportSkillData, SusceptibilitySkillData, TauntSkillData, WallSkillData } from './dataTypes.js';
 import { MegatenError } from './error.js';
 import skillData from './skillData.js';
-import type { AilBoostCriteria, AilDefensiveAilment, AilResistance, AilmentName, AilmentRange, AilmentSkillFlag, AllyRange, AnyAffinity, AttackAilments, AttackCost, AttackFlag, AttackPower, AutoBuffRange, Barrier, BasePower, BoostAffinity, BoostStack, BreakAffinity, Buff, Charge, CritBoostCriteria, CritRange, DamagingAffinity, DefensiveAffinity, DefensiveSKillResistance, EndureCriteria, EnemyRange, EvasionAffinity, EvasionBoostCriteria, HPMP, LightDark, NumberOrPercent, OneOrAllAilments, PostBattleStat, RecoveryAmount, RecoveryFlag, RecoveryRange, RegenCriteria, RegenStat, SMTCounterAffinity, Series, SetAffinity, SingleOrDoubleBuff, SiphonCriteria, SkillType, SupportAutoEffect, SupportFlag, SupportRange, SusceptibilityRange, WallAffinity } from './types.js';
+import type { AilBoostCriteria, AilDefensiveAilment, AilResistance, AilmentName, AilmentRange, AilmentSkillFlag, AllyRange, AnyAffinity, AttackAilments, AttackCost, AttackFlag, AttackPower, AutoBuffRange, Barrier, BasePower, BoostAffinity, BoostStack, BreakAffinity, Buff, Charge, CritBoostCriteria, CritRange, DamagingAffinity, DefensiveAffinity, DefensiveSKillResistance, EndureCriteria, EnemyRange, EvasionAffinity, EvasionBoostCriteria, HPMP, LightDark, NumberOrPercent, OneOrAllAilments, PostBattleStat, RecoveryAmount, RecoveryFlag, RegenCriteria, RegenStat, SMTCounterAffinity, Series, SetAffinity, SingleOrDoubleBuff, SiphonCriteria, SkillType, SupportAutoEffect, SupportFlag, SupportRange, SusceptibilityRange, TauntBuff, WallAffinity } from './types.js';
 
 export abstract class Skill implements SkillData {
 	/** The skill's name (adjusted for consistency with SMT5) */
@@ -245,7 +245,7 @@ export class AttackSkill extends Skill implements AttackSkillData {
 			if (flags.includes('HP Dependent')) {
 				sentences.push('The more remaining HP you have, the stronger the attack.');
 			}
-			if (flags.includes('Instakill')) {
+			if (ailments?.names.includes('Death')) {
 				sentences.push('Chance of instakill.');
 			}
 			if (flags.includes('Minimize Defense')) {
@@ -324,6 +324,8 @@ export class BarrierSkill extends Skill implements BarrierSkillData {
 	cost: number;
 	/** The range that the skill targets */
 	range: AllyRange;
+	/** Whether the skill reverts the targets' debuffs */
+	revertDebuffs: boolean;
 	constructor(data: BarrierSkillData) {
 		super(data);
 
@@ -367,6 +369,7 @@ export class BarrierSkill extends Skill implements BarrierSkillData {
 		this.barriers = data.barriers;
 		this.cost = data.cost;
 		this.range = data.range;
+		this.revertDebuffs = data.revertDebuffs ?? false;
 	}
 }
 
@@ -736,7 +739,7 @@ export class RecoverySkill extends Skill implements RecoverySkillData {
 	/** Special flags for the skill */
 	flags: RecoveryFlag[];
 	/** The range that the skill targets */
-	range: RecoveryRange;
+	range: AllyRange;
 	constructor(data: RecoverySkillData) {
 		const { ailments = [], amount, buffs = [], flags = [], range } = data;
 		super(data);
@@ -985,7 +988,7 @@ export class TauntSkill extends Skill implements TauntSkillData {
 	declare type: 'TAUNT';
 	description: string;
 	/** The buff cast by the skill, or null if none */
-	buff: SingleOrDoubleBuff | null;
+	buff: TauntBuff | null;
 	/** The skill's MP cost */
 	cost: number;
 	constructor(data: TauntSkillData) {

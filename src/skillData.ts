@@ -961,6 +961,28 @@ const skillData: Readonly<AnySkillData[]> = [
 		series: 'smt'
 	},
 	{
+		name: 'Boundless Sea',
+		affinity: 'Ice',
+		type: 'ATTACK',
+		unique: null,
+		accuracy: 98,
+		cost: {
+			stat: 'MP',
+			amount: 150
+		},
+		flags: [
+			'Negate Buffs',
+			'Pierce'
+		],
+		power: {
+			amount: 180,
+			display: 'Severe',
+			type: 'Magic'
+		},
+		range: 'All',
+		series: 'smt'
+	},
+	{
 		name: 'Bowl of Hygieia',
 		affinity: 'Support',
 		type: 'CHARGE',
@@ -2156,13 +2178,16 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		unique: true,
 		accuracy: 90,
+		ailments: {
+			names: [
+				'Death'
+			],
+			chance: 40
+		},
 		cost: {
 			stat: 'MP',
 			amount: 32
 		},
-		flags: [
-			'Instakill'
-		],
 		power: {
 			amount: 110,
 			display: 'Heavy',
@@ -3760,13 +3785,16 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		unique: true,
 		accuracy: 108,
+		ailments: {
+			names: [
+				'Death'
+			],
+			chance: 150
+		},
 		cost: {
 			stat: 'MP',
 			amount: 60
 		},
-		flags: [
-			'Instakill'
-		],
 		power: {
 			amount: 100,
 			display: 'Weak',
@@ -3804,6 +3832,19 @@ const skillData: Readonly<AnySkillData[]> = [
 			'Attack',
 			'Defense',
 			'Accuracy/Evasion'
+		]
+	},
+	{
+		name: 'Good Cheer',
+		affinity: 'Recovery',
+		type: 'RECOVERY',
+		unique: true,
+		range: 'Party',
+		cost: 20,
+		ailments: 'All',
+		amount: null,
+		flags: [
+			'Revert Debuffs'
 		]
 	},
 	{
@@ -4948,6 +4989,29 @@ const skillData: Readonly<AnySkillData[]> = [
 		series: 'smt'
 	},
 	{
+		name: 'Jack Tempest',
+		affinity: 'Ice',
+		type: 'ATTACK',
+		unique: true,
+		accuracy: 98,
+		cost: {
+			stat: 'MP',
+			amount: 70
+		},
+		flags: [
+			'Crit Damage Boost'
+		],
+		max: 10,
+		min: 10,
+		power: {
+			amount: 28,
+			display: 'Weak',
+			type: 'Physical'
+		},
+		range: 'Random',
+		series: 'smt'
+	},
+	{
 		name: 'Javelin Rain',
 		affinity: 'Phys',
 		type: 'ATTACK',
@@ -4977,6 +5041,29 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'SET',
 		amount: 1,
 		cost: null
+	},
+	{
+		name: 'Judgment Light',
+		affinity: 'Light',
+		type: 'ATTACK',
+		unique: true,
+		accuracy: 98,
+		cost: {
+			stat: 'MP',
+			amount: 60
+		},
+		flags: [
+			'Pierce'
+		],
+		min: 2,
+		max: 5,
+		power: {
+			amount: 150,
+			display: 'Medium',
+			type: 'Magic'
+		},
+		range: 'Random',
+		series: 'smt'
 	},
 	{
 		name: 'Kamui Miracle',
@@ -5098,6 +5185,14 @@ const skillData: Readonly<AnySkillData[]> = [
 		},
 		range: 'All',
 		series: 'smt'
+	},
+	{
+		name: 'King of Tales',
+		affinity: 'Support',
+		type: 'TAUNT',
+		unique: true,
+		buff: 'Maximize Attack',
+		cost: 20
 	},
 	{
 		name: 'Kouga',
@@ -5407,6 +5502,30 @@ const skillData: Readonly<AnySkillData[]> = [
 		series: 'smt'
 	},
 	{
+		name: 'Lost Hit',
+		affinity: 'Phys',
+		type: 'ATTACK',
+		unique: true,
+		accuracy: 98,
+		ailments: {
+			names: [
+				'Death'
+			],
+			chance: 60
+		},
+		cost: {
+			stat: 'MP',
+			amount: 65
+		},
+		power: {
+			amount: 340,
+			display: 'Severe',
+			type: 'Physical'
+		},
+		range: 'One',
+		series: 'smt'
+	},
+	{
 		name: 'Lucky Punch',
 		affinity: 'Phys',
 		type: 'ATTACK',
@@ -5443,6 +5562,36 @@ const skillData: Readonly<AnySkillData[]> = [
 		barriers: [
 			'Absolute Evasion'
 		]
+	},
+	{
+		name: 'Lunar Hurricane',
+		affinity: 'Force',
+		type: 'ATTACK',
+		unique: null,
+		accuracy: 98,
+		cost: {
+			stat: 'MP',
+			amount: 25
+		},
+		flags: [
+			'Agility Dependent Hits'
+		],
+		min: 3,
+		max: 3,
+		power: {
+			amount: 70,
+			display: 'Weak',
+			type: 'Physical'
+		},
+		range: 'One',
+		series: 'smt'
+	},
+	{
+		name: 'Lunation Flux',
+		affinity: 'Recovery',
+		type: 'MISC',
+		cost: 10,
+		description: 'Slight MP recovery to self. Does not consume a Press Turn Icon.'
 	},
 	{
 		name: 'Lunge',
@@ -7049,6 +7198,18 @@ const skillData: Readonly<AnySkillData[]> = [
 		series: 'smt'
 	},
 	{
+		name: 'Mother Earth',
+		affinity: 'Support',
+		type: 'BARRIER',
+		unique: true,
+		range: 'Party',
+		cost: 40,
+		barriers: [
+			'Phys Nullify'
+		],
+		revertDebuffs: true
+	},
+	{
 		name: 'Mudo',
 		affinity: 'Dark',
 		type: 'ATTACK',
@@ -7775,6 +7936,29 @@ const skillData: Readonly<AnySkillData[]> = [
 		series: 'smt'
 	},
 	{
+		name: 'Paraselene Blur',
+		affinity: 'Light',
+		type: 'ATTACK',
+		unique: null,
+		accuracy: 98,
+		cost: {
+			stat: 'MP',
+			amount: 45
+		},
+		flags: [
+			'After Evading Only'
+		],
+		min: 4,
+		max: 4,
+		power: {
+			amount: 150,
+			display: 'Medium',
+			type: 'Physical'
+		},
+		range: 'One',
+		series: 'smt'
+	},
+	{
 		name: 'Patra',
 		aliases: [
 			'Amrita Drop'
@@ -8008,13 +8192,16 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'ATTACK',
 		unique: true,
 		accuracy: 80,
+		ailments: {
+			names: [
+				'Death'
+			],
+			chance: 50
+		},
 		cost: {
 			stat: 'HP',
 			amount: 25
 		},
-		flags: [
-			'Instakill'
-		],
 		power: {
 			amount: 290,
 			display: 'Severe',
@@ -8527,6 +8714,30 @@ const skillData: Readonly<AnySkillData[]> = [
 		description: 'Showtime guage increases more quickly.'
 	},
 	{
+		name: 'Recalcitrant Execution',
+		aliases: [
+			'Tenchu-Satsu'
+		],
+		affinity: 'Almighty',
+		type: 'ATTACK',
+		unique: true,
+		accuracy: 98,
+		cost: {
+			stat: 'MP',
+			amount: 150
+		},
+		flags: [
+			'Crit Damage Boost'
+		],
+		power: {
+			amount: 230,
+			display: 'Severe',
+			type: 'Physical'
+		},
+		range: 'All',
+		series: 'smt'
+	},
+	{
 		name: 'Recarm',
 		affinity: 'Recovery',
 		type: 'RECOVERY',
@@ -8927,6 +9138,13 @@ const skillData: Readonly<AnySkillData[]> = [
 		cost: 5
 	},
 	{
+		name: 'Riberama',
+		affinity: 'Support',
+		type: 'MISC',
+		cost: 35,
+		description: 'Prevents enemies from fleeing in the field and increases chance of consecutive encounters until the next new moon.'
+	},
+	{
 		name: 'Riot Gun',
 		affinity: 'Gun',
 		type: 'ATTACK',
@@ -8983,6 +9201,27 @@ const skillData: Readonly<AnySkillData[]> = [
 		flags: [
 			'Pierce'
 		]
+	},
+	{
+		name: 'Root of Evil',
+		affinity: 'Almighty',
+		type: 'ATTACK',
+		unique: true,
+		accuracy: 98,
+		cost: {
+			stat: 'MP',
+			amount: 200
+		},
+		flags: [
+			'Negate Charges/Barriers'
+		],
+		power: {
+			amount: 200,
+			display: 'Severe',
+			type: 'Magic'
+		},
+		range: 'All',
+		series: 'smt'
 	},
 	{
 		name: 'Rooted Soul',
@@ -10790,6 +11029,30 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'NAVI',
 		unique: null,
 		description: 'Reveal an enemy\'s affinity at the start of battle.'
+	},
+	{
+		name: 'What Comes After Four',
+		affinity: 'Almighty',
+		type: 'ATTACK',
+		unique: true,
+		accuracy: 98,
+		ailments: {
+			names: [
+				'Death'
+			],
+			chance: 60
+		},
+		cost: {
+			stat: 'MP',
+			amount: 20
+		},
+		power: {
+			amount: 150,
+			display: 'Weak',
+			type: 'Magic'
+		},
+		range: 'All',
+		series: 'smt'
 	},
 	{
 		name: 'White Dracostrike',

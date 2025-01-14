@@ -7,7 +7,7 @@ export type AilBoostCriteria = 'Rain/Snow';
 /** Ailments possibly inflicted by AttackSkill instances */
 export interface AttackAilments {
 	/** Ailments the skill may inflict */
-	names: AilmentName[];
+	names: (AilmentName | 'Death')[];
 	/** The percent chance of inflicting one of the ailments */
 	chance: number;
 }
@@ -38,8 +38,6 @@ export type AilmentRange = Exclude<EnemyRange, 'Random'>;
 export type AutoBuffRange = Exclude<AllyRange, 'Ally'>;
 /** Range for CritSkill instances */
 export type CritRange = Exclude<AllyRange, 'Self'> | 'All';
-/** Range for RecoverySkill instances */
-export type RecoveryRange = Exclude<AllyRange, 'Self'>;
 /** Range for SupportSkill instances */
 export type SupportRange = Exclude<AnyRange, 'Random'>;
 /** Range for SusceptibilitySkill instances */
@@ -57,7 +55,7 @@ export interface AttackCost {
 }
 
 /** Flags for AttackSkill instances */
-export type AttackFlag = '+20% Crit Rate' | '+200% Crit Rate' | '+30% Crit Rate' | 'Afflicted Boost' | 'Asleep Boost' | 'Attack Reduced' | 'Baton Boost' | 'Charmed Boost' | 'Confused Boost' | 'Crit Damage Boost' | 'Debuff Number Dependent' | 'Defense Greatly Down' | 'Down Boost' | 'Drain HP' | 'Drain HP/MP' | 'Drain MP' | 'Foe Number Dependent' | 'HP Dependent' | 'Instakill' | 'Minimize Defense' | 'Mirage Boost' | 'Negate Buffs' | 'Pierce' | 'Poisoned Boost' | 'Shroud Dependent' | 'Static Damage' | 'Surround Boost' | 'Weakness Instakill' | 'Weather Boost' | `${Buff} Down` | `${Buff} Greatly Down`;
+export type AttackFlag = '+20% Crit Rate' | '+200% Crit Rate' | '+30% Crit Rate' | 'Afflicted Boost' | 'After Evading Only' | 'Agility Dependent Hits' | 'Asleep Boost' | 'Attack Reduced' | 'Baton Boost' | 'Charmed Boost' | 'Confused Boost' | 'Crit Damage Boost' | 'Debuff Number Dependent' | 'Defense Greatly Down' | 'Down Boost' | 'Drain HP' | 'Drain HP/MP' | 'Drain MP' | 'Foe Number Dependent' | 'HP Dependent' | 'Minimize Defense' | 'Mirage Boost' | 'Negate Buffs' | 'Negate Charges/Barriers' | 'Pierce' | 'Poisoned Boost' | 'Shroud Dependent' | 'Static Damage' | 'Surround Boost' | 'Weakness Instakill' | 'Weather Boost' | `${Buff} Down` | `${Buff} Greatly Down`;
 
 /** A base for skills with a specific amount of power */
 export interface BasePower {
@@ -245,3 +243,6 @@ export type SupportAutoEffect = Barrier | Buff | Charge;
 
 /** Flags for SupportSkill instances */
 export type SupportFlag = 'Cure Non-Special Ailments' | 'Maximize Buff' | 'Minimize Debuffs' | 'Surrounded Only';
+
+/** Buffs cast by TauntSkill instances */
+export type TauntBuff = SingleOrDoubleBuff | `Maximize ${Buff}`;
