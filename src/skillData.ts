@@ -1304,10 +1304,17 @@ const skillData: Readonly<AnySkillData[]> = [
 	{
 		name: 'Chaotic Will',
 		affinity: 'Ailment',
-		type: 'MISC',
+		type: 'AILMENT',
 		unique: null,
+		ailments: [
+			'Death'
+		],
+		chance: 30,
 		cost: 150,
-		description: 'Chance of instakill to all foes. Foe\'s Press Turn Icons will be halved next turn.'
+		flags: [
+			'Halve Press Turn Icons'
+		],
+		range: 'All'
 	},
 	{
 		name: 'Charge',
@@ -2864,10 +2871,14 @@ const skillData: Readonly<AnySkillData[]> = [
 	{
 		name: 'Evil Melody',
 		affinity: 'Ailment',
-		type: 'MISC',
+		type: 'AILMENT',
 		unique: true,
+		ailments: [
+			'Death'
+		],
+		chance: 150,
 		cost: 100,
-		description: 'Chance of instakill to 1 foe.'
+		range: 'One'
 	},
 	{
 		name: 'Evil Smile',
@@ -10392,10 +10403,15 @@ const skillData: Readonly<AnySkillData[]> = [
 	{
 		name: 'The Man\'s Way',
 		affinity: 'Ailment',
-		type: 'MISC',
+		type: 'AILMENT',
 		unique: null,
+		ailments: [
+			'Dizzy',
+			'Down'
+		],
+		chance: 80,
 		cost: 30,
-		description: 'May inflict Down/Dizzy on all foes.'
+		range: 'All'
 	},
 	{
 		name: 'Thermopylae',

@@ -7,13 +7,13 @@ export type AilBoostCriteria = 'Rain/Snow';
 /** Ailments possibly inflicted by AttackSkill instances */
 export interface AttackAilments {
 	/** Ailments the skill may inflict */
-	names: (AilmentName | 'Death')[];
+	names: AilmentName[];
 	/** The percent chance of inflicting one of the ailments */
 	chance: number;
 }
 
 /** Ailments' names (adjusted for consistency with SMT5) */
-export type AilmentName = 'Burn' | 'Charm' | 'Confusion' | 'Despair' | 'Enervate' | 'Exhaust' | 'Fear' | 'Freeze' | 'Hunger' | 'Mirage' | 'Mud' | 'Poison' | 'Rage' | 'Seal' | 'Shock' | 'Shroud' | 'Sleep';
+export type AilmentName = 'Burn' | 'Charm' | 'Confusion' | 'Death' | 'Despair' | 'Dizzy' | 'Down' | 'Enervate' | 'Exhaust' | 'Fear' | 'Freeze' | 'Hunger' | 'Mirage' | 'Mud' | 'Poison' | 'Rage' | 'Seal' | 'Shock' | 'Shroud' | 'Sleep';
 /** An ailment's name or all ailments */
 export type OneOrAllAilments = AilmentName | 'All';
 /** Ailments that an AilDefensiveSkill instance protects against */
@@ -190,6 +190,8 @@ export type BreakAffinity = Exclude<DamagingAffinity, SMTAffinity | 'Almighty'>;
 export type DefensiveAffinity = Exclude<DamagingAffinity, 'Almighty'> | 'Light/Dark';
 /** Affinities used by EvasionSkill instances */
 export type EvasionAffinity = OneOrAllDamagingAffinities | 'Crit/Magic' | 'Magic';
+/** Affinities used by MiscSkill instances */
+export type MiscAffinity = 'Almighty' | 'Recovery' | 'Support' | 'Special' | 'Passive';
 /** Affinities used by SetSkill instances */
 export type SetAffinity = LightDark | 'Almighty';
 /** Affinities used by SMTCounterSkill instances */
@@ -215,7 +217,7 @@ export type AnyRace = PersonaRace | SMTRace;
 export type RecoveryAmount = 'Slight' | 'Moderate' | 'Half' | 'Full' | '130%';
 
 /** Flags for AilmentSkill instances */
-export type AilmentSkillFlag = `${Buff} Down` | `${Buff} Greatly Down` | 'Negate Buffs' | 'Charm Instakill';
+export type AilmentSkillFlag = `${Buff} Down` | `${Buff} Greatly Down` | 'Negate Buffs' | 'Charm Instakill' | 'Halve Press Turn Icons';
 
 /** Flags for RecoverySkill instances */
 export type RecoveryFlag = 'Revert Debuffs' | 'Revive' | 'Summon' | 'Recover HP/MP';
