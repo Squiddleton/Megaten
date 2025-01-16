@@ -272,9 +272,7 @@ The arrays `smt5StandardEnemies` and `smt5Bosses` contain data for Shin Megami T
 * Dashes are used instead of parentheses due to a similar naming scheme used in official song titles (e.g. "Last Surprise - Scramble").
 * Skills with specific uses and few similar skills are placed into a "MISC" type.
 * Typings are designed to be as specific as possible for IntelliSense and TypeScript usage.
-* Images originate from the best obtainable picture of the demon found at the current time. These will be updated if/when renders are available for many Personas and classic demons.
 * Terms with multiple series-dependent names are given the name from SMTV (e.g. MP over SP, Vitality over Endurance, Light over Bless, Seal over Forget and Silence). However, Force and Wind remain separated.
-* Kouha/Eiha skills were changed to Hama/Mudo skills since the latter also deal damage in the latest installments.
 
 ## Credits
 
