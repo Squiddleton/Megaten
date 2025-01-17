@@ -10266,6 +10266,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 	},
 	{
 		name: 'Hecatoncheires',
+		aliases: [
+			'Hekatoncheires'
+		],
 		affinities: {
 			skillPotential: {
 				Phys: 4,
