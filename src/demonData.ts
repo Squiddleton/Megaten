@@ -770,6 +770,52 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		evoSkillName: 'Ultimate Support'
 	},
 	{
+		name: 'Albion',
+		affinities: {
+			skillPotential: null,
+			inherit: null
+		},
+		arcana: null,
+		race: 'Entity',
+		level: 64,
+		hp: 534,
+		mp: 252,
+		stats: {
+			st: 25,
+			ma: 20,
+			vi: 25,
+			ag: 10,
+			lu: 16
+		},
+		learnset: [
+			{
+				name: 'Drain Attack',
+				level: 65
+			},
+			{
+				name: 'Phys Drain',
+				level: 66
+			},
+			{
+				name: 'Recarmdra',
+				level: 67
+			},
+			{
+				name: 'Hades Blast',
+				level: 68
+			}
+		],
+		resistances: {
+			Phys: 'Null',
+			Ice: 'Null',
+			Light: 'Null'
+		},
+		game: 'smt3',
+		alignment: null,
+		lore: null,
+		origin: null
+	},
+	{
 		name: 'Alciel',
 		affinities: {
 			skillPotential: {
@@ -4519,58 +4565,117 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		},
 		arcana: 'Moon',
 		race: 'Tyrant',
-		level: 77,
-		hp: null,
-		mp: null,
+		level: 84,
+		hp: 666,
+		mp: 333,
 		stats: {
-			st: 48,
-			vi: 49,
-			ma: 60,
-			ag: 40,
-			lu: 41
+			st: 32,
+			ma: 27,
+			vi: 27,
+			ag: 19,
+			lu: 19
 		},
 		learnset: [
 			{
-				name: 'Mabufudyne',
-				level: 0
-			},
-			{
-				name: 'Mamudoon',
-				level: 0
-			},
-			{
-				name: 'Old One',
-				level: 0
-			},
-			{
-				name: 'Tentarafoo',
-				level: 78
-			},
-			{
 				name: 'Maziodyne',
-				level: 79
+				level: 0
 			},
 			{
-				name: 'Mudo Boost',
-				level: 80
+				name: 'Megidolaon',
+				level: 0
 			},
 			{
-				name: 'Stagnant Air',
-				level: 82
+				name: 'Null Freeze',
+				level: 0
+			},
+			{
+				name: 'Null Shock',
+				level: 0
+			},
+			{
+				name: 'Watchful',
+				level: 85
+			},
+			{
+				name: 'Elec Boost',
+				level: 86
 			}
 		],
 		resistances: {
-			Fire: 'Weak',
-			Ice: 'Drain',
-			Dark: 'Null'
+			Phys: 'Resist',
+			Ice: 'Resist',
+			Elec: 'Resist',
+			Force: 'Resist',
+			Light: 'Repel',
+			Dark: 'Repel',
+			Confusion: 'Null',
+			Sleep: 'Null',
+			Charm: 'Null',
+			Stun: 'Null',
+			Bind: 'Null',
+			Poison: 'Null',
+			Seal: 'Null'
 		},
-		game: 'p4',
+		game: 'smt3',
 		alignment: {
 			major: 'Dark',
 			minor: 'Chaos'
 		},
 		lore: 'Demon whose name means "Lord of the High Place." Possibly derived from the Syrian deity Ba\'al, he presides over death and the spirits of the deceased. Many worshipped him because of this power.',
 		origin: 'Abrahamic'
+	},
+	{
+		name: 'Badb Catha',
+		affinities: {
+			skillPotential: null,
+			inherit: null
+		},
+		arcana: null,
+		race: 'Beast',
+		level: 23,
+		hp: 186,
+		mp: 87,
+		stats: {
+			st: 11,
+			ma: 6,
+			vi: 8,
+			ag: 12,
+			lu: 6
+		},
+		learnset: [
+			{
+				name: 'Liftoma',
+				level: 0
+			},
+			{
+				name: 'Needle Rush',
+				level: 0
+			},
+			{
+				name: 'Detain',
+				level: 24
+			},
+			{
+				name: 'Wing Buffet',
+				level: 25
+			},
+			{
+				name: 'Anti-Force',
+				level: 26
+			},
+			{
+				name: 'Mana Aid',
+				level: 27
+			}
+		],
+		resistances: {
+			Phys: 'Resist',
+			Elec: 'Weak'
+		},
+		game: 'smt3',
+		alignment: null,
+		lore: null,
+		origin: null
 	},
 	{
 		name: 'Bai Suzhen',
@@ -6038,6 +6143,61 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		},
 		lore: 'One of the Four Horsemen of the Apocalypse spoken of in the Book of Revelation.\nHe rides a black horse and carries scales, indicating the terrible famine he is to bring. He also has been given the authority to end the lives of those who are suffering.',
 		origin: 'Abrahamic'
+	},
+	{
+		name: 'Blob',
+		affinities: {
+			skillPotential: null,
+			inherit: null
+		},
+		arcana: null,
+		race: 'Foul',
+		level: 16,
+		hp: 156,
+		mp: 66,
+		stats: {
+			st: 8,
+			ma: 6,
+			vi: 10,
+			ag: 5,
+			lu: 7
+		},
+		learnset: [
+			{
+				name: 'Tarunda',
+				level: 0
+			},
+			{
+				name: 'Last Resort',
+				level: 0
+			},
+			{
+				name: 'Toxic Sting',
+				level: 17
+			},
+			{
+				name: 'Marin Karin',
+				level: 18
+			},
+			{
+				name: 'Mana Drain',
+				level: 19
+			},
+			{
+				name: 'Zanma',
+				level: 20
+			}
+		],
+		resistances: {
+			Phys: 'Resist',
+			Ice: 'Weak',
+			Light: 'Weak',
+			Dark: 'Null'
+		},
+		game: 'smt3',
+		alignment: null,
+		lore: null,
+		origin: null
 	},
 	{
 		name: 'Botis',
@@ -7599,6 +7759,62 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		origin: null
 	},
 	{
+		name: 'Chatterskull',
+		affinities: {
+			skillPotential: null,
+			inherit: null
+		},
+		arcana: null,
+		race: 'Haunt',
+		level: 20,
+		hp: 156,
+		mp: 96,
+		stats: {
+			st: 7,
+			ma: 12,
+			vi: 6,
+			ag: 7,
+			lu: 8
+		},
+		learnset: [
+			{
+				name: 'Sukunda',
+				level: 0
+			},
+			{
+				name: 'Stun Gaze',
+				level: 0
+			},
+			{
+				name: 'Dekaja',
+				level: 21
+			},
+			{
+				name: 'Dormina',
+				level: 22
+			},
+			{
+				name: 'Last Resort',
+				level: 23
+			},
+			{
+				name: 'Hell Thrust',
+				level: 24
+			}
+		],
+		resistances: {
+			Fire: 'Drain',
+			Light: 'Weak',
+			Dark: 'Null',
+			Poison: 'Weak',
+			Seal: 'Weak'
+		},
+		game: 'smt3',
+		alignment: null,
+		lore: null,
+		origin: null
+	},
+	{
 		name: 'Chernobog',
 		affinities: {
 			skillPotential: {
@@ -9010,6 +9226,103 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		origin: null
 	},
 	{
+		name: 'Dante',
+		affinities: {
+			skillPotential: null,
+			inherit: null
+		},
+		arcana: null,
+		race: 'Fiend',
+		level: 80,
+		hp: 612,
+		mp: 306,
+		stats: {
+			st: 25,
+			ma: 22,
+			vi: 22,
+			ag: 25,
+			lu: 16
+		},
+		learnset: [
+			{
+				name: 'E & I',
+				level: 0
+			},
+			{
+				name: 'Rebellion',
+				level: 0
+			},
+			{
+				name: 'Roundtrip',
+				level: 0
+			},
+			{
+				name: 'Whirlwind',
+				level: 0
+			},
+			{
+				name: 'Holy Star',
+				level: 0
+			},
+			{
+				name: 'Provoke',
+				level: 0
+			},
+			{
+				name: 'Never Yield',
+				level: 0
+			},
+			{
+				name: 'Intimidate',
+				level: 0
+			},
+			{
+				name: 'Null Freeze',
+				level: 0
+			},
+			{
+				name: 'Null Shock',
+				level: 1
+			},
+			{
+				name: 'Twosome Time',
+				level: 81
+			},
+			{
+				name: 'Stinger',
+				level: 82
+			},
+			{
+				name: 'Son\'s Oath',
+				level: 83
+			},
+			{
+				name: 'Showtime',
+				level: 84
+			}
+		],
+		resistances: {
+			Phys: 'Resist',
+			Fire: 'Resist',
+			Ice: 'Resist',
+			Elec: 'Resist',
+			Force: 'Resist',
+			Light: 'Null',
+			Dark: 'Null',
+			Confusion: 'Null',
+			Sleep: 'Null',
+			Charm: 'Null',
+			Stun: 'Null',
+			Bind: 'Null',
+			Poison: 'Null',
+			Seal: 'Null'
+		},
+		game: 'smt3',
+		alignment: null,
+		lore: null,
+		origin: null
+	},
+	{
 		name: 'Danu',
 		affinities: {
 			skillPotential: {
@@ -9142,6 +9455,63 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			Confusion: 'Resist'
 		},
 		game: 'smt4',
+		alignment: null,
+		lore: null,
+		origin: null
+	},
+	{
+		name: 'Datsue-Ba',
+		affinities: {
+			skillPotential: null,
+			inherit: null
+		},
+		arcana: null,
+		race: 'Femme',
+		level: 7,
+		hp: 72,
+		mp: 45,
+		stats: {
+			st: 4,
+			ma: 8,
+			vi: 5,
+			ag: 4,
+			lu: 6
+		},
+		learnset: [
+			{
+				name: 'Needle Rush',
+				level: 0
+			},
+			{
+				name: 'Shibaboo',
+				level: 0
+			},
+			{
+				name: 'Haggle',
+				level: 8
+			},
+			{
+				name: 'Bufu',
+				level: 9
+			},
+			{
+				name: 'Patra',
+				level: 10
+			},
+			{
+				name: 'Dormina',
+				level: 11
+			}
+		],
+		resistances: {
+			Elec: 'Weak',
+			Confusion: 'Null',
+			Sleep: 'Null',
+			Charm: 'Null',
+			Stun: 'Null',
+			Bind: 'Null'
+		},
+		game: 'smt3',
 		alignment: null,
 		lore: null,
 		origin: null
@@ -11308,6 +11678,79 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			Dark: 'Weak'
 		},
 		game: 'smt4',
+		alignment: null,
+		lore: null,
+		origin: null
+	},
+	{
+		name: 'Futomimi',
+		affinities: {
+			skillPotential: null,
+			inherit: null
+		},
+		arcana: null,
+		race: 'Kishin',
+		level: 63,
+		hp: 498,
+		mp: 267,
+		stats: {
+			st: 20,
+			ma: 26,
+			vi: 20,
+			ag: 15,
+			lu: 12
+		},
+		learnset: [
+			{
+				name: 'Focus',
+				level: 0
+			},
+			{
+				name: 'War Cry',
+				level: 0
+			},
+			{
+				name: 'Mute Gaze',
+				level: 0
+			},
+			{
+				name: 'Null Freeze',
+				level: 0
+			},
+			{
+				name: 'Null Shock',
+				level: 0
+			},
+			{
+				name: 'Lunge',
+				level: 0
+			},
+			{
+				name: 'Might',
+				level: 64
+			},
+			{
+				name: 'Life Surge',
+				level: 65
+			},
+			{
+				name: 'Mana Surge',
+				level: 66
+			}
+		],
+		resistances: {
+			Phys: 'Resist',
+			Light: 'Null',
+			Dark: 'Null',
+			Confusion: 'Null',
+			Sleep: 'Null',
+			Charm: 'Null',
+			Stun: 'Null',
+			Bind: 'Null',
+			Poison: 'Null',
+			Seal: 'Null'
+		},
+		game: 'smt3',
 		alignment: null,
 		lore: null,
 		origin: null
@@ -16650,6 +17093,59 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		user: 'Yukari Takeba',
 		stage: 2,
 		evoSkillName: null
+	},
+	{
+		name: 'Isora',
+		affinities: {
+			skillPotential: null,
+			inherit: null
+		},
+		arcana: null,
+		race: 'Yoma',
+		level: 14,
+		hp: 132,
+		mp: 66,
+		stats: {
+			st: 9,
+			ma: 8,
+			vi: 8,
+			ag: 6,
+			lu: 3
+		},
+		learnset: [
+			{
+				name: 'Analyze',
+				level: 0
+			},
+			{
+				name: 'Venom Bite',
+				level: 0
+			},
+			{
+				name: 'Kidnap',
+				level: 15
+			},
+			{
+				name: 'Lullaby',
+				level: 16
+			},
+			{
+				name: 'Ice Breath',
+				level: 17
+			},
+			{
+				name: 'Media',
+				level: 18
+			}
+		],
+		resistances: {
+			Fire: 'Weak',
+			Ice: 'Resist'
+		},
+		game: 'smt3',
+		alignment: null,
+		lore: null,
+		origin: null
 	},
 	{
 		name: 'Israfel',
@@ -25797,6 +26293,65 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		origin: null
 	},
 	{
+		name: 'Mizuchi',
+		affinities: {
+			skillPotential: null,
+			inherit: null
+		},
+		arcana: null,
+		race: 'Snake',
+		level: 34,
+		hp: 318,
+		mp: 141,
+		stats: {
+			st: 12,
+			ma: 13,
+			vi: 19,
+			ag: 7,
+			lu: 7
+		},
+		learnset: [
+			{
+				name: 'Bufula',
+				level: 0
+			},
+			{
+				name: 'Mabufula',
+				level: 0
+			},
+			{
+				name: 'Makakaja',
+				level: 0
+			},
+			{
+				name: 'Makarakarn',
+				level: 35
+			},
+			{
+				name: 'Me Patra',
+				level: 36
+			},
+			{
+				name: 'Berserk',
+				level: 37
+			},
+			{
+				name: 'Fog Breath',
+				level: 38
+			}
+		],
+		resistances: {
+			Fire: 'Weak',
+			Ice: 'Null',
+			Elec: 'Drain',
+			Dark: 'Null'
+		},
+		game: 'smt3',
+		alignment: null,
+		lore: null,
+		origin: null
+	},
+	{
 		name: 'Mokoi',
 		affinities: {
 			skillPotential: {
@@ -28141,6 +28696,65 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		origin: 'African'
 	},
 	{
+		name: 'Nyx',
+		affinities: {
+			skillPotential: null,
+			inherit: null
+		},
+		arcana: null,
+		race: 'Night',
+		level: 70,
+		hp: 522,
+		mp: 291,
+		stats: {
+			st: 15,
+			ma: 27,
+			vi: 17,
+			ag: 16,
+			lu: 15
+		},
+		learnset: [
+			{
+				name: 'Dormina',
+				level: 0
+			},
+			{
+				name: 'Makarakarn',
+				level: 0
+			},
+			{
+				name: 'Eternal Rest',
+				level: 0
+			},
+			{
+				name: 'Debilitate',
+				level: 71
+			},
+			{
+				name: 'Mana Drain',
+				level: 72
+			},
+			{
+				name: 'Glacial Blast',
+				level: 73
+			},
+			{
+				name: 'Fire Drain',
+				level: 74
+			}
+		],
+		resistances: {
+			Fire: 'Resist',
+			Ice: 'Resist',
+			Elec: 'Resist',
+			Force: 'Resist'
+		},
+		game: 'smt3',
+		alignment: null,
+		lore: null,
+		origin: null
+	},
+	{
 		name: 'Obariyon',
 		affinities: {
 			skillPotential: {
@@ -28711,6 +29325,70 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		},
 		lore: 'A deity of knowledge in Japanese myth. He conceived the plan to draw Amaterasu from the Amato-Iwato, the cave she was hiding in.',
 		origin: 'Japanese'
+	},
+	{
+		name: 'Ongkhot',
+		affinities: {
+			skillPotential: null,
+			inherit: null
+		},
+		arcana: null,
+		race: 'Yoma',
+		level: 37,
+		hp: 288,
+		mp: 138,
+		stats: {
+			st: 14,
+			ma: 9,
+			vi: 11,
+			ag: 15,
+			lu: 12
+		},
+		learnset: [
+			{
+				name: 'Might',
+				level: 0
+			},
+			{
+				name: 'Berserk',
+				level: 0
+			},
+			{
+				name: 'Tarukaja',
+				level: 0
+			},
+			{
+				name: 'Tetrakarn',
+				level: 38
+			},
+			{
+				name: 'Brutal Slash',
+				level: 39
+			},
+			{
+				name: 'Stone Hunt',
+				level: 40
+			},
+			{
+				name: 'Sukukaja',
+				level: 41
+			},
+			{
+				name: 'Sacrifice',
+				level: 42
+			}
+		],
+		resistances: {
+			Phys: 'Resist',
+			Stun: 'Weak',
+			Bind: 'Weak',
+			Poison: 'Weak',
+			Seal: 'Weak'
+		},
+		game: 'smt3',
+		alignment: null,
+		lore: null,
+		origin: null
 	},
 	{
 		name: 'Ongyo-Ki',
@@ -31217,6 +31895,69 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		origin: null
 	},
 	{
+		name: 'Phantom',
+		affinities: {
+			skillPotential: null,
+			inherit: null
+		},
+		arcana: null,
+		race: 'Foul',
+		level: 42,
+		hp: 336,
+		mp: 177,
+		stats: {
+			st: 9,
+			ma: 17,
+			vi: 14,
+			ag: 15,
+			lu: 7
+		},
+		learnset: [
+			{
+				name: 'Mana Drain',
+				level: 0
+			},
+			{
+				name: 'Last Resort',
+				level: 0
+			},
+			{
+				name: 'Null Freeze',
+				level: 0
+			},
+			{
+				name: 'Mazionga',
+				level: 43
+			},
+			{
+				name: 'Kamikaze',
+				level: 44
+			},
+			{
+				name: 'Tarunda',
+				level: 45
+			},
+			{
+				name: 'Dekaja',
+				level: 46
+			},
+			{
+				name: 'Ziodyne',
+				level: 47
+			}
+		],
+		resistances: {
+			Phys: 'Resist',
+			Force: 'Weak',
+			Light: 'Weak',
+			Dark: 'Null'
+		},
+		game: 'smt3',
+		alignment: null,
+		lore: null,
+		origin: null
+	},
+	{
 		name: 'Phoenix',
 		affinities: {
 			skillPotential: {
@@ -32092,6 +32833,68 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		evoSkillName: null
 	},
 	{
+		name: 'Pulukishi',
+		affinities: {
+			skillPotential: null,
+			inherit: null
+		},
+		arcana: null,
+		race: 'Yoma',
+		level: 48,
+		hp: 390,
+		mp: 189,
+		stats: {
+			st: 19,
+			ma: 15,
+			vi: 17,
+			ag: 9,
+			lu: 12
+		},
+		learnset: [
+			{
+				name: 'Binding Cry',
+				level: 0
+			},
+			{
+				name: 'Watchful',
+				level: 0
+			},
+			{
+				name: 'Scout',
+				level: 0
+			},
+			{
+				name: 'Stasis Blade',
+				level: 49
+			},
+			{
+				name: 'Panic Voice',
+				level: 50
+			},
+			{
+				name: 'Force Boost',
+				level: 51
+			},
+			{
+				name: 'Chaos Blade',
+				level: 52
+			},
+			{
+				name: 'Mazandyne',
+				level: 53
+			}
+		],
+		resistances: {
+			Elec: 'Weak',
+			Force: 'Null',
+			Light: 'Null'
+		},
+		game: 'smt3',
+		alignment: null,
+		lore: null,
+		origin: null
+	},
+	{
 		name: 'Python',
 		affinities: {
 			skillPotential: {
@@ -32549,7 +33352,107 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		origin: null
 	},
 	{
+		name: 'Raidou Kuzunoha the XIV',
+		affinities: {
+			skillPotential: null,
+			inherit: null
+		},
+		arcana: null,
+		race: '???',
+		level: 80,
+		hp: 612,
+		mp: 306,
+		stats: {
+			st: 25,
+			ma: 22,
+			vi: 22,
+			ag: 25,
+			lu: 16
+		},
+		learnset: [
+			{
+				name: 'Boogie-Woogie',
+				level: 0
+			},
+			{
+				name: 'Enter Yoshitsune',
+				level: 0
+			},
+			{
+				name: 'Mishaguji Raiden',
+				level: 0
+			},
+			{
+				name: 'Hitokoto Storm',
+				level: 0
+			},
+			{
+				name: 'Raptor Guardian',
+				level: 0
+			},
+			{
+				name: 'Provoke',
+				level: 0
+			},
+			{
+				name: 'Endure',
+				level: 0
+			},
+			{
+				name: 'Arbitration',
+				level: 0
+			},
+			{
+				name: 'Null Freeze',
+				level: 0
+			},
+			{
+				name: 'Null Shock',
+				level: 1
+			},
+			{
+				name: 'Mokoi Boomerang',
+				level: 81
+			},
+			{
+				name: 'Tekisatsu',
+				level: 82
+			},
+			{
+				name: 'Raidou the Eternal',
+				level: 83
+			},
+			{
+				name: 'Jiraiya Dance',
+				level: 84
+			}
+		],
+		resistances: {
+			Phys: 'Resist',
+			Fire: 'Resist',
+			Ice: 'Resist',
+			Elec: 'Resist',
+			Force: 'Resist',
+			Light: 'Null',
+			Dark: 'Null',
+			Confusion: 'Null',
+			Sleep: 'Null',
+			Charm: 'Null',
+			Stun: 'Null',
+			Bind: 'Null',
+			Poison: 'Null',
+			Seal: 'Null'
+		},
+		game: 'smt3',
+		alignment: null,
+		lore: null,
+		origin: null
+	},
+	{
 		name: 'Raijuu',
+		aliases: [
+			'Raiju'
+		],
 		affinities: {
 			skillPotential: {
 				Phys: 1,
@@ -33328,6 +34231,74 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		origin: null
 	},
 	{
+		name: 'Sakahagi',
+		affinities: {
+			skillPotential: null,
+			inherit: null
+		},
+		arcana: null,
+		race: 'Foul',
+		level: 45,
+		hp: 360,
+		mp: 186,
+		stats: {
+			st: 17,
+			ma: 17,
+			vi: 15,
+			ag: 15,
+			lu: 11
+		},
+		learnset: [
+			{
+				name: 'Maragion',
+				level: 0
+			},
+			{
+				name: 'Mabufula',
+				level: 0
+			},
+			{
+				name: 'Mazionga',
+				level: 0
+			},
+			{
+				name: 'Mazanma',
+				level: 0
+			},
+			{
+				name: 'Panic Voice',
+				level: 0
+			},
+			{
+				name: 'War Cry',
+				level: 0
+			},
+			{
+				name: 'Null Force',
+				level: 46
+			},
+			{
+				name: 'Null Elec',
+				level: 47
+			}
+		],
+		resistances: {
+			Light: 'Null',
+			Dark: 'Null',
+			Confusion: 'Null',
+			Sleep: 'Null',
+			Charm: 'Null',
+			Stun: 'Null',
+			Bind: 'Null',
+			Poison: 'Null',
+			Seal: 'Null'
+		},
+		game: 'smt3',
+		alignment: null,
+		lore: null,
+		origin: null
+	},
+	{
 		name: 'Saki Mitama',
 		affinities: {
 			skillPotential: null,
@@ -33783,6 +34754,65 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		},
 		lore: 'The consort of Brahma in Hindu lore.\nShe embodies the river and her name means "one who flows." She is also the goddess of music and art and is said to be skilled in every artistic or creative pursuit known to man.',
 		origin: 'Hindu'
+	},
+	{
+		name: 'Sarutahiko',
+		affinities: {
+			skillPotential: null,
+			inherit: null
+		},
+		arcana: null,
+		race: 'Jirae',
+		level: 35,
+		hp: 312,
+		mp: 126,
+		stats: {
+			st: 18,
+			ma: 7,
+			vi: 17,
+			ag: 7,
+			lu: 6
+		},
+		learnset: [
+			{
+				name: 'Berserk',
+				level: 0
+			},
+			{
+				name: 'Lightoma',
+				level: 0
+			},
+			{
+				name: 'Haggle',
+				level: 36
+			},
+			{
+				name: 'Petradi',
+				level: 37
+			},
+			{
+				name: 'Counter',
+				level: 38
+			},
+			{
+				name: 'Focus',
+				level: 39
+			},
+			{
+				name: 'Hell Thrust',
+				level: 40
+			}
+		],
+		resistances: {
+			Light: 'Null',
+			Dark: 'Null',
+			Stun: 'Weak',
+			Bind: 'Weak'
+		},
+		game: 'smt3',
+		alignment: null,
+		lore: null,
+		origin: null
 	},
 	{
 		name: 'Satan',
@@ -34641,6 +35671,73 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		origin: 'Egyptian'
 	},
 	{
+		name: 'Shadow',
+		affinities: {
+			skillPotential: null,
+			inherit: null
+		},
+		arcana: null,
+		race: 'Foul',
+		level: 52,
+		hp: 420,
+		mp: 216,
+		stats: {
+			st: 10,
+			ma: 20,
+			vi: 18,
+			ag: 16,
+			lu: 8
+		},
+		learnset: [
+			{
+				name: 'Anti-Phys',
+				level: 0
+			},
+			{
+				name: 'Mudoon',
+				level: 0
+			},
+			{
+				name: 'Null Freeze',
+				level: 0
+			},
+			{
+				name: 'Mazionga',
+				level: 53
+			},
+			{
+				name: 'Mana Drain',
+				level: 54
+			},
+			{
+				name: 'Makakaja',
+				level: 55
+			},
+			{
+				name: 'Tarukaja',
+				level: 56
+			},
+			{
+				name: 'Rakukaja',
+				level: 57
+			},
+			{
+				name: 'Sukukaja',
+				level: 58
+			}
+		],
+		resistances: {
+			Phys: 'Resist',
+			Force: 'Weak',
+			Light: 'Weak',
+			Dark: 'Null'
+		},
+		game: 'smt3',
+		alignment: null,
+		lore: null,
+		origin: null
+	},
+	{
 		name: 'Shan Xiao',
 		affinities: {
 			skillPotential: {
@@ -34889,6 +35986,59 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		},
 		lore: 'A powerful creature often summoned by Japanese sorcerers called onmyoji.\nThey are used both to hurt and to heal, but their true nature is said to be very violent.',
 		origin: 'Japanese'
+	},
+	{
+		name: 'Shikigami',
+		affinities: {
+			skillPotential: null,
+			inherit: null
+		},
+		arcana: null,
+		race: 'Brute',
+		level: 4,
+		hp: 48,
+		mp: 27,
+		stats: {
+			st: 5,
+			ma: 5,
+			vi: 4,
+			ag: 5,
+			lu: 5
+		},
+		learnset: [
+			{
+				name: 'Zio',
+				level: 0
+			},
+			{
+				name: 'Beseech',
+				level: 0
+			},
+			{
+				name: 'Tarunda',
+				level: 5
+			},
+			{
+				name: 'Sukunda',
+				level: 6
+			},
+			{
+				name: 'Anti-Curse',
+				level: 7
+			},
+			{
+				name: 'Tarukaja',
+				level: 8
+			}
+		],
+		resistances: {
+			Fire: 'Weak',
+			Elec: 'Repel'
+		},
+		game: 'smt3',
+		alignment: null,
+		lore: null,
+		origin: null
 	},
 	{
 		name: 'Shikome',
@@ -39101,6 +40251,65 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		evoSkillName: 'Spring of Life'
 	},
 	{
+		name: 'Troll',
+		affinities: {
+			skillPotential: null,
+			inherit: null
+		},
+		arcana: null,
+		race: 'Fairy',
+		level: 38,
+		hp: 354,
+		mp: 144,
+		stats: {
+			st: 14,
+			ma: 10,
+			vi: 21,
+			ag: 4,
+			lu: 9
+		},
+		learnset: [
+			{
+				name: 'Begging',
+				level: 0
+			},
+			{
+				name: 'Mutudi',
+				level: 0
+			},
+			{
+				name: 'Mabufula',
+				level: 39
+			},
+			{
+				name: 'Berserk',
+				level: 40
+			},
+			{
+				name: 'Life Gain',
+				level: 41
+			},
+			{
+				name: 'Lightoma',
+				level: 42
+			},
+			{
+				name: 'Diarahan',
+				level: 43
+			}
+		],
+		resistances: {
+			Ice: 'Drain',
+			Confusion: 'Weak',
+			Sleep: 'Weak',
+			Charm: 'Weak'
+		},
+		game: 'smt3',
+		alignment: null,
+		lore: null,
+		origin: null
+	},
+	{
 		name: 'Trumpeter',
 		affinities: {
 			skillPotential: {
@@ -41187,6 +42396,68 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		origin: null
 	},
 	{
+		name: 'Will o\' Wisp',
+		affinities: {
+			skillPotential: null,
+			inherit: null
+		},
+		arcana: null,
+		race: 'Foul',
+		level: 1,
+		hp: 30,
+		mp: 18,
+		stats: {
+			st: 4,
+			ma: 5,
+			vi: 4,
+			ag: 5,
+			lu: 3
+		},
+		learnset: [
+			{
+				name: 'Needle Rush',
+				level: 0
+			},
+			{
+				name: 'Null Freeze',
+				level: 0
+			},
+			{
+				name: 'Zan',
+				level: 2
+			},
+			{
+				name: 'Riberama',
+				level: 3
+			},
+			{
+				name: 'Deathtouch',
+				level: 4
+			},
+			{
+				name: 'Last Resort',
+				level: 5
+			},
+			{
+				name: 'Makakaja',
+				level: 6
+			}
+		],
+		resistances: {
+			Phys: 'Resist',
+			Fire: 'Weak',
+			Ice: 'Weak',
+			Elec: 'Weak',
+			Force: 'Weak',
+			Light: 'Weak',
+			Dark: 'Null'
+		},
+		game: 'smt3',
+		alignment: null,
+		lore: null,
+		origin: null
+	},
+	{
 		name: 'William',
 		affinities: {
 			skillPotential: null,
@@ -41636,6 +42907,64 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		},
 		lore: 'One of the Ssu-Ling, celestial creatures in Chinese mythology.\nIt represents the north, the season of winter, and the element of water. Known to be a great warrior, it is said to support the Earth from below.',
 		origin: 'Chinese'
+	},
+	{
+		name: 'Yaka',
+		affinities: {
+			skillPotential: null,
+			inherit: null
+		},
+		arcana: null,
+		race: 'Haunt',
+		level: 17,
+		hp: 150,
+		mp: 81,
+		stats: {
+			st: 8,
+			ma: 10,
+			vi: 8,
+			ag: 5,
+			lu: 6
+		},
+		learnset: [
+			{
+				name: 'Deathtouch',
+				level: 0
+			},
+			{
+				name: 'Tarunda',
+				level: 0
+			},
+			{
+				name: 'Mazio',
+				level: 18
+			},
+			{
+				name: 'Taunt',
+				level: 19
+			},
+			{
+				name: 'Dia',
+				level: 20
+			},
+			{
+				name: 'Venom Claw',
+				level: 21
+			},
+			{
+				name: 'Diarama',
+				level: 22
+			}
+		],
+		resistances: {
+			Ice: 'Weak',
+			Light: 'Weak',
+			Dark: 'Null'
+		},
+		game: 'smt3',
+		alignment: null,
+		lore: null,
+		origin: null
 	},
 	{
 		name: 'Yaksha',
