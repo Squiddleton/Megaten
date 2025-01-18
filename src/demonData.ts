@@ -10719,6 +10719,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 	{
 		name: 'Feng Huang',
 		aliases: [
+			'Houou',
+			'Ho-ou',
+			'Ho-Oh',
 			'Phoenix'
 		],
 		affinities: {
