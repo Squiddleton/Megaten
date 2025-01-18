@@ -109,18 +109,9 @@ Demon {
     }
   ],
   resistances: {
-    ailments: {
-      Charm: 'Weak'
-    },
-    weak: [
-      'Fire'
-    ],
-    resist: [],
-    null: [],
-    drain: [
-      'Ice'
-    ],
-    repel: []
+	Fire: 'Weak',
+	Ice: 'Drain',
+	Charm: 'Weak'
   },
   game: 'smt5',
   alignment: {
@@ -169,18 +160,9 @@ Persona {
     // ...
   ],
   resistances: {
-    ailments: null,
-    weak: [
-      'Elec'
-    ],
-    resist: [
-      'Light'
-    ],
-    null: [
-      'Wind'
-    ],
-    drain: [],
-    repel: []
+	Elec: 'Weak',
+	Wind: 'Null',
+	Light: 'Resist'
   },
   game: 'p5',
   alignment: null,
