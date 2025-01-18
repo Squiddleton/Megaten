@@ -8,8 +8,9 @@ This package currently contains the following data from the games, with more bei
 
 Game | Skills | Demons/Personas | Guests/Party Member Personas | Enemies/Shadows | Bosses
 -------- | -------- | -------- | -------- | -------- | --------
-Shin Megami Tensei V | Yes | Yes | No | Yes | Yes
+Shin Megami Tensei V (Vanilla/Vengeance) | Yes | Yes | No | Yes | Yes
 Persona 5 (Vanilla/Royal/Strikers) | Yes | Yes | Yes | No | No
+Shin Megami Tensei IV (Vanilla/Apocalypse) | No | Yes | No | No | No
 Persona 4 (Vanilla/Golden) | Yes | Yes | Yes | No | No
 Persona 3 (Vanilla/FES/Portable) | No | No | Yes | No | No
 

@@ -15,9 +15,9 @@ export interface DemonData<PersonaBased extends boolean = boolean> {
 	learnset: DemonSkill[];
 	resistances: DemonResistances;
 	game: If<PersonaBased, PersonaGame, AnyGame>;
-	alignment: If<PersonaBased, null, DemonAlignment>;
-	lore: If<PersonaBased, string | null, string>;
-	origin: DemonOrigin;
+	alignment: DemonAlignment | null;
+	lore: string | null;
+	origin: DemonOrigin | null;
 }
 
 /** Data used for constructing a Persona instance */

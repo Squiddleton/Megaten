@@ -13,7 +13,7 @@ export interface AttackAilments {
 }
 
 /** Ailments' names (adjusted for consistency with SMT5) */
-export type AilmentName = 'Burn' | 'Charm' | 'Confusion' | 'Death' | 'Despair' | 'Dizzy' | 'Down' | 'Enervate' | 'Exhaust' | 'Fear' | 'Freeze' | 'Hunger' | 'Mirage' | 'Mud' | 'Poison' | 'Rage' | 'Seal' | 'Shock' | 'Shroud' | 'Sleep';
+export type AilmentName = 'Bind' | 'Burn' | 'Charm' | 'Confusion' | 'Daze' | 'Death' | 'Despair' | 'Dizzy' | 'Down' | 'Enervate' | 'Exhaust' | 'Fear' | 'Freeze' | 'Hunger' | 'Mirage' | 'Mud' | 'Poison' | 'Rage' | 'Seal' | 'Shock' | 'Shroud' | 'Sick' | 'Sleep';
 /** An ailment's name or all ailments */
 export type OneOrAllAilments = AilmentName | 'All';
 /** Ailments that an AilDefensiveSkill instance protects against */
@@ -119,17 +119,30 @@ export interface DemonSkill {
 }
 
 /** A demon's stats */
-export interface DemonStats {
+export type DemonStats = DemonStatsWithVitality | DemonStatsWithDexterity;
+
+/** A demon's stats regardless of the game */
+export interface BaseDemonStats {
 	/** The demon's strength stat */
 	st: number;
-	/** The demon's vitality/endurance stat */
-	vi: number;
 	/** The demon's magic stat */
 	ma: number;
 	/** The demon's agility stat */
 	ag: number;
 	/** The demon's luck stat */
 	lu: number;
+}
+
+/** Stats used in most games */
+export interface DemonStatsWithVitality extends BaseDemonStats {
+	/** The demon's vitality or endurance stat */
+	vi: number;
+}
+
+/** Stats used in SMT4 and 4A */
+export interface DemonStatsWithDexterity extends BaseDemonStats {
+	/** The demon's dexterity stat */
+	dx: number;
 }
 
 /** Criteria for EndureSkill instances taking effect */
@@ -202,14 +215,14 @@ export type WallAffinity = Exclude<DamagingAffinity, SMTAffinity | 'Phys' | 'Gun
 /** Mainline Persona games */
 export type PersonaGame = 'p3' | 'p4' | 'p5';
 /** Mainline Shin Megami Tensei games */
-export type SMTGame = 'smt5';
+export type SMTGame = 'smt4' | 'smt5';
 /** Games that demon data can originate from */
 export type AnyGame = PersonaGame | SMTGame;
 
 /** Custom races for demons that originate in Persona games */
 export type PersonaRace = 'Persona' | 'Picaro' | 'Treasure';
 /** Demons' official races */
-export type SMTRace = 'Amatsu' | 'Avatar' | 'Avian' | 'Beast' | 'Brute' | 'Deity' | 'Devil' | 'Divine' | 'Dragon' | 'Drake' | 'Element' | 'Enigma' | 'Fairy' | 'Fallen' | 'Femme' | 'Fiend' | 'Foul' | 'Fury' | 'Genma' | 'Godly' | 'Haunt' | 'Herald' | 'Holy' | 'Jaki' | 'Jirae' | 'King' | 'Kishin' | 'Kunitsu' | 'Lady' | 'Matter' | 'Megami' | 'Meta' | 'Mitama' | 'Nahobino' | 'Night' | 'Nymph' | 'Panagia' | 'Primal' | 'Qadištu' | 'Raptor' | 'Snake' | 'Tenma' | 'Tyrant' | 'UMA' | 'Vile' | 'Wargod' | 'Wilder' | 'Wood' | 'Yoma';
+export type SMTRace = 'Amatsu' | 'Avatar' | 'Avian' | 'Beast' | 'Brute' | 'Deity' | 'Devil' | 'Divine' | 'Dragon' | 'Drake' | 'Element' | 'Enigma' | 'Fairy' | 'Fallen' | 'Famed' | 'Femme' | 'Fiend' | 'Flight' | 'Food' | 'Foul' | 'Fury' | 'Genma' | 'Godly' | 'Haunt' | 'Herald' | 'Holy' | 'Jaki' | 'Jirae' | 'King' | 'Kishin' | 'Kunitsu' | 'Lady' | 'Matter' | 'Megami' | 'Meta' | 'Mitama' | 'Nahobino' | 'Night' | 'Nymph' | 'Panagia' | 'Primal' | 'Qadištu' | 'Raptor' | 'Reaper' | 'Snake' | 'Spirit' | 'Tenma' | 'Tree' | 'Tyrant' | 'UMA' | 'Undead' | 'Vermin' | 'Vile' | 'Wargod' | 'Wilder' | 'Wood' | 'Yoma' | 'Zealot';
 /** Demons' races */
 export type AnyRace = PersonaRace | SMTRace;
 
@@ -232,7 +245,7 @@ export type Series = 'persona' | 'smt';
 export type SiphonCriteria = 'Ailment' | 'Weakness/Critical' | 'Drain';
 
 /** The effectiveness of a demon's skills based on the skills' affinities */
-export type SkillPotential = Record<Exclude<AnyAffinity, PersonaAffinity | 'Passive' | 'Special'>, number>;
+export type SkillPotential = Record<Exclude<AnyAffinity, PersonaAffinity | 'Passive' | 'Special'>, number> & { Gun?: number };
 
 /** Skill instances' types */
 export type SkillType = 'AILBOOST' | 'AILDEFENSIVE' | 'AILMENT' | 'ATTACK' | 'AUTOBUFF' | 'BARRIER' | 'BARRIERBREAK' | 'BOOST' | 'BREAK' | 'CHARGE' | 'CRIT' | 'CRITBOOST' | 'DEFENSIVE' | 'ENDURE' | 'EVASION' | 'INSTAKILLBOOST' | 'MASTER' | 'MISC' | 'NAVI' | 'PERSONACOUNTER' | 'POSTBATTLE' | 'RECOVERY' | 'REGEN' | 'SET' | 'SIPHON' | 'SMTCOUNTER' | 'SPRING' | 'SUMMON' | 'SUPPORT' | 'SUSCEPTIBILITY' | 'TAUNT' | 'WALL';

@@ -41,12 +41,12 @@ export class Demon<PersonaBased extends boolean = boolean> implements DemonData<
 	resistances: DemonResistances;
 	/** The game that the demon's data originates from */
 	game: If<PersonaBased, PersonaGame, AnyGame>;
-	/** The demon's major and minor alignment */
-	alignment: If<PersonaBased, null, DemonAlignment>;
-	/** The demon's backstory, or null for older Personas */
-	lore: If<PersonaBased, string | null, string>;
-	/** The demon's mythological origin */
-	origin: DemonOrigin;
+	/** The demon's major and minor alignment, or null for SMT4 demons */
+	alignment: DemonAlignment | null;
+	/** The demon's backstory, or null for older Personas and SMT4 demons */
+	lore: string | null;
+	/** The demon's mythological origin, or null for SMT4 demons */
+	origin: DemonOrigin | null;
 	constructor(data: DemonData<PersonaBased>) {
 		this.name = data.name;
 		this.aliases = data.aliases ?? [];
