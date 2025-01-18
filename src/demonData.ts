@@ -2094,6 +2094,72 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		origin: 'Abrahamic'
 	},
 	{
+		name: 'Angel - Final',
+		affinities: {
+			skillPotential: {
+				Phys: 0,
+				Gun: 0,
+				Fire: 0,
+				Ice: 0,
+				Elec: -3,
+				Force: 0,
+				Light: 5,
+				Dark: -6,
+				Almighty: 0,
+				Recovery: 3,
+				Ailment: 0,
+				Support: 4
+			},
+			inherit: null
+		},
+		arcana: 'Justice',
+		race: 'Divine',
+		level: 82,
+		hp: 510,
+		mp: 420,
+		stats: {
+			st: 54,
+			dx: 71,
+			ma: 122,
+			ag: 80,
+			lu: 97
+		},
+		learnset: [
+			{
+				name: 'Judgement Light',
+				level: 0
+			},
+			{
+				name: 'Luster Candy',
+				level: 0
+			},
+			{
+				name: 'Mediarahan',
+				level: 83
+			},
+			{
+				name: 'High Light Pleroma',
+				level: 84
+			}
+		],
+		resistances: {
+			Fire: 'Resist',
+			Elec: 'Weak',
+			Force: 'Resist',
+			Light: 'Null',
+			Dark: 'Weak',
+			Bind: 'Null',
+			Charm: 'Null'
+		},
+		game: 'smt4',
+		alignment: {
+			major: 'Neutral',
+			minor: 'Law'
+		},
+		lore: 'Ninth of the nine orders of angels.\nThey are closest in nature to humans. They watch over individuals and offer warning to those who stray from the path.',
+		origin: 'Abrahamic'
+	},
+	{
 		name: 'Aniel',
 		affinities: {
 			skillPotential: {
