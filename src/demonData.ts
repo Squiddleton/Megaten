@@ -9277,14 +9277,6 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 				level: 0
 			},
 			{
-				name: 'Null Freeze',
-				level: 0
-			},
-			{
-				name: 'Null Shock',
-				level: 1
-			},
-			{
 				name: 'Twosome Time',
 				level: 81
 			},
@@ -33401,14 +33393,6 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			{
 				name: 'Arbitration',
 				level: 0
-			},
-			{
-				name: 'Null Freeze',
-				level: 0
-			},
-			{
-				name: 'Null Shock',
-				level: 1
 			},
 			{
 				name: 'Mokoi Boomerang',
