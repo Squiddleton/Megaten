@@ -13,6 +13,7 @@ Persona 5 (Vanilla/Royal/Strikers) | Yes | Yes | Yes | No | No
 Shin Megami Tensei IV (Vanilla/Apocalypse) | No | Yes | No | No | No
 Persona 4 (Vanilla/Golden) | Yes | Yes | Yes | No | No
 Persona 3 (Vanilla/FES/Portable) | No | No | Yes | No | No
+Shin Megami Tensei III: Nocturne | No | No | Yes | No | No
 
 NOTE: This is **not** a 1:1 database of all past data. Information such as MP amounts and damage values may be adjusted to the latest mainstream release, and more changes are found in the Notes section.
 
