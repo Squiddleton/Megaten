@@ -793,7 +793,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 				level: 65
 			},
 			{
-				name: 'Phys Drain',
+				name: 'Drain Phys',
 				level: 66
 			},
 			{
@@ -4656,11 +4656,11 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 				level: 24
 			},
 			{
-				name: 'Wing Buffet',
+				name: 'Wind Breath',
 				level: 25
 			},
 			{
-				name: 'Anti-Force',
+				name: 'Resist Force',
 				level: 26
 			},
 			{
@@ -4846,7 +4846,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 				level: 0
 			},
 			{
-				name: 'Head Crush',
+				name: 'Headcrush',
 				level: 0
 			},
 			{
@@ -7741,7 +7741,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 				level: 0
 			},
 			{
-				name: 'Stun Needle',
+				name: 'Stun Needles',
 				level: 12
 			},
 			{
@@ -9195,7 +9195,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 				level: 0
 			},
 			{
-				name: 'Makajam',
+				name: 'Makajama',
 				level: 0
 			},
 			{
@@ -9545,7 +9545,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 				level: 0
 			},
 			{
-				name: 'Soul Drain',
+				name: 'Energy Drain',
 				level: 0
 			},
 			{
@@ -9834,7 +9834,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 				level: 77
 			},
 			{
-				name: 'Breath',
+				name: 'Ice Breath',
 				level: 78
 			}
 		],
@@ -10358,7 +10358,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 				level: 9
 			},
 			{
-				name: 'Head Crush',
+				name: 'Headcrush',
 				level: 10
 			}
 		],
@@ -11457,7 +11457,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		},
 		learnset: [
 			{
-				name: 'Head Crush',
+				name: 'Headcrush',
 				level: 0
 			},
 			{
@@ -11694,7 +11694,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		},
 		learnset: [
 			{
-				name: 'Focus',
+				name: 'Charge',
 				level: 0
 			},
 			{
@@ -13253,7 +13253,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 				level: 0
 			},
 			{
-				name: 'Head Crush',
+				name: 'Headcrush',
 				level: 0
 			},
 			{
@@ -13497,7 +13497,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 				level: 0
 			},
 			{
-				name: 'Amrita',
+				name: 'Me Patra',
 				level: 0
 			},
 			{
@@ -14056,7 +14056,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		},
 		learnset: [
 			{
-				name: 'Amrita',
+				name: 'Me Patra',
 				level: 0
 			},
 			{
@@ -15827,7 +15827,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 				level: 49
 			},
 			{
-				name: 'Beastly Reaction',
+				name: 'Beast Eye',
 				level: 50
 			}
 		],
@@ -16360,7 +16360,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 				level: 48
 			},
 			{
-				name: 'Draconic Reaction',
+				name: 'Dragon Eye',
 				level: 49
 			}
 		],
@@ -19575,7 +19575,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 				level: 0
 			},
 			{
-				name: 'Critical Eye',
+				name: 'Critical Aura',
 				level: 0
 			},
 			{
@@ -19838,7 +19838,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 				level: 12
 			},
 			{
-				name: 'Beastly Reaction',
+				name: 'Beast Eye',
 				level: 13
 			}
 		],
@@ -20557,7 +20557,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 				level: 0
 			},
 			{
-				name: 'Shock',
+				name: 'Shockbound',
 				level: 0
 			},
 			{
@@ -26259,7 +26259,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 				level: 0
 			},
 			{
-				name: 'Tetrabreak',
+				name: 'Tetra Break',
 				level: 0
 			},
 			{
@@ -28731,7 +28731,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 				level: 73
 			},
 			{
-				name: 'Fire Drain',
+				name: 'Drain Fire',
 				level: 74
 			}
 		],
@@ -30958,7 +30958,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 				level: 0
 			},
 			{
-				name: 'Beastly Reaction',
+				name: 'Beast Eye',
 				level: 74
 			},
 			{
@@ -31670,7 +31670,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 				level: 67
 			},
 			{
-				name: 'Draconic Reaction',
+				name: 'Dragon Eye',
 				level: 69
 			}
 		],
@@ -33327,7 +33327,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 				level: 0
 			},
 			{
-				name: 'Shock',
+				name: 'Shockbound',
 				level: 26
 			}
 		],
@@ -33468,7 +33468,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		},
 		learnset: [
 			{
-				name: 'Shock',
+				name: 'Shockbound',
 				level: 0
 			},
 			{
@@ -34500,11 +34500,11 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		},
 		learnset: [
 			{
-				name: 'True Ziodyne',
+				name: 'Ziobarion',
 				level: 0
 			},
 			{
-				name: 'True Zandyne',
+				name: 'Zanbarion',
 				level: 0
 			},
 			{
@@ -34779,7 +34779,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 				level: 38
 			},
 			{
-				name: 'Focus',
+				name: 'Charge',
 				level: 39
 			},
 			{
@@ -35674,7 +35674,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		},
 		learnset: [
 			{
-				name: 'Anti-Phys',
+				name: 'Resist Phys',
 				level: 0
 			},
 			{
@@ -37699,7 +37699,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 				level: 0
 			},
 			{
-				name: 'Critical Eye',
+				name: 'Critical Aura',
 				level: 85
 			},
 			{
@@ -38746,7 +38746,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 				level: 65
 			},
 			{
-				name: 'Beastly Reaction',
+				name: 'Beast Eye',
 				level: 66
 			}
 		],
@@ -39497,7 +39497,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		},
 		learnset: [
 			{
-				name: 'Critical Eye',
+				name: 'Critical Aura',
 				level: 0
 			},
 			{
@@ -40845,7 +40845,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 				level: 0
 			},
 			{
-				name: 'Stun Needle',
+				name: 'Stun Needles',
 				level: 22
 			},
 			{
@@ -42293,7 +42293,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		},
 		learnset: [
 			{
-				name: 'Makajam',
+				name: 'Makajama',
 				level: 0
 			},
 			{
@@ -42611,7 +42611,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 				level: 0
 			},
 			{
-				name: 'Critical Eye',
+				name: 'Critical Aura',
 				level: 58
 			},
 			{

@@ -17,7 +17,7 @@ export type AilmentName = 'Bind' | 'Burn' | 'Charm' | 'Confusion' | 'Daze' | 'De
 /** An ailment's name or all ailments */
 export type OneOrAllAilments = AilmentName | 'All';
 /** Ailments that an AilDefensiveSkill instance protects against */
-export type AilDefensiveAilment = OneOrAllAilments | 'Confuse/Fear/Rage/Despair';
+export type AilDefensiveAilment = OneOrAllAilments | 'Confuse/Fear/Rage/Despair' | 'Poison/Bind/Sick/Daze' | 'Sleep/Confusion/Charm/Seal';
 
 /** Resistances to ailments */
 export type AilResistance = 'Resist' | 'Null';
@@ -39,7 +39,7 @@ export type AutoBuffRange = Exclude<AllyRange, 'Ally'>;
 /** Range for CritSkill instances */
 export type CritRange = Exclude<AllyRange, 'Self'> | 'All';
 /** Range for SupportSkill instances */
-export type SupportRange = Exclude<AnyRange, 'Random'>;
+export type SupportRange = Exclude<AnyRange, 'Random'> | 'All Foes';
 /** Range for SusceptibilitySkill instances */
 export type SusceptibilityRange = 'Foe' | 'All';
 
@@ -55,7 +55,7 @@ export interface AttackCost {
 }
 
 /** Flags for AttackSkill instances */
-export type AttackFlag = '+20% Crit Rate' | '+200% Crit Rate' | '+30% Crit Rate' | 'Afflicted Boost' | 'After Evading Only' | 'Agility Dependent Hits' | 'Asleep Boost' | 'Attack Reduced' | 'Baton Boost' | 'Charmed Boost' | 'Confused Boost' | 'Crit Damage Boost' | 'Debuff Number Dependent' | 'Defense Greatly Down' | 'Down Boost' | 'Drain HP' | 'Drain HP/MP' | 'Drain MP' | 'Foe Number Dependent' | 'HP Dependent' | 'Minimize Defense' | 'Mirage Boost' | 'Negate Buffs' | 'Negate Charges/Barriers' | 'Pierce' | 'Poisoned Boost' | 'Shroud Dependent' | 'Static Damage' | 'Surround Boost' | 'Weakness Instakill' | 'Weather Boost' | `${Buff} Down` | `${Buff} Greatly Down`;
+export type AttackFlag = '+20% Crit Rate' | '+200% Crit Rate' | '+30% Crit Rate' | 'Afflicted Boost' | 'After Evading Only' | 'Agility Dependent Hits' | 'Asleep Boost' | 'Attack Reduced' | 'Baton Boost' | 'Chaos Target Boost' | 'Charmed Boost' | 'Confused Boost' | 'Crit Damage Boost' | 'Debuff Number Dependent' | 'Defense Greatly Down' | 'Down Boost' | 'Drain HP' | 'Drain HP/MP' | 'Drain MP' | 'Foe Number Dependent' | 'HP Dependent' | 'Law Target Boost' | 'Minimize Defense' | 'Mirage Boost' | 'Negate Buffs' | 'Negate Charges/Barriers' | 'Pierce' | 'Poisoned Boost' | 'Shroud Dependent' | 'Smirk Boost' | 'Smirk Instakill' | 'Smirk Pierce' | 'Smirk-Dependent Debuffs' | 'Static Damage' | 'Surround Boost' | 'Weakness Instakill' | 'Weather Boost' | `${Buff} Down` | `${Buff} Greatly Down`;
 
 /** A base for skills with a specific amount of power */
 export interface BasePower {
@@ -77,13 +77,13 @@ export type Barrier = 'Painting' | 'Damage Down' | 'Repel Phys' | 'Repel Magic' 
 export type BoostStack = '+' | 'x';
 
 /** Buffs cast by a Skill instance */
-export type Buff = 'Attack' | 'Defense' | 'Accuracy/Evasion';
+export type Buff = 'Attack' | 'Magic' | 'Defense' | 'Accuracy/Evasion';
 
 /** A one- or two-stage buff */
 export type SingleOrDoubleBuff = Buff | `Double ${Buff}`;
 
 /** Charges cast by a Skill instance */
-export type Charge = 'Phys Charge' | 'Phys Charge - Donum' | 'Magic Charge' | 'Magic Charge - Donum' | 'Critical Charge' | 'Recovery Charge' | 'Pierce Charge' | 'Pierce Charge EX' | 'Successive Strikes';
+export type Charge = 'Phys Charge' | 'Phys Charge - Donum' | 'Magic Charge' | 'Magic Charge - Donum' | 'Critical Charge' | 'Recovery Charge' | 'Pierce Charge' | 'Pierce Charge EX' | 'Successive Strikes' | 'Fire Pierce' | 'Ice Pierce' | 'Elec Pierce' | 'Force Pierce';
 
 /** Displayed damage values for SMTCounterSkill instances */
 export type CounterDisplay = 'Weak' | 'Medium';
@@ -257,7 +257,7 @@ export type Stage = 1 | 2 | 3;
 export type SupportAutoEffect = Barrier | Buff | Charge;
 
 /** Flags for SupportSkill instances */
-export type SupportFlag = 'Cure Non-Special Ailments' | 'Maximize Buff' | 'Minimize Debuffs' | 'Surrounded Only';
+export type SupportFlag = 'Cure Non-Special Ailments' | 'Reduces HP to 1' | 'Surrounded Only';
 
 /** Buffs cast by TauntSkill instances */
 export type TauntBuff = SingleOrDoubleBuff | `Maximize ${Buff}`;

@@ -257,6 +257,7 @@ export interface SetSkillData extends SkillData {
 	amount: NumberOrPercent;
 	type: 'SET';
 	cost: number | null;
+	sickDependent?: boolean;
 }
 
 export interface SiphonSkillData extends SkillData {
@@ -272,6 +273,7 @@ export interface SMTCounterSkillData extends SkillData {
 	chance: number;
 	element: SMTCounterAffinity;
 	power: BasePower;
+	ally?: boolean;
 	attackDown?: boolean;
 	shroud?: boolean;
 	pierce?: boolean;
@@ -296,9 +298,8 @@ export interface SupportSkillData extends SkillData {
 	affinity: 'Support';
 	type: 'SUPPORT';
 	auto: SupportAutoEffect[];
-	buffs: SingleOrDoubleBuff[];
+	buffs: Partial<Record<Buff, number | null>>;
 	cost: number;
-	debuffs: Buff[];
 	flags?: SupportFlag[];
 	negate: boolean;
 	range: SupportRange;

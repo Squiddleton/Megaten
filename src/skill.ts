@@ -301,7 +301,7 @@ export class AutoBuffSkill extends Skill implements AutoBuffSkillData {
 		const { buff, range } = data;
 		super(data);
 
-		let buffSkillName = { Attack: 'Tarukaja', Defense: 'Rakukaja', 'Accuracy/Evasion': 'Sukukaja' }[buff];
+		let buffSkillName = { Attack: 'Tarukaja', Magic: 'Makakaja', Defense: 'Rakukaja', 'Accuracy/Evasion': 'Sukukaja' }[buff];
 		const isParty = range === 'Party';
 		if (isParty) {
 			buffSkillName = buffSkillName.toLowerCase();
@@ -466,9 +466,16 @@ export class ChargeSkill extends Skill implements ChargeSkillData {
 				this.description = 'Causes the next attack of self to be performed 4 times consecutively.';
 				break;
 			}
-			default: this.description = range === 'Party'
-				? `Next ${charge === 'Phys Charge' ? 'physical' : 'magical'} attack deals over double the damage for all allies.`
-				: `Greatly increases damage of the next ${charge === 'Phys Charge' ? 'Strength' : 'Magic'}-based attack ${range === 'Self' ? 'from self' : 'on 1 ally'}.`;
+			default: {
+				if (charge.endsWith('Pierce')) {
+					this.description = `Grants ${charge.split(' ')[0].toLowerCase()} pierce to party.`;
+				}
+				else {
+					this.description = range === 'Party'
+						? `Next ${charge === 'Phys Charge' ? 'physical' : 'magical'} attack deals over double the damage for all allies.`
+						: `Greatly increases damage of the next ${charge === 'Phys Charge' ? 'Strength' : 'Magic'}-based attack ${range === 'Self' ? 'from self' : 'on 1 ally'}.`;
+				}
+			}
 		}
 
 		this.charge = charge;
@@ -809,14 +816,22 @@ export class SetSkill extends Skill implements SetSkillData {
 	amount: NumberOrPercent;
 	/** The skill's MP cost, or null if enemy-exclusive */
 	cost: number | null;
+	/** Whether the skill does the amount of damage to non-sick enemies, or sets the sick target's HP to the amount */
+	sickDependent?: boolean;
 	constructor(data: SetSkillData) {
-		const { amount } = data;
+		const { amount, sickDependent } = data;
 		super(data);
-		this.description = typeof amount === 'string'
-			? `${this.affinity} attack that reduces HP of one foe by ${amount}.`
-			: `Reduces enemy to ${amount} HP.`;
+		if (sickDependent) {
+			this.description = 'Weak Almighty attack to all foes. Reduces sick foes\' HP to 1.';
+		}
+		else {
+			this.description = typeof amount === 'string'
+				? `${this.affinity} attack that reduces HP of one foe by ${amount}.`
+				: `Reduces enemy to ${amount} HP.`;
+		}
 		this.amount = amount;
 		this.cost = data.cost;
+		this.sickDependent = sickDependent;
 	}
 }
 
@@ -849,6 +864,8 @@ export class SMTCounterSkill extends Skill implements SMTCounterSkillData {
 	element: SMTCounterAffinity;
 	/** The numerical and displayed amount of damage that the skill deals */
 	power: BasePower;
+	/** Whether the skill triggers when allies are damaged */
+	ally: boolean;
 	/** Whether the skill lowers the attack of the attacker */
 	attackDown: boolean;
 	/** Whether the skill inflicts Shroud on the attacker */
@@ -858,13 +875,14 @@ export class SMTCounterSkill extends Skill implements SMTCounterSkillData {
 	/** Whether the skill increases evasion and takes effect by evading an attack */
 	evasionBased: boolean;
 	constructor(data: SMTCounterSkillData) {
-		const { chance, element, power, attackDown = false, shroud = false, pierce = false, evasionBased = false } = data;
+		const { chance, element, power, ally = false, attackDown = false, shroud = false, pierce = false, evasionBased = false } = data;
 		super(data);
 		this.description = shroud
 			? `Counters all attacks with a ${power.display.toLowerCase()} ${element} attack for one turn. Counterattack also inflicts Shroud.`
 			: chance === 100
 				? `Counterattacks with ${power.display.toLowerCase()} ${element} attack when a Thunder Bit is defeated.`
-				: `Chance to counter Strength-based attacks with a ${power.display.toLowerCase()} ${element} attack.${this.name === 'Retaliate' ? ' Does not stack with Counter.' : ''}${attackDown ? ' Lowers target\'s Attack 1 rank for 3 turns.' : ''}`;
+				: `Chance to counter Strength-based attacks${ally ? ' against allies' : ''} with a ${power.display.toLowerCase()} ${element} attack.${this.name === 'Retaliate' ? ' Does not stack with Counter.' : ''}${attackDown ? ' Lowers target\'s Attack 1 rank for 3 turns.' : ''}`;
+		this.ally = ally;
 		this.attackDown = attackDown;
 		this.chance = chance;
 		this.element = element;
@@ -919,12 +937,10 @@ export class SupportSkill extends Skill implements SupportSkillData {
 	description: string;
 	/** The barriers or charges automatically cast by having the skill */
 	auto: SupportAutoEffect[];
-	/** The buffs cast by the skill */
-	buffs: SingleOrDoubleBuff[];
+	/** The buffs or debuffs cast by the skill */
+	buffs: Partial<Record<Buff, number | null>>;
 	/** The skill's MP cost */
 	cost: number;
-	/** The debuffs cast by the skill */
-	debuffs: Buff[];
 	/** The skill's special or notable features */
 	flags: SupportFlag[];
 	/** Whether the skill negates its buffs or debuffs from enemies or allies, respectively */
@@ -932,7 +948,7 @@ export class SupportSkill extends Skill implements SupportSkillData {
 	/** The range that the skill targets */
 	range: SupportRange;
 	constructor(data: SupportSkillData) {
-		const { buffs, debuffs, flags = [], negate, range } = data;
+		const { buffs, flags = [], negate, range } = data;
 		super(data);
 
 		const isAllyRangeFunc = (allyRange: SupportRange): allyRange is AllyRange => ['Ally', 'Party'].includes(range);
@@ -940,24 +956,24 @@ export class SupportSkill extends Skill implements SupportSkillData {
 		if (flags.includes('Cure Non-Special Ailments')) {
 			this.description = 'Cures all non-special ailments for all allies.';
 		}
-		else if (flags.includes('Maximize Buff')) {
-			this.description = `Maximizes ${buffs[0]} for 3 turns.`;
+		else if (negate) {
+			this.description = `Negates status ${isAllyRange ? 'de' : ''}buff effects on all ${isAllyRange ? 'allies' : 'foes'}.`;
 		}
-		else if (flags.includes('Minimize Debuffs')) {
-			this.description = `Minimizes ${debuffs.join('/')} of 1 foe for 3 turns.`;
+		else if (Object.values(buffs)[0] === 4) {
+			this.description = `Maximizes ${Object.keys(buffs).join('/')} for 3 turns.`;
+		}
+		else if (Object.values(buffs)[0] === -4) {
+			this.description = `Minimizes ${Object.keys(buffs).join('/')} of 1 foe for 3 turns.`;
 		}
 		else {
-			this.description = negate
-				? `Negates status ${isAllyRange ? 'de' : ''}buff effects on all ${isAllyRange ? 'allies' : 'foes'}.`
-				: isAllyRange
-					? `Raises ${buffs.length === 3 ? 'all stats' : buffs.join('/').replace('Double ', '')} of ${range === 'Party' ? 'all allies' : '1 ally'} by ${buffs[0].includes('Double') ? '2 ranks' : '1 rank'} for 3 turns${flags.includes('Surrounded Only') ? ' when surrounded' : ''}.`
-					: `Lowers ${debuffs.length === 3 ? 'all stats' : debuffs.join('/')} of ${range === 'All' ? 'all foes' : '1 foe'} by ${debuffs[0].includes('Double') ? '2 ranks' : '1 rank'} for 3 turns.`;
+			this.description = isAllyRange
+				? `Raises ${Object.entries(buffs).length === 3 ? 'all stats' : Object.keys(buffs).join('/')} of ${range === 'Party' ? 'all allies' : '1 ally'} by ${Object.values(buffs)[1] === 2 ? '2 ranks' : '1 rank'} for 3 turns${flags.includes('Surrounded Only') ? ' when surrounded' : ''}.`
+				: `Lowers ${Object.entries(buffs).length === 3 ? 'all stats' : Object.keys(buffs).join('/')} of ${range === 'All' ? 'all foes' : '1 foe'} by ${Object.values(buffs)[1] === -2 ? '2 ranks' : '1 rank'} for 3 turns.`;
 		}
 
 		this.auto = data.auto;
 		this.buffs = buffs;
 		this.cost = data.cost;
-		this.debuffs = debuffs;
 		this.flags = flags;
 		this.negate = negate;
 		this.range = range;
