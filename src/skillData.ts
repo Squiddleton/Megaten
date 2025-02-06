@@ -4890,7 +4890,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		power: {
 			amount: 150,
 			display: 'Heavy',
-			type: 'Magic'
+			type: 'Physical'
 		},
 		range: 'All',
 		series: 'smt'
