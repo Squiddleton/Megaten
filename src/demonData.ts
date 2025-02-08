@@ -13520,64 +13520,6 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		origin: null
 	},
 	{
-		name: 'Gui Xian',
-		affinities: {
-			skillPotential: {
-				Phys: 0,
-				Gun: 0,
-				Fire: -7,
-				Ice: 5,
-				Elec: 0,
-				Force: 0,
-				Light: 0,
-				Dark: 0,
-				Almighty: 0,
-				Recovery: 0,
-				Ailment: 0,
-				Support: 2
-			},
-			inherit: null
-		},
-		arcana: null,
-		race: 'Snake',
-		level: 60,
-		hp: 650,
-		mp: 236,
-		stats: {
-			st: 95,
-			dx: 49,
-			ma: 63,
-			ag: 57,
-			lu: 72
-		},
-		learnset: [
-			{
-				name: 'Fang Breaker',
-				level: 0
-			},
-			{
-				name: 'Bufudyne',
-				level: 0
-			},
-			{
-				name: 'Rakukaja',
-				level: 61
-			},
-			{
-				name: 'High Ice Pleroma',
-				level: 63
-			}
-		],
-		resistances: {
-			Fire: 'Weak',
-			Ice: 'Null'
-		},
-		game: 'smt4',
-		alignment: null,
-		lore: null,
-		origin: null
-	},
-	{
 		name: 'Gurulu',
 		aliases: [
 			'Gurr'
@@ -15412,9 +15354,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		evoSkillName: null
 	},
 	{
-		name: 'Hitokotonusi',
+		name: 'Hitokotonushi',
 		aliases: [
-			'Hitokoto-Nushi'
+			'Hitokoto-Nushi',
+			'Hitokotonusi'
 		],
 		affinities: {
 			skillPotential: {
@@ -24527,6 +24470,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 	},
 	{
 		name: 'Marici',
+		aliases: [
+			'Marishiten'
+		],
 		affinities: {
 			skillPotential: {
 				Phys: 5,
@@ -24603,65 +24549,6 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		},
 		lore: 'A sun goddess of Buddhism, her name means "light" or "heat haze." In Japan, where she is known as Marishiten, she was worshipped by warriors, said to protect them from harm and enemy detection. Often portrayed as having three heads and six-to-eight arms, holding weapons such as swords, bows, and vajra.',
 		origin: 'Buddhist'
-	},
-	{
-		name: 'Marishiten',
-		affinities: {
-			skillPotential: {
-				Phys: 2,
-				Gun: 4,
-				Fire: -5,
-				Ice: 2,
-				Elec: 0,
-				Force: 0,
-				Light: 0,
-				Dark: 0,
-				Almighty: 2,
-				Recovery: -3,
-				Ailment: 0,
-				Support: 2
-			},
-			inherit: null
-		},
-		arcana: null,
-		race: 'Kishin',
-		level: 75,
-		hp: 588,
-		mp: 267,
-		stats: {
-			st: 84,
-			dx: 82,
-			ma: 80,
-			ag: 81,
-			lu: 78
-		},
-		learnset: [
-			{
-				name: 'Berserker God',
-				level: 0
-			},
-			{
-				name: 'Myriad Arrows',
-				level: 0
-			},
-			{
-				name: 'Makarakarn',
-				level: 76
-			},
-			{
-				name: 'Megidolaon',
-				level: 77
-			}
-		],
-		resistances: {
-			Fire: 'Null',
-			Light: 'Resist',
-			Confusion: 'Weak'
-		},
-		game: 'smt4',
-		alignment: null,
-		lore: null,
-		origin: null
 	},
 	{
 		name: 'Masakado',
@@ -29961,74 +29848,6 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		origin: 'Abrahamic'
 	},
 	{
-		name: 'Orochi',
-		affinities: {
-			skillPotential: {
-				Phys: 3,
-				Gun: 0,
-				Fire: 3,
-				Ice: 3,
-				Elec: -3,
-				Force: 0,
-				Light: 0,
-				Dark: 0,
-				Almighty: 0,
-				Recovery: 1,
-				Ailment: -7,
-				Support: 0
-			},
-			inherit: null
-		},
-		arcana: null,
-		race: 'Snake',
-		level: 51,
-		hp: 554,
-		mp: 204,
-		stats: {
-			st: 86,
-			dx: 50,
-			ma: 38,
-			ag: 59,
-			lu: 67
-		},
-		learnset: [
-			{
-				name: 'Bufudyne',
-				level: 0
-			},
-			{
-				name: 'Agidyne',
-				level: 0
-			},
-			{
-				name: 'Estoma',
-				level: 0
-			},
-			{
-				name: 'Megaton Press',
-				level: 52
-			},
-			{
-				name: 'Recarmdra',
-				level: 53
-			}
-		],
-		resistances: {
-			Fire: 'Null',
-			Ice: 'Null',
-			Elec: 'Weak',
-			Bind: 'Weak',
-			Daze: 'Resist',
-			Confusion: 'Weak',
-			Poison: 'Weak',
-			Sleep: 'Weak'
-		},
-		game: 'smt4',
-		alignment: null,
-		lore: null,
-		origin: null
-	},
-	{
 		name: 'Orpheus',
 		affinities: {
 			skillPotential: null,
@@ -33025,6 +32844,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 	},
 	{
 		name: 'Qing Niugai',
+		aliases: [
+			'Qing Niuguai'
+		],
 		affinities: {
 			skillPotential: {
 				Phys: 2,
@@ -35189,70 +35011,6 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		origin: null
 	},
 	{
-		name: 'Seiten Taisei',
-		aliases: [
-			'Qitian Dasheng'
-		],
-		affinities: {
-			skillPotential: null,
-			inherit: 'Phys'
-		},
-		arcana: 'Hunger',
-		race: 'Fury',
-		level: 68,
-		hp: null,
-		mp: null,
-		stats: {
-			st: 47,
-			vi: 40,
-			ma: 34,
-			ag: 48,
-			lu: 42
-		},
-		learnset: [
-			{
-				name: 'Brave Blade',
-				level: 0
-			},
-			{
-				name: 'Rebellion',
-				level: 0
-			},
-			{
-				name: 'Evade Elec',
-				level: 0
-			},
-			{
-				name: 'High Counter',
-				level: 69
-			},
-			{
-				name: 'Arms Master',
-				level: 71
-			},
-			{
-				name: 'Regenerate 3',
-				level: 74
-			},
-			{
-				name: 'Vorpal Blade',
-				level: 76
-			}
-		],
-		resistances: {
-			Phys: 'Resist',
-			Fire: 'Weak',
-			Wind: 'Resist'
-		},
-		game: 'p4',
-		alignment: {
-			major: 'Light',
-			minor: 'Chaos'
-		},
-		lore: 'Sun Wu Kong was supposedly born from a rock. He wreaked havoc and was punished by Buddha, but was eventually saved by a monk named Santsang.',
-		origin: 'Buddhist'
-	},
-	{
 		name: 'Seiten Taisei - P5',
 		aliases: [
 			'Seiten Taisei'
@@ -36026,6 +35784,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 	},
 	{
 		name: 'Shikome',
+		aliases: [
+			'Yomotsu-Shikome'
+		],
 		affinities: {
 			skillPotential: {
 				Phys: 0,
@@ -37723,7 +37484,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		origin: null
 	},
 	{
-		name: 'Susano-o - P5',
+		name: 'Susano-o - P4',
 		aliases: [
 			'Susano-o'
 		],
@@ -42568,6 +42329,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 	},
 	{
 		name: 'Wu Kong',
+		aliases: [
+			'Seiten Taisei',
+			'Qitian Dasheng'
+		],
 		affinities: {
 			skillPotential: {
 				Phys: 4,
@@ -42585,7 +42350,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			},
 			inherit: null
 		},
-		arcana: null,
+		arcana: 'Hunger',
 		race: 'Fury',
 		level: 57,
 		hp: 675,
@@ -42828,7 +42593,8 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 	{
 		name: 'Xuanwu',
 		aliases: [
-			'Genbu'
+			'Genbu',
+			'Gui Xian'
 		],
 		affinities: {
 			skillPotential: {
@@ -43081,6 +42847,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 	},
 	{
 		name: 'Yamata-no-Orochi',
+		aliases: [
+			'Orochi'
+		],
 		affinities: {
 			skillPotential: {
 				Phys: 4,
@@ -43804,62 +43573,6 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			minor: 'Law'
 		},
 		lore: 'Izanami sent them after Izanagi at Yomotsu Hirasaka, the entrance of Yomi, the Japanese land of shadows. The army of Ikusa is led by Yomotsu Shikome.',
-		origin: 'Japanese'
-	},
-	{
-		name: 'Yomotsu-Shikome',
-		affinities: {
-			skillPotential: null,
-			inherit: 'Ailment'
-		},
-		arcana: 'Fool',
-		race: 'Femme',
-		level: 2,
-		hp: null,
-		mp: null,
-		stats: {
-			st: 2,
-			vi: 7,
-			ma: 7,
-			ag: 11,
-			lu: 6
-		},
-		learnset: [
-			{
-				name: 'Poisma',
-				level: 0
-			},
-			{
-				name: 'Skewer',
-				level: 0
-			},
-			{
-				name: 'Evil Touch',
-				level: 0
-			},
-			{
-				name: 'Sukunda',
-				level: 9
-			},
-			{
-				name: 'Mudo',
-				level: 10
-			},
-			{
-				name: 'Ghastly Wail',
-				level: 11
-			}
-		],
-		resistances: {
-			Fire: 'Weak',
-			Ice: 'Resist'
-		},
-		game: 'p4',
-		alignment: {
-			major: 'Neutral',
-			minor: 'Chaos'
-		},
-		lore: 'A demoness in Japanese mythology that lives in Yomi, the netherworld. She is the first demon Izanami sends after Izanagi.',
 		origin: 'Japanese'
 	},
 	{
