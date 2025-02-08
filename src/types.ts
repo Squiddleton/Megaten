@@ -9,15 +9,15 @@ export interface AttackAilments {
 	/** Ailments the skill may inflict */
 	names: AilmentName[];
 	/** The percent chance of inflicting one of the ailments */
-	chance: number;
+	chance: number | 'Level-Based';
 }
 
 /** Ailments' names (adjusted for consistency with SMT5) */
-export type AilmentName = 'Bind' | 'Burn' | 'Charm' | 'Confusion' | 'Daze' | 'Death' | 'Despair' | 'Dizzy' | 'Down' | 'Enervate' | 'Exhaust' | 'Fear' | 'Freeze' | 'Hunger' | 'Mirage' | 'Mud' | 'Poison' | 'Rage' | 'Seal' | 'Shock' | 'Stun' | 'Shroud' | 'Sick' | 'Sleep';
+export type AilmentName = 'Bind' | 'Burn' | 'Charm' | 'Confusion' | 'Daze' | 'Death' | 'Despair' | 'Dizzy' | 'Down' | 'Enervate' | 'Exhaust' | 'Fear' | 'Freeze' | 'Hunger' | 'Mirage' | 'Mud' | 'Poison' | 'Rage' | 'Seal' | 'Shock' | 'Stone' | 'Stun' | 'Shroud' | 'Sick' | 'Sleep';
 /** An ailment's name or all ailments */
 export type OneOrAllAilments = AilmentName | 'All';
 /** Ailments that an AilDefensiveSkill instance protects against */
-export type AilDefensiveAilment = OneOrAllAilments | 'Confuse/Fear/Rage/Despair' | 'Poison/Bind/Sick/Daze' | 'Sleep/Confusion/Charm/Seal';
+export type AilDefensiveAilment = OneOrAllAilments | 'Confuse/Fear/Rage/Despair' | 'Poison/Bind/Sick/Daze' | 'Poison/Seal' | 'Sleep/Confusion/Charm/Seal';
 
 /** Resistances to ailments */
 export type AilResistance = 'Resist' | 'Null';
@@ -257,7 +257,7 @@ export type Stage = 1 | 2 | 3;
 export type SupportAutoEffect = Barrier | Buff | Charge;
 
 /** Flags for SupportSkill instances */
-export type SupportFlag = 'Cure Non-Special Ailments' | 'Reduces HP to 1' | 'Surrounded Only';
+export type SupportFlag = 'Cure Non-Special Ailments' | 'Reduce HP to 1' | 'Restore MP' | 'Surrounded Only';
 
 /** Buffs cast by TauntSkill instances */
 export type TauntBuff = SingleOrDoubleBuff | `Maximize ${Buff}`;

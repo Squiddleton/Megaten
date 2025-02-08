@@ -1,6 +1,6 @@
 import type { AnySkillData } from './skill.js';
 
-const skillData: Readonly<AnySkillData[]> = [
+const skillData: AnySkillData[] = [
 	{
 		name: '+15% EXP',
 		affinity: 'Passive',
@@ -393,6 +393,13 @@ const skillData: Readonly<AnySkillData[]> = [
 		description: 'Confirm affinities of enemies you have previously attacked.'
 	},
 	{
+		name: 'Analyze',
+		affinity: 'Special',
+		type: 'MISC',
+		cost: 2,
+		description: 'Displays info for 1 foe.'
+	},
+	{
 		name: 'Andalucia',
 		affinity: 'Phys',
 		type: 'ATTACK',
@@ -430,6 +437,13 @@ const skillData: Readonly<AnySkillData[]> = [
 			'Exhaust'
 		],
 		chance: 30
+	},
+	{
+		name: 'Anti-Curse',
+		affinity: 'Passive',
+		type: 'AILDEFENSIVE',
+		ailment: 'Poison/Seal',
+		resistance: 'Resist'
 	},
 	{
 		name: 'Antichthon',
@@ -481,6 +495,13 @@ const skillData: Readonly<AnySkillData[]> = [
 		},
 		range: 'One',
 		series: 'smt'
+	},
+	{
+		name: 'Arbitration',
+		affinity: 'Passive',
+		type: 'MISC',
+		cost: null,
+		description: 'Soothes an enraged demon.'
 	},
 	{
 		name: 'Arm Chopper',
@@ -824,6 +845,13 @@ const skillData: Readonly<AnySkillData[]> = [
 		series: 'smt'
 	},
 	{
+		name: 'Begging',
+		affinity: 'Special',
+		type: 'MISC',
+		cost: 0,
+		description: 'Requests Macca or Item.'
+	},
+	{
 		name: 'Berserker God',
 		affinity: 'Phys',
 		type: 'ATTACK',
@@ -839,6 +867,13 @@ const skillData: Readonly<AnySkillData[]> = [
 		},
 		range: 'One',
 		series: 'smt'
+	},
+	{
+		name: 'Beseech',
+		affinity: 'Special',
+		type: 'MISC',
+		cost: 0,
+		description: 'Recruits a demon higher level than the user.'
 	},
 	{
 		name: 'Bestial Bite',
@@ -862,6 +897,9 @@ const skillData: Readonly<AnySkillData[]> = [
 	},
 	{
 		name: 'Bind Voice',
+		aliases: [
+			'Binding Cry'
+		],
 		affinity: 'Ailment',
 		type: 'AILMENT',
 		range: 'One',
@@ -1101,7 +1139,7 @@ const skillData: Readonly<AnySkillData[]> = [
 			'Accuracy/Evasion': 1
 		},
 		flags: [
-			'Reduces HP to 1'
+			'Reduce HP to 1'
 		],
 		negate: false,
 		auto: []
@@ -1135,6 +1173,26 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'MISC',
 		cost: null,
 		description: 'Increases Critical Rate.'
+	},
+	{
+		name: 'Boogie-Woogie',
+		affinity: 'Phys',
+		type: 'ATTACK',
+		unique: true,
+		accuracy: 97,
+		cost: {
+			stat: 'MP',
+			amount: 3
+		},
+		max: 4,
+		min: 4,
+		power: {
+			amount: 40,
+			display: 'Weak',
+			type: 'Physical'
+		},
+		range: 'One',
+		series: 'smt'
 	},
 	{
 		name: 'Boon Boost',
@@ -1272,6 +1330,27 @@ const skillData: Readonly<AnySkillData[]> = [
 		unique: null,
 		range: 'Party',
 		cost: 16
+	},
+	{
+		name: 'Brutal Slash',
+		affinity: 'Phys',
+		type: 'ATTACK',
+		accuracy: 75,
+		cost: {
+			stat: 'HP',
+			amount: 13
+		},
+		flags: [
+			'+20% Crit Rate',
+			'HP Dependent'
+		],
+		power: {
+			amount: 170,
+			display: 'Heavy',
+			type: 'Physical'
+		},
+		range: 'One',
+		series: 'smt'
 	},
 	{
 		name: 'Bufu',
@@ -1516,6 +1595,34 @@ const skillData: Readonly<AnySkillData[]> = [
 		buffs: [
 			'Attack'
 		]
+	},
+	{
+		name: 'Chaos Blade',
+		affinity: 'Phys',
+		type: 'ATTACK',
+		accuracy: 99,
+		ailments: {
+			names: [
+				'Confusion'
+			],
+			chance: 30
+		},
+		cost: {
+			stat: 'HP',
+			amount: 32
+		},
+		flags: [
+			'HP Dependent'
+		],
+		max: 5,
+		min: 2,
+		power: {
+			amount: 100,
+			display: 'Weak',
+			type: 'Physical'
+		},
+		range: 'Random',
+		series: 'smt'
 	},
 	{
 		name: 'Chaotic Will',
@@ -2343,6 +2450,13 @@ const skillData: Readonly<AnySkillData[]> = [
 		series: 'smt'
 	},
 	{
+		name: 'Detain',
+		affinity: 'Passive',
+		type: 'MISC',
+		cost: null,
+		description: 'Prevents the demon from leaving while talking.'
+	},
+	{
 		name: 'Dia',
 		affinity: 'Recovery',
 		type: 'RECOVERY',
@@ -2644,6 +2758,13 @@ const skillData: Readonly<AnySkillData[]> = [
 		description: 'Greatly increases Accuracy.'
 	},
 	{
+		name: 'Drain Attack',
+		affinity: 'Passive',
+		type: 'MISC',
+		cost: null,
+		description: 'User\'s basic attack drains HP but has a reduced Critical Rate.'
+	},
+	{
 		name: 'Drain Dark',
 		aliases: [
 			'Drain Curse'
@@ -2839,6 +2960,26 @@ const skillData: Readonly<AnySkillData[]> = [
 			'Mirage'
 		],
 		chance: 75
+	},
+	{
+		name: 'E & I',
+		affinity: 'Phys',
+		type: 'ATTACK',
+		unique: true,
+		accuracy: 97,
+		cost: {
+			stat: 'MP',
+			amount: 3
+		},
+		max: 4,
+		min: 4,
+		power: {
+			amount: 40,
+			display: 'Weak',
+			type: 'Physical'
+		},
+		range: 'One',
+		series: 'smt'
 	},
 	{
 		name: 'Earthquake',
@@ -3151,6 +3292,27 @@ const skillData: Readonly<AnySkillData[]> = [
 		flags: [
 			'Attack Down'
 		]
+	},
+	{
+		name: 'Enter Yoshitsune',
+		affinity: 'Phys',
+		type: 'ATTACK',
+		unique: true,
+		accuracy: 200,
+		cost: {
+			stat: 'HP',
+			amount: 9
+		},
+		flags: [
+			'+30% Crit Rate'
+		],
+		power: {
+			amount: 200,
+			display: 'Heavy',
+			type: 'Physical'
+		},
+		range: 'One',
+		series: 'smt'
 	},
 	{
 		name: 'Escape Route',
@@ -4425,6 +4587,9 @@ const skillData: Readonly<AnySkillData[]> = [
 	},
 	{
 		name: 'Growth 3',
+		aliases: [
+			'Watchful'
+		],
 		affinity: 'Passive',
 		type: 'POSTBATTLE',
 		amount: 100,
@@ -4512,6 +4677,13 @@ const skillData: Readonly<AnySkillData[]> = [
 		},
 		range: 'All',
 		series: 'smt'
+	},
+	{
+		name: 'Haggle',
+		affinity: 'Passive',
+		type: 'MISC',
+		cost: null,
+		description: 'Requests the target to lower bribe cost.'
 	},
 	{
 		name: 'Hailstorm of God',
@@ -5169,6 +5341,24 @@ const skillData: Readonly<AnySkillData[]> = [
 		criteria: 'Weakness/Critical'
 	},
 	{
+		name: 'Hitokoto Storm',
+		affinity: 'Force',
+		type: 'ATTACK',
+		unique: true,
+		accuracy: 98,
+		cost: {
+			stat: 'MP',
+			amount: 25
+		},
+		power: {
+			amount: 155,
+			display: 'Heavy',
+			type: 'Magic'
+		},
+		range: 'All',
+		series: 'smt'
+	},
+	{
 		name: 'Holy Benevolence',
 		affinity: 'Recovery',
 		type: 'RECOVERY',
@@ -5204,6 +5394,21 @@ const skillData: Readonly<AnySkillData[]> = [
 		amount: '25%',
 		criteria: 'Turn Start',
 		stat: 'HP'
+	},
+	{
+		name: 'Holy Star',
+		affinity: 'Support',
+		type: 'SUPPORT',
+		unique: true,
+		range: 'Party',
+		cost: 10,
+		buffs: {
+			Attack: null,
+			Defense: null,
+			'Accuracy/Evasion': null
+		},
+		negate: true,
+		auto: []
 	},
 	{
 		name: 'Holy Whisper',
@@ -5498,6 +5703,13 @@ const skillData: Readonly<AnySkillData[]> = [
 		unique: null
 	},
 	{
+		name: 'Intimidate',
+		affinity: 'Passive',
+		type: 'MISC',
+		cost: null,
+		description: 'Urges a demon lower level or younger than the user to accept the deal.'
+	},
+	{
 		name: 'Invigorate 1',
 		affinity: 'Passive',
 		type: 'REGEN',
@@ -5642,6 +5854,24 @@ const skillData: Readonly<AnySkillData[]> = [
 		series: 'smt'
 	},
 	{
+		name: 'Jiraiya Dance',
+		affinity: 'Almighty',
+		type: 'ATTACK',
+		unique: true,
+		accuracy: 98,
+		cost: {
+			stat: 'MP',
+			amount: 40
+		},
+		power: {
+			amount: 170,
+			display: 'Heavy',
+			type: 'Magic'
+		},
+		range: 'All',
+		series: 'smt'
+	},
+	{
 		name: 'Judgement',
 		affinity: 'Light',
 		type: 'SET',
@@ -5690,6 +5920,14 @@ const skillData: Readonly<AnySkillData[]> = [
 		},
 		range: 'Random',
 		series: 'smt'
+	},
+	{
+		name: 'Kamikaze',
+		affinity: 'Almighty',
+		type: 'MISC',
+		unique: null,
+		cost: 0,
+		description: 'Medium Almighty damage to 1 foe. User dies.'
 	},
 	{
 		name: 'Kamui Miracle',
@@ -5751,6 +5989,13 @@ const skillData: Readonly<AnySkillData[]> = [
 		},
 		range: 'One',
 		series: 'smt'
+	},
+	{
+		name: 'Kidnap',
+		affinity: 'Special',
+		type: 'MISC',
+		cost: 0,
+		description: 'Recruits a demon younger than the user.'
 	},
 	{
 		name: 'Killing Wind',
@@ -5931,6 +6176,9 @@ const skillData: Readonly<AnySkillData[]> = [
 	},
 	{
 		name: 'Life Drain',
+		aliases: [
+			'Deathtouch'
+		],
 		affinity: 'Almighty',
 		type: 'ATTACK',
 		accuracy: 98,
@@ -6004,6 +6252,13 @@ const skillData: Readonly<AnySkillData[]> = [
 		]
 	},
 	{
+		name: 'Liftoma',
+		affinity: 'Special',
+		type: 'MISC',
+		cost: 10,
+		description: 'Levitates party to avoid damage surfaces until next new Kagutsuchi phase.'
+	},
+	{
 		name: 'Lightning Pulse',
 		affinity: 'Passive',
 		type: 'SMTCOUNTER',
@@ -6032,6 +6287,13 @@ const skillData: Readonly<AnySkillData[]> = [
 		},
 		range: 'All',
 		series: 'smt'
+	},
+	{
+		name: 'Lightoma',
+		affinity: 'Special',
+		type: 'MISC',
+		cost: 10,
+		description: 'Illuminates dark areas until next new Kagutsuchi phase.'
 	},
 	{
 		name: 'Light Amp',
@@ -7635,6 +7897,13 @@ const skillData: Readonly<AnySkillData[]> = [
 		amount: null
 	},
 	{
+		name: 'Might',
+		affinity: 'Passive',
+		type: 'MISC',
+		cost: null,
+		description: 'Triples Critical Rate of user\'s basic attack.'
+	},
+	{
 		name: 'Mighty Cleave',
 		affinity: 'Phys',
 		type: 'ATTACK',
@@ -7795,6 +8064,30 @@ const skillData: Readonly<AnySkillData[]> = [
 		series: 'smt'
 	},
 	{
+		name: 'Mishaguji Raiden',
+		affinity: 'Elec',
+		type: 'ATTACK',
+		unique: true,
+		accuracy: 98,
+		ailments: {
+			names: [
+				'Shock'
+			],
+			chance: 15
+		},
+		cost: {
+			stat: 'MP',
+			amount: 25
+		},
+		power: {
+			amount: 155,
+			display: 'Heavy',
+			type: 'Magic'
+		},
+		range: 'All',
+		series: 'smt'
+	},
+	{
 		name: 'Mist Rush',
 		affinity: 'Phys',
 		type: 'ATTACK',
@@ -7817,6 +8110,29 @@ const skillData: Readonly<AnySkillData[]> = [
 			type: 'Physical'
 		},
 		range: 'Random',
+		series: 'smt'
+	},
+	{
+		name: 'Mokoi Boomerang',
+		affinity: 'Phys',
+		type: 'ATTACK',
+		accuracy: 108,
+		ailments: {
+			names: [
+				'Confusion'
+			],
+			chance: 30
+		},
+		cost: {
+			stat: 'MP',
+			amount: 10
+		},
+		power: {
+			amount: 125,
+			display: 'Medium',
+			type: 'Physical'
+		},
+		range: 'All',
 		series: 'smt'
 	},
 	{
@@ -8187,6 +8503,23 @@ const skillData: Readonly<AnySkillData[]> = [
 		series: 'persona'
 	},
 	{
+		name: 'Needle Rush',
+		affinity: 'Phys',
+		type: 'ATTACK',
+		accuracy: 98,
+		cost: {
+			stat: 'HP',
+			amount: 10
+		},
+		power: {
+			amount: 125,
+			display: 'Medium',
+			type: 'Physical'
+		},
+		range: 'One',
+		series: 'smt'
+	},
+	{
 		name: 'Needle Shot',
 		affinity: 'Gun',
 		type: 'ATTACK',
@@ -8273,6 +8606,14 @@ const skillData: Readonly<AnySkillData[]> = [
 			'Enervate'
 		],
 		amount: null
+	},
+	{
+		name: 'Never Yield',
+		affinity: 'Passive',
+		type: 'ENDURE',
+		unique: true,
+		amount: 1,
+		criteria: null
 	},
 	{
 		name: 'Nihil Claw',
@@ -8777,6 +9118,17 @@ const skillData: Readonly<AnySkillData[]> = [
 		series: 'smt'
 	},
 	{
+		name: 'Petradi',
+		affinity: 'Recovery',
+		type: 'RECOVERY',
+		range: 'Ally',
+		cost: 10,
+		ailments: [
+			'Stone'
+		],
+		amount: null
+	},
+	{
 		name: 'Phantom Show',
 		affinity: 'Ailment',
 		type: 'AILMENT',
@@ -8888,6 +9240,9 @@ const skillData: Readonly<AnySkillData[]> = [
 	},
 	{
 		name: 'Poison Claw',
+		aliases: [
+			'Venom Claw'
+		],
 		affinity: 'Phys',
 		type: 'ATTACK',
 		accuracy: 98,
@@ -9123,6 +9478,23 @@ const skillData: Readonly<AnySkillData[]> = [
 		},
 		range: 'One',
 		series: 'smt'
+	},
+	{
+		name: 'Provoke',
+		affinity: 'Support',
+		type: 'SUPPORT',
+		unique: true,
+		range: 'All Foes',
+		cost: 65,
+		buffs: {
+			Attack: 2,
+			Defense: -2
+		},
+		flags: [
+			'Restore MP'
+		],
+		negate: false,
+		auto: []
 	},
 	{
 		name: 'Psi',
@@ -9433,6 +9805,14 @@ const skillData: Readonly<AnySkillData[]> = [
 		series: 'smt'
 	},
 	{
+		name: 'Raidou the Eternal',
+		affinity: 'Passive',
+		type: 'MISC',
+		unique: true,
+		cost: null,
+		description: 'Increases user\'s damage by 50%.'
+	},
+	{
 		name: 'Rainy Death',
 		affinity: 'Phys',
 		type: 'ATTACK',
@@ -9513,11 +9893,47 @@ const skillData: Readonly<AnySkillData[]> = [
 		series: 'smt'
 	},
 	{
+		name: 'Raptor Guardian',
+		affinity: 'Support',
+		type: 'SUPPORT',
+		unique: true,
+		range: 'Party',
+		cost: 10,
+		buffs: {
+			Attack: null,
+			Defense: null,
+			'Accuracy/Evasion': null
+		},
+		negate: true,
+		auto: []
+	},
+	{
 		name: 'Rebellion',
 		affinity: 'Support',
 		type: 'CRIT',
 		range: 'Ally',
 		cost: 5
+	},
+	{
+		name: 'Rebellion - SMT',
+		affinity: 'Phys',
+		type: 'ATTACK',
+		unique: true,
+		accuracy: 200,
+		cost: {
+			stat: 'HP',
+			amount: 9
+		},
+		flags: [
+			'+30% Crit Rate'
+		],
+		power: {
+			amount: 200,
+			display: 'Heavy',
+			type: 'Physical'
+		},
+		range: 'One',
+		series: 'smt'
 	},
 	{
 		name: 'Rebellion Blade',
@@ -10076,6 +10492,30 @@ const skillData: Readonly<AnySkillData[]> = [
 		unique: null
 	},
 	{
+		name: 'Roundtrip',
+		affinity: 'Elec',
+		type: 'ATTACK',
+		unique: true,
+		accuracy: 98,
+		ailments: {
+			names: [
+				'Shock'
+			],
+			chance: 15
+		},
+		cost: {
+			stat: 'MP',
+			amount: 25
+		},
+		power: {
+			amount: 155,
+			display: 'Heavy',
+			type: 'Magic'
+		},
+		range: 'All',
+		series: 'smt'
+	},
+	{
 		name: 'Ruinous Thunder',
 		affinity: 'Elec',
 		type: 'ATTACK',
@@ -10099,6 +10539,14 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'MISC',
 		cost: 18,
 		description: 'Summons an ally demon.'
+	},
+	{
+		name: 'Sacrifice',
+		affinity: 'Almighty',
+		type: 'MISC',
+		unique: null,
+		cost: 0,
+		description: 'Heavy strength-based Almighty damage to random foes. User dies.'
 	},
 	{
 		name: 'Sacrifice of Clay',
@@ -10216,7 +10664,17 @@ const skillData: Readonly<AnySkillData[]> = [
 		series: 'smt'
 	},
 	{
+		name: 'Scout',
+		affinity: 'Special',
+		type: 'MISC',
+		cost: 0,
+		description: 'Recruits a female demon younger than the user.'
+	},
+	{
 		name: 'Scratch Dance',
+		aliases: [
+			'Berserk'
+		],
 		affinity: 'Phys',
 		type: 'ATTACK',
 		accuracy: 98,
@@ -10320,7 +10778,7 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'MISC',
 		unique: null,
 		cost: null,
-		description: 'Medium Almighty damage to all. User dies.'
+		description: 'Medium Almighty damage to all foes. User dies.'
 	},
 	{
 		name: 'Self-Righteous Vow',
@@ -10476,6 +10934,24 @@ const skillData: Readonly<AnySkillData[]> = [
 			type: 'Magic'
 		},
 		range: 'Random',
+		series: 'smt'
+	},
+	{
+		name: 'Showtime',
+		affinity: 'Almighty',
+		type: 'ATTACK',
+		unique: true,
+		accuracy: 98,
+		cost: {
+			stat: 'MP',
+			amount: 40
+		},
+		power: {
+			amount: 170,
+			display: 'Heavy',
+			type: 'Magic'
+		},
+		range: 'All',
 		series: 'smt'
 	},
 	{
@@ -10685,6 +11161,14 @@ const skillData: Readonly<AnySkillData[]> = [
 		series: 'smt'
 	},
 	{
+		name: 'Son\'s Oath',
+		affinity: 'Passive',
+		type: 'MISC',
+		unique: true,
+		cost: null,
+		description: 'Increases user\'s damage by 50%.'
+	},
+	{
 		name: 'Sonic Boom',
 		affinity: 'Force',
 		type: 'ATTACK',
@@ -10807,6 +11291,9 @@ const skillData: Readonly<AnySkillData[]> = [
 	},
 	{
 		name: 'Spirit Drain',
+		aliases: [
+			'Mana Drain'
+		],
 		affinity: 'Almighty',
 		type: 'ATTACK',
 		accuracy: 98,
@@ -10890,6 +11377,33 @@ const skillData: Readonly<AnySkillData[]> = [
 		description: 'Recover 10% HP after battle (party).'
 	},
 	{
+		name: 'Stasis Blade',
+		affinity: 'Phys',
+		type: 'ATTACK',
+		accuracy: 50,
+		ailments: {
+			names: [
+				'Bind'
+			],
+			chance: 65
+		},
+		cost: {
+			stat: 'HP',
+			amount: 32
+		},
+		flags: [
+			'+30% Crit Rate',
+			'HP Dependent'
+		],
+		power: {
+			amount: 200,
+			display: 'Heavy',
+			type: 'Physical'
+		},
+		range: 'One',
+		series: 'smt'
+	},
+	{
 		name: 'Steel Needle',
 		affinity: 'Phys',
 		type: 'ATTACK',
@@ -10905,6 +11419,30 @@ const skillData: Readonly<AnySkillData[]> = [
 		min: 1,
 		power: {
 			amount: 75,
+			display: 'Medium',
+			type: 'Physical'
+		},
+		range: 'One',
+		series: 'smt'
+	},
+	{
+		name: 'Stinger',
+		affinity: 'Phys',
+		type: 'ATTACK',
+		unique: true,
+		accuracy: 97,
+		ailments: {
+			names: [
+				'Death'
+			],
+			chance: 'Level-Based'
+		},
+		cost: {
+			stat: 'HP',
+			amount: 12
+		},
+		power: {
+			amount: 180,
 			display: 'Medium',
 			type: 'Physical'
 		},
@@ -10934,6 +11472,13 @@ const skillData: Readonly<AnySkillData[]> = [
 		},
 		range: 'One',
 		series: 'persona'
+	},
+	{
+		name: 'Stone Hunt',
+		affinity: 'Special',
+		type: 'MISC',
+		cost: 0,
+		description: 'Requests gem.'
 	},
 	{
 		name: 'Stormcaller Song',
@@ -10971,6 +11516,17 @@ const skillData: Readonly<AnySkillData[]> = [
 		},
 		range: 'One',
 		series: 'smt'
+	},
+	{
+		name: 'Stun Gaze',
+		affinity: 'Ailment',
+		type: 'AILMENT',
+		range: 'One',
+		cost: 5,
+		ailments: [
+			'Bind'
+		],
+		chance: 40
 	},
 	{
 		name: 'Stun Needles',
@@ -11258,6 +11814,30 @@ const skillData: Readonly<AnySkillData[]> = [
 		type: 'MISC',
 		cost: null,
 		description: 'Increases duration of Kaja-type buff skills when landing a Critical.'
+	},
+	{
+		name: 'Tekisatsu',
+		affinity: 'Phys',
+		type: 'ATTACK',
+		unique: true,
+		accuracy: 97,
+		ailments: {
+			names: [
+				'Death'
+			],
+			chance: 'Level-Based'
+		},
+		cost: {
+			stat: 'HP',
+			amount: 12
+		},
+		power: {
+			amount: 180,
+			display: 'Medium',
+			type: 'Physical'
+		},
+		range: 'One',
+		series: 'smt'
 	},
 	{
 		name: 'Tempest Slash',
@@ -11771,6 +12351,32 @@ const skillData: Readonly<AnySkillData[]> = [
 		series: 'persona'
 	},
 	{
+		name: 'Twosome Time',
+		aliases: [
+			'Bullet Time'
+		],
+		affinity: 'Phys',
+		type: 'ATTACK',
+		accuracy: 108,
+		ailments: {
+			names: [
+				'Confusion'
+			],
+			chance: 30
+		},
+		cost: {
+			stat: 'MP',
+			amount: 10
+		},
+		power: {
+			amount: 125,
+			display: 'Medium',
+			type: 'Physical'
+		},
+		range: 'All',
+		series: 'smt'
+	},
+	{
 		name: 'Tyrant\'s Mind',
 		affinity: 'Passive',
 		type: 'BOOST',
@@ -11880,6 +12486,35 @@ const skillData: Readonly<AnySkillData[]> = [
 			'Repel Phys',
 			'Repel Magic'
 		]
+	},
+	{
+		name: 'Venom Bite',
+		aliases: [
+			'Poisonous Bite'
+		],
+		affinity: 'Phys',
+		type: 'ATTACK',
+		accuracy: 75,
+		ailments: {
+			names: [
+				'Poison'
+			],
+			chance: 40
+		},
+		cost: {
+			stat: 'HP',
+			amount: 18
+		},
+		flags: [
+			'+20% Crit Rate'
+		],
+		power: {
+			amount: 150,
+			display: 'Medium',
+			type: 'Physical'
+		},
+		range: 'One',
+		series: 'smt'
 	},
 	{
 		name: 'Venom Chaser',
@@ -12130,6 +12765,24 @@ const skillData: Readonly<AnySkillData[]> = [
 		power: {
 			amount: 150,
 			display: 'Weak',
+			type: 'Magic'
+		},
+		range: 'All',
+		series: 'smt'
+	},
+	{
+		name: 'Whirlwind',
+		affinity: 'Force',
+		type: 'ATTACK',
+		unique: true,
+		accuracy: 98,
+		cost: {
+			stat: 'MP',
+			amount: 25
+		},
+		power: {
+			amount: 155,
+			display: 'Heavy',
 			type: 'Magic'
 		},
 		range: 'All',

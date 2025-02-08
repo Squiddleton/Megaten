@@ -4593,7 +4593,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 				level: 0
 			},
 			{
-				name: 'Watchful',
+				name: 'Growth 3',
 				level: 85
 			},
 			{
@@ -6168,7 +6168,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 				level: 0
 			},
 			{
-				name: 'Last Resort',
+				name: 'Self-destruct',
 				level: 0
 			},
 			{
@@ -6180,7 +6180,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 				level: 18
 			},
 			{
-				name: 'Mana Drain',
+				name: 'Spirit Drain',
 				level: 19
 			},
 			{
@@ -7794,7 +7794,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 				level: 22
 			},
 			{
-				name: 'Last Resort',
+				name: 'Self-destruct',
 				level: 23
 			},
 			{
@@ -9249,7 +9249,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 				level: 0
 			},
 			{
-				name: 'Rebellion',
+				name: 'Rebellion - SMT',
 				level: 0
 			},
 			{
@@ -26324,7 +26324,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 				level: 36
 			},
 			{
-				name: 'Berserk',
+				name: 'Scratch Dance',
 				level: 37
 			},
 			{
@@ -28723,7 +28723,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 				level: 71
 			},
 			{
-				name: 'Mana Drain',
+				name: 'Spirit Drain',
 				level: 72
 			},
 			{
@@ -29342,7 +29342,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 				level: 0
 			},
 			{
-				name: 'Berserk',
+				name: 'Scratch Dance',
 				level: 0
 			},
 			{
@@ -31906,11 +31906,11 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		},
 		learnset: [
 			{
-				name: 'Mana Drain',
+				name: 'Spirit Drain',
 				level: 0
 			},
 			{
-				name: 'Last Resort',
+				name: 'Self-destruct',
 				level: 0
 			},
 			{
@@ -32844,11 +32844,11 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		},
 		learnset: [
 			{
-				name: 'Binding Cry',
+				name: 'Bind Voice',
 				level: 0
 			},
 			{
-				name: 'Watchful',
+				name: 'Growth 3',
 				level: 0
 			},
 			{
@@ -34759,7 +34759,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		},
 		learnset: [
 			{
-				name: 'Berserk',
+				name: 'Scratch Dance',
 				level: 0
 			},
 			{
@@ -35690,7 +35690,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 				level: 53
 			},
 			{
-				name: 'Mana Drain',
+				name: 'Spirit Drain',
 				level: 54
 			},
 			{
@@ -40266,7 +40266,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 				level: 39
 			},
 			{
-				name: 'Berserk',
+				name: 'Scratch Dance',
 				level: 40
 			},
 			{
@@ -42415,11 +42415,11 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 				level: 3
 			},
 			{
-				name: 'Deathtouch',
+				name: 'Life Drain',
 				level: 4
 			},
 			{
-				name: 'Last Resort',
+				name: 'Self-destruct',
 				level: 5
 			},
 			{
@@ -42912,7 +42912,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		},
 		learnset: [
 			{
-				name: 'Deathtouch',
+				name: 'Life Drain',
 				level: 0
 			},
 			{
@@ -42932,7 +42932,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 				level: 20
 			},
 			{
-				name: 'Venom Claw',
+				name: 'Poison Claw',
 				level: 21
 			},
 			{
