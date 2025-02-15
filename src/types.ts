@@ -91,7 +91,7 @@ export interface DemonAffinities<PersonaBased extends boolean = boolean> {
 export type DemonOrigin = 'Aboriginal' | 'Abrahamic' | 'African' | 'Arabian' | 'ATLUS Original' | 'Balinese' | 'Buddhist' | 'Buryat' | 'Canaanite' | 'Celtic' | 'Chinese' | 'Egyptian' | 'European' | 'Filipino' | 'Greco-Roman' | 'Haitian' | 'Hindu' | 'Japanese' | 'Lithuanian' | 'Lovecraftian' | 'Historical' | 'Mesopotamian' | 'Modern Fiction' | 'Norse' | 'North American' | 'Slavic' | 'South American' | 'Universal' | 'Zoroastrian';
 
 /** A demon's ailment and affinity resistances */
-export type DemonResistances = Partial<Record<DamagingAffinity | AilmentName, Resistance>>;
+export type DemonResistances = Partial<Record<DamagingAffinity, Resistance> & Record<AilmentName, 'Weak' | AilResistance>>;
 
 /** A skill that a demon learns via leveling up */
 export interface DemonSkill {
