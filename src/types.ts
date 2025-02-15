@@ -1,6 +1,19 @@
 /** A utility type for shortening ternary typings */
 export type If<Bool extends boolean, ValueIfTrue, ValueIfFalse> = Bool extends true ? ValueIfTrue : ValueIfFalse;
 
+/** Buffs, debuffs, and negation that skills may cast */
+export enum BuffValue {
+	Maximize = 4,
+	GreatlyIncrease = 2,
+	Increase = 1,
+	Decrease = -1,
+	GreatlyDecrease = -2,
+	Minimize = -4,
+	NegateBuffs = -5,
+	NegateDebuffs = -6,
+	NegateAll = -7
+}
+
 /** Criteria for AilBoostSkill instances taking effect */
 export type AilBoostCriteria = 'Rain/Snow';
 
@@ -264,6 +277,6 @@ export type RecoveryTarget = 'One Ally' | 'One Dead Stocked Ally' | 'One Stocked
 /** Demons a SetSkill instance targets */
 export type SetTarget = 'One Foe' | 'All Foes';
 /** Demons a SupportSkill instance targets */
-export type SupportTarget = 'Self' | 'One Ally' | 'All Allies' | 'One Foe' | 'All Foes';
+export type SupportTarget = 'Self' | 'One Ally' | 'All Allies' | 'One Foe' | 'All Foes' | 'All';
 /** Demons a SusceptibilitySkill instance targets */
 export type SusceptibilityTarget = 'One Foe' | 'All';

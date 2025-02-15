@@ -1,4 +1,5 @@
 import type { AnySkillData } from './skill.js';
+import { BuffValue } from './types.js';
 
 const skillData: AnySkillData[] = [
 	{
@@ -127,8 +128,8 @@ const skillData: AnySkillData[] = [
 		target: 'All Foes',
 		cost: 65,
 		buffs: {
-			Defense: -1,
-			'Accuracy/Evasion': -1
+			Defense: BuffValue.Decrease,
+			'Accuracy/Evasion': BuffValue.Decrease
 		},
 		negate: false,
 		auto: []
@@ -1143,9 +1144,9 @@ const skillData: AnySkillData[] = [
 		target: 'Self',
 		cost: 25,
 		buffs: {
-			Attack: 1,
-			Defense: 1,
-			'Accuracy/Evasion': 1
+			Attack: BuffValue.Increase,
+			Defense: BuffValue.Increase,
+			'Accuracy/Evasion': BuffValue.Increase
 		},
 		flags: [
 			'Reduce HP to 1'
@@ -1553,8 +1554,8 @@ const skillData: AnySkillData[] = [
 		target: 'All Allies',
 		cost: 50,
 		buffs: {
-			Defense: 1,
-			'Accuracy/Evasion': 1
+			Defense: BuffValue.Increase,
+			'Accuracy/Evasion': BuffValue.Increase
 		},
 		negate: false,
 		auto: []
@@ -1715,9 +1716,9 @@ const skillData: AnySkillData[] = [
 		target: 'All Foes',
 		cost: 90,
 		buffs: {
-			Attack: -1,
-			Defense: -1,
-			'Accuracy/Evasion': -1
+			Attack: BuffValue.Decrease,
+			Defense: BuffValue.Decrease,
+			'Accuracy/Evasion': BuffValue.Decrease
 		},
 		negate: false,
 		auto: []
@@ -1791,9 +1792,9 @@ const skillData: AnySkillData[] = [
 		target: 'All Allies',
 		cost: 60,
 		buffs: {
-			Attack: 1,
-			Defense: 1,
-			'Accuracy/Evasion': 1
+			Attack: BuffValue.Increase,
+			Defense: BuffValue.Increase,
+			'Accuracy/Evasion': BuffValue.Increase
 		},
 		negate: false,
 		auto: []
@@ -2368,9 +2369,9 @@ const skillData: AnySkillData[] = [
 		target: 'All Foes',
 		cost: 150,
 		buffs: {
-			Attack: -1,
-			Defense: -1,
-			'Accuracy/Evasion': -1
+			Attack: BuffValue.Decrease,
+			Defense: BuffValue.Decrease,
+			'Accuracy/Evasion': BuffValue.Decrease
 		},
 		negate: false,
 		auto: []
@@ -2407,9 +2408,9 @@ const skillData: AnySkillData[] = [
 		target: 'All Foes',
 		cost: 40,
 		buffs: {
-			Attack: null,
-			Defense: null,
-			'Accuracy/Evasion': null
+			Attack: BuffValue.NegateBuffs,
+			Defense: BuffValue.NegateBuffs,
+			'Accuracy/Evasion': BuffValue.NegateBuffs
 		},
 		negate: true,
 		auto: []
@@ -2421,9 +2422,9 @@ const skillData: AnySkillData[] = [
 		target: 'All Allies',
 		cost: 40,
 		buffs: {
-			Attack: null,
-			Defense: null,
-			'Accuracy/Evasion': null
+			Attack: BuffValue.NegateDebuffs,
+			Defense: BuffValue.NegateDebuffs,
+			'Accuracy/Evasion': BuffValue.NegateDebuffs
 		},
 		negate: true,
 		auto: []
@@ -3890,8 +3891,8 @@ const skillData: AnySkillData[] = [
 		target: 'All Foes',
 		cost: 65,
 		buffs: {
-			Attack: -1,
-			'Accuracy/Evasion': -1
+			Attack: BuffValue.Decrease,
+			'Accuracy/Evasion': BuffValue.Decrease
 		},
 		negate: false,
 		auto: []
@@ -4234,7 +4235,7 @@ const skillData: AnySkillData[] = [
 		target: 'All Allies',
 		cost: 20,
 		buffs: {
-			'Accuracy/Evasion': 1
+			'Accuracy/Evasion': BuffValue.Increase
 		},
 		negate: false,
 		auto: [
@@ -4946,9 +4947,9 @@ const skillData: AnySkillData[] = [
 		target: 'One Ally',
 		cost: 30,
 		buffs: {
-			Attack: 1,
-			Defense: 1,
-			'Accuracy/Evasion': 1
+			Attack: BuffValue.Increase,
+			Defense: BuffValue.Increase,
+			'Accuracy/Evasion': BuffValue.Increase
 		},
 		negate: false,
 		auto: []
@@ -5419,9 +5420,9 @@ const skillData: AnySkillData[] = [
 		target: 'One Foe',
 		cost: 0,
 		buffs: {
-			Attack: -4,
-			Defense: -4,
-			'Accuracy/Evasion': -4
+			Attack: BuffValue.Minimize,
+			Defense: BuffValue.Minimize,
+			'Accuracy/Evasion': BuffValue.Minimize
 		},
 		negate: false,
 		auto: []
@@ -5443,9 +5444,9 @@ const skillData: AnySkillData[] = [
 		target: 'All Allies',
 		cost: 10,
 		buffs: {
-			Attack: null,
-			Defense: null,
-			'Accuracy/Evasion': null
+			Attack: BuffValue.NegateDebuffs,
+			Defense: BuffValue.NegateDebuffs,
+			'Accuracy/Evasion': BuffValue.NegateDebuffs
 		},
 		negate: true,
 		auto: []
@@ -5487,7 +5488,7 @@ const skillData: AnySkillData[] = [
 		target: 'Self',
 		cost: 0,
 		buffs: {
-			Attack: 4
+			Attack: BuffValue.Maximize
 		},
 		negate: false,
 		auto: []
@@ -5509,9 +5510,9 @@ const skillData: AnySkillData[] = [
 		target: 'All Allies',
 		cost: 90,
 		buffs: {
-			Attack: 1,
-			Defense: 1,
-			'Accuracy/Evasion': 1
+			Attack: BuffValue.Increase,
+			Defense: BuffValue.Increase,
+			'Accuracy/Evasion': BuffValue.Increase
 		},
 		negate: false,
 		auto: []
@@ -5714,9 +5715,9 @@ const skillData: AnySkillData[] = [
 		target: 'One Ally',
 		cost: 50,
 		buffs: {
-			Attack: 2,
-			Defense: 2,
-			'Accuracy/Evasion': 2
+			Attack: BuffValue.GreatlyIncrease,
+			Defense: BuffValue.GreatlyIncrease,
+			'Accuracy/Evasion': BuffValue.GreatlyIncrease
 		},
 		negate: false,
 		auto: []
@@ -6603,9 +6604,9 @@ const skillData: AnySkillData[] = [
 		target: 'All Allies',
 		cost: 150,
 		buffs: {
-			Attack: 1,
-			Defense: 1,
-			'Accuracy/Evasion': 1
+			Attack: BuffValue.Increase,
+			Defense: BuffValue.Increase,
+			'Accuracy/Evasion': BuffValue.Increase
 		},
 		negate: false,
 		auto: []
@@ -7450,7 +7451,7 @@ const skillData: AnySkillData[] = [
 		target: 'All Allies',
 		cost: 30,
 		buffs: {
-			Defense: 1
+			Defense: BuffValue.Increase
 		},
 		negate: false,
 		auto: []
@@ -7462,7 +7463,7 @@ const skillData: AnySkillData[] = [
 		target: 'All Foes',
 		cost: 30,
 		buffs: {
-			Defense: -1
+			Defense: BuffValue.Decrease
 		},
 		negate: false,
 		auto: []
@@ -7529,7 +7530,7 @@ const skillData: AnySkillData[] = [
 		target: 'All Allies',
 		cost: 30,
 		buffs: {
-			'Accuracy/Evasion': 1
+			'Accuracy/Evasion': BuffValue.Increase
 		},
 		negate: false,
 		auto: []
@@ -7541,7 +7542,7 @@ const skillData: AnySkillData[] = [
 		target: 'All Foes',
 		cost: 30,
 		buffs: {
-			'Accuracy/Evasion': -1
+			'Accuracy/Evasion': BuffValue.Decrease
 		},
 		negate: false,
 		auto: []
@@ -7553,7 +7554,7 @@ const skillData: AnySkillData[] = [
 		target: 'All Allies',
 		cost: 30,
 		buffs: {
-			Attack: 1
+			Attack: BuffValue.Increase
 		},
 		negate: false,
 		auto: []
@@ -7565,7 +7566,7 @@ const skillData: AnySkillData[] = [
 		target: 'All Foes',
 		cost: 30,
 		buffs: {
-			Attack: -1
+			Attack: BuffValue.Decrease
 		},
 		negate: false,
 		auto: []
@@ -9546,8 +9547,8 @@ const skillData: AnySkillData[] = [
 		target: 'All Foes',
 		cost: 65,
 		buffs: {
-			Attack: 2,
-			Defense: -2
+			Attack: BuffValue.GreatlyIncrease,
+			Defense: BuffValue.GreatlyDecrease
 		},
 		flags: [
 			'Restore MP'
@@ -9899,7 +9900,7 @@ const skillData: AnySkillData[] = [
 		target: 'One Ally',
 		cost: 8,
 		buffs: {
-			Defense: 1
+			Defense: BuffValue.Increase
 		},
 		negate: false,
 		auto: []
@@ -9911,7 +9912,7 @@ const skillData: AnySkillData[] = [
 		target: 'One Foe',
 		cost: 8,
 		buffs: {
-			Defense: -1
+			Defense: BuffValue.Decrease
 		},
 		negate: false,
 		auto: []
@@ -9960,9 +9961,9 @@ const skillData: AnySkillData[] = [
 		target: 'All Allies',
 		cost: 10,
 		buffs: {
-			Attack: null,
-			Defense: null,
-			'Accuracy/Evasion': null
+			Attack: BuffValue.NegateDebuffs,
+			Defense: BuffValue.NegateDebuffs,
+			'Accuracy/Evasion': BuffValue.NegateDebuffs
 		},
 		negate: true,
 		auto: []
@@ -10077,7 +10078,7 @@ const skillData: AnySkillData[] = [
 		target: 'One Ally',
 		cost: 8,
 		buffs: {
-			'Accuracy/Evasion': 2
+			'Accuracy/Evasion': BuffValue.GreatlyIncrease
 		},
 		negate: false,
 		auto: []
@@ -11028,12 +11029,12 @@ const skillData: AnySkillData[] = [
 		name: 'Silent Prayer',
 		affinity: 'Support',
 		type: 'SUPPORT',
-		target: 'All Foes',
+		target: 'All',
 		cost: 25,
 		buffs: {
-			Attack: null,
-			Defense: null,
-			'Accuracy/Evasion': null
+			Attack: BuffValue.NegateAll,
+			Defense: BuffValue.NegateAll,
+			'Accuracy/Evasion': BuffValue.NegateAll
 		},
 		negate: true,
 		auto: []
@@ -11664,7 +11665,7 @@ const skillData: AnySkillData[] = [
 		target: 'One Ally',
 		cost: 8,
 		buffs: {
-			'Accuracy/Evasion': 1
+			'Accuracy/Evasion': BuffValue.Increase
 		},
 		negate: false,
 		auto: []
@@ -11676,7 +11677,7 @@ const skillData: AnySkillData[] = [
 		target: 'One Foe',
 		cost: 8,
 		buffs: {
-			'Accuracy/Evasion': -1
+			'Accuracy/Evasion': BuffValue.Decrease
 		},
 		negate: false,
 		auto: []
@@ -11818,7 +11819,7 @@ const skillData: AnySkillData[] = [
 		target: 'One Ally',
 		cost: 8,
 		buffs: {
-			Attack: 1
+			Attack: BuffValue.Increase
 		},
 		negate: false,
 		auto: []
@@ -11830,7 +11831,7 @@ const skillData: AnySkillData[] = [
 		target: 'One Foe',
 		cost: 8,
 		buffs: {
-			Attack: -1
+			Attack: BuffValue.Decrease
 		},
 		negate: false,
 		auto: []
@@ -12094,9 +12095,9 @@ const skillData: AnySkillData[] = [
 			'Surrounded Only'
 		],
 		buffs: {
-			Attack: 1,
-			Defense: 1,
-			'Accuracy/Evasion': 1
+			Attack: BuffValue.Increase,
+			Defense: BuffValue.Increase,
+			'Accuracy/Evasion': BuffValue.Increase
 		},
 		negate: false,
 		auto: []
@@ -12558,7 +12559,7 @@ const skillData: AnySkillData[] = [
 		target: 'All Allies',
 		cost: 20,
 		buffs: {
-			Defense: 1
+			Defense: BuffValue.Increase
 		},
 		negate: false,
 		auto: [
@@ -12812,8 +12813,8 @@ const skillData: AnySkillData[] = [
 		target: 'All Foes',
 		cost: 65,
 		buffs: {
-			Attack: -1,
-			Defense: -1
+			Attack: BuffValue.Decrease,
+			Defense: BuffValue.Decrease
 		},
 		negate: false,
 		auto: []

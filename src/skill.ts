@@ -2,7 +2,7 @@ import { normalize } from '@squiddleton/util';
 import type { AilBoostSkillData, AilDefensiveSkillData, AilmentSkillData, AttackSkillData, AutoBuffSkillData, BarrierBreakSkillData, BarrierSkillData, BoostSkillData, BreakSkillData, ChargeSkillData, CritBoostSkillData, CritSkillData, DefensiveSkillData, EndureSkillData, EvasionSkillData, InstakillBoostSkillData, MasterSkillData, MiscSkillData, NaviSkillData, PersonaCounterSkillData, PostBattleSkillData, RecoverySkillData, RegenSkillData, SMTCounterSkillData, SetSkillData, SiphonSkillData, SkillData, SpringSkillData, SummonSkillData, SupportSkillData, SusceptibilitySkillData, TauntSkillData, WallSkillData } from './dataTypes.js';
 import { MegatenError } from './error.js';
 import skillData from './skillData.js';
-import type { AilBoostCriteria, AilDefensiveAilment, AilResistance, AilmentName, AilmentSkillFlag, AilmentTarget, AnyAffinity, AttackAilments, AttackCost, AttackFlag, AttackPower, AttackTarget, AutoBuffTarget, Barrier, BarrierTarget, BasePower, BoostAffinity, BoostStack, BreakAffinity, Buff, Charge, ChargeTarget, CritBoostCriteria, CritTarget, DamagingAffinity, DefensiveAffinity, DefensiveSKillResistance, EndureCriteria, EvasionAffinity, EvasionBoostCriteria, HPMP, LightDark, MiscAffinity, NumberOrPercent, OneOrAllAilments, PostBattleStat, RecoveryAmount, RecoveryFlag, RecoveryTarget, RegenCriteria, RegenStat, SMTCounterAffinity, Series, SetAffinity, SetTarget, SingleOrDoubleBuff, SiphonCriteria, SkillType, SupportAutoEffect, SupportFlag, SupportTarget, SusceptibilityTarget, Target, TauntBuff, WallAffinity } from './types.js';
+import type { AilBoostCriteria, AilDefensiveAilment, AilResistance, AilmentName, AilmentSkillFlag, AilmentTarget, AnyAffinity, AttackAilments, AttackCost, AttackFlag, AttackPower, AttackTarget, AutoBuffTarget, Barrier, BarrierTarget, BasePower, BoostAffinity, BoostStack, BreakAffinity, Buff, BuffValue, Charge, ChargeTarget, CritBoostCriteria, CritTarget, DamagingAffinity, DefensiveAffinity, DefensiveSKillResistance, EndureCriteria, EvasionAffinity, EvasionBoostCriteria, HPMP, LightDark, MiscAffinity, NumberOrPercent, OneOrAllAilments, PostBattleStat, RecoveryAmount, RecoveryFlag, RecoveryTarget, RegenCriteria, RegenStat, SMTCounterAffinity, Series, SetAffinity, SetTarget, SingleOrDoubleBuff, SiphonCriteria, SkillType, SupportAutoEffect, SupportFlag, SupportTarget, SusceptibilityTarget, Target, TauntBuff, WallAffinity } from './types.js';
 
 export abstract class Skill implements SkillData {
 	/** The skill's name (adjusted for consistency with SMT5) */
@@ -948,7 +948,7 @@ export class SupportSkill extends Skill implements SupportSkillData {
 	/** The barriers or charges automatically cast by having the skill */
 	auto: SupportAutoEffect[];
 	/** The buffs or debuffs cast by the skill */
-	buffs: Partial<Record<Buff, number | null>>;
+	buffs: Partial<Record<Buff, BuffValue>>;
 	/** The skill's MP cost */
 	cost: number;
 	/** The skill's special or notable features */
