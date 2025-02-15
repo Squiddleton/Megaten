@@ -1,5 +1,5 @@
 import type { BattleThemes } from './music.js';
-import type { AilBoostCriteria, AilDefensiveAilment, AilResistance, AilmentName, AilmentRange, AilmentSkillFlag, AllyRange, AnyAffinity, AnyGame, Arcana, AttackAilments, AttackCost, AttackFlag, AttackPower, AutoBuffRange, Barrier, BasePower, BoostAffinity, BoostStack, BreakAffinity, Buff, Charge, CritBoostCriteria, CritRange, DamagingAffinity, DefensiveAffinity, DefensiveSKillResistance, DemonAffinities, DemonAlignment, DemonOrigin, DemonResistances, DemonSkill, DemonStats, EndureCriteria, EnemyRange, EvasionAffinity, EvasionBoostCriteria, HPMP, If, LightDark, MiscAffinity, NumberOrPercent, OneOrAllAilments, PersonaGame, PersonaRace, PostBattleStat, RecoveryAmount, RecoveryFlag, RegenCriteria, RegenStat, SMTCounterAffinity, SMTRace, Series, SetAffinity, SingleOrDoubleBuff, SiphonCriteria, SkillPotential, SkillType, Stage, SupportAutoEffect, SupportFlag, SupportRange, SusceptibilityRange, TauntBuff, WallAffinity } from './types.js';
+import type { AilBoostCriteria, AilDefensiveAilment, AilResistance, AilmentName, AilmentSkillFlag, AilmentTarget, AnyAffinity, AnyGame, Arcana, AttackAilments, AttackCost, AttackFlag, AttackPower, AttackTarget, AutoBuffTarget, Barrier, BarrierTarget, BasePower, BoostAffinity, BoostStack, BreakAffinity, Buff, Charge, ChargeTarget, CritBoostCriteria, CritTarget, DamagingAffinity, DefensiveAffinity, DefensiveSKillResistance, DemonAffinities, DemonAlignment, DemonOrigin, DemonResistances, DemonSkill, DemonStats, EndureCriteria, EvasionAffinity, EvasionBoostCriteria, HPMP, If, LightDark, MiscAffinity, NumberOrPercent, OneOrAllAilments, PersonaGame, PersonaRace, PostBattleStat, RecoveryAmount, RecoveryFlag, RecoveryTarget, RegenCriteria, RegenStat, SMTCounterAffinity, SMTRace, Series, SetAffinity, SetTarget, SingleOrDoubleBuff, SiphonCriteria, SkillPotential, SkillType, Stage, SupportAutoEffect, SupportFlag, SupportTarget, SusceptibilityTarget, Target, TauntBuff, WallAffinity } from './types.js';
 
 /** Data used for constructing a Demon instance */
 export interface DemonData<PersonaBased extends boolean = boolean> {
@@ -68,6 +68,7 @@ export interface SkillData {
 	aliases?: string[];
 	affinity: AnyAffinity;
 	type: SkillType;
+	target?: Target;
 	unique?: boolean | null;
 }
 
@@ -89,16 +90,17 @@ export interface AilDefensiveSkillData extends SkillData {
 export interface AilmentSkillData extends SkillData {
 	affinity: 'Ailment';
 	type: 'AILMENT';
+	target: AilmentTarget;
 	ailments: AilmentName[];
 	chance: number;
 	cost: number;
 	flags?: AilmentSkillFlag[];
-	range: AilmentRange;
 }
 
 export interface AttackSkillData extends SkillData {
 	affinity: DamagingAffinity;
 	type: 'ATTACK';
+	target: AttackTarget;
 	accuracy: number;
 	ailments?: AttackAilments | null;
 	cost: AttackCost;
@@ -106,23 +108,22 @@ export interface AttackSkillData extends SkillData {
 	max?: number;
 	min?: number;
 	power: AttackPower;
-	range: EnemyRange;
 	series: Series;
 }
 
 export interface AutoBuffSkillData extends SkillData {
 	affinity: 'Passive';
 	type: 'AUTOBUFF';
+	target: AutoBuffTarget;
 	buff: Buff;
-	range: AutoBuffRange;
 }
 
 export interface BarrierSkillData extends SkillData {
 	affinity: 'Support';
 	type: 'BARRIER';
+	target: BarrierTarget;
 	barriers: Barrier[];
 	cost: number;
-	range: AllyRange;
 	revertDebuffs?: boolean;
 }
 
@@ -151,16 +152,16 @@ export interface BreakSkillData extends SkillData {
 export interface ChargeSkillData extends SkillData {
 	affinity: 'Support';
 	type: 'CHARGE';
+	target: ChargeTarget;
 	charge: Charge;
 	cost: number;
-	range: AllyRange;
 }
 
 export interface CritSkillData extends SkillData {
 	affinity: 'Support';
 	type: 'CRIT';
+	target: CritTarget;
 	cost: number;
-	range: CritRange;
 }
 
 export interface CritBoostSkillData extends SkillData {
@@ -208,6 +209,7 @@ export interface MasterSkillData extends SkillData {
 export interface MiscSkillData extends SkillData {
 	affinity: MiscAffinity;
 	type: 'MISC';
+	target: Target;
 	cost: number | null;
 	description: string;
 }
@@ -236,12 +238,12 @@ export interface PostBattleSkillData extends SkillData {
 export interface RecoverySkillData extends SkillData {
 	affinity: 'Recovery';
 	type: 'RECOVERY';
+	target: RecoveryTarget;
 	ailments?: AilmentName[] | 'All';
 	amount: RecoveryAmount | null;
 	buffs?: SingleOrDoubleBuff[];
 	cost: number;
 	flags?: RecoveryFlag[];
-	range: AllyRange;
 }
 
 export interface RegenSkillData extends SkillData {
@@ -254,6 +256,7 @@ export interface RegenSkillData extends SkillData {
 
 export interface SetSkillData extends SkillData {
 	affinity: SetAffinity;
+	target: SetTarget;
 	amount: NumberOrPercent;
 	type: 'SET';
 	cost: number | null;
@@ -297,19 +300,19 @@ export interface SummonSkillData extends SkillData {
 export interface SupportSkillData extends SkillData {
 	affinity: 'Support';
 	type: 'SUPPORT';
+	target: SupportTarget;
 	auto: SupportAutoEffect[];
 	buffs: Partial<Record<Buff, number | null>>;
 	cost: number;
 	flags?: SupportFlag[];
 	negate: boolean;
-	range: SupportRange;
 }
 
 export interface SusceptibilitySkillData extends SkillData {
 	affinity: 'Almighty';
 	type: 'SUSCEPTIBILITY';
+	target: SusceptibilityTarget;
 	cost: number;
-	range: SusceptibilityRange;
 }
 
 export interface TauntSkillData extends SkillData {

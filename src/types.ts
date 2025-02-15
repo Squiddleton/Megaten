@@ -26,23 +26,6 @@ export type Resistance = 'Weak' | AilResistance | 'Repel' | 'Drain';
 /* Resistances created by DefensiveSkill instances */
 export type DefensiveSKillResistance = Exclude<Resistance, 'Weak'>;
 
-/** Ranges for skills targeting allies */
-export type AllyRange = 'Self' | 'Ally' | 'Party';
-/** Ranges for skills targeting enemies */
-export type EnemyRange = 'One' | 'All' | 'Random';
-/** Ranges for skills */
-export type AnyRange = AllyRange | EnemyRange;
-/** Range for AilmentSkill instances */
-export type AilmentRange = Exclude<EnemyRange, 'Random'>;
-/** Range for AutoBuffSkill instances */
-export type AutoBuffRange = Exclude<AllyRange, 'Ally'>;
-/** Range for CritSkill instances */
-export type CritRange = Exclude<AllyRange, 'Self'> | 'All';
-/** Range for SupportSkill instances */
-export type SupportRange = Exclude<AnyRange, 'Random'> | 'All Foes';
-/** Range for SusceptibilitySkill instances */
-export type SusceptibilityRange = 'Foe' | 'All';
-
 /** Demons' Arcana */
 export type Arcana = 'Fool' | 'Magician' | 'Councillor' | 'Priestess' | 'Empress' | 'Emperor' | 'Hierophant' | 'Apostle' | 'Lovers' | 'Chariot' | 'Justice' | 'Hermit' | 'Fortune' | 'Strength' | 'Hunger' | 'Hanged' | 'Death' | 'Temperance' | 'Devil' | 'Tower' | 'Star' | 'Moon' | 'Sun' | 'Judgement' | 'Aeon' | 'World' | 'Faith' | 'Hope';
 
@@ -261,3 +244,26 @@ export type SupportFlag = 'Cure Non-Special Ailments' | 'Reduce HP to 1' | 'Rest
 
 /** Buffs cast by TauntSkill instances */
 export type TauntBuff = SingleOrDoubleBuff | `Maximize ${Buff}`;
+
+/** Demons a skill targets */
+export type Target = 'Self' | 'One Ally' | 'One Alive Stocked Ally' | 'One Dead Stocked Ally' | 'One Stocked Ally' | 'All Allies' | 'All Allies and Stock' | 'One Foe' | 'All Foes' | 'Random Foes' | 'All';
+/** Demons an AilmentSkill instance targets */
+export type AilmentTarget = 'One Foe' | 'All Foes';
+/** Demons an AttackSkill instance targets */
+export type AttackTarget = 'One Foe' | 'All Foes' | 'Random Foes';
+/** Demons an AutoBuffSkill instance targets */
+export type AutoBuffTarget = 'Self' | 'All Allies';
+/** Demons a BarrierSkill instance targets */
+export type BarrierTarget = 'Self' | 'One Ally' | 'All Allies';
+/** Demons a ChargeSkill instance targets */
+export type ChargeTarget = 'Self' | 'One Ally' | 'All Allies';
+/** Demons a CritSkill instance targets */
+export type CritTarget = 'One Ally' | 'All Allies' | 'All';
+/** Demons a RecoverySkill instance targets */
+export type RecoveryTarget = 'One Ally' | 'One Dead Stocked Ally' | 'One Stocked Ally' | 'All Allies' | 'All Allies and Stock';
+/** Demons a SetSkill instance targets */
+export type SetTarget = 'One Foe' | 'All Foes';
+/** Demons a SupportSkill instance targets */
+export type SupportTarget = 'Self' | 'One Ally' | 'All Allies' | 'One Foe' | 'All Foes';
+/** Demons a SusceptibilitySkill instance targets */
+export type SusceptibilityTarget = 'One Foe' | 'All';

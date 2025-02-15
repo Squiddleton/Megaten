@@ -35,14 +35,14 @@ const skillData: AnySkillData[] = [
 			display: 'Weak',
 			type: 'Magic'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'smt'
 	},
 	{
 		name: 'Abysmal Surge',
 		affinity: 'Ailment',
 		type: 'AILMENT',
-		range: 'All',
+		target: 'All Foes',
 		cost: 12,
 		ailments: [
 			'Despair'
@@ -73,7 +73,7 @@ const skillData: AnySkillData[] = [
 			display: 'Weak',
 			type: 'Magic'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'smt'
 	},
 	{
@@ -91,13 +91,14 @@ const skillData: AnySkillData[] = [
 			display: 'Severe',
 			type: 'Magic'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'persona'
 	},
 	{
 		name: 'Abyssal Mask',
 		affinity: 'Passive',
 		type: 'MISC',
+		target: 'Self',
 		cost: null,
 		description: 'Greatly decreases chance of instakill and being afflicted with ailments.'
 	},
@@ -116,14 +117,14 @@ const skillData: AnySkillData[] = [
 			display: 'Severe',
 			type: 'Magic'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'persona'
 	},
 	{
 		name: 'Acid Breath',
 		affinity: 'Support',
 		type: 'SUPPORT',
-		range: 'All Foes',
+		target: 'All Foes',
 		cost: 65,
 		buffs: {
 			Defense: -1,
@@ -149,7 +150,7 @@ const skillData: AnySkillData[] = [
 			display: 'Weak',
 			type: 'Physical'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'smt'
 	},
 	{
@@ -182,7 +183,7 @@ const skillData: AnySkillData[] = [
 			display: 'Medium',
 			type: 'Physical'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'persona'
 	},
 	{
@@ -199,7 +200,7 @@ const skillData: AnySkillData[] = [
 			display: 'Weak',
 			type: 'Magic'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'smt'
 	},
 	{
@@ -220,7 +221,7 @@ const skillData: AnySkillData[] = [
 			display: 'Severe',
 			type: 'Magic'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'smt'
 	},
 	{
@@ -237,7 +238,7 @@ const skillData: AnySkillData[] = [
 			display: 'Heavy',
 			type: 'Magic'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'smt'
 	},
 	{
@@ -254,7 +255,7 @@ const skillData: AnySkillData[] = [
 			display: 'Medium',
 			type: 'Magic'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'smt'
 	},
 	{
@@ -273,7 +274,7 @@ const skillData: AnySkillData[] = [
 			display: 'Medium',
 			type: 'Physical'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'persona'
 	},
 	{
@@ -304,13 +305,14 @@ const skillData: AnySkillData[] = [
 			display: 'Severe',
 			type: 'Physical'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'smt'
 	},
 	{
 		name: 'Alertness',
 		affinity: 'Passive',
 		type: 'MISC',
+		target: 'Self',
 		cost: null,
 		description: 'Decreases chance of being ambushed by foes.'
 	},
@@ -326,6 +328,7 @@ const skillData: AnySkillData[] = [
 		name: 'All-out Attack Boost',
 		affinity: 'Passive',
 		type: 'MISC',
+		target: 'Self',
 		cost: null,
 		description: 'Increases strength of All-Out Attacks.'
 	},
@@ -396,6 +399,7 @@ const skillData: AnySkillData[] = [
 		name: 'Analyze',
 		affinity: 'Special',
 		type: 'MISC',
+		target: 'One Foe',
 		cost: 2,
 		description: 'Displays info for 1 foe.'
 	},
@@ -416,7 +420,7 @@ const skillData: AnySkillData[] = [
 			display: 'Weak',
 			type: 'Physical'
 		},
-		range: 'Random',
+		target: 'Random Foes',
 		series: 'smt'
 	},
 	{
@@ -431,7 +435,7 @@ const skillData: AnySkillData[] = [
 		name: 'Anima Freeze',
 		affinity: 'Ailment',
 		type: 'AILMENT',
-		range: 'All',
+		target: 'All Foes',
 		cost: 12,
 		ailments: [
 			'Exhaust'
@@ -466,7 +470,7 @@ const skillData: AnySkillData[] = [
 			display: 'Severe',
 			type: 'Magic'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'smt'
 	},
 	{
@@ -493,13 +497,14 @@ const skillData: AnySkillData[] = [
 			display: 'Weak',
 			type: 'Physical'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'smt'
 	},
 	{
 		name: 'Arbitration',
 		affinity: 'Passive',
 		type: 'MISC',
+		target: 'Self',
 		cost: null,
 		description: 'Soothes an enraged demon.'
 	},
@@ -525,7 +530,7 @@ const skillData: AnySkillData[] = [
 			display: 'Weak',
 			type: 'Physical'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'persona'
 	},
 	{
@@ -551,7 +556,7 @@ const skillData: AnySkillData[] = [
 			display: 'Heavy',
 			type: 'Physical'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'persona'
 	},
 	{
@@ -568,7 +573,7 @@ const skillData: AnySkillData[] = [
 			display: 'Heavy',
 			type: 'Physical'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'persona'
 	},
 	{
@@ -588,7 +593,7 @@ const skillData: AnySkillData[] = [
 			display: 'Weak',
 			type: 'Physical'
 		},
-		range: 'Random',
+		target: 'Random Foes',
 		series: 'smt'
 	},
 	{
@@ -605,7 +610,7 @@ const skillData: AnySkillData[] = [
 			display: 'Severe',
 			type: 'Magic'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'persona'
 	},
 	{
@@ -629,13 +634,14 @@ const skillData: AnySkillData[] = [
 			display: 'Medium',
 			type: 'Physical'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'persona'
 	},
 	{
 		name: 'Attack Knowhow',
 		affinity: 'Passive',
 		type: 'MISC',
+		target: 'Self',
 		cost: null,
 		description: 'Enables use of attack items.'
 	},
@@ -646,29 +652,29 @@ const skillData: AnySkillData[] = [
 		],
 		affinity: 'Passive',
 		type: 'AUTOBUFF',
-		buff: 'Attack',
-		range: 'Self'
+		target: 'Self',
+		buff: 'Attack'
 	},
 	{
 		name: 'Auto-Maraku',
 		affinity: 'Passive',
 		type: 'AUTOBUFF',
-		buff: 'Defense',
-		range: 'Party'
+		target: 'All Allies',
+		buff: 'Defense'
 	},
 	{
 		name: 'Auto-Masuku',
 		affinity: 'Passive',
 		type: 'AUTOBUFF',
-		buff: 'Accuracy/Evasion',
-		range: 'Party'
+		target: 'All Allies',
+		buff: 'Accuracy/Evasion'
 	},
 	{
 		name: 'Auto-Mataru',
 		affinity: 'Passive',
 		type: 'AUTOBUFF',
-		buff: 'Attack',
-		range: 'Party'
+		target: 'All Allies',
+		buff: 'Attack'
 	},
 	{
 		name: 'Axel Claw',
@@ -686,7 +692,7 @@ const skillData: AnySkillData[] = [
 			display: 'Medium',
 			type: 'Physical'
 		},
-		range: 'Random',
+		target: 'Random Foes',
 		series: 'smt'
 	},
 	{
@@ -706,7 +712,7 @@ const skillData: AnySkillData[] = [
 			display: 'Medium',
 			type: 'Physical'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'persona'
 	},
 	{
@@ -730,7 +736,7 @@ const skillData: AnySkillData[] = [
 			display: 'Weak',
 			type: 'Magic'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'smt'
 	},
 	{
@@ -754,7 +760,7 @@ const skillData: AnySkillData[] = [
 			display: 'Severe',
 			type: 'Magic'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'smt'
 	},
 	{
@@ -777,14 +783,14 @@ const skillData: AnySkillData[] = [
 			display: 'Medium',
 			type: 'Physical'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'persona'
 	},
 	{
 		name: 'Baisudi',
 		affinity: 'Recovery',
 		type: 'RECOVERY',
-		range: 'Ally',
+		target: 'One Ally',
 		cost: 4,
 		ailments: [
 			'Burn',
@@ -800,6 +806,7 @@ const skillData: AnySkillData[] = [
 		],
 		affinity: 'Passive',
 		type: 'MISC',
+		target: 'Self',
 		cost: null,
 		description: 'Increases Accuracy.'
 	},
@@ -821,7 +828,7 @@ const skillData: AnySkillData[] = [
 			display: 'Colossal',
 			type: 'Physical'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'persona'
 	},
 	{
@@ -841,13 +848,14 @@ const skillData: AnySkillData[] = [
 			display: 'Weak to heavy',
 			type: 'Physical'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'smt'
 	},
 	{
 		name: 'Begging',
 		affinity: 'Special',
 		type: 'MISC',
+		target: 'One Foe',
 		cost: 0,
 		description: 'Requests Macca or Item.'
 	},
@@ -865,13 +873,14 @@ const skillData: AnySkillData[] = [
 			display: 'Medium',
 			type: 'Physical'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'smt'
 	},
 	{
 		name: 'Beseech',
 		affinity: 'Special',
 		type: 'MISC',
+		target: 'One Foe',
 		cost: 0,
 		description: 'Recruits a demon higher level than the user.'
 	},
@@ -892,7 +901,7 @@ const skillData: AnySkillData[] = [
 			display: 'Weak',
 			type: 'Physical'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'smt'
 	},
 	{
@@ -902,7 +911,7 @@ const skillData: AnySkillData[] = [
 		],
 		affinity: 'Ailment',
 		type: 'AILMENT',
-		range: 'One',
+		target: 'One Foe',
 		cost: 20,
 		ailments: [
 			'Bind'
@@ -929,7 +938,7 @@ const skillData: AnySkillData[] = [
 			display: 'Medium',
 			type: 'Physical'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'smt'
 	},
 	{
@@ -949,7 +958,7 @@ const skillData: AnySkillData[] = [
 			display: 'Medium',
 			type: 'Physical'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'smt'
 	},
 	{
@@ -966,7 +975,7 @@ const skillData: AnySkillData[] = [
 			display: 'Medium',
 			type: 'Physical'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'persona'
 	},
 	{
@@ -984,7 +993,7 @@ const skillData: AnySkillData[] = [
 			display: 'Severe',
 			type: 'Magic'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'persona'
 	},
 	{
@@ -1003,7 +1012,7 @@ const skillData: AnySkillData[] = [
 			display: 'Medium',
 			type: 'Physical'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'persona'
 	},
 	{
@@ -1029,7 +1038,7 @@ const skillData: AnySkillData[] = [
 			display: 'Medium',
 			type: 'Physical'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'smt'
 	},
 	{
@@ -1046,7 +1055,7 @@ const skillData: AnySkillData[] = [
 			display: 'Medium',
 			type: 'Physical'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'smt'
 	},
 	{
@@ -1054,7 +1063,7 @@ const skillData: AnySkillData[] = [
 		affinity: 'Support',
 		type: 'BARRIER',
 		unique: null,
-		range: 'Ally',
+		target: 'One Ally',
 		cost: 22,
 		barriers: [
 			'Painting'
@@ -1082,7 +1091,7 @@ const skillData: AnySkillData[] = [
 			display: 'Weak',
 			type: 'Physical'
 		},
-		range: 'Random',
+		target: 'Random Foes',
 		series: 'smt'
 	},
 	{
@@ -1102,7 +1111,7 @@ const skillData: AnySkillData[] = [
 			display: 'Weak',
 			type: 'Physical'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'smt'
 	},
 	{
@@ -1124,14 +1133,14 @@ const skillData: AnySkillData[] = [
 			display: 'Heavy',
 			type: 'Magic'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'smt'
 	},
 	{
 		name: 'Blood Ritual',
 		affinity: 'Support',
 		type: 'SUPPORT',
-		range: 'Self',
+		target: 'Self',
 		cost: 25,
 		buffs: {
 			Attack: 1,
@@ -1164,13 +1173,14 @@ const skillData: AnySkillData[] = [
 			display: 'Heavy',
 			type: 'Physical'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'persona'
 	},
 	{
 		name: 'Bloody Glee',
 		affinity: 'Passive',
 		type: 'MISC',
+		target: 'Self',
 		cost: null,
 		description: 'Increases Critical Rate.'
 	},
@@ -1191,13 +1201,14 @@ const skillData: AnySkillData[] = [
 			display: 'Weak',
 			type: 'Physical'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'smt'
 	},
 	{
 		name: 'Boon Boost',
 		affinity: 'Passive',
 		type: 'MISC',
+		target: 'Self',
 		cost: null,
 		description: 'Your -kaja/-nda skills last 1 extra turn.'
 	},
@@ -1205,6 +1216,7 @@ const skillData: AnySkillData[] = [
 		name: 'Boon Boost EX',
 		affinity: 'Passive',
 		type: 'MISC',
+		target: 'Self',
 		cost: null,
 		description: 'Your -kaja/-nda skills last 2 extra turns.'
 	},
@@ -1224,7 +1236,7 @@ const skillData: AnySkillData[] = [
 			display: 'Weak',
 			type: 'Physical'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'smt'
 	},
 	{
@@ -1246,14 +1258,14 @@ const skillData: AnySkillData[] = [
 			display: 'Severe',
 			type: 'Magic'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'smt'
 	},
 	{
 		name: 'Bowl of Hygieia',
 		affinity: 'Support',
 		type: 'CHARGE',
-		range: 'Self',
+		target: 'Self',
 		cost: 20,
 		charge: 'Recovery Charge'
 	},
@@ -1277,7 +1289,7 @@ const skillData: AnySkillData[] = [
 			display: 'Heavy',
 			type: 'Physical'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'persona'
 	},
 	{
@@ -1300,7 +1312,7 @@ const skillData: AnySkillData[] = [
 			display: 'Medium',
 			type: 'Physical'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'persona'
 	},
 	{
@@ -1320,7 +1332,7 @@ const skillData: AnySkillData[] = [
 			display: 'Heavy',
 			type: 'Physical'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'smt'
 	},
 	{
@@ -1328,7 +1340,7 @@ const skillData: AnySkillData[] = [
 		affinity: 'Support',
 		type: 'CRIT',
 		unique: null,
-		range: 'Party',
+		target: 'All Allies',
 		cost: 16
 	},
 	{
@@ -1349,7 +1361,7 @@ const skillData: AnySkillData[] = [
 			display: 'Heavy',
 			type: 'Physical'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'smt'
 	},
 	{
@@ -1366,7 +1378,7 @@ const skillData: AnySkillData[] = [
 			display: 'Weak',
 			type: 'Magic'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'smt'
 	},
 	{
@@ -1388,7 +1400,7 @@ const skillData: AnySkillData[] = [
 			display: 'Severe',
 			type: 'Magic'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'smt'
 	},
 	{
@@ -1405,7 +1417,7 @@ const skillData: AnySkillData[] = [
 			display: 'Heavy',
 			type: 'Magic'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'smt'
 	},
 	{
@@ -1422,7 +1434,7 @@ const skillData: AnySkillData[] = [
 			display: 'Medium',
 			type: 'Magic'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'smt'
 	},
 	{
@@ -1438,7 +1450,7 @@ const skillData: AnySkillData[] = [
 		affinity: 'Recovery',
 		type: 'RECOVERY',
 		unique: true,
-		range: 'Party',
+		target: 'All Allies',
 		cost: 24,
 		amount: 'Half',
 		buffs: [
@@ -1485,7 +1497,7 @@ const skillData: AnySkillData[] = [
 		affinity: 'Ailment',
 		type: 'AILMENT',
 		unique: true,
-		range: 'All',
+		target: 'All Foes',
 		cost: 30,
 		ailments: [
 			'Charm'
@@ -1513,7 +1525,7 @@ const skillData: AnySkillData[] = [
 			display: 'Heavy',
 			type: 'Physical'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'smt'
 	},
 	{
@@ -1530,7 +1542,7 @@ const skillData: AnySkillData[] = [
 			display: 'Severe',
 			type: 'Physical'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'smt'
 	},
 	{
@@ -1538,7 +1550,7 @@ const skillData: AnySkillData[] = [
 		affinity: 'Support',
 		type: 'SUPPORT',
 		unique: true,
-		range: 'Party',
+		target: 'All Allies',
 		cost: 50,
 		buffs: {
 			Defense: 1,
@@ -1567,7 +1579,7 @@ const skillData: AnySkillData[] = [
 			display: 'Weak',
 			type: 'Physical'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'persona'
 	},
 	{
@@ -1581,6 +1593,7 @@ const skillData: AnySkillData[] = [
 		name: 'Chakra Walk',
 		affinity: 'Passive',
 		type: 'MISC',
+		target: 'Self',
 		cost: null,
 		description: 'Recover some MP while walking. Inactive when in stock.'
 	},
@@ -1589,7 +1602,7 @@ const skillData: AnySkillData[] = [
 		affinity: 'Recovery',
 		type: 'RECOVERY',
 		unique: null,
-		range: 'Ally',
+		target: 'One Ally',
 		cost: 10,
 		amount: 'Moderate',
 		buffs: [
@@ -1621,7 +1634,7 @@ const skillData: AnySkillData[] = [
 			display: 'Weak',
 			type: 'Physical'
 		},
-		range: 'Random',
+		target: 'Random Foes',
 		series: 'smt'
 	},
 	{
@@ -1629,6 +1642,7 @@ const skillData: AnySkillData[] = [
 		affinity: 'Ailment',
 		type: 'AILMENT',
 		unique: null,
+		target: 'All Foes',
 		ailments: [
 			'Death'
 		],
@@ -1636,8 +1650,7 @@ const skillData: AnySkillData[] = [
 		cost: 150,
 		flags: [
 			'Halve Press Turn Icons'
-		],
-		range: 'All'
+		]
 	},
 	{
 		name: 'Charge',
@@ -1647,7 +1660,7 @@ const skillData: AnySkillData[] = [
 		],
 		affinity: 'Support',
 		type: 'CHARGE',
-		range: 'Self',
+		target: 'Self',
 		cost: 10,
 		charge: 'Phys Charge'
 	},
@@ -1669,7 +1682,7 @@ const skillData: AnySkillData[] = [
 			display: 'Medium',
 			type: 'Magic'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'smt'
 	},
 	{
@@ -1687,7 +1700,7 @@ const skillData: AnySkillData[] = [
 		name: 'Charmdi',
 		affinity: 'Recovery',
 		type: 'RECOVERY',
-		range: 'Ally',
+		target: 'One Ally',
 		cost: 5,
 		ailments: [
 			'Charm'
@@ -1699,7 +1712,7 @@ const skillData: AnySkillData[] = [
 		affinity: 'Support',
 		type: 'SUPPORT',
 		unique: null,
-		range: 'All',
+		target: 'All Foes',
 		cost: 90,
 		buffs: {
 			Attack: -1,
@@ -1723,7 +1736,7 @@ const skillData: AnySkillData[] = [
 			display: 'Weak',
 			type: 'Physical'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'persona'
 	},
 	{
@@ -1739,7 +1752,7 @@ const skillData: AnySkillData[] = [
 		affinity: 'Support',
 		type: 'SUPPORT',
 		unique: null,
-		range: 'Self',
+		target: 'Self',
 		cost: 0,
 		buffs: {
 			Defense: 4
@@ -1767,7 +1780,7 @@ const skillData: AnySkillData[] = [
 			display: 'Heavy',
 			type: 'Magic'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'smt'
 	},
 	{
@@ -1775,7 +1788,7 @@ const skillData: AnySkillData[] = [
 		affinity: 'Support',
 		type: 'SUPPORT',
 		unique: true,
-		range: 'Party',
+		target: 'All Allies',
 		cost: 60,
 		buffs: {
 			Attack: 1,
@@ -1796,6 +1809,7 @@ const skillData: AnySkillData[] = [
 		name: 'Concealment',
 		affinity: 'Support',
 		type: 'MISC',
+		target: 'Self',
 		cost: 4,
 		description: 'Decreases chance of being targeted by foes.'
 	},
@@ -1806,7 +1820,7 @@ const skillData: AnySkillData[] = [
 		],
 		affinity: 'Support',
 		type: 'CHARGE',
-		range: 'Self',
+		target: 'Self',
 		cost: 10,
 		charge: 'Magic Charge'
 	},
@@ -1825,6 +1839,7 @@ const skillData: AnySkillData[] = [
 		name: 'Contempt of God',
 		affinity: 'Special',
 		type: 'MISC',
+		target: 'Self',
 		unique: null,
 		cost: 0,
 		description: 'Adds 2 Press Turn Icons to your next turn.'
@@ -1854,7 +1869,7 @@ const skillData: AnySkillData[] = [
 			display: 'Medium',
 			type: 'Physical'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'persona'
 	},
 	{
@@ -1871,14 +1886,14 @@ const skillData: AnySkillData[] = [
 			display: 'Severe',
 			type: 'Magic'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'persona'
 	},
 	{
 		name: 'Cough',
 		affinity: 'Ailment',
 		type: 'AILMENT',
-		range: 'One',
+		target: 'One Foe',
 		cost: 4,
 		ailments: [
 			'Sick'
@@ -1931,7 +1946,7 @@ const skillData: AnySkillData[] = [
 			display: 'Medium',
 			type: 'Physical'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'persona'
 	},
 	{
@@ -1941,7 +1956,7 @@ const skillData: AnySkillData[] = [
 		],
 		affinity: 'Support',
 		type: 'CHARGE',
-		range: 'Self',
+		target: 'Self',
 		cost: 25,
 		charge: 'Critical Charge'
 	},
@@ -1962,7 +1977,7 @@ const skillData: AnySkillData[] = [
 			display: 'Weak',
 			type: 'Physical'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'smt'
 	},
 	{
@@ -1982,13 +1997,14 @@ const skillData: AnySkillData[] = [
 			display: 'Weak',
 			type: 'Physical'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'smt'
 	},
 	{
 		name: 'Critical Zealot',
 		affinity: 'Passive',
 		type: 'MISC',
+		target: 'Self',
 		cost: null,
 		description: 'Increases Critical damage, but normal damage decreases.'
 	},
@@ -2009,7 +2025,7 @@ const skillData: AnySkillData[] = [
 			display: 'Heavy',
 			type: 'Physical'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'persona'
 	},
 	{
@@ -2029,7 +2045,7 @@ const skillData: AnySkillData[] = [
 			display: 'Medium',
 			type: 'Physical'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'persona'
 	},
 	{
@@ -2046,7 +2062,7 @@ const skillData: AnySkillData[] = [
 			display: 'Medium',
 			type: 'Physical'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'smt'
 	},
 	{
@@ -2072,7 +2088,7 @@ const skillData: AnySkillData[] = [
 			display: 'Medium',
 			type: 'Physical'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'smt'
 	},
 	{
@@ -2080,7 +2096,7 @@ const skillData: AnySkillData[] = [
 		affinity: 'Ailment',
 		type: 'AILMENT',
 		unique: true,
-		range: 'All',
+		target: 'All Foes',
 		cost: 35,
 		ailments: [
 			'Charm'
@@ -2110,7 +2126,7 @@ const skillData: AnySkillData[] = [
 			display: 'Medium',
 			type: 'Physical'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'smt'
 	},
 	{
@@ -2128,7 +2144,7 @@ const skillData: AnySkillData[] = [
 		name: 'Dark Block',
 		affinity: 'Support',
 		type: 'BARRIER',
-		range: 'Party',
+		target: 'All Allies',
 		cost: 40,
 		barriers: [
 			'Dark Nullify'
@@ -2163,7 +2179,7 @@ const skillData: AnySkillData[] = [
 			display: 'Heavy',
 			type: 'Magic'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'smt'
 	},
 	{
@@ -2196,14 +2212,14 @@ const skillData: AnySkillData[] = [
 			display: 'Medium',
 			type: 'Physical'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'smt'
 	},
 	{
 		name: 'Dazzler',
 		affinity: 'Ailment',
 		type: 'AILMENT',
-		range: 'One',
+		target: 'One Foe',
 		cost: 5,
 		ailments: [
 			'Mirage'
@@ -2228,7 +2244,7 @@ const skillData: AnySkillData[] = [
 			display: 'Medium',
 			type: 'Physical'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'smt'
 	},
 	{
@@ -2248,13 +2264,14 @@ const skillData: AnySkillData[] = [
 			display: 'Severe',
 			type: 'Magic'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'smt'
 	},
 	{
 		name: 'Death\'s Door',
 		affinity: 'Almighty',
 		type: 'SET',
+		target: 'All Foes',
 		amount: 1,
 		cost: 35,
 		sickDependent: true
@@ -2273,7 +2290,7 @@ const skillData: AnySkillData[] = [
 			display: 'Medium',
 			type: 'Physical'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'smt'
 	},
 	{
@@ -2294,7 +2311,7 @@ const skillData: AnySkillData[] = [
 			display: 'Severe',
 			type: 'Magic'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'smt'
 	},
 	{
@@ -2318,7 +2335,7 @@ const skillData: AnySkillData[] = [
 			display: 'Heavy',
 			type: 'Magic'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'smt'
 	},
 	{
@@ -2341,14 +2358,14 @@ const skillData: AnySkillData[] = [
 			display: 'Severe',
 			type: 'Physical'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'persona'
 	},
 	{
 		name: 'Debilitate',
 		affinity: 'Support',
 		type: 'SUPPORT',
-		range: 'All Foes',
+		target: 'All Foes',
 		cost: 150,
 		buffs: {
 			Attack: -1,
@@ -2365,15 +2382,15 @@ const skillData: AnySkillData[] = [
 		],
 		affinity: 'Passive',
 		type: 'AUTOBUFF',
-		buff: 'Defense',
-		range: 'Self'
+		target: 'Self',
+		buff: 'Defense'
 	},
 	{
 		name: 'Deicidal Poison',
 		affinity: 'Ailment',
 		type: 'AILMENT',
 		unique: true,
-		range: 'All',
+		target: 'All Foes',
 		cost: 50,
 		ailments: [
 			'Poison'
@@ -2387,7 +2404,7 @@ const skillData: AnySkillData[] = [
 		name: 'Dekaja',
 		affinity: 'Support',
 		type: 'SUPPORT',
-		range: 'All Foes',
+		target: 'All Foes',
 		cost: 40,
 		buffs: {
 			Attack: null,
@@ -2401,7 +2418,7 @@ const skillData: AnySkillData[] = [
 		name: 'Dekunda',
 		affinity: 'Support',
 		type: 'SUPPORT',
-		range: 'Party',
+		target: 'All Allies',
 		cost: 40,
 		buffs: {
 			Attack: null,
@@ -2418,6 +2435,7 @@ const skillData: AnySkillData[] = [
 		],
 		affinity: 'Dark',
 		type: 'SET',
+		target: 'One Foe',
 		amount: '50%',
 		cost: 48
 	},
@@ -2446,13 +2464,14 @@ const skillData: AnySkillData[] = [
 			display: 'Weak',
 			type: 'Magic'
 		},
-		range: 'Random',
+		target: 'Random Foes',
 		series: 'smt'
 	},
 	{
 		name: 'Detain',
 		affinity: 'Passive',
 		type: 'MISC',
+		target: 'Self',
 		cost: null,
 		description: 'Prevents the demon from leaving while talking.'
 	},
@@ -2460,7 +2479,7 @@ const skillData: AnySkillData[] = [
 		name: 'Dia',
 		affinity: 'Recovery',
 		type: 'RECOVERY',
-		range: 'Ally',
+		target: 'One Ally',
 		cost: 8,
 		amount: 'Slight'
 	},
@@ -2468,7 +2487,7 @@ const skillData: AnySkillData[] = [
 		name: 'Diamrita',
 		affinity: 'Recovery',
 		type: 'RECOVERY',
-		range: 'Ally',
+		target: 'One Ally',
 		cost: 30,
 		ailments: 'All',
 		amount: 'Moderate'
@@ -2477,7 +2496,7 @@ const skillData: AnySkillData[] = [
 		name: 'Diarahan',
 		affinity: 'Recovery',
 		type: 'RECOVERY',
-		range: 'Ally',
+		target: 'One Ally',
 		cost: 35,
 		amount: 'Full'
 	},
@@ -2485,7 +2504,7 @@ const skillData: AnySkillData[] = [
 		name: 'Diarama',
 		affinity: 'Recovery',
 		type: 'RECOVERY',
-		range: 'Ally',
+		target: 'One Ally',
 		cost: 15,
 		amount: 'Moderate'
 	},
@@ -2509,7 +2528,7 @@ const skillData: AnySkillData[] = [
 			display: 'Medium',
 			type: 'Magic'
 		},
-		range: 'Random',
+		target: 'Random Foes',
 		series: 'smt'
 	},
 	{
@@ -2527,13 +2546,14 @@ const skillData: AnySkillData[] = [
 			display: 'Heavy',
 			type: 'Magic'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'smt'
 	},
 	{
 		name: 'Divine Grace',
 		affinity: 'Passive',
 		type: 'MISC',
+		target: 'Self',
 		cost: null,
 		description: 'Increases the effect of healing skills by 50%.'
 	},
@@ -2544,6 +2564,7 @@ const skillData: AnySkillData[] = [
 		],
 		affinity: 'Light',
 		type: 'SET',
+		target: 'One Foe',
 		amount: '50%',
 		cost: 48
 	},
@@ -2632,7 +2653,7 @@ const skillData: AnySkillData[] = [
 		name: 'Donum Gladi',
 		affinity: 'Support',
 		type: 'CHARGE',
-		range: 'Ally',
+		target: 'One Ally',
 		cost: 40,
 		charge: 'Phys Charge - Donum'
 	},
@@ -2640,7 +2661,7 @@ const skillData: AnySkillData[] = [
 		name: 'Donum Magici',
 		affinity: 'Support',
 		type: 'CHARGE',
-		range: 'Ally',
+		target: 'One Ally',
 		cost: 40,
 		charge: 'Magic Charge - Donum'
 	},
@@ -2665,13 +2686,14 @@ const skillData: AnySkillData[] = [
 			display: 'Heavy',
 			type: 'Magic'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'persona'
 	},
 	{
 		name: 'Doping',
 		affinity: 'Support',
 		type: 'MISC',
+		target: 'All Allies',
 		cost: 98,
 		description: 'Increases maximum HP for all allies during battle.'
 	},
@@ -2679,7 +2701,7 @@ const skillData: AnySkillData[] = [
 		name: 'Dormina',
 		affinity: 'Ailment',
 		type: 'AILMENT',
-		range: 'One',
+		target: 'One Foe',
 		cost: 10,
 		ailments: [
 			'Sleep'
@@ -2706,7 +2728,7 @@ const skillData: AnySkillData[] = [
 			display: 'Medium',
 			type: 'Physical'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'persona'
 	},
 	{
@@ -2725,7 +2747,7 @@ const skillData: AnySkillData[] = [
 			display: 'Weak',
 			type: 'Physical'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'persona'
 	},
 	{
@@ -2744,7 +2766,7 @@ const skillData: AnySkillData[] = [
 			display: 'Weak',
 			type: 'Physical'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'persona'
 	},
 	{
@@ -2754,6 +2776,7 @@ const skillData: AnySkillData[] = [
 		],
 		affinity: 'Passive',
 		type: 'MISC',
+		target: 'Self',
 		cost: null,
 		description: 'Greatly increases Accuracy.'
 	},
@@ -2761,6 +2784,7 @@ const skillData: AnySkillData[] = [
 		name: 'Drain Attack',
 		affinity: 'Passive',
 		type: 'MISC',
+		target: 'Self',
 		cost: null,
 		description: 'User\'s basic attack drains HP but has a reduced Critical Rate.'
 	},
@@ -2884,7 +2908,7 @@ const skillData: AnySkillData[] = [
 			display: 'Heavy',
 			type: 'Magic'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'smt',
 		flags: [
 			'Pierce'
@@ -2907,7 +2931,7 @@ const skillData: AnySkillData[] = [
 			display: 'Weak',
 			type: 'Physical'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'smt'
 	},
 	{
@@ -2915,7 +2939,7 @@ const skillData: AnySkillData[] = [
 		affinity: 'Ailment',
 		type: 'AILMENT',
 		unique: true,
-		range: 'All',
+		target: 'All Foes',
 		cost: 65,
 		ailments: [
 			'Sleep',
@@ -2947,14 +2971,14 @@ const skillData: AnySkillData[] = [
 			display: 'Weak',
 			type: 'Physical'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'smt'
 	},
 	{
 		name: 'Dustoma',
 		affinity: 'Ailment',
 		type: 'AILMENT',
-		range: 'One',
+		target: 'One Foe',
 		cost: 10,
 		ailments: [
 			'Mirage'
@@ -2978,7 +3002,7 @@ const skillData: AnySkillData[] = [
 			display: 'Weak',
 			type: 'Physical'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'smt'
 	},
 	{
@@ -3001,7 +3025,7 @@ const skillData: AnySkillData[] = [
 			display: 'Medium',
 			type: 'Physical'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'smt'
 	},
 	{
@@ -3021,7 +3045,7 @@ const skillData: AnySkillData[] = [
 			display: 'Medium',
 			type: 'Physical'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'smt'
 	},
 	{
@@ -3038,7 +3062,7 @@ const skillData: AnySkillData[] = [
 			display: 'Medium',
 			type: 'Magic'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'persona'
 	},
 	{
@@ -3055,7 +3079,7 @@ const skillData: AnySkillData[] = [
 			display: 'Heavy',
 			type: 'Magic'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'persona'
 	},
 	{
@@ -3072,7 +3096,7 @@ const skillData: AnySkillData[] = [
 			display: 'Weak',
 			type: 'Magic'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'persona'
 	},
 	{
@@ -3080,6 +3104,7 @@ const skillData: AnySkillData[] = [
 		affinity: 'Special',
 		type: 'MISC',
 		unique: null,
+		target: 'One Ally',
 		cost: 0,
 		description: 'Greatly increases the damage of the next Rising Storm Dragon performed by 1 ally.'
 	},
@@ -3095,7 +3120,7 @@ const skillData: AnySkillData[] = [
 		name: 'Elec Block',
 		affinity: 'Support',
 		type: 'BARRIER',
-		range: 'Party',
+		target: 'All Allies',
 		cost: 40,
 		barriers: [
 			'Elec Nullify'
@@ -3139,7 +3164,7 @@ const skillData: AnySkillData[] = [
 		affinity: 'Recovery',
 		type: 'RECOVERY',
 		unique: true,
-		range: 'Party',
+		target: 'All Allies',
 		cost: 150,
 		amount: '130%'
 	},
@@ -3219,14 +3244,14 @@ const skillData: AnySkillData[] = [
 			display: 'Weak',
 			type: 'Magic'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'smt'
 	},
 	{
 		name: 'Energy Drop',
 		affinity: 'Recovery',
 		type: 'RECOVERY',
-		range: 'Ally',
+		target: 'One Ally',
 		cost: 4,
 		ailments: [
 			'Confusion',
@@ -3241,7 +3266,7 @@ const skillData: AnySkillData[] = [
 		name: 'Energy Shower',
 		affinity: 'Recovery',
 		type: 'RECOVERY',
-		range: 'Party',
+		target: 'All Allies',
 		cost: 8,
 		ailments: [
 			'Confusion',
@@ -3264,7 +3289,7 @@ const skillData: AnySkillData[] = [
 		name: 'Enervation',
 		affinity: 'Ailment',
 		type: 'AILMENT',
-		range: 'One',
+		target: 'One Foe',
 		cost: 5,
 		ailments: [
 			'Enervate'
@@ -3275,6 +3300,7 @@ const skillData: AnySkillData[] = [
 		name: 'Enlightenment',
 		affinity: 'Support',
 		type: 'MISC',
+		target: 'Self',
 		cost: 8,
 		description: 'User absorbs weaknesses until next turn. Raises all stats by 1 stage and gains smirk if hit with weakness.'
 	},
@@ -3283,7 +3309,7 @@ const skillData: AnySkillData[] = [
 		affinity: 'Ailment',
 		type: 'AILMENT',
 		unique: true,
-		range: 'All',
+		target: 'All Foes',
 		cost: 25,
 		ailments: [
 			'Seal'
@@ -3311,7 +3337,7 @@ const skillData: AnySkillData[] = [
 			display: 'Heavy',
 			type: 'Physical'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'smt'
 	},
 	{
@@ -3325,6 +3351,7 @@ const skillData: AnySkillData[] = [
 		name: 'Estoma',
 		affinity: 'Support',
 		type: 'MISC',
+		target: 'Self',
 		cost: 35,
 		description: 'Prevents any enemy encounters until next New Moon.'
 	},
@@ -3345,13 +3372,14 @@ const skillData: AnySkillData[] = [
 			display: 'Weak',
 			type: 'Magic'
 		},
-		range: 'Random',
+		target: 'Random Foes',
 		series: 'smt'
 	},
 	{
 		name: 'Eternal Rest',
 		affinity: 'Almighty',
 		type: 'MISC',
+		target: 'All Foes',
 		cost: 50,
 		description: 'Instakills foes inflicted with Sleep.'
 	},
@@ -3441,6 +3469,7 @@ const skillData: AnySkillData[] = [
 		affinity: 'Support',
 		type: 'MISC',
 		unique: null,
+		target: 'Self',
 		cost: 25,
 		description: 'Greatly fills the Magatsuhi Gauge. (Once per turn)'
 	},
@@ -3449,7 +3478,7 @@ const skillData: AnySkillData[] = [
 		affinity: 'Ailment',
 		type: 'AILMENT',
 		unique: null,
-		range: 'All',
+		target: 'All Foes',
 		cost: 0,
 		ailments: [
 			'Charm'
@@ -3461,18 +3490,18 @@ const skillData: AnySkillData[] = [
 		affinity: 'Ailment',
 		type: 'AILMENT',
 		unique: true,
+		target: 'One Foe',
 		ailments: [
 			'Death'
 		],
 		chance: 150,
-		cost: 100,
-		range: 'One'
+		cost: 100
 	},
 	{
 		name: 'Evil Smile',
 		affinity: 'Ailment',
 		type: 'AILMENT',
-		range: 'All',
+		target: 'All Foes',
 		cost: 12,
 		ailments: [
 			'Fear'
@@ -3483,7 +3512,7 @@ const skillData: AnySkillData[] = [
 		name: 'Evil Touch',
 		affinity: 'Ailment',
 		type: 'AILMENT',
-		range: 'One',
+		target: 'One Foe',
 		cost: 5,
 		ailments: [
 			'Fear'
@@ -3516,7 +3545,7 @@ const skillData: AnySkillData[] = [
 			display: 'Severe',
 			type: 'Magic'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'smt'
 	},
 	{
@@ -3537,7 +3566,7 @@ const skillData: AnySkillData[] = [
 			display: 'Severe',
 			type: 'Magic'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'smt'
 	},
 	{
@@ -3558,7 +3587,7 @@ const skillData: AnySkillData[] = [
 			display: 'Severe',
 			type: 'Magic'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'smt'
 	},
 	{
@@ -3566,6 +3595,7 @@ const skillData: AnySkillData[] = [
 		affinity: 'Special',
 		type: 'MISC',
 		unique: null,
+		target: 'Self',
 		cost: 0,
 		description: 'Creates a replica.'
 	},
@@ -3574,7 +3604,7 @@ const skillData: AnySkillData[] = [
 		affinity: 'Ailment',
 		type: 'AILMENT',
 		unique: null,
-		range: 'All',
+		target: 'All Foes',
 		cost: 0,
 		ailments: [
 			'Hunger'
@@ -3598,7 +3628,7 @@ const skillData: AnySkillData[] = [
 			display: 'Weak',
 			type: 'Physical'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'smt'
 	},
 	{
@@ -3623,7 +3653,7 @@ const skillData: AnySkillData[] = [
 			display: 'Weak',
 			type: 'Physical'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'persona'
 	},
 	{
@@ -3643,7 +3673,7 @@ const skillData: AnySkillData[] = [
 			display: 'Medium',
 			type: 'Physical'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'smt'
 	},
 	{
@@ -3665,7 +3695,7 @@ const skillData: AnySkillData[] = [
 		name: 'Fighting Spirit',
 		affinity: 'Support',
 		type: 'CHARGE',
-		range: 'Party',
+		target: 'All Allies',
 		cost: 80,
 		charge: 'Phys Charge'
 	},
@@ -3686,7 +3716,7 @@ const skillData: AnySkillData[] = [
 			display: 'Severe',
 			type: 'Physical'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'smt'
 	},
 	{
@@ -3708,7 +3738,7 @@ const skillData: AnySkillData[] = [
 		name: 'Fire Block',
 		affinity: 'Support',
 		type: 'BARRIER',
-		range: 'Party',
+		target: 'All Allies',
 		cost: 40,
 		barriers: [
 			'Fire Nullify'
@@ -3745,7 +3775,7 @@ const skillData: AnySkillData[] = [
 			display: 'Weak',
 			type: 'Magic'
 		},
-		range: 'Random',
+		target: 'Random Foes',
 		series: 'smt'
 	},
 	{
@@ -3762,7 +3792,7 @@ const skillData: AnySkillData[] = [
 			display: 'Medium',
 			type: 'Physical'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'smt'
 	},
 	{
@@ -3782,7 +3812,7 @@ const skillData: AnySkillData[] = [
 			display: 'Medium',
 			type: 'Magic'
 		},
-		range: 'Random',
+		target: 'Random Foes',
 		series: 'smt'
 	},
 	{
@@ -3807,6 +3837,7 @@ const skillData: AnySkillData[] = [
 		name: 'Firm Stance',
 		affinity: 'Passive',
 		type: 'MISC',
+		target: 'Self',
 		cost: null,
 		description: 'Take the blow, but decreases damage by half.'
 	},
@@ -3830,7 +3861,7 @@ const skillData: AnySkillData[] = [
 			display: 'Medium',
 			type: 'Physical'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'persona'
 	},
 	{
@@ -3849,14 +3880,14 @@ const skillData: AnySkillData[] = [
 			display: 'Medium',
 			type: 'Magic'
 		},
-		range: 'Random',
+		target: 'Random Foes',
 		series: 'smt'
 	},
 	{
 		name: 'Fog Breath',
 		affinity: 'Support',
 		type: 'SUPPORT',
-		range: 'All Foes',
+		target: 'All Foes',
 		cost: 65,
 		buffs: {
 			Attack: -1,
@@ -3869,7 +3900,7 @@ const skillData: AnySkillData[] = [
 		name: 'Fogna',
 		affinity: 'Ailment',
 		type: 'AILMENT',
-		range: 'All',
+		target: 'All Foes',
 		cost: 25,
 		ailments: [
 			'Mirage'
@@ -3880,7 +3911,7 @@ const skillData: AnySkillData[] = [
 		name: 'Force Block',
 		affinity: 'Support',
 		type: 'BARRIER',
-		range: 'Party',
+		target: 'All Allies',
 		cost: 40,
 		barriers: [
 			'Force Nullify'
@@ -3917,7 +3948,7 @@ const skillData: AnySkillData[] = [
 			display: 'Weak',
 			type: 'Physical'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'smt',
 		flags: [
 			'Mirage Boost'
@@ -3943,7 +3974,7 @@ const skillData: AnySkillData[] = [
 		name: 'Foul Breath',
 		affinity: 'Almighty',
 		type: 'SUSCEPTIBILITY',
-		range: 'Foe',
+		target: 'One Foe',
 		cost: 8
 	},
 	{
@@ -3968,7 +3999,7 @@ const skillData: AnySkillData[] = [
 			display: 'Weak',
 			type: 'Magic'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'persona'
 	},
 	{
@@ -3985,7 +4016,7 @@ const skillData: AnySkillData[] = [
 			display: 'Heavy',
 			type: 'Magic'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'persona'
 	},
 	{
@@ -4002,7 +4033,7 @@ const skillData: AnySkillData[] = [
 			display: 'Severe',
 			type: 'Physical'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'smt'
 	},
 	{
@@ -4019,7 +4050,7 @@ const skillData: AnySkillData[] = [
 			display: 'Medium',
 			type: 'Magic'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'persona'
 	},
 	{
@@ -4044,7 +4075,7 @@ const skillData: AnySkillData[] = [
 			display: 'Medium',
 			type: 'Physical'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'smt'
 	},
 	{
@@ -4062,7 +4093,7 @@ const skillData: AnySkillData[] = [
 			display: 'Medium',
 			type: 'Physical'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'smt'
 	},
 	{
@@ -4070,7 +4101,7 @@ const skillData: AnySkillData[] = [
 		affinity: 'Ailment',
 		type: 'AILMENT',
 		unique: true,
-		range: 'All',
+		target: 'All Foes',
 		cost: 80,
 		ailments: [
 			'Charm'
@@ -4103,7 +4134,7 @@ const skillData: AnySkillData[] = [
 			display: 'Medium',
 			type: 'Physical'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'smt',
 		flags: [
 			'Pierce',
@@ -4128,7 +4159,7 @@ const skillData: AnySkillData[] = [
 			display: 'Severe',
 			type: 'Physical'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'smt'
 	},
 	{
@@ -4146,7 +4177,7 @@ const skillData: AnySkillData[] = [
 			display: 'Medium',
 			type: 'Physical'
 		},
-		range: 'Random',
+		target: 'Random Foes',
 		series: 'smt',
 		flags: [
 			'+200% Crit Rate'
@@ -4166,13 +4197,14 @@ const skillData: AnySkillData[] = [
 			display: 'Weak',
 			type: 'Physical'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'persona'
 	},
 	{
 		name: 'Galgalim Eyes',
 		affinity: 'Almighty',
 		type: 'SET',
+		target: 'One Foe',
 		amount: 1,
 		cost: null
 	},
@@ -4191,7 +4223,7 @@ const skillData: AnySkillData[] = [
 			display: 'Heavy',
 			type: 'Physical'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'smt'
 	},
 	{
@@ -4199,7 +4231,7 @@ const skillData: AnySkillData[] = [
 		affinity: 'Support',
 		type: 'SUPPORT',
 		unique: null,
-		range: 'Party',
+		target: 'All Allies',
 		cost: 20,
 		buffs: {
 			'Accuracy/Evasion': 1
@@ -4223,7 +4255,7 @@ const skillData: AnySkillData[] = [
 			display: 'Weak',
 			type: 'Magic'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'persona'
 	},
 	{
@@ -4240,7 +4272,7 @@ const skillData: AnySkillData[] = [
 			display: 'Heavy',
 			type: 'Magic'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'persona'
 	},
 	{
@@ -4257,7 +4289,7 @@ const skillData: AnySkillData[] = [
 			display: 'Medium',
 			type: 'Magic'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'persona'
 	},
 	{
@@ -4276,7 +4308,7 @@ const skillData: AnySkillData[] = [
 			display: 'Weak',
 			type: 'Physical'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'persona'
 	},
 	{
@@ -4294,13 +4326,14 @@ const skillData: AnySkillData[] = [
 			display: 'Medium',
 			type: 'Magic'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'smt'
 	},
 	{
 		name: 'Ghastly Wail',
 		affinity: 'Almighty',
 		type: 'MISC',
+		target: 'All Foes',
 		cost: 28,
 		description: 'Instakills foes inflicted with Fear.'
 	},
@@ -4321,7 +4354,7 @@ const skillData: AnySkillData[] = [
 			display: 'Medium',
 			type: 'Physical'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'persona'
 	},
 	{
@@ -4338,7 +4371,7 @@ const skillData: AnySkillData[] = [
 			display: 'Heavy',
 			type: 'Physical'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'persona'
 	},
 	{
@@ -4355,7 +4388,7 @@ const skillData: AnySkillData[] = [
 			display: 'Colossal',
 			type: 'Physical'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'persona'
 	},
 	{
@@ -4374,7 +4407,7 @@ const skillData: AnySkillData[] = [
 			display: 'Medium',
 			type: 'Magic'
 		},
-		range: 'Random',
+		target: 'Random Foes',
 		series: 'smt'
 	},
 	{
@@ -4392,7 +4425,7 @@ const skillData: AnySkillData[] = [
 			display: 'Weak',
 			type: 'Magic'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'smt',
 		flags: [
 			'Pierce'
@@ -4419,7 +4452,7 @@ const skillData: AnySkillData[] = [
 			display: 'Weak',
 			type: 'Magic'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'smt'
 	},
 	{
@@ -4436,7 +4469,7 @@ const skillData: AnySkillData[] = [
 			display: 'Colossal',
 			type: 'Physical'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'persona'
 	},
 	{
@@ -4444,7 +4477,7 @@ const skillData: AnySkillData[] = [
 		affinity: 'Recovery',
 		type: 'RECOVERY',
 		unique: true,
-		range: 'Party',
+		target: 'All Allies',
 		cost: 180,
 		amount: 'Moderate',
 		buffs: [
@@ -4458,7 +4491,7 @@ const skillData: AnySkillData[] = [
 		affinity: 'Recovery',
 		type: 'RECOVERY',
 		unique: true,
-		range: 'Party',
+		target: 'All Allies',
 		cost: 20,
 		ailments: 'All',
 		amount: null,
@@ -4483,7 +4516,7 @@ const skillData: AnySkillData[] = [
 			display: 'Weak',
 			type: 'Physical'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'smt'
 	},
 	{
@@ -4500,7 +4533,7 @@ const skillData: AnySkillData[] = [
 			display: 'Heavy',
 			type: 'Physical'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'smt'
 	},
 	{
@@ -4538,7 +4571,7 @@ const skillData: AnySkillData[] = [
 			display: 'Severe',
 			type: 'Magic'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'smt',
 		unique: true,
 		flags: [
@@ -4559,7 +4592,7 @@ const skillData: AnySkillData[] = [
 			display: 'Severe',
 			type: 'Magic'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'smt'
 	},
 	{
@@ -4600,6 +4633,7 @@ const skillData: AnySkillData[] = [
 		name: 'Guiding Tendril',
 		affinity: 'Almighty',
 		type: 'MISC',
+		target: 'All Foes',
 		cost: 20,
 		description: 'Knockdown attack on all foes (only usable during an Ambush).'
 	},
@@ -4607,6 +4641,7 @@ const skillData: AnySkillData[] = [
 		name: 'Gun Accuracy +5%',
 		affinity: 'Passive',
 		type: 'MISC',
+		target: 'Self',
 		cost: null,
 		description: 'Increases Accuracy of Gun attacks by 5%.'
 	},
@@ -4658,7 +4693,7 @@ const skillData: AnySkillData[] = [
 			display: 'Severe',
 			type: 'Physical'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'smt'
 	},
 	{
@@ -4675,13 +4710,14 @@ const skillData: AnySkillData[] = [
 			display: 'Heavy',
 			type: 'Physical'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'smt'
 	},
 	{
 		name: 'Haggle',
 		affinity: 'Passive',
 		type: 'MISC',
+		target: 'Self',
 		cost: null,
 		description: 'Requests the target to lower bribe cost.'
 	},
@@ -4700,7 +4736,7 @@ const skillData: AnySkillData[] = [
 			display: 'Severe',
 			type: 'Magic'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'smt'
 	},
 	{
@@ -4720,7 +4756,7 @@ const skillData: AnySkillData[] = [
 			display: 'Weak',
 			type: 'Magic'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'smt'
 	},
 	{
@@ -4740,7 +4776,7 @@ const skillData: AnySkillData[] = [
 			display: 'Severe',
 			type: 'Magic'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'smt'
 	},
 	{
@@ -4766,13 +4802,14 @@ const skillData: AnySkillData[] = [
 			display: 'Heavy',
 			type: 'Magic'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'smt'
 	},
 	{
 		name: 'Hard Worker',
 		affinity: 'Passive',
 		type: 'MISC',
+		target: 'Self',
 		cost: null,
 		description: 'Obtain more EXP after battles.'
 	},
@@ -4781,7 +4818,7 @@ const skillData: AnySkillData[] = [
 		affinity: 'Recovery',
 		type: 'RECOVERY',
 		unique: true,
-		range: 'Ally',
+		target: 'One Ally',
 		cost: 30,
 		amount: 'Slight',
 		buffs: [
@@ -4808,7 +4845,7 @@ const skillData: AnySkillData[] = [
 			display: 'Weak',
 			type: 'Physical'
 		},
-		range: 'Random',
+		target: 'Random Foes',
 		series: 'smt'
 	},
 	{
@@ -4816,7 +4853,7 @@ const skillData: AnySkillData[] = [
 		affinity: 'Ailment',
 		type: 'AILMENT',
 		unique: true,
-		range: 'All',
+		target: 'All Foes',
 		cost: 100,
 		ailments: [
 			'Confusion'
@@ -4848,7 +4885,7 @@ const skillData: AnySkillData[] = [
 			display: 'Weak',
 			type: 'Physical'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'persona'
 	},
 	{
@@ -4876,13 +4913,14 @@ const skillData: AnySkillData[] = [
 			display: 'Medium',
 			type: 'Physical'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'smt'
 	},
 	{
 		name: 'Healing Knowhow',
 		affinity: 'Passive',
 		type: 'MISC',
+		target: 'Self',
 		cost: null,
 		description: 'Enables use of healing/support items.'
 	},
@@ -4905,7 +4943,7 @@ const skillData: AnySkillData[] = [
 		name: 'Heat Riser',
 		affinity: 'Support',
 		type: 'SUPPORT',
-		range: 'Ally',
+		target: 'One Ally',
 		cost: 30,
 		buffs: {
 			Attack: 1,
@@ -4937,7 +4975,7 @@ const skillData: AnySkillData[] = [
 			display: 'Weak',
 			type: 'Physical'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'smt'
 	},
 	{
@@ -4970,7 +5008,7 @@ const skillData: AnySkillData[] = [
 			display: 'Medium to severe',
 			type: 'Magic'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'smt'
 	},
 	{
@@ -4988,7 +5026,7 @@ const skillData: AnySkillData[] = [
 			display: 'Heavy',
 			type: 'Physical'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'persona'
 	},
 	{
@@ -5005,7 +5043,7 @@ const skillData: AnySkillData[] = [
 			display: 'Heavy',
 			type: 'Physical'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'smt'
 	},
 	{
@@ -5025,7 +5063,7 @@ const skillData: AnySkillData[] = [
 			display: 'Medium',
 			type: 'Physical'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'smt'
 	},
 	{
@@ -5043,7 +5081,7 @@ const skillData: AnySkillData[] = [
 			display: 'Severe',
 			type: 'Magic'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'smt',
 		flags: [
 			'Shroud Dependent'
@@ -5064,7 +5102,7 @@ const skillData: AnySkillData[] = [
 			display: 'Heavy',
 			type: 'Physical'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'smt'
 	},
 	{
@@ -5085,7 +5123,7 @@ const skillData: AnySkillData[] = [
 			display: 'Medium',
 			type: 'Magic'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'smt'
 	},
 	{
@@ -5103,7 +5141,7 @@ const skillData: AnySkillData[] = [
 			display: 'Medium',
 			type: 'Physical'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'smt',
 		flags: [
 			'Pierce',
@@ -5128,13 +5166,14 @@ const skillData: AnySkillData[] = [
 			display: 'Heavy',
 			type: 'Magic'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'smt'
 	},
 	{
 		name: 'Hellish Mask',
 		affinity: 'Passive',
 		type: 'MISC',
+		target: 'Self',
 		cost: null,
 		description: 'Decreases chance of instakill and being afflicted with ailments.'
 	},
@@ -5155,7 +5194,7 @@ const skillData: AnySkillData[] = [
 			display: 'Weak',
 			type: 'Physical'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'smt'
 	},
 	{
@@ -5173,7 +5212,7 @@ const skillData: AnySkillData[] = [
 			display: 'Medium',
 			type: 'Magic'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'smt'
 	},
 	{
@@ -5191,7 +5230,7 @@ const skillData: AnySkillData[] = [
 			display: 'Heavy',
 			type: 'Physical'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'smt'
 	},
 	{
@@ -5211,7 +5250,7 @@ const skillData: AnySkillData[] = [
 			display: 'Heavy',
 			type: 'Physical'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'smt'
 	},
 	{
@@ -5229,13 +5268,14 @@ const skillData: AnySkillData[] = [
 			display: 'Medium',
 			type: 'Physical'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'persona'
 	},
 	{
 		name: 'Hide',
 		affinity: 'Passive',
 		type: 'MISC',
+		target: 'Self',
 		cost: null,
 		description: 'Decreases chance of being targeted by foes.'
 	},
@@ -5273,7 +5313,7 @@ const skillData: AnySkillData[] = [
 		name: 'High Energy',
 		affinity: 'Support',
 		type: 'CHARGE',
-		range: 'Party',
+		target: 'All Allies',
 		cost: 80,
 		charge: 'Magic Charge'
 	},
@@ -5355,7 +5395,7 @@ const skillData: AnySkillData[] = [
 			display: 'Heavy',
 			type: 'Magic'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'smt'
 	},
 	{
@@ -5363,7 +5403,7 @@ const skillData: AnySkillData[] = [
 		affinity: 'Recovery',
 		type: 'RECOVERY',
 		unique: true,
-		range: 'Party',
+		target: 'All Allies and Stock',
 		cost: 27,
 		amount: 'Full',
 		buffs: [],
@@ -5376,7 +5416,7 @@ const skillData: AnySkillData[] = [
 		affinity: 'Support',
 		type: 'SUPPORT',
 		unique: null,
-		range: 'One',
+		target: 'One Foe',
 		cost: 0,
 		buffs: {
 			Attack: -4,
@@ -5400,7 +5440,7 @@ const skillData: AnySkillData[] = [
 		affinity: 'Support',
 		type: 'SUPPORT',
 		unique: true,
-		range: 'Party',
+		target: 'All Allies',
 		cost: 10,
 		buffs: {
 			Attack: null,
@@ -5436,7 +5476,7 @@ const skillData: AnySkillData[] = [
 			display: 'Medium',
 			type: 'Magic'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'smt'
 	},
 	{
@@ -5444,7 +5484,7 @@ const skillData: AnySkillData[] = [
 		affinity: 'Support',
 		type: 'SUPPORT',
 		unique: null,
-		range: 'Self',
+		target: 'Self',
 		cost: 0,
 		buffs: {
 			Attack: 4
@@ -5457,7 +5497,7 @@ const skillData: AnySkillData[] = [
 		affinity: 'Recovery',
 		type: 'RECOVERY',
 		unique: true,
-		range: 'Party',
+		target: 'All Allies',
 		cost: 15,
 		amount: 'Slight'
 	},
@@ -5466,7 +5506,7 @@ const skillData: AnySkillData[] = [
 		affinity: 'Support',
 		type: 'SUPPORT',
 		unique: null,
-		range: 'Party',
+		target: 'All Allies',
 		cost: 90,
 		buffs: {
 			Attack: 1,
@@ -5495,7 +5535,7 @@ const skillData: AnySkillData[] = [
 			display: 'Weak',
 			type: 'Physical'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'smt'
 	},
 	{
@@ -5515,7 +5555,7 @@ const skillData: AnySkillData[] = [
 			display: 'Heavy',
 			type: 'Magic'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'smt'
 	},
 	{
@@ -5530,7 +5570,7 @@ const skillData: AnySkillData[] = [
 		name: 'Ice Block',
 		affinity: 'Support',
 		type: 'BARRIER',
-		range: 'Party',
+		target: 'All Allies',
 		cost: 40,
 		barriers: [
 			'Ice Nullify'
@@ -5567,7 +5607,7 @@ const skillData: AnySkillData[] = [
 			display: 'Weak',
 			type: 'Magic'
 		},
-		range: 'Random',
+		target: 'Random Foes',
 		series: 'smt'
 	},
 	{
@@ -5584,7 +5624,7 @@ const skillData: AnySkillData[] = [
 			display: 'Medium',
 			type: 'Physical'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'smt'
 	},
 	{
@@ -5609,7 +5649,7 @@ const skillData: AnySkillData[] = [
 		name: 'Impaler\'s Animus',
 		affinity: 'Support',
 		type: 'CHARGE',
-		range: 'Self',
+		target: 'Self',
 		cost: 50,
 		charge: 'Pierce Charge'
 	},
@@ -5617,6 +5657,7 @@ const skillData: AnySkillData[] = [
 		name: 'Impaler\'s Revenge',
 		affinity: 'Passive',
 		type: 'MISC',
+		target: 'Self',
 		cost: null,
 		description: 'Chance of granting Impaler\'s Animus after user\'s attack has been Nulled/Drained/Repelled.',
 		unique: null
@@ -5636,13 +5677,14 @@ const skillData: AnySkillData[] = [
 			display: 'Severe',
 			type: 'Physical'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'smt'
 	},
 	{
 		name: 'Imposing Stance',
 		affinity: 'Special',
 		type: 'MISC',
+		target: 'Self',
 		cost: 48,
 		description: 'Remove Press Turn Icon on enemy\'s next turn.'
 	},
@@ -5661,7 +5703,7 @@ const skillData: AnySkillData[] = [
 			display: 'Severe',
 			type: 'Magic'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'smt'
 	},
 	{
@@ -5669,7 +5711,7 @@ const skillData: AnySkillData[] = [
 		affinity: 'Support',
 		type: 'SUPPORT',
 		unique: null,
-		range: 'Ally',
+		target: 'One Ally',
 		cost: 50,
 		buffs: {
 			Attack: 2,
@@ -5683,6 +5725,7 @@ const skillData: AnySkillData[] = [
 		name: 'Inspiring Leader',
 		affinity: 'Passive',
 		type: 'MISC',
+		target: 'Self',
 		cost: null,
 		description: '(Demon) EXP earned increases when the demon\'s Lv is lower than the Nahobino.'
 	},
@@ -5698,6 +5741,7 @@ const skillData: AnySkillData[] = [
 		name: 'Intercalation',
 		affinity: 'Passive',
 		type: 'MISC',
+		target: 'Self',
 		cost: null,
 		description: 'After evading an attack, adds 1 Press Turn Icon at the start of the user\'s next turn.',
 		unique: null
@@ -5706,6 +5750,7 @@ const skillData: AnySkillData[] = [
 		name: 'Intimidate',
 		affinity: 'Passive',
 		type: 'MISC',
+		target: 'Self',
 		cost: null,
 		description: 'Urges a demon lower level or younger than the user to accept the deal.'
 	},
@@ -5737,7 +5782,7 @@ const skillData: AnySkillData[] = [
 		name: 'Invitation',
 		affinity: 'Recovery',
 		type: 'RECOVERY',
-		range: 'Ally',
+		target: 'One Ally',
 		cost: 65,
 		amount: 'Full',
 		buffs: [],
@@ -5761,7 +5806,7 @@ const skillData: AnySkillData[] = [
 			display: 'Medium',
 			type: 'Physical'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'smt'
 	},
 	{
@@ -5779,7 +5824,7 @@ const skillData: AnySkillData[] = [
 			display: 'Medium',
 			type: 'Magic'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'smt',
 		flags: [
 			'Attack Down'
@@ -5803,7 +5848,7 @@ const skillData: AnySkillData[] = [
 			display: 'Medium',
 			type: 'Magic'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'smt'
 	},
 	{
@@ -5826,7 +5871,7 @@ const skillData: AnySkillData[] = [
 			display: 'Weak',
 			type: 'Physical'
 		},
-		range: 'Random',
+		target: 'Random Foes',
 		series: 'smt'
 	},
 	{
@@ -5850,7 +5895,7 @@ const skillData: AnySkillData[] = [
 			display: 'Severe',
 			type: 'Physical'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'smt'
 	},
 	{
@@ -5868,13 +5913,14 @@ const skillData: AnySkillData[] = [
 			display: 'Heavy',
 			type: 'Magic'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'smt'
 	},
 	{
 		name: 'Judgement',
 		affinity: 'Light',
 		type: 'SET',
+		target: 'One Foe',
 		amount: 1,
 		cost: null
 	},
@@ -5895,7 +5941,7 @@ const skillData: AnySkillData[] = [
 			display: 'Severe',
 			type: 'Magic'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'smt'
 	},
 	{
@@ -5918,7 +5964,7 @@ const skillData: AnySkillData[] = [
 			display: 'Medium',
 			type: 'Magic'
 		},
-		range: 'Random',
+		target: 'Random Foes',
 		series: 'smt'
 	},
 	{
@@ -5926,6 +5972,7 @@ const skillData: AnySkillData[] = [
 		affinity: 'Almighty',
 		type: 'MISC',
 		unique: null,
+		target: 'One Foe',
 		cost: 0,
 		description: 'Medium Almighty damage to 1 foe. User dies.'
 	},
@@ -5934,6 +5981,7 @@ const skillData: AnySkillData[] = [
 		affinity: 'Recovery',
 		type: 'MISC',
 		unique: null,
+		target: 'All',
 		cost: 25,
 		description: 'Anything could happen...'
 	},
@@ -5942,7 +5990,7 @@ const skillData: AnySkillData[] = [
 		affinity: 'Support',
 		type: 'BARRIER',
 		unique: null,
-		range: 'Party',
+		target: 'All Allies',
 		cost: 15,
 		barriers: [
 			'Damage Down'
@@ -5966,7 +6014,7 @@ const skillData: AnySkillData[] = [
 			display: 'Heavy',
 			type: 'Physical'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'smt'
 	},
 	{
@@ -5987,13 +6035,14 @@ const skillData: AnySkillData[] = [
 			display: 'Severe',
 			type: 'Physical'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'smt'
 	},
 	{
 		name: 'Kidnap',
 		affinity: 'Special',
 		type: 'MISC',
+		target: 'One Foe',
 		cost: 0,
 		description: 'Recruits a demon younger than the user.'
 	},
@@ -6014,7 +6063,7 @@ const skillData: AnySkillData[] = [
 			display: 'Heavy',
 			type: 'Magic'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'smt'
 	},
 	{
@@ -6033,7 +6082,7 @@ const skillData: AnySkillData[] = [
 			display: 'Weak',
 			type: 'Physical'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'persona'
 	},
 	{
@@ -6054,7 +6103,7 @@ const skillData: AnySkillData[] = [
 			display: 'Medium',
 			type: 'Magic'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'smt'
 	},
 	{
@@ -6079,7 +6128,7 @@ const skillData: AnySkillData[] = [
 			display: 'Medium',
 			type: 'Magic'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'persona'
 	},
 	{
@@ -6096,7 +6145,7 @@ const skillData: AnySkillData[] = [
 			display: 'Heavy',
 			type: 'Magic'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'persona'
 	},
 	{
@@ -6113,7 +6162,7 @@ const skillData: AnySkillData[] = [
 			display: 'Weak',
 			type: 'Magic'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'persona'
 	},
 	{
@@ -6138,7 +6187,7 @@ const skillData: AnySkillData[] = [
 			display: 'Colossal',
 			type: 'Physical'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'persona'
 	},
 	{
@@ -6194,7 +6243,7 @@ const skillData: AnySkillData[] = [
 			display: 'Weak',
 			type: 'Magic'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'smt'
 	},
 	{
@@ -6223,7 +6272,7 @@ const skillData: AnySkillData[] = [
 			display: 'Medium',
 			type: 'Magic'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'persona'
 	},
 	{
@@ -6244,7 +6293,7 @@ const skillData: AnySkillData[] = [
 		name: 'Life Wall',
 		affinity: 'Support',
 		type: 'BARRIER',
-		range: 'Party',
+		target: 'All Allies',
 		cost: 95,
 		barriers: [
 			'Repel Phys',
@@ -6255,6 +6304,7 @@ const skillData: AnySkillData[] = [
 		name: 'Liftoma',
 		affinity: 'Special',
 		type: 'MISC',
+		target: 'All Allies',
 		cost: 10,
 		description: 'Levitates party to avoid damage surfaces until next new Kagutsuchi phase.'
 	},
@@ -6285,13 +6335,14 @@ const skillData: AnySkillData[] = [
 			display: 'Severe',
 			type: 'Magic'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'smt'
 	},
 	{
 		name: 'Lightoma',
 		affinity: 'Special',
 		type: 'MISC',
+		target: 'All Allies',
 		cost: 10,
 		description: 'Illuminates dark areas until next new Kagutsuchi phase.'
 	},
@@ -6310,7 +6361,7 @@ const skillData: AnySkillData[] = [
 		name: 'Light Block',
 		affinity: 'Support',
 		type: 'BARRIER',
-		range: 'Party',
+		target: 'All Allies',
 		cost: 40,
 		barriers: [
 			'Light Nullify'
@@ -6345,7 +6396,7 @@ const skillData: AnySkillData[] = [
 			display: 'Heavy',
 			type: 'Magic'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'smt'
 	},
 	{
@@ -6369,7 +6420,7 @@ const skillData: AnySkillData[] = [
 		affinity: 'Recovery',
 		type: 'RECOVERY',
 		unique: null,
-		range: 'Party',
+		target: 'All Allies',
 		cost: 150,
 		amount: 'Moderate',
 		buffs: [
@@ -6407,7 +6458,7 @@ const skillData: AnySkillData[] = [
 			display: 'Severe',
 			type: 'Magic'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'smt'
 	},
 	{
@@ -6431,7 +6482,7 @@ const skillData: AnySkillData[] = [
 			display: 'Severe',
 			type: 'Physical'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'smt'
 	},
 	{
@@ -6452,7 +6503,7 @@ const skillData: AnySkillData[] = [
 			display: 'Heavy',
 			type: 'Physical'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'smt'
 	},
 	{
@@ -6469,14 +6520,14 @@ const skillData: AnySkillData[] = [
 			display: 'Minimal',
 			type: 'Physical'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'persona'
 	},
 	{
 		name: 'Lullaby',
 		affinity: 'Ailment',
 		type: 'AILMENT',
-		range: 'All',
+		target: 'All Foes',
 		cost: 25,
 		ailments: [
 			'Sleep'
@@ -6487,7 +6538,7 @@ const skillData: AnySkillData[] = [
 		name: 'Luminescent Mirage',
 		affinity: 'Support',
 		type: 'BARRIER',
-		range: 'Self',
+		target: 'Self',
 		cost: 100,
 		barriers: [
 			'Absolute Evasion'
@@ -6513,13 +6564,15 @@ const skillData: AnySkillData[] = [
 			display: 'Weak',
 			type: 'Physical'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'smt'
 	},
 	{
 		name: 'Lunation Flux',
 		affinity: 'Recovery',
 		type: 'MISC',
+		unique: null,
+		target: 'Self',
 		cost: 10,
 		description: 'Slight MP recovery to self. Does not consume a Press Turn Icon.'
 	},
@@ -6540,14 +6593,14 @@ const skillData: AnySkillData[] = [
 			display: 'Weak',
 			type: 'Physical'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'smt'
 	},
 	{
 		name: 'Luster Candy',
 		affinity: 'Support',
 		type: 'SUPPORT',
-		range: 'Party',
+		target: 'All Allies',
 		cost: 150,
 		buffs: {
 			Attack: 1,
@@ -6561,7 +6614,7 @@ const skillData: AnySkillData[] = [
 		name: 'Mabaisudi',
 		affinity: 'Recovery',
 		type: 'RECOVERY',
-		range: 'Party',
+		target: 'All Allies',
 		cost: 8,
 		ailments: [
 			'Burn',
@@ -6584,7 +6637,7 @@ const skillData: AnySkillData[] = [
 			display: 'Weak',
 			type: 'Magic'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'smt'
 	},
 	{
@@ -6604,7 +6657,7 @@ const skillData: AnySkillData[] = [
 			display: 'Severe',
 			type: 'Magic'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'smt'
 	},
 	{
@@ -6621,7 +6674,7 @@ const skillData: AnySkillData[] = [
 			display: 'Heavy',
 			type: 'Magic'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'smt'
 	},
 	{
@@ -6638,7 +6691,7 @@ const skillData: AnySkillData[] = [
 			display: 'Medium',
 			type: 'Magic'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'smt'
 	},
 	{
@@ -6659,7 +6712,7 @@ const skillData: AnySkillData[] = [
 			display: 'Severe',
 			type: 'Physical'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'smt'
 	},
 	{
@@ -6685,7 +6738,7 @@ const skillData: AnySkillData[] = [
 			display: 'Weak',
 			type: 'Magic'
 		},
-		range: 'Random',
+		target: 'Random Foes',
 		series: 'smt'
 	},
 	{
@@ -6704,7 +6757,7 @@ const skillData: AnySkillData[] = [
 			display: 'Heavy',
 			type: 'Physical'
 		},
-		range: 'Random',
+		target: 'Random Foes',
 		series: 'smt'
 	},
 	{
@@ -6727,7 +6780,7 @@ const skillData: AnySkillData[] = [
 			display: 'Weak',
 			type: 'Physical'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'smt'
 	},
 	{
@@ -6744,7 +6797,7 @@ const skillData: AnySkillData[] = [
 			display: 'Medium',
 			type: 'Magic'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'persona'
 	},
 	{
@@ -6761,7 +6814,7 @@ const skillData: AnySkillData[] = [
 			display: 'Heavy',
 			type: 'Magic'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'persona'
 	},
 	{
@@ -6778,7 +6831,7 @@ const skillData: AnySkillData[] = [
 			display: 'Weak',
 			type: 'Magic'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'persona'
 	},
 	{
@@ -6795,7 +6848,7 @@ const skillData: AnySkillData[] = [
 			display: 'Weak',
 			type: 'Magic'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'persona'
 	},
 	{
@@ -6812,7 +6865,7 @@ const skillData: AnySkillData[] = [
 			display: 'Heavy',
 			type: 'Magic'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'persona'
 	},
 	{
@@ -6829,13 +6882,14 @@ const skillData: AnySkillData[] = [
 			display: 'Medium',
 			type: 'Magic'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'persona'
 	},
 	{
 		name: 'Magaon',
 		affinity: 'Support',
 		type: 'MISC',
+		target: 'One Foe',
 		cost: 10,
 		description: 'Removes smirk from one foe.'
 	},
@@ -6853,7 +6907,7 @@ const skillData: AnySkillData[] = [
 			display: 'Weak',
 			type: 'Magic'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'persona'
 	},
 	{
@@ -6870,7 +6924,7 @@ const skillData: AnySkillData[] = [
 			display: 'Heavy',
 			type: 'Magic'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'persona'
 	},
 	{
@@ -6887,7 +6941,7 @@ const skillData: AnySkillData[] = [
 			display: 'Medium',
 			type: 'Magic'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'persona'
 	},
 	{
@@ -6913,7 +6967,7 @@ const skillData: AnySkillData[] = [
 			display: 'Heavy',
 			type: 'Magic'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'persona'
 	},
 	{
@@ -6921,6 +6975,7 @@ const skillData: AnySkillData[] = [
 		affinity: 'Special',
 		type: 'MISC',
 		unique: null,
+		target: 'One Ally',
 		cost: 35,
 		description: 'Drain HP from 1 ally. User\'s affinity resistances, skills, and Magatsuhi Skills will change depending on the drained ally.'
 	},
@@ -6949,7 +7004,7 @@ const skillData: AnySkillData[] = [
 			display: 'Heavy',
 			type: 'Magic'
 		},
-		range: 'Random',
+		target: 'Random Foes',
 		series: 'smt'
 	},
 	{
@@ -6972,7 +7027,7 @@ const skillData: AnySkillData[] = [
 			display: 'Medium',
 			type: 'Magic'
 		},
-		range: 'Random',
+		target: 'Random Foes',
 		series: 'smt'
 	},
 	{
@@ -6992,7 +7047,7 @@ const skillData: AnySkillData[] = [
 			display: 'Weak',
 			type: 'Magic'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'smt'
 	},
 	{
@@ -7015,7 +7070,7 @@ const skillData: AnySkillData[] = [
 			display: 'Severe',
 			type: 'Magic'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'smt'
 	},
 	{
@@ -7035,7 +7090,7 @@ const skillData: AnySkillData[] = [
 			display: 'Heavy',
 			type: 'Magic'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'smt'
 	},
 	{
@@ -7053,7 +7108,7 @@ const skillData: AnySkillData[] = [
 			display: 'Medium',
 			type: 'Magic'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'smt',
 		flags: [
 			'Charmed Boost'
@@ -7066,7 +7121,7 @@ const skillData: AnySkillData[] = [
 		],
 		affinity: 'Ailment',
 		type: 'AILMENT',
-		range: 'One',
+		target: 'One Foe',
 		cost: 10,
 		ailments: [
 			'Seal'
@@ -7080,7 +7135,7 @@ const skillData: AnySkillData[] = [
 		],
 		affinity: 'Ailment',
 		type: 'AILMENT',
-		range: 'All',
+		target: 'All Foes',
 		cost: 25,
 		ailments: [
 			'Seal'
@@ -7091,7 +7146,7 @@ const skillData: AnySkillData[] = [
 		name: 'Makakaja',
 		affinity: 'Support',
 		type: 'SUPPORT',
-		range: 'Party',
+		target: 'All Allies',
 		cost: 18,
 		buffs: {
 			Magic: 1
@@ -7110,7 +7165,7 @@ const skillData: AnySkillData[] = [
 		name: 'Makarakarn',
 		affinity: 'Support',
 		type: 'BARRIER',
-		range: 'Ally',
+		target: 'One Ally',
 		cost: 50,
 		barriers: [
 			'Repel Magic'
@@ -7130,7 +7185,7 @@ const skillData: AnySkillData[] = [
 			display: 'Medium',
 			type: 'Magic'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'persona'
 	},
 	{
@@ -7147,7 +7202,7 @@ const skillData: AnySkillData[] = [
 			display: 'Heavy',
 			type: 'Magic'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'persona'
 	},
 	{
@@ -7164,7 +7219,7 @@ const skillData: AnySkillData[] = [
 			display: 'Weak',
 			type: 'Magic'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'persona'
 	},
 	{
@@ -7184,7 +7239,7 @@ const skillData: AnySkillData[] = [
 			display: 'Weak',
 			type: 'Magic'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'smt'
 	},
 	{
@@ -7207,7 +7262,7 @@ const skillData: AnySkillData[] = [
 			display: 'Severe',
 			type: 'Magic'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'smt'
 	},
 	{
@@ -7227,7 +7282,7 @@ const skillData: AnySkillData[] = [
 			display: 'Heavy',
 			type: 'Magic'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'smt'
 	},
 	{
@@ -7280,7 +7335,7 @@ const skillData: AnySkillData[] = [
 			display: 'Weak',
 			type: 'Magic'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'persona'
 	},
 	{
@@ -7297,7 +7352,7 @@ const skillData: AnySkillData[] = [
 			display: 'Medium',
 			type: 'Magic'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'persona'
 	},
 	{
@@ -7314,7 +7369,7 @@ const skillData: AnySkillData[] = [
 			display: 'Heavy',
 			type: 'Magic'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'persona'
 	},
 	{
@@ -7331,7 +7386,7 @@ const skillData: AnySkillData[] = [
 			display: 'Weak',
 			type: 'Magic'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'smt'
 	},
 	{
@@ -7351,7 +7406,7 @@ const skillData: AnySkillData[] = [
 			display: 'Severe',
 			type: 'Magic'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'smt'
 	},
 	{
@@ -7368,7 +7423,7 @@ const skillData: AnySkillData[] = [
 			display: 'Heavy',
 			type: 'Magic'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'smt'
 	},
 	{
@@ -7385,14 +7440,14 @@ const skillData: AnySkillData[] = [
 			display: 'Medium',
 			type: 'Magic'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'smt'
 	},
 	{
 		name: 'Marakukaja',
 		affinity: 'Support',
 		type: 'SUPPORT',
-		range: 'Party',
+		target: 'All Allies',
 		cost: 30,
 		buffs: {
 			Defense: 1
@@ -7404,7 +7459,7 @@ const skillData: AnySkillData[] = [
 		name: 'Marakunda',
 		affinity: 'Support',
 		type: 'SUPPORT',
-		range: 'All Foes',
+		target: 'All Foes',
 		cost: 30,
 		buffs: {
 			Defense: -1
@@ -7433,14 +7488,14 @@ const skillData: AnySkillData[] = [
 			display: 'Severe',
 			type: 'Magic'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'persona'
 	},
 	{
 		name: 'Marin Karin',
 		affinity: 'Ailment',
 		type: 'AILMENT',
-		range: 'One',
+		target: 'One Foe',
 		cost: 10,
 		ailments: [
 			'Charm'
@@ -7464,14 +7519,14 @@ const skillData: AnySkillData[] = [
 			display: 'Severe',
 			type: 'Physical'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'persona'
 	},
 	{
 		name: 'Masukukaja',
 		affinity: 'Support',
 		type: 'SUPPORT',
-		range: 'Party',
+		target: 'All Allies',
 		cost: 30,
 		buffs: {
 			'Accuracy/Evasion': 1
@@ -7483,7 +7538,7 @@ const skillData: AnySkillData[] = [
 		name: 'Masukunda',
 		affinity: 'Support',
 		type: 'SUPPORT',
-		range: 'All Foes',
+		target: 'All Foes',
 		cost: 30,
 		buffs: {
 			'Accuracy/Evasion': -1
@@ -7495,7 +7550,7 @@ const skillData: AnySkillData[] = [
 		name: 'Matarukaja',
 		affinity: 'Support',
 		type: 'SUPPORT',
-		range: 'Party',
+		target: 'All Allies',
 		cost: 30,
 		buffs: {
 			Attack: 1
@@ -7507,7 +7562,7 @@ const skillData: AnySkillData[] = [
 		name: 'Matarunda',
 		affinity: 'Support',
 		type: 'SUPPORT',
-		range: 'All Foes',
+		target: 'All Foes',
 		cost: 30,
 		buffs: {
 			Attack: -1
@@ -7520,7 +7575,7 @@ const skillData: AnySkillData[] = [
 		affinity: 'Recovery',
 		type: 'RECOVERY',
 		unique: true,
-		range: 'Party',
+		target: 'All Allies',
 		cost: 140,
 		ailments: 'All',
 		amount: 'Moderate',
@@ -7543,7 +7598,7 @@ const skillData: AnySkillData[] = [
 			display: 'Weak',
 			type: 'Magic'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'smt'
 	},
 	{
@@ -7560,7 +7615,7 @@ const skillData: AnySkillData[] = [
 			display: 'Severe',
 			type: 'Magic'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'smt'
 	},
 	{
@@ -7577,7 +7632,7 @@ const skillData: AnySkillData[] = [
 			display: 'Heavy',
 			type: 'Magic'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'smt'
 	},
 	{
@@ -7594,7 +7649,7 @@ const skillData: AnySkillData[] = [
 			display: 'Medium',
 			type: 'Magic'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'smt'
 	},
 	{
@@ -7611,7 +7666,7 @@ const skillData: AnySkillData[] = [
 			display: 'Weak',
 			type: 'Magic'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'smt'
 	},
 	{
@@ -7631,7 +7686,7 @@ const skillData: AnySkillData[] = [
 			display: 'Severe',
 			type: 'Magic'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'smt'
 	},
 	{
@@ -7648,7 +7703,7 @@ const skillData: AnySkillData[] = [
 			display: 'Heavy',
 			type: 'Magic'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'smt'
 	},
 	{
@@ -7665,14 +7720,14 @@ const skillData: AnySkillData[] = [
 			display: 'Medium',
 			type: 'Magic'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'smt'
 	},
 	{
 		name: 'Media',
 		affinity: 'Recovery',
 		type: 'RECOVERY',
-		range: 'Party',
+		target: 'All Allies',
 		cost: 30,
 		amount: 'Slight'
 	},
@@ -7680,7 +7735,7 @@ const skillData: AnySkillData[] = [
 		name: 'Mediarahan',
 		affinity: 'Recovery',
 		type: 'RECOVERY',
-		range: 'Party',
+		target: 'All Allies',
 		cost: 150,
 		amount: 'Full'
 	},
@@ -7688,7 +7743,7 @@ const skillData: AnySkillData[] = [
 		name: 'Mediarama',
 		affinity: 'Recovery',
 		type: 'RECOVERY',
-		range: 'Party',
+		target: 'All Allies',
 		cost: 60,
 		amount: 'Moderate'
 	},
@@ -7710,7 +7765,7 @@ const skillData: AnySkillData[] = [
 			display: 'Weak',
 			type: 'Magic'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'smt'
 	},
 	{
@@ -7727,7 +7782,7 @@ const skillData: AnySkillData[] = [
 			display: 'Heavy',
 			type: 'Physical'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'smt'
 	},
 	{
@@ -7744,7 +7799,7 @@ const skillData: AnySkillData[] = [
 			display: 'Severe',
 			type: 'Physical'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'persona'
 	},
 	{
@@ -7761,7 +7816,7 @@ const skillData: AnySkillData[] = [
 			display: 'Medium',
 			type: 'Magic'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'smt'
 	},
 	{
@@ -7782,7 +7837,7 @@ const skillData: AnySkillData[] = [
 			display: 'Medium to severe',
 			type: 'Magic'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'smt'
 	},
 	{
@@ -7803,7 +7858,7 @@ const skillData: AnySkillData[] = [
 			display: 'Severe',
 			type: 'Magic'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'smt'
 	},
 	{
@@ -7820,7 +7875,7 @@ const skillData: AnySkillData[] = [
 			display: 'Heavy',
 			type: 'Magic'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'smt'
 	},
 	{
@@ -7837,7 +7892,7 @@ const skillData: AnySkillData[] = [
 			display: 'Severe',
 			type: 'Magic'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'smt'
 	},
 	{
@@ -7867,7 +7922,7 @@ const skillData: AnySkillData[] = [
 			display: 'Weak',
 			type: 'Physical'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'persona'
 	},
 	{
@@ -7891,7 +7946,7 @@ const skillData: AnySkillData[] = [
 		],
 		affinity: 'Recovery',
 		type: 'RECOVERY',
-		range: 'Party',
+		target: 'All Allies',
 		cost: 30,
 		ailments: 'All',
 		amount: null
@@ -7900,6 +7955,7 @@ const skillData: AnySkillData[] = [
 		name: 'Might',
 		affinity: 'Passive',
 		type: 'MISC',
+		target: 'Self',
 		cost: null,
 		description: 'Triples Critical Rate of user\'s basic attack.'
 	},
@@ -7920,7 +7976,7 @@ const skillData: AnySkillData[] = [
 			display: 'Heavy',
 			type: 'Physical'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'smt'
 	},
 	{
@@ -7937,7 +7993,7 @@ const skillData: AnySkillData[] = [
 			display: 'Medium',
 			type: 'Physical'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'persona'
 	},
 	{
@@ -7960,7 +8016,7 @@ const skillData: AnySkillData[] = [
 			display: 'Medium',
 			type: 'Physical'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'persona'
 	},
 	{
@@ -7977,7 +8033,7 @@ const skillData: AnySkillData[] = [
 			display: 'Medium',
 			type: 'Physical'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'persona'
 	},
 	{
@@ -7995,7 +8051,7 @@ const skillData: AnySkillData[] = [
 			display: 'Medium',
 			type: 'Physical'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'persona'
 	},
 	{
@@ -8003,7 +8059,7 @@ const skillData: AnySkillData[] = [
 		affinity: 'Recovery',
 		type: 'RECOVERY',
 		unique: null,
-		range: 'Party',
+		target: 'All Allies',
 		cost: 20,
 		amount: 'Slight'
 	},
@@ -8028,7 +8084,7 @@ const skillData: AnySkillData[] = [
 			display: 'Heavy',
 			type: 'Magic'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'smt'
 	},
 	{
@@ -8060,7 +8116,7 @@ const skillData: AnySkillData[] = [
 			display: 'Medium',
 			type: 'Magic'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'smt'
 	},
 	{
@@ -8084,7 +8140,7 @@ const skillData: AnySkillData[] = [
 			display: 'Heavy',
 			type: 'Magic'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'smt'
 	},
 	{
@@ -8109,7 +8165,7 @@ const skillData: AnySkillData[] = [
 			display: 'Medium',
 			type: 'Physical'
 		},
-		range: 'Random',
+		target: 'Random Foes',
 		series: 'smt'
 	},
 	{
@@ -8132,7 +8188,7 @@ const skillData: AnySkillData[] = [
 			display: 'Medium',
 			type: 'Physical'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'smt'
 	},
 	{
@@ -8158,7 +8214,7 @@ const skillData: AnySkillData[] = [
 			display: 'Severe',
 			type: 'Magic'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'smt',
 		flags: [
 			'Pierce'
@@ -8186,7 +8242,7 @@ const skillData: AnySkillData[] = [
 			display: 'Severe',
 			type: 'Magic'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'smt'
 	},
 	{
@@ -8207,7 +8263,7 @@ const skillData: AnySkillData[] = [
 			display: 'Severe',
 			type: 'Magic'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'persona'
 	},
 	{
@@ -8224,7 +8280,7 @@ const skillData: AnySkillData[] = [
 			display: 'Heavy',
 			type: 'Physical'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'smt'
 	},
 	{
@@ -8232,7 +8288,7 @@ const skillData: AnySkillData[] = [
 		affinity: 'Support',
 		type: 'BARRIER',
 		unique: true,
-		range: 'Party',
+		target: 'All Allies',
 		cost: 40,
 		barriers: [
 			'Phys Nullify'
@@ -8256,7 +8312,7 @@ const skillData: AnySkillData[] = [
 			display: 'Weak',
 			type: 'Magic'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'smt'
 	},
 	{
@@ -8276,7 +8332,7 @@ const skillData: AnySkillData[] = [
 			display: 'Severe',
 			type: 'Magic'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'smt'
 	},
 	{
@@ -8302,7 +8358,7 @@ const skillData: AnySkillData[] = [
 			display: 'Heavy',
 			type: 'Magic'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'smt'
 	},
 	{
@@ -8323,13 +8379,14 @@ const skillData: AnySkillData[] = [
 			display: 'Severe',
 			type: 'Physical'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'smt'
 	},
 	{
 		name: 'Murderous Glee',
 		affinity: 'Passive',
 		type: 'MISC',
+		target: 'Self',
 		cost: null,
 		description: 'Greatly increases Critical Rate.'
 	},
@@ -8353,14 +8410,14 @@ const skillData: AnySkillData[] = [
 			display: 'Medium',
 			type: 'Physical'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'persona'
 	},
 	{
 		name: 'Mute Gaze',
 		affinity: 'Ailment',
 		type: 'AILMENT',
-		range: 'One',
+		target: 'One Foe',
 		cost: 5,
 		ailments: [
 			'Seal'
@@ -8371,7 +8428,7 @@ const skillData: AnySkillData[] = [
 		name: 'Mutudi',
 		affinity: 'Recovery',
 		type: 'RECOVERY',
-		range: 'Ally',
+		target: 'One Ally',
 		cost: 3,
 		ailments: [
 			'Seal'
@@ -8398,7 +8455,7 @@ const skillData: AnySkillData[] = [
 			display: 'Weak',
 			type: 'Physical'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'persona'
 	},
 	{
@@ -8417,7 +8474,7 @@ const skillData: AnySkillData[] = [
 			display: 'Heavy',
 			type: 'Physical'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'persona'
 	},
 	{
@@ -8436,7 +8493,7 @@ const skillData: AnySkillData[] = [
 			display: 'Weak',
 			type: 'Physical'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'smt'
 	},
 	{
@@ -8456,7 +8513,7 @@ const skillData: AnySkillData[] = [
 			display: 'Heavy',
 			type: 'Magic'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'persona'
 	},
 	{
@@ -8476,7 +8533,7 @@ const skillData: AnySkillData[] = [
 			display: 'Heavy',
 			type: 'Magic'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'smt'
 	},
 	{
@@ -8499,7 +8556,7 @@ const skillData: AnySkillData[] = [
 			display: 'Medium',
 			type: 'Physical'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'persona'
 	},
 	{
@@ -8516,7 +8573,7 @@ const skillData: AnySkillData[] = [
 			display: 'Medium',
 			type: 'Physical'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'smt'
 	},
 	{
@@ -8533,7 +8590,7 @@ const skillData: AnySkillData[] = [
 			display: 'Weak',
 			type: 'Physical'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'smt'
 	},
 	{
@@ -8555,7 +8612,7 @@ const skillData: AnySkillData[] = [
 			display: 'Weak',
 			type: 'Physical'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'smt'
 	},
 	{
@@ -8578,7 +8635,7 @@ const skillData: AnySkillData[] = [
 			display: 'Heavy',
 			type: 'Physical'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'persona'
 	},
 	{
@@ -8586,7 +8643,7 @@ const skillData: AnySkillData[] = [
 		affinity: 'Recovery',
 		type: 'RECOVERY',
 		unique: true,
-		range: 'Party',
+		target: 'All Allies',
 		cost: 24,
 		amount: 'Half',
 		buffs: [
@@ -8599,7 +8656,7 @@ const skillData: AnySkillData[] = [
 		name: 'Nervundi',
 		affinity: 'Recovery',
 		type: 'RECOVERY',
-		range: 'Ally',
+		target: 'One Ally',
 		cost: 3,
 		ailments: [
 			'Exhaust',
@@ -8631,14 +8688,14 @@ const skillData: AnySkillData[] = [
 			display: 'Heavy',
 			type: 'Physical'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'smt'
 	},
 	{
 		name: 'Nocturnal Flash',
 		affinity: 'Ailment',
 		type: 'AILMENT',
-		range: 'All',
+		target: 'All Foes',
 		cost: 12,
 		ailments: [
 			'Mirage'
@@ -8901,7 +8958,7 @@ const skillData: AnySkillData[] = [
 		name: 'Old One',
 		affinity: 'Ailment',
 		type: 'AILMENT',
-		range: 'All',
+		target: 'All Foes',
 		cost: 12,
 		ailments: [
 			'Enervate'
@@ -8912,7 +8969,7 @@ const skillData: AnySkillData[] = [
 		name: 'Ominous Words',
 		affinity: 'Ailment',
 		type: 'AILMENT',
-		range: 'One',
+		target: 'One Foe',
 		cost: 5,
 		ailments: [
 			'Despair'
@@ -8933,7 +8990,7 @@ const skillData: AnySkillData[] = [
 			display: 'Severe',
 			type: 'Physical'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'persona'
 	},
 	{
@@ -8956,7 +9013,7 @@ const skillData: AnySkillData[] = [
 			display: 'Medium',
 			type: 'Physical'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'persona'
 	},
 	{
@@ -8971,7 +9028,7 @@ const skillData: AnySkillData[] = [
 		affinity: 'Recovery',
 		type: 'RECOVERY',
 		unique: true,
-		range: 'Party',
+		target: 'All Allies',
 		cost: 38,
 		amount: 'Full',
 		buffs: [],
@@ -8983,7 +9040,7 @@ const skillData: AnySkillData[] = [
 		name: 'Pandemic Bomb',
 		affinity: 'Ailment',
 		type: 'AILMENT',
-		range: 'All',
+		target: 'All Foes',
 		cost: 15,
 		ailments: [
 			'Sick'
@@ -9008,14 +9065,14 @@ const skillData: AnySkillData[] = [
 			display: 'Medium',
 			type: 'Physical'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'smt'
 	},
 	{
 		name: 'Panic Voice',
 		affinity: 'Ailment',
 		type: 'AILMENT',
-		range: 'All',
+		target: 'All Foes',
 		cost: 20,
 		ailments: [
 			'Confusion'
@@ -9036,7 +9093,7 @@ const skillData: AnySkillData[] = [
 			display: 'Severe',
 			type: 'Magic'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'persona'
 	},
 	{
@@ -9058,7 +9115,7 @@ const skillData: AnySkillData[] = [
 			display: 'Medium',
 			type: 'Physical'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'smt'
 	},
 	{
@@ -9081,7 +9138,7 @@ const skillData: AnySkillData[] = [
 			display: 'Medium',
 			type: 'Physical'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'smt'
 	},
 	{
@@ -9091,7 +9148,7 @@ const skillData: AnySkillData[] = [
 		],
 		affinity: 'Recovery',
 		type: 'RECOVERY',
-		range: 'Ally',
+		target: 'One Ally',
 		cost: 8,
 		ailments: 'All',
 		amount: null
@@ -9114,14 +9171,14 @@ const skillData: AnySkillData[] = [
 			display: 'Heavy',
 			type: 'Physical'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'smt'
 	},
 	{
 		name: 'Petradi',
 		affinity: 'Recovery',
 		type: 'RECOVERY',
-		range: 'Ally',
+		target: 'One Ally',
 		cost: 10,
 		ailments: [
 			'Stone'
@@ -9133,7 +9190,7 @@ const skillData: AnySkillData[] = [
 		affinity: 'Ailment',
 		type: 'AILMENT',
 		unique: true,
-		range: 'All',
+		target: 'All Foes',
 		cost: 4,
 		ailments: [
 			'Sleep'
@@ -9144,7 +9201,7 @@ const skillData: AnySkillData[] = [
 		name: 'Phys Block',
 		affinity: 'Support',
 		type: 'BARRIER',
-		range: 'Party',
+		target: 'All Allies',
 		cost: 70,
 		barriers: [
 			'Phys Nullify'
@@ -9175,14 +9232,14 @@ const skillData: AnySkillData[] = [
 			display: 'Weak',
 			type: 'Physical'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'smt'
 	},
 	{
 		name: 'Poisma',
 		affinity: 'Ailment',
 		type: 'AILMENT',
-		range: 'One',
+		target: 'One Foe',
 		cost: 10,
 		ailments: [
 			'Poison'
@@ -9193,6 +9250,7 @@ const skillData: AnySkillData[] = [
 		name: 'Poison Adept',
 		affinity: 'Passive',
 		type: 'MISC',
+		target: 'Self',
 		cost: null,
 		description: 'Increases effects of Poison.'
 	},
@@ -9216,7 +9274,7 @@ const skillData: AnySkillData[] = [
 			display: 'Medium',
 			type: 'Physical'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'persona'
 	},
 	{
@@ -9231,7 +9289,7 @@ const skillData: AnySkillData[] = [
 		name: 'Poison Breath',
 		affinity: 'Ailment',
 		type: 'AILMENT',
-		range: 'All',
+		target: 'All Foes',
 		cost: 15,
 		ailments: [
 			'Confusion'
@@ -9261,13 +9319,14 @@ const skillData: AnySkillData[] = [
 			display: 'Medium',
 			type: 'Physical'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'smt'
 	},
 	{
 		name: 'Poison Master',
 		affinity: 'Passive',
 		type: 'MISC',
+		target: 'Self',
 		cost: null,
 		description: 'Greatly increases effects of Poison.'
 	},
@@ -9275,7 +9334,7 @@ const skillData: AnySkillData[] = [
 		name: 'Poison Mist',
 		affinity: 'Ailment',
 		type: 'AILMENT',
-		range: 'All',
+		target: 'All Foes',
 		cost: 12,
 		ailments: [
 			'Poison'
@@ -9302,7 +9361,7 @@ const skillData: AnySkillData[] = [
 			display: 'Weak',
 			type: 'Physical'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'persona'
 	},
 	{
@@ -9316,7 +9375,7 @@ const skillData: AnySkillData[] = [
 		name: 'Posumudi',
 		affinity: 'Recovery',
 		type: 'RECOVERY',
-		range: 'Ally',
+		target: 'One Ally',
 		cost: 3,
 		ailments: [
 			'Poison'
@@ -9340,7 +9399,7 @@ const skillData: AnySkillData[] = [
 			display: 'Medium to severe',
 			type: 'Physical'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'smt'
 	},
 	{
@@ -9357,7 +9416,7 @@ const skillData: AnySkillData[] = [
 			display: 'Medium',
 			type: 'Physical'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'persona'
 	},
 	{
@@ -9381,7 +9440,7 @@ const skillData: AnySkillData[] = [
 			display: 'Severe',
 			type: 'Physical'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'persona'
 	},
 	{
@@ -9389,7 +9448,7 @@ const skillData: AnySkillData[] = [
 		affinity: 'Ailment',
 		type: 'AILMENT',
 		unique: true,
-		range: 'All',
+		target: 'All Foes',
 		cost: 35,
 		ailments: [
 			'Confusion',
@@ -9403,7 +9462,7 @@ const skillData: AnySkillData[] = [
 		affinity: 'Support',
 		type: 'CHARGE',
 		unique: null,
-		range: 'Ally',
+		target: 'One Ally',
 		cost: 15,
 		charge: 'Magic Charge'
 	},
@@ -9421,7 +9480,7 @@ const skillData: AnySkillData[] = [
 			display: 'Colossal',
 			type: 'Physical'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'persona'
 	},
 	{
@@ -9438,7 +9497,7 @@ const skillData: AnySkillData[] = [
 			display: 'Heavy',
 			type: 'Magic'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'smt',
 		unique: true,
 		flags: [
@@ -9476,7 +9535,7 @@ const skillData: AnySkillData[] = [
 			display: 'Heavy',
 			type: 'Magic'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'smt'
 	},
 	{
@@ -9484,7 +9543,7 @@ const skillData: AnySkillData[] = [
 		affinity: 'Support',
 		type: 'SUPPORT',
 		unique: true,
-		range: 'All Foes',
+		target: 'All Foes',
 		cost: 65,
 		buffs: {
 			Attack: 2,
@@ -9510,7 +9569,7 @@ const skillData: AnySkillData[] = [
 			display: 'Weak',
 			type: 'Magic'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'persona'
 	},
 	{
@@ -9527,7 +9586,7 @@ const skillData: AnySkillData[] = [
 			display: 'Medium',
 			type: 'Magic'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'persona'
 	},
 	{
@@ -9544,7 +9603,7 @@ const skillData: AnySkillData[] = [
 			display: 'Heavy',
 			type: 'Magic'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'persona'
 	},
 	{
@@ -9584,7 +9643,7 @@ const skillData: AnySkillData[] = [
 			display: 'Severe',
 			type: 'Magic'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'persona'
 	},
 	{
@@ -9601,7 +9660,7 @@ const skillData: AnySkillData[] = [
 			display: 'Severe',
 			type: 'Magic'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'persona'
 	},
 	{
@@ -9615,7 +9674,7 @@ const skillData: AnySkillData[] = [
 		name: 'Pulinpa',
 		affinity: 'Ailment',
 		type: 'AILMENT',
-		range: 'One',
+		target: 'One Foe',
 		cost: 10,
 		ailments: [
 			'Confusion'
@@ -9639,7 +9698,7 @@ const skillData: AnySkillData[] = [
 			display: 'Medium',
 			type: 'Physical'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'smt'
 	},
 	{
@@ -9657,7 +9716,7 @@ const skillData: AnySkillData[] = [
 			display: 'Severe',
 			type: 'Magic'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'smt',
 		flags: [
 			'Pierce'
@@ -9682,7 +9741,7 @@ const skillData: AnySkillData[] = [
 			display: 'Weak',
 			type: 'Physical'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'smt'
 	},
 	{
@@ -9702,7 +9761,7 @@ const skillData: AnySkillData[] = [
 			display: 'Minimal',
 			type: 'Magic'
 		},
-		range: 'Random',
+		target: 'Random Foes',
 		series: 'smt'
 	},
 	{
@@ -9728,7 +9787,7 @@ const skillData: AnySkillData[] = [
 			display: 'Severe',
 			type: 'Magic'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'smt'
 	},
 	{
@@ -9746,7 +9805,7 @@ const skillData: AnySkillData[] = [
 			display: 'Severe',
 			type: 'Magic'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'smt'
 	},
 	{
@@ -9764,7 +9823,7 @@ const skillData: AnySkillData[] = [
 			display: 'Severe',
 			type: 'Magic'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'smt'
 	},
 	{
@@ -9782,7 +9841,7 @@ const skillData: AnySkillData[] = [
 			display: 'Severe',
 			type: 'Magic'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'smt'
 	},
 	{
@@ -9801,7 +9860,7 @@ const skillData: AnySkillData[] = [
 			display: 'Medium',
 			type: 'Magic'
 		},
-		range: 'Random',
+		target: 'Random Foes',
 		series: 'smt'
 	},
 	{
@@ -9809,6 +9868,7 @@ const skillData: AnySkillData[] = [
 		affinity: 'Passive',
 		type: 'MISC',
 		unique: true,
+		target: 'Self',
 		cost: null,
 		description: 'Increases user\'s damage by 50%.'
 	},
@@ -9829,14 +9889,14 @@ const skillData: AnySkillData[] = [
 			display: 'Heavy',
 			type: 'Physical'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'persona'
 	},
 	{
 		name: 'Rakukaja',
 		affinity: 'Support',
 		type: 'SUPPORT',
-		range: 'Ally',
+		target: 'One Ally',
 		cost: 8,
 		buffs: {
 			Defense: 1
@@ -9848,7 +9908,7 @@ const skillData: AnySkillData[] = [
 		name: 'Rakunda',
 		affinity: 'Support',
 		type: 'SUPPORT',
-		range: 'One',
+		target: 'One Foe',
 		cost: 8,
 		buffs: {
 			Defense: -1
@@ -9872,7 +9932,7 @@ const skillData: AnySkillData[] = [
 			display: 'Medium',
 			type: 'Physical'
 		},
-		range: 'Random',
+		target: 'Random Foes',
 		series: 'smt'
 	},
 	{
@@ -9889,7 +9949,7 @@ const skillData: AnySkillData[] = [
 			display: 'Weak',
 			type: 'Physical'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'smt'
 	},
 	{
@@ -9897,7 +9957,7 @@ const skillData: AnySkillData[] = [
 		affinity: 'Support',
 		type: 'SUPPORT',
 		unique: true,
-		range: 'Party',
+		target: 'All Allies',
 		cost: 10,
 		buffs: {
 			Attack: null,
@@ -9911,7 +9971,7 @@ const skillData: AnySkillData[] = [
 		name: 'Rebellion',
 		affinity: 'Support',
 		type: 'CRIT',
-		range: 'Ally',
+		target: 'One Ally',
 		cost: 5
 	},
 	{
@@ -9932,7 +9992,7 @@ const skillData: AnySkillData[] = [
 			display: 'Heavy',
 			type: 'Physical'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'smt'
 	},
 	{
@@ -9953,13 +10013,14 @@ const skillData: AnySkillData[] = [
 			display: 'Colossal',
 			type: 'Magic'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'persona'
 	},
 	{
 		name: 'Rebel Soul',
 		affinity: 'Passive',
 		type: 'MISC',
+		target: 'Self',
 		cost: null,
 		description: 'Showtime guage increases more quickly.'
 	},
@@ -9984,14 +10045,14 @@ const skillData: AnySkillData[] = [
 			display: 'Severe',
 			type: 'Physical'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'smt'
 	},
 	{
 		name: 'Recarm',
 		affinity: 'Recovery',
 		type: 'RECOVERY',
-		range: 'Ally',
+		target: 'One Dead Stocked Ally',
 		cost: 20,
 		amount: 'Half',
 		buffs: [],
@@ -10004,6 +10065,7 @@ const skillData: AnySkillData[] = [
 		affinity: 'Recovery',
 		type: 'MISC',
 		unique: null,
+		target: 'All Allies',
 		cost: null,
 		description: 'Fully revive and recover party but user\'s HP drops to 1.'
 	},
@@ -10012,7 +10074,7 @@ const skillData: AnySkillData[] = [
 		affinity: 'Support',
 		type: 'SUPPORT',
 		unique: true,
-		range: 'Ally',
+		target: 'One Ally',
 		cost: 8,
 		buffs: {
 			'Accuracy/Evasion': 2
@@ -10055,7 +10117,7 @@ const skillData: AnySkillData[] = [
 		name: 'Re Patra',
 		affinity: 'Recovery',
 		type: 'RECOVERY',
-		range: 'Ally',
+		target: 'One Ally',
 		cost: 5,
 		ailments: [
 			'Mirage'
@@ -10369,7 +10431,7 @@ const skillData: AnySkillData[] = [
 		affinity: 'Ailment',
 		type: 'AILMENT',
 		unique: null,
-		range: 'One',
+		target: 'One Foe',
 		cost: 0,
 		ailments: [
 			'Rage'
@@ -10381,7 +10443,7 @@ const skillData: AnySkillData[] = [
 		affinity: 'Recovery',
 		type: 'RECOVERY',
 		unique: null,
-		range: 'Ally',
+		target: 'One Stocked Ally',
 		cost: 100,
 		amount: 'Full',
 		buffs: [],
@@ -10394,13 +10456,14 @@ const skillData: AnySkillData[] = [
 		name: 'Revolution',
 		affinity: 'Support',
 		type: 'CRIT',
-		range: 'All',
+		target: 'All',
 		cost: 5
 	},
 	{
 		name: 'Riberama',
 		affinity: 'Support',
 		type: 'MISC',
+		target: 'All Allies',
 		cost: 35,
 		description: 'Prevents enemies from fleeing in the field and increases chance of consecutive encounters until the next new moon.'
 	},
@@ -10418,7 +10481,7 @@ const skillData: AnySkillData[] = [
 			display: 'Severe',
 			type: 'Physical'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'persona'
 	},
 	{
@@ -10438,7 +10501,7 @@ const skillData: AnySkillData[] = [
 			display: 'Heavy',
 			type: 'Physical'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'persona'
 	},
 	{
@@ -10456,7 +10519,7 @@ const skillData: AnySkillData[] = [
 			display: 'Severe',
 			type: 'Magic'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'smt',
 		flags: [
 			'Pierce'
@@ -10480,7 +10543,7 @@ const skillData: AnySkillData[] = [
 			display: 'Severe',
 			type: 'Magic'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'smt'
 	},
 	{
@@ -10512,7 +10575,7 @@ const skillData: AnySkillData[] = [
 			display: 'Heavy',
 			type: 'Magic'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'smt'
 	},
 	{
@@ -10530,13 +10593,14 @@ const skillData: AnySkillData[] = [
 			display: 'Heavy',
 			type: 'Magic'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'smt'
 	},
 	{
 		name: 'Sabbatma',
 		affinity: 'Special',
 		type: 'MISC',
+		target: 'One Alive Stocked Ally',
 		cost: 18,
 		description: 'Summons an ally demon.'
 	},
@@ -10545,6 +10609,7 @@ const skillData: AnySkillData[] = [
 		affinity: 'Almighty',
 		type: 'MISC',
 		unique: null,
+		target: 'Random Foes',
 		cost: 0,
 		description: 'Heavy strength-based Almighty damage to random foes. User dies.'
 	},
@@ -10567,13 +10632,14 @@ const skillData: AnySkillData[] = [
 			display: 'Heavy',
 			type: 'Magic'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'smt'
 	},
 	{
 		name: 'Safeguard',
 		affinity: 'Passive',
 		type: 'MISC',
+		target: 'Self',
 		cost: null,
 		description: 'Being Evaded/Nulled/Drained/Repelled doesn\'t consume additional Press Turn Icons.'
 	},
@@ -10592,7 +10658,7 @@ const skillData: AnySkillData[] = [
 			display: 'Medium',
 			type: 'Physical'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'smt'
 	},
 	{
@@ -10600,7 +10666,7 @@ const skillData: AnySkillData[] = [
 		affinity: 'Recovery',
 		type: 'RECOVERY',
 		unique: true,
-		range: 'Party',
+		target: 'All Allies',
 		cost: 180,
 		amount: 'Slight',
 		buffs: [
@@ -10616,7 +10682,7 @@ const skillData: AnySkillData[] = [
 		name: 'Salvation',
 		affinity: 'Recovery',
 		type: 'RECOVERY',
-		range: 'Party',
+		target: 'All Allies',
 		cost: 48,
 		ailments: 'All',
 		amount: 'Full'
@@ -10625,7 +10691,7 @@ const skillData: AnySkillData[] = [
 		name: 'Samarecarm',
 		affinity: 'Recovery',
 		type: 'RECOVERY',
-		range: 'Ally',
+		target: 'One Dead Stocked Ally',
 		cost: 60,
 		amount: 'Full',
 		buffs: [],
@@ -10660,13 +10726,14 @@ const skillData: AnySkillData[] = [
 			display: 'Weak',
 			type: 'Magic'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'smt'
 	},
 	{
 		name: 'Scout',
 		affinity: 'Special',
 		type: 'MISC',
+		target: 'One Foe',
 		cost: 0,
 		description: 'Recruits a female demon younger than the user.'
 	},
@@ -10689,7 +10756,7 @@ const skillData: AnySkillData[] = [
 			display: 'Weak',
 			type: 'Physical'
 		},
-		range: 'Random',
+		target: 'Random Foes',
 		series: 'smt'
 	},
 	{
@@ -10709,7 +10776,7 @@ const skillData: AnySkillData[] = [
 			display: 'Medium',
 			type: 'Magic'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'smt'
 	},
 	{
@@ -10732,7 +10799,7 @@ const skillData: AnySkillData[] = [
 			display: 'Medium',
 			type: 'Physical'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'persona'
 	},
 	{
@@ -10761,7 +10828,7 @@ const skillData: AnySkillData[] = [
 			display: 'Weak',
 			type: 'Physical'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'smt',
 		unique: true,
 		flags: [
@@ -10777,6 +10844,7 @@ const skillData: AnySkillData[] = [
 		affinity: 'Almighty',
 		type: 'MISC',
 		unique: null,
+		target: 'All Foes',
 		cost: null,
 		description: 'Medium Almighty damage to all foes. User dies.'
 	},
@@ -10785,6 +10853,7 @@ const skillData: AnySkillData[] = [
 		affinity: 'Passive',
 		type: 'MISC',
 		unique: true,
+		target: 'Self',
 		cost: null,
 		description: 'Raises all stats by 1 stage every time own weak point is hit.'
 	},
@@ -10806,7 +10875,7 @@ const skillData: AnySkillData[] = [
 			display: 'Weak',
 			type: 'Magic'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'smt'
 	},
 	{
@@ -10826,7 +10895,7 @@ const skillData: AnySkillData[] = [
 			display: 'Heavy',
 			type: 'Physical'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'smt'
 	},
 	{
@@ -10836,7 +10905,7 @@ const skillData: AnySkillData[] = [
 		],
 		affinity: 'Ailment',
 		type: 'AILMENT',
-		range: 'All',
+		target: 'All Foes',
 		cost: 25,
 		ailments: [
 			'Charm'
@@ -10861,6 +10930,7 @@ const skillData: AnySkillData[] = [
 		name: 'Sharp Student',
 		affinity: 'Passive',
 		type: 'MISC',
+		target: 'Self',
 		cost: null,
 		description: 'Decreases chance of being hit by a Critical.'
 	},
@@ -10868,7 +10938,7 @@ const skillData: AnySkillData[] = [
 		name: 'Shibaboo',
 		affinity: 'Ailment',
 		type: 'AILMENT',
-		range: 'One',
+		target: 'One Foe',
 		cost: 5,
 		ailments: [
 			'Bind'
@@ -10880,7 +10950,7 @@ const skillData: AnySkillData[] = [
 		affinity: 'Support',
 		type: 'BARRIER',
 		unique: null,
-		range: 'Party',
+		target: 'All Allies',
 		cost: 160,
 		barriers: [
 			'Shield of Justice'
@@ -10903,7 +10973,7 @@ const skillData: AnySkillData[] = [
 			display: 'Weak',
 			type: 'Magic'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'persona'
 	},
 	{
@@ -10933,7 +11003,7 @@ const skillData: AnySkillData[] = [
 			display: 'Weak',
 			type: 'Magic'
 		},
-		range: 'Random',
+		target: 'Random Foes',
 		series: 'smt'
 	},
 	{
@@ -10951,14 +11021,14 @@ const skillData: AnySkillData[] = [
 			display: 'Heavy',
 			type: 'Magic'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'smt'
 	},
 	{
 		name: 'Silent Prayer',
 		affinity: 'Support',
 		type: 'SUPPORT',
-		range: 'All',
+		target: 'All Foes',
 		cost: 25,
 		buffs: {
 			Attack: null,
@@ -10986,7 +11056,7 @@ const skillData: AnySkillData[] = [
 			display: 'Medium',
 			type: 'Magic'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'smt'
 	},
 	{
@@ -11003,7 +11073,7 @@ const skillData: AnySkillData[] = [
 			display: 'Weak',
 			type: 'Physical'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'persona'
 	},
 	{
@@ -11020,7 +11090,7 @@ const skillData: AnySkillData[] = [
 			display: 'Weak',
 			type: 'Physical'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'persona'
 	},
 	{
@@ -11043,7 +11113,7 @@ const skillData: AnySkillData[] = [
 			display: 'Medium',
 			type: 'Physical'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'persona'
 	},
 	{
@@ -11066,7 +11136,7 @@ const skillData: AnySkillData[] = [
 			display: 'Medium',
 			type: 'Physical'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'persona'
 	},
 	{
@@ -11081,7 +11151,7 @@ const skillData: AnySkillData[] = [
 		name: 'Slumber Vortex',
 		affinity: 'Ailment',
 		type: 'AILMENT',
-		range: 'All',
+		target: 'All Foes',
 		cost: 35,
 		ailments: [
 			'Sleep',
@@ -11093,6 +11163,7 @@ const skillData: AnySkillData[] = [
 		name: 'Smile Charge',
 		affinity: 'Support',
 		type: 'MISC',
+		target: 'Self',
 		cost: 50,
 		description: 'Induces smirk on self. Cannot be used if inflicted with an ailment.'
 	},
@@ -11119,7 +11190,7 @@ const skillData: AnySkillData[] = [
 			display: 'Heavy',
 			type: 'Physical'
 		},
-		range: 'Random',
+		target: 'Random Foes',
 		series: 'smt'
 	},
 	{
@@ -11136,7 +11207,7 @@ const skillData: AnySkillData[] = [
 			display: 'Medium',
 			type: 'Physical'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'persona'
 	},
 	{
@@ -11157,7 +11228,7 @@ const skillData: AnySkillData[] = [
 			display: 'Weak',
 			type: 'Physical'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'smt'
 	},
 	{
@@ -11165,6 +11236,7 @@ const skillData: AnySkillData[] = [
 		affinity: 'Passive',
 		type: 'MISC',
 		unique: true,
+		target: 'Self',
 		cost: null,
 		description: 'Increases user\'s damage by 50%.'
 	},
@@ -11183,7 +11255,7 @@ const skillData: AnySkillData[] = [
 			display: 'Medium',
 			type: 'Magic'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'smt'
 	},
 	{
@@ -11200,7 +11272,7 @@ const skillData: AnySkillData[] = [
 			display: 'Weak',
 			type: 'Physical'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'persona'
 	},
 	{
@@ -11218,14 +11290,14 @@ const skillData: AnySkillData[] = [
 			display: 'Severe',
 			type: 'Magic'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'smt'
 	},
 	{
 		name: 'Soul Break',
 		affinity: 'Ailment',
 		type: 'AILMENT',
-		range: 'One',
+		target: 'One Foe',
 		cost: 5,
 		ailments: [
 			'Exhaust'
@@ -11261,7 +11333,7 @@ const skillData: AnySkillData[] = [
 			display: 'Severe',
 			type: 'Magic'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'smt'
 	},
 	{
@@ -11279,8 +11351,8 @@ const skillData: AnySkillData[] = [
 		],
 		affinity: 'Passive',
 		type: 'AUTOBUFF',
-		buff: 'Accuracy/Evasion',
-		range: 'Self'
+		target: 'Self',
+		buff: 'Accuracy/Evasion'
 	},
 	{
 		name: 'Spell Master',
@@ -11309,7 +11381,7 @@ const skillData: AnySkillData[] = [
 			display: 'Weak',
 			type: 'Magic'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'smt'
 	},
 	{
@@ -11331,7 +11403,7 @@ const skillData: AnySkillData[] = [
 			display: 'Medium',
 			type: 'Magic'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'persona'
 	},
 	{
@@ -11348,7 +11420,7 @@ const skillData: AnySkillData[] = [
 		affinity: 'Ailment',
 		type: 'AILMENT',
 		unique: true,
-		range: 'All',
+		target: 'All Foes',
 		cost: 50,
 		ailments: [
 			'Mirage'
@@ -11366,7 +11438,7 @@ const skillData: AnySkillData[] = [
 		],
 		affinity: 'Almighty',
 		type: 'SUSCEPTIBILITY',
-		range: 'All',
+		target: 'All',
 		cost: 5
 	},
 	{
@@ -11400,7 +11472,7 @@ const skillData: AnySkillData[] = [
 			display: 'Heavy',
 			type: 'Physical'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'smt'
 	},
 	{
@@ -11422,7 +11494,7 @@ const skillData: AnySkillData[] = [
 			display: 'Medium',
 			type: 'Physical'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'smt'
 	},
 	{
@@ -11446,7 +11518,7 @@ const skillData: AnySkillData[] = [
 			display: 'Medium',
 			type: 'Physical'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'smt'
 	},
 	{
@@ -11470,13 +11542,14 @@ const skillData: AnySkillData[] = [
 			display: 'Medium',
 			type: 'Physical'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'persona'
 	},
 	{
 		name: 'Stone Hunt',
 		affinity: 'Special',
 		type: 'MISC',
+		target: 'One Foe',
 		cost: 0,
 		description: 'Requests gem.'
 	},
@@ -11497,7 +11570,7 @@ const skillData: AnySkillData[] = [
 			display: 'Weak',
 			type: 'Magic'
 		},
-		range: 'Random',
+		target: 'Random Foes',
 		series: 'smt'
 	},
 	{
@@ -11514,14 +11587,14 @@ const skillData: AnySkillData[] = [
 			display: 'Medium',
 			type: 'Physical'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'smt'
 	},
 	{
 		name: 'Stun Gaze',
 		affinity: 'Ailment',
 		type: 'AILMENT',
-		range: 'One',
+		target: 'One Foe',
 		cost: 5,
 		ailments: [
 			'Bind'
@@ -11553,7 +11626,7 @@ const skillData: AnySkillData[] = [
 			display: 'Medium',
 			type: 'Physical'
 		},
-		range: 'Random',
+		target: 'Random Foes',
 		series: 'smt'
 	},
 	{
@@ -11588,7 +11661,7 @@ const skillData: AnySkillData[] = [
 		name: 'Sukukaja',
 		affinity: 'Support',
 		type: 'SUPPORT',
-		range: 'Ally',
+		target: 'One Ally',
 		cost: 8,
 		buffs: {
 			'Accuracy/Evasion': 1
@@ -11600,7 +11673,7 @@ const skillData: AnySkillData[] = [
 		name: 'Sukunda',
 		affinity: 'Support',
 		type: 'SUPPORT',
-		range: 'One',
+		target: 'One Foe',
 		cost: 8,
 		buffs: {
 			'Accuracy/Evasion': -1
@@ -11620,7 +11693,7 @@ const skillData: AnySkillData[] = [
 		affinity: 'Recovery',
 		type: 'RECOVERY',
 		unique: true,
-		range: 'Ally',
+		target: 'One Ally',
 		cost: 12,
 		ailments: 'All',
 		amount: 'Moderate'
@@ -11697,7 +11770,7 @@ const skillData: AnySkillData[] = [
 			display: 'Minimal',
 			type: 'Physical'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'persona'
 	},
 	{
@@ -11714,7 +11787,7 @@ const skillData: AnySkillData[] = [
 			display: 'Colossal',
 			type: 'Physical'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'persona'
 	},
 	{
@@ -11735,14 +11808,14 @@ const skillData: AnySkillData[] = [
 			display: 'Severe',
 			type: 'Magic'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'smt'
 	},
 	{
 		name: 'Tarukaja',
 		affinity: 'Support',
 		type: 'SUPPORT',
-		range: 'Ally',
+		target: 'One Ally',
 		cost: 8,
 		buffs: {
 			Attack: 1
@@ -11754,7 +11827,7 @@ const skillData: AnySkillData[] = [
 		name: 'Tarunda',
 		affinity: 'Support',
 		type: 'SUPPORT',
-		range: 'One',
+		target: 'One Foe',
 		cost: 8,
 		buffs: {
 			Attack: -1
@@ -11776,7 +11849,7 @@ const skillData: AnySkillData[] = [
 			display: 'Medium',
 			type: 'Physical'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'smt'
 	},
 	{
@@ -11801,7 +11874,7 @@ const skillData: AnySkillData[] = [
 		],
 		affinity: 'Ailment',
 		type: 'AILMENT',
-		range: 'One',
+		target: 'One Foe',
 		cost: 5,
 		ailments: [
 			'Rage'
@@ -11812,6 +11885,7 @@ const skillData: AnySkillData[] = [
 		name: 'Technical High',
 		affinity: 'Passive',
 		type: 'MISC',
+		target: 'Self',
 		cost: null,
 		description: 'Increases duration of Kaja-type buff skills when landing a Critical.'
 	},
@@ -11836,7 +11910,7 @@ const skillData: AnySkillData[] = [
 			display: 'Medium',
 			type: 'Physical'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'smt'
 	},
 	{
@@ -11855,14 +11929,14 @@ const skillData: AnySkillData[] = [
 			display: 'Minimal',
 			type: 'Physical'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'persona'
 	},
 	{
 		name: 'Tentarafoo',
 		affinity: 'Ailment',
 		type: 'AILMENT',
-		range: 'All',
+		target: 'All Foes',
 		cost: 25,
 		ailments: [
 			'Confusion'
@@ -11895,7 +11969,7 @@ const skillData: AnySkillData[] = [
 			display: 'Heavy',
 			type: 'Physical'
 		},
-		range: 'Random',
+		target: 'Random Foes',
 		series: 'smt'
 	},
 	{
@@ -11921,7 +11995,7 @@ const skillData: AnySkillData[] = [
 			display: 'Medium',
 			type: 'Physical'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'persona'
 	},
 	{
@@ -11944,7 +12018,7 @@ const skillData: AnySkillData[] = [
 			display: 'Medium',
 			type: 'Physical'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'smt'
 	},
 	{
@@ -11961,7 +12035,7 @@ const skillData: AnySkillData[] = [
 		name: 'Tetraja',
 		affinity: 'Support',
 		type: 'BARRIER',
-		range: 'Ally',
+		target: 'One Ally',
 		cost: 24,
 		barriers: [
 			'Tetraja'
@@ -11971,7 +12045,7 @@ const skillData: AnySkillData[] = [
 		name: 'Tetrakarn',
 		affinity: 'Support',
 		type: 'BARRIER',
-		range: 'Ally',
+		target: 'One Ally',
 		cost: 50,
 		barriers: [
 			'Repel Phys'
@@ -11994,7 +12068,7 @@ const skillData: AnySkillData[] = [
 			display: 'Weak',
 			type: 'Magic'
 		},
-		range: 'Random',
+		target: 'Random Foes',
 		series: 'smt'
 	},
 	{
@@ -12002,19 +12076,19 @@ const skillData: AnySkillData[] = [
 		affinity: 'Ailment',
 		type: 'AILMENT',
 		unique: null,
+		target: 'All Foes',
 		ailments: [
 			'Dizzy',
 			'Down'
 		],
 		chance: 80,
-		cost: 30,
-		range: 'All'
+		cost: 30
 	},
 	{
 		name: 'Thermopylae',
 		affinity: 'Support',
 		type: 'SUPPORT',
-		range: 'Party',
+		target: 'All Allies',
 		cost: 30,
 		flags: [
 			'Surrounded Only'
@@ -12051,7 +12125,7 @@ const skillData: AnySkillData[] = [
 			display: 'Severe',
 			type: 'Magic'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'smt'
 	},
 	{
@@ -12070,7 +12144,7 @@ const skillData: AnySkillData[] = [
 			display: 'Medium',
 			type: 'Magic'
 		},
-		range: 'Random',
+		target: 'Random Foes',
 		series: 'smt'
 	},
 	{
@@ -12090,7 +12164,7 @@ const skillData: AnySkillData[] = [
 			display: 'Medium',
 			type: 'Physical'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'smt'
 	},
 	{
@@ -12117,7 +12191,7 @@ const skillData: AnySkillData[] = [
 			display: 'Severe',
 			type: 'Magic'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'persona'
 	},
 	{
@@ -12135,7 +12209,7 @@ const skillData: AnySkillData[] = [
 			display: 'Severe',
 			type: 'Magic'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'smt'
 	},
 	{
@@ -12154,13 +12228,14 @@ const skillData: AnySkillData[] = [
 			display: 'Medium',
 			type: 'Physical'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'persona'
 	},
 	{
 		name: 'Touch n\' Go',
 		affinity: 'Passive',
 		type: 'MISC',
+		target: 'Self',
 		cost: null,
 		description: 'Automatic Sukukaja after a Baton Pass.'
 	},
@@ -12185,14 +12260,14 @@ const skillData: AnySkillData[] = [
 			display: 'Medium',
 			type: 'Magic'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'smt'
 	},
 	{
 		name: 'Toxic Cloud',
 		affinity: 'Ailment',
 		type: 'AILMENT',
-		range: 'All',
+		target: 'All Foes',
 		cost: 25,
 		ailments: [
 			'Poison'
@@ -12203,7 +12278,7 @@ const skillData: AnySkillData[] = [
 		name: 'Toxic Spray',
 		affinity: 'Ailment',
 		type: 'AILMENT',
-		range: 'All',
+		target: 'All Foes',
 		cost: 15,
 		ailments: [
 			'Poison'
@@ -12233,13 +12308,14 @@ const skillData: AnySkillData[] = [
 			display: 'Weak',
 			type: 'Physical'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'smt'
 	},
 	{
 		name: 'Traesto',
 		affinity: 'Support',
 		type: 'MISC',
+		target: 'All Allies',
 		cost: 18,
 		description: 'Instantly escape from a dungeon.'
 	},
@@ -12247,6 +12323,7 @@ const skillData: AnySkillData[] = [
 		name: 'Trafuri',
 		affinity: 'Special',
 		type: 'MISC',
+		target: 'All Allies',
 		cost: 6,
 		description: 'Guarantees escape from escapable battles.'
 	},
@@ -12275,6 +12352,7 @@ const skillData: AnySkillData[] = [
 		name: 'Trigger Happy',
 		affinity: 'Passive',
 		type: 'MISC',
+		target: 'Self',
 		cost: null,
 		description: 'Increases chance of Critical from Gun attacks.'
 	},
@@ -12294,7 +12372,7 @@ const skillData: AnySkillData[] = [
 			display: 'Weak',
 			type: 'Physical'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'persona'
 	},
 	{
@@ -12314,7 +12392,7 @@ const skillData: AnySkillData[] = [
 			display: 'Heavy',
 			type: 'Magic'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'smt'
 	},
 	{
@@ -12322,6 +12400,7 @@ const skillData: AnySkillData[] = [
 		affinity: 'Special',
 		type: 'MISC',
 		unique: null,
+		target: 'Self',
 		cost: 0,
 		description: 'Creates a replica.'
 	},
@@ -12347,7 +12426,7 @@ const skillData: AnySkillData[] = [
 			display: 'Weak',
 			type: 'Physical'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'persona'
 	},
 	{
@@ -12373,7 +12452,7 @@ const skillData: AnySkillData[] = [
 			display: 'Medium',
 			type: 'Physical'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'smt'
 	},
 	{
@@ -12390,7 +12469,7 @@ const skillData: AnySkillData[] = [
 		affinity: 'Support',
 		type: 'CHARGE',
 		unique: null,
-		range: 'Ally',
+		target: 'One Ally',
 		cost: 15,
 		charge: 'Phys Charge'
 	},
@@ -12434,7 +12513,7 @@ const skillData: AnySkillData[] = [
 			display: 'Heavy',
 			type: 'Magic'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'smt'
 	},
 	{
@@ -12451,7 +12530,7 @@ const skillData: AnySkillData[] = [
 			display: 'Severe',
 			type: 'Magic'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'persona'
 	},
 	{
@@ -12468,7 +12547,7 @@ const skillData: AnySkillData[] = [
 			display: 'Medium',
 			type: 'Physical'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'persona'
 	},
 	{
@@ -12476,7 +12555,7 @@ const skillData: AnySkillData[] = [
 		affinity: 'Support',
 		type: 'SUPPORT',
 		unique: null,
-		range: 'Party',
+		target: 'All Allies',
 		cost: 20,
 		buffs: {
 			Defense: 1
@@ -12513,7 +12592,7 @@ const skillData: AnySkillData[] = [
 			display: 'Medium',
 			type: 'Physical'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'smt'
 	},
 	{
@@ -12533,7 +12612,7 @@ const skillData: AnySkillData[] = [
 			display: 'Weak',
 			type: 'Physical'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'smt'
 	},
 	{
@@ -12541,7 +12620,7 @@ const skillData: AnySkillData[] = [
 		affinity: 'Ailment',
 		type: 'AILMENT',
 		unique: true,
-		range: 'All',
+		target: 'All Foes',
 		cost: 65,
 		ailments: [
 			'Poison',
@@ -12567,7 +12646,7 @@ const skillData: AnySkillData[] = [
 			display: 'Medium',
 			type: 'Physical'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'persona'
 	},
 	{
@@ -12602,7 +12681,7 @@ const skillData: AnySkillData[] = [
 			display: 'Heavy',
 			type: 'Physical'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'persona'
 	},
 	{
@@ -12626,7 +12705,7 @@ const skillData: AnySkillData[] = [
 			display: 'Medium',
 			type: 'Magic'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'smt'
 	},
 	{
@@ -12649,7 +12728,7 @@ const skillData: AnySkillData[] = [
 			display: 'Heavy',
 			type: 'Physical'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'persona'
 	},
 	{
@@ -12671,7 +12750,7 @@ const skillData: AnySkillData[] = [
 			display: 'Heavy',
 			type: 'Physical'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'smt'
 	},
 	{
@@ -12688,7 +12767,7 @@ const skillData: AnySkillData[] = [
 			display: 'Severe',
 			type: 'Physical'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'persona'
 	},
 	{
@@ -12698,7 +12777,7 @@ const skillData: AnySkillData[] = [
 		],
 		affinity: 'Ailment',
 		type: 'AILMENT',
-		range: 'All',
+		target: 'All Foes',
 		cost: 12,
 		ailments: [
 			'Rage'
@@ -12723,14 +12802,14 @@ const skillData: AnySkillData[] = [
 			display: 'Severe',
 			type: 'Magic'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'smt'
 	},
 	{
 		name: 'War Cry',
 		affinity: 'Support',
 		type: 'SUPPORT',
-		range: 'All Foes',
+		target: 'All Foes',
 		cost: 65,
 		buffs: {
 			Attack: -1,
@@ -12767,7 +12846,7 @@ const skillData: AnySkillData[] = [
 			display: 'Weak',
 			type: 'Magic'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'smt'
 	},
 	{
@@ -12785,7 +12864,7 @@ const skillData: AnySkillData[] = [
 			display: 'Heavy',
 			type: 'Magic'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'smt'
 	},
 	{
@@ -12805,7 +12884,7 @@ const skillData: AnySkillData[] = [
 			display: 'Medium',
 			type: 'Physical'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'smt'
 	},
 	{
@@ -12813,7 +12892,7 @@ const skillData: AnySkillData[] = [
 		affinity: 'Ailment',
 		type: 'AILMENT',
 		unique: null,
-		range: 'All',
+		target: 'All Foes',
 		cost: 0,
 		ailments: [
 			'Confusion'
@@ -12824,7 +12903,7 @@ const skillData: AnySkillData[] = [
 		name: 'Will of Flame',
 		affinity: 'Support',
 		type: 'CHARGE',
-		range: 'Party',
+		target: 'All Allies',
 		cost: 30,
 		charge: 'Fire Pierce'
 	},
@@ -12832,7 +12911,7 @@ const skillData: AnySkillData[] = [
 		name: 'Will of Frost',
 		affinity: 'Support',
 		type: 'CHARGE',
-		range: 'Party',
+		target: 'All Allies',
 		cost: 30,
 		charge: 'Ice Pierce'
 	},
@@ -12840,7 +12919,7 @@ const skillData: AnySkillData[] = [
 		name: 'Will of Thunder',
 		affinity: 'Support',
 		type: 'CHARGE',
-		range: 'Party',
+		target: 'All Allies',
 		cost: 30,
 		charge: 'Elec Pierce'
 	},
@@ -12848,7 +12927,7 @@ const skillData: AnySkillData[] = [
 		name: 'Will of Wind',
 		affinity: 'Support',
 		type: 'CHARGE',
-		range: 'Party',
+		target: 'All Allies',
 		cost: 30,
 		charge: 'Force Pierce'
 	},
@@ -12896,7 +12975,7 @@ const skillData: AnySkillData[] = [
 			display: 'Weak',
 			type: 'Magic'
 		},
-		range: 'Random',
+		target: 'Random Foes',
 		series: 'smt'
 	},
 	{
@@ -12913,7 +12992,7 @@ const skillData: AnySkillData[] = [
 			display: 'Medium',
 			type: 'Physical'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'smt'
 	},
 	{
@@ -12931,7 +13010,7 @@ const skillData: AnySkillData[] = [
 		affinity: 'Support',
 		type: 'SUPPORT',
 		unique: null,
-		range: 'Party',
+		target: 'All Allies',
 		cost: 10,
 		flags: [
 			'Cure Non-Special Ailments'
@@ -12954,6 +13033,7 @@ const skillData: AnySkillData[] = [
 		name: 'Workaholic',
 		affinity: 'Passive',
 		type: 'MISC',
+		target: 'Self',
 		cost: null,
 		description: 'Obtain much more EXP after battles.'
 	},
@@ -12977,7 +13057,7 @@ const skillData: AnySkillData[] = [
 			display: 'Weak',
 			type: 'Physical'
 		},
-		range: 'Random',
+		target: 'Random Foes',
 		series: 'smt'
 	},
 	{
@@ -13001,7 +13081,7 @@ const skillData: AnySkillData[] = [
 			display: 'Severe',
 			type: 'Physical'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'smt'
 	},
 	{
@@ -13022,7 +13102,7 @@ const skillData: AnySkillData[] = [
 			display: 'Weak',
 			type: 'Physical'
 		},
-		range: 'All',
+		target: 'All Foes',
 		series: 'smt'
 	},
 	{
@@ -13030,7 +13110,7 @@ const skillData: AnySkillData[] = [
 		affinity: 'Recovery',
 		type: 'RECOVERY',
 		unique: null,
-		range: 'Party',
+		target: 'All Allies',
 		cost: 25,
 		amount: 'Moderate',
 		buffs: [
@@ -13051,7 +13131,7 @@ const skillData: AnySkillData[] = [
 			display: 'Weak',
 			type: 'Magic'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'smt'
 	},
 	{
@@ -13071,7 +13151,7 @@ const skillData: AnySkillData[] = [
 			display: 'Severe',
 			type: 'Magic'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'smt'
 	},
 	{
@@ -13088,7 +13168,7 @@ const skillData: AnySkillData[] = [
 			display: 'Heavy',
 			type: 'Magic'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'smt'
 	},
 	{
@@ -13105,7 +13185,7 @@ const skillData: AnySkillData[] = [
 			display: 'Medium',
 			type: 'Magic'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'smt'
 	},
 	{
@@ -13122,7 +13202,7 @@ const skillData: AnySkillData[] = [
 			display: 'Weak',
 			type: 'Magic'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'smt'
 	},
 	{
@@ -13143,7 +13223,7 @@ const skillData: AnySkillData[] = [
 			display: 'Severe',
 			type: 'Magic'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'smt'
 	},
 	{
@@ -13160,7 +13240,7 @@ const skillData: AnySkillData[] = [
 			display: 'Heavy',
 			type: 'Magic'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'smt'
 	},
 	{
@@ -13177,7 +13257,7 @@ const skillData: AnySkillData[] = [
 			display: 'Medium',
 			type: 'Magic'
 		},
-		range: 'One',
+		target: 'One Foe',
 		series: 'smt'
 	}
 ];
