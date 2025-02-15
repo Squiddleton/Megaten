@@ -460,10 +460,12 @@ const skillData: AnySkillData[] = [
 			stat: 'MP',
 			amount: 110
 		},
+		debuffs: {
+			Attack: BuffValue.Decrease,
+			Defense: BuffValue.Decrease,
+			'Accuracy/Evasion': BuffValue.Decrease
+		},
 		flags: [
-			'Attack Down',
-			'Defense Down',
-			'Accuracy/Evasion Down',
 			'Smirk-Dependent Debuffs'
 		],
 		power: {
@@ -1104,9 +1106,9 @@ const skillData: AnySkillData[] = [
 			stat: 'MP',
 			amount: 15
 		},
-		flags: [
-			'Accuracy/Evasion Down'
-		],
+		debuffs: {
+			'Accuracy/Evasion': BuffValue.Decrease
+		},
 		power: {
 			amount: 130,
 			display: 'Weak',
@@ -1125,8 +1127,10 @@ const skillData: AnySkillData[] = [
 			stat: 'MP',
 			amount: 30
 		},
+		debuffs: {
+			Defense: BuffValue.Decrease
+		},
 		flags: [
-			'Defense Down',
 			'Smirk Instakill'
 		],
 		power: {
@@ -1250,8 +1254,12 @@ const skillData: AnySkillData[] = [
 			stat: 'MP',
 			amount: 150
 		},
+		debuffs: {
+			Attack: BuffValue.NegateBuffs,
+			Defense: BuffValue.NegateBuffs,
+			'Accuracy/Evasion': BuffValue.NegateBuffs
+		},
 		flags: [
-			'Negate Buffs',
 			'Pierce'
 		],
 		power: {
@@ -1454,9 +1462,9 @@ const skillData: AnySkillData[] = [
 		target: 'All Allies',
 		cost: 24,
 		amount: 'Half',
-		buffs: [
-			'Accuracy/Evasion'
-		]
+		buffs: {
+			'Accuracy/Evasion': BuffValue.Increase
+		}
 	},
 	{
 		name: 'Call Allies',
@@ -1504,9 +1512,11 @@ const skillData: AnySkillData[] = [
 			'Charm'
 		],
 		chance: 80,
-		flags: [
-			'Negate Buffs'
-		]
+		debuffs: {
+			Attack: BuffValue.NegateBuffs,
+			Defense: BuffValue.NegateBuffs,
+			'Accuracy/Evasion': BuffValue.NegateDebuffs
+		}
 	},
 	{
 		name: 'Carnage Fang',
@@ -1606,9 +1616,9 @@ const skillData: AnySkillData[] = [
 		target: 'One Ally',
 		cost: 10,
 		amount: 'Moderate',
-		buffs: [
-			'Attack'
-		]
+		buffs: {
+			Attack: BuffValue.Increase
+		}
 	},
 	{
 		name: 'Chaos Blade',
@@ -1675,9 +1685,9 @@ const skillData: AnySkillData[] = [
 			stat: 'MP',
 			amount: 60
 		},
-		flags: [
-			'Accuracy/Evasion Down'
-		],
+		debuffs: {
+			'Accuracy/Evasion': BuffValue.Decrease
+		},
 		power: {
 			amount: 125,
 			display: 'Medium',
@@ -2397,9 +2407,9 @@ const skillData: AnySkillData[] = [
 			'Poison'
 		],
 		chance: 90,
-		flags: [
-			'Accuracy/Evasion Greatly Down'
-		]
+		debuffs: {
+			'Accuracy/Evasion': BuffValue.GreatlyDecrease
+		}
 	},
 	{
 		name: 'Dekaja',
@@ -2948,9 +2958,9 @@ const skillData: AnySkillData[] = [
 			'Charm'
 		],
 		chance: 70,
-		flags: [
-			'Defense Greatly Down'
-		]
+		debuffs: {
+			Defense: BuffValue.GreatlyDecrease
+		}
 	},
 	{
 		name: 'Dream Needle',
@@ -3316,9 +3326,9 @@ const skillData: AnySkillData[] = [
 			'Seal'
 		],
 		chance: 40,
-		flags: [
-			'Attack Down'
-		]
+		debuffs: {
+			Attack: BuffValue.Decrease
+		}
 	},
 	{
 		name: 'Enter Yoshitsune',
@@ -3621,9 +3631,9 @@ const skillData: AnySkillData[] = [
 			stat: 'MP',
 			amount: 15
 		},
-		flags: [
-			'Attack Down'
-		],
+		debuffs: {
+			Attack: BuffValue.Decrease
+		},
 		power: {
 			amount: 130,
 			display: 'Weak',
@@ -3689,7 +3699,9 @@ const skillData: AnySkillData[] = [
 		name: 'Fierce Roar',
 		affinity: 'Support',
 		type: 'TAUNT',
-		buff: 'Defense',
+		buffs: {
+			Defense: BuffValue.Increase
+		},
 		cost: 30
 	},
 	{
@@ -4108,10 +4120,10 @@ const skillData: AnySkillData[] = [
 			'Charm'
 		],
 		chance: 40,
-		flags: [
-			'Attack Greatly Down',
-			'Defense Greatly Down'
-		]
+		debuffs: {
+			Attack: BuffValue.GreatlyDecrease,
+			Defense: BuffValue.GreatlyDecrease
+		}
 	},
 	{
 		name: 'Full Analysis',
@@ -4481,11 +4493,11 @@ const skillData: AnySkillData[] = [
 		target: 'All Allies',
 		cost: 180,
 		amount: 'Moderate',
-		buffs: [
-			'Attack',
-			'Defense',
-			'Accuracy/Evasion'
-		]
+		buffs: {
+			Attack: BuffValue.Increase,
+			Defense: BuffValue.Increase,
+			'Accuracy/Evasion': BuffValue.Increase
+		}
 	},
 	{
 		name: 'Good Cheer',
@@ -4496,9 +4508,11 @@ const skillData: AnySkillData[] = [
 		cost: 20,
 		ailments: 'All',
 		amount: null,
-		flags: [
-			'Revert Debuffs'
-		]
+		buffs: {
+			Attack: BuffValue.NegateDebuffs,
+			Defense: BuffValue.NegateDebuffs,
+			'Accuracy/Evasion': BuffValue.NegateDebuffs
+		}
 	},
 	{
 		name: 'Gram Slice',
@@ -4822,9 +4836,9 @@ const skillData: AnySkillData[] = [
 		target: 'One Ally',
 		cost: 30,
 		amount: 'Slight',
-		buffs: [
-			'Double Defense'
-		]
+		buffs: {
+			Defense: BuffValue.GreatlyIncrease
+		}
 	},
 	{
 		name: 'Hassou Tobi',
@@ -4860,11 +4874,11 @@ const skillData: AnySkillData[] = [
 			'Confusion'
 		],
 		chance: 70,
-		flags: [
-			'Attack Down',
-			'Defense Down',
-			'Accuracy/Evasion Down'
-		]
+		debuffs: {
+			Attack: BuffValue.Decrease,
+			Defense: BuffValue.Decrease,
+			'Accuracy/Evasion': BuffValue.Decrease
+		}
 	},
 	{
 		name: 'Headbutt',
@@ -5116,9 +5130,11 @@ const skillData: AnySkillData[] = [
 			stat: 'MP',
 			amount: 40
 		},
-		flags: [
-			'Negate Buffs'
-		],
+		debuffs: {
+			Attack: BuffValue.NegateBuffs,
+			Defense: BuffValue.NegateBuffs,
+			'Accuracy/Evasion': BuffValue.NegateBuffs
+		},
 		power: {
 			amount: 120,
 			display: 'Medium',
@@ -5159,9 +5175,11 @@ const skillData: AnySkillData[] = [
 			stat: 'MP',
 			amount: 70
 		},
-		flags: [
-			'Negate Buffs'
-		],
+		debuffs: {
+			Attack: BuffValue.NegateBuffs,
+			Defense: BuffValue.NegateBuffs,
+			'Accuracy/Evasion': BuffValue.NegateBuffs
+		},
 		power: {
 			amount: 160,
 			display: 'Heavy',
@@ -5407,7 +5425,6 @@ const skillData: AnySkillData[] = [
 		target: 'All Allies and Stock',
 		cost: 27,
 		amount: 'Full',
-		buffs: [],
 		flags: [
 			'Revive'
 		]
@@ -5786,7 +5803,6 @@ const skillData: AnySkillData[] = [
 		target: 'One Ally',
 		cost: 65,
 		amount: 'Full',
-		buffs: [],
 		flags: [
 			'Revive',
 			'Summon'
@@ -5820,16 +5836,16 @@ const skillData: AnySkillData[] = [
 			stat: 'MP',
 			amount: 20
 		},
+		debuffs: {
+			Attack: BuffValue.Decrease
+		},
 		power: {
 			amount: 160,
 			display: 'Medium',
 			type: 'Magic'
 		},
 		target: 'One Foe',
-		series: 'smt',
-		flags: [
-			'Attack Down'
-		]
+		series: 'smt'
 	},
 	{
 		name: 'Jack Bufula',
@@ -5841,9 +5857,9 @@ const skillData: AnySkillData[] = [
 			stat: 'MP',
 			amount: 20
 		},
-		flags: [
-			'Defense Down'
-		],
+		debuffs: {
+			Defense: BuffValue.Decrease
+		},
 		power: {
 			amount: 160,
 			display: 'Medium',
@@ -6096,9 +6112,9 @@ const skillData: AnySkillData[] = [
 			stat: 'MP',
 			amount: 35
 		},
-		flags: [
-			'Defense Down'
-		],
+		debuffs: {
+			Defense: BuffValue.Decrease
+		},
 		power: {
 			amount: 110,
 			display: 'Medium',
@@ -6112,7 +6128,9 @@ const skillData: AnySkillData[] = [
 		affinity: 'Support',
 		type: 'TAUNT',
 		unique: true,
-		buff: 'Maximize Attack',
+		buffs: {
+			Attack: BuffValue.GreatlyIncrease
+		},
 		cost: 20
 	},
 	{
@@ -6424,14 +6442,11 @@ const skillData: AnySkillData[] = [
 		target: 'All Allies',
 		cost: 150,
 		amount: 'Moderate',
-		buffs: [
-			'Attack',
-			'Defense',
-			'Accuracy/Evasion'
-		],
-		flags: [
-			'Revert Debuffs'
-		]
+		buffs: {
+			Attack: BuffValue.NegateDebuffsAndIncrease,
+			Defense: BuffValue.NegateDebuffsAndIncrease,
+			'Accuracy/Evasion': BuffValue.NegateDebuffsAndIncrease
+		}
 	},
 	{
 		name: 'Light Pleroma',
@@ -7580,10 +7595,11 @@ const skillData: AnySkillData[] = [
 		cost: 140,
 		ailments: 'All',
 		amount: 'Moderate',
-		buffs: [],
-		flags: [
-			'Revert Debuffs'
-		]
+		buffs: {
+			Attack: BuffValue.NegateDebuffs,
+			Defense: BuffValue.NegateDebuffs,
+			'Accuracy/Evasion': BuffValue.NegateDebuffs
+		}
 	},
 	{
 		name: 'Mazan',
@@ -8647,11 +8663,11 @@ const skillData: AnySkillData[] = [
 		target: 'All Allies',
 		cost: 24,
 		amount: 'Half',
-		buffs: [
-			'Attack',
-			'Defense',
-			'Accuracy/Evasion'
-		]
+		buffs: {
+			Attack: BuffValue.Increase,
+			Defense: BuffValue.Increase,
+			'Accuracy/Evasion': BuffValue.Increase
+		}
 	},
 	{
 		name: 'Nervundi',
@@ -9032,10 +9048,11 @@ const skillData: AnySkillData[] = [
 		target: 'All Allies',
 		cost: 38,
 		amount: 'Full',
-		buffs: [],
-		flags: [
-			'Revert Debuffs'
-		]
+		buffs: {
+			Attack: BuffValue.NegateDebuffs,
+			Defense: BuffValue.NegateDebuffs,
+			'Accuracy/Evasion': BuffValue.NegateDebuffs
+		}
 	},
 	{
 		name: 'Pandemic Bomb',
@@ -9058,9 +9075,9 @@ const skillData: AnySkillData[] = [
 			stat: 'MP',
 			amount: 70
 		},
-		flags: [
-			'Defense Down'
-		],
+		debuffs: {
+			Defense: BuffValue.Decrease
+		},
 		power: {
 			amount: 170,
 			display: 'Medium',
@@ -9107,10 +9124,10 @@ const skillData: AnySkillData[] = [
 			stat: 'MP',
 			amount: 65
 		},
-		flags: [
-			'Attack Down',
-			'Defense Down'
-		],
+		debuffs: {
+			Attack: BuffValue.Decrease,
+			Defense: BuffValue.Decrease
+		},
 		power: {
 			amount: 180,
 			display: 'Medium',
@@ -9225,9 +9242,9 @@ const skillData: AnySkillData[] = [
 			stat: 'MP',
 			amount: 15
 		},
-		flags: [
-			'Defense Down'
-		],
+		debuffs: {
+			Defense: BuffValue.Decrease
+		},
 		power: {
 			amount: 130,
 			display: 'Weak',
@@ -9493,6 +9510,11 @@ const skillData: AnySkillData[] = [
 			stat: 'MP',
 			amount: 150
 		},
+		debuffs: {
+			Attack: BuffValue.NegateBuffsAndDecrease,
+			Defense: BuffValue.NegateBuffsAndDecrease,
+			'Accuracy/Evasion': BuffValue.NegateBuffsAndDecrease
+		},
 		power: {
 			amount: 210,
 			display: 'Heavy',
@@ -9500,13 +9522,7 @@ const skillData: AnySkillData[] = [
 		},
 		target: 'All Foes',
 		series: 'smt',
-		unique: true,
-		flags: [
-			'Negate Buffs',
-			'Attack Down',
-			'Defense Down',
-			'Accuracy/Evasion Down'
-		]
+		unique: true
 	},
 	{
 		name: 'Primordial Parturition',
@@ -10056,7 +10072,6 @@ const skillData: AnySkillData[] = [
 		target: 'One Dead Stocked Ally',
 		cost: 20,
 		amount: 'Half',
-		buffs: [],
 		flags: [
 			'Revive'
 		]
@@ -10447,7 +10462,6 @@ const skillData: AnySkillData[] = [
 		target: 'One Stocked Ally',
 		cost: 100,
 		amount: 'Full',
-		buffs: [],
 		flags: [
 			'Revive',
 			'Summon'
@@ -10624,10 +10638,10 @@ const skillData: AnySkillData[] = [
 			stat: 'MP',
 			amount: 50
 		},
-		flags: [
-			'Defense Down',
-			'Attack Down'
-		],
+		debuffs: {
+			Attack: BuffValue.Decrease,
+			Defense: BuffValue.Decrease
+		},
 		power: {
 			amount: 140,
 			display: 'Heavy',
@@ -10670,11 +10684,11 @@ const skillData: AnySkillData[] = [
 		target: 'All Allies',
 		cost: 180,
 		amount: 'Slight',
-		buffs: [
-			'Attack',
-			'Defense',
-			'Accuracy/Evasion'
-		],
+		buffs: {
+			Attack: BuffValue.Increase,
+			Defense: BuffValue.Increase,
+			'Accuracy/Evasion': BuffValue.Increase
+		},
 		flags: [
 			'Recover HP/MP'
 		]
@@ -10695,7 +10709,6 @@ const skillData: AnySkillData[] = [
 		target: 'One Dead Stocked Ally',
 		cost: 60,
 		amount: 'Full',
-		buffs: [],
 		flags: [
 			'Revive'
 		]
@@ -10718,8 +10731,10 @@ const skillData: AnySkillData[] = [
 			stat: 'MP',
 			amount: 15
 		},
+		debuffs: {
+			Attack: BuffValue.Decrease
+		},
 		flags: [
-			'Attack Down',
 			'Drain HP'
 		],
 		power: {
@@ -11049,9 +11064,9 @@ const skillData: AnySkillData[] = [
 			stat: 'MP',
 			amount: 45
 		},
-		flags: [
-			'Accuracy/Evasion Down'
-		],
+		debuffs: {
+			'Accuracy/Evasion': BuffValue.Decrease
+		},
 		power: {
 			amount: 140,
 			display: 'Medium',
@@ -11427,10 +11442,10 @@ const skillData: AnySkillData[] = [
 			'Mirage'
 		],
 		chance: 80,
-		flags: [
-			'Defense Down',
-			'Accuracy/Evasion Down'
-		]
+		debuffs: {
+			Defense: BuffValue.Decrease,
+			'Accuracy/Evasion': BuffValue.Decrease
+		}
 	},
 	{
 		name: 'Stagnant Air - Persona',
@@ -11857,14 +11872,12 @@ const skillData: AnySkillData[] = [
 		name: 'Taunt',
 		affinity: 'Support',
 		type: 'TAUNT',
-		buff: null,
 		cost: 10
 	},
 	{
 		name: 'Taunting Aura',
 		affinity: 'Support',
 		type: 'TAUNT',
-		buff: null,
 		cost: 4
 	},
 	{
@@ -12285,9 +12298,9 @@ const skillData: AnySkillData[] = [
 			'Poison'
 		],
 		chance: 85,
-		flags: [
-			'Defense Down'
-		]
+		debuffs: {
+			Defense: BuffValue.Decrease
+		}
 	},
 	{
 		name: 'Toxic Sting',
@@ -12504,11 +12517,11 @@ const skillData: AnySkillData[] = [
 			stat: 'MP',
 			amount: 240
 		},
-		flags: [
-			'Attack Greatly Down',
-			'Defense Greatly Down',
-			'Accuracy/Evasion Greatly Down'
-		],
+		debuffs: {
+			Attack: BuffValue.GreatlyDecrease,
+			Defense: BuffValue.GreatlyDecrease,
+			'Accuracy/Evasion': BuffValue.GreatlyDecrease
+		},
 		power: {
 			amount: 150,
 			display: 'Heavy',
@@ -12629,9 +12642,9 @@ const skillData: AnySkillData[] = [
 			'Bind'
 		],
 		chance: 70,
-		flags: [
-			'Attack Greatly Down'
-		]
+		debuffs: {
+			Attack: BuffValue.GreatlyDecrease
+		}
 	},
 	{
 		name: 'Vicious Strike',
@@ -13027,7 +13040,9 @@ const skillData: AnySkillData[] = [
 		affinity: 'Support',
 		type: 'TAUNT',
 		unique: true,
-		buff: 'Double Accuracy/Evasion',
+		buffs: {
+			'Accuracy/Evasion': BuffValue.GreatlyIncrease
+		},
 		cost: 5
 	},
 	{
@@ -13114,9 +13129,9 @@ const skillData: AnySkillData[] = [
 		target: 'All Allies',
 		cost: 25,
 		amount: 'Moderate',
-		buffs: [
-			'Accuracy/Evasion'
-		]
+		buffs: {
+			'Accuracy/Evasion': BuffValue.Increase
+		}
 	},
 	{
 		name: 'Zan',

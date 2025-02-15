@@ -1,5 +1,5 @@
 import type { BattleThemes } from './music.js';
-import type { AilBoostCriteria, AilDefensiveAilment, AilResistance, AilmentName, AilmentSkillFlag, AilmentTarget, AnyAffinity, AnyGame, Arcana, AttackAilments, AttackCost, AttackFlag, AttackPower, AttackTarget, AutoBuffTarget, Barrier, BarrierTarget, BasePower, BoostAffinity, BoostStack, BreakAffinity, Buff, BuffValue, Charge, ChargeTarget, CritBoostCriteria, CritTarget, DamagingAffinity, DefensiveAffinity, DefensiveSKillResistance, DemonAffinities, DemonAlignment, DemonOrigin, DemonResistances, DemonSkill, DemonStats, EndureCriteria, EvasionAffinity, EvasionBoostCriteria, HPMP, If, LightDark, MiscAffinity, NumberOrPercent, OneOrAllAilments, PersonaGame, PersonaRace, PostBattleStat, RecoveryAmount, RecoveryFlag, RecoveryTarget, RegenCriteria, RegenStat, SMTCounterAffinity, SMTRace, Series, SetAffinity, SetTarget, SingleOrDoubleBuff, SiphonCriteria, SkillPotential, SkillType, Stage, SupportAutoEffect, SupportFlag, SupportTarget, SusceptibilityTarget, Target, TauntBuff, WallAffinity } from './types.js';
+import type { AilBoostCriteria, AilDefensiveAilment, AilResistance, AilmentFlag, AilmentName, AilmentTarget, AnyAffinity, AnyGame, Arcana, AttackAilments, AttackCost, AttackFlag, AttackPower, AttackTarget, AutoBuffTarget, Barrier, BarrierTarget, BasePower, BoostAffinity, BoostStack, BreakAffinity, Buff, BuffRecord, BuffValue, Charge, ChargeTarget, CritBoostCriteria, CritTarget, DamagingAffinity, DefensiveAffinity, DefensiveSKillResistance, DemonAffinities, DemonAlignment, DemonOrigin, DemonResistances, DemonSkill, DemonStats, EndureCriteria, EvasionAffinity, EvasionBoostCriteria, HPMP, If, LightDark, MiscAffinity, NumberOrPercent, OneOrAllAilments, PersonaGame, PersonaRace, PostBattleStat, RecoveryAmount, RecoveryFlag, RecoveryTarget, RegenCriteria, RegenStat, SMTCounterAffinity, SMTRace, Series, SetAffinity, SetTarget, SiphonCriteria, SkillPotential, SkillType, Stage, SupportAutoEffect, SupportFlag, SupportTarget, SusceptibilityTarget, Target, WallAffinity } from './types.js';
 
 /** Data used for constructing a Demon instance */
 export interface DemonData<PersonaBased extends boolean = boolean> {
@@ -94,7 +94,8 @@ export interface AilmentSkillData extends SkillData {
 	ailments: AilmentName[];
 	chance: number;
 	cost: number;
-	flags?: AilmentSkillFlag[];
+	debuffs?: BuffRecord;
+	flags?: AilmentFlag[];
 }
 
 export interface AttackSkillData extends SkillData {
@@ -104,6 +105,7 @@ export interface AttackSkillData extends SkillData {
 	accuracy: number;
 	ailments?: AttackAilments | null;
 	cost: AttackCost;
+	debuffs?: BuffRecord;
 	flags?: AttackFlag[];
 	max?: number;
 	min?: number;
@@ -241,7 +243,7 @@ export interface RecoverySkillData extends SkillData {
 	target: RecoveryTarget;
 	ailments?: AilmentName[] | 'All';
 	amount: RecoveryAmount | null;
-	buffs?: SingleOrDoubleBuff[];
+	buffs?: BuffRecord;
 	cost: number;
 	flags?: RecoveryFlag[];
 }
@@ -318,7 +320,7 @@ export interface SusceptibilitySkillData extends SkillData {
 export interface TauntSkillData extends SkillData {
 	affinity: 'Support';
 	type: 'TAUNT';
-	buff: TauntBuff | null;
+	buffs?: BuffRecord;
 	cost: number;
 }
 

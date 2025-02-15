@@ -11,7 +11,9 @@ export enum BuffValue {
 	Minimize = -4,
 	NegateBuffs = -5,
 	NegateDebuffs = -6,
-	NegateAll = -7
+	NegateAll = -7,
+	NegateDebuffsAndIncrease = -8,
+	NegateBuffsAndDecrease = -9
 }
 
 /** Criteria for AilBoostSkill instances taking effect */
@@ -51,7 +53,7 @@ export interface AttackCost {
 }
 
 /** Flags for AttackSkill instances */
-export type AttackFlag = '+20% Crit Rate' | '+200% Crit Rate' | '+30% Crit Rate' | 'Afflicted Boost' | 'After Evading Only' | 'Agility Dependent Hits' | 'Asleep Boost' | 'Attack Reduced' | 'Baton Boost' | 'Chaos Target Boost' | 'Charmed Boost' | 'Confused Boost' | 'Crit Damage Boost' | 'Debuff Number Dependent' | 'Defense Greatly Down' | 'Down Boost' | 'Drain HP' | 'Drain HP/MP' | 'Drain MP' | 'Foe Number Dependent' | 'HP Dependent' | 'Law Target Boost' | 'Minimize Defense' | 'Mirage Boost' | 'Negate Buffs' | 'Negate Charges/Barriers' | 'Pierce' | 'Poisoned Boost' | 'Shroud Dependent' | 'Smirk Boost' | 'Smirk Instakill' | 'Smirk Pierce' | 'Smirk-Dependent Debuffs' | 'Static Damage' | 'Surround Boost' | 'Weakness Instakill' | 'Weather Boost' | `${Buff} Down` | `${Buff} Greatly Down`;
+export type AttackFlag = '+20% Crit Rate' | '+200% Crit Rate' | '+30% Crit Rate' | 'Afflicted Boost' | 'After Evading Only' | 'Agility Dependent Hits' | 'Asleep Boost' | 'Attack Reduced' | 'Baton Boost' | 'Chaos Target Boost' | 'Charmed Boost' | 'Confused Boost' | 'Crit Damage Boost' | 'Debuff Number Dependent' | 'Defense Greatly Down' | 'Down Boost' | 'Drain HP' | 'Drain HP/MP' | 'Drain MP' | 'Foe Number Dependent' | 'HP Dependent' | 'Law Target Boost' | 'Minimize Defense' | 'Mirage Boost' | 'Negate Charges/Barriers' | 'Pierce' | 'Poisoned Boost' | 'Shroud Dependent' | 'Smirk Boost' | 'Smirk Instakill' | 'Smirk Pierce' | 'Smirk-Dependent Debuffs' | 'Static Damage' | 'Surround Boost' | 'Weakness Instakill' | 'Weather Boost';
 
 /** A base for skills with a specific amount of power */
 export interface BasePower {
@@ -74,9 +76,8 @@ export type BoostStack = '+' | 'x';
 
 /** Buffs cast by a Skill instance */
 export type Buff = 'Attack' | 'Magic' | 'Defense' | 'Accuracy/Evasion';
-
-/** A one- or two-stage buff */
-export type SingleOrDoubleBuff = Buff | `Double ${Buff}`;
+/** All the buffs a skill casts */
+export type BuffRecord = Partial<Record<Buff, BuffValue>>;
 
 /** Charges cast by a Skill instance */
 export type Charge = 'Phys Charge' | 'Phys Charge - Donum' | 'Magic Charge' | 'Magic Charge - Donum' | 'Critical Charge' | 'Recovery Charge' | 'Pierce Charge' | 'Pierce Charge EX' | 'Successive Strikes' | 'Fire Pierce' | 'Ice Pierce' | 'Elec Pierce' | 'Force Pierce';
@@ -226,10 +227,10 @@ export type AnyRace = PersonaRace | SMTRace;
 export type RecoveryAmount = 'Slight' | 'Moderate' | 'Half' | 'Full' | '130%';
 
 /** Flags for AilmentSkill instances */
-export type AilmentSkillFlag = `${Buff} Down` | `${Buff} Greatly Down` | 'Negate Buffs' | 'Charm Instakill' | 'Halve Press Turn Icons';
+export type AilmentFlag = 'Charm Instakill' | 'Halve Press Turn Icons';
 
 /** Flags for RecoverySkill instances */
-export type RecoveryFlag = 'Revert Debuffs' | 'Revive' | 'Summon' | 'Recover HP/MP';
+export type RecoveryFlag = 'Revive' | 'Summon' | 'Recover HP/MP';
 
 /** Criteria for RegenSkill instances taking effect */
 export type RegenCriteria = 'Ambush' | 'Baton Pass' | 'Turn Start';
@@ -254,9 +255,6 @@ export type SupportAutoEffect = Barrier | Buff | Charge;
 
 /** Flags for SupportSkill instances */
 export type SupportFlag = 'Cure Non-Special Ailments' | 'Reduce HP to 1' | 'Restore MP' | 'Surrounded Only';
-
-/** Buffs cast by TauntSkill instances */
-export type TauntBuff = SingleOrDoubleBuff | `Maximize ${Buff}`;
 
 /** Demons a skill targets */
 export type Target = 'Self' | 'One Ally' | 'One Alive Stocked Ally' | 'One Dead Stocked Ally' | 'One Stocked Ally' | 'All Allies' | 'All Allies and Stock' | 'One Foe' | 'All Foes' | 'Random Foes' | 'All';

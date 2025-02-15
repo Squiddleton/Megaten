@@ -2,7 +2,7 @@ import { normalize } from '@squiddleton/util';
 import type { AilBoostSkillData, AilDefensiveSkillData, AilmentSkillData, AttackSkillData, AutoBuffSkillData, BarrierBreakSkillData, BarrierSkillData, BoostSkillData, BreakSkillData, ChargeSkillData, CritBoostSkillData, CritSkillData, DefensiveSkillData, EndureSkillData, EvasionSkillData, InstakillBoostSkillData, MasterSkillData, MiscSkillData, NaviSkillData, PersonaCounterSkillData, PostBattleSkillData, RecoverySkillData, RegenSkillData, SMTCounterSkillData, SetSkillData, SiphonSkillData, SkillData, SpringSkillData, SummonSkillData, SupportSkillData, SusceptibilitySkillData, TauntSkillData, WallSkillData } from './dataTypes.js';
 import { MegatenError } from './error.js';
 import skillData from './skillData.js';
-import type { AilBoostCriteria, AilDefensiveAilment, AilResistance, AilmentName, AilmentSkillFlag, AilmentTarget, AnyAffinity, AttackAilments, AttackCost, AttackFlag, AttackPower, AttackTarget, AutoBuffTarget, Barrier, BarrierTarget, BasePower, BoostAffinity, BoostStack, BreakAffinity, Buff, BuffValue, Charge, ChargeTarget, CritBoostCriteria, CritTarget, DamagingAffinity, DefensiveAffinity, DefensiveSKillResistance, EndureCriteria, EvasionAffinity, EvasionBoostCriteria, HPMP, LightDark, MiscAffinity, NumberOrPercent, OneOrAllAilments, PostBattleStat, RecoveryAmount, RecoveryFlag, RecoveryTarget, RegenCriteria, RegenStat, SMTCounterAffinity, Series, SetAffinity, SetTarget, SingleOrDoubleBuff, SiphonCriteria, SkillType, SupportAutoEffect, SupportFlag, SupportTarget, SusceptibilityTarget, Target, TauntBuff, WallAffinity } from './types.js';
+import { AilBoostCriteria, AilDefensiveAilment, AilResistance, AilmentFlag, AilmentName, AilmentTarget, AnyAffinity, AttackAilments, AttackCost, AttackFlag, AttackPower, AttackTarget, AutoBuffTarget, Barrier, BarrierTarget, BasePower, BoostAffinity, BoostStack, BreakAffinity, Buff, BuffRecord, BuffValue, Charge, ChargeTarget, CritBoostCriteria, CritTarget, DamagingAffinity, DefensiveAffinity, DefensiveSKillResistance, EndureCriteria, EvasionAffinity, EvasionBoostCriteria, HPMP, LightDark, MiscAffinity, NumberOrPercent, OneOrAllAilments, PostBattleStat, RecoveryAmount, RecoveryFlag, RecoveryTarget, RegenCriteria, RegenStat, SMTCounterAffinity, Series, SetAffinity, SetTarget, SiphonCriteria, SkillType, SupportAutoEffect, SupportFlag, SupportTarget, SusceptibilityTarget, Target, WallAffinity } from './types.js';
 
 export abstract class Skill implements SkillData {
 	/** The skill's name (adjusted for consistency with SMT5) */
@@ -120,16 +120,20 @@ export class AilmentSkill extends Skill implements AilmentSkillData {
 	/** The skill's MP cost */
 	cost: number;
 	/** Debuffs that the skill applies */
-	debuffs: AilmentSkillFlag[];
+	debuffs: BuffRecord;
+	/** The skill's special or notable features */
+	flags: AilmentFlag[];
 	constructor(data: AilmentSkillData) {
-		const { target, ailments, flags: debuffs = [] } = data;
+		const { target, ailments, debuffs = {}, flags = [] } = data;
 		super(data);
 		this.target = target;
-		this.description = `Chance of inflicting ${ailments.join(' and ')} to ${target === 'One Foe' ? '1 foe' : 'all foes'}${debuffs.length === 0 ? '' : `and lowers ${debuffs.map(debuff => debuff.split(' ')[0]).join('')} by ${debuffs.every(debuff => debuff.includes('Greatly')) ? '2 ranks' : '1 rank'} for 3 turns`}.`;
+		const debuffNames = Object.keys(debuffs) as Buff[];
+		this.description = `Chance of inflicting ${ailments.join(' and ')} to ${target === 'One Foe' ? '1 foe' : 'all foes'}${debuffNames.length === 0 ? '' : `and lowers ${debuffNames.join('/')} by ${debuffNames.every(debuff => debuffs[debuff] === BuffValue.GreatlyDecrease) ? '2 ranks' : '1 rank'} for 3 turns`}.`;
 		this.ailments = ailments;
 		this.chance = data.chance;
 		this.cost = data.cost;
 		this.debuffs = debuffs;
+		this.flags = flags;
 	}
 }
 
@@ -145,6 +149,8 @@ export class AttackSkill extends Skill implements AttackSkillData {
 	ailments: AttackAilments | null;
 	/** The skill cost's type and amount */
 	cost: AttackCost;
+	/** Debuffs that the skill applies */
+	debuffs: BuffRecord;
 	/** The skill's special or notable features */
 	flags: AttackFlag[];
 	/** The maximum times that the skill can land */
@@ -156,7 +162,7 @@ export class AttackSkill extends Skill implements AttackSkillData {
 	/** The game series that the skill data originates from */
 	series: Series;
 	constructor(data: AttackSkillData) {
-		const { target, accuracy, affinity, ailments = null, flags = [], max = 1, min = 1, power, series } = data;
+		const { target, accuracy, affinity, ailments = null, debuffs = {}, flags = [], max = 1, min = 1, power, series } = data;
 		super(data);
 
 		this.target = target;
@@ -201,7 +207,7 @@ export class AttackSkill extends Skill implements AttackSkillData {
 				else if (accuracy === 50) sentences.push('Low accuracy, but hits are always Critical.');
 				else sentences.push('Always lands Critical hits.');
 			}
-			if (flags.includes('Accuracy/Evasion Down')) {
+			if (debuffs['Accuracy/Evasion'] === BuffValue.Decrease) {
 				sentences.push('Lowers target\'s Accuracy/Evasion by 1 rank for 3 turns.');
 			}
 			if (flags.includes('Afflicted Boost')) {
@@ -210,8 +216,8 @@ export class AttackSkill extends Skill implements AttackSkillData {
 			if (flags.includes('Asleep Boost')) {
 				sentences.push('Greater effect when target is asleep.');
 			}
-			if (flags.includes('Attack Down')) {
-				if (flags.includes('Defense Down')) sentences.push('Lowers target\'s Attack/Defense by 1 rank for 3 turns.');
+			if (debuffs.Attack === BuffValue.Decrease) {
+				if (debuffs.Defense === BuffValue.Decrease) sentences.push('Lowers target\'s Attack/Defense by 1 rank for 3 turns.');
 				else sentences.push('Lowers target\'s Attack by 1 rank for 3 turns.');
 			}
 			if (flags.includes('Attack Reduced')) {
@@ -229,8 +235,8 @@ export class AttackSkill extends Skill implements AttackSkillData {
 			if (flags.includes('Crit Damage Boost')) {
 				sentences.push('Greater effect when landing a Critical.');
 			}
-			if (flags.includes('Defense Down')) {
-				if (!flags.includes('Attack Down')) sentences.push('Lowers target\'s Defense by 1 rank for 3 turns.');
+			if (debuffs.Defense === BuffValue.Decrease && debuffs.Attack !== BuffValue.Decrease) {
+				sentences.push('Lowers target\'s Defense by 1 rank for 3 turns.');
 			}
 			if (flags.includes('Defense Greatly Down')) {
 				sentences.push('Lowers Defense by 2 ranks for 3 turns.');
@@ -247,7 +253,7 @@ export class AttackSkill extends Skill implements AttackSkillData {
 			if (flags.includes('Minimize Defense')) {
 				sentences.push('Lowers target\'s Defense to the minimum for 3 turns.');
 			}
-			if (flags.includes('Negate Buffs')) {
+			if (Object.values(debuffs).length !== 0 && Object.values(debuffs).every(value => value === BuffValue.NegateBuffs)) {
 				sentences.push('Negates target\'s status buff effects.');
 			}
 			if (flags.includes('Pierce') && ailments === null && !flags.includes('+200% Crit Rate')) {
@@ -275,6 +281,7 @@ export class AttackSkill extends Skill implements AttackSkillData {
 		this.accuracy = accuracy;
 		this.ailments = ailments;
 		this.cost = data.cost;
+		this.debuffs = debuffs;
 		this.flags = flags;
 		this.max = max;
 		this.min = min;
@@ -744,13 +751,13 @@ export class RecoverySkill extends Skill implements RecoverySkillData {
 	/** The displayed amount that the skill heals, or null if it does not heal */
 	amount: RecoveryAmount | null;
 	/** The buffs that the skill casts */
-	buffs: SingleOrDoubleBuff[];
+	buffs: BuffRecord;
 	/** The skill's MP cost */
 	cost: number;
 	/** Special flags for the skill */
 	flags: RecoveryFlag[];
 	constructor(data: RecoverySkillData) {
-		const { target, ailments = [], amount, buffs = [], flags = [] } = data;
+		const { target, ailments = [], amount, buffs = {}, flags = [] } = data;
 		super(data);
 
 		this.target = target;
@@ -758,7 +765,7 @@ export class RecoverySkill extends Skill implements RecoverySkillData {
 		if (ailments === 'All') {
 			this.description = amount === null
 				? `Cure status ailments on ${isParty ? 'all allies' : '1 ally'}.`
-				: `${amount} HP recovery and cures status ailments${flags.includes('Revert Debuffs') ? '/debuffs' : ''} for ${isParty ? 'all allies' : '1 ally'}.`;
+				: `${amount} HP recovery and cures status ailments${(Object.values(buffs).length !== 0 && Object.values(buffs).every(value => value === BuffValue.NegateDebuffs)) ? '/debuffs' : ''} for ${isParty ? 'all allies' : '1 ally'}.`;
 		}
 		else if (ailments.length > 0) {
 			this.description = `Cures ${ailments.join('/')} for ${isParty ? 'all allies' : 'one ally'}.`;
@@ -772,7 +779,8 @@ export class RecoverySkill extends Skill implements RecoverySkillData {
 			this.description = 'Full HP recovery to all allies and heals above MAX HP.';
 		}
 		else {
-			this.description = `${amount} HP recovery to ${isParty ? 'all allies' : '1 ally'}${buffs.length > 0 ? ` and raises ${buffs.length === 3 ? 'all stats' : buffs.join('/')} by ${buffs[0].includes('Double') ? '2 ranks' : '1 rank'} for 3 turns` : ''}.`;
+			const buffNames = Object.keys(buffs) as Buff[];
+			this.description = `${amount} HP recovery to ${isParty ? 'all allies' : '1 ally'}${buffNames.length > 0 ? ` and raises ${buffNames.length === 3 ? 'all stats' : buffNames.join('/')} by ${buffNames.every(buff => buffs[buff] === BuffValue.GreatlyIncrease) ? '2 ranks' : '1 rank'} for 3 turns` : ''}.`;
 		}
 
 		this.ailments = ailments;
@@ -1011,19 +1019,20 @@ export class TauntSkill extends Skill implements TauntSkillData {
 	declare type: 'TAUNT';
 	declare target: 'Self';
 	description: string;
-	/** The buff cast by the skill, or null if none */
-	buff: TauntBuff | null;
+	/** The buff cast by the skill*/
+	buffs: BuffRecord;
 	/** The skill's MP cost */
 	cost: number;
 	constructor(data: TauntSkillData) {
-		const { buff, cost } = data;
+		const { buffs = {}, cost } = data;
 		super(data);
-		this.description = buff === null
+		const buff = Object.keys(buffs)[0] as Buff | undefined;
+		this.description = buff === undefined
 			? cost === 4
 				? 'Raises own chances of being targeted by foes.'
 				: 'Raises chances of being targeted by foes for 3 turns.'
-			: `Draws enemy hostility, but increases your ${buff} ${buff.includes('Double') ? '2 tiers' : 'by 1 rank'} for 3 turns.`;
-		this.buff = buff;
+			: `Draws enemy hostility, but increases your ${buff} ${buffs[buff] === BuffValue.GreatlyIncrease ? '2 tiers' : 'by 1 rank'} for 3 turns.`;
+		this.buffs = buffs;
 		this.cost = cost;
 	}
 }
