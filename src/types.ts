@@ -29,10 +29,6 @@ export interface AttackAilments {
 
 /** Ailments' names (adjusted for consistency with SMT5) */
 export type AilmentName = 'Bind' | 'Burn' | 'Charm' | 'Confusion' | 'Daze' | 'Death' | 'Despair' | 'Dizzy' | 'Down' | 'Enervate' | 'Exhaust' | 'Fear' | 'Freeze' | 'Hunger' | 'Mirage' | 'Mud' | 'Poison' | 'Rage' | 'Seal' | 'Shock' | 'Stone' | 'Stun' | 'Shroud' | 'Sick' | 'Sleep';
-/** An ailment's name or all ailments */
-export type OneOrAllAilments = AilmentName | 'All';
-/** Ailments that an AilDefensiveSkill instance protects against */
-export type AilDefensiveAilment = OneOrAllAilments | 'Confuse/Fear/Rage/Despair' | 'Poison/Bind/Sick/Daze' | 'Poison/Seal' | 'Sleep/Confusion/Charm/Seal';
 
 /** Resistances to ailments */
 export type AilResistance = 'Resist' | 'Null';

@@ -282,7 +282,7 @@ const skillData: AnySkillData[] = [
 		name: 'Ailment Boost',
 		affinity: 'Passive',
 		type: 'AILBOOST',
-		ailment: 'All',
+		ailment: null,
 		amount: 25,
 		criteria: null
 	},
@@ -385,7 +385,7 @@ const skillData: AnySkillData[] = [
 		name: 'Ambient Aid',
 		affinity: 'Passive',
 		type: 'AILBOOST',
-		ailment: 'All',
+		ailment: null,
 		amount: 30,
 		criteria: 'Rain/Snow'
 	},
@@ -447,7 +447,10 @@ const skillData: AnySkillData[] = [
 		name: 'Anti-Curse',
 		affinity: 'Passive',
 		type: 'AILDEFENSIVE',
-		ailment: 'Poison/Seal',
+		ailments: [
+			'Poison',
+			'Seal'
+		],
 		resistance: 'Resist'
 	},
 	{
@@ -3980,7 +3983,7 @@ const skillData: AnySkillData[] = [
 		name: 'Fortify Spirit',
 		affinity: 'Passive',
 		type: 'AILDEFENSIVE',
-		ailment: 'All',
+		ailments: null,
 		resistance: 'Resist'
 	},
 	{
@@ -8753,7 +8756,9 @@ const skillData: AnySkillData[] = [
 		name: 'Null Burn',
 		affinity: 'Passive',
 		type: 'AILDEFENSIVE',
-		ailment: 'Burn',
+		ailments: [
+			'Burn'
+		],
 		resistance: 'Null'
 	},
 	{
@@ -8763,7 +8768,9 @@ const skillData: AnySkillData[] = [
 		],
 		affinity: 'Passive',
 		type: 'AILDEFENSIVE',
-		ailment: 'Charm',
+		ailments: [
+			'Charm'
+		],
 		resistance: 'Null'
 	},
 	{
@@ -8773,7 +8780,9 @@ const skillData: AnySkillData[] = [
 		],
 		affinity: 'Passive',
 		type: 'AILDEFENSIVE',
-		ailment: 'Confusion',
+		ailments: [
+			'Confusion'
+		],
 		resistance: 'Null'
 	},
 	{
@@ -8790,7 +8799,9 @@ const skillData: AnySkillData[] = [
 		name: 'Null Despair',
 		affinity: 'Passive',
 		type: 'AILDEFENSIVE',
-		ailment: 'Despair',
+		ailments: [
+			'Despair'
+		],
 		resistance: 'Null'
 	},
 	{
@@ -8804,21 +8815,27 @@ const skillData: AnySkillData[] = [
 		name: 'Null Enervate',
 		affinity: 'Passive',
 		type: 'AILDEFENSIVE',
-		ailment: 'Enervate',
+		ailments: [
+			'Enervate'
+		],
 		resistance: 'Null'
 	},
 	{
 		name: 'Null Exhaust',
 		affinity: 'Passive',
 		type: 'AILDEFENSIVE',
-		ailment: 'Exhaust',
+		ailments: [
+			'Exhaust'
+		],
 		resistance: 'Null'
 	},
 	{
 		name: 'Null Fear',
 		affinity: 'Passive',
 		type: 'AILDEFENSIVE',
-		ailment: 'Fear',
+		ailments: [
+			'Fear'
+		],
 		resistance: 'Null'
 	},
 	{
@@ -8839,7 +8856,9 @@ const skillData: AnySkillData[] = [
 		name: 'Null Freeze',
 		affinity: 'Passive',
 		type: 'AILDEFENSIVE',
-		ailment: 'Freeze',
+		ailments: [
+			'Freeze'
+		],
 		resistance: 'Null'
 	},
 	{
@@ -8853,7 +8872,9 @@ const skillData: AnySkillData[] = [
 		name: 'Null Hunger',
 		affinity: 'Passive',
 		type: 'AILDEFENSIVE',
-		ailment: 'Hunger',
+		ailments: [
+			'Hunger'
+		],
 		resistance: 'Null'
 	},
 	{
@@ -8884,21 +8905,33 @@ const skillData: AnySkillData[] = [
 		name: 'Null Mind',
 		affinity: 'Passive',
 		type: 'AILDEFENSIVE',
-		ailment: 'Sleep/Confusion/Charm/Seal',
+		ailments: [
+			'Sleep',
+			'Confusion',
+			'Charm',
+			'Seal'
+		],
 		resistance: 'Null'
 	},
 	{
 		name: 'Null Mirage',
 		affinity: 'Passive',
 		type: 'AILDEFENSIVE',
-		ailment: 'Mirage',
+		ailments: [
+			'Mirage'
+		],
 		resistance: 'Null'
 	},
 	{
 		name: 'Null Nerve',
 		affinity: 'Passive',
 		type: 'AILDEFENSIVE',
-		ailment: 'Poison/Bind/Sick/Daze',
+		ailments: [
+			'Poison',
+			'Bind',
+			'Sick',
+			'Daze'
+		],
 		resistance: 'Null'
 	},
 	{
@@ -8922,7 +8955,9 @@ const skillData: AnySkillData[] = [
 		name: 'Null Poison',
 		affinity: 'Passive',
 		type: 'AILDEFENSIVE',
-		ailment: 'Poison',
+		ailments: [
+			'Poison'
+		],
 		resistance: 'Null'
 	},
 	{
@@ -8936,7 +8971,9 @@ const skillData: AnySkillData[] = [
 		name: 'Null Rage',
 		affinity: 'Passive',
 		type: 'AILDEFENSIVE',
-		ailment: 'Rage',
+		ailments: [
+			'Rage'
+		],
 		resistance: 'Null'
 	},
 	{
@@ -8947,21 +8984,27 @@ const skillData: AnySkillData[] = [
 		],
 		affinity: 'Passive',
 		type: 'AILDEFENSIVE',
-		ailment: 'Seal',
+		ailments: [
+			'Seal'
+		],
 		resistance: 'Null'
 	},
 	{
 		name: 'Null Shock',
 		affinity: 'Passive',
 		type: 'AILDEFENSIVE',
-		ailment: 'Shock',
+		ailments: [
+			'Shock'
+		],
 		resistance: 'Null'
 	},
 	{
 		name: 'Null Sleep',
 		affinity: 'Passive',
 		type: 'AILDEFENSIVE',
-		ailment: 'Sleep',
+		ailments: [
+			'Sleep'
+		],
 		resistance: 'Null'
 	},
 	{
@@ -10230,7 +10273,9 @@ const skillData: AnySkillData[] = [
 		name: 'Resist Burn',
 		affinity: 'Passive',
 		type: 'AILDEFENSIVE',
-		ailment: 'Burn',
+		ailments: [
+			'Burn'
+		],
 		resistance: 'Resist'
 	},
 	{
@@ -10240,7 +10285,9 @@ const skillData: AnySkillData[] = [
 		],
 		affinity: 'Passive',
 		type: 'AILDEFENSIVE',
-		ailment: 'Charm',
+		ailments: [
+			'Charm'
+		],
 		resistance: 'Resist'
 	},
 	{
@@ -10250,7 +10297,9 @@ const skillData: AnySkillData[] = [
 		],
 		affinity: 'Passive',
 		type: 'AILDEFENSIVE',
-		ailment: 'Confusion',
+		ailments: [
+			'Confusion'
+		],
 		resistance: 'Resist'
 	},
 	{
@@ -10267,7 +10316,9 @@ const skillData: AnySkillData[] = [
 		name: 'Resist Despair',
 		affinity: 'Passive',
 		type: 'AILDEFENSIVE',
-		ailment: 'Despair',
+		ailments: [
+			'Despair'
+		],
 		resistance: 'Resist'
 	},
 	{
@@ -10281,21 +10332,27 @@ const skillData: AnySkillData[] = [
 		name: 'Resist Enervate',
 		affinity: 'Passive',
 		type: 'AILDEFENSIVE',
-		ailment: 'Enervate',
+		ailments: [
+			'Enervate'
+		],
 		resistance: 'Resist'
 	},
 	{
 		name: 'Resist Exhaust',
 		affinity: 'Passive',
 		type: 'AILDEFENSIVE',
-		ailment: 'Exhaust',
+		ailments: [
+			'Exhaust'
+		],
 		resistance: 'Resist'
 	},
 	{
 		name: 'Resist Fear',
 		affinity: 'Passive',
 		type: 'AILDEFENSIVE',
-		ailment: 'Fear',
+		ailments: [
+			'Fear'
+		],
 		resistance: 'Resist'
 	},
 	{
@@ -10319,14 +10376,18 @@ const skillData: AnySkillData[] = [
 		name: 'Resist Freeze',
 		affinity: 'Passive',
 		type: 'AILDEFENSIVE',
-		ailment: 'Freeze',
+		ailments: [
+			'Freeze'
+		],
 		resistance: 'Resist'
 	},
 	{
 		name: 'Resist Hunger',
 		affinity: 'Passive',
 		type: 'AILDEFENSIVE',
-		ailment: 'Hunger',
+		ailments: [
+			'Hunger'
+		],
 		resistance: 'Resist'
 	},
 	{
@@ -10350,7 +10411,9 @@ const skillData: AnySkillData[] = [
 		name: 'Resist Mirage',
 		affinity: 'Passive',
 		type: 'AILDEFENSIVE',
-		ailment: 'Mirage',
+		ailments: [
+			'Mirage'
+		],
 		resistance: 'Resist'
 	},
 	{
@@ -10375,7 +10438,9 @@ const skillData: AnySkillData[] = [
 		name: 'Resist Poison',
 		affinity: 'Passive',
 		type: 'AILDEFENSIVE',
-		ailment: 'Poison',
+		ailments: [
+			'Poison'
+		],
 		resistance: 'Resist'
 	},
 	{
@@ -10389,7 +10454,9 @@ const skillData: AnySkillData[] = [
 		name: 'Resist Rage',
 		affinity: 'Passive',
 		type: 'AILDEFENSIVE',
-		ailment: 'Rage',
+		ailments: [
+			'Rage'
+		],
 		resistance: 'Resist'
 	},
 	{
@@ -10400,21 +10467,27 @@ const skillData: AnySkillData[] = [
 		],
 		affinity: 'Passive',
 		type: 'AILDEFENSIVE',
-		ailment: 'Seal',
+		ailments: [
+			'Seal'
+		],
 		resistance: 'Resist'
 	},
 	{
 		name: 'Resist Shock',
 		affinity: 'Passive',
 		type: 'AILDEFENSIVE',
-		ailment: 'Shock',
+		ailments: [
+			'Shock'
+		],
 		resistance: 'Resist'
 	},
 	{
 		name: 'Resist Sleep',
 		affinity: 'Passive',
 		type: 'AILDEFENSIVE',
-		ailment: 'Sleep',
+		ailments: [
+			'Sleep'
+		],
 		resistance: 'Resist'
 	},
 	{
@@ -12498,7 +12571,12 @@ const skillData: AnySkillData[] = [
 		name: 'Unshaken Will',
 		affinity: 'Passive',
 		type: 'AILDEFENSIVE',
-		ailment: 'Confuse/Fear/Rage/Despair',
+		ailments: [
+			'Confusion',
+			'Fear',
+			'Rage',
+			'Despair'
+		],
 		resistance: 'Null'
 	},
 	{

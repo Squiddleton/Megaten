@@ -2,7 +2,7 @@ import { normalize } from '@squiddleton/util';
 import type { AilBoostSkillData, AilDefensiveSkillData, AilmentSkillData, AttackSkillData, AutoBuffSkillData, BarrierBreakSkillData, BarrierSkillData, BoostSkillData, BreakSkillData, ChargeSkillData, CritBoostSkillData, CritSkillData, DefensiveSkillData, EndureSkillData, EvasionSkillData, InstakillBoostSkillData, MasterSkillData, MiscSkillData, NaviSkillData, PersonaCounterSkillData, PostBattleSkillData, RecoverySkillData, RegenSkillData, SMTCounterSkillData, SetSkillData, SiphonSkillData, SkillData, SpringSkillData, SummonSkillData, SupportSkillData, SusceptibilitySkillData, TauntSkillData, WallSkillData } from './dataTypes.js';
 import { MegatenError } from './error.js';
 import skillData from './skillData.js';
-import { AilBoostCriteria, AilDefensiveAilment, AilResistance, AilmentFlag, AilmentName, AilmentTarget, AnyAffinity, AttackAilments, AttackCost, AttackFlag, AttackPower, AttackTarget, AutoBuffTarget, Barrier, BarrierTarget, BasePower, BoostAffinity, BoostStack, BreakAffinity, Buff, BuffRecord, BuffValue, Charge, ChargeTarget, CritBoostCriteria, CritTarget, DamagingAffinity, DefensiveAffinity, DefensiveSKillResistance, EndureCriteria, EvasionAffinity, EvasionBoostCriteria, HPMP, LightDark, MiscAffinity, NumberOrPercent, OneOrAllAilments, PostBattleStat, RecoveryAmount, RecoveryFlag, RecoveryTarget, RegenCriteria, RegenStat, SMTCounterAffinity, Series, SetAffinity, SetTarget, SiphonCriteria, SkillType, SupportAutoEffect, SupportFlag, SupportTarget, SusceptibilityTarget, Target, WallAffinity } from './types.js';
+import { AilBoostCriteria, AilResistance, AilmentFlag, AilmentName, AilmentTarget, AnyAffinity, AttackAilments, AttackCost, AttackFlag, AttackPower, AttackTarget, AutoBuffTarget, Barrier, BarrierTarget, BasePower, BoostAffinity, BoostStack, BreakAffinity, Buff, BuffRecord, BuffValue, Charge, ChargeTarget, CritBoostCriteria, CritTarget, DamagingAffinity, DefensiveAffinity, DefensiveSKillResistance, EndureCriteria, EvasionAffinity, EvasionBoostCriteria, HPMP, LightDark, MiscAffinity, NumberOrPercent, PostBattleStat, RecoveryAmount, RecoveryFlag, RecoveryTarget, RegenCriteria, RegenStat, SMTCounterAffinity, Series, SetAffinity, SetTarget, SiphonCriteria, SkillType, SupportAutoEffect, SupportFlag, SupportTarget, SusceptibilityTarget, Target, WallAffinity } from './types.js';
 
 export abstract class Skill implements SkillData {
 	/** The skill's name (adjusted for consistency with SMT5) */
@@ -70,8 +70,8 @@ export class AilBoostSkill extends Skill implements AilBoostSkillData {
 	declare type: 'AILBOOST';
 	declare target: 'Self';
 	description: string;
-	/** The ailment that the skill increases the chance of inflicting */
-	ailment: OneOrAllAilments;
+	/** The ailment that the skill increases the chance of inflicting, or null if all */
+	ailment: AilmentName | null;
 	/** The additional chance of inflicting the ailment */
 	amount: number;
 	/** The conditions that the skill triggers under, or null if always in effect */
@@ -79,7 +79,7 @@ export class AilBoostSkill extends Skill implements AilBoostSkillData {
 	constructor(data: AilBoostSkillData) {
 		const { ailment, criteria } = data;
 		super(data);
-		this.description = `Increases chance of inflicting ${ailment === 'All' ? 'ailments' : ailment}${criteria === null ? '' : ` during ${criteria}`}.`;
+		this.description = `Increases chance of inflicting ${ailment === null ? 'ailments' : ailment}${criteria === null ? '' : ` during ${criteria}`}.`;
 		this.ailment = ailment;
 		this.amount = data.amount;
 		this.criteria = criteria;
@@ -92,17 +92,18 @@ export class AilDefensiveSkill extends Skill implements AilDefensiveSkillData {
 	declare type: 'AILDEFENSIVE';
 	declare target: 'Self';
 	description: string;
-	/** The ailment resisted by this skill */
-	ailment: AilDefensiveAilment;
+	/** The ailment resisted by this skill, or null if all */
+	ailments: AilmentName[] | null;
 	/** The level of resistance to the ailment */
 	resistance: AilResistance;
 	constructor(data: AilDefensiveSkillData) {
-		const { ailment, resistance } = data;
+		const { ailments, resistance } = data;
 		super(data);
+		const ailStr = ailments === null ? 'all ailments' : ailments.join('/');
 		this.description = resistance === 'Resist'
-			? `Decreases chance of being inflicted with ${ailment}.`
-			: `Prevents infliction of ${ailment}.`;
-		this.ailment = ailment;
+			? `Decreases chance of being inflicted with ${ailStr}.`
+			: `Prevents infliction of ${ailStr}.`;
+		this.ailments = ailments;
 		this.resistance = resistance;
 	}
 }
