@@ -150,12 +150,6 @@ export type HPMP = 'HP' | 'MP' | 'HPMP';
 export type AttackCostStat = Exclude<HPMP, 'HPMP'>;
 /** The stat that a RegenSkill instance regenerates */
 export type RegenStat = HPMP | 'AIL';
-/**
- * The stat that a RegenSkill instance regenerates
- *
- * @deprecated Use RegenStat instead.
- */
-export type HPMPAil = RegenStat;
 /** The stat that a PostBattleSkill instance increases */
 export type PostBattleStat = HPMP | 'EXP' | 'Money';
 
