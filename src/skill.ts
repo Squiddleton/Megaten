@@ -962,10 +962,8 @@ export class SupportSkill extends Skill implements SupportSkillData {
 	cost: number;
 	/** The skill's special or notable features */
 	flags: SupportFlag[];
-	/** Whether the skill negates its buffs or debuffs from enemies or allies, respectively */
-	negate: boolean;
 	constructor(data: SupportSkillData) {
-		const { target, buffs, flags = [], negate } = data;
+		const { target, buffs, flags = [] } = data;
 		super(data);
 
 		this.target = target;
@@ -974,13 +972,13 @@ export class SupportSkill extends Skill implements SupportSkillData {
 		if (flags.includes('Cure Non-Special Ailments')) {
 			this.description = 'Cures all non-special ailments for all allies.';
 		}
-		else if (negate) {
+		else if (Object.values(buffs).includes(BuffValue.NegateBuffs) || Object.values(buffs).includes(BuffValue.NegateDebuffs)) {
 			this.description = `Negates status ${isAllyRange ? 'de' : ''}buff effects on all ${isAllyRange ? 'allies' : 'foes'}.`;
 		}
-		else if (Object.values(buffs)[0] === 4) {
+		else if (Object.values(buffs)[0] === BuffValue.Maximize) {
 			this.description = `Maximizes ${Object.keys(buffs).join('/')} for 3 turns.`;
 		}
-		else if (Object.values(buffs)[0] === -4) {
+		else if (Object.values(buffs)[0] === BuffValue.Minimize) {
 			this.description = `Minimizes ${Object.keys(buffs).join('/')} of 1 foe for 3 turns.`;
 		}
 		else {
@@ -993,7 +991,6 @@ export class SupportSkill extends Skill implements SupportSkillData {
 		this.buffs = buffs;
 		this.cost = data.cost;
 		this.flags = flags;
-		this.negate = negate;
 	}
 }
 

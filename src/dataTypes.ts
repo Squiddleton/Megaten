@@ -307,7 +307,6 @@ export interface SupportSkillData extends SkillData {
 	buffs: Partial<Record<Buff, BuffValue>>;
 	cost: number;
 	flags?: SupportFlag[];
-	negate: boolean;
 }
 
 export interface SusceptibilitySkillData extends SkillData {

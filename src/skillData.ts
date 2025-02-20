@@ -131,7 +131,6 @@ const skillData: AnySkillData[] = [
 			Defense: BuffValue.Decrease,
 			'Accuracy/Evasion': BuffValue.Decrease
 		},
-		negate: false,
 		auto: []
 	},
 	{
@@ -1158,7 +1157,6 @@ const skillData: AnySkillData[] = [
 		flags: [
 			'Reduce HP to 1'
 		],
-		negate: false,
 		auto: []
 	},
 	{
@@ -1570,7 +1568,6 @@ const skillData: AnySkillData[] = [
 			Defense: BuffValue.Increase,
 			'Accuracy/Evasion': BuffValue.Increase
 		},
-		negate: false,
 		auto: []
 	},
 	{
@@ -1733,7 +1730,6 @@ const skillData: AnySkillData[] = [
 			Defense: BuffValue.Decrease,
 			'Accuracy/Evasion': BuffValue.Decrease
 		},
-		negate: false,
 		auto: []
 	},
 	{
@@ -1771,7 +1767,6 @@ const skillData: AnySkillData[] = [
 		buffs: {
 			Defense: 4
 		},
-		negate: false,
 		auto: []
 	},
 	{
@@ -1809,7 +1804,6 @@ const skillData: AnySkillData[] = [
 			Defense: BuffValue.Increase,
 			'Accuracy/Evasion': BuffValue.Increase
 		},
-		negate: false,
 		auto: []
 	},
 	{
@@ -2386,7 +2380,6 @@ const skillData: AnySkillData[] = [
 			Defense: BuffValue.Decrease,
 			'Accuracy/Evasion': BuffValue.Decrease
 		},
-		negate: false,
 		auto: []
 	},
 	{
@@ -2425,7 +2418,6 @@ const skillData: AnySkillData[] = [
 			Defense: BuffValue.NegateBuffs,
 			'Accuracy/Evasion': BuffValue.NegateBuffs
 		},
-		negate: true,
 		auto: []
 	},
 	{
@@ -2439,7 +2431,6 @@ const skillData: AnySkillData[] = [
 			Defense: BuffValue.NegateDebuffs,
 			'Accuracy/Evasion': BuffValue.NegateDebuffs
 		},
-		negate: true,
 		auto: []
 	},
 	{
@@ -3909,7 +3900,6 @@ const skillData: AnySkillData[] = [
 			Attack: BuffValue.Decrease,
 			'Accuracy/Evasion': BuffValue.Decrease
 		},
-		negate: false,
 		auto: []
 	},
 	{
@@ -4252,7 +4242,6 @@ const skillData: AnySkillData[] = [
 		buffs: {
 			'Accuracy/Evasion': BuffValue.Increase
 		},
-		negate: false,
 		auto: [
 			'Magic Charge'
 		]
@@ -4968,7 +4957,6 @@ const skillData: AnySkillData[] = [
 			Defense: BuffValue.Increase,
 			'Accuracy/Evasion': BuffValue.Increase
 		},
-		negate: false,
 		auto: []
 	},
 	{
@@ -5444,7 +5432,6 @@ const skillData: AnySkillData[] = [
 			Defense: BuffValue.Minimize,
 			'Accuracy/Evasion': BuffValue.Minimize
 		},
-		negate: false,
 		auto: []
 	},
 	{
@@ -5468,7 +5455,6 @@ const skillData: AnySkillData[] = [
 			Defense: BuffValue.NegateDebuffs,
 			'Accuracy/Evasion': BuffValue.NegateDebuffs
 		},
-		negate: true,
 		auto: []
 	},
 	{
@@ -5510,7 +5496,6 @@ const skillData: AnySkillData[] = [
 		buffs: {
 			Attack: BuffValue.Maximize
 		},
-		negate: false,
 		auto: []
 	},
 	{
@@ -5534,7 +5519,6 @@ const skillData: AnySkillData[] = [
 			Defense: BuffValue.Increase,
 			'Accuracy/Evasion': BuffValue.Increase
 		},
-		negate: false,
 		auto: []
 	},
 	{
@@ -5739,7 +5723,6 @@ const skillData: AnySkillData[] = [
 			Defense: BuffValue.GreatlyIncrease,
 			'Accuracy/Evasion': BuffValue.GreatlyIncrease
 		},
-		negate: false,
 		auto: []
 	},
 	{
@@ -6626,7 +6609,6 @@ const skillData: AnySkillData[] = [
 			Defense: BuffValue.Increase,
 			'Accuracy/Evasion': BuffValue.Increase
 		},
-		negate: false,
 		auto: []
 	},
 	{
@@ -7170,7 +7152,6 @@ const skillData: AnySkillData[] = [
 		buffs: {
 			Magic: 1
 		},
-		negate: false,
 		auto: []
 	},
 	{
@@ -7471,7 +7452,6 @@ const skillData: AnySkillData[] = [
 		buffs: {
 			Defense: BuffValue.Increase
 		},
-		negate: false,
 		auto: []
 	},
 	{
@@ -7483,7 +7463,6 @@ const skillData: AnySkillData[] = [
 		buffs: {
 			Defense: BuffValue.Decrease
 		},
-		negate: false,
 		auto: []
 	},
 	{
@@ -7550,7 +7529,6 @@ const skillData: AnySkillData[] = [
 		buffs: {
 			'Accuracy/Evasion': BuffValue.Increase
 		},
-		negate: false,
 		auto: []
 	},
 	{
@@ -7562,7 +7540,6 @@ const skillData: AnySkillData[] = [
 		buffs: {
 			'Accuracy/Evasion': BuffValue.Decrease
 		},
-		negate: false,
 		auto: []
 	},
 	{
@@ -7574,7 +7551,6 @@ const skillData: AnySkillData[] = [
 		buffs: {
 			Attack: BuffValue.Increase
 		},
-		negate: false,
 		auto: []
 	},
 	{
@@ -7586,7 +7562,6 @@ const skillData: AnySkillData[] = [
 		buffs: {
 			Attack: BuffValue.Decrease
 		},
-		negate: false,
 		auto: []
 	},
 	{
@@ -9612,7 +9587,6 @@ const skillData: AnySkillData[] = [
 		flags: [
 			'Restore MP'
 		],
-		negate: false,
 		auto: []
 	},
 	{
@@ -9961,7 +9935,6 @@ const skillData: AnySkillData[] = [
 		buffs: {
 			Defense: BuffValue.Increase
 		},
-		negate: false,
 		auto: []
 	},
 	{
@@ -9973,7 +9946,6 @@ const skillData: AnySkillData[] = [
 		buffs: {
 			Defense: BuffValue.Decrease
 		},
-		negate: false,
 		auto: []
 	},
 	{
@@ -10024,7 +9996,6 @@ const skillData: AnySkillData[] = [
 			Defense: BuffValue.NegateDebuffs,
 			'Accuracy/Evasion': BuffValue.NegateDebuffs
 		},
-		negate: true,
 		auto: []
 	},
 	{
@@ -10138,7 +10109,6 @@ const skillData: AnySkillData[] = [
 		buffs: {
 			'Accuracy/Evasion': BuffValue.GreatlyIncrease
 		},
-		negate: false,
 		auto: []
 	},
 	{
@@ -11124,7 +11094,6 @@ const skillData: AnySkillData[] = [
 			Defense: BuffValue.NegateAll,
 			'Accuracy/Evasion': BuffValue.NegateAll
 		},
-		negate: true,
 		auto: []
 	},
 	{
@@ -11755,7 +11724,6 @@ const skillData: AnySkillData[] = [
 		buffs: {
 			'Accuracy/Evasion': BuffValue.Increase
 		},
-		negate: false,
 		auto: []
 	},
 	{
@@ -11767,7 +11735,6 @@ const skillData: AnySkillData[] = [
 		buffs: {
 			'Accuracy/Evasion': BuffValue.Decrease
 		},
-		negate: false,
 		auto: []
 	},
 	{
@@ -11909,7 +11876,6 @@ const skillData: AnySkillData[] = [
 		buffs: {
 			Attack: BuffValue.Increase
 		},
-		negate: false,
 		auto: []
 	},
 	{
@@ -11921,7 +11887,6 @@ const skillData: AnySkillData[] = [
 		buffs: {
 			Attack: BuffValue.Decrease
 		},
-		negate: false,
 		auto: []
 	},
 	{
@@ -12185,7 +12150,6 @@ const skillData: AnySkillData[] = [
 			Defense: BuffValue.Increase,
 			'Accuracy/Evasion': BuffValue.Increase
 		},
-		negate: false,
 		auto: []
 	},
 	{
@@ -12652,7 +12616,6 @@ const skillData: AnySkillData[] = [
 		buffs: {
 			Defense: BuffValue.Increase
 		},
-		negate: false,
 		auto: [
 			'Repel Phys',
 			'Repel Magic'
@@ -12907,7 +12870,6 @@ const skillData: AnySkillData[] = [
 			Attack: BuffValue.Decrease,
 			Defense: BuffValue.Decrease
 		},
-		negate: false,
 		auto: []
 	},
 	{
@@ -13108,7 +13070,6 @@ const skillData: AnySkillData[] = [
 			'Cure Non-Special Ailments'
 		],
 		buffs: {},
-		negate: false,
 		auto: [
 			'Accuracy/Evasion'
 		]
