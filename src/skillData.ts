@@ -5786,7 +5786,7 @@ const skillData: AnySkillData[] = [
 		name: 'Invitation',
 		affinity: 'Recovery',
 		type: 'RECOVERY',
-		target: 'One Ally',
+		target: 'One Stocked Ally',
 		cost: 65,
 		amount: 'Full',
 		flags: [
