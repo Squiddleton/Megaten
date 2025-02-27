@@ -682,6 +682,14 @@ const skillData: AnySkillData[] = [
 		buff: 'Attack'
 	},
 	{
+		name: 'Awakening',
+		affinity: 'Passive',
+		type: 'MISC',
+		target: 'Self',
+		cost: null,
+		description: 'Boosts all stats by 5 points.'
+	},
+	{
 		name: 'Axel Claw',
 		affinity: 'Phys',
 		type: 'ATTACK',
@@ -2081,6 +2089,27 @@ const skillData: AnySkillData[] = [
 		criteria: 'Ailment'
 	},
 	{
+		name: 'Curse Thy Enemy',
+		affinity: 'Almighty',
+		type: 'ATTACK',
+		unique: true,
+		accuracy: 98,
+		cost: {
+			stat: 'MP',
+			amount: 80
+		},
+		flags: [
+			'Guarantees Weakness'
+		],
+		power: {
+			amount: 200,
+			display: 'Heavy',
+			type: 'Magic'
+		},
+		target: 'All Foes',
+		series: 'smt'
+	},
+	{
 		name: 'Damascus Claw',
 		affinity: 'Phys',
 		type: 'ATTACK',
@@ -2097,6 +2126,30 @@ const skillData: AnySkillData[] = [
 			type: 'Physical'
 		},
 		target: 'One Foe',
+		series: 'smt'
+	},
+	{
+		name: 'Damnation',
+		affinity: 'Phys',
+		type: 'ATTACK',
+		unique: true,
+		accuracy: 98,
+		ailments: {
+			names: [
+				'Poison'
+			],
+			chance: 70
+		},
+		cost: {
+			stat: 'MP',
+			amount: 65
+		},
+		power: {
+			amount: 350,
+			display: 'Heavy',
+			type: 'Magic'
+		},
+		target: 'All Foes',
 		series: 'smt'
 	},
 	{
@@ -2168,6 +2221,14 @@ const skillData: AnySkillData[] = [
 		amount: 25,
 		element: 'Dark',
 		stacks: 'x'
+	},
+	{
+		name: 'Dark Energy',
+		affinity: 'Support',
+		type: 'CHARGE',
+		target: 'Self',
+		cost: 25,
+		charge: 'Phys Charge - Dark Energy'
 	},
 	{
 		name: 'Dark Grudge',
@@ -3147,6 +3208,14 @@ const skillData: AnySkillData[] = [
 		element: 'Elec'
 	},
 	{
+		name: 'Elec Pierce',
+		affinity: 'Passive',
+		type: 'MISC',
+		target: 'Self',
+		cost: null,
+		description: 'Elec attacks ignore affinity resistance except repel.'
+	},
+	{
 		name: 'Elec Pleroma',
 		affinity: 'Passive',
 		type: 'BOOST',
@@ -3823,6 +3892,14 @@ const skillData: AnySkillData[] = [
 		series: 'smt'
 	},
 	{
+		name: 'Fire Pierce',
+		affinity: 'Passive',
+		type: 'MISC',
+		target: 'Self',
+		cost: null,
+		description: 'Fire attacks ignore affinity resistance except repel.'
+	},
+	{
 		name: 'Fire Pleroma',
 		affinity: 'Passive',
 		type: 'BOOST',
@@ -3930,6 +4007,14 @@ const skillData: AnySkillData[] = [
 		amount: 25,
 		element: 'Force',
 		stacks: 'x'
+	},
+	{
+		name: 'Force Pierce',
+		affinity: 'Passive',
+		type: 'MISC',
+		target: 'Self',
+		cost: null,
+		description: 'Force attacks ignore affinity resistance except repel.'
 	},
 	{
 		name: 'Force Pleroma',
@@ -4637,6 +4722,15 @@ const skillData: AnySkillData[] = [
 		stat: 'EXP'
 	},
 	{
+		name: 'Guardian\'s Eye',
+		affinity: 'Special',
+		type: 'MISC',
+		target: 'All Allies',
+		unique: true,
+		cost: 255,
+		description: 'Adds 3 Blinking Press Turn Icons.'
+	},
+	{
 		name: 'Guiding Tendril',
 		affinity: 'Almighty',
 		type: 'MISC',
@@ -4673,6 +4767,14 @@ const skillData: AnySkillData[] = [
 		amount: 25,
 		element: 'Gun',
 		stacks: 'x'
+	},
+	{
+		name: 'Gun Pierce',
+		affinity: 'Passive',
+		type: 'MISC',
+		target: 'Self',
+		cost: null,
+		description: 'Gun attacks ignore affinity resistance except repel.'
 	},
 	{
 		name: 'Gun Pleroma',
@@ -5631,6 +5733,14 @@ const skillData: AnySkillData[] = [
 		},
 		target: 'One Foe',
 		series: 'smt'
+	},
+	{
+		name: 'Ice Pierce',
+		affinity: 'Passive',
+		type: 'MISC',
+		target: 'Self',
+		cost: null,
+		description: 'Ice attacks ignore affinity resistance except repel.'
 	},
 	{
 		name: 'Ice Pleroma',
@@ -7891,6 +8001,23 @@ const skillData: AnySkillData[] = [
 		series: 'smt'
 	},
 	{
+		name: 'Megidoplasma',
+		affinity: 'Almighty',
+		type: 'ATTACK',
+		accuracy: 98,
+		cost: {
+			stat: 'MP',
+			amount: 41
+		},
+		power: {
+			amount: 160,
+			display: 'Heavy',
+			type: 'Magic'
+		},
+		target: 'All Foes',
+		series: 'smt'
+	},
+	{
 		name: 'Mementos Scan',
 		affinity: 'Passive',
 		type: 'NAVI',
@@ -9244,6 +9371,14 @@ const skillData: AnySkillData[] = [
 		]
 	},
 	{
+		name: 'Phys Pierce',
+		affinity: 'Passive',
+		type: 'MISC',
+		target: 'Self',
+		cost: null,
+		description: 'Phys attacks ignore affinity resistance except repel.'
+	},
+	{
 		name: 'Phys Pleroma',
 		affinity: 'Passive',
 		type: 'BOOST',
@@ -9269,6 +9404,25 @@ const skillData: AnySkillData[] = [
 			type: 'Physical'
 		},
 		target: 'One Foe',
+		series: 'smt'
+	},
+	{
+		name: 'Plasma Discharge',
+		affinity: 'Elec',
+		type: 'ATTACK',
+		accuracy: 98,
+		cost: {
+			stat: 'MP',
+			amount: 22
+		},
+		max: 1,
+		min: 8,
+		power: {
+			amount: 30,
+			display: 'Weak',
+			type: 'Magic'
+		},
+		target: 'Random Foes',
 		series: 'smt'
 	},
 	{
@@ -10110,6 +10264,25 @@ const skillData: AnySkillData[] = [
 			'Accuracy/Evasion': BuffValue.GreatlyIncrease
 		},
 		auto: []
+	},
+	{
+		name: 'Refrigerate',
+		affinity: 'Ice',
+		type: 'ATTACK',
+		accuracy: 98,
+		cost: {
+			stat: 'MP',
+			amount: 26
+		},
+		max: 1,
+		min: 8,
+		power: {
+			amount: 45,
+			display: 'Weak',
+			type: 'Magic'
+		},
+		target: 'Random Foes',
+		series: 'smt'
 	},
 	{
 		name: 'Regenerate 1',
@@ -11036,6 +11209,22 @@ const skillData: AnySkillData[] = [
 		series: 'persona'
 	},
 	{
+		name: 'Shivering Taboo',
+		affinity: 'Ailment',
+		type: 'AILMENT',
+		unique: true,
+		target: 'All Foes',
+		cost: 40,
+		ailments: [
+			'Bind',
+			'Confusion',
+			'Sleep',
+			'Sick',
+			'Poison'
+		],
+		chance: 70
+	},
+	{
 		name: 'Shock Boost',
 		affinity: 'Passive',
 		type: 'AILBOOST',
@@ -11443,6 +11632,14 @@ const skillData: AnySkillData[] = [
 		series: 'smt'
 	},
 	{
+		name: 'Spirit Focus',
+		affinity: 'Support',
+		type: 'CHARGE',
+		target: 'Self',
+		cost: 25,
+		charge: 'Magic Charge - Spirit Focus'
+	},
+	{
 		name: 'Spirit Leech',
 		affinity: 'Almighty',
 		type: 'ATTACK',
@@ -11507,6 +11704,29 @@ const skillData: AnySkillData[] = [
 		description: 'Recover 10% HP after battle (party).'
 	},
 	{
+		name: 'Star Tarantella',
+		affinity: 'Phys',
+		type: 'ATTACK',
+		accuracy: 98,
+		ailments: {
+			names: [
+				'Confusion'
+			],
+			chance: 70
+		},
+		cost: {
+			stat: 'MP',
+			amount: 36
+		},
+		power: {
+			amount: 300,
+			display: 'Heavy',
+			type: 'Physical'
+		},
+		target: 'All Foes',
+		series: 'smt'
+	},
+	{
 		name: 'Stasis Blade',
 		affinity: 'Phys',
 		type: 'ATTACK',
@@ -11553,6 +11773,29 @@ const skillData: AnySkillData[] = [
 			type: 'Physical'
 		},
 		target: 'One Foe',
+		series: 'smt'
+	},
+	{
+		name: 'Stigmatic Gleam',
+		affinity: 'Almighty',
+		type: 'ATTACK',
+		accuracy: 98,
+		ailments: {
+			names: [
+				'Brand'
+			],
+			chance: 70
+		},
+		cost: {
+			stat: 'MP',
+			amount: 75
+		},
+		power: {
+			amount: 390,
+			display: 'Heavy',
+			type: 'Magic'
+		},
+		target: 'All Foes',
 		series: 'smt'
 	},
 	{

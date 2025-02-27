@@ -355,6 +355,56 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		origin: 'Universal'
 	},
 	{
+		name: 'Aeshma',
+		affinities: {
+			skillPotential: null,
+			inherit: null
+		},
+		arcana: 'Tower',
+		race: 'Tyrant',
+		level: 10,
+		hp: 134,
+		mp: 97,
+		stats: {
+			st: 16,
+			dx: 16,
+			ma: 16,
+			ag: 16,
+			lu: 16
+		},
+		learnset: [
+			{
+				name: 'Refrigerate',
+				level: 0
+			},
+			{
+				name: 'Ice Pierce',
+				level: 0
+			},
+			{
+				name: 'Fire Pierce',
+				level: 13
+			},
+			{
+				name: 'Elec Pierce',
+				level: 16
+			},
+			{
+				name: 'Force Pierce',
+				level: 19
+			},
+			{
+				name: 'Star Tarantella',
+				level: 21
+			}
+		],
+		resistances: {},
+		game: 'smt4',
+		alignment: null,
+		lore: null,
+		origin: 'Zoroastrian'
+	},
+	{
 		name: 'Agathion',
 		affinities: {
 			skillPotential: {
@@ -2013,6 +2063,49 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		evoSkillName: 'Evade Psy'
 	},
 	{
+		name: 'Ancient of Days',
+		affinities: {
+			skillPotential: null,
+			inherit: null
+		},
+		arcana: null,
+		race: 'Godly',
+		level: 96,
+		hp: 494,
+		mp: 400,
+		stats: {
+			st: 88,
+			dx: 98,
+			ma: 127,
+			ag: 83,
+			lu: 117
+		},
+		learnset: [
+			{
+				name: 'Damnation',
+				level: 0
+			},
+			{
+				name: 'Stigmatic Gleam',
+				level: 97
+			},
+			{
+				name: 'Spirit Focus',
+				level: 99
+			}
+		],
+		resistances: {
+			Elec: 'Weak',
+			Force: 'Weak',
+			Light: 'Null',
+			Dark: 'Null'
+		},
+		game: 'smt4',
+		alignment: null,
+		lore: null,
+		origin: 'Abrahamic'
+	},
+	{
 		name: 'Andras',
 		affinities: {
 			skillPotential: {
@@ -3647,6 +3740,109 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		alignment: null,
 		lore: null,
 		origin: null
+	},
+	{
+		name: 'Asmodeus',
+		affinities: {
+			skillPotential: null,
+			inherit: null
+		},
+		arcana: null,
+		race: 'Tyrant',
+		level: 51,
+		hp: 421,
+		mp: 220,
+		stats: {
+			st: 57,
+			dx: 57,
+			ma: 57,
+			ag: 57,
+			lu: 57
+		},
+		learnset: [
+			{
+				name: 'Fire Breath',
+				level: 0
+			},
+			{
+				name: 'Blight',
+				level: 0
+			},
+			{
+				name: 'Life Aid',
+				level: 52
+			},
+			{
+				name: 'Doping',
+				level: 53
+			}
+		],
+		resistances: {
+			Gun: 'Null',
+			Fire: 'Drain',
+			Light: 'Weak',
+			Dark: 'Null'
+		},
+		game: 'smt4',
+		alignment: {
+			major: 'Dark',
+			minor: 'Chaos'
+		},
+		lore: null,
+		origin: 'Abrahamic'
+	},
+	{
+		name: 'Astaroth',
+		aliases: [
+			'Ashtar',
+			'Astarte',
+			'Ishtar'
+		],
+		affinities: {
+			skillPotential: null,
+			inherit: null
+		},
+		arcana: 'Devil',
+		race: 'Tyrant',
+		level: 48,
+		hp: 400,
+		mp: 209,
+		stats: {
+			st: 54,
+			dx: 49,
+			ma: 49,
+			ag: 65,
+			lu: 54
+		},
+		learnset: [
+			{
+				name: 'Hades Blast',
+				level: 0
+			},
+			{
+				name: 'Mabufudyne',
+				level: 0
+			},
+			{
+				name: 'High Ice Pleroma',
+				level: 50
+			},
+			{
+				name: 'Bloody Glee',
+				level: 52
+			}
+		],
+		resistances: {
+			Ice: 'Repel',
+			Dark: 'Null'
+		},
+		game: 'smt4',
+		alignment: {
+			major: 'Dark',
+			minor: 'Chaos'
+		},
+		lore: null,
+		origin: 'Abrahamic'
 	},
 	{
 		name: 'Astarte',
@@ -7815,6 +8011,56 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		origin: null
 	},
 	{
+		name: 'Chemtrail',
+		affinities: {
+			skillPotential: null,
+			inherit: null
+		},
+		arcana: null,
+		race: 'Fiend',
+		level: 83,
+		hp: 433,
+		mp: 357,
+		stats: {
+			st: 77,
+			dx: 85,
+			ma: 111,
+			ag: 72,
+			lu: 102
+		},
+		learnset: [
+			{
+				name: 'Shivering Taboo',
+				level: 0
+			},
+			{
+				name: 'Fog Breath',
+				level: 0
+			},
+			{
+				name: 'Acid Breath',
+				level: 84
+			},
+			{
+				name: 'Riot Gun',
+				level: 85
+			}
+		],
+		resistances: {
+			Light: 'Resist',
+			Dark: 'Null',
+			Bind: 'Null',
+			Confusion: 'Null',
+			Poison: 'Null',
+			Sick: 'Null',
+			Sleep: 'Null'
+		},
+		game: 'smt4',
+		alignment: null,
+		lore: null,
+		origin: 'North American'
+	},
+	{
 		name: 'Chernobog',
 		affinities: {
 			skillPotential: {
@@ -8504,6 +8750,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 	},
 	{
 		name: 'Corpses',
+		aliases: [
+			'Corpse'
+		],
 		affinities: {
 			skillPotential: {
 				Phys: 0,
@@ -10315,6 +10564,57 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			minor: 'Neutral'
 		},
 		lore: 'A canine demon of Celtic mythology.\nCommanded by Gwyn, King of the Afterlife, she is said to be a hound with a red nose visible through even the mountain mist. The meaning of her name is uncertain and subject to much speculation, but the most common theory is "death\'s door," and she is thought to be the gatekeeper of the afterlife under Gwyn\'s reign.',
+		origin: 'Celtic'
+	},
+	{
+		name: 'Dullahan',
+		affinities: {
+			skillPotential: null,
+			inherit: null
+		},
+		arcana: null,
+		race: 'Haunt',
+		level: 67,
+		hp: 533,
+		mp: 267,
+		stats: {
+			st: 73,
+			dx: 73,
+			ma: 73,
+			ag: 73,
+			lu: 73
+		},
+		learnset: [
+			{
+				name: 'Mudoon',
+				level: 0
+			},
+			{
+				name: 'Blight',
+				level: 0
+			},
+			{
+				name: 'Luster Candy',
+				level: 0
+			},
+			{
+				name: 'Awakening',
+				level: 68
+			},
+			{
+				name: 'Bloody Glee',
+				level: 70
+			}
+		],
+		resistances: {
+			Phys: 'Resist',
+			Elec: 'Weak',
+			Light: 'Weak',
+			Dark: 'Null'
+		},
+		game: 'smt4',
+		alignment: null,
+		lore: null,
 		origin: 'Celtic'
 	},
 	{
@@ -20821,6 +21121,57 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		origin: 'Japanese'
 	},
 	{
+		name: 'Koga Saburo',
+		affinities: {
+			skillPotential: null,
+			inherit: null
+		},
+		arcana: null,
+		race: 'Dragon',
+		level: 75,
+		hp: 589,
+		mp: 290,
+		stats: {
+			st: 81,
+			dx: 74,
+			ma: 74,
+			ag: 97,
+			lu: 81
+		},
+		learnset: [
+			{
+				name: 'Life Gain',
+				level: 0
+			},
+			{
+				name: 'Zandyne',
+				level: 0
+			},
+			{
+				name: 'Berserker God',
+				level: 0
+			},
+			{
+				name: 'Ziodyne',
+				level: 76
+			},
+			{
+				name: 'High Force Pleroma',
+				level: 77
+			}
+		],
+		resistances: {
+			Ice: 'Weak',
+			Elec: 'Resist',
+			Force: 'Repel',
+			Dark: 'Null'
+		},
+		game: 'smt4',
+		alignment: null,
+		lore: null,
+		origin: 'Japanese'
+	},
+	{
 		name: 'Koh-i-Noor',
 		affinities: {
 			skillPotential: null,
@@ -21620,6 +21971,57 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		},
 		lore: 'An evil vampire who fights Kresnik, a proxy of God.\nIt is said that all bad things, including diseases, poor harvests, and bad luck, are all under Kudlak\'s purview. He transforms into various animal forms to fight with Kresnik, and his other forms are always colored black.',
 		origin: 'Slavic'
+	},
+	{
+		name: 'Kuebiko',
+		affinities: {
+			skillPotential: null,
+			inherit: null
+		},
+		arcana: null,
+		race: 'Jirae',
+		level: 44,
+		hp: 250,
+		mp: 235,
+		stats: {
+			st: 43,
+			dx: 48,
+			ma: 62,
+			ag: 41,
+			lu: 58
+		},
+		learnset: [
+			{
+				name: 'Wind Breath',
+				level: 0
+			},
+			{
+				name: 'Light Life Aid',
+				level: 0
+			},
+			{
+				name: 'War Cry',
+				level: 0
+			},
+			{
+				name: 'Resist Fire',
+				level: 45
+			},
+			{
+				name: 'Berserker God',
+				level: 46
+			}
+		],
+		resistances: {
+			Fire: 'Weak',
+			Force: 'Drain',
+			Light: 'Resist',
+			Dark: 'Resist'
+		},
+		game: 'smt4',
+		alignment: null,
+		lore: null,
+		origin: 'Japanese'
 	},
 	{
 		name: 'Kukunochi',
@@ -24626,6 +25028,68 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		origin: 'Japanese'
 	},
 	{
+		name: 'Masakado\'s Shadow',
+		affinities: {
+			skillPotential: null,
+			inherit: null
+		},
+		arcana: null,
+		race: 'Fury',
+		level: 83,
+		hp: 645,
+		mp: 314,
+		stats: {
+			st: 89,
+			dx: 89,
+			ma: 89,
+			ag: 89,
+			lu: 89
+		},
+		learnset: [
+			{
+				name: 'Curse Thy Enemy',
+				level: 0
+			},
+			{
+				name: 'Gun Pierce',
+				level: 0
+			},
+			{
+				name: 'Drain Fire',
+				level: 0
+			},
+			{
+				name: 'Drain Ice',
+				level: 84
+			},
+			{
+				name: 'Drain Elec',
+				level: 85
+			},
+			{
+				name: 'Drain Force',
+				level: 86
+			},
+			{
+				name: 'Guardian\'s Eye',
+				level: 99
+			}
+		],
+		resistances: {
+			Phys: 'Drain',
+			Gun: 'Drain',
+			Light: 'Null',
+			Dark: 'Null'
+		},
+		game: 'smt4',
+		alignment: {
+			major: 'Light',
+			minor: 'Neutral'
+		},
+		lore: null,
+		origin: 'Japanese'
+	},
+	{
 		name: 'Mastema',
 		affinities: {
 			skillPotential: {
@@ -25778,6 +26242,57 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		origin: 'Abrahamic'
 	},
 	{
+		name: 'Michizane',
+		affinities: {
+			skillPotential: null,
+			inherit: null
+		},
+		arcana: null,
+		race: 'Famed',
+		level: 84,
+		hp: 652,
+		mp: 319,
+		stats: {
+			st: 90,
+			dx: 90,
+			ma: 90,
+			ag: 90,
+			lu: 90
+		},
+		learnset: [
+			{
+				name: 'Thunder Reign',
+				level: 0
+			},
+			{
+				name: 'Heaven\'s Bow',
+				level: 0
+			},
+			{
+				name: 'Mudoon',
+				level: 0
+			},
+			{
+				name: 'Workaholic',
+				level: 85
+			},
+			{
+				name: 'Concentrate',
+				level: 86
+			}
+		],
+		resistances: {
+			Ice: 'Weak',
+			Elec: 'Drain',
+			Light: 'Null',
+			Dark: 'Null'
+		},
+		game: 'smt4',
+		alignment: null,
+		lore: null,
+		origin: 'Japanese'
+	},
+	{
 		name: 'Milady',
 		affinities: {
 			skillPotential: null,
@@ -25884,6 +26399,52 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		user: 'Haru Okumura',
 		stage: 1,
 		evoSkillName: null
+	},
+	{
+		name: 'Minotaur',
+		affinities: {
+			skillPotential: null,
+			inherit: null
+		},
+		arcana: null,
+		race: 'Beast',
+		level: 33,
+		hp: 400,
+		mp: 80,
+		stats: {
+			st: 48,
+			dx: 43,
+			ma: 34,
+			ag: 39,
+			lu: 32
+		},
+		learnset: [
+			{
+				name: 'Oni-Kagura',
+				level: 0
+			},
+			{
+				name: 'Phys Pleroma',
+				level: 0
+			},
+			{
+				name: 'Charge',
+				level: 34
+			},
+			{
+				name: 'Ally Counter',
+				level: 35
+			}
+		],
+		resistances: {
+			Fire: 'Null',
+			Ice: 'Weak',
+			Dark: 'Null'
+		},
+		game: 'smt4',
+		alignment: null,
+		lore: null,
+		origin: 'Greco-Roman'
 	},
 	{
 		name: 'Mishaguji',
@@ -29593,6 +30154,59 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		origin: null
 	},
 	{
+		name: 'Oread',
+		affinities: {
+			skillPotential: null,
+			inherit: null
+		},
+		arcana: null,
+		race: 'Fairy',
+		level: 13,
+		hp: 104,
+		mp: 138,
+		stats: {
+			st: 17,
+			dx: 19,
+			ma: 23,
+			ag: 16,
+			lu: 22
+		},
+		learnset: [
+			{
+				name: 'Zanma',
+				level: 0
+			},
+			{
+				name: 'Rakukaja',
+				level: 0
+			},
+			{
+				name: 'Patra',
+				level: 0
+			},
+			{
+				name: 'Force Pleroma',
+				level: 14
+			},
+			{
+				name: 'Trafuri',
+				level: 16
+			}
+		],
+		resistances: {
+			Fire: 'Weak',
+			Force: 'Resist',
+			Light: 'Resist',
+			Dark: 'Resist',
+			Confusion: 'Resist',
+			Poison: 'Resist'
+		},
+		game: 'smt4',
+		alignment: null,
+		lore: null,
+		origin: 'Greco-Roman'
+	},
+	{
 		name: 'Orias',
 		affinities: {
 			skillPotential: {
@@ -32055,6 +32669,54 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		origin: 'European'
 	},
 	{
+		name: 'Plasma',
+		affinities: {
+			skillPotential: null,
+			inherit: null
+		},
+		arcana: null,
+		race: 'Fiend',
+		level: 28,
+		hp: 175,
+		mp: 184,
+		stats: {
+			st: 30,
+			dx: 33,
+			ma: 42,
+			ag: 28,
+			lu: 39
+		},
+		learnset: [
+			{
+				name: 'Plasma Discharge',
+				level: 0
+			},
+			{
+				name: 'Fog Breath',
+				level: 29
+			},
+			{
+				name: 'Megidoplasma',
+				level: 31
+			}
+		],
+		resistances: {
+			Phys: 'Resist',
+			Gun: 'Resist',
+			Ice: 'Weak',
+			Elec: 'Drain',
+			Poison: 'Resist',
+			Sick: 'Resist'
+		},
+		game: 'smt4',
+		alignment: {
+			major: 'Dark',
+			minor: 'Neutral'
+		},
+		lore: null,
+		origin: 'North American'
+	},
+	{
 		name: 'Poltergeist',
 		affinities: {
 			skillPotential: {
@@ -34354,6 +35016,57 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		alignment: null,
 		lore: null,
 		origin: null
+	},
+	{
+		name: 'Sanat',
+		affinities: {
+			skillPotential: null,
+			inherit: null
+		},
+		arcana: null,
+		race: 'Chaos',
+		level: 96,
+		hp: 995,
+		mp: 155,
+		stats: {
+			st: 127,
+			dx: 112,
+			ma: 88,
+			ag: 102,
+			lu: 83
+		},
+		learnset: [
+			{
+				name: 'Gaea Rage',
+				level: 0
+			},
+			{
+				name: 'Deadly Fury',
+				level: 0
+			},
+			{
+				name: 'Dark Energy',
+				level: 98
+			},
+			{
+				name: 'Phys Pierce',
+				level: 99
+			}
+		],
+		resistances: {
+			Phys: 'Null',
+			Gun: 'Weak',
+			Fire: 'Resist',
+			Ice: 'Resist',
+			Elec: 'Resist',
+			Force: 'Resist',
+			Light: 'Null',
+			Dark: 'Null'
+		},
+		game: 'smt4',
+		alignment: null,
+		lore: null,
+		origin: 'Hindu'
 	},
 	{
 		name: 'Sandalphon',
@@ -43175,6 +43888,60 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		alignment: null,
 		lore: null,
 		origin: null
+	},
+	{
+		name: 'Yaso Magatsuhi',
+		aliases: [
+			'Magatsuhi'
+		],
+		affinities: {
+			skillPotential: null,
+			inherit: null
+		},
+		arcana: null,
+		race: 'Vile',
+		level: 80,
+		hp: 844,
+		mp: 137,
+		stats: {
+			st: 107,
+			dx: 95,
+			ma: 74,
+			ag: 86,
+			lu: 70
+		},
+		learnset: [
+			{
+				name: 'Acid Breath',
+				level: 0
+			},
+			{
+				name: 'Shivering Taboo',
+				level: 0
+			},
+			{
+				name: 'Poison Breath',
+				level: 0
+			},
+			{
+				name: 'Bufudyne',
+				level: 81
+			},
+			{
+				name: 'Death\'s Door',
+				level: 82
+			}
+		],
+		resistances: {
+			Fire: 'Weak',
+			Ice: 'Repel',
+			Elec: 'Null',
+			Dark: 'Null'
+		},
+		game: 'smt4',
+		alignment: null,
+		lore: null,
+		origin: 'Japanese'
 	},
 	{
 		name: 'Yatagarasu',

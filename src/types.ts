@@ -28,7 +28,7 @@ export interface AttackAilments {
 }
 
 /** Ailments' names (adjusted for consistency with SMT5) */
-export type AilmentName = 'Bind' | 'Burn' | 'Charm' | 'Confusion' | 'Daze' | 'Death' | 'Despair' | 'Dizzy' | 'Down' | 'Enervate' | 'Exhaust' | 'Fear' | 'Freeze' | 'Hunger' | 'Mirage' | 'Mud' | 'Poison' | 'Rage' | 'Seal' | 'Shock' | 'Stone' | 'Stun' | 'Shroud' | 'Sick' | 'Sleep';
+export type AilmentName = 'Bind' | 'Brand' | 'Burn' | 'Charm' | 'Confusion' | 'Daze' | 'Death' | 'Despair' | 'Dizzy' | 'Down' | 'Enervate' | 'Exhaust' | 'Fear' | 'Freeze' | 'Hunger' | 'Mirage' | 'Mud' | 'Poison' | 'Rage' | 'Seal' | 'Shock' | 'Stone' | 'Stun' | 'Shroud' | 'Sick' | 'Sleep';
 
 /** Resistances to ailments */
 export type AilResistance = 'Resist' | 'Null';
@@ -49,7 +49,7 @@ export interface AttackCost {
 }
 
 /** Flags for AttackSkill instances */
-export type AttackFlag = '+20% Crit Rate' | '+200% Crit Rate' | '+30% Crit Rate' | 'Afflicted Boost' | 'After Evading Only' | 'Agility Dependent Hits' | 'Asleep Boost' | 'Attack Reduced' | 'Baton Boost' | 'Chaos Target Boost' | 'Charmed Boost' | 'Confused Boost' | 'Crit Damage Boost' | 'Debuff Number Dependent' | 'Defense Greatly Down' | 'Down Boost' | 'Drain HP' | 'Drain HP/MP' | 'Drain MP' | 'Foe Number Dependent' | 'HP Dependent' | 'Law Target Boost' | 'Minimize Defense' | 'Mirage Boost' | 'Negate Charges/Barriers' | 'Pierce' | 'Poisoned Boost' | 'Shroud Dependent' | 'Smirk Boost' | 'Smirk Instakill' | 'Smirk Pierce' | 'Smirk-Dependent Debuffs' | 'Static Damage' | 'Surround Boost' | 'Weakness Instakill' | 'Weather Boost';
+export type AttackFlag = '+20% Crit Rate' | '+200% Crit Rate' | '+30% Crit Rate' | 'Afflicted Boost' | 'After Evading Only' | 'Agility Dependent Hits' | 'Asleep Boost' | 'Attack Reduced' | 'Baton Boost' | 'Chaos Target Boost' | 'Charmed Boost' | 'Confused Boost' | 'Crit Damage Boost' | 'Debuff Number Dependent' | 'Defense Greatly Down' | 'Down Boost' | 'Drain HP' | 'Drain HP/MP' | 'Drain MP' | 'Foe Number Dependent' | 'Guarantees Weakness' | 'HP Dependent' | 'Law Target Boost' | 'Minimize Defense' | 'Mirage Boost' | 'Negate Charges/Barriers' | 'Pierce' | 'Poisoned Boost' | 'Shroud Dependent' | 'Smirk Boost' | 'Smirk Instakill' | 'Smirk Pierce' | 'Smirk-Dependent Debuffs' | 'Static Damage' | 'Surround Boost' | 'Weakness Instakill' | 'Weather Boost';
 
 /** A base for skills with a specific amount of power */
 export interface BasePower {
@@ -76,7 +76,7 @@ export type Buff = 'Attack' | 'Magic' | 'Defense' | 'Accuracy/Evasion';
 export type BuffRecord = Partial<Record<Buff, BuffValue>>;
 
 /** Charges cast by a Skill instance */
-export type Charge = 'Phys Charge' | 'Phys Charge - Donum' | 'Magic Charge' | 'Magic Charge - Donum' | 'Critical Charge' | 'Recovery Charge' | 'Pierce Charge' | 'Pierce Charge EX' | 'Successive Strikes' | 'Fire Pierce' | 'Ice Pierce' | 'Elec Pierce' | 'Force Pierce';
+export type Charge = 'Phys Charge' | 'Phys Charge - Dark Energy' | 'Phys Charge - Donum' | 'Magic Charge' | 'Magic Charge - Donum' | 'Magic Charge - Spirit Focus' | 'Critical Charge' | 'Recovery Charge' | 'Pierce Charge' | 'Pierce Charge EX' | 'Successive Strikes' | 'Fire Pierce' | 'Ice Pierce' | 'Elec Pierce' | 'Force Pierce';
 
 /** Displayed damage values for SMTCounterSkill instances */
 export type CounterDisplay = 'Weak' | 'Medium';
