@@ -209,7 +209,7 @@ export type AnyGame = PersonaGame | SMTGame;
 /** Custom races for demons that originate in Persona games */
 export type PersonaRace = 'Persona' | 'Picaro' | 'Treasure';
 /** Demons' official races */
-export type SMTRace = 'Amatsu' | 'Avatar' | 'Avian' | 'Beast' | 'Brute' | 'Deity' | 'Devil' | 'Divine' | 'Dragon' | 'Drake' | 'Element' | 'Enigma' | 'Entity' | 'Fairy' | 'Fallen' | 'Famed' | 'Femme' | 'Fiend' | 'Flight' | 'Food' | 'Foul' | 'Fury' | 'Genma' | 'Godly' | 'Haunt' | 'Herald' | 'Holy' | 'Jaki' | 'Jirae' | 'King' | 'Kishin' | 'Kunitsu' | 'Lady' | 'Matter' | 'Megami' | 'Meta' | 'Mitama' | 'Nahobino' | 'Night' | 'Nymph' | 'Panagia' | 'Primal' | 'Qadištu' | 'Raptor' | 'Reaper' | 'Snake' | 'Spirit' | 'Tenma' | 'Tree' | 'Tyrant' | 'UMA' | 'Undead' | 'Vermin' | 'Vile' | 'Wargod' | 'Wilder' | 'Wood' | 'Yoma' | 'Zealot' | '???';
+export type SMTRace = 'Amatsu' | 'Avatar' | 'Avian' | 'Beast' | 'Brute' | 'Chaos' | 'Deity' | 'Devil' | 'Divine' | 'Dragon' | 'Drake' | 'Element' | 'Enigma' | 'Entity' | 'Fairy' | 'Fallen' | 'Famed' | 'Femme' | 'Fiend' | 'Flight' | 'Food' | 'Foul' | 'Fury' | 'Genma' | 'Godly' | 'Haunt' | 'Herald' | 'Holy' | 'Jaki' | 'Jirae' | 'Kishin' | 'Kunitsu' | 'Lady' | 'Matter' | 'Megami' | 'Meta' | 'Mitama' | 'Nahobino' | 'Night' | 'Nymph' | 'Panagia' | 'Primal' | 'Qadištu' | 'Raptor' | 'Reaper' | 'Snake' | 'Spirit' | 'Tenma' | 'Tree' | 'Tyrant' | 'UMA' | 'Undead' | 'Vermin' | 'Vile' | 'Wargod' | 'Wilder' | 'Wood' | 'Yoma' | 'Zealot' | '???';
 /** Demons' races */
 export type AnyRace = PersonaRace | SMTRace;
 

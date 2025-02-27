@@ -1621,7 +1621,7 @@ export const smt5Bosses: SMT5BossData[] = [
 			Recovery: 4,
 			Support: 4
 		},
-		race: 'King',
+		race: 'Chaos',
 		level: 99,
 		hp: 60000,
 		stats: {
