@@ -98,7 +98,7 @@ export interface DemonAffinities<PersonaBased extends boolean = boolean> {
 }
 
 /** A demon's mythological origin */
-export type DemonOrigin = 'Aboriginal' | 'Abrahamic' | 'African' | 'Arabian' | 'ATLUS Original' | 'Balinese' | 'Buddhist' | 'Buryat' | 'Canaanite' | 'Celtic' | 'Chinese' | 'Egyptian' | 'European' | 'Filipino' | 'Greco-Roman' | 'Haitian' | 'Hindu' | 'Japanese' | 'Lithuanian' | 'Lovecraftian' | 'Historical' | 'Mesopotamian' | 'Modern Fiction' | 'Norse' | 'North American' | 'Slavic' | 'South American' | 'Universal' | 'Zoroastrian';
+export type DemonOrigin = 'Aboriginal' | 'Abrahamic' | 'African' | 'Arabian' | 'ATLUS Original' | 'Aztec' | 'Balinese' | 'Buddhist' | 'Buryat' | 'Canaanite' | 'Celtic' | 'Chinese' | 'Dominican' | 'Egyptian' | 'European' | 'Filipino' | 'Gnostic' | 'Greco-Roman' | 'Haitian' | 'Hawaiian' | 'Hindu' | 'Incan' | 'Japanese' | 'Lithuanian' | 'Lovecraftian' | 'Historical' | 'Mayan' | 'Mesopotamian' | 'Modern Fiction' | 'Nepali' | 'Norse' | 'North American' | 'Polynesian' | 'Puebloan' | 'Puerto Rican' | 'Romani' | 'Scottish' | 'Slavic' | 'South American' | 'Sri Lankan' | 'Universal' | 'Zoroastrian';
 
 /** A demon's ailment and affinity resistances */
 export type DemonResistances = Partial<Record<DamagingAffinity, Resistance> & Record<AilmentName, 'Weak' | AilResistance>>;

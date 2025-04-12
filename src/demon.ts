@@ -45,8 +45,8 @@ export class Demon<PersonaBased extends boolean = boolean> implements DemonData<
 	alignment: DemonAlignment | null;
 	/** The demon's backstory, or null for older Personas and SMT4 demons */
 	lore: string | null;
-	/** The demon's mythological origin, or null for SMT4 demons */
-	origin: DemonOrigin | null;
+	/** The demon's mythological origin */
+	origin: DemonOrigin;
 	constructor(data: DemonData<PersonaBased>) {
 		this.name = data.name;
 		this.aliases = data.aliases ?? [];
