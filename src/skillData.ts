@@ -3771,6 +3771,7 @@ const skillData: AnySkillData[] = [
 		name: 'Fighting Spirit',
 		affinity: 'Support',
 		type: 'CHARGE',
+		unique: null,
 		target: 'All Allies',
 		cost: 80,
 		charge: 'Phys Charge'
@@ -5425,6 +5426,7 @@ const skillData: AnySkillData[] = [
 		name: 'High Energy',
 		affinity: 'Support',
 		type: 'CHARGE',
+		unique: null,
 		target: 'All Allies',
 		cost: 80,
 		charge: 'Magic Charge'
