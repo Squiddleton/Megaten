@@ -128,7 +128,7 @@ const skillData: AnySkillData[] = [
 		target: 'All Foes',
 		cost: 65,
 		buffs: {
-			Defense: BuffValue.Decrease,
+			'Defense': BuffValue.Decrease,
 			'Accuracy/Evasion': BuffValue.Decrease
 		},
 		auto: []
@@ -463,8 +463,8 @@ const skillData: AnySkillData[] = [
 			amount: 110
 		},
 		debuffs: {
-			Attack: BuffValue.Decrease,
-			Defense: BuffValue.Decrease,
+			'Attack': BuffValue.Decrease,
+			'Defense': BuffValue.Decrease,
 			'Accuracy/Evasion': BuffValue.Decrease
 		},
 		flags: [
@@ -1158,8 +1158,8 @@ const skillData: AnySkillData[] = [
 		target: 'Self',
 		cost: 25,
 		buffs: {
-			Attack: BuffValue.Increase,
-			Defense: BuffValue.Increase,
+			'Attack': BuffValue.Increase,
+			'Defense': BuffValue.Increase,
 			'Accuracy/Evasion': BuffValue.Increase
 		},
 		flags: [
@@ -1264,8 +1264,8 @@ const skillData: AnySkillData[] = [
 			amount: 150
 		},
 		debuffs: {
-			Attack: BuffValue.NegateBuffs,
-			Defense: BuffValue.NegateBuffs,
+			'Attack': BuffValue.NegateBuffs,
+			'Defense': BuffValue.NegateBuffs,
 			'Accuracy/Evasion': BuffValue.NegateBuffs
 		},
 		flags: [
@@ -1522,8 +1522,8 @@ const skillData: AnySkillData[] = [
 		],
 		chance: 80,
 		debuffs: {
-			Attack: BuffValue.NegateBuffs,
-			Defense: BuffValue.NegateBuffs,
+			'Attack': BuffValue.NegateBuffs,
+			'Defense': BuffValue.NegateBuffs,
 			'Accuracy/Evasion': BuffValue.NegateDebuffs
 		}
 	},
@@ -1573,7 +1573,7 @@ const skillData: AnySkillData[] = [
 		target: 'All Allies',
 		cost: 50,
 		buffs: {
-			Defense: BuffValue.Increase,
+			'Defense': BuffValue.Increase,
 			'Accuracy/Evasion': BuffValue.Increase
 		},
 		auto: []
@@ -1734,8 +1734,8 @@ const skillData: AnySkillData[] = [
 		target: 'All Foes',
 		cost: 90,
 		buffs: {
-			Attack: BuffValue.Decrease,
-			Defense: BuffValue.Decrease,
+			'Attack': BuffValue.Decrease,
+			'Defense': BuffValue.Decrease,
 			'Accuracy/Evasion': BuffValue.Decrease
 		},
 		auto: []
@@ -1808,8 +1808,8 @@ const skillData: AnySkillData[] = [
 		target: 'All Allies',
 		cost: 60,
 		buffs: {
-			Attack: BuffValue.Increase,
-			Defense: BuffValue.Increase,
+			'Attack': BuffValue.Increase,
+			'Defense': BuffValue.Increase,
 			'Accuracy/Evasion': BuffValue.Increase
 		},
 		auto: []
@@ -2437,8 +2437,8 @@ const skillData: AnySkillData[] = [
 		target: 'All Foes',
 		cost: 150,
 		buffs: {
-			Attack: BuffValue.Decrease,
-			Defense: BuffValue.Decrease,
+			'Attack': BuffValue.Decrease,
+			'Defense': BuffValue.Decrease,
 			'Accuracy/Evasion': BuffValue.Decrease
 		},
 		auto: []
@@ -2475,8 +2475,8 @@ const skillData: AnySkillData[] = [
 		target: 'All Foes',
 		cost: 40,
 		buffs: {
-			Attack: BuffValue.NegateBuffs,
-			Defense: BuffValue.NegateBuffs,
+			'Attack': BuffValue.NegateBuffs,
+			'Defense': BuffValue.NegateBuffs,
 			'Accuracy/Evasion': BuffValue.NegateBuffs
 		},
 		auto: []
@@ -2488,8 +2488,8 @@ const skillData: AnySkillData[] = [
 		target: 'All Allies',
 		cost: 40,
 		buffs: {
-			Attack: BuffValue.NegateDebuffs,
-			Defense: BuffValue.NegateDebuffs,
+			'Attack': BuffValue.NegateDebuffs,
+			'Defense': BuffValue.NegateDebuffs,
 			'Accuracy/Evasion': BuffValue.NegateDebuffs
 		},
 		auto: []
@@ -3975,7 +3975,7 @@ const skillData: AnySkillData[] = [
 		target: 'All Foes',
 		cost: 65,
 		buffs: {
-			Attack: BuffValue.Decrease,
+			'Attack': BuffValue.Decrease,
 			'Accuracy/Evasion': BuffValue.Decrease
 		},
 		auto: []
@@ -4572,8 +4572,8 @@ const skillData: AnySkillData[] = [
 		cost: 180,
 		amount: 'Moderate',
 		buffs: {
-			Attack: BuffValue.Increase,
-			Defense: BuffValue.Increase,
+			'Attack': BuffValue.Increase,
+			'Defense': BuffValue.Increase,
 			'Accuracy/Evasion': BuffValue.Increase
 		}
 	},
@@ -4587,8 +4587,8 @@ const skillData: AnySkillData[] = [
 		ailments: 'All',
 		amount: null,
 		buffs: {
-			Attack: BuffValue.NegateDebuffs,
-			Defense: BuffValue.NegateDebuffs,
+			'Attack': BuffValue.NegateDebuffs,
+			'Defense': BuffValue.NegateDebuffs,
 			'Accuracy/Evasion': BuffValue.NegateDebuffs
 		}
 	},
@@ -4970,8 +4970,8 @@ const skillData: AnySkillData[] = [
 		],
 		chance: 70,
 		debuffs: {
-			Attack: BuffValue.Decrease,
-			Defense: BuffValue.Decrease,
+			'Attack': BuffValue.Decrease,
+			'Defense': BuffValue.Decrease,
 			'Accuracy/Evasion': BuffValue.Decrease
 		}
 	},
@@ -5056,8 +5056,8 @@ const skillData: AnySkillData[] = [
 		target: 'One Ally',
 		cost: 30,
 		buffs: {
-			Attack: BuffValue.Increase,
-			Defense: BuffValue.Increase,
+			'Attack': BuffValue.Increase,
+			'Defense': BuffValue.Increase,
 			'Accuracy/Evasion': BuffValue.Increase
 		},
 		auto: []
@@ -5225,8 +5225,8 @@ const skillData: AnySkillData[] = [
 			amount: 40
 		},
 		debuffs: {
-			Attack: BuffValue.NegateBuffs,
-			Defense: BuffValue.NegateBuffs,
+			'Attack': BuffValue.NegateBuffs,
+			'Defense': BuffValue.NegateBuffs,
 			'Accuracy/Evasion': BuffValue.NegateBuffs
 		},
 		power: {
@@ -5270,8 +5270,8 @@ const skillData: AnySkillData[] = [
 			amount: 70
 		},
 		debuffs: {
-			Attack: BuffValue.NegateBuffs,
-			Defense: BuffValue.NegateBuffs,
+			'Attack': BuffValue.NegateBuffs,
+			'Defense': BuffValue.NegateBuffs,
 			'Accuracy/Evasion': BuffValue.NegateBuffs
 		},
 		power: {
@@ -5532,8 +5532,8 @@ const skillData: AnySkillData[] = [
 		target: 'One Foe',
 		cost: 0,
 		buffs: {
-			Attack: BuffValue.Minimize,
-			Defense: BuffValue.Minimize,
+			'Attack': BuffValue.Minimize,
+			'Defense': BuffValue.Minimize,
 			'Accuracy/Evasion': BuffValue.Minimize
 		},
 		auto: []
@@ -5555,8 +5555,8 @@ const skillData: AnySkillData[] = [
 		target: 'All Allies',
 		cost: 10,
 		buffs: {
-			Attack: BuffValue.NegateDebuffs,
-			Defense: BuffValue.NegateDebuffs,
+			'Attack': BuffValue.NegateDebuffs,
+			'Defense': BuffValue.NegateDebuffs,
 			'Accuracy/Evasion': BuffValue.NegateDebuffs
 		},
 		auto: []
@@ -5619,8 +5619,8 @@ const skillData: AnySkillData[] = [
 		target: 'All Allies',
 		cost: 90,
 		buffs: {
-			Attack: BuffValue.Increase,
-			Defense: BuffValue.Increase,
+			'Attack': BuffValue.Increase,
+			'Defense': BuffValue.Increase,
 			'Accuracy/Evasion': BuffValue.Increase
 		},
 		auto: []
@@ -5831,8 +5831,8 @@ const skillData: AnySkillData[] = [
 		target: 'One Ally',
 		cost: 50,
 		buffs: {
-			Attack: BuffValue.GreatlyIncrease,
-			Defense: BuffValue.GreatlyIncrease,
+			'Attack': BuffValue.GreatlyIncrease,
+			'Defense': BuffValue.GreatlyIncrease,
 			'Accuracy/Evasion': BuffValue.GreatlyIncrease
 		},
 		auto: []
@@ -6541,8 +6541,8 @@ const skillData: AnySkillData[] = [
 		cost: 150,
 		amount: 'Moderate',
 		buffs: {
-			Attack: BuffValue.NegateDebuffsAndIncrease,
-			Defense: BuffValue.NegateDebuffsAndIncrease,
+			'Attack': BuffValue.NegateDebuffsAndIncrease,
+			'Defense': BuffValue.NegateDebuffsAndIncrease,
 			'Accuracy/Evasion': BuffValue.NegateDebuffsAndIncrease
 		}
 	},
@@ -6717,8 +6717,8 @@ const skillData: AnySkillData[] = [
 		target: 'All Allies',
 		cost: 150,
 		buffs: {
-			Attack: BuffValue.Increase,
-			Defense: BuffValue.Increase,
+			'Attack': BuffValue.Increase,
+			'Defense': BuffValue.Increase,
 			'Accuracy/Evasion': BuffValue.Increase
 		},
 		auto: []
@@ -7686,8 +7686,8 @@ const skillData: AnySkillData[] = [
 		ailments: 'All',
 		amount: 'Moderate',
 		buffs: {
-			Attack: BuffValue.NegateDebuffs,
-			Defense: BuffValue.NegateDebuffs,
+			'Attack': BuffValue.NegateDebuffs,
+			'Defense': BuffValue.NegateDebuffs,
 			'Accuracy/Evasion': BuffValue.NegateDebuffs
 		}
 	},
@@ -8771,8 +8771,8 @@ const skillData: AnySkillData[] = [
 		cost: 24,
 		amount: 'Half',
 		buffs: {
-			Attack: BuffValue.Increase,
-			Defense: BuffValue.Increase,
+			'Attack': BuffValue.Increase,
+			'Defense': BuffValue.Increase,
 			'Accuracy/Evasion': BuffValue.Increase
 		}
 	},
@@ -9196,8 +9196,8 @@ const skillData: AnySkillData[] = [
 		cost: 38,
 		amount: 'Full',
 		buffs: {
-			Attack: BuffValue.NegateDebuffs,
-			Defense: BuffValue.NegateDebuffs,
+			'Attack': BuffValue.NegateDebuffs,
+			'Defense': BuffValue.NegateDebuffs,
 			'Accuracy/Evasion': BuffValue.NegateDebuffs
 		}
 	},
@@ -9685,8 +9685,8 @@ const skillData: AnySkillData[] = [
 			amount: 150
 		},
 		debuffs: {
-			Attack: BuffValue.NegateBuffsAndDecrease,
-			Defense: BuffValue.NegateBuffsAndDecrease,
+			'Attack': BuffValue.NegateBuffsAndDecrease,
+			'Defense': BuffValue.NegateBuffsAndDecrease,
 			'Accuracy/Evasion': BuffValue.NegateBuffsAndDecrease
 		},
 		power: {
@@ -10148,8 +10148,8 @@ const skillData: AnySkillData[] = [
 		target: 'All Allies',
 		cost: 10,
 		buffs: {
-			Attack: BuffValue.NegateDebuffs,
-			Defense: BuffValue.NegateDebuffs,
+			'Attack': BuffValue.NegateDebuffs,
+			'Defense': BuffValue.NegateDebuffs,
 			'Accuracy/Evasion': BuffValue.NegateDebuffs
 		},
 		auto: []
@@ -10903,8 +10903,8 @@ const skillData: AnySkillData[] = [
 		cost: 180,
 		amount: 'Slight',
 		buffs: {
-			Attack: BuffValue.Increase,
-			Defense: BuffValue.Increase,
+			'Attack': BuffValue.Increase,
+			'Defense': BuffValue.Increase,
 			'Accuracy/Evasion': BuffValue.Increase
 		},
 		flags: [
@@ -11281,8 +11281,8 @@ const skillData: AnySkillData[] = [
 		target: 'All',
 		cost: 25,
 		buffs: {
-			Attack: BuffValue.NegateAll,
-			Defense: BuffValue.NegateAll,
+			'Attack': BuffValue.NegateAll,
+			'Defense': BuffValue.NegateAll,
 			'Accuracy/Evasion': BuffValue.NegateAll
 		},
 		auto: []
@@ -11684,7 +11684,7 @@ const skillData: AnySkillData[] = [
 		],
 		chance: 80,
 		debuffs: {
-			Defense: BuffValue.Decrease,
+			'Defense': BuffValue.Decrease,
 			'Accuracy/Evasion': BuffValue.Decrease
 		}
 	},
@@ -12391,8 +12391,8 @@ const skillData: AnySkillData[] = [
 			'Surrounded Only'
 		],
 		buffs: {
-			Attack: BuffValue.Increase,
-			Defense: BuffValue.Increase,
+			'Attack': BuffValue.Increase,
+			'Defense': BuffValue.Increase,
 			'Accuracy/Evasion': BuffValue.Increase
 		},
 		auto: []
@@ -12805,8 +12805,8 @@ const skillData: AnySkillData[] = [
 			amount: 240
 		},
 		debuffs: {
-			Attack: BuffValue.GreatlyDecrease,
-			Defense: BuffValue.GreatlyDecrease,
+			'Attack': BuffValue.GreatlyDecrease,
+			'Defense': BuffValue.GreatlyDecrease,
 			'Accuracy/Evasion': BuffValue.GreatlyDecrease
 		},
 		power: {

@@ -1,5 +1,5 @@
-import type { SMT5BossData } from './dataTypes.js';
 import { BattleThemes } from './music.js';
+import type { SMT5BossData } from './dataTypes.js';
 
 export const smt5Bosses: SMT5BossData[] = [
 	{

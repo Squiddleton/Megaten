@@ -1,9 +1,9 @@
-import { formatPossessive, normalize } from '@squiddleton/util';
-import type { DemonData, PersonaData } from './dataTypes.js';
-import demonData from './demonData.js';
-import { MegatenError } from './error.js';
-import { AnySkill, Skill } from './skill.js';
 import type { AnyGame, Arcana, DemonAffinities, DemonAlignment, DemonOrigin, DemonResistances, DemonSkill, DemonStats, If, PersonaGame, PersonaRace, SMTRace, Stage } from './types.js';
+import { type AnySkill, Skill } from './skill.js';
+import type { DemonData, PersonaData } from './dataTypes.js';
+import { formatPossessive, normalize } from '@squiddleton/util';
+import { MegatenError } from './error.js';
+import demonData from './demonData.js';
 
 function isPersona(demon: Demon | DemonData): demon is Persona {
 	return demon.race === 'Persona';
@@ -65,22 +65,26 @@ export class Demon<PersonaBased extends boolean = boolean> implements DemonData<
 		this.lore = data.lore;
 		this.origin = data.origin;
 	}
+
 	/** Whether the demon is a Persona instance */
 	isPersona(): this is Persona {
 		return isPersona(this);
 	}
+
 	/** Whether the demon is exclusive to Persona games */
 	isPersonaBased(): this is Demon<true> {
 		return this.race !== null && ['Persona', 'Picaro', 'Treasure'].includes(this.race);
 	}
+
 	/** Returns a string in "(Race) (Name)" format, or the name if the race is unknown */
 	toString(): string {
 		return this.race !== null && !this.isPersonaBased() ? `${this.race} ${this.name}` : this.name;
 	}
+
 	/** An array of every Demon and Persona instance */
 	static array: AnyDemon[] = [];
 	/** A map of every Demon and Persona instance, keyed by their devName properties */
-	static map: Map<string, AnyDemon> = new Map();
+	static map = new Map<string, AnyDemon>();
 	/**
 	 *
 	 * Gets a Demon instance by its name.
@@ -131,20 +135,23 @@ export class Persona extends Demon<true> implements PersonaData {
 		this.evoSkillName = data.evoSkillName;
 		this.evoSkill = this.evoSkillName === null ? null : Skill.get(this.evoSkillName, true);
 	}
+
 	/** The Persona that this Persona can evolve into, or null if none */
 	get evolution() {
 		return Persona.array.find(persona => persona.user === this.user && persona.stage === (this.stage + 1)) ?? null;
 	}
+
 	/**
 	 * Returns a string in "(User)'s (Name)" format
 	 */
 	toString() {
 		return `${formatPossessive(this.user)} ${this.name}`;
 	}
+
 	/** An array of every Persona instance */
 	static array: Persona[] = [];
 	/** A map of every Persona instance, keyed by their devName properties */
-	static map: Map<string, Persona> = new Map();
+	static map = new Map<string, Persona>();
 	/**
 	 *
 	 * Gets a Persona instance by its name.

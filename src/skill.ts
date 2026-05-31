@@ -1,8 +1,8 @@
-import { normalize } from '@squiddleton/util';
+import { type AilBoostCriteria, type AilResistance, type AilmentFlag, type AilmentName, type AilmentTarget, type AnyAffinity, type AttackAilments, type AttackCost, type AttackFlag, type AttackPower, type AttackTarget, type AutoBuffTarget, type Barrier, type BarrierTarget, type BasePower, type BoostAffinity, type BoostStack, type BreakAffinity, type Buff, type BuffRecord, BuffValue, type Charge, type ChargeTarget, type CritBoostCriteria, type CritTarget, type DamagingAffinity, type DefensiveAffinity, type DefensiveSKillResistance, type EndureCriteria, type EvasionAffinity, type EvasionBoostCriteria, type HPMP, type LightDark, type MiscAffinity, type NumberOrPercent, type PostBattleStat, type RecoveryAmount, type RecoveryFlag, type RecoveryTarget, type RegenCriteria, type RegenStat, type SMTCounterAffinity, type Series, type SetAffinity, type SetTarget, type SiphonCriteria, type SkillType, type SupportAutoEffect, type SupportFlag, type SupportTarget, type SusceptibilityTarget, type Target, type WallAffinity } from './types.js';
 import type { AilBoostSkillData, AilDefensiveSkillData, AilmentSkillData, AttackSkillData, AutoBuffSkillData, BarrierBreakSkillData, BarrierSkillData, BoostSkillData, BreakSkillData, ChargeSkillData, CritBoostSkillData, CritSkillData, DefensiveSkillData, EndureSkillData, EvasionSkillData, InstakillBoostSkillData, MasterSkillData, MiscSkillData, NaviSkillData, PersonaCounterSkillData, PostBattleSkillData, RecoverySkillData, RegenSkillData, SMTCounterSkillData, SetSkillData, SiphonSkillData, SkillData, SpringSkillData, SummonSkillData, SupportSkillData, SusceptibilitySkillData, TauntSkillData, WallSkillData } from './dataTypes.js';
 import { MegatenError } from './error.js';
+import { normalize } from '@squiddleton/util';
 import skillData from './skillData.js';
-import { AilBoostCriteria, AilResistance, AilmentFlag, AilmentName, AilmentTarget, AnyAffinity, AttackAilments, AttackCost, AttackFlag, AttackPower, AttackTarget, AutoBuffTarget, Barrier, BarrierTarget, BasePower, BoostAffinity, BoostStack, BreakAffinity, Buff, BuffRecord, BuffValue, Charge, ChargeTarget, CritBoostCriteria, CritTarget, DamagingAffinity, DefensiveAffinity, DefensiveSKillResistance, EndureCriteria, EvasionAffinity, EvasionBoostCriteria, HPMP, LightDark, MiscAffinity, NumberOrPercent, PostBattleStat, RecoveryAmount, RecoveryFlag, RecoveryTarget, RegenCriteria, RegenStat, SMTCounterAffinity, Series, SetAffinity, SetTarget, SiphonCriteria, SkillType, SupportAutoEffect, SupportFlag, SupportTarget, SusceptibilityTarget, Target, WallAffinity } from './types.js';
 
 export abstract class Skill implements SkillData {
 	/** The skill's name (adjusted for consistency with SMT5) */
@@ -29,14 +29,16 @@ export abstract class Skill implements SkillData {
 		this.affinity = data.affinity;
 		this.type = data.type;
 	}
+
 	/** Returns a string in "(Name): (Description)" format */
 	toString() {
 		return `${this.name}: ${this.description}`;
 	}
+
 	/** An array of every Skill instance */
 	static array: AnySkill[] = [];
 	/** A map of every Skill instance, keyed by their devName properties */
-	static map: Map<string, AnySkill> = new Map();
+	static map = new Map<string, AnySkill>();
 	/**
 	 *
 	 * Gets a Skill instance by its name.
@@ -79,7 +81,7 @@ export class AilBoostSkill extends Skill implements AilBoostSkillData {
 	constructor(data: AilBoostSkillData) {
 		const { ailment, criteria } = data;
 		super(data);
-		this.description = `Increases chance of inflicting ${ailment === null ? 'ailments' : ailment}${criteria === null ? '' : ` during ${criteria}`}.`;
+		this.description = `Increases chance of inflicting ${ailment ?? 'ailments'}${criteria === null ? '' : ` during ${criteria}`}.`;
 		this.ailment = ailment;
 		this.amount = data.amount;
 		this.criteria = criteria;
@@ -304,7 +306,7 @@ export class AutoBuffSkill extends Skill implements AutoBuffSkillData {
 		super(data);
 
 		this.target = target;
-		let buffSkillName = { Attack: 'Tarukaja', Magic: 'Makakaja', Defense: 'Rakukaja', 'Accuracy/Evasion': 'Sukukaja' }[buff];
+		let buffSkillName = { 'Attack': 'Tarukaja', 'Magic': 'Makakaja', 'Defense': 'Rakukaja', 'Accuracy/Evasion': 'Sukukaja' }[buff];
 		const isParty = target === 'All Allies';
 		if (isParty) buffSkillName = buffSkillName.toLowerCase();
 		this.description = `Automatic ${isParty ? 'Ma' : ''}${buffSkillName} at the start of battle.`;
@@ -983,8 +985,8 @@ export class SupportSkill extends Skill implements SupportSkillData {
 		}
 		else {
 			this.description = isAllyRange
-				? `Raises ${Object.entries(buffs).length === 3 ? 'all stats' : Object.keys(buffs).join('/')} of ${target === 'All Allies' ? 'all allies' : '1 ally'} by ${Object.values(buffs)[1] === 2 ? '2 ranks' : '1 rank'} for 3 turns${flags.includes('Surrounded Only') ? ' when surrounded' : ''}.`
-				: `Lowers ${Object.entries(buffs).length === 3 ? 'all stats' : Object.keys(buffs).join('/')} of ${target === 'All Foes' ? 'all foes' : '1 foe'} by ${Object.values(buffs)[1] === -2 ? '2 ranks' : '1 rank'} for 3 turns.`;
+				? `Raises ${Object.entries(buffs).length === 3 ? 'all stats' : Object.keys(buffs).join('/')} of ${target === 'All Allies' ? 'all allies' : '1 ally'} by ${Object.values(buffs)[1] === BuffValue.GreatlyIncrease ? '2 ranks' : '1 rank'} for 3 turns${flags.includes('Surrounded Only') ? ' when surrounded' : ''}.`
+				: `Lowers ${Object.entries(buffs).length === 3 ? 'all stats' : Object.keys(buffs).join('/')} of ${target === 'All Foes' ? 'all foes' : '1 foe'} by ${Object.values(buffs)[1] === BuffValue.GreatlyDecrease ? '2 ranks' : '1 rank'} for 3 turns.`;
 		}
 
 		this.auto = data.auto;
@@ -1017,7 +1019,7 @@ export class TauntSkill extends Skill implements TauntSkillData {
 	declare type: 'TAUNT';
 	declare target: 'Self';
 	description: string;
-	/** The buff cast by the skill*/
+	/** The buff cast by the skill */
 	buffs: BuffRecord;
 	/** The skill's MP cost */
 	cost: number;
@@ -1094,4 +1096,4 @@ Skill.map = new Map(Skill.array.map(skill => [skill.devName, skill]));
 
 export type AnySkillData = AilBoostSkillData | AilDefensiveSkillData | AilmentSkillData | AttackSkillData | AutoBuffSkillData | BarrierSkillData | BarrierBreakSkillData | BoostSkillData | BreakSkillData | ChargeSkillData | CritSkillData | CritBoostSkillData | DefensiveSkillData | EndureSkillData | EvasionSkillData | InstakillBoostSkillData | MasterSkillData | MiscSkillData | NaviSkillData | PersonaCounterSkillData | PostBattleSkillData | RecoverySkillData | RegenSkillData | SetSkillData | SiphonSkillData | SMTCounterSkillData | SpringSkillData | SummonSkillData | SupportSkillData | SusceptibilitySkillData | TauntSkillData | WallSkillData;
 
-export type AnySkill = AilBoostSkill | AilDefensiveSkill | AilmentSkill | AttackSkill | AutoBuffSkill | BarrierSkill | BarrierBreakSkill | BoostSkill | BreakSkill | ChargeSkill | CritSkill | CritBoostSkill | DefensiveSkill | EndureSkill | EvasionSkill | SetSkill | InstakillBoostSkill | MasterSkill | MiscSkill | NaviSkill | PersonaCounterSkill | PostBattleSkill | RecoverySkill | RegenSkill | SetSkill | SiphonSkill | SMTCounterSkill | SpringSkill | SummonSkill | SupportSkill | SusceptibilitySkill | TauntSkill | WallSkill;
+export type AnySkill = AilBoostSkill | AilDefensiveSkill | AilmentSkill | AttackSkill | AutoBuffSkill | BarrierSkill | BarrierBreakSkill | BoostSkill | BreakSkill | ChargeSkill | CritSkill | CritBoostSkill | DefensiveSkill | EndureSkill | EvasionSkill | SetSkill | InstakillBoostSkill | MasterSkill | MiscSkill | NaviSkill | PersonaCounterSkill | PostBattleSkill | RecoverySkill | RegenSkill | SiphonSkill | SMTCounterSkill | SpringSkill | SummonSkill | SupportSkill | SusceptibilitySkill | TauntSkill | WallSkill;
