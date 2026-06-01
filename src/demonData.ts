@@ -401,7 +401,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		resistances: {},
 		game: 'smt4',
 		alignment: null,
-		lore: null,
+		lore: 'An evil god of Zoroastrianism, whose name means "wrath."\nA demon of wrath and rage, he is said to stir up anger and feelings of vengeance in humans. Those who fall under his spell become violent, and according to Zoroastrian belief, those who become uncontrollable when drunk are said to be under the spell of Aeshma. Opposing Aeshma are Ahura Mazda and Sraosha; he is fated to lose to Sraosha in the end. It is believed that the demon Asmodeus, who appears in the Book of Tobit, is derived from Aeshma.',
 		origin: 'Zoroastrian'
 	},
 	{
@@ -710,7 +710,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		},
 		game: 'smt4',
 		alignment: null,
-		lore: null,
+		lore: 'A giant elephant with four tusks who serves as Indra\'s steed. His body is white like snow. He was born from the churning of the milk ocean and is the king of elephants. His size is compared to that of Mt. Kailash.',
 		origin: 'Hindu'
 	},
 	{
@@ -2108,7 +2108,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		},
 		game: 'smt4',
 		alignment: null,
-		lore: null,
+		lore: 'Ancient of Days. An eternal name for God used in the Book of Daniel.\nIt is said that his garment is white as snow, his hair like pure wool, and his throne and wheels are on fire. According to Daniel\'s vision, four giant beasts appeared from the sea. The Ancient of Days killed the fourth and most terrifying beast, throwing its corpse into a burning pyre.',
 		origin: 'Abrahamic'
 	},
 	{
@@ -2240,6 +2240,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 	},
 	{
 		name: 'Angel - Final',
+		aliases: [
+			'Angel'
+		],
 		affinities: {
 			skillPotential: {
 				Phys: 0,
@@ -2437,7 +2440,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			major: 'Light',
 			minor: 'Neutral'
 		},
-		lore: 'The jackal-headed god of the dead and embalming from Egyptian myth.\nHe weighs the hearts of the dead to determine their final destination. He is also said to govern the technique of mummification',
+		lore: 'The jackal-headed god of the dead and embalming from Egyptian myth.\nHe weighs the hearts of the dead to determine their final destination. He is also said to govern the technique of mummification.',
 		origin: 'Egyptian'
 	},
 	{
@@ -3692,7 +3695,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		},
 		game: 'p3',
 		alignment: null,
-		lore: null,
+		lore: 'The heroic queen of Halicarnassus mentioned in Herodotus\'s The Histories. During the Persian Wars between the Greek states and Persia, she was the only woman to take command in the Persian fleet.',
 		origin: 'Historical',
 		user: 'Mitsuru Kirijo',
 		stage: 2,
@@ -3812,7 +3815,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			major: 'Dark',
 			minor: 'Chaos'
 		},
-		lore: null,
+		lore: 'One of the 72 demons of the Goetia, he was a cherub before his fall from grace.\nHe has three heads: a bull, a man, and a sheep. His legs are like that of a chicken, his tail is a venemous snake, and his wings are hideous. In his hands he holds a battle flag and a spear, and he rides a dragon, spitting flames from his mouth. If the conjurer approaches him with respect, he will obey and give rings, as well as teach astronomy and geometry. Later literature ties him to the sin of lust.',
 		origin: 'Abrahamic'
 	},
 	{
@@ -3865,7 +3868,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			major: 'Dark',
 			minor: 'Chaos'
 		},
-		lore: null,
+		lore: 'One of the 72 demons of the Goetia. A beautiful fallen angel said to be a duke of Hell.\nHe appears in the form of a prince riding a dragon and leads an army of 40 evil spirits. He can also travel through time. Originally he was the goddess Astarte in Phoenicia, but became warped into his current form by the Judeo-Christian God. In Christianity. he is a fallen Throne that lures men into leading indolent lives.',
 		origin: 'Abrahamic'
 	},
 	{
@@ -6867,7 +6870,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		},
 		game: 'p3',
 		alignment: null,
-		lore: null,
+		lore: 'A statesman, general, and author known for his rule over the Roman Republic. His full name was Gaius Julius Caesar. His many accomplishments led to his name being used as a title for later Roman emperors.',
 		origin: 'Historical',
 		user: 'Akihiko Sanada',
 		stage: 2,
@@ -7431,7 +7434,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		resistances: {},
 		game: 'p3',
 		alignment: null,
-		lore: null,
+		lore: 'A hero in Greek mythology. He is Polydeuces\'s half-brother, but doesn\'t share his brother\'s immortality. He was struck and killed by an arrow, after which he and his brother became stars in the constellation Gemini.',
 		origin: 'Greco-Roman',
 		user: 'Shinjiro Aragaki',
 		stage: 1,
@@ -7898,7 +7901,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		},
 		game: 'p3',
 		alignment: null,
-		lore: null,
+		lore: 'The giant hound that guards the great abyss, Tartarus. He answers to Hades, the lord of the underworld, and keeps watch for both intruders and escapees. He was born from Typhon and Echidna, and is the older brother of Orthrus.',
 		origin: 'Greco-Roman',
 		user: 'Koromaru',
 		stage: 1,
@@ -8135,7 +8138,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		},
 		game: 'smt4',
 		alignment: null,
-		lore: null,
+		lore: 'A man-made weather phenomenon that grew into an urban myth. It is thought by some to be the conspiracy of a secret society.\nWhat appears to be simple vapor trails are actually harmful metals sprayed from airplanes. There are several theories about the reason for this, including population control through disease, destroying all living beings by cutting off sunlight, and control of the weather. Since the mass media is controlled by the culprits, the truth will never be known. It is believed that the negative energy from people who believe in this conspiracy formed the demon.',
 		origin: 'North American'
 	},
 	{
@@ -10725,7 +10728,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		},
 		game: 'smt4',
 		alignment: null,
-		lore: null,
+		lore: 'A ghost-like faerie of Irish folklore. Its sighting is an omen of death.\nIt rides a coach called the Coiste Bodhar, pulled by headless horses, and stops in front of those destined to die soon. The Dullahan is headless itself, usually carrying its head under one arm. Though it is often portrayed as a headless knight, it is female in the original legend.',
 		origin: 'Celtic'
 	},
 	{
@@ -12448,7 +12451,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			major: 'Dark',
 			minor: 'Law'
 		},
-		lore: 'An ominous bird of Chinese lore. Its name is derived from the sounds it makes when it cries. Note it has no relation to Fu Xi the emperor/god, which is spelled differently in Chinese.\nIt appears in the Xishan Jing chapter of the book Shan Hai Jing. It has the body of a rooster and the head of a human with a cockscomb and pointed ears. The appearance of a Fukei is a bad omen, a sign that war is about to break out. ',
+		lore: 'An ominous bird of Chinese lore. Its name is derived from the sounds it makes when it cries. Note it has no relation to Fu Xi the emperor/god, which is spelled differently in Chinese.\nIt appears in the Xishan Jing chapter of the book Shan Hai Jing. It has the body of a rooster and the head of a human with a cockscomb and pointed ears. The appearance of a Fukei is a bad omen, a sign that war is about to break out.',
 		origin: 'Chinese'
 	},
 	{
@@ -15700,7 +15703,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		},
 		game: 'p3',
 		alignment: null,
-		lore: null,
+		lore: 'A messenger god who served Zeus. His winged sandals allow him to fly, and he was worshiped as a god of travel and commerce. He was also known as a trickster, being able to freely cross between the mortal and godly realms.',
 		origin: 'Greco-Roman',
 		user: 'Junpei Iori',
 		stage: 1,
@@ -17237,7 +17240,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		},
 		game: 'p3',
 		alignment: null,
-		lore: null,
+		lore: 'A priestess in service of the goddess Hera. When Zeus fell in love with her, he transformed her into a cow to hide her from Hera, but Hera saw through the ruse. She was rescued by Hermes, and escaped across the sea to safety.',
 		origin: 'Greco-Roman',
 		user: 'Yukari Takeba',
 		stage: 1,
@@ -17545,7 +17548,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		},
 		game: 'p3',
 		alignment: null,
-		lore: null,
+		lore: 'Osiris\'s wife as well as his younger sister. Upon the death of her husband at the hands of Seth, she traveled all over Egypt to recover the pieces of his body, and revived him with her incredible magic power.',
 		origin: 'Egyptian',
 		user: 'Yukari Takeba',
 		stage: 2,
@@ -18984,7 +18987,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		resistances: {},
 		game: 'p3',
 		alignment: null,
-		lore: null,
+		lore: 'The goddess of family and marriage, and wife to the Roman god Jupiter. She is often equated with the Greek goddess Hera. Though she is kind, she is also vengeful, seeking to punish women who have affairs with her husband.',
 		origin: 'Greco-Roman',
 		user: 'Fuuka Yamagishi',
 		stage: 2,
@@ -19373,7 +19376,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		},
 		game: 'p3',
 		alignment: null,
-		lore: null,
+		lore: 'A Hindu goddess whose name means "edge of the wheel of time." The "wheel" refers to samsara, the cycle of death and rebirth, meaning she is a goddess who has transcended life itself.',
 		origin: 'Hindu',
 		user: 'Ken Amada',
 		stage: 2,
@@ -21453,7 +21456,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		},
 		game: 'smt4',
 		alignment: null,
-		lore: null,
+		lore: 'A legendary figure from the story Suwa Engi of the Shintoshu, a collection of stories of gods.He wandered into the underworld and eventually made it back to the surface, becoming a snake in the process. He was eventually worshipped at Suwa Shrine as Suwa Daimyojin. This story is believed to be a variation on Take-Minakata of Japanese lore. In that version, as Take- Minakata, he subjugates Mishaguji, but then is defeated by Take-Mikazuchi. He flees overseas, where he transforms into the snake god there before finding his way back to Suwa.',
 		origin: 'Japanese'
 	},
 	{
@@ -22314,7 +22317,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		},
 		game: 'smt4',
 		alignment: null,
-		lore: null,
+		lore: 'A Japanese god of wisdom, as well as a god of agriculture and god of the rice field.\nAs Okuninushi built the country, a tiny god came from across the sea. No one knew his name, but when they asked Kuebiko, he told them that it was Sukuna-Hikona. Kuebiko is the deification of the scarecrow, and the name Kuebiko means "man who is falling apart," referring to a scarecrow that has become tattered by wind and rain. Because of this, scarecrows are thought to be mediums of gods, and from there he also became the god of the mountains.',
 		origin: 'Japanese'
 	},
 	{
@@ -23894,7 +23897,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		resistances: {},
 		game: 'p3',
 		alignment: null,
-		lore: null,
+		lore: 'A saint who was martyred during the persecution of Christianity in the time of the Roman Empire. She was tortured and had her eyes gouged out, but a miracle restored her sight. She is revered as the patron saint of the blind.',
 		origin: 'Historical',
 		user: 'Fuuka Yamagishi',
 		stage: 1,
@@ -25419,7 +25422,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			major: 'Light',
 			minor: 'Neutral'
 		},
-		lore: null,
+		lore: 'The body double of Taira no Masakado, which appears in the Otogizoshi.\nIt is said there were seven doubles, or perhaps seven total with the real one included. This number comes from Myoken worship. In the Otogizoshi, the doubles were created from straw dolls, but there are legends which say the doubles were vassals who sacrificed themselves for their lord.',
 		origin: 'Japanese'
 	},
 	{
@@ -26640,7 +26643,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		},
 		game: 'smt4',
 		alignment: null,
-		lore: null,
+		lore: 'Sugawara no Michizane was a noble of the Heian period who was also a well-known scholar, poet, and politician.\nBorn into a family of scholars, he used his abilities to become a minister of the right, but due to a conspiracy by his rival Fujiwara no Tokihira, he was demoted to a post in Dazaifu, north Kyushu, where he died a regrettable death. After his death, plague and drought spread throughout Japan, causing many to fear that Michizane had cursed them. Several lightning strikes on the Seiryoden resulted in many deaths, and his ghost became known as a god of thunder. After building a shrine for him, the curse eventually died down. He was worshipped as a fearsome god, but as time passed, memories of his wrath faded, and people then discovered his works as a scholar and poet, turning him into a god of scholarship.',
 		origin: 'Japanese'
 	},
 	{
@@ -26794,7 +26797,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		},
 		game: 'smt4',
 		alignment: null,
-		lore: null,
+		lore: 'A fabled creature of Greek lore said to have the head of a bull and the body of a man. Its name means "bull of Minos."\nPasiphae, King Mino\'s wife, was cursed to fall in love with a white bull. She lusted for it, and eventually gave birth to the part-bull part-human creature.\nHe was named Asterius, but became better known as the Minotaur. As he had the personality of a bull, he grew more and more violent. When he finally became uncontrollable, King Mino\'s ordered Daedalus to build a giant maze, the Labyrinth, to keep the Minotaur locked away. From there, he ate those who were rsacrificed to him until his eventual death at the hands of Theseus.',
 		origin: 'Greco-Roman'
 	},
 	{
@@ -28735,7 +28738,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			major: 'Neutral',
 			minor: 'Neutral'
 		},
-		lore: 'Incarnations of long-living cats in Japanese mythology.\nThey can speak to humans and, depending on their power, can do various things. Some can turn into humans, while others can have the dead do their bidding',
+		lore: 'Incarnations of long-living cats in Japanese mythology.\nThey can speak to humans and, depending on their power, can do various things. Some can turn into humans, while others can have the dead do their bidding.',
 		origin: 'Japanese'
 	},
 	{
@@ -28792,7 +28795,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		},
 		game: 'p3',
 		alignment: null,
-		lore: null,
+		lore: 'A Greek goddess that was the personification of the gods\' wrath, or "divine retribution." While known to administer vengeance, she was also perceived as fair and balanced, punishing only those that deserved it.',
 		origin: 'Greco-Roman',
 		user: 'Ken Amada',
 		stage: 1,
@@ -29407,7 +29410,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			inherit: null
 		},
 		arcana: null,
-		race: 'Snake',
+		race: 'Lady',
 		level: 89,
 		hp: 502,
 		mp: 522,
@@ -30611,7 +30614,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		},
 		game: 'smt4',
 		alignment: null,
-		lore: null,
+		lore: 'A type of nymph found in Greek lore.\nNymphs lived in and protected various places and generally had different names accordingly. "Oread" was the name for the mountain nymphs, as opposed to the Napaea, who lived in valleys.',
 		origin: 'Greco-Roman'
 	},
 	{
@@ -31908,7 +31911,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		},
 		game: 'p3',
 		alignment: null,
-		lore: null,
+		lore: 'A guardian statue in ancient Greece, stolen from Troy, that protected the city in which it was enshrined. It is said that Athena was so saddened by the death of her friend, Pallas, that she had the wooden statue made in her image.',
 		origin: 'Greco-Roman',
 		user: 'Aigis',
 		stage: 1,
@@ -32631,7 +32634,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		},
 		game: 'p3',
 		alignment: null,
-		lore: null,
+		lore: 'A queen of the Amazons in Greek mythology. She fought for the Trojans during the Trojan War, but was slain by Achilles. When Achilles took off her helmet and saw her beautiful face, he felt great remorse for killing her.',
 		origin: 'Greco-Roman',
 		user: 'Mitsuru Kirijo',
 		stage: 1,
@@ -33160,7 +33163,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			major: 'Dark',
 			minor: 'Neutral'
 		},
-		lore: null,
+		lore: 'An urban legend regarding a weapon of mass destruction using plasma technology that has risen from conspiracy theories about the military-industrial complex.\nThe weapon uses plasma created by irradiating electromagnetic waves and crossing them to attack potential targets. It can destroy and/or disarm enemy weapons and instruments, as well as cause mental illness or burn human targets. Giant balls of flames created from plasma experiments have been sighted, but the conspirators reported the sightings as UFO encounters. Plasma is thought to be the ultimate form of plasma weapon: one that has been fused with a demon.',
 		origin: 'North American'
 	},
 	{
@@ -33298,7 +33301,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		},
 		game: 'p3',
 		alignment: null,
-		lore: null,
+		lore: 'A hero in Greek mythology. As the son of Zeus and the mortal Leda, he inherited his father\'s immortality. He and his half-brother Castor were famed fighters, and both became stars in the constellation Gemini.',
 		origin: 'Greco-Roman',
 		user: 'Akihiko Sanada',
 		stage: 1,
@@ -33752,7 +33755,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		resistances: {},
 		game: 'p3',
 		alignment: null,
-		lore: null,
+		lore: 'A woman from Greek mythology said to rival the goddess of beauty herself. She fell in love with Eros, the god of love. After overcoming numerous trials, she was allowed to be with him, and became the goddess of the soul.',
 		origin: 'Greco-Roman',
 		user: 'Metis',
 		stage: 1,
@@ -35545,7 +35548,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		},
 		game: 'smt4',
 		alignment: null,
-		lore: null,
+		lore: 'Sanat Kumara. His name means "eternal youth" in Sanskrit.He is one of the four sages created by the god Brahma. In one account, he descended to earth from Venus millions of years ago to speed the evolution of man. In recent years he has been viewed as being the same as Kurama Tengu and Lucifer.',
 		origin: 'Hindu'
 	},
 	{
@@ -41270,7 +41273,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		},
 		game: 'p3',
 		alignment: null,
-		lore: null,
+		lore: 'A Hellenistic figure who represents a blending of the Greek god Hermes and the Egyptian god Thoth. His full name, Hermes Trismegistus, means "Hermes, thrice greatest," and he is thought to be the author of the Corpus Hermeticum.',
 		origin: 'Greco-Roman',
 		user: 'Junpei Iori',
 		stage: 2,
