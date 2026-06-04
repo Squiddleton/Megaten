@@ -15491,7 +15491,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			major: 'Unknown',
 			minor: 'Unknown'
 		},
-		lore: 'A biker-turned-Fiend that claims to come from Hell.\nArmed with an intense hatred of himself and the world, his reliance solely on his own poewr turned him into this abominable figure.',
+		lore: 'A biker-turned-Fiend that claims to come from Hell.\nArmed with an intense hatred of himself and the world, his reliance solely on his own power turned him into this abominable figure.',
 		origin: 'North American'
 	},
 	{
