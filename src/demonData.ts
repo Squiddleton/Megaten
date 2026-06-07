@@ -35548,7 +35548,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		},
 		game: 'smt4',
 		alignment: null,
-		lore: 'Sanat Kumara. His name means "eternal youth" in Sanskrit.He is one of the four sages created by the god Brahma. In one account, he descended to earth from Venus millions of years ago to speed the evolution of man. In recent years he has been viewed as being the same as Kurama Tengu and Lucifer.',
+		lore: 'Sanat Kumara. His name means "eternal youth" in Sanskrit. He is one of the four sages created by the god Brahma. In one account, he descended to earth from Venus millions of years ago to speed the evolution of man. In recent years he has been viewed as being the same as Kurama Tengu and Lucifer.',
 		origin: 'Hindu'
 	},
 	{
