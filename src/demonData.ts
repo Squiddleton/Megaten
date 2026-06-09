@@ -776,7 +776,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			skillPotential: null,
 			inherit: null
 		},
-		arcana: 'Justice',
+		arcana: 'Hermit',
 		race: 'Persona',
 		level: 31,
 		hp: null,
@@ -28566,7 +28566,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			skillPotential: null,
 			inherit: null
 		},
-		arcana: 'Justice',
+		arcana: 'Hermit',
 		race: 'Persona',
 		level: 31,
 		hp: null,
@@ -33629,7 +33629,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			skillPotential: null,
 			inherit: null
 		},
-		arcana: 'Justice',
+		arcana: 'Hermit',
 		race: 'Persona',
 		level: 31,
 		hp: null,
