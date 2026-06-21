@@ -14608,7 +14608,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		origin: 'Japanese',
 		user: 'Chie Satonaka',
 		stage: 3,
-		evoSkillName: 'Luster Candy'
+		evoSkillName: 'Dragon Hustle'
 	},
 	{
 		name: 'Hare of Inaba',
@@ -38526,7 +38526,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		origin: 'Japanese',
 		user: 'Yukiko Amagi',
 		stage: 3,
-		evoSkillName: 'Maragibarion'
+		evoSkillName: 'Burning Petals'
 	},
 	{
 		name: 'Suparna',

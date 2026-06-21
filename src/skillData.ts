@@ -1464,6 +1464,24 @@ const skillData: AnySkillData[] = [
 		criteria: null
 	},
 	{
+		name: 'Burning Petals',
+		affinity: 'Fire',
+		type: 'ATTACK',
+		unique: true,
+		accuracy: 95,
+		cost: {
+			stat: 'MP',
+			amount: 35
+		},
+		power: {
+			amount: 185,
+			display: 'Severe',
+			type: 'Magic'
+		},
+		target: 'All Foes',
+		series: 'persona'
+	},
+	{
 		name: 'Cadenza',
 		affinity: 'Recovery',
 		type: 'RECOVERY',
@@ -2845,6 +2863,20 @@ const skillData: AnySkillData[] = [
 		target: 'Self',
 		cost: null,
 		description: 'Greatly increases Accuracy.'
+	},
+	{
+		name: 'Dragon Hustle',
+		affinity: 'Support',
+		type: 'SUPPORT',
+		unique: true,
+		target: 'All Allies',
+		cost: 150,
+		buffs: {
+			'Attack': BuffValue.Increase,
+			'Defense': BuffValue.Increase,
+			'Accuracy/Evasion': BuffValue.Increase
+		},
+		auto: []
 	},
 	{
 		name: 'Drain Attack',
