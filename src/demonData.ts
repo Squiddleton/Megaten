@@ -4791,58 +4791,52 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		},
 		arcana: 'Moon',
 		race: 'Tyrant',
-		level: 84,
-		hp: 666,
-		mp: 333,
+		level: 77,
+		hp: null,
+		mp: null,
 		stats: {
-			st: 32,
-			ma: 27,
-			vi: 27,
-			ag: 19,
-			lu: 19
+			st: 48,
+			ma: 60,
+			vi: 49,
+			ag: 40,
+			lu: 41
 		},
 		learnset: [
 			{
+				name: 'Mabufudyne',
+				level: 0
+			},
+			{
+				name: 'Mamudoon',
+				level: 0
+			},
+			{
+				name: 'Old One',
+				level: 0
+			},
+			{
+				name: 'Tentarafoo',
+				level: 78
+			},
+			{
 				name: 'Maziodyne',
-				level: 0
+				level: 79
 			},
 			{
-				name: 'Megidolaon',
-				level: 0
+				name: 'Mudo Boost',
+				level: 80
 			},
 			{
-				name: 'Null Freeze',
-				level: 0
-			},
-			{
-				name: 'Null Shock',
-				level: 0
-			},
-			{
-				name: 'Growth 3',
-				level: 85
-			},
-			{
-				name: 'Elec Boost',
-				level: 86
+				name: 'Stagnant Air - Persona',
+				level: 82
 			}
 		],
 		resistances: {
-			Phys: 'Resist',
-			Ice: 'Resist',
-			Elec: 'Resist',
-			Force: 'Resist',
-			Light: 'Repel',
-			Dark: 'Repel',
-			Confusion: 'Null',
-			Sleep: 'Null',
-			Charm: 'Null',
-			Stun: 'Null',
-			Bind: 'Null',
-			Poison: 'Null',
-			Seal: 'Null'
+			Fire: 'Weak',
+			Ice: 'Drain',
+			Dark: 'Null'
 		},
-		game: 'smt3',
+		game: 'p4',
 		alignment: {
 			major: 'Dark',
 			minor: 'Chaos'
@@ -17809,48 +17803,32 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		name: 'Izanagi',
 		affinities: {
 			skillPotential: null,
-			inherit: 'Elec'
+			inherit: 'Almighty'
 		},
 		arcana: 'Fool',
 		race: 'Persona',
-		level: 1,
+		level: 20,
 		hp: null,
 		mp: null,
 		stats: {
-			st: 3,
-			vi: 2,
-			ma: 2,
-			ag: 3,
-			lu: 2
+			st: 14,
+			vi: 13,
+			ma: 13,
+			ag: 14,
+			lu: 13
 		},
 		learnset: [
 			{
-				name: 'Zio',
-				level: 0
-			},
-			{
-				name: 'Cleave',
-				level: 0
-			},
-			{
-				name: 'Rakukaja',
-				level: 0
-			},
-			{
-				name: 'Rakunda',
-				level: 3
-			},
-			{
-				name: 'Tarukaja',
-				level: 5
-			},
-			{
 				name: 'Cross Slash',
-				level: 20
+				level: 0
 			},
 			{
 				name: 'Zionga',
-				level: 20
+				level: 0
+			},
+			{
+				name: 'Tarukaja',
+				level: 0
 			},
 			{
 				name: 'Rising Slash',
@@ -30883,36 +30861,28 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		},
 		arcana: 'Fool',
 		race: 'Persona',
-		level: 1,
+		level: 26,
 		hp: null,
 		mp: null,
 		stats: {
-			st: 2,
-			vi: 2,
-			ma: 2,
-			ag: 2,
-			lu: 2
+			st: 17,
+			vi: 17,
+			ma: 17,
+			ag: 17,
+			lu: 17
 		},
 		learnset: [
 			{
-				name: 'Lunge',
+				name: 'Cadenza',
 				level: 0
 			},
 			{
-				name: 'Agi',
-				level: 2
+				name: 'Agilao',
+				level: 0
 			},
 			{
 				name: 'Tarunda',
-				level: 6
-			},
-			{
-				name: 'Cadenza',
-				level: 26
-			},
-			{
-				name: 'Agilao',
-				level: 26
+				level: 0
 			},
 			{
 				name: 'Endure',
