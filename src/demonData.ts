@@ -12097,7 +12097,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		},
 		game: 'smt4',
 		alignment: {
-			major: 'Neutral',
+			major: 'Light',
 			minor: 'Neutral'
 		},
 		lore: 'Jack Frost after he donned his Ice Vest and transformed into a superhero.\nLittle is known about him, but rumors says he was involved in a tragic incident and now burns with vengeance, though his heart is still frozen in sorrow. As Fate toys with the dark hero, what path will he choose? Mercy? Or vengeance?\nStill unable to come up with an answer, he continues his long battle, hiding that cool, cute face of his behind the mask.',
@@ -30925,36 +30925,32 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		},
 		arcana: 'Fool',
 		race: 'Persona',
-		level: 1,
+		level: 11,
 		hp: null,
 		mp: null,
 		stats: {
-			st: 2,
-			vi: 2,
-			ma: 2,
-			ag: 2,
-			lu: 2
+			st: 8,
+			vi: 9,
+			ma: 8,
+			ag: 9,
+			lu: 6
 		},
 		learnset: [
 			{
-				name: 'Lunge',
+				name: 'Neo Cadenza',
 				level: 0
 			},
 			{
 				name: 'Agi',
-				level: 2
+				level: 0
 			},
 			{
 				name: 'Tarunda',
-				level: 6
-			},
-			{
-				name: 'Neo Cadenza',
-				level: 11
+				level: 0
 			},
 			{
 				name: 'Endure',
-				level: 11
+				level: 0
 			},
 			{
 				name: 'Maragion',
