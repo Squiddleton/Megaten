@@ -24,7 +24,8 @@
 		"lint": "eslint . --fix",
 		"build": "tsc",
 		"prepublishOnly": "npm run build",
-		"start": "npm run build && node ."
+		"start": "npm run build && node .",
+		"publishDev": "npm publish --tag dev"
 	},
 	"devDependencies": {
 		"@eslint/js": "^10.0.1",
