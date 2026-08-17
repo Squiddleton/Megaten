@@ -26774,7 +26774,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			Dark: 'Null'
 		},
 		game: 'smt4',
-		alignment: null,
+		alignment: {
+			major: 'Neutral',
+			minor: 'Neutral'
+		},
 		lore: 'A fabled creature of Greek lore said to have the head of a bull and the body of a man. Its name means "bull of Minos."\nPasiphae, King Mino\'s wife, was cursed to fall in love with a white bull. She lusted for it, and eventually gave birth to the part-bull part-human creature.\nHe was named Asterius, but became better known as the Minotaur. As he had the personality of a bull, he grew more and more violent. When he finally became uncontrollable, King Mino\'s ordered Daedalus to build a giant maze, the Labyrinth, to keep the Minotaur locked away. From there, he ate those who were rsacrificed to him until his eventual death at the hands of Theseus.',
 		origin: 'Greco-Roman'
 	},
