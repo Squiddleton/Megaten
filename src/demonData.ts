@@ -400,7 +400,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		],
 		resistances: {},
 		game: 'smt4',
-		alignment: null,
+		alignment: {
+			major: 'Unknown',
+			minor: 'Chaos'
+		},
 		lore: 'An evil god of Zoroastrianism, whose name means "wrath."\nA demon of wrath and rage, he is said to stir up anger and feelings of vengeance in humans. Those who fall under his spell become violent, and according to Zoroastrian belief, those who become uncontrollable when drunk are said to be under the spell of Aeshma. Opposing Aeshma are Ahura Mazda and Sraosha; he is fated to lose to Sraosha in the end. It is believed that the demon Asmodeus, who appears in the Book of Tobit, is derived from Aeshma.',
 		origin: 'Zoroastrian'
 	},
@@ -709,7 +712,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			Sleep: 'Weak'
 		},
 		game: 'smt4',
-		alignment: null,
+		alignment: {
+			major: 'Light',
+			minor: 'Neutral'
+		},
 		lore: 'A giant elephant with four tusks who serves as Indra\'s steed. His body is white like snow. He was born from the churning of the milk ocean and is the king of elephants. His size is compared to that of Mt. Kailash.',
 		origin: 'Hindu'
 	},
@@ -861,7 +867,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			Light: 'Null'
 		},
 		game: 'smt3',
-		alignment: null,
+		alignment: {
+			major: 'Light',
+			minor: 'Neutral'
+		},
 		lore: 'The ruler of ancient Britain. He is the first giant of Britain. It is said that he was born from Amphitrite, the wife of Poseidon.',
 		origin: 'European'
 	},
@@ -925,7 +934,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			Seal: 'Resist'
 		},
 		game: 'smt4',
-		alignment: null,
+		alignment: {
+			major: 'Dark',
+			minor: 'Law'
+		},
 		lore: 'The "Black Sun" who lives in the underworld in Babylonian lore.\nHis original name is Aciel, which the Jews borrowed from a Babylonian god, and called him the "King of Gehenna." But in some Asian faiths, all things are reborn only by darkness, so Aciel is not all bad.',
 		origin: 'Abrahamic'
 	},
@@ -1347,7 +1359,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			Light: 'Resist'
 		},
 		game: 'smt4',
-		alignment: null,
+		alignment: {
+			major: 'Light',
+			minor: 'Law'
+		},
 		lore: 'The Japanese goddess of light. She is one of the leading deities of Takaamagahara, the land of the Amatsu gods. A deification of the sun, she also governs life. It is said she was born from the left eye of Izanagi.',
 		origin: 'Japanese'
 	},
@@ -1591,7 +1606,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			Poison: 'Resist'
 		},
 		game: 'smt4',
-		alignment: null,
+		alignment: {
+			major: 'Neutral',
+			minor: 'Neutral'
+		},
 		lore: 'A creature of Egyptian lore with the head of a crocodile, the front legs of a lion, and the hind legs of a hippo.\nWhen a person dies, he must be judged by Osiris. His heart is weighed on a scale, and if the heart is heavier than the feather of truth, the heart is given to Ammut to devour, denying the dead of eternal life.',
 		origin: 'Egyptian'
 	},
@@ -2107,7 +2125,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			Dark: 'Null'
 		},
 		game: 'smt4',
-		alignment: null,
+		alignment: {
+			major: 'Unknown',
+			minor: 'Law'
+		},
 		lore: 'Ancient of Days. An eternal name for God used in the Book of Daniel.\nIt is said that his garment is white as snow, his hair like pure wool, and his throne and wheels are on fire. According to Daniel\'s vision, four giant beasts appeared from the sea. The Ancient of Days killed the fourth and most terrifying beast, throwing its corpse into a burning pyre.',
 		origin: 'Abrahamic'
 	},
@@ -5095,7 +5116,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			Dark: 'Weak'
 		},
 		game: 'smt4',
-		alignment: null,
+		alignment: {
+			major: 'Unknown',
+			minor: 'Neutral'
+		},
 		lore: 'The god of light in Norse lore and son of Odin and Frigg. He is married to Nanna and has two brothers, Hod and Hermod, and a son named Forseti. He was loved by all the gods, but after having a nightmare of his death, Frigg made all the plants and animals swear not to harm Baldur. Only the mistletoe was passed over as it was too young. Hearing this, Loki tricked Hod into shooting a mistletoe at Baldur, which killed him. Hel promised to revive Baldur if every living thing cried for him, but the giantess Thokk refused to weep. When it was found that Thokk was Loki in disguise, the gods punished him. With the world\'s light gone, it took its first steps toward Ragnarok.',
 		origin: 'Norse'
 	},
@@ -6439,7 +6463,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			Dark: 'Null'
 		},
 		game: 'smt3',
-		alignment: null,
+		alignment: {
+			major: 'Dark',
+			minor: 'Unknown'
+		},
 		lore: 'An infamous jelly-like monster. It swallows humans and grows. It is said that the only way to stop Blobs is to freeze them.',
 		origin: 'North American'
 	},
@@ -7732,7 +7759,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			Poison: 'Weak'
 		},
 		game: 'smt4',
-		alignment: null,
+		alignment: {
+			major: 'Unknown',
+			minor: 'Law'
+		},
 		lore: 'A half-man, half-horse creature of Greek lore. The top half is human and the bottom half is a horse.\nThey are often depicted as wise and noble mentors of heroes. A common theory about their origins is that a non-riding culture saw men from another civilization mounted on horses and thought them to be half-horse.',
 		origin: 'Greco-Roman'
 	},
@@ -8131,7 +8161,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			Sleep: 'Null'
 		},
 		game: 'smt4',
-		alignment: null,
+		alignment: {
+			major: 'Unknown',
+			minor: 'Neutral'
+		},
 		lore: 'A man-made weather phenomenon that grew into an urban myth. It is thought by some to be the conspiracy of a secret society.\nWhat appears to be simple vapor trails are actually harmful metals sprayed from airplanes. There are several theories about the reason for this, including population control through disease, destroying all living beings by cutting off sunlight, and control of the weather. Since the mass media is controlled by the culprits, the truth will never be known. It is believed that the negative energy from people who believe in this conspiracy formed the demon.',
 		origin: 'North American'
 	},
@@ -9849,7 +9882,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			Bind: 'Null'
 		},
 		game: 'smt3',
-		alignment: null,
+		alignment: {
+			major: 'Neutral',
+			minor: 'Unknown'
+		},
 		lore: 'A demoness in Japanese mythology. She rips the clothes off those crossing the river Sanzu who don\'t have the money to pay the boat fare. She then hangs them on the tree Eryou-ju to weigh their sin.',
 		origin: 'Japanese'
 	},
@@ -10721,7 +10757,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			Dark: 'Null'
 		},
 		game: 'smt4',
-		alignment: null,
+		alignment: {
+			major: 'Neutral',
+			minor: 'Neutral'
+		},
 		lore: 'A ghost-like faerie of Irish folklore. Its sighting is an omen of death.\nIt rides a coach called the Coiste Bodhar, pulled by headless horses, and stops in front of those destined to die soon. The Dullahan is headless itself, usually carrying its head under one arm. Though it is often portrayed as a headless knight, it is female in the original legend.',
 		origin: 'Celtic'
 	},
@@ -12172,7 +12211,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			Seal: 'Null'
 		},
 		game: 'smt3',
-		alignment: null,
+		alignment: {
+			major: 'Light',
+			minor: 'Unknown'
+		},
 		lore: 'A good Manikin that was reborn, called back into the world by the Afterlife Bell. Because of his doings in the previous life, he has gained new powers.',
 		origin: 'ATLUS Original'
 	},
@@ -14180,7 +14222,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		],
 		resistances: {},
 		game: 'smt4',
-		alignment: null,
+		alignment: {
+			major: 'Unknown',
+			minor: 'Neutral'
+		},
 		lore: 'The warrior who killed Siegfried in the Nibelungenlied.\nHe was a loyal vassal of Gunther, king of Burgundy. He killed Siegfried by throwing a spear at Siegfried\'s only weak spot while he was drinking from a brook. Afterwards, he and his king were both beheaded by Siegfried\'s wife Kriemhild.',
 		origin: 'Norse'
 	},
@@ -14240,7 +14285,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			Charm: 'Weak'
 		},
 		game: 'smt4',
-		alignment: null,
+		alignment: {
+			major: 'Neutral',
+			minor: 'Neutral'
+		},
 		lore: 'A demon dog of England. It is a type of black, demonic hound known as a Barghest and is covered with mounds of hair.\nIt\'s said to appear commonly in deserted farmlands and wastelands. It can take a human form. Although it has helped people in some cases, in general they are dangerous and will attack with fierce strength if provoked.',
 		origin: 'European'
 	},
@@ -16694,7 +16742,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			Sick: 'Weak'
 		},
 		game: 'smt4',
-		alignment: null,
+		alignment: {
+			major: 'Light',
+			minor: 'Neutral'
+		},
 		lore: 'A knowledgeable hero of Sioux lore and son of the sun god.\nCast out of the heavens for angering his father, he lived a life of mischief and trickery on Earth. But when he tried to trick the beaver, kingfisher, squirrel, and muskrat, who were believed to be the creator gods, he was punished. He also taught the Sioux to fight.',
 		origin: 'North American'
 	},
@@ -18370,7 +18421,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			Poison: 'Weak'
 		},
 		game: 'smt4',
-		alignment: null,
+		alignment: {
+			major: 'Light',
+			minor: 'Neutral'
+		},
 		lore: 'The Slavic god of vegetation and fertility.\nHe is a beautiful young man wearing a white cape who rides a white horse. He has a human head in one hand and ears of wheat in the other. Festivals in his honor were held each year in many Slavic regions, but the practice faded with the advent of Christianity.',
 		origin: 'Slavic'
 	},
@@ -19022,7 +19076,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			Confusion: 'Resist'
 		},
 		game: 'smt4',
-		alignment: null,
+		alignment: {
+			major: 'Neutral',
+			minor: 'Neutral'
+		},
 		lore: 'A demon of Ishikawa prefecture that takes the form of a kitten and is said to often bewitch people.\nBecause it has a wide-ended tail and lives in aquatic regions, it is thought to be a type of Kappa. It loves to fool people with illusions that cause them to wrestle with boulders and tree roots, or it may transform into a beautiful woman to seduce them. When a Kabuso tries to pull a prank, it will follow its victim while talking incessantly. Beware, should this happen to you.',
 		origin: 'Japanese'
 	},
@@ -21433,7 +21490,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			Dark: 'Null'
 		},
 		game: 'smt4',
-		alignment: null,
+		alignment: {
+			major: 'Unknown',
+			minor: 'Chaos'
+		},
 		lore: 'A legendary figure from the story Suwa Engi of the Shintoshu, a collection of stories of gods.He wandered into the underworld and eventually made it back to the surface, becoming a snake in the process. He was eventually worshipped at Suwa Shrine as Suwa Daimyojin. This story is believed to be a variation on Take-Minakata of Japanese lore. In that version, as Take- Minakata, he subjugates Mishaguji, but then is defeated by Take-Mikazuchi. He flees overseas, where he transforms into the snake god there before finding his way back to Suwa.',
 		origin: 'Japanese'
 	},
@@ -22294,7 +22354,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			Dark: 'Resist'
 		},
 		game: 'smt4',
-		alignment: null,
+		alignment: {
+			major: 'Unknown',
+			minor: 'Neutral'
+		},
 		lore: 'A Japanese god of wisdom, as well as a god of agriculture and god of the rice field.\nAs Okuninushi built the country, a tiny god came from across the sea. No one knew his name, but when they asked Kuebiko, he told them that it was Sukuna-Hikona. Kuebiko is the deification of the scarecrow, and the name Kuebiko means "man who is falling apart," referring to a scarecrow that has become tattered by wind and rain. Because of this, scarecrows are thought to be mediums of gods, and from there he also became the god of the mountains.',
 		origin: 'Japanese'
 	},
@@ -23106,7 +23169,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			Poison: 'Weak'
 		},
 		game: 'smt4',
-		alignment: null,
+		alignment: {
+			major: 'Unknown',
+			minor: 'Neutral'
+		},
 		lore: 'A general of the Northern Qi during the 600s. He wore an ugly mask in battle because he was too beautiful for the battlefield. He was said to lead a cavalry of 500 men. His deeds were reproduced in a Chinese opera, where he wears a terrifying dragon mask.',
 		origin: 'Chinese'
 	},
@@ -23762,7 +23828,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			Sleep: 'Null'
 		},
 		game: 'smt4',
-		alignment: null,
+		alignment: {
+			major: 'Neutral',
+			minor: 'Neutral'
+		},
 		lore: 'A beautiful river maiden who lives at the rock of the same name on the Rhine River. She lures sailors to their doom with her enchanting voice.\nShe was made famous in Heine\'s poem. In ancient times, she was seen as one and the same as the river goddess, but the menacing rock and heavy currents turned her into a witch.',
 		origin: 'European'
 	},
@@ -26620,7 +26689,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			Dark: 'Null'
 		},
 		game: 'smt4',
-		alignment: null,
+		alignment: {
+			major: 'Unknown',
+			minor: 'Neutral'
+		},
 		lore: 'Sugawara no Michizane was a noble of the Heian period who was also a well-known scholar, poet, and politician.\nBorn into a family of scholars, he used his abilities to become a minister of the right, but due to a conspiracy by his rival Fujiwara no Tokihira, he was demoted to a post in Dazaifu, north Kyushu, where he died a regrettable death. After his death, plague and drought spread throughout Japan, causing many to fear that Michizane had cursed them. Several lightning strikes on the Seiryoden resulted in many deaths, and his ghost became known as a god of thunder. After building a shrine for him, the curse eventually died down. He was worshipped as a fearsome god, but as time passed, memories of his wrath faded, and people then discovered his works as a scholar and poet, turning him into a god of scholarship.',
 		origin: 'Japanese'
 	},
@@ -30541,7 +30613,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			Dark: 'Null'
 		},
 		game: 'smt4',
-		alignment: null,
+		alignment: {
+			major: 'Dark',
+			minor: 'Neutral'
+		},
 		lore: 'A death demon of Etruscan lore.\nA terrifying portrait of this demon was painted on the walls of the tombs of the Etruscans. He was later given the same status as the Roman Pluto and Dis Pater, rulers of the underworld.',
 		origin: 'Greco-Roman'
 	},
@@ -30594,7 +30669,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			Poison: 'Resist'
 		},
 		game: 'smt4',
-		alignment: null,
+		alignment: {
+			major: 'Unknown',
+			minor: 'Neutral'
+		},
 		lore: 'A type of nymph found in Greek lore.\nNymphs lived in and protected various places and generally had different names accordingly. "Oread" was the name for the mountain nymphs, as opposed to the Napaea, who lived in valleys.',
 		origin: 'Greco-Roman'
 	},
@@ -31401,7 +31479,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			Force: 'Weak'
 		},
 		game: 'smt4',
-		alignment: null,
+		alignment: {
+			major: 'Neutral',
+			minor: 'Chaos'
+		},
 		lore: 'The giant of the Izumo-no-kuni Fudoki, or the Records of Izumo.\nPerformed the Kuni-biki, roping in land from the opposing Silla, in an effort to expand Izumo. All over Japan, there are stories of how Daidarabocchi giants shaped the land. Oumitsunu is thought to be the roof of theses tales.',
 		origin: 'Japanese'
 	},
@@ -31801,7 +31882,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			Poison: 'Weak'
 		},
 		game: 'smt4',
-		alignment: null,
+		alignment: {
+			major: 'Dark',
+			minor: 'Law'
+		},
 		lore: 'A god or goddess with a donkey\'s head who was worshipped from northern Africa all the way to Rome.\nThe donkey\'s head has long been a sigh of fertility and is often worshipped.\nHis or her (there is some dispute amongst scholars) temple was built on Palatine Hill in Rome. The word "palace" came from this god\'s name.',
 		origin: 'Greco-Roman'
 	},
@@ -34539,7 +34623,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			Fire: 'Null'
 		},
 		game: 'smt4',
-		alignment: null,
+		alignment: {
+			major: 'Light',
+			minor: 'Neutral'
+		},
 		lore: 'A prince of Kosala and the seventh avatar of Vishnu. He is the protagonist of the epic poem, the Ramayana.in the story he shows great valor saving his wife and killing the evil demon Ravana. His serious but earnest demeanor made him a popular hero in India.',
 		origin: 'Hindu'
 	},
@@ -35211,7 +35298,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			Seal: 'Null'
 		},
 		game: 'smt3',
-		alignment: null,
+		alignment: {
+			major: 'Dark',
+			minor: 'Unknown'
+		},
 		lore: 'An evil Manikin that was reborn, called back into the world by the Afterlife Bell. Because of his doings in the previous life, he has gained new powers.',
 		origin: 'ATLUS Original'
 	},
@@ -35465,7 +35555,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			Seal: 'Null'
 		},
 		game: 'smt4',
-		alignment: null,
+		alignment: {
+			major: 'Unknown',
+			minor: 'Chaos'
+		},
 		lore: 'A fallen angel found in the Book of Enoch, where he gave a human knowledge of God.\nThe Grigori, a group of angels which descended upon the earth to watch humans, instead began to lust for women. Because of that, God marked them with the stigmata of fallen angels. They also taught humans warfare, which angered God and caused him to send the Great Flood. Samyaza is a leader of the Grigori.',
 		origin: 'Abrahamic'
 	},
@@ -35516,7 +35609,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			Dark: 'Null'
 		},
 		game: 'smt4',
-		alignment: null,
+		alignment: {
+			major: 'Unknown',
+			minor: 'Chaos'
+		},
 		lore: 'Sanat Kumara. His name means "eternal youth" in Sanskrit. He is one of the four sages created by the god Brahma. In one account, he descended to earth from Venus millions of years ago to speed the evolution of man. In recent years he has been viewed as being the same as Kurama Tengu and Lucifer.',
 		origin: 'Hindu'
 	},
@@ -36771,7 +36867,10 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			Dark: 'Resist'
 		},
 		game: 'smt4',
-		alignment: null,
+		alignment: {
+			major: 'Unknown',
+			minor: 'Chaos'
+		},
 		lore: 'One of the 72 demons of the Goetia. He is the great marquis of hell and controls 30 legions of demons. He appears as a stork with a raspy voice and is a liar, but will speak the truth when in a magic triangle. He can take away the use of people\'s eyes, ears or mouth, and is adept at finding hidden treasure, likely because he is fond of stealing treasure to take back to Hell.',
 		origin: 'Abrahamic'
 	},
