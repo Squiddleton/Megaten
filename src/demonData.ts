@@ -30171,60 +30171,51 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		},
 		arcana: 'Hierophant',
 		race: 'Amatsu',
-		level: 7,
-		hp: null,
-		mp: null,
+		level: 82,
+		hp: 644,
+		mp: 288,
 		stats: {
-			st: 5,
-			vi: 5,
-			ma: 8,
-			ag: 4,
-			lu: 6
+			st: 88,
+			dx: 88,
+			ma: 88,
+			ag: 88,
+			lu: 88
 		},
 		learnset: [
 			{
-				name: 'Zio',
+				name: 'Bufudyne',
 				level: 0
 			},
 			{
-				name: 'Sukunda',
+				name: 'Ziodyne',
 				level: 0
 			},
 			{
-				name: 'Tarunda',
+				name: 'Workaholic',
 				level: 0
 			},
 			{
-				name: 'Poison Mist',
-				level: 8
+				name: 'Awakening',
+				level: 83
 			},
 			{
-				name: 'Resist Wind',
-				level: 9
-			},
-			{
-				name: 'Dodge Ice',
-				level: 10
-			},
-			{
-				name: 'Resist Poison',
-				level: 11
-			},
-			{
-				name: 'Resist Elec',
-				level: 12
+				name: 'Mana Surge',
+				level: 85
 			}
 		],
 		resistances: {
-			Ice: 'Weak',
-			Elec: 'Resist'
+			Fire: 'Weak',
+			Ice: 'Resist',
+			Elec: 'Resist',
+			Force: 'Weak',
+			Light: 'Null'
 		},
-		game: 'p4',
+		game: 'smt4',
 		alignment: {
 			major: 'Light',
 			minor: 'Law'
 		},
-		lore: 'A deity of knowledge in Japanese myth. He conceived the plan to draw Amaterasu from the Amato-Iwato, the cave she was hiding in.',
+		lore: 'The wise Japanese god who served as the elder figure of the Amatsu gods, Omoikane no Kami.\nHe is the deification of thought. His name means "to combine thought," and just as it implies, he has the wisdom of many people. When Amaterasu locked herself in the cave Amato-Iwato, he conceived the plan of having Ame no Uzume dance while other gods played music, stirring Amaterasu\'s curiosity.',
 		origin: 'Japanese'
 	},
 	{
