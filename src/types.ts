@@ -179,7 +179,7 @@ export type DamagingAffinity = Exclude<AnyAffinity, 'Recovery' | 'Ailment' | 'Su
 /** A damaging affinity or all damaging affinities */
 export type OneOrAllDamagingAffinities = DamagingAffinity | 'All';
 /** Affinities that can be a demon's inherit affinity */
-export type InheritAffinity = Exclude<AnyAffinity, 'Gun' | 'Passive' | 'Special' | SMTAffinity>;
+export type InheritAffinity = Exclude<AnyAffinity, | 'Passive' | 'Special'>;
 /** The Light and Dark affinities */
 export type LightDark = 'Light' | 'Dark';
 /** Affinities used by BoostSkill instances */
@@ -203,13 +203,16 @@ export type WallAffinity = Exclude<DamagingAffinity, SMTAffinity | 'Phys' | 'Gun
 export type PersonaGame = 'p3' | 'p4' | 'p5';
 /** Mainline Shin Megami Tensei games */
 export type SMTGame = 'smt3' | 'smt4' | 'smt5';
+/** Spin-offs of SMT games */
+export type SMTSpinoff = 'sh2';
 /** Games that demon data can originate from */
-export type AnyGame = PersonaGame | SMTGame;
+export type AnyGame = PersonaGame | SMTGame | SMTSpinoff;
 
 /** Custom races for demons that originate in Persona games */
 export type PersonaRace = 'Persona' | 'Picaro' | 'Treasure';
 /** Demons' official races */
-export type SMTRace = 'Amatsu' | 'Avatar' | 'Avian' | 'Beast' | 'Brute' | 'Chaos' | 'Deity' | 'Devil' | 'Divine' | 'Dragon' | 'Drake' | 'Element' | 'Enigma' | 'Entity' | 'Fairy' | 'Fallen' | 'Famed' | 'Femme' | 'Fiend' | 'Flight' | 'Food' | 'Foul' | 'Fury' | 'Genma' | 'Godly' | 'Haunt' | 'Herald' | 'Holy' | 'Jaki' | 'Jirae' | 'Kishin' | 'Kunitsu' | 'Lady' | 'Matter' | 'Megami' | 'Meta' | 'Mitama' | 'Nahobino' | 'Night' | 'Nymph' | 'Panagia' | 'Primal' | 'Qadištu' | 'Raptor' | 'Reaper' | 'Snake' | 'Spirit' | 'Tenma' | 'Tree' | 'Tyrant' | 'UMA' | 'Undead' | 'Vermin' | 'Vile' | 'Wargod' | 'Wilder' | 'Wood' | 'Yoma' | 'Zealot' | '???';
+export type SMTRace = 'Amatsu' | 'Avatar' | 'Avian' | 'Beast' | 'Brute' | 'Chaos' | 'Cyber' | 'Deity' | 'Devil' | 'Divine' | 'Dragon' | 'Drake' | 'Element' | 'Enigma' | 'Entity' | 'Fairy' | 'Fallen' | 'Famed' | 'Femme' | 'Fiend' | 'Flight' | 'Food' | 'Foul' | 'Fury' | 'Genma' | 'Godly' | 'Haunt' | 'Herald' | 'Holy' | 'Jaki' | 'Jirae' | 'Kishin' | 'Kunitsu' | 'Lady'
+  | 'Matter' | 'Megami' | 'Meta' | 'Mitama' | 'Nahobino' | 'Night' | 'Nymph' | 'Panagia' | 'Primal' | 'Qadištu' | 'Raptor' | 'Reaper' | 'Rumor' | 'Snake' | 'Spirit' | 'Tenma' | 'Tree' | 'Tyrant' | 'UMA' | 'Undead' | 'Vermin' | 'Vile' | 'Wargod' | 'Wilder' | 'Wood' | 'Yoma' | 'Zealot' | '???';
 /** Demons' races */
 export type AnyRace = PersonaRace | SMTRace;
 

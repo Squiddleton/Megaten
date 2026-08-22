@@ -2513,6 +2513,29 @@ const skillData: AnySkillData[] = [
 		auto: []
 	},
 	{
+		name: 'Demon Teeth Grind',
+		affinity: 'Dark',
+		type: 'ATTACK',
+		accuracy: 100,
+		cost: {
+			stat: 'MP',
+			amount: 30
+		},
+		power: {
+			amount: 120,
+			display: 'Weak',
+			type: 'Magic'
+		},
+		ailments: {
+			names: [
+				'Stun'
+			],
+			chance: 16
+		},
+		target: 'All Foes',
+		series: 'smt'
+	},
+	{
 		name: 'Demonic Decree',
 		aliases: [
 			'Hell\'s Judgment'
@@ -2678,6 +2701,14 @@ const skillData: AnySkillData[] = [
 		amount: 2,
 		criteria: null,
 		element: 'Fire'
+	},
+	{
+		name: 'Dodge Force',
+		affinity: 'Passive',
+		type: 'EVASION',
+		amount: 2,
+		criteria: null,
+		element: 'Force'
 	},
 	{
 		name: 'Dodge Ice',
@@ -3480,6 +3511,15 @@ const skillData: AnySkillData[] = [
 		},
 		target: 'Random Foes',
 		series: 'smt'
+	},
+	{
+		name: 'Eternal Prayer',
+		affinity: 'Recovery',
+		type: 'RECOVERY',
+		target: 'All Allies',
+		cost: 100,
+		ailments: 'All',
+		amount: 'Full'
 	},
 	{
 		name: 'Eternal Rest',
@@ -9234,6 +9274,26 @@ const skillData: AnySkillData[] = [
 		}
 	},
 	{
+		name: 'Overlord',
+		affinity: 'Phys',
+		type: 'ATTACK',
+		unique: true,
+		accuracy: 100,
+		cost: {
+			stat: 'MP',
+			amount: 40
+		},
+		power: {
+			amount: 50,
+			display: 'Medium',
+			type: 'Physical'
+		},
+		min: 4,
+		max: 4,
+		target: 'Random Foes',
+		series: 'smt'
+	},
+	{
 		name: 'Pandemic Bomb',
 		affinity: 'Ailment',
 		type: 'AILMENT',
@@ -10585,6 +10645,17 @@ const skillData: AnySkillData[] = [
 		newResistance: 'Resist'
 	},
 	{
+		name: 'Resist Mind',
+		affinity: 'Passive',
+		type: 'AILDEFENSIVE',
+		ailments: [
+			'Sleep',
+			'Seal',
+			'Dizzy'
+		],
+		resistance: 'Resist'
+	},
+	{
 		name: 'Resist Mirage',
 		affinity: 'Passive',
 		type: 'AILDEFENSIVE',
@@ -10791,6 +10862,27 @@ const skillData: AnySkillData[] = [
 		]
 	},
 	{
+		name: 'Roma Fulmen',
+		affinity: 'Elec',
+		type: 'ATTACK',
+		unique: true,
+		accuracy: 100,
+		cost: {
+			stat: 'MP',
+			amount: 37
+		},
+		power: {
+			amount: 120,
+			display: 'Medium',
+			type: 'Magic'
+		},
+		target: 'All Foes',
+		series: 'smt',
+		flags: [
+			'HP Dependent'
+		]
+	},
+	{
 		name: 'Root of Evil',
 		affinity: 'Almighty',
 		type: 'ATTACK',
@@ -10860,6 +10952,23 @@ const skillData: AnySkillData[] = [
 		},
 		target: 'One Foe',
 		series: 'smt'
+	},
+	{
+		name: 'Sabbath Drain',
+		affinity: 'Passive',
+		type: 'MISC',
+		target: 'Self',
+		cost: null,
+		description: 'May activate during a sabbath. Inflicts extra damage to all enemies, absorbing some as MP.'
+	},
+	{
+		name: 'Sabbath Love',
+		affinity: 'Passive',
+		type: 'MISC',
+		unique: true,
+		target: 'Self',
+		cost: null,
+		description: 'May activate during a sabbath. Small HP recovery for all allies. Cures all status ailments other than KO.'
 	},
 	{
 		name: 'Sabbatma',
@@ -11616,6 +11725,18 @@ const skillData: AnySkillData[] = [
 		},
 		target: 'All Foes',
 		series: 'smt'
+	},
+	{
+		name: 'Soul Hax',
+		affinity: 'Recovery',
+		type: 'RECOVERY',
+		unique: true,
+		target: 'One Dead Stocked Ally',
+		cost: 17,
+		amount: 'Half',
+		flags: [
+			'Revive'
+		]
 	},
 	{
 		name: 'Soul Touch',

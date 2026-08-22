@@ -656,6 +656,55 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		origin: 'Abrahamic'
 	},
 	{
+		name: 'Ai-ho',
+		aliases: [
+			'B. Hawaii Frost'
+		],
+		affinities: {
+			skillPotential: null,
+			inherit: 'Ice'
+		},
+		arcana: null,
+		race: 'Fairy',
+		level: 16,
+		hp: null,
+		mp: null,
+		stats: {
+			st: 6,
+			vi: 6,
+			ma: 9,
+			ag: 8,
+			lu: 8
+		},
+		learnset: [
+			{
+				name: 'Bufula',
+				level: 0
+			},
+			{
+				name: 'Mazio',
+				level: 0
+			},
+			{
+				name: 'Soul Hax',
+				level: 0
+			},
+			{
+				name: 'Sabbath Love',
+				level: 18
+			}
+		],
+		resistances: {
+			Ice: 'Resist',
+			Elec: 'Resist',
+			Dark: 'Resist'
+		},
+		game: 'sh2',
+		alignment: null,
+		lore: 'Another possibility calculated by Aion. This adorable Jack Frost is a fairy with the powers of Aion and a familiar demonic appearance, born through advanced technology. He comes from a world where Aion decided that, actually, THIS is the optimal form for stopping the apocalypse. In this merciless dystopia, his cute, captivating eyes are his greatest weapon. Ordinarily, Ringo and this avatar would never meet, but a mysterious power has brought them together.',
+		origin: 'ATLUS Original'
+	},
+	{
 		name: 'Airavata',
 		affinities: {
 			skillPotential: {
@@ -4728,6 +4777,54 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		},
 		lore: 'A water deity of the Azumi, a Japanese seafaring tribe. As such, it can freely control water.\nThe three gods born from Izanagi after he returned from Yomi are said to be the Azumi tribe\'s ancestors.',
 		origin: 'Japanese'
+	},
+	{
+		name: 'Blue Hawaii Frost',
+		aliases: [
+			'B. Hawaii Frost'
+		],
+		affinities: {
+			skillPotential: null,
+			inherit: 'Ice'
+		},
+		arcana: null,
+		race: 'Element',
+		level: 16,
+		hp: null,
+		mp: null,
+		stats: {
+			st: 6,
+			vi: 7,
+			ma: 9,
+			ag: 8,
+			lu: 7
+		},
+		learnset: [
+			{
+				name: 'Mabufu',
+				level: 0
+			},
+			{
+				name: 'Dodge Elec',
+				level: 17
+			},
+			{
+				name: 'Sukukaja',
+				level: 18
+			}
+		],
+		resistances: {
+			Fire: 'Weak',
+			Ice: 'Drain',
+			Dark: 'Resist'
+		},
+		game: 'sh2',
+		alignment: {
+			major: 'Neutral',
+			minor: 'Neutral'
+		},
+		lore: 'One of the "shaved ice" subspecies of Jack Frost created by Dr. Thrill. Its official name is "Blue Hawaii Frost." Having sought asylum in Japan, Dr. Thrill was soon exposed to a great deal of Japanese culture, and, upon buying a variety of sentai masks and shaved ice at a summer festival, was inspired to create this variation of Jack Frost. Whether or not they actually taste like "Blue Hawaii" has yet to be determined... though admittedly, what "Blue Hawaii" even tastes like is a mystery in itself.',
+		origin: 'ATLUS Original'
 	},
 	{
 		name: 'Baal',
@@ -10636,6 +10733,57 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		},
 		lore: 'The fourth of the nine orders of angels. Their name carries the meaning of "governance," and it is their duty to oversee the other angels.\nIt is said that their work is the embodiment of God\'s will, and that they wish for this governance to spread throughout the cosmos.',
 		origin: 'Abrahamic'
+	},
+	{
+		name: 'Doppelganger',
+		affinities: {
+			skillPotential: null,
+			inherit: null
+		},
+		arcana: null,
+		race: 'Rumor',
+		level: 49,
+		hp: null,
+		mp: null,
+		stats: {
+			st: 22,
+			vi: 15,
+			ma: 24,
+			ag: 14,
+			lu: 10
+		},
+		learnset: [
+			{
+				name: 'Mazionga',
+				level: 0
+			},
+			{
+				name: 'Megidola',
+				level: 0
+			},
+			{
+				name: 'Makarakarn',
+				level: 50
+			},
+			{
+				name: 'Concentrate',
+				level: 51
+			},
+			{
+				name: 'Sabbath Drain',
+				level: 52
+			}
+		],
+		resistances: {
+			Phys: 'Repel',
+			Gun: 'Weak',
+			Elec: 'Null',
+			Dark: 'Null'
+		},
+		game: 'sh2',
+		alignment: null,
+		lore: 'A phantom copy of a living being, its name comes from the German phrase "double goer." Doppelgangers are regarded as an omen of bad luck, and though one\'s Doppelganger is typically seen by others from afar, it is said that one may see their own Doppelganger in the moments before they die.',
+		origin: 'European'
 	},
 	{
 		name: 'Dormarth',
@@ -23304,6 +23452,51 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		origin: 'Abrahamic'
 	},
 	{
+		name: 'Lemon Frost',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Ice'
+		},
+		arcana: null,
+		race: 'Element',
+		level: 21,
+		hp: null,
+		mp: null,
+		stats: {
+			st: 8,
+			vi: 11,
+			ma: 7,
+			ag: 8,
+			lu: 7
+		},
+		learnset: [
+			{
+				name: 'Mazio',
+				level: 0
+			},
+			{
+				name: 'Dodge Force',
+				level: 22
+			},
+			{
+				name: 'Elec Wall',
+				level: 23
+			}
+		],
+		resistances: {
+			Fire: 'Weak',
+			Ice: 'Drain',
+			Elec: 'Null'
+		},
+		game: 'sh2',
+		alignment: {
+			major: 'Neutral',
+			minor: 'Neutral'
+		},
+		lore: 'One of the "shaved ice" subspecies of Jack Frost created by the brilliant Dr. Thrill. Having sought asylum in Japan, Dr. Thrill was soon exposed to a great deal of Japanese culture, and, upon buying a variety of sentai masks and shaved ice at a summer festival, was inspired to create this variation of Jack Frost. Whether or not they actually taste like lemon has yet to be determined.',
+		origin: 'ATLUS Original'
+	},
+	{
 		name: 'Lham Dearg',
 		affinities: {
 			skillPotential: {
@@ -26020,6 +26213,51 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		origin: 'Abrahamic'
 	},
 	{
+		name: 'Melon Frost',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Ice'
+		},
+		arcana: null,
+		race: 'Element',
+		level: 9,
+		hp: null,
+		mp: null,
+		stats: {
+			st: 4,
+			vi: 4,
+			ma: 6,
+			ag: 5,
+			lu: 7
+		},
+		learnset: [
+			{
+				name: 'Zan',
+				level: 0
+			},
+			{
+				name: 'Patra',
+				level: 10
+			},
+			{
+				name: 'Resist Dark',
+				level: 11
+			}
+		],
+		resistances: {
+			Fire: 'Weak',
+			Ice: 'Drain',
+			Force: 'Null'
+		},
+		game: 'sh2',
+		alignment: {
+			major: 'Neutral',
+			minor: 'Neutral'
+		},
+		lore: 'One of the "shaved ice" subspecies of Jack Frost created by the brilliant Dr. Thrill. Having sought asylum in Japan, Dr. Thrill was soon exposed to a great deal of Japanese culture, and, upon buying a variety of sentai masks and shaved ice at a summer festival, was inspired to create this variation of Jack Frost. Whether or not they actually taste like melon has yet to be determined.',
+		origin: 'ATLUS Original'
+	},
+	{
 		name: 'Mephisto',
 		affinities: {
 			skillPotential: {
@@ -26803,6 +27041,55 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		user: 'Haru Okumura',
 		stage: 1,
 		evoSkillName: null
+	},
+	{
+		name: 'Milk Kintoki Frost',
+		aliases: [
+			'Milk-kin Frost'
+		],
+		affinities: {
+			skillPotential: null,
+			inherit: 'Ice'
+		},
+		arcana: null,
+		race: 'Element',
+		level: 31,
+		hp: null,
+		mp: null,
+		stats: {
+			st: 12,
+			vi: 9,
+			ma: 14,
+			ag: 13,
+			lu: 11
+		},
+		learnset: [
+			{
+				name: 'Demon Teeth Grind',
+				level: 0
+			},
+			{
+				name: 'Resist Mind',
+				level: 32
+			},
+			{
+				name: 'Life Aid',
+				level: 33
+			}
+		],
+		resistances: {
+			Phys: 'Weak',
+			Gun: 'Weak',
+			Fire: 'Null',
+			Ice: 'Drain'
+		},
+		game: 'sh2',
+		alignment: {
+			major: 'Neutral',
+			minor: 'Neutral'
+		},
+		lore: 'One of the "shaved ice" subspecies of Jack Frost created by Dr. Thrill. Its official name is "Milk Kintoki Frost." Having sought asylum in Japan, Dr. Thrill was soon exposed to a great deal of Japanese culture, and, upon buying a variety of sentai masks and shaved ice at a summer festival, was inspired to create this variation of Jack Frost. They seem a touch classier than their more fruity counterparts, but, as usual, whether they actually taste like milk kintoki has yet to be determined.',
+		origin: 'ATLUS Original'
 	},
 	{
 		name: 'Minotaur',
@@ -28853,6 +29140,62 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		user: 'Ken Amada',
 		stage: 1,
 		evoSkillName: null
+	},
+	{
+		name: 'Nemissa',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Elec'
+		},
+		arcana: null,
+		race: 'Cyber',
+		level: 60,
+		hp: null,
+		mp: null,
+		stats: {
+			st: 22,
+			vi: 20,
+			ma: 33,
+			ag: 23,
+			lu: 7
+		},
+		learnset: [
+			{
+				name: 'Diarahan',
+				level: 0
+			},
+			{
+				name: 'Megidolaon',
+				level: 0
+			},
+			{
+				name: 'Roma Fulmen',
+				level: 0
+			},
+			{
+				name: 'Auto-Masuku',
+				level: 61
+			},
+			{
+				name: 'Eternal Prayer',
+				level: 62
+			},
+			{
+				name: 'Overlord',
+				level: 63
+			}
+		],
+		resistances: {
+			Fire: 'Resist',
+			Ice: 'Resist',
+			Elec: 'Drain',
+			Force: 'Weak',
+			Dark: 'Resist'
+		},
+		game: 'sh2',
+		alignment: null,
+		lore: 'A digital being involved with an incident in Amami City some time ago, manifested by possessing a girl named Hitomi. Evidence suggests this demon opposed a large-scale conspiracy alongside the known hacker group, "Spookies". An Algonquian legend describes a maiden of the stars with the same name, said to have seduced a mortal man known as Cloud-carrier. By her invitation, he entered the country of stars, where the two were married.',
+		origin: 'ATLUS Original'
 	},
 	{
 		name: 'Nergal',
@@ -33160,6 +33503,62 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			minor: 'Neutral'
 		},
 		lore: 'Small fairies found in southwestern Britain known for their cheerful nature and love of pranks.\nTheir physical appearance changes from region to region, but their personality is always playful and mischievous. A common prank they like to pull is causing humans to wander in circles. However, they are also known to help farmers from time to time and are generally considered good fairies.',
+		origin: 'European'
+	},
+	{
+		name: 'Pixie - SH',
+		aliases: [
+			'Pixie'
+		],
+		affinities: {
+			skillPotential: null,
+			inherit: 'Force'
+		},
+		arcana: null,
+		race: 'Fairy',
+		level: 9,
+		hp: null,
+		mp: null,
+		stats: {
+			st: 3,
+			vi: 4,
+			ma: 7,
+			ag: 6,
+			lu: 6
+		},
+		learnset: [
+			{
+				name: 'Zan',
+				level: 0
+			},
+			{
+				name: 'Dia',
+				level: 0
+			},
+			{
+				name: 'Media',
+				level: 10
+			},
+			{
+				name: 'Mazan',
+				level: 11
+			},
+			{
+				name: 'Mana Bonus',
+				level: 12
+			}
+		],
+		resistances: {
+			Gun: 'Weak',
+			Force: 'Drain',
+			Dark: 'Resist'
+		},
+		game: 'sh2',
+		alignment: {
+			major: 'Neutral',
+			minor: 'Neutral'
+		},
+		lore: 'A small faerie found in southwestern Britain known for their cheerful nature and love of pranks. Their physical appearance changes from region to region, but their personality is always playful and mischievous. A common prank they like to pull is causing humans to wander in circles. However, they are also known to help farmers from time to time and are generally considered good faeries. They are back now in their Soul Hackers form.',
 		origin: 'European'
 	},
 	{
@@ -37989,6 +38388,51 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		},
 		lore: 'A one-eyed bull that caused chaos around the Balkans.\nWith a cry like thunder and speed like lightning, it would run through ranches, ramming and killing any cow or horse in its way. Its skin was made of bronze and could deflect arrows with ease. It was also very cautious, never getting close to a human when it spotted one, and could sense traps with its magic. It was finally killed by a man with a golden sword.',
 		origin: 'Japanese'
+	},
+	{
+		name: 'Strawberry Frost',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Ice'
+		},
+		arcana: null,
+		race: 'Element',
+		level: 26,
+		hp: null,
+		mp: null,
+		stats: {
+			st: 14,
+			vi: 11,
+			ma: 7,
+			ag: 11,
+			lu: 8
+		},
+		learnset: [
+			{
+				name: 'Heat Wave',
+				level: 0
+			},
+			{
+				name: 'Taunt',
+				level: 27
+			},
+			{
+				name: 'Dekaja',
+				level: 28
+			}
+		],
+		resistances: {
+			Fire: 'Weak',
+			Ice: 'Drain',
+			Elec: 'Null'
+		},
+		game: 'sh2',
+		alignment: {
+			major: 'Neutral',
+			minor: 'Neutral'
+		},
+		lore: 'One of the "shaved ice" subspecies of Jack Frost created by the brilliant Dr. Thrill. Having sought asylum in Japan, Dr. Thrill was soon exposed to a great deal of Japanese culture, and, upon buying a variety of sentai masks and shaved ice at a summer festival, was inspired to create this variation of Jack Frost. Whether or not they actually taste like strawberry has yet to be determined.',
+		origin: 'ATLUS Original'
 	},
 	{
 		name: 'Strigoii',
