@@ -25,7 +25,8 @@
 		"build": "tsc",
 		"prepublishOnly": "npm run build",
 		"start": "npm run build && node .",
-		"publishDev": "npm publish --tag dev"
+		"publishDev": "npm publish --tag dev",
+		"test": "npm run build && node dist/test.js"
 	},
 	"devDependencies": {
 		"@eslint/js": "^10.0.1",

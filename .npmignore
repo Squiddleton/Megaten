@@ -2,3 +2,4 @@ src
 .eslintrc
 tsconfig.json
 TODO
+dist/test.js
