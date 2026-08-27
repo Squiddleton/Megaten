@@ -1,4 +1,4 @@
-import { type AilBoostCriteria, type AilResistance, type AilmentFlag, type AilmentName, type AilmentTarget, type AnyAffinity, type AttackAilments, type AttackCost, type AttackFlag, type AttackPower, type AttackTarget, type AutoBuffTarget, type Barrier, type BarrierTarget, type BasePower, type BoostAffinity, type BoostStack, type BreakAffinity, type Buff, type BuffRecord, BuffValue, type Charge, type ChargeTarget, type CritBoostCriteria, type CritTarget, type DamagingAffinity, type DefensiveAffinity, type DefensiveSKillResistance, type EndureCriteria, type EvasionAffinity, type EvasionBoostCriteria, type HPMP, type LightDark, type MiscAffinity, type NumberOrPercent, type PostBattleStat, type RecoveryAmount, type RecoveryFlag, type RecoveryTarget, type RegenCriteria, type RegenStat, type SMTCounterAffinity, type Series, type SetAffinity, type SetTarget, type SiphonCriteria, type SkillType, type SupportAutoEffect, type SupportFlag, type SupportTarget, type SusceptibilityTarget, type Target, type WallAffinity } from './types.js';
+import { type AilBoostCriteria, type AilmentFlag, type AilmentName, type AilmentTarget, type AnyAffinity, type AttackAilments, type AttackCost, type AttackFlag, type AttackPower, type AttackTarget, type AutoBuffTarget, type Barrier, type BarrierTarget, type BasePower, type BoostAffinity, type BoostStack, type BreakAffinity, type Buff, type BuffRecord, BuffValue, type Charge, type ChargeTarget, type CritBoostCriteria, type CritTarget, type DamagingAffinity, type DefensiveAffinity, type DefensiveSKillResistance, type EndureCriteria, type EvasionAffinity, type EvasionBoostCriteria, type HPMP, type LightDark, type MiscAffinity, type NumberOrPercent, type PostBattleStat, type RecoveryAmount, type RecoveryFlag, type RecoveryTarget, type RegenCriteria, type RegenStat, type Resistance, type SMTCounterAffinity, type Series, type SetAffinity, type SetTarget, type SiphonCriteria, type SkillType, type SupportAutoEffect, type SupportFlag, type SupportTarget, type SusceptibilityTarget, type Target, type WallAffinity } from './types.js';
 import type { AilBoostSkillData, AilDefensiveSkillData, AilmentSkillData, AttackSkillData, AutoBuffSkillData, BarrierBreakSkillData, BarrierSkillData, BoostSkillData, BreakSkillData, ChargeSkillData, CritBoostSkillData, CritSkillData, DefensiveSkillData, EndureSkillData, EvasionSkillData, InstakillBoostSkillData, MasterSkillData, MiscSkillData, NaviSkillData, PersonaCounterSkillData, PostBattleSkillData, RecoverySkillData, RegenSkillData, SMTCounterSkillData, SetSkillData, SiphonSkillData, SkillData, SpringSkillData, SummonSkillData, SupportSkillData, SusceptibilitySkillData, TauntSkillData, WallSkillData } from './dataTypes.js';
 import { MegatenError } from './error.js';
 import { normalize } from '@squiddleton/util';
@@ -97,7 +97,7 @@ export class AilDefensiveSkill extends Skill implements AilDefensiveSkillData {
 	/** The ailment resisted by this skill, or null if all */
 	ailments: AilmentName[] | null;
 	/** The level of resistance to the ailment */
-	resistance: AilResistance;
+	resistance: Resistance;
 	constructor(data: AilDefensiveSkillData) {
 		const { ailments, resistance } = data;
 		super(data);
@@ -831,10 +831,12 @@ export class SetSkill extends Skill implements SetSkillData {
 	amount: NumberOrPercent;
 	/** The skill's MP cost, or null if enemy-exclusive */
 	cost: number | null;
+	/** The chance for the skill to take effect */
+	chance: number;
 	/** Whether the skill does the amount of damage to non-sick enemies, or sets the sick target's HP to the amount */
 	sickDependent?: boolean;
 	constructor(data: SetSkillData) {
-		const { target, amount, sickDependent } = data;
+		const { target, amount, chance, sickDependent } = data;
 		super(data);
 		this.target = target;
 		if (sickDependent) {
@@ -847,6 +849,7 @@ export class SetSkill extends Skill implements SetSkillData {
 		}
 		this.amount = amount;
 		this.cost = data.cost;
+		this.chance = chance ?? 100;
 		this.sickDependent = sickDependent;
 	}
 }

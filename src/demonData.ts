@@ -826,6 +826,62 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		origin: 'Lithuanian'
 	},
 	{
+		name: 'Aizen Myouou',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Earth'
+		},
+		arcana: 'Hierophant',
+		race: 'Persona',
+		level: 20,
+		hp: null,
+		mp: null,
+		stats: {
+			st: 20,
+			vi: 18,
+			ma: 18,
+			ag: 20,
+			lu: 16
+		},
+		learnset: [
+			{
+				name: 'Hama',
+				level: 1
+			},
+			{
+				name: 'Sonic Punch',
+				level: 3
+			},
+			{
+				name: 'Sukukaja',
+				level: 4
+			},
+			{
+				name: 'Makouha',
+				level: 6
+			},
+			{
+				name: 'Mamagnara',
+				level: 8
+			}
+		],
+		resistances: {
+			Earth: 'Null',
+			Light: 'Null',
+			Dark: 'Null',
+			Sleep: 'Resist',
+			Confusion: 'Resist',
+			Charm: 'Resist'
+		},
+		game: 'p2',
+		alignment: null,
+		lore: 'Three-eyed king who changes evil passions to understanding.',
+		origin: 'Buddhist',
+		user: 'Kei Nanjo',
+		stage: 1,
+		evoSkillName: null
+	},
+	{
 		name: 'Al Azif',
 		affinities: {
 			skillPotential: null,
@@ -2374,7 +2430,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			major: 'Neutral',
 			minor: 'Law'
 		},
-		lore: 'Ninth of the nine orders of angels.\nThey are closest in nature to humans. They watch over individuals and offer warning to those who stray from the path.',
+		lore: 'Ninth of the nine orders of angels.\nThey are closest in nature to humans. They watch over individuals and warn those who stray from the path.',
 		origin: 'Abrahamic'
 	},
 	{
@@ -2642,6 +2698,70 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		},
 		lore: 'The bull-god of Ptah, the god of creation in Egyptian lore worshipped in the Memphis region.\nApis was conceived by the union of a cow and a ray of light from the heavens. It is said to have 29 distinct identifying attributes, such as a diamond on its forehead and an eagle mark on its back.',
 		origin: 'Egyptian'
+	},
+	{
+		name: 'Apollo',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Fire'
+		},
+		arcana: 'Sun',
+		race: 'Persona',
+		level: 62,
+		hp: null,
+		mp: null,
+		stats: {
+			st: 50,
+			vi: 45,
+			ma: 48,
+			ag: 46,
+			lu: 44
+		},
+		learnset: [
+			{
+				name: 'Agidyne',
+				level: 1
+			},
+			{
+				name: 'Gigantic Fist',
+				level: 2
+			},
+			{
+				name: 'Dekaja',
+				level: 3
+			},
+			{
+				name: 'Freila',
+				level: 5
+			},
+			{
+				name: 'Maragidyne',
+				level: 6
+			},
+			{
+				name: 'Atomic Flare',
+				level: 8
+			}
+		],
+		resistances: {
+			Fire: 'Null',
+			Water: 'Weak',
+			Ice: 'Weak',
+			Elec: 'Resist',
+			Nuke: 'Resist',
+			Light: 'Null',
+			Dark: 'Weak',
+			Sleep: 'Null',
+			Confusion: 'Null',
+			Charm: 'Null'
+		},
+		game: 'p2',
+		alignment: null,
+		lore: 'A human sun god of Greece with shining beauty.',
+		origin: 'Greco-Roman',
+		user: 'Tatsuya Suou',
+		stage: 2,
+		evoSkillName: null
 	},
 	{
 		name: 'Apsaras',
@@ -3672,6 +3792,71 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		origin: 'Greco-Roman'
 	},
 	{
+		name: 'Artemis - P2',
+		affinities: {
+			skillPotential: null,
+			inherit: null
+		},
+		arcana: 'Moon',
+		race: 'Persona',
+		level: 63,
+		hp: null,
+		mp: null,
+		stats: {
+			st: 56,
+			vi: 42,
+			ma: 49,
+			ag: 47,
+			lu: 53
+		},
+		learnset: [
+			{
+				name: 'Bufudyne',
+				level: 1
+			},
+			{
+				name: 'Lullaby',
+				level: 3
+			},
+			{
+				name: 'Mabufula',
+				level: 4
+			},
+			{
+				name: 'Diarahan',
+				level: 6
+			},
+			{
+				name: 'Crescent Mirror',
+				level: 8
+			}
+		],
+		resistances: {
+			Phys: 'Weak',
+			Gun: 'Weak',
+			Fire: 'Repel',
+			Water: 'Repel',
+			Wind: 'Repel',
+			Earth: 'Repel',
+			Ice: 'Repel',
+			Elec: 'Repel',
+			Nuke: 'Repel',
+			Light: 'Repel',
+			Dark: 'Repel',
+			Almighty: 'Repel',
+			Sleep: 'Repel',
+			Confusion: 'Repel',
+			Charm: 'Repel'
+		},
+		game: 'p2',
+		alignment: null,
+		lore: 'Greek moon goddess of hunting.',
+		origin: 'Greco-Roman',
+		user: 'Maya Amano',
+		stage: 2,
+		evoSkillName: null
+	},
+	{
 		name: 'Artemisia',
 		affinities: {
 			skillPotential: null,
@@ -4170,6 +4355,66 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		alignment: null,
 		lore: 'A Persona turned picaro after becoming the Trickster\'s mask. Son of Pasiphae, he was born a bull-headed monster. Locked away in the labyrinth as the Minotaur, he wielded a double-sided axe.',
 		origin: 'Greco-Roman'
+	},
+	{
+		name: 'Astria',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Wind'
+		},
+		arcana: 'Star',
+		race: 'Persona',
+		level: 62,
+		hp: null,
+		mp: null,
+		stats: {
+			st: 51,
+			vi: 46,
+			ma: 54,
+			ag: 53,
+			lu: 49
+		},
+		learnset: [
+			{
+				name: 'Garudyne',
+				level: 1
+			},
+			{
+				name: 'Sexy Dance',
+				level: 3
+			},
+			{
+				name: 'Dream Needle',
+				level: 5
+			},
+			{
+				name: 'Me Patra',
+				level: 6
+			},
+			{
+				name: 'Twinkle Nebula',
+				level: 8
+			}
+		],
+		resistances: {
+			Wind: 'Null',
+			Earth: 'Weak',
+			Ice: 'Resist',
+			Elec: 'Resist',
+			Nuke: 'Resist',
+			Light: 'Null',
+			Dark: 'Resist',
+			Sleep: 'Repel',
+			Confusion: 'Repel',
+			Charm: 'Repel'
+		},
+		game: 'p2',
+		alignment: null,
+		lore: 'Greek goddess whose name means "constellation."',
+		origin: 'Greco-Roman',
+		user: 'Ulala Serizawa',
+		stage: 2,
+		evoSkillName: null
 	},
 	{
 		name: 'Asura',
@@ -7105,6 +7350,63 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		origin: 'Greco-Roman'
 	},
 	{
+		name: 'Callisto',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Earth'
+		},
+		arcana: 'Star',
+		race: 'Persona',
+		level: 1,
+		hp: null,
+		mp: null,
+		stats: {
+			st: 3,
+			vi: 3,
+			ma: 3,
+			ag: 4,
+			lu: 2
+		},
+		learnset: [
+			{
+				name: 'Magna',
+				level: 1
+			},
+			{
+				name: 'Poisma',
+				level: 3
+			},
+			{
+				name: 'Zan',
+				level: 4
+			},
+			{
+				name: 'Marin Karin',
+				level: 6
+			},
+			{
+				name: 'Magnara',
+				level: 8
+			}
+		],
+		resistances: {
+			Wind: 'Weak',
+			Earth: 'Resist',
+			Light: 'Resist',
+			Dark: 'Resist',
+			Sleep: 'Resist',
+			Confusion: 'Resist',
+			Charm: 'Resist'
+		},
+		game: 'p2',
+		alignment: null,
+		lore: 'Moon goddess of Greek myth. She is a follower of Artemis.',
+		origin: 'Greco-Roman',
+		user: 'Ulala Serizawa',
+		stage: 1,
+		evoSkillName: null
+	},
+	{
 		name: 'Camael',
 		affinities: {
 			skillPotential: {
@@ -8616,6 +8918,66 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		},
 		lore: 'A demon summoned by a sorcerer named Crowley at the beginning of the 20th century. He prevents those from attempting to reach enlightenment.',
 		origin: 'European'
+	},
+	{
+		name: 'Chronos',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Wind'
+		},
+		arcana: 'Fortune',
+		race: 'Persona',
+		level: 57,
+		hp: null,
+		mp: null,
+		stats: {
+			st: 42,
+			vi: 45,
+			ma: 55,
+			ag: 47,
+			lu: 50
+		},
+		learnset: [
+			{
+				name: 'Garudyne',
+				level: 1
+			},
+			{
+				name: 'Wind Breath',
+				level: 3
+			},
+			{
+				name: 'Mediarama',
+				level: 4
+			},
+			{
+				name: 'Magarudyne',
+				level: 6
+			},
+			{
+				name: 'Cross Fortune',
+				level: 8
+			}
+		],
+		resistances: {
+			Wind: 'Null',
+			Earth: 'Weak',
+			Ice: 'Resist',
+			Elec: 'Resist',
+			Nuke: 'Resist',
+			Light: 'Resist',
+			Dark: 'Null',
+			Sleep: 'Repel',
+			Confusion: 'Repel',
+			Charm: 'Repel'
+		},
+		game: 'p2',
+		alignment: null,
+		lore: 'The Greek deification of time.',
+		origin: 'Greco-Roman',
+		user: 'Jun Kurosu',
+		stage: 2,
+		evoSkillName: null
 	},
 	{
 		name: 'Chupacabra',
@@ -10913,6 +11275,66 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		origin: 'Celtic'
 	},
 	{
+		name: 'Durga',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Fire'
+		},
+		arcana: 'Empress',
+		race: 'Persona',
+		level: 57,
+		hp: null,
+		mp: null,
+		stats: {
+			st: 41,
+			vi: 40,
+			ma: 36,
+			ag: 23,
+			lu: 49
+		},
+		learnset: [
+			{
+				name: 'Ziodyne',
+				level: 1
+			},
+			{
+				name: 'Blast Arrow',
+				level: 3
+			},
+			{
+				name: 'Fiery Fury',
+				level: 4
+			},
+			{
+				name: 'Mamudo',
+				level: 5
+			},
+			{
+				name: 'Megido',
+				level: 7
+			},
+			{
+				name: 'Thunder Inferno',
+				level: 8
+			}
+		],
+		resistances: {
+			Fire: 'Drain',
+			Water: 'Weak',
+			Ice: 'Weak',
+			Nuke: 'Null',
+			Light: 'Null',
+			Dark: 'Resist'
+		},
+		game: 'p2',
+		alignment: null,
+		lore: 'Hindu goddess of motherhood and battle, created to exterminate demons.',
+		origin: 'Hindu',
+		user: 'Yukino Mayuzumi',
+		stage: 2,
+		evoSkillName: null
+	},
+	{
 		name: 'Dwarf',
 		affinities: {
 			skillPotential: {
@@ -11557,6 +11979,64 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		},
 		lore: 'An evil wood spirit appearing in Germany\'s Scharzwald. He charms people and leads them to their deaths.\nHis name means "Alder King," and true to his name, he is the ruler of the alders of the forest. It is said that the Erlkonig is the strongest of the alder trees.',
 		origin: 'European'
+	},
+	{
+		name: 'Eros',
+		affinities: {
+			skillPotential: null,
+			inherit: null
+		},
+		arcana: 'Lovers',
+		race: 'Persona',
+		level: 1,
+		hp: null,
+		mp: null,
+		stats: {
+			st: 3,
+			vi: 2,
+			ma: 2,
+			ag: 3,
+			lu: 2
+		},
+		learnset: [
+			{
+				name: 'Magna',
+				level: 1
+			},
+			{
+				name: 'Dia',
+				level: 2
+			},
+			{
+				name: 'Fogna',
+				level: 4
+			},
+			{
+				name: 'Marin Karin',
+				level: 6
+			},
+			{
+				name: 'Mamagna',
+				level: 8
+			}
+		],
+		resistances: {
+			Light: 'Null',
+			Dark: 'Resist',
+			Sleep: 'Resist',
+			Confusion: 'Resist',
+			Charm: 'Resist'
+		},
+		game: 'p2',
+		alignment: {
+			major: 'Light',
+			minor: 'Law'
+		},
+		lore: 'Greek god presiding over love with magic arrows.',
+		origin: 'Greco-Roman',
+		user: 'Lisa Silverman',
+		stage: 1,
+		evoSkillName: null
 	},
 	{
 		name: 'Erthys',
@@ -12711,6 +13191,77 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		},
 		lore: 'One of the four major angels. The name Gabriel means "God is my strength."\nActing as a messenger for God, Gabriel is the one who informed the virgin Mary of her pregnancy. Though often depicted with a feminine face, there are various interpretations suggesting Gabriel is not androgynous but is in fact a woman.',
 		origin: 'Abrahamic'
+	},
+	{
+		name: 'Gabriel - P2',
+		aliases: [
+			'Gabriel'
+		],
+		affinities: {
+			skillPotential: null,
+			inherit: null
+		},
+		arcana: 'Judgement',
+		race: 'Persona',
+		level: 76,
+		hp: null,
+		mp: null,
+		stats: {
+			st: 60,
+			vi: 55,
+			ma: 71,
+			ag: 61,
+			lu: 68
+		},
+		learnset: [
+			{
+				name: 'Aquadyne',
+				level: 1
+			},
+			{
+				name: 'Patra',
+				level: 2
+			},
+			{
+				name: 'Divine Judgement',
+				level: 4
+			},
+			{
+				name: 'Makajamaon',
+				level: 5
+			},
+			{
+				name: 'Recarmdra',
+				level: 6
+			},
+			{
+				name: 'Release Jail',
+				level: 8
+			}
+		],
+		resistances: {
+			Phys: 'Resist',
+			Gun: 'Resist',
+			Fire: 'Resist',
+			Water: 'Resist',
+			Wind: 'Resist',
+			Earth: 'Resist',
+			Ice: 'Null',
+			Elec: 'Resist',
+			Nuke: 'Weak',
+			Light: 'Null',
+			Dark: 'Weak',
+			Sleep: 'Null',
+			Confusion: 'Null',
+			Charm: 'Null'
+		},
+		game: 'p2',
+		alignment: null,
+		lore: 'The only female angel of high order.',
+		origin: 'Abrahamic',
+		user: 'Eriko Kirishima',
+		stage: 2,
+		evoSkillName: null
 	},
 	{
 		name: 'Ganesha',
@@ -14316,6 +14867,69 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		origin: 'Japanese'
 	},
 	{
+		name: 'Hades',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Water'
+		},
+		arcana: 'Death',
+		race: 'Persona',
+		level: 57,
+		hp: null,
+		mp: null,
+		stats: {
+			st: 44,
+			vi: 46,
+			ma: 54,
+			ag: 42,
+			lu: 41
+		},
+		learnset: [
+			{
+				name: 'Malaques',
+				level: 1
+			},
+			{
+				name: 'Mamudo',
+				level: 3
+			},
+			{
+				name: 'Marin Karin',
+				level: 4
+			},
+			{
+				name: 'Zandyne',
+				level: 5
+			},
+			{
+				name: 'Malaquadyne',
+				level: 6
+			},
+			{
+				name: 'Bloody Honeymoon',
+				level: 8
+			}
+		],
+		resistances: {
+			Fire: 'Weak',
+			Water: 'Null',
+			Ice: 'Resist',
+			Nuke: 'Weak',
+			Light: 'Null',
+			Dark: 'Weak',
+			Sleep: 'Null',
+			Confusion: 'Null',
+			Charm: 'Null'
+		},
+		game: 'p2',
+		alignment: null,
+		lore: 'The king of Tartarus in Greek lore.',
+		origin: 'Greco-Roman',
+		user: 'Eikichi Mishina',
+		stage: 2,
+		evoSkillName: null
+	},
+	{
 		name: 'Hagen',
 		affinities: {
 			skillPotential: {
@@ -15614,6 +16228,63 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		origin: 'Abrahamic'
 	},
 	{
+		name: 'Helios',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Fire'
+		},
+		arcana: 'Justice',
+		race: 'Persona',
+		level: 1,
+		hp: null,
+		mp: null,
+		stats: {
+			st: 4,
+			vi: 3,
+			ma: 3,
+			ag: 2,
+			lu: 3
+		},
+		learnset: [
+			{
+				name: 'Agi',
+				level: 1
+			},
+			{
+				name: 'Single Shot',
+				level: 2
+			},
+			{
+				name: 'Patra',
+				level: 4
+			},
+			{
+				name: 'Lunge',
+				level: 5
+			},
+			{
+				name: 'Maragi',
+				level: 8
+			}
+		],
+		resistances: {
+			Fire: 'Null',
+			Water: 'Weak',
+			Light: 'Resist',
+			Dark: 'Resist',
+			Sleep: 'Resist',
+			Confusion: 'Resist',
+			Charm: 'Resist'
+		},
+		game: 'p2',
+		alignment: null,
+		lore: 'Sun god in Greek mythology. Rides a golden-wheeled sun chariot.',
+		origin: 'Greco-Roman',
+		user: 'Katsuya Suou',
+		stage: 1,
+		evoSkillName: null
+	},
+	{
 		name: 'Hell Biker',
 		affinities: {
 			skillPotential: {
@@ -15896,6 +16567,73 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		lore: 'A messenger god who served Zeus. His winged sandals allow him to fly, and he was worshiped as a god of travel and commerce. He was also known as a trickster, being able to freely cross between the mortal and godly realms.',
 		origin: 'Greco-Roman',
 		user: 'Junpei Iori',
+		stage: 1,
+		evoSkillName: null
+	},
+	{
+		name: 'Hermes - P2',
+		aliases: [
+			'Hermes'
+		],
+		affinities: {
+			skillPotential: null,
+			inherit: 'Wind'
+		},
+		arcana: 'Fortune',
+		race: 'Persona',
+		level: 42,
+		hp: null,
+		mp: null,
+		stats: {
+			st: 32,
+			vi: 31,
+			ma: 35,
+			ag: 44,
+			lu: 37
+		},
+		learnset: [
+			{
+				name: 'Garula',
+				level: 1
+			},
+			{
+				name: 'Sukukaja',
+				level: 2
+			},
+			{
+				name: 'Wind Slash',
+				level: 4
+			},
+			{
+				name: 'Dazzler',
+				level: 5
+			},
+			{
+				name: 'Magarula',
+				level: 6
+			},
+			{
+				name: 'Recarm',
+				level: 8
+			}
+		],
+		resistances: {
+			Wind: 'Repel',
+			Elec: 'Weak',
+			Light: 'Resist',
+			Dark: 'Null',
+			Sleep: 'Resist',
+			Confusion: 'Resist',
+			Charm: 'Resist'
+		},
+		game: 'p2',
+		alignment: {
+			major: 'Light',
+			minor: 'Law'
+		},
+		lore: 'One of the twelve gods of Olympus. Acts as their messenger.',
+		origin: 'Greco-Roman',
+		user: 'Jun Kurosu',
 		stage: 1,
 		evoSkillName: null
 	},
@@ -16625,7 +17363,8 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 	{
 		name: 'Huang Long',
 		aliases: [
-			'Kohryu'
+			'Kohryu',
+			'Wong Long'
 		],
 		affinities: {
 			skillPotential: {
@@ -16833,6 +17572,70 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		},
 		lore: 'One of the monsters in Greek mythology. It is usually depicted as having 9 heads, but some may say that it has as many as 100.\nIts father is Typhon, giant of the wind, and its mother is Echidna, goddess of the snake. The Hydra has incredible regenerating power; so much so that when one of its heads is cut off, two more will sprout from the wound. It is also extremely venomous and simply inhaling its breath is enough to kill. The slaying of Hydra is listed as one of the 12 great labors of Hercules.',
 		origin: 'Greco-Roman'
+	},
+	{
+		name: 'Hyperion',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Fire'
+		},
+		arcana: 'Justice',
+		race: 'Persona',
+		level: 63,
+		hp: null,
+		mp: null,
+		stats: {
+			st: 59,
+			vi: 55,
+			ma: 50,
+			ag: 46,
+			lu: 53
+		},
+		learnset: [
+			{
+				name: 'Flare Shot',
+				level: 1
+			},
+			{
+				name: 'Fogna',
+				level: 2
+			},
+			{
+				name: 'Maragidyne',
+				level: 3
+			},
+			{
+				name: 'Triple Down',
+				level: 5
+			},
+			{
+				name: 'Cosmic Flare',
+				level: 7
+			},
+			{
+				name: 'Justice Shot',
+				level: 8
+			}
+		],
+		resistances: {
+			Fire: 'Null',
+			Water: 'Weak',
+			Ice: 'Weak',
+			Elec: 'Resist',
+			Nuke: 'Null',
+			Light: 'Null',
+			Dark: 'Resist',
+			Sleep: 'Null',
+			Confusion: 'Null',
+			Charm: 'Null'
+		},
+		game: 'p2',
+		alignment: null,
+		lore: 'An original god from Greek mythology. Helios\' father.',
+		origin: 'Greco-Roman',
+		user: 'Katsuya Suou',
+		stage: 2,
+		evoSkillName: null
 	},
 	{
 		name: 'Ictinike',
@@ -18452,7 +19255,8 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 	{
 		name: 'Jack-o\'-Lantern',
 		aliases: [
-			'Pyro Jack'
+			'Pyro Jack',
+			'Jack O\' Lantern'
 		],
 		affinities: {
 			skillPotential: {
@@ -24855,6 +25659,65 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		origin: 'Buddhist'
 	},
 	{
+		name: 'Maia',
+		affinities: {
+			skillPotential: null,
+			inherit: null
+		},
+		arcana: 'Moon',
+		race: 'Persona',
+		level: 3,
+		hp: null,
+		mp: null,
+		stats: {
+			st: 3,
+			vi: 4,
+			ma: 5,
+			ag: 5,
+			lu: 4
+		},
+		learnset: [
+			{
+				name: 'Hama',
+				level: 1
+			},
+			{
+				name: 'Dia',
+				level: 2
+			},
+			{
+				name: 'Lunge',
+				level: 3
+			},
+			{
+				name: 'Bufu',
+				level: 4
+			},
+			{
+				name: 'Media',
+				level: 6
+			},
+			{
+				name: 'Omni Dimension',
+				level: 8
+			}
+		],
+		resistances: {
+			Light: 'Null',
+			Dark: 'Null',
+			Sleep: 'Null',
+			Confusion: 'Null',
+			Charm: 'Null'
+		},
+		game: 'p2',
+		alignment: null,
+		lore: 'From Greek myth, one of Atlas\' daughters. Mother of Hermes.',
+		origin: 'Greco-Roman',
+		user: 'Maya Amano',
+		stage: 1,
+		evoSkillName: null
+	},
+	{
 		name: 'Maitreya',
 		affinities: {
 			skillPotential: {
@@ -26080,6 +26943,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 	},
 	{
 		name: 'Melchizedek',
+		aliases: [
+			'Melchisedec'
+		],
 		affinities: {
 			skillPotential: {
 				Phys: 2,
@@ -29516,6 +30382,70 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		origin: 'Japanese'
 	},
 	{
+		name: 'Nike',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Wind'
+		},
+		arcana: 'Judgement',
+		race: 'Persona',
+		level: 23,
+		hp: null,
+		mp: null,
+		stats: {
+			st: 21,
+			vi: 15,
+			ma: 25,
+			ag: 24,
+			lu: 18
+		},
+		learnset: [
+			{
+				name: 'Magaru',
+				level: 1
+			},
+			{
+				name: 'Diarama',
+				level: 2
+			},
+			{
+				name: 'Makouha',
+				level: 4
+			},
+			{
+				name: 'Makajama',
+				level: 5
+			},
+			{
+				name: 'Rakukaja',
+				level: 7
+			},
+			{
+				name: 'Magarula',
+				level: 8
+			}
+		],
+		resistances: {
+			Fire: 'Null',
+			Water: 'Weak',
+			Ice: 'Weak',
+			Elec: 'Resist',
+			Nuke: 'Resist',
+			Light: 'Null',
+			Dark: 'Weak',
+			Sleep: 'Null',
+			Confusion: 'Null',
+			Charm: 'Null'
+		},
+		game: 'p2',
+		alignment: null,
+		lore: 'Greek goddess of victory.',
+		origin: 'Greco-Roman',
+		user: 'Eriko Kirishima',
+		stage: 1,
+		evoSkillName: null
+	},
+	{
 		name: 'Norn',
 		affinities: {
 			skillPotential: {
@@ -30191,6 +31121,64 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		},
 		lore: 'The All-Father in Norse Mythology. Warrior, sorcerer and near insatiable seeker of knowledge, he rides his eight-legged horse Sleipnir, armed with both Gungnir, his mighty spear and Draupnir, an enchanting ring.\nHe is known to have willingly sacrificed an eye to drink from the Well of Wisdom and is also recognized as the one who welcomes the souls of departed warriors as they cross over into Valhalla.',
 		origin: 'Norse'
+	},
+	{
+		name: 'Odysseus',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Wind'
+		},
+		arcana: 'Hanged',
+		race: 'Persona',
+		level: 6,
+		hp: null,
+		mp: null,
+		stats: {
+			st: 9,
+			vi: 5,
+			ma: 7,
+			ag: 9,
+			lu: 6
+		},
+		learnset: [
+			{
+				name: 'Garu',
+				level: 1
+			},
+			{
+				name: 'Dazzler',
+				level: 3
+			},
+			{
+				name: 'Needle Shot',
+				level: 4
+			},
+			{
+				name: 'Invitation to Sleep',
+				level: 6
+			},
+			{
+				name: 'Magaru',
+				level: 8
+			}
+		],
+		resistances: {
+			Wind: 'Null',
+			Earth: 'Weak',
+			Elec: 'Null',
+			Light: 'Resist',
+			Dark: 'Resist',
+			Sleep: 'Resist',
+			Confusion: 'Resist',
+			Charm: 'Resist'
+		},
+		game: 'p2',
+		alignment: null,
+		lore: 'Trojan war hero and protagonist of Homer\'s "Odyssey."',
+		origin: 'Greco-Roman',
+		user: 'Baofu',
+		stage: 1,
+		evoSkillName: null
 	},
 	{
 		name: 'Ogre',
@@ -31389,7 +32377,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		alignment: null,
 		lore: 'A Persona of another story. A poet skilled with the lyre. He tried to retrieve his wife from Hades, but she vanished when he looked back before reaching the surface.',
 		origin: 'Greco-Roman',
-		user: 'P3 Protagonist',
+		user: 'P3 Protagonist F',
 		stage: 1,
 		evoSkillName: null
 	},
@@ -34064,6 +35052,71 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		origin: 'Greco-Roman'
 	},
 	{
+		name: 'Prometheus - P2',
+		aliases: [
+			'Prometheus'
+		],
+		affinities: {
+			skillPotential: null,
+			inherit: null
+		},
+		arcana: 'Hanged',
+		race: 'Persona',
+		level: 61,
+		hp: null,
+		mp: null,
+		stats: {
+			st: 48,
+			vi: 55,
+			ma: 54,
+			ag: 45,
+			lu: 48
+		},
+		learnset: [
+			{
+				name: 'Zandyne',
+				level: 1
+			},
+			{
+				name: 'Makajamaon',
+				level: 3
+			},
+			{
+				name: 'Needle Shot',
+				level: 4
+			},
+			{
+				name: 'Makakaja',
+				level: 6
+			},
+			{
+				name: 'Maziodyne',
+				level: 7
+			},
+			{
+				name: 'Wiseman Snap',
+				level: 8
+			}
+		],
+		resistances: {
+			Phys: 'Resist',
+			Gun: 'Resist',
+			Elec: 'Weak',
+			Light: 'Null',
+			Dark: 'Null',
+			Sleep: 'Null',
+			Confusion: 'Null',
+			Charm: 'Null'
+		},
+		game: 'p2',
+		alignment: null,
+		lore: 'Bound to a rock for disobeying Zeus by giving man fire.',
+		origin: 'Greco-Roman',
+		user: 'Baofu',
+		stage: 2,
+		evoSkillName: null
+	},
+	{
 		name: 'Prometheus - P5',
 		aliases: [
 			'Prometheus'
@@ -35365,6 +36418,63 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		alignment: null,
 		lore: 'A bluish-tinged diamond that Napoleon Bonaparte had mounted to the pommel of his sword. It was named after the French Regent Philippe II, Duke of Orleans, who had purchased it in 1717.',
 		origin: 'European'
+	},
+	{
+		name: 'Rhadamanthus',
+		affinities: {
+			skillPotential: null,
+			inherit: null
+		},
+		arcana: 'Death',
+		race: 'Persona',
+		level: 1,
+		hp: null,
+		mp: null,
+		stats: {
+			st: 3,
+			vi: 4,
+			ma: 3,
+			ag: 2,
+			lu: 3
+		},
+		learnset: [
+			{
+				name: 'Aqua',
+				level: 1
+			},
+			{
+				name: 'Cleave',
+				level: 2
+			},
+			{
+				name: 'Mudo',
+				level: 4
+			},
+			{
+				name: 'Zan',
+				level: 6
+			},
+			{
+				name: 'Malaqua',
+				level: 8
+			}
+		],
+		resistances: {
+			Dark: 'Null',
+			Sleep: 'Null',
+			Confusion: 'Null',
+			Charm: 'Null'
+		},
+		game: 'p2',
+		alignment: {
+			major: 'Dark',
+			minor: 'Neutral'
+		},
+		lore: 'This son of Zeus and Europa is one of the three judges of Hades.',
+		origin: 'Greco-Roman',
+		user: 'Eikichi Mishina',
+		stage: 1,
+		evoSkillName: null
 	},
 	{
 		name: 'Robin Hood',
@@ -43046,6 +44156,125 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		origin: 'Hindu'
 	},
 	{
+		name: 'Venus',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Earth'
+		},
+		arcana: 'Lovers',
+		race: 'Persona',
+		level: 57,
+		hp: null,
+		mp: null,
+		stats: {
+			st: 45,
+			vi: 42,
+			ma: 47,
+			ag: 50,
+			lu: 43
+		},
+		learnset: [
+			{
+				name: 'Aquadyne',
+				level: 1
+			},
+			{
+				name: 'Mediarama',
+				level: 3
+			},
+			{
+				name: 'Mamagnadyne',
+				level: 4
+			},
+			{
+				name: 'Malaquadyne',
+				level: 6
+			},
+			{
+				name: 'Sexy Dance',
+				level: 7
+			},
+			{
+				name: 'Foamy Lover',
+				level: 8
+			}
+		],
+		resistances: {
+			Wind: 'Weak',
+			Earth: 'Null',
+			Ice: 'Weak',
+			Nuke: 'Resist',
+			Light: 'Null',
+			Dark: 'Weak',
+			Sleep: 'Null',
+			Confusion: 'Null',
+			Charm: 'Null'
+		},
+		game: 'p2',
+		alignment: null,
+		lore: 'Roman goddess of love and beauty.',
+		origin: 'Greco-Roman',
+		user: 'Lisa Silverman',
+		stage: 2,
+		evoSkillName: null
+	},
+	{
+		name: 'Vesta',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Fire'
+		},
+		arcana: 'Empress',
+		race: 'Persona',
+		level: 5,
+		hp: null,
+		mp: null,
+		stats: {
+			st: 7,
+			vi: 8,
+			ma: 5,
+			ag: 6,
+			lu: 5
+		},
+		learnset: [
+			{
+				name: 'Agi',
+				level: 1
+			},
+			{
+				name: 'Dormina',
+				level: 3
+			},
+			{
+				name: 'Zio',
+				level: 5
+			},
+			{
+				name: 'Maragi',
+				level: 8
+			}
+		],
+		resistances: {
+			Fire: 'Repel',
+			Water: 'Weak',
+			Ice: 'Weak',
+			Nuke: 'Resist',
+			Sleep: 'Resist',
+			Confusion: 'Resist',
+			Charm: 'Resist'
+		},
+		game: 'p2',
+		alignment: {
+			major: 'Light',
+			minor: 'Chaos'
+		},
+		lore: 'Roman goddess of the hearth. Guardian of home and family.',
+		origin: 'Greco-Roman',
+		user: 'Yukino Mayuzumi',
+		stage: 1,
+		evoSkillName: null
+	},
+	{
 		name: 'Vetala',
 		affinities: {
 			skillPotential: {
@@ -43697,6 +44926,68 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		},
 		lore: 'A ferocious giant dragon of Hindu mythology. Its name means "obstacle," and it\'s said to block the rivers in the sky, bringing drought.\nWhen Indra, god of thunder, defeats him, the earth\'s rains will return. However, Vritra will rise again the following year. The battle between the two is said to continue for eternity.',
 		origin: 'Hindu'
+	},
+	{
+		name: 'Vulcanus',
+		affinities: {
+			skillPotential: null,
+			inherit: 'Fire'
+		},
+		arcana: 'Sun',
+		race: 'Persona',
+		level: 1,
+		hp: null,
+		mp: null,
+		stats: {
+			st: 4,
+			vi: 3,
+			ma: 3,
+			ag: 3,
+			lu: 4
+		},
+		learnset: [
+			{
+				name: 'Agi',
+				level: 1
+			},
+			{
+				name: 'Patra',
+				level: 2
+			},
+			{
+				name: 'Flame Cut',
+				level: 4
+			},
+			{
+				name: 'Taunt - Persona',
+				level: 6
+			},
+			{
+				name: 'Maragi',
+				level: 8
+			}
+		],
+		resistances: {
+			Fire: 'Null',
+			Water: 'Weak',
+			Ice: 'Weak',
+			Nuke: 'Resist',
+			Light: 'Resist',
+			Dark: 'Resist',
+			Sleep: 'Resist',
+			Confusion: 'Resist',
+			Charm: 'Resist'
+		},
+		game: 'p2',
+		alignment: {
+			major: 'Light',
+			minor: 'Law'
+		},
+		lore: 'Roman god of smithery. Patron of artists and inventors.',
+		origin: 'Greco-Roman',
+		user: 'Tatsuya Suou',
+		stage: 1,
+		evoSkillName: null
 	},
 	{
 		name: 'Wendigo',
@@ -44682,6 +45973,66 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		},
 		lore: 'Semi-divine beings in Hindu mythology.\nThough they were once worshipped by the Dravidians as goddesses of the harvest, they became interpreted as demons with the spread of Hinduism and the two clashing ideologies. They are depicted as naked women with voluptuous bodies.',
 		origin: 'Hindu'
+	},
+	{
+		name: 'Yamaoka',
+		affinities: {
+			skillPotential: null,
+			inherit: null
+		},
+		arcana: 'Hierophant',
+		race: 'Persona',
+		level: 75,
+		hp: null,
+		mp: null,
+		stats: {
+			st: 56,
+			vi: 54,
+			ma: 72,
+			ag: 63,
+			lu: 66
+		},
+		learnset: [
+			{
+				name: 'Zandyne',
+				level: 1
+			},
+			{
+				name: 'Lullaby',
+				level: 2
+			},
+			{
+				name: 'Arrow Rain',
+				level: 3
+			},
+			{
+				name: 'Diarahan',
+				level: 4
+			},
+			{
+				name: 'Mahama',
+				level: 5
+			},
+			{
+				name: 'Guardian Hammer',
+				level: 8
+			}
+		],
+		resistances: {
+			Wind: 'Null',
+			Elec: 'Null',
+			Light: 'Null',
+			Sleep: 'Null',
+			Confusion: 'Null',
+			Charm: 'Null'
+		},
+		game: 'p2',
+		alignment: null,
+		lore: 'Nate\'s butler. He still looks after him, even after death.',
+		origin: 'ATLUS Original',
+		user: 'Kei Nanjo',
+		stage: 2,
+		evoSkillName: null
 	},
 	{
 		name: 'Yamata-no-Orochi',

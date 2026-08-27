@@ -486,6 +486,40 @@ const skillData: AnySkillData[] = [
 		criteria: null
 	},
 	{
+		name: 'Aqua',
+		affinity: 'Water',
+		type: 'ATTACK',
+		accuracy: 98,
+		cost: {
+			stat: 'MP',
+			amount: 10
+		},
+		power: {
+			amount: 130,
+			display: 'Weak',
+			type: 'Magic'
+		},
+		target: 'One Foe',
+		series: 'persona'
+	},
+	{
+		name: 'Aquadyne',
+		affinity: 'Water',
+		type: 'ATTACK',
+		accuracy: 98,
+		cost: {
+			stat: 'MP',
+			amount: 35
+		},
+		power: {
+			amount: 215,
+			display: 'Heavy',
+			type: 'Magic'
+		},
+		target: 'One Foe',
+		series: 'persona'
+	},
+	{
 		name: 'Aramasa',
 		affinity: 'Phys',
 		type: 'ATTACK',
@@ -547,6 +581,9 @@ const skillData: AnySkillData[] = [
 	},
 	{
 		name: 'Arrow Rain',
+		aliases: [
+			'Rain of Arrows'
+		],
 		affinity: 'Phys',
 		type: 'ATTACK',
 		accuracy: 75,
@@ -603,6 +640,10 @@ const skillData: AnySkillData[] = [
 	},
 	{
 		name: 'Atomic Flare',
+		aliases: [
+			'Nova Cyther',
+			'Nova Kaiser'
+		],
 		affinity: 'Nuke',
 		type: 'ATTACK',
 		accuracy: 98,
@@ -1056,6 +1097,9 @@ const skillData: AnySkillData[] = [
 	},
 	{
 		name: 'Blast Arrow',
+		aliases: [
+			'Sonic Bullet'
+		],
 		affinity: 'Gun',
 		type: 'ATTACK',
 		accuracy: 98,
@@ -1197,6 +1241,30 @@ const skillData: AnySkillData[] = [
 		target: 'Self',
 		cost: null,
 		description: 'Increases Critical Rate.'
+	},
+	{
+		name: 'Bloody Honeymoon',
+		affinity: 'Water',
+		type: 'ATTACK',
+		accuracy: 98,
+		unique: true,
+		cost: {
+			stat: 'MP',
+			amount: 76
+		},
+		power: {
+			amount: 170,
+			display: 'Heavy',
+			type: 'Magic'
+		},
+		ailments: {
+			names: [
+				'Confusion'
+			],
+			chance: 72
+		},
+		target: 'All Foes',
+		series: 'persona'
 	},
 	{
 		name: 'Boogie-Woogie',
@@ -1760,6 +1828,9 @@ const skillData: AnySkillData[] = [
 	},
 	{
 		name: 'Cleave',
+		aliases: [
+			'Straight Slash'
+		],
 		affinity: 'Phys',
 		type: 'ATTACK',
 		accuracy: 90,
@@ -1908,6 +1979,9 @@ const skillData: AnySkillData[] = [
 	},
 	{
 		name: 'Cosmic Flare',
+		aliases: [
+			'Heat Kaiser'
+		],
 		affinity: 'Nuke',
 		type: 'ATTACK',
 		accuracy: 95,
@@ -1984,6 +2058,24 @@ const skillData: AnySkillData[] = [
 		series: 'persona'
 	},
 	{
+		name: 'Crescent Mirror',
+		affinity: 'Almighty',
+		type: 'ATTACK',
+		unique: true,
+		accuracy: 98,
+		cost: {
+			stat: 'MP',
+			amount: 39
+		},
+		power: {
+			amount: 175,
+			display: 'Severe',
+			type: 'Magic'
+		},
+		target: 'All Foes',
+		series: 'persona'
+	},
+	{
 		name: 'Critical Aura',
 		aliases: [
 			'Critical Eye'
@@ -2041,6 +2133,33 @@ const skillData: AnySkillData[] = [
 		target: 'Self',
 		cost: null,
 		description: 'Increases Critical damage, but normal damage decreases.'
+	},
+	{
+		name: 'Cross Fortune',
+		affinity: 'Wind',
+		type: 'ATTACK',
+		unique: true,
+		accuracy: 98,
+		cost: {
+			stat: 'MP',
+			amount: 76
+		},
+		power: {
+			amount: 160,
+			display: 'Heavy',
+			type: 'Magic'
+		},
+		ailments: {
+			names: [
+				'Sleep',
+				'Confusion',
+				'Charm',
+				'Rage'
+			],
+			chance: 96
+		},
+		target: 'All Foes',
+		series: 'persona'
 	},
 	{
 		name: 'Cross Slash',
@@ -2304,6 +2423,9 @@ const skillData: AnySkillData[] = [
 	},
 	{
 		name: 'Dazzler',
+		aliases: [
+			'Illuzone'
+		],
 		affinity: 'Ailment',
 		type: 'AILMENT',
 		target: 'One Foe',
@@ -3840,6 +3962,23 @@ const skillData: AnySkillData[] = [
 		cost: 30
 	},
 	{
+		name: 'Fiery Fury',
+		affinity: 'Fire',
+		type: 'ATTACK',
+		accuracy: 98,
+		cost: {
+			stat: 'MP',
+			amount: 50
+		},
+		power: {
+			amount: 155,
+			display: 'Heavy',
+			type: 'Physical'
+		},
+		target: 'All Foes',
+		series: 'persona'
+	},
+	{
 		name: 'Fighting Spirit',
 		affinity: 'Support',
 		type: 'CHARGE',
@@ -3999,6 +4138,49 @@ const skillData: AnySkillData[] = [
 		description: 'Take the blow, but decreases damage by half.'
 	},
 	{
+		name: 'Flame Cut',
+		affinity: 'Fire',
+		type: 'ATTACK',
+		accuracy: 98,
+		cost: {
+			stat: 'MP',
+			amount: 25
+		},
+		power: {
+			amount: 90,
+			display: 'Weak',
+			type: 'Physical'
+		},
+		min: 2,
+		max: 2,
+		target: 'One Foe',
+		series: 'persona'
+	},
+	{
+		name: 'Flare Shot',
+		affinity: 'Gun',
+		type: 'ATTACK',
+		unique: true,
+		accuracy: 98,
+		cost: {
+			stat: 'MP',
+			amount: 7
+		},
+		power: {
+			amount: 75,
+			display: 'Weak',
+			type: 'Physical'
+		},
+		ailments: {
+			names: [
+				'Mirage'
+			],
+			chance: 68
+		},
+		target: 'One Foe',
+		series: 'smt'
+	},
+	{
 		name: 'Flash Bomb',
 		affinity: 'Phys',
 		type: 'ATTACK',
@@ -4041,6 +4223,32 @@ const skillData: AnySkillData[] = [
 		series: 'smt'
 	},
 	{
+		name: 'Foamy Lover',
+		affinity: 'Earth',
+		type: 'ATTACK',
+		unique: true,
+		accuracy: 98,
+		cost: {
+			stat: 'MP',
+			amount: 72
+		},
+		power: {
+			amount: 85,
+			display: 'Heavy',
+			type: 'Magic'
+		},
+		ailments: {
+			names: [
+				'Charm'
+			],
+			chance: 74
+		},
+		min: 2,
+		max: 2,
+		target: 'All Foes',
+		series: 'persona'
+	},
+	{
 		name: 'Fog Breath',
 		affinity: 'Support',
 		type: 'SUPPORT',
@@ -4054,6 +4262,10 @@ const skillData: AnySkillData[] = [
 	},
 	{
 		name: 'Fogna',
+		aliases: [
+			'Mirage',
+			'Fata Morgana'
+		],
 		affinity: 'Ailment',
 		type: 'AILMENT',
 		target: 'All Foes',
@@ -4793,6 +5005,30 @@ const skillData: AnySkillData[] = [
 		amount: 100,
 		inactive: true,
 		stat: 'EXP'
+	},
+	{
+		name: 'Guardian Hammer',
+		affinity: 'Elec',
+		type: 'ATTACK',
+		unique: true,
+		accuracy: 98,
+		cost: {
+			stat: 'MP',
+			amount: 45
+		},
+		power: {
+			amount: 170,
+			display: 'Severe',
+			type: 'Magic'
+		},
+		ailments: {
+			names: [
+				'Shock'
+			],
+			chance: 30
+		},
+		target: 'All Foes',
+		series: 'persona'
 	},
 	{
 		name: 'Guardian\'s Eye',
@@ -5979,6 +6215,17 @@ const skillData: AnySkillData[] = [
 		]
 	},
 	{
+		name: 'Invitation to Sleep',
+		affinity: 'Ailment',
+		type: 'AILMENT',
+		target: 'All Foes',
+		cost: 20,
+		ailments: [
+			'Sleep'
+		],
+		chance: 52
+	},
+	{
 		name: 'Iron Judgement',
 		affinity: 'Phys',
 		type: 'ATTACK',
@@ -6153,6 +6400,16 @@ const skillData: AnySkillData[] = [
 		},
 		target: 'Random Foes',
 		series: 'smt'
+	},
+	{
+		name: 'Justice Shot',
+		affinity: 'Gun',
+		type: 'SET',
+		unique: true,
+		target: 'One Foe',
+		amount: 1,
+		cost: 39,
+		chance: 48
 	},
 	{
 		name: 'Kamikaze',
@@ -6711,6 +6968,9 @@ const skillData: AnySkillData[] = [
 	},
 	{
 		name: 'Lullaby',
+		aliases: [
+			'Hypnotic Wave'
+		],
 		affinity: 'Ailment',
 		type: 'AILMENT',
 		target: 'All Foes',
@@ -6765,7 +7025,9 @@ const skillData: AnySkillData[] = [
 	{
 		name: 'Lunge',
 		aliases: [
-			'Bash'
+			'Bash',
+			'Feral Claw',
+			'Scratch'
 		],
 		affinity: 'Phys',
 		type: 'ATTACK',
@@ -6864,6 +7126,9 @@ const skillData: AnySkillData[] = [
 	},
 	{
 		name: 'Mabufula',
+		aliases: [
+			'Absolute Zero'
+		],
 		affinity: 'Ice',
 		type: 'ATTACK',
 		accuracy: 98,
@@ -7216,6 +7481,44 @@ const skillData: AnySkillData[] = [
 		series: 'smt'
 	},
 	{
+		name: 'Magna',
+		affinity: 'Earth',
+		type: 'ATTACK',
+		accuracy: 98,
+		cost: {
+			stat: 'MP',
+			amount: 10
+		},
+		power: {
+			amount: 130,
+			display: 'Weak',
+			type: 'Magic'
+		},
+		target: 'One Foe',
+		series: 'persona'
+	},
+	{
+		name: 'Magnara',
+		aliases: [
+			'Quake',
+			'Magnus'
+		],
+		affinity: 'Earth',
+		type: 'ATTACK',
+		accuracy: 98,
+		cost: {
+			stat: 'MP',
+			amount: 20
+		},
+		power: {
+			amount: 160,
+			display: 'Medium',
+			type: 'Magic'
+		},
+		target: 'One Foe',
+		series: 'persona'
+	},
+	{
 		name: 'Mahama',
 		affinity: 'Light',
 		type: 'ATTACK',
@@ -7302,7 +7605,8 @@ const skillData: AnySkillData[] = [
 	{
 		name: 'Makajama',
 		aliases: [
-			'Makajam'
+			'Makajam',
+			'Mafui'
 		],
 		affinity: 'Ailment',
 		type: 'AILMENT',
@@ -7316,7 +7620,10 @@ const skillData: AnySkillData[] = [
 	{
 		name: 'Makajamaon',
 		aliases: [
-			'Foolish Whisper'
+			'Foolish Whisper',
+			'Summon Spirit',
+			'Summon Spirits',
+			'Magic Seal'
 		],
 		affinity: 'Ailment',
 		type: 'AILMENT',
@@ -7391,6 +7698,9 @@ const skillData: AnySkillData[] = [
 	},
 	{
 		name: 'Makouha',
+		aliases: [
+			'Holy Light'
+		],
 		affinity: 'Light',
 		type: 'ATTACK',
 		accuracy: 98,
@@ -7401,6 +7711,112 @@ const skillData: AnySkillData[] = [
 		power: {
 			amount: 95,
 			display: 'Weak',
+			type: 'Magic'
+		},
+		target: 'All Foes',
+		series: 'persona'
+	},
+	{
+		name: 'Malaqua',
+		affinity: 'Water',
+		type: 'ATTACK',
+		accuracy: 98,
+		cost: {
+			stat: 'MP',
+			amount: 15
+		},
+		power: {
+			amount: 95,
+			display: 'Weak',
+			type: 'Magic'
+		},
+		target: 'All Foes',
+		series: 'persona'
+	},
+	{
+		name: 'Malaquadyne',
+		affinity: 'Water',
+		type: 'ATTACK',
+		accuracy: 98,
+		cost: {
+			stat: 'MP',
+			amount: 50
+		},
+		power: {
+			amount: 155,
+			display: 'Heavy',
+			type: 'Magic'
+		},
+		target: 'All Foes',
+		series: 'persona'
+	},
+	{
+		name: 'Malaques',
+		affinity: 'Water',
+		type: 'ATTACK',
+		accuracy: 98,
+		cost: {
+			stat: 'MP',
+			amount: 30
+		},
+		power: {
+			amount: 120,
+			display: 'Medium',
+			type: 'Magic'
+		},
+		target: 'All Foes',
+		series: 'persona'
+	},
+	{
+		name: 'Mamagna',
+		affinity: 'Earth',
+		type: 'ATTACK',
+		accuracy: 98,
+		cost: {
+			stat: 'MP',
+			amount: 15
+		},
+		power: {
+			amount: 95,
+			display: 'Weak',
+			type: 'Magic'
+		},
+		target: 'All Foes',
+		series: 'persona'
+	},
+	{
+		name: 'Mamagnadyne',
+		affinity: 'Earth',
+		type: 'ATTACK',
+		accuracy: 98,
+		cost: {
+			stat: 'MP',
+			amount: 50
+		},
+		power: {
+			amount: 155,
+			display: 'Heavy',
+			type: 'Magic'
+		},
+		target: 'All Foes',
+		series: 'persona'
+	},
+	{
+		name: 'Mamagnara',
+		aliases: [
+			'Quake All',
+			'Maha Magnus'
+		],
+		affinity: 'Earth',
+		type: 'ATTACK',
+		accuracy: 98,
+		cost: {
+			stat: 'MP',
+			amount: 30
+		},
+		power: {
+			amount: 120,
+			display: 'Medium',
 			type: 'Magic'
 		},
 		target: 'All Foes',
@@ -7870,6 +8286,9 @@ const skillData: AnySkillData[] = [
 	},
 	{
 		name: 'Maziodyne',
+		aliases: [
+			'Baptism by Thunder'
+		],
 		affinity: 'Elec',
 		type: 'ATTACK',
 		accuracy: 98,
@@ -7920,6 +8339,9 @@ const skillData: AnySkillData[] = [
 	},
 	{
 		name: 'Mediarama',
+		aliases: [
+			'Heartfelt Prayer'
+		],
 		affinity: 'Recovery',
 		type: 'RECOVERY',
 		target: 'All Allies',
@@ -7983,6 +8405,9 @@ const skillData: AnySkillData[] = [
 	},
 	{
 		name: 'Megido',
+		aliases: [
+			'Gryva'
+		],
 		affinity: 'Almighty',
 		type: 'ATTACK',
 		accuracy: 98,
@@ -8774,6 +9199,9 @@ const skillData: AnySkillData[] = [
 	},
 	{
 		name: 'Needle Shot',
+		aliases: [
+			'Ninety Nine Needles'
+		],
 		affinity: 'Gun',
 		type: 'ATTACK',
 		accuracy: 98,
@@ -9213,6 +9641,17 @@ const skillData: AnySkillData[] = [
 		chance: 70
 	},
 	{
+		name: 'Omni Dimension',
+		affinity: 'Ailment',
+		type: 'AILMENT',
+		target: 'One Foe',
+		ailments: [
+			'Death'
+		],
+		chance: 20,
+		cost: 51
+	},
+	{
 		name: 'One-shot Kill',
 		affinity: 'Gun',
 		type: 'ATTACK',
@@ -9401,7 +9840,8 @@ const skillData: AnySkillData[] = [
 	{
 		name: 'Patra',
 		aliases: [
-			'Amrita Drop'
+			'Amrita Drop',
+			'Refresh Ring'
 		],
 		affinity: 'Recovery',
 		type: 'RECOVERY',
@@ -10410,6 +10850,24 @@ const skillData: AnySkillData[] = [
 		description: 'Recover 5% SP after battle (party).'
 	},
 	{
+		name: 'Release Jail',
+		affinity: 'Ice',
+		type: 'ATTACK',
+		unique: true,
+		accuracy: 98,
+		cost: {
+			stat: 'MP',
+			amount: 45
+		},
+		power: {
+			amount: 170,
+			display: 'Severe',
+			type: 'Magic'
+		},
+		target: 'All Foes',
+		series: 'persona'
+	},
+	{
 		name: 'Re Patra',
 		affinity: 'Recovery',
 		type: 'RECOVERY',
@@ -11276,7 +11734,9 @@ const skillData: AnySkillData[] = [
 	{
 		name: 'Sexy Dance',
 		aliases: [
-			'Brain Jack'
+			'Brain Jack',
+			'Alluring Mazurka',
+			'Glamorous Dance'
 		],
 		affinity: 'Ailment',
 		type: 'AILMENT',
@@ -12578,6 +13038,30 @@ const skillData: AnySkillData[] = [
 		series: 'smt'
 	},
 	{
+		name: 'Thunder Inferno',
+		affinity: 'Fire',
+		type: 'ATTACK',
+		unique: true,
+		accuracy: 98,
+		cost: {
+			stat: 'MP',
+			amount: 42
+		},
+		power: {
+			amount: 155,
+			display: 'Heavy',
+			type: 'Magic'
+		},
+		ailments: {
+			names: [
+				'Shock'
+			],
+			chance: 50
+		},
+		target: 'All Foes',
+		series: 'persona'
+	},
+	{
 		name: 'Thunder Reign',
 		affinity: 'Elec',
 		type: 'ATTACK',
@@ -12876,6 +13360,24 @@ const skillData: AnySkillData[] = [
 			type: 'Physical'
 		},
 		target: 'One Foe',
+		series: 'persona'
+	},
+	{
+		name: 'Twinkle Nebula',
+		affinity: 'Wind',
+		type: 'ATTACK',
+		unique: true,
+		accuracy: 98,
+		cost: {
+			stat: 'MP',
+			amount: 38
+		},
+		power: {
+			amount: 170,
+			display: 'Severe',
+			type: 'Magic'
+		},
+		target: 'All Foes',
 		series: 'persona'
 	},
 	{
@@ -13448,6 +13950,25 @@ const skillData: AnySkillData[] = [
 		series: 'smt'
 	},
 	{
+		name: 'Wind Slash',
+		affinity: 'Wind',
+		type: 'ATTACK',
+		accuracy: 98,
+		cost: {
+			stat: 'MP',
+			amount: 25
+		},
+		power: {
+			amount: 90,
+			display: 'Weak',
+			type: 'Physical'
+		},
+		min: 2,
+		max: 2,
+		target: 'One Foe',
+		series: 'persona'
+	},
+	{
 		name: 'Wind Wall',
 		aliases: [
 			'Green Wall'
@@ -13471,6 +13992,24 @@ const skillData: AnySkillData[] = [
 		auto: [
 			'Accuracy/Evasion'
 		]
+	},
+	{
+		name: 'Wiseman Snap',
+		affinity: 'Gun',
+		type: 'ATTACK',
+		unique: true,
+		accuracy: 98,
+		cost: {
+			stat: 'MP',
+			amount: 38
+		},
+		power: {
+			amount: 280,
+			display: 'Severe',
+			type: 'Physical'
+		},
+		target: 'One Foe',
+		series: 'persona'
 	},
 	{
 		name: 'Witness Me',

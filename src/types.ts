@@ -30,10 +30,8 @@ export interface AttackAilments {
 /** Ailments' names (adjusted for consistency with SMT5) */
 export type AilmentName = 'Bind' | 'Brand' | 'Burn' | 'Charm' | 'Confusion' | 'Daze' | 'Death' | 'Despair' | 'Dizzy' | 'Down' | 'Enervate' | 'Exhaust' | 'Fear' | 'Freeze' | 'Hunger' | 'Mirage' | 'Mud' | 'Poison' | 'Rage' | 'Seal' | 'Shock' | 'Stone' | 'Stun' | 'Shroud' | 'Sick' | 'Sleep';
 
-/** Resistances to ailments */
-export type AilResistance = 'Resist' | 'Null';
 /* Resistances to damaging affinities */
-export type Resistance = 'Weak' | AilResistance | 'Repel' | 'Drain';
+export type Resistance = 'Weak' | 'Resist' | 'Null' | 'Repel' | 'Drain';
 /* Resistances created by DefensiveSkill instances */
 export type DefensiveSKillResistance = Exclude<Resistance, 'Weak'>;
 
@@ -101,7 +99,7 @@ export interface DemonAffinities<PersonaBased extends boolean = boolean> {
 export type DemonOrigin = 'Aboriginal' | 'Abrahamic' | 'African' | 'Arabian' | 'ATLUS Original' | 'Aztec' | 'Balinese' | 'Buddhist' | 'Buryat' | 'Canaanite' | 'Celtic' | 'Chinese' | 'Dominican' | 'Egyptian' | 'European' | 'Filipino' | 'Gnostic' | 'Greco-Roman' | 'Haitian' | 'Hawaiian' | 'Hindu' | 'Incan' | 'Japanese' | 'Lithuanian' | 'Lovecraftian' | 'Historical' | 'Mayan' | 'Mesopotamian' | 'Modern Fiction' | 'Nepali' | 'Norse' | 'North American' | 'Polynesian' | 'Puebloan' | 'Puerto Rican' | 'Romani' | 'Scottish' | 'Slavic' | 'South American' | 'Sri Lankan' | 'Universal' | 'Zoroastrian';
 
 /** A demon's ailment and affinity resistances */
-export type DemonResistances = Partial<Record<DamagingAffinity, Resistance> & Record<AilmentName, 'Weak' | AilResistance>>;
+export type DemonResistances = Partial<Record<DamagingAffinity, Resistance> & Record<AilmentName, 'Weak' | Resistance>>;
 
 /** A skill that a demon learns via leveling up */
 export interface DemonSkill {
@@ -169,11 +167,11 @@ export interface DemonAlignment {
 export type NumberOrPercent = number | `${number}%`;
 
 /** Affinities exclusive to the Persona series */
-export type PersonaAffinity = 'Gun' | 'Wind' | 'Psy' | 'Nuke';
+export type PersonaAffinity = 'Water' | 'Wind' | 'Earth' | 'Psy' | 'Nuke';
 /** Affinities exclusive to the mainline Shin Megami Tensei series */
 export type SMTAffinity = 'Force';
 /** Affinities used by demons and skills */
-export type AnyAffinity = 'Phys' | 'Fire' | 'Ice' | 'Elec' | 'Light' | 'Dark' | 'Almighty' | 'Recovery' | 'Ailment' | 'Support' | 'Passive' | 'Special' | SMTAffinity | PersonaAffinity;
+export type AnyAffinity = 'Phys' | 'Gun' | 'Fire' | 'Ice' | 'Elec' | 'Light' | 'Dark' | 'Almighty' | 'Recovery' | 'Ailment' | 'Support' | 'Passive' | 'Special' | SMTAffinity | PersonaAffinity;
 /** Affinities used by damage-dealing skills */
 export type DamagingAffinity = Exclude<AnyAffinity, 'Recovery' | 'Ailment' | 'Support' | 'Passive' | 'Special'>;
 /** A damaging affinity or all damaging affinities */
@@ -193,14 +191,14 @@ export type EvasionAffinity = OneOrAllDamagingAffinities | 'Crit/Magic' | 'Magic
 /** Affinities used by MiscSkill instances */
 export type MiscAffinity = 'Almighty' | 'Recovery' | 'Support' | 'Special' | 'Passive';
 /** Affinities used by SetSkill instances */
-export type SetAffinity = LightDark | 'Almighty';
+export type SetAffinity = 'Gun' | LightDark | 'Almighty';
 /** Affinities used by SMTCounterSkill instances */
 export type SMTCounterAffinity = 'Phys' | 'Elec' | 'Dark' | 'Almighty';
 /** Affinities used by WallSkill instances */
 export type WallAffinity = Exclude<DamagingAffinity, SMTAffinity | 'Phys' | 'Gun' | LightDark | 'Almighty'>;
 
 /** Mainline Persona games */
-export type PersonaGame = 'p3' | 'p4' | 'p5';
+export type PersonaGame = 'p2' | 'p3' | 'p4' | 'p5';
 /** Mainline Shin Megami Tensei games */
 export type SMTGame = 'smt3' | 'smt4' | 'smt5';
 /** Spin-offs of SMT games */
@@ -235,7 +233,7 @@ export type Series = 'persona' | 'smt';
 export type SiphonCriteria = 'Ailment' | 'Weakness/Critical' | 'Drain';
 
 /** The effectiveness of a demon's skills based on the skills' affinities */
-export type SkillPotential = Record<Exclude<AnyAffinity, PersonaAffinity | 'Passive' | 'Special'>, number> & { Gun?: number };
+export type SkillPotential = Record<Exclude<AnyAffinity, PersonaAffinity | 'Gun' | 'Passive' | 'Special'>, number> & { Gun?: number };
 
 /** Skill instances' types */
 export type SkillType = 'AILBOOST' | 'AILDEFENSIVE' | 'AILMENT' | 'ATTACK' | 'AUTOBUFF' | 'BARRIER' | 'BARRIERBREAK' | 'BOOST' | 'BREAK' | 'CHARGE' | 'CRIT' | 'CRITBOOST' | 'DEFENSIVE' | 'ENDURE' | 'EVASION' | 'INSTAKILLBOOST' | 'MASTER' | 'MISC' | 'NAVI' | 'PERSONACOUNTER' | 'POSTBATTLE' | 'RECOVERY' | 'REGEN' | 'SET' | 'SIPHON' | 'SMTCOUNTER' | 'SPRING' | 'SUMMON' | 'SUPPORT' | 'SUSCEPTIBILITY' | 'TAUNT' | 'WALL';
