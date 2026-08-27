@@ -657,9 +657,6 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 	},
 	{
 		name: 'Ai-ho',
-		aliases: [
-			'B. Hawaii Frost'
-		],
 		affinities: {
 			skillPotential: null,
 			inherit: 'Ice'
