@@ -1,4 +1,4 @@
-import type { AnyGame, Arcana, DemonAffinities, DemonAlignment, DemonOrigin, DemonResistances, DemonSkill, DemonStats, If, PersonaGame, PersonaRace, SMTRace, Stage } from './types.js';
+import type { AnyGame, AnyRace, Arcana, DemonAffinities, DemonAlignment, DemonOrigin, DemonResistances, DemonSkill, DemonStats, If, PersonaGame, SMTRace, Stage } from './types.js';
 import { type AnySkill, Skill } from './skill.js';
 import type { DemonData, PersonaData } from './dataTypes.js';
 import { formatPossessive, normalize } from '@squiddleton/util';
@@ -6,7 +6,7 @@ import { MegatenError } from './error.js';
 import demonData from './demonData.js';
 
 function isPersona(demon: Demon | DemonData): demon is Persona {
-	return demon.race === 'Persona';
+	return 'user' in demon;
 }
 function mapByDevName<T extends Demon>(obj: T): [string, T] {
 	return [obj.devName, obj];
@@ -26,7 +26,7 @@ export class Demon<PersonaBased extends boolean = boolean> implements DemonData<
 	/** The demon's Arcana in Persona titles, or null if unknown */
 	arcana: If<PersonaBased, Arcana, Arcana | null>;
 	/** The demon's race in mainline Shin Megami Tensei titles, or null if unknown */
-	race: If<PersonaBased, PersonaRace, SMTRace | null>;
+	race: If<PersonaBased, AnyRace, SMTRace | null>;
 	/** The demon's initial level */
 	level: number;
 	/** The demon's initial HP */
@@ -71,14 +71,19 @@ export class Demon<PersonaBased extends boolean = boolean> implements DemonData<
 		return isPersona(this);
 	}
 
+	/** Whether this demon was given a fake race related to its Persona status */
+	hasPersonaRace(): boolean {
+		return this.race !== null && ['Persona', 'Picaro', 'Treasure'].includes(this.race);
+	}
+
 	/** Whether the demon is exclusive to Persona games */
 	isPersonaBased(): this is Demon<true> {
-		return this.race !== null && ['Persona', 'Picaro', 'Treasure'].includes(this.race);
+		return this.isPersona() || (this.race !== null && this.hasPersonaRace());
 	}
 
 	/** Returns a string in "(Race) (Name)" format, or the name if the race is unknown */
 	toString(): string {
-		return this.race !== null && !this.isPersonaBased() ? `${this.race} ${this.name}` : this.name;
+		return this.race !== null && !this.hasPersonaRace() ? `${this.race} ${this.name}` : this.name;
 	}
 
 	/** An array of every Demon and Persona instance */
@@ -142,10 +147,10 @@ export class Persona extends Demon<true> implements PersonaData {
 	}
 
 	/**
-	 * Returns a string in "(User)'s (Name)" format
+	 * Returns a string in "(User)'s (Name)" format, or "(User)'s (Race) Name" for early Personas with given races
 	 */
-	toString() {
-		return `${formatPossessive(this.user)} ${this.name}`;
+	toString(): string {
+		return `${formatPossessive(this.user)} ${this.hasPersonaRace() ? this.name : super.toString()}`;
 	}
 
 	/** An array of every Persona instance */

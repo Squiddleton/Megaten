@@ -11984,7 +11984,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			inherit: null
 		},
 		arcana: 'Lovers',
-		race: 'Persona',
+		race: 'Megami',
 		level: 1,
 		hp: null,
 		mp: null,
@@ -16577,7 +16577,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			inherit: 'Wind'
 		},
 		arcana: 'Fortune',
-		race: 'Persona',
+		race: 'Deity',
 		level: 42,
 		hp: null,
 		mp: null,
@@ -36423,7 +36423,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			inherit: null
 		},
 		arcana: 'Death',
-		race: 'Persona',
+		race: 'Reaper',
 		level: 1,
 		hp: null,
 		mp: null,
@@ -44222,7 +44222,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			inherit: 'Fire'
 		},
 		arcana: 'Empress',
-		race: 'Persona',
+		race: 'Lady',
 		level: 5,
 		hp: null,
 		mp: null,
@@ -44931,7 +44931,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			inherit: 'Fire'
 		},
 		arcana: 'Sun',
-		race: 'Persona',
+		race: 'Deity',
 		level: 1,
 		hp: null,
 		mp: null,

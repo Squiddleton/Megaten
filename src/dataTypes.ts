@@ -1,4 +1,4 @@
-import type { AilBoostCriteria, AilmentFlag, AilmentName, AilmentTarget, AnyAffinity, AnyGame, Arcana, AttackAilments, AttackCost, AttackFlag, AttackPower, AttackTarget, AutoBuffTarget, Barrier, BarrierTarget, BasePower, BoostAffinity, BoostStack, BreakAffinity, Buff, BuffRecord, BuffValue, Charge, ChargeTarget, CritBoostCriteria, CritTarget, DamagingAffinity, DefensiveAffinity, DefensiveSKillResistance, DemonAffinities, DemonAlignment, DemonOrigin, DemonResistances, DemonSkill, DemonStats, EndureCriteria, EvasionAffinity, EvasionBoostCriteria, HPMP, If, LightDark, MiscAffinity, NumberOrPercent, PersonaGame, PersonaRace, PostBattleStat, RecoveryAmount, RecoveryFlag, RecoveryTarget, RegenCriteria, RegenStat, Resistance, SMTCounterAffinity, SMTRace, Series, SetAffinity, SetTarget, SiphonCriteria, SkillPotential, SkillType, Stage, SupportAutoEffect, SupportFlag, SupportTarget, SusceptibilityTarget, Target, WallAffinity } from './types.js';
+import type { AilBoostCriteria, AilmentFlag, AilmentName, AilmentTarget, AnyAffinity, AnyGame, AnyRace, Arcana, AttackAilments, AttackCost, AttackFlag, AttackPower, AttackTarget, AutoBuffTarget, Barrier, BarrierTarget, BasePower, BoostAffinity, BoostStack, BreakAffinity, Buff, BuffRecord, BuffValue, Charge, ChargeTarget, CritBoostCriteria, CritTarget, DamagingAffinity, DefensiveAffinity, DefensiveSKillResistance, DemonAffinities, DemonAlignment, DemonOrigin, DemonResistances, DemonSkill, DemonStats, EndureCriteria, EvasionAffinity, EvasionBoostCriteria, HPMP, If, LightDark, MiscAffinity, NumberOrPercent, PersonaGame, PostBattleStat, RecoveryAmount, RecoveryFlag, RecoveryTarget, RegenCriteria, RegenStat, Resistance, SMTCounterAffinity, SMTRace, Series, SetAffinity, SetTarget, SiphonCriteria, SkillPotential, SkillType, Stage, SupportAutoEffect, SupportFlag, SupportTarget, SusceptibilityTarget, Target, WallAffinity } from './types.js';
 import type { BattleThemes } from './music.js';
 
 /** Data used for constructing a Demon instance */
@@ -7,7 +7,7 @@ export interface DemonData<PersonaBased extends boolean = boolean> {
 	aliases?: string[];
 	affinities: DemonAffinities<PersonaBased>;
 	arcana: If<PersonaBased, Arcana, Arcana | null>;
-	race: If<PersonaBased, PersonaRace, SMTRace | null>;
+	race: If<PersonaBased, AnyRace, SMTRace | null>;
 	level: number;
 	hp: If<PersonaBased, null, number | null>;
 	mp: If<PersonaBased, null, number | null>;
@@ -22,7 +22,6 @@ export interface DemonData<PersonaBased extends boolean = boolean> {
 
 /** Data used for constructing a Persona instance */
 export interface PersonaData extends DemonData<true> {
-	race: 'Persona';
 	user: string;
 	stage: Stage;
 	evoSkillName: string | null;
