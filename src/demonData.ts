@@ -34864,6 +34864,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 	},
 	{
 		name: 'Preta',
+		aliases: [
+			'Gaki'
+		],
 		affinities: {
 			skillPotential: {
 				Phys: 1,
