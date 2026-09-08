@@ -4414,7 +4414,11 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		evoSkillName: null
 	},
 	{
-		name: 'Asura',
+		name: 'Asura Lord',
+		aliases: [
+			'Asura',
+			'Asura Oh'
+		],
 		affinities: {
 			skillPotential: {
 				Phys: 3,
