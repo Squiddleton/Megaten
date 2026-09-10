@@ -1,7 +1,6 @@
 import { defineConfig } from 'eslint/config';
 import eslint from '@eslint/js';
 import stylistic from '@stylistic/eslint-plugin';
-import tsdoc from 'eslint-plugin-tsdoc';
 import tseslint from 'typescript-eslint';
 
 export default defineConfig({
@@ -23,8 +22,7 @@ export default defineConfig({
 		}
 	},
 	plugins: {
-		'@stylistic': stylistic,
-		tsdoc
+		'@stylistic': stylistic
 	},
 	rules: {
 		'sort-imports': 'error',
@@ -38,7 +36,6 @@ export default defineConfig({
 		'@stylistic/no-tabs': 'off',
 		'@stylistic/quotes': ['error', 'single'],
 		'@stylistic/semi': ['error', 'always'],
-		'tsdoc/syntax': 'error',
 		'@typescript-eslint/consistent-type-imports': [
 			'error',
 			{
