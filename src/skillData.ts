@@ -639,27 +639,6 @@ const skillData: AnySkillData[] = [
 		series: 'smt'
 	},
 	{
-		name: 'Atomic Flare',
-		aliases: [
-			'Nova Cyther',
-			'Nova Kaiser'
-		],
-		affinity: 'Nuke',
-		type: 'ATTACK',
-		accuracy: 98,
-		cost: {
-			stat: 'MP',
-			amount: 50
-		},
-		power: {
-			amount: 265,
-			display: 'Severe',
-			type: 'Magic'
-		},
-		target: 'One Foe',
-		series: 'persona'
-	},
-	{
 		name: 'Atom Smasher',
 		affinity: 'Phys',
 		type: 'ATTACK',
@@ -681,6 +660,27 @@ const skillData: AnySkillData[] = [
 			type: 'Physical'
 		},
 		target: 'All Foes',
+		series: 'persona'
+	},
+	{
+		name: 'Atomic Flare',
+		aliases: [
+			'Nova Cyther',
+			'Nova Kaiser'
+		],
+		affinity: 'Nuke',
+		type: 'ATTACK',
+		accuracy: 98,
+		cost: {
+			stat: 'MP',
+			amount: 50
+		},
+		power: {
+			amount: 265,
+			display: 'Severe',
+			type: 'Magic'
+		},
+		target: 'One Foe',
 		series: 'persona'
 	},
 	{
@@ -2477,32 +2477,6 @@ const skillData: AnySkillData[] = [
 		series: 'smt'
 	},
 	{
-		name: 'Death\'s Door',
-		affinity: 'Almighty',
-		type: 'SET',
-		target: 'All Foes',
-		amount: 1,
-		cost: 35,
-		sickDependent: true
-	},
-	{
-		name: 'Deathbound',
-		affinity: 'Phys',
-		type: 'ATTACK',
-		accuracy: 98,
-		cost: {
-			stat: 'MP',
-			amount: 35
-		},
-		power: {
-			amount: 150,
-			display: 'Medium',
-			type: 'Physical'
-		},
-		target: 'All Foes',
-		series: 'smt'
-	},
-	{
 		name: 'Death Flies',
 		affinity: 'Dark',
 		type: 'ATTACK',
@@ -2569,6 +2543,32 @@ const skillData: AnySkillData[] = [
 		},
 		target: 'One Foe',
 		series: 'persona'
+	},
+	{
+		name: 'Death\'s Door',
+		affinity: 'Almighty',
+		type: 'SET',
+		target: 'All Foes',
+		amount: 1,
+		cost: 35,
+		sickDependent: true
+	},
+	{
+		name: 'Deathbound',
+		affinity: 'Phys',
+		type: 'ATTACK',
+		accuracy: 98,
+		cost: {
+			stat: 'MP',
+			amount: 35
+		},
+		power: {
+			amount: 150,
+			display: 'Medium',
+			type: 'Physical'
+		},
+		target: 'All Foes',
+		series: 'smt'
 	},
 	{
 		name: 'Debilitate',
@@ -2935,17 +2935,6 @@ const skillData: AnySkillData[] = [
 		description: 'Increases maximum HP for all allies during battle.'
 	},
 	{
-		name: 'Dormina',
-		affinity: 'Ailment',
-		type: 'AILMENT',
-		target: 'One Foe',
-		cost: 10,
-		ailments: [
-			'Sleep'
-		],
-		chance: 80
-	},
-	{
 		name: 'Dormin Rush',
 		affinity: 'Phys',
 		type: 'ATTACK',
@@ -2967,6 +2956,17 @@ const skillData: AnySkillData[] = [
 		},
 		target: 'All Foes',
 		series: 'persona'
+	},
+	{
+		name: 'Dormina',
+		affinity: 'Ailment',
+		type: 'AILMENT',
+		target: 'One Foe',
+		cost: 10,
+		ailments: [
+			'Sleep'
+		],
+		chance: 80
 	},
 	{
 		name: 'Double Fangs',
@@ -3186,23 +3186,6 @@ const skillData: AnySkillData[] = [
 		series: 'smt'
 	},
 	{
-		name: 'Dream Raga',
-		affinity: 'Ailment',
-		type: 'AILMENT',
-		unique: true,
-		target: 'All Foes',
-		cost: 65,
-		ailments: [
-			'Sleep',
-			'Confusion',
-			'Charm'
-		],
-		chance: 70,
-		debuffs: {
-			Defense: BuffValue.GreatlyDecrease
-		}
-	},
-	{
 		name: 'Dream Needle',
 		affinity: 'Phys',
 		type: 'ATTACK',
@@ -3224,6 +3207,23 @@ const skillData: AnySkillData[] = [
 		},
 		target: 'One Foe',
 		series: 'smt'
+	},
+	{
+		name: 'Dream Raga',
+		affinity: 'Ailment',
+		type: 'AILMENT',
+		unique: true,
+		target: 'All Foes',
+		cost: 65,
+		ailments: [
+			'Sleep',
+			'Confusion',
+			'Charm'
+		],
+		chance: 70,
+		debuffs: {
+			Defense: BuffValue.GreatlyDecrease
+		}
 	},
 	{
 		name: 'Dustoma',
@@ -3351,15 +3351,6 @@ const skillData: AnySkillData[] = [
 		series: 'persona'
 	},
 	{
-		name: 'Electrify',
-		affinity: 'Special',
-		type: 'MISC',
-		unique: null,
-		target: 'One Ally',
-		cost: 0,
-		description: 'Greatly increases the damage of the next Rising Storm Dragon performed by 1 ally.'
-	},
-	{
 		name: 'Elec Amp',
 		affinity: 'Passive',
 		type: 'BOOST',
@@ -3417,6 +3408,15 @@ const skillData: AnySkillData[] = [
 		type: 'WALL',
 		cost: 18,
 		element: 'Elec'
+	},
+	{
+		name: 'Electrify',
+		affinity: 'Special',
+		type: 'MISC',
+		unique: null,
+		target: 'One Ally',
+		cost: 0,
+		description: 'Greatly increases the damage of the next Rising Storm Dragon performed by 1 ally.'
 	},
 	{
 		name: 'Eleusinian Harvest',
@@ -4921,13 +4921,6 @@ const skillData: AnySkillData[] = [
 		criteria: 'Ailment'
 	},
 	{
-		name: 'Great Life Spring',
-		affinity: 'Passive',
-		type: 'SPRING',
-		amount: 30,
-		stat: 'HP'
-	},
-	{
 		name: 'Great Lament',
 		affinity: 'Almighty',
 		type: 'ATTACK',
@@ -4954,6 +4947,13 @@ const skillData: AnySkillData[] = [
 		flags: [
 			'Afflicted Boost'
 		]
+	},
+	{
+		name: 'Great Life Spring',
+		affinity: 'Passive',
+		type: 'SPRING',
+		amount: 30,
+		stat: 'HP'
 	},
 	{
 		name: 'Great Logos',
@@ -5178,6 +5178,12 @@ const skillData: AnySkillData[] = [
 		series: 'smt'
 	},
 	{
+		name: 'Hama Boost',
+		affinity: 'Passive',
+		type: 'INSTAKILLBOOST',
+		element: 'Light'
+	},
+	{
 		name: 'Hamabarion',
 		affinity: 'Light',
 		type: 'ATTACK',
@@ -5196,12 +5202,6 @@ const skillData: AnySkillData[] = [
 		},
 		target: 'One Foe',
 		series: 'smt'
-	},
-	{
-		name: 'Hama Boost',
-		affinity: 'Passive',
-		type: 'INSTAKILLBOOST',
-		element: 'Light'
 	},
 	{
 		name: 'Hamaon',
@@ -5335,6 +5335,14 @@ const skillData: AnySkillData[] = [
 		series: 'smt'
 	},
 	{
+		name: 'Heal Pleroma',
+		affinity: 'Passive',
+		type: 'BOOST',
+		amount: 20,
+		element: 'Recovery',
+		stacks: '+'
+	},
+	{
 		name: 'Healing Knowhow',
 		affinity: 'Passive',
 		type: 'MISC',
@@ -5348,14 +5356,6 @@ const skillData: AnySkillData[] = [
 		type: 'NAVI',
 		unique: null,
 		description: 'Recover 5% HP after battle (party).'
-	},
-	{
-		name: 'Heal Pleroma',
-		affinity: 'Passive',
-		type: 'BOOST',
-		amount: 20,
-		element: 'Recovery',
-		stacks: '+'
 	},
 	{
 		name: 'Heat Riser',
@@ -5396,39 +5396,6 @@ const skillData: AnySkillData[] = [
 		series: 'smt'
 	},
 	{
-		name: 'Heavenly Counter',
-		affinity: 'Passive',
-		type: 'SMTCOUNTER',
-		unique: true,
-		chance: 65,
-		element: 'Dark',
-		power: {
-			amount: 100,
-			display: 'Weak'
-		},
-		attackDown: true
-	},
-	{
-		name: 'Heavenly Ikuyumi',
-		affinity: 'Almighty',
-		type: 'ATTACK',
-		accuracy: 98,
-		cost: {
-			stat: 'MP',
-			amount: 65
-		},
-		flags: [
-			'Debuff Number Dependent'
-		],
-		power: {
-			amount: 150,
-			display: 'Medium to severe',
-			type: 'Magic'
-		},
-		target: 'One Foe',
-		series: 'smt'
-	},
-	{
 		name: 'Heaven\'s Blade',
 		affinity: 'Phys',
 		type: 'ATTACK',
@@ -5461,6 +5428,39 @@ const skillData: AnySkillData[] = [
 			type: 'Physical'
 		},
 		target: 'All Foes',
+		series: 'smt'
+	},
+	{
+		name: 'Heavenly Counter',
+		affinity: 'Passive',
+		type: 'SMTCOUNTER',
+		unique: true,
+		chance: 65,
+		element: 'Dark',
+		power: {
+			amount: 100,
+			display: 'Weak'
+		},
+		attackDown: true
+	},
+	{
+		name: 'Heavenly Ikuyumi',
+		affinity: 'Almighty',
+		type: 'ATTACK',
+		accuracy: 98,
+		cost: {
+			stat: 'MP',
+			amount: 65
+		},
+		flags: [
+			'Debuff Number Dependent'
+		],
+		power: {
+			amount: 150,
+			display: 'Medium to severe',
+			type: 'Magic'
+		},
+		target: 'One Foe',
 		series: 'smt'
 	},
 	{
@@ -5568,6 +5568,44 @@ const skillData: AnySkillData[] = [
 		]
 	},
 	{
+		name: 'Hell Spin',
+		affinity: 'Phys',
+		type: 'ATTACK',
+		unique: true,
+		accuracy: 98,
+		cost: {
+			stat: 'MP',
+			amount: 30
+		},
+		power: {
+			amount: 150,
+			display: 'Heavy',
+			type: 'Physical'
+		},
+		target: 'All Foes',
+		series: 'smt'
+	},
+	{
+		name: 'Hell Thrust',
+		affinity: 'Phys',
+		type: 'ATTACK',
+		accuracy: 98,
+		cost: {
+			stat: 'MP',
+			amount: 45
+		},
+		flags: [
+			'Pierce'
+		],
+		power: {
+			amount: 235,
+			display: 'Heavy',
+			type: 'Physical'
+		},
+		target: 'One Foe',
+		series: 'smt'
+	},
+	{
 		name: 'Hellish Brand',
 		affinity: 'Fire',
 		type: 'ATTACK',
@@ -5634,44 +5672,6 @@ const skillData: AnySkillData[] = [
 			type: 'Magic'
 		},
 		target: 'All Foes',
-		series: 'smt'
-	},
-	{
-		name: 'Hell Spin',
-		affinity: 'Phys',
-		type: 'ATTACK',
-		unique: true,
-		accuracy: 98,
-		cost: {
-			stat: 'MP',
-			amount: 30
-		},
-		power: {
-			amount: 150,
-			display: 'Heavy',
-			type: 'Physical'
-		},
-		target: 'All Foes',
-		series: 'smt'
-	},
-	{
-		name: 'Hell Thrust',
-		affinity: 'Phys',
-		type: 'ATTACK',
-		accuracy: 98,
-		cost: {
-			stat: 'MP',
-			amount: 45
-		},
-		flags: [
-			'Pierce'
-		],
-		power: {
-			amount: 235,
-			display: 'Heavy',
-			type: 'Physical'
-		},
-		target: 'One Foe',
 		series: 'smt'
 	},
 	{
@@ -6491,6 +6491,25 @@ const skillData: AnySkillData[] = [
 		description: 'Recruits a demon younger than the user.'
 	},
 	{
+		name: 'Kill Rush',
+		affinity: 'Phys',
+		type: 'ATTACK',
+		accuracy: 90,
+		cost: {
+			stat: 'HP',
+			amount: 14
+		},
+		max: 3,
+		min: 1,
+		power: {
+			amount: 90,
+			display: 'Weak',
+			type: 'Physical'
+		},
+		target: 'One Foe',
+		series: 'persona'
+	},
+	{
 		name: 'Killing Wind',
 		affinity: 'Force',
 		type: 'ATTACK',
@@ -6509,25 +6528,6 @@ const skillData: AnySkillData[] = [
 		},
 		target: 'One Foe',
 		series: 'smt'
-	},
-	{
-		name: 'Kill Rush',
-		affinity: 'Phys',
-		type: 'ATTACK',
-		accuracy: 90,
-		cost: {
-			stat: 'HP',
-			amount: 14
-		},
-		max: 3,
-		min: 1,
-		power: {
-			amount: 90,
-			display: 'Weak',
-			type: 'Physical'
-		},
-		target: 'One Foe',
-		series: 'persona'
 	},
 	{
 		name: 'King Bufula',
@@ -6755,44 +6755,6 @@ const skillData: AnySkillData[] = [
 		description: 'Levitates party to avoid damage surfaces until next new Kagutsuchi phase.'
 	},
 	{
-		name: 'Lightning Pulse',
-		affinity: 'Passive',
-		type: 'SMTCOUNTER',
-		unique: null,
-		chance: 100,
-		element: 'Elec',
-		power: {
-			amount: 100,
-			display: 'Weak'
-		}
-	},
-	{
-		name: 'Lightning of God',
-		affinity: 'Elec',
-		type: 'ATTACK',
-		unique: null,
-		accuracy: 108,
-		cost: {
-			stat: 'MP',
-			amount: 0
-		},
-		power: {
-			amount: 220,
-			display: 'Severe',
-			type: 'Magic'
-		},
-		target: 'All Foes',
-		series: 'smt'
-	},
-	{
-		name: 'Lightoma',
-		affinity: 'Special',
-		type: 'MISC',
-		target: 'All Allies',
-		cost: 10,
-		description: 'Illuminates dark areas until next new Kagutsuchi phase.'
-	},
-	{
 		name: 'Light Amp',
 		aliases: [
 			'Bless Amp'
@@ -6903,6 +6865,44 @@ const skillData: AnySkillData[] = [
 		},
 		target: 'All Foes',
 		series: 'smt'
+	},
+	{
+		name: 'Lightning of God',
+		affinity: 'Elec',
+		type: 'ATTACK',
+		unique: null,
+		accuracy: 108,
+		cost: {
+			stat: 'MP',
+			amount: 0
+		},
+		power: {
+			amount: 220,
+			display: 'Severe',
+			type: 'Magic'
+		},
+		target: 'All Foes',
+		series: 'smt'
+	},
+	{
+		name: 'Lightning Pulse',
+		affinity: 'Passive',
+		type: 'SMTCOUNTER',
+		unique: null,
+		chance: 100,
+		element: 'Elec',
+		power: {
+			amount: 100,
+			display: 'Weak'
+		}
+	},
+	{
+		name: 'Lightoma',
+		affinity: 'Special',
+		type: 'MISC',
+		target: 'All Allies',
+		cost: 10,
+		description: 'Illuminates dark areas until next new Kagutsuchi phase.'
 	},
 	{
 		name: 'Lost Hit',
@@ -8322,6 +8322,19 @@ const skillData: AnySkillData[] = [
 		series: 'smt'
 	},
 	{
+		name: 'Me Patra',
+		aliases: [
+			'Amrita',
+			'Amrita Shower'
+		],
+		affinity: 'Recovery',
+		type: 'RECOVERY',
+		target: 'All Allies',
+		cost: 30,
+		ailments: 'All',
+		amount: null
+	},
+	{
 		name: 'Media',
 		affinity: 'Recovery',
 		type: 'RECOVERY',
@@ -8558,19 +8571,6 @@ const skillData: AnySkillData[] = [
 			display: 'Weak'
 		},
 		shroud: true
-	},
-	{
-		name: 'Me Patra',
-		aliases: [
-			'Amrita',
-			'Amrita Shower'
-		],
-		affinity: 'Recovery',
-		type: 'RECOVERY',
-		target: 'All Allies',
-		cost: 30,
-		ailments: 'All',
-		amount: null
 	},
 	{
 		name: 'Might',
@@ -8937,6 +8937,12 @@ const skillData: AnySkillData[] = [
 		series: 'smt'
 	},
 	{
+		name: 'Mudo Boost',
+		affinity: 'Passive',
+		type: 'INSTAKILLBOOST',
+		element: 'Dark'
+	},
+	{
 		name: 'Mudobarion',
 		affinity: 'Dark',
 		type: 'ATTACK',
@@ -8955,12 +8961,6 @@ const skillData: AnySkillData[] = [
 		},
 		target: 'One Foe',
 		series: 'smt'
-	},
-	{
-		name: 'Mudo Boost',
-		affinity: 'Passive',
-		type: 'INSTAKILLBOOST',
-		element: 'Dark'
 	},
 	{
 		name: 'Mudoon',
@@ -10352,6 +10352,13 @@ const skillData: AnySkillData[] = [
 		element: 'Psy'
 	},
 	{
+		name: 'Psy Wall',
+		affinity: 'Support',
+		type: 'WALL',
+		cost: 18,
+		element: 'Psy'
+	},
+	{
 		name: 'Psycho Blast',
 		affinity: 'Psy',
 		type: 'ATTACK',
@@ -10384,13 +10391,6 @@ const skillData: AnySkillData[] = [
 		},
 		target: 'One Foe',
 		series: 'persona'
-	},
-	{
-		name: 'Psy Wall',
-		affinity: 'Support',
-		type: 'WALL',
-		cost: 18,
-		element: 'Psy'
 	},
 	{
 		name: 'Pulinpa',
@@ -10687,6 +10687,25 @@ const skillData: AnySkillData[] = [
 		auto: []
 	},
 	{
+		name: 'Re Patra',
+		affinity: 'Recovery',
+		type: 'RECOVERY',
+		target: 'One Ally',
+		cost: 5,
+		ailments: [
+			'Mirage'
+		],
+		amount: null
+	},
+	{
+		name: 'Rebel Soul',
+		affinity: 'Passive',
+		type: 'MISC',
+		target: 'Self',
+		cost: null,
+		description: 'Showtime guage increases more quickly.'
+	},
+	{
 		name: 'Rebellion',
 		affinity: 'Support',
 		type: 'CRIT',
@@ -10734,14 +10753,6 @@ const skillData: AnySkillData[] = [
 		},
 		target: 'One Foe',
 		series: 'persona'
-	},
-	{
-		name: 'Rebel Soul',
-		affinity: 'Passive',
-		type: 'MISC',
-		target: 'Self',
-		cost: null,
-		description: 'Showtime guage increases more quickly.'
 	},
 	{
 		name: 'Recalcitrant Execution',
@@ -10866,17 +10877,6 @@ const skillData: AnySkillData[] = [
 		},
 		target: 'All Foes',
 		series: 'persona'
-	},
-	{
-		name: 'Re Patra',
-		affinity: 'Recovery',
-		type: 'RECOVERY',
-		target: 'One Ally',
-		cost: 5,
-		ailments: [
-			'Mirage'
-		],
-		amount: null
 	},
 	{
 		name: 'Repel Dark',
@@ -11075,6 +11075,13 @@ const skillData: AnySkillData[] = [
 			'Freeze'
 		],
 		resistance: 'Resist'
+	},
+	{
+		name: 'Resist Gun',
+		affinity: 'Passive',
+		type: 'DEFENSIVE',
+		element: 'Phys',
+		newResistance: 'Resist'
 	},
 	{
 		name: 'Resist Hunger',
@@ -12470,6 +12477,23 @@ const skillData: AnySkillData[] = [
 		description: 'Requests gem.'
 	},
 	{
+		name: 'Storm Dracostrike',
+		affinity: 'Elec',
+		type: 'ATTACK',
+		accuracy: 98,
+		cost: {
+			stat: 'MP',
+			amount: 25
+		},
+		power: {
+			amount: 200,
+			display: 'Medium',
+			type: 'Physical'
+		},
+		target: 'One Foe',
+		series: 'smt'
+	},
+	{
 		name: 'Stormcaller Song',
 		affinity: 'Ice',
 		type: 'ATTACK',
@@ -12487,23 +12511,6 @@ const skillData: AnySkillData[] = [
 			type: 'Magic'
 		},
 		target: 'Random Foes',
-		series: 'smt'
-	},
-	{
-		name: 'Storm Dracostrike',
-		affinity: 'Elec',
-		type: 'ATTACK',
-		accuracy: 98,
-		cost: {
-			stat: 'MP',
-			amount: 25
-		},
-		power: {
-			amount: 200,
-			display: 'Medium',
-			type: 'Physical'
-		},
-		target: 'One Foe',
 		series: 'smt'
 	},
 	{
@@ -12771,12 +12778,6 @@ const skillData: AnySkillData[] = [
 		cost: 10
 	},
 	{
-		name: 'Taunting Aura',
-		affinity: 'Support',
-		type: 'TAUNT',
-		cost: 4
-	},
-	{
 		name: 'Taunt - Persona',
 		aliases: [
 			'Taunt',
@@ -12790,6 +12791,12 @@ const skillData: AnySkillData[] = [
 			'Rage'
 		],
 		chance: 70
+	},
+	{
+		name: 'Taunting Aura',
+		affinity: 'Support',
+		type: 'TAUNT',
+		cost: 4
 	},
 	{
 		name: 'Technical High',
@@ -12854,6 +12861,32 @@ const skillData: AnySkillData[] = [
 		chance: 45
 	},
 	{
+		name: 'Terror Claw',
+		aliases: [
+			'Golden Right'
+		],
+		affinity: 'Phys',
+		type: 'ATTACK',
+		accuracy: 90,
+		ailments: {
+			names: [
+				'Fear'
+			],
+			chance: 20
+		},
+		cost: {
+			stat: 'HP',
+			amount: 8
+		},
+		power: {
+			amount: 90,
+			display: 'Medium',
+			type: 'Physical'
+		},
+		target: 'One Foe',
+		series: 'persona'
+	},
+	{
 		name: 'Terrorblade',
 		affinity: 'Phys',
 		type: 'ATTACK',
@@ -12881,32 +12914,6 @@ const skillData: AnySkillData[] = [
 		},
 		target: 'Random Foes',
 		series: 'smt'
-	},
-	{
-		name: 'Terror Claw',
-		aliases: [
-			'Golden Right'
-		],
-		affinity: 'Phys',
-		type: 'ATTACK',
-		accuracy: 90,
-		ailments: {
-			names: [
-				'Fear'
-			],
-			chance: 20
-		},
-		cost: {
-			stat: 'HP',
-			amount: 8
-		},
-		power: {
-			amount: 90,
-			display: 'Medium',
-			type: 'Physical'
-		},
-		target: 'One Foe',
-		series: 'persona'
 	},
 	{
 		name: 'Tetanus Cut',

@@ -56,3 +56,14 @@ for (const demon of Demon.array) {
 		}
 	}
 }
+
+const sortedSkillNames: string[] = [];
+const skillNames = Skill.array.map(s => {
+	sortedSkillNames.push(s.name);
+	return s.name;
+});
+sortedSkillNames.sort((a, b) => a.localeCompare(b));
+for (const [i, skillName] of skillNames.entries()) {
+	if (sortedSkillNames[i] !== skillName)
+		console.log(`Skill ${skillName} is out of ABC order with ${sortedSkillNames[i]}`);
+}
