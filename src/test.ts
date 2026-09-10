@@ -1,6 +1,17 @@
 import { Demon } from './demon.js';
 import { Skill } from './skill.js';
 
+const sortedDemonNames: string[] = [];
+const demonNames = Demon.array.map(d => {
+	sortedDemonNames.push(d.name);
+	return d.name;
+});
+sortedDemonNames.sort((a, b) => a.localeCompare(b));
+for (const [i, demonName] of demonNames.entries()) {
+	if (sortedDemonNames[i] !== demonName)
+		console.log(`Demon ${demonName} is out of ABC order with ${sortedDemonNames[i]}`);
+}
+
 for (const demon of Demon.array) {
 	const demonsWithSameName = Demon.array.filter(d => d.name === demon.name);
 	if (demonsWithSameName.length > 1) {

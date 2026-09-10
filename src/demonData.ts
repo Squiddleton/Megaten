@@ -4414,6 +4414,72 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		evoSkillName: null
 	},
 	{
+		name: 'Asura - SJ',
+		aliases: [
+			'Asura'
+		],
+		affinities: {
+			skillPotential: {
+				Phys: 4,
+				Gun: 0,
+				Fire: 2,
+				Ice: -5,
+				Elec: 0,
+				Force: 0,
+				Light: 0,
+				Dark: 0,
+				Almighty: 0,
+				Ailment: 0,
+				Recovery: -2,
+				Support: 0
+			},
+			inherit: null
+		},
+		arcana: null,
+		race: 'Fury',
+		level: 43,
+		hp: 557,
+		mp: 113,
+		stats: {
+			st: 73,
+			dx: 43,
+			ma: 31,
+			ag: 45,
+			lu: 63
+		},
+		learnset: [
+			{
+				name: 'Titanomachia',
+				level: 0
+			},
+			{
+				name: 'Maragion',
+				level: 0
+			},
+			{
+				name: 'Critical Aura',
+				level: 44
+			},
+			{
+				name: 'Resist Gun',
+				level: 45
+			}
+		],
+		resistances: {
+			Phys: 'Resist',
+			Fire: 'Null',
+			Ice: 'Weak',
+			Light: 'Resist'
+		},
+		game: 'smt4',
+		alignment: {
+			major: 'Dark',
+			minor: 'Chaos'
+		},
+		lore: 'A violent group of demons in Hindu lore. They were very powerful and caused the gods great trouble.\nThey are a strict group and attack anyone who runs counter to their ideals. They were originally gods of light who were worshipped in Persia. The Zoroastrian god Ahura Mazda was one of them.',
+		origin: 'Hindu'
+	},
+	{
 		name: 'Asura Lord',
 		aliases: [
 			'Asura',
@@ -4488,7 +4554,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			major: 'Light',
 			minor: 'Chaos'
 		},
-		lore: 'A violent group of demons in Hindu lore.\nThey were very powerful and caused the gods great trouble. They are a fiercely strict group and attack anyone who runs counter to their ideals. They were originally gods of light worshipped in Persia. The Zoroastrian god Ahura Mazda was one of them.',
+		lore: 'Virochana, king of the Asura tribe of India. In Buddhism, he is known as Mahāvairocana. The god of fire and light, he is said to light up the universe to guide all things to be good.',
 		origin: 'Hindu'
 	},
 	{
@@ -5023,54 +5089,6 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		},
 		lore: 'A water deity of the Azumi, a Japanese seafaring tribe. As such, it can freely control water.\nThe three gods born from Izanagi after he returned from Yomi are said to be the Azumi tribe\'s ancestors.',
 		origin: 'Japanese'
-	},
-	{
-		name: 'Blue Hawaii Frost',
-		aliases: [
-			'B. Hawaii Frost'
-		],
-		affinities: {
-			skillPotential: null,
-			inherit: 'Ice'
-		},
-		arcana: null,
-		race: 'Element',
-		level: 16,
-		hp: null,
-		mp: null,
-		stats: {
-			st: 6,
-			vi: 7,
-			ma: 9,
-			ag: 8,
-			lu: 7
-		},
-		learnset: [
-			{
-				name: 'Mabufu',
-				level: 0
-			},
-			{
-				name: 'Dodge Elec',
-				level: 17
-			},
-			{
-				name: 'Sukukaja',
-				level: 18
-			}
-		],
-		resistances: {
-			Fire: 'Weak',
-			Ice: 'Drain',
-			Dark: 'Resist'
-		},
-		game: 'sh2',
-		alignment: {
-			major: 'Neutral',
-			minor: 'Neutral'
-		},
-		lore: 'One of the "shaved ice" subspecies of Jack Frost created by Dr. Thrill. Its official name is "Blue Hawaii Frost." Having sought asylum in Japan, Dr. Thrill was soon exposed to a great deal of Japanese culture, and, upon buying a variety of sentai masks and shaved ice at a summer festival, was inspired to create this variation of Jack Frost. Whether or not they actually taste like "Blue Hawaii" has yet to be determined... though admittedly, what "Blue Hawaii" even tastes like is a mystery in itself.',
-		origin: 'ATLUS Original'
 	},
 	{
 		name: 'Baal',
@@ -6812,6 +6830,54 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		},
 		lore: 'An infamous jelly-like monster. It swallows humans and grows. It is said that the only way to stop Blobs is to freeze them.',
 		origin: 'North American'
+	},
+	{
+		name: 'Blue Hawaii Frost',
+		aliases: [
+			'B. Hawaii Frost'
+		],
+		affinities: {
+			skillPotential: null,
+			inherit: 'Ice'
+		},
+		arcana: null,
+		race: 'Element',
+		level: 16,
+		hp: null,
+		mp: null,
+		stats: {
+			st: 6,
+			vi: 7,
+			ma: 9,
+			ag: 8,
+			lu: 7
+		},
+		learnset: [
+			{
+				name: 'Mabufu',
+				level: 0
+			},
+			{
+				name: 'Dodge Elec',
+				level: 17
+			},
+			{
+				name: 'Sukukaja',
+				level: 18
+			}
+		],
+		resistances: {
+			Fire: 'Weak',
+			Ice: 'Drain',
+			Dark: 'Resist'
+		},
+		game: 'sh2',
+		alignment: {
+			major: 'Neutral',
+			minor: 'Neutral'
+		},
+		lore: 'One of the "shaved ice" subspecies of Jack Frost created by Dr. Thrill. Its official name is "Blue Hawaii Frost." Having sought asylum in Japan, Dr. Thrill was soon exposed to a great deal of Japanese culture, and, upon buying a variety of sentai masks and shaved ice at a summer festival, was inspired to create this variation of Jack Frost. Whether or not they actually taste like "Blue Hawaii" has yet to be determined... though admittedly, what "Blue Hawaii" even tastes like is a mystery in itself.',
+		origin: 'ATLUS Original'
 	},
 	{
 		name: 'Botis',
