@@ -11349,7 +11349,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		},
 		arcana: 'Empress',
 		race: 'Persona',
-		level: 57,
+		level: 44,
 		hp: null,
 		mp: null,
 		stats: {
