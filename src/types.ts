@@ -95,9 +95,6 @@ export interface DemonAffinities<PersonaBased extends boolean = boolean> {
 	inherit: InheritAffinity | null;
 }
 
-/** A demon's mythological origin */
-export type DemonOrigin = 'Aboriginal' | 'Abrahamic' | 'African' | 'Arabian' | 'ATLUS Original' | 'Aztec' | 'Balinese' | 'Buddhist' | 'Buryat' | 'Canaanite' | 'Celtic' | 'Chinese' | 'Dominican' | 'Egyptian' | 'European' | 'Filipino' | 'Gnostic' | 'Greco-Roman' | 'Haitian' | 'Hawaiian' | 'Hindu' | 'Incan' | 'Japanese' | 'Lithuanian' | 'Lovecraftian' | 'Historical' | 'Mayan' | 'Mesopotamian' | 'Modern Fiction' | 'Nepali' | 'Norse' | 'North American' | 'Polynesian' | 'Puebloan' | 'Puerto Rican' | 'Romani' | 'Scottish' | 'Slavic' | 'South American' | 'Sri Lankan' | 'Universal' | 'Zoroastrian';
-
 /** A demon's ailment and affinity resistances */
 export type DemonResistances = Partial<Record<DamagingAffinity, Resistance> & Record<AilmentName, 'Weak' | Resistance>>;
 

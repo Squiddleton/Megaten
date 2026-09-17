@@ -1,4 +1,4 @@
-import type { AnyGame, AnyRace, Arcana, DemonAffinities, DemonAlignment, DemonOrigin, DemonResistances, DemonSkill, DemonStats, If, PersonaGame, SMTRace, Stage } from './types.js';
+import type { AnyGame, AnyRace, Arcana, DemonAffinities, DemonAlignment, DemonResistances, DemonSkill, DemonStats, If, PersonaGame, SMTRace, Stage } from './types.js';
 import { type AnySkill, Skill } from './skill.js';
 import type { DemonData, PersonaData } from './dataTypes.js';
 import { formatPossessive, normalize } from '@squiddleton/util';
@@ -46,7 +46,7 @@ export class Demon<PersonaBased extends boolean = boolean> implements DemonData<
 	/** The demon's backstory, or null for older Personas and SMT4 demons */
 	lore: string | null;
 	/** The demon's mythological origin */
-	origin: DemonOrigin;
+	origin: string;
 	constructor(data: DemonData<PersonaBased>) {
 		this.name = data.name;
 		this.aliases = data.aliases ?? [];
