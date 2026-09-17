@@ -50,6 +50,9 @@ for (const demon of Demon.array) {
 	}
 
 	if (demon.isPersona()) {
+		if (demon.evoSkillName !== null && !Skill.array.some(s => s.name === demon.evoSkillName))
+			console.log(`Demon ${demon.devName} has unknown evo skill "${demon.evoSkillName}"`);
+
 		const demonsWithSameStage = Demon.array.filter(d => d.isPersona() && d.user === demon.user && d.stage === demon.stage);
 		if (demonsWithSameStage.length > 1) {
 			console.log(`The following demons have the same Persona user and stage: ${demonsWithSameLore.map(d => d.devName).join(', ')}`);
