@@ -4236,6 +4236,66 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		name: 'Asterius',
 		affinities: {
 			skillPotential: null,
+			inherit: null
+		},
+		arcana: null,
+		race: 'Beast',
+		level: 26,
+		hp: 341,
+		mp: 67,
+		stats: {
+			st: 40,
+			dx: 35,
+			ma: 28,
+			ag: 32,
+			lu: 27
+		},
+		learnset: [
+			{
+				name: 'Megaton Press',
+				level: 0
+			},
+			{
+				name: 'Phys Pleroma',
+				level: 0
+			},
+			{
+				name: 'Charge',
+				level: 27
+			},
+			{
+				name: 'Life Gain',
+				level: 28
+			},
+			{
+				name: 'Resist Phys',
+				level: 29
+			}
+		],
+		resistances: {
+			Gun: 'Resist',
+			Fire: 'Resist',
+			Ice: 'Resist',
+			Elec: 'Resist',
+			Force: 'Resist',
+			Light: 'Weak',
+			Dark: 'Weak'
+		},
+		game: 'smt4',
+		alignment: {
+			major: 'Neutral',
+			minor: 'Neutral'
+		},
+		lore: 'The name of the minotaur in Greek lore, meaning "starry."\nPoseidon, god of the sea, created a special bull as a gift to King Minos of Creta so that he could sacrifice the animal as an offering to the god. But its beauty was such that Minos kept it for himself and sacrificed a normal bull instead. Angered at this attempt to deceive him, Poseidon caused Minos\' wife Pasiphae to fall in love with the bull. As a result, the bull-headed Asterius was born.',
+		origin: 'Greek culture'
+	},
+	{
+		name: 'Asterius - P4U',
+		aliases: [
+			'Asterius'
+		],
+		affinities: {
+			skillPotential: null,
 			inherit: 'Almighty'
 		},
 		arcana: 'Fortune',
