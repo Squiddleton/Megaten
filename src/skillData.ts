@@ -2857,7 +2857,7 @@ const skillData: AnySkillData[] = [
 		type: 'EVASION',
 		amount: 2,
 		criteria: null,
-		element: 'Dark'
+		element: 'Nuke'
 	},
 	{
 		name: 'Dodge Phys',
