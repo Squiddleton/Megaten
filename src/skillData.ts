@@ -6437,7 +6437,6 @@ const skillData: AnySkillData[] = [
 		name: 'Kamikaze',
 		affinity: 'Almighty',
 		type: 'MISC',
-		unique: null,
 		target: 'One Foe',
 		cost: 0,
 		description: 'Medium Almighty damage to 1 foe. User dies.'
@@ -10815,7 +10814,6 @@ const skillData: AnySkillData[] = [
 		name: 'Recarmdra',
 		affinity: 'Recovery',
 		type: 'MISC',
-		unique: null,
 		target: 'All Allies',
 		cost: null,
 		description: 'Fully revive and recover party but user\'s HP drops to 1.'
@@ -11469,7 +11467,6 @@ const skillData: AnySkillData[] = [
 		name: 'Sacrifice',
 		affinity: 'Almighty',
 		type: 'MISC',
-		unique: null,
 		target: 'Random Foes',
 		cost: 0,
 		description: 'Heavy strength-based Almighty damage to random foes. User dies.'
@@ -11705,7 +11702,6 @@ const skillData: AnySkillData[] = [
 		],
 		affinity: 'Almighty',
 		type: 'MISC',
-		unique: null,
 		target: 'All Foes',
 		cost: null,
 		description: 'Medium Almighty damage to all foes. User dies.'
