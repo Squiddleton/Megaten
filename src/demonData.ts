@@ -5514,7 +5514,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 				level: 0
 			},
 			{
-				name: 'Headcrush',
+				name: 'Head Crush',
 				level: 0
 			},
 			{
@@ -11502,7 +11502,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 				level: 9
 			},
 			{
-				name: 'Headcrush',
+				name: 'Head Crush',
 				level: 10
 			}
 		],
@@ -12674,7 +12674,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		},
 		learnset: [
 			{
-				name: 'Headcrush',
+				name: 'Head Crush',
 				level: 0
 			},
 			{
@@ -14571,7 +14571,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 				level: 0
 			},
 			{
-				name: 'Headcrush',
+				name: 'Head Crush',
 				level: 0
 			},
 			{
