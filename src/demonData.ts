@@ -33687,7 +33687,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			major: 'Dark',
 			minor: 'Law'
 		},
-		lore: 'A god or goddess with a donkey\'s head who was worshipped from northern Africa all the way to Rome.\nThe donkey\'s head has long been a sigh of fertility and is often worshipped.\nHis or her (there is some dispute amongst scholars) temple was built on Palatine Hill in Rome. The word "palace" came from this god\'s name.',
+		lore: 'A god or goddess with a donkey\'s head who was worshipped from northern Africa all the way to Rome.\nThe donkey\'s head has long been a sign of fertility and is often worshipped.\nHis or her (there is some dispute amongst scholars) temple was built on Palatine Hill in Rome. The word "palace" came from this god\'s name.',
 		origin: 'Roman culture'
 	},
 	{
