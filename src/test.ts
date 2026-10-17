@@ -43,7 +43,7 @@ for (const demon of Demon.array) {
 		console.log(`Demon ${demon.devName} is missing expected lore`);
 	}
 
-	const loreExceptions = ['nuwa', 'nuwasnake', 'orpheus', 'orpheusf', 'orpheuspicaro', 'orpheuspicarof'];
+	const loreExceptions = ['bagaboo', 'bogaboo', 'demonicac', 'demonical', 'demonican', 'nuwa', 'nuwasnake', 'orpheus', 'orpheusf', 'orpheuspicaro', 'orpheuspicarof'];
 	const demonsWithSameLore = Demon.array.filter(d => d.lore === demon.lore);
 	if (demon.lore !== null && demonsWithSameLore.length > 1 && !loreExceptions.includes(demon.devName)) {
 		console.log(`The following demons have the same lore: ${demonsWithSameLore.map(d => d.devName).join(', ')}`);

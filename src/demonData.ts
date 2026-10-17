@@ -226,6 +226,51 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		origin: 'English literature'
 	},
 	{
+		name: 'Acheri',
+		affinities: {
+			skillPotential: null,
+			inherit: null
+		},
+		arcana: null,
+		race: 'Femme',
+		level: 8,
+		hp: 88,
+		mp: 51,
+		stats: {
+			st: 6,
+			vi: 7,
+			ma: 5,
+			ag: 9,
+			lu: 7
+		},
+		learnset: [
+			{
+				name: 'Life Drain',
+				level: 0
+			},
+			{
+				name: 'Posumudi',
+				level: 0
+			},
+			{
+				name: 'Poison Claw',
+				level: 0
+			}
+		],
+		resistances: {
+			Fire: 'Weak',
+			Dark: 'Resist',
+			Poison: 'Resist'
+		},
+		game: 'sj',
+		alignment: {
+			major: 'Neutral',
+			minor: 'Chaos'
+		},
+		lore: 'The ghost of a little girl in Indian lore. She brings sickness to children.\nShe comes down from the mountains at night and spreads disease by casting her shadow over children. A red ribbon tied around the neck protects children from her.',
+		origin: 'Indian folklore'
+	},
+	{
 		name: 'Adramelech',
 		affinities: {
 			skillPotential: {
@@ -5343,6 +5388,43 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		origin: 'Irish culture'
 	},
 	{
+		name: 'Bagaboo',
+		affinities: {
+			skillPotential: null,
+			inherit: null
+		},
+		arcana: null,
+		race: 'Jirae',
+		level: 20,
+		hp: 187,
+		mp: 107,
+		stats: {
+			st: 13,
+			vi: 17,
+			ma: 14,
+			ag: 15,
+			lu: 16
+		},
+		learnset: [
+			{
+				name: 'Garula',
+				level: 0
+			},
+			{
+				name: 'Mediarama',
+				level: 0
+			}
+		],
+		resistances: {},
+		game: 'sj',
+		alignment: {
+			major: 'Neutral',
+			minor: 'Law'
+		},
+		lore: 'An unknown demon.\nIt seems to be related to the Welsh "Bugbear." It has scars indicating it has been modified, like the Bugaboo found in Sector Bootes.',
+		origin: 'Original'
+	},
+	{
 		name: 'Bai Suzhen',
 		affinities: {
 			skillPotential: {
@@ -6940,6 +7022,47 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		origin: 'Original'
 	},
 	{
+		name: 'Bogaboo',
+		affinities: {
+			skillPotential: null,
+			inherit: null
+		},
+		arcana: null,
+		race: 'Jirae',
+		level: 20,
+		hp: 187,
+		mp: 101,
+		stats: {
+			st: 14,
+			vi: 14,
+			ma: 14,
+			ag: 14,
+			lu: 14
+		},
+		learnset: [
+			{
+				name: 'Bufula',
+				level: 0
+			},
+			{
+				name: 'Zionga',
+				level: 0
+			},
+			{
+				name: 'Bind Voice',
+				level: 0
+			}
+		],
+		resistances: {},
+		game: 'sj',
+		alignment: {
+			major: 'Neutral',
+			minor: 'Neutral'
+		},
+		lore: 'An unknown demon.\nIt seems to be related to the Welsh "Bugbear." It has scars indicating it has been modified, like the Bugaboo found in Sector Bootes.',
+		origin: 'Original'
+	},
+	{
 		name: 'Botis',
 		affinities: {
 			skillPotential: {
@@ -7065,6 +7188,43 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		},
 		lore: 'The goddess of fire in Irish lore. She also presides over craftsmanship, intelligence, poetry, and healing.\nShe is depicted carrying a magic cup symbolizing a brazier. She had such authority that her name itself was synonymous with "goddess." When Christianity spread to Ireland, she was so revered by the masses that the church canonized her as a Christian saint.',
 		origin: 'Irish culture'
+	},
+	{
+		name: 'Bugaboo',
+		affinities: {
+			skillPotential: null,
+			inherit: null
+		},
+		arcana: null,
+		race: 'Jirae',
+		level: 20,
+		hp: 197,
+		mp: 101,
+		stats: {
+			st: 17,
+			vi: 13,
+			ma: 16,
+			ag: 15,
+			lu: 14
+		},
+		learnset: [
+			{
+				name: 'Agilao',
+				level: 0
+			},
+			{
+				name: 'Mudoon',
+				level: 0
+			}
+		],
+		resistances: {},
+		game: 'sj',
+		alignment: {
+			major: 'Neutral',
+			minor: 'Chaos'
+		},
+		lore: 'A demon found at sector Bootes. It is believed to be the subject of a modification experiment ordered by Mitra.\nIt is originally a type of Welsh spirit known as Bugbear.',
+		origin: 'British culture'
 	},
 	{
 		name: 'Bugs',
@@ -10822,6 +10982,141 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			minor: 'Neutral'
 		},
 		lore: 'Jack Frost equipped with his own mini-Demonica.\nRumor has it that he participates in operations all over the world, and has a legendary 100% mission complete rate. He originally donned the Demonica because he admired it, but after long, hard training, he emerged as the perfect soldier. He may look like the cute Jack Frost everyone knows and loves, but underestimate him and he\'ll make you laugh or cry.',
+		origin: 'Original'
+	},
+	{
+		name: 'Demonica-C',
+		affinities: {
+			skillPotential: null,
+			inherit: null
+		},
+		arcana: null,
+		race: 'Fake',
+		level: 1,
+		hp: 44,
+		mp: 22,
+		stats: {
+			st: 5,
+			vi: 3,
+			ma: 4,
+			ag: 4,
+			lu: 4
+		},
+		learnset: [
+			{
+				name: 'Headshot',
+				level: 0
+			},
+			{
+				name: 'Armshot',
+				level: 0
+			},
+			{
+				name: 'Growth 3',
+				level: 0
+			}
+		],
+		resistances: {
+			Gun: 'Resist',
+			Light: 'Null',
+			Dark: 'Weak'
+		},
+		game: 'sj',
+		alignment: {
+			major: 'Neutral',
+			minor: 'Chaos'
+		},
+		lore: 'A spirit mimicking a human wearing a Demonica.\nIt cannot speak, but it seems to be able to understand your will and acts when ordered. It is thought to be part of the "Spiegel Effect" of the Schwarzwelt, which mirrors the real world.',
+		origin: 'Original'
+	},
+	{
+		name: 'Demonica-L',
+		affinities: {
+			skillPotential: null,
+			inherit: null
+		},
+		arcana: null,
+		race: 'Fake',
+		level: 1,
+		hp: 44,
+		mp: 27,
+		stats: {
+			st: 2,
+			vi: 5,
+			ma: 4,
+			ag: 4,
+			lu: 4
+		},
+		learnset: [
+			{
+				name: 'Snipe',
+				level: 0
+			},
+			{
+				name: 'Legshot',
+				level: 0
+			},
+			{
+				name: 'Growth 3',
+				level: 0
+			}
+		],
+		resistances: {
+			Gun: 'Resist',
+			Light: 'Null',
+			Dark: 'Weak'
+		},
+		game: 'sj',
+		alignment: {
+			major: 'Neutral',
+			minor: 'Law'
+		},
+		lore: 'A spirit mimicking a human wearing a Demonica.\nIt cannot speak, but it seems to be able to understand your will and acts when ordered. It is thought to be part of the "Spiegel Effect" of the Schwarzwelt, which mirrors the real world.',
+		origin: 'Original'
+	},
+	{
+		name: 'Demonica-N',
+		affinities: {
+			skillPotential: null,
+			inherit: null
+		},
+		arcana: null,
+		race: 'Fake',
+		level: 1,
+		hp: 44,
+		mp: 24,
+		stats: {
+			st: 4,
+			vi: 4,
+			ma: 4,
+			ag: 4,
+			lu: 4
+		},
+		learnset: [
+			{
+				name: 'Airstrike',
+				level: 0
+			},
+			{
+				name: 'Cripple',
+				level: 0
+			},
+			{
+				name: 'Growth 3',
+				level: 0
+			}
+		],
+		resistances: {
+			Gun: 'Resist',
+			Light: 'Null',
+			Dark: 'Weak'
+		},
+		game: 'sj',
+		alignment: {
+			major: 'Neutral',
+			minor: 'Neutral'
+		},
+		lore: 'A spirit mimicking a human wearing a Demonica.\nIt cannot speak, but it seems to be able to understand your will and acts when ordered. It is thought to be part of the "Spiegel Effect" of the Schwarzwelt, which mirrors the real world.',
 		origin: 'Original'
 	},
 	{
@@ -16082,6 +16377,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 	{
 		name: 'Hecatoncheires',
 		aliases: [
+			'Hecatoncheir',
 			'Hekatoncheires'
 		],
 		affinities: {
@@ -17763,6 +18059,53 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		user: 'Katsuya Suou',
 		stage: 2,
 		evoSkillName: null
+	},
+	{
+		name: 'Hypnos',
+		affinities: {
+			skillPotential: null,
+			inherit: null
+		},
+		arcana: null,
+		race: 'Night',
+		level: 29,
+		hp: 250,
+		mp: 154,
+		stats: {
+			st: 17,
+			ma: 27,
+			vi: 17,
+			ag: 20,
+			lu: 16
+		},
+		learnset: [
+			{
+				name: 'Mudoon',
+				level: 0
+			},
+			{
+				name: 'Makajama',
+				level: 0
+			},
+			{
+				name: 'Lethe\'s Whisper',
+				level: 0
+			}
+		],
+		resistances: {
+			Gun: 'Weak',
+			Fire: 'Weak',
+			Wind: 'Drain',
+			Light: 'Weak',
+			Dark: 'Null'
+		},
+		game: 'sj',
+		alignment: {
+			major: 'Neutral',
+			minor: 'Chaos'
+		},
+		lore: 'Hypnos is the Greek god of sleep. He is the son of Nyx, goddess of the night, and is depicted as a young man. He dwells in the underworld where no light reaches, sleeping on his bed with his sons, Oneroi, the embodiment of dreams. He is told to be a generous god, granting peaceful sleep to those in need. Even the gods were affected by his powers: not even Zeus was able to resist falling asleep.',
+		origin: 'Greek culture'
 	},
 	{
 		name: 'Ictinike',
@@ -24048,6 +24391,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 	},
 	{
 		name: 'Lakshmi',
+		aliases: [
+			'Laksmi'
+		],
 		affinities: {
 			skillPotential: {
 				Phys: -4,
@@ -31564,6 +31910,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 	},
 	{
 		name: 'Ometeotl',
+		aliases: [
+			'Omoteotl'
+		],
 		affinities: {
 			skillPotential: {
 				Phys: -5,
@@ -33873,6 +34222,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 	},
 	{
 		name: 'Peallaidh',
+		aliases: [
+			'Pellaidh'
+		],
 		affinities: {
 			skillPotential: {
 				Phys: 0,
@@ -38508,6 +38860,51 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		origin: 'Ars Goetia'
 	},
 	{
+		name: 'Shaytan',
+		affinities: {
+			skillPotential: null,
+			inherit: null
+		},
+		arcana: null,
+		race: 'Yoma',
+		level: 75,
+		hp: 604,
+		mp: 332,
+		stats: {
+			st: 46,
+			ma: 47,
+			vi: 43,
+			ag: 51,
+			lu: 53
+		},
+		learnset: [
+			{
+				name: 'Luster Soul',
+				level: 0
+			},
+			{
+				name: 'Endure',
+				level: 0
+			}
+		],
+		resistances: {
+			Gun: 'Weak',
+			Fire: 'Drain',
+			Ice: 'Weak',
+			Wind: 'Repel',
+			Light: 'Resist',
+			Dark: 'Null',
+			Strain: 'Null'
+		},
+		game: 'sj',
+		alignment: {
+			major: 'Neutral',
+			minor: 'Law'
+		},
+		lore: 'One of the Jinn of the demons in Arabian mythology.\nIt is said that they are born from a mixture of fire. He is one of the great grandchildren of the King of Jinn, a group known as the Ifrit. His personality is rather evil. The last prophet of Islam, Muhammad, tried to lead the Shaytan down the correct path. The name Shaytan also refers to Satan in the Christian religion.',
+		origin: 'Arab culture'
+	},
+	{
 		name: 'Shiisaa',
 		affinities: {
 			skillPotential: {
@@ -41781,6 +42178,56 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		name: 'Thanatos',
 		affinities: {
 			skillPotential: null,
+			inherit: null
+		},
+		arcana: null,
+		race: 'Reaper',
+		level: 68,
+		hp: 559,
+		mp: 315,
+		stats: {
+			st: 45,
+			ma: 49,
+			vi: 42,
+			ag: 38,
+			lu: 40
+		},
+		learnset: [
+			{
+				name: 'Mamudoon',
+				level: 0
+			},
+			{
+				name: 'Madness Nails',
+				level: 0
+			},
+			{
+				name: 'Myriad Arrows',
+				level: 0
+			}
+		],
+		resistances: {
+			Phys: 'Resist',
+			Gun: 'Resist',
+			Light: 'Resist',
+			Dark: 'Null',
+			Charm: 'Resist'
+		},
+		game: 'sj',
+		alignment: {
+			major: 'Dark',
+			minor: 'Neutral'
+		},
+		lore: 'Greek god of death.\nSon of Nyx, goddess of night. Priest of Hades, ruler of the underworld. Cloaked in dark clothing, Thanatos wields a blade that brings death to its victims. Legend says he cuts the hair of those near death and sends the severed hair to the underworld, which pulls the victims down to their death.',
+		origin: 'Greek culture'
+	},
+	{
+		name: 'Thanatos - P3',
+		aliases: [
+			'Thanatos'
+		],
+		affinities: {
+			skillPotential: null,
 			inherit: 'Almighty'
 		},
 		arcana: 'Death',
@@ -43348,6 +43795,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 	},
 	{
 		name: 'Tuofei',
+		aliases: [
+			'Toufei'
+		],
 		affinities: {
 			skillPotential: {
 				Phys: 0,
@@ -44923,6 +45373,54 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		},
 		lore: 'The second of Zoroastrianism\'s "divine sparks," Amesha Spenta, its name means "good thought." This holy entity is said to have given Zoroaster revelations from God.',
 		origin: 'Zoroastrianism'
+	},
+	{
+		name: 'Volvo',
+		affinities: {
+			skillPotential: null,
+			inherit: null
+		},
+		arcana: null,
+		race: 'Femme',
+		level: 71,
+		hp: 580,
+		mp: 308,
+		stats: {
+			st: 49,
+			ma: 41,
+			vi: 43,
+			ag: 46,
+			lu: 44
+		},
+		learnset: [
+			{
+				name: 'Makajamaon',
+				level: 0
+			},
+			{
+				name: 'Grand Tack',
+				level: 0
+			},
+			{
+				name: 'Gun Amp',
+				level: 0
+			}
+		],
+		resistances: {
+			Gun: 'Drain',
+			Fire: 'Weak',
+			Ice: 'Resist',
+			Elec: 'Resist',
+			Dark: 'Null',
+			Seal: 'Null'
+		},
+		game: 'sj',
+		alignment: {
+			major: 'Neutral',
+			minor: 'Chaos'
+		},
+		lore: 'Goddess of the moon.\nAnother name for the Hecate from the Greek lore. Being the goddess of the moon, it is also said that the land itself is her womb. She can be violent and bloodthirsty, but at the same time she can be very loving. Volvo has also known to be worshipped by the witches.',
+		origin: 'Greek culture'
 	},
 	{
 		name: 'Vouivre',

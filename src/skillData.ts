@@ -286,6 +286,24 @@ const skillData: AnySkillData[] = [
 		criteria: null
 	},
 	{
+		name: 'Airstrike',
+		affinity: 'Gun',
+		type: 'ATTACK',
+		unique: true,
+		accuracy: 98,
+		cost: {
+			stat: 'MP',
+			amount: 15
+		},
+		power: {
+			amount: 100,
+			display: 'Weak',
+			type: 'Physical'
+		},
+		target: 'All Foes',
+		series: 'smt'
+	},
+	{
 		name: 'Akashic Arts',
 		aliases: [
 			'Akasha Arts'
@@ -578,6 +596,27 @@ const skillData: AnySkillData[] = [
 		type: 'MASTER',
 		amount: 50,
 		stat: 'HP'
+	},
+	{
+		name: 'Armshot',
+		affinity: 'Gun',
+		type: 'ATTACK',
+		unique: true,
+		accuracy: 98,
+		cost: {
+			stat: 'MP',
+			amount: 16
+		},
+		debuffs: {
+			Attack: BuffValue.Decrease
+		},
+		power: {
+			amount: 150,
+			display: 'Weak',
+			type: 'Physical'
+		},
+		target: 'One Foe',
+		series: 'smt'
 	},
 	{
 		name: 'Arrow Rain',
@@ -2074,6 +2113,27 @@ const skillData: AnySkillData[] = [
 		},
 		target: 'All Foes',
 		series: 'persona'
+	},
+	{
+		name: 'Cripple',
+		affinity: 'Gun',
+		type: 'ATTACK',
+		unique: true,
+		accuracy: 98,
+		cost: {
+			stat: 'MP',
+			amount: 16
+		},
+		debuffs: {
+			Defense: BuffValue.Decrease
+		},
+		power: {
+			amount: 150,
+			display: 'Weak',
+			type: 'Physical'
+		},
+		target: 'One Foe',
+		series: 'smt'
 	},
 	{
 		name: 'Critical Aura',
@@ -5357,6 +5417,30 @@ const skillData: AnySkillData[] = [
 		series: 'smt'
 	},
 	{
+		name: 'Headshot',
+		affinity: 'Gun',
+		type: 'ATTACK',
+		unique: true,
+		accuracy: 98,
+		ailments: {
+			names: [
+				'Death'
+			],
+			chance: 50
+		},
+		cost: {
+			stat: 'MP',
+			amount: 16
+		},
+		power: {
+			amount: 150,
+			display: 'Weak',
+			type: 'Physical'
+		},
+		target: 'One Foe',
+		series: 'smt'
+	},
+	{
 		name: 'Heal Pleroma',
 		affinity: 'Passive',
 		type: 'BOOST',
@@ -6669,6 +6753,39 @@ const skillData: AnySkillData[] = [
 		element: 'All'
 	},
 	{
+		name: 'Legshot',
+		affinity: 'Gun',
+		type: 'ATTACK',
+		unique: true,
+		accuracy: 98,
+		cost: {
+			stat: 'MP',
+			amount: 16
+		},
+		debuffs: {
+			'Accuracy/Evasion': BuffValue.Decrease
+		},
+		power: {
+			amount: 150,
+			display: 'Weak',
+			type: 'Physical'
+		},
+		target: 'One Foe',
+		series: 'smt'
+	},
+	{
+		name: 'Lethe\'s Whisper',
+		affinity: 'Ailment',
+		type: 'AILMENT',
+		unique: true,
+		target: 'All Foes',
+		cost: 30,
+		ailments: [
+			'Sleep'
+		],
+		chance: 85
+	},
+	{
 		name: 'Life Aid',
 		affinity: 'Passive',
 		type: 'POSTBATTLE',
@@ -7075,6 +7192,20 @@ const skillData: AnySkillData[] = [
 			'Attack': BuffValue.Increase,
 			'Defense': BuffValue.Increase,
 			'Accuracy/Evasion': BuffValue.Increase
+		},
+		auto: []
+	},
+	{
+		name: 'Luster Soul',
+		affinity: 'Support',
+		type: 'SUPPORT',
+		unique: true,
+		target: 'All Allies',
+		cost: 200,
+		buffs: {
+			'Attack': BuffValue.GreatlyIncrease,
+			'Defense': BuffValue.GreatlyIncrease,
+			'Accuracy/Evasion': BuffValue.GreatlyIncrease
 		},
 		auto: []
 	},
@@ -7644,7 +7775,8 @@ const skillData: AnySkillData[] = [
 			'Foolish Whisper',
 			'Summon Spirit',
 			'Summon Spirits',
-			'Magic Seal'
+			'Magic Seal',
+			'Tricky Dance'
 		],
 		affinity: 'Ailment',
 		type: 'AILMENT',
@@ -9102,7 +9234,10 @@ const skillData: AnySkillData[] = [
 	},
 	{
 		name: 'Myriad Arrows',
-		affinity: 'Phys',
+		aliases: [
+			'Fleeting Rain'
+		],
+		affinity: 'Gun',
 		type: 'ATTACK',
 		accuracy: 85,
 		cost: {
@@ -12084,6 +12219,24 @@ const skillData: AnySkillData[] = [
 		},
 		target: 'One Foe',
 		series: 'persona'
+	},
+	{
+		name: 'Snipe',
+		affinity: 'Gun',
+		type: 'ATTACK',
+		unique: true,
+		accuracy: 98,
+		cost: {
+			stat: 'MP',
+			amount: 20
+		},
+		power: {
+			amount: 150,
+			display: 'Medium',
+			type: 'Physical'
+		},
+		target: 'One Foe',
+		series: 'smt'
 	},
 	{
 		name: 'Somersault',

@@ -6,14 +6,16 @@ A fan-made, unofficial collection of demons and skills from the "Megaten" series
 
 This package currently contains the following data from the games, with more being added over time:
 
-Game | Skills | Demons/Personas | Guests/Party Member Personas | Enemies/Shadows | Bosses
+Game | All Skills | Demons/Personas | Guests/Party Member Personas | Enemies/Shadows | Bosses
 -------- | -------- | -------- | -------- | -------- | --------
 Shin Megami Tensei V (Vanilla/Vengeance) | Yes | Yes | No | Yes | Yes
 Persona 5 (Vanilla/Royal/Strikers) | Yes | Yes | Yes | No | No
+Soul Hackers 2 | No | Yes | N/A | No | No
 Shin Megami Tensei IV (Vanilla/Apocalypse) | No | Yes | No | No | No
+SMT: Strange Journey (Vanilla/Redux) | No | Yes | N/A | No | No
 Persona 4 (Vanilla/Golden) | Yes | Yes | Yes | No | No
 Persona 3 (Vanilla/FES/Portable) | No | No | Yes | No | No
-Shin Megami Tensei III: Nocturne | No | No | Yes | No | No
+Shin Megami Tensei III: Nocturne | No | Yes | N/A | No | No
 
 NOTE: This is **not** a 1:1 database of all past data. Information such as MP amounts and damage values may be adjusted to the latest mainstream release, and more changes are found in the Notes section.
 
