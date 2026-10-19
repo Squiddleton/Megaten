@@ -5344,32 +5344,6 @@ const skillData: AnySkillData[] = [
 		}
 	},
 	{
-		name: 'Head Crush',
-		aliases: [
-			'Skull Cleave'
-		],
-		affinity: 'Phys',
-		type: 'ATTACK',
-		accuracy: 98,
-		ailments: {
-			names: [
-				'Daze'
-			],
-			chance: 60
-		},
-		cost: {
-			stat: 'MP',
-			amount: 6
-		},
-		power: {
-			amount: 110,
-			display: 'Weak',
-			type: 'Physical'
-		},
-		target: 'One Foe',
-		series: 'smt'
-	},
-	{
 		name: 'Headbutt',
 		affinity: 'Phys',
 		type: 'ATTACK',
@@ -12102,6 +12076,32 @@ const skillData: AnySkillData[] = [
 		},
 		target: 'One Foe',
 		series: 'persona'
+	},
+	{
+		name: 'Skull Cleave',
+		aliases: [
+			'Head Crush'
+		],
+		affinity: 'Phys',
+		type: 'ATTACK',
+		accuracy: 98,
+		ailments: {
+			names: [
+				'Daze'
+			],
+			chance: 60
+		},
+		cost: {
+			stat: 'MP',
+			amount: 6
+		},
+		power: {
+			amount: 110,
+			display: 'Weak',
+			type: 'Physical'
+		},
+		target: 'One Foe',
+		series: 'smt'
 	},
 	{
 		name: 'Skull Cracker',

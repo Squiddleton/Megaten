@@ -5596,7 +5596,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 				level: 0
 			},
 			{
-				name: 'Head Crush',
+				name: 'Skull Cleave',
 				level: 0
 			},
 			{
@@ -11797,7 +11797,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 				level: 9
 			},
 			{
-				name: 'Head Crush',
+				name: 'Skull Cleave',
 				level: 10
 			}
 		],
@@ -12969,7 +12969,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		},
 		learnset: [
 			{
-				name: 'Head Crush',
+				name: 'Skull Cleave',
 				level: 0
 			},
 			{
@@ -14866,7 +14866,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 				level: 0
 			},
 			{
-				name: 'Head Crush',
+				name: 'Skull Cleave',
 				level: 0
 			},
 			{
