@@ -75,4 +75,9 @@ for (const skill of Skill.array) {
 	if (skill.type === 'ATTACK' && skill.power.type === 'Magic' && (skill.affinity === 'Phys' || skill.affinity === 'Gun')) {
 		console.log(`Magic skill ${skill.devName} has unexpected physical affinity ${skill.affinity}`);
 	}
+	if (skill.unique === null) {
+		const users = Demon.array.filter(d => d.learnset.some(s => s.name === skill.name));
+		if (users.length > 0 && users.some(u => !u.isPersona() && !['dante', 'raidoukuzunohathexiv', 'tao', 'yoko'].includes(u.devName)))
+			console.log(`Unexpeced guest/enemy-exclusive skill ${skill.devName}`);
+	}
 }

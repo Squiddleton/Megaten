@@ -1286,7 +1286,7 @@ const skillData: AnySkillData[] = [
 		affinity: 'Water',
 		type: 'ATTACK',
 		accuracy: 98,
-		unique: true,
+		unique: null,
 		cost: {
 			stat: 'MP',
 			amount: 76
@@ -1309,7 +1309,7 @@ const skillData: AnySkillData[] = [
 		name: 'Boogie-Woogie',
 		affinity: 'Phys',
 		type: 'ATTACK',
-		unique: true,
+		unique: null,
 		accuracy: 97,
 		cost: {
 			stat: 'MP',
@@ -1574,7 +1574,7 @@ const skillData: AnySkillData[] = [
 		name: 'Burning Petals',
 		affinity: 'Fire',
 		type: 'ATTACK',
-		unique: true,
+		unique: null,
 		accuracy: 95,
 		cost: {
 			stat: 'MP',
@@ -2100,7 +2100,7 @@ const skillData: AnySkillData[] = [
 		name: 'Crescent Mirror',
 		affinity: 'Almighty',
 		type: 'ATTACK',
-		unique: true,
+		unique: null,
 		accuracy: 98,
 		cost: {
 			stat: 'MP',
@@ -2198,7 +2198,7 @@ const skillData: AnySkillData[] = [
 		name: 'Cross Fortune',
 		affinity: 'Wind',
 		type: 'ATTACK',
-		unique: true,
+		unique: null,
 		accuracy: 98,
 		cost: {
 			stat: 'MP',
@@ -2327,7 +2327,7 @@ const skillData: AnySkillData[] = [
 	},
 	{
 		name: 'Damnation',
-		affinity: 'Phys',
+		affinity: 'Almighty',
 		type: 'ATTACK',
 		unique: true,
 		accuracy: 98,
@@ -2511,6 +2511,49 @@ const skillData: AnySkillData[] = [
 		power: {
 			amount: 200,
 			display: 'Medium',
+			type: 'Physical'
+		},
+		target: 'One Foe',
+		series: 'smt'
+	},
+	{
+		name: 'Deadly Fury - Persona',
+		affinity: 'Phys',
+		type: 'ATTACK',
+		accuracy: 90,
+		cost: {
+			stat: 'HP',
+			amount: 18
+		},
+		flags: [
+			'Baton Boost'
+		],
+		power: {
+			amount: 280,
+			display: 'Severe',
+			type: 'Physical'
+		},
+		target: 'One Foe',
+		series: 'persona'
+	},
+	{
+		name: 'Deadly Fury - SMT4',
+		affinity: 'Phys',
+		type: 'ATTACK',
+		accuracy: 120,
+		ailments: {
+			names: [
+				'Confusion'
+			],
+			chance: 70
+		},
+		cost: {
+			stat: 'MP',
+			amount: 45
+		},
+		power: {
+			amount: 300,
+			display: 'Heavy',
 			type: 'Physical'
 		},
 		target: 'One Foe',
@@ -3081,7 +3124,7 @@ const skillData: AnySkillData[] = [
 		name: 'Dragon Hustle',
 		affinity: 'Support',
 		type: 'SUPPORT',
-		unique: true,
+		unique: null,
 		target: 'All Allies',
 		cost: 150,
 		buffs: {
@@ -3300,7 +3343,7 @@ const skillData: AnySkillData[] = [
 		name: 'E & I',
 		affinity: 'Phys',
 		type: 'ATTACK',
-		unique: true,
+		unique: null,
 		accuracy: 97,
 		cost: {
 			stat: 'MP',
@@ -3642,7 +3685,7 @@ const skillData: AnySkillData[] = [
 		name: 'Enter Yoshitsune',
 		affinity: 'Phys',
 		type: 'ATTACK',
-		unique: true,
+		unique: null,
 		accuracy: 200,
 		cost: {
 			stat: 'HP',
@@ -4220,7 +4263,7 @@ const skillData: AnySkillData[] = [
 		name: 'Flare Shot',
 		affinity: 'Gun',
 		type: 'ATTACK',
-		unique: true,
+		unique: null,
 		accuracy: 98,
 		cost: {
 			stat: 'MP',
@@ -4286,7 +4329,7 @@ const skillData: AnySkillData[] = [
 		name: 'Foamy Lover',
 		affinity: 'Earth',
 		type: 'ATTACK',
-		unique: true,
+		unique: null,
 		accuracy: 98,
 		cost: {
 			stat: 'MP',
@@ -4594,6 +4637,24 @@ const skillData: AnySkillData[] = [
 			amount: 270,
 			display: 'Severe',
 			type: 'Physical'
+		},
+		target: 'All Foes',
+		series: 'smt'
+	},
+	{
+		name: 'Gaea Rage - SMT4',
+		affinity: 'Almighty',
+		type: 'ATTACK',
+		unique: true,
+		accuracy: 120,
+		cost: {
+			stat: 'MP',
+			amount: 62
+		},
+		power: {
+			amount: 340,
+			display: 'Heavy',
+			type: 'Magic'
 		},
 		target: 'All Foes',
 		series: 'smt'
@@ -5070,7 +5131,7 @@ const skillData: AnySkillData[] = [
 		name: 'Guardian Hammer',
 		affinity: 'Elec',
 		type: 'ATTACK',
-		unique: true,
+		unique: null,
 		accuracy: 98,
 		cost: {
 			stat: 'MP',
@@ -5567,7 +5628,7 @@ const skillData: AnySkillData[] = [
 		name: 'Heliopolis Dawn',
 		affinity: 'Fire',
 		type: 'ATTACK',
-		unique: null,
+		unique: true,
 		accuracy: 108,
 		cost: {
 			stat: 'MP',
@@ -5886,7 +5947,7 @@ const skillData: AnySkillData[] = [
 		name: 'Hitokoto Storm',
 		affinity: 'Force',
 		type: 'ATTACK',
-		unique: true,
+		unique: null,
 		accuracy: 98,
 		cost: {
 			stat: 'MP',
@@ -5939,7 +6000,7 @@ const skillData: AnySkillData[] = [
 		name: 'Holy Star',
 		affinity: 'Support',
 		type: 'SUPPORT',
-		unique: true,
+		unique: null,
 		target: 'All Allies',
 		cost: 10,
 		buffs: {
@@ -6413,10 +6474,27 @@ const skillData: AnySkillData[] = [
 		series: 'smt'
 	},
 	{
+		name: 'Javelin Rain - SMT4',
+		affinity: 'Phys',
+		type: 'ATTACK',
+		accuracy: 120,
+		cost: {
+			stat: 'MP',
+			amount: 21
+		},
+		power: {
+			amount: 140,
+			display: 'Medium',
+			type: 'Physical'
+		},
+		target: 'All Foes',
+		series: 'smt'
+	},
+	{
 		name: 'Jiraiya Dance',
 		affinity: 'Almighty',
 		type: 'ATTACK',
-		unique: true,
+		unique: null,
 		accuracy: 98,
 		cost: {
 			stat: 'MP',
@@ -6485,7 +6563,7 @@ const skillData: AnySkillData[] = [
 		name: 'Justice Shot',
 		affinity: 'Gun',
 		type: 'SET',
-		unique: true,
+		unique: null,
 		target: 'One Foe',
 		amount: 1,
 		cost: 39,
@@ -8871,7 +8949,7 @@ const skillData: AnySkillData[] = [
 		name: 'Mishaguji Raiden',
 		affinity: 'Elec',
 		type: 'ATTACK',
-		unique: true,
+		unique: null,
 		accuracy: 98,
 		ailments: {
 			names: [
@@ -8920,6 +8998,7 @@ const skillData: AnySkillData[] = [
 		name: 'Mokoi Boomerang',
 		affinity: 'Phys',
 		type: 'ATTACK',
+		unique: null,
 		accuracy: 108,
 		ailments: {
 			names: [
@@ -9422,7 +9501,7 @@ const skillData: AnySkillData[] = [
 		name: 'Never Yield',
 		affinity: 'Passive',
 		type: 'ENDURE',
-		unique: true,
+		unique: null,
 		amount: 1,
 		criteria: null
 	},
@@ -10341,6 +10420,7 @@ const skillData: AnySkillData[] = [
 		name: 'Primordial Chaos',
 		affinity: 'Almighty',
 		type: 'ATTACK',
+		unique: null,
 		accuracy: 98,
 		cost: {
 			stat: 'MP',
@@ -10357,8 +10437,7 @@ const skillData: AnySkillData[] = [
 			type: 'Magic'
 		},
 		target: 'All Foes',
-		series: 'smt',
-		unique: true
+		series: 'smt'
 	},
 	{
 		name: 'Primordial Parturition',
@@ -10395,7 +10474,7 @@ const skillData: AnySkillData[] = [
 		name: 'Provoke',
 		affinity: 'Support',
 		type: 'SUPPORT',
-		unique: true,
+		unique: null,
 		target: 'All Foes',
 		cost: 65,
 		buffs: {
@@ -10719,7 +10798,7 @@ const skillData: AnySkillData[] = [
 		name: 'Raidou the Eternal',
 		affinity: 'Passive',
 		type: 'MISC',
-		unique: true,
+		unique: null,
 		target: 'Self',
 		cost: null,
 		description: 'Increases user\'s damage by 50%.'
@@ -10806,7 +10885,7 @@ const skillData: AnySkillData[] = [
 		name: 'Raptor Guardian',
 		affinity: 'Support',
 		type: 'SUPPORT',
-		unique: true,
+		unique: null,
 		target: 'All Allies',
 		cost: 10,
 		buffs: {
@@ -10846,7 +10925,7 @@ const skillData: AnySkillData[] = [
 		name: 'Rebellion - SMT',
 		affinity: 'Phys',
 		type: 'ATTACK',
-		unique: true,
+		unique: null,
 		accuracy: 200,
 		cost: {
 			stat: 'HP',
@@ -10993,7 +11072,7 @@ const skillData: AnySkillData[] = [
 		name: 'Release Jail',
 		affinity: 'Ice',
 		type: 'ATTACK',
-		unique: true,
+		unique: null,
 		accuracy: 98,
 		cost: {
 			stat: 'MP',
@@ -11509,7 +11588,7 @@ const skillData: AnySkillData[] = [
 		name: 'Roundtrip',
 		affinity: 'Elec',
 		type: 'ATTACK',
-		unique: true,
+		unique: null,
 		accuracy: 98,
 		ailments: {
 			names: [
@@ -11995,7 +12074,7 @@ const skillData: AnySkillData[] = [
 		name: 'Showtime',
 		affinity: 'Almighty',
 		type: 'ATTACK',
-		unique: true,
+		unique: null,
 		accuracy: 98,
 		cost: {
 			stat: 'MP',
@@ -12026,7 +12105,7 @@ const skillData: AnySkillData[] = [
 		name: 'Silt of Ruin',
 		affinity: 'Almighty',
 		type: 'ATTACK',
-		unique: null,
+		unique: true,
 		accuracy: 98,
 		cost: {
 			stat: 'MP',
@@ -12263,7 +12342,7 @@ const skillData: AnySkillData[] = [
 		name: 'Son\'s Oath',
 		affinity: 'Passive',
 		type: 'MISC',
-		unique: true,
+		unique: null,
 		target: 'Self',
 		cost: null,
 		description: 'Increases user\'s damage by 50%.'
@@ -12457,6 +12536,14 @@ const skillData: AnySkillData[] = [
 	{
 		name: 'Spring of Life',
 		affinity: 'Passive',
+		type: 'MISC',
+		target: 'Self',
+		cost: null,
+		description: 'Recover some HP while walking. Inactive when in stock.'
+	},
+	{
+		name: 'Spring of Life - P3',
+		affinity: 'Passive',
 		type: 'REGEN',
 		unique: null,
 		amount: '8%',
@@ -12595,7 +12682,7 @@ const skillData: AnySkillData[] = [
 		name: 'Stinger',
 		affinity: 'Phys',
 		type: 'ATTACK',
-		unique: true,
+		unique: null,
 		accuracy: 97,
 		ailments: {
 			names: [
@@ -12981,7 +13068,7 @@ const skillData: AnySkillData[] = [
 		name: 'Tekisatsu',
 		affinity: 'Phys',
 		type: 'ATTACK',
-		unique: true,
+		unique: null,
 		accuracy: 97,
 		ailments: {
 			names: [
@@ -13219,7 +13306,7 @@ const skillData: AnySkillData[] = [
 		name: 'Thunder Inferno',
 		affinity: 'Fire',
 		type: 'ATTACK',
-		unique: true,
+		unique: null,
 		accuracy: 98,
 		cost: {
 			stat: 'MP',
@@ -13544,7 +13631,7 @@ const skillData: AnySkillData[] = [
 		name: 'Twinkle Nebula',
 		affinity: 'Wind',
 		type: 'ATTACK',
-		unique: true,
+		unique: null,
 		accuracy: 98,
 		cost: {
 			stat: 'MP',
@@ -13565,6 +13652,7 @@ const skillData: AnySkillData[] = [
 		],
 		affinity: 'Phys',
 		type: 'ATTACK',
+		unique: null,
 		accuracy: 108,
 		ailments: {
 			names: [
@@ -13985,7 +14073,7 @@ const skillData: AnySkillData[] = [
 		name: 'Whirlwind',
 		affinity: 'Force',
 		type: 'ATTACK',
-		unique: true,
+		unique: null,
 		accuracy: 98,
 		cost: {
 			stat: 'MP',
@@ -14175,7 +14263,7 @@ const skillData: AnySkillData[] = [
 		name: 'Wiseman Snap',
 		affinity: 'Gun',
 		type: 'ATTACK',
-		unique: true,
+		unique: null,
 		accuracy: 98,
 		cost: {
 			stat: 'MP',

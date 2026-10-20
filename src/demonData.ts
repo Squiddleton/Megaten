@@ -3417,7 +3417,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 				level: 33
 			},
 			{
-				name: 'Javelin Rain',
+				name: 'Javelin Rain - SMT4',
 				level: 34
 			}
 		],
@@ -14477,7 +14477,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 				level: 43
 			},
 			{
-				name: 'Deadly Fury',
+				name: 'Deadly Fury - Persona',
 				level: 47
 			},
 			{
@@ -14726,7 +14726,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 				level: 43
 			},
 			{
-				name: 'Deadly Fury',
+				name: 'Deadly Fury - Persona',
 				level: 47
 			},
 			{
@@ -21116,7 +21116,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 				level: 43
 			},
 			{
-				name: 'Deadly Fury',
+				name: 'Deadly Fury - Persona',
 				level: 47
 			},
 			{
@@ -24572,7 +24572,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		},
 		learnset: [
 			{
-				name: 'Javelin Rain',
+				name: 'Javelin Rain - SMT4',
 				level: 0
 			},
 			{
@@ -37567,11 +37567,11 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		},
 		learnset: [
 			{
-				name: 'Gaea Rage',
+				name: 'Gaea Rage - SMT4',
 				level: 0
 			},
 			{
-				name: 'Deadly Fury',
+				name: 'Deadly Fury - SMT4',
 				level: 0
 			},
 			{
@@ -43219,7 +43219,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 				level: 0
 			},
 			{
-				name: 'Javelin Rain',
+				name: 'Javelin Rain - SMT4',
 				level: 38
 			},
 			{
@@ -43470,7 +43470,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		origin: 'Greek culture',
 		user: 'Junpei Iori',
 		stage: 2,
-		evoSkillName: 'Spring of Life'
+		evoSkillName: 'Spring of Life - P3'
 	},
 	{
 		name: 'Troll',
@@ -47976,7 +47976,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 				level: 0
 			},
 			{
-				name: 'Javelin Rain',
+				name: 'Javelin Rain - SMT4',
 				level: 0
 			},
 			{
