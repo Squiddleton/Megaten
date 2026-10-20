@@ -70,3 +70,9 @@ for (const [i, skillName] of skillNames.entries()) {
 	if (sortedSkillNames[i] !== skillName)
 		console.log(`Skill ${skillName} is out of ABC order with ${sortedSkillNames[i]}`);
 }
+
+for (const skill of Skill.array) {
+	if (skill.type === 'ATTACK' && skill.power.type === 'Magic' && (skill.affinity === 'Phys' || skill.affinity === 'Gun')) {
+		console.log(`Magic skill ${skill.devName} has unexpected physical affinity ${skill.affinity}`);
+	}
+}
