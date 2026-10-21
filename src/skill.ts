@@ -972,7 +972,7 @@ export class SupportSkill extends Skill implements SupportSkillData {
 		super(data);
 
 		this.target = target;
-		const isAllyRangeFunc = (allyTarget: SupportTarget) => ['One Ally', 'All Allies'].includes(allyTarget);
+		const isAllyRangeFunc = (allyTarget: SupportTarget) => ['Self', 'One Ally', 'All Allies'].includes(allyTarget);
 		const isAllyRange = isAllyRangeFunc(target);
 		if (flags.includes('Cure Non-Special Ailments')) {
 			this.description = 'Cures all non-special ailments for all allies.';
@@ -985,6 +985,9 @@ export class SupportSkill extends Skill implements SupportSkillData {
 		}
 		else if (Object.values(buffs)[0] === BuffValue.Minimize) {
 			this.description = `Minimizes ${Object.keys(buffs).join('/')} of 1 foe for 3 turns.`;
+		}
+		else if (this.target === 'Self') {
+			this.description = `Raises ${Object.entries(buffs).length === 3 ? 'all stats' : Object.keys(buffs).join('/')} of self by ${Object.values(buffs)[1] === BuffValue.GreatlyIncrease ? '2 ranks' : '1 rank'} for 3 turns${flags.includes('Reduce HP to 1') ? ' but reduces HP to 1' : ''}.`;
 		}
 		else {
 			this.description = isAllyRange
