@@ -13224,14 +13224,6 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 				level: 0
 			},
 			{
-				name: 'Null Freeze',
-				level: 0
-			},
-			{
-				name: 'Null Shock',
-				level: 0
-			},
-			{
 				name: 'Lunge',
 				level: 0
 			},
@@ -13258,7 +13250,9 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			Stun: 'Null',
 			Bind: 'Null',
 			Poison: 'Null',
-			Seal: 'Null'
+			Seal: 'Null',
+			Freeze: 'Null',
+			Shock: 'Null'
 		},
 		game: 'smt3',
 		alignment: {
@@ -34648,10 +34642,6 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 				level: 0
 			},
 			{
-				name: 'Null Freeze',
-				level: 0
-			},
-			{
 				name: 'Mazionga',
 				level: 43
 			},
@@ -34676,7 +34666,8 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			Phys: 'Resist',
 			Force: 'Weak',
 			Light: 'Weak',
-			Dark: 'Null'
+			Dark: 'Null',
+			Freeze: 'Null'
 		},
 		game: 'smt3',
 		alignment: {
@@ -38695,10 +38686,6 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 				level: 0
 			},
 			{
-				name: 'Null Freeze',
-				level: 0
-			},
-			{
 				name: 'Mazionga',
 				level: 53
 			},
@@ -38727,7 +38714,8 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			Phys: 'Resist',
 			Force: 'Weak',
 			Light: 'Weak',
-			Dark: 'Null'
+			Dark: 'Null',
+			Freeze: 'Null'
 		},
 		game: 'smt3',
 		alignment: {
@@ -45906,10 +45894,6 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 				level: 0
 			},
 			{
-				name: 'Null Freeze',
-				level: 0
-			},
-			{
 				name: 'Zan',
 				level: 2
 			},
@@ -45937,7 +45921,8 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 			Elec: 'Weak',
 			Force: 'Weak',
 			Light: 'Weak',
-			Dark: 'Null'
+			Dark: 'Null',
+			Freeze: 'Null'
 		},
 		game: 'smt3',
 		alignment: {
