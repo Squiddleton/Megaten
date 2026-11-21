@@ -31122,6 +31122,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 	{
 		name: 'Niddhoggr',
 		aliases: [
+			'Nidhogg',
 			'Nidhoggr'
 		],
 		affinities: {
