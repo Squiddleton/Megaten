@@ -1647,7 +1647,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		user: 'Yukiko Amagi',
 		stage: 2,
 		evoSkillName: null,
-		lastGame: 'smt3hd'
+		lastGame: 'p4g'
 	},
 	{
 		name: 'Ame-no-Uzume',
@@ -2142,7 +2142,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		},
 		lore: 'The goddess of birth and death. She is Baal\'s sister and wife.\nIt is said that even her father El in the heavens feared her power. She is known for bringing Baal back from the land of the dead by going there herself and defeating its ruler, Mot.',
 		origin: 'Levantine culture',
-		lastGame: 'p3r'
+		lastGame: 'smt4a'
 	},
 	{
 		name: 'Anat - P5',
@@ -8742,7 +8742,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		user: 'Koromaru',
 		stage: 1,
 		evoSkillName: null,
-		lastGame: 'smt5v'
+		lastGame: 'p3r'
 	},
 	{
 		name: 'Cernunnos',
@@ -13880,7 +13880,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		user: 'Eriko Kirishima',
 		stage: 2,
 		evoSkillName: null,
-		lastGame: 'smt5v'
+		lastGame: 'p2ep'
 	},
 	{
 		name: 'Ganesha',
@@ -17303,7 +17303,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		user: 'Jun Kurosu',
 		stage: 1,
 		evoSkillName: null,
-		lastGame: 'p3r'
+		lastGame: 'p2is'
 	},
 	{
 		name: 'High Pixie',
@@ -19292,7 +19292,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		user: 'Yukari Takeba',
 		stage: 2,
 		evoSkillName: null,
-		lastGame: 'smt5v'
+		lastGame: 'p3r'
 	},
 	{
 		name: 'Isora',
@@ -23498,7 +23498,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		user: 'Yukiko Amagi',
 		stage: 1,
 		evoSkillName: null,
-		lastGame: 'smt5v'
+		lastGame: 'p4g'
 	},
 	{
 		name: 'Koppa Tengu',
@@ -25538,7 +25538,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		user: 'Goro Akechi',
 		stage: 2,
 		evoSkillName: null,
-		lastGame: 'smt5v'
+		lastGame: 'p3r'
 	},
 	{
 		name: 'Lord Nandou',
@@ -36122,7 +36122,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		user: 'Baofu',
 		stage: 2,
 		evoSkillName: null,
-		lastGame: 'sjr'
+		lastGame: 'p2ep'
 	},
 	{
 		name: 'Prometheus - P5',
@@ -36175,7 +36175,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		user: 'Futaba Sakura',
 		stage: 2,
 		evoSkillName: 'Treasure Skimmer',
-		lastGame: 'sjr'
+		lastGame: 'p5r'
 	},
 	{
 		name: 'Psyche',
@@ -38951,7 +38951,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		user: 'Ryuji Sakamoto',
 		stage: 2,
 		evoSkillName: 'Evade Wind',
-		lastGame: 'p4g'
+		lastGame: 'p3r'
 	},
 	{
 		name: 'Senri',
@@ -41153,7 +41153,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		user: 'Naoto Shirogane',
 		stage: 1,
 		evoSkillName: null,
-		lastGame: 'smt5v'
+		lastGame: 'p4g'
 	},
 	{
 		name: 'Sumeo-Okami',
@@ -41574,7 +41574,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		user: 'Yosuke Hanamura',
 		stage: 2,
 		evoSkillName: null,
-		lastGame: 'p3r'
+		lastGame: 'p4g'
 	},
 	{
 		name: 'Suzuka Gongen',
@@ -41908,7 +41908,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		user: 'Kanji Tatsumi',
 		stage: 1,
 		evoSkillName: null,
-		lastGame: 'p3r'
+		lastGame: 'p4g'
 	},
 	{
 		name: 'Take-Minakata',
@@ -42834,7 +42834,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		},
 		lore: 'Greek god of death.\nSon of Nyx, goddess of night. Priest of Hades, ruler of the underworld. Cloaked in dark clothing, Thanatos wields a blade that brings death to its victims. Legend says he cuts the hair of those near death and sends the severed hair to the underworld, which pulls the victims down to their death.',
 		origin: 'Greek culture',
-		lastGame: 'p3r'
+		lastGame: 'sjr'
 	},
 	{
 		name: 'Thanatos - P3',
