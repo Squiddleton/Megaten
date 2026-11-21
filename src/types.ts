@@ -203,6 +203,8 @@ export type SMTSpinoff = 'sj' | 'sh2';
 /** Games that demon data can originate from */
 export type AnyGame = PersonaGame | SMTGame | SMTSpinoff;
 
+export type LastGame = 'smt5v' | 'p3r' | 'sh2' | 'p5s' | 'p5r' | 'smt3hd' | 'sjr' | 'smt4a' | 'smt4' | 'p4g' | 'p2ep' | 'p2is';
+
 /** Custom races for demons that originate in Persona games */
 export type PersonaRace = 'Persona' | 'Picaro' | 'Treasure';
 /** Demons' official races */

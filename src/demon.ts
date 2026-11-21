@@ -1,4 +1,4 @@
-import type { AnyGame, AnyRace, Arcana, DemonAffinities, DemonAlignment, DemonResistances, DemonSkill, DemonStats, If, PersonaGame, SMTRace, Stage } from './types.js';
+import type { AnyGame, AnyRace, Arcana, DemonAffinities, DemonAlignment, DemonResistances, DemonSkill, DemonStats, If, LastGame, PersonaGame, SMTRace, Stage } from './types.js';
 import { type AnySkill, Skill } from './skill.js';
 import type { DemonData, PersonaData } from './dataTypes.js';
 import { formatPossessive, normalize } from '@squiddleton/util';
@@ -39,8 +39,10 @@ export class Demon<PersonaBased extends boolean = boolean> implements DemonData<
 	learnset: DemonSkill[];
 	/** The demon's ailment and affinity resistances */
 	resistances: DemonResistances;
-	/** The game that the demon's data originates from */
+	/** The game that the demon's data originates from, excluding remakes */
 	game: If<PersonaBased, PersonaGame, AnyGame>;
+	/** The last mainline game the demon appeared in, including remakes */
+	lastGame: LastGame;
 	/** The demon's major and minor alignment, or null for SMT4 demons */
 	alignment: DemonAlignment | null;
 	/** The demon's backstory, or null for older Personas and SMT4 demons */
@@ -61,6 +63,7 @@ export class Demon<PersonaBased extends boolean = boolean> implements DemonData<
 		this.learnset = data.learnset;
 		this.resistances = data.resistances;
 		this.game = data.game;
+		this.lastGame = data.lastGame;
 		this.alignment = data.alignment;
 		this.lore = data.lore;
 		this.origin = data.origin;
