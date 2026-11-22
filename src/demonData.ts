@@ -47518,7 +47518,68 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		lastGame: 'p4g'
 	},
 	{
-		name: 'Yamato-Takeru',
+		name: 'Yamato Takeru',
+		aliases: [
+			'Yamato-Takeru'
+		],
+		affinities: {
+			skillPotential: null,
+			inherit: null
+		},
+		arcana: null,
+		race: 'Famed',
+		level: 90,
+		hp: 700,
+		mp: 315,
+		stats: {
+			st: 96,
+			dx: 96,
+			ma: 96,
+			ag: 96,
+			lu: 96
+		},
+		learnset: [
+			{
+				name: 'Berserker God',
+				level: 0
+			},
+			{
+				name: 'Repel Fire',
+				level: 0
+			},
+			{
+				name: 'Awakening',
+				level: 0
+			},
+			{
+				name: 'Ally Retaliate',
+				level: 91
+			},
+			{
+				name: 'Floral Gust',
+				level: 92
+			}
+		],
+		resistances: {
+			Elec: 'Repel',
+			Light: 'Null',
+			Dark: 'Null'
+		},
+		game: 'smt4',
+		alignment: {
+			major: 'Unknown',
+			minor: 'Neutral'
+		},
+		lore: 'Yamato-Takeru no Mikoto was one of the greatest warriors of Japanese lore. He was said to be half human, half god.\nAround six feet tall with a stern face, he prided himself on his strength. He was ferocious and killed his older brother in a trivial argument. His father, Emperor Keiko feared his son and sent him to war at the western front, and then on an expedition to the east after his successful return. On his way east, his met his aunt, who gave him the divine sword Ame no Murakumo no Tsurugi. It is said that when he was attacked by fire at Sagami no Kuni, he cut the grass and was able to escape alive. From this, the Ame no Murakumo also became known as the Kusanagi no Tsurugi (grass-cutter sword). He eventually died of a curse from a god at Mt. Ibuki, but he turned into a great white bird and flew away.',
+		origin: 'Shinto',
+		lastGame: 'smt4'
+	},
+	{
+		name: 'Yamato-Takeru - P4',
+		aliases: [
+			'Yamato-Takeru',
+			'Yamato Takeru'
+		],
 		affinities: {
 			skillPotential: null,
 			inherit: null
@@ -47613,7 +47674,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		user: 'Naoto Shirogane',
 		stage: 2,
 		evoSkillName: null,
-		lastGame: 'smt4'
+		lastGame: 'p4g'
 	},
 	{
 		name: 'Yamawaro',
