@@ -4650,7 +4650,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		},
 		lore: 'A violent group of demons in Hindu lore. They were very powerful and caused the gods great trouble.\nThey are a strict group and attack anyone who runs counter to their ideals. They were originally gods of light who were worshipped in Persia. The Zoroastrian god Ahura Mazda was one of them.',
 		origin: 'Dharmic religions',
-		lastGame: 'smt5v'
+		lastGame: 'sjr'
 	},
 	{
 		name: 'Asura Lord',
@@ -35543,7 +35543,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		},
 		lore: 'A small faerie found in southwestern Britain known for their cheerful nature and love of pranks. Their physical appearance changes from region to region, but their personality is always playful and mischievous. A common prank they like to pull is causing humans to wander in circles. However, they are also known to help farmers from time to time and are generally considered good faeries. They are back now in their Soul Hackers form.',
 		origin: 'English culture',
-		lastGame: 'smt5v'
+		lastGame: 'sh2'
 	},
 	{
 		name: 'Plasma',
