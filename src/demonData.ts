@@ -2509,7 +2509,7 @@ const demonData: (DemonData<true> | DemonData<false> | PersonaData)[] = [
 		},
 		lore: 'Ninth of the nine orders of angels.\nThey are closest in nature to humans. They watch over individuals and warn those who stray from the path.',
 		origin: 'Abrahamic religions',
-		lastGame: 'smt5v'
+		lastGame: 'smt4a'
 	},
 	{
 		name: 'Aniel',
